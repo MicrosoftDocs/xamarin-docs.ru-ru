@@ -6,12 +6,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/15/2018
-ms.openlocfilehash: 7278fd624bb3147c2e1a1a1a79adde68813a9888
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: ef2f8e0375786ba7b627fdf75545cbb48318c1aa
+ms.sourcegitcommit: 854798de42566750d9c70b6d0539b7ee73ff6ddc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73020150"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646605"
 ---
 # <a name="android-callable-wrappers-for-xamarinandroid"></a>Вызываемые программы-оболочки Android для Xamarin.Android
 
@@ -74,7 +74,7 @@ namespace My {
 
 Иногда может потребоваться реализовать интерфейс Android, например [Android.Content.IComponentCallbacks](xref:Android.Content.IComponentCallbacks). Поскольку все классы и интерфейсы Android расширяют интерфейс [Android.Runtime.IJavaObject](xref:Android.Runtime.IJavaObject), возникает вопрос: как реализовать `IJavaObject`? 
 
-Ответ на этот вопрос дан выше: причина, по которой все типы Android должны реализовать `IJavaObject`, заключается в том, что Xamarin.Android имеет вызываемую программу-оболочку Android для предоставления Android, т. е. прокси-сервер Java для данного типа. Поскольку **monodroid.exe** ищет только подклассы `Java.Lang.Object`, а `Java.Lang.Object` реализует `IJavaObject,`, ответ очевиден: подкласс `Java.Lang.Object`: 
+Ответ на этот вопрос дан выше: причина, по которой все типы Android должны реализовать `IJavaObject`, заключается в том, что Xamarin.Android имеет вызываемую программу-оболочку Android для предоставления Android, т. е. прокси-сервер Java для данного типа. Поскольку **monodroid.exe** ищет только подклассы `Java.Lang.Object`, а `Java.Lang.Object` реализует `IJavaObject`, ответ очевиден: подкласс `Java.Lang.Object`: 
 
 ```csharp
 class MyComponentCallbacks : Java.Lang.Object, Android.Content.IComponentCallbacks {

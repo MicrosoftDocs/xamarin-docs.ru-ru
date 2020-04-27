@@ -5,12 +5,12 @@ ms.assetid: F6F6D496-A8A9-4B9A-AF1A-370D937E5073
 author: jamesmontemagno
 ms.author: jamont
 ms.date: 01/06/2020
-ms.openlocfilehash: e31cae6ff639dbe261599a7cf78ae31fc09318b3
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: f322855f26d7a57acc06e97e0c97ab201c3fa586
+ms.sourcegitcommit: a9280318bf7bb69e4e5744ee739e76a9cba36b28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79190318"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82047404"
 ---
 # <a name="xamarinessentials-app-theme"></a>Xamarin.Essentials: Тема приложения
 
@@ -62,7 +62,7 @@ AppTheme appTheme = AppInfo.RequestedTheme;
 
 # <a name="uwp"></a>[UWP](#tab/uwp)
 
-По умолчанию приложение работает, используя тему, заданную пользователем в параметрах Windows (**Параметры > Персонализация > Цвета > Выбрать режим приложения по умолчанию**). Можно задать свойство RequestedTheme приложения, чтобы переопределить значение по умолчанию для пользователя и указать, какую тему использовать.
+Приложения UWP будут учитывать значение в приложении UWP. XAML в разделе **RequestedTheme**. Если задана конкретная тема, Xamarin. Essentials всегда будет возвращать этот параметр. Чтобы использовать динамическую тему операционной системы, удалите этот узел из приложения, а затем при его запуске приложение вернет тему, заданную пользователем в параметрах Windows (**Параметры > Персонализация > Цвета > выберите режим приложения по умолчанию**).
 
 Дополнительные сведения по запрошенной теме UWP см. [здесь](https://docs.microsoft.com/uwp/api/windows.ui.xaml.application.requestedtheme).
 
