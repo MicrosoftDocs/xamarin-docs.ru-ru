@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/26/2018
-ms.openlocfilehash: dccc47d8ee69686fe2ac7409f75284c64c99a2d4
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 86714c2041edcd98c2bdd7b740a897dab8069752
+ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70772007"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82516464"
 ---
 # <a name="customizing-an-entry"></a>Настройка элемента управления Entry
 
@@ -35,7 +35,7 @@ _Элемент управления Xamarin.Forms Entry позволяет ре
 Мы рассмотрим каждый пункт по порядку, чтобы реализовать элемент управления [`Entry`](xref:Xamarin.Forms.Entry) с разным цветом фона на каждой платформе.
 
 > [!IMPORTANT]
-> В этой статье описывается, как создать простой пользовательский отрисовщик. Однако чтобы реализовать элемент управления `Entry` с разным цветом фона на каждой платформе, создавать пользовательский отрисовщик необязательно. Проще будет воспользоваться классом [`Device`](xref:Xamarin.Forms.Device) или расширением разметки `OnPlatform`, указав значения для конкретных платформ. Дополнительные сведения см. в разделах [Указание значений для конкретных платформ](~/xamarin-forms/platform/device.md#providing-platform-specific-values) и [Расширение разметки OnPlatform](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform-markup-extension).
+> В этой статье описывается, как создать простой пользовательский отрисовщик. Однако чтобы реализовать элемент управления `Entry` с разным цветом фона на каждой платформе, создавать пользовательский отрисовщик необязательно. Проще будет воспользоваться классом [`Device`](xref:Xamarin.Forms.Device) или расширением разметки `OnPlatform`, указав значения для конкретных платформ. Дополнительные сведения см. в разделах [Указание значений для конкретных платформ](~/xamarin-forms/platform/device.md#provide-platform-specific-values) и [Расширение разметки OnPlatform](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform-markup-extension).
 
 <a name="Creating_the_Custom_Entry_Control" />
 
