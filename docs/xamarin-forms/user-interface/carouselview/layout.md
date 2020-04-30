@@ -7,47 +7,47 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/28/2020
-ms.openlocfilehash: 2e3d3ccd42907ef3678ccfb634c036930800a145
-ms.sourcegitcommit: 10b4d7952d78f20f753372c53af6feb16918555c
+ms.openlocfilehash: 3242148fa97e6b3795b57b2fed86f3643a5ecdf6
+ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77636142"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82517425"
 ---
 # <a name="xamarinforms-carouselview-layout"></a>Макет Карауселвиев Xamarin. Forms
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView) определяет следующие свойства, управляющие макетом.
+[`CarouselView`](xref:Xamarin.Forms.CarouselView)определяет следующие свойства, управляющие макетом:
 
-- [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout)типа `LinearItemsLayout`указывает используемый макет.
-- `PeekAreaInsets`типа [`Thickness`](xref:Xamarin.Forms.Thickness)указывает, какой объем смежных элементов должен быть частично видимым.
+- [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout)Тип `LinearItemsLayout`— указывает макет для использования.
+- `PeekAreaInsets`, типа [`Thickness`](xref:Xamarin.Forms.Thickness), указывает, сколько элементов можно сделать смежными, частично видимыми для.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами. Это означает, что свойства могут быть целевыми объектами привязок данных.
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что свойства могут быть целевыми объектами привязок данных.
 
-По умолчанию элементы отображаются в [`CarouselView`](xref:Xamarin.Forms.CarouselView) горизонтальной ориентации. На экране будет отображаться один элемент с жестами прокрутки, приводящими к пересылке и обратной навигации по коллекции элементов. Однако также возможна вертикальная ориентация. Это обусловлено тем, что свойство [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) имеет тип `LinearItemsLayout`, который наследуется от класса [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) . Класс `ItemsLayout` определяет следующие свойства:
+По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) элементы отображаются на горизонтальной ориентации. На экране будет отображаться один элемент с жестами прокрутки, приводящими к пересылке и обратной навигации по коллекции элементов. Однако также возможна вертикальная ориентация. Это обусловлено тем [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) , что свойство имеет `LinearItemsLayout`тип, который наследуется [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) от класса. `ItemsLayout` Класс определяет следующие свойства:
 
-- [`Orientation`](xref:Xamarin.Forms.ItemsLayout.Orientation)типа [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation)задает направление, в котором [`CarouselView`](xref:Xamarin.Forms.CarouselView) расширяется по мере добавления элементов.
-- [`SnapPointsAlignment`](xref:Xamarin.Forms.ItemsLayout.SnapPointsAlignment)типа [`SnapPointsAlignment`](xref:Xamarin.Forms.SnapPointsAlignment)задает способ выравнивания точек привязки по элементам.
-- [`SnapPointsType`](xref:Xamarin.Forms.ItemsLayout.SnapPointsType)типа [`SnapPointsType`](xref:Xamarin.Forms.SnapPointsType)задает поведение точек привязки при прокрутке.
+- [`Orientation`](xref:Xamarin.Forms.ItemsLayout.Orientation)Тип [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation)задает направление, в котором добавляются элементы [`CarouselView`](xref:Xamarin.Forms.CarouselView) расширения по мере добавления.
+- [`SnapPointsAlignment`](xref:Xamarin.Forms.ItemsLayout.SnapPointsAlignment), типа [`SnapPointsAlignment`](xref:Xamarin.Forms.SnapPointsAlignment), задает способ выравнивания точек привязки по элементам.
+- [`SnapPointsType`](xref:Xamarin.Forms.ItemsLayout.SnapPointsType)Тип [`SnapPointsType`](xref:Xamarin.Forms.SnapPointsType)— задает поведение точек привязки при прокрутке.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами. Это означает, что свойства могут быть целевыми объектами привязок данных. Дополнительные сведения о точках привязки см. в разделе [точки привязки](scrolling.md#snap-points) в [CollectionViewе прокрутки Xamarin. Forms](scrolling.md) .
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что свойства могут быть целевыми объектами привязок данных. Дополнительные сведения о точках привязки см. в разделе [точки привязки](scrolling.md#snap-points) в [CollectionViewе прокрутки Xamarin. Forms](scrolling.md) .
 
-Перечисление [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) определяет следующие члены:
+[`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) Перечисление определяет следующие члены:
 
-- `Vertical` указывает, что [`CarouselView`](xref:Xamarin.Forms.CarouselView) будет расширяться по вертикали при добавлении элементов.
-- `Horizontal` указывает, что [`CarouselView`](xref:Xamarin.Forms.CarouselView) будет расширяться по горизонтали по мере добавления элементов.
+- `Vertical`Указывает, что [`CarouselView`](xref:Xamarin.Forms.CarouselView) будет расширяться по вертикали по мере добавления элементов.
+- `Horizontal`Указывает, что [`CarouselView`](xref:Xamarin.Forms.CarouselView) будет разворачиваться горизонтально по мере добавления элементов.
 
-Класс `LinearItemsLayout` наследует от класса [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) и определяет свойство `ItemSpacing` типа `double`, представляющее пустое пространство вокруг каждого элемента. Значение этого свойства по умолчанию равно 0, а его значение всегда должно быть больше или равно 0. Класс `LinearItemsLayout` также определяет статические `Vertical` и элементы `Horizontal`. Эти члены можно использовать для создания вертикальных или горизонтальных списков соответственно. Кроме того, можно создать объект `LinearItemsLayout`, указав в качестве аргумента член перечисления [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) .
+`LinearItemsLayout` Класс наследует от [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) класса и определяет `ItemSpacing` свойство типа `double`, представляющее пустое пространство вокруг каждого элемента. Значение этого свойства по умолчанию равно 0, а его значение всегда должно быть больше или равно 0. `LinearItemsLayout` Класс также определяет статические `Vertical` члены `Horizontal` и. Эти члены можно использовать для создания вертикальных или горизонтальных списков соответственно. Кроме того, `LinearItemsLayout` можно создать объект, указав в качестве [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) аргумента член перечисления.
 
 > [!NOTE]
-> для выполнения макета [`CarouselView`](xref:Xamarin.Forms.CarouselView) использует собственные обработчики макетов.
+> [`CarouselView`](xref:Xamarin.Forms.CarouselView)использует собственные обработчики макетов для выполнения макета.
 
-## <a name="horizontal-layout"></a>Горизонтальный макет
+## <a name="horizontal-layout"></a>Горизонтальное расположение
 
-По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) будет отображать элементы по горизонтали. Поэтому нет необходимости устанавливать свойство [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) для использования этого макета:
+По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) отображает элементы по горизонтали. Поэтому нет необходимости задавать [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) свойство для использования этого макета:
 
 ```xaml
 <CarouselView ItemsSource="{Binding Monkeys}">
@@ -87,7 +87,7 @@ ms.locfileid: "77636142"
 </CarouselView>
 ```
 
-Кроме того, этот макет можно также выполнить, задав для свойства [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) `LinearItemsLayout` объект, указав в качестве значения свойства `Orientation` элемент перечисления `Horizontal` [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) .
+Кроме того, этот макет можно также выполнить, задав для [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) свойства `LinearItemsLayout` объект, указав в `Horizontal` [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) качестве значения `Orientation` свойства элемент перечисления:
 
 ```xaml
 <CarouselView ItemsSource="{Binding Monkeys}">
@@ -112,9 +112,9 @@ CarouselView carouselView = new CarouselView
 
 [![Снимок экрана Карауселвиев горизонтального макета на iOS и Android](layout-images/horizontal.png "Горизонтальный макет Карауселвиев")](layout-images/horizontal-large.png#lightbox "Горизонтальный макет Карауселвиев")
 
-## <a name="vertical-layout"></a>Вертикальный макет
+## <a name="vertical-layout"></a>Вертикальное расположение
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView) могут отображать свои элементы по вертикали, присвоив свойству [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) значение `LinearItemsLayout` объекта, указав в качестве значения свойства`ItemsLayoutOrientation`элемент перечисления `Vertical` [`Orientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) :
+[`CarouselView`](xref:Xamarin.Forms.CarouselView)может [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) отображать элементы по вертикали, присвоив свойству `LinearItemsLayout` значение Object, указав `Vertical` [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) в качестве значения `Orientation` свойства элемент перечисления:
 
 ```xaml
 <CarouselView ItemsSource="{Binding Monkeys}">
@@ -173,7 +173,7 @@ CarouselView carouselView = new CarouselView
 
 ## <a name="partially-visible-adjacent-items"></a>Частично видимые смежные элементы
 
-По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) отображает все элементы одновременно. Однако это поведение можно изменить, присвоив свойству `PeekAreaInsets` значение `Thickness`, которое указывает, какой объем смежных элементов должен быть частично видимым. Это может быть полезно для того, чтобы пользователи могли просматривать дополнительные элементы. В следующем коде XAML показан пример задания этого свойства:
+По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) отображает все элементы одновременно. Однако это поведение можно изменить, задав `PeekAreaInsets` свойству `Thickness` значение, которое указывает, какой объем смежных элементов должен быть частично видимым. Это может быть полезно для того, чтобы пользователи могли просматривать дополнительные элементы. В следующем коде XAML показан пример задания этого свойства:
 
 ```xaml
 <CarouselView ItemsSource="{Binding Monkeys}"
@@ -198,9 +198,9 @@ CarouselView carouselView = new CarouselView
 
 ## <a name="item-spacing"></a>Промежуток между элементами
 
-По умолчанию каждый элемент в [`CarouselView`](xref:Xamarin.Forms.CarouselView) не имеет пустого пространства вокруг него. Это поведение можно изменить, задав свойства в макете элементов, который используется `CarouselView`.
+По умолчанию между каждым элементом в не существует пробела [`CarouselView`](xref:Xamarin.Forms.CarouselView). Это поведение можно изменить, задав `ItemSpacing` свойство в макете элементов, используемом. `CarouselView`
 
-Когда [`CarouselView`](xref:Xamarin.Forms.CarouselView) задает для свойства [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) объект `LinearItemsLayout`, свойству `LinearItemsLayout.ItemSpacing` может быть присвоено значение `double`, представляющее пустое пространство вокруг каждого элемента:
+Когда [`CarouselView`](xref:Xamarin.Forms.CarouselView) [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) свойство присваивает `LinearItemsLayout` свойству объект, `LinearItemsLayout.ItemSpacing` свойству может быть присвоено `double` значение, представляющее пробел между элементами:
 
 ```xaml
 <CarouselView ItemsSource="{Binding Monkeys}">
@@ -213,7 +213,7 @@ CarouselView carouselView = new CarouselView
 ```
 
 > [!NOTE]
-> Свойство `LinearItemsLayout.ItemSpacing` имеет набор обратного вызова проверки, который гарантирует, что значение свойства всегда больше или равно 0.
+> `LinearItemsLayout.ItemSpacing` Свойство имеет набор обратного вызова проверки, который гарантирует, что значение свойства всегда больше или равно 0.
 
 Эквивалентный код на C# выглядит так:
 
@@ -228,11 +228,11 @@ CarouselView carouselView = new CarouselView
 };
 ```
 
-Этот код приводит к вертикальному макету с отступом 20 вокруг каждого элемента.
+Этот код приводит к вертикальному макету с интервалом, равным 20 между элементами.
 
 ## <a name="dynamic-resizing-of-items"></a>Динамическое изменение размера элементов
 
-Элементы в [`CarouselView`](xref:Xamarin.Forms.CarouselView) могут динамически изменяться во время выполнения путем изменения связанных с макетом свойств элементов в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate). Например, в следующем примере кода изменяются свойства [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) и [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) объекта [`Image`](xref:Xamarin.Forms.Image) , а также свойство `HeightRequest` родительского [`Frame`](xref:Xamarin.Forms.Frame):
+В среде выполнения [`CarouselView`](xref:Xamarin.Forms.CarouselView) элементы в можно динамически изменять размер, изменяя связанные с макетом свойства элементов в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate). Например, в следующем примере кода изменяются [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) свойства [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) и [`Image`](xref:Xamarin.Forms.Image) объекта и `HeightRequest` свойство его родителя: [`Frame`](xref:Xamarin.Forms.Frame)
 
 ```csharp
 void OnImageTapped(object sender, EventArgs e)
@@ -244,13 +244,13 @@ void OnImageTapped(object sender, EventArgs e)
 }
 ```
 
-Обработчик событий `OnImageTapped` выполняется в ответ на касание объекта [`Image`](xref:Xamarin.Forms.Image) и изменяет размеры изображения (и его родительский `Frame`), чтобы упростить его просмотр:
+Обработчик `OnImageTapped` событий выполняется в ответ на касание [`Image`](xref:Xamarin.Forms.Image) объекта и изменяет размеры изображения (и его родителя `Frame`), чтобы упростить его просмотр:
 
 [![Снимок экрана Карауселвиев с динамическим изменением размера элемента в iOS и Android](layout-images/runtime-resizing.png "Изменение размера динамического элемента Карауселвиев")](layout-images/runtime-resizing-large.png#lightbox "Изменение размера динамического элемента Карауселвиев")
 
 ## <a name="right-to-left-layout"></a>Макет с письмом справа налево
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView) можно разформатировать содержимое в направлении с направлением справа налево, задав для свойства [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) значение [`RightToLeft`](xref:Xamarin.Forms.FlowDirection.RightToLeft). Однако в идеале свойство `FlowDirection` должно быть установлено на странице или в корневом макете, что приводит к тому, что все элементы на странице или в корневом макете отвечают на направление потока:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView)может Разметка содержимого в направлении справа налево путем присвоения [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) свойству значения. [`RightToLeft`](xref:Xamarin.Forms.FlowDirection.RightToLeft) Однако в идеале это `FlowDirection` свойство должно быть установлено на странице или в корневом макете, что приводит к тому, что все элементы на странице или в корневом макете реагируют на направление потока:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -264,7 +264,7 @@ void OnImageTapped(object sender, EventArgs e)
 </ContentPage>
 ```
 
-[`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) по умолчанию для элемента с родительским элементом является [`MatchParent`](xref:Xamarin.Forms.FlowDirection.MatchParent). Таким образом, [`CarouselView`](xref:Xamarin.Forms.CarouselView) наследует значение свойства `FlowDirection` из [`ContentPage`](xref:Xamarin.Forms.ContentPage).
+По умолчанию [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) для элемента с родительским элементом [`MatchParent`](xref:Xamarin.Forms.FlowDirection.MatchParent)имеет значение. Таким образом, [`CarouselView`](xref:Xamarin.Forms.CarouselView) объект наследует `FlowDirection` значение свойства из [`ContentPage`](xref:Xamarin.Forms.ContentPage).
 
 Дополнительные сведения о направлении потока см. [в разделе локализация справа налево](~/xamarin-forms/app-fundamentals/localization/right-to-left.md).
 

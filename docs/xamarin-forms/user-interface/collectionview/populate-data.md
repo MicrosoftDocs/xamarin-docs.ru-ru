@@ -6,33 +6,33 @@ ms.assetid: E1783E34-1C0F-401A-80D5-B2BE5508F5F8
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 12/11/2019
-ms.openlocfilehash: 9442f7878d9290946fabb7bfc5dee77a828228c7
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+ms.date: 04/29/2020
+ms.openlocfilehash: 1ae290b3fd0e9773d880b29aa9e38ff8b736b82c
+ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79305933"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82516815"
 ---
 # <a name="xamarinforms-collectionview-data"></a>Данные CollectionView в Xamarin. Forms
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView) содержит следующие свойства, которые определяют отображаемые данные и его внешний вид:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView)включает следующие свойства, которые определяют отображаемые данные и его внешний вид:
 
-- [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource), типа `IEnumerable`, указывает коллекцию отображаемых элементов и значение по умолчанию `null`.
-- [`ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate)типа [`DataTemplate`](xref:Xamarin.Forms.DataTemplate)указывает шаблон, применяемый к каждому элементу в коллекции отображаемых элементов.
+- [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource), типа `IEnumerable`, задает коллекцию элементов для отображения и имеет значение по умолчанию `null`.
+- [`ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate)Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate)— указывает шаблон, применяемый к каждому элементу в коллекции отображаемых элементов.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами. Это означает, что свойства могут быть целевыми объектами привязок данных.
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что свойства могут быть целевыми объектами привязок данных.
 
 > [!NOTE]
-> [`CollectionView`](xref:Xamarin.Forms.CollectionView) определяет свойство `ItemsUpdatingScrollMode`, представляющее поведение прокрутки `CollectionView` при добавлении к нему новых элементов. Дополнительные сведения об этом свойстве см. в разделе [управление позицией прокрутки при добавлении новых элементов](scrolling.md#control-scroll-position-when-new-items-are-added).
+> [`CollectionView`](xref:Xamarin.Forms.CollectionView)Определяет `ItemsUpdatingScrollMode` свойство, представляющее поведение прокрутки `CollectionView` при добавлении новых элементов к нему. Дополнительные сведения об этом свойстве см. в разделе [управление позицией прокрутки при добавлении новых элементов](scrolling.md#control-scroll-position-when-new-items-are-added).
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView) также может загружать данные постепенно по мере прокрутки пользователем. Дополнительные сведения см. в статье [добавочная загрузка данных](#load-data-incrementally).
+[`CollectionView`](xref:Xamarin.Forms.CollectionView)поддерживает добавочную виртуализацию данных при прокрутке пользователем. Дополнительные сведения см. в статье [добавочная загрузка данных](#load-data-incrementally).
 
 ## <a name="populate-a-collectionview-with-data"></a>Заполнение CollectionView данными
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView) заполняется данными путем присвоения свойству [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) любой коллекции, реализующей `IEnumerable`. Элементы можно добавить в XAML, инициализируя свойство `ItemsSource` из массива строк:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) Заполняется данными путем установки его [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства в любую коллекцию, реализующую `IEnumerable`. Элементы можно добавлять в XAML путем инициализации `ItemsSource` свойства из массива строк:
 
 ```xaml
 <CollectionView>
@@ -70,20 +70,20 @@ collectionView.ItemsSource = new string[]
 ```
 
 > [!WARNING]
-> [`CollectionView`](xref:Xamarin.Forms.CollectionView) выдаст исключение, если его [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) обновляется из потока пользовательского интерфейса.
+> [`CollectionView`](xref:Xamarin.Forms.CollectionView)вызовет исключение, если его [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) обновление выполняется в ПОТОКЕ пользовательского интерфейса.
 
 По умолчанию [`CollectionView`](xref:Xamarin.Forms.CollectionView) отображает элементы в вертикальном списке, как показано на следующих снимках экрана:
 
 [![Снимок экрана CollectionView, содержащий текстовые элементы, в iOS и Android](populate-data-images/text.png "Текстовые элементы в CollectionView")](populate-data-images/text-large.png#lightbox "Текстовые элементы в CollectionView")
 
 > [!IMPORTANT]
-> Если [`CollectionView`](xref:Xamarin.Forms.CollectionView) требуется обновлять при добавлении, удалении или изменении элементов в базовой коллекции, базовая коллекция должна быть коллекцией `IEnumerable`, которая отправляет уведомления об изменении свойств, например `ObservableCollection`.
+> [`CollectionView`](xref:Xamarin.Forms.CollectionView) Если требуется обновление при добавлении, удалении или изменении элементов в базовой коллекции, то базовая коллекция должна быть `IEnumerable` коллекцией, которая отправляет уведомления об изменении свойств, например `ObservableCollection`.
 
-Сведения о том, как изменить макет [`CollectionView`](xref:Xamarin.Forms.CollectionView) , см. в разделе [CollectionViewing The Xamarin. Forms](layout.md). Сведения о том, как определить внешний вид каждого элемента в `CollectionView`, см. в разделе [Определение внешнего вида элемента](#define-item-appearance).
+Сведения о том, как изменить [`CollectionView`](xref:Xamarin.Forms.CollectionView) макет, см. в разделе о [макете Xamarin. Forms CollectionView](layout.md). Сведения о том `CollectionView`, как определить внешний вид каждого элемента в, см. в разделе [Определение внешнего вида элемента](#define-item-appearance).
 
 ### <a name="data-binding"></a>привязка данных,
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView) можно заполнить данными с помощью привязки данных, чтобы привязать его свойство [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) к коллекции `IEnumerable`. В XAML это достигается с помощью расширения разметки `Binding`:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView)может заполняться данными с помощью привязки данных для привязки своего [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства к `IEnumerable` коллекции. В XAML это достигается с помощью расширения `Binding` разметки:
 
 ```xaml
 <CollectionView ItemsSource="{Binding Monkeys}" />
@@ -96,7 +96,7 @@ CollectionView collectionView = new CollectionView();
 collectionView.SetBinding(ItemsView.ItemsSourceProperty, "Monkeys");
 ```
 
-В этом примере данные свойства [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) привязываются к свойству `Monkeys` подключенного ViewModel.
+В этом примере данные [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства привязываются к `Monkeys` свойству подключенного ViewModel.
 
 > [!NOTE]
 > Скомпилированные привязки можно включить для повышения производительности привязки данных в приложениях Xamarin. Forms. Дополнительные сведения см. в статье [Скомпилированные привязки](~/xamarin-forms/app-fundamentals/data-binding/compiled-bindings.md).
@@ -105,7 +105,7 @@ collectionView.SetBinding(ItemsView.ItemsSourceProperty, "Monkeys");
 
 ## <a name="define-item-appearance"></a>Определение внешнего вида элемента
 
-Внешний вид каждого элемента в [`CollectionView`](xref:Xamarin.Forms.CollectionView) можно определить, присвоив свойству [`CollectionView.ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate) значение [`DataTemplate`](xref:Xamarin.Forms.DataTemplate).
+Внешний вид каждого элемента в [`CollectionView`](xref:Xamarin.Forms.CollectionView) может быть определен путем присвоения [`CollectionView.ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate) свойству значения. [`DataTemplate`](xref:Xamarin.Forms.DataTemplate)
 
 ```xaml
 <CollectionView ItemsSource="{Binding Monkeys}">
@@ -173,7 +173,7 @@ collectionView.ItemTemplate = new DataTemplate(() =>
 });
 ```
 
-Элементы, указанные в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , определяют внешний вид каждого элемента в списке. В этом примере макет в `DataTemplate` управляется [`Grid`](xref:Xamarin.Forms.Grid). `Grid` содержит объект [`Image`](xref:Xamarin.Forms.Image) и два [`Label`](xref:Xamarin.Forms.Label) объектов, которые привязываются к свойствам класса `Monkey`:
+Элементы, указанные в параметре, [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) определяют внешний вид каждого элемента в списке. В этом примере макет `DataTemplate` в управляется с помощью. [`Grid`](xref:Xamarin.Forms.Grid) `Grid` Содержит [`Image`](xref:Xamarin.Forms.Image) объект и два [`Label`](xref:Xamarin.Forms.Label) объекта, которые привязываются к свойствам `Monkey` класса:
 
 ```csharp
 public class Monkey
@@ -193,7 +193,7 @@ public class Monkey
 
 ## <a name="choose-item-appearance-at-runtime"></a>Выбор внешнего вида элемента во время выполнения
 
-Внешний вид каждого элемента в [`CollectionView`](xref:Xamarin.Forms.CollectionView) можно выбрать во время выполнения на основе значения элемента, установив для свойства [`CollectionView.ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate) значение [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) объект:
+Внешний вид каждого элемента в [`CollectionView`](xref:Xamarin.Forms.CollectionView) можно выбрать во время выполнения на основе значения элемента, задав для [`CollectionView.ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate) свойства [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) объект.
 
 ```xaml
 <ContentPage ...
@@ -227,7 +227,7 @@ CollectionView collectionView = new CollectionView
 collectionView.SetBinding(ItemsView.ItemsSourceProperty, "Monkeys");
 ```
 
-Для свойства [`ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate) задан объект `MonkeyDataTemplateSelector`. В следующем примере показан класс `MonkeyDataTemplateSelector`:
+Для [`ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate) свойства задается `MonkeyDataTemplateSelector` объект. В следующем примере показан `MonkeyDataTemplateSelector` класс:
 
 ```csharp
 public class MonkeyDataTemplateSelector : DataTemplateSelector
@@ -242,18 +242,18 @@ public class MonkeyDataTemplateSelector : DataTemplateSelector
 }
 ```
 
-Класс `MonkeyDataTemplateSelector` определяет `AmericanMonkey` и `OtherMonkey` свойства [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , для которых заданы разные шаблоны данных. Переопределение `OnSelectTemplate` Возвращает шаблон `AmericanMonkey`, который отображает имя и расположение обезьяны в синем, если имя обезьяны содержит "America". Если имя обезьяны не содержит "America", то переопределение `OnSelectTemplate` Возвращает шаблон `OtherMonkey`, который отображает имя и расположение обезьяны в серебристом виде:
+`MonkeyDataTemplateSelector` Класс определяет `AmericanMonkey` свойства и `OtherMonkey` [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , для которых установлены разные шаблоны данных. `OnSelectTemplate` Переопределение возвращает `AmericanMonkey` шаблон, который отображает имя и расположение обезьяны в синем, если имя обезьяны содержит "America". Если имя обезьяны не содержит "America", то `OnSelectTemplate` переопределение возвращает `OtherMonkey` шаблон, который отображает имя и расположение обезьяны в серебристом виде:
 
 [![Снимок экрана выбора шаблона элемента среды выполнения CollectionView в iOS и Android](populate-data-images/datatemplateselector.png "Выбор шаблона элемента среды выполнения в CollectionView")](populate-data-images/datatemplateselector-large.png#lightbox "Выбор шаблона элемента среды выполнения в CollectionView")
 
 Дополнительные сведения о селекторах шаблонов данных см. [в разделе Создание DataTemplateSelector Xamarin. Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md).
 
 > [!IMPORTANT]
-> При использовании [`CollectionView`](xref:Xamarin.Forms.CollectionView)никогда не устанавливайте в качестве корневого элемента [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) объектов `ViewCell`. Это приведет к возникновению исключения, поскольку `CollectionView` не имеет концепции ячеек.
+> При использовании [`CollectionView`](xref:Xamarin.Forms.CollectionView)никогда не устанавливайте для корневого элемента [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) объектов значение `ViewCell`. Это приведет к возникновению исключения, так как `CollectionView` не содержит концепцию ячеек.
 
 ## <a name="context-menus"></a>Контекстные меню
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView) поддерживает контекстные меню для элементов данных с помощью `SwipeView`, который открывает контекстное меню с помощью жеста прокрутки. `SwipeView` — это контейнерный элемент управления, который служит оболочкой для элемента содержимого и предоставляет элементы контекстного меню для этого элемента содержимого. Таким образом, контекстные меню реализуются для `CollectionView` путем создания `SwipeView`, определяющего содержимое, вокруг которого помещается `SwipeView`, и элементов контекстного меню, которые отображаются с помощью жеста прокрутки. Это достигается путем установки `SwipeView` в качестве корневого представления в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , определяющего внешний вид каждого элемента данных в `CollectionView`:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView)поддерживает контекстные меню для элементов данных с помощью `SwipeView`, которое открывает контекстное меню с помощью жеста прокрутки. `SwipeView` — Это контейнерный элемент управления, который создает оболочку вокруг элемента содержимого и предоставляет элементы контекстного меню для этого элемента содержимого. Таким образом, контекстные меню реализуются для `CollectionView` , создавая объект `SwipeView` , который определяет содержимое, вокруг `SwipeView` которого выполняется оболочка, и элементы контекстного меню, которые выводятся с помощью жеста прокрутки. Это достигается путем установки в `SwipeView` качестве корневого представления в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , определяющего внешний вид каждого элемента данных в: `CollectionView`
 
 ```xaml
 <CollectionView x:Name="collectionView"
@@ -322,17 +322,17 @@ collectionView.ItemTemplate = new DataTemplate(() =>
 });
 ```
 
-В этом примере содержимое `SwipeView` является [`Grid`](xref:Xamarin.Forms.Grid) , определяющим внешний вид каждого элемента в [`CollectionView`](xref:Xamarin.Forms.CollectionView). Элементы считывания используются для выполнения действий с `SwipeView` содержимым и отображаются при считывании элемента управления с левой стороны:
+В этом примере `SwipeView` содержимое — это [`Grid`](xref:Xamarin.Forms.Grid) , определяющее внешний вид каждого элемента в. [`CollectionView`](xref:Xamarin.Forms.CollectionView) Элементы считывания используются для выполнения действий с `SwipeView` содержимым и отображаются при считывании элемента управления с левой стороны:
 
 [![Снимок экрана: пункты контекстного меню CollectionView в iOS и Android](populate-data-images/swipeview.png "CollectionView с элементами контекстного меню Свипевиев")](populate-data-images/swipeview-large.png#lightbox "CollectionView с элементами контекстного меню Свипевиев")
 
-`SwipeView` поддерживает четыре разных направления прокрутки с направлением считывания, определяемым направленной `SwipeItems`ной коллекцией, к которой добавляются объекты `SwipeItems`. По умолчанию элемент прокрутки выполняется при касании пользователем. Кроме того, после выполнения элемента считывания элементы прокрутки скрываются, а содержимое `SwipeView` снова отображается. Однако эти поведения можно изменить.
+`SwipeView`поддерживает четыре разных направления прокрутки с направлением считывания, определяемым направленной `SwipeItems` коллекцией, `SwipeItems` в которую добавляются объекты. По умолчанию элемент прокрутки выполняется при касании пользователем. Кроме того, после выполнения элемента считывания элементы прокрутки скрываются и `SwipeView` содержимое отображается повторно. Однако эти поведения можно изменить.
 
 Дополнительные сведения об элементе управления `SwipeView` см. в разделе [Xamarin. Forms свипевиев](~/xamarin-forms/user-interface/swipeview.md).
 
-## <a name="pull-to-refresh"></a>Извлечь для обновления
+## <a name="pull-to-refresh"></a>Обновление путем оттягивания
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView) поддерживает функцию Pull для обновления с помощью `RefreshView`, что позволяет обновлять отображаемые данные путем вывода списка элементов. `RefreshView` — это контейнерный элемент управления, предоставляющий функции обновления для своего дочернего элемента, при условии, что дочерний объект поддерживает прокручиваемое содержимое. Таким образом, запрос на обновление реализуется для `CollectionView`, настроив его как дочерний элемент `RefreshView`.
+[`CollectionView`](xref:Xamarin.Forms.CollectionView)поддерживает функцию Pull для обновления с помощью `RefreshView`, которая позволяет обновлять отображаемые данные путем вывода списка элементов. `RefreshView` — Это контейнерный элемент управления, предоставляющий функции обновления для своего дочернего элемента, при условии, что дочерний объект поддерживает прокручиваемое содержимое. Таким образом, запрос на обновление реализуется для `CollectionView` , задавая его в качестве дочернего элемента для `RefreshView`:
 
 ```xaml
 <RefreshView IsRefreshing="{Binding IsRefreshing}"
@@ -361,32 +361,32 @@ refreshView.Content = collectionView;
 // ...
 ```
 
-Когда пользователь инициирует обновление, выполняется `ICommand`, определяемое свойством `Command`, которое должно обновлять отображаемые элементы. Во время обновления отображается визуализация обновления, которая состоит из анимированного круга хода выполнения:
+Когда пользователь инициирует обновление, выполняется `ICommand` `Command` свойство, определенное свойством, которое должно обновлять отображаемые элементы. Во время обновления отображается визуализация обновления, которая состоит из анимированного круга хода выполнения:
 
 [![Снимок экрана CollectionView Pull-to-Refresh, в iOS и Android](populate-data-images/pull-to-refresh.png "CollectionView по запросу на обновление")](populate-data-images/pull-to-refresh-large.png#lightbox "CollectionView по запросу на обновление")
 
-Значение свойства `RefreshView.IsRefreshing` указывает текущее состояние `RefreshView`. При активации обновления пользователем это свойство автоматически переходит в `true`. После завершения обновления следует сбросить свойство на `false`.
+Значение `RefreshView.IsRefreshing` свойства указывает текущее состояние `RefreshView`. При активации обновления пользователем это свойство автоматически переходит в `true`. После завершения обновления следует сбросить свойство до `false`.
 
 Дополнительные сведения о `RefreshView`см. в разделе [Xamarin. Forms рефрешвиев](~/xamarin-forms/user-interface/refreshview.md).
 
 ## <a name="load-data-incrementally"></a>Добавочная загрузка данных
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView) поддерживает добавочную загрузку данных по мере прокрутки элементов пользователями. Это позволяет выполнять такие сценарии, как асинхронная загрузка страницы данных из веб-службы при прокрутке пользователем. Кроме того, точка, в которой загружаются дополнительные данные, настраивается таким образом, что пользователи не видят пустое пространство или останавливаются при прокрутке.
+[`CollectionView`](xref:Xamarin.Forms.CollectionView)поддерживает добавочную виртуализацию данных при прокрутке пользователем. Это позволяет выполнять такие сценарии, как асинхронная загрузка страницы данных из веб-службы при прокрутке пользователем. Кроме того, точка, в которой загружаются дополнительные данные, настраивается таким образом, что пользователи не видят пустое пространство или останавливаются при прокрутке.
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView) определяет следующие свойства для управления добавочной загрузкой данных:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView)определяет следующие свойства для управления добавочной загрузкой данных:
 
-- `RemainingItemsThreshold`типа `int`пороговое значение элементов, которые еще не отображаются в списке, в котором будет запущено событие `RemainingItemsThresholdReached`.
-- `RemainingItemsThresholdReachedCommand`, типа `ICommand`, который выполняется при достижении `RemainingItemsThreshold`.
+- `RemainingItemsThreshold`, тип `int`, пороговое значение элементов, которые еще не отображаются в списке, в `RemainingItemsThresholdReached` котором будет вызвано событие.
+- `RemainingItemsThresholdReachedCommand`Тип `ICommand`, который выполняется при `RemainingItemsThreshold` достижении.
 - `RemainingItemsThresholdReachedCommandParameter` с типом `object`, который передается как параметр в `RemainingItemsThresholdReachedCommand`.
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView) также определяет `RemainingItemsThresholdReached` событие, которое возникает, когда `CollectionView` прокручивается достаточно, чтобы `RemainingItemsThreshold` элементы не отображались. Это событие может быть обработано для загрузки дополнительных элементов. Кроме того, при срабатывании события `RemainingItemsThresholdReached` выполняется `RemainingItemsThresholdReachedCommand`, что позволяет выполнять добавочную загрузку данных в ViewModel.
+[`CollectionView`](xref:Xamarin.Forms.CollectionView)также определяет `RemainingItemsThresholdReached` событие, которое возникает, когда `CollectionView` прокрутка достаточно велика, `RemainingItemsThreshold` чтобы элементы не отображались. Это событие может быть обработано для загрузки дополнительных элементов. Кроме того, при срабатывании `RemainingItemsThresholdReached` `RemainingItemsThresholdReachedCommand` события выполняется, что позволяет выполнять добавочную загрузку данных в ViewModel.
 
-Значение по умолчанию для свойства `RemainingItemsThreshold` равно-1, что означает, что событие `RemainingItemsThresholdReached` не будет запущено. Если значение свойства равно 0, то при отображении последнего элемента в [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) будет вызвано событие `RemainingItemsThresholdReached`. Для значений больше 0 событие `RemainingItemsThresholdReached` будет вызвано, когда `ItemsSource` содержит количество элементов, которые еще не прокручены.
+Значение `RemainingItemsThreshold` свойства по умолчанию равно-1, что означает, что `RemainingItemsThresholdReached` событие никогда не будет запущено. Если значение свойства равно 0, `RemainingItemsThresholdReached` событие будет инициировано при отображении последнего элемента в. [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) Для значений, превышающих 0, `RemainingItemsThresholdReached` событие будет запущено, когда `ItemsSource` содержит количество элементов, которые еще не прокручены.
 
 > [!NOTE]
-> [`CollectionView`](xref:Xamarin.Forms.CollectionView) проверяет свойство `RemainingItemsThreshold`, чтобы его значение всегда было больше или равно-1.
+> [`CollectionView`](xref:Xamarin.Forms.CollectionView)проверяет `RemainingItemsThreshold` свойство таким образом, что его значение всегда больше или равно-1.
 
-В следующем примере XAML показан [`CollectionView`](xref:Xamarin.Forms.CollectionView) , который выполняет добавочную загрузку данных:
+В следующем примере XAML показано, [`CollectionView`](xref:Xamarin.Forms.CollectionView) как выполнить добавочную загрузку данных:
 
 ```xaml
 <CollectionView ItemsSource="{Binding Animals}"
@@ -407,7 +407,7 @@ collectionView.RemainingItemsThresholdReached += OnCollectionViewRemainingItemsT
 collectionView.SetBinding(ItemsView.ItemsSourceProperty, "Animals");
 ```
 
-В этом примере кода событие `RemainingItemsThresholdReached` срабатывает при наличии 5 элементов, которые еще не прокручены, а в ответ выполняет обработчик событий `OnCollectionViewRemainingItemsThresholdReached`:
+В этом примере кода `RemainingItemsThresholdReached` событие срабатывает при наличии 5 элементов, которые еще не прокручены, и в ответ выполняет обработчик `OnCollectionViewRemainingItemsThresholdReached` событий:
 
 ```csharp
 void OnCollectionViewRemainingItemsThresholdReached(object sender, EventArgs e)
@@ -417,7 +417,7 @@ void OnCollectionViewRemainingItemsThresholdReached(object sender, EventArgs e)
 ```
 
 > [!NOTE]
-> Данные также могут быть загружены постепенно путем привязки `RemainingItemsThresholdReachedCommand` к реализации `ICommand` в ViewModel.
+> Данные также могут быть загружены постепенно путем привязки `RemainingItemsThresholdReachedCommand` к `ICommand` реализации в ViewModel.
 
 ## <a name="related-links"></a>Связанные ссылки
 
@@ -425,5 +425,5 @@ void OnCollectionViewRemainingItemsThresholdReached(object sender, EventArgs e)
 - [Рефрешвиев Xamarin. Forms](~/xamarin-forms/user-interface/refreshview.md)
 - [Свипевиев Xamarin. Forms](~/xamarin-forms/user-interface/swipeview.md)
 - [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md)
-- [Шаблоны данных Xamarin. Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
+- [Шаблоны данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
 - [Создание DataTemplateSelector Xamarin. Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md)

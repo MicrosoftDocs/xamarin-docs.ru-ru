@@ -6,23 +6,23 @@ ms.assetid: 46AB0D5E-0025-4A8A-9D00-3E66C3D0BA2E
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 01/17/2020
-ms.openlocfilehash: c71153cdaa94a7983b89968abc828011a648f2b1
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+ms.date: 03/10/2020
+ms.openlocfilehash: 87348d5821c2c9e2e46a777f212bd5f69d1a54d0
+ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79306629"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82517571"
 ---
 # <a name="display-pop-ups"></a>Отображать всплывающие окна
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-pop-ups)
+[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-pop-ups)
 
-Отображение предупреждения, предоставление пользователю возможности выбора или отображение запроса — это обычная задача пользовательского интерфейса. Xamarin. Forms содержит три метода [`Page`](xref:Xamarin.Forms.Page) класса для взаимодействия с пользователем через всплывающее окно: [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*), [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*)и `DisplayPromptAsync`. Эти элементы визуализируются на каждой платформе с помощью соответствующих собственных элементов управления.
+Отображение предупреждения, предоставление пользователю возможности выбора или отображение запроса — это обычная задача пользовательского интерфейса. [`Page`](xref:Xamarin.Forms.Page) Xamarin. Forms содержит три метода для взаимодействия с пользователем через всплывающее окно: [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*), [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*)и. `DisplayPromptAsync` Эти элементы визуализируются на каждой платформе с помощью соответствующих собственных элементов управления.
 
 ## <a name="display-an-alert"></a>Отображение оповещений
 
-На всех платформах, поддерживаемых Xamarin.Forms, есть модальный всплывающий элемент, позволяющий выводить предупреждения или задавать простые вопросы пользователю. Для вывода предупреждений в Xamarin.Forms используйте метод [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) на любой странице [`Page`](xref:Xamarin.Forms.Page). Следующая строка отображает простое сообщение:
+На всех платформах, поддерживаемых Xamarin.Forms, есть модальный всплывающий элемент, позволяющий выводить предупреждения или задавать простые вопросы пользователю. Чтобы отобразить эти предупреждения в Xamarin. Forms, используйте [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) метод для любого [`Page`](xref:Xamarin.Forms.Page)из них. Следующая строка отображает простое сообщение:
 
 ```csharp
 await DisplayAlert ("Alert", "You have been alerted", "OK");
@@ -32,7 +32,7 @@ await DisplayAlert ("Alert", "You have been alerted", "OK");
 
 В этом примере не предполагается получение сведений от пользователя. Предупреждение отображается в модальном режиме, и после его закрытия пользователь продолжает работать с приложением.
 
-Метод [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) можно также использовать для получения ответа от пользователя. Для этого предлагаются две кнопки и возвращается значение типа `boolean`. Для получения ответа на предупреждение предоставьте надписи для обеих кнопок и примените к методу оператор `await`. После того как пользователь выберет один из вариантов, ответ возвращается в код. Обратите внимание на ключевые слова `async` и `await` в примере кода ниже.
+[`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) Метод также можно использовать для записи ответа пользователя путем представления двух кнопок и возврата `boolean`. Для получения ответа на предупреждение предоставьте надписи для обеих кнопок и примените к методу оператор `await`. После того как пользователь выберет один из вариантов, ответ возвращается в код. Обратите внимание на ключевые слова `async` и `await` в примере кода ниже.
 
 ```csharp
 async void OnAlertYesNoClicked (object sender, EventArgs e)
@@ -46,9 +46,9 @@ async void OnAlertYesNoClicked (object sender, EventArgs e)
 
 ## <a name="guide-users-through-tasks"></a>Рекомендации для пользователей по задачам
 
-[UIActionSheet](https://developer.apple.com/library/ios/documentation/uikit/reference/uiactionsheet_class/Reference/Reference.html) — это стандартный элемент пользовательского интерфейса в iOS. Метод Xamarin.Forms [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) позволяет включать этот элемент управления в кроссплатформенные приложения. При этом в Android и UWP будут отрисовываться собственные аналоги.
+[UIActionSheet](https://developer.apple.com/library/ios/documentation/uikit/reference/uiactionsheet_class/Reference/Reference.html) — это стандартный элемент пользовательского интерфейса в iOS. Метод Xamarin. Forms [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) позволяет включать этот элемент управления в межплатформенные приложения, выменяя собственные альтернативы в Android и UWP.
 
-Чтобы отобразить лист действий, `await` [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) в любом [`Page`](xref:Xamarin.Forms.Page), передав метки сообщения и кнопки в виде строк. Этот метод возвращает надпись кнопки, нажатой пользователем. Вот простой пример.
+Для вывода листа `await` [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) действий в любом [`Page`](xref:Xamarin.Forms.Page)случае передайте сообщение и метки кнопок в виде строк. Этот метод возвращает надпись кнопки, нажатой пользователем. Вот простой пример.
 
 ```csharp
 async void OnActionSheetSimpleClicked (object sender, EventArgs e)
@@ -74,7 +74,7 @@ async void OnActionSheetCancelDeleteClicked (object sender, EventArgs e)
 
 ## <a name="display-a-prompt"></a>Отображение запроса
 
-Чтобы отобразить запрос, вызовите `DisplayPromptAsync` в любом [`Page`](xref:Xamarin.Forms.Page), передав заголовок и сообщение в качестве `string` аргументов:
+Чтобы отобразить запрос, вызовите метод `DisplayPromptAsync` в Any [`Page`](xref:Xamarin.Forms.Page), передав заголовок и сообщение в качестве `string` аргументов:
 
 ```csharp
 string result = await DisplayPromptAsync("Question 1", "What's your name?");
@@ -84,18 +84,18 @@ string result = await DisplayPromptAsync("Question 1", "What's your name?");
 
 [![Снимок экрана: модальная строка в iOS и Android](pop-ups-images/simple-prompt.png "Модальная строка")](pop-ups-images/simple-prompt-large.png#lightbox "Модальная строка")
 
-Если нажата кнопка ОК, то возвращенный ответ возвращается в виде `string`. Если нажата кнопка Отмена, возвращается `null`.
+Если нажата кнопка ОК, то возвращаемый ответ возвращается в виде `string`. Если нажата кнопка Отмена, `null` возвращается значение.
 
-Полный список аргументов для метода `DisplayPromptAsync`:
+Полный список аргументов для `DisplayPromptAsync` метода:
 
-- `title`типа `string`— это заголовок, отображаемый в командной строке.
-- `message`типа `string`— это сообщение, отображаемое в командной строке.
-- `accept`типа `string`— это текст кнопки Accept. Это необязательный аргумент, значение по умолчанию которого — ОК.
-- `cancel`типа `string`— это текст кнопки Отмена. Это необязательный аргумент, значение по умолчанию которого — Cancel.
-- `placeholder`типа `string`— это текст заполнителя, отображаемый в командной строке. Это необязательный аргумент, значение по умолчанию которого — `null`.
-- `maxLength`типа `int`— это максимальная длина ответа пользователя. Это необязательный аргумент, значение по умолчанию которого равно-1.
-- `keyboard`типа `Keyboard`— это тип клавиатуры, используемый для ответа пользователя. Это необязательный аргумент, значение по умолчанию которого — `Keyboard.Default`.
-- `initialValue`типа `string`— это предварительно определенный ответ, который будет отображаться и который можно изменить. Это необязательный аргумент, значение по умолчанию которого — пустая `string`.
+- `title`Тип `string`— заголовок, отображаемый в запросе.
+- `message`Тип `string`— сообщение, отображаемое в командной строке.
+- `accept`, типа `string`— это текст кнопки Accept. Это необязательный аргумент, значение по умолчанию которого — ОК.
+- `cancel`, типа `string`— это текст для кнопки Отмена. Это необязательный аргумент, значение по умолчанию которого — Cancel.
+- `placeholder`Тип `string`— текст заполнителя, отображаемый в запросе. Это необязательный аргумент, значение по умолчанию `null`которого —.
+- `maxLength`, типа `int`— максимальная длина ответа пользователя. Это необязательный аргумент, значение по умолчанию которого равно-1.
+- `keyboard`Тип `Keyboard`— это тип клавиатуры, используемый для ответа пользователя. Это необязательный аргумент, значение по умолчанию `Keyboard.Default`которого —.
+- `initialValue`Тип `string`— это предварительно определенный ответ, который будет отображаться и который можно изменить. Это необязательный аргумент, значение по умолчанию которого — `string`Empty.
 
 В следующем примере показано задание некоторых необязательных аргументов:
 
@@ -106,9 +106,6 @@ string result = await DisplayPromptAsync("Question 2", "What's 5 + 5?", initialV
 Этот код отображает предопределенный ответ 10, ограничивает число символов, которое может быть введено равным 2, и отображает цифровую клавиатуру для ввода данных пользователем:
 
 [![Снимок экрана: модальная строка в iOS и Android](pop-ups-images/keyboard-prompt.png "Модальная строка")](pop-ups-images/keyboard-prompt-large.png#lightbox "Модальная строка")
-
-> [!NOTE]
-> В настоящее время метод `DisplayPromptAsync` реализован только в iOS и Android.
 
 ## <a name="related-links"></a>Связанные ссылки
 

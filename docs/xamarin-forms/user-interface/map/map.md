@@ -7,44 +7,44 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/29/2019
-ms.openlocfilehash: 1cfda90360557af1160d421f18807f8b534967a8
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+ms.openlocfilehash: 3861200446ea9c0e368aa251f3e7ec3f992c7152
+ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79306509"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82517526"
 ---
 # <a name="xamarinforms-map-control"></a>Map Control Xamarin. Forms
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
-Элемент управления [`Map`](xref:Xamarin.Forms.Maps.Map) представляет собой кросс-платформенное представление для отображения и аннотирования карт. Он использует собственный элемент управления картой для каждой платформы, обеспечивая быстрый и знакомый интерфейс карт для пользователей:
+[`Map`](xref:Xamarin.Forms.Maps.Map) Элемент управления представляет собой кросс-платформенное представление для отображения и аннотирования карт. Он использует собственный элемент управления картой для каждой платформы, обеспечивая быстрый и знакомый интерфейс карт для пользователей:
 
 [![Снимок экрана элемента управления картой в iOS и Android](map-images/map-default.png "Элемент управления картой")](map-images/map-default-large.png#lightbox "Элемент управления картой")
 
-Класс [`Map`](xref:Xamarin.Forms.Maps.Map) определяет следующие свойства, которые управляют внешним видом и поведением карт.
+[`Map`](xref:Xamarin.Forms.Maps.Map) Класс определяет следующие свойства, которые управляют внешним видом и поведением карт:
 
-- [`IsShowingUser`](xref:Xamarin.Forms.Maps.Map.IsShowingUser)типа `bool`указывает, отображается ли на карте текущее расположение пользователя.
-- [`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource), типа `IEnumerable`, который указывает коллекцию элементов `IEnumerable` для отображения.
-- [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate), типа [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), который указывает [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , применяемые к каждому элементу в коллекции отображаемых элементов.
-- `ItemTemplateSelector`, типа [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector), который указывает [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) , которое будет использоваться для выбора [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) для элемента во время выполнения.
-- [`HasScrollEnabled`](xref:Xamarin.Forms.Maps.Map.HasScrollEnabled)типа `bool`определяет, разрешена ли на карте прокрутка.
-- [`HasZoomEnabled`](xref:Xamarin.Forms.Maps.Map.HasZoomEnabled)типа `bool`определяет, разрешено ли на карте возможность масштабирования.
-- `MapElements`типа `IList<MapElement>`представляет список элементов на карте, например многоугольники и ломаные линии.
-- [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType)типа [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType)указывает стиль отображения для схемы.
-- `MoveToLastRegionOnLayoutChange`типа `bool`определяет, будет ли передвигаться отображаемая область карт из текущей области в ее ранее заданную область при изменении макета.
-- [`Pins`](xref:Xamarin.Forms.Maps.Map.Pins)типа `IList<Pin>`представляет список ПИН-кодов на карте.
-- [`VisibleRegion`](xref:Xamarin.Forms.Maps.Map.VisibleRegion)типа [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan)Возвращает отображаемую в данный момент область на карте.
+- [`IsShowingUser`](xref:Xamarin.Forms.Maps.Map.IsShowingUser)Тип `bool`— указывает, отображается ли на карте текущее расположение пользователя.
+- [`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource)Тип `IEnumerable`, который указывает коллекцию `IEnumerable` элементов для отображения.
+- [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate)Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), который задает объект [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , применяемый к каждому элементу в коллекции отображаемых элементов.
+- `ItemTemplateSelector`Тип [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector), который указывает [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) , который будет использоваться для выбора [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) элемента во время выполнения.
+- [`HasScrollEnabled`](xref:Xamarin.Forms.Maps.Map.HasScrollEnabled)Тип `bool`определяет, разрешена ли на карте прокрутка.
+- [`HasZoomEnabled`](xref:Xamarin.Forms.Maps.Map.HasZoomEnabled), тип `bool`, определяет, разрешено ли на карте возможность масштабирования.
+- `MapElements`Тип `IList<MapElement>`— представляет список элементов на карте, например многоугольники и ломаные линии.
+- [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType)Тип [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType)— указывает стиль отображения для схемы.
+- `MoveToLastRegionOnLayoutChange`, тип `bool`, определяет, будет ли передвигаться отображаемая область карт из текущей области в ее ранее заданную область при изменении макета.
+- [`Pins`](xref:Xamarin.Forms.Maps.Map.Pins)Тип `IList<Pin>`— представляет список ПИН-кодов на карте.
+- [`VisibleRegion`](xref:Xamarin.Forms.Maps.Map.VisibleRegion), типа [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan), возвращает текущую отображаемую область на карте.
 
-Эти свойства, за исключением свойств `MapElements`, `Pins`и `VisibleRegion`, поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) , что означает, что они могут быть целями привязок данных.
+Эти свойства, за исключением `MapElements`свойств, `Pins`и `VisibleRegion` , поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целями привязок данных.
 
-Класс [`Map`](xref:Xamarin.Forms.Maps.Map) также определяет событие `MapClicked`, которое возникает при нажатии на карту. Объект `MapClickedEventArgs`, сопровождающий событие, имеет одно свойство с именем `Position`типа [`Position`](xref:Xamarin.Forms.Maps.Position). При срабатывании события для свойства `Position` задается выбранное расположение на карте. Сведения о структуре [`Position`](xref:Xamarin.Forms.Maps.Position) см. в разделе [Map Disposition and Distance](position-distance.md).
+[`Map`](xref:Xamarin.Forms.Maps.Map) Класс также определяет `MapClicked` событие, которое возникает при нажатии на карту. `MapClickedEventArgs` Объект, сопровождающий событие, имеет одно свойство с именем `Position`типа [`Position`](xref:Xamarin.Forms.Maps.Position). При срабатывании события `Position` свойству присваивается расположение, которое было касанием. Сведения о структуре см [`Position`](xref:Xamarin.Forms.Maps.Position) . в разделе [Map Disposition and Distance](position-distance.md).
 
-Дополнительные сведения о свойствах [`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource), [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate)и `ItemTemplateSelector` см. [в разделе Отображение коллекции закрепления](pins.md#display-a-pin-collection).
+Дополнительные сведения о [`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource)свойствах [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate), и `ItemTemplateSelector` см. в разделе [Отображение коллекции закрепления](pins.md#display-a-pin-collection).
 
 ## <a name="display-a-map"></a>Отображение схемы
 
-[`Map`](xref:Xamarin.Forms.Maps.Map) можно отобразить, добавив его в макет или страницу:
+[`Map`](xref:Xamarin.Forms.Maps.Map) Можно отобразить, добавив его в макет или страницу:
 
 ```xaml
 <ContentPage ...
@@ -54,7 +54,7 @@ ms.locfileid: "79306509"
 ```
 
 > [!NOTE]
-> Для ссылки на элементы управления Xamarin. Forms. Maps требуется дополнительное определение пространства имен `xmlns`. В предыдущем примере ссылка на пространство имен `Xamarin.Forms.Maps` указывается с помощью ключевого слова `maps`.
+> Для ссылки `xmlns` на элементы управления Xamarin. Forms. Maps требуется дополнительное определение пространства имен. В предыдущем примере на `Xamarin.Forms.Maps` пространство имен ссылается `maps` ключевое слово.
 
 Эквивалентный код на C# выглядит так:
 
@@ -75,21 +75,21 @@ namespace WorkingWithMaps
 }
 ```
 
-В этом примере вызывается конструктор по умолчанию [`Map`](xref:Xamarin.Forms.Maps.Map) , который выравнивает карту по Рим:
+В этом примере вызывается [`Map`](xref:Xamarin.Forms.Maps.Map) конструктор по умолчанию, который выравнивает карту по Рим:
 
 [![Снимок экрана элемента управления Map с расположением по умолчанию в iOS и Android](map-images/map-default.png "Элемент управления Map с расположением по умолчанию")](map-images/map-default-large.png#lightbox "Элемент управления Map с расположением по умолчанию")
 
-Кроме того, [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) аргумент может быть передан в конструктор [`Map`](xref:Xamarin.Forms.Maps.Map) , чтобы задать центральную точку и уровень масштабирования для схемы при ее загрузке. Дополнительные сведения см. в разделе [Отображение определенного расположения на карте](#display-a-specific-location-on-a-map).
+Кроме того, [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) аргумент можно передать в [`Map`](xref:Xamarin.Forms.Maps.Map) конструктор, чтобы задать центральную точку и уровень масштабирования для схемы при ее загрузке. Дополнительные сведения см. в разделе [Отображение определенного расположения на карте](#display-a-specific-location-on-a-map).
 
 ## <a name="map-types"></a>Типы карт
 
-Свойству [`Map.MapType`](xref:Xamarin.Forms.Maps.Map.MapType) может быть присвоено [`MapType`](xref:Xamarin.Forms.Maps.MapType) элемент перечисления, определяющий стиль отображения для схемы. Перечисление `MapType` определяет следующие члены:
+[`Map.MapType`](xref:Xamarin.Forms.Maps.Map.MapType) Свойство может быть задано для элемента [`MapType`](xref:Xamarin.Forms.Maps.MapType) перечисления, чтобы определить стиль отображения для схемы. Перечисление `MapType` определяет следующие члены:
 
-- `Street` указывает, что будет отображаться улица.
-- `Satellite` указывает, что будет отображена схема, содержащая сопутствующие изображения.
-- `Hybrid` указывает, что будут отображены комбинированные сведения о улицы и спутниковом сопоставлении.
+- `Street`Указывает, что будет отображаться улица.
+- `Satellite`Указывает, что будет отображена схема, содержащая сопутствующие изображения.
+- `Hybrid`Указывает, что будет отображено сочетание улицы и вспомогательных данных на карте.
 
-По умолчанию [`Map`](xref:Xamarin.Forms.Maps.Map) отображает карту улицы, если свойство [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) не определено. Кроме того, свойству `MapType` может быть присвоено одно из членов перечисления [`MapType`](xref:Xamarin.Forms.Maps.MapType) :
+По умолчанию [`Map`](xref:Xamarin.Forms.Maps.Map) отображает карту улицы, если [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) свойство не определено. Кроме того, `MapType` свойству может быть присвоено одно [`MapType`](xref:Xamarin.Forms.Maps.MapType) из членов перечисления:
 
 ```xaml
 <maps:Map MapType="Satellite" />
@@ -104,21 +104,21 @@ Map map = new Map
 };
 ```
 
-На следующих снимках экрана показано [`Map`](xref:Xamarin.Forms.Maps.Map) , если свойство [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) имеет значение `Street`.
+На следующих снимках экрана [`Map`](xref:Xamarin.Forms.Maps.Map) показано, [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) когда свойство имеет значение `Street`.
 
 [![Снимок экрана элемента управления Map с типом схемы улицы в iOS и Android](map-images/maptype-street.png "Сопоставьте элемент управления с маптипе улицы")](map-images/maptype-street-large.png#lightbox "Map Control с типом карт улицы")
 
-На следующих снимках экрана показано [`Map`](xref:Xamarin.Forms.Maps.Map) , если свойство [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) имеет значение `Satellite`.
+На следующих снимках экрана [`Map`](xref:Xamarin.Forms.Maps.Map) показано, [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) когда свойство имеет значение `Satellite`.
 
 [![Снимок экрана элемента управления Map с типом вспомогательной схемы в iOS и Android](map-images/maptype-satellite.png "Отображение элемента управления с помощью вспомогательной маптипе")](map-images/maptype-satellite-large.png#lightbox "Сопоставьте элемент управления с типом вспомогательной схемы")
 
-На следующих снимках экрана показано [`Map`](xref:Xamarin.Forms.Maps.Map) , если свойство [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) имеет значение `Hybrid`.
+На следующих снимках экрана [`Map`](xref:Xamarin.Forms.Maps.Map) показано, [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) когда свойство имеет значение `Hybrid`.
 
 [![Снимок экрана элемента управления Map с типом гибридной схемы в iOS и Android](map-images/maptype-hybrid.png "Управление картой с помощью гибридного маптипе")](map-images/maptype-hybrid-large.png#lightbox "Сопоставьте элемент управления с типом гибридной схемы")
 
 ## <a name="display-a-specific-location-on-a-map"></a>Отображение определенного расположения на карте
 
-Область отображения, отображаемая при загрузке схемы, может быть задана путем передачи аргумента [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) в конструктор [`Map`](xref:Xamarin.Forms.Maps.Map) :
+Область отображения, отображаемая при загрузке схемы, может быть задана путем передачи [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) аргумента в [`Map`](xref:Xamarin.Forms.Maps.Map) конструктор:
 
 ```xaml
 <maps:Map>
@@ -147,7 +147,7 @@ MapSpan mapSpan = new MapSpan(position, 0.01, 0.01);
 Map map = new Map(mapSpan);
 ```
 
-В этом примере создается объект [`Map`](xref:Xamarin.Forms.Maps.Map) , который показывает область, указанную объектом [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) . Объект `MapSpan` выравнивается по центру широты и долготы, представленные объектом [`Position`](xref:Xamarin.Forms.Maps.Position) , и охватывает 0,01 широты и 0,01 долготы. Сведения о структуре [`Position`](xref:Xamarin.Forms.Maps.Position) см. в разделе [Map Disposition and Distance](position-distance.md). Дополнительные сведения о передаче аргументов в XAML см. в разделе [Передача аргументов в XAML](~/xamarin-forms/xaml/passing-arguments.md).
+В [`Map`](xref:Xamarin.Forms.Maps.Map) этом примере создается объект, который показывает область, указанную [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) объектом. `MapSpan` Объект выравнивается по центру широты и долготы, представленные [`Position`](xref:Xamarin.Forms.Maps.Position) объектом, и охватывает 0,01 широты и 0,01 долготы. Сведения о структуре см [`Position`](xref:Xamarin.Forms.Maps.Position) . в разделе [Map Disposition and Distance](position-distance.md). Дополнительные сведения о передаче аргументов в XAML см. в разделе [Передача аргументов в XAML](~/xamarin-forms/xaml/passing-arguments.md).
 
 Результат заключается в том, что при отображении карт она выравнивается по центру в определенном месте и охватывает определенное количество широт и долготы:
 
@@ -155,26 +155,26 @@ Map map = new Map(mapSpan);
 
 ## <a name="create-a-mapspan-object"></a>Создание объекта Мапспан
 
-Существует ряд подходов к созданию [`MapSpan`ных](xref:Xamarin.Forms.Maps.MapSpan) объектов. Распространенным подходом является предоставление требуемых аргументов конструктору `MapSpan`. Это Широта и Долгота, представленная объектом [`Position`](xref:Xamarin.Forms.Maps.Position) , и `double` значения, представляющие градусы широты и долготы, которые являются частью `MapSpan`. Сведения о структуре [`Position`](xref:Xamarin.Forms.Maps.Position) см. в разделе [Map Disposition and Distance](position-distance.md).
+Существует ряд подходов к созданию [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) объектов. Распространенный подход — предоставить `MapSpan` конструктору необходимые аргументы. Это Широта и Долгота, представленные [`Position`](xref:Xamarin.Forms.Maps.Position) объектом, и `double` значения, представляющие градусы широты и долготы, которые являются `MapSpan`частью. Сведения о структуре см [`Position`](xref:Xamarin.Forms.Maps.Position) . в разделе [Map Disposition and Distance](position-distance.md).
 
-Кроме того, в классе [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) есть три метода, которые возвращают новые объекты `MapSpan`:
+Кроме того, в [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) классе есть три метода, которые возвращают `MapSpan` новые объекты:
 
-1. [`ClampLatitude`](xref:Xamarin.Forms.Maps.MapSpan.ClampLatitude*) возвращает `MapSpan` с тем же `LongitudeDegrees`, что и экземпляр класса метода, и радиус, определяемый его аргументами `north` и `south`.
-1. [`FromCenterAndRadius`](xref:Xamarin.Forms.Maps.MapSpan.FromCenterAndRadius*) возвращает `MapSpan`, определяемый его [`Position`](xref:Xamarin.Forms.Maps.Position) и [`Distance`](xref:Xamarin.Forms.Maps.Distance) аргументами.
-1. [`WithZoom`](xref:Xamarin.Forms.Maps.MapSpan.WithZoom*) возвращает `MapSpan` с тем же центром, что и экземпляр класса метода, но с радиусом, умноженным на аргумент `double`.
+1. [`ClampLatitude`](xref:Xamarin.Forms.Maps.MapSpan.ClampLatitude*)Возвращает объект `MapSpan` с тем же `LongitudeDegrees` , что и экземпляр класса метода, и радиус, определенный его `north` аргументами `south` и.
+1. [`FromCenterAndRadius`](xref:Xamarin.Forms.Maps.MapSpan.FromCenterAndRadius*)Возвращает объект `MapSpan` , определяемый его [`Position`](xref:Xamarin.Forms.Maps.Position) аргументами [`Distance`](xref:Xamarin.Forms.Maps.Distance) и.
+1. [`WithZoom`](xref:Xamarin.Forms.Maps.MapSpan.WithZoom*)Возвращает объект `MapSpan` с тем же центром, что и экземпляр класса метода, но с радиусом, умноженным на `double` аргумент.
 
-Сведения о структуре [`Distance`](xref:Xamarin.Forms.Maps.Distance) см. в разделе [Map Disposition and Distance](position-distance.md).
+Сведения о структуре см [`Distance`](xref:Xamarin.Forms.Maps.Distance) . в разделе [Map Disposition and Distance](position-distance.md).
 
-После создания [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) можно получить доступ к следующим свойствам, чтобы получить данные о нем:
+[`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) После создания можно получить доступ к следующим свойствам, чтобы получить данные о нем:
 
-- [`Center`](xref:Xamarin.Forms.Maps.MapSpan.Center), представляющий [`Position`](xref:Xamarin.Forms.Maps.Position) в географическом центре `MapSpan`.
-- [`LatitudeDegrees`](xref:Xamarin.Forms.Maps.MapSpan.LatitudeDegrees), представляющий градусы широты, охваченные `MapSpan`.
+- [`Center`](xref:Xamarin.Forms.Maps.MapSpan.Center), который представляет объект [`Position`](xref:Xamarin.Forms.Maps.Position) в географическом центре `MapSpan`.
+- [`LatitudeDegrees`](xref:Xamarin.Forms.Maps.MapSpan.LatitudeDegrees), который представляет градусы широты, которые входят в `MapSpan`состав.
 - [`LongitudeDegrees`](xref:Xamarin.Forms.Maps.MapSpan.LongitudeDegrees), представляющий градусы долготы, охваченные `MapSpan`.
-- [`Radius`](xref:Xamarin.Forms.Maps.MapSpan.Radius), представляющий `MapSpan` RADIUS.
+- [`Radius`](xref:Xamarin.Forms.Maps.MapSpan.Radius), представляющий `MapSpan` радиус.
 
 ## <a name="move-the-map"></a>Перемещение схемы
 
-Метод [`Map.MoveToRegion`](xref:Xamarin.Forms.Maps.Map.MoveToRegion*) может быть вызван для изменения расположения и масштаба на карте. Этот метод принимает [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) аргумент, определяющий область отображаемой схемы и ее масштаб.
+[`Map.MoveToRegion`](xref:Xamarin.Forms.Maps.Map.MoveToRegion*) Метод может быть вызван для изменения расположения и масштаба на карте. Этот метод принимает [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) аргумент, который определяет область отображаемой схемы и ее масштаб.
 
 В следующем коде показан пример перемещения отображаемой области на карте:
 
@@ -185,7 +185,7 @@ map.MoveToRegion(mapSpan);
 
 ## <a name="zoom-the-map"></a>Изменить масштаб схемы
 
-Уровень масштаба [`Map`](xref:Xamarin.Forms.Maps.Map) можно изменить без изменения его расположения. Это можно сделать с помощью пользовательского интерфейса Map или программным путем, вызвав метод [`MoveToRegion`](xref:Xamarin.Forms.Maps.Map.MoveToRegion*) с аргументом [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) , который использует текущее расположение в качестве аргумента [`Position`](xref:Xamarin.Forms.Maps.Position) :
+Уровень масштабирования [`Map`](xref:Xamarin.Forms.Maps.Map) можно изменить без изменения его расположения. Это можно сделать с помощью пользовательского интерфейса Map или программным путем, вызвав [`MoveToRegion`](xref:Xamarin.Forms.Maps.Map.MoveToRegion*) метод с [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) аргументом, который использует текущее расположение в [`Position`](xref:Xamarin.Forms.Maps.Position) качестве аргумента:
 
 ```csharp
 double zoomLevel = 0.5;
@@ -196,21 +196,21 @@ if (map.VisibleRegion != null)
 }
 ```
 
-В этом примере метод [`MoveToRegion`](xref:Xamarin.Forms.Maps.Map.MoveToRegion*) вызывается с аргументом [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) , который задает текущее расположение map, через свойство [`Map.VisibleRegion`](xref:Xamarin.Forms.Maps.Map.VisibleRegion) и уровень масштабирования в градусах широты и долготы. Общий результат заключается в том, что уровень масштабирования в карте изменяется, но его расположение — нет. Альтернативный подход к реализации масштабирования на карте заключается в использовании метода [`MapSpan.WithZoom`](xref:Xamarin.Forms.Maps.MapSpan.WithZoom*) для управления коэффициентом масштабирования.
+В этом примере [`MoveToRegion`](xref:Xamarin.Forms.Maps.Map.MoveToRegion*) метод вызывается с [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) аргументом, указывающим текущее расположение Map, через [`Map.VisibleRegion`](xref:Xamarin.Forms.Maps.Map.VisibleRegion) свойство и уровень масштабирования в градусах широты и долготы. Общий результат заключается в том, что уровень масштабирования в карте изменяется, но его расположение — нет. Альтернативный подход к реализации масштабирования на карте заключается в использовании [`MapSpan.WithZoom`](xref:Xamarin.Forms.Maps.MapSpan.WithZoom*) метода для управления коэффициентом масштабирования.
 
 > [!IMPORTANT]
-> При изменении масштаба схемы (с помощью пользовательского интерфейса Map или программным путем) требуется, чтобы свойство [`Map.HasZoomEnabled`](xref:Xamarin.Forms.Maps.Map.HasZoomEnabled) было `true`. Дополнительные сведения об этом свойстве см. в разделе [Отключение масштабирования](#disable-zoom).
+> При изменении масштаба схемы (с помощью пользовательского интерфейса Map или программным путем) требуется [`Map.HasZoomEnabled`](xref:Xamarin.Forms.Maps.Map.HasZoomEnabled) , чтобы `true`свойство было равно. Дополнительные сведения об этом свойстве см. в разделе [Отключение масштабирования](#disable-zoom).
 
 ## <a name="customize-map-behavior"></a>Настройка поведения карт
 
-Поведение [`Map`](xref:Xamarin.Forms.Maps.Map) может быть настроено путем установки некоторых его свойств и обработки события `MapClicked`.
+Поведение объекта [`Map`](xref:Xamarin.Forms.Maps.Map) можно настроить, задав некоторые его свойства и обрабатывая `MapClicked` событие.
 
 > [!NOTE]
-> Дополнительное поведение карт кустомизатин можно достичь, создав пользовательский модуль подготовки отчетов. Дополнительные сведения см. в разделе [Настройка Map в Xamarin. Forms](~/xamarin-forms/app-fundamentals/custom-renderer/map/index.md).
+> Дополнительные настройки поведения карт можно получить, создав пользовательский модуль подготовки к отображению карт. Дополнительные сведения см. в разделе [Настройка Map в Xamarin. Forms](~/xamarin-forms/app-fundamentals/custom-renderer/map-pin.md).
 
 ### <a name="disable-scroll"></a>Отключить прокрутку
 
-Класс [`Map`](xref:Xamarin.Forms.Maps.Map) определяет свойство [`HasScrollEnabled`](xref:Xamarin.Forms.Maps.Map.HasScrollEnabled) типа `bool`. По умолчанию это свойство имеет значение `true`, которое указывает, что карте разрешено прокручивать. Если это свойство имеет значение `false`, то эта схема не прокручивается. В следующем примере показано задание этого свойства:
+[`Map`](xref:Xamarin.Forms.Maps.Map) Класс определяет [`HasScrollEnabled`](xref:Xamarin.Forms.Maps.Map.HasScrollEnabled) свойство типа `bool`. По умолчанию это свойство `true`имеет значение, указывающее, что карте разрешена прокрутка. Если для `false`этого свойства задано значение, то на карте не выполняется прокрутка. В следующем примере показано задание этого свойства:
 
 ```xaml
 <maps:Map HasScrollEnabled="false" />
@@ -227,7 +227,7 @@ Map map = new Map
 
 ### <a name="disable-zoom"></a>Отключить масштаб
 
-Класс [`Map`](xref:Xamarin.Forms.Maps.Map) определяет свойство [`HasZoomEnabled`](xref:Xamarin.Forms.Maps.Map.HasZoomEnabled) типа `bool`. По умолчанию это свойство имеет значение `true`, которое указывает на то, что на карте можно выполнить масштаб. Если это свойство имеет значение `false`, то карту невозможно изменить. В следующем примере показано задание этого свойства:
+[`Map`](xref:Xamarin.Forms.Maps.Map) Класс определяет [`HasZoomEnabled`](xref:Xamarin.Forms.Maps.Map.HasZoomEnabled) свойство типа `bool`. По умолчанию это свойство `true`имеет значение, которое указывает на то, что на карте можно выполнить масштаб. Если это свойство имеет значение `false`, карту нельзя изменить. В следующем примере показано задание этого свойства:
 
 ```xaml
 <maps:Map HasZoomEnabled="false" />
@@ -244,7 +244,7 @@ Map map = new Map
 
 ### <a name="show-the-users-location"></a>Отображение расположения пользователя
 
-Класс [`Map`](xref:Xamarin.Forms.Maps.Map) определяет свойство [`IsShowingUser`](xref:Xamarin.Forms.Maps.Map.IsShowingUser) типа `bool`. По умолчанию это свойство имеет значение `false`, которое указывает, что на карте не отображается текущее расположение пользователя. Если это свойство имеет значение `true`, то на карте отображается текущее расположение пользователя. В следующем примере показано задание этого свойства:
+[`Map`](xref:Xamarin.Forms.Maps.Map) Класс определяет [`IsShowingUser`](xref:Xamarin.Forms.Maps.Map.IsShowingUser) свойство типа `bool`. По умолчанию это свойство `false`имеет значение, указывающее, что на карте не отображается текущее местоположение пользователя. Если для `true`этого свойства задано значение, то на карте отображается текущее расположение пользователя. В следующем примере показано задание этого свойства:
 
 ```xaml
 <maps:Map IsShowingUser="true" />
@@ -264,7 +264,7 @@ Map map = new Map
 
 ### <a name="maintain-map-region-on-layout-change"></a>Сохранить регион на карте при изменении макета
 
-Класс [`Map`](xref:Xamarin.Forms.Maps.Map) определяет свойство `MoveToLastRegionOnLayoutChange` типа `bool`. По умолчанию это свойство имеет значение `true`, которое указывает, что отображаемая область отображения будет перемещена из текущей области в ее ранее заданную область при изменении макета, например при смене устройства. Если для этого свойства задано значение `false`, отображаемая область отображения останется в центре при изменении макета. В следующем примере показано задание этого свойства:
+[`Map`](xref:Xamarin.Forms.Maps.Map) Класс определяет `MoveToLastRegionOnLayoutChange` свойство типа `bool`. По умолчанию это свойство `true`имеет значение, которое указывает, что отображаемая область отображения будет перемещена из текущей области в ее ранее заданную область при изменении макета, например при смене устройства. Если для `false`этого свойства задано значение, отображаемая область отображения останется в центре при изменении макета. В следующем примере показано задание этого свойства:
 
 ```xaml
 <maps:Map MoveToLastRegionOnLayoutChange="false" />
@@ -281,9 +281,9 @@ Map map = new Map
 
 ### <a name="map-clicks"></a>Кнопки карт
 
-Класс [`Map`](xref:Xamarin.Forms.Maps.Map) определяет событие `MapClicked`, возникающее при нажатии на карту. Объект `MapClickedEventArgs`, сопровождающий событие, имеет одно свойство с именем `Position`типа [`Position`](xref:Xamarin.Forms.Maps.Position). При срабатывании события для свойства `Position` задается выбранное расположение на карте. Сведения о структуре [`Position`](xref:Xamarin.Forms.Maps.Position) см. в разделе [Map Disposition and Distance](position-distance.md).
+[`Map`](xref:Xamarin.Forms.Maps.Map) Класс определяет `MapClicked` событие, возникающее при нажатии на карту. `MapClickedEventArgs` Объект, сопровождающий событие, имеет одно свойство с именем `Position`типа [`Position`](xref:Xamarin.Forms.Maps.Position). При срабатывании события `Position` свойству присваивается расположение, которое было касанием. Сведения о структуре см [`Position`](xref:Xamarin.Forms.Maps.Position) . в разделе [Map Disposition and Distance](position-distance.md).
 
-В следующем примере кода показан обработчик событий для события `MapClicked`:
+В следующем примере кода показан обработчик событий для `MapClicked` события:
 
 ```csharp
 void OnMapClicked(object sender, MapClickedEventArgs e)
@@ -292,7 +292,7 @@ void OnMapClicked(object sender, MapClickedEventArgs e)
 }
 ```
 
-В этом примере обработчик событий `OnMapClicked` выводит широту и долготу, представляющую расположение касания. Обработчик событий можно зарегистрировать с помощью события `MapClicked` следующим образом:
+В этом примере обработчик `OnMapClicked` событий выводит широту и долготу, представляющую расположение касания. Обработчик событий можно зарегистрировать в `MapClicked` событии следующим образом:
 
 ```xaml
 <maps:Map MapClicked="OnMapClicked" />
@@ -309,5 +309,5 @@ map.MapClicked += OnMapClicked;
 
 - [Пример Maps](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 - [Расположение и расстояние на карте](position-distance.md)
-- [Настройка схемы Xamarin. Forms](~/xamarin-forms/app-fundamentals/custom-renderer/map/index.md)
+- [Настройка карты Xamarin.Forms](~/xamarin-forms/app-fundamentals/custom-renderer/map-pin.md)
 - [Передача аргументов в XAML](~/xamarin-forms/xaml/passing-arguments.md)

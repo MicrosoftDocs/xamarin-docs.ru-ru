@@ -7,38 +7,38 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/07/2020
-ms.openlocfilehash: c3c4863814949be2e6575e92136ca740452a2f3c
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+ms.openlocfilehash: 177359dfe081cba3cc43031d807f669f93a31ee9
+ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79306551"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82516539"
 ---
 # <a name="xamarinforms-map-initialization-and-configuration"></a>Инициализация и Настройка карт Xamarin. Forms
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
-Элемент управления [`Map`](xref:Xamarin.Forms.Maps.Map) использует собственный элемент управления картой на каждой платформе. Это обеспечивает быстрый, знакомый интерфейс карт для пользователей, но означает, что некоторые действия по настройке необходимы для соблюдения требований к API для каждой платформы.
+[`Map`](xref:Xamarin.Forms.Maps.Map) Элемент управления использует собственный элемент управления картой на каждой платформе. Это обеспечивает быстрый, знакомый интерфейс карт для пользователей, но означает, что некоторые действия по настройке необходимы для соблюдения требований к API для каждой платформы.
 
 ## <a name="map-initialization"></a>Инициализация карт
 
-Элемент управления [`Map`](xref:Xamarin.Forms.Maps.Map) предоставляется пакетом NuGet [Xamarin. Forms. Maps](https://www.nuget.org/packages/Xamarin.Forms.Maps/) , который должен быть добавлен в каждый проект решения.
+[`Map`](xref:Xamarin.Forms.Maps.Map) Элемент управления предоставляется пакетом NuGet [Xamarin. Forms. Maps](https://www.nuget.org/packages/Xamarin.Forms.Maps/) , который должен быть добавлен в каждый проект в решении.
 
 После установки пакета NuGet [Xamarin. Forms. Maps](https://www.nuget.org/packages/Xamarin.Forms.Maps/) он должен быть инициализирован в каждом проекте платформы.
 
-В iOS это должно произойти в **AppDelegate.CS** путем вызова метода `Xamarin.FormsMaps.Init` *после* метода `Xamarin.Forms.Forms.Init`:
+В iOS это должно произойти в **AppDelegate.CS** путем вызова `Xamarin.FormsMaps.Init` метода *после* `Xamarin.Forms.Forms.Init` метода:
 
 ```csharp
 Xamarin.FormsMaps.Init();
 ```
 
-В Android это должно произойти в **MainActivity.CS** путем вызова метода `Xamarin.FormsMaps.Init` *после* метода `Xamarin.Forms.Forms.Init`:
+В Android это должно произойти в **MainActivity.CS** путем вызова `Xamarin.FormsMaps.Init` метода *после* `Xamarin.Forms.Forms.Init` метода:
 
 ```csharp
 Xamarin.FormsMaps.Init(this, savedInstanceState);
 ```
 
-В универсальная платформа Windows (UWP) это должно произойти в **MainPage.XAML.CS** путем вызова метода `Xamarin.FormsMaps.Init` из конструктора `MainPage`:
+В универсальная платформа Windows (UWP) это должно произойти в **MainPage.XAML.CS** путем вызова `Xamarin.FormsMaps.Init` метода из `MainPage` конструктора:
 
 ```csharp
 Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
@@ -46,7 +46,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 Дополнительные сведения о маркере проверки подлинности, требуемом для UWP, см. в разделе [универсальная платформа Windows](#universal-windows-platform).
 
-После добавления пакета NuGet и метода инициализации, вызываемого внутри каждого приложения, `Xamarin.Forms.Maps` API можно использовать в проекте с общим кодом.
+После добавления пакета NuGet и метода инициализации, вызываемого в каждом приложении, `Xamarin.Forms.Maps` интерфейсы API можно использовать в проекте с общим кодом.
 
 ## <a name="platform-configuration"></a>Конфигурация платформы
 
@@ -57,15 +57,15 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 Для отображения и взаимодействия с картой в iOS не требуется дополнительная настройка. Однако для доступа к службам обнаружения необходимо задать следующие ключи в **info. plist**:
 
 - iOS 11 и более поздние версии
-  - [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW26) — для использования служб определения местоположения при использовании приложения
-  - [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription) — для использования служб определения местоположения в любое время
-- iOS 10 и более ранних версий
-  - [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW26) — для использования служб определения местоположения при использовании приложения
-  - [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW18) — для использования служб определения местоположения в любое время    
+  - [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW26)— для использования служб определения местоположения при использовании приложения;
+  - [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription)— для использования служб определения местоположения в любое время
+- iOS 10 и более ранние версии
+  - [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW26)— для использования служб определения местоположения при использовании приложения;
+  - [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW18)— для использования служб определения местоположения в любое время    
 
-Для поддержки iOS 11 и более ранних версий можно включить все три ключа: `NSLocationWhenInUseUsageDescription`, `NSLocationAlwaysAndWhenInUseUsageDescription`и `NSLocationAlwaysUsageDescription`.
+Для поддержки iOS 11 и более ранних версий можно включить все три ключа `NSLocationWhenInUseUsageDescription`: `NSLocationAlwaysAndWhenInUseUsageDescription`, и `NSLocationAlwaysUsageDescription`.
 
-Ниже приведено представление XML для этих разделов в **info. plist** . Необходимо обновить значения `string`, чтобы отразить, как ваше приложение использует сведения о расположении:
+Ниже приведено представление XML для этих разделов в **info. plist** . Необходимо обновить `string` значения, чтобы отразить, как ваше приложение использует сведения о расположении:
 
 ```xml
 <key>NSLocationAlwaysUsageDescription</key>
@@ -93,7 +93,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 1. Укажите требование для устаревшей библиотеки Apache HTTP в манифесте.
 1. используемых Укажите разрешение WRITE_EXTERNAL_STORAGE в манифесте.
 1. используемых Укажите разрешения расположения в манифесте.
-1. используемых Запросите разрешения расположения среды выполнения в классе `MainActivity`.
+1. используемых Запросите разрешения расположения среды `MainActivity` выполнения в классе.
 
 Пример правильно настроенного файла манифеста см. в разделе [AndroidManifest. XML](https://github.com/xamarin/xamarin-forms-samples/blob/master/WorkingWithMaps/WorkingWithMaps/WorkingWithMaps.Android/Properties/AndroidManifest.xml) из примера приложения.
 
@@ -101,7 +101,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 Чтобы использовать [API Google Maps](https://developers.google.com/maps/documentation/android/) в Android, необходимо создать ключ API. Для этого следуйте инструкциям в статье [Получение ключа API Google Maps](~/android/platform/maps-and-location/maps/obtaining-a-google-maps-api-key.md).
 
-После получения ключа API его необходимо добавить в элемент `<application>` файла **Properties/AndroidManifest. XML** :
+После получения ключа API его необходимо добавить в `<application>` элемент файла **Properties/AndroidManifest. XML** :
 
 ```xml
 <application ...>
@@ -109,16 +109,16 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 </application>
 ```
 
-При этом ключ API внедряется в манифест. Без допустимого ключа API элемент управления [`Map`](xref:Xamarin.Forms.Maps.Map) будет отображать пустую сетку.
+При этом ключ API внедряется в манифест. Без допустимого ключа API [`Map`](xref:Xamarin.Forms.Maps.Map) элемент управления отобразит пустую сетку.
 
 > [!NOTE]
-> `com.google.android.geo.API_KEY` является рекомендуемым именем метаданных для ключа API. Для обеспечения обратной совместимости можно использовать имя метаданных `com.google.android.maps.v2.API_KEY`, но только проверку подлинности для интерфейса API карт Android версии 2.
+> `com.google.android.geo.API_KEY`— Рекомендуемое имя метаданных для ключа API. Для обеспечения обратной совместимости можно использовать `com.google.android.maps.v2.API_KEY` имя метаданных, но разрешает проверку подлинности только для интерфейса API карт Android версии 2.
 
-Для доступа APK к Google Maps необходимо включить отпечатки SHA-1 и имена пакетов для каждого хранилища ключей (Отладка и выпуск), которое используется для подписания APK. Например если вы используете один компьютер для отладки и другой компьютер для создания выпуска APK, должно содержать отпечаток SHA-1 сертификата из хранилища ключей отладки первого компьютера и отпечаток SHA-1 сертификата из хранилища ключей выпуска из второй компьютер. Также не забудьте изменить ключевые учетные данные при изменении **имени пакета** приложения. См. [раздел Получение ключа API Google Maps](~/android/platform/maps-and-location/maps/obtaining-a-google-maps-api-key.md).
+Для доступа APK к Google Maps необходимо включить отпечатки SHA-1 и имена пакетов для каждого хранилища ключей (Отладка и выпуск), которое используется для подписания APK. Например, если вы используете один компьютер для отладки и другой компьютер для создания APK выпуска, следует включить отпечаток сертификата SHA-1 из хранилища ключей отладки первого компьютера и отпечаток сертификата SHA-1 из хранилища ключей второго компьютера. Также не забудьте изменить ключевые учетные данные при изменении **имени пакета** приложения. См. [раздел Получение ключа API Google Maps](~/android/platform/maps-and-location/maps/obtaining-a-google-maps-api-key.md).
 
 #### <a name="specify-the-google-play-services-version-number"></a>Укажите номер версии служб Google Play Services
 
-Добавьте следующее объявление в элемент `<application>` **AndroidManifest. XML**:
+Добавьте следующее объявление в `<application>` элемент **AndroidManifest. XML**:
 
 ```xml
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
@@ -128,7 +128,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 #### <a name="specify-the-requirement-for-the-apache-http-legacy-library"></a>Укажите требование для устаревшей библиотеки Apache HTTP
 
-Если приложение Xamarin. Forms предназначено для API 28 или более поздней версии, необходимо добавить следующее объявление в элемент `<application>` **AndroidManifest. XML**:
+Если приложение Xamarin. Forms предназначено для API 28 или более поздней версии, необходимо добавить следующее `<application>` объявление в элемент **AndroidManifest. XML**:
 
 ```xml
 <uses-library android:name="org.apache.http.legacy" android:required="false" />    
@@ -138,7 +138,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 #### <a name="specify-the-write_external_storage-permission"></a>Укажите разрешение WRITE_EXTERNAL_STORAGE
 
-Если приложение предназначено для API 22 или ниже, может потребоваться добавить разрешение `WRITE_EXTERNAL_STORAGE` в манифест, как дочерний элемент `<manifest>`.
+Если приложение нацелено на API 22 или ниже, может потребоваться добавить `WRITE_EXTERNAL_STORAGE` разрешение в манифест, как дочерний `<manifest>` элемент элемента:
 
 ```xml
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -148,7 +148,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 #### <a name="specify-location-permissions"></a>Укажите разрешения на расположение
 
-Если приложению требуется доступ к расположению пользователя, необходимо запросить разрешение, добавив `ACCESS_COARSE_LOCATION` или `ACCESS_FINE_LOCATION` разрешения в манифест (или оба) как дочерний элемент элемента `<manifest>`:
+Если приложению требуется доступ к расположению пользователя, необходимо запросить разрешение, добавив разрешения `ACCESS_COARSE_LOCATION` или `ACCESS_FINE_LOCATION` в манифест (или оба) в качестве дочернего `<manifest>` элемента:
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.myapp">
@@ -158,7 +158,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 </manifest>
 ```
 
-Разрешение `ACCESS_COARSE_LOCATION` позволяет API использовать Wi-Fi или мобильные данные или оба значения для определения расположения устройства. Разрешения `ACCESS_FINE_LOCATION` позволяют API использовать систему глобальной позиционирования (GPS), Wi-Fi или мобильные данные для определения точного расположения по возможности.
+`ACCESS_COARSE_LOCATION` Разрешение позволяет API использовать Wi-Fi или мобильные данные, а также и то, и другое, чтобы определить расположение устройства. `ACCESS_FINE_LOCATION` Разрешения позволяют API использовать систему глобального ПОЗИЦИОНИРОВАНИЯ (GPS), Wi-Fi или мобильные данные для определения точного расположения.
 
 Кроме того, эти разрешения можно включить с помощью редактора манифестов, чтобы добавить следующие разрешения.
 
@@ -173,7 +173,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 Если приложение предназначено для API 23 или более поздней версии и должно иметь доступ к расположению пользователя, оно должно проверить наличие необходимого разрешения во время выполнения и запросить его в случае его отсутствия. Это можно обеспечить, выполнив следующие действия.
 
-1. В классе `MainActivity` добавьте следующие поля:
+1. В `MainActivity` классе добавьте следующие поля:
 
     ```csharp
     const int RequestLocationId = 0;
@@ -185,7 +185,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
     };
     ```
 
-1. В классе `MainActivity` добавьте следующее переопределение `OnStart`.
+1. В `MainActivity` классе добавьте следующее `OnStart` переопределение:
 
     ```csharp
     protected override void OnStart()
@@ -206,9 +206,9 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
     }
     ```
 
-    При условии, что приложение предназначено для API 23 или более поздней версии, этот код выполняет проверку разрешения на выполнение `AccessFineLocation` для разрешения времени выполнения. Если разрешение не предоставлено, запрос разрешения выполняется путем вызова метода `RequestPermissions`.
+    При условии, что приложение предназначено для API 23 или выше, этот код выполняет проверку разрешения на `AccessFineLocation` выполнение для разрешения. Если разрешение не предоставлено, запрос разрешения выполняется путем вызова `RequestPermissions` метода.
 
-1. В классе `MainActivity` добавьте следующее переопределение `OnRequestPermissionsResult`.
+1. В `MainActivity` классе добавьте следующее `OnRequestPermissionsResult` переопределение:
 
     ```csharp
     public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
@@ -235,15 +235,15 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 ### <a name="universal-windows-platform"></a>Универсальная платформа Windows
 
-В UWP приложение должно пройти проверку подлинности, прежде чем оно сможет отобразить карту и использовать службы Map Services. Для проверки подлинности приложения необходимо указать ключ проверки подлинности карты. Дополнительные сведения см. [в разделе запрос на сопоставление ключа проверки подлинности](/windows/uwp/maps-and-location/authentication-key). После этого маркер проверки подлинности должен быть указан в вызове метода `FormsMaps.Init("AUTHORIZATION_TOKEN")` для проверки подлинности приложения с помощью карт Bing.
+В UWP приложение должно пройти проверку подлинности, прежде чем оно сможет отобразить карту и использовать службы Map Services. Для проверки подлинности приложения необходимо указать ключ проверки подлинности карты. Дополнительные сведения см. [в разделе запрос на сопоставление ключа проверки подлинности](/windows/uwp/maps-and-location/authentication-key). После этого маркер проверки подлинности должен быть `FormsMaps.Init("AUTHORIZATION_TOKEN")` указан в вызове метода для проверки подлинности приложения с помощью карт Bing.
 
 > [!NOTE]
-> В UWP для использования служб Map, таких как геокодирование, необходимо также присвоить свойству `MapService.ServiceToken` значение ключа проверки подлинности. Это можно сделать с помощью следующей строки кода: `Windows.Services.Maps.MapService.ServiceToken = "INSERT_AUTH_TOKEN_HERE";`.
+> В UWP для использования служб Map, таких как геокодирование, необходимо также задать для `MapService.ServiceToken` свойства значение ключа проверки подлинности. Это можно сделать с помощью следующей строки кода: `Windows.Services.Maps.MapService.ServiceToken = "INSERT_AUTH_TOKEN_HERE";`.
 
 Кроме того, если приложению требуется доступ к расположению пользователя, необходимо включить возможность расположения в манифесте пакета. Это можно обеспечить, выполнив следующие действия.
 
-1. В **Обозреватель решений**дважды щелкните **Package. appxmanifest** и перейдите на вкладку **возможности** .
-1. В списке **возможностей** установите флажок **Расположение**. Это позволит добавить возможность `location` устройства в файл манифеста пакета.
+1. В **обозревателе решений** дважды щелкните файл **package.appxmanifest** и выберите вкладку **Возможности**.
+1. В списке **Возможности** установите флажок **Расположение**. Это позволит добавить `location` возможности устройства в файл манифеста пакета.
 
     ```xml
     <Capabilities>
@@ -254,21 +254,21 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 #### <a name="release-builds"></a>Сборки выпуска
 
-Сборки выпуска UWP используют компиляцию .NET Native для компиляции приложения непосредственно в машинный код. Однако результатом этого является то, что модуль подготовки отчетов для элемента управления [`Map`](xref:Xamarin.Forms.Maps.Map) в UWP может быть связан с исполняемым файлом. Это можно исправить с помощью перегрузки метода `Forms.Init`, зависящего от UWP, в **app.XAML.CS**:
+Сборки выпуска UWP используют компиляцию .NET Native для компиляции приложения непосредственно в машинный код. Однако это следствие заключается в том, что модуль подготовки отчетов для [`Map`](xref:Xamarin.Forms.Maps.Map) элемента управления в UWP может быть связан с исполняемым файлом. Это можно исправить с помощью перегрузки метода, `Forms.Init` зависящего от UWP, в **app.XAML.CS**:
 
 ```csharp
 var assembliesToInclude = new [] { typeof(Xamarin.Forms.Maps.UWP.MapRenderer).GetTypeInfo().Assembly };
 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 ```
 
-Этот код передает сборку, в которой находится класс `Xamarin.Forms.Maps.UWP.MapRenderer`, в метод `Forms.Init`. Это гарантирует, что сборка не будет связана с исполняемым процессом компиляции .NET Native.
+Этот код передает сборку, в которой находится `Xamarin.Forms.Maps.UWP.MapRenderer` класс, в `Forms.Init` метод. Это гарантирует, что сборка не будет связана с исполняемым процессом компиляции .NET Native.
 
 > [!IMPORTANT]
-> Невыполнение этого действия приведет к тому, что элемент управления [`Map`](xref:Xamarin.Forms.Maps.Map) не будет отображаться при запуске сборки выпуска.
+> Несоблюдение этого действия приведет к тому [`Map`](xref:Xamarin.Forms.Maps.Map) , что элемент управления не будет отображаться при запуске сборки выпуска.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Пример Maps](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 - [Контакты Xamarin. Forms. Maps](~/xamarin-forms/user-interface/map/pins.md).
 - [API карт](xref:Xamarin.Forms.Maps)
-- [Преобразование пользовательского модуля подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/map/index.md)
+- [Преобразование пользовательского модуля подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/map-pin.md)

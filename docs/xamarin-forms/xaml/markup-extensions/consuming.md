@@ -1,52 +1,53 @@
 ---
 title: Использование расширений разметки XAML
-description: В этой статье описывается использование расширения разметки XAML Xamarin.Forms для улучшения возможности и гибкость XAML, позволяя атрибутов элемента из различных источников.
+description: В этой статье объясняется, как использовать расширения разметки XAML Xamarin. Forms для расширения возможностей и гибкости XAML, разрешая установку атрибутов элементов из различных источников.
 ms.prod: xamarin
 ms.assetid: CE686893-609C-4EC3-9225-6C68D2A9F79C
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 12/04/2019
-ms.openlocfilehash: 693dd29e59aee73a206398a8a44cc4f15e385d8d
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+ms.date: 04/21/2020
+ms.openlocfilehash: 7f46bc84543a1838241923ab91809bd01c706f44
+ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79305621"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82517093"
 ---
 # <a name="consuming-xaml-markup-extensions"></a>Использование расширений разметки XAML
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
+[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
 
-Расширения разметки XAML для повышения возможности и гибкость XAML, позволяя атрибутов элемента из различных источников. Несколько расширений разметки XAML являются частью спецификации XAML 2009 г. Они отображаются в файлах XAML с префиксом пространства имен Custom `x` и обычно называются этим префиксом. В этой статье рассматриваются следующие расширения разметки.
+Расширения разметки XAML помогают повысить степень гибкости и гибкость XAML, разрешая установку атрибутов элементов из различных источников. Несколько расширений разметки XAML являются частью спецификации XAML 2009. Они отображаются в файлах XAML с префиксом пользовательского `x` пространства имен и обычно называются этим префиксом. В этой статье рассматриваются следующие расширения разметки:
 
-- [`x:Static`](#static) — ссылки на статические свойства, поля или члены перечисления.
-- [`x:Reference`](#reference) — ссылки на именованные элементы на странице.
-- [`x:Type`](#type) — задание атрибута для `System.Type` объекта.
-- [`x:Array`](#array) — создание массива объектов определенного типа.
-- [`x:Null`](#null) — задайте для атрибута значение `null`.
-- [`OnPlatform`](#onplatform) — Настройка внешнего вида пользовательского интерфейса для отдельных платформ.
-- [`OnIdiom`](#onidiom) — Настройка внешнего вида пользовательского интерфейса на основе идиомы устройства, на котором работает приложение.
-- [`DataTemplate`](#datatemplate-markup-extension) — преобразует тип в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate).
-- [`FontImage`](#fontimage-markup-extension) — отображать значок шрифта в любом представлении, которое может отображать `ImageSource`.
+- [`x:Static`](#static)— Ссылка на статические свойства, поля или члены перечисления.
+- [`x:Reference`](#reference)— ссылки на именованные элементы на странице.
+- [`x:Type`](#type)— Задайте атрибут для `System.Type` объекта.
+- [`x:Array`](#array)— Создание массива объектов определенного типа.
+- [`x:Null`](#null)— Присвойте атрибуту `null` значение.
+- [`OnPlatform`](#onplatform)— Настройка внешнего вида пользовательского интерфейса для отдельных платформ.
+- [`OnIdiom`](#onidiom)— Настройка внешнего вида пользовательского интерфейса на основе идиомы устройства, на котором работает приложение.
+- [`DataTemplate`](#datatemplate-markup-extension)— Преобразует тип в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate).
+- [`FontImage`](#fontimage-markup-extension)— отображать значок шрифта в любом представлении, которое может отображать `ImageSource`.
+- [`OnAppTheme`](#onapptheme-markup-extension)— использование ресурса на основе текущей системной темы.
 
-Дополнительные расширения разметки XAML Исторически поддерживаются в других реализациях XAML и также поддерживаются в Xamarin.Forms. Более подробно они описаны в других статьях:
+Дополнительные расширения разметки XAML исторически поддерживаются другими реализациями XAML и также поддерживаются Xamarin. Forms. Они описаны более полно в других статьях:
 
-- `StaticResource`-ссылки на объекты из словаря ресурсов, как описано в статье [**словари ресурсов**](~/xamarin-forms/xaml/resource-dictionaries.md).
-- `DynamicResource` — реагирование на изменения объектов в словаре ресурсов, как описано в статье [**динамические стили**](~/xamarin-forms/user-interface/styles/dynamic.md).
-- `Binding` — установите связь между свойствами двух объектов, как описано в статье [**Привязка данных**](~/xamarin-forms/app-fundamentals/data-binding/index.md).
-- `TemplateBinding` — выполняет привязку данных из шаблона элемента управления, как описано в статье [**шаблоны элементов управления Xamarin. Forms**](~/xamarin-forms/app-fundamentals/templates/control-template.md).
-- `RelativeSource` — задает источник привязки относительно положения целевого объекта привязки, как описано в статье [относительные привязки](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md).
+- `StaticResource`— ссылки на объекты из словаря ресурсов, как описано в статье [**словари ресурсов**](~/xamarin-forms/xaml/resource-dictionaries.md).
+- `DynamicResource`— реагирование на изменения объектов в словаре ресурсов, как описано в статье [**динамические стили**](~/xamarin-forms/user-interface/styles/dynamic.md).
+- `Binding`— Установите связь между свойствами двух объектов, как описано в статье [**Привязка данных**](~/xamarin-forms/app-fundamentals/data-binding/index.md).
+- `TemplateBinding`— выполняет привязку данных из шаблона элемента управления, как описано в статье [**шаблоны элементов управления Xamarin. Forms**](~/xamarin-forms/app-fundamentals/templates/control-template.md).
+- `RelativeSource`— Задает источник привязки относительно положения целевого объекта привязки, как описано в статье [относительные привязки](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md).
 
-В [`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout) разметке используются пользовательские расширения разметки [`ConstraintExpression`](xref:Xamarin.Forms.ConstraintExpression). Это расширение разметки описано в статье [**RelativeLayout**](~/xamarin-forms/user-interface/layouts/relative-layout.md).
+[`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout) Макет использует пользовательское расширение [`ConstraintExpression`](xref:Xamarin.Forms.ConstraintExpression)разметки. Это расширение разметки описано в статье [**RelativeLayout**](~/xamarin-forms/user-interface/layouts/relative-layout.md).
 
 <a name="static" />
 
 ## <a name="xstatic-markup-extension"></a>расширение разметки x:Static
 
-Расширение разметки `x:Static` поддерживается классом [`StaticExtension`](xref:Xamarin.Forms.Xaml.StaticExtension) . Класс содержит одно свойство с именем [`Member`](xref:Xamarin.Forms.Xaml.StaticExtension.Member) типа `string`, для которого задано имя общей константы, статического свойства, статического поля или члена перечисления.
+Расширение `x:Static` разметки поддерживается [`StaticExtension`](xref:Xamarin.Forms.Xaml.StaticExtension) классом. Класс имеет одно свойство с именем [`Member`](xref:Xamarin.Forms.Xaml.StaticExtension.Member) типа `string` , для которого задано имя общей константы, статического свойства, статического поля или члена перечисления.
 
-Один из распространенных способов использования `x:Static` — сначала определить класс с некоторыми константами или статическими переменными, такими как этот небольшой `AppConstants` класс в программе [**расширений MarkupExtension**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions) :
+Один из распространенных способов использования `x:Static` — сначала определить класс с некоторыми константами или статическими переменными, такими как этот маленький `AppConstants` класс в программе [**расширений MarkupExtension**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions) :
 
 ```csharp
 static class AppConstants
@@ -55,7 +56,7 @@ static class AppConstants
 }
 ```
 
-**Демонстрационная Страница x:Static** демонстрирует несколько способов использования расширения разметки `x:Static`. Самый подробный подход создает экземпляр класса `StaticExtension` между `Label.FontSize` тегами элементов свойства.
+На **демонстрационной странице x:Static** показано несколько способов использования расширения `x:Static` разметки. Самый подробный подход создает экземпляр `StaticExtension` класса между `Label.FontSize` тегами элементов свойства:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -77,7 +78,7 @@ static class AppConstants
 </ContentPage>
 ```
 
-Средство синтаксического анализа XAML также позволяет сократить класс `StaticExtension` как `x:Static`:
+Средство синтаксического анализа XAML также позволяет `StaticExtension` сократить класс следующим образом `x:Static`:
 
 ```xaml
 <Label Text="Label No. 2">
@@ -87,38 +88,38 @@ static class AppConstants
 </Label>
 ```
 
-Это можно сделать еще более простым, но в результате изменения появился новый синтаксис: он состоит в размещении `StaticExtension` класса и параметра элемента в фигурных скобках. Результирующее выражение задается непосредственно в атрибуте `FontSize`:
+Это можно сделать еще более простым, но в результате изменения появился новый синтаксис: он состоит в размещении `StaticExtension` класса и параметра элемента в фигурных скобках. Результирующее выражение задается непосредственно в `FontSize` атрибуте:
 
 ```xaml
 <Label Text="Label No. 3"
        FontSize="{x:StaticExtension Member=local:AppConstants.NormalFontSize}" />
 ```
 
-Обратите внимание, *no* что в фигурных скобках отсутствуют кавычки. Свойство `Member` `StaticExtension` больше не является XML-атрибутом. Вместо этого он является частью выражения для расширения разметки.
+Обратите внимание, *no* что в фигурных скобках отсутствуют кавычки. `Member` Свойство объекта `StaticExtension` больше не является XML-атрибутом. Вместо этого он является частью выражения для расширения разметки.
 
-Так же, как можно сократить `x:StaticExtension` `x:Static` при использовании его в качестве объектного элемента, можно также сократить его в выражении в фигурных скобках:
+Точно так же, как `x:StaticExtension` и `x:Static` при использовании в качестве объектного элемента, можно также сократить его в выражении внутри фигурных скобок:
 
 ```xaml
 <Label Text="Label No. 4"
        FontSize="{x:Static Member=local:AppConstants.NormalFontSize}" />
 ```
 
-Класс `StaticExtension` имеет атрибут `ContentProperty`, ссылающийся на свойство `Member`, которое помечает это свойство как свойство содержимого класса по умолчанию. Для расширений разметки XAML, выраженных фигурными скобками, можно исключить `Member=` часть выражения:
+`StaticExtension` Класс имеет `ContentProperty` атрибут, ссылающийся на свойство `Member`, которое помечает это свойство как свойство содержимого класса по умолчанию. Для расширений разметки XAML, выраженных фигурными скобками, можно исключить `Member=` часть выражения:
 
 ```xaml
 <Label Text="Label No. 5"
        FontSize="{x:Static local:AppConstants.NormalFontSize}" />
 ```
 
-Это наиболее распространенная форма расширения разметки `x:Static`.
+Это наиболее распространенная форма расширения `x:Static` разметки.
 
-**Статическая демонстрационная** страница содержит два других примера. Корневой тег XAML-файла содержит объявление пространства имен XML для пространства имен .NET `System`.
+**Статическая демонстрационная** страница содержит два других примера. Корневой тег файла XAML содержит объявление пространства имен XML для пространства имен .NET `System` :
 
 ```xaml
 xmlns:sys="clr-namespace:System;assembly=netstandard"
 ```
 
-Это позволяет задать для `Label` размера шрифта статическое поле `Math.PI`. Это приводит к небольшому тексту, поэтому свойство `Scale` имеет значение `Math.E`.
+Это позволяет задать `Label` для размера шрифта статическое поле `Math.PI`. Это приводит к `Math.E`простому тексту, поэтому `Scale` свойство имеет значение:
 
 ```xaml
 <Label Text="&#x03C0; &#x00D7; E sized text"
@@ -127,7 +128,7 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
        HorizontalOptions="Center" />
 ```
 
-В последнем примере отображается значение `Device.RuntimePlatform`. Свойство `Environment.NewLine` static используется для вставки символа новой строки между двумя `Span`ными объектами:
+В последнем примере отображается `Device.RuntimePlatform` значение. Свойство `Environment.NewLine` static используется для вставки символа новой строки между двумя `Span` объектами:
 
 ```xaml
 <Label HorizontalTextAlignment="Center"
@@ -142,7 +143,7 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 </Label>
 ```
 
-Ниже приведен пример, запущенный.
+Вот пример, в котором работает:
 
 [![Демонстрация в виде x:Static](consuming-images/staticdemo-small.png "Демонстрация в виде x:Static")](consuming-images/staticdemo-large.png#lightbox "Демонстрация в виде x:Static")
 
@@ -150,11 +151,11 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 
 ## <a name="xreference-markup-extension"></a>расширение разметки x:Reference
 
-Расширение разметки `x:Reference` поддерживается классом [`ReferenceExtension`](xref:Xamarin.Forms.Xaml.ReferenceExtension) . Класс имеет одно свойство с именем [`Name`](xref:Xamarin.Forms.Xaml.ReferenceExtension.Name) типа `string`, которому задается имя элемента на странице, которому присвоено имя `x:Name`. Это `Name` свойство является свойством Content `ReferenceExtension`, поэтому `Name=` не требуется, если `x:Reference` отображается в фигурных скобках.
+Расширение `x:Reference` разметки поддерживается [`ReferenceExtension`](xref:Xamarin.Forms.Xaml.ReferenceExtension) классом. Класс имеет одно свойство с именем [`Name`](xref:Xamarin.Forms.Xaml.ReferenceExtension.Name) типа `string` , которому задается имя элемента на странице, которому было присвоено имя. `x:Name` Это `Name` свойство является свойством Content объекта `ReferenceExtension`, поэтому `Name=` оно не является обязательным `x:Reference` при отображении в фигурных скобках.
 
-Расширение разметки `x:Reference` используется исключительно с привязками данных, которые более подробно описаны в статье [**Привязка данных**](~/xamarin-forms/app-fundamentals/data-binding/index.md).
+Расширение `x:Reference` разметки используется исключительно с привязками данных, которые более подробно описаны в статье [**Привязка данных**](~/xamarin-forms/app-fundamentals/data-binding/index.md).
 
-На **демонстрационной странице x:Reference** показаны два способа использования `x:Reference` с привязками данных, первый из которых используется для задания свойства `Source` объекта `Binding`, а второй — для задания свойства `BindingContext` для двух привязок данных:
+На **демонстрационной странице x:Reference** показано два способа `x:Reference` использования с привязками данных, первая из которых используется для задания `Source` свойства `Binding` объекта, а вторая — для установки `BindingContext` свойства для двух привязок данных:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -186,7 +187,7 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 </ContentPage>
 ```
 
-Оба выражения `x:Reference` используют сокращенную версию `ReferenceExtension` имени класса и удаляют `Name=` часть выражения. В первом примере расширение разметки `x:Reference` внедряется в расширение разметки `Binding`. Обратите внимание, что параметры `Source` и `StringFormat` разделены запятыми. Вот работающая программа:
+Оба `x:Reference` выражения используют сокращенную версию имени `ReferenceExtension` класса и удаляют `Name=` часть выражения. В первом примере расширение `x:Reference` разметки внедряется в расширение `Binding` разметки. Обратите внимание `Source` , `StringFormat` что параметры и разделяются запятыми. Вот работающая программа:
 
 [![Демонстрация x:Reference](consuming-images/referencedemo-small.png "Демонстрация x:Reference")](consuming-images/referencedemo-large.png#lightbox "Демонстрация x:Reference")
 
@@ -194,15 +195,15 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 
 ## <a name="xtype-markup-extension"></a>x:Type - расширение разметки
 
-`x:Type` расширением разметки является XAML-эквивалентом C# ключевого слова [`typeof`](/dotnet/csharp/language-reference/keywords/typeof/) . Он поддерживается классом [`TypeExtension`](xref:Xamarin.Forms.Xaml.TypeExtension) , который определяет одно свойство с именем [`TypeName`](xref:Xamarin.Forms.Xaml.TypeExtension.TypeName) типа `string`, для которого задано имя класса или структуры. Расширение разметки `x:Type` возвращает объект [`System.Type`](xref:System.Type) этого класса или структуры. `TypeName` является свойством содержимого `TypeExtension`, поэтому `TypeName=` не требуется, если `x:Type` отображается с фигурными скобками.
+Расширение `x:Type` разметки является эквивалентом XAML ключевого слова [`typeof`](/dotnet/csharp/language-reference/keywords/typeof/) C#. Он поддерживается [`TypeExtension`](xref:Xamarin.Forms.Xaml.TypeExtension) классом, который определяет одно свойство с именем [`TypeName`](xref:Xamarin.Forms.Xaml.TypeExtension.TypeName) типа `string` , для которого задано имя класса или структуры. Расширение `x:Type` разметки возвращает [`System.Type`](xref:System.Type) объект этого класса или структуры. `TypeName`свойство Content объекта `TypeExtension`, поэтому `TypeName=` не требуется, если `x:Type` отображается с фигурными скобками.
 
-В Xamarin. Forms существует несколько свойств, которые имеют аргументы типа `Type`. Примеры включают свойство [`TargetType`](xref:Xamarin.Forms.Style.TargetType) `Style`и атрибут [x:TypeArguments](~/xamarin-forms/xaml/passing-arguments.md#generic_type_arguments) , используемый для указания аргументов в универсальных классах. Однако средство синтаксического анализа XAML автоматически выполняет `typeof` операцию, и в таких случаях не используется расширение разметки `x:Type`.
+В Xamarin. Forms существует несколько свойств с аргументами типа `Type`. Примеры включают [`TargetType`](xref:Xamarin.Forms.Style.TargetType) свойство класса `Style`и атрибут [x:TypeArguments](~/xamarin-forms/xaml/passing-arguments.md#generic_type_arguments) , используемый для указания аргументов в универсальных классах. Однако средство синтаксического анализа XAML автоматически выполняет `typeof` операцию, и в таких `x:Type` случаях расширение разметки не используется.
 
-Одно из мест, *где требуется `x:Type`, —* это расширение разметки `x:Array`, которое описано в [следующем разделе](#array).
+В одном месте `x:Type` *требуется расширение* `x:Array` разметки, которое описано в [следующем разделе](#array).
 
-Расширение разметки `x:Type` также полезно при создании меню, в котором каждый элемент меню соответствует объекту определенного типа. Можно связать объект `Type` с каждым пунктом меню, а затем создать экземпляр объекта при выборе пункта меню.
+Расширение `x:Type` разметки также полезно при создании меню, в котором каждый элемент меню соответствует объекту определенного типа. Можно связать `Type` объект с каждым пунктом меню, а затем создать экземпляр объекта при выборе пункта меню.
 
-Вот как работает меню навигации в `MainPage` в программе **расширения разметки** . Файл **MainPage. XAML** содержит `TableView` с каждой `TextCell`, соответствующей определенной странице в программе:
+Таким способом работает меню навигации в `MainPage` в программе **расширения разметки** . Файл **MainPage. XAML** содержит объект `TableView` , `TextCell` соответствующий определенной странице в программе:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -245,7 +246,7 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 
 [![Главная страница](consuming-images/mainpage-small.png "Главная страница")](consuming-images/mainpage-large.png#lightbox "Главная страница")
 
-Каждому свойству `CommandParameter` присваивается расширение разметки `x:Type`, ссылающееся на одну из других страниц. Свойство `Command` привязано к свойству с именем `NavigateCommand`. Это свойство определено в `MainPage` файле кода программной части:
+Для `CommandParameter` каждого свойства задается `x:Type` расширение разметки, ссылающееся на одну из других страниц. `Command` Свойство привязано к свойству с именем `NavigateCommand`. Это свойство определено в файле `MainPage` кода программной части:
 
 ```csharp
 public partial class MainPage : ContentPage
@@ -267,9 +268,9 @@ public partial class MainPage : ContentPage
 }
 ```
 
-Свойство `NavigateCommand` — это `Command` объект, реализующий команду Execute с аргументом типа `Type` &mdash; значение `CommandParameter`. Метод использует `Activator.CreateInstance` для создания экземпляра страницы, а затем переходит к ней. Конструктор завершает работу, устанавливая `BindingContext` страницы в себя, что позволяет `Binding` на `Command`. Дополнительные сведения об этом типе кода см. в статье [**Привязка данных**](~/xamarin-forms/app-fundamentals/data-binding/index.md) и в частности в статье о [**командном**](~/xamarin-forms/app-fundamentals/data-binding/commanding.md) коде.
+`NavigateCommand` Свойство — это `Command` объект, реализующий команду Execute с аргументом типа `Type` &mdash; value `CommandParameter`. Метод использует `Activator.CreateInstance` для создания экземпляра страницы, а затем переходит к ней. Конструктор завершается заданием `BindingContext` для страницы самого себя, что позволяет `Binding` `Command` работать в. Дополнительные сведения об этом типе кода см. в статье [**Привязка данных**](~/xamarin-forms/app-fundamentals/data-binding/index.md) и в частности в статье о [**командном**](~/xamarin-forms/app-fundamentals/data-binding/commanding.md) коде.
 
-На **демонстрационной странице x:Type** используется аналогичная методика для создания экземпляров элементов Xamarin. Forms и добавления их в `StackLayout`. XAML-файл изначально состоит из трех элементов `Button` с их `Command` свойствами, для которых задано `Binding`, а свойства `CommandParameter` установлены на типы трех представлений Xamarin. Forms:
+**Демонстрационная Страница x:Type** использует аналогичную методику для создания экземпляров элементов Xamarin. Forms и добавления их в `StackLayout`. XAML-файл изначально состоит из трех `Button` элементов, для `Command` свойств которых задано `Binding` значение, `CommandParameter` а свойства — типы трех представлений Xamarin. Forms:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -301,7 +302,7 @@ public partial class MainPage : ContentPage
 </ContentPage>
 ```
 
-Файл кода программной части определяет и инициализирует свойство `CreateCommand`:
+Файл кода программной части определяет и инициализирует `CreateCommand` свойство:
 
 ```csharp
 public partial class TypeDemoPage : ContentPage
@@ -324,7 +325,7 @@ public partial class TypeDemoPage : ContentPage
 }
 ```
 
-Метод, выполняемый при нажатии `Button`, создает новый экземпляр аргумента, устанавливает его свойство `VerticalOptions` и добавляет его в `StackLayout`. Три элемента `Button` затем совместно используют страницу с динамически созданными представлениями:
+Метод, выполняемый при `Button` нажатии кнопки, создает новый экземпляр аргумента, устанавливает его `VerticalOptions` свойство и добавляет его в. `StackLayout` Затем три `Button` элемента совместно используют страницу с динамически созданными представлениями:
 
 [![x:Type — демонстрация](consuming-images/typedemo-small.png "x:Type — демонстрация")](consuming-images/typedemo-large.png#lightbox "x:Type — демонстрация")
 
@@ -332,14 +333,14 @@ public partial class TypeDemoPage : ContentPage
 
 ## <a name="xarray-markup-extension"></a>x:Array - расширение разметки
 
-Расширение разметки `x:Array` позволяет определить массив в разметке. Он поддерживается классом [`ArrayExtension`](xref:Xamarin.Forms.Xaml.ArrayExtension) , который определяет два свойства:
+Расширение `x:Array` разметки позволяет определить массив в разметке. Он поддерживается [`ArrayExtension`](xref:Xamarin.Forms.Xaml.ArrayExtension) классом, который определяет два свойства:
 
-- `Type` типа `Type`, который указывает тип элементов в массиве.
-- `Items` типа `IList`, который является коллекцией самих элементов. Это свойство содержимого `ArrayExtension`.
+- `Type`типа `Type`, который указывает тип элементов в массиве.
+- `Items`типа `IList`, который представляет собой коллекцию самих элементов. Это свойство содержимого объекта `ArrayExtension`.
 
-Само расширение разметки `x:Array` не отображается в фигурных скобках. Вместо этого `x:Array` открывающий и закрывающий теги разделяют список элементов. Задайте для свойства `Type` расширение разметки `x:Type`.
+Само `x:Array` расширение разметки никогда не отображается в фигурных скобках. Вместо этого `x:Array` открывающий и закрывающий теги разделяют список элементов. Задайте для `Type` свойства расширение `x:Type` разметки.
 
-На странице **демонстрации Расx:arrayов** показано, как использовать `x:Array` для добавления элементов в `ListView`, задав для свойства `ItemsSource` массив.
+На странице **демонстрации** продолжений показано, `x:Array` как использовать для добавления элементов `ListView` в, задав `ItemsSource` для свойства массив.
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -381,23 +382,23 @@ public partial class TypeDemoPage : ContentPage
 </ContentPage>        
 ```
 
-`ViewCell` создает простой `BoxView` для каждой записи цвета:
+`ViewCell` Создает простую `BoxView` для каждой записи цвета:
 
 [![Демонстрация расx:Array](consuming-images/arraydemo-small.png "Демонстрация расx:Array")](consuming-images/arraydemo-large.png#lightbox "Демонстрация расx:Array")
 
-Существует несколько способов указать отдельные элементы `Color` в этом массиве. Вы можете использовать расширение разметки `x:Static`:
+Существует несколько способов указать отдельные `Color` элементы в этом массиве. Вы можете использовать расширение `x:Static` разметки:
 
 ```xaml
 <x:Static Member="Color.Blue" />
 ```
 
-Для получения цвета из словаря ресурсов можно также использовать `StaticResource`.
+Или можно использовать `StaticResource` для получения цвета из словаря ресурсов:
 
 ```xaml
 <StaticResource Key="myColor" />
 ```
 
-В конце этой статьи вы увидите пользовательское расширение разметки XAML, которое также создает новое значение цвета:
+В конце этой статьи вы увидите собственное расширение разметки XAML, которое также создает новое значение цвета:
 
 ```xaml
 <local:HslColor H="0.5" S="1.0" L="0.5" />
@@ -409,11 +410,11 @@ public partial class TypeDemoPage : ContentPage
 
 ## <a name="xnull-markup-extension"></a>x:Null - расширение разметки
 
-Расширение разметки `x:Null` поддерживается классом [`NullExtension`](xref:Xamarin.Forms.Xaml.NullExtension) . Он не имеет свойств и является просто эквивалентом ключевого слова C# [`null`](/dotnet/csharp/language-reference/keywords/null/) в XAML.
+Расширение `x:Null` разметки поддерживается [`NullExtension`](xref:Xamarin.Forms.Xaml.NullExtension) классом. Он не имеет свойств и является просто эквивалентом XAML ключевого слова [`null`](/dotnet/csharp/language-reference/keywords/null/) C#.
 
-Расширение разметки `x:Null` редко требуется и редко используется, но если вы нашли необходимость в нем, вы будете рады, что он существует.
+Расширение `x:Null` разметки редко требуется и редко используется, но если вы нашли нужную необходимость, вы будете рады, что он существует.
 
-В **демонстрационной странице x:NULL** показан один из сценариев, когда `x:Null` может быть удобным. Предположим, что вы определили неявные `Style` для `Label`, включающие `Setter`, которое задает для свойства `FontFamily` имя семейства, зависящее от платформы:
+В **демонстрационной странице x:NULL** показан один сценарий `x:Null` , который может быть удобным. Предположим, что вы определяете `Style` `Label` неявные для `Setter` , включающие `FontFamily` , которое задает для свойства имя семейства, зависящее от платформы:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -452,42 +453,42 @@ public partial class TypeDemoPage : ContentPage
 </ContentPage>   
 ```
 
-Затем вы обнаружите, что для одного из элементов `Label` необходимо, чтобы все параметры свойств в неявном `Style`, за исключением `FontFamily`, которые должны быть значениями по умолчанию. Можно определить другой `Style` для этой цели, но более простой подход заключается в установке свойства `FontFamily` определенного `Label` на `x:Null`, как показано в центре `Label`.
+Затем вы обнаружите, что для одного `Label` из элементов необходимо, чтобы все параметры свойств в неявном `Style` значении `FontFamily`, за исключением параметра, который вы хотите использовать по умолчанию. Для этой цели можно `Style` определить `FontFamily` другой, но более простой подход заключается в установке свойства конкретного `Label` объекта в `x:Null`, как показано в центре. `Label`
 
 Вот работающая программа:
 
 [![Демонстрация x:Null](consuming-images/nulldemo-small.png "Демонстрация x:Null")](consuming-images/nulldemo-large.png#lightbox "Демонстрация x:Null")
 
-Обратите внимание, что четыре элемента `Label` имеют шрифт с засечками, но Центральная `Label` имеет шрифт Sans-Serif по умолчанию.
+Обратите внимание, что `Label` четыре элемента имеют шрифт с засечками, `Label` но у центра есть шрифт Sans-Serif по умолчанию.
 
 <a name="onplatform" />
 
 ## <a name="onplatform-markup-extension"></a>Расширение разметки для платформы
 
-Расширение разметки `OnPlatform` позволяет настраивать внешний вид пользовательского интерфейса для отдельных платформ. Он предоставляет те же функциональные возможности, что и классы [`OnPlatform`](xref:Xamarin.Forms.OnPlatform`1) и [`On`](xref:Xamarin.Forms.On) , но с более кратким представлением.
+Расширение разметки `OnPlatform` позволяет настраивать внешний вид пользовательского интерфейса для каждой платформы. Он предоставляет те же функциональные возможности, [`OnPlatform`](xref:Xamarin.Forms.OnPlatform`1) что [`On`](xref:Xamarin.Forms.On) и классы и, но с более кратким представлением.
 
-Расширение разметки `OnPlatform` поддерживается классом [`OnPlatformExtension`](xref:Xamarin.Forms.Xaml.OnPlatformExtension) , который определяет следующие свойства:
+Расширение `OnPlatform` разметки поддерживается [`OnPlatformExtension`](xref:Xamarin.Forms.Xaml.OnPlatformExtension) классом, который определяет следующие свойства:
 
-- `Default` типа `object`, для которого задано значение по умолчанию, применяемое к свойствам, представляющим платформы.
-- `Android` типа `object`, для которого задано значение, применяемое к Android.
-- `GTK` типа `object`, для которого задано значение, применяемое к платформам GTK.
-- `iOS` типа `object`, для которого задано значение, применяемое к iOS.
-- `macOS` типа `object`, для которого задано значение, применяемое к macOS.
-- `Tizen` типа `object`, для которого задано значение, применяемое к платформе Tizen.
-- `UWP` типа `object`, для которого задано значение, применяемое к универсальная платформа Windows.
-- `WPF` типа `object`, для которого задано значение, применяемое на Windows Presentation Foundationной платформе.
-- `Converter` типа `IValueConverter`, для которого задана реализация `IValueConverter`.
-- `ConverterParameter` типа `object`, для которого задается значение, передаваемое в реализацию `IValueConverter`.
+- `Default`типа `object`, для которого задано значение по умолчанию, применяемое к свойствам, представляющим платформы.
+- `Android`типа `object`, для которого задано значение, применяемое к Android.
+- `GTK`типа `object`, для которого задано значение, применяемое к платформам GTK.
+- `iOS`типа `object`, для которого задано значение, применяемое к iOS.
+- `macOS`типа `object`, для которого задано значение, применяемое к macOS.
+- `Tizen`типа `object`, для которого задано значение, применяемое к платформе Tizen.
+- `UWP`типа `object`, для которого задано значение, применяемое к универсальная платформа Windows.
+- `WPF`типа `object`, для которого задано значение, применяемое к Windows Presentation Foundationной платформе.
+- `Converter`типа `IValueConverter`, для которого можно задать `IValueConverter` реализацию.
+- `ConverterParameter`типа `object`, для которого можно задать значение, передаваемое в `IValueConverter` реализацию.
 
 > [!NOTE]
-> Средство синтаксического анализа XAML позволяет сократить класс [`OnPlatformExtension`](xref:Xamarin.Forms.Xaml.OnPlatformExtension) как `OnPlatform`.
+> Средство синтаксического анализа XAML позволяет [`OnPlatformExtension`](xref:Xamarin.Forms.Xaml.OnPlatformExtension) сократить класс до `OnPlatform`.
 
-Свойство `Default` — это свойство содержимого `OnPlatformExtension`. Поэтому для выражений разметки XAML, выраженных с фигурными скобками, можно исключить `Default=` часть выражения, если она является первым аргументом. Если свойство `Default` не задано, по умолчанию будет установлено значение свойства [`BindableProperty.DefaultValue`](xref:Xamarin.Forms.BindableProperty.DefaultValue) , при условии, что расширение разметки нацелено на [`BindableProperty`](xref:Xamarin.Forms.BindableProperty).
+`Default` Свойство является свойством Content объекта `OnPlatformExtension`. Поэтому для выражений разметки XAML, выраженных с фигурными скобками, можно исключить `Default=` часть выражения, если она является первым аргументом. Если `Default` свойство не задано, по умолчанию будет установлено [`BindableProperty.DefaultValue`](xref:Xamarin.Forms.BindableProperty.DefaultValue) значение свойства при условии, что расширение разметки предназначено [`BindableProperty`](xref:Xamarin.Forms.BindableProperty)для.
 
 > [!IMPORTANT]
-> Средство синтаксического анализа XAML требует, чтобы значения правильного типа были предоставлены свойствам, которые занимают расширение разметки `OnPlatform`. Если требуется преобразование типа, расширение разметки `OnPlatform` будет пытаться выполнить его с помощью преобразователей по умолчанию, предоставляемых Xamarin. Forms. Однако существует несколько преобразований типов, которые невозможно выполнить с помощью преобразователей по умолчанию. в таких случаях для свойства `Converter` должно быть задано `IValueConverter` реализация.
+> Средство синтаксического анализа XAML требует, чтобы значения правильного типа были предоставлены свойствам, `OnPlatform` которые занимают расширение разметки. Если требуется преобразование типа, расширение `OnPlatform` разметки будет пытаться выполнить его с помощью преобразователей по умолчанию, предоставляемых Xamarin. Forms. Однако существуют преобразования типов, которые не могут быть выполнены преобразователями по умолчанию, и в таких случаях `Converter` свойству следует присвоить `IValueConverter` реализацию.
 
-На странице **демонстрационная страница для демонстрации архитектуры** показано, как использовать расширение разметки `OnPlatform`.
+На странице **демонстрационная страница для демонстрации архитектуры** показано, `OnPlatform` как использовать расширение разметки:
 
 ```xaml
 <BoxView Color="{OnPlatform Yellow, iOS=Red, Android=Green, UWP=Blue}"
@@ -496,7 +497,7 @@ public partial class TypeDemoPage : ContentPage
          HorizontalOptions="Center" />
 ```
 
-В этом примере все три выражения `OnPlatform` используют сокращенную версию имени класса `OnPlatformExtension`. Три `OnPlatform` расширения разметки задают свойства [`Color`](xref:Xamarin.Forms.BoxView.Color), [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest)и [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) [`BoxView`](xref:Xamarin.Forms.BoxView) различным значениям в iOS, Android и UWP. Расширения разметки также предоставляют значения по умолчанию для этих свойств на неопределенных платформах, исключая `Default=` часть выражения. Обратите внимание на то, что свойства расширения разметки, заданные разделяются запятыми.
+В этом примере все три `OnPlatform` выражения используют сокращенную версию имени `OnPlatformExtension` класса. Три `OnPlatform` расширения разметки устанавливают свойства [`Color`](xref:Xamarin.Forms.BoxView.Color), [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest)и [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) [`BoxView`](xref:Xamarin.Forms.BoxView) для в различные значения в iOS, Android и UWP. Расширения разметки также предоставляют значения по умолчанию для этих свойств на неопределенных платформах, исключая `Default=` часть выражения. Обратите внимание, что заданные свойства расширения разметки разделяются запятыми.
 
 Вот работающая программа:
 
@@ -506,26 +507,26 @@ public partial class TypeDemoPage : ContentPage
 
 ## <a name="onidiom-markup-extension"></a>Расширение разметки onidiomа
 
-Расширение разметки `OnIdiom` позволяет настраивать внешний вид пользовательского интерфейса на основе идиомы устройства, на котором выполняется приложение. Он поддерживается классом [`OnIdiomExtension`](xref:Xamarin.Forms.Xaml.OnIdiomExtension) , который определяет следующие свойства:
+Расширение `OnIdiom` разметки позволяет настраивать внешний вид пользовательского интерфейса на основе идиомы устройства, на котором выполняется приложение. Он поддерживается [`OnIdiomExtension`](xref:Xamarin.Forms.Xaml.OnIdiomExtension) классом, который определяет следующие свойства:
 
-- `Default` типа `object`, для которого задано значение по умолчанию, применяемое к свойствам, представляющим идиомы устройств.
-- `Phone` типа `object`, для которого задано значение, применяемое к телефонам.
-- `Tablet` типа `object`, для которого задано значение, применяемое к планшетам.
-- `Desktop` типа `object`, для которого задано значение, применяемое к настольным платформам.
-- `TV` типа `object`, для которого задано значение, применяемое на ТЕЛЕВИЗИОНных платформах.
-- `Watch` типа `object`, для которого задано значение, применяемое к платформам наблюдения.
-- `Converter` типа `IValueConverter`, для которого задана реализация `IValueConverter`.
-- `ConverterParameter` типа `object`, для которого задается значение, передаваемое в реализацию `IValueConverter`.
+- `Default`типа `object`, для которого задано значение по умолчанию, применяемое к свойствам, представляющим идиомы устройств.
+- `Phone`типа `object`, для которого задано значение, применяемое к телефонам.
+- `Tablet`типа `object`, для которого задано значение, применяемое к планшетам.
+- `Desktop`типа `object`, для которого задано значение, применяемое к настольным платформам.
+- `TV`типа `object`, для которого задано значение, применяемое на телевизионных платформах.
+- `Watch`типа `object`, для которого задано значение, применяемое к платформам наблюдения.
+- `Converter`типа `IValueConverter`, для которого можно задать `IValueConverter` реализацию.
+- `ConverterParameter`типа `object`, для которого можно задать значение, передаваемое в `IValueConverter` реализацию.
 
 > [!NOTE]
-> Средство синтаксического анализа XAML позволяет сократить класс [`OnIdiomExtension`](xref:Xamarin.Forms.Xaml.OnIdiomExtension) как `OnIdiom`.
+> Средство синтаксического анализа XAML позволяет [`OnIdiomExtension`](xref:Xamarin.Forms.Xaml.OnIdiomExtension) сократить класс до `OnIdiom`.
 
-Свойство `Default` — это свойство содержимого `OnIdiomExtension`. Поэтому для выражений разметки XAML, выраженных с фигурными скобками, можно исключить `Default=` часть выражения, если она является первым аргументом.
+`Default` Свойство является свойством Content объекта `OnIdiomExtension`. Поэтому для выражений разметки XAML, выраженных с фигурными скобками, можно исключить `Default=` часть выражения, если она является первым аргументом.
 
 > [!IMPORTANT]
-> Средство синтаксического анализа XAML требует, чтобы значения правильного типа были предоставлены свойствам, которые занимают расширение разметки `OnIdiom`. Если требуется преобразование типа, расширение разметки `OnIdiom` будет пытаться выполнить его с помощью преобразователей по умолчанию, предоставляемых Xamarin. Forms. Однако существует несколько преобразований типов, которые невозможно выполнить с помощью преобразователей по умолчанию. в таких случаях для свойства `Converter` должно быть задано `IValueConverter` реализация.
+> Средство синтаксического анализа XAML требует, чтобы значения правильного типа были предоставлены свойствам, `OnIdiom` которые занимают расширение разметки. Если требуется преобразование типа, расширение `OnIdiom` разметки будет пытаться выполнить его с помощью преобразователей по умолчанию, предоставляемых Xamarin. Forms. Однако существуют преобразования типов, которые не могут быть выполнены преобразователями по умолчанию, и в таких случаях `Converter` свойству следует присвоить `IValueConverter` реализацию.
 
-На **демонстрационной странице Onidiomа** показано, как использовать расширение разметки `OnIdiom`.
+На **демонстрационной странице Onidiomа** показано, `OnIdiom` как использовать расширение разметки:
 
 ```xaml
 <BoxView Color="{OnIdiom Yellow, Phone=Red, Tablet=Green, Desktop=Blue}"
@@ -534,7 +535,7 @@ public partial class TypeDemoPage : ContentPage
          HorizontalOptions="Center" />
 ```
 
-В этом примере все три выражения `OnIdiom` используют сокращенную версию имени класса `OnIdiomExtension`. Три `OnIdiom` расширения разметки задают свойства [`Color`](xref:Xamarin.Forms.BoxView.Color), [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest)и [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) для [`BoxView`](xref:Xamarin.Forms.BoxView) различным значениям в заметках телефона, планшета и рабочего стола. Расширения разметки также предоставляют значения по умолчанию для этих свойств в неуказанных идиомах, исключая `Default=` часть выражения. Обратите внимание на то, что свойства расширения разметки, заданные разделяются запятыми.
+В этом примере все три `OnIdiom` выражения используют сокращенную версию имени `OnIdiomExtension` класса. Три `OnIdiom` расширения разметки устанавливают свойства [`Color`](xref:Xamarin.Forms.BoxView.Color), [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest)и [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) [`BoxView`](xref:Xamarin.Forms.BoxView) для в различные значения в заметках телефона, планшета и рабочего стола. Расширения разметки также предоставляют значения по умолчанию для этих свойств в неуказанных идиомах, исключая `Default=` часть выражения. Обратите внимание, что заданные свойства расширения разметки разделяются запятыми.
 
 Вот работающая программа:
 
@@ -542,7 +543,7 @@ public partial class TypeDemoPage : ContentPage
 
 ## <a name="datatemplate-markup-extension"></a>Расширение разметки DataTemplate
 
-Расширение разметки `DataTemplate` позволяет преобразовать тип в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate). Он поддерживается классом `DataTemplateExtension`, который определяет свойство `TypeName` типа `string`, которому присваивается имя типа, преобразуемого в `DataTemplate`. Свойство `TypeName` — это свойство содержимого `DataTemplateExtension`. Таким образом, для выражений разметки XAML с фигурными скобками можно исключить часть `TypeName=` выражения.
+Расширение `DataTemplate` разметки позволяет преобразовать тип в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate). Он поддерживается `DataTemplateExtension` классом, который определяет `TypeName` свойство типа `string`, которому присваивается имя типа, преобразуемого в. `DataTemplate` `TypeName` Свойство является свойством Content объекта `DataTemplateExtension`. Таким образом, для выражений разметки XAML с фигурными скобками можно исключить часть `TypeName=` выражения.
 
 > [!NOTE]
 > Средство синтаксического анализа XAML позволяет сократить класс `DataTemplateExtension` как `DataTemplate`.
@@ -555,42 +556,97 @@ public partial class TypeDemoPage : ContentPage
               ContentTemplate="{DataTemplate views:MonkeysPage}" />
 ```
 
-В этом примере `MonkeysPage` преобразуется из [`ContentPage`](xref:Xamarin.Forms.ContentPage) в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), которое задается как значение свойства `ShellContent.ContentTemplate`. Это гарантирует, что `MonkeysPage` будет создаваться только при переходе на страницу, а не при запуске приложения.
+`MonkeysPage` В этом примере [`ContentPage`](xref:Xamarin.Forms.ContentPage) преобразуется из в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), который задается как значение `ShellContent.ContentTemplate` свойства. Это гарантирует, `MonkeysPage` что она будет создана только при переходе на страницу, а не при запуске приложения.
 
 Дополнительные сведения о приложениях оболочки см. в разделе [оболочка Xamarin. Forms](~/xamarin-forms/app-fundamentals/shell/index.md).
 
-## <a name="fontimage-markup-extension"></a>Расширение разметки Фонтимаже
+## <a name="fontimage-markup-extension"></a>Расширение разметки FontImage
 
-Расширение разметки `FontImage` позволяет отображать значок шрифта в любом представлении, которое может отображать `ImageSource`. Он предоставляет те же функциональные возможности, что и класс `FontImageSource`, но с более кратким представлением.
+Расширение `FontImage` разметки позволяет отображать значок шрифта в любом представлении, которое может отображать `ImageSource`. Он предоставляет те же функциональные возможности, `FontImageSource` что и класс, но с более кратким представлением.
 
 Расширение разметки `FontImage` поддерживается классом `FontImageExtension`, определяющим следующие свойства:
 
-- `FontFamily` типа `string`— семейство шрифтов, которому принадлежит значок шрифта.
-- `Glyph` типа `string`, значение символа Юникода со значком шрифта.
-- `Color` типа [`Color`](xref:Xamarin.Forms.Color)— цвет, используемый при отображении значка шрифта.
-- `Size` типа `double`, размер в единицах, независимых от устройства, значка отображаемого шрифта. Значение по умолчанию — 30. Кроме того, для этого свойства можно задать именованный размер шрифта.
+- `FontFamily`типа `string`— семейство шрифтов, которому принадлежит значок шрифта.
+- `Glyph`типа `string`, значение символа Юникода со значком Font.
+- `Color`Тип [`Color`](xref:Xamarin.Forms.Color)— цвет, используемый при отображении значка шрифта.
+- `Size`Тип `double`— размер в единицах, не зависящих от устройства, значка отображаемого шрифта. Значение по умолчанию — 30. Кроме того, для этого свойства можно задать именованный размер шрифта.
 
 > [!NOTE]
 > Средство синтаксического анализа XAML позволяет сократить класс `FontImageExtension` как `FontImage`.
 
-Свойство `Glyph` — это свойство содержимого `FontImageExtension`. Поэтому для выражений разметки XAML, выраженных с фигурными скобками, можно исключить `Glyph=` часть выражения, если она является первым аргументом.
+`Glyph` Свойство является свойством Content объекта `FontImageExtension`. Поэтому для выражений разметки XAML, выраженных с фигурными скобками, можно исключить `Glyph=` часть выражения, если она является первым аргументом.
 
-На **демонстрационной странице фонтимаже** показано, как использовать расширение разметки `FontImage`.
+На **демонстрационной странице фонтимаже** показано, `FontImage` как использовать расширение разметки:
 
 ```xaml
 <Image BackgroundColor="#D1D1D1"
        Source="{FontImage &#xf30c;, FontFamily={OnPlatform iOS=Ionicons, Android=ionicons.ttf#}, Size=44}" />
 ```
 
-В этом примере сокращенная версия имени класса `FontImageExtension` используется для вывода значка XBox из семейства шрифтов Иониконс в [`Image`](xref:Xamarin.Forms.Image). Выражение также использует расширение разметки `OnPlatform` для указания различных значений свойств `FontFamily` в iOS и Android. Кроме того, `Glyph=` часть выражения исключена, а заданные свойства расширения разметки разделяются запятыми. Обратите внимание, что хотя символ Юникода для значка `\uf30c`, он должен быть экранирован в XAML, и поэтому становится `&#xf30c;`.
+В этом примере сокращенная версия имени `FontImageExtension` класса используется для вывода значка Xbox из семейства шрифтов иониконс в. [`Image`](xref:Xamarin.Forms.Image) Выражение также использует расширение `OnPlatform` разметки для указания различных `FontFamily` значений свойств в iOS и Android. Кроме того `Glyph=` , часть выражения исключена, а заданные свойства расширения разметки разделяются запятыми. Обратите внимание, что хотя символ Юникода для значка — `\uf30c`, он должен быть ЭКРАНИРОВАН в XAML и, `&#xf30c;`таким образом, стал.
 
 Вот работающая программа:
 
 [![Снимок экрана расширения разметки Фонтимаже](consuming-images/fontimagedemo.png "Демонстрация Фонтимаже")](consuming-images/fontimagedemo-large.png#lightbox "Демонстрация Фонтимаже")
 
-Сведения о отображении значков шрифтов путем указания данных значка шрифта в объекте `FontImageSource` см. в разделе [Отображение значков шрифтов](~/xamarin-forms/user-interface/text/fonts.md#display-font-icons).
+Сведения о отображении значков шрифтов путем указания данных значка шрифта в `FontImageSource` объекте см. в разделе [Отображение значков шрифтов](~/xamarin-forms/user-interface/text/fonts.md#display-font-icons).
 
-## <a name="define-your-own-markup-extensions"></a>Определить собственные расширения разметки
+## <a name="onapptheme-markup-extension"></a>Расширение разметки Онаппсеме
+
+Расширение `OnAppTheme` разметки позволяет указать ресурс, который будет использоваться, например изображение или цвет, на основе текущей системной темы. Он предоставляет те же функциональные возможности, `OnAppTheme<T>` что и класс, но с более кратким представлением.
+
+> [!IMPORTANT]
+> Расширение `OnAppTheme` разметки имеет минимальные требования к операционной системе. Дополнительные сведения см. [в разделе реагирование на изменения системных тем в приложениях Xamarin. Forms](~/xamarin-forms/user-interface/theming/system-theme-changes.md).
+
+Расширение разметки `OnAppTheme` поддерживается классом `OnAppThemeExtension`, определяющим следующие свойства:
+
+- `Default`, тип `object`, заданный для ресурса, который будет использоваться по умолчанию.
+- `Light`, тип `object`, заданный для ресурса, который будет использоваться, когда устройство использует светло-тему.
+- `Dark`, тип `object`, заданный для ресурса, который будет использоваться, когда устройство использует его темную тему.
+- `Value`Тип `object`, который возвращает ресурс, который в настоящее время используется расширением разметки.
+- `Converter`типа `IValueConverter`, для которого можно задать `IValueConverter` реализацию.
+- `ConverterParameter`типа `object`, для которого можно задать значение, передаваемое в `IValueConverter` реализацию.
+
+> [!NOTE]
+> Средство синтаксического анализа XAML позволяет сократить класс `OnAppThemeExtension` как `OnAppTheme`.
+
+`Default` Свойство является свойством Content объекта `OnAppThemeExtension`. Поэтому для выражений разметки XAML, выраженных с фигурными скобками, можно исключить `Default=` часть выражения, если она является первым аргументом.
+
+На **демонстрационной странице онаппсеме** показано, `OnAppTheme` как использовать расширение разметки:
+
+```xaml
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarkupExtensions.OnAppThemeDemoPage"
+             Title="OnAppTheme Demo">
+    <ContentPage.Resources>
+
+        <Style x:Key="labelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{OnAppTheme Black, Light=Blue, Dark=Teal}" />
+        </Style>
+
+    </ContentPage.Resources>
+    <StackLayout Margin="20">
+        <Label Text="This text is green in light mode, and red in dark mode."
+               TextColor="{OnAppTheme Light=Green, Dark=Red}" />
+        <Label Text="This text is black by default, blue in light mode, and teal in dark mode."
+               Style="{DynamicResource labelStyle}" />
+    </StackLayout>
+</ContentPage>
+```
+
+В этом примере цвет текста первого [`Label`](xref:Xamarin.Forms.Label) объекта задается зеленым цветом, когда устройство использует его светлую тему, и задается красным, если устройство использует его темную тему. Во втором `Label` [`TextColor`](xref:Xamarin.Forms.Label.TextColor) свойство задается с [`Style`](xref:Xamarin.Forms.Style)помощью. При `Style` этом цвет текста `Label` для черного по умолчанию устанавливается синим цветом, если устройство использует светло-тему, и синего цвета, когда устройство использует его темную тему.
+
+> [!NOTE]
+> Объект [`Style`](xref:Xamarin.Forms.Style) , который использует расширение `OnAppTheme` разметки, должен применяться к элементу управления с `DynamicResource` расширением разметки, чтобы пользовательский интерфейс приложения обновлялся при изменении темы системы.
+
+Вот работающая программа:
+
+![Демонстрация Онаппсеме](consuming-images/onappthemedemo.png "Демонстрация Онаппсеме")
+
+## <a name="define-markup-extensions"></a>Определение расширений разметки
 
 Если вы столкнулись с потребностью в расширении разметки XAML, которое недоступно в Xamarin. Forms, вы можете [создать собственный](creating.md).
 
@@ -601,4 +657,5 @@ public partial class TypeDemoPage : ContentPage
 - [Словари ресурсов](~/xamarin-forms/xaml/resource-dictionaries.md)
 - [Динамические стили](~/xamarin-forms/user-interface/styles/dynamic.md)
 - [Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)
-- [Оболочка Xamarin. Forms](~/xamarin-forms/app-fundamentals/shell/index.md).
+- [Оболочка Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/index.md)
+- [Реагирование на изменения системных тем в приложениях Xamarin. Forms](~/xamarin-forms/user-interface/theming/system-theme-changes.md)

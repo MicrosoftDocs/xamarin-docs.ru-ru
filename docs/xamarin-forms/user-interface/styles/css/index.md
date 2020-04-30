@@ -7,13 +7,13 @@ ms.technology: xamarin-forms
 ms.custom: xamu-video
 author: davidbritch
 ms.author: dabritch
-ms.date: 11/04/2019
-ms.openlocfilehash: 6813b29718d26b592631dd43b8fbd03fe479101e
-ms.sourcegitcommit: 1fb87ff74560d4d7c89f80018cc010c07646461c
+ms.date: 04/17/2020
+ms.openlocfilehash: 182bd088ba169dad6bdbbb4315a033925964f64e
+ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82139061"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82517565"
 ---
 # <a name="styling-xamarinforms-apps-using-cascading-style-sheets-css"></a>Стилизация приложений Xamarin. Forms с помощью каскадные таблицы стилей (CSS)
 
@@ -92,6 +92,9 @@ stacklayout>image {
 ### <a name="loading-a-style-sheet"></a>Загрузка таблицы стилей
 
 Существует ряд подходов, которые можно использовать для загрузки таблицы стилей.
+
+> [!NOTE]
+> Сейчас невозможно изменить таблицу стилей во время выполнения и применить новую таблицу стилей.
 
 ### <a name="xaml"></a>XAML
 
@@ -358,20 +361,20 @@ Xamarin. Forms поддерживают следующие свойства CSS 
 |`align-content`|`FlexLayout`| `stretch` \| `center` \| `start` \| `end` \| `spacebetween` \| `spacearound` \| `spaceevenly` \| `flex-start` \| `flex-end` \| `space-between` \| `space-around` \| `initial` |`align-content: space-between;`|
 |`align-items`|`FlexLayout`| `stretch` \| `center` \| `start` \| `end` \| `flex-start` \| `flex-end` \| `initial` |`align-items: flex-start;`|
 |`align-self`|`VisualElement`| `auto` \| `stretch` \| `center` \| `start` \| `end` \| `flex-start` \| `flex-end` \| `initial`|`align-self: flex-end;`|
-|`background-color`|`VisualElement`|_color_ \| `initial` |`background-color: springgreen;`|
-|`background-image`|`Page`|_строка_ \| `initial` |`background-image: bg.png;`|
-|`border-color`|`Button`, `Frame`, `ImageButton`|_color_ \| `initial`|`border-color: #9acd32;`|
+|`background-color`|`VisualElement`|_цветовая палитра_ \|`initial` |`background-color: springgreen;`|
+|`background-image`|`Page`|_строка_ \|`initial` |`background-image: bg.png;`|
+|`border-color`|`Button`, `Frame`, `ImageButton`|_цветовая палитра_ \|`initial`|`border-color: #9acd32;`|
 |`border-radius`|`BoxView`, `Button`, `Frame`, `ImageButton`|_double_ \| `initial` |`border-radius: 10;`|
 |`border-width`|`Button`, `ImageButton`|_double_ \| `initial` |`border-width: .5;`|
-|`color`|`ActivityIndicator`, `BoxView`, `Button`, `CheckBox`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `ProgressBar`, `SearchBar`, `Switch`, `TimePicker`|_color_ \| `initial` |`color: rgba(255, 0, 0, 0.3);`|
+|`color`|`ActivityIndicator`, `BoxView`, `Button`, `CheckBox`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `ProgressBar`, `SearchBar`, `Switch`, `TimePicker`|_цветовая палитра_ \|`initial` |`color: rgba(255, 0, 0, 0.3);`|
 |`column-gap`|`Grid`|_double_ \| `initial`|`column-gap: 9;`|
 |`direction`|`VisualElement`|`ltr` \| `rtl` \| `inherit` \| `initial` |`direction: rtl;`|
 |`flex-direction`|`FlexLayout`| `column` \| `columnreverse` \| `row` \| `rowreverse` \| `row-reverse` \| `column-reverse` \| `initial`|`flex-direction: column-reverse;`|
 |`flex-basis`|`VisualElement`|_float_ \| float `auto` . \| `initial` Кроме того, с помощью `%` знака можно указать процент в диапазоне от 0% до 100%.|`flex-basis: 25%;`|
-|`flex-grow`|`VisualElement`|_float_ \| `initial`|`flex-grow: 1.5;`|
-|`flex-shrink`|`VisualElement`|_float_ \| `initial`|`flex-shrink: 1;`|
+|`flex-grow`|`VisualElement`|_FLOAT_ \| `initial`|`flex-grow: 1.5;`|
+|`flex-shrink`|`VisualElement`|_FLOAT_ \| `initial`|`flex-shrink: 1;`|
 |`flex-wrap`|`VisualElement`| `nowrap` \| `wrap` \| `reverse` \| `wrap-reverse` \| `initial`|`flex-wrap: wrap-reverse;`|
-|`font-family`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_строка_ \| `initial` |`font-family: Consolas;`|
+|`font-family`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_строка_ \|`initial` |`font-family: Consolas;`|
 |`font-size`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_двойной_ \| _namedsize_ намедсизе \|  `initial` |`font-size: 12;`|
 |`font-style`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|`bold` \| `italic` \| `initial` |`font-style: bold;`|
 |`height`|`VisualElement`|_double_ \| `initial` |`min-height: 250;`|
@@ -383,11 +386,11 @@ Xamarin. Forms поддерживают следующие свойства CSS 
 |`margin-top`|`View`|_толщина_ \|`initial` |`margin-top: 2;`|
 |`margin-right`|`View`|_толщина_ \|`initial` |`margin-right: 1;`|
 |`margin-bottom`|`View`|_толщина_ \|`initial` |`margin-bottom: 6;`|
-|`max-lines`|`Label`|_int_ \| `initial`|`max-lines: 2;`|
+|`max-lines`|`Label`|_INT_ \| `initial`|`max-lines: 2;`|
 |`min-height`|`VisualElement`|_double_ \| `initial` |`min-height: 50;`|
 |`min-width`|`VisualElement`|_double_ \| `initial` |`min-width: 112;`|
 |`opacity`|`VisualElement`|_double_ \| `initial` |`opacity: .3;`|
-|`order`|`VisualElement`|_int_ \| `initial`|`order: -1;`|
+|`order`|`VisualElement`|_INT_ \| `initial`|`order: -1;`|
 |`padding`|`Button`, `ImageButton`, `Layout`, `Page`|_толщина_ \|`initial` |`padding: 6 12 12;`|
 |`padding-left`|`Button`, `ImageButton`, `Layout`, `Page`|_double_ \| `initial`|`padding-left: 3;`|
 |`padding-top`|`Button`, `ImageButton`, `Layout`, `Page`| _double_ \| `initial` |`padding-top: 4;`|
@@ -422,20 +425,20 @@ Xamarin. Forms поддерживают следующие свойства CSS 
 
 |Свойство|Область применения|Значения|Пример|
 |---|---|---|---|
-|`-xf-bar-background-color`|`NavigationPage`, `TabbedPage`|_color_ \| `initial` |`-xf-bar-background-color: teal;`|
-|`-xf-bar-text-color`|`NavigationPage`, `TabbedPage`|_color_ \| `initial` |`-xf-bar-text-color: gray`|
+|`-xf-bar-background-color`|`NavigationPage`, `TabbedPage`|_цветовая палитра_ \|`initial` |`-xf-bar-background-color: teal;`|
+|`-xf-bar-text-color`|`NavigationPage`, `TabbedPage`|_цветовая палитра_ \|`initial` |`-xf-bar-text-color: gray`|
 |`-xf-horizontal-scroll-bar-visibility`|`ScrollView`| `default` \| `always` \| `never` \| `initial` |`-xf-horizontal-scroll-bar-visibility: never;`|
-|`-xf-max-length`|`Entry`, `Editor`|_int_ \| `initial` |`-xf-max-length: 20;`|
-|`-xf-max-track-color`|`Slider`|_color_ \| `initial` |`-xf-max-track-color: red;`|
-|`-xf-min-track-color`|`Slider`|_color_ \| `initial` |`-xf-min-track-color: yellow;`|
+|`-xf-max-length`|`Entry`, `Editor`, `SearchBar`|_INT_ \| `initial` |`-xf-max-length: 20;`|
+|`-xf-max-track-color`|`Slider`|_цветовая палитра_ \|`initial` |`-xf-max-track-color: red;`|
+|`-xf-min-track-color`|`Slider`|_цветовая палитра_ \|`initial` |`-xf-min-track-color: yellow;`|
 |`-xf-orientation`|`ScrollView`, `StackLayout`| `horizontal` \| `vertical` \| `both` \| `initial`. `both`поддерживается только в `ScrollView`. |`-xf-orientation: horizontal;`|
 |`-xf-placeholder`|`Entry`, `Editor`, `SearchBar`|\| _текст в кавычках_`initial` |`-xf-placeholder: Enter name;`|
-|`-xf-placeholder-color`|`Entry`, `Editor`, `SearchBar`|_color_ \| `initial` |`-xf-placeholder-color: green;`|
+|`-xf-placeholder-color`|`Entry`, `Editor`, `SearchBar`|_цветовая палитра_ \|`initial` |`-xf-placeholder-color: green;`|
 |`-xf-spacing`|`StackLayout`|_double_ \| `initial` |`-xf-spacing: 8;`|
-|`-xf-thumb-color`|`Slider`, `Switch`|_color_ \| `initial` |`-xf-thumb-color: limegreen;`|
+|`-xf-thumb-color`|`Slider`, `Switch`|_цветовая палитра_ \|`initial` |`-xf-thumb-color: limegreen;`|
 |`-xf-vertical-scroll-bar-visibility`|`ScrollView`| `default` \| `always` \| `never` \| `initial` |`-xf-vertical-scroll-bar-visibility: always;`|
 |`-xf-vertical-text-alignment`|`Label`| `start` \| `center` \| `end` \| `initial`|`-xf-vertical-text-alignment: end;`|
-|`-xf-visual`|`VisualElement`|_строка_ \| `initial` |`-xf-visual: material;`|
+|`-xf-visual`|`VisualElement`|_строка_ \|`initial` |`-xf-visual: material;`|
 
 ### <a name="xamarinforms-shell-specific-properties"></a>Особые свойства оболочки Xamarin.Forms
 
@@ -443,19 +446,19 @@ Xamarin. Forms поддерживают следующие свойства CSS 
 
 |Свойство|Область применения|Значения|Пример|
 |---|---|---|---|
-|`-xf-flyout-background`|`Shell`|_color_ \| `initial` |`-xf-flyout-background: red;`|
-|`-xf-shell-background`|`Element`|_color_ \| `initial` |`-xf-shell-background: green;`|
-|`-xf-shell-disabled`|`Element`|_color_ \| `initial` |`-xf-shell-disabled: blue;`|
-|`-xf-shell-foreground`|`Element`|_color_ \| `initial` |`-xf-shell-foreground: yellow;`|
-|`-xf-shell-tabbar-background`|`Element`|_color_ \| `initial` |`-xf-shell-tabbar-background: white;`|
-|`-xf-shell-tabbar-disabled`|`Element`|_color_ \| `initial` |`-xf-shell-tabbar-disabled: black;`|
-|`-xf-shell-tabbar-foreground`|`Element`|_color_ \| `initial` |`-xf-shell-tabbar-foreground: gray;`|
-|`-xf-shell-tabbar-title`|`Element`|_color_ \| `initial` |`-xf-shell-tabbar-title: lightgray;`|
-|`-xf-shell-tabbar-unselected`|`Element`|_color_ \| `initial` |`-xf-shell-tabbar-unselected: cyan;`|
-|`-xf-shell-title`|`Element`|_color_ \| `initial` |`-xf-shell-title: teal;`|
-|`-xf-shell-unselected`|`Element`|_color_ \| `initial` |`-xf-shell-unselected: limegreen;`|
+|`-xf-flyout-background`|`Shell`|_цветовая палитра_ \|`initial` |`-xf-flyout-background: red;`|
+|`-xf-shell-background`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-background: green;`|
+|`-xf-shell-disabled`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-disabled: blue;`|
+|`-xf-shell-foreground`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-foreground: yellow;`|
+|`-xf-shell-tabbar-background`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-tabbar-background: white;`|
+|`-xf-shell-tabbar-disabled`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-tabbar-disabled: black;`|
+|`-xf-shell-tabbar-foreground`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-tabbar-foreground: gray;`|
+|`-xf-shell-tabbar-title`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-tabbar-title: lightgray;`|
+|`-xf-shell-tabbar-unselected`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-tabbar-unselected: cyan;`|
+|`-xf-shell-title`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-title: teal;`|
+|`-xf-shell-unselected`|`Element`|_цветовая палитра_ \|`initial` |`-xf-shell-unselected: limegreen;`|
 
-### <a name="color"></a>Color
+### <a name="color"></a>Цвет
 
 Поддерживаются `color` следующие значения:
 
