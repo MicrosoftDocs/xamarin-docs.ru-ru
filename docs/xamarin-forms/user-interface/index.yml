@@ -9,13 +9,13 @@ metadata:
   ms.assetid: 391B4A77-7CAC-42D2-9E77-BD8E170E9BE6
   author: davidbritch
   ms.author: dabritch
-  ms.date: 12/30/2019
-  ms.openlocfilehash: bbe7fd52581cd77ed7e7d910dd16264641c15abf
-  ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+  ms.date: 03/19/2020
+  ms.openlocfilehash: 334c6afaffdec3ccc99d251bfc021edaa0cd9d2a
+  ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "77480597"
+  ms.lasthandoff: 04/29/2020
+  ms.locfileid: "82517436"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:
@@ -23,7 +23,7 @@ landingContent:
     links:
     - text: Обзор
       url: controls/index.md
-    - text: Страницы
+    - text: Pages
       url: controls/pages.md
     - text: Макеты
       url: controls/layouts.md
@@ -35,21 +35,29 @@ landingContent:
       url: controls/common-properties.md
     - text: Сторонние элементы управления
       url: controls/thirdparty.md
+- title: Декларативный пользовательский интерфейс в C#
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Разметка C#
+      url: csharp-markup.md
 - title: Визуальные элементы для представления данных
   linkLists:
   - linkListType: concept
     links:
     - text: BoxView
       url: boxview.md
-    - text: Образ —
+    - text: Expander
+      url: expander.md
+    - text: Изображение
       url: images.md
     - text: Метка
       url: text/label.md
-    - text: Схема
+    - text: Карта
       url: map/index.md
     - text: MediaElement
       url: mediaelement.md
-    - text: Веб-представление
+    - text: WebView
       url: webview.md
 - title: Визуальные элементы, инициирующие команды
   linkLists:
@@ -59,6 +67,8 @@ landingContent:
       url: button.md
     - text: ImageButton
       url: imagebutton.md
+    - text: RadioButton
+      url: radiobutton.md
     - text: RefreshView
       url: refreshview.md
     - text: Панель поиска
@@ -73,7 +83,7 @@ landingContent:
       url: checkbox.md
     - text: DatePicker
       url: datepicker.md
-    - text: Ползунок
+    - text: Slider
       url: slider.md
     - text: Шаговый переключатель
       url: stepper.md
@@ -87,7 +97,7 @@ landingContent:
     links:
     - text: Редактор
       url: text/editor.md
-    - text: Запись
+    - text: Ввод
       url: text/entry.md
 - title: Визуальные элементы для обозначения действий
   linkLists:
@@ -159,7 +169,7 @@ landingContent:
       url: layouts/flex-layout.md
     - text: Frame
       url: layouts/frame.md
-    - text: Сетка
+    - text: Grid
       url: layouts/grid.md
     - text: RelativeLayout
       url: layouts/relative-layout.md
