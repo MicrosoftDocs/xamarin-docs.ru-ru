@@ -6,12 +6,12 @@ author: jamesmontemagno
 ms.author: jamont
 ms.date: 04/02/2019
 ms.custom: video
-ms.openlocfilehash: fe8730ba6bc664269d79c550fb4e0abef7767fe0
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 26c4c2487bf2ec32ade3ceef9db73b4809053fec
+ms.sourcegitcommit: 154a3e7aec775327565bb54eda1a610976af1d6f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70765001"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82624726"
 ---
 # <a name="xamarinessentials-browser"></a>Xamarin.Essentials: Браузер
 
@@ -35,9 +35,9 @@ using Xamarin.Essentials;
 
 public class BrowserTest
 {
-    public async Task<bool> OpenBrowser(Uri uri)
+    public async Task OpenBrowser(Uri uri)
     {
-        return await Browser.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
+        await Browser.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
     }
 }
 ```
