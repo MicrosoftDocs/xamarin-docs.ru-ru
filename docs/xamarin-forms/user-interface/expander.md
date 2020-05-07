@@ -7,16 +7,16 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/15/2020
-ms.openlocfilehash: f47dc08d11a97598966ba7af620cfc81e5fe284f
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+ms.openlocfilehash: b1e573a6070a637ef2fdfa65bb0fc1375522fc3c
+ms.sourcegitcommit: 443ecd9146fe2a7bbb9b5ab6d33c835876efcf1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82532889"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852497"
 ---
 # <a name="xamarinforms-expander"></a>Расширитель Xamarin. Forms
 
-[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
 
 Элемент управления Xamarin. `Expander` Forms предоставляет расширяемый контейнер для размещения любого содержимого. Элемент управления имеет заголовок и содержимое, и содержимое отображается или скрыто путем касания `Expander` заголовка. Если отображается только `Expander` заголовок, `Expander` *сворачивается*. Если `Expander` содержимое видимо `Expander` , *разворачивается*.
 
@@ -26,6 +26,8 @@ ms.locfileid: "82532889"
 
 > [!IMPORTANT]
 > `Expander`в настоящее время экспериментально и может использоваться только путем установки `Expander_Experimental` флага. Дополнительные сведения см. в разделе [экспериментальные флаги](~/xamarin-forms/internals/experimental-flags.md).
+>
+> Кроме того `Expander` , элемент управления полностью реализован в `Xamarin.Forms` пространстве имен. Поэтому он доступен на всех платформах, поддерживаемых Xamarin. Forms.
 
 `Expander` Элемент управления определяет следующие свойства:
 

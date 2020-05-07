@@ -6,23 +6,23 @@ ms.assetid: E44F5D0F-DB8E-46C7-8789-114F1652A6C5
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 03/11/2020
-ms.openlocfilehash: 7a2671c47a6d2fceaf2b444cfa8988b4bb8c249c
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+ms.date: 05/06/2020
+ms.openlocfilehash: 31b705a51e405285cc5eaae391dd0794bfacfd9c
+ms.sourcegitcommit: 443ecd9146fe2a7bbb9b5ab6d33c835876efcf1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82517263"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852489"
 ---
 # <a name="xamarinforms-webview"></a>WebView Xamarin. Forms
 
-[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithwebview)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithwebview)
 
 [`WebView`](xref:Xamarin.Forms.WebView)— Это представление для отображения содержимого Web и HTML в приложении:
 
 ![В браузере приложений](webview-images/in-app-browser.png)
 
-## <a name="content"></a>Содержимое
+## <a name="content"></a>Content
 
 `WebView`поддерживает следующие типы содержимого:
 
@@ -554,11 +554,13 @@ webView.Source = new UrlWebViewSource { Url = uri.ToString() };
 
 Ниже перечислены необходимые условия для работы.
 
-- Можно использовать **Xamarin. Forms 4,5 или более позднюю** &ndash; версию предварительной версии Xamarin. Forms 4,5.
-- **Xamarin. iOS 13.10.0.17 или более поздней** &ndash; версии проверьте версию Xamarin. iOS [в Visual Studio](~/cross-platform/troubleshooting/questions/version-logs.md#version-information). Эта версия Xamarin. iOS входит в состав Visual Studio для Mac 8.4.1 и Visual Studio 16.4.3.
-- **Удаление ссылок на `UIWebView` ** &ndash; код не должно содержать ссылок на `UIWebView` классы, использующие. `UIWebView`
+- **Xamarin. forms 4,5 или более поздней версии**. Xamarin. Forms 4,6 или более поздней версии требуется, если приложение использует визуальный элемент Material.
+- **Xamarin. iOS 13.10.0.17 или более поздней версии**. Проверьте версию Xamarin. iOS [в Visual Studio](~/cross-platform/troubleshooting/questions/version-logs.md#version-information). Эта версия Xamarin. iOS входит в состав Visual Studio для Mac 8.4.1 и Visual Studio 16.4.3.
+- **Удалите ссылки на `UIWebView` **. Код не должен содержать ссылки на `UIWebView` классы, использующие. `UIWebView`
 
-### <a name="configure-the-linker-preview"></a>Настройка предварительного просмотра компоновщика
+Дополнительные сведения об обнаружении и удалении `UIWebView` ссылок см. в разделе [уивебвиев устарел](~/ios/user-interface/controls/webview.md#uiwebview-deprecation).
+
+### <a name="configure-the-linker"></a>Настройка компоновщика
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
@@ -575,7 +577,7 @@ webView.Source = new UrlWebViewSource { Url = uri.ToString() };
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-Выполните следующие действия, чтобы компоновщик удалил `UIWebView` ссылки.
+Выполните следующие действия, чтобы компоновщик удалил `UIWebView` ссылки:
 
 1. **Откройте параметры** &ndash; проекта iOS щелкните правой кнопкой мыши проект iOS и выберите пункт **Параметры**.
 1. **Перейдите к разделу** &ndash; сборка iOS выберите раздел **сборка iOS** .
@@ -594,3 +596,4 @@ webView.Source = new UrlWebViewSource { Url = uri.ToString() };
 
 - [Работа с WebView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithwebview)
 - [WebView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-webview)
+- [Устаревшие Уивебвиев](~/ios/user-interface/controls/webview.md#uiwebview-deprecation)

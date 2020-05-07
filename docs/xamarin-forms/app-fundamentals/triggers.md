@@ -6,13 +6,13 @@ ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 02/21/2020
-ms.openlocfilehash: bf9c06dae0df7da1cc69a85d8436376494039959
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.date: 04/17/2020
+ms.openlocfilehash: b4eeb776cafa131f13eb70aca5bd20df6eafa07f
+ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303837"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82516729"
 ---
 # <a name="xamarinforms-triggers"></a>Триггеры Xamarin.Forms
 
@@ -341,7 +341,7 @@ Device.SetFlags(new string[]{ "StateTriggers_Experimental" });
 
 Класс [`StateTrigger`](xref:Xamarin.Forms.StateTrigger), производный от класса [`StateTriggerBase`](xref:Xamarin.Forms.StateTriggerBase), имеет привязываемое свойство [`IsActive`](xref:Xamarin.Forms.StateTrigger.IsActive). `StateTrigger` выполняет изменение [`VisualState`](xref:Xamarin.Forms.VisualState), когда свойство `IsActive` изменяет значение.
 
-Класс [`StateTriggerBase`](xref:Xamarin.Forms.StateTriggerBase), который является базовым классом для всех триггеров состояния, имеет свойство [`IsActive`](xref:Xamarin.Forms.StateTriggerBase.IsActive) и событие [`IsActiveChanged`](xref:Xamarin.Forms.StateTriggerBase.IsActiveChanged). Это событие возникает при каждом изменении [`VisualState`](xref:Xamarin.Forms.VisualState).
+Класс [`StateTriggerBase`](xref:Xamarin.Forms.StateTriggerBase), который является базовым классом для всех триггеров состояния, имеет свойство [`IsActive`](xref:Xamarin.Forms.StateTriggerBase.IsActive) и событие [`IsActiveChanged`](xref:Xamarin.Forms.StateTriggerBase.IsActiveChanged). Это событие возникает при каждом изменении [`VisualState`](xref:Xamarin.Forms.VisualState). Кроме того, класс `StateTriggerBase` имеет переопределяемые методы `OnAttached` и `OnDetached`.
 
 > [!IMPORTANT]
 > Привязываемое свойство [`StateTrigger.IsActive`](xref:Xamarin.Forms.StateTrigger.IsActive) скрывает унаследованное свойство [`StateTriggerBase.IsActive`](xref:Xamarin.Forms.StateTriggerBase.IsActive).
@@ -405,7 +405,7 @@ Unchecked state active: True
 ```
 
 > [!NOTE]
-> Триггеры пользовательского состояния могут создаваться путем произведения от класса [`StateTriggerBase`](xref:Xamarin.Forms.StateTriggerBase).
+> Триггеры настраиваемого состояния могут быть созданы путем наследования от класса [`StateTriggerBase`](xref:Xamarin.Forms.StateTriggerBase) и переопределения методов `OnAttached` и `OnDetached` для выполнения необходимых операций регистраций и очистки.
 
 ### <a name="adaptive-trigger"></a>Адаптивный триггер
 

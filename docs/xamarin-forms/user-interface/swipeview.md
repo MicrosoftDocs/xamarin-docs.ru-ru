@@ -7,18 +7,18 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/26/2020
-ms.openlocfilehash: da6dbe63b7151ef0f9a1defca66fbb3abb25ad1d
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+ms.openlocfilehash: 992e4dd1a2b2a1d1a4f0b76dadf4704241486415
+ms.sourcegitcommit: 520ea9d52266f745d2c09642bac21f64a56f8c31
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82517549"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82859105"
 ---
 # <a name="xamarinforms-swipeview"></a>Свипевиев Xamarin. Forms
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-swipeviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-swipeviewdemos/)
 
 `SwipeView` — Это контейнерный элемент управления, который служит оболочкой для элемента содержимого и предоставляет пункты контекстного меню, которые выводятся с помощью жеста прокрутки:
 
@@ -330,10 +330,10 @@ SwipeView swipeView = new SwipeView
 
 `Open` Метод требует `OpenSwipeItem` аргумент, чтобы указать направление, из которого `SwipeView` будет открываться. Перечисление состоит из `OpenSwipeItem` четырех элементов:
 
-- `LeftItems`, который указывает, что `SwipeView` будет открываться слева, чтобы отобразить элементы считывания в `LeftItems` коллекции.
+- `LeftItems`, который указывает, что `SwipeView` будет открыт слева для отображения элементов, прокрутхся в `LeftItems` коллекции.
 - `TopItems`, который указывает, что `SwipeView` будет открываться из верхней части, чтобы отобразить элементы считывания в `TopItems` коллекции.
-- `RightItems`, который указывает, что `SwipeView` объект будет открыт справа, чтобы отобразить элементы считывания в `RightItems` коллекции.
-- `BottomItems`, который указывает, что `SwipeView` объект будет открыт из нижней части, чтобы отобразить элементы считывания в `BottomItems` коллекции.
+- `RightItems`, который указывает, что `SwipeView` объект будет открываться справа, чтобы показать элементы считывания в `RightItems` коллекции.
+- `BottomItems`, который указывает, что `SwipeView` объект будет открыт из нижней части для отображения элементов, прокрутхся в `BottomItems` коллекции.
 
 В следующем `SwipeView` примере `swipeView`показано, как открыть `SwipeView` для отображения элементов, прокрутхся в `LeftItems` коллекции, с указанным именем.
 
