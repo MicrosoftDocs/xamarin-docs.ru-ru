@@ -5,12 +5,12 @@ ms.assetid: 34062D84-3E55-4AF7-A688-8551068B1E57
 author: jamesmontemagno
 ms.author: jamont
 ms.date: 01/06/2020
-ms.openlocfilehash: 21f2079ace4adae6fd84d89426e5d66692af2a0a
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 3d61267ae78a4b84907a2bcf6e944eb286b113dd
+ms.sourcegitcommit: 8b94b2af2ac69e4a60e210ddc764f4d276c8d88d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "78289796"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "82605450"
 ---
 # <a name="xamarinessentials-permissions"></a>Xamarin.Essentials: Разрешения
 
@@ -37,6 +37,8 @@ var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>()
 ```
 
 Если требуемое разрешение не объявлено, происходит исключение `PermissionException`.
+
+Прежде чем запрашивать разрешение, рекомендуется проверить его состояние. Если пользователь не получал запрос, каждая операционная система возвращает разные состояния по умолчанию. iOS возвращает `Unknown`, тогда как другие ОС возвращают `Denied`.
 
 ## <a name="requesting-permissions"></a>Запрос прав доступа
 
@@ -96,7 +98,7 @@ Xamarin.Essentials пытается выполнять аннотацию для
 Ниже приведен пример общих сведений об использовании для обработки разрешений.
 
 ```csharp
-public async Task<PermissionStatus> CheckAndRequestPermissionAsync<TPermission>()
+public async Task<PermissionStatus> CheckAndRequestLocationPermission()
 {
     var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
     if (status != PermissionStatus.Granted)

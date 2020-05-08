@@ -6,13 +6,13 @@ ms.assetid: FEDE51EB-577E-4B3E-9890-B7C1A5E52516
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 11/05/2019
-ms.openlocfilehash: 4049b3bdfdd6077dcfa151df9553722e63def0ba
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.date: 04/22/2020
+ms.openlocfilehash: 5e5c50a9195ceb2716e3ca5306b72654fedc46e8
+ms.sourcegitcommit: 443ecd9146fe2a7bbb9b5ab6d33c835876efcf1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303873"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852468"
 ---
 # <a name="xamarinforms-shell-flyout"></a>Всплывающее меню оболочки Xamarin.Forms
 
@@ -350,64 +350,84 @@ Shell.Current.FlyoutIsPresented = false;
 
 [![Снимок экрана шаблонных объектов FlyoutItem для iOS и Android](flyout-images/flyoutitem-templated.png "Шаблонные объекты FlyoutItem оболочки")](flyout-images/flyoutitem-templated-large.png#lightbox "Шаблонные объекты FlyoutItem оболочки")
 
-
 Так как `Shell.ItemTemplate` является присоединенным свойством, для отдельных объектов `FlyoutItem` можно задавать разные шаблоны.
 
 > [!NOTE]
 > Оболочка предоставляет свойства `Title` и `FlyoutIcon` для [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) в `ItemTemplate`.
 
+Кроме того, оболочка содержит три класса стилей, которые автоматически применяются к объектам `FlyoutItem`. Дополнительные сведения см. в разделе [Классы стилей FlyoutItem и MenuItem](#flyoutitem-and-menuitem-style-classes).
 
-### <a name="default-template-for-flyoutitems-and-menuitems"></a>Шаблон по умолчанию для элементов FlyoutItem и MenuItem
-Внутри оболочки используется приведенный ниже шаблон для реализации по умолчанию. Это отличная отправная точка, если все, что вам требуется, — внести небольшие изменения в существующие макеты. Он также демонстрирует возможности диспетчера визуальных состояний для всплывающих элементов. Этот же шаблон можно использовать для элементов MenuItem.
+### <a name="default-template-for-flyoutitems"></a>Шаблон по умолчанию для элементов FlyoutItem
+
+Ниже показан [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) по умолчанию, используемый для каждого элемента `FlyoutItem`.
 
 ```xaml
-<DataTemplate x:Key="FlyoutTemplates">
-    <Grid HeightRequest="{x:OnPlatform Android=50}">
+<DataTemplate x:Key="FlyoutTemplate">
+    <Grid x:Name="FlyoutItemLayout"
+          HeightRequest="{x:OnPlatform Android=50}"
+          ColumnSpacing="{x:OnPlatform UWP=0}"
+          RowSpacing="{x:OnPlatform UWP=0}">
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroupList>
                 <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal">
-                    </VisualState>
+                    <VisualState x:Name="Normal" />
                     <VisualState x:Name="Selected">
                         <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="#F2F2F2" />
+                            <Setter Property="BackgroundColor"
+                                    Value="{x:OnPlatform Android=#F2F2F2, iOS=#F2F2F2}" />
                         </VisualState.Setters>
                     </VisualState>
                 </VisualStateGroup>
             </VisualStateGroupList>
         </VisualStateManager.VisualStateGroups>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="{x:OnPlatform Android=54, iOS=50}"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="{x:OnPlatform Android=54, iOS=50, UWP=Auto}" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Image Source="{Binding FlyoutIcon}"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            HeightRequest="{x:OnPlatform Android=24, iOS=22}"
-            WidthRequest="{x:OnPlatform Android=24, iOS=22}">
+        <Image x:Name="FlyoutItemImage"
+               Source="{Binding FlyoutIcon}"
+               VerticalOptions="Center"
+               HorizontalOptions="{x:OnPlatform Default=Center, UWP=Start}"
+               HeightRequest="{x:OnPlatform Android=24, iOS=22, UWP=16}"
+               WidthRequest="{x:OnPlatform Android=24, iOS=22, UWP=16}">
+            <Image.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <OnPlatform.Platforms>
+                        <On Platform="UWP"
+                            Value="12,0,12,0" />
+                    </OnPlatform.Platforms>
+                </OnPlatform>
+            </Image.Margin>
         </Image>
-        <Label VerticalOptions="Center"
-                Text="{Binding Title}"
-                FontSize="{x:OnPlatform Android=14, iOS=Small}"
-                FontAttributes="Bold" Grid.Column="1">
+        <Label x:Name="FlyoutItemLabel"
+               Grid.Column="1"
+               Text="{Binding Title}"
+               FontSize="{x:OnPlatform Android=14, iOS=Small}"
+               HorizontalOptions="{x:OnPlatform UWP=Start}"
+               HorizontalTextAlignment="{x:OnPlatform UWP=Start}"
+               FontAttributes="{x:OnPlatform iOS=Bold}"
+               VerticalTextAlignment="Center">
             <Label.TextColor>
                 <OnPlatform x:TypeArguments="Color">
                     <OnPlatform.Platforms>
-                        <On Platform="Android" Value="#D2000000" />
+                        <On Platform="Android"
+                            Value="#D2000000" />
                     </OnPlatform.Platforms>
                 </OnPlatform>
             </Label.TextColor>
             <Label.Margin>
                 <OnPlatform x:TypeArguments="Thickness">
                     <OnPlatform.Platforms>
-                        <On Platform="Android" Value="20, 0, 0, 0" />
+                        <On Platform="Android"
+                            Value="20, 0, 0, 0" />
                     </OnPlatform.Platforms>
                 </OnPlatform>
             </Label.Margin>
             <Label.FontFamily>
                 <OnPlatform x:TypeArguments="x:String">
                     <OnPlatform.Platforms>
-                        <On Platform="Android" Value="sans-serif-medium" />
+                        <On Platform="Android"
+                            Value="sans-serif-medium" />
                     </OnPlatform.Platforms>
                 </OnPlatform>
             </Label.FontFamily>
@@ -415,6 +435,13 @@ Shell.Current.FlyoutIsPresented = false;
     </Grid>
 </DataTemplate>
 ```
+
+Этот шаблон можно использовать в качестве основы для внесения изменений в существующий макет раскрывающегося меню, а также для отображения визуальных состояний, реализованных для элементов всплывающего меню.
+
+Кроме того, все элементы [`Grid`](xref:Xamarin.Forms.Grid), [`Image`](xref:Xamarin.Forms.Image) и [`Label`](xref:Xamarin.Forms.Label) имеют значения `x:Name` и поэтому могут использоваться с диспетчером визуальных состояний. Дополнительные сведения см. в разделе [Задание состояния для нескольких элементов](~/xamarin-forms/user-interface/visual-state-manager.md#set-state-on-multiple-elements).
+
+> [!NOTE]
+> Этот же шаблон можно использовать для объектов `MenuItem`.
 
 ## <a name="flyoutitem-tab-order"></a>Последовательность табуляции для FlyoutItem
 
@@ -453,7 +480,13 @@ Shell.Current.FlyoutIsPresented = false;
 
 Этот код задает объект `ShellContent` с именем `aboutItem` в качестве значения свойства `CurrentItem`, что приводит к его отображению. В нашем примере используется неявное преобразование для помещения объекта `ShellContent` в объект `Tab`, который упаковывается в объект `FlyoutItem`.
 
-Эквивалентный код на C# выглядит так:
+С учетом объекта `ShellContent` с именем `aboutItem` эквивалентный код на C# выглядит так:
+
+```csharp
+CurrentItem = aboutItem;
+```
+
+В этом примере свойство `CurrentItem` задается в подклассе класса `Shell`. Кроме того, свойство `CurrentItem` может быть задано в любом классе с помощью статического свойства `Shell.Current`:
 
 ```csharp
 Shell.Current.CurrentItem = aboutItem;
@@ -569,12 +602,50 @@ Shell.Current.CurrentItem = aboutItem;
 </Shell>
 ```
 
+В этом примере `MenuItemTemplate` на уровне оболочки задается для первого объекта `MenuItem`, а для второго объекта `MenuItem` задается встроенный шаблон `MenuItemTemplate`.
 
 > [!NOTE]
-> Шаблон, применяемый для [пунктов всплывающего элемента](#default-template-for-flyoutitems-and-menuitems), можно использовать и для пунктов меню.
+> Шаблон по умолчанию для объектов `FlyoutItem` можно также использовать для объектов `MenuItem`. Дополнительные сведения см. в разделе [Шаблон по умолчанию для элементов FlyoutItem](#default-template-for-flyoutitems).
 
-В этом примере `MenuItemTemplate` на уровне оболочки задается для первого объекта `MenuItem`, а для второго объекта `MenuItem` задается встроенный шаблон `MenuItemTemplate`.
+## <a name="flyoutitem-and-menuitem-style-classes"></a>Классы стилей FlyoutItem и MenuItem
+
+Оболочка включает три класса стилей, которые автоматически применяются к объектам `FlyoutItem` и `MenuItem`. Классам стилей заданы следующие имена:
+
+- `FlyoutItemLabelStyle`
+- `FlyoutItemImageStyle`
+- `FlyoutItemLayoutStyle`
+
+В следующем коде XAML показан пример определения стилей для этих классов стилей:
+
+```xaml
+<Style TargetType="Label"
+       Class="FlyoutItemLabelStyle">
+    <Setter Property="TextColor"
+            Value="Black" />
+    <Setter Property="HeightRequest"
+            Value="100" />
+</Style>
+
+<Style TargetType="Image"
+       Class="FlyoutItemImageStyle">
+    <Setter Property="Aspect"
+            Value="Fill" />
+</Style>
+
+<Style TargetType="Layout"
+       Class="FlyoutItemLayoutStyle"
+       ApplyToDerivedTypes="True">
+    <Setter Property="BackgroundColor"
+            Value="Teal" />
+</Style>
+```
+
+Эти стили будут автоматически применены к объектам `FlyoutItem` и `MenuItem`, причем задавать их свойствам [`StyleClass`](xref:Xamarin.Forms.NavigableElement.StyleClass) имена классов стилей не требуется.
+
+Кроме того, для объектов `FlyoutItem` и `MenuItem` можно определить и применить пользовательские классы стилей. Дополнительные сведения о классах стилей см. в статье [Классы стилей Xamarin.Forms](~/xamarin-forms/user-interface/styles/xaml/style-class.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Xaminals (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+- [Классы стилей Xamarin.Forms](~/xamarin-forms/user-interface/styles/xaml/style-class.md)
+- [Диспетчер визуальных состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md).

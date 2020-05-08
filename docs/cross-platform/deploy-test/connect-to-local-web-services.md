@@ -5,13 +5,13 @@ ms.prod: xamarin
 ms.assetid: FD8FE199-898B-4841-8041-CC9CA1A00917
 author: davidbritch
 ms.author: dabritch
-ms.date: 10/16/2019
-ms.openlocfilehash: 29261f2ef6366c0dac8ac82e63584366a5cca0b0
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.date: 04/29/2020
+ms.openlocfilehash: 29875b3f6c747d5dc2f45eb876a269d2bc7e85c6
+ms.sourcegitcommit: 443ecd9146fe2a7bbb9b5ab6d33c835876efcf1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "74135283"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852458"
 ---
 # <a name="connect-to-local-web-services-from-ios-simulators-and-android-emulators"></a>Подключение к локальным веб-службам из iOS Simulator и Android Emulator
 
@@ -60,9 +60,7 @@ dotnet dev-certs https --help
 
 ### <a name="ios"></a>iOS
 
-Приложения Xamarin под управлением iOS могут использовать управляемый сетевой стек или собственные сетевые стеки `CFNetwork` или `NSUrlSession`. По умолчанию новые проекты для платформы iOS используют сетевой стек `NSUrlSession` для поддержки протокола TLS 1.2 и собственные API для повышения производительности и уменьшения размера исполняемого файла.
-
-Если же для тестирования приложение нужно установить подключение к защищенной веб-службе, выполняемой локально, лучше использовать управляемый сетевой стек. Таким образом, рекомендуется настроить профили сборки симулятора отладки на использование управляемого сетевого стека, а профили сборки выпуска — на использование сетевого стека `NSUrlSession`. Каждый сетевой стек можно задать программно или с помощью селектора в параметрах проекта. Дополнительные сведения см. в статье о [селекторе реализации HttpClient и SSL/TLS для iOS и macOS](~/cross-platform/macios/http-stack.md).
+Приложения Xamarin под управлением iOS могут использовать управляемый сетевой стек или собственные сетевые стеки `CFNetwork` или `NSUrlSession`. По умолчанию новые проекты для платформы iOS используют сетевой стек `NSUrlSession` для поддержки протокола TLS 1.2 и собственные API для повышения производительности и уменьшения размера исполняемого файла. Дополнительные сведения см. в статье о [селекторе реализации HttpClient и SSL/TLS для iOS и macOS](~/cross-platform/macios/http-stack.md).
 
 ### <a name="android"></a>Android
 
@@ -97,38 +95,14 @@ public static string TodoItemsUrl = $"{BaseAddress}/api/todoitems/";
 
 ## <a name="bypass-the-certificate-security-check"></a>Обход проверки безопасности сертификата
 
-Попытка вызвать локальную защищенную веб-службу из приложения, выполняемого в iOS Simulator или Android Emulator, приведет к исключению `HttpRequestException` даже при использовании управляемого сетевого стека на любой из платформ. Это обусловлено тем, что локальный сертификат разработки HTTPS является самозаверяющим, а самозаверяющие сертификаты не являются доверенными в iOS и Android.
-
-Таким образом, необходимо игнорировать ошибки SSL, когда приложение использует локальную защищенную веб-службу. В настоящее время механизм для выполнения этой задачи отличается в iOS и Android.
-
-### <a name="ios"></a>iOS
-
-Ошибки SSL на iOS можно проигнорировать для локальных защищенных веб-служб, используя управляемый сетевой стек и задав свойство `ServicePointManager.ServerCertificateValidationCallback` обратному вызову, который игнорирует результат проверки безопасности локального сертификата разработки HTTPS.
+Попытка вызвать локальную защищенную веб-службу из приложения, выполняемого в iOS Simulator или Android Emulator, приведет к исключению `HttpRequestException` даже при использовании управляемого сетевого стека на любой из платформ. Это обусловлено тем, что локальный сертификат разработки HTTPS является самозаверяющим, а самозаверяющие сертификаты не являются доверенными в iOS и Android. Таким образом, необходимо игнорировать ошибки SSL, когда приложение использует локальную защищенную веб-службу. Это можно сделать, используя управляемый и собственный сетевые стеки в iOS и Android и задав в качестве значения свойства `ServerCertificateCustomValidationCallback` объекта `HttpClientHandler` обратный вызов, который игнорирует результат проверки безопасности локального сертификата разработки HTTPS.
 
 ```csharp
-#if DEBUG
-    System.Net.ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, sslPolicyErrors) =>
-    {
-        if (certificate.Issuer.Equals("CN=localhost"))
-            return true;
-        return sslPolicyErrors == System.Net.Security.SslPolicyErrors.None;
-    };
-#endif
-```
-
-В этом примере кода результат проверки сертификата сервера возвращается тогда, когда прошедший проверку сертификат не является сертификатом `localhost`. Для такого сертификата результат проверки игнорируется и возвращается значение `true`, подтверждающее, что сертификат действителен. Этот код должен быть добавлен в метод `AppDelegate.FinishedLaunching` на iOS, до вызова метода `LoadApplication(new App())`.
-
-> [!NOTE]
-> Собственные сетевые стеки в iOS не привязаны к `ServerCertificateValidationCallback`.
-
-### <a name="android"></a>Android
-
-Ошибки SSL на Android можно проигнорировать для локальных защищенных веб-служб, используя управляемый и собственный сетевые стеки `AndroidClientHandler` и задав свойство `ServerCertificateCustomValidationCallback` на объекте `HttpClientHandler` обратному вызову, который игнорирует результат проверки безопасности локального сертификата разработки HTTPS.
-
-```csharp
+// This method must be in a class in a platform project, even if
+// the HttpClient object is constructed in a shared project.
 public HttpClientHandler GetInsecureHandler()
 {
-    var handler = new HttpClientHandler();
+    HttpClientHandler handler = new HttpClientHandler();
     handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) =>
     {
         if (cert.Issuer.Equals("CN=localhost"))
@@ -139,7 +113,16 @@ public HttpClientHandler GetInsecureHandler()
 }
 ```
 
-В этом примере кода результат проверки сертификата сервера возвращается тогда, когда прошедший проверку сертификат не является сертификатом `localhost`. Для такого сертификата результат проверки игнорируется и возвращается значение `true`, подтверждающее, что сертификат действителен. Полученный объект `HttpClientHandler` должен передаваться в качестве аргумента в конструктор `HttpClient`.
+В этом примере кода результат проверки сертификата сервера возвращается тогда, когда прошедший проверку сертификат не является сертификатом `localhost`. Для такого сертификата результат проверки игнорируется и возвращается значение `true`, подтверждающее, что сертификат действителен. Полученный объект `HttpClientHandler` должен передаваться в качестве аргумента в конструктор `HttpClient` для отладочных сборок:
+
+```csharp
+#if DEBUG
+    HttpClientHandler insecureHandler = GetInsecureHandler();
+    HttpClient client = new HttpClient(insecureHandler);
+#else
+    HttpClient client = new HttpClient();
+#endif
+```
 
 ## <a name="related-links"></a>Связанные ссылки
 
