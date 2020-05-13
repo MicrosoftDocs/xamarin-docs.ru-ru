@@ -10,12 +10,12 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 03/19/2020
-  ms.openlocfilehash: 334c6afaffdec3ccc99d251bfc021edaa0cd9d2a
-  ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+  ms.openlocfilehash: 054e0adfeea97bf5c230d0372788b2628fc935f7
+  ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/29/2020
-  ms.locfileid: "82517436"
+  ms.lasthandoff: 05/12/2020
+  ms.locfileid: "83149917"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:
@@ -176,7 +176,7 @@ landingContent:
     - text: ScrollView
       url: layouts/scroll-view.md
     - text: StackLayout
-      url: layouts/stack-layout.md
+      url: layouts/stacklayout.md
 - title: Основные понятия о макете
   linkLists:
   - linkListType: concept

@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: ae5962de05190ad914c86ceb0a9b52edb72232dc
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: cb03ad89c4fa7a8bed876a7210add68be06cf4a3
+ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "71107337"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83343397"
 ---
-Поздравляем с завершением этого учебника, где вы научились:
+Поздравляем с завершением этого руководства, в котором вы научились:
 
 > [!div class="checklist"]
 >
@@ -14,7 +14,7 @@ ms.locfileid: "71107337"
 > - Задавать ориентацию `StackLayout`.
 > - Задавать выравнивание дочернего представления и расширения в `StackLayout`.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы узнать больше об основах создания мобильных приложений с помощью Xamarin.Forms, перейдите к учебнику по меткам.
 
@@ -24,7 +24,7 @@ ms.locfileid: "71107337"
 ## <a name="related-links"></a>Связанные ссылки
 
 - [StackLayoutTutorial (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-tutorials-stacklayouttutorial/)
-- [Xamarin.Forms StackLayout (руководство)](~/xamarin-forms/user-interface/layouts/stack-layout.md)
+- [Xamarin.Forms StackLayout (руководство)](~/xamarin-forms/user-interface/layouts/stacklayout.md)
 - [Поля и заполнение (руководство)](~/xamarin-forms/user-interface/layouts/margin-and-padding.md)
 - [Параметры макета в Xamarin.Forms (руководство)](~/xamarin-forms/user-interface/layouts/layout-options.md)
 - [API StackLayout](xref:Xamarin.Forms.StackLayout)

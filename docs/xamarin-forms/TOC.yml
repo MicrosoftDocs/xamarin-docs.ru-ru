@@ -140,6 +140,8 @@
               href: xaml/resource-dictionaries.md
             - name: Передача аргументов
               href: xaml/passing-arguments.md
+            - name: Универсальные шаблоны
+              href: xaml/generics.md
             - name: Модификаторы полей
               href: xaml/field-modifiers.md
             - name: Загрузка XAML во время выполнения
@@ -188,13 +190,8 @@
               href: app-fundamentals/custom-renderer/entry.md
             - name: Настройка ContentPage
               href: app-fundamentals/custom-renderer/contentpage.md
-            - name: Настройка карты
-              href: app-fundamentals/custom-renderer/map/index.md
-              items:
-                - name: Настройка закрепления карты
-                  href: app-fundamentals/custom-renderer/map/customized-pin.md
-                - name: Выделение круговой области на карте
-                  href: app-fundamentals/custom-renderer/map/circle-map-overlay.md
+            - name: Настройка закрепления карты
+              href: app-fundamentals/custom-renderer/map-pin.md
             - name: Настройка ListView
               href: app-fundamentals/custom-renderer/listview.md
             - name: Настройка ViewCell
@@ -358,6 +355,8 @@
       items:
         - name: Обзор
           href: user-interface/index.yml
+        - name: 'Разметка C#'
+          href: user-interface/csharp-markup.md
         - name: Справочник по элементам управления
           items:
             - name: Обзор
@@ -378,6 +377,8 @@
           items:
             - name: BoxView
               href: user-interface/boxview.md
+            - name: Expander
+              href: user-interface/expander.md
             - name: Изображение
               href: user-interface/images.md
             - name: Метка
@@ -394,7 +395,7 @@
                   href: user-interface/map/position-distance.md
                 - name: Маркеры
                   href: user-interface/map/pins.md
-                - name: Многоугольники и ломаные линии
+                - name: 'Многоугольники, ломаные линии и круги'
                   href: user-interface/map/polygons.md
                 - name: Геокодирование
                   href: user-interface/map/geocoder.md
@@ -410,6 +411,8 @@
               href: user-interface/button.md
             - name: ImageButton
               href: user-interface/imagebutton.md
+            - name: RadioButton
+              href: user-interface/radiobutton.md
             - name: RefreshView
               href: user-interface/refreshview.md
             - name: Панель поиска
@@ -563,8 +566,8 @@
               items:
                 - name: Создание темы для приложения
                   href: user-interface/theming/theming.md
-                - name: Обнаружение темного режима
-                  href: user-interface/theming/dark-mode.md
+                - name: Реагирование на изменения темы системы
+                  href: user-interface/theming/system-theme-changes.md
             - name: Визуальный элемент
               href: user-interface/visual/index.md
               items:
@@ -591,7 +594,7 @@
                 - name: RelativeLayout
                   href: user-interface/layouts/relative-layout.md
                 - name: StackLayout
-                  href: user-interface/layouts/stack-layout.md
+                  href: user-interface/layouts/stacklayout.md
             - name: Дополнительные макеты
               items:
                 - name: ContentView
@@ -688,6 +691,8 @@
               href: platform/ios/listview-separator-style.md
             - name: Обновления элементов управления основного потока
               href: platform/ios/main-thread-updates-ui.md
+            - name: Тень MasterDetailPage
+              href: platform/ios/masterdetailpage-shadow.md
             - name: Разделитель панели NavigationPage
               href: platform/ios/navigation-bar-separator.md
             - name: Цветовой режим текста панели NavigationPage
@@ -704,6 +709,8 @@
               href: platform/ios/page-safe-area-layout.md
             - name: Касания содержимого ScrollView
               href: platform/ios/scrollview-content-touches.md
+            - name: Стиль панели поиска
+              href: platform/ios/searchbar-style.md
             - name: Распознавание одновременных жестов сдвига
               href: platform/ios/application-pan-gesture.md
             - name: Касание ползунка
