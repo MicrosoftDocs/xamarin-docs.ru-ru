@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d6dbc82e56959399c2befb6a12f0a2cf3793ee5b
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 97e52d593e2b59d127da324d8ad74ad7b2096cdd
+ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "67560020"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83343423"
 ---
 Размер и положение дочерних представлений в [`StackLayout`](xref:Xamarin.Forms.StackLayout) зависят от значений свойств [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) и [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) дочерних представлений и значений свойств [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) и [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions).
 
@@ -55,7 +55,7 @@ ms.locfileid: "67560020"
 
     [![Снимок экрана: дочерние представления в StackLayout с заданными параметрами выравнивания и расширения в iOS и Android](../images/alignment-expansion.png "StackLayout, содержащий экземпляры меток, с заданным выравниванием и расширением")](../images/alignment-expansion-large.png#lightbox "StackLayout, содержащий экземпляры меток, с заданным выравниванием и расширением")
 
-    [`StackLayout`](xref:Xamarin.Forms.StackLayout) учитывает только параметры выравнивания дочерних представлениях, которые находятся в направлении, противоположном ориентации `StackLayout`. Поэтому дочерние представления [`Label`](xref:Xamarin.Forms.Label) с `StackLayout` в вертикальной ориентации задают свои свойства [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) одному из полей выравнивания:
+    [`StackLayout`](xref:Xamarin.Forms.StackLayout) учитывает только параметры выравнивания в дочерних представлениях, которые имеют направление, противоположное ориентации `StackLayout`. Поэтому дочерние представления [`Label`](xref:Xamarin.Forms.Label) в `StackLayout` с вертикальной ориентацией получают свойства [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) в соответствии с одним из следующих полей выравнивания:
 
     - [`Start`](xref:Xamarin.Forms.LayoutOptions.Start) — располагает [`Label`](xref:Xamarin.Forms.Label) в левой части [`StackLayout`](xref:Xamarin.Forms.StackLayout).
     - [`Center`](xref:Xamarin.Forms.LayoutOptions.Center) — располагает [`Label`](xref:Xamarin.Forms.Label) в центре [`StackLayout`](xref:Xamarin.Forms.StackLayout).
@@ -111,7 +111,7 @@ ms.locfileid: "67560020"
 
     [![Снимок экрана: дочерние представления в StackLayout с заданными параметрами выравнивания и расширения в iOS и Android](../images/alignment-expansion.png "StackLayout, содержащий экземпляры меток, с заданным выравниванием и расширением")](../images/alignment-expansion-large.png#lightbox "StackLayout, содержащий экземпляры меток, с заданным выравниванием и расширением")
 
-    [`StackLayout`](xref:Xamarin.Forms.StackLayout) учитывает только параметры выравнивания дочерних представлениях, которые находятся в направлении, противоположном ориентации `StackLayout`. Поэтому дочерние представления [`Label`](xref:Xamarin.Forms.Label) с `StackLayout` в вертикальной ориентации задают свои свойства [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) одному из полей выравнивания:
+    [`StackLayout`](xref:Xamarin.Forms.StackLayout) учитывает только параметры выравнивания дочерних представлениях, которые находятся в направлении, противоположном ориентации `StackLayout`. Поэтому дочерние представления [`Label`](xref:Xamarin.Forms.Label) в `StackLayout` с вертикальной ориентацией получают свойства [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) в соответствии с одним из следующих полей выравнивания:
 
     - [`Start`](xref:Xamarin.Forms.LayoutOptions.Start) — располагает [`Label`](xref:Xamarin.Forms.Label) в левой части [`StackLayout`](xref:Xamarin.Forms.StackLayout).
     - [`Center`](xref:Xamarin.Forms.LayoutOptions.Center) — располагает [`Label`](xref:Xamarin.Forms.Label) в центре [`StackLayout`](xref:Xamarin.Forms.StackLayout).
