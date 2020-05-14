@@ -3,14 +3,15 @@ title: 'Xamarin.Essentials: Тема приложения'
 description: В этой статье описывается API запрошенной темы приложения в Xamarin.Essentials, где предоставляются сведения о том, какой стиль темы запрашивается для работающего приложения.
 ms.assetid: F6F6D496-A8A9-4B9A-AF1A-370D937E5073
 author: jamesmontemagno
+ms.custom: video
 ms.author: jamont
 ms.date: 01/06/2020
-ms.openlocfilehash: e27f43ae17fcdaf7bb40b75907a7595c5c20988b
-ms.sourcegitcommit: 9c517f2c5af21aab0775f91286f42e919ff52292
+ms.openlocfilehash: 84c246eb60f4ee561bbf2bcfee6eb587ce601a4a
+ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82619864"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83150152"
 ---
 # <a name="xamarinessentials-app-theme"></a>Xamarin.Essentials: Тема приложения
 
@@ -74,3 +75,9 @@ AppTheme appTheme = AppInfo.RequestedTheme;
 
 - [Исходный код AppInfo](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/AppInfo)
 - [Документация по API AppInfo](xref:Xamarin.Essentials.AppInfo)
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Theme-Detection-XamarinEssentials-API-of-the-Week/player]
+
+[!include[](~/essentials/includes/xamarin-show-essentials.md)]

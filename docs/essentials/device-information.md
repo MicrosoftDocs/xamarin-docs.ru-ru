@@ -3,14 +3,15 @@ title: 'Xamarin.Essentials: Сведения об устройстве'
 description: В этом документе описывается класс DeviceInfo в Xamarin.Essentials, с помощью которого можно получить сведения об устройстве, в котором выполняется приложение.
 ms.assetid: A1AC5373-926A-4FB6-8D7D-4B87EB8EB522
 author: jamesmontemagno
+ms.custom: video
 ms.author: jamont
 ms.date: 11/04/2018
-ms.openlocfilehash: 1cab4ea8ea3f98def4830e101783db1554efa69c
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 1790e950dfccddcca84adf97bcff64f905ee59f6
+ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "78295421"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83150092"
 ---
 # <a name="xamarinessentials-device-information"></a>Xamarin.Essentials: Сведения об устройстве
 
@@ -89,3 +90,9 @@ iOS не предоставляет API, позволяющий разработ
 
 - [Исходный код DeviceInfo](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/DeviceInfo)
 - [Документация по API DeviceInfo](xref:Xamarin.Essentials.DeviceInfo).
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Device-Information-XamarinEssentials-API-of-the-Week/player]
+
+[!include[](~/essentials/includes/xamarin-show-essentials.md)]
