@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d87289e481b69592b68627d053e937856d3d6067
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: e1705e9311d4875a5b866ac5acb7d20aa107a2bb
+ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "61376014"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83435417"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -42,7 +42,7 @@ ms.locfileid: "61376014"
     Положение каждого [`Label`](xref:Xamarin.Forms.Label) в [`Grid`](xref:Xamarin.Forms.Grid) указывается с помощью вложенных свойств [`Grid.Column`](xref:Xamarin.Forms.Grid.ColumnProperty) и [`Grid.Row`](xref:Xamarin.Forms.Grid.RowProperty), которые используют отсчитываемый от нуля индекс. Таким образом, первый столбец имеет номер 0, и первая строка имеет номер 0. У первого `Label` эти вложенные свойства отсутствуют, так как дочерние представления, не задающие их, автоматически будут отображаться в столбце 0 и строке 0.
 
     > [!NOTE]
-    > Расстояние между столбцами и строками в [`Grid`](xref:Xamarin.Forms.Grid) можно задать с помощью свойств [`ColumnSpacing`](xref:Xamarin.Forms.Grid.ColumnSpacing) и [`RowSpacing`](xref:Xamarin.Forms.Grid.RowSpacing). Дополнительные сведения см. в разделе [Интервалы](~/xamarin-forms/user-interface/layouts/grid.md#spacing) руководства [Сетка Xamarin.Forms](~/xamarin-forms/user-interface/layouts/grid.md).
+    > Расстояние между столбцами и строками в [`Grid`](xref:Xamarin.Forms.Grid) можно задать с помощью свойств [`ColumnSpacing`](xref:Xamarin.Forms.Grid.ColumnSpacing) и [`RowSpacing`](xref:Xamarin.Forms.Grid.RowSpacing). Дополнительные сведения см. в разделе [Интервалы](~/xamarin-forms/user-interface/layouts/grid.md#space-between-rows-and-columns) руководства [Сетка Xamarin.Forms](~/xamarin-forms/user-interface/layouts/grid.md).
 
 1. На панели инструментов Visual Studio нажмите кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS удаленной работы или эмуляторе Android:
 
@@ -84,7 +84,7 @@ ms.locfileid: "61376014"
     Положение каждого [`Label`](xref:Xamarin.Forms.Label) в [`Grid`](xref:Xamarin.Forms.Grid) указывается с помощью вложенных свойств [`Grid.Column`](xref:Xamarin.Forms.Grid.ColumnProperty) и [`Grid.Row`](xref:Xamarin.Forms.Grid.RowProperty), которые используют отсчитываемый от нуля индекс. Таким образом, первый столбец имеет номер 0, и первая строка имеет номер 0. У первого `Label` эти вложенные свойства отсутствуют, так как дочерние представления, не задающие их, автоматически будут отображаться в столбце 0 и строке 0.
 
     > [!NOTE]
-    > Расстояние между столбцами и строками в [`Grid`](xref:Xamarin.Forms.Grid) можно задать с помощью свойств [`ColumnSpacing`](xref:Xamarin.Forms.Grid.ColumnSpacing) и [`RowSpacing`](xref:Xamarin.Forms.Grid.RowSpacing). Дополнительные сведения см. в разделе [Интервалы](~/xamarin-forms/user-interface/layouts/grid.md#spacing) руководства [Сетка Xamarin.Forms](~/xamarin-forms/user-interface/layouts/grid.md).
+    > Расстояние между столбцами и строками в [`Grid`](xref:Xamarin.Forms.Grid) можно задать с помощью свойств [`ColumnSpacing`](xref:Xamarin.Forms.Grid.ColumnSpacing) и [`RowSpacing`](xref:Xamarin.Forms.Grid.RowSpacing). Дополнительные сведения см. в разделе [Интервалы](~/xamarin-forms/user-interface/layouts/grid.md#space-between-rows-and-columns) руководства [Сетка Xamarin.Forms](~/xamarin-forms/user-interface/layouts/grid.md).
 
 1. На панели инструментов Visual Studio для Mac нажмите кнопку **Пуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android.
 
