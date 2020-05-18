@@ -3,14 +3,15 @@ title: 'Xamarin.Essentials: Компас'
 description: В этом документе описывается класс Compass в Xamarin.Essentials, который позволяет отслеживать направление устройства на северный магнитный полюс.
 ms.assetid: BF85B0C3-C686-43D9-811A-07DCAF8CDD86
 author: jamesmontemagno
+ms.custom: video
 ms.author: jamont
 ms.date: 11/04/2018
-ms.openlocfilehash: 55dd10bff21b7d082b225277d0100232d5efd4f3
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 54ce725a319e0222179945ece558338c8a152653
+ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "61356881"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83150128"
 ---
 # <a name="xamarinessentials-compass"></a>Xamarin.Essentials: Компас
 
@@ -76,15 +77,15 @@ public class CompassTest
 
 # <a name="android"></a>[Android](#tab/android)
 
-Android не предоставляет API для извлечения данных о направлении компаса. Для вычисления направления на северный магнитный полюс используются акселерометр и магнитометр. Именно такой поход рекомендует Google.
+Android не предоставляет API для получения данных о направлении компаса. Для вычисления направления на северный магнитный полюс используются акселерометр и магнитометр. Именно такой поход рекомендует Google.
 
 В редких случаях вы можете увидеть непоследовательные результаты, так как датчики нужно калибровать, что предполагает перемещение устройства "по восьмерке". Лучше всего открыть Карты Google, коснуться точки своего расположения и выбрать **калибровку компаса**.
 
-Помните, что благодаря одновременному запуску нескольких датчиков из приложения можно регулировать скорость датчика.
+При запуске из приложения одновременно множества датчиков возможно изменение их скорости.
 
 ## <a name="low-pass-filter"></a>Фильтр нижних частот
 
-Из-за способа обновления и вычисления значений компаса Android может потребоваться сглаживание значений. Вы можете применить _низкочастотный фильтр_, который усредняет значения синуса и косинуса углов и который можно включить с помощью перегрузки метода `Start`, принимающего параметр `bool applyLowPassFilter`:
+Из-за способа обновления и вычисления значений компаса Android может потребоваться сглаживание значений. Вы можете применить _низкочастотный фильтр_, который усредняет значения синуса и косинуса углов и может быть включен с помощью перегрузки метода `Start`, принимающего параметр `bool applyLowPassFilter`:
 
 ```csharp
 Compass.Start(SensorSpeed.UI, applyLowPassFilter: true);
@@ -98,3 +99,9 @@ Compass.Start(SensorSpeed.UI, applyLowPassFilter: true);
 
 - [Исходный код Compass](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Compass)
 - [Документация по API Compass](xref:Xamarin.Essentials.Compass)
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Compass-XamarinEssentials-API-of-the-Week/player]
+
+[!include[](~/essentials/includes/xamarin-show-essentials.md)]

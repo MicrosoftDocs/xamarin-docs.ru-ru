@@ -4,13 +4,14 @@ description: В этом документе описывается класс р
 ms.assetid: 34062D84-3E55-4AF7-A688-8551068B1E57
 author: jamesmontemagno
 ms.author: jamont
+ms.custom: video
 ms.date: 01/06/2020
-ms.openlocfilehash: 3d61267ae78a4b84907a2bcf6e944eb286b113dd
-ms.sourcegitcommit: 8b94b2af2ac69e4a60e210ddc764f4d276c8d88d
+ms.openlocfilehash: fbce02300363c3ec68c35c11afb25342f06f4be1
+ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "82605450"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83150071"
 ---
 # <a name="xamarinessentials-permissions"></a>Xamarin.Essentials: Разрешения
 
@@ -19,6 +20,8 @@ ms.locfileid: "82605450"
 ## <a name="get-started"></a>Начало работы
 
 [!include[](~/essentials/includes/get-started.md)]
+
+[!include[](~/essentials/includes/android-permissions.md)]
 
 ## <a name="using-permissions"></a>Использование разрешений
 
@@ -42,19 +45,19 @@ var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>()
 
 ## <a name="requesting-permissions"></a>Запрос прав доступа
 
-Чтобы запросить разрешение у пользователей, используйте метод `RequestAsync` вместе с конкретным разрешением для запроса. Если пользователь ранее предоставил разрешение и не отменил его, этот метод сразу возвратит `Granted` без отображения диалогового окна. 
+Чтобы запросить разрешение у пользователей, используйте метод `RequestAsync` вместе с конкретным разрешением для запроса. Если пользователь ранее предоставил разрешение и не отменил его, этот метод возвратит `Granted` сразу же, не отображая диалоговое окно.
 
 ```csharp
 var status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
 ```
 
-Если требуемое разрешение не объявлено, происходит исключение `PermissionException`. 
+Если требуемое разрешение не объявлено, происходит исключение `PermissionException`.
 
-Обратите внимание, что на некоторых платформах запрос разрешения может быть активирован только один раз. Разработчику следует выполнять дополнительные запросы, чтобы проверить, пребывают ли разрешения в состоянии `Denied`, и попросить пользователя вручную включить его.
+Обратите внимание, что на некоторых платформах запрос разрешения может быть активирован только один раз. Для последующих запросов разработчику необходимо проверять, находится ли разрешение в состоянии `Denied`, и просить пользователя активировать его вручную.
 
 ## <a name="permission-status"></a>Состояние разрешения
 
-При использовании `CheckStatusAsync` или `RequestAsync` будет возвращен объект `PermissionStatus`, который будет использоваться для определения следующих шагов.
+При использовании `CheckStatusAsync` или `RequestAsync` будет возвращен объект `PermissionStatus`, который можно использовать для определения следующих шагов:
 
 * Unknown — состояние разрешения неизвестно.
 * Denied — пользователь отклонил запрос на разрешение.
@@ -64,7 +67,7 @@ var status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
 
 ## <a name="available-permissions"></a>Доступные разрешения
 
-Xamarin.Essentials пытается выполнять аннотацию для как можно большего количества разрешений, но наборы разрешений среды выполнения в разных операционных системах отличаются. Кроме того, есть различия в отношении возможности предоставить один API для некоторых разрешений. Ниже приведено руководство по доступным сейчас разрешениям:
+Xamarin.Essentials пытается абстрагировать максимально возможное число разрешений. Однако каждая операционная система имеет свой набор разрешений среды выполнения. Кроме того, есть различия при использовании одного API для некоторых разрешений. Ниже приведено руководство по доступным сейчас разрешениям:
 
 Условные обозначения:
 
@@ -72,7 +75,7 @@ Xamarin.Essentials пытается выполнять аннотацию для
 * ![Не поддерживается](~/media/shared/no.png "Не поддерживается или не требуется") — не поддерживается или не требуется.
 
 | Разрешение | Android | iOS | UWP | watchOS | tvOS | Tizen |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: 
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---:
 | CalendarRead   | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Не поддерживается для UWP](~/media/shared/no.png "Не поддерживается для UWP") | ![Поддерживается для watchOS](~/media/shared/yes.png "Поддерживается для watchOS") | ![Не поддерживается для tvOS](~/media/shared/no.png "Не поддерживается для tvOS") | ![Не поддерживается для Tizen](~/media/shared/no.png "Не поддерживается для Tizen") |
 | CalendarWrite | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Не поддерживается для UWP](~/media/shared/no.png "Не поддерживается для UWP") | ![Поддерживается для watchOS](~/media/shared/yes.png "Поддерживается для watchOS") | ![Не поддерживается для tvOS](~/media/shared/no.png "Не поддерживается для tvOS") | ![Не поддерживается для Tizen](~/media/shared/no.png "Не поддерживается для Tizen") |
 | Камера | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Не поддерживается для UWP](~/media/shared/no.png "Не поддерживается для UWP") | ![Не поддерживается для watchOS](~/media/shared/no.png "Не поддерживается для watchOS") | ![Не поддерживается для tvOS](~/media/shared/no.png "Не поддерживается для tvOS") | ![Поддерживается для Tizen](~/media/shared/yes.png "Поддерживается для Tizen") |
@@ -142,7 +145,7 @@ public async Task<PermissionStatus> CheckAndRequestPermissionAsync<T>(T permissi
 
 ## <a name="extending-permissions"></a>Расширение разрешений
 
-API разрешений обеспечивает гибкость и расширяемость для приложений, требующих дополнительной проверки или разрешений, которые не предусмотрены в Xamarin.Essentials. Создайте класс, наследуемый от `BasePermission`, и реализуйте необходимые абстрактные методы. Следующее действие 
+API разрешений обеспечивает гибкость и расширяемость для приложений, требующих дополнительной проверки или разрешений, которые не предусмотрены в Xamarin.Essentials. Создайте класс, наследуемый от `BasePermission`, и реализуйте необходимые абстрактные методы. Следующее действие
 
 ```csharp
 public class MyPermission : BasePermission
@@ -167,7 +170,35 @@ public class MyPermission : BasePermission
 }
 ```
 
-При реализации разрешения на определенной платформе класс `BasePlatformPermission` может быть унаследован. Это обеспечивает для приложений платформы дополнительные вспомогательные методы для автоматической проверки объявлений.
+При реализации разрешения на определенной платформе возможно наследование от класса `BasePlatformPermission`. Это позволяет получить дополнительные вспомогательные методы платформы для автоматической проверки объявлений и может помочь при создании настраиваемых разрешений для группирования. Например, вы можете запросить доступ для чтения и записи к хранилищу на Android, используя следующее настраиваемое разрешение.
+
+Создайте новое разрешение в проекте, из которого вы вызываете разрешения.
+
+```csharp
+public partial class ReadWriteStoragePermission  : Xamarin.Essentials.Permissions.BasePlatformPermission
+{
+
+}
+```
+
+В своем проекте Android дополните это разрешение теми разрешениями, которые вам нужно запросить.
+
+```csharp
+public partial class ReadWriteStoragePermission : Xamarin.Essentials.Permissions.BasePlatformPermission
+{
+    public override (string androidPermission, bool isRuntime)[] RequiredPermissions => new List<(string androidPermission, bool isRuntime)>
+    {
+        (Android.Manifest.Permission.ReadExternalStorage, true),
+        (Android.Manifest.Permission.WriteExternalStorage, true)
+    }.ToArray();
+}
+```
+
+После этого вы сможете вызвать новое разрешение из общей логики.
+
+```csharp
+await Permissions.RequestAsync<ReadWriteStoragePermission>();
+```
 
 ## <a name="platform-implementation-specifics"></a>Особенности реализации для платформ
 
@@ -179,7 +210,7 @@ public class MyPermission : BasePermission
 
 # <a name="ios"></a>[iOS](#tab/ios)
 
-У разрешений должна быть совпадающая строка в файле `Info.plist`. После запроса на разрешение и его отклонения всплывающее окно больше не будет отображаться, если запросить разрешение второй раз. Вы должны запрашивать у пользователя вручную настроить параметры на экране параметров приложений в iOS.
+У разрешений должна быть совпадающая строка в файле `Info.plist`. После того, как разрешение будет запрошено и отклонено, при повторном запросе этого разрешения всплывающее окно отображаться не будет. Вы должны запрашивать у пользователя вручную настроить параметры на экране параметров приложений в iOS.
 
 Дополнительные сведения о компонентах обеспечения безопасности и конфиденциальности в iOS см. [здесь](https://docs.microsoft.com/xamarin/ios/app-fundamentals/security-privacy).
 
@@ -196,3 +227,9 @@ public class MyPermission : BasePermission
 - [Исходный код разрешений](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Permissions)
 - [Документация по API разрешений](xref:Xamarin.Essentials.Permissions)
 
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Permissions-XamarinEssentials-API-of-the-Week/player]
+
+[!include[](~/essentials/includes/xamarin-show-essentials.md)]

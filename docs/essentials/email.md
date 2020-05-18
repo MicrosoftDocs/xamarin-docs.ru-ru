@@ -3,14 +3,15 @@ title: 'Xamarin.Essentials: Адрес эл. почты'
 description: Класс Email в Xamarin.Essentials позволяет приложению открывать приложение электронной почты по умолчанию с указанной информацией, включая тему, текст и получателей (TO, CC, BCC).
 ms.assetid: 5FBB6FF0-0E7B-4C29-8F06-91642AF12629
 author: jamesmontemagno
+ms.custom: video
 ms.author: jamont
 ms.date: 08/20/2019
-ms.openlocfilehash: cccbe5f539e2807e749433623e938438e67965e8
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 77fcadf3ec58a38acac5eca14b43d937414a4a60
+ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70060096"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83150098"
 ---
 # <a name="xamarinessentials-email"></a>Xamarin.Essentials: Адрес эл. почты
 
@@ -64,7 +65,7 @@ public class EmailTest
 
 ## <a name="file-attachments"></a>Вложения файлов
 
-Эта функция позволяет приложению вкладывать файлы в сообщения электронной почты из почтовых клиентов на устройстве. Xamarin.Essentials автоматически обнаруживает тип файла (MIME) и запрашивает его добавление в качестве вложения. Все почтовые клиенты отличаются в том, что поддерживают только определенные расширения файлов или не поддерживают их вообще.
+Эта функция позволяет приложению отправлять файлы по электронной почте в почтовых клиентах на устройстве. Xamarin.Essentials автоматически обнаруживает тип файла (MIME) и запрашивает его добавление в качестве вложения. Почтовые клиенты отличаются друг от друга. Какие-то из них могут поддерживать только файлы с определенными расширениями или не поддерживать файлы вообще.
 
 Ниже приведен пример записи текста на диск и добавления его в качестве вложения электронной почты.
 
@@ -106,3 +107,9 @@ await Email.ComposeAsync(message);
 
 - [Исходный код Email](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Email)
 - [Документация по API Email](xref:Xamarin.Essentials.Email)
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Email-XamarinEssentials-API-of-the-Week/player]
+
+[!include[](~/essentials/includes/xamarin-show-essentials.md)]
