@@ -346,7 +346,11 @@
         - name: EventKit
           href: platform/eventkit.md
         - name: Расширения iOS
-          href: platform/extensions.md
+          items:
+            - name: Расширения iOS в Xamarin.iOS
+              href: platform/extensions.md
+            - name: Xamarin.Forms в расширениях iOS
+              href: platform/extensions-with-xamarinforms.md
         - name: Внедренные платформы
           href: platform/embedded-frameworks.md
         - name: Сжатие файлов
