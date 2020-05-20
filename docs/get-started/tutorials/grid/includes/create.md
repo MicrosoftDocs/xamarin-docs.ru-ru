@@ -33,7 +33,7 @@ ms.locfileid: "72678735"
     Этот код декларативно определяет пользовательский интерфейс для страницы, который состоит из [`Label`](xref:Xamarin.Forms.Label) в [`Grid`](xref:Xamarin.Forms.Grid). По умолчанию `Grid` помещает свои дочерние представления в одном месте. Таким образом, `Grid`, который содержит несколько дочерних элементов, должен указывать столбцы и строки, которые будут рассматриваться в следующем упражнении. Кроме того, свойство [`Margin`](xref:Xamarin.Forms.View.Margin) указывает позицию отрисовки `Grid` в [`ContentPage`](xref:Xamarin.Forms.ContentPage).
 
     > [!NOTE]
-    > В дополнение к свойству [`Margin`](xref:Xamarin.Forms.View.Margin), у [`Padding`](xref:Xamarin.Forms.Layout.Padding) также можно установить свойство [`Grid`](xref:Xamarin.Forms.Grid). Значение свойства [`Padding`](xref:Xamarin.Forms.Layout.Padding) указывает расстояние между границами `Grid` и его дочерних элементов. Дополнительные сведения см. в статье [Поля и заполнение](~/xamarin-forms/user-interface/layouts/margin-and-padding.md).
+    > В дополнение к свойству [`Margin`](xref:Xamarin.Forms.View.Margin), у [`Grid`](xref:Xamarin.Forms.Grid) также можно установить свойство [`Padding`](xref:Xamarin.Forms.Layout.Padding). Значение свойства [`Padding`](xref:Xamarin.Forms.Layout.Padding) указывает расстояние между границами `Grid` и его дочерних элементов. Дополнительные сведения см. в статье [Поля и заполнение](~/xamarin-forms/user-interface/layouts/margin-and-padding.md).
 
 1. На панели инструментов Visual Studio нажмите клавишу **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном удаленном симуляторе iOS или эмуляторе Android.
 
@@ -68,7 +68,7 @@ ms.locfileid: "72678735"
     Этот код декларативно определяет пользовательский интерфейс для страницы, который состоит из [`Label`](xref:Xamarin.Forms.Label) в [`Grid`](xref:Xamarin.Forms.Grid). По умолчанию `Grid` помещает свои дочерние представления в одном месте. Таким образом, `Grid`, который содержит несколько дочерних элементов, должен указывать столбцы и строки, которые будут рассматриваться в следующем упражнении. Кроме того, свойство [`Margin`](xref:Xamarin.Forms.View.Margin) указывает позицию отрисовки `Grid` в [`ContentPage`](xref:Xamarin.Forms.ContentPage).
 
     > [!NOTE]
-    > В дополнение к свойству [`Margin`](xref:Xamarin.Forms.View.Margin), у [`Padding`](xref:Xamarin.Forms.Layout.Padding) также можно установить свойство [`Grid`](xref:Xamarin.Forms.Grid). Значение свойства [`Padding`](xref:Xamarin.Forms.Layout.Padding) задает расстояние между представлениями в `Grid`. Дополнительные сведения см. в статье [Поля и заполнение](~/xamarin-forms/user-interface/layouts/margin-and-padding.md).
+    > В дополнение к свойству [`Margin`](xref:Xamarin.Forms.View.Margin), у [`Grid`](xref:Xamarin.Forms.Grid) также можно установить свойство [`Padding`](xref:Xamarin.Forms.Layout.Padding). Значение свойства [`Padding`](xref:Xamarin.Forms.Layout.Padding) задает расстояние между представлениями в `Grid`. Дополнительные сведения см. в статье [Поля и заполнение](~/xamarin-forms/user-interface/layouts/margin-and-padding.md).
 
 1. На панели инструментов Visual Studio для Mac нажмите кнопку **Пуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android.
 
