@@ -7,45 +7,45 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/10/2020
-ms.openlocfilehash: e1edbc4d7376023c9d3051b0518c8dc7368e63a7
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+ms.openlocfilehash: 3a7c31f7d9c30e812e955a164404c357fe9aa340
+ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82517342"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83425828"
 ---
 # <a name="xamarinforms-map-polygons-and-polylines"></a>Геомногоугольники и ломаные линии на карте Xamarin. Forms
 
-[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
-`Polygon`элементы `Polyline`, и `Circle` позволяют выделять определенные области на карте. Объект `Polygon` является полностью замкнутой фигурой, которая может иметь цвет обводки и заливки. А `Polyline` — это строка, которая не полностью охватывает область. A `Circle` выделяет круглую область на карте:
+`Polygon``Polyline`элементы, и `Circle` позволяют выделять определенные области на карте. Объект `Polygon` является полностью замкнутой фигурой, которая может иметь цвет обводки и заливки. А `Polyline` — это строка, которая не полностью охватывает область. A `Circle` выделяет круглую область на карте:
 
-[![Снимок экрана многоугольника и ломаной линии в iOS и Android "](polygons-images/polygon-polyline.png "Многоугольник и ломаная линия на карте")](polygons-images/polygon-polyline-large.png#lightbox "Многоугольник и ломаная линия на карте")
-[![" на снимке экрана окружности на iOS и Android "](polygons-images/circle.png "Окружность на карте")](polygons-images/circle-large.png#lightbox "Окружность на карте")
+[![Снимок экрана многоугольника и ломаной линии на iOS и Android](polygons-images/polygon-polyline.png "Многоугольник и ломаная линия на карте")](polygons-images/polygon-polyline-large.png#lightbox "Многоугольник и ломаная линия на карте") 
+ [ ![Снимок экрана с кругом карт на iOS и Android](polygons-images/circle.png "Окружность на карте")](polygons-images/circle-large.png#lightbox "Окружность на карте")
 
-Классы `Polygon`, `Polyline`и `Circle` являются производными от `MapElement` класса, который предоставляет следующие связываемые свойства:
+`Polygon`Классы, `Polyline` и `Circle` являются производными от `MapElement` класса, который предоставляет следующие связываемые свойства:
 
-- `StrokeColor``Color` объект, определяющий цвет линии.
-- `StrokeWidth``float` объект, определяющий толщину линии.
+- `StrokeColor``Color`объект, определяющий цвет линии.
+- `StrokeWidth``float`объект, определяющий толщину линии.
 
-`Polygon` Класс определяет дополнительное свойство BIND:
+`Polygon`Класс определяет дополнительное свойство BIND:
 
-- `FillColor``Color` объект, определяющий цвет фона многоугольника.
+- `FillColor``Color`объект, определяющий цвет фона многоугольника.
 
-Кроме того `Polygon` , классы и `Polyline` определяют `GeoPath` свойство, которое представляет собой список [`Position`](xref:Xamarin.Forms.Maps.Position) объектов, указывающих точки фигуры.
+Кроме того, `Polygon` классы и `Polyline` определяют `GeoPath` свойство, которое представляет собой список [`Position`](xref:Xamarin.Forms.Maps.Position) объектов, указывающих точки фигуры.
 
-`Circle` Класс определяет следующие привязываемые свойства:
+`Circle`Класс определяет следующие привязываемые свойства:
 
-- `Center`[`Position`](xref:Xamarin.Forms.Maps.Position) объект, определяющий центр окружности в широте и долготе.
-- `Radius`[`Distance`](xref:Xamarin.Forms.Maps.Distance) объект, определяющий радиус круга в метрах, километрах или милях.
-- `FillColor``Color` свойство, определяющее цвет в периметре круга.
+- `Center`[`Position`](xref:Xamarin.Forms.Maps.Position)объект, определяющий центр окружности в широте и долготе.
+- `Radius`[`Distance`](xref:Xamarin.Forms.Maps.Distance)объект, определяющий радиус круга в метрах, километрах или милях.
+- `FillColor``Color`свойство, определяющее цвет в периметре круга.
 
 > [!NOTE]
 > Если `StrokeColor` свойство не задано, штрих будет по умолчанию черным. Если `FillColor` свойство не задано, заливка по умолчанию будет прозрачной. Таким образом, если ни одно из свойств не указано, фигура будет иметь черный контур без заливки.
 
 ## <a name="create-a-polygon"></a>Создание многоугольника
 
-`Polygon` Объект можно добавить в карту, создав его экземпляр и добавив его в `MapElements` коллекцию Map. Это можно сделать в XAML следующим образом:
+`Polygon`Объект можно добавить в карту, создав его экземпляр и добавив его в `MapElements` коллекцию Map. Это можно сделать в XAML следующим образом:
 
 ```xaml
 <ContentPage ...
@@ -104,14 +104,14 @@ Polygon polygon = new Polygon
 map.MapElements.Add(polygon);
 ```
 
-Свойства `StrokeColor` и `StrokeWidth` задаются для настройки контура многоугольника. Значение `FillColor` свойства соответствует значению `StrokeColor` свойства, но имеет заданное альфа-значение, которое делает его прозрачным, позволяя отображать базовую карту через фигуру. `GeoPath` Свойство содержит список `Position` объектов, определяющих географические координаты точек многоугольника. `Polygon` Объект отображается на карте после добавления в `MapElements` коллекцию `Map`.
+`StrokeColor`Свойства и `StrokeWidth` задаются для настройки контура многоугольника. `FillColor`Значение свойства соответствует `StrokeColor` значению свойства, но имеет заданное альфа-значение, которое делает его прозрачным, позволяя отображать базовую карту через фигуру. `GeoPath`Свойство содержит список `Position` объектов, определяющих географические координаты точек многоугольника. `Polygon`Объект отображается на карте после добавления в `MapElements` коллекцию `Map` .
 
 > [!NOTE]
 > Объект `Polygon` является полностью замкнутой фигурой. Первая и последняя точки будут автоматически подключены, если они не совпадают.
 
 ## <a name="create-a-polyline"></a>Создание ломаной линии
 
-`Polyline` Объект можно добавить в карту, создав его экземпляр и добавив его в `MapElements` коллекцию Map. Это можно сделать в XAML следующим образом:
+`Polyline`Объект можно добавить в карту, создав его экземпляр и добавив его в `MapElements` коллекцию Map. Это можно сделать в XAML следующим образом:
 
 ```xaml
 <ContentPage ...
@@ -166,11 +166,11 @@ Polyline polyline = new Polyline
 map.MapElements.Add(polyline);
 ```
 
-Свойства `StrokeColor` и `StrokeWidth` задаются для настройки линии. `GeoPath` Свойство содержит список `Position` объектов, определяющих географические координаты точек ломаной линии. `Polyline` Объект отображается на карте после добавления в `MapElements` коллекцию `Map`.
+`StrokeColor`Свойства и `StrokeWidth` задаются для настройки линии. `GeoPath`Свойство содержит список `Position` объектов, определяющих географические координаты точек ломаной линии. `Polyline`Объект отображается на карте после добавления в `MapElements` коллекцию `Map` .
 
 ## <a name="create-a-circle"></a>Создание круга
 
-`Circle` Объект можно добавить в карту, создав его экземпляр и добавив его в `MapElements` коллекцию Map. Это можно сделать в XAML следующим образом:
+`Circle`Объект можно добавить в карту, создав его экземпляр и добавив его в `MapElements` коллекцию Map. Это можно сделать в XAML следующим образом:
 
 ```xaml
 <ContentPage ...
@@ -212,7 +212,7 @@ Map map = new Map();
 // Instantiate a Circle
 Circle circle = new Circle
 {
-    Center = new Position(37.79752, -122.40183);,
+    Center = new Position(37.79752, -122.40183),
     Radius = new Distance(250),
     StrokeColor = Color.FromHex("#88FF0000"),
     StrokeWidth = 8,
@@ -223,10 +223,10 @@ Circle circle = new Circle
 map.MapElements.Add(circle);
 ```
 
-Расположение объекта `Circle` на карте определяется значениями свойств `Center` и. `Radius` `Center` Свойство определяет центр окружности в широте и долготе, а `Radius` свойство определяет радиус круга в метрах. Свойства `StrokeColor` и `StrokeWidth` задаются для настройки контура круга. Значение `FillColor` свойства определяет цвет в пределах периметра круга. Оба значения цвета задают альфа-канал, позволяя отображать базовую карту через окружность. `Circle` Объект отображается на карте после добавления в `MapElements` коллекцию `Map`.
+Расположение объекта `Circle` на карте определяется значениями `Center` `Radius` свойств и. `Center`Свойство определяет центр окружности в широте и долготе, а `Radius` свойство определяет радиус круга в метрах. `StrokeColor`Свойства и `StrokeWidth` задаются для настройки контура круга. `FillColor`Значение свойства определяет цвет в пределах периметра круга. Оба значения цвета задают альфа-канал, позволяя отображать базовую карту через окружность. `Circle`Объект отображается на карте после добавления в `MapElements` коллекцию `Map` .
 
 > [!NOTE]
-> `GeographyUtils` Класс имеет метод `ToCircumferencePositions` расширения, который преобразует `Circle` объект (который определяет `Center` значения свойств и `Radius` ) в список `Position` объектов, составляющих координаты широты и долготы периметра окружности.
+> `GeographyUtils`Класс имеет `ToCircumferencePositions` метод расширения, который преобразует `Circle` объект (который определяет `Center` `Radius` значения свойств и) в список `Position` объектов, составляющих координаты широты и долготы периметра окружности.
 
 ## <a name="related-links"></a>Связанные ссылки
 

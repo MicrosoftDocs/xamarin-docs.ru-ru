@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/11/2020
-ms.openlocfilehash: 56da2b137475ef258d780fba0a7cdec3c91323b8
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+ms.openlocfilehash: 2535a92814181c5039256ea1e42b06419ed427aa
+ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83152333"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426034"
 ---
 # <a name="xamarinforms-stacklayout"></a>StackLayout Xamarin. Forms
 
@@ -210,7 +210,7 @@ public class StackLayoutSpacingPageCS : ContentPage
 > [!TIP]
 > Не устанавливайте [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) Свойства и для объекта [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) , [`StackLayout`](xref:Xamarin.Forms.StackLayout) если не требуется. Значения по умолчанию для свойств `LayoutOptions.Fill` и `LayoutOptions.FillAndExpand` обеспечивают наилучшую оптимизацию макета. Изменение этих свойств требует затрат и потребляет память даже при восстановлении значений по умолчанию.
 
-### <a name="alignment"></a>Соответствие
+### <a name="alignment"></a>Выравнивание
 
 В следующем примере XAML устанавливаются параметры выравнивания для каждого дочернего представления в [`StackLayout`](xref:Xamarin.Forms.StackLayout) :
 
@@ -240,12 +240,12 @@ public class StackLayoutSpacingPageCS : ContentPage
 
 [![Снимок экрана с набором параметров выравнивания StackLayout](stacklayout-images/alignment.png "StackLayout с параметрами выравнивания")](stacklayout-images/alignment-large.png#lightbox "StackLayout с параметрами выравнивания")
 
-[`StackLayout`](xref:Xamarin.Forms.StackLayout)Параметр учитывает только те параметры выравнивания дочерних представлений, которые находятся в противоположном направлении к `StackLayout` ориентации. Таким образом, [`Label`](xref:Xamarin.Forms.Label) дочерние представления в вертикальной ориентации `StackLayout` устанавливают их [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) свойства в одно из полей выравнивания:
+[`StackLayout`](xref:Xamarin.Forms.StackLayout) учитывает только параметры выравнивания дочерних представлениях, которые находятся в направлении, противоположном ориентации `StackLayout`. Поэтому дочерние представления [`Label`](xref:Xamarin.Forms.Label) в `StackLayout` с вертикальной ориентацией получают свойства [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) в соответствии с одним из следующих полей выравнивания:
 
 - [`Start`](xref:Xamarin.Forms.LayoutOptions.Start), который размещает элемент [`Label`](xref:Xamarin.Forms.Label) в левой части [`StackLayout`](xref:Xamarin.Forms.StackLayout) .
-- [`Center`](xref:Xamarin.Forms.LayoutOptions.Center), который выравнивает объект [`Label`](xref:Xamarin.Forms.Label) в [`StackLayout`](xref:Xamarin.Forms.StackLayout) .
+- [`Center`](xref:Xamarin.Forms.LayoutOptions.Center) — располагает [`Label`](xref:Xamarin.Forms.Label) в центре [`StackLayout`](xref:Xamarin.Forms.StackLayout).
 - [`End`](xref:Xamarin.Forms.LayoutOptions.End), который размещает элемент [`Label`](xref:Xamarin.Forms.Label) в правой части [`StackLayout`](xref:Xamarin.Forms.StackLayout) .
-- [`Fill`](xref:Xamarin.Forms.LayoutOptions.Fill), который обеспечивает [`Label`](xref:Xamarin.Forms.Label) Заполнение ширины объекта [`StackLayout`](xref:Xamarin.Forms.StackLayout) .
+- [`Fill`](xref:Xamarin.Forms.LayoutOptions.Fill) — гарантирует, что [`Label`](xref:Xamarin.Forms.Label) заполняет ширину [`StackLayout`](xref:Xamarin.Forms.StackLayout).
 
 Эквивалентный код на C# выглядит так:
 
@@ -310,7 +310,7 @@ public class AlignmentPageCS : ContentPage
 
 [![Снимок экрана с набором параметров расширения StackLayout](stacklayout-images/expansion.png "StackLayout с параметрами расширения")](stacklayout-images/expansion-large.png#lightbox "StackLayout с параметрами расширения")
 
-[`StackLayout`](xref:Xamarin.Forms.StackLayout)Может развертывать только дочерние представления в направлении его ориентации. Таким образом, вертикально `StackLayout` может расширять [`Label`](xref:Xamarin.Forms.Label) дочерние представления, устанавливающие их [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойства в одно из полей расширения. Это означает, что для вертикального выравнивания каждый `Label` занимает одинаковый объем пространства в `StackLayout`. Однако только окончательный, в результате `Label` чего [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойству присваивается [`FillAndExpand`](xref:Xamarin.Forms.LayoutOptions.FillAndExpand) другой размер.
+[`StackLayout`](xref:Xamarin.Forms.StackLayout) может развернуть дочерние представления только в направлении своей ориентации. Поэтому `StackLayout` в вертикальной ориентации может развернуть дочерние представления [`Label`](xref:Xamarin.Forms.Label), которые задают свои свойства [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) одному из полей выравнивания. Это означает, что для вертикального выравнивания каждый `Label` занимает одинаковый объем пространства в `StackLayout`. Но только последний `Label` со значением свойства [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions), равным [`FillAndExpand`](xref:Xamarin.Forms.LayoutOptions.FillAndExpand), имеет другой размер.
 
 > [!TIP]
 > При использовании метода [`StackLayout`](xref:Xamarin.Forms.StackLayout) Убедитесь, что только одно дочернее представление имеет значение [`LayoutOptions.Expands`](xref:Xamarin.Forms.LayoutOptions.Expands) . В этом случае указанный дочерний элемент будет занимать максимальное пространство, предоставляемое ему макетом `StackLayout`. Выполнять эти вычисления несколько раз слишком затратно.
@@ -341,7 +341,7 @@ public ExpansionPageCS()
 ```
 
 > [!IMPORTANT]
-> Когда используется все пространство в [`StackLayout`](xref:Xamarin.Forms.StackLayout) , настройки расширения не действуют.
+> Когда все пространство в [`StackLayout`](xref:Xamarin.Forms.StackLayout) занято, параметр расширения ни на что не влияет.
 
 Дополнительные сведения о выравнивании и расширении см. в разделе [Параметры макета в Xamarin.Forms](layout-options.md).
 
@@ -398,7 +398,7 @@ public ExpansionPageCS()
 [![Снимок экрана вложенных объектов StackLayout](stacklayout-images/combined.png "Вложенные Стакклайаутс")](stacklayout-images/combined-large.png#lightbox "Вложенные Стакклайаутс")
 
 > [!IMPORTANT]
-> Вложение слишком большого количества `StackLayout` объектов может привести к непроизводительной странице из-за необходимого объема вычислений макета. Дополнительные сведения см. [в разделе Выбор правильного макета](~/xamarin-forms/deploy-test/performance.md#choose-the-correct-layout).
+> Чем глубже вы вкладывает [`StackLayout`](xref:Xamarin.Forms.StackLayout) объекты и другие макеты, тем больше вложенных макетов влияет на производительность. Дополнительные сведения см. [в разделе Выбор правильного макета](~/xamarin-forms/deploy-test/performance.md#choose-the-correct-layout).
 
 Эквивалентный код на C# выглядит так:
 
