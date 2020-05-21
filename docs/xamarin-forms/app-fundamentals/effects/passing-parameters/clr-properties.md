@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/05/2016
-ms.openlocfilehash: 04d96dad455cbcf8360f12ee97a0540e7e746d62
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 63c7eb799b92871d7e00b7302bbe86f8b959ec23
+ms.sourcegitcommit: 05ba8ffb8b34ec881b89e442323f3edd8de18f2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771475"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83546041"
 ---
 # <a name="passing-effect-parameters-as-common-language-runtime-properties"></a>Передача параметров эффекта в качестве свойств среды CLR
 
@@ -131,7 +131,7 @@ namespace EffectsDemo.iOS
             try {
                 var effect = (ShadowEffect)Element.Effects.FirstOrDefault (e => e is ShadowEffect);
                 if (effect != null) {
-                    Control.Layer.CornerRadius = effect.Radius;
+                    Control.Layer.ShadowRadius = effect.Radius;
                     Control.Layer.ShadowColor = effect.Color.ToCGColor ();
                     Control.Layer.ShadowOffset = new CGSize (effect.DistanceX, effect.DistanceY);
                     Control.Layer.ShadowOpacity = 1.0f;

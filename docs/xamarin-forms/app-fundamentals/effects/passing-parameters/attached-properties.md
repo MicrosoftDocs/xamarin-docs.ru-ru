@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/05/2016
-ms.openlocfilehash: 2fcfbfa8a1780a9da4e9bfe187dc99a5172e95f0
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: cc33bc7eef68e5d6cb0a1b717da5e9d9f49338b2
+ms.sourcegitcommit: 05ba8ffb8b34ec881b89e442323f3edd8de18f2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771481"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83546028"
 ---
 # <a name="passing-effect-parameters-as-attached-properties"></a>Передача параметров эффекта в качестве присоединенных свойств
 
@@ -216,7 +216,7 @@ namespace EffectsDemo.iOS
 
         void UpdateRadius ()
         {
-            Control.Layer.CornerRadius = (nfloat)ShadowEffect.GetRadius (Element);
+            Control.Layer.ShadowRadius = (nfloat)ShadowEffect.GetRadius (Element);
         }
 
         void UpdateColor ()
