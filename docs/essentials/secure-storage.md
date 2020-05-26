@@ -6,12 +6,12 @@ author: jamesmontemagno
 ms.author: jamont
 ms.date: 04/02/2019
 ms.custom: video
-ms.openlocfilehash: f8e5a31b855158e1f801354c66f3d3d255eca559
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 41d9efa66318f4c3f5315351d3c1f51b4e503521
+ms.sourcegitcommit: 44c44ad60c5c880a39006493aedd2d7aa834a27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "75488495"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83550904"
 ---
 # <a name="xamarinessentials-secure-storage"></a>Xamarin.Essentials: Защищенное хранилище
 
@@ -133,11 +133,11 @@ SecureStorage.RemoveAll();
 
 [Хранилище ключей Android](https://developer.android.com/training/articles/keystore.html) используется для хранения ключа шифрования, с помощью которого значения шифруются перед сохранением в [общие параметры](https://developer.android.com/training/data-storage/shared-preferences.html) с именем файла **[идентификатор_пакета_приложения].xamarinessentials**.  Ключ (не криптографический, а _ключ_ для _значения_), используемый в файле общих параметров, представляет собой _хэш MD5_ ключа, передаваемого в API `SecureStorage`.
 
-## <a name="api-level-23-and-higher"></a>API уровня 23 и более поздних версий
+**API уровня 23 и более поздних версий**
 
 В API новых уровней ключ **AES** извлекается из хранилища ключей Android и применяется с шифром **AES/GCM/NoPadding** для шифрования значения перед сохранением в файл общих параметров.
 
-## <a name="api-level-22-and-lower"></a>API уровня 22 и более старых версий
+**API уровня 22 и более ранних версий**
 
 В API более старых уровней хранилище ключей Android поддерживает только хранение ключей **RSA**, которые применяются с шифром **RSA/ECB/PKCS1Padding** для шифрования ключа **AES** (созданного случайным образом во время выполнения) и сохранения полученного значения в файле общих параметров в разделе _SecureStorageKey_, если такой ключ еще не был создан.
 
