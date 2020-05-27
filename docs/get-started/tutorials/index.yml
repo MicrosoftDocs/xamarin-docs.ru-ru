@@ -37,7 +37,7 @@ landingContent:
       url: entry/index.yml
     - text: Редактор
       url: editor/index.yml
-    - text: Образ —
+    - text: Изображение
       url: image/index.yml
     - text: ListView
       url: listview/index.yml
