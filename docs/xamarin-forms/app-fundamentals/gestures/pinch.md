@@ -1,18 +1,21 @@
 ---
-title: Добавление распознавателя жестов сжатия
-description: В этой статье поясняется, как использовать жест сжатия для интерактивного масштабирования изображения в месте сжатия.
-ms.prod: xamarin
-ms.assetid: 832F7810-F0CF-441A-B04A-3975F3FB8B29
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 01/21/2016
-ms.openlocfilehash: be7a145e93aa4720b38921efc895ca3f3f33edb3
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: da4a8bc66a7986efd3683de6dce1f6af618b85cc
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "68656034"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137856"
 ---
 # <a name="adding-a-pinch-gesture-recognizer"></a>Добавление распознавателя жестов сжатия
 

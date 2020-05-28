@@ -1,20 +1,20 @@
 ---
-title: Отправка и получение push-уведомлений с помощью Центров уведомлений Azure и Xamarin.Forms
-description: Эта статья рассказывает, как использовать Центры уведомлений Azure для отправки push-уведомлений в приложения Xamarin.Forms на различных платформах.
-ms.prod: xamarin
-ms.assetid: 07D13195-3A0D-4C95-ACF0-143A9084973C
-ms.technology: xamarin-forms
-author: profexorgeek
-ms.author: jusjohns
-ms.date: 11/27/2019
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
 no-loc:
 - Firebase
-ms.openlocfilehash: 88926fe2c132ac03a07a7a2e18ee64b61fde43ad
-ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
+ms.openlocfilehash: 6b91884124f6c6dac366e30b8437a5f6e06ee162
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83425851"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84133332"
 ---
 # <a name="send-and-receive-push-notifications-with-azure-notification-hubs-and-xamarinforms"></a>Отправка и получение push-уведомлений с помощью Центров уведомлений Azure и Xamarin.Forms
 

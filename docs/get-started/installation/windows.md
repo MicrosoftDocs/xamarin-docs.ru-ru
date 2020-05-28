@@ -1,17 +1,20 @@
 ---
-title: Установка Xamarin в Visual Studio 2019
-description: Этот документ описывает установку Xamarin в Visual Studio 2019. В нем рассмотрены требования, процесс установки и проверка установки.
-ms.prod: xamarin
-ms.assetid: E20D4463-368E-4B60-A059-F50DB8C5552D
-author: conceptdev
-ms.author: crdun
-ms.date: 08/28/2018
-ms.openlocfilehash: 970985e419c5710699b6bdda49da8b59ef3c6cb6
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 39cf115ad80dd8cdd3ddb298ce87c065663d6cb2
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "71119258"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84132682"
 ---
 # <a name="installing-xamarin-in-visual-studio-2019"></a>Установка Xamarin в Visual Studio 2019
 
@@ -39,7 +42,7 @@ ms.locfileid: "71119258"
 
 ### <a name="ios"></a>iOS
 
-Дополнительные сведения см. в руководстве [Установка Xamarin.iOS в Windows](~/ios/get-started/installation/windows/index.md). 
+Дополнительные сведения см. в руководстве [Установка Xamarin.iOS в Windows](~/ios/get-started/installation/windows/index.md).
 
 1. [Установка Visual Studio для Mac](https://docs.microsoft.com/visualstudio/mac/installation)
 2. [Подключение Visual Studio к узлу сборки Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md)

@@ -1,18 +1,21 @@
 ---
-title: Передача параметров эффекта в качестве присоединенных свойств
-description: Присоединенные свойства можно использовать для определения параметров эффекта, реагирующих на изменения свойств времени выполнения. В этой статье описывается использование присоединенных свойств для передачи параметров эффекту и изменение параметра во время выполнения.
-ms.prod: xamarin
-ms.assetid: DFCDCB9F-17DD-4117-BD53-B4FB206BB387
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 08/05/2016
-ms.openlocfilehash: cc33bc7eef68e5d6cb0a1b717da5e9d9f49338b2
-ms.sourcegitcommit: 05ba8ffb8b34ec881b89e442323f3edd8de18f2e
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: cf03d0c32d80d7a1821e323acdc84a351413efec
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83546028"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138883"
 ---
 # <a name="passing-effect-parameters-as-attached-properties"></a>Передача параметров эффекта в качестве присоединенных свойств
 
