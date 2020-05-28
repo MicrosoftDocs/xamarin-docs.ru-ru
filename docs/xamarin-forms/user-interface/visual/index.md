@@ -1,25 +1,28 @@
 ---
-title: Xamarin.Forms Visual
-description: Xamarin.Forms Visual включает модули подготовки отчетов, чтобы выборочно применять к объектам VisualElement без необходимости подкласс представления Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 69228A9C-39C4-46AE-A803-C38EED6FB965
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/05/2019
-ms.openlocfilehash: d440c6e95788fc876d6b0aa094f5bc2fce84bfb0
-ms.sourcegitcommit: 4b402d1c508fa84e4fc3171a6e43b811323948fc
+title: Xamarin.FormsВнешнего
+description: Xamarin.FormsВизуальный элемент позволяет выборочно применять модули подготовки отчетов к объектам Висуалелемент, не создавая подкласс для Xamarin.Forms представлений.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5c0afcaa75029288d527fac2a2b21bcd614fd4dc
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61023454"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84127131"
 ---
-# <a name="xamarinforms-visual"></a>Xamarin.Forms Visual
+# <a name="xamarinforms-visual"></a>Xamarin.FormsВнешнего
 
-## <a name="xamarinforms-material-visualmaterial-visualmd"></a>[Материал Xamarin.Forms Visual](material-visual.md)
+## <a name="xamarinforms-material-visualmaterial-visualmd"></a>[Xamarin.FormsВизуальный элемент "материалы"](material-visual.md)
 
-Visual материал Xamarin.Forms можно использовать для создания приложений Xamarin.Forms, которые выглядят идентичными или мало чем отличается в iOS и Android.
+Xamarin.FormsВизуальный элемент "материалы" можно использовать для создания Xamarin.Forms приложений, которые выглядят одинаково или в значительной степени идентичны в iOS и Android.
 
-## <a name="create-a-xamarinforms-visual-renderercreatemd"></a>[Создайте в модуль подготовки Xamarin.Forms Visual](create.md)
+## <a name="create-a-xamarinforms-visual-renderercreatemd"></a>[Создание Xamarin.Forms визуального модуля подготовки отчетов](create.md)
 
-Xamarin.Forms Visual включает модули подготовки отчетов, чтобы выборочно применять к [ `VisualElement` ](xref:Xamarin.Forms.VisualElement) объектов без необходимости подкласс представления Xamarin.Forms.
+Xamarin.FormsВизуальный элемент позволяет выборочно применять модули подготовки отчетов к [`VisualElement`](xref:Xamarin.Forms.VisualElement) объектам, не создавая подкласс для Xamarin.Forms представлений.
