@@ -1,37 +1,40 @@
 ---
-title: Xamarin. Forms и Azure Cognitive Services
-description: Добавление аналитических средств в приложения Xamarin. Forms с помощью Cognitive Services Azure, включая распознавание речи, проверку орфографии, преобразование текста и распознавание распознавания эмоций.
-ms.prod: xamarin
-ms.assetid: 64386A65-FD31-4A1B-A769-91495E57345A
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 06/27/2019
-ms.openlocfilehash: 03fb194a4c85d51a6fe477dcfdc8fa38fec5a89c
-ms.sourcegitcommit: ba83c107c87b015dbcc9db13964fe111a0573dca
+title: Xamarin.Formsи Azure Cognitive Services
+description: Добавьте аналитику в Xamarin.Forms приложения с помощью Cognitive Services Azure, включая распознавание речи, проверку орфографии, преобразование текста и распознавание распознавания эмоций.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 64f5dce9337444a1e910a11a69426964a09ac05a
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76265166"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136023"
 ---
-# <a name="xamarinforms-and-azure-cognitive-services"></a>Xamarin. Forms и Azure Cognitive Services
+# <a name="xamarinforms-and-azure-cognitive-services"></a>Xamarin.Formsи Azure Cognitive Services
 
-## <a name="introductionintroductionmd"></a>[Введение](introduction.md)
+## <a name="introduction"></a>[Введение](introduction.md)
 
-Microsoft Cognitive Services — это набор API-интерфейсов, пакетов SDK и служб, доступных разработчикам, чтобы сделать свои приложения более интеллектуальными, добавив такие функции, как распознавание лиц, распознавание речи и понимание языка. В этой статье приводятся общие сведения о примере приложения, в котором показано, как вызывать некоторые API-интерфейсы Microsoft для работы с приложениями Xamarin. Forms.
+Microsoft Cognitive Services — это набор API-интерфейсов, пакетов SDK и служб, доступных разработчикам, чтобы сделать свои приложения более интеллектуальными, добавив такие функции, как распознавание лиц, распознавание речи и понимание языка. В этой статье приводятся общие сведения о примере приложения, в котором показано, как вызывать некоторые из приложений с помощью API-интерфейсов для работы со службой Microsoft Xamarin.Forms .
 
-## <a name="speech-recognitionspeech-recognitionmd"></a>[Распознавание речи](speech-recognition.md)
+## <a name="speech-recognition"></a>[Распознавание речи](speech-recognition.md)
 
-Служба распознавания речи Azure — это облачный API, который предоставляет алгоритмы для обработки речевого языка. В этой статье объясняется, как использовать службу распознавания речи Azure для транскрипция речи в текст в приложении Xamarin. Forms.
+Служба распознавания речи Azure — это облачный API, который предоставляет алгоритмы для обработки речевого языка. В этой статье объясняется, как использовать службу распознавания речи Azure для транскрипция речи в текст в Xamarin.Forms приложении.
 
-## <a name="spell-checkspell-checkmd"></a>[Проверка орфографии](spell-check.md)
+## <a name="spell-check"></a>[Spell Check](spell-check.md)
 
-API проверки орфографии выполняет контекстную орфографии для текста, предоставление встроенного по слова с ошибками. В этой статье объясняется, как с помощью API проверки орфографии REST исправлять орфографические ошибки в приложении Xamarin.Forms.
+Проверка орфографии Bing выполняет контекстную проверку орфографии для текста, предоставляя встроенные предложения по написанию слов с ошибками. В этой статье объясняется, как использовать REST API Проверка орфографии Bing для исправления орфографических ошибок в Xamarin.Forms приложении.
 
-## <a name="text-translationtext-translationmd"></a>[Преобразование текста](text-translation.md)
+## <a name="text-translation"></a>[Перевод текста](text-translation.md)
 
-API Microsoft Translator можно использовать для перевода речи и текста с помощью REST API. В этой статье объясняется, как использовать API Microsoft Translator текста для перевода текста с одного языка на другой в приложении Xamarin.Forms.
+API Microsoft Translator можно использовать для перевода речи и текста с помощью REST API. В этой статье объясняется, как использовать API перевода текстов Майкрософт для перевода текста с одного языка на другой в Xamarin.Forms приложении.
 
-## <a name="perceived-emotion-recognitionemotion-recognitionmd"></a>[Распознанное распознавание эмоций](emotion-recognition.md)
+## <a name="perceived-emotion-recognition"></a>[Распознанное распознавание эмоций](emotion-recognition.md)
 
-API распознавания лиц принимает данные о выражении лица на изображении в качестве входных данных и возвращает данные, которые содержат уровней достоверности между набором эмоции на каждом лице на изображении. В этой статье описывается использование API распознавания лиц для распознавания эмоций для оценки приложения Xamarin.Forms.
+API распознавания лиц принимает выражение лица в изображении в качестве входных данных и возвращает данные, включающие уровни достоверности в наборе эмоции для каждого лица в изображении. В этой статье объясняется, как использовать API распознавания лиц для распознавания распознавания эмоций, чтобы оценить Xamarin.Forms приложение.

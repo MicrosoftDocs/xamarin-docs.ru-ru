@@ -1,78 +1,81 @@
 ---
-title: Присоединенные свойства
-description: В этой статье содержатся вводные присоединенных свойств и показано, как создавать и использовать их.
-ms.prod: xamarin
-ms.assetid: 6E9DCDC3-A0E4-46A6-BAA9-4FEB6DF8A5A8
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 06/02/2016
-ms.openlocfilehash: 78dd2d3a63cd0e2b6ab1e6876dd82f49f5580f0b
-ms.sourcegitcommit: d0e6436edbf7c52d760027d5e0ccaba2531d9fef
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1f26a4415a75b2b02fd7d6893e366ef81156f077
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75489977"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138194"
 ---
 # <a name="attached-properties"></a>Присоединенные свойства
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)
 
 
-Присоединенные свойства enable объекта для присвоения значения для свойства, которое не определяет свой собственный класс. Например дочерние элементы можно использовать вложенные свойства для информирования родительского элемента о порядке их представления в пользовательском интерфейсе. [ `Grid` ](xref:Xamarin.Forms.Grid) Элемент управления позволяет строки и столбца дочернего элемента для путем задания `Grid.Row` и `Grid.Column` присоединенных свойств. `Grid.Row` и `Grid.Column` являются присоединенных свойств, так как они устанавливаются на элементы, являющиеся дочерними для `Grid`, а не для `Grid` сам.
+Присоединенные свойства позволяют объекту назначить значение для свойства, которое не определено его собственным классом. Например, дочерние элементы могут использовать присоединенные свойства для информирования своего родительского элемента о том, как они представлены в пользовательском интерфейсе. [`Grid`](xref:Xamarin.Forms.Grid)Элемент управления позволяет указать строку и столбец дочернего элемента, задав `Grid.Row` `Grid.Column` Свойства и. `Grid.Row`и `Grid.Column` являются присоединенными свойствами, так как они задаются для элементов, являющихся дочерними элементами объекта `Grid` , а не `Grid` самого самого.
 
-Привязываемые свойства должны быть реализованы как присоединенные свойства в следующих сценариях:
+Привязываемые свойства должны быть реализованы в виде вложенных свойств в следующих сценариях:
 
-- При отсутствии необходимо иметь свойство параметр механизм доступен для классов, отличных от определяющего класса.
-- Когда класс представляет службу, которая легко интегрируется с другими классами.
+- Если есть необходимость иметь механизм настройки свойства для классов, отличных от определяющего класса.
+- Если класс представляет службу, которая должна быть легко интегрирована с другими классами.
 
-Дополнительные сведения о свойствах привязки см. в разделе [привязываемые свойства](~/xamarin-forms/xaml/bindable-properties.md).
+Дополнительные сведения о свойствах, допускающих привязку, см. в разделе [свойства, допускающие](~/xamarin-forms/xaml/bindable-properties.md)привязку.
 
 ## <a name="create-an-attached-property"></a>Создание присоединенного свойства
 
-Процесс создания присоединенное свойство выглядит следующим образом:
+Процесс создания присоединенного свойства выглядит следующим образом:
 
-1. Создание [ `BindableProperty` ](xref:Xamarin.Forms.BindableProperty) экземпляра с одним из [ `CreateAttached` ](xref:Xamarin.Forms.BindableProperty.CreateAttached*) перегрузок метода.
-1. Укажите `static` `Get` *PropertyName* и `Set` *PropertyName* методов как методы доступа для вложенных свойств.
+1. Создайте [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) экземпляр с одной из [`CreateAttached`](xref:Xamarin.Forms.BindableProperty.CreateAttached*) перегрузок метода.
+1. Укажите `static` `Get` методы *PropertyName* и `Set` *PropertyName* в качестве методов доступа к присоединенному свойству.
 
 ### <a name="create-a-property"></a>Создание свойства
 
-При создании присоединенного свойства для использования на других типов, класса, в которой создается свойство не являются производными от [ `BindableObject` ](xref:Xamarin.Forms.BindableObject). Тем не менее *целевой* должен иметь свойство для методов доступа, или производным от него [ `BindableObject` ](xref:Xamarin.Forms.BindableObject).
+При создании присоединенного свойства для использования в других типах класс, в котором создается свойство, не обязательно должен быть производным от [`BindableObject`](xref:Xamarin.Forms.BindableObject) . Однако свойство *Target* для методов доступа должно иметь значение или быть производным от класса, [`BindableObject`](xref:Xamarin.Forms.BindableObject) .
 
-Присоединенное свойство могут создаваться путем объявления `public static readonly` свойство типа [ `BindableProperty` ](xref:Xamarin.Forms.BindableProperty). Возвращаемое значение одного из задается свойство, используемое [ `BindableProperty.CreateAttached` ](xref:Xamarin.Forms.BindableProperty.CreateAttached(System.String,System.Type,System.Type,System.Object,Xamarin.Forms.BindingMode,Xamarin.Forms.BindableProperty.ValidateValueDelegate,Xamarin.Forms.BindableProperty.BindingPropertyChangedDelegate,Xamarin.Forms.BindableProperty.BindingPropertyChangingDelegate,Xamarin.Forms.BindableProperty.CoerceValueDelegate,Xamarin.Forms.BindableProperty.CreateDefaultValueDelegate)) перегрузок метода. Объявление должно быть в теле класса-владельца, но вне определения любого из членов.
+Вложенное свойство может быть создано путем объявления `public static readonly` свойства типа [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) . Свойству BIND должно быть присвоено возвращаемое значение одного из [ `BindableProperty.CreateAttached` ] (xref: Xamarin.Forms . Биндаблепроперти. Креатеаттачед (System. String, System. Type, System. Type, System. Object, Xamarin.Forms . BindingMode, Xamarin.Forms . Биндаблепроперти. Валидатевалуеделегате, Xamarin.Forms . Биндаблепроперти. Биндингпропертичанжедделегате, Xamarin.Forms . Биндаблепроперти. Биндингпропертичангингделегате, Xamarin.Forms . Биндаблепроперти. Коерцевалуеделегате, Xamarin.Forms . Биндаблепроперти. Креатедефаултвалуеделегате)) перегрузки методов. Объявление должно находиться в теле класса-владельца, но за пределами определений элементов.
 
-Следующий код является примером присоединенное свойство:
+В следующем коде показан пример присоединенного свойства:
 
 ```csharp
 public static readonly BindableProperty HasShadowProperty =
   BindableProperty.CreateAttached ("HasShadow", typeof(bool), typeof(ShadowEffect), false);
 ```
 
-Это создает присоединенное свойство с именем `HasShadow`, типа `bool`. Свойство принадлежит `ShadowEffect` класса, и имеет значение по умолчанию `false`. Соглашение об именовании для присоединенных свойств является, что идентификатор присоединенного свойства должен соответствовать имени свойства, указанные в `CreateAttached` метод, с добавленным к нему «Property». Таким образом, в приведенном выше примере идентификатор присоединенного свойства является `HasShadowProperty`.
+При этом создается присоединенное свойство с именем `HasShadow` типа `bool` . Свойство принадлежит `ShadowEffect` классу и имеет значение по умолчанию `false` . Соглашение об именовании присоединенных свойств заключается в том, что идентификатор присоединенного свойства должен совпадать с именем свойства, указанным в `CreateAttached` методе, с добавлением к нему "Property". Таким образом, в приведенном выше примере идентификатор присоединенного свойства — `HasShadowProperty` .
 
 Дополнительные сведения о создании связываемых свойств, включая параметры, которые могут быть указаны во время создания, см. [в разделе Создание связываемого](~/xamarin-forms/xaml/bindable-properties.md#consume-a-bindable-property)свойства.
 
 ### <a name="create-accessors"></a>Создание методов доступа
 
-Статические `Get` *PropertyName* и `Set` *PropertyName* методы необходимы как методы доступа для присоединенного свойства, в противном случае будет невозможно использовать в системе свойств вложенное свойство. `Get` *PropertyName* доступа должны соответствовать следующую сигнатуру:
+В `Get` *PropertyName* `Set` качестве методов доступа к присоединенному свойству требуются статические методы PropertyName и *PropertyName* . в противном случае система свойств не сможет использовать присоединенное свойство. `Get`Метод доступа *PropertyName* должен соответствовать следующей сигнатуре:
 
 ```csharp
 public static valueType GetPropertyName(BindableObject target)
 ```
 
-`Get` *PropertyName* метод доступа должен возвращать значение, которое содержится в соответствующем `BindableProperty` для присоединенного свойства. Это достигается путем вызова [ `GetValue` ](xref:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)) метод, передав идентификатор может быть привязано, для которого необходимо получить значение и затем приведение результирующее значение в требуемый тип.
+`Get`Метод доступа *PropertyName* должен возвращать значение, которое содержится в соответствующем `BindableProperty` поле для присоединенного свойства. Это можно сделать, вызвав [ `GetValue` ] (xref: Xamarin.Forms . BindableObject. GetValue ( Xamarin.Forms . Биндаблепроперти)), передавая идентификатор привязываемого свойства для получения значения, а затем приведя результирующее значение к требуемому типу.
 
-`Set` *PropertyName* доступа должны соответствовать следующую сигнатуру:
+`Set`Метод доступа *PropertyName* должен соответствовать следующей сигнатуре:
 
 ```csharp
 public static void SetPropertyName(BindableObject target, valueType value)
 ```
 
-`Set` *PropertyName* доступа следует устанавливать значение соответствующего `BindableProperty` для присоединенного свойства. Это достигается путем вызова [ `SetValue` ](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) метод, передавая идентификатор может быть привязано, для которого требуется задать значение и присваиваемое значение.
+`Set`Метод доступа *PropertyName* должен задавать значение соответствующего `BindableProperty` поля для присоединенного свойства. Это можно сделать, вызвав [ `SetValue` ] (xref: Xamarin.Forms . BindableObject. SetValue ( Xamarin.Forms . Биндаблепроперти, System. Object)), передавая идентификатор привязываемого свойства, для которого задается значение, и задаваемый значение.
 
-Для обоих методов доступа *целевой* объект должен быть или производным от него [ `BindableObject` ](xref:Xamarin.Forms.BindableObject).
+Для обоих методов доступа *целевой* объект должен иметь значение или быть производным от класса [`BindableObject`](xref:Xamarin.Forms.BindableObject) .
 
-В следующем примере кода показаны методы доступа для `HasShadow` вложенного свойства зависимостей:
+В следующем примере кода показаны методы доступа для `HasShadow` присоединенного свойства:
 
 ```csharp
 public static bool GetHasShadow (BindableObject view)
@@ -88,9 +91,9 @@ public static void SetHasShadow (BindableObject view, bool value)
 
 ### <a name="consume-an-attached-property"></a>Использование присоединенного свойства
 
-После создания вложенного свойства, его можно будет использовать из XAML или кода. В XAML это достигается путем объявления пространства имен с префиксом, с объявлением пространства имен, указывающее имя пространства имен Common Language Runtime (CLR) и при необходимости имя сборки. Дополнительные сведения см. в разделе [пространства имен XAML](~/xamarin-forms/xaml/namespaces.md).
+После создания присоединенного свойства его можно использовать из XAML или кода. В XAML это достигается путем объявления пространства имен с префиксом с помощью объявления пространства имен, указывающего имя пространства имен среды CLR, и, при необходимости, имени сборки. Дополнительные сведения см. в разделе [пространства имен XAML](~/xamarin-forms/xaml/namespaces.md).
 
-В следующем примере кода показано пространство имен XAML для пользовательского типа, который содержит вложенное свойство, который определен в сборке, в качестве код приложения, который ссылается на пользовательский тип:
+В следующем примере кода показано пространство имен XAML для пользовательского типа, содержащего присоединенное свойство, которое определено в той же сборке, что и код приложения, ссылающийся на настраиваемый тип:
 
 ```xaml
 <ContentPage ... xmlns:local="clr-namespace:EffectsDemo" ...>
@@ -98,7 +101,7 @@ public static void SetHasShadow (BindableObject view, bool value)
 </ContentPage>
 ```
 
-Объявление пространства имен затем используется, когда установив это присоединенное свойство на определенный элемент управления, как показано в следующем примере кода XAML:
+Объявление пространства имен затем используется при установке присоединенного свойства для конкретного элемента управления, как показано в следующем примере кода XAML:
 
 ```xaml
 <Label Text="Label Shadow Effect" local:ShadowEffect.HasShadow="true" />
@@ -113,7 +116,7 @@ ShadowEffect.SetHasShadow (label, true);
 
 ### <a name="consume-an-attached-property-with-a-style"></a>Использование присоединенного свойства со стилем
 
-Вложенные свойства можно также добавить к элементу управления стилем. В следующем примере показан код XAML *явные* стиль, который использует `HasShadow` вложенное свойство зависимостей, который может быть применен к [ `Label` ](xref:Xamarin.Forms.Label) элементов управления:
+Вложенные свойства также можно добавлять в элемент управления с помощью стиля. В следующем примере кода XAML показан *явный* стиль, использующий `HasShadow` присоединенное свойство, которое можно применить к [`Label`](xref:Xamarin.Forms.Label) элементам управления:
 
 ```xaml
 <Style x:Key="ShadowEffectStyle" TargetType="Label">
@@ -133,7 +136,7 @@ ShadowEffect.SetHasShadow (label, true);
 
 ## <a name="advanced-scenarios"></a>Расширенные сценарии
 
-При создании присоединенного свойства, существует ряд необязательных параметров, которые могут устанавливаться для реализации сценариев расширенной присоединенное свойство. Это включает в себя обнаружение изменений свойств, проверку значений свойств и преобразование значений свойств. Дополнительные сведения см. в разделе [Расширенные сценарии](~/xamarin-forms/xaml/bindable-properties.md#advanced-scenarios).
+При создании присоединенного свойства существует ряд необязательных параметров, которые можно задать для включения расширенных сценариев присоединенных свойств. Это включает обнаружение изменений свойств, проверку значений свойств и приведение значений свойств. Дополнительные сведения см. в разделе [Расширенные сценарии](~/xamarin-forms/xaml/bindable-properties.md#advanced-scenarios).
 
 ## <a name="related-links"></a>Связанные ссылки
 

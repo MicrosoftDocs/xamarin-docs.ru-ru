@@ -1,18 +1,21 @@
 ---
-title: Режимы смешения SkiaSharp
-description: Используйте режимы смешения, чтобы определить, что происходит при наложении графических объектов на другой.
-ms.prod: xamarin
-ms.technology: xamarin-skiasharp
-ms.assetid: CE1B222E-A2D0-4016-A532-EC1E59EE3D6B
-author: davidbritch
-ms.author: dabritch
-ms.date: 08/23/2018
-ms.openlocfilehash: 829d764f03dd77c6126c2f4bced750ae570a3bc6
-ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
+title: ''
+description: ''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b5b03779b9f0847621456b25582fb8ea04f8386d
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83425699"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84131707"
 ---
 # <a name="skiasharp-blend-modes"></a>Режимы смешения SkiaSharp
 
@@ -29,20 +32,60 @@ ms.locfileid: "83425699"
 29 членов `SKBlendMode` перечисления можно разделить на три категории:
 
 | Портер — Дуфф | Отделяемых    | Не отделяемых |
-| ----------- | ------------ | ------------- |
-| `Clear`     | `Modulate`   | `Hue`         |
-| `Src`       | `Screen`     | `Saturation`  |
-| `Dst`       | `Overlay`    | `Color`       |
-| `SrcOver`   | `Darken`     | `Luminosity`  |
-| `DstOver`   | `Lighten`    |               |
-| `SrcIn`     | `ColorDodge` |               |
-| `DstIn`     | `ColorBurn`  |               |
-| `SrcOut`    | `HardLight`  |               |
-| `DstOut`    | `SoftLight`  |               |
-| `SrcATop`   | `Difference` |               |
-| `DstATop`   | `Exclusion`  |               |
-| `Xor`       | `Multiply`   |               |
-| `Plus`      |              |               |
+| ---
+Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+-
+Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+-
+Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+------ | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+-
+Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+-
+Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+-
+Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+------ | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+-
+Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+-
+Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+-
+Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
+------- | | `Clear`     | `Modulate`   | `Hue`         | | `Src`       | `Screen`     | `Saturation`  | | `Dst`       | `Overlay`    | `Color`       | | `SrcOver`   | `Darken`     | `Luminosity`  | | `DstOver`   | `Lighten`    |               | | `SrcIn`     | `ColorDodge` |               | | `DstIn`     | `ColorBurn`  |               | | `SrcOut`    | `HardLight`  |               | | `DstOut`    | `SoftLight`  |               | | `SrcATop`   | `Difference` |               | | `DstATop`   | `Exclusion`  |               | | `Xor`       | `Multiply`   |               | | `Plus`      |              |               |
 
 Имена этих трех категорий будут иметь больше смысла в следующих обсуждениях. Порядок, в котором перечислены элементы, совпадает с порядком в определении `SKBlendMode` перечисления. 13 элементов перечисления в первом столбце имеют целочисленные значения от 0 до 12. Второй столбец — это члены перечисления, соответствующие целым числам от 13 до 24, а элементы третьего столбца — значения от 25 до 28.
 
@@ -62,7 +105,7 @@ canvas.Clear();
 
 Этот метод заменяет все пиксели холста прозрачными черными пикселями, эквивалентными `new SKColor(0, 0, 0, 0)` или целым числом 0x00000000. Все байты всех пикселов инициализируются нулем.
 
-Поверхность рисования `SKCanvas` , полученная в `PaintSurface` обработчике, может показаться белым фоном, но это только потому, что у `SKCanvasView` самого себя прозрачный фон, а у страницы есть белый фон. Этот факт можно продемонстрировать самому себе, задав для свойства Xamarin. Forms `BackgroundColor` `SKCanvasView` Цвет Xamarin. Forms:
+Поверхность рисования `SKCanvas` , полученная в `PaintSurface` обработчике, может показаться белым фоном, но это только потому, что у `SKCanvasView` самого себя прозрачный фон, а у страницы есть белый фон. Этот факт можно продемонстрировать самому себе, задав Xamarin.Forms `BackgroundColor` для свойства значение `SKCanvasView` Xamarin.Forms Color:
 
 ```csharp
 canvasView.BackgroundColor = Color.Red;

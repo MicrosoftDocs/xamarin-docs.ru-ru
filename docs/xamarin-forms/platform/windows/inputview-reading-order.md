@@ -1,24 +1,27 @@
 ---
-title: Инпутвиев порядок чтения в Windows
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Windows, которая позволяет динамически определять порядок чтения двунаправленного текста.
-ms.prod: xamarin
-ms.assetid: E61BAEE0-C8B7-4F33-8DDC-FA1B9CA8E81D
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/24/2018
-ms.openlocfilehash: c184424a982aa82712685dbc33ad57422f2f8338
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f5f0bcdc2d2c8eb1b51ad8dcd1014c649af80c90
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68651428"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137765"
 ---
 # <a name="inputview-reading-order-on-windows"></a>Инпутвиев порядок чтения в Windows
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Эта универсальная платформа Windows зависит от конкретной платформы [`Entry`](xref:Xamarin.Forms.Entry), а также от того, в каком экземпляре, и [`Label`](xref:Xamarin.Forms.Label) в каком-то конкретном случае [`Editor`](xref:Xamarin.Forms.Editor)будет определяться динамический текст (слева направо или справа налево). Он используется в XAML, задав [ `InputView.DetectReadingOrderFromContent` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.InputView.DetectReadingOrderFromContentProperty) (для `Entry` и `Editor` экземпляры) или [ `Label.DetectReadingOrderFromContent` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.Label.DetectReadingOrderFromContentProperty) вложенное свойство, чтобы `boolean` значение:
+Эта универсальная платформа Windows зависит от конкретной платформы, а также от того, в каком экземпляре, и в каком-то конкретном [`Entry`](xref:Xamarin.Forms.Entry) случае [`Editor`](xref:Xamarin.Forms.Editor) [`Label`](xref:Xamarin.Forms.Label) будет определяться динамический текст (слева направо или справа налево). Он используется в XAML путем установки [`InputView.DetectReadingOrderFromContent`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.InputView.DetectReadingOrderFromContentProperty) значения (для `Entry` `Editor` экземпляров и) или [`Label.DetectReadingOrderFromContent`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.Label.DetectReadingOrderFromContentProperty) присоединенного свойства к `boolean` значению:
 
 ```xaml
 <ContentPage ...
@@ -30,7 +33,7 @@ ms.locfileid: "68651428"
 </ContentPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -40,21 +43,21 @@ using Xamarin.Forms.PlatformConfiguration.WindowsSpecific;
 editor.On<Windows>().SetDetectReadingOrderFromContent(true);
 ```
 
-`Editor.On<Windows>` Метод указывает, что этой платформы будет выполняться только на универсальной платформе Windows. [ `InputView.SetDetectReadingOrderFromContent` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.InputView.SetDetectReadingOrderFromContent(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.InputView},System.Boolean)) Метод в [ `Xamarin.Forms.PlatformConfiguration.WindowsSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific) пространства имен, используется для управления ли порядок чтения определяется из содержимого [ `InputView` ](xref:Xamarin.Forms.InputView). Кроме того `InputView.SetDetectReadingOrderFromContent` метод может использоваться для переключения между режимами порядок чтения определяется из содержимого путем вызова [ `InputView.GetDetectReadingOrderFromContent` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.InputView.GetDetectReadingOrderFromContent(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.InputView})) метод для возврата текущего значения:
+`Editor.On<Windows>`Метод указывает, что данная платформа будет запускаться только на универсальная платформа Windows. [ `InputView.SetDetectReadingOrderFromContent` ] (Xref: Xamarin.Forms . Платформконфигуратион. ВиндовсспеЦифик. Инпутвиев. Сетдетектреадингордерфромконтент ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Windows, Xamarin.Forms . Инпутвиев}, System. Boolean)) в [`Xamarin.Forms.PlatformConfiguration.WindowsSpecific`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific) пространстве имен используется для управления тем, был ли обнаружен порядок чтения из содержимого в [`InputView`](xref:Xamarin.Forms.InputView) . Кроме того, `InputView.SetDetectReadingOrderFromContent` метод можно использовать для переключения между обнаружением порядка чтения из содержимого путем вызова метода [ `InputView.GetDetectReadingOrderFromContent` ] (xref: Xamarin.Forms . Платформконфигуратион. ВиндовсспеЦифик. Инпутвиев. Жетдетектреадингордерфромконтент ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Windows, Xamarin.Forms . Инпутвиев})) метод, который возвращает текущее значение:
 
 ```csharp
 editor.On<Windows>().SetDetectReadingOrderFromContent(!editor.On<Windows>().GetDetectReadingOrderFromContent());
 ```
 
-В результате [ `Entry` ](xref:Xamarin.Forms.Entry), [ `Editor` ](xref:Xamarin.Forms.Editor), и [ `Label` ](xref:Xamarin.Forms.Label) экземпляров могут быть порядок чтения их содержимое, динамически обнаружены:
+В результате [`Entry`](xref:Xamarin.Forms.Entry) [`Editor`](xref:Xamarin.Forms.Editor) экземпляры, и [`Label`](xref:Xamarin.Forms.Label) могут динамически определять порядок чтения содержимого:
 
-[![Обнаружение порядок чтения из содержимого платформы InputView](inputview-reading-order-images/editor-readingorder.png "InputView, обнаружение порядок чтения из содержимого платформы")](inputview-reading-order-images/editor-readingorder-large.png#lightbox "InputView, обнаружение порядок чтения из содержимое конкретной платформы")
+[![Инпутвиев обнаружение порядка чтения из платформы содержимого](inputview-reading-order-images/editor-readingorder.png "Инпутвиев обнаружение порядка чтения из платформы содержимого")](inputview-reading-order-images/editor-readingorder-large.png#lightbox "Инпутвиев обнаружение порядка чтения из платформы содержимого")
 
 > [!NOTE]
-> В отличие от параметра [ `FlowDirection` ](xref:Xamarin.Forms.VisualElement.FlowDirection) свойство, логика для представлений, которые позволяют обнаружить порядок чтения из их текстовое содержимое не повлияет на способ выравнивания текста в представлении. Вместо этого он корректирует порядок, в котором расположены блоки двунаправленного текста.
+> В отличие от установки [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) свойства, логика представлений, которые определяют порядок чтения из их текстового содержимого, не влияет на выравнивание текста в представлении. Вместо этого он корректирует порядок расположения блоков двунаправленного текста.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ВиндовсспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific)

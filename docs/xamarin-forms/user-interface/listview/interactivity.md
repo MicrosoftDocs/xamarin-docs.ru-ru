@@ -1,55 +1,58 @@
 ---
-title: Интерактивность ListView
-description: В этой статье объясняется, как для обеспечения интерактивности ListView Xamarin.Forms, реализовав выбранные параметры, контекст действия и по запросу для обновления.
-ms.prod: xamarin
-ms.assetid: CD14EB90-B08C-4E8F-A314-DA0EEC76E647
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 09/25/2019
-ms.openlocfilehash: aa717792bdaefe24d957c9781934933b67aaf92b
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+title: ''
+description: В этой статье объясняется, как добавить интерактивность в Xamarin.Forms ListView путем реализации выбора, контекстных действий и получения обновления.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5142965216b328172ae7fa04cdc0c13590f5ff38
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79306437"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139892"
 ---
-# <a name="listview-interactivity"></a>Интерактивное взаимодействие с ListView
+# <a name="listview-interactivity"></a>Интерактивность ListView
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-interactivity)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-interactivity)
 
-Класс Xamarin. Forms [`ListView`](xref:Xamarin.Forms.ListView) поддерживает взаимодействие пользователя с данными, которые он представляет.
+Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Класс поддерживает взаимодействие пользователя с данными, которые он представляет.
 
 ## <a name="selection-and-taps"></a>Выделение и касания
 
-Режим выбора [`ListView`](xref:Xamarin.Forms.ListView) контролируется путем присвоения свойству [`ListView.SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) значения перечисления [`ListViewSelectionMode`](xref:Xamarin.Forms.ListViewSelectionMode) .
+[`ListView`](xref:Xamarin.Forms.ListView)Режим выбора контролируется путем присвоения [`ListView.SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) свойству значения [`ListViewSelectionMode`](xref:Xamarin.Forms.ListViewSelectionMode) перечисления.
 
-- [`Single`](xref:Xamarin.Forms.ListViewSelectionMode.Single) указывает, что можно выбрать один элемент, выделив выделенный элемент. Это значение по умолчанию.
-- [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None) указывает, что элементы не могут быть выбраны.
+- [`Single`](xref:Xamarin.Forms.ListViewSelectionMode.Single)Указывает, что можно выбрать один элемент, при этом выделенный элемент выделяется. Это значение по умолчанию.
+- [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None)Указывает, что элементы не могут быть выбраны.
 
-При касании элемента, два события инициируются:
+Когда пользователь касается элемента, запускаются два события:
 
-- [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) срабатывает при выборе нового элемента.
-- [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) срабатывает при касании элемента.
+- [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected)активируется при выборе нового элемента.
+- [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped)активируется при касании элемента.
 
-Если коснуться одного и того же элемента дважды, будет срабатывать два [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) событий, но будет запущено только одно событие [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) .
+Если коснуться одного и того же элемента дважды, будет срабатывать два [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) события, но будет запущено только одно [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) событие.
 
 > [!NOTE]
-> Класс [`ItemTappedEventArgs`](xref:Xamarin.Forms.ItemTappedEventArgs) , который содержит аргументы события для события [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) , имеет свойства [`Group`](xref:Xamarin.Forms.ItemTappedEventArgs.Group) и [`Item`](xref:Xamarin.Forms.ItemTappedEventArgs.Item) , а также свойство `ItemIndex`, значение которого представляет индекс в [`ListView`е](xref:Xamarin.Forms.ListView) элемента с касанием. Аналогично, класс [`SelectedItemChangedEventArgs`](xref:Xamarin.Forms.SelectedItemChangedEventArgs) , который содержит аргументы события для события [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) , имеет свойство [`SelectedItem`](xref:Xamarin.Forms.SelectedItemChangedEventArgs.SelectedItem) и свойство `SelectedItemIndex`, значение которого представляет индекс в `ListView` выбранного элемента.
+> [`ItemTappedEventArgs`](xref:Xamarin.Forms.ItemTappedEventArgs)Класс, который содержит аргументы события [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) , имеет [`Group`](xref:Xamarin.Forms.ItemTappedEventArgs.Group) [`Item`](xref:Xamarin.Forms.ItemTappedEventArgs.Item) Свойства и, и `ItemIndex` свойство, значение которого представляет индекс в элементе [`ListView`](xref:Xamarin.Forms.ListView) нажатого элемента. Аналогично, [`SelectedItemChangedEventArgs`](xref:Xamarin.Forms.SelectedItemChangedEventArgs) класс, который содержит аргументы события [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) , имеет [`SelectedItem`](xref:Xamarin.Forms.SelectedItemChangedEventArgs.SelectedItem) свойство и `SelectedItemIndex` свойство, значение которого представляет индекс в `ListView` выбранном элементе.
 
-Если свойство [`SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) имеет значение [`Single`](xref:Xamarin.Forms.ListViewSelectionMode.Single), можно выбрать элементы в [`ListView`](xref:Xamarin.Forms.ListView) , будут срабатывать события [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) и [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) , а для свойства [`SelectedItem`](xref:Xamarin.Forms.ListView.SelectedItem) будет задано значение выбранного элемента.
+Если [`SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) для свойства задано значение [`Single`](xref:Xamarin.Forms.ListViewSelectionMode.Single) , то элементы в [`ListView`](xref:Xamarin.Forms.ListView) могут быть выбраны, [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) события и будут [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) срабатывать, а [`SelectedItem`](xref:Xamarin.Forms.ListView.SelectedItem) свойству будет присвоено значение выбранного элемента.
 
-Если свойство [`SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) имеет значение [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None), то элементы в [`ListView`](xref:Xamarin.Forms.ListView) не могут быть выбраны, событие [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) не будет запущено, а свойство [`SelectedItem`](xref:Xamarin.Forms.ListView.SelectedItem) останется `null`. Тем не менее, [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) события по-прежнему будут срабатывать, и при касании элемент будет кратковременно выделен.
+Если [`SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) свойство имеет значение [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None) , элементы в [`ListView`](xref:Xamarin.Forms.ListView) не могут быть выбраны, [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) событие не будет запущено и [`SelectedItem`](xref:Xamarin.Forms.ListView.SelectedItem) свойство останется `null` . Однако [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) события по-прежнему будут срабатывать, и при касании элемент будет кратковременно выделен.
 
-При выборе элемента и изменении свойства [`SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) с [`Single`](xref:Xamarin.Forms.ListViewSelectionMode.Single) на [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None)свойству [`SelectedItem`](xref:Xamarin.Forms.ListView.SelectedItem) будет присвоено значение `null`, а событие [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) будет запущено с элементом `null`.
+При выборе элемента и [`SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) изменении свойства с [`Single`](xref:Xamarin.Forms.ListViewSelectionMode.Single) на [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None) [`SelectedItem`](xref:Xamarin.Forms.ListView.SelectedItem) свойство будет установлено на, `null` а [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) событие будет запущено с `null` элементом.
 
-На следующих снимках экрана показан [`ListView`](xref:Xamarin.Forms.ListView) с режимом выбора по умолчанию:
+На следующих снимках экрана показан [`ListView`](xref:Xamarin.Forms.ListView) режим выбора по умолчанию:
 
 ![](interactivity-images/selection-default.png "ListView with Selection Enabled")
 
 ### <a name="disable-selection"></a>Отключить выделение
 
-Чтобы отключить выбор [`ListView`](xref:Xamarin.Forms.ListView) установите для свойства [`SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) значение [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None).
+Чтобы отключить [`ListView`](xref:Xamarin.Forms.ListView) Выбор, задайте [`SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) для свойства значение [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None) :
 
 ```xaml
 <ListView ... SelectionMode="None" />
@@ -61,19 +64,19 @@ var listView = new ListView { ... SelectionMode = ListViewSelectionMode.None };
 
 ## <a name="context-actions"></a>Контекстные действия
 
-Часто пользователи хотят предпринять действия с элементом в `ListView`. Например рассмотрим список адресов электронной почты в почтовом приложении. В iOS можно прокрутить, чтобы удалить сообщение:
+Часто пользователи хотят предпринять действия с элементом в `ListView` . Например, рассмотрим список сообщений электронной почты в почтовом приложении. В iOS можно прокрутить, чтобы удалить сообщение:
 
 ![](interactivity-images/context-default.png "ListView with Context Actions")
 
-Контекстные действия можно реализовать в C# и XAML. Далее вы найдете определенных направляющих для обоих, но сперва давайте взглянем на некоторые ключевые особенности реализации для обоих.
+Действия контекста могут быть реализованы в C# и XAML. Ниже вы найдете конкретные руководства для обоих, но сначала рассмотрим некоторые основные сведения о реализации для обоих.
 
-Действия контекста создаются с помощью элементов `MenuItem`. События TAP для `MenuItems` объекты вызываются самим `MenuItem`, а не `ListView`. Это отличается от того, как события TAP обрабатываются для ячеек, где `ListView` вызывает событие, а не ячейку. Поскольку `ListView` вызывает событие, его обработчик событий получает ключевые сведения, в том числе выбор или касание элемента.
+Контекстные действия создаются с помощью `MenuItem` элементов. События TAP для `MenuItems` объектов вызываются `MenuItem` самим собой, а не `ListView` . Это отличается от того, как события касания обрабатываются для ячеек, где объект `ListView` создает событие, а не ячейку. Поскольку `ListView` вызывает событие, его обработчик событий получает ключевые сведения, такие как выбор или касание элемента.
 
-По умолчанию `MenuItem` не имеет возможности узнать, к какой ячейке она принадлежит. Свойство `CommandParameter` доступно в `MenuItem` для хранения объектов, таких как объект за `ViewCell``MenuItem`. Свойство `CommandParameter` может быть задано как в XAML, C#так и в.
+По умолчанию `MenuItem` не имеет способа узнать, к какой ячейке она принадлежит. `CommandParameter`Свойство доступно `MenuItem` для хранения объектов, таких как объект, лежащий в основе `MenuItem` `ViewCell` . `CommandParameter`Свойство может быть задано как в XAML, так и в C#.
 
 ### <a name="xaml"></a>XAML
 
-`MenuItem` элементы могут быть созданы в коллекции XAML. Ниже XAML демонстрирует настраиваемой ячейки с реализованы два контекстных действий:
+`MenuItem`элементы можно создавать в коллекции XAML. В XAML-коде ниже показана пользовательская ячейка с двумя реализованными контекстными действиями:
 
 ```xaml
 <ListView x:Name="ContextDemoList">
@@ -97,7 +100,7 @@ var listView = new ListView { ... SelectionMode = ListViewSelectionMode.None };
 </ListView>
 ```
 
-Убедитесь, что в файле кода программной части реализованы методы `Clicked`:
+В файле кода программной части убедитесь, что `Clicked` методы реализованы:
 
 ```csharp
 public void OnMore (object sender, EventArgs e)
@@ -114,17 +117,17 @@ public void OnDelete (object sender, EventArgs e)
 ```
 
 > [!NOTE]
-> `NavigationPageRenderer` для Android имеет переопределяемый метод `UpdateMenuItemIcon`, который можно использовать для загрузки значков из настраиваемого `Drawable`. Это переопределение позволяет использовать изображения SVG в качестве значков на `MenuItem` экземпляров в Android.
+> `NavigationPageRenderer`Для Android доступен переопределяемый `UpdateMenuItemIcon` метод, который можно использовать для загрузки значков из пользовательского `Drawable` . Это переопределение позволяет использовать изображения SVG в качестве значков на `MenuItem` экземплярах в Android.
 
 ### <a name="code"></a>Код
 
-Контекстные действия можно реализовать в любом подклассе `Cell` (если он не используется как заголовок группы), создав `MenuItem` экземпляры и добавив их в коллекцию `ContextActions` для ячейки. У вас есть следующие свойства можно настроить для контекста действия:
+Контекстные действия могут быть реализованы в любом `Cell` подклассе (если он не используется как заголовок группы) путем создания `MenuItem` экземпляров и их добавления в `ContextActions` коллекцию для ячейки. Для контекстного действия можно настроить следующие свойства:
 
-- **Текст** &ndash; строку, которая отображается в пункте меню.
+- **Текстовая надпись** &ndash; Строка, которая отображается в пункте меню.
 - **Щелчок** &ndash; событие при щелчке элемента.
-- **Обратимое** &ndash; (необязательно) при значении true элемент отображается в iOS по-разному.
+- **Разрушающая** &ndash; (необязательно.) Если значение равно true, элемент отрисовывается в iOS по-разному.
 
-В ячейку можно добавить несколько контекстных действий, но только одна из них должна иметь `IsDestructive` установлен в значение `true`. В следующем коде показано, как можно добавить контекстные действия в `ViewCell`.
+В ячейку можно добавить несколько контекстных действий, но только одна из них должна иметь `IsDestructive` значение `true` . В следующем коде показано, как можно добавить контекстные действия в `ViewCell` :
 
 ```csharp
 var moreAction = new MenuItem { Text = "More" };
@@ -147,9 +150,9 @@ ContextActions.Add (moreAction);
 ContextActions.Add (deleteAction);
 ```
 
-## <a name="pull-to-refresh"></a>Извлечь для обновления
+## <a name="pull-to-refresh"></a>Обновление путем оттягивания
 
-Пользователи привыкли, потянув вниз по списку данных обновит этого списка. Элемент управления " [`ListView`](xref:Xamarin.Forms.ListView) " поддерживает это встроенное. Чтобы включить функцию получения обновлений, задайте для [`IsPullToRefreshEnabled`](xref:Xamarin.Forms.ListView.IsPullToRefreshEnabled) значение `true`.
+Пользователи будут ждать, что список данных обновится. [`ListView`](xref:Xamarin.Forms.ListView)Элемент управления поддерживает это готовые элементы. Чтобы включить функцию "принудительное обновление", задайте [`IsPullToRefreshEnabled`](xref:Xamarin.Forms.ListView.IsPullToRefreshEnabled) для параметра значение `true` :
 
 ```xaml
 <ListView ...
@@ -162,7 +165,7 @@ ContextActions.Add (deleteAction);
 listView.IsPullToRefreshEnabled = true;
 ```
 
-Счетчик отображается во время обновления, который по умолчанию является черным. Однако цвет счетчика можно изменить в iOS и Android, задав для свойства `RefreshControlColor` [`Color`](xref:Xamarin.Forms.Color).
+Счетчик отображается во время обновления, который по умолчанию является черным. Однако цвет счетчика можно изменить в iOS и Android, задав `RefreshControlColor` для свойства значение [`Color`](xref:Xamarin.Forms.Color) .
 
 ```xaml
 <ListView ...
@@ -180,18 +183,18 @@ listView.RefreshControlColor = Color.Red;
 
 ![](interactivity-images/refresh-start.png "ListView Pull to Refresh In-Progress")
 
-На следующих снимках экрана показан запрос на обновление после того, как пользователь освободил запрос на вытягивание, а при обновлении [`ListView`](xref:Xamarin.Forms.ListView) отображается счетчик.
+На следующих снимках экрана показан запрос на обновление после того, как пользователь освободил запрос на вытягивание, и при обновлении отображается счетчик [`ListView`](xref:Xamarin.Forms.ListView) :
 
 ![](interactivity-images/refresh-in-progress.png "ListView Pull to Refresh Complete")
 
-[`ListView`](xref:Xamarin.Forms.ListView) запускает событие [`Refreshing`](xref:Xamarin.Forms.ListView.Refreshing) для запуска обновления, а для свойства [`IsRefreshing`](xref:Xamarin.Forms.ListView.IsRefreshing) устанавливается значение `true`. Любой код, необходимый для обновления содержимого `ListView`, должен затем выполняться обработчиком событий для события `Refreshing` или методом, выполняемым [`RefreshCommand`](xref:Xamarin.Forms.ListView.RefreshCommand). После обновления `ListView` свойству `IsRefreshing` должно быть присвоено значение `false`, или метод [`EndRefresh`](xref:Xamarin.Forms.ListView.EndRefresh) должен быть вызван, чтобы указать, что обновление завершено.
+[`ListView`](xref:Xamarin.Forms.ListView)запускает [`Refreshing`](xref:Xamarin.Forms.ListView.Refreshing) событие для запуска обновления, и [`IsRefreshing`](xref:Xamarin.Forms.ListView.IsRefreshing) свойство будет установлено в значение `true` . Любой код, необходимый для обновления содержимого, `ListView` должен затем выполняться обработчиком событий для `Refreshing` события или методом, выполняемым [`RefreshCommand`](xref:Xamarin.Forms.ListView.RefreshCommand) . После `ListView` обновления `IsRefreshing` свойство должно иметь значение `false` , или [`EndRefresh`](xref:Xamarin.Forms.ListView.EndRefresh) метод должен быть вызван, чтобы указать, что обновление завершено.
 
 > [!NOTE]
-> При определении [`RefreshCommand`](xref:Xamarin.Forms.ListView.RefreshCommand)можно указать метод `CanExecute` команды, чтобы включить или отключить команду.
+> При определении [`RefreshCommand`](xref:Xamarin.Forms.ListView.RefreshCommand) `CanExecute` метода можно указать метод команды, чтобы включить или отключить команду.
 
 ## <a name="detect-scrolling"></a>Обнаружение прокрутки
 
-[`ListView`](xref:Xamarin.Forms.ListView) определяет событие `Scrolled`, которое срабатывает для указания на то, что прокрутка выполнена. В следующем примере XAML показан `ListView`, который задает обработчик событий для события `Scrolled`:
+[`ListView`](xref:Xamarin.Forms.ListView)Определяет `Scrolled` событие, которое срабатывает для указания на то, что произошла прокрутка. В следующем примере XAML показан объект `ListView` , который задает обработчик событий для `Scrolled` события:
 
 ```xaml
 <ListView Scrolled="OnListViewScrolled">
@@ -206,7 +209,7 @@ ListView listView = new ListView();
 listView.Scrolled += OnListViewScrolled;
 ```
 
-В этом примере кода обработчик событий `OnListViewScrolled` выполняется при срабатывании события `Scrolled`:
+В этом примере кода `OnListViewScrolled` обработчик событий выполняется при `Scrolled` срабатывании события:
 
 ```csharp
 void OnListViewScrolled(object sender, ScrolledEventArgs e)
@@ -216,7 +219,7 @@ void OnListViewScrolled(object sender, ScrolledEventArgs e)
 }
 ```
 
-Обработчик событий `OnListViewScrolled` выводит значения объекта `ScrolledEventArgs`, сопровождающего событие.
+`OnListViewScrolled`Обработчик событий выводит значения `ScrolledEventArgs` объекта, сопровождающего событие.
 
 ## <a name="related-links"></a>Связанные ссылки
 

@@ -1,22 +1,25 @@
 ---
-title: Ошибка сборки Android — непредвиденная ошибка задачи Линкассемблиес
-ms.topic: troubleshooting
-ms.prod: xamarin
-ms.assetid: EB3BE685-CB72-48E3-89D7-C845E76B9FA2
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/07/2019
-ms.openlocfilehash: a90c56102f77e3f64d9333eec03b025d24888977
-ms.sourcegitcommit: a3b7e016fb25584dbf57bae89b64a9f98031e7c9
+title: ''
+ms.topic: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9c0403203345ed78fae9f30c623c3e501f24ea0e
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76549989"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135906"
 ---
 # <a name="android-build-error--the-linkassemblies-task-failed-unexpectedly"></a>Ошибка сборки Android — непредвиденная ошибка задачи Линкассемблиес
 
-При построении проекта Xamarin. Android, использующего формы, может появиться сообщение об ошибке `The "LinkAssemblies" task failed unexpectedly`. Это происходит, если компоновщик активен (обычно в сборке *выпуска* , чтобы уменьшить размер пакета приложения); Это происходит потому, что целевые объекты Android не обновляются до последней версии платформы. (Дополнительные сведения: [Поддерживаемые платформы Xamarin. Forms](~/get-started/supported-platforms.md#android-platform-support))
+`The "LinkAssemblies" task failed unexpectedly`При построении проекта Xamarin. Android, использующего формы, может появиться сообщение об ошибке. Это происходит, если компоновщик активен (обычно в сборке *выпуска* , чтобы уменьшить размер пакета приложения); Это происходит потому, что целевые объекты Android не обновляются до последней версии платформы. (Дополнительные сведения: [ Xamarin.Forms Поддерживаемые платформы](~/get-started/supported-platforms.md#android-platform-support))
 
 Решение этой проблемы заключается в том, чтобы убедиться, что у вас установлена последняя версия поддерживаемых пакет SDK для Android, и установить в качестве **целевой платформы** последнюю установленную платформу. Также рекомендуется установить в качестве **целевой версии Android** последнюю установленную платформу и **минимальную версию Android** для API 19 или более поздней версии. Это считается поддерживаемой конфигурацией.
 

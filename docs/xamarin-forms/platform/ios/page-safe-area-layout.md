@@ -1,24 +1,27 @@
 ---
-title: Структура безопасного макета области в iOS
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая обеспечивает расположение содержимого страницы в области экрана, которая является надежной для всех устройств, использующих iOS 11 и более поздние версии.
-ms.prod: xamarin
-ms.assetid: 2B6789C1-39B4-4C16-ADE1-3ED3378EAC63
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/24/2018
-ms.openlocfilehash: c6a2ec5a4d1466b7118e6cc7b03cc5518b27e2fb
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5ca30481fbc0e5631ff75000c688dd805793e670
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68644534"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84128067"
 ---
 # <a name="safe-area-layout-guide-on-ios"></a>Структура безопасного макета области в iOS
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Эта платформа iOS предназначена для того, чтобы обеспечить расположение содержимого страницы в области экрана, которая является надежной для всех устройств, использующих iOS 11 и более поздних версий. В частности, полезно убедитесь, что содержимое не попадают в устройство со скругленными углами, индикатор домашней или корпусе датчика на iPhone X. Он используется в XAML, задав `Page.UseSafeArea` вложенное свойство, чтобы `boolean` значение:
+Эта платформа iOS предназначена для того, чтобы обеспечить расположение содержимого страницы в области экрана, которая является надежной для всех устройств, использующих iOS 11 и более поздних версий. В частности, это поможет убедиться, что содержимое не обрезается углами скругленных устройств, индикатором дома или корпусом датчика на iPhone X. Он используется в XAML путем присвоения `Page.UseSafeArea` свойству присоединенного свойства `boolean` значения:
 
 ```xaml
 <ContentPage ...
@@ -31,7 +34,7 @@ ms.locfileid: "68644534"
 </ContentPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -41,16 +44,16 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 On<iOS>().SetUseSafeArea(true);
 ```
 
-`Page.On<iOS>` Метод указывает, что этой платформы будет выполняться только на устройствах iOS. `Page.SetUseSafeArea` Метод в [ `Xamarin.Forms.PlatformConfiguration.iOSSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен, определяет, включена ли направляющая макета безопасной области.
+`Page.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `Page.SetUseSafeArea`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен определяет, включена ли структура защищенной области.
 
-Результатом является то, что содержимое страницы может располагаться на той части экрана, которое безопасно для всех iPhone:
+В результате содержимое страницы может быть размещено в области экрана, которая является надежной для всех iPhone:
 
-[![](page-safe-area-images/safe-area-layout.png "Направляющая макета безопасной области")](page-safe-area-images/safe-area-layout-large.png#lightbox "направляющая макета безопасной области")
+[![](page-safe-area-images/safe-area-layout.png "Safe Area Layout Guide")](page-safe-area-images/safe-area-layout-large.png#lightbox "Safe Area Layout Guide")
 
 > [!NOTE]
-> Безопасные области, определяемой Apple, используемый для задания в Xamarin.Forms [ `Page.Padding` ](xref:Xamarin.Forms.Page.Padding) свойство и переопределяет все предыдущие значения этого свойства, которые были установлены.
+> Защищенная область, определенная Apple, используется в Xamarin.Forms для задания [`Page.Padding`](xref:Xamarin.Forms.Page.Padding) Свойства и переопределяет все предыдущие значения этого свойства, которые были заданы.
 
-Безопасной области можно настраивать путем извлечения его [ `Thickness` ](xref:Xamarin.Forms.Thickness) со значением `Page.SafeAreaInsets` метода из [ `Xamarin.Forms.PlatformConfiguration.iOSSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен. Его можно изменить как требуется и переназначается `Padding` свойства в конструкторе страниц или [ `OnAppearing` ](xref:Xamarin.Forms.Page.OnAppearing) переопределить:
+Защищенную область можно настроить, извлекая ее [`Thickness`](xref:Xamarin.Forms.Thickness) значение с помощью `Page.SafeAreaInsets` метода из [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен. Затем его можно изменить по мере необходимости и повторно назначить `Padding` свойству в конструкторе страницы или [`OnAppearing`](xref:Xamarin.Forms.Page.OnAppearing) переопределить:
 
 ```csharp
 protected override void OnAppearing()
@@ -65,6 +68,6 @@ protected override void OnAppearing()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

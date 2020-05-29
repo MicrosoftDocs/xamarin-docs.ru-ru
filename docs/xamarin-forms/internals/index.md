@@ -1,39 +1,42 @@
 ---
-title: Дополнительные понятия Xamarin. Forms & внутренние компоненты
-description: Ознакомьтесь с дополнительными концепциями и внутренними возможностями Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 2273a31c-4022-42ba-befe-0d23ce2ff3b5
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/20/2020
-ms.openlocfilehash: 98e488dbf8446ee151c342c73bf9b0a8d9ff7a56
-ms.sourcegitcommit: 6c60914b380ff679bbffd7790edd4d5e18005d0a
+title: Xamarin.FormsДополнительные понятия & внутренних компонентов
+description: Узнайте о дополнительных концепциях и внутренних компонентах Xamarin.Forms .
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 410aadcb885ed66283eb306cb9aa4c5e764fa8ec
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80070258"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139039"
 ---
-# <a name="xamarinforms-advanced-concepts--internals"></a>Дополнительные понятия Xamarin. Forms & внутренние компоненты
+# <a name="xamarinforms-advanced-concepts--internals"></a>Xamarin.FormsДополнительные понятия & внутренних компонентов
 
-_Ознакомьтесь с дополнительными концепциями и внутренними возможностями Xamarin. Forms._
+_Узнайте о дополнительных концепциях и внутренних компонентах Xamarin.Forms ._
 
-## <a name="controls-class-hierarchy"></a>[Управляет иерархией классов](class-hierarchy.md)
+## <a name="controls-class-hierarchy"></a>[Иерархия классов элементов управления](class-hierarchy.md)
 
-Узнайте больше об иерархии типов, которые используются для создания пользовательского интерфейса приложения Xamarin.Forms.
+Сведения об иерархии типов, используемых для создания пользовательского интерфейса Xamarin.Forms приложения.
 
 ## <a name="dependency-resolution"></a>[Разрешение зависимостей](dependency-resolution.md)
 
-Узнайте, как внедрить метод разрешения зависимостей в Xamarin. Forms, чтобы приложение было управлять созданием и временем существования пользовательских модулей подготовки отчетов, эффектов и `DependencyService` реализаций.
+Узнайте, как внедрить метод разрешения зависимостей в Xamarin.Forms , чтобы приложение было управлять созданием и временем существования пользовательских модулей подготовки отчетов, эффектов и `DependencyService` реализаций.
 
 ## <a name="experimental-flags"></a>[Экспериментальные флаги](experimental-flags.md)
 
-Экспериментальные флаги Xamarin. Forms позволяют группе инженеров-разработчиков поставлять новые функции пользователям быстрее, в то же время сохраняя возможность изменять API функций до того, как они переходят в стабильный выпуск.
+Xamarin.Formsэкспериментальные флаги позволяют группе инженеров-разработчиков поставлять новые функции пользователям быстрее, в то же время сохраняя возможность изменять API функций до того, как они переходят в стабильный выпуск.
 
 ## <a name="fast-renderers"></a>[Быстрые модули подготовки отчетов](fast-renderers.md)
 
-Узнайте, как быстрые отрисовщики сокращают затраты на отрисовку элементов управления Xamarin.Forms на платформе Android путем сведения итоговой иерархии собственных элементов управления.
+Узнайте о быстрых модулях подготовки отчетов, которые снижают затраты на инфляцию и отрисовку Xamarin.Forms элемента управления в Android путем преобразования итоговой иерархии собственных элементов управления.
 
-## <a name="source-link"></a>[Ссылка на источник](sourcelink.md)
+## <a name="source-link"></a>[Source Link](sourcelink.md)
 
-Узнайте, как выполнить отладку приложения в исходном коде Xamarin.Forms.
+Узнайте, как выполнить отладку приложения в Xamarin.Forms исходном коде.

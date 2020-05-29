@@ -1,56 +1,59 @@
 ---
-title: Передача аргументов в XAML
-description: В этой статье демонстрируется использование атрибутов XAML, которые могут использоваться для передачи аргументов конструктора не по умолчанию, для вызова методов фабрики, а также указать тип универсального аргумента.
-ms.prod: xamarin
-ms.assetid: 8F3B267F-499E-4D79-9193-FCA99F199519
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/25/2016
-ms.openlocfilehash: 80f332e45d6c46ad49543923e85cbb2eceadb378
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f314f3145b3573184cb8cdf7370394c975c66859
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79306563"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84127084"
 ---
 # <a name="passing-arguments-in-xaml"></a>Передача аргументов в XAML
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-passingconstructorarguments)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-passingconstructorarguments)
 
 _В этой статье показано использование атрибутов XAML, которые можно использовать для передачи аргументов в конструкторы, отличные от по умолчанию, для вызова методов фабрики и для указания типа универсального аргумента._
 
 ## <a name="overview"></a>Обзор
 
-Часто бывает необходимо создавать экземпляры объектов с помощью конструкторов, которые требуют аргументов или путем вызова метода статического создания. Это можно сделать в XAML с помощью атрибутов `x:Arguments` и `x:FactoryMethod`:
+Часто требуется создавать экземпляры объектов с конструкторами, которые требуют аргументов, или путем вызова статического метода создания. Это можно сделать в XAML с помощью `x:Arguments` `x:FactoryMethod` атрибутов и:
 
-- Атрибут `x:Arguments` используется для указания аргументов конструктора для конструктора, не являющегося конструктором по умолчанию, или для объявления объекта фабричного метода. Дополнительные сведения см. в разделе [Передача аргументов конструктора](#constructor_arguments).
-- Атрибут `x:FactoryMethod` используется для указания фабричного метода, который можно использовать для инициализации объекта. Дополнительные сведения см. в разделе [вызов фабричных методов](#factory_methods).
+- `x:Arguments`Атрибут используется для указания аргументов конструктора для конструктора, не являющегося конструктором по умолчанию, или для объявления объекта фабричного метода. Дополнительные сведения см. в разделе [Передача аргументов конструктора](#constructor_arguments).
+- `x:FactoryMethod`Атрибут используется для указания фабричного метода, который можно использовать для инициализации объекта. Дополнительные сведения см. в разделе [вызов фабричных методов](#factory_methods).
 
-Кроме того, можно использовать атрибут `x:TypeArguments`, чтобы указать аргументы универсального типа для конструктора универсального типа. Дополнительные сведения см. [в разделе Указание аргумента универсального типа](#generic_type_arguments).
+Кроме того, `x:TypeArguments` атрибут можно использовать для указания аргументов универсального типа для конструктора универсального типа. Дополнительные сведения см. [в разделе Указание аргумента универсального типа](#generic_type_arguments).
 
 <a name="constructor_arguments" />
 
 ## <a name="passing-constructor-arguments"></a>Передача аргументов конструктора
 
-Аргументы можно передать в конструктор, не используемый по умолчанию, с помощью атрибута `x:Arguments`. Каждый аргумент конструктора должны быть заключены в XML-элемент, представляющий тип аргумента. Xamarin.Forms поддерживает следующие элементы для основных типов:
+Аргументы могут передаваться в конструктор, не используемый по умолчанию, с помощью `x:Arguments` атрибута. Каждый аргумент конструктора должен разделяться внутри XML-элемента, представляющего тип аргумента. Xamarin.Formsподдерживает следующие элементы для базовых типов:
 
-- `x:Object`
+- `x:Array`
 - `x:Boolean`
 - `x:Byte`
+- `x:Char`
+- `x:DateTime`
+- `x:Decimal`
+- `x:Double`
 - `x:Int16`
 - `x:Int32`
 - `x:Int64`
+- `x:Object`
 - `x:Single`
-- `x:Double`
-- `x:Decimal`
-- `x:Char`
 - `x:String`
 - `x:TimeSpan`
-- `x:Array`
-- `x:DateTime`
 
-В следующем примере кода показано использование атрибута `x:Arguments` с тремя конструкторами [`Color`](xref:Xamarin.Forms.Color) :
+В следующем примере кода показано использование `x:Arguments` атрибута с тремя [`Color`](xref:Xamarin.Forms.Color) конструкторами:
 
 ```xaml
 <BoxView HeightRequest="150" WidthRequest="150" HorizontalOptions="Center">
@@ -87,19 +90,19 @@ _В этой статье показано использование атриб
 </BoxView>
 ```
 
-Число элементов в теге `x:Arguments` и типы этих элементов должны соответствовать одному из конструкторов [`Color`](xref:Xamarin.Forms.Color) . Для [конструктора](xref:Xamarin.Forms.Color.%23ctor(System.Double)) `Color` с одним параметром требуется значение оттенка серого от 0 (черный) до 1 (белый). Для [конструктора](xref:Xamarin.Forms.Color.%23ctor(System.Double,System.Double,System.Double)) `Color` с тремя параметрами требуется красный, зеленый и синий значения в диапазоне от 0 до 1. [Конструктор](xref:Xamarin.Forms.Color.%23ctor(System.Double,System.Double,System.Double,System.Double)) `Color` с четырьмя параметрами добавляет альфа-канал в качестве четвертого параметра.
+Число элементов в `x:Arguments` теге и типы этих элементов должны соответствовать одному из [`Color`](xref:Xamarin.Forms.Color) конструкторов. Для `Color` [конструктора](xref:Xamarin.Forms.Color.%23ctor(System.Double)) с одним параметром требуется значение оттенка серого от 0 (черный) до 1 (белый). Для `Color` [конструктора](xref:Xamarin.Forms.Color.%23ctor(System.Double,System.Double,System.Double)) с тремя параметрами требуется красный, зеленый и синий значения в диапазоне от 0 до 1. `Color` [Конструктор](xref:Xamarin.Forms.Color.%23ctor(System.Double,System.Double,System.Double,System.Double)) с четырьмя параметрами добавляет альфа-канал в качестве четвертого параметра.
 
-На следующих снимках экрана показан результат вызова каждого конструктора [`Color`](xref:Xamarin.Forms.Color) с указанными значениями аргумента:
+На следующих снимках экрана показан результат вызова каждого [`Color`](xref:Xamarin.Forms.Color) конструктора с указанными значениями аргументов:
 
 ![Боксвиев. Color, заданный с помощью x:Arguments](passing-arguments-images/passing-arguments.png)
 
 <a name="factory_methods" />
 
-## <a name="calling-factory-methods"></a>Обращение к методам фабрики
+## <a name="calling-factory-methods"></a>Вызов методов фабрики
 
-Фабричные методы могут быть вызваны в XAML путем указания имени метода с помощью атрибута `x:FactoryMethod` и его аргументов, использующих атрибут `x:Arguments`. Фабричный метод — это `public static` метод, который возвращает объекты или значения того же типа, что и класс или структура, определяющие методы.
+Фабричные методы могут быть вызваны в XAML путем указания имени метода с помощью `x:FactoryMethod` атрибута и его аргументов с помощью `x:Arguments` атрибута. Фабричный метод — это `public static` метод, возвращающий объекты или значения того же типа, что и класс или структура, определяющие методы.
 
-Структура [`Color`](xref:Xamarin.Forms.Color) определяет ряд фабричных методов, и в следующем примере кода демонстрируется вызов трех из них:
+[`Color`](xref:Xamarin.Forms.Color)Структура определяет ряд фабричных методов, и в следующем примере кода демонстрируется вызов трех из них:
 
 ```xaml
 <BoxView HeightRequest="150" WidthRequest="150" HorizontalOptions="Center">
@@ -137,9 +140,9 @@ _В этой статье показано использование атриб
 </BoxView>
 ```
 
-Число элементов в теге `x:Arguments` и типы этих элементов должны соответствовать аргументам вызываемого метода фабрики. Для метода фабрики [`FromRgba`](xref:Xamarin.Forms.Color.FromRgba(System.Int32,System.Int32,System.Int32,System.Int32)) требуется четыре параметра [`Int32`](https://docs.microsoft.com/dotnet/api/system.int32) , представляющие красные, зеленые, синие и альфа-значения в диапазоне от 0 до 255 соответственно. Для метода фабрики [`FromHsla`](xref:Xamarin.Forms.Color.FromHsla(System.Double,System.Double,System.Double,System.Double)) требуется четыре параметра [`Double`](https://docs.microsoft.com/dotnet/api/system.double) , представляющие оттенок, насыщенность, яркость и альфа-значения в диапазоне от 0 до 1 соответственно. Для метода фабрики [`FromHex`](xref:Xamarin.Forms.Color.FromHex(System.String)) требуется [`String`](https://docs.microsoft.com/dotnet/api/system.string) , представляющий шестнадцатеричный цвет (a) RGB.
+Число элементов в `x:Arguments` теге и типы этих элементов должны соответствовать аргументам вызываемого метода фабрики. [`FromRgba`](xref:Xamarin.Forms.Color.FromRgba(System.Int32,System.Int32,System.Int32,System.Int32))Фабричный метод требует четыре [`Int32`](https://docs.microsoft.com/dotnet/api/system.int32) параметра, представляющих красные, зеленые, синие и альфа-значения, в диапазоне от 0 до 255 соответственно. [`FromHsla`](xref:Xamarin.Forms.Color.FromHsla(System.Double,System.Double,System.Double,System.Double))Для метода фабрики требуется четыре [`Double`](https://docs.microsoft.com/dotnet/api/system.double) параметра, представляющие оттенок, насыщенность, яркость и альфа-значения в диапазоне от 0 до 1 соответственно. Для [`FromHex`](xref:Xamarin.Forms.Color.FromHex(System.String)) метода фабрики требуется [`String`](https://docs.microsoft.com/dotnet/api/system.string) , представляющий шестнадцатеричный цвет (a) RGB.
 
-На следующих снимках экрана показан результат вызова каждого метода фабрики [`Color`](xref:Xamarin.Forms.Color) с указанными значениями аргументов:
+На следующих снимках экрана показан результат вызова каждого [`Color`](xref:Xamarin.Forms.Color) метода фабрики с указанными значениями аргументов:
 
 ![Боксвиев. Color, заданный с помощью x:FactoryMethod и x:Arguments](passing-arguments-images/factory-methods.png)
 
@@ -147,7 +150,7 @@ _В этой статье показано использование атриб
 
 ## <a name="specifying-a-generic-type-argument"></a>Указание аргумента универсального типа
 
-Аргументы универсального типа для конструктора универсального типа можно указать с помощью атрибута `x:TypeArguments`, как показано в следующем примере кода:
+Аргументы универсального типа для конструктора универсального типа можно указать с помощью `x:TypeArguments` атрибута, как показано в следующем примере кода:
 
 ```xaml
 <ContentPage ...>
@@ -163,14 +166,13 @@ _В этой статье показано использование атриб
 </ContentPage>
 ```
 
-Класс [`OnPlatform`](xref:Xamarin.Forms.OnPlatform`1) является универсальным классом и должен быть создан с помощью атрибута `x:TypeArguments`, соответствующего целевому типу. В классе [`On`](xref:Xamarin.Forms.On) атрибут [`Platform`](xref:Xamarin.Forms.On.Platform) может принимать одно значение `string` или несколько `string` значений с разделителями-запятыми. В этом примере свойству [`StackLayout.Margin`](xref:Xamarin.Forms.View.Margin) присвоено [`Thickness`](xref:Xamarin.Forms.Thickness), зависящее от платформы.
+[`OnPlatform`](xref:Xamarin.Forms.OnPlatform`1)Класс является универсальным классом и должен быть создан с помощью `x:TypeArguments` атрибута, соответствующего целевому типу. В [`On`](xref:Xamarin.Forms.On) классе [`Platform`](xref:Xamarin.Forms.On.Platform) атрибут может принимать одно `string` значение или несколько значений, разделенных запятыми `string` . В этом примере [`StackLayout.Margin`](xref:Xamarin.Forms.View.Margin) свойству присваивается значение для конкретной платформы [`Thickness`](xref:Xamarin.Forms.Thickness) .
 
-## <a name="summary"></a>Сводка
-
-В этой статье показано, с помощью атрибутов XAML, которые могут использоваться для передачи аргументов конструктора не по умолчанию, для вызова методов фабрики, а также указать тип универсального аргумента.
+Дополнительные сведения об аргументах универсального типа см. [в разделе Универсальные шаблоны в Xamarin.Forms XAML](generics.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пространства имен языка XAML](~/xamarin-forms/xaml/namespaces.md)
 - [Передача аргументов конструктора (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-passingconstructorarguments)
 - [Методы вызова фабрики (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-callingfactorymethods)
+- [Пространства имен языка XAML](~/xamarin-forms/xaml/namespaces.md)
+- [Универсальные шаблоны в Xamarin.Forms XAML](generics.md)

@@ -1,18 +1,21 @@
 ---
-title: Линии и концы штрихов
-description: В этой статье описывается использование SkiaSharp для рисования линий с концы штрихов различных приложений Xamarin.Forms и демонстрирует это с помощью примера кода.
-ms.prod: xamarin
-ms.assetid: 1F854DDD-5D1B-4DE4-BD2D-584439429FDB
-ms.technology: xamarin-skiasharp
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/10/2017
-ms.openlocfilehash: 9aaecb8c63ff28111097dce81954f523b4c7731b
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+title: ''
+description: В этой статье объясняется, как использовать SkiaSharp для рисования линий с различными наконечниками штриха в Xamarin.Forms приложениях и демонстрируется в примере кода.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 87b97ad913e08c42d16bbf055f168c07b9bd60e8
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725216"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137212"
 ---
 # <a name="lines-and-stroke-caps"></a>Линии и концы штрихов
 
@@ -20,25 +23,25 @@ ms.locfileid: "76725216"
 
 _Сведения об использовании SkiaSharp для рисования линий с различными наконечниками штриха_
 
-В SkiaSharp Подготовка к просмотру на одной строке существенно отличается от отрисовки ряд соединенных прямых линий. Даже в том случае, если рисования отдельных строк, тем не менее, часто бывает необходимо предоставить определенной Толщина линий. Как эти строки становятся шире, внешний вид концы строк также становится важным. Внешний вид конца линии называется *наконечником обводки*.
+В SkiaSharp отрисовка одной строки сильно отличается от визуализации ряда Соединенных прямых линий. Однако даже при рисовании отдельных линий часто приходится присваивать линиям определенную толщину штрихов. Так как эти строки становятся шире, внешний вид концов линий также становится очень важным. Внешний вид конца линии называется *наконечником обводки*.
 
 ![](lines-images/strokecapsexample.png "The three stroke caps options")
 
-Для рисования отдельных строк `SKCanvas` определяет простой метод [`DrawLine`](xref:SkiaSharp.SKCanvas.DrawLine(System.Single,System.Single,System.Single,System.Single,SkiaSharp.SKPaint)) , аргументы которого указывают начальную и конечную координаты линии с объектом `SKPaint`:
+Для рисования отдельных строк `SKCanvas` определяет простой метод, [`DrawLine`](xref:SkiaSharp.SKCanvas.DrawLine(System.Single,System.Single,System.Single,System.Single,SkiaSharp.SKPaint)) аргументы которого указывают начальную и конечную координаты строки с `SKPaint` объектом:
 
 ```csharp
 canvas.DrawLine (x0, y0, x1, y1, paint);
 ```
 
-По умолчанию свойство [`StrokeWidth`](xref:SkiaSharp.SKPaint.StrokeWidth) недавно созданного объекта `SKPaint` имеет значение 0, что аналогично значению 1 в отрисовке линии размером один пиксель в толщину. Это выглядит очень тонко на устройствах с высоким разрешением, например на телефонах, поэтому вы, вероятно, захотите задать для `StrokeWidth` большее значение. Но как только вы начнете Рисование линий расширяемой толщины, вызывающего событие еще одна проблема: как должны начала и окончания этих толстых строк отображаться?
+По умолчанию [`StrokeWidth`](xref:SkiaSharp.SKPaint.StrokeWidth) свойство только что созданного `SKPaint` объекта имеет значение 0, что аналогично значению 1 в отрисовке линии с одним пикселем в толщине. Это выглядит очень тонко на устройствах с высоким разрешением, например на телефонах, поэтому вам, вероятно, потребуется задать `StrokeWidth` большее значение. Но после начала рисования линий с изменяемой толщиной возникает другая ошибка: как должны начинаться и завершаться эти толстые линии?
 
-Внешний вид линий начала и конца линии называется *концом строки* или, в СКИА, *наконечником обводки*. Слово «Cap» в этом контексте относится к разновидности Hat &mdash; что-то, что находится в конце строки. Свойству [`StrokeCap`](xref:SkiaSharp.SKPaint.StrokeCap) объекта `SKPaint` задается один из следующих членов перечисления [`SKStrokeCap`](xref:SkiaSharp.SKStrokeCap) :
+Внешний вид линий начала и конца линии называется *концом строки* или, в СКИА, *наконечником обводки*. Слово «Cap» в этом контексте относится к типу Hat &mdash; , который находится в конце строки. [`StrokeCap`](xref:SkiaSharp.SKPaint.StrokeCap)Свойству объекта задается `SKPaint` один из следующих членов [`SKStrokeCap`](xref:SkiaSharp.SKStrokeCap) перечисления:
 
-- `Butt` (по умолчанию)
+- `Butt`(по умолчанию)
 - `Square`
 - `Round`
 
-Лучше всего они показаны с помощью примера программы. Раздел **SkiaSharp Lines and paths** программы [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) начинается со страницы, Наименованной с **прописными буквами** , на основе класса [`StrokeCapsPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths/StrokeCapsPage.cs) . На этой странице определяется обработчик событий `PaintSurface`, который циклически проходит по трем элементам перечисления `SKStrokeCap`, отображая как имя члена перечисления, так и рисование линии с помощью этого конца штриха:
+Они лучше проиллюстрированы с помощью примера программы. Раздел **SkiaSharp Lines and paths** программы [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) начинается со страницы, наименованной **прописные буквы** на основе [`StrokeCapsPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths/StrokeCapsPage.cs) класса. На этой странице определяется `PaintSurface` обработчик событий, который циклически проходит по трем элементам `SKStrokeCap` перечисления, отображая как имя члена перечисления, так и рисование линии с помощью этого конца штриха:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -92,25 +95,25 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-Для каждого члена перечисления `SKStrokeCap` обработчик рисует две строки: одну с толщиной штриха 50 пикселей, а другую — с толщиной обводки, равной двум пикселям. Это вторая строка предназначен для демонстрации геометрические начало и конец строки, независимо от толщины линии и наконечник штриха:
+Для каждого члена `SKStrokeCap` перечисления обработчик рисует две строки: одну с толщиной штриха 50 пикселей, а другую — с толщиной обводки, равной двум пикселям. Вторая строка предназначена для иллюстрации геометрического начала и конца строки независимо от толщины линии и конца штриха.
 
 [![](lines-images/strokecaps-small.png "Triple screenshot of the Stroke Caps page")](lines-images/strokecaps-large.png#lightbox "Triple screenshot of the Stroke Caps page")
 
-Как видите, `Square` и `Round`ные концы обводки эффективно дополняют длину линии на половину толщины штриха в начале строки и снова в конце. Это расширение важно в тех случаях, когда это необходимо для определения измерений, готовый для просмотра графического объекта.
+Как видите, знаки и линии `Square` `Round` обводки фактически расширяют длину строки на половину ширины штриха в начале строки и снова в конце. Это расширение имеет важное значение, когда необходимо определить размеры визуализированного объекта Graphics.
 
-Класс `SKCanvas` также содержит еще один метод для рисования нескольких строк, которые несколько довольно необычная:
+`SKCanvas`Класс также содержит еще один метод для рисования нескольких строк, которые несколько довольно необычная:
 
 ```csharp
 DrawPoints (SKPointMode mode, points, paint)
 ```
 
-Параметр `points` является массивом `SKPoint` значений и `mode` является членом перечисления [`SKPointMode`](xref:SkiaSharp.SKPointMode) , который имеет три члена:
+`points`Параметр является массивом `SKPoint` значений и `mode` является членом [`SKPointMode`](xref:SkiaSharp.SKPointMode) перечисления, который имеет три члена:
 
-- `Points` для отображения отдельных точек
-- `Lines` для соединения каждой пары точек
-- `Polygon` для подключения всех последовательных точек
+- `Points`отрисовка отдельных точек
+- `Lines`соединение каждой пары точек
+- `Polygon`подключение всех последовательных точек
 
-Этот метод показан на странице с **несколькими строками** . В файле [**мултиплелинеспаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths/MultipleLinesPage.xaml) создаются два представления `Picker`, которые позволяют выбрать член перечисления `SKPointMode` и член перечисления `SKStrokeCap`:
+Этот метод показан на странице с **несколькими строками** . Файл [**мултиплелинеспаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths/MultipleLinesPage.xaml) создает два `Picker` представления, которые позволяют выбрать член `SKPointMode` перечисления и член `SKStrokeCap` перечисления:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -173,7 +176,7 @@ DrawPoints (SKPointMode mode, points, paint)
 </ContentPage>
 ```
 
-Обратите внимание, что объявления пространства имен SkiaSharp немного отличаются, так как пространство имен `SkiaSharp` требуется для ссылки на элементы перечислений `SKPointMode` и `SKStrokeCap`. Обработчик `SelectedIndexChanged` для `Picker` представлений просто делает недействительным объект `SKCanvasView`:
+Обратите внимание, что объявления пространства имен SkiaSharp немного отличаются, так как `SkiaSharp` пространство имен требуется для ссылки на члены `SKPointMode` `SKStrokeCap` перечислений и. `SelectedIndexChanged`Обработчик для обоих `Picker` представлений просто делает недействительным `SKCanvasView` объект:
 
 ```csharp
 void OnPickerSelectedIndexChanged(object sender, EventArgs args)
@@ -185,9 +188,9 @@ void OnPickerSelectedIndexChanged(object sender, EventArgs args)
 }
 ```
 
-Этот обработчик должен проверить наличие объекта `SKCanvasView`, так как обработчик событий сначала вызывается, когда свойство `SelectedIndex` `Picker` имеет значение 0 в файле XAML и происходит до создания экземпляра `SKCanvasView`.
+Этот обработчик должен проверить наличие `SKCanvasView` объекта, так как обработчик события сначала вызывается `SelectedIndex` , когда свойство объекта `Picker` имеет значение 0 в файле XAML и происходит до `SKCanvasView` создания экземпляра.
 
-Обработчик `PaintSurface` получает два значения перечисления из представлений `Picker`:
+`PaintSurface`Обработчик получает два значения перечисления из `Picker` представлений:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -226,17 +229,17 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-На снимках экрана показаны различные `Picker` выборки:
+Снимки экрана показывают разнообразные `Picker` варианты выбора:
 
 [![](lines-images/multiplelines-small.png "Triple screenshot of the Multiple Lines page")](lines-images/multiplelines-large.png#lightbox "Triple screenshot of the Multiple Lines page")
 
-В левой части устройства iPhone показано, как элемент перечисления `SKPointMode.Points` приводит `DrawPoints` к отображению каждой точки в `SKPoint` массиве в виде квадрата, если конец строки `Butt` или `Square`. Круги подготавливаются к просмотру, если конец строки `Round`.
+На iPhone слева показано, как `SKPointMode.Points` элемент перечисления вызывает `DrawPoints` визуализацию каждой точки в `SKPoint` массиве в виде квадрата, если конец строки имеет значение `Butt` или `Square` . Круги подготавливаются к просмотру, если конец строки имеет значение `Round` .
 
-На снимке экрана Android показан результат `SKPointMode.Lines`. Метод `DrawPoints` рисует линию между каждой парой значений `SKPoint`, используя заданное окончание строки, в данном случае `Round`.
+На снимке экрана Android показан результат `SKPointMode.Lines` . `DrawPoints`Метод рисует линию между каждой парой `SKPoint` значений, используя заданное окончание строки в данном случае `Round` .
 
-Если вместо этого используется `SKPointMode.Polygon`, линия рисуется между последовательными точками в массиве, но если смотреть очень близко, вы увидите, что эти строки не подключены. Каждая из этих отдельных строк начинается и заканчивается указанного отрезка. Если выбрать `Round` с прописными буквами, строки могут быть подключены, но на самом деле они не подключены.
+Если вместо этого используется `SKPointMode.Polygon` , линия рисуется между последовательными точками в массиве, но если смотреть очень близко, вы увидите, что эти строки не подключены. Каждая из этих отдельных строк начинается и заканчивается заданным концом строки. Если выбрать `Round` ограничения, строки могут быть подключены, но они действительно не подключены.
 
-Являются ли строки, подключен или не подключен является важным аспектом работа с контурами графики.
+Наличие подключенных или неподключенных линий является важнейшим аспектом работы с графическими путями.
 
 ## <a name="related-links"></a>Связанные ссылки
 

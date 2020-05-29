@@ -1,36 +1,39 @@
 ---
-title: Цвета в Xamarin. Forms
-description: Xamarin. Forms предоставляет гибкий класс цветового кросс-платформенного цвета. В этой статье объясняются функциональные возможности, предоставляемые классом Color, и способы их использования.
-ms.prod: xamarin
-ms.assetid: 22288ABF-57BE-47A9-ACC3-AC604D787C46
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/02/2020
-ms.openlocfilehash: 42b532b8565d2d8e0289b8fd446e1dd7762a09ac
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+title: Цвета вXamarin.Forms
+description: Xamarin.Formsпредоставляет гибкий класс цветов кросс-платформенного цвета. В этой статье объясняются функциональные возможности, предоставляемые классом Color, и способы их использования.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a02fe7451702367d85d322b756df4a547a009454
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82517031"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137349"
 ---
-# <a name="colors-in-xamarinforms"></a>Цвета в Xamarin. Forms
+# <a name="colors-in-xamarinforms"></a>Цвета вXamarin.Forms
 
-[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithcolors)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithcolors)
 
 _Xamarin. Forms предоставляет гибкий класс цветового кросс-платформенного цвета._
 
-В этой статье описываются различные способы использования [`Color`](xref:Xamarin.Forms.Color) класса в Xamarin. Forms.
+В этой статье описываются различные способы [`Color`](xref:Xamarin.Forms.Color) использования класса в Xamarin.Forms .
 
-[`Color`](xref:Xamarin.Forms.Color) Класс предоставляет ряд методов для создания `Color` экземпляра:
+[`Color`](xref:Xamarin.Forms.Color)Класс предоставляет ряд методов для создания `Color` экземпляра:
 
-- **Именованные цвета** — коллекция общих именованных цветов, включая `Red`, `Green`и. `Blue`
+- **Именованные цвета** — коллекция общих именованных цветов, включая `Red` , `Green` и `Blue` .
 - `FromHex`— Строковое значение, аналогичное синтаксису, используемому в HTML, например "00FF00". При необходимости в качестве первой пары символов ("CC00FF00") можно указать альфа-канал.
-- `FromHsla`— `double` Значения тона, насыщенности и яркости с необязательным альфа-значением (0,0 – 1,0).
+- `FromHsla`— Значения тона, насыщенности и яркости `double` с необязательным альфа-значением (0,0 – 1,0).
 - `FromHsv`— Оттенок, насыщенность, значение `int` или `double` значения.
 - `FromHsva`— Оттенок, насыщенность, значение `int` или `double` значения.
 - `FromRgb`— Красный, зеленый и синий `int` значения (0-255).
-- `FromRgba`— Красный, зеленый, синий и альфа `int` -значения (0-255).
+- `FromRgba`— Красный, зеленый, синий и альфа- `int` значения (0-255).
 - `FromUint`-задать одиночное `double` значение, представляющее **ARGB**.
 
 Вот несколько примеров цветов, назначенных для `BackgroundColor` некоторых меток с использованием различных вариантов разрешенного синтаксиса:
@@ -49,7 +52,7 @@ var @default = new Label    { Text = "Default",    BackgroundColor = Color.Defau
 var accent = new Label      { Text = "Accent",     BackgroundColor = Color.Accent };
 ```
 
-Эти цвета показаны на каждой из перечисленных ниже платформ. Обратите внимание на окончательный `Accent` цвет — это синий длинных цвет для iOS и Android; Это значение определяется Xamarin. Forms.
+Эти цвета показаны на каждой из перечисленных ниже платформ. Обратите внимание, что окончательный цвет — `Accent` это синий длинных цвет для iOS и Android; это значение определяется в Xamarin.Forms .
 
  [![Демонстрационный цвет](colors-images/colors-sml.png "Демонстрационный цвет")](colors-images/colors.png#lightbox "Демонстрационный цвет")
 
@@ -72,11 +75,11 @@ var accent = new Label      { Text = "Accent",     BackgroundColor = Color.Accen
 [`Color`](xref:Xamarin.Forms.Color)к экземплярам относятся следующие дополнительные методы:
 
 - `AddLuminosity`— Возвращает объект `Color` , изменяя яркость на заданную разницу.
-- `MultiplyAlpha`— Возвращает объект `Color` , изменяя альфа-канал, умножая его на заданное альфа-значение.
-- `ToHex`— Возвращает шестнадцатеричное `string` представление `Color`.
-- `WithHue`— Возвращает `Color`, заменяя оттенок на заданное значение.
-- `WithLuminosity`— Возвращает `Color`, заменяя яркость на предоставляемое значение.
-- `WithSaturation`— Возвращает `Color`, заменяя насыщенность заданным значением.
+- `MultiplyAlpha`— Возвращает объект, `Color` изменяя альфа-канал, умножая его на заданное альфа-значение.
+- `ToHex`— Возвращает шестнадцатеричное `string` представление `Color` .
+- `WithHue`— Возвращает `Color` , заменяя оттенок на заданное значение.
+- `WithLuminosity`— Возвращает `Color` , заменяя яркость на предоставляемое значение.
+- `WithSaturation`— Возвращает `Color` , заменяя насыщенность заданным значением.
 
 ## <a name="implicit-conversions"></a>Неявные преобразования
 
@@ -95,7 +98,7 @@ Xamarin.Forms.Color xfColor2 = sdColor;
 
 ## <a name="deviceruntimeplatform"></a>Device. Рунтимеплатформ
 
-В этом фрагменте кода `Device.RuntimePlatform` используется свойство для выборочного задания цвета `ActivityIndicator`:
+В этом фрагменте кода используется `Device.RuntimePlatform` свойство для выборочного задания цвета `ActivityIndicator` :
 
 ```csharp
 ActivityIndicator activityIndicator = new ActivityIndicator

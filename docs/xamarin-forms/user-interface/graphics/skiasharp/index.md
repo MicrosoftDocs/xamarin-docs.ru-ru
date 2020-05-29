@@ -1,69 +1,72 @@
 ---
-title: Графика SkiaSharp в Xamarin.Forms
-description: SkiaSharp — это система Двухмерная графика для .NET и C# на платформе Skia графики открытым исходным кодом, которая широко используется в продуктах Google. В этом руководстве описывается использование SkiaSharp для двумерной графики в приложениях Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 2C348BEA-81DF-4794-8857-EB1DFF5E11DB
-author: davidbritch
-ms.author: dabritch
-ms.date: 09/11/2017
-ms.openlocfilehash: 6b85cdcd92c4680ced9f75d7b8c5a69c9512d6c4
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: SkiaSharp графика вXamarin.Forms
+description: SkiaSharp — это двухмерная графическая система для .NET и C# на базе графического подсистемы СКИА с открытым кодом, которая широко используется в продуктах Google. В этом руководство объясняется, как использовать SkiaSharp для двухмерной графики в Xamarin.Forms приложениях.
+ms.prod: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 855bd0d357950b019487b3ea05e379915f54b9d4
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68656150"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84127638"
 ---
-# <a name="skiasharp-graphics-in-xamarinforms"></a>Графика SkiaSharp в Xamarin.Forms
+# <a name="skiasharp-graphics-in-xamarinforms"></a>SkiaSharp графика вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-_Использование SkiaSharp для двумерной графики в приложениях Xamarin.Forms_
+_Использование SkiaSharp для двухмерной графики в Xamarin.Forms приложениях_
 
-SkiaSharp — это система Двухмерная графика для .NET и C# на платформе Skia графики открытым исходным кодом, которая широко используется в продуктах Google. SkiaSharp в приложениях Xamarin.Forms можно использовать для рисования двухмерной векторной графики, точечные рисунки и текст. См. в разделе [двухмерного рисования](~/graphics-games/skiasharp/index.md) руководство более общие сведения о библиотеке SkiaSharp и других учебников.
+SkiaSharp — это двухмерная графическая система для .NET и C# на базе графического подсистемы СКИА с открытым кодом, которая широко используется в продуктах Google. SkiaSharp можно использовать в Xamarin.Forms приложениях для рисования двухмерной векторной графики, точечных рисунков и текста. Более общие сведения о библиотеке SkiaSharp и других руководствах см. в разделе Руководство по [2D-чертежу](~/graphics-games/skiasharp/index.md) .
 
-В этом руководстве предполагается, что вы знакомы с программированием для Xamarin.Forms.
+В этом учебнике предполагается, что вы знакомы с Xamarin.Forms программированием.
 
 > [!VIDEO https://channel9.msdn.com/Events/Xamarin/Xamarin-University-Presents-Webinar-Series/SkiaSharp-Graphics-for-XamarinForms/player]
 
-**Вебинар SkiaSharp для Xamarin. Forms**
+**Веб – семинар: SkiaSharp дляXamarin.Forms**
 
-## <a name="skiasharp-preliminaries"></a>Предварительные действия SkiaSharp
+## <a name="skiasharp-preliminaries"></a>SkiaSharp предварительные действия
 
-SkiaSharp для Xamarin.Forms упакован в виде пакета NuGet. После создания решения Xamarin.Forms в Visual Studio или Visual Studio для Mac, можно использовать диспетчер пакетов NuGet для поиска **SkiaSharp.Views.Forms** пакета и добавить его в решение. Если проверить **ссылки** раздел проекта после добавления SkiaSharp, можно увидеть, что различные **SkiaSharp** библиотеки были добавлены все проекты в решении.
+SkiaSharp для Xamarin.Forms упаковывается как пакет NuGet. После создания Xamarin.Forms решения в Visual Studio или Visual Studio для Mac можно использовать диспетчер пакетов NuGet для поиска пакета **SkiaSharp. views. Forms** и его добавления в решение. Если вы проверите раздел **References** каждого проекта после добавления SkiaSharp, вы увидите, что различные библиотеки **SkiaSharp** добавлены в каждый из проектов решения.
 
-Если приложение Xamarin.Forms предназначено для iOS, используйте страницы свойств проекта для изменения минимальной цели развертывания iOS до версии 8.0.
+Если Xamarin.Forms приложение предназначено для iOS, используйте страницу свойств проекта, чтобы изменить минимальное целевое значение развертывания на ios 8,0.
 
-На любой странице C#, использующий SkiaSharp нужно будет включать `using` директив для [ `SkiaSharp` ](xref:SkiaSharp) пространство имен, которое включает в себя все SkiaSharp классы, структуры и перечисления, которые будут использоваться в графики программирование. Также стоит `using` директив для [ `SkiaSharp.Views.Forms` ](xref:SkiaSharp.Views.Forms) пространство имен для классов, определенных в Xamarin.Forms. Это гораздо меньше пространства имен, с наиболее важных класса, [ `SKCanvasView` ](xref:SkiaSharp.Views.Forms.SKCanvasView). Этот класс является производным от Xamarin.Forms `View` класса и размещает в SkiaSharp графический вывод данных.
+На любой странице C#, использующей SkiaSharp, необходимо включить `using` директиву для [`SkiaSharp`](xref:SkiaSharp) пространства имен, охватывающую все классы, структуры и перечисления SkiaSharp, которые будут использоваться в программировании графики. Кроме того, вам потребуется `using` директива для [`SkiaSharp.Views.Forms`](xref:SkiaSharp.Views.Forms) пространства имен для классов, относящихся к Xamarin.Forms . Это пространство имен намного меньше, а наиболее важным классом является [`SKCanvasView`](xref:SkiaSharp.Views.Forms.SKCanvasView) . Этот класс является производным от Xamarin.Forms `View` класса и размещает выходные данные SkiaSharp Graphics.
 
 > [!IMPORTANT]
-> `SkiaSharp.Views.Forms` Пространство имен также содержит `SKGLView` класс, производный от `View` , но использует OpenGL для рендеринга графики. Для простоты в этом руководстве задействует для `SKCanvasView`, однако применение `SKGLView` вместо очень похож.
+> `SkiaSharp.Views.Forms`Пространство имен также содержит `SKGLView` класс, производный от, `View` но для отрисовки графики использует OpenGL. В целях простоты в этом разделе не рассматривается само по себе `SKCanvasView` , но использование `SKGLView` вместо этого весьма похоже.
 
-## <a name="skiasharp-drawing-basicsbasicsindexmd"></a>[Основы рисования в SkiaSharp](basics/index.md)
+## <a name="skiasharp-drawing-basics"></a>[Основы рисования в SkiaSharp](basics/index.md)
 
-Самый простой числа графики, которые можно нарисовать с SkiaSharp представлен ряд круги, овалы и прямоугольники. При отображении эти цифры, вы узнаете о координатах SkiaSharp, размеры и цвета. Отображение текста и точечные рисунки более сложен, но в этих статьях также вводит эти методы.
+Некоторые из простейших рисунков, которые можно нарисовать с помощью SkiaSharp, — это круги, овалы и прямоугольники. При отображении этих рисунков вы узнаете о SkiaSharp координатах, размерах и цветах. Отображение текста и точечных рисунков сложнее, но в этих статьях также представлены эти методы.
 
-## <a name="skiasharp-lines-and-pathspathsindexmd"></a>[Строки и пути SkiaSharp](paths/index.md)
+## <a name="skiasharp-lines-and-paths"></a>[Строки и пути SkiaSharp](paths/index.md)
 
-Графический путь представляет собой ряд соединенных прямых линий и кривых. Пути можно заштриховывать, заполнен, или оба. В этой статье включает многие аспекты рисования линии, включая stroke концами и соединениями, а также пунктирная и пунктирные линии, но не хватает, кривая геометрических объектов.
+Графический контур — это ряд соединенных прямых линий и кривых. Контуры могут быть обводками, заполненными или обоими. В этой статье рассматриваются различные аспекты рисования линий, включая концы штриха и объединения, а также пунктирные и пунктирные линии, но останавливаются небольшие геометрические фигуры.
 
-## <a name="skiasharp-transformstransformsindexmd"></a>[Преобразование SkiaSharp](transforms/index.md)
+## <a name="skiasharp-transforms"></a>[Преобразование SkiaSharp](transforms/index.md)
 
-Преобразования также позволяют графические объекты равномерно перевода, масштабировать, поворачивать, и синхронизована. В этой статье также показано, как можно использовать матрицу стандартные преобразования 3 x 3 для создания неаффинные преобразования и применение преобразования к пути.
+Преобразования обеспечивают единообразное преобразование, масштабирование, вращение и наклон графических объектов. В этой статье также показано, как можно использовать стандартную матрицу преобразования объемом 3 на 3 для создания неаффинных преобразований и применения преобразований к путям.
 
-## <a name="skiasharp-curves-and-pathscurvesindexmd"></a>[Пути и кривые SkiaSharp](curves/index.md)
+## <a name="skiasharp-curves-and-paths"></a>[Пути и кривые SkiaSharp](curves/index.md)
 
-Просмотр путей продолжается с добавлением кривых в контурные объекты и использовать другие функции эффективные пути. Вы увидите, как можно указать весь путь в краткую текстовую строку, как использовать эффекты пути и как внутренние компоненты пути во всех подробностях.
+Изучение путей приводит к добавлению кривых к объектам пути и использованию других мощных возможностей пути. Вы увидите, как можно указать полный путь в краткой текстовой строке, как использовать эффекты пути и как изучить внутренние пути.
 
-## <a name="skiasharp-bitmapsbitmapsindexmd"></a>[Растровые изображения SkiaSharp](bitmaps/index.md)
+## <a name="skiasharp-bitmaps"></a>[Растровые изображения SkiaSharp](bitmaps/index.md)
 
-Точечные рисунки имеют прямоугольную массивы биты, соответствующие точкам устройства отображения. Этой серии статей показано, как загрузить, сохранить, отображения, создать, рисовать на, анимация и доступ к биты SkiaSharp точечных рисунков.
+Точечные рисунки представляют собой прямоугольные массивы битов, соответствующие пикселам устройства вывода. В этой серии статей показано, как загружать, сохранять, отображать, создавать, рисовать, анимировать и получать доступ к битам точечных рисунков SkiaSharp.
 
-## <a name="skiasharp-effectseffectsindexmd"></a>[Эффекты SkiaSharp](effects/index.md)
+## <a name="skiasharp-effects"></a>[Эффекты SkiaSharp](effects/index.md)
 
-Эффекты являются свойствами, которые изменить обычный отображение графики, включая линейными и круговыми градиентов, мозаичное заполнение для точечных рисунков, blend режимы, размытия и другим пользователям.
+Эффекты — это свойства, которые изменяют нормальное отображение графики, включая линейные и круговые градиенты, мозаичное разбиение на карты, режимы смешения, размытия и др.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [SkiaSharpFormsDemos (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
-- [SkiaSharp с веб-семинар Xamarin.Forms (видео)](https://channel9.msdn.com/Events/Xamarin/Xamarin-University-Presents-Webinar-Series/SkiaSharp-Graphics-for-XamarinForms)
+- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [SkiaSharp с помощью веб Xamarin.Forms -семинара (видео)](https://channel9.msdn.com/Events/Xamarin/Xamarin-University-Presents-Webinar-Series/SkiaSharp-Graphics-for-XamarinForms)

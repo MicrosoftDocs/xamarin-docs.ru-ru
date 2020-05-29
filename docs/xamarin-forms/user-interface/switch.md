@@ -1,48 +1,51 @@
 ---
-title: Переключатель Xamarin. Forms
-description: Параметр Xamarin. Forms — это тип кнопки, которая может управляться пользователем для переключения между состояниями. В этой статье объясняется, как использовать класс Switch для отображения переключаемого элемента пользовательского интерфейса.
-ms.prod: xamarin
-ms.assetId: B2F9CC65-481B-4323-8E77-C6BE29C90DE9
-ms.technology: xamarin-forms
-author: profexorgeek
-ms.author: jusjohns
-ms.date: 07/18/2019
-ms.openlocfilehash: 88655aabdbd32db63aaf3330a18b0ad8105ea26c
-ms.sourcegitcommit: b751605179bef8eee2df92cb484011a7dceb6fda
+title: Xamarin.FormsКлючом
+description: Xamarin.FormsПараметр — это тип кнопки, которая может управляться пользователем для переключения между состояниями. В этой статье объясняется, как использовать класс Switch для отображения переключаемого элемента пользовательского интерфейса.
+ms.prod: ''
+ms.assetId: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a5c2583b7632acdfa7d8439dc96b3964fa3cfcab
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506535"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136244"
 ---
-# <a name="xamarinforms-switch"></a>Переключатель Xamarin. Forms
+# <a name="xamarinforms-switch"></a>Xamarin.FormsКлючом
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-switchdemos/)
 
-Элемент управления Xamarin. Forms [`Switch`](xref:Xamarin.Forms.Switch) является горизонтальной выключателем, с помощью которого пользователь может переключаться между состояниями включения и выключения, которые представлены `boolean`ным значением. Класс `Switch` наследует от [`View`](xref:Xamarin.Forms.View).
+Xamarin.Forms [`Switch`](xref:Xamarin.Forms.Switch) Элемент управления является горизонтальной выключателью, с помощью которого пользователь может переключаться между состояниями включения и выключения, которые представлены `boolean` значением. `Switch`Класс наследует от [`View`](xref:Xamarin.Forms.View) .
 
-На следующих снимках экрана показан элемент управления `Switch` в состояниях переключателя **On** и **Off** в iOS и Android:
+На следующих снимках экрана показан `Switch` элемент управления **on** в состояниях переключения и **отключения** в iOS и Android:
 
 ![Снимок экрана параметров включения и отключения состояний, в iOS и Android](switch-images/switch-states-default.png "Параметры в iOS и Android")
 
-Элемент управления `Switch` определяет следующие свойства:
+`Switch`Элемент управления определяет следующие свойства:
 
-* [`IsToggled`](xref:Xamarin.Forms.Switch.IsToggled) — это `boolean` значение, указывающее **, включено ли `Switch`.**
-* [`OnColor`](xref:Xamarin.Forms.Switch.OnColor) — это `Color`, который влияет на отображение `Switch` в переключенном или **включенном**состоянии.
-* `ThumbColor` является `Color`ом бегунка переключателя.
+* [`IsToggled`](xref:Xamarin.Forms.Switch.IsToggled)`boolean`значение, указывающее, включено ли в `Switch` . **on**
+* [`OnColor`](xref:Xamarin.Forms.Switch.OnColor)параметр `Color` , который влияет на то, как объект отображается `Switch` в переключенном или **включенном**состоянии.
+* `ThumbColor`значение параметра `Color` бегунка Switched.
 
-Эти свойства поддерживаются объектом [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) , что означает, что `Switch` можно присвоить стилю и быть целевым объектом привязок данных.
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом. Это означает, что `Switch` можно использовать стиль и цель привязок данных.
 
-Элемент управления `Switch` определяет `Toggled` событие, которое возникает при изменении свойства `IsToggled` либо с помощью манипуляции пользователя, либо когда приложение задает свойство `IsToggled`. Объект `ToggledEventArgs`, сопровождающий событие `Toggled`, имеет одно свойство с именем `Value`типа `bool`. При срабатывании события значение свойства `Value` отражает новое значение свойства `IsToggled`.
+`Switch`Элемент управления определяет `Toggled` событие, которое возникает при `IsToggled` изменении свойства с помощью манипуляции пользователя или когда приложение задает `IsToggled` свойство. `ToggledEventArgs`Объект, сопровождающий `Toggled` событие, имеет одно свойство с именем `Value` типа `bool` . При срабатывании события значение `Value` Свойства отражает новое значение `IsToggled` Свойства.
 
 ## <a name="create-a-switch"></a>Создание переключателя
 
-В XAML можно создать экземпляр `Switch`. Его свойство `IsToggled` можно задать для переключения `Switch`. По умолчанию свойство `IsToggled` `false`. В следующем примере показано, как создать экземпляр `Switch` в XAML с помощью необязательного набора свойств `IsToggled`:
+`Switch`Экземпляр можно создать в XAML. Его `IsToggled` свойство можно задать для переключения `Switch` . По умолчанию `IsToggled` свойство имеет значение `false` . В следующем примере показано, как создать экземпляр `Switch` в XAML с помощью необязательного `IsToggled` набора свойств:
 
 ```xaml
 <Switch IsToggled="true"/>
 ```
 
-`Switch` также можно создать в коде:
+`Switch`Также можно создать в коде:
 
 ```csharp
 Switch switchControl = new Switch { IsToggled = true };
@@ -50,7 +53,7 @@ Switch switchControl = new Switch { IsToggled = true };
 
 ## <a name="switch-appearance"></a>Переключить внешний вид
 
-В дополнение к свойствам, которые [`Switch`](xref:Xamarin.Forms.Switch) наследуют от класса [`View`](xref:Xamarin.Forms.View) , `Switch` также определяет свойства `OnColor` и `ThumbColor`. Свойство `OnColor` может быть задано, чтобы определить цвет `Switch`, когда он переключается в состояние **On** , а свойство `ThumbColor` можно задать, чтобы определить `Color` ползунка переключателя. В следующем примере показано, как создать экземпляр `Switch` в XAML со следующими наборами свойств:
+В дополнение к свойствам, [`Switch`](xref:Xamarin.Forms.Switch) унаследованным от [`View`](xref:Xamarin.Forms.View) класса, `Switch` также определяет `OnColor` и `ThumbColor` Свойства. `OnColor`Свойство может быть задано для определения `Switch` цвета, когда он переключается в состояние **On** , а `ThumbColor` свойство может быть задано для определения `Color` типа бегунка переключателя. В следующем примере показано, как создать экземпляр `Switch` в XAML со следующими наборами свойств:
 
 ```xaml
 <Switch OnColor="Orange"
@@ -63,19 +66,19 @@ Switch switchControl = new Switch { IsToggled = true };
 Switch switch = new Switch { OnColor = Color.Orange, ThumbColor = Color.Green };
 ```
 
-На следующем снимке экрана показано `Switch` в состояниях переключателя **вкл** . и **откл** . свойства `OnColor` и `ThumbColor` задаются следующим образом:
+На следующем снимке экрана показаны `Switch` состояния переключателя **On** и **Off** , для которых `OnColor` `ThumbColor` заданы свойства и.
 
 ![Снимок экрана параметров включения и отключения состояний, в iOS и Android](switch-images/switch-states-colors.png "Параметры в iOS и Android")
 
 ## <a name="respond-to-a-switch-state-change"></a>Ответ на изменение состояния переключения
 
-При изменении свойства `IsToggled` либо с помощью пользовательской манипуляции, либо когда приложение задает свойство `IsToggled`, срабатывает событие `Toggled`. Для реагирования на изменение можно зарегистрировать обработчик событий для этого события:
+Когда `IsToggled` свойство изменяется либо с помощью пользовательской манипуляции, либо когда приложение задает `IsToggled` свойство, `Toggled` возникает событие. Для реагирования на изменение можно зарегистрировать обработчик событий для этого события:
 
 ```xaml
 <Switch Toggled="OnToggled" />
 ```
 
-Файл кода программной части содержит обработчик события `Toggled`:
+Файл кода программной части содержит обработчик `Toggled` события:
 
 ```csharp
 void OnToggled(object sender, ToggledEventArgs e)
@@ -84,9 +87,9 @@ void OnToggled(object sender, ToggledEventArgs e)
 }
 ```
 
-Аргумент `sender` в обработчике событий является `Switch`, ответственным за срабатывание этого события. Можно использовать свойство `sender` для доступа к объекту `Switch` или для различения нескольких объектов `Switch`, совместно использующих один и тот же обработчик событий `Toggled`.
+`sender`Аргумент в обработчике событий является `Switch` ответственным за срабатывание этого события. Свойство можно использовать `sender` для доступа к `Switch` объекту или для различения нескольких `Switch` объектов, совместно использующих один и тот же `Toggled` обработчик событий.
 
-Обработчик событий `Toggled` можно также назначить в коде:
+`Toggled`Обработчик событий можно также назначить в коде:
 
 ```csharp
 Switch switchControl = new Switch {...};
@@ -98,7 +101,7 @@ switchControl.Toggled += (sender, e) =>
 
 ## <a name="data-bind-a-switch"></a>Привязка данных коммутатора
 
-Обработчик событий `Toggled` можно исключить с помощью привязки данных и триггеров для реагирования на `Switch` изменение состояния переключения.
+`Toggled`Обработчик событий можно исключить с помощью привязки данных и триггеров, чтобы реагировать на `Switch` изменяющиеся состояния переключения.
 
 ```xaml
 <Switch x:Name="styleSwitch" />
@@ -116,15 +119,15 @@ switchControl.Toggled += (sender, e) =>
 </Label>
 ```
 
-В этом примере [`Label`](xref:Xamarin.Forms.Label) использует выражение привязки в `DataTrigger` для отслеживания свойства `IsToggled` `Switch` с именем `styleSwitch`. Когда это свойство переходит `true`, изменяются свойства `FontAttributes` и `FontSize` `Label`. Когда свойство `IsToggled` возвращает значение в `false`, свойства `FontAttributes` и `FontSize` `Label` сбрасываются в исходное состояние.
+В этом примере [`Label`](xref:Xamarin.Forms.Label) компонент использует выражение привязки в `DataTrigger` для отслеживания `IsToggled` свойства `Switch` с именем `styleSwitch` . Когда это свойство примет значение `true` , `FontAttributes` `FontSize` `Label` изменяются свойства и объекта. Когда `IsToggled` свойство возвращает значение `false` , `FontAttributes` `FontSize` Свойства и объекта `Label` сбрасываются в исходное состояние.
 
-Дополнительные сведения о триггерах см. в разделе [триггеры Xamarin. Forms](~/xamarin-forms/app-fundamentals/triggers.md).
+Дополнительные сведения о триггерах см. в разделе [ Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md).
 
 ## <a name="disable-a-switch"></a>Отключение переключателя
 
-Приложение может перейти в состояние, в котором `Switch`, для которого выполняется переключение, не является допустимой операцией. В таких случаях `Switch` можно отключить, задав свойству `IsEnabled` значение `false`. Это не позволит пользователям работать с `Switch`.
+Приложение может перейти в состояние, в котором `Switch` переключаемый объект не является допустимой операцией. В таких случаях `Switch` можно отключить, задав `IsEnabled` свойству значение `false` . Это предотвратит возможность пользователей управлять `Switch` .
 
 ## <a name="related-links"></a>Связанные ссылки
 
 * [Переключить демонстрации](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-switchdemos/)
-* [Триггеры Xamarin. Forms](~/xamarin-forms/app-fundamentals/triggers.md)
+* [Xamarin.FormsПлан](~/xamarin-forms/app-fundamentals/triggers.md)

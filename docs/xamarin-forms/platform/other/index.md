@@ -1,38 +1,41 @@
 ---
-title: Xamarin. Forms другие платформы
-description: В этом руководством описываются дополнительные платформы, поддерживаемые Xamarin. Forms.
-ms.prod: xamarin
-ms.assetid: C713B905-0C98-4442-B5CB-91C384A384DA
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/04/2019
-ms.openlocfilehash: 7c3c995607a85fd8e6325bbaed65c0d590e46205
-ms.sourcegitcommit: 4cf434b126eb7df6b2fd9bb1d71613bf2b6aac0e
+title: Xamarin.FormsДругие платформы
+description: В этом руководством описываются дополнительные платформы, поддерживаемые Xamarin.Forms .
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a0ab248d3e23854e8027f515fbcf0fa6ca9521fd
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997119"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139546"
 ---
-# <a name="xamarinforms-other-platforms"></a>Xamarin. Forms другие платформы
+# <a name="xamarinforms-other-platforms"></a>Xamarin.FormsДругие платформы
 
-Xamarin. Forms поддерживает дополнительные платформы за пределами iOS, Android и Windows.
+Xamarin.Formsподдерживает дополнительные платформы за пределами iOS, Android и Windows.
 
 > [!IMPORTANT]
-> Дополнительные сведения о поддерживаемых платформах Xamarin. Forms см. в разделе [Поддержка платформы Xamarin. Forms](https://github.com/xamarin/Xamarin.Forms/wiki/Platform-Support).
+> Дополнительные сведения о поддерживаемых Xamarin.Forms платформах см. в разделе [ Xamarin.Forms поддержка платформ](https://github.com/xamarin/Xamarin.Forms/wiki/Platform-Support).
 
-## <a name="gtkgtkmd"></a>[GTK](gtk.md)
+## <a name="gtk"></a>[GTK](gtk.md)
 
-Xamarin. Forms теперь имеет поддержку предварительной версии для приложений GTK #.
+Xamarin.Formsтеперь имеет поддержку предварительной версии для приложений GTK #.
 
-## <a name="macmacmd"></a>[Mac](mac.md)
+## <a name="mac"></a>[Mac](mac.md)
 
-Xamarin. Forms теперь имеет поддержку предварительной версии для приложений macOS.
+Xamarin.Formsтеперь имеет поддержку предварительной версии для приложений macOS.
 
-## <a name="tizentizenmd"></a>[Tizen](tizen.md)
+## <a name="tizen"></a>[Tizen](tizen.md)
 
-Tizen .NET позволяет создавать приложения .NET с помощью Xamarin. Forms и Tizen .NET Framework.
+Tizen .NET позволяет создавать приложения .NET с помощью Xamarin.Forms и Tizen .NET Framework.
 
-## <a name="wpfwpfmd"></a>[WPF](wpf.md)
+## <a name="wpf"></a>[WPF](wpf.md)
 
-Xamarin. Forms теперь имеет поддержку предварительной версии для приложений Windows Presentation Foundation (WPF).
+Xamarin.Formsтеперь имеет поддержку предварительной версии для приложений Windows Presentation Foundation (WPF).

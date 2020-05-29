@@ -1,28 +1,31 @@
 ---
-title: Источники данных ListView
-description: В этой статье объясняется, как для заполнения ListView Xamarin.Forms с данными и как использовать привязку данных с помощью ListView.
-ms.prod: xamarin
-ms.assetid: B5571660-1E82-4379-95C3-0725288CF5D9
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/23/2020
-ms.openlocfilehash: e51f0bd011750b030c0a11b9b89a2c2473f2a9ed
-ms.sourcegitcommit: d83c6af42ed26947aa7c0ecfce00b9ef60f33319
+title: ''
+description: В этой статье объясняется, как заполнить Xamarin.Forms ListView данными и как использовать привязку данных с ListView.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 38a895c9064fc012aec35b37eac78bb16ff009a9
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80247591"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84131512"
 ---
 # <a name="listview-data-sources"></a>Источники данных ListView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-switchentrytwobinding)
 
-[`ListView`](xref:Xamarin.Forms.ListView) Xamarin. Forms используется для отображения списков данных. В этой статье объясняется, как заполнить `ListView` данными и как привязать данные к выбранному элементу.
+Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Используется для отображения списков данных. В этой статье объясняется, как заполнить `ListView` с помощью данных и как привязать данные к выбранному элементу.
 
 ## <a name="itemssource"></a>ItemsSource
 
-[`ListView`](xref:Xamarin.Forms.ListView) заполняется данными с помощью свойства [`ItemsSource`](xref:Xamarin.Forms.ItemsView`1.ItemsSource) , которое может принимать любую коллекцию, реализующую `IEnumerable`. Самый простой способ заполнения `ListView` заключается в использовании массива строк:
+[`ListView`](xref:Xamarin.Forms.ListView)Заполняется данными с помощью [`ItemsSource`](xref:Xamarin.Forms.ItemsView`1.ItemsSource) свойства, которое может принимать любые реализации, реализующие коллекцию `IEnumerable` . Самый простой способ заполнения `ListView` включает использование массива строк:
 
 ```xaml
 <ListView>
@@ -62,9 +65,9 @@ listView.ItemsSource = new string[]
 
 ![](data-and-databinding-images/itemssource-simple.png "ListView Displaying List of Strings")
 
-Этот подход заполнит `ListView` списком строк. По умолчанию `ListView` будет вызывать `ToString` и отображать результат в `TextCell` для каждой строки. Сведения о настройке отображения данных см. в разделе [внешний вид ячеек](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md).
+Этот подход будет заполняться `ListView` списком строк. По умолчанию `ListView` будет вызывать `ToString` и отображать результат в `TextCell` каждой строке. Сведения о настройке отображения данных см. в разделе [внешний вид ячеек](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md).
 
-Поскольку `ItemsSource` был отправлен в массив, содержимое не будет обновляться по мере изменения базового списка или массива. Если необходимо, чтобы ListView автоматически подменялся при добавлении, удалении и изменении элементов в базовом списке, необходимо использовать `ObservableCollection`. [`ObservableCollection`](xref:System.Collections.ObjectModel.ObservableCollection`1) определяется в `System.Collections.ObjectModel` и выглядит так же, как `List`, за исключением того, что он может уведомлять `ListView` о любых изменениях:
+Поскольку объект был `ItemsSource` отправлен в массив, содержимое не будет обновляться при изменении базового списка или массива. Если необходимо, чтобы ListView автоматически подменялся при добавлении, удалении и изменении элементов в базовом списке, необходимо использовать `ObservableCollection` . [`ObservableCollection`](xref:System.Collections.ObjectModel.ObservableCollection`1)определен в `System.Collections.ObjectModel` и, как и `List` , за исключением того, что он может уведомлять о `ListView` любых изменениях:
 
 ```csharp
 ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
@@ -76,17 +79,17 @@ employees.Add(new Employee(){ DisplayName="Mr. Mono"});
 
 ## <a name="data-binding"></a>Привязка данных
 
-Привязка данных — это «привязывание», связывающая свойства объекта пользовательского интерфейса со свойствами некоторого объекта CLR, например класса в ViewModel. Привязка данных полезно в тех случаях, поскольку он упрощает разработку пользовательских интерфейсов, заменив массу скучно стандартный код.
+Привязка данных — это «привязывание», связывающая свойства объекта пользовательского интерфейса со свойствами некоторого объекта CLR, например класса в ViewModel. Привязка данных полезна, поскольку она упрощает разработку пользовательских интерфейсов, заменяя множество скучных стандартных кодов.
 
-Привязка данных работает путем синхронизации объектов при изменении их связанных значений. Вместо того, чтобы создавать обработчики событий для каждого изменения значения элемента управления, необходимо установить привязку и включить привязку в ViewModel.
+Привязка данных работает, сохраняя синхронизацию объектов при изменении их привязанных значений. Вместо того, чтобы создавать обработчики событий для каждого изменения значения элемента управления, необходимо установить привязку и включить привязку в ViewModel.
 
-Дополнительные сведения о привязке данных см. в статье основы [привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md) , которая является частью 4 из [серии статей основы работы с XAML Xamarin. Forms](~/xamarin-forms/xaml/xaml-basics/index.md).
+Дополнительные сведения о привязке данных см. в статье [основы привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md) , которая является частью четвертой серии статей, посвященных [ Xamarin.Forms основам XAML](~/xamarin-forms/xaml/xaml-basics/index.md).
 
 ### <a name="binding-cells"></a>Привязка ячеек
 
-Свойства ячеек (и потомков ячеек) можно привязать к свойствам объектов в `ItemsSource`. Например, можно использовать `ListView` для предоставления списка сотрудников.
+Свойства ячеек (и потомков ячеек) можно привязать к свойствам объектов в `ItemsSource` . Например, `ListView` можно использовать для представления списка сотрудников.
 
-Класса "Сотрудник":
+Класс Employee:
 
 ```csharp
 public class Employee
@@ -95,7 +98,7 @@ public class Employee
 }
 ```
 
-Создается `ObservableCollection<Employee>`, устанавливается как `ListView` `ItemsSource`, а список заполняется данными:
+`ObservableCollection<Employee>`Создается, задается как `ListView` `ItemsSource` , а список заполняется данными:
 
 ```csharp
 ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
@@ -117,9 +120,9 @@ public EmployeeListPage()
 ```
 
 > [!WARNING]
-> Хотя `ListView` будет обновляться в ответ на изменения в его базовом `ObservableCollection`, `ListView` не будет обновлена, если другой экземпляр `ObservableCollection` назначен исходной ссылке `ObservableCollection` (например, `employees = otherObservableCollection;`).
+> Хотя `ListView` будет обновляться в ответ на изменения в его базовом виде `ObservableCollection` , `ListView` не будет обновляться, если `ObservableCollection` исходной ссылке назначен другой экземпляр `ObservableCollection` (например, `employees = otherObservableCollection;` ).
 
-В следующем фрагменте кода демонстрируется `ListView`, привязанный к списку сотрудников:
+В следующем фрагменте кода показана `ListView` Привязка к списку сотрудников:
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -139,16 +142,16 @@ public EmployeeListPage()
 </ContentPage>
 ```
 
-В этом примере XAML определяется `ContentPage`, содержащий `ListView`. Источник данных `ListView` задается с помощью атрибута `ItemsSource`. Макет каждой строки в `ItemsSource` определяется в элементе `ListView.ItemTemplate`. Это приводит к следующим снимкам экрана:
+В этом примере XAML определяется объект `ContentPage` , содержащий `ListView` . Источник данных для `ListView` задается с помощью атрибута `ItemsSource`. Макет каждой строки в `ItemsSource` определяется в элементе `ListView.ItemTemplate`. Это приводит к следующим снимкам экрана:
 
 ![](data-and-databinding-images/bound-data.png "ListView using Data Binding")
 
 > [!WARNING]
-> `ObservableCollection` не является потокобезопасным. Изменение `ObservableCollection` приводит к тому, что обновления пользовательского интерфейса происходят в том же потоке, который выполнил изменения. Если поток не является основным потоком пользовательского интерфейса, это вызовет исключение.
+> `ObservableCollection`Интерфейс  не является потокобезопасным. Изменение `ObservableCollection` приводит к тому, что обновления пользовательского интерфейса происходят в том же потоке, в котором были выполнены изменения. Если поток не является основным потоком пользовательского интерфейса, это вызовет исключение.
 
-### <a name="binding-selecteditem"></a>SelectedItem привязки
+### <a name="binding-selecteditem"></a>Привязка SelectedItem
 
-Часто требуется выполнить привязку к выбранному элементу `ListView`, вместо того чтобы использовать обработчик событий для реагирования на изменения. Чтобы сделать это в XAML, привяжите свойство `SelectedItem`:
+Часто требуется выполнить привязку к выбранному элементу `ListView` , а не использовать обработчик событий для реагирования на изменения. Чтобы сделать это в XAML, привяжите `SelectedItem` свойство:
 
 ```xaml
 <ListView x:Name="listView"
@@ -158,7 +161,7 @@ public EmployeeListPage()
 </ListView>
 ```
 
-Если `ItemsSource` `listView`является списком строк, `SomeLabel` будет иметь свойство `Text`, привязанное к `SelectedItem`.
+Если `listView` `ItemsSource` является списком строк, `SomeLabel` `Text` свойство будет привязано к `SelectedItem` .
 
 ## <a name="related-links"></a>Связанные ссылки
 

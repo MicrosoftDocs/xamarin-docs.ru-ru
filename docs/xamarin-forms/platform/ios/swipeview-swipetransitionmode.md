@@ -1,24 +1,27 @@
 ---
-title: Режим перехода Свипевиевного считывания в iOS
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая управляет переходом, используемым при открытии Свипевиев.
-ms.prod: xamarin
-ms.assetid: C667F24C-BAD8-47E0-9285-D3546BEF703B
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 12/11/2019
-ms.openlocfilehash: d5ba92d008cf3431bce2c197aca45c894eb3d5c7
-ms.sourcegitcommit: d0e6436edbf7c52d760027d5e0ccaba2531d9fef
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 4b2030461025c1cd647595a1ecc22c5589e99fef
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75490454"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137050"
 ---
 # <a name="swipeview-swipe-transition-mode-on-ios"></a>Режим перехода Свипевиевного считывания в iOS
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Этот элемент управления для конкретной платформы iOS управляет переходом, который используется при открытии `SwipeView`. Он используется в XAML путем установки для свойства `SwipeView.SwipeTransitionMode` BIND значения `SwipeTransitionMode` перечисления:
+Этот элемент управления, относящийся к платформе iOS, управляет переходом, который используется при открытии `SwipeView` . Он используется в XAML путем задания `SwipeView.SwipeTransitionMode` свойству BIND значения `SwipeTransitionMode` перечисления.
 
 ```xaml
 <ContentPage ...
@@ -39,7 +42,7 @@ ms.locfileid: "75490454"
 </ContentPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -51,19 +54,19 @@ swipeView.On<iOS>().SetSwipeTransitionMode(SwipeTransitionMode.Drag);
 // ...
 ```
 
-`SwipeView.On<iOS>` Метод указывает, что этой платформы будет выполняться только на устройствах iOS. Метод `SwipeView.SetSwipeTransitionMode` в пространстве имен [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) используется для управления переходом, используемым при открытии `SwipeView`. Перечисление `SwipeTransitionMode` предоставляет два возможных значения:
+`SwipeView.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `SwipeView.SetSwipeTransitionMode`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления переходом, который используется при открытии `SwipeView` . `SwipeTransitionMode`Перечисление предоставляет два возможных значения:
 
-- `Reveal` указывает, что прокрутка элементов будет выдаваться по мере прокрутки `SwipeView` содержимого, и является значением по умолчанию свойства `SwipeView.SwipeTransitionMode`.
-- `Drag` указывает, что прокрутка элементов будет перемещена в представление по мере прокрутки содержимого `SwipeView`.
+- `Reveal`Указывает, что прокрутка элементов будет выдаваться по мере `SwipeView` прокрутки содержимого, и является значением свойства по умолчанию `SwipeView.SwipeTransitionMode` .
+- `Drag`Указывает, что прокрутка элементов будет перемещена в представление при `SwipeView` прокрутке содержимого.
 
-Кроме того, можно использовать метод `SwipeView.GetSwipeTransitionMode` для возврата `SwipeTransitionMode`, применяемого к `SwipeView`.
+Кроме того, `SwipeView.GetSwipeTransitionMode` метод можно использовать для возврата объекта `SwipeTransitionMode` , который применяется к `SwipeView` .
 
-В результате к `SwipeView`у будет применено указанное `SwipeTransitionMode` значение, которое управляет переходом, используемым при открытии `SwipeView`:
+В результате заданное `SwipeTransitionMode` значение применяется к элементу `SwipeView` , который управляет переходом, используемым при открытии `SwipeView` :
 
 [![Снимок экрана Свипевиев Свипетранситионмодес в iOS](swipeview-swipetransitionmode-images/swipetransitionmode.png "Свипетранситионмодес в iOS")](swipeview-swipetransitionmode-images/swipetransitionmode-large.png#lightbox "Свипетранситионмодес в iOS")
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

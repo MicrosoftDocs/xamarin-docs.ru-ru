@@ -1,26 +1,29 @@
 ---
-title: Стили устройства в Xamarin.Forms
-description: Платформа Xamarin.Forms включает шесть динамические стили, известный как стили устройства, в классе Device.Styles. В этой статье объясняется, как использовать стили устройства в приложении Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 7FF19ED1-0822-4238-9435-AD970317A2F8
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/17/2016
-ms.openlocfilehash: 4131844d49d7fdad4c97d07fb699b96db2020ec4
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: Стили устройств вXamarin.Forms
+description: Xamarin.Formsвключает в себя шесть динамических стилей, известных как стили устройств, в классе Device. styles. В этой статье объясняется, как использовать стили устройств в Xamarin.Forms приложении.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b835847fea39e1c2f968e7b81fb9d22f68ea461c
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68647296"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84140105"
 ---
-# <a name="device-styles-in-xamarinforms"></a>Стили устройства в Xamarin.Forms
+# <a name="device-styles-in-xamarinforms"></a>Стили устройств вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
 
-_Платформа Xamarin.Forms включает шесть динамические стили, известный как стили устройства, в классе Device.Styles._
+_Xamarin. Forms включает в себя шесть динамических стилей, известных как стили устройств, в классе Device. styles._
 
-*Устройства* стили:
+Стили *устройств* :
 
 - [`BodyStyle`](xref:Xamarin.Forms.Device.Styles.BodyStyle)
 - [`CaptionStyle`](xref:Xamarin.Forms.Device.Styles.CaptionStyle)
@@ -29,9 +32,9 @@ _Платформа Xamarin.Forms включает шесть динамичес
 - [`SubtitleStyle`](xref:Xamarin.Forms.Device.Styles.SubtitleStyle)
 - [`TitleStyle`](xref:Xamarin.Forms.Device.Styles.TitleStyle)
 
-Все шесть стили могут применяться только к [ `Label` ](xref:Xamarin.Forms.Label) экземпляров. Например `Label` , отображает текст абзаца может установить его [ `Style` ](xref:Xamarin.Forms.NavigableElement.Style) свойства [ `BodyStyle` ](xref:Xamarin.Forms.Device.Styles.BodyStyle).
+Все шесть стилей могут применяться только к [`Label`](xref:Xamarin.Forms.Label) экземплярам. Например, для `Label` свойства, в котором отображается текст абзаца, может быть задано значение [`Style`](xref:Xamarin.Forms.NavigableElement.Style) [`BodyStyle`](xref:Xamarin.Forms.Device.Styles.BodyStyle) .
 
-В следующем примере кода показано использование *устройства* стили на странице XAML:
+В следующем примере кода показано использование стилей *устройств* на странице XAML:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Styles.DeviceStylesPage" Title="Device" IconImageSource="xaml.png">
@@ -65,13 +68,13 @@ _Платформа Xamarin.Forms включает шесть динамичес
 </ContentPage>
 ```
 
-Стили устройства ограничивается использованием `DynamicResource` расширение разметки. Динамическая природа стили можно увидеть в iOS, изменив **специальных возможностей** параметры для размера текста. Внешний вид *устройства* стили отличается на каждой платформе, как показано на следующем снимке экрана:
+Стили устройств привязаны к с помощью `DynamicResource` расширения разметки. Динамическую природу стилей можно увидеть в iOS, изменив параметры **специальных возможностей** для размера текста. Внешний вид стилей *устройств* на каждой платформе различается, как показано на следующих снимках экрана:
 
-![](device-images/device-styles.png "Стили устройства на каждой платформе")
+![](device-images/device-styles.png "Device Styles on Each Platform")
 
-*Устройство* стили также могут быть производными от, задав [ `BaseResourceKey` ](xref:Xamarin.Forms.Style.BaseResourceKey) присваивается имя ключа для стиля устройства. В примере выше `myBodyStyle` наследует от [ `BodyStyle` ](xref:Xamarin.Forms.Device.Styles.BodyStyle) и задает цвет текста с диакритическими знаками. Дополнительные сведения о наследовании динамического стиля см. в разделе [динамического наследования стиля](~/xamarin-forms/user-interface/styles/xaml/dynamic.md#dynamic-style-inheritance).
+Стили *устройств* также могут быть производными от, путем присвоения [`BaseResourceKey`](xref:Xamarin.Forms.Style.BaseResourceKey) свойству имени ключа для стиля устройства. В приведенном выше примере кода `myBodyStyle` наследуется от [`BodyStyle`](xref:Xamarin.Forms.Device.Styles.BodyStyle) и задает цвет диакритических знаков. Дополнительные сведения о наследовании динамического стиля см. в разделе [динамическое наследование стиля](~/xamarin-forms/user-interface/styles/xaml/dynamic.md#dynamic-style-inheritance).
 
-В следующем примере кода показаны эквивалентные страницы на языке C#:
+В следующем примере кода показана эквивалентная страница в C#:
 
 ```csharp
 public class DeviceStylesPageCS : ContentPage
@@ -109,27 +112,27 @@ public class DeviceStylesPageCS : ContentPage
 }
 ```
 
-[ `Style` ](xref:Xamarin.Forms.NavigableElement.Style) Свойства каждого [ `Label` ](xref:Xamarin.Forms.Label) экземпляра имеет значение соответствующего свойства из [ `Devices.Styles` ](xref:Xamarin.Forms.Device.Styles) класса.
+[`Style`](xref:Xamarin.Forms.NavigableElement.Style)Свойству каждого [`Label`](xref:Xamarin.Forms.Label) экземпляра присваивается соответствующее свойство из [`Devices.Styles`](xref:Xamarin.Forms.Device.Styles) класса.
 
 ## <a name="accessibility"></a>Специальные возможности
 
-*Устройства* стили учитывают настройки специальных возможностей, поэтому размеры шрифтов, изменяют, настройки специальных возможностей, изменяются на каждой платформе. Таким образом, чтобы обеспечить поддержку текста специальных возможностей, убедитесь, что *устройства* стилей используются в качестве основы для любой стили текста в приложении.
+Стили *устройств* учитывают настройки специальных возможностей, поэтому размеры шрифтов изменятся по мере изменения настроек специальных возможностей на каждой платформе. Поэтому для поддержки текста с поддержкой специальных возможностей убедитесь, что стили *устройств* используются в качестве базиса для любых текстовых стилей в приложении.
 
-Далее на снимках экрана демонстрируют стили устройства на каждой платформе, с наименьшим размером доступного шрифта:
+На следующих снимках экрана показаны стили устройств на каждой платформе с наименьшим доступным размером шрифта:
 
-[![](device-images/minimum-size.png "Стили доступным небольшое устройство на каждой платформе")](device-images/minimum-size-large.png#lightbox "стили доступным небольшое устройство на каждой платформе")
+[![](device-images/minimum-size.png "Accessible Small Device Styles on Each Platform")](device-images/minimum-size-large.png#lightbox "Accessible Small Device Styles on Each Platform")
 
-Далее на снимках экрана показано стили устройства на каждой платформе, с помощью максимальный размер доступного шрифта:
+На следующих снимках экрана показаны стили устройств на каждой платформе с максимальным доступным размером шрифта:
 
-![](device-images/maximum-size.png "Стили доступны большое устройство на каждой платформе")
+![](device-images/maximum-size.png "Accessible Large Device Styles on Each Platform")
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Стили текста](~/xamarin-forms/user-interface/text/styles.md)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/xaml-basics/xaml-markup-extensions.md)
 - [Динамические стили (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
-- [Работа с использованием стилей (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithstyles)
-- [Device.Styles](xref:Xamarin.Forms.Device.Styles)
+- [Работа со стилями (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithstyles)
+- [Device. Styles](xref:Xamarin.Forms.Device.Styles)
 - [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
 - [Стиль](xref:Xamarin.Forms.Style)
-- [Метод задания](xref:Xamarin.Forms.Setter)
+- [Setter](xref:Xamarin.Forms.Setter)

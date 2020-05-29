@@ -1,24 +1,27 @@
 ---
-title: Xamarin.Forms SearchBar
-description: Сеарчбар Xamarin. Forms — это пользовательский элемент управления вводом, который используется для запуска поиска. Элемент управления Сеарчбар поддерживает текст заполнителя, ввод запроса, выполнение и отмену. В этой статье объясняется, как использовать Сеарчбар в XAML и коде.
-ms.prod: xamarin
-ms.assetId: F5EFEA72-CB23-4DD6-9545-D9BB755AF3CB
-ms.technology: xamarin-forms
-author: profexorgeek
-ms.author: jusjohns
-ms.date: 11/04/2019
-ms.openlocfilehash: 9162e89768aefe761111a02b80932231a6fe759f
-ms.sourcegitcommit: da15fb3b593a3e01ced9f8a1df572348d01d42ea
+title: Xamarin.Formsсеарчбар
+description: Xamarin.FormsСеарчбар — это элемент управления вводом пользователя, который используется для запуска поиска. Элемент управления Сеарчбар поддерживает текст заполнителя, ввод запроса, выполнение и отмену. В этой статье объясняется, как использовать Сеарчбар в XAML и коде.
+ms.prod: ''
+ms.assetId: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: d8ceb139b1b9cd77aa922f98c80884d5c3e1a474
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83844196"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84127547"
 ---
-# <a name="xamarinforms-searchbar"></a>Xamarin.Forms SearchBar
+# <a name="xamarinforms-searchbar"></a>Xamarin.Formsсеарчбар
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)
 
-Xamarin. Forms [`SearchBar`](xref:Xamarin.Forms.SearchBar) — это элемент управления вводом пользователя, используемый для запуска поиска. `SearchBar`Элемент управления поддерживает текст заполнителя, ввод запроса, выполнение поиска и отмену. На следующем снимке экрана показан `SearchBar` запрос с результатами, отображаемыми в `ListView` :
+Xamarin.Forms [`SearchBar`](xref:Xamarin.Forms.SearchBar) — Это элемент управления вводом пользователя, используемый для запуска поиска. `SearchBar`Элемент управления поддерживает текст заполнителя, ввод запроса, выполнение поиска и отмену. На следующем снимке экрана показан `SearchBar` запрос с результатами, отображаемыми в `ListView` :
 
 [![Снимок экрана Сеарчбар в iOS и Android](searchbar-images/device-searchbars-cropped.png "Сеарчбар в iOS и Android")](searchbar-images/device-searchbars.png#lightbox "Сеарчбар в iOS и Android")
 
@@ -38,7 +41,7 @@ Xamarin. Forms [`SearchBar`](xref:Xamarin.Forms.SearchBar) — это элеме
 * [`Text`](xref:Xamarin.Forms.InputView.Text)Объект, `string` содержащий текст запроса в `SearchBar` .
 * [`TextColor`](xref:Xamarin.Forms.InputView.TextColor)значение типа `Color` , определяющее цвет текста запроса.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает `SearchBar` возможность настройки и назначения привязок данных. Указание свойств шрифта в `SearchBar` согласуется с настройками текста в других [элементах управления "текст" Xamarin. Forms](~/xamarin-forms/user-interface/text/index.md). Дополнительные сведения см. [в статье шрифты в Xamarin. Forms](~/xamarin-forms/user-interface/text/fonts.md).
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает `SearchBar` возможность настройки и назначения привязок данных. Указание свойств шрифта в `SearchBar` согласуется с настройкой текста в других [ Xamarin.Forms текстовых элементах управления](~/xamarin-forms/user-interface/text/index.md). Дополнительные сведения см. [в разделе Шрифты Xamarin.Forms в ](~/xamarin-forms/user-interface/text/fonts.md).
 
 ## <a name="create-a-searchbar"></a>Создание Сеарчбар
 
@@ -87,7 +90,7 @@ SearchBar searchBar = new SearchBar
 [![Снимок экрана настраиваемого Сеарчбар в iOS и Android](searchbar-images/device-searchbars-styled-cropped.png "Настраиваемые Сеарчбар в iOS и Android")](searchbar-images/device-searchbars-styled.png#lightbox "Настраиваемые Сеарчбар в iOS и Android")
 
 > [!NOTE]
-> В iOS `SearchBarRenderer` класс содержит переопределяемый `UpdateCancelButton` метод. Этот метод управляет тем, когда появляется кнопка Отмена, и может быть переопределена в пользовательском модуле подготовки отчетов. Дополнительные сведения о пользовательских модулях подготовки отчетов см. в разделе [пользовательские модули подготовки Xamarin. Forms](~/xamarin-forms/app-fundamentals/custom-renderer/index.md).
+> В iOS `SearchBarRenderer` класс содержит переопределяемый `UpdateCancelButton` метод. Этот метод управляет тем, когда появляется кнопка Отмена, и может быть переопределена в пользовательском модуле подготовки отчетов. Дополнительные сведения о пользовательских модулях подготовки отчетов см. в разделе [ Xamarin.Forms пользовательские модули подготовки](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)отчетов.
 
 ## <a name="perform-a-search-with-event-handlers"></a>Выполнение поиска с помощью обработчиков событий
 
@@ -185,11 +188,11 @@ public class SearchViewModel : INotifyPropertyChanged
 
 В этом примере задается как `BindingContext` экземпляр `SearchViewModel` класса. Он привязывает `SearchCommand` свойство к в `PerformSearch` `ICommand` ViewModel и привязывает `SearchBar` `Text` свойство к `SearchCommandParameter` свойству. `ListView.ItemsSource`Свойство привязано к `SearchResults` свойству ViewModel.
 
-Дополнительные сведения о `ICommand` интерфейсе и привязках см. в разделе [Привязка данных Xamarin. Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md) и [интерфейс ICommand](~/xamarin-forms/app-fundamentals/data-binding/commanding.md).
+Дополнительные сведения о `ICommand` интерфейсе и привязках см. в разделе [ Xamarin.Forms Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md) и [интерфейс ICommand](~/xamarin-forms/app-fundamentals/data-binding/commanding.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 * [Демонстрации Сеарчбар](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)
-* [Текстовые элементы управления Xamarin. Forms](~/xamarin-forms/user-interface/text/index.md)
-* [Шрифты в Xamarin. Forms](~/xamarin-forms/user-interface/text/fonts.md)
-* [Привязка данных Xamarin. Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md)
+* [Xamarin.FormsТекстовые элементы управления](~/xamarin-forms/user-interface/text/index.md)
+* [Шрифты вXamarin.Forms](~/xamarin-forms/user-interface/text/fonts.md)
+* [Xamarin.FormsПривязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)

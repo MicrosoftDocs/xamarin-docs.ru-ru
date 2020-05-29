@@ -1,30 +1,33 @@
 ---
-title: Преобразование циклического сдвига
-description: В этой статье рассматриваются эффекты и анимации, поддерживаемых в средстве преобразования вращения SkiaSharp и демонстрирует это с помощью примера кода.
-ms.prod: xamarin
-ms.technology: xamarin-skiasharp
-ms.assetid: CBB3CD72-4377-4EA3-A768-0C4228229FC2
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/23/2017
-ms.openlocfilehash: 1ec5c5fb1a81873d88a59eefba7652a86fc1ba4e
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: ''
+description: ''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 520c4c3b61049bf17c2c964523714db196da6839
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68657215"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84132188"
 ---
 # <a name="the-rotate-transform"></a>Преобразование циклического сдвига
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-_Изучите эффекты и анимации, поддерживаемых в средстве преобразования вращения SkiaSharp_
+_Изучите эффекты и анимации, доступные с помощью преобразования «SkiaSharp вращение»_
 
-С помощью преобразование циклического сдвига SkiaSharp графических объектов Избавьтесь ограничения выравнивания с горизонтальной и вертикальной осей:
+При использовании графических объектов SkiaSharp графические объекты не имеют ограничений на выравнивание по горизонтальной и вертикальной осям:
 
-![](rotate-images/rotateexample.png "Текст, повернутый относительно центра")
+![](rotate-images/rotateexample.png "Text rotated around a center")
 
-Для поворота вокруг точки (0, 0), SkiaSharp поддерживает как графический объект [ `RotateDegrees` ](xref:SkiaSharp.SKCanvas.RotateDegrees(System.Single)) метод и [ `RotateRadians` ](xref:SkiaSharp.SKCanvas.RotateRadians(System.Single)) метод:
+Для поворота графического объекта вокруг точки (0, 0) SkiaSharp поддерживает как [`RotateDegrees`](xref:SkiaSharp.SKCanvas.RotateDegrees(System.Single)) метод, так и [`RotateRadians`](xref:SkiaSharp.SKCanvas.RotateRadians(System.Single)) метод:
 
 ```csharp
 public void RotateDegrees (Single degrees)
@@ -32,17 +35,17 @@ public void RotateDegrees (Single degrees)
 public Void RotateRadians (Single radians)
 ```
 
-Круг 360 градусов совпадает со значением радианах twoπ, что позволяет легко выполнить преобразование между двумя значениями. Используйте, какое значение удобным. Все тригонометрические функции в .NET [ `Math` ](xref:System.Math) класс использовать единицы угол в радианах.
+Окружность в 360 градусов аналогична твоπ радианам, поэтому можно легко выполнить преобразование между двумя единицами. Используйте любой из удобных. Все тригонометрические функции в [`Math`](xref:System.Math) классе .NET используют единицы в радианах.
 
-Поворот по часовой стрелке, нацеленное на углы. (Несмотря на то, что поворота в декартовой системе координат против часовой стрелки, по соглашению, поворот по часовой стрелке согласуется с увеличение выходят из строя как SkiaSharp координаты Y.) Отрицательное значение углы и углы больше, чем разрешено 360 градусов.
+Поворот по часовой стрелке для увеличения углов. (Хотя поворот в декартовой системе координат — это по часовой стрелке в соответствии с соглашением, поворот по часовой стрелке согласован с координатами Y, увеличивающимися в SkiaSharp.) Отрицательные углы и углы, превышающие 360 градусов, разрешены.
 
-Преобразование формул для поворота более сложны, чем translate и масштабирования. Для углом α формулы преобразования являются следующие:
+Формулы преобразования для вращения сложнее, чем для преобразования и масштабирования. Для угла α формулы преобразования имеют следующие преимущества:
 
-x' = x•cos(α) — y•sin(α)   
+x "= x • cos (α) — y • Sin (α)   
 
-y "= x•sin(α) + y•cos(α)
+y "= x • Sin (α) + y • cos (α)
 
-**Основные повернуть** страница демонстрирует `RotateDegrees` метод. [ **BasicRotate.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/BasicRotatePage.xaml.cs) файл выводит текст с базового плана в центре страницы и меняет его на основе `Slider` с диапазоном –360 до 360. Вот соответствующая часть `PaintSurface` обработчика:
+На странице **Простая поворот** демонстрируется `RotateDegrees` метод. В файле [**BasicRotate.XAML.CS**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/BasicRotatePage.xaml.cs) отображается текст со своей базовой линией на странице и он поворачивается на основе a `Slider` с диапазоном от – 360 до 360. Ниже приведена соответствующая часть `PaintSurface` обработчика:
 
 ```csharp
 using (SKPaint textPaint = new SKPaint
@@ -58,11 +61,11 @@ using (SKPaint textPaint = new SKPaint
 }
 ```
 
-Так как центром поворота является относительно верхнего левого угла холста, для большинства углов, задайте в этой программе, текст поворачивается на экране:
+Поскольку поворот выравнивается по левому верхнему углу холста, для большинства углов, заданных в этой программе, текст поворачивается за пределы экрана:
 
-[![](rotate-images/basicrotate-small.png "Тройной снимок экрана страницы основные повернуть")](rotate-images/basicrotate-large.png#lightbox "тройной снимок экрана страницы основные поворот")
+[![](rotate-images/basicrotate-small.png "Triple screenshot of the Basic Rotate page")](rotate-images/basicrotate-large.png#lightbox "Triple screenshot of the Basic Rotate page")
 
-Очень часто необходимо повернуть что-то вокруг указанного вращения, с помощью этих версий [ `RotateDegrees` ](xref:SkiaSharp.SKCanvas.RotateDegrees(System.Single,System.Single,System.Single)) и [ `RotateRadians` ](xref:SkiaSharp.SKCanvas.RotateRadians(System.Single,System.Single,System.Single)) методы:
+Очень часто требуется поворачивать что-то по центру вокруг указанной точки вращения с помощью следующих версий [`RotateDegrees`](xref:SkiaSharp.SKCanvas.RotateDegrees(System.Single,System.Single,System.Single)) [`RotateRadians`](xref:SkiaSharp.SKCanvas.RotateRadians(System.Single,System.Single,System.Single)) методов и:
 
 ```csharp
 public void RotateDegrees (Single degrees, Single px, Single py)
@@ -70,7 +73,7 @@ public void RotateDegrees (Single degrees, Single px, Single py)
 public void RotateRadians (Single radians, Single px, Single py)
 ```
 
-**По центру повернуть** страницы — так же, как **основные повернуть** за исключением того, что расширенная версия `RotateDegrees` используется для задания центр вращения в ту же точку, используемый для размещения текста:
+**Центральная страница вращения** аналогична **базовой** , за исключением того, что развернутая версия используется `RotateDegrees` для установки центра вращения на ту же точку, которая используется для размещения текста:
 
 ```csharp
 using (SKPaint textPaint = new SKPaint
@@ -86,17 +89,17 @@ using (SKPaint textPaint = new SKPaint
 }
 ```
 
-Теперь текст поворачивается вокруг точки, используемый для размещения текст, который является центра элемента базового плана текста по горизонтали:
+Теперь текст поворачивается вокруг точки, используемой для размещения текста, который является горизонтальным центром базового плана текста:
 
-[![](rotate-images/centeredrotate-small.png "Тройной снимок экрана страницы по центру повернуть")](rotate-images/centeredrotate-large.png#lightbox "тройной снимок экрана страницы по центру поворот")
+[![](rotate-images/centeredrotate-small.png "Triple screenshot of the Centered Rotate page")](rotate-images/centeredrotate-large.png#lightbox "Triple screenshot of the Centered Rotate page")
 
-Как и в случае с версией по центру `Scale` метод, выровненные по центру версию `RotateDegrees` вызов представляет собой ярлык. Ниже приведен метод:
+Как и в случае с Центральной версией `Scale` метода, Центральная версия `RotateDegrees` вызова является ярлыком. Ниже приведен метод.
 
 ```csharp
 RotateDegrees (degrees, px, py);
 ```
 
-После этого вызова эквивалентно следующему:
+Этот вызов эквивалентен следующему:
 
 ```csharp
 canvas.Translate(px, py);
@@ -104,14 +107,14 @@ canvas.RotateDegrees(degrees);
 canvas.Translate(-px, -py);
 ```
 
-Вы обнаружите, что иногда можно объединить `Translate` вызывает с `Rotate` вызовов. Например, вот `RotateDegrees` и `DrawText` вызывает в **по центру повернуть** странице;
+Вы обнаружите, что иногда можно объединять `Translate` вызовы с помощью `Rotate` вызовов. Например, ниже приведены `RotateDegrees` `DrawText` вызовы и в **Центральной странице вращения** .
 
 ```csharp
 canvas.RotateDegrees((float)rotateSlider.Value, info.Width / 2, info.Height / 2);
 canvas.DrawText(Title, info.Width / 2, info.Height / 2, textPaint);
 ```
 
-`RotateDegrees` Вызов эквивалентен два `Translate` вызовы и не ориентированный на `RotateDegrees`:
+`RotateDegrees`Вызов эквивалентен двум `Translate` вызовам и не выровнен по центру `RotateDegrees` :
 
 ```csharp
 canvas.Translate(info.Width / 2, info.Height / 2);
@@ -120,7 +123,7 @@ canvas.Translate(-info.Width / 2, -info.Height / 2);
 canvas.DrawText(Title, info.Width / 2, info.Height / 2, textPaint);
 ```
 
-`DrawText` Вызова для отображения текста в определенном месте эквивалентно `Translate` вызов к этому расположению, за которым следует `DrawText` в точке (0, 0):
+`DrawText`Вызов для вывода текста в определенном месте эквивалентен `Translate` вызову для этого расположения, за которым следует `DrawText` точка (0, 0):
 
 ```csharp
 canvas.Translate(info.Width / 2, info.Height / 2);
@@ -130,7 +133,7 @@ canvas.Translate(info.Width / 2, info.Height / 2);
 canvas.DrawText(Title, 0, 0, textPaint);
 ```
 
-Два последовательных `Translate` вызовы, отменяют друг друга:
+Два последовательных `Translate` вызова отменяют друг друга:
 
 ```csharp
 canvas.Translate(info.Width / 2, info.Height / 2);
@@ -138,13 +141,13 @@ canvas.RotateDegrees((float)rotateSlider.Value);
 canvas.DrawText(Title, 0, 0, textPaint);
 ```
 
-По сути два преобразования применяются в том порядке, в отличие от их отображения в коде. `DrawText` Вызов отображает текст в левом верхнем углу холста. `RotateDegrees` Вызов сменяет этот текст, относительно верхнего левого угла. Затем `Translate` вызов перемещает текст по центру холста.
+По сути, два преобразования применяются в порядке, противоположном тому, как они отображаются в коде. `DrawText`Вызов отображает текст в левом верхнем углу холста. `RotateDegrees`Вызов поворачивает этот текст относительно левого верхнего угла. Затем `Translate` вызов перемещает текст в центр холста.
 
-Обычно существует несколько способов объединения вращения и перемещения. **Поворачивать текст** страница создает следующий результат:
+Обычно существует несколько способов объединения вращения и перевода. **Повернутая текстовая** страница создает следующее отображение:
 
-[![](rotate-images/rotatedtext-small.png "Тройной снимок экрана страницы поворачивать текст")](rotate-images/rotatedtext-large.png#lightbox "тройной снимок экрана страницы текста (повернутый)")
+[![](rotate-images/rotatedtext-small.png "Triple screenshot of the Rotated Text page")](rotate-images/rotatedtext-large.png#lightbox "Triple screenshot of the Rotated Text page")
 
-Вот `PaintSurface` обработчик [ `RotatedTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/RotatedTextPage.cs) класса:
+Вот `PaintSurface` обработчик [`RotatedTextPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/RotatedTextPage.cs) класса:
 
 ```csharp
 static readonly string text = "    ROTATE";
@@ -182,9 +185,9 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ```
 
-`xCenter` И `yCenter` значения указывают центру холста. `yText` Значение — немного смещение от. Это значение представляет координату по оси y необходимо поместить текст, чтобы по-настоящему вертикально по центру страницы. `for` Цикл затем задает поворот на основе по центру холста. Поворот осуществляется с шагом 30 градусов. Текст рисуется с помощью `yText` значение. Количество пустых значений перед словом «ПОВОРОТ» в `text` эмпирически для установления соединения между эти 12 текстовые строки могут быть dodecagon было определить значение.
+`xCenter`Значения и `yCenter` указывают центр холста. `yText`Значение является небольшим смещением. Это значение является координатой по оси Y, необходимой для размещения текста таким образом, чтобы он действительно был по вертикали выровнен по центру страницы. `for`Затем в цикле устанавливается поворот на основе центра холста. Поворот выполняется с шагом в 30 градусов. Текст отображается с использованием `yText` значения. Число пробелов перед словом «ВРАЩЕНИЕ» в `text` значении было определено, чтобы сделать так, чтобы соединение между этими 12 текстовыми строками было Додекагон.
 
-Чтобы упростить этот код является увеличение угол поворота на 30 градусов в каждом проходе через цикл после `DrawText` вызова. Это устраняет потребность в вызовы `Save` и `Restore`. Обратите внимание, что `degrees` переменная больше не используется в теле `for` блок:
+Одним из способов упрощения этого кода является увеличение угла вращения на 30 градусов каждый раз через цикл после `DrawText` вызова. Это устраняет необходимость в вызовах `Save` и `Restore` . Обратите внимание, что `degrees` переменная больше не используется в теле `for` блока:
 
 ```csharp
 for (int degrees = 0; degrees < 360; degrees += 30)
@@ -195,7 +198,7 @@ for (int degrees = 0; degrees < 360; degrees += 30)
 
 ```
 
-Это также можно использовать простую форму `RotateDegrees` с предшествующим цикла с помощью вызова `Translate` перенести все относительно центральной части холста:
+Можно также использовать простую форму `RotateDegrees` , предмещая цикл с вызовом `Translate` для перемещения всех элементов в центр холста:
 
 ```csharp
 float yText = -textBounds.Height / 2 - textBounds.Top;
@@ -209,15 +212,15 @@ for (int degrees = 0; degrees < 360; degrees += 30)
 }
 ```
 
-Измененный `yText` вычисления больше не включает в себя `yCenter`. Теперь `DrawText` вызов Центрирует текст по вертикали в верхней части холста.
+Измененное `yText` Вычисление больше не включается `yCenter` . Теперь `DrawText` центр обработки вызовов выравнивает текст по вертикали в верхней части холста.
 
-Поскольку преобразования применяются концептуально отличие их отображения в коде, чаще всего начинается с большим числом доступных преобразований, следуют дополнительные локальные преобразования. Часто это самый простой способ объединения вращения и перемещения.
+Поскольку преобразования концептуально применяются в отличие от того, как они отображаются в коде, часто можно начать с более глобальных преобразований, за которыми следуют дополнительные локальные преобразования. Часто это самый простой способ объединения вращения и перевода.
 
-Например предположим, что необходимо нарисовать графическим объектом, который вращается вокруг его центра, как глобально, вращается вокруг своей оси. Но вам нужно этот объект для вращения вокруг центральной части экрана как вращение вокруг Солнца планеты.
+Например, предположим, что необходимо нарисовать графический объект, повернутый вокруг его центра, примерно так же, как планета вращается на своей оси. Но необходимо также, чтобы этот объект был связан с центром экрана примерно так же, как планета, включающий солнце.
 
-Это можно сделать, поместив объект в левом верхнем углу холста и затем с помощью анимации для вращения вокруг этого угла. После этого перевод объекта по горизонтали как orbital radius. Теперь можно применять второй анимированного поворота, также вокруг начала координат. Это делает базируются на угол объекта. Теперь перевод относительно центральной части холста.
+Это можно сделать, разместив объект в левом верхнем углу холста, а затем используя анимацию, чтобы повернуть его вокруг этого угла. Затем переведите объект по горизонтали, например Орбитал RADIUS. Теперь примените второй анимированный поворот, который также находится вокруг источника. В результате объект подается вокруг угла. Теперь преобразовывать в центр холста.
 
-Вот `PaintSurface` обработчика, который содержит эти преобразования вызовы в обратном порядке:
+Вот `PaintSurface` обработчик, который содержит эти вызовы преобразования в обратный порядок:
 
 ```csharp
 float revolveDegrees, rotateDegrees;
@@ -255,7 +258,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-`revolveDegrees` И `rotateDegrees` поля, применяется анимация. Эта программа использует метод другой анимации на основе Xamarin.Forms [ `Animation` ](xref:Xamarin.Forms.Animation) класса. (Этот класс описан в [в главе 22 книги *Создание мобильных приложений с помощью Xamarin.Forms*](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch22-Apr2016.pdf)) `OnAppearing` переопределение создает два `Animation` объектов с помощью методов обратного вызова, а затем вызывает `Commit` на них для длительности анимации:
+`revolveDegrees`Поля и `rotateDegrees` являются анимированными. Эта программа использует другой метод анимации на основе Xamarin.Forms [`Animation`](xref:Xamarin.Forms.Animation) класса. (Этот класс описан в [главе 22 о *создании мобильных приложений с помощью Xamarin.Forms * ](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch22-Apr2016.pdf)) `OnAppearing` . переопределение создает два `Animation` объекта с методами обратного вызова и затем вызывает `Commit` их для длительности анимации:
 
 ```csharp
 protected override void OnAppearing()
@@ -273,7 +276,7 @@ protected override void OnAppearing()
 }
 ```
 
-Первый `Animation` анимирует объект `revolveDegrees` от 0 до 360 градусов более 10 секунд. Анимирует второй `rotateDegrees` от 0 до 360 градусов каждые 1 во-вторых, а также делает недействительным поверхность, чтобы создать еще один вызов `PaintSurface` обработчика. `OnDisappearing` Переопределение отменяет эти две анимации:
+Первый `Animation` объект анимируется `revolveDegrees` от 0 до 360 градусов в течение 10 секунд. Второй объект анимируется `rotateDegrees` от 0 градусов до 360 градусов каждые 1 секунду, а также делает недействительной поверхность для создания другого вызова `PaintSurface` обработчика. `OnDisappearing`Переопределение отменяет эти две анимации:
 
 ```csharp
 protected override void OnDisappearing()
@@ -284,9 +287,9 @@ protected override void OnDisappearing()
 }
 ```
 
-**Некрасиво аналогично часам со стрелками** программа (так называемых, так как более привлекательным аналогично часам со стрелками будут описаны в последующих статьях) использует поворота для рисования на минуту и час знаки часов и для поворота руки. Программа выводит часы, с помощью произвольных системы координат, исходя из круг, который выравнивается по центру в точке (0, 0) с радиусом 100. Она использует переноса и масштабирования для разверните и отцентрируйте этот круг на странице.
+**Неприятная аналоговая программа часов** (так как в более поздних статьях будут описаны более привлекательные аналоговые часы) использует вращение для отображения минут и часов часов и для поворота стрелок. Программа рисует часы с помощью произвольной системы координат на основе круга, центрированного в точке (0, 0) с радиусом 100. Он использует преобразование и масштабирование для расширения и центрирования круга на странице.
 
-`Translate` И `Scale` вызовы применяются глобально для объекта часов, то есть первый из них следует вызывать после инициализации `SKPaint` объектов:
+`Translate`Вызовы и `Scale` применяются глобально к часам, поэтому они являются первыми методами, которые должны вызываться после инициализации `SKPaint` объектов:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -315,7 +318,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-Существуют 60 знаки из двух разных размеров, которые необходимо нарисовать в кружке круглосуточно. `DrawCircle` Вызов рисует окружность, что в точке (0, – 90), который относительно центральной часов соответствует 12:00. `RotateDegrees` Вызов увеличивает угол поворота на 6 градусов после каждого деления. `angle` Переменная используется исключительно для того, чтобы определить, рисуется ли большой круг или маленький кружок:
+Имеется 60 меток двух разных размеров, которые должны быть изображены вокруг часов. `DrawCircle`Вызов рисует окружность в точке (0, – 90), которая относительно центра часов соответствует 12:00. `RotateDegrees`Вызов увеличивает угол вращения на 6 градусов после каждого деления. `angle`Переменная используется только для определения того, рисуется большой круг или маленький круг:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -332,7 +335,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-Наконец `PaintSurface` обработчик получает значение текущего времени и вычисляет поворот градусов для часа, минуты и второй руки. Каждой стрелки рисуется в положение, 12:00, таким образом, угол поворота относительно:
+Наконец, `PaintSurface` обработчик получает текущее время и вычисляет угол поворота для часа, минуты и секунды. Каждая рука рисуется в положении 12:00, чтобы угол вращения был относительным:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -364,13 +367,13 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-Часы определенно работает, несмотря на то, что довольно руки:
+Часы наверняка работают, хотя руки довольно грубый:
 
-[![](rotate-images/uglyanalogclock-small.png "Тройной снимок экрана страницы неструктурированный текст часов аналог для языка")](rotate-images/uglyanalogclock-large.png#lightbox "Triple screenshot of the Ugly Analog page")
+[![](rotate-images/uglyanalogclock-small.png "Triple screenshot of the Ugly Analog Clock Text page")](rotate-images/uglyanalogclock-large.png#lightbox "Triple screenshot of the Ugly Analog page")
 
-Более привлекательным часов, см. в статье [ **данные пути SVG в SkiaSharp**](../curves/path-data.md).
+Более привлекательные часы см. в статье [**данные о пути SVG в SkiaSharp**](../curves/path-data.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [SkiaSharpFormsDemos (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

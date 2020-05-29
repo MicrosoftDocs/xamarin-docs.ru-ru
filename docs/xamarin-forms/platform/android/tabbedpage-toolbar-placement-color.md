@@ -1,27 +1,30 @@
 ---
-title: Размещение и цвет панели инструментов Таббедпаже в Android
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая задает размещение и цвет панели инструментов в Таббедпаже.
-ms.prod: xamarin
-ms.assetid: A5C68D6A-9A5F-42EE-845D-1E5B0CB1544E
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/10/2018
-ms.openlocfilehash: b95b73759d44631da0525fce16218b8a87ca0507
-ms.sourcegitcommit: efbc69acf4ea484d8815311b058114379c9db8a2
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f5a2be4bd61056a42593fc45e1abdd3679795bc0
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73842839"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139988"
 ---
 # <a name="tabbedpage-toolbar-placement-and-color-on-android"></a>Размещение и цвет панели инструментов Таббедпаже в Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 > [!IMPORTANT]
-> Особенности платформы, которые задают цвет панели инструментов в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) , теперь устарели и были заменены свойствами [`SelectedTabColor`](xref:Xamarin.Forms.TabbedPage.SelectedTabColor) и [`UnselectedTabColor`](xref:Xamarin.Forms.TabbedPage.UnselectedTabColor) . Дополнительные сведения см. [в разделе Создание таббедпаже](~/xamarin-forms/app-fundamentals/navigation/tabbed-page.md#create-a-tabbedpage).
+> Особенности платформы, которые задают цвет панели инструментов в, [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) теперь устарели и заменены [`SelectedTabColor`](xref:Xamarin.Forms.TabbedPage.SelectedTabColor) [`UnselectedTabColor`](xref:Xamarin.Forms.TabbedPage.UnselectedTabColor) свойствами и. Дополнительные сведения см. [в разделе Создание таббедпаже](~/xamarin-forms/app-fundamentals/navigation/tabbed-page.md#create-a-tabbedpage).
 
-Эти особенности платформы используются для задания расположения и цвета панели инструментов на [`TabbedPage`](xref:Xamarin.Forms.TabbedPage). Они используются в XAML путем установки присоединяемого свойства [`TabbedPage.ToolbarPlacement`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.ToolbarPlacementProperty) в значение перечисления [`ToolbarPlacement`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement) , а вложенные свойства [`TabbedPage.BarItemColor`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.BarItemColorProperty) и [`TabbedPage.BarSelectedItemColor`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.BarSelectedItemColorProperty) — в [`Color`](xref:Xamarin.Forms.Color):
+Эти особенности платформы используются для задания расположения и цвета панели инструментов в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) . Они используются в XAML путем установки [`TabbedPage.ToolbarPlacement`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.ToolbarPlacementProperty) присоединенного свойства в значение [`ToolbarPlacement`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement) перечисления, а [`TabbedPage.BarItemColor`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.BarItemColorProperty) [`TabbedPage.BarSelectedItemColor`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.BarSelectedItemColorProperty) вложенные свойства и присоединяются к [`Color`](xref:Xamarin.Forms.Color) :
 
 ```xaml
 <TabbedPage ...
@@ -33,7 +36,7 @@ ms.locfileid: "73842839"
 </TabbedPage>
 ```
 
-Кроме того, их можно использовать с C# помощью API Fluent:
+Кроме того, их можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -45,18 +48,18 @@ On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom)
              .SetBarSelectedItemColor(Color.Red);
 ```
 
-Метод `TabbedPage.On<Android>` указывает, что эти особенности платформы будут выполняться только в Android. Метод [`TabbedPage.SetToolbarPlacement`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.SetToolbarPlacement(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.TabbedPage},Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement)) в пространстве имен [`Xamarin.Forms.PlatformConfiguration.AndroidSpecific`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) используется для задания расположения панели инструментов в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage), при этом перечисление [`ToolbarPlacement`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement) предоставляет следующие значения:
+`TabbedPage.On<Android>`Метод указывает, что эти особенности платформы будут выполняться только в Android. [ `TabbedPage.SetToolbarPlacement` ] (Xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Сеттулбарплацемент ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Таббедпаже}, Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Тулбарплацемент)). в [`Xamarin.Forms.PlatformConfiguration.AndroidSpecific`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространстве имен используется для задания расположения панели инструментов в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) , а [`ToolbarPlacement`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement) перечисление предоставляет следующие значения:
 
-- [`Default`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement.Default) — указывает, что панель инструментов помещается в расположение по умолчанию на странице. Это верхняя часть страницы на телефонах, а нижняя часть страницы — на других идиомах устройств.
-- [`Top`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement.Top) — указывает, что панель инструментов размещается в верхней части страницы.
-- [`Bottom`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement.Bottom) — указывает, что панель инструментов размещается в нижней части страницы.
+- [`Default`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement.Default)— Указывает, что панель инструментов помещается в расположение по умолчанию на странице. Это верхняя часть страницы на телефонах, а нижняя часть страницы — на других идиомах устройств.
+- [`Top`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement.Top)— Указывает, что панель инструментов размещается в верхней части страницы.
+- [`Bottom`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement.Bottom)— Указывает, что панель инструментов размещается в нижней части страницы.
 
-Кроме того, методы [`TabbedPage.SetBarItemColor`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.SetBarItemColor(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.TabbedPage},Xamarin.Forms.Color)) и [`TabbedPage.SetBarSelectedItemColor`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.SetBarSelectedItemColor(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.TabbedPage},Xamarin.Forms.Color)) используются для задания цвета элементов панели инструментов и выбранных элементов панели инструментов соответственно.
+Кроме того, [ `TabbedPage.SetBarItemColor` ] (xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Сетбаритемколор ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Таббедпаже}, Xamarin.Forms . Color)) и [ `TabbedPage.SetBarSelectedItemColor` ] (xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Сетбарселектедитемколор ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Таббедпаже}, Xamarin.Forms . Color). методы используются для задания цвета элементов панели инструментов и выбранных элементов панели инструментов соответственно.
 
 > [!NOTE]
-> Методы [`GetToolbarPlacement`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.GetToolbarPlacement(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.TabbedPage})), [`GetBarItemColor`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.GetBarItemColor(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.TabbedPage}))и [`GetBarSelectedItemColor`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.GetBarSelectedItemColor(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.TabbedPage})) можно использовать для получения расположения и цвета панели инструментов [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) .
+> [ `GetToolbarPlacement` ] (Xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Жеттулбарплацемент ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Таббедпаже})), [ `GetBarItemColor` ] (xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Жетбаритемколор ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Таббедпаже})) и [ `GetBarSelectedItemColor` ] (xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Жетбарселектедитемколор ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Таббедпаже})). методы можно использовать для получения расположения и цвета [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) панели инструментов.
 
-Результат заключается в том, что размещение панели инструментов, цвет элементов панели инструментов и цвет выбранного элемента панели инструментов можно задать в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage):
+Результат заключается в том, что размещение панели инструментов, цвет элементов панели инструментов и цвет выбранного элемента панели инструментов можно задать в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) :
 
 ![](tabbedpage-toolbar-placement-color-images/tabbedpage-toolbar-placement.png)
 

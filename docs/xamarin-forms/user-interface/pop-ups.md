@@ -1,28 +1,31 @@
 ---
-title: Отображать всплывающие окна
-description: Xamarin. Forms предоставляет три всплывающих элемента пользовательского интерфейса — оповещение, лист действий и запрос. В этой статье демонстрируется использование API предупреждений, листов действий и интерфейсов командной строки для вывода диалоговых окон, предлагающих пользователям простые вопросы, помогающие пользователям выполнять задачи и выводить запросы.
-ms.prod: xamarin
-ms.assetid: 46AB0D5E-0025-4A8A-9D00-3E66C3D0BA2E
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/10/2020
-ms.openlocfilehash: 87348d5821c2c9e2e46a777f212bd5f69d1a54d0
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+title: ''
+description: 'Xamarin.Formsв предусмотрено три всплывающих элемента пользовательского интерфейса: предупреждение, лист действий и запрос. В этой статье демонстрируется использование API предупреждений, листов действий и интерфейсов командной строки для вывода диалоговых окон, предлагающих пользователям простые вопросы, помогающие пользователям выполнять задачи и выводить запросы.'
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a7ddd9134b7214b84a883e171d7b0cadaba3390b
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82517571"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136322"
 ---
 # <a name="display-pop-ups"></a>Отображать всплывающие окна
 
-[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-pop-ups)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-pop-ups)
 
-Отображение предупреждения, предоставление пользователю возможности выбора или отображение запроса — это обычная задача пользовательского интерфейса. [`Page`](xref:Xamarin.Forms.Page) Xamarin. Forms содержит три метода для взаимодействия с пользователем через всплывающее окно: [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*), [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*)и. `DisplayPromptAsync` Эти элементы визуализируются на каждой платформе с помощью соответствующих собственных элементов управления.
+Отображение предупреждения, предоставление пользователю возможности выбора или отображение запроса — это обычная задача пользовательского интерфейса. Xamarin.Formsимеет три метода в [`Page`](xref:Xamarin.Forms.Page) классе для взаимодействия с пользователем через всплывающее окно: [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) , [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) и `DisplayPromptAsync` . Эти элементы визуализируются на каждой платформе с помощью соответствующих собственных элементов управления.
 
 ## <a name="display-an-alert"></a>Отображение оповещений
 
-На всех платформах, поддерживаемых Xamarin.Forms, есть модальный всплывающий элемент, позволяющий выводить предупреждения или задавать простые вопросы пользователю. Чтобы отобразить эти предупреждения в Xamarin. Forms, используйте [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) метод для любого [`Page`](xref:Xamarin.Forms.Page)из них. Следующая строка отображает простое сообщение:
+Все Xamarin.Forms Поддерживаемые платформы имеют модальное всплывающее окно для оповещения пользователя или запроса простых вопросов. Чтобы отобразить эти предупреждения в Xamarin.Forms , используйте [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) метод для любого из них [`Page`](xref:Xamarin.Forms.Page) . Следующая строка отображает простое сообщение:
 
 ```csharp
 await DisplayAlert ("Alert", "You have been alerted", "OK");
@@ -32,7 +35,7 @@ await DisplayAlert ("Alert", "You have been alerted", "OK");
 
 В этом примере не предполагается получение сведений от пользователя. Предупреждение отображается в модальном режиме, и после его закрытия пользователь продолжает работать с приложением.
 
-[`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) Метод также можно использовать для записи ответа пользователя путем представления двух кнопок и возврата `boolean`. Для получения ответа на предупреждение предоставьте надписи для обеих кнопок и примените к методу оператор `await`. После того как пользователь выберет один из вариантов, ответ возвращается в код. Обратите внимание на ключевые слова `async` и `await` в примере кода ниже.
+[`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*)Метод также можно использовать для записи ответа пользователя путем представления двух кнопок и возврата `boolean` . Для получения ответа на предупреждение предоставьте надписи для обеих кнопок и примените к методу оператор `await`. После того как пользователь выберет один из вариантов, ответ возвращается в код. Обратите внимание на ключевые слова `async` и `await` в примере кода ниже.
 
 ```csharp
 async void OnAlertYesNoClicked (object sender, EventArgs e)
@@ -46,9 +49,9 @@ async void OnAlertYesNoClicked (object sender, EventArgs e)
 
 ## <a name="guide-users-through-tasks"></a>Рекомендации для пользователей по задачам
 
-[UIActionSheet](https://developer.apple.com/library/ios/documentation/uikit/reference/uiactionsheet_class/Reference/Reference.html) — это стандартный элемент пользовательского интерфейса в iOS. Метод Xamarin. Forms [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) позволяет включать этот элемент управления в межплатформенные приложения, выменяя собственные альтернативы в Android и UWP.
+[UIActionSheet](https://developer.apple.com/library/ios/documentation/uikit/reference/uiactionsheet_class/Reference/Reference.html) — это стандартный элемент пользовательского интерфейса в iOS. Xamarin.Forms [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) Метод позволяет включать этот элемент управления в межплатформенные приложения, выменяя собственные альтернативы в Android и UWP.
 
-Для вывода листа `await` [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) действий в любом [`Page`](xref:Xamarin.Forms.Page)случае передайте сообщение и метки кнопок в виде строк. Этот метод возвращает надпись кнопки, нажатой пользователем. Вот простой пример.
+Для вывода листа действий `await` [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) в любом случае передайте [`Page`](xref:Xamarin.Forms.Page) сообщение и метки кнопок в виде строк. Этот метод возвращает надпись кнопки, нажатой пользователем. Вот простой пример.
 
 ```csharp
 async void OnActionSheetSimpleClicked (object sender, EventArgs e)
@@ -74,7 +77,7 @@ async void OnActionSheetCancelDeleteClicked (object sender, EventArgs e)
 
 ## <a name="display-a-prompt"></a>Отображение запроса
 
-Чтобы отобразить запрос, вызовите метод `DisplayPromptAsync` в Any [`Page`](xref:Xamarin.Forms.Page), передав заголовок и сообщение в качестве `string` аргументов:
+Чтобы отобразить запрос, вызовите метод `DisplayPromptAsync` в Any [`Page`](xref:Xamarin.Forms.Page) , передав заголовок и сообщение в качестве `string` аргументов:
 
 ```csharp
 string result = await DisplayPromptAsync("Question 1", "What's your name?");
@@ -84,18 +87,18 @@ string result = await DisplayPromptAsync("Question 1", "What's your name?");
 
 [![Снимок экрана: модальная строка в iOS и Android](pop-ups-images/simple-prompt.png "Модальная строка")](pop-ups-images/simple-prompt-large.png#lightbox "Модальная строка")
 
-Если нажата кнопка ОК, то возвращаемый ответ возвращается в виде `string`. Если нажата кнопка Отмена, `null` возвращается значение.
+Если нажата кнопка ОК, то возвращаемый ответ возвращается в виде `string` . Если нажата кнопка Отмена, `null` возвращается значение.
 
 Полный список аргументов для `DisplayPromptAsync` метода:
 
-- `title`Тип `string`— заголовок, отображаемый в запросе.
-- `message`Тип `string`— сообщение, отображаемое в командной строке.
-- `accept`, типа `string`— это текст кнопки Accept. Это необязательный аргумент, значение по умолчанию которого — ОК.
-- `cancel`, типа `string`— это текст для кнопки Отмена. Это необязательный аргумент, значение по умолчанию которого — Cancel.
-- `placeholder`Тип `string`— текст заполнителя, отображаемый в запросе. Это необязательный аргумент, значение по умолчанию `null`которого —.
-- `maxLength`, типа `int`— максимальная длина ответа пользователя. Это необязательный аргумент, значение по умолчанию которого равно-1.
-- `keyboard`Тип `Keyboard`— это тип клавиатуры, используемый для ответа пользователя. Это необязательный аргумент, значение по умолчанию `Keyboard.Default`которого —.
-- `initialValue`Тип `string`— это предварительно определенный ответ, который будет отображаться и который можно изменить. Это необязательный аргумент, значение по умолчанию которого — `string`Empty.
+- `title`Тип `string` — заголовок, отображаемый в запросе.
+- `message`Тип — `string` сообщение, отображаемое в командной строке.
+- `accept`, типа `string` — это текст кнопки Accept. Это необязательный аргумент, значение по умолчанию которого — ОК.
+- `cancel`, типа `string` — это текст для кнопки Отмена. Это необязательный аргумент, значение по умолчанию которого — Cancel.
+- `placeholder`Тип — `string` текст заполнителя, отображаемый в запросе. Это необязательный аргумент, значение по умолчанию которого — `null` .
+- `maxLength`, типа `int` — Максимальная длина ответа пользователя. Это необязательный аргумент, значение по умолчанию которого равно-1.
+- `keyboard`Тип `Keyboard` — это тип клавиатуры, используемый для ответа пользователя. Это необязательный аргумент, значение по умолчанию которого — `Keyboard.Default` .
+- `initialValue`тип — это `string` предварительно определенный ответ, который будет отображаться и который можно изменить. Это необязательный аргумент, значение по умолчанию которого — Empty `string` .
 
 В следующем примере показано задание некоторых необязательных аргументов:
 

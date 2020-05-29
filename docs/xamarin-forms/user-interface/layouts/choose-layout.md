@@ -1,28 +1,31 @@
 ---
-title: Выбор макета Xamarin. Forms
-description: Классы макета Xamarin. Forms позволяют упорядочивать и группировать элементы управления ИП в приложении.
-ms.prod: xamarin
-ms.assetid: 05A39752-A174-447E-A30D-3CC9EF98CB96
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 08/21/2018
-ms.openlocfilehash: 14e48d04696bb758a2010bd1d56ecaa125bbd30a
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+title: Выбор Xamarin.Forms макета
+description: Xamarin.Formsклассы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 16a48423d05ce1cede75c0020bf18f4f398f5adc
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83150012"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138506"
 ---
-# <a name="choose-a-xamarinforms-layout"></a>Выбор макета Xamarin. Forms
+# <a name="choose-a-xamarinforms-layout"></a>Выбор Xamarin.Forms макета
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
 
-Классы макета Xamarin. Forms позволяют упорядочивать и группировать элементы управления ИП в приложении. Выбор класса макета требует знания того, как макет позиционирует свои дочерние элементы, и как макет изменяет свои дочерние элементы. Кроме того, может потребоваться вложение макетов для создания желаемого макета.
+Xamarin.Formsклассы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении. Выбор класса макета требует знания того, как макет позиционирует свои дочерние элементы, и как макет изменяет свои дочерние элементы. Кроме того, может потребоваться вложение макетов для создания желаемого макета.
 
-На следующем рисунке показаны типичные макеты, которые можно достичь с помощью основных классов макета Xamarin. Forms:
+На следующем рисунке показаны типичные макеты, которые можно достичь с помощью основных Xamarin.Forms классов макета:
 
-[![Основные классы макета в Xamarin. Forms](images/layouts.png "Классы макета Xamarin. Forms")](images/layouts-large.png#lightbox "Классы макета Xamarin. Forms")
+[![Основные классы макета вXamarin.Forms](images/layouts.png "[! Операцион. Классы макета NO-LOC (Xamarin. Forms)]")](images/layouts-large.png#lightbox "[! Операцион. Классы макета NO-LOC (Xamarin. Forms)]")
 
 ## <a name="stacklayout"></a>StackLayout
 
@@ -73,7 +76,7 @@ ms.locfileid: "83150012"
 > [!TIP]
 > При использовании метода [`StackLayout`](xref:Xamarin.Forms.StackLayout) Убедитесь, что только один дочерний элемент имеет значение [`LayoutOptions.Expands`](xref:Xamarin.Forms.LayoutOptions.Expands) . В этом случае указанный дочерний элемент будет занимать максимальное пространство, предоставляемое ему макетом `StackLayout`. Выполнять эти вычисления несколько раз слишком затратно.
 
-Дополнительные сведения см. в разделе [Xamarin. Forms StackLayout](stacklayout.md).
+Дополнительные сведения см. в разделе [ Xamarin.Forms StackLayout](stacklayout.md).
 
 ## <a name="grid"></a>Макет Grid
 
@@ -118,7 +121,7 @@ ms.locfileid: "83150012"
 > [!CAUTION]
 > Старайтесь сделать так, чтобы максимально допустимое число строк и столбцов было равно [`Auto`](xref:Xamarin.Forms.GridLength.Auto) размеру. Из-за каждой строки или столбца с автоматическим размером обработчик макета будет выполнять дополнительные вычисления макета. Если возможно, используйте строки и столбцы фиксированного размера. Кроме того, можно задать для строк и столбцов занимать пропорциональный объем пространства со [`GridUnitType.Star`](xref:Xamarin.Forms.GridUnitType.Star) значением перечисления.
 
-Дополнительные сведения см. в разделе [Сетка Xamarin. Forms](grid.md).
+Дополнительные сведения см. в разделе [ Xamarin.Forms Grid](grid.md).
 
 ## <a name="flexlayout"></a>FlexLayout
 
@@ -142,7 +145,7 @@ ms.locfileid: "83150012"
 - [`AlignItems`](xref:Xamarin.Forms.FlexLayout.AlignItems)Свойство имеет значение `Center` , что приводит к горизонтальному центрированию каждого элемента.
 - [`JustifyContent`](xref:Xamarin.Forms.FlexLayout.JustifyContent)Свойство имеет значение `SpaceEvenly` , которое выделяет все оставшиеся вертикальные промежутки между всеми элементами, а также над первым элементом и под последним элементом.
 
-Дополнительные сведения см. в разделе [Xamarin. Forms флекслайаут](flex-layout.md).
+Дополнительные сведения см. в разделе [ Xamarin.Forms флекслайаут](flex-layout.md).
 
 ## <a name="relativelayout"></a>RelativeLayout
 
@@ -191,7 +194,7 @@ ms.locfileid: "83150012"
 > [!WARNING]
 > По возможности избегайте использования `RelativeLayout`. В противном случае ЦП будет испытывать значительно большую нагрузку.
 
-Дополнительные сведения см. в разделе [Xamarin. Forms RelativeLayout](relative-layout.md).
+Дополнительные сведения см. в разделе [ Xamarin.Forms RelativeLayout](relative-layout.md).
 
 ## <a name="absolutelayout"></a>AbsoluteLayout
 
@@ -231,7 +234,7 @@ ms.locfileid: "83150012"
 > [!CAUTION]
 > Старайтесь не использовать [`AbsoluteLayout.AutoSize`](xref:Xamarin.Forms.AbsoluteLayout.AutoSize) свойство, когда это возможно, так как оно приведет к тому, что обработчик макетов будет выполнять дополнительные вычисления макета.
 
-Дополнительные сведения см. в разделе [Xamarin. Forms абсолутелайаут](absolute-layout.md).
+Дополнительные сведения см. в разделе [ Xamarin.Forms абсолутелайаут](absolute-layout.md).
 
 ## <a name="input-transparency"></a>Прозрачность ввода
 
@@ -248,11 +251,11 @@ ms.locfileid: "83150012"
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Макет (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
-- [Макеты Xamarin. Forms (видео)](https://youtu.be/4HlLjTZQzjM)
-- [StackLayout Xamarin. Forms](stacklayout.md)
-- [Сетка Xamarin. Forms](grid.md)
-- [Флекслайаут Xamarin. Forms](flex-layout.md)
-- [Абсолутелайаут Xamarin. Forms](absolute-layout.md)
-- [RelativeLayout Xamarin. Forms](relative-layout.md)
+- [Xamarin.FormsМакеты (видео)](https://youtu.be/4HlLjTZQzjM)
+- [Xamarin.FormsStackLayout](stacklayout.md)
+- [Xamarin.FormsСетки](grid.md)
+- [Xamarin.Formsфлекслайаут](flex-layout.md)
+- [Xamarin.Formsабсолутелайаут](absolute-layout.md)
+- [Xamarin.FormsRelativeLayout](relative-layout.md)
 - [Оптимизация производительности макета](~/xamarin-forms/deploy-test/performance.md#optimize-layout-performance)
 - [Сжатие макета](layout-compression.md)

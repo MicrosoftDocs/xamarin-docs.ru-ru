@@ -1,99 +1,102 @@
 ---
-title: Создание пользовательского макета в Xamarin. Forms
-description: В этой статье объясняется, как создать класс пользовательского макета, а также демонстрирует класс WrapLayout, с учетом ориентации, который упорядочивает его дочерние элементы горизонтально по странице и затем создает оболочку для отображения последующих дочерних элементов для дополнительных строк.
-ms.prod: xamarin
-ms.assetid: B0CFDB59-14E5-49E9-965A-3DCCEDAC2E31
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/29/2017
-ms.openlocfilehash: 9442116bf053768fe22d123d1c7e3d146f9b2834
-ms.sourcegitcommit: 76f930ce63b193ca3f7f85f768b031e59cb342ec
+title: Создание пользовательского макета вXamarin.Forms
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2beb00e0587a0e47a29d6f5628a5d6623514eade
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71198507"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137336"
 ---
-# <a name="create-a-custom-layout-in-xamarinforms"></a>Создание пользовательского макета в Xamarin. Forms
+# <a name="create-a-custom-layout-in-xamarinforms"></a>Создание пользовательского макета вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
 
-_Xamarin. Forms определяет пять классов макета — StackLayout, Абсолутелайаут, RelativeLayout, Grid и Флекслайаут, каждый из которых упорядочивает свои дочерние элементы по-разному. Тем не менее иногда это необходимо для организации содержимого страницы, с использованием макета, не поддерживаемых Xamarin.Forms. В этой статье объясняется, как создать класс пользовательского макета, а также демонстрирует класс WrapLayout, с учетом ориентации, который упорядочивает его дочерние элементы горизонтально по странице и затем создает оболочку для отображения последующих дочерних элементов для дополнительных строк._
+_Xamarin. Forms определяет пять классов макета — StackLayout, Абсолутелайаут, RelativeLayout, Grid и Флекслайаут, каждый из которых упорядочивает свои дочерние элементы по-разному. Однако иногда необходимо упорядочить содержимое страницы, используя макет, не предоставляемый Xamarin.Forms . В этой статье объясняется, как написать пользовательский класс макета и демонстрируется ориентированный на ориентацию класс Враплайаут, который упорядочивает свои дочерние элементы на странице по горизонтали, а затем переносит отображение последующих дочерних элементов в дополнительные строки._
 
-В Xamarin.Forms, все макета классы являются производными от [ `Layout<T>` ](xref:Xamarin.Forms.Layout`1) класса и ограничение универсального типа, [ `View` ](xref:Xamarin.Forms.View) и его производные типы. В свою очередь `Layout<T>` класс является производным от [ `Layout` ](xref:Xamarin.Forms.Layout) класс, который предоставляет механизм для определения положения и размера дочерних элементов.
+В Xamarin.Forms все классы макета являются производными от [`Layout<T>`](xref:Xamarin.Forms.Layout`1) класса и ограничивают универсальный тип [`View`](xref:Xamarin.Forms.View) и его производные типы. В свою очередь, `Layout<T>` класс является производным от [`Layout`](xref:Xamarin.Forms.Layout) класса, который предоставляет механизм для позиционирования и изменения размеров дочерних элементов.
 
-Все визуальные элементы отвечает за определение свой собственный предпочтительный размер, который известен как *запрошенный* размер. [`Page`](xref:Xamarin.Forms.Page), [ `Layout` ](xref:Xamarin.Forms.Layout), и [ `Layout<View>` ](xref:Xamarin.Forms.Layout`1) производных типов несете ответственность за определение, расположение и размер дочернего, или дочерние элементы, по отношению к себе. Иными словами, макет протоколируется связь родитель потомок, где родительский определяет размер своих дочерних элементов, которые должны быть, но будет пытаться запрошенного размера дочернего элемента.
+Каждый визуальный элемент отвечает за определение собственного предпочтительного размера, который называется *запрошенным* размером. [`Page`](xref:Xamarin.Forms.Page), [`Layout`](xref:Xamarin.Forms.Layout) и [`Layout<View>`](xref:Xamarin.Forms.Layout`1) производные типы отвечают за определение расположения и размера своих дочерних или дочерних элементов относительно самих. Таким образом, макет включает связь типа «родители-потомки», где родительский элемент определяет, какой размер дочернего элемента должен быть, но пытается разместить запрошенный размер дочернего элемента.
 
-Исчерпывающие сведения о Xamarin.Forms макет и недействительности циклов необходима для создания пользовательского макета. Теперь будут рассмотрены эти циклы.
+Xamarin.FormsЧтобы создать пользовательский макет, необходимо глубокое понимание циклов макета и недействительности. Сейчас будут обсуждаться эти циклы.
 
-## <a name="layout"></a>Макет
+## <a name="layout"></a>Layout
 
-Макет начинается в верхней части визуального дерева со страницей, и проходит все ветви визуального дерева вплоть до охватывающих все визуальные элементы на странице. Для изменения размеров и положения их дочерние элементы относительно сами отвечают элементы, которые являются родительскими для других элементов.
+Макет начинается в верхней части визуального дерева со страницей и проходит через все ветви визуального дерева, чтобы охватывать каждый визуальный элемент на странице. Элементы, являющиеся родительскими для других элементов, отвечают за изменение размера и размещение своих потомков относительно самих.
 
-[ `VisualElement` ](xref:Xamarin.Forms.VisualElement) Класс определяет [ `Measure` ](xref:Xamarin.Forms.VisualElement.Measure(System.Double,System.Double,Xamarin.Forms.MeasureFlags)) метод, который измеряет элемент для операций структуры и [ `Layout` ](xref:Xamarin.Forms.VisualElement.Layout(Xamarin.Forms.Rectangle)) метод, который указывает Прямоугольная область элемент будет визуализирован в. При запуске приложения и отображается первая страница, *цикла разметки* первый состоящий из `Measure` вызовы, а затем `Layout` вызывает, начинается на [ `Page` ](xref:Xamarin.Forms.Page) объекта:
+[`VisualElement`](xref:Xamarin.Forms.VisualElement)Класс определяет [ `Measure` ] (xref: Xamarin.Forms . Висуалелемент. Measure (System. Double, System. Double, Xamarin.Forms . Меасурефлагс)) метод, который измеряет элемент для операций макета и [ `Layout` ] (xref: Xamarin.Forms . Висуалелемент. Layout ( Xamarin.Forms . Прямоугольник)), который указывает прямоугольную область, в которой будет отображаться элемент. При запуске приложения и отображении первой страницы *цикл макета* , состоящий из первых `Measure` вызовов, а затем `Layout` вызывает метод, начинает с [`Page`](xref:Xamarin.Forms.Page) объекта:
 
-1. Во время цикла макета, каждый родительский элемент отвечает за вызов метода `Measure` метод своим дочерним элементам.
-1. После потомки были измерены, каждый родительский элемент отвечает за вызов метода `Layout` метод своим дочерним элементам.
+1. Во время цикла макета каждый родительский элемент отвечает за вызов `Measure` метода для его дочерних элементов.
+1. После измерения дочерних элементов каждый родительский элемент отвечает за вызов `Layout` метода для его дочерних элементов.
 
-Этот цикл гарантирует, что все визуальные элементы на странице получает вызовы `Measure` и `Layout` методы. Этот процесс показан на следующей схеме:
+Этот цикл гарантирует, что каждый визуальный элемент на странице будет получать вызовы `Measure` к `Layout` методам и. Этот процесс показан на следующей схеме:
 
-![](custom-images/layout-cycle.png "Цикл макета Xamarin.Forms")
-
-> [!NOTE]
-> Обратите внимание на то, что циклы макета также может возникать на подмножестве визуального дерева при каких-либо изменений влияет на макет. Сюда входят элементы, в результате добавления или удаления из коллекции, например, в [ `StackLayout` ](xref:Xamarin.Forms.StackLayout), изменения в [ `IsVisible` ](xref:Xamarin.Forms.VisualElement.IsVisible) свойства элемента или изменении размера элемента.
-
-Каждый класс Xamarin.Forms с `Content` или `Children` свойство имеет переопределяемый [ `LayoutChildren` ](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) метод. Пользовательский макет классы, производные от [ `Layout<View>` ](xref:Xamarin.Forms.Layout`1) необходимо переопределить этот метод и убедиться, что [ `Measure` ](xref:Xamarin.Forms.VisualElement.Measure(System.Double,System.Double,Xamarin.Forms.MeasureFlags)) и [ `Layout` ](xref:Xamarin.Forms.VisualElement.Layout(Xamarin.Forms.Rectangle)) методы являются вызывается на всех его дочерних элементов, для предоставления пользовательского макета.
-
-Кроме того, каждый класс, производный от [ `Layout` ](xref:Xamarin.Forms.Layout) или [ `Layout<View>` ](xref:Xamarin.Forms.Layout`1) необходимо переопределить [ `OnMeasure` ](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) метод, который находится там, где класс макета Определяет размер, оно должно быть, делая вызовы к [ `Measure` ](xref:Xamarin.Forms.VisualElement.Measure(System.Double,System.Double,Xamarin.Forms.MeasureFlags)) методов из его дочерних элементов.
+![](custom-images/layout-cycle.png "Xamarin.Forms Layout Cycle")
 
 > [!NOTE]
-> Элементы определения их размера, на основе *ограничения*, указывающие, какой объем пространства, доступного элемент внутри родительского элемента. Ограничения, передаваемый [ `Measure` ](xref:Xamarin.Forms.VisualElement.Measure(System.Double,System.Double,Xamarin.Forms.MeasureFlags)) и [ `OnMeasure` ](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) методы могут варьироваться от 0 до `Double.PositiveInfinity`. Элемент *ограниченного*, или *полностью ограничить*, при получении вызова его [ `Measure` ](xref:Xamarin.Forms.VisualElement.Measure(System.Double,System.Double,Xamarin.Forms.MeasureFlags)) метод с аргументами бессрочной - ограничен элемент определенный размер. Элемент *неограниченного*, или *частично ограниченное*, при получении вызова его `Measure` метод с хотя бы один аргумент, равным `Double.PositiveInfinity` — бесконечное ограничение может быть считать, указывающее, автоматическое изменение размера.
+> Обратите внимание, что циклы макета также могут возникать в подмножестве визуального дерева, если какое-либо изменение повлияет на макет. Сюда входят элементы, добавляемые или удаляемые из коллекции, например в [`StackLayout`](xref:Xamarin.Forms.StackLayout) , изменение [`IsVisible`](xref:Xamarin.Forms.VisualElement.IsVisible) свойства элемента или изменение размера элемента.
 
-## <a name="invalidation"></a>Недействительность
+Каждый Xamarin.Forms класс, у которого есть `Content` свойство или, `Children` имеет переопределяемый [`LayoutChildren`](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) метод. Пользовательские классы макета, производные от, [`Layout<View>`](xref:Xamarin.Forms.Layout`1) должны переопределять этот метод и гарантировать, что [ `Measure` ] (xref: Xamarin.Forms . Висуалелемент. Measure (System. Double, System. Double, Xamarin.Forms . Меасурефлагс)) и [ `Layout` ] (xref: Xamarin.Forms . Висуалелемент. Layout ( Xamarin.Forms . ). Методы вызываются для всех дочерних элементов элемента, чтобы обеспечить требуемый пользовательский макет.
 
-Недействительности — это процесс, по которому изменение элемента на странице запускает новый цикл макета. Элементы считаются недопустимыми, если они больше не имеют правильный размер или положение. Например если [ `FontSize` ](xref:Xamarin.Forms.Button.FontSize) свойство [ `Button` ](xref:Xamarin.Forms.Button) изменения, `Button` считается недействительным, так как он больше не будет иметь правильный размер. Изменение размера `Button` у окажет влияние изменений в макет через оставшуюся часть страницы.
+Кроме того, каждый класс, производный от [`Layout`](xref:Xamarin.Forms.Layout) или, [`Layout<View>`](xref:Xamarin.Forms.Layout`1) должен переопределять [`OnMeasure`](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) метод, в котором класс макета определяет размер, который он должен сделать, выполнив вызовы [ `Measure` ] (xref: Xamarin.Forms . Висуалелемент. Measure (System. Double, System. Double, Xamarin.Forms . Меасурефлагс)) дочерними методами.
 
-Элементы недействительным сами путем вызова [ `InvalidateMeasure` ](xref:Xamarin.Forms.VisualElement.InvalidateMeasure) метод, обычно когда элемента изменяется свойство, может привести к новый размер элемента. Этот метод запускает [ `MeasureInvalidated` ](xref:Xamarin.Forms.VisualElement.MeasureInvalidated) событие, которое обрабатывает родительского элемента, чтобы активировать новый цикл макета.
+> [!NOTE]
+> Элементы определяют их размер на основе *ограничений*, которые указывают, сколько места доступно для элемента в родительском элементе. Ограничения, передаваемые [ `Measure` ] (xref: Xamarin.Forms . Висуалелемент. Measure (System. Double, System. Double, Xamarin.Forms . Меасурефлагс)) и [`OnMeasure`](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) методы могут находиться в диапазоне от 0 до `Double.PositiveInfinity` . Элемент *ограничен или* *полностью ограничен*при получении вызова его [ `Measure` ] (xref: Xamarin.Forms . Висуалелемент. Measure (System. Double, System. Double, Xamarin.Forms . Меасурефлагс)) метод с бесконечными аргументами — элемент ограничен определенным размером. Элемент не *ограничен*или *частично ограничен*, когда он получает вызов его `Measure` метода по крайней мере с одним аргументом, равным `Double.PositiveInfinity` – бесконечное ограничение можно рассматривать как указывающее на автоматическое изменение размера.
 
-[ `Layout` ](xref:Xamarin.Forms.Layout) Классе задает обработчик для [ `MeasureInvalidated` ](xref:Xamarin.Forms.VisualElement.MeasureInvalidated) событий на всех дочерних действиях, добавить его `Content` свойство или `Children` коллекции и отсоединяет обработчик при дочерние удаляется. Таким образом каждый элемент в визуальном дереве, имеющий дочерние элементы оповещения при каждом изменении размер одного из его дочерних элементов. На следующей схеме показана, как изменение размера элемента в визуальном дереве может привести к изменениям, которые ripple вверх по дереву:
+## <a name="invalidation"></a>Недействительности
 
-![](custom-images/invalidation.png "Недействительности данных в визуальном дереве")
+Недействительность — это процесс, с помощью которого изменение элемента на странице вызывает новый цикл макета. Элементы считаются недопустимыми, если они больше не имеют нужного размера или расположения. Например, если [`FontSize`](xref:Xamarin.Forms.Button.FontSize) свойство [`Button`](xref:Xamarin.Forms.Button) изменено, то `Button` считается недопустимым, так как он больше не будет иметь правильный размер. Изменение размера элемента `Button` может привести к изменению макета с помощью оставшейся части страницы.
 
-Тем не менее `Layout` классе предпринимается попытка ограничить влияние изменения в размере ребенка на макет страницы. Если макет является ограниченного размера, затем изменение размера дочерних не влияет на все выше, чем родительского макета в визуальном дереве. Тем не менее изменения в размере макета сказывается на том, как макет упорядочивает его дочерние элементы. Таким образом, любое изменение в размер макета будет запущен цикл макета для размещения, и макет будет получать вызовы к его [ `OnMeasure` ](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) и [ `LayoutChildren` ](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) методы.
+Элементы становятся недействительными при вызове [`InvalidateMeasure`](xref:Xamarin.Forms.VisualElement.InvalidateMeasure) метода, как правило, когда изменяется свойство элемента, которое может привести к новому размеру элемента. Этот метод вызывает [`MeasureInvalidated`](xref:Xamarin.Forms.VisualElement.MeasureInvalidated) событие, которое родительские дескрипторы элемента активируют новый цикл макета.
 
-[ `Layout` ](xref:Xamarin.Forms.Layout) Класс также определяет [ `InvalidateLayout` ](xref:Xamarin.Forms.Layout.InvalidateLayout) метод, который имеет же цель [ `InvalidateMeasure` ](xref:Xamarin.Forms.VisualElement.InvalidateMeasure) метод. `InvalidateLayout` Должен быть вызван метод, каждый раз, когда вносится изменение, влияющее на способ макет размещает и устанавливает размер его дочерних элементов. Например `Layout` класс вызывает `InvalidateLayout` метод всякий раз, когда дочерний элемент является добавляемые или удаляемые из макета.
+[`Layout`](xref:Xamarin.Forms.Layout)Класс задает обработчик для [`MeasureInvalidated`](xref:Xamarin.Forms.VisualElement.MeasureInvalidated) события для каждого дочернего элемента, добавленного к его `Content` свойству или `Children` коллекции, и отсоединяет обработчик при удалении дочернего элемента. Таким образом, каждый элемент в визуальном дереве, имеющий дочерние элементы, уведомляется каждый раз, когда изменяется размер одного из его дочерних элементов. На следующей схеме показано, как изменение размера элемента в визуальном дереве может привести к изменениям, которые привели к дереву:
 
-[ `InvalidateLayout` ](xref:Xamarin.Forms.Layout.InvalidateLayout) Может быть переопределен для реализации кэша, чтобы свести к минимуму повторяющихся вызовов [ `Measure` ](xref:Xamarin.Forms.VisualElement.Measure(System.Double,System.Double,Xamarin.Forms.MeasureFlags)) методы макета дочерних элементов. Переопределение `InvalidateLayout` метод предоставляет уведомления об при добавлении дочерних элементов или удалены из разметки. Аналогичным образом [ `OnChildMeasureInvalidated` ](xref:Xamarin.Forms.Layout.OnChildMeasureInvalidated) метод может быть переопределен для предоставления уведомления при изменении размера одного из дочерних элементов макета. Для обоих переопределения методов настраиваемый макет должен вернуть ответ Очистка кэша. Дополнительные сведения см. в разделе [вычисление и кэширование данных](#caching).
+![](custom-images/invalidation.png "Invalidation in the Visual Tree")
+
+Однако `Layout` класс пытается ограничить влияние изменения размера дочернего элемента на макет страницы. Если размер макета ограничен, изменение размера дочернего элемента не влияет на содержимое, превышающее родительский макет в визуальном дереве. Однако обычно изменение размера макета влияет на то, как макет упорядочивает свои дочерние элементы. Таким образом, любое изменение размера макета приведет к запуску цикла макета для макета, и макет будет принимать вызовы к его [`OnMeasure`](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) [`LayoutChildren`](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) методам и.
+
+[`Layout`](xref:Xamarin.Forms.Layout)Класс также определяет [`InvalidateLayout`](xref:Xamarin.Forms.Layout.InvalidateLayout) метод, который имеет аналогичное назначение для [`InvalidateMeasure`](xref:Xamarin.Forms.VisualElement.InvalidateMeasure) метода. `InvalidateLayout`Метод должен вызываться при каждом изменении, которое влияет на положение макета и размеры его дочерних элементов. Например, `Layout` класс вызывает `InvalidateLayout` метод всякий раз, когда дочерний элемент добавляется в макет или удаляется из него.
+
+[`InvalidateLayout`](xref:Xamarin.Forms.Layout.InvalidateLayout)Можно переопределить, чтобы реализовать кэш для снижения числа повторяющихся вызовов [ `Measure` ] (xref: Xamarin.Forms . Висуалелемент. Measure (System. Double, System. Double, Xamarin.Forms . Меасурефлагс)) методы дочерних элементов макета. Переопределение `InvalidateLayout` метода предоставит уведомление о том, что дочерние элементы добавляются в макет или удаляются из него. Аналогичным образом, [`OnChildMeasureInvalidated`](xref:Xamarin.Forms.Layout.OnChildMeasureInvalidated) метод можно переопределить, чтобы предоставить уведомление, когда изменяется размер одного из дочерних элементов макета. Для обоих переопределений методов пользовательский макет должен реагировать на очистку кэша. Дополнительные сведения см. в разделе [Вычисление и кэширование данных](#caching).
 
 ## <a name="create-a-custom-layout"></a>Создание пользовательского макета
 
 Процесс создания пользовательского макета выглядит следующим образом:
 
-1. Создайте класс, производный от класса `Layout<View>`. Дополнительные сведения см. в разделе [Создание WrapLayout](#creating).
-1. [*необязательно*] добавить свойства, поддерживаемые свойства для привязки для любых параметров, которые следует задать для класса макета. Дополнительные сведения см. в разделе [Добавление свойства поддерживаемый привязываемые свойства](#adding_properties).
-1. Переопределить [ `OnMeasure` ](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) вызываемого метода [ `Measure` ](xref:Xamarin.Forms.VisualElement.Measure(System.Double,System.Double,Xamarin.Forms.MeasureFlags)) метод на дочерние элементы макета и возвращают запрошенный размер для макета. Дополнительные сведения см. в разделе [переопределение метода OnMeasure](#onmeasure).
-1. Переопределить [ `LayoutChildren` ](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) вызываемого метода [ `Layout` ](xref:Xamarin.Forms.VisualElement.Layout(Xamarin.Forms.Rectangle)) метод макета дочерних элементов. Ошибка вызова [ `Layout` ](xref:Xamarin.Forms.VisualElement.Layout(Xamarin.Forms.Rectangle)) метод на каждый дочерний элемент в макете вызовет никогда не получает требуемый размер или положение дочерних, и поэтому дочерних, не станет видимым на странице. Дополнительные сведения см. в разделе [переопределение метода LayoutChildren](#layoutchildren).
+1. Создайте класс, производный от класса `Layout<View>`. Дополнительные сведения см. [в разделе Создание враплайаут](#creating).
+1. [*необязательно*] Добавьте свойства, которые поддерживаются связываемыми свойствами, для всех параметров, которые должны быть установлены для класса макета. Дополнительные сведения см. в разделе [Добавление свойств с помощью связываемых свойств](#adding_properties).
+1. Переопределите [`OnMeasure`](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) метод для вызова [ `Measure` ] (xref: Xamarin.Forms . Висуалелемент. Measure (System. Double, System. Double, Xamarin.Forms . Меасурефлагс)) для всех дочерних элементов макета и возвращают запрошенный размер для макета. Дополнительные сведения см. [в разделе переопределение метода onmeasure](#onmeasure).
+1. Переопределите [`LayoutChildren`](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) метод для вызова [ `Layout` ] (xref: Xamarin.Forms . Висуалелемент. Layout ( Xamarin.Forms . Прямоугольник)) для всех дочерних элементов макета. Не удалось вызвать [ `Layout` ] (xref: Xamarin.Forms . Висуалелемент. Layout ( Xamarin.Forms . Прямоугольник)). метод для каждого дочернего элемента в макете приведет к тому, что дочерний объект никогда не будет получать правильный размер или положение, поэтому дочерний элемент не станет видимым на странице. Дополнительные сведения см. [в разделе переопределение метода лайаутчилдрен](#layoutchildren).
 
     > [!NOTE]
-    > При перечислении дочерних элементов в [ `OnMeasure` ](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) и [ `LayoutChildren` ](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) переопределений, пропустить любой дочерний которого [ `IsVisible` ](xref:Xamarin.Forms.VisualElement.IsVisible) свойству `false`. Это позволит гарантировать, что пользовательский макет не оставить место для невидимые дочерние элементы.
+    > При перечислении дочерних элементов [`OnMeasure`](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) в [`LayoutChildren`](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) переопределениях и пропустите все дочерние элементы, [`IsVisible`](xref:Xamarin.Forms.VisualElement.IsVisible) свойство которых имеет значение `false` . Это обеспечит, что пользовательский макет не оставляет место для невидимых дочерних элементов.
 
-1. [*необязательно*] переопределение [ `InvalidateLayout` ](xref:Xamarin.Forms.Layout.InvalidateLayout) метод, чтобы получать уведомления при добавлении дочерних элементов или удалены из разметки. Дополнительные сведения см. в разделе [переопределение метода InvalidateLayout](#invalidatelayout).
-1. [*необязательно*] переопределение [ `OnChildMeasureInvalidated` ](xref:Xamarin.Forms.Layout.OnChildMeasureInvalidated) метод, чтобы получать уведомления при изменении размера одного из дочерних элементов макета. Дополнительные сведения см. в разделе [переопределение метода OnChildMeasureInvalidated](#onchildmeasureinvalidated).
+1. [*необязательно*] Переопределите [`InvalidateLayout`](xref:Xamarin.Forms.Layout.InvalidateLayout) метод, чтобы получать уведомления при добавлении или удалении дочерних элементов в макете. Дополнительные сведения см. [в разделе переопределение метода инвалидателайаут](#invalidatelayout).
+1. [*необязательно*] Переопределите [`OnChildMeasureInvalidated`](xref:Xamarin.Forms.Layout.OnChildMeasureInvalidated) метод, чтобы получать уведомления при изменении размера одного из дочерних элементов макета. Дополнительные сведения см. [в разделе переопределение метода ончилдмеасуреинвалидатед](#onchildmeasureinvalidated).
 
 > [!NOTE]
-> Обратите внимание, что [ `OnMeasure` ](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) переопределение не будут вызваны, если размер макета управляется родительским, а не его дочерние элементы. Тем не менее, если один или оба ограничения являются бесконечными или класс макета имеет не по умолчанию будет вызываться переопределение [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) или [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) значения свойств. По этой причине [ `LayoutChildren` ](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) переопределения нельзя полагаться на размеры дочерних, полученные во время [ `OnMeasure` ](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) вызова метода. Вместо этого `LayoutChildren` необходимо вызвать [ `Measure` ](xref:Xamarin.Forms.VisualElement.Measure(System.Double,System.Double,Xamarin.Forms.MeasureFlags)) метод для расположения дочерних элементов, перед вызовом [ `Layout` ](xref:Xamarin.Forms.VisualElement.Layout(Xamarin.Forms.Rectangle)) метод. Кроме того, получить размер дочерних элементов в `OnMeasure` переопределение могут кэшироваться, чтобы впоследствии избежать `Measure` вызовов в `LayoutChildren` переопределение, но класс макета необходимо знать, когда необходимо снова получить размеры. Дополнительные сведения см. в разделе [вычисление и кэширование данных макета](#caching).
+> Обратите внимание, что [`OnMeasure`](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) Переопределение не будет вызываться, если размер макета регулируется родительским элементом, а не его потомками. Однако переопределение будет вызываться, если одно или оба ограничения имеют бесконечное значение или если класс макета имеет значения, отличные от значений по умолчанию [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) или [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойств. По этой причине [`LayoutChildren`](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) Переопределение не может полагаться на дочерние размеры, полученные во время [`OnMeasure`](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) вызова метода. Вместо этого `LayoutChildren` должен вызывать [ `Measure` ] (xref: Xamarin.Forms . Висуалелемент. Measure (System. Double, System. Double, Xamarin.Forms . Меасурефлагс)) для дочерних элементов макета перед вызовом [ `Layout` ] (xref: Xamarin.Forms . Висуалелемент. Layout ( Xamarin.Forms . Прямоугольник)). Кроме того, размер дочерних элементов, полученных в `OnMeasure` переопределении, можно кэшировать, чтобы избежать более поздних `Measure` вызовов в `LayoutChildren` переопределении, но класс макета должен знать, когда размеры необходимо получить снова. Дополнительные сведения см. в разделе [Вычисление и кэширование данных макета](#caching).
 
-Затем макет класса можно использовать путем добавления его в [ `Page` ](xref:Xamarin.Forms.Page), а также посредством добавления дочерних элементов в макет. Дополнительные сведения см. в разделе [использование WrapLayout](#consuming).
+Затем класс макета можно использовать, добавив его в [`Page`](xref:Xamarin.Forms.Page) и добавив дочерние элементы в макет. Дополнительные сведения см. [в разделе Использование враплайаут](#consuming).
 
 <a name="creating" />
 
 ### <a name="create-a-wraplayout"></a>Создание Враплайаут
 
-Пример приложения демонстрирует учетом ориентации `WrapLayout` класс, который упорядочивает его дочерние элементы горизонтально по странице и затем создает оболочку для отображения последующих дочерних элементов для дополнительных строк.
+Пример приложения демонстрирует ориентированный на ориентацию `WrapLayout` класс, который упорядочивает его дочерние элементы по горизонтали на странице, а затем переносит отображение последующих дочерних элементов к дополнительным строкам.
 
-`WrapLayout` Класс выделяет такой же объем пространства для каждого дочернего, известный как *размеру ячейки*, основываясь на максимальный размер дочерних элементов. Дочерние элементы, меньше, чем размер ячейки, которые могут размещаться в ячейке на основе их [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) и [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) значения свойств.
+`WrapLayout`Класс выделяет одинаковый объем пространства для каждого дочернего элемента, называемого *размером ячейки*, на основе максимального размера дочерних элементов. Дочерние элементы, размер которых меньше размера ячейки, можно разместить в ячейке на основе их [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) значений свойств и.
 
-`WrapLayout` Определение класса показано в следующем примере кода:
+`WrapLayout`Определение класса показано в следующем примере кода:
 
 ```csharp
 public class WrapLayout : Layout<View>
@@ -107,16 +110,16 @@ public class WrapLayout : Layout<View>
 
 #### <a name="calculate-and-cache-layout-data"></a>Вычисление и кэширование данных макета
 
-`LayoutData` Структура сохраняет данные о коллекции дочерних элементов в ряд свойств:
+`LayoutData`Структура хранит данные о коллекции дочерних элементов в ряде свойств:
 
-- `VisibleChildCount` — число дочерних объектов, видимых в макете.
-- `CellSize` — Максимальный размер всех дочерних элементов, размером макета.
-- `Rows` — количество строк.
-- `Columns` — количество столбцов.
+- `VisibleChildCount`— число дочерних элементов, видимых в макете.
+- `CellSize`— максимальный размер всех дочерних элементов, настраивается в соответствии с размером макета.
+- `Rows`— число строк.
+- `Columns`— число столбцов.
 
-`layoutDataCache` Поле используется для хранения нескольких `LayoutData` значения. При запуске приложения, два `LayoutData` объекты будут кэшироваться в `layoutDataCache` словарь для текущей ориентации — один для ограничения аргументов `OnMeasure` переопределение и один для `width` и `height` аргументы Чтобы `LayoutChildren` переопределить. При смене устройства в альбомной ориентации `OnMeasure` переопределить и `LayoutChildren` переопределение будет снова вызван, приведет к другой двух `LayoutData` объекты, кэширование в словарь. Тем не менее, когда устройство возвращается в книжной ориентации, дальнейшие вычисления не необходимы, так как `layoutDataCache` уже содержит необходимые данные.
+`layoutDataCache`Поле используется для хранения нескольких `LayoutData` значений. При запуске приложения `LayoutData` в словарь будут помещены два объекта `layoutDataCache` для текущей ориентации: один для аргументов ограничения `OnMeasure` переопределения, а другой — для `width` `height` аргументов `LayoutChildren` переопределения. При повороте устройства на альбомную ориентацию `OnMeasure` Переопределение и `LayoutChildren` Переопределение снова будет вызываться, что приведет к кэшированию других двух `LayoutData` объектов в словаре. Однако при возврате устройства к книжной ориентации дальнейшие вычисления не требуются, поскольку у `layoutDataCache` уже есть необходимые данные.
 
-В следующем коде показано в примере `GetLayoutData` метод, который рассчитывает свойства `LayoutData` структурированных на основе определенного размера:
+В следующем примере кода показан `GetLayoutData` метод, который вычисляет свойства `LayoutData` структурированного объекта на основе определенного размера:
 
 ```csharp
 LayoutData GetLayoutData(double width, double height)
@@ -189,18 +192,18 @@ LayoutData GetLayoutData(double width, double height)
 }
 ```
 
-`GetLayoutData` Метод выполняет следующие операции:
+`GetLayoutData`Метод выполняет следующие операции:
 
-- Он определяет, справедливо ли вычисляемый `LayoutData` значение уже находится в кэше и возвращает его, если он доступен.
-- В противном случае он перечисляет по всем дочерним узлам, вызов `Measure` метод на каждом дочернем с неограниченной ширины и высоты и определяет размер максимального дочерних.
-- При условии, что имеется по крайней мере один видимого дочернего элемента, он вычисляет количество строк и столбцов, необходимых, а затем вычисляет размер ячейки для дочерних элементов, в зависимости от размеров `WrapLayout`. Обратите внимание, что размер ячейки обычно немного шире, чем дочерних максимальный размер, но что это также может быть меньшего размера Если `WrapLayout` не достаточно широкий для широкой дочерний или высоту достаточно для самого высокого дочернего элемента.
-- Она сохраняет новый `LayoutData` значение в кэше.
+- Он определяет, что вычисляемое `LayoutData` значение уже находится в кэше, и возвращает его, если он доступен.
+- В противном случае он перебирает все дочерние элементы, вызывая `Measure` метод для каждого дочернего элемента с неограниченной шириной и высотой, и определяет максимальный размер дочернего элемента.
+- При условии, что имеется по крайней мере один видимый дочерний элемент, он вычисляет необходимое количество строк и столбцов, а затем вычисляет размер ячейки для дочерних элементов на основе измерений `WrapLayout` . Обратите внимание, что размер ячейки, как правило, немного шире, чем максимальный размер дочернего элемента, но он также может быть меньше, если `WrapLayout` недостаточно для самого широкого дочернего или достаточного размера для самого высокого дочернего элемента.
+- Он сохраняет новое `LayoutData` значение в кэше.
 
 <a name="adding_properties" />
 
 #### <a name="add-properties-backed-by-bindable-properties"></a>Добавление свойств, которые поддерживаются с помощью привязки свойств
 
-`WrapLayout` Класс определяет `ColumnSpacing` и `RowSpacing` свойства, значения которого используются для разделения строк и столбцов в макете, и который обеспечиваются связываемые свойства. Привязываемые свойства показаны в следующем примере кода:
+`WrapLayout`Класс определяет `ColumnSpacing` Свойства и `RowSpacing` , значения которых используются для разделения строк и столбцов в макете и для которых поддерживаются привязываемые свойства. Свойства, доступные для привязки, показаны в следующем примере кода:
 
 ```csharp
 public static readonly BindableProperty ColumnSpacingProperty = BindableProperty.Create(
@@ -224,13 +227,13 @@ public static readonly BindableProperty RowSpacingProperty = BindableProperty.Cr
   });
 ```
 
-Вызывает обработчиком property-changed каждого привязываемые свойства `InvalidateLayout` сдадите переопределяющий метод, чтобы активировать новый макет `WrapLayout`. Дополнительные сведения см. в разделе [переопределение метода InvalidateLayout](#invalidatelayout) и [переопределение метода OnChildMeasureInvalidated](#onchildmeasureinvalidated).
+Обработчик изменения свойств для каждого привязываемого свойства вызывает `InvalidateLayout` Переопределение метода, чтобы активировать новый проход макета в `WrapLayout` . Дополнительные сведения см. в разделе [Переопределение метода инвалидателайаут](#invalidatelayout) и [Переопределение метода ончилдмеасуреинвалидатед](#onchildmeasureinvalidated).
 
 <a name="onmeasure" />
 
 #### <a name="override-the-onmeasure-method"></a>Переопределение метода onmeasure
 
-`OnMeasure` Переопределение показан в следующем примере кода:
+`OnMeasure`Переопределение показано в следующем примере кода:
 
 ```csharp
 protected override SizeRequest OnMeasure(double widthConstraint, double heightConstraint)
@@ -247,16 +250,16 @@ protected override SizeRequest OnMeasure(double widthConstraint, double heightCo
 }
 ```
 
-Вызывает переопределение `GetLayoutData` метод и конструкций `SizeRequest` объект из возвращенных данных, а также принимая во внимание `RowSpacing` и `ColumnSpacing` значения свойств. Дополнительные сведения о `GetLayoutData` метод, см. в разделе [вычисление и кэширование данных](#caching).
+Переопределение вызывает `GetLayoutData` метод и создает `SizeRequest` объект из возвращенных данных, а также учитывает `RowSpacing` `ColumnSpacing` значения свойств и. Дополнительные сведения о `GetLayoutData` методе см. в разделе [Вычисление и кэширование данных](#caching).
 
 > [!IMPORTANT]
-> [ `Measure` ](xref:Xamarin.Forms.VisualElement.Measure(System.Double,System.Double,Xamarin.Forms.MeasureFlags)) И [ `OnMeasure` ](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) методы никогда не следует запрашивать бесконечный измерения, возвращая [ `SizeRequest` ](xref:Xamarin.Forms.SizeRequest) значение со свойством, имеющим значение `Double.PositiveInfinity`. Тем не менее хотя бы один из аргументов ограничения для `OnMeasure` может быть `Double.PositiveInfinity`.
+> [ `Measure` ] (Xref: Xamarin.Forms . Висуалелемент. Measure (System. Double, System. Double, Xamarin.Forms . Меасурефлагс)) и [`OnMeasure`](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) методы никогда не должны запрашивать бесконечное измерение, возвращая [`SizeRequest`](xref:Xamarin.Forms.SizeRequest) значение со свойством, равным `Double.PositiveInfinity` . Однако по крайней мере один из аргументов ограничения `OnMeasure` может иметь значение `Double.PositiveInfinity` .
 
 <a name="layoutchildren" />
 
 #### <a name="override-the-layoutchildren-method"></a>Переопределение метода Лайаутчилдрен
 
-`LayoutChildren` Переопределение показан в следующем примере кода:
+`LayoutChildren`Переопределение показано в следующем примере кода:
 
 ```csharp
 protected override void LayoutChildren(double x, double y, double width, double height)
@@ -296,18 +299,18 @@ protected override void LayoutChildren(double x, double y, double width, double 
 }
 ```
 
-Переопределение начинается с вызова `GetLayoutData` метод, а затем перечисляет все дочерние объекты для их размера и положения в пределах каждого дочернего элемента ячейки. Это достигается путем вызова [ `LayoutChildIntoBoundingRegion` ](xref:Xamarin.Forms.Layout.LayoutChildIntoBoundingRegion(Xamarin.Forms.VisualElement,Xamarin.Forms.Rectangle)) метод, который используется для расположения дочерних внутри прямоугольника, на основе его [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) и [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions)значения свойств. Это эквивалентно выполнения звонка в дочернюю [ `Layout` ](xref:Xamarin.Forms.VisualElement.Layout(Xamarin.Forms.Rectangle)) метод.
+Переопределение начинается с вызова `GetLayoutData` метода, а затем перечисляет все дочерние элементы для изменения размера и размещает их в каждой ячейке дочернего элемента. Это достигается путем вызова [ `LayoutChildIntoBoundingRegion` ] (xref: Xamarin.Forms . Layout. Лайаутчилдинтобаундингрегион ( Xamarin.Forms . Висуалелемент, Xamarin.Forms . ). Этот метод используется для размещения дочернего элемента внутри прямоугольника на основе его [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) значений свойств и. Это эквивалентно выполнению вызова [ `Layout` ] (xref: Xamarin.Forms . Висуалелемент. Layout ( Xamarin.Forms . Прямоугольник)).
 
 > [!NOTE]
-> Обратите внимание, что прямоугольник, переданный в `LayoutChildIntoBoundingRegion` метод включает всю область, в котором может находиться дочернего.
+> Обратите внимание, что прямоугольник, переданный в `LayoutChildIntoBoundingRegion` метод, включает всю область, в которой может находиться дочерний элемент.
 
-Дополнительные сведения о `GetLayoutData` метод, см. в разделе [вычисление и кэширование данных](#caching).
+Дополнительные сведения о `GetLayoutData` методе см. в разделе [Вычисление и кэширование данных](#caching).
 
 <a name="invalidatelayout" />
 
 #### <a name="overridethe-invalidatelayout-method"></a>Оверридесе Инвалидателайаут, метод
 
-[ `InvalidateLayout` ](xref:Xamarin.Forms.Layout.InvalidateLayout) Переопределение вызывается в том случае, когда дочерние элементы добавлении или удалении из макета, или если в одном из `WrapLayout` значение изменений свойств, как показано в следующем примере кода:
+[`InvalidateLayout`](xref:Xamarin.Forms.Layout.InvalidateLayout)Переопределение вызывается, когда дочерние элементы добавляются в макет или удаляются из макета или когда одно из `WrapLayout` свойств изменяет значение, как показано в следующем примере кода:
 
 ```csharp
 protected override void InvalidateLayout()
@@ -317,16 +320,16 @@ protected override void InvalidateLayout()
 }
 ```
 
-Переопределение делает макет недействительным и удаляет все сведения о кэшированных макета.
+Переопределение делает недействительным макет и отменяет все кэшированные сведения о макете.
 
 > [!NOTE]
-> Чтобы остановить [ `Layout` ](xref:Xamarin.Forms.Layout) вызова класса [ `InvalidateLayout` ](xref:Xamarin.Forms.Layout.InvalidateLayout) переопределение метода всякий раз, когда дочерний элемент является добавляемые или удаляемые из макета, [ `ShouldInvalidateOnChildAdded` ](xref:Xamarin.Forms.Layout.ShouldInvalidateOnChildAdded(Xamarin.Forms.View)) и [ `ShouldInvalidateOnChildRemoved` ](xref:Xamarin.Forms.Layout.ShouldInvalidateOnChildRemoved(Xamarin.Forms.View)) методов и возврата `false`. Класс макета затем можно реализовать пользовательский процесс, при удалении или добавлении дочерних элементов.
+> Чтобы предотвратить [`Layout`](xref:Xamarin.Forms.Layout) вызов класса [`InvalidateLayout`](xref:Xamarin.Forms.Layout.InvalidateLayout) при каждом добавлении или удалении дочернего элемента из макета, переопределите [ `ShouldInvalidateOnChildAdded` ] (xref: Xamarin.Forms . Layout. Шаулдинвалидатеончилдаддед ( Xamarin.Forms . View)) и [ `ShouldInvalidateOnChildRemoved` ] (xref: Xamarin.Forms . Layout. Шаулдинвалидатеончилдремовед ( Xamarin.Forms . View)) методы и возвращают `false` . Затем класс макета может реализовать пользовательский процесс при добавлении или удалении дочерних элементов.
 
 <a name="onchildmeasureinvalidated" />
 
 #### <a name="override-the-onchildmeasureinvalidated-method"></a>Переопределение метода Ончилдмеасуреинвалидатед
 
-[ `OnChildMeasureInvalidated` ](xref:Xamarin.Forms.Layout.OnChildMeasureInvalidated) Переопределение вызывается в том случае, когда один из дочерних элементов макета изменяется размер и показано в следующем примере кода:
+[`OnChildMeasureInvalidated`](xref:Xamarin.Forms.Layout.OnChildMeasureInvalidated)Переопределение вызывается при изменении размера одного из дочерних элементов макета и показан в следующем примере кода:
 
 ```csharp
 protected override void OnChildMeasureInvalidated()
@@ -336,13 +339,13 @@ protected override void OnChildMeasureInvalidated()
 }
 ```
 
-Переопределение делает недействительной макета дочерних и отменяет все кэшированные макет данных.
+Переопределение делает недействительным дочерний макет и удаляет все кэшированные сведения о макете.
 
 <a name="consuming" />
 
 ### <a name="consume-the-wraplayout"></a>Использование Враплайаут
 
-`WrapLayout` Класса могут использоваться, поместив его на [ `Page` ](xref:Xamarin.Forms.Page) производный тип, как показано в следующем примере кода XAML:
+`WrapLayout`Класс можно использовать, поместив его в [`Page`](xref:Xamarin.Forms.Page) производный тип, как показано в следующем примере кода XAML:
 
 ```xaml
 <ContentPage ... xmlns:local="clr-namespace:ImageWrapLayout">
@@ -352,7 +355,7 @@ protected override void OnChildMeasureInvalidated()
 </ContentPage>
 ```
 
-Ниже приведен эквивалентный код на C#:
+Эквивалентный код C# показан ниже:
 
 ```csharp
 public class ImageWrapLayoutPageCS : ContentPage
@@ -373,7 +376,7 @@ public class ImageWrapLayoutPageCS : ContentPage
 }
 ```
 
-Затем можно добавить дочерние элементы к `WrapLayout` при необходимости. В следующем коде показано в примере [ `Image` ](xref:Xamarin.Forms.Image) элементы, добавляемые `WrapLayout`:
+Потомки дочерние элементы могут быть добавлены в `WrapLayout` при необходимости. В следующем примере кода показаны [`Image`](xref:Xamarin.Forms.Image) элементы, добавляемые в `WrapLayout` :
 
 ```csharp
 protected override async void OnAppearing()
@@ -411,23 +414,23 @@ async Task<ImageList> GetImageListAsync()
 }
 ```
 
-Если на страницу, содержащую `WrapLayout` появится, образец приложения обращается к удаленной JSON-файл, содержащий список фотографий, асинхронно создает [ `Image` ](xref:Xamarin.Forms.Image) фото для каждого элемента и добавляет его `WrapLayout`. Это приводит к появлению, показано на следующем снимке экрана:
+Когда отображается страница, содержащая `WrapLayout` , пример приложения асинхронно обращается к удаленному JSON-файлу, содержащему список фотографий, создает [`Image`](xref:Xamarin.Forms.Image) элемент для каждой фотографии и добавляет его в `WrapLayout` . Результат показан на следующих снимках экрана.
 
-![](custom-images/portait-screenshots.png "Снимки экрана из образца приложения книжной ориентации")
+![](custom-images/portait-screenshots.png "Sample Application Portrait Screenshots")
 
-Ниже показаны снимки экрана `WrapLayout` после поворачивается на альбомную ориентацию:
+На следующих снимках экрана показано, что `WrapLayout` после поворота к альбомной ориентации:
 
-![](custom-images/landscape-ios.png "Пример iOS снимок экрана альбомной ориентации приложения")
-![](custom-images/landscape-android.png "Android приложения альбомная снимок экрана")
-![](custom-images/landscape-uwp.png " Снимок экрана альбомной ориентации приложения универсальной платформы Windows")
+![](custom-images/landscape-ios.png "Sample iOS Application Landscape Screenshot")
+![](custom-images/landscape-android.png "Sample Android Application Landscape Screenshot")
+![](custom-images/landscape-uwp.png "Sample UWP Application Landscape Screenshot")
 
-Число столбцов в каждой строке зависит от того, размер фотографии, ширину экрана и количество точек в аппаратно независимая единица. [ `Image` ](xref:Xamarin.Forms.Image) Элементы асинхронная загрузка фотографии и поэтому `WrapLayout` класс получит часто обращаются к его [ `LayoutChildren` ](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) метод, так как каждое `Image` элемент получает новый размер, в зависимости от загрузки фотографии.
+Количество столбцов в каждой строке зависит от размера фотографии, ширины экрана и количества пикселов на устройство, независимое от устройства. [`Image`](xref:Xamarin.Forms.Image)Элементы асинхронно загружают фотографии, поэтому `WrapLayout` класс будет получать частые вызовы к своему [`LayoutChildren`](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) методу, так как каждый `Image` элемент получает новый размер на основе загруженной фотографии.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [WrapLayout (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
+- [Враплайаут (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
 - [Пользовательские макеты](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter26.md)
 - [Создание пользовательских макетов в Xamarin.Forms (видео)](https://www.youtube.com/watch?v=sxjOqNZFhKU)
-- [Макет\<T >](xref:Xamarin.Forms.Layout`1)
+- [Layout\<T>](xref:Xamarin.Forms.Layout`1)
 - [Макет](xref:Xamarin.Forms.Layout)
-- [VisualElement](xref:Xamarin.Forms.VisualElement)
+- [висуалелемент](xref:Xamarin.Forms.VisualElement)

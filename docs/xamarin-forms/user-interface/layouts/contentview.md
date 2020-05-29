@@ -1,69 +1,72 @@
 ---
-title: ContentView Xamarin. Forms
-description: В этой статье объясняется, как использовать класс ContentView для создания пользовательского элемента управления, такого как пример Кардвиев.
-ms.prod: xamarin
-ms.assetid: 638402E7-CA44-456B-863B-791F6B6B561D
-ms.technology: xamarin-forms
-author: profexorgeek
-ms.author: jusjohns
-ms.date: 08/14/2019
-ms.openlocfilehash: 712aa43fb4959b766786c8fd0969ef2c2c8f00ef
-ms.sourcegitcommit: 211fed94fb96127a3e158ae1ff5d7eb831a203d8
+title: Xamarin.FormsContentView
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 46d2abf895ffe31bd1dc1c22caf36440c54b331c
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75955736"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84130121"
 ---
-# <a name="xamarinforms-contentview"></a>ContentView Xamarin. Forms
+# <a name="xamarinforms-contentview"></a>Xamarin.FormsContentView
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
 
-Класс [`ContentView`](xref:Xamarin.Forms.ContentView) Xamarin. Forms — это тип `Layout`, который содержит один дочерний элемент и обычно используется для создания настраиваемых, многократно используемых элементов управления. Класс `ContentView` наследует от [`TemplatedView`](xref:Xamarin.Forms.TemplatedView). В этой статье и связанном примере объясняется, как создать пользовательский элемент управления `CardView` на основе класса `ContentView`.
+Xamarin.Forms [`ContentView`](xref:Xamarin.Forms.ContentView) Класс является типом `Layout` , который содержит один дочерний элемент и обычно используется для создания настраиваемых, многократно используемых элементов управления. `ContentView`Класс наследует от [`TemplatedView`](xref:Xamarin.Forms.TemplatedView) . В этой статье и связанном примере объясняется, как создать пользовательский `CardView` элемент управления на основе `ContentView` класса.
 
-На следующем снимке экрана показан элемент управления `CardView`, производный от класса `ContentView`:
+На следующем снимке экрана показан `CardView` элемент управления, производный от `ContentView` класса:
 
-[![снимок экрана примера приложения Кардвиев](contentview-images/cardview-list-cropped.png)](contentview-images/cardview-list.png#lightbox)
+[![Снимок экрана примера приложения Кардвиев](contentview-images/cardview-list-cropped.png)](contentview-images/cardview-list.png#lightbox)
 
-Класс `ContentView` определяет одно свойство:
+`ContentView`Класс определяет одно свойство:
 
-* [`Content`](xref:Xamarin.Forms.ContentView.Content) является объектом `View`. Это свойство поддерживается объектом [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) , поэтому он может быть целевым объектом привязок данных.
+* [`Content`](xref:Xamarin.Forms.ContentView.Content)— Это `View` объект. Это свойство поддерживается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом, поэтому он может быть целевым объектом привязок данных.
 
-`ContentView` также наследует свойство от класса `TemplatedView`:
+Объект `ContentView` также наследует свойство от `TemplatedView` класса:
 
-* [`ControlTemplate`](xref:Xamarin.Forms.TemplatedView.ControlTemplate) — это `ControlTemplate`, который может определять или переопределять внешний вид элемента управления.
+* [`ControlTemplate`](xref:Xamarin.Forms.TemplatedView.ControlTemplate)Объект `ControlTemplate` , который может определять или переопределять внешний вид элемента управления.
 
-Дополнительные сведения о свойстве `ControlTemplate` см. в разделе [Настройка внешнего вида с помощью ControlTemplate](#customize-appearance-with-a-controltemplate).
+Дополнительные сведения о `ControlTemplate` свойстве см. в разделе [Настройка внешнего вида с помощью ControlTemplate](#customize-appearance-with-a-controltemplate).
 
 ## <a name="create-a-custom-control"></a>Создание пользовательского элемента управления
 
-Класс `ContentView` предлагает небольшую функциональность, но может использоваться для создания пользовательского элемента управления. В примере проекта определяется `CardView` элемент управления — элемент пользовательского интерфейса, который отображает изображение, заголовок и описание в макете, похожем на карту.
+`ContentView`Класс предлагает небольшую функциональность, но может использоваться для создания пользовательского элемента управления. Пример проекта определяет элемент `CardView` управления — элемент пользовательского интерфейса, который отображает изображение, заголовок и описание в макете, похожем на карту.
 
 Процесс создания пользовательского элемента управления состоит в следующих целях.
 
-1. Создайте новый класс с помощью шаблона `ContentView` в Visual Studio 2019.
+1. Создайте новый класс с помощью `ContentView` шаблона в Visual Studio 2019.
 1. Определите уникальные свойства или события в файле кода программной части для нового пользовательского элемента управления.
 1. Создайте пользовательский интерфейс для пользовательского элемента управления.
 
 > [!NOTE]
-> Можно создать пользовательский элемент управления, макет которого определяется в коде вместо XAML. Для простоты пример приложения определяет только один класс `CardView` с макетом XAML. Однако пример приложения содержит класс **кардвиевкодепаже** , который показывает процесс использования пользовательского элемента управления в коде.
+> Можно создать пользовательский элемент управления, макет которого определяется в коде вместо XAML. Для простоты пример приложения определяет только один `CardView` класс с макетом XAML. Однако пример приложения содержит класс **кардвиевкодепаже** , который показывает процесс использования пользовательского элемента управления в коде.
 
 ### <a name="create-code-behind-properties"></a>Создание свойств кода программной части
 
-Пользовательский элемент управления `CardView` определяет следующие свойства:
+`CardView`Пользовательский элемент управления определяет следующие свойства:
 
-* `CardTitle`: объект `string`, представляющий заголовок, отображаемый на карточке.
-* `CardDescription`: объект `string`, представляющий описание, отображаемое на карточке.
-* `IconImageSource`: объект `ImageSource`, представляющий изображение, отображаемое на карточке.
-* `IconBackgroundColor`: объект `Color`, представляющий цвет фона для изображения, отображаемого на карточке.
-* `BorderColor`: объект `Color`, представляющий цвет границы карточки, границы изображения и линии разделителя.
-* `CardColor`: объект `Color`, представляющий цвет фона карточки.
+* `CardTitle`: `string` объект, представляющий заголовок, отображаемый на карточке.
+* `CardDescription`: `string` объект, представляющий описание, отображаемое на карточке.
+* `IconImageSource`: `ImageSource` объект, представляющий изображение, отображаемое на карточке.
+* `IconBackgroundColor`: `Color` объект, представляющий цвет фона для изображения, отображаемого на карточке.
+* `BorderColor`: `Color` объект, представляющий цвет границы карточки, границы изображения и линии разделителя.
+* `CardColor`: `Color` объект, представляющий цвет фона карточки.
 
 > [!NOTE]
-> Свойство `BorderColor` влияет на несколько элементов в целях демонстрации. При необходимости это свойство можно разделить на три свойства.
+> `BorderColor`Свойство влияет на несколько элементов в целях демонстрации. При необходимости это свойство можно разделить на три свойства.
 
-Каждое свойство поддерживается экземпляром `BindableProperty`. Резервный `BindableProperty` позволяет применять к каждому свойству стили и привязывать их с помощью шаблона MVVM.
+Каждое свойство поддерживается `BindableProperty` экземпляром. Резервное копирование `BindableProperty` позволяет создавать и привязывать каждое свойство к стилю с помощью шаблона MVVM.
 
-В следующем примере показано, как создать резервную `BindableProperty`.
+В следующем примере показано, как создать резервную копию `BindableProperty` :
 
 ```csharp
 public static readonly BindableProperty CardTitleProperty = BindableProperty.Create(
@@ -73,7 +76,7 @@ public static readonly BindableProperty CardTitleProperty = BindableProperty.Cre
     string.Empty);      // the default value for the property
 ```
 
-Пользовательское свойство использует методы `GetValue` и `SetValue` для получения и задания значений `BindableProperty` объектов:
+Пользовательское свойство использует `GetValue` методы и `SetValue` для получения и задания `BindableProperty` значений объекта:
 
 ```csharp
 public string CardTitle
@@ -83,11 +86,11 @@ public string CardTitle
 }
 ```
 
-Дополнительные сведения об объектах `BindableProperty` см. в разделе [свойства, допускающие привязку](~/xamarin-forms/xaml/bindable-properties.md).
+Дополнительные сведения об `BindableProperty` объектах см. в разделе [свойства, допускающие привязку](~/xamarin-forms/xaml/bindable-properties.md).
 
 ### <a name="define-ui"></a>Определение пользовательского интерфейса
 
-Пользовательский интерфейс пользовательского элемента управления использует `ContentView` в качестве корневого элемента для элемента управления `CardView`. В следующем примере показан `CardView` XAML:
+Пользовательский интерфейс пользовательского элемента управления использует в `ContentView` качестве корневого элемента для `CardView` элемента управления. В следующем примере показан `CardView` XAML:
 
 ```XAML
 <ContentView ...
@@ -116,23 +119,23 @@ public string CardTitle
 </ContentView>
 ```
 
-Элемент `ContentView` задает для свойства `x:Name` значение **this**, которое можно использовать для доступа к объекту, привязанному к экземпляру `CardView`. Элементы в привязках набора макетов для своих свойств к значениям, определенным для привязанного объекта.
+`ContentView`Элемент задает `x:Name` для свойства значение **this**, которое можно использовать для доступа к объекту, привязанному к `CardView` экземпляру. Элементы в привязках набора макетов для своих свойств к значениям, определенным для привязанного объекта.
 
-Дополнительные сведения о привязке данных см. в разделе [Привязки данных в Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md).
+Дополнительные сведения о привязке данных см. в разделе [ Xamarin.Forms Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md).
 
 > [!NOTE]
-> Свойство `FallbackValue` предоставляет значение по умолчанию, если привязка `null`. Это также позволяет средству [предварительного просмотра XAML](~/xamarin-forms/xaml/xaml-previewer/index.md) в Visual Studio визуализировать элемент управления `CardView`.
+> `FallbackValue`Свойство предоставляет значение по умолчанию, если привязка — `null` . Это также позволяет средству [предварительного просмотра XAML](~/xamarin-forms/xaml/xaml-previewer/index.md) в Visual Studio визуализировать `CardView` элемент управления.
 
 ## <a name="instantiate-a-custom-control"></a>Создание экземпляра пользовательского элемента управления
 
-Ссылка на пространство имен пользовательского элемента управления должна быть добавлена на страницу, которая создает экземпляр пользовательского элемента управления. В следующем примере показана ссылка на пространство имен под названием **элементы управления** , добавленные в экземпляр `ContentPage` в XAML:
+Ссылка на пространство имен пользовательского элемента управления должна быть добавлена на страницу, которая создает экземпляр пользовательского элемента управления. В следующем примере показана ссылка на пространство имен под названием **элементы управления** , добавленные в `ContentPage` экземпляр в XAML:
 
 ```xaml
 <ContentPage ...
              xmlns:controls="clr-namespace:CardViewDemo.Controls" >
 ```
 
-После добавления ссылки на `CardView` можно создать экземпляр в XAML и определить его свойства:
+После добавления ссылки `CardView` можно создать экземпляр в XAML и определить его свойства:
 
 ```xaml
 <controls:CardView BorderColor="DarkGray"
@@ -142,7 +145,7 @@ public string CardTitle
                    IconImageSource="user.png"/>
 ```
 
-В коде также можно создать экземпляр `CardView`:
+`CardView`Также можно создать экземпляр в коде:
 
 ```csharp
 CardView card = new CardView
@@ -157,9 +160,9 @@ CardView card = new CardView
 
 ## <a name="customize-appearance-with-a-controltemplate"></a>Настройка внешнего вида с помощью ControlTemplate
 
-Пользовательский элемент управления, производный от класса `ContentView`, может определять внешний вид с помощью XAML, Code или вообще не определять внешний вид. Независимо от того, как определен внешний вид, объект `ControlTemplate` может переопределить внешний вид с помощью пользовательского макета.
+Пользовательский элемент управления, производный от `ContentView` класса, может определять внешний вид с помощью XAML, кода или вообще не определять внешний вид. Независимо от того, как определен внешний вид, `ControlTemplate` объект может переопределить внешний вид с помощью пользовательского макета.
 
-Макет `CardView` может занимать слишком много пространства для некоторых вариантов использования. `ControlTemplate` может переопределить макет `CardView`, чтобы обеспечить более компактное представление, подходящее для уплотненного списка:
+`CardView`Макет может занимать слишком много пространства для некоторых вариантов использования. `ControlTemplate`Может переопределить `CardView` Макет, чтобы обеспечить более компактное представление, подходящее для уплотненного списка:
 
 ```xaml
 <ContentPage.Resources>
@@ -194,21 +197,21 @@ CardView card = new CardView
 </ContentPage.Resources>
 ```
 
-Привязка данных в `ControlTemplate` использует расширение разметки `TemplateBinding` для указания привязок. В качестве значения свойства `ControlTemplate` можно задать определенный объект ControlTemplate, используя его значение `x:Key`. В следующем примере показано свойство `ControlTemplate`, заданное для экземпляра `CardView`.
+Привязка данных в `ControlTemplate` использует `TemplateBinding` расширение разметки для указания привязок. `ControlTemplate`Для свойства можно задать определенный объект ControlTemplate, используя его `x:Key` значение. В следующем примере показано `ControlTemplate` свойство, заданное для `CardView` экземпляра.
 
 ```xaml
 <controls:CardView ControlTemplate="{StaticResource CardViewCompressed}"/>
 ```
 
-На следующих снимках экрана показан стандартный экземпляр `CardView` и `CardView`, чьи `ControlTemplate` были переопределены:
+На следующих снимках экрана показан стандартный `CardView` экземпляр, который `CardView` `ControlTemplate` был переопределен:
 
-[![снимок экрана Кардвиев ControlTemplate ](contentview-images/cardview-controltemplates-cropped.png)](contentview-images/cardview-controltemplates.png#lightbox)
+[![Снимок экрана ControlTemplate Кардвиев](contentview-images/cardview-controltemplates-cropped.png)](contentview-images/cardview-controltemplates.png#lightbox)
 
-Дополнительные сведения о шаблонах элементов управления см. в разделе [Шаблоны элементов управления Xamarin.Forms](~/xamarin-forms/app-fundamentals/templates/control-template.md).
+Дополнительные сведения о шаблонах элементов управления см. в разделе [ Xamarin.Forms шаблоны элементов управления](~/xamarin-forms/app-fundamentals/templates/control-template.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 * [Пример приложения ContentView](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
-* [Привязка данных Xamarin. Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md)
+* [Xamarin.FormsПривязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)
 * [Привязываемые свойства](~/xamarin-forms/xaml/bindable-properties.md).
-* [Шаблоны элементов управления Xamarin.Forms](~/xamarin-forms/app-fundamentals/templates/control-template.md)
+* [Xamarin.FormsШаблоны элементов управления](~/xamarin-forms/app-fundamentals/templates/control-template.md)

@@ -1,24 +1,27 @@
 ---
-title: Выбор элемента DatePicker в iOS
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая управляет выбором элементов в DatePicker.
-ms.prod: xamarin
-ms.assetid: 847E69D1-6AE0-4E82-B9C8-919E009C2014
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 01/15/2020
-ms.openlocfilehash: df84cf01909cec564edc9c6c8bb55382a2b9dfe3
-ms.sourcegitcommit: 10b4d7952d78f20f753372c53af6feb16918555c
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c65cac4c777150185524b291adc6e9d1e79958d3
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77646692"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138558"
 ---
 # <a name="datepicker-item-selection-on-ios"></a>Выбор элемента DatePicker в iOS
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Элементы управления для конкретных платформ iOS, когда выбор элементов происходит в [`DatePicker`](xref:Xamarin.Forms.DatePicker), позволяя пользователю указать, что выбор элементов происходит при просмотре элементов в элементе управления, или только после нажатия кнопки **done (Готово** ). Он используется в XAML путем установки присоединяемого свойства `DatePicker.UpdateMode` в значение перечисления `UpdateMode`:
+Элементы управления для конкретных платформ iOS при выборе элементов в [`DatePicker`](xref:Xamarin.Forms.DatePicker) , позволяя пользователю указать, что выбор элементов выполняется при просмотре элементов в элементе управления, или только после нажатия кнопки **done (Готово** ). Он используется в XAML путем присвоения `DatePicker.UpdateMode` свойству присоединенного свойства значения `UpdateMode` перечисления:
 
 ```xaml
 <ContentPage ...
@@ -32,7 +35,7 @@ ms.locfileid: "77646692"
 </ContentPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -42,12 +45,12 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 datePicker.On<iOS>().SetUpdateMode(UpdateMode.WhenFinished);
 ```
 
-Метод `DatePicker.On<iOS>` указывает, что эта платформа будет запускаться только в iOS. Метод `DatePicker.SetUpdateMode` в пространстве имен [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) используется для управления тем, когда происходит выбор элементов, а перечисление `UpdateMode` предоставляет два возможных значения:
+`DatePicker.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `DatePicker.SetUpdateMode`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, когда происходит выбор элементов, с `UpdateMode` перечислением, предоставляющим два возможных значения:
 
-- `Immediately` — выбор элементов происходит при просмотре пользователем элементов в [`DatePicker`](xref:Xamarin.Forms.DatePicker). Это поведение по умолчанию в Xamarin.Forms.
-- `WhenFinished` — выбор элементов происходит только после нажатия пользователем кнопки **done (Готово** ) в [`DatePicker`](xref:Xamarin.Forms.DatePicker).
+- `Immediately`— Выбор элементов происходит при просмотре пользователем элементов в [`DatePicker`](xref:Xamarin.Forms.DatePicker) . Это поведение по умолчанию в Xamarin.Forms .
+- `WhenFinished`— Выбор элементов происходит только после нажатия пользователем кнопки **done (Готово** ) в [`DatePicker`](xref:Xamarin.Forms.DatePicker) .
 
-Кроме того, можно использовать метод `SetUpdateMode` для переключения значений перечисления путем вызова метода `UpdateMode`, который возвращает текущий `UpdateMode`:
+Кроме того, `SetUpdateMode` метод можно использовать для переключения значений перечисления путем вызова `UpdateMode` метода, который возвращает текущий объект `UpdateMode` :
 
 ```csharp
 switch (datePicker.On<iOS>().UpdateMode())
@@ -61,7 +64,7 @@ switch (datePicker.On<iOS>().UpdateMode())
 }
 ```
 
-В результате заданная `UpdateMode` применяется к [`DatePicker`](xref:Xamarin.Forms.DatePicker), который управляет тем, когда происходит выбор элементов:
+В результате заданный объект `UpdateMode` применяется к элементу [`DatePicker`](xref:Xamarin.Forms.DatePicker) управления, который управляет тем, когда происходит выбор элементов:
 
 [![Снимок экрана режимов обновления DatePicker](datepicker-selection-images/datepicker-updatemode.png "DatePicker UpdateMode для конкретной платформы")](datepicker-selection-images/datepicker-updatemode-large.png#lightbox "DatePicker UpdateMode для конкретной платформы")
 

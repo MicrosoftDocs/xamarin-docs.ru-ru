@@ -1,42 +1,45 @@
 ---
-title: Прозрачность SkiaSharp
-description: Используйте прозрачность для объединения нескольких объектов в одной сцене.
-ms.prod: xamarin
-ms.technology: xamarin-skiasharp
-ms.assetid: B62F9487-C30E-4C63-BAB1-4C091FF50378
-author: davidbritch
-ms.author: dabritch
-ms.date: 08/23/2018
-ms.openlocfilehash: 74335de66e74f6adc7c9488a1b78c31d36d03f14
-ms.sourcegitcommit: 57f815bf0024b1afe9754c0e28054fc0a53ce302
+title: ''
+description: ''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 735aae1b9d94865bd34450861bd6c57b08c420c2
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70759407"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84134723"
 ---
 # <a name="skiasharp-transparency"></a>Прозрачность SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-Как вы убедились, [ `SKPaint` ](xref:SkiaSharp.SKPaint) класс включает [ `Color` ](xref:SkiaSharp.SKPaint.Color) свойство типа [ `SKColor` ](xref:SkiaSharp.SKColor). `SKColor` включает в себя альфа-канал, поэтому все, что можно цвет с `SKColor` значение может быть частично прозрачными. 
+Как вы видели, [`SKPaint`](xref:SkiaSharp.SKPaint) класс включает [`Color`](xref:SkiaSharp.SKPaint.Color) свойство типа [`SKColor`](xref:SkiaSharp.SKColor) . `SKColor`включает альфа-канал, поэтому все цвета со `SKColor` значением могут быть частично прозрачными. 
 
-Некоторые прозрачности было продемонстрировано в [ **простая анимация в SkiaSharp** ](animation.md) статьи. В этой статье рассматриваются несколько глубже прозрачности для объединения нескольких объектов в одной сценой, это методика, которую иногда называют _наложения_. Более сложные методы наложения рассматриваются в статьях [ **шейдеры SkiaSharp** ](../effects/shaders/index.md) раздел.
+Часть прозрачности была продемонстрирована в статье [**основная анимация в SkiaSharp**](animation.md) . В этой статье более подробно рассматривается прозрачность для объединения нескольких объектов в одной сцене, способ, который иногда называется _наложением_. Более сложные методики наложения обсуждаются в статьях в разделе [**SkiaSharp шейдеры**](../effects/shaders/index.md) .
 
-При первом создании цвет с использованием четыре параметра можно задать уровень прозрачности [ `SKColor` ](xref:SkiaSharp.SKColor.%23ctor(System.Byte,System.Byte,System.Byte,System.Byte)) конструктор:
+Уровень прозрачности можно задать при первом создании цвета с помощью конструктора с четырьмя параметрами [`SKColor`](xref:SkiaSharp.SKColor.%23ctor(System.Byte,System.Byte,System.Byte,System.Byte)) :
 
 ```csharp
 SKColor (byte red, byte green, byte blue, byte alpha);
 ```
 
-Альфа-значение 0 соответствует полной прозрачности и альфа-значение 0xFF полностью непрозрачен. Значения между этими крайними создавать частично прозрачные цвета.
+Альфа-значение 0 является полностью прозрачным, а альфа-значение 0xFF — полностью непрозрачным. Значения между этими двумя крайними значениями создают частично прозрачные цвета.
 
-Кроме того `SKColor` определяет удобное [ `WithAlpha` ](xref:SkiaSharp.SKColor.WithAlpha*) метод, который создает новый цвет из существующего цвета, но с указанным уровнем альфа-канала:
+Кроме того, `SKColor` определяет удобный [`WithAlpha`](xref:SkiaSharp.SKColor.WithAlpha*) метод, создающий новый цвет из существующего цвета, но с указанным уровнем альфа:
 
 ```csharp
 SKColor halfTransparentBlue = SKColors.Blue.WithAlpha(0x80);
 ```
 
-Демонстрируется использование частично прозрачный текста в **более кода** странице в [ **SkiaSharpFormsDemos** ](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) образца. Эта страница исчезает две текстовые строки и включив прозрачности в `SKColor` значения:
+Использование частично прозрачного текста демонстрируется в кодовой странице **код больше** в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . На этой странице два текстовых строки постепенно перетекает, включая прозрачность `SKColor` значений:
 
 ```csharp
 public class CodeMoreCodePage : ContentPage
@@ -124,27 +127,27 @@ public class CodeMoreCodePage : ContentPage
 }
 ```
 
-`transparency` Поле анимируется до изменяться от 0 до 1, а затем опять в переход такт. Первая текстовая строка отображается с альфа-значение рассчитывается путем вычитания `transparency` значение от 1:
+`transparency`Поле анимируется в зависимости от 0 до 1 и обратно в синусоидальной цикл. Первая текстовая строка отображается с альфа-значением, вычисленным путем вычитания `transparency` значения из 1:
 
 ```csharp
 paint.Color = SKColors.Blue.WithAlpha((byte)(0xFF * (1 - transparency)));
 ```
 
-[ `WithAlpha` ](xref:SkiaSharp.SKColor.WithAlpha*) Метод задает альфа-компонент на существующий цвет, являющийся здесь `SKColors.Blue`. Вторая текстовая строка использует альфа-значение вычисляется на основе `transparency` само значение:
+[`WithAlpha`](xref:SkiaSharp.SKColor.WithAlpha*)Метод задает альфа-компонент существующего цвета, который в данном случае имеет значение `SKColors.Blue` . Вторая текстовая строка использует значение альфа, вычисленное на основе `transparency` самого значения:
 
 ```csharp
 paint.Color = SKColors.Blue.WithAlpha((byte)(0xFF * transparency));
 ```
 
-Анимация переключается между двумя словами, понуждая пользователя «больше кода» (или возможно запросе «дополнительные кода»):
+В анимации между двумя словами, понуждая пользователя на "код больше" (или, возможно, запрашивается "дополнительный код"):
 
-[![Дополнительные код](transparency-images/CodeMoreCode.png "дополнительные код")](transparency-images/CodeMoreCode-Large.png#lightbox)
+[![Код для более подробного кода](transparency-images/CodeMoreCode.png "Код для более подробного кода")](transparency-images/CodeMoreCode-Large.png#lightbox)
 
-В предыдущей статье на [ **основы растрового изображения в SkiaSharp**](bitmaps.md), было продемонстрировано отображение точечных рисунков с помощью одного из [ `DrawBitmap` ](xref:SkiaSharp.SKCanvas.DrawBitmap*) методы `SKCanvas`. Все `DrawBitmap` методы включают в себя `SKPaint` объект в качестве последнего параметра. По умолчанию этот параметр имеет значение `null` и ее можно игнорировать. 
+В предыдущей статье, посвященной [**основам битовых рисунков в SkiaSharp**](bitmaps.md), вы узнали, как отображать точечные рисунки с помощью одного из [`DrawBitmap`](xref:SkiaSharp.SKCanvas.DrawBitmap*) методов `SKCanvas` . Все `DrawBitmap` методы включают в `SKPaint` себя объект в качестве последнего параметра. По умолчанию этот параметр имеет значение, `null` и его можно игнорировать. 
 
-Кроме того, можно задать `Color` свойства данного объекта `SKPaint` объект для отображения растровое изображение со некоторый уровень прозрачности. Установка уровня прозрачности в `Color` свойство `SKPaint` позволяет точечные рисунки и исчезновения или исчезают одного точечного рисунка в другой. 
+Кроме того, можно задать `Color` свойство этого объекта, `SKPaint` чтобы отобразить точечный рисунок с определенным уровнем прозрачности. Установка уровня прозрачности в `Color` свойстве `SKPaint` позволяет появление и уменьшение растровых изображений, а также разрешение одного растрового изображения в другой. 
 
-Демонстрируется прозрачности точечного рисунка в **исчезают точечного рисунка** страницы. Файл XAML создает экземпляр `SKCanvasView` и `Slider`:
+Прозрачность растрового изображения показана на странице « **разрешение растрового изображения** ». XAML-файл создает экземпляр `SKCanvasView` и `Slider` :
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -164,7 +167,7 @@ paint.Color = SKColors.Blue.WithAlpha((byte)(0xFF * transparency));
 </ContentPage>
 ```
 
-Файл с выделенным кодом загружает два ресурса точечного рисунка. Эти точечные рисунки не имеют одинаковый размер, но они же соотношение сторон:
+Файл кода программной части загружает два ресурса точечного рисунка. Эти точечные рисунки имеют разные размеры, но они имеют одинаковое соотношение сторон.
 
 ```csharp
 public partial class BitmapDissolvePage : ContentPage
@@ -229,15 +232,15 @@ public partial class BitmapDissolvePage : ContentPage
 }
 ```
 
-`Color` Свойство `SKPaint` присваивается два уровня взаимодополняющие альфа-канала для двух растровых изображений. При использовании `SKPaint` с растровыми изображениями, неважно, какие остальная часть `Color` значение. Имеет значение только альфа-канала. Приведенный здесь код просто вызывает `WithAlpha` метод на значение по умолчанию `Color` свойство.
+`Color` `SKPaint` Для свойства объекта задано два дополнительных уровня альфа-канала для двух точечных рисунков. При использовании `SKPaint` с точечными рисунками не имеет значения, чем остальная часть `Color` значения. Все это имеет значение альфа-канал. Здесь код просто вызывает `WithAlpha` метод для значения свойства по умолчанию `Color` .
 
-Перемещение `Slider` растворяющееся между одного точечного рисунка, а другой:
+Перемещение `Slider` разрешающей карты между одним точечным рисунком и другим:
 
-[![Битовая карта Растворение](transparency-images/BitmapDissolve.png "Растворение для точечных рисунков")](transparency-images/BitmapDissolve-Large.png#lightbox)
+[![Распознаватель точечного рисунка](transparency-images/BitmapDissolve.png "Распознаватель точечного рисунка")](transparency-images/BitmapDissolve-Large.png#lightbox)
 
-В последние несколько статей вы узнали, как использовать SkiaSharp для рисования текста, круги, эллипсы, прямоугольников со скругленными углами и точечные рисунки. Следующим шагом является [строки и пути SkiaSharp](../paths/index.md) в которой вы узнаете, как для рисования линии в графический контур.
+В нескольких прошлых статьях вы узнали, как использовать SkiaSharp для рисования текста, кругов, эллипсов, скругленных прямоугольников и точечных рисунков. Следующий шаг — [SkiaSharp строки и пути](../paths/index.md) , в которых вы узнаете, как нарисовать подключенные линии в графическом контуре.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [SkiaSharpFormsDemos (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

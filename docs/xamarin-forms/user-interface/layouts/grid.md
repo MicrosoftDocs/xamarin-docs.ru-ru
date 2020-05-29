@@ -1,24 +1,27 @@
 ---
-title: Сетка Xamarin. Forms
-description: Сетка Xamarin. Forms представляет собой макет, который упорядочивает свои дочерние элементы по строкам и столбцам ячеек.
-ms.prod: xamarin
-ms.assetid: 762B1802-D185-494C-B643-74EED55882FE
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 05/15/2020
-ms.openlocfilehash: 4f1d9d0f2d597018b9832d918bbec3f0b2594773
-ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
+title: Xamarin.FormsСетки
+description: Xamarin.FormsСетка представляет собой макет, который упорядочивает дочерние элементы по строкам и столбцам ячеек.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c4e63d6c1701d9eb247ecb7c52188e5dbc045934
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83425986"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138077"
 ---
-# <a name="xamarinforms-grid"></a>Сетка Xamarin. Forms
+# <a name="xamarinforms-grid"></a>Xamarin.FormsСетки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-griddemos)
 
-[![Сетка Xamarin. Forms](grid-images/layouts.png "Сетка Xamarin. Forms")](grid-images/layouts-large.png#lightbox "Сетка Xamarin. Forms")
+[![Xamarin.FormsСетки](grid-images/layouts.png "[! Операцион. Таблица NO-LOC (Xamarin. Forms)]")](grid-images/layouts-large.png#lightbox "[! Операцион. Таблица NO-LOC (Xamarin. Forms)]")
 
 [`Grid`](xref:Xamarin.Forms.Grid)— Это макет, который упорядочивает свои дочерние элементы по строкам и столбцам, которые могут иметь пропорциональные или абсолютные размеры. По умолчанию `Grid` содержит одну строку и один столбец. Кроме того, `Grid` можно использовать в качестве родительского макета, содержащего другие дочерние макеты.
 
@@ -735,6 +738,6 @@ public class ColorSlidersGridPageCS : ContentPage
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Демонстрации сетки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-griddemos)
-- [Параметры макета в Xamarin. Forms](layout-options.md)
-- [Выбор макета Xamarin. Forms](choose-layout.md)
-- [Повышение производительности приложений Xamarin.Forms](~/xamarin-forms/deploy-test/performance.md)
+- [Параметры макета вXamarin.Forms](layout-options.md)
+- [Выбор Xamarin.Forms макета](choose-layout.md)
+- [Улучшение Xamarin.Forms производительности приложения](~/xamarin-forms/deploy-test/performance.md)

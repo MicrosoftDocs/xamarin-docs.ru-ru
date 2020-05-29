@@ -1,24 +1,27 @@
 ---
-title: Быстрая прокрутка ListView в Android
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Android, которая обеспечивает быструю прокрутку данных в ListView.
-ms.prod: xamarin
-ms.assetid: 37D95A2D-74AC-488A-B903-2BDD799EAA5C
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/10/2018
-ms.openlocfilehash: ce51483da9599cf049cf005ae18b35d110aa325b
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 30e6a39b1a7649fbb9e09dfeeb85ee889da68fc1
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68649987"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84128808"
 ---
 # <a name="listview-fast-scrolling-on-android"></a>Быстрая прокрутка ListView в Android
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Эта платформа для Android используется для быстрой прокрутки данных в [`ListView`](xref:Xamarin.Forms.ListView). Он используется в XAML, задав `ListView.IsFastScrollEnabled` вложенное свойство, чтобы `boolean` значение:
+Эта платформа для Android используется для быстрой прокрутки данных в [`ListView`](xref:Xamarin.Forms.ListView) . Он используется в XAML путем присвоения `ListView.IsFastScrollEnabled` свойству присоединенного свойства `boolean` значения:
 
 ```xaml
 <ContentPage ...
@@ -35,7 +38,7 @@ ms.locfileid: "68649987"
 </ContentPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -48,19 +51,19 @@ listView.GroupDisplayBinding = new Binding("Key");
 listView.On<Android>().SetIsFastScrollEnabled(true);
 ```
 
-`ListView.On<Android>` Метод указывает, что этой платформы будет выполняться только в Android. `ListView.SetIsFastScrollEnabled` Метод в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространства имен, используемый для обеспечения быстрой прокрутке данные в [ `ListView` ](xref:Xamarin.Forms.ListView). Кроме того `SetIsFastScrollEnabled` метод можно использовать для переключения быстрой прокрутке путем вызова `IsFastScrollEnabled` метод для возврата, включен ли быстрый прокрутка:
+`ListView.On<Android>`Метод указывает, что эта платформа будет запускаться только в Android. `ListView.SetIsFastScrollEnabled`Метод в [`Xamarin.Forms.PlatformConfiguration.AndroidSpecific`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространстве имен используется, чтобы обеспечить быструю прокрутку данных в [`ListView`](xref:Xamarin.Forms.ListView) . Кроме того, `SetIsFastScrollEnabled` метод можно использовать для переключения быстрой прокрутки путем вызова `IsFastScrollEnabled` метода для возврата, включена ли Быстрая прокрутка.
 
 ```csharp
 listView.On<Android>().SetIsFastScrollEnabled(!listView.On<Android>().IsFastScrollEnabled());
 ```
 
-Результатом является то, что быстрой прокрутке данные в [ `ListView` ](xref:Xamarin.Forms.ListView) можно включить, который изменяет размер бегунка прокрутки:
+В результате можно включить быструю прокрутку данных в [`ListView`](xref:Xamarin.Forms.ListView) , что изменяет размер бегунка прокрутки.
 
-[![](listview-fast-scrolling-images/fastscroll.png "ListView FastScroll платформы")](listview-fast-scrolling-images/fastscroll-large.png#lightbox "ListView FastScroll платформы")
+[![](listview-fast-scrolling-images/fastscroll.png "ListView FastScroll Platform-Specific")](listview-fast-scrolling-images/fastscroll-large.png#lightbox "ListView FastScroll Platform-Specific")
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API АндроидспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific)
 - [АндроидспеЦифик. AppCompat API](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat)

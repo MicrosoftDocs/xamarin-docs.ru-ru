@@ -1,49 +1,52 @@
 ---
-title: Фильтры маска SkiaSharp
-description: Узнайте, как использовать фильтр для создания размытия и другие эффекты альфа-канала.
-ms.prod: xamarin
-ms.technology: xamarin-skiasharp
-ms.assetid: 940422A1-8BC0-4039-8AD7-26C61320F858
-author: davidbritch
-ms.author: dabritch
-ms.date: 08/27/2018
-ms.openlocfilehash: 36a8b5c32261d4f508c82feea1e6127574db6a20
-ms.sourcegitcommit: 1e3a0d853669dcc57d5dee0894d325d40c7d8009
+title: ''
+description: ''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 10192e93d2e20f9aa58ca95dd81c07f560193905
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70198243"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136413"
 ---
-# <a name="skiasharp-mask-filters"></a>Фильтры маска SkiaSharp
+# <a name="skiasharp-mask-filters"></a>Фильтры маски SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-Маска располагаются эффекты, которые управляют геометрии и альфа-канал графических объектов. Чтобы использовать фильтр, задайте [ `MaskFilter` ](xref:SkiaSharp.SKPaint.MaskFilter) свойство `SKPaint` для объекта типа [ `SKMaskFilter` ](xref:SkiaSharp.SKMaskFilter) вы создали путем вызова одного из `SKMaskFilter` статические методы.
+Фильтры маски — это эффекты, управляющие геометрией и альфа-каналом графических объектов. Чтобы использовать фильтр маски, задайте [`MaskFilter`](xref:SkiaSharp.SKPaint.MaskFilter) `SKPaint` для свойства объекта тип [`SKMaskFilter`](xref:SkiaSharp.SKMaskFilter) , который вы создали, вызвав один из `SKMaskFilter` статических методов.
 
-Лучший способ ознакомиться с фильтрами маска — Экспериментируя с этими статическими методами. Наиболее полезных фильтр создает размытия.
+Лучший способ знакомства с фильтрами масок — эксперименты с этими статическими методами. Наиболее полезный фильтр маски создает размытие:
 
-![Размытие пример](mask-filters-images/MaskFilterExample.png "Размытие пример")
+![Пример размытия](mask-filters-images/MaskFilterExample.png "Пример размытия")
 
-Это единственная функция фильтра маски, описанные в этой статье. В следующей статье [ **фильтры образа SkiaSharp** ](image-filters.md) также описывается эффект размытия, который вы предпочитаете такой. 
+Это единственная функция фильтра маски, описанная в этой статье. Следующая статья по [**фильтрам изображений SkiaSharp**](image-filters.md) также описывает эффект размытия, который вы можете предпочесть. 
 
-Статический [ `SKMaskFilter.CreateBlur` ](xref:SkiaSharp.SKMaskFilter.CreateBlur(SkiaSharp.SKBlurStyle,System.Single)) метод имеет следующий синтаксис:
+Статический [`SKMaskFilter.CreateBlur`](xref:SkiaSharp.SKMaskFilter.CreateBlur(SkiaSharp.SKBlurStyle,System.Single)) метод имеет следующий синтаксис:
 
 ```csharp
 public static SKMaskFilter CreateBlur (SKBlurStyle blurStyle, float sigma);
 ```
 
-Перегрузки позволяют, задающее флаги для алгоритма, используемого для создания размытия и прямоугольник, чтобы избежать Размытие в областях, которые будут рассматриваться с других графических объектов.
+Перегрузки позволяют задавать флаги для алгоритма, используемого для создания размытия, и прямоугольник, чтобы избежать размытия в областях, которые будут охвачены другими графическими объектами.
 
-[`SKBlurStyle`](xref:SkiaSharp.SKBlurStyle) представляет собой перечисление со следующими членами:
+[`SKBlurStyle`](xref:SkiaSharp.SKBlurStyle)является перечислением со следующими членами:
 
 - `Normal`
 - `Solid`
 - `Outer`
 - `Inner`
 
-В приведенных ниже примерах показаны последствия этих стилей. `sigma` Параметр задает экстент размытия. В предыдущих версиях набора Skia со значением радиуса указанную степень размытия. Значение радиуса является предпочтительным для вашего приложения, есть ли статический [ `SKMaskFilter.ConvertRadiusToSigma` ](xref:SkiaSharp.SKMaskFilter.ConvertRadiusToSigma*) метод, который может быть преобразован из одного в другой. Этот метод умножает радиус 0.57735 и добавит 0,5.
+Эффекты этих стилей показаны в приведенных ниже примерах. `sigma`Параметр задает экстент размытия. В более ранних версиях СКИА экстент размытия был обозначен значением радиуса. Если значение радиуса предпочтительнее для вашего приложения, то существует статический [`SKMaskFilter.ConvertRadiusToSigma`](xref:SkiaSharp.SKMaskFilter.ConvertRadiusToSigma*) метод, который может преобразовать из одного в другой. Метод умножает радиус на 0,57735 и добавляет 0,5.
 
-**Маска размытия поэкспериментировать** странице в [ **SkiaSharpFormsDemos** ](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) пример позволяет экспериментировать с стили размытия и значения «сигма». Файл XAML создает экземпляр `Picker` четырьмя `SKBlurStyle` члены перечисления и `Slider` для задания значения «сигма»:
+На странице **эксперимент размытия маски** в образце [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) можно поэкспериментировать с стилями размытия и Сигма. XAML-файл создает экземпляр `Picker` с четырьмя `SKBlurStyle` членами перечисления и `Slider` для указания значения Сигма:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -89,7 +92,7 @@ public static SKMaskFilter CreateBlur (SKBlurStyle blurStyle, float sigma);
 </ContentPage>
 ```
 
-Файл с выделенным кодом использует эти значения для создания `SKMaskFilter` объект и присвойте ему значение `MaskFilter` свойство `SKPaint` объекта. Это `SKPaint` объект используется для рисования строку текста и растровое изображение:
+Файл кода программной части использует эти значения для создания `SKMaskFilter` объекта и задания его `MaskFilter` свойству `SKPaint` объекта. Этот `SKPaint` объект используется для рисования текстовой строки и точечного рисунка:
 
 ```csharp
 public partial class MaskBlurExperimentPage : ContentPage
@@ -157,40 +160,40 @@ public partial class MaskBlurExperimentPage : ContentPage
 }
 ```
 
-Вот программу на iOS, Android и универсальной платформы Windows (UWP) с `Normal` Размытие, стиля и повышая `sigma` уровней:
+Вот программа, работающая на iOS, Android и универсальная платформа Windows (UWP) с `Normal` стилем размытия и возрастающими `sigma` уровнями:
 
-[![Маскировать размытия эксперимента: обычный](mask-filters-images/MaskBlurExperiment-Normal.png "маска размытия эксперимента - норм.")](mask-filters-images/MaskBlurExperiment-Normal-Large.png#lightbox)
+[![Эффект размытия маски — нормальный](mask-filters-images/MaskBlurExperiment-Normal.png "Эффект размытия маски — нормальный")](mask-filters-images/MaskBlurExperiment-Normal-Large.png#lightbox)
 
-Вы заметите, что только краев точечного рисунка подвержены размытия. `SKMaskFilter` Класс не является правильно эффект, используйте, если вы хотите размытие изображения весь точечный рисунок. Для этого появится желание использовать [ `SKImageFilter` ](xref:SkiaSharp.SKImageFilter) класса, как описано в следующей статье на [ **фильтры образа SkiaSharp**](image-filters.md).
+Обратите внимание, что размытие затрагивает только края точечного рисунка. `SKMaskFilter`Класс не является правильным эффектом для использования, если требуется размытие всего растрового изображения. Для этого необходимо использовать [`SKImageFilter`](xref:SkiaSharp.SKImageFilter) класс, как описано в следующей статье о [**фильтрах изображений SkiaSharp**](image-filters.md).
 
-Текст является более размытой с увеличением значения `sigma` аргумент. Экспериментировать с этой программой, вы заметите, что для какого-либо `sigma` значение, размытия более невероятных на рабочем столе Windows 10. Это различие связано меньше плотности пикселей на настольный монитор, чем на мобильных устройствах, и таким образом уменьшается высота текста в пикселях. `sigma` Значение пропорционально в степени размытия, в пикселях, так для данного `sigma` значение, действует более невероятных на вывод разделов ниже разрешения. В рабочем приложении, возможно, нужно будет вычислить `sigma` значение, которое пропорционально размеру изображения. 
+Текст становится более размытым с увеличением значений `sigma` аргумента. В экспериментах с этой программой вы заметите, что для определенного `sigma` значения Размытие более экстремальо на рабочем столе Windows 10. Это различие обусловлено тем, что плотность пикселя меньше на настольном мониторе, чем на мобильных устройствах, поэтому высота текста в пикселях ниже. `sigma`Значение пропорционально экстенту размытия в пикселях, поэтому для заданного `sigma` значения результат будет более крайним, чем на экранах с более низким разрешением. В рабочем приложении, вероятно, потребуется вычислить `sigma` значение, пропорциональное размеру изображения. 
 
-Попробуйте несколько значений, прежде чем остановиться на уровне размытия, которое ищет лучшие приложения. Например, в **эксперимента размытия маска** странице, попробуйте задать `sigma` следующим образом:
+Попробуйте несколько значений, прежде чем приступить к сопоставлению уровня размытия, который лучше подходит для вашего приложения. Например, на странице " **эксперимент размытия маски** " попробуйте установить `sigma` подобный вид:
 
 ```csharp
 sigma = paint.TextSize / 18;
 paint.MaskFilter = SKMaskFilter.CreateBlur(blurStyle, sigma);
 ```
 
-Теперь `Slider` не оказывает влияния, но степень размытия согласуется различных платформ:
+Теперь `Slider` действие не оказывает никакого влияния, но степень размытия согласована между платформами:
 
-[![Маскировать эксперимента размытия - согласованного](mask-filters-images/MaskBlurExperiment-Consistent.png "маскировать размытия эксперимента: согласованный")](mask-filters-images/MaskBlurExperiment-Consistent-Large.png#lightbox)
+[![Размытие эксперимента — согласуется](mask-filters-images/MaskBlurExperiment-Consistent.png "Размытие эксперимента — согласуется")](mask-filters-images/MaskBlurExperiment-Consistent-Large.png#lightbox)
 
-Все снимки экрана до сих показали Размытие, создаваемое `SKBlurStyle.Normal` член перечисления. На следующих снимках экрана показано влияние `Solid`, `Outer`, и `Inner` Размытие стили:
+Все снимки экрана до сих пор показали размытие, созданное с помощью `SKBlurStyle.Normal` члена перечисления. На следующих снимках экрана показаны эффекты `Solid` `Outer` `Inner` стилей размытия, и.
 
-[![Маскировать эксперимента размытия](mask-filters-images/MaskBlurExperiment.png "маскировать размытия эксперимента")](mask-filters-images/MaskBlurExperiment-Large.png#lightbox)
+[![Эксперимент размытия маски](mask-filters-images/MaskBlurExperiment.png "Эксперимент размытия маски")](mask-filters-images/MaskBlurExperiment-Large.png#lightbox)
 
-Снимок экрана iOS показывает `Solid` стиль: Текстовые символы по-прежнему представляются сплошными черными штрихами, а размытие добавляется к внешним знакам текста. 
+Снимок экрана iOS показывает `Solid` стиль: текстовые символы по-прежнему представляются сплошными черными штрихами, а размытие добавляется к внешним знакам текста. 
 
-Снимок экрана Android в середине показывает `Outer` стиль: Сами по себе символы исключаются (как в виде точечного рисунка), а размытие окружает пустое пространство, где появлялись текстовые символы. 
+Снимок экрана Android в среднем отображает `Outer` стиль. сами по себе символы обрабатываются (как в виде точечного рисунка), а размытие окружает пустое пространство, где проявлялись текстовые символы. 
 
-На снимке экрана универсальной платформы Windows на справа показывает `Inner` стиля. Размытие поддерживается только для области обычно, текстовых символов.
+На снимке экрана UWP справа отображается `Inner` стиль. Размытие ограничено областью, обычно занятой текстовыми символами.
 
-[ **Линейный градиент SkiaSharp** ](shaders/linear-gradient.md#transparency-and-gradients) описано в статье **отражения градиента** программа, которая используется для моделирования отражения текстовой строки линейного градиента и преобразования:
+В статье [**линейного градиента SkiaSharp**](shaders/linear-gradient.md#transparency-and-gradients) описана программа **градиента отражения** , которая использовала линейный градиент и преобразование для имитации отражения текстовой строки:
 
-[![Отражение градиентной](shaders/linear-gradient-images/ReflectionGradient.png "отражения градиента")](shaders/linear-gradient-images/ReflectionGradient-Large.png#lightbox)
+[![Градиентное отражение](shaders/linear-gradient-images/ReflectionGradient.png "Градиентное отражение")](shaders/linear-gradient-images/ReflectionGradient-Large.png#lightbox)
 
-**Нечетким отражения** страницы этот код добавляет одну инструкцию:
+Страница **отражения размытия** добавляет в этот код одну инструкцию:
 
 ```csharp
 public class BlurryReflectionPage : ContentPage
@@ -261,17 +264,17 @@ public class BlurryReflectionPage : ContentPage
 }
 ```
 
-Новая инструкция добавляет фильтр размытия для отраженного текста, основанный на размер текста:
+Новая инструкция добавляет фильтр размытия для текста, основанного на размере текста:
 
 ```csharp
 paint.MaskFilter = SKMaskFilter.CreateBlur(SKBlurStyle.Normal, paint.TextSize / 36);
 ```
 
-Этот фильтр размытия вызывает отражение, чтобы показаться гораздо более реалистичным.
+Этот фильтр размытия приводит к появлению более реалистичного отражения:
 
-[![Нечетким отражения](mask-filters-images/BlurryReflection.png "нечетким отражения")](mask-filters-images/BlurryReflection-Large.png#lightbox)
+[![Отражение с размытием](mask-filters-images/BlurryReflection.png "Отражение с размытием")](mask-filters-images/BlurryReflection-Large.png#lightbox)
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [SkiaSharpFormsDemos (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

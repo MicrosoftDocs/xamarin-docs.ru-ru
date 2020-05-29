@@ -1,22 +1,25 @@
 ---
-title: Общие свойства, методы и события элемента управления в Xamarin.Forms
-description: В этой статье описываются общие свойства, методы и события, определенные в классе Висуалелемент, которые обычно используются в производных классах.
-ms.prod: xamarin
-ms.assetId: 85A0CCF5-C1D8-40BB-927F-A4D944E5534D
-ms.technology: xamarin-forms
-author: profexorgeek
-ms.author: jusjohns
-ms.date: 08/21/2019
-ms.openlocfilehash: 7d8f5309d14c2a99afff0998a7013a9ebec338c1
-ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
+title: Xamarin.FormsОбщие свойства, методы и события элемента управления
+description: ''
+ms.prod: ''
+ms.assetId: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: deb894cccd5b6a2a9d908ef8967de91f00e7d297
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83425836"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136426"
 ---
-# <a name="xamarinforms-common-control-properties-methods-and-events"></a>Общие свойства, методы и события элемента управления в Xamarin.Forms
+# <a name="xamarinforms-common-control-properties-methods-and-events"></a>Xamarin.FormsОбщие свойства, методы и события элемента управления
 
-Класс Xamarin. Forms `VisualElement` является базовым классом для большинства элементов управления, используемых в приложении Xamarin. Forms. `VisualElement`Класс определяет множество [свойств](#properties), [методов](#methods)и [событий](#events) , используемых в производных классах.
+Xamarin.Forms `VisualElement` Класс является базовым классом для большинства элементов управления, используемых в Xamarin.Forms приложении. `VisualElement`Класс определяет множество [свойств](#properties), [методов](#methods)и [событий](#events) , используемых в производных классах.
 
 ## <a name="properties"></a>Свойства
 
@@ -36,15 +39,15 @@ ms.locfileid: "83425836"
 
 ### [`Behaviors`](xref:Xamarin.Forms.VisualElement.Behaviors)
 
-`Behaviors`Свойство имеет значение объекта `List` `Behavior` . Поведения позволяют присоединять многократно используемые функции к элементам, добавляя их в `Behaviors` список. Дополнительные сведения о `Behavior` классе см. в разделе [поведение Xamarin. Forms](~/xamarin-forms/app-fundamentals/behaviors/index.md).
+`Behaviors`Свойство имеет значение объекта `List` `Behavior` . Поведения позволяют присоединять многократно используемые функции к элементам, добавляя их в `Behaviors` список. Дополнительные сведения о `Behavior` классе см. в разделе [ Xamarin.Forms варианты поведения](~/xamarin-forms/app-fundamentals/behaviors/index.md).
 
 ### [`Bounds`](xref:Xamarin.Forms.VisualElement.Bounds)
 
-`Bounds`Свойство является объектом только для чтения `Rectangle` , представляющим пространство, занимаемое элементом управления. `Bounds`Значение свойства назначается во время цикла макета. `Rectangle` `struct` Содержит полезные свойства и методы для тестирования пересечения и включения прямоугольников. Дополнительные сведения см. в разделе [API-интерфейс Xamarin. Forms](xref:Xamarin.Forms.Rectangle).
+`Bounds`Свойство является объектом только для чтения `Rectangle` , представляющим пространство, занимаемое элементом управления. `Bounds`Значение свойства назначается во время цикла макета. `Rectangle` `struct` Содержит полезные свойства и методы для тестирования пересечения и включения прямоугольников. Дополнительные сведения см. в разделе [ Xamarin.Forms API Rectangle](xref:Xamarin.Forms.Rectangle).
 
 ### [`Effects`](xref:Xamarin.Forms.Element.Effects)
 
-`Effects`Свойство является классом `List` `Effect` объектов, унаследованных от `Element` класса (xref: Xamarin. Forms. Element). Эффекты позволяют настраивать собственные элементы управления и обычно используются для небольших изменений стилей. Дополнительные сведения о `Effect` классе см. в разделе [эффекты Xamarin. Forms](~/xamarin-forms/app-fundamentals/effects/index.md).
+`Effects`Свойство имеет объект `List` `Effect` , унаследованный от класса `Element` (xref: Xamarin.Forms . Класс element). Эффекты позволяют настраивать собственные элементы управления и обычно используются для небольших изменений стилей. Дополнительные сведения о `Effect` классе см. в разделе [ Xamarin.Forms эффекты](~/xamarin-forms/app-fundamentals/effects/index.md).
 
 ### [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection)
 
@@ -130,11 +133,11 @@ ms.locfileid: "83425836"
 
 ### [`Style`](xref:Xamarin.Forms.NavigableElement.Style)
 
-Свойство `Style` наследуется от класса `NavigableElement`. Это свойство является экземпляром `Style` класса. `Style`Класс содержит триггеры, методы задания и поведение, определяющие внешний вид и поведение визуальных элементов. Дополнительные сведения см. в разделе [стили XAML Xamarin. Forms](~/xamarin-forms/user-interface/styles/xaml/index.md).
+Свойство `Style` наследуется от класса `NavigableElement`. Это свойство является экземпляром `Style` класса. `Style`Класс содержит триггеры, методы задания и поведение, определяющие внешний вид и поведение визуальных элементов. Дополнительные сведения см. в разделе [ Xamarin.Forms стили XAML](~/xamarin-forms/user-interface/styles/xaml/index.md).
 
 ### [`StyleClass`](xref:Xamarin.Forms.NavigableElement.StyleClass)
 
-`StyleClass`Свойство представляет собой список `string` объектов, представляющих имена `Style` классов. Это свойство наследуется от класса `NavigableElement`. `StyleClass`Свойство позволяет применять к экземпляру несколько атрибутов стиля `VisualElement` . Дополнительные сведения см. в разделе [классы стилей Xamarin. Forms](~/xamarin-forms/user-interface/styles/xaml/style-class.md).
+`StyleClass`Свойство представляет собой список `string` объектов, представляющих имена `Style` классов. Это свойство наследуется от класса `NavigableElement`. `StyleClass`Свойство позволяет применять к экземпляру несколько атрибутов стиля `VisualElement` . Дополнительные сведения см. в разделе [ Xamarin.Forms классы стилей](~/xamarin-forms/user-interface/styles/xaml/style-class.md).
 
 ### [`TabIndex`](xref:Xamarin.Forms.VisualElement.TabIndex)
 
@@ -144,21 +147,21 @@ ms.locfileid: "83425836"
 
 `TranslationX`Свойство является `double` значением, определяющим Дельта-преобразование, которое должно применяться к оси X. Перевод применяется после макета и обычно используется для применения анимации. Преобразование элемента за пределами родительского контейнера My предотвращает вход в него.
 
-Дополнительные сведения см. [в разделе Анимация в Xamarin. Forms](~/xamarin-forms/user-interface/animation/index.md).
+Дополнительные сведения см. [в разделе Анимация Xamarin.Forms в ](~/xamarin-forms/user-interface/animation/index.md).
 
 ### [`TranslationY`](xref:Xamarin.Forms.VisualElement.TranslationY)
 
 `TranslationY`Свойство является `double` значением, определяющим Дельта-преобразование, которое должно быть применено к оси Y. Перевод применяется после макета и обычно используется для применения анимации. Преобразование элемента за пределами родительского контейнера My предотвращает вход в него.
 
-Дополнительные сведения см. [в разделе Анимация в Xamarin. Forms](~/xamarin-forms/user-interface/animation/index.md).
+Дополнительные сведения см. [в разделе Анимация Xamarin.Forms в ](~/xamarin-forms/user-interface/animation/index.md).
 
 ### [`Triggers`](xref:Xamarin.Forms.VisualElement.Triggers)
 
-`Triggers`Свойство доступно только `List` для чтения `TriggerBase` объектов. Триггеры позволяют разработчикам приложений выражать действия в XAML, которые изменяют внешний вид элементов управления в ответ на изменения события или свойства. Дополнительные сведения см. в разделе [триггеры Xamarin. Forms](~/xamarin-forms/app-fundamentals/triggers.md).
+`Triggers`Свойство доступно только `List` для чтения `TriggerBase` объектов. Триггеры позволяют разработчикам приложений выражать действия в XAML, которые изменяют внешний вид элементов управления в ответ на изменения события или свойства. Дополнительные сведения см. в разделе [ Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md).
 
 ### [`Visual`](xref:Xamarin.Forms.VisualElement.Visual)
 
-`Visual`Свойство является `IVisual` экземпляром, позволяющим создавать модули подготовки отчетов и выборочно применять их к `VisualElement` экземплярам. `Visual`Свойство установлено в соответствие с родительским, поэтому определение модуля подготовки отчетов в компоненте также будет применяться к любым дочерним элементам этого компонента. Если для элемента управления или его предков не задан пользовательский модуль подготовки отчетов, будет использоваться модуль подготовки Xamarin. Forms по умолчанию. Дополнительные сведения см. в разделе [визуальный элемент Xamarin. Forms](~/xamarin-forms/user-interface/visual/index.md).
+`Visual`Свойство является `IVisual` экземпляром, позволяющим создавать модули подготовки отчетов и выборочно применять их к `VisualElement` экземплярам. `Visual`Свойство установлено в соответствие с родительским, поэтому определение модуля подготовки отчетов в компоненте также будет применяться к любым дочерним элементам этого компонента. Если для элемента управления или его предков не задан пользовательский модуль подготовки отчетов, будет использоваться модуль подготовки отчетов по умолчанию Xamarin.Forms . Дополнительные сведения см. в разделе [ Xamarin.Forms Visual](~/xamarin-forms/user-interface/visual/index.md).
 
 ### [`Width`](xref:Xamarin.Forms.VisualElement.Width)
 
@@ -212,11 +215,11 @@ public void Unfocus ()
 
 ## <a name="events"></a>События
 
-В классе доступны следующие события `VisualElement` . Полный список см. в разделе [события Висуалелемент Xamarin. Forms](xref:Xamarin.Forms.VisualElement#events).
+В классе доступны следующие события `VisualElement` . Полный список см. в разделе [ Xamarin.Forms висуалелемент Events](xref:Xamarin.Forms.VisualElement#events).
 
 ### [`Focused`](xref:Xamarin.Forms.VisualElement.Focused)
 
-`Focused`Событие возникает всякий раз, когда `VisualElement` экземпляр получает фокус. Это событие не перемещается через стек Xamarin. Forms, оно получается непосредственно из собственного элемента управления. Это событие создается методом [`IsFocused`](#isfocused) задания свойства.
+`Focused`Событие возникает всякий раз, когда `VisualElement` экземпляр получает фокус. Это событие не перемещается через Xamarin.Forms стек, оно получается непосредственно из собственного элемента управления. Это событие создается методом [`IsFocused`](#isfocused) задания свойства.
 
 ### [`SizeChanged`](xref:Xamarin.Forms.VisualElement.SizeChanged)
 
@@ -224,11 +227,11 @@ public void Unfocus ()
 
 ### [`Unfocused`](xref:Xamarin.Forms.VisualElement.Unfocused)
 
-`Unfocused`Событие возникает всякий раз, когда `VisualElement` экземпляр теряет фокус. Это событие не перемещается через стек Xamarin. Forms, оно получается непосредственно из собственного элемента управления. Это событие создается методом [`IsFocused`](#isfocused) задания свойства.
+`Unfocused`Событие возникает всякий раз, когда `VisualElement` экземпляр теряет фокус. Это событие не перемещается через Xamarin.Forms стек, оно получается непосредственно из собственного элемента управления. Это событие создается методом [`IsFocused`](#isfocused) задания свойства.
 
 ## <a name="units-of-measurement"></a>Единицы измерения
 
-Платформы Android, iOS и UWP имеют разные единицы измерения, которые могут различаться на разных устройствах. Xamarin. Forms использует независимую от платформы единицу измерения, которая нормализует единицы между устройствами и платформами. В Xamarin. Forms имеется 160 единиц на дюйм или 64 единиц на сантиметр.
+Платформы Android, iOS и UWP имеют разные единицы измерения, которые могут различаться на разных устройствах. Xamarin.Formsиспользует независимую от платформы единицу измерения, которая нормализует единицы между устройствами и платформами. 160 единиц на дюйм, или 64 единиц на сантиметр в Xamarin.Forms .
 
 ## <a name="request-properties"></a>Свойства запроса
 
@@ -261,7 +264,7 @@ public void Unfocus ()
 
 ### <a name="minimum-properties-within-a-grid"></a>Минимальные свойства в сетке
 
-`Grid`макеты имеют собственную систему для относительных размеров строк и столбцов. Использование `MinimumWidthRequest` или `MinimumHeightRequest` в `Grid` макете не приведет к применению. Дополнительные сведения см. в разделе [Сетка Xamarin. Forms](~/xamarin-forms/user-interface/layouts/grid.md).
+`Grid`макеты имеют собственную систему для относительных размеров строк и столбцов. Использование `MinimumWidthRequest` или `MinimumHeightRequest` в `Grid` макете не приведет к применению. Дополнительные сведения см. в разделе [ Xamarin.Forms Grid](~/xamarin-forms/user-interface/layouts/grid.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 

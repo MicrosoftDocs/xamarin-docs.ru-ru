@@ -1,24 +1,27 @@
 ---
-title: Бегунок ползунка в iOS
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая позволяет задать свойство Slider. Value, коснувшись ползунка.
-ms.prod: xamarin
-ms.assetid: D0915D37-9A59-4728-BB6A-FE094A661275
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/24/2018
-ms.openlocfilehash: 573b68097724c976ce73b51e3b7ba21b52f7a776
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 93b4dba3e8543bd2cc2a4f2187f617aae5daff77
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68651784"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137076"
 ---
 # <a name="slider-thumb-tap-on-ios"></a>Бегунок ползунка в iOS
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Эта платформа iOS позволяет [`Slider.Value`](xref:Xamarin.Forms.Slider.Value) задать свойство, коснувшись расположения [`Slider`](xref:Xamarin.Forms.Slider) на панели, а не `Slider` путем перетаскивания бегунка. Он используется в XAML, задав [ `Slider.UpdateOnTap` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.UpdateOnTapProperty) свойство, используемое для `true`:
+Эта платформа iOS позволяет [`Slider.Value`](xref:Xamarin.Forms.Slider.Value) задать свойство, коснувшись расположения на [`Slider`](xref:Xamarin.Forms.Slider) панели, а не путем перетаскивания `Slider` бегунка. Он используется в XAML путем установки [`Slider.UpdateOnTap`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.UpdateOnTapProperty) Свойства BIND в значение `true` :
 
 ```xaml
 <ContentPage ...
@@ -30,7 +33,7 @@ ms.locfileid: "68651784"
 </ContentPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -41,14 +44,14 @@ var slider = new Xamarin.Forms.Slider();
 slider.On<iOS>().SetUpdateOnTap(true);
 ```
 
-`Slider.On<iOS>` Метод указывает, что этой платформы будет выполняться только на устройствах iOS. [ `Slider.SetUpdateOnTap` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.SetUpdateOnTap(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider},System.Boolean)) Метод в [ `Xamarin.Forms.PlatformConfiguration.iOSSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен, используется для управления ли касания на `Slider` установит панель [ `Slider.Value` ](xref:Xamarin.Forms.Slider.Value) свойство. Кроме того [ `Slider.GetUpdateOnTap` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.GetUpdateOnTap(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.Slider})) метод может использоваться для возврата ли касания на `Slider` установит панель `Slider.Value` свойство.
+`Slider.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. [ `Slider.SetUpdateOnTap` ] (Xref: Xamarin.Forms . Платформконфигуратион. ИосспеЦифик. Slider. Сетупдатеонтап ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. iOS, Xamarin.Forms . Ползунок}, System. Boolean). в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, будет ли значение свойства откасанием на `Slider` панели задается [`Slider.Value`](xref:Xamarin.Forms.Slider.Value) . Кроме того, [ `Slider.GetUpdateOnTap` ] (xref: Xamarin.Forms . Платформконфигуратион. ИосспеЦифик. Slider. Жетупдатеонтап ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. iOS, Xamarin.Forms . ). Можно использовать метод, чтобы возвращать значение, указывающее, задаст ли касание на `Slider` панели `Slider.Value` свойство.
 
-Результатом является, отвод на [ `Slider` ](xref:Xamarin.Forms.Slider) панели можно перемещать `Slider` бегунка и задать [ `Slider.Value` ](xref:Xamarin.Forms.Slider.Value) свойство:
+В результате касание на [`Slider`](xref:Xamarin.Forms.Slider) полосе может переместить `Slider` бегунок и установить [`Slider.Value`](xref:Xamarin.Forms.Slider.Value) свойство:
 
-![](slider-thumb-images/slider-updateontap.png "Обновление ползунок на коснитесь включена")
+![](slider-thumb-images/slider-updateontap.png "Slider Update on Tap enabled")
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

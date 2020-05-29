@@ -1,28 +1,31 @@
 ---
-title: Макеты Xamarin.Forms
-description: Макеты Xamarin.Forms используются для создания элементов управления пользовательского интерфейса в visual структуры. В этой статье перечислены макеты, включенные в Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: F4180997-BA21-453A-9958-D1E2940DF050
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 05/21/2018
-ms.openlocfilehash: fa08c5012adf74a17852a72b8faf2c0311d16cfa
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+title: Xamarin.FormsМетка
+description: Xamarin.FormsМакеты используются для создания элементов управления пользовательского интерфейса в визуальных структурах. В этой статье перечислены макеты, входящие в Xamarin.Forms .
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c39bf29feceaf598ac8fd38e6af3d227b6deddc0
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83150039"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137310"
 ---
-# <a name="xamarinforms-layouts"></a>Макеты Xamarin.Forms
+# <a name="xamarinforms-layouts"></a>Xamarin.FormsМетка
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
 
 _Макеты Xamarin.Forms используются для создания элементов управления пользовательского интерфейса в visual структуры._
 
-[`Layout`](xref:Xamarin.Forms.Layout)Классы и [`Layout<T>`](xref:Xamarin.Forms.Layout`1) в Xamarin. Forms являются специализированными подтипами представлений, которые действуют как контейнеры для представлений и других макетов. `Layout`Сам класс является производным от [`View`](views.md) . Объект `Layout` производных обычно содержит логику, чтобы задать положение и размер дочерних элементов в приложениях Xamarin.Forms.
+[`Layout`](xref:Xamarin.Forms.Layout)Классы и [`Layout<T>`](xref:Xamarin.Forms.Layout`1) в Xamarin.Forms являются специализированными подтипами представлений, которые действуют как контейнеры для представлений и других макетов. `Layout`Сам класс является производным от [`View`](views.md) . `Layout`Производная обычно содержит логику для задания расположения и размера дочерних элементов в Xamarin.Forms приложениях.
 
-[![Типы макета Xamarin. Forms](layouts-images/layouts-sml.png "Типы макета Xamarin. Forms")](layouts-images/layouts.png#lightbox "Типы макета Xamarin. Forms")
+[![Xamarin.FormsТипы макетов](layouts-images/layouts-sml.png "[! Операцион. NO-LOC (Xamarin. Forms)] типы макетов")](layouts-images/layouts.png#lightbox "[! Операцион. NO-LOC (Xamarin. Forms)] типы макетов")
 
 Классы, производные от `Layout` можно разделить на две категории:
 
@@ -116,6 +119,6 @@ _Макеты Xamarin.Forms используются для создания э�
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Xamarin.Forms FormsGallery](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
-- [Образцы Xamarin.Forms](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
-- [Документация по API Xamarin.Forms](https://docs.microsoft.com/dotnet/api/xamarin.forms?view=xamarin-forms)
+- [Xamarin.FormsПример Формсгаллери](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
+- [Xamarin.FormsРегистрируют](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
+- [Xamarin.FormsДокументация по API](https://docs.microsoft.com/dotnet/api/xamarin.forms?view=xamarin-forms)

@@ -1,43 +1,46 @@
 ---
-title: ПИН-коды карт Xamarin. Forms
-description: В этой статье объясняется, как создавать ПИН-коды на карте Xamarin. Forms.
-ms.prod: xamarin
-ms.assetid: F8FC081B-A811-4FBB-B8F8-30D6FD36BD40
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/23/2019
-ms.openlocfilehash: 3df78a7c8eaf12306ade182f134f8d294d203af5
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+title: Xamarin.FormsКонтакты карт
+description: В этой статье объясняется, как создавать ПИН-коды на Xamarin.Forms карте.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5e22888291a430863b8e45ee21d359a5acec750f
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82517589"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138441"
 ---
-# <a name="xamarinforms-map-pins"></a>ПИН-коды карт Xamarin. Forms
+# <a name="xamarinforms-map-pins"></a>Xamarin.FormsКонтакты карт
 
-[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
-Элемент управления Xamarin. [`Map`](xref:Xamarin.Forms.Maps.Map) Forms позволяет помечать расположения [`Pin`](xref:Xamarin.Forms.Maps.Pin) объектами. `Pin` — Это маркер на карте, который открывает информационное окно при касании:
+Xamarin.Forms [`Map`](xref:Xamarin.Forms.Maps.Map) Элемент управления позволяет помечать расположения [`Pin`](xref:Xamarin.Forms.Maps.Pin) объектами. `Pin`— Это маркер на карте, который открывает информационное окно при касании:
 
 [![Снимок экрана: ПИН-код и информационное окно на устройстве iOS и Android](pins-images/pin-and-information-window.png "Отображение ПИН-кода с помощью окна сведений")](pins-images/pin-and-information-window-large.png#lightbox "Отображение ПИН-кода с помощью окна сведений")
 
-При добавлении [`Pin`](xref:Xamarin.Forms.Maps.Pin) объекта в [`Map.Pins`](xref:Xamarin.Forms.Maps.Pin) коллекцию на карте отображается ПИН-код.
+При [`Pin`](xref:Xamarin.Forms.Maps.Pin) добавлении объекта в [`Map.Pins`](xref:Xamarin.Forms.Maps.Pin) коллекцию на карте отображается ПИН-код.
 
-[`Pin`](xref:Xamarin.Forms.Maps.Pin) Класс имеет следующие свойства:
+[`Pin`](xref:Xamarin.Forms.Maps.Pin)Класс имеет следующие свойства:
 
-- [`Address`](xref:Xamarin.Forms.Maps.Pin.Address)Тип `string`, который обычно представляет адрес для расположения ПИН-кода. Однако это может быть любое `string` содержимое, а не только адрес.
-- [`Label`](xref:Xamarin.Forms.Maps.Pin.Label)Тип `string`, который обычно представляет заголовок ПИН-кода.
-- [`Position`](xref:Xamarin.Forms.Maps.Pin.Position)Тип [`Position`](xref:Xamarin.Forms.Maps.Position), который представляет широту и долготу ПИН-кода.
-- [`Type`](xref:Xamarin.Forms.Maps.Pin.Type)Тип [`PinType`](xref:Xamarin.Forms.Maps.PinType), который представляет тип ПИН-кода.
+- [`Address`](xref:Xamarin.Forms.Maps.Pin.Address)Тип `string` , который обычно представляет адрес для расположения ПИН-кода. Однако это может быть любое `string` содержимое, а не только адрес.
+- [`Label`](xref:Xamarin.Forms.Maps.Pin.Label)Тип `string` , который обычно представляет заголовок ПИН-кода.
+- [`Position`](xref:Xamarin.Forms.Maps.Pin.Position)Тип [`Position`](xref:Xamarin.Forms.Maps.Position) , который представляет широту и долготу ПИН-кода.
+- [`Type`](xref:Xamarin.Forms.Maps.Pin.Type)Тип [`PinType`](xref:Xamarin.Forms.Maps.PinType) , который представляет тип ПИН-кода.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что `Pin` может быть целевым объектом привязок данных. Дополнительные сведения об объектах привязки `Pin` данных см. в разделе [Отображение коллекции закрепления](#display-a-pin-collection).
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что `Pin` может быть целевым объектом привязок данных. Дополнительные сведения об объектах привязки данных `Pin` см. [в разделе Отображение коллекции закрепления](#display-a-pin-collection).
 
-Кроме того [`Pin`](xref:Xamarin.Forms.Maps.Pin) , класс определяет `MarkerClicked` и `InfoWindowClicked` события. `MarkerClicked` Событие возникает при касании ПИН-кода, а `InfoWindowClicked` событие возникает при касании информационного окна. `PinClickedEventArgs` Объект, сопровождающий оба события, имеет одно `HideInfoWindow` свойство типа `bool`.
+Кроме того, [`Pin`](xref:Xamarin.Forms.Maps.Pin) класс определяет `MarkerClicked` и `InfoWindowClicked` события. `MarkerClicked`Событие возникает при касании ПИН-кода, а `InfoWindowClicked` событие возникает при касании информационного окна. `PinClickedEventArgs`Объект, сопровождающий оба события, имеет одно `HideInfoWindow` свойство типа `bool` .
 
 ## <a name="display-a-pin"></a>Отображение ПИН-кода
 
-[`Pin`](xref:Xamarin.Forms.Maps.Pin) Можно добавить [`Map`](xref:Xamarin.Forms.Maps.Map) в XAML:
+[`Pin`](xref:Xamarin.Forms.Maps.Pin)Можно добавить в [`Map`](xref:Xamarin.Forms.Maps.Map) XAML:
 
 ```xaml
 <ContentPage ...
@@ -77,7 +80,7 @@ ms.locfileid: "82517589"
 </ContentPage>
 ```
 
-Этот XAML создает [`Map`](xref:Xamarin.Forms.Maps.Map) объект, который показывает область, заданную [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) объектом. `MapSpan` Объект выравнивается по центру широты и долготы, представленные [`Position`](xref:Xamarin.Forms.Maps.Position) объектом, который расширяет 0,01 широты и долготы. [`Pin`](xref:Xamarin.Forms.Maps.Pin) Объект добавляется в [`Map.Pins`](xref:Xamarin.Forms.Maps.Pin) коллекцию и рисуется на элементе `Map` в расположении, заданном [`Position`](xref:Xamarin.Forms.Maps.Pin.Position) свойством. Сведения о структуре см [`Position`](xref:Xamarin.Forms.Maps.Position) . в разделе [Map Disposition and Distance](position-distance.md). Сведения о передаче аргументов в XAML в объекты, у которых отсутствуют конструкторы по умолчанию, см. [в разделе Передача аргументов в XAML](~/xamarin-forms/xaml/passing-arguments.md).
+Этот XAML создает [`Map`](xref:Xamarin.Forms.Maps.Map) объект, который показывает область, заданную [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) объектом. Объект выравнивается по `MapSpan` центру широты и долготы, представленные [`Position`](xref:Xamarin.Forms.Maps.Position) объектом, который расширяет 0,01 широты и долготы. [`Pin`](xref:Xamarin.Forms.Maps.Pin)Объект добавляется в [`Map.Pins`](xref:Xamarin.Forms.Maps.Pin) коллекцию и рисуется на элементе в `Map` расположении, заданном [`Position`](xref:Xamarin.Forms.Maps.Pin.Position) свойством. Сведения о [`Position`](xref:Xamarin.Forms.Maps.Position) структуре см. в разделе [Map Disposition and Distance](position-distance.md). Сведения о передаче аргументов в XAML в объекты, у которых отсутствуют конструкторы по умолчанию, см. [в разделе Передача аргументов в XAML](~/xamarin-forms/xaml/passing-arguments.md).
 
 Эквивалентный код на C# выглядит так:
 
@@ -99,7 +102,7 @@ map.Pins.Add(pin);
 ```
 
 > [!WARNING]
-> Если [`Pin.Label`](xref:Xamarin.Forms.Maps.Pin.Label) [`Pin`](xref:Xamarin.Forms.Maps.Pin) не установить свойство, будет [`Map`](xref:Xamarin.Forms.Maps.Map) `ArgumentException` выдано исключение при добавлении в.
+> [`Pin.Label`](xref:Xamarin.Forms.Maps.Pin.Label)Если не установить свойство, будет `ArgumentException` выдано исключение при [`Pin`](xref:Xamarin.Forms.Maps.Pin) добавлении в [`Map`](xref:Xamarin.Forms.Maps.Map) .
 
 Этот пример кода приводит к отображению одного ПИН-кода на карте:
 
@@ -113,9 +116,9 @@ map.Pins.Add(pin);
 
 Если коснуться на карте, окно сведений закрывается.
 
-[`Pin`](xref:Xamarin.Forms.Maps.Pin) Класс определяет `MarkerClicked` событие, которое срабатывает при `Pin` касании. Нет необходимости в обработке этого события для вывода информационного окна. Вместо этого это событие должно быть обработано при наличии требования, чтобы получать уведомления о касании определенного ПИН-кода.
+[`Pin`](xref:Xamarin.Forms.Maps.Pin)Класс определяет `MarkerClicked` событие, которое срабатывает при `Pin` касании. Нет необходимости в обработке этого события для вывода информационного окна. Вместо этого это событие должно быть обработано при наличии требования, чтобы получать уведомления о касании определенного ПИН-кода.
 
-[`Pin`](xref:Xamarin.Forms.Maps.Pin) Класс также определяет `InfoWindowClicked` событие, которое возникает при касании информационного окна. Это событие должно быть обработано при наличии требования, чтобы получать уведомления о касании конкретного информационного окна.
+[`Pin`](xref:Xamarin.Forms.Maps.Pin)Класс также определяет `InfoWindowClicked` событие, которое возникает при касании информационного окна. Это событие должно быть обработано при наличии требования, чтобы получать уведомления о касании конкретного информационного окна.
 
 В следующем коде показан пример обработки этих событий:
 
@@ -150,11 +153,11 @@ wharfPin.InfoWindowClicked += async (s, args) =>
 };
 ```
 
-`PinClickedEventArgs` Объект, сопровождающий оба события, имеет одно `HideInfoWindow` свойство типа `bool`. Если это свойство имеет значение `true` внутри обработчика событий, окно сведений будет скрыто.
+`PinClickedEventArgs`Объект, сопровождающий оба события, имеет одно `HideInfoWindow` свойство типа `bool` . Если это свойство имеет значение `true` внутри обработчика событий, окно сведений будет скрыто.
 
 ## <a name="pin-types"></a>Типы ПИН-кодов
 
-[`Pin`](xref:Xamarin.Forms.Maps.Pin)объекты включают [`Type`](xref:Xamarin.Forms.Maps.Pin.Type) свойство типа [`PinType`](xref:Xamarin.Forms.Maps.PinType), представляющее тип ПИН-кода. Перечисление `PinType` определяет следующие члены:
+[`Pin`](xref:Xamarin.Forms.Maps.Pin)объекты включают [`Type`](xref:Xamarin.Forms.Maps.Pin.Type) свойство типа [`PinType`](xref:Xamarin.Forms.Maps.PinType) , представляющее тип ПИН-кода. Перечисление `PinType` определяет следующие члены:
 
 - `Generic`представляет универсальный ПИН-код.
 - `Place`, представляет ПИН-код для места.
@@ -165,16 +168,16 @@ wharfPin.InfoWindowClicked += async (s, args) =>
 
 ## <a name="display-a-pin-collection"></a>Отображение коллекции закрепленных элементов
 
-[`Map`](xref:Xamarin.Forms.Maps.Map) Класс определяет следующие свойства:
+[`Map`](xref:Xamarin.Forms.Maps.Map)Класс определяет следующие свойства:
 
-- [`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource)Тип `IEnumerable`, который указывает коллекцию `IEnumerable` элементов для отображения.
-- [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate)Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), который задает объект [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , применяемый к каждому элементу в коллекции отображаемых элементов.
-- `ItemTemplateSelector`Тип [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector), который указывает [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) , который будет использоваться для выбора [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) элемента во время выполнения.
+- [`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource)Тип `IEnumerable` , который указывает коллекцию `IEnumerable` элементов для отображения.
+- [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate)Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , который задает объект, [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) применяемый к каждому элементу в коллекции отображаемых элементов.
+- `ItemTemplateSelector`Тип [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) , который указывает [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) , который будет использоваться для выбора [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) элемента во время выполнения.
 
 > [!IMPORTANT]
-> [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate) Свойство имеет приоритет, если заданы `ItemTemplate` свойства `ItemTemplateSelector` и.
+> [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate)Свойство имеет приоритет, если `ItemTemplate` `ItemTemplateSelector` заданы свойства и.
 
-Можно [`Map`](xref:Xamarin.Forms.Maps.Map) заполнить ПИН-кодов с помощью привязки данных, чтобы привязать его [`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource) свойство к `IEnumerable` коллекции:
+[`Map`](xref:Xamarin.Forms.Maps.Map)Можно заполнить ПИН-кодов с помощью привязки данных, чтобы привязать его [`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource) свойство к `IEnumerable` коллекции:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -198,17 +201,17 @@ wharfPin.InfoWindowClicked += async (s, args) =>
 </ContentPage>
 ```
 
-Данные [`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource) свойства привязываются к `Locations` свойству подключенного ViewModel, который возвращает `ObservableCollection` коллекцию `Location` объектов, которая является пользовательским типом. Каждый `Location` объект определяет `Address` и `Description` свойства типа `string`и `Position` свойства типа. [`Position`](xref:Xamarin.Forms.Maps.Position)
+[`ItemsSource`](xref:Xamarin.Forms.Maps.Map.ItemsSource)Данные свойства привязываются к `Locations` свойству подключенного ViewModel, который возвращает `ObservableCollection` коллекцию `Location` объектов, которая является пользовательским типом. Каждый `Location` объект определяет `Address` и `Description` свойства типа и `string` `Position` свойства типа [`Position`](xref:Xamarin.Forms.Maps.Position) .
 
-Внешний вид каждого элемента `IEnumerable` в коллекции определяется путем присвоения [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate) свойству значения [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , содержащего [`Pin`](xref:Xamarin.Forms.Maps.Pin) объект, который привязывает данные к соответствующим свойствам.
+Внешний вид каждого элемента в `IEnumerable` коллекции определяется путем присвоения [`ItemTemplate`](xref:Xamarin.Forms.Maps.Map.ItemTemplate) свойству значения [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , содержащего [`Pin`](xref:Xamarin.Forms.Maps.Pin) объект, который привязывает данные к соответствующим свойствам.
 
-На следующих снимках экрана [`Map`](xref:Xamarin.Forms.Maps.Map) показано, [`Pin`](xref:Xamarin.Forms.Maps.Pin) как отобразить коллекцию с помощью привязки данных:
+На следующих снимках экрана показано, как отобразить [`Map`](xref:Xamarin.Forms.Maps.Map) [`Pin`](xref:Xamarin.Forms.Maps.Pin) коллекцию с помощью привязки данных:
 
 [![Снимок экрана с привязками к данным в iOS и Android](pins-images/pins-itemsource.png "Сопоставьте с закрепленными данными")](pins-images/pins-itemsource-large.png#lightbox "Сопоставьте с закрепленными данными")
 
 ### <a name="choose-item-appearance-at-runtime"></a>Выбор внешнего вида элемента во время выполнения
 
-Внешний вид каждого элемента в `IEnumerable` коллекции можно выбрать во время выполнения на основе значения элемента, задав для `ItemTemplateSelector` свойства значение. [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector)
+Внешний вид каждого элемента в `IEnumerable` коллекции можно выбрать во время выполнения на основе значения элемента, задав `ItemTemplateSelector` для свойства значение [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) .
 
 ```xaml
 <ContentPage ...
@@ -259,16 +262,16 @@ public class MapItemTemplateSelector : DataTemplateSelector
 }
 ```
 
-`MapItemTemplateSelector` Класс определяет `DefaultTemplate` свойства и `XamarinTemplate` [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , для которых установлены разные шаблоны данных. `OnSelectTemplate` Метод возвращает `XamarinTemplate`, который отображает Xamarin в качестве метки при `Pin` касании, если элемент имеет адрес, содержащий "Сан-Франциско". Если у элемента нет адреса, содержащего "Сан Франциско", `OnSelectTemplate` метод возвращает. `DefaultTemplate`
+`MapItemTemplateSelector`Класс определяет `DefaultTemplate` Свойства и `XamarinTemplate` [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , для которых установлены разные шаблоны данных. `OnSelectTemplate`Метод возвращает `XamarinTemplate` , который отображает Xamarin в качестве метки при `Pin` касании, если элемент имеет адрес, содержащий "Сан-Франциско". Если у элемента нет адреса, содержащего "Сан Франциско", `OnSelectTemplate` метод возвращает `DefaultTemplate` .
 
 > [!NOTE]
 > Вариант использования для этой функции — Привязка свойств вложенных классов [`Pin`](xref:Xamarin.Forms.Maps.Pin) объектов к различным свойствам на основе `Pin` подтипа.
 
-Дополнительные сведения о селекторах шаблонов данных см. [в разделе Создание DataTemplateSelector Xamarin. Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md).
+Дополнительные сведения о селекторах шаблонов данных см. [в разделе Создание Xamarin.Forms DataTemplateSelector](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Пример Maps](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 - [Преобразование пользовательского модуля подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/map-pin.md)
 - [Передача аргументов в XAML](~/xamarin-forms/xaml/passing-arguments.md)
-- [Создание DataTemplateSelector в Xamarin.Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md)
+- [Создание Xamarin.Forms DataTemplateSelector](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md)

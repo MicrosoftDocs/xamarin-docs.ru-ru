@@ -1,24 +1,27 @@
 ---
-title: Повышение прав Висуалелемент в Android
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая управляет повышением уровня Висуалелементс в приложениях, предназначенных для API 21 или более поздней версии.
-ms.prod: xamarin
-ms.assetid: 5BFD6175-2BBD-41CD-B8F9-521B4750B708
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/10/2018
-ms.openlocfilehash: 243e351f29b056a6d4a567b8e39240a87f37aec2
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 48060356014dc7600518b5de555ad3f346c50c35
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68651882"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84128548"
 ---
 # <a name="visualelement-elevation-on-android"></a>Повышение прав Висуалелемент в Android
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Эта платформа для Android используется для управления повышением или Z-порядком визуальных элементов в приложениях, предназначенных для API 21 или более поздней версии. Повышение прав визуальный элемент, определяет порядок его отображения, с помощью визуальных элементов с более высоким значением Z, occluding визуальные элементы с более низкие значения Z. Он используется в XAML, задав `VisualElement.Elevation` вложенное свойство, чтобы `boolean` значение:
+Эта платформа для Android используется для управления повышением или Z-порядком визуальных элементов в приложениях, предназначенных для API 21 или более поздней версии. Повышение уровня визуального элемента определяет его порядок отображения, при этом визуальные элементы с более высоким значением Z окклудинг визуальные элементы с более низкими значениями Z. Он используется в XAML путем присвоения `VisualElement.Elevation` свойству присоединенного свойства `boolean` значения:
 
 ```xaml
 <ContentPage ...
@@ -37,7 +40,7 @@ ms.locfileid: "68651882"
 </ContentPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -79,15 +82,15 @@ public class AndroidElevationPageCS : ContentPage
 }
 ```
 
-`Button.On<Android>` Метод указывает, что этой платформы будет выполняться только в Android. `VisualElement.SetElevation` Метод в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространства имен, используемый для задания высоту данного визуального элемента значения NULL `float`. Кроме того `VisualElement.GetElevation` метод может использоваться для получения значения повышение прав визуальный элемент.
+`Button.On<Android>`Метод указывает, что эта платформа будет запускаться только в Android. `VisualElement.SetElevation`Метод в [`Xamarin.Forms.PlatformConfiguration.AndroidSpecific`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространстве имен используется для установки повышения уровня визуального элемента до значения NULL `float` . Кроме того, `VisualElement.GetElevation` метод можно использовать для получения значения повышения прав визуального элемента.
 
-Результатом является то, что повышение прав визуальных элементов можно управлять таким образом, чтобы визуальные элементы с более высоким значением Z скрывать визуальные элементы с более низкие значения Z. Таким образом, в этом примере второй [ `Button` ](xref:Xamarin.Forms.Button) отображается над [ `BoxView` ](xref:Xamarin.Forms.BoxView) так как он имеет более высокое значение повышения прав:
+В результате повышение уровня визуальных элементов может быть управляемым, чтобы визуальные элементы с более высоким значением Z окклуде визуальные элементы с более низкими значениями Z. Таким образом, в этом примере вторая отображается [`Button`](xref:Xamarin.Forms.Button) над, [`BoxView`](xref:Xamarin.Forms.BoxView) так как имеет более высокое значение повышения прав:
 
 ![](visualelement-elevation-images/elevation.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API АндроидспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific)
 - [АндроидспеЦифик. AppCompat API](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat)

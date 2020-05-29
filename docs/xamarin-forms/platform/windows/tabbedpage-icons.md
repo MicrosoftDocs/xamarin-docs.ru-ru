@@ -1,24 +1,27 @@
 ---
-title: Значки Таббедпаже в Windows
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Windows, которая позволяет отображать значки страниц на панели инструментов Таббедпаже.
-ms.prod: xamarin
-ms.assetid: 7C5031A5-74EE-4469-994E-BEA7BA9D33CB
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/24/2018
-ms.openlocfilehash: a40203e4d01f45ef36ee6988198400a259600aac
-ms.sourcegitcommit: 1e3a0d853669dcc57d5dee0894d325d40c7d8009
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f6db5014050ad3f037869120d017e51803a7c48f
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70198094"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136543"
 ---
 # <a name="tabbedpage-icons-on-windows"></a>Значки Таббедпаже в Windows
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Этот универсальная платформа Windows, зависящий от платформы, позволяет отображать значки страниц на [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) панели инструментов и позволяет дополнительно указывать размер значка. Он используется в XAML, задав [ `TabbedPage.HeaderIconsEnabled` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.HeaderIconsEnabledProperty) вложенное свойство, чтобы `true`и при необходимости задавая [ `TabbedPage.HeaderIconsSize` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.HeaderIconsSizeProperty) вложенное свойство, чтобы [ `Size` ](xref:Xamarin.Forms.Size) значение:
+Этот универсальная платформа Windows, зависящий от платформы, позволяет отображать значки страниц на [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) панели инструментов и позволяет дополнительно указывать размер значка. Он используется в XAML путем присвоения [`TabbedPage.HeaderIconsEnabled`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.HeaderIconsEnabledProperty) присоединенному свойству `true` значения, а также при необходимости установки [`TabbedPage.HeaderIconsSize`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.HeaderIconsSizeProperty) присоединенного свойства в [`Size`](xref:Xamarin.Forms.Size) значение:
 
 ```xaml
 <TabbedPage ...
@@ -44,7 +47,7 @@ ms.locfileid: "70198094"
 </TabbedPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -65,16 +68,16 @@ public class WindowsTabbedPageIconsCS : Xamarin.Forms.TabbedPage
 }
 ```
 
-`TabbedPage.On<Windows>` Метод указывает, что этой платформы будет выполняться только на универсальной платформе Windows. [ `TabbedPage.SetHeaderIconsEnabled` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.SetHeaderIconsEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.TabbedPage},System.Boolean)) Метод в [ `Xamarin.Forms.PlatformConfiguration.WindowsSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific) используется пространство имен, включить или отключить значки заголовка. [ `TabbedPage.SetHeaderIconsSize` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.SetHeaderIconsSize(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Windows,Xamarin.Forms.TabbedPage},Xamarin.Forms.Size)) Метод при необходимости указывает размер значка заголовка с [ `Size` ](xref:Xamarin.Forms.Size) значение.
+`TabbedPage.On<Windows>`Метод указывает, что данная платформа будет запускаться только на универсальная платформа Windows. [ `TabbedPage.SetHeaderIconsEnabled` ] (Xref: Xamarin.Forms . Платформконфигуратион. ВиндовсспеЦифик. Таббедпаже. Сесеадериконсенаблед ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Windows, Xamarin.Forms . Таббедпаже}, System. Boolean)) в [`Xamarin.Forms.PlatformConfiguration.WindowsSpecific`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific) пространстве имен используется для включения или отключения значков заголовка. [ `TabbedPage.SetHeaderIconsSize` ] (Xref: Xamarin.Forms . Платформконфигуратион. ВиндовсспеЦифик. Таббедпаже. Сесеадериконссизе ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Windows, Xamarin.Forms . Таббедпаже}, Xamarin.Forms . Size)) метод, при необходимости, задает размер значка заголовка со [`Size`](xref:Xamarin.Forms.Size) значением.
 
-Кроме того `TabbedPage` в класс `Xamarin.Forms.PlatformConfiguration.WindowsSpecific` пространство имен также содержит [ `EnableHeaderIcons` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.EnableHeaderIcons*) метод, позволяющий значки заголовка [ `DisableHeaderIcons` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.DisableHeaderIcons*) метод, который отключает значки заголовка и [ `IsHeaderIconsEnabled` ](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.IsHeaderIconsEnabled*) метод, возвращающий `boolean` значение, указывающее, включены ли значки заголовка.
+Кроме `TabbedPage` того, класс в `Xamarin.Forms.PlatformConfiguration.WindowsSpecific` пространстве имен также имеет [`EnableHeaderIcons`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.EnableHeaderIcons*) метод, который включает значки заголовка, [`DisableHeaderIcons`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.DisableHeaderIcons*) метод, который отключает значки заголовка, и [`IsHeaderIconsEnabled`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.IsHeaderIconsEnabled*) метод, возвращающий `boolean` значение, которое указывает, включены ли значки заголовка.
 
-Результатом является страницы могут отображаться значки [ `TabbedPage` ](xref:Xamarin.Forms.TabbedPage) панель инструментов с размер значка, при необходимости задать требуемый размер:
+В результате значки страницы могут отображаться на [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) панели инструментов с размером значка, который при необходимости имеет желаемый размер:
 
-![TabbedPage значков с поддержкой платформы](tabbedpage-icons-images/tabbedpage-icons.png "TabbedPage значков с поддержкой платформы")
+![Значки Таббедпаже, связанные с платформой](tabbedpage-icons-images/tabbedpage-icons.png "Значки Таббедпаже, связанные с платформой")
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ВиндовсспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific)

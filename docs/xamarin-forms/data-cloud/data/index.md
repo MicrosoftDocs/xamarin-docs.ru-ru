@@ -1,25 +1,28 @@
 ---
-title: Xamarin.Forms локального хранения данных
-description: Узнайте, как для выполнения обработки из общего кода Xamarin.Forms файлов и как для чтения и записи данных в локальную базу данных SQLite, используя для SQLite.Net.
-ms.prod: xamarin
-ms.assetid: A324C247-7DA8-4B14-A813-25F85525E32B
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 06/27/2019
-ms.openlocfilehash: 585b55b79046af07e466fb25b33f4c22c2ec5e5b
-ms.sourcegitcommit: c1d85b2c62ad84c22bdee37874ad30128581bca6
+title: Xamarin.Formsлокальное хранилище данных
+description: Узнайте, как выполнять обработку файлов из общего Xamarin.Forms кода и как считывать и записывать данные в локальную базу данных SQLite с помощью SQLite.NET.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 997a659dd01e410f791af28d1b657055296081c8
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67659071"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84127118"
 ---
-# <a name="xamarinforms-local-data-storage"></a>Xamarin.Forms локального хранения данных
+# <a name="xamarinforms-local-data-storage"></a>Xamarin.Formsлокальное хранилище данных
 
-## <a name="filesfilesmd"></a>[Файлы](files.md)
+## <a name="files"></a>[Файлы](files.md)
 
-Обработку файлов в Xamarin.Forms можно выполнить с помощью кода в библиотеке .NET Standard или внедренных ресурсов. В этой статье объясняется, как для выполнения обработки из общего кода в приложении Xamarin.Forms файлов.
+Обработка файлов в Xamarin.Forms среде может быть достигнута с помощью кода в библиотеке .NET Standard или с помощью внедренных ресурсов. В этой статье объясняется, как выполнять обработку файлов из общего кода в Xamarin.Forms приложении.
 
-## <a name="local-databasesdatabasesmd"></a>[Локальные базы данных](databases.md)
+## <a name="local-databases"></a>[Локальные базы данных](databases.md)
 
-Xamarin.Forms поддерживает приложения на основе базы данных с использованием ядра СУБД SQLite, которое позволяет загружать и сохранять объекты в общем коде. В этой статье описывается, как приложения Xamarin.Forms считывают данные из локальной базы данных SQLite и записывают данные в нее с помощью SQLite.Net.
+Xamarin.Formsподдерживает приложения, управляемые базой данных, с помощью обработчика базы данных SQLite, что дает возможность загружать и сохранять объекты в общем коде. В этой статье описывается Xamarin.Forms , как приложения могут считывать и записывать данные в локальную базу данных SQLite с помощью SQLite.NET.

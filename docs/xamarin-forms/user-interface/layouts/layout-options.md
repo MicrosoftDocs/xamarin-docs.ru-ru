@@ -1,33 +1,36 @@
 ---
-title: Параметры макета в Xamarin.Forms
-description: Каждое представление Xamarin.Forms имеет HorizontalOptions и VerticalOptions свойства, типа LayoutOptions. В этой статье объясняется влияние каждого значения LayoutOptions на выравнивание и расширения представления.
-ms.prod: xamarin
-ms.assetid: 7CAB5631-5153-4DEF-8AD7-C6011CE44307
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/10/2017
-ms.openlocfilehash: 63c8cb285c51d7c10e2109c9d0b7cffbd0fb0898
-ms.sourcegitcommit: 57f815bf0024b1afe9754c0e28054fc0a53ce302
+title: Параметры макета вXamarin.Forms
+description: Каждое Xamarin.Forms представление имеет свойства хоризонталоптионс и вертикалоптионс типа LayoutOptions. В этой статье объясняется, как каждое значение LayoutOptions имеет выравнивание и расширение представления.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 17f4e76f9bef71352cabddfba9397e95bcdd24d3
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70770335"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138038"
 ---
-# <a name="layout-options-in-xamarinforms"></a>Параметры макета в Xamarin.Forms
+# <a name="layout-options-in-xamarinforms"></a>Параметры макета вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layoutoptions)
 
-_Каждое представление Xamarin.Forms имеет HorizontalOptions и VerticalOptions свойства, типа LayoutOptions. В этой статье объясняется влияние каждого значения LayoutOptions на выравнивание и расширения представления._
+_Каждое Xamarin.Forms представление имеет свойства хоризонталоптионс и вертикалоптионс типа LayoutOptions. В этой статье объясняется, как каждое значение LayoutOptions имеет выравнивание и расширение представления._
 
 ## <a name="overview"></a>Обзор
 
-[ `LayoutOptions` ](xref:Xamarin.Forms.LayoutOptions) Структура инкапсулирует две настройки компоновки:
+[`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions)Структура инкапсулирует два предпочтения макета:
 
-- **Выравнивание** — представление предпочитаемые выравнивания, который определяет его положение и размер в рамках его родительского макета.
-- **Расширения** — используется только [ `StackLayout` ](xref:Xamarin.Forms.StackLayout)и указывает, если представление следует использовать дополнительное пространство, если таковой имеется.
+- **Выравнивание** — предпочтительное выравнивание представления, которое определяет его положение и размер в родительском макете.
+- **Расширение** — используется только в [`StackLayout`](xref:Xamarin.Forms.StackLayout) и указывает, должно ли представление использовать дополнительное пространство, если оно доступно.
 
-Эти параметры макета могут применяться к [ `View` ](xref:Xamarin.Forms.View)относительно своего родительского элемента, задав [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) или [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) свойство `View` к одному из открытого поля из [ `LayoutOptions` ](xref:Xamarin.Forms.LayoutOptions) структуры. Открытые поля, как показано ниже:
+Эти параметры макета можно применить к [`View`](xref:Xamarin.Forms.View) объекту относительно его родителя, установив [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойство или объекта в `View` одно из открытых полей [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) структуры. Доступны следующие открытые поля:
 
 - [`Start`](xref:Xamarin.Forms.LayoutOptions.Start)
 - [`Center`](xref:Xamarin.Forms.LayoutOptions.Center)
@@ -38,32 +41,32 @@ _Каждое представление Xamarin.Forms имеет HorizontalOpti
 - [`EndAndExpand`](xref:Xamarin.Forms.LayoutOptions.EndAndExpand)
 - [`FillAndExpand`](xref:Xamarin.Forms.LayoutOptions.FillAndExpand)
 
-`Start`, `Center`, `End`, И `Fill` поля используются для определения представления выравнивания в макете родительского:
+`Start`Поля, `Center` , `End` и `Fill` используются для определения выравнивания представления в родительском макете.
 
-- Для горизонтального выравнивания [ `Start` ](xref:Xamarin.Forms.LayoutOptions.Start) позиций [ `View` ](xref:Xamarin.Forms.View) левой стороны родительского макета, а также для вертикального выравнивания, оно располагает `View` в верхней части родительского макета.
-- Для горизонтального и вертикального выравнивания [ `Center` ](xref:Xamarin.Forms.LayoutOptions.Center) горизонтальное или вертикальное выравнивание [ `View` ](xref:Xamarin.Forms.View).
-- Для горизонтального выравнивания [ `End` ](xref:Xamarin.Forms.LayoutOptions.End) позиций [ `View` ](xref:Xamarin.Forms.View) правой стороны родительского макета, а также для вертикального выравнивания, оно располагает `View` внизу родительского макета.
-- Для горизонтального выравнивания [ `Fill` ](xref:Xamarin.Forms.LayoutOptions.Fill) гарантирует, что [ `View` ](xref:Xamarin.Forms.View) заполняет ширина родительского макета и выравнивание по вертикали, это гарантирует, что `View` заполняет Высота родительского макета.
+- Для горизонтального выравнивания [`Start`](xref:Xamarin.Forms.LayoutOptions.Start) размещается в [`View`](xref:Xamarin.Forms.View) левой части родительского макета, а для вертикального выравнивания — в верхней части `View` родительского макета.
+- Для горизонтального и вертикального выравнивания по [`Center`](xref:Xamarin.Forms.LayoutOptions.Center) горизонтали или по вертикали разцентрированы [`View`](xref:Xamarin.Forms.View) .
+- Для горизонтального выравнивания [`End`](xref:Xamarin.Forms.LayoutOptions.End) размещается в [`View`](xref:Xamarin.Forms.View) правой части родительского макета, а для вертикального выравнивания — в нижней части `View` родительского макета.
+- Для выравнивания по горизонтали [`Fill`](xref:Xamarin.Forms.LayoutOptions.Fill) обеспечивает [`View`](xref:Xamarin.Forms.View) Заполнение ширины родительского макета, а для вертикального выравнивания обеспечивает `View` Заполнение высоты родительского макета.
 
-`StartAndExpand`, `CenterAndExpand`, `EndAndExpand`, И `FillAndExpand` значения используются для определения настроек выравнивание, и ли представление будет занимать больше места, если он доступен в родительском элементе [ `StackLayout` ](xref:Xamarin.Forms.StackLayout).
+`StartAndExpand`Значения, `CenterAndExpand` , `EndAndExpand` и `FillAndExpand` используются для определения параметров выравнивания и того, будет ли представление занимать больше места, если оно доступно в пределах родителя [`StackLayout`](xref:Xamarin.Forms.StackLayout) .
 
 > [!NOTE]
-> Значение по умолчанию представления [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) и [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) свойства [ `LayoutOptions.Fill` ](xref:Xamarin.Forms.LayoutOptions.Fill).
+> Значение по умолчанию свойств представления [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) и [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) — [`LayoutOptions.Fill`](xref:Xamarin.Forms.LayoutOptions.Fill).
 
 <a name="alignment" />
 
 ## <a name="alignment"></a>Выравнивание
 
-Выравнивание элементов управления, как представление будет располагаться в его родительской структуры при макета родительского содержит неиспользованное пространство (то есть родительского макета больше, чем общий размер всех его дочерних узлов).
+Выравнивание управляет порядком расположения представления в родительском макете, если родительский макет содержит неиспользуемое пространство (то есть размер родительского макета больше, чем общий размер всех его дочерних элементов).
 
-Объект [ `StackLayout` ](xref:Xamarin.Forms.StackLayout) только учитывает `Start`, `Center`, `End`, и `Fill` [ `LayoutOptions` ](xref:Xamarin.Forms.LayoutOptions) поля на дочерние представления, которые находятся в обратном направлении Чтобы `StackLayout` ориентации. Таким образом, дочерним представлениям в вертикально ориентирован `StackLayout` можно задать их [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) свойств с одним из `Start`, `Center`, `End`, или `Fill` полей. Аналогичным образом, дочерним представлениям в горизонтальном `StackLayout` можно задать их [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) свойств с одним из `Start`, `Center`, `End`, или `Fill` полей.
+Объект [`StackLayout`](xref:Xamarin.Forms.StackLayout) учитывает только `Start` `Center` поля,, `End` и `Fill` [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) дочерних представлений, которые находятся в противоположном направлении к `StackLayout` ориентации. Таким образом, дочерние представления в вертикально-ориентированном режиме `StackLayout` могут задавать [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) для их свойств одно из `Start` полей,, `Center` `End` или `Fill` . Аналогичным образом, дочерние представления в горизонтально-ориентированном режиме `StackLayout` могут задавать [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) для их свойств одно из `Start` полей,, `Center` `End` или `Fill` .
 
-Объект [ `StackLayout` ](xref:Xamarin.Forms.StackLayout) не учитывает `Start`, `Center`, `End`, и `Fill` [ `LayoutOptions` ](xref:Xamarin.Forms.LayoutOptions) поля на дочерние представления, которые находятся в направлении `StackLayout` ориентации. Таким образом, вертикальный `StackLayout` игнорирует `Start`, `Center`, `End`, или `Fill` поля, если они настроены на [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) свойства дочерних представлений. Аналогичным образом, горизонтальный `StackLayout` игнорирует `Start`, `Center`, `End`, или `Fill` поля, если они настроены на [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) свойства дочерних представлений.
+Не [`StackLayout`](xref:Xamarin.Forms.StackLayout) учитывает `Start` `Center` поля,, `End` и `Fill` [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) в дочерних представлениях, которые находятся в том же направлении, что и `StackLayout` ориентация. Таким образом, вертикально `StackLayout` пропускает `Start` поля, `Center` , и, `End` `Fill` если они заданы для [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойств дочерних представлений. Аналогично, горизонтально ориентированный `StackLayout` игнорирует `Start` `Center` поля,, `End` или, `Fill` если они заданы для [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) свойств дочерних представлений.
 
 > [!NOTE]
-> [`LayoutOptions.Fill`](xref:Xamarin.Forms.LayoutOptions.Fill) Обычно переопределения размер запросы, заданные с помощью [ `HeightRequest` ](xref:Xamarin.Forms.VisualElement.HeightRequest) и [ `WidthRequest` ](xref:Xamarin.Forms.VisualElement.WidthRequest) свойства.
+> [`LayoutOptions.Fill`](xref:Xamarin.Forms.LayoutOptions.Fill)обычно переопределяет запросы размера, заданные с помощью [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) свойств и.
 
-В следующем примере кода XAML демонстрирует вертикально ориентирован [ `StackLayout` ](xref:Xamarin.Forms.StackLayout) где каждый дочерний элемент [ `Label` ](xref:Xamarin.Forms.Label) задает его [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) свойство к одному из четырех выравнивание полей [ `LayoutOptions` ](xref:Xamarin.Forms.LayoutOptions) структуры:
+В следующем примере кода XAML демонстрируется вертикальная ориентация, в [`StackLayout`](xref:Xamarin.Forms.StackLayout) которой каждый дочерний элемент [`Label`](xref:Xamarin.Forms.Label) устанавливает свое [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) свойство в одно из четырех полей выравнивания из [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) структуры:
 
 ```xaml
 <StackLayout Margin="0,20,0,0">
@@ -75,7 +78,7 @@ _Каждое представление Xamarin.Forms имеет HorizontalOpti
 </StackLayout>
 ```
 
-Ниже приведен эквивалентный код на C#:
+Эквивалентный код C# показан ниже:
 
 ```csharp
 Content = new StackLayout
@@ -91,24 +94,24 @@ Content = new StackLayout
 };
 ```
 
-Код приводит к компоновку, показанную на следующем снимке экрана:
+Код приводит к отображению макета на следующих снимках экрана:
 
-[![](layout-options-images/alignment.png "Параметры выравнивания макета")](layout-options-images/alignment-large.png#lightbox "параметры выравнивания макета")
+[![](layout-options-images/alignment.png "Alignment Layout Options")](layout-options-images/alignment-large.png#lightbox "Alignment Layout Options")
 
 <a name="expansion" />
 
-## <a name="expansion"></a>Расширения
+## <a name="expansion"></a>Вышеописан
 
-Расширения управляет ли представление будет занимать больше места, если он доступен в рамках [ `StackLayout` ](xref:Xamarin.Forms.StackLayout). Если `StackLayout` содержит неиспользованное пространство (то есть `StackLayout` больше, чем общий размер всех его дочерних элементов), неиспользуемое пространство разделяется равномерно все дочерние представления, запросить расширения, установив их [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions)или [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) свойства [ `LayoutOptions` ](xref:Xamarin.Forms.LayoutOptions) поля, которое использует `AndExpand` суффикс. Обратите внимание, что при всех пространств `StackLayout` — используется, дополнительные возможности не оказывают влияния.
+Расширение определяет, будет ли представление занимать больше места, если доступно, в [`StackLayout`](xref:Xamarin.Forms.StackLayout) . Если объект `StackLayout` содержит неиспользуемое пространство (то есть `StackLayout` больше, чем общий размер всех его дочерних элементов), неиспользуемое пространство совместно используется всеми дочерними представлениями, которые запрашивают расширение, путем задания [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойств или для [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) поля, использующего `AndExpand` суффикс. Обратите внимание, что если используется все пространство в `StackLayout` , параметры расширения не действуют.
 
-Объект [ `StackLayout` ](xref:Xamarin.Forms.StackLayout) можно развернуть только дочерние представления в направлении ориентация. Таким образом, вертикальный `StackLayout` можно развернуть дочерние представления, устанавливающие их [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) свойств с одним из `StartAndExpand`, `CenterAndExpand`, `EndAndExpand`, или `FillAndExpand` поля, если `StackLayout` содержит неиспользованное пространство. Аналогичным образом, горизонтальный `StackLayout` можно развернуть дочерние представления, устанавливающие их [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) свойств с одним из `StartAndExpand`, `CenterAndExpand`, `EndAndExpand`, или `FillAndExpand` поля, если `StackLayout` содержит неиспользованное пространство.
+[`StackLayout`](xref:Xamarin.Forms.StackLayout) может развернуть дочерние представления только в направлении своей ориентации. Таким образом, вертикально `StackLayout` может расширять дочерние представления, устанавливающие их [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойства в одно из `StartAndExpand` `CenterAndExpand` полей,, `EndAndExpand` или `FillAndExpand` , если `StackLayout` содержит неиспользуемое пространство. Аналогично, горизонтально ориентированный `StackLayout` может развернуть дочерние представления, устанавливающие их [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) свойства, в одно из `StartAndExpand` полей,, `CenterAndExpand` `EndAndExpand` или `FillAndExpand` , если `StackLayout` содержит неиспользуемое пространство.
 
-Объект [ `StackLayout` ](xref:Xamarin.Forms.StackLayout) Невозможно расширить дочерних представлений в направлении, противоположном ориентация. Таким образом, на вертикально ориентирован `StackLayout`, задание [ `HorizontalOptions` ](xref:Xamarin.Forms.View.HorizontalOptions) свойство дочернего представления, чтобы [ `StartAndExpand` ](xref:Xamarin.Forms.LayoutOptions.StartAndExpand) имеет тот же эффект, что свойства [ `Start`](xref:Xamarin.Forms.LayoutOptions.Start).
+[`StackLayout`](xref:Xamarin.Forms.StackLayout)Не может развернуть дочерние представления в направлении, противоположном его ориентации. Таким образом, по вертикали `StackLayout` Установка свойства в [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) дочернем представлении [`StartAndExpand`](xref:Xamarin.Forms.LayoutOptions.StartAndExpand) имеет тот же результат, что и присвоение свойству значения [`Start`](xref:Xamarin.Forms.LayoutOptions.Start) .
 
 > [!NOTE]
-> Обратите внимание, что включение расширения не изменяется размер представления, если он не использует [ `LayoutOptions.FillAndExpand` ](xref:Xamarin.Forms.LayoutOptions.FillAndExpand).
+> Обратите внимание, что включение расширения не изменяет размер представления, если оно не используется [`LayoutOptions.FillAndExpand`](xref:Xamarin.Forms.LayoutOptions.FillAndExpand) .
 
-В следующем примере кода XAML демонстрирует вертикально ориентирован [ `StackLayout` ](xref:Xamarin.Forms.StackLayout) где каждый дочерний элемент [ `Label` ](xref:Xamarin.Forms.Label) задает его [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) свойство одно из полей расширения [ `LayoutOptions` ](xref:Xamarin.Forms.LayoutOptions) структуры:
+В следующем примере кода XAML демонстрируется вертикальная ориентация, в [`StackLayout`](xref:Xamarin.Forms.StackLayout) которой каждый дочерний элемент [`Label`](xref:Xamarin.Forms.Label) устанавливает свое [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойство в одно из четырех полей расширения из [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) структуры:
 
 ```xaml
 <StackLayout Margin="0,20,0,0">
@@ -125,7 +128,7 @@ Content = new StackLayout
 </StackLayout>
 ```
 
-Ниже приведен эквивалентный код на C#:
+Эквивалентный код C# показан ниже:
 
 ```csharp
 Content = new StackLayout
@@ -146,15 +149,15 @@ Content = new StackLayout
 };
 ```
 
-Код приводит к компоновку, показанную на следующем снимке экрана:
+Код приводит к отображению макета на следующих снимках экрана:
 
-[![](layout-options-images/expansion.png "Параметры расширения разметки")](layout-options-images/expansion-large.png#lightbox "параметры расширения разметки")
+[![](layout-options-images/expansion.png "Expansion Layout Options")](layout-options-images/expansion-large.png#lightbox "Expansion Layout Options")
 
-Каждый [ `Label` ](xref:Xamarin.Forms.Label) занимает столько пространства в [ `StackLayout` ](xref:Xamarin.Forms.StackLayout). Тем не менее только последний `Label`, который устанавливает его [ `VerticalOptions` ](xref:Xamarin.Forms.View.VerticalOptions) свойства [ `FillAndExpand` ](xref:Xamarin.Forms.LayoutOptions.FillAndExpand) имеют разный размер. Кроме того каждый `Label` отделяется маленький красный значок [ `BoxView` ](xref:Xamarin.Forms.BoxView), что позволяет пространство `Label` занимает легко просматривать.
+Каждый из них [`Label`](xref:Xamarin.Forms.Label) занимает одинаковый объем пространства внутри [`StackLayout`](xref:Xamarin.Forms.StackLayout) . Но только последний `Label` со значением свойства [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions), равным [`FillAndExpand`](xref:Xamarin.Forms.LayoutOptions.FillAndExpand), имеет другой размер. Кроме того, каждая из них `Label` отделяется небольшим красным [`BoxView`](xref:Xamarin.Forms.BoxView) , что позволяет легко просматривать пространство, занимаемое запятыми `Label` .
 
 ## <a name="summary"></a>Сводка
 
-В этой статье описано влияние, в которых [ `LayoutOptions` ](xref:Xamarin.Forms.LayoutOptions) значения структуры зависит от того, выравнивание и расширения представления, относительно его родительского элемента. `Start`, `Center`, `End`, И `Fill` поля используются для определения представления выравнивания в макете родительский и `StartAndExpand`, `CenterAndExpand`, `EndAndExpand`, и `FillAndExpand` поля используются для определения Выравнивание предпочтения и определить ли представление будет занимать больше места, если он доступен в рамках [ `StackLayout` ](xref:Xamarin.Forms.StackLayout).
+В этой статье объясняется, [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) как каждое значение структуры имеет выравнивание и расширение представления относительно его родителя. `Start`Поля, `Center` , `End` и используются `Fill` для определения выравнивания представления в родительском макете, а `StartAndExpand` `CenterAndExpand` поля,, `EndAndExpand` и `FillAndExpand` используются для определения параметров выравнивания, а также для определения того, займет ли представление больше места, если оно доступно, в [`StackLayout`](xref:Xamarin.Forms.StackLayout) .
 
 ## <a name="related-links"></a>Связанные ссылки
 

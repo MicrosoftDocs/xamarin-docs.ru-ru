@@ -1,29 +1,32 @@
 ---
-title: Флекслайаут Xamarin. Forms
-description: Используйте Флекслайаут для наложения или упаковки коллекции дочерних представлений.
-ms.prod: xamarin
-ms.assetid: 6A91EA70-268C-462C-AAAF-F8DA011403F8
-ms.technology: xamarin-forms
-ms.custom: xamu-video
-author: davidbritch
-ms.author: dabritch
-ms.date: 05/07/2018
-ms.openlocfilehash: 507f78bf887d8d11e93a5a6a1f7d074c55e69360
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+title: Xamarin.FormsФлекслайаут
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+ms.custom: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 031a846b7546c204d45c7437acd829d6cb49bfbb
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83149972"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137219"
 ---
-# <a name="the-xamarinforms-flexlayout"></a>Флекслайаут Xamarin. Forms
+# <a name="the-xamarinforms-flexlayout"></a>Xamarin.FormsФлекслайаут
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)
 
 _Используйте Флекслайаут для наложения или упаковки коллекции дочерних представлений._
 
-Xamarin. Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) впервые помещается в Xamarin. Forms версии 3,0. Он основан на [модуле макета гибкой рамки](https://www.w3.org/TR/css-flexbox-1/)CSS, обычно известном как _Flex Layout_ или _Flex-Box_, поэтому вызывается, так как он включает множество гибких параметров для упорядочения дочерних элементов в макете.
+Xamarin.Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) Новое в Xamarin.Forms версии 3,0. Он основан на [модуле макета гибкой рамки](https://www.w3.org/TR/css-flexbox-1/)CSS, обычно известном как _Flex Layout_ или _Flex-Box_, поэтому вызывается, так как он включает множество гибких параметров для упорядочения дочерних элементов в макете.
 
-`FlexLayout`функция схожа с Xamarin. Forms [`StackLayout`](~/xamarin-forms/user-interface/layouts/stacklayout.md) в том, что она может упорядочивать дочерние элементы по горизонтали и вертикали в стеке. Тем не менее `FlexLayout` компонент также может обернуть свои дочерние элементы, если слишком много подходит для одной строки или столбца, а также имеет множество параметров ориентации, выравнивания и адаптации к различным размерам экрана.
+`FlexLayout`функция похожа на Xamarin.Forms [`StackLayout`](~/xamarin-forms/user-interface/layouts/stacklayout.md) в том, что она может упорядочивать дочерние элементы по горизонтали и вертикали в стеке. Тем не менее `FlexLayout` компонент также может обернуть свои дочерние элементы, если слишком много подходит для одной строки или столбца, а также имеет множество параметров ориентации, выравнивания и адаптации к различным размерам экрана.
 
 `FlexLayout`является производным от [`Layout<View>`](xref:Xamarin.Forms.Layout`1) и наследует [`Children`](xref:Xamarin.Forms.Layout`1.Children) свойство типа `IList<View>` .
 
@@ -68,7 +71,7 @@ Xamarin. Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) впервые по
 
 `FlexLayout`В файле **симплестаккпаже. XAML** показаны три свойства:
 
-- [`Direction`](xref:Xamarin.Forms.FlexLayout.Direction)Свойству присваивается значение [`FlexDirection`](xref:Xamarin.Forms.FlexDirection) перечисления. Значение по умолчанию — `Row`. Присвоение свойству значения `Column` приводит к тому, что дочерние элементы объекта `FlexLayout` будут упорядочены в один столбец элементов.
+- [`Direction`](xref:Xamarin.Forms.FlexLayout.Direction)Свойству присваивается значение [`FlexDirection`](xref:Xamarin.Forms.FlexDirection) перечисления. Значение по умолчанию — `Row`. Присвоение свойству значения `Column` приводит к тому, что дочерние элементы объекта `FlexLayout` будут упорядочены в один столбец элементов.
 
     Если элементы в `FlexLayout` упорядочены по столбцам, то говорят, что `FlexLayout` у элемента есть вертикальная _основная ось_ и горизонтальная _Перекрестная ось_.
 
@@ -609,11 +612,11 @@ FlexLayout.SetBasis(label, new FlexBasis(0.25f, true));
 
 ## <a name="css-styling-with-flexlayout"></a>Стилизация CSS с помощью Флекслайаут
 
-Можно использовать функцию [стилизации CSS](~/xamarin-forms/user-interface/styles/css/index.md) , представленную в Xamarin. forms 3,0 в связи с `FlexLayout` . Страница « **элементы каталога CSS** » примера **[флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** дублирует макет страницы « **элементы каталога** », но с таблицей стилей CSS для многих стилей.
+Можно использовать функцию [стилизации CSS](~/xamarin-forms/user-interface/styles/css/index.md) , представленную в Xamarin.Forms 3,0 в связи с `FlexLayout` . Страница « **элементы каталога CSS** » примера **[флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** дублирует макет страницы « **элементы каталога** », но с таблицей стилей CSS для многих стилей.
 
 [![Страница «элементы каталога CSS»](flex-layout-images/CssCatalogItems.png "Страница «элементы каталога CSS»")](flex-layout-images/CssCatalogItems-Large.png#lightbox)
 
-Исходный файл **каталогитемспаже. XAML** содержит пять `Style` определений в `Resources` разделе с 15 `Setter` объектами. В файле **ксскаталогитемспаже. XAML** , который был сокращен до двух `Style` определений с четырьмя `Setter` объектами. Эти стили дополняют таблицу стилей CSS для свойств, которые сейчас не поддерживаются в функции стилизации CSS в Xamarin. Forms:
+Исходный файл **каталогитемспаже. XAML** содержит пять `Style` определений в `Resources` разделе с 15 `Setter` объектами. В файле **ксскаталогитемспаже. XAML** , который был сокращен до двух `Style` определений с четырьмя `Setter` объектами. Эти стили дополняют таблицу стилей CSS для свойств, которые Xamarin.Forms в настоящее время не поддерживаются в функции стилизации CSS:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -738,7 +741,7 @@ button {
 
 > [!VIDEO https://youtube.com/embed/Ng3sel_5D_0]
 
-**Видео о макете Xamarin. Forms 3,0 Flex**
+**Xamarin.Formsвидео о гибком макете 3,0**
 
 ## <a name="related-links"></a>Связанные ссылки
 

@@ -1,28 +1,31 @@
 ---
-title: Геокодирование карт Xamarin. Forms
-description: В этой статье объясняется, как выполнять геокод и реверсировать данные карты геокодирования с помощью класса геокодирования Xamarin. Forms. Maps.
-ms.prod: xamarin
-ms.assetid: DE7DB31A-8921-4614-8B49-DAEF1E7B03B3
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/22/2019
-ms.openlocfilehash: 6df7a2e0056cd2d448206b56e1e9d2600b342b3b
-ms.sourcegitcommit: d0e6436edbf7c52d760027d5e0ccaba2531d9fef
+title: Xamarin.FormsГеокодирование карт
+description: В этой статье объясняется, как выполнять геокод и реверсировать данные карт геокодирования с помощью Xamarin.Forms . Сопоставляет класс геокодирования.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: fe099235857f6bd0531539e3aa84e41bf59b50ba
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75490263"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139871"
 ---
-# <a name="xamarinforms-map-geocoding"></a>Геокодирование карт Xamarin. Forms
+# <a name="xamarinforms-map-geocoding"></a>Xamarin.FormsГеокодирование карт
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
-Пространство имен [`Xamarin.Forms.Maps`](xref:Xamarin.Forms.Maps) предоставляет класс [`Geocoder`](xref:Xamarin.Forms.Maps.Geocoder) , который выполняет преобразование между строковыми адресами и координатами широты и долготы, хранящимися в [`Position`](xref:Xamarin.Forms.Maps.Position) объектах. Дополнительные сведения о структуре [`Position`](xref:Xamarin.Forms.Maps.Position) см. в разделе [Map Disposition and Distance](position-distance.md).
+[`Xamarin.Forms.Maps`](xref:Xamarin.Forms.Maps)Пространство имен предоставляет [`Geocoder`](xref:Xamarin.Forms.Maps.Geocoder) класс, который выполняет преобразование между строковыми адресами и координатами широты и долготы, хранящимися в [`Position`](xref:Xamarin.Forms.Maps.Position) объектах. Дополнительные сведения о [`Position`](xref:Xamarin.Forms.Maps.Position) структуре см. в разделе [Map Disposition and Distance](position-distance.md).
 
 ## <a name="geocode-an-address"></a>Геокодирование адреса
 
-Адрес улицы может быть геокодирован в координаты широты и долготы путем создания экземпляра [`Geocoder`](xref:Xamarin.Forms.Maps.Geocoder) и вызова метода [`GetPositionsForAddressAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetPositionsForAddressAsync*) в экземпляре `Geocoder`:
+Адрес улицы может быть геокодирован в координаты широты и долготы путем создания [`Geocoder`](xref:Xamarin.Forms.Maps.Geocoder) экземпляра и вызова [`GetPositionsForAddressAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetPositionsForAddressAsync*) метода в `Geocoder` экземпляре:
 
 ```csharp
 using Xamarin.Forms.Maps;
@@ -34,11 +37,11 @@ Position position = approximateLocations.FirstOrDefault();
 string coordinates = $"{position.Latitude}, {position.Longitude}";
 ```
 
-Метод [`GetPositionsForAddressAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetPositionsForAddressAsync*) принимает `string` аргумент, представляющий адрес, и асинхронно Возвращает коллекцию объектов [`Position`](xref:Xamarin.Forms.Maps.Position) , которые могут представлять адрес.
+[`GetPositionsForAddressAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetPositionsForAddressAsync*)Метод принимает `string` аргумент, представляющий адрес, и асинхронно Возвращает коллекцию [`Position`](xref:Xamarin.Forms.Maps.Position) объектов, которые могут представлять адрес.
 
 ## <a name="reverse-geocode-an-address"></a>Обратный геокодировании адреса
 
-Координаты широты и долготы могут быть обратными геокодированными в адрес улицы путем создания [`Geocoder`](xref:Xamarin.Forms.Maps.Geocoder) экземпляра и вызова метода [`GetAddressesForPositionAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetAddressesForPositionAsync*) в экземпляре `Geocoder`:
+Координаты широты и долготы могут быть обратными геокодированы в адрес улицы путем создания [`Geocoder`](xref:Xamarin.Forms.Maps.Geocoder) экземпляра и вызова [`GetAddressesForPositionAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetAddressesForPositionAsync*) метода в `Geocoder` экземпляре:
 
 ```csharp
 using Xamarin.Forms.Maps;
@@ -50,10 +53,10 @@ IEnumerable<string> possibleAddresses = await geoCoder.GetAddressesForPositionAs
 string address = possibleAddresses.FirstOrDefault();
 ```
 
-Метод [`GetAddressesForPositionAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetAddressesForPositionAsync*) принимает [`Position`](xref:Xamarin.Forms.Maps.Position) аргумент, состоящий из координат широты и долготы, и асинхронно Возвращает коллекцию строк, представляющих адреса, расположенные рядом с позицией.
+[`GetAddressesForPositionAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetAddressesForPositionAsync*)Метод принимает [`Position`](xref:Xamarin.Forms.Maps.Position) аргумент, состоящий из координат широты и долготы, и асинхронно Возвращает коллекцию строк, представляющих адреса, расположенные рядом с позицией.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Пример Maps](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
-- [Расположение и расстояние карт Xamarin. Forms](position-distance.md)
+- [Xamarin.FormsРасположение и расстояние на карте](position-distance.md)
 - [API-интерфейс геокодирования](xref:Xamarin.Forms.Maps.Geocoder)

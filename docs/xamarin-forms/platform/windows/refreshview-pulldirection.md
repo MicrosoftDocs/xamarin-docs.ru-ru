@@ -1,24 +1,27 @@
 ---
-title: Направление извлечения Рефрешвиев в Windows
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Windows, которая позволяет изменить направление извлечения Рефрешвиев.
-ms.prod: xamarin
-ms.assetid: 407A862B-281E-4384-9696-C0655830B84D
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 09/20/2019
-ms.openlocfilehash: cf2ab38bed7b45a48fcf0b5f86add49c0d4cc21f
-ms.sourcegitcommit: 21d8be9571a2fa89fb7d8ff0787ff4f957de0985
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 46a1b4d00b9eea276b9a3b3d5bffbdac3d31e0ef
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72697653"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136582"
 ---
-# <a name="refreshview-pull-direction-on-windows"></a>Направление извлечения Рефрешвиев в Windows
+# <a name="refreshview-pull-direction-on-windows"></a>Направление движения RefreshView в Windows
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Это универсальная платформа Windows, зависящее от платформы, позволяет изменить направление извлечения `RefreshView` в соответствии с ориентацией прокручиваемого элемента управления, отображающего данные. Он используется в XAML путем установки для свойства `RefreshView.RefreshPullDirection` BIND значения `RefreshPullDirection` перечисления:
+Этот универсальная платформа Windows зависящий от платформы, позволяет изменить направление извлечения объекта, `RefreshView` чтобы оно совпадало с ориентацией прокручиваемого элемента управления, отображающего данные. Он используется в XAML путем задания `RefreshView.RefreshPullDirection` свойству BIND значения `RefreshPullDirection` перечисления.
 
 ```xaml
 <ContentPage ...
@@ -33,7 +36,7 @@ ms.locfileid: "72697653"
  </ContentPage>
 ```
 
-Кроме того, его можно использовать с C# помощью API Fluent:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -42,16 +45,16 @@ using Xamarin.Forms.PlatformConfiguration.WindowsSpecific;
 refreshView.On<Windows>().SetRefreshPullDirection(RefreshPullDirection.LeftToRight);
 ```
 
-Метод `RefreshView.On<Windows>` указывает, что эта платформа будет запускаться только на универсальная платформа Windows. Метод `RefreshView.SetRefreshPullDirection` в пространстве имен [`Xamarin.Forms.PlatformConfiguration.WindowsSpecific`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific) используется для задания направления извлечения `RefreshView`, при этом перечисление `RefreshPullDirection` предоставляет четыре возможных значения:
+`RefreshView.On<Windows>`Метод указывает, что данная платформа будет запускаться только на универсальная платформа Windows. `RefreshView.SetRefreshPullDirection`Метод в [`Xamarin.Forms.PlatformConfiguration.WindowsSpecific`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific) пространстве имен используется для задания направления извлечения объекта `RefreshView` , при этом `RefreshPullDirection` перечисление предоставляет четыре возможных значения:
 
-- `LeftToRight` указывает, что операция извлечения слева направо инициирует обновление.
-- `TopToBottom` указывает, что операция извлечения сверху вниз инициирует обновление, а является направлением по умолчанию для `RefreshView`.
-- `RightToLeft` указывает, что операция извлечения справа налево инициирует обновление.
-- `BottomToTop` указывает, что операция извлечения снизу вверх инициирует обновление.
+- `LeftToRight`Указывает, что операция извлечения слева направо инициирует обновление.
+- `TopToBottom`Указывает, что операция извлечения сверху вниз инициирует обновление, а является направлением по умолчанию для `RefreshView` .
+- `RightToLeft`Указывает, что операция извлечения справа налево инициирует обновление.
+- `BottomToTop`Указывает, что операция извлечения снизу вверх инициирует обновление.
 
-Кроме того, можно использовать метод `GetRefreshPullDirection` для возврата текущего `RefreshPullDirection` `RefreshView`.
+Кроме того, `GetRefreshPullDirection` метод можно использовать для возврата текущего `RefreshPullDirection` объекта `RefreshView` .
 
-В результате заданная `RefreshPullDirection` применяется к `RefreshView`, чтобы задать направление извлечения, совпадающее с ориентацией прокручиваемого элемента управления, отображающего данные. На следующем снимке экрана показан `RefreshView` с `LeftToRight`ным направлением извлечения:
+В результате заданный объект `RefreshPullDirection` применяется к `RefreshView` , чтобы задать направление извлечения, совпадающее с ориентацией прокручиваемого элемента управления, отображающего данные. На следующем снимке экрана показан объект `RefreshView` с `LeftToRight` направлением извлечения:
 
 [![Снимок экрана Рефрешвиев с направлением извлечения слева направо в UWP](refreshview-pulldirection-images/refreshview-pulldirection.png "Рефрешвиев с направлением извлечения слева направо")](refreshview-pulldirection-images/refreshview-pulldirection-large.png#lightbox "Рефрешвиев с направлением извлечения слева направо")
 

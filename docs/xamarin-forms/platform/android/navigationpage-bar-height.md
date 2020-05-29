@@ -1,24 +1,27 @@
 ---
-title: Высота Навигатионпаже Bar на Android
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, устанавливающую высоту панели навигации в Навигатионпаже.
-ms.prod: xamarin
-ms.assetid: C8A73B64-FE70-408A-A72E-8AF147F0C52C
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/10/2018
-ms.openlocfilehash: 501ea85a12a6e9b8b4198e0391e7ec8a16605069
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2dcabe3c0067734250834c2927fd4cbb83906943
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68649993"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84128795"
 ---
 # <a name="navigationpage-bar-height-on-android"></a>Высота Навигатионпаже Bar на Android
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Эта платформа Android определяет высоту панели навигации на [`NavigationPage`](xref:Xamarin.Forms.NavigationPage). Он используется в XAML, задав [ `NavigationPage.BarHeight` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage.BarHeightProperty) свойство, используемое в целочисленное значение:
+Эта платформа Android определяет высоту панели навигации на [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) . Он используется в XAML путем установки [`NavigationPage.BarHeight`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage.BarHeightProperty) Свойства BIND в целочисленное значение:
 
 ```xaml
 <NavigationPage ...
@@ -28,7 +31,7 @@ ms.locfileid: "68649993"
 </NavigationPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -44,15 +47,15 @@ public class AndroidNavigationPageCS : Xamarin.Forms.NavigationPage
 }
 ```
 
-`NavigationPage.On<Android>` Метод указывает, что этой платформы будет выполняться только на совместимость приложений Android. [ `NavigationPage.SetBarHeight` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage.SetBarHeight(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.NavigationPage},System.Int32)) Метод в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat) пространства имен, используемый для задания высоту панели навигации на [ `NavigationPage` ](xref:Xamarin.Forms.NavigationPage). Кроме того [ `NavigationPage.GetBarHeight` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage.GetBarHeight(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.NavigationPage})) метод может использоваться для возврата высоту панели навигации в `NavigationPage`.
+`NavigationPage.On<Android>`Метод указывает, что эта платформа будет запускаться только на платформе с поддержкой совместимости с приложением Android. [ `NavigationPage.SetBarHeight` ] (Xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. AppCompat. Навигатионпаже. Сетбархеигхт ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Навигатионпаже}, System. Int32). в [`Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat) пространстве имен используется для задания высоты панели навигации на [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) . Кроме того, [ `NavigationPage.GetBarHeight` ] (xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. AppCompat. Навигатионпаже. Жетбархеигхт ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Навигатионпаже})). можно использовать метод, чтобы вернуть высоту панели навигации в `NavigationPage` .
 
-Результатом является, высота элемента на панели навигации [ `NavigationPage` ](xref:Xamarin.Forms.NavigationPage) можно задать:
+В результате высота панели навигации на [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) может быть задана следующим образом:
 
-![](navigationpage-bar-height-images/navigationpage-barheight.png "Высота отрезка NavigationPage навигации")
+![](navigationpage-bar-height-images/navigationpage-barheight.png "NavigationPage navigation bar height")
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API АндроидспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific)
 - [АндроидспеЦифик. AppCompat API](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat)

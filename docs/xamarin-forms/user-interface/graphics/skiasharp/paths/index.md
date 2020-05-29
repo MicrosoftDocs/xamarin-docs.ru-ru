@@ -1,56 +1,59 @@
 ---
-title: Строки и пути SkiaSharp
-description: В этой статье описывается использование SkiaSharp Рисование линий и контуры в приложениях Xamarin.Forms и демонстрирует это с помощью примера кода.
-ms.prod: xamarin
-ms.assetid: 316A15FE-383D-4D06-8641-BAC7EE7474CA
-ms.technology: xamarin-skiasharp
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/10/2017
-ms.openlocfilehash: f9964d68e33e84dff789a4ad34443782f22ea821
-ms.sourcegitcommit: 57f815bf0024b1afe9754c0e28054fc0a53ce302
+title: ''
+description: В этой статье объясняется, как использовать SkiaSharp для рисования линий и графических путей в Xamarin.Forms приложениях, а также демонстрируется пример кода.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 97c7305e59a023e65535186bbbe39a9c2b7d4c26
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70759163"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139000"
 ---
 # <a name="skiasharp-lines-and-paths"></a>Строки и пути SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-_Рисование линий и графики пути с помощью SkiaSharp_
+_Использование SkiaSharp для рисования линий и графических контуров_
 
-[Выше](~/xamarin-forms/user-interface/graphics/skiasharp/basics/index.md) продемонстрировал, SkiaSharp `SKCanvas` класс содержит несколько методов для рисования окружностей, овалы, прямоугольники, прямоугольников со скругленными углами, текст и точечные рисунки. Этот раздел и последующих разделах рассматриваются различные классы, подключенной к Создание и Подготовка к просмотру *контуры*.
+В [предыдущем разделе](~/xamarin-forms/user-interface/graphics/skiasharp/basics/index.md) было продемонстрировано, что `SKCanvas` класс SkiaSharp включает несколько методов рисования кругов, овалов, прямоугольников, скругленных прямоугольников, текста и точечных рисунков. В этом разделе и последующих разделах рассматриваются различные классы, связанные с созданием и визуализацией *графических путей*.
 
-Графический контур наиболее общий подход для рисования линий и кривых в SkiaSharp. В этом разделе описывается использование [ `SKPath` ](xref:SkiaSharp.SKPath) объектов для рисования прямых линий, а также использовать коллекцию tiny прямых линий (вызывается *ломаной линии*) для рисования кривых, которые вы можете определить точки. На одном из следующих разделов [ **пути и кривые SkiaSharp** ](../curves/index.md) обсуждаются различные виды кривых, поддерживаемых `SKPath`.
+Графический контур — это наиболее обобщенный подход к рисованию линий и кривых в SkiaSharp. В этом разделе описывается использование [`SKPath`](xref:SkiaSharp.SKPath) объекта для рисования прямых линий и использование набора маленьких прямых линий (которые называются *ломаными*линиями) для рисования кривых, которые можно определить алгоритмически. В следующем разделе, посвященном [**SkiaSharp кривых и путям**](../curves/index.md) , обсуждаются различные виды кривых, поддерживаемые `SKPath` .
 
-Все примеры программ, в этом разделе отображаются под заголовком **строки и пути** на домашней странице [ **SkiaSharpFormsDemos** ](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) программы, а затем в [ **Пути** ](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths) папку этого решения.
+Все примеры программ в этом разделе отображаются под **строками заголовка и путями** на домашней странице программы [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) и в папке [**paths**](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths) этого решения.
 
-## <a name="lines-and-stroke-capslinesmd"></a>[Линии и концы штрихов](lines.md)
+## <a name="lines-and-stroke-caps"></a>[Линии и концы штрихов](lines.md)
 
-Сведения об использовании SkiaSharp для рисования линий с ограничениями различных stroke.
+Узнайте, как использовать SkiaSharp для рисования линий с различными наконечниками штриха.
 
-## <a name="path-basicspathsmd"></a>[Основные сведения о пути](paths.md)
+## <a name="path-basics"></a>[Основные сведения о пути](paths.md)
 
-Изучите SkiaSharp `SKPath` объект для объединения линий и кривых.
+Изучите `SKPath` объект SkiaSharp для объединения линий и кривых.
 
-## <a name="the-path-fill-typesfill-typesmd"></a>[Типы заполнения пути](fill-types.md)
+## <a name="the-path-fill-types"></a>[Типы заполнения пути](fill-types.md)
 
-Обнаружение различных эффектов, поддерживаемых в средстве типы заполнения пути SkiaSharp.
+Узнайте о различных эффектах, возможных для типов заливки пути SkiaSharp.
 
-## <a name="polylines-and-parametric-equationspolylinesmd"></a>[Ломаные линии и параметрические уравнения](polylines.md)
+## <a name="polylines-and-parametric-equations"></a>[Ломаные линии и параметрические уравнения](polylines.md)
 
-Использование SkiaSharp для отрисовки любой строки, которые можно определить с помощью параметрические уравнения.
+Используйте SkiaSharp для отображения любой линии, которую можно определить с помощью параметрической формулы.
 
-## <a name="dots-and-dashesdotsmd"></a>[Точки и тире](dots.md)
+## <a name="dots-and-dashes"></a>[Точки и тире](dots.md)
 
-Освойте тонкости механизмов рисования в SkiaSharp пунктирная и пунктирных линий.
+Основные сложности рисования пунктирных и пунктирных линий в SkiaSharp.
 
-## <a name="finger-paintingfinger-paintmd"></a>[Рисование пальцами](finger-paint.md)
+## <a name="finger-painting"></a>[Рисование пальцами](finger-paint.md)
 
 Используйте пальцы для рисования на холсте.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [SkiaSharpFormsDemos (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

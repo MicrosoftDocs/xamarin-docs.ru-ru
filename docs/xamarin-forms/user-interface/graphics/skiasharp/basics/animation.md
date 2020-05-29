@@ -1,30 +1,33 @@
 ---
-title: Простая анимация в SkiaSharp
-description: В этой статье объясняется, как анимация графики SkiaSharp в Xamarin.Forms приложений и демонстрирует это с помощью примера кода.
-ms.prod: xamarin
-ms.technology: xamarin-skiasharp
-ms.assetid: 31C96FD6-07E4-4473-A551-24753A5118C3
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/10/2017
-ms.openlocfilehash: 80de16a0cf9b601ac3795085b638b9d62812f4d9
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+title: ''
+description: В этой статье объясняется, как анимировать графику SkiaSharp в Xamarin.Forms приложениях и демонстрируется пример кода.
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9a59f65655772768860ce29128f14a48641abc26
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725554"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84134281"
 ---
-# <a name="basic-animation-in-skiasharp"></a>Простая анимация в SkiaSharp
+# <a name="basic-animation-in-skiasharp"></a>Базовая анимация в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Узнайте, как анимировать график SkiaSharp_
 
-Вы можете анимировать график SkiaSharp в Xamarin. Forms, вызывая периодический вызов метода `PaintSurface`, каждый раз рисуя графику немного иначе. Ниже приведен анимацию, описанных далее в этой статье с концентрических окружностей, казалось бы, разверните в центре.
+Вы можете анимировать график SkiaSharp в Xamarin.Forms , вызывая регулярный `PaintSurface` вызов метода, каждый раз рисуя графику немного иначе. Ниже приведена анимация, показанная далее в этой статье, с концентрическими круговами, которые кажутся раскрытием по центру:
 
 ![](animation-images/animationexample.png "Several concentric circles seemingly expanding from the center")
 
-Страница **эллипса пулсатинг** в программе [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) анимирует две оси эллипса, чтобы они были пулсатинг, и вы даже можете контролировать скорость этого пулсатион. Файл [**пулсатинжеллипсепаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/PulsatingEllipsePage.xaml) создает экземпляр Xamarin. forms `Slider` и `Label` для вывода текущего значения ползунка. Это распространенный способ интеграции `SKCanvasView` с другими представлениями Xamarin. Forms:
+Страница **эллипса пулсатинг** в программе [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) анимирует две оси эллипса, чтобы они были пулсатинг, и вы даже можете контролировать скорость этого пулсатион. Файл [**пулсатинжеллипсепаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/PulsatingEllipsePage.xaml) создает экземпляр и, Xamarin.Forms `Slider` `Label` чтобы отобразить текущее значение ползунка. Это распространенный способ интеграции `SKCanvasView` с другими Xamarin.Forms представлениями:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -59,7 +62,7 @@ _Узнайте, как анимировать график SkiaSharp_
 </ContentPage>
 ```
 
-Файл кода программной части создает экземпляр объекта `Stopwatch`, который служит часами высокой точности. Переопределение `OnAppearing` задает для поля `pageIsActive` значение `true` и вызывает метод с именем `AnimationLoop`. `OnDisappearing` переопределяет, `pageIsActive` поле `false`:
+Файл кода программной части создает экземпляр `Stopwatch` объекта, который служит часами высокой точности. `OnAppearing`Переопределение задает `pageIsActive` для поля значение `true` и вызывает метод с именем `AnimationLoop` . `OnDisappearing`Переопределение задает `pageIsActive` для этого поля значение `false` :
 
 ```csharp
 Stopwatch stopwatch = new Stopwatch();
@@ -85,7 +88,7 @@ protected override void OnDisappearing()
 }
 ```
 
-Метод `AnimationLoop` запускает `Stopwatch`, а затем циклы, пока `pageIsActive` `true`. По сути это «бесконечный цикл», когда страница активна, но это не приводит к зависанию программы, так как цикл завершается вызовом `Task.Delay` с помощью оператора `await`, который позволяет другим частям программной функции. Аргумент для `Task.Delay` приводит к его завершению через 1/30-й секунды. Этот параметр определяет частоту кадров анимации.
+`AnimationLoop`Метод запускает, `Stopwatch` а затем выполняет цикл, пока `pageIsActive` имеет значение `true` . По сути это «бесконечный цикл», когда страница активна, но это не приводит к зависанию программы, поскольку цикл завершается вызовом `Task.Delay` `await` оператора с оператором, который позволяет выполнять другие части программы. Аргумент, в `Task.Delay` результате чего он завершается через 1/30-й секунда. Определяет частоту кадров анимации.
 
 ```csharp
 async Task AnimationLoop()
@@ -106,9 +109,9 @@ async Task AnimationLoop()
 
 ```
 
-Цикл `while` начинается с получения времени цикла из `Slider`. Это время в секундах, например, 5. Вторая инструкция вычисляет значение `t` для *времени*. Для `cycleTime` 5 `t` увеличивается от 0 до 1 каждые 5 секунд. Аргумент функции `Math.Sin` во второй инструкции находится в диапазоне от 0 до 2π каждые 5 секунд. Функция `Math.Sin` возвращает значение в диапазоне от 0 до 1 до 0, а затем в &ndash;1 и 0 каждые 5 секунд, но со значениями, которые меняются медленнее, если значение приближается к 1 или – 1. Значение 1 добавляется, поэтому значения всегда имеют положительное значение, а затем он делится на 2, поэтому диапазон значений: от ½ значение 1, чтобы ½ равным 0, чтобы ½, но медленнее, если значение равно приблизительно 1 и 0. Он хранится в поле `scale`, а `SKCanvasView` становится недействительным.
+`while`Цикл начинается с получения времени цикла из `Slider` . Это время в секундах, например 5. Вторая инструкция вычисляет значение `t` для *времени*. В случае с `cycleTime` 5 `t` увеличивается от 0 до 1 каждые 5 секунд. Аргумент `Math.Sin` функции во второй инструкции находится в диапазоне от 0 до 2π каждые 5 секунд. `Math.Sin`Функция возвращает значение в диапазоне от 0 до 1 в 0, а затем в &ndash; 1 и 0 каждые 5 секунд, но со значениями, которые меняются медленнее, когда значение приближается к 1 или – 1. Значение 1 добавляется, чтобы значения всегда были положительными, а затем разделены на 2, поэтому значения в диапазоне от 1/2 до 1/2 — от 0 до 1/2, но медленнее, если значение равно 1 и 0. Он хранится в `scale` поле, а `SKCanvasView` является недействительным.
 
-Метод `PaintSurface` использует это `scale` значение для вычисления двух осей эллипса:
+`PaintSurface`Метод использует это `scale` значение для вычисления двух осей эллипса:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -139,17 +142,17 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-Метод вычисляет максимальное radius, в зависимости от размера области отображения и минимальный радиус, в зависимости от максимального радиуса. Значение `scale` анимируется от 0 до 1 и возвращается к 0, поэтому метод использует его для вычислений `xRadius` и `yRadius`, которые находятся между `minRadius` и `maxRadius`. Эти значения используются для рисования и заливка эллипса:
+Метод вычисляет максимальный радиус на основе размера отображаемой области и минимального радиуса на основе максимального радиуса. `scale`Значение анимируется в диапазоне от 0 до 1 и возвращается к 0, поэтому метод использует его для вычислить, `xRadius` а также `yRadius` диапазон между `minRadius` и `maxRadius` . Эти значения используются для рисования и заполнения эллипса.
 
 [![](animation-images/pulsatingellipse-small.png "Triple screenshot of the Pulsating Ellipse page")](animation-images/pulsatingellipse-large.png#lightbox "Triple screenshot of the Pulsating Ellipse page")
 
-Обратите внимание, что объект `SKPaint` создается в блоке `using`. Как и многие SkiaSharp классы `SKPaint` являются производными от `SKObject`, который является производным от `SKNativeObject`, который реализует интерфейс [`IDisposable`](xref:System.IDisposable) . `SKPaint` переопределяет метод `Dispose`, чтобы освободить неуправляемые ресурсы.
+Обратите внимание, что `SKPaint` объект создается в `using` блоке. Как и многие классы SkiaSharp `SKPaint` являются производными от класса `SKObject` , который является производным от `SKNativeObject` , который реализует [`IDisposable`](xref:System.IDisposable) интерфейс. `SKPaint`переопределяет `Dispose` метод, чтобы освободить неуправляемые ресурсы.
 
- Помещение `SKPaint` в блок `using` гарантирует, что `Dispose` будет вызван в конце блока, чтобы освободить эти неуправляемые ресурсы. Это происходит в любом случае, когда память, используемая объектом `SKPaint`, освобождается сборщиком мусора .NET, но в коде анимации лучше проактивно освободить память более упорядоченным образом.
+ Помещение `SKPaint` `using` блока гарантирует, что `Dispose` метод вызывается в конце блока, чтобы освободить неуправляемые ресурсы. Это происходит в любом случае, когда память, используемая `SKPaint` объектом, освобождается сборщиком мусора .NET, но в коде анимации лучше проактивно освободить память более упорядоченным образом.
 
- Лучшим решением в этом случае будет создание двух `SKPaint` объектов один раз и сохранение их в виде полей.
+ Лучшим решением в этом случае является создание двух `SKPaint` объектов один раз и сохранение их в виде полей.
 
-Это именно то, что делает **расширяемая круговая** анимация. Класс [`ExpandingCirclesPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/ExpandingCirclesPage.cs) начинается с определения нескольких полей, включая объект `SKPaint`:
+Это именно то, что делает **расширяемая круговая** анимация. [`ExpandingCirclesPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/ExpandingCirclesPage.cs)Класс начинается с определения нескольких полей, включая `SKPaint` объект:
 
 ```csharp
 public class ExpandingCirclesPage : ContentPage
@@ -177,7 +180,7 @@ public class ExpandingCirclesPage : ContentPage
 }
 ```
 
-Эта программа использует другой подход к анимации на основе метода Xamarin. Forms `Device.StartTimer`. Поле `t` анимируется от 0 до 1 каждые `cycleTime` миллисекунд:
+Эта программа использует другой подход к анимации на основе Xamarin.Forms `Device.StartTimer` метода. `t`Поле анимируется от 0 до 1 каждую `cycleTime` миллисекунду:
 
 ```csharp
 public class ExpandingCirclesPage : ContentPage
@@ -211,7 +214,7 @@ public class ExpandingCirclesPage : ContentPage
 }
 ```
 
-Обработчик `PaintSurface` формирует пять концентрических кругов с анимированными радиусами. Если `baseRadius` переменная вычисляется как 100, то `t` анимируется от 0 до 1, радиусы пяти кругов увеличиваются с 0 до 100, 100 — до 200, от 200 до 300, от 300 до 400 и от 400 до 500. Для большей части кругов `strokeWidth` равен 50, но для первого круга `strokeWidth` анимируется от 0 до 50. Для большинства кругов синий цвет, но для последнего окружности, цвет анимируется от синего к прозрачности. Обратите внимание на четвертый аргумент конструктора `SKColor`, который задает непрозрачность.
+`PaintSurface`Обработчик формирует пять концентрических кругов с анимированными радиусами. Если `baseRadius` переменная вычисляется как 100, то как `t` анимируется от 0 до 1, радиусы пяти кругов увеличиваются с 0 до 100, 100 – 200, от 200 до 300, от 300 до 400 и от 400 до 500. Для большей части кругов `strokeWidth` — 50, а для первого круга — `strokeWidth` анимация от 0 до 50. Для большинства кругов цвет выделяется синим цветом, но для последнего круга цвет анимируется от синего к прозрачному. Обратите внимание на четвертый аргумент `SKColor` конструктора, который задает непрозрачность:
 
 ```csharp
 public class ExpandingCirclesPage : ContentPage
@@ -242,7 +245,7 @@ public class ExpandingCirclesPage : ContentPage
 }
 ```
 
-В результате изображение выглядит одинаково, когда `t` равно 0, как если `t` равно 1, а окружности продолжают развертываться непрерывно:
+В результате изображение выглядит одинаково, когда `t` равно 0, как если `t` равно 1, а окружности, по-видимому, продолжают расширяться непрерывно:
 
 [![](animation-images/expandingcircles-small.png "Triple screenshot of the Expanding Circles page")](animation-images/expandingcircles-large.png#lightbox "Triple screenshot of the Expanding Circles page")
 

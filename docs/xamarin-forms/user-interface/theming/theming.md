@@ -1,26 +1,29 @@
 ---
-title: Тема приложения Xamarin. Forms
-description: Их можно реализовать в приложениях Xamarin. Forms, создав ResourceDictionary для каждой темы, а затем загрузив ресурсы с расширением разметки DynamicResource.
-ms.prod: xamarin
-ms.assetId: B7B17F66-4E37-4B50-9A57-351B62BE4FED
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 08/07/2019
-ms.openlocfilehash: 2f751549bdbd54b920a99b04d0068ab726600336
-ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
+title: Тема Xamarin.Forms приложения
+description: Их можно реализовать в Xamarin.Forms приложениях, создав ResourceDictionary для каждой темы, а затем загрузив ресурсы с расширением разметки DynamicResource.
+ms.prod: ''
+ms.assetId: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 3341ada6c5605917eeec79aac96e38cb99b40fc4
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83425796"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138207"
 ---
-# <a name="theme-a-xamarinforms-application"></a>Тема приложения Xamarin. Forms
+# <a name="theme-a-xamarinforms-application"></a>Тема Xamarin.Forms приложения
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-theming/)
 
-Приложения Xamarin. Forms могут динамически реагировать на изменения стиля во время выполнения с помощью `DynamicResource` расширения разметки. Это расширение разметки аналогично `StaticResource` расширению разметки в том, что оба используют ключ словаря для выборки значения из [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Однако, хотя `StaticResource` расширение разметки выполняет поиск по одному словарю, `DynamicResource` расширение разметки сохраняет ссылку на ключ словаря. Таким образом, если значение, связанное с ключом, заменяется, это изменение применяется к [`VisualElement`](xref:Xamarin.Forms.VisualElement) . Это позволяет реализовать среду выполнения в приложениях Xamarin. Forms.
+Xamarin.Formsприложения могут динамически реагировать на изменения стиля во время выполнения с помощью `DynamicResource` расширения разметки. Это расширение разметки аналогично `StaticResource` расширению разметки в том, что оба используют ключ словаря для выборки значения из [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Однако, хотя `StaticResource` расширение разметки выполняет поиск по одному словарю, `DynamicResource` расширение разметки сохраняет ссылку на ключ словаря. Таким образом, если значение, связанное с ключом, заменяется, это изменение применяется к [`VisualElement`](xref:Xamarin.Forms.VisualElement) . Это позволяет реализовать среду выполнения в Xamarin.Forms приложениях.
 
-Процесс реализации среды выполнения в приложении Xamarin. Forms выглядит следующим образом:
+Процесс реализации среды выполнения в Xamarin.Forms приложении выглядит следующим образом:
 
 1. Определите ресурсы для каждой темы в [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) .
 1. Использовать ресурсы темы в приложении с помощью `DynamicResource` расширения разметки.
@@ -182,7 +185,7 @@ ms.locfileid: "83425796"
 
 Когда ресурс темы используется напрямую, его следует использовать с `DynamicResource` расширением разметки. Однако при использовании стиля, использующего `DynamicResource` расширение разметки, его следует использовать с `StaticResource` расширением разметки.
 
-Дополнительные сведения о стилях см. в разделе [стилизация приложений Xamarin. Forms с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md). Дополнительные сведения о `DynamicResource` расширении разметки см. [в разделе динамические стили в Xamarin. Forms](~/xamarin-forms/user-interface/styles/xaml/dynamic.md).
+Дополнительные сведения о стилях см. в разделе [стилизация Xamarin.Forms приложений с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md). Дополнительные сведения о `DynamicResource` расширении разметки см. [в разделе динамические стили Xamarin.Forms в ](~/xamarin-forms/user-interface/styles/xaml/dynamic.md).
 
 ## <a name="load-a-theme-at-runtime"></a>Загрузка темы во время выполнения
 
@@ -225,5 +228,5 @@ void OnPickerSelectionChanged(object sender, EventArgs e)
 - [Их (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-theming/)
 - [Реагирование на изменения темы системы](system-theme-changes.md)
 - [Словари ресурсов](~/xamarin-forms/xaml/resource-dictionaries.md)
-- [Динамические стили в Xamarin. Forms](~/xamarin-forms/user-interface/styles/xaml/dynamic.md)
-- [Задание стиля приложений Xamarin.Forms с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)
+- [Динамические стили вXamarin.Forms](~/xamarin-forms/user-interface/styles/xaml/dynamic.md)
+- [Применение стилей к Xamarin.Forms приложениям с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)

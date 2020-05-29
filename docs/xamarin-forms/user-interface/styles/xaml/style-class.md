@@ -1,33 +1,36 @@
 ---
-title: Классы стилей Xamarin. Forms
-description: Классы стилей Xamarin. Forms позволяют применять к элементу управления несколько стилей, не прибегая к наследованию стиля.
-ms.prod: xamarin
-ms.assetid: 4762401E-2B48-48F1-B6E4-61F7AF8AA46F
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 01/30/2019
-ms.openlocfilehash: 4a353d64f0e7e29da6c64f93b8554c3661f4d389
-ms.sourcegitcommit: c9651cad80c2865bc628349d30e82721c01ddb4a
+title: Xamarin.FormsКлассы стилей
+description: Xamarin.Formsклассы стилей позволяют применять к элементу управления несколько стилей, не прибегая к наследованию стиля.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2afb06c2d97e6f15c2041b9c2e9cad092b13d90d
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70228124"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138769"
 ---
-# <a name="xamarinforms-style-classes"></a>Классы стилей Xamarin. Forms
+# <a name="xamarinforms-style-classes"></a>Xamarin.FormsКлассы стилей
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
 
 _Классы стилей Xamarin. Forms позволяют применять к элементу управления несколько стилей, не прибегая к наследованию стиля._
 
 ## <a name="create-style-classes"></a>Создание классов стилей
 
-Класс стиля можно создать, задав [`Class`](xref:Xamarin.Forms.Style.Class) свойству [`Style`](xref:Xamarin.Forms.Style) `string` значение, которое представляет имя класса. Преимущество этого предложения при определении явного стиля с помощью `x:Key` атрибута заключается в том, что к можно применить [`VisualElement`](xref:Xamarin.Forms.VisualElement)несколько классов стилей.
+Класс стиля можно создать, задав [`Class`](xref:Xamarin.Forms.Style.Class) свойству значение [`Style`](xref:Xamarin.Forms.Style) `string` , которое представляет имя класса. Преимущество этого предложения при определении явного стиля с помощью `x:Key` атрибута заключается в том, что к можно применить несколько классов стилей [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 
 > [!IMPORTANT]
 > Несколько стилей могут совместно использовать одно и то же имя класса при условии, что они предназначены для разных типов. Это позволяет использовать несколько классов стилей, которые идентичны именам, для различных типов.
 
-В следующем примере показаны три [`BoxView`](xref:Xamarin.Forms.BoxView) класса стилей [`VisualElement`](xref:Xamarin.Forms.VisualElement) и класс Style:
+В следующем примере показаны три [`BoxView`](xref:Xamarin.Forms.BoxView) класса стилей и [`VisualElement`](xref:Xamarin.Forms.VisualElement) класс Style:
 
 ```xaml
 <ContentPage ...>
@@ -74,9 +77,9 @@ _Классы стилей Xamarin. Forms позволяют применять 
 </ContentPage>
 ```
 
-Классы стилей `Rounded`, и `Circle` каждый задают [`BoxView`](xref:Xamarin.Forms.BoxView) свойства для конкретных значений. `Separator`
+`Separator` `Rounded` Классы стилей, и `Circle` каждый задают [`BoxView`](xref:Xamarin.Forms.BoxView) свойства для конкретных значений.
 
-Класс Style имеет [`TargetType`](xref:Xamarin.Forms.Style.TargetType) `VisualElement` объект, который означает, что его можно применять только к экземплярам. [`VisualElement`](xref:Xamarin.Forms.VisualElement) `Rotated` Однако его [`ApplyToDerivedTypes`](xref:Xamarin.Forms.Style.ApplyToDerivedTypes) свойство имеет `true`значение, которое гарантирует, что его можно применить к любым элементам управления, производным от `VisualElement`, например [`BoxView`](xref:Xamarin.Forms.BoxView). Дополнительные сведения о применении стиля к производному типу см. в разделе [применение стиля к производным типам](implicit.md#apply-a-style-to-derived-types).
+`Rotated`Класс Style имеет объект [`TargetType`](xref:Xamarin.Forms.Style.TargetType) [`VisualElement`](xref:Xamarin.Forms.VisualElement) , который означает, что его можно применять только к `VisualElement` экземплярам. Однако его [`ApplyToDerivedTypes`](xref:Xamarin.Forms.Style.ApplyToDerivedTypes) свойство имеет значение `true` , которое гарантирует, что его можно применить к любым элементам управления, производным от `VisualElement` , например [`BoxView`](xref:Xamarin.Forms.BoxView) . Дополнительные сведения о применении стиля к производному типу см. в разделе [применение стиля к производным типам](implicit.md#apply-a-style-to-derived-types).
 
 Эквивалентный код на C# выглядит так:
 
@@ -180,7 +183,7 @@ Resources = new ResourceDictionary
 
 ## <a name="consume-style-classes"></a>Использование классов стилей
 
-Классы стилей можно использовать, установив [`StyleClass`](xref:Xamarin.Forms.NavigableElement.StyleClass) свойство элемента управления, имеющее тип `IList<string>`, в список имен классов стилей. Будут применены классы стилей при условии, что тип элемента управления совпадает с [`TargetType`](xref:Xamarin.Forms.Style.TargetType) классами стилей.
+Классы стилей можно использовать, установив [`StyleClass`](xref:Xamarin.Forms.NavigableElement.StyleClass) свойство элемента управления, имеющее тип `IList<string>` , в список имен классов стилей. Будут применены классы стилей при условии, что тип элемента управления совпадает с [`TargetType`](xref:Xamarin.Forms.Style.TargetType) классами стилей.
 
 В следующем примере показаны три [`BoxView`](xref:Xamarin.Forms.BoxView) экземпляра, каждый из которых устанавливается в различные классы стилей:
 
@@ -206,7 +209,7 @@ Resources = new ResourceDictionary
 ![Боксвиевс с стилями с помощью классов стилей](style-class-images/boxviews.png)
 
 > [!IMPORTANT]
-> К элементу управления можно применить несколько классов стилей, поскольку [`StyleClass`](xref:Xamarin.Forms.NavigableElement.StyleClass) свойство имеет тип. `IList<string>` В этом случае классы стилей применяются в порядке возрастания списка. Поэтому, если несколько классов стилей устанавливают одинаковые свойства, приоритет будет иметь свойство класса Style, находящийся в самом высшем положении списка.
+> К элементу управления можно применить несколько классов стилей, поскольку [`StyleClass`](xref:Xamarin.Forms.NavigableElement.StyleClass) свойство имеет тип `IList<string>` . В этом случае классы стилей применяются в порядке возрастания списка. Поэтому, если несколько классов стилей устанавливают одинаковые свойства, приоритет будет иметь свойство класса Style, находящийся в самом высшем положении списка.
 
 Эквивалентный код на C# выглядит так:
 
@@ -225,4 +228,4 @@ Content = new StackLayout
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Основные стили (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
+- [Базовые стили (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)

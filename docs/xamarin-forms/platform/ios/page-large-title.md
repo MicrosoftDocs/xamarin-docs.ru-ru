@@ -1,24 +1,27 @@
 ---
-title: Крупные заголовки страниц в iOS
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая отображает заголовок страницы в виде крупного заголовка на панели навигации Навигатионпаже.
-ms.prod: xamarin
-ms.assetid: 45FD9145-8319-452C-9AE6-624431A4D43C
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/24/2018
-ms.openlocfilehash: ab9becf2f7363674346abf004c1748cb06eb0d31
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0db20620870340386ccd0cedf7f98cb2975527ba
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68655413"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84128053"
 ---
 # <a name="large-page-titles-on-ios"></a>Крупные заголовки страниц в iOS
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Эта платформа iOS используется для вывода заголовка страницы в виде большого заголовка панели навигации [`NavigationPage`](xref:Xamarin.Forms.NavigationPage), для устройств, использующих iOS 11 или более поздней версии. Большой Заголовок выравнивается по левому краю и использует крупный шрифт и переходит в стандартный заголовок как пользователь начинает прокрутка содержимого, чтобы использовалась площади экрана эффективно. Однако в альбомной ориентации заголовок будет возвращать относительно центральной части панели навигации для оптимизации макета содержимого. Он используется в XAML, задав `NavigationPage.PrefersLargeTitles` вложенное свойство, чтобы `boolean` значение:
+Эта платформа iOS используется для вывода заголовка страницы в виде большого заголовка панели навигации [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) , для устройств, использующих iOS 11 или более поздней версии. Крупное название выводится по левому краю и использует более крупный шрифт, а переход к стандартному названию происходит по мере того, как пользователь начинает прокручивать содержимое, чтобы эффективное использование экрана было эффективно. Однако в альбомной ориентации заголовок вернется в центр панели навигации, чтобы оптимизировать макет содержимого. Он используется в XAML путем присвоения `NavigationPage.PrefersLargeTitles` свойству присоединенного свойства `boolean` значения:
 
 ```xaml
 <NavigationPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -30,7 +33,7 @@ ms.locfileid: "68655413"
 </NavigationPage>
 ```
 
-Также его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -41,9 +44,9 @@ var navigationPage = new Xamarin.Forms.NavigationPage(new iOSLargeTitlePageCS())
 navigationPage.On<iOS>().SetPrefersLargeTitles(true);
 ```
 
-`NavigationPage.On<iOS>` Метод указывает, что этой платформы будет выполняться только на устройствах iOS. `NavigationPage.SetPrefersLargeTitle` Метод в [ `Xamarin.Forms.PlatformConfiguration.iOSSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен, управляющий включением крупных названий.
+`NavigationPage.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `NavigationPage.SetPrefersLargeTitle`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен определяет, включены ли большие заголовки.
 
-Условии, что включены крупных названий [ `NavigationPage` ](xref:Xamarin.Forms.NavigationPage), все страницы в стеке навигации будут отображены в крупных названий. Это поведение можно переопределить на страницах, задав `Page.LargeTitleDisplay` присоединенное свойство в значение `LargeTitleDisplayMode` перечисления:
+При условии, что крупные заголовки включены в [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) , все страницы в стеке навигации будут отображать крупные заголовки. Это поведение можно переопределить на страницах, задав `Page.LargeTitleDisplay` для присоединенного свойства значение `LargeTitleDisplayMode` перечисления:
 
 ```xaml
 <ContentPage ...
@@ -54,7 +57,7 @@ navigationPage.On<iOS>().SetPrefersLargeTitles(true);
 </ContentPage>
 ```
 
-Кроме того поведение страницы может быть переопределено с помощью текучего API в C#:
+Кроме того, поведение страницы можно переопределить из C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -72,13 +75,13 @@ public class iOSLargeTitlePageCS : ContentPage
 }
 ```
 
-`Page.On<iOS>` Метод указывает, что этой платформы будет выполняться только на устройствах iOS. `Page.SetLargeTitleDisplay` Метод в [ `Xamarin.Forms.PlatformConfiguration.iOSSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен, управляет поведением большого заголовка на [ `Page` ](xref:Xamarin.Forms.Page), с помощью `LargeTitleDisplayMode` перечисления, предоставляя три возможных значения:
+`Page.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `Page.SetLargeTitleDisplay`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен управляет большим поведением заголовка в [`Page`](xref:Xamarin.Forms.Page) , а `LargeTitleDisplayMode` перечисление предоставляет три возможных значения:
 
-- `Always` — Принудительное панели навигации и шрифт размер для использования большого формата.
-- `Automatic` — использовать один и тот же стиль (больших или маленьких) с предыдущим элементом в стеке навигации.
-- `Never` — принудительно использовать панель навигации регулярных "," мелкая форматирования.
+- `Always`— принудительно использовать большой формат панели навигации и размера шрифта.
+- `Automatic`— Используйте тот же стиль (крупный или маленький), что и предыдущий элемент в стеке навигации.
+- `Never`— принудительное использование панели навигации с обычным и небольшим форматом.
 
-Кроме того `SetLargeTitleDisplay` метод может использоваться для включения значений перечисления, вызвав `LargeTitleDisplay` метод, который возвращает текущий `LargeTitleDisplayMode`:
+Кроме того, `SetLargeTitleDisplay` метод можно использовать для переключения значений перечисления путем вызова `LargeTitleDisplay` метода, который возвращает текущий объект `LargeTitleDisplayMode` :
 
 ```csharp
 switch (On<iOS>().LargeTitleDisplay())
@@ -95,12 +98,12 @@ switch (On<iOS>().LargeTitleDisplay())
 }
 ```
 
-Результатом является то, что указанный `LargeTitleDisplayMode` применяется к [ `Page` ](xref:Xamarin.Forms.Page), которое управляет поведением большого заголовка:
+В результате заданный объект `LargeTitleDisplayMode` применяется к [`Page`](xref:Xamarin.Forms.Page) , который управляет поведением крупного заголовка:
 
-![](page-large-title-images/large-title.png "Чтобы минимизировать эффект от платформы")
+![](page-large-title-images/large-title.png "Blur Effect Platform-Specific")
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

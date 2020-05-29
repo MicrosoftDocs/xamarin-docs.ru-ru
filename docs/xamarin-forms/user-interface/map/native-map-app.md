@@ -1,27 +1,30 @@
 ---
-title: Запуск собственного приложения для карт из Xamarin. Forms
-description: Собственное приложение Maps на каждой платформе можно запустить из приложения Xamarin. Forms с помощью класса запуска Xamarin. Essentials.
-ms.prod: xamarin
-ms.assetid: 5CF7CD67-3F20-4D80-B99E-D35A5FD1019A
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/30/2019
-ms.openlocfilehash: 54776d28bb75b152a6402e4d531d1baa4f724cba
-ms.sourcegitcommit: 3ea19e3a51515b30349d03c70a5b3acd7eca7fe7
+title: Запустите собственное приложение Map изXamarin.Forms
+description: Собственное приложение Maps на каждой платформе может быть запущено из Xamarin.Forms приложения с помощью Xamarin.Essentials класса Launcher.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c135d5dd02bba5102f5a93132f079526c84865d5
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73426327"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84129342"
 ---
-# <a name="launch-the-native-map-app-from-xamarinforms"></a>Запуск собственного приложения для карт из Xamarin. Forms
+# <a name="launch-the-native-map-app-from-xamarinforms"></a>Запустите собственное приложение Map изXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
-Собственное приложение Map на каждой платформе можно запустить из приложения Xamarin. Forms с помощью `Launcher` класса Xamarin. Essentials. Этот класс позволяет приложению открывать другое приложение с помощью собственной схемы URI. Функцию запуска можно вызвать с помощью метода `OpenAsync`, передав `string` или `Uri` аргумент, представляющий пользовательскую схему URL-адресов для открытия. Дополнительные сведения о Xamarin. Essentials см. в разделе [Xamarin. Essentials](~/essentials/index.md?context=xamarin/xamarin-forms).
+Собственное приложение Map на каждой платформе можно запустить из Xamarin.Forms приложения с помощью Xamarin.Essentials `Launcher` класса. Этот класс позволяет приложению открывать другое приложение с помощью собственной схемы URI. Функцию запуска можно вызвать с помощью `OpenAsync` метода, передав `string` `Uri` аргумент или, представляющий настраиваемую схему URL-адресов для открытия. Дополнительные сведения о Xamarin.Essentials см. в разделе [Xamarin.Essentials](~/essentials/index.md?context=xamarin/xamarin-forms) .
 
 > [!NOTE]
-> Альтернативой использованию класса `Launcher` Xamarin. Essentials является использование его `Map` класса. Дополнительные сведения см. в разделе [Xamarin. Essentials: Map](~/essentials/maps.md?context=xamarin/xamarin-forms).
+> Альтернативой использованию Xamarin.Essentials `Launcher` класса является использование его `Map` класса. Дополнительные сведения см. в разделе [ Xamarin.Essentials Map](~/essentials/maps.md?context=xamarin/xamarin-forms).
 
 Приложение Maps на каждой платформе использует уникальную настраиваемую схему URI. Сведения о схеме URI Maps в iOS см. в разделе [Map Links](https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/MapLinks/MapLinks.html) on Developer.Apple.com. Дополнительные сведения о схеме универсального кода ресурса (URI) Maps в Android см. в разделе [карты для разработчиков Maps](https://developer.android.com/guide/components/intents-common.html#Maps) и на устройствах [Google Maps для Android](https://developers.google.com/maps/documentation/urls/android-intents) в Developers.Android.com. Сведения о схеме URI Maps на универсальная платформа Windows (UWP) см. в разделе [Запуск приложения Windows Maps](/windows/uwp/launch-resume/launch-maps-app).
 
@@ -82,4 +85,4 @@ else if (Device.RuntimePlatform == Device.UWP)
 - [Ссылки на карту](https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/MapLinks/MapLinks.html)
 - [Руководством для разработчиков карт](https://developer.android.com/guide/components/intents-common.html#Maps)
 - [Устройства Google Maps для Android](https://developers.google.com/maps/documentation/)
-- [Запуск приложения "карты Windows"](/windows/uwp/launch-resume/launch-maps-app)
+- [Запуск приложения "Карты Windows"](/windows/uwp/launch-resume/launch-maps-app)

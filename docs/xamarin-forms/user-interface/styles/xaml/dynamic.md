@@ -1,27 +1,30 @@
 ---
-title: Динамические стили в Xamarin.Forms
-description: В этой статье объясняется, как приложения Xamarin.Forms можно реагировать на изменения стиля динамически во время выполнения с помощью динамических ресурсов.
-ms.prod: xamarin
-ms.assetid: 13D4FA4B-DF10-42BF-B001-2C49367FC216
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 05/28/2019
-ms.custom: video
-ms.openlocfilehash: 9a26532d13b843b812da94739be071c7accac212
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+title: Динамические стили вXamarin.Forms
+description: В этой статье объясняется, как Xamarin.Forms приложение может динамически реагировать на изменения стиля во время выполнения с помощью динамических ресурсов.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.custom: ''
+ms.openlocfilehash: d40ca3423cca68757cf458faf5cca1138aec5461
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79306623"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84140092"
 ---
-# <a name="dynamic-styles-in-xamarinforms"></a>Динамические стили в Xamarin.Forms
+# <a name="dynamic-styles-in-xamarinforms"></a>Динамические стили вXamarin.Forms
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
 
 _Стили не реагируют на изменения свойств и остаются неизменными в течение всего приложения. Например, после назначения стиля визуальному элементу, если один из экземпляров Setter изменяется, удаляется или добавляется новый экземпляр метода задания, изменения не будут применены к визуальному элементу. Однако приложения могут динамически реагировать на изменения стиля во время выполнения с помощью динамических ресурсов._
 
-Расширение разметки `DynamicResource` аналогично расширению разметки `StaticResource` в том, что оба используют ключ словаря для выборки значения из [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary). Однако, хотя `StaticResource` выполняет поиск по одному словарю, `DynamicResource` сохраняет ссылку на ключ словаря. Таким образом при замене элемента словаря, связанное с ключом, изменение будет применено к визуальный элемент. Благодаря этому среда выполнения стиля вносить изменения в приложении.
+`DynamicResource`Расширение разметки аналогично `StaticResource` расширению разметки в том, что оба используют ключ словаря для выборки значения из [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Однако, хотя `StaticResource` выполняет поиск по одному словарю, компонент `DynamicResource` поддерживает ссылку на ключ словаря. Таким образом, если запись словаря, связанная с ключом, заменена, это изменение применяется к визуальному элементу. Это позволяет вносить изменения в стиль среды выполнения в приложении.
 
 В следующем примере кода показаны *динамические* стили на странице XAML:
 
@@ -54,9 +57,9 @@ _Стили не реагируют на изменения свойств и о
 </ContentPage>
 ```
 
-Экземпляры [`SearchBar`](xref:Xamarin.Forms.SearchBar) используют расширение разметки `DynamicResource` для ссылки на [`Style`](xref:Xamarin.Forms.Style) с именем `searchBarStyle`, которое не определено в XAML. Однако, поскольку свойства [`Style`](xref:Xamarin.Forms.NavigableElement.Style) экземпляров `SearchBar` задаются с помощью `DynamicResource`, отсутствующий ключ словаря не приводит к созданию исключения.
+[`SearchBar`](xref:Xamarin.Forms.SearchBar)Экземпляры используют `DynamicResource` расширение разметки для ссылки на [`Style`](xref:Xamarin.Forms.Style) именованный объект `searchBarStyle` , который не определен в XAML. Однако, поскольку [`Style`](xref:Xamarin.Forms.NavigableElement.Style) свойства `SearchBar` экземпляров задаются с помощью `DynamicResource` , отсутствующий ключ словаря не приводит к созданию исключения.
 
-Вместо этого в файле кода программной части конструктор создает запись [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) с ключевым `searchBarStyle`, как показано в следующем примере кода:
+Вместо этого в файле кода программной части конструктор создает [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) запись с ключом `searchBarStyle` , как показано в следующем примере кода:
 
 ```csharp
 public partial class DynamicStylesPage : ContentPage
@@ -82,12 +85,12 @@ public partial class DynamicStylesPage : ContentPage
 }
 ```
 
-При выполнении обработчика `OnButtonClicked` событий `searchBarStyle` переключается между `blueSearchBarStyle` и `greenSearchBarStyle`. Результат показан на следующих снимках экрана:
+При `OnButtonClicked` выполнении обработчика событий `searchBarStyle` переключается между `blueSearchBarStyle` и `greenSearchBarStyle` . Результат показан на следующих снимках экрана.
 
-[![Пример динамического](dynamic-images/dynamic-style-blue.png)](dynamic-images/dynamic-style-blue-large.png#lightbox)
-[![стиля"синий"впримересзеленымстилем](dynamic-images/dynamic-style-green.png)](dynamic-images/dynamic-style-green-large.png#lightbox)
+Пример [ ![ динамического](dynamic-images/dynamic-style-blue.png)](dynamic-images/dynamic-style-blue-large.png#lightbox)стиля "синий" в примере с 
+ [ ![ зеленым стилем](dynamic-images/dynamic-style-green.png)](dynamic-images/dynamic-style-green-large.png#lightbox)
 
-В следующем примере кода показаны эквивалентные страницы на языке C#:
+В следующем примере кода показана эквивалентная страница в C#:
 
 ```csharp
 public class DynamicStylesPageCS : ContentPage
@@ -123,11 +126,11 @@ public class DynamicStylesPageCS : ContentPage
 }
 ```
 
-В C# [`SearchBar`](xref:Xamarin.Forms.SearchBar) экземпляры используют метод [`SetDynamicResource`](xref:Xamarin.Forms.Element.SetDynamicResource*) для ссылки на `searchBarStyle`. Код обработчика событий `OnButtonClicked` идентичен примеру XAML, и при выполнении `searchBarStyle` переключается между `blueSearchBarStyle` и `greenSearchBarStyle`.
+В C# [`SearchBar`](xref:Xamarin.Forms.SearchBar) экземпляры используют [`SetDynamicResource`](xref:Xamarin.Forms.Element.SetDynamicResource*) метод для ссылки `searchBarStyle` . `OnButtonClicked`Код обработчика событий идентичен примеру XAML, и при исполнении `searchBarStyle` переключается между `blueSearchBarStyle` и `greenSearchBarStyle` .
 
 ## <a name="dynamic-style-inheritance"></a>Динамическое наследование стиля
 
-Невозможно получить стиль из динамического стиля с помощью свойства [`Style.BasedOn`](xref:Xamarin.Forms.Style.BasedOn) . Вместо этого класс [`Style`](xref:Xamarin.Forms.Style) включает свойство [`BaseResourceKey`](xref:Xamarin.Forms.Style.BaseResourceKey) , для которого можно задать ключ словаря, значение которого может динамически изменяться.
+Получение стиля из динамического стиля не может быть достигнуто с помощью [`Style.BasedOn`](xref:Xamarin.Forms.Style.BasedOn) Свойства. Вместо этого [`Style`](xref:Xamarin.Forms.Style) класс включает [`BaseResourceKey`](xref:Xamarin.Forms.Style.BaseResourceKey) свойство, для которого можно задать ключ словаря, значение которого может динамически изменяться.
 
 В следующем примере кода показано *динамическое* наследование стиля на странице XAML:
 
@@ -159,14 +162,14 @@ public class DynamicStylesPageCS : ContentPage
 </ContentPage>
 ```
 
-Экземпляры [`SearchBar`](xref:Xamarin.Forms.SearchBar) используют расширение разметки `StaticResource` для ссылки на [`Style`](xref:Xamarin.Forms.Style) с именем `tealSearchBarStyle`. Этот `Style` задает некоторые дополнительные свойства и использует свойство [`BaseResourceKey`](xref:Xamarin.Forms.Style.BaseResourceKey) для ссылки на `searchBarStyle`. Расширение разметки `DynamicResource` не требуется, так как `tealSearchBarStyle` не изменится, за исключением того, `Style` он является производным от. Таким образом, `tealSearchBarStyle` поддерживает ссылку на `searchBarStyle` и изменяется при изменении базового стиля.
+[`SearchBar`](xref:Xamarin.Forms.SearchBar)Экземпляры используют `StaticResource` расширение разметки для ссылки на [`Style`](xref:Xamarin.Forms.Style) именованный объект `tealSearchBarStyle` . При этом `Style` задаются некоторые дополнительные свойства и используется [`BaseResourceKey`](xref:Xamarin.Forms.Style.BaseResourceKey) свойство для ссылки `searchBarStyle` . `DynamicResource`Расширение разметки не требуется, поскольку `tealSearchBarStyle` не изменится, за исключением того, что `Style` он является производным от. Поэтому `tealSearchBarStyle` поддерживает ссылку `searchBarStyle` и изменяется при изменении базового стиля.
 
-В файле кода программной части конструктор создает запись [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) с ключом `searchBarStyle`, как в предыдущем примере, в котором демонстрируются динамические стили. При выполнении обработчика `OnButtonClicked` событий `searchBarStyle` переключается между `blueSearchBarStyle` и `greenSearchBarStyle`. Результат показан на следующих снимках экрана:
+В файле кода программной части конструктор создает [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) запись с ключом `searchBarStyle` , как в предыдущем примере, в котором демонстрируются динамические стили. При `OnButtonClicked` выполнении обработчика событий `searchBarStyle` переключается между `blueSearchBarStyle` и `greenSearchBarStyle` . Результат показан на следующих снимках экрана.
 
-[![](dynamic-images/dynamic-style-inheritance-blue.png)](dynamic-images/dynamic-style-inheritance-blue-large.png#lightbox)
-[![Примеробщего наследования динамического стиля с синим примером](dynamic-images/dynamic-style-inheritance-green.png)](dynamic-images/dynamic-style-inheritance-green-large.png#lightbox)
+Пример общего [ ![ наследования динамического стиля с синим](dynamic-images/dynamic-style-inheritance-blue.png)](dynamic-images/dynamic-style-inheritance-blue-large.png#lightbox)примером 
+ [ ![ ](dynamic-images/dynamic-style-inheritance-green.png)](dynamic-images/dynamic-style-inheritance-green-large.png#lightbox)
 
-В следующем примере кода показаны эквивалентные страницы на языке C#:
+В следующем примере кода показана эквивалентная страница в C#:
 
 ```csharp
 public class DynamicStylesInheritancePageCS : ContentPage
@@ -206,7 +209,7 @@ public class DynamicStylesInheritancePageCS : ContentPage
 }
 ```
 
-`tealSearchBarStyle` присваивается непосредственно свойству [`Style`](xref:Xamarin.Forms.NavigableElement.Style) экземпляров [`SearchBar`](xref:Xamarin.Forms.SearchBar) . Этот `Style` задает некоторые дополнительные свойства и использует свойство [`BaseResourceKey`](xref:Xamarin.Forms.Style.BaseResourceKey) для ссылки на `searchBarStyle`. Метод [`SetDynamicResource`](xref:Xamarin.Forms.Element.SetDynamicResource*) не требуется, так как `tealSearchBarStyle` не изменится, за исключением `Style`, производного от. Таким образом, `tealSearchBarStyle` поддерживает ссылку на `searchBarStyle` и изменяется при изменении базового стиля.
+Объект `tealSearchBarStyle` присваивается непосредственно [`Style`](xref:Xamarin.Forms.NavigableElement.Style) свойству [`SearchBar`](xref:Xamarin.Forms.SearchBar) экземпляров. При этом `Style` задаются некоторые дополнительные свойства и используется [`BaseResourceKey`](xref:Xamarin.Forms.Style.BaseResourceKey) свойство для ссылки `searchBarStyle` . [`SetDynamicResource`](xref:Xamarin.Forms.Element.SetDynamicResource*)Метод не требуется, так как `tealSearchBarStyle` не изменяется, за исключением того, что `Style` он является производным от. Поэтому `tealSearchBarStyle` поддерживает ссылку `searchBarStyle` и изменяется при изменении базового стиля.
 
 ## <a name="related-links"></a>Связанные ссылки
 
@@ -214,7 +217,7 @@ public class DynamicStylesInheritancePageCS : ContentPage
 - [Динамические стили (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
 - [Работа со стилями (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithstyles)
 - [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
-- [Style](xref:Xamarin.Forms.Style)
+- [Стиль](xref:Xamarin.Forms.Style)
 - [Setter](xref:Xamarin.Forms.Setter)
 
 ## <a name="related-video"></a>Связанные видео

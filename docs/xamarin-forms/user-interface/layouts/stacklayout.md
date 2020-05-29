@@ -1,24 +1,27 @@
 ---
-title: StackLayout Xamarin. Forms
-description: 'StackLayout организует дочерние представления в одномерном стеке: по горизонтали или по вертикали.'
-ms.prod: xamarin
-ms.assetid: 6A91EA70-268C-462C-AAAF-F8DA011403F8
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 05/11/2020
-ms.openlocfilehash: 2535a92814181c5039256ea1e42b06419ed427aa
-ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
+title: Xamarin.FormsStackLayout
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f624674cc6d4ba1bdc34a42fb52fb63ff8a7135a
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426034"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137973"
 ---
-# <a name="xamarinforms-stacklayout"></a>StackLayout Xamarin. Forms
+# <a name="xamarinforms-stacklayout"></a>Xamarin.FormsStackLayout
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stacklayoutdemos)
 
-[![StackLayout Xamarin. Forms](stacklayout-images/layouts.png "StackLayout Xamarin. Forms")](stacklayout-images/layouts-large.png#lightbox "StackLayout Xamarin. Forms")
+[![Xamarin.FormsStackLayout](stacklayout-images/layouts.png "[! Операцион. NO-LOC (Xamarin. Forms)] StackLayout")](stacklayout-images/layouts-large.png#lightbox "[! Операцион. NO-LOC (Xamarin. Forms)] StackLayout")
 
 Объект [`StackLayout`](xref:Xamarin.Forms.StackLayout) упорядочивает дочерние представления в одномерном стеке: по горизонтали или по вертикали. По умолчанию объект `StackLayout` ориентирован по вертикали. Кроме того, `StackLayout` можно использовать в качестве родительского макета, содержащего другие дочерние макеты.
 
@@ -343,7 +346,7 @@ public ExpansionPageCS()
 > [!IMPORTANT]
 > Когда все пространство в [`StackLayout`](xref:Xamarin.Forms.StackLayout) занято, параметр расширения ни на что не влияет.
 
-Дополнительные сведения о выравнивании и расширении см. в разделе [Параметры макета в Xamarin.Forms](layout-options.md).
+Дополнительные сведения о выравнивании и расширении см. [в разделе Параметры Xamarin.Forms макета в ](layout-options.md).
 
 ## <a name="nested-stacklayout-objects"></a>Вложенные объекты StackLayout
 
@@ -469,6 +472,6 @@ public class CombinedStackLayoutPageCS : ContentPage
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Демонстрации StackLayout (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stacklayoutdemos)
-- [Параметры макета в Xamarin. Forms](layout-options.md)
-- [Выбор макета Xamarin. Forms](choose-layout.md)
-- [Повышение производительности приложений Xamarin.Forms](~/xamarin-forms/deploy-test/performance.md)
+- [Параметры макета вXamarin.Forms](layout-options.md)
+- [Выбор Xamarin.Forms макета](choose-layout.md)
+- [Улучшение Xamarin.Forms производительности приложения](~/xamarin-forms/deploy-test/performance.md)

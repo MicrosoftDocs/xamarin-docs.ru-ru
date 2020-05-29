@@ -1,24 +1,27 @@
 ---
-title: Выбор элемента TimePicker в iOS
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать особенности платформы iOS, которые используются для управления выбором элементов в TimePicker.
-ms.prod: xamarin
-ms.assetid: 554AC877-8698-4B8C-A676-80DD64305A06
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 01/15/2020
-ms.openlocfilehash: 818f368da8ebb375fbacd97d3d48185ba60470d4
-ms.sourcegitcommit: 10b4d7952d78f20f753372c53af6feb16918555c
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 009482c8f1e90aaa2f592ea04d8fd4f0f31324e8
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77646680"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137024"
 ---
 # <a name="timepicker-item-selection-on-ios"></a>Выбор элемента TimePicker в iOS
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Элементы управления для конкретных платформ iOS, когда выбор элементов происходит в [`TimePicker`](xref:Xamarin.Forms.TimePicker), позволяя пользователю указать, что выбор элементов происходит при просмотре элементов в элементе управления, или только после нажатия кнопки **done (Готово** ). Он используется в XAML путем установки присоединяемого свойства `TimePicker.UpdateMode` в значение перечисления `UpdateMode`:
+Элементы управления для конкретных платформ iOS при выборе элементов в [`TimePicker`](xref:Xamarin.Forms.TimePicker) , позволяя пользователю указать, что выбор элементов выполняется при просмотре элементов в элементе управления, или только после нажатия кнопки **done (Готово** ). Он используется в XAML путем присвоения `TimePicker.UpdateMode` свойству присоединенного свойства значения `UpdateMode` перечисления:
 
 ```xaml
 <ContentPage ...
@@ -31,7 +34,7 @@ ms.locfileid: "77646680"
 </ContentPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -41,12 +44,12 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 timePicker.On<iOS>().SetUpdateMode(UpdateMode.WhenFinished);
 ```
 
-Метод `TimePicker.On<iOS>` указывает, что эта платформа будет запускаться только в iOS. Метод `TimePicker.SetUpdateMode` в пространстве имен [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) используется для управления тем, когда происходит выбор элементов, а перечисление `UpdateMode` предоставляет два возможных значения:
+`TimePicker.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `TimePicker.SetUpdateMode`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, когда происходит выбор элементов, с `UpdateMode` перечислением, предоставляющим два возможных значения:
 
-- `Immediately` — выбор элементов происходит при просмотре пользователем элементов в [`TimePicker`](xref:Xamarin.Forms.TimePicker). Это поведение по умолчанию в Xamarin.Forms.
-- `WhenFinished` — выбор элементов происходит только после нажатия пользователем кнопки **done (Готово** ) в [`TimePicker`](xref:Xamarin.Forms.TimePicker).
+- `Immediately`— Выбор элементов происходит при просмотре пользователем элементов в [`TimePicker`](xref:Xamarin.Forms.TimePicker) . Это поведение по умолчанию в Xamarin.Forms .
+- `WhenFinished`— Выбор элементов происходит только после нажатия пользователем кнопки **done (Готово** ) в [`TimePicker`](xref:Xamarin.Forms.TimePicker) .
 
-Кроме того, можно использовать метод `SetUpdateMode` для переключения значений перечисления путем вызова метода `UpdateMode`, который возвращает текущий `UpdateMode`:
+Кроме того, `SetUpdateMode` метод можно использовать для переключения значений перечисления путем вызова `UpdateMode` метода, который возвращает текущий объект `UpdateMode` :
 
 ```csharp
 switch (timePicker.On<iOS>().UpdateMode())
@@ -60,7 +63,7 @@ switch (timePicker.On<iOS>().UpdateMode())
 }
 ```
 
-В результате заданная `UpdateMode` применяется к [`TimePicker`](xref:Xamarin.Forms.TimePicker), который управляет тем, когда происходит выбор элементов:
+В результате заданный объект `UpdateMode` применяется к элементу [`TimePicker`](xref:Xamarin.Forms.TimePicker) управления, который управляет тем, когда происходит выбор элементов:
 
 [![Снимок экрана: режимы обновления TimePicker](timepicker-selection-images/timepicker-updatemode.png "TimePicker UpdateMode для конкретной платформы")](timepicker-selection-images/timepicker-updatemode-large.png#lightbox "TimePicker UpdateMode для конкретной платформы")
 

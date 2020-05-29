@@ -1,22 +1,25 @@
 ---
-title: Распознавание речи с помощью API службы распознавания речи
-description: В этой статье объясняется, как использовать API службы распознавания речи Azure для транскрипция речи в текст в приложении Xamarin. Forms.
-ms.prod: xamarin
-ms.assetid: B435FF6B-8785-48D9-B2D9-1893F5A87EA1
-ms.technology: xamarin-forms
-author: profexorgeek
-ms.author: jusjohns
-ms.date: 01/14/2020
-ms.openlocfilehash: c10b8feea5fbec21fc127262c3f1bfda50beba7f
-ms.sourcegitcommit: ba83c107c87b015dbcc9db13964fe111a0573dca
+title: ''
+description: В этой статье объясняется, как использовать API службы распознавания речи Azure для транскрипция речи в текст в Xamarin.Forms приложении.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 171ecc02fda304135e5f535c3e798067595d7047
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76265177"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139325"
 ---
-# <a name="speech-recognition-using-azure-speech-service"></a>Распознавание речи с помощью службы распознавания речи Azure
+# <a name="speech-recognition-using-azure-speech-service"></a>Распознавание речи с помощью служб речи Azure
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-cognitivespeechservice)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-cognitivespeechservice)
 
 Служба распознавания речи Azure — это облачный API, который предоставляет следующие функциональные возможности:
 
@@ -25,9 +28,9 @@ ms.locfileid: "76265177"
 - **Перевод речи** обеспечивает многоязычное преобразование в реальном времени для преобразования речи в текст и речи в речь.
 - **Голосовые помощники** могут создавать для приложений интерфейсы общения, схожие с людьми.
 
-В этой статье объясняется, как речь-to-Text реализуется в примере приложения Xamarin. Forms с помощью службы распознавания речи Azure. На следующих снимках экрана показан пример приложения на iOS и Android:
+В этой статье объясняется, как речь-to-Text реализуется в примере Xamarin.Forms приложения с помощью службы распознавания речи Azure. На следующих снимках экрана показан пример приложения на iOS и Android:
 
-[![снимков экрана примера приложения в iOS и Android](speech-recognition-images/speech-recognition-cropped.png)](speech-recognition-images/speech-recognition.png#lightbox "Снимки экрана примера приложения в iOS и Android")
+[![Снимки экрана примера приложения в iOS и Android](speech-recognition-images/speech-recognition-cropped.png)](speech-recognition-images/speech-recognition.png#lightbox "Снимки экрана примера приложения в iOS и Android")
 
 ## <a name="create-an-azure-speech-service-resource"></a>Создание ресурса службы распознавания речи Azure
 
@@ -63,7 +66,7 @@ public static class Constants
 
 ## <a name="create-an-imicrophoneservice-interface"></a>Создание интерфейса Имикрофонесервице
 
-Для каждой платформы требуется разрешение на доступ к микрофону. Пример проекта предоставляет интерфейс `IMicrophoneService` в общем проекте и использует `DependencyService` Xamarin. Forms для получения реализаций интерфейса платформы.
+Для каждой платформы требуется разрешение на доступ к микрофону. Пример проекта предоставляет `IMicrophoneService` интерфейс в общем проекте и использует Xamarin.Forms `DependencyService` для получения реализаций платформы интерфейса.
 
 ```csharp
 public interface IMicrophoneService
@@ -75,7 +78,7 @@ public interface IMicrophoneService
 
 ## <a name="create-the-page-layout"></a>Создание макета страницы
 
-Образец проекта определяет базовый макет страницы в файле **MainPage. XAML** . Ключевыми элементами макета являются `Button`, которые начинают процесс отслеживания, `Label`, содержащий текст расшифрованной, и `ActivityIndicator`, отображаемое при выполнении транскрипции:
+Образец проекта определяет базовый макет страницы в файле **MainPage. XAML** . Ключевыми элементами макета являются `Button` , которые начинают процесс отслеживания, а — `Label` для включения текста расшифрованной, а также `ActivityIndicator` для показа, когда выполняется транскрипция.
 
 ```xaml
 <ContentPage ...>
@@ -101,7 +104,7 @@ public interface IMicrophoneService
 
 Файл кода программной части **MainPage.XAML.CS** содержит всю логику отправки аудио и получение текста расшифрованной из службы распознавания речи Azure.
 
-Конструктор `MainPage` получает экземпляр интерфейса `IMicrophoneService` из `DependencyService`:
+`MainPage`Конструктор получает экземпляр `IMicrophoneService` интерфейса из `DependencyService` :
 
 ```csharp
 public partial class MainPage : ContentPage
@@ -121,7 +124,7 @@ public partial class MainPage : ContentPage
 }
 ```
 
-Метод `TranscribeClicked` вызывается при касании экземпляра `transcribeButton`:
+`TranscribeClicked`Метод вызывается при `transcribeButton` касании экземпляра:
 
 ```csharp
 async void TranscribeClicked(object sender, EventArgs e)
@@ -184,12 +187,12 @@ async void TranscribeClicked(object sender, EventArgs e)
 Метод `TranscribeClicked` выполняет следующие действия:
 
 1. Проверяет, имеет ли приложение доступ к микрофону, и завершает работу на раннем этапе, если нет.
-1. Создает экземпляр класса `SpeechRecognizer`, если он еще не существует.
+1. Создает экземпляр класса, `SpeechRecognizer` если он еще не существует.
 1. Останавливает непрерывную транскрипцию, если она выполняется.
 1. Вставляет отметку времени и начинает непрерывную транскрипцию, если она не выполняется.
 1. Уведомляет приложение о том, что его внешний вид будет обновляться на основе нового состояния приложения.
 
-Оставшаяся часть методов класса `MainPage` — это вспомогательные методы для отображения состояния приложения:
+Оставшаяся часть `MainPage` методов класса — это вспомогательные методы для отображения состояния приложения:
 
 ```csharp
 void UpdateTranscription(string newText)
@@ -229,15 +232,15 @@ void UpdateDisplayState()
 }
 ```
 
-Метод `UpdateTranscription` записывает предоставленный `newText` `string` в элемент `Label` с именем `transcribedText`. Он заставляет это обновление выполняться в потоке пользовательского интерфейса, чтобы его можно было вызывать из любого контекста, не вызывая исключений. `InsertDateTimeRecord` записывает текущую дату и время в экземпляр `transcribedText`, чтобы отметить начало нового транскрипции. Наконец, метод `UpdateDisplayState` обновляет элементы `Button` и `ActivityIndicator`, чтобы отразить, выполняется ли запись.
+`UpdateTranscription`Метод записывает предоставленный объект `newText` `string` в `Label` элемент с именем `transcribedText` . Он заставляет это обновление выполняться в потоке пользовательского интерфейса, чтобы его можно было вызывать из любого контекста, не вызывая исключений. Объект `InsertDateTimeRecord` записывает текущую дату и время в `transcribedText` экземпляр, чтобы отметить начало нового транскрипции. Наконец, `UpdateDisplayState` метод обновляет `Button` элементы и, `ActivityIndicator` чтобы отразить, выполняется ли запись.
 
 ## <a name="create-platform-microphone-services"></a>Создание служб микрофона платформы
 
-Приложение должно иметь доступ к микрофону для получения данных речи. Для функционирования приложения интерфейс `IMicrophoneService` должен быть реализован и зарегистрирован в `DependencyService` на каждой платформе.
+Приложение должно иметь доступ к микрофону для получения данных речи. Для `IMicrophoneService` работы приложения интерфейс должен быть реализован и зарегистрирован в `DependencyService` на каждой платформе.
 
 ### <a name="android"></a>Android
 
-В примере проекта определяется реализация `IMicrophoneService` для Android с именем `AndroidMicrophoneService`:
+В примере проекта определяется `IMicrophoneService` реализация для Android с именем `AndroidMicrophoneService` :
 
 ```csharp
 [assembly: Dependency(typeof(AndroidMicrophoneService))]
@@ -301,14 +304,14 @@ namespace CognitiveSpeechService.Droid.Services
 }
 ```
 
-`AndroidMicrophoneService` имеет следующие возможности.
+`AndroidMicrophoneService`Компонент имеет следующие возможности.
 
-1. Атрибут `Dependency` регистрирует класс с `DependencyService`.
-1. Метод `GetPermissionAsync` проверяет, требуются ли разрешения на основе версии пакет SDK для Android, и вызывает `RequestMicPermissions`, если разрешение еще не было предоставлено.
-1. Метод `RequestMicPermissions` использует класс `Snackbar` для запроса разрешений у пользователя, если требуется обоснование, в противном случае он напрямую запрашивает разрешения записи звука.
-1. Метод `OnRequestPermissionResult` вызывается с `bool`ным результатом после ответа пользователя на запрос разрешений.
+1. `Dependency`Атрибут регистрирует класс с помощью `DependencyService` .
+1. `GetPermissionAsync`Метод проверяет, требуются ли разрешения на основе версии пакет SDK для Android, и вызывает, `RequestMicPermissions` Если разрешение еще не предоставлено.
+1. `RequestMicPermissions`Метод использует `Snackbar` класс для запроса разрешений у пользователя, если требуется обоснование, в противном случае он напрямую запрашивает разрешения записи звука.
+1. `OnRequestPermissionResult`Метод вызывается с результатом, `bool` когда пользователь ответил на запрос разрешений.
 
-Класс `MainActivity` настроен для обновления экземпляра `AndroidMicrophoneService` при завершении запросов разрешений.
+`MainActivity`Класс настраивается для обновления `AndroidMicrophoneService` экземпляра при завершении запросов разрешений:
 
 ```csharp
 public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -342,7 +345,7 @@ public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompa
 }
 ```
 
-Класс `MainActivity` определяет статическую ссылку с именем `Instance`, которая необходима объекту `AndroidMicrophoneService` при запросе разрешений. Он переопределяет метод `OnRequestPermissionsResult` для обновления объекта `AndroidMicrophoneService` при утверждении или отклонении запроса разрешений пользователем.
+`MainActivity`Класс определяет статическую ссылку с именем `Instance` , которая необходима `AndroidMicrophoneService` объекту при запросе разрешений. Он переопределяет `OnRequestPermissionsResult` метод для обновления `AndroidMicrophoneService` объекта при утверждении или отклонении запроса разрешений пользователем.
 
 Наконец, приложение Android должно включать разрешение на запись звука в файл **AndroidManifest. XML** :
 
@@ -355,7 +358,7 @@ public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompa
 
 ### <a name="ios"></a>iOS
 
-В примере проекта определяется `IMicrophoneService`ная реализация для iOS с именем `iOSMicrophoneService`:
+В примере проекта определяется `IMicrophoneService` реализация для iOS с именем `iOSMicrophoneService` :
 
 ```csharp
 [assembly: Dependency(typeof(iOSMicrophoneService))]
@@ -389,14 +392,14 @@ namespace CognitiveSpeechService.iOS.Services
 }
 ```
 
-`iOSMicrophoneService` имеет следующие возможности.
+`iOSMicrophoneService`Компонент имеет следующие возможности.
 
-1. Атрибут `Dependency` регистрирует класс с `DependencyService`.
-1. Метод `GetPermissionAsync` вызывает `RequestMicPermissions` для запроса разрешений у пользователя устройства.
-1. Метод `RequestMicPermissions` использует экземпляр Shared `AVAudioSession` для запроса разрешений записи.
-1. Метод `OnRequestPermissionResult` обновляет экземпляр `TaskCompletionSource` с указанным значением `bool`.
+1. `Dependency`Атрибут регистрирует класс с помощью `DependencyService` .
+1. `GetPermissionAsync`Метод вызывает `RequestMicPermissions` для запроса разрешений у пользователя устройства.
+1. `RequestMicPermissions`Метод использует общий `AVAudioSession` экземпляр для запроса разрешений на запись.
+1. `OnRequestPermissionResult`Метод обновляет `TaskCompletionSource` экземпляр с указанным `bool` значением.
 
-Наконец, приложение iOS **info. plist** должно включать сообщение, сообщающее пользователю, почему приложение запрашивает доступ к микрофону. Измените файл info. plist, чтобы включить следующие теги в элемент `<dict>`:
+Наконец, приложение iOS **info. plist** должно включать сообщение, сообщающее пользователю, почему приложение запрашивает доступ к микрофону. Измените файл info. plist, чтобы включить следующие теги в `<dict>` элемент:
 
 ```xml
 <plist>
@@ -410,7 +413,7 @@ namespace CognitiveSpeechService.iOS.Services
 
 ### <a name="uwp"></a>UWP
 
-Пример проекта определяет реализацию `IMicrophoneService` для UWP с именем `UWPMicrophoneService`:
+В примере проекта определяется `IMicrophoneService` реализация для UWP с именем `UWPMicrophoneService` :
 
 ```csharp
 [assembly: Dependency(typeof(UWPMicrophoneService))]
@@ -449,19 +452,19 @@ namespace CognitiveSpeechService.UWP.Services
 }
 ```
 
-`UWPMicrophoneService` имеет следующие возможности.
+`UWPMicrophoneService`Компонент имеет следующие возможности.
 
-1. Атрибут `Dependency` регистрирует класс с `DependencyService`.
-1. Метод `GetPermissionAsync` пытается инициализировать экземпляр `MediaCapture`. В случае сбоя он запускает запрос пользователя на включение микрофона.
-1. Метод `OnRequestPermissionResult` существует для удовлетворения интерфейса, но не является обязательным для реализации UWP.
+1. `Dependency`Атрибут регистрирует класс с помощью `DependencyService` .
+1. `GetPermissionAsync`Метод пытается инициализировать `MediaCapture` экземпляр. В случае сбоя он запускает запрос пользователя на включение микрофона.
+1. `OnRequestPermissionResult`Метод существует для удовлетворения интерфейса, но не является обязательным для реализации UWP.
 
 Наконец, пакет UWP **. appxmanifest** должен указывать, что приложение использует микрофон. Дважды щелкните файл Package. appxmanifest и выберите параметр **Microphone** на вкладке **возможности** в Visual Studio 2019:
 
-[Снимок экрана ![манифеста в Visual Studio 2019](speech-recognition-images/package-manifest-cropped.png)](speech-recognition-images/package-manifest.png#lightbox "Снимок экрана манифеста в Visual Studio 2019")
+[![Снимок экрана манифеста в Visual Studio 2019](speech-recognition-images/package-manifest-cropped.png)](speech-recognition-images/package-manifest.png#lightbox "Снимок экрана манифеста в Visual Studio 2019")
 
 ## <a name="test-the-application"></a>Тестирование приложения
 
-Запустите приложение и нажмите кнопку **транскрипция** . Приложение должно запрашивать доступ к микрофону и начинать процесс транскрипции. `ActivityIndicator` будет анимироваться, показывая, что запись активна. Во время диктовки приложение будет выполнять потоковую передачу звуковых данных в ресурс служб распознавания речи Azure, который будет отвечать на расшифрованной текст. Текст расшифрованной будет отображаться в элементе `Label` по мере его получения.
+Запустите приложение и нажмите кнопку **транскрипция** . Приложение должно запрашивать доступ к микрофону и начинать процесс транскрипции. `ActivityIndicator`Будет выполняться анимация, показывающая, что запись активна. Во время диктовки приложение будет выполнять потоковую передачу звуковых данных в ресурс служб распознавания речи Azure, который будет отвечать на расшифрованной текст. Текст расшифрованной будет отображаться в `Label` элементе при его получении.
 
 > [!NOTE]
 > Эмуляторам Android не удается загрузить и инициализировать библиотеки речевых служб. Для платформы Android рекомендуется тестирование на физическом устройстве.
@@ -470,5 +473,5 @@ namespace CognitiveSpeechService.UWP.Services
 
 - [Пример службы распознавания речи Azure](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-cognitivespeechservice)
 - [Обзор службы распознавания речи Azure](https://docs.microsoft.com/azure/cognitive-services/speech-service/overview)
-- [Создание Cognitive Services ресурса](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account)
-- [Краткое руководство. Распознавание речи с помощью микрофона](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/speech-to-text-from-microphone)
+- [Создание ресурса Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account)
+- [Краткое руководство. по распознаванию речи с микрофона](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/speech-to-text-from-microphone)

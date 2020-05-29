@@ -1,33 +1,36 @@
 ---
-title: Интеграция с Xamarin.Forms
-description: В этой статье объясняется, как создать SkiaSharp графики, которая реагирует на сенсорный и Xamarin.Forms элементов и демонстрирует это с помощью примера кода.
-ms.prod: xamarin
-ms.technology: xamarin-skiasharp
-ms.assetid: 288224F1-7AEE-4148-A88D-A70C03F83D7A
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/09/2017
-ms.openlocfilehash: 33ed7f3477f44662f3392d2125b61818b3ed885f
-ms.sourcegitcommit: 57f815bf0024b1afe9754c0e28054fc0a53ce302
+title: Интеграция сXamarin.Forms
+description: В этой статье объясняется, как создать график SkiaSharp, реагирующий на касание и Xamarin.Forms элементы, и демонстрируется пример кода.
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9e763184f38719cda4526eb0a2dfdf39b2191a03
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70759452"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137700"
 ---
-# <a name="integrating-with-xamarinforms"></a>Интеграция с Xamarin.Forms
+# <a name="integrating-with-xamarinforms"></a>Интеграция сXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-_Создание графических объектов SkiaSharp, ответить на касания и элементы Xamarin.Forms_
+_Создание графики SkiaSharp, которая реагирует на касание и Xamarin.Forms элементы_
 
-SkiaSharp графики можно интегрировать с остальной частью Xamarin.Forms несколькими способами. Можно комбинировать SkiaSharp canvas и Xamarin.Forms на одной странице и даже позиции Xamarin.Forms элементы на основе холста SkiaSharp:
+SkiaSharp графика может интегрироваться с остальными элементами Xamarin.Forms несколькими способами. Можно объединить SkiaSharp холст и Xamarin.Forms элементы на одной странице и даже располагать Xamarin.Forms элементы поверх SkiaSharp Canvas:
 
-![](integration-images/integrationexample.png "Выбор цвета с помощью ползунков")
+![](integration-images/integrationexample.png "Selecting a color with sliders")
 
-Другой подход к созданию интерактивной графики SkiaSharp в Xamarin.Forms осуществляется через сенсорного ввода.
-На второй странице в [ **SkiaSharpFormsDemos** ](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) программы имеет право **коснитесь переключателя заполнения**. Выполняется рисование простого круга два способа &mdash; без заливки и с заливкой &mdash; переключаться нажатием. [ `TapToggleFillPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/TapToggleFillPage.xaml.cs) Класс показано, как можно изменить графики SkiaSharp в ответ на ввод данных пользователем.
+Другой подход к созданию интерактивной SkiaSharp графики в Xamarin.Forms заключается в использовании сенсорного ввода.
+Второй страницей программы [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) является право **коснуться кнопки переключить заливку**. Он рисует простую окружность двумя способами &mdash; без заливки и с заливкой &mdash; , переключаемой касанием. [`TapToggleFillPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/TapToggleFillPage.xaml.cs)Класс показывает, как можно изменить график SkiaSharp в ответ на вводимые пользователем данные.
 
-Для этой страницы `SKCanvasView` создается экземпляр класса в [TapToggleFill.xaml](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/TapToggleFillPage.xaml) файл, который также задает Xamarin.Forms [ `TapGestureRecognizer` ](xref:Xamarin.Forms.TapGestureRecognizer) представления:
+Для этой страницы `SKCanvasView` создается экземпляр класса в файле [таптогглефилл. XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/TapToggleFillPage.xaml) , который также задает в Xamarin.Forms [`TapGestureRecognizer`](xref:Xamarin.Forms.TapGestureRecognizer) представлении:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -44,9 +47,9 @@ SkiaSharp графики можно интегрировать с остальн
 </ContentPage>
 ```
 
-Обратите внимание, что `skia` объявление пространства имен XML.
+Обратите внимание на `skia` объявление пространства имен XML.
 
-`Tapped` Обработчик для `TapGestureRecognizer` объект просто Инвертирует логическое поле и вызывает метод [ `InvalidateSurface` ](xref:SkiaSharp.Views.Forms.SKCanvasView.InvalidateSurface) метод `SKCanvasView`:
+`Tapped`Обработчик для `TapGestureRecognizer` объекта просто переключает значение логического поля и вызывает [`InvalidateSurface`](xref:SkiaSharp.Views.Forms.SKCanvasView.InvalidateSurface) метод из `SKCanvasView` :
 
 ```csharp
 bool showFill = true;
@@ -58,7 +61,7 @@ void OnCanvasViewTapped(object sender, EventArgs args)
 }
 ```
 
-Вызов `InvalidateSurface` фактически создает вызов метода `PaintSurface` обработчик, который использует `showFill` поля для заполнения или не заполняет элемент управления circle:
+Вызов для `InvalidateSurface` эффективного создания вызова `PaintSurface` обработчика, который использует `showFill` поле для заполнения или не заполнения окружности:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -86,23 +89,23 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-`StrokeWidth` Свойство значение 50 сильнее выделила различие. Также вы увидите ширины всей строки путем рисования внутренней во-первых и затем контура. По умолчанию графики сама определяет, рисуются позже на `PaintSurface` обработчик событий скрывать их ранее в обработчике.
+`StrokeWidth`Для акцентирования разницы в свойстве задано значение 50. Можно также увидеть всю ширину линии, нарисовав внутреннюю часть, а затем контур. По умолчанию графические изображения, нарисованные позже в `PaintSurface` обработчике событий, скрывают те, которые были выведены ранее в обработчике.
 
-**Изучение цвет** странице показано, как можно интегрировать SkiaSharp графики с другими элементами Xamarin.Forms, а также демонстрирует разницу между два альтернативных способа определения цветов в SkiaSharp. Статический [ `SKColor.FromHsl` ](xref:SkiaSharp.SKColor.FromHsl(System.Single,System.Single,System.Single,System.Byte)) метод создает `SKColor` значение на основе оттенок-насыщенность-освещенность модели:
+На странице « **Обзор цветов** » показано, как можно интегрировать SkiaSharp график с другими Xamarin.Forms элементами, а также демонстрирует разницу между двумя альтернативными методами определения цветов в SkiaSharp. Статический [`SKColor.FromHsl`](xref:SkiaSharp.SKColor.FromHsl(System.Single,System.Single,System.Single,System.Byte)) метод создает `SKColor` значение на основе модели оттенок-насыщенность-освещение:
 
 ```csharp
 public static SKColor FromHsl (Single h, Single s, Single l, Byte a)
 ```
 
-Статический [ `SKColor.FromHsv` ](xref:SkiaSharp.SKColor.FromHsv(System.Single,System.Single,System.Single,System.Byte)) метод создает `SKColor` значение, основанное на аналогичную модель оттенок-насыщенность-Value:
+Статический [`SKColor.FromHsv`](xref:SkiaSharp.SKColor.FromHsv(System.Single,System.Single,System.Single,System.Byte)) метод создает `SKColor` значение на основе аналогичной модели «оттенок-насыщенность-значение»:
 
 ```csharp
 public static SKColor FromHsv (Single h, Single s, Single v, Byte a)
 ```
 
-В обоих случаях `h` аргумента в диапазоне от 0 до 360. `s`, `l`, И `v` аргументы в диапазоне от 0 до 100. `a` (Альфа-канал или непрозрачность) аргумента в диапазоне от 0 до 255.
+В обоих случаях аргумент находится в `h` диапазоне от 0 до 360. `s`Аргументы, `l` и находятся в `v` диапазоне от 0 до 100. `a`Аргумент (альфа или Opacity) находится в диапазоне от 0 до 255.
 
-[ **ColorExplorePage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/ColorExplorePage.xaml) файл создает два `SKCanvasView` объекты в `StackLayout` параллельно с `Slider` и `Label` представления, которые позволяют пользователю выбрать HSL и HSV значения цветов:
+Файл [**колорексплорепаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/ColorExplorePage.xaml) создает два `SKCanvasView` объекта в `StackLayout` параллельном режиме с `Slider` `Label` представлениями и, которые позволяют пользователю выбирать значения цвета HSL и HSV:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -182,9 +185,9 @@ public static SKColor FromHsv (Single h, Single s, Single v, Byte a)
 </ContentPage>
 ```
 
-Два `SKCanvasView` элементы находятся в одной ячейке `Grid` с `Label` находятся в верхней части для отображения результирующее значение цвета RGB.
+Два `SKCanvasView` элемента находятся в одной ячейке `Grid` с элементом, расположенным `Label` сверху, для отображения результирующего значения цвета RGB.
 
-[ **ColorExplorePage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/ColorExplorePage.xaml.cs) файл с выделенным кодом приложения относительно прост. Общий `ValueChanged` обработчик для трех `Slider` элементы просто делает недействительным оба `SKCanvasView` элементов. `PaintSurface` Обработчики очистить холст с цветом обозначены `Slider` элементов и также задать `Label` находятся в верхней части `SKCanvasView` элементов:
+Файл кода программной части [**ColorExplorePage.XAML.CS**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/ColorExplorePage.xaml.cs) относительно прост. Общий `ValueChanged` обработчик для трех `Slider` элементов просто делает недействительными оба `SKCanvasView` элемента. `PaintSurface`Обработчики удаляют холст с цветом, указанным в `Slider` элементах, а также задает элемент, `Label` расположенный поверх `SKCanvasView` элементов:
 
 ```csharp
 public partial class ColorExplorePage : ContentPage
@@ -229,17 +232,17 @@ public partial class ColorExplorePage : ContentPage
 }
 ```
 
-В моделях цвета HSL и HSV значение оттенка в диапазоне от 0 до 360 и указывает главный цветового тона цвета. Это традиционный цвета радуги: красный, оранжевый, желтый, зеленый, синий, indigo, фиолетовый и обратно в круге в red.
+В цветовых моделях HSL и HSV значение оттенка варьируется от 0 до 360 и обозначает главный оттенок цвета. Это традиционные цвета «Радуга»: красный, оранжевый, желтый, зеленый, синий, индиго, фиолетовый и обратно в круге до красного.
 
-В модели HSL нулевое значение для яркости всегда черной, и значение 100 всегда является белым. Если значение насыщенности равно 0, освещенность значения от 0 до 100: оттенков серого цвета. Увеличение насыщенность добавляет дополнительные цвета. Чистые цвета (которые значений RGB, с помощью одного компонента, равными 255, другой равен 0, а третий от 0 до 255) возникают, если насыщенность — 100 и яркости — 50.
+В модели HSL значение 0 для освещенности всегда является черным, а значение 100 — всегда белым. Если значение насыщенности равно 0, значения освещенности в диапазоне от 0 до 100 являются оттенками серого. Увеличение насыщенности увеличивает цвет. Чистые цвета (которые являются значениями RGB с одним компонентом, равным 255, второй равно 0, а третий — от 0 до 255), если насыщенность равна 100, а освещение — 50.
 
-В модели HSV чистого цвета привести при насыщенность и значение 100. Если значение равно 0, независимо от других параметров, черный цвет. Когда насыщенность 0 и значение в диапазоне от 0 до 100, то происходит оттенков серого.
+В модели HSV в чистом цвете, если насыщенность и значение равны 100. Если значение равно 0, независимо от других параметров, цвет будет черным. Серые тени происходят, когда насыщенность равна 0, а диапазоны значений — от 0 до 100.
 
-Но лучший способ почувствовать эти две модели для экспериментов с ними:
+Но лучший способ познакомиться с этими двумя моделями — это поэкспериментировать с ними самостоятельно:
 
-[![](integration-images/colorexplore-large.png "Тройной снимок экрана страницы изучение цвет")](integration-images/colorexplore-small.png#lightbox "тройной снимок экрана страницы изучение цвет")
+[![](integration-images/colorexplore-large.png "Triple screenshot of the Color Explore page")](integration-images/colorexplore-small.png#lightbox "Triple screenshot of the Color Explore page")
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [SkiaSharpFormsDemos (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

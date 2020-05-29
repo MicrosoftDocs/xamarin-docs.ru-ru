@@ -1,30 +1,33 @@
 ---
-title: Настройка проектов Windows
-description: Старые решения Xamarin. Forms (или созданные в macOS) не будут иметь универсальная платформа Windows проектов, поэтому в этой статье объясняется, как добавить новый проект UWP в существующее решение Xamarin. Forms.
-ms.prod: xamarin
-ms.assetid: A0774D2E-6994-4D91-84E8-DAB66FC92320
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/10/2018
-ms.openlocfilehash: 5d2d9c8c2104e96f16c3a3ff169f795068605f59
-ms.sourcegitcommit: 7011303ff1868f3dd3858415706f4b5732ee44f1
+title: ''
+description: Xamarin.FormsВ старых решениях (или созданных на macOS) не будет универсальная платформа Windows проектов, поэтому в этой статье объясняется, как добавить новый проект UWP в существующее Xamarin.Forms решение.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 87ad78e97046eef7fd6c2e062fa9f84d92c11b38
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83696079"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84132214"
 ---
 # <a name="setup-windows-projects"></a>Настройка проектов Windows
 
-_Добавление новых проектов Windows в существующее решение Xamarin. Forms_
+_Добавление новых проектов Windows в существующее Xamarin.Forms решение_
 
-Старые решения Xamarin. Forms (или созданные на macOS) не будут иметь проектов приложений универсальная платформа Windows (UWP). Поэтому необходимо вручную добавить проект UWP для создания приложения Windows 10 (UWP).
+В старых Xamarin.Forms решениях (или созданных на macOS) не будет проектов приложений универсальная платформа Windows (UWP). Поэтому необходимо вручную добавить проект UWP для создания приложения Windows 10 (UWP).
 
 ## <a name="add-a-universal-windows-platform-app"></a>Добавление универсальная платформа Windows приложения
 
 Для создания приложений UWP рекомендуется **Visual Studio 2019** в **Windows 10** . Дополнительные сведения о универсальная платформа Windows см. в разделе [Введение в универсальная платформа Windows](/windows/uwp/get-started/universal-application-platform-guide/).
 
-UWP доступен в Xamarin. Forms 2,1 и более поздних версий, а Xamarin. Forms. Maps поддерживается в Xamarin. Forms 2,2 и более поздних версиях.
+UWP доступен в Xamarin.Forms 2,1 и более поздних версиях и Xamarin.Forms . Карты поддерживаются в Xamarin.Forms 2,2 и более поздних версиях.
 
 Полезные советы см. в разделе <a href="#troubleshooting">Устранение неполадок</a> .
 
@@ -38,13 +41,13 @@ UWP доступен в Xamarin. Forms 2,1 и более поздних верс
 
   ![](universal-images/target-version.png "New Universal Windows Platform Project Dialog")
 
- 3-5. Щелкните правой кнопкой мыши проект UWP и выберите пункт **Управление пакетами NuGet...** и добавьте пакет **Xamarin. Forms** . Убедитесь, что другие проекты в решении также обновлены до той же версии пакета Xamarin. Forms.
+ 3-5. Щелкните правой кнопкой мыши проект UWP и выберите пункт **Управление пакетами NuGet...** и добавьте **Xamarin.Forms** пакет. Убедитесь, что другие проекты в решении также обновлены до той же версии Xamarin.Forms пакета.
 
  четырех. Убедитесь, что новый проект UWP будет построен в окне **сборки > Configuration Manager** (это, вероятно, не будет выполнено по умолчанию). Тикайте поля **Сборка** и **развертывание** для универсального проекта:
 
   [![](universal-images/configuration-sml.png "Configuration Manager Window")](universal-images/configuration.png#lightbox "Configuration Manager Window")
 
- 5.0. Щелкните проект правой кнопкой мыши и выберите **добавить > ссылку** , а затем создайте ссылку на проект приложения Xamarin. Forms (.NET Standard или общий проект).
+ 5.0. Щелкните проект правой кнопкой мыши и выберите **добавить > ссылку** , а затем создайте ссылку на Xamarin.Forms проект приложения (.NET Standard или общий проект).
 
   ![](universal-images/addref-sml.png "Reference Manager Dialog")
 
@@ -81,7 +84,7 @@ xmlns:forms="using:Xamarin.Forms.Platform.UWP"
 public sealed partial class MainPage  // REMOVE ": Page"
 ```
 
- стр. В **MainPage.XAML.CS**добавьте `LoadApplication` вызов в `MainPage` конструкторе, чтобы запустить приложение Xamarin. Forms:
+ стр. В **MainPage.XAML.CS**добавьте `LoadApplication` вызов в `MainPage` конструкторе, чтобы запустить Xamarin.Forms Приложение:
 
 ```csharp
 // below this existing line
@@ -105,13 +108,13 @@ LoadApplication(new YOUR_NAMESPACE.App());
 
 Двенадцать. Добавьте локальные ресурсы (например, файлы изображений) из существующих проектов платформы, которые необходимы.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 <a name="target-invocation-exception" />
 
 ### <a name="target-invocation-exception-when-using-compile-with-net-native-tool-chain"></a>"Целевое исключение вызова" при использовании "Compile с .NET Nativeной цепочкой инструментов"
 
-Если приложение UWP ссылается на несколько сборок (например, на сторонние библиотеки элементов управления или само приложение разделено на несколько библиотек), Xamarin. Forms может не загрузить объекты из этих сборок (например, пользовательские модули подготовки отчетов).
+Если приложение UWP ссылается на несколько сборок (например, сторонние библиотеки элементов управления или само приложение разделено на несколько библиотек), Xamarin.Forms может быть невозможно загрузить объекты из этих сборок (например, пользовательские модули подготовки отчетов).
 
 Это может произойти при использовании **цепочки инструментов Compile с .NET Native** , которая является параметром для приложений UWP в окне **свойства > сборка > общие** для проекта.
 

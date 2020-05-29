@@ -1,66 +1,69 @@
 ---
-title: Xamarin.Forms "ползунок"
-description: Ползунок Xamarin.Forms — горизонтальную панель, могут управляться пользователю выбрать значение типа double из непрерывного диапазона. В этой статье объясняется, как использовать класс "ползунок" позволяет выбрать значение из диапазона непрерывных значений.
-ms.prod: xamarin
-ms.assetid: 36B1C645-26E0-4874-B6B6-BDBF77662878
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/27/2019
-ms.openlocfilehash: ddb25a1f01f91b627fc0c370f7f21e2a797b72cb
-ms.sourcegitcommit: 191f1f3b13a14e2afadcb95126c5f653722f126f
+title: Xamarin.FormsГруппу
+description: Xamarin.FormsПолзунок — это горизонтальная линия, которую пользователь может обрабатывать, чтобы выбрать значение типа Double из непрерывного диапазона. В этой статье объясняется, как использовать класс Slider для выбора значения из диапазона непрерывных значений.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1cde999e6781f019b6abceee82caf259e1e5a710
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545586"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84140157"
 ---
-# <a name="xamarinforms-slider"></a>Xamarin.Forms "ползунок"
+# <a name="xamarinforms-slider"></a>Xamarin.FormsГруппу
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos)
 
 _Используйте ползунок для выбора из диапазона непрерывных значений._
 
-Xamarin.Forms [ `Slider` ](xref:Xamarin.Forms.Slider) является горизонтальную панель, можно управлять, пользователь может выбрать `double` значение из непрерывного диапазона.
+Xamarin.Forms [`Slider`](xref:Xamarin.Forms.Slider) — Это горизонтальная панель, которой пользователь может управлять, чтобы выбрать `double` значение из непрерывного диапазона.
 
-`Slider` Определяет трех свойств типа `double`:
+`Slider`Определяет три свойства типа `double` :
 
-- [`Minimum`](xref:Xamarin.Forms.Slider.Minimum) — Это минимальная диапазон со значением по умолчанию 0.
-- [`Maximum`](xref:Xamarin.Forms.Slider.Maximum) — Это максимальное значение диапазона, со значением по умолчанию 1.
-- [`Value`](xref:Xamarin.Forms.Slider.Value) имеет значение ползунка, что допустимы значения от `Minimum` и `Maximum` и имеет значение по умолчанию 0.
+- [`Minimum`](xref:Xamarin.Forms.Slider.Minimum)является минимумом диапазона и значением по умолчанию 0.
+- [`Maximum`](xref:Xamarin.Forms.Slider.Maximum)Максимальное значение диапазона со значением по умолчанию 1.
+- [`Value`](xref:Xamarin.Forms.Slider.Value)значение ползунка, которое может варьироваться от `Minimum` до и `Maximum` имеет значение по умолчанию 0.
 
-Все три свойства, обеспечиваются `BindableProperty` объектов. `Value` Свойство имеет режим привязки по умолчанию `BindingMode.TwoWay`, что означает, что это подходит в качестве источника привязки в приложение, использующее [Model-View-ViewModel (MVVM)](~/xamarin-forms/enterprise-application-patterns/mvvm.md) архитектуры.
-
-> [!WARNING]
-> На внутреннем уровне `Slider` гарантирует, что `Minimum` — меньше, чем `Maximum`. Если `Minimum` или `Maximum` когда-либо заданы таким образом, чтобы `Minimum` — не меньше `Maximum`, возникает исключение. См. в разделе [ **меры предосторожности** ](#precautions) приведенном ниже разделе Дополнительные сведения об настройке `Minimum` и `Maximum` свойства.
-
-`Slider` Приводит `Value` свойство, чтобы оно было между `Minimum` и `Maximum`включительно. Если `Minimum` свойству присваивается значение больше, чем `Value` свойство, `Slider` задает `Value` свойства `Minimum`. Аналогично Если `Maximum` присвоено значение меньше, чем `Value`, затем `Slider` задает `Value` свойства `Maximum`.
-
-`Slider` Определяет [ `ValueChanged` ](xref:Xamarin.Forms.Slider.ValueChanged) событие, возникающее, когда `Value` изменения, либо с помощью операции пользователя из `Slider` или когда программа устанавливает `Value` свойство напрямую. Объект `ValueChanged` событие также инициируется, когда `Value` приводится как описано в предыдущем абзаце.
-
-[ `ValueChangedEventArgs` ](xref:Xamarin.Forms.ValueChangedEventArgs) Объект, который прилагается к `ValueChanged` событий имеет два свойства: тип `double`: [ `OldValue` ](xref:Xamarin.Forms.ValueChangedEventArgs.OldValue) и [ `NewValue` ](xref:Xamarin.Forms.ValueChangedEventArgs.NewValue). Во время события, значение `NewValue` совпадает со значением `Value` свойство `Slider` объекта.
-
-`Slider` также определяет события `DragStarted` и `DragCompleted`, которые срабатывают в начале и в конце действия перетаскивания. В отличие от события [`ValueChanged`](xref:Xamarin.Forms.Slider.ValueChanged) , события `DragStarted` и `DragCompleted` создаются только при пользовательской манипуляции `Slider`. При срабатывании события `DragStarted` выполняется `DragStartedCommand`типа `ICommand`. Аналогично, когда срабатывает событие `DragCompleted`, выполняется `DragCompletedCommand`типа `ICommand`.
+Все три свойства поддерживаются `BindableProperty` объектами. `Value`Свойство имеет режим привязки по умолчанию `BindingMode.TwoWay` , что означает, что он подходит как источник привязки в приложении, использующем архитектуру [Model-View-ViewModel (MVVM)](~/xamarin-forms/enterprise-application-patterns/mvvm.md) .
 
 > [!WARNING]
-> Не используйте параметры неограниченного горизонтальная разметка `Center`, `Start`, или `End` с `Slider`. В Android и UWP `Slider` сворачивает в строку нулевой длины, а также на iOS, панели очень мал. Сохраните значение по умолчанию `HorizontalOptions` параметр `Fill`и не используйте в ширину `Auto` при помещении `Slider` в `Grid` макета.
+> На внутреннем уровне `Slider` обеспечивает `Minimum` меньшее значение `Maximum` . Если `Minimum` или `Maximum` когда-либо задаются так, что `Minimum` не меньше `Maximum` , возникает исключение. Дополнительные сведения о задании свойств и см. в разделе [**меры предосторожности**](#precautions) ниже `Minimum` `Maximum` .
 
-`Slider` Также определяет несколько свойств, которые влияют на его внешний вид:
+Объект `Slider` приводит `Value` свойство таким образом, чтобы оно было между `Minimum` и `Maximum` включительно. Если `Minimum` свойству присвоено значение, большее, чем `Value` свойство, `Slider` `Value` свойство устанавливает для значения `Minimum` . Аналогично, если для параметра задано `Maximum` значение меньше `Value` , то `Slider` для свойства задается `Value` `Maximum` .
 
-- [`MinimumTrackColor`](xref:Xamarin.Forms.Slider.MinimumTrackColorProperty) панель цветов слева от бегунка.
-- [`MaximumTrackColor`](xref:Xamarin.Forms.Slider.MaximumTrackColorProperty) панель Цвет правой стороны от бегунка.
-- [`ThumbColor`](xref:Xamarin.Forms.Slider.ThumbColorProperty) Это цвет бегунка.
-- [`ThumbImageSource`](xref:Xamarin.Forms.Slider.ThumbImageSourceProperty) Представляет изображение, используемое для ползунка, тип [ `ImageSource` ](xref:Xamarin.Forms.ImageSource).
+`Slider`Определяет [`ValueChanged`](xref:Xamarin.Forms.Slider.ValueChanged) событие, возникающее при изменении с `Value` помощью пользовательской манипуляции `Slider` или, когда программа задает `Value` свойство напрямую. `ValueChanged`Событие также срабатывает при `Value` приведении свойства, как описано в предыдущем абзаце.
+
+[`ValueChangedEventArgs`](xref:Xamarin.Forms.ValueChangedEventArgs)Объект, сопровождающий `ValueChanged` событие, имеет два свойства типа `double` : [`OldValue`](xref:Xamarin.Forms.ValueChangedEventArgs.OldValue) и [`NewValue`](xref:Xamarin.Forms.ValueChangedEventArgs.NewValue) . Во время срабатывания события значение совпадает `NewValue` со `Value` свойством `Slider` объекта.
+
+`Slider`также определяет `DragStarted` и `DragCompleted` события, которые срабатывают в начале и в конце действия перетаскивания. В отличие от [`ValueChanged`](xref:Xamarin.Forms.Slider.ValueChanged) события, `DragStarted` события и `DragCompleted` срабатывают только при манипуляции пользователя с `Slider` . При `DragStarted` срабатывании события выполняется объект `DragStartedCommand` типа `ICommand` . Аналогично, при `DragCompleted` срабатывании события `DragCompletedCommand` выполняется тип, типа `ICommand` .
+
+> [!WARNING]
+> Не используйте неограниченные горизонтальные параметры макета `Center` , `Start` или `End` с `Slider` . Как в Android, так и в UWP, элемент `Slider` сворачивается в полоску нулевой длины, а в iOS это очень короткий отрезок. Установите значение по умолчанию `HorizontalOptions` `Fill` и не используйте ширину `Auto` При размещении `Slider` в `Grid` макете.
+
+`Slider`Также определяет несколько свойств, влияющих на его внешний вид:
+
+- [`MinimumTrackColor`](xref:Xamarin.Forms.Slider.MinimumTrackColorProperty)Цвет столбца в левой части бегунка.
+- [`MaximumTrackColor`](xref:Xamarin.Forms.Slider.MaximumTrackColorProperty)Цвет столбца в правой части бегунка.
+- [`ThumbColor`](xref:Xamarin.Forms.Slider.ThumbColorProperty)цвет ползунка.
+- [`ThumbImageSource`](xref:Xamarin.Forms.Slider.ThumbImageSourceProperty)изображение, используемое для Thumb типа [`ImageSource`](xref:Xamarin.Forms.ImageSource) .
 
 > [!NOTE]
-> `ThumbColor` И `ThumbImageSource` свойства являются взаимоисключающими. Если заданы оба свойства, `ThumbImageSource` свойство будет иметь приоритет.
+> `ThumbColor`Свойства и `ThumbImageSource` являются взаимоисключающими. Если заданы оба свойства, `ThumbImageSource` свойство будет иметь приоритет.
 
-## <a name="basic-slider-code-and-markup"></a>Базовый код ползунок и разметки
+## <a name="basic-slider-code-and-markup"></a>Базовый код и разметка ползунка
 
-[ **SliderDemos** ](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos) пример начинается с тремя страницами, которые функционально идентичны, но реализуются по-разному. На первой странице используется только код C#, во втором используется XAML с помощью обработчика событий в коде и третий — это возможность избежать обработчик событий с помощью привязки данных в файле XAML.
+Пример [**слидердемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos) начинается с трех страниц, которые функционально идентичны, но реализуются различными способами. На первой странице используется только код C#, а во втором используется XAML с обработчиком событий в коде, а третья — это возможность избежать обработчика событий с помощью привязки данных в файле XAML.
 
 ### <a name="creating-a-slider-in-code"></a>Создание ползунка в коде
 
-**Базовый код ползунок** странице в [ **SliderDemos** ](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos) образце показано, чтобы создать `Slider` и два `Label` объектов в коде:
+**Базовая кодовая страница Slider** в образце [**слидердемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos) показывает, как создать `Slider` и два `Label` объекта в коде:
 
 ```csharp
 public class BasicSliderCodePage : ContentPage
@@ -107,17 +110,17 @@ public class BasicSliderCodePage : ContentPage
 }
 ```
 
-`Slider` Инициализируется иметь `Maximum` свойство 360. `ValueChanged` Обработчик `Slider` использует `Value` свойство `slider` объект для задания `Rotation` свойства первого `Label` и использует `String.Format` метод с `NewValue` свойство аргументы события, чтобы задать `Text` свойство второго `Label`. Эти два подхода, чтобы получить текущее значение `Slider` являются взаимозаменяемыми.
+`Slider`Инициализируется как свойство со значением `Maximum` 360. `ValueChanged`Обработчик `Slider` использует `Value` свойство `slider` объекта, чтобы установить `Rotation` свойство первого элемента `Label` , и использует `String.Format` метод со `NewValue` свойством аргументов события, чтобы установить `Text` свойство второго `Label` . Эти два подхода к получению текущего значения `Slider` являются взаимозаменяемыми.
 
 Вот программа, выполняемая на устройствах iOS и Android:
 
 [![Базовый код Slider](slider-images/BasicSliderCode.png "Базовый код Slider")](slider-images/BasicSliderCode-Large.png#lightbox)
 
-Второй `Label` отображается текст «(неинициализированные)» до `Slider` будут обрабатывать, который вызывает первый `ValueChanged` , возникает событие. Обратите внимание на то, что число десятичных разрядов, выводимых отличается для каждой платформы. Эти различия, относящиеся к реализации платформы `Slider` и рассматриваются далее в этой статье в разделе [различий в реализации платформы](#implementations).
+Во втором `Label` выводится текст "(не инициализировано)" до тех пор `Slider` , пока не будет выполнен манипуляций, что приводит к `ValueChanged` срабатыванию первого события. Обратите внимание, что число отображаемых десятичных разрядов различается для каждой платформы. Эти различия связаны с реализациями платформы `Slider` и обсуждаются далее в этой статье в разделе [различия в реализации платформы](#implementations).
 
 ### <a name="creating-a-slider-in-xaml"></a>Создание ползунка в XAML
 
-**Базовые XAML ползунок** страница функционально является таким же, как **базовый код ползунок** но реализуется, главным образом в XAML:
+**Базовая страница XAML с ползунком** функционально аналогична основному **коду Slider** , но реализована в основном в XAML:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -143,7 +146,7 @@ public class BasicSliderCodePage : ContentPage
 </ContentPage>
 ```
 
-Файл кода содержит обработчик `ValueChanged` событий:
+Файл кода программной части содержит обработчик `ValueChanged` события:
 
 ```csharp
 public partial class BasicSliderXamlPage : ContentPage
@@ -162,21 +165,21 @@ public partial class BasicSliderXamlPage : ContentPage
 }
 ```
 
-Можно также для обработчика событий для получения `Slider` , он генерирует события с помощью `sender` аргумент. `Value` Свойство содержит текущее значение:
+Кроме того, обработчик событий может получить объект `Slider` , который заактивирует событие с помощью `sender` аргумента. `Value`Свойство содержит текущее значение:
 
 ```csharp
 double value = ((Slider)sender).Value;
 ```
 
-Если `Slider` объекта были присваивается имя в файле XAML с `x:Name` атрибут (например, «ползунок»), а затем обработчик событий может ссылаться на этот объект напрямую:
+Если `Slider` объекту было присвоено имя в XAML-файле с `x:Name` атрибутом (например, "Slider"), то обработчик событий может ссылаться на этот объект напрямую:
 
 ```csharp
 double value = slider.Value;
 ```
 
-### <a name="data-binding-the-slider"></a>Ползунок привязки данных
+### <a name="data-binding-the-slider"></a>Привязка данных ползунок
 
-**Основных привязок ползунок** странице показано, как написать практически эквивалентные программу, которая исключает `Value` обработчик событий с помощью [привязки данных](~/xamarin-forms/app-fundamentals/data-binding/index.md):
+На странице **привязки на базовых ползунках** показано, как написать почти эквивалентную программу, которая удаляет `Value` обработчик событий с помощью [привязки данных](~/xamarin-forms/app-fundamentals/data-binding/index.md):
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -205,13 +208,13 @@ double value = slider.Value;
 </ContentPage>
 ```
 
-`Rotation` Свойства первого `Label` привязан к `Value` свойство `Slider`, так как `Text` свойство второго `Label` с `StringFormat` спецификации. **Основных привязок ползунок** странице функций немного по-разному на двух предыдущих страницах: при первом отображении страницы, второй `Label` отображает текстовую строку со значением. Это является преимуществом с использованием привязки данных. Для отображения текста без привязки данных, необходимо специально инициализировать `Text` свойство `Label` или имитировать срабатывание `ValueChanged` событие путем вызова обработчика событий из конструктора класса.
+`Rotation`Свойство первого объекта `Label` привязано к `Value` свойству `Slider` , а — к свойству `Text` секунды `Label` со `StringFormat` спецификацией. **Основная страница привязок Slider** немного отличается от двух предыдущих страниц: при первом отображении страницы вторая `Label` отображает текстовую строку со значением. Это преимущество использования привязки данных. Чтобы отобразить текст без привязки данных, необходимо специально инициализировать `Text` свойство объекта `Label` или имитировать срабатывание `ValueChanged` события, вызвав обработчик события из конструктора класса.
 
 <a name="precautions" />
 
 ## <a name="precautions"></a>Меры предосторожности
 
-Значение `Minimum` свойства всегда должно быть меньше, чем значение `Maximum` свойства. В следующем примере кода причины фрагмент `Slider` для вызова исключения:
+Значение `Minimum` свойства должно всегда быть меньше значения `Maximum` Свойства. В следующем фрагменте кода вызывается `Slider` исключение:
 
 ```csharp
 // Throws an exception!
@@ -222,7 +225,7 @@ Slider slider = new Slider
 };
 ```
 
-Компилятор C# создает код, который задает эти два свойства в последовательности, и когда `Minimum` свойство имеет значение 10, больше, чем значение по умолчанию `Maximum` значение 1. В этом случае исключения можно избежать, задав `Maximum` свойства первого:
+Компилятор C# создает код, который устанавливает эти два свойства последовательно, а если `Minimum` свойство имеет значение 10, оно больше, чем значение по умолчанию, `Maximum` равное 1. Исключение в этом случае можно избежать, задав `Maximum` свойство в первую очередь:
 
 ```csharp
 Slider slider = new Slider
@@ -232,23 +235,23 @@ Slider slider = new Slider
 };
 ```
 
-Установка `Maximum` 20 проблема не возникает потому, что больше, чем значение по умолчанию `Minimum` значение 0. Когда `Minimum` не установлен, значение меньше, чем `Maximum` значение 20.
+Значение `Maximum` 20 не является проблемой, так как оно больше, чем значение по умолчанию `Minimum` 0. Если `Minimum` задано, значение меньше, чем `Maximum` значение 20.
 
-Та же проблема существует в XAML. Задайте свойства в порядке, который гарантирует, что `Maximum` был всегда больше, чем `Minimum`:
+Та же проблема существует в XAML. Задайте свойства в порядке, который гарантирует, что `Maximum` всегда будет больше `Minimum` :
 
 ```xaml
 <Slider Maximum="20"
         Minimum="10" ... />
 ```
 
-Можно задать `Minimum` и `Maximum` значения для отрицательных чисел, но только в порядке, где `Minimum` — всегда меньше, чем `Maximum`:
+Можно задать `Minimum` `Maximum` значения и для отрицательных чисел, но только в том порядке, где `Minimum` всегда меньше `Maximum` :
 
 ```xaml
 <Slider Minimum="-20"
         Maximum="-10" ... />
 ```
 
-`Value` Свойство всегда имеет больше или равно `Minimum` значение и меньше или равно `Maximum`. Если `Value` задано значение за пределами этого диапазона, значения будут приведены к находиться в диапазоне, но исключения не было. Например, этот код будет *не* исключение:
+`Value`Свойство всегда больше или равно `Minimum` значению и меньше или равно `Maximum` . Если для параметра задано `Value` значение за пределами этого диапазона, значение будет преобразовано в диапазон, но исключение не будет создано. Например, этот код *не* вызовет исключение:
 
 ```csharp
 Slider slider = new Slider
@@ -257,7 +260,7 @@ Slider slider = new Slider
 };
 ```
 
-Вместо этого `Value` приводится к типу `Maximum` значение 1.
+Вместо этого `Value` свойство приводится к `Maximum` значению 1.
 
 Ниже приведен фрагмент кода, показанный выше.
 
@@ -269,9 +272,9 @@ Slider slider = new Slider
 };
 ```
 
-Когда `Minimum` равно 10, затем `Value` также имеет значение 10.
+Если параметр `Minimum` имеет значение 10, то `Value` также устанавливается значение 10.
 
-Если `ValueChanged` во время был присоединен обработчик событий, `Value` приводится отличное значение по умолчанию 0, то `ValueChanged` события. Ниже приведен фрагмент XAML.
+Если `ValueChanged` обработчик событий был присоединен к моменту, когда `Value` свойство приводится к значению, отличному от значения по умолчанию 0, то `ValueChanged` возникает событие. Вот фрагмент кода XAML:
 
 ```xaml
 <Slider ValueChanged="OnSliderValueChanged"
@@ -279,35 +282,35 @@ Slider slider = new Slider
         Minimum="10" />
 ```
 
-Когда `Minimum` равно 10, `Value` также имеет значение 10 и `ValueChanged` события. Это может произойти, прежде чем остальной части страницы был построен, и обработчик может пытаться ссылаться на другие элементы на странице, которые еще не созданы. Может потребоваться добавить код для `ValueChanged` обработчик, который проверяет наличие `null` значений других элементов на странице. Или можно задать `ValueChanged` обработчик событий после `Slider` были инициализированы значениями.
+Если `Minimum` для параметра задано значение 10, `Value` также устанавливается значение 10, и `ValueChanged` возникает событие. Это может произойти до того, как будет создана оставшаяся часть страницы, и обработчик может попытаться сослаться на другие элементы на странице, которые еще не были созданы. Может потребоваться добавить в обработчик некоторый код `ValueChanged` , который проверяет `null` значения других элементов на странице. Или можно задать `ValueChanged` обработчик событий после `Slider` инициализации значений.
 
 <a name="implementations" />
 
 ## <a name="platform-implementation-differences"></a>Различия в реализации платформы
 
-Снимки экрана, показанный ранее отображения значения `Slider` с Разное количество десятичных запятых. Это относится к как `Slider` реализуется на платформах Android и UWP.
+Отображаемые снимки экрана ранее отображают значение `Slider` с другим числом десятичных точек. Это связано с тем, как `Slider` реализуется на платформах Android и UWP.
 
 ### <a name="the-android-implementation"></a>Реализация Android
 
-Android реализация `Slider` основан на Android [ `SeekBar` ](xref:Android.Widget.SeekBar) всегда устанавливается [ `Max` ](xref:Android.Widget.ProgressBar.Max) свойство до 1000. Это означает, что `Slider` в Android имеет только 1001 дискретные значения. Если задать `Slider` иметь `Minimum` 0 и `Maximum` 5000, а затем как `Slider` будут обрабатывать, `Value` свойство может принимать значения от 0, 5, 10, 15 и т. д.
+Реализация Android `Slider` основана на Android [`SeekBar`](xref:Android.Widget.SeekBar) и всегда устанавливает [`Max`](xref:Android.Widget.ProgressBar.Max) свойство в значение 1000. Это означает, что в `Slider` Android есть только 1 001 дискретных значения. Если присвоить параметру значение `Slider` `Minimum` 0 и значение, равное `Maximum` 5000, то при `Slider` управлении этим `Value` свойством значения будут равны 0, 5, 10, 15 и т. д.
 
-### <a name="the-uwp-implementation"></a>Реализация универсальной платформы Windows
+### <a name="the-uwp-implementation"></a>Реализация UWP
 
-Реализация UWP `Slider` основана на платформе UWP [ `Slider` ](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.slider) элемента управления. `StepFrequency` Свойство UWP `Slider` присваивается разность `Maximum` и `Minimum` свойства, разделенного на 10, но не больше 1.
+Реализация UWP `Slider` основана на [`Slider`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.slider) ЭЛЕМЕНТЕ управления UWP. `StepFrequency`Свойству UWP `Slider` присваивается разность `Maximum` свойств и, `Minimum` деленную на 10, но не больше 1.
 
-Например, для диапазона от 0 до 1, по умолчанию `StepFrequency` свойство имеет значение 0.1. Как `Slider` будут обрабатывать, `Value` свойство будет ограничен 0, 0.1, 0.2, 0.3, 0,4, 0,5, 0.6, 0,7, 0.8, 0.9 и 1.0. (Это очевидно на последней странице примера [**слидердемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos) .) Если разница между свойствами `Maximum` и `Minimum` равна 10 или больше, то `StepFrequency` имеет значение 1, а свойство `Value` имеет целочисленные значения.
+Например, для диапазона по умолчанию от 0 до 1 свойство устанавливается `StepFrequency` в значение 0,1. Как и управляется `Slider` , `Value` свойство ограничено 0, 0,1, 0,2, 0,3, 0,4, 0,5, 0,6, 0,7, 0,8, 0,9 и 1,0. (Это очевидно на последней странице примера [**слидердемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos) .) Если разница между `Maximum` `Minimum` свойствами и равна 10 или больше, то `StepFrequency` устанавливается в 1, а `Value` свойство имеет целочисленные значения.
 
-### <a name="the-stepslider-solution"></a>Решение StepSlider
+### <a name="the-stepslider-solution"></a>Решение Степслидер
 
-Более универсальное `StepSlider` обсуждается в [главе 27. Пользовательские модули подготовки](https://xamarin.azureedge.net/developer/xamarin-forms-book/XamarinFormsBook-Ch27-Apr2016.pdf) книги, *создающие мобильные приложения с помощью Xamarin. Forms*. `StepSlider` Аналогичен `Slider` , но добавляет `Steps` свойство, чтобы указать количество значений между `Minimum` и `Maximum`.
+Более гибкая часть `StepSlider` обсуждается в [главе 27. Пользовательские модули подготовки](https://xamarin.azureedge.net/developer/xamarin-forms-book/XamarinFormsBook-Ch27-Apr2016.pdf) книги, *создающие мобильные приложения с Xamarin.Forms помощью *. Объект `StepSlider` аналогичен, `Slider` но добавляет `Steps` свойство, чтобы указать количество значений в диапазоне от `Minimum` до `Maximum` .
 
-## <a name="sliders-for-color-selection"></a>Ползунки для выбранного цвета
+## <a name="sliders-for-color-selection"></a>Ползунки для выбора цвета
 
-Последние два страниц в [ **SliderDemos** ](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos) пример, как использовать три `Slider` экземпляры для выбранного цвета. Первой страницы обрабатывает все взаимодействия в файле кода, в то время второй странице показано, как использовать привязку данных с помощью модели представления.
+Последние две страницы в образце [**слидердемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos) используют три `Slider` экземпляра для выбора цвета. Первая страница обрабатывает все взаимодействия в файле кода программной части, а вторая страница показывает, как использовать привязку данных с ViewModel.
 
-### <a name="handling-sliders-in-the-code-behind-file"></a>Ползунки обработки в файл с выделенным кодом
+### <a name="handling-sliders-in-the-code-behind-file"></a>Обработка ползунков в файле кода программной части
 
-**Ползунки цвета RGB** создает страницу `BoxView` для отображения цвета, три `Slider` экземпляров для выбора красного, зеленого и синего компонентов цвета и три `Label` элементов для отображения этих цвет значения:
+На странице **ползунки цвета RGB** создается экземпляр `BoxView` для отображения цвета, трех `Slider` экземпляров для выбора красного, зеленого и синего компонентов цвета, а также три `Label` элемента для отображения этих значений цвета:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -349,7 +352,7 @@ Android реализация `Slider` основан на Android [ `SeekBar` ](
 </ContentPage>
 ```
 
-Объект `Style` предоставляет все три `Slider` элементов в диапазоне от 0 до 255. `Slider` Элементы одного и того же `ValueChanged` обработчик, который реализован в файле кода:
+`Style`Предоставляет все три `Slider` элемента в диапазоне от 0 до 255. `Slider`Элементы используют один и тот же `ValueChanged` обработчик, который реализуется в файле кода программной части:
 
 ```csharp
 public partial class RgbColorSlidersPage : ContentPage
@@ -381,13 +384,13 @@ public partial class RgbColorSlidersPage : ContentPage
 }
 ```
 
-Первый раздел наборы `Text` свойство одного из `Label` экземпляров короткая строка текста, указывающее значение `Slider` в шестнадцатеричном формате. Затем все три `Slider` экземпляры доступны для создания `Color` значение RGB компонентов:
+В первом разделе `Text` свойству одного из экземпляров присваивается `Label` короткая текстовая строка, указывающая значение `Slider` в шестнадцатеричном формате. Затем осуществляется доступ ко всем трем `Slider` экземплярам для создания `Color` значения из компонентов RGB:
 
 [![Ползунки цвета RGB](slider-images/RgbColorSliders.png "Ползунки цвета RGB")](slider-images/RgbColorSliders-Large.png#lightbox)
 
-### <a name="binding-the-slider-to-a-viewmodel"></a>Привязка ползунка к модели представления
+### <a name="binding-the-slider-to-a-viewmodel"></a>Привязка ползунка к ViewModel
 
-**HSL шкалы** странице показано, как использовать модель представления для выполнения вычислений, используемый для создания `Color` значение на основе значений цветового тона, насыщенности и яркости. Все ViewModels, такие как `HSLColorViewModel` класс реализует `INotifyPropertyChanged` интерфейс и активируется `PropertyChanged` событие при изменении одного из свойств:
+На странице **ползунки цвета HSL** показано, как использовать ViewModel для выполнения вычислений, используемых для создания `Color` значений из оттенков, насыщенности и значений яркости. Как и для всех ViewModels, `HSLColorViewModel` класс реализует `INotifyPropertyChanged` интерфейс и запускает `PropertyChanged` событие при каждом изменении одного из свойств:
 
 ```csharp
 public class HslColorViewModel : INotifyPropertyChanged
@@ -462,9 +465,9 @@ public class HslColorViewModel : INotifyPropertyChanged
 }
 ```
 
-ViewModels и `INotifyPropertyChanged` в этой статье обсуждаются интерфейс [привязки данных](~/xamarin-forms/app-fundamentals/data-binding/index.md).
+ViewModels и `INotifyPropertyChanged` Interface обсуждаются в [привязке данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)статьи.
 
-**HslColorSlidersPage.xaml** файл экземпляр `HslColorViewModel` и задает его на страницу `BindingContext` свойство. Благодаря этому все элементы в файле XAML для привязки к свойствам в ViewModel:
+Файл **хслколорслидерспаже. XAML** создает экземпляр `HslColorViewModel` и задает его `BindingContext` свойству страницы. Это позволяет выполнять привязку всех элементов в файле XAML к свойствам в ViewModel:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -501,13 +504,13 @@ ViewModels и `INotifyPropertyChanged` в этой статье обсуждаю
 </ContentPage>
 ```
 
-Как `Slider` элементы управления этим состоянием `BoxView` и `Label` элементы будут обновлены из ViewModel:
+По мере `Slider` манипуляции с элементами `BoxView` `Label` элементы и обновляются из ViewModel:
 
 [![Ползунки цвета HSL](slider-images/HslColorSliders.png "Ползунки цвета HSL")](slider-images/HslColorSliders-Large.png#lightbox)
 
-`StringFormat` Компонент `Binding` расширение разметки настроено для формата «F2» отображение двумя десятичными разрядами. (Форматирование строк в привязках данных рассматривается в статье [Форматирование строк](~/xamarin-forms/app-fundamentals/data-binding/string-formatting.md).) Однако версия программы UWP ограничена значениями 0, 0,1, 0,2,... 0,9 и 1,0. Это является прямым следствием реализации UWP `Slider` как описано выше в разделе [различий в реализации платформы](#implementations).
+`StringFormat`Компонент `Binding` расширения разметки задается в формате "F2" для вывода двух десятичных разрядов. (Форматирование строк в привязках данных рассматривается в статье [Форматирование строк](~/xamarin-forms/app-fundamentals/data-binding/string-formatting.md).) Однако версия программы UWP ограничена значениями 0, 0,1, 0,2,... 0,9 и 1,0. Это прямой результат реализации UWP, `Slider` как описано выше в разделе [различия в реализации платформы](#implementations).
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример демонстрации "ползунок"](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos)
-- [Ползунок API](xref:Xamarin.Forms.Slider)
+- [Пример демонстрации Slider](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos)
+- [API Slider](xref:Xamarin.Forms.Slider)

@@ -1,24 +1,27 @@
 ---
-title: Тень Мастердетаилпаже на iOS
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая определяет, применена ли к странице сведений Мастердетаилпаже теневая копия при раскрытии главной страницы.
-ms.prod: xamarin
-ms.assetid: FB907EA2-C00A-43A5-84B1-A43584C867A5
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/05/2020
-ms.openlocfilehash: eaa82b5accae73e4c6e8eb8d3fbcc873fc111be9
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: aaf94536d41da47aec10fc655f9d053b753da5a2
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82532961"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135971"
 ---
 # <a name="masterdetailpage-shadow-on-ios"></a>Тень Мастердетаилпаже на iOS
 
-[![Скачать пример](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Эта платформа управляет тем, применяется ли к ней теневая [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) страница сведений при раскрытии главной страницы. Он используется в XAML путем установки свойства `MasterDetailPage.ApplyShadow` BIND в значение: `true`
+Эта платформа управляет тем [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) , применяется ли к ней теневая страница сведений при раскрытии главной страницы. Он используется в XAML путем установки `MasterDetailPage.ApplyShadow` Свойства BIND в значение `true` :
 
 ```xaml
 <MasterDetailPage ...
@@ -45,7 +48,7 @@ public class iOSMasterDetailPageCS : MasterDetailPage
 }
 ```
 
-`MasterDetailPage.On<iOS>` Метод указывает, что эта платформа будет запускаться только в iOS. `MasterDetailPage.SetApplyShadow` Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, применена ли к странице детализации к [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) ней теневая страница при раскрытии главной страницы. Кроме того, `GetApplyShadow` метод можно использовать для определения того, применяется ли тень к странице сведений `MasterDetailPage`.
+`MasterDetailPage.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `MasterDetailPage.SetApplyShadow`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, применена ли к странице детализации к [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) ней теневая страница при раскрытии главной страницы. Кроме того, `GetApplyShadow` метод можно использовать для определения того, применяется ли тень к странице сведений `MasterDetailPage` .
 
 В результате на страницу детализации [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) может быть применена теневая копия при раскрытии главной страницы:
 

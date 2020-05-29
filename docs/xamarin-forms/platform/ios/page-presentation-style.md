@@ -1,18 +1,21 @@
 ---
-title: Стиль представления модальной страницы в iOS
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS для установки стиля представления модальной страницы.
-ms.prod: xamarin
-ms.assetid: C791F7CF-330A-44BA-987A-4CFCCBB9278B
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/02/2020
-ms.openlocfilehash: 19175a6d97afb9d2d985d8a1bf8e1ce4c0179242
-ms.sourcegitcommit: 87035b654434c22ca1b0d70ee8d2496dcb63b365
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2abc255964df35fbdfeb4191911c57df9be99fd9
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83546510"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84128015"
 ---
 # <a name="modal-page-presentation-style-on-ios"></a>Стиль представления модальной страницы в iOS
 
@@ -60,7 +63,7 @@ public class iOSModalFormSheetPageCS : ContentPage
 [![](page-presentation-style-images/modal-presentation-style-small.png "Modal Presentation Styles")](page-presentation-style-images/modal-presentation-style-large.png#lightbox "Modal Presentation Styles")
 
 > [!NOTE]
-> Страницы, использующие эту платформу для установки модального стиля представления, должны использовать модальную навигацию. Дополнительные сведения см. в разделе [модальные страницы Xamarin. Forms](~/xamarin-forms/app-fundamentals/navigation/modal.md).
+> Страницы, использующие эту платформу для установки модального стиля представления, должны использовать модальную навигацию. Дополнительные сведения см. в разделе [ Xamarin.Forms модальные страницы](~/xamarin-forms/app-fundamentals/navigation/modal.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 

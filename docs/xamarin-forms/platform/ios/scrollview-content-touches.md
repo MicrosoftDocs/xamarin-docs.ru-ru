@@ -1,24 +1,27 @@
 ---
-title: Скроллвиевное содержимое касается iOS
-description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая определяет, обрабатывает ли Скроллвиев жест касания или передает его в его содержимое.
-ms.prod: xamarin
-ms.assetid: 99F823DB-B379-40F0-A343-A9783C341120
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 10/24/2018
-ms.openlocfilehash: 154666cce4ad6c53949952fa93f5ad7dc89824ab
-ms.sourcegitcommit: 3ea9ee034af9790d2b0dc0893435e997bd06e587
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9b8f743b2c3d7f4b38feb4cfc5015b1113620562
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68651761"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137102"
 ---
 # <a name="scrollview-content-touches-on-ios"></a>Скроллвиевное содержимое касается iOS
 
-[![Скачать пример](~/media/shared/download.png) Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Таймеру неявное активируется в том случае, когда начинается жест касания в [ `ScrollView` ](xref:Xamarin.Forms.ScrollView) в iOS и `ScrollView` решает, в зависимости от действий пользователя в течение интервала таймера, он должен обрабатывать жест или передайте его на его содержимое. По умолчанию iOS `ScrollView` содержимого штрихи задержки, но это может вызвать проблемы в некоторых случаях при работе с `ScrollView` содержимое, не выиграть жест, когда это требуется. Таким образом, эта определяет специфические для платформы ли `ScrollView` жест касания обрабатывает или передает его на его содержимое. Он используется в XAML, задав `ScrollView.ShouldDelayContentTouches` вложенное свойство, чтобы `boolean` значение:
+Неявный таймер активируется, когда жест касания начинается в [`ScrollView`](xref:Xamarin.Forms.ScrollView) iOS, и `ScrollView` принимает решение на основе действия пользователя в диапазоне таймера, должно ли оно обрабатывать этот жест или передавать его содержимому. По умолчанию в iOS `ScrollView` содержимое задерживается, но это может вызвать проблемы в некоторых обстоятельствах, `ScrollView` когда содержимое не выигрывает жест, когда оно должно. Поэтому эта платформа управляет тем, обрабатывает ли объект `ScrollView` жест касания или передает его содержимому. Он используется в XAML путем присвоения `ScrollView.ShouldDelayContentTouches` свойству присоединенного свойства `boolean` значения:
 
 ```xaml
 <MasterDetailPage ...
@@ -39,7 +42,7 @@ ms.locfileid: "68651761"
 </MasterDetailPage>
 ```
 
-Кроме того его можно будет использовать с помощью C# с помощью текучего API:
+Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
 using Xamarin.Forms.PlatformConfiguration;
@@ -49,18 +52,18 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 scrollView.On<iOS>().SetShouldDelayContentTouches(false);
 ```
 
-`ScrollView.On<iOS>` Метод указывает, что этой платформы будет выполняться только на устройствах iOS. `ScrollView.SetShouldDelayContentTouches` Метод в [ `Xamarin.Forms.PlatformConfiguration.iOSSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен, используемый для управления ли [ `ScrollView` ](xref:Xamarin.Forms.ScrollView) жест касания обрабатывает или передает его на его содержимое. Кроме того `SetShouldDelayContentTouches` метод можно использовать для переключения задержки содержимого штрихи, вызвав `ShouldDelayContentTouches` метод для возврата, отложена ли штрихи содержимого:
+`ScrollView.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `ScrollView.SetShouldDelayContentTouches`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, обрабатывает ли объект [`ScrollView`](xref:Xamarin.Forms.ScrollView) жест касания или передает его содержимому. Кроме того, `SetShouldDelayContentTouches` метод можно использовать для переключения задержки содержимого с помощью вызова `ShouldDelayContentTouches` метода, чтобы вернуть отложенные касания содержимого:
 
 ```csharp
 scrollView.On<iOS>().SetShouldDelayContentTouches(!scrollView.On<iOS>().ShouldDelayContentTouches());
 ```
 
-В результате [ `ScrollView` ](xref:Xamarin.Forms.ScrollView) можно отключить, задерживая получение содержимого штрихи, таким образом, в этом сценарии [ `Slider` ](xref:Xamarin.Forms.Slider) получает жест, а не [ `Detail` ](xref:Xamarin.Forms.MasterDetailPage.Detail) странице [ `MasterDetailPage` ](xref:Xamarin.Forms.MasterDetailPage):
+В результате [`ScrollView`](xref:Xamarin.Forms.ScrollView) может быть отключена Задержка получения содержимого, поэтому в этом сценарии объект [`Slider`](xref:Xamarin.Forms.Slider) получает жест, а не [`Detail`](xref:Xamarin.Forms.MasterDetailPage.Detail) страницу из [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) :
 
-[![](scrollview-content-touches-images/scrollview-delay-content-touches.png "Задержка ScrollView содержимое касается платформы")](scrollview-content-touches-images/scrollview-delay-content-touches-large.png#lightbox "ScrollView задержки содержимого затрагивает специфические для платформы")
+[![](scrollview-content-touches-images/scrollview-delay-content-touches.png "ScrollView Delay Content Touches Platform-Specific")](scrollview-content-touches-images/scrollview-delay-content-touches-large.png#lightbox "ScrollView Delay Content Touches Platform-Specific")
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PlatformSpecifics (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

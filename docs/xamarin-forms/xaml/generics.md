@@ -1,34 +1,37 @@
 ---
-title: Универсальные шаблоны в XAML Xamarin. Forms
-description: XAML Xamarin. Forms обеспечивает поддержку использования универсальных типов CLR путем указания универсальных ограничений в качестве аргументов типа.
-ms.prod: xamarin
-ms.assetid: 97B73048-4F90-41AD-AB48-8EB804C4998B
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/28/2020
-ms.openlocfilehash: 9cda08a3bab0e25db2315c9795721e25d47d2429
-ms.sourcegitcommit: 154a3e7aec775327565bb54eda1a610976af1d6f
+title: Универсальные шаблоны в Xamarin.Forms XAML
+description: Xamarin.FormsXAML обеспечивает поддержку использования универсальных типов CLR путем указания универсальных ограничений в качестве аргументов типа.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 814e622a822e2eb1cf07f71bfb1da1d6eac5631f
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82624713"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138116"
 ---
-# <a name="generics-in-xamarinforms-xaml"></a>Универсальные шаблоны в XAML Xamarin. Forms
+# <a name="generics-in-xamarinforms-xaml"></a>Универсальные шаблоны в Xamarin.Forms XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-generics/)
 
-XAML Xamarin. Forms обеспечивает поддержку использования универсальных типов CLR путем указания универсальных ограничений в качестве аргументов типа. Эта поддержка обеспечивается `x:TypeArguments` директивой, которая передает аргументы универсального типа с ограничением по отношению к конструктору универсального типа.
+Xamarin.FormsXAML обеспечивает поддержку использования универсальных типов CLR путем указания универсальных ограничений в качестве аргументов типа. Эта поддержка обеспечивается `x:TypeArguments` директивой, которая передает аргументы универсального типа с ограничением по отношению к конструктору универсального типа.
 
 > [!IMPORTANT]
-> Определение универсальных классов в XAML Xamarin. Forms с `x:TypeArguments` помощью директивы не поддерживается.
+> Определение универсальных классов в Xamarin.Forms XAML с помощью `x:TypeArguments` директивы не поддерживается.
 
-Аргументы типа указываются в виде строки и обычно являются префиксами, такими как `sys:String` и. `sys:Int32` Префикс является обязательным, так как стандартные типы универсальных ограничений CLR берутся из библиотек, которые не сопоставлены с пространством имен Xamarin. Forms по умолчанию. Однако встроенные типы XAML 2009, такие как `x:String` и `x:Int32`, также могут быть указаны в виде аргументов типа, где `x` — это пространство имен языка XAML для XAML 2009. Дополнительные сведения о встроенных типах XAML 2009 см. в разделе [Языковые примитивы xaml 2009](/dotnet/desktop-wpf/xaml-services/types-for-primitives#xaml-2009-language-primitives).
+Аргументы типа указываются в виде строки и обычно являются префиксами, такими как `sys:String` и `sys:Int32` . Требуется префикс, поскольку стандартные типы универсальных ограничений CLR берутся из библиотек, которые не сопоставлены с Xamarin.Forms пространством имен по умолчанию. Однако встроенные типы XAML 2009, такие как `x:String` и `x:Int32` , также могут быть указаны в виде аргументов типа, где `x` — это пространство имен языка xaml для XAML 2009. Дополнительные сведения о встроенных типах XAML 2009 см. в разделе [Языковые примитивы xaml 2009](/dotnet/desktop-wpf/xaml-services/types-for-primitives#xaml-2009-language-primitives).
 
 Несколько аргументов типа можно указать с помощью разделителя запятыми. Кроме того, если универсальное ограничение использует универсальные типы, аргументы типа вложенного ограничения должны содержаться в круглых скобках.
 
 > [!NOTE]
-> Расширение `x:Type` разметки предоставляет ссылку на тип CLR для универсального типа и имеет аналогичную функцию для `typeof` оператора в C#. Дополнительные сведения см. в разделе [расширение разметки x:Type](~/xamarin-forms/xaml/markup-extensions/consuming.md#type).
+> `x:Type`Расширение разметки предоставляет ссылку на тип CLR для универсального типа и имеет аналогичную функцию для `typeof` оператора в C#. Дополнительные сведения см. в разделе [расширение разметки x:Type](~/xamarin-forms/xaml/markup-extensions/consuming.md#type).
 
 ## <a name="single-primitive-type-argument"></a>Один аргумент примитивного типа
 
@@ -55,9 +58,9 @@ XAML Xamarin. Forms обеспечивает поддержку использо
 </ContentPage>
 ```
 
-В этом примере `System.Collections.Generic` определен как пространство имен `scg` XAML. `CollectionView.ItemsSource` Свойству присваивается значение `List<T>` , которое создается с помощью аргумента `string` типа, используя встроенный `x:String` тип XAML 2009. `List<string>` Коллекция инициализируется несколькими `string` элементами.
+В этом примере `System.Collections.Generic` определен как `scg` пространство имен XAML. Свойству присваивается значение `CollectionView.ItemsSource` `List<T>` , которое создается с `string` помощью аргумента типа, используя встроенный тип XAML 2009 `x:String` . `List<string>`Коллекция инициализируется несколькими `string` элементами.
 
-Кроме того, можно создать экземпляр `List<T>` коллекции с типом CLR `String` , но эквивалентным образом.
+Кроме того, `List<T>` можно создать экземпляр коллекции с типом CLR, но эквивалентным `String` образом.
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -136,7 +139,7 @@ XAML Xamarin. Forms обеспечивает поддержку использо
 </ContentPage>
 ```
 
-В `GenericsDemo.Models` этом примере определяется как пространство `models` имен XAML и `System.Collections.Generic` определяется как пространство имен `scg` XAML. `CollectionView.ItemsSource` Свойство имеет значение `List<T>` , для которого создается экземпляр с аргументом `Monkey` типа. `List<Monkey>` Коллекция инициализируется `Monkey` с помощью нескольких элементов, а объект [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , определяющий внешний вид каждого `Monkey` объекта, задается в `ItemTemplate` виде объекта [`CollectionView`](xref:Xamarin.Forms.CollectionView).
+В этом примере определяется `GenericsDemo.Models` как `models` пространство имен XAML и `System.Collections.Generic` определяется как `scg` пространство имен XAML. `CollectionView.ItemsSource`Свойство имеет значение `List<T>` , для которого создается экземпляр с `Monkey` аргументом типа. `List<Monkey>`Коллекция инициализируется с помощью нескольких `Monkey` элементов, а объект [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , определяющий внешний вид каждого объекта, `Monkey` задается в виде объекта `ItemTemplate` [`CollectionView`](xref:Xamarin.Forms.CollectionView) .
 
 ## <a name="multiple-type-arguments"></a>Несколько аргументов типа
 
@@ -205,11 +208,11 @@ XAML Xamarin. Forms обеспечивает поддержку использо
 </ContentPage    
 ```
 
-В `GenericsDemo.Models` этом примере определяется как пространство `models` имен XAML и `System.Collections.Generic` определяется как пространство имен `scg` XAML. `CollectionView.ItemsSource` Свойству `List<T>` присваивается значение, которое создается `KeyValuePair<TKey, TValue>` с ограничением, с аргументами `string` типа внутреннего ограничения и. `Monkey` `List<KeyValuePair<string,Monkey>>` Коллекция инициализируется с `KeyValuePair` помощью нескольких элементов, с использованием конструктора, не являющегося `KeyValuePair` конструктором по умолчанию, и [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , определяющего `Monkey` внешний вид каждого объекта, `ItemTemplate` задается в виде объекта [`CollectionView`](xref:Xamarin.Forms.CollectionView). Дополнительные сведения о передаче аргументов конструктору, не являющемуся по умолчанию, см. в разделе [Передача аргументов конструктора](~/xamarin-forms/xaml/passing-arguments.md#constructor_arguments).
+В этом примере определяется `GenericsDemo.Models` как `models` пространство имен XAML и `System.Collections.Generic` определяется как `scg` пространство имен XAML. Свойству присваивается значение `CollectionView.ItemsSource` `List<T>` , которое создается с `KeyValuePair<TKey, TValue>` ограничением, с аргументами типа внутреннего ограничения `string` и `Monkey` . `List<KeyValuePair<string,Monkey>>`Коллекция инициализируется с `KeyValuePair` помощью нескольких элементов, с использованием конструктора, не являющегося конструктором по умолчанию `KeyValuePair` , и [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , определяющего внешний вид каждого `Monkey` объекта, задается в виде объекта `ItemTemplate` [`CollectionView`](xref:Xamarin.Forms.CollectionView) . Дополнительные сведения о передаче аргументов конструктору, не являющемуся по умолчанию, см. в разделе [Передача аргументов конструктора](~/xamarin-forms/xaml/passing-arguments.md#constructor_arguments).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Универсальные шаблоны в XAML (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-generics/)
 - [Примитивы языка XAML 2009](/dotnet/desktop-wpf/xaml-services/types-for-primitives#xaml-2009-language-primitives)
-- [x:Type, расширение разметки](~/xamarin-forms/xaml/markup-extensions/consuming.md#type)
+- [Расширение разметки x:Type](~/xamarin-forms/xaml/markup-extensions/consuming.md#type)
 - [Передача аргументов конструктора](~/xamarin-forms/xaml/passing-arguments.md#constructor_arguments)
