@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsМетка
-description: Xamarin.FormsМакеты используются для создания элементов управления пользовательского интерфейса в визуальных структурах. В этой статье перечислены макеты, входящие в Xamarin.Forms .
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: c39bf29feceaf598ac8fd38e6af3d227b6deddc0
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137310"
+Title: " Xamarin.Forms Layouts" Description: " Xamarin.Forms Layouts используется для создания элементов управления пользовательского интерфейса в визуальных структурах. В этой статье перечислены макеты, входящие в Xamarin.Forms .
+MS. произв. Xamarin MS. AssetID: F4180997-BA21-453A-9958-D1E2940DF050 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 05/21/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-layouts"></a>Xamarin.FormsМетка
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
@@ -57,7 +43,7 @@ _Макеты Xamarin.Forms используются для создания э�
 
 |     |     |
 | --- | --- |
-| [`ScrollView`](xref:Xamarin.Forms.ScrollView)может выполнять прокрутку содержимого. Задайте [`Content`](xref:Xamarin.Forms.ScrollView.Content) для свойства представление или макет, размер которого не умещается на экране. (Содержимое объекта `ScrollView` очень часто представляет собой [`StackLayout`](#stackLayout) .) Задайте [`Orientation`](xref:Xamarin.Forms.ScrollView.Orientation) свойство, чтобы указать, должна ли прокрутка быть вертикальной, горизонтальной или обеих.<br /><br />[Документация по API](xref:Xamarin.Forms.ScrollView)  /  [Руководством](~/xamarin-forms/user-interface/layouts/scroll-view.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout) | [![Пример Скроллвиев](layouts-images/ScrollView.png "Пример Скроллвиев")](layouts-images/ScrollView-Large.png#lightbox "Пример Скроллвиев")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ScrollViewDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ScrollViewDemoPage.xaml) |
+| [`ScrollView`](xref:Xamarin.Forms.ScrollView)может выполнять прокрутку содержимого. Задайте [`Content`](xref:Xamarin.Forms.ScrollView.Content) для свойства представление или макет, размер которого не умещается на экране. (Содержимое объекта `ScrollView` очень часто представляет собой [`StackLayout`](#stackLayout) .) Задайте [`Orientation`](xref:Xamarin.Forms.ScrollView.Orientation) свойство, чтобы указать, должна ли прокрутка быть вертикальной, горизонтальной или обеих.<br /><br />[Документация по API](xref:Xamarin.Forms.ScrollView)  /  [Руководством](~/xamarin-forms/user-interface/layouts/scrollview.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout) | [![Пример Скроллвиев](layouts-images/ScrollView.png "Пример Скроллвиев")](layouts-images/ScrollView-Large.png#lightbox "Пример Скроллвиев")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ScrollViewDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ScrollViewDemoPage.xaml) |
 |     |     |
 
 ### <a name="templatedview"></a>TemplatedView
@@ -89,7 +75,7 @@ _Макеты Xamarin.Forms используются для создания э�
 
 <a name="grid" />
 
-### <a name="grid"></a>Макет Grid
+### <a name="grid"></a>Grid
 
 |     |     |
 | --- | --- |

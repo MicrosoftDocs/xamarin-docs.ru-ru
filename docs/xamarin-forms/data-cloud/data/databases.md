@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsЛокальные базы данных
-description: Xamarin.Formsподдерживает приложения, управляемые базой данных, с помощью обработчика базы данных SQLite, что дает возможность загружать и сохранять объекты в общем коде. В этой статье описывается Xamarin.Forms , как приложения могут считывать и записывать данные в локальную базу данных SQLite с помощью SQLite.NET.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 04d813baae5796da68ea27389df33738af5cde3e
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84131005"
+Title: " Xamarin.Forms локальные базы данных" Описание: " Xamarin.Forms поддерживает приложения, управляемые базой данных, с помощью обработчика базы данных SQLite, что дает возможность загружать и сохранять объекты в общем коде. В этой статье описывается Xamarin.Forms , как приложения могут считывать и записывать данные в локальную базу данных SQLite с помощью SQLite.NET.
+MS. произв. Xamarin MS. AssetID: F687B24B-7DF0-4F8E-A21A-A9BB507480EB MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 12/05/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-local-databases"></a>Xamarin.FormsЛокальные базы данных
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo)
@@ -39,7 +25,7 @@ ms.locfileid: "84131005"
 
 Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
 
-- **Автор:** Фрэнк А. Крюгер (Frank A. Krueger)
+- **Кем создано:** Федор A. Круежер (праекларум)
 - **ID:** SQLite-NET-PCL
 - **Ссылка NuGet:** [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)
 
@@ -236,7 +222,7 @@ public static TodoItemDatabase Database
 }
 ```
 
-Это свойство позволяет Xamarin.Forms компонентам вызывать методы получения и обработки данных в `Database` экземпляре в ответ на взаимодействие с пользователем. Пример.
+Это свойство позволяет Xamarin.Forms компонентам вызывать методы получения и обработки данных в `Database` экземпляре в ответ на взаимодействие с пользователем. Пример:
 
 ```csharp
 var saveButton = new Button { Text = "Save" };

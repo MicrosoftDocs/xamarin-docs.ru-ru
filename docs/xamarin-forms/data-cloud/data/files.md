@@ -1,28 +1,17 @@
 ---
-title: Обработка файлов в Xamarin.Forms
-description: Обработку файлов в Xamarin.Forms можно выполнить с помощью кода в библиотеке .NET Standard или внедренных ресурсов.
-ms.prod: xamarin
-ms.assetid: 9987C3F6-5F04-403B-BBB4-ECB024EA6CC8
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 06/21/2018
-ms.openlocfilehash: fb3bbda3caee9fdbd490aaea7e119baf470eedd1
-ms.sourcegitcommit: 4cf434b126eb7df6b2fd9bb1d71613bf2b6aac0e
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997167"
+Title: "обработка файлов в Xamarin.Forms описании:" обработка файлов Xamarin.Forms может быть достигнута с помощью кода в библиотеке .NET Standard или с помощью внедренных ресурсов ".
+MS. произв. Xamarin MS. AssetID: 9987C3F6-5F04-403B-BBB4-ECB024EA6CC8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/21/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
-# <a name="file-handling-in-xamarinforms"></a>Обработка файлов в Xamarin.Forms
+
+# <a name="file-handling-in-xamarinforms"></a>Обработка файлов вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithfiles)
 
-_Обработку файлов в Xamarin.Forms можно выполнить с помощью кода в библиотеке .NET Standard или внедренных ресурсов._
+_Обработка файлов в Xamarin.Forms среде может быть достигнута с помощью кода в библиотеке .NET Standard или с помощью внедренных ресурсов._
 
 ## <a name="overview"></a>Обзор
 
-Код Xamarin.Forms выполняется на нескольких платформах, каждая из которых имеет свою собственную файловую систему. Ранее это означало, что чтение и запись файлов проще всего выполнялись с помощью собственных API файлов на каждой платформе. Кроме того, внедренные ресурсы позволяют проще распространять файлы данных с приложением. Однако с помощью .NET Standard 2.0 можно совместно использовать код доступа к файлам в библиотеках .NET Standard.
+Xamarin.Formsкод выполняется на нескольких платформах, каждый из которых имеет собственную файловую систему. Ранее это означало, что чтение и запись файлов проще всего выполнялись с помощью собственных API файлов на каждой платформе. Кроме того, внедренные ресурсы позволяют проще распространять файлы данных с приложением. Однако с помощью .NET Standard 2.0 можно совместно использовать код доступа к файлам в библиотеках .NET Standard.
 
 Дополнительные сведения об обработке файлов изображений см. на странице [Работа с изображениями](~/xamarin-forms/user-interface/images.md).
 
@@ -50,7 +39,7 @@ string text = File.ReadAllText(fileName);
 bool doesExist = File.Exists(fileName);
 ```
 
-Путь к файлу на каждой платформе можно определить из библиотеки .NET Standard, используя значение перечисления [`Environment.SpecialFolder`](xref:System.Environment.SpecialFolder) в качестве первого аргумента метода `Environment.GetFolderPath`. Затем его можно объединить с именем файла с помощью метода `Path.Combine`:
+Путь к файлу на каждой платформе можно определить из .NET Standard библиотеки, используя значение [`Environment.SpecialFolder`](xref:System.Environment.SpecialFolder) перечисления в качестве первого аргумента `Environment.GetFolderPath` метода. Затем его можно объединить с именем файла с помощью метода `Path.Combine`:
 
 ```csharp
 string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
@@ -64,19 +53,19 @@ string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFold
 
 ## <a name="loading-files-embedded-as-resources"></a>Загрузка файлов, внедряемых в качестве ресурсов
 
-Чтобы внедрить файл в сборку **.NET Standard**, создайте или добавьте файл и убедитесь, что задана конфигурация **Build Action (Действие при сборке): EmbeddedResource**.
+Чтобы внедрить файл в сборку **.NET Standard**, создайте или добавьте файл и убедитесь, что настроено **Действие при сборке: EmbeddedResource**.
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![Настройка параметра действия сборки внедренного ресурса](files-images/vs-embeddedresource-sml.png "EmbeddedResource") действие при построении](files-images/vs-embeddedresource.png#lightbox "Настройка EmbeddedResource")
+[![Настройка действия сборки внедренного ресурса](files-images/vs-embeddedresource-sml.png "Настройка EmbeddedResource")](files-images/vs-embeddedresource.png#lightbox "Настройка EmbeddedResource")
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![Текстовый файл, внедренный в библиотеку .NET Standard, Настройка параметра действия сборки внедренного ресурса](files-images/xs-embeddedresource-sml.png "EmbeddedResource") действие](files-images/xs-embeddedresource.png#lightbox "Настройка EmbeddedResource")
+[![Текстовый файл, внедренный в библиотеку .NET Standard, Настройка действия сборки внедренного ресурса](files-images/xs-embeddedresource-sml.png "Настройка EmbeddedResource")](files-images/xs-embeddedresource.png#lightbox "Настройка EmbeddedResource")
 
 -----
 
-`GetManifestResourceStream` используется для доступа к внедренному файлу с помощью его **идентификатора ресурса**. По умолчанию идентификатор ресурса — это имя файла с префиксом пространства имен по умолчанию для проекта, в котором он внедрен. в этом случае сборка является **воркингвисфилес** , а имя файла — **либтекстресаурце. txt**, поэтому идентификатор ресурса — `WorkingWithFiles.LibTextResource.txt`.
+`GetManifestResourceStream` используется для доступа к внедренному файлу с помощью его **идентификатора ресурса**. По умолчанию идентификатор ресурса — это имя файла с префиксом пространства имен по умолчанию для проекта, в котором он внедрен. в этом случае сборка является **воркингвисфилес** , а имя файла — **либтекстресаурце. txt**, поэтому идентификатор ресурса — `WorkingWithFiles.LibTextResource.txt` .
 
 ```csharp
 var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
@@ -90,7 +79,7 @@ using (var reader = new System.IO.StreamReader (stream))
 
 После этого можно воспользоваться переменной `text`, чтобы отобразить текст или использовать его в коде иным образом. Этот снимок экрана [примера приложения](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithfiles) отображает текст, отрисованный в элементе управления `Label`.
 
- [![Текстовый файл, внедренный в](files-images/pcltext-sml.png "внедренный текстовый файл библиотеки .NET standard в библиотеке .NET Standard, отображаемой в приложении")](files-images/pcltext.png#lightbox "Внедренный текстовый файл в библиотеке .NET Standard, отображаемой в приложении")
+ [![Текстовый файл, внедренный в библиотеку .NET Standard](files-images/pcltext-sml.png "Внедренный текстовый файл в библиотеке .NET Standard, отображаемой в приложении")](files-images/pcltext.png#lightbox "Внедренный текстовый файл в библиотеке .NET Standard, отображаемой в приложении")
 
 Загрузка и десериализация XML выполняется так же просто. В следующем коде показан XML-файл, который загружается и десериализируется из ресурса, а затем привязывается к `ListView` для отображения. Этот XML-файл содержит массив объектов `Monkey` (класс определен в примере кода).
 
@@ -106,7 +95,7 @@ var listView = new ListView ();
 listView.ItemsSource = monkeys;
 ```
 
- [![XML-файл, внедренный в библиотеку .NET Standard, отображается во](files-images/pclxml-sml.png "внедренном XML-файле ListView в библиотеке .NET Standard, отображаемой в ListView")](files-images/pclxml.png#lightbox "Внедренный XML-файл в библиотеке .NET Standard, отображаемой в ListView")
+ [![XML-файл, внедренный в библиотеку .NET Standard, отображается в ListView](files-images/pclxml-sml.png "Внедренный XML-файл в библиотеке .NET Standard, отображаемой в ListView")](files-images/pclxml.png#lightbox "Внедренный XML-файл в библиотеке .NET Standard, отображаемой в ListView")
 
 <a name="Embedding_in_Shared_Projects" />
 
@@ -167,5 +156,5 @@ foreach (var res in assembly.GetManifestResourceNames()) {
 ## <a name="related-links"></a>Связанные ссылки
 
 - [FilesSample](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithfiles)
-- [Примеры Xamarin.Forms](https://github.com/xamarin/xamarin-forms-samples)
+- [Xamarin.FormsРегистрируют](https://github.com/xamarin/xamarin-forms-samples)
 - [Работа с файловой системой в Xamarin.iOS](~/ios/app-fundamentals/file-system.md)

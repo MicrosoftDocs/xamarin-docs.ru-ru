@@ -1,22 +1,8 @@
 ---
-title: ''
-description: Интеграция веб-службы в приложение является распространенным сценарием. В этой статье показано, как использовать веб-службу RESTFUL из Xamarin.Forms приложения.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: ecfcede22e96a4a91f5367dae49b0d837ca2416f
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139169"
+Title: "использование веб-службы RESTFUL" Description: "Интеграция веб-службы в приложение является распространенным сценарием. В этой статье показано, как использовать веб-службу RESTFUL из Xamarin.Forms приложения. "
+MS. произв. Xamarin MS. AssetID: B540910C-9C51-416A-AAB9-057BF76489C3 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/28/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="consume-a-restful-web-service"></a>Использование веб-службы RESTFUL
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todorest)
@@ -92,12 +78,12 @@ config.Routes.MapHttpRoute(
 ```csharp
 public class RestService : IRestService
 {
-  HttpClient _client;
+  HttpClient client;
   ...
 
   public RestService ()
   {
-    _client = new HttpClient ();
+    client = new HttpClient ();
   }
   ...
 }
@@ -111,12 +97,12 @@ public class RestService : IRestService
 public async Task<List<TodoItem>> RefreshDataAsync ()
 {
   ...
-  var uri = new Uri (string.Format (Constants.TodoItemsUrl, string.Empty));
+  Uri uri = new Uri (string.Format (Constants.TodoItemsUrl, string.Empty));
   ...
-  var response = await _client.GetAsync (uri);
+  HttpResponseMessage response = await client.GetAsync (uri);
   if (response.IsSuccessStatusCode)
   {
-      var content = await response.Content.ReadAsStringAsync ();
+      string content = await response.Content.ReadAsStringAsync ();
       Items = JsonConvert.DeserializeObject <List<TodoItem>> (content);
   }
   ...
@@ -127,6 +113,9 @@ public async Task<List<TodoItem>> RefreshDataAsync ()
 
 Если операция HTTP выполнена успешно, содержимое ответа считывается для вывода. `HttpResponseMessage.Content`Свойство представляет содержимое HTTP-ответа, а `HttpContent.ReadAsStringAsync` метод асинхронно записывает содержимое HTTP в строку. Затем это содержимое преобразуется из JSON в `List` `TodoItem` экземпляры.
 
+> [!WARNING]
+> Использование `ReadAsStringAsync` метода для получения большого ответа может отрицательно сказаться на производительности. В таких обстоятельствах ответ должен быть напрямую десериализован, чтобы избежать его полного буферизации.
+
 ### <a name="creating-data"></a>Создание данных
 
 `HttpClient.PostAsync`Метод используется для отправки запроса POST в веб-службу, заданную с помощью URI, а затем для получения ответа от веб-службы, как показано в следующем примере кода:
@@ -134,23 +123,22 @@ public async Task<List<TodoItem>> RefreshDataAsync ()
 ```csharp
 public async Task SaveTodoItemAsync (TodoItem item, bool isNewItem = false)
 {
-  var uri = new Uri (string.Format (Constants.TodoItemsUrl, string.Empty));
+  Uri uri = new Uri (string.Format (Constants.TodoItemsUrl, string.Empty));
 
   ...
-  var json = JsonConvert.SerializeObject (item);
-  var content = new StringContent (json, Encoding.UTF8, "application/json");
+  string json = JsonConvert.SerializeObject (item);
+  StringContent content = new StringContent (json, Encoding.UTF8, "application/json");
 
   HttpResponseMessage response = null;
   if (isNewItem)
   {
-    response = await _client.PostAsync (uri, content);
+    response = await client.PostAsync (uri, content);
   }
   ...
 
   if (response.IsSuccessStatusCode)
   {
     Debug.WriteLine (@"\tTodoItem successfully saved.");
-
   }
   ...
 }
@@ -172,7 +160,7 @@ public async Task SaveTodoItemAsync (TodoItem item, bool isNewItem = false)
 public async Task SaveTodoItemAsync (TodoItem item, bool isNewItem = false)
 {
   ...
-  response = await _client.PutAsync (uri, content);
+  response = await client.PutAsync (uri, content);
   ...
 }
 ```
@@ -192,9 +180,9 @@ public async Task SaveTodoItemAsync (TodoItem item, bool isNewItem = false)
 ```csharp
 public async Task DeleteTodoItemAsync (string id)
 {
-  var uri = new Uri (string.Format (Constants.TodoItemsUrl, id));
+  Uri uri = new Uri (string.Format (Constants.TodoItemsUrl, id));
   ...
-  var response = await _client.DeleteAsync (uri);
+  HttpResponseMessage response = await client.DeleteAsync (uri);
   if (response.IsSuccessStatusCode)
   {
     Debug.WriteLine (@"\tTodoItem successfully deleted.");

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой главе приводятся сведения о шаблонах корпоративных приложений с помощью Xamarin.Forms .
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: b587bd8cacda9024103757a585c11fba2ed09fda
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84130836"
+Title: "перед развертыванием корпоративного приложения" Описание: "в этой главе приводятся сведения о шаблонах корпоративных приложений с помощью Xamarin.Forms ".
+MS. произв. Xamarin MS. AssetID: fbf32a44-1d33-4e16-a904-dc7ee5991e7c MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/07/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="preface-to-enterprise-app-development"></a>Предваряйте разработку корпоративных приложений
 
 Эта электронная книга содержит рекомендации по созданию кросс-платформенных корпоративных приложений с помощью Xamarin.Forms . Xamarin.Forms— Это кросс-платформенный набор средств для ПОЛЬЗОВАТЕЛЬСКОГО интерфейса, позволяющий разработчикам легко создавать собственные макеты пользовательского интерфейса, которые могут совместно использоваться различными платформами, включая iOS, Android и универсальная платформа Windows (UWP). Она предоставляет комплексное решение для бизнес-приложений (B2E), бизнес-бизнес (B2B) и бизнес-потребителей (B2C), которые предоставляют возможность совместного использования кода на всех целевых платформах и снижения совокупной стоимости владения.
@@ -27,7 +13,7 @@ ms.locfileid: "84130836"
 
 ## <a name="whats-left-out-of-this-guides-scope"></a>Что осталось в области действия этого руководством
 
-Это руководством предназначено для читателей, уже знакомых с Xamarin.Forms . Подробные сведения о Xamarin.Forms см. в [ Xamarin.Forms документации](~/xamarin-forms/index.yml)и о [создании мобильных приложений с помощью Xamarin.Forms ](https://aka.ms/xamebook).
+Это руководством предназначено для читателей, уже знакомых с Xamarin.Forms . Подробные сведения о Xamarin.Forms см. в [ Xamarin.Forms документации](~/xamarin-forms/index.yml)и о [создании мобильных приложений с помощью Xamarin.Forms ](https://aka.ms/xamformsebook).
 
 Это руководство дополняет [микрослужбы .NET. это архитектура для контейнерных приложений .NET](https://aka.ms/microservicesebook), которая нацелена на разработку и развертывание контейнерных микрослужб. Другие руководства, которые стоит прочитать, включают [проектирование и разработку современных веб-приложений с ASP.NET Core и Microsoft Azure](https://aka.ms/WebAppEbook), [контейнерный жизненный цикл приложений DOCKER с помощью платформы и средств Майкрософт](https://aka.ms/dockerlifecycleebook), а также [платформы и средств Майкрософт для разработки мобильных приложений](https://aka.ms/MobAppDev/StndPDF).
 

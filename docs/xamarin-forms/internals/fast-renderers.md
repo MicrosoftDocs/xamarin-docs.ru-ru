@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsБыстрые модули подготовки отчетов
-description: В этой статье представлены быстрые модули подготовки отчетов, которые уменьшают затраты на инфляцию и отрисовку Xamarin.Forms элемента управления в Android путем преобразования итоговой иерархии собственных элементов управления.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 3f25f4c2da5b2a426673b49045b5d2d05b0c6ac4
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139078"
+Title: "краткие модули Xamarin.Forms подготовки отчетов" Описание: "в этой статье описываются быстрые модули подготовки отчетов, которые уменьшают затраты на инфляцию и отрисовку Xamarin.Forms элемента управления в Android путем преобразования итоговой иерархии собственных элементов управления".
+MS. произв. Xamarin MS. AssetID: 097f87f2-d891-4f3c-be02-fb7d195a481a MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/28/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-fast-renderers"></a>Xamarin.FormsБыстрые модули подготовки отчетов
 
 Обычно большинство исходных модулей подготовки элементов управления в Android состоят из двух представлений:
@@ -31,9 +17,10 @@ ms.locfileid: "84139078"
 Быстрые модули подготовки отчетов доступны для следующих элементов управления в Xamarin.Forms Android:
 
 - [`Button`](xref:Xamarin.Forms.Button)
+- [`Frame`](xref:Xamarin.Forms.Frame)
 - [`Image`](xref:Xamarin.Forms.Image)
 - [`Label`](xref:Xamarin.Forms.Label)
-- [`Frame`](xref:Xamarin.Forms.Frame)
+- [`MediaElement`](xref:Xamarin.Forms.MediaElement)
 
 Функционально, эти быстрые модули подготовки не отличаются от стандартных модулей подготовки отчетов. Начиная с Xamarin.Forms 4,0, все приложения, нацеленные на, `FormsAppCompatActivity` будут использовать эти быстрые модули подготовки отчетов по умолчанию. Модули подготовки отчетов для всех новых элементов управления, включая [`ImageButton`](xref:Xamarin.Forms.ImageButton) и [`CollectionView`](xref:Xamarin.Forms.CollectionView) , используют метод быстрой визуализации.
 
