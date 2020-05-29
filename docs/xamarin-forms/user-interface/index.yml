@@ -10,12 +10,15 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 03/19/2020
-  ms.openlocfilehash: 054e0adfeea97bf5c230d0372788b2628fc935f7
-  ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+  no-loc:
+  - Xamarin.Forms
+  - Xamarin.Essentials
+  ms.openlocfilehash: a0461768d7dad782f2ce8418c81a80d0608edaad
+  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/12/2020
-  ms.locfileid: "83149917"
+  ms.lasthandoff: 05/28/2020
+  ms.locfileid: "84135841"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:

@@ -9,12 +9,15 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 11/06/2019
-  ms.openlocfilehash: 929ed310d69de3f67426cc400e7175e2c6f58fe6
-  ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+  no-loc:
+  - Xamarin.Forms
+  - Xamarin.Essentials
+  ms.openlocfilehash: 05429940463d2ab309fe1ce0bc012f9290bfc73b
+  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "77144626"
+  ms.lasthandoff: 05/28/2020
+  ms.locfileid: "84138701"
 highlightedContent:
   items:
   - title: Что такое Xamarin.Forms?

@@ -10,32 +10,35 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 12/27/2019
-  ms.openlocfilehash: 5f01b3ecf914d6c7c5c36378511c0fd7e30c952c
-  ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+  no-loc:
+  - Xamarin.Forms
+  - Xamarin.Essentials
+  ms.openlocfilehash: 6e40cb17a6ea852d5bc5e3ae31b0983773105d5a
+  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "75679692"
+  ms.lasthandoff: 05/28/2020
+  ms.locfileid: "84138389"
 landingContent:
 - title: Начало работы
   linkLists:
   - linkListType: concept
     links:
-    - text: Основы
+    - text: Основные сведения
       url: xaml-basics/index.md
-    - text: Управление
+    - text: Элементы управления
       url: xaml-controls.md
     - text: Компиляция
       url: xamlc.md
     - text: Расширения разметки
       url: markup-extensions/index.md
-- title: Инструменты
+- title: Инструментарий
   linkLists:
   - linkListType: concept
     links:
     - text: Горячая перезагрузка
       url: hot-reload.md
-    - text: Область элементов
+    - text: Панель элементов
       url: toolbox.md
     - text: Средство предварительного просмотра
       url: xaml-previewer/index.md
@@ -61,6 +64,8 @@ landingContent:
       url: resource-dictionaries.md
     - text: Передача аргументов
       url: passing-arguments.md
+    - text: Универсальные шаблоны
+      url: generics.md
     - text: Модификаторы полей
       url: field-modifiers.md
     - text: Загрузка XAML во время выполнения

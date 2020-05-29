@@ -10,12 +10,15 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 01/03/2020
-  ms.openlocfilehash: 0b87ed6ec1f69a9ef9cb6b5d63079ac651967eff
-  ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+  no-loc:
+  - Xamarin.Forms
+  - Xamarin.Essentials
+  ms.openlocfilehash: 9f63ef7a4716f77d7f5e2a6e23072b5830c496f0
+  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/12/2020
-  ms.locfileid: "83149679"
+  ms.lasthandoff: 05/28/2020
+  ms.locfileid: "84138012"
 landingContent:
 - title: Основные макеты
   linkLists:

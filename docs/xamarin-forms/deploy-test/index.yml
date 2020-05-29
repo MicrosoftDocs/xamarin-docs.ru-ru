@@ -10,12 +10,15 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 01/22/2020
-  ms.openlocfilehash: a1e580c294dfffd2be9d8103333009c82d9b2349
-  ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+  no-loc:
+  - Xamarin.Forms
+  - Xamarin.Essentials
+  ms.openlocfilehash: 683bce531ae244f14691b496de8299d77c4aacee
+  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "76518547"
+  ms.lasthandoff: 05/28/2020
+  ms.locfileid: "84139130"
 landingContent:
 - title: Тестирование
   linkLists:

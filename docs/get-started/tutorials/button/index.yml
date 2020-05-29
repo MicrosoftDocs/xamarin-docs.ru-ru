@@ -9,12 +9,15 @@ metadata:
   ms.date: 01/30/2019
   author: davidbritch
   ms.author: dabritch
-  ms.openlocfilehash: 034a4a8f2930a02edb0c9a796299eb32e849ea70
-  ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+  no-loc:
+  - Xamarin.Forms
+  - Xamarin.Essentials
+  ms.openlocfilehash: 316d5013adbf0ff7a066c6b1cdb5fe286ecf5029
+  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "61372983"
+  ms.lasthandoff: 05/28/2020
+  ms.locfileid: "84130355"
 items:
 - durationInMinutes: 1
   content: >
