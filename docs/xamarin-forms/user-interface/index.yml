@@ -13,12 +13,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: a0461768d7dad782f2ce8418c81a80d0608edaad
-  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
+  ms.openlocfilehash: 04b2a09f455446337620325859802ee1ae40cb5e
+  ms.sourcegitcommit: 2105091f2eeb7844b19ae94708a6ab07e3e79bce
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/28/2020
-  ms.locfileid: "84135841"
+  ms.lasthandoff: 05/29/2020
+  ms.locfileid: "84198348"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:
@@ -177,7 +177,7 @@ landingContent:
     - text: RelativeLayout
       url: layouts/relative-layout.md
     - text: ScrollView
-      url: layouts/scroll-view.md
+      url: layouts/scrollview.md
     - text: StackLayout
       url: layouts/stacklayout.md
 - title: Основные понятия о макете
