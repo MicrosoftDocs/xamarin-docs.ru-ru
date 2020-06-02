@@ -1,18 +1,21 @@
 ---
-title: Воспроизведение видео через Интернет
+title: ''
 description: В этой статье объясняется, как воспроизводить видео через Интернет в приложении видеопроигрывателя с помощью Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 75781A10-865D-4BA8-8D6B-E3DA012922BC
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/12/2018
-ms.openlocfilehash: 107b2a970041c70bb021b03dd98f8c91eaea8d34
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b4269b768d6dd9a0eadbbe557f701f8a43b74c99
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771763"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84133683"
 ---
 # <a name="playing-a-web-video"></a>Воспроизведение видео через Интернет
 
@@ -54,7 +57,7 @@ namespace FormsVideoLibrary
 }
 ```
 
-Свойство `Source` имеет тип `VideoSource`, который создан по шаблону абстрактного класса [`ImageSource`](xref:Xamarin.Forms.ImageSource) Xamarin.Forms и его трех производных — [`UriImageSource`](xref:Xamarin.Forms.UriImageSource), [`FileImageSource`](xref:Xamarin.Forms.FileImageSource) и [`StreamImageSource`](xref:Xamarin.Forms.StreamImageSource). Однако для класса `VideoPlayer` отсутствует возможность потоковой передачи, так как iOS и Android не поддерживают воспроизведение видео из потока.
+Свойство `Source` имеет тип `VideoSource`, который создан по шаблону абстрактного класса Xamarin.Forms [`ImageSource`](xref:Xamarin.Forms.ImageSource) и его трех производных — [`UriImageSource`](xref:Xamarin.Forms.UriImageSource), [`FileImageSource`](xref:Xamarin.Forms.FileImageSource) и [`StreamImageSource`](xref:Xamarin.Forms.StreamImageSource) Однако для класса `VideoPlayer` отсутствует возможность потоковой передачи, так как iOS и Android не поддерживают воспроизведение видео из потока.
 
 ## <a name="video-sources"></a>Источники видео
 

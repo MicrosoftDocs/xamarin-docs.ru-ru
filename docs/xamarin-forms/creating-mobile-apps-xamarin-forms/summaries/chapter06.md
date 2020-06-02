@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 6. Нажатия кнопки
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 6. Нажатия кнопки
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: D4F9C429-A6CF-40FA-AC68-3F149307A5F9
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/18/2018
-ms.openlocfilehash: 12c8cdc19f9e6765ca25ade97bcfdbffb7b60381
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 6. Button clicks''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f9bafbf4af2a89acd02d436604e882be87cbde8c
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "61334725"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136842"
 ---
 # <a name="summary-of-chapter-6-button-clicks"></a>Сводка по главе 6. Нажатия кнопки
 
@@ -83,11 +87,11 @@ ms.locfileid: "61334725"
 Пример [**PersistentKeypad**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter06/PersistentKeypad) очень похож на **SimplestKeypad**, за исключением того, что программа использует переопределение `OnSleep` для сохранения текущей записи клавиатуры, а конструктор страниц — для восстановления этих данных.
 
 > [!NOTE]
-> Другой подход к сохранению параметров программы обеспечивается с помощью класса [предпочтений](~/essentials/preferences.md) Xamarin.Essentials.
+> Другой подход к сохранению параметров программы обеспечивается с помощью класса Xamarin.Essentials [предпочтений](~/essentials/preferences.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Полный текст главы 6 (PDF)](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch06-Apr2016.pdf)
 - [Примеры для главы 6](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter06)
 - [Примеры F# для главы 6](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter06/FS)
-- [Кнопка в Xamarin.Forms](~/xamarin-forms/user-interface/button.md)
+- [Кнопка Xamarin.Forms](~/xamarin-forms/user-interface/button.md)
