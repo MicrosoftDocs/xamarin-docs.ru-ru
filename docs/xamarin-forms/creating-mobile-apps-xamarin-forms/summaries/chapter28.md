@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 28. Расположение и карты
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 28. Расположение и карты
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: F6E20077-687C-45C4-A375-31D4F49BBFA4
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/19/2018
-ms.openlocfilehash: 5dcd84536cc6d80deb753fc6fe57f9090f6b2dad
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 28. Location and maps''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 301dc65c7909603e117717a993959e3c73fa2d32
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "72697079"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84133410"
 ---
 # <a name="summary-of-chapter-28-location-and-maps"></a>Сводка по главе 28. Расположение и карты
 
@@ -100,7 +104,7 @@ Xamarin.Forms поддерживает элемент [`Map`](xref:Xamarin.Forms
 
 ### <a name="the-nuget-package"></a>Пакет NuGet
 
-В решение приложения необходимо добавить библиотеку NuGet **Xamarin.Forms.Maps**. Номер версии должен быть таким же, как у установленного пакета **Xamarin.Forms**.
+В решение приложения необходимо добавить библиотеку NuGet **Xamarin.Forms.Maps**. Номер версии должен быть таким же, как у установленного пакета **Xamarin.Forms** .
 
 ### <a name="initializing-the-maps-package"></a>Инициализация пакета Maps
 
@@ -179,14 +183,14 @@ Xamarin.Forms поддерживает элемент [`Map`](xref:Xamarin.Forms
 
 Вы можете вызвать метод [`MoveToRegion`](xref:Xamarin.Forms.Maps.Map.MoveToRegion(Xamarin.Forms.Maps.MapSpan)) из `Map`, чтобы программным образом задать расположение и уровень масштабирования на карте. Аргумент имеет тип `MapSpan`. Создать объект `MapSpan` можно двумя способами:
 
-- использовать [конструктор `MapSpan`](xref:Xamarin.Forms.Maps.MapSpan.%23ctor(Xamarin.Forms.Maps.Position,System.Double,System.Double)) с `Position` и диапазоном широты и долготы;
+- использовать [`MapSpan` конструктор](xref:Xamarin.Forms.Maps.MapSpan.%23ctor(Xamarin.Forms.Maps.Position,System.Double,System.Double)) с `Position` и диапазоном широты и долготы;
 - использовать [`MapSpan.FromCenterAndRadius`](xref:Xamarin.Forms.Maps.MapSpan.FromCenterAndRadius(Xamarin.Forms.Maps.Position,Xamarin.Forms.Maps.Distance)) с `Position` и радиусом.
 
 Кроме того, вы можете создать новый тип `MapSpan` из уже существующего, используя методы [`ClampLatitude`](xref:Xamarin.Forms.Maps.MapSpan.ClampLatitude(System.Double,System.Double)) и [`WithZoom`](xref:Xamarin.Forms.Maps.MapSpan.WithZoom(System.Double)).
 
 Файл [WyomingPage.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/WyomingPage.xaml) и файл кода программной части [WyomingPage.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/WyomingPage.xaml.cs) демонстрируют применение метода `MoveToRegion` для отображения карты штата Вайоминг.
 
-Для инициализации расположения на карте можно также применить [конструктор `Map`](xref:Xamarin.Forms.Maps.Map.%23ctor(Xamarin.Forms.Maps.MapSpan)) с объектом `MapSpan`. Файл [XamarinHQPage.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/XamarinHQPage.xaml) демонстрирует, как выполнить это на чистом XAML на примере карты офиса Xamarin в Сан-Франциско.
+Для инициализации расположения на карте можно также применить [`Map` конструктор](xref:Xamarin.Forms.Maps.Map.%23ctor(Xamarin.Forms.Maps.MapSpan)) с объектом `MapSpan`. Файл [XamarinHQPage.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/XamarinHQPage.xaml) демонстрирует, как выполнить это на чистом XAML на примере карты офиса Xamarin в Сан-Франциско.
 
 ### <a name="dynamic-zooming"></a>Динамическое масштабирование
 
@@ -231,7 +235,7 @@ Xamarin.Forms поддерживает элемент [`Map`](xref:Xamarin.Forms
 
 ## <a name="geocoding-and-back-again"></a>Геокодирование и завершение работы
 
-Сборка [**Xamarin.Forms.Maps**](xref:Xamarin.Forms.Maps) содержит также класс [`Geocoder`](xref:Xamarin.Forms.Maps.Geocoder) с методом [`GetPositionsForAddressAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetPositionsForAddressAsync(System.String)), который преобразует текстовый адрес в нуль или более допустимые географические расположения, и еще один метод [`GetAddressesForPositionAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetAddressesForPositionAsync(Xamarin.Forms.Maps.Position)) для обратного преобразования.
+Сборка [ **Xamarin.Forms.Maps**](xref:Xamarin.Forms.Maps) содержит также класс [`Geocoder`](xref:Xamarin.Forms.Maps.Geocoder) с методом [`GetPositionsForAddressAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetPositionsForAddressAsync(System.String)), который преобразует текстовый адрес в нуль или более допустимые географические расположения, и еще один метод [`GetAddressesForPositionAsync`](xref:Xamarin.Forms.Maps.Geocoder.GetAddressesForPositionAsync(Xamarin.Forms.Maps.Position)) для обратного преобразования.
 
 Файл [GeocoderRoundTrip.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/GeocoderRoundTripPage.xaml) и файл кода программной части [GeocoderRoundTrip.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/GeocoderRoundTripPage.xaml.cs) демонстрируют применение этой возможности.
 

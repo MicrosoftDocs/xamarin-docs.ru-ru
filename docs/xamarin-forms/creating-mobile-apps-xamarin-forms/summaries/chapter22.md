@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о главе 22. Анимация
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о главе 22. Анимация
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 47C2B9AB-E688-4412-8AF5-9F633B3DA695
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/07/2017
-ms.openlocfilehash: 935be5bd6696600644463eb4ec26410b546f42a0
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 22. Animation''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2a8a089c210a3fe2f48dbe32bf8cda6179af2a78
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70770999"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136634"
 ---
 # <a name="summary-of-chapter-22-animation"></a>Сводная информация о главе 22. Анимация
 
@@ -100,7 +104,7 @@ ms.locfileid: "70770999"
 
 Пример [**SlidingEntrance**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter22/SlidingEntrance) использует метод расширения [`TranslateTo`](xref:Xamarin.Forms.ViewExtensions.TranslateTo(Xamarin.Forms.VisualElement,System.Double,System.Double,System.UInt32,Xamarin.Forms.Easing)) для "вдвигания" содержимого страницы слева и справа.
 
-Пример [**SwingingEntrance**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter22/SwingingEntrance) использует метод расширения [`RotateYTo`](xref:Xamarin.Forms.ViewExtensions.RotateYTo(Xamarin.Forms.VisualElement,System.Double,System.UInt32,Xamarin.Forms.Easing)) для анимации свойства `RotationY`. Можно также использовать метод [`RotateXTo`](xref:Xamarin.Forms.ViewExtensions.RotateXTo(Xamarin.Forms.VisualElement,System.Double,System.UInt32,Xamarin.Forms.Easing)).
+Пример [**SwingingEntrance**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter22/SwingingEntrance) использует метод расширения [`RotateYTo`](xref:Xamarin.Forms.ViewExtensions.RotateYTo(Xamarin.Forms.VisualElement,System.Double,System.UInt32,Xamarin.Forms.Easing)) для анимации свойства `RotationY`. Также доступен метод [`RotateXTo`](xref:Xamarin.Forms.ViewExtensions.RotateXTo(Xamarin.Forms.VisualElement,System.Double,System.UInt32,Xamarin.Forms.Easing)).
 
 ### <a name="forever-animations"></a>Бесконечные анимации
 
@@ -140,7 +144,7 @@ ms.locfileid: "70770999"
 
 ### <a name="viewextensions-class"></a>Класс ViewExtensions
 
-Вы уже видели пример [`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions). Он определяет девять методов, которые возвращают `Task<bool>` и [`CancelAnimations`](xref:Xamarin.Forms.ViewExtensions.CancelAnimations(Xamarin.Forms.VisualElement)). Семь из этих девяти методов работают со свойствами преобразования. Остальные два — это [`FadeTo`](xref:Xamarin.Forms.ViewExtensions.FadeTo(Xamarin.Forms.VisualElement,System.Double,System.UInt32,Xamarin.Forms.Easing)), который изменяет свойство [`Opacity`](xref:Xamarin.Forms.VisualElement.Opacity) и [`LayoutTo`](xref:Xamarin.Forms.ViewExtensions.LayoutTo(Xamarin.Forms.VisualElement,Xamarin.Forms.Rectangle,System.UInt32,Xamarin.Forms.Easing)), который вызывает метод [`Layout`](xref:Xamarin.Forms.VisualElement.Layout(Xamarin.Forms.Rectangle)).
+Вы уже видели пример [`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions). Он определяет девять методов, которые возвращают `Task<bool>` и [`CancelAnimations`](xref:Xamarin.Forms.ViewExtensions.CancelAnimations(Xamarin.Forms.VisualElement)). Семь из этих девяти методов работают со свойствами преобразования. Остальные два — это [`FadeTo`](xref:Xamarin.Forms.ViewExtensions.FadeTo(Xamarin.Forms.VisualElement,System.Double,System.UInt32,Xamarin.Forms.Easing)), который изменяет свойство [`Opacity`](xref:Xamarin.Forms.VisualElement.Opacity) и [`LayoutTo`](xref:Xamarin.Forms.ViewExtensions.LayoutTo(Xamarin.Forms.VisualElement,Xamarin.Forms.Rectangle,System.UInt32,Xamarin.Forms.Easing)), который вызывает метод [`Layout`](xref:Xamarin.Forms.VisualElement.Layout(Xamarin.Forms.Rectangle)).
 
 ### <a name="animation-class"></a>Класс Animation
 

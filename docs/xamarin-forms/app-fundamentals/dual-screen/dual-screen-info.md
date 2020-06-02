@@ -1,18 +1,21 @@
 ---
 title: Возможности устройства с двумя экранами Xamarin.Forms
 description: В этом руководстве рассматривается использование класса DualScreenInfo из Xamarin.Forms для оптимизации интерфейса приложения на двухэкранных устройствах, таких как Surface Duo и Surface Neo.
-ms.prod: xamarin
-ms.assetid: dd5eb074-f4cb-4ab4-b47d-76f862ac7cfa
-ms.technology: xamarin-forms
-author: davidortinau
-ms.author: daortin
-ms.date: 02/08/2020
-ms.openlocfilehash: 3393f8f4468b58289443af3d2eea558cca4588d2
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 59575823a9ec29847a60209e846ba244e51ca0c0
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "80628261"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138935"
 ---
 # <a name="xamarinforms-dual-screen-device-capabilities"></a>Возможности устройства с двумя экранами Xamarin.Forms
 

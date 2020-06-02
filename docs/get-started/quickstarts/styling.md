@@ -1,20 +1,23 @@
 ---
 title: Стилизация кроссплатформенного приложения Xamarin.Forms
 description: В этой статье описывается изменение стиля кроссплатформенного приложения Xamarin.Forms с помощью стилей XAML.
-zone_pivot_groups: platform
-ms.topic: quickstart
-ms.prod: xamarin
-ms.assetid: CCCF8E57-D021-4542-8709-5808570FC26A
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/07/2020
-ms.openlocfilehash: fbd957c68d7a9aa2f8e44c91fab6174d8ed72014
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+zone_pivot_groups: ''
+ms.topic: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2d458bafc5bb1c8dcffc7858fd15734187f7612b
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77068757"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84134073"
 ---
 # <a name="style-a-cross-platform-xamarinforms-application"></a>Стилизация кроссплатформенного приложения Xamarin.Forms
 
@@ -22,7 +25,7 @@ ms.locfileid: "77068757"
 
 В этом кратком руководстве рассматриваются следующие темы:
 
-- Стилизация приложений Xamarin.Forms с использованием стилей XAML.
+- Стилизация приложения Xamarin.Forms с использованием стилей XAML.
 
 Из этого краткого руководства вы узнаете, как изменить стиль кроссплатформенного приложения Xamarin.Forms с помощью стилей XAML. Ниже показано итоговое приложение:
 
@@ -314,7 +317,7 @@ ms.locfileid: "77068757"
 
 В этом кратком руководстве рассматривались следующие темы:
 
-- Стилизация приложений Xamarin.Forms с использованием стилей XAML.
+- Стилизация приложения Xamarin.Forms с использованием стилей XAML.
 
 Чтобы узнать больше об основах разработки приложений с помощью Xamarin.Forms, продолжайте подробное знакомство с краткими руководствами.
 

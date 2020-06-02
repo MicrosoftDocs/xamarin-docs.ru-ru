@@ -1,20 +1,23 @@
 ---
-title: Всплывающее меню оболочки Xamarin.Forms
-description: Всплывающее меню выполняет роль главного меню для приложения оболочки. Его можно вызвать специальным значком или жестом пальцем от края экрана. Всплывающее меню состоит из необязательного заголовка, вложенных элементов всплывающего меню и необязательных пунктов меню.
-ms.prod: xamarin
-ms.assetid: FEDE51EB-577E-4B3E-9890-B7C1A5E52516
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/22/2020
-ms.openlocfilehash: 5e5c50a9195ceb2716e3ca5306b72654fedc46e8
-ms.sourcegitcommit: 443ecd9146fe2a7bbb9b5ab6d33c835876efcf1f
+title: Всплывающий элемент оболочки Xamarin.Forms
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b336a594fa7525000e119333b56284368a23cc03
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852468"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84134957"
 ---
-# <a name="xamarinforms-shell-flyout"></a>Всплывающее меню оболочки Xamarin.Forms
+# <a name="xamarinforms-shell-flyout"></a>Всплывающий элемент оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
@@ -22,7 +25,7 @@ ms.locfileid: "82852468"
 
 ![Снимок экрана со всплывающим меню и заметками в оболочке](flyout-images/flyout-annotated.png "Всплывающий элемент с заметками")
 
-При необходимости вы можете задать для фона всплывающего меню цвет [`Color`](xref:Xamarin.Forms.Color), используя привязываемое свойство `Shell.FlyoutBackgroundColor`. Это свойство также можно задать из каскадной таблицы стилей (CSS). Подробные сведения см. в статье [об особых свойствах оболочки Xamarin.Forms](~/xamarin-forms/user-interface/styles/css/index.md#xamarinforms-shell-specific-properties).
+При необходимости вы можете задать для фона всплывающего меню цвет [`Color`](xref:Xamarin.Forms.Color), используя привязываемое свойство `Shell.FlyoutBackgroundColor`. Это свойство также можно задать из каскадной таблицы стилей (CSS). Подробные сведения см. в разделе [Особые свойства оболочки Xamarin.Forms](~/xamarin-forms/user-interface/styles/css/index.md#xamarinforms-shell-specific-properties).
 
 ## <a name="flyout-icon"></a>Значок всплывающего меню
 
@@ -217,7 +220,7 @@ Shell.Current.FlyoutIsPresented = false;
 Это неявное преобразование автоматически заключает каждый объект [`ContentPage`](xref:Xamarin.Forms.ContentPage) в объекты `ShellContent`, которые заключаются в объекты `Tab`, которые заключаются в объекты `FlyoutItem`.
 
 > [!IMPORTANT]
-> В приложении оболочки каждый [`ContentPage`](xref:Xamarin.Forms.ContentPage), который является дочерним элементом объекта `ShellContent`, создается во время запуска приложения. Такой метод добавления объектов `ShellContent` приводит к созданию дополнительных страниц во время запуска приложения, что может замедлять запуск. Но оболочка может создавать страницы и по требованию, реагируя на переходы. Дополнительные сведения см. в разделе [об эффективности загрузки страниц](tabs.md#efficient-page-loading) в [руководстве по вкладкам оболочки Xamarin.Forms](tabs.md).
+> В приложении оболочки каждый [`ContentPage`](xref:Xamarin.Forms.ContentPage), который является дочерним элементом объекта `ShellContent`, создается во время запуска приложения. Такой метод добавления объектов `ShellContent` приводит к созданию дополнительных страниц во время запуска приложения, что может замедлять запуск. Но оболочка может создавать страницы и по требованию, реагируя на переходы. Дополнительные сведения см. в разделе об [эффективности загрузки страниц](tabs.md#efficient-page-loading) в руководстве по [вкладкам оболочки Xamarin.Forms](tabs.md).
 
 ### <a name="flyoutitem-class"></a>Класс FlyoutItem
 
@@ -648,4 +651,4 @@ Shell.Current.CurrentItem = aboutItem;
 
 - [Xaminals (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 - [Классы стилей Xamarin.Forms](~/xamarin-forms/user-interface/styles/xaml/style-class.md)
-- [Диспетчер визуальных состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md).
+- [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

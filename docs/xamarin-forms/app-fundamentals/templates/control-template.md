@@ -1,18 +1,21 @@
 ---
 title: Шаблоны элементов управления Xamarin.Forms
 description: Шаблоны элементов управления Xamarin.Forms определяют визуальную структуру производных пользовательских элементов управления ContentView и производных страниц ContentPage.
-ms.prod: xamarin
-ms.assetid: 8B8E2360-6531-44A3-A7C8-9A8808DE9B86
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 01/13/2020
-ms.openlocfilehash: a73123b89cba932f2e2cb907645f6fe858cf6176
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 44eebed2a49fbdda5504f9a09873f93466d0326c
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303843"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84132552"
 ---
 # <a name="xamarinforms-control-templates"></a>Шаблоны элементов управления Xamarin.Forms
 
@@ -52,7 +55,7 @@ public class CardView : ContentView
 
 Создаваемый шаблон элемента управления имеет тип [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate). При создании `ControlTemplate` вы объединяете объекты [`View`](xref:Xamarin.Forms.View), чтобы создать пользовательский интерфейс для пользовательского элемента управления или страницы. Шаблон `ControlTemplate` должен иметь только один объект `View` в качестве корневого элемента. Однако корневой элемент обычно содержит другие объекты `View`. Комбинация объектов составляет визуальную структуру элемента управления.
 
-Хотя [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate) можно определить в строке кода, обычно объект [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate) объявляют как ресурс в словаре ресурсов. Так как шаблоны элементов управления являются ресурсами, для них действуют те же правила определения области, которые применяются ко всем ресурсам. Например, если объявить шаблон элемента управления в корневом элементе XAML-файла определения приложения, шаблон можно использовать в любом месте приложения. Если вы определяете шаблон на странице, шаблон элемента управления можно будет использовать только на ней. Дополнительные сведения о ресурсах Xamarin.Forms см. в [этой статье](~/xamarin-forms/xaml/resource-dictionaries.md).
+Хотя [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate) можно определить в строке кода, обычно объект [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate) объявляют как ресурс в словаре ресурсов. Так как шаблоны элементов управления являются ресурсами, для них действуют те же правила определения области, которые применяются ко всем ресурсам. Например, если объявить шаблон элемента управления в корневом элементе XAML-файла определения приложения, шаблон можно использовать в любом месте приложения. Если вы определяете шаблон на странице, шаблон элемента управления можно будет использовать только на ней. Дополнительные сведения о ресурсах см. в статье [Словари ресурсов Xamarin.Forms](~/xamarin-forms/xaml/resource-dictionaries.md).
 
 В следующем примере кода XAML показан шаблон [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate) для объектов `CardView`:
 
@@ -298,7 +301,7 @@ public class CardView : ContentView
 
 В этом примере *неявный* [`Style`](xref:Xamarin.Forms.Style) автоматически применяется к каждому объекту `CardView` и устанавливает для свойства [`ControlTemplate`](xref:Xamarin.Forms.TemplatedView.ControlTemplate) каждого объекта `CardView` значение `CardViewControlTemplate`.
 
-Дополнительные сведения о стилях Xamarin.Forms см. в [этой статье](~/xamarin-forms/user-interface/styles/index.md).
+Дополнительные сведения о стилях см. в статье [Стили Xamarin.Forms](~/xamarin-forms/user-interface/styles/index.md).
 
 ## <a name="redefine-a-controls-ui"></a>Переопределение пользовательского интерфейса элемента управления
 
@@ -630,7 +633,7 @@ public partial class AccessTemplateElementPage : HeaderFooterPage
 
 [![Снимки экрана шаблонных объектов CardView в iOS и Android](control-template-images/viewmodel-itemdeleted.png "Шаблонные объекты CardView")](control-template-images/viewmodel-itemdeleted-large.png#lightbox "Шаблонные объекты CardView")
 
-Дополнительные сведения об относительных привязках Xamarin.Forms см. в [этой статье](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md).
+Дополнительные сведения об относительных привязках см. в статье [Относительные привязки Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 

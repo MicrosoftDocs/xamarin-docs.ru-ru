@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о Главе 14. Абсолютный макет
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о Главе 14. Абсолютный макет
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 88882A48-3226-42D1-96ED-241250B64A84
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/19/2018
-ms.openlocfilehash: c489bf244396cf180ed8e1272308048a14b67300
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 14. Absolute layout''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 72ee9c4a481388e69aeeb52dbd5b8eeaabb164f6
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771134"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136764"
 ---
 # <a name="summary-of-chapter-14-absolute-layout"></a>Сводная информация о Главе 14. Абсолютный макет
 

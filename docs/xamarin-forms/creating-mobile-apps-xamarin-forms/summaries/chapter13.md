@@ -1,18 +1,22 @@
 ---
-title: Аннотация к главе 13. Растровые изображения
-description: Создание мобильных приложений с помощью Xamarin.Forms. Аннотация к главе 13. Растровые изображения
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 5D153857-B6B7-4A14-8FB9-067DE198C2C7
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/18/2018
-ms.openlocfilehash: e4746ed94a008d382ce15bb9cd7c52365d9ba574
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 13. Bitmaps''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 43caf088ad6cb816f049e7862a287c17839c2170
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76725532"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136777"
 ---
 # <a name="summary-of-chapter-13-bitmaps"></a>Аннотация к главе 13. Растровые изображения
 
@@ -193,7 +197,7 @@ ms.locfileid: "76725532"
 
 `ToolbarItem` запускает событие [`Clicked`](xref:Xamarin.Forms.MenuItem.Clicked) при касании, подобно `Button`. `ToolbarItem` также поддерживает свойства [`Command`](xref:Xamarin.Forms.MenuItem.Command) и [`CommandParameter`](xref:Xamarin.Forms.MenuItem.CommandParameter), часто используемые для MVVM. (См. статью [Сводка главы 18. MVVM](chapter18.md)).
 
-Для iOS и Android требуется, чтобы страница, на которой отображается панель инструментов, была [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) или страницей, к которой можно было бы перейти с помощью `NavigationPage`. Программа [**ToolbarDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter13/ToolbarDemo) устанавливает для свойства `MainPage` класса `App` конструктор [`NavigationPage` ](xref:Xamarin.Forms.NavigationPage.%23ctor(Xamarin.Forms.Page)) с аргументом `ContentPage`, а также демонстрирует конструкцию и обработчик событий панели инструментов.
+Для iOS и Android требуется, чтобы страница, на которой отображается панель инструментов, была [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) или страницей, к которой можно было бы перейти с помощью `NavigationPage`. Программа [**ToolbarDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter13/ToolbarDemo) устанавливает для свойства `MainPage` класса `App` [конструктор `NavigationPage` constructor](xref:Xamarin.Forms.NavigationPage.%23ctor(Xamarin.Forms.Page)) с аргументом `ContentPage`, а также демонстрирует конструкцию и обработчик событий панели инструментов.
 
 ### <a name="button-images"></a>Изображения кнопок
 

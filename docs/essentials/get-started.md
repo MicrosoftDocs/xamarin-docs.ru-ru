@@ -1,25 +1,28 @@
 ---
 title: Начало работы с Xamarin.Essentials
-description: Xamarin.Essentials обеспечивает единый кроссплатформенных API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса.
-ms.assetid: B2669C48-B659-4854-BD80-FEB0E876F5B9
-author: jamesmontemagno
-ms.author: jamont
-ms.custom: video
-ms.date: 05/11/2020
-ms.openlocfilehash: 944b01d67fb09f9a21a19fb2ede9eb217d89732a
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+description: Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса.
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.custom: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0c0052b35475522ffb3634ebe22f69f66fe3b22b
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149985"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84129315"
 ---
 # <a name="get-started-with-xamarinessentials"></a>Начало работы с Xamarin.Essentials
 
-Xamarin.Essentials обеспечивает единый кроссплатформенных API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса. Дополнительные сведения о поддерживаемых операционных системах см. в [руководстве по поддержке платформ и функций](platform-feature-support.md).
+Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса. Дополнительные сведения о поддерживаемых операционных системах см. в [руководстве по поддержке платформ и функций](platform-feature-support.md).
 
 ## <a name="installation"></a>Установка
 
-Xamarin.Essentials предоставляется в виде пакета NuGet и включается в каждый новый проект в Visual Studio. Его также можно добавить в любой существующий пакет с помощью Visual Studio, выполнив указанные ниже действия.
+Xamarin.Essentials предоставляется в виде пакета NuGet и включается в каждый новый проект в Visual Studio. Его также можно добавить в любой существующий пакет с помощью Visual Studio, выполнив указанные ниже действия.
 
 1. Скачайте и установите [Visual Studio](https://visualstudio.microsoft.com/) с помощью [средств Visual Studio для Xamarin](~/get-started/installation/index.md).
 
@@ -28,7 +31,7 @@ Xamarin.Essentials предоставляется в виде пакета NuGet
     > [!IMPORTANT]
     > При добавлении в проект UWP укажите в свойствах проекта сборку 16299 или более позднюю версию.
 
-3. Добавьте пакет NuGet для [**Xamarin.Essentials**](https://www.nuget.org/packages/Xamarin.Essentials/) в каждый из проектов:
+3. Добавьте в проект пакет NuGet [ **Xamarin.Essentials** ](https://www.nuget.org/packages/Xamarin.Essentials/):
 
     <!--markdownlint-disable MD023 -->
     # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
@@ -51,11 +54,11 @@ Xamarin.Essentials предоставляется в виде пакета NuGet
 
     # <a name="android"></a>[Android](#tab/android)
 
-    Xamarin.Essentials поддерживает Android начиная с версии 4.4, что соответствует уровню API 19, однако целевой версией для компиляции должна быть 9.0 или 10.0, что соответствует уровням API 28 и 29. (В Visual Studio эти две версии задаются в диалоговом окне свойств проекта для проекта Android, на вкладке "Манифест Android". В Visual Studio для Mac эти значения задаются в диалоговом окне свойств проекта для проекта Android, на вкладке "Приложение Android".)
+    Xamarin.Essentials поддерживает Android начиная с версии 4.4, что соответствует уровню API 19, однако целевой версией для компиляции должна быть 9.0 или 10.0, что соответствует уровням API 28 и 29. (В Visual Studio эти две версии задаются в диалоговом окне свойств проекта для проекта Android, на вкладке "Манифест Android". В Visual Studio для Mac эти значения задаются в диалоговом окне свойств проекта для проекта Android, на вкладке "Приложение Android".)
 
-    При компиляции для Android 9.0 набор Xamarin.Essentials устанавливает версию 28.0.0.3 всех требуемых библиотек Xamarin.Android.Support. Все другие библиотеки Xamarin.Android.Support, которые использует приложение, также следует обновить до версии 28.0.0.3 с помощью диспетчера пакетов NuGet. Все библиотеки Xamarin.Android.Support, используемые в приложении, должны иметь одну и ту же версию (не ниже версии 28.0.0.3). Если вы столкнетесь с проблемами при добавлении пакета NuGet для Xamarin.Essentials или при обновлении пакетов NuGet в решении, воспользуйтесь [страницей устранения неполадок](troubleshooting.md).
+    При компиляции для Android 9.0 набор Xamarin.Essentials устанавливает версию 28.0.0.3 всех требуемых библиотек Xamarin.Android.Support. Все другие библиотеки Xamarin.Android.Support, которые использует приложение, также следует обновить до версии 28.0.0.3 с помощью диспетчера пакетов NuGet. Все библиотеки Xamarin.Android.Support, используемые в приложении, должны иметь одну и ту же версию (не ниже версии 28.0.0.3). Если вы столкнетесь с проблемами при добавлении пакета NuGet для Xamarin.Essentials или при обновлении пакетов NuGet в решении, воспользуйтесь [страницей устранения неполадок](troubleshooting.md).
 
-    Начиная с версии 1.5.0, при компиляции для Android 10.0 набор Xamarin.Essentials устанавливает необходимые ему вспомогательные библиотеки AndroidX. Если вы еще не перешли на эту версию, прочтите [документацию по AndroidX](https://docs.microsoft.com/xamarin/android/platform/androidx).
+    Начиная с версии 1.5.0 при компиляции для Android 10.0 набор Xamarin.Essentials устанавливает необходимые ему вспомогательные библиотеки AndroidX. Если вы еще не перешли на эту версию, прочтите [документацию по AndroidX](https://docs.microsoft.com/xamarin/android/platform/androidx).
 
     В `MainLauncher` проекта Android или в любом запущенном действии `Activity` необходимо инициализировать Xamarin.Essentials в методе `OnCreate`:
 
@@ -88,7 +91,7 @@ Xamarin.Essentials предоставляется в виде пакета NuGet
 
     -----
 
-6. Выполните инструкции, приведенные в [руководствах Xamarin.Essentials](index.md) по копированию и вставке фрагментов кода для каждого компонента.
+6. Выполните инструкции в [руководствах Xamarin.Essentials](index.md) по копированию и вставке фрагментов кода для каждого компонента.
 
 ## <a name="xamarinessentials---cross-platform-apis-for-mobile-apps-video"></a>Xamarin.Essentials — кроссплатформенные API-интерфейсы для мобильных приложений (видео)
 
@@ -100,4 +103,4 @@ Xamarin.Essentials предоставляется в виде пакета NuGet
 
 Посетите [репозиторий GitHub для Xamarin.Essentials](https://github.com/xamarin/Essentials), чтобы изучить актуальный исходный код, узнать ближайшие планы развития, выполнить примеры кода и клонировать репозиторий. Мы рады любому вкладу в сообщество!
 
-Изучите [документацию по API](xref:Xamarin.Essentials) для любого компонента Xamarin.Essentials.
+Просмотрите [документацию по API](xref:Xamarin.Essentials) для каждого компонента Xamarin.Essentials.

@@ -1,18 +1,21 @@
 ---
-title: Горячий перезапуск Xamarin
-description: Этот документ описывает настройку и использование горячего перезапуска Xamarin для отладки приложения iOS.
-ms.prod: xamarin
-ms.assetid: 6BC62A88-9368-41BB-8494-760F2A4805DB
-ms.technology: xamarin-forms
-author: maddyleger1
-ms.author: maleger
-ms.date: 03/16/2020
-ms.openlocfilehash: cc5efffd4c3646fbff9cdb1ad1a30ec614cb4921
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 45b7d0d20c43aa22ebde3a17552f10ceea77a48b
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79429571"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139143"
 ---
 # <a name="xamarin-hot-restart-preview"></a>Горячий перезапуск Xamarin (предварительная версия)
 
@@ -21,7 +24,7 @@ ms.locfileid: "79429571"
 Горячий перезапуск Xamarin позволяет быстро проверить изменения в приложении во время разработки, включая изменение кода, ресурсов и ссылок в нескольких файлах. Он передает новые изменения в существующий пакет приложений в целевом объекте отладки, что значительно ускоряет цикл сборки и развертывания.
 
 > [!IMPORTANT]
-> Сейчас горячий перезапуск Xamarin доступен в стабильной версии Visual Studio 2019 16.5 и поддерживает приложения iOS с помощью Xamarin.Forms. Поддержка Visual Studio для Mac и приложений, отличных от Xamarin.Forms, включена в дорожную карту.
+> Сейчас горячий перезапуск Xamarin доступен в стабильной версии Visual Studio 2019 16.5 и поддерживает приложения iOS с помощью Xamarin.Forms. Поддержка Visual Studio для Mac и приложений, отличных от Xamarin.Forms, включена в дорожную карту.
 
 ## <a name="requirements"></a>Требования
 

@@ -1,20 +1,23 @@
 ---
-title: Введение в оболочку Xamarin.Forms
+title: Общие сведения об оболочке Xamarin.Forms
 description: Оболочка Xamarin.Forms предоставляет набор основных возможностей, которые требуются для большинства приложений, таких как стандартизированная навигация для пользователя, схема навигации на основе URI и интегрированный обработчик поиска.
-ms.prod: xamarin
-ms.assetid: 4604DCB5-83DA-458A-8B02-6508A740BE0E
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 09/20/2019
-ms.openlocfilehash: cb2ae3afe9db86d4db603d499ef0e75e7cbbf552
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 29a99161ff2ef2d71b6c803db994522bfe80ed03
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76940407"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138740"
 ---
-# <a name="xamarinforms-shell-introduction"></a>Введение в оболочку Xamarin.Forms
+# <a name="xamarinforms-shell-introduction"></a>Общие сведения об оболочке Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 

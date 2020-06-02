@@ -1,18 +1,21 @@
 ---
-title: Повторно используемая реакция на событие EffectBehavior
+title: ''
 description: Реакции на события удобно использовать для добавления эффекта в элемент управления, удаления стереотипного эффекта, обработки кода из файлов кода программной части. В этой статье демонстрируется создание и использование реакции на событие Xamarin.Forms для добавления эффекта в элемент управления.
-ms.prod: xamarin
-ms.assetid: A909B24D-960A-4023-AFF6-4B9256C55ADD
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/06/2016
-ms.openlocfilehash: ca03dce3bd39664a07b7bf56d22d7c2e000e931f
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0a105548f869eb448a990a1cc12e6feff4197d48
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771994"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135789"
 ---
 # <a name="reusable-effectbehavior"></a>Повторно используемая реакция на событие EffectBehavior
 
@@ -32,7 +35,7 @@ _Реакции на события удобно использовать для
 Дополнительные сведения об эффектах см. в статье [Эффекты](~/xamarin-forms/app-fundamentals/effects/index.md).
 
 > [!NOTE]
-> `EffectBehavior` — это пользовательский класс, который можно найти в [примере реакции на событие для эффекта](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-effectbehavior). Он не входит в Xamarin.Forms.
+> `EffectBehavior` — это пользовательский класс, который можно найти в [примере реакции на событие для эффекта](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-effectbehavior). Он не входит в Xamarin.Forms.
 
 ## <a name="creating-the-behavior"></a>Создание реакции на событие
 
@@ -67,7 +70,7 @@ public class EffectBehavior : Behavior<View>
 
 ### <a name="implementing-the-overrides"></a>Реализация переопределений
 
-В классе `EffectBehavior` переопределяются методы [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) и [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) класса [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1), как показано в следующем примере кода.
+В классе `EffectBehavior` переопределяются методы [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) and [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) класса [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1), как показано в следующем примере кода:
 
 ```csharp
 public class EffectBehavior : Behavior<View>
@@ -88,7 +91,7 @@ public class EffectBehavior : Behavior<View>
 }
 ```
 
-Метод [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) выполняет настройку, вызывая метод `AddEffect` и передавая присоединенный элемент управления в качестве параметра. Метод [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) выполняет очистку, вызывая метод `RemoveEffect` и передавая присоединенный элемент управления в качестве параметра.
+Метод [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) method performs setup by calling the `AddEffect` method, passing in the attached control as a parameter. The [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) выполняет очистку, вызывая метод `RemoveEffect` и передавая присоединенный элемент управления в качестве параметра.
 
 ### <a name="implementing-the-behavior-functionality"></a>Реализация функциональности реакции на событие
 

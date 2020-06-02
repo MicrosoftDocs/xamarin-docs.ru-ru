@@ -1,19 +1,12 @@
 ---
-title: 'Xamarin.Essentials: SMS'
-description: Класс Sms в Xamarin.Essentials позволяет приложению открыть приложение SMS по умолчанию с указанным сообщением, которое нужно отправить получателю.
-ms.assetid: 81A757F2-6F2A-458F-B9BE-770ADEBFAB58
-author: jamesmontemagno
-ms.custom: video
-ms.author: jamont
-ms.date: 11/04/2018
-ms.openlocfilehash: 38651b8e29a2119f777fdbcdd82c9a8277c02497
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149906"
+title: ''Xamarin.Essentials: SMS'' description: 'Класс Sms в Xamarin.Essentials позволяет приложению открыть приложение SMS по умолчанию с указанным сообщением, которое нужно отправить получателю.'
+ms.assetid: author: ms.custom: ms.author: ms.date: no-loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
 ---
-# <a name="xamarinessentials-sms"></a>Xamarin.Essentials: SMS
+
+# <a name="xamarinessentials-sms"></a>Xamarin.Essentials. SMS
 
 Класс **Sms** позволяет приложению открыть приложение SMS по умолчанию с указанным сообщением, которое нужно отправить получателю.
 
@@ -23,7 +16,7 @@ ms.locfileid: "83149906"
 
 ## <a name="using-sms"></a>Использование класса Sms
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

@@ -1,18 +1,21 @@
 ---
 title: Xamarin.Forms TabbedPage
 description: Xamarin.Forms TabbedPage состоит из списка вкладок и большой области сведений, где каждая вкладка загружает содержимое в область сведений. В этой статье демонстрируется использование TabbedPage для перехода по коллекции страниц.
-ms.prod: xamarin
-ms.assetid: C946057F-C77C-412D-82A0-DAF475A24EF5
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/07/2019
-ms.openlocfilehash: 986045a4be352da0e439de87fdc70e2958b48d36
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 38389867ba52e63d8310e3b59d7838f58e8cf488
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303807"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137518"
 ---
 # <a name="xamarinforms-tabbedpage"></a>Xamarin.Forms TabbedPage
 
@@ -56,7 +59,7 @@ Xamarin.Forms [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) состоит из 
 Все эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть к ним можно применить стиль и их можно указывать в качестве целевых для привязки данных.
 
 > [!WARNING]
-> В [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) каждый объект [`Page`](xref:Xamarin.Forms.Page) создается при формировании `TabbedPage`. Это может повлечь проблемы с произвольностью, особенно если `TabbedPage` является корневой страницей приложения. Тем не менее оболочка Xamarin.Forms позволяет по запросу создавать страницы, доступ к которым осуществляется через панель вкладок, в ответ на навигацию. Дополнительные сведения см. в статье [Оболочка Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/index.md).
+> В [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) каждый объект [`Page`](xref:Xamarin.Forms.Page) создается при формировании `TabbedPage`. Это может повлечь проблемы с произвольностью, особенно если `TabbedPage` является корневой страницей приложения. Тем не менее оболочка Xamarin.Forms позволяет по запросу создавать страницы, доступ к которым осуществляется через панель вкладок, в ответ на навигацию. Дополнительные сведения см. в разделе [Оболочка Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/index.md).
 
 ## <a name="populate-a-tabbedpage-with-a-page-collection"></a>Заполнение TabbedPage коллекцией Page
 

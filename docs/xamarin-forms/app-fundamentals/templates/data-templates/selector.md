@@ -1,18 +1,21 @@
 ---
 title: Создание DataTemplateSelector в Xamarin.Forms
-description: В этой статье показано, как создавать и использовать объект DataTemplateSelector для выбора шаблона DataTemplate во время выполнения в соответствии со значением привязанного к данным свойства.
-ms.prod: xamarin
-ms.assetid: A4629E8F-2BAF-45CE-A76E-DF225FE8D26C
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/08/2016
-ms.openlocfilehash: e9a17bff9bd0a23d59faf7602544b25c7ec05a86
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 74650eb2c52f1da9d0c539b711784896267ed183
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771246"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135958"
 ---
 # <a name="creating-a-xamarinforms-datatemplateselector"></a>Создание DataTemplateSelector в Xamarin.Forms
 

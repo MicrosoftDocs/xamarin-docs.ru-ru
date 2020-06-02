@@ -1,18 +1,21 @@
 ---
 title: Оболочка Xamarin.Forms
 description: В этом руководстве описывается использование оболочки Xamarin.Forms, которая упрощает разработку приложений Xamarin.Forms, предоставляя набор основных возможностей, необходимых большинству приложений.
-ms.prod: xamarin
-ms.assetid: 85B322AA-808F-41B6-953A-5877264AE643
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 05/28/2019
-ms.openlocfilehash: 20ac6ad748e7056f7f8037a73a95de66b9eae3b6
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0acf00d85c2bfb823ec1cfba099179bb6743117c
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "69888917"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138753"
 ---
 # <a name="xamarinforms-shell"></a>Оболочка Xamarin.Forms
 
@@ -20,9 +23,9 @@ ms.locfileid: "69888917"
 
 Оболочка Xamarin.Forms упрощает разработку мобильных приложений, предоставляя основные возможности, которые необходимы для большинства мобильных приложений. К ним относится реализация навигации пользователя, схема навигации на основе URI и обработчик интегрированного поиска.
 
-## <a name="create-a-xamarinforms-shell-application"></a>[Создание приложения оболочки Xamarin.Forms](create.md)
+## <a name="create-a-xamarinforms-shell-applicationcreatemd"></a>[Создание приложения оболочки Xamarin.Forms](create.md)
 
-Чтобы создать приложение оболочки Xamarin.Forms, нужно создать XAML-файл, в котором, в свою очередь создается производный класс `Shell`, задается свойство `MainPage` класса `App` приложения для подкласса объекта `Shell` и описывается визуальная иерархия приложения в производном классе `Shell`.
+Чтобы создать приложение оболочки Xamarin.Forms, нужно создать XAML-файл, в котором, в свою очередь, создается производный класс `Shell`, задается свойство `MainPage` класса `App` приложения для подкласса объекта `Shell` и описывается визуальная иерархия приложения в производном классе `Shell`.
 
 ## <a name="flyout"></a>[Всплывающее меню](flyout.md)
 

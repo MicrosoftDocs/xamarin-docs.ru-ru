@@ -1,18 +1,21 @@
 ---
-title: Базовые классы отрисовщика и собственные элементы управления
+title: ''
 description: Каждый элемент управления Xamarin.Forms имеет сопутствующий отрисовщик для каждой платформы, который создает экземпляр собственного элемента управления. В этой статье перечислены классы элементов управления отрисовщика и собственных элементов управления, которые реализуют каждую страницу, макет, представление и ячейку Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: A8909AE3-ED0E-4D24-BF96-B49E732E3B93
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/17/2020
-ms.openlocfilehash: 986b1f7dce05451b96a78e4b39b0091309d93973
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a56f05f8ff4eb8ece43a9f4f38a669cfdc85c4be
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82517473"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135191"
 ---
 # <a name="renderer-base-classes-and-native-controls"></a>Базовые классы отрисовщика и собственные элементы управления
 
@@ -20,16 +23,16 @@ _Каждый элемент управления Xamarin.Forms имеет со�
 
 За исключением класса `MapRenderer`, отрисовщики для конкретных платформ находятся в следующих пространствах имен:
 
-- **iOS** — Xamarin.Forms.Platform.iOS
-- **Android** — Xamarin.Forms.Platform.Android
-- **Android (AppCompat)**  — Xamarin.Forms.Platform.Android.AppCompat
-- **Универсальная платформа Windows (UWP)**  — Xamarin.Forms.Platform.UWP
+- **iOS** — Xamarin.Forms.Platform.iOS
+- **Android** — Xamarin.Forms.Platform.Android
+- **Android (AppCompat)** — Xamarin.Forms.Platform.Android.AppCompat
+- **Универсальная платформа Windows (UWP)** — Xamarin.Forms.Platform.UWP
 
 Класс `MapRenderer` находится в следующих пространствах имен:
 
-- **iOS** — Xamarin.Forms.Maps.iOS
-- **Android** — Xamarin.Forms.Maps.Android
-- **Универсальная платформа Windows (UWP)**  — Xamarin.Forms.Maps.UWP
+- **iOS** — Xamarin.Forms.Maps.iOS
+- **Android** — Xamarin.Forms.Maps.Android
+- **Универсальная платформа Windows (UWP)** — Xamarin.Forms.Maps.UWP
 
 > [!NOTE]
 > Сведения о создании пользовательских отрисовщиков для приложений оболочки см. в статье [о пользовательских отрисовщиках в оболочке Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/customrenderers.md).

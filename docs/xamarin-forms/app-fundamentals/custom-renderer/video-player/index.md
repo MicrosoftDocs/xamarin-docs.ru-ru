@@ -1,18 +1,21 @@
 ---
-title: Реализация видеопроигрывателя
+title: ''
 description: В этой статье объясняется, как внедрить приложение видеопроигрывателя с помощью Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 0CE9BEE7-4F81-4A00-B9B3-5E2535CD3050
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/12/2018
-ms.openlocfilehash: 28e424f4946d05798b9ba309891845d9eab998b1
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 08bfb86f040bfbce834df5a5d98231afae92e78d
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771808"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84133772"
 ---
 # <a name="implementing-a-video-player"></a>Реализация видеопроигрывателя
 

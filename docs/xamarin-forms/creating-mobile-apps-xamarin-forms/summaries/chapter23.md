@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 23. Триггеры и реакции на событие
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 23. Триггеры и реакции на событие
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 19E84B5D-46B4-4B6D-A255-87BEFB011261
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/07/2017
-ms.openlocfilehash: 8a1274a8447f49ce39f9c92703bbaec9e875b9e9
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 23. Triggers and behaviors''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9a0206354254f79756e29f834c85837240736eca
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70760593"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136660"
 ---
 # <a name="summary-of-chapter-23-triggers-and-behaviors"></a>Сводка по главе 23. Триггеры и реакции на событие
 
@@ -156,7 +160,7 @@ ms.locfileid: "70760593"
 
 Класс [`ToggleBase`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ToggleBase.cs) в библиотеке **Xamarin.FormsBook.Toolkit** является производным от `ContentView`, определяет свойство `IsToggled` и содержит `ToggleBehavior` для логики переключения. Это упрощает определение выключателя в XAML, как показано в примере [**TraditionalCheckBox**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/TraditionalCheckBox).
 
-Пример [**SwitchCloneDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/SwitchCloneDemo) содержит класс [`SwitchClone`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter23/SwitchCloneDemo/SwitchCloneDemo/SwitchCloneDemo/SwitchClone.cs), производный от `ToggleBase`, и использует класс [`TranslateAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/TranslateAction.cs) для создания переключателя, похожего на стандартный `Switch` Xamarin.Forms.
+Пример [**SwitchCloneDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/SwitchCloneDemo) содержит класс [`SwitchClone`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter23/SwitchCloneDemo/SwitchCloneDemo/SwitchCloneDemo/SwitchClone.cs), производный от `ToggleBase`, и использует класс [`TranslateAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/TranslateAction.cs) для создания переключателя, похожего на стандартный Xamarin.Forms `Switch`.
 
 Класс [`RotateAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/RotateAction.cs) в **Xamarin.FormsBook.Toolkit** предоставляет анимацию, на которой основан анимированный рычаг в примере [**LeverToggle**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/LeverToggle).
 
@@ -189,4 +193,4 @@ ms.locfileid: "70760593"
 - [Глава 23 — полный текст в формате PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch23-Apr2016.pdf)
 - [Глава 23 — примеры](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23)
 - [Работа с триггерами](~/xamarin-forms/app-fundamentals/triggers.md)
-- [Реакции на событие Xamarin.Forms](~/xamarin-forms/app-fundamentals/behaviors/creating.md)
+- [Реакции на события Xamarin.Forms](~/xamarin-forms/app-fundamentals/behaviors/creating.md)

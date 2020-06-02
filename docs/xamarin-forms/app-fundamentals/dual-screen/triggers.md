@@ -1,18 +1,21 @@
 ---
 title: Триггеры двухэкранного режима в Xamarin.Forms
 description: В этой статье содержатся сведения об использовании триггеров двухэкранного режима Xamarin.Forms для реагирования на изменения пользовательского интерфейса с помощью XAML.
-ms.prod: xamarin
-ms.assetid: 2181715D-3995-4E71-9A21-6B892F0B3B59
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/28/2020
-ms.openlocfilehash: 0cce23973c90c89ce90e40651a2646d5f1bdd2c0
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: df10327b2ac12d2b119f1ab558d7f27e8c319507
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "78165527"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84131200"
 ---
 # <a name="xamarinforms-dual-screen-triggers"></a>Триггеры двухэкранного режима в Xamarin.Forms
 
@@ -122,4 +125,4 @@ ms.locfileid: "78165527"
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Триггеры Xamarin.Forms](~/xamarin-forms/app-fundamentals/triggers.md)
-- [Диспетчер визуальных состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md).
+- [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

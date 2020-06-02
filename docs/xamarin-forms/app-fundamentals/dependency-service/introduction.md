@@ -1,20 +1,23 @@
 ---
-title: Общие сведения о классе Xamarin.Forms DependencyService
+title: Общие сведения о Xamarin.Forms DependencyService
 description: В этой статье объясняется, как использовать класс Xamarin.Forms DependencyService для вызова собственных функций платформы.
-ms.prod: xamarin
-ms.assetid: 5d019604-4f6f-4932-9b26-1fce3b4d88f8
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 06/12/2019
-ms.openlocfilehash: b27b4b0c3c5662c6cc1c2c151dd9ebe1523da3a4
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f4d43a0c9c4878733d65b170c27e744b397aa4d0
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "71198517"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138363"
 ---
-# <a name="xamarinforms-dependencyservice-introduction"></a>Общие сведения о классе Xamarin.Forms DependencyService
+# <a name="xamarinforms-dependencyservice-introduction"></a>Общие сведения о Xamarin.Forms DependencyService
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)
 
@@ -111,7 +114,7 @@ namespace DependencyServiceDemos.UWP
 
 ## <a name="register-the-platform-implementations"></a>Регистрация реализаций платформы
 
-После реализации интерфейса в каждом проекте платформы необходимо зарегистрировать реализации платформы в [`DependencyService`](xref:Xamarin.Forms.DependencyService), чтобы платформа Xamarin.Forms могла их находить во время выполнения. Обычно это делается с помощью класса [`DependencyAttribute`](xref:Xamarin.Forms.DependencyAttribute), который указывает, что заданный тип предоставляет реализацию интерфейса.
+После реализации интерфейса в каждом проекте платформы необходимо зарегистрировать реализации платформы в [`DependencyService`](xref:Xamarin.Forms.DependencyService), чтобы платформа Xamarin.Forms могла находить их во время выполнения. Обычно это делается с помощью класса [`DependencyAttribute`](xref:Xamarin.Forms.DependencyAttribute), который указывает, что заданный тип предоставляет реализацию интерфейса.
 
 В следующем примере демонстрируется использование [`DependencyAttribute`](xref:Xamarin.Forms.DependencyAttribute) для регистрации реализации интерфейса `IDeviceOrientationService` для iOS.
 

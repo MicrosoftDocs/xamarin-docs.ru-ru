@@ -1,20 +1,23 @@
 ---
-title: Повышение производительности приложений Xamarin.Forms
+title: Повышение производительности приложения Xamarin.Forms
 description: Существует множество методов повышения производительности приложений Xamarin.Forms. Вместе они могут значительно снизить загрузку ЦП и сократить объем памяти, используемой приложением.
-ms.prod: xamarin
-ms.assetid: 0be84c56-6698-448d-be5a-b4205f1caa9f
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/27/2019
-ms.openlocfilehash: 4427d347723284a2f8897612f10857270c9631bf
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 96b5939fd1f8448d45d1398fd56770f9032de083
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303885"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139117"
 ---
-# <a name="improve-xamarinforms-app-performance"></a>Повышение производительности приложений Xamarin.Forms
+# <a name="improve-xamarinforms-app-performance"></a>Повышение производительности приложения Xamarin.Forms
 
 > [!VIDEO https://youtube.com/embed/RZvdql3Ev0E]
 
@@ -49,7 +52,7 @@ XAMLC по умолчанию включен в новых решениях Xama
 
 Быстрые отрисовщики сокращают затраты на отрисовку элементов управления Xamarin.Forms на платформе Android путем сведения итоговой иерархии собственных элементов управления. Это еще больше способствует повышению производительности, так как создается меньше объектов, в результате чего формируется менее сложное визуальное дерево, а также сокращается использование памяти.
 
-Начиная с Xamarin.Forms 4.0 все приложения, нацеленные на `FormsAppCompatActivity`, используют быстрые отрисовщики по умолчанию. Дополнительные сведения см. в статье [Быстрые отрисовщики](~/xamarin-forms/internals/fast-renderers.md).
+Начиная с Xamarin.Forms 4.0 все приложения, нацеленные на `FormsAppCompatActivity`, используют быстрые отрисовщики по умолчанию. Дополнительные сведения см. в статье [Быстрые отрисовщики](~/xamarin-forms/internals/fast-renderers.md).
 
 ## <a name="enable-startup-tracing-on-android"></a>Включение трассировки запуска на Android
 
@@ -201,11 +204,11 @@ XAMLC по умолчанию включен в новых решениях Xama
 
 ## <a name="create-shell-applications"></a>Создание приложения оболочки
 
-Приложения оболочки Xamarin.Forms предоставляют специализированный пользовательский интерфейс навигации на основе всплывающих элементов и вкладок. Если взаимодействие с пользователем приложения можно реализовать с помощью оболочки, это полезно сделать. Преимуществом этого подхода является ускорение запуска приложения, так как страницы создаются только по запросу в ответ на действия навигации, а не сразу при запуске приложения, как в приложениях, использующих [TabbedPage](xref:Xamarin.Forms.TabbedPage). Дополнительные сведения см. в статье [Оболочка Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/index.md).
+Приложения оболочки Xamarin.Forms предоставляют специализированный пользовательский интерфейс навигации на основе всплывающих элементов и вкладок. Если взаимодействие с пользователем приложения можно реализовать с помощью оболочки, это полезно сделать. Преимуществом этого подхода является ускорение запуска приложения, так как страницы создаются только по запросу в ответ на действия навигации, а не сразу при запуске приложения, как в приложениях, использующих [TabbedPage](xref:Xamarin.Forms.TabbedPage). Дополнительные сведения см. в разделе [Оболочка Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/index.md).
 
 ## <a name="use-collectionview-instead-of-listview"></a>Использование CollectionView вместо ListView
 
-Представление [`CollectionView`](xref:Xamarin.Forms.CollectionView) служит для вывода списков данных с различными спецификациями макета. Оно предоставляет более гибкую и производительную альтернативу [`ListView`](xref:Xamarin.Forms.ListView). Дополнительные сведения см. в статье [Представление CollectionView в Xamarin.Forms](~/xamarin-forms/user-interface/collectionview/index.md).
+Представление [`CollectionView`](xref:Xamarin.Forms.CollectionView) служит для вывода списков данных с различными спецификациями макета. Оно предоставляет более гибкую и производительную альтернативу [`ListView`](xref:Xamarin.Forms.ListView). Дополнительные сведения см. в разделе [Xamarin.Forms CollectionView](~/xamarin-forms/user-interface/collectionview/index.md).
 
 ## <a name="optimize-listview-performance"></a>Оптимизация производительности ListView
 
@@ -339,7 +342,7 @@ protected override void OnElementChanged (ElementChangedEventArgs<NativeListView
 - [Быстрые отрисовщики](~/xamarin-forms/internals/fast-renderers.md)
 - [Сжатие макета](~/xamarin-forms/user-interface/layouts/layout-compression.md)
 - [Оболочка Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/index.md)
-- [Представление CollectionView в Xamarin.Forms](~/xamarin-forms/user-interface/collectionview/index.md)
+- [Xamarin.Forms CollectionView](~/xamarin-forms/user-interface/collectionview/index.md)
 - [Производительность элемента управления ListView](~/xamarin-forms/user-interface/listview/performance.md)
 - [Оптимизация графических ресурсов](~/cross-platform/deploy-test/memory-perf-best-practices.md#optimizeimages)
 - [Стили XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)

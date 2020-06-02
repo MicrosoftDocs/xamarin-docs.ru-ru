@@ -1,20 +1,12 @@
 ---
-title: Поиск в оболочке Xamarin.Forms
-description: Приложения оболочки Xamarin.Forms могут использовать интегрированную функцию поиска, которая реализована в виде поля поиска в верхней части каждой страницы.
-ms.prod: xamarin
-ms.assetid: F8F9471D-6771-4D23-96C0-2B79473A06D4
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 12/18/2019
-ms.openlocfilehash: 9bd4fe5f1a35e2a6f36540cbee13838841b36d92
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "75490068"
+title: 'Xamarin.Forms Поиск по оболочке' description: 'Xamarin.Forms Приложения оболочки могут использовать интегрированную функцию поиска, которая реализована в виде поля поиска в верхней части каждой страницы.'
+ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
 ---
-# <a name="xamarinforms-shell-search"></a>Поиск в оболочке Xamarin.Forms
+
+# <a name="xamarinforms-shell-search"></a>Поиск по оболочке Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
@@ -63,7 +55,7 @@ public class MonkeySearchHandler : SearchHandler
 
 Переопределение `OnQueryChanged` имеет два аргумента: `oldValue` содержит предыдущий поисковый запрос, а `newValue` — текущий поисковый запрос. Область поисковых подсказок можно обновлять, задавая свойству `SearchHandler.ItemsSource` значение коллекции `IEnumerable` с элементами, которые соответствуют текущему поисковому запросу.
 
-Когда пользователь выбирает результат поиска, выполняется переопределение метода `OnItemSelected` и присваивается значение свойству `SelectedItem`. В нашем примере этот метод переходит на другую страницу, которая отображает данные о выбранных `Animal`. Дополнительные сведения о навигации, см. в статье [о навигации в оболочке Xamarin.Forms](navigation.md).
+Когда пользователь выбирает результат поиска, выполняется переопределение метода `OnItemSelected` и присваивается значение свойству `SelectedItem`. В нашем примере этот метод переходит на другую страницу, которая отображает данные о выбранных `Animal`. Дополнительные сведения о навигации см. в разделе [Навигация по оболочке Xamarin.Forms](navigation.md).
 
 > [!NOTE]
 > Дополнительные свойства `SearchHandler` позволяют управлять внешним видом поля поиска.
@@ -174,7 +166,7 @@ Shell.SetSearchHandler(this, new MonkeySearchHandler
 
 [![Снимок экрана: шаблонные результаты поиска в объекте SearchHandler оболочки на iOS и Android](search-images/search-results-template.png "Шаблонные результаты поиска в объекте SearchHandler оболочки")](search-images/search-results-template-large.png#lightbox "Шаблонные результаты поиска в объекте SearchHandler оболочки")
 
-Дополнительные сведения о шаблонах данных см. в разделе [Шаблоны данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md).
+Дополнительные сведения о шаблонах данных см. в разделе [Общие сведения о шаблонах данныхXamarin.Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md).
 
 ## <a name="search-box-visibility"></a>Видимость поля поиска
 
@@ -332,4 +324,4 @@ searchHandler.Keyboard = Keyboard.Create(KeyboardFlags.Suggestions | KeyboardFla
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Xaminals (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
-- [Навигация в оболочке Xamarin.Forms](navigation.md)
+- [Навигация по оболочке Xamarin.Forms](navigation.md)

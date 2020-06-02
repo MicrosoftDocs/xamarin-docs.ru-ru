@@ -1,24 +1,27 @@
 ---
-title: CarouselPage в Xamarin.Forms
-description: CarouselPage в Xamarin.Forms — это страница, по которой пользователи могут проводить из стороны в сторону, чтобы переходить по страницам содержимого, например по страницам коллекции. В этой статье демонстрируется использование CarouselPage для перехода по коллекции страниц.
-ms.prod: xamarin
-ms.assetid: 2D14FC9D-DF5F-427E-9006-2AAE61ECF8DC
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 12/01/2017
-ms.openlocfilehash: 5cfaeb8589514972dfcccd11009a02c00f95bfac
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: Страница карусели в Xamarin.Forms
+description: CarouselPage в Xamarin.Forms — это страница, по которой пользователи могут проводить из стороны в сторону, чтобы переходить по страницам содержимого, например по страницам коллекции. В этой статье демонстрируется использование CarouselPage для перехода по коллекции страниц.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 4d0cebe98b66f3596e72624efed90e965b942bfc
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "72696444"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137531"
 ---
-# <a name="xamarinforms-carousel-page"></a>CarouselPage в Xamarin.Forms
+# <a name="xamarinforms-carousel-page"></a>Страница карусели в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-carouselpage)
 
-_CarouselPage в Xamarin.Forms — это страница, по которой пользователи могут проводить из стороны в сторону, чтобы переходить по страницам содержимого, например по страницам коллекции. В этой статье демонстрируется использование CarouselPage для перехода по коллекции страниц._
+_CarouselPage в Xamarin.Forms — это страница, по которой пользователи могут проводить из стороны в сторону, чтобы переходить по страницам содержимого, например по страницам коллекции. В этой статье демонстрируется использование CarouselPage для перехода по коллекции страниц._
 
 > [!IMPORTANT]
 > [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) был заменен на [`CarouselView`](xref:Xamarin.Forms.CarouselView), предоставляющий прокручиваемый макет, в котором пользователи могут перемещаться по коллекции элементов, проводя пальцем. Дополнительные сведения о `CarouselView` см. в разделе [Xamarin.Forms CarouselView](~/xamarin-forms/user-interface/carouselview/index.md).
@@ -42,7 +45,7 @@ _CarouselPage в Xamarin.Forms — это страница, по которой
 
 Если объект [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) внедрен на страницу [`Detail`](xref:Xamarin.Forms.MasterDetailPage.Detail) страницы [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage), свойству [`MasterDetailPage.IsGestureEnabled`](xref:Xamarin.Forms.MasterDetailPage.IsGestureEnabledProperty) необходимо присвоить значение `false`, чтобы предотвратить конфликты жестов между `CarouselPage` и `MasterDetailPage`.
 
-Дополнительные сведения о [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) см. в [главе 25](https://developer.xamarin.com/r/xamarin-forms/book/chapter25.pdf) книги Xamarin.Forms Чарльза Петцольда (Charles Petzold).
+Дополнительные сведения о [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) см. в [главе 25](https://developer.xamarin.com/r/xamarin-forms/book/chapter25.pdf) книги о Xamarin.Forms Чарльза Петцольда (Charles Petzold).
 
 ## <a name="create-a-carouselpage"></a>Создание CarouselPage
 

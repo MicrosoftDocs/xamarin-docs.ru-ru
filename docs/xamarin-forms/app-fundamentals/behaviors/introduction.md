@@ -1,18 +1,21 @@
 ---
-title: Общие сведения о реакциях на события
-description: Реакции на события позволяют добавлять функциональные возможности в элементы управления пользовательского интерфейса без разделения их на подклассы. Функциональность реализуется в классе реакции на событие и присоединяется к элементу управления так, как если бы она была его частью. В этой статье приводятся общие сведения о реакциях на события.
-ms.prod: xamarin
-ms.assetid: 0DF1EF8C-A212-4142-A3C6-DF760A82A757
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/06/2016
-ms.openlocfilehash: d62ba6b025b2fe9865df8279a5e98eba254bb5a2
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: d5bee3baa08387a1ed67384ba4089d63aad08d2c
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70772051"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135776"
 ---
 # <a name="introduction-to-behaviors"></a>Общие сведения о реакциях на события
 
@@ -29,7 +32,7 @@ _Реакции на события позволяют добавлять фун
 
 В Xamarin.Forms поддерживаются два вида реакций на события.
 
-- **Реакции на события Xamarin.Forms** — классы, производные от класса [`Behavior`](xref:Xamarin.Forms.Behavior) или [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1), где `T` — это тип элемента управления, к которому должна применяться реакция на событие. Дополнительные сведения о реакциях на события Xamarin.Forms см. в статьях [Реакции на события Xamarin.Forms](~/xamarin-forms/app-fundamentals/behaviors/creating.md) и [Повторно используемые реакции на события](~/xamarin-forms/app-fundamentals/behaviors/reusable/index.md).
+- **Реакции на события Xamarin.Forms**  — это классы, производные от класса [`Behavior`](xref:Xamarin.Forms.Behavior) или [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1), где `T` — это тип элемента управления, к которому должна применяться реакция на событие. Дополнительные сведения о реакциях на события Xamarin.Forms см. в статьях [Реакции на события Xamarin.Forms](~/xamarin-forms/app-fundamentals/behaviors/creating.md) и [Повторно используемые реакции на события](~/xamarin-forms/app-fundamentals/behaviors/reusable/index.md).
 - **Присоединенные реакции на события** — классы `static` с одним или несколькими присоединенными свойствами. Дополнительные сведения о присоединенных реакциях на события см. в статье [Присоединенные реакции на события](~/xamarin-forms/app-fundamentals/behaviors/attached.md).
 
 В этой статье рассматриваются реакции на события Xamarin.Forms как предпочтительный способ создания реакций на события.

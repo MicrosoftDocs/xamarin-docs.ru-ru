@@ -1,18 +1,22 @@
 ---
-title: Аннотация к главе 19. Представления коллекций
-description: Создание мобильных приложений с помощью Xamarin.Forms. Аннотация к главе 19. Представления коллекций
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 0AEC3A5C-586E-4D0F-9895-67E99A053A79
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/18/2018
-ms.openlocfilehash: bffbd2dec4a8494723597ba6e0f0af69e57f3718
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 19. Collection views''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0eafdeffb6783a0ed54fdf23e6d10de24e2b4c6f
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73032857"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136699"
 ---
 # <a name="summary-of-chapter-19-collection-views"></a>Аннотация к главе 19. Представления коллекций
 
@@ -46,7 +50,7 @@ Xamarin.Forms определяет три представления, котор
 Свойство `SelectedIndex` поддерживается связываемым свойством, а `Items` — нет, поэтому использование привязки данных с `Picker` усложняется. Одним из решений является использование `Picker` в сочетании с [`ObjectToIndexConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ObjectToIndexConverter.cs), например из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). Пример [**PickerBinding**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/PickerBinding) демонстрирует, как это работает.
 
 > [!NOTE] 
-> `Picker` Xamarin.Forms теперь включает в себя свойства `ItemsSource` и `SelectedItem`, поддерживающие привязку данных. Дополнительную информацию см. в статье о [Picker](~/xamarin-forms/user-interface/picker/index.md).
+> Xamarin.Forms `Picker` теперь включает в себя свойства `ItemsSource` и `SelectedItem`, поддерживающие привязку данных. Дополнительную информацию см. в статье о [Picker](~/xamarin-forms/user-interface/picker/index.md).
 
 ## <a name="rendering-data-with-listview"></a>Преобразование данных с помощью ListView для просмотра
 

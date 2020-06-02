@@ -1,24 +1,16 @@
 ---
-title: Создание приложения оболочки Xamarin.Forms
-description: Чтобы создать приложение оболочки Xamarin.Forms, нужно создать XAML-файл, в котором, в свою очередь, создается производный класс Shell, задается свойства MainPage класса App приложения для подкласса объекта Shell и описывается визуальная иерархия приложения в производном классе Shell.
-ms.prod: xamarin
-ms.assetid: 2A51D78F-6CD5-4BC4-A62E-11CEFA799987
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 05/24/2019
-ms.openlocfilehash: eec20ff6ceb4aee7e8fde59992576899690616c3
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "68739307"
+title: 'Создание приложения оболочки Xamarin.Forms' description: 'Чтобы создать приложение оболочки Xamarin.Forms, нужно создать XAML-файл, в котором, в свою очередь, создается производный класс Shell, задаются свойства MainPage класса App приложения для подкласса объекта Shell и описывается визуальная иерархия приложения в производном классе Shell.'
+ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
 ---
+
 # <a name="create-a-xamarinforms-shell-application"></a>Создание приложения оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
-Чтобы создать приложение оболочки Xamarin.Forms сделайте следующее:
+Чтобы создать приложение оболочки Xamarin.Forms, сделайте следующее:
 
 1. Создайте приложение Xamarin.Forms или загрузите существующее приложение, которое вы можете преобразовать в приложение оболочки.
 1. В проект с общим кодом добавьте XAML-файл, в котором создается производный класс `Shell`. Дополнительные сведения см. в разделе [Создание производного класса оболочки](#subclass-the-shell-class).
@@ -135,7 +127,7 @@ namespace Xaminals
 [![Снимок экрана: всплывающий элемент оболочки в iOS и Android](create-images/flyout-reduced.png "Всплывающий элемент оболочки")](create-images/flyout-reduced-large.png#lightbox "Всплывающий элемент оболочки")
 
 > [!IMPORTANT]
-> В приложении оболочки каждый [`ContentPage`](xref:Xamarin.Forms.ContentPage), который является дочерним элементом объекта `ShellContent`, создается во время запуска приложения. Такой метод добавления объектов `ShellContent` приводит к созданию дополнительных страниц во время запуска приложения, что может замедлять запуск. Но оболочка может создавать страницы и по требованию, реагируя на переходы. Дополнительные сведения см. в разделе [об эффективности загрузки страниц](tabs.md#efficient-page-loading) в [руководстве по вкладкам оболочки Xamarin.Forms](tabs.md).
+> В приложении оболочки каждый [`ContentPage`](xref:Xamarin.Forms.ContentPage), который является дочерним элементом объекта `ShellContent`, создается во время запуска приложения. Такой метод добавления объектов `ShellContent` приводит к созданию дополнительных страниц во время запуска приложения, что может замедлять запуск. Но оболочка может создавать страницы и по требованию, реагируя на переходы. Дополнительные сведения см. в разделе об [эффективности загрузки страниц](tabs.md#efficient-page-loading) в руководстве по [вкладкам оболочки Xamarin.Forms](tabs.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 

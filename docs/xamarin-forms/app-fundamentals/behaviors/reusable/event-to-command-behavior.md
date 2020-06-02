@@ -1,18 +1,21 @@
 ---
-title: Повторно используемый EventToCommandBehavior
+title: ''
 description: Реакции на события можно использовать для сопоставления команд с элементами управления, которые не были предназначены для взаимодействия с командами. В этой статье демонстрируется создание и использование реакции на событие Xamarin.Forms для выполнения команды при возникновении события.
-ms.prod: xamarin
-ms.assetid: EC7F6556-9776-40B8-9424-A8094482A2F3
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/09/2018
-ms.openlocfilehash: 292a6aaaea4fb0f84138e04c88f001c72ddd096d
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 46d1566c89de763a469f30ce8ed2c6ef919f1426
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "68650912"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135802"
 ---
 # <a name="reusable-eventtocommandbehavior"></a>Повторно используемый EventToCommandBehavior
 
@@ -41,7 +44,7 @@ _Реакции на события можно использовать для �
 
 Класс `EventToCommandBehavior` является производным от класса `BehaviorBase<T>`, который, в свою очередь, является производным от класса [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1). Класс `BehaviorBase<T>` служит для предоставления базового класса для любых реакций на событие Xamarin.Forms, требующих установить присоединенный элемент управления для [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) реакции на событие. Это гарантирует, что при использовании реакция на событие может осуществить привязку к `ICommand`, определяемому свойством `Command`, и выполнить его.
 
-Класс `BehaviorBase<T>` предоставляет переопределяемый метод [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)), задающий [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) реакции на событие, и переопределяемый метод [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)), очищающий `BindingContext`. Кроме того, класс хранит ссылку на присоединенный элемент управления в свойстве `AssociatedObject`.
+Класс `BehaviorBase<T>` предоставляет переопределяемый метод [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) method that sets the [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) of the behavior and an overridable [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)), очищающий `BindingContext`. Кроме того, класс хранит ссылку на присоединенный элемент управления в свойстве `AssociatedObject`.
 
 ### <a name="implementing-bindable-properties"></a>Реализация привязываемых свойств
 
@@ -73,7 +76,7 @@ public class EventToCommandBehavior : BehaviorBase<View>
 
 ### <a name="implementing-the-overrides"></a>Реализация переопределений
 
-В классе `EventToCommandBehavior` переопределяются методы [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) и [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) класса `BehaviorBase<T>`, как показано в следующем примере кода:
+В классе `EventToCommandBehavior` переопределяются методы [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) and [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) класса `BehaviorBase<T>`, как показано в следующем примере кода:
 
 ```csharp
 public class EventToCommandBehavior : BehaviorBase<View>
@@ -94,7 +97,7 @@ public class EventToCommandBehavior : BehaviorBase<View>
 }
 ```
 
-Метод [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) выполняет настройку, вызывая метод `RegisterEvent` и передавая значение свойства `EventName` в качестве параметра. Метод [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) выполняет очистку, вызывая метод `DeregisterEvent` и передавая значение свойства `EventName` в качестве параметра.
+Метод [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) method performs setup by calling the `RegisterEvent` method, passing in the value of the `EventName` property as a parameter. The [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) выполняет очистку, вызывая метод `DeregisterEvent` и передавая значение свойства `EventName` в качестве параметра.
 
 ### <a name="implementing-the-behavior-functionality"></a>Реализация функциональности реакции на событие
 
@@ -152,7 +155,7 @@ public class EventToCommandBehavior : BehaviorBase<View>
 
 Затем выполняется `ICommand` с привязкой данных, передавая параметр в команду, при условии, что метод [`CanExecute`](xref:Xamarin.Forms.Command.CanExecute(System.Object)) возвращает `true`.
 
-Хотя это здесь и не показано, `EventToCommandBehavior` также включает в себя метод `DeregisterEvent`, который выполняется методом [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)). Метод `DeregisterEvent` используется для поиска и отмены регистрации события, определенного в свойстве `EventName`, для очистки потенциальных утечек памяти.
+Хотя это здесь и не показано, `EventToCommandBehavior` также включает в себя метод `DeregisterEvent`, который выполняется свойством [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) method. The `DeregisterEvent` method is used to locate and deregister the event defined in the `EventName` для очистки потенциальных утечек памяти.
 
 ## <a name="consuming-the-behavior"></a>Использование реакции на событие
 

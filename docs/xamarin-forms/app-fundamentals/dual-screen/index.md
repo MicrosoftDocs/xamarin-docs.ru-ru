@@ -1,20 +1,23 @@
 ---
-title: Двухэкранный режим в Xamarin.Forms
+title: Два экрана в Xamarin.Forms
 description: Это руководство рассказывает, как создавать приложения с поддержкой двухэкранных устройств с помощью Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: f9906e83-f8ae-48f9-997b-e1540b96ee8e
-ms.technology: xamarin-forms
-author: davidortinau
-ms.author: daortin
-ms.date: 02/08/2020
-ms.openlocfilehash: 344b6293090ffa4281ea6351f7f176a5be37e5bd
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: aeaaeb732adaea45446d6baf833027801abf4d2a
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "78165551"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138909"
 ---
-# <a name="xamarinforms-dual-screen"></a>Двухэкранный режим в Xamarin.Forms
+# <a name="xamarinforms-dual-screen"></a>Два экрана в Xamarin.Forms
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 

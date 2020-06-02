@@ -1,18 +1,21 @@
 ---
 title: Реакции на события Xamarin.Forms
-description: Реакции на события позволяют добавлять функциональные возможности в элементы управления пользовательского интерфейса без разделения их на подклассы. Реакции на события пишутся в коде и добавляются в элементы управления в XAML или коде.
-ms.prod: xamarin
-ms.assetid: 42E32AD7-8E3B-48B3-B402-E75B758DA913
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/06/2016
-ms.openlocfilehash: df0a767976247166205ae8a3d70fd59c521646f6
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 83952982bd163725fb931c860cac3e267726315c
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "61197543"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135815"
 ---
 # <a name="xamarinforms-behaviors"></a>Реакции на события Xamarin.Forms
 
@@ -26,7 +29,7 @@ _Реакции на события позволяют добавлять фун
 
 Присоединенные реакции на события — это классы `static` с одним или несколькими присоединенными свойствами. В этой статье содержатся сведения о создании и использовании присоединенных реакций на события.
 
-## <a name="xamarinforms-behaviors"></a>[Реакции на событие Xamarin.Forms](creating.md)
+## <a name="xamarinforms-behaviorscreatingmd"></a>[Реакции на события Xamarin.Forms](creating.md)
 
 Реакции на событие Xamarin.Forms создаются путем наследования от классов [`Behavior`](xref:Xamarin.Forms.Behavior) или [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1). В этой статье содержатся сведения о создании и использовании реакций на события Xamarin.Forms.
 

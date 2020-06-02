@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о Главе 7. Сравнение XAML и кода
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о Главе 7. Сравнение XAML и кода
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: E91F387B-CE90-481C-8D90-CB25519BFD2B
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/19/2018
-ms.openlocfilehash: ce4dde3716176daf826678809339afb84c25d84a
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 7. XAML vs. code''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0b92988e1e838072fca0d8a284455a62db05e757
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "61334747"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136868"
 ---
 # <a name="summary-of-chapter-7-xaml-vs-code"></a>Сводная информация о Главе 7. Сравнение XAML и кода
 

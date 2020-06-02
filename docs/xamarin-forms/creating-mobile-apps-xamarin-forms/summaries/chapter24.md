@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 24. Переход по страницам
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 24. Переход по страницам
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: DDCDB49C-6008-4F72-B095-463EE21D7C23
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/07/2017
-ms.openlocfilehash: fd8e4fc77917fcba9bc61e59ced714ac1cd6fbe9
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 24. Page navigation''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 09622adc269027b589a7345a7d4411c3dcecbf0c
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77130845"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136647"
 ---
 # <a name="summary-of-chapter-24-page-navigation"></a>Сводка по главе 24. Переход по страницам
 
@@ -49,7 +53,7 @@ ms.locfileid: "77130845"
 Альтернативные версии методов навигации предоставляются с дополнительным логическим аргументом, которому вы присваиваете значение `true`, если хотите применить анимацию к переходу между страницами:
 
 - [PushAsync](xref:Xamarin.Forms.INavigation.PushAsync(Xamarin.Forms.Page,System.Boolean))
-- [PushModalAsync](xref:Xamarin.Forms.INavigation.PushModalAsync(Xamarin.Forms.Page,System.Boolean));
+- [PushModalAsync](xref:Xamarin.Forms.INavigation.PushModalAsync(Xamarin.Forms.Page,System.Boolean))
 - [PopAsync](xref:Xamarin.Forms.INavigation.PopAsync(System.Boolean));
 - [PopModalAsync](xref:Xamarin.Forms.INavigation.PopModalAsync(System.Boolean)).
 
@@ -66,8 +70,8 @@ ms.locfileid: "77130845"
 
 - [`SetHasBackButton`](xref:Xamarin.Forms.NavigationPage.SetHasBackButton(Xamarin.Forms.Page,System.Boolean)) и [`GetHasBackButton`](xref:Xamarin.Forms.NavigationPage.GetHasBackButton(Xamarin.Forms.Page))
 - [`SetHasNavigationBar`](xref:Xamarin.Forms.NavigationPage.SetHasNavigationBar(Xamarin.Forms.BindableObject,System.Boolean)) и [`GetHasNavigationBar`](xref:Xamarin.Forms.NavigationPage.GetHasNavigationBar(Xamarin.Forms.BindableObject))
-- [`SetBackButtonTitle`](xref:Xamarin.Forms.NavigationPage.SetBackButtonTitle(Xamarin.Forms.BindableObject,System.String)) и [`GetBackButtonTitle`](xref:Xamarin.Forms.NavigationPage.GetBackButtonTitle(Xamarin.Forms.BindableObject)) (только для iOS);
-- [`SetTitleIcon`](xref:Xamarin.Forms.NavigationPage.SetTitleIcon(Xamarin.Forms.BindableObject,Xamarin.Forms.FileImageSource)) и [`GetTitleIcon`](xref:Xamarin.Forms.NavigationPage.GetTitleIcon(Xamarin.Forms.BindableObject)) (только для iOS и Android).
+- [`SetBackButtonTitle`](xref:Xamarin.Forms.NavigationPage.SetBackButtonTitle(Xamarin.Forms.BindableObject,System.String)) and [`GetBackButtonTitle`](xref:Xamarin.Forms.NavigationPage.GetBackButtonTitle(Xamarin.Forms.BindableObject)) (только для iOS)
+- [`SetTitleIcon`](xref:Xamarin.Forms.NavigationPage.SetTitleIcon(Xamarin.Forms.BindableObject,Xamarin.Forms.FileImageSource)) и [`GetTitleIcon`](xref:Xamarin.Forms.NavigationPage.GetTitleIcon(Xamarin.Forms.BindableObject)) (только для iOS и Android)
 
 ### <a name="exploring-the-mechanics"></a>Изучение механизма работы
 

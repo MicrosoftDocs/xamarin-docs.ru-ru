@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о Главе 27. Пользовательские отрисовщики
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о Главе 27. Пользовательские отрисовщики
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 49961953-9336-4FD4-A42F-6D9B05FF52E7
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/18/2018
-ms.openlocfilehash: fd4014fa4db4e90596c100d454cf0467512240a4
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 27. Custom renderers''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 4b0a3e14126dc8c92a1d1b60db7dbb2afd8e8c12
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70760503"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136595"
 ---
 # <a name="summary-of-chapter-27-custom-renderers"></a>Сводная информация о Главе 27. Пользовательские отрисовщики
 
@@ -27,13 +31,13 @@ ms.locfileid: "70760503"
 
 ## <a name="the-complete-class-hierarchy"></a>Полная иерархия классов
 
-Существует четыре сборки, содержащие платформенный код Xamarin.Forms.
+Существует четыре сборки, содержащих платформенный код Xamarin.Forms.
 Вы можете просмотреть исходный код на сайте GitHub этим ссылкам:
 
-- [**Xamarin.Forms.Platform**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Platform) (очень короткий)
-- [**Xamarin.Forms.Platform.iOS**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Platform.iOS)
-- [**Xamarin.Forms.Platform.Android**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Platform.Android)
-- [**Xamarin.Forms.Platform.UAP**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Platform.UAP)
+- [ **Xamarin.Forms.Platform**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Platform) (очень короткий)
+- [ **Xamarin.Forms.Platform.iOS**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Platform.iOS)
+- [ **Xamarin.Forms.Platform.Android**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Platform.Android)
+- [ **Xamarin.Forms.Platform.UAP**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Platform.UAP)
 
 > [!NOTE]
 > Сборки `WinRT`, упомянутые в книге, больше не являются частью этого решения. 

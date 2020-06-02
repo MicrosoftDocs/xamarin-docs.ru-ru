@@ -1,19 +1,22 @@
 ---
-title: Локализация справа налево
+title: ''
 description: Локализация справа налево поддерживает направление потока справа налево в приложениях Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 90E0CB16-C42A-4CC8-A70E-0C2CFB64A429
-ms.technology: xamarin-forms
-ms.custom: xamu-video
-author: davidbritch
-ms.author: dabritch
-ms.date: 05/07/2018
-ms.openlocfilehash: a6eb3167fd0880984a74245c4653642ea3979354
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+ms.custom: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 212674472706a36c66436a3955ab7b988f8e246b
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "72678841"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137557"
 ---
 # <a name="right-to-left-localization"></a>Локализация справа налево
 

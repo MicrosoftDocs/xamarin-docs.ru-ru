@@ -1,18 +1,21 @@
 ---
 title: Путь привязки Xamarin.Forms
 description: В этой статье описывается, как использовать привязки данных Xamarin.Forms для доступа к вложенным свойствам и элементам коллекций с помощью свойства Path класса Binding.
-ms.prod: xamarin
-ms.assetid: 3CF721A5-E157-468B-AD3A-DA0A45E58E8D
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 01/05/2018
-ms.openlocfilehash: 79d8df3300b302512a7de4140968dbc4c8e79abc
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0657f39d0584405ea1a6d7611ac789488817770f
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76940343"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139746"
 ---
 # <a name="xamarinforms-binding-path"></a>Путь привязки Xamarin.Forms
 
@@ -159,11 +162,11 @@ ms.locfileid: "76940343"
 
 Теперь видно, что свойство `Content` имеет тип `Xamarin.Forms.StackLayout`. Добавьте свойство `Children` в `Path`, и будет ясно, что его тип — `Xamarin.Forms.ElementCollection'1[Xamarin.Forms.View]`. Это внутренний класс Xamarin.Forms, однако очевидно, что он представляет собой коллекцию. Добавьте индекс. Тип — `Xamarin.Forms.Label`. Продолжайте тем же образом.
 
-Когда Xamarin.Forms обрабатывает путь привязки, для каждого объекта, реализующего интерфейс `INotifyPropertyChanged`, в пути устанавливается обработчик `PropertyChanged`. Например, последняя привязка реагирует на изменение в первом элементе `Label`, так как меняется свойство `Text`.
+Когда Xamarin.Forms обрабатывает путь привязки, для каждого объекта, реализующего интерфейс `PropertyChanged`, в пути устанавливается обработчик `INotifyPropertyChanged`. Например, последняя привязка реагирует на изменение в первом элементе `Label`, так как меняется свойство `Text`.
 
 Если свойство в пути привязки не реализует интерфейс `INotifyPropertyChanged`, изменения этого свойства игнорируются. Некоторые изменения могут сделать путь привязки полностью недействительным, поэтому этот прием следует использовать, только если строка из свойств и вложенных свойств не может стать недействительной.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Демоверсии привязок данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
-- [Глава, посвященная привязкам данных, из книги Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter16.md)
+- [Глава, посвященная привязкам данных, из книги о Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter16.md)

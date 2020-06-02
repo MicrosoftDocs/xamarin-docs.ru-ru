@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о главе 12. Стили
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о главе 12. Стили
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 3EAE6BDC-8EFB-464B-A87B-1C35B8387BB3
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/19/2018
-ms.openlocfilehash: 408f171a3c7c690b700f7be21a3dcaff503467d9
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 12. Styles''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 22f7272751c30bed350fe7aada8d5dacf0acc809
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "65926906"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136790"
 ---
 # <a name="summary-of-chapter-12-styles"></a>Сводная информация о главе 12. Стили
 

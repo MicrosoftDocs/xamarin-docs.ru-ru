@@ -1,18 +1,21 @@
 ---
 title: Макет оболочки Xamarin.Forms
-description: Следующим уровнем навигации после всплывающего меню в приложении оболочки является нижняя панель вкладок. Или же навигация по приложению может начинаться с нижней панели вкладок без использования всплывающего меню. В обоих случаях, если нижняя вкладка содержит более одной страницы, перемещение по ним осуществляется с помощью верхней панели вкладок.
-ms.prod: xamarin
-ms.assetid: 318D81DB-E456-4E44-B083-36A27DBD9523
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/06/2019
-ms.openlocfilehash: 0ffcbe99ef9696c5fde501809bea5ddcc7a793a7
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: fa49cdb7944e3ab942ccda611af906e2822b072a
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303849"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139962"
 ---
 # <a name="xamarinforms-shell-tabs"></a>Вкладки оболочки Xamarin.Forms
 
@@ -27,7 +30,7 @@ ms.locfileid: "79303849"
 
 Каждый объект `FlyoutItem` или `TabBar` может содержать один или несколько объектов `Tab`, где каждый объект `Tab` представляет вкладку на нижней панели. Каждый объект `Tab` может содержать один или несколько объектов `ShellContent`, где каждый объект `ShellContent` отображает один объект [`ContentPage`](xref:Xamarin.Forms.ContentPage). Если `Tab` содержит более одного объекта `ShellContent`, перемещение по объектам `ContentPage` осуществляется с помощью верхней панели вкладок.
 
-В каждом объекте [`ContentPage`](xref:Xamarin.Forms.ContentPage) можно перейти к дополнительным объектам `ContentPage`. Дополнительные сведения о навигации, см. в статье [о навигации в оболочке Xamarin.Forms](navigation.md).
+В каждом объекте [`ContentPage`](xref:Xamarin.Forms.ContentPage) можно перейти к дополнительным объектам `ContentPage`. Дополнительные сведения о навигации см. в разделе [Навигация по оболочке Xamarin.Forms](navigation.md).
 
 ## <a name="single-page-application"></a>Одностраничное приложение
 
@@ -166,7 +169,7 @@ ms.locfileid: "79303849"
 </Shell>
 ```
 
-В каждом объекте [`ContentPage`](xref:Xamarin.Forms.ContentPage) можно перейти к дополнительным объектам `ContentPage`. Дополнительные сведения о навигации, см. в статье [о навигации в оболочке Xamarin.Forms](navigation.md).
+В каждом объекте [`ContentPage`](xref:Xamarin.Forms.ContentPage) можно перейти к дополнительным объектам `ContentPage`. Дополнительные сведения о навигации см. в разделе [Навигация по оболочке Xamarin.Forms](navigation.md).
 
 > [!NOTE]
 > [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) каждого объекта `ShellContent` наследуется от родительского объекта `Tab`.
@@ -293,10 +296,10 @@ ms.locfileid: "79303849"
 </Style>
 ```
 
-Кроме того, стиль вкладок можно задать с помощью каскадных таблиц стилей (CSS). Подробные сведения см. в статье [об особых свойствах оболочки Xamarin.Forms](~/xamarin-forms/user-interface/styles/css/index.md#xamarinforms-shell-specific-properties).
+Кроме того, стиль вкладок можно задать с помощью каскадных таблиц стилей (CSS). Подробные сведения см. в разделе [Особые свойства оболочки Xamarin.Forms](~/xamarin-forms/user-interface/styles/css/index.md#xamarinforms-shell-specific-properties).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Xaminals (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
-- [Навигация в оболочке Xamarin.Forms](navigation.md)
+- [Навигация по оболочке Xamarin.Forms](navigation.md)
 - [Особые свойства каскадных таблиц стилей оболочки Xamarin.Forms](~/xamarin-forms/user-interface/styles/css/index.md#xamarinforms-shell-specific-properties)

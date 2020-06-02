@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о главе 16. привязка данных,
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о главе 16. привязка данных,
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: ED997DB0-C229-4868-A5FB-928703B377D6
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/18/2018
-ms.openlocfilehash: 2d61413fb1d8c28a3957da53601d0ad682f35518
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 16. Data binding''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ece93730100001e8339a5f50cdb7ac437d96fa62
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771101"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136738"
 ---
 # <a name="summary-of-chapter-16-data-binding"></a>Сводная информация о главе 16. привязка данных,
 
@@ -31,7 +35,7 @@ ms.locfileid: "70771101"
 
 - класс [`Binding`](xref:Xamarin.Forms.Binding) наследуется от [`BindingBase`](xref:Xamarin.Forms.BindingBase) и инкапсулирует множество характеристик привязки данных;
 - свойство [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) определено в классе [`BindableObject`](xref:Xamarin.Forms.BindableObject);
-- метод [`SetBinding`](xref:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)) также определен в классе [`BindableObject`](xref:Xamarin.Forms.BindableObject);
+- Метод [`SetBinding`](xref:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)) также определяется классом [`BindableObject`](xref:Xamarin.Forms.BindableObject).
 - класс [`BindableObjectExtensions`](xref:Xamarin.Forms.BindableObjectExtensions) определяет три дополнительных метода `SetBinding`.
 
 Следующие два класса поддерживают расширения разметки XAML для привязок:
@@ -68,7 +72,7 @@ ms.locfileid: "70771101"
 
 В примере [**BindingSourceCode**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter16/BindingSourceCode) показан другой подход, реализуемый в коде. Для создания объекта `Binding` свойству [`Source`](xref:Xamarin.Forms.Binding.Source) присваивается объект `Slider`, а свойству [`Path`](xref:Xamarin.Forms.Binding.Path) задается значение "Value". Затем для объекта `Label` вызывается метод [`SetBinding`](xref:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)) из `BindableObject`.
 
-[Конструктор `Binding`](xref:Xamarin.Forms.Binding.%23ctor(System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String,System.Object)) также можно использовать для определения объекта `Binding`.
+[`Binding` Конструктор](xref:Xamarin.Forms.Binding.%23ctor(System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String,System.Object)) также можно использовать для определения объекта `Binding`.
 
 В примере [**BindingSourceXaml**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter16/BindingSourceXaml) показан аналогичный подход с использованием XAML. Свойству `Opacity` объекта `Label` присвоено расширение разметки `Binding`, где [`Path`](xref:Xamarin.Forms.Binding.Path) получает значение свойства `Value`, и [`Source`](xref:Xamarin.Forms.Binding.Source) содержит внедренное расширение разметки `x:Reference`.
 

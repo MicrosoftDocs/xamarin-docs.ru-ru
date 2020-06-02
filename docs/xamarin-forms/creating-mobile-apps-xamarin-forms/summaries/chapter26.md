@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 26. Пользовательские макеты
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 26. Пользовательские макеты
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 2B7F4346-414E-49FF-97FB-B85E92D98A21
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/07/2017
-ms.openlocfilehash: 1eb5153f8ab295696e373f4fdb65a4f8820a05bc
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 26. Custom layouts''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: deb46d1a70e7c707c998be8669b4af3b8e8d7ead
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70770944"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136608"
 ---
 # <a name="summary-of-chapter-26-custom-layouts"></a>Сводка по главе 26. Пользовательские макеты
 

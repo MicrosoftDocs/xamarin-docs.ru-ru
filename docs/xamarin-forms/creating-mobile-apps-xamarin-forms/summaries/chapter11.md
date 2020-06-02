@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о Главе 11. Инфраструктура c возможностью привязки
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о Главе 11. Инфраструктура c возможностью привязки
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 34671C48-0ED4-4B76-A33D-D6505390DC5B
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/19/2018
-ms.openlocfilehash: f9e3326c0f55469cfa84a019a674679d82dfc007
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 11. The Bindable infrastructure''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: edc3dfd97457fe93a04edd82574f6ed419f5fdc1
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "61334373"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136803"
 ---
 # <a name="summary-of-chapter-11-the-bindable-infrastructure"></a>Сводная информация о Главе 11. Инфраструктура c возможностью привязки
 
@@ -22,7 +26,7 @@ ms.locfileid: "61334373"
 
 Xamarin.Forms использует расширенное определение свойства, именуемое *привязываемым свойством*, которое инкапсулировано классом [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) и поддерживается классом [`BindableObject`](xref:Xamarin.Forms.BindableObject). Эти классы связаны, но во многом отличаются. `BindableProperty` используется для определения самого свойства, а `BindableObject` похож на `object`, так как является базовым классом для классов, определяющих привязываемые свойства.
 
-## <a name="the-xamarinforms-class-hierarchy"></a>Иерархия классов в Xamarin.Forms
+## <a name="the-xamarinforms-class-hierarchy"></a>Иерархия классов Xamarin.Forms
 
 В примере [**ClassHierarchy**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11/ClassHierarchy) с помощью отражения демонстрируются иерархия классов Xamarin.Forms и решающая роль, которую в этой иерархии играет `BindableObject`. `BindableObject` является производным от `Object` и родительским классом для [`Element`](xref:Xamarin.Forms.Element), от которого, в свою очередь, наследуется [`VisualElement`](xref:Xamarin.Forms.VisualElement). Это родительский класс для [`Page`](xref:Xamarin.Forms.Page) и [`View`](xref:Xamarin.Forms.View), который является родительским классом для [`Layout`](xref:Xamarin.Forms.Layout):
 
@@ -50,7 +54,7 @@ Xamarin.Forms использует расширенное определение
 
 При изменении свойства, которое подкреплено привязываемым свойством, `BindableObject` запускает событие [`PropertyChanged`](xref:Xamarin.Forms.BindableObject.PropertyChanged), идентифицирующее измененное свойство. Если свойству присваивается такое же значение, как и прежнее, это событие не запускается.
 
-Некоторые свойства не подкрепляются привязываемыми свойствами, а некоторые классы &mdash; в Xamarin.Forms, например `Span` &mdash;, не являются производными от `BindableObject`. Привязываемые свойства может поддерживать только класс, производный от `BindableObject`, так как методы `SetValue` и `GetValue` определяются в `BindableObject`.
+Некоторые свойства не подкрепляются привязываемыми свойствами, а некоторые классы Xamarin.Forms в &mdash;, например `Span` &mdash;, не являются производными от `BindableObject`. Привязываемые свойства может поддерживать только класс, производный от `BindableObject`, так как методы `SetValue` и `GetValue` определяются в `BindableObject`.
 
 Так как `Span` не является производным от `BindableObject`, ни одно из его свойств &mdash;, например `Text` &mdash;, не подкрепляется привязываемым свойством. Именно поэтому параметр `DynamicResource` в свойстве `Text` класса `Span` вызывает исключение в примере [**DynamicVsStatic**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter10/DynamicVsStatic) из предыдущей главы. Пример [**DynamicVsStaticCode**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11/DynamicVsStaticCode) демонстрирует, как задать динамические ресурсы в коде с помощью метода [`SetDynamicResource`](xref:Xamarin.Forms.Element.SetDynamicResource(Xamarin.Forms.BindableProperty,System.String)), который определен в `Element`. Первый аргумент является объектом типа `BindableProperty`.
 

@@ -1,18 +1,21 @@
 ---
-title: Локальные уведомления Xamarin.Forms
-description: В этой статье вы узнаете как отправлять и получать локальные уведомления в Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7
-ms.technology: xamarin-forms
-author: profexorgeek
-ms.author: jusjohns
-ms.date: 10/10/2019
-ms.openlocfilehash: ef2ef004378212fac593179d7aa38b3688fa82c3
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: Локальные уведомления в Xamarin.Forms
+description: В этой статье вы узнаете, как отправлять и получать локальные уведомления в Xamarin.Forms.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 40e040f216ddda40931273f4e7f5614964862fe8
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "72371541"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137602"
 ---
 # <a name="local-notifications-in-xamarinforms"></a>Локальные уведомления в Xamarin.Forms
 
@@ -24,7 +27,7 @@ ms.locfileid: "72371541"
 - Напоминания
 - Триггеры на основе расположения
 
-Каждая платформа обрабатывает создание, отображение и использование локальных уведомлений по-разному. В этой статье вы узнаете, как создать кросс-платформенную абстракцию для отправки и получения локальных уведомлений с помощью Xamarin.Forms.
+Каждая платформа обрабатывает создание, отображение и использование локальных уведомлений по-разному. В этой статье вы узнаете, как создать кроссплатформенную абстракцию для отправки и получения локальных уведомлений с помощью Xamarin.Forms.
 
 [![Приложение для локальных уведомлений в iOS и Android](local-notifications-images/local-notifications-msg-cropped.png)](local-notifications-images/local-notifications-msg.png#lightbox)
 
@@ -111,7 +114,7 @@ public partial class MainPage : ContentPage
 
 Конструктор класса `MainPage` использует Xamarin.Forms `DependencyService` для получения экземпляра `INotificationManager`, зависящего от платформы. Метод `OnScheduleClicked` использует экземпляр `INotificationManager` для планирования нового уведомления. Метод `ShowNotification` вызывается из обработчика событий, присоединенного к событию `NotificationReceived`, и вставляет новый `Label` в страницу при вызове события.
 
-Дополнительные сведения о приложении Xamarin.Forms `DependencyService` см. в статье [Xamarin.Forms DependencyService](~/xamarin-forms/app-fundamentals/dependency-service/introduction.md).
+Дополнительные сведения о Xamarin.Forms `DependencyService` см. в разделе [Xamarin.Forms DependencyService](~/xamarin-forms/app-fundamentals/dependency-service/introduction.md).
 
 ## <a name="create-the-android-interface-implementation"></a>Создание реализации интерфейса Android
 
@@ -269,7 +272,7 @@ Android предлагает множество дополнительных п�
 
 ## <a name="create-the-ios-interface-implementation"></a>Создание реализации интерфейса iOS
 
-Чтобы приложение Xamarin.Forms отправляло и получало уведомления на iOS, приложение должно предоставить реализацию `INotificationManager`.
+Чтобы приложение Xamarin.Forms отправляло и получало уведомления на iOS, оно должно предоставить реализацию `INotificationManager`.
 
 ### <a name="create-the-iosnotificationmanager-class"></a>Создание класса iOSNotificationManager
 

@@ -1,19 +1,22 @@
 ---
 title: Преобразователи цвета в Xamarin.Essentials
 description: Класс ColorConverters в Xamarin.Essentials предоставляет несколько вспомогательных методов и методов расширения для работы с System.Drawing.Color.
-ms.assetid: B10428D6-89E2-4714-A39F-7E6E626391B2
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 01/06/2020
-ms.custom: video
-ms.openlocfilehash: 159add7ee83f3c65d791fc49ee3a85ddaaabae1d
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+ms.custom: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 57b85a909855594c70bfd529d7a794b4bd7bca7e
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83150143"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84130225"
 ---
-# <a name="xamarinessentials-color-converters"></a>Xamarin.Essentials: Преобразователи цвета
+# <a name="xamarinessentials-color-converters"></a>Xamarin.Essentials. Преобразователи цвета
 
 Класс **ColorConverters** в Xamarin.Essentials предоставляет несколько вспомогательных методов для System.Drawing.Color.
 
@@ -23,7 +26,7 @@ ms.locfileid: "83150143"
 
 ## <a name="using-color-converters"></a>Использование преобразователей цвета
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

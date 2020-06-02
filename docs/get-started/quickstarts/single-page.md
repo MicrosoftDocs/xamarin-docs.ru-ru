@@ -1,20 +1,23 @@
 ---
 title: Создание одностраничного приложения Xamarin.Forms
 description: В этой статье описывается, как с помощью Xamarin.Forms создать одностраничное кроссплатформенное приложение, которое позволяет ввести заметку и сохранить ее в хранилище устройства.
-zone_pivot_groups: platform-dev16
-ms.topic: quickstart
-ms.prod: xamarin
-ms.assetid: E8CF05B1-54B9-428B-8518-D068837BD61E
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/01/2019
-ms.openlocfilehash: c1d7aa1535fe979df222aaedc6ba2cf3bae0d51c
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+zone_pivot_groups: ''
+ms.topic: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b9a3017fc8188d3669b64d95c968b2d0a5325358
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303633"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136075"
 ---
 # <a name="create-a-single-page-xamarinforms-application"></a>Создание одностраничного приложения Xamarin.Forms
 
@@ -61,7 +64,7 @@ ms.locfileid: "79303633"
 
     ![](single-page-images/vs/new-app-2019.png "New Cross-Platform App")
 
-    Дополнительные сведения о создаваемой библиотеке .NET Standard см. в разделе [Структура приложения Xamarin.Forms](deepdive.md#anatomy-of-a-xamarinforms-application) статьи [Краткое руководство по Xamarin.Forms глубокое погружение в обработку](deepdive.md).
+    Дополнительные сведения о создаваемой библиотеке .NET Standard см. в разделе [Структура приложения Xamarin.Forms](deepdive.md#anatomy-of-a-xamarinforms-application) статьи [Подробное изучение кратких руководств по Xamarin.Forms](deepdive.md).
 
 5. В **обозревателе решений** дважды щелкните файл **MainPage.xaml** в проекте **Notes**, чтобы открыть его:
 
@@ -211,7 +214,7 @@ ms.locfileid: "79303633"
 
     ![](single-page-images/vs/new-app.png "New Cross-Platform App")
 
-    Дополнительные сведения о создаваемой библиотеке .NET Standard см. в разделе [Структура приложения Xamarin.Forms](deepdive.md#anatomy-of-a-xamarinforms-application) статьи [Краткое руководство по Xamarin.Forms глубокое погружение в обработку](deepdive.md).
+    Дополнительные сведения о создаваемой библиотеке .NET Standard см. в разделе [Структура приложения Xamarin.Forms](deepdive.md#anatomy-of-a-xamarinforms-application) статьи [Подробное изучение кратких руководств по Xamarin.Forms](deepdive.md).
 
 4. В **обозревателе решений** дважды щелкните файл **MainPage.xaml** в проекте **Notes**, чтобы открыть его:
 
@@ -365,7 +368,7 @@ ms.locfileid: "79303633"
     > [!IMPORTANT]
     > Фрагменты кода на C# и XAML из этого краткого руководства предполагают, что решение и проект называются **Notes**. Выбор другого имени приведет к ошибкам сборки при копировании кода из этого краткого руководства в проект.
 
-    Дополнительные сведения о создаваемой библиотеке .NET Standard см. в разделе [Структура приложения Xamarin.Forms](deepdive.md#anatomy-of-a-xamarinforms-application) статьи [Краткое руководство по Xamarin.Forms глубокое погружение в обработку](deepdive.md).
+    Дополнительные сведения о создаваемой библиотеке .NET Standard см. в разделе [Структура приложения Xamarin.Forms](deepdive.md#anatomy-of-a-xamarinforms-application) статьи [Подробное изучение кратких руководств по Xamarin.Forms](deepdive.md).
 
 5. В **панели решения** дважды щелкните файл **MainPage.xaml** в проекте **Notes**, чтобы открыть его:
 

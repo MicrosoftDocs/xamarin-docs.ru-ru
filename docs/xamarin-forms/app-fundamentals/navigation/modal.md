@@ -1,18 +1,21 @@
 ---
 title: Модальные страницы Xamarin.Forms
 description: Xamarin.Forms поддерживает модальные страницы. На модальной странице пользователь должен выполнить отдельную задачу, причем он не может уйти с этой страницы, пока задача не будет выполнена или отменена. В этой статье демонстрируется переход на модальные страницы.
-ms.prod: xamarin
-ms.assetid: 486CB7FD-2B9A-4DE3-94BD-C8D904E5D3C6
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 12/01/2017
-ms.openlocfilehash: 7a4c67f067b73873c3d1de4499abda2703217ddf
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 4f6547049f2801e5d15115c0ae80af9a07034731
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70760828"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137830"
 ---
 # <a name="xamarinforms-modal-pages"></a>Модальные страницы Xamarin.Forms
 
@@ -73,7 +76,7 @@ async void OnItemSelected (object sender, SelectedItemChangedEventArgs e)
 - Вызывается переопределение [`OnAppearing`](xref:Xamarin.Forms.Page.OnAppearing) страницы, к которой осуществляется переход.
 - Задача `PushAsync` завершается.
 
-Однако точный порядок, в котором происходят эти события, зависит от платформы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги Xamarin.Forms Чарльза Петцольда (Charles Petzold).
+Однако точный порядок, в котором происходят эти события, зависит от платформы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги о Xamarin.Forms Чарльза Петцольда (Charles Petzold).
 
 > [!NOTE]
 > Вызовы переопределений [`OnDisappearing`](xref:Xamarin.Forms.Page.OnDisappearing) и [`OnAppearing`](xref:Xamarin.Forms.Page.OnAppearing) не могут рассматриваться как гарантия перехода на страницу. Например, в iOS переопределение `OnDisappearing` вызывается на активной странице, когда приложение завершает работу.
@@ -99,11 +102,11 @@ async void OnDismissButtonClicked (object sender, EventArgs args)
 - Вызывается переопределение [`OnAppearing`](xref:Xamarin.Forms.Page.OnAppearing) страницы, на которую выполняется возврат, при условии что базовой платформой не является Android.
 - Возвращается задача `PopModalAsync`.
 
-Однако точный порядок, в котором происходят эти события, зависит от платформы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги Xamarin.Forms Чарльза Петцольда (Charles Petzold).
+Однако точный порядок, в котором происходят эти события, зависит от платформы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги о Xamarin.Forms Чарльза Петцольда (Charles Petzold).
 
 ### <a name="disabling-the-back-button"></a>Отключение кнопки "Назад"
 
-В Android пользователь всегда может вернуться на предыдущую страницу, нажав стандартную кнопку *Назад* на устройстве. Если пользователь должен выполнить автономную задачу, прежде чем покинуть модальную страницу, кнопка *Назад* в приложении должна быть отключена. Для этого можно переопределить метод [`Page.OnBackButtonPressed`](xref:Xamarin.Forms.Page.OnBackButtonPressed) модальной страницы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги Xamarin.Forms Чарльза Петцольда (Charles Petzold).
+В Android пользователь всегда может вернуться на предыдущую страницу, нажав стандартную кнопку *Назад* на устройстве. Если пользователь должен выполнить автономную задачу, прежде чем покинуть модальную страницу, кнопка *Назад* в приложении должна быть отключена. Для этого можно переопределить метод [`Page.OnBackButtonPressed`](xref:Xamarin.Forms.Page.OnBackButtonPressed) модальной страницы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги о Xamarin.Forms Чарльза Петцольда (Charles Petzold).
 
 ### <a name="animating-page-transitions"></a>Анимация переходов по страницам
 

@@ -1,18 +1,21 @@
 ---
 title: Общие сведения о шаблонах данных Xamarin.Forms
 description: Шаблоны данных Xamarin.Forms дают возможность настраивать представление данных в поддерживаемых элементах управления. В этой статье описываются шаблоны данных и объясняется их необходимость.
-ms.prod: xamarin
-ms.assetid: 4ED4ACF4-BE4A-44ED-8EAF-C03947B8663B
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 09/11/2017
-ms.openlocfilehash: 10bba38de1dc8908ad853d5e4ca2bb845b4ac8c6
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f71e0a67b823d92a17158a076707f606f6a4c73f
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771279"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136114"
 ---
 # <a name="introduction-to-xamarinforms-data-templates"></a>Общие сведения о шаблонах данных Xamarin.Forms
 

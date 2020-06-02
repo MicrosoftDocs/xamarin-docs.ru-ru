@@ -1,26 +1,29 @@
 ---
 title: Xamarin.Essentials
 description: Этот документ содержит ссылки на разные руководства по платформе Xamarin.Essentials, которая предоставляет разработчикам кроссплатформенные API-интерфейсы для мобильных приложений.
-ms.assetid: 4EDC9897-5FD1-44CA-A26D-2E5AB472C99A
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 02/26/2020
-ms.openlocfilehash: 1d68203e80e0bc28e7060d5873c122db8c2ff960
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 27421ecc8b089321cd2331829d87365f3cf37a65
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "80387211"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139468"
 ---
-# <a name="xamarinessentials"></a>Xamarin.Essentials
+# Xamarin.Essentials
 
 Xamarin.Essentials предоставляет разработчикам кроссплатформенные API-интерфейсы для мобильных приложений.
 
-Android, iOS и универсальная платформа Windows предоставляют разные API-интерфейсы операционной системы и платформы, к которым разработчики могут обращаться из кода C# с помощью Xamarin. Xamarin.Essentials обеспечивает единый кроссплатформенных API-интерфейс, который предоставляет доступ из общего кода для любого приложения Xamarin.Forms, Android, iOS и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса.
+Android, iOS и универсальная платформа Windows предоставляют разные API-интерфейсы операционной системы и платформы, к которым разработчики могут обращаться из кода C# с помощью Xamarin. Xamarin.Essentials обеспечивает единый кроссплатформенных API-интерфейс, который предоставляет доступ из общего кода для любого приложения Xamarin.Forms, Android, iOS или универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса.
 
-## <a name="get-started-with-xamarinessentials"></a>[Начало работы с Xamarin.Essentials](get-started.md?context=xamarin/xamarin-forms)
+## <a name="get-started-with-xamarinessentialsget-startedmdcontextxamarinxamarin-forms"></a>[Начало работы с Xamarin.Essentials](get-started.md?context=xamarin/xamarin-forms)
 
-Выполните [инструкции по началу работы](get-started.md), чтобы установить пакет NuGet для **Xamarin.Essentials** в существующий или новый проект Xamarin.Forms, Android, iOS или универсальной платформы Windows.
+Выполните [инструкции по началу работы](get-started.md), чтобы установить пакет NuGet **Xamarin.Essentials** в существующий или новый проект Xamarin.Forms, Android, iOS или универсальной платформы Windows.
 
 ## <a name="feature-guides"></a>Руководства по компонентам
 
@@ -73,4 +76,4 @@ Android, iOS и универсальная платформа Windows предо
 
 ## <a name="api-documentation"></a>[Документация по API](xref:Xamarin.Essentials)
 
-Просмотрите документацию по API для любого компонента Xamarin.Essentials.
+Просмотрите документацию по API для каждого компонента Xamarin.Essentials.

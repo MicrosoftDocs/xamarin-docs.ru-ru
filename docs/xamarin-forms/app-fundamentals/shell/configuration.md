@@ -1,20 +1,23 @@
 ---
-title: Настройка страницы оболочки Xamarin.Forms
+title: Конфигурация страницы оболочки Xamarin.Forms
 description: Класс Shell определяет присоединенные свойства, с помощью которых можно настраивать внешний вид страниц в приложениях оболочки Xamarin.Forms. Сюда относится настройка цветов страницы, отключение панели навигации, отключение панели вкладок и отображение представлений на панели навигации.
-ms.prod: xamarin
-ms.assetid: 3FC2FBD1-C30B-4408-97B2-B04E3A2E4F03
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 01/29/2020
-ms.openlocfilehash: 411c87c25701521bf27fbb863b02a90f8e523574
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 102070fc478b42e9fbc0c7d0006197c81a49c9b8
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303789"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137505"
 ---
-# <a name="xamarinforms-shell-page-configuration"></a>Настройка страницы оболочки Xamarin.Forms
+# <a name="xamarinforms-shell-page-configuration"></a>Конфигурация страницы оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
@@ -30,7 +33,7 @@ ms.locfileid: "79303789"
 - `TitleColor` с типом `Color` определяет цвет заголовка активной страницы.
 - `UnselectedColor` с типом `Color` определяет цвет невыделенного текста и значков для хрома оболочки.
 
-Все эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть их можно указывать в качестве целевых для привязок данных, а также оформлять их, используя стили XAML. Кроме того, эти свойства можно задавать с помощью каскадных таблиц стилей (CSS). Подробные сведения см. в статье [об особых свойствах оболочки Xamarin.Forms](~/xamarin-forms/user-interface/styles/css/index.md#xamarinforms-shell-specific-properties).
+Все эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть их можно указывать в качестве целевых для привязок данных, а также оформлять их, используя стили XAML. Кроме того, эти свойства можно задавать с помощью каскадных таблиц стилей (CSS). Подробные сведения см. в разделе [Особые свойства оболочки Xamarin.Forms](~/xamarin-forms/user-interface/styles/css/index.md#xamarinforms-shell-specific-properties).
 
 > [!NOTE]
 > Есть также свойства, которые позволяют определить цвета вкладки. Дополнительные сведения см. в разделе [Внешний вид вкладок](tabs.md#tab-appearance).

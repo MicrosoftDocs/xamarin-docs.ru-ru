@@ -1,27 +1,19 @@
 ---
-title: 'Xamarin.Essentials: MainThread'
-description: Класс MainThread позволяет приложениям выполнять код в основном потоке выполнения.
-ms.assetid: CD6D51E7-D933-4FE7-A7F7-392EF27812E1
-author: jamesmontemagno
-ms.custom: video
-ms.author: jamont
-ms.date: 08/20/2019
-ms.openlocfilehash: dfef9fc5d1b8e4acaec8d9e1d653b141b04cead6
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83150059"
+title: ''Xamarin.Essentials: MainThread'' description: ms.assetid: author: ms.custom: ms.author: ms.date: no-loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
 ---
-# <a name="xamarinessentials-mainthread"></a>Xamarin.Essentials: MainThread
+
+# <a name="xamarinessentials-mainthread"></a>Xamarin.Essentials. MainThread
 
 Класс **MainThread** позволяет выполнять код в основном потоке приложения, а также проверять, выполняется ли конкретный блок кода в основном потоке в конкретный момент.
 
 ## <a name="background"></a>Фон
 
-Большинство операционных систем, включая iOS, Android и универсальную платформу Windows, используют однопоточную модель для кода, имеющего отношение к пользовательскому интерфейсу. Такая модель необходима для правильной сериализации событий пользовательского интерфейса, например нажатий клавиш и сенсорного ввода. Этот поток может упоминаться как _основной потоком_, _поток, обрабатывающий события от пользовательского интерфейса,_ или _поток пользовательского интерфейса_. Недостатком этой модели является то, что весь код с доступом к элементам пользовательского интерфейса должен выполняться в основном потоке приложения. 
+Большинство операционных систем, включая iOS, Android и универсальную платформу Windows, используют однопоточную модель для кода, имеющего отношение к пользовательскому интерфейсу. Такая модель необходима для правильной сериализации событий пользовательского интерфейса, например нажатий клавиш и сенсорного ввода. Этот поток может упоминаться как _основной потоком_, _поток, обрабатывающий события от пользовательского интерфейса,_ или _поток пользовательского интерфейса_. Недостатком этой модели является то, что весь код с доступом к элементам пользовательского интерфейса должен выполняться в основном потоке приложения.
 
-Иногда приложениям приходится использовать события, которые вызывают обработчик событий во второстепенном потоке выполнения. (Классы Xamarin.Essentials [`Accelerometer`](accelerometer.md), [`Compass`](compass.md), [`Gyroscope`](gyroscope.md), [`Magnetometer`](magnetometer.md), и [`OrientationSensor`](orientation-sensor.md) могут возвращать сведения во второстепенном потоке, если работают с высокой скоростью.) Если обработчику событий нужен доступ к элементам пользовательского интерфейса, он должен выполнять соответствующий код в основном потоке. Класс **MainThread** позволяет приложениям выполнять код в основном потоке.
+Иногда приложениям приходится использовать события, которые вызывают обработчик событий во второстепенном потоке выполнения. (Классы Xamarin.Essentials [`Accelerometer`](accelerometer.md), [`Compass`](compass.md), [`Gyroscope`](gyroscope.md), [`Magnetometer`](magnetometer.md) и [`OrientationSensor`](orientation-sensor.md) могут возвращать сведения во второстепенном потоке, если работают с высокой скоростью.) Если обработчику событий нужен доступ к элементам пользовательского интерфейса, он должен выполнять соответствующий код в основном потоке. Класс **MainThread** позволяет приложениям выполнять код в основном потоке.
 
 ## <a name="get-started"></a>Начало работы
 
@@ -29,7 +21,7 @@ ms.locfileid: "83150059"
 
 ## <a name="running-code-on-the-main-thread"></a>Выполнение кода в основном потоке
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;
@@ -60,8 +52,9 @@ MainThread.BeginInvokeOnMainThread(MyMainThreadCode);
 ```
 
 > [!NOTE]
-> Xamarin.Forms содержит метод с именем [`Device.BeginInvokeOnMainThread(Action)`](https://docs.microsoft.com/dotnet/api/xamarin.forms.device.begininvokeonmainthread),
-> который делает то же, что и `MainThread.BeginInvokeOnMainThread(Action)`. Вы можете использовать в приложении Xamarin.Forms любой из этих методов, но при выборе желательно учитывать, есть ли у вызывающего кода любая другая зависимость от Xamarin.Forms. Если такой зависимости нет, обычно лучше использовать `MainThread.BeginInvokeOnMainThread(Action)`.
+> Xamarin.Forms содержит метод с именем [`Device.BeginInvokeOnMainThread(Action)`](https://docs.microsoft.com/dotnet/api/xamarin.forms.device.begininvokeonmainthread)
+> который делает то же, что и `MainThread.BeginInvokeOnMainThread(Action)`.
+> Вы можете использовать в приложении Xamarin.Forms любой из этих методов, но при выборе желательно учитывать, есть ли у вызывающего кода любая другая зависимость от Xamarin.Forms. Если такой зависимости нет, обычно лучше использовать `MainThread.BeginInvokeOnMainThread(Action)`.
 
 ## <a name="determining-if-code-is-running-on-the-main-thread"></a>Определение того, выполняется ли код в основном потоке
 

@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 10. Расширения разметки XAML
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 10. Расширения разметки XAML
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 575EAE55-BD4D-470F-A583-3D065FA102E2
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/19/2018
-ms.openlocfilehash: 076e9f5155492e5a69d906c587b24495fe39d3f1
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 10. XAML markup extensions''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8f23034df684e778677e4f2e480e1c41807536fb
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "61334349"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136816"
 ---
 # <a name="summary-of-chapter-10-xaml-markup-extensions"></a>Сводка по главе 10. Расширения разметки XAML
 
@@ -34,7 +38,7 @@ ms.locfileid: "61334349"
 - `x:Reference` поддерживается в [`ReferenceExtension`](xref:Xamarin.Forms.Xaml.ReferenceExtension);
 - `x:Type` поддерживается в [`TypeExtension`](xref:Xamarin.Forms.Xaml.TypeExtension);
 - `x:Null` поддерживается в [`NullExtension`](xref:Xamarin.Forms.Xaml.NullExtension);
-- `x:Array` поддерживается в [`ArrayExtension`](xref:Xamarin.Forms.Xaml.ArrayExtension).
+- `x:Array` поддерживается в [`ArrayExtension`](xref:Xamarin.Forms.Xaml.ArrayExtension);
 
 Следующие четыре расширения разметки XAML поддерживаются во многих реализациях XAML, включая Xamarin.Forms:
 

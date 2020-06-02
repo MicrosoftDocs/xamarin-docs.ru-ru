@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о Главе 18. MVVM
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о Главе 18. MVVM
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 6A774510-7709-4F60-8EF5-29D478176F8F
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/07/2017
-ms.openlocfilehash: 32c16409f30d6b6d502b7cc074eafb182898594a
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 18. MVVM''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1f180173a42654c54c5686e423ba20d9586271ea
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771071"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136712"
 ---
 # <a name="summary-of-chapter-18-mvvm"></a>Сводная информация о Главе 18. MVVM
 
@@ -97,4 +101,4 @@ MVVM работает с привязками данных, а они в сво�
 
 - [Глава 18, полный текст в формате PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch18-Apr2016.pdf)
 - [Примеры для Главы 18](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter18)
-- [Электронная книга "Шаблоны корпоративного приложения на основе Xamarin.Forms"](~/xamarin-forms/enterprise-application-patterns/index.md)
+- [Электронная книга "Шаблоны корпоративного приложения с использованием Xamarin.Forms"](~/xamarin-forms/enterprise-application-patterns/index.md)

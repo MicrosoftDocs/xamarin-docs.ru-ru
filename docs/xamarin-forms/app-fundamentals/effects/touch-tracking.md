@@ -1,18 +1,21 @@
 ---
-title: Вызов событий из эффекта
-description: Эффект может определять вызов события, сигнализирующего об изменениях в базовом собственном представлении. В этой статье описываются реализация низкоуровневого отслеживания мультисенсорного ввода, а также создание событий, сигнализирующих о действиях прикосновения.
-ms.prod: xamarin
-ms.assetid: 6A724681-55EB-45B8-9EED-7E412AB19DD2
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 12/14/2018
-ms.openlocfilehash: cf5a97bca7c827101db951a440863839539c7e48
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 892bffa4027a1a61d6c22cc26d1556fb007432d8
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76725264"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136985"
 ---
 # <a name="invoking-events-from-effects"></a>Вызов событий из эффекта
 

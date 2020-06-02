@@ -1,19 +1,12 @@
 ---
-title: 'Xamarin.Essentials: Обнаружение тряски'
-description: Класс Accelerometer в Xamarin.Essentials позволяет обнаруживать движение встряхивания устройства.
-ms.assetid: 07513D32-120F-4F12-8757-A47802A8027B
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 05/28/2019
-ms.custom: video
-ms.openlocfilehash: d2aef2c32b3fe2815f1176779a8c28ae8d421ed1
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "67832599"
+title: ''Xamarin.Essentials: Обнаружение тряски'' description: 'Класс Accelerometer в Xamarin.Essentials позволяет обнаруживать движение встряхивания устройства.'
+ms.assetid: author: ms.author: ms.date: ms.custom: no-loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
 ---
-# <a name="xamarinessentials-detect-shake"></a>Xamarin.Essentials: Обнаружение тряски
+
+# <a name="xamarinessentials-detect-shake"></a>Xamarin.Essentials. Обнаружение тряски
 
 Класс **[Accelerometer](accelerometer.md)** позволяет считывать данные с датчика акселерометра устройства, который показывает ускорение устройства в трехмерном пространстве. Кроме того, он позволяет регистрировать события, когда пользователь трясет устройство.
 
@@ -23,7 +16,7 @@ ms.locfileid: "67832599"
 
 ## <a name="using-detect-shake"></a>Использование обнаружения тряски
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

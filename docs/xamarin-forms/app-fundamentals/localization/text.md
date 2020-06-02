@@ -1,19 +1,22 @@
 ---
 title: Локализация строк и изображений в Xamarin.Forms
 description: Приложения Xamarin.Forms можно локализовать с помощью файлов ресурсов .NET.
-zone_pivot_groups: platform
-ms.prod: xamarin
-ms.assetid: 852B4ED3-2D2D-48A5-A759-A6591F6A1509
-ms.technology: xamarin-forms
-author: profexorgeek
-ms.author: jusjohns
-ms.date: 11/01/2019
-ms.openlocfilehash: bf99873d88a69a715cdf7969ad94afd66372b5e3
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+zone_pivot_groups: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: af15dc5a23404a11be6207bef7b4fc3e4bf9fad7
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "74135329"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137609"
 ---
 # <a name="xamarinforms-string-and-image-localization"></a>Локализация строк и изображений в Xamarin.Forms
 

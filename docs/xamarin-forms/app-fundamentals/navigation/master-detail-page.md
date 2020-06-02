@@ -1,20 +1,23 @@
 ---
-title: Страница "Основной вид и подробности" Xamarin.Forms
+title: Главная страница и страница сведений в Xamarin.Forms
 description: Xamarin.Forms MasterDetailPage представляет собой страницу, управляющую двумя страницами связанных данных — главной страницей, которая представляет элементы, и страницей сведений, которая представляет сведения об элементах на главной странице. В этой статье описываются принципы работы со страницей MasterDetailPage и перехода между управляемыми страницами данных.
-ms.prod: xamarin
-ms.assetid: 119945E3-58B8-4630-A3D2-8B561529D53B
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 12/01/2017
-ms.openlocfilehash: 702ec35bca051f7255c5c9d67d2dc68d4f89ca52
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 89b1dedcb6219a32332641550018405abd4b6870
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "68645956"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137817"
 ---
-# <a name="xamarinforms-master-detail-page"></a>Страница "Основной вид и подробности" Xamarin.Forms
+# <a name="xamarinforms-master-detail-page"></a>Главная страница и страница сведений в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-masterdetailpage)
 

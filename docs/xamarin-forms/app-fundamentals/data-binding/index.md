@@ -1,18 +1,21 @@
 ---
 title: Привязка данных Xamarin.Forms
-description: Привязка данных — это способ связывания свойств двух объектов так, чтобы изменения в одном свойстве автоматически отражались в другом. Привязка данных — неотъемлемая часть архитектуры приложения Model-View-ViewModel (MVVM).
-ms.prod: xamarin
-ms.assetid: 938E85C8-521D-43B9-92CB-D591A06D98A6
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/23/2020
-ms.openlocfilehash: 9e3e602eda0d2fa78dd25905a2b6ccf3ce5a744d
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 4b99877342ddbaf9ad5606ec5dc284818fcfeffd
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "80247604"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139702"
 ---
 # <a name="xamarinforms-data-binding"></a>Привязка данных Xamarin.Forms
 
@@ -78,5 +81,5 @@ _Привязка данных — это способ связывания с�
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Демоверсии привязок данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
-- [Глава, посвященная привязкам данных, из книги Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter16.md)
+- [Глава, посвященная привязкам данных, из книги о Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter16.md)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md)

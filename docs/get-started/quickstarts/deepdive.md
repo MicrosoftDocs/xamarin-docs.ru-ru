@@ -1,25 +1,28 @@
 ---
 title: Подробное изучение кратких руководств по Xamarin.Forms
 description: Эта статья содержит общие сведения о разработке приложений с использованием Xamarin.Forms. Помимо прочего, здесь описываются структура приложения Xamarin.Forms и принципы его работы, а также пользовательский интерфейс.
-zone_pivot_groups: platform
-ms.topic: quickstart
-ms.prod: xamarin
-ms.custom: video
-ms.assetid: 7B2340A1-6883-41D8-860C-0BB6C4E0C316
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/27/2018
-ms.openlocfilehash: def54534d30b92b3d6ea8b5a0e7cac2c93293710
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+zone_pivot_groups: ''
+ms.topic: ''
+ms.prod: ''
+ms.custom: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1bfb76f71a2ac9d8bc9ae84152501909000b9623
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83149830"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84132526"
 ---
 # <a name="xamarinforms-quickstart-deep-dive"></a>Подробное изучение кратких руководств по Xamarin.Forms
 
-В [кратком руководстве по Xamarin.Forms](~/get-started/index.yml) было построено приложение Notes. В этой статье выполняется проверка созданных компонентов, позволяющая получить представление об основных принципах работы приложений Xamarin.Forms.
+В [кратком руководстве по Xamarin.Forms](~/get-started/index.yml) было создано приложение Notes. В этой статье выполняется проверка созданных компонентов, позволяющая получить представление об основных принципах работы приложений Xamarin.Forms.
 
 ::: zone pivot="windows"
 
@@ -44,7 +47,7 @@ ms.locfileid: "83149830"
 
 В этом проекте есть узел **Зависимости**, который содержит узлы **NuGet** и **SDK**:
 
-- **NuGet** &ndash; пакеты NuGet Xamarin.Forms и sqlite-net-pcl, добавленные в проект.
+- **NuGet** &ndash; пакеты NuGet Xamarin.Forms и sqlite-net-pcl, добавленные в проект.
 - **SDK** &ndash; метапакет `NETStandard.Library`, который ссылается на полный набор пакетов NuGet, определяющих библиотеку .NET Standard.
 
 ::: zone-end
@@ -70,7 +73,7 @@ ms.locfileid: "83149830"
 
 В этом проекте есть узел **Зависимости**, который содержит узлы **NuGet** и **SDK**:
 
-- **NuGet** &ndash; пакеты NuGet Xamarin.Forms и sqlite-net-pcl, добавленные в проект.
+- **NuGet** &ndash; пакеты NuGet Xamarin.Forms и sqlite-net-pcl, добавленные в проект.
 - **SDK** &ndash; метапакет `NETStandard.Library`, который ссылается на полный набор пакетов NuGet, определяющих библиотеку .NET Standard.
 
 ::: zone-end
@@ -161,7 +164,7 @@ namespace Notes.iOS
 
 ### <a name="android"></a>Android
 
-Чтобы начальную страницу Xamarin.Forms можно было запустить в Android, проект Notes.Android включает код, который создает действие `Activity` с атрибутом `MainLauncher`, которое наследуется от класса `FormsAppCompatActivity`:
+Чтобы начальную страницу Xamarin.Forms можно было запустить в Android, проект Notes.Android включает код, создающий действие `Activity` с атрибутом `MainLauncher`, которое наследуется от класса `FormsAppCompatActivity`:
 
 ```csharp
 namespace Notes.Droid
@@ -230,10 +233,10 @@ namespace Notes.UWP
 
 Для создания пользовательского интерфейса приложения Xamarin.Forms используются четыре основные группы элементов управления:
 
-1. **Страницы** — страницы Xamarin.Forms представляют экраны в кроссплатформенных мобильных приложениях. В приложении Notes для отображения отдельных экранов используется класс [`ContentPage`](xref:Xamarin.Forms.ContentPage). Дополнительные сведения о страницах см. в статье [Страницы Xamarin.Forms](~/xamarin-forms/user-interface/controls/pages.md).
-1. **Представления** — представления Xamarin.Forms являются элементами управления, отображаемыми в пользовательском интерфейсе, например метки, кнопки и поля ввода текста. В готовом приложении Notes используются представления [`ListView`](xref:Xamarin.Forms.ListView), [`Editor`](xref:Xamarin.Forms.Editor) и [`Button`](xref:Xamarin.Forms.Button). Дополнительные сведения о представлениях см. в статье [Представления Xamarin.Forms](~/xamarin-forms/user-interface/controls/views.md).
-1. **Макеты** — макеты Xamarin.Forms представляют собой контейнеры, которые служат для объединения представлений в логические структуры. В приложении Notes используются класс [`StackLayout`](xref:Xamarin.Forms.StackLayout) для компоновки представлений в вертикальном стеке, а также класс [`Grid`](xref:Xamarin.Forms.Grid) для компоновки кнопок по горизонтали. Дополнительные сведения о макетах см. в статье [Макеты Xamarin.Forms](~/xamarin-forms/user-interface/controls/layouts.md).
-1. **Ячейки** — ячейки Xamarin.Forms являются специальными объектами, представляющими элементы списка и описывающими способ их отрисовки. В приложении Notes используется [`TextCell`](xref:Xamarin.Forms.TextCell) для отображения двух элементов в каждой строке в списке. Дополнительные сведения о ячейках см. в статье [Ячейки Xamarin.Forms](~/xamarin-forms/user-interface/controls/cells.md).
+1. **Страницы** — страницы Xamarin.Forms представляют экраны в кроссплатформенных мобильных приложениях. В приложении Notes для отображения отдельных экранов используется класс [`ContentPage`](xref:Xamarin.Forms.ContentPage). Дополнительные сведения о страницах см. в разделе [Страницы Xamarin.Forms](~/xamarin-forms/user-interface/controls/pages.md).
+1. **Представления** — представления Xamarin.Forms являются элементами управления, отображаемыми в пользовательском интерфейсе, например метки, кнопки и поля ввода текста. В готовом приложении Notes используются представления [`ListView`](xref:Xamarin.Forms.ListView), [`Editor`](xref:Xamarin.Forms.Editor) и [`Button`](xref:Xamarin.Forms.Button). Дополнительные сведения о представлениях см. в разделе [Представления Xamarin.Forms](~/xamarin-forms/user-interface/controls/views.md).
+1. **Макеты** — макеты Xamarin.Forms представляют собой контейнеры, которые служат для объединения представлений в логические структуры. В приложении Notes используются класс [`StackLayout`](xref:Xamarin.Forms.StackLayout) для компоновки представлений в вертикальном стеке, а также класс [`Grid`](xref:Xamarin.Forms.Grid) для компоновки кнопок по горизонтали. Дополнительные сведения о макетах см. в статье [Макеты Xamarin.Forms](~/xamarin-forms/user-interface/controls/layouts.md).
+1. **Ячейки** — ячейки Xamarin.Forms являются специальными объектами, представляющими элементы списка и описывающими способ их отрисовки. В приложении Notes используется [`TextCell`](xref:Xamarin.Forms.TextCell) для отображения двух элементов в каждой строке в списке. Дополнительные сведения о ячейках см. в статье [Ячейки Xamarin.Forms](~/xamarin-forms/user-interface/controls/cells.md).
 
 Во время выполнения каждый элемент управления сопоставляется с собственным аналогом, который и будет отрисовываться.
 
@@ -344,7 +347,7 @@ async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
 
 ## <a name="navigation"></a>Навигация
 
-Xamarin.Forms предоставляет ряд различных способов перехода по страницам в зависимости от используемого типа объекта [`Page`](xref:Xamarin.Forms.Page). Навигация между экземплярами [`ContentPage`](xref:Xamarin.Forms.ContentPage) может осуществляться как в иерархическом, так и в модальном режиме. Дополнительные сведения о модальной навигации см. в статье [Модальные страницы в Xamarin.Forms](~/xamarin-forms/app-fundamentals/navigation/modal.md).
+Xamarin.Forms предоставляет ряд различных способов перехода по страницам в зависимости от используемого типа [`Page`](xref:Xamarin.Forms.Page). Навигация между экземплярами [`ContentPage`](xref:Xamarin.Forms.ContentPage) может осуществляться как в иерархическом, так и в модальном режиме. Дополнительные сведения о модальной навигации см. в статье [Модальные страницы Xamarin.Forms](~/xamarin-forms/app-fundamentals/navigation/modal.md).
 
 > [!NOTE]
 > Классы [`CarouselPage`](xref:Xamarin.Forms.CarouselPage), [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) и [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) предоставляют альтернативные способы перехода. Дополнительные сведения см. в разделе [Переходы](~/xamarin-forms/app-fundamentals/navigation/index.md).
@@ -434,7 +437,7 @@ async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
 
 Создается привязка между свойством [`Editor.Text`](xref:Xamarin.Forms.InputView.Text) и свойством `Text`*источника*. Изменения, вносимые в `Editor`, будут автоматически применяться к объекту `Note`. Аналогичным образом, если изменяется свойство `Note.Text`, обработчик привязки Xamarin.Forms также изменит содержимое `Editor`. Это называется *двусторонней привязкой*.
 
-Дополнительные сведения о привязке данных см. в разделе [Привязки данных в Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md).
+Дополнительные сведения о привязке данных см. в разделе [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md).
 
 ## <a name="styling"></a>Задание стиля
 
@@ -522,7 +525,7 @@ async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
 - Для создания пользовательского интерфейса приложения Xamarin.Forms используются четыре основные группы элементов управления. Более подробную информацию см. в разделе [Справочник по элементам управления](~/xamarin-forms/user-interface/controls/index.md).
 - Привязка данных — это способ связывания свойств двух объектов так, чтобы изменения в одном свойстве автоматически отражались в другом. Более подробную информацию см. в разделе [Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md).
 - Xamarin.Forms предоставляет ряд различных способов перехода по страницам в зависимости от используемого типа страницы. Дополнительные сведения см. в разделе [Переходы](~/xamarin-forms/app-fundamentals/navigation/index.md).
-- Стили помогают снизить повторяемость разметки и упрощают изменение внешнего вида приложения. Дополнительные сведения см. в разделе [Стилизация приложений Xamarin.Forms](~/xamarin-forms/user-interface/styles/index.md).
+- Стили помогают снизить повторяемость разметки и упрощают изменение внешнего вида приложения. Дополнительные сведения см. в разделе [Задание стиля приложений Xamarin.Forms](~/xamarin-forms/user-interface/styles/index.md).
 - Расширения разметки XAML позволяют расширить функциональность и гибкость XAML, давая возможность задавать атрибуты элементов из источников, отличных от строковых литералов. Подробнее см. в разделе [Расширение разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md).
 - Шаблоны данных дают возможность настраивать представление данных в поддерживаемых представлениях. Дополнительные сведения см. в статье [Шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md).
 - Каждая страница, макет и представление отрисовываются по-разному на разных платформах с помощью класса `Renderer`, который создает собственный элемент управления, размещает его на экране и реализует поведение, определенное в общем коде. Разработчики могут реализовывать пользовательские классы `Renderer` для настройки внешнего вида или работы элемента управления. Дополнительные сведения см. в статье [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md).
@@ -537,9 +540,9 @@ async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
 - [Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)
 - [Справочник по элементам управления](~/xamarin-forms/user-interface/controls/index.md)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md)
-- [Примеры Xamarin.Forms](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
+- [Примеры для Xamarin.Forms](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
 - [Примеры для начала работы](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms%20get%20started)
-- [Справочник по API для Xamarin.Forms](xref:Xamarin.Forms)
+- [Справочник по API Xamarin.Forms](xref:Xamarin.Forms)
 - [Бесплатное самостоятельное обучение (видео)](https://university.xamarin.com/self-guided/)
 
 ## <a name="related-video"></a>Связанные видео

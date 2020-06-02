@@ -1,19 +1,11 @@
 ---
-title: 'Xamarin.Essentials: Телефон'
-description: Класс PhoneDialer в Xamarin.Essentials позволяет приложению открывать номер телефона в набирателе номера
-ms.assetid: E7457942-4D7B-4195-A2FF-417919B9537F
-author: jamesmontemagno
-ms.custom: video
-ms.author: jamont
-ms.date: 07/02/2019
-ms.openlocfilehash: a955399b40f26d4a03a4047d56f7bebe3ad5b5c4
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83150049"
+title: ''Xamarin.Essentials: Телефон'' description: 'Класс PhoneDialer в Xamarin.Essentials позволяет приложению открывать номер телефона в набирателе номера' ms.assetid: author: ms.custom: ms.author: ms.date: no-loc:
+- 'Xamarin.Forms'
+- 'Xamarin.Essentials'
+
 ---
-# <a name="xamarinessentials-phone-dialer"></a>Xamarin.Essentials: Телефон
+
+# <a name="xamarinessentials-phone-dialer"></a>Xamarin.Essentials. Телефон
 
 Класс **PhoneDialer** позволяет приложению открывать номер телефона в набирателе номера.
 
@@ -23,7 +15,7 @@ ms.locfileid: "83150049"
 
 ## <a name="using-phone-dialer"></a>Использование PhoneDialer
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

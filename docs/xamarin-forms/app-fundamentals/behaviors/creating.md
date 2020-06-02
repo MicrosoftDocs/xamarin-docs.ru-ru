@@ -1,18 +1,21 @@
 ---
 title: Создание реакций на события Xamarin.Forms
 description: Реакции на событие Xamarin.Forms создаются путем наследования от класса Behavior или Behavior<T>. В этой статье содержатся сведения о создании и использовании реакций на события Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 300C16FE-A7E0-445B-9099-8E93ABB6F73D
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/06/2016
-ms.openlocfilehash: 42ad56a7ae34bcef638ed25bea267dcabd21e20c
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 67db30b5caadce75a41755530db2b245562d0304
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77131093"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135828"
 ---
 # <a name="create-xamarinforms-behaviors"></a>Создание реакций на события Xamarin.Forms
 
@@ -84,7 +87,7 @@ public class NumericValidationBehavior : Behavior<Entry>
 }
 ```
 
-`NumericValidationBehavior` является производным от класса [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1), где `T` — это [`Entry`](xref:Xamarin.Forms.Entry). Метод [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) регистрирует обработчик событий для события [`TextChanged`](xref:Xamarin.Forms.InputView.TextChanged), при этом метод [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) отменяет регистрацию события `TextChanged` во избежание утечек памяти. Базовая функциональность реакции на событие обеспечивается методом `OnEntryTextChanged`, который анализирует значение, введенное пользователем в `Entry`, и присваивает свойству [`TextColor`](xref:Xamarin.Forms.InputView.TextColor) значение red (красный), если введенное значение не имеет тип `double`.
+`NumericValidationBehavior` является производным от класса [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1), где `T` — это [`Entry`](xref:Xamarin.Forms.Entry). Метод [`OnAttachedTo`](xref:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)) method registers an event handler for the [`TextChanged`](xref:Xamarin.Forms.InputView.TextChanged) event, with the [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) отменяет регистрацию события `TextChanged` во избежание утечек памяти. Базовая функциональность реакции на событие обеспечивается методом `OnEntryTextChanged`, который анализирует значение, введенное пользователем в `Entry`, и присваивает свойству [`TextColor`](xref:Xamarin.Forms.InputView.TextColor) значение red (красный), если введенное значение не имеет тип `double`.
 
 > [!NOTE]
 > Xamarin.Forms не задает `BindingContext` для реакции на событие, так как реакции на событие можно использовать совместно и применять к нескольким элементам управления через стили.
@@ -187,7 +190,7 @@ public class NumericValidationBehavior : Behavior<Entry>
 
 ### <a name="removing-a-behavior-from-a-control"></a>Удаление реакции на событие из элемента управления
 
-Метод [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) активируется при удалении реакции на событие из элемента управления и используется для выполнения любой требуемой очистки, например для отмены подписки на событие в целях предотвращения утечки памяти. Тем не менее реакции на событие не удаляются из элементов управления неявным образом, если коллекция [`Behaviors`](xref:Xamarin.Forms.VisualElement.Behaviors) элемента управления изменяется с помощью метода `Remove` или `Clear`. В следующем примере кода показано удаление конкретной реакции на событие из коллекции `Behaviors` элемента управления:
+Коллекция [`OnDetachingFrom`](xref:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)) method is fired when a behavior is removed from a control, and is used to perform any required cleanup such as unsubscribing from an event to prevent a memory leak. However, behaviors are not implicitly removed from controls unless the control's [`Behaviors`](xref:Xamarin.Forms.VisualElement.Behaviors) collection is modified by a `Remove` or `Clear` method. The following code example demonstrates removing a specific behavior from a control's `Behaviors`:
 
 ```csharp
 var toRemove = entry.Behaviors.FirstOrDefault (b => b is NumericValidationBehavior);
@@ -206,7 +209,7 @@ entry.Behaviors.Clear();
 
 ## <a name="summary"></a>Сводка
 
-В этой статье содержатся сведения о создании и использовании реакций на события Xamarin.Forms. Реакции на событие Xamarin.Forms создаются путем наследования от классов [`Behavior`](xref:Xamarin.Forms.Behavior) или [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1).
+В этой статье было показано создание и использование реакций на события Xamarin.Forms. Реакции на событие Xamarin.Forms создаются путем наследования от классов [`Behavior`](xref:Xamarin.Forms.Behavior) или [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1).
 
 ## <a name="related-links"></a>Связанные ссылки
 

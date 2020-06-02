@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 20. Асинхронные и файловые операции ввода-вывода
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 20. Асинхронные и файловые операции ввода-вывода
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: D595862D-64FD-4C0D-B0AD-C1F440564247
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/18/2018
-ms.openlocfilehash: 283273e6ee28cc5cd1a61169f38bfcd1dd1726d8
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 20. Async and file I/O''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ad71dc5f5389f1676698a761a138b3f76ffa9fa0
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771035"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136686"
 ---
 # <a name="summary-of-chapter-20-async-and-file-io"></a>Сводка по главе 20. Асинхронные и файловые операции ввода-вывода
 
@@ -74,7 +78,7 @@ ms.locfileid: "70771035"
 
 ### <a name="good-news-and-bad-news"></a>Что в этом хорошего и что плохого
 
-Все платформы, которые поддерживаются в Xamarin.Forms, поддерживают локальное хранилище приложения, то есть хранилище, которое является частным для приложения.
+Все платформы, которые поддерживаются в Xamarin.Forms, поддерживают локальное хранилище приложения &mdash; хранилище, которое является частным для приложения.
 
 Библиотеки Xamarin.iOS и Xamarin.Android включают версию .NET, которая специально адаптирована в Xamarin для этих двух платформ. Например, классы из `System.IO` можно использовать на этих двух платформах для выполнения файлового ввода-вывода в локальном хранилищем приложения.
 
@@ -83,7 +87,7 @@ ms.locfileid: "70771035"
 Это означает, что вам нужно будет использовать [`DependencyService`](xref:Xamarin.Forms.DependencyService) (см. главу 9 [ **Вызовы API конкретных платформ**](chapter09.md) как пример реализации файлового ввода-вывода).
 
 > [!NOTE]
-> Переносимые библиотеки классов заменены библиотеками .NET Standard 2.0, а .NET Standard 2.0 поддерживает типы [`System.IO`](xref:System.IO) для всех платформ Xamarin.Forms. Вам больше не нужно использовать `DependencyService` для большинства задач файлового ввода-вывода. Более современный подход к операциям файлового ввода-вывода см. в главе [Обработка файлов в Xamarin.Forms](~/xamarin-forms/data-cloud/data/files.md).
+> Переносимые библиотеки классов заменены библиотеками .NET Standard 2.0, а .NET Standard 2.0 поддерживает типы [`System.IO`](xref:System.IO) для всех платформ Xamarin.Forms. Вам больше не нужно использовать `DependencyService` для большинства задач файлового ввода-вывода. Более современный подход к операциям файлового ввода-вывода см. в главе [Обработка файлов в Xamarin.Forms](~/xamarin-forms/data-cloud/data/files.md).
 
 ### <a name="a-first-shot-at-cross-platform-file-io"></a>Подход к организации файлового ввода-вывода для нескольких платформ
 
@@ -141,7 +145,7 @@ ms.locfileid: "70771035"
 
 ### <a name="the-basic-mandelbrot-set"></a>Базовая реализация множества Мандельброта
 
-Чтобы визуализировать множество Мандельброта в реальном времени, в библиотеке [**Xamarin.Forms.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) предоставляется структура [`Complex`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/Complex.cs), аналогичная структуре из пространства имен `System.Numerics`.
+Чтобы визуализировать множество Мандельброта в реальном времени, в библиотеке [ **Xamarin.Forms.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) предоставляется структура [`Complex`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/Complex.cs), аналогичная структуре из пространства имен `System.Numerics`.
 
 Пример [**MandelbrotSet**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter20/MandelbrotSet) содержит в файле кода программной части метод `CalculateMandeblotAsync`, который вычисляет базовое черно-белое отображение множества Мандельброта и с помощью [`BmpMaker`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/BmpMaker.cs) размещает его в растровом изображении.
 

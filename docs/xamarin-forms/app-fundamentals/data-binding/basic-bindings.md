@@ -1,21 +1,24 @@
 ---
-title: Базовые привязки Xamarin.Forms
+title: Основные привязки Xamarin.Forms
 description: В этой статье описывается использование привязки данных Xamarin.Forms, которая связывает пару свойств между двумя объектами, по крайней мере один из которых обычно является объектом пользовательского интерфейса. Эти два объекта называются целевым объектом и источником.
-ms.prod: xamarin
-ms.assetid: 96553DF7-12EA-4FB2-AE85-3D1D59382B40
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 01/22/2019
-ms.custom: video
-ms.openlocfilehash: 2227e2bd47a5b4960d28be67bac7947a4fb57a93
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.custom: ''
+ms.openlocfilehash: c0c6bc6e1005997548952aedc09cd83a451e7caa
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303783"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84133553"
 ---
-# <a name="xamarinforms-basic-bindings"></a>Базовые привязки Xamarin.Forms
+# <a name="xamarinforms-basic-bindings"></a>Основные привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
@@ -175,7 +178,7 @@ BindingContext="slider"
 </ContentPage>
 ```
 
-Файл с выделенным кодом задает привязку с помощью метода [`SetBinding`](xref:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)), определенного объектом `BindableObject`. Аргумент является [конструктором](xref:Xamarin.Forms.Binding.%23ctor(System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String,System.Object)) для класса [`Binding`](xref:Xamarin.Forms.Binding):
+Файл с выделенным кодом задает привязку с помощью метода [`SetBinding`](xref:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)), определенного объектом `BindableObject`. Этот аргумент является [конструктором](xref:Xamarin.Forms.Binding.%23ctor(System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String,System.Object)) для класса [`Binding`](xref:Xamarin.Forms.Binding):
 
 ```csharp
 public partial class AlternativeCodeBindingPage : ContentPage
@@ -332,7 +335,7 @@ Scale="{Binding Value, Source={x:Reference slider}}" />
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Демоверсии привязок данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
-- [Глава, посвященная привязкам данных, из книги Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter16.md)
+- [Глава, посвященная привязкам данных, из книги о Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter16.md)
 
 ## <a name="related-video"></a>Связанные видео
 

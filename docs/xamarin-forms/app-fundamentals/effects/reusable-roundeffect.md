@@ -1,18 +1,21 @@
 ---
 title: Многоразовый RoundEffect в Xamarin.Forms
-description: RoundEffect — это многоразовый эффект, который можно применить к любому элементу управления, производному от VisualElement, для отрисовки этого элемента управления в виде круга.
-ms.prod: xamarin
-ms.assetid: B5DE7507-B565-4EE5-9897-27E5733FD173
-ms.technology: xamarin-forms
-author: profexorgeek
-ms.author: jusjohns
-ms.date: 10/25/2019
-ms.openlocfilehash: 851ed7a2ad1c416b4d03d583b9d0aeb7f7774eea
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: fc3776934a4c109b2527132b11c6c6a93b7d9f9e
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73055942"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138857"
 ---
 # <a name="xamarinforms-reusable-roundeffect"></a>Многоразовый RoundEffect в Xamarin.Forms
 
@@ -39,7 +42,7 @@ public class RoundEffect : RoutingEffect
 
 ## <a name="implement-the-android-effect"></a>Реализация эффекта для Android
 
-Проект платформы Android определяет класс `RoundEffect`, производный от `PlatformEffect`. Этот класс помечен атрибутами `assembly`, которые позволяют Xamarin. Forms разрешать класс эффектов:
+Проект платформы Android определяет класс `RoundEffect`, производный от `PlatformEffect`. Этот класс помечен атрибутами `assembly`, которые позволяют Xamarin.Forms разрешать класс эффектов:
 
 ```csharp
 [assembly: ResolutionGroupName("Xamarin")]
@@ -123,7 +126,7 @@ public class RoundEffect : PlatformEffect
 
 ## <a name="implement-the-ios-effect"></a>Реализация эффекта для iOS
 
-Проект платформы iOS определяет класс `RoundEffect`, производный от `PlatformEffect`. Этот класс помечен атрибутами `assembly`, которые позволяют Xamarin. Forms разрешать класс эффектов:
+Проект платформы iOS определяет класс `RoundEffect`, производный от `PlatformEffect`. Этот класс помечен атрибутами `assembly`, которые позволяют Xamarin.Forms разрешать класс эффектов:
 
 ```csharp
 [assembly: ResolutionGroupName("Xamarin")]

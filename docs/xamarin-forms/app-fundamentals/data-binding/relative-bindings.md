@@ -1,18 +1,21 @@
 ---
 title: Относительные привязки Xamarin.Forms
-description: Эта статья описывает, как создать относительные привязки с помощью расширения разметки RelativeSource, чтобы задать источник привязки относительно положения целевого объекта привязки.
-ms.prod: xamarin
-ms.assetid: CC64BB1D-8303-46B1-94B6-4EF2F20317A8
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 12/04/2019
-ms.openlocfilehash: 63ce27fc871da12eabb1baad568af167c860926f
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8d4e2696e6027f07b7b8e638cd1e0f1d65a5503d
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "75955815"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139715"
 ---
 # <a name="xamarinforms-relative-bindings"></a>Относительные привязки Xamarin.Forms
 
@@ -38,7 +41,7 @@ ms.locfileid: "75955815"
 
 Свойство `Mode` — это свойство содержимого класса `RelativeSourceExtension`. Таким образом, для выражений разметки XAML с фигурными скобками можно исключить часть `Mode=` выражения.
 
-Дополнительные сведения о расширениях разметки Xamarin.Forms см. в разделе [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md).
+Дополнительные сведения о расширениях разметки Xamarin.Forms см. в статье [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md).
 
 ## <a name="bind-to-self"></a>Привязка к самому себе
 

@@ -1,24 +1,27 @@
 ---
-title: Создание DataTemplate в Xamarin.Forms
-description: Шаблоны данных могут создаваться как встроенные, в ResourceDictionary, или из пользовательского типа или соответствующего типа ячейки Xamarin.Forms. В этой статье рассматривается каждый из способов.
-ms.prod: xamarin
-ms.assetid: CFF4AB5E-9069-461C-84D8-F9F6C38510AB
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 09/11/2017
-ms.openlocfilehash: 399f411acd497b9d55ca81f670556430fe5f5503
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: Создание Xamarin.Forms DataTemplate
+description: Шаблоны данных могут создаваться как встроенные в ResourceDictionary или из пользовательского типа или соответствующего типа ячейки Xamarin.Forms. В этой статье рассматривается каждый из способов.
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 3e91d6f091870fe9203e67eda1454b8062383deb
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771290"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84139936"
 ---
-# <a name="creating-a-xamarinforms-datatemplate"></a>Создание DataTemplate в Xamarin.Forms
+# <a name="creating-a-xamarinforms-datatemplate"></a>Создание Xamarin.Forms DataTemplate
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-datatemplates)
 
-_Шаблоны данных могут создаваться как встроенные, в ResourceDictionary, или из пользовательского типа или соответствующего типа ячейки Xamarin.Forms. В этой статье рассматривается каждый из способов._
+_Шаблоны данных могут создаваться как встроенные в ResourceDictionary или из пользовательского типа или соответствующего типа ячейки Xamarin.Forms. В этой статье рассматривается каждый из способов._
 
 Стандартный сценарий использования [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) — отображение данных из коллекции объектов в [`ListView`](xref:Xamarin.Forms.ListView). Внешним видом данных в каждой ячейке [`ListView`](xref:Xamarin.Forms.ListView) можно управлять, присваивая свойству [`ListView.ItemTemplate`](xref:Xamarin.Forms.ItemsView`1) объект [`DataTemplate`](xref:Xamarin.Forms.DataTemplate). Это можно делать несколькими способами:
 

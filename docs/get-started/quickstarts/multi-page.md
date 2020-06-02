@@ -1,20 +1,23 @@
 ---
 title: Навигация в многостраничном приложении Xamarin.Forms
-description: Эта статья поясняет, как на основе одностраничного приложения, которое может хранить одну заметку, создать многостраничное приложение, позволяющее хранить несколько заметок.
-zone_pivot_groups: platform
-ms.topic: quickstart
-ms.prod: xamarin
-ms.assetid: 9DC3B3D6-6CBC-4705-BE80-3D86A9E65F92
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 04/01/2019
-ms.openlocfilehash: 9ce02b4c6412eab1f4b1003b262573c59940286c
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+description: ''
+zone_pivot_groups: ''
+ms.topic: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b3616d0cf4804dfb37d4fe65034796c672dec828
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "68653798"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84127885"
 ---
 # <a name="perform-navigation-in-a-multi-page-xamarinforms-application"></a>Навигация в многостраничном приложении Xamarin.Forms
 

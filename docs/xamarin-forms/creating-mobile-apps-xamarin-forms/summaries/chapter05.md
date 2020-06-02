@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 5. Работа с размерами
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 5. Работа с размерами
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 486800E9-C09F-4B95-9AC2-C0F8FE563BCF
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/19/2018
-ms.openlocfilehash: c082bdb10732e42b37511cf050e50f46990a5b5b
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 5. Dealing with sizes''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 37403cfe9f37972c20fb074db5e30cc54b60fea9
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70771143"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136881"
 ---
 # <a name="summary-of-chapter-5-dealing-with-sizes"></a>Сводка по главе 5. Работа с размерами
 
@@ -21,7 +25,7 @@ ms.locfileid: "70771143"
 > [!NOTE]
 > Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
 
-На данный момент в Xamarin. Forms используются следующие размеры:
+На данный момент в Xamarin.Forms используются следующие размеры:
 
 - Высота строки состояния iOS равна 20.
 - Ширина и высота `BoxView` по умолчанию — 40.

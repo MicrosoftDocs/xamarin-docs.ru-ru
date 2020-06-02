@@ -1,18 +1,21 @@
 ---
-title: Свойства автоматизации
+title: ''
 description: Эта статья поясняет, как использовать класс AutomationProperties в приложении Xamarin.Forms, чтобы средство чтения с экрана могло озвучивать элементы на странице.
-ms.prod: xamarin
-ms.assetid: c0bb6893-fd26-47e7-88e5-3c333c9f786c
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 12/18/2018
-ms.openlocfilehash: 12c6229c1922f0bd4a4d25ca796bcb46141a326c
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ad6d315ccc5be0a7709164d40685c842b61b90b4
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77131129"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84129978"
 ---
 # <a name="automation-properties-in-xamarinforms"></a>Свойства автоматизации в Xamarin.Forms
 
@@ -66,7 +69,7 @@ AutomationProperties.SetIsInAccessibleTree(entry, true);
 ```
 
 > [!NOTE]
-> Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.IsInAccessibleTree` — `entry.SetValue(AutomationProperties.IsInAccessibleTreeProperty, true);`
+> Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.IsInAccessibleTree` — `entry.SetValue(AutomationProperties.IsInAccessibleTreeProperty, true);`.
 
 <a name="name" />
 
@@ -88,7 +91,7 @@ AutomationProperties.SetName(activityIndicator, "Progress indicator");
 ```
 
 > [!NOTE]
-> Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.Name` — `activityIndicator.SetValue(AutomationProperties.NameProperty, "Progress indicator");`
+> Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.Name` — `activityIndicator.SetValue(AutomationProperties.NameProperty, "Progress indicator");`.
 
 <a name="helptext" />
 
@@ -111,7 +114,7 @@ AutomationProperties.SetHelpText(button, "Tap to toggle the activity indicator")
 ```
 
 > [!NOTE]
-> Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.HelpText` — `button.SetValue(AutomationProperties.HelpTextProperty, "Tap to toggle the activity indicator");`
+> Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.HelpText` — `button.SetValue(AutomationProperties.HelpTextProperty, "Tap to toggle the activity indicator");`.
 
 На некоторых платформах для редактирования элементов управления, таких как [`Entry`](xref:Xamarin.Forms.Entry), свойство `HelpText` иногда можно опустить и заменить текстом заполнителя. Например, элемент "Введите здесь свое имя" является хорошим кандидатом для использования в свойстве [`Entry.Placeholder`](xref:Xamarin.Forms.InputView.Placeholder), которое помещает текст в элемент управления до фактического ввода данных пользователем.
 
@@ -137,7 +140,7 @@ AutomationProperties.SetLabeledBy(entry, nameLabel);
 ```
 
 > [!NOTE]
-> Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.IsInAccessibleTree` — `entry.SetValue(AutomationProperties.LabeledByProperty, nameLabel);`
+> Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.IsInAccessibleTree` — `entry.SetValue(AutomationProperties.LabeledByProperty, nameLabel);`.
 
 ## <a name="accessibility-intricacies"></a>Особенности специальных возможностей
 

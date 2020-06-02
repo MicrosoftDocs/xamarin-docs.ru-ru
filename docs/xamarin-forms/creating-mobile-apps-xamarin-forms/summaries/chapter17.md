@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 17. Достигаем мастерства в использовании класса Grid
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 17. Достигаем мастерства в использовании класса Grid
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 71EDEF9C-4220-4D2E-A235-43F1EC8746C1
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/07/2017
-ms.openlocfilehash: 37b5e2bbafa816de27390771ae6daa33c74f7651
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 17. Mastering the Grid''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 6dd13c0f592831c6488afac6727bcac734e9136a
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70760629"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136725"
 ---
 # <a name="summary-of-chapter-17-mastering-the-grid"></a>Сводка по главе 17. Достигаем мастерства в использовании класса Grid
 
@@ -30,7 +34,7 @@ ms.locfileid: "70760629"
 
 `RowDefinition` имеет свойство [`Height`](xref:Xamarin.Forms.RowDefinition.Height), а `ColumnDefinition` имеет свойство [`Width`](xref:Xamarin.Forms.ColumnDefinition.Width). Тип обоих — [`GridLength`](xref:Xamarin.Forms.GridLength), структура.
 
-В XAML [`GridLengthTypeConverter`](xref:Xamarin.Forms.GridLengthTypeConverter) преобразует простые текстовые строки в значения `GridLength`. В фоновом режиме [конструктор `GridLength`](xref:Xamarin.Forms.GridLength.%23ctor(System.Double,Xamarin.Forms.GridUnitType)) создает значение `GridLength` на основе числа и значения типа [`GridUnitType`](xref:Xamarin.Forms.GridUnitType), перечисления с тремя членами:
+В XAML [`GridLengthTypeConverter`](xref:Xamarin.Forms.GridLengthTypeConverter) преобразует простые текстовые строки в значения `GridLength`. В фоновом режиме [`GridLength` конструктор](xref:Xamarin.Forms.GridLength.%23ctor(System.Double,Xamarin.Forms.GridUnitType)) создает значение `GridLength` на основе числа и значения типа [`GridUnitType`](xref:Xamarin.Forms.GridUnitType), перечисления с тремя членами:
 
 - [`Absolute`](xref:Xamarin.Forms.GridUnitType.Absolute) &mdash; — ширина или высота задаются в единицах, не зависящих от устройства (число в XAML).
 - [`Auto`](xref:Xamarin.Forms.GridUnitType.Auto) &mdash; — высота или ширина автоматически определяется на основе содержимого ячейки ("Auto" в XAML).

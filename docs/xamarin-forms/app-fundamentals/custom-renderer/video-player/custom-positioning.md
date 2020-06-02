@@ -1,18 +1,21 @@
 ---
-title: Настраиваемая строка позиционирования видео
+title: ''
 description: В этой статье объясняется, как реализовать настраиваемую строку позиционирования в приложении видеопроигрывателя с помощью Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: 6D792264-30FF-46F7-8C1B-2FEF9D277DF4
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/12/2018
-ms.openlocfilehash: 12633b728240c2f90d0265fe7b9efb65ea49bf1f
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 97d32a03ee10e2f3b0a7442d1d70dab9236059b4
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "68650647"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135087"
 ---
 # <a name="custom-video-positioning"></a>Настраиваемая строка позиционирования видео
 
@@ -342,7 +345,7 @@ namespace FormsVideoLibrary
 
 ## <a name="a-custom-slider-for-video"></a>Настраиваемый ползунок для видео
 
-Вы можете написать собственный элемент управления для строки позиционирования, а также использовать объект `Slider` Xamarin.Forms или класс, производный от `Slider`, например следующий класс `PositionSlider`. Этот класс определяет свойства `Duration` и `Position` типа `TimeSpan` которые привязываются к данным двух одноименных свойств объекта `VideoPlayer`. Обратите внимание, что по умолчанию для свойства `Position` применяется двусторонняя привязка данных:
+Вы можете написать собственный элемент управления для строки позиционирования, а также использовать объект Xamarin.Forms `Slider` или класс, производный от `Slider`, например следующий класс `PositionSlider`. Этот класс определяет свойства `Duration` и `Position` типа `TimeSpan` которые привязываются к данным двух одноименных свойств объекта `VideoPlayer`. Обратите внимание, что по умолчанию для свойства `Position` применяется двусторонняя привязка данных:
 
 ```csharp
 namespace FormsVideoLibrary

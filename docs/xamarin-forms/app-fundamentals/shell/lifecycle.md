@@ -1,18 +1,21 @@
 ---
 title: Жизненный цикл оболочки Xamarin.Forms
 description: Приложения оболочки учитывают жизненный цикл Xamarin.Forms, и событие Appearing возникает, когда страница собирается отображаться на экране, а событие Disappearing возникает, когда страница собирается исчезнуть с экрана.
-ms.prod: xamarin
-ms.assetid: 4E4EE50E-3BB4-441D-8355-CD9CD26ED1D0
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/25/2019
-ms.openlocfilehash: 2ed51763b5866c15e91d88a6a1a58c7285fb5973
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 3a7a46187d861098b61f638a3fb460d890b081dd
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "72749768"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84138727"
 ---
 # <a name="xamarinforms-shell-lifecycle"></a>Жизненный цикл оболочки Xamarin.Forms
 
@@ -41,4 +44,4 @@ ms.locfileid: "72749768"
 
 - [Xaminals (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 - [Жизненный цикл приложения Xamarin.Forms](~/xamarin-forms/app-fundamentals/app-lifecycle.md)
-- [Модальные страницы Xamarin.Forms](~/xamarin-forms/app-fundamentals/navigation/modal.md)
+- [Модальные страницы в Xamarin.Forms](~/xamarin-forms/app-fundamentals/navigation/modal.md)

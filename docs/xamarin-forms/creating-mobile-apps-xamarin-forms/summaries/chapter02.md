@@ -1,18 +1,22 @@
 ---
-title: Сводка по главе 2. Анатомия приложения
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 2. Анатомия приложения
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 8764EB7D-8331-4CF7-9BE1-26D0DEE9E0BB
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/17/2018
-ms.openlocfilehash: f900cb1532ba4415127c95b07e777881e1d74994
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 2. Anatomy of an app''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 78da3ed91acea0c056074d712d368de70b251392
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76724998"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136924"
 ---
 # <a name="summary-of-chapter-2-anatomy-of-an-app"></a>Сводка по главе 2. Анатомия приложения
 
@@ -21,7 +25,7 @@ ms.locfileid: "76724998"
 > [!NOTE]
 > Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
 
-В приложении Xamarin.Forms любые объекты, занимающие место на экране, называются *визуальными элементами*, и инкапсулируются в класс [`VisualElement`](xref:Xamarin.Forms.VisualElement). Визуальные элементы можно разделить на три категории, соответствующие следующим классам:
+В приложении Xamarin.Forms любые объекты, занимающие место на экране, называются *визуальными элементами* и инкапсулируются в класс [`VisualElement`](xref:Xamarin.Forms.VisualElement). Визуальные элементы можно разделить на три категории, соответствующие следующим классам:
 
 - [Страница](xref:Xamarin.Forms.Page)
 - [Макет](xref:Xamarin.Forms.Layout)
@@ -33,12 +37,12 @@ ms.locfileid: "76724998"
 
 ## <a name="say-hello"></a>Начнем с приветствия
 
-После установки платформы Xamarin можно создать новое решение Xamarin.Forms с помощью Visual Studio или Visual Studio для Mac. Решение [**Hello**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter02/Hello) использует переносимую библиотеку классов для общего кода.
+После установки платформы Xamarin можно создать новое решение Xamarin.Forms с помощью Visual Studio или Visual Studio для Mac. Решение [**Hello**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter02/Hello) использует переносимую библиотеку классов для общего кода.
 
 > [!NOTE]
 > Переносимые библиотеки классов заменены библиотеками .NET Standard. Все примеры кода в этой книге преобразованы для использования библиотек .NET Standard.
 
-В этом примере демонстрируется решение Xamarin.Forms, созданное в Visual Studio, без дополнительных изменений. Это решение состоит из четырех проектов:
+В этом примере демонстрируется решение Xamarin.Forms, созданное в Visual Studio, без дополнительных изменений. Это решение состоит из четырех проектов:
 
 - [**Hello**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter02/Hello/Hello/Hello) — переносимая библиотека классов (PCL), совместно используемая другими проектами;
 - [**Hello.Droid**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter02/Hello/Hello/Hello.Droid) — проект приложения для Android;
@@ -46,7 +50,7 @@ ms.locfileid: "76724998"
 - [**Hello.UWP**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter02/Hello/Hello/Hello.UWP) — проект приложения для универсальной платформы Windows (Windows 10 и Windows 10 Mobile).
 
 > [!NOTE]
-> Xamarin.Forms теперь не поддерживает Windows 8.1, Windows Phone 8.1 и Windows 10 Mobile, при этом приложения Xamarin.Forms выполняются в Windows 10 для настольных компьютеров.
+> Xamarin.Forms теперь не поддерживает Windows 8.1, Windows Phone 8.1 и Windows 10 Mobile, при этом приложения Xamarin.Forms выполняются в Windows 10 для настольных компьютеров.
 
 Вы можете назначить любой из этих проектов приложения запускаемым проектом, а затем скомпилировать и запустить программу на реальном устройстве или в симуляторе.
 
@@ -54,10 +58,10 @@ ms.locfileid: "76724998"
 
 ## <a name="inside-the-files"></a>Внутреннее строение файлов
 
-Визуальные элементы, отображаемые программой **Hello**, определены в конструкторе класса [`App`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter02/Hello/Hello/Hello/App.cs). `App` является производным объектом от класса Xamarin.Forms [`Application`](xref:Xamarin.Forms.Application).
+Визуальные элементы, отображаемые программой **Hello**, определены в конструкторе класса [`App`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter02/Hello/Hello/Hello/App.cs). `App` является производным от класса [`Application`](xref:Xamarin.Forms.Application) Xamarin.Forms.
 
 > [!NOTE]
-> Шаблоны решений Visual Studio для Xamarin.Forms создают страницу на основе файла XAML. Структура XAML не рассматривается в этой книге вплоть до [главы 7](chapter07.md).
+> Шаблоны решений Visual Studio для Xamarin.Forms создают страницу на основе файла XAML. Структура XAML не рассматривается в этой книге вплоть до [главы 7](chapter07.md).
 
 Раздел **References** в проекте PCL **Hello** включает следующие сборки Xamarin.Forms:
 
@@ -75,7 +79,7 @@ ms.locfileid: "76724998"
 - **Xamarin.Forms.Platform.WinRT.Phone**
 
 > [!NOTE]
-> Разделы **References** этих проектов теперь не содержат списка сборок. Вместо этого файл проекта содержит теги **PackageReference**, которые указывают нужный пакет NuGet для Xamarin.Forms. В разделе **References** в Visual Studio указывается пакет **Xamarin.Forms**, а не отдельные сборки Xamarin.Forms.
+> Разделы **References** этих проектов теперь не содержат списка сборок. Вместо этого файл проекта содержит теги **PackageReference**, которые указывают нужный пакет NuGet для Xamarin.Forms. В разделе **Ссылки** в Visual Studio указан пакет **Xamarin.Forms** , а не сборки Xamarin.Forms.
 
 Каждый проект приложения содержит вызов статического метода `Forms.Init` из пространства имен `Xamarin.Forms`. Он инициализирует библиотеку Xamarin.Forms. Для каждой платформы определена собственная версия `Forms.Init`. Вызовы этого метода присутствуют в следующих классах:
 
@@ -183,7 +187,7 @@ ms.locfileid: "76724998"
 - [`LayoutOptions.EndAndExpand`](xref:Xamarin.Forms.LayoutOptions.EndAndExpand)
 - [`LayoutOptions.FillAndExpand`](xref:Xamarin.Forms.LayoutOptions.FillAndExpand)
 
-`HorizontalOptions` и `VerticalOptions` будут самыми важными свойствами в макете Xamarin.Forms. Они подробно описываются в [**главе 4 Прокрутка стека** ](chapter04.md).
+`HorizontalOptions` и `VerticalOptions` будут самыми важными свойствами в макете Xamarin.Forms. Они подробно описываются в [**главе 4. Прокрутка стека** ](chapter04.md).
 
 Ниже приведен результат отображения, в котором свойства `HorizontalOptions` и `VerticalOptions` объекта `Label` имеют значение `LayoutOptions.Center`:
 

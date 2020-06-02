@@ -1,20 +1,23 @@
 ---
 title: Расширения платформы Xamarin.Essentials
 description: Xamarin.Essentials предоставляет несколько методов расширения платформы при работе с такими типами платформы, как Rect, Size и Point.
-ms.assetid: AB4D198A-4FD7-479E-8627-01F887A6D056
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 03/13/2019
-ms.openlocfilehash: 4e43159fb9cae6646be54d8efc24c334bc071477
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 3266d3870dc0d1ddef747168b2ac6b4d397a7c33
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77545149"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135360"
 ---
-# <a name="xamarinessentials-platform-extensions"></a>Xamarin.Essentials: расширения платформы
+# <a name="xamarinessentials-platform-extensions"></a>Xamarin.Essentials. расширения платформы
 
-Xamarin.Essentials предоставляет несколько методов расширения платформы при работе с такими типами платформы, как Rect, Size и Point. Это означает, что можно осуществлять преобразование между версией `System` этих типов для их конкретных типов в iOS, Android и UWP. 
+Xamarin.Essentials предоставляет несколько методов расширения платформы при работе с такими типами платформы, как Rect, Size и Point. Это означает, что можно осуществлять преобразование между версией `System` этих типов для их конкретных типов в iOS, Android и UWP.
 
 ## <a name="get-started"></a>Начало работы
 
@@ -22,7 +25,7 @@ Xamarin.Essentials предоставляет несколько методов 
 
 ## <a name="using-platform-extensions"></a>Использование расширений платформы
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

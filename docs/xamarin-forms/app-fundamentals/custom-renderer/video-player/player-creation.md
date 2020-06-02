@@ -1,18 +1,21 @@
 ---
-title: Создание видеопроигрывателей платформы
+title: ''
 description: В этой статье объясняется, как внедрить пользовательский отрисовщик видеопроигрывателя на каждой платформе с помощью Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: EEE2FB9B-EB73-4A3F-A859-7A1D4808E149
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/12/2018
-ms.openlocfilehash: 007c027772701e424aad5995c0ec025c3589171c
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: d026ecc3288da155aefb0f68ee0c70721106c0da
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76725095"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84133748"
 ---
 # <a name="creating-the-platform-video-players"></a>Создание видеопроигрывателей платформы
 
@@ -73,7 +76,7 @@ namespace FormsVideoLibrary.iOS
 }
 ```
 
-Обычно отрисовщик, который задает элемент управления платформы, является производным от класса [`ViewRenderer<View, NativeView>`](https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Platform.iOS/ViewRenderer.cs), где `View` — это производная `View` Xamarin.Forms (в этом случае `VideoPlayer`), а `NativeView` — производная `UIView` в iOS для класса отрисовщика. В этом отрисовщике универсальному аргументу просто задано значение `UIView`. Причины вы узнаете в ближайшее время.
+Обычно отрисовщик, который задает элемент управления платформы, является производным от класса [`ViewRenderer<View, NativeView>`](https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Platform.iOS/ViewRenderer.cs), где `View` — это производная Xamarin.Forms `View` (в этом случае `VideoPlayer`), а `NativeView` — производная `UIView` в iOS для класса отрисовщика. В этом отрисовщике универсальному аргументу просто задано значение `UIView`. Причины вы узнаете в ближайшее время.
 
 Если отрисовщик основан на производной `UIViewController` (такой как эта), то класс должен переопределить свойство `ViewController` и вернуть контроллер представления, в данном случае `AVPlayerViewController`. В этом заключается цель поля `_playerViewController`.
 
@@ -120,7 +123,7 @@ namespace FormsVideoLibrary.iOS
 
 ### <a name="the-android-video-view"></a>Представление видео в Android
 
-Отрисовщик Android для `VideoPlayer` основан на классе [`VideoView`](xref:Android.Widget.VideoView) в Android. Однако при отдельном использовании класса `VideoView` для воспроизведения видео в приложении Xamarin.Forms видео заполняет область, отведенную для класса `VideoPlayer`, без сохранения правильных пропорций. Поэтому (как вы вскоре увидите) класс `VideoView` стал дочерним по отношению к классу `RelativeLayout` в Android. Производная `using` определяет `ARelativeLayout`, чтобы отличать его от класса `RelativeLayout` Xamarin.Forms, и он представляет собой второй универсальный аргумент в классе `ViewRenderer`.
+Отрисовщик Android для `VideoPlayer` основан на классе [`VideoView`](xref:Android.Widget.VideoView) в Android. Однако при отдельном использовании `VideoView` для воспроизведения видео в приложении Xamarin.Forms видео заполняет область, отведенную для `VideoPlayer`, без сохранения правильных пропорций. Поэтому (как вы вскоре увидите) класс `VideoView` стал дочерним по отношению к классу `RelativeLayout` в Android. Производная `using` определяет `ARelativeLayout`, чтобы отличать его от Xamarin.Forms `RelativeLayout`, и он представляет собой второй универсальный аргумент в `ViewRenderer`.
 
 ```csharp
 using System;

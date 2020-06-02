@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о главе 15. Интерактивный интерфейс
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о главе 15. Интерактивный интерфейс
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: F54E86F4-1CDA-474E-9B09-242060C2C13D
-author: davidbritch
-ms.author: dabritch
-ms.date: 11/07/2017
-ms.openlocfilehash: 5f96d2f4b619bbb10bb58e9b1b5dc7007c1ce888
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 15. The interactive interface''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9bb930c2d0e4b6281b1aa48589ea5245eedc1a60
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77131099"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136751"
 ---
 # <a name="summary-of-chapter-15-the-interactive-interface"></a>Сводная информация о главе 15. Интерактивный интерфейс
 

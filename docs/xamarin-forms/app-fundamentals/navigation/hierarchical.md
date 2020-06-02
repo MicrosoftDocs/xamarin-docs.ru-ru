@@ -1,18 +1,21 @@
 ---
-title: Иерархическая навигация
-description: В этой статье показано, как использовать класс NavigationPage для навигации в стеке страниц по методу ЛИФО.
-ms.prod: xamarin
-ms.assetid: C8A5EEFF-5A3B-4163-838A-147EE3939FAA
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 03/10/2020
-ms.openlocfilehash: 984f54698ccdee54c0b8670a50cb1f4432327977
-ms.sourcegitcommit: 8d13d2262d02468c99c4e18207d50cd82275d233
+title: ''
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 92774cffdfed7412bdb4d44993dc221993ad56c8
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82517281"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84137893"
 ---
 # <a name="hierarchical-navigation"></a>Иерархическая навигация
 
@@ -88,7 +91,7 @@ async void OnNextPageButtonClicked (object sender, EventArgs e)
 - Вызывается переопределение [`OnAppearing`](xref:Xamarin.Forms.Page.OnAppearing) страницы, к которой осуществляется переход.
 - Задача `PushAsync` завершается.
 
-Однако точный порядок, в котором происходят эти события, зависит от платформы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги Xamarin.Forms Чарльза Петцольда (Charles Petzold).
+Однако точный порядок, в котором происходят эти события, зависит от платформы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги о Xamarin.Forms Чарльза Петцольда (Charles Petzold).
 
 > [!NOTE]
 > Вызовы переопределений [`OnDisappearing`](xref:Xamarin.Forms.Page.OnDisappearing) и [`OnAppearing`](xref:Xamarin.Forms.Page.OnAppearing) не могут рассматриваться как гарантия перехода на страницу. Например, в iOS переопределение `OnDisappearing` вызывается на активной странице, когда приложение завершает работу.
@@ -112,7 +115,7 @@ async void OnPreviousPageButtonClicked (object sender, EventArgs e)
 - У страницы, к которой вы возвращаетесь, вызывается переопределение [`OnAppearing`](xref:Xamarin.Forms.Page.OnAppearing).
 - Возвращается задача `PopAsync`.
 
-Однако точный порядок, в котором происходят эти события, зависит от платформы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги Xamarin.Forms Чарльза Петцольда (Charles Petzold).
+Однако точный порядок, в котором происходят эти события, зависит от платформы. Дополнительные сведения см. в [главе 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) книги о Xamarin.Forms Чарльза Петцольда (Charles Petzold).
 
 Как и методы [`PushAsync`](xref:Xamarin.Forms.NavigationPage.PushAsync*) и [`PopAsync`](xref:Xamarin.Forms.NavigationPage.PopAsync), свойство [`Navigation`](xref:Xamarin.Forms.NavigableElement.Navigation) каждой страницы также предоставляет метод [`PopToRootAsync`](xref:Xamarin.Forms.NavigationPage.PopToRootAsync), который показан в следующем примере кода.
 

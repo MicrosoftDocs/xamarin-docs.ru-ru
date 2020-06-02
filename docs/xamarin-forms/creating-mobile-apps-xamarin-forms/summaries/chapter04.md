@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о Главе 4. Прокрутка стека
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о Главе 4. Прокрутка стека
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 7A39FD4F-15AD-4F94-960E-9FEEB63FFD44
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/19/2018
-ms.openlocfilehash: 5313dd34839d6a5d21432161b9fd3a0ffce6e816
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 4. Scrolling the stack''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9890ecdf286ee33d7af28fd20847788b063df8f5
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83149942"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136894"
 ---
 # <a name="summary-of-chapter-4-scrolling-the-stack"></a>Сводная информация о Главе 4. Прокрутка стека
 
@@ -23,7 +27,7 @@ ms.locfileid: "83149942"
 Для создания макета нужно определить классы, производные от [`Layout`](xref:Xamarin.Forms.Layout) и [`Layout<T>`](xref:Xamarin.Forms.Layout`1). В этой главе рассматривается [`StackLayout`](xref:Xamarin.Forms.StackLayout).
 
 > [!NOTE]
-> [`FlexLayout`](~/xamarin-forms/user-interface/layouts/flex-layout.md) появился в Xamarin.Forms 3.0 и используется примерно так же, как `StackLayout`, но дает намного больше гибкости.
+> [`FlexLayout`](~/xamarin-forms/user-interface/layouts/flex-layout.md) появился в Xamarin.Forms 3.0 и используется примерно так же, как `StackLayout`, но дает намного больше гибкости.
 
 Также в этой главе вы познакомитесь с классами [`ScrollView`](xref:Xamarin.Forms.ScrollView), [`Frame`](xref:Xamarin.Forms.Frame) и [`BoxView`](xref:Xamarin.Forms.BoxView).
 

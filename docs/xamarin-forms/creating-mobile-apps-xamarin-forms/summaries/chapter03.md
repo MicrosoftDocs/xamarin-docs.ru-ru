@@ -1,18 +1,22 @@
 ---
-title: Сводная информация о главе 3. Более подробная информация
-description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о главе 3. Более подробная информация
-ms.prod: xamarin
-ms.technology: xamarin-forms
-ms.assetid: 2E5581A6-4D3E-4BD5-9FDB-ACBA0F0FC734
-author: davidbritch
-ms.author: dabritch
-ms.date: 07/18/2018
-ms.openlocfilehash: 69415b59bbd376330454302981e3216c236a16bb
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: ''
+description: ''
+Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 3. Deeper into text''
+ms.prod: ''
+ms.technology: ''
+ms.assetid: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5423a9f716f384eca107003bdeca69615f8b459f
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "72980924"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84136907"
 ---
 # <a name="summary-of-chapter-3-deeper-into-text"></a>Сводная информация о главе 3. Более подробная информация
 
@@ -119,7 +123,7 @@ ms.locfileid: "72980924"
 
 Задайте для свойства [`FontSize`](xref:Xamarin.Forms.Label.FontSize) объекта `Label` значение `double`, чтобы указать приблизительную высоту шрифта. Дополнительные сведения о правильном выборе размера шрифта см. в главе 5 [Работа с размерами](chapter05.md).
 
-Вы также можете получить один из нескольких предварительно заданных размеров шрифтов, которые зависят от платформы. Статический метод [`Device.GetNamedSize`](xref:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,System.Type)) и его [перегрузка](xref:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,Xamarin.Forms.Element)) возвращают значение размера шрифта `double` для используемой платформы, которое является элементом перечисления [`NamedSize`](xref:Xamarin.Forms.NamedSize) ([`Default`](xref:Xamarin.Forms.NamedSize.Default), [`Micro`](xref:Xamarin.Forms.NamedSize.Micro), [`Small`](xref:Xamarin.Forms.NamedSize.Small), [`Medium`](xref:Xamarin.Forms.NamedSize.Medium) или [`Large`](xref:Xamarin.Forms.NamedSize.Large)). Значение, возвращаемое элементом `Medium`, не обязательно совпадает с `Default`. В примере [**NamedFontSizes**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter03/NamedFontSizes) текст отображается с использованием имен размеров.
+Вы также можете получить один из нескольких предварительно заданных размеров шрифтов, которые зависят от платформы. Статический метод [`Device.GetNamedSize`](xref:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,System.Type)) и [перегрузка](xref:Xamarin.Forms.Device.GetNamedSize(Xamarin.Forms.NamedSize,Xamarin.Forms.Element)) возвращают значение размера шрифта `double` для используемой платформы, которое является элементом перечисления [`NamedSize`](xref:Xamarin.Forms.NamedSize) ([`Default`](xref:Xamarin.Forms.NamedSize.Default), [`Micro`](xref:Xamarin.Forms.NamedSize.Micro), [`Small`](xref:Xamarin.Forms.NamedSize.Small), [`Medium`](xref:Xamarin.Forms.NamedSize.Medium) и [`Large`](xref:Xamarin.Forms.NamedSize.Large)). Значение, возвращаемое элементом `Medium`, не обязательно совпадает с `Default`. В примере [**NamedFontSizes**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter03/NamedFontSizes) текст отображается с использованием имен размеров.
 
 Задайте свойству [`FontAttributes`](xref:Xamarin.Forms.Label.FontAttributes) объекта `Label` значение одного из элементов этого перечисления [`FontAttributes`](xref:Xamarin.Forms.FontAttributes), то есть [`Bold`](xref:Xamarin.Forms.FontAttributes.Bold), [`Italic`](xref:Xamarin.Forms.FontAttributes.Italic) или [`None`](xref:Xamarin.Forms.FontAttributes.None). Элементы `Bold` и `Italic` можно объединять с помощью оператора побитового или из C#.
 

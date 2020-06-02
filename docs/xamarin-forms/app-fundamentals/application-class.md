@@ -1,21 +1,24 @@
 ---
-title: Класс App Xamarin.Forms
-description: В этой статье описаны функции класса App по умолчанию, который включает в себя свойство для задания начальной страницы приложения, а также сохраняемый словарь для хранения простых значений в рамках изменений состояния жизненного цикла.
-ms.prod: xamarin
-ms.assetid: 421F8294-1944-46A4-8459-D2BD5AAABC9D
-ms.technology: xamarin-forms
-ms.custom: video
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/19/2016
-ms.openlocfilehash: aaf2086fd8128d68baa401ab646b31bcbc279545
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+title: Класс приложения Xamarin.Forms
+description: ''
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+ms.custom: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2f4b568809f949d813de86ae88cbe621cfa3161c
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303771"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84129692"
 ---
-# <a name="xamarinforms-app-class"></a>Класс App Xamarin.Forms
+# <a name="xamarinforms-app-class"></a>Класс приложения Xamarin.Forms
 
 Базовый класс `Application` предлагает следующие возможности, которые предоставляются в используемом по умолчанию подклассе `App` проекта:
 
@@ -112,7 +115,7 @@ if (Application.Current.Properties.ContainsKey("id"))
 
 В Xamarin.Forms 1.4 представлен дополнительный метод класса `Application` — `SavePropertiesAsync()`, который можно вызвать для упреждающего сохранения словаря `Properties`. Это позволяет сохранить свойства после важных обновлений, не рискуя, что они будут отсериализированы из-за сбоя либо завершены операционной системой.
 
-Ссылки на использование словаря `Properties` можно найти в главах [6](https://developer.xamarin.com/r/xamarin-forms/book/chapter06.pdf), [15](https://developer.xamarin.com/r/xamarin-forms/book/chapter15.pdf) и [20](https://developer.xamarin.com/r/xamarin-forms/book/chapter20.pdf) книги о **создании мобильных приложений с помощью Xamarin.Forms**, а также в соответствующих [примерах](https://github.com/xamarin/xamarin-forms-book-preview-2).
+Ссылки на использование словаря `Properties` можно найти в главах [6](https://developer.xamarin.com/r/xamarin-forms/book/chapter06.pdf), [15](https://developer.xamarin.com/r/xamarin-forms/book/chapter15.pdf) и [20](https://developer.xamarin.com/r/xamarin-forms/book/chapter20.pdf) книги о **создании мобильных приложений с помощью Xamarin.Forms** , а также в соответствующих [примерах](https://github.com/xamarin/xamarin-forms-book-preview-2).
 
 ## <a name="the-application-class"></a>Класс Application
 

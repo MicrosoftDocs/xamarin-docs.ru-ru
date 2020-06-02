@@ -1,18 +1,21 @@
 ---
-title: Пользовательские элементы управления транспортировкой видео
+title: ''
 description: В этой статье объясняется, как внедрить пользовательские элементы управления транспортировкой в приложение видеопроигрывателя с помощью Xamarin.Forms.
-ms.prod: xamarin
-ms.assetid: CE9E955D-A9AC-4019-A5D7-6390D80DECA1
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 02/12/2018
-ms.openlocfilehash: efe41fa5f25f6257587fd97a2711e9037b94dc6e
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.prod: ''
+ms.assetid: ''
+ms.technology: ''
+author: ''
+ms.author: ''
+ms.date: ''
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c72f68f327b6c0df6959d37ed4bf390e3bd7f31d
+ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77636020"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84135009"
 ---
 # <a name="custom-video-transport-controls"></a>Пользовательские элементы управления транспортировкой видео
 
