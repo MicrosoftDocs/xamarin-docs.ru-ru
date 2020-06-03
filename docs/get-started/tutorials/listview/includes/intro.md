@@ -10,11 +10,11 @@ ms.locfileid: "71107331"
 
 - Краткое руководство [Создание первого приложения Xamarin.Forms](~/get-started/first-app/index.md).
 - Руководство по [StackLayout](~/get-started/tutorials/stacklayout/index.yml).
-- Руководство по [сетке](~/get-started/tutorials/grid/index.yml).
-- Руководство по [меткам](~/get-started/tutorials/label/index.yml).
+- Руководство по [Grid](~/get-started/tutorials/grid/index.yml).
+- Руководство по [Label](~/get-started/tutorials/label/index.yml).
 - Руководство по [Image](~/get-started/tutorials/image/index.yml).
 
-В этом руководстве описано следующее.
+В этом руководстве вы узнаете, как:
 
 > [!div class="checklist"]
 >

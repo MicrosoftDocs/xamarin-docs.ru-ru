@@ -11,7 +11,7 @@ ms.locfileid: "71107328"
 - Краткое руководство [Создание первого приложения Xamarin.Forms](~/get-started/first-app/index.md).
 - Руководство по [StackLayout](~/get-started/tutorials/stacklayout/index.yml).
 
-В этом руководстве описано следующее.
+В этом руководстве вы узнаете, как:
 
 > [!div class="checklist"]
 >
