@@ -368,7 +368,7 @@ Shell.SetBackButtonBehavior(this, new BackButtonBehavior
 
 Свойство `Command` получает значение `ICommand` для выполнения при нажатии кнопки "Назад", а в свойстве `IconOverride` сохраняется значок, используемый для кнопки "Назад":
 
-[![Снимок экрана с переопределением значка для кнопки "Назад" в оболочке для iOS и Android](navigation-images/back-button.png "Переопределение значка кнопки "Назад" в оболочке")](navigation-images/back-button-large.png#lightbox "Переопределение значка кнопки "Назад" в оболочке")
+[![Снимок экрана с переопределением значка для кнопки "Назад" в оболочке для iOS и Android](navigation-images/back-button.png "Переопределение значка кнопки \"Назад\" в оболочке")](navigation-images/back-button-large.png#lightbox "Переопределение значка кнопки \"Назад\" в оболочке")
 
 ## <a name="related-links"></a>Связанные ссылки
 
