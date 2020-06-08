@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Вибрация'
-description: В этом документе описан класс Vibration в Xamarin.Essentials, который позволяет запускать и останавливать вибрацию в течение требуемого времени.
-ms.assetid: 7E8B24C4-2625-4DAE-A129-383542D34F1E
-author: jamesmontemagno
-ms.custom: video
-ms.author: jamont
-ms.date: 11/04/2018
-ms.openlocfilehash: a002cd6ed183ffeafef92cb40d48b2792347714d
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149837"
+название: "Xamarin.Essentials: Vibration"; описание: "В этом документе описан класс Vibration в Xamarin.Essentials, который позволяет запускать и останавливать вибрацию в течение требуемого времени".
+ms.assetid: 7E8B24C4-2625-4DAE-A129-383542D34F1E author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-vibration"></a>Xamarin.Essentials: Вибрация
+
+# <a name="xamarinessentials-vibration"></a>Xamarin.Essentials. Вибрация
 
 Класс **Vibration** позволяет запускать и останавливать вибрацию в течение требуемого времени.
 
@@ -55,7 +45,7 @@ ms.locfileid: "83149837"
 
 ## <a name="using-vibration"></a>Использование Vibration
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

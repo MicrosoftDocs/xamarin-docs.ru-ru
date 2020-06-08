@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Сведения об устройстве'
-description: В этом документе описывается класс DeviceInfo в Xamarin.Essentials, с помощью которого можно получить сведения об устройстве, в котором выполняется приложение.
-ms.assetid: A1AC5373-926A-4FB6-8D7D-4B87EB8EB522
-author: jamesmontemagno
-ms.custom: video
-ms.author: jamont
-ms.date: 11/04/2018
-ms.openlocfilehash: 1790e950dfccddcca84adf97bcff64f905ee59f6
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83150092"
+название: "Xamarin.Essentials: Сведения об устройстве"; описание: "В этом документе описывается класс DeviceInfo в Xamarin.Essentials, с помощью которого можно получить сведения об устройстве, на котором выполняется приложение".
+ms.assetid: A1AC5373-926A-4FB6-8D7D-4B87EB8EB522 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-device-information"></a>Xamarin.Essentials: Сведения об устройстве
+
+# <a name="xamarinessentials-device-information"></a>Xamarin.Essentials. Сведения об устройстве
 
 Класс **DeviceInfo** предоставляет сведения об устройстве, в котором выполняется приложение.
 
@@ -23,7 +13,7 @@ ms.locfileid: "83150092"
 
 ## <a name="using-deviceinfo"></a>Использование класса DeviceInfo
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

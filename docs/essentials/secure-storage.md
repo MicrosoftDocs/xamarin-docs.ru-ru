@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Защищенное хранилище'
-description: В этом документе описан класс SecureStorage в Xamarin.Essentials, который организует безопасное хранение пар "ключ-значение". Здесь рассматривается использование класса, особенности реализации для платформ и существующие ограничения.
-ms.assetid: 78856C0D-76BB-406E-A880-D5A3987B7D64
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 04/02/2019
-ms.custom: video
-ms.openlocfilehash: 41d9efa66318f4c3f5315351d3c1f51b4e503521
-ms.sourcegitcommit: 44c44ad60c5c880a39006493aedd2d7aa834a27e
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83550904"
+название: "Xamarin.Essentials: Защищенное хранилище"; описание: "В этом документе описан класс SecureStorage в Xamarin.Essentials, который организует безопасное хранение пар "ключ-значение". В документе рассматривается использование класса, особенности реализации для платформ и существующие ограничения".
+ms.assetid: 78856C0D-76BB-406E-A880-D5A3987B7D64 author: jamesmontemagno ms.author: jamont ms.date: 02.04.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-secure-storage"></a>Xamarin.Essentials: Защищенное хранилище
+
+# <a name="xamarinessentials-secure-storage"></a>Xamarin.Essentials. Защищенное хранилище
 
 Класс **SecureStorage** помогает обеспечить безопасное хранение пар "ключ-значение".
 
@@ -63,7 +53,7 @@ ms.locfileid: "83550904"
 
 # <a name="ios"></a>[iOS](#tab/ios)
 
-Если разработка ведется на **симуляторе iOS**, включите право **Keychain** (Цепочка ключей) и добавьте группу доступа к цепочке ключей для идентификатора пакета приложения. 
+Если разработка ведется на **симуляторе iOS**, включите право **Keychain** (Цепочка ключей) и добавьте группу доступа к цепочке ключей для идентификатора пакета приложения.
 
 Откройте **Entitlements.plist** из проекта iOS, найдите в нем право **Keychain** (Цепочка ключей) и включите его. Это действие автоматически позволяет автоматически добавить идентификатор приложения как группу.
 
@@ -80,7 +70,7 @@ ms.locfileid: "83550904"
 
 ## <a name="using-secure-storage"></a>Использование защищенного хранилища
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;
@@ -161,7 +151,7 @@ SecureStorage.RemoveAll();
 
 ## <a name="limitations"></a>Ограничения
 
-Этот API предназначен для хранения небольших объемов текста.  Производительность может быть низкой, если сохранять большие объемы текста. 
+Этот API предназначен для хранения небольших объемов текста.  Производительность может быть низкой, если сохранять большие объемы текста.
 
 ## <a name="api"></a>API
 

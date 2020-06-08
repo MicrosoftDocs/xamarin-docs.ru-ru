@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Разрешения'
-description: В этом документе описывается класс разрешений Xamarin.Essentials, который позволяет проверять и запрашивать разрешения среды выполнения.
-ms.assetid: 34062D84-3E55-4AF7-A688-8551068B1E57
-author: jamesmontemagno
-ms.author: jamont
-ms.custom: video
-ms.date: 01/06/2020
-ms.openlocfilehash: fbce02300363c3ec68c35c11afb25342f06f4be1
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83150071"
+название: "Xamarin.Essentials: Permissions"; описание: "В этом документе описывается класс Permissions в Xamarin.Essentials, который позволяет проверять и запрашивать разрешения среды выполнения".
+ms.assetid: 34062D84-3E55-4AF7-A688-8551068B1E57 author: jamesmontemagno ms.author: jamont ms.custom: video ms.date: 06.01.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-permissions"></a>Xamarin.Essentials: Разрешения
+
+# <a name="xamarinessentials-permissions"></a>Xamarin.Essentials. Разрешения
 
 Класс **Permissions** позволяет проверять и запрашивать разрешения среды выполнения.
 
@@ -25,7 +15,7 @@ ms.locfileid: "83150071"
 
 ## <a name="using-permissions"></a>Использование разрешений
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;
@@ -145,7 +135,7 @@ public async Task<PermissionStatus> CheckAndRequestPermissionAsync<T>(T permissi
 
 ## <a name="extending-permissions"></a>Расширение разрешений
 
-API разрешений обеспечивает гибкость и расширяемость для приложений, требующих дополнительной проверки или разрешений, которые не предусмотрены в Xamarin.Essentials. Создайте класс, наследуемый от `BasePermission`, и реализуйте необходимые абстрактные методы. Следующее действие
+API разрешений обеспечивает гибкость и расширяемость для приложений, требующих дополнительной проверки или разрешений, которые не включены в Xamarin.Essentials. Создайте класс, наследуемый от `BasePermission`, и реализуйте необходимые абстрактные методы. Следующее действие
 
 ```csharp
 public class MyPermission : BasePermission
@@ -170,7 +160,7 @@ public class MyPermission : BasePermission
 }
 ```
 
-При реализации разрешения на определенной платформе возможно наследование от класса `BasePlatformPermission`. Это позволяет получить дополнительные вспомогательные методы платформы для автоматической проверки объявлений и может помочь при создании настраиваемых разрешений для группирования. Например, вы можете запросить доступ для чтения и записи к хранилищу на Android, используя следующее настраиваемое разрешение.
+При реализации разрешения на определенной платформе класс `BasePlatformPermission` может быть унаследован. Это позволяет получить дополнительные вспомогательные методы платформы для автоматической проверки объявлений и может помочь при создании настраиваемых разрешений для группирования. Например, вы можете запросить доступ для чтения и записи к хранилищу на Android, используя следующее настраиваемое разрешение.
 
 Создайте новое разрешение в проекте, из которого вы вызываете разрешения.
 

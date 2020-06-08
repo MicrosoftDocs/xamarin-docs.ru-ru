@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: открытие браузера'
-description: Класс Browser в Xamarin.Essentials позволяет приложению открывать веб-ссылку в предпочитаемом браузере оптимизированной системы или внешнем браузере.
-ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 04/02/2019
-ms.custom: video
-ms.openlocfilehash: 715b9872642dfa8d5426c2967c62e82643def34d
-ms.sourcegitcommit: 9ca07644710e5919c7bc684c1ce144471611d5df
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82974481"
+title: "Xamarin.Essentials Открыть браузер"; описание: "Класс Browser в Xamarin.Essentials позволяет приложению открыть веб-ссылку в предпочитаемом браузере оптимизированной системы или внешнем браузере".
+ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33 author: jamesmontemagno ms.author: jamont ms.date: 02.04.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-browser"></a>Xamarin.Essentials: Браузер
+
+# <a name="xamarinessentials-browser"></a>Xamarin.Essentials. Браузер
 
 Класс **Browser** позволяет приложению открыть веб-ссылку в предпочитаемом браузере оптимизированной системы или внешнем браузере.
 
@@ -23,7 +13,7 @@ ms.locfileid: "82974481"
 
 ## <a name="using-browser"></a>Использование класса Browser
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;
@@ -46,7 +36,7 @@ public class BrowserTest
 
 ## <a name="customization"></a>Настройка
 
-При использовании предпочтительного браузера в системе есть несколько вариантов настройки, доступных для iOS и Android. Сюда входят `TitleMode` (только Android) и параметры цвета для `Toolbar` (iOS и Android) и `Controls` (только iOS). 
+При использовании предпочтительного браузера в системе есть несколько вариантов настройки, доступных для iOS и Android. Сюда входят `TitleMode` (только Android) и параметры цвета для `Toolbar` (iOS и Android) и `Controls` (только iOS).
 
 Эти параметры задаются с помощью `BrowserLaunchOptions` при вызове `OpenAsync`.
 

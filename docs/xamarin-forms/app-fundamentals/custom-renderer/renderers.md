@@ -1,22 +1,8 @@
 ---
-title: ''
-description: Каждый элемент управления Xamarin.Forms имеет сопутствующий отрисовщик для каждой платформы, который создает экземпляр собственного элемента управления. В этой статье перечислены классы элементов управления отрисовщика и собственных элементов управления, которые реализуют каждую страницу, макет, представление и ячейку Xamarin.Forms.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: a56f05f8ff4eb8ece43a9f4f38a669cfdc85c4be
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84135191"
+title: "Базовые классы отрисовщика и собственные элементы управления"; описание: "Каждый элемент управления Xamarin.Forms имеет сопутствующий отрисовщик для каждой платформы, который создает экземпляр собственного элемента управления. В этой статье перечислены классы элементов управления отрисовщика и собственных элементов управления, которые реализуют каждую страницу, макет, представление и ячейку Xamarin.Forms".
+ms.prod: xamarin ms.assetid: A8909AE3-ED0E-4D24-BF96-B49E732E3B93 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 17.04.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="renderer-base-classes-and-native-controls"></a>Базовые классы отрисовщика и собственные элементы управления
 
 _Каждый элемент управления Xamarin.Forms имеет сопутствующий отрисовщик для каждой платформы, который создает экземпляр собственного элемента управления. В этой статье перечислены классы элементов управления отрисовщика и собственных элементов управления, которые реализуют каждую страницу, макет, представление и ячейку Xamarin.Forms._
@@ -26,7 +12,10 @@ _Каждый элемент управления Xamarin.Forms имеет со�
 - **iOS** — Xamarin.Forms.Platform.iOS
 - **Android** — Xamarin.Forms.Platform.Android
 - **Android (AppCompat)** — Xamarin.Forms.Platform.Android.AppCompat
+- **Android (FastRenderers)**  - Xamarin.Forms.Platform.Android.FastRenderers
 - **Универсальная платформа Windows (UWP)** — Xamarin.Forms.Platform.UWP
+
+Дополнительные сведения о быстрых отрисовщиках см. в разделе [Xamarin.Forms Быстрые отрисовщики](~/xamarin-forms/internals/fast-renderers.md).
 
 Класс `MapRenderer` находится в следующих пространствах имен:
 
@@ -54,18 +43,18 @@ _Каждый элемент управления Xamarin.Forms имеет со�
 
 В приведенной ниже таблице перечислены классы отрисовщиков и собственных элементов управления, которые реализуют [макеты](~/xamarin-forms/user-interface/controls/layouts.md) Xamarin.Forms всех типов.
 
-|Макет|Обработчик|iOS|Android|UWP|
+|Макет|Обработчик|iOS|Android|Android (AppCompat)|UWP|
 |--- |--- |--- |--- |--- |
-|[`ContentPresenter`](xref:Xamarin.Forms.ContentPresenter)|ViewRenderer|UIView|Просмотр|FrameworkElement|
-|[`ContentView`](xref:Xamarin.Forms.ContentView)|ViewRenderer|UIView|Просмотр|FrameworkElement|
-|[`FlexLayout`](xref:Xamarin.Forms.FlexLayout)|ViewRenderer|UIView|Просмотр|FrameworkElement|
-|[`Frame`](xref:Xamarin.Forms.Frame)|FrameRenderer|UIView|ViewGroup|Border|
-|[`ScrollView`](xref:Xamarin.Forms.ScrollView)|ScrollViewRenderer|UIScrollView|ScrollView|ScrollViewer|
-|[`TemplatedView`](xref:Xamarin.Forms.TemplatedView)|ViewRenderer|UIView|Просмотр|FrameworkElement|
-|[`AbsoluteLayout`](xref:Xamarin.Forms.AbsoluteLayout)|ViewRenderer|UIView|Просмотр|FrameworkElement|
-|[`Grid`](xref:Xamarin.Forms.Grid)|ViewRenderer|UIView|Просмотр|FrameworkElement|
-|[`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout)|ViewRenderer|UIView|Просмотр|FrameworkElement|
-|[`StackLayout`](xref:Xamarin.Forms.StackLayout)|ViewRenderer|UIView|Просмотр|FrameworkElement|
+|[`ContentPresenter`](xref:Xamarin.Forms.ContentPresenter)|ViewRenderer|UIView|Просмотр|Просмотр|FrameworkElement|
+|[`ContentView`](xref:Xamarin.Forms.ContentView)|ViewRenderer|UIView|Просмотр|Просмотр|FrameworkElement|
+|[`FlexLayout`](xref:Xamarin.Forms.FlexLayout)|ViewRenderer|UIView|Просмотр|Просмотр|FrameworkElement|
+|[`Frame`](xref:Xamarin.Forms.Frame)|FrameRenderer|UIView|ViewGroup|CardView|Border|
+|[`ScrollView`](xref:Xamarin.Forms.ScrollView)|ScrollViewRenderer|UIScrollView|ScrollView|ScrollView|ScrollViewer|
+|[`TemplatedView`](xref:Xamarin.Forms.TemplatedView)|ViewRenderer|UIView|Просмотр|Просмотр|FrameworkElement|
+|[`AbsoluteLayout`](xref:Xamarin.Forms.AbsoluteLayout)|ViewRenderer|UIView|Просмотр|Просмотр|FrameworkElement|
+|[`Grid`](xref:Xamarin.Forms.Grid)|ViewRenderer|UIView|Просмотр|Просмотр|FrameworkElement|
+|[`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout)|ViewRenderer|UIView|Просмотр|Просмотр|FrameworkElement|
+|[`StackLayout`](xref:Xamarin.Forms.StackLayout)|ViewRenderer|UIView|Просмотр|Просмотр|FrameworkElement|
 
 ## <a name="views"></a>Представления
 
@@ -117,6 +106,7 @@ _Каждый элемент управления Xamarin.Forms имеет со�
 |[`ImageCell`](xref:Xamarin.Forms.ImageCell)|ImageCellRenderer|UITableViewCell с UIImage|LinearLayout с двумя элементами TextView и элементом ImageView|DataTemplate с объектом Grid, содержащим элемент Image и два элемента TextBlock|
 |[`ViewCell`](xref:Xamarin.Forms.ViewCell)|[ViewCellRenderer](~/xamarin-forms/app-fundamentals/custom-renderer/viewcell.md)|UITableViewCell|Просмотр|DataTemplate с ContentPresenter|
 
-## <a name="summary"></a>Сводка
+## <a name="related-links"></a>Связанные ссылки
 
-В этой статье были перечислены классы отрисовщиков и собственных элементов управления, которые реализуют каждую страницу, макет, представление и ячейку Xamarin.Forms. Каждый элемент управления Xamarin.Forms имеет сопутствующий отрисовщик для каждой платформы, который создает экземпляр собственного элемента управления.
+- [Быстрые отрисовщики Xamarin.Forms](~/xamarin-forms/internals/fast-renderers.md)
+- [Xamarin.Forms Пользовательские отрисовщики оболочки](~/xamarin-forms/app-fundamentals/shell/customrenderers.md)

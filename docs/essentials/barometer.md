@@ -1,18 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Барометр'
-description: Класс Barometer в Xamarin.Essentials позволяет отслеживать барометрический датчик устройства, измеряющий давление.
-ms.assetid: DA4F968A-D988-41F5-8745-1BEE693660A1
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 11/04/2018
-ms.openlocfilehash: 5a496fc06732be1cf104cfbaffa8ff4b68c8f564
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "69976436"
+название: "Xamarin.Essentials: Barometer"; описание: "Класс Barometer в Xamarin.Essentials позволяет отслеживать барометрический датчик устройства, измеряющий давление".
+ms.assetid: DA4F968A-D988-41F5-8745-1BEE693660A1 author: jamesmontemagno ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-barometer"></a>Xamarin.Essentials: Барометр
+
+# <a name="xamarinessentials-barometer"></a>Xamarin.Essentials. Барометр
 
 Класс **Barometer** позволяет отслеживать барометрический датчик устройства, измеряющий давление.
 
@@ -22,7 +13,7 @@ ms.locfileid: "69976436"
 
 ## <a name="using-barometer"></a>Использование класса Barometer
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

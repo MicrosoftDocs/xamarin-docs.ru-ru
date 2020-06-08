@@ -1,22 +1,8 @@
 ---
-title: Книга о создании мобильных приложений с помощью Xamarin.Forms
-description: Изучите разработку приложений Xamarin.Forms с помощью электронной версии книги "Создание мобильных приложений с помощью Xamarin.Forms" Чарльза Петцольда.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 77880cd69dd7b8efae0904fa5348d056dba69c2e
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136946"
+title: "Книга о создании мобильных приложений с помощью Xamarin.Forms"; описание: "Изучите разработку приложений Xamarin.Forms с помощью электронной версии книги "Создание мобильных приложений с помощью Xamarin.Forms" Чарльза Петцольда".
+ms.prod: xamarin ms.assetid: CDE99818-689B-4376-9DC4-C4102AC0F931 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 19.07.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="creating-mobile-apps-with-xamarinforms-book"></a>Книга о создании мобильных приложений с помощью Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples)
@@ -29,7 +15,7 @@ ms.locfileid: "84136946"
 
 Скачайте электронную книгу из Microsoft Virtual Academy в любом удобном формате:
 
-- [**PDF (56 МБ)** ](https://aka.ms/xamebook)
+- [**PDF (56 МБ)** ](https://aka.ms/xamformsebook)
 
 - [**ePub (151 МБ)** ](https://aka.ms/xamebook/epub)
 
@@ -56,41 +42,35 @@ ms.locfileid: "84136946"
 ## <a name="download-chapters-and-summaries"></a>Скачивание глав и сводной информации
 
 | Глава | Полный текст | Сводка |
-| ---
-title: 'Книга о создании мобильных приложений с помощью Xamarin.Forms' description: 'Изучите разработку приложений Xamarin.Forms с помощью электронной версии книги "Создание мобильных приложений с помощью Xamarin.Forms" Чарльза Петцольда.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
----- | --- title: 'Книга о создании мобильных приложений с помощью Xamarin.Forms' description: 'Изучите разработку приложений Xamarin.Forms с помощью электронной версии книги "Создание мобильных приложений с помощью Xamarin.Forms" Чарльза Петцольда.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-title: 'Книга о создании мобильных приложений с помощью Xamarin.Forms' description: 'Изучите разработку приложений Xamarin.Forms с помощью электронной версии книги "Создание мобильных приложений с помощью Xamarin.Forms" Чарльза Петцольда.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-title: 'Книга о создании мобильных приложений с помощью Xamarin.Forms' description: 'Изучите разработку приложений Xamarin.Forms с помощью электронной версии книги "Создание мобильных приложений с помощью Xamarin.Forms" Чарльза Петцольда.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-title: 'Книга о создании мобильных приложений с помощью Xamarin.Forms' description: 'Изучите разработку приложений Xamarin.Forms с помощью электронной версии книги "Создание мобильных приложений с помощью Xamarin.Forms" Чарльза Петцольда.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
-------- | --- title: 'Книга о создании мобильных приложений с помощью Xamarin.Forms' description: 'Изучите разработку приложений Xamarin.Forms с помощью электронной версии книги "Создание мобильных приложений с помощью Xamarin.Forms" Чарльза Петцольда.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
----- | | Глава 1. Как применить Xamarin.Forms? | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch01-Apr2016.pdf) | [Сводка](summaries/chapter01.md) | | Глава 2. Анатомия приложения | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch02-Apr2016.pdf) | [Сводка](summaries/chapter02.md) | | Глава 3. Более подробная информация | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch03-Apr2016.pdf) | [Сводка](summaries/chapter03.md) | | Глава 4. Прокрутка стека | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch04-Apr2016.pdf) | [Сводка](summaries/chapter04.md) | | Глава 5. Работа с размерами | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch05-Apr2016.pdf) | [Сводка](summaries/chapter05.md) | | Глава 6. Нажатия кнопки | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch06-Apr2016.pdf) | [Сводка](summaries/chapter06.md) | | Глава 7. XAML и Код | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch07-Apr2016.pdf) | [Сводка](summaries/chapter07.md) | | Глава 8. Совместное использование кода и XAML | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch08-Apr2016.pdf) | [Сводка](summaries/chapter08.md) | | Глава 9. Вызовы API конкретных платформ | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch09-Apr2016.pdf) | [Сводка](summaries/chapter09.md) | | Глава 10. Расширения разметки XAML | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch10-Apr2016.pdf) | [Сводка](summaries/chapter10.md) | | Глава 11. Инфраструктура c возможностью привязки | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch11-Apr2016.pdf) | [Сводка](summaries/chapter11.md) | | Глава 12. Стили | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch12-Apr2016.pdf) | [Сводка](summaries/chapter12.md) | | Глава 13. Растровые изображения | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch13-Apr2016.pdf) | [Сводка](summaries/chapter13.md) | | Глава 14. Абсолютный макет | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch14-Apr2016.pdf) | [Сводка](summaries/chapter14.md) | | Глава 15. Интерактивный интерфейс | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch15-Apr2016.pdf) | [Сводка](summaries/chapter15.md) | | Глава 16. Привязка данных | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch16-Apr2016.pdf) | [Сводка](summaries/chapter16.md) | | Глава 17. Достигаем мастерства в использовании класса Grid | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch17-Apr2016.pdf) | [Сводка](summaries/chapter17.md) | | Глава 18. MVVM | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch18-Apr2016.pdf) | [Сводка](summaries/chapter18.md) | | Глава 19. Представления коллекций | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch19-Apr2016.pdf) | [Сводка](summaries/chapter19.md) | | Глава 20. Асинхронные и файловые операции ввода-вывода | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch20-Apr2016.pdf) | [Сводка](summaries/chapter20.md) | | Глава 21. Преобразования | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch21-Apr2016.pdf) | [Сводка](summaries/chapter21.md) | | Глава 22. Анимация | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch22-Apr2016.pdf) | [Сводка](summaries/chapter22.md) | | Глава 23. Триггеры и реакции на событие | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch23-Apr2016.pdf) | [Сводка](summaries/chapter23.md) | | Глава 24. Переход по страницам | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch24-Apr2016.pdf) | [Сводка](summaries/chapter24.md) | | Глава 25. Виды страниц | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch25-Apr2016.pdf) | [Сводка](summaries/chapter25.md) | | Глава 26. Пользовательские макеты | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch26-Apr2016.pdf) | [Сводка](summaries/chapter26.md) | | Глава 27. Пользовательские отрисовщики | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch27-Apr2016.pdf) | [Сводка](summaries/chapter27.md) | | Глава 28. Расположение и карты | [Скачать PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch28-Aug2016.pdf) | [Сводка](summaries/chapter28.md) |
+| ------- | ------------- | ------- |
+| Глава 1. Как применить Xamarin.Forms? | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch01-Apr2016.pdf) | [Сводка](summaries/chapter01.md) |
+| Глава 2. Анатомия приложения | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch02-Apr2016.pdf) | [Сводка](summaries/chapter02.md) |
+| Глава 3. Более подробная информация | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch03-Apr2016.pdf) | [Сводка](summaries/chapter03.md) |
+| Глава 4. Прокрутка стека | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch04-Apr2016.pdf) | [Сводка](summaries/chapter04.md) |
+| Глава 5. Работа с размерами | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch05-Apr2016.pdf) | [Сводка](summaries/chapter05.md) |
+| Глава 6. Нажатия кнопки | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch06-Apr2016.pdf) | [Сводка](summaries/chapter06.md) |
+| Глава 7. XAML и Код | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch07-Apr2016.pdf) | [Сводка](summaries/chapter07.md) |
+| Глава 8. Совместное использование кода и XAML | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch08-Apr2016.pdf) | [Сводка](summaries/chapter08.md) |
+| Глава 9. Вызовы API конкретных платформ | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch09-Apr2016.pdf) | [Сводка](summaries/chapter09.md) |
+| Глава 10. Расширения разметки XAML | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch10-Apr2016.pdf) | [Сводка](summaries/chapter10.md) |
+| Глава 11. Инфраструктура c возможностью привязки | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch11-Apr2016.pdf) | [Сводка](summaries/chapter11.md) |
+| Глава 12. Стили | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch12-Apr2016.pdf) | [Сводка](summaries/chapter12.md) |
+| Глава 13. Растровые изображения | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch13-Apr2016.pdf) | [Сводка](summaries/chapter13.md) |
+| Глава 14. Абсолютный макет | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch14-Apr2016.pdf) | [Сводка](summaries/chapter14.md) |
+| Глава 15. Интерактивный интерфейс | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch15-Apr2016.pdf) | [Сводка](summaries/chapter15.md) |
+| Глава 16. Привязка данных | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch16-Apr2016.pdf) | [Сводка](summaries/chapter16.md) |
+| Глава 17. Достигаем мастерства в использовании класса Grid | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch17-Apr2016.pdf) | [Сводка](summaries/chapter17.md) |
+| Глава 18. MVVM | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch18-Apr2016.pdf) | [Сводка](summaries/chapter18.md) |
+| Глава 19. Представления коллекций | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch19-Apr2016.pdf) | [Сводка](summaries/chapter19.md) |
+| Глава 20. Асинхронные и файловые операции ввода-вывода | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch20-Apr2016.pdf) | [Сводка](summaries/chapter20.md) |
+| Глава 21. Transform | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch21-Apr2016.pdf) | [Сводка](summaries/chapter21.md) |
+| Глава 22. Анимация | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch22-Apr2016.pdf) | [Сводка](summaries/chapter22.md) |
+| Глава 23. Триггеры и реакции на событие | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch23-Apr2016.pdf) | [Сводка](summaries/chapter23.md) |
+| Глава 24. Переход по страницам | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch24-Apr2016.pdf) | [Сводка](summaries/chapter24.md) |
+| Глава 25. Виды страниц | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch25-Apr2016.pdf) | [Сводка](summaries/chapter25.md) |
+| Глава 26. Пользовательские макеты | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch26-Apr2016.pdf) | [Сводка](summaries/chapter26.md) |
+| Глава 27. Пользовательские отрисовщики | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch27-Apr2016.pdf) | [Сводка](summaries/chapter27.md) |
+| Глава 28. Расположение и карты | [Загрузить PDF-файл](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch28-Aug2016.pdf) | [Сводка](summaries/chapter28.md) |
 
 ## <a name="ways-in-which-the-book-is-outdated"></a>Где и в чем устарела эта книга
 

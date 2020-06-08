@@ -1,18 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Веб-средство проверки подлинности'
-description: В этом документе описывается класс WebAuthenticator в Xamarin.Essentials. Он позволяет запускать потоки проверки подлинности на основе браузера, ожидающие обратный вызов приложения.
-ms.assetid: 3D95371E-5D59-440E-8D31-F3C04E493DC1
-author: redth
-ms.author: jodick
-ms.date: 03/26/2020
-ms.openlocfilehash: b090ea8491afccb7078de8333a44a4888819a46a
-ms.sourcegitcommit: ddd2cb3a102df339bb269380cb2c0617dbb1acb7
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81688261"
+название: "Xamarin.Essentials: Веб-средство проверки подлинности"; описание: "В этом документе описывается класс WebAuthenticator в Xamarin.Essentials. Он позволяет запускать потоки проверки подлинности на основе браузера, ожидающие обратный вызов приложения".
+ms.assetid: 3D95371E-5D59-440E-8D31-F3C04E493DC1 author: redth ms.author: jodick ms.date: 26.03.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-web-authenticator"></a>Xamarin.Essentials: Веб-средство проверки подлинности
+
+# <a name="xamarinessentials-web-authenticator"></a>Xamarin.Essentials. Веб-средство проверки подлинности
 
 Класс **WebAuthenticator** позволяет запускать потоки на основе браузера, которые ожидают обратного вызова по определенному URL-адресу, зарегистрированному за приложением.
 
@@ -106,7 +97,7 @@ public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
 
 ## <a name="using-webauthenticator"></a>Использование WebAuthenticator
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

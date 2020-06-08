@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: класс Map'
-description: Класс Map в Xamarin.Essentials позволяет приложению открывать установленное приложение карт на определенном местоположении или метке.
-ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 05/26/2020
-ms.custom: video
-ms.openlocfilehash: 16f4a69e2d9216bb2e03fbcb663403d198b42c98
-ms.sourcegitcommit: 6a6cbb62bcf149f9515ee8868679a8a07ce17956
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862720"
+title: "Xamarin.Essentials Map"; описание: "Класс Map в Xamarin.Essentials позволяет приложению открывать установленное приложение карт на определенном местоположении или метке".
+ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33 author: jamesmontemagno ms.author: jamont ms.date: 26.05.2020 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-map"></a>Xamarin.Essentials: Карта
+
+# <a name="xamarinessentials-map"></a>Xamarin.Essentials. Карта
 
 Класс **Map** позволяет приложению открывать установленное приложение карт на определенном местоположении или метке.
 
@@ -23,7 +13,7 @@ ms.locfileid: "83862720"
 
 ## <a name="using-map"></a>Использование класса Map
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

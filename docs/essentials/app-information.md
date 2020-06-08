@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Сведения о приложении'
-description: В этом документе описывается класс AppInfo в Xamarin.Essentials, с помощью которого можно получить сведения о вашем приложении. Например, он предоставляет имя и версию приложения.
-ms.assetid: 15924FCB-19E0-45B2-944E-E94FD7AE12FA
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 01/29/2019
-ms.custom: video
-ms.openlocfilehash: 69d0cb503d329ccfb4c29fb6cc4a589bef97e893
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "70756994"
+название: "Xamarin.Essentials: Сведения о приложении"; описание: "В этом документе описывается класс AppInfo в Xamarin.Essentials, с помощью которого можно получить сведения о вашем приложении. Например, он предоставляет имя и версию приложения".
+ms.assetid: 15924FCB-19E0-45B2-944E-E94FD7AE12FA author: jamesmontemagno ms.author: jamont ms.date: 29.01.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-app-information"></a>Xamarin.Essentials: Сведения о приложении
+
+# <a name="xamarinessentials-app-information"></a>Xamarin.Essentials. Сведения о приложении
 
 Класс **AppInfo** предоставляет сведения о приложении.
 
@@ -23,7 +13,7 @@ ms.locfileid: "70756994"
 
 ## <a name="using-appinfo"></a>Использование AppInfo
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

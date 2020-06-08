@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Геопозиционирование'
-description: В этом документе описан класс Geolocation в Xamarin.Essentials, который предоставляет API для получения текущих геолокационных координат устройства.
-ms.assetid: 8F66092C-13F0-4FEE-8AA5-901D5F79B357
-author: jamesmontemagno
-ms.custom: video
-ms.author: jamont
-ms.date: 03/13/2019
-ms.openlocfilehash: 99b439e70038d27ed8bffcf20b908c52a10ede82
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149745"
+название: "Xamarin.Essentials: Geolocation"; описание: "В этом документе описан класс Geolocation в Xamarin.Essentials, который предоставляет API для получения текущих геолокационных координат устройства".
+ms.assetid: 8F66092C-13F0-4FEE-8AA5-901D5F79B357 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 13.03.2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-geolocation"></a>Xamarin.Essentials: Геопозиционирование
+
+# <a name="xamarinessentials-geolocation"></a>Xamarin.Essentials. Геопозиционирование
 
 Класс **Geolocation** предоставляет API для получения текущих геолокационных координат устройства.
 
@@ -74,7 +64,7 @@ ms.locfileid: "83149745"
 
 ## <a name="using-geolocation"></a>Использование геолокации
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;
@@ -112,7 +102,7 @@ catch (Exception ex)
 }
 ```
 
-Значения высоты не всегда доступно. Если она недоступна, свойство `Altitude` может быть со значением `null` или равным нулю. Если высота доступна, значение указывается в метрах над уровнем моря. 
+Значения высоты не всегда доступно. Если она недоступна, свойство `Altitude` может быть со значением `null` или равным нулю. Если высота доступна, значение указывается в метрах над уровнем моря.
 
 Чтобы запросить текущие координаты [расположения](xref:Xamarin.Essentials.Location) устройства, можно использовать `GetLocationAsync`. Лучше всего передать полный `GeolocationRequest` и `CancellationToken`, так как получение расположения устройства может занять некоторое время.
 

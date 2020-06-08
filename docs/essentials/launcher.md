@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: средство запуска'
-description: Класс Launcher в Xamarin.Essentials позволяет приложению открыть URI средствами системы.
-ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33
-author: jamesmontemagno
-ms.custom: video
-ms.author: jamont
-ms.date: 08/20/2019
-ms.openlocfilehash: f84d3bf379562c8ddd96a32dfb9f15b03b0a6827
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149787"
+title: "Xamarin.Essentials Launcher"; описание: "Класс Launcher в Xamarin.Essentials позволяет приложению открыть URI средствами системы".
+ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 20.08.2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-launcher"></a>Xamarin.Essentials: Средство запуска
+
+# <a name="xamarinessentials-launcher"></a>Xamarin.Essentials. Средство запуска
 
 Класс **Launcher** позволяет приложению открыть URI средствами системы. Это часто используется при глубокой привязке к пользовательским схемам URI другого приложения. Если нужно открыть в браузере веб-сайт, следует обратиться к API **[Browser](open-browser.md)** .
 
@@ -23,7 +13,7 @@ ms.locfileid: "83149787"
 
 ## <a name="using-launcher"></a>Использование класса Launcher
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;

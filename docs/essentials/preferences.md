@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Параметры'
-description: В этом документе описан класс Preferences в Xamarin.Essentials, который сохраняет параметры приложения в хранилище ключей и значений. Здесь рассматривается использование класса и типы данных, которые можно сохранить.
-ms.assetid: AA81BCBD-79BA-448F-942B-BA4415CA50FF
-author: jamesmontemagno
-ms.author: jamont
-ms.date: 01/15/2019
-ms.custom: video
-ms.openlocfilehash: e812ab5b85db396ee3cb473f4a659ac188c9212f
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79497048"
+название: "Xamarin.Essentials: Preferences"; описание: "В этом документе описан класс Preferences в Xamarin.Essentials, который сохраняет параметры приложения в хранилище ключей и значений. Здесь рассматривается использование класса и типы данных, которые можно сохранить".
+ms.assetid: AA81BCBD-79BA-448F-942B-BA4415CA50FF author: jamesmontemagno ms.author: jamont ms.date: 15.01.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-preferences"></a>Xamarin.Essentials: Параметры
+
+# <a name="xamarinessentials-preferences"></a>Xamarin.Essentials. Параметры
 
 Класс **Preferences** помогает хранить параметры приложения в хранилище ключей и значений.
 
@@ -23,7 +13,7 @@ ms.locfileid: "79497048"
 
 ## <a name="using-preferences"></a>Использование Preferences
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;
@@ -98,7 +88,7 @@ Preferences.Clear();
 
 # <a name="uwp"></a>[UWP](#tab/uwp)
 
-[ApplicationDataContainer](https://docs.microsoft.com/uwp/api/windows.storage.applicationdatacontainer) используется для хранения значений на устройстве. Если свойство `sharedName` не указано, используется `LocalSettings`. В противном случае используется имя для создания контейнера в `LocalSettings`. 
+[ApplicationDataContainer](https://docs.microsoft.com/uwp/api/windows.storage.applicationdatacontainer) используется для хранения значений на устройстве. Если свойство `sharedName` не указано, используется `LocalSettings`. В противном случае используется имя для создания контейнера в `LocalSettings`.
 
 `LocalSettings` также имеет следующее ограничение: длина имени каждого параметра не может превышать 255 символов. Каждый параметр может иметь размер до 8 КБ, а каждый составной параметр — до 64 КБ.
 

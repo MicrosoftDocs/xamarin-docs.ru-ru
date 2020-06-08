@@ -1,9 +1,6 @@
 ---
-title: description: 'Эта статья объясняет, как получить доступ к видеотеке устройства в приложении видеопроигрывателя с помощью Xamarin.Forms.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Доступ к видеотеке устройства"; описание: "Эта статья объясняет, как получить доступ к видеотеке устройства в приложении видеопроигрывателя с помощью Xamarin.Forms".
+ms.prod: xamarin ms.assetid: 364C1D43-EAAE-45B9-BE24-0DA5AE74C4D9 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12.02.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="accessing-the-devices-video-library"></a>Доступ к видеотеке устройства
@@ -65,7 +62,7 @@ namespace FormsVideoLibrary.iOS
             // Present UIImagePickerController;
             UIWindow window = UIApplication.SharedApplication.KeyWindow;
             var viewController = window.RootViewController;
-            viewController.PresentModalViewController(imagePicker, true);
+            viewController.PresentViewController(imagePicker, true, null);
 
             // Return Task object
             taskCompletionSource = new TaskCompletionSource<string>();

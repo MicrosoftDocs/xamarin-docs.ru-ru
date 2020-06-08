@@ -1,19 +1,9 @@
 ---
-title: 'Xamarin.Essentials: Тема приложения'
-description: В этой статье описывается API запрошенной темы приложения в Xamarin.Essentials, где предоставляются сведения о том, какой стиль темы запрашивается для работающего приложения.
-ms.assetid: F6F6D496-A8A9-4B9A-AF1A-370D937E5073
-author: jamesmontemagno
-ms.custom: video
-ms.author: jamont
-ms.date: 01/06/2020
-ms.openlocfilehash: 84c246eb60f4ee561bbf2bcfee6eb587ce601a4a
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83150152"
+название: "Xamarin.Essentials: Тема приложения"; описание: "В этой статье описывается API запрошенной темы приложения в Xamarin.Essentials, предоставляющий сведения о том, какой стиль темы запрашивается для работающего приложения".
+ms.assetid: F6F6D496-A8A9-4B9A-AF1A-370D937E5073 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 06.01.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="xamarinessentials-app-theme"></a>Xamarin.Essentials: Тема приложения
+
+# <a name="xamarinessentials-app-theme"></a>Xamarin.Essentials. Тема приложения
 
 API **RequestedTheme** входит в состав класса [`AppInfo`](app-information.md) и предоставляет сведения о том, какая тема запрашивается системой для работающего приложения.
 
@@ -23,7 +13,7 @@ API **RequestedTheme** входит в состав класса [`AppInfo`](app
 
 ## <a name="using-requestedtheme"></a>Использование RequestedTheme
 
-Добавьте в свой класс ссылку на Xamarin.Essentials:
+Добавьте ссылку на Xamarin.Essentials в своем классе:
 
 ```csharp
 using Xamarin.Essentials;
@@ -58,14 +48,14 @@ AppTheme appTheme = AppInfo.RequestedTheme;
 
 # <a name="ios"></a>[iOS](#tab/ios)
 
-Значение "Не указан" всегда будет возвращаться для iOS более поздних версий, чем 13.0. 
+Значение "Не указан" всегда будет возвращаться для iOS более поздних версий, чем 13.0.
 
 
 # <a name="uwp"></a>[UWP](#tab/uwp)
 
 Вызов `RequestedTheme` должен выполняться в потоке пользовательского интерфейса, иначе возникнет исключение.
 
-Приложения UWP будут учитывать значение в приложении UWP. XAML в разделе **RequestedTheme**. Если задана конкретная тема, Xamarin. Essentials всегда будет возвращать этот параметр. Чтобы использовать динамическую тему операционной системы, удалите этот узел из приложения, а затем при его запуске приложение вернет тему, заданную пользователем в параметрах Windows (**Параметры > Персонализация > Цвета > выберите режим приложения по умолчанию**).
+Приложения UWP будут учитывать значение в приложении UWP. XAML в разделе **RequestedTheme**. Если задана конкретная тема, Xamarin.Essentials всегда будет возвращать этот параметр. Чтобы использовать динамическую тему операционной системы, удалите этот узел из приложения, а затем при его запуске приложение вернет тему, заданную пользователем в параметрах Windows (**Параметры > Персонализация > Цвета > выберите режим приложения по умолчанию**).
 
 Дополнительные сведения по запрошенной теме UWP см. [здесь](https://docs.microsoft.com/uwp/api/windows.ui.xaml.application.requestedtheme).
 
