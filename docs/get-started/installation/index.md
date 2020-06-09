@@ -1,22 +1,6 @@
 ---
-title: ''
-description: ''
-zone_pivot_groups: ''
-ms.prod: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.custom: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 928a8f9ca1792fa79f3c5995959e6407c23649f4
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84133059"
+title: Описание для "Установки Xamarin": "В этом разделе приведен обзор рекомендаций по начальной установке и настройке Xamarin в Visual Studio."
+zone_pivot_groups: platform-dev16 ms.prod: xamarin ms.assetid: 0f813a14-2f0c-415d-8667-4563f3dc06e8 author: conceptdev ms.author: crdun ms.custom: video ms.date: 05/23/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 # <a name="installing-xamarin"></a>Установка Xamarin
 
