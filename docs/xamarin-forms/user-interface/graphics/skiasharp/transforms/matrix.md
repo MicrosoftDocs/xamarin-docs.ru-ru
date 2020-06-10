@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e8d11add988828fa4e26d3f6728dd0b4319b3630
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84133306"
+Title: "преобразования матрицы в SkiaSharp" Description: "Эта статья подробно глубже в SkiaSharp преобразований с помощью универсальной матрицы преобразования и демонстрирует это с помощью образца кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 9EDED6A0-F0BF-4471-A9EF-E0D6C5954AE4 Автор: давидбритч MS. author: дабритч MS. Дата: 04/12/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="matrix-transforms-in-skiasharp"></a>Преобразования матрицы в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

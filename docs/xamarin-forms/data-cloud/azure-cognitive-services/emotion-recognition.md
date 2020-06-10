@@ -1,22 +1,8 @@
 ---
-title: ''
-description: API распознавания лиц принимает выражение лица в изображении в качестве входных данных и возвращает данные, включающие уровни достоверности в наборе эмоции для каждого лица в изображении. В этой статье объясняется, как использовать API распознавания лиц для распознавания распознавания эмоций, чтобы оценить Xamarin.Forms приложение.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: ff384605b35f6406b628da99de500b550da811c9
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136062"
+Title: "обнаруженное распознавания эмоцийное распознавание с помощью API распознавания лиц" Description: "API распознавания лиц принимает выражение лица в изображении в качестве входных данных и возвращает данные, включающие уровни достоверности по набору эмоции для каждого лица в изображении. В этой статье объясняется, как использовать API распознавания лиц для распознавания распознавания эмоций, чтобы оценить Xamarin.Forms приложение. "
+MS. произв. Xamarin MS. AssetID: 19D36A7C-E8D8-43D1-BE80-48DE6C02879A MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="perceived-emotion-recognition-using-the-face-api"></a>Воспринимаемое распознавание распознавания эмоций с помощью API распознавания лиц
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
@@ -36,7 +22,7 @@ API распознавания лиц также можно использова
 
 Дополнительные сведения о API распознавания лиц см. в разделе [API распознавания лиц](/azure/cognitive-services/face/overview/).
 
-## <a name="authentication"></a>Аутентификация
+## <a name="authentication"></a>Проверка подлинности
 
 Для каждого запроса, выполненного в API распознавания лиц, требуется ключ API, который должен быть указан в качестве значения `Ocp-Apim-Subscription-Key` заголовка. В следующем примере кода показано, как добавить ключ API в `Ocp-Apim-Subscription-Key` заголовок запроса:
 
@@ -54,8 +40,8 @@ public FaceRecognitionService()
 
 Распознавание распознавания эмоций выполняется путем создания запроса POST, содержащего изображение, в `detect` API `https://[location].api.cognitive.microsoft.com/face/v1.0` , где `[location]]` — это регион, который вы использовали для получения ключа API. Необязательные параметры запроса:
 
-- `returnFaceId`— Указывает, следует ли возвращать Фацеидс обнаруженных сторон. Значение по умолчанию — `true`.
-- `returnFaceLandmarks`— Указывает, следует ли возвращать ориентиры обнаруженных лиц. Значение по умолчанию — `false`.
+- `returnFaceId`— Указывает, следует ли возвращать Фацеидс обнаруженных сторон. Значение по умолчанию — `true`.
+- `returnFaceLandmarks`— Указывает, следует ли возвращать ориентиры обнаруженных лиц. Значение по умолчанию — `false`.
 - `returnFaceAttributes`— следует ли анализировать и возвращать один или несколько указанных атрибутов лиц. Поддерживаются следующие атрибуты лиц: `age` , `gender` , `headPose` ,,,, `smile` `facialHair` `glasses` `emotion` , `hair` , `makeup` , `occlusion` ,,, `accessories` `blur` `exposure` и `noise` . Обратите внимание, что анализ атрибутов лица имеет дополнительные вычислительные и временные затраты.
 
 Содержимое изображения должно быть помещено в текст запроса POST в виде URL-адреса или двоичных данных.

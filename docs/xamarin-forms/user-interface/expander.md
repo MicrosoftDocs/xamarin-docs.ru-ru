@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsExpander
-description: Xamarin.FormsЭлемент управления Expander предоставляет расширяемый контейнер для размещения любого содержимого. Содержимое отображается или скрывается путем касания заголовка расширителя.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 5e9afa0f6d27003891963af5715d5721e3129306
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84129588"
+Title: " Xamarin.Forms расширитель" Description: " Xamarin.Forms элемент управления Expander предоставляет расширяемый контейнер для размещения любого содержимого. Содержимое отображается или скрывается путем касания заголовка расширителя.
+MS. произв. Xamarin MS. AssetID: 381DCB55-522D-4414-B45B-E8DD70AA9985 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/15/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-expander"></a>Xamarin.FormsExpander
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
@@ -376,5 +362,5 @@ void OnLabelTapped(object sender, EventArgs e)
 
 - [Демо-расширители (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
 - [Xamarin.FormsФункции плавности](~/xamarin-forms/user-interface/animation/easing.md)
-- [Xamarin.FormsПлан](~/xamarin-forms/app-fundamentals/triggers.md)
+- [Триггеры Xamarin.Forms](~/xamarin-forms/app-fundamentals/triggers.md)
 - [Xamarin.FormsМакеты с возможностью привязки](~/xamarin-forms/user-interface/layouts/bindable-layouts.md)

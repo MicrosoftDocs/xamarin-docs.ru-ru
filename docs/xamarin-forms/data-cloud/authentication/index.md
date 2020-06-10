@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsПроверка подлинности веб-службы
-description: В этом руководство объясняется, как интегрировать службы проверки подлинности в Xamarin.Forms приложение, чтобы предоставить пользователям общий доступ к серверной части, только имея доступ к собственным данным.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 59130739617f38ce32e0d241f8e068cf077997ac
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136088"
+Title: " Xamarin.Forms Описание проверки подлинности веб-служб" Description: "в этом руководство объясняется, как интегрировать службы проверки подлинности в Xamarin.Forms приложение, чтобы предоставить пользователям общий доступ к серверной части, только имея доступ к собственным данным".
+MS. произв. Xamarin MS. AssetID: E6FCFAE1-4F83-4F93-9190-EC5290360C54 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/27/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-web-service-authentication"></a>Xamarin.FormsПроверка подлинности веб-службы
 
 ## <a name="authenticate-a-restful-web-service"></a>[Проверка подлинности веб-службы RESTFUL](rest.md)

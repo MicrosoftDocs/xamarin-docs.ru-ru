@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsMediaElement
-description: В этой статье объясняется, как использовать MediaElement для воспроизведения видео и аудио в Xamarin.Forms приложении.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 1dfa51177bba3ebf1e3e29208cc926c77567a048
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84134242"
+Title: " Xamarin.Forms MediaElement" Description: "в этой статье объясняется, как использовать MediaElement для воспроизведения видео и аудио в Xamarin.Forms приложении".
+MS. произв. Xamarin MS. AssetID: e65f1e56-a80d-46c7-9ff4-7ae6650a3165 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/18/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-mediaelement"></a>Xamarin.FormsMediaElement
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
@@ -542,7 +528,7 @@ public class PositionSlider : Slider
 
 - [Медиаелементдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
 - [Схемы URI](/windows/uwp/app-resources/uri-schemes)
-- [Xamarin.FormsПлан](~/xamarin-forms/app-fundamentals/triggers.md)
+- [Триггеры Xamarin.Forms](~/xamarin-forms/app-fundamentals/triggers.md)
 - [Xamarin.FormsГруппу](~/xamarin-forms/user-interface/slider.md)
 - [Android: Поддерживаемые форматы мультимедиа](https://developer.android.com/guide/topics/media/media-formats)
 - [UWP: Поддерживаемые кодеки](/windows/uwp/audio-video-camera/supported-codecs)

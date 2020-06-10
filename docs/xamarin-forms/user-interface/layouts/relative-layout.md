@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsRelativeLayout
-description: В этой статье объясняется, как использовать Xamarin.Forms класс RelativeLayout для создания пользовательских интерфейсов, которые масштабируются в соответствии с размером экрана.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: f250b109f759bcf6bb7fa4ac0573743ac12c4bc1
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127196"
+Title: « Xamarin.Forms RelativeLayout» Description:» в этой статье объясняется, как использовать Xamarin.Forms класс RelativeLayout для создания пользовательских интерфейсов, которые масштабируются в соответствии с размером экрана.
+MS. произв. Xamarin MS. AssetID: 2530BCB8-01B8-4C4F-BF14-CA53659F1B5A MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 11/25/2015 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-relativelayout"></a>Xamarin.FormsRelativeLayout
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
@@ -43,7 +29,7 @@ ms.locfileid: "84127196"
 - **Константа** &ndash; значение, используемое в качестве смещения значения.
 - **ElementName** &ndash; имя представления, относительно которого задается ограничение.
 
-В XAML ограничения выражаются как `ConstraintExpression` s. Рассмотрим следующий пример:
+В XAML ограничения выражаются как `ConstraintExpression` s. Рассмотрим следующий пример.
 
 ```xaml
 <BoxView Color="Green" WidthRequest="50" HeightRequest="50"

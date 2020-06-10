@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как добавить в приложения функциональные возможности, относящиеся к Android Xamarin.Forms .
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 3045db1248aa16529d4e43b9a8afc97377cfd9cb
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84128973"
+Title: "функции платформы Android" Описание: "в этой статье объясняется, как добавить в приложения функции для Android Xamarin.Forms ."
+MS. произв. Xamarin MS. AssetID: E24168F3-0138-4814-86EA-B467F6B8A545 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/11/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="android-platform-features"></a>Возможности на платформе Android
 
 Xamarin.FormsДля разработки приложений для Android требуется Visual Studio. На [странице Поддерживаемые платформы](~/get-started/supported-platforms.md) содержатся дополнительные сведения о предварительных требованиях.

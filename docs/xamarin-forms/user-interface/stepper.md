@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsРежима
-description: Это средство Xamarin.Forms позволяет пользователю выбрать числовое значение из диапазона значений. Он состоит из двух кнопок с знаками "минус" и "плюс". При манипуляции с двумя кнопками выбранное значение изменяется постепенно.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 4f071530fb17de44d8ede786ca1b42f5e11f4f7c
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84130550"
+Title: "Пошаговое руководство Xamarin.Forms " Описание: "это средство Xamarin.Forms позволяет пользователю выбрать числовое значение из диапазона значений. Он состоит из двух кнопок с знаками "минус" и "плюс". При манипуляции с двумя кнопками выбранное значение изменяется постепенно. "
+MS. произв. Xamarin MS. AssetID: 62571B3E-D84B-4F52-9FC7-C105D6733B16 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/17/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-stepper"></a>Xamarin.FormsРежима
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stepperdemos)

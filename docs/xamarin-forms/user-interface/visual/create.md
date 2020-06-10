@@ -1,22 +1,8 @@
 ---
-title: Создание Xamarin.Forms визуального модуля подготовки отчетов
-description: Создавайте Xamarin.Forms визуальные элементы для выборочного применения к объектам висуалелемент, не создавая подкласс для Xamarin.Forms представлений.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 23edbb007e912d13858686d1c5ec574c9e3349c7
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127145"
+Title: "Создание Xamarin.Forms визуального модуля подготовки отчетов" Описание: "Создание Xamarin.Forms визуальных элементов для выборочного применения к объектам висуалелемент без необходимости создания подклассов для Xamarin.Forms представлений".
+MS. произв. Xamarin MS. AssetID: 80BF9C72-AC28-4AAF-9DDD-B60CBDD1CD59 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/12/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="create-a-xamarinforms-visual-renderer"></a>Создание Xamarin.Forms визуального модуля подготовки отчетов
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
@@ -176,5 +162,5 @@ button.Visual = new CustomVisual();
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Визуальный элемент "материал" (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
-- [Xamarin.FormsВизуальный элемент "материалы"](material-visual.md)
+- [Визуальный элемент материала Xamarin.Forms](material-visual.md)
 - [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)

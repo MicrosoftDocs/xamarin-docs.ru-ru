@@ -1,9 +1,6 @@
 ---
-Title: ' Анимация в Xamarin.Forms ' Description: ' Xamarin.Forms включает собственную инфраструктуру анимации, которая проста для создания простых анимаций, а также достаточно гибкой для создания сложных анимаций. '
-MS. произв. MS. AssetID: MS. Technology: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+Title: "анимация в Xamarin.Forms " Description: " Xamarin.Forms включает собственную инфраструктуру анимации, которая проста для создания простых анимаций, а также достаточно гибкой для создания сложных анимаций".
+MS. произв. Xamarin MS. AssetID: AC0B4127-ECA3-44DA-8A24-A2B10A275083 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 07/14/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
 
 # <a name="animation-in-xamarinforms"></a>Анимация вXamarin.Forms

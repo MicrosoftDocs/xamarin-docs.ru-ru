@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 10192e93d2e20f9aa58ca95dd81c07f560193905
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136413"
+Title: "SkiaSharp маски фильтра" Description: "Узнайте, как использовать фильтр маски для создания размытия и других альфа-эффектов".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 940422A1-8BC0-4039-8AD7-26C61320F858 Автор: давидбритч MS. author: дабритч MS. Дата: 08/27/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="skiasharp-mask-filters"></a>Фильтры маски SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

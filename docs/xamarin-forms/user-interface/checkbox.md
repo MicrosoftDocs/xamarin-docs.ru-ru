@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsУстановка
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8399dde2e4e2c9fb53b38fca2923eb0e3bfc6ce3
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136478"
+Title: " Xamarin.Forms флажок" Description: " Xamarin.Forms CheckBox — это тип кнопки, которая может быть либо установлена, либо пустой. Если флажок установлен, он считается включенным. Если флажок пуст, он считается отключенным.
+MS. произв. Xamarin MS. AssetID: B8B9268B-BCB8-42B9-B08C-C0F22C137238 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/11/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-checkbox"></a>Xamarin.FormsУстановка
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-checkboxdemos/)
@@ -161,10 +147,10 @@ checkBox.CheckedChanged += (sender, e) =>
 
 В этом примере параметр `IsChecked` [`VisualState`](xref:Xamarin.Forms.VisualState) указывает, что если `CheckBox` флажок установлен, его `Color` свойство будет иметь значение Green. `Normal` `VisualState` Указывает, что когда `CheckBox` находится в нормальном состоянии, его `Color` свойство будет установлено в значение Red. Таким образом, общий результат заключается в том, что `CheckBox` красный, когда он пуст, и зеленый при проверке.
 
-Дополнительные сведения о визуальных состояниях см. в разделе [ Xamarin.Forms Диспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md).
+Дополнительные сведения о визуальных состояниях см. в статье [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Демонстрации CheckBox (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-checkboxdemos/)
-- [Xamarin.FormsПлан](~/xamarin-forms/app-fundamentals/triggers.md)
-- [Xamarin.FormsДиспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md)
+- [Триггеры Xamarin.Forms](~/xamarin-forms/app-fundamentals/triggers.md)
+- [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

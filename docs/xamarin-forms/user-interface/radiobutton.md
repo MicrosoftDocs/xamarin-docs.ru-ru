@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsRadioButton
-description: Xamarin.FormsRadioButton — это тип кнопки, который позволяет пользователям выбрать один вариант из набора. Каждый параметр представлен одним переключателем, и вы можете выбрать только один переключатель в группе.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: f7cbd11f98127cb73514112dae785102ff9c51c0
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127630"
+Title: « Xamarin.Forms RadioButton» Description: « Xamarin.Forms RadioButton — это тип кнопки, позволяющий пользователям выбрать один вариант из набора. Каждый параметр представлен одним переключателем, и в группе можно выбрать только один переключатель. "
+MS. произв. Xamarin MS. AssetID: E2AA40E0-69A5-41DF-BFC4-C151CA657451 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/13/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-radiobutton"></a>Xamarin.FormsRadioButton
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-radiobuttondemos/)
@@ -203,7 +189,7 @@ radioButton.CheckedChanged += (sender, e) =>
 
 ![Снимок экрана: набор элементов RadioButton, установленный визуальным состоянием, в iOS и Android](radiobutton-images/ischecked-visualstate.png "Визуальные состояния RadioButton в iOS и Android")
 
-Дополнительные сведения о визуальных состояниях см. в разделе [ Xamarin.Forms Диспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md).
+Дополнительные сведения о визуальных состояниях см. в статье [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md).
 
 ## <a name="disable-a-radiobutton"></a>Отключение RadioButton
 
@@ -212,5 +198,5 @@ radioButton.CheckedChanged += (sender, e) =>
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Демонстрации RadioButton (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-radiobuttondemos/)
-- [Xamarin.FormsПереключатель](~/xamarin-forms/user-interface/button.md)
-- [Xamarin.FormsДиспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md)
+- [Кнопка Xamarin.Forms](~/xamarin-forms/user-interface/button.md)
+- [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

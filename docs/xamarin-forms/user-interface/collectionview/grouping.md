@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsГруппирование CollectionView
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 51661d6573d78386f4ca8bfea0063b752295c2d8
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136465"
+Title: " Xamarin.Forms CollectionView GROUPING" Description: "CollectionView может отображать правильно сгруппированные данные, присвоив свойству" IsTrue "значение true."
+MS. произв. Xamarin MS. AssetID: 7E494245-FDBD-49D6-B7FA-CEF976EB59BB MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/17/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-collectionview-grouping"></a>Xamarin.FormsГруппирование CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
@@ -35,7 +21,7 @@ ms.locfileid: "84136465"
 
 [![Снимок экрана сгруппированных данных в CollectionView на iOS и Android](grouping-images/grouped-data.png "CollectionView с сгруппированными данными")](grouping-images/grouped-data-large.png#lightbox "CollectionView с сгруппированными данными")
 
-Дополнительные сведения о шаблонах данных см. в разделе [ Xamarin.Forms шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md).
+Дополнительные сведения о шаблонах данных см. в разделе [Общие сведения о шаблонах данныхXamarin.Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md).
 
 ## <a name="group-data"></a>Данные группы
 

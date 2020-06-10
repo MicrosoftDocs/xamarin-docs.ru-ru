@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 182256fd572a370a7b322898b1e24ade12e971fd
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127383"
+Title: "использование данных времени разработки с предварительным просмотром XAML" Description: "в этой статье объясняется, как использовать данные времени разработки для отображения макетов с большим объемом данных в средстве предварительного просмотра XAML без запуска приложения".
+MS. произв. Xamarin MS. AssetID: 0F608019-5951-4BE6-80E0-9EEE1733D642 MS. Technology: Xamarin-Forms author: maddyleger1 MS. author: малежер МС. Дата: 03/27/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="use-design-time-data-with-the-xaml-previewer"></a>Использование данных времени разработки с предварительным просмотром XAML
 
 _Некоторые макеты трудно визуализировать без данных. Используйте эти советы, чтобы максимально эффективно использовать предварительный просмотр страниц, интенсивно использующих данные, в средстве предварительного просмотра XAML._
@@ -138,7 +124,7 @@ xmlns:models="clr-namespace:Monkeys.Models"
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-### <a name="requirements"></a>Требования
+### <a name="requirements"></a>Requirements (Требования)
 
 Для данных времени разработки требуется минимальная версия Xamarin.Forms 3,6.
 

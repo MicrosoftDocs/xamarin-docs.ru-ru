@@ -1,23 +1,9 @@
 ---
-title: Xamarin.FormsВизуальный элемент "материалы"
-description: Xamarin.FormsВизуальный элемент "материалы" можно использовать для создания Xamarin.Forms приложений, которые выглядят примерно одинаково в iOS и Android.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: bba7d77d8cf565b1b2db2c1324e171389c5d0280
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127185"
+Title: " Xamarin.Forms Описание визуального элемента" материалы ". Xamarin.Forms визуальный элемент" материалы "можно использовать для создания Xamarin.Forms приложений, которые выглядят примерно одинаково в iOS и Android."
+MS. произв. Xamarin MS. AssetID: B774F68C-EF9E-49E1-B738-CDC64879ADA2 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 11/25/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
-# <a name="xamarinforms-material-visual"></a>Xamarin.FormsВизуальный элемент "материалы"
+
+# <a name="xamarinforms-material-visual"></a>Визуальный элемент материала Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
 

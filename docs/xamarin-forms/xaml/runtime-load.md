@@ -1,29 +1,15 @@
 ---
-title: Загрузка XAML во время выполнения вXamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d750aa84a48ad4c8015a619d819134cefc63c3d9
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139377"
+Title: "Загрузка XAML во время выполнения в Xamarin.Forms " Description: "XAML можно загрузить и проанализировать во время выполнения с помощью методов расширения лоадфромксамл".
+MS. произв. Xamarin MS. AssetID: 25F73FBF-2DD3-468E-A2D8-0897414F0F4A MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/12/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="loading-xaml-at-runtime-in-xamarinforms"></a>Загрузка XAML во время выполнения вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-loadruntimexaml)
 
 [`Xamarin.Forms.Xaml`](xref:Xamarin.Forms.Xaml)Пространство имен содержит два [`LoadFromXaml`](xref:Xamarin.Forms.Xaml.Extensions.LoadFromXaml*) метода расширения, которые можно использовать для загрузки и синтаксического анализа XAML во время выполнения.
 
-## <a name="background"></a>История
+## <a name="background"></a>Историческая справка
 
 При Xamarin.Forms создании класса XAML [`LoadFromXaml`](xref:Xamarin.Forms.Xaml.Extensions.LoadFromXaml*) метод вызывается неявно. Это происходит потому, что файл кода программной части для класса XAML вызывает `InitializeComponent` метод из своего конструктора:
 

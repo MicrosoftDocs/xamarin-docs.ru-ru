@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d8bd539c2bb0e8963afae3392b6f8e99d79af9af
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136973"
+Title: «Висуалелемент First ответчик в iOS» Description: "особенности платформы позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая позволяет объекту Висуалелемент стать первым отвечающим на события касания.
+MS. произв. Xamarin MS. AssetID: 3A77BA02-B87A-44EC-AC51-9D3130EF314C MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/15/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="visualelement-first-responder-on-ios"></a>Первый ответчик Висуалелемент в iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

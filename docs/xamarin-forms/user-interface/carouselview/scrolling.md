@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsПрокрутка Карауселвиев
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 462948905f40679e2b931d4aa0039308c64a0a8f
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136504"
+Title: " Xamarin.Forms карауселвиев прокрутка" Description: "когда пользователь прокручивается для инициации прокрутки, конечную точку прокрутки можно контролировать, чтобы элементы были полностью отображены. Кроме того, Карауселвиев определяет два метода Скроллто, которые программным путем прокрутки элементов в представление. "
+MS. произв. Xamarin MS. AssetID: 92D7B618-07FA-4343-9D0F-212525E92C39 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/28/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-carouselview-scrolling"></a>Xamarin.FormsПрокрутка Карауселвиев
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
@@ -27,7 +13,7 @@ ms.locfileid: "84136504"
 
 - `HorizontalScrollBarVisibility`Тип `ScrollBarVisibility` , который указывает, когда отображается горизонтальная полоса прокрутки.
 - `IsDragging`Тип `bool` , который указывает, `CarouselView` прокручивается ли прокрутка. Это свойство доступно только для чтения, для которого значение по умолчанию — `false` .
-- `IsScrollAnimated`Тип `bool` , который указывает, будет ли выполняться анимация при прокрутке `CarouselView` . Значение по умолчанию — `true`.
+- `IsScrollAnimated`Тип `bool` , который указывает, будет ли выполняться анимация при прокрутке `CarouselView` . Значение по умолчанию — `true`.
 - `ItemsUpdatingScrollMode`Тип `ItemsUpdatingScrollMode` , который представляет поведение прокрутки `CarouselView` при добавлении новых элементов к нему.
 - `VerticalScrollBarVisibility`Тип `ScrollBarVisibility` , который указывает, когда отображается вертикальная полоса прокрутки.
 
@@ -135,7 +121,7 @@ carouselView.ScrollTo(monkey, position: ScrollToPosition.MakeVisible);
 > [!NOTE]
 > [`ScrollToPosition.MakeVisible`](xref:Xamarin.Forms.ScrollToPosition)Элемент используется по умолчанию, если `position` аргумент не указан при вызове `ScrollTo` метода.
 
-### <a name="start"></a>Начать
+### <a name="start"></a>Начало
 
 Элемент [`ScrollToPosition.Start`](xref:Xamarin.Forms.ScrollToPosition) указывает, что элемент должен быть прокручиваться до начала представления:
 
@@ -231,7 +217,7 @@ CarouselView carouselView = new CarouselView
 > [!IMPORTANT]
 > Значение [`SnapPointsAlignment`](xref:Xamarin.Forms.ItemsLayout.SnapPointsAlignment) свойства учитывается только в том случае, если [`SnapPointsType`](xref:Xamarin.Forms.ItemsLayout.SnapPointsType) свойство имеет значение `Mandatory` , или `MandatorySingle` .
 
-#### <a name="start"></a>Начать
+#### <a name="start"></a>Начало
 
 `SnapPointsAlignment.Start`Элемент указывает, что точки привязки выравниваться с ведущим ребром элементов. В следующем примере XAML показано, как задать этот элемент перечисления:
 

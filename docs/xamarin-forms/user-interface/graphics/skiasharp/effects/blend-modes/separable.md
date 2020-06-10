@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: c1939c30cbefdbf8d6546761a8c6ac7199bfff62
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139689"
+Title: "Описание отделяемых Blend Mode" Description: "использование режимов смешения отделяемых для изменения красного, зеленого и синего цветов".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 66D1A537-A247-484E-B5B9-FBCB7838FBE9 Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="the-separable-blend-modes"></a>Режимы смешения отделяемых
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -151,45 +137,20 @@ public partial class LightenAndDarkenPage : ContentPage
 В следующей таблице показаны все режимы смешения отделяемых с кратким объяснением того, что они делают. Во втором столбце показан исходный цвет, не создающий изменений:
 
 | Режим смешения   | Без изменения. | Операция |
-| ---
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------- | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------ | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------ | | `Plus`       | Черный | Досветлить, добавив цвета: SC + DC | | `Modulate`   | Белый | Затемнение путем умножения цветов: SC · Контроллер домена | | `Screen`     | Черный | Дополнение продукта к дополнением: SC + DC &ndash; SC · Контроллер домена | | `Overlay`    | Серый | Обратная часть `HardLight` | | `Darken`     | Белый | Минимальное число цветов: min (SC, DC) | | `Lighten`    | Черный | Максимум цветов: Max (SC, DC) | | `ColorDodge` | Черный | Назначение яркости на основе источника | | `ColorBurn`  | Белый | Затемнение места назначения на основе источника | | `HardLight`  | Серый | Аналогично результату Харша Spotlight | | `SoftLight`  | Серый | Похоже на воздействие мягкого внимания | | `Difference` | Черный | Вычитает темную оттенок от более светлого: ABS (DC &ndash; SC) | | `Exclusion`  | Черный | Аналогично, `Difference` но с меньшим контрастом | | `Multiply`   | Белый | Затемнение путем умножения цветов: SC · Контроллер домена |
+| ------------ | --------- | --------- |
+| `Plus`       | Черный     | Досветлить, добавив цвета: SC + DC |
+| `Modulate`   | White     | Затемнение путем умножения цветов: SC · Постоянный | 
+| `Screen`     | Черный     | Дополнение продукта к дополнением: SC + DC &ndash; SC · Постоянный |
+| `Overlay`    | Серый      | Обратная часть`HardLight` |
+| `Darken`     | White     | Минимальное число цветов: min (SC, DC) |
+| `Lighten`    | Черный     | Максимум цветов: Max (SC, DC) |
+| `ColorDodge` | Черный     | Назначение яркости на основе источника |
+| `ColorBurn`  | White     | Затемнение места назначения на основе источника | 
+| `HardLight`  | Серый      | Аналогично результату Харша Spotlight |
+| `SoftLight`  | Серый      | Аналогично последствием мягкого прожектора | 
+| `Difference` | Черный     | Вычитает темную оттенок от более светлого: ABS (DC &ndash; SC) | 
+| `Exclusion`  | Черный     | Аналогично, `Difference` но с меньшим контрастом |
+| `Multiply`   | White     | Затемнение путем умножения цветов: SC · Постоянный |
 
 Более подробные алгоритмы можно найти в спецификации W3C по [**компоновке и смешению 1**](https://www.w3.org/TR/compositing-1/) , а также в [**справочнике**](https://skia.org/user/api/SkBlendMode_Reference)по СКИА скблендмоде, хотя нотация в этих двух источниках не одинакова. Помните, что `Plus` обычно рассматривается как режим Портер-Дуфф Blend и `Modulate` не является частью спецификации W3C.
 

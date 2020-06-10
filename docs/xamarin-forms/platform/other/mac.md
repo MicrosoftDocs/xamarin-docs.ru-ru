@@ -1,26 +1,11 @@
 ---
-title: ''
-description: В этой статье объясняется, как добавить в проект проект Mac Xamarin.Forms , который будет создавать приложение, которое может выполняться на macOS Sierra и MacOS El Capitan.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-ms.custom: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 11897d2d3b8b7ba0a62956f1dbe4d8b873352e7a
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139559"
+Title: "Настройка платформы Mac" Описание: "в этой статье объясняется, как добавить в проект проект Mac Xamarin.Forms , который будет создавать приложение, которое может выполняться на macOS Sierra и MacOS El Capitan".
+MS. произв. Xamarin MS. AssetID: EEC549E0-F182-4F9C-B2BA-B31D19569AA5 MS. Technology: Xamarin-Forms MS. Custom: ксаму — автор видео: давидбритч MS. author: дабритч МС. Дата: 05/03/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="mac-platform-setup"></a>Настройка платформы Mac
 
-![Предварительный просмотр](~/media/shared/preview.png)
+![Preview (Предварительный просмотр)](~/media/shared/preview.png)
 
 Перед началом создайте (или используйте существующий) Xamarin.Forms проект. Добавлять можно только приложения Mac с помощью Visual Studio для Mac.
 
@@ -107,7 +92,7 @@ ms.locfileid: "84139559"
 
 11. Теперь проект Mac должен выполнять Xamarin.Forms код в macOS!
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
 
 ### <a name="styling"></a>Задание стиля
 

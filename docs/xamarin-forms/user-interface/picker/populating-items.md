@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8872c6748ba778a2622d82803d580c781bd282cd
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139637"
+Title: "Добавление данных в коллекцию элементов средства выбора" Описание: "представление выбора — это элемент управления для выбора текстового элемента из списка данных. В этой статье объясняется, как заполнить средство выбора данными, добавив их в коллекцию Items, и как реагировать на выбор элементов пользователем. "
+MS. произв. Xamarin MS. AssetID: 3C840F64-A430-457D-A4B2-3D7AF46F9DBE MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/26/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="adding-data-to-a-pickers-items-collection"></a>Добавление данных в коллекцию элементов средства выбора
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-pickerdemo)

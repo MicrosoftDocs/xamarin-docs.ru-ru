@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsПрокрутка CollectionView
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 04d190971fa5ef16e08091600558f7f016bc8605
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84134541"
+Title: " Xamarin.Forms CollectionView прокрутка" Description: "когда пользователь прокручивается для инициации прокрутки, конечную точку прокрутки можно контролировать, чтобы элементы были полностью отображены. Кроме того, CollectionView определяет два метода Скроллто, которые программным путем прокрутки элементов в представление. "
+MS. произв. Xamarin MS. AssetID: 2ED719AF-33D2-434D-949A-B70B479C9BA5 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/17/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-collectionview-scrolling"></a>Xamarin.FormsПрокрутка CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
@@ -137,7 +123,7 @@ collectionView.ScrollTo(monkey, position: ScrollToPosition.MakeVisible);
 > [!NOTE]
 > [`ScrollToPosition.MakeVisible`](xref:Xamarin.Forms.ScrollToPosition)Элемент используется по умолчанию, если `position` аргумент не указан при вызове `ScrollTo` метода.
 
-### <a name="start"></a>Начать
+### <a name="start"></a>Начало
 
 Элемент [`ScrollToPosition.Start`](xref:Xamarin.Forms.ScrollToPosition) указывает, что элемент должен быть прокручиваться до начала представления:
 
@@ -237,7 +223,7 @@ CollectionView collectionView = new CollectionView
 > [!IMPORTANT]
 > Значение [`SnapPointsAlignment`](xref:Xamarin.Forms.ItemsLayout.SnapPointsAlignment) свойства учитывается только в том случае, если [`SnapPointsType`](xref:Xamarin.Forms.ItemsLayout.SnapPointsType) свойство имеет значение `Mandatory` , или `MandatorySingle` .
 
-#### <a name="start"></a>Начать
+#### <a name="start"></a>Начало
 
 `SnapPointsAlignment.Start`Элемент указывает, что точки привязки выравниваться с ведущим ребром элементов.
 

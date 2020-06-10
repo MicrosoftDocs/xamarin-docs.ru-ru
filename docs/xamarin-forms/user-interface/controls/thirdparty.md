@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsСторонние элементы управления
-description: Дополнительные элементы управления для Xamarin.Forms разработки доступны в таких компаниях, как Telerik, SyncFusion, подписка DevExpress, Infragistics, ComponentOne и Steema.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e0881296664ec20eeefe02c9db57a2fd76cd999b
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84132422"
+Title: " Xamarin.Forms Описание элементов управления сторонних разработчиков" Description: "дополнительные элементы управления для Xamarin.Forms разработки доступны в таких компаниях, как Telerik, SyncFusion, подписка DevExpress, Infragistics, ComponentOne и Steema".
+MS. произв. Xamarin MS. AssetID: C33A4848-3FC8-4A20-8275-387039F541AD MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/08/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-third-party-controls"></a>Xamarin.FormsСторонние элементы управления
 
 Помимо элементов управления, поставляемых с Xamarin.Forms , сторонние элементы управления доступны в следующих компаниях:

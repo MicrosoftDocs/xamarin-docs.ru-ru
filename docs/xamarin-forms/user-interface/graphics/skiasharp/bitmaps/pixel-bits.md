@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 9018cbe6e41350b22a0f1f91858017531c75a0ac
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84135585"
+Title: "доступ к битам точечного рисунка SkiaSharp" Описание ":" Узнайте о различных методах доступа и изменения пиксельных битов SkiaSharp точечных рисунков ".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: DBB58522-F816-4A8C-96A5-E0236F16A5C6 Автор: давидбритч MS. author: дабритч MS. Дата: 07/11/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="accessing-skiasharp-bitmap-pixel-bits"></a>Доступ к битовым точкам точечного рисунка SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -490,30 +476,15 @@ public class GradientBitmapPage : ContentPage
 Ниже приведена таблица, которая объединяет время выполнения в миллисекундах:
 
 | API       | Тип данных | iOS  | Android | UWP  |
-| ---
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------ | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------ | ----:|---Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: No-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
-----:| ----:| | SetPixel |           | 3,17 |   10,77 | 3,49 | | Пикселей |           | 0,32 |    1,23 | 0,07 | | В точках | Byte | 0,09 |    0,24 | 0,10 | |           | uint | 0,06 |    0,26 | 0,05 | |           | Скколор | 0,29 |    0,99 | 0,07 | | Сетпикселс | Byte | 1,33 |    6,78 | 0,11 | |           | uint | 0,14 |    0,69 | 0,06 | |           | Скколор | 0,35 |    1,93 | 0,10 |
+| --------- | --------- | ----:| -------:| ----:|
+| SetPixel  |           | 3,17 |   10,77 | 3.49 |
+| Перекрытых    |           | 0,32 |    1,23 | 0,07 |
+| В точках | byte      | 0,09 |    0.24 | 0,10 |
+|           | uint      | 0,06 |    0,26 | 0,05 |
+|           | скколор   | 0,29 |    0.99 | 0,07 |
+| сетпикселс | byte      | 1.33 |    6,78 | 0,11 |
+|           | uint      | 0.14 |    0,69 | 0,06 |
+|           | скколор   | 0,35 |    1,93 | 0,10 |
 
 Как и ожидалось, вызов `SetPixel` 65 536 раз является наименьшим еффеиЦиент способом установки пикселей точечного рисунка. Заполнение `SKColor` массива и задание `Pixels` свойства гораздо лучше, и даже сравнение с некоторыми `GetPixels` `SetPixels` методами и. Работа с `uint` значениями пикселей обычно выполняется быстрее, чем установка отдельных `byte` компонентов, а преобразование `SKColor` значения в целое число без знака увеличивает нагрузку на процесс.
 

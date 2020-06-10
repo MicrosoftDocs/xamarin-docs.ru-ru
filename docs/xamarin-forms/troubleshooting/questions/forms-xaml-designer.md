@@ -1,9 +1,6 @@
 ---
-Title: ' почему конструктор XAML Visual Studio не работает для Xamarin.Forms файлов XAML? '
-MS. Topic: MS. произ: MS. AssetID: MS. Technology: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+Title: "почему конструктор XAML Visual Studio не работает для Xamarin.Forms файлов XAML?"
+MS. Topic: Устранение неполадок MS. произв. Xamarin MS. AssetID: cab2eefb-c52f-4d81-866e-8f1feabbdd64 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
 
 # <a name="why-doesnt-the-visual-studio-xaml-designer-work-for-xamarinforms-xaml-files"></a>Почему конструктор XAML Visual Studio не работает с Xamarin.Forms файлами XAML?

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: f3a5a581ffb4ca2acf1d4209b8b7a744f0daa5eb
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84128060"
+Title: "эффекты пути в SkiaSharp" Описание: "в этой статье объясняются различные эффекты SkiaSharp Path, позволяющие использовать пути для обводки и заполнения, и демонстрирует это с помощью образца кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 95167D1F-A718-405A-AFCC-90E596D422F3 Автор: давидбритч MS. author: дабритч MS. Дата: 07/29/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="path-effects-in-skiasharp"></a>Эффекты пути в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -273,7 +259,7 @@ canvas.DrawPath(newPath, newPaint);
 
 [`SKPathEffect.Create1DPath`](xref:SkiaSharp.SKPathEffect.Create1DPath(SkiaSharp.SKPath,System.Single,System.Single,SkiaSharp.SKPath1DPathEffectStyle))Метод концептуально похож на `SKPathEffect.CreateDash` , за исключением того, что вы указываете путь, а не шаблон штрихов и пропусков. Этот путь реплицируется несколько раз для обводки линии или кривой.
 
-Синтаксис:
+Синтаксис выглядит следующим образом.
 
 ```csharp
 public static SKPathEffect Create1DPath (SKPath path, Single advance,

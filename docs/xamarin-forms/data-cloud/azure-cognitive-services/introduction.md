@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsОбщие сведения об Azure Cognitive Services
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 7c2a63c40d1006c7d83c9dde871e17d4b194bdca
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84129718"
+Title: " Xamarin.Forms и Azure Cognitive Services введение" Описание: "в этой статье приводятся общие сведения о примере приложения, в котором демонстрируется вызов некоторых API-интерфейсов Microsoft для работы со службой Windows".
+MS. произв. Xamarin MS. AssetID: 74121ADB-1322-4C1E-A103-F37257BC7CB0 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/08/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-and-azure-cognitive-services-introduction"></a>Xamarin.FormsОбщие сведения об Azure Cognitive Services
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)

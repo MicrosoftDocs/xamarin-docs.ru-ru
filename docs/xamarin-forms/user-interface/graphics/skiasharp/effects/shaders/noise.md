@@ -1,27 +1,13 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 45ec48c0b7b58e26fa47d7343e96bb49591cb339
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127768"
+Title: "SkiaSharp шум и составление" Description: "Создайте шейдеры шума Perl и объедините с другими шейдерами".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 90C2D00A-2876-43EA-A836-538C3318CF93 Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="skiasharp-noise-and-composing"></a>SkiaSharp шум и составление
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-Простая векторная графика, как правило, выглядит неестественным. Прямые линии, гладкие кривые и сплошные цвета не похожи на реальные объекты. Работая с созданными компьютером графическими изображениями для 1982 Movie _трон_, компьютер анализу Алексей Perl начал разрабатывать алгоритмы, использующие случайные процессы для предоставления этих изображений более реалистичным текстурам. В 1997 Алексей Perl выиграл Academy награду за технические достижения. Его работа известна как шум Perl и поддерживается в SkiaSharp. Приведем пример:
+Простая векторная графика, как правило, выглядит неестественным. Прямые линии, гладкие кривые и сплошные цвета не похожи на реальные объекты. Работая с созданными компьютером графическими изображениями для 1982 Movie _трон_, компьютер анализу Алексей Perl начал разрабатывать алгоритмы, использующие случайные процессы для предоставления этих изображений более реалистичным текстурам. В 1997 Алексей Perl выиграл Academy награду за технические достижения. Его работа известна как шум Perl и поддерживается в SkiaSharp. Ниже приведен пример:
 
 ![Пример шума на Perl](noise-images/NoiseSample.png "Пример шума на Perl")
 

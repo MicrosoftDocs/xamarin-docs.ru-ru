@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 52be7641ac3b2983f537e11bccd76f2a5b52574d
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84130186"
+Title: «отделяемых Blend Mode» Description:» для изменения оттенка, насыщенности или яркости используйте режимы наложения «не отделяемых».
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 97FA2730-87C0-4914-8C9F-C64A02CF9EEF Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="the-non-separable-blend-modes"></a>Режимы смешения не отделяемых
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -46,125 +32,11 @@ ms.locfileid: "84130186"
 Как и в других режимах наложения, четыре режима отделяемых Blend используют назначение (которое часто является растровым изображением) и источник, который часто является одним цветом или градиентом. Режимы наложения объединяют значения тона, насыщенности и яркости из назначения и источника:
 
 | Режим смешения   | Компоненты из источника | Компоненты из места назначения |
-| ---
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------- | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------------ | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--------------- | | `Hue`        | Оттенок | Насыщенность и яркость | | `Saturation` | Насыщенность | Оттенок и яркость | | `Color`      | Оттенок и насыщенность | Яркость | | `Luminosity` | Яркость | Оттенок и насыщенность | 
+| ------------ | ---------------------- | --------------------------- |
+| `Hue`        | Оттенок                    | Насыщенность и яркость   |
+| `Saturation` | Насыщенность             | Оттенок и яркость          |
+| `Color`      | Цветовой тон и насыщенность     | Яркости                  | 
+| `Luminosity` | Яркости             | Цветовой тон и насыщенность          | 
 
 См. спецификацию [**КОМПОНОВКИ W3C и уровень смешения 1**](https://www.w3.org/TR/compositing-1/) для алгоритмов.
 
@@ -325,11 +197,11 @@ public partial class NonSeparableBlendModesPage : ContentPage
 
 ## <a name="a-matte-for-a-separable-mode"></a>Матовая для режима отделяемых
 
-Ниже приведено одно из точечных рисунков, входящих в состав примера [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — «неменяющий **». jpg**:
+Ниже приведено одно из точечных рисунков, входящих в состав примера [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **Banana.jpg**:
 
 ![Обезьяна в полукруглой](non-separable-images/Banana.jpg "Обезьяна в полукруглой")
 
-Можно создать матовый, охватывающий только «полукруглый». Это также является ресурсом в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **бананаматте. png**:
+Можно создать матовый, охватывающий только «полукруглый». Это также является ресурсом в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **BananaMatte.png**:
 
 ![Полукруглая матовая](non-separable-images/BananaMatte.png "Полукруглая матовая")
 
@@ -337,7 +209,7 @@ public partial class NonSeparableBlendModesPage : ContentPage
 
 Синяя страница « **синевато-сталь** » использует эту подложку, чтобы изменить цветовой тон и насыщенность, которую удерживает обезьяна, но чтобы ничего не менять в изображении. 
 
-В следующем `BlueBananaPage` классе точечный рисунок « **полукругл. jpg** » загружается как поле. Конструктор загружает точечный рисунок **бананаматте. png** в качестве `matteBitmap` объекта, но не оставляет этот объект за пределами конструктора. Вместо этого создается третье точечное изображение с именем `blueBananaBitmap` . Объект `matteBitmap` отображается на, `blueBananaBitmap` за которым следует объект `SKPaint` со `Color` значением синего цвета и `BlendMode` значением `SKBlendMode.SrcIn` . Объект `blueBananaBitmap` остается в основном прозрачным, но с чисто чистым синим изображением «стального»:
+В следующем `BlueBananaPage` классе **Banana.jpg** точечный рисунок загружается как поле. Конструктор загружает точечный рисунок **BananaMatte.png** в качестве `matteBitmap` объекта, но не оставляет этот объект за пределами конструктора. Вместо этого создается третье точечное изображение с именем `blueBananaBitmap` . Объект `matteBitmap` отображается на, `blueBananaBitmap` за которым следует объект `SKPaint` со `Color` значением синего цвета и `BlendMode` значением `SKBlendMode.SrcIn` . Объект `blueBananaBitmap` остается в основном прозрачным, но с чисто чистым синим изображением «стального»:
 
 ```csharp
 public class BlueBananaPage : ContentPage

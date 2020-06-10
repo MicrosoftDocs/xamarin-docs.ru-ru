@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8478db85bd9904ee6c5cfeab9b2af390e7d3096d
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139507"
+Title: "описание конкретной платформы": "особенности платформы" позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать и создавать зависящие от платформы.
+MS. произв. Xamarin MS. AssetID: 4729DB9C-8800-4E29-9D66-3BE13C5F8C94 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/01/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="platform-specifics"></a>Особенности платформы
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
@@ -196,7 +182,7 @@ namespace MyCompany.Forms.PlatformConfiguration.iOS
 
 #### <a name="creating-the-effect"></a>Создание результата
 
-`Shadow`Зависящая от платформы добавляет в `MyCompany.LabelShadowEffect` [`Label`](xref:Xamarin.Forms.Label) и удаляет ее. В следующем примере кода показана реализация класса `LabelShadowEffect` для проекта на платформе iOS.
+`Shadow`Зависящая от платформы добавляет в `MyCompany.LabelShadowEffect` [`Label`](xref:Xamarin.Forms.Label) и удаляет ее. В следующем примере кода показана реализация класса `LabelShadowEffect` для проекта на платформе iOS:
 
 ```csharp
 [assembly: ResolutionGroupName("MyCompany")]
@@ -286,5 +272,5 @@ shadowLabel.On<iOS>().SetIsShadowed(true);
 - [Особенности платформы Android](~/xamarin-forms/platform/android/index.md)
 - [Особенности платформы Windows](~/xamarin-forms/platform/windows/index.md)
 - [Настройка элементов управления с помощью эффектов](~/xamarin-forms/app-fundamentals/effects/index.md)
-- [Присоединенные свойства](~/xamarin-forms/xaml/attached-properties.md)
+- [Вложенные свойства](~/xamarin-forms/xaml/attached-properties.md)
 - [API Платформконфигуратион](xref:Xamarin.Forms.PlatformConfiguration)

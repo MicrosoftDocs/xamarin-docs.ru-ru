@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье рассматриваются различия между координатами и Xamarin.Forms координатами SkiaSharp и демонстрируется пример кода.
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 6d01018f4393ac5562220fa1f9524bc0d9872c67
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137674"
+Title: "Описание пикселей и аппаратно-независимых единиц" Description: "в этой статье рассматриваются различия между координатами и Xamarin.Forms координатами SkiaSharp и демонстрируется пример кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 26C25BB8-FBE8-4B77-B01D-16A163A16890 Автор: давидбритч MS. author: дабритч MS. Дата: 02/09/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="pixels-and-device-independent-units"></a>Пиксели и аппаратно-независимые единицы
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

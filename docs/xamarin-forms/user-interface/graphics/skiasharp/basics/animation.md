@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как анимировать графику SkiaSharp в Xamarin.Forms приложениях и демонстрируется пример кода.
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 9a59f65655772768860ce29128f14a48641abc26
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84134281"
+Title: "базовая анимация в SkiaSharp" Описание: "в этой статье объясняется, как анимировать графику SkiaSharp в Xamarin.Forms приложениях и демонстрируется пример кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 31C96FD6-07E4-4473-A551-24753A5118C3 Автор: давидбритч MS. author: дабритч MS. Дата: 03/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="basic-animation-in-skiasharp"></a>Базовая анимация в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

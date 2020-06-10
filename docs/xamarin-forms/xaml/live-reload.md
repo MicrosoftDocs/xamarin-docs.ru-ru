@@ -1,23 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-robots: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: b67594e2675c774512f3bf64f2e91ef10dbff444
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84134216"
+Title: "Xamarin динамическая перезагрузка (Предварительная версия)" Description: "сведения об изменениях в коде XAML отражены в реальном времени, не требуя других компиляций и развертываний".
+MS. произв. Xamarin MS. AssetID: 4917273d-32f9-401A-A52C-5cfb53a2170d MS. Technology: Xamarin-Forms author: пиерцебогган MS. author: пибогган robots: не индекс MS. Date: 10/26/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarin-live-reload-preview"></a>Динамическая перезагрузка Xamarin (Предварительная версия)
 
 > [!NOTE]
@@ -28,7 +13,7 @@ ms.locfileid: "84134216"
 
 Перезагрузка Xamarin Live позволяет **вносить изменения в код XAML и видеть их в реальном времени, не требуя других компиляций и развертываний**. Любые изменения, внесенные в XAML, будут повторно развернуты при сохранении и отражены в целевом объекте развертывания.
 
-## <a name="requirements"></a>Требования
+## <a name="requirements"></a>Requirements (Требования)
 
 * [Visual Studio 2017 версии 15,7 или более поздней](https://visualstudio.microsoft.com/vs/) с рабочей нагрузкой **для разработки мобильных приложений на .NET** .
 * [ Xamarin.Forms 3.0.0 или выше](https://www.nuget.org/packages/Xamarin.Forms/).
@@ -52,7 +37,7 @@ ms.locfileid: "84134216"
 
 2. Добавьте пакет NuGet **Xamarin. LiveReload** :
 
-    a. **.NET Standard** — установите NuGet **Xamarin. LiveReload** в библиотеку .NET Standard 2,0. Это не обязательно должно быть установлено в проектах платформы. Убедитесь, что для **источника пакета** задано значение **все**.
+    а. **.NET Standard** — установите NuGet **Xamarin. LiveReload** в библиотеку .NET Standard 2,0. Это не обязательно должно быть установлено в проектах платформы. Убедитесь, что для **источника пакета** задано значение **все**.
     
     b. **Общие проекты** — установите **Xamarin. LiveReload** NuGet во все проекты платформы (например, Android, iOS, UWP и т. д.). Убедитесь, что для **источника пакета** задано значение **все**.
 
@@ -84,7 +69,7 @@ public partial class App : Application
 
 Динамическая перезагрузка работает с изменениями в любом файле XAML. Для вступления в силу изменений в C# или добавления или удаления пакетов NuGet требуется новая сборка и развертывание.
 
-## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы 
+## <a name="frequently-asked-questions"></a>Вопросы и ответы 
 ### <a name="is-xamarin-live-reload-available-on-visual-studio-for-mac"></a>Доступна ли перезагрузка Xamarin Live на Visual Studio для Mac? 
 
 Нет, предварительная версия окончательной перезагрузки Xamarin доступна только для Visual Studio 2017.

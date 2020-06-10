@@ -1,9 +1,6 @@
 ---
-Title: " Xamarin.Forms Инициализация и конфигурация Map" Description: " Xamarin.Forms . Для использования функций карт в приложении требуется сопоставить пакет NuGet. Кроме того, для доступа к расположению пользователя требуются разрешения на расположение, предоставленные приложению.
-MS. произв. MS. AssetID: MS. Technology: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+Title: " Xamarin.Forms описание инициализации и конфигурации карт": " Xamarin.Forms . Для использования функций карт в приложении требуется сопоставить пакет NuGet. Кроме того, для доступа к расположению пользователя требуются разрешения на размещение, предоставленные приложению.
+MS. произв. Xamarin MS. AssetID: 59CD1344-8248-406C-9144-0C8A67141E5B MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/07/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
 
 # <a name="xamarinforms-map-initialization-and-configuration"></a>Xamarin.FormsИнициализация и Настройка карт
@@ -87,13 +84,13 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 1. используемых Укажите разрешения расположения в манифесте.
 1. используемых Запросите разрешения расположения среды выполнения в `MainActivity` классе.
 
-Пример правильно настроенного файла манифеста см. в разделе [AndroidManifest. XML](https://github.com/xamarin/xamarin-forms-samples/blob/master/WorkingWithMaps/WorkingWithMaps/WorkingWithMaps.Android/Properties/AndroidManifest.xml) из примера приложения.
+Пример правильно настроенного файла манифеста см. в разделе [AndroidManifest.xml](https://github.com/xamarin/xamarin-forms-samples/blob/master/WorkingWithMaps/WorkingWithMaps/WorkingWithMaps.Android/Properties/AndroidManifest.xml) из примера приложения.
 
 #### <a name="get-a-google-maps-api-key"></a>Получение ключа API Google Maps
 
 Чтобы использовать [API Google Maps](https://developers.google.com/maps/documentation/android/) в Android, необходимо создать ключ API. Для этого следуйте инструкциям в статье [Получение ключа API Google Maps](~/android/platform/maps-and-location/maps/obtaining-a-google-maps-api-key.md).
 
-После получения ключа API его необходимо добавить в `<application>` элемент файла **Properties/AndroidManifest. XML** :
+После получения ключа API его необходимо добавить в `<application>` элемент файла **свойств или AndroidManifest.xml** :
 
 ```xml
 <application ...>
@@ -110,7 +107,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 #### <a name="specify-the-google-play-services-version-number"></a>Укажите номер версии служб Google Play Services
 
-Добавьте следующее объявление в `<application>` элемент **AndroidManifest. XML**:
+Добавьте следующее объявление в `<application>` элемент **AndroidManifest.xml**:
 
 ```xml
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
@@ -120,7 +117,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 #### <a name="specify-the-requirement-for-the-apache-http-legacy-library"></a>Укажите требование для устаревшей библиотеки Apache HTTP
 
-Если Xamarin.Forms приложение предназначено для API 28 или более поздней версии, необходимо добавить следующее объявление в `<application>` элемент **AndroidManifest. XML**:
+Если Xamarin.Forms приложение предназначено для API 28 или выше, необходимо добавить следующее объявление в `<application>` элемент **AndroidManifest.xml**:
 
 ```xml
 <uses-library android:name="org.apache.http.legacy" android:required="false" />    

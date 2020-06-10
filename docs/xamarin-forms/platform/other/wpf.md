@@ -1,26 +1,10 @@
 ---
-title: ''
-description: Xamarin.Formsтеперь имеет поддержку предварительной версии для платформы WPF
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-ms.custom: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: bbb9ea950c9f1daa1b5ee4762527d689f3cdd483
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139533"
+Title: "программа установки платформы WPF" Description: " Xamarin.Forms теперь имеет поддержку предварительной версии для платформы WPF" MS. произв: Xamarin MS. AssetID: 650723F2-4279-4B7B-B0A1-D7F8FF26BF1E MS. Technology: Xamarin-Forms MS. Custom: ксаму-видео author: давидбритч MS. author: дабритч MS. Date: 04/09/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="wpf-platform-setup"></a>Установка платформы WPF
 
-![Предварительный просмотр](~/media/shared/preview.png)
+![Preview (Предварительный просмотр)](~/media/shared/preview.png)
 
 Xamarin.Formsтеперь имеет поддержку предварительной версии для Windows Presentation Foundation (WPF). В этой статье показано, как добавить проект WPF в Xamarin.Forms решение.
 

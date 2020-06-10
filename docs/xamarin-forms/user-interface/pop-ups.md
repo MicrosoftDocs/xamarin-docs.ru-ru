@@ -1,22 +1,8 @@
 ---
-title: ''
-description: 'Xamarin.Formsв предусмотрено три всплывающих элемента пользовательского интерфейса: предупреждение, лист действий и запрос. В этой статье демонстрируется использование API предупреждений, листов действий и интерфейсов командной строки для вывода диалоговых окон, предлагающих пользователям простые вопросы, помогающие пользователям выполнять задачи и выводить запросы.'
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: a7ddd9134b7214b84a883e171d7b0cadaba3390b
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136322"
+Title: "Отображение всплывающих окон" Описание: " Xamarin.Forms предоставляет три всплывающих элемента пользовательского интерфейса — оповещение, лист действий и запрос. В этой статье показано использование API предупреждений, листов действий и интерфейсов командной строки для вывода диалоговых окон, предлагающих пользователям простые вопросы, пошаговые инструкции пользователей по задачам и отображение запросов.
+MS. произв. Xamarin MS. AssetID: 46AB0D5E-0025-4A8A-9D00-3E66C3D0BA2E MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/10/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="display-pop-ups"></a>Отображать всплывающие окна
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-pop-ups)
