@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a83e3ae4069657df06967b7157809c7dc86ad941
-ms.sourcegitcommit: 99aa05bd9b5e3f66d134066b860f41b54fa2d850
+ms.openlocfilehash: 58ed33adbc25e026431609370075c24c3b6ba690
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82109630"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84574651"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -20,7 +20,7 @@ ms.locfileid: "82109630"
 
     Этот код задает свойство [`Aspect`](xref:Xamarin.Forms.Image.Aspect), которое определяет режим масштабирования изображения, для [`Fill`](xref:Xamarin.Forms.Aspect.Fill). Элемент `Fill` определен в перечислении [`Aspect`](xref:Xamarin.Forms.Aspect) и растягивает изображение, чтобы полностью заполнить вид, независимо от того, является ли изображение искажено. Дополнительные сведения о масштабировании изображения см. в разделе [Displaying images](~/xamarin-forms/user-interface/images.md#display-images) (Отображение изображений) в руководстве [Images in Xamarin.Forms](~/xamarin-forms/user-interface/images.md) (Изображения в Xamarin.Forms).
 
-    Расширение разметки `OnPlatform` позволяет настраивать внешний вид пользовательского интерфейса для каждой платформы. В этом примере расширение разметки используется для установки свойств [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) и [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) равным 300 независимым от устройства единицам на iOS и 250 независимым от устройства единицам на Android. Дополнительные сведения о расширении разметки `OnPlatform` см. в разделе [Расширение разметки OnPlatform](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform) в руководстве [Использование расширений разметки XAML](~/xamarin-forms/xaml/markup-extensions/consuming.md).
+    Расширение разметки `OnPlatform` позволяет настраивать внешний вид пользовательского интерфейса для каждой платформы. В этом примере расширение разметки используется для установки свойств [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) и [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) равным 300 независимым от устройства единицам на iOS и 250 независимым от устройства единицам на Android. Дополнительные сведения о расширении разметки `OnPlatform` см. в разделе [Расширение разметки OnPlatform](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform-markup-extension) в руководстве [Использование расширений разметки XAML](~/xamarin-forms/xaml/markup-extensions/consuming.md).
 
     Кроме того, свойство [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) указывает, что изображение будет отцентрировано по горизонтали.
 
@@ -42,7 +42,7 @@ ms.locfileid: "82109630"
 
     Этот код задает свойство [`Aspect`](xref:Xamarin.Forms.Image.Aspect), которое определяет режим масштабирования изображения, для [`Fill`](xref:Xamarin.Forms.Aspect.Fill). Элемент `Fill` определен в перечислении [`Aspect`](xref:Xamarin.Forms.Aspect) и растягивает изображение, чтобы полностью заполнить вид, независимо от того, является ли изображение искажено. Дополнительные сведения о масштабировании изображения см. в разделе [Displaying images](~/xamarin-forms/user-interface/images.md#display-images) (Отображение изображений) в руководстве [Images in Xamarin.Forms](~/xamarin-forms/user-interface/images.md) (Изображения в Xamarin.Forms).
 
-    Расширение разметки `OnPlatform` позволяет настраивать внешний вид пользовательского интерфейса для каждой платформы. В этом примере расширение разметки используется для установки свойств [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) и [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) равными 300 в iOS и 250 в Android. Дополнительные сведения о расширении разметки `OnPlatform` см. в разделе [Расширение разметки OnPlatform](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform) в руководстве [Использование расширений разметки XAML](~/xamarin-forms/xaml/markup-extensions/consuming.md).
+    Расширение разметки `OnPlatform` позволяет настраивать внешний вид пользовательского интерфейса для каждой платформы. В этом примере расширение разметки используется для установки свойств [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) и [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) равными 300 в iOS и 250 в Android. Дополнительные сведения о расширении разметки `OnPlatform` см. в разделе [Расширение разметки OnPlatform](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform-markup-extension) в руководстве [Использование расширений разметки XAML](~/xamarin-forms/xaml/markup-extensions/consuming.md).
 
     Кроме того, свойство [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) указывает, что изображение будет отцентрировано по горизонтали.
 
