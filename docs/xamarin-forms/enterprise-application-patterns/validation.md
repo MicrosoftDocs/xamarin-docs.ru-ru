@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 4a9af91e2d48ba7ef7fdcdb4f8472e0aaafb7854
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138714"
+Title: "Проверка в корпоративных приложениях" Описание: "в этой главе объясняется, как мобильное приложение eShopOnContainers выполняет проверку вводимых пользователем данных. Это включает в себя указание правил проверки, запуск проверки и отображение ошибок проверки. "
+MS. произв. Xamarin MS. AssetID: 56e4f0fc-48d9-4033-91ec-173bb46a5e4d MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/07/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="validation-in-enterprise-apps"></a>Проверка в корпоративных приложениях
 
 Любое приложение, принимающее входные данные от пользователей, должно обеспечить допустимость входных данных. Приложение может, например, проверять наличие входных данных, содержащих только символы в определенном диапазоне, имеет определенную длину или соответствует определенному формату. Без проверки пользователь может предоставить данные, которые приведут к сбою приложения. Проверка применяет бизнес-правила и предотвращает внедрение вредоносных данных злоумышленником.
@@ -209,9 +195,7 @@ public bool Validate()
 
 [`Entry`](xref:Xamarin.Forms.Entry)Элемент управления привязывается к `UserName.Value` свойству `ValidatableObject<T>` экземпляра, а в коллекции элемента управления `Behaviors` `EventToCommandBehavior` добавляется экземпляр. Это поведение выполняет `ValidateUserNameCommand` в ответ на `TextChanged` событие [] `Entry` , возникающее на элементе, который создается при `Entry` изменении текста. В свою очередь, `ValidateUserNameCommand` делегат выполняет `ValidateUserName` метод, который выполняет `Validate` метод в `ValidatableObject<T>` экземпляре. Таким образом, каждый раз, когда пользователь вводит символ в `Entry` элементе управления для имени пользователя, выполняется проверка введенных данных.
 
-Дополнительные сведения о поведении см. в разделе [Реализация поведения](~/xamarin-forms/enterprise-application-patterns/mvvm.md#implementing_behaviors).
-
-<a name="displaying_validation_errors" />
+Дополнительные сведения о поведении см. в разделе [Реализация поведения](~/xamarin-forms/enterprise-application-patterns/mvvm.md#implementing-behaviors).
 
 ## <a name="displaying-validation-errors"></a>Отображение ошибок проверки
 
@@ -286,7 +270,7 @@ public static class LineColorBehavior
 }
 ```
 
-Параметры этого метода предоставляют экземпляр элемента управления, к которому присоединено поведение, а также старое и новое значения `ApplyLineColor` присоединенного свойства. `EntryLineColorEffect`Класс добавляется в коллекцию элемента управления [`Effects`](xref:Xamarin.Forms.Element.Effects) , если `ApplyLineColor` вложенное свойство имеет значение `true` , в противном случае оно удаляется из `Effects` коллекции элемента управления. Дополнительные сведения о поведении см. в разделе [Реализация поведения](~/xamarin-forms/enterprise-application-patterns/mvvm.md#implementing_behaviors).
+Параметры этого метода предоставляют экземпляр элемента управления, к которому присоединено поведение, а также старое и новое значения `ApplyLineColor` присоединенного свойства. `EntryLineColorEffect`Класс добавляется в коллекцию элемента управления [`Effects`](xref:Xamarin.Forms.Element.Effects) , если `ApplyLineColor` вложенное свойство имеет значение `true` , в противном случае оно удаляется из `Effects` коллекции элемента управления. Дополнительные сведения о поведении см. в разделе [Реализация поведения](~/xamarin-forms/enterprise-application-patterns/mvvm.md#implementing-behaviors).
 
 `EntryLineColorEffect`Подклассы [`RoutingEffect`](xref:Xamarin.Forms.RoutingEffect) класса и показаны в следующем примере кода:
 

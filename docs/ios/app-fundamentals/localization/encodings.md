@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 04/28/2017
-ms.openlocfilehash: 2d204aeac18fc08bf6eb2221b6f64ecbbded8121
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 78c048d793fd792576e2482491ebf11460d5b511
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73009995"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571809"
 ---
 # <a name="internationalization-encodings-in-xamarinios"></a>Кодировки интернационализации в Xamarin. iOS
 
@@ -35,7 +35,7 @@ ms.locfileid: "73009995"
 - Западная часть: языки латинского алфавита, Пасха и Западная Европа
 - все
 
- <a name="cjk" />
+ <a name="cjk"></a>
 
 ## <a name="cjk"></a>ККЯ
 
@@ -46,7 +46,7 @@ ms.locfileid: "73009995"
 - CP950
 - CP54936
 
- <a name="mideast" />
+ <a name="mideast"></a>
 
 ## <a name="mideast"></a>Ближний Восток
 
@@ -58,11 +58,11 @@ ms.locfileid: "73009995"
 - CP28599
 - CP38598
 
- <a name="other" />
+ <a name="other"></a>
 
-## <a name="other"></a>другие
+## <a name="other"></a>др.
 
-- CP1251 определяет КОДОВУЮ
+- CP1251
 - CP1257
 - CP1258
 - CP20866
@@ -72,7 +72,7 @@ ms.locfileid: "73009995"
 - CP57002
 - CP874
 
- <a name="rare" />
+ <a name="rare"></a>
 
 ## <a name="rare"></a>маловероятны
 
@@ -114,9 +114,9 @@ ms.locfileid: "73009995"
 - CP870
 - CP875
 
- <a name="west" />
+ <a name="west"></a>
 
-## <a name="west"></a>левого
+## <a name="west"></a>запад
 
 - CP10000
 - CP10079
@@ -128,7 +128,7 @@ ms.locfileid: "73009995"
 - CP28597
 - CP28605
 - CP437
-- CP850 определяет КОДОВУЮ
+- CP850
 - CP860
 - CP861
 - CP863

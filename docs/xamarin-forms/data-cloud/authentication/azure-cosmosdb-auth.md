@@ -1,22 +1,8 @@
 ---
-title: Проверка подлинности пользователей с помощью Azure Cosmos DB базы данных документов иXamarin.Forms
-description: В этой статье объясняется, как объединить контроль доступа с Azure Cosmos DB секционированными коллекциями, чтобы пользователь мог получить доступ к собственным документам в Xamarin.Forms приложении.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: b0322db5ebcc70347bf35157e3dc7c057e58cf18
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136101"
+Title: "Проверка подлинности пользователей с помощью Azure Cosmos DB базы данных документов и Xamarin.Forms " Описание: "в этой статье объясняется, как объединить контроль доступа с Azure Cosmos DB секционированными коллекциями, чтобы пользователь мог получить доступ к собственным документам в Xamarin.Forms приложении".
+MS. произв. Xamarin MS. AssetID: 11ED4A4C-0F05-40B2-AB06-5A0F2188EF3D MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/16/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="authenticate-users-with-an-azure-cosmos-db-document-database-and-xamarinforms"></a>Проверка подлинности пользователей с помощью Azure Cosmos DB базы данных документов иXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdbauth)
@@ -55,16 +41,14 @@ _Базы данных документов Azure Cosmos DB поддержива
 
 Процесс интеграции брокера маркеров ресурсов в Xamarin.Forms приложение выглядит следующим образом:
 
-1. Создайте учетную запись Cosmos DB, которая будет использовать управление доступом. Дополнительные сведения см. в разделе [Cosmos DB Configuration](#cosmosdb_configuration).
-1. Создайте службу приложений Azure для размещения брокера маркера ресурса. Дополнительные сведения см. в статье [Конфигурация службы приложений Azure](#app_service_configuration).
-1. Создайте приложение Facebook для выполнения проверки подлинности. Дополнительные сведения см. в разделе [Конфигурация приложения Facebook](#facebook_configuration).
-1. Настройка службы приложений Azure для выполнения простой проверки подлинности с помощью Facebook. Дополнительные сведения см. в статье [Настройка проверки подлинности в службе приложений Azure](#app_service_authentication_configuration).
-1. Настройте Xamarin.Forms пример приложения для взаимодействия со службой приложений Azure и Cosmos DB. Дополнительные сведения см. в разделе [ Xamarin.Forms Конфигурация приложения](#forms_application_configuration).
+1. Создайте учетную запись Cosmos DB, которая будет использовать управление доступом. Дополнительные сведения см. в разделе [Azure Cosmos DB Configuration](#azure-cosmos-db-configuration).
+1. Создайте службу приложений Azure для размещения брокера маркера ресурса. Дополнительные сведения см. в статье [Конфигурация службы приложений Azure](#azure-app-service-configuration).
+1. Создайте приложение Facebook для выполнения проверки подлинности. Дополнительные сведения см. в разделе [Конфигурация приложения Facebook](#facebook-app-configuration).
+1. Настройка службы приложений Azure для выполнения простой проверки подлинности с помощью Facebook. Дополнительные сведения см. в статье [Настройка проверки подлинности в службе приложений Azure](#azure-app-service-authentication-configuration).
+1. Настройте Xamarin.Forms пример приложения для взаимодействия со службой приложений Azure и Cosmos DB. Дополнительные сведения см. в разделе [ Xamarin.Forms Конфигурация приложения](#xamarinforms-application-configuration).
 
 > [!NOTE]
 > Если у вас еще нет [подписки Azure](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), создайте [бесплатную учетную запись Azure](https://aka.ms/azfree-docs-mobileapps), прежде чем начать работу.
-
-<a name="cosmosdb_configuration" />
 
 ### <a name="azure-cosmos-db-configuration"></a>Конфигурация Azure Cosmos DB
 
@@ -72,8 +56,6 @@ _Базы данных документов Azure Cosmos DB поддержива
 
 1. Создайте учетную запись Cosmos DB. Дополнительные сведения см. [в разделе Создание учетной записи Azure Cosmos DB](/azure/cosmos-db/sql-api-dotnetcore-get-started#step-1-create-an-azure-cosmos-db-account).
 1. В учетной записи Cosmos DB создайте новую коллекцию с именем `UserItems` , указав ключ раздела `/userid` .
-
-<a name="app_service_configuration" />
 
 ### <a name="azure-app-service-configuration"></a>Конфигурация службы приложений Azure
 
@@ -93,8 +75,6 @@ _Базы данных документов Azure Cosmos DB поддержива
 
 1. Опубликуйте решение брокера маркеров ресурсов в веб-приложении службы приложений Azure.
 
-<a name="facebook_configuration" />
-
 ### <a name="facebook-app-configuration"></a>Конфигурация приложения Facebook
 
 Процесс создания приложения Facebook для выполнения проверки подлинности выглядит следующим образом:
@@ -112,8 +92,6 @@ _Базы данных документов Azure Cosmos DB поддержива
 
 Дополнительные сведения см. в статье [Регистрация приложения в Facebook](/azure/app-service-mobile/app-service-mobile-how-to-configure-facebook-authentication#a-nameregister-aregister-your-application-with-facebook).
 
-<a name="app_service_authentication_configuration" />
-
 ### <a name="azure-app-service-authentication-configuration"></a>Настройка проверки подлинности в службе приложений Azure
 
 Процесс настройки простой проверки подлинности службы приложений выглядит следующим образом:
@@ -128,8 +106,6 @@ _Базы данных документов Azure Cosmos DB поддержива
     [![](azure-cosmosdb-auth-images/app-service-authentication-settings.png "App Service Web App Authentication Settings")](azure-cosmosdb-auth-images/app-service-authentication-settings-large.png#lightbox "App Service Web App Authentication Settings")
 
 Веб-приложение службы приложений также должно быть настроено для взаимодействия с приложением Facebook, чтобы включить поток проверки подлинности. Это можно сделать, выбрав поставщик удостоверений Facebook и введя значения **идентификатора приложения** и **секрета приложения** из параметров приложения Facebook в центре разработчиков Facebook. Дополнительные сведения см. [в разделе Добавление сведений Facebook в приложение](/azure/app-service-mobile/app-service-mobile-how-to-configure-facebook-authentication#a-namesecrets-aadd-facebook-information-to-your-application).
-
-<a name="forms_application_configuration" />
 
 ### <a name="xamarinforms-application-configuration"></a>Xamarin.FormsКонфигурация приложения
 
@@ -237,7 +213,7 @@ while (query.HasMoreResults)
 > [!NOTE]
 > Обратите внимание, что документы разрешений, создаваемые брокером маркера ресурса, хранятся в той же коллекции документов, что и документы, созданные Xamarin.Forms приложением. Поэтому запрос документа содержит `Where` предложение, которое применяет предикат фильтрации к запросу к коллекции документов. Это предложение гарантирует, что документы разрешений не возвращаются из коллекции документов.
 
-Дополнительные сведения о получении документов из коллекции документов см. в разделе [Получение документов коллекции документов](~/xamarin-forms/data-cloud/azure-services/azure-cosmosdb.md#document_query).
+Дополнительные сведения о получении документов из коллекции документов см. в разделе [Получение документов коллекции документов](~/xamarin-forms/data-cloud/azure-services/azure-cosmosdb.md#retrieving-document-collection-documents).
 
 ## <a name="inserting-documents"></a>Вставка документов
 
@@ -250,7 +226,7 @@ await client.CreateDocumentAsync(collectionLink, item);
 
 Это гарантирует, что документ будет вставлен в секционированную коллекцию пользователя.
 
-Дополнительные сведения о вставке документа в коллекцию документов см. в разделе [Вставка документа в коллекцию документов](~/xamarin-forms/data-cloud/azure-services/azure-cosmosdb.md#inserting_document).
+Дополнительные сведения о вставке документа в коллекцию документов см. в разделе [Вставка документа в коллекцию документов](~/xamarin-forms/data-cloud/azure-services/azure-cosmosdb.md#inserting-a-document-into-a-document-collection).
 
 ## <a name="deleting-documents"></a>Удаление документов
 
@@ -266,7 +242,7 @@ await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(Constants.Database
 
 Это гарантирует, что Cosmos DB будет знать, из какой секционированной коллекции следует удалить документ.
 
-Дополнительные сведения об удалении документа из коллекции документов см. в разделе [Удаление документа из коллекции документов](~/xamarin-forms/data-cloud/azure-services/azure-cosmosdb.md#deleting_document).
+Дополнительные сведения об удалении документа из коллекции документов см. в разделе [Удаление документа из коллекции документов](~/xamarin-forms/data-cloud/azure-services/azure-cosmosdb.md#deleting-a-document-from-a-document-collection).
 
 ## <a name="summary"></a>Сводка
 
