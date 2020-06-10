@@ -19,8 +19,6 @@ _Макеты Xamarin.Forms используются для создания э�
 
 Эти классы являются производными от класса [`Layout`](xref:Xamarin.Forms.Layout) , который определяет [`Padding`](xref:Xamarin.Forms.Layout.Padding) [`IsClippedToBounds`](xref:Xamarin.Forms.Layout.IsClippedToBounds) Свойства и.
 
-<a name="contentView" />
-
 ### <a name="contentview"></a>ContentView
 
 |     |     |
@@ -28,29 +26,25 @@ _Макеты Xamarin.Forms используются для создания э�
 | [`ContentView`](xref:Xamarin.Forms.ContentView)содержит один дочерний элемент, заданный [`Content`](xref:Xamarin.Forms.ContentView.Content) свойством. `Content` Свойство может устанавливаться к любому `View` производных продуктов, включая другие `Layout` производные от него. `ContentView`в основном используется в качестве структурного элемента и служит базовым классом для [`Frame`](#frame) .<br /><br />[Документация по API](xref:Xamarin.Forms.ContentView)  /  [Руководством](~/xamarin-forms/user-interface/layouts/contentview.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/) | [![Пример ContentView](layouts-images/ContentView.png "Пример ContentView")](layouts-images/ContentView-Large.png#lightbox "Пример ContentView")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ContentViewDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ContentViewDemoPage.xaml) |
 |     |     |
 
-<a named="frame" />
-
 ### <a name="frame"></a>Frame
 
 |     |     |
 | --- | --- |
-| [`Frame`](xref:Xamarin.Forms.Frame)Класс является производным от [`ContentView`](#contentView) и отображает границу (рамку) вокруг ее дочернего элемента. `Frame`Класс имеет значение по умолчанию [`Padding`](xref:Xamarin.Forms.Layout.Padding) 20, а также [`BorderColor`](xref:Xamarin.Forms.Frame.BorderColor) [`CornerRadius`](xref:Xamarin.Forms.Frame.CornerRadius) свойства, и [`HasShadow`](xref:Xamarin.Forms.Frame.HasShadow) .<br /><br />[Документация по API](xref:Xamarin.Forms.Frame)  /  [Руководством](~/xamarin-forms/user-interface/layouts/frame.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-frame/) | [![Пример кадра](layouts-images/Frame.png "Пример кадра")](layouts-images/Frame-Large.png#lightbox "Пример кадра")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/FrameDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/FrameDemoPage.xaml) |
+| [`Frame`](xref:Xamarin.Forms.Frame)Класс является производным от [`ContentView`](#contentview) и отображает границу (рамку) вокруг ее дочернего элемента. `Frame`Класс имеет значение по умолчанию [`Padding`](xref:Xamarin.Forms.Layout.Padding) 20, а также [`BorderColor`](xref:Xamarin.Forms.Frame.BorderColor) [`CornerRadius`](xref:Xamarin.Forms.Frame.CornerRadius) свойства, и [`HasShadow`](xref:Xamarin.Forms.Frame.HasShadow) .<br /><br />[Документация по API](xref:Xamarin.Forms.Frame)  /  [Руководством](~/xamarin-forms/user-interface/layouts/frame.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-frame/) | [![Пример кадра](layouts-images/Frame.png "Пример кадра")](layouts-images/Frame-Large.png#lightbox "Пример кадра")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/FrameDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/FrameDemoPage.xaml) |
 |     |     |
-
-<a name="scrollView" />
 
 ### <a name="scrollview"></a>ScrollView
 
 |     |     |
 | --- | --- |
-| [`ScrollView`](xref:Xamarin.Forms.ScrollView)может выполнять прокрутку содержимого. Задайте [`Content`](xref:Xamarin.Forms.ScrollView.Content) для свойства представление или макет, размер которого не умещается на экране. (Содержимое объекта `ScrollView` очень часто представляет собой [`StackLayout`](#stackLayout) .) Задайте [`Orientation`](xref:Xamarin.Forms.ScrollView.Orientation) свойство, чтобы указать, должна ли прокрутка быть вертикальной, горизонтальной или обеих.<br /><br />[Документация по API](xref:Xamarin.Forms.ScrollView)  /  [Руководством](~/xamarin-forms/user-interface/layouts/scrollview.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout) | [![Пример Скроллвиев](layouts-images/ScrollView.png "Пример Скроллвиев")](layouts-images/ScrollView-Large.png#lightbox "Пример Скроллвиев")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ScrollViewDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ScrollViewDemoPage.xaml) |
+| [`ScrollView`](xref:Xamarin.Forms.ScrollView)может выполнять прокрутку содержимого. Задайте [`Content`](xref:Xamarin.Forms.ScrollView.Content) для свойства представление или макет, размер которого не умещается на экране. (Содержимое объекта `ScrollView` очень часто представляет собой [`StackLayout`](#stacklayout) .) Задайте [`Orientation`](xref:Xamarin.Forms.ScrollView.Orientation) свойство, чтобы указать, должна ли прокрутка быть вертикальной, горизонтальной или обеих.<br /><br />[Документация по API](xref:Xamarin.Forms.ScrollView)  /  [Руководством](~/xamarin-forms/user-interface/layouts/scrollview.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout) | [![Пример Скроллвиев](layouts-images/ScrollView.png "Пример Скроллвиев")](layouts-images/ScrollView-Large.png#lightbox "Пример Скроллвиев")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ScrollViewDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ScrollViewDemoPage.xaml) |
 |     |     |
 
 ### <a name="templatedview"></a>TemplatedView
 
 |     |     |
 | --- | --- |
-| [`TemplatedView`](xref:Xamarin.Forms.TemplatedView)Отображает содержимое с помощью шаблона элемента управления, а является базовым классом для [`ContentView`](#contentView) .<br /><br />[Документация по API](xref:Xamarin.Forms.TemplatedView)  /  [Руководством](~/xamarin-forms/app-fundamentals/templates/control-template.md) | [![Пример Темплатедвиев](layouts-images/TemplatedView.png "Пример Темплатедвиев")](layouts-images/TemplatedView.png#lightbox "Пример Темплатедвиев") |
+| [`TemplatedView`](xref:Xamarin.Forms.TemplatedView)Отображает содержимое с помощью шаблона элемента управления, а является базовым классом для [`ContentView`](#contentview) .<br /><br />[Документация по API](xref:Xamarin.Forms.TemplatedView)  /  [Руководством](~/xamarin-forms/app-fundamentals/templates/control-template.md) | [![Пример Темплатедвиев](layouts-images/TemplatedView.png "Пример Темплатедвиев")](layouts-images/TemplatedView.png#lightbox "Пример Темплатедвиев") |
 |     |     |
 
 ### <a name="contentpresenter"></a>ContentPresenter
@@ -64,16 +58,12 @@ _Макеты Xamarin.Forms используются для создания э�
 
 Эти классы являются производными от [`Layout<View>`](xref:Xamarin.Forms.Layout`1) .
 
-<a name="stackLayout" />
-
 ### <a name="stacklayout"></a>StackLayout
 
 |     |     |
 | --- | --- |
 | [`StackLayout`](xref:Xamarin.Forms.StackLayout)размещает дочерние элементы в стеке по горизонтали или вертикали в зависимости от [`Orientation`](xref:Xamarin.Forms.StackLayout.Orientation) Свойства. [`Spacing`](xref:Xamarin.Forms.StackLayout.Spacing)Свойство регулирует интервал между дочерними элементами и имеет значение по умолчанию 6.<br /><br />[Документация по API](xref:Xamarin.Forms.StackLayout)  /  [Руководством](~/xamarin-forms/user-interface/layouts/stacklayout.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)| [![Пример StackLayout](layouts-images/StackLayout.png "Пример StackLayout")](layouts-images/StackLayout-Large.png#lightbox "Пример StackLayout")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/StackLayoutDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/StackLayoutDemoPage.xaml) |
 |     |     |
-
-<a name="grid" />
 
 ### <a name="grid"></a>Grid
 
@@ -106,5 +96,5 @@ _Макеты Xamarin.Forms используются для создания э�
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Xamarin.FormsПример Формсгаллери](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
-- [Xamarin.FormsРегистрируют](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
+- [Примеры для Xamarin.Forms](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
 - [Xamarin.FormsДокументация по API](https://docs.microsoft.com/dotnet/api/xamarin.forms?view=xamarin-forms)

@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsЗаголовка
-description: В этой статье объясняется, как использовать Xamarin.Forms класс Label для отображения одного и многострочного текста в приложениях.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 46ea0afd3df0490837eb00b837158a26c1e4e479
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136169"
+Title: " Xamarin.Forms Метка" Описание: "в этой статье объясняется, как использовать Xamarin.Forms класс Label для отображения одного и многострочного текста в приложениях".
+MS. произв. Xamarin MS. AssetID: 02E6C553-5670-49A0-8EE9-5153ED21EA91 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/09/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-label"></a>Xamarin.FormsЗаголовка
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
@@ -54,7 +40,7 @@ var bothLabel = new Label { Text = "This is underlined text with strikethrough."
 ![Метки с оформлением текста](label-images/label-textdecorations.png)
 
 > [!NOTE]
-> Оформление текста также может применяться к [`Span`](xref:Xamarin.Forms.Span) экземплярам. Дополнительные сведения о `Span` классе см. в разделе [форматированный текст](#Formatted_Text).
+> Оформление текста также может применяться к [`Span`](xref:Xamarin.Forms.Span) экземплярам. Дополнительные сведения о `Span` классе см. в разделе [форматированный текст](#formatted-text).
 
 ## <a name="character-spacing"></a>Интервалы между символами
 
@@ -147,8 +133,6 @@ public partial class LabelPage : ContentPage
 
 Дополнительные сведения об указании шрифтов в см `Label` . в разделе [шрифты](~/xamarin-forms/user-interface/text/fonts.md).
 
-<a name="Truncation_and_Wrapping" />
-
 ## <a name="truncation-and-wrapping"></a>Усечение и перенос
 
 Метки могут быть настроены на обработку текста, который не может поместиться в одну строку одним из нескольких способов, предоставляемых `LineBreakMode` свойством. [`LineBreakMode`](xref:Xamarin.Forms.LineBreakMode)— Это перечисление со следующими значениями:
@@ -235,8 +219,6 @@ Label label = new Label
 
 > [!IMPORTANT]
 > Отображение HTML в [`Label`](xref:Xamarin.Forms.Label) ограничено ТЕГАМИ HTML, которые поддерживаются базовой платформой.
-
-<a name="Formatted_Text" />
 
 ## <a name="formatted-text"></a>Форматированный текст
 

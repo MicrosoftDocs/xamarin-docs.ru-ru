@@ -6,12 +6,12 @@ ms.assetid: 81174493-02D3-4FF5-AD57-04F3288A7F94
 author: davidortinau
 ms.author: daortin
 ms.date: 06/19/2018
-ms.openlocfilehash: 19c4a15fb2490c7bace4798b0cb8e062b1379a04
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+ms.openlocfilehash: 39e7a6c86a2d4ab4231a29c0e1014de702af01ac
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79306305"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84573421"
 ---
 # <a name="inspector-installation-and-requirements"></a>Установка и требования инспектора
 
@@ -33,7 +33,7 @@ ms.locfileid: "79306305"
 
 ## <a name="requirements"></a>Требования
 
-### <a name="supported-operating-systems"></a>Поддерживаемые операционные системы
+### <a name="supported-operating-systems"></a>Supported Operating Systems
 
 - **Mac** -OS X 10,11 или более поздней версии
 - **Windows** 7 или более поздняя (с Internet Explorer 11 или более поздней версии и .NET 4.6.1 или более поздней версии)
@@ -45,7 +45,7 @@ ms.locfileid: "79306305"
 
 Интерактивная проверка приложений доступна для корпоративных клиентов.
 
-<a name="supported-platforms" />
+<a name="supported-platforms"></a>
 
 ### <a name="supported-app-platforms"></a>Поддерживаемые платформы приложений
 
@@ -53,16 +53,16 @@ ms.locfileid: "79306305"
 |--- |--- |--- |
 |Mac|Поддерживается только в Visual Studio для Mac|
 |iOS|Поддерживается в Visual Studio 2017 и Visual Studio для Mac| Для поведения компоновщика необходимо задать значение " **не связывать** " (в разделе Параметры проекта **сборки iOS** ) |
-|Android|Поддерживается в Visual Studio 2017 и Visual Studio для Mac|Необходимо выбрать Android > = 4.0.3 с включенным **Фастдев** .<br />Необходимо использовать Эмуляторы Google, Visual Studio или Xamarin Android. В настоящее время Эмуляторы Android 7 могут не допускать проверку.|
+|Android|Поддерживается в Visual Studio 2017 и Visual Studio для Mac|Необходимо выбрать Android >= 4.0.3 с включенным **Фастдев** .<br />Необходимо использовать Эмуляторы Google, Visual Studio или Xamarin Android. В настоящее время Эмуляторы Android 7 могут не допускать проверку.|
 |WPF|Поддерживается только в Visual Studio 2017|
 
-<a name="reporting-bugs" />
+<a name="reporting-bugs"></a>
 
 ## <a name="reporting-bugs"></a>Сообщение об ошибках
 
 Ошибки следует сообщать непосредственно через Visual Studio:
 
-- **Справка > Отправить отзыв > сообщить о проблеме**
+- **Справка > отправить отзыв > сообщить о проблеме**
 
 Включите следующие сведения:
 

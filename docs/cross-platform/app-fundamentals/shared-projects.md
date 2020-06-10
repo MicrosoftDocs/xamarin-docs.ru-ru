@@ -6,12 +6,12 @@ ms.assetid: 191c71fb-44a4-4e6c-af4b-7b1107dce6af
 author: davidortinau
 ms.author: daortin
 ms.date: 07/18/2018
-ms.openlocfilehash: eee76c056d05edccd1e039bc5e4cb8107d1aceb5
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: b8be06b9da4561ffc0d628b53f8daf639b5e3179
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73016694"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571105"
 ---
 # <a name="shared-projects-code-sharing"></a>Совместное использование общего кода проектов
 
@@ -35,7 +35,7 @@ _Общие проекты позволяют писать общий код, н
 
 Обратите внимание, что проекты приложений Android не могут ссылаться на другие проекты приложений Android. Например, проект модульного теста Android не может ссылаться на проект приложения Android. Дополнительные сведения об этом ограничении см. в этом [обсуждении форума](https://forums.xamarin.com/discussion/comment/98092/).
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 ## <a name="visual-studio-for-mac-walkthrough"></a>Пошаговое руководство по Visual Studio для Mac
 
@@ -43,7 +43,7 @@ _Общие проекты позволяют писать общий код, н
 
 ## <a name="creating-a-shared-project"></a>Создание общего проекта
 
-Чтобы создать новый общий проект, перейдите в **файл > создать решение...** (или щелкните правой кнопкой мыши существующее решение и выберите **Добавить > добавить новый проект...** ):
+Чтобы создать новый общий проект, перейдите в **файл > создать решение...** (или щелкните правой кнопкой мыши существующее решение и выберите **Добавить > добавить новый проект...**):
 
 [![Новый общий проект](shared-projects-images/xs-newsolution-sml.png "Новое решение")](shared-projects-images/xs-newsolution.png#lightbox)
 
@@ -69,7 +69,7 @@ _Общие проекты позволяют писать общий код, н
 
 ![](shared-projects-images/xs-sharedprojectoptions.png "Shared Project Options")
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 ## <a name="visual-studio-walkthrough"></a>Пошаговое руководство по Visual Studio
 
@@ -77,7 +77,7 @@ _Общие проекты позволяют писать общий код, н
 
 ### <a name="creating-a-shared-project"></a>Создание общего проекта
 
-Чтобы создать новый общий проект, перейдите в **файл**  > **Новый**  > **проект**.
+Чтобы создать новый общий проект, выберите **файл**  >  **создать**  >  **проект**.
 
 В Visual Studio 2019 введите **Shared** в поле поиска на странице **Создание нового проекта** . Выберите шаблон **общего проекта** и нажмите кнопку **Далее**. Введите имя проекта и нажмите кнопку **создать**.
 
@@ -107,19 +107,19 @@ _Общие проекты позволяют писать общий код, н
 
 -----
 
-<a name="Shared_Project_Example"/>
+<a name="Shared_Project_Example"></a>
 
 ## <a name="shared-project-example"></a>Пример общего проекта
 
-В примере [задачи](https://github.com/xamarin/mobile-samples/tree/master/Tasky) используется общий проект для хранения общего кода, используемого как приложениями iOS, Android, так и Windows Phone. Файлы исходного кода `SQLite.cs` и `TaskRepository.cs` задают директивы компилятора (например, `#if __ANDROID__`) для получения различных выходных данных для каждого из приложений, ссылающихся на них.
+В примере [задачи](https://github.com/xamarin/mobile-samples/tree/master/Tasky) используется общий проект для хранения общего кода, используемого как приложениями iOS, Android, так и Windows Phone. Оба `SQLite.cs` `TaskRepository.cs` файла исходного кода и имеют директивы компилятора (например, `#if __ANDROID__`) для получения различных выходных данных для каждого из приложений, ссылающихся на них.
 
 Полная структура решения показана ниже (в Visual Studio для Mac и Visual Studio соответственно):
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 ![](shared-projects-images/xs-examplesolution.png "Visual Studio for Mac solution")
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 ![](shared-projects-images/vs-examplesolution.png "Visual Studio solution")
 

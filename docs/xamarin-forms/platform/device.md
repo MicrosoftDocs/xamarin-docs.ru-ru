@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsКласс устройства
-description: В этой статье объясняется, как использовать Xamarin.Forms класс Device для детального контроля над функциональными возможностями и макетами на уровне отдельных платформ.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 7ee7b2f1bb9d34b0c0e8bdc4ae606d98423c64a9
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138597"
+Title: " Xamarin.Forms класс устройства" Описание: "в этой статье объясняется, как использовать Xamarin.Forms класс Device для точного контроля над функциональными возможностями и макетами на уровне отдельных платформ".
+MS. произв. Xamarin MS. AssetID: 2F304AEC-8612-4833-81E5-B2F3F469B2DF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/17/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-device-class"></a>Xamarin.FormsКласс устройства
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithdevice)
@@ -68,7 +54,7 @@ layout.Margin = new Thickness(5, top, 5, 0);
 > [!IMPORTANT]
 > Указание неверного `Platform` значения атрибута в `On` классе не приведет к ошибке. Вместо этого код будет выполняться без применения значения, зависящего от платформы.
 
-Кроме того, `OnPlatform` расширение разметки можно использовать в XAML для настройки внешнего вида пользовательского интерфейса на уровне платформы. Дополнительные сведения см. в разделе [расширение разметки для платформы](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform).
+Кроме того, `OnPlatform` расширение разметки можно использовать в XAML для настройки внешнего вида пользовательского интерфейса на уровне платформы. Дополнительные сведения см. в разделе [расширение разметки для платформы](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform-markup-extension).
 
 ## <a name="deviceidiom"></a>Device. идиом
 
@@ -110,7 +96,7 @@ if (Device.Idiom == TargetIdiom.Phone) {
 
 [`OnIdiom`](xref:Xamarin.Forms.OnPlatform`1)Класс является универсальным классом, который должен быть создан с помощью `x:TypeArguments` атрибута, соответствующего целевому типу.
 
-Кроме того, `OnIdiom` расширение разметки можно использовать в XAML для настройки внешнего вида пользовательского интерфейса на основе идиомы устройства, на котором выполняется приложение. Дополнительные сведения см. в разделе [расширение разметки onidiom](~/xamarin-forms/xaml/markup-extensions/consuming.md#onidiom).
+Кроме того, `OnIdiom` расширение разметки можно использовать в XAML для настройки внешнего вида пользовательского интерфейса на основе идиомы устройства, на котором выполняется приложение. Дополнительные сведения см. в разделе [расширение разметки onidiom](~/xamarin-forms/xaml/markup-extensions/consuming.md#onidiom-markup-extension).
 
 ## <a name="deviceflowdirection"></a>Device. FlowDirection
 
@@ -228,7 +214,7 @@ Device.StartTimer (new TimeSpan (0, 0, 60), () =>
 
 `Device`Класс включает следующие `static` методы, которые можно использовать для взаимодействия с элементами пользовательского интерфейса из фоновых потоков:
 
-| Метод | Аргументы | Возвращаемое значение | Назначение |
+| Метод | Аргументы | Возвращает | Цель |
 |---|---|---|---|
 | `BeginInvokeOnMainThread` | `Action` | `void` | Вызывает объект `Action` в основном потоке и не ожидает его завершения. |
 | `InvokeOnMainThreadAsync<T>` | `Func<T>` | `Task<T>` | Вызывает объект `Func<T>` в основном потоке и ожидает его завершения. |

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 788df5f27066d0d8d1f672d82e94a06ddf5e0916
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139819"
+Title: часть 2. Важный синтаксис XAML "Описание:" в этой статье объясняются основные возможности синтаксиса XAML элементов свойств и вложенных свойств ".
+MS. произв. Xamarin MS. AssetID: 4022F1DC-3802-4635-A553-688ABD3F0D5A MS. Technology: автор Xamarin-Forms: давидбритч MS. author: дабритч MS. Дата: 10/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="part-2-essential-xaml-syntax"></a>Часть 2. Основной синтаксис XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)
@@ -526,7 +512,7 @@ if (Device.RuntimePlatform == Device.iOS)
 ```
 
 > [!NOTE]
-> `OnPlatform`Расширение разметки также можно использовать в XAML для настройки внешнего вида пользовательского интерфейса на уровне платформы. Он предоставляет те же функциональные возможности `OnPlatform` , что и `On` классы и, но с более кратким представлением. Дополнительные сведения см. в разделе [расширение разметки для платформы](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform).
+> `OnPlatform`Расширение разметки также можно использовать в XAML для настройки внешнего вида пользовательского интерфейса на уровне платформы. Он предоставляет те же функциональные возможности `OnPlatform` , что и `On` классы и, но с более кратким представлением. Дополнительные сведения см. в разделе [расширение разметки для платформы](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform-markup-extension).
 
 ## <a name="summary"></a>Сводка
 

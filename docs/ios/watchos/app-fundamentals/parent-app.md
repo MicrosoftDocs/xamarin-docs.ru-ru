@@ -1,22 +1,22 @@
 ---
-title: Работа с watchOS родительское приложение в Xamarin
-description: В этом документе описывается, как работать с watchOS родительского приложения в Xamarin. В нем обсуждаются расширения приложений watchOS, приложения iOS, общее хранилище и многое другое.
+title: Работа с родительским приложением watchOS в Xamarin
+description: В этом документе описывается работа с родительским приложением watchOS в Xamarin. В нем обсуждаются расширения приложений watchOS, приложения iOS, общее хранилище и многое другое.
 ms.prod: xamarin
 ms.assetid: 9AD29833-E9CC-41A3-95D2-8A655FF0B511
 ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 3e11b163d16be9711bf09102e3ab8604d98299d7
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+ms.openlocfilehash: 49f2bdf63c286464073308cd1f17239692aa2395
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79306251"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84567337"
 ---
-# <a name="working-with-the-watchos-parent-application-in-xamarin"></a>Работа с watchOS родительское приложение в Xamarin
+# <a name="working-with-the-watchos-parent-application-in-xamarin"></a>Работа с родительским приложением watchOS в Xamarin
 
-Для обмена данными между приложении для Apple watch и приложение iOS, которое объединяется с разными способами:
+Существует несколько способов обмена данными между приложением Watch и приложением iOS, с которым оно объединяется.
 
 - Смотреть приложения могут [запускать код](#run-code) в родительском приложении на iPhone.
 
@@ -24,11 +24,11 @@ ms.locfileid: "79306251"
 
 - Используйте пересылку, чтобы передать данные из уведомления в приложение наблюдения, отправив пользователю конкретный контроллер интерфейса в приложении.
 
-Родительское приложение, также иногда называется приложения-контейнера.
+Кроме того, родительское приложение иногда называют приложением-контейнером.
 
-## <a name="run-code"></a>Выполните код
+## <a name="run-code"></a>Выполнение кода
 
-В этих двух примерах показано, как использовать `WCSession` для выполнения кода и отправки сообщений между приложением Watch и парным iPhone.
+Эти два примера демонстрируют, как использовать `WCSession` для запуска кода и отправки сообщений между приложением Watch и парным iPhone.
 
 - [Просмотр подключения](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchconnectivity/)
 - [симплеватчконнективити](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-simplewatchconnectivity/) 
@@ -37,9 +37,9 @@ ms.locfileid: "79306251"
 
 Если вы настраиваете [группу приложений](~/ios/watchos/app-fundamentals/app-groups.md) , расширения iOS 8 (включая расширения контрольных значений) могут обмениваться данными с родительским приложением.
 
-### <a name="nsuserdefaults"></a>Параметры NSUserDefaults
+### <a name="nsuserdefaults"></a>нсусердефаултс
 
-Следующий код можно записать как в расширении приложения Watch, так и в родительском приложении iPhone, чтобы они могли ссылаться на общий набор `NSUserDefaults`:
+Следующий код можно записать как в расширении приложения Watch, так и в родительском приложении iPhone, чтобы они могли ссылаться на общий набор `NSUserDefaults` :
 
 ```csharp
 NSUserDefaults shared = new NSUserDefaults(
@@ -55,11 +55,11 @@ shared.Synchronize ();
 var count = shared.IntForKey ("count");
 ```
 
-<a name="files" />
+<a name="files"></a>
 
 ### <a name="files"></a>Файлы
 
-Расширение приложения "и" Контрольные значения операций ввода-вывода также могут совместно использовать файлы, используя общий путь к файлу.
+Приложение iOS и расширение Watch могут также использовать общие пути к файлам.
 
 ```csharp
 var FileManager = new NSFileManager ();
@@ -70,7 +70,7 @@ Console.WriteLine ("agcpath: " + appGroupContainerPath);
 // use the path to create and update files
 ```
 
-Примечание. Если путь `null`, проверьте [конфигурацию группы приложений](~/ios/watchos/app-fundamentals/app-groups.md) , чтобы убедиться, что профили подготовки настроены правильно и были загружены или установлены на компьютере разработчика.
+Примечание. Если путь, `null` Проверьте [конфигурацию группы приложений](~/ios/watchos/app-fundamentals/app-groups.md) , чтобы убедиться, что профили подготовки настроены правильно и были загружены и установлены на компьютере разработчика.
 
 Дополнительные сведения см. в документации по [возможностям группы приложений](~/ios/deploy-test/provisioning/capabilities/app-groups-capabilities.md) .
 

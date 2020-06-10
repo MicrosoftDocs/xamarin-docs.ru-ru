@@ -1,23 +1,8 @@
 ---
-title: Xamarin.FormsФлекслайаут
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-ms.custom: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 031a846b7546c204d45c7437acd829d6cb49bfbb
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137219"
+Title: " Xamarin.Forms флекслайаут" Описание: "используйте флекслайаут для наложения или упаковки коллекции дочерних представлений".
+MS. произв. Xamarin MS. AssetID: 6A91EA70-268C-462C-AAAF-F8DA011403F8 MS. Technology: Xamarin-Forms MS. Custom: ксаму — автор видео: давидбритч MS. author: дабритч МС. Дата: 05/07/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="the-xamarinforms-flexlayout"></a>Xamarin.FormsФлекслайаут
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)
@@ -30,9 +15,7 @@ Xamarin.Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) Новое в Xamari
 
 `FlexLayout`является производным от [`Layout<View>`](xref:Xamarin.Forms.Layout`1) и наследует [`Children`](xref:Xamarin.Forms.Layout`1.Children) свойство типа `IList<View>` .
 
-`FlexLayout`определяет шесть общедоступных связываемых свойств и пять присоединенных связываемых свойств, которые влияют на размер, ориентацию и выравнивание дочерних элементов. (Если вы не знакомы с присоединенными связанными свойствами, см. статью **[присоединенные свойства](~/xamarin-forms/xaml/attached-properties.md)**.) Эти свойства подробно описаны в разделах ниже в разделе сведения о **[связываемых свойствах](#bindable-properties)** , а **[также подробно присоединенные привязываемые свойства](#attached-properties)**. Однако эта статья начинается с раздела о некоторых **[распространенных сценариях использования](#common-scenarios)** `FlexLayout` , которые более подробно описывают многие из этих свойств. В конце статьи вы увидите, как сочетаться `FlexLayout` с [таблицами стилей CSS](~/xamarin-forms/user-interface/styles/css/index.md).
-
-<a name="common-scenarios" />
+`FlexLayout`определяет шесть общедоступных связываемых свойств и пять присоединенных связываемых свойств, которые влияют на размер, ориентацию и выравнивание дочерних элементов. (Если вы не знакомы с присоединенными связанными свойствами, см. статью **[присоединенные свойства](~/xamarin-forms/xaml/attached-properties.md)**.) Эти свойства подробно описаны в разделах ниже в разделе сведения о **[связываемых свойствах](#the-bindable-properties-in-detail)** , а **[также подробно присоединенные привязываемые свойства](#the-attached-bindable-properties-in-detail)**. Однако эта статья начинается с раздела о некоторых **[распространенных сценариях использования](#common-usage-scenarios)** `FlexLayout` , которые более подробно описывают многие из этих свойств. В конце статьи вы увидите, как сочетаться `FlexLayout` с [таблицами стилей CSS](~/xamarin-forms/user-interface/styles/css/index.md).
 
 ## <a name="common-usage-scenarios"></a>Основные сценарии использования
 
@@ -71,7 +54,7 @@ Xamarin.Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) Новое в Xamari
 
 `FlexLayout`В файле **симплестаккпаже. XAML** показаны три свойства:
 
-- [`Direction`](xref:Xamarin.Forms.FlexLayout.Direction)Свойству присваивается значение [`FlexDirection`](xref:Xamarin.Forms.FlexDirection) перечисления. Значение по умолчанию — `Row`. Присвоение свойству значения `Column` приводит к тому, что дочерние элементы объекта `FlexLayout` будут упорядочены в один столбец элементов.
+- [`Direction`](xref:Xamarin.Forms.FlexLayout.Direction)Свойству присваивается значение [`FlexDirection`](xref:Xamarin.Forms.FlexDirection) перечисления. Значение по умолчанию — `Row`. Присвоение свойству значения `Column` приводит к тому, что дочерние элементы объекта `FlexLayout` будут упорядочены в один столбец элементов.
 
     Если элементы в `FlexLayout` упорядочены по столбцам, то говорят, что `FlexLayout` у элемента есть вертикальная _основная ось_ и горизонтальная _Перекрестная ось_.
 
@@ -91,7 +74,7 @@ Xamarin.Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) Новое в Xamari
 
     Если вы использовали, для `StackLayout` `VerticalOptions` достижения аналогичного результата необходимо присвоить свойству каждого элемента значение `CenterAndExpand` . Но `CenterAndExpand` параметр должен выделить в два раза больше пространства между каждым элементом, чем перед первым элементом и после последнего элемента. Можно имитировать `CenterAndExpand` параметр `VerticalOptions` , задав `JustifyContent` для свойства значение `FlexLayout` `SpaceAround` .
 
-Эти `FlexLayout` свойства более подробно описаны в разделе ниже приводятся **[связываемые свойства](#bindable-properties)** .
+Эти `FlexLayout` свойства более подробно описаны в разделе ниже приводятся **[связываемые свойства](#the-bindable-properties-in-detail)** .
 
 ### <a name="using-flexlayout-for-wrapping-items"></a>Использование Флекслайаут для упаковки элементов
 
@@ -380,8 +363,6 @@ public partial class PhotoWrappingPage : ContentPage
 
 В каждом из трех `FlexLayout` представлений пустое `Label` поле предшествует `Button` , но имеет `Grow` значение 1. Это означает, что все дополнительное вертикальное пространство выделено для этого пустого поля `Label` , которое фактически отправляет в `Button` нижнюю часть.
 
-<a name="bindable-properties" />
-
 ## <a name="the-bindable-properties-in-detail"></a>Подробные сведения о связываемых свойствах
 
 Теперь, когда вы видели некоторые распространенные приложения `FlexLayout` , свойства `FlexLayout` можно изучить более подробно.
@@ -395,15 +376,13 @@ public partial class PhotoWrappingPage : ContentPage
 
 Каждое из `Label` представлений имеет серый фон, который показывает пространство, выделенное для него `Label` в `FlexLayout` . Фон `FlexLayout` самого себя — Алиса синего цвета. Он занимает всю нижнюю область страницы, за исключением небольшого поля слева и справа.
 
-<a name="direction" />
-
 ### <a name="the-direction-property"></a>Свойство Direction
 
 [`Direction`](xref:Xamarin.Forms.FlexLayout.Direction)Свойство имеет тип [`FlexDirection`](xref:Xamarin.Forms.FlexDirection) , перечисление с четырьмя элементами:
 
 - `Column`
 - `ColumnReverse`(или "Column-Reverse" в XAML)
-- `Row`, по умолчанию
+- `Row` (стандартный вариант);
 - `RowReverse`(или "строка-обратная" в XAML)
 
 В XAML можно указать значение этого свойства, используя имена членов перечисления в нижнем или верхнем регистре, или можно использовать две дополнительные строки, отображаемые в круглых скобках, которые совпадают с индикаторами CSS. (Строки "Column-Reverse" и "Row-Reverse" определены в [`FlexDirectionTypeConverter`](xref:Xamarin.Forms.FlexDirectionTypeConverter) классе, используемом средством синтаксического анализа XAML.)
@@ -414,13 +393,11 @@ public partial class PhotoWrappingPage : ContentPage
 
 Обратите внимание, что для `Reverse` параметров элементы начинаются справа или снизу.
 
-<a name="wrap" />
-
 ### <a name="the-wrap-property"></a>Свойство Wrap
 
 [`Wrap`](xref:Xamarin.Forms.FlexLayout.Wrap)Свойство имеет тип [`FlexWrap`](xref:Xamarin.Forms.FlexWrap) , перечисление с тремя элементами:
 
-- `NoWrap`, по умолчанию
+- `NoWrap` (стандартный вариант);
 - `Wrap`
 - `Reverse`(или «обернуть-Reverse» в XAML)
 
@@ -428,9 +405,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 [![Страница эксперимента: перенос](flex-layout-images/ExperimentWrap.png "Страница эксперимента — перенос")](flex-layout-images/ExperimentWrap-Large.png#lightbox)
 
-Если `Wrap` свойство имеет значение `NoWrap` , а главная ось ограничена (как в этой программе), а главная ось не является широкой или высотой достаточного размера для размещения всех дочерних элементов, то `FlexLayout` предпринимается попытка уменьшить размер элементов, как показано на снимке экрана iOS. Можно управлять сжатием элементов с помощью [`Shrink`](#shrink) присоединенного свойства BIND.
-
-<a name="justify-content" />
+Если `Wrap` свойство имеет значение `NoWrap` , а главная ось ограничена (как в этой программе), а главная ось не является широкой или высотой достаточного размера для размещения всех дочерних элементов, то `FlexLayout` предпринимается попытка уменьшить размер элементов, как показано на снимке экрана iOS. Можно управлять сжатием элементов с помощью [`Shrink`](#the-shrink-property) присоединенного свойства BIND.
 
 ### <a name="the-justifycontent-property"></a>Свойство Жустификонтент
 
@@ -449,32 +424,28 @@ public partial class PhotoWrappingPage : ContentPage
 
 Во всех трех снимках экрана `Wrap` свойство имеет значение `Wrap` . Значение `Start` по умолчанию показано на предыдущем снимке экрана Android. На снимке экрана iOS здесь показан `Center` параметр: все элементы перемещаются в центр. Три других параметра, начинающиеся с слова, `Space` выделяют дополнительное пространство, не занятое элементами. `SpaceBetween`равномерно распределяет интервал между элементами; `SpaceAround`устанавливает равные пробелы вокруг каждого элемента, в то же время `SpaceEvenly` устанавливает равное пространство между каждым элементом и перед первым и последним элементом в строке.
 
-<a name="align-items" />
-
 ### <a name="the-alignitems-property"></a>Свойство Алигнитемс
 
 [`AlignItems`](xref:Xamarin.Forms.FlexLayout.AlignItems)Свойство имеет тип [`FlexAlignItems`](xref:Xamarin.Forms.FlexAlignItems) , перечисление с четырьмя элементами:
 
-- `Stretch`, по умолчанию
+- `Stretch` (стандартный вариант);
 - `Center`
 - `Start`(или "Flex-Start" в XAML)
 - `End`(или "Flex-End" в XAML)
 
-Это одно из двух свойств (другое — [`AlignContent`](#align-content) ), которое указывает, как дочерние элементы выводятся по перекрестной оси. В каждой строке дочерние элементы растягиваются (как показано на предыдущем снимке экрана) или выравниваются по началу, центру или концу каждого элемента, как показано на следующих трех снимках экрана:
+Это одно из двух свойств (другое — [`AlignContent`](#the-aligncontent-property) ), которое указывает, как дочерние элементы выводятся по перекрестной оси. В каждой строке дочерние элементы растягиваются (как показано на предыдущем снимке экрана) или выравниваются по началу, центру или концу каждого элемента, как показано на следующих трех снимках экрана:
 
 [![Страница эксперимента: выровняйте элементы](flex-layout-images/ExperimentAlignItems.png "Элементы, выровняйте по страницам эксперимента")](flex-layout-images/ExperimentAlignItems-Large.png#lightbox)
 
 На снимке экрана iOS верхние края всех дочерних элементов согласовываются. На снимках экрана Android элементы располагаются вертикально по центру в зависимости от самого высокого элемента. На снимке экрана UWP нижние части всех элементов вычисляются.
 
-Для любого отдельного элемента `AlignItems` параметр можно переопределить с помощью [`AlignSelf`](#align-self) присоединенного свойства BIND.
-
-<a name="align-content" />
+Для любого отдельного элемента `AlignItems` параметр можно переопределить с помощью [`AlignSelf`](#the-alignself-property) присоединенного свойства BIND.
 
 ### <a name="the-aligncontent-property"></a>Свойство Алигнконтент
 
 [`AlignContent`](xref:Xamarin.Forms.FlexLayout.AlignContent)Свойство имеет тип [`FlexAlignContent`](xref:Xamarin.Forms.FlexAlignContent) , перечисление с семью членами:
 
-- `Stretch`, по умолчанию
+- `Stretch` (стандартный вариант);
 - `Center`
 - `Start`(или "Flex-Start" в XAML)
 - `End`(или "Flex-End" в XAML)
@@ -492,25 +463,21 @@ public partial class PhotoWrappingPage : ContentPage
 
 Параметр не `AlignContent` действует, если имеется только одна строка или столбец.
 
-<a name="attached-properties" />
-
 ## <a name="the-attached-bindable-properties-in-detail"></a>Подробно присоединенные связываемые свойства
 
 `FlexLayout`определяет пять присоединенных привязанных свойств. Эти свойства задаются для дочерних элементов `FlexLayout` и относятся только к этому конкретному дочернему элементу.
-
-<a name="align-self" />
 
 ### <a name="the-alignself-property"></a>Свойство Алигнселф
 
 [`AlignSelf`](xref:Xamarin.Forms.FlexLayout.AlignSelfProperty)Присоединенное свойство привязки имеет тип [`FlexAlignSelf`](xref:Xamarin.Forms.FlexAlignContent) , перечисление с пятью элементами:
 
-- `Auto`, по умолчанию
+- `Auto` (стандартный вариант);
 - `Stretch`
 - `Center`
 - `Start`(или "Flex-Start" в XAML)
 - `End`(или "Flex-End" в XAML)
 
-Для любого отдельного дочернего элемента этого `FlexLayout` параметра свойства переопределяет свойство, заданное [`AlignItems`](#align-items) для `FlexLayout` самого себя. Значение по умолчанию `Auto` означает использование `AlignItems` параметра.
+Для любого отдельного дочернего элемента этого `FlexLayout` параметра свойства переопределяет свойство, заданное [`AlignItems`](#the-alignitems-property) для `FlexLayout` самого себя. Значение по умолчанию `Auto` означает использование `AlignItems` параметра.
 
 Для `Label` элемента с именем `label` (или example) можно задать `AlignSelf` свойство в коде следующим образом:
 
@@ -593,8 +560,6 @@ FlexLayout.SetBasis(label, new FlexBasis(0.25f, true));
 Если одному дочернему элементу присваивается положительное `Grow` значение, то этот дочерний элемент занимает все оставшееся пространство, как показано на снимке экрана Android. Это пространство также может быть распределено между двумя и более дочерними элементами. На снимке экрана UWP `Grow` свойству второго свойства `Label` присвоено значение 0,5, а `Grow` свойство четвертого `Label` — 1,5, что дает четвертое значение в `Label` три раза больше, чем во втором `Label` .
 
 Как дочернее представление использует это пространство, зависит от конкретного типа дочернего элемента. Для `Label` текст можно разместить в общем пространстве `Label` с помощью свойств `HorizontalTextAlignment` и `VerticalTextAlignment` .
-
-<a name="shrink" />
 
 ### <a name="the-shrink-property"></a>Свойство Shrink
 

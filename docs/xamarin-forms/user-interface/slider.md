@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsГруппу
-description: Xamarin.FormsПолзунок — это горизонтальная линия, которую пользователь может обрабатывать, чтобы выбрать значение типа Double из непрерывного диапазона. В этой статье объясняется, как использовать класс Slider для выбора значения из диапазона непрерывных значений.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 1cde999e6781f019b6abceee82caf259e1e5a710
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84140157"
+Title: " Xamarin.Forms ползунок" Description: " Xamarin.Forms ползунок — это горизонтальная линия, которую пользователь может обрабатывать, чтобы выбрать значение типа Double из непрерывного диапазона. В этой статье объясняется, как использовать класс Slider для выбора значения из диапазона непрерывных значений ".
+MS. произв. Xamarin MS. AssetID: 36B1C645-26E0-4874-B6B6-BDBF77662878 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/27/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-slider"></a>Xamarin.FormsГруппу
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos)
@@ -116,7 +102,7 @@ public class BasicSliderCodePage : ContentPage
 
 [![Базовый код Slider](slider-images/BasicSliderCode.png "Базовый код Slider")](slider-images/BasicSliderCode-Large.png#lightbox)
 
-Во втором `Label` выводится текст "(не инициализировано)" до тех пор `Slider` , пока не будет выполнен манипуляций, что приводит к `ValueChanged` срабатыванию первого события. Обратите внимание, что число отображаемых десятичных разрядов различается для каждой платформы. Эти различия связаны с реализациями платформы `Slider` и обсуждаются далее в этой статье в разделе [различия в реализации платформы](#implementations).
+Во втором `Label` выводится текст "(не инициализировано)" до тех пор `Slider` , пока не будет выполнен манипуляций, что приводит к `ValueChanged` срабатыванию первого события. Обратите внимание, что число отображаемых десятичных разрядов различается для каждой платформы. Эти различия связаны с реализациями платформы `Slider` и обсуждаются далее в этой статье в разделе [различия в реализации платформы](#platform-implementation-differences).
 
 ### <a name="creating-a-slider-in-xaml"></a>Создание ползунка в XAML
 
@@ -210,8 +196,6 @@ double value = slider.Value;
 
 `Rotation`Свойство первого объекта `Label` привязано к `Value` свойству `Slider` , а — к свойству `Text` секунды `Label` со `StringFormat` спецификацией. **Основная страница привязок Slider** немного отличается от двух предыдущих страниц: при первом отображении страницы вторая `Label` отображает текстовую строку со значением. Это преимущество использования привязки данных. Чтобы отобразить текст без привязки данных, необходимо специально инициализировать `Text` свойство объекта `Label` или имитировать срабатывание `ValueChanged` события, вызвав обработчик события из конструктора класса.
 
-<a name="precautions" />
-
 ## <a name="precautions"></a>Меры предосторожности
 
 Значение `Minimum` свойства должно всегда быть меньше значения `Maximum` Свойства. В следующем фрагменте кода вызывается `Slider` исключение:
@@ -283,8 +267,6 @@ Slider slider = new Slider
 ```
 
 Если `Minimum` для параметра задано значение 10, `Value` также устанавливается значение 10, и `ValueChanged` возникает событие. Это может произойти до того, как будет создана оставшаяся часть страницы, и обработчик может попытаться сослаться на другие элементы на странице, которые еще не были созданы. Может потребоваться добавить в обработчик некоторый код `ValueChanged` , который проверяет `null` значения других элементов на странице. Или можно задать `ValueChanged` обработчик событий после `Slider` инициализации значений.
-
-<a name="implementations" />
 
 ## <a name="platform-implementation-differences"></a>Различия в реализации платформы
 
@@ -508,7 +490,7 @@ ViewModels и `INotifyPropertyChanged` Interface обсуждаются в [пр
 
 [![Ползунки цвета HSL](slider-images/HslColorSliders.png "Ползунки цвета HSL")](slider-images/HslColorSliders-Large.png#lightbox)
 
-`StringFormat`Компонент `Binding` расширения разметки задается в формате "F2" для вывода двух десятичных разрядов. (Форматирование строк в привязках данных рассматривается в статье [Форматирование строк](~/xamarin-forms/app-fundamentals/data-binding/string-formatting.md).) Однако версия программы UWP ограничена значениями 0, 0,1, 0,2,... 0,9 и 1,0. Это прямой результат реализации UWP, `Slider` как описано выше в разделе [различия в реализации платформы](#implementations).
+`StringFormat`Компонент `Binding` расширения разметки задается в формате "F2" для вывода двух десятичных разрядов. (Форматирование строк в привязках данных рассматривается в статье [Форматирование строк](~/xamarin-forms/app-fundamentals/data-binding/string-formatting.md).) Однако версия программы UWP ограничена значениями 0, 0,1, 0,2,... 0,9 и 1,0. Это прямой результат реализации UWP, `Slider` как описано выше в разделе [различия в реализации платформы](#platform-implementation-differences).
 
 ## <a name="related-links"></a>Связанные ссылки
 

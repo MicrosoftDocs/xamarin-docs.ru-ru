@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/07/2016
-ms.openlocfilehash: 34f332eb712f479f9f9565a3894212e3cdd5aaf6
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 99565d7e61e8e8c1d28b67a6a6d25979c79fa387
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030536"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566166"
 ---
 # <a name="introduction-to-tvos-9"></a>Введение в tvOS 9
 
@@ -20,13 +20,13 @@ _В этой статье представлены все новые и изме
 
 Компания Apple выпустила четвертое поколение оборудования Apple TV с переработанной поддержкой сенсорного ввода, запуская новую операционную систему tvOS (на основе iOS 9).
 
-В первый раз tvOS открывает платформу Apple TV для разработчика, позволяя создавать полнофункциональные впечатляющие приложения и освобождать их через встроенное хранилище приложений Apple TV в процессе, аналогичном написанию и освобождению приложений для iOS с помощью приложения iTunes. Сообщений.
+В первый раз tvOS открывает платформу Apple TV для разработчика, позволяя создавать полнофункциональные впечатляющие приложения и освобождать их через встроенное хранилище приложений Apple TV в процессе, аналогичном написанию и освобождению приложений для iOS с помощью приложения iTunes Store.
 
 Если вы знакомы с разработкой Xamarin. iOS, вы должны найти переход на tvOS довольно просто. Большинство API-интерфейсов и функций одинаковы, однако многие общие API недоступны (например, WebKit). Кроме того, работа с с помощью Siri Remote создает некоторые проблемы проектирования, отсутствующие на устройствах iOS на основе сенсорного экрана.
 
 В этом учебнике представлены общие сведения обо всех новых и измененных API-интерфейсах и функциях, доступных в tvOS 9 для разработчиков Xamarin. tvOS. Дополнительные сведения о tvOS см. в документации Apple [для Apple TV](https://developer.apple.com/tvos/) .
 
-<a name="Supported-and-Unsupported-Capabilities" />
+<a name="Supported-and-Unsupported-Capabilities"></a>
 
 ## <a name="supported-and-unsupported-capabilities"></a>Поддерживаемые и неподдерживаемые возможности
 
@@ -49,7 +49,7 @@ _В этой статье представлены все новые и изме
 - HealthKit
 - HomeKit
 - Звук между приложениями
-- Карты
+- Maps
 - Личная VPN
 - Push-уведомления
 - Wallet
@@ -57,7 +57,7 @@ _В этой статье представлены все новые и изме
 
 Дополнительные сведения см. в документации по [поддерживаемым сборкам](~/ios/tvos/internals/assemblies.md) и [поддерживаемым платформам](~/ios/tvos/internals/frameworks.md) .
 
-<a name="Apple-TV-Hardware" />
+<a name="Apple-TV-Hardware"></a>
 
 ## <a name="apple-tv-hardware"></a>Оборудование Apple TV
 
@@ -85,7 +85,7 @@ _В этой статье представлены все новые и изме
 - Германия
 - Япония
 - Испания
-- Великобритания
+- Соединенное Королевство
 - США
 
 Все остальные страны получат Пульт Apple TV Remote, который заменяет кнопку Siri на кнопку поиска, которая открывает экран поиска по умолчанию с текстовым вводом для поиска:
@@ -94,7 +94,7 @@ _В этой статье представлены все новые и изме
 
 Дополнительные сведения см. в документации по [удаленным Siri и контроллерам Bluetooth](~/ios/tvos/platform/remote-bluetooth.md) .
 
-<a name="Apple-TV-Provisioning" />
+<a name="Apple-TV-Provisioning"></a>
 
 ## <a name="apple-tv-provisioning"></a>Подготовка Apple TV
 
@@ -104,13 +104,13 @@ _В этой статье представлены все новые и изме
 
 Профили подготовки создаются и устанавливаются так же, как и работа с приложениями Xamarin. iOS. Для получения дополнительных сведений см. документацию по [подготовке устройств](~/ios/get-started/installation/device-provisioning/index.md) iOS.
 
-<a name="Apple-TV-Apps" />
+<a name="Apple-TV-Apps"></a>
 
 ## <a name="apple-tv-apps"></a>Приложения Apple TV
 
 Новое оборудование Apple TV и tvOS 9 поддерживает два типа приложений: традиционные и клиент-серверные приложения.
 
-<a name="Traditional-Apps" />
+<a name="Traditional-Apps"></a>
 
 ### <a name="traditional-apps"></a>Традиционные приложения
 
@@ -120,15 +120,15 @@ _В этой статье представлены все новые и изме
 
 Ознакомьтесь с нашими [tvOS краткое руководство по началу работы](~/ios/tvos/get-started/hello-tvos.md) , чтобы ознакомиться с инструментами и концепциями, необходимыми для разработки приложений tvOS с помощью Xamarin. tvOS.
 
-<a name="Summary" />
+<a name="Summary"></a>
 
 ### <a name="client-server-apps"></a>Клиент-серверные приложения
 
 В дополнение к установленным традиционным приложениям Apple TV позволяет легко создавать веб-клиентские приложения потоковой передачи данных на основе Интернета (HTTPS, XML и JavaScript). Вы разрабатываете пользовательский интерфейс с помощью языка разметки Apple ТВМЛ и используете JavaScript для определения поведения приложения с помощью Твмлкит.
 
-Дополнительные сведения см. в [справочнике по языку разметки Apple TV](https://developer.apple.com/library/prerelease/tvos/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/index.html#//apple_ref/doc/uid/TP40015064)Apple, справочнике по [Твжс Framework](https://developer.apple.com/library/prerelease/tvos/documentation/TVMLJS/Reference/TVJSFrameworkReference/index.html#//apple_ref/doc/uid/TP40016076), [Справочнику по платформам Твмлкит](https://developer.apple.com/library/prerelease/tvos/documentation/TVMLKit/Reference/TVMLKit_Collection/index.html#//apple_ref/doc/uid/TP40016429), [о HTTP Live Streaming](https://developer.apple.com/library/prerelease/tvos/referencelibrary/GettingStarted/AboutHTTPLiveStreaming/about/about.html#//apple_ref/doc/uid/TP40013978) и [HLS о спецификации разработки для Apple TV](https://developer.apple.com/services-account/download?path=/Documentation/HLS_Authoring_Specification_for_Apple_TV/HLS_Authoring_Specification_for_Apple_TV.pdf) . по.
+Дополнительные сведения см. в [справочнике по языку разметки Apple TV](https://developer.apple.com/library/prerelease/tvos/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/index.html#//apple_ref/doc/uid/TP40015064)Apple, Справочнику по [Твжс Framework](https://developer.apple.com/library/prerelease/tvos/documentation/TVMLJS/Reference/TVJSFrameworkReference/index.html#//apple_ref/doc/uid/TP40016076), [Справочнику по платформе твмлкит](https://developer.apple.com/library/prerelease/tvos/documentation/TVMLKit/Reference/TVMLKit_Collection/index.html#//apple_ref/doc/uid/TP40016429), [сведениям о HTTP Live Streaming](https://developer.apple.com/library/prerelease/tvos/referencelibrary/GettingStarted/AboutHTTPLiveStreaming/about/about.html#//apple_ref/doc/uid/TP40013978) и [HLS о спецификации разработки для Apple TV](https://developer.apple.com/services-account/download?path=/Documentation/HLS_Authoring_Specification_for_Apple_TV/HLS_Authoring_Specification_for_Apple_TV.pdf) .
 
-<a name="User-Interface-Challenges" />
+<a name="User-Interface-Challenges"></a>
 
 ## <a name="user-interface-challenges"></a>Проблемы с пользовательским интерфейсом
 
@@ -136,7 +136,7 @@ _В этой статье представлены все новые и изме
 
 Кроме того, общий пользовательский интерфейс радикально отличается от приложений iOS или Mac, которые обычно представляют собой единый пользовательский интерфейс. С помощью Apple TV пользователи, как правило, будут работать в социальных сетях, где на диване может работать несколько человек, взаимодействующих с одним и тем же приложением. Чтобы создать успешное взаимодействие с приложением Apple TV (новое приложение или перенос существующего), необходимо принять во внимание эти изменения. 
 
-<a name="Summary" />
+<a name="Summary"></a>
 
 ### <a name="working-with-focus-and-parallax-images"></a>Работа с изображениями фокуса и фокусировки
 
@@ -148,7 +148,7 @@ _В этой статье представлены все новые и изме
 
 Дополнительные сведения см. в статье [Работа с навигацией и фокусом](~/ios/tvos/app-fundamentals/navigation-focus.md) и [Работа с значками и изображениями](~/ios/tvos/app-fundamentals/icons-images.md) документации.
 
-<a name="The-Home-Screen" />
+<a name="The-Home-Screen"></a>
 
 ### <a name="the-home-screen"></a>Начальный экран
 
@@ -162,7 +162,7 @@ _В этой статье представлены все новые и изме
 
 Дополнительные сведения см. в документации по [работе с значками и изображениями](~/ios/tvos/app-fundamentals/icons-images.md) .
 
-<a name="The-Top-Shelf" />
+<a name="The-Top-Shelf"></a>
 
 ### <a name="the-top-shelf"></a>Верхняя полка
 
@@ -170,7 +170,7 @@ _В этой статье представлены все новые и изме
 
 [![](tvos9-images/topshelf01.png "The Top Shelf")](tvos9-images/topshelf01.png#lightbox)
 
-Верхнее изображение полки может быть предоставлено как одно статическое `.png` или `.lsr` файл или динамически создаваться во время выполнения в виде одной строки элементов с фокусом ввода.
+Верхнее изображение с полкой может быть предоставлено как один статический `.png` или `.lsr` файл или динамически создаваться во время выполнения как одна строка элементов с фокусом ввода.
 
 Вместо того чтобы отображать статическое изображение верхнего уровня, оно может содержать динамическую строку или элементы с фокусом или динамический набор заголовков с прокруткой. Оба этих динамического стиля позволяют выделить содержимое, предоставленное приложением, или перейти к наиболее часто используемым функциям.
 

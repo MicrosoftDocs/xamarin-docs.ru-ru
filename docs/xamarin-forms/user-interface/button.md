@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsПереключатель
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: f7309794768c01d4978aa369cd1950d4986938db
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137466"
+Title: " Xamarin.Forms кнопка" Описание: "кнопка реагирует на касание или щелчок, направляющее приложение на выполнение определенной задачи".
+MS. произв. Xamarin MS. AssetID: 62CAEB63-0800-44F4-9B8C-EE632138C2F5 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/04/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-button"></a>Xamarin.FormsПереключатель
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-buttondemos)
@@ -414,8 +400,6 @@ public partial class PressAndReleaseButtonPage : ContentPage
 
 Этот тип поведения имеет приложения для игр. палец, находящиеся на, `Button` может сделать объект на экране передвигаться в определенном направлении.
 
-<a name="button-appearance" />
-
 ## <a name="button-appearance"></a>Внешний вид кнопки
 
 Класс `Button` наследует или определяет несколько свойств, влияющих на его внешний вид:
@@ -433,7 +417,7 @@ public partial class PressAndReleaseButtonPage : ContentPage
 > [!NOTE]
 > `Button`Класс также имеет [`Margin`](xref:Xamarin.Forms.View.Margin) Свойства и [`Padding`](xref:Xamarin.Forms.Button.Padding) , управляющие поведением макета `Button` . Дополнительные сведения см. в статье [Поля и заполнение](~/xamarin-forms/user-interface/layouts/margin-and-padding.md).
 
-Влияние шести из этих свойств (за исключением `FontFamily` и `FontAttributes` ) демонстрируется на странице « **Оформление кнопки»** . Другое свойство, [`Image`](xref:Xamarin.Forms.Button.ImageSource) , рассматривается в разделе [**Использование растровых изображений с кнопкой**](#image-button).
+Влияние шести из этих свойств (за исключением `FontFamily` и `FontAttributes` ) демонстрируется на странице « **Оформление кнопки»** . Другое свойство, [`Image`](xref:Xamarin.Forms.Button.ImageSource) , рассматривается в разделе [**Использование растровых изображений с кнопкой**](#using-bitmaps-with-buttons).
 
 Все представления и привязки данных на странице « **Оформление кнопки»** определены в файле XAML:
 
@@ -748,9 +732,7 @@ public partial class ToggleButtonDemoPage : ContentPage
 
 [![Демонстрация выключателя](button-images/ToggleButtonDemo.png "Демонстрация выключателя")](button-images/ToggleButtonDemo-Large.png#lightbox)
 
-<a name="image-button" />
-
-## <a name="using-bitmaps-with-buttons"></a>Использование точечных рисунков с кнопками
+## <a name="using-bitmaps-with-buttons"></a>Использование растровых изображений в кнопках
 
 `Button`Класс определяет [`ImageSource`](xref:Xamarin.Forms.Button.Image) свойство, которое позволяет отображать точечный рисунок `Button` либо отдельно, либо в сочетании с текстом. Можно также указать способ упорядочения текста и изображения.
 

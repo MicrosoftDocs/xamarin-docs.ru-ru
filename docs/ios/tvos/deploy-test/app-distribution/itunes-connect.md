@@ -7,20 +7,20 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 01ab48f68656dcabdf2a6cfc286dfcd8850454f8
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 68c0fb9e034f432c619bc188553996bd7bacdee8
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030767"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84573694"
 ---
 # <a name="configure-your-tvos-app-in-itunes-connect"></a>Настройка приложения tvOS в iTunes Connect
 
 _В этой статье представлено дополнительное руководство по настройке приложения iOS в iTunes Connect для конфигураций, связанных с tvOS._
 
-В дополнение к конфигурациям и параметрам, которые необходимо выполнить, следуя указаниям в руководстве по [настройке приложения iOS в iTunes Connect](~/ios/deploy-test/app-distribution/app-store-distribution/itunesconnect.md) , в этом документе рассматриваются конкретные конфигурации, которые потребуется для выпуска приложения Xamarin. TvOS в приложении Apple TV. Сообщений.
+Помимо конфигураций и настроек, которые необходимо выполнить, следуя указаниям в руководстве по [настройке приложения iOS в iTunes Connect](~/ios/deploy-test/app-distribution/app-store-distribution/itunesconnect.md) , в этом документе рассматриваются конкретные конфигурации, которые потребуется для выпуска приложения Xamarin. TvOS в магазине приложений Apple TV.
 
-<a name="Adding-a-tvOS-Release-Version" />
+<a name="Adding-a-tvOS-Release-Version"></a>
 
 ## <a name="adding-a-tvos-release-version"></a>Добавление версии выпуска tvOS
 
@@ -44,7 +44,7 @@ _В этой статье представлено дополнительное 
 
 [![](itunes-connect-images/connect02.png "The tvOS specific information screen")](itunes-connect-images/connect02.png#lightbox)
 
-<a name="tvOS-Version-Information" />
+<a name="tvOS-Version-Information"></a>
 
 ## <a name="tvos-version-information"></a>Сведения о версии tvOS
 
@@ -64,7 +64,7 @@ _В этой статье представлено дополнительное 
 
 [![](itunes-connect-images/connect04.png "tvOS Version Information ready for submission")](itunes-connect-images/connect04.png#lightbox)
 
-<a name="Submitting-for-Review" />
+<a name="Submitting-for-Review"></a>
 
 ## <a name="preparing-to-submit-for-review"></a>Подготовка к отправке для проверки
 
@@ -72,7 +72,7 @@ _В этой статье представлено дополнительное 
 
 [![](itunes-connect-images/connect05.png "Submit for Review")](itunes-connect-images/connect05.png#lightbox)
 
-<a name="Summary" />
+<a name="Summary"></a>
 
 ## <a name="summary"></a>Сводка
 

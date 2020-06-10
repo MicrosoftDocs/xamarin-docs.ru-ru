@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/13/2017
-ms.openlocfilehash: b688d830ad345a347bf54b3d3bd450eb34fec7d3
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 0ca65c56a742aaf23874f581b976ef50b3d16192
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73028336"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84574344"
 ---
 # <a name="watchos-background-tasks-in-xamarin"></a>Фоновые задачи watchOS в Xamarin
 
@@ -24,7 +24,7 @@ ms.locfileid: "73028336"
 
 ## <a name="keeping-an-app-up-to-date"></a>Обновление приложения в актуальном состоянии
 
-Прежде чем обсуждать все способы сохранения данных и пользовательского интерфейса watchOS в приложении, в этом разделе рассматривается типичный набор шаблонов использования и способ перемещения пользователя между iPhone и их Apple Watch в течение дня на основе  время суток и выполняемые в данный момент действия (например, движущиеся).
+Прежде чем обсуждать все способы, которыми разработчик может оставлять данные и обновленный пользовательский интерфейс watchOS приложения, в этом разделе вы узнаете о типичном наборе шаблонов использования, а также о том, как пользователь может перемещаться между iPhone и их Apple Watch в течение дня в зависимости от времени суток и активности, выполняемой в данный момент (например, при движении).
 
 Рассмотрим следующий пример:
 
@@ -54,7 +54,7 @@ ms.locfileid: "73028336"
 
 Компания Apple рекомендует сделать большую часть этой задачи (так как это ограниченный ресурс для приложения), добавив его до тех пор, пока приложение не завершит процесс обновления.
 
-Система доставляет эти задачи, вызывая новый метод `HandleBackgroundTasks` делегата `WKExtensionDelegate`. Пример:
+Система доставляет эти задачи, вызывая новый `HandleBackgroundTasks` метод `WKExtensionDelegate` делегата. Пример.
 
 ```csharp
 using System;
@@ -86,7 +86,7 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 [![](background-tasks-images/update03.png "The Task returns to the system by marking it completed")](background-tasks-images/update03.png#lightbox)
 
-<a name="New-Background-Tasks" />
+<a name="New-Background-Tasks"></a>
 
 ## <a name="new-background-tasks"></a>Новые фоновые задачи
 
@@ -99,27 +99,27 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 Эти задачи будут подробно рассмотрены в следующих разделах.
 
-<a name="WKApplicationRefreshBackgroundTask" />
+<a name="WKApplicationRefreshBackgroundTask"></a>
 
 ### <a name="wkapplicationrefreshbackgroundtask"></a>вкаппликатионрефрешбаккграундтаск
 
-`WKApplicationRefreshBackgroundTask` — это универсальная задача, которая может запланировать пробуждении приложения в будущем:
+`WKApplicationRefreshBackgroundTask`— Это универсальная задача, которую можно запланировать на пробуждении приложения в будущем:
 
 [![](background-tasks-images/update04.png "A WKApplicationRefreshBackgroundTask woken at a future date")](background-tasks-images/update04.png#lightbox)
 
-В среде выполнения задачи приложение может выполнять любые локальные операции обработки, такие как обновление временной шкалы усложнения или выбор некоторых необходимых данных с `NSUrlSession`.
+В среде выполнения задачи приложение может выполнять любые локальные операции обработки, такие как обновление временной шкалы усложнения или выбор некоторых необходимых данных с помощью `NSUrlSession` .
 
-<a name="WKURLSessionRefreshBackgroundTask" />
+<a name="WKURLSessionRefreshBackgroundTask"></a>
 
 ### <a name="wkurlsessionrefreshbackgroundtask"></a>вкурлсессионрефрешбаккграундтаск
 
-Система отправит `WKURLSessionRefreshBackgroundTask`, когда данные будут скачаны и готовы к обработке приложением:
+Система отправит сообщение `WKURLSessionRefreshBackgroundTask` после того, как данные будут загружены и готовы к обработке приложением:
 
 [![](background-tasks-images/update05.png "The WKURLSessionRefreshBackgroundTask when the data has finished downloading")](background-tasks-images/update05.png#lightbox)
 
 Приложение не осталось работать, пока данные скачиваются в фоновом режиме. Вместо этого приложение планирует запрос данных, затем приостанавливается и система обрабатывает загрузку данных, выполняя только после завершения загрузки приложение.
 
-<a name="WKSnapshotRefreshBackgroundTask" />
+<a name="WKSnapshotRefreshBackgroundTask"></a>
 
 ### <a name="wksnapshotrefreshbackgroundtask"></a>вкснапшотрефрешбаккграундтаск
 
@@ -127,17 +127,17 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 [![](background-tasks-images/update06.png "Replacing the Snapshot with the running apps interface")](background-tasks-images/update06.png#lightbox)
 
-Система периодически получает снимки пользовательского интерфейса приложения (путем отправки `WKSnapshotRefreshBackgroundTask`) и использует эти моментальные снимки для заполнения закрепления. watchOS предоставляет приложению возможность обновить содержимое и пользовательский интерфейс перед созданием моментального снимка.
+Система периодически получает снимки пользовательского интерфейса приложения (путем отправки `WKSnapshotRefreshBackgroundTask` ) и использует эти моментальные снимки для заполнения закрепления. watchOS предоставляет приложению возможность обновить содержимое и пользовательский интерфейс перед созданием моментального снимка.
 
 Моментальные снимки очень важны в watchOS 3, так как они работают как образы для предварительного просмотра и запуска приложения. Если пользователь выполняет сопоставление в приложении в закрепления, он разворачивается в полноэкранный режим, выполняется переход на передний план и начинается выполнение, поэтому крайне важно, чтобы моментальный снимок был обновлен:
 
 [![](background-tasks-images/update07.png "If the user settles on an app in the Dock, it will expand to full screen")](background-tasks-images/update07.png#lightbox)
 
-Опять же, система выдаст `WKSnapshotRefreshBackgroundTask`, чтобы приложение могла подготовиться (путем обновления данных и пользовательского интерфейса) до создания моментального снимка:
+Опять же, система выдаст a, `WKSnapshotRefreshBackgroundTask` чтобы приложение может подготовиться (путем обновления данных и пользовательского интерфейса) до создания моментального снимка:
 
 [![](background-tasks-images/update08.png "The app can prepare by updating the data and the UI before the snapshot is taken")](background-tasks-images/update08.png#lightbox)
 
-Когда приложение помечает `WKSnapshotRefreshBackgroundTask` завершено, система автоматически создаст моментальный снимок пользовательского интерфейса приложения.
+Когда приложение помечает `WKSnapshotRefreshBackgroundTask` завершенное, система автоматически создаст моментальный снимок пользовательского интерфейса приложения.
 
 > [!IMPORTANT]
 > Важно всегда планировать `WKSnapshotRefreshBackgroundTask` после того, как приложение получит новые данные и обновило пользовательский интерфейс, или пользователь не увидит измененную информацию.
@@ -150,25 +150,25 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 <!--TODO - Possibly link to Apple's Designing Great Apple Watch Experiences video or add our own version here...-->
 
-<a name="WKWatchConnectivityRefreshBackgroundTask" />
+<a name="WKWatchConnectivityRefreshBackgroundTask"></a>
 
 ### <a name="wkwatchconnectivityrefreshbackgroundtask"></a>вкватчконнективитирефрешбаккграундтаск
 
-В watchOS 3 Компания Apple имеет интегрированное наблюдение за подключением к API фонового обновления через новый `WKWatchConnectivityRefreshBackgroundTask`. С помощью этой новой функции приложение iPhone может предоставлять новые данные на свой аналог приложения для просмотра, пока приложение watchOS выполняется в фоновом режиме:
+В watchOS 3 Компания Apple имеет интегрированное наблюдение за подключением к API фонового обновления через новый `WKWatchConnectivityRefreshBackgroundTask` . С помощью этой новой функции приложение iPhone может предоставлять новые данные на свой аналог приложения для просмотра, пока приложение watchOS выполняется в фоновом режиме:
 
 [![](background-tasks-images/update10.png "An iPhone app can deliver fresh data to its watch app counterpart, while the watchOS app is running in the background")](background-tasks-images/update10.png#lightbox)
 
 Запуск принудительной отправки, контекст приложения, Отправка файла или обновление сведений о пользователе из приложения iPhone приведет к пробуждать Apple Watch приложение в фоновом режиме.
 
-Когда приложение Watch пробуждении через `WKWatchConnectivityRefreshBackgroundTask`, для получения данных из приложения iPhone потребуется использовать стандартные методы API.
+Когда приложение Watch пробуждении через, `WKWatchConnectivityRefreshBackgroundTask` ему потребуется использовать стандартные методы API для получения данных из приложения iPhone.
 
 [![](background-tasks-images/update11.png "The WKWatchConnectivityRefreshBackgroundTask data flow")](background-tasks-images/update11.png#lightbox)
 
 1. Убедитесь, что сеанс активирован.
-2. Наблюдение за новым свойством `HasContentPending` при условии, что значение `true`, приложение по-прежнему содержит данные для обработки. Как и ранее, приложение должно удерживать задачу до завершения обработки всех данных.
-3. Если больше нет данных для обработки (`HasContentPending = false`), пометьте задачу как выполненную, чтобы вернуть ее в систему. Невыполнение этого действия приведет к исчерпанию выделенной фоновой среды выполнения приложения, в результате чего будет получен отчет о сбое.
+2. Отслеживайте новое `HasContentPending` свойство, если оно имеет значение `true` , приложение по-прежнему содержит данные для обработки. Как и ранее, приложение должно удерживать задачу до завершения обработки всех данных.
+3. Если больше нет данных для обработки ( `HasContentPending = false` ), пометьте задачу как выполненную, чтобы вернуть ее в систему. Невыполнение этого действия приведет к исчерпанию выделенной фоновой среды выполнения приложения, в результате чего будет получен отчет о сбое.
 
-<a name="The-Background-API-Lifecycle" />
+<a name="The-Background-API-Lifecycle"></a>
 
 ## <a name="the-background-api-lifecycle"></a>Фоновый жизненный цикл API
 
@@ -179,10 +179,10 @@ namespace MonkeyWatch.MonkeySeeExtension
 1. Во-первых, приложение watchOS планирует, чтобы фоновая задача вернулся к активности в будущем.
 2. Приложение пробуждении системой и отправило задачу.
 3. Приложение обрабатывает задачу для выполнения любой необходимой работы.
-4. В результате обработки задачи приложению может потребоваться запланировать больше фоновых задач, чтобы выполнить дополнительную работу в будущем, например загрузить дополнительное содержимое с помощью `NSUrlSession`.
+4. В результате обработки задачи приложению может потребоваться запланировать больше фоновых задач, чтобы выполнить дополнительную работу в будущем, например загрузить дополнительное содержимое с помощью `NSUrlSession` .
 5. Приложение помечает задачу как завершенную и возвращает ее в систему.
 
-<a name="Using-Resources-Responsibly" />
+<a name="Using-Resources-Responsibly"></a>
 
 ## <a name="using-resources-responsibly"></a>Использование ресурсов в качестве ответственного
 
@@ -199,7 +199,7 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 Хотя каждое приложение отличается, Apple предлагает найти закономерности использования, как показано выше, чтобы помочь экономить системные ресурсы.
 
-<a name="Implementing-Background-Tasks" />
+<a name="Implementing-Background-Tasks"></a>
 
 ## <a name="implementing-background-tasks"></a>Реализация фоновых задач
 
@@ -217,7 +217,7 @@ namespace MonkeyWatch.MonkeySeeExtension
 4. Один и тот же процесс повторяется снова.
 5. Получается последняя фоновая задача, и приложение снова обновляет свои данные и пользовательский интерфейс. Так как это окончательная оценка, она не запланирует новое фоновое обновление. 
 
-<a name="Scheduling-for-Background-Update" />
+<a name="Scheduling-for-Background-Update"></a>
 
 ## <a name="scheduling-for-background-update"></a>Планирование фонового обновления
 
@@ -246,11 +246,11 @@ private void ScheduleNextBackgroundUpdate ()
 }
 ```
 
-Он создает новый `NSDate` 30 минут в будущем, когда приложение хочет быть пробудится, и создает `NSMutableDictionary` для хранения сведений о запрошенной задаче. Для запроса задачи по расписанию используется метод `ScheduleBackgroundRefresh` `SharedExtension`.
+Он создает `NSDate` 30 минут в будущем, когда приложение хочет быть пробудится, и создает объект `NSMutableDictionary` для хранения сведений о запрошенной задаче. `ScheduleBackgroundRefresh`Метод класса `SharedExtension` используется для запроса задачи в расписании.
 
-Система возвратит `NSError`, если не удалось запланировать запрошенную задачу.
+Система возвратит, `NSError` если не удалось запланировать запрошенную задачу.
 
-<a name="Processing-the-Update" />
+<a name="Processing-the-Update"></a>
 
 ## <a name="processing-the-update"></a>Обработка обновления
 
@@ -264,7 +264,7 @@ private void ScheduleNextBackgroundUpdate ()
 4. Приложение сохраняет обновленные сведения и помечает задачу как завершенную. В настоящее время разработчик может обновить пользовательский интерфейс приложения, однако Apple предлагает планировать задачу создания моментального снимка для обработки этого процесса. См. раздел [Планирование обновления моментального снимка](#Scheduling-a-Snapshot-Update) ниже.
 5. Приложение получает задачу моментального снимка, обновляет пользовательский интерфейс и помечает задачу как завершенную. См. раздел [обработка обновления моментального снимка](#Handling-a-Snapshot-Update) ниже.
 
-<a name="Scheduling-a-NSUrlSession" />
+<a name="Scheduling-a-NSUrlSession"></a>
 
 ## <a name="scheduling-a-nsurlsession"></a>Планирование NSUrlSession
 
@@ -285,13 +285,13 @@ private void ScheduleURLUpdateSession ()
 }
 ```
 
-Он настраивает и создает новый `NSUrlSession`, а затем использует этот сеанс для создания новой задачи загрузки с помощью метода `CreateDownloadTask`. Он вызывает метод `Resume` задачи скачивания для запуска сеанса.
+Он настраивает и создает новый `NSUrlSession` , а затем использует этот сеанс для создания новой задачи скачивания с помощью `CreateDownloadTask` метода. Он вызывает `Resume` метод задачи скачивания для запуска сеанса.
 
-<a name="Handling-Background-Tasks" />
+<a name="Handling-Background-Tasks"></a>
 
 ## <a name="handling-background-tasks"></a>Обработка фоновых задач
 
-Переопределяя метод `HandleBackgroundTasks` `WKExtensionDelegate`, приложение может обрабатывать входящие фоновые задачи:
+Переопределяя `HandleBackgroundTasks` метод `WKExtensionDelegate` , приложение может обрабатывать входящие фоновые задачи:
 
 ```csharp
 using System;
@@ -347,7 +347,7 @@ namespace MonkeySoccer.MonkeySoccerExtension
 }
 ```
 
-Метод `HandleBackgroundTasks` циклически проходит по всем задачам, которые система послала приложению (в `backgroundTasks`) Поиск `WKUrlSessionRefreshBackgroundTask`. Если он найден, он повторно присоединяется к сеансу и присоединяет `NSUrlSessionDownloadDelegate` для завершения загрузки (см. раздел [Обработка загрузки, завершенной](#Handling-the-Download-Completing) ниже):
+`HandleBackgroundTasks`Метод циклически проходит по всем задачам, которые система отправила приложению (в `backgroundTasks` ) поиск `WKUrlSessionRefreshBackgroundTask` . Если он найден, он повторно присоединяется к сеансу и присоединяется `NSUrlSessionDownloadDelegate` для завершения загрузки (см. раздел [Обработка загрузки, завершенной](#Handling-the-Download-Completing) ниже).
 
 ```csharp
 // Create new session
@@ -375,11 +375,11 @@ if (urlTask != null) {
 }
 ```
 
-<a name="Handling-the-Download-Completing" />
+<a name="Handling-the-Download-Completing"></a>
 
 ## <a name="handling-the-download-completing"></a>Обработка завершения загрузки
 
-Приложение Монкэйсокцер использует следующий делегат `NSUrlSessionDownloadDelegate` для обработки завершения загрузки и обработки запрошенных данных:
+Приложение Монкэйсокцер использует следующий `NSUrlSessionDownloadDelegate` делегат для обработки завершения загрузки и обработки запрошенных данных:
 
 ```csharp
 using System;
@@ -420,9 +420,9 @@ namespace MonkeySoccer.MonkeySoccerExtension
 }
 ```
 
-При инициализации он сохраняет маркер как для `ExtensionDelegate`, так и для `WKRefreshBackgroundTask`, который его породил. Он переопределяет метод `DidFinishDownloading` для завершения загрузки. Затем использует метод `CompleteTask` `ExtensionDelegate`, чтобы уведомить о завершении задачи и удалить ее из коллекции ожидающих задач. См. раздел [Обработка фоновых задач](#Handling-Background-Tasks) выше.
+При инициализации он сохраняет маркер как для, так и для `ExtensionDelegate` `WKRefreshBackgroundTask` порожденного. Он переопределяет `DidFinishDownloading` метод для завершения загрузки. Затем использует `CompleteTask` метод объекта, `ExtensionDelegate` чтобы уведомить о завершении задачи и удалить ее из коллекции ожидающих задач. См. раздел [Обработка фоновых задач](#Handling-Background-Tasks) выше.
 
-<a name="Scheduling-a-Snapshot-Update" />
+<a name="Scheduling-a-Snapshot-Update"></a>
 
 ## <a name="scheduling-a-snapshot-update"></a>Планирование обновления моментального снимка
 
@@ -451,15 +451,15 @@ private void ScheduleSnapshotUpdate ()
 }
 ```
 
-Как и в случае с `ScheduleURLUpdateSession`ным методом, он создает новую `NSDate`, когда приложение хочет быть пробудится, и создает `NSMutableDictionary` для хранения сведений о запрошенной задаче. Для запроса задачи по расписанию используется метод `ScheduleSnapshotRefresh` `SharedExtension`.
+Как и `ScheduleURLUpdateSession` метод выше, он создает новый `NSDate` для, когда приложение хочет быть пробудится, и создает объект `NSMutableDictionary` для хранения сведений о запрошенной задаче. `ScheduleSnapshotRefresh`Метод класса `SharedExtension` используется для запроса задачи в расписании.
 
-Система возвратит `NSError`, если не удалось запланировать запрошенную задачу.
+Система возвратит, `NSError` если не удалось запланировать запрошенную задачу.
 
-<a name="Handling-a-Snapshot-Update" />
+<a name="Handling-a-Snapshot-Update"></a>
 
 ## <a name="handling-a-snapshot-update"></a>Обработка обновления моментального снимка
 
-Для обработки задачи «моментальный снимок» метод `HandleBackgroundTasks` (см. раздел [Обработка фоновых задач](#Handling-Background-Tasks) выше) изменяется так, чтобы выглядеть следующим образом:
+Для обработки задачи «моментальный снимок» `HandleBackgroundTasks` метод (см. раздел [Обработка фоновых задач](#Handling-Background-Tasks) выше) изменяется так, чтобы выглядеть следующим образом:
 
 ```csharp
 public override void HandleBackgroundTasks (NSSet<WKRefreshBackgroundTask> backgroundTasks)
@@ -502,22 +502,22 @@ public override void HandleBackgroundTasks (NSSet<WKRefreshBackgroundTask> backg
 }
 ```
 
-Метод проверяет тип обрабатываемой задачи. Если это `WKSnapshotRefreshBackgroundTask` он получает доступ к задаче:
+Метод проверяет тип обрабатываемой задачи. Если это так, `WKSnapshotRefreshBackgroundTask` он получает доступ к задаче:
 
 ```csharp
 var snapshotTask = task as WKSnapshotRefreshBackgroundTask;
 ```
 
-Метод обновляет пользовательский интерфейс, а затем создает `NSDate`, чтобы сообщить системе, когда моментальный снимок будет устаревшим. Он создает `NSMutableDictionary` со сведениями о пользователе для описания нового моментального снимка и помечает задачу моментального снимка как завершенную с помощью этих сведений:
+Метод обновляет пользовательский интерфейс, а затем создает, `NSDate` чтобы сообщить системе, когда моментальный снимок будет устаревшим. Он создает со сведениями `NSMutableDictionary` о пользователе для описания нового моментального снимка и помечает задачу snapshot, которая была выполнена с помощью этих сведений:
 
 ```csharp
 // Mark task complete
 snapshotTask.SetTaskCompleted (false, expirationDate, userInfo);
 ```
 
-Кроме того, он сообщает задаче моментального снимка, что приложение не возвращается в состояние по умолчанию (в первом параметре). Приложения, не имеющие концепции состояния по умолчанию, должны всегда устанавливать это свойство в значение `true`.
+Кроме того, он сообщает задаче моментального снимка, что приложение не возвращается в состояние по умолчанию (в первом параметре). Приложения, не имеющие концепции состояния по умолчанию, должны всегда устанавливать для этого свойства значение `true` .
 
-<a name="Working-Efficiently" />
+<a name="Working-Efficiently"></a>
 
 ## <a name="working-efficiently"></a>Эффективная работа
 
@@ -527,7 +527,7 @@ snapshotTask.SetTaskCompleted (false, expirationDate, userInfo);
 
 Это снижает влияние приложения на доступное Apple Watch ресурсы и время работы батареи, а также позволяет приложению работать лучше с другими приложениями, работающими на часах.
 
-<a name="How-Scheduling-Works" />
+<a name="How-Scheduling-Works"></a>
 
 ## <a name="how-scheduling-works"></a>Как работает планирование
 
@@ -541,9 +541,9 @@ snapshotTask.SetTaskCompleted (false, expirationDate, userInfo);
 - Все приложения, превышающие ограничения, будут уничтожены следующими кодами ошибок:
   - **ЦП** — 0xc51bad01
   - **Время** — 0xc51bad02
-- Система будет накладывать различные ограничения в зависимости от типа фоновой задачи, которая запросила выполнение приложения. Например, задачи `WKApplicationRefreshBackgroundTask` и `WKURLSessionRefreshBackgroundTask` предоставляются несколько более длинными средами выполнения по сравнению с другими типами фоновых задач.
+- Система будет накладывать различные ограничения в зависимости от типа фоновой задачи, которая запросила выполнение приложения. Например, `WKApplicationRefreshBackgroundTask` и `WKURLSessionRefreshBackgroundTask` задачи получают несколько более длинных сред выполнения по отношению к другим типам фоновых задач.
 
-<a name="Complications-and-App-Updates" />
+<a name="Complications-and-App-Updates"></a>
 
 ### <a name="complications-and-app-updates"></a>Сложности и обновления приложений
 
@@ -558,7 +558,7 @@ snapshotTask.SetTaskCompleted (false, expirationDate, userInfo);
 
 Разработчик всегда должен стремиться к созданию привлекательных осложнений для своих приложений, чтобы заставить пользователя добавлять их к наблюдателю по указанным выше причинам.
 
-В watchOS 2 сложности были основным способом получения приложением среды выполнения в фоновом режиме. В watchOS 3 приложение с усложнением по-прежнему будет поддерживать получение нескольких обновлений в час, однако оно может использовать `WKExtensions`, чтобы запросить больше времени выполнения для обновления своих осложнений.
+В watchOS 2 сложности были основным способом получения приложением среды выполнения в фоновом режиме. В watchOS 3 приложение с усложнением по-прежнему будет поддерживать получение нескольких обновлений в час, однако оно может использовать, `WKExtensions` чтобы запросить больше времени выполнения для обновления своих осложнений.
 
 Рассмотрим следующий код, который используется для обновления сложности из подключенного приложения iPhone:
 
@@ -603,9 +603,9 @@ private void UpdateComplication ()
 }
 ```
 
-В нем используется свойство `RemainingComplicationUserInfoTransfers` `WCSession`, чтобы увидеть, сколько высокоприоритетных передач в приложении осталось для дня, а затем принимает действие на основе этого числа. Если приложение начинает работать с низким уровнем передачи, оно может удерживать незначительные обновления и отправлять сведения только при значительном изменении.
+Он использует `RemainingComplicationUserInfoTransfers` свойство объекта, `WCSession` чтобы увидеть, сколько высокоприоритетных операций передачи приложения осталось в течение дня, а затем принимает действие на основе этого числа. Если приложение начинает работать с низким уровнем передачи, оно может удерживать незначительные обновления и отправлять сведения только при значительном изменении.
 
-<a name="Scheduling-and-Dock" />
+<a name="Scheduling-and-Dock"></a>
 
 ### <a name="scheduling-and-the-dock"></a>Планирование и закрепление
 
@@ -636,7 +636,7 @@ private void UpdateComplication ()
 - Через один час в фоновом состоянии приложение может вернуться к состоянию по умолчанию.
 - При первой загрузке watchOS.
 
-<a name="Best-Practices" />
+<a name="Best-Practices"></a>
 
 ## <a name="best-practices"></a>Рекомендации 
 
@@ -651,11 +651,11 @@ private void UpdateComplication ()
   - Фоновое обновление.
 - Используйте `ScheduleBackgroundRefresh` для фоновой среды выполнения общего назначения, например:
   - Опрос системы для получения сведений.
-  - Запланируйте будущие `NSURLSessions` для запроса данных в фоновом режиме. 
+  - Запланируйте будущее `NSURLSessions` для запроса данных в фоновом режиме. 
   - Известные переходы по времени.
   - Активация обновлений усложнения.
 
-<a name="Snapshot-Best-Practices" />
+<a name="Snapshot-Best-Practices"></a>
 
 ## <a name="snapshot-best-practices"></a>Рекомендации по созданию моментальных снимков
 
@@ -664,7 +664,7 @@ private void UpdateComplication ()
 - Делать моментальные снимки недействительными, например при наличии значительных изменений содержимого.
 - Избегайте недействительности моментальных снимков с высокой частотой. Например, приложение таймера не должно обновлять моментальный снимок каждую секунду, оно должно выполняться только после завершения таймера.
 
-<a name="App-Data-Flow" />
+<a name="App-Data-Flow"></a>
 
 ## <a name="app-data-flow"></a>Поток данных приложения
 
@@ -672,9 +672,9 @@ private void UpdateComplication ()
 
 [![](background-tasks-images/update17.png "App Data Flow Diagram")](background-tasks-images/update17.png#lightbox)
 
-Внешнее событие (например, просмотр подключения) выводит приложение из спящего режима. Это заставляет приложение обновить свою модель данных (которая представляет текущее состояние приложений). В результате изменения модели данных приложению потребуется обновить свои сложности, запросить новый моментальный снимок, возможно, запустить фоновый `NSURLSession` для получения дополнительных данных и планирования дальнейших обновлений в фоновом режиме.
+Внешнее событие (например, просмотр подключения) выводит приложение из спящего режима. Это заставляет приложение обновить свою модель данных (которая представляет текущее состояние приложений). В результате изменения модели данных приложению потребуется обновить свои сложности, запросить новый моментальный снимок, возможно, запустить фоновый режим `NSURLSession` для получения дополнительных данных и планирования дальнейшего обновления в фоновом режиме.
 
-<a name="The-App-Lifecycle" />
+<a name="The-App-Lifecycle"></a>
 
 ## <a name="the-app-lifecycle"></a>Жизненный цикл приложения
 
@@ -683,7 +683,7 @@ private void UpdateComplication ()
 Компания Apple имеет следующие рекомендации.
 
 - Убедитесь, что приложение заканчивает фоновую задачу как можно скорее при переходе на передний план активации.
-- Обязательно завершите все фоновые работы, прежде чем вводить фон, вызвав `NSProcessInfo.PerformExpiringActivity`.
+- Обязательно завершите все фоновые работы, прежде чем вводить фон, вызвав `NSProcessInfo.PerformExpiringActivity` .
 - При тестировании приложения в симуляторе watchOS ни один из бюджетов задач не будет применен, поэтому приложение может обновляться так, как необходимо для правильного тестирования функции.
 - Всегда проверяйте реальное Apple Watch оборудование, чтобы убедиться, что приложение не работает за прерядом бюджетов перед публикацией в iTunes Connect.
 - Компания Apple предлагает сохранить Apple Watch на зарядном устройство во время тестирования и отладки.
@@ -691,7 +691,7 @@ private void UpdateComplication ()
 - Убедитесь, что все задачи приложения завершены.
 - Изменяйте количество приложений, закрепленных в закреплениях, для тестирования наиболее подходящих и худших сценариев.
 
-<a name="Summary" />
+<a name="Summary"></a>
 
 ## <a name="summary"></a>Сводка
 

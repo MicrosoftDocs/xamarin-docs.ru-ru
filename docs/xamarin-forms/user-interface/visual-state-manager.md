@@ -1,24 +1,9 @@
 ---
-title: Xamarin.FormsДиспетчер визуальных состояний
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-ms.custom: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 13dd0a3f5d665e2232e7e6e12edac7cf117dd0ca
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127287"
+Title: " Xamarin.Forms Описание диспетчера визуального состояния". Используйте Диспетчер визуальных состояний для внесения изменений в элементы XAML на основе визуальных состояний, заданных из кода. "
+MS. произв. Xamarin MS. AssetID: 17296F14-640D-484B-A24C-A4E9B7013E4F MS. Technology: Xamarin-Forms MS. Custom: ксаму — автор видео: давидбритч MS. author: дабритч МС. Дата: 02/21/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
-# <a name="xamarinforms-visual-state-manager"></a>Xamarin.FormsДиспетчер визуальных состояний
+
+# <a name="xamarinforms-visual-state-manager"></a>Диспетчер визуального представления состояний Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-vsmdemos)
 
@@ -409,41 +394,13 @@ Xamarin.FormsДиспетчер визуальных состояний опре
 В следующей таблице перечислены визуальные состояния, определенные в Xamarin.Forms .
 
 | Класс | Состояния | Дополнительные сведения |
-| ----- | ---
-Title: " Xamarin.Forms Диспетчер визуального состояния" Описание: MS. произ: MS. AssetID: MS. Technology: MS. Custom: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
---- | Заголовок---: " Xamarin.Forms Описание диспетчера визуального состояния": MS. произв. MS. AssetID: MS. Technology: MS. Custom: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: " Xamarin.Forms Диспетчер визуального состояния" Описание: MS. произ: MS. AssetID: MS. Technology: MS. Custom: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: " Xamarin.Forms Диспетчер визуального состояния" Описание: MS. произ: MS. AssetID: MS. Technology: MS. Custom: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: " Xamarin.Forms Диспетчер визуального состояния" Описание: MS. произ: MS. AssetID: MS. Technology: MS. Custom: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: " Xamarin.Forms Диспетчер визуального состояния" Описание: MS. произ: MS. AssetID: MS. Technology: MS. Custom: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: " Xamarin.Forms Диспетчер визуального состояния" Описание: MS. произ: MS. AssetID: MS. Technology: MS. Custom: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--------- | | `Button` | `Pressed` |  [Визуальные состояния кнопки](~/xamarin-forms/user-interface/button.md#button-visual-states) | | `CheckBox` | `IsChecked` |  [Визуальные состояния флажка](~/xamarin-forms/user-interface/checkbox.md#checkbox-visual-states) | | `CarouselView`  |  `DefaultItem` , `CurrentItem` , `PreviousItem` , `NextItem`  |  [Карауселвиев визуальные состояния](~/xamarin-forms/user-interface/carouselview/interaction.md#define-visual-states) | `ImageButton`  |  | `Pressed`  |  [Визуальные состояния ImageButton](~/xamarin-forms/user-interface/imagebutton.md#imagebutton-visual-states) | | `RadioButton` | `IsChecked` |  [Визуальные состояния RadioButton](~/xamarin-forms/user-interface/radiobutton.md#radiobutton-visual-states) | | `VisualElement`  |  `Normal` , `Disabled` , `Focused` , `Selected`  |  [Распространенные состояния](#common-states) |
+| ----- | ------ | ---------------- |
+| `Button` | `Pressed` | [Визуальные состояния кнопки](~/xamarin-forms/user-interface/button.md#button-visual-states) |
+| `CheckBox` | `IsChecked` | [Визуальные состояния флажка](~/xamarin-forms/user-interface/checkbox.md#checkbox-visual-states) |
+| `CarouselView` | `DefaultItem`, `CurrentItem`, `PreviousItem`, `NextItem` | [Визуальные состояния Карауселвиев](~/xamarin-forms/user-interface/carouselview/interaction.md#define-visual-states) |
+| `ImageButton` | `Pressed` | [Визуальные состояния ImageButton](~/xamarin-forms/user-interface/imagebutton.md#imagebutton-visual-states) |
+| `RadioButton` | `IsChecked` | [Визуальные состояния RadioButton](~/xamarin-forms/user-interface/radiobutton.md#radiobutton-visual-states) |
+| `VisualElement` | `Normal`, `Disabled`, `Focused`, `Selected` | [Распространенные состояния](#common-states) |
 
 Доступ к каждому из этих состояний можно получить с помощью группы визуального состояния с именем `CommonStates` .
 
@@ -626,7 +583,7 @@ public partial class VsmValidationPage : ContentPage
 
 Триггеры состояния добавляются в коллекцию [`StateTriggers`](xref:Xamarin.Forms.VisualState.StateTriggers) [`VisualState`](xref:Xamarin.Forms.VisualState). Эта коллекция может содержать один или несколько триггеров состояния. При наличии активных триггеров состояния в коллекции будет применяться [`VisualState`](xref:Xamarin.Forms.VisualState).
 
-При использовании триггеров состояния для управления визуальными состояниями Xamarin.Forms службы используют следующие правила приоритета, чтобы определить, какой триггер (и соответствующий [`VisualState`](xref:Xamarin.Forms.VisualState) ) будут активны:
+При использовании триггеров состояния для управления визуальными состояниями Xamarin.Forms применяет следующие правила приоритета, чтобы определить, какой триггер (и соответственно [`VisualState`](xref:Xamarin.Forms.VisualState)) будет активен:
 
 1. Любой триггер, производный от [`StateTriggerBase`](xref:Xamarin.Forms.StateTriggerBase).
 1. [`AdaptiveTrigger`](xref:Xamarin.Forms.AdaptiveTrigger) активируется из-за выполнения условия [`MinWindowWidth`](xref:Xamarin.Forms.AdaptiveTrigger.MinWindowWidth).
@@ -634,9 +591,7 @@ public partial class VsmValidationPage : ContentPage
 
 Если одновременно активны несколько триггеров (например, два пользовательских триггера), то у первого триггера, объявленного в разметке, будет приоритет.
 
-Дополнительные сведения о триггерах состояния см. в разделе [триггеры состояния](~/xamarin-forms/app-fundamentals/triggers.md#state-triggers).
-
-<a name="adaptive-layout" />
+Дополнительные сведения о триггерах состояния см. в разделе [Триггеры состояния](~/xamarin-forms/app-fundamentals/triggers.md#state-triggers).
 
 ## <a name="use-the-visual-state-manager-for-adaptive-layout"></a>Использование диспетчера визуальных состояний для адаптивного макета
 

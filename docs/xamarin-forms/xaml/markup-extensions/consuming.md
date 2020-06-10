@@ -1,35 +1,21 @@
 ---
-title: ''
-description: В этой статье объясняется, как использовать Xamarin.Forms расширения разметки XAML для расширения возможностей и гибкости XAML, разрешая установку атрибутов элементов из различных источников.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 7cd3a9d275919240fcaa7315d5043854df5529bb
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127326"
+Title: "использование расширений разметки XAML" Description: "в этой статье объясняется, как использовать Xamarin.Forms расширения разметки XAML для повышения степени и гибкости XAML, разрешая установку атрибутов элементов из различных источников".
+MS. произв. Xamarin MS. AssetID: CE686893-609C-4EC3-9225-6C68D2A9F79C MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/21/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="consuming-xaml-markup-extensions"></a>Использование расширений разметки XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
 
 Расширения разметки XAML помогают повысить степень гибкости и гибкость XAML, разрешая установку атрибутов элементов из различных источников. Несколько расширений разметки XAML являются частью спецификации XAML 2009. Они отображаются в файлах XAML с `x` префиксом пользовательского пространства имен и обычно называются этим префиксом. В этой статье рассматриваются следующие расширения разметки:
 
-- [`x:Static`](#static)— Ссылка на статические свойства, поля или члены перечисления.
-- [`x:Reference`](#reference)— ссылки на именованные элементы на странице.
-- [`x:Type`](#type)— Задайте атрибут для `System.Type` объекта.
-- [`x:Array`](#array)— Создание массива объектов определенного типа.
-- [`x:Null`](#null)— Присвойте атрибуту `null` значение.
-- [`OnPlatform`](#onplatform)— Настройка внешнего вида пользовательского интерфейса для отдельных платформ.
-- [`OnIdiom`](#onidiom)— Настройка внешнего вида пользовательского интерфейса на основе идиомы устройства, на котором работает приложение.
+- [`x:Static`](#xstatic-markup-extension)— Ссылка на статические свойства, поля или члены перечисления.
+- [`x:Reference`](#xreference-markup-extension)— ссылки на именованные элементы на странице.
+- [`x:Type`](#xtype-markup-extension)— Задайте атрибут для `System.Type` объекта.
+- [`x:Array`](#xarray-markup-extension)— Создание массива объектов определенного типа.
+- [`x:Null`](#xnull-markup-extension)— Присвойте атрибуту `null` значение.
+- [`OnPlatform`](#onplatform-markup-extension)— Настройка внешнего вида пользовательского интерфейса для отдельных платформ.
+- [`OnIdiom`](#onidiom-markup-extension)— Настройка внешнего вида пользовательского интерфейса на основе идиомы устройства, на котором работает приложение.
 - [`DataTemplate`](#datatemplate-markup-extension)— Преобразует тип в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) .
 - [`FontImage`](#fontimage-markup-extension)— отображать значок шрифта в любом представлении, которое может отображать `ImageSource` .
 - [`OnAppTheme`](#onapptheme-markup-extension)— использование ресурса на основе текущей системной темы.
@@ -43,8 +29,6 @@ ms.locfileid: "84127326"
 - `RelativeSource`— Задает источник привязки относительно положения целевого объекта привязки, как описано в статье [относительные привязки](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md).
 
 [`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout)Макет использует пользовательское расширение разметки [`ConstraintExpression`](xref:Xamarin.Forms.ConstraintExpression) . Это расширение разметки описано в статье [**RelativeLayout**](~/xamarin-forms/user-interface/layouts/relative-layout.md).
-
-<a name="static" />
 
 ## <a name="xstatic-markup-extension"></a>расширение разметки x:Static
 
@@ -150,8 +134,6 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 
 [![Демонстрация в виде x:Static](consuming-images/staticdemo-small.png "Демонстрация в виде x:Static")](consuming-images/staticdemo-large.png#lightbox "Демонстрация в виде x:Static")
 
-<a name="reference" />
-
 ## <a name="xreference-markup-extension"></a>расширение разметки x:Reference
 
 `x:Reference`Расширение разметки поддерживается [`ReferenceExtension`](xref:Xamarin.Forms.Xaml.ReferenceExtension) классом. Класс имеет одно свойство с именем [`Name`](xref:Xamarin.Forms.Xaml.ReferenceExtension.Name) типа `string` , которому задается имя элемента на странице, которому было присвоено имя `x:Name` . Это `Name` свойство является свойством Content объекта `ReferenceExtension` , поэтому `Name=` оно не является обязательным при `x:Reference` отображении в фигурных скобках.
@@ -194,15 +176,13 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 
 [![Демонстрация x:Reference](consuming-images/referencedemo-small.png "Демонстрация x:Reference")](consuming-images/referencedemo-large.png#lightbox "Демонстрация x:Reference")
 
-<a name="type" />
-
 ## <a name="xtype-markup-extension"></a>x:Type - расширение разметки
 
 `x:Type`Расширение разметки является эквивалентом XAML [`typeof`](/dotnet/csharp/language-reference/keywords/typeof/) ключевого слова C#. Он поддерживается [`TypeExtension`](xref:Xamarin.Forms.Xaml.TypeExtension) классом, который определяет одно свойство с именем [`TypeName`](xref:Xamarin.Forms.Xaml.TypeExtension.TypeName) типа `string` , для которого задано имя класса или структуры. `x:Type`Расширение разметки возвращает [`System.Type`](xref:System.Type) объект этого класса или структуры. `TypeName`свойство Content объекта `TypeExtension` , поэтому `TypeName=` не требуется, если `x:Type` отображается с фигурными скобками.
 
-В Xamarin.Forms существует несколько свойств с аргументами типа `Type` . Примеры включают [`TargetType`](xref:Xamarin.Forms.Style.TargetType) свойство класса `Style` и атрибут [x:TypeArguments](~/xamarin-forms/xaml/passing-arguments.md#generic_type_arguments) , используемый для указания аргументов в универсальных классах. Однако средство синтаксического анализа XAML автоматически выполняет `typeof` операцию, и `x:Type` в таких случаях расширение разметки не используется.
+В Xamarin.Forms существует несколько свойств с аргументами типа `Type` . Примеры включают [`TargetType`](xref:Xamarin.Forms.Style.TargetType) свойство класса `Style` и атрибут [x:TypeArguments](~/xamarin-forms/xaml/passing-arguments.md#specifying-a-generic-type-argument) , используемый для указания аргументов в универсальных классах. Однако средство синтаксического анализа XAML автоматически выполняет `typeof` операцию, и `x:Type` в таких случаях расширение разметки не используется.
 
-В одном месте `x:Type` *is* требуется `x:Array` расширение разметки, которое описано в [следующем разделе](#array).
+В одном месте `x:Type` *is* требуется `x:Array` расширение разметки, которое описано в [следующем разделе](#xarray-markup-extension).
 
 `x:Type`Расширение разметки также полезно при создании меню, в котором каждый элемент меню соответствует объекту определенного типа. Можно связать `Type` объект с каждым пунктом меню, а затем создать экземпляр объекта при выборе пункта меню.
 
@@ -332,8 +312,6 @@ public partial class TypeDemoPage : ContentPage
 
 [![x:Type — демонстрация](consuming-images/typedemo-small.png "x:Type — демонстрация")](consuming-images/typedemo-large.png#lightbox "x:Type — демонстрация")
 
-<a name="array" />
-
 ## <a name="xarray-markup-extension"></a>x:Array - расширение разметки
 
 `x:Array`Расширение разметки позволяет определить массив в разметке. Он поддерживается [`ArrayExtension`](xref:Xamarin.Forms.Xaml.ArrayExtension) классом, который определяет два свойства:
@@ -407,9 +385,7 @@ public partial class TypeDemoPage : ContentPage
 <local:HslColor H="0.5" S="1.0" L="0.5" />
 ```
 
-При определении массивов общих типов, таких как строки или числа, используйте теги, перечисленные в статье [**Передача аргументов конструктора**](~/xamarin-forms/xaml/passing-arguments.md#constructor_arguments) , чтобы разделить значения.
-
-<a name="null" />
+При определении массивов общих типов, таких как строки или числа, используйте теги, перечисленные в статье [**Передача аргументов конструктора**](~/xamarin-forms/xaml/passing-arguments.md#passing-constructor-arguments) , чтобы разделить значения.
 
 ## <a name="xnull-markup-extension"></a>x:Null - расширение разметки
 
@@ -464,8 +440,6 @@ public partial class TypeDemoPage : ContentPage
 
 Обратите внимание, что четыре элемента `Label` имеют шрифт с засечками, но у центра `Label` есть шрифт Sans-Serif по умолчанию.
 
-<a name="onplatform" />
-
 ## <a name="onplatform-markup-extension"></a>Расширение разметки для платформы
 
 Расширение разметки `OnPlatform` позволяет настраивать внешний вид пользовательского интерфейса для каждой платформы. Он предоставляет те же функциональные возможности [`OnPlatform`](xref:Xamarin.Forms.OnPlatform`1) , что и [`On`](xref:Xamarin.Forms.On) классы и, но с более кратким представлением.
@@ -505,8 +479,6 @@ public partial class TypeDemoPage : ContentPage
 Вот работающая программа:
 
 [![Демонстрационная демонстрация](consuming-images/onplatformdemo-small.png "Демонстрационная демонстрация")](consuming-images/onplatformdemo-large.png#lightbox "Демонстрационная демонстрация")
-
-<a name="onidiom" />
 
 ## <a name="onidiom-markup-extension"></a>Расширение разметки onidiomа
 
@@ -660,5 +632,5 @@ public partial class TypeDemoPage : ContentPage
 - [Словари ресурсов](~/xamarin-forms/xaml/resource-dictionaries.md)
 - [Динамические стили](~/xamarin-forms/user-interface/styles/dynamic.md)
 - [Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)
-- [Xamarin.FormsКонсоль](~/xamarin-forms/app-fundamentals/shell/index.md)
+- [Оболочка Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/index.md)
 - [Реагирование на изменения системных тем в Xamarin.Forms приложениях](~/xamarin-forms/user-interface/theming/system-theme-changes.md)

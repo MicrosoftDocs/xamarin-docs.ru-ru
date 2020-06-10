@@ -6,18 +6,18 @@ ms.assetid: 442FC40A-84DD-A218-0D15-EAD86594B6D7
 author: davidortinau
 ms.author: daortin
 ms.date: 01/28/2016
-ms.openlocfilehash: 551e9b1fc6298ddc2cf64e2e9ef60d90f6c1abac
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+ms.openlocfilehash: 2f7d09405f90ac9fc4c3ce80181baafa447df637
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76723767"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571248"
 ---
 # <a name="building-cross-platform-applications"></a>Создание кроссплатформенных приложений
 
 Существует два варианта совместного использования кода между многоплатформенными мобильными приложениями: проекты общих ресурсов и переносимые библиотеки классов. Эти параметры [обсуждаются здесь](~/cross-platform/app-fundamentals/code-sharing.md). также доступны дополнительные сведения о [переносимых библиотеках классов](~/cross-platform/app-fundamentals/pcl.md) и [общих проектах](~/cross-platform/app-fundamentals/shared-projects.md) .
 
-<a name="Sections" />
+<a name="Sections"></a>
 
  [Обзор](~/cross-platform/app-fundamentals/building-cross-platform-applications/overview.md)
 
@@ -31,22 +31,22 @@ ms.locfileid: "76723767"
 
  [Часть 5. практические рекомендации по совместному использованию кода](~/cross-platform/app-fundamentals/building-cross-platform-applications/practical-code-sharing-strategies.md)
 
- [Часть 6. Тестирование и утверждение магазина приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/testing-and-app-store-approvals.md)
+ [Часть 6. Тестирование и утверждение магазина приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/testing-and-app-store-approvals.md)
 
- <a name="Cross-Platform_Mobile_Application_Case_Studies" />
+ <a name="Cross-Platform_Mobile_Application_Case_Studies"></a>
 
 ## <a name="case-studies"></a>Примеры использования
 
 Принципы, описанные в этом документе, приводятся на практике к *задачам*примера приложения, а также к [предварительно созданным приложениям](https://xamarin.com/prebuilt) , таким как [Xamarin CRM](https://xamarin.com/prebuilt/#xamarincrm).
 
- <a name="Tasky" />
+ <a name="Tasky"></a>
 
 ### <a name="tasky"></a>Tasky
 
 Задача — это простое приложение списка задач для iOS, Android и Windows Phone.
 В нем демонстрируются основы создания кросс-платформенного приложения с помощью Xamarin и используется локальная база данных SQLite.
 
- [список задач](images/iphone-list-sml.png)](images/iphone-list.png#lightbox) [![списка](images/iphone-list-sml.png)](images/iphone-list.png#lightbox) задач![
+ [ ![ список задач](images/iphone-list-sml.png)](images/iphone-list.png#lightbox) [ ![ списка задач](images/iphone-list-sml.png)](images/iphone-list.png#lightbox)
 
 Прочтите [Пример использования задач](~/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky.md).
 
@@ -65,5 +65,5 @@ ms.locfileid: "76723767"
 - [Параметры общего доступа к коду](~/cross-platform/app-fundamentals/code-sharing.md)
 - [Практический пример: Tasky](~/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky.md)
 - [Пример приложения для задач (GitHub)](https://docs.microsoft.com/samples/xamarin/mobile-samples/taskyportable/)
-- [Разработка мобильных приложений Xamarin. Основные принципы работы C# различных платформ и Xamarin. Forms (Amazon)](https://www.amazon.com/Xamarin-Mobile-Application-Development-Cross-Platform/dp/1484202155/)
-- [Разработка мобильных приложений C# с помощью Грег Шакклес (O'Reilly)](https://shop.oreilly.com/product/0636920024002.do)
+- [Разработка мобильных приложений Xamarin. Основные принципы работы на разных платформах C# и Xamarin. Forms (Amazon)](https://www.amazon.com/Xamarin-Mobile-Application-Development-Cross-Platform/dp/1484202155/)
+- [Разработка мобильных приложений на C# с помощью Грег Шакклес (O'Reilly)](https://shop.oreilly.com/product/0636920024002.do)

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: aa376385b000b83a41fdcdc7a4d3c8bf1553f0a7
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 0d5ec4bc10747a287def3fd9a83a703d2ec4b2a2
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030481"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84572381"
 ---
 # <a name="working-with-tvos-navigation-bars-in-xamarin"></a>Работа с панелями навигации tvOS в Xamarin
 
@@ -20,18 +20,18 @@ ms.locfileid: "73030481"
 
 [![](navigation-bars-images/navbar01.png "Sample Navigation Bar")](navigation-bars-images/navbar01.png#lightbox)
 
-Помимо названия (отображаемого в центре), панели навигации могут содержать одну или несколько кнопок панели навигации (`UIBarButtonItem`) в левой и правой границах панели.
+В дополнение к названию (отображаемому в центре) панели навигации могут содержать одну или несколько кнопок панели навигации ( `UIBarButtonItem` ) в левой и правой частях панели.
 
 > [!IMPORTANT]
 > По умолчанию панели навигации полностью прозрачны. Следует соблюдать осторожность, чтобы содержимое панели навигации оставалось доступным для чтения над содержимым под ним. Например, когда содержимое в представлении таблицы или коллекции прокручивается под ним.
 
-<a name="Navigation-Bars-and-Storyboards" />
+<a name="Navigation-Bars-and-Storyboards"></a>
 
 ## <a name="navigation-bars-and-storyboards"></a>Панели навигации и раскадровки
 
 Самый простой способ работы с панелями навигации в приложении Xamarin. tvOS — добавить их в пользовательский интерфейс приложения с помощью конструктора iOS.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 1. В **панель решения**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **панель навигации** из **панели элементов** и поместите ее в представление в верхней части экрана:
@@ -48,7 +48,7 @@ ms.locfileid: "73030481"
     [![](navigation-bars-images/navbar05.png "A Bar Button Item Action")](navigation-bars-images/navbar05.png#lightbox)
 1. Сохраните изменения.
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 1. В **Обозреватель решений**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **панель навигации** из **панели элементов** и поместите ее в представление в верхней части экрана:
@@ -68,9 +68,9 @@ ms.locfileid: "73030481"
 -----
 
 > [!IMPORTANT]
-> Хотя можно назначить события, такие как `TouchUpInside`, элементу пользовательского интерфейса (например, Уибуттон) в конструкторе iOS, он никогда не будет вызываться, так как Apple TV не имеет сенсорного экрана или не поддерживает события касания. При создании обработчиков событий для элементов пользовательского интерфейса tvOS всегда следует использовать событие `Primary Action`.
+> Хотя можно назначить такие события, как `TouchUpInside` элемент пользовательского интерфейса (например, уибуттон) в конструкторе iOS, он никогда не будет вызываться, так как Apple TV не имеет сенсорного экрана или поддержки сенсорных событий. Следует всегда использовать `Primary Action` событие при создании обработчиков событий для элементов пользовательского интерфейса tvOS.
 
-В следующем коде приводится пример обработчиков событий для трех различных Барбуттонитемс: `ShowFirstHotel`, `ShowSecondHotel`и `ShowThirdHotel`. При щелчке по каждому элементу изменяется фоновое изображение `HotelImage`. Это редактируется в файле контроллера представления (пример `ViewController.cs`):
+В следующем коде приводится пример обработчиков событий для трех различных Барбуттонитемс: `ShowFirstHotel` , `ShowSecondHotel` и `ShowThirdHotel` . При щелчке по каждому элементу изменяется фоновое изображение `HotelImage` . Это редактируется в файле контроллера представления (пример `ViewController.cs` ):
 
 ```csharp
 using System;
@@ -121,11 +121,11 @@ namespace MySingleView
 }
 ```
 
-Пока свойство `Enabled` кнопки `true` и не охватывается другим элементом управления или представлением, его можно сделать с помощью Siri Remote.
+При условии, что `Enabled` свойство кнопки не `true` охватывается другим элементом управления или представлением, можно сделать элемент с фокусом с помощью Siri Remote.
 
 Дополнительные сведения о работе с раскадровками см. в статье [Hello, tvOS краткое руководство по началу работы](~/ios/tvos/get-started/hello-tvos.md).
 
-<a name="Summary" />
+<a name="Summary"></a>
 
 ## <a name="summary"></a>Сводка
 

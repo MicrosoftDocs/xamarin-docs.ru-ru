@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как приступить к созданию простой страницы, управляемой данными, с помощью Xamarin.Forms страниц данных.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 17cc67c7fcc89454ff8dcac9926617b4ed1f4b77
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84134398"
+Title: "начало работы со страницами данных" Описание: "в этой статье объясняется, как приступить к созданию простой страницы, управляемой данными, с помощью Xamarin.Forms страниц данных".
+MS. произв. Xamarin MS. AssetID: 6416E5FA-6384-4298-BAA1-A89381E47210 MS. Technology: автор Xamarin-Forms: давидбритч MS. author: дабритч MS. Дата: 12/01/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="getting-started-with-datapages"></a>начало работы со страницами с данными
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/Pages/DataPagesDemo)
@@ -54,7 +40,7 @@ ms.locfileid: "84134398"
 ```
 
 > [!IMPORTANT]
-> Также необходимо выполнить действия по [загрузке сборок темы (приведенных ниже)](#loadtheme) , добавив в iOS `AppDelegate` и Android некоторый стандартный код `MainActivity` . Это будет улучшено в будущих выпусках.
+> Также необходимо выполнить действия по [загрузке сборок темы (приведенных ниже)](#troubleshooting) , добавив в iOS `AppDelegate` и Android некоторый стандартный код `MainActivity` . Это будет улучшено в будущих выпусках.
 
 ## <a name="3-add-a-xaml-page"></a>3. Добавление страницы XAML
 
@@ -179,9 +165,7 @@ SetBinding (TitleProperty, new DataSourceBinding ("title"));
 
 Создавать темы с нуля немного сложнее, но будущие выпуски предварительной версии сделают это проще.
 
-## <a name="troubleshooting"></a>Устранение неполадок
-
-<a name="loadtheme" />
+## <a name="troubleshooting"></a>Диагностика
 
 ## <a name="could-not-load-file-or-assembly-xamarinformsthemelight-or-one-of-its-dependencies"></a>Не удалось загрузить файл или сборку Xamarin.Forms . Theme. Light ' или одна из его зависимостей
 

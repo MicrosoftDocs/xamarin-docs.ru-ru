@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как оптимизировать Xamarin.Forms макеты приложений для планшетов, а не для телефонов.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8ce5ba09f89c2bc84b7f6ba722f724ae39c0222e
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137943"
+Title: "макет для планшетных и классических приложений" Описание: "в этой статье объясняется, как оптимизировать Xamarin.Forms макеты приложений для планшетов, а не для телефонов".
+MS. произв. Xamarin MS. AssetID: D62F472B-4345-4983-8403-659A538B591F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/01/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="layout-for-tablet-and-desktop-apps"></a>Макет для планшетных и настольных приложений
 
 Xamarin.Formsподдерживает все типы устройств, доступные на поддерживаемых платформах, поэтому в дополнение к телефонам приложения также могут работать в:
@@ -27,10 +13,8 @@ Xamarin.Formsподдерживает все типы устройств, дос
 
 На этой странице кратко рассматриваются следующие вопросы:
 
-- Поддерживаемые [типы устройств](#Device_Types)и
-- [Оптимизация](#optimize) макетов для планшетов и телефонов.
-
-<a name="Device_Types" />
+- Поддерживаемые [типы устройств](#device-types)и
+- [Оптимизация](#optimize-for-tablet-and-desktop) макетов для планшетов и телефонов.
 
 ## <a name="device-types"></a>Типы устройств
 
@@ -64,9 +48,7 @@ Xamarin.FormsШаблон автоматически включает подде
 
 [![](tablet-images/splitscreen-sml.png "Windows Split Screen Example")](tablet-images/splitscreen.png#lightbox "Windows Split Screen Example")
 
-<a name="optimize" />
-
-## <a name="optimizing-for-tablet-and-desktop"></a>Оптимизация для планшетов и настольных компьютеров
+## <a name="optimize-for-tablet-and-desktop"></a>Оптимизация для планшетов и настольных компьютеров
 
 Вы можете настроить Xamarin.Forms Пользовательский интерфейс в зависимости от того, используется ли телефонное или планшетное или настольное устройство. Это означает, что вы можете оптимизировать взаимодействие с пользователем для больших экранных устройств, например планшетов и настольных компьютеров.
 
@@ -85,7 +67,7 @@ if (Device.Idiom == TargetIdiom.Phone)
 
 Этот подход можно расширить для внесения значительных изменений в отдельные макеты страниц или даже для отображения совершенно разных страниц на более крупных экранах.
 
-### <a name="leveraging-masterdetailpage"></a>Использование Мастердетаилпаже
+### <a name="leverage-masterdetailpage"></a>Использование Мастердетаилпаже
 
 [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage)Идеально подходит для более крупных экранов, особенно на iPad, где используется [`UISplitViewController`](xref:UIKit.UISplitViewController) для обеспечения собственного интерфейса iOS.
 

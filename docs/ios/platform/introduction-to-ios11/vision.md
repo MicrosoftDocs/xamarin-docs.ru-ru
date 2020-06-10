@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/31/2017
-ms.openlocfilehash: b58e7b1fffed3253d9765401d52f16b751db134d
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+ms.openlocfilehash: 89a21eec369691e5c6e1ec8ce2430d679b6b309d
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79306107"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84572147"
 ---
 # <a name="vision-framework-in-xamarinios"></a>Инфраструктура концепции в Xamarin. iOS
 
@@ -31,7 +31,7 @@ ms.locfileid: "79306107"
 
 Обнаружение и обнаружение лиц прямоугольников рассматриваются более подробно ниже.
 
-<a name="rectangles" />
+<a name="rectangles"></a>
 
 ## <a name="rectangle-detection"></a>Определение прямоугольника
 
@@ -39,9 +39,9 @@ ms.locfileid: "79306107"
 
 ### <a name="1-initialize-the-vision-request"></a>1. Инициализация запроса концепции
 
-В `ViewDidLoad`создайте `VNDetectRectanglesRequest`, который ссылается на метод `HandleRectangles`, который будет вызываться в конце каждого запроса:
+В `ViewDidLoad` Создайте объект `VNDetectRectanglesRequest` , который ссылается на `HandleRectangles` метод, который будет вызываться в конце каждого запроса:
 
-Необходимо также задать свойство `MaximumObservations`, в противном случае оно будет по умолчанию иметь значение 1, и будет возвращен только один результат.
+`MaximumObservations`Свойство также должно быть задано, в противном случае будет использоваться значение по умолчанию 1, и будет возвращен только один результат.
 
 ```csharp
 RectangleRequest = new VNDetectRectanglesRequest(HandleRectangles);
@@ -60,11 +60,11 @@ DispatchQueue.DefaultGlobalQueue.DispatchAsync(()=>{
 });
 ```
 
-Этот обработчик передает `ciImage` инфраструктуре концепции `VNDetectRectanglesRequest`, созданной на шаге 1.
+Этот обработчик передает объект `ciImage` в инфраструктуру концепции `VNDetectRectanglesRequest` , созданную на шаге 1.
 
 ### <a name="3-handle-the-results-of-vision-processing"></a>3. обработка результатов обработки концепции
 
-После завершения обнаружения прямоугольника платформа выполняет метод `HandleRectangles`, а также сводку, показанную ниже.
+После завершения обнаружения прямоугольника платформа выполняет `HandleRectangles` метод, а также сводку, показанную ниже.
 
 ```csharp
 private void HandleRectangles(VNRequest request, NSError error){
@@ -88,7 +88,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 
 ### <a name="4-display-the-results"></a>4. Отображение результатов
 
-Метод `OverlayRectangles` в образце **висионректанглес** имеет три функции:
+`OverlayRectangles`Метод в примере **висионректанглес** имеет три функции:
 
 - Подготовка к просмотру исходного изображения,
 - Рисование прямоугольника для указания места обнаружения каждого из них и
@@ -102,7 +102,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 
 Обнаружение прямоугольника часто является просто первым шагом в цепочке операций, например в [этом коремлвисион примере](~/ios/platform/introduction-to-ios11/coreml.md#coremlvision), где прямоугольники передаются в модель CoreML для анализа рукописных цифр.
 
-<a name="faces" />
+<a name="faces"></a>
 
 ## <a name="face-detection"></a>Обнаружение лиц
 
@@ -110,7 +110,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 
 ### <a name="1-initialize-the-vision-request"></a>1. Инициализация запроса концепции
 
-В `ViewDidLoad`создайте `VNDetectFaceRectanglesRequest`, который ссылается на метод `HandleRectangles`, который будет вызываться в конце каждого запроса.
+В `ViewDidLoad` Создайте объект `VNDetectFaceRectanglesRequest` , который ссылается на `HandleRectangles` метод, который будет вызываться в конце каждого запроса.
 
 ```csharp
 FaceRectangleRequest = new VNDetectFaceRectanglesRequest(HandleRectangles);
@@ -128,11 +128,11 @@ DispatchQueue.DefaultGlobalQueue.DispatchAsync(()=>{
 });
 ```
 
-Этот обработчик передает `ciImage` инфраструктуре концепции `VNDetectFaceRectanglesRequest`, созданной на шаге 1.
+Этот обработчик передает объект `ciImage` в инфраструктуру концепции `VNDetectFaceRectanglesRequest` , созданную на шаге 1.
 
 ### <a name="3-handle-the-results-of-vision-processing"></a>3. обработка результатов обработки концепции
 
-После завершения обнаружения распознавания лиц обработчик выполняет `HandleRectangles` метод, который выполняет обработку ошибок и отображает границы обнаруженных фрагментов и вызывает `OverlayRectangles` для рисования ограничивающих прямоугольников на исходном изображении:
+После завершения обнаружения распознавания лиц обработчик выполняет `HandleRectangles` метод, который выполняет обработку ошибок и отображает границы обнаруженных лиц и вызывает метод `OverlayRectangles` для рисования ограничивающих прямоугольников на исходном изображении:
 
 ```csharp
 private void HandleRectangles(VNRequest request, NSError error){
@@ -161,7 +161,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 
 ### <a name="4-display-the-results"></a>4. Отображение результатов
 
-Метод `OverlayRectangles` в образце **висионфацес** имеет три функции:
+`OverlayRectangles`Метод в примере **висионфацес** имеет три функции:
 
 - Подготовка к просмотру исходного изображения,
 - Рисование прямоугольника для каждого обнаруженного лица и
@@ -173,7 +173,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 
 ### <a name="5-further-processing"></a>5. Дальнейшая обработка
 
-Инфраструктура концепции включает дополнительные возможности для определения возможностей лиц, таких как глаза и рот. Используйте тип `VNDetectFaceLandmarksRequest`, который будет возвращать `VNFaceObservation` результаты, как на шаге 3 выше, но с дополнительными данными `VNFaceLandmark`.
+Инфраструктура концепции включает дополнительные возможности для определения возможностей лиц, таких как глаза и рот. Используйте `VNDetectFaceLandmarksRequest` тип, который возвратит результаты, `VNFaceObservation` как на шаге 3 выше, но с дополнительными `VNFaceLandmark` данными.
 
 ## <a name="related-links"></a>Связанные ссылки
 

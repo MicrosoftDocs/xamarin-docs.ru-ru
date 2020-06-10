@@ -7,20 +7,20 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/11/2017
-ms.openlocfilehash: 04d33d986d76daf29fc7392206c62f77d34dd969
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 0957220ace9facee590a76953de6dd52be438582
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73022024"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84570847"
 ---
 # <a name="labels-in-xamarinios"></a>Метки в Xamarin. iOS
 
-Элемент управления `UILabel` используется для отображения одного и нескольких строк, текста только для чтения.
+`UILabel`Элемент управления используется для отображения одного и многострочного текста, предназначенного только для чтения.
 
 ## <a name="implementing-a-label"></a>Реализация метки
 
-Новая метка создается путем создания экземпляра [`UILabel`](xref:UIKit.UILabel):
+Новая метка создается путем создания экземпляра [`UILabel`](xref:UIKit.UILabel) .
 
 ```csharp
 UILabel label = new UILabel();
@@ -50,7 +50,7 @@ UILabel label = new UILabel();
 
 Сведения об использовании разрывов строк в iOS см. в разделе [Truncate and Wrap Text](https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/labels/uilabel-truncate-wrap-text) рецепт.
 
-<a name="Formatting_Text_and_Label"/>
+<a name="Formatting_Text_and_Label"></a>
 
 ## <a name="formatting-text-and-label"></a>Форматирование текста и метки
 
@@ -74,9 +74,9 @@ label.AttributedText = new NSAttributedString(
             );
 ```
 
-Дополнительные сведения о стилизации текста с помощью `NSAttributedString` см. в статье рецепт [стиля текста](https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/text_field/style_text) .
+Дополнительные сведения об использовании стилей текста `NSAttributedString` см. в разделе рецепт [текста стиля](https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/text_field/style_text) .
 
-По умолчанию для `Enabled` меток задано значение true, но можно установить значение Disabled (отключено), чтобы дать пользователю указание о том, что определенный элемент управления отключен:
+По умолчанию для меток `Enabled` задано значение true, но можно задать для него значение Disabled, чтобы дать пользователю указание о том, что определенный элемент управления отключен:
 
 ```csharp
 label.Enabled = false;

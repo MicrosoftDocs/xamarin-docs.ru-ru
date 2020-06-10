@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/03/2017
-ms.openlocfilehash: 5aea7ae094e0b79831a5fb84397108ca09e18360
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 139b58fd1953924d5a848fc79c3a1706afb760b0
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73028303"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84565655"
 ---
 # <a name="watchos-complications-in-xamarin"></a>watchOS сложности в Xamarin
 
@@ -29,11 +29,11 @@ _watchOS позволяет разработчикам писать пользо
 Приложения могут реализовывать только один стиль (или все пять) в зависимости от отображаемых данных.
 Вы также можете поддерживать командировку времени, предоставляя значения в прошлом и (или) будущем по мере того, как пользователь включит Digital Crown.
 
-<a name="adding" />
+<a name="adding"></a>
 
 ## <a name="adding-a-complication"></a>Добавление усложнения
 
-### <a name="configuration"></a>Параметр Configuration
+### <a name="configuration"></a>Конфигурация
 
 Сложности можно добавить в приложение Watch во время создания или добавить в существующее решение вручную.
 
@@ -47,16 +47,16 @@ _watchOS позволяет разработчикам писать пользо
 
 Чтобы добавить сложность в существующий проект, выполните следующие действия.
 
-1. Создайте новый файл класса **ComplicationController.CS** и реализуйте `CLKComplicationDataSource`.
+1. Создайте новый файл класса **ComplicationController.CS** и реализуйте `CLKComplicationDataSource` .
 2. Настройте **info. plist** приложения, чтобы обеспечить сложность и удостоверения, которые поддерживаются семействами с усложненными наборами.
 
 Эти действия подробно описаны ниже.
 
-<a name="clkcomplicationcontroller" />
+<a name="clkcomplicationcontroller"></a>
 
 ### <a name="clkcomplicationdatasource-class"></a>Класс Клккомпликатиондатасаурце
 
-Следующий C# шаблон включает минимум обязательных методов для реализации`CLKComplicationDataSource`.
+Следующий шаблон C# включает минимум обязательных методов для реализации `CLKComplicationDataSource` .
 
 ```csharp
 [Register ("ComplicationController")]
@@ -81,23 +81,23 @@ public class ComplicationController : CLKComplicationDataSource
 
 ### <a name="infoplist"></a>Info.plist
 
-В файле **info. plist** расширения Watch должно быть указано имя `CLKComplicationDataSource` и какие семейства усложнений требуется поддерживать:
+В файле **info. plist** расширения Watch должно быть указано имя `CLKComplicationDataSource` и какие семейства осложнений, которые вы хотите поддерживать:
 
 [![](complications-images/complications-config-sml.png "The complication family types")](complications-images/complications-config.png#lightbox)
 
-В списке записей **класса источника данных** будут показаны имена классов, подкласс которых `CLKComplicationDataSource` подкласс, включающий логику усложнения.
+В списке записей **класса источника данных** будут показаны имена классов, которые `CLKComplicationDataSource` содержат логику для подклассов.
 
 ## <a name="clkcomplicationdatasource"></a>клккомпликатиондатасаурце
 
-Все функции усложнения реализуются в одном классе, переопределяя методы из абстрактного класса `CLKComplicationDataSource` (который реализует интерфейс `ICLKComplicationDataSource`).
+Все функции усложнения реализуются в одном классе, переопределяя методы из `CLKComplicationDataSource` абстрактного класса (который реализует `ICLKComplicationDataSource` интерфейс).
 
 ### <a name="required-methods"></a>Обязательные методы
 
 Для выполнения усложнения необходимо реализовать следующие методы:
 
-- `GetPlaceholderTemplate` — возврат статического отображения, используемого во время настройки, или если приложение не может предоставить значение.
-- `GetCurrentTimelineEntry` — Вычислите правильное отображение при выполнении усложнения.
-- `GetSupportedTimeTravelDirections` — Возвращает параметры из `CLKComplicationTimeTravelDirections`, например `None`, `Forward`, `Backward`или `Forward | Backward`.
+- `GetPlaceholderTemplate`— Возврат статического отображения, используемого во время настройки, или если приложению не удается предоставить значение.
+- `GetCurrentTimelineEntry`— Вычислять правильное отображение при выполнении усложнения.
+- `GetSupportedTimeTravelDirections`— Возвращает параметры `CLKComplicationTimeTravelDirections` , такие как `None` , `Forward` , `Backward` или `Forward | Backward` .
 
 ### <a name="privacy"></a>Конфиденциальность
 
@@ -105,24 +105,24 @@ public class ComplicationController : CLKComplicationDataSource
 
 - `GetPrivacyBehavior` - `CLKComplicationPrivacyBehavior.ShowOnLockScreen` или `HideOnLockScreen`
 
-Если этот метод возвращает `HideOnLockScreen` то при блокировке контрольного значения сложность будет показывать либо значок, либо имя приложения (а не любые данные).
+Если этот метод возвращает значение, `HideOnLockScreen` то сложность будет показывать либо значок, либо имя приложения (а не любые данные), если контрольные значения заблокированы.
 
 ### <a name="updates"></a>Обновления
 
-- `GetNextRequestedUpdateDate` — возвращать время, в течение которого операционная система должна выполнять следующий запрос к приложению для обновления отображаемых данных о усложнении.
+- `GetNextRequestedUpdateDate`— Возвращать время, когда операционная система должна далее запрашивать у приложения обновленные отображаемые данные.
 
 Вы также можете принудительно выполнить обновление из приложения iOS.
 
 ### <a name="supporting-time-travel"></a>Поддержка поездок во время
 
-Поддержка поездок по времени необязательна и управляется методом `GetSupportedTimeTravelDirections`. Если он возвращает `Forward`, `Backward`или `Forward | Backward`, необходимо реализовать следующие методы.
+Поддержка поездок по времени необязательна и управляется `GetSupportedTimeTravelDirections` методом. Если он возвращает `Forward` , `Backward` или `Forward | Backward` необходимо реализовать следующие методы
 
 - `GetTimelineStartDate`
 - `GetTimelineEndDate`
 - `GetTimelineEntriesBeforeDate`
 - `GetTimelineEntriesAfterDate`
 
-<a name="writing" />
+<a name="writing"></a>
 
 ## <a name="writing-a-complication"></a>Написание усложняется
 
@@ -134,7 +134,7 @@ The [sample]() for this article supports more template styles.
 
 ## <a name="sample-code"></a>Пример кода
 
-В этом примере поддерживается только шаблон `UtilitarianLarge`, поэтому его можно выбрать только для тех лиц, которые поддерживают этот тип сложности. При *выборе* осложнений на контрольном экране отображается **Моя сложность** , а при *запуске* отображается текстовый **минуты**  (с учетом части времени).
+В этом примере поддерживается только `UtilitarianLarge` шаблон, поэтому его можно выбрать только для отдельных наблюдателей, которые поддерживают этот тип сложности. При *выборе* осложнений на контрольном экране отображается **Моя сложность** , а при *запуске* отображается текстовый **минуты _hour_ ** (с учетом части времени).
 
 ```csharp
 [Register ("ComplicationController")]
@@ -179,7 +179,7 @@ public class ComplicationController : CLKComplicationDataSource
 }
 ```
 
-<a name="templates" />
+<a name="templates"></a>
 
 ## <a name="complication-templates"></a>Шаблоны усложнения
 
@@ -190,7 +190,7 @@ public class ComplicationController : CLKComplicationDataSource
 
 ### <a name="circular-small"></a>Круглый маленький
 
-Имена этих классов шаблонов начинаются с `CLKComplicationTemplateCircularSmall`:
+Имена этих классов шаблонов начинаются с префикса `CLKComplicationTemplateCircularSmall` :
 
 - **Рингимаже** — отображение одного изображения с обработкой вокруг него.
 - **Рингтекст** — отображение одной строки текста с обработкой вокруг него.
@@ -201,7 +201,7 @@ public class ComplicationController : CLKComplicationDataSource
 
 ### <a name="modular-small"></a>Модульный малый
 
-Имена этих классов шаблонов начинаются с `CLKComplicationTemplateModularSmall`:
+Имена этих классов шаблонов начинаются с префикса `CLKComplicationTemplateModularSmall` :
 
 - **Колумнстекст** — отображает маленькую сетку текстовых значений (2 строки и 2 столбца).
 - **Рингимаже** — отображение одного изображения с обработкой вокруг него.
@@ -213,7 +213,7 @@ public class ComplicationController : CLKComplicationDataSource
 
 ### <a name="modular-large"></a>Модульный крупный
 
-Имена этих классов шаблонов начинаются с `CLKComplicationTemplateModularLarge`:
+Имена этих классов шаблонов начинаются с префикса `CLKComplicationTemplateModularLarge` :
 
 - **Столбцы** — отображает сетку из 3 строк с двумя столбцами, при необходимости включая изображение слева от каждой строки.
 - **Стандардбоди** — отображение строки заголовка полужирным шрифтом с двумя строками обычного текста. В заголовке можно дополнительно отобразить изображение слева.
@@ -222,7 +222,7 @@ public class ComplicationController : CLKComplicationDataSource
 
 ### <a name="utilitarian-small"></a>Утилитарные малый
 
-Имена этих классов шаблонов начинаются с `CLKComplicationTemplateUtilitarianSmall`:
+Имена этих классов шаблонов начинаются с префикса `CLKComplicationTemplateUtilitarianSmall` :
 
 - **Плоский** — отображает изображение и некоторый текст в одной строке (текст должен быть коротким).
 - **Рингимаже** — отображение одного изображения с обработкой вокруг него.
@@ -231,7 +231,7 @@ public class ComplicationController : CLKComplicationDataSource
 
 ### <a name="utilitarian-large"></a>Утилитарные крупный
 
-Существует только один шаблон для этого стиля сложности: `CLKComplicationTemplateUtilitarianLargeFlat`.
+Существует только один шаблон для этого стиля сложности: `CLKComplicationTemplateUtilitarianLargeFlat` .
 Он отображает одно изображение и некоторый текст в одной строке.
 
 ## <a name="related-links"></a>Связанные ссылки

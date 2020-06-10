@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 11/25/2015
-ms.openlocfilehash: 4f5f6adf99306754fa7b2aa49855fe228e740d7e
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 736d70aebcf861b5557d5f076a42ff0a3dcfc043
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73016937"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84569961"
 ---
 # <a name="systemdata-in-xamarinios"></a>System. Data в Xamarin. iOS
 
-В Xamarin. iOS 8,10 добавлена поддержка [System. Data](xref:System.Data), включая поставщик `Mono.Data.Sqlite.dll` ADO.NET. Поддержка включает в себя добавление следующих [сборок](~/cross-platform/internals/available-assemblies.md):
+В Xamarin. iOS 8,10 добавлена поддержка [System. Data](xref:System.Data), включая `Mono.Data.Sqlite.dll` поставщика ADO.NET. Поддержка включает в себя добавление следующих [сборок](~/cross-platform/internals/available-assemblies.md):
 
 - `System.Data.dll`
 - `System.Data.Service.Client.dll`
@@ -24,15 +24,15 @@ ms.locfileid: "73016937"
 - `Mono.Data.Tds.dll`
 - `Mono.Data.Sqlite.dll`
 
-<a name="Example" />
+<a name="Example"></a>
 
 ## <a name="example"></a>Пример
 
-Следующая программа создает базу данных в `Documents/mydb.db3`и, если база данных не существует, она заполняется демонстрационными данными. База данных запрашивается, а выходные данные записываются в `stderr`.
+Следующая программа создает базу данных в `Documents/mydb.db3` , а если база данных не существует, она заполняется демонстрационными данными. База данных запрашивается, а выходные данные записываются в `stderr` .
 
 ### <a name="add-references"></a>Добавить ссылки
 
-Сначала щелкните правой кнопкой мыши узел **ссылки** и выберите **изменить ссылки...** , а затем выберите `System.Data` и `Mono.Data.Sqlite`:
+Сначала щелкните правой кнопкой мыши узел **ссылки** и выберите **изменить ссылки...** , а затем выберите `System.Data` и `Mono.Data.Sqlite` :
 
 [![](system.data-images/edit-references-sml.png "Adding new references")](system.data-images/edit-references.png#lightbox)
 
@@ -129,13 +129,13 @@ using (var addCmd = conn.CreateCommand ()) {
 }
 ```
 
-<a name="Missing_Functionality" />
+<a name="Missing_Functionality"></a>
 
 ## <a name="missing-functionality"></a>Отсутствуют функциональные возможности
 
 В **System. Data** и **Mono. Data. SQLite** отсутствуют некоторые функциональные возможности.
 
-<a name="System.Data" />
+<a name="System.Data"></a>
 
 ### <a name="systemdata"></a>System.Data
 
@@ -144,15 +144,15 @@ using (var addCmd = conn.CreateCommand ()) {
 - Все, что требует [System. CodeDom](xref:System.CodeDom) (например,  [System. Data. TypedDataSetGenerator](xref:System.Data.TypedDataSetGenerator) )
 - Поддержка XML-файлов конфигурации (например,  [System. Data. Common. дбпровидерконфигуратионхандлер](xref:System.Data.Common.DbProviderConfigurationHandler) )
 - [System. Data. Common. дбпровидерфакториес](xref:System.Data.Common.DbProviderFactories) (зависит от поддержки XML-файла конфигурации)
-- [System. Data. OleDb](xref:System.Data.OleDb)
-- [System. Data. ODBC](xref:System.Data.Odbc)
-- Зависимость `System.EnterpriseServices.dll` *удалена* из `System.Data.dll`, что привело к удалению метода [SqlConnection. енлистдистрибутедтрансактион (ITransaction)](xref:System.Data.SqlClient.SqlConnection.EnlistDistributedTransaction*) .
+- [System.Data.OleDb](xref:System.Data.OleDb)
+- [System.Data.Odbc](xref:System.Data.Odbc)
+- `System.EnterpriseServices.dll`Зависимость *удалена* из `System.Data.dll` , что привело к удалению метода [SqlConnection. енлистдистрибутедтрансактион (ITransaction)](xref:System.Data.SqlClient.SqlConnection.EnlistDistributedTransaction*) .
 
-<a name="Mono.Data.Sqlite" />
+<a name="Mono.Data.Sqlite"></a>
 
 ### <a name="monodatasqlite"></a>Mono. Data. SQLite
 
-В то же время, **Mono. Data. SQLite. dll** не имеет изменений исходного кода, но вместо этого может размещаться ряд проблем *среды выполнения* , поскольку `Mono.Data.Sqlite.dll` привязывает SQLite 3,5. с iOS 8, в то же время поставляется с SQLite 3.8.5. Достаточно сказать, что некоторые вещи изменились между двумя версиями.
+В то же время, **Mono. Data. SQLite. dll** не имеет изменений исходного кода, но вместо этого может размещаться ряд проблем со *временем выполнения* , начиная с `Mono.Data.Sqlite.dll` привязки SQLite 3,5. с iOS 8, в то же время поставляется с SQLite 3.8.5. Достаточно сказать, что некоторые вещи изменились между двумя версиями.
 
 Более старая версия iOS поставляется со следующими версиями SQLite:
 
@@ -161,9 +161,9 @@ using (var addCmd = conn.CreateCommand ()) {
 - Версия-3.7.7 **iOS 5** .
 - **iOS 4** — версия 3.6.22.
 
-Чаще всего возникают проблемы, связанные с запросами к схеме базы данных, например определение во время выполнения, какие столбцы существуют в данной таблице, например `Mono.Data.Sqlite.SqliteConnection.GetSchema` (переопределение [DbConnection. GetSchema](xref:System.Data.Common.DbConnection.GetSchema) и `Mono.Data.Sqlite.SqliteDataReader.GetSchemaTable` (переопределение [ DbDataReader. GetSchemaTable](xref:System.Data.Common.DbDataReader.GetSchemaTable). Вкратце, кажется, что все, что использует [DataTable](xref:System.Data.DataTable) , вряд ли будет работать.
+Чаще всего возникают проблемы, связанные с запросами к схеме базы данных, например определение во время выполнения, какие столбцы существуют в данной таблице, например `Mono.Data.Sqlite.SqliteConnection.GetSchema` (переопределение [DbConnection. GetSchema](xref:System.Data.Common.DbConnection.GetSchema) и `Mono.Data.Sqlite.SqliteDataReader.GetSchemaTable` (переопределение [DbDataReader. GetSchemaTable](xref:System.Data.Common.DbDataReader.GetSchemaTable)). Вкратце, кажется, что все, что использует [DataTable](xref:System.Data.DataTable) , вряд ли будет работать.
 
-<a name="Data_Binding" />
+<a name="Data_Binding"></a>
 
 ## <a name="data-binding"></a>Привязка данных
 

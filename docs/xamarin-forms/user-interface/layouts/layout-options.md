@@ -1,22 +1,8 @@
 ---
-title: Параметры макета вXamarin.Forms
-description: Каждое Xamarin.Forms представление имеет свойства хоризонталоптионс и вертикалоптионс типа LayoutOptions. В этой статье объясняется, как каждое значение LayoutOptions имеет выравнивание и расширение представления.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 17f4e76f9bef71352cabddfba9397e95bcdd24d3
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138038"
+Title: "Параметры макета в Xamarin.Forms " Description: "каждое Xamarin.Forms представление имеет свойства Хоризонталоптионс и Вертикалоптионс типа LayoutOptions. В этой статье объясняется, как каждое значение LayoutOptions имеет выравнивание и расширение представления.
+MS. произв. Xamarin MS. AssetID: 7CAB5631-5153-4DEF-8AD7-C6011CE44307 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="layout-options-in-xamarinforms"></a>Параметры макета вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layoutoptions)
@@ -52,8 +38,6 @@ _Каждое Xamarin.Forms представление имеет свойств
 
 > [!NOTE]
 > Значение по умолчанию свойств представления [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) и [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) — [`LayoutOptions.Fill`](xref:Xamarin.Forms.LayoutOptions.Fill).
-
-<a name="alignment" />
 
 ## <a name="alignment"></a>Выравнивание
 
@@ -98,9 +82,7 @@ Content = new StackLayout
 
 [![](layout-options-images/alignment.png "Alignment Layout Options")](layout-options-images/alignment-large.png#lightbox "Alignment Layout Options")
 
-<a name="expansion" />
-
-## <a name="expansion"></a>Вышеописан
+## <a name="expansion"></a>Расширение
 
 Расширение определяет, будет ли представление занимать больше места, если доступно, в [`StackLayout`](xref:Xamarin.Forms.StackLayout) . Если объект `StackLayout` содержит неиспользуемое пространство (то есть `StackLayout` больше, чем общий размер всех его дочерних элементов), неиспользуемое пространство совместно используется всеми дочерними представлениями, которые запрашивают расширение, путем задания [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойств или для [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) поля, использующего `AndExpand` суффикс. Обратите внимание, что если используется все пространство в `StackLayout` , параметры расширения не действуют.
 

@@ -6,12 +6,12 @@ ms.assetid: 3247fcee-6acc-470d-ab87-c1c511d67363
 author: davidortinau
 ms.author: daortin
 ms.date: 06/03/2018
-ms.openlocfilehash: cb109055b476fee6d34041940c682187074f4e7d
-ms.sourcegitcommit: 099b06e311a40c00eeea85465ff9b97867a5c5de
+ms.openlocfilehash: b8b3ca4892e849f9bf08ca2910798c4b2d0f9f6f
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78295447"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84573493"
 ---
 # <a name="xamarin-profiler"></a>Xamarin Profiler
 
@@ -34,7 +34,7 @@ Xamarin Profiler — это автономное приложение, инте�
 
 Скачайте пакет установки для своей платформы:
 
-- [**macOS**](https://dl.xamarin.com/profiler/profiler-mac-1.6.13-11.pkg)
+- [**MacOS**](https://dl.xamarin.com/profiler/profiler-mac-1.6.13-11.pkg)
 - [**Windows**](https://dl.xamarin.com/profiler/XamarinProfiler.Windows.Installer.1.6.10-15.msi)
 
 После загрузки запустите установщик, чтобы добавить Xamarin Profiler в систему.
@@ -55,15 +55,15 @@ Xamarin Profiler предоставляет разработчикам спос�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-В настоящее время Xamarin Profiler можно использовать для тестирования приложений Xamarin. iOS, Xamarin. Android и Xamarin. Mac на компьютерах Mac (через Visual Studio для Mac). Профилировщик — это отдельный процесс из интегрированной среды разработки, поэтому в дополнение к запуску из Visual Studio для Mac его можно использовать в качестве автономного приложения для проверки exe-и `.mlpd` файлов, созданных из [профилировщика журнала Mono](https://www.mono-project.com/docs/debug+profile/profile/profiler/).
+В настоящее время Xamarin Profiler можно использовать для тестирования приложений Xamarin. iOS, Xamarin. Android и Xamarin. Mac на компьютерах Mac (через Visual Studio для Mac). Профилировщик — это отдельный процесс из интегрированной среды разработки, поэтому в дополнение к запуску из Visual Studio для Mac его можно использовать в качестве автономного приложения для проверки exe-файла и файлов, `.mlpd` созданных из [профайлера журнала Mono](https://www.mono-project.com/docs/debug+profile/profile/profiler/).
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-В настоящее время Xamarin Profiler можно использовать для тестирования приложений Xamarin. Android в Windows (с помощью Visual Studio и Visual Studio для Mac). Профилировщик — это отдельный процесс из интегрированной среды разработки, поэтому в дополнение к запуску из Visual Studio его можно использовать в качестве автономного приложения для проверки exe-и `.mlpd` файлов, созданных из [профилировщика журнала Mono](https://www.mono-project.com/docs/debug+profile/profile/profiler/).
+В настоящее время Xamarin Profiler можно использовать для тестирования приложений Xamarin. Android в Windows (с помощью Visual Studio и Visual Studio для Mac). Профилировщик — это отдельный процесс из интегрированной среды разработки, поэтому в дополнение к запуску из Visual Studio его можно использовать в качестве автономного приложения для проверки exe-файлов и, `.mlpd` созданных из [профилировщика журнала Mono](https://www.mono-project.com/docs/debug+profile/profile/profiler/).
 
 -----
 
-<a name="Profiler_Support" />
+<a name="Profiler_Support"></a>
 
 ## <a name="profiler-support"></a>Поддержка профилировщика
 
@@ -186,11 +186,11 @@ Xamarin Profiler состоит из пяти разделов, как пока�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![Visual Studio для Mac](images/profiler-mac-sml.png)](images/profiler-mac.png#lightbox) 
+[![Разделы профилировщика в Visual Studio для Mac](images/profiler-mac-sml.png)](images/profiler-mac.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![ные разделы профилировщика в Visual Studio](images/profiler-vs.png)](images/profiler-vs.png#lightbox)
+[![Разделы профилировщика в Visual Studio](images/profiler-vs.png)](images/profiler-vs.png#lightbox)
 
 -----
 
@@ -208,11 +208,11 @@ Xamarin Profiler состоит из пяти разделов, как пока�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[Инструмент выделения ![](images/allocations1.png)](images/allocations1.png#lightbox) 
+[![Инструмент выделения](images/allocations1.png)](images/allocations1.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[Инструмент выделения ![](images/allocations1-vs.png)](images/allocations1-vs.png#lightbox)
+[![Инструмент выделения](images/allocations1-vs.png)](images/allocations1-vs.png#lightbox)
 
 -----
 
@@ -222,11 +222,11 @@ Xamarin Profiler состоит из пяти разделов, как пока�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-  [Вкладка "выделения !["](images/allocations3.png)](images/allocations3.png#lightbox) 
+  [![Вкладка "выделения"](images/allocations3.png)](images/allocations3.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-  [Вкладка "выделения !["](images/allocations2-vs.png)](images/allocations2-vs.png#lightbox)
+  [![Вкладка "выделения"](images/allocations2-vs.png)](images/allocations2-vs.png#lightbox)
 
 -----
 
@@ -238,11 +238,11 @@ Xamarin Profiler состоит из пяти разделов, как пока�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-  [Вкладка "дерево вызовов !["](images/allocations2.png)](images/allocations2.png#lightbox) 
+  [![Вкладка "дерево вызовов"](images/allocations2.png)](images/allocations2.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-  [Вкладка "дерево вызовов !["](images/allocations3-vs.png)](images/allocations3-vs.png#lightbox)
+  [![Вкладка "дерево вызовов"](images/allocations3-vs.png)](images/allocations3-vs.png#lightbox)
 
 -----
 
@@ -250,11 +250,11 @@ Xamarin Profiler состоит из пяти разделов, как пока�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-  [Вкладка "моментальные снимки !["](images/allocations4.png)](images/allocations4.png#lightbox) 
+  [![Вкладка «моментальные снимки»](images/allocations4.png)](images/allocations4.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-  [Вкладка "моментальные снимки !["](images/allocations4-vs.png)](images/allocations4-vs.png#lightbox)
+  [![Вкладка «моментальные снимки»](images/allocations4-vs.png)](images/allocations4-vs.png#lightbox)
 
 -----
 
@@ -266,15 +266,15 @@ Xamarin Profiler состоит из пяти разделов, как пока�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[Инструмент профилировщика ![времени](images/time1.png)](images/time1.png#lightbox) 
+[![Инструментирование времени профилировщика](images/time1.png)](images/time1.png#lightbox) 
 
-[Инструмент "профилировщик времени ![" — список примеров](images/time3.png)](images/time3.png#lightbox) 
+[![Инструментирование времени профилирования — список примеров](images/time3.png)](images/time3.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[Инструмент профилировщика ![времени](images/time1-vs.png)](images/time1-vs.png#lightbox) 
+[![Инструментирование времени профилировщика](images/time1-vs.png)](images/time1-vs.png#lightbox) 
 
-[Инструмент "профилировщик времени ![" — список примеров](images/time3-vs.png)](images/time3-vs.png#lightbox) 
+[![Инструментирование времени профилирования — список примеров](images/time3-vs.png)](images/time3-vs.png#lightbox) 
 
 -----
 
@@ -282,25 +282,25 @@ Xamarin Profiler состоит из пяти разделов, как пока�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-  [средство профилирования ![времени — дерево вызовов](images/time2.png)](images/time2.png#lightbox) 
+  [![Средство профилирования времени — дерево вызовов](images/time2.png)](images/time2.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-  [средство профилирования ![времени — дерево вызовов](images/time2-vs.png)](images/time2-vs.png#lightbox) 
+  [![Средство профилирования времени — дерево вызовов](images/time2-vs.png)](images/time2-vs.png#lightbox) 
 
 -----
 
 ### <a name="cycles"></a>Cycles
 
-Использование C# и F# управляемый код может быть довольно распространенным, и, увы, довольно просто создать ссылки на объекты, которые никогда не будут удалены. Этот инструмент позволяет точно определить эти объекты и отобразить циклы, на которые ссылается приложение.
+Использование управляемого кода C# и F # может быть довольно распространенным, и, увы, довольно просто создать ссылки на объекты, которые никогда не будут удалены. Этот инструмент позволяет точно определить эти объекты и отобразить циклы, на которые ссылается приложение.
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[Инструмент циклов ![](images/cycles.m751-sml.png)](images/cycles.m751.png#lightbox) 
+[![Инструмент циклов](images/cycles.m751-sml.png)](images/cycles.m751.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[Инструмент циклов ![](images/cycles-vs-sml.png)](images/cycles-vs.png#lightbox) 
+[![Инструмент циклов](images/cycles-vs-sml.png)](images/cycles-vs.png#lightbox) 
 
 -----
 
@@ -312,11 +312,11 @@ Xamarin Profiler состоит из пяти разделов, как пока�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[Диалоговое окно ошибок профилирования ![](images/image001.png)](images/image001.png#lightbox) 
+[![Диалоговое окно ошибки профилирования](images/image001.png)](images/image001.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[Диалоговое окно ошибок профилирования ![](images/image1vs.png)](images/image1vs.png#lightbox) 
+[![Диалоговое окно ошибки профилирования](images/image1vs.png)](images/image1vs.png#lightbox) 
 
 -----
 

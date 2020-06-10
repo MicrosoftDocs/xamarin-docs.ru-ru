@@ -1,34 +1,18 @@
 ---
-title: ''
-description: В этой статье объясняется, как задать внешний вид iOS без использования Xamarin.Forms пользовательского модуля подготовки отчетов.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: eb44b7d756fee4fa4f452b79292effb45ab98154
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138519"
+Title: "Добавление форматирования для iOS" Description: "в этой статье объясняется, как задать внешний вид iOS без использования Xamarin.Forms пользовательского модуля подготовки отчетов".
+MS. произв. Xamarin MS. AssetID: CE50E207-D092-4D88-8439-1B51F178E7ED MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/29/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="adding-ios-specific-formatting"></a>Добавление форматирования, относящегося к iOS
 
 Одним из способов настройки форматирования для iOS является создание [пользовательского модуля подготовки](~/xamarin-forms/app-fundamentals/custom-renderer/index.md) отчетов для элемента управления и установка стилей и цветов для каждой платформы.
 
 Другие параметры для управления Xamarin.Forms внешним видом приложения iOS:
 
-- Настройка параметров вывода в [ **info. plist**](#info-plist)
-- Установка стилей элементов управления через [ `UIAppearance` API](#uiappearance)
+- Настройка параметров вывода в [ **info. plist**](#customizing-infoplist)
+- Установка стилей элементов управления через [ `UIAppearance` API](#uiappearance-api)
 
 Эти альтернативы обсуждаются ниже.
-
-<a name="info-plist"/>
 
 ## <a name="customizing-infoplist"></a>Настройка info. plist
 
@@ -62,8 +46,6 @@ nav.BarTextColor = Color.White;
 Теперь при запуске приложения панель навигации отображается зеленым цветом, а ее текст — белым (из-за Xamarin.Forms форматирования) *, а* текст строки состояния также является белым благодаря конфигурации iOS:
 
 ![](theme-images/status-white-sml.png "iOS Theming")
-
-<a name="uiappearance"/>
 
 ## <a name="uiappearance-api"></a>API Уиаппеаранце
 

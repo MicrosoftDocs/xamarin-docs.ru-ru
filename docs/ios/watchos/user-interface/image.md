@@ -7,22 +7,22 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 7d24286b5d428a571afc7498afafa1171c075110
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 9ab18e643038d4a61b3b201295d4298f2b5e1adc
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73032711"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84574188"
 ---
 # <a name="watchos-image-controls-in-xamarin"></a>Элементы управления изображениями watchOS в Xamarin
 
-watchOS предоставляет элемент управления [`WKInterfaceImage`](xref:WatchKit.WKInterfaceImage) для вывода изображений и простых анимаций. Некоторые элементы управления также могут иметь фоновое изображение (например, кнопки, группы и контроллеры интерфейса).
+watchOS предоставляет [`WKInterfaceImage`](xref:WatchKit.WKInterfaceImage) элемент управления для вывода изображений и простых анимаций. Некоторые элементы управления также могут иметь фоновое изображение (например, кнопки, группы и контроллеры интерфейса).
 
 ![](image-images/image-walkway.png "Apple Watch отображения рисунка") ![](image-images/image-animation.png "Apple Watch с простой анимацией")
 <!-- watch image courtesy of http://infinitapps.com/bezel/ -->
 
 Используйте образы каталога активов, чтобы добавить образы для просмотра приложений комплекта.
-Требуются только **@2x** версии, так как на всех устройствах наблюдения отображается Retina.
+**@2x**Требуются только версии, так как на всех устройствах наблюдения отображается Retina.
 
 ![](image-images/asset-universal-sml.png "Only 2x versions are required, since all watch devices have Retina displays")
 
@@ -34,13 +34,13 @@ watchOS предоставляет элемент управления [`WKInter
 
 ## <a name="images-on-the-watch"></a>Изображения на часах
 
-Наиболее эффективный способ отобразить изображения — *включить их в проект приложения Watch* и отобразить их с помощью метода `SetImage(string imageName)`.
+Наиболее эффективный способ отобразить изображения — *включить их в проект приложения Watch* и отобразить их с помощью `SetImage(string imageName)` метода.
 
 Например, пример [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog/) содержит несколько изображений, добавленных в каталог активов в проекте Watch App.
 
 ![](image-images/asset-whale-sml.png "The WatchKitCatalog sample has a number of images added to an asset catalog in the watch app project")
 
-Их можно эффективно загрузить и отобразить в контрольном списке с помощью `SetImage` с параметром name строки:
+Они могут быть эффективно загружены и отображены в контрольном списке с помощью `SetImage` с параметром name строки:
 
 ```csharp
 myImageControl.SetImage("Whale");
@@ -49,13 +49,13 @@ myOtherImageControl.SetImage("Worry");
 
 ### <a name="background-images"></a>Фоновые изображения
 
-Та же логика применяется к `SetBackgroundImage (string imageName)` классов `Button`, `Group` и `InterfaceController`. Оптимальная производительность достигается за счет хранения образов в самом приложении.
+Та же логика применяется к `SetBackgroundImage (string imageName)` `Button` `Group` `InterfaceController` классам, и. Оптимальная производительность достигается за счет хранения образов в самом приложении.
 
 ## <a name="images-in-the-watch-extension"></a>Изображения в расширении контрольных значений
 
 Помимо загрузки образов, которые хранятся в самом приложении, можно отправить изображения из пакета расширений в приложение Watch для просмотра (или же можно загрузить изображения из удаленного расположения и отобразить их).
 
-Чтобы загрузить изображения из расширения Watch, создайте `UIImage` экземпляры, а затем вызовите `SetImage` с помощью объекта `UIImage`.
+Чтобы загрузить изображения из расширения Watch, создайте `UIImage` экземпляры, а затем вызовите `SetImage` их с помощью `UIImage` объекта.
 
 Например, пример [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) содержит образ с именем **бумблеби** в проекте расширения Watch:
 
@@ -80,20 +80,20 @@ using (var image = UIImage.FromBundle ("Bumblebee")) {
 
 ![](image-images/asset-bus-animation-sml.png "The WatchKitCatalog sample has a series of numbered images in the watch app project with the Bus prefix")
 
-Чтобы отобразить эти изображения в виде анимации, сначала загрузите изображение, используя `SetImage` с именем префикса, а затем вызовите `StartAnimating`:
+Чтобы отобразить эти изображения в виде анимации, сначала загрузите изображение с помощью `SetImage` с именем префикса, а затем вызовите `StartAnimating` :
 
 ```csharp
 animatedImage.SetImage ("Bus");
 animatedImage.StartAnimating ();
 ```
 
-Вызовите `StopAnimating` для элемента управления Image, чтобы закончить циклическую анимацию:
+Вызовите `StopAnimating` элемент управления Image, чтобы прерывать цикл анимации:
 
 ```csharp
 animatedImage.StopAnimating ();
 ```
 
-<a name="cache" />
+<a name="cache"></a>
 
 ## <a name="appendix-caching-images-watchos-1"></a>Приложение. кэширование образов (watchOS 1)
 
@@ -102,7 +102,7 @@ animatedImage.StopAnimating ();
 
 Если приложение многократно использует образ, хранящийся в расширении (или загружен), можно кэшировать образ в хранилище контрольных значений, чтобы повысить производительность последующих экранов.
 
-Используйте метод `WKInterfaceDevice`s `AddCachedImage` для передачи изображения в контрольное значение, а затем используйте `SetImage` с параметром имени образа в качестве строки для его вывода:
+Используйте `WKInterfaceDevice` метод s `AddCachedImage` для передачи изображения в контрольное значение, а затем используйте `SetImage` параметр с именем Image в качестве строки для его вывода:
 
 ```csharp
 var device = WKInterfaceDevice.CurrentDevice;
@@ -116,11 +116,11 @@ using (var image = UIImage.FromBundle ("Bumblebee")) {
 }
 ```
 
-Вы можете запросить содержимое кэша изображений в коде с помощью `WKInterfaceDevice.CurrentDevice.WeakCachedImages`.
+Вы можете запросить содержимое кэша изображений в коде с помощью `WKInterfaceDevice.CurrentDevice.WeakCachedImages` .
 
 ### <a name="managing-the-cache"></a>Управление кэшем
 
-Кэш размером около 20 МБ. Он хранится в перезапусках приложения, и когда оно заполняется, вы обязаны очищать файлы с помощью `RemoveCachedImage` или `RemoveAllCachedImages` методов для объекта `WKInterfaceDevice.CurrentDevice`.
+Кэш размером около 20 МБ. Он хранится в перезапусках приложения, и когда оно заполняется, вы обязаны очищать файлы с помощью `RemoveCachedImage` `RemoveAllCachedImages` методов или для `WKInterfaceDevice.CurrentDevice` объекта.
 
 ## <a name="related-links"></a>Связанные ссылки
 

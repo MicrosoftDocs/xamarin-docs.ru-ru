@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 04/09/2018
-ms.openlocfilehash: 91513936a0223af0e4220154d0fe65ee0a599a4f
-ms.sourcegitcommit: eca3b01098dba004d367292c8b0d74b58c4e1206
+ms.openlocfilehash: 003ea31c765bd2610e93e0f85fe995606d55022f
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79305867"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84567402"
 ---
 # <a name="limitations-of-xamarinios"></a>Ограничения Xamarin. iOS
 
@@ -20,7 +20,7 @@ ms.locfileid: "79305867"
 
 Это ограничения Xamarin. iOS по сравнению с рабочим столом Mono:
 
- <a name="Limited_Generics_Support" />
+ <a name="Limited_Generics_Support"></a>
 
 ## <a name="limited-generics-support"></a>Поддержка ограниченных универсальных шаблонов
 
@@ -30,7 +30,7 @@ ms.locfileid: "79305867"
 
 Некоторые распространенные проблемы, с которыми работают разработчики, включают:
 
- <a name="Generic_Subclasses_of_NSObjects_are_limited" />
+ <a name="Generic_Subclasses_of_NSObjects_are_limited"></a>
 
 ### <a name="generic-subclasses-of-nsobjects-are-limited"></a>Универсальные подклассы Нсобжектс ограничены
 
@@ -45,18 +45,18 @@ class Foo<T> : UIView {
 > [!NOTE]
 > Хотя универсальные подклассы Нсобжектс возможны, существует ряд ограничений. Дополнительные сведения см. в [универсальных подклассах документа нсобжект](~/ios/internals/api-design/nsobject-generics.md) .
 
- <a name="No_Dynamic_Code_Generation" />
+ <a name="No_Dynamic_Code_Generation"></a>
 
 ## <a name="no-dynamic-code-generation"></a>Без динамического создания кода
 
-Так как ядро iOS предотвращает динамическое создание кода приложением, Xamarin. iOS не поддерживает никакие формы динамического создания кода. К ним относятся следующие объекты.
+Так как ядро iOS предотвращает динамическое создание кода приложением, Xamarin. iOS не поддерживает никакие формы динамического создания кода. Сюда входит следующее.
 
 - System. Reflection. Emit недоступен.
 - Отсутствует поддержка System. Runtime. Remoting.
 - Не поддерживается динамическое создание типов (без Type. GetType ("MyType ' 1")), хотя Поиск существующих типов (Type. GetType ("System. String"), например, работает прекрасно).
 - Обратные обратные вызовы должны быть зарегистрированы в среде выполнения во время компиляции.
 
- <a name="System.Reflection.Emit" />
+ <a name="System.Reflection.Emit"></a>
 
 ### <a name="systemreflectionemit"></a>System.Reflection.Emit
 
@@ -73,7 +73,7 @@ class Foo<T> : UIView {
 
 ### <a name="using-delegates-to-call-native-functions"></a>Использование делегатов для вызова собственных функций
 
-Для вызова собственной функции через C# делегата объявление делегата должно быть дополнено одним из следующих атрибутов:
+Чтобы вызвать собственную функцию через делегат C#, объявление делегата должно быть дополнено одним из следующих атрибутов:
 
 - [Унманажедфунктионпоинтераттрибуте](xref:System.Runtime.InteropServices.UnmanagedFunctionPointerAttribute) (предпочтительно, так как оно работает на разных платформах и совместимо с .NET Standard 1.1 +)
 - [мононативефунктионврапператтрибуте](xref:ObjCRuntime.MonoNativeFunctionWrapperAttribute)
@@ -84,24 +84,24 @@ class Foo<T> : UIView {
 System.ExecutionEngineException: Attempting to JIT compile method '(wrapper managed-to-native) YourClass/YourDelegate:wrapper_aot_native(object,intptr,intptr)' while running in aot-only mode.
 ```
 
- <a name="Reverse_Callbacks" />
+ <a name="Reverse_Callbacks"></a>
 
 ### <a name="reverse-callbacks"></a>Обратные обратные вызовы
 
-В стандартном моно можно передать C# экземпляры делегата в неуправляемый код вместо указателя на функцию. Среда выполнения обычно преобразует эти указатели функций в небольшой преобразователь, который позволяет неуправляемому коду осуществлять обратный вызов управляемого кода.
+В стандартном моно можно передать экземпляры делегата C# в неуправляемый код вместо указателя на функцию. Среда выполнения обычно преобразует эти указатели функций в небольшой преобразователь, который позволяет неуправляемому коду осуществлять обратный вызов управляемого кода.
 
 В Mono эти мосты реализуются JIT-компилятором. При использовании предварительного компилятора, необходимого для iPhone, на этом этапе есть два важных ограничения:
 
 - Необходимо отметить все методы обратного вызова с помощью [монопинвокекаллбаккаттрибуте](xref:ObjCRuntime.MonoPInvokeCallbackAttribute)
 - Методы должны быть статическими методами, но не поддерживаются методы экземпляров.
 
-<a name="No_Remoting" />
+<a name="No_Remoting"></a>
 
 ## <a name="no-remoting"></a>Без удаленного взаимодействия
 
 Стек удаленного взаимодействия недоступен в Xamarin. iOS.
 
- <a name="Runtime_Disabled_Features" />
+ <a name="Runtime_Disabled_Features"></a>
 
 ## <a name="runtime-disabled-features"></a>Функции, отключенные в среде выполнения
 
@@ -114,7 +114,7 @@ System.ExecutionEngineException: Attempting to JIT compile method '(wrapper mana
 - JIT-механизм
 - Средство проверки метаданных (так как отсутствует JIT-компилятор)
 
- <a name=".NET_API_Limitations" />
+ <a name=".NET_API_Limitations"></a>
 
 ## <a name="net-api-limitations"></a>Ограничения API .NET
 

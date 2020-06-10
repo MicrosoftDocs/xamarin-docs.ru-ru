@@ -1,22 +1,8 @@
 ---
-title: Xamarin.Formsтаблевиев
-description: В этой статье объясняется, как использовать Xamarin.Forms класс таблевиев для представления прокручиваемых меню, настроек и форм ввода в приложениях.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8f3fd8d84906844b578e71cb0774932561e0d507
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136231"
+Title: " Xamarin.Forms таблевиев" Описание: "в этой статье объясняется, как использовать Xamarin.Forms класс таблевиев для представления прокручиваемых меню, настроек и форм ввода в приложениях".
+MS. произв. Xamarin MS. AssetID: D1619D19-A74F-40DF-8E53-B1B7DFF7A3FB MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/25/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-tableview"></a>Xamarin.Formsтаблевиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-tableview)
@@ -24,8 +10,6 @@ ms.locfileid: "84136231"
 [`TableView`](xref:Xamarin.Forms.TableView)— Это представление для отображения прокручиваемых списков данных или вариантов выбора, где имеются строки, которые не используют один и тот же шаблон. В отличие от [ListView](~/xamarin-forms/user-interface/listview/index.md), не `TableView` имеет концепции `ItemsSource` , поэтому элементы должны добавляться вручную в качестве дочерних элементов.
 
 ![Пример Таблевиев](tableview-images/tableview-all-sml.png)
-
-<a name="Use_Cases" />
 
 ## <a name="use-cases"></a>Варианты использования
 
@@ -36,8 +20,6 @@ ms.locfileid: "84136231"
 - Отображение данных, которые представлены по-разному из строки в строку (например, числа, проценты и изображения).
 
 [`TableView`](xref:Xamarin.Forms.TableView)обрабатывает прокрутку и размещение строк в привлекательных разделах, что часто требуется для приведенных выше сценариев. `TableView`Элемент управления использует собственное эквивалентное представление каждой платформы, если оно доступно, создавая собственный внешний вид для каждой платформы.
-
-<a name="TableView_Structure" />
 
 ## <a name="structure"></a>structure
 
@@ -72,8 +54,6 @@ Content = new TableView
 };
 ```
 
-<a name="TableView_Appearance" />
-
 ## <a name="appearance"></a>Внешний вид
 
 [`TableView`](xref:Xamarin.Forms.TableView)предоставляет [`Intent`](xref:Xamarin.Forms.TableView.Intent) свойство, которое можно задать любому из [`TableIntent`](xref:Xamarin.Forms.TableIntent) членов перечисления:
@@ -87,15 +67,11 @@ Content = new TableView
 
 Кроме того, цвет текста, отображаемого для каждого из них, [`TableSection`](xref:Xamarin.Forms.TableSection) можно изменить, задав `TextColor` для свойства значение [`Color`](xref:Xamarin.Forms.Color) .
 
-<a name="Built-In_Cells" />
-
 ## <a name="built-in-cells"></a>Встроенные ячейки
 
 Xamarin.Formsпоставляется со встроенными ячейками для сбора и отображения информации. Хотя [`ListView`](xref:Xamarin.Forms.ListView) и [`TableView`](xref:Xamarin.Forms.TableView) могут использовать все одни и те же ячейки [`SwitchCell`](xref:Xamarin.Forms.SwitchCell) и [`EntryCell`](xref:Xamarin.Forms.EntryCell) наиболее актуальны для `TableView` сценария.
 
 Подробное описание [текстцелл](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md#textcell) и [имажецелл](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md#imagecell)см. в разделе [представление ячеек ListView](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md) .
-
-<a name="switchcell" />
 
 ### <a name="switchcell"></a>свитчцелл
 
@@ -110,8 +86,6 @@ Xamarin.Formsпоставляется со встроенными ячейкам
 [`SwitchCell`](xref:Xamarin.Forms.SwitchCell)также предоставляет `OnChanged` событие, позволяющее реагировать на изменения в состоянии ячейки.
 
 ![Пример Свитчцелл](tableview-images/switch-cell.png)
-
-<a name="entrycell" />
 
 ### <a name="entrycell"></a>ентрицелл
 
@@ -128,8 +102,6 @@ Xamarin.Formsпоставляется со встроенными ячейкам
 [`EntryCell`](xref:Xamarin.Forms.EntryCell)также предоставляет `Completed` событие, которое срабатывает, когда пользователь нажимает кнопку "Готово" на клавиатуре при редактировании текста.
 
 ![Пример Ентрицелл](tableview-images/entry-cell.png)
-
-<a name="Custom_Cells" />
 
 ## <a name="custom-cells"></a>Пользовательские ячейки
 

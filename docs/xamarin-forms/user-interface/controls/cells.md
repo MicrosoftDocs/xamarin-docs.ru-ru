@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsЯчеек
-description: Xamarin.Formsячейки можно добавлять в ListView и Таблевиевс. В этой статье перечислены ячейки, входящие в Xamarin.Forms .
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: bd1a2398787fe39c0b4cbd08ccd5c5793775d5cf
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137284"
+Title: " Xamarin.Forms ячейки" Description: " Xamarin.Forms ячейки можно добавлять в ListView и таблевиевс. В этой статье перечислены ячейки, входящие в Xamarin.Forms ".
+MS. произв. Xamarin MS. AssetID: 77DA0C89-35D6-4C09-A072-3ADE53FD56CF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/12/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-cells"></a>Xamarin.FormsЯчеек
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
@@ -31,8 +17,6 @@ _Ячейки Xamarin. Forms можно добавлять в ListView и Таб
 
 Xamarin.Formsподдерживает следующие типы ячеек:
 
-<a name="textCell" />
-
 ### <a name="textcell"></a>текстцелл
 
 |     |     |
@@ -44,7 +28,7 @@ Xamarin.Formsподдерживает следующие типы ячеек:
 
 |     |     |
 | --- | --- |
-| [`ImageCell`](xref:Xamarin.Forms.ImageCell)Отображает те же сведения, что и, [`TextCell`](#textCell) но содержит точечный рисунок, заданный с помощью [`Source`](xref:Xamarin.Forms.Image.Source) Свойства.<br /><br />[Документация по API](xref:Xamarin.Forms.ImageCell)  /  [Руководством](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md#imagecell) | [![Пример Имажецелл](cells-images/ImageCell.png "Пример Имажецелл")](cells-images/ImageCell-Large.png#lightbox "Пример Имажецелл")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ImageCellDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ImageCellDemoPage.xaml) |
+| [`ImageCell`](xref:Xamarin.Forms.ImageCell)Отображает те же сведения, что и, [`TextCell`](#textcell) но содержит точечный рисунок, заданный с помощью [`Source`](xref:Xamarin.Forms.Image.Source) Свойства.<br /><br />[Документация по API](xref:Xamarin.Forms.ImageCell)  /  [Руководством](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md#imagecell) | [![Пример Имажецелл](cells-images/ImageCell.png "Пример Имажецелл")](cells-images/ImageCell-Large.png#lightbox "Пример Имажецелл")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ImageCellDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ImageCellDemoPage.xaml) |
 |     |     |
 
 ### <a name="switchcell"></a>свитчцелл
@@ -64,5 +48,5 @@ Xamarin.Formsподдерживает следующие типы ячеек:
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Xamarin.FormsПример Формсгаллери](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
-- [Xamarin.FormsРегистрируют](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
+- [Примеры для Xamarin.Forms](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
 - [Xamarin.FormsДокументация по API](https://docs.microsoft.com/dotnet/api/xamarin.forms?view=xamarin-forms)

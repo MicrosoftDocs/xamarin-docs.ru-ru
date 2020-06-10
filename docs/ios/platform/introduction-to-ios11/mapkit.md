@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/30/2017
-ms.openlocfilehash: 02bd25c4b4e251536dfdabdef109eb659fe3be37
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: bddab35044c2b85b69146a03babd9884784baceb
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73032158"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84574591"
 ---
 # <a name="new-features-in-mapkit-on-ios-11"></a>Новые возможности Мапкит в iOS 11
 
@@ -25,17 +25,17 @@ iOS 11 добавляет следующие новые функции в Мап
 
 ![Схема, показывающая кластеризованные маркеры и кнопку компаса](mapkit-images/cyclemap-heading.png)
 
-<a name="clustering" />
+<a name="clustering"></a>
 
 ## <a name="automatically-grouping-markers-while-zooming"></a>Автоматически группировать маркеры при изменении масштаба
 
 В примере [Мапкит Sample "тандм"](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample) показано, как реализовать новую функцию кластеризации заметок iOS 11.
 
-### <a name="1-create-an-mkpointannotation-subclass"></a>1. Создание подкласса `MKPointAnnotation`
+### <a name="1-create-an-mkpointannotation-subclass"></a>1. Создание `MKPointAnnotation` подкласса
 
-Класс заметки Point представляет каждый маркер на карте. Их можно добавлять по отдельности с помощью `MapView.AddAnnotation()` или из массива с помощью `MapView.AddAnnotations()`.
+Класс заметки Point представляет каждый маркер на карте. Их можно добавлять отдельно с помощью `MapView.AddAnnotation()` или из массива с помощью `MapView.AddAnnotations()` .
 
-Классы заметок к точкам не имеют визуального представления, они необходимы только для представления данных, связанных с маркером (самое важное, свойство `Coordinate`, которое является его широтой и долготой на карте), и любые пользовательские свойства:
+Классы заметок к точкам не имеют визуального представления, они необходимы только для представления данных, связанных с маркером (самое важное, `Coordinate` свойство, которое является его широтой и долготой на карте), и любые пользовательские свойства:
 
 ```csharp
 public class Bike : MKPointAnnotation
@@ -57,14 +57,14 @@ public class Bike : MKPointAnnotation
 }
 ```
 
-### <a name="2-create-an-mkmarkerannotationview-subclass-for-single-markers"></a>2. Создание подкласса `MKMarkerAnnotationView` для отдельных маркеров
+### <a name="2-create-an-mkmarkerannotationview-subclass-for-single-markers"></a>2. Создание `MKMarkerAnnotationView` подкласса для отдельных маркеров
 
 Представление заметок маркера — это визуальное представление каждой заметки, которое имеет стиль с помощью таких свойств, как:
 
 - **Маркертинтколор** — цвет маркера.
 - **Глифтекст** — текст, отображаемый в маркере.
 - **Глифимаже** — задает изображение, отображаемое в маркере.
-- **Дисплайприорити** — определяет z-порядок (режим работы с стеком) при переполнении Map маркерами. Используйте один из `Required`, `DefaultHigh`или `DefaultLow`.
+- **Дисплайприорити** — определяет z-порядок (режим работы с стеком) при переполнении Map маркерами. Используйте один из `Required` , `DefaultHigh` или `DefaultLow` .
 
 Для поддержки автоматической кластеризации необходимо также задать:
 
@@ -104,7 +104,7 @@ public class BikeView : MKMarkerAnnotationView
   }
 ```
 
-### <a name="3-create-an-mkannotationview-to-represent-clusters-of-markers"></a>3. Создание `MKAnnotationView` для представления кластеров маркеров
+### <a name="3-create-an-mkannotationview-to-represent-clusters-of-markers"></a>3. Создание объекта `MKAnnotationView` для представления кластеров маркеров
 
 Хотя представление заметок, представляющее собой кластер маркеров, _может_ быть простым изображением, пользователи хотят, чтобы приложение представило визуальные подсказки о том, сколько маркеров было сгруппировано.
 
@@ -112,8 +112,8 @@ public class BikeView : MKMarkerAnnotationView
 
 Необходимо также задать:
 
-- **Дисплайприорити** — определяет z-порядок (режим работы с стеком) при переполнении Map маркерами. Используйте один из `Required`, `DefaultHigh`или `DefaultLow`.
-- **Коллисионмоде** — `Circle` или `Rectangle`.
+- **Дисплайприорити** — определяет z-порядок (режим работы с стеком) при переполнении Map маркерами. Используйте один из `Required` , `DefaultHigh` или `DefaultLow` .
+- **Коллисионмоде** — `Circle` или `Rectangle` .
 
 ```csharp
 [Register("ClusterView")]
@@ -196,7 +196,7 @@ MapView.Register(typeof(ClusterView), MKMapViewDefault.ClusterAnnotationViewReus
 
 Дополнительные сведения о отображении данных с помощью Мапкит см. в [разделе Maps](~/ios/user-interface/controls/ios-maps/index.md) .
 
-<a name="compass" />
+<a name="compass"></a>
 
 ## <a name="compass-button"></a>Кнопка компаса
 
@@ -215,13 +215,13 @@ NavigationItem.RightBarButtonItem = new UIBarButtonItem(compass);
 MapView.ShowsCompass = false; // so we don't have two compasses!
 ```
 
-Свойство `ShowsCompass` может использоваться для управления видимостью компаса по умолчанию в представлении Map.
+`ShowsCompass`Свойство можно использовать для управления видимостью компаса по умолчанию в представлении отображения.
 
-<a name="scale" />
+<a name="scale"></a>
 
 ## <a name="scale-view"></a>Масштабное представление
 
-Добавьте масштаб в другое место представления с помощью метода `MKScaleView.FromMapView()`, чтобы получить экземпляр масштабируемого представления, чтобы добавить его в другое место в иерархии представлений.
+Добавьте масштаб в другое место представления с помощью `MKScaleView.FromMapView()` метода, чтобы получить экземпляр масштабируемого представления, чтобы добавить его в другое место в иерархии представлений.
 
 ![Масштабированное представление, наложенное на карту](mapkit-images/scale-sml.png)
 
@@ -233,13 +233,13 @@ View.AddSubview(scale); // constraints omitted for simplicity
 MapView.ShowsScale = false; // so we don't have two scale displays!
 ```
 
-Свойство `ShowsScale` может использоваться для управления видимостью компаса по умолчанию в представлении Map.
+`ShowsScale`Свойство можно использовать для управления видимостью компаса по умолчанию в представлении отображения.
 
-<a name="user-tracking" />
+<a name="user-tracking"></a>
 
 ## <a name="user-tracking-button"></a>Кнопка "Отслеживание пользователей"
 
-Кнопка отслеживания пользователей выравнивает карту по текущему расположению пользователя. Используйте метод `MKUserTrackingButton.FromMapView()` для получения экземпляра кнопки, применения изменений форматирования и добавления других элементов в иерархии представления.
+Кнопка отслеживания пользователей выравнивает карту по текущему расположению пользователя. Используйте `MKUserTrackingButton.FromMapView()` метод для получения экземпляра кнопки, применения изменений форматирования и добавления в другое место в иерархии представлений.
 
 ![Кнопка "расположение пользователя", наложенная на карту](mapkit-images/user-location-sml.png)
 

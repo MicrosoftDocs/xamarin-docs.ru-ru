@@ -1,22 +1,8 @@
 ---
-title: Xamarin.Formsабсолутелайаут
-description: В этой статье объясняется, как использовать Xamarin.Forms класс абсолутелайаут для создания интерфейсов пользователя с неполными пикселями. Этот класс размещает и изменяет размеры дочерних элементов пропорционально его размеру и положению или абсолютным значениям.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d81a80e1f1190cbdffd578024cf9c6db1e7737e1
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139247"
+Title: " Xamarin.Forms абсолутелайаут" Описание: "в этой статье объясняется, как использовать Xamarin.Forms класс абсолутелайаут для создания интерфейсов пользователя с неполными пикселями. Этот класс размещает и изменяет размеры дочерних элементов пропорционально его размеру и положению или абсолютным значениям. "
+MS. произв. Xamarin MS. AssetID: 01A5CCE0-AD45-4806-84FD-72C007005B38 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 11/25/2015 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-absolutelayout"></a>Xamarin.Formsабсолутелайаут
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
@@ -27,14 +13,12 @@ ms.locfileid: "84139247"
 
 В этой статье рассматриваются следующие темы:
 
-- **[Назначение](#Purpose)** &ndash; распространенные способы применения `AbsoluteLayout` .
-- **[Использование](#Usage)** &ndash; использование `AbsoluteLayout` для достижения желаемого дизайна.
-  - **[Пропорциональные макеты](#Proportional_Layouts)** &ndash; Узнайте, как пропорциональные значения работают в `AbsoluteLayout` .
-  - **[Указание значений](#Specifying_Values)** &ndash; Узнайте, как указаны пропорциональные и абсолютные значения.
-  - **[Пропорциональные значения](#Proportional_Values)** &ndash; Узнайте, как работают пропорциональные значения.
-    - **[Абсолютные значения](#Absolute_Values)** &ndash; Узнайте, как работают абсолютные значения.
-
-<a name="Purpose" />
+- **[Назначение](#purpose)** &ndash; распространенные способы применения `AbsoluteLayout` .
+- **[Использование](#usage)** &ndash; использование `AbsoluteLayout` для достижения желаемого дизайна.
+  - **[Пропорциональные макеты](#proportional-layouts)** &ndash; Узнайте, как пропорциональные значения работают в `AbsoluteLayout` .
+  - **[Указание значений](#specifying-values)** &ndash; Узнайте, как указаны пропорциональные и абсолютные значения.
+  - **[Пропорциональные значения](#proportional-values)** &ndash; Узнайте, как работают пропорциональные значения.
+    - **[Абсолютные значения](#absolute-values)** &ndash; Узнайте, как работают абсолютные значения.
 
 ## <a name="purpose"></a>Назначение
 
@@ -42,11 +26,7 @@ ms.locfileid: "84139247"
 
 `AbsoluteLayout`может использоваться в любом месте внутри представления и особенно полезно при выровняйте элементов по краям.
 
-<a name="Usage" />
-
 ## <a name="usage"></a>Использование
-
-<a name="Proportional_Layouts" />
 
 ### <a name="proportional-layouts"></a>Пропорциональные макеты
 
@@ -63,8 +43,6 @@ ms.locfileid: "84139247"
 ![](absolute-layout-images/anchor-center.png "Anchor at Center")
 ![](absolute-layout-images/anchor-end.png "Anchor at End")
 
-<a name="Specifying_Values" />
-
 ### <a name="specifying-values"></a>Указание значений
 
 Представления в коллекции располагаются `AbsoluteLayout` с помощью четырех значений:
@@ -74,7 +52,7 @@ ms.locfileid: "84139247"
 - **Ширина** &ndash; Ширина представления
 - **Высота** &ndash; Высота представления
 
-Каждое из этих значений может быть задано как [пропорциональное](#Proportional_Values) значение или [абсолютное](#Absolute_Values) значение.
+Каждое из этих значений может быть задано как [пропорциональное](#proportional-values) значение или [абсолютное](#absolute-values) значение.
 
 Значения задаются в виде сочетания границ и флага. `LayoutBounds`состоит [`Rectangle`](xref:Xamarin.Forms.Rectangle) из четырех значений: `x` , `y` , `width` , `height` .
 
@@ -91,7 +69,7 @@ ms.locfileid: "84139247"
 - **Поситионпропортионал** &ndash; интерпретирует `X` `Y` значения и как пропорциональные, в то время как значения размера интерпретируется как абсолютные.
 - **Сизепропортионал** &ndash; интерпретирует `Width` `Height` значения и как пропорциональные, в то время как значения позиций являются абсолютными.
 
-В XAML границы и флаги задаются как часть определения представлений в макете с помощью `AbsoluteLayout.LayoutBounds` Свойства. Границы задаются в виде разделенного запятыми списка значений,,, `X` `Y` `Width` и `Height` в указанном порядке. Флаги также указываются в объявлении представлений в макете с помощью `AbsoluteLayout.LayoutFlags` Свойства. Обратите внимание, что флаги можно комбинировать в XAML с помощью списка с разделителями-запятыми. Рассмотрим следующий пример:
+В XAML границы и флаги задаются как часть определения представлений в макете с помощью `AbsoluteLayout.LayoutBounds` Свойства. Границы задаются в виде разделенного запятыми списка значений,,, `X` `Y` `Width` и `Height` в указанном порядке. Флаги также указываются в объявлении представлений в макете с помощью `AbsoluteLayout.LayoutFlags` Свойства. Обратите внимание, что флаги можно комбинировать в XAML с помощью списка с разделителями-запятыми. Рассмотрим следующий пример.
 
 ```xaml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -169,8 +147,6 @@ public class AbsoluteLayoutExplorationCode : ContentPage
 }
 ```
 
-<a name="Proportional_Values" />
-
 ### <a name="proportional-values"></a>Пропорциональные значения
 
 Пропорциональные значения определяют связь между макетом и представлением. Эта связь определяет положение или масштаб дочернего представления как часть соответствующего значения родительского макета. Эти значения выражаются в виде `double` s со значениями от 0 до 1.
@@ -193,8 +169,6 @@ var label = new Label {Text = "I'm bottom center on every device."};
 AbsoluteLayout.SetLayoutBounds(label, new Rectangle(.5,1,.5,.1));
 AbsoluteLayout.SetLayoutFlags(label, AbsoluteLayoutFlags.All);
 ```
-
-<a name="Absolute_Values" />
 
 ### <a name="absolute-values"></a>Абсолютные значения
 

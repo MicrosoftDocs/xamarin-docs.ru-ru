@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsСтили текста
-description: В этой статье объясняется, как выполнять стилизацию текста в Xamarin.Forms приложениях. Стили можно определить один раз и использовать во многих представлениях, но стиль можно использовать только с представлениями одного типа.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 79a86fd7a2c0f5b82ca4b3e22b3ecedf42c5a0ba
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136153"
+Title: " Xamarin.Forms Text styles" Description: "в этой статье объясняется, как выполнять стилизацию текста в Xamarin.Forms приложениях. Стили можно определить один раз и использовать во многих представлениях, но стиль можно использовать только с представлениями одного типа. "
+MS. произв. Xamarin MS. AssetID: 57C0CFD6-A568-46B8-ADA1-BF25681893CF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/22/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-text-styles"></a>Xamarin.FormsСтили текста
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
@@ -25,8 +11,6 @@ _Стилизация текста в Xamarin. Forms_
 
 Стили можно использовать для настройки внешнего вида меток, записей и редакторов. Стили можно определить один раз и использовать во многих представлениях, но стиль можно использовать только с представлениями одного типа.
 Стили могут быть предоставлены `Key` и применены выборочно с помощью свойства конкретного элемента управления `Style` .
-
-<a name="Built-In_Styles" />
 
 ## <a name="built-in-styles"></a>Встроенные стили
 
@@ -52,8 +36,6 @@ label.Style = Device.Styles.TitleStyle;
 ```
 
 ![Пример стилей устройств](styles-images/builtinstyles.png)
-
-<a name="Custom_Styles" />
 
 ## <a name="custom-styles"></a>Пользовательские стили
 
@@ -94,8 +76,6 @@ var label = new Label { Text = "Check out my style.", Style = LabelStyle };
 Обратите внимание, что ресурсы (включая все стили) определены в `ContentPage.Resources` , что является элементом того же уровня, что и более привычный `ContentPage.Content` элемент.
 
 ![Пример пользовательских стилей](styles-images/customstyle.png)
-
-<a name="Applying_Styles" />
 
 ## <a name="applying-styles"></a>Применение стилей
 
@@ -153,4 +133,4 @@ label.Style = Device.Styles.TitleStyle;
 - [Создание мобильных приложений с помощью Xamarin.Forms , глава 12](https://developer.xamarin.com/r/xamarin-forms/book/chapter12.pdf)
 - [Стили](~/xamarin-forms/user-interface/styles/index.md)
 - [Текст (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
-- [Стиль](xref:Xamarin.Forms.Style)
+- [Style](xref:Xamarin.Forms.Style)

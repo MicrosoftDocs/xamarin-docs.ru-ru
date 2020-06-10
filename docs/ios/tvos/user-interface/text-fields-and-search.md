@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: cfe747d89b3ccbff390326c915dc1311e40a60fc
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 83edaf46519790d9674b7b537fc424ddd7a09a1c
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73022170"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566153"
 ---
 # <a name="working-with-tvos-text-and-search-fields-in-xamarin"></a>Работа с tvOS текста и полями поиска в Xamarin
 
@@ -26,7 +26,7 @@ ms.locfileid: "73022170"
 
 В этом документе рассматриваются сведения о работе с полями текста и поиска в приложении Xamarin. tvOS.
 
-<a name="About-Text-and-Search-Fields" />
+<a name="About-Text-and-Search-Fields"></a>
 
 ## <a name="about-text-and-search-fields"></a>О тексте и полях поиска
 
@@ -34,7 +34,7 @@ ms.locfileid: "73022170"
 
 Кроме того, если приложение предоставляет пользователям большие объемы содержимого (например, музыку, фильмы или коллекцию изображений), может потребоваться включить поле поиска, позволяющее пользователю ввести небольшой объем текста для фильтрации списка доступных элементов.
 
-<a name="Text-Fields" />
+<a name="Text-Fields"></a>
 
 ## <a name="text-fields"></a>Текстовые поля
 
@@ -51,7 +51,7 @@ ms.locfileid: "73022170"
 - **Выберите подходящий тип клавиатуры по умолчанию** -tvOS предоставляет несколько различных, назначенных типов клавиатуры, которые можно указать для текстового поля. Например, клавиатура адреса электронной почты может упростить ввод, позволяя пользователю выбрать из списка недавно введенных адресов.
 - **При необходимости используйте безопасные текстовые поля** — в безопасном текстовом поле отображаются символы, введенные в виде точек (вместо реальных букв). При сборе конфиденциальной информации, такой как пароли, всегда следует использовать защищенное текстовое поле.
 
-<a name="Keyboards" />
+<a name="Keyboards"></a>
 
 ## <a name="keyboards"></a>Клавиатуры
 
@@ -66,11 +66,11 @@ ms.locfileid: "73022170"
 У Apple есть следующие рекомендации по работе с экранными клавиатурами:
 
 - **Выберите подходящий тип клавиатуры по умолчанию** -tvOS предоставляет несколько различных, назначенных типов клавиатуры, которые можно указать для текстового поля. Например, клавиатура адреса электронной почты может упростить ввод, позволяя пользователю выбрать из списка недавно введенных адресов.
-- **При необходимости используйте представления** для назначений клавиатуры — помимо стандартных сведений, которые всегда отображаются, дополнительные представления аксессуаров (например, изображения или метки) можно добавить на экранную клавиатуру, чтобы уточнить назначение текстового ввода или помочь пользователь, который вводит необходимые сведения.
+- **При необходимости используйте представления** для назначений клавиатуры — помимо стандартных сведений, которые всегда отображаются, дополнительные представления аксессуаров (например, изображения или метки) можно добавить на экранную клавиатуру, чтобы уточнить назначение текстового ввода или помочь пользователю ввести необходимую информацию.
 
 Дополнительные сведения о работе с экранной клавиатурой см. в разделе Apple [уикэйбоардтипе](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITextInputTraits_Protocol/index.html#//apple_ref/c/tdef/UIKeyboardType), [управление клавиатурой](https://developer.apple.com/library/tvos/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html#//apple_ref/doc/uid/TP40009542-CH5-SW1), [пользовательские представления для ввода данных](https://developer.apple.com/library/tvos/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/InputViews/InputViews.html#//apple_ref/doc/uid/TP40009542-CH12-SW1) и [руководство по программированию текста в](https://developer.apple.com/library/tvos/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Introduction/Introduction.html) документации по iOS.
 
-<a name="Search" />
+<a name="Search"></a>
 
 ## <a name="search"></a>Поиск
 
@@ -88,19 +88,19 @@ ms.locfileid: "73022170"
 
 Дополнительные сведения см. в [справочнике по классу Уисеарчконтроллер](https://developer.apple.com/library/tvos/documentation/UIKit/Reference/UISearchController/index.html)Apple.
 
-<a name="Working-with-Text-Fields" />
+<a name="Working-with-Text-Fields"></a>
 
 ## <a name="working-with-text-fields"></a>Работа с текстовыми полями
 
 Самым простым способом работы с текстовыми полями в приложении Xamarin. tvOS является добавление их в проект пользовательского интерфейса с помощью конструктора iOS.
 
-Выполните следующие действия:
+Выполните следующие действия.
 
 <!-- markdownlint-disable MD001 -->
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-1. В **панель решения**дважды щелкните файл `Main.storyboard`, чтобы открыть его для редактирования.
+1. В **панель решения**дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования.
 1. Перетащите одно или несколько **текстовых полей из поля** int в область конструктора в представление:
 
     [![](text-fields-and-search-images/text02.png "A Text Field")](text-fields-and-search-images/text02.png#lightbox)
@@ -115,7 +115,7 @@ ms.locfileid: "73022170"
     [![](text-fields-and-search-images/text05.png "Spell Checking, Capitalization and the default Keyboard Type")](text-fields-and-search-images/text05.png#lightbox)
 1. Сохраните изменения в раскадровке.
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 1. В **обозревателе решений** дважды щелкните файл `Main.storyboard`, чтобы открыть его для редактирования.
 1. Перетащите одно или несколько **текстовых полей из поля** int в область конструктора в представление:
@@ -134,25 +134,25 @@ ms.locfileid: "73022170"
 
 -----
 
-В коде можно получить или задать значение текстового поля с помощью его свойства `Text`:
+В коде можно получить или задать значение текстового поля с помощью его `Text` Свойства:
 
 ```csharp
 Console.WriteLine ("User ID {0} and Password {1}", UserId.Text, Password.Text);
 ```
 
-При необходимости можно использовать события текстового поля `Started` и `Ended`, чтобы реагировать на начало и конец ввода текста.
+При необходимости можно использовать `Started` `Ended` события текстового поля и, чтобы реагировать на начало и конец ввода текста.
 
-<a name="Working-with-Search-Fields" />
+<a name="Working-with-Search-Fields"></a>
 
 ## <a name="working-with-search-fields"></a>Работа с полями поиска
 
 Самым простым способом работы с полями поиска в приложении Xamarin. tvOS является добавление их в структуру пользовательского интерфейса с помощью конструктора интерфейсов.
 
-Выполните следующие действия:
+Выполните следующие действия.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-1. В **панель решения**дважды щелкните файл `Main.storyboard`, чтобы открыть его для редактирования.
+1. В **панель решения**дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования.
 1. Перетащите новый контроллер представления коллекции в раскадровку для представления результатов поиска пользователя:
 
     [![](text-fields-and-search-images/search02.png "A Collection View Controller")](text-fields-and-search-images/search02.png#lightbox)
@@ -168,7 +168,7 @@ Console.WriteLine ("User ID {0} and Password {1}", UserId.Text, Password.Text);
     [![](text-fields-and-search-images/search05.png "Layout the design of the Cell Prototype")](text-fields-and-search-images/search05.png#lightbox)
 1. Сохраните изменения в раскадровке.
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 1. В **обозревателе решений** дважды щелкните файл `Main.storyboard`, чтобы открыть его для редактирования.
 1. Перетащите новый контроллер представления коллекции в раскадровку для представления результатов поиска пользователя:
@@ -188,19 +188,19 @@ Console.WriteLine ("User ID {0} and Password {1}", UserId.Text, Password.Text);
 
 -----
 
-<a name="Provide-a-Data-Model" />
+<a name="Provide-a-Data-Model"></a>
 
 ### <a name="provide-a-data-model"></a>Предоставление модели данных
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта и выберите **Добавить** > **новый файл...**  > **Общие** > **пустой класс** и укажите **имя**:
+Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта и выберите **Добавить**  >  **новый файл...**  >  **Общие**  >  сведения **Пустой класс** и укажите **имя**:
 
 [![](text-fields-and-search-images/search06.png "Select Empty Class and provide a Name")](text-fields-and-search-images/search06.png#lightbox)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений**щелкните правой кнопкой мыши имя **проекта и выберите** **Добавить** > **новый элемент** > **Apple** > **Прочее** > и укажите **имя**:
+Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта и выберите команду **Добавить**  >  **новый элемент...**  >  **Apple**  >  **Прочие**  >  **И укажите** **имя**:
 
 [![](text-fields-and-search-images/search06-vs.png "Select Class and provide a Name")](text-fields-and-search-images/search06-vs.png#lightbox)
 
@@ -235,11 +235,11 @@ namespace tvText
 }
 ```
 
-<a name="The-Collection-View-Cell" />
+<a name="The-Collection-View-Cell"></a>
 
 ### <a name="the-collection-view-cell"></a>Ячейка представления коллекции
 
-Изменяя модель данных, измените **ячейку прототипа** (`SearchResultViewCell.cs`) и убедитесь, что она выглядит следующим образом:
+После создания модели данных измените **ячейку прототипа** ( `SearchResultViewCell.cs` ) и убедитесь, что она выглядит следующим образом:
 
 ```csharp
 using Foundation;
@@ -293,13 +293,13 @@ namespace tvText
 }
 ```
 
-Метод `UpdateUI` будет использоваться для вывода отдельных полей элементов **пиктуреинформатион** (свойство `PictureInfo`) в именованных элементах пользовательского интерфейса каждый раз при обновлении свойства. Например, изображение и заголовок, связанные с изображением.
+`UpdateUI`Метод будет использоваться для вывода отдельных полей элементов **пиктуреинформатион** ( `PictureInfo` свойство) в ИМЕНОВАННЫХ элементах пользовательского интерфейса каждый раз при обновлении свойства. Например, изображение и заголовок, связанные с изображением.
 
-<a name="The-Collection-View-Controller" />
+<a name="The-Collection-View-Controller"></a>
 
 ### <a name="the-collection-view-controller"></a>Контроллер представления коллекции
 
-Затем измените контроллер представления коллекции результатов поиска (`SearchResultsViewController.cs`) и сделайте так, чтобы он выглядел следующим образом:
+Затем измените контроллер представления коллекции результатов поиска ( `SearchResultsViewController.cs` ) и сделайте так, чтобы он выглядел следующим образом:
 
 ```csharp
 using Foundation;
@@ -451,7 +451,7 @@ namespace tvText
 }
 ```
 
-Во-первых, интерфейс `IUISearchResultsUpdating` добавляется в класс для управления обновляемым пользователем фильтром контроллера поиска:
+Сначала `IUISearchResultsUpdating` интерфейс добавляется в класс для управления фильтром контроллера поиска, обновляемым пользователем:
 
 ```csharp
 public partial class SearchResultsViewController : UICollectionViewController , IUISearchResultsUpdating
@@ -481,7 +481,7 @@ public string SearchFilter {
 }
 ```
 
-При изменении `SearchFilter` обновляется список соответствующих элементов и перегружается содержимое представления коллекции. `FindPictures` подпрограммы отвечают за поиск элементов, соответствующих новому условию поиска:
+При `SearchFilter` изменении списка совпадающих элементов обновляется и содержимое представления коллекции перезагружается. `FindPictures`Подпрограммы отвечают за поиск элементов, соответствующих новому условию поиска:
 
 ```csharp
 private void FindPictures ()
@@ -512,7 +512,7 @@ public void UpdateSearchResultsForSearchController (UISearchController searchCon
 }
 ```
 
-Метод `PopulatePictures` изначально заполняет коллекцию доступных элементов:
+`PopulatePictures`Метод первоначально заполняет коллекцию доступных элементов:
 
 ```csharp
 private void PopulatePictures ()
@@ -528,7 +528,7 @@ private void PopulatePictures ()
 
 В этом примере все образцы данных создаются в памяти при загрузке контроллера представления коллекции. В реальных приложениях эти данные, вероятно, будут считываться из базы данных или веб-службы и только при необходимости поддерживать ограниченную память Apple TV.
 
-Методы `NumberOfSections` и `GetItemsCount` предоставляют количество сопоставленных элементов:
+`NumberOfSections`Методы и `GetItemsCount` предоставляют количество сопоставленных элементов:
 
 ```csharp
 public override nint NumberOfSections (UICollectionView collectionView)
@@ -544,7 +544,7 @@ public override nint GetItemsCount (UICollectionView collectionView, nint sectio
 }
 ```
 
-Метод `GetCell` возвращает новую **ячейку прототипа** (на основе `CellID`, определенного выше в раскадровке) для каждого элемента в представлении коллекции:
+`GetCell`Метод возвращает новую **ячейку прототипа** (на основе `CellID` определенной выше в раскадровке) для каждого элемента в представлении коллекции:
 
 ```csharp
 public override UICollectionViewCell GetCell (UICollectionView collectionView, NSIndexPath indexPath)
@@ -555,7 +555,7 @@ public override UICollectionViewCell GetCell (UICollectionView collectionView, N
 }
 ```
 
-Метод `WillDisplayCell` вызывается до отображения отображаемой ячейки, поэтому ее можно настроить:
+`WillDisplayCell`Метод вызывается до отображения отображаемой ячейки, поэтому ее можно настроить:
 
 ```csharp
 public override void WillDisplayCell (UICollectionView collectionView, UICollectionViewCell cell, NSIndexPath indexPath)
@@ -571,7 +571,7 @@ public override void WillDisplayCell (UICollectionView collectionView, UICollect
 }
 ```
 
-Метод `DidUpdateFocus` предоставляет пользователю визуальную реакцию на выделение элементов в представлении коллекции результатов:
+`DidUpdateFocus`Метод предоставляет пользователю визуальную реакцию на выделение элементов в представлении коллекции результатов:
 
 ```csharp
 public override void DidUpdateFocus (UIFocusUpdateContext context, UIFocusAnimationCoordinator coordinator)
@@ -592,7 +592,7 @@ public override void DidUpdateFocus (UIFocusUpdateContext context, UIFocusAnimat
 }
 ```
 
-Наконец, метод `ItemSelected` обрабатывает пользователя, который выбирает элемент (щелкнув сенсорную поверхность с удаленным Siri) в представлении коллекции результатов:
+Наконец, `ItemSelected` метод обрабатывает пользователя, который выбирает элемент (щелкнув сенсорную поверхность с удаленным Siri) в представлении коллекции результатов:
 
 ```csharp
 public override void ItemSelected (UICollectionView collectionView, NSIndexPath indexPath)
@@ -607,11 +607,11 @@ public override void ItemSelected (UICollectionView collectionView, NSIndexPath 
 }
 ```
 
-Если поле поиска было представлено в виде модального диалогового окна (в верхней части представления, вызывающего его), используйте метод `DismissViewController`, чтобы закрыть представление поиска, когда пользователь выберет элемент. В этом примере поле поиска представлено в виде содержимого вкладки представления вкладок, поэтому оно не закрывается здесь.
+Если поле поиска было представлено в виде модального диалогового окна (в верхней части представления, вызывающего его), используйте `DismissViewController` метод, чтобы закрыть представление поиска, когда пользователь выберет элемент. В этом примере поле поиска представлено в виде содержимого вкладки представления вкладок, поэтому оно не закрывается здесь.
 
 Дополнительные сведения о представлениях коллекций см. в документации по [работе с представлениями коллекций](~/ios/tvos/user-interface/collection-views.md) .
 
-<a name="Presenting the Search Field" />
+<a name="Presenting the Search Field"></a>
 
 ### <a name="presenting-the-search-field"></a>Представление поля поиска
 
@@ -704,7 +704,7 @@ namespace tvText
 public const string SearchResultsID = "SearchResults";
 ```
 
-Затем метод `ShowSearchController` создает новый контроллер коллекции представления поиска и отображает его.
+Затем `ShowSearchController` метод создает новый контроллер коллекции представления поиска и отображает его.
 
 ```csharp
 public void ShowSearchController ()
@@ -736,16 +736,16 @@ public void ShowSearchController ()
 }
 ```
 
-В приведенном выше методе после создания экземпляра `SearchResultsViewController` из раскадровки создается новая `UISearchController`, которая предоставляет пользователю поле поиска и экранную клавиатуру. Коллекция результатов поиска (определенная `SearchResultsViewController`) будет отображаться под этой клавиатурой.
+В приведенном выше методе после `SearchResultsViewController` создания экземпляра из раскадровки создается новый объект, `UISearchController` который позволяет предоставить пользователю поле поиска и экранную клавиатуру. На этой клавиатуре будет отображаться Коллекция результатов поиска (как определено в `SearchResultsViewController` ).
 
-Затем `SearchBar` настраивается со сведениями, такими как указание **заполнителя** . Это предоставляет пользователю сведения о типе поиска.
+Далее `SearchBar` настраивается со сведениями, такими как указание **заполнителя** . Это предоставляет пользователю сведения о типе поиска.
 
 Затем пользователю будет предоставлено поле поиска одним из двух способов:
 
-- **Модальное представление диалогового окна** . вызывается метод `PresentViewController` для представления поиска по существующему представлению в полноэкранном режиме.
-- **Просмотр содержимого** — создается `UISearchContainerViewController`, в которой будет содержаться контроллер поиска. Создается `UINavigationController`, содержащий контейнер поиска, а затем контроллер навигации добавляется в `AddChildViewController (navController)`контроллера представления и представление, представленное `View.Add (navController.View)`.
+- **Модальное представление диалогового окна** — `PresentViewController` метод вызывается для представления поиска по существующему представлению в полноэкранном режиме.
+- **Представление содержимого** — `UISearchContainerViewController` создается для размещения контроллера поиска. `UINavigationController`Создается для хранения контейнера поиска, затем контроллер навигации добавляется к контроллеру представления `AddChildViewController (navController)` и представленному представлению `View.Add (navController.View)` .
 
-Наконец, и снова, в зависимости от типа представления, метод `ViewDidLoad` или `ViewDidAppear` вызовет метод `ShowSearchController`, чтобы предоставить пользователю поиск.
+Наконец, и снова, в зависимости от типа представления, `ViewDidLoad` метод или `ViewDidAppear` вызывает `ShowSearchController` метод, чтобы предоставить пользователю поиск.
 
 ```csharp
 public override void ViewDidLoad ()
@@ -778,7 +778,7 @@ public override void ViewDidAppear (bool animated)
 
 В любой момент времени пользователь может переключить фокус на элемент в результатах поиска и щелкнуть сенсорную поверхность Siri удаленно, чтобы выбрать ее.
 
-<a name="Summary" />
+<a name="Summary"></a>
 
 ## <a name="summary"></a>Сводка
 

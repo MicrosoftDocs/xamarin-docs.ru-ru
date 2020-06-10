@@ -7,12 +7,12 @@ ms.assetid: 9E6C986F-3FBA-4599-8367-FB0C565C0ADE
 author: davidortinau
 ms.author: daortin
 ms.date: 04/18/2018
-ms.openlocfilehash: 4a5aa13a197e885b074b07eae3594abd4992ee71
-ms.sourcegitcommit: 4691b48f14b166afcec69d1350b769ff5bf8c9f6
+ms.openlocfilehash: f81df8ac253e53b16c3ab09bf80d66a7b6324854
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75728256"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571523"
 ---
 # <a name="updating-component-references-to-nuget"></a>Обновление ссылок на компоненты в NuGet
 
@@ -29,7 +29,7 @@ ms.locfileid: "75728256"
 
 Выпуск 15,6 Visual Studio и 7,4 Visual Studio для Mac больше не поддерживают компоненты в проекте. 
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 При загрузке проекта в Visual Studio отображается следующее диалоговое окно, объясняющее, что необходимо вручную удалить все компоненты из проекта:
 
@@ -41,7 +41,7 @@ ms.locfileid: "75728256"
 
 2. Щелкните правой кнопкой мыши выгруженный проект и выберите **Изменить {имя_проекта-Project-Name}. csproj**.
 
-3. Найдите в файле все ссылки для `XamarinComponentReference`. Она должна выглядеть следующим образом:
+3. Найдите в файле все ссылки на `XamarinComponentReference` . Он должен выглядеть следующим образом:
 
     ```xml
     <ItemGroup>
@@ -60,13 +60,13 @@ ms.locfileid: "75728256"
     </ItemGroup>
     ```
 
-4. Удалите ссылки на `XamarinComponentReference` и сохраните файл. В приведенном выше примере можно спокойно удалить всю `ItemGroup`.
+4. Удалите ссылки на `XamarinComponentReference` и сохраните файл. В приведенном выше примере можно полностью удалить все `ItemGroup` .
 
 5. После сохранения файла щелкните правой кнопкой мыши имя проекта и выберите **Перезагрузить проект**.
 
 6. Повторите описанные выше действия для каждого проекта в решении.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 При загрузке проекта в Visual Studio для Mac отображается следующее диалоговое окно, объясняющее, что необходимо вручную удалить все компоненты из проекта:
 
@@ -74,9 +74,9 @@ ms.locfileid: "75728256"
 
 Чтобы удалить компонент из проекта, выполните следующие действия.
 
-1. Откройте файл. csproj. Для этого щелкните правой кнопкой мыши имя проекта и выберите **сервис > изменить файл**.
+1. Откройте CSPROJ-файл. Для этого щелкните правой кнопкой мыши имя проекта и выберите **сервис > изменить файл**.
 
-2. Найдите в файле все ссылки для `XamarinComponentReference`. Она должна выглядеть следующим образом:
+2. Найдите в файле все ссылки на `XamarinComponentReference` . Он должен выглядеть следующим образом:
 
     ```xml
     <ItemGroup>
@@ -95,7 +95,7 @@ ms.locfileid: "75728256"
     </ItemGroup>
     ```
 
-3. Удалите ссылки на `XamarinComponentReference` и сохраните файл. В приведенном выше примере можно спокойно удалить всю `ItemGroup`
+3. Удалите ссылки на `XamarinComponentReference` и сохраните файл. В приведенном выше примере можно спокойно удалить все`ItemGroup`
 
 4. Повторите описанные выше действия для каждого проекта в решении.
 
@@ -113,7 +113,7 @@ ms.locfileid: "75728256"
 Большинство компонентов относятся к одной из указанных выше категорий.
 Если вы используете компонент, который не имеет эквивалентного пакета NuGet, ознакомьтесь с разделом [компоненты без пути миграции NuGet](#require-update) ниже.
 
-<a name="contain" />
+<a name="contain"></a>
 
 ## <a name="components-that-contain-nuget-packages"></a>Компоненты, содержащие пакеты NuGet
 
@@ -141,7 +141,7 @@ ms.locfileid: "75728256"
 
 ![Обновление пакета NuGet](component-nuget-images/nuget-update-sml.png)
 
-<a name="replace" />
+<a name="replace"></a>
 
 ## <a name="components-with-nuget-replacements"></a>Компоненты с заменой NuGet
 
@@ -159,8 +159,8 @@ _Он может содержать зависимости NuGet, но их мо
 
 В качестве примера можно найти популярный пакет **SQLite-NET-PCL** , выполнив поиск по следующим параметрам:
 
-- [`sqlite-net-pcl`](https://www.nuget.org/packages?q=sqlite-net-pcl) — название продукта.
-- [`praeclarum`](https://www.nuget.org/packages?q=praeclarum) — профиль автора.
+- [`sqlite-net-pcl`](https://www.nuget.org/packages?q=sqlite-net-pcl)— Название продукта.
+- [`praeclarum`](https://www.nuget.org/packages?q=praeclarum)— Профиль автора.
 
 ### <a name="updating-the-solution"></a>Обновление решения
 
@@ -176,7 +176,7 @@ _Он может содержать зависимости NuGet, но их мо
 
 #### <a name="add-the-nuget-package"></a>Добавление пакета NuGet
 
-1. Щелкните правой кнопкой мыши узел **пакеты** и выберите команду **Добавить пакеты.** ...
+1. Щелкните правой кнопкой мыши узел **пакеты** и выберите команду **Добавить пакеты.**...
 2. Поиск замены NuGet по имени или автору:
 
     ![](component-nuget-images/nuget-search-sml.png)
@@ -186,7 +186,7 @@ _Он может содержать зависимости NuGet, но их мо
 Пакет NuGet будет добавлен в проект вместе с любыми зависимостями.
 Это должно исправить сборку. Если сборка продолжится неудачно, изучите каждую ошибку и проверьте, появились ли различия в API между компонентом и пакетом NuGet.
 
-<a name="require-update" />
+<a name="require-update"></a>
 
 ## <a name="components-without-a-nuget-migration-path"></a>Компоненты без пути миграции NuGet
 

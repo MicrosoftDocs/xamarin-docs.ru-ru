@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 593d6a8b30d5ed0e143d1c013849d2bef571f6dc
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84140300"
+Title: "Создание и рисование на точечных рисунках SkiaSharp" Description: "Узнайте, как создавать точечные рисунки SkiaSharp, а затем рисовать на этих точечных рисунках, создав на их основе холст".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 79BD3266-D457-4E50-BDDF-33450035FA0F Автор: давидбритч MS. author: дабритч MS. Дата: 07/17/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="creating-and-drawing-on-skiasharp-bitmaps"></a>Создание и рисование на точечных рисунках SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -341,8 +327,6 @@ public class PixelizedImagePage : ContentPage
 
 [![Изображение пикселизе](drawing-images/PixelizeImage.png "Изображение пикселизе")](drawing-images/PixelizeImage-Large.png#lightbox)
 
-<a name="rotating-bitmaps" />
-
 ## <a name="rotating-bitmaps"></a>Вращение точечных рисунков
 
 Другой распространенной задачей является вращение точечных рисунков. Это особенно полезно при извлечении точечных рисунков из библиотеки фотографий iPhone или iPad. Если при создании фотографии устройство не удерживается в определенной ориентации, изображение, скорее всего, будет перенаправлено вверх или вниз.
@@ -388,7 +372,7 @@ using (SKCanvas canvas = new SKCanvas(rotatedBitmap))
 }
 ```
 
-Эти два метода используются на страницах **Фотоголоволомки** , описанных в статье [**Обрезка точечных рисунков SkiaSharp**](cropping.md#tile-division).
+Эти два метода используются на страницах **Фотоголоволомки** , описанных в статье [**Обрезка точечных рисунков SkiaSharp**](cropping.md#cropping-skiasharp-bitmaps).
 
 Программа, позволяющая пользователю вращать точечный рисунок в шагах с шагом в 90 градусов, должна реализовывать только одну функцию для поворота на 90 градусов. После этого пользователь может вращать любой шаг в 90 градусов за счет повторного выполнения этой функции.
 

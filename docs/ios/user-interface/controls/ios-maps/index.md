@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 3eb50c97521d11944e6d549018e057416b9dc2b2
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: cdb8505bd8c25b6e591dd86daf6a4d1e174012f6
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73022031"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84569040"
 ---
 # <a name="maps-in-xamarinios"></a>Карты в Xamarin. iOS
 
@@ -20,7 +20,7 @@ ms.locfileid: "73022031"
 
 ## <a name="adding-a-map"></a>Добавление схемы
 
-Добавление схемы к приложению осуществляется путем добавления `MKMapView` экземпляра в иерархию представлений, как показано ниже:
+Добавление схемы к приложению осуществляется путем добавления `MKMapView` экземпляра к иерархии представлений, как показано ниже:
 
 ```csharp
 // map is an MKMapView declared as a class variable
@@ -28,13 +28,13 @@ map = new MKMapView (UIScreen.MainScreen.Bounds);
 View = map;
 ```
 
-`MKMapView` — это `UIView` подкласс, отображающий карту. Простое добавление схемы с помощью приведенного выше кода создает интерактивную карту:
+`MKMapView`— `UIView` подкласс, отображающий карту. Простое добавление схемы с помощью приведенного выше кода создает интерактивную карту:
 
 ![](images/00-map.png "A sample map")
 
 ## <a name="map-style"></a>Стиль схемы
 
-`MKMapView` поддерживает три различных стиля карт. Чтобы применить стиль схемы, просто задайте для свойства `MapType` значение из перечисления `MKMapType`.
+`MKMapView`поддерживает 3 различных стиля карт. Чтобы применить стиль схемы, просто присвойте `MapType` свойству значение из `MKMapType` перечисления:
 
 ```csharp
 map.MapType = MKMapType.Standard; //road map
@@ -48,21 +48,21 @@ map.MapType = MKMapType.Hybrid;
 
 ## <a name="panning-and-zooming"></a>Панорамирование и масштаб
 
-`MKMapView` включает поддержку функций взаимодействий с картой, таких как:
+`MKMapView`включает поддержку функций для интерактивной работы с картой, таких как:
 
 - Масштаб с помощью жеста сжатия
 - Панорамирование с помощью жеста панорамирования
 
-Эти функции можно включить или отключить, просто задав свойства `ZoomEnabled` и `ScrollEnabled` экземпляра `MKMapView`, где значение по умолчанию равно true для обоих. Например, чтобы отобразить статическую карту, просто установите для соответствующих свойств значение false:
+Эти функции можно включить или отключить, просто задав `ZoomEnabled` `ScrollEnabled` Свойства и `MKMapView` экземпляра, где значение по умолчанию — true для обоих. Например, чтобы отобразить статическую карту, просто установите для соответствующих свойств значение false:
 
 ```csharp
 map.ZoomEnabled = false;
 map.ScrollEnabled = false;
 ```
 
-## <a name="user-location"></a>Расположение пользователя
+## <a name="user-location"></a>Местонахождение пользователей
 
-Помимо взаимодействия с пользователем, `MKMapView` также имеет встроенную поддержку отображения расположения устройства. Это делается с помощью *базовой платформы расположения* . Прежде чем можно будет получить доступ к расположению пользователя, необходимо запросить пользователя. Для этого создайте экземпляр `CLLocationManager` и вызовите `RequestWhenInUseAuthorization`.
+Помимо взаимодействия с пользователем, `MKMapView` также имеет встроенную поддержку отображения расположения устройства. Это делается с помощью *базовой платформы расположения* . Прежде чем можно будет получить доступ к расположению пользователя, необходимо запросить пользователя. Для этого создайте экземпляр `CLLocationManager` и вызовите `RequestWhenInUseAuthorization` .
 
 ```csharp
 CLLocationManager locationManager = new CLLocationManager();
@@ -70,7 +70,7 @@ locationManager.RequestWhenInUseAuthorization();
 //locationManager.RequestAlwaysAuthorization(); //requests permission for access to location data while running in the background
 ```
 
-Обратите внимание, что в версиях iOS до 8,0 попытка вызова `RequestWhenInUseAuthorization` приведет к ошибке. Обязательно проверьте версию iOS перед выполнением этого вызова, если планируется поддержка версий до 8.
+Обратите внимание, что в версиях iOS до 8,0 попытка вызвать `RequestWhenInUseAuthorization` ошибку приведет к ошибке. Обязательно проверьте версию iOS перед выполнением этого вызова, если планируется поддержка версий до 8.
 
 Доступ к расположению пользователя также требует внесения изменений в **info. plist**. Необходимо задать следующие ключи, связанные с данными о расположении:
 
@@ -79,7 +79,7 @@ locationManager.RequestWhenInUseAuthorization();
 
 Эти ключи можно добавить, открыв **info. plist** и выбрав *Source (источник* ) в нижней части редактора.
 
-Когда вы обновите **info. plist** и предложит пользователю разрешение на доступ к своему расположению, можно отобразить расположение пользователя на карте, задав для свойства `ShowsUserLocation` значение true:
+Когда вы обновите **info. plist** и предложит пользователю разрешение на доступ к своему расположению, можно отобразить расположение пользователя на карте, задав `ShowsUserLocation` для свойства значение true:
 
 ```csharp
 map.ShowsUserLocation = true;
@@ -89,7 +89,7 @@ map.ShowsUserLocation = true;
 
 ## <a name="annotations"></a>Заметки
 
- `MKMapView` также поддерживает отображение изображений, известных как заметки, на карте. Это могут быть пользовательские образы или заданные системой ПИН-коды различных цветов. Например, на следующем снимке экрана показана схема с ПИН-кодом и пользовательским изображением:
+ `MKMapView`также поддерживает отображение изображений, известных как заметки, на карте. Это могут быть пользовательские образы или заданные системой ПИН-коды различных цветов. Например, на следующем снимке экрана показана схема с ПИН-кодом и пользовательским изображением:
 
  ![](images/03-annotations.png "This screenshot shows a map with a both a pin and a custom image")
 
@@ -97,12 +97,12 @@ map.ShowsUserLocation = true;
 
 Сама Аннотация состоит из двух частей:
 
-- Объект `MKAnnotation`, содержащий данные модели заметки, такие как заголовок и расположение заметки.
-- `MKAnnotationView`, который содержит изображение для отображения и, при необходимости, выноску, отображаемую при касании пользователем заметки.
+- `MKAnnotation`Объект, который содержит данные модели о заметке, такие как заголовок и расположение заметки.
+- Объект `MKAnnotationView` , который содержит изображение для отображения и, при необходимости, выноску, отображаемую при касании пользователем заметки.
 
-Map Kit использует шаблон делегирования iOS для добавления заметок к карте, где для свойства `Delegate` `MKMapView` задается экземпляр `MKMapViewDelegate`. Это реализация делегата, которая отвечает за возврат `MKAnnotationView` для заметки.
+Map Kit использует шаблон делегирования iOS для добавления заметок к сопоставлению, где `Delegate` свойство объекта `MKMapView` задается экземпляру `MKMapViewDelegate` . Это реализация делегата, которая отвечает за возврат `MKAnnotationView` для заметки.
 
-Чтобы добавить заметку, сначала заметка добавляется путем вызова `AddAnnotations` на экземпляре `MKMapView`:
+Чтобы добавить заметку, сначала заметка добавляется путем вызова метода `AddAnnotations` в `MKMapView` экземпляре:
 
 ```csharp
 // add an annotation
@@ -112,9 +112,9 @@ map.AddAnnotations (new MKPointAnnotation (){
 });
 ```
 
-Когда расположение заметки становится видимым на карте, `MKMapView` вызывает метод `GetViewForAnnotation` делегата, чтобы получить `MKAnnotationView` для отображения.
+Когда расположение заметки становится видимым на карте, `MKMapView` вызывается метод своего делегата, `GetViewForAnnotation` чтобы получить объект `MKAnnotationView` для отображения.
 
-Например, следующий код возвращает предоставленный системой `MKPinAnnotationView`:
+Например, следующий код возвращает предоставленную системой `MKPinAnnotationView` :
 
 ```csharp
 string pId = "PinAnnotation";
@@ -139,7 +139,7 @@ public override MKAnnotationView GetViewForAnnotation (MKMapView mapView, NSObje
 
 ### <a name="reusing-annotations"></a>Повторное использование заметок
 
-Для экономии памяти `MKMapView` позволяет сохранять представление аннотации в пул для повторного использования, аналогично тому, как ячейки таблицы повторно используются. Получение представления заметок из пула выполняется с помощью вызова `DequeueReusableAnnotation`:
+Для экономии памяти позволяет составить `MKMapView` представление аннотации в пул для повторного использования, аналогично тому, как ячейки таблицы повторно используются. Получение представления заметок из пула выполняется с помощью вызова `DequeueReusableAnnotation` :
 
 ```csharp
 MKAnnotationView pinView = (MKPinAnnotationView)mapView.DequeueReusableAnnotation (pId);
@@ -147,7 +147,7 @@ MKAnnotationView pinView = (MKPinAnnotationView)mapView.DequeueReusableAnnotatio
 
 #### <a name="showing-callouts"></a>Отображение выносок
 
-Как упоминалось ранее, Аннотация может содержать выноску. Чтобы отобразить выноску, просто задайте для параметра `CanShowCallout` значение true в `MKAnnotationView`. Это приводит к отображению заголовка заметки при касании заметки, как показано ниже.
+Как упоминалось ранее, Аннотация может содержать выноску. Чтобы отобразить выноску, просто задайте `CanShowCallout` для свойства значение true `MKAnnotationView` . Это приводит к отображению заголовка заметки при касании заметки, как показано ниже.
 
  ![](images/04-callout.png "The annotations title being displayed")
 
@@ -164,7 +164,7 @@ pinView.LeftCalloutAccessoryView = new UIImageView(UIImage.FromFile ("monkey.png
 
  ![](images/05-callout-accessories.png "An example callout")
 
-Чтобы обрабатывали пользователя, коснувшись нужного аксессуара, просто реализуйте метод `CalloutAccessoryControlTapped` в `MKMapViewDelegate`:
+Чтобы обрабатывали пользователя, коснувшись нужного аксессуара, просто реализуйте `CalloutAccessoryControlTapped` метод в `MKMapViewDelegate` :
 
 ```csharp
 public override void CalloutAccessoryControlTapped (MKMapView mapView, MKAnnotationView view, UIControl control)
@@ -173,7 +173,7 @@ public override void CalloutAccessoryControlTapped (MKMapView mapView, MKAnnotat
 }
 ```
 
-### <a name="overlays"></a>Наложений
+### <a name="overlays"></a>Наложения
 
 Другой способ слоя графики на карте — использовать наложенные слои. Наложения позволяют рисовать графическое содержимое, которое масштабируется вместе с картой. iOS обеспечивает поддержку нескольких типов наложения, в том числе:
 
@@ -187,21 +187,21 @@ public override void CalloutAccessoryControlTapped (MKMapView mapView, MKAnnotat
 
 Как и в случае с примечаниями, добавление наложения состоит из двух частей:
 
-- Создание объекта модели для оверлея и добавление его в `MKMapView`.
-- Создание представления для оверлея в `MKMapViewDelegate`.
+- Создание объекта модели для оверлея и добавление его в `MKMapView` .
+- Создание представления для наложения в `MKMapViewDelegate` .
 
-Модель оверлея может быть любым `MKShape` подклассом. Xamarin. iOS включает `MKShape` подклассов для многоугольников, ломаных и кругов с помощью классов `MKPolygon`, `MKPolyline` и `MKCircle` соответственно.
+Модель для наложения может быть любым `MKShape` подклассом. Xamarin. iOS включает `MKShape` подклассы для многоугольников, ломаных и кругов, `MKPolygon` через `MKPolyline` классы, и `MKCircle` соответственно.
 
-Например, следующий код используется для добавления `MKCircle`:
+Например, следующий код используется для добавления `MKCircle` :
 
 ```csharp
 var circleOverlay = MKCircle.Circle (mapCenter, 1000);
 map.AddOverlay (circleOverlay);
 ```
 
-Представление для оверлея — это `MKOverlayView` экземпляр, возвращаемый `GetViewForOverlay` в `MKMapViewDelegate`. Каждый `MKShape` имеет соответствующее `MKOverlayView`, который знает, как отобразить данную фигуру. Для `MKPolygon` `MKPolygonView`. Аналогичным образом `MKPolyline` соответствует `MKPolylineView`, а для `MKCircle` `MKCircleView`.
+Представление для оверлея — это `MKOverlayView` экземпляр, возвращаемый объектом `GetViewForOverlay` в `MKMapViewDelegate` . Каждый `MKShape` имеет соответствующий объект `MKOverlayView` , который знает, как отобразить данную фигуру. Для этого `MKPolygon` есть `MKPolygonView` . Аналогичным образом `MKPolyline` соответствует `MKPolylineView` , и для `MKCircle` есть `MKCircleView` .
 
-Например, следующий код возвращает `MKCircleView` для `MKCircle`:
+Например, следующий код возвращает `MKCircleView` для `MKCircle` :
 
 ```csharp
 public override MKOverlayView GetViewForOverlay (MKMapView mapView, NSObject overlay)
@@ -223,20 +223,20 @@ iOS включает в себя API локального поиска с пом
 
 Для выполнения локального поиска приложение должно выполнить следующие действия.
 
-1. Создайте объект `MKLocalSearchRequest`.
-1. Создайте объект `MKLocalSearch` из `MKLocalSearchRequest`.
-1. Вызовите метод `Start` для объекта `MKLocalSearch`.
-1. Получение объекта `MKLocalSearchResponse` в обратном вызове.
+1. Создать `MKLocalSearchRequest` объект.
+1. Создайте `MKLocalSearch` объект из `MKLocalSearchRequest` .
+1. Вызовите `Start` метод для `MKLocalSearch` объекта.
+1. Получите `MKLocalSearchResponse` объект в обратном вызове.
 
 Интерфейс API локального поиска не предоставляет пользовательский интерфейс. Для него даже не требуется использовать карту. Однако для использования локального поиска приложение должно предоставить какой-либо способ указать поисковый запрос и отобразить результаты. Кроме того, поскольку результаты будут содержать данные о расположении, часто имеет смысл отобразить их на карте.
 
-<a name="Adding_a_Local_Search_UI"/>
+<a name="Adding_a_Local_Search_UI"></a>
 
 ### <a name="adding-a-local-search-ui"></a>Добавление пользовательского интерфейса локального поиска
 
-Одним из способов приема входных данных поиска является `UISearchBar`, который предоставляется `UISearchController` и отображает результаты в таблице.
+Одним из способов принятия входных данных поиска является с `UISearchBar` , который предоставляется `UISearchController` и отображает результаты в таблице.
 
-Следующий код добавляет `UISearchController` (который имеет свойство панели поиска) в метод `ViewDidLoad` `MapViewController`:
+Следующий код добавляет объект `UISearchController` (который имеет свойство панели поиска) в `ViewDidLoad` методе `MapViewController` :
 
 ```csharp
 //Creates an instance of a custom View Controller that holds the results
@@ -268,8 +268,8 @@ NavigationItem.TitleView = searchController.SearchBar;
 
 Обратите внимание, что вы несете ответственность за включение объекта панели поиска в пользовательский интерфейс. В этом примере мы присвоили его Титлевиев панели навигации, но если вы не используете контроллер навигации в приложении, вам придется найти другое место для его показа.
 
-В этом фрагменте кода мы создали еще один пользовательский контроллер представления — `searchResultsController`, который отображает результаты поиска, а затем использовал этот объект для создания объекта контроллера поиска. Мы также создали новый поисковый элемент, который станет активным, когда пользователь взаимодействует с панелью поиска. Он получает уведомления о поиске при каждом нажатии клавиши и отвечает за обновление пользовательского интерфейса.
-Мы рассмотрим, как реализовать как `searchResultsController`, так и `searchResultsUpdater` далее в этом руководство.
+В этом фрагменте кода мы создали еще один настраиваемый контроллер представления — `searchResultsController` , который отображает результаты поиска, а затем использовал этот объект для создания объекта контроллера поиска. Мы также создали новый поисковый элемент, который станет активным, когда пользователь взаимодействует с панелью поиска. Он получает уведомления о поиске при каждом нажатии клавиши и отвечает за обновление пользовательского интерфейса.
+Мы рассмотрим, как реализовать `searchResultsController` и `searchResultsUpdater` Далее в этом руководство.
 
 Это приводит к отображению панели поиска на карте, как показано ниже:
 
@@ -277,7 +277,7 @@ NavigationItem.TitleView = searchController.SearchBar;
 
 ### <a name="displaying-the-search-results"></a>Отображение результатов поиска
 
-Чтобы отобразить результаты поиска, необходимо создать пользовательский контроллер представления. обычно `UITableViewController`. Как показано выше, `searchResultsController` передается конструктору `searchController` при создании.
+Чтобы отобразить результаты поиска, необходимо создать пользовательский контроллер представления. Обычно `UITableViewController` . Как показано выше, объект `searchResultsController` передается конструктору `searchController` при создании.
 В следующем примере кода показано, как создать этот контроллер пользовательского представления.
 
 ```csharp
@@ -350,9 +350,9 @@ public class SearchResultsViewController : UITableViewController
 
 ### <a name="updating-the-search-results"></a>Обновление результатов поиска
 
-`SearchResultsUpdater` выступает в качестве медиатора между панелью поиска `searchController`и результатами поиска.
+Объект `SearchResultsUpdater` выступает в качестве медиатора между `searchController` панелью поиска и результатами поиска.
 
-В этом примере необходимо сначала создать метод Search в `SearchResultsViewController`. Для этого необходимо создать объект `MKLocalSearch` и использовать его для выполнения поиска `MKLocalSearchRequest`, результаты извлекаются в обратном вызове, переданном методу `Start` объекта `MKLocalSearch`. Затем результаты возвращаются в объект `MKLocalSearchResponse`, содержащий массив объектов `MKMapItem`:
+В этом примере необходимо сначала создать метод Search в `SearchResultsViewController` . Для этого необходимо создать `MKLocalSearch` объект и использовать его для выполнения поиска. `MKLocalSearchRequest` результаты извлекаются в обратном вызове, переданном `Start` методу `MKLocalSearch` объекта. Затем результаты возвращаются в `MKLocalSearchResponse` объекте, содержащем массив `MKMapItem` объектов:
 
 ```csharp
 public void Search (string forSearchString)
@@ -377,7 +377,7 @@ public void Search (string forSearchString)
 }
 ```
 
-Затем в нашей `MapViewController` мы создадим пользовательскую реализацию `UISearchResultsUpdating`, которая назначается свойству `SearchResultsUpdater` нашего `searchController` в разделе [Добавление пользовательского интерфейса локального поиска](#Adding_a_Local_Search_UI) :
+Затем, в нашем примере, `MapViewController` мы создадим пользовательскую реализацию `UISearchResultsUpdating` , которая назначается `SearchResultsUpdater` свойству нашего `searchController` в разделе [Добавление локального пользовательского интерфейса поиска](#Adding_a_Local_Search_UI) :
 
 ```csharp
 public class SearchResultsUpdator : UISearchResultsUpdating
@@ -396,11 +396,11 @@ public class SearchResultsUpdator : UISearchResultsUpdating
  ![](images/08-search-results.png "An annotation added to the map when an item is selected from the results")
 
 > [!IMPORTANT]
-> `UISearchController` был реализован в iOS 8. Если вы хотите поддерживать устройства более ранней версии, вам потребуется использовать `UISearchDisplayController`.
+> `UISearchController`реализован в iOS 8. Если вы хотите поддерживать устройства более ранней версии, вам потребуется использовать `UISearchDisplayController` .
 
 ## <a name="summary"></a>Сводка
 
-В этой статье мы рассмотрели платформу *Map* *Kit* для iOS. Во первых, он рассматривал, как класс `MKMapView` позволяет включать Интерактивные карты в приложение. Затем демонстрируется дальнейшая настройка карт с помощью заметок и наложений. Наконец, мы рассмотрели возможности локального поиска, добавленные в комплекте Map с iOS 6,1, и покажу, как использовать запросы на основе расположения для интересующих точек и добавлять их на карту.
+В этой статье мы рассмотрели платформу *Map* *Kit* для iOS. Во первых, он рассматривал, как `MKMapView` класс разрешает включение интерактивных карт в приложение. Затем демонстрируется дальнейшая настройка карт с помощью заметок и наложений. Наконец, мы рассмотрели возможности локального поиска, добавленные в комплекте Map с iOS 6,1, и покажу, как использовать запросы на основе расположения для интересующих точек и добавлять их на карту.
 
 ## <a name="related-links"></a>Связанные ссылки
 

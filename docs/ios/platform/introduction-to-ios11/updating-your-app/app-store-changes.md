@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/13/2016
-ms.openlocfilehash: 356509fb6f588b96a2a1224879675bbad36f8524
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 2aee2a8dc37d6a1a73569322a97cdd0aebfbfa1c
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73032139"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84574214"
 ---
 # <a name="app-store-changes-in-ios-11"></a>Изменения в магазине приложений в iOS 11
 
@@ -50,7 +50,7 @@ ms.locfileid: "73032139"
 
 ![Раздел продвижения App Store в iTunes Connect](app-store-changes-images/image4.png)
 
-Также необходимо добавить метод `ShouldAddStorePayment` к протоколу `SKPaymentTransactionObserver` в приложении.
+Также необходимо добавить `ShouldAddStorePayment` метод в `SKPaymentTransactionObserver` протокол в приложении.
 
 Дополнительные сведения о специальных возможностях покупки в приложении см. на странице [покупки в приложении](https://developer.apple.com/app-store/promoting-in-app-purchases/) Apple.
 
@@ -84,7 +84,7 @@ ms.locfileid: "73032139"
 
 Дополнительные сведения см. на странице Apple [реакция на рецензию](https://developer.apple.com/app-store/responding-to-reviews/) .
 
-<a name="Phased_Release"/>
+<a name="Phased_Release"></a>
 
 ## <a name="phased-release"></a>Поэтапный выпуск
 

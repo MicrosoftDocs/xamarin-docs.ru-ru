@@ -1,23 +1,8 @@
 ---
-title: Использование базы данных документов Azure Cosmos DB вXamarin.Forms
-description: В этой статье объясняется, как использовать клиентскую библиотеку Azure Cosmos DB .NET Standard для интеграции базы данных документов Azure Cosmos DB в Xamarin.Forms приложение.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-ms.custom: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 47b35d394eab339a8e9a1f81880e6de4233f29b6
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127092"
+Title: "использование базы данных документов Azure Cosmos DB в Xamarin.Forms " Description: "в этой статье объясняется, как использовать клиентскую библиотеку Azure Cosmos DB .NET Standard для интеграции базы данных документов Azure Cosmos DB в Xamarin.Forms приложение".
+MS. произв. Xamarin MS. AssetID: 7C0605D9-9B7F-4002-9B60-2B5DAA3EA30C MS. Technology: Xamarin-Forms MS. Custom: ксаму — автор видео: давидбритч MS. author: дабритч МС. Дата: 06/16/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="consume-an-azure-cosmos-db-document-database-in-xamarinforms"></a>Использование базы данных документов Azure Cosmos DB вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdb)
@@ -120,8 +105,6 @@ public async Task CreateDocumentCollection(string databaseName, string collectio
 > [!IMPORTANT]
 > Обратите внимание, что `CreateDocumentCollectionIfNotExistsAsync` метод создаст новую коллекцию с зарезервированной пропускной способностью, которая влияет на цены.
 
-<a name="document_query" />
-
 ### <a name="retrieving-document-collection-documents"></a>Получение документов коллекции документов
 
 Содержимое коллекции документов может быть извлечено путем создания и выполнения запроса документа. Запрос документа создается с помощью `DocumentClient.CreateDocumentQuery` метода:
@@ -160,8 +143,6 @@ var query = client.CreateDocumentQuery<TodoItem>(collectionLink)
 
 Этот запрос получает все документы из коллекции, `Done` свойство которой равно `false` .
 
-<a name="inserting_document" />
-
 ### <a name="inserting-a-document-into-a-document-collection"></a>Вставка документа в коллекцию документов
 
 Документы — это определяемое пользователем содержимое JSON, которые можно вставить в коллекцию документов с помощью `DocumentClient.CreateDocumentAsync` метода:
@@ -191,8 +172,6 @@ public async Task SaveTodoItemAsync(TodoItem item, bool isNewItem = false)
 ```
 
 `ReplaceDocumentAsync`Метод задает `Uri` аргумент, представляющий документ в коллекции, который необходимо заменить, и `object` аргумент, представляющий обновленные данные документа.
-
-<a name="deleting_document" />
 
 ### <a name="deleting-a-document-from-a-document-collection"></a>Удаление документа из коллекции документов
 
@@ -236,6 +215,6 @@ await client.DeleteDatabaseAsync(UriFactory.CreateDatabaseUri(Constants.Database
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Azure Cosmos DB ToDo (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdb)
-- [Документация по Azure Cosmos DB](/azure/cosmos-db/)
+- [Документация по Azure Cosmos DB](/azure/cosmos-db/)
 - [Клиентская библиотека Azure Cosmos DB .NET Standard](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)
 - [API Azure Cosmos DB](https://docs.microsoft.com/dotnet/api/overview/azure/cosmosdb/client?view=azure-dotnet)

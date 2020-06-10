@@ -7,16 +7,16 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 05/02/2017
-ms.openlocfilehash: 2b8fede37354fd8a899a14c0710bf46e5a82b86a
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 007d835b71c16a51cf5f6aca3c9fe1edd5be0034
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73026203"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84572394"
 ---
 # <a name="storyboards-in-xamarinmac-quick-start"></a>Раскадровки в Xamarin. Mac — Быстрое начало
 
-В качестве краткого знакомства с использованием раскадровок для определения пользовательского интерфейса приложения Xamarin. Mac начнем новый проект Xamarin. Mac. Выберите **Mac** > **Приложения** > **Приложение Cocoa** и нажмите кнопку **Далее**:
+В качестве краткого знакомства с использованием раскадровок для определения пользовательского интерфейса приложения Xamarin. Mac начнем новый проект Xamarin. Mac. Выберите приложение **Mac**  >  **приложение**  >  **Cocoa** и нажмите кнопку **Далее** :
 
 [![](quickstart-images/qs01.png "Adding a new Cocoa App")](quickstart-images/qs01.png#lightbox)
 
@@ -28,7 +28,7 @@ ms.locfileid: "73026203"
 
 [![](quickstart-images/qs03.png "The project and solution names")](quickstart-images/qs03.png#lightbox)
 
-В **Обозреватель решений**дважды щелкните файл `Main.storyboard`, чтобы открыть его для редактирования в Interface Builder Xcode:
+В **Обозреватель решений**дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования в Interface Builder Xcode:
 
 [![](quickstart-images/qs04.png "Editing the storyboard in Xcode")](quickstart-images/qs04.png#lightbox)
 
@@ -60,7 +60,7 @@ ms.locfileid: "73026203"
 
 [![](quickstart-images/qs10.png "An example of the app running")](quickstart-images/qs10.png#lightbox)
 
-Так как мы будем использовать правую часть разделенного представления в качестве области инспектора, нам нужно уменьшить размер и разрешить его сворачивание. Вернитесь в Xcode и измените представление для правой части, выбрав его в область конструктора и щелкнув **Инспектор размеров**. Здесь введите **ширину** `250`:
+Так как мы будем использовать правую часть разделенного представления в качестве области инспектора, нам нужно уменьшить размер и разрешить его сворачивание. Вернитесь в Xcode и измените представление для правой части, выбрав его в область конструктора и щелкнув **Инспектор размеров**. Здесь введите **ширину** `250` :
 
 [![](quickstart-images/qs11.png "Setting the width")](quickstart-images/qs11.png#lightbox)
 
@@ -72,7 +72,7 @@ ms.locfileid: "73026203"
 
 [![](quickstart-images/qs13.png "An example of the app running")](quickstart-images/qs13.png#lightbox)
 
-<a name="Defining-a-Presentation-Segue" />
+<a name="Defining-a-Presentation-Segue"></a>
 
 ## <a name="defining-a-presentation-segue"></a>Определение презентации перехода
 
@@ -94,7 +94,7 @@ ms.locfileid: "73026203"
 
 [![](quickstart-images/qs17.png "An example of the segue running")](quickstart-images/qs17.png#lightbox)
 
-<a name="Creating-App-Preferences" />
+<a name="Creating-App-Preferences"></a>
 
 ## <a name="creating-app-preferences"></a>Создание настроек приложения
 
@@ -120,7 +120,7 @@ ms.locfileid: "73026203"
 
 [![](quickstart-images/qs22.png "An example of the segue running")](quickstart-images/qs22.png#lightbox)
 
-Вы можете заметить, что это не похоже на стандартное диалоговое окно настроек macOS приложения. Чтобы устранить эту проблему, включите два файла изображений в папку `Resources` приложения Xamarin. Mac в **Обозреватель решений** и вернитесь в Interface Builder Xcode.
+Вы можете заметить, что это не похоже на стандартное диалоговое окно настроек macOS приложения. Чтобы устранить эту проблему, включите два файла изображений в папку приложения Xamarin. Mac `Resources` в **Обозреватель решений** и вернитесь в Interface Builder Xcode.
 
 Выберите контроллер представления вкладок и переключите его **стиль** на **панель инструментов**: 
 

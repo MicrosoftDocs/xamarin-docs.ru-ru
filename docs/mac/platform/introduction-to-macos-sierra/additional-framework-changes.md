@@ -7,16 +7,16 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 44468d3f2d323065161c290f2df8e6f0e89d3def
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+ms.openlocfilehash: 03840e127ba53ee63623252585e51e51e6890eb5
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76724991"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571601"
 ---
 # <a name="additional-macos-sierra-framework-changes"></a>Дополнительные изменения платформы macOS Sierra
 
-<a name="Accelerate-Framework-Enhancements" />
+<a name="Accelerate-Framework-Enhancements"></a>
 
 ## <a name="accelerate-framework-enhancements"></a>Усовершенствования платформы ускорения
 
@@ -26,37 +26,37 @@ ms.locfileid: "76724991"
 - Добавлены основные функции для создания нейронных сетей.
 - Добавлены функции геометрического предиката для проверки на такие вещи, как пересечение двух геометрических объектов.
 
-<a name="AppKit-Framework-Enhancements" />
+<a name="AppKit-Framework-Enhancements"></a>
 
 ## <a name="appkit-framework-enhancements"></a>Усовершенствования платформы AppKit
 
 В платформу AppKit для macOS Sierra были внесены следующие улучшения.
 
-- Некоторые улучшения `NSCollectionView` например:
+- Несколько усовершенствований, `NSCollectionView` например:
   - **Сворачиваемые разделы** . позволяет пользователю сворачивать раздел представления коллекции в одну горизонтальную строку.
   - **Плавающие заголовки** — верхние и нижние колонтитулы теперь можно перемещать (в макете потока), используя тот же API, что и [уиколлектионвиев](https://developer.apple.com/reference/uikit/uicollectionview) в iOS.
   - **Прокручиваемые фоновые представления** — фон представлений коллекции теперь можно настроить для прокрутки и содержимого.
 - Этап макета отложенного представления оптимизирован и расширен.
-- API перетаскивания теперь включает новые классы `NSFilePromiseProvider` и `NSFilePromiseReceiver` для поддержки перетаскивания флоккинг.
+- API-интерфейс перетаскивания теперь включает новые `NSFilePromiseProvider` `NSFilePromiseReceiver` классы и для поддержки перетаскивания флоккинг.
 - В существующие элементы управления добавлены несколько удобных конструкторов:
-  - `NSButton` содержит новые конструкторы для создания кнопок, флажков и переключателей.
-  - `NSTextField` содержит новые конструкторы для создания неупакованных и необтекаемых меток, меток с атрибутами и редактируемых текстовых полей.
-  - `NSSegmentedControl` содержит новые конструкторы для создания сегментированных элементов управления из группы меток или изображений.
-  - `NSSlider` содержит новые конструкторы для создания горизонтальных линейных ползунков.
-  - `NSImageView` содержит новые конструкторы для создания неизменяемых представлений изображений из заданной `NSImage`.
-- Новая `NSGridView` добавлена для автоматического разметки коллекции вложенных представлений в сетку с переменным размером строк и столбцов, которые могут динамически скрываться или отображаться.
+  - `NSButton`содержит новые конструкторы для создания кнопок, флажков и переключателей.
+  - `NSTextField`содержит новые конструкторы для создания неупакованных и необтекаемых меток, меток с атрибутами и редактируемых текстовых полей.
+  - `NSSegmentedControl`содержит новые конструкторы для создания сегментированных элементов управления из группы меток или изображений.
+  - `NSSlider`содержит новые конструкторы для создания горизонтальных линейных ползунков.
+  - `NSImageView`содержит новые конструкторы для создания неизменяемых представлений изображений из заданного `NSImage` .
+- Новый элемент был `NSGridView` добавлен для автоматической разметки коллекции вложенных представлений в сетку с переменным размером строк и столбцов, которые могут динамически скрываться или отображаться.
 
-<a name="AVFoundation-Framework-Enhancements" />
+<a name="AVFoundation-Framework-Enhancements"></a>
 
 ## <a name="avfoundation-framework-enhancements"></a>Усовершенствования платформы Авфаундатион
 
 В платформу Авфаундатион для macOS Sierra были внесены следующие улучшения.
 
-- В macOS приложение больше не должно реализовывать различные поведения [авплайеритем](https://developer.apple.com/reference/avfoundation/avplayeritem) на основе типа содержимого. Просто задайте свойство `Rate` и Авфаундатион определит, когда достаточно содержимого будет доступно для воспроизведения без ожидания.
-- Новый класс `AVPlayerLooper` упрощает циклический перебор заданной части мультимедиа во время воспроизведения.
-- Класс `AVAssetDownloadURLSession` позволяет загружать и более поздние воспроизведения зашифрованных потоков HLS FairPlay.
+- В macOS приложение больше не должно реализовывать различные поведения [авплайеритем](https://developer.apple.com/reference/avfoundation/avplayeritem) на основе типа содержимого. Просто задайте `Rate` свойство, и авфаундатион определит, когда будет доступно достаточное содержимое для воспроизведения без ожидания.
+- Новый `AVPlayerLooper` класс упрощает циклический перебор заданной части мультимедиа во время воспроизведения.
+- `AVAssetDownloadURLSession`Класс позволяет загружать и более поздние воспроизводить Fairplay зашифрованные HLS потоки.
 
-<a name="Core-Data-Framework-Enhancements" />
+<a name="Core-Data-Framework-Enhancements"></a>
 
 ## <a name="core-data-framework-enhancements"></a>Усовершенствования основных платформ данных
 
@@ -65,23 +65,23 @@ ms.locfileid: "76724991"
 - Корневые объекты [нсманажедобжектконтекст](https://developer.apple.com/reference/coredata/nsmanagedobjectcontext) поддерживают одновременную ошибку и выборку без сериализации.
 - Класс [нсперсистентсторекурдинатор](https://developer.apple.com/reference/coredata/nspersistentstorecoordinator) поддерживает пул хранилищ данных SQLite.
 - [Нсманажедобжектконтекст](https://developer.apple.com/reference/coredata/nsmanagedobjectcontext) объекты с хранилищами данных SQLite в режиме журнала Wal поддерживают новую функцию создания запросов, где контексты управляемых объектов (MOC) могут быть закреплены в конкретных версиях базы данных для последующей выборки и сбоя транзакций.
-- Использование `NSPersistenceContainer` высокого уровня для ссылки на `NSPersistentStoreCoordinator`, [нсманажедобжектмодел](https://developer.apple.com/reference/coredata/nsmanagedobjectmodel) и другие основные ресурсы настройки данных.
-- Добавлены несколько новых удобных методов для `NSManagedObject` упрощения выборки и создания подклассов.
+- Использование высокого уровня `NSPersistenceContainer` для ссылки на `NSPersistentStoreCoordinator` [Нсманажедобжектмодел](https://developer.apple.com/reference/coredata/nsmanagedobjectmodel) и другие основные ресурсы по настройке данных.
+- Было добавлено несколько новых удобных методов для `NSManagedObject` упрощения выборки и создания подклассов.
 
 Дополнительные сведения см. в [справочнике по основной платформе данных](https://developer.apple.com/reference/coredata)Apple.
 
-<a name="Core-Image-Framework-Enhancements" />
+<a name="Core-Image-Framework-Enhancements"></a>
 
 ## <a name="core-image-framework-enhancements"></a>Усовершенствования основной платформы образов
 
 В основную платформу образов для macOS Sierra были внесены следующие улучшения.
 
-- Метод `ImageWithExtent` класса [Цифилтер](https://developer.apple.com/reference/coreimage/cifilter) можно использовать для вставки пользовательской обработки в операцию фильтрации. Основное изображение будет вызывать заданный обратный вызов между фильтрами при обработке изображения для вывода или показа.
+- `ImageWithExtent`Метод класса [Цифилтер](https://developer.apple.com/reference/coreimage/cifilter) можно использовать для вставки пользовательской обработки в операцию фильтрации. Основное изображение будет вызывать заданный обратный вызов между фильтрами при обработке изображения для вывода или показа.
 - Теперь приложение может обрабатывать изображения в цветовом пространстве за пределами рабочего пространства контекста образа путем преобразования в цветовое пространство и из него до и после обработки.
 - Ядро образа ядра теперь может запрашивать конкретный выходной формат пикселей.
-- Добавлены следующие новые фильтры изображений: `CINinePartTitled`, `CINinePartStretched`, `CIHueSaturationValueGradient`, `CIEdgePreserveUpsampleFilter` и `CIClamp`.
+- Добавлены следующие новые фильтры изображений: `CINinePartTitled` , `CINinePartStretched` , `CIHueSaturationValueGradient` `CIEdgePreserveUpsampleFilter` и `CIClamp` .
 
-<a name="Foundation-Framework-Enhancements" />
+<a name="Foundation-Framework-Enhancements"></a>
 
 ## <a name="foundation-framework-enhancements"></a>Усовершенствования в Foundation Framework
 
@@ -95,7 +95,7 @@ ms.locfileid: "76724991"
 
 Дополнительные сведения см. в [статье заметки о выпуске Apple для OS X v 10.12 и iOS 10](https://developer.apple.com/library/prerelease/content/releasenotes/Miscellaneous/RN-Foundation-OSX10.12/index.html).
 
-<a name="GameKit-Framework-Enhancements" />
+<a name="GameKit-Framework-Enhancements"></a>
 
 ## <a name="gamekit-framework-enhancements"></a>Усовершенствования платформы GameKit
 
@@ -103,9 +103,9 @@ ms.locfileid: "76724991"
 
 - **Game Centerное приложение** устарело и удалено из macOS. Если приложение использует GameKit, оно _должно_ предоставлять собственный интерфейс для отображения таких gamekit функций, как списки лидеров и т. д.
 - Новый тип учетной записи только iCloud реализован классом [гкклаудплайер](https://developer.apple.com/reference/gamekit/gkcloudplayer) .
-- Новый класс [гкгамесессион](https://developer.apple.com/reference/gamekit/gkgamesession) предоставляет обобщенное решение для управления хранилищем постоянных данных на Game Center. `GKGameSession` поддерживает список игроков, и приложение является ответственным за реализацию того, как и когда дата участника сохраняется, извлекается или обменивается между игроками. Во многих случаях игровые сеансы могут заменять существующие соответствия, основанные на включении, совпадения в режиме реального времени или постоянные способы сохранения игр.
+- Новый класс [гкгамесессион](https://developer.apple.com/reference/gamekit/gkgamesession) предоставляет обобщенное решение для управления хранилищем постоянных данных на Game Center. `GKGameSession`ведет список игроков, и приложение отвечает за реализацию того, как и когда дата участника сохраняется, извлекается или обменивается между игроками. Во многих случаях игровые сеансы могут заменять существующие соответствия, основанные на включении, совпадения в режиме реального времени или постоянные способы сохранения игр.
 
-<a name="GamePlayKit-Framework-Enhancements" />
+<a name="GamePlayKit-Framework-Enhancements"></a>
 
 ## <a name="gameplaykit-framework-enhancements"></a>Усовершенствования платформы Гамеплайкит
 
@@ -119,7 +119,7 @@ ms.locfileid: "76724991"
 - Используйте новый класс [гкмешграф](https://developer.apple.com/reference/gameplaykit/gkmeshgraph) для обеспечения высокопроизводительных и естественных путей.
 - Новые классы [гксцене](https://developer.apple.com/reference/gameplaykit/gkscene) и [Гкскнодекомпонент](https://developer.apple.com/reference/gameplaykit/gksknodecomponent) делают объединение гамеплайкит и SpriteKit проще, чем когда-либо.
 
-<a name="Metal-Framework-Enhancements" />
+<a name="Metal-Framework-Enhancements"></a>
 
 ## <a name="metal-framework-enhancements"></a>Усовершенствования в среде металла
 
@@ -131,18 +131,18 @@ ms.locfileid: "76724991"
 
 Дополнительные сведения см. в статье [по программированию для металлического программирования](https://developer.apple.com/library/prerelease/content/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)Apple.
 
-<a name="ModelIO-Framework-Enhancements" />
+<a name="ModelIO-Framework-Enhancements"></a>
 
 ## <a name="model-io-framework-enhancements"></a>Усовершенствования платформы ввода-вывода модели
 
 В платформу ввода-вывода модели были внесены следующие улучшения для macOS Sierra:
 
 - Теперь поддерживается формат файла USD.
-- Используйте новый класс `MDLMaterialPropertyGraph` для упрощения поддержки изменений среды выполнения в моделях.
+- Используйте новый `MDLMaterialPropertyGraph` класс, чтобы легко поддерживать изменения среды выполнения в моделях.
 - В класс [мдлвокселаррай](https://developer.apple.com/reference/modelio/mdlvoxelarray) добавлена поддержка поля со знакомого расстояния.
-- Используйте новый класс `MDLLightProbeIrradianceDataSource` для облегчения поиска в светлых зондах.
+- Используйте новый `MDLLightProbeIrradianceDataSource` класс, чтобы упростить размещение зонда.
 
-<a name="Photos-Framework-Enhancements" />
+<a name="Photos-Framework-Enhancements"></a>
 
 ## <a name="photos-framework-enhancements"></a>Усовершенствования для платформы фотографий
 
@@ -153,44 +153,44 @@ ms.locfileid: "76724991"
 - Используйте классы [Циимажепроцессоринпут](https://developer.apple.com/reference/coreimage/ciimageprocessorinput) и [Циимажепроцессораутпут](https://developer.apple.com/reference/coreimage/ciimageprocessoroutput) , чтобы воспользоваться преимуществами новой функции процессора основных образов для внесения изменений.
 - Для поддержки динамических фотографий классы [фливефото](https://developer.apple.com/reference/photos/phlivephoto) и [фливефотовиев](https://developer.apple.com/reference/photosui/phlivephotoview) были перенесены из iOS в macOS.
 
-<a name="SceneKit-Framework-Enhancements" />
+<a name="SceneKit-Framework-Enhancements"></a>
 
 ## <a name="scenekit-framework-enhancements"></a>Усовершенствования платформы SceneKit
 
 В платформу SceneKit для macOS Sierra были внесены следующие улучшения.
 
 - Теперь включает новую систему с физическим рендерингом (PBR) для более реалистичных результатов с более простым созданием ресурсов.
-- Используйте новую модель заливки [скнлигхтингмоделфисикаллибасед](https://developer.apple.com/reference/scenekit/scnlightingmodelphysicallybased) для произведения широкого спектра реалистичных эффектов заливки, при этом требуются только три фундаментальных свойства (`Diffuse`, `Metalness` и `Roughness`).
-- Так как заливка PBR лучше всего работает с освещением на основе среды, используйте свойство `LightingEnvironment`, чтобы назначить освещение на основе изображения для всей сцены Tan.
-- Используйте свойство `IESProfileURL` для импорта реальных осветительных источников, определяющих основу освещения в реальных значениях, таких как интенсивность (в люменах) и цветовая температура (в градусах Кельвина).
+- Используйте новую модель заливки [скнлигхтингмоделфисикаллибасед](https://developer.apple.com/reference/scenekit/scnlightingmodelphysicallybased) для произведения широкого спектра реалистичных эффектов заливки, при этом требуются только три фундаментальных свойства ( `Diffuse` `Metalness` и `Roughness` ).
+- Поскольку заливка PBR лучше всего работает с освещением на основе среды, используйте `LightingEnvironment` свойство, чтобы назначить освещение на основе изображения для всей сцены Tan.
+- Используйте `IESProfileURL` свойство для импорта реальных осветительных источников, определяющих основу освещения в реальных значениях, таких как интенсивность (в люменах) и цветовая температура (в градусах Кельвина).
 - Класс [скнкамера](https://developer.apple.com/reference/scenekit/scncamera) обеспечивает более высокую реальную работу с помощью функций и эффектов HDR. Используйте адаптивную раскрытие, чтобы создать автоматические эффекты или использовать вигнеттинг, регулировку цвета и цветовую раскраску для добавления филматик эффектов в игру.
 - Функции PBR и HDR-камеры предоставляют лучшие результаты по сравнению с традиционными методами отрисовки, и в результате SceneKit теперь выполняет все цветовые вычисления в линейном цветовом пространстве (при отображении цветовой гаммы P3 на устройствах с широким цветом).
 - SceneKit теперь цвет соответствует всем цветам, считывая сведения о цветовых профилях.
 - SceneKit интерпретирует значения цветовых компонентов в линейном цветовом пространстве RGB для всех типов шейдера.
 - Так как SceneKit считывает и корректирует сведения о цветовых профилях в образах текстур, используйте каталоги активов для всех изображений, чтобы обеспечить их использование.
-- Как линейное, так и расширенное отображение цветового пространства можно отключить, указав `SCNDisableLinearSpaceRendering` и `SCNDisableWideGamut` ключи в `Info.plist`е приложения.
+- Как линейное, так и расширенное отображение цветового пространства можно отключить, `SCNDisableLinearSpaceRendering` указав `SCNDisableWideGamut` ключи и в приложении `Info.plist` .
 - Создайте произвольный многоугольник приматов (загружается из файлов или создается программно), чтобы указать геометрию с новым классом [скнжеометрипримитиветипеполигон](https://developer.apple.com/documentation/scenekit/scngeometryprimitivetype/scngeometryprimitivetypepolygon?language=objc) .
 
-<a name="Security-Framework-Enhancements" />
+<a name="Security-Framework-Enhancements"></a>
 
 ## <a name="security-framework-enhancements"></a>Усовершенствования платформы безопасности
 
 В платформу безопасности для macOS Sierra были внесены следующие улучшения.
 
-- Интерфейс `SecKey` был современным и единым для всех платформ (iOS, tvOS, watchOS и macOS).
+- `SecKey`Интерфейс был современным и единым для всех платформ (iOS, tvOS, watchOS и macOS).
 
-<a name="SpriteKit-Framework-Enhancements" />
+<a name="SpriteKit-Framework-Enhancements"></a>
 
 ## <a name="spritekit-framework-enhancements"></a>Усовершенствования платформы SpriteKit
 
 В платформу SpriteKit для macOS Sierra были внесены следующие улучшения.
 
-- Тилемапс теперь поддерживает квадратные, шестиугольники и Изометрические фигуры мозаики для двумерных, 2,5 и прокрутых игр с помощью классов `SKTileMapMode`, `SKTileGroup`, `SKTileGroupRule` и `SKTileSet`.
-- Используйте новый класс `SKWarpGeometry` для растяжения или искажения отрисовки [скспритеноде](https://developer.apple.com/reference/spritekit/skspritenode) или [скеффектноде](https://developer.apple.com/reference/spritekit/skeffectnode) . Новый класс [скактион](https://developer.apple.com/reference/spritekit/skaction) можно использовать для анимации переходов между эффектами деформации.
-- Настраиваемые шейдеры могут предоставлять атрибуты (`SKAttribute`), которые можно настроить отдельно для каждого узла, использующего шейдер, путем предоставления значения атрибута (`SKAttributeValue`).
+- Тилемапс теперь поддерживает фигуры мозаичных, шестиугольников и изометрических плиток для двумерных, 2,5 и прокрутых игр с `SKTileMapMode` помощью `SKTileGroup` `SKTileGroupRule` классов, и `SKTileSet` .
+- Используйте новый `SKWarpGeometry` класс для растяжения или искажения отрисовки [Скспритеноде](https://developer.apple.com/reference/spritekit/skspritenode) или [скеффектноде](https://developer.apple.com/reference/spritekit/skeffectnode) . Новый класс [скактион](https://developer.apple.com/reference/spritekit/skaction) можно использовать для анимации переходов между эффектами деформации.
+- Пользовательские шейдеры могут предоставлять атрибуты ( `SKAttribute` ), которые можно настроить отдельно для каждого узла, использующего шейдер, путем предоставления значения атрибута ( `SKAttributeValue` ).
 - Класс [сквиев](https://developer.apple.com/reference/spritekit/skview) предоставляет несколько новых методов, позволяющих точно контролировать время и способ отрисовки сцены.
 
-<a name="New-Frameworks" />
+<a name="New-Frameworks"></a>
 
 ## <a name="new-frameworks"></a>Новые платформы
 

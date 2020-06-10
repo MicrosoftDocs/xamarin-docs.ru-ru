@@ -8,39 +8,39 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 11ac6289b7d2f278f534f5a65679754d212b5067
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: c73be27ed82a643b01528ccba3887f59beeceb53
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030528"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84574058"
 ---
 # <a name="troubleshooting-tvos-apps-built-with-xamarin"></a>Устранение неполадок приложений tvOS, созданных с помощью Xamarin
 
 _В этой статье рассматриваются проблемы, которые могут возникнуть при работе с поддержкой tvOS в Xamarin._
 
-<a name="Known-Issues" />
+<a name="Known-Issues"></a>
 
 ## <a name="known-issues"></a>Известные проблемы
 
 В текущем выпуске поддержки Xamarin tvOS имеются следующие известные проблемы.
 
-- **Платформа Mono** — моно 4,3 Cryptography. ProtectedData не удалось расшифровать данные из Mono 4,2. В результате пакет NuGet не сможет выполнить восстановление с ошибкой `Data unprotection failed` при настройке защищенного источника NuGet.
+- **Платформа Mono** — моно 4,3 Cryptography. ProtectedData не удалось расшифровать данные из Mono 4,2. В результате пакет NuGet не сможет восстановиться с ошибкой `Data unprotection failed` при настройке защищенного источника NuGet.
   - **Обходной путь** . в Visual Studio для Mac необходимо будет добавить все источники пакетов NuGet, использующие проверку подлинности с помощью пароля, перед повторной попыткой восстановления пакетов.
-- **Visual Studio для Mac w/ F# надстройка** — ошибка при создании шаблона F# Android в Windows. Это по-прежнему работает правильно на Mac.
-- **Xamarin. Mac** — при запуске проекта унифицированного шаблона Xamarin. Mac с целевой платформой, для которой задано значение `Unsupported`, может появиться всплывающее `Could not connect to the debugger`.
+- **Visual Studio для Mac w/F # надстройка** — ошибка при создании шаблона F # Android в Windows. Это по-прежнему работает правильно на Mac.
+- **Xamarin. Mac** — при запуске проекта унифицированного шаблона Xamarin. Mac с целевой платформой, для которой задано значение `Unsupported` , может отобразиться всплывающее окно `Could not connect to the debugger` .
   - **Возможное решение** — понизить версию платформы Mono, доступную в стабильном канале.
-- **Xamarin Visual Studio & Xamarin. iOS** — при развертывании приложений WatchKit в Visual Studio может появиться сообщение об ошибке `The file ‘bin\iPhoneSimulator\Debug\WatchKitApp1WatchKitApp.app\WatchKitApp1WatchKitApp’ does not exist`.
+- **Xamarin Visual Studio & Xamarin. iOS** — при развертывании приложений WatchKit в Visual Studio может возникнуть ошибка `The file ‘bin\iPhoneSimulator\Debug\WatchKitApp1WatchKitApp.app\WatchKitApp1WatchKitApp’ does not exist` .
 
 Сообщите об ошибках, найденных на [GitHub](https://github.com/xamarin/xamarin-macios/issues/new).
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 В следующих разделах перечислены некоторые известные проблемы, которые могут возникнуть при использовании tvOS 9 с Xamarin. tvOS, и решение этих проблем.
 
 ### <a name="invalid-executable---the-executable-does-not-contain-bitcode"></a>Недопустимый исполняемый файл — исполняемый объект не содержит bitcode
 
-При попытке отправить приложение Xamarin. tvOS в магазин приложений Apple TV может появиться сообщение об ошибке в формате _"недопустимый исполняемый файл — исполняемый файл не содержит bitcode"_ .
+При попытке отправить приложение Xamarin. tvOS в магазин приложений Apple TV может появиться сообщение об ошибке в формате _"недопустимый исполняемый файл — исполняемый файл не содержит bitcode"_.
 
 Чтобы решить эту проблему, выполните следующие действия.
 
@@ -76,11 +76,11 @@ Section
  reserved2 0
 ```
 
-`addr` и `size` будут отличаться, но другие поля должны быть идентичны.
+`addr`и `size` будут отличаться, но другие поля должны быть идентичными.
 
-Необходимо убедиться, что любые сторонние библиотеки (`.a`), которые вы используете, были созданы для библиотек tvOS (а не библиотек iOS) и что они также содержат сведения о bitcode.
+Необходимо убедиться, что любые сторонние `.a` библиотеки (), которые вы используете, были созданы для библиотек tvOS (а не библиотек iOS) и что они также содержат сведения о bitcode.
 
-Для приложений или библиотек, которые включают допустимый bitcode, `size` будет больше единицы. В некоторых ситуациях, когда библиотека может иметь маркер bitcode, но не содержит допустимого bitcode. Пример:
+Для приложений или библиотек, которые включают допустимый bitcode, значение `size` будет больше единицы. В некоторых ситуациях, когда библиотека может иметь маркер bitcode, но не содержит допустимого bitcode. Пример.
 
 **Недопустимый Bitcode**
 
@@ -102,7 +102,7 @@ $ otool -l -arch arm64 libDownloadableAgent-tvos.a |grep __bitcode -A 3
       size 0x0000000000045440
 ```
 
-Обратите внимание на различие в `size` между двумя библиотеками в приведенном выше примере выполняются выше. Библиотека должна быть создана из Xcode архивной сборки с включенным параметром bitcode (Xcode Setting `ENABLE_BITCODE`) в качестве решения для этой проблемы размера.
+Обратите внимание на разницу `size` между двумя библиотеками в приведенном выше примере выполнения. Библиотека должна быть создана из Xcode архивной сборки с включенным параметром bitcode (Xcode `ENABLE_BITCODE` ) в качестве решения для этой проблемы размера.
 
 ### <a name="apps-that-only-contain-the-arm64-slice-must-also-have-arm64-in-the-list-of-uirequireddevicecapabilities-in-infoplist"></a>В приложениях, содержащих только срез arm64, должно быть значение "arm64" в списке Уирекуиреддевицекапабилитиес в info. plist
 
@@ -110,7 +110,7 @@ $ otool -l -arch arm64 libDownloadableAgent-tvos.a |grep __bitcode -A 3
 
 _"Приложения, которые содержат только срез arm64, также должны иметь" arm64 "в списке Уирекуиреддевицекапабилитиес в info. plist"._
 
-В этом случае измените файл `Info.plist` и убедитесь, что он имеет следующие ключи:
+В этом случае измените `Info.plist` файл и убедитесь, что он имеет следующие ключи:
 
 ```xml
 <key>UIRequiredDeviceCapabilities</key>
@@ -123,7 +123,7 @@ _"Приложения, которые содержат только срез ar
 
 ### <a name="task-mtouch-execution----failed"></a>Выполнение задачи "MTouch"--сбой
 
-Если вы используете библиотеку стороннего производителя (например, в рамках игры), а компиляция выпуска завершилась сбоем с длинной серией сообщений об ошибках, оканчивающихся на `Task "MTouch" execution -- FAILED`, попробуйте добавить `-gcc_flags="-framework OpenAL"` к **дополнительным аргументам касания**:
+Если вы используете библиотеку стороннего производителя (например, в виде «долгих игр») и при компиляции выпуска произошел сбой с длинной серией сообщений об ошибках `Task "MTouch" execution -- FAILED` , которые заканчиваются, попробуйте добавить `-gcc_flags="-framework OpenAL"` **Дополнительные аргументы касания**:
 
 [![](troubleshooting-images/mtouch01.png "Task MTouch execution")](troubleshooting-images/mtouch01.png#lightbox)
 
@@ -133,8 +133,8 @@ _"Приложения, которые содержат только срез ar
 
 При получении сообщения в формате "ИТМС-90471 ошибка". Крупный значок отсутствует "при попытке отправить приложение Xamarin. tvOS в магазин приложений Apple TV для выпуска, проверьте следующее:
 
-1. Убедитесь, что вы включили крупные ресурсы значков в файл `Assets.car`, созданный в документации по [значкам приложений](~/ios/tvos/app-fundamentals/icons-images.md#App-Icons) .
-2. Убедитесь, что вы включили файл `Assets.car` из документации по [работе с значками и изображениями](~/ios/tvos/app-fundamentals/icons-images.md) в конечном пакете приложений.
+1. Убедитесь, что вы включили крупные ресурсы значков в `Assets.car` файл, созданный в документации по [значкам приложений](~/ios/tvos/app-fundamentals/icons-images.md#App-Icons) .
+2. Убедитесь, что файл включен `Assets.car` из документации по [работе с значками и изображениями](~/ios/tvos/app-fundamentals/icons-images.md) в конечном пакете приложений.
 
 ### <a name="invalid-bundle--an-app-that-supports-game-controllers-must-also-support-the-apple-tv-remote"></a>Недопустимый пакет — приложение, которое поддерживает игровые контроллеры, должно также поддерживать удаленное устройство Apple TV.
 
@@ -154,7 +154,7 @@ _Недопустимый пакет — приложение, которое п
 
 _Недопустимый пакет — приложения Apple TV с платформой Гамеконтроллер должны содержать ключ Гксуппортедгамеконтроллерс в файле info. plist приложения._
 
-Решение заключается в добавлении поддержки удаленного Siri (`GCMicroGamepad`) в файл `Info.plist` приложения. Профиль контроллера Micro Game был добавлен компанией Apple для целевого объекта Siri Remote. Например, включите следующие ключи:
+Решение заключается в добавлении поддержки Siri Remote ( `GCMicroGamepad` ) в `Info.plist` файл приложения. Профиль контроллера Micro Game был добавлен компанией Apple для целевого объекта Siri Remote. Например, включите следующие ключи:
 
 ```xml
 <key>GCSupportedGameControllers</key>  
@@ -183,7 +183,7 @@ _Недопустимый пакет — приложения Apple TV с пла
 
 _Несовместимая Целевая платформа:. Нетпортабле, версия = v 4.5, профиль = Profile78_
 
-Чтобы решить эту проблему, добавьте XML-файл с именем `Xamarin.TVOS.xml` со следующим содержимым:
+Чтобы решить эту проблему, добавьте XML-файл `Xamarin.TVOS.xml` с именем со следующим содержимым:
 
 ```xml
 <Framework Identifier="Xamarin.TVOS" MinimumVersion="1.0" Profile="*" DisplayName="Xamarin.TVOS"/>

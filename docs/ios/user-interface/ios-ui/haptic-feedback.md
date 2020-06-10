@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 156af7a5336ac091c0202e38a3a59a32846e281a
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 86c7c726465257d71b6b407686153650dddbcbca
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73003348"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84574474"
 ---
 # <a name="providing-haptic-feedback-in-xamarinios"></a>Предоставление обратной связи Хаптик в Xamarin. iOS
 
-<a name="Overview" />
+<a name="Overview"></a>
 
 ## <a name="overview"></a>Обзор
 
@@ -29,19 +29,19 @@ ms.locfileid: "73003348"
 - [уинотификатионфидбаккженератор](#UINotificationFeedbackGenerator)
 - [уиселектионфидбаккженератор](#UISelectionFeedbackGenerator)
 
-<a name="About-Haptic-Feedback" />
+<a name="About-Haptic-Feedback"></a>
 
 ## <a name="about-haptic-feedback"></a>О Хаптик отзыва
 
 Несколько встроенных элементов пользовательского интерфейса уже предоставляют хаптик отзывы, такие как подборки, переключатели и ползунки. iOS 10 теперь добавляет возможность программного запуска хаптикс с помощью конкретного подкласса `UIFeedbackGenerator` класса.
 
-Разработчик может использовать один из следующих подклассов `UIFeedbackGenerator` для программного запуска обратной связи хаптик:
+Разработчик может использовать один из следующих `UIFeedbackGenerator` подклассов для программного запуска обратной связи хаптик:
 
-- `UIImpactFeedbackGenerator` — используйте этот генератор обратной связи, чтобы дополнить действие или задачу, такие как представление "суд" при наличии слайдов представления или при конфликте двух объектов на экране.
-- `UINotificationFeedbackGenerator` — используйте этот генератор обратной связи для таких уведомлений, как завершение действия, сбой или предупреждение любого другого типа.
-- `UISelectionFeedbackGenerator` — используйте этот генератор обратной связи для изменяемого выбора, например комплектации элемента из списка.
+- `UIImpactFeedbackGenerator`— Используйте этот генератор обратной связи, чтобы дополнить действие или задачу, например выпустить "суд" при наличии слайдов представления или при конфликте двух объектов на экране.
+- `UINotificationFeedbackGenerator`— Используйте этот генератор обратной связи для таких уведомлений, как завершение действия, сбой или предупреждение любого другого типа.
+- `UISelectionFeedbackGenerator`— Используйте этот генератор обратной связи для изменяемого выбора, например комплектации элемента из списка.
 
-<a name="UIImpactFeedbackGenerator" />
+<a name="UIImpactFeedbackGenerator"></a>
 
 ### <a name="uiimpactfeedbackgenerator"></a>уиимпактфидбаккженератор
 
@@ -61,17 +61,17 @@ impact.Prepare ();
 impact.ImpactOccurred ();
 ```
 
-Когда разработчик создает новый экземпляр класса `UIImpactFeedbackGenerator`, он предоставляет `UIImpactFeedbackStyle`, задавая стойкость отзыва:
+Когда разработчик создает новый экземпляр `UIImpactFeedbackGenerator` класса, он предоставляет `UIImpactFeedbackStyle` стойкость отзыва следующим образом:
 
 - `Heavy`
 - `Medium`
 - `Light`
 
-Метод `Prepare` `UIImpactFeedbackGenerator` вызывается для информирования системы о том, что хаптик обратная связь, чтобы она могла максимально сокращать задержку.
+`Prepare`Метод `UIImpactFeedbackGenerator` вызывается для информирования системы о том, что хаптик обратная связь, чтобы она могла максимально сокращать задержку.
 
-Затем метод `ImpactOccurred` активирует отзыв хаптик.
+`ImpactOccurred`Затем метод активирует хаптик отзыв.
 
-<a name="UINotificationFeedbackGenerator" />
+<a name="UINotificationFeedbackGenerator"></a>
 
 ### <a name="uinotificationfeedbackgenerator"></a>уинотификатионфидбаккженератор
 
@@ -91,15 +91,15 @@ notification.Prepare ();
 notification.NotificationOccurred (UINotificationFeedbackType.Error);
 ```
 
-Создается новый экземпляр класса `UINotificationFeedbackGenerator` и вызывается его `Prepare` метод для информирования системы о том, что хаптик обратная связь, чтобы она могла максимально сокращать задержку.
+Создается новый экземпляр `UINotificationFeedbackGenerator` класса и `Prepare` вызывается его метод для информирования системы о том, что хаптик обратная связь, чтобы она могла максимально сокращать задержку.
 
-`NotificationOccurred` вызывается для активации обратной связи хаптик с заданным `UINotificationFeedbackType`:
+`NotificationOccurred`Вызывается для инициации обратной связи хаптик с заданным `UINotificationFeedbackType` :
 
 - `Success`
 - `Warning`
 - `Error`
 
-<a name="UISelectionFeedbackGenerator" />
+<a name="UISelectionFeedbackGenerator"></a>
 
 ### <a name="uiselectionfeedbackgenerator"></a>уиселектионфидбаккженератор
 
@@ -119,9 +119,9 @@ selection.Prepare ();
 selection.SelectionChanged ();
 ```
 
-Создается новый экземпляр класса `UISelectionFeedbackGenerator` и вызывается его `Prepare` метод для информирования системы о том, что хаптик обратная связь, чтобы она могла максимально сокращать задержку.
+Создается новый экземпляр `UISelectionFeedbackGenerator` класса и `Prepare` вызывается его метод для информирования системы о том, что хаптик обратная связь, чтобы она могла максимально сокращать задержку.
 
-Затем метод `SelectionChanged` активирует отзыв хаптик.
+`SelectionChanged`Затем метод активирует хаптик отзыв.
 
 ## <a name="summary"></a>Сводка
 

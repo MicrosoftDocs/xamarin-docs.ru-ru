@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: e42912add9dd94b9cce16d725a456b1b4da30e35
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 98cedb1cf02f9688581946fa21a2cb40379f606f
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73022213"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566179"
 ---
 # <a name="working-with-tvos-split-view-controllers-in-xamarin"></a>Работа с контроллерами разделенного представления tvOS в Xamarin
 
@@ -20,7 +20,7 @@ ms.locfileid: "73022213"
 
 [![](split-views-images/intro01.png "Sample Split View")](split-views-images/intro01.png#lightbox)
 
-<a name="About-Split-View-Controllers" />
+<a name="About-Split-View-Controllers"></a>
 
 ## <a name="about-split-view-controllers"></a>Сведения об контроллерах разделенного представления
 
@@ -40,15 +40,15 @@ ms.locfileid: "73022213"
 - **Сохранить основной выбор** . в то время как содержимое в подробном представлении может измениться в ответ на выбор пользователя в главном представлении, содержимое главного представления должно быть исправлено. Кроме того, необходимо четко показать текущий выбранный элемент в главном представлении.
 - **Используйте один объединенный заголовок** — обычно в подробном представлении вместо заголовка в представлении «Подробности» и «главное» необходимо использовать один, центрированный заголовок.
 
-<a name="Split-View-Controllers-and-Storyboards" />
+<a name="Split-View-Controllers-and-Storyboards"></a>
 
 ## <a name="split-view-controllers-and-storyboards"></a>Контроллеры разделенного представления и раскадровки
 
 Самый простой способ работы с контроллерами разделенного представления в приложении Xamarin. tvOS — добавить их в пользовательский интерфейс приложения с помощью конструктора iOS.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-1. В **панель решения**дважды щелкните файл `Main.storyboard` и откройте его для редактирования.
+1. В **панель решения**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **контроллеры разделенного представления** из **панели элементов** в представление: 
 
     [![](split-views-images/activity01.png "A Split View Controller")](split-views-images/activity01.png#lightbox)
@@ -63,12 +63,12 @@ ms.locfileid: "73022213"
 1. Создайте содержимое представлений «основной» и «подробности»: 
 
     [![](split-views-images/activity04.png "Example layout")](split-views-images/activity04.png#lightbox)
-1. Назначьте **имена** на **вкладке мини** -приложение **панель свойств** для работы с элементами управления пользовательского интерфейса в C# коде.
+1. Назначьте **имена** на **вкладке мини** -приложение **панель свойств** для работы с элементами управления пользовательского интерфейса в коде C#.
 1. Сохраните изменения и вернитесь в Visual Studio для Mac.
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-1. В **Обозреватель решений**дважды щелкните файл `Main.storyboard` и откройте его для редактирования.
+1. В **Обозреватель решений**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **контроллеры разделенного представления** из **панели элементов** в представление: 
 
     [![](split-views-images/activity01-vs.png "A Split View Controller")](split-views-images/activity01-vs.png#lightbox)
@@ -83,24 +83,24 @@ ms.locfileid: "73022213"
 1. Создайте содержимое представлений «основной» и «подробности»: 
 
     [![](split-views-images/activity04.png "Content layout")](split-views-images/activity04.png#lightbox)
-1. Назначьте **имена** на **вкладке мини** -приложение **обозревателя свойств** , чтобы работать с элементами управления пользовательского интерфейса C# в коде.
+1. Назначьте **имена** на **вкладке мини** -приложение **обозревателя свойств** , чтобы работать с элементами управления пользовательского интерфейса в коде C#.
 1. Сохраните изменения.
 
 -----
 
 Дополнительные сведения о работе с раскадровками см. в статье [Hello, tvOS краткое руководство по началу работы](~/ios/tvos/get-started/hello-tvos.md).
 
-<a name="Working-with-Split-View-Controllers" />
+<a name="Working-with-Split-View-Controllers"></a>
 
 ## <a name="working-with-split-view-controllers"></a>Работа с контроллерами разделенного представления
 
 Как упоминалось выше, контроллер разделенного представления часто используется в ситуациях, когда пользователю отображается Отфильтрованное содержимое. Основные категории отображаются слева в главном представлении, а отфильтрованные результаты — справа в подробном представлении в зависимости от выбора пользователя.
 
-<a name="Accessing-Master-and-Detail" />
+<a name="Accessing-Master-and-Detail"></a>
 
 ### <a name="accessing-master-and-detail"></a>Доступ к базе данных master и Details
 
-Если требуется программный доступ к основным контроллерам представлений и представлениям сведений, используйте свойство `ViewControllers` контроллера разделенного представления. Пример:
+Если требуется программный доступ к основным контроллерам представлений и представлениям сведений, используйте `ViewControllers` свойство контроллера разделенного представления. Пример.
 
 ```csharp
 // Gain access to master and detail view controllers
@@ -110,7 +110,7 @@ var detailController = ViewControllers [1] as DetailViewController;
 
 Он представляется в виде массива, где первый элемент (0) в контроллере главного представления и второй элемент (1) являются подробными.
 
-<a name="Accessing-Detail-from-Master" />
+<a name="Accessing-Detail-from-Master"></a>
 
 ### <a name="accessing-detail-from-master"></a>Доступ к сведениям из главного окна
 
@@ -122,7 +122,7 @@ var detailController = ViewControllers [1] as DetailViewController;
 public DetailViewController DetailController { get; set;}
 ```
 
-В контроллере разделенного представления Переопределите метод `ViewDidLoad` и свяжите оба представления вместе. Пример:
+В контроллере разделенного представления Переопределите `ViewDidLoad` метод и свяжите два представления вместе. Пример.
 
 ```csharp
 public override void ViewDidLoad ()
@@ -142,11 +142,11 @@ public override void ViewDidLoad ()
 
 Вы можете предоставлять свойства и методы на контроллере подробного представления, который может использоваться главным образом для представления новых данных в соответствии с требованиями.
 
-<a name="Showing-and-Hiding-Master" />
+<a name="Showing-and-Hiding-Master"></a>
 
 ### <a name="showing-and-hiding-master"></a>Отображение и скрытие образца
 
-При необходимости можно показать или скрыть контроллер главного представления с помощью свойства `PreferredDisplayMode` контроллера разделенного представления. Пример:
+При необходимости можно показать или скрыть контроллер главного представления с помощью `PreferredDisplayMode` Свойства контроллера разделенного представления. Пример.
 
 ```csharp
 // Show hide split view
@@ -157,16 +157,16 @@ if (SplitViewController.DisplayMode == UISplitViewControllerDisplayMode.PrimaryH
 }
 ```
 
-Перечисление `UISplitViewControllerDisplayMode` определяет, как будет представлен контроллер главного представления в одном из следующих элементов:
+`UISplitViewControllerDisplayMode`Перечисление определяет, как будет представлен контроллер главного представления в одном из следующих элементов:
 
 - **Функция Automatic** -tvOS будет управлять представлением главного и подробного представлений.
 - **Примарихидден** — скрывает контроллер главного представления.
 - **Аллвисибле** — отображает одновременно контроллеры главного и подробного представлений. Это обычная презентация по умолчанию.
 - **Примарйоверлай** — контроллер подробного представления расширяется в и включается в главный.
 
-Чтобы получить текущее состояние представления, используйте свойство `DisplayMode` контроллера разделенного представления.
+Чтобы получить текущее состояние представления, используйте `DisplayMode` свойство контроллера разделенного представления.
 
-<a name="Summary" />
+<a name="Summary"></a>
 
 ## <a name="summary"></a>Сводка
 
