@@ -1,23 +1,8 @@
 ---
-title: ''
-description: На все представления, определенные в, Xamarin.Forms можно ссылаться из файлов XAML.
-ms.topic: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 445ef85f661d945bda25203f35dea787e64dc9b0
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138428"
+Title: "элементы управления XAML" Description: "все представления, определенные в, Xamarin.Forms могут ссылаться на файлы XAML".
+MS. Topic: статья MS. произв. Xamarin MS. AssetID: 639BD392-1496-41BB-BB09-7652273AC9D8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/17/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xaml-controls"></a>Элементы управления XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
@@ -56,7 +41,7 @@ ms.locfileid: "84138428"
 |     |     |
 | --- | --- |
 | <h3>CheckBox</h3>Позволяет выбрать `boolean` значение.<p align="center">![Снимок экрана флажка](xaml-controls-images/CheckBox.png "CheckBox")</p> [Программ](~/xamarin-forms/user-interface/checkbox.md) | <p valign="center"><pre>&lt;CheckBox IsChecked="true"<br />          HorizontalOptions="Center"<br />          VerticalOptions="CenterAndExpand" /&gt;</pre></p> |
-| <h3>Ползунок</h3>Позволяет выбрать `double` значение из непрерывного диапазона.<p align="center">![Снимок экрана ползунка](xaml-controls-images/Slider.png "Slider")</p>[API-интерфейс](xref:Xamarin.Forms.Slider)  /  [Руководством](~/xamarin-forms/user-interface/slider.md) | <p valign="center"><pre>&lt;Slider Minimum="0"<br />        Maximum="100"<br />        VerticalOptions="CenterAndExpand" /&gt;</pre></p> |
+| <h3>Slider</h3>Позволяет выбрать `double` значение из непрерывного диапазона.<p align="center">![Снимок экрана ползунка](xaml-controls-images/Slider.png "Slider")</p>[API-интерфейс](xref:Xamarin.Forms.Slider)  /  [Руководством](~/xamarin-forms/user-interface/slider.md) | <p valign="center"><pre>&lt;Slider Minimum="0"<br />        Maximum="100"<br />        VerticalOptions="CenterAndExpand" /&gt;</pre></p> |
 | <h3>Шаговый переключатель</h3>Позволяет выбрать `double` значение из инкрементного диапазона.<p align="center">![Снимок экрана с пошаговыми средствами](xaml-controls-images/Stepper.png "Шаговый переключатель")</p>[API-интерфейс](xref:Xamarin.Forms.Stepper)  /  [Руководством](~/xamarin-forms/user-interface/stepper.md) | <p valign="center"><pre>&lt;Stepper Minimum="0"<br />         Maximum="10"<br />         Increment="0.1"<br />         HorizontalOptions="Center"<br />         VerticalOptions="CenterAndExpand" /&gt;</pre></p> |
 | <h3>Параметр</h3>Позволяет выбрать `boolean` значение.<p align="center">![Снимок экрана параметра](xaml-controls-images/Switch.png "Параметр")</p>[API-интерфейс](xref:Xamarin.Forms.Switch)  /  [Руководством](~/xamarin-forms/user-interface/switch.md)| <p valign="center"><pre>&lt;Switch IsToggled="false"<br />        HorizontalOptions="Center"<br />        VerticalOptions="CenterAndExpand" /&gt;</pre></p> |
 | <h3>DatePicker</h3>Позволяет выбрать дату.<p align="center">![Снимок экрана DatePicker](xaml-controls-images/DatePicker.png "DatePicker")</p>[API-интерфейс](xref:Xamarin.Forms.DatePicker)  /  [Руководством](~/xamarin-forms/user-interface/datepicker.md) | <p valign="center"><pre>&lt;DatePicker Format="D"<br/>            VerticalOptions="CenterAndExpand" /&gt;</pre></p> |
@@ -94,5 +79,5 @@ ms.locfileid: "84138428"
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Xamarin.FormsПример Формсгаллери](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
-- [Xamarin.FormsРегистрируют](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
+- [Примеры для Xamarin.Forms](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
 - [Xamarin.FormsДокументация по API](https://docs.microsoft.com/dotnet/api/xamarin.forms?view=xamarin-forms)

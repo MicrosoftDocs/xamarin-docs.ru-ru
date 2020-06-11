@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 1f26a4415a75b2b02fd7d6893e366ef81156f077
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138194"
+Title: "присоединенные свойства" Description: "в этой статье приводятся общие сведения о вложенных свойствах и демонстрируется их создание и использование".
+MS. произв. Xamarin MS. AssetID: 6E9DCDC3-A0E4-46A6-BAA9-4FEB6DF8A5A8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/02/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="attached-properties"></a>Присоединенные свойства
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)
@@ -134,7 +120,7 @@ ShadowEffect.SetHasShadow (label, true);
 
 Дополнительные сведения о стилях см. в статье [Стили](~/xamarin-forms/user-interface/styles/index.md).
 
-## <a name="advanced-scenarios"></a>Расширенные сценарии
+## <a name="advanced-scenarios"></a>Сложные сценарии
 
 При создании присоединенного свойства существует ряд необязательных параметров, которые можно задать для включения расширенных сценариев присоединенных свойств. Это включает обнаружение изменений свойств, проверку значений свойств и приведение значений свойств. Дополнительные сведения см. в разделе [Расширенные сценарии](~/xamarin-forms/xaml/bindable-properties.md#advanced-scenarios).
 

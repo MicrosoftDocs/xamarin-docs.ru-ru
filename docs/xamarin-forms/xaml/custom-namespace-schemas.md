@@ -1,22 +1,8 @@
 ---
-title: Схемы пользовательских пространств имен XAML вXamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 41a95b1a82ab8aa1f6938e5a2bcdebcef368e72d
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138168"
+Title: "схемы пользовательских пространств имен XAML в Xamarin.Forms " Description: "схема пользовательского пространства имен XAML может быть определена с помощью класса XmlnsDefinitionAttribute, который задает сопоставление между пользовательским URL-адресом и одним или несколькими пространствами имен CLR. Пользовательская схема пространства имен может быть использована в объявлениях пространств имен XAML ".
+MS. произв. Xamarin MS. AssetID: FDF201A1-8C35-4569-A728-F9B0A0C5B31A MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/21/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xaml-custom-namespace-schemas-in-xamarinforms"></a>Схемы пользовательских пространств имен XAML вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-customnamespaceschemas)

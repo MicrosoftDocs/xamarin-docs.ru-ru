@@ -1,22 +1,8 @@
 ---
-title: Рекомендуемые префиксы пространства имен XAML вXamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 71ae523f40f3f7529c12f853778404e224fbae30
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138142"
+Title: "Рекомендуемые префиксы пространства имен XAML в Xamarin.Forms " Description: "класс ксмлнспрефиксаттрибуте может использоваться авторами элементов управления для указания рекомендуемого префикса, связываемого с пространством имен XAML, для использования XAML."
+MS. произв. Xamarin MS. AssetID: 7B315BEC-7A35-48F4-A9C7-EF40255E95FF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/28/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xaml-namespace-recommended-prefixes-in-xamarinforms"></a>Рекомендуемые префиксы пространства имен XAML вXamarin.Forms
 
 `XmlnsPrefixAttribute`Разработчики элементов управления могут использовать класс для указания рекомендуемого префикса, связанного с пространством имен XAML, для использования XAML. Префикс полезен при поддержке сериализации дерева объектов в XAML или при взаимодействии с средой разработки с функциями редактирования XAML. Пример.

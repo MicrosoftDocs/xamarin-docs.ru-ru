@@ -1,22 +1,8 @@
 ---
-title: Xamarin.Formsсеарчбар
-description: Xamarin.FormsСеарчбар — это элемент управления вводом пользователя, который используется для запуска поиска. Элемент управления Сеарчбар поддерживает текст заполнителя, ввод запроса, выполнение и отмену. В этой статье объясняется, как использовать Сеарчбар в XAML и коде.
-ms.prod: ''
-ms.assetId: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d8ceb139b1b9cd77aa922f98c80884d5c3e1a474
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127547"
+Title: « Xamarin.Forms сеарчбар» Description: « Xamarin.Forms сеарчбар — это элемент управления вводом пользователя, который используется для запуска поиска. Элемент управления Сеарчбар поддерживает текст заполнителя, ввод запроса, выполнение и отмену. В этой статье объясняется, как использовать Сеарчбар в XAML и коде. "
+MS. произв. Xamarin MS. assetId: F5EFEA72-CB23-4DD6-9545-D9BB755AF3CB MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 11/04/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-searchbar"></a>Xamarin.Formsсеарчбар
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)

@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsВзаимодействие Карауселвиев
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 57c501c0f789ce448d8381cbbccb46666cf06305
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137414"
+Title: " Xamarin.Forms Карауселвиев взаимодействие" Description: "элемент, отображаемый в данный момент в карауселвиев, доступен через свойства CurrentItem и позиции".
+MS. произв. Xamarin MS. AssetID: 854D97E5-D119-4BE2-AE7C-BD428792C992 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/11/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-carouselview-interaction"></a>Xamarin.FormsВзаимодействие Карауселвиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
@@ -26,8 +12,8 @@ ms.locfileid: "84137414"
 - `CurrentItem`Тип `object` , текущий отображаемый элемент. Это свойство имеет режим привязки по умолчанию `TwoWay` и имеет значение, `null` Если нет данных для вывода.
 - `CurrentItemChangedCommand`Тип `ICommand` , который выполняется при изменении текущего элемента.
 - `CurrentItemChangedCommandParameter` с типом `object`, который передается как параметр в `CurrentItemChangedCommand`.
-- `IsBounceEnabled`Тип `bool` , который указывает, `CarouselView` будет ли передается значение на границе содержимого. Значение по умолчанию — `true`.
-- `IsSwipeEnabled`Тип `bool` , который определяет, будет ли жест прокрутки изменять отображаемый элемент. Значение по умолчанию — `true`.
+- `IsBounceEnabled`Тип `bool` , который указывает, `CarouselView` будет ли передается значение на границе содержимого. Значение по умолчанию — `true`.
+- `IsSwipeEnabled`Тип `bool` , который определяет, будет ли жест прокрутки изменять отображаемый элемент. Значение по умолчанию — `true`.
 - `Position`Тип `int` — индекс текущего элемента в базовой коллекции. Это свойство имеет режим привязки по умолчанию `TwoWay` и имеет значение 0, если нет данных для вывода.
 - `PositionChangedCommand`Тип `ICommand` , который выполняется при изменении расположения.
 - `PositionChangedCommandParameter` с типом `object`, который передается как параметр в `PositionChangedCommand`.
@@ -346,7 +332,7 @@ public class MonkeysViewModel : INotifyPropertyChanged
 
 [![Снимок экрана Карауселвиев с использованием визуальных состояний в iOS и Android](interaction-images/visual-states.png "Визуальные состояния Карауселвиев")](interaction-images/visual-states-large.png#lightbox "Визуальные состояния Карауселвиев")
 
-Дополнительные сведения о визуальных состояниях см. в разделе [ Xamarin.Forms Диспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md).
+Дополнительные сведения о визуальных состояниях см. в статье [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md).
 
 ## <a name="clear-the-current-item"></a>Очистить текущий элемент
 
@@ -363,4 +349,4 @@ public class MonkeysViewModel : INotifyPropertyChanged
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Карауселвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
-- [Xamarin.FormsДиспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md)
+- [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

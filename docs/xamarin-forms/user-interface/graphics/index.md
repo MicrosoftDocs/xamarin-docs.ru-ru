@@ -1,22 +1,8 @@
 ---
-title: Графика вXamarin.Forms
-description: В этом руководство объясняется, как внедрять визуальные элементы графики и игровых модулей в Xamarin.Forms приложение с помощью CocosSharp, скиашап и UrhoSharp.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 227bb3f0971bb8e3ceef7015f8fffb9994ccc36b
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84129328"
+Title: "рисунки в Xamarin.Forms " Description: "в этом руководство объясняется, как внедрять визуальные элементы графики и игровых модулей в Xamarin.Forms приложение с помощью CocosSharp, Скиашап и UrhoSharp".
+MS. произв. Xamarin MS. AssetID: 167ec01a-fb9e-431e-a44d-a10eaf62bf39 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/01/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="graphics-in-xamarinforms"></a>Графика вXamarin.Forms
 
 _Включение визуальных элементов графики и игровых модулей в Xamarin.Forms приложение._

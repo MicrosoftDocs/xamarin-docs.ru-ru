@@ -1,22 +1,8 @@
 ---
-title: Xamarin.Formsсвипевиев
-description: Xamarin.FormsСвипевиев — это контейнерный элемент управления, который служит оболочкой для элемента содержимого и предоставляет элементы контекстного меню, которые выводятся с помощью жеста прокрутки.
-ms.prod: ''
-ms.assetId: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 9c9d0621cdd5bb85690771d8bdfd0060b6a352cb
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136257"
+Title: « Xamarin.Forms свипевиев» Description: « Xamarin.Forms свипевиев — это контейнерный элемент управления, который заключает в оболочку элемент содержимого и предоставляет элементы контекстного меню, которые выводятся с помощью жеста прокрутки».
+MS. произв. Xamarin MS. assetId: 602456B5-701B-4948-B454-B1F31283F1CF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 03/26/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-swipeview"></a>Xamarin.Formsсвипевиев
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
@@ -138,9 +124,9 @@ SwipeView swipeView = new SwipeView
 
 [![Снимок экрана с Свипевиев считывания элементов в iOS и Android](swipeview-images/swipeview-swipeitems.png "Свипевиев считывание элементов")](swipeview-images/swipeview-swipeitems-large.png#lightbox "Свипевиев считывание элементов")
 
-По умолчанию элемент прокрутки выполняется при касании пользователем. Но такое поведение можно изменить. Дополнительные сведения см. в разделе [режим прокрутки](#swipe-mode).
+По умолчанию элемент прокрутки выполняется при касании пользователем. Хотя это можно изменить. Дополнительные сведения см. в разделе [режим прокрутки](#swipe-mode).
 
-После выполнения элемента считывания элементы прокрутки скрываются и `SwipeView` содержимое отображается повторно. Но такое поведение можно изменить. Дополнительные сведения см. в разделе [поведение при прокрутке](#swipe-behavior).
+После выполнения элемента считывания элементы прокрутки скрываются и `SwipeView` содержимое отображается повторно. Хотя это можно изменить. Дополнительные сведения см. в разделе [поведение при прокрутке](#swipe-behavior).
 
 > [!NOTE]
 > Прокрутка содержимого и считывание элементов можно разместить в строке или определить как ресурсы.

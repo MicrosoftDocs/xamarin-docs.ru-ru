@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 6ae4116be99f076a7afd5ed9c2823bc12f445e18
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137997"
+Title: "Margin and Padding" Description: "свойства Margin и Padding управляют макетом элемента управления при отрисовке элемента в пользовательском интерфейсе. В этой статье показано различие между двумя свойствами и их заданием. "
+MS. произв. Xamarin MS. AssetID: BEB096BB-51DF-410F-B0F1-D235287B0F4A MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/27/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="margin-and-padding"></a>Поля и заполнение
 
 _Свойства Margin и Padding управляют поведением макета при отрисовке элемента в пользовательском интерфейсе. В этой статье показано различие между двумя свойствами и их заданием._

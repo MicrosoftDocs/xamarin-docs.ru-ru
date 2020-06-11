@@ -1,23 +1,8 @@
 ---
-title: Динамические стили вXamarin.Forms
-description: В этой статье объясняется, как Xamarin.Forms приложение может динамически реагировать на изменения стиля во время выполнения с помощью динамических ресурсов.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.custom: ''
-ms.openlocfilehash: d40ca3423cca68757cf458faf5cca1138aec5461
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84140092"
+Title: "динамические стили в Xamarin.Forms " Description: "в этой статье объясняется, как Xamarin.Forms приложение может динамически реагировать на изменения стиля во время выполнения с использованием динамических ресурсов".
+MS. произв. Xamarin MS. AssetID: 13D4FA4B-DF10-42BF-B001-2C49367FC216 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/28/2019 без-Loc: [ Xamarin.Forms , Xamarin.Essentials ] MS. Custom: видео
 ---
+
 # <a name="dynamic-styles-in-xamarinforms"></a>Динамические стили вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
@@ -217,7 +202,7 @@ public class DynamicStylesInheritancePageCS : ContentPage
 - [Динамические стили (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
 - [Работа со стилями (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithstyles)
 - [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
-- [Стиль](xref:Xamarin.Forms.Style)
+- [Style](xref:Xamarin.Forms.Style)
 - [Setter](xref:Xamarin.Forms.Setter)
 
 ## <a name="related-video"></a>Связанные видео

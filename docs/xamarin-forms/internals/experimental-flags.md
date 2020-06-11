@@ -1,22 +1,8 @@
 ---
-title: Xamarin.Formsэкспериментальные флаги
-description: Xamarin.Formsэкспериментальные флаги позволяют группе инженеров-разработчиков поставлять новые функции пользователям быстрее, в то же время сохраняя возможность изменять API функций до того, как они переходят в стабильный выпуск.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: b548323330ccdce6fb01e83c7e8ab7c2d5307125
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139065"
+Title: " Xamarin.Forms экспериментальные флаги" Описание: " Xamarin.Forms экспериментальные флаги позволяют группе инженеров-разработчиков предоставлять новые возможности пользователям быстрее, в то же время сохраняя возможность изменять API функций до того, как они переходят в стабильный выпуск".
+MS. произв. Xamarin MS. AssetID: AF4BDD27-89F6-48AE-A8CD-D7E4DDA2CCA2 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/14/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-experimental-flags"></a>Xamarin.Formsэкспериментальные флаги
 
 При реализации новой Xamarin.Forms функции она иногда помещается за экспериментальный флаг. Это позволяет группе разработчиков предоставлять новые функции быстрее, в то же время сохраняя возможность изменения API-интерфейсов функций до того, как они переходят в стабильный выпуск. Затем экспериментальный флаг удаляется после того, как функция переместится в стабильный выпуск.

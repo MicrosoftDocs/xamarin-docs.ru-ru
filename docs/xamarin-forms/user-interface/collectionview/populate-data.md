@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsДанные CollectionView
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e381184271d4a7bfa9872d2502d2281b1f3864bf
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84134567"
+Title: « Xamarin.Forms CollectionView Data» Description: «CollectionView заполняется данными путем присвоения свойству ItemsSource любой коллекции, реализующей IEnumerable.»
+MS. произв. Xamarin MS. AssetID: E1783E34-1C0F-401A-80D5-B2BE5508F5F8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/29/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-collectionview-data"></a>Xamarin.FormsДанные CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
@@ -84,7 +70,7 @@ collectionView.ItemsSource = new string[]
 
 Сведения о том, как изменить [`CollectionView`](xref:Xamarin.Forms.CollectionView) Макет, см. в разделе [ Xamarin.Forms CollectionView Layout](layout.md). Сведения о том, как определить внешний вид каждого элемента в `CollectionView` , см. в [разделе Определение внешнего вида элемента](#define-item-appearance).
 
-### <a name="data-binding"></a>Привязка данных
+### <a name="data-binding"></a>привязка данных,
 
 [`CollectionView`](xref:Xamarin.Forms.CollectionView)может заполняться данными с помощью привязки данных для привязки своего [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства к `IEnumerable` коллекции. В XAML это достигается с помощью `Binding` расширения разметки:
 
@@ -104,7 +90,7 @@ collectionView.SetBinding(ItemsView.ItemsSourceProperty, "Monkeys");
 > [!NOTE]
 > Скомпилированные привязки можно включить для повышения производительности привязки данных в Xamarin.Forms приложениях. Дополнительные сведения см. в статье [Скомпилированные привязки](~/xamarin-forms/app-fundamentals/data-binding/compiled-bindings.md).
 
-Дополнительные сведения о привязке данных см. в разделе [ Xamarin.Forms Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md).
+Дополнительные сведения о привязке данных см. в разделе [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md).
 
 ## <a name="define-item-appearance"></a>Определение внешнего вида элемента
 
@@ -192,7 +178,7 @@ public class Monkey
 
 [![Снимок экрана CollectionView, где для каждого элемента используется шаблон, в iOS и Android](populate-data-images/datatemplate.png "Элементы шаблона в CollectionView")](populate-data-images/datatemplate-large.png#lightbox "Элементы шаблона в CollectionView")
 
-Дополнительные сведения о шаблонах данных см. в разделе [ Xamarin.Forms шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md).
+Дополнительные сведения о шаблонах данных см. в разделе [Общие сведения о шаблонах данныхXamarin.Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md).
 
 ## <a name="choose-item-appearance-at-runtime"></a>Выбор внешнего вида элемента во время выполнения
 
@@ -427,6 +413,6 @@ void OnCollectionViewRemainingItemsThresholdReached(object sender, EventArgs e)
 - [CollectionView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 - [Xamarin.Formsрефрешвиев](~/xamarin-forms/user-interface/refreshview.md)
 - [Xamarin.Formsсвипевиев](~/xamarin-forms/user-interface/swipeview.md)
-- [Xamarin.FormsПривязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)
+- [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md)
 - [Xamarin.FormsШаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
 - [Создание Xamarin.Forms DataTemplateSelector](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md)

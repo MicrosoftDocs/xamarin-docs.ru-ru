@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 4f20a0586aee998c10372c60c96577321e697aad
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137271"
+Title: "прорисовка настраиваемых элементов управления в предварительном просмотре XAML" Описание: "в этой статье описывается, как отображать пользовательские элементы управления в средстве предварительного просмотра XAML".
+MS. произв. Xamarin MS. AssetID: 4D795372-CB8F-48F4-B63D-845E44B261F7 MS. Technology: Xamarin-Forms author: maddyleger1 MS. author: малежер МС. Дата: 03/27/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="render-custom-controls-in-the-xaml-previewer"></a>Прорисовка пользовательских элементов управления в средстве предварительного просмотра XAML
 
 _Иногда пользовательские элементы управления не работают должным образом в средстве предварительного просмотра XAML. Воспользуйтесь инструкциями в этой статье, чтобы ознакомиться с ограничениями по предварительному просмотру пользовательских элементов управления._

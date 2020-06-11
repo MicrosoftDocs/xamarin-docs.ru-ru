@@ -1,22 +1,8 @@
 ---
-title: Реагирование на изменения системных тем в Xamarin.Forms приложениях
-description: Xamarin.Formsприложения могут реагировать на изменения темы операционной системы с помощью типа Онаппсеме и расширения разметки DynamicResource.
-ms.assetid: ''
-ms.prod: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 2bb83f4ad5c30adccfc961938df64dda9cef1f6b
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84140079"
+Title: "реагирование на изменения темы системы в Xamarin.Forms приложениях" Description: " Xamarin.Forms приложения могут реагировать на изменения темы операционной системы с помощью типа онаппсеме и расширения разметки DynamicResource".
+MS. AssetID: D10506DD-BAA0-437F-A4AD-882D16E7B60D MS. произв. Xamarin MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/22/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="respond-to-system-theme-changes-in-xamarinforms-applications"></a>Реагирование на изменения системных тем в Xamarin.Forms приложениях
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-systemthemesdemo/)
@@ -195,4 +181,4 @@ Application.Current.RequestedThemeChanged += (s, a) =>
 - [Расширение разметки OnAppTheme](~/xamarin-forms/xaml/markup-extensions/consuming.md#onapptheme-markup-extension)
 - [Словари ресурсов](~/xamarin-forms/xaml/resource-dictionaries.md)
 - [Динамические стили вXamarin.Forms](~/xamarin-forms/user-interface/styles/xaml/dynamic.md)
-- [Применение стилей к Xamarin.Forms приложениям с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)
+- [Задание стиля приложений Xamarin.Forms с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)

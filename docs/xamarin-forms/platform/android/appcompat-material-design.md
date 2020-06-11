@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как преобразовать существующие Xamarin.Forms приложения Android для использования AppCompat и дизайна материалов.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 24206f6d6764c73f13a4b06fb44fa746f9d353af
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84135711"
+Title: "Добавление AppCompat и дизайна материалов" Описание: "в этой статье объясняется, как преобразовать существующие Xamarin.Forms приложения Android для использования AppCompat и дизайна материалов".
+MS. произв. Xamarin MS. AssetID: 045FBCDF-4D45-48BB-9911-BD3938C87D58 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 06/27/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="adding-appcompat-and-material-design"></a>Добавление AppCompat и дизайна материалов
 
 _Выполните следующие действия, чтобы преобразовать существующие Xamarin.Forms приложения Android для использования AppCompat и дизайна материалов._
@@ -43,7 +29,7 @@ https://blog.xamarin.com/material-design-for-your-xamarin-forms-android-apps/ --
 
 Создайте следующие три файла в проекте Android и вставьте содержимое ниже. Google предоставляет [рекомендации по стилю](https://www.google.com/design/spec/style/color.html#color-color-palette) и [генератор цветовой палитры](https://www.materialpalette.com/) , которые помогают выбрать альтернативную цветовую схему для указанной.
 
-**Resources/Values/Colors. XML**
+**Ресурсы/значения/colors.xml**
 
 ```xml
 <resources>
@@ -54,7 +40,7 @@ https://blog.xamarin.com/material-design-for-your-xamarin-forms-android-apps/ --
 </resources>
 ```
 
-**Resources/Values/Style. XML**
+**Ресурсы/значения/style.xml**
 
 ```xml
 <resources>
@@ -72,7 +58,7 @@ https://blog.xamarin.com/material-design-for-your-xamarin-forms-android-apps/ --
 
 Дополнительный стиль должен быть включен в папку **Values-V21** для применения конкретных свойств при запуске в комплекте программного интерфейса Android и более поздних версиях.
 
-**Resources/Values-V21/Style. XML**
+**Resources/Values-V21/style.xml**
 
 ```xml
 <resources>
@@ -84,11 +70,11 @@ https://blog.xamarin.com/material-design-for-your-xamarin-forms-android-apps/ --
 </resources>
 ```
 
-### <a name="4-update-androidmanifestxml"></a>4. обновление AndroidManifest. XML
+### <a name="4-update-androidmanifestxml"></a>4. обновление AndroidManifest.xml
 
 Чтобы обеспечить использование новых сведений о теме, задайте тему в файле **AndroidManifest** , добавив `android:theme="@style/MyTheme"` (ОСТАВЬТЕ остальной XML-файл).
 
-**Properties/AndroidManifest. XML**
+**Свойства/AndroidManifest.xml**
 
 ```xml
 ...

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье рассматриваются преобразования для отображения графики SkiaSharp в Xamarin.Forms приложениях и демонстрируется пример кода.
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e20ea5d1d3f813b04a927601fbe1180ff39ed176
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84140196"
+Title: «SkiaSharp Transforms» Description:» в этой статье рассматриваются преобразования для отображения графики SkiaSharp в Xamarin.Forms приложениях и демонстрируется пример кода.
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: E9BE322E-ECB3-4395-AFE4-4474A0F25551 Автор: давидбритч MS. author: дабритч MS. Дата: 03/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="skiasharp-transforms"></a>Преобразование SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -40,9 +26,9 @@ SkiaSharp также поддерживает неаффинное преобр�
 
 Xamarin.Formsтакже поддерживает преобразования, аналогичные тем, которые находятся в SkiaSharp. Xamarin.Forms [`VisualElement`](xref:Xamarin.Forms.VisualElement) Класс определяет следующие свойства преобразования:
 
-- [`TranslationX`](xref:Xamarin.Forms.VisualElement.TranslationX)перетаскивани[`TranslationY`](xref:Xamarin.Forms.VisualElement.TranslationY)
+- [`TranslationX`](xref:Xamarin.Forms.VisualElement.TranslationX) и [`TranslationY`](xref:Xamarin.Forms.VisualElement.TranslationY)
 - [`Scale`](xref:Xamarin.Forms.VisualElement.Scale)
-- [`Rotation`](xref:Xamarin.Forms.VisualElement.Rotation), [`RotationX`](xref:Xamarin.Forms.VisualElement.RotationX) и[`RotationY`](xref:Xamarin.Forms.VisualElement.RotationY)
+- [`Rotation`](xref:Xamarin.Forms.VisualElement.Rotation), [`RotationX`](xref:Xamarin.Forms.VisualElement.RotationX) и [`RotationY`](xref:Xamarin.Forms.VisualElement.RotationY);
 
 `RotationX`Свойства и `RotationY` — это преобразования перспективы, которые создают негативные эффекты.
 
@@ -60,7 +46,7 @@ Xamarin.Formsтакже поддерживает преобразования, �
 
 Узнайте, как использовать преобразование преобразования для сдвига SkiaSharp графики.
 
-## <a name="the-scale-transform"></a>[Преобразование масштаба](scale.md)
+## <a name="the-scale-transform"></a>[Преобразование масштабирования](scale.md)
 
 Обнаружение преобразования масштабирования SkiaSharp для масштабирования объектов до различных размеров.
 

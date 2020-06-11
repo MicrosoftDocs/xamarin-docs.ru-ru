@@ -1,23 +1,9 @@
 ---
-title: Применение стилей к Xamarin.Forms приложениям с помощью стилей XAML
-description: В этом руководство объясняется, как настроить внешний вид Xamarin.Forms приложения с помощью стилей XAML.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 72effe15d3456b5a48cbf5d09e889600134ac686
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138805"
+Title: "стилизация Xamarin.Forms приложений с использованием стилей XAML" Описание: "в этом руководство объясняется, как настроить внешний вид Xamarin.Forms приложения с помощью стилей XAML".
+MS. произв. Xamarin MS. AssetID: 344A34AA-B19A-4765-BC8A-875D9A6B5EA8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 01/30/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
-# <a name="styling-xamarinforms-apps-using-xaml-styles"></a>Применение стилей к Xamarin.Forms приложениям с помощью стилей XAML
+
+# <a name="styling-xamarinforms-apps-using-xaml-styles"></a>Задание стиля приложений Xamarin.Forms с помощью стилей XAML
 
 ## <a name="introduction"></a>[Введение](introduction.md)
 
@@ -35,7 +21,7 @@ Xamarin.Formsприложения часто содержат несколько
 
 Стили можно сделать доступными глобально, добавив их в приложение [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Это помогает избежать дублирования стилей на страницах или в элементах управления.
 
-## <a name="style-inheritance"></a>[Наследование стилей](inheritance.md)
+## <a name="style-inheritance"></a>[Наследование стиля](inheritance.md)
 
 Стили могут наследоваться от других стилей для сокращения дублирования и включения повторного использования.
 
@@ -43,7 +29,7 @@ Xamarin.Formsприложения часто содержат несколько
 
 Стили не реагируют на изменения свойств и остаются неизменными в течение всего приложения. Однако приложения могут динамически реагировать на изменения стиля во время выполнения с помощью динамических ресурсов.
 
-## <a name="device-styles"></a>[Стили устройства](device.md)
+## <a name="device-styles"></a>[Стили устройств](device.md)
 
 Xamarin.Formsвключает шесть *динамических* стилей, известных как стили *устройств* , в [`Devices.Styles`](xref:Xamarin.Forms.Device.Styles) классе. Все шесть стилей можно применять только к [`Label`](xref:Xamarin.Forms.Label) экземплярам.
 

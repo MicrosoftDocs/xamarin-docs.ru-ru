@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье показано, как использовать службу ASMX SOAP из Xamarin.Forms приложения.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 1f7a0d04d1e7b6abc9931c05c0e46ef49f8ba09c
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138467"
+Title: "использование веб-службы ASP.NET (ASMX)" Description: "в этой статье показано, как использовать службу ASMX SOAP из Xamarin.Forms приложения".
+MS. произв. Xamarin MS. AssetID: D5533964-5528-4D35-9C2B-FAFB632472AC MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/02/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="consume-an-aspnet-web-service-asmx"></a>Использование веб-службы ASP.NET (ASMX)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todoasmx)

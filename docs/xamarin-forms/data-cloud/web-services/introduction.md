@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsВведение в веб-службы
-description: Это руководство содержит пошаговое руководство по Xamarin.Forms использованию примера приложения, которое показывает, как взаимодействовать с различными веб-службами. Хотя каждая веб-служба использует отдельный пример приложения, они функционально похожи и совместно используют общие классы.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d714b4c9d598d8cca26ae992abf3f15df703d11b
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139182"
+Title: " Xamarin.Forms Введение в веб-службы" Описание: "это руководство содержит пошаговое руководство по Xamarin.Forms примеру приложения, которое показывает, как взаимодействовать с различными веб-службами. Хотя каждая веб-служба использует отдельный пример приложения, они функционально похожи и совместно используют общие классы ".
+MS. произв. Xamarin MS. AssetID: A3FEB262-0D79-42E6-8F8B-A565618C490B MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/28/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-web-services-introduction"></a>Xamarin.FormsВведение в веб-службы
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todorest)

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 4eea7d500876793357113453493fa2fe2ede6cc4
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84140024"
+Title: "описание трех способов рисования дуги" Description: "в этой статье объясняется, как использовать SkiaSharp для определения Дуг тремя разными способами и демонстрируется в примере кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: F1DA55E4-0182-4388-863C-5C340213BF3C Автор: давидбритч MS. author: дабритч MS. Дата: 05/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="three-ways-to-draw-an-arc"></a>Три способа нарисовать дугу
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -315,7 +301,7 @@ public class InteractivePage : ContentPage
 }
 ```
 
-Класс `TangentArcPage` является производным от класса `InteractivePage`. Конструктор в файле [**TangentArcPage.XAML.CS**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/TangentArcPage.xaml.cs) отвечает за создание и инициализацию `touchPoints` массива, а также установку `baseCanvasView` (в `InteractivePage` ) `SKCanvasView` объекта, созданного в файле [**танжентаркпаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/TangentArcPage.xaml) :
+Класс `TangentArcPage` является производным от `InteractivePage`. Конструктор в файле [**TangentArcPage.XAML.CS**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/TangentArcPage.xaml.cs) отвечает за создание и инициализацию `touchPoints` массива, а также установку `baseCanvasView` (в `InteractivePage` ) `SKCanvasView` объекта, созданного в файле [**танжентаркпаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/TangentArcPage.xaml) :
 
 ```csharp
 public partial class TangentArcPage : InteractivePage

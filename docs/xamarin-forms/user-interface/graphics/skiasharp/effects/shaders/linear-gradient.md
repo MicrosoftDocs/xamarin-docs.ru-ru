@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 43aa429046c1b0f72a1cbe6a5b921da9b8907a49
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84132227"
+Title: "SkiaSharp линейный градиент" Описание: "Узнайте, как обводка линий или заливка областей с градиентами, состоящими из постепенного смешения двух цветов".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 20A2A8C4-FEB7-478D-BF57-C92E26117B6A Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="the-skiasharp-linear-gradient"></a>Линейный градиент SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -103,7 +89,7 @@ public class CornerToCornerGradientPage : ContentPage
 
 Массив значений, `float` указанных в качестве четвертого аргумента, имеет корреспонденцию "один к одному" с массивом цветов. Значения обозначают относительное расположение вдоль линии градиента, в которой находятся эти цвета. Здесь 0 означает, что `Red` происходит в начале линии градиента, а 1 означает, что `Blue` в конце строки. Числа должны быть по возрастанию и находиться в диапазоне от 0 до 1. Если они не находятся в этом диапазоне, они будут скорректированы в этом диапазоне.
 
-Двум значениям в массиве можно присвоить значение, отличное от 0 до 1. Попробуйте выполнить следующий код:
+Двум значениям в массиве можно присвоить значение, отличное от 0 до 1. Попробуйте выполните следующее.
 
 ```csharp
 new float[] { 0.25f, 0.75f }
@@ -620,7 +606,7 @@ public class RainbowGradientPage : ContentPage
 }
 ```
 
-Две точки градиента в `CreateLinearGradient` методе основаны на двух точках, определяющих этот контур: обе точки находятся ближе к левому верхнему углу. Первый — на верхнем крае холста, а второй — на левом крае холста. Ниже приведен результат:
+Две точки градиента в `CreateLinearGradient` методе основаны на двух точках, определяющих этот контур: обе точки находятся ближе к левому верхнему углу. Первый — на верхнем крае холста, а второй — на левом крае холста. Ниже приведен результат.
 
 [![Сбой градиента Радуга](linear-gradient-images/RainbowGradientFaulty.png "Сбой градиента Радуга")](linear-gradient-images/RainbowGradientFaulty-Large.png#lightbox)
 

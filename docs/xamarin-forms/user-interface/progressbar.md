@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsProgressBar
-description: Xamarin.FormsProgressBar — это элемент управления, который визуально представляет ход выполнения как горизонтальную линию, заполняемую на основе свойства float.
-ms.prod: ''
-ms.assetId: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: b4ac6231c0483c0c44755c2ac9539f237dd64251
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136283"
+Title: « Xamarin.Forms ProgressBar» Description: « Xamarin.Forms ProgressBar — это элемент управления, который визуально представляет ход выполнения как горизонтальную линию, заполняемую на основе свойства float».
+MS. произв. Xamarin MS. assetId: C2F85FED-797C-466B-A0FD-E73CFB79B267 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 07/09/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-progressbar"></a>Xamarin.FormsProgressBar
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-progressbardemos/)
 

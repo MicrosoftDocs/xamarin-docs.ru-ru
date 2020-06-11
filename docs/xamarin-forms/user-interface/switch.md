@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsКлючом
-description: Xamarin.FormsПараметр — это тип кнопки, которая может управляться пользователем для переключения между состояниями. В этой статье объясняется, как использовать класс Switch для отображения переключаемого элемента пользовательского интерфейса.
-ms.prod: ''
-ms.assetId: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: a5c2583b7632acdfa7d8439dc96b3964fa3cfcab
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136244"
+Title: " Xamarin.Forms переключатель" Description: " Xamarin.Forms параметр — это тип кнопки, которая может управляться пользователем для переключения между и выключенными состояниями. В этой статье объясняется, как использовать класс Switch для отображения переключателя элемента пользовательского интерфейса.
+MS. произв. Xamarin MS. assetId: B2F9CC65-481B-4323-8E77-C6BE29C90DE9 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 07/18/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-switch"></a>Xamarin.FormsКлючом
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-switchdemos/)
@@ -130,4 +116,4 @@ switchControl.Toggled += (sender, e) =>
 ## <a name="related-links"></a>Связанные ссылки
 
 * [Переключить демонстрации](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-switchdemos/)
-* [Xamarin.FormsПлан](~/xamarin-forms/app-fundamentals/triggers.md)
+* [Триггеры Xamarin.Forms](~/xamarin-forms/app-fundamentals/triggers.md)

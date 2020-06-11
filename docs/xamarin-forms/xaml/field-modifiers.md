@@ -1,22 +1,8 @@
 ---
-title: Модификаторы полей XAML вXamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: db00f522b71a8993ef0f7f6cf5070813ce07396a
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138129"
+Title: "модификаторы поля XAML в Xamarin.Forms " Description: "атрибут пространства имен КС:фиелдмодифиер задает уровень доступа для созданных полей именованных элементов XAML."
+MS. произв. Xamarin MS. AssetID: 12357CE0-3C11-4B62-947F-72DB6DFC23A2 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/02/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xaml-field-modifiers-in-xamarinforms"></a>Модификаторы полей XAML вXamarin.Forms
 
 `x:FieldModifier`Атрибут Namespace задает уровень доступа для созданных полей именованных элементов XAML. Допустимые значения атрибута:

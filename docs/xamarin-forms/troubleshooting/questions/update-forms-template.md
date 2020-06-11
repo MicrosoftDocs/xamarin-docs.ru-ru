@@ -1,22 +1,8 @@
 ---
-title: Можно ли обновить Xamarin.Forms шаблон по умолчанию до более нового пакета NuGet?
-ms.topic: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: bdead80671a1ae6539de6614441df7e86863a5a6
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137479"
+Title: "можно ли обновить Xamarin.Forms шаблон по умолчанию до более нового пакета NuGet?"
+MS. Topic: Устранение неполадок MS. произв. Xamarin MS. AssetID: 160FBE13-26EB-4B4F-9248-A5CBE58FDD7F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Date: 04/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="can-i-update-the-xamarinforms-default-template-to-a-newer-nuget-package"></a>Можно ли обновить Xamarin.Forms шаблон по умолчанию до более нового пакета NuGet?
 
 В этом руководством в Xamarin.Forms качестве примера используется шаблон библиотеки .NET Standard, но один и тот же общий метод также будет работать для Xamarin.Forms шаблона общего проекта. Это руководство написано с примером обновления с Xamarin.Forms 1.5.1.6471 на 2.1.0.6529, но для этого можно задать другие версии по умолчанию.

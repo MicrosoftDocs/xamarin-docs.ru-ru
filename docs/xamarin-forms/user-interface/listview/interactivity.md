@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как добавить интерактивность в Xamarin.Forms ListView путем реализации выбора, контекстных действий и получения обновления.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 5142965216b328172ae7fa04cdc0c13590f5ff38
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139892"
+Title: "Описание интерактивности ListView" Description: "в этой статье объясняется, как добавить интерактивность в Xamarin.Forms ListView путем реализации выбора, контекстных действий и извлечения по запросу обновления".
+MS. произв. Xamarin MS. AssetID: CD14EB90-B08C-4E8F-A314-DA0EEC76E647 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/25/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="listview-interactivity"></a>Интерактивность ListView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-interactivity)

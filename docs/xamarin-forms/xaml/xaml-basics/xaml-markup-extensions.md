@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 3fcea963b253ea34601a36434007f18d925975eb
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84131343"
+Title: "часть 3. Расширения разметки XAML "Описание:" расширения разметки XAML составляют важную функцию в XAML, которая позволяет задавать свойства для объектов или значений, на которые косвенно ссылаются другие источники ".
+MS. произв. Xamarin MS. Technology: Xamarin-Forms MS. AssetID: F4A37564-B18B-42FF-B841-9A1949895AB6 author: давидбритч MS. author: дабритч MS. Дата: 03/27/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="part-3-xaml-markup-extensions"></a>Часть 3. Расширения разметки XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)

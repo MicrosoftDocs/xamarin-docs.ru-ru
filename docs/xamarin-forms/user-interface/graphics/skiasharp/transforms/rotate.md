@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 520c4c3b61049bf17c2c964523714db196da6839
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84132188"
+Title: «вращение преобразования» описание:» в этой статье рассматриваются эффекты и анимации, которые можно реализовать с помощью преобразования «SkiaSharp вращение», и демонстрируется пример кода.
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: CBB3CD72-4377-4EA3-A768-0C4228229FC2 Автор: давидбритч MS. author: дабритч MS. Дата: 03/23/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="the-rotate-transform"></a>Преобразование циклического сдвига
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

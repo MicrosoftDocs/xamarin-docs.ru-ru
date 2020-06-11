@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: a4bb6c30ada13691146d00d2094df8f13ca453b9
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84140261"
+Title: "обрезка с путями и регионами" Описание: "в этой статье объясняется, как использовать SkiaSharpные пути для обрезки изображений в определенные области, а также для создания регионов и их демонстрации с помощью образца кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 8022FBF9-2208-43DB-94D8-0A4E9A5DA07F Автор: давидбритч MS. author: дабритч MS. Дата: 06/16/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="clipping-with-paths-and-regions"></a>Обрезка изображения по границам области с помощью путей
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

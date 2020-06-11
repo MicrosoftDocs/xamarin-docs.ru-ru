@@ -1,9 +1,6 @@
 ---
-Title: Description: ' в этой статье объясняется поддержка платформы Windows, доступная в разделе Xamarin.Forms .
-MS. произв. MS. AssetID: MS. Technology: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+Title: "функции платформы Windows" Описание: "в этой статье описывается поддержка платформы Windows, доступная в разделе Xamarin.Forms ".
+MS. произв. Xamarin MS. AssetID: F6EA9E49-FB3E-442F-AF13-B7AD0C80D11F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/16/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
 
 # <a name="windows-platform-features"></a>Возможности платформы Windows

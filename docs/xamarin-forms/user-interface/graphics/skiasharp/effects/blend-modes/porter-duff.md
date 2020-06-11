@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: a1e6290c0f85b54c3fd8958bc43667714bdece20
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84131057"
+Title: "Портер-Дуфф Blend Mode" Description: "использование режимов смешения Портер-Дуфф для создания сцен на основе исходных и конечных образов".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 57F172F8-BA03-43EC-A215-ED6B78696BB5 Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="porter-duff-blend-modes"></a>Режимы смешения Портер-Дуфф
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -72,59 +58,21 @@ ms.locfileid: "84131057"
 Ниже приведены 14 режимов Портер-Дуфф, как определено в SkiaSharp. В таблице показано, как цвет каждого из трех непустых областей на схеме выше:
 
 | Режим       | Назначение | Крайне | Источник |
-| ---
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------|:---заголовок: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
-------:|:---Title: описание: MS. произ: MS. Technology: MS. AssetID: author: MS. author: MS. Дата: No-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
-------:|:---Title: описание: MS. произ: MS. Technology: MS. AssetID: author: MS. author: MS. Дата: No-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
----:| | `Clear`    |             |              |        | | `Src`      |             | Источник | X | | `Dst`      | X | Назначение |        | | `SrcOver`  | X | Источник | X | | `DstOver`  | X | Назначение | X | | `SrcIn`    |             | Источник |        | | `DstIn`    |             | Назначение |        | | `SrcOut`   |             |              | X | | `DstOut`   | X |              |        | | `SrcATop`  | X | Источник |        | | `DstATop`  |             | Назначение | X | | `Xor`      | X |              | X | | `Plus`     | X | Sum | X | | `Modulate` |             | Продукт |        | 
+| ---------- |:-----------:|:------------:|:------:|
+| `Clear`    |             |              |        |
+| `Src`      |             | Источник       | X      |
+| `Dst`      | X           | Назначение  |        |
+| `SrcOver`  | X           | Источник       | X      |
+| `DstOver`  | X           | Назначение  | X      |
+| `SrcIn`    |             | Источник       |        |
+| `DstIn`    |             | Назначение  |        |
+| `SrcOut`   |             |              | X      |
+| `DstOut`   | X           |              |        |
+| `SrcATop`  | X           | Источник       |        |
+| `DstATop`  |             | Назначение  | X      |
+| `Xor`      | X           |              | X      |
+| `Plus`     | X           | SUM          | X      |
+| `Modulate` |             | Продукт      |        | 
 
 Эти режимы наложения являются симметричными. Источник и назначение могут быть заменены, и все режимы по-прежнему доступны.
 
@@ -298,7 +246,7 @@ public class PorterDuffGridPage : ContentPage
 }
 ```
 
-Ниже приведен результат:
+Ниже приведен результат.
 
 [![Портер-Дуфф, сетка](porter-duff-images/PorterDuffGrid.png "Портер-Дуфф, сетка")](porter-duff-images/PorterDuffGrid-Large.png#lightbox)
 
@@ -320,11 +268,11 @@ canvas.Clear(SKColors.White);
 
 ## <a name="using-mattes-with-porter-duff"></a>Использование Мэтт с Портер-Дуфф
 
-На странице "композиция" в области **композиции** отображается пример классической задачи компоновки: необходимо собрать изображение из нескольких частей, включая точечный рисунок с фоновым рисунком, который необходимо устранить. Ниже приведено изображение **сеатедмонкэй. jpg** с проблемным фоном:
+На странице "композиция" в области **композиции** отображается пример классической задачи компоновки: необходимо собрать изображение из нескольких частей, включая точечный рисунок с фоновым рисунком, который необходимо устранить. Вот **SeatedMonkey.jpg** точечный рисунок с проблемным фоном:
 
 ![Заданная обезьяна](porter-duff-images/SeatedMonkey.jpg "Заданная обезьяна")
 
-При подготовке к композиции создается соответствующая _матовая_ рамка, которая представляет собой еще один черный рисунок, где изображение должно отображаться и прозрачно в противном случае. Этот файл называется **сеатедмонкэйматте. png** и относится к ресурсам в папке **Media** в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
+При подготовке к композиции создается соответствующая _матовая_ рамка, которая представляет собой еще один черный рисунок, где изображение должно отображаться и прозрачно в противном случае. Этот файл называется **SeatedMonkeyMatte.png** и находится в ресурсах в папке **Media** примера [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
 
 ![Матовая обезьяна](porter-duff-images/SeatedMonkeyMatte.png "Матовая обезьяна")
 
@@ -406,7 +354,7 @@ public partial class BrickWallCompositingPage : ContentPage
 
 [![Шаг 0 при компоновке кирпича](porter-duff-images/BrickWallCompositing0.png "Шаг 0 при компоновке кирпича")](porter-duff-images/BrickWallCompositing0-Large.png#lightbox)
 
-Нажатие кнопки « `Button` однократно `step` » приводит к увеличению значения 1, и `PaintSurface` обработчик теперь отображает **сеатедмонкэй. jpg**:
+Нажатие кнопки " `Button` один раз" приводит к `step` увеличению значения 1, а `PaintSurface` обработчик теперь отображает **SeatedMonkey.jpg**:
 
 ```csharp
 public partial class BrickWallCompositingPage : ContentPage
@@ -432,7 +380,7 @@ public partial class BrickWallCompositingPage : ContentPage
 
 [![Действие 1 для компоновки кирпича](porter-duff-images/BrickWallCompositing1.png "Действие 1 для компоновки кирпича")](porter-duff-images/BrickWallCompositing1-Large.png#lightbox)
 
-Снова нажмите кнопку `Button` и `step` увеличьте значение до 2. Это важный шаг при отображении файла **сеатедмонкэйматте. png** :
+Снова нажмите кнопку `Button` и `step` увеличьте значение до 2. Это важный шаг при отображении файла **SeatedMonkeyMatte.png** :
 
 ```csharp
 public partial class BrickWallCompositingPage : ContentPage
@@ -551,31 +499,21 @@ public partial class BrickWallCompositingPage : ContentPage
 Результат отображается в квадратных скобках с альфа-каналом, а цвет RGB отделяется запятой: **[альфа, Color]**. Для цвета вычисление выполняется отдельно для красного, зеленого и синего компонентов:
 
 | Режим       | Операция |
-| ---
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------ | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------ | | `Clear`    | [0, 0] | | `Src`      | [SA, SC] | | `Dst`      | [Da, DC] | | `SrcOver`  | [SA + DA · (1 – SA), SC + DC · (1 – SA) | | `DstOver`  | [DA + SA · (1 – Da), DC + SC · (1 – Da) | | `SrcIn`    | Срок Da, SC · Da] | | `DstIn`    | Da SA, DC · SA] | | `SrcOut`   | Срок (1 – Da), SC · (1 – Da)] | | `DstOut`   | Da (1 – SA), DC · (1 – SA)] | | `SrcATop`  | [Da, SC · Da + DC · (1 – SA)] | | `DstATop`  | [SA, DC · SA + SC · (1 – Da)] | | `Xor`      | [SA + DA – 2 · Срок Da, SC · (1 – Da) + DC · (1 – SA)] | | `Plus`     | [SA + DA, SC + DC] | | `Modulate` | Срок Da, SC · DC] | 
+| ---------- | --------- |
+| `Clear`    | [0, 0]    |
+| `Src`      | [SA, SC]  |
+| `Dst`      | [Da, DC]  |
+| `SrcOver`  | [SA + DA · (1 – SA), SC + DC · (1 – SA) | 
+| `DstOver`  | [DA + SA · (1 – Da), DC + SC · (1 – Da) |
+| `SrcIn`    | Срок Da, SC · Da |
+| `DstIn`    | Da SA, DC · Срок |
+| `SrcOut`   | Срок (1 – Da), SC · (1 – Da)] |
+| `DstOut`   | Da (1 – SA), DC · (1 – SA)] |
+| `SrcATop`  | [Da, SC · Da + DC · (1 – SA)] |
+| `DstATop`  | [SA, DC · SA + SC · (1 – Da)] |
+| `Xor`      | [SA + DA – 2 · Срок Da, SC · (1 – Da) + DC · (1 – SA)] |
+| `Plus`     | [SA + DA, SC + DC] |
+| `Modulate` | Срок Da, SC · Постоянный | 
 
 Эти операции проще анализировать, если **Da** и **SA** имеют значение 0 или 1. Например, для режима по умолчанию `SrcOver` , если **SA** имеет значение 0, то **SC** также имеет значение 0, а результат — **[Da, DC]**, альфа-канал и цвет. Если **SA** имеет значение 1, то результатом будет **[SA, SC]**, альфа-канал и цвет, или **[1, SC]**.
 

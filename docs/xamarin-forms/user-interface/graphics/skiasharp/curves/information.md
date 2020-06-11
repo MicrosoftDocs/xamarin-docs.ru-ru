@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 931b8d0946f1af5e697e581a04c0feefb31ba2d3
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84131928"
+Title: "сведения о пути и перечисление" Description: "в этой статье объясняется, как получить сведения о путях SkiaSharp и перечислить содержимое, а также демонстрируется пример кода".
+MS. произв. Xamarin MS. AssetID: 8E8C5C6A-F324-4155-8652-7A77D231B3E5 MS. Technology: Xamarin-skiasharp Автор: давидбритч MS. author: дабритч МС. Дата: 09/12/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="path-information-and-enumeration"></a>Сведения о пути и перечисление
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

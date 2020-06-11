@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsМакет Карауселвиев
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 44df710df0272afe3c6f6911381af1a88c8cf923
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84140287"
+Title: « Xamarin.Forms Карауселвиев Layout» Description:» по умолчанию карауселвиев будет отображать элементы по горизонтали. Однако также возможна вертикальная ориентация ".
+MS. произв. Xamarin MS. AssetID: fede0382-c972-4023-a4ea-fe5cadec91a6 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/28/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-carouselview-layout"></a>Xamarin.FormsМакет Карауселвиев
 
 ![](~/media/shared/preview.png "This API is currently pre-release")

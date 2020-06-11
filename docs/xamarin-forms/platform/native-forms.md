@@ -1,22 +1,8 @@
 ---
-title: Xamarin.Formsв проектах Xamarin Native
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 9fb741a03d1c8dd2a8754120d0b46567d8889a0b
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84132279"
+Title: " Xamarin.Forms в проектах для машинного кода Xamarin" Description: "в этой статье объясняется, как использовать страницы, производные от ContentPage, которые непосредственно добавляются в собственные проекты Xamarin и как осуществляется переход между ними".
+MS. произв. Xamarin MS. AssetID: f343fc21-dfb1-4364-A332-9da6705d36bc MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/19/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-in-xamarin-native-projects"></a>Xamarin.Formsв проектах Xamarin Native
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/native2forms)
@@ -27,7 +13,7 @@ ms.locfileid: "84132279"
 
 1. Добавьте Xamarin.Forms пакет NuGet в собственный проект.
 1. Добавьте [`ContentPage`](xref:Xamarin.Forms.ContentPage) производную страницу и все зависимости в собственный проект.
-1. Вызовите метод `Forms.Init` .
+1. Вызовите метод `Forms.Init`.
 1. Создайте экземпляр страницы, производной от класса, [`ContentPage`](xref:Xamarin.Forms.ContentPage) и преобразуйте ее в соответствующий собственный тип с помощью одного из следующих методов расширения: `CreateViewController` для iOS, `CreateSupportFragment` для Android или `CreateFrameworkElement` для UWP.
 1. Перейдите к представлению собственного типа для [`ContentPage`](xref:Xamarin.Forms.ContentPage) страницы, производной от, с помощью собственного API навигации.
 

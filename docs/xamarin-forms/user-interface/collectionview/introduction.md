@@ -1,27 +1,13 @@
 ---
-title: Xamarin.FormsВведение в CollectionView
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d6a09ead9c3def2f58ad2755de4574f6d6e331e8
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136439"
+Title: " Xamarin.Forms CollectionView введение" Description: "CollectionView — это гибкое и производительное представление для представления списков данных с использованием различных спецификаций макета".
+MS. произв. Xamarin MS. AssetID: 5C08F687-B9E6-4CE4-8726-F287F6D0B6A7 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/11/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-collectionview-introduction"></a>Xamarin.FormsВведение в CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)представляет собой представление для представления списков данных с использованием различных спецификаций макета. Она нацелена на предоставление более гибкой и производительной альтернативы [`ListView`](xref:Xamarin.Forms.ListView) . Например, на следующих снимках экрана показан объект `CollectionView` , использующий вертикальную сетку двух столбцов и допускающий множественный выбор:
+Представление [`CollectionView`](xref:Xamarin.Forms.CollectionView) служит для вывода списков данных с различными спецификациями макета. Она нацелена на предоставление более гибкой и производительной альтернативы [`ListView`](xref:Xamarin.Forms.ListView) . Например, на следующих снимках экрана показан объект `CollectionView` , использующий вертикальную сетку двух столбцов и допускающий множественный выбор:
 
 [![Снимок экрана с вертикальным макетом сетки CollectionView в iOS и Android](introduction-images/verticalgrid-multipleselection.png "Вертикальный макет сетки CollectionView с множественным выделением")](introduction-images/verticalgrid-multipleselection-large.png#lightbox "Вертикальный макет сетки CollectionView с множественным выделением")
 

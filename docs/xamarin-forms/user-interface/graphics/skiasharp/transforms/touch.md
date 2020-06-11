@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: f5738f376e2a814ef1af455178c2e68135184402
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84140170"
+Title: "Управление касаниями" Описание: "в этой статье объясняется, как использовать преобразования матрицы для реализации перетаскивания, сжатия и вращения, а также демонстрируется пример кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: A0B8DD2D-7392-4EC5-BFB0-6209407AD650 Автор: давидбритч MS. author: дабритч MS. Дата: 09/14/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="touch-manipulations"></a>Манипуляции сенсорного ввода
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 01f4fcf1953658af44d2a8996913860a3b605abf
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138662"
+Title: "сохранение точечных рисунков SkiaSharp в файлах" Description: "Изучите различные форматы файлов, поддерживаемые SkiaSharp для сохранения точечных рисунков в библиотеке фотографий пользователя".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 2D696CB6-B31B-42BC-8D3B-11D63B1E7D9C Автор: давидбритч MS. author: дабритч MS. Дата: 07/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="saving-skiasharp-bitmaps-to-files"></a>Сохранение точечных рисунков SkiaSharp в файлах
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -176,7 +162,7 @@ public class PhotoLibrary : IPhotoLibrary
 
 Вызов метода `MediaScannerConnection.ScanFile` не является строго необходимым, но если вы тестируете программу путем немедленной проверки библиотеки фотографий, она помогает значительно обновить представление галереи библиотеки.
 
-Для файла **AndroidManifest. XML** требуется следующий тег разрешения:
+Для файла **AndroidManifest.xml** требуется следующий тег разрешения:
 
 ```xml
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -457,16 +443,14 @@ public partial class SaveFileFormatsPage : ContentPage
 Точечный рисунок, сохраняемый в **форматах сохраняемых файлов** , составляет 600 пикселей в квадрате. С 4 байтами на пиксель это всего 1 440 000 байт в памяти. В следующей таблице показан размер файла для различных сочетаний формата и качества файла:
 
 |Формат|Качество|Размер|
-|---
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
----| Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
----:|---:| | PNG | Н/Д | 492K | | JPEG | 0 | 2.95 k | |      | 50 | 22.1 k | |      | 100 | 206K | | Вебп | 0 | 2.71 k | |      | 50 | 11.9 k | |      | 100 | 101K |
+|------|------:|---:|
+| PNG | Недоступно | 492K |
+| JPEG | 0 | 2.95 р |
+|      | 50 | 22.1 р |
+|      | 100 | 206K |
+| вебп | 0 | 2.71 р |
+|      | 50 | 11.9 р |
+|      | 100 | 101K |
 
 Вы можете поэкспериментировать с различными параметрами качества и изучить результаты.
 

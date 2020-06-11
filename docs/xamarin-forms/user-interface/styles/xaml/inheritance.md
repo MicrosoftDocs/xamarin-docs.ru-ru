@@ -1,22 +1,8 @@
 ---
-title: Наследование стилей вXamarin.Forms
-description: Стили могут наследоваться от других стилей для сокращения дублирования и включения повторного использования. В этой статье объясняется, как выполнить наследование стиля в Xamarin.Forms приложении.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 80cc419ae098f4a0cbbd782785c0ec5ba03fa703
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138961"
+Title: "наследование стилей в Xamarin.Forms " Description: "стили можно наследовать от других стилей для сокращения дублирования и включения повторного использования. В этой статье объясняется, как выполнить наследование стиля в Xamarin.Forms приложении. "
+MS. произв. Xamarin MS. AssetID: 67A3A39C-8CC0-446D-8162-FFA73582D3B8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 02/17/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="style-inheritance-in-xamarinforms"></a>Наследование стилей вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
@@ -164,5 +150,5 @@ public class StyleInheritancePageCS : ContentPage
 - [Базовые стили (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
 - [Работа со стилями (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithstyles)
 - [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
-- [Стиль](xref:Xamarin.Forms.Style)
+- [Style](xref:Xamarin.Forms.Style)
 - [Setter](xref:Xamarin.Forms.Setter)

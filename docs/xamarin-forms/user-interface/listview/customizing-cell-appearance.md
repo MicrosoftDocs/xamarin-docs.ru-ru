@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье рассматриваются варианты представления данных в Xamarin.Forms приложениях, а также удобство использования элемента управления ListView.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: cdede547e3ef7cf9f7b6d89751c7476a2ce66d3d
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84129016"
+Title: "Настройка внешнего вида ячеек ListView" Описание: "в этой статье рассматриваются варианты представления данных в Xamarin.Forms приложениях, а также удобство использования элемента управления ListView".
+MS. произв. Xamarin MS. AssetID: FD45CB91-1A8F-46FB-B432-6BC20492E456 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/12/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="customizing-listview-cell-appearance"></a>Настройка внешнего вида ячеек ListView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-customcells)

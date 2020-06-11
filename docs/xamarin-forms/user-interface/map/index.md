@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsТаблица
-description: Элемент управления картой отображает карту и требует Xamarin.Forms . Сопоставляет пакет NuGet.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 2461ffa8168207e6a57fae005f752be48772a34a
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139832"
+Title: « Xamarin.Forms Map» Description:» элемент управления картой отображает карту и требует Xamarin.Forms . Сопоставляет пакет NuGet. "
+MS. произв. Xamarin MS. AssetID: B669B5EE-D24C-4C69-93E1-2CA5CC9108B5 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/29/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-map"></a>Xamarin.FormsТаблица
 
 ## <a name="initialization-and-configuration"></a>[Инициализация и настройка](setup.md)

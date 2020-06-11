@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как настроить ListView в Xamarin.Forms приложениях с помощью заголовков, нижних колонтитулов, групп и ячеек переменной высоты.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: c7fdecdb0ce209c88dbe9e6f4e6e6588ec4fd3fd
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139923"
+Title: "внешний вид ListView" Описание: "в этой статье объясняется, как настраивать ListView в Xamarin.Forms приложениях с помощью заголовков, нижних колонтитулов, групп и ячеек с переменной высотой".
+MS. произв. Xamarin MS. AssetID: DC8009B0-4371-4D60-885A-5362FC7EE3E5 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/13/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="listview-appearance"></a>Внешний вид ListView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-grouping)
@@ -276,7 +262,7 @@ SeparatorDemoListView.SeparatorColor = Color.Green;
 
 По умолчанию все строки в ListView имеют одинаковую высоту. ListView имеет два свойства, которые можно использовать для изменения этого поведения:
 
-- `HasUnevenRows`&ndash; `true`/`false` значение, строки имеют различные значения высоты, если для задано значение `true` . По умолчанию имеет значение `false`.
+- `HasUnevenRows`&ndash; `true`/`false` значение, строки имеют различные значения высоты, если для задано значение `true` . По умолчанию — `false`.
 - `RowHeight`&ndash;задает высоту каждой строки `HasUnevenRows` , если имеет значение `false` .
 
 Можно задать высоту всех строк, задав `RowHeight` свойство в `ListView` .

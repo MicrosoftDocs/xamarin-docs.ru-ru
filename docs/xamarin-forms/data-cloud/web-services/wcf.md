@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье показано, как использовать службу протокола SOAP из Xamarin.Forms приложения.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: cf95427807e0179a608b428bc7e02499c9616fe7
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139156"
+Title: "использование веб-службы Windows Communication Foundation (WCF)" Description: "в этой статье показано, как использовать службу протокола SOAP из Xamarin.Forms приложения".
+MS. произв. Xamarin MS. AssetID: 5696FF04-EF21-4B7A-8C8B-26DE28B5C0AD MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/28/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="consume-a-windows-communication-foundation-wcf-web-service"></a>Использование веб-службы Windows Communication Foundation (WCF)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todowcf)
@@ -61,7 +47,7 @@ WCF описывает службу с различными контрактам
 
 Дополнительные сведения о модели данных, используемой в приложении, см. в разделе [моделирование данных](~/xamarin-forms/data-cloud/web-services/introduction.md).
 
-Для использования службы WCF необходимо создать *прокси-сервер* , который позволяет приложению подключаться к службе. Прокси-сервер создается путем использования метаданных службы, определяющих методы и связанную с ней конфигурацию службы. Эти метаданные представлены в виде документа языка описания веб-служб (WSDL), созданного веб-службой. Прокси-сервер можно построить с помощью Microsoft WCF Web Service Reference Provider в Visual Studio 2017, чтобы добавить ссылку на службу для веб-службы в библиотеку .NET Standard. Альтернативой созданию прокси-сервера с помощью Microsoft WCF Web Service Reference Provider в Visual Studio 2017 является использование средства служебной программы метаданных ServiceModel (Svcutil. exe). Дополнительные сведения см. в разделе [средство служебной программы метаданных ServiceModel (Svcutil. exe)](/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe/).
+Для использования службы WCF необходимо создать *прокси-сервер* , который позволяет приложению подключаться к службе. Прокси-сервер создается путем использования метаданных службы, определяющих методы и связанную с ней конфигурацию службы. Эти метаданные представлены в виде документа языка описания веб-служб (WSDL), созданного веб-службой. Прокси-сервер можно построить с помощью Microsoft WCF Web Service Reference Provider в Visual Studio 2017, чтобы добавить ссылку на службу для веб-службы в библиотеку .NET Standard. Альтернативой созданию прокси-сервера с помощью Microsoft WCF Web Service Reference Provider в Visual Studio 2017 является использование средства служебной программы метаданных ServiceModel (svcutil.exe). Дополнительные сведения см. в разделе [средство служебной программы метаданных ServiceModel (Svcutil.exe)](/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe/).
 
 Созданные классы прокси предоставляют методы для использования веб-служб, использующих шаблон разработки модели асинхронного программирования (APM). В этом шаблоне асинхронная операция реализуется в виде двух методов с именами *бегиноператионнаме* и *ендоператионнаме*, которые начинают и завершают асинхронную операцию.
 
@@ -240,7 +226,7 @@ public async Task DeleteTodoItemAsync (string id)
     netsh advfirewall firewall add rule name="TodoWCFService" dir=in protocol=tcp localport=49393 profile=private remoteip=localsubnet action=allow
     ```
 
-1. **Настройте IIS Express для приема удаленных подключений**. IIS Express можно настроить, изменив файл конфигурации для IIS Express в **папке [каталог решения] \. вс\конфиг\аппликатионхост.конфиг**. Найдите `site` элемент с именем `TodoWCFService` . Он должен выглядеть, как в следующем коде XML:
+1. **Настройте IIS Express для приема удаленных подключений**. IIS Express можно настроить, изменив файл конфигурации для IIS Express в **папке [каталог решения] \.vs\config\applicationhost.config**. Найдите `site` элемент с именем `TodoWCFService` . Он должен выглядеть, как в следующем коде XML:
 
     ```xml
     <site name="TodoWCFService" id="2">
@@ -317,4 +303,4 @@ public async Task DeleteTodoItemAsync (string id)
 
 - [Тодовкф (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todowcf)
 - [Практическое руководство. Создание клиента Windows Communication Foundation](https://docs.microsoft.com/dotnet/framework/wcf/how-to-create-a-wcf-client)
-- [Средство служебной программы метаданных ServiceModel (Svcutil. exe)](https://docs.microsoft.com/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe)
+- [Средство служебной программы метаданных ServiceModel (svcutil.exe)](https://docs.microsoft.com/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe)

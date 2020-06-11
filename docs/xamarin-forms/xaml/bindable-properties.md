@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsПривязываемые свойства
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 33b3763075b64ea8af615465825313a527d20db2
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138181"
+Title: " Xamarin.Forms описание связываемых свойств" Description: "в этой статье содержатся общие сведения о связываемых свойствах и демонстрируется их создание и использование".
+MS. произв. Xamarin MS. AssetID: 1EE869D8-6FE1-45CA-A0AD-26EC7D032AD7 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/16/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-bindable-properties"></a>Xamarin.FormsПривязываемые свойства
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior)
@@ -120,7 +106,7 @@ listView.Behaviors.Add (new EventToCommandBehavior
 });
 ```
 
-## <a name="advanced-scenarios"></a>Расширенные сценарии
+## <a name="advanced-scenarios"></a>Сложные сценарии
 
 При создании [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) экземпляра существует ряд необязательных параметров, которые можно задать для включения расширенных сценариев свойств с возможностью привязки. В этом разделе рассматриваются эти сценарии.
 

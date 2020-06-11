@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8c4fc732082a77a2e471465af448a487862b513c
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136296"
+Title: "Настройка свойства ItemsSource средства выбора" Description: "представление средства выбора — это элемент управления для выбора текстового элемента из списка данных. В этой статье объясняется, как заполнить средство выбора данными, задав свойство ItemsSource, и как реагировать на выбор элементов пользователем. "
+MS. произв. Xamarin MS. AssetID: 8ECF390C-9DB2-4441-B9A3-101AE7E5AEC5 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/26/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="setting-a-pickers-itemssource-property"></a>Задание свойства ItemsSource средства выбора
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-monkeyapppicker)

@@ -1,23 +1,8 @@
 ---
-title: Xamarin.FormsСловари ресурсов
-description: Xamarin.FormsРесурсы XAML — это объекты, которые могут использоваться совместно и повторно использоваться во всем Xamarin.Forms приложении.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.custom: ''
-ms.openlocfilehash: a1c7cfd4a0f3549b11ac51dc13b40da552f6b758
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139416"
+Title: " Xamarin.Forms описания ресурсов" Описание: " Xamarin.Forms ресурсы XAML — это объекты, которые могут совместно использоваться и переноситься по всему Xamarin.Forms приложению".
+MS. произв. Xamarin MS. AssetID: DF103686-4A92-40FA-9CF1-A9376293B13C MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/01/2020 без-Loc: [ Xamarin.Forms , Xamarin.Essentials ] MS. Custom: видео
 ---
+
 # <a name="xamarinforms-resource-dictionaries"></a>Xamarin.FormsСловари ресурсов
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-resourcedictionaries)
@@ -238,7 +223,7 @@ Xamarin.FormsПриложение содержит только класс, пр
 
 - [Словари ресурсов (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-resourcedictionaries)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md)
-- [Xamarin.FormsСпециальные](~/xamarin-forms/user-interface/styles/index.md)
+- [Стили Xamarin.Forms](~/xamarin-forms/user-interface/styles/index.md)
 - [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
 
 ## <a name="related-video"></a>Связанные видео

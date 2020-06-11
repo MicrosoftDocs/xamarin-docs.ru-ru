@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsПредставления
-description: Xamarin.Formsпредставления — это стандартные блоки кросс-платформенных мобильных пользовательских интерфейсов. В этой статье перечислены представления, входящие в Xamarin.Forms .
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8c15626e405645d28a785c32d276860f9751ea25
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84132383"
+Title: " Xamarin.Forms views" Description: " Xamarin.Forms представления — это стандартные блоки кросс-платформенных мобильных пользовательских интерфейсов. В этой статье перечислены представления, входящие в Xamarin.Forms .
+MS. произв. Xamarin MS. AssetID: AC070686-A423-4A98-8BB6-0B9F94C062CC MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/16/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-views"></a>Xamarin.FormsПредставления
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/)
@@ -73,7 +59,7 @@ _Представления Xamarin. Forms — это стандартные б�
 
 |     |     |
 | --- | --- |
-| [`OpenGLView`](xref:Xamarin.Forms.OpenGLView)Отображает графические изображения OpenGL в проектах iOS и Android. Универсальная платформа Windows не поддерживается. Для проектов iOS и Android требуется ссылка на сборку **опентк-1,0** или сборку **опентк** версии 1.0.0.0. `OpenGLView`проще в использовании в общем проекте; Если используется в библиотеке .NET Standard, потребуется также служба зависимостей (как показано в примере кода).<br /><br />Это единственная графическая возможность, встроенная в Xamarin.Forms , но Xamarin.Forms приложение может также визуализировать графику с помощью [`SkiaSharp`](~/xamarin-forms/user-interface/graphics/skiasharp/index.md) , или [`UrhoSharp`](~/xamarin-forms/user-interface/graphics/urhosharp.md) .<br /><br />[Документация по API-интерфейсам](xref:Xamarin.Forms.OpenGLView)<br /><br /> | [![Пример Опенглвиев](views-images/OpenGLView.png "Пример Опенглвиев")](views-images/OpenGLView-Large.png#lightbox "Пример Опенглвиев")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/OpenGLViewDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/OpenGLViewDemoPage.xaml) с [кодом программной части](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/OpenGLViewDemoPage.xaml.cs) |
+| [`OpenGLView`](xref:Xamarin.Forms.OpenGLView)Отображает графические изображения OpenGL в проектах iOS и Android. Универсальная платформа Windows не поддерживается. Для проектов iOS и Android требуется ссылка на сборку **опентк-1,0** или сборку **опентк** версии 1.0.0.0. `OpenGLView`проще в использовании в общем проекте; Если используется в библиотеке .NET Standard, потребуется также служба зависимостей (как показано в примере кода).<br /><br />Это единственная графическая возможность, встроенная в Xamarin.Forms , но Xamarin.Forms приложение может также визуализировать графику с помощью [`SkiaSharp`](~/xamarin-forms/user-interface/graphics/skiasharp/index.md) , или [`UrhoSharp`](~/xamarin-forms/user-interface/graphics/urhosharp.md) .<br /><br />[Документация по API](xref:Xamarin.Forms.OpenGLView)<br /><br /> | [![Пример Опенглвиев](views-images/OpenGLView.png "Пример Опенглвиев")](views-images/OpenGLView-Large.png#lightbox "Пример Опенглвиев")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/OpenGLViewDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/OpenGLViewDemoPage.xaml) с [кодом программной части](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/OpenGLViewDemoPage.xaml.cs) |
 |     |     |
 
 ### <a name="webview"></a>WebView
@@ -136,7 +122,7 @@ _Представления Xamarin. Forms — это стандартные б�
 | `CheckBox`позволяет пользователю выбрать логическое значение с помощью типа кнопки, которая может быть либо установлена, либо пустой. `IsChecked`Свойство является состоянием `CheckBox` , а `CheckedChanged` событие возникает при изменении состояния.<br /><br />Документация по API [Guide](~/xamarin-forms/user-interface/checkbox.md)/  /  [образец](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-checkboxdemos) руководства | [![Пример флажка](views-images/CheckBox.png "Пример флажка")](views-images/CheckBox-Large.png#lightbox "Пример флажка")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/CheckBoxPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/CheckBoxPage.xaml) |
 |     |     |
 
-### <a name="slider"></a>Ползунок
+### <a name="slider"></a>Slider
 
 |     |     |
 | --- | --- |
@@ -252,5 +238,5 @@ _Представления Xamarin. Forms — это стандартные б�
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Xamarin.FormsПример Формсгаллери](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
-- [Xamarin.FormsРегистрируют](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
+- [Примеры для Xamarin.Forms](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
 - [Xamarin.FormsДокументация по API](https://docs.microsoft.com/dotnet/api/xamarin.forms?view=xamarin-forms)

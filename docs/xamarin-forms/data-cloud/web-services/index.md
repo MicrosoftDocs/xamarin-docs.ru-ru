@@ -1,22 +1,8 @@
 ---
-title: Xamarin.Formsи веб-службы
-description: В этом руководство объясняется, как взаимодействовать с различными веб-службами для предоставления приложению функций создания, чтения, обновления и удаления (CRUD) Xamarin.Forms . Рассматриваемые темы включают взаимодействие со службами ASMX, службами WCF, службами RESTFUL.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 5b2613b94d2c347d9bc6a94086f869b07ab8a55b
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84131889"
+Title: " Xamarin.Forms и веб-службы" Description: "в этом руководство объясняется, как взаимодействовать с различными веб-службами для предоставления приложению функций создания, чтения, обновления и удаления (CRUD) Xamarin.Forms . Рассматриваемые темы включают взаимодействие со службами ASMX, службами WCF и службами RESTFUL. "
+MS. произв. Xamarin MS. AssetID: 8B360BDA-E4E3-4A3F-9004-0E35362F49F8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/27/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-and-web-services"></a>Xamarin.Formsи веб-службы
 
 ## <a name="introduction"></a>[Введение](introduction.md)

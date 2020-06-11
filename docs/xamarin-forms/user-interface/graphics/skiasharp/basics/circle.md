@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняются основы рисования SkiaSharp, включая холсты и объекты рисования, в Xamarin.Forms приложениях, а также демонстрируется пример кода.
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: fb873102bfb8568b8298a39ea2429fb6c27af175
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137726"
+Title: "Рисование простого круга в SkiaSharp" Description: "в этой статье объясняются основы рисования SkiaSharp, включая холсты и объекты рисования, в Xamarin.Forms приложениях, а также демонстрируется пример кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: E3A4E373-F65D-45C8-8E77-577A804AC3F8 Автор: давидбритч MS. author: дабритч MS. Дата: 03/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="drawing-a-simple-circle-in-skiasharp"></a>Рисование простого круга в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -63,8 +49,8 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 [`SKPaintSurfaceEventArgs`](xref:SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs)Объект, сопровождающий событие, имеет два свойства:
 
-- [`Info`](xref:SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs.Info)типа[`SKImageInfo`](xref:SkiaSharp.SKImageInfo)
-- [`Surface`](xref:SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs.Surface)типа[`SKSurface`](xref:SkiaSharp.SKSurface)
+- [`Info`](xref:SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs.Info) типа [`SKImageInfo`](xref:SkiaSharp.SKImageInfo).
+- [`Surface`](xref:SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs.Surface) типа [`SKSurface`](xref:SkiaSharp.SKSurface).
 
 `SKImageInfo`Структура содержит сведения о поверхности рисования, что самое важное, ширину и высоту в пикселях. `SKSurface`Объект представляет саму поверхность рисования. В этой программе поверхность рисования является видеоизображением, но в других программах `SKSurface` объект может также представлять точечный рисунок, который используется SkiaSharp для рисования.
 
@@ -109,7 +95,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 - [`Stroke`](xref:SkiaSharp.SKPaintStyle.Stroke)
 - [`StrokeAndFill`](xref:SkiaSharp.SKPaintStyle.StrokeAndFill)
 
-Значение по умолчанию — `Fill`. Используйте третий параметр для обводки линии и заполнения внутренней области тем же цветом.
+Значение по умолчанию — `Fill`. Используйте третий параметр для обводки линии и заполнения внутренней области тем же цветом.
 
 Присвойте [`Color`](xref:SkiaSharp.SKPaint.Color) свойству значение типа [`SKColor`](xref:SkiaSharp.SKColor) . Одним из способов получения `SKColor` значения является преобразование Xamarin.Forms `Color` значения в `SKColor` значение с помощью метода расширения [`ToSKColor`](xref:SkiaSharp.Views.Forms.Extensions.ToSKColor*) . [`Extensions`](xref:SkiaSharp.Views.Forms.Extensions)Класс в `SkiaSharp.Views.Forms` пространстве имен включает другие методы, которые преобразуют Xamarin.Forms значения и SkiaSharp значения.
 

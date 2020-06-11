@@ -1,23 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.custom: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 047cf963394325e8f88759ffe9da7dcf2ca3ad12
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127534"
+Title: "часть 5. Из привязок данных к MVVM "Description:" шаблон MVVM обеспечивает разделение между тремя уровнями программного обеспечения — пользовательским интерфейсом XAML, называемым представлением. базовые данные, называемые моделью; и посредник между представлением и моделью, называемой ViewModel.
+MS. произв. Xamarin MS. Custom: видео MS. AssetID: 48B37D44-4FB1-41B2-9A5E-6D383B041F81 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 10/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="part-5-from-data-bindings-to-mvvm"></a>Часть 5. От привязки данных до MVVM
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)
@@ -702,7 +687,7 @@ private async void OnListViewItemSelected(object sender, SelectedItemChangedEven
 }
 ```
 
-## <a name="video"></a>Видео
+## <a name="video"></a>Видеоролик
 
 > [!VIDEO https://youtube.com/embed/DYRLcqG2BAY]
 

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: Хотя ListView является мощным представлением для отображения данных, у него есть некоторые ограничения. В этой статье объясняется, как обеспечить высокую производительность с помощью Xamarin.Forms ListView в приложении.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e2b8e057d9687cd0a472451fc73cc578f9358277
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139897"
+Title: "производительность ListView" Описание: "ListView является мощным представлением для отображения данных, но имеет некоторые ограничения. В этой статье объясняется, как обеспечить высокую производительность с помощью Xamarin.Forms ListView в приложении. "
+MS. произв. Xamarin MS. AssetID: 1B085639-652C-4862-86EB-5D55D32B9395 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/11/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="listview-performance"></a>Производительность ListView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithlistviewnative)

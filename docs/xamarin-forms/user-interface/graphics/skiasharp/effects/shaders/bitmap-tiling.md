@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 6a28dd20eb8978334365ac217df1241e5288fd28
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137432"
+Title: "SkiaSharp мозаичное заполнение" Description: "мозаичная область с использованием точечных рисунков повторяется горизонтально и вертикально".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 9ED14E07-4DC8-4B03-8A33-772838BF51EA Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="skiasharp-bitmap-tiling"></a>Разбиение растрового изображения SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -250,7 +236,7 @@ public class AlgorithmicBrickWallPage : ContentPage
 }
 ```
 
-Ниже приведен результат:
+Ниже приведен результат.
 
 [![Настенный стенной кирпич](bitmap-tiling-images/AlgorithmicBrickWall.png "Настенный стенной кирпич")](bitmap-tiling-images/AlgorithmicBrickWall-Large.png#lightbox)
 

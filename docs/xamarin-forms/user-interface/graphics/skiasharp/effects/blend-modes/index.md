@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: b5b03779b9f0847621456b25582fb8ea04f8386d
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84131707"
+Title: "SkiaSharp Blend Mode" Description: "использование режимов смешения для определения того, что происходит, когда графические объекты помещаются друг на друга".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: CE1B222E-A2D0-4016-A532-EC1E59EE3D6B Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="skiasharp-blend-modes"></a>Режимы смешения SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -32,60 +18,20 @@ ms.locfileid: "84131707"
 29 членов `SKBlendMode` перечисления можно разделить на три категории:
 
 | Портер — Дуфф | Отделяемых    | Не отделяемых |
-| ---
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------- | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
------- | Заголовок---: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
--
-Title: описание: MS. произ: MS. Technology: MS. AssetID: Автор: MS. author: MS. Дата: нет-Loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
-------- | | `Clear`     | `Modulate`   | `Hue`         | | `Src`       | `Screen`     | `Saturation`  | | `Dst`       | `Overlay`    | `Color`       | | `SrcOver`   | `Darken`     | `Luminosity`  | | `DstOver`   | `Lighten`    |               | | `SrcIn`     | `ColorDodge` |               | | `DstIn`     | `ColorBurn`  |               | | `SrcOut`    | `HardLight`  |               | | `DstOut`    | `SoftLight`  |               | | `SrcATop`   | `Difference` |               | | `DstATop`   | `Exclusion`  |               | | `Xor`       | `Multiply`   |               | | `Plus`      |              |               |
+| ----------- | ------------ | ------------- |
+| `Clear`     | `Modulate`   | `Hue`         |
+| `Src`       | `Screen`     | `Saturation`  |
+| `Dst`       | `Overlay`    | `Color`       |
+| `SrcOver`   | `Darken`     | `Luminosity`  |
+| `DstOver`   | `Lighten`    |               |
+| `SrcIn`     | `ColorDodge` |               |
+| `DstIn`     | `ColorBurn`  |               |
+| `SrcOut`    | `HardLight`  |               |
+| `DstOut`    | `SoftLight`  |               |
+| `SrcATop`   | `Difference` |               |
+| `DstATop`   | `Exclusion`  |               |
+| `Xor`       | `Multiply`   |               |
+| `Plus`      |              |               |
 
 Имена этих трех категорий будут иметь больше смысла в следующих обсуждениях. Порядок, в котором перечислены элементы, совпадает с порядком в определении `SKBlendMode` перечисления. 13 элементов перечисления в первом столбце имеют целочисленные значения от 0 до 12. Второй столбец — это члены перечисления, соответствующие целым числам от 13 до 24, а элементы третьего столбца — значения от 25 до 28.
 

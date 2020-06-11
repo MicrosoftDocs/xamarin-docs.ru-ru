@@ -1,22 +1,8 @@
 ---
-title: Связываемые макеты вXamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 9d0497c0c0593b54f69bac84307976c4050e9c95
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138246"
+Title: "связываемые макеты в Xamarin.Forms описании:" связываемые макеты позволяют классам макета создавать свое содержимое путем привязки к коллекции элементов с параметром для установки внешнего вида каждого элемента с помощью DataTemplate ".
+MS. произв. Xamarin MS. AssetID: 824C3319-20A0-42D0-8632-CDECD98349C3 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/09/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="bindable-layouts-in-xamarinforms"></a>Связываемые макеты вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-bindablelayouts)
@@ -32,8 +18,8 @@ ms.locfileid: "84138246"
 
 Кроме того, `BindableLayout` класс предоставляет следующие привязываемые свойства:
 
-- `EmptyView`— Указывает `string` представление или, которое будет отображаться `ItemsSource` , если свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
-- `EmptyViewTemplate`— Указывает [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , который будет отображаться, если `ItemsSource` свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
+- `EmptyView`— Указывает `string` представление или, которое будет отображаться `ItemsSource` , если свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
+- `EmptyViewTemplate`— Указывает [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , который будет отображаться, если `ItemsSource` свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
 
 > [!NOTE]
 > `EmptyViewTemplate`Свойство имеет приоритет, если `EmptyView` `EmptyViewTemplate` заданы свойства и.
@@ -98,7 +84,7 @@ BindableLayout.SetItemTemplate(stackLayout, circleImageTemplate);
 
 ![Связываемый макет с DataTemplate](bindable-layouts-images/top-followers.png "Связываемый макет с шаблоном данных")
 
-Дополнительные сведения о шаблонах данных см. в разделе [ Xamarin.Forms шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md).
+Дополнительные сведения о шаблонах данных см. в разделе [Общие сведения о шаблонах данныхXamarin.Forms](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md).
 
 ## <a name="choose-item-appearance-at-runtime"></a>Выбор внешнего вида элемента во время выполнения
 

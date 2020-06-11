@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как загружать точечные рисунки в SkiaSharp из различных источников и отображать их в Xamarin.Forms приложениях, а также демонстрируется пример кода.
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 1e4c170f818dc62640b1cd72ec3b70f48d227d93
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137741"
+Title: "основы точечного рисунка в SkiaSharp" Description: "в этой статье объясняется, как загружать точечные рисунки в SkiaSharp из различных источников и отображать их в Xamarin.Forms приложениях, а также демонстрируется пример кода."
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 32C95DFF-9065-42D7-966C-D3DBD16906B3 Автор: давидбритч MS. author: дабритч MS. Дата: 07/17/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="bitmap-basics-in-skiasharp"></a>Основы точечного рисунка в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -104,9 +90,9 @@ protected override async void OnAppearing()
 
 ## <a name="loading-a-bitmap-resource"></a>Загрузка ресурса точечного рисунка
 
-С точки зрения кода самым простым подходом к загрузке точечных рисунков является включение ресурса точечного рисунка непосредственно в приложение. Программа **скиашарпформсдемос** включает папку с именем **Media** , содержащую несколько файлов точечных рисунков, включая один файл **обезьян. png**. Для точечных рисунков, хранящихся как ресурсы программы, необходимо использовать диалоговое окно **свойств** , чтобы дать файлу **действие сборки** **внедренного ресурса**!
+С точки зрения кода самым простым подходом к загрузке точечных рисунков является включение ресурса точечного рисунка непосредственно в приложение. Программа **скиашарпформсдемос** включает папку с именем **Media** , содержащую несколько файлов точечных рисунков, включая один с именем **monkey.png**. Для точечных рисунков, хранящихся как ресурсы программы, необходимо использовать диалоговое окно **свойств** , чтобы дать файлу **действие сборки** **внедренного ресурса**!
 
-Каждый внедренный ресурс имеет *идентификатор ресурса* , состоящий из имени проекта, папки и имени файла, Соединенных точками: **скиашарпформсдемос. Media. обезьян. png**. Доступ к этому ресурсу можно получить, указав идентификатор ресурса в качестве аргумента [`GetManifestResourceStream`](xref:System.Reflection.Assembly.GetManifestResourceStream(System.String)) метода [`Assembly`](xref:System.Reflection.Assembly) класса:
+Каждый внедренный ресурс имеет *идентификатор ресурса* , состоящий из имени проекта, папки и имени файла, Соединенных точками: **SkiaSharpFormsDemos.Media.monkey.png**. Доступ к этому ресурсу можно получить, указав идентификатор ресурса в качестве аргумента [`GetManifestResourceStream`](xref:System.Reflection.Assembly.GetManifestResourceStream(System.String)) метода [`Assembly`](xref:System.Reflection.Assembly) класса:
 
 ```csharp
 string resourceID = "SkiaSharpFormsDemos.Media.monkey.png";

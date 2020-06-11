@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsDatePicker
-description: DatePicker — это Xamarin.Forms представление, позволяющее пользователю выбрать дату. В этой статье объясняется, как использовать DatePicker в Xamarin.Forms приложении.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 5c1de52e2a173e7d9a366d8fd7cbd63998b3a6d1
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137362"
+Title: Xamarin.Forms Описание "DatePicker": "DatePicker — это Xamarin.Forms представление, позволяющее пользователю выбрать дату. В этой статье объясняется, как использовать DatePicker в Xamarin.Forms приложении. "
+MS. произв. Xamarin MS. AssetID: 68E8EF8A-42E7-4939-8ABE-64D060E609D9 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/04/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-datepicker"></a>Xamarin.FormsDatePicker
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-datepicker)

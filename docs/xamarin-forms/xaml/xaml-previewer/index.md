@@ -1,23 +1,8 @@
 ---
-title: Предварительный просмотр XAML дляXamarin.Forms
-description: В этой статье объясняется, как использовать предварительный просмотр XAML для просмотра Xamarin.Forms макетов, отображаемых при вводе. Предварительный просмотр XAML доступен в Visual Studio 2019 и Visual Studio 2019 для Mac.
-zone_pivot_groups: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 6916d5fde688c5b1162f12db0d36bc3ca27156d8
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137323"
+Title: "предварительный просмотр XAML для Xamarin.Forms " Description: "в этой статье объясняется, как использовать предварительный просмотр XAML для просмотра Xamarin.Forms макетов, отображаемых при вводе. Предварительный просмотр XAML доступен в Visual Studio 2019 и Visual Studio 2019 для Mac. "
+zone_pivot_groups: Platform MS. произв. Xamarin MS. AssetID: 84769ff1-72fd-4c44-8251-dd6d5bf8c7b2 MS. Technology: Xamarin-Forms author: maddyleger1 MS. author: малежер MS. Дата: 03/16/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xaml-previewer-for-xamarinforms"></a>Предварительный просмотр XAML дляXamarin.Forms
 
 _Просмотр Xamarin.Forms макетов при вводе_

@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsОперации
-description: В этой статье объясняется, как использовать Xamarin.Forms класс entry для приема ввода текста или пароля в приложении.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 5c17d6a106474c4c5b183bd41923533ffc95789b
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136205"
+Title: " Xamarin.Forms запись" Description: "в этой статье объясняется, как использовать Xamarin.Forms класс entry для приема входных текстовых данных или паролей в приложении".
+MS. произв. Xamarin MS. AssetID: 9923C541-3C10-4D14-BAB5-C4D6C514FB1E MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/25/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-entry"></a>Xamarin.FormsОперации
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
@@ -200,14 +186,14 @@ var entry = new Entry { Text = "Xamarin.Forms", ClearButtonVisibility = ClearBut
 
 Клавиатура, представленная, когда пользователи взаимодействуют с [`Entry`](xref:Xamarin.Forms.Entry) компонентом, может быть задана программно с помощью [`Keyboard`](xref:Xamarin.Forms.InputView.Keyboard) свойства, к одному из следующих свойств [`Keyboard`](xref:Xamarin.Forms.Keyboard) класса:
 
-- [`Chat`](xref:Xamarin.Forms.Keyboard.Chat)— используется для текста и мест, где можно использовать эмодзи.
-- [`Default`](xref:Xamarin.Forms.Keyboard.Default)— клавиатура по умолчанию.
-- [`Email`](xref:Xamarin.Forms.Keyboard.Email)— используется при вводе адресов электронной почты.
-- [`Numeric`](xref:Xamarin.Forms.Keyboard.Numeric)— используется при вводе чисел.
-- [`Plain`](xref:Xamarin.Forms.Keyboard.Plain)— используется при вводе текста без [`KeyboardFlags`](xref:Xamarin.Forms.KeyboardFlags) указания.
-- [`Telephone`](xref:Xamarin.Forms.Keyboard.Telephone)— используется при вводе телефонных номеров.
-- [`Text`](xref:Xamarin.Forms.Keyboard.Text)— используется при вводе текста.
-- [`Url`](xref:Xamarin.Forms.Keyboard.Url)— используется для ввода путей к файлам & веб-адреса.
+- [`Chat`](xref:Xamarin.Forms.Keyboard.Chat) — это текстовая клавиатура с эмодзи.
+- [`Default`](xref:Xamarin.Forms.Keyboard.Default) — это клавиатура по умолчанию.
+- [`Email`](xref:Xamarin.Forms.Keyboard.Email) используется для ввода адресов электронной почты.
+- [`Numeric`](xref:Xamarin.Forms.Keyboard.Numeric) — цифровая клавиатура.
+- [`Plain`](xref:Xamarin.Forms.Keyboard.Plain) предназначена для ввода текста, если нет заданных [`KeyboardFlags`](xref:Xamarin.Forms.KeyboardFlags).
+- [`Telephone`](xref:Xamarin.Forms.Keyboard.Telephone) — клавиатура для ввода телефонных номеров.
+- [`Text`](xref:Xamarin.Forms.Keyboard.Text) — текстовая клавиатура.
+- [`Url`](xref:Xamarin.Forms.Keyboard.Url) — клавиатура для ввода путей к файлам и веб-адресов.
 
 Это можно сделать в XAML следующим образом:
 
@@ -223,18 +209,18 @@ var entry = new Entry { Keyboard = Keyboard.Chat };
 
 Примеры каждой клавиатуры можно найти в нашем репозитории [рецептов](https://github.com/xamarin/recipes/tree/master/Recipes/xamarin-forms/Controls/choose-keyboard-for-entry) .
 
-[`Keyboard`](xref:Xamarin.Forms.Keyboard)Класс также имеет [`Create`](xref:Xamarin.Forms.Keyboard.Create*) фабричный метод, который можно использовать для настройки клавиатуры, указывая регистр букв, орфографию и поведение предложения. [`KeyboardFlags`](xref:Xamarin.Forms.KeyboardFlags)значения перечисления задаются в качестве аргументов метода с настраиваемым `Keyboard` возвращаемым значением. Перечисление `KeyboardFlags` имеет такие значения:
+Класс [`Keyboard`](xref:Xamarin.Forms.Keyboard) также имеет фабричный метод [`Create`](xref:Xamarin.Forms.Keyboard.Create*), который может использоваться для настройки клавиатуры, задавая регистр букв, проверку орфографии и режим подсказок. Значения перечисления [`KeyboardFlags`](xref:Xamarin.Forms.KeyboardFlags) задаются как аргументы метода, при этом возвращается настроенное свойство `Keyboard`. Перечисление `KeyboardFlags` имеет такие значения:
 
-- [`None`](xref:Xamarin.Forms.KeyboardFlags.None)— на клавиатуре не добавляются никакие компоненты.
-- [`CapitalizeSentence`](xref:Xamarin.Forms.KeyboardFlags.CapitalizeSentence)— Указывает, что первая буква первого слова в введенном предложении будет автоматически заставлять прописные.
-- [`Spellcheck`](xref:Xamarin.Forms.KeyboardFlags.Spellcheck)— Указывает, что для ввода текста будет выполнена Орфография.
-- [`Suggestions`](xref:Xamarin.Forms.KeyboardFlags.Suggestions)— Указывает, что в введенном тексте будут предложены завершения слов.
-- [`CapitalizeWord`](xref:Xamarin.Forms.KeyboardFlags.CapitalizeWord)— Указывает, что первая буква каждого слова автоматически заменяется прописной буквой.
-- [`CapitalizeCharacter`](xref:Xamarin.Forms.KeyboardFlags.CapitalizeCharacter)— Указывает, что каждый символ будет автоматически заглавным.
-- [`CapitalizeNone`](xref:Xamarin.Forms.KeyboardFlags.CapitalizeNone)— Указывает, что автоматическая капитализация не выполняется.
-- [`All`](xref:Xamarin.Forms.KeyboardFlags.All)— Указывает, что в введенном тексте будут выполняться слова «правописания», «завершение слов» и «прописная буква».
+- [`None`](xref:Xamarin.Forms.KeyboardFlags.None) указывает, что клавиатура не имеет никаких дополнительных функций.
+- [`CapitalizeSentence`](xref:Xamarin.Forms.KeyboardFlags.CapitalizeSentence) указывает, что первые слова во всех вводимых предложениях автоматически начинаются с прописных букв.
+- [`Spellcheck`](xref:Xamarin.Forms.KeyboardFlags.Spellcheck) указывает, что для вводимого текста выполняется проверка орфографии.
+- [`Suggestions`](xref:Xamarin.Forms.KeyboardFlags.Suggestions) указывает, что для вводимых слов предлагается завершение.
+- [`CapitalizeWord`](xref:Xamarin.Forms.KeyboardFlags.CapitalizeWord) указывает, что все слова автоматически начинаются с прописных букв.
+- [`CapitalizeCharacter`](xref:Xamarin.Forms.KeyboardFlags.CapitalizeCharacter) указывает, что все символы автоматически пишутся прописными буквами.
+- [`CapitalizeNone`](xref:Xamarin.Forms.KeyboardFlags.CapitalizeNone) указывает, что автоматическая подстановка прописных букв не выполняется.
+- [`All`](xref:Xamarin.Forms.KeyboardFlags.All) указывает, что для вводимого текста выполняется проверка орфографии, завершение слов и автоматическое написание предложений с прописной буквы.
 
-В следующем примере кода XAML показано, как настроить значение по умолчанию, [`Keyboard`](xref:Xamarin.Forms.Keyboard) чтобы предлагать Автозаполнение слов, и каждый введенный символ заменяется на прописные:
+В следующем примере кода XAML показано, как настроить значение по умолчанию [`Keyboard`](xref:Xamarin.Forms.Keyboard), чтобы включить предложение завершения слов и написание всех символов прописными буквами:
 
 ```xaml
 <Entry Placeholder="Enter text here">

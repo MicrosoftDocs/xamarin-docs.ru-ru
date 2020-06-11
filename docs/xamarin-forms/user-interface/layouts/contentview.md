@@ -1,23 +1,9 @@
 ---
-title: Xamarin.FormsContentView
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 46d2abf895ffe31bd1dc1c22caf36440c54b331c
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84130121"
+Title: " Xamarin.Forms ContentView" Description: "в этой статье объясняется, как использовать класс ContentView для создания пользовательского элемента управления, например кардвиев".
+MS. произв. Xamarin MS. AssetID: 638402E7-CA44-456B-863B-791F6B6B561D MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 08/14/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
-# <a name="xamarinforms-contentview"></a>Xamarin.FormsContentView
+
+# <a name="xamarinforms-contentview"></a>Xamarin.Forms ContentView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
 
@@ -121,7 +107,7 @@ public string CardTitle
 
 `ContentView`Элемент задает `x:Name` для свойства значение **this**, которое можно использовать для доступа к объекту, привязанному к `CardView` экземпляру. Элементы в привязках набора макетов для своих свойств к значениям, определенным для привязанного объекта.
 
-Дополнительные сведения о привязке данных см. в разделе [ Xamarin.Forms Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md).
+Дополнительные сведения о привязке данных см. в разделе [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md).
 
 > [!NOTE]
 > `FallbackValue`Свойство предоставляет значение по умолчанию, если привязка — `null` . Это также позволяет средству [предварительного просмотра XAML](~/xamarin-forms/xaml/xaml-previewer/index.md) в Visual Studio визуализировать `CardView` элемент управления.
@@ -207,11 +193,11 @@ CardView card = new CardView
 
 [![Снимок экрана ControlTemplate Кардвиев](contentview-images/cardview-controltemplates-cropped.png)](contentview-images/cardview-controltemplates.png#lightbox)
 
-Дополнительные сведения о шаблонах элементов управления см. в разделе [ Xamarin.Forms шаблоны элементов управления](~/xamarin-forms/app-fundamentals/templates/control-template.md).
+Дополнительные сведения о шаблонах элементов управления см. в разделе [Шаблоны элементов управления Xamarin.Forms](~/xamarin-forms/app-fundamentals/templates/control-template.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
 * [Пример приложения ContentView](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
-* [Xamarin.FormsПривязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)
+* [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md)
 * [Привязываемые свойства](~/xamarin-forms/xaml/bindable-properties.md).
-* [Xamarin.FormsШаблоны элементов управления](~/xamarin-forms/app-fundamentals/templates/control-template.md)
+* [Шаблоны элементов управления Xamarin.Forms](~/xamarin-forms/app-fundamentals/templates/control-template.md)

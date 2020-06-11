@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как с помощью SkiaSharp визуализировать кривые Безье, кубические и Коник Безье в Xamarin.Forms приложениях и демонстрирует это с помощью примера кода.
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 1ad548846500ccbacc2a3d117919bfb4df1a1d79
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138688"
+Title: "описание трех типов кривых Безье" Description: "в этой статье объясняется, как с помощью SkiaSharp визуализировать кубические, квадратичные и Коник кривые Безье в Xamarin.Forms приложениях и демонстрирует это с помощью образца кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 8FE0F6DC-16BC-435F-9626-DD1790C0145A Автор: давидбритч MS. author: дабритч МС. Дата: 05/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="three-types-of-bzier-curves"></a>Три типа кривых Безье
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -444,7 +430,7 @@ public void ConicTo (Single x1, Single y1, Single x2, Single y2, Single weight)
 
 Обратите внимание на последний `weight` параметр.
 
-Страница **кривой Коник** позволяет экспериментировать с этими кривыми. Класс `ConicCurvePage` является производным от класса `InteractivePage`. Файл [**кониккурвепаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ConicCurvePage.xaml) создает экземпляр, `Slider` чтобы выбрать значение веса от – 2 до 2. Файл кода программной части [**ConicCurvePage.XAML.CS**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ConicCurvePage.xaml.cs) создает три `TouchPoint` объекта, а `PaintSurface` обработчик просто выводит результирующую кривую с касательными к контрольным точкам:
+Страница **кривой Коник** позволяет экспериментировать с этими кривыми. Класс `ConicCurvePage` является производным от `InteractivePage`. Файл [**кониккурвепаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ConicCurvePage.xaml) создает экземпляр, `Slider` чтобы выбрать значение веса от – 2 до 2. Файл кода программной части [**ConicCurvePage.XAML.CS**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ConicCurvePage.xaml.cs) создает три `TouchPoint` объекта, а `PaintSurface` обработчик просто выводит результирующую кривую с касательными к контрольным точкам:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)

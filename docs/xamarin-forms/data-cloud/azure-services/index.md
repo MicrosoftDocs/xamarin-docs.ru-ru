@@ -1,22 +1,8 @@
 ---
-title: Xamarin.Formsи службы Azure
-description: В этой статье объясняется, как использовать центры уведомлений Azure для отправки push-уведомлений между платформами в Xamarin.Forms приложения.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: a63b6329b9e8f4bcdc18a973b538e1e2e44bca67
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84130979"
+Title: " Xamarin.Forms и службы Azure" Description: "в этой статье объясняется, как использовать центры уведомлений Azure для отправки push-уведомлений между платформами в Xamarin.Forms приложения".
+MS. произв. Xamarin MS. AssetID: 07C60A42-A9E1-4DD0-8874-BD9487DC3EA2 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/28/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-and-azure-services"></a>Xamarin.Formsи службы Azure
 
 ## <a name="consume-an-azure-cosmos-db-document-database-in-xamarinformsazure-cosmosdbmd"></a>[Использование базы данных документов Azure Cosmos DB вXamarin.Forms](azure-cosmosdb.md)

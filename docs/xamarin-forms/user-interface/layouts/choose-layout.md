@@ -1,22 +1,8 @@
 ---
-title: Выбор Xamarin.Forms макета
-description: Xamarin.Formsклассы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 16a48423d05ce1cede75c0020bf18f4f398f5adc
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138506"
+Title: "Выбор Xamarin.Forms макета" Описание: " Xamarin.Forms классы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении".
+MS. произв. Xamarin MS. AssetID: 05A39752-A174-447E-A30D-3CC9EF98CB96 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/21/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="choose-a-xamarinforms-layout"></a>Выбор Xamarin.Forms макета
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
@@ -78,7 +64,7 @@ Xamarin.Formsклассы макетов позволяют упорядочив
 
 Дополнительные сведения см. в разделе [ Xamarin.Forms StackLayout](stacklayout.md).
 
-## <a name="grid"></a>Макет Grid
+## <a name="grid"></a>Grid
 
 Объект [`Grid`](xref:Xamarin.Forms.Grid) используется для отображения элементов в строках и столбцах, которые могут иметь пропорциональные или абсолютные размеры. Строки и столбцы сетки указываются с помощью [`RowDefinitions`](xref:Xamarin.Forms.Grid.RowDefinitions) [`ColumnDefinitions`](xref:Xamarin.Forms.Grid.ColumnDefinitions) свойств и.
 
@@ -203,7 +189,7 @@ Xamarin.Formsклассы макетов позволяют упорядочив
 [`AbsoluteLayout`](xref:Xamarin.Forms.AbsoluteLayout)Следует рассматривать как макет специального назначения, который будет использоваться только в том случае, если можно наложить размер дочерних элементов или если размер элемента не влияет на расположение других дочерних элементов. Стандартным применением этого макета является создание наложения, которая охватывает страницу с другими элементами управления, что может защитить пользователя от взаимодействия с обычными элементами управления на странице.
 
 > [!IMPORTANT]
-> `HorizontalOptions`Свойства и `VerticalOptions` не влияют на дочерние элементы `AbsoluteLayout` .
+> Свойства `HorizontalOptions` и `VerticalOptions` не влияют на дочерние элементы `AbsoluteLayout`.
 
 В [`AbsoluteLayout`](xref:Xamarin.Forms.AbsoluteLayout) [`AbsoluteLayout.LayoutBounds`](xref:Xamarin.Forms.AbsoluteLayout.LayoutBoundsProperty) присоединяемое свойство используется для указания горизонтальной и вертикальной позиций, ширины и высоты элемента. Кроме того, [`AbsoluteLayout.LayoutFlags`](xref:Xamarin.Forms.AbsoluteLayout.LayoutFlagsProperty) присоединенное свойство указывает, как будут интерпретироваться границы макета.
 

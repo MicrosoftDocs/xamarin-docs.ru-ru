@@ -3,7 +3,7 @@ Title: "краткие модули Xamarin.Forms подготовки отче�
 MS. произв. Xamarin MS. AssetID: 097f87f2-d891-4f3c-be02-fb7d195a481a MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/28/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
 
-# <a name="xamarinforms-fast-renderers"></a>Xamarin.FormsБыстрые модули подготовки отчетов
+# <a name="xamarinforms-fast-renderers"></a>Быстрые отрисовщики Xamarin.Forms
 
 Обычно большинство исходных модулей подготовки элементов управления в Android состоят из двух представлений:
 

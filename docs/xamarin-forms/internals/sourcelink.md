@@ -1,23 +1,8 @@
 ---
-title: Ссылка на источник сXamarin.Forms
-description: В этой статье объясняется, как использовать ссылку на источник для отладки в Xamarin.Forms .
-zone_pivot_groups: ''
-ms.prod: ''
-ms.assetId: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 57db314538c42ef9d58691ba16ab68371ff092b7
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138329"
+Title: "ссылка на источник с Xamarin.Forms описанием:" в этой статье объясняется, как использовать ссылку на источник для отладки Xamarin.Forms .
+zone_pivot_groups: "Platform" MS. произв. Xamarin MS. assetId: 1E13FCD9-5607-46E8-80E4-87A58B389BEB MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс MS. Дата: 09/26/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="source-link-with-xamarinforms"></a>Ссылка на источник сXamarin.Forms
 
 Xamarin.FormsПакеты NuGet включают сопоставления исходных ссылок. Ссылка на источник сопоставляет скомпилированные библиотеки, содержащиеся в пакете NuGet, с репозиторием исходного кода. Visual Studio загрузит файлы исходного кода во время отладки и позволит разработчикам выполнять код по шагам, обеспечивая отладку пакетов без сборки из источника.

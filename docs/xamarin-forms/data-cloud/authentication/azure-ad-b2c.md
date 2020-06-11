@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 64529b81a375ee5a8cc8a96ec557c03401e60495
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84130576"
+Title: "Проверка подлинности пользователей с помощью Azure Active Directory B2C" Описание: "Azure Active Directory B2C обеспечивает управление облачными удостоверениями для мобильных и веб-приложений, ориентированных на потребителей. В этой статье показано, как использовать Azure Active Directory B2C для интеграции управления удостоверениями в мобильное приложение с помощью библиотеки проверки подлинности Майкрософт ".
+MS. произв. Xamarin MS. AssetID: B0A5DB65-0585-4A00-B908-22CCC286E6B6 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/04/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="authenticate-users-with-azure-active-directory-b2c"></a>Проверка подлинности с помощью Azure Active Directory B2C
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-azureadb2cauth)
@@ -70,7 +56,7 @@ public static class Constants
 
 ![Пользовательский URI перенаправления в представлении свойств приложения Azure](azure-ad-b2c-images/azure-redirect-uri.png)
 
-URL-адрес будет использоваться позже в Android **ApplicationManifest. XML** и iOS **info. plist**.
+URL-адрес будет использоваться позже в **ApplicationManifest.xml** Android и в iOS **info. plist**.
 
 В образце проекта измените файл **Constants.CS** , чтобы задать `clientId` для поля **идентификатор приложения**. В следующем коде показано, как это значение должно быть задано, если идентификатор приложения `1234abcd` :
 
@@ -286,7 +272,7 @@ namespace TodoAzure.iOS
 
 ### <a name="android"></a>Android
 
-В Android пользовательская схема URL-адресов, зарегистрированная в Azure Active Directory B2C, должна быть зарегистрирована в **AndroidManifest. XML**. MSAL ждет, чтобы схема URL-адресов соответствовала определенному шаблону, описанному ранее в разделе [Регистрация мобильного приложения с помощью Azure Active Directory B2C](~/xamarin-forms/data-cloud/authentication/azure-ad-b2c.md#register-your-mobile-application-with-azure-active-directory-b2c). В следующем примере показана пользовательская схема URL-адресов в **файле AndroidManifest. XML**.
+В Android пользовательская схема URL-адресов, зарегистрированная в Azure Active Directory B2C, должна быть зарегистрирована в **AndroidManifest.xml**. MSAL ждет, чтобы схема URL-адресов соответствовала определенному шаблону, описанному ранее в разделе [Регистрация мобильного приложения с помощью Azure Active Directory B2C](~/xamarin-forms/data-cloud/authentication/azure-ad-b2c.md#register-your-mobile-application-with-azure-active-directory-b2c). В следующем примере показана пользовательская схема URL-адресов в **AndroidManifest.xml**.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -307,7 +293,7 @@ namespace TodoAzure.iOS
 </manifest>
 ```
 
-`MainActivity`Класс необходимо изменить, чтобы предоставить `UIParent` приложению объект во время `OnCreate` вызова. Когда Azure Active Directory B2C завершает запрос авторизации, он перенаправляется на зарегистрированную схему URL-адресов из **AndroidManifest. XML**. Зарегистрированная схема URI вызывает в Android `OnActivityResult` метод с URL-адресом в качестве параметра запуска, где он обрабатывается `SetAuthenticationContinuationEventArgs` методом.
+`MainActivity`Класс необходимо изменить, чтобы предоставить `UIParent` приложению объект во время `OnCreate` вызова. Когда Azure Active Directory B2C завершает запрос авторизации, он перенаправляется на зарегистрированную схему URL-адресов из **AndroidManifest.xml**. Зарегистрированная схема URI вызывает в Android `OnActivityResult` метод с URL-адресом в качестве параметра запуска, где он обрабатывается `SetAuthenticationContinuationEventArgs` методом.
 
 ```csharp
 public class MainActivity : FormsAppCompatActivity

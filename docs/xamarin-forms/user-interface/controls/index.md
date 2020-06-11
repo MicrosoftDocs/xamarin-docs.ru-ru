@@ -1,22 +1,8 @@
 ---
-title: ''
-description: Описание всех элементов пользовательского интерфейса, используемых для создания Xamarin.Forms приложения. В этой статье перечислены группы элементов управления, которые составляют пользовательский интерфейс Xamarin.Forms приложения.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e843f0e42f4f66a6ce4e60c2f5d8a233d19f1df6
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136400"
+Title: "Controls Reference" Description: "описание всех элементов пользовательского интерфейса, используемых для создания Xamarin.Forms приложения. В этой статье перечислены группы элементов управления, которые составляют пользовательский интерфейс Xamarin.Forms приложения. "
+MS. произв. Xamarin MS. AssetID: F2A02DEE-7137-42F4-9C0A-4E1CF75EA08F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/08/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="controls-reference"></a>Справочник по элементам управления
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/)
@@ -25,7 +11,7 @@ ms.locfileid: "84136400"
 
 Ниже приведены четыре основные группы управления, используемые для создания пользовательского интерфейса Xamarin.Forms приложения.
 
-- [**Страницы**](pages.md)
+- [**Pages**](pages.md)
 - [**Макеты**](layouts.md)
 - [**Представления**](views.md)
 - [**Ячейки**](cells.md)
@@ -43,4 +29,4 @@ Xamarin.FormsСтраница обычно занимает весь экран.
 
 - [Xamarin.FormsПример Формсгаллери](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
 - [Xamarin.FormsУправляет иерархией классов](~/xamarin-forms/internals/class-hierarchy.md)
-- [Документация по API-интерфейсам](https://docs.microsoft.com/dotnet/api/xamarin.forms?view=xamarin-forms)
+- [Документация по API](https://docs.microsoft.com/dotnet/api/xamarin.forms?view=xamarin-forms)

@@ -1,22 +1,8 @@
 ---
-title: Цвета вXamarin.Forms
-description: Xamarin.Formsпредоставляет гибкий класс цветов кросс-платформенного цвета. В этой статье объясняются функциональные возможности, предоставляемые классом Color, и способы их использования.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: a02fe7451702367d85d322b756df4a547a009454
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137349"
+Title: "цвета в Xamarin.Forms " Description: " Xamarin.Forms предоставляет гибкий класс цветов на разных платформах. В этой статье объясняются функциональные возможности, предоставляемые классом Color, и способы их использования. "
+MS. произв. Xamarin MS. AssetID: 22288ABF-57BE-47A9-ACC3-AC604D787C46 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/02/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="colors-in-xamarinforms"></a>Цвета вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithcolors)

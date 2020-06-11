@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsУправляет иерархией классов
-description: Разработчики должны быть знакомы с иерархией типов, используемых для создания пользовательского интерфейса Xamarin.Forms приложения.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 0087e2bb81c7c9204a782519a9eeb9891adc297a
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138647"
+Title: " Xamarin.Forms Управление иерархией классов" Description: "разработчики должны быть знакомы с иерархией типов, используемых для создания пользовательского интерфейса Xamarin.Forms приложения".
+MS. произв. Xamarin MS. AssetID: C89E6B98-464D-4BBE-BF11-13A5FCBBF420 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/07/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-controls-class-hierarchy"></a>Xamarin.FormsУправляет иерархией классов
 
 Xamarin.Formsсостоит из сотен типов, которые находятся в нескольких пространствах имен. Разработчики должны быть знакомы с иерархией типов, используемых для создания пользовательского интерфейса Xamarin.Forms приложения, которое находится в `Xamarin.Forms` пространстве имен.

@@ -1,25 +1,11 @@
 ---
-title: Xamarin.Formsлокальное хранилище данных
-description: Узнайте, как выполнять обработку файлов из общего Xamarin.Forms кода и как считывать и записывать данные в локальную базу данных SQLite с помощью SQLite.NET.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 997a659dd01e410f791af28d1b657055296081c8
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84127118"
+Title: " Xamarin.Forms Локальное хранилище данных" Описание: "Узнайте, как выполнять обработку файлов из общего Xamarin.Forms кода и как считывать и записывать данные в локальную базу данных SQLite с помощью SQLite.NET".
+MS. произв. Xamarin MS. AssetID: A324C247-7DA8-4B14-A813-25F85525E32B MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/27/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-local-data-storage"></a>Xamarin.Formsлокальное хранилище данных
 
-## <a name="files"></a>[Файлы](files.md)
+## <a name="files"></a>[Файла](files.md)
 
 Обработка файлов в Xamarin.Forms среде может быть достигнута с помощью кода в библиотеке .NET Standard или с помощью внедренных ресурсов. В этой статье объясняется, как выполнять обработку файлов из общего кода в Xamarin.Forms приложении.
 

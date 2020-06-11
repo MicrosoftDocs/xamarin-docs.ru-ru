@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d9fa710f5dfc61c2892b8fc409a39b37cf449018
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136309"
+Title: «SkiaSharp Effects» Description:» Узнайте, как изменить нормальное отображение графики с градиентами, мозаичным разбиением на карты, режимами смешения, размытием и другими эффектами».
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: B3E06572-8E2A-49FA-90D1-444C394CD516 Автор: давидбритч MS. author: дабритч MS. Дата: 08/22/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="skiasharp-effects"></a>Эффекты SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

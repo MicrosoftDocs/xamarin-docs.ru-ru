@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsДополнительные понятия & внутренних компонентов
-description: Узнайте о дополнительных концепциях и внутренних компонентах Xamarin.Forms .
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 410aadcb885ed66283eb306cb9aa4c5e764fa8ec
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139039"
+Title: " Xamarin.Forms Дополнительные понятия & внутренним" Описание: "Узнайте о дополнительных понятиях и внутренних компонентах Xamarin.Forms ".
+MS. произв. Xamarin MS. AssetID: 2273a31c-4022-42ba-befe-0d23ce2ff3b5 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/20/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-advanced-concepts--internals"></a>Xamarin.FormsДополнительные понятия & внутренних компонентов
 
 _Узнайте о дополнительных концепциях и внутренних компонентах Xamarin.Forms ._
@@ -37,6 +23,6 @@ Xamarin.Formsэкспериментальные флаги позволяют г
 
 Узнайте о быстрых модулях подготовки отчетов, которые снижают затраты на инфляцию и отрисовку Xamarin.Forms элемента управления в Android путем преобразования итоговой иерархии собственных элементов управления.
 
-## <a name="source-link"></a>[Source Link](sourcelink.md)
+## <a name="source-link"></a>[Ссылка на источник](sourcelink.md)
 
 Узнайте, как выполнить отладку приложения в Xamarin.Forms исходном коде.

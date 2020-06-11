@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как определить собственные пользовательские Xamarin.Forms расширения разметки XAML. Расширение разметки XAML — это класс, реализующий интерфейс Имаркупекстенсион или Имаркупекстенсион <T> .
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 878ebcaa5249261afac2776a9e7cf47c0c047135
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84130537"
+Title: "Создание расширений разметки XAML" Description: "в этой статье объясняется, как определить собственные пользовательские Xamarin.Forms расширения разметки XAML. Расширение разметки XAML — это класс, реализующий интерфейс Имаркупекстенсион или Имаркупекстенсион <T> .
+MS. произв. Xamarin MS. AssetID: 797C1EF9-1C8E-4208-8610-9B79CCF17D46 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/05/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="creating-xaml-markup-extensions"></a>Создание расширений разметки XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
@@ -25,11 +11,11 @@ ms.locfileid: "84130537"
 
 Также можно определить собственные расширения разметки XAML, производные от `IMarkupExtension` или `IMarkupExtension<T>` . Используйте универсальную форму, если расширение разметки получает значение определенного типа. В этом случае есть несколько Xamarin.Forms расширений разметки:
 
-- `TypeExtension`является производным от`IMarkupExtension<Type>`
-- `ArrayExtension`является производным от`IMarkupExtension<Array>`
-- `DynamicResourceExtension`является производным от`IMarkupExtension<DynamicResource>`
-- `BindingExtension`является производным от`IMarkupExtension<BindingBase>`
-- `ConstraintExpression`является производным от`IMarkupExtension<Constraint>`
+- `TypeExtension` происходит от `IMarkupExtension<Type>`.
+- `ArrayExtension` происходит от `IMarkupExtension<Array>`.
+- `DynamicResourceExtension` происходит от `IMarkupExtension<DynamicResource>`.
+- `BindingExtension` происходит от `IMarkupExtension<BindingBase>`.
+- `ConstraintExpression` происходит от `IMarkupExtension<Constraint>`.
 
 Два `IMarkupExtension` интерфейса определяют только один метод, названный `ProvideValue` :
 

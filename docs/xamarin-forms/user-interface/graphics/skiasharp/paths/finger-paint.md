@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как использовать пальцы для рисования на холсте SkiaSharp в Xamarin.Forms приложении и демонстрируется пример кода.
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 61ae651a2402204f69f642235d74d8d641b47988
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139026"
+Title: "Рисование пальца в SkiaSharp" Описание: "в этой статье объясняется, как использовать пальцы для рисования на холсте SkiaSharp в Xamarin.Forms приложении и демонстрируется пример кода".
+MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 56929D74-8F2C-44C6-90E6-3FBABCDC0A4B Автор: давидбритч MS. author: дабритч MS. Дата: 04/05/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="finger-painting-in-skiasharp"></a>Рисование пальцами в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

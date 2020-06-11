@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsКонтакты карт
-description: В этой статье объясняется, как создавать ПИН-коды на Xamarin.Forms карте.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 5e22888291a430863b8e45ee21d359a5acec750f
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138441"
+Title: " Xamarin.Forms Контакты карт" Описание: "в этой статье объясняется, как создавать ПИН-коды на Xamarin.Forms карте".
+MS. произв. Xamarin MS. AssetID: F8FC081B-A811-4FBB-B8F8-30D6FD36BD40 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/23/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-map-pins"></a>Xamarin.FormsКонтакты карт
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)

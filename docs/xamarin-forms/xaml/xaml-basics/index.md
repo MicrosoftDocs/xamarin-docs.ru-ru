@@ -1,23 +1,8 @@
 ---
-title: Xamarin.FormsОсновы XAML
-description: В этом руководство объясняется, как приступить к работе с кросс-платформенным XAML для мобильных устройств. XAML позволяет разработчикам определять пользовательские интерфейсы в Xamarin.Forms приложениях, используя разметку, а не код.
-ms.prod: ''
-ms.custom: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8f5f69038f7d5cfe7ad46f013acb1519c4e9569f
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138623"
+Title: " Xamarin.Forms Основные сведения о XAML" Description: "в этом руководство объясняется, как приступить к работе с кросс-платформенным XAML для мобильных устройств. XAML позволяет разработчикам определять пользовательские интерфейсы в Xamarin.Forms приложениях, используя разметку, а не код. "
+MS. произв. Xamarin MS. Custom: видео MS. AssetID: 67CC2CD6-D10A-4B14-9696-1D3A410EFFBF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 10/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-xaml-basics"></a>Xamarin.FormsОсновы XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)
@@ -52,7 +37,7 @@ XAML — это, по сути, XML, но в языке XAML есть некот
 
 Эти функции *не* являются расширениями XML. XAML является полностью юридическим XML. Но эти функции синтаксиса XAML используют XML уникальным образом. Они подробно обсуждаются в статьях, в которых приводится введение в использование XAML для реализации MVVM.
 
-## <a name="requirements"></a>Требования
+## <a name="requirements"></a>Requirements (Требования)
 
 В этой статье предполагается, что у вас есть опыт работы с Xamarin.Forms . В этой статье также предполагается знание XML, включая понимание использования объявлений пространств имен XML, а также *элементов*терминов, *тегов*и *атрибутов*.
 
@@ -62,7 +47,7 @@ XAML — это, по сути, XML, но в языке XAML есть некот
 
 - [ксамлсамплес](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)
 - [Создание книги для мобильных приложений](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md)
-- [Xamarin.FormsРегистрируют](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
+- [Примеры для Xamarin.Forms](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
 
 ## <a name="related-video"></a>Связанные видео
 

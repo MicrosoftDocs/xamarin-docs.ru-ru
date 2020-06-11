@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsCollectionView выбор
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 39f118d7073fc551923f891681c8c6cf6a4c5ddd
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137388"
+Title: « Xamarin.Forms CollectionView Selection» Description:» по умолчанию выбор CollectionView отключен. Однако можно включить один и несколько элементов.
+MS. произв. Xamarin MS. AssetID: 423D91C7-1E58-4735-9E80-58F11CDFD953 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/06/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-collectionview-selection"></a>Xamarin.FormsCollectionView выбор
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
@@ -310,7 +296,7 @@ namespace CollectionViewDemos.ViewModels
 
 [![Снимок экрана CollectionViewого вертикального списка с пользовательским цветом одного выделения в iOS и Android](selection-images/single-selection-color.png "Вертикальный список CollectionView с пользовательским одним цветом выделения")](selection-images/single-selection-color-large.png#lightbox "Вертикальный список CollectionView с пользовательским одним цветом выделения")
 
-Дополнительные сведения о визуальных состояниях см. в разделе [ Xamarin.Forms Диспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md).
+Дополнительные сведения о визуальных состояниях см. в статье [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md).
 
 ## <a name="disable-selection"></a>Отключить выделение
 
@@ -339,4 +325,4 @@ CollectionView collectionView = new CollectionView
 ## <a name="related-links"></a>Связанные ссылки
 
 - [CollectionView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
-- [Xamarin.FormsДиспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md)
+- [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

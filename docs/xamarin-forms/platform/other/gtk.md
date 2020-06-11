@@ -52,7 +52,7 @@ GTK # для macOS и Linux устанавливаются как часть [Mo
 
     ![Ссылка на общий проект](gtk-images/win/reference-shared-project.png "Ссылка на общий проект")
 
-8. В диалоговом окне **Диспетчер ссылок** нажмите кнопку **Обзор** и перейдите в папку **C:\Program Files (x86) \GtkSharp\2.12\lib** и выберите файл **АТК-Шарп. dll**, **ГДК-Шарп. dll**, **гладе-Шарп. dll**, **Глиб-Шарп. dll**, **ГТК-дотнет. dll**, **ГТК-Шарп. dll** .
+8. В диалоговом окне **Диспетчер ссылок** нажмите кнопку **Обзор** и перейдите в папку **C:\Program Files (x86) \GtkSharp\2.12\lib** и выберите **atk-sharp.dll**, **gdk-sharp.dll**, **glade-sharp.dll**, **glib-sharp.dll**, **gtk-dotnet.dll**и **gtk-sharp.dll** файлов.
 
     ![Ссылки на библиотеки GTK #](gtk-images/win/reference-gtk-libraries.png "Ссылки на библиотеки GTK #")
 
@@ -164,7 +164,7 @@ GTK # для macOS и Linux устанавливаются как часть [Mo
 
 -----
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
 
 ### <a name="platform-specifics"></a>Особенности платформы
 

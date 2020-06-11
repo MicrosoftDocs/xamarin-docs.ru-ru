@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как использовать API службы распознавания речи Azure для транскрипция речи в текст в Xamarin.Forms приложении.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 171ecc02fda304135e5f535c3e798067595d7047
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139325"
+Title: "распознавание речи с помощью API службы распознавания речи" Описание: "в этой статье объясняется, как использовать API службы распознавания речи Azure для транскрипция речи в текст в Xamarin.Forms приложении".
+MS. произв. Xamarin MS. AssetID: B435FF6B-8785-48D9-B2D9-1893F5A87EA1 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 01/14/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="speech-recognition-using-azure-speech-service"></a>Распознавание речи с помощью служб речи Azure
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-cognitivespeechservice)
@@ -347,7 +333,7 @@ public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompa
 
 `MainActivity`Класс определяет статическую ссылку с именем `Instance` , которая необходима `AndroidMicrophoneService` объекту при запросе разрешений. Он переопределяет `OnRequestPermissionsResult` метод для обновления `AndroidMicrophoneService` объекта при утверждении или отклонении запроса разрешений пользователем.
 
-Наконец, приложение Android должно включать разрешение на запись звука в файл **AndroidManifest. XML** :
+Наконец, приложение Android должно включать разрешение на запись звука в файл **AndroidManifest.xml** :
 
 ```xml
 <manifest ...>

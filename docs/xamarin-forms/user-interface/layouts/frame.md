@@ -1,21 +1,6 @@
 ---
-title: Xamarin.FormsNOFRAMES
-description: Xamarin.FormsКласс Frame — это макет, используемый для создания оболочки представления или макета с границей, которая может быть настроена с помощью цвета, тени и других параметров.
-ms.prod: ''
-ms.assetId: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 42192111befbefda7e0f62b7691a8392c2828818
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137193"
+Title: " Xamarin.Forms кадр" Description: " Xamarin.Forms класс Frame является макетом, используемым для создания оболочки представления или макета с границей, для которой можно настроить цвет, тень и другие параметры".
+MS. произв. Xamarin MS. assetId: 4E074714-0928-41C8-A468-B60E23236A8C MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 08/06/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
 # <a name="xamarinforms-frame"></a>Xamarin.FormsNOFRAMES
 
@@ -189,7 +174,7 @@ Frame circleImageFrame = new Frame
 };
 ```
 
-Образ **туризм. jpg** должен быть добавлен в каждый проект платформы, и как это достигается в зависимости от платформы. Дополнительные сведения см. [в разделе изображения Xamarin.Forms в ](~/xamarin-forms/user-interface/images.md).
+Образ **outdoors.jpg** должен быть добавлен в каждый проект платформы, и как это достигается в зависимости от платформы. Дополнительные сведения см. [в разделе изображения Xamarin.Forms в ](~/xamarin-forms/user-interface/images.md).
 
 > [!NOTE]
 > Скругленные углы ведут себя немного иначе на разных платформах. `Image`Объект `Margin` должен быть половиной разницы между шириной изображения и шириной родительского фрейма и должен быть отрицательным для центрирования изображения равномерно в пределах `Frame` объекта. Однако запрошенные ширина и высота не гарантированы, поэтому `Margin` `HeightRequest` `WidthRequest` Свойства и могут потребоваться изменить в зависимости от размера изображения и других вариантов макета.

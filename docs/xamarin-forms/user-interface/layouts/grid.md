@@ -1,22 +1,8 @@
 ---
-title: Xamarin.FormsСетки
-description: Xamarin.FormsСетка представляет собой макет, который упорядочивает дочерние элементы по строкам и столбцам ячеек.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: c4e63d6c1701d9eb247ecb7c52188e5dbc045934
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138077"
+Title: « Xamarin.Forms Grid» Description: « Xamarin.Forms Сетка — это макет, который упорядочивает дочерние элементы по строкам и столбцам ячеек».
+MS. произв. Xamarin MS. AssetID: 762B1802-D185-494C-B643-74EED55882FE MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/15/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
 ---
+
 # <a name="xamarinforms-grid"></a>Xamarin.FormsСетки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-griddemos)
