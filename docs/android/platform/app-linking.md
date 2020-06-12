@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/16/2018
-ms.openlocfilehash: af90c286d2bb960a9f78547dd15c3d98a69529ae
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: bdcefd6a1b0192dc337afd5b5a5535a20eeaef9e
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "75487832"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571393"
 ---
 # <a name="app-linking-in-android"></a>Связывание приложений в Android
 
@@ -49,7 +49,7 @@ Android 6.0 улучшает этот механизм, применяя авт
 1. **Добавление одного или нескольких фильтров намерений для URI веб-сайта** — фильтр намерений позволяет Android понять, как обрабатывать щелчок по ссылке в мобильном браузере.
 2. **Публикация *JSON-файла ссылок на цифровые ресурсы* на веб-сайте** — это файл, который загружается на веб-сайт и используется платформой Android для проверки взаимосвязи между мобильным приложением и домена этого веб-сайта. Без этой проверки Android не будет устанавливать приложение как обработчик по умолчанию для URI, и пользователю придется выполнить это вручную.
 
-<a name="configure-intent-filter" />
+<a name="configure-intent-filter"></a>
 
 ### <a name="configuring-the-intent-filter"></a>Настройка фильтра намерений
 

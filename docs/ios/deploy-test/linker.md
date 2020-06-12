@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/24/2017
-ms.openlocfilehash: 284705973f9c0ec606572170f7e927ed4745ddd1
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 263c48c5006ba0060756e1050497c38dfb7c8eae
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73030226"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84567779"
 ---
 # <a name="linking-xamarinios-apps"></a>Компоновка приложений Xamarin.iOS
 
@@ -22,7 +22,7 @@ ms.locfileid: "73030226"
 
 Компоновщик является статическим инструментом и не может отслеживать типы и методы включения, которые вызываются через отражение или создаются динамически. Есть несколько способов для обхода этого ограничения.
 
-<a name="Linker_Behavior" />
+<a name="Linker_Behavior"></a>
 
 ## <a name="linker-behavior"></a>Поведение компоновщика
 
@@ -56,7 +56,7 @@ ms.locfileid: "73030226"
 
 Этот вариант соответствует параметру *-nolink* при запуске средства mtouch из командной строки.
 
-<a name="Link_SDK_assemblies_only" />
+<a name="Link_SDK_assemblies_only"></a>
 
 ### <a name="link-sdk-assemblies-only"></a>Компоновать только сборки пакета SDK
 
@@ -66,7 +66,7 @@ ms.locfileid: "73030226"
 
 Этот вариант соответствует параметру *-linksdk* при запуске средства mtouch из командной строки.
 
-<a name="Link_all_assemblies" />
+<a name="Link_all_assemblies"></a>
 
 ### <a name="link-all-assemblies"></a>Компоновать все сборки
 
@@ -74,13 +74,13 @@ ms.locfileid: "73030226"
 
 Этот вариант соответствует параметру *-linkall* при запуске средства **mtouch** из командной строки.
 
-<a name="Controlling_the_Linker" />
+<a name="Controlling_the_Linker"></a>
 
 ## <a name="controlling-the-linker"></a>Управление поведением компоновщика
 
 Если вы используете компоновщик, иногда он может удалять код, вызываемый динамически или неявно. Чтобы предотвратить это, для компоновщика предусмотрено несколько функций и параметров, которые управляют его поведением.
 
-<a name="Preserving_Code" />
+<a name="Preserving_Code"></a>
 
 ### <a name="preserving-code"></a>Сохранение кода
 
@@ -108,7 +108,7 @@ public sealed class PreserveAttribute : System.Attribute {
 
 Не имеет особого значения, в каком пространстве имен он определяется, так как компоновщик ищет этот атрибут по имени типа.
 
- <a name="Skipping_Assemblies" />
+ <a name="Skipping_Assemblies"></a>
 
 ### <a name="skipping-assemblies"></a>Пропуск сборок
 
@@ -130,7 +130,7 @@ public sealed class PreserveAttribute : System.Attribute {
 
 Для этого параметра нет пользовательского интерфейса. Но его можно указать в диалоговом окне параметров проекта в Visual Studio для Mac или на панели свойств проекта в Visual Studio, используя специальное текстовое поле **Дополнительные аргументы mtouch**. (Например: *--linkskip = mscorlib* исключает из компоновки mscorlib.dll, но не влияет на обработку других сборок в решении.)
 
-<a name="Disabling_Link_Away" />
+<a name="Disabling_Link_Away"></a>
 
 ### <a name="disabling-link-away"></a>Отключение удаления при компоновке
 

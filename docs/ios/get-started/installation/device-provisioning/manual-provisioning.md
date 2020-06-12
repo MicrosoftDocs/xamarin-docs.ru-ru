@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/06/2020
-ms.openlocfilehash: 04cb1b9303e571b2a10cdfa621dcd312162e2893
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 9333750432395d008a5454e293648f4e594ae112
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303753"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571692"
 ---
 # <a name="manual-provisioning-for-xamarinios"></a>Ручная подготовка для Xamarin.iOS
 
@@ -51,13 +51,13 @@ _Установив Xamarin.iOS для разработки приложений
 > [!WARNING]
 > Потеря сертификата и связанных с ним ключей может надолго остановить работу, так как потребуется отозвать существующие сертификаты и повторно подготовить все связанные устройства, включая зарегистрированные для специального развертывания. Успешно настроив сертификаты разработки, экспортируйте резервную копию и сохраните ее в надежном месте. Дополнительные сведения о выполнении этой задачи см. в разделе "Exporting and Importing Certificates and Profiles" (Экспорт и импорт сертификатов и профилей) руководства [Maintaining Certificates](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) (Обслуживание сертификатов) в документации Apple.
 
-<a name="provisioning" />
+<a name="provisioning"></a>
 
 ## <a name="provision-an-ios-device-for-development"></a>Подготовка устройства iOS к разработке
 
 Создав удостоверение в Apple и получив сертификат разработки, необходимо настроить профиль подготовки и требуемые сущности, чтобы получить возможность развертывать приложение на устройстве Apple. На устройстве должна быть версия iOS, поддерживаемая Xcode. Может потребоваться обновить устройство, среду Xcode или и то, и другое.
 
-<a name="adddevice" />
+<a name="adddevice"></a>
 
 ## <a name="add-a-device"></a>Добавление устройства
 
@@ -83,7 +83,7 @@ _Установив Xamarin.iOS для разработки приложений
 
 Повторите описанные выше действия для всех устройств iOS, которые будут использоваться для тестирования или отладки приложения Xamarin.iOS.
 
-<a name="provisioningprofile" />
+<a name="provisioningprofile"></a>
 
 ## <a name="create-a-development-provisioning-profile"></a>Создание профиля подготовки для разработки
 
@@ -122,7 +122,7 @@ _Установив Xamarin.iOS для разработки приложений
 
 7. При необходимости можно нажать **Загрузить** на следующей странице, чтобы загрузить профиль подготовки на компьютер Mac.
 
-<a name="download" />
+<a name="download"></a>
 
 ## <a name="download-provisioning-profiles-in-visual-studio"></a>Загрузка профилей подготовки в Visual Studio.
 

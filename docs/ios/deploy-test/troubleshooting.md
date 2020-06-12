@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/23/2017
-ms.openlocfilehash: 1c8eddcf16c8513852c21babf34d81c9a3290406
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: b27608642ed04216b10767d37d26699a0aef7f3e
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73028440"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84573772"
 ---
 # <a name="xamarinios-testing-and-deployment---troubleshooting"></a>Развертывание и тестирование Xamarin.iOS — устранение неполадок
 
@@ -60,7 +60,7 @@ ms.locfileid: "73028440"
 
 - На рассмотрение можно предоставлять только две сборки в день. Поскольку изменение версии требует повторной проверки, номера версий можно менять только два раза в день.
 
-<a name="Automatically_copy_app_bundles_back_to_Windows" />
+<a name="Automatically_copy_app_bundles_back_to_Windows"></a>
 
 ## <a name="automatically-copy-app-bundles-back-to-windows"></a>Автоматическое обратное копирование пакетов приложений в Windows
 

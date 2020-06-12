@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/05/2017
-ms.openlocfilehash: 2a0f9d063b319c0f412f6e8f47a59f0f994678ae
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 154cb6004bad5a12c98a22fa7522a9cc7a7c757a
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73026288"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84567480"
 ---
 # <a name="using-mtouch-to-bundle-xamarinios-apps"></a>Использование mtouch для объединения приложений Xamarin.iOS в пакет
 
@@ -67,7 +67,7 @@ $ mtouch -dev -c "iPhone Developer: Miguel de Icaza" foo.exe
 
 В данном случае мы используем сертификат "iPhone Developer: Miguel de Icaza" для подписывания приложения. Это очень важный шаг, без него физические устройства не будут загружать приложение.
 
- <a name="Running_your_Application" />
+ <a name="Running_your_Application"></a>
 
 ## <a name="running-your-application"></a>Запуск приложения
 

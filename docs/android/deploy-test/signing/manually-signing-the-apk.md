@@ -6,12 +6,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/16/2018
-ms.openlocfilehash: 2d84d149b2eb4194de35fabc69cf44af99c04d25
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 5dee7e18b7f9f47493293bc552cd4f44da56ceec
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76724130"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571432"
 ---
 # <a name="manually-signing-the-apk"></a>Подписывание пакета APK вручную
 
@@ -120,7 +120,7 @@ $ apksigner sign --ks xample.keystore --ks-key-alias publishingdoc mono.samples.
 > [!NOTE]
 > Согласно [проблеме Google 62696222](https://issuetracker.google.com/issues/62696222), средство **apksigner** "отсутствует" в пакете SDK для Android. Решением этой проблемы является установка средств сборки пакета SDK для Android v25.0.3 и использование этой версии **apksigner**.  
 
-<a name="Sign_the_APK_with_jarsigner" />
+<a name="Sign_the_APK_with_jarsigner"></a>
 
 ### <a name="sign-the-apk-with-jarsigner"></a>Подписывание пакета APK с помощью jarsigner
 

@@ -9,12 +9,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: 10a46c916654f8421dc5a9af93de3abbbae5e934
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 2f8c6a80b00a4a91c40c70af05ac0ebe18daaed3
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303549"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571445"
 ---
 # <a name="hello-android-deep-dive"></a>Знакомство с Android. Глубокое погружение
 
@@ -76,7 +76,7 @@ Visual Studio для Mac — это бесплатная интегрирова
 
 ::: zone-end
 
-<a name="anatomy" />
+<a name="anatomy"></a>
 
 ## <a name="anatomy-of-a-xamarinandroid-application"></a>Устройство приложения Xamarin.Android
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 9b9db3e6ae081a02d2b2297e70c216015dceade6
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 854fecd7945c1090b475b3571678388b8e1cf127
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73026550"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84573239"
 ---
 # <a name="in-house-distribution-for-xamarinios-apps"></a>Внутреннее распространение для приложений Xamarin.iOS
 
@@ -31,13 +31,13 @@ _Этот документ содержит краткий обзор распр
 
 Все приложения по-прежнему должны быть подписаны Apple.
 
-<a name="testing" />
+<a name="testing"></a>
 
 ## <a name="testing-your-application"></a>Тестирование приложения
 
 Тестирование приложения осуществляется с помощью прямого распространения. Для получения дополнительных сведений о тестировании см. в руководстве по [прямому распространению](~/ios/deploy-test/app-distribution/ad-hoc-distribution.md). Имейте в виду, что в тестировании может принимать участие не больше 100 устройств.
 
-<a name="setup" />
+<a name="setup"></a>
 
 ## <a name="getting-set-up-for-distribution"></a>Настройка для распространения
 
@@ -47,7 +47,7 @@ _Этот документ содержит краткий обзор распр
 
 Важно отметить, что сертификаты с истекшим сроком действия невозможно обновить, вместо этого потребуется заменить такой сертификат новым, как описано [ниже](#certificate).
 
-<a name="certificate" />
+<a name="certificate"></a>
 
 ## <a name="creating-a-distribution-certificate"></a>Создание сертификата распространения
 
@@ -84,11 +84,11 @@ _Этот документ содержит краткий обзор распр
 
    [![](in-house-distribution-images/selectcert.png "Select iOS App Store")](in-house-distribution-images/selectcert.png#lightbox)
 
-<a name="profile" />
+<a name="profile"></a>
 
 ## <a name="creating-a-distribution-provisioning-profile"></a>Создание профиля подготовки распространения
 
-<a name="appid" />
+<a name="appid"></a>
 
 ### <a name="creating-an-app-id"></a>Создание идентификатора приложения
 
@@ -134,7 +134,7 @@ _Этот документ содержит краткий обзор распр
 
 -----
 
-<a name="inhouse" />
+<a name="inhouse"></a>
 
 ## <a name="distributing-your-app-in-house"></a>Распространение приложения внутри организации
 

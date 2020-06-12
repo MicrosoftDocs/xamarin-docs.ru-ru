@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/13/2018
-ms.openlocfilehash: b9c6694ea49607b839a3658e5cc8bac5fb529c85
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: eed18890c185ccd35d728176348c9fac481407e1
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "75728061"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571406"
 ---
 # <a name="xamarin-for-java-developers"></a>Xamarin для разработчиков Java
 
@@ -86,7 +86,7 @@ C# предоставляет ряд основных функций Xamarin.And
 >
 > Некоторые функции, упомянутые на этой странице (например, ключевое слово C# `var`), доступны в более новых версиях Java (например, [`var` в Java 10](https://developer.oracle.com/java/jdk-10-local-variable-type-inference.html)), но по-прежнему недоступны разработчикам Android.
 
-<a name="fundamentals" />
+<a name="fundamentals"></a>
 
 ## <a name="going-from-java-to-c-development"></a>Переход от разработки на Java к разработке на C#
 
@@ -155,7 +155,7 @@ TextView label = FindViewById<TextView> (Resource.Id.Label);
 Дополнительные сведения об универсальных шаблонах см. в статье [Универсальные шаблоны](https://docs.microsoft.com/dotnet/csharp/programming-guide/generics/index).
 Обратите внимание, что в поддержке Xamarin.Android есть некоторые ограничения для универсальных классов C#. Дополнительные сведения см. в [этом](~/android/internals/limitations.md) разделе.
 
-<a name="oopfeatures" />
+<a name="oopfeatures"></a>
 
 ## <a name="object-oriented-programming-features"></a>Функции объектно-ориентированного программирования
 
@@ -293,7 +293,7 @@ Java и C# поддерживают *полиморфизм* — способн�
 
 Дополнительные сведения о поддержке полиморфизма в C# см. в статье [Полиморфизм](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/polymorphism).
 
-<a name="lambdas" />
+<a name="lambdas"></a>
 
 ## <a name="lambda-expressions"></a>Лямбда-выражения
 
@@ -323,7 +323,7 @@ button.Click += (sender, args) => {
 
 Дополнительные сведения о лямбда-выражениях C# см. в статье [Лямбда-выражения](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions).
 
-<a name="events" />
+<a name="events"></a>
 
 ## <a name="event-handling"></a>Обработка событий
 
@@ -371,7 +371,7 @@ startActivityButton.Click += (sender, e) => {
 
 Как правило, лямбда-выражения используются для объявления обработчиков событий в коде Xamarin.Android. Этот простой способ объявления обработчиков событий может показаться сначала непонятным, но он сокращает время написания и чтения кода. С постоянной практикой вы привыкнете распознавать этот шаблон (который часто встречается в коде Xamarin.Android), сможете уделить больше времени бизнес-логике своего приложения и сократить время изучения синтаксических операций.
 
-<a name="async" />
+<a name="async"></a>
 
 ## <a name="asynchronous-programming"></a>Асинхронное программирование
 
@@ -406,7 +406,7 @@ async void downloadAsync(object sender, System.EventArgs e)
 Обзор `async`/`await` в C# см. в статье [Асинхронное программирование с использованием ключевых слов async и await](https://docs.microsoft.com/dotnet/csharp/async).
 Дополнительные сведения о поддержке в Xamarin функций асинхронного программирования см. в [этой](~/cross-platform/platform/async.md) статье.
 
-<a name="keywords" />
+<a name="keywords"></a>
 
 ## <a name="keyword-differences"></a>Различия в ключевых словах
 
@@ -454,7 +454,7 @@ async void downloadAsync(object sender, System.EventArgs e)
 |[value](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/value)|Ссылается на значение, которое код клиента должен присвоить свойству.|
 |[virtual](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/virtual)|Позволяет переопределить метод в производном классе.|
 
-<a name="interop" />
+<a name="interop"></a>
 
 ## <a name="interoperating-with-existing-java-code"></a>Взаимодействие с имеющимся кодом Java
 

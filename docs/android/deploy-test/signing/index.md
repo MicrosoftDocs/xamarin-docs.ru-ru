@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 07/02/2018
-ms.openlocfilehash: b646893d8bbe63aa537c973c90552e0367735e47
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: c6a606bf326d1e59398ab77c51b1de5ed3e497e0
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303513"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571536"
 ---
 # <a name="signing-the-android-application-package"></a>Подписывание пакета приложения для Android
 
@@ -32,9 +32,9 @@ ms.locfileid: "79303513"
 
 -----
 
-<a name="newcertvs" />
-<a name="newcert" />
-<a name="newcertxs" />
+<a name="newcertvs"></a>
+<a name="newcert"></a>
+<a name="newcertxs"></a>
 
 ## <a name="create-a-new-certificate"></a>Создание нового сертификата
 

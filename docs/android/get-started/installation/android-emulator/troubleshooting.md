@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 08/27/2018
-ms.openlocfilehash: d73c72fa70a22bacf122f5c3957b789914dfd765
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: ff68666d9f0385b159b9ac9908ff997f53715308
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303555"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571939"
 ---
 # <a name="android-emulator-troubleshooting"></a>Устранение неполадок в Android Emulator
 
@@ -52,7 +52,7 @@ _В этой статье описаны наиболее типичные ош�
 
 Если появляется сообщение **Произошла ошибка доступа к MMIO**, перезапустите эмулятор.
 
-<a name="gps-win" />
+<a name="gps-win"></a>
 
 ## <a name="missing-google-play-services"></a>Отсутствующие сервисы Google Play
 
@@ -68,7 +68,7 @@ _В этой статье описаны наиболее типичные ош�
 > [!NOTE]
 > Образы Google Play Маркет доступны только для некоторых типов базовых устройств, например Pixel, Pixel 2, Nexus 5 и Nexus 5X.
 
-<a name="perf-win" />
+<a name="perf-win"></a>
 
 ## <a name="performance-issues"></a>Проблемы производительности
 
@@ -94,7 +94,7 @@ _В этой статье описаны наиболее типичные ош�
 
 [![Выбор образа системы на базе x86 для виртуального устройства](troubleshooting-images/win/02-x86-virtual-device-w158-sml.png)](troubleshooting-images/win/02-x86-virtual-device-w158.png#lightbox)
 
-<a name="accel-issues-win" />
+<a name="accel-issues-win"></a>
 
 ## <a name="hardware-acceleration-issues"></a>Проблемы с аппаратным ускорением
 
@@ -224,7 +224,7 @@ SERVICE_NAME: intelhaxm
 
 Если параметр `STATE` не равен `RUNNING`, то для решения этой проблемы см. раздел [Использование Intel Hardware Accelerated Execution Manager](https://software.intel.com/android/articles/how-to-use-the-intel-hardware-accelerated-execution-manager-intel-haxm-android-emulator).
 
-<a name="virt-conflicts" />
+<a name="virt-conflicts"></a>
 
 #### <a name="haxm-virtualization-conflicts"></a>Конфликты HAXM с другими технологиями виртуализации
 
@@ -244,7 +244,7 @@ HAXM может конфликтовать с другими технологи�
 
 Для исправления этой ошибки перезагрузите компьютер в BIOS, включите VT-x и SLAT (трансляция адресов второго уровня) и перезагрузите компьютер обратно в Windows.
 
-<a name="disable-hyperv" />
+<a name="disable-hyperv"></a>
 
 #### <a name="disabling-hyper-v"></a>Отключение Hyper-V
 
@@ -268,7 +268,7 @@ Intel HAXM и Microsoft Hyper-V не могут быть активны одно
 
 В некоторых случаях выполнение описываемых выше действий не позволяет отключить технологию Hyper-V, если включены функции Device Guard и Credential Guard. Если вам не удается отключить Hyper-V (или по всем признакам эта технология отключена, но установка HAXM все равно завершается сбоем), отключите функции Device Guard и Credential Guard, выполнив действия, описываемые в следующем разделе.
 
-<a name="disable-devguard" />
+<a name="disable-devguard"></a>
 
 #### <a name="disabling-device-guard"></a>Отключение функции Device Guard
 
@@ -388,7 +388,7 @@ Component Intel x86 Emulator Accelerator (HAXM installer) r6.2.1 [Extra: (Intel 
 
 Если появляется сообщение **Произошла ошибка доступа к MMIO**, перезапустите эмулятор.
 
-<a name="gps-mac" />
+<a name="gps-mac"></a>
 
 ## <a name="missing-google-play-services"></a>Отсутствующие сервисы Google Play
 
@@ -404,7 +404,7 @@ Component Intel x86 Emulator Accelerator (HAXM installer) r6.2.1 [Extra: (Intel 
 > [!NOTE]
 > Образы Google Play Маркет доступны только для некоторых типов базовых устройств, например Pixel, Pixel 2, Nexus 5 и Nexus 5X.
 
-<a name="perf-mac" />
+<a name="perf-mac"></a>
 
 ## <a name="performance-issues"></a>Проблемы производительности
 
@@ -426,13 +426,13 @@ Component Intel x86 Emulator Accelerator (HAXM installer) r6.2.1 [Extra: (Intel 
 
 [![Выбор образа системы на базе x86 для виртуального устройства](troubleshooting-images/mac/02-x86-virtual-device-m75-sml.png)](troubleshooting-images/mac/02-x86-virtual-device-m75.png#lightbox)
 
-<a name="accel-issues-mac" />
+<a name="accel-issues-mac"></a>
 
 ## <a name="hardware-acceleration-issues"></a>Проблемы с аппаратным ускорением
 
 При использовании платформы гипервизора или HAXM для аппаратного ускорения эмулятора вы можете столкнуться с проблемами, вызванными неправильной установкой или устаревшей версией macOS. Следующие разделы помогут вам устранить эту проблему.
 
-<a name="hypervisor-issues" />
+<a name="hypervisor-issues"></a>
 
 ### <a name="hypervisor-framework-issues"></a>Проблемы с платформой гипервизора
 

@@ -8,12 +8,12 @@ author: davidortinau
 ms.author: daortin
 ms.custom: video
 ms.date: 01/22/2019
-ms.openlocfilehash: b0eb471bd41bb38d62ced38ed66cfa0dfee37bbf
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 58a7b6af2b21d2ca2106f78b833ff846c9daa7ac
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73023422"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84572615"
 ---
 # <a name="wireless-deployment-for-xamarinios-and-tvos-apps"></a>Беспроводное развертывание для приложений Xamarin.iOS и tvOS
 
@@ -53,7 +53,7 @@ ms.locfileid: "73023422"
 
 Процесс связывания выполняется только один раз для каждого устройства. Xcode сохраняет все параметры подключения.
 
-<a name="pair" />
+<a name="pair"></a>
 
 ### <a name="pairing-an-ios-device-with-xcode"></a>Подключение устройства iOS к Xcode
 

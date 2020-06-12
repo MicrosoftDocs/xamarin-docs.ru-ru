@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 06/22/2018
-ms.openlocfilehash: 0caea0c31275a7459286c143cc92ca90731dd93b
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 20e75914699a60496860d906c74046f9057dd78f
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303579"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84568286"
 ---
 # <a name="windows-installation"></a>Установка в Windows
 
@@ -85,7 +85,7 @@ Android использует несколько параметров уровн�
 > [!NOTE]
 > В версиях Windows до Windows 10 с обновлением за апрель 2018 г. HAXM не совместим с Hyper-V. В этом случае необходимо [отключить Hyper-V](~/android/get-started/installation/android-emulator/troubleshooting.md#disable-hyperv) или использовать более медленные образы эмулятора без оптимизации для x86.
 
-<a name="device" />
+<a name="device"></a>
 
 ### <a name="android-device"></a>Устройство Android
 

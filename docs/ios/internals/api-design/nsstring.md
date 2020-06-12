@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: f744f4ed5619e4e7f4a9d85897c4451bf7e5b9bc
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 314c94fc9208a63e2f9305511df262327df921a5
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73022352"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84565074"
 ---
 # <a name="nsstring-in-xamarinios-and-xamarinmac"></a>NSString в Xamarin.iOS и Xamarin.Mac
 
@@ -38,7 +38,7 @@ class UILabel {
 
 Существует несколько сторонних API Objective-C, которые используют не `NSString`, а строку C ("*char*"). В таких случаях вы по-прежнему сможете использовать строковый тип данных C#, однако также понадобиться атрибут [[PlainString]](~/cross-platform/macios/binding/objective-c-libraries.md), чтобы сообщить генератору привязки, что эта строка должна упаковываться не как `NSString`, а как строка C.
 
- <a name="Exceptions_to_the_Rule" />
+ <a name="Exceptions_to_the_Rule"></a>
 
 ## <a name="exceptions-to-the-rule"></a>Исключения из правил
 

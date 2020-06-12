@@ -41,8 +41,8 @@ ms.assetid: 3D95371E-5D59-440E-8D31-F3C04E493DC1 author: redth ms.author: jodick
 const string CALLBACK_SCHEME = "myapp";
 
 [Activity(NoHistory = true, LaunchMode = LaunchMode.SingleTop)]
-[IntentFilter(new[] { Intent.ActionView },
-    Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
+[IntentFilter(new[] { Android.Content.Intent.ActionView },
+    Categories = new[] { Android.Content.Intent.CategoryDefault, Android.Content.Intent.CategoryBrowsable },
     DataScheme = CALLBACK_SCHEME)]
 public class WebAuthenticationCallbackActivity : Xamarin.Essentials.WebAuthenticatorCallbackActivity
 {

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/23/2017
-ms.openlocfilehash: 73c4e992fae1a2d525670604d98f277fe4fde794
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: ee8ff58566732c6a86a339d3080c7243be4b4a4e
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303603"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84572199"
 ---
 # <a name="app-store-distribution"></a>Распространение через App Store
 
@@ -30,7 +30,7 @@ ms.locfileid: "79303603"
 > [!IMPORTANT]
 > Для использования iTunes Connect и, соответственно, публикации приложения в App Store вам **нужно** участвовать в программе для разработчиков Apple в индивидуальном порядке или в составе организации. Вы не сможете выполнить следующие шаги на этой странице, если являетесь участником программы для разработчиков Apple Developer **Enterprise** Program.
 
-<a name="provisioning" />
+<a name="provisioning"></a>
 
 ## <a name="provisioning-an-app-for-app-store-distribution"></a>Подготовка приложения для распространения через App Store
 
@@ -44,7 +44,7 @@ ms.locfileid: "79303603"
 > [!NOTE]
 > Создавать сертификаты распространения и профили подготовки могут только агенты команды и администраторы.
 
-<a name="creatingcertificate" />
+<a name="creatingcertificate"></a>
 
 ## <a name="creating-a-distribution-certificate"></a>Создание сертификата распространения
 
@@ -73,11 +73,11 @@ ms.locfileid: "79303603"
 
 3. В зависимости от привилегий вашей команды будет создано удостоверение подписывания, как показано ниже, или вам придется ждать, пока администратор или агент команды утвердит его: [![](images/generated.png "Создание удостоверения подписывания и отображение диалогового окна")](images/generated.png#lightbox)
 
-<a name="creatingprofile" />
+<a name="creatingprofile"></a>
 
 ## <a name="creating-a-distribution-profile"></a>Создание профиля распространения
 
-<a name="creatingappid" />
+<a name="creatingappid"></a>
 
 ### <a name="creating-an-app-id"></a>Создание идентификатора приложения
 
@@ -131,7 +131,7 @@ ms.locfileid: "79303603"
 
 -----
 
-<a name="selectprofile" />
+<a name="selectprofile"></a>
 
 ## <a name="selecting-a-distribution-profile-in-a-xamarinios-project"></a>Выбор профиля распространения в проекте Xamarin.iOS
 
@@ -171,7 +171,7 @@ ms.locfileid: "79303603"
 
 -----
 
-<a name="itunesconnect" />
+<a name="itunesconnect"></a>
 
 ## <a name="configuring-your-application-in-itunes-connect"></a>Настройка приложения в iTunes Connect
 
@@ -181,7 +181,7 @@ ms.locfileid: "79303603"
 
 Дополнительные сведения см. в нашей документации по [настройке приложений в iTunes Connect](~/ios/deploy-test/app-distribution/app-store-distribution/itunesconnect.md).
 
-<a name="submitting" />
+<a name="submitting"></a>
 
 ## <a name="submitting-an-app-to-itunes-connect"></a>Отправка приложения в iTunes Connect
 
@@ -189,7 +189,7 @@ ms.locfileid: "79303603"
 
 Дополнительные сведения о публикации приложений в App Store см. в разделе [Публикация в App Store](~/ios/deploy-test/app-distribution/app-store-distribution/publishing-to-the-app-store.md).
 
-<a name="windows" />
+<a name="windows"></a>
 
 ## <a name="automatically-copy-app-bundles-back-to-windows"></a>Автоматическое обратное копирование пакетов приложений в Windows
 

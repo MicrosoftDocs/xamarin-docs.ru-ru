@@ -6,12 +6,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2018
-ms.openlocfilehash: 5f0b72772a386aa71d4ceec25b88546930b06f4f
-ms.sourcegitcommit: 51006a4eed7bf99b563df6fc1cea9074d0218448
+ms.openlocfilehash: 2676565a62b4b9d4414e9a69737b287bcc992c0b
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82166343"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84572017"
 ---
 # <a name="preparing-an-application-for-release"></a>Подготовка приложения к выпуску
 
@@ -35,7 +35,7 @@ ms.locfileid: "82166343"
 
 Далее эти действия описываются более подробно.
 
-<a name="Specify_the_Application_Icon" />
+<a name="Specify_the_Application_Icon"></a>
 
 ## <a name="specify-the-application-icon"></a>Указание значка приложения
 
@@ -65,7 +65,7 @@ ms.locfileid: "82166343"
 
 Как правило, `using Android.App` объявляется в верхней части **AssemblyInfo.cs** (для пространства имен атрибута `Android.App` задается значение `Application`). Но, возможно, потребуется добавить инструкцию `using`, если ее еще нет.
 
-<a name="Versioning" />
+<a name="Versioning"></a>
 
 ## <a name="version-the-application"></a>Настройка управления версиями приложения
 
@@ -89,7 +89,7 @@ ms.locfileid: "82166343"
 
 -----
 
-<a name="shrink_apk" />
+<a name="shrink_apk"></a>
 
 ## <a name="shrink-the-apk"></a>Сокращение объема пакета APK
 
@@ -158,11 +158,11 @@ ProGuard не является альтернативой компоновщик
 
 Дополнительные сведения об использовании средства ProGuard см. в разделе [ProGuard](~/android/deploy-test/release-prep/proguard.md).
 
-<a name="protect_app" />
+<a name="protect_app"></a>
 
 ## <a name="protect-the-application"></a>Защита приложения
 
-<a name="Disable_Debugging" />
+<a name="Disable_Debugging"></a>
 
 ### <a name="disable-debugging"></a>Выключение отладки
 
@@ -183,7 +183,7 @@ ProGuard не является альтернативой компоновщик
 
 Обратите внимание, что сборки отладки автоматически задают некоторые разрешения для упрощения отладки (например, **Internet** и **ReadExternalStorage**). Однако сборки выпуска используют только разрешения, настроенные явным образом. Если обнаружится, что при переключении на сборку выпуска приложение теряет разрешение, которое было доступно в сборке отладки, убедитесь, что это разрешение включено явным образом в списке **Необходимые разрешения**, как описано в разделе [Разрешения](~/android/app-fundamentals/permissions.md). 
 
-<a name="dotfuscator" id="dotfuscator" />
+<a name="dotfuscator" id="dotfuscator"></a>
 
 ### <a name="application-protection-with-dotfuscator"></a>Защита приложений с использованием Dotfuscator
 
@@ -208,7 +208,7 @@ Dotfuscator CE входит в состав Visual Studio 2017.
 
 -----
 
-<a name="bundle" />
+<a name="bundle"></a>
 
 ### <a name="bundle-assemblies-into-native-code"></a>Объединение сборок в машинный код
 
@@ -218,7 +218,7 @@ Dotfuscator CE входит в состав Visual Studio 2017.
 
 Обратите внимание, что параметр **Объединить в машинный код** *не* означает, что сборки компилируются в машинный код. Параметр [**Компиляция AOT**](#aot) нельзя использовать для компиляции сборок в машинный код.
 
-<a name="aot" />
+<a name="aot"></a>
 
 ### <a name="aot-compilation"></a>Компиляция AOT
 
@@ -233,7 +233,7 @@ _Оптимизирующий компилятор LLVM_ создает быст
 > [!NOTE]
 > Для использования параметра **Оптимизирующий компилятор LLVM** требуется корпоративная лицензия.  
 
-<a name="Set_Packaging_Properties" />
+<a name="Set_Packaging_Properties"></a>
 
 ## <a name="set-packaging-properties"></a>Настройка свойств упаковки
 
@@ -279,7 +279,7 @@ _Оптимизирующий компилятор LLVM_ создает быст
 
 Дополнительные сведения о пакетах приложений Android см. в разделе [Пакеты приложений Android](https://developer.android.com/guide/app-bundle/).
 
-<a name="Compile" />
+<a name="Compile"></a>
 
 ## <a name="compile"></a>Компилятор
 
@@ -295,7 +295,7 @@ _Оптимизирующий компилятор LLVM_ создает быст
 
 -----
 
-<a name="archive" />
+<a name="archive"></a>
 
 ## <a name="archive-for-publishing"></a>Архивация для публикации
 

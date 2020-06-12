@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 06/05/2018
-ms.openlocfilehash: 280fe11f935db0a364f3342b22bb9544cdda1e6d
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 0ade609997e391e24d4a6da250172efa81a5d490
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73020237"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571341"
 ---
 # <a name="firebase-job-dispatcher"></a>Диспетчер заданий Firebase
 
@@ -173,7 +173,7 @@ int scheduleResult = dispatcher.Schedule(myJob);
 
 В следующих разделах каждая из этих тем рассматривается более подробно.
 
-<a name="Passing_Parameters_to_a_Job" />
+<a name="Passing_Parameters_to_a_Job"></a>
 
 #### <a name="passing-parameters-to-a-job"></a>Передача параметров в задание
 
@@ -201,7 +201,7 @@ public override bool OnStartJob(IJobParameters jobParameters)
 } 
 ```
 
-<a name="Setting_Constraints" />
+<a name="Setting_Constraints"></a>
 
 #### <a name="setting-constraints"></a>Установка ограничений
 
@@ -220,7 +220,7 @@ Job myJob = dispatcher.NewJobBuilder()
                       .Build();
 ```
 
-<a name="Setting_Job_Triggers" />
+<a name="Setting_Job_Triggers"></a>
 
 `JobTrigger` предоставляет инструкции операционной системе о том, когда должно начаться выполнение задания. У `JobTrigger` есть _период выполнения_, который определяет запланированное время выполнения `Job`. У периода выполнения имеются значения _периода начала_ и _периода конца_. Период начала — это количество секунд, которое устройство должно ожидать перед выполнением задания, а период конца — это максимальное число секунд ожидания перед запуском `Job`. 
 
@@ -236,7 +236,7 @@ Job myJob = dispatcher.NewJobBuilder()
 
 `JobTrigger` по умолчанию для задания представлен значением `Trigger.Now`, которое указывает, что задание должно быть запущено как можно быстрее после того, как оно запланировано.
 
-<a name="Setting_a_RetryStrategy" />
+<a name="Setting_a_RetryStrategy"></a>
 
 #### <a name="setting-a-retrystrategy"></a>Настройка RetryStrategy
 

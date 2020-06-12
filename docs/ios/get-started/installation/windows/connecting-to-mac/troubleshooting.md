@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 40f99fb4e7e44e0a3dc499dc603e66620b890eaa
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 311e0a84cfc71421c0992ffcecde975429eb7d3a
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "75886571"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84572173"
 ---
 # <a name="connection-troubleshooting-for-a-xamarinios-build-host"></a>Устранение неполадок подключения для узла сборки Xamarin.iOS
 
@@ -82,7 +82,7 @@ _В этом руководстве приводятся инструкции п
     ssh amyb@10.1.8.95
     ```
 
-    <a name="stepnine" />
+    <a name="stepnine"></a>
 
 9. Если **шаг 8 завершился успешно**, можно попытаться выполнить простую команду, такую как `ls`, через подключение:
 
@@ -112,7 +112,7 @@ _В этом руководстве приводятся инструкции п
 
 12. Если **шаги 8 и 10 завершаются неудачно**, проблема, скорее всего, в том, что процесс сервера SSH на компьютере Mac не запущен или не разрешает вход текущего пользователя в систему. В этом случае еще раз проверьте параметры удаленного входа из шага 2, прежде чем переходить к более сложным причинам.
 
-<a name="knownissues" />
+<a name="knownissues"></a>
 
 ### <a name="known-issues-and-limitations"></a>Известные проблемы и ограничения
 
@@ -135,7 +135,7 @@ _В этом руководстве приводятся инструкции п
 
 - **Ошибка [№ 52264](https://bugzilla.xamarin.com/show_bug.cgi?id=52264)**  — эта проблема может происходить в Xamarin 4.1, если параметр **Оболочка входа** в окне **Дополнительные параметры**, доступном через контекстное меню для пользователя Mac в окне **Системные настройки &gt; Пользователи и группы**, имеет значение, отличное от **/bin/bash**. (Начиная с версии Xamarin 4.2, в этом случае появляется сообщение об ошибке "Не удалось подключиться".) **Инструкции по решению**: измените значение параметра **Оболочка входа** на исходное значение по умолчанию **/bin/bash**.
 
-<a name="tryagain" />
+<a name="tryagain"></a>
 
 #### <a name="couldnt-connect-to-macbuildhostlocal-please-try-again"></a>"Не удалось подключиться к MacBuildHost.local. Повторите попытку."
 
@@ -179,7 +179,7 @@ _В этом руководстве приводятся инструкции п
 
     8. Отключите, а затем повторно включите параметр **Удаленный вход** в окне **Системные настройки &gt; Общий доступ &gt; Удаленный вход**, чтобы перезапустить сервер SSH.
 
-<a name="clearing" />
+<a name="clearing"></a>
 
 #### <a name="clearing-the-broker-idb-build-and-designer-agents-on-the-mac"></a>Удаление агентов Broker, IDB, сборки и конструктора на компьютере Mac
 
@@ -260,7 +260,7 @@ _В этом руководстве приводятся инструкции п
 
     [![](troubleshooting-images/troubleshooting-image14.png "Click the Layout Mode drop-down menu and select Thread")](troubleshooting-images/troubleshooting-image14.png#lightbox)
 
-<a name="verboselogs" />
+<a name="verboselogs"></a>
 
 #### <a name="verbose-log-files"></a>Подробное ведение журнала
 
@@ -340,7 +340,7 @@ error : Building from a network share path is not supported at the moment. Pleas
 
 Оно очищает кэш компонентов MEF Visual Studio для устранения проблем, связанных с его повреждением.
 
-<a name="errors" />
+<a name="errors"></a>
 
 ### <a name="errors-due-to-existing-build-host-processes-on-the-mac"></a>Ошибки из-за существующих процессов узла сборки на компьютере Mac
 

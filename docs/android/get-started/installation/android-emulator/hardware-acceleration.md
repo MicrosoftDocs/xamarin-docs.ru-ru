@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: jondouglas
 ms.author: jodou
 ms.date: 02/13/2020
-ms.openlocfilehash: faab613d88a7f59d1095021d2b21faf9223ae33b
-ms.sourcegitcommit: 3fb407841dbe46b8b23573f08591228b7c0e2726
+ms.openlocfilehash: a776dbb2ecfaf0942d79c2b403c13f98cdc7c2e2
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81488914"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571978"
 ---
 # <a name="hardware-acceleration-for-emulator-performance-hyper-v--haxm"></a>Аппаратное ускорение для производительной работы эмулятора (Hyper-V и HAXM)
 
@@ -53,7 +53,7 @@ Visual Studio упрощает тестирование и отладку пр�
 
 Сведения о запуске и отладке с помощью эмулятора Android см. в статье [Отладка в Android Emulator](~/android/deploy-test/debugging/debug-on-emulator.md).
 
-<a name="hyper-v-win" />
+<a name="hyper-v-win"></a>
 
 ## <a name="accelerating-with-hyper-v"></a>Ускорение с помощью Hyper-V
 
@@ -138,7 +138,7 @@ systeminfo
 
 Если компьютер поддерживает HAXM, но он не установлен, установите его, выполнив действия, приведенные в следующем разделе.
 
-<a name="install-haxm-win" />
+<a name="install-haxm-win"></a>
 
 ### <a name="installing-haxm"></a>Установка HAXM
 
@@ -181,7 +181,7 @@ systeminfo
 
 Сведения о запуске и отладке с помощью эмулятора Android см. в статье [Отладка в Android Emulator](~/android/deploy-test/debugging/debug-on-emulator.md).
 
-<a name="hypervisor" />
+<a name="hypervisor"></a>
 
 ## <a name="accelerating-with-the-hypervisor-framework"></a>Ускорение с помощью платформы гипервизора
 
@@ -195,7 +195,7 @@ systeminfo
 
 Если платформа гипервизора не поддерживается на компьютере Mac, используйте решение HAXM для ускорения эмулятора Android (описывается далее).
 
-<a name="haxm-mac" />
+<a name="haxm-mac"></a>
 
 ## <a name="accelerating-with-haxm"></a>Ускорение с помощью HAXM
 
@@ -229,7 +229,7 @@ systeminfo
 
 Если решение HAXM не установлено, установите его, выполнив действия, приведенные в следующем разделе.
 
-<a name="install-haxm-mac" />
+<a name="install-haxm-mac"></a>
 
 ### <a name="installing-haxm"></a>Установка HAXM
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 58fbe6d688ffb506db4316ee29d79a364f849a97
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: b9254afdcb6286edcffc67a1a69af8b049f08b6b
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73030428"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84573226"
 ---
 # <a name="ipa-support-in-xamarinios"></a>Поддержка IPA в Xamarin.iOS
 
@@ -25,7 +25,7 @@ _В этой статье описано, как создать файл IPA, к
 
 В любом случае нужно создать пакет IPA (специальный тип ZIP-файла) и подписать цифровым образом с помощью подходящего профиля подготовки к распространению. Эта статья описывает действия, необходимые для сборки пакета IPA и его установки на устройстве iOS с помощью iTunes, на Mac или компьютере с Windows.
 
-<a name="iTunesMetadata" />
+<a name="iTunesMetadata"></a>
 
 ## <a name="the-itunesmetadataplist-file"></a>Файл iTunesMetadata.plist
 
@@ -35,7 +35,7 @@ _В этой статье описано, как создать файл IPA, к
 
 Настраиваемый **iTunesMetadata.plist** также можно создать, чтобы предоставить дополнительные сведения для распространения. Для получения дополнительных сведений о содержимом этого файла и способе его создания см. нашу документацию по [содержимому файла iTunesMetadata.plist](~/ios/deploy-test/app-distribution/itunesmetadata.md#iTunesMetadata_contents) и [созданию файла iTunesMetadata.plist](~/ios/deploy-test/app-distribution/itunesmetadata.md#iTunesMetadata_creating).
 
-<a name="iTunesArtwork" />
+<a name="iTunesArtwork"></a>
 
 ## <a name="itunes-artwork"></a>Иллюстрации iTunes
 
@@ -50,7 +50,7 @@ _В этой статье описано, как создать файл IPA, к
 
 Дополнительные сведения см. в документации по [иллюстрациям iTunes](~/ios/app-fundamentals/images-icons/app-icons.md).
 
-<a name="createipa" />
+<a name="createipa"></a>
 
 ## <a name="creating-an-ipa"></a>Создание IPA
 
@@ -165,7 +165,7 @@ _В этой статье описано, как создать файл IPA, к
 
 -----
 
-<a name="Customizing-the-IPA-Location" />
+<a name="Customizing-the-IPA-Location"></a>
 
 ## <a name="customizing-the-ipa-location"></a>Настройка расположения файла IPA
 
@@ -221,7 +221,7 @@ msbuild /p:Configuration="Release" /p:Platform="iPhone" /p:ServerAddress="192.16
 msbuild /p:Configuration="Release" /p:Platform="iPhone" /p:IpaPackageDir="$HOME/Builds" /t:Build SingleViewIphone1.sln
 ```
 
-<a name="installipa" />
+<a name="installipa"></a>
 
 ## <a name="installing-an-ipa-using-itunes"></a>Установка IPA с помощью iTunes
 
@@ -241,7 +241,7 @@ msbuild /p:Configuration="Release" /p:Platform="iPhone" /p:IpaPackageDir="$HOME/
 
 Пользователь теперь может синхронизировать iTunes со своим устройством, чтобы установить новое приложение iOS.
 
-<a name="Summary" />
+<a name="Summary"></a>
 
 ## <a name="summary"></a>Сводка
 

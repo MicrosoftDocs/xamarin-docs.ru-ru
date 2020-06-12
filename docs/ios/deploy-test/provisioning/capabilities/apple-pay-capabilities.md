@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/15/2017
-ms.openlocfilehash: 54fcc3bb683f6ca4515d807da5c3345cf71a2df3
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 4f8e45aab8b6c92cb72a5d7cde35458c7b64b816
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303711"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84573213"
 ---
 # <a name="apple-pay-capabilities-in-xamarinios"></a>Возможности Apple Pay в Xamarin.iOS
 
@@ -28,7 +28,7 @@ _Добавление возможностей в приложения част�
 
 Ниже описывается процедура выполнения этих операций:
 
-<a name="merchantid" />
+<a name="merchantid"></a>
 
 ## <a name="create-merchant-id"></a>Создание ИД продавца
 
@@ -48,7 +48,7 @@ _Добавление возможностей в приложения част�
 
     ![Подтверждение ИД продавца](apple-pay-capabilities-images/image59.png)
 
-<a name="appid" />
+<a name="appid"></a>
 
 ## <a name="create-an-app-id-with-the-apple-pay-capability-that-includes-the-merchant-id"></a>Создание ИД приложения с возможностями Apple Pay, включающее ИД продавца
 
@@ -91,7 +91,7 @@ _Добавление возможностей в приложения част�
 
 Этот ИД приложения теперь можно использовать для создания или повторного создания профиля подготовки, как описано в руководстве [Работа с возможностями](~/ios/deploy-test/provisioning/capabilities/index.md).
 
-<a name="certificate" />
+<a name="certificate"></a>
 
 ## <a name="create-a-certificate-for-your-merchant-id"></a>Создание сертификата для ИД продавца
 

@@ -179,7 +179,7 @@ catch (Exception ex)
 | iOS | ~0 |
 | UWP | <= 10 |
 
-<a name="calculate-distance" />
+<a name="calculate-distance"></a>
 
 ## <a name="detecting-mock-locations"></a>Определение расположений макетов
 Некоторые устройства могут возвращать расположение макетов от поставщика или приложения, которое предоставляет расположения макетов. Его можно определить с помощью `IsFromMockProvider` на любом [`Location`](xref:Xamarin.Essentials.Location).

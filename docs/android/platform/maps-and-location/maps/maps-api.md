@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 09/07/2018
-ms.openlocfilehash: adcfb1457742d343f87a602885566107cf327e2d
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 2779019fff1354b18d285775daf224ffc1402fd4
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73027155"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571367"
 ---
 # <a name="using-the-google-maps-api-in-your-application"></a>Использование API Карт Google в приложении
 
@@ -36,11 +36,11 @@ API Карт подходит для случаев, когда требуетс
 - [указать необходимые разрешения](#declare-permissions);
 - [(необязательно) создать эмулятор с помощью API Google](#create-emulator-with-google-api).
 
-### <a name="obtain-a-google-maps-api-key"></a><a name="obtain-maps-key" />Получение ключа API Карт Google
+### <a name="obtain-a-google-maps-api-key"></a><a name="obtain-maps-key"></a>Получение ключа API Карт Google
 
 Первым шагом является получение ключа API Карт Google. Учтите, что невозможно будет использовать ключ API из устаревшего выпуска API Карт Google версии 1. Сведения о том, как получить ключ API и использовать его в Xamarin.Android, см. в разделе [Получение ключа API Google Maps](~/android/platform/maps-and-location/maps/obtaining-a-google-maps-api-key.md).
 
-### <a name="install-the-google-play-services-sdk"></a><a name="install-gps-sdk" /> Установка пакета SDK Сервисов Google Play
+### <a name="install-the-google-play-services-sdk"></a><a name="install-gps-sdk"></a> Установка пакета SDK Сервисов Google Play
 
 Сервисы Google Play — это технология Google, которая позволяет приложениям Android использовать преимущества различных функций Google, таких как Google+, In-App Billing и Карты. Эти функции доступны на устройствах Android в качестве фоновых служб, которые содержатся в [ APK Сервисов Google Play](https://play.google.com/store/apps/details?id=com.google.android.gms&hl=en).
 
@@ -56,7 +56,7 @@ API Карт для Android поставляется в составе Серв�
 > [!NOTE]
 > APK Сервисов Google Play — это лицензированный продукт, который может быть доступен не на всех устройствах. Если он не установлен на устройстве, Карты Google работать не будут.
 
-### <a name="install-the-xamaringoogleplayservicesmaps-package-from-nuget"></a><a name="install-gpsmaps-nuget" /> Установка пакета Xamarin.GooglePlayServices.Maps из NuGet
+### <a name="install-the-xamaringoogleplayservicesmaps-package-from-nuget"></a><a name="install-gpsmaps-nuget"></a> Установка пакета Xamarin.GooglePlayServices.Maps из NuGet
 
 Пакет [Xamarin.GooglePlayServices.Maps](https://www.nuget.org/packages/Xamarin.GooglePlayServices.Maps) содержит привязки Xamarin.Android для API Карт из Сервисов Google Play.
 Чтобы добавить пакет Карт из Сервисов Google Play, щелкните правой кнопкой мыши папку **Ссылки** проекта в обозревателе решений и выберите **Управление пакетами NuGet**.
@@ -73,7 +73,7 @@ API Карт для Android поставляется в составе Серв�
 - **Xamarin.GooglePlayServices.Basement**
 - **Xamarin.GooglePlayServices.Tasks**
 
-### <a name="specify-the-required-permissions"></a><a name="declare-permissions" /> Указание необходимых разрешений
+### <a name="specify-the-required-permissions"></a><a name="declare-permissions"></a> Указание необходимых разрешений
 
 Приложения должны указать требования к оборудованию и разрешениям для использования API Карт Google.  Некоторые разрешения автоматически предоставляются пакетом SDK Сервисов Google Play, и разработчику не нужно явно добавлять их в **AndroidManfest.XML**.
 
@@ -142,7 +142,7 @@ API Карт для Android поставляется в составе Серв�
 
 Помимо запроса **AndroidManifest.XML** с разрешениями, приложение также должно выполнять проверку разрешений `ACCESS_COARSE_LOCATION` и `ACCESS_FINE_LOCATION` во время выполнения. Дополнительные сведения о выполнении проверок разрешений во время выполнения см. в руководстве [по управлению разрешениями Xamarin.Android](~/android/app-fundamentals/permissions.md).
 
-### <a name="create-an-emulator-with-google-apis"></a><a name="create-emulator-with-google-api" />Создание эмулятора с помощью API Google
+### <a name="create-an-emulator-with-google-apis"></a><a name="create-emulator-with-google-api"></a>Создание эмулятора с помощью API Google
 
 В случае, если физическое устройство Android с Сервисами Google Play отсутствует, можно создать образ эмулятора для разработки. Дополнительные сведения см. в статье [Диспетчер устройств](~/android/get-started/installation/android-emulator/device-manager.md).
 
@@ -250,7 +250,7 @@ public void OnMapReady(GoogleMap map)
 }
 ```
 
-### <a name="googlemap-properties"></a><a name="googlemap_object" />Свойства GoogleMap
+### <a name="googlemap-properties"></a><a name="googlemap_object"></a>Свойства GoogleMap
 
 `GoogleMap` определяет несколько свойств, которые позволяют управлять функциональностью и внешним видом карты. Одним из способов настройки начального состояния `GoogleMap` является передача объекта [GoogleMapOptions](https://developers.google.com/android/reference/com/google/android/gms/maps/GoogleMapOptions) при создании `MapFragment`. В следующем фрагменте кода представлен один из примеров использования объекта `GoogleMapOptions` при создании `MapFragment`.
 

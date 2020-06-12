@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/01/2018
-ms.openlocfilehash: 43061272f3d3486926f38af792ee3b9df0c53670
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 7a3fd9e22bcf037ec669c77ac919035b0d04b942
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73027232"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84567935"
 ---
 # <a name="kitkat-features"></a>Функции KitKat
 
@@ -38,7 +38,7 @@ _Android 4.4 (KitKat) предлагает множество функций д�
 
 [![Выбор Android 4.4 в Диспетчере SDK Android](kitkat-images/api19.png)](kitkat-images/api19.png#lightbox)
 
-<a name="Migrating_Your_App_to_KitKat" />
+<a name="Migrating_Your_App_to_KitKat"></a>
 
 ## <a name="migrating-your-app-to-kitkat"></a>Миграция приложения в KitKat
 
@@ -97,7 +97,7 @@ KitKat упрощает обмен сообщениями для пользов�
 
 Возможности [WebView](xref:Android.Webkit.WebView) в KitKat кардинально изменились. Самым значительным изменением является добавление защиты загружаемого содержимого в `WebView`. Хотя большинство приложений, нацеленных на предыдущие версии API, должно работать ожидаемым образом, настоятельно рекомендуется протестировать приложения, использующие класс `WebView`. Дополнительные сведения о затронутых API WebView см. в документации Android о [переходе на WebView в Android 4.4](https://developer.android.com/guide/webapps/migrating.html).
 
-<a name="user_experience" />
+<a name="user_experience"></a>
 
 ## <a name="user-experience"></a>Взаимодействие с пользователем
 
@@ -310,7 +310,7 @@ KitKat обеспечивает более точный контроль над 
 
 [![Пример снимка экрана приложения с полупрозрачными панелями состояния и навигации](kitkat-images/theme.png)](kitkat-images/theme.png#lightbox)
 
-<a name="user_content" />
+<a name="user_content"></a>
 
 ## <a name="user-content"></a>Содержимое пользователя
 
@@ -505,7 +505,7 @@ void PrintPage ()
 
 [![Снимок экрана PrintHtmlActivity с меню "Сохранить как PDF"](kitkat-images/print2.png)](kitkat-images/print2.png#lightbox)
 
-<a name="hardware" />
+<a name="hardware"></a>
 
 ## <a name="hardware"></a>Оборудование
 
@@ -639,7 +639,7 @@ protected override void OnPause()
 > [!NOTE]
 > Хотя API для обнаружения и подсчета шагов входит в состав KitKat, не все телефоны оснащены датчиком. Вы можете проверить наличие датчика, выполнив `PackageManager.HasSystemFeature(PackageManager.FeatureSensorStepCounter);`, или убедиться, что `GetDefaultSensor` не возвращает значение `null`.
 
-<a name="developer_tools" />
+<a name="developer_tools"></a>
 
 ## <a name="developer-tools"></a>Средства разработчика
 

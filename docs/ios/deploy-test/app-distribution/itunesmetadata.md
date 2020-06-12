@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 63a5ed357a903700ea89d858bcde9798ddf97942
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 65a89afb3f301fd88ac4819bb8c3658a2be5e29d
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76724624"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84573200"
 ---
 # <a name="the-itunesmetadataplist-file-in-xamarinios-apps"></a>Файл iTunesMetadata.plist в приложениях Xamarin.iOS
 
@@ -22,7 +22,7 @@ _В статье описывается файл iTunesMetadata.plist, кото�
 
 Для предоставления этой информации при распространении напрямую можно создать и включить в IPA необязательный файл `iTunesMetadata.plist`. PLIST-файл представляет собой XML-файл со специальным форматированием (подробные сведения см. в разделе [Руководство по программированию списка свойств](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) Apple), который содержит пары "ключ-значение", задающие сведения об этом приложении iOS.
 
-<a name="iTunesMetadata_contents" />
+<a name="iTunesMetadata_contents"></a>
 
 ## <a name="the-itunesmetadataplist-contents"></a>Содержимое файла iTunesMetadata.plist
 
@@ -280,7 +280,7 @@ Apple определяет следующие жанры и идентифика
 <integer>16843008</integer>
 ```
 
-<a name="iTunesMetadata_creating" />
+<a name="iTunesMetadata_creating"></a>
 
 ## <a name="creating-an-itunesmetadataplist-file"></a>Создание файла iTunesMetadata.plist
 
