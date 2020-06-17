@@ -4,7 +4,7 @@ Title: "программа установки платформы WPF" Descriptio
 
 # <a name="wpf-platform-setup"></a>Установка платформы WPF
 
-![Preview (Предварительный просмотр)](~/media/shared/preview.png)
+![Предварительный просмотр](~/media/shared/preview.png)
 
 Xamarin.Formsтеперь имеет поддержку предварительной версии для Windows Presentation Foundation (WPF). В этой статье показано, как добавить проект WPF в Xamarin.Forms решение.
 

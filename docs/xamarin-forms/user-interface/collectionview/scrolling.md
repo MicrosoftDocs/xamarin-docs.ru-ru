@@ -123,7 +123,7 @@ collectionView.ScrollTo(monkey, position: ScrollToPosition.MakeVisible);
 > [!NOTE]
 > [`ScrollToPosition.MakeVisible`](xref:Xamarin.Forms.ScrollToPosition)Элемент используется по умолчанию, если `position` аргумент не указан при вызове `ScrollTo` метода.
 
-### <a name="start"></a>Начало
+### <a name="start"></a>Начать
 
 Элемент [`ScrollToPosition.Start`](xref:Xamarin.Forms.ScrollToPosition) указывает, что элемент должен быть прокручиваться до начала представления:
 
@@ -223,7 +223,7 @@ CollectionView collectionView = new CollectionView
 > [!IMPORTANT]
 > Значение [`SnapPointsAlignment`](xref:Xamarin.Forms.ItemsLayout.SnapPointsAlignment) свойства учитывается только в том случае, если [`SnapPointsType`](xref:Xamarin.Forms.ItemsLayout.SnapPointsType) свойство имеет значение `Mandatory` , или `MandatorySingle` .
 
-#### <a name="start"></a>Начало
+#### <a name="start"></a>Начать
 
 `SnapPointsAlignment.Start`Элемент указывает, что точки привязки выравниваться с ведущим ребром элементов.
 

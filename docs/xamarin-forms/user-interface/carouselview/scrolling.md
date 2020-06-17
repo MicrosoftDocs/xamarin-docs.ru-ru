@@ -13,7 +13,7 @@ MS. произв. Xamarin MS. AssetID: 92D7B618-07FA-4343-9D0F-212525E92C39 MS. 
 
 - `HorizontalScrollBarVisibility`Тип `ScrollBarVisibility` , который указывает, когда отображается горизонтальная полоса прокрутки.
 - `IsDragging`Тип `bool` , который указывает, `CarouselView` прокручивается ли прокрутка. Это свойство доступно только для чтения, для которого значение по умолчанию — `false` .
-- `IsScrollAnimated`Тип `bool` , который указывает, будет ли выполняться анимация при прокрутке `CarouselView` . Значение по умолчанию — `true`.
+- `IsScrollAnimated`Тип `bool` , который указывает, будет ли выполняться анимация при прокрутке `CarouselView` . Значение по умолчанию — `true`.
 - `ItemsUpdatingScrollMode`Тип `ItemsUpdatingScrollMode` , который представляет поведение прокрутки `CarouselView` при добавлении новых элементов к нему.
 - `VerticalScrollBarVisibility`Тип `ScrollBarVisibility` , который указывает, когда отображается вертикальная полоса прокрутки.
 
@@ -121,7 +121,7 @@ carouselView.ScrollTo(monkey, position: ScrollToPosition.MakeVisible);
 > [!NOTE]
 > [`ScrollToPosition.MakeVisible`](xref:Xamarin.Forms.ScrollToPosition)Элемент используется по умолчанию, если `position` аргумент не указан при вызове `ScrollTo` метода.
 
-### <a name="start"></a>Начало
+### <a name="start"></a>Начать
 
 Элемент [`ScrollToPosition.Start`](xref:Xamarin.Forms.ScrollToPosition) указывает, что элемент должен быть прокручиваться до начала представления:
 
@@ -217,7 +217,7 @@ CarouselView carouselView = new CarouselView
 > [!IMPORTANT]
 > Значение [`SnapPointsAlignment`](xref:Xamarin.Forms.ItemsLayout.SnapPointsAlignment) свойства учитывается только в том случае, если [`SnapPointsType`](xref:Xamarin.Forms.ItemsLayout.SnapPointsType) свойство имеет значение `Mandatory` , или `MandatorySingle` .
 
-#### <a name="start"></a>Начало
+#### <a name="start"></a>Начать
 
 `SnapPointsAlignment.Start`Элемент указывает, что точки привязки выравниваться с ведущим ребром элементов. В следующем примере XAML показано, как задать этот элемент перечисления:
 

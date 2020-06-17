@@ -5,7 +5,7 @@ MS. произв. Xamarin MS. AssetID: EEC549E0-F182-4F9C-B2BA-B31D19569AA5 MS. 
 
 # <a name="mac-platform-setup"></a>Настройка платформы Mac
 
-![Preview (Предварительный просмотр)](~/media/shared/preview.png)
+![Предварительный просмотр](~/media/shared/preview.png)
 
 Перед началом создайте (или используйте существующий) Xamarin.Forms проект. Добавлять можно только приложения Mac с помощью Visual Studio для Mac.
 

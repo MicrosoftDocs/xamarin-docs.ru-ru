@@ -215,6 +215,6 @@ await client.DeleteDatabaseAsync(UriFactory.CreateDatabaseUri(Constants.Database
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Azure Cosmos DB ToDo (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdb)
-- [Документация по Azure Cosmos DB](/azure/cosmos-db/)
+- [Документация по Azure Cosmos DB](/azure/cosmos-db/)
 - [Клиентская библиотека Azure Cosmos DB .NET Standard](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)
 - [API Azure Cosmos DB](https://docs.microsoft.com/dotnet/api/overview/azure/cosmosdb/client?view=azure-dotnet)

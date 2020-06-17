@@ -34,14 +34,14 @@ _Представления Xamarin. Forms — это стандартные б�
 | [`Label`](xref:Xamarin.Forms.Label)Отображает однострочные текстовые строки или многострочные блоки текста с постоянным форматированием или переменной. Присвойте [`Text`](xref:Xamarin.Forms.Label.Text) свойству значение String для постоянного форматирования или задайте [`FormattedText`](xref:Xamarin.Forms.Label.FormattedText) для свойства [`FormattedString`](xref:Xamarin.Forms.FormattedString) объект для форматирования переменных.<br /><br />[Документация по API](xref:Xamarin.Forms.Label)  /  [Руководством](~/xamarin-forms/user-interface/text/label.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text) | [![Пример метки](views-images/Label.png "Пример метки")](views-images/Label-Large.png#lightbox "Пример метки")<br /> [Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/LabelDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/LabelDemoPage.xaml) |
 |     |     |
 
-### <a name="image"></a>Образ —
+### <a name="image"></a>Изображение
 
 |     |     |
 | --- | --- |
 | [`Image`](xref:Xamarin.Forms.Image)отображает точечный рисунок. Точечные рисунки можно загружать через Интернет, внедрять как ресурсы в проекты общих проектов или платформ или создавать с помощью `Stream` объекта .NET.<br /><br />[Документация по API](xref:Xamarin.Forms.Image)  /  [Руководством](~/xamarin-forms/user-interface/images.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithimages) | [![Пример изображения](views-images/Image.png "Пример изображения")](views-images/Image-Large.png#lightbox "Пример изображения")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ImageDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ImageDemoPage.xaml) |
 |     |     |
 
-### <a name="map"></a>Карта
+### <a name="map"></a>Схема
 
 |     |     |
 | --- | --- |

@@ -165,7 +165,7 @@ SetBinding (TitleProperty, new DataSourceBinding ("title"));
 
 Создавать темы с нуля немного сложнее, но будущие выпуски предварительной версии сделают это проще.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 ## <a name="could-not-load-file-or-assembly-xamarinformsthemelight-or-one-of-its-dependencies"></a>Не удалось загрузить файл или сборку Xamarin.Forms . Theme. Light ' или одна из его зависимостей
 

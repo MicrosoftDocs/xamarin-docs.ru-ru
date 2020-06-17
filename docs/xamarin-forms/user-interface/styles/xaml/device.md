@@ -100,7 +100,7 @@ public class DeviceStylesPageCS : ContentPage
 
 [`Style`](xref:Xamarin.Forms.NavigableElement.Style)Свойству каждого [`Label`](xref:Xamarin.Forms.Label) экземпляра присваивается соответствующее свойство из [`Devices.Styles`](xref:Xamarin.Forms.Device.Styles) класса.
 
-## <a name="accessibility"></a>Специальные возможности
+## <a name="accessibility"></a>Accessibility
 
 Стили *устройств* учитывают настройки специальных возможностей, поэтому размеры шрифтов изменятся по мере изменения настроек специальных возможностей на каждой платформе. Поэтому для поддержки текста с поддержкой специальных возможностей убедитесь, что стили *устройств* используются в качестве базиса для любых текстовых стилей в приложении.
 

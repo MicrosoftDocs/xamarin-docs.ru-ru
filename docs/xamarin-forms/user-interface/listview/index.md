@@ -24,7 +24,7 @@ MS. произв. Xamarin MS. AssetID: FEFDF7E0-720F-4BD1-863F-4477226AA695 MS. 
 
 Дополнительные сведения о привязке данных к `ListView` экземпляру см. в разделе [Источники данных в ListView](~/xamarin-forms/user-interface/listview/data-and-databinding.md).
 
-## <a name="components"></a>Components
+## <a name="components"></a>Компоненты
 
 У `ListView` элемента управления есть ряд компонентов, позволяющих использовать собственные функции каждой платформы. Эти компоненты определены в следующих разделах.
 

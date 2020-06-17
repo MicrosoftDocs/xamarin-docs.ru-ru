@@ -20,7 +20,7 @@ MS. Topic: Устранение неполадок MS. произв. Xamarin MS.
 
     Пример: `<package id="Xamarin.Forms" version="1.5.1.6471" />` -> `<package id="Xamarin.Forms" version="2.1.0.6529" />`.
 
-4. Измените элемент Name основного [файла многопроектного шаблона](https://msdn.microsoft.com/library/ms185308.aspx) ( `Xamarin.Forms.PCL.vstemplate` ), чтобы сделать его уникальным. Пример.
+4. Измените элемент Name основного [файла многопроектного шаблона](https://msdn.microsoft.com/library/ms185308.aspx) ( `Xamarin.Forms.PCL.vstemplate` ), чтобы сделать его уникальным. Пример:
 
     > `<Name>Blank App (Xamarin.Forms Portable) - 2.1.0.6529</Name>`
 

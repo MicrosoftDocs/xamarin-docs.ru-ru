@@ -13,7 +13,7 @@ MS. произв. Xamarin MS. AssetID: 4917273d-32f9-401A-A52C-5cfb53a2170d MS. 
 
 Перезагрузка Xamarin Live позволяет **вносить изменения в код XAML и видеть их в реальном времени, не требуя других компиляций и развертываний**. Любые изменения, внесенные в XAML, будут повторно развернуты при сохранении и отражены в целевом объекте развертывания.
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
 
 * [Visual Studio 2017 версии 15,7 или более поздней](https://visualstudio.microsoft.com/vs/) с рабочей нагрузкой **для разработки мобильных приложений на .NET** .
 * [ Xamarin.Forms 3.0.0 или выше](https://www.nuget.org/packages/Xamarin.Forms/).

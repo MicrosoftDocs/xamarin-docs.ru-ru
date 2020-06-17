@@ -222,7 +222,7 @@ public static TodoItemDatabase Database
 }
 ```
 
-Это свойство позволяет Xamarin.Forms компонентам вызывать методы получения и обработки данных в `Database` экземпляре в ответ на взаимодействие с пользователем. Пример.
+Это свойство позволяет Xamarin.Forms компонентам вызывать методы получения и обработки данных в `Database` экземпляре в ответ на взаимодействие с пользователем. Пример:
 
 ```csharp
 var saveButton = new Button { Text = "Save" };
@@ -278,5 +278,5 @@ await Database.EnableWriteAheadLoggingAsync();
 - [Документация по SQLite](https://www.sqlite.org/docs.html)
 - [Использование SQLite с Android](~/android/data-cloud/data-access/using-sqlite-orm.md)
 - [Использование SQLite с iOS](~/ios/data-cloud/data/using-sqlite-orm.md)
-- [Асинхронный шаблон, основанный на задачах (TAP)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)
+- [Асинхронная модель на основе задач (TAP)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)
 - [&lt;Класс Lazy T &gt;](xref:System.Lazy`1)
