@@ -1,9 +1,6 @@
 ---
-title: ''Xamarin.Essentials: Обнаружение тряски'' description: 'Класс Accelerometer в Xamarin.Essentials позволяет обнаруживать движение встряхивания устройства.'
-ms.assetid: author: ms.author: ms.date: ms.custom: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: обнаружение тряски'' description: "'Класс Accelerometer в Xamarin.Essentials позволяет обнаруживать движение встряхивания устройства".
+ms.assetid: 07513D32-120F-4F12-8757-A47802A8027B author: jamesmontemagno ms.author: jamont ms.date: 28.05.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-detect-shake"></a>Xamarin.Essentials. Обнаружение тряски

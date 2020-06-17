@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: a891ec70f6f83984ed463fe914442758bdf57a2e
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139312"
+title: "Общие сведения об эффектах" description: "Эффекты позволяют настраивать собственные элементы управления на каждой платформе. Они обычно используются для незначительных изменений в стиле. В этой статье приводятся общие сведения об эффектах, описывается граница между эффектами и пользовательскими отрисовщиками и рассказывается о классе PlatformEffect".
+ms.prod: xamarin ms.assetid: 30CB8615-8F39-4762-BDB7-333D2B57D112 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 03/08/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="introduction-to-effects"></a>Общие сведения об эффектах
 
 _Эффекты позволяют настраивать собственные элементы управления на каждой платформе. Они обычно используются для незначительных изменений в стиле. В этой статье приводятся общие сведения об эффектах, описывается граница между эффектами и пользовательскими отрисовщиками и рассказывается о классе PlatformEffect._

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 45b7d0d20c43aa22ebde3a17552f10ceea77a48b
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139143"
+title: "Горячий перезапуск Xamarin" description: "Этот документ описывает настройку и использование горячего перезапуска Xamarin для отладки приложения iOS".
+ms.prod: xamarin ms.assetid: 6BC62A88-9368-41BB-8494-760F2A4805DB ms.technology: xamarin-forms author: maddyleger1 ms.author: maleger ms.date: 03/16/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarin-hot-restart-preview"></a>Горячий перезапуск Xamarin (предварительная версия)
 
 ![Предварительная версия](~/media/shared/preview.png)

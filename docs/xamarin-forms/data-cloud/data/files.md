@@ -61,7 +61,7 @@ string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFold
 
 -----
 
-`GetManifestResourceStream` используется для доступа к внедренному файлу с помощью его **идентификатора ресурса**. По умолчанию идентификатор ресурса — это имя файла с префиксом пространства имен по умолчанию для проекта, в котором он внедрен. в этом случае сборка является **воркингвисфилес** , а имя файла — **либтекстресаурце. txt**, поэтому идентификатор ресурса — `WorkingWithFiles.LibTextResource.txt` .
+`GetManifestResourceStream` используется для доступа к внедренному файлу с помощью его **идентификатора ресурса**. По умолчанию идентификатор ресурса — это имя файла с префиксом пространства имен по умолчанию для проекта, в котором он внедрен. в этом случае сборка является **воркингвисфилес** , а имя файла — **LibTextResource.txt**, поэтому идентификатор ресурса — `WorkingWithFiles.LibTextResource.txt` .
 
 ```csharp
 var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;

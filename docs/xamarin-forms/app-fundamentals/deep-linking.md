@@ -1,23 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как использовать индексирование приложения и создание прямых ссылок, чтобы предоставить доступ к доступному для поиска содержимому приложения Xamarin.Forms на устройствах iOS и Android.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-ms.custom: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d93f9bbcfafc3cb71d6b71159f6d3368f50c08be
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84135737"
+title: "Индексирование приложения и создание глубинных ссылок" description: "В этой статье объясняется, как использовать индексирование приложения и создание прямых ссылок, чтобы предоставить доступ к доступному для поиска содержимому приложения Xamarin.Forms на устройствах iOS и Android".
+ms.prod: xamarin ms.assetid: 410C5D19-AA3C-4E0D-B799-E288C5803226 ms.technology: xamarin-forms ms.custom: xamu-video author: davidbritch ms.author: dabritch ms.date: 11/28/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="application-indexing-and-deep-linking"></a>Индексирование приложения и создание прямых ссылок
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/deeplinking)
@@ -155,8 +140,6 @@ Application.Current.AppLinks.DeregisterLink (appLink);
 
 > [!NOTE]
 > В Android нельзя удалить индексированное содержимое из результатов поиска.
-
-<a name="responding" />
 
 ## <a name="responding-to-a-deep-link"></a>Ответ на прямую ссылку
 

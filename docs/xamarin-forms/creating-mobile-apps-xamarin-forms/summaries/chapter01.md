@@ -1,24 +1,10 @@
 ---
-title: Сводка Главы 1. Как применить Xamarin.Forms?
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 1. How does Xamarin.Forms fit in?''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 48b2fb429d206f6582886c94d4d99839d790dc8d
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136933"
+title: "Сводная информация о главе 1 (Как применить Xamarin.Forms?)"
+описание: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 1 (Как применить Xamarin.Forms?)"
+ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: F3F864FF-EE70-49D0-90D1-388889037625 author: davidbritch ms.author: dabritch ms.date: 19.07.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="summary-of-chapter-1-how-does-xamarinforms-fit-in"></a>Сводка Главы 1. Как применить Xamarin.Forms?
+
+# <a name="summary-of-chapter-1-how-does-xamarinforms-fit-in"></a>Сводная информация о главе 1. Как применить Xamarin.Forms?
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter01)
 

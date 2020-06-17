@@ -1,22 +1,8 @@
 ---
-title: Оболочка Xamarin.Forms
-description: В этом руководстве описывается использование оболочки Xamarin.Forms, которая упрощает разработку приложений Xamarin.Forms, предоставляя набор основных возможностей, необходимых большинству приложений.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 0acf00d85c2bfb823ec1cfba099179bb6743117c
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138753"
+title: "Xamarin.Forms Оболочка" description: "В этом руководстве описывается использование оболочки Xamarin.Forms, которая упрощает разработку приложений Xamarin.Forms, предоставляя набор основных возможностей, необходимых большинству приложений".
+ms.prod: xamarin ms.assetid: 85B322AA-808F-41B6-953A-5877264AE643 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/28/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-shell"></a>Оболочка Xamarin.Forms
 
 ## <a name="introduction"></a>[Введение](introduction.md)

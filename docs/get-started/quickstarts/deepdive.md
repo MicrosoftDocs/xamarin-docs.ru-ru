@@ -1,25 +1,8 @@
 ---
-title: Подробное изучение кратких руководств по Xamarin.Forms
-description: Эта статья содержит общие сведения о разработке приложений с использованием Xamarin.Forms. Помимо прочего, здесь описываются структура приложения Xamarin.Forms и принципы его работы, а также пользовательский интерфейс.
-zone_pivot_groups: ''
-ms.topic: ''
-ms.prod: ''
-ms.custom: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 1bfb76f71a2ac9d8bc9ae84152501909000b9623
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84132526"
+title: "Xamarin.Forms — подробное изучение кратких руководств" description: "Эта статья содержит общие сведения о разработке приложений с использованием Xamarin.Forms. Помимо прочего, здесь описываются структура приложения Xamarin.Forms и принципы его работы, а также пользовательский интерфейс".
+zone_pivot_groups: platform ms.topic: quickstart ms.prod: xamarin ms.custom: video ms.assetid: 7B2340A1-6883-41D8-860C-0BB6C4E0C316 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/27/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-quickstart-deep-dive"></a>Подробное изучение кратких руководств по Xamarin.Forms
 
 В [кратком руководстве по Xamarin.Forms](~/get-started/index.yml) было создано приложение Notes. В этой статье выполняется проверка созданных компонентов, позволяющая получить представление об основных принципах работы приложений Xamarin.Forms.

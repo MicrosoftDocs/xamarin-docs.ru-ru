@@ -1,22 +1,8 @@
 ---
-title: Шаблоны данных Xamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e0961fad18ccd961a5b84b2a5535bca70781dd8d
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136127"
+title: "Xamarin.Forms — шаблоны данных" description: "Шаблон данных используется для определения внешнего вида данных в поддерживаемых элементах управления и обычно привязывается к данным для отображения".
+ms.prod: xamarin ms.assetid: 838F4BDB-B719-457F-8633-27E9B267A2A0 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 09/11/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-data-templates"></a>Шаблоны данных Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-datatemplates)

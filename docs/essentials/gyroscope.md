@@ -1,8 +1,6 @@
 ---
-title: ''Xamarin.Essentials: Gyroscope'' description: ms.assetid: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: Gyroscope" description: "Класс Gyroscope в Xamarin.Essentials позволяет отслеживать датчик гироскопа устройства, который измеряет вращение вокруг трех основных осей устройства".
+ms.assetid: DA4F968A-D988-41F5-8745-1BEE693660A1 author: jamesmontemagno ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-gyroscope"></a>Xamarin.Essentials. Гироскоп

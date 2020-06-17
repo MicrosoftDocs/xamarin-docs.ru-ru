@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 42d3943b00fc2ae5385343f946d9d96743e955cd
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138844"
+title: "Передача параметров эффекту" description: "Параметры эффектов могут быть определены свойствами, что позволяет повторно использовать эффекты. Затем параметры можно передать эффекту, указав значение каждого свойства при создании экземпляра эффекта".
+ms.prod: xamarin ms.assetid: F6429859-6EF7-48BE-A0CB-8F42B8A75215 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/06/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="passing-parameters-to-an-effect"></a>Передача параметров эффекту
 
 _Параметры эффектов могут быть определены свойствами, что позволяет повторно использовать эффекты. Затем параметры можно передать эффекту, указав значение каждого свойства при создании экземпляра эффекта._

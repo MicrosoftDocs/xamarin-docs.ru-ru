@@ -124,7 +124,7 @@ xmlns:models="clr-namespace:Monkeys.Models"
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-### <a name="requirements"></a>Requirements (Требования)
+### <a name="requirements"></a>Требования
 
 Для данных времени разработки требуется минимальная версия Xamarin.Forms 3,6.
 

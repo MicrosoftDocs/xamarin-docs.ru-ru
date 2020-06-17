@@ -1,9 +1,6 @@
 ---
-title: ''Xamarin.Essentials: Отслеживание версий'' description: 'Класс VersionTracking в Xamarin.Essentials позволяет проверить версию и номера сборки приложений, а также просмотреть дополнительные сведения, например, запущено ли приложение впервые, или получение сведений о предыдущей сборке для текущей версии и многое другое.'
-ms.assetid: author: ms.author: ms.date: ms.custom: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: отслеживание версий'' description: "Класс VersionTracking в Xamarin.Essentials позволяет проверить версию и номера сборки приложений, а также просмотреть дополнительные сведения, например запущено ли приложение впервые, или получить сведения о предыдущей сборке для текущей версии и многое другое".
+ms.assetid: 670C7E8A-E882-4AC0-97D2-A53D90ADD6A3 author: jamesmontemagno ms.author: jamont ms.date: 28.05.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-version-tracking"></a>Xamarin.Essentials. Отслеживание версий

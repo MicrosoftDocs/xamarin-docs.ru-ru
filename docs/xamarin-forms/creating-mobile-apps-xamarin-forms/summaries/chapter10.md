@@ -1,24 +1,8 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 10. XAML markup extensions''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8f23034df684e778677e4f2e480e1c41807536fb
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136816"
+title: "Сводная информация о главе 10 (Расширения разметки XAML)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 10 (Расширения разметки XAML)"; ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 575EAE55-BD4D-470F-A583-3D065FA102E2 author: davidbritch ms.author: dabritch ms.date: 19.07.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="summary-of-chapter-10-xaml-markup-extensions"></a>Сводка по главе 10. Расширения разметки XAML
+
+# <a name="summary-of-chapter-10-xaml-markup-extensions"></a>Сводная информация о главе 10. Расширения разметки XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter10)
 

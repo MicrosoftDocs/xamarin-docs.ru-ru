@@ -1,22 +1,8 @@
 ---
-title: Главная страница и страница сведений в Xamarin.Forms
-description: Xamarin.Forms MasterDetailPage представляет собой страницу, управляющую двумя страницами связанных данных — главной страницей, которая представляет элементы, и страницей сведений, которая представляет сведения об элементах на главной странице. В этой статье описываются принципы работы со страницей MasterDetailPage и перехода между управляемыми страницами данных.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 89b1dedcb6219a32332641550018405abd4b6870
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137817"
+title: "Xamarin.Forms — главная страница и страница сведений" description: "MasterDetailPage Xamarin.Forms представляет собой страницу, управляющую двумя страницами связанных данных — главной страницей, которая представляет элементы, и страницей сведений, которая представляет сведения об элементах на главной странице. В этой статье описываются принципы работы со страницей MasterDetailPage и перехода между управляемыми страницами данных".
+ms.prod: xamarin ms.assetid: 119945E3-58B8-4630-A3D2-8B561529D53B ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/01/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-master-detail-page"></a>Главная страница и страница сведений в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-masterdetailpage)
@@ -51,11 +37,11 @@ _Xamarin.Forms MasterDetailPage представляет собой страни
 
 - В iOS страница сведений *сдвигается* вправо, а главная страница выдвигается слева. При этом левая часть страницы сведений по-прежнему остается видимой.
 - В Android главная страница и страницы сведений *накладываются* друг на друга.
-- В UWP эталонная страница сдвигается из левой части страницы сведений с учетом того, что свойство [`MasterBehavior`](xref:Xamarin.Forms.MasterDetailPage.MasterBehavior) имеет значение `Popover`. Дополнительные сведения см. в разделе [Управление отображением страницы сведений](#Controlling_the_Detail_Page_Display_Behavior).
+- В UWP эталонная страница сдвигается из левой части страницы сведений с учетом того, что свойство [`MasterBehavior`](xref:Xamarin.Forms.MasterDetailPage.MasterBehavior) имеет значение `Popover`. Дополнительные сведения см. в разделе [Управление отображением страницы сведений](#controlling-the-detail-page-display-behavior).
 
 Аналогичное поведение реализуется в альбомном режиме. Исключение составляют платформы iOS и Android, на которых главная страница сохраняет ту же ширину, что и в книжной ориентации, благодаря чему отображается больше содержимого страницы сведений.
 
-Дополнительные сведения об управлении поведением при навигации см. в статье [Управление поведением при отображении страницы сведений](#Controlling_the_Detail_Page_Display_Behavior).
+Дополнительные сведения об управлении поведением при навигации см. в статье [Управление поведением при отображении страницы сведений](#controlling-the-detail-page-display-behavior).
 
 ## <a name="creating-a-masterdetailpage"></a>Создание страницы MasterDetailPage
 
@@ -249,8 +235,6 @@ public partial class MainPage : MasterDetailPage
 На следующих снимках экрана показана страница сведений `ContactPage`, которая выводится на экран после выбора соответствующего элемента на главной странице:
 
 ![](master-detail-page-images/detailpage.png "Detail Page Example")
-
-<a name="Controlling_the_Detail_Page_Display_Behavior" />
 
 ### <a name="controlling-the-detail-page-display-behavior"></a>Управление поведением при отображении страницы сведений
 

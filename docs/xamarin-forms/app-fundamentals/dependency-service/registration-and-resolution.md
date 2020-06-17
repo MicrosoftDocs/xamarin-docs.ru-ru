@@ -1,22 +1,8 @@
 ---
-title: Регистрация и разрешение класса Xamarin.Forms DependencyService
-description: В этой статье объясняется, как использовать класс Xamarin.Forms DependencyService для вызова собственных функций платформы.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 50d77e9ba41767aa1f676bf21994431844fc4530
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138779"
+title: "Xamarin.Forms — регистрация и разрешение класса DependencyService" description: "В этой статье объясняется, как использовать класс Xamarin.Forms DependencyService для вызова собственных функций платформы".
+ms.prod: xamarin ms.assetid: 5d019604-4f6f-4932-9b26-1fce3b4d88f8 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 06/05/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-dependencyservice-registration-and-resolution"></a>Регистрация и разрешение класса Xamarin.Forms DependencyService
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)

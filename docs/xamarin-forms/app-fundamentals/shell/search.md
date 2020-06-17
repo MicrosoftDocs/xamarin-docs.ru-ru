@@ -1,9 +1,6 @@
 ---
-title: 'Xamarin.Forms Поиск по оболочке' description: 'Xamarin.Forms Приложения оболочки могут использовать интегрированную функцию поиска, которая реализована в виде поля поиска в верхней части каждой страницы.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Forms — поиск по оболочке" description: "Xamarin.Forms — приложения оболочки могут использовать интегрированную функцию поиска, которая реализована в виде поля поиска в верхней части каждой страницы".
+ms.prod: xamarin ms.assetid: F8F9471D-6771-4D23-96C0-2B79473A06D4 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/18/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinforms-shell-search"></a>Поиск по оболочке Xamarin.Forms

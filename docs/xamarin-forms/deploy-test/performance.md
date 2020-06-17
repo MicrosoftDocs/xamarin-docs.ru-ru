@@ -1,22 +1,8 @@
 ---
-title: Повышение производительности приложения Xamarin.Forms
-description: Существует множество методов повышения производительности приложений Xamarin.Forms. Вместе они могут значительно снизить загрузку ЦП и сократить объем памяти, используемой приложением.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 96b5939fd1f8448d45d1398fd56770f9032de083
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139117"
+title: "Повышение производительности приложения Xamarin.Forms" description: "Существует множество методов повышения производительности приложений Xamarin.Forms. Вместе они могут значительно снизить объем работы, выполняемой ЦП, а также объем используемой приложением памяти".
+ms.prod: xamarin ms.assetid: 0be84c56-6698-448d-be5a-b4205f1caa9f ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/27/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="improve-xamarinforms-app-performance"></a>Повышение производительности приложения Xamarin.Forms
 
 > [!VIDEO https://youtube.com/embed/RZvdql3Ev0E]

@@ -1,22 +1,8 @@
 ---
-title: Путь привязки Xamarin.Forms
-description: В этой статье описывается, как использовать привязки данных Xamarin.Forms для доступа к вложенным свойствам и элементам коллекций с помощью свойства Path класса Binding.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 0657f39d0584405ea1a6d7611ac789488817770f
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139746"
+title: "Xamarin.Forms — путь привязки" description: "В этой статье описывается, как использовать привязки данных Xamarin.Forms для доступа к вложенным свойствам и элементам коллекций с помощью свойства Path класса Binding".
+ms.prod: xamarin ms.assetid: 3CF721A5-E157-468B-AD3A-DA0A45E58E8D ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-binding-path"></a>Путь привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
@@ -127,7 +113,7 @@ ms.locfileid: "84139746"
 </Label>
 ```
 
-Дополнительные сведения об указании аргументов конструктора в XAML см. в разделе [Передача аргументов конструктора](~/xamarin-forms/xaml/passing-arguments.md#constructor_arguments).
+Дополнительные сведения об указании аргументов конструктора в XAML см. в разделе [Передача аргументов конструктора](~/xamarin-forms/xaml/passing-arguments.md#passing-constructor-arguments).
 
 Наконец, последний пример аналогичен второму, за тем исключением, что он ссылается на один из дочерних элементов `StackLayout`:
 

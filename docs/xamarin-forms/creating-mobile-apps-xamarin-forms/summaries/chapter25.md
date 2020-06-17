@@ -1,24 +1,8 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 25. Page varieties''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e66fb50b8d537ee0267457d5b0ab0f417813e676
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136621"
+title: "Сводная информация о главе 25 (Виды страниц)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 25 (Виды страниц)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: D1D348F2-6A44-4781-ADCE-A0B7BB9AEF89 author: davidbritch ms.author: dabritch ms.date: 11/07/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="summary-of-chapter-25-page-varieties"></a>Сводка по главе 25. Виды страниц
+
+# <a name="summary-of-chapter-25-page-varieties"></a>Сводная информация о главе 25. Виды страниц
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter25)
 

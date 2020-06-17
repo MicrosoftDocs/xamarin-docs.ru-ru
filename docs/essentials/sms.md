@@ -1,9 +1,6 @@
 ---
-title: ''Xamarin.Essentials: SMS'' description: 'Класс Sms в Xamarin.Essentials позволяет приложению открыть приложение SMS по умолчанию с указанным сообщением, которое нужно отправить получателю.'
-ms.assetid: author: ms.custom: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: SMS'' description: "Класс SMS в Xamarin.Essentials позволяет приложению открыть приложение SMS по умолчанию с указанным сообщением, которое нужно отправить получателю".
+ms.assetid: 81A757F2-6F2A-458F-B9BE-770ADEBFAB58 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-sms"></a>Xamarin.Essentials. SMS

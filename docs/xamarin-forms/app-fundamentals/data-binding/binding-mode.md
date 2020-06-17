@@ -1,22 +1,8 @@
 ---
-title: Режим привязки Xamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: c14215071a1d9d3ec804c307fa6edbbe4ddcf8e9
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139780"
+title: "Xamarin.Forms — режим привязки" description: "В этой статье объясняется, как управлять потоком данных между источником и целевым объектом с помощью режима привязки, который указывается с помощью члена перечисления BindingMode. Каждое привязываемое свойство имеет режим привязки по умолчанию, который указывает режим, действующий, когда свойство является целевым объектом привязки данных".
+ms.prod: xamarin ms.assetid: D087C389-2E9E-47B9-A341-5B14AC732C45 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/01/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-binding-mode"></a>Режим привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

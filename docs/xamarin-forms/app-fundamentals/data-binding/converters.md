@@ -1,22 +1,8 @@
 ---
-title: Преобразователи значений привязки Xamarin.Forms
-description: В этой статье объясняется, как выполнить приведение или преобразование значений в пределах привязки данных Xamarin.Forms путем реализации преобразователя величин (который также называется преобразователем привязки или преобразователем значений привязки).
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e1a4faabc8f0703b497062a8c5d587221692dab7
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139767"
+title: "Xamarin.Forms — преобразователи значений привязки" description: "В этой статье объясняется, как выполнить приведение или преобразование значений в пределах привязки данных Xamarin.Forms путем реализации преобразователя величин (который также называется преобразователем привязки или преобразователем значений привязки)".
+ms.prod: xamarin ms.assetid: 02B1BBE6-D804-490D-BDD4-8ACED8B70C92 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-binding-value-converters"></a>Преобразователи значений привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

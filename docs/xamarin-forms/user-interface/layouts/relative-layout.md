@@ -11,7 +11,7 @@ MS. произв. Xamarin MS. AssetID: 2530BCB8-01B8-4C4F-BF14-CA53659F1B5A MS. 
 
 [![](relative-layout-images/layouts-sml.png "Xamarin.Forms Layouts")](relative-layout-images/layouts.png#lightbox "Xamarin.Forms Layouts")
 
-## <a name="purpose"></a>Назначение
+## <a name="purpose"></a>Цель
 
 `RelativeLayout`может использоваться для позиционирования представлений на экране относительно общего макета или других представлений.
 

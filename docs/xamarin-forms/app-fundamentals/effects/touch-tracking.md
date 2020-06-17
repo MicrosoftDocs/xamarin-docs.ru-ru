@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 892bffa4027a1a61d6c22cc26d1556fb007432d8
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136985"
+title: "Вызов событий из эффектов" description: "Эффект может определять вызов события, сигнализирующего об изменениях в базовом собственном представлении. В этой статье описываются реализация низкоуровневого отслеживания мультисенсорного ввода, а также создание событий, сигнализирующих о прикосновениях".
+ms.prod: xamarin ms.assetid: 6A724681-55EB-45B8-9EED-7E412AB19DD2 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/14/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="invoking-events-from-effects"></a>Вызов событий из эффекта
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/)

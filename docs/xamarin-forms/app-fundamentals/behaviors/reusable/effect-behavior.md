@@ -1,22 +1,8 @@
 ---
-title: ''
-description: Реакции на события удобно использовать для добавления эффекта в элемент управления, удаления стереотипного эффекта, обработки кода из файлов кода программной части. В этой статье демонстрируется создание и использование реакции на событие Xamarin.Forms для добавления эффекта в элемент управления.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 0a105548f869eb448a990a1cc12e6feff4197d48
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84135789"
+title: "Повторно используемая реакция на событие EffectBehavior" description: "Реакции на события удобно использовать для добавления эффекта в элемент управления, удаления стереотипного эффекта, обработки кода из файлов кода программной части. В этой статье демонстрируется создание и использование реакции на событие Xamarin.Forms для добавления эффекта в элемент управления".
+ms.prod: xamarin ms.assetid: A909B24D-960A-4023-AFF6-4B9256C55ADD ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/06/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="reusable-effectbehavior"></a>Повторно используемая реакция на событие EffectBehavior
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-effectbehavior)

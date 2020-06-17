@@ -1,9 +1,6 @@
 ---
-title: description: 'ViewCell в Xamarin.Forms — это ячейка, которую можно добавить в представление ListView или TableView и которая содержит представления, определяемые разработчиком. В этой статье показано, как создать пользовательский отрисовщик для ячейки ViewCell, размещенной в элементе управления ListView Xamarin.Forms.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Настройка ViewCell" description: "ViewCell в Xamarin.Forms — это ячейка, которую можно добавить в представление ListView или TableView и которая содержит представления, определяемые разработчиком. В этой статье показано, как создать пользовательский отрисовщик для ячейки ViewCell, размещенной в элементе управления ListView Xamarin.Forms".
+ms.prod: xamarin ms.assetid: 61F378C9-6DEF-436B-ACC3-2324B25D404E ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/07/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="customizing-a-viewcell"></a>Настройка ViewCell
@@ -20,13 +17,11 @@ _ViewCell в Xamarin.Forms — это ячейка, которую можно д
 
 Процесс отрисовки можно использовать для реализации настроек конкретных платформ путем создания пользовательского отрисовщика для [`ViewCell`](xref:Xamarin.Forms.ViewCell) на каждой платформе. Этот процесс выглядит следующим образом:
 
-1. [Создание](#Creating_the_Custom_Cell) пользовательской ячейки Xamarin.Forms.
-1. [Использование](#Consuming_the_Custom_Cell) пользовательской ячейки в Xamarin.Forms.
-1. [Создание](#Creating_the_Custom_Renderer_on_each_Platform) пользовательского отрисовщика для ячейки для каждой платформы.
+1. [Создание](#creating-the-custom-cell) пользовательской ячейки Xamarin.Forms.
+1. [Использование](#consuming-the-custom-cell) пользовательской ячейки в Xamarin.Forms.
+1. [Создание](#creating-the-custom-renderer-on-each-platform) пользовательского отрисовщика для ячейки для каждой платформы.
 
 Мы обсудим каждый элемент по очереди, чтобы реализовать отрисовщик `NativeCell`, в котором используются преимущества зависящих от платформы макетов для каждой ячейки, размещенной в элементе управления [`ListView`](xref:Xamarin.Forms.ListView) Xamarin.Forms. Это предотвратит постоянные вызовы вычисления макета Xamarin.Forms во время прокрутки `ListView`.
-
-<a name="Creating_the_Custom_Cell" />
 
 ## <a name="creating-the-custom-cell"></a>Создание пользовательской ячейки
 
@@ -62,8 +57,6 @@ public class NativeCell : ViewCell
 ```
 
 Класс `NativeCell` создается в проекте библиотеки .NET Standard и определяет API для пользовательской ячейки. Пользовательская ячейка предоставляет свойства `Name`, `Category` и `ImageFilename`, которые могут отображаться посредством привязки данных. Дополнительные сведения о привязке данных см. в статье [Основы привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md).
-
-<a name="Consuming_the_Custom_Cell" />
 
 ## <a name="consuming-the-custom-cell"></a>Использование пользовательской ячейки
 
@@ -143,8 +136,6 @@ public class NativeCellPageCS : ContentPage
 Каждая строка в списке содержит три элемента данных — имя, категорию и имя файла изображения. Макет каждой строки в списке определяется `DataTemplate` со ссылкой через привязываемое свойство [`ListView.ItemTemplate`](xref:Xamarin.Forms.ItemsView`1.ItemTemplate). `DataTemplate` определяет, что каждая строка данных в списке будет ячейкой `NativeCell`, отображающей свойства `Name`, `Category` и `ImageFilename` посредством привязки данных. Дополнительные сведения об элементе управления `ListView`см. в статье [ListView](~/xamarin-forms/user-interface/listview/index.md).
 
 Теперь в каждый проект приложения можно добавить пользовательский отрисовщик для настройки определяемого платформой макета для каждой ячейки.
-
-<a name="Creating_the_Custom_Renderer_on_each_Platform" />
 
 ## <a name="creating-the-custom-renderer-on-each-platform"></a>Создание пользовательского отрисовщика на каждой платформе
 

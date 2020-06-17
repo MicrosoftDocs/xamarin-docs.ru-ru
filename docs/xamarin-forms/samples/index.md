@@ -1,22 +1,8 @@
 ---
-title: Примеры Xamarin.Forms
-description: Примеры приложений Xamarin.Forms и образцы кода помогут вам начать работу с платформой Xamarin.Forms и понять ее концепции.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 896b5880b92cecc7bd9eb360306d902ff0f876c5
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84135945"
+title: "Xamarin.Forms — примеры" description: "Примеры приложений Xamarin.Forms и образцы кода помогут вам начать работу с платформой Xamarin.Forms и понять ее концепции".
+ms.prod: xamarin ms.assetid: AB986E8E-E831-4E0A-9F1D-6C3D88F35E9C ms.technology: xamarin-forms author: profexorgeek ms.author: jusjohns ms.date: 12/27/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-samples"></a>Примеры Xamarin.Forms
 
 Примеры приложений Xamarin.Forms и образцы кода помогут вам начать работу с платформой Xamarin.Forms и понять ее концепции.

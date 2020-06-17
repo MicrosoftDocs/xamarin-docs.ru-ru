@@ -1,22 +1,8 @@
 ---
-title: Навигация в Xamarin.Forms
-description: В этом руководстве содержатся сведения о переходах в приложениях Xamarin.Forms. Xamarin.Forms предоставляет ряд различных способов перехода по страницам в зависимости от используемого типа страницы.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8c907cd8a4a1d14b936dee309610bffc67ef363f
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137843"
+title: "Xamarin.Forms — навигация" description: "В этом руководстве содержатся сведения о переходах в приложениях Xamarin.Forms. Xamarin.Forms предоставляет ряд различных способов перехода по страницам в зависимости от используемого типа страницы".
+ms.prod: xamarin ms.assetid: BC5D0C6C-D5A9-4B12-A492-ED1F570CEC87 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/01/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-navigation"></a>Навигация в Xamarin.Forms
 
 _Xamarin.Forms предоставляет ряд различных способов перехода по страницам в зависимости от используемого типа страницы._

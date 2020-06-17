@@ -1,22 +1,8 @@
 ---
-title: Конструктивные шаблоны Xamarin.Forms для двухэкранных устройств
-description: В этом руководстве описаны поддерживаемые в Xamarin.Forms конструктивные шаблоны, оптимизированные для двухэкранных устройств.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 277fb67eeea465239d9340e755240288286d2359
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138792"
+title: "Xamarin.Forms — конструктивные шаблоны двухэкранных устройств" description: "В этом руководстве описаны поддерживаемые в Xamarin.Forms конструктивные шаблоны, оптимизированные для двухэкранных устройств".
+ms.prod: xamarin ms.assetid: 3176d792-6dba-4e00-b463-497c58678ee9 ms.technology: xamarin-forms author: davidortinau ms.author: daortin ms.date: 02/08/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-dual-screen-design-patterns"></a>Конструктивные шаблоны Xamarin.Forms для двухэкранных устройств
 
 ![](~/media/shared/preview.png "This API is currently pre-release")

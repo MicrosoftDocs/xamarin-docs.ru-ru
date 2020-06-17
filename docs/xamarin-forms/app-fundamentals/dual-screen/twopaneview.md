@@ -1,22 +1,8 @@
 ---
-title: Макет для двух экранов Xamarin.Forms
-description: В этом руководстве рассматривается использование контейнера TwoPaneView из Xamarin.Forms для оптимизации интерфейса приложения на двухэкранных устройствах, таких как Surface Duo и Surface Neo.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 28d4b3da44cc1a022b70c0de0720be747e047f9f
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138896"
+title: "Макет для двух экранов Xamarin.Forms" description: "В этом руководстве рассматривается использование контейнера TwoPaneView из Xamarin.Forms для оптимизации интерфейса приложения на двухэкранных устройствах, таких как Surface Duo и Surface Neo".
+ms.prod: xamarin ms.assetid: 17ee8afa-5e7c-4a4f-a9b6-2aca03f30fe3 ms.technology: xamarin-forms author: davidortinau ms.author: daortin ms.date: 02/08/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-dual-screen-layout"></a>Макет для двух экранов Xamarin.Forms
 
 ![](~/media/shared/preview.png "This API is currently pre-release")

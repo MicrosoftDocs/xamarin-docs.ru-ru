@@ -1,22 +1,8 @@
 ---
-title: Всплывающий элемент оболочки Xamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: b336a594fa7525000e119333b56284368a23cc03
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84134957"
+title: "Xamarin.Forms — всплывающий элемент оболочки" description: "Всплывающий элемент выполняет роль главного меню для приложения оболочки. Его можно вызвать специальным значком или жестом пальцем от края экрана. Всплывающий элемент состоит из необязательного заголовка, пунктов всплывающего элемента и необязательных пунктов меню".
+ms.prod: xamarin ms.assetid: FEDE51EB-577E-4B3E-9890-B7C1A5E52516 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/22/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-shell-flyout"></a>Всплывающий элемент оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)

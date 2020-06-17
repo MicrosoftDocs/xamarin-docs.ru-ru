@@ -1,22 +1,8 @@
 ---
-title: Реакции на события Xamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 83952982bd163725fb931c860cac3e267726315c
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84135815"
+title: "Xamarin.Forms Реакции на события" description: "Реакции на события позволяют добавлять функциональные возможности в элементы управления пользовательского интерфейса без разделения их на подклассы. Реакции на события пишутся в коде и добавляются в элементы управления в XAML или коде".
+ms.prod: xamarin ms.assetid: 42E32AD7-8E3B-48B3-B402-E75B758DA913 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/06/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-behaviors"></a>Реакции на события Xamarin.Forms
 
 _Реакции на события позволяют добавлять функциональные возможности в элементы управления пользовательского интерфейса без разделения их на подклассы. Реакции на события пишутся в коде и добавляются в элементы управления в XAML или коде._

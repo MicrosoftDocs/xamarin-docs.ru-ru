@@ -1,23 +1,7 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 8. Code and XAML in harmony''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 90db8b4f11095a2a56c82c3f563844efbcf7e2b1
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136829"
+title: "Сводная информация о главе 8 (Совместное использование кода и XAML)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 8 (Совместное использование кода и XAML)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 5970DEEB-1FC9-4F78-B4F6-D403E16D22ED author: davidbritch ms.author: dabritch ms.date: 19.07.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="summary-of-chapter-8-code-and-xaml-in-harmony"></a>Сводная информация о Главе 8. Совместное использование кода и XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter08)

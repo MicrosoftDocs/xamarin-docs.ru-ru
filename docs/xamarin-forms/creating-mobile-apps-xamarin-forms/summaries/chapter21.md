@@ -1,23 +1,7 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 21. Transforms''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 32393108f84ea3a57079c86b6a9a8e628ceca03a
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136673"
+title: "Сводная информация о главе 21 (Transform)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 21 (Transform)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 3642F112-C7FA-4A74-9000-F9087BA89AD9 author: davidbritch ms.author: dabritch ms.date: 11/07/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="summary-of-chapter-21-transforms"></a>Сводная информация о Главе 21. Transform
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter21)

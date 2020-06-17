@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 53122991811c06360e8d015a753096cb35c1cca0
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137635"
+title: "Добавление распознавателя жестов сдвига" description: "В этой статье описывается, как использовать жест сдвига для смещения изображения по горизонтали или вертикали, когда оно не помещается полностью в окне просмотра".
+ms.prod: xamarin ms.assetid: 42CBD2CF-432D-4F19-A05E-D569BB7F8713 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/21/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="adding-a-pan-gesture-recognizer"></a>Добавление распознавателя жестов сдвига
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-pangesture)

@@ -1,24 +1,8 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 2. Anatomy of an app''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 78da3ed91acea0c056074d712d368de70b251392
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136924"
+title: "Сводная информация о главе 2 (Структура приложения)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 2. (Структура приложения)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 8764EB7D-8331-4CF7-9BE1-26D0DEE9E0BB author: davidbritch ms.author: dabritch ms.date: 07/17/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="summary-of-chapter-2-anatomy-of-an-app"></a>Сводка по главе 2. Анатомия приложения
+
+# <a name="summary-of-chapter-2-anatomy-of-an-app"></a>Сводная информация о главе 2. Анатомия приложения
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter02)
 

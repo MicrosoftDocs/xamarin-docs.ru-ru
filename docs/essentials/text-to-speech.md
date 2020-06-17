@@ -1,9 +1,6 @@
 ---
-title: ''Xamarin.Essentials: Преобразование текста в речь'' description: 'Класс TextToSpeech в Xamarin.Essentials позволяет приложению использовать встроенные механизмы преобразования текста в речь, чтобы озвучивать текст на устройстве, а также запрашивать доступные языки, которые может поддерживать подсистема.'
-ms.assetid: author: ms.custom: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: преобразование текста в речь'' description: "Класс TextToSpeech в Xamarin.Essentials позволяет приложению использовать встроенные механизмы преобразования текста в речь, чтобы озвучивать текст на устройстве, а также запрашивать доступные языки, которые может поддерживать подсистема".
+ms.assetid: AEEF03AE-A047-4DF0-B0E8-CC8D9A7B8351 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-text-to-speech"></a>Xamarin.Essentials. Преобразование текста в речь

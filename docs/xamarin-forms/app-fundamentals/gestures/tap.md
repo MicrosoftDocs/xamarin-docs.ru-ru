@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как использовать жест касания для распознавания касания в приложении Xamarin.Forms. Распознавание касания реализовано с помощью класса TapGestureRecognizer.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 0470419dd5070424c362dec8d4b1978507985783
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137622"
+title: "Добавление распознавателя жестов касания" description: "В этой статье объясняется, как использовать жест касания для распознавания касания в приложении Xamarin.Forms. Распознавание касания реализовано с помощью класса TapGestureRecognizer".
+ms.prod: xamarin ms.assetid: 1D150BAF-4157-49BC-90A0-153323B8EBCF ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/21/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="adding-a-tap-gesture-recognizer"></a>Добавление распознавателя жестов касания
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-tapgesture)
@@ -40,8 +26,6 @@ tapGestureRecognizer.NumberOfTapsRequired = 2; // double-tap
 ```
 
 Если свойство [`NumberOfTapsRequired`](xref:Xamarin.Forms.TapGestureRecognizer.NumberOfTapsRequired) имеет значение больше единицы, обработчик событий выполняется только при том условии, что касания были совершены в течение определенного периода времени (настроить его нельзя). Если второе или последующие касания не были совершены в течение этого периода, они игнорируются и счетчик касаний сбрасывается.
-
-<a name="Using_Xaml" />
 
 ## <a name="using-xaml"></a>Использование XAML
 

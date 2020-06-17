@@ -1,22 +1,8 @@
 ---
-title: Многоразовый RoundEffect в Xamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: fc3776934a4c109b2527132b11c6c6a93b7d9f9e
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138857"
+title: "Xamarin.Forms — многоразовый RoundEffect" description: "RoundEffect — это многоразовый эффект, который можно применить к любому элементу управления, производному от VisualElement, для отрисовки этого элемента управления в виде круга".
+ms.prod: xamarin ms.assetid: B5DE7507-B565-4EE5-9897-27E5733FD173 ms.technology: xamarin-forms author: profexorgeek ms.author: jusjohns ms.date: 10/25/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-reusable-roundeffect"></a>Многоразовый RoundEffect в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-roundeffect/)

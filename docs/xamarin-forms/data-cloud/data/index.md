@@ -5,7 +5,7 @@ MS. произв. Xamarin MS. AssetID: A324C247-7DA8-4B14-A813-25F85525E32B MS. 
 
 # <a name="xamarinforms-local-data-storage"></a>Xamarin.Formsлокальное хранилище данных
 
-## <a name="files"></a>[Файла](files.md)
+## <a name="files"></a>[Файлы](files.md)
 
 Обработка файлов в Xamarin.Forms среде может быть достигнута с помощью кода в библиотеке .NET Standard или с помощью внедренных ресурсов. В этой статье объясняется, как выполнять обработку файлов из общего кода в Xamarin.Forms приложении.
 

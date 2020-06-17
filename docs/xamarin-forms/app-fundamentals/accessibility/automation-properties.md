@@ -1,22 +1,8 @@
 ---
-title: ''
-description: Эта статья поясняет, как использовать класс AutomationProperties в приложении Xamarin.Forms, чтобы средство чтения с экрана могло озвучивать элементы на странице.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: ad6d315ccc5be0a7709164d40685c842b61b90b4
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84129978"
+title: "Свойства автоматизации" description: "Эта статья поясняет, как использовать класс AutomationProperties в приложении Xamarin.Forms, чтобы средство чтения с экрана могло озвучивать элементы на странице".
+ms.prod: xamarin ms.assetid: c0bb6893-fd26-47e7-88e5-3c333c9f786c ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/18/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="automation-properties-in-xamarinforms"></a>Свойства автоматизации в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-accessibility)
@@ -25,10 +11,10 @@ _Xamarin.Forms позволяет задавать значения специа
 
 Xamarin.Forms позволяет задавать свойства автоматизации в элементах пользовательского интерфейса с помощью следующих присоединенных свойств:
 
-- `AutomationProperties.IsInAccessibleTree` — указывает, доступен ли элемент приложению специальных возможностей. Дополнительные сведения см. в разделе [AutomationProperties.IsInAccessibleTree](#isinaccessibletree).
-- `AutomationProperties.Name` — краткое описание элемента, выступающего в качестве произносимого идентификатора для элемента. Дополнительные сведения см. в разделе [AutomationProperties.Name](#name).
-- `AutomationProperties.HelpText` — более подробное описание элемента, которое можно рассматривать как текст подсказки, связанный с элементом. Дополнительные сведения см. в разделе [AutomationProperties.HelpText](#helptext).
-- `AutomationProperties.LabeledBy` — позволяет другому элементу определить сведения о специальных возможностях для текущего элемента. Дополнительные сведения см. в разделе [AutomationProperties.LabeledBy](#labeledby).
+- `AutomationProperties.IsInAccessibleTree` — указывает, доступен ли элемент приложению специальных возможностей. Дополнительные сведения см. в разделе [AutomationProperties.IsInAccessibleTree](#automationpropertiesisinaccessibletree).
+- `AutomationProperties.Name` — краткое описание элемента, выступающего в качестве произносимого идентификатора для элемента. Дополнительные сведения см. в разделе [AutomationProperties.Name](#automationpropertiesname).
+- `AutomationProperties.HelpText` — более подробное описание элемента, которое можно рассматривать как текст подсказки, связанный с элементом. Дополнительные сведения см. в разделе [AutomationProperties.HelpText](#automationpropertieshelptext).
+- `AutomationProperties.LabeledBy` — позволяет другому элементу определить сведения о специальных возможностях для текущего элемента. Дополнительные сведения см. в разделе [AutomationProperties.LabeledBy](#automationpropertieslabeledby).
 
 Эти присоединенные свойства задают собственные значения специальных возможностей таким образом, чтобы средство чтения с экрана могло озвучить сведения об элементе. Дополнительные сведения о присоединенных свойствах см. в разделе [Присоединенные свойства](~/xamarin-forms/xaml/attached-properties.md).
 
@@ -51,8 +37,6 @@ Xamarin.Forms позволяет задавать свойства автома�
 
 Кроме того, экранный диктор расставит приоритеты следующим образом: `AutomationProperties.Name`, `AutomationProperties.LabeledBy` и затем `AutomationProperties.HelpText`. TalkBack в Android может сочетать значения `AutomationProperties.Name` и `AutomationProperties.HelpText`. Поэтому для обеспечения оптимальной работы рекомендуется тщательно протестировать специальные возможности для каждой платформы.
 
-<a name="isinaccessibletree" />
-
 ## <a name="automationpropertiesisinaccessibletree"></a>AutomationProperties.IsInAccessibleTree
 
 Присоединенное свойство `AutomationProperties.IsInAccessibleTree` является `boolean`, определяющим, доступен ли элемент (и, соответственно, видят ли его средства чтения с экрана). Чтобы использовать другие присоединенные свойства специальных возможностей, для него нужно задать значение `true`. Это можно сделать в XAML следующим образом:
@@ -70,8 +54,6 @@ AutomationProperties.SetIsInAccessibleTree(entry, true);
 
 > [!NOTE]
 > Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.IsInAccessibleTree` — `entry.SetValue(AutomationProperties.IsInAccessibleTreeProperty, true);`.
-
-<a name="name" />
 
 ## <a name="automationpropertiesname"></a>AutomationProperties.Name
 
@@ -92,8 +74,6 @@ AutomationProperties.SetName(activityIndicator, "Progress indicator");
 
 > [!NOTE]
 > Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.Name` — `activityIndicator.SetValue(AutomationProperties.NameProperty, "Progress indicator");`.
-
-<a name="helptext" />
 
 ## <a name="automationpropertieshelptext"></a>AutomationProperties.HelpText
 
@@ -117,8 +97,6 @@ AutomationProperties.SetHelpText(button, "Tap to toggle the activity indicator")
 > Обратите внимание, что метод [`SetValue`](xref:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)) также можно использовать для задания присоединенного свойства `AutomationProperties.HelpText` — `button.SetValue(AutomationProperties.HelpTextProperty, "Tap to toggle the activity indicator");`.
 
 На некоторых платформах для редактирования элементов управления, таких как [`Entry`](xref:Xamarin.Forms.Entry), свойство `HelpText` иногда можно опустить и заменить текстом заполнителя. Например, элемент "Введите здесь свое имя" является хорошим кандидатом для использования в свойстве [`Entry.Placeholder`](xref:Xamarin.Forms.InputView.Placeholder), которое помещает текст в элемент управления до фактического ввода данных пользователем.
-
-<a name="labeledby" />
 
 ## <a name="automationpropertieslabeledby"></a>AutomationProperties.LabeledBy
 

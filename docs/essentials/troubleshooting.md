@@ -1,9 +1,6 @@
 ---
-title: ''Xamarin.Essentials: Устранение неполадок'' description: 'В этом документе описывается, как устранять неполадки, возникающие при разработке с помощью библиотеки Xamarin.Essentials.'
-ms.assetid: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: устранение неполадок'' description: "В этом документе описывается, как устранять неполадки, возникающие при разработке с помощью библиотеки Xamarin.Essentials".
+ms.assetid: 2E474FAF-F841-4E3C-B815-F7ABD8EE3361 author: jamesmontemagno ms.author: jamont ms.date: 06.01.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-troubleshooting"></a>Xamarin.Essentials. Устранение неполадок

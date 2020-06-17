@@ -1,29 +1,14 @@
 ---
-title: Класс приложения Xamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-ms.custom: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 2f4b568809f949d813de86ae88cbe621cfa3161c
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84129692"
+title: "Xamarin.Forms — класс App" description: "В этой статье описаны функции класса App по умолчанию, который включает в себя свойство для задания начальной страницы приложения, а также сохраняемый словарь для хранения простых значений в рамках изменений состояния жизненного цикла".
+ms.prod: xamarin ms.assetid: 421F8294-1944-46A4-8459-D2BD5AAABC9D ms.technology: xamarin-forms ms.custom: video author: davidbritch ms.author: dabritch ms.date: 02/19/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-app-class"></a>Класс приложения Xamarin.Forms
 
 Базовый класс `Application` предлагает следующие возможности, которые предоставляются в используемом по умолчанию подклассе `App` проекта:
 
 * Свойство `MainPage` используется для задания начальной страницы для приложения.
-* Сохраняемый [словарь `Properties`](#Properties_Dictionary) для хранения простых значений в рамках изменений состояния жизненного цикла.
+* Сохраняемый [словарь `Properties`](#properties-dictionary) для хранения простых значений в рамках изменений состояния жизненного цикла.
 * Статическое свойство `Current`, содержащее ссылку на текущий объект приложения.
 
 Он также предоставляет [методы жизненного цикла](~/xamarin-forms/app-fundamentals/app-lifecycle.md), например `OnStart`, `OnSleep` и `OnResume`, а также события модальной навигации.
@@ -76,8 +61,6 @@ public class App : Xamarin.Forms.Application
     }
 }
 ```
-
-<a name="Properties_Dictionary" />
 
 ## <a name="properties-dictionary"></a>Словарь Properties
 

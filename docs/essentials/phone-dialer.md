@@ -1,8 +1,5 @@
 ---
-title: ''Xamarin.Essentials: Телефон'' description: 'Класс PhoneDialer в Xamarin.Essentials позволяет приложению открывать номер телефона в набирателе номера' ms.assetid: author: ms.custom: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: PhoneDialer" description: "Класс PhoneDialer в Xamarin.Essentials позволяет приложению открывать номер телефона в набирателе номера" ms.assetid: E7457942-4D7B-4195-A2FF-417919B9537F author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 07/02/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-phone-dialer"></a>Xamarin.Essentials. Телефон

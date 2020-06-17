@@ -1,24 +1,8 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 20. Async and file I/O''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: ad71dc5f5389f1676698a761a138b3f76ffa9fa0
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136686"
+title: "Сводная информация о главе 20 (Асинхронные и файловые операции ввода-вывода)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 20 (Асинхронные и файловые операции ввода-вывода)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: D595862D-64FD-4C0D-B0AD-C1F440564247 author: davidbritch ms.author: dabritch ms.date: 07/18/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="summary-of-chapter-20-async-and-file-io"></a>Сводка по главе 20. Асинхронные и файловые операции ввода-вывода
+
+# <a name="summary-of-chapter-20-async-and-file-io"></a>Сводная информация о главе 20. Асинхронные и файловые операции ввода-вывода
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter20)
 

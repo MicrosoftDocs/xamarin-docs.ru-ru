@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 92774cffdfed7412bdb4d44993dc221993ad56c8
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137893"
+title: "Иерархическая навигация" description: "В этой статье показано, как использовать класс NavigationPage для навигации в стеке страниц по методу ЛИФО".
+ms.prod: xamarin ms.assetid: C8A5EEFF-5A3B-4163-838A-147EE3939FAA ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 03/10/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="hierarchical-navigation"></a>Иерархическая навигация
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-hierarchical)
@@ -32,8 +18,6 @@ _Класс NavigationPage обеспечивает иерархическую �
 ![](hierarchical-images/popping.png "Popping a Page from the Navigation Stack")
 
 Методы навигации предоставляются свойством [`Navigation`](xref:Xamarin.Forms.NavigableElement.Navigation) любых типов, производных от класса [`Page`](xref:Xamarin.Forms.Page). Эти методы предоставляют возможность для отправки страниц в стек навигации, извлечения страниц из стека навигации, а также для выполнения операций со стеком.
-
-<a name="Performing_Navigation" />
 
 ## <a name="performing-navigation"></a>Выполнение навигации
 
@@ -154,8 +138,6 @@ async void OnRootPageButtonClicked (object sender, EventArgs e)
 
 Установка для параметра `boolean` значения `false` отключает анимацию перехода страницы, а установка для параметра значения `true` включает анимацию, при условии что она поддерживается используемой платформой. Однако методы отправки и извлечения без этого параметра включают анимацию по умолчанию.
 
-<a name="Passing_Data_when_Navigating" />
-
 ## <a name="passing-data-when-navigating"></a>Передача данных при переходе
 
 Иногда странице необходимо передать данные другой странице во время навигации. Существует два способа: передача данных с помощью конструктора страниц и указание данных для объекта [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) новой страницы. Мы обсудим оба способа.
@@ -274,8 +256,6 @@ public class SecondPageCS : ContentPage
 ![](hierarchical-images/passing-data-bindingcontext.png "Data Passed Through a BindingContext")
 
 Дополнительные сведения о привязке данных см. в статье [Основы привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md).
-
-<a name="Manipulating_the_Navigation_Stack" />
 
 ## <a name="manipulating-the-navigation-stack"></a>Управление стеком навигации
 

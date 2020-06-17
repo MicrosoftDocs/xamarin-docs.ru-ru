@@ -1,22 +1,8 @@
 ---
-title: Краткие руководства по Xamarin.Forms
-description: Краткие руководства по разработке приложений Xamarin.Forms с помощью Visual Studio и Visual Studio для Mac.
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 03d20114fb84bf17be40d9166e32c3d631786069
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84132513"
+title: "Краткие руководства по Xamarin.Forms" description: "Краткие руководства по разработке приложений Xamarin.Forms с помощью Visual Studio и Visual Studio для Mac".
+ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 3318B8F8-3B24-489E-8E7B-28FA948796F8 author: davidbritch ms.author: dabritch ms.date: 06.01.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-quickstarts"></a>Краткие руководства по Xamarin.Forms
 
 _Узнайте, как создавать мобильные приложения с помощью Xamarin.Forms._

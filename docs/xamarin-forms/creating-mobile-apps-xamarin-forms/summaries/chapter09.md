@@ -1,23 +1,7 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 9. Platform-specific API calls''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e8feb636057f1e11c7df90236dee44697203d51c
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136865"
+title: "Сводная информация о главе 9 (Вызовы API конкретных платформ)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 9 (Вызовы API конкретных платформ)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 4FFA1BD4-B3ED-461C-9B00-06ABF70D471D author: davidbritch ms.author: dabritch ms.date: 19.07.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="summary-of-chapter-9-platform-specific-api-calls"></a>Сводная информация о Главе 9. Вызовы API конкретных платформ
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter09)

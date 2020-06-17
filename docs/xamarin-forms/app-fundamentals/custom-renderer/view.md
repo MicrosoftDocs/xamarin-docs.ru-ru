@@ -1,21 +1,6 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e565a2bcddf292d37bc3dd07a8edbbabec709d8a
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84133566"
+title: "Реализация представления" description: "Эта статья описывает, как создать настраиваемый отрисовщик для пользовательского элемента управления Xamarin.Forms, который используется для отображения видеопотока для предварительного просмотра с камеры устройства".
+ms.prod: xamarin ms.assetid: 915E25E7-4A6B-4F34-B7B4-07D5F4B240F2 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/10/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 # <a name="implementing-a-view"></a>Реализация представления
 
@@ -31,13 +16,11 @@ _Настраиваемые элементы управления пользов
 
 Процесс отрисовки можно использовать для реализации настроек конкретных платформ путем создания настраиваемого отрисовщика для [`View`](xref:Xamarin.Forms.View) на каждой платформе. Этот процесс выглядит следующим образом:
 
-1. [Создание](#Creating_the_Custom_Control) пользовательского элемента управления Xamarin.Forms.
-1. [Использование](#Consuming_the_Custom_Control) пользовательского элемента управления в Xamarin.Forms.
-1. [Создание](#Creating_the_Custom_Renderer_on_each_Platform) пользовательского отрисовщика для элемента управления на каждой платформе.
+1. [Создание](#creating-the-custom-control) пользовательского элемента управления Xamarin.Forms.
+1. [Использование](#consuming-the-custom-control) пользовательского элемента управления в Xamarin.Forms.
+1. [Создание](#creating-the-custom-renderer-on-each-platform) пользовательского отрисовщика для элемента управления на каждой платформе.
 
 Далее будет поочередно рассмотрен каждый элемент для реализации отрисовщика `CameraPreview`, который отображает видеопоток для предварительного просмотра с камеры устройства. Коснувшись видеопотока, можно запустить или остановить его.
-
-<a name="Creating_the_Custom_Control" />
 
 ## <a name="creating-the-custom-control"></a>Создание пользовательского элемента управления
 
@@ -60,8 +43,6 @@ public class CameraPreview : View
 ```
 
 Пользовательский элемент управления `CameraPreview` создается в проекте библиотеки .NET Standard и определяет API для элемента управления. Пользовательский элемент управления предоставляет свойство `Camera`, используемое для управления отображением видеопотока с передней или задней камеры на устройстве. Если при создании элемента управления значение свойства `Camera` не указано, по умолчанию используется задняя камера.
-
-<a name="Consuming_the_Custom_Control" />
 
 ## <a name="consuming-the-custom-control"></a>Использование пользовательского элемента управления
 
@@ -108,8 +89,6 @@ public class MainPageCS : ContentPage
 Экземпляр `CameraPreview` пользовательского элемента управления будет использоваться для отображения видеопотока для предварительного просмотра с камеры устройства. Кроме необязательного указания значения для свойства `Camera`, настройка элемента управления будет осуществляться в пользовательском отрисовщике.
 
 Пользовательский отрисовщик теперь можно добавлять в каждый проект приложения для создания зависящих от платформы элементов управления для предварительного просмотра с камеры.
-
-<a name="Creating_the_Custom_Renderer_on_each_Platform" />
 
 ## <a name="creating-the-custom-renderer-on-each-platform"></a>Создание пользовательского отрисовщика на каждой платформе
 

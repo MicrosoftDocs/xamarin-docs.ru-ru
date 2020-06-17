@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e1590d0a4f9716541f18bc4f50a2c480c5e4478a
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84129783"
+title: "Специальные возможности клавиатуры" description: "Чтобы не использовать последовательность табуляции по умолчанию, нужно настроить специальные возможности пользовательского интерфейса, указав эту последовательность с помощью свойств TabIndex и IsTabStop".
+ms.prod: xamarin ms.assetid: 8be8f498-558a-4894-a01f-91a0d3ef927e ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/09/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="keyboard-accessibility-in-xamarinforms"></a>Специальные возможности клавиатуры в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-accessibility)

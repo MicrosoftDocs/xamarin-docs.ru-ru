@@ -1,9 +1,6 @@
 ---
-title: ''Xamarin.Essentials: Буфер обмена'' description: 'В этом документе описывается класс Clipboard в Xamarin.Essentials, который позволяет копировать текст в системный буфер обмена и вставлять его между приложениями.'
-ms.assetid: author: ms.author: ms.date: ms.custom: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: Clipboard" description: "В этом документе описывается класс Clipboard в Xamarin.Essentials, который позволяет копировать текст в системный буфер обмена и вставлять его между приложениями".
+ms.assetid: C52AE99A-0FB3-425D-9106-3DA5777FEFA0 author: jamesmontemagno ms.author: jamont ms.date: 06.01.2020 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-clipboard"></a>Xamarin.Essentials. буфер обмена

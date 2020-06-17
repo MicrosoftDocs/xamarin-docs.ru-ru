@@ -1,22 +1,8 @@
 ---
-title: Конфигурация страницы оболочки Xamarin.Forms
-description: Класс Shell определяет присоединенные свойства, с помощью которых можно настраивать внешний вид страниц в приложениях оболочки Xamarin.Forms. Сюда относится настройка цветов страницы, отключение панели навигации, отключение панели вкладок и отображение представлений на панели навигации.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 102070fc478b42e9fbc0c7d0006197c81a49c9b8
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137505"
+title: "Xamarin.Forms — конфигурация страницы оболочки" description: "Класс Shell определяет присоединенные свойства, с помощью которых можно настраивать внешний вид страниц в приложениях оболочки Xamarin.Forms. Сюда относится настройка цветов страницы, отключение панели навигации, отключение панели вкладок и отображение представлений на панели навигации".
+ms.prod: xamarin ms.assetid: 3FC2FBD1-C30B-4408-97B2-B04E3A2E4F03 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/29/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-shell-page-configuration"></a>Конфигурация страницы оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)

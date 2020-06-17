@@ -1,8 +1,6 @@
 ---
-title: ''Xamarin.Essentials: Magnetometer'' description: ms.assetid: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: Magnetometer" description: "Класс Magnetometer в Xamarin.Essentials позволяет отслеживать датчик магнитометра устройства, который указывает на ориентацию устройства относительно магнитного поля Земли".
+ms.assetid: 64DD0D41-03E2-40DD-9EC8-101CA0ED852B author: jamesmontemagno ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-magnetometer"></a>Xamarin.Essentials. Магнитометр

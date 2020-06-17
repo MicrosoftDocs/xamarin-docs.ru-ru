@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/09/2018
-ms.openlocfilehash: 0fa717a775ff2f1ace9e248a8afde8d373e8a1f8
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 00c9c2e9f39943960d35c30602935ed109639cf4
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76724348"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84567740"
 ---
 # <a name="working-with-jni-and-xamarinandroid"></a>Работа с JNI и Xamarin.Android
 
@@ -159,7 +159,7 @@ public class HelloAndroid extends android.app.Activity {
 
 - Сбой упаковки из-за отсутствия **Mono.Android.Export.dll** &ndash; если вы использовали `ExportAttribute` или `ExportFieldAttribute` в каких-либо методах в коде или зависимых библиотеках, необходимо добавить **Mono.Android.Export.dll**. Эта сборка изолирована для поддержки кода обратного вызова из Java. Она не связана со сборкой **Mono.Android.dll**, так как увеличивает размер приложения.
 
-- В сборке с конфигурацией "Выпуск" `MissingMethodException` порождается для методов экспорта &ndash;. (Эта проблема исправлена в последней версии Xamarin.Android.)
+- В сборке с конфигурацией "Выпуск" `MissingMethodException` порождается для методов экспорта &ndash; В сборке с конфигурацией "Выпуск" `MissingMethodException` порождается для методов экспорта. (Эта проблема исправлена в последней версии Xamarin.Android.)
 
 ### <a name="exportparameterattribute"></a>ExportParameterAttribute
 
@@ -277,7 +277,7 @@ public static System.IO.Stream In
 
 Потенциально привязка метода — это не просто его вызов. Привязка метода также дает возможность переопределить метод (для абстрактных и неконечных методов) или реализовать его (для методов интерфейса). В разделе [Поддержка наследования и интерфейсы](#_Supporting_Inheritance,_Interfaces_1) описываются сложности поддержки виртуальных методов и методов интерфейса.
 
-<a name="_Static_Methods_1" />
+<a name="_Static_Methods_1"></a>
 
 #### <a name="static-methods"></a>Статические методы
 
@@ -395,7 +395,7 @@ public Integer (int value)
 
 Методы [JNIEnv.CreateInstance](xref:Android.Runtime.JNIEnv.CreateInstance*) являются вспомогательными для выполнения `JNIEnv.FindClass`, `JNIEnv.GetMethodID`, `JNIEnv.NewObject` и `JNIEnv.DeleteGlobalReference` для значения, возвращаемого из `JNIEnv.FindClass`. См. подробные сведения в следующем подразделе.
 
-<a name="_Supporting_Inheritance,_Interfaces_1" />
+<a name="_Supporting_Inheritance,_Interfaces_1"></a>
 
 ### <a name="supporting-inheritance-interfaces"></a>Поддержка наследования и интерфейсы
 
@@ -1049,7 +1049,7 @@ IntPtr lrefString = JNIEnv.CallObjectMethod(instance, methodID);
 Java.Lang.String value = Java.Lang.Object.GetObject<Java.Lang.String>( lrefString, JniHandleOwnership.TransferLocalRef);
 ```
 
-<a name="_Looking_up_Java_Types" />
+<a name="_Looking_up_Java_Types"></a>
 
 ## <a name="looking-up-java-types"></a>Поиск типов Java
 
@@ -1057,7 +1057,7 @@ Java.Lang.String value = Java.Lang.Object.GetObject<Java.Lang.String>( lrefStrin
 
 Примечание. В отличие от любого другого метода `JNIEnv`, который возвращает экземпляры объекта, `FindClass` возвращает глобальную ссылку, а не локальную ссылку.
 
-<a name="_Instance_Fields" />
+<a name="_Instance_Fields"></a>
 
 ## <a name="instance-fields"></a>Поля экземпляра
 
@@ -1123,7 +1123,7 @@ JNIEnv.SetField(IntPtr instance, IntPtr fieldID, Type value);
 
 - [JNIEnv.SetField](xref:Android.Runtime.JNIEnv.SetField*)) &ndash; запись значения полей экземпляра типа `double`.
 
-<a name="_Static_Fields" />
+<a name="_Static_Fields"></a>
 
 ## <a name="static-fields"></a>Статические поля
 
@@ -1187,7 +1187,7 @@ JNIEnv.SetStaticField(IntPtr class, IntPtr fieldID, Type value);
 
 - [JNIEnv.SetStaticField](xref:Android.Runtime.JNIEnv.SetStaticField*)) &ndash; запись значения статических полей типа `double`.
 
-<a name="_Instance_Methods" />
+<a name="_Instance_Methods"></a>
 
 ## <a name="instance-methods"></a>Методы экземпляра
 
@@ -1253,7 +1253,7 @@ JNIEnv.SetStaticField(IntPtr class, IntPtr fieldID, Type value);
 
 - [JNIEnv.CallNonvirtualDoubleMethod](xref:Android.Runtime.JNIEnv.CallNonvirtualDoubleMethod*) &ndash; невиртуальный вызов метода, который возвращает значение типа `double`.
 
-<a name="_Static_Methods" />
+<a name="_Static_Methods"></a>
 
 ## <a name="static-methods"></a>Статические методы
 
@@ -1287,7 +1287,7 @@ JNIEnv.SetStaticField(IntPtr class, IntPtr fieldID, Type value);
 
 - [JNIEnv.CallStaticDoubleMethod](xref:Android.Runtime.JNIEnv.CallStaticDoubleMethod*) &ndash; вызов статического метода, который возвращает значение типа `double`.
 
-<a name="JNI_Type_Signatures" />
+<a name="JNI_Type_Signatures"></a>
 
 ## <a name="jni-type-signatures"></a>Сигнатуры типа JNI
 
@@ -1307,7 +1307,7 @@ long f(int n, String s, int[] array);
 
 Как правило, *настоятельно* рекомендуется использовать команду `javap` для определения сигнатур JNI. Например, сигнатура типа JNI для метода [java.lang.Thread.State.valueOf(String)](https://developer.android.com/reference/java/lang/Thread.State.html#valueOf(java.lang.String)) — "(Ljava/lang/String;)Ljava/lang/Thread$State;", а сигнатура типа JNI для метода [java.lang.Thread.State.values](https://developer.android.com/reference/java/lang/Thread.State.html#values) — "()[Ljava/lang/Thread$State;". Следите за конечными точками с запятой. Они *входят* в сигнатуру типа JNI.
 
-<a name="_JNI_Type_References" />
+<a name="_JNI_Type_References"></a>
 
 ## <a name="jni-type-references"></a>Ссылки на типы JNI
 
@@ -1333,7 +1333,7 @@ long f(int n, String s, int[] array);
 - `"Z"` используется для `bool`.
 - `"V"` используется для типов возвращаемого значения метода `void`.
 
-<a name="_Simplified_Type_References_1" />
+<a name="_Simplified_Type_References_1"></a>
 
 ### <a name="simplified-type-references"></a>Упрощенные ссылки на типы
 

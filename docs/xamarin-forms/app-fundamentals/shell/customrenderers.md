@@ -1,9 +1,6 @@
 ---
-title: 'Xamarin.Forms Пользовательские отрисовщики оболочки' description: 'Xamarin.Forms Приложения оболочки имеют широкие возможности для настройки через свойства и методы, которые предоставляются в классах оболочки. Но вы можете создать собственный отрисовщик оболочки, если доступных возможностей настройки для конкретной платформы недостаточно.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Forms Пользовательские отрисовщики оболочки" description: "Xamarin.Forms Приложения оболочки имеют широкие возможности для настройки через свойства и методы, которые предоставляются в классах оболочки. Но вы можете создать собственный отрисовщик оболочки, если доступных возможностей настройки для конкретной платформы недостаточно".
+ms.prod: xamarin ms.assetid: 3B1A6AE8-1D1E-4C34-B9AB-48F4444FEF32 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/06/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinforms-shell-custom-renderers"></a>Пользовательские отрисовщики оболочки Xamarin.Forms

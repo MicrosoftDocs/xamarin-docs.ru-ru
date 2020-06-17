@@ -16,7 +16,7 @@ MS. произв. Xamarin MS. AssetID: E220F054-32EE-424C-A7E5-6156BE271519 MS. 
 
 | IDE/Framework | Требуется версия |
 |------|------------------|
-|Visual Studio 2019 | 16,4 или выше
+|Visual Studio 2019 | 16,4 или выше
 Visual Studio 2019 для Mac | 8,4 или выше
 Xamarin.Forms | 4,1 или выше
 

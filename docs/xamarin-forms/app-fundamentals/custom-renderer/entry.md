@@ -1,22 +1,8 @@
 ---
-title: ''
-description: Элемент управления Xamarin.Forms Entry допускает редактирование одной строки текста. В этой статье показано, как создать пользовательский отрисовщик для элемента управления Entry, чтобы переопределить собственный способ отрисовки по умолчанию с помощью настройки для конкретной платформы.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 61bd66fd25b7aea3e5be346f79e63d410164b002
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138987"
+title: "Настройка элемента управления Entry" description: "Элемент управления Xamarin.Forms Entry допускает редактирование одной строки текста. В этой статье показано, как создать пользовательский отрисовщик для элемента управления Entry, чтобы переопределить собственный способ отрисовки по умолчанию с помощью настройки для конкретной платформы".
+ms.prod: xamarin ms.assetid: 7B5DD10D-0411-424F-88D8-8A474DF16D8D ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/26/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="customizing-an-entry"></a>Настройка элемента управления Entry
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-entry)
@@ -31,16 +17,14 @@ _Элемент управления Xamarin.Forms Entry допускает ре
 
 Процесс отрисовки можно использовать для реализации настроек для конкретных платформ путем создания пользовательского отрисовщика для элемента управления [`Entry`](xref:Xamarin.Forms.Entry) на каждой платформе. Этот процесс выглядит следующим образом:
 
-1. [Создание](#Creating_the_Custom_Entry_Control) пользовательского элемента управления Xamarin.Forms.
-1. [Использование](#Consuming_the_Custom_Control) пользовательского элемента управления в Xamarin.Forms.
-1. [Создание](#Creating_the_Custom_Renderer_on_each_Platform) пользовательского отрисовщика для элемента управления на каждой платформе.
+1. [Создание](#creating-the-custom-entry-control) пользовательского элемента управления Xamarin.Forms.
+1. [Использование](#consuming-the-custom-control) пользовательского элемента управления в Xamarin.Forms.
+1. [Создание](#creating-the-custom-renderer-on-each-platform) пользовательского отрисовщика для элемента управления на каждой платформе.
 
 Мы рассмотрим каждый пункт по порядку, чтобы реализовать элемент управления [`Entry`](xref:Xamarin.Forms.Entry) с разным цветом фона на каждой платформе.
 
 > [!IMPORTANT]
 > В этой статье описывается, как создать простой пользовательский отрисовщик. Однако чтобы реализовать элемент управления `Entry` с разным цветом фона на каждой платформе, создавать пользовательский отрисовщик необязательно. Проще будет воспользоваться классом [`Device`](xref:Xamarin.Forms.Device) или расширением разметки `OnPlatform`, указав значения для конкретных платформ. Дополнительные сведения см. в разделах [Указание значений для конкретных платформ](~/xamarin-forms/platform/device.md#provide-platform-specific-values) и [Расширение разметки OnPlatform](~/xamarin-forms/xaml/markup-extensions/consuming.md#onplatform-markup-extension).
-
-<a name="Creating_the_Custom_Entry_Control" />
 
 ## <a name="creating-the-custom-entry-control"></a>Создание пользовательского элемента управления Entry
 
@@ -53,8 +37,6 @@ public class MyEntry : Entry
 ```
 
 Элемент управления `MyEntry` создается в проекте библиотеки .NET Standard и представляет собой попросту элемент управления [`Entry`](xref:Xamarin.Forms.Entry). Настройка элемента управления будет осуществляться в пользовательском отрисовщике, поэтому дополнительная реализация в элементе управления `MyEntry` не требуется.
-
-<a name="Consuming_the_Custom_Control" />
 
 ## <a name="consuming-the-custom-control"></a>Использование пользовательского элемента управления
 
@@ -98,8 +80,6 @@ public class MainPage : ContentPage
 Этот код создает объект [`ContentPage`](xref:Xamarin.Forms.ContentPage), который отображает элементы управления [`Label`](xref:Xamarin.Forms.Label) и `MyEntry`, размещаемые в центре страницы как по вертикали, так и по горизонтали.
 
 Теперь в каждый проект приложения можно добавить пользовательский отрисовщик для настройки внешнего вида элемента управления на каждой платформе.
-
-<a name="Creating_the_Custom_Renderer_on_each_Platform" />
 
 ## <a name="creating-the-custom-renderer-on-each-platform"></a>Создание пользовательского отрисовщика на каждой платформе
 

@@ -1,8 +1,6 @@
 ---
-title: ''Xamarin.Essentials: MainThread'' description: ms.assetid: author: ms.custom: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Xamarin.Essentials: MainThread" description: "Класс MainThread позволяет приложениям выполнять код в основном потоке выполнения".
+ms.assetid: CD6D51E7-D933-4FE7-A7F7-392EF27812E1 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 20.08.2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="xamarinessentials-mainthread"></a>Xamarin.Essentials. MainThread

@@ -1,23 +1,7 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 3. Deeper into text''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 5423a9f716f384eca107003bdeca69615f8b459f
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136907"
+title: "Сводная информация о главе 3 (Более подробная информация)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 3 (Более подробная информация)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 2E5581A6-4D3E-4BD5-9FDB-ACBA0F0FC734 author: davidbritch ms.author: dabritch ms.date: 07/18/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="summary-of-chapter-3-deeper-into-text"></a>Сводная информация о главе 3. Более подробная информация
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter03)

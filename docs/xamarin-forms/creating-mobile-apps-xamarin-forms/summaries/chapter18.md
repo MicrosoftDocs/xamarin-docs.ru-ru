@@ -1,23 +1,7 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 18. MVVM''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 1f180173a42654c54c5686e423ba20d9586271ea
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136712"
+title: "Сводная информация о главе 18 (MVVM)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 18 (MVVM)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 6A774510-7709-4F60-8EF5-29D478176F8F author: davidbritch ms.author: dabritch ms.date: 11/07/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="summary-of-chapter-18-mvvm"></a>Сводная информация о Главе 18. MVVM
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter18)

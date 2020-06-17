@@ -1,20 +1,8 @@
 ---
-title: Поддержка платформы и компонентов Xamarin.Essentials
-description: Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса.
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: b052e03f3ca57229988a29b7d3f38f5fa7bb6f97
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137180"
+title: "Xamarin.Essentials — поддержка платформ и компонентов" description: "Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows, независимо от используемого метода создания пользовательского интерфейса".
+ms.assetid: 63FA28A5-6F52-4CB7-AF39-8DF7B436B5A4 author: jamesmontemagno ms.author: jamont ms.date: 20.08.2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="platform-support"></a>Поддержка платформ
 
 Xamarin.Essentials поддерживает указанные ниже платформы и операционные системы:

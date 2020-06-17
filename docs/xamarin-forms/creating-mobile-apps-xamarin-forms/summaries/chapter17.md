@@ -1,24 +1,8 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 17. Mastering the Grid''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 6dd13c0f592831c6488afac6727bcac734e9136a
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136725"
+title: "Сводная информация о главе 17 (Достигаем мастерства в использовании класса Grid)" description: "Создание мобильных приложений с помощью Xamarin.Forms: "Сводная информация о главе 17 (Достигаем мастерства в использовании класса Grid)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 71EDEF9C-4220-4D2E-A235-43F1EC8746C1 author: davidbritch ms.author: dabritch ms.date: 11/07/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
-# <a name="summary-of-chapter-17-mastering-the-grid"></a>Сводка по главе 17. Достигаем мастерства в использовании класса Grid
+
+# <a name="summary-of-chapter-17-mastering-the-grid"></a>Сводная информация о главе 17. Достигаем мастерства в использовании класса Grid
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter17)
 

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 03663803313c870a3361c6e1ffc85cf1f8999068
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84137892"
+title: "Добавление распознавателя жестов прокрутки" description: "Эта статья поясняет, как распознать жест прокрутки в представлении".
+ms.prod: xamarin ms.assetid: 164976C2-1429-49FB-9EB6-621E2681C19B ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 08/14/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="adding-a-swipe-gesture-recognizer"></a>Добавление распознавателя жестов прокрутки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-swipegesture)

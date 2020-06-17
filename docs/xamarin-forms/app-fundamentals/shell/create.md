@@ -1,9 +1,6 @@
 ---
-title: 'Создание приложения оболочки Xamarin.Forms' description: 'Чтобы создать приложение оболочки Xamarin.Forms, нужно создать XAML-файл, в котором, в свою очередь, создается производный класс Shell, задаются свойства MainPage класса App приложения для подкласса объекта Shell и описывается визуальная иерархия приложения в производном классе Shell.'
-ms.prod: ms.assetid: ms.technology: author: ms.author: ms.date: no-loc:
-- 'Xamarin.Forms'
-- 'Xamarin.Essentials'
-
+title: "Создание приложения оболочки Xamarin.Forms" description: "Чтобы создать приложение оболочки Xamarin.Forms, нужно создать XAML-файл, в котором, в свою очередь, создается производный класс Shell, задаются свойства MainPage класса App приложения для подкласса объекта Shell и описывается визуальная иерархия приложения в производном классе Shell".
+ms.prod: xamarin ms.assetid: 2A51D78F-6CD5-4BC4-A62E-11CEFA799987 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/24/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 
 # <a name="create-a-xamarinforms-shell-application"></a>Создание приложения оболочки Xamarin.Forms

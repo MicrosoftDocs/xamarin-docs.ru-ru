@@ -1,22 +1,8 @@
 ---
-title: Командный интерфейс Xamarin.Forms
-description: В этой статье объясняется, как реализовать свойство Command с привязками данных Xamarin.Forms. Командный интерфейс предоставляет альтернативный подход к реализации команд, который гораздо лучше подходит для архитектуры MVVM.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 253255f08cec6f08e03df94798c8572f7cf10f30
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139728"
+title: "Командный интерфейс Xamarin.Forms" description: "В этой статье объясняется, как реализовать свойство Command с привязками данных Xamarin.Forms. Командный интерфейс предоставляет альтернативный подход к реализации команд, который гораздо лучше подходит для архитектуры MVVM".
+ms.prod: xamarin ms.assetid: 69922284-F398-45C3-B4CC-B8E29BB4C533 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="the-xamarinforms-command-interface"></a>Командный интерфейс Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

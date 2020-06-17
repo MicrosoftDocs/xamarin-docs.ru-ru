@@ -1,23 +1,7 @@
 ---
-title: ''
-description: ''
-Creating Mobile Apps with Xamarin.Forms: Summary of Chapter 11. The Bindable infrastructure''
-ms.prod: ''
-ms.technology: ''
-ms.assetid: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: edc3dfd97457fe93a04edd82574f6ed419f5fdc1
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84136803"
+title: "Сводная информация о главе 11 (Инфраструктура c возможностью привязки)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 11 (Инфраструктура c возможностью привязки)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 34671C48-0ED4-4B76-A33D-D6505390DC5B author: davidbritch ms.author: dabritch ms.date: 19.07.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="summary-of-chapter-11-the-bindable-infrastructure"></a>Сводная информация о Главе 11. Инфраструктура c возможностью привязки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11)

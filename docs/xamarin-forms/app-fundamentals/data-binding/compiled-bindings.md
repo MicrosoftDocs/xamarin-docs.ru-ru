@@ -1,22 +1,8 @@
 ---
-title: Скомпилированные привязки Xamarin.Forms
-description: В этой статье описывается использование скомпилированных привязок для оптимизации производительности привязки данных в приложениях Xamarin.Forms.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 1f811de95009900016bb8b442265a9a079e0f612
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84139760"
+title: "Xamarin.Forms — скомпилированные привязки" description: "В этой статье описывается использование скомпилированных привязок для оптимизации производительности привязки данных в приложениях Xamarin.Forms".
+ms.prod: xamarin ms.assetid: ABE6B7F7-875E-4402-A1D2-845CE374402B ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 09/18/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-compiled-bindings"></a>Скомпилированные привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
@@ -73,7 +59,7 @@ _Скомпилированные привязки разрешаются быс
 </ContentPage>
 ```
 
-Корневое представление [`StackLayout`](xref:Xamarin.Forms.StackLayout) создает экземпляр `HslColorViewModel` и инициализирует свойство `Color` в тегах элемента свойства для свойство [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext). Это корневое представление `StackLayout` также определяет атрибут `x:DataType` как тип модели представления, указывая, что любое выражение привязки в иерархии корневого представления `StackLayout` будет компилироваться. Это можно проверить, изменив любое выражение привязки так, чтобы оно было привязано к несуществующему свойству модели представления, что приведет к ошибке сборки. Хотя в этом примере атрибуту `x:DataType` присваивается строковый литерал, для него также можно задать тип с расширением разметки `x:Type`. Дополнительные сведения о расширении разметки `x:Type` см. в разделе [Расширение разметки x:Type](~/xamarin-forms/xaml/markup-extensions/consuming.md#type).
+Корневое представление [`StackLayout`](xref:Xamarin.Forms.StackLayout) создает экземпляр `HslColorViewModel` и инициализирует свойство `Color` в тегах элемента свойства для свойство [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext). Это корневое представление `StackLayout` также определяет атрибут `x:DataType` как тип модели представления, указывая, что любое выражение привязки в иерархии корневого представления `StackLayout` будет компилироваться. Это можно проверить, изменив любое выражение привязки так, чтобы оно было привязано к несуществующему свойству модели представления, что приведет к ошибке сборки. Хотя в этом примере атрибуту `x:DataType` присваивается строковый литерал, для него также можно задать тип с расширением разметки `x:Type`. Дополнительные сведения о расширении разметки `x:Type` см. в разделе [Расширение разметки x:Type](~/xamarin-forms/xaml/markup-extensions/consuming.md#xtype-markup-extension).
 
 > [!IMPORTANT]
 > Обратите внимание, что атрибут `x:DataType` может быть переопределен в любом месте иерархии представления.
@@ -127,7 +113,7 @@ _Скомпилированные привязки разрешаются быс
 
 Свойство [`ListView.ItemsSource`](xref:Xamarin.Forms.ListView) получает статическое свойство `NamedColor.All`. Класс `NamedColor` использует отражение .NET для перечисления всех открытых статических полей в структуре [`Color`](xref:Xamarin.Forms.Color) и их хранения с именами в коллекции, доступной из статического свойства `All`. Таким образом, объект `ListView` заполняется экземплярами `NamedColor`. Для каждого элемента в `ListView` в качестве контекста привязки для элемента задается объект `NamedColor`. Элементы [`BoxView`](xref:Xamarin.Forms.BoxView) и [`Label`](xref:Xamarin.Forms.Label) в объекте [`ViewCell`](xref:Xamarin.Forms.ViewCell) привязываются к свойствам `NamedColor`.
 
-Обратите внимание, что [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) определяет атрибут `x:DataType` как тип `NamedColor`, указывая, что любое выражение привязки в иерархии представления `DataTemplate` будет компилироваться. Это можно проверить, изменив любое выражение привязки так, чтобы оно было привязано к несуществующему свойству `NamedColor`, что приведет к ошибке построения.  Хотя в этом примере атрибуту `x:DataType` присваивается строковый литерал, для него также можно задать тип с расширением разметки `x:Type`. Дополнительные сведения о расширении разметки `x:Type` см. в разделе [Расширение разметки x:Type](~/xamarin-forms/xaml/markup-extensions/consuming.md#type).
+Обратите внимание, что [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) определяет атрибут `x:DataType` как тип `NamedColor`, указывая, что любое выражение привязки в иерархии представления `DataTemplate` будет компилироваться. Это можно проверить, изменив любое выражение привязки так, чтобы оно было привязано к несуществующему свойству `NamedColor`, что приведет к ошибке построения.  Хотя в этом примере атрибуту `x:DataType` присваивается строковый литерал, для него также можно задать тип с расширением разметки `x:Type`. Дополнительные сведения о расширении разметки `x:Type` см. в разделе [Расширение разметки x:Type](~/xamarin-forms/xaml/markup-extensions/consuming.md#xtype-markup-extension).
 
 При первом запуске приложения объект [`ListView`](xref:Xamarin.Forms.ListView) заполняется экземплярами `NamedColor`. При выборе элемента в объекте `ListView` свойству [`BoxView.Color`](xref:Xamarin.Forms.BoxView.Color) присваивается цвет элемента, выбранного в `ListView`:
 
@@ -163,7 +149,7 @@ _Скомпилированные привязки разрешаются быс
 
 Корневое представление [`StackLayout`](xref:Xamarin.Forms.StackLayout) задает атрибут `x:DataType` как тип `HslColorViewModel`, указывая, что любое выражение привязки в иерархии корневого представления `StackLayout` будет компилироваться. Тем не менее внутреннее представление `StackLayout` переопределяет атрибут `x:DataType` как `null` с использованием расширения разметки `x:Null`. Таким образом, в выражениях привязки внутреннего представления `StackLayout` используются классические привязки. Скомпилированные привязки используются только элементом [`BoxView`](xref:Xamarin.Forms.BoxView) в иерархии корневого представления `StackLayout`.
 
-Дополнительные сведения о расширении разметки `x:Null` см. в статье [Расширение разметки x:Null](~/xamarin-forms/xaml/markup-extensions/consuming.md#null).
+Дополнительные сведения о расширении разметки `x:Null` см. в статье [Расширение разметки x:Null](~/xamarin-forms/xaml/markup-extensions/consuming.md#xnull-markup-extension).
 
 ## <a name="performance"></a>Производительность
 

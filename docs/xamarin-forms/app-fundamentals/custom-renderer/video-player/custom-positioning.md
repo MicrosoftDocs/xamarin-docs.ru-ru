@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как реализовать настраиваемую строку позиционирования в приложении видеопроигрывателя с помощью Xamarin.Forms.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 97d32a03ee10e2f3b0a7442d1d70dab9236059b4
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84135087"
+title: "Настраиваемое размещение видео" description: "В этой статье объясняется, как реализовать настраиваемую строку позиционирования в приложении видеопроигрывателя с помощью Xamarin.Forms".
+ms.prod: xamarin ms.assetid: 6D792264-30FF-46F7-8C1B-2FEF9D277DF4 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12.02.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="custom-video-positioning"></a>Настраиваемая строка позиционирования видео
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)

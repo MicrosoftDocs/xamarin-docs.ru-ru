@@ -1,22 +1,8 @@
 ---
-title: ''
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 37d870509e034f4c23afba60fa055965ed9df4de
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84138870"
+title: "Передача параметров эффекта в качестве свойств среды CLR" description: "Свойства общеязыковой среды выполнения (CLR) можно использовать для определения параметров эффекта, не реагирующих на изменения свойств во время выполнения. В этой статье демонстрируется использование свойств среды CLR для передачи параметров эффекту".
+ms.prod: xamarin ms.assetid: 4B50466C-5DBD-45DD-B1E6-BE9524C92F27 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 08/05/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="passing-effect-parameters-as-common-language-runtime-properties"></a>Передача параметров эффекта в качестве свойств среды CLR
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)

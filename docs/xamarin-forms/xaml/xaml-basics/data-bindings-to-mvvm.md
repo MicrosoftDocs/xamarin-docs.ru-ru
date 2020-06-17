@@ -687,7 +687,7 @@ private async void OnListViewItemSelected(object sender, SelectedItemChangedEven
 }
 ```
 
-## <a name="video"></a>Видеоролик
+## <a name="video"></a>Видео
 
 > [!VIDEO https://youtube.com/embed/DYRLcqG2BAY]
 

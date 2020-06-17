@@ -1,22 +1,8 @@
 ---
-title: Форматирование строк Xamarin.Forms
-description: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d08a89d5394a227e3cee76603e4e97d2cf9495e0
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84135763"
+title: "Xamarin.Forms Форматирование строк" description: "Эта статья поясняет, как использовать привязки данных Xamarin.Forms для форматирования и отображения объектов в виде строк. Для этого StringFormat объекта Binding присваивается стандартная строка форматирования .NET с заполнителем".
+ms.prod: xamarin ms.assetid: 978C85B7-CB58-4483-A131-21B381A865E0 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-string-formatting"></a>Форматирование строк Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

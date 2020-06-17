@@ -1,23 +1,6 @@
 ---
-title: Создание первого приложения Xamarin.Forms
-description: Видеоруководство, показывающее, как создать первое приложение Xamarin.Forms в Visual Studio.
-zone_pivot_groups: ''
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-ms.custom: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: da56bde956a0ff7730ef6737e2802c3723d6d716
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84133488"
+title: "Создание первого приложения Xamarin.Forms" description: "Видеоруководство, показывающее, как создать первое приложение Xamarin.Forms в Visual Studio".
+zone_pivot_groups: platform-dev16 ms.prod: xamarin ms.assetid: 72B6AF82-4D98-47E5-AB54-0A35B3253468 ms.technology: xamarin-forms ms.custom: video author: conceptdev ms.author: crdun ms.date: 05/23/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
 # <a name="build-your-first-xamarinforms-app"></a>Создание первого приложения Xamarin.Forms
 

@@ -1,22 +1,8 @@
 ---
-title: ''
-description: В этой статье объясняется, как внедрить пользовательский отрисовщик видеопроигрывателя на каждой платформе с помощью Xamarin.Forms.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: d026ecc3288da155aefb0f68ee0c70721106c0da
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84133748"
+title: "Создание видеопроигрывателей платформы" description: "В этой статье объясняется, как внедрить пользовательский отрисовщик видеопроигрывателя на каждой платформе с помощью Xamarin.Forms".
+ms.prod: xamarin ms.assetid: EEE2FB9B-EB73-4A3F-A859-7A1D4808E149 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12.02.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="creating-the-platform-video-players"></a>Создание видеопроигрывателей платформы
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)

@@ -1,22 +1,8 @@
 ---
-title: Навигация по оболочке Xamarin.Forms
-description: Приложения оболочки Xamarin.Forms предоставляют улучшенные возможности навигации по интерфейсу, позволяя переходить на любую страницу в приложении без необходимости навигации по заданной иерархии.
-ms.prod: ''
-ms.assetid: ''
-ms.technology: ''
-author: ''
-ms.author: ''
-ms.date: ''
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: e67d49f300a8a98ec5685c33abf98f5b2ded08ed
-ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84132396"
+title: "Xamarin.Forms — навигация по оболочке" description: "Xamarin.Forms — приложения оболочки предоставляют улучшенные возможности навигации по интерфейсу, позволяя переходить на любую страницу в приложении без необходимости навигации по заданной иерархии".
+ms.prod: xamarin ms.assetid: 57079D89-D1CB-48BD-9FEE-539CEC29EABB ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/02/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
 ---
+
 # <a name="xamarinforms-shell-navigation"></a>Навигация по оболочке Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
