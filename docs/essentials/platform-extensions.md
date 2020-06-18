@@ -1,8 +1,20 @@
 ---
-title: "Xamarin.Essentials — расширения платформы" description: "Xamarin.Essentials предоставляет несколько методов расширения платформы при работе с такими типами платформы, как Rect, Size и Point".
-ms.assetid: AB4D198A-4FD7-479E-8627-01F887A6D056 author: jamesmontemagno ms.author: jamont ms.date: 13.03.2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Расширения платформы Xamarin.Essentials
+description: Xamarin.Essentials предоставляет несколько методов расширения платформы при работе с такими типами платформы, как Rect, Size и Point.
+ms.assetid: AB4D198A-4FD7-479E-8627-01F887A6D056
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 03/13/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 56cb9619a4132f6568cee8fbf590965934024639
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84801927"
 ---
-
 # <a name="xamarinessentials-platform-extensions"></a>Xamarin.Essentials. расширения платформы
 
 Xamarin.Essentials предоставляет несколько методов расширения платформы при работе с такими типами платформы, как Rect, Size и Point. Это означает, что можно осуществлять преобразование между версией `System` этих типов для их конкретных типов в iOS, Android и UWP.
@@ -135,7 +147,7 @@ var system2 = platform.ToSystemRectangle();
 
 ## <a name="api"></a>API
 
-- [Исходный код преобразователей](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Types/PlatformExtensions)
+- [Исходный код преобразователей](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Types/PlatformExtensions)
 - [Документация по API преобразователей точек](xref:Xamarin.Essentials.PointExtensions)
 - [Документация по API преобразователей прямоугольника](xref:Xamarin.Essentials.RectangleExtensions)
 - [Документация по API преобразователей размера](xref:Xamarin.Essentials.SizeExtensions)

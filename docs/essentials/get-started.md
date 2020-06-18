@@ -1,8 +1,21 @@
 ---
-title: "Начало работы с Xamarin.Essentials" description: "Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows, независимо от используемого метода создания пользовательского интерфейса".
-ms.assetid: B2669C48-B659-4854-BD80-FEB0E876F5B9 author: jamesmontemagno ms.author: jamont ms.custom: video ms.date: 05/11/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Начало работы с Xamarin.Essentials" description: "Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows, независимо от используемого метода создания пользовательского интерфейса".'
+description: 'ms.assetid: B2669C48-B659-4854-BD80-FEB0E876F5B9 author: jamesmontemagno ms.author: jamont ms.custom: video ms.date: 05/11/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.assetid: B2669C48-B659-4854-BD80-FEB0E876F5B9
+author: jamesmontemagno
+ms.author: jamont
+ms.custom: video
+ms.date: 05/11/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0c0052b35475522ffb3634ebe22f69f66fe3b22b
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84129315"
 ---
-
 # <a name="get-started-with-xamarinessentials"></a>Начало работы с Xamarin.Essentials
 
 Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса. Дополнительные сведения о поддерживаемых операционных системах см. в [руководстве по поддержке платформ и функций](platform-feature-support.md).

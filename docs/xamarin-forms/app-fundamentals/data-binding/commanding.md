@@ -1,8 +1,22 @@
 ---
-title: "Командный интерфейс Xamarin.Forms" description: "В этой статье объясняется, как реализовать свойство Command с привязками данных Xamarin.Forms. Командный интерфейс предоставляет альтернативный подход к реализации команд, который гораздо лучше подходит для архитектуры MVVM".
-ms.prod: xamarin ms.assetid: 69922284-F398-45C3-B4CC-B8E29BB4C533 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Командный интерфейс Xamarin.Forms" description: "В этой статье объясняется, как реализовать свойство Command с привязками данных Xamarin.Forms.'
+description: 'Командный интерфейс предоставляет альтернативный подход к реализации команд, который гораздо лучше подходит для архитектуры MVVM". ms.prod: xamarin ms.assetid: 69922284-F398-45C3-B4CC-B8E29BB4C533 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: 69922284-F398-45C3-B4CC-B8E29BB4C533
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/05/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 253255f08cec6f08e03df94798c8572f7cf10f30
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84139728"
 ---
-
 # <a name="the-xamarinforms-command-interface"></a>Командный интерфейс Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

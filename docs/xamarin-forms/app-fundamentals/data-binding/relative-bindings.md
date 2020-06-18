@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms Относительные привязки" description: "Эта статья описывает, как создать относительные привязки с помощью расширения разметки RelativeSource, чтобы задать источник привязки относительно положения целевого объекта привязки".
-ms.prod: xamarin ms.assetid: CC64BB1D-8303-46B1-94B6-4EF2F20317A8 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/04/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Xamarin.Forms Относительные привязки" description: "Эта статья описывает, как создать относительные привязки с помощью расширения разметки RelativeSource, чтобы задать источник привязки относительно положения целевого объекта привязки".'
+description: 'ms.prod: xamarin ms.assetid: CC64BB1D-8303-46B1-94B6-4EF2F20317A8 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/04/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: CC64BB1D-8303-46B1-94B6-4EF2F20317A8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/04/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8d4e2696e6027f07b7b8e638cd1e0f1d65a5503d
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84139715"
 ---
-
 # <a name="xamarinforms-relative-bindings"></a>Относительные привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

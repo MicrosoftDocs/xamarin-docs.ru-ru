@@ -1,8 +1,24 @@
 ---
-title: "Навигация в многостраничном приложении Xamarin.Forms" description: "Эта статья поясняет, как на основе одностраничного приложения, которое может хранить одну заметку, создать многостраничное, позволяющее хранить несколько заметок".
-zone_pivot_groups: platform ms.topic: quickstart ms.prod: xamarin ms.assetid: 9DC3B3D6-6CBC-4705-BE80-3D86A9E65F92 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/01/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Навигация в многостраничном приложении Xamarin.Forms" description: "Эта статья поясняет, как на основе одностраничного приложения, которое может хранить одну заметку, создать многостраничное, позволяющее хранить несколько заметок".'
+description: 'zone_pivot_groups: platform ms.topic: quickstart ms.prod: xamarin ms.assetid: 9DC3B3D6-6CBC-4705-BE80-3D86A9E65F92 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/01/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+zone_pivot_groups: platform
+ms.topic: quickstart
+ms.prod: xamarin
+ms.assetid: 9DC3B3D6-6CBC-4705-BE80-3D86A9E65F92
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/01/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b3616d0cf4804dfb37d4fe65034796c672dec828
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84127885"
 ---
-
 # <a name="perform-navigation-in-a-multi-page-xamarinforms-application"></a>Навигация в многостраничном приложении Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-multipage/)

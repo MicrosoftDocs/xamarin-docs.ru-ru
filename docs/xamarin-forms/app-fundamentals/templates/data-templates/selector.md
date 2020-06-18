@@ -1,8 +1,22 @@
 ---
-title: "Создание Xamarin.Forms DataTemplateSelector" description: "В этой статье показано, как создавать и использовать объект DataTemplateSelector для выбора шаблона DataTemplate во время выполнения в соответствии со значением привязанного к данным свойства".
-ms.prod: xamarin ms.assetid: A4629E8F-2BAF-45CE-A76E-DF225FE8D26C ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 03/08/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Создание Xamarin.Forms DataTemplateSelector" description: "В этой статье показано, как создавать и использовать объект DataTemplateSelector для выбора шаблона DataTemplate во время выполнения в соответствии со значением привязанного к данным свойства".'
+description: 'ms.prod: xamarin ms.assetid: A4629E8F-2BAF-45CE-A76E-DF225FE8D26C ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 03/08/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: A4629E8F-2BAF-45CE-A76E-DF225FE8D26C
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/08/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 74650eb2c52f1da9d0c539b711784896267ed183
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84135958"
 ---
-
 # <a name="creating-a-xamarinforms-datatemplateselector"></a>Создание DataTemplateSelector в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-datatemplateselector)

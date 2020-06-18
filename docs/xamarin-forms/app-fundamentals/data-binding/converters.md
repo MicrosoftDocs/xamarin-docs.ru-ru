@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms — преобразователи значений привязки" description: "В этой статье объясняется, как выполнить приведение или преобразование значений в пределах привязки данных Xamarin.Forms путем реализации преобразователя величин (который также называется преобразователем привязки или преобразователем значений привязки)".
-ms.prod: xamarin ms.assetid: 02B1BBE6-D804-490D-BDD4-8ACED8B70C92 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Xamarin.Forms — преобразователи значений привязки" description: "В этой статье объясняется, как выполнить приведение или преобразование значений в пределах привязки данных Xamarin.Forms путем реализации преобразователя величин (который также называется преобразователем привязки или преобразователем значений привязки)".'
+description: 'ms.prod: xamarin ms.assetid: 02B1BBE6-D804-490D-BDD4-8ACED8B70C92 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: 02B1BBE6-D804-490D-BDD4-8ACED8B70C92
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/05/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e1a4faabc8f0703b497062a8c5d587221692dab7
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84139767"
 ---
-
 # <a name="xamarinforms-binding-value-converters"></a>Преобразователи значений привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

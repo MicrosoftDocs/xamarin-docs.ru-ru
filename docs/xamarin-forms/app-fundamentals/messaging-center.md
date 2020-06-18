@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms — MessagingCenter" description: "Класс MessagingCenter в Xamarin.Forms реализует шаблон "публикация-подписка", который обеспечивает взаимодействие на основе сообщений между компонентами, которые неудобно связывать по ссылкам объектов и типов".
-ms.prod: xamarin ms.assetid: EDFE7B19-C5FD-40D5-816C-FAE56532E885 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 10/08/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Xamarin.Forms — MessagingCenter" description: "Класс MessagingCenter в Xamarin.Forms реализует шаблон "публикация-подписка", который обеспечивает взаимодействие на основе сообщений между компонентами, которые неудобно связывать по ссылкам объектов и типов".'
+description: 'ms.prod: xamarin ms.assetid: EDFE7B19-C5FD-40D5-816C-FAE56532E885 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 10/08/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: EDFE7B19-C5FD-40D5-816C-FAE56532E885
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/08/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: d1407c3c948afe764854cbd99f5c29332f7041aa
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84137544"
 ---
-
 # <a name="xamarinforms-messagingcenter"></a>Xamarin.Forms MessagingCenter
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/usingmessagingcenter)

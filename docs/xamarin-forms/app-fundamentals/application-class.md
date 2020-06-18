@@ -1,8 +1,23 @@
 ---
-title: "Xamarin.Forms — класс App" description: "В этой статье описаны функции класса App по умолчанию, который включает в себя свойство для задания начальной страницы приложения, а также сохраняемый словарь для хранения простых значений в рамках изменений состояния жизненного цикла".
-ms.prod: xamarin ms.assetid: 421F8294-1944-46A4-8459-D2BD5AAABC9D ms.technology: xamarin-forms ms.custom: video author: davidbritch ms.author: dabritch ms.date: 02/19/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Xamarin.Forms — класс App" description: "В этой статье описаны функции класса App по умолчанию, который включает в себя свойство для задания начальной страницы приложения, а также сохраняемый словарь для хранения простых значений в рамках изменений состояния жизненного цикла".'
+description: 'ms.prod: xamarin ms.assetid: 421F8294-1944-46A4-8459-D2BD5AAABC9D ms.technology: xamarin-forms ms.custom: video author: davidbritch ms.author: dabritch ms.date: 02/19/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: 421F8294-1944-46A4-8459-D2BD5AAABC9D
+ms.technology: xamarin-forms
+ms.custom: video
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/19/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1e761830fb08662a82a8bf98b4544aafaa6eccf7
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84573356"
 ---
-
 # <a name="xamarinforms-app-class"></a>Класс приложения Xamarin.Forms
 
 Базовый класс `Application` предлагает следующие возможности, которые предоставляются в используемом по умолчанию подклассе `App` проекта:

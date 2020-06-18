@@ -1,8 +1,22 @@
 ---
-title: "Базовые классы отрисовщика и собственные элементы управления"; описание: "Каждый элемент управления Xamarin.Forms имеет сопутствующий отрисовщик для каждой платформы, который создает экземпляр собственного элемента управления. В этой статье перечислены классы элементов управления отрисовщика и собственных элементов управления, которые реализуют каждую страницу, макет, представление и ячейку Xamarin.Forms".
-ms.prod: xamarin ms.assetid: A8909AE3-ED0E-4D24-BF96-B49E732E3B93 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 17.04.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Базовые классы отрисовщика и собственные элементы управления"; описание: "Каждый элемент управления Xamarin.Forms имеет сопутствующий отрисовщик для каждой платформы, который создает экземпляр собственного элемента управления.'
+description: 'В этой статье перечислены классы элементов управления отрисовщика и собственных элементов управления, которые реализуют каждую страницу, макет, представление и ячейку Xamarin.Forms". ms.prod: xamarin ms.assetid: A8909AE3-ED0E-4D24-BF96-B49E732E3B93 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 17.04.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: A8909AE3-ED0E-4D24-BF96-B49E732E3B93
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/17/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9f6eff831f3eb653e281dd9ee750bae7f7dfda06
+ms.sourcegitcommit: 2105091f2eeb7844b19ae94708a6ab07e3e79bce
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84198389"
 ---
-
 # <a name="renderer-base-classes-and-native-controls"></a>Базовые классы отрисовщика и собственные элементы управления
 
 _Каждый элемент управления Xamarin.Forms имеет сопутствующий отрисовщик для каждой платформы, который создает экземпляр собственного элемента управления. В этой статье перечислены классы элементов управления отрисовщика и собственных элементов управления, которые реализуют каждую страницу, макет, представление и ячейку Xamarin.Forms._

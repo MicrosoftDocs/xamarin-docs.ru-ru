@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms — скомпилированные привязки" description: "В этой статье описывается использование скомпилированных привязок для оптимизации производительности привязки данных в приложениях Xamarin.Forms".
-ms.prod: xamarin ms.assetid: ABE6B7F7-875E-4402-A1D2-845CE374402B ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 09/18/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Xamarin.Forms — скомпилированные привязки" description: "В этой статье описывается использование скомпилированных привязок для оптимизации производительности привязки данных в приложениях Xamarin.Forms".'
+description: 'ms.prod: xamarin ms.assetid: ABE6B7F7-875E-4402-A1D2-845CE374402B ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 09/18/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: ABE6B7F7-875E-4402-A1D2-845CE374402B
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/18/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 094691796fed9653f2a2e468ccb1c33d1a408a49
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84571562"
 ---
-
 # <a name="xamarinforms-compiled-bindings"></a>Скомпилированные привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

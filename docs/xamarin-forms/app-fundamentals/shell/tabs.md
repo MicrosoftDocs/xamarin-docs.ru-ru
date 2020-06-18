@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms Макет оболочки" description: "Следующим уровнем навигации после всплывающего меню в приложении оболочки является нижняя панель вкладок. Или же навигация по приложению может начинаться с нижней панели вкладок без использования всплывающего меню. В обоих случаях, если нижняя вкладка содержит более одной страницы, перемещение по ним осуществляется с помощью верхней панели вкладок".
-ms.prod: xamarin ms.assetid: 318D81DB-E456-4E44-B083-36A27DBD9523 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/06/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Xamarin.Forms Макет оболочки" description: "Следующим уровнем навигации после всплывающего меню в приложении оболочки является нижняя панель вкладок.'
+description: 'Или же навигация по приложению может начинаться с нижней панели вкладок без использования всплывающего меню. В обоих случаях, если нижняя вкладка содержит более одной страницы, перемещение по ним осуществляется с помощью верхней панели вкладок". ms.prod: xamarin ms.assetid: 318D81DB-E456-4E44-B083-36A27DBD9523 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/06/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: 318D81DB-E456-4E44-B083-36A27DBD9523
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/06/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: fa49cdb7944e3ab942ccda611af906e2822b072a
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84139962"
 ---
-
 # <a name="xamarinforms-shell-tabs"></a>Вкладки оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)

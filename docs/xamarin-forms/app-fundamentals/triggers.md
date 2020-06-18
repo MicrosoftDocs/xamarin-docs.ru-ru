@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms Триггеры" description: "В этой статье содержатся сведения об использовании триггеров Xamarin.Forms для реагирования на изменения пользовательского интерфейса с помощью XAML. Триггеры позволяют декларативно задавать действия в XAML, которые изменяют внешний вид элементов управления при изменении событий или свойств".
-ms.prod: xamarin ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 17.04.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Xamarin.Forms Триггеры" description: "В этой статье содержатся сведения об использовании триггеров Xamarin.Forms для реагирования на изменения пользовательского интерфейса с помощью XAML.'
+description: 'Триггеры позволяют декларативно задавать действия в XAML, которые изменяют внешний вид элементов управления при изменении событий или свойств". ms.prod: xamarin ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 17.04.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/17/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f92ad47ae883f4b1b413ae5192a9add83045bb77
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84136959"
 ---
-
 # <a name="xamarinforms-triggers"></a>Триггеры Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithtriggers)

@@ -1,8 +1,23 @@
 ---
-title: "Xamarin.Forms — специальные возможности" description: "Если вы создаете приложение со специальными возможностями, им смогут пользоваться люди с различными потребностями".
-ms.prod: xamarin ms.assetid: 99B8A8E8-6F5E-46BC-9639-1C4A6D301049 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/28/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials] ms.custom: video
+title: 'title: "Xamarin.Forms — специальные возможности" description: "Если вы создаете приложение со специальными возможностями, им смогут пользоваться люди с различными потребностями".'
+description: 'ms.prod: xamarin ms.assetid: 99B8A8E8-6F5E-46BC-9639-1C4A6D301049 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/28/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials] ms.custom: video'
+ms.prod: xamarin
+ms.assetid: 99B8A8E8-6F5E-46BC-9639-1C4A6D301049
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/28/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.custom: video
+ms.openlocfilehash: 7ac8b305ae09e005013aea9f83fb4a3e4740f2b2
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84129811"
 ---
-
 # <a name="xamarinforms-accessibility"></a>Специальные возможности в Xamarin.Forms
 
 _Если вы создаете приложение со специальными возможностями, им смогут пользоваться люди с различными потребностями._

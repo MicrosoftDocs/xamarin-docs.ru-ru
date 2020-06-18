@@ -1,8 +1,23 @@
 ---
-title: "Xamarin.Forms — основные привязки" description: "В этой статье описывается использование привязки данных Xamarin.Forms, которая связывает пару свойств между двумя объектами, по крайней мере один из которых обычно является объектом пользовательского интерфейса. Эти два объекта называются целевым объектом и источником".
-ms.prod: xamarin ms.assetid: 96553DF7-12EA-4FB2-AE85-3D1D59382B40 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/22/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials] ms.custom: video
+title: 'title: "Xamarin.Forms — основные привязки" description: "В этой статье описывается использование привязки данных Xamarin.Forms, которая связывает пару свойств между двумя объектами, по крайней мере один из которых обычно является объектом пользовательского интерфейса.'
+description: 'Эти два объекта называются целевым объектом и источником". ms.prod: xamarin ms.assetid: 96553DF7-12EA-4FB2-AE85-3D1D59382B40 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/22/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials] ms.custom: video'
+ms.prod: xamarin
+ms.assetid: 96553DF7-12EA-4FB2-AE85-3D1D59382B40
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/22/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.custom: video
+ms.openlocfilehash: c0c6bc6e1005997548952aedc09cd83a451e7caa
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84133553"
 ---
-
 # <a name="xamarinforms-basic-bindings"></a>Основные привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

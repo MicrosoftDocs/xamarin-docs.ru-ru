@@ -1,8 +1,22 @@
 ---
-title: "Передача параметров эффекта в качестве присоединенных свойств" description: "Присоединенные свойства можно использовать для определения параметров эффекта, реагирующих на изменения свойств времени выполнения. В этой статье описывается использование присоединенных свойств для передачи параметров эффекту и изменение параметра во время выполнения".
-ms.prod: xamarin ms.assetid: DFCDCB9F-17DD-4117-BD53-B4FB206BB387 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 08/05/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Передача параметров эффекта в качестве присоединенных свойств" description: "Присоединенные свойства можно использовать для определения параметров эффекта, реагирующих на изменения свойств времени выполнения.'
+description: 'В этой статье описывается использование присоединенных свойств для передачи параметров эффекту и изменение параметра во время выполнения". ms.prod: xamarin ms.assetid: DFCDCB9F-17DD-4117-BD53-B4FB206BB387 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 08/05/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: DFCDCB9F-17DD-4117-BD53-B4FB206BB387
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/05/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: cf03d0c32d80d7a1821e323acdc84a351413efec
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84138883"
 ---
-
 # <a name="passing-effect-parameters-as-attached-properties"></a>Передача параметров эффекта в качестве присоединенных свойств
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffectruntimechange)

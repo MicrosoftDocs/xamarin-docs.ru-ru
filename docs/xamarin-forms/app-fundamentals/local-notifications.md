@@ -1,8 +1,22 @@
 ---
-title: "Локальные уведомления в Xamarin.Forms" description: "В этой статье вы узнаете, как отправлять и получать локальные уведомления в Xamarin.Forms".
-ms.prod: xamarin ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7 ms.technology: xamarin-forms author: profexorgeek ms.author: jusjohns ms.date: 10/10/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Локальные уведомления в Xamarin.Forms" description: "В этой статье вы узнаете, как отправлять и получать локальные уведомления в Xamarin.Forms".'
+description: 'ms.prod: xamarin ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7 ms.technology: xamarin-forms author: profexorgeek ms.author: jusjohns ms.date: 10/10/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 10/10/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 40e040f216ddda40931273f4e7f5614964862fe8
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84137602"
 ---
-
 # <a name="local-notifications-in-xamarinforms"></a>Локальные уведомления в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/local-notifications)

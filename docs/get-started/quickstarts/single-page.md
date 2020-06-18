@@ -1,8 +1,24 @@
 ---
-title: "Создание одностраничного приложения Xamarin.Forms" description: "В этой статье описывается, как с помощью Xamarin.Forms создать одностраничное кроссплатформенное приложение, которое позволяет ввести заметку и сохранить ее в хранилище устройства".
-zone_pivot_groups: platform-dev16 ms.topic: quickstart ms.prod: xamarin ms.assetid: E8CF05B1-54B9-428B-8518-D068837BD61E ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/01/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Создание одностраничного приложения Xamarin.Forms" description: "В этой статье описывается, как с помощью Xamarin.Forms создать одностраничное кроссплатформенное приложение, которое позволяет ввести заметку и сохранить ее в хранилище устройства".'
+description: 'zone_pivot_groups: platform-dev16 ms.topic: quickstart ms.prod: xamarin ms.assetid: E8CF05B1-54B9-428B-8518-D068837BD61E ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/01/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+zone_pivot_groups: platform-dev16
+ms.topic: quickstart
+ms.prod: xamarin
+ms.assetid: E8CF05B1-54B9-428B-8518-D068837BD61E
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/01/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b9a3017fc8188d3669b64d95c968b2d0a5325358
+ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84136075"
 ---
-
 # <a name="create-a-single-page-xamarinforms-application"></a>Создание одностраничного приложения Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-singlepage/)

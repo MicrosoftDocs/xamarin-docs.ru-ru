@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms — модальные страницы" description: "Xamarin.Forms обеспечивает поддержку для модальных страниц. На модальной странице пользователь должен выполнить отдельную задачу, причем он не может уйти с этой страницы, пока задача не будет выполнена или отменена. В этой статье демонстрируется переход на модальные страницы".
-ms.prod: xamarin ms.assetid: 486CB7FD-2B9A-4DE3-94BD-C8D904E5D3C6 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/01/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: 'title: "Xamarin.Forms — модальные страницы" description: "Xamarin.Forms обеспечивает поддержку для модальных страниц.'
+description: 'На модальной странице пользователь должен выполнить отдельную задачу, причем он не может уйти с этой страницы, пока задача не будет выполнена или отменена. В этой статье демонстрируется переход на модальные страницы". ms.prod: xamarin ms.assetid: 486CB7FD-2B9A-4DE3-94BD-C8D904E5D3C6 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/01/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+ms.prod: xamarin
+ms.assetid: 486CB7FD-2B9A-4DE3-94BD-C8D904E5D3C6
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/01/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: aecab26efaed9815ec6916877b5f42297821582c
+ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84569612"
 ---
-
 # <a name="xamarinforms-modal-pages"></a>Модальные страницы Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-modal)

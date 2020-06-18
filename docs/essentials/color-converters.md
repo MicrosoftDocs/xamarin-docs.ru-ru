@@ -1,8 +1,21 @@
 ---
-title: "Xamarin.Essentials Преобразователи цветов" description: "Класс ColorConverters в Xamarin.Essentials предоставляет несколько вспомогательных методов и методов расширения для работы с System.Drawing.Color".
-ms.assetid: B10428D6-89E2-4714-A39F-7E6E626391B2 author: jamesmontemagno ms.author: jamont ms.date: 06.01.2020 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Преобразователи цвета в Xamarin.Essentials
+description: Класс ColorConverters в Xamarin.Essentials предоставляет несколько вспомогательных методов и методов расширения для работы с System.Drawing.Color.
+ms.assetid: B10428D6-89E2-4714-A39F-7E6E626391B2
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 01/06/2020
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ff6a5bed600f45dcd48867596a7fc8aa45decb82
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802440"
 ---
-
 # <a name="xamarinessentials-color-converters"></a>Xamarin.Essentials. Преобразователи цвета
 
 Класс **ColorConverters** в Xamarin.Essentials предоставляет несколько вспомогательных методов для System.Drawing.Color.
@@ -70,9 +83,9 @@ var system = platform.ToSystemColor();
 
 ## <a name="api"></a>API
 
-- [Исходный код преобразователей цвета](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Types/ColorConverters.shared.cs)
+- [Исходный код преобразователей цвета](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Types/ColorConverters.shared.cs)
 - [Документация по API преобразователей цвета](xref:Xamarin.Essentials.ColorConverters)
-- [Исходный код расширений цвета](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Types/ColorConverters.shared.cs)
+- [Исходный код расширений цвета](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Types/ColorConverters.shared.cs)
 - [Документация по API расширений цвета](xref:Xamarin.Essentials.ColorExtensions)
 
 ## <a name="related-video"></a>Связанные видео
