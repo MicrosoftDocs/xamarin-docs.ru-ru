@@ -1,8 +1,23 @@
 ---
-title: "Индексирование приложения и создание глубинных ссылок" description: "В этой статье объясняется, как использовать индексирование приложения и создание прямых ссылок, чтобы предоставить доступ к доступному для поиска содержимому приложения Xamarin.Forms на устройствах iOS и Android".
-ms.prod: xamarin ms.assetid: 410C5D19-AA3C-4E0D-B799-E288C5803226 ms.technology: xamarin-forms ms.custom: xamu-video author: davidbritch ms.author: dabritch ms.date: 11/28/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Индексирование приложения и создание прямых ссылок
+description: В этой статье объясняется, как использовать индексирование приложения и создание прямых ссылок, чтобы предоставить доступ к доступному для поиска содержимому приложения Xamarin.Forms на устройствах iOS и Android.
+ms.prod: xamarin
+ms.assetid: 410C5D19-AA3C-4E0D-B799-E288C5803226
+ms.technology: xamarin-forms
+ms.custom: xamu-video
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/28/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c7f5979b93ff35b14ec7c13418a4565604f46bd7
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84570639"
 ---
-
 # <a name="application-indexing-and-deep-linking"></a>Индексирование приложения и создание прямых ссылок
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/deeplinking)

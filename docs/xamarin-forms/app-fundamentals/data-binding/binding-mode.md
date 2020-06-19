@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms — режим привязки" description: "В этой статье объясняется, как управлять потоком данных между источником и целевым объектом с помощью режима привязки, который указывается с помощью члена перечисления BindingMode. Каждое привязываемое свойство имеет режим привязки по умолчанию, который указывает режим, действующий, когда свойство является целевым объектом привязки данных".
-ms.prod: xamarin ms.assetid: D087C389-2E9E-47B9-A341-5B14AC732C45 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/01/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Режим привязки Xamarin.Forms
+description: В этой статье объясняется, как управлять потоком данных между источником и целевым объектом с помощью режима привязки, который указывается с помощью члена перечисления BindingMode. Каждое привязываемое свойство имеет режим привязки по умолчанию, который указывает режим, действующий, когда свойство является целевым объектом привязки данных.
+ms.prod: xamarin
+ms.assetid: D087C389-2E9E-47B9-A341-5B14AC732C45
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/01/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c14215071a1d9d3ec804c307fa6edbbe4ddcf8e9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139780"
 ---
-
 # <a name="xamarinforms-binding-mode"></a>Режим привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)

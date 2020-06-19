@@ -1,8 +1,22 @@
 ---
-title: "Настройка ListView" description: "ListView Xamarin.Forms — это представление, в котором коллекция данных отображается в виде вертикального списка. В этой статье показано, как создать пользовательское средство отрисовки, содержащее зависящий от платформы список элементов управления и собственные макеты ячеек, предоставляя больше контроля над производительностью списка собственных элементов управления".
-ms.prod: xamarin ms.assetid: 2FBCB8C8-4F32-45E7-954F-63AD29D5F1B5 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/29/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Настройка ListView
+description: Xamarin.Forms ListView — это представление, в котором коллекция данных отображается в виде вертикального списка. В этой статье показано, как создать пользовательское средство отрисовки, содержащее зависящий от платформы список элементов управления и собственные макеты ячеек, предоставляя больше контроля над производительностью списка собственных элементов управления.
+ms.prod: xamarin
+ms.assetid: 2FBCB8C8-4F32-45E7-954F-63AD29D5F1B5
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/29/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: dc28cdaf78c72c219706a30c30af7f90ae7c4eec
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84569625"
 ---
-
 # <a name="customizing-a-listview"></a>Настройка ListView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-listview)

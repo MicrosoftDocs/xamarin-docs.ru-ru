@@ -1,8 +1,22 @@
 ---
-title: "Присоединенные реакции на события" description: "Присоединенные реакции на события — это статические классы с одним присоединенным свойством или несколькими. В этой статье содержатся сведения о создании и использовании присоединенных реакций на события".
-ms.prod: xamarin ms.assetid: ECEE6AEC-44FA-4AF7-BAD0-88C6EE48422E ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/06/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Присоединенные реакции на события
+description: Присоединенные реакции на события — это статические классы с одним или несколькими присоединенными свойствами. В этой статье содержатся сведения о создании и использовании присоединенных реакций на события.
+ms.prod: xamarin
+ms.assetid: ECEE6AEC-44FA-4AF7-BAD0-88C6EE48422E
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/06/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 08b1c738dc87bb9373436a3fd96486eb15341112
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139429"
 ---
-
 # <a name="attached-behaviors"></a>Присоединенные реакции на события
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-attachednumericvalidationbehavior)

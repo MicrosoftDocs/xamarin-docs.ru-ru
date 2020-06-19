@@ -1,8 +1,22 @@
 ---
-title: "Создание Xamarin.Forms DataTemplate" description: "Шаблоны данных могут создаваться как встроенные в ResourceDictionary или из пользовательского типа или соответствующего типа ячейки Xamarin.Forms. В этой статье рассматривается каждый из способов".
-ms.prod: xamarin ms.assetid: CFF4AB5E-9069-461C-84D8-F9F6C38510AB ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 09/11/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Создание Xamarin.Forms DataTemplate
+description: Шаблоны данных могут создаваться как встроенные в ResourceDictionary или из пользовательского типа или соответствующего типа ячейки Xamarin.Forms. В этой статье рассматривается каждый из способов.
+ms.prod: xamarin
+ms.assetid: CFF4AB5E-9069-461C-84D8-F9F6C38510AB
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/11/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 3054180a9deb1357357c90db7b7fbdd8058b6773
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84565503"
 ---
-
 # <a name="creating-a-xamarinforms-datatemplate"></a>Создание Xamarin.Forms DataTemplate
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-datatemplates)

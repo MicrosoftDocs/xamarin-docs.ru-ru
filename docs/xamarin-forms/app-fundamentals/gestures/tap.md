@@ -1,8 +1,22 @@
 ---
-title: "Добавление распознавателя жестов касания" description: "В этой статье объясняется, как использовать жест касания для распознавания касания в приложении Xamarin.Forms. Распознавание касания реализовано с помощью класса TapGestureRecognizer".
-ms.prod: xamarin ms.assetid: 1D150BAF-4157-49BC-90A0-153323B8EBCF ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/21/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Добавление распознавателя жестов касания
+description: В этой статье объясняется, как использовать жест касания для распознавания касания в приложении Xamarin.Forms. Распознавание касания реализовано с помощью класса TapGestureRecognizer.
+ms.prod: xamarin
+ms.assetid: 1D150BAF-4157-49BC-90A0-153323B8EBCF
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/21/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1f5b476ac83f801b4ccded3e18bb601c06e0d0ef
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84570613"
 ---
-
 # <a name="adding-a-tap-gesture-recognizer"></a>Добавление распознавателя жестов касания
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-tapgesture)

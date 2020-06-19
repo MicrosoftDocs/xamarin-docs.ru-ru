@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms — эффекты" description: "Эффекты позволяют настраивать собственные элементы управления на каждой платформе без реализации пользовательского отрисовщика".
-ms.prod: xamarin ms.assetid: 8AF168A7-4CD9-4603-B961-15B8B1543784 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 03/01/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Эффекты Xamarin.Forms
+description: Эффекты позволяют настраивать собственные элементы управления на каждой платформе без реализации пользовательского отрисовщика.
+ms.prod: xamarin
+ms.assetid: 8AF168A7-4CD9-4603-B961-15B8B1543784
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/01/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a6206d2c561df74a01b7d7408e8d542f1e2189d3
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139338"
 ---
-
 # <a name="xamarinforms-effects"></a>Эффекты Xamarin.Forms
 
 Пользовательские интерфейсы _Xamarin.Forms отрисовываются с помощью собственных элементов управления целевой платформы, обеспечивая единообразный внешний вид приложений Xamarin.Forms на каждой платформе. Эффекты позволяют настраивать собственные элементы управления на каждой платформе без реализации пользовательского отрисовщика._

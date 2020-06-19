@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms Локализация" description: "Встроенную платформу локализации .NET можно использовать для создания кроссплатформенных многоязыковых приложений в Xamarin.Forms. Можно локализовать текст и изображения, а приложения могут поддерживать направление потока справа налево".
-ms.prod: xamarin ms.assetid: 97BF843B-BDAA-4CEA-8189-6DB54B291D7F ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/07/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Локализация в Xamarin.Forms
+description: Встроенную платформу локализации .NET можно использовать в кроссплатформенных многоязыковых приложениях в Xamarin.Forms. Можно локализовать текст и изображения, а приложения могут поддерживать направление потока справа налево.
+ms.prod: xamarin
+ms.assetid: 97BF843B-BDAA-4CEA-8189-6DB54B291D7F
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/07/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: dddb80e8fb683547d2bf6ba0b74e870fe240695c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137570"
 ---
-
 # <a name="xamarinforms-localization"></a>Локализация в Xamarin.Forms
 
 _Встроенную платформу локализации .NET можно использовать в кроссплатформенных многоязыковых приложениях в Xamarin.Forms._

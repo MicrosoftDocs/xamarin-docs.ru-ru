@@ -1,8 +1,22 @@
 ---
-title: "Настройка WebView" description: "WebView Xamarin.Forms — это представление, позволяющее отображать веб-содержимое и содержимое HTML в приложении. В этой статье рассказывается, как создать пользовательский отрисовщик, расширяющий возможности WebView и позволяющий вызывать код C# из JavaScript".
-ms.prod: xamarin ms.assetid: 58DFFA52-4057-49A8-8682-50A58C7E842C ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 03/31/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Настройка WebView
+description: Xamarin.Forms WebView — это представление, позволяющее отображать веб-содержимое и содержимое HTML в приложении. В этой статье рассказывается, как создать пользовательский отрисовщик, расширяющий возможности WebView и позволяющий вызывать код C# из JavaScript.
+ms.prod: xamarin
+ms.assetid: 58DFFA52-4057-49A8-8682-50A58C7E842C
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/31/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8c83742896af4a22bcff327df82c1b14ff983bb2
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138974"
 ---
-
 # <a name="customizing-a-webview"></a>Настройка WebView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-hybridwebview)

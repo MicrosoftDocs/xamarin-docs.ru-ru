@@ -1,9 +1,21 @@
 ---
-title: "Что такое Xamarin.Forms?"
-описание: "В этой статье описываются платформа Xamarin.Forms и связанные с ней библиотеки".
-ms.prod: xamarin ms.assetid: C1E24DB9-3099-4F79-BB88-10AABF7D4614 author: profexorgeek ms.author: jusjohns ms.date: 28.05.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Что такое Xamarin.Forms?
+description: В этой статье описываются платформа Xamarin.Forms и связанные с ней библиотеки.
+ms.prod: xamarin
+ms.assetid: C1E24DB9-3099-4F79-BB88-10AABF7D4614
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 05/28/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: eb76da9be7fcb227c465c0a046b967b2f70b1cfb
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84198311"
 ---
-
 # <a name="what-is-xamarinforms"></a>Что такое Xamarin.Forms?
 
 [![Снимки экрана: примеры приложений Xamarin.Forms в iOS и Android](what-is-xamarin-forms-images/xamarin-forms-app-cropped.png)](what-is-xamarin-forms-images/xamarin-forms-app.png#lightbox)

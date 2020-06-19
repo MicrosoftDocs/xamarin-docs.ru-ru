@@ -1,8 +1,21 @@
 ---
-title: "Xamarin.Essentials: MainThread" description: "Класс MainThread позволяет приложениям выполнять код в основном потоке выполнения".
-ms.assetid: CD6D51E7-D933-4FE7-A7F7-392EF27812E1 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 20.08.2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. MainThread
+description: Класс MainThread позволяет приложениям выполнять код в основном потоке выполнения.
+ms.assetid: CD6D51E7-D933-4FE7-A7F7-392EF27812E1
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 08/20/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 82c54a72d0e0bc991644295f05136f89fd280d7f
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802271"
 ---
-
 # <a name="xamarinessentials-mainthread"></a>Xamarin.Essentials. MainThread
 
 Класс **MainThread** позволяет выполнять код в основном потоке приложения, а также проверять, выполняется ли конкретный блок кода в основном потоке в конкретный момент.
@@ -100,7 +113,7 @@ _Но на самом деле эта проверка не нужна._ Все 
 
 ## <a name="api"></a>API
 
-- [Исходный код MainThread](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/MainThread)
+- [Исходный код MainThread](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/MainThread)
 - [Документация по API для MainThread](xref:Xamarin.Essentials.MainThread)
 
 ## <a name="related-video"></a>Связанные видео

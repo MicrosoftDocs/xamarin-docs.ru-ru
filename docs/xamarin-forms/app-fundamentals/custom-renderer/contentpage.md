@@ -1,8 +1,22 @@
 ---
-title: "Настройка ContentPage" description: "ContentPage — это визуальный элемент, который отображает одно представление и занимает большую часть экрана. В этой статье показано, как создать пользовательский отрисовщик для страницы ContentPage, чтобы переопределять собственный способ отрисовки по умолчанию с помощью настройки в зависимости от платформы".
-ms.prod: xamarin ms.assetid: A4E61D93-73D9-4668-8D1C-DB6FC2491822 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/29/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Настройка ContentPage
+description: ContentPage — это визуальный элемент, который отображает одно представление и занимает большую часть экрана. В этой статье показано, как создать пользовательский отрисовщик для страницы ContentPage, чтобы переопределять собственный способ отрисовки по умолчанию с помощью настройки в зависимости от платформы.
+ms.prod: xamarin
+ms.assetid: A4E61D93-73D9-4668-8D1C-DB6FC2491822
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/29/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ca9a541c3d152d1b84ed682881c395f2199b9eaf
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84574383"
 ---
-
 # <a name="customizing-a-contentpage"></a>Настройка ContentPage
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-contentpage)

@@ -1,8 +1,22 @@
 ---
-title: "Повторно используемый EventToCommandBehavior" description: "Реакции на события можно использовать для сопоставления команд с элементами управления, которые не были предназначены для взаимодействия с командами. В этой статье демонстрируется создание и использование реакции на событие Xamarin.Forms для выполнения команды при возникновении события".
-ms.prod: xamarin ms.assetid: EC7F6556-9776-40B8-9424-A8094482A2F3 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/09/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Повторно используемый EventToCommandBehavior
+description: Реакции на события можно использовать для сопоставления команд с элементами управления, которые не были предназначены для взаимодействия с командами. В этой статье демонстрируется создание и использование реакции на событие Xamarin.Forms для выполнения команды при возникновении события.
+ms.prod: xamarin
+ms.assetid: EC7F6556-9776-40B8-9424-A8094482A2F3
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/09/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 46d1566c89de763a469f30ce8ed2c6ef919f1426
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84135802"
 ---
-
 # <a name="reusable-eventtocommandbehavior"></a>Повторно используемый EventToCommandBehavior
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior)

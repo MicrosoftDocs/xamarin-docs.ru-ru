@@ -1,8 +1,22 @@
 ---
-title: "Привязка источников видео к проигрывателю" description: "В этой статье объясняется, как привязать источники видео к видеопроигрывателю с помощью Xamarin.Forms".
-ms.prod: xamarin ms.assetid: 504E0C7E-051A-4AF2-B654-BAB4D0957928 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12.02.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Привязка источников видео к проигрывателю
+description: В этой статье объясняется, как привязать источники видео к видеопроигрывателю с помощью Xamarin.Forms.
+ms.prod: xamarin
+ms.assetid: 504E0C7E-051A-4AF2-B654-BAB4D0957928
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/12/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c02764d6160bb8ce2481a3cf67e357933d25934f
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84133735"
 ---
-
 # <a name="binding-video-sources-to-the-player"></a>Привязка источников видео к проигрывателю
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)

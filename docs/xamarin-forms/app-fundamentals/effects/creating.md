@@ -1,8 +1,22 @@
 ---
-title: "Создание эффекта" description: "Эффекты упрощают настройку элемента управления. В этой статье показано, как создать эффект, который изменяет цвет фона элемента управления Entry, когда элемент управления получает фокус".
-ms.prod: xamarin ms.assetid: 9E2C8DB0-36A2-4F13-8E3C-A66D7021DB13 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 10/24/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Создание эффекта
+description: Эффекты упрощают настройку элемента управления. В этой статье показано, как создать эффект, который изменяет цвет фона элемента управления Entry, когда элемент управления получает фокус.
+ms.prod: xamarin
+ms.assetid: 9E2C8DB0-36A2-4F13-8E3C-A66D7021DB13
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/24/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0ed11ccacec73dd3c5c220c41bffd090af6c5b27
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139390"
 ---
-
 # <a name="creating-an-effect"></a>Создание эффекта
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-focuseffect)

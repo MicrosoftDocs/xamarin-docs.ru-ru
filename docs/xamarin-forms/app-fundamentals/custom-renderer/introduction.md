@@ -1,8 +1,22 @@
 ---
-title: "Общие сведения о настраиваемых отрисовщиках" description: "В этой статье содержатся общие сведения о настраиваемых отрисовщиках и описывается процесс создания настраиваемого отрисовщика".
-ms.prod: xamarin ms.assetid: 264314BE-1C5C-4727-A14E-F6F98151CDBD ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/19/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Общие сведения о настраиваемых отрисовщиках
+description: В этой статье содержатся общие сведения о пользовательских отрисовщиках и описывается процесс создания настраиваемого отрисовщика.
+ms.prod: xamarin
+ms.assetid: 264314BE-1C5C-4727-A14E-F6F98151CDBD
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/19/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e2bed4d5e8f89efa2997fb085278c4b549870245
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84135325"
 ---
-
 # <a name="introduction-to-custom-renderers"></a>Общие сведения о настраиваемых отрисовщиках
 
 _Настраиваемые отрисовщики обеспечивают удобный подход к настройке внешнего вида и поведения элементов управления Xamarin.Forms. Их можно использовать для незначительных изменений стиля или сложной настройки макетов и поведения в зависимости от платформы. В этой статье содержатся общие сведения о настраиваемых отрисовщиках и описывается процесс создания настраиваемого отрисовщика._

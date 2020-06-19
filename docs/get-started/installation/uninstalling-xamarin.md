@@ -1,8 +1,21 @@
 ---
-title: "Удаление Xamarin" description: "Этот документ описывает удаление Xamarin из Visual Studio в Windows".
-ms.prod: xamarin ms.assetid: b83a85ec-842a-444c-8f82-c2464eda099b author: conceptdev ms.author: crdun ms.date: 22.01.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Удаление Xamarin
+description: Этот документ описывает удаление Xamarin из Visual Studio в Windows.
+ms.prod: xamarin
+ms.assetid: b83a85ec-842a-444c-8f82-c2464eda099b
+author: conceptdev
+ms.author: crdun
+ms.date: 01/22/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b4d644591ab85f185709e7bd53353580a6578d77
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84570114"
 ---
-
 # <a name="uninstall-xamarin-from-visual-studio"></a>Удаление Xamarin из Visual Studio
 
 Это руководство поясняет, как удалить Xamarin из Visual Studio в Windows.

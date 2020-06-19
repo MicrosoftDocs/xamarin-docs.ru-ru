@@ -1,8 +1,22 @@
 ---
-title: "Жесты в Xamarin.Forms" description: "В этом руководстве объясняется, как распознаватели жестов Xamarin.Forms можно использовать для определения взаимодействия пользователя с представлениями в приложении Xamarin.Forms".
-ms.prod: xamarin ms.assetid: 0E197A51-2304-4C09-A710-C7FF24A89F15 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 07/25/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Жесты в Xamarin.Forms
+description: В этом руководстве объясняется, как распознаватели жестов Xamarin.Forms можно использовать для определения взаимодействия пользователя с представлениями в приложении Xamarin.Forms.
+ms.prod: xamarin
+ms.assetid: 0E197A51-2304-4C09-A710-C7FF24A89F15
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/25/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5e1e93f74ab8ef6d63213a8fbdc7ec45a794cf55
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137881"
 ---
-
 # <a name="xamarinforms-gestures"></a>Жесты в Xamarin.Forms
 
 _Распознаватели жестов можно использовать для определения взаимодействия пользователя с представлениями в приложении Xamarin.Forms._
