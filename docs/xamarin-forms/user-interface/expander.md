@@ -10,12 +10,12 @@ ms.date: 04/15/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5e9afa0f6d27003891963af5715d5721e3129306
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 33659dd52452c575c403d0a25b24f17daf9e3f17
+ms.sourcegitcommit: 8a18471b3d96f3f726b66f9bc50a829f1c122f29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
-ms.locfileid: "84129588"
+ms.locfileid: "84988223"
 ---
 # <a name="xamarinforms-expander"></a>Xamarin.FormsExpander
 
@@ -45,7 +45,6 @@ Xamarin.Forms `Expander` Элемент управления предостав�
 - `ForceUpdateSizeCommand`Тип `ICommand` , который определяет команду, выполняемую при `Expander` принудительном обновлении размера. Это свойство использует `OneWayToSource` режим привязки.
 - `Header`Тип [`View`](xref:Xamarin.Forms.View) , который определяет содержимое заголовка.
 - `IsExpanded`Тип `bool` , который определяет, `Expander` развернут ли объект. Это свойство использует `TwoWay` режим привязки и имеет значение по умолчанию `false` .
-- `Spacing`Тип `double` , который представляет пространство между заголовком и его содержимым. Значение по умолчанию для этого свойства равно 0.
 - `State`Тип `ExpanderState` , который представляет состояние `Expander` . Это свойство использует `OneWayToSource` режим привязки.
 
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
@@ -224,51 +223,18 @@ expander.Content = grid;
 
 Дополнительные сведения о триггерах см. в разделе [ Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md).
 
-## <a name="define-the-space-between-header-and-content"></a>Определение пробела между заголовком и содержимым
-
-По умолчанию содержимое в `Expander` отображается непосредственно под его заголовком. Однако это поведение можно изменить, задав `Spacing` свойству `double` значение, представляющее пустое пространство между содержимым и его заголовком:
-
-```xaml
-<Expander Spacing="50"
-          IsExpanded="true">
-    <Expander.Header>
-        <Label Text="Baboon"
-               FontAttributes="Bold"
-               FontSize="Medium" />
-    </Expander.Header>
-    <Grid Padding="10">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Image Source="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
-               Aspect="AspectFill"
-               HeightRequest="120"
-               WidthRequest="120" />
-        <Label Grid.Column="1"
-               Text="Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae."
-               FontAttributes="Italic" />
-    </Grid>
-</Expander>
-```
-
-В этом примере `Expander` содержимое отображается 50 единиц, независимых от устройства, под заголовком:
-
-![Снимок экрана: расширитель с заданными промежутками в iOS и Android](expander-images/expander-spacing.png "Расширитель с набором расстояний в iOS и Android")
-
 ## <a name="embed-an-expander-in-an-expander"></a>Внедрение расширителя в расширитель
 
 Содержимое `Expander` может быть задано для другого `Expander` элемента управления, чтобы обеспечить несколько уровней расширения. В следующем коде XAML показан объект, `Expander` содержимое которого является другим `Expander` объектом:
 
 ```xaml
-<Expander Spacing="10">
+<Expander>
     <Expander.Header>
         <Label Text="{Binding Name}"
                FontAttributes="Bold"
                FontSize="Medium" />
     </Expander.Header>
-    <Expander Padding="10"
-              Spacing="10">
+    <Expander Padding="10">
         <Expander.Header>
             <Label Text="{Binding Location}"
                    FontSize="Medium" />

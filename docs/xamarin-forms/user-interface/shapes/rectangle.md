@@ -10,12 +10,12 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 979b7ab610091ea805237874eb25f4e052716010
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a0d528948ae8a57fc7c702d8a4ce3d3ec2eda15a
+ms.sourcegitcommit: 34fa3086c55b1e01838419c930f839c20662c362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
-ms.locfileid: "84947353"
+ms.locfileid: "84990833"
 ---
 # <a name="xamarinforms-shapes-rectangle"></a>Xamarin.FormsФигуры: прямоугольник
 
@@ -51,5 +51,5 @@ ms.locfileid: "84947353"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapedemos/)
+- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.FormsМногоугольник](index.md)

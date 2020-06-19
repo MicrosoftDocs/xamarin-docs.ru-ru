@@ -10,12 +10,12 @@ ms.date: 08/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: de8c6bff2c9dc72821692708f5852cd874c31ede
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 6b27f778a417a2bc0b458af4214ee8cb914fd93d
+ms.sourcegitcommit: 34fa3086c55b1e01838419c930f839c20662c362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139208"
+ms.locfileid: "84990858"
 ---
 # <a name="xamarinforms-menuitem"></a>Xamarin.FormsMenuItem
 
@@ -232,13 +232,13 @@ public class MyViewModel : INotifyPropertyChanged
 
     public Command MyCommand { get; private set; }
 
-    public ToolbarItemViewModel()
+    public MyViewModel()
     {
         MyCommand = new Command(() =>
         {
             // Execute logic here
         },
-        () => IsToolbarItemEnabled);
+        () => IsMenuItemEnabled);
     }
 }
 ```

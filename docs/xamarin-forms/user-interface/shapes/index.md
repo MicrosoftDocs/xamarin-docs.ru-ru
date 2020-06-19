@@ -10,12 +10,12 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a2ee7e6afc46c9d7b6e2f3d7710bdf758bafe1b9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 6f8cb91a3699ce7e18e7f4d2e891fafa1ff552c2
+ms.sourcegitcommit: 34fa3086c55b1e01838419c930f839c20662c362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
-ms.locfileid: "84947379"
+ms.locfileid: "84990756"
 ---
 # <a name="xamarinforms-shapes"></a>Xamarin.FormsМногоугольник
 
@@ -45,4 +45,4 @@ Xamarin.FormsОпределяет число объектов, производ�
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapedemos/)
+- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)

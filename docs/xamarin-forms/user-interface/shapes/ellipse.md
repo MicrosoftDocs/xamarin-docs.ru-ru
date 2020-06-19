@@ -10,12 +10,12 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7638a7a9bb272d1f1904c3e446cdf0b7838c27bd
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 719713368971b0b278cd4a4a9721e863a17ae16d
+ms.sourcegitcommit: 34fa3086c55b1e01838419c930f839c20662c362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
-ms.locfileid: "84947349"
+ms.locfileid: "84990794"
 ---
 # <a name="xamarinforms-shapes-ellipse"></a>Xamarin.FormsФигуры: эллипс
 
@@ -50,5 +50,5 @@ ms.locfileid: "84947349"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapedemos/)
+- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.FormsМногоугольник](index.md)

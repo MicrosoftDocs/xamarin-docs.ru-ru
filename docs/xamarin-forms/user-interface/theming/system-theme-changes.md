@@ -10,12 +10,12 @@ ms.date: 06/17/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 86ad823466470033c458ad44a404e8ab667c1b95
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 28bcbed3a03a2abbec42a619062579419a3063a4
+ms.sourcegitcommit: 8a18471b3d96f3f726b66f9bc50a829f1c122f29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
-ms.locfileid: "84903081"
+ms.locfileid: "84988209"
 ---
 # <a name="respond-to-system-theme-changes-in-xamarinforms-applications"></a>Реагирование на изменения системных тем в Xamarin.Forms приложениях
 
@@ -135,13 +135,16 @@ OSAppTheme currentTheme = Application.Current.RequestedTheme;
 
 ## <a name="set-the-current-user-theme"></a>Задание текущей темы пользователя
 
-Тема, используемая приложением, может быть задана с помощью `Application.UserTheme` свойства, имеющего тип `OSAppTheme` :
+Тема, используемая приложением, может быть задана с помощью `Application.UserAppTheme` свойства типа `OSAppTheme` , независимо от того, какая из системных тем в настоящее время работает:
 
 ```csharp
 Application.Current.UserAppTheme = OSAppTheme.Dark;
 ```
 
-В этом примере приложение настроено для использования темы, определенной для темного режима системы.
+В этом примере приложение настроено на использование темы, определенной для темного режима системы, независимо от того, какая из системных тем в настоящее время работает.
+
+> [!NOTE]
+> Присвойте `UserAppTheme` свойству значение `OSAppTheme.Unspecified` по умолчанию для рабочей системной темы.
 
 ## <a name="react-to-theme-changes"></a>Реагирование на изменения темы
 
