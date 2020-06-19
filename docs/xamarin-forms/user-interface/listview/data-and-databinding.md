@@ -1,8 +1,22 @@
 ---
-Title: "ListView Data Sources" Description: "в этой статье объясняется, как заполнить Xamarin.Forms ListView данными и как использовать привязку данных с ListView".
-MS. произв. Xamarin MS. AssetID: B5571660-1E82-4379-95C3-0725288CF5D9 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/23/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Источники данных ListView
+description: В этой статье объясняется, как заполнить Xamarin.Forms ListView данными и как использовать привязку данных с ListView.
+ms.prod: xamarin
+ms.assetid: B5571660-1E82-4379-95C3-0725288CF5D9
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/23/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 38a895c9064fc012aec35b37eac78bb16ff009a9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84131512"
 ---
-
 # <a name="listview-data-sources"></a>Источники данных ListView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-switchentrytwobinding)

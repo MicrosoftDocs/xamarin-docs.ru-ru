@@ -1,8 +1,22 @@
 ---
-Title: "точки и тире в SkiaSharp" Description: "в этой статье рассматриваются принципы рисования пунктирных и пунктирных линий в SkiaSharp, а также демонстрируется пример кода".
-MS. произв. Xamarin MS. AssetID: 8E9BCC13-830C-458C-9FC8-ECB4EAE66078 MS. Technology: Xamarin-skiasharp Автор: давидбритч MS. author: дабритч МС. Дата: 03/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Точки и тире в SkiaSharp
+description: В этой статье рассматриваются принципы рисования пунктирных и пунктирных линий в SkiaSharp, а также демонстрируется пример кода.
+ms.prod: xamarin
+ms.assetid: 8E9BCC13-830C-458C-9FC8-ECB4EAE66078
+ms.technology: xamarin-skiasharp
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/10/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8698bacd7257df431b12166c749f5826e8d6fd3c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138455"
 ---
-
 # <a name="dots-and-dashes-in-skiasharp"></a>Точки и тире в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

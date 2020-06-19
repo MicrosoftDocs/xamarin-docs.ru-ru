@@ -1,8 +1,22 @@
 ---
-Title: "Выбор элемента DatePicker в iOS" Описание: "особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать элементы управления для платформы iOS, которые используются для выбора элементов в DatePicker. "
-MS. произв. Xamarin MS. AssetID: 847E69D1-6AE0-4E82-B9C8-919E009C2014 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/15/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Выбор элемента DatePicker в iOS
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая управляет выбором элементов в DatePicker.
+ms.prod: xamarin
+ms.assetid: 847E69D1-6AE0-4E82-B9C8-919E009C2014
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/15/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c65cac4c777150185524b291adc6e9d1e79958d3
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138558"
 ---
-
 # <a name="datepicker-item-selection-on-ios"></a>Выбор элемента DatePicker в iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

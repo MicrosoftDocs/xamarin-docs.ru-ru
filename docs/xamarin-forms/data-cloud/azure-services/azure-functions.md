@@ -1,6 +1,21 @@
 ---
-Title: "функции Azure с Xamarin.Forms описанием:" Начало работы с функциями Azure с помощью Xamarin.Forms ".
-MS. произв. Xamarin MS. AssetID: 2F311A60-A6FC-4051-B938-AEF32086642F Автор: концептдев MS. author: крдун MS. Custom: видео MS. Date: 04/02/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Функции Azure сXamarin.Forms
+description: Приступая к работе с функциями Azure с помощью Xamarin.Forms .
+ms.prod: xamarin
+ms.assetid: 2F311A60-A6FC-4051-B938-AEF32086642F
+author: conceptdev
+ms.author: crdun
+ms.custom: video
+ms.date: 04/02/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 420cead8a43f35815110eb7ce3b183f10bb3ccd4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84197575"
 ---
 # <a name="get-started-with-azure-functions"></a>Начало работы с функциями Azure
 

@@ -1,8 +1,22 @@
 ---
-Title: "функции платформы Windows" Описание: "в этой статье описывается поддержка платформы Windows, доступная в разделе Xamarin.Forms ".
-MS. произв. Xamarin MS. AssetID: F6EA9E49-FB3E-442F-AF13-B7AD0C80D11F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/16/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Возможности платформы Windows
+description: В этой статье описывается поддержка платформы Windows, доступная в Xamarin.Forms .
+ms.prod: xamarin
+ms.assetid: F6EA9E49-FB3E-442F-AF13-B7AD0C80D11F
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/16/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 52246ce5d54ba97e91777f598f25c187901f89c4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137778"
 ---
-
 # <a name="windows-platform-features"></a>Возможности платформы Windows
 
 Xamarin.FormsДля разработки приложений для платформ Windows требуется Visual Studio. На [странице Поддерживаемые платформы](~/get-started/supported-platforms.md) содержатся дополнительные сведения о предварительных требованиях.
@@ -36,7 +50,7 @@ Xamarin.FormsДля разработки приложений для платф�
 
 - Указание каталога в проекте, из которого будут загружаться ресурсы изображений. Дополнительные сведения см. [в разделе Каталог образов по умолчанию в Windows](default-image-directory.md).
 
-## <a name="platform-support"></a>Поддержка платформы
+## <a name="platform-support"></a>Поддержка платформ
 
 Xamarin.FormsШаблоны, доступные в Visual Studio, содержат проект универсальная платформа Windows (UWP).
 

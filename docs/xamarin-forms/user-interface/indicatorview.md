@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms индикаторвиев» Description: «индикаторвиев — это элемент управления, отображающий индикаторы, представляющие количество элементов и текущую должность в карауселвиев».
-MS. произв. Xamarin MS. assetId: BBCC223B-4B02-46B7-80BB-EE0E86A67CE2 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/27/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Formsиндикаторвиев
+description: Индикаторвиев — это элемент управления, отображающий индикаторы, представляющие количество элементов и текущую позиции в Карауселвиев.
+ms.prod: xamarin
+ms.assetId: BBCC223B-4B02-46B7-80BB-EE0E86A67CE2
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/27/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e4c7d528cc61bb71fc495c830780ea4245ff3d87
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946381"
 ---
-
 # <a name="xamarinforms-indicatorview"></a>Xamarin.Formsиндикаторвиев
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
@@ -12,12 +26,6 @@ MS. произв. Xamarin MS. assetId: BBCC223B-4B02-46B7-80BB-EE0E86A67CE2 MS. 
 `IndicatorView`— Это элемент управления, отображающий индикаторы, представляющие количество элементов и текущую позиции в `CarouselView` :
 
 [![Снимок экрана Карауселвиев и Индикаторвиев на iOS и Android](indicatorview-images/circles.png "Индикаторвиев круги")](indicatorview-images/circles-large.png#lightbox "Индикаторвиев круги")
-
-`IndicatorView`доступна в Xamarin.Forms 4,4 на платформах iOS и Android, а также в 4,5 на универсальная платформа Windows. Однако в настоящее время он экспериментальен и может использоваться только путем добавления следующей строки кода в `AppDelegate` класс в iOS или в ваш `MainActivity` класс в Android перед вызовом `Forms.Init` :
-
-```csharp
-Forms.SetFlags("IndicatorView_Experimental");
-```
 
 `IndicatorView` определяет следующие свойства:
 

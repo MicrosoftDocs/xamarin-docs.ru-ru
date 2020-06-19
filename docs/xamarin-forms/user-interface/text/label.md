@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms Метка" Описание: "в этой статье объясняется, как использовать Xamarin.Forms класс Label для отображения одного и многострочного текста в приложениях".
-MS. произв. Xamarin MS. AssetID: 02E6C553-5670-49A0-8EE9-5153ED21EA91 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/09/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsЗаголовка
+description: В этой статье объясняется, как использовать Xamarin.Forms класс Label для отображения одного и многострочного текста в приложениях.
+ms.prod: xamarin
+ms.assetid: 02E6C553-5670-49A0-8EE9-5153ED21EA91
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/09/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8bf6517e3624ad80c2fd4d209e5a77472460be76
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84570522"
 ---
-
 # <a name="xamarinforms-label"></a>Xamarin.FormsЗаголовка
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)

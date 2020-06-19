@@ -1,8 +1,22 @@
 ---
-Title: "присоединенные свойства" Description: "в этой статье приводятся общие сведения о вложенных свойствах и демонстрируется их создание и использование".
-MS. произв. Xamarin MS. AssetID: 6E9DCDC3-A0E4-46A6-BAA9-4FEB6DF8A5A8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/02/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Присоединенные свойства
+description: В этой статье приводятся общие сведения о присоединенных свойствах и демонстрируется их создание и использование.
+ms.prod: xamarin
+ms.assetid: 6E9DCDC3-A0E4-46A6-BAA9-4FEB6DF8A5A8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/02/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1f26a4415a75b2b02fd7d6893e366ef81156f077
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138194"
 ---
-
 # <a name="attached-properties"></a>Присоединенные свойства
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)

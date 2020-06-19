@@ -1,8 +1,22 @@
 ---
-Title: "заполнение кнопок и теней на устройстве Android" Description: "особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая использует заполнение по умолчанию и значения тени для кнопок Android. "
-MS. произв. Xamarin MS. AssetID: BD2B60D1-DE6E-4691-A777-8EC5F560A4E9 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 07/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Заполнение и тени кнопок на Android
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая использует заполнение по умолчанию и значения тени для кнопок Android.
+ms.prod: xamarin
+ms.assetid: BD2B60D1-DE6E-4691-A777-8EC5F560A4E9
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5554341493b52d20c946a4bcfe2d1230e4a02759
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84135573"
 ---
-
 # <a name="button-padding-and-shadows-on-android"></a>Заполнение и тени кнопок на Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

@@ -1,8 +1,22 @@
 ---
-Title: «Tizen .NET» Description: «Tizen .NET позволяет разрабатывать приложения для операционной системы Tizen, которая работает на устройствах Samsung, включая телевизоры, переносные устройства, мобильные устройства и другие устройства IoT».
-MS. произв. Xamarin MS. AssetID: 5A22A354-A4DD-480D-A1BB-6D0C38592E55 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/26/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Tizen .NET
+description: Tizen .NET позволяет разрабатывать приложения для операционной системы Tizen, работающей на устройствах Samsung, включая телевизоры, переносные устройства, мобильные устройства и другие устройства IoT.
+ms.prod: xamarin
+ms.assetid: 5A22A354-A4DD-480D-A1BB-6D0C38592E55
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/26/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 873e243be3b90023ac8f58c2a29df89806b22658
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139520"
 ---
-
 # <a name="tizen-net"></a>Tizen .NET
 
 _Tizen .NET позволяет разрабатывать приложения Tizen для работы на устройствах Samsung, включая телевизоры, переносные устройства, мобильные устройства и другие устройства IoT._

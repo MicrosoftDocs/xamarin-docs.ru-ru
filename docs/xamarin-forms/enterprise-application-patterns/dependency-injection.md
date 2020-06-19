@@ -1,8 +1,22 @@
 ---
-Title: "Введение зависимостей" Описание: "в этой главе объясняется, как мобильное приложение eShopOnContainers использует внедрение зависимостей для отделения конкретных типов от кода, который зависит от этих типов".
-MS. произв. Xamarin MS. AssetID: a150f2d1-06f8-4aed-ab4e-7a847d69f103 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 11/04/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Внедрение зависимостей
+description: В этой главе объясняется, как мобильное приложение eShopOnContainers использует внедрение зависимостей для отделения конкретных типов от кода, который зависит от этих типов.
+ms.prod: xamarin
+ms.assetid: a150f2d1-06f8-4aed-ab4e-7a847d69f103
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/04/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 99cac3c597cf1d7351d3214ce59fd0a0a0a46400
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84572355"
 ---
-
 # <a name="dependency-injection"></a>Внедрение зависимостей
 
 Как правило, конструктор класса вызывается при создании экземпляра объекта, а все значения, необходимые объекту, передаются в конструктор в качестве аргументов. Это пример внедрения зависимостей, который, в частности, называется *внедрением конструктора*. Зависимости, необходимые объекту, вставляются в конструктор.

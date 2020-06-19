@@ -1,8 +1,22 @@
 ---
-Title: "анимация строк ListView в iOS" Описание: "особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать особенности платформы iOS, которые определяют, отключаются ли анимации строк при обновлении коллекции элементов ListView. "
-MS. произв. Xamarin MS. AssetID: E8F5103F-4D8E-4A5A-A16C-7FA14EE786AC MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/21/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Анимация строк ListView в iOS
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать особенности платформы iOS, которые определяют, отключаются ли анимации строк при обновлении коллекции элементов ListView.
+ms.prod: xamarin
+ms.assetid: E8F5103F-4D8E-4A5A-A16C-7FA14EE786AC
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/21/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 594e436c9db7c123fea4f9aa262c9d27af765b07
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136010"
 ---
-
 # <a name="listview-row-animations-on-ios"></a>Анимация строк ListView в iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

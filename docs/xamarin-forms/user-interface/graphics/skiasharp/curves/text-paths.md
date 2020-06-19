@@ -1,8 +1,22 @@
 ---
-Title: "пути и текст в SkiaSharp" Описание: "в этой статье рассматривается пересечение SkiaSharpных путей и текста и демонстрируется пример кода".
-MS. произв. Xamarin MS. AssetID: C14C07F6-4A84-4A8C-BDB4-CD61FBF0F79B MS. Technology: Xamarin-skiasharp Автор: давидбритч MS. author: дабритч МС. Дата: 08/01/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Пути и текст в SkiaSharp
+description: В этой статье рассматривается пересечение SkiaSharp путей и текста, а также демонстрируется пример кода.
+ms.prod: xamarin
+ms.assetid: C14C07F6-4A84-4A8C-BDB4-CD61FBF0F79B
+ms.technology: xamarin-skiasharp
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/01/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b0cbb7d26a2aea02a3255fc75947c20a3d803b86
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84131902"
 ---
-
 # <a name="paths-and-text-in-skiasharp"></a>Пути и текст в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

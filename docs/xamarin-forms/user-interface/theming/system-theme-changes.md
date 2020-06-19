@@ -1,8 +1,22 @@
 ---
-Title: "реагирование на изменения темы системы в Xamarin.Forms приложениях" Description: " Xamarin.Forms приложения могут реагировать на изменения темы операционной системы с помощью типа онаппсеме и расширения разметки DynamicResource".
-MS. AssetID: D10506DD-BAA0-437F-A4AD-882D16E7B60D MS. произв. Xamarin MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/22/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Реагирование на изменения системных тем в Xamarin.Forms приложениях
+description: Xamarin.Formsприложения могут реагировать на изменения темы операционной системы с помощью типа Онаппсеме и расширения разметки DynamicResource.
+ms.assetid: D10506DD-BAA0-437F-A4AD-882D16E7B60D
+ms.prod: xamarin
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/17/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 86ad823466470033c458ad44a404e8ab667c1b95
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84903081"
 ---
-
 # <a name="respond-to-system-theme-changes-in-xamarinforms-applications"></a>Реагирование на изменения системных тем в Xamarin.Forms приложениях
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-systemthemesdemo/)
@@ -11,14 +25,14 @@ MS. AssetID: D10506DD-BAA0-437F-A4AD-882D16E7B60D MS. произв. Xamarin MS. 
 
 Тема системы может измениться по ряду причин, в зависимости от конфигурации устройства. К ним относится пользовательская тема, измененная пользователем, она изменяется из-за времени суток и изменяется из-за таких факторов окружающей среды, как низкая интенсивность.
 
-Xamarin.Formsприложения могут реагировать на изменения темы системы путем определения ресурсов с помощью `AppThemeColor` класса, `OnAppTheme<T>` класса и `OnAppTheme` расширения разметки. Затем эти ресурсы следует использовать с `DynamicResource` расширением разметки.
+Xamarin.Formsприложения могут реагировать на изменения темы системы за счет использования ресурсов с `AppThemeBinding` расширением разметки, а также `SetAppThemeColor` `SetOnAppTheme<T>` методов расширения и.
 
 > [!IMPORTANT]
 > Реагирование на изменение системной темы в настоящее время экспериментально и может использоваться только путем установки `AppTheme_Experimental` флага. Дополнительные сведения см. в разделе [экспериментальные флаги](~/xamarin-forms/internals/experimental-flags.md).
 
 Для Xamarin.Forms реагирования на изменение системной темы должны быть выполнены следующие требования.
 
-- Xamarin.Forms4,6 или выше.
+- Xamarin.Forms4.6.0.967 или выше.
 - iOS 13 или более поздняя.
 - Android 10 (API 29) или более поздней версии.
 - UWP сборки 14393 или более поздней версии.
@@ -30,123 +44,80 @@ Xamarin.Formsприложения могут реагировать на изм�
 
 ## <a name="define-and-consume-theme-resources"></a>Определение и использование ресурсов тем
 
-Ресурсы для светлой и темной темы можно определить с помощью `AppThemeColor` класса, `OnAppTheme<T>` класса и `OnAppTheme` расширения разметки. При каждом подходе эти ресурсы автоматически применяются в зависимости от значения текущей системной темы. Кроме того, объекты, использующие эти ресурсы, автоматически обновляются при изменении темы системы во время работы приложения.
+Ресурсы для светлой и темной темы можно использовать с `AppThemeBinding` расширением разметки, а также с помощью `SetAppThemeColor` `SetOnAppTheme<T>` методов расширения и. При использовании этих подходов ресурсы автоматически применяются в зависимости от значения текущей системной темы. Кроме того, объекты, использующие эти ресурсы, автоматически обновляются при изменении темы системы во время работы приложения.
 
-### <a name="appthemecolor"></a>аппсемеколор
+### <a name="appthemebinding-markup-extension"></a>Расширение разметки Аппсемебиндинг
 
-`AppThemeColor`Класс используется для определения [`Color`](xref:Xamarin.Forms.Color) ресурсов для светлых и темных системных тем. `AppThemeColor`ресурсы должны быть определены в [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) :
-
-```xaml
-<Application ...>
-    <Application.Resources>
-        <AppThemeColor x:Key="PageBackgroundColor"
-                       Light="White"
-                       Dark="Black" />
-        <AppThemeColor x:Key="NavigationBarColor"
-                       Light="WhiteSmoke"
-                       Dark="Teal" />
-        <AppThemeColor x:Key="PrimaryColor"
-                       Light="WhiteSmoke"
-                       Dark="Teal" />
-        <AppThemeColor x:Key="SecondaryColor"
-                       Light="Black"
-                       Dark="White" />
-        <AppThemeColor x:Key="PrimaryTextColor"
-                       Light="Black"
-                       Dark="White" />
-        <AppThemeColor x:Key="SecondaryTextColor"
-                       Light="White"
-                       Dark="White" />
-        <AppThemeColor x:Key="TertiaryTextColor"
-                       Light="Gray"
-                       Dark="WhiteSmoke" />
-        <AppThemeColor x:Key="TransparentColor"
-                       Light="Transparent"
-                       Dark="Transparent" />
-    </Application.Resources>
-</Application>
-```
-
-Каждый `AppThemeColor` ресурс должен иметь `x:Key` атрибут, который предоставляет его описательный ключ в [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Значения `Light` `Dark` свойств и должны быть [`Color`](xref:Xamarin.Forms.Color) объектами. Кроме того, `Default` свойству может быть присвоено значение, `Color` которое по умолчанию используется для использования объектом.
-
-`AppThemeColor`ресурсы можно использовать в строке:
-
-```xaml
-<Label Text="This monkey reacts appropriately to ridiculous assertions and actions"
-       TextColor="{DynamicResource PrimaryTextColor}" />
-```
-
-Кроме того, `AppThemeColor` ресурсы могут использоваться неявно или явными [`Style`](xref:Xamarin.Forms.Style) объектами:
-
-```xaml
-<Style TargetType="NavigationPage">
-    <Setter Property="BarBackgroundColor"
-            Value="{DynamicResource NavigationBarColor}" />
-    <Setter Property="BarTextColor"
-            Value="{DynamicResource SecondaryColor}" />
-</Style>
-```
-
-> [!IMPORTANT]
-> `AppThemeColor`ресурсы должны использоваться с `DynamicResource` расширением разметки. Это гарантирует, что внешний вид объекта будет обновляться при изменении темы системы.
-
-### <a name="onappthemelttgt"></a>Онаппсеме &lt; T&gt;
-
-`OnAppTheme<T>`Класс используется для определения ресурсов любого типа для светлых и темных системных тем. `OnAppTheme<T>`ресурсы должны быть определены в [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) , с `T` аргументом, указанным в качестве значения `x:TypeArguments` атрибута:
-
-```xaml
-<Application ...>
-    <Application.Resources>
-        <OnAppTheme x:Key="ImageLogo"
-                    x:TypeArguments="FileImageSource"
-                    Light="lightlogo.png"
-                    Dark="darklogo.png" />
-    </Application.Resources>
-</Application>
-```
-
-Каждый `OnAppTheme<T>` ресурс должен иметь `x:Key` атрибут, который предоставляет его описательный ключ в [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Значения `Light` `Dark` свойств и должны быть объектами типа, определенного в качестве `x:TypeArguments` атрибута. Кроме того, `Default` свойству может быть присвоено значение объекта типа, `T` используемого по умолчанию для использования объектом.
-
-`OnAppTheme<T>`ресурсы можно использовать в строке:
-
-```xaml
-<Image Source="{DynamicResource ImageLogo}"
-       Aspect="AspectFit"
-       HeightRequest="200" /
-```
-
-Кроме того, `OnAppTheme<T>` ресурсы могут использоваться неявно или явными [`Style`](xref:Xamarin.Forms.Style) объектами:
-
-```xaml
-<Style x:Key="imageLogoStyle"
-       TargetType="Image">
-    <Setter Property="Source"
-            Value="{DynamicResource ImageLogo}" />
-    <Setter Property="Aspect"
-            Value="AspectFit" />
-</Style>
-```
-
-> [!IMPORTANT]
-> `OnAppTheme<T>`ресурсы должны использоваться с `DynamicResource` расширением разметки. Это гарантирует, что внешний вид объекта будет обновляться при изменении темы системы.
-
-### <a name="onapptheme-markup-extension"></a>Расширение разметки OnAppTheme
-
-`OnAppTheme`Расширение разметки позволяет указать ресурс, который будет использоваться, например изображение или цвет, на основе текущей системной темы. Он предоставляет те же функциональные возможности, что и `OnAppTheme<T>` класс, но с более кратким представлением:
+`AppThemeBinding`Расширение разметки позволяет использовать ресурс, например изображение или цвет, на основе текущей системной темы:
 
 ```xaml
 <ContentPage ...>
     <StackLayout Margin="20">
         <Label Text="This text is green in light mode, and red in dark mode."
-               TextColor="{OnAppTheme Light=Green, Dark=Red}" />
-        <Image Source="{OnAppTheme Light=lightlogo.png, Dark=darklogo.png}" />
+               TextColor="{AppThemeBinding Light=Green, Dark=Red}" />
+        <Image Source="{AppThemeBinding Light=lightlogo.png, Dark=darklogo.png}" />
     </StackLayout>
 </ContentPage>
 ```
 
 В этом примере цвет текста первого объекта задается [`Label`](xref:Xamarin.Forms.Label) зеленым цветом, когда устройство использует его светлую тему, и задается красным, если устройство использует его темную тему. Аналогичным образом, [`Image`](xref:Xamarin.Forms.Image) отображает другой файл изображения на основе текущей системной темы.
 
-Дополнительные сведения о `OnAppTheme` расширении разметки см. в разделе [расширение разметки онаппсеме](~/xamarin-forms/xaml/markup-extensions/consuming.md#onapptheme-markup-extension).
+Кроме того, ресурсы, определенные в, [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) можно использовать с `StaticResource` расширением разметки:
+
+```xaml
+<ContentPage ...>
+    <ContentPage.Resources>
+
+        <!-- Light colors -->
+        <Color x:Key="LightPrimaryColor">WhiteSmoke</Color>
+        <Color x:Key="LightSecondaryColor">Black</Color>
+
+        <!-- Dark colors -->
+        <Color x:Key="DarkPrimaryColor">Teal</Color>
+        <Color x:Key="DarkSecondaryColor">White</Color>
+
+        <Style x:Key="ButtonStyle"
+               TargetType="Button">
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}" />
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}" />
+        </Style>
+
+    </ContentPage.Resources>
+
+    <Grid BackgroundColor="{AppThemeBinding Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}">
+      <Button Text="MORE INFO"
+              Style="{StaticResource ButtonStyle}" />
+    </Grid>    
+</ContentPage>    
+```
+
+В этом примере цвет фона [`Grid`](xref:Xamarin.Forms.Grid) и [`Button`](xref:Xamarin.Forms.Button) стиля изменяется в зависимости от того, используется ли на устройстве светлая или темная тема.
+
+Дополнительные сведения о `AppThemeBinding` расширении разметки см. в разделе [расширение разметки аппсемебиндинг](~/xamarin-forms/xaml/markup-extensions/consuming.md#appthemebinding-markup-extension).
+
+### <a name="extension-methods"></a>Методы расширения
+
+Xamarin.Formsвключает `SetAppThemeColor` и `SetOnAppTheme<T>` методы расширения, позволяющие [`VisualElement`](xref:Xamarin.Forms.VisualElement) объектам реагировать на изменения темы системы.
+
+`SetAppThemeColor`Метод позволяет [`Color`](xref:Xamarin.Forms.Color) указать объекты, которые будут установлены для целевого свойства на основе текущей системной темы:
+
+```csharp
+Label label = new Label();
+label.SetAppThemeColor(Label.TextColorProperty, Color.Green, Color.Red);
+```
+
+В этом примере цвет текста для [`Label`](xref:Xamarin.Forms.Label) имеет значение зеленый, если устройство использует светло-тему, а для устройства используется темная тема.
+
+`SetOnAppTheme<T>`Метод позволяет указать объекты типа `T` , которые будут установлены для целевого свойства на основе текущей системной темы:
+
+```csharp
+Image image = new Image();
+image.SetOnAppTheme<FileImageSource>(Image.SourceProperty, "lightlogo.png", "darklogo.png");
+```
+
+В этом примере отображается, [`Image`](xref:Xamarin.Forms.Image) `lightlogo.png` когда устройство использует светло-тему и `darklogo.png` когда устройство использует его темную тему.
 
 ## <a name="detect-the-current-system-theme"></a>Обнаружение текущей системной темы
 
@@ -161,6 +132,16 @@ OSAppTheme currentTheme = Application.Current.RequestedTheme;
 - `Unspecified`, что означает, что устройство использует неуказанную тему.
 - `Light`, что означает, что устройство использует светло-тему.
 - `Dark`, что означает, что устройство использует его темную тему.
+
+## <a name="set-the-current-user-theme"></a>Задание текущей темы пользователя
+
+Тема, используемая приложением, может быть задана с помощью `Application.UserTheme` свойства, имеющего тип `OSAppTheme` :
+
+```csharp
+Application.Current.UserAppTheme = OSAppTheme.Dark;
+```
+
+В этом примере приложение настроено для использования темы, определенной для темного режима системы.
 
 ## <a name="react-to-theme-changes"></a>Реагирование на изменения темы
 
@@ -178,7 +159,6 @@ Application.Current.RequestedThemeChanged += (s, a) =>
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Системсемес (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-systemthemesdemo/)
-- [Расширение разметки OnAppTheme](~/xamarin-forms/xaml/markup-extensions/consuming.md#onapptheme-markup-extension)
+- [Расширение разметки Аппсемебиндинг](~/xamarin-forms/xaml/markup-extensions/consuming.md#appthemebinding-markup-extension)
 - [Словари ресурсов](~/xamarin-forms/xaml/resource-dictionaries.md)
-- [Динамические стили вXamarin.Forms](~/xamarin-forms/user-interface/styles/xaml/dynamic.md)
 - [Задание стиля приложений Xamarin.Forms с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)

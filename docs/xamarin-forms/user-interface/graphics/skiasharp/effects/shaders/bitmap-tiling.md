@@ -1,8 +1,22 @@
 ---
-Title: "SkiaSharp мозаичное заполнение" Description: "мозаичная область с использованием точечных рисунков повторяется горизонтально и вертикально".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 9ED14E07-4DC8-4B03-8A33-772838BF51EA Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Разбиение растрового изображения SkiaSharp
+description: Мозаичное заполнение области с помощью точечных рисунков, повторяемых горизонтально и вертикально.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 9ED14E07-4DC8-4B03-8A33-772838BF51EA
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/23/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 6a28dd20eb8978334365ac217df1241e5288fd28
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137432"
 ---
-
 # <a name="skiasharp-bitmap-tiling"></a>Разбиение растрового изображения SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

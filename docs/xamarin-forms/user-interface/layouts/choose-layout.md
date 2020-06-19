@@ -1,8 +1,22 @@
 ---
-Title: "Выбор Xamarin.Forms макета" Описание: " Xamarin.Forms классы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении".
-MS. произв. Xamarin MS. AssetID: 05A39752-A174-447E-A30D-3CC9EF98CB96 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/21/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Выбор Xamarin.Forms макета
+description: Xamarin.Formsклассы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении.
+ms.prod: xamarin
+ms.assetid: 05A39752-A174-447E-A30D-3CC9EF98CB96
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/21/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 16a48423d05ce1cede75c0020bf18f4f398f5adc
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138506"
 ---
-
 # <a name="choose-a-xamarinforms-layout"></a>Выбор Xamarin.Forms макета
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)

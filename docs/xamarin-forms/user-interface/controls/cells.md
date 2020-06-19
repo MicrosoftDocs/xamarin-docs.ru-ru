@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms ячейки" Description: " Xamarin.Forms ячейки можно добавлять в ListView и таблевиевс. В этой статье перечислены ячейки, входящие в Xamarin.Forms ".
-MS. произв. Xamarin MS. AssetID: 77DA0C89-35D6-4C09-A072-3ADE53FD56CF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/12/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsЯчеек
+description: Xamarin.Formsячейки можно добавлять в ListView и Таблевиевс. В этой статье перечислены ячейки, входящие в Xamarin.Forms .
+ms.prod: xamarin
+ms.assetid: 77DA0C89-35D6-4C09-A072-3ADE53FD56CF
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/12/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: fff62aea5a20a8a14271123c4664c2c0b4e26d1e
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84573330"
 ---
-
 # <a name="xamarinforms-cells"></a>Xamarin.FormsЯчеек
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)

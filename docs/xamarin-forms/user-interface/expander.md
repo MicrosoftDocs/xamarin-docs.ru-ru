@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms расширитель" Description: " Xamarin.Forms элемент управления Expander предоставляет расширяемый контейнер для размещения любого содержимого. Содержимое отображается или скрывается путем касания заголовка расширителя.
-MS. произв. Xamarin MS. AssetID: 381DCB55-522D-4414-B45B-E8DD70AA9985 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/15/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsExpander
+description: Xamarin.FormsЭлемент управления Expander предоставляет расширяемый контейнер для размещения любого содержимого. Содержимое отображается или скрывается путем касания заголовка расширителя.
+ms.prod: xamarin
+ms.assetid: 381DCB55-522D-4414-B45B-E8DD70AA9985
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/15/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5e9afa0f6d27003891963af5715d5721e3129306
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84129588"
 ---
-
 # <a name="xamarinforms-expander"></a>Xamarin.FormsExpander
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)

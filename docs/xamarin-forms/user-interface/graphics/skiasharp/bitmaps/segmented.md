@@ -1,8 +1,22 @@
 ---
-Title: "Сегментированное отображение точечных рисунков SkiaSharp" Description: "Отображение точечного рисунка SkiaSharp для растяжения области и некоторых областей".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 79AE2033-C41C-4447-95A6-76D22E913D19 Автор: давидбритч MS. author: дабритч MS. Дата: 07/17/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Сегментированное отображение точечных рисунков SkiaSharp
+description: Отобразить точечный рисунок SkiaSharp, чтобы растянуть некоторые области, а некоторые области — нет.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 79AE2033-C41C-4447-95A6-76D22E913D19
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/17/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5c3909271580d0568d7c603de0d434ff5b3f3bc4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138675"
 ---
-
 # <a name="segmented-display-of-skiasharp-bitmaps"></a>Сегментированное отображение точечных рисунков SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

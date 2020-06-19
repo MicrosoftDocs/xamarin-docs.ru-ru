@@ -1,8 +1,22 @@
 ---
-Title: "описание трех типов кривых Безье" Description: "в этой статье объясняется, как с помощью SkiaSharp визуализировать кубические, квадратичные и Коник кривые Безье в Xamarin.Forms приложениях и демонстрирует это с помощью образца кода".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 8FE0F6DC-16BC-435F-9626-DD1790C0145A Автор: давидбритч MS. author: дабритч МС. Дата: 05/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Три типа кривых Безье
+description: В этой статье объясняется, как с помощью SkiaSharp визуализировать кривые Безье, кубические и Коник Безье в Xamarin.Forms приложениях и демонстрирует это с помощью примера кода.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 8FE0F6DC-16BC-435F-9626-DD1790C0145A
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/25/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1ad548846500ccbacc2a3d117919bfb4df1a1d79
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138688"
 ---
-
 # <a name="three-types-of-bzier-curves"></a>Три типа кривых Безье
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

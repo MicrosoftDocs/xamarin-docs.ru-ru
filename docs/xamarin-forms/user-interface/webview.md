@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms WebView» Description:» в этой статье объясняется, как использовать Xamarin.Forms класс WebView для представления локальных или сетевых веб-содержимого и документов пользователям.
-MS. произв. Xamarin MS. AssetID: E44F5D0F-DB8E-46C7-8789-114F1652A6C5 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/06/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsWebView
+description: В этой статье объясняется, как использовать Xamarin.Forms класс WebView для представления локальных или сетевых веб-содержимого и документов пользователям.
+ms.prod: xamarin
+ms.assetid: E44F5D0F-DB8E-46C7-8789-114F1652A6C5
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/06/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9b07e044e55f99a7a183e55c566bf59dbd082655
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84198172"
 ---
-
 # <a name="xamarinforms-webview"></a>Xamarin.FormsWebView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithwebview)
@@ -416,7 +430,7 @@ webView.Reload();
 - **Android** &ndash; требуется `INTERNET` только при отображении содержимого из сети. Для локального содержимого не требуются специальные разрешения.
 - **iOS** &ndash; не требует специальных разрешений.
 
-## <a name="layout"></a>Layout
+## <a name="layout"></a>Макет
 
 В отличие от большинства других Xamarin.Forms представлений, `WebView` требует, чтобы `HeightRequest` и `WidthRequest` были указаны, если они содержатся в StackLayout или RelativeLayout. Если не указать эти свойства, объект `WebView` не будет отображен.
 

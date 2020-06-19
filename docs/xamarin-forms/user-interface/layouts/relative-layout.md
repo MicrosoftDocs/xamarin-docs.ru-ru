@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms RelativeLayout» Description:» в этой статье объясняется, как использовать Xamarin.Forms класс RelativeLayout для создания пользовательских интерфейсов, которые масштабируются в соответствии с размером экрана.
-MS. произв. Xamarin MS. AssetID: 2530BCB8-01B8-4C4F-BF14-CA53659F1B5A MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 11/25/2015 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsRelativeLayout
+description: В этой статье объясняется, как использовать Xamarin.Forms класс RelativeLayout для создания пользовательских интерфейсов, которые масштабируются в соответствии с размером экрана.
+ms.prod: xamarin
+ms.assetid: 2530BCB8-01B8-4C4F-BF14-CA53659F1B5A
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/25/2015
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f250b109f759bcf6bb7fa4ac0573743ac12c4bc1
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84127196"
 ---
-
 # <a name="xamarinforms-relativelayout"></a>Xamarin.FormsRelativeLayout
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
@@ -11,7 +25,7 @@ MS. произв. Xamarin MS. AssetID: 2530BCB8-01B8-4C4F-BF14-CA53659F1B5A MS. 
 
 [![](relative-layout-images/layouts-sml.png "Xamarin.Forms Layouts")](relative-layout-images/layouts.png#lightbox "Xamarin.Forms Layouts")
 
-## <a name="purpose"></a>Цель
+## <a name="purpose"></a>Назначение
 
 `RelativeLayout`может использоваться для позиционирования представлений на экране относительно общего макета или других представлений.
 

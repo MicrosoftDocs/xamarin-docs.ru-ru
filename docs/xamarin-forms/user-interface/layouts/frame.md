@@ -1,6 +1,21 @@
 ---
-Title: " Xamarin.Forms кадр" Description: " Xamarin.Forms класс Frame является макетом, используемым для создания оболочки представления или макета с границей, для которой можно настроить цвет, тень и другие параметры".
-MS. произв. Xamarin MS. assetId: 4E074714-0928-41C8-A468-B60E23236A8C MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 08/06/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsNOFRAMES
+description: Xamarin.FormsКласс Frame — это макет, используемый для создания оболочки представления или макета с границей, которая может быть настроена с помощью цвета, тени и других параметров.
+ms.prod: xamarin
+ms.assetId: 4E074714-0928-41C8-A468-B60E23236A8C
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 08/06/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 42192111befbefda7e0f62b7691a8392c2828818
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137193"
 ---
 # <a name="xamarinforms-frame"></a>Xamarin.FormsNOFRAMES
 

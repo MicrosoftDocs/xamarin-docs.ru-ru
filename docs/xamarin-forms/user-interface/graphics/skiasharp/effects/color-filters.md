@@ -1,8 +1,22 @@
 ---
-Title: «SkiaSharp Color Filters» Description: «использование цветовых фильтров для преобразования цветов с преобразованиями или таблицами».
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 774E7B55-AEC8-4F12-B657-1C0CEE01AD63 Автор: давидбритч MS. author: дабритч MS. Дата: 08/28/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Фильтры по цвету SkiaSharp
+description: Используйте цветовые фильтры для преобразования цветов с преобразованиями или таблицами.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 774E7B55-AEC8-4F12-B657-1C0CEE01AD63
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/28/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b9c89d4d426884d678e77687ffa226cced97be58
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136387"
 ---
-
 # <a name="skiasharp-color-filters"></a>Фильтры по цвету SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

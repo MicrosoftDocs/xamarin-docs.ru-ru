@@ -1,8 +1,23 @@
 ---
-Title: "элементы управления XAML" Description: "все представления, определенные в, Xamarin.Forms могут ссылаться на файлы XAML".
-MS. Topic: статья MS. произв. Xamarin MS. AssetID: 639BD392-1496-41BB-BB09-7652273AC9D8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/17/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Элементы управления XAML
+description: На все представления, определенные в, Xamarin.Forms можно ссылаться из файлов XAML.
+ms.topic: article
+ms.prod: xamarin
+ms.assetid: 639BD392-1496-41BB-BB09-7652273AC9D8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/17/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 445ef85f661d945bda25203f35dea787e64dc9b0
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138428"
 ---
-
 # <a name="xaml-controls"></a>Элементы управления XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
@@ -17,7 +32,7 @@ MS. Topic: статья MS. произв. Xamarin MS. AssetID: 639BD392-1496-41B
 | --- | --- |
 | <h3>BoxView</h3>Отображает прямоугольник определенного цвета.<p align="center">![Снимок экрана Боксвиев](xaml-controls-images/BoxView.png "BoxView")</p>[API-интерфейс](xref:Xamarin.Forms.BoxView)  /  [Руководством](~/xamarin-forms/user-interface/boxview.md) | <pre valign="center">&lt;BoxView Color="Accent"<br />         WidthRequest="150"<br />         HeightRequest="150"<br />         HorizontalOptions="Center"&gt;</pre></p> |
 | <h3>Expander</h3>Предоставляет расширяемый контейнер для размещения любого содержимого.<p align="center">![Снимок экрана: расширитель](xaml-controls-images/Expander.png "Expander")</p>[Программ](~/xamarin-forms/user-interface/expander.md) | <pre>&lt;Expander&gt;<br />    &lt;Expander.Header&gt;<br />        &lt;Label Text=&quot;Baboon&quot; /&gt;<br />    &lt;/Expander.Header&gt;<br />    &lt;Image Source=&quot;Baboon.png&quot;<br />           Aspect=&quot;AspectFill&quot; /&gt;<br />&lt;/Expander&gt;</pre></p> |
-| <h3>Изображение</h3>Отображает точечный рисунок.<p align="center">![Снимок экрана изображения](xaml-controls-images/Image.png "Изображение")</p>[API-интерфейс](xref:Xamarin.Forms.Image)  /  [Руководством](~/xamarin-forms/user-interface/images.md) | <pre>&lt;Image Source="https://aka.ms/campus.jpg"<br />       Aspect="AspectFit"<br />       HorizontalOptions="Center" /&gt;</pre></p> |
+| <h3>Образ —</h3>Отображает точечный рисунок.<p align="center">![Снимок экрана изображения](xaml-controls-images/Image.png "Изображение")</p>[API-интерфейс](xref:Xamarin.Forms.Image)  /  [Руководством](~/xamarin-forms/user-interface/images.md) | <pre>&lt;Image Source="https://aka.ms/campus.jpg"<br />       Aspect="AspectFit"<br />       HorizontalOptions="Center" /&gt;</pre></p> |
 | <h3>Метка</h3>Отображает одну или несколько строк текста.<p align="center">![Снимок экрана метки](xaml-controls-images/Label.png "Метка")</p>[API-интерфейс](xref:Xamarin.Forms.Label)  /  [Руководством](~/xamarin-forms/user-interface/text/label.md) | <p valign="center"><pre>&lt;Label Text="Hello, Xamarin.Forms!"<br />       FontSize="Large"<br />       FontAttributes="Italic"<br />       HorizontalTextAlignment="Center" /&gt;</pre></p> |
 | <h3>Схема</h3>Отображает карту.<p align="center">![Снимок экрана с картой](xaml-controls-images/Map.png "Карта")</p>[API-интерфейс](xref:Xamarin.Forms.Maps.Map)  /  [Руководством](~/xamarin-forms/user-interface/map/index.md) | <p valign="center"><pre>&lt;maps:Map ItemsSource="{Binding Locations}" /&gt;</pre></p> |
 | <h3>MediaElement</h3>Воспроизведение видео или аудио.<p align="center">![Снимок экрана элемента MediaElement](xaml-controls-images/MediaElement.png "MediaELement")</p>[API-интерфейс](xref:Xamarin.Forms.MediaElement)  /  [Руководством](~/xamarin-forms/user-interface/mediaelement.md) | <p valign="center"><pre>&lt;MediaElement Source="https://sec.ch9.ms/ch9/XamarinShow_mid.mp4"<br />              AutoPlay="True"<br />              ShowsPlaybackControls="True" /&gt;</pre></p> |

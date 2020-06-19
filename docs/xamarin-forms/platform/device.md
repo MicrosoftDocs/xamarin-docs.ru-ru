@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms класс устройства" Описание: "в этой статье объясняется, как использовать Xamarin.Forms класс Device для точного контроля над функциональными возможностями и макетами на уровне отдельных платформ".
-MS. произв. Xamarin MS. AssetID: 2F304AEC-8612-4833-81E5-B2F3F469B2DF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/17/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsКласс устройства
+description: В этой статье объясняется, как использовать Xamarin.Forms класс Device для детального контроля над функциональными возможностями и макетами на уровне отдельных платформ.
+ms.prod: xamarin
+ms.assetid: 2F304AEC-8612-4833-81E5-B2F3F469B2DF
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/17/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ba4e93b8f364d6887439b05017a9cd373dce5985
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84572329"
 ---
-
 # <a name="xamarinforms-device-class"></a>Xamarin.FormsКласс устройства
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithdevice)

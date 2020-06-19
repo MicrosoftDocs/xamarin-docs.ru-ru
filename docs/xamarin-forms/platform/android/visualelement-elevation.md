@@ -1,8 +1,22 @@
 ---
-Title: "Висуалелемент повышение прав на Android" Description: "особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая управляет повышением уровня Висуалелементс для приложений, предназначенных для API 21 или более поздней версии.
-MS. произв. Xamarin MS. AssetID: 5BFD6175-2BBD-41CD-B8F9-521B4750B708 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 07/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Повышение прав Висуалелемент в Android
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая управляет повышением уровня Висуалелементс в приложениях, предназначенных для API 21 или более поздней версии.
+ms.prod: xamarin
+ms.assetid: 5BFD6175-2BBD-41CD-B8F9-521B4750B708
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 48060356014dc7600518b5de555ad3f346c50c35
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128548"
 ---
-
 # <a name="visualelement-elevation-on-android"></a>Повышение прав Висуалелемент в Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

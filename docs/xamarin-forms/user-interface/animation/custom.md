@@ -1,8 +1,22 @@
 ---
-Title: "пользовательские анимации в Xamarin.Forms " Description: "в этой статье показано, как использовать класс анимации Xamarin. Forms для создания и отмены анимации, синхронизации нескольких анимаций и создания пользовательских анимаций, которые анимированы свойства, не анимационные с помощью существующих методов анимации."
-MS. произв. Xamarin MS. AssetID: 03B2E3FC-E720-4D45-B9A0-711081FC1907 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/10/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Пользовательские анимации вXamarin.Forms
+description: В этой статье показано, как использовать класс анимации Xamarin. Forms для создания и отмены анимации, синхронизации нескольких анимаций и создания пользовательских анимаций, которые анимировать свойства, которые не анимированы с помощью существующих методов анимации.
+ms.prod: xamarin
+ms.assetid: 03B2E3FC-E720-4D45-B9A0-711081FC1907
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/10/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 573f18de0d7593d832505eb6bb2b492caea024a1
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946108"
 ---
-
 # <a name="custom-animations-in-xamarinforms"></a>Пользовательские анимации вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-animation-custom)

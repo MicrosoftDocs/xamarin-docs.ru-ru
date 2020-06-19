@@ -1,8 +1,22 @@
 ---
-Title: "Интеграция с Xamarin.Forms " Description: "в этой статье объясняется, как создать график SkiaSharp, реагирующий на касание и Xamarin.Forms элементы, и демонстрирует это с помощью образца кода".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 288224F1-7AEE-4148-A88D-A70C03F83D7A Автор: давидбритч MS. author: дабритч MS. Дата: 02/09/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Интеграция сXamarin.Forms
+description: В этой статье объясняется, как создать график SkiaSharp, реагирующий на касание и Xamarin.Forms элементы, и демонстрируется пример кода.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 288224F1-7AEE-4148-A88D-A70C03F83D7A
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/09/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9e763184f38719cda4526eb0a2dfdf39b2191a03
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137700"
 ---
-
 # <a name="integrating-with-xamarinforms"></a>Интеграция сXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

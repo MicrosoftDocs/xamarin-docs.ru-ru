@@ -1,8 +1,22 @@
 ---
-Title: "горячий перезагрузка XAML для Xamarin.Forms " Description: "Перезагрузите изменения в файл XAML мгновенно в работающем приложении, чтобы не создавать Xamarin.Forms проект после каждого изменения XAML".
-MS. произв. Xamarin MS. AssetID: E220F054-32EE-424C-A7E5-6156BE271519 MS. Technology: Xamarin-Forms author: maddyleger1 MS. author: малежер МС. Дата: 03/14/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Горячая перезагрузка XAML дляXamarin.Forms
+description: Немедленно загружайте изменения в файл XAML для работающего приложения, чтобы не создавать Xamarin.Forms проект после каждого изменения XAML.
+ms.prod: xamarin
+ms.assetid: E220F054-32EE-424C-A7E5-6156BE271519
+ms.technology: xamarin-forms
+author: maddyleger1
+ms.author: maleger
+ms.date: 03/14/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0655739c95ba58b8d93aae6d3987d54bd0582c7b
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84127456"
 ---
-
 # <a name="xaml-hot-reload-for-xamarinforms"></a>Горячая перезагрузка XAML дляXamarin.Forms
 
 Горячая перезагрузка XAML подключается к существующему рабочему процессу, чтобы повысить производительность и сэкономить время. Без горячей перезагрузки XAML необходимо создавать и развертывать приложения каждый раз, когда нужно увидеть изменение XAML. При использовании горячей перезагрузки при сохранении файла XAML изменения в работающем приложении отражаются в реальном времени. Кроме того, будет поддерживаться состояние навигации и данные, что позволит быстро выполнять итерацию по пользовательскому интерфейсу без потери места в приложении. Таким образом, при горячей перезагрузке XAML вы тратите меньше времени на повторное создание и развертывание приложений для проверки изменений пользовательского интерфейса.
@@ -61,7 +75,7 @@ Xamarin.Forms | 4,1 или выше
 * [Советы и рекомендации по горячей загрузке XAML](https://devblogs.microsoft.com/xamarin/tips-tricks-xaml-hot-reload/)
 * [Полная перезагрузка XAML для подробного Xamarin.Forms изучения: Xamarin шоу](https://www.youtube.com/watch?v=crhjjPjzknk)
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 * Если не удается инициализировать горячую перезагрузку XAML:
   * Обновите Xamarin.Forms версию.

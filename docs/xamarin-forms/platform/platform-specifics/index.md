@@ -1,8 +1,22 @@
 ---
-Title: "описание конкретной платформы": "особенности платформы" позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать и создавать зависящие от платформы.
-MS. произв. Xamarin MS. AssetID: 4729DB9C-8800-4E29-9D66-3BE13C5F8C94 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/01/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Особенности платформы
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать и создавать зависящие от платформы.
+ms.prod: xamarin
+ms.assetid: 4729DB9C-8800-4E29-9D66-3BE13C5F8C94
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/01/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8478db85bd9904ee6c5cfeab9b2af390e7d3096d
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139507"
 ---
-
 # <a name="platform-specifics"></a>Особенности платформы
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

@@ -1,8 +1,22 @@
 ---
-Title: "данные о формате SVG в SkiaSharp" Description: "в этой статье объясняется, как определить пути SkiaSharp с помощью текстовых строк в графическом формате векторной графики и демонстрирует это с помощью образца кода".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 1D53067B-3502-4D74-B89D-7EC496901AE2 Автор: давидбритч MS. author: дабритч MS. Дата: 05/24/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Данные о пути SVG в SkiaSharp
+description: В этой статье объясняется, как определить SkiaSharp пути с помощью текстовых строк в формате масштабируемой векторной графики и демонстрируется пример кода.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 1D53067B-3502-4D74-B89D-7EC496901AE2
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/24/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 680c924280f8f3a6080b2fcc1968ecaf308f33a0
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138064"
 ---
-
 # <a name="svg-path-data-in-skiasharp"></a>Данные о пути SVG в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

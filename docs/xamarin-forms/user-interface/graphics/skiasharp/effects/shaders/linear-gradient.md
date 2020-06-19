@@ -1,8 +1,22 @@
 ---
-Title: "SkiaSharp линейный градиент" Описание: "Узнайте, как обводка линий или заливка областей с градиентами, состоящими из постепенного смешения двух цветов".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 20A2A8C4-FEB7-478D-BF57-C92E26117B6A Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Линейный градиент SkiaSharp
+description: Узнайте, как обводка линий или заливки областей с градиентами, состоящими из постепенного смешения двух цветов.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 20A2A8C4-FEB7-478D-BF57-C92E26117B6A
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/23/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 43aa429046c1b0f72a1cbe6a5b921da9b8907a49
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84132227"
 ---
-
 # <a name="the-skiasharp-linear-gradient"></a>Линейный градиент SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

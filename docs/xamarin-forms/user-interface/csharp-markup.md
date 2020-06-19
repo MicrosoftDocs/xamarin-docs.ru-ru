@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms Описание разметки c#" Description: "разметка c# — это набор вспомогательных методов и классов Fluent, которые позволяют упростить процесс создания декларативных Xamarin.Forms пользовательских интерфейсов в C#".
-MS. произв. Xamarin MS. AssetID: D41B9DCD-5C34-4C2F-B177-FC082AB2E9E0 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/15/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsРазметка C#
+description: Разметка C# — это набор вспомогательных методов и классов Fluent, позволяющий упростить процесс создания декларативных Xamarin.Forms пользовательских интерфейсов в C#.
+ms.prod: xamarin
+ms.assetid: D41B9DCD-5C34-4C2F-B177-FC082AB2E9E0
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/15/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 939727d3dd8d419cdc020d33d3e7241dcedb8158
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137752"
 ---
-
 # <a name="xamarinforms-c-markup"></a>Xamarin.FormsРазметка C#
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
@@ -217,7 +231,7 @@ new Label { Text = "Tap Me" }
 
 Так как распознаватель жестов — это `BindableObject` , вы можете использовать `Bind` `BindCommand` методы расширения и при его инициализации. Можно также инициализировать пользовательские типы распознавателя жестов с помощью `Gesture<TGestureElement, TGestureRecognizer>` метода расширения.
 
-## <a name="layout"></a>Layout
+## <a name="layout"></a>Макет
 
 Разметка C# включает ряд методов расширения макета, которые поддерживают представления позиционирования в макетах и содержимое в представлениях:
 

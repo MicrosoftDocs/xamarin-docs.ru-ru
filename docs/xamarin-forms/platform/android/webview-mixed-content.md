@@ -1,8 +1,22 @@
 ---
-Title: "WebView смешанное содержимое в Android" Description: "особенности платформы позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая отображает смешанное содержимое в WebView в приложениях, предназначенных для API 21 или более поздней версии.
-MS. произв. Xamarin MS. AssetID: 68F908F3-04C5-4B91-B6E5-B7E8357B4154 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 07/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: WebView смешанное содержимое в Android
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая отображает смешанное содержимое в WebView в приложениях, предназначенных для API 21 или более поздней версии.
+ms.prod: xamarin
+ms.assetid: 68F908F3-04C5-4B91-B6E5-B7E8357B4154
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 7269b0617be7199c365f350fc26ecd42256e28f3
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128457"
 ---
-
 # <a name="webview-mixed-content-on-android"></a>WebView смешанное содержимое в Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

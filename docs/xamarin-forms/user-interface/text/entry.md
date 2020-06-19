@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms запись" Description: "в этой статье объясняется, как использовать Xamarin.Forms класс entry для приема входных текстовых данных или паролей в приложении".
-MS. произв. Xamarin MS. AssetID: 9923C541-3C10-4D14-BAB5-C4D6C514FB1E MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/25/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsОперации
+description: В этой статье объясняется, как использовать Xamarin.Forms класс entry для приема ввода текста или пароля в приложении.
+ms.prod: xamarin
+ms.assetid: 9923C541-3C10-4D14-BAB5-C4D6C514FB1E
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/25/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5c17d6a106474c4c5b183bd41923533ffc95789b
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136205"
 ---
-
 # <a name="xamarinforms-entry"></a>Xamarin.FormsОперации
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)

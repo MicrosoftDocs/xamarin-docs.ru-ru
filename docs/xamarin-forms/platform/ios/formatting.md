@@ -1,8 +1,22 @@
 ---
-Title: "Добавление форматирования для iOS" Description: "в этой статье объясняется, как задать внешний вид iOS без использования Xamarin.Forms пользовательского модуля подготовки отчетов".
-MS. произв. Xamarin MS. AssetID: CE50E207-D092-4D88-8439-1B51F178E7ED MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/29/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Добавление форматирования, относящегося к iOS
+description: В этой статье объясняется, как задать внешний вид iOS без использования Xamarin.Forms пользовательского модуля подготовки отчетов.
+ms.prod: xamarin
+ms.assetid: CE50E207-D092-4D88-8439-1B51F178E7ED
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/29/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 062dd77f1dc7b82f16bfbc6d46e44d4adeb73350
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84564710"
 ---
-
 # <a name="adding-ios-specific-formatting"></a>Добавление форматирования, относящегося к iOS
 
 Одним из способов настройки форматирования для iOS является создание [пользовательского модуля подготовки](~/xamarin-forms/app-fundamentals/custom-renderer/index.md) отчетов для элемента управления и установка стилей и цветов для каждой платформы.

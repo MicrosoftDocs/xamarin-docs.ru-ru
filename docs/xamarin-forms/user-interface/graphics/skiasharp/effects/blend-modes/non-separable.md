@@ -1,8 +1,22 @@
 ---
-Title: «отделяемых Blend Mode» Description:» для изменения оттенка, насыщенности или яркости используйте режимы наложения «не отделяемых».
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 97FA2730-87C0-4914-8C9F-C64A02CF9EEF Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Режимы смешения не отделяемых
+description: Используйте режимы смешения, отличные от отделяемых, для изменения тона, насыщенности или яркости.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 97FA2730-87C0-4914-8C9F-C64A02CF9EEF
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/23/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 52be7641ac3b2983f537e11bccd76f2a5b52574d
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84130186"
 ---
-
 # <a name="the-non-separable-blend-modes"></a>Режимы смешения не отделяемых
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms Карауселвиев емптивиев" Description: "в карауселвиев можно указать пустое представление, которое предоставляет пользователю отзыв о том, что данные недоступны для отображения. Пустое представление может быть строкой, представлением или несколькими представлениями. "
-MS. произв. Xamarin MS. AssetID: C6DEE1A9-63FC-4889-BC77-F401D5D7DF32 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 10/03/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsКарауселвиев Емптивиев
+description: В Карауселвиев можно указать пустое представление, которое предоставляет пользователю отзыв о том, что данные недоступны для отображения. Пустое представление может быть строкой, представлением или несколькими представлениями.
+ms.prod: xamarin
+ms.assetid: C6DEE1A9-63FC-4889-BC77-F401D5D7DF32
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/03/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a9f952da75e68e9ad39e0a15f57fbd0379233d7e
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137401"
 ---
-
 # <a name="xamarinforms-carouselview-emptyview"></a>Xamarin.FormsКарауселвиев Емптивиев
 
 ![](~/media/shared/preview.png "This API is currently pre-release")

@@ -1,8 +1,22 @@
 ---
-Title: "наследование стилей в Xamarin.Forms " Description: "стили можно наследовать от других стилей для сокращения дублирования и включения повторного использования. В этой статье объясняется, как выполнить наследование стиля в Xamarin.Forms приложении. "
-MS. произв. Xamarin MS. AssetID: 67A3A39C-8CC0-446D-8162-FFA73582D3B8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 02/17/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Наследование стилей вXamarin.Forms
+description: Стили могут наследоваться от других стилей для сокращения дублирования и включения повторного использования. В этой статье объясняется, как выполнить наследование стиля в Xamarin.Forms приложении.
+ms.prod: xamarin
+ms.assetid: 67A3A39C-8CC0-446D-8162-FFA73582D3B8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/17/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 80cc419ae098f4a0cbbd782785c0ec5ba03fa703
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138961"
 ---
-
 # <a name="style-inheritance-in-xamarinforms"></a>Наследование стилей вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)

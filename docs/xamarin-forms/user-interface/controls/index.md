@@ -1,8 +1,22 @@
 ---
-Title: "Controls Reference" Description: "описание всех элементов пользовательского интерфейса, используемых для создания Xamarin.Forms приложения. В этой статье перечислены группы элементов управления, которые составляют пользовательский интерфейс Xamarin.Forms приложения. "
-MS. произв. Xamarin MS. AssetID: F2A02DEE-7137-42F4-9C0A-4E1CF75EA08F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/08/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Справочник по элементам управления
+description: Описание всех элементов пользовательского интерфейса, используемых для создания Xamarin.Forms приложения. В этой статье перечислены группы элементов управления, которые составляют пользовательский интерфейс Xamarin.Forms приложения.
+ms.prod: xamarin
+ms.assetid: F2A02DEE-7137-42F4-9C0A-4E1CF75EA08F
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/08/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e843f0e42f4f66a6ce4e60c2f5d8a233d19f1df6
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136400"
 ---
-
 # <a name="controls-reference"></a>Справочник по элементам управления
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/)
@@ -11,7 +25,7 @@ MS. произв. Xamarin MS. AssetID: F2A02DEE-7137-42F4-9C0A-4E1CF75EA08F MS. 
 
 Ниже приведены четыре основные группы управления, используемые для создания пользовательского интерфейса Xamarin.Forms приложения.
 
-- [**См**](pages.md)
+- [**Страницы**](pages.md)
 - [**Макеты**](layouts.md)
 - [**Представления**](views.md)
 - [**Ячейки**](cells.md)

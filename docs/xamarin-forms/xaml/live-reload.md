@@ -1,8 +1,23 @@
 ---
-Title: "Xamarin динамическая перезагрузка (Предварительная версия)" Description: "сведения об изменениях в коде XAML отражены в реальном времени, не требуя других компиляций и развертываний".
-MS. произв. Xamarin MS. AssetID: 4917273d-32f9-401A-A52C-5cfb53a2170d MS. Technology: Xamarin-Forms author: пиерцебогган MS. author: пибогган robots: не индекс MS. Date: 10/26/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Динамическая перезагрузка Xamarin (Предварительная версия)
+description: См. раздел изменения в коде XAML, отраженный в реальном времени, без необходимости выполнения другой компиляции и развертывания.
+ms.prod: xamarin
+ms.assetid: 4917273d-32f9-401a-a52c-5cfb53a2170d
+ms.technology: xamarin-forms
+author: pierceboggan
+ms.author: piboggan
+robots: noindex
+ms.date: 10/26/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b67594e2675c774512f3bf64f2e91ef10dbff444
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84134216"
 ---
-
 # <a name="xamarin-live-reload-preview"></a>Динамическая перезагрузка Xamarin (Предварительная версия)
 
 > [!NOTE]
@@ -112,7 +127,7 @@ public partial class App : Application
 * Элементы, содержащие AutomationId, могут вызвать сбой перезагрузки.
 * Изменение XAML во время отладки UWP может привести к сбою среды выполнения. Обходное решение. Используйте команду **запустить без отладки (CTRL + F5)** , а не **начать отладку (F5)**.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 ### <a name="error-codes"></a>Коды ошибок
 

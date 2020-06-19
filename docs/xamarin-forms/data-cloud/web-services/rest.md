@@ -1,8 +1,22 @@
 ---
-Title: "использование веб-службы RESTFUL" Description: "Интеграция веб-службы в приложение является распространенным сценарием. В этой статье показано, как использовать веб-службу RESTFUL из Xamarin.Forms приложения. "
-MS. произв. Xamarin MS. AssetID: B540910C-9C51-416A-AAB9-057BF76489C3 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/28/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Использование веб-службы RESTFUL
+description: Интеграция веб-службы в приложение является распространенным сценарием. В этой статье показано, как использовать веб-службу RESTFUL из Xamarin.Forms приложения.
+ms.prod: xamarin
+ms.assetid: B540910C-9C51-416A-AAB9-057BF76489C3
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/28/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8d7ae5eb16b8a94f16b6eca013b4ec7a93f427bd
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84198126"
 ---
-
 # <a name="consume-a-restful-web-service"></a>Использование веб-службы RESTFUL
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todorest)

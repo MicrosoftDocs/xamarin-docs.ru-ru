@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms другие платформы" Description: "в этом руководство описываются дополнительные платформы, поддерживаемые Xamarin.Forms ."
-MS. произв. Xamarin MS. AssetID: C713B905-0C98-4442-B5CB-91C384A384DA MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/04/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsДругие платформы
+description: В этом руководством описываются дополнительные платформы, поддерживаемые Xamarin.Forms .
+ms.prod: xamarin
+ms.assetid: C713B905-0C98-4442-B5CB-91C384A384DA
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/04/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a0ab248d3e23854e8027f515fbcf0fa6ca9521fd
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139546"
 ---
-
 # <a name="xamarinforms-other-platforms"></a>Xamarin.FormsДругие платформы
 
 Xamarin.Formsподдерживает дополнительные платформы за пределами iOS, Android и Windows.

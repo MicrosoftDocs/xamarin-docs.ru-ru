@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms классы стилей" Описание: " Xamarin.Forms классы стилей позволяют применять к элементу управления несколько стилей, не прибегая к наследованию стилей".
-MS. произв. Xamarin MS. AssetID: 4762401E-2B48-48F1-B6E4-61F7AF8AA46F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/30/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Классы стилей Xamarin.Forms
+description: Xamarin.Formsклассы стилей позволяют применять к элементу управления несколько стилей, не прибегая к наследованию стиля.
+ms.prod: xamarin
+ms.assetid: 4762401E-2B48-48F1-B6E4-61F7AF8AA46F
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/30/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2afb06c2d97e6f15c2041b9c2e9cad092b13d90d
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138769"
 ---
-
 # <a name="xamarinforms-style-classes"></a>Классы стилей Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)

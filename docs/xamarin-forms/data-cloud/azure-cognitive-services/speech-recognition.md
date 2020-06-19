@@ -1,8 +1,22 @@
 ---
-Title: "распознавание речи с помощью API службы распознавания речи" Описание: "в этой статье объясняется, как использовать API службы распознавания речи Azure для транскрипция речи в текст в Xamarin.Forms приложении".
-MS. произв. Xamarin MS. AssetID: B435FF6B-8785-48D9-B2D9-1893F5A87EA1 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 01/14/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Распознавание речи с помощью API службы распознавания речи
+description: В этой статье объясняется, как использовать API службы распознавания речи Azure для транскрипция речи в текст в Xamarin.Forms приложении.
+ms.prod: xamarin
+ms.assetid: B435FF6B-8785-48D9-B2D9-1893F5A87EA1
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 01/14/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 171ecc02fda304135e5f535c3e798067595d7047
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139325"
 ---
-
 # <a name="speech-recognition-using-azure-speech-service"></a>Распознавание речи с помощью служб речи Azure
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-cognitivespeechservice)

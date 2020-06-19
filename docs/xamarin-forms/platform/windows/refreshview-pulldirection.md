@@ -1,8 +1,22 @@
 ---
-Title: "Рефрешвиевное направление извлечения в Windows" Описание: "особенности платформы позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Windows, которая позволяет изменить направление извлечения Рефрешвиев.
-MS. произв. Xamarin MS. AssetID: 407A862B-281E-4384-9696-C0655830B84D MS. Technology: автор Xamarin-Forms: давидбритч MS. author: дабритч MS. Дата: 09/20/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Направление движения RefreshView в Windows
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Windows, которая позволяет изменить направление извлечения Рефрешвиев.
+ms.prod: xamarin
+ms.assetid: 407A862B-281E-4384-9696-C0655830B84D
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/20/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 46a1b4d00b9eea276b9a3b3d5bffbdac3d31e0ef
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136582"
 ---
-
 # <a name="refreshview-pull-direction-on-windows"></a>Направление движения RefreshView в Windows
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

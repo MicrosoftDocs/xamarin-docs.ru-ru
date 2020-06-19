@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms ImageButton" Description: "ImageButton отображает изображение и реагирует на касание или щелчок, которое направляет приложение для выполнения определенной задачи".
-MS. произв. Xamarin MS. AssetID: B5906AB6-3F79-4FCB-8C78-1F0AF18AB39E MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/04/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsImageButton
+description: Элемент ImageButton отображает изображение и реагирует на касание или щелчок, который направляет приложение для выполнения определенной задачи.
+ms.prod: xamarin
+ms.assetid: B5906AB6-3F79-4FCB-8C78-1F0AF18AB39E
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/04/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 7d81c0ce4dc2a46a840a34cc9084c8f2388a0169
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137648"
 ---
-
 # <a name="xamarinforms-imagebutton"></a>Xamarin.FormsImageButton
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)

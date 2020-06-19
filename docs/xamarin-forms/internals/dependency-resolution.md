@@ -1,8 +1,22 @@
 ---
-Title: "разрешение зависимостей в Xamarin.Forms " Description: "в этой статье объясняется, как внедрить метод разрешения зависимостей в Xamarin.Forms , чтобы контейнер внедрения зависимостей приложения получил контроль над созданием и временем существования пользовательских модулей подготовки отчетов, эффектов и реализаций DependencyService".
-MS. произв. Xamarin MS. AssetID: 491B87DC-14CB-4ADC-AC6C-40A7627B2524 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 07/27/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Разрешение зависимостей в Xamarin.Forms
+description: В этой статье объясняется, как внедрить метод разрешения зависимостей в Xamarin.Forms , чтобы контейнер внедрения зависимостей приложения получил контроль над созданием и временем существования пользовательских модулей подготовки отчетов, эффектов и реализаций DependencyService.
+ms.prod: xamarin
+ms.assetid: 491B87DC-14CB-4ADC-AC6C-40A7627B2524
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/27/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ae30b4a4b75906613baf8a2568548c8890ccb33a
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139091"
 ---
-
 # <a name="dependency-resolution-in-xamarinforms"></a>Разрешение зависимостей в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-dicontainerdemo)

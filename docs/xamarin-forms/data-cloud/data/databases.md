@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms локальные базы данных" Описание: " Xamarin.Forms поддерживает приложения, управляемые базой данных, с помощью обработчика базы данных SQLite, что дает возможность загружать и сохранять объекты в общем коде. В этой статье описывается Xamarin.Forms , как приложения могут считывать и записывать данные в локальную базу данных SQLite с помощью SQLite.NET.
-MS. произв. Xamarin MS. AssetID: F687B24B-7DF0-4F8E-A21A-A9BB507480EB MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 12/05/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsЛокальные базы данных
+description: Xamarin.Formsподдерживает приложения, управляемые базой данных, с помощью обработчика базы данных SQLite, что дает возможность загружать и сохранять объекты в общем коде. В этой статье описывается Xamarin.Forms , как приложения могут считывать и записывать данные в локальную базу данных SQLite с помощью SQLite.NET.
+ms.prod: xamarin
+ms.assetid: F687B24B-7DF0-4F8E-A21A-A9BB507480EB
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 12/05/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f7cef5fd39d82cf0a4b55337835c0fe1d57b8bf9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84197594"
 ---
-
 # <a name="xamarinforms-local-databases"></a>Xamarin.FormsЛокальные базы данных
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo)

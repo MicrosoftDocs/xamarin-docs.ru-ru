@@ -1,8 +1,22 @@
 ---
-Title: "пространства имен XAML в Xamarin.Forms " Description: "XAML использует атрибут xmlns XML для объявлений пространств имен. В этой статье представлен синтаксис пространства имен XAML и показано, как объявить пространство имен XAML для доступа к типу.
-MS. произв. Xamarin MS. AssetID: C03B5553-B199-4A19-9F0F-E5BCE1DB268F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/21/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Пространства имен XAML вXamarin.Forms
+description: XAML использует атрибут xmlns XML для объявлений пространств имен. В этой статье представлен синтаксис пространства имен XAML и показано, как объявить пространство имен XAML для доступа к типу.
+ms.prod: xamarin
+ms.assetid: C03B5553-B199-4A19-9F0F-E5BCE1DB268F
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/21/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 7f35342134767ccdadfab086bfa14f6b610b325d
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84130381"
 ---
-
 # <a name="xaml-namespaces-in-xamarinforms"></a>Пространства имен XAML вXamarin.Forms
 
 _XAML использует атрибут xmlns XML для объявлений пространств имен. В этой статье представлен синтаксис пространства имен XAML и показано, как объявить пространство имен XAML для доступа к типу._

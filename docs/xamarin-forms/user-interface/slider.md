@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms ползунок" Description: " Xamarin.Forms ползунок — это горизонтальная линия, которую пользователь может обрабатывать, чтобы выбрать значение типа Double из непрерывного диапазона. В этой статье объясняется, как использовать класс Slider для выбора значения из диапазона непрерывных значений ".
-MS. произв. Xamarin MS. AssetID: 36B1C645-26E0-4874-B6B6-BDBF77662878 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/27/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsГруппу
+description: Xamarin.FormsПолзунок — это горизонтальная линия, которую пользователь может обрабатывать, чтобы выбрать значение типа Double из непрерывного диапазона. В этой статье объясняется, как использовать класс Slider для выбора значения из диапазона непрерывных значений.
+ms.prod: xamarin
+ms.assetid: 36B1C645-26E0-4874-B6B6-BDBF77662878
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/27/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9fc61dcac588f49fc1df7ee96792cf55bdfa46c5
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84572043"
 ---
-
 # <a name="xamarinforms-slider"></a>Xamarin.FormsГруппу
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos)

@@ -1,8 +1,22 @@
 ---
-Title: "видимость индикатора" в iOS "Описание:" особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая задает видимость индикатора Home на странице.
-MS. произв. Xamarin MS. AssetID: F81022E0-3C6C-49C0-A000-FAF6574D3FB7 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/09/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Видимость индикатора дома в iOS
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы iOS платформу, которая задает видимость индикатора Home на странице.
+ms.prod: xamarin
+ms.assetid: F81022E0-3C6C-49C0-A000-FAF6574D3FB7
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/09/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e76684ffb293380c283153c35c907acc50e40aab
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128080"
 ---
-
 # <a name="home-indicator-visibility-on-ios"></a>Видимость индикатора дома в iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

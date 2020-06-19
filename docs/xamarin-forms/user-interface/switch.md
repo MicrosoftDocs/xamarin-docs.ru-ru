@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms переключатель" Description: " Xamarin.Forms параметр — это тип кнопки, которая может управляться пользователем для переключения между и выключенными состояниями. В этой статье объясняется, как использовать класс Switch для отображения переключателя элемента пользовательского интерфейса.
-MS. произв. Xamarin MS. assetId: B2F9CC65-481B-4323-8E77-C6BE29C90DE9 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 07/18/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsКлючом
+description: Xamarin.FormsПараметр — это тип кнопки, которая может управляться пользователем для переключения между состояниями. В этой статье объясняется, как использовать класс Switch для отображения переключаемого элемента пользовательского интерфейса.
+ms.prod: xamarin
+ms.assetId: B2F9CC65-481B-4323-8E77-C6BE29C90DE9
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 05/19/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 12831eec6ba97eee7cde7479729c5c22dce78e90
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946440"
 ---
-
 # <a name="xamarinforms-switch"></a>Xamarin.FormsКлючом
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-switchdemos/)
@@ -15,9 +29,9 @@ Xamarin.Forms [`Switch`](xref:Xamarin.Forms.Switch) Элемент управл�
 
 `Switch`Элемент управления определяет следующие свойства:
 
-* [`IsToggled`](xref:Xamarin.Forms.Switch.IsToggled)`boolean`значение, указывающее, включено ли в `Switch` . **on**
-* [`OnColor`](xref:Xamarin.Forms.Switch.OnColor)параметр `Color` , который влияет на то, как объект отображается `Switch` в переключенном или **включенном**состоянии.
-* `ThumbColor`значение параметра `Color` бегунка Switched.
+- [`IsToggled`](xref:Xamarin.Forms.Switch.IsToggled)`boolean`значение, указывающее, включено ли в `Switch` . **on**
+- [`OnColor`](xref:Xamarin.Forms.Switch.OnColor)параметр `Color` , который влияет на то, как объект отображается `Switch` в переключенном или **включенном**состоянии.
+- `ThumbColor`значение параметра `Color` бегунка Switched.
 
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом. Это означает, что `Switch` можно использовать стиль и цель привязок данных.
 
@@ -109,11 +123,46 @@ switchControl.Toggled += (sender, e) =>
 
 Дополнительные сведения о триггерах см. в разделе [ Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md).
 
+## <a name="switch-visual-states"></a>Переключение визуальных состояний
+
+[`Switch`](xref:Xamarin.Forms.Switch)имеет `On` и `Off` визуальные состояния, которые можно использовать для инициации визуального изменения при [`IsToggled`](xref:Xamarin.Forms.Switch.IsToggled) изменении свойства.
+
+В следующем примере XAML показано, как определить визуальные состояния для `On` `Off` состояний и.
+
+```xaml
+<Switch IsToggled="True">
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="CommonStates">
+            <VisualState x:Name="On">
+                <VisualState.Setters>
+                    <Setter Property="ThumbColor"
+                            Value="MediumSpringGreen" />
+                </VisualState.Setters>
+            </VisualState>
+            <VisualState x:Name="Off">
+                <VisualState.Setters>
+                    <Setter Property="ThumbColor"
+                            Value="Red" />
+                </VisualState.Setters>
+            </VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+</Switch>
+```
+
+В этом примере `On` [`VisualState`](xref:Xamarin.Forms.VisualState) указывает, что если [`IsToggled`](xref:Xamarin.Forms.Switch.IsToggled) свойство имеет значение `true` , `ThumbColor` для свойства будет задано значение Средний пружинный зеленый цвет. `Off` `VisualState` Указывает, что если `IsToggled` свойство имеет значение `false` , `ThumbColor` свойству будет присвоено значение Red. Таким образом, общий результат заключается в том, что когда `Switch` находится в положении «ВЫКЛ.», бегунок имеет красный цвет, а бегунок — светло-зеленый, когда `Switch` находится в положении ON:
+
+![Снимок экрана Switch on VisualState on IOS and Android](switch-images/on-visualstate.png "Переключение на VisualState") 
+ ![Снимок экрана: выключение VisualState в iOS и Android](switch-images/off-visualstate.png "Отключить VisualState")
+
+Дополнительные сведения о визуальных состояниях см. в статье [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md).
+
 ## <a name="disable-a-switch"></a>Отключение переключателя
 
 Приложение может перейти в состояние, в котором `Switch` переключаемый объект не является допустимой операцией. В таких случаях `Switch` можно отключить, задав `IsEnabled` свойству значение `false` . Это предотвратит возможность пользователей управлять `Switch` .
 
 ## <a name="related-links"></a>Связанные ссылки
 
-* [Переключить демонстрации](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-switchdemos/)
-* [Триггеры Xamarin.Forms](~/xamarin-forms/app-fundamentals/triggers.md)
+- [Переключить демонстрации](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-switchdemos/)
+- [Триггеры Xamarin.Forms](~/xamarin-forms/app-fundamentals/triggers.md)
+- [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

@@ -1,8 +1,22 @@
 ---
-Title: "видимость строки состояния страницы в iOS" Описание: "особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая задает видимость строки состояния на странице. "
-MS. произв. Xamarin MS. AssetID: D8BB7C24-A27F-4758-8557-6A81F909ABD9 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/24/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Видимость строки состояния страницы в iOS
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы iOS платформу, которая задает видимость строки состояния на странице.
+ms.prod: xamarin
+ms.assetid: D8BB7C24-A27F-4758-8557-6A81F909ABD9
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/24/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 69594924f26afff133d8f211199cac44e66254d9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128032"
 ---
-
 # <a name="page-status-bar-visibility-on-ios"></a>Видимость строки состояния страницы в iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

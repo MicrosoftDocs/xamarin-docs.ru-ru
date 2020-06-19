@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms StackLayout» Description: «A StackLayout организует дочерние представления в одномерном стеке, по горизонтали или по вертикали».
-MS. произв. Xamarin MS. AssetID: 6A91EA70-268C-462C-AAAF-F8DA011403F8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/11/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsStackLayout
+description: 'StackLayout организует дочерние представления в одномерном стеке: по горизонтали или по вертикали.'
+ms.prod: xamarin
+ms.assetid: 6A91EA70-268C-462C-AAAF-F8DA011403F8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/11/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f624674cc6d4ba1bdc34a42fb52fb63ff8a7135a
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137973"
 ---
-
 # <a name="xamarinforms-stacklayout"></a>Xamarin.FormsStackLayout
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stacklayoutdemos)

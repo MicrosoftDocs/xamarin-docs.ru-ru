@@ -1,8 +1,22 @@
 ---
-Title: "Запуск приложения в машинном сопоставлении из Xamarin.Forms " Description: "собственное приложение Maps на каждой платформе может быть запущено из Xamarin.Forms приложения Xamarin.Essentials классом запуска".
-MS. произв. Xamarin MS. AssetID: 5CF7CD67-3F20-4D80-B99E-D35A5FD1019A MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/30/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Запустите собственное приложение Map изXamarin.Forms
+description: Собственное приложение Maps на каждой платформе может быть запущено из Xamarin.Forms приложения с помощью Xamarin.Essentials класса Launcher.
+ms.prod: xamarin
+ms.assetid: 5CF7CD67-3F20-4D80-B99E-D35A5FD1019A
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/30/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c135d5dd02bba5102f5a93132f079526c84865d5
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84129342"
 ---
-
 # <a name="launch-the-native-map-app-from-xamarinforms"></a>Запустите собственное приложение Map изXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)

@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms CollectionView введение" Description: "CollectionView — это гибкое и производительное представление для представления списков данных с использованием различных спецификаций макета".
-MS. произв. Xamarin MS. AssetID: 5C08F687-B9E6-4CE4-8726-F287F6D0B6A7 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/11/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsВведение в CollectionView
+description: CollectionView — это гибкое и производительное представление для представления списков данных с использованием различных спецификаций макета.
+ms.prod: xamarin
+ms.assetid: 5C08F687-B9E6-4CE4-8726-F287F6D0B6A7
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/11/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: d6a09ead9c3def2f58ad2755de4574f6d6e331e8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136439"
 ---
-
 # <a name="xamarinforms-collectionview-introduction"></a>Xamarin.FormsВведение в CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)

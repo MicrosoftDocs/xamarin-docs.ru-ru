@@ -1,8 +1,23 @@
 ---
-Title: " Xamarin.Forms Основные сведения о XAML" Description: "в этом руководство объясняется, как приступить к работе с кросс-платформенным XAML для мобильных устройств. XAML позволяет разработчикам определять пользовательские интерфейсы в Xamarin.Forms приложениях, используя разметку, а не код. "
-MS. произв. Xamarin MS. Custom: видео MS. AssetID: 67CC2CD6-D10A-4B14-9696-1D3A410EFFBF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 10/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsОсновы XAML
+description: В этом руководство объясняется, как приступить к работе с кросс-платформенным XAML для мобильных устройств. XAML позволяет разработчикам определять пользовательские интерфейсы в Xamarin.Forms приложениях, используя разметку, а не код.
+ms.prod: xamarin
+ms.custom: video
+ms.assetid: 67CC2CD6-D10A-4B14-9696-1D3A410EFFBF
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/25/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8f5f69038f7d5cfe7ad46f013acb1519c4e9569f
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138623"
 ---
-
 # <a name="xamarinforms-xaml-basics"></a>Xamarin.FormsОсновы XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)

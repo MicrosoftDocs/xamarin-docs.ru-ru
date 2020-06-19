@@ -1,12 +1,28 @@
 ---
-Title: "программа установки платформы WPF" Description: " Xamarin.Forms теперь имеет поддержку предварительной версии для платформы WPF" MS. произв: Xamarin MS. AssetID: 650723F2-4279-4B7B-B0A1-D7F8FF26BF1E MS. Technology: Xamarin-Forms MS. Custom: ксаму-видео author: давидбритч MS. author: дабритч MS. Date: 04/09/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Установка платформы WPF
+description: Xamarin.Formsимеет поддержку предварительной версии для платформы WPF.
+ms.prod: xamarin
+ms.assetid: 650723F2-4279-4B7B-B0A1-D7F8FF26BF1E
+ms.technology: xamarin-forms
+ms.custom: xamu-video
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/20/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 774ae964643b9b78f424d96b3dd382f244205dcf
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946329"
 ---
-
 # <a name="wpf-platform-setup"></a>Установка платформы WPF
 
-![Предварительный просмотр](~/media/shared/preview.png)
+![Preview (Предварительный просмотр)](~/media/shared/preview.png)
 
-Xamarin.Formsтеперь имеет поддержку предварительной версии для Windows Presentation Foundation (WPF). В этой статье показано, как добавить проект WPF в Xamarin.Forms решение.
+Xamarin.Formsимеет поддержку предварительной версии для Windows Presentation Foundation (WPF) на .NET Framework и в .NET Core 3. В этой статье показано, как добавить проект WPF, предназначенный для .NET Framework, в Xamarin.Forms решение.
 
 > [!IMPORTANT]
 > Xamarin.Formsподдержка WPF предоставляется сообществом. Дополнительные сведения см. в разделе [ Xamarin.Forms поддержка платформ](https://github.com/xamarin/Xamarin.Forms/wiki/Platform-Support).
@@ -24,6 +40,9 @@ Xamarin.Formsтеперь имеет поддержку предваритель
     ![Добавить новый проект WPF](wpf-images/add-project.png "Добавить новый проект WPF")
 
     Нажмите кнопку **Далее** .
+
+    > [!NOTE]
+    > Xamarin.Forms4,7 включает поддержку приложений WPF, работающих в .NET Core 3.
 
 3. В окне **Настройка нового проекта** введите имя проекта с расширением **WPF** , например **боксвиевклокк. WPF**. Нажмите кнопку " **Обзор** ", выберите папку **боксвиевклокк** и нажмите кнопку " **выбрать папку** ", чтобы разместить проект WPF в том же каталоге, что и другие проекты в решении:
 

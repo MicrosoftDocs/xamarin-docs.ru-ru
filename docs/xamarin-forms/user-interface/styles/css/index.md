@@ -1,6 +1,22 @@
 ---
-Title: "стилизация Xamarin.Forms приложений с помощью каскадные таблицы стилей (CSS)" Description: " Xamarin.Forms поддерживает визуальные элементы стилизации с помощью КАСКАДНЫЕ таблицы стилей (CSS)".
-MS. произв. Xamarin MS. AssetID: C89D57A6-DAB9-4C42-963F-26D67627DDC2 MS. Technology: Xamarin-Forms MS. Custom: ксаму — автор видео: давидбритч MS. author: дабритч МС. Дата: 04/17/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Применение стилей к Xamarin.Forms приложениям с помощью каскадные таблицы стилей (CSS)
+description: Xamarin.Formsподдерживает визуальные элементы стилизации с помощью каскадные таблицы стилей (CSS).
+ms.prod: xamarin
+ms.assetid: C89D57A6-DAB9-4C42-963F-26D67627DDC2
+ms.technology: xamarin-forms
+ms.custom: xamu-video
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/20/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9375c4078c75d8e4788cb31a3d6a6a3a10100f49
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946238"
 ---
 # <a name="styling-xamarinforms-apps-using-cascading-style-sheets-css"></a>Применение стилей к Xamarin.Forms приложениям с помощью каскадные таблицы стилей (CSS)
 
@@ -145,6 +161,12 @@ public partial class MyPage : ContentPage
 CSS использует селекторы для определения целевых элементов. Стили с соответствующими селекторами применяются последовательно в порядке определения. Стили, определенные для конкретного элемента, всегда применяются последними. Дополнительные сведения о поддерживаемых селекторах см. в разделе [Справочник по селектору](#selector-reference).
 
 В CSS для стиля выбранного элемента используются свойства. Каждое свойство имеет набор возможных значений, а некоторые свойства могут влиять на любой тип элемента, а другие — на группы элементов. Дополнительные сведения о поддерживаемых свойствах см. в разделе [Справочник по свойствам](#property-reference).
+
+Дочерние таблицы стилей всегда переопределяют родительские таблицы стилей, если они устанавливают одни и те же свойства. Поэтому при применении стилей, заданных одинаковыми свойствами, выполняются следующие правила приоритета.
+
+- Стиль, определенный в ресурсах приложения, будет перезаписан стилем, определенным в ресурсах страницы, если они задают одинаковые свойства.
+- Стиль, определенный в ресурсах страницы, будет перезаписан стилем, определенным в ресурсах управления, если они задают одинаковые свойства.
+- Стиль, определенный в ресурсах приложения, будет перезаписан стилем, определенным в ресурсах управления, если они задают те же свойства.
 
 > [!IMPORTANT]
 > Переменные CSS не поддерживаются.
@@ -349,7 +371,7 @@ stacklayout>image {
 |`align-items`|`FlexLayout`| `stretch` \| `center` \| `start` \| `end` \| `flex-start` \| `flex-end` \| `initial` |`align-items: flex-start;`|
 |`align-self`|`VisualElement`| `auto` \| `stretch` \| `center` \| `start` \| `end` \| `flex-start` \| `flex-end` \| `initial`|`align-self: flex-end;`|
 |`background-color`|`VisualElement`|_color_ \| `initial` |`background-color: springgreen;`|
-|`background-image`|`Page`|_строка_ \|`initial` |`background-image: bg.png;`|
+|`background-image`|`Page`|_строка_ \| `initial` |`background-image: bg.png;`|
 |`border-color`|`Button`, `Frame`, `ImageButton`|_color_ \| `initial`|`border-color: #9acd32;`|
 |`border-radius`|`BoxView`, `Button`, `Frame`, `ImageButton`|_double_ \| `initial` |`border-radius: 10;`|
 |`border-width`|`Button`, `ImageButton`|_double_ \| `initial` |`border-width: .5;`|
@@ -361,7 +383,7 @@ stacklayout>image {
 |`flex-grow`|`VisualElement`|с _плавающей запятой_ \|`initial`|`flex-grow: 1.5;`|
 |`flex-shrink`|`VisualElement`|с _плавающей запятой_ \|`initial`|`flex-shrink: 1;`|
 |`flex-wrap`|`VisualElement`| `nowrap` \| `wrap` \| `reverse` \| `wrap-reverse` \| `initial`|`flex-wrap: wrap-reverse;`|
-|`font-family`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_строка_ \|`initial` |`font-family: Consolas;`|
+|`font-family`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_строка_ \| `initial` |`font-family: Consolas;`|
 |`font-size`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_Double_ \| _намедсизе_ \|  `initial` |`font-size: 12;`|
 |`font-style`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|`bold` \| `italic` \| `initial` |`font-style: bold;`|
 |`height`|`VisualElement`|_double_ \| `initial` |`min-height: 250;`|
@@ -425,7 +447,7 @@ Xamarin.FormsТакже поддерживаются следующие конк
 |`-xf-thumb-color`|`Slider`, `Switch`|_color_ \| `initial` |`-xf-thumb-color: limegreen;`|
 |`-xf-vertical-scroll-bar-visibility`|`ScrollView`| `default` \| `always` \| `never` \| `initial` |`-xf-vertical-scroll-bar-visibility: always;`|
 |`-xf-vertical-text-alignment`|`Label`| `start` \| `center` \| `end` \| `initial`|`-xf-vertical-text-alignment: end;`|
-|`-xf-visual`|`VisualElement`|_строка_ \|`initial` |`-xf-visual: material;`|
+|`-xf-visual`|`VisualElement`|_строка_ \| `initial` |`-xf-visual: material;`|
 
 ### <a name="xamarinforms-shell-specific-properties"></a>Xamarin.FormsСвойства оболочки
 

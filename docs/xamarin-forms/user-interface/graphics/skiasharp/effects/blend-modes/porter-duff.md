@@ -1,8 +1,22 @@
 ---
-Title: "Портер-Дуфф Blend Mode" Description: "использование режимов смешения Портер-Дуфф для создания сцен на основе исходных и конечных образов".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 57F172F8-BA03-43EC-A215-ED6B78696BB5 Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Режимы смешения Портер-Дуфф
+description: Используйте режимы смешения Портер-Дуфф для создания сцен на основе исходного и целевого образов.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 57F172F8-BA03-43EC-A215-ED6B78696BB5
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/23/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a1e6290c0f85b54c3fd8958bc43667714bdece20
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84131057"
 ---
-
 # <a name="porter-duff-blend-modes"></a>Режимы смешения Портер-Дуфф
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

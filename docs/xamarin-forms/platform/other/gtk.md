@@ -1,10 +1,25 @@
 ---
-Title: "Настройка платформы GTK #" Описание: " Xamarin.Forms теперь у вас есть поддержка предварительной версии для платформы GTK # для MS. произв. Xamarin MS. AssetID: 3417FB95-3E4B-47DA-85D0-F34832747236 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: 'Установка платформы GTK #'
+description: 'Xamarin.Formsтеперь имеет поддержку предварительной версии для платформы GTK #'
+ms.prod: xamarin
+ms.assetid: 3417FB95-3E4B-47DA-85D0-F34832747236
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a5635da9f7c083609ce1e0f120d0613fff9bd77b
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84198097"
 ---
-
 # <a name="gtk-platform-setup"></a>Установка платформы GTK #
 
-![Предварительный просмотр](~/media/shared/preview.png)
+![Preview (Предварительный просмотр)](~/media/shared/preview.png)
 
 Xamarin.Formsтеперь имеет поддержку предварительной версии для приложений GTK #. GTK # — это графический набор средств пользовательского интерфейса, который связывает библиотеку GTK + и разнообразные библиотеки GNOME, что позволяет разрабатывать полностью собственные приложения GNOME Graphics с помощью Mono и .NET. В этой статье показано, как добавить проект GTK # в Xamarin.Forms решение.
 

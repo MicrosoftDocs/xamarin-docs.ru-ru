@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms Описание общих свойств элемента управления, методов и событий" Description: "в этой статье описываются общие свойства, методы и события, определенные в классе висуалелемент, которые обычно используются в производных классах".
-MS. произв. Xamarin MS. assetId: 85A0CCF5-C1D8-40BB-927F-A4D944E5534D MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 08/21/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsОбщие свойства, методы и события элемента управления
+description: В этой статье описываются общие свойства, методы и события, определенные в классе Висуалелемент, которые обычно используются в производных классах.
+ms.prod: xamarin
+ms.assetId: 85A0CCF5-C1D8-40BB-927F-A4D944E5534D
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 08/21/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: deb894cccd5b6a2a9d908ef8967de91f00e7d297
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136426"
 ---
-
 # <a name="xamarinforms-common-control-properties-methods-and-events"></a>Xamarin.FormsОбщие свойства, методы и события элемента управления
 
 Xamarin.Forms `VisualElement` Класс является базовым классом для большинства элементов управления, используемых в Xamarin.Forms приложении. `VisualElement`Класс определяет множество [свойств](#properties), [методов](#methods)и [событий](#events) , используемых в производных классах.

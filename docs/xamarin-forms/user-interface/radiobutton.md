@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms RadioButton» Description: « Xamarin.Forms RadioButton — это тип кнопки, позволяющий пользователям выбрать один вариант из набора. Каждый параметр представлен одним переключателем, и в группе можно выбрать только один переключатель. "
-MS. произв. Xamarin MS. AssetID: E2AA40E0-69A5-41DF-BFC4-C151CA657451 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/13/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsRadioButton
+description: Xamarin.FormsRadioButton — это тип кнопки, который позволяет пользователям выбрать один вариант из набора. Каждый параметр представлен одним переключателем, и вы можете выбрать только один переключатель в группе.
+ms.prod: xamarin
+ms.assetid: E2AA40E0-69A5-41DF-BFC4-C151CA657451
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/13/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f7cbd11f98127cb73514112dae785102ff9c51c0
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84127630"
 ---
-
 # <a name="xamarinforms-radiobutton"></a>Xamarin.FormsRadioButton
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-radiobuttondemos/)

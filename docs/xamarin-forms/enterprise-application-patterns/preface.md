@@ -1,8 +1,22 @@
 ---
-Title: "перед развертыванием корпоративного приложения" Описание: "в этой главе приводятся сведения о шаблонах корпоративных приложений с помощью Xamarin.Forms ".
-MS. произв. Xamarin MS. AssetID: fbf32a44-1d33-4e16-a904-dc7ee5991e7c MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/07/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Предваряйте разработку корпоративных приложений
+description: В этой главе приводятся сведения о шаблонах корпоративных приложений с помощью Xamarin.Forms .
+ms.prod: xamarin
+ms.assetid: fbf32a44-1d33-4e16-a904-dc7ee5991e7c
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/07/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 6ea63fc483025fc6f9b0c7f379b6dfdc6ca30de8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84198089"
 ---
-
 # <a name="preface-to-enterprise-app-development"></a>Предваряйте разработку корпоративных приложений
 
 Эта электронная книга содержит рекомендации по созданию кросс-платформенных корпоративных приложений с помощью Xamarin.Forms . Xamarin.Forms— Это кросс-платформенный набор средств для ПОЛЬЗОВАТЕЛЬСКОГО интерфейса, позволяющий разработчикам легко создавать собственные макеты пользовательского интерфейса, которые могут совместно использоваться различными платформами, включая iOS, Android и универсальная платформа Windows (UWP). Она предоставляет комплексное решение для бизнес-приложений (B2E), бизнес-бизнес (B2B) и бизнес-потребителей (B2C), которые предоставляют возможность совместного использования кода на всех целевых платформах и снижения совокупной стоимости владения.

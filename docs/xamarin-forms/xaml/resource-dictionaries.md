@@ -1,8 +1,23 @@
 ---
-Title: " Xamarin.Forms описания ресурсов" Описание: " Xamarin.Forms ресурсы XAML — это объекты, которые могут совместно использоваться и переноситься по всему Xamarin.Forms приложению".
-MS. произв. Xamarin MS. AssetID: DF103686-4A92-40FA-9CF1-A9376293B13C MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/01/2020 без-Loc: [ Xamarin.Forms , Xamarin.Essentials ] MS. Custom: видео
+title: Xamarin.FormsСловари ресурсов
+description: Xamarin.FormsРесурсы XAML — это объекты, которые могут использоваться совместно и повторно использоваться во всем Xamarin.Forms приложении.
+ms.prod: xamarin
+ms.assetid: DF103686-4A92-40FA-9CF1-A9376293B13C
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/01/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.custom: video
+ms.openlocfilehash: a1c7cfd4a0f3549b11ac51dc13b40da552f6b758
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139416"
 ---
-
 # <a name="xamarinforms-resource-dictionaries"></a>Xamarin.FormsСловари ресурсов
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-resourcedictionaries)

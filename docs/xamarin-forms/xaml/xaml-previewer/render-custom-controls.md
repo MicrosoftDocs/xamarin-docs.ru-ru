@@ -1,8 +1,22 @@
 ---
-Title: "прорисовка настраиваемых элементов управления в предварительном просмотре XAML" Описание: "в этой статье описывается, как отображать пользовательские элементы управления в средстве предварительного просмотра XAML".
-MS. произв. Xamarin MS. AssetID: 4D795372-CB8F-48F4-B63D-845E44B261F7 MS. Technology: Xamarin-Forms author: maddyleger1 MS. author: малежер МС. Дата: 03/27/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Прорисовка пользовательских элементов управления в средстве предварительного просмотра XAML
+description: В этой статье описывается, как показать пользовательские элементы управления в средстве предварительного просмотра XAML.
+ms.prod: xamarin
+ms.assetid: 4D795372-CB8F-48F4-B63D-845E44B261F7
+ms.technology: xamarin-forms
+author: maddyleger1
+ms.author: maleger
+ms.date: 03/27/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 4f20a0586aee998c10372c60c96577321e697aad
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137271"
 ---
-
 # <a name="render-custom-controls-in-the-xaml-previewer"></a>Прорисовка пользовательских элементов управления в средстве предварительного просмотра XAML
 
 _Иногда пользовательские элементы управления не работают должным образом в средстве предварительного просмотра XAML. Воспользуйтесь инструкциями в этой статье, чтобы ознакомиться с ограничениями по предварительному просмотру пользовательских элементов управления._
@@ -33,7 +47,7 @@ namespace MyProject
 
 В настоящее время элементы управления SkiaSharp поддерживаются только при предварительном просмотре в iOS. Они не будут отображаться в предварительной версии Android.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 ### <a name="check-your-xamarinforms-version"></a>Проверка Xamarin.Forms версии
 Убедитесь, что установлено по крайней мере Xamarin.Forms 3,6. Версию можно обновить Xamarin.Forms на NuGet.

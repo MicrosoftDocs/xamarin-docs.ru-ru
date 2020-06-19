@@ -1,8 +1,22 @@
 ---
-Title: "режим ввода с клавиатуры с мягкими вводными клавиатурами в Android" Description: "особенности платформы позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая устанавливает режим работы для области ввода с мягкой клавиатурой. "
-MS. произв. Xamarin MS. AssetID: AFCDC92F-F61E-42F6-904B-50B5C4949970 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 07/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Режим ввода с программируемой клавиатуры в Android
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая устанавливает режим работы для области ввода с мягкими клавиатурами.
+ms.prod: xamarin
+ms.assetid: AFCDC92F-F61E-42F6-904B-50B5C4949970
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c62d09c7d7848d9f62c018caa1698bb53a2a39a8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128718"
 ---
-
 # <a name="soft-keyboard-input-mode-on-android"></a>Режим ввода с программируемой клавиатуры в Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

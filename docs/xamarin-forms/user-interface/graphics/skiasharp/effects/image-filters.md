@@ -1,8 +1,22 @@
 ---
-Title: «SkiaSharp Image Filters» Description:» Узнайте, как использовать фильтр изображений для создания размытий и теней.
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 173E7B22-AEC8-4F12-B657-1C0CEE01AD63 Автор: давидбритч MS. author: дабритч MS. Дата: 08/27/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Фильтры изображений SkiaSharp
+description: Узнайте, как использовать фильтр изображений для создания размытий и теней.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 173E7B22-AEC8-4F12-B657-1C0CEE01AD63
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/27/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: eedbca080fce9f3001a7b1e2358845fd63c6121b
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136348"
 ---
-
 # <a name="skiasharp-image-filters"></a>Фильтры изображений SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

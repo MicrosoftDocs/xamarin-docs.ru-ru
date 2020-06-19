@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms CollectionView GROUPING" Description: "CollectionView может отображать правильно сгруппированные данные, присвоив свойству" IsTrue "значение true."
-MS. произв. Xamarin MS. AssetID: 7E494245-FDBD-49D6-B7FA-CEF976EB59BB MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/17/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsГруппирование CollectionView
+description: CollectionView может отображать правильно сгруппированные данные, присвоив свойству «IsTrue» значение true.
+ms.prod: xamarin
+ms.assetid: 7E494245-FDBD-49D6-B7FA-CEF976EB59BB
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/17/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 51661d6573d78386f4ca8bfea0063b752295c2d8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136465"
 ---
-
 # <a name="xamarinforms-collectionview-grouping"></a>Xamarin.FormsГруппирование CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)

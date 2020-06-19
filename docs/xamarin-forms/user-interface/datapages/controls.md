@@ -1,8 +1,22 @@
 ---
-Title: "элементы управления на странице" в справочнике "Описание:" в этой статье описываются элементы управления, доступные в Xamarin.Forms пакете NuGet для страниц.
-MS. произв. Xamarin MS. AssetID: 891615D0-E8BD-4ACC-A7F0-4C3725FBCC31 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/01/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Справочник по элементам управления "страницы на странице"
+description: В этой статье описываются элементы управления, доступные в Xamarin.Forms пакете NuGet для страниц.
+ms.prod: xamarin
+ms.assetid: 891615D0-E8BD-4ACC-A7F0-4C3725FBCC31
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/01/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 86b526fff305b195221aca3fb6a86ad0823cb145
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84569404"
 ---
-
 # <a name="datapages-controls-reference"></a>Справочник по элементам управления "страницы на странице"
 
 ![](~/media/shared/preview.png "This API is currently in preview")

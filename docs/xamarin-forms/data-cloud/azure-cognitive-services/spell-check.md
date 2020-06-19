@@ -1,8 +1,22 @@
 ---
-Title: "Проверка орфографии с помощью API Bing для проверки орфографии" Description: "Проверка орфографии Bing выполняет контекстную проверку орфографии для текста, предоставляя встроенные предложения по написанию слов с ошибками. В этой статье объясняется, как использовать Проверка орфографии Bing REST API для исправления орфографических ошибок в Xamarin.Forms приложении ".
-MS. произв. Xamarin MS. AssetID: B40EB103-FDC0-45C6-9940-FB4ACDC2F4F9 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/08/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Проверка орфографии с помощью API Bing для проверки орфографии
+description: Проверка орфографии Bing выполняет контекстную проверку орфографии для текста, предоставляя встроенные предложения по написанию слов с ошибками. В этой статье объясняется, как использовать REST API Проверка орфографии Bing для исправления орфографических ошибок в Xamarin.Forms приложении.
+ms.prod: xamarin
+ms.assetid: B40EB103-FDC0-45C6-9940-FB4ACDC2F4F9
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/08/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1703f0049408381a86da73fb28696ef8708cc790
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139299"
 ---
-
 # <a name="spell-checking-using-the-bing-spell-check-api"></a>Проверка орфографии с помощью API Bing для проверки орфографии
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)

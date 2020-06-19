@@ -1,8 +1,22 @@
 ---
-Title: "начало работы со страницами данных" Описание: "в этой статье объясняется, как приступить к созданию простой страницы, управляемой данными, с помощью Xamarin.Forms страниц данных".
-MS. произв. Xamarin MS. AssetID: 6416E5FA-6384-4298-BAA1-A89381E47210 MS. Technology: автор Xamarin-Forms: давидбритч MS. author: дабритч MS. Дата: 12/01/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: начало работы со страницами с данными
+description: В этой статье объясняется, как приступить к созданию простой страницы, управляемой данными, с помощью Xamarin.Forms страниц данных.
+ms.prod: xamarin
+ms.assetid: 6416E5FA-6384-4298-BAA1-A89381E47210
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/01/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: bb08d359048d53639a700cc5ff526f26d6b077b6
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84571471"
 ---
-
 # <a name="getting-started-with-datapages"></a>начало работы со страницами с данными
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/Pages/DataPagesDemo)
@@ -165,7 +179,7 @@ SetBinding (TitleProperty, new DataSourceBinding ("title"));
 
 Создавать темы с нуля немного сложнее, но будущие выпуски предварительной версии сделают это проще.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 ## <a name="could-not-load-file-or-assembly-xamarinformsthemelight-or-one-of-its-dependencies"></a>Не удалось загрузить файл или сборку Xamarin.Forms . Theme. Light ' или одна из его зависимостей
 

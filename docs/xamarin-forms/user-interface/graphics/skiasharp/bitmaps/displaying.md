@@ -1,8 +1,22 @@
 ---
-Title: "Отображение точечных рисунков SkiaSharp" Description: "сведения о том, как отображать точечные рисунки SkiaSharp в размерах пикселей и разворачиваться для заполнения прямоугольников с сохранением пропорций".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 8E074F8D-4715-4146-8CC0-FD7A8290EDE9 Автор: давидбритч MS. author: дабритч MS. Дата: 07/17/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Отображение точечных рисунков SkiaSharp
+description: Сведения о том, как отображать точечные рисунки SkiaSharp в размерах пикселей и разворачиваться для заполнения прямоугольников с сохранением пропорций.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 8E074F8D-4715-4146-8CC0-FD7A8290EDE9
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/17/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b0fecac02c44e3ba721dd4625e7bee264c6869d0
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84134762"
 ---
-
 # <a name="displaying-skiasharp-bitmaps"></a>Отображение точечных рисунков SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

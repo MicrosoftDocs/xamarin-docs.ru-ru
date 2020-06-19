@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms в проектах для машинного кода Xamarin" Description: "в этой статье объясняется, как использовать страницы, производные от ContentPage, которые непосредственно добавляются в собственные проекты Xamarin и как осуществляется переход между ними".
-MS. произв. Xamarin MS. AssetID: f343fc21-dfb1-4364-A332-9da6705d36bc MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/19/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Formsв проектах Xamarin Native
+description: В этой статье объясняется, как использовать страницы, производные от ContentPage, которые непосредственно добавляются в собственные проекты Xamarin, и как осуществляется переход между ними.
+ms.prod: xamarin
+ms.assetid: f343fc21-dfb1-4364-a332-9da6705d36bc
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/19/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9fb741a03d1c8dd2a8754120d0b46567d8889a0b
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84132279"
 ---
-
 # <a name="xamarinforms-in-xamarin-native-projects"></a>Xamarin.Formsв проектах Xamarin Native
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/native2forms)

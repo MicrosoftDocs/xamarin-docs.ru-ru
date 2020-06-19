@@ -1,8 +1,22 @@
 ---
-Title: "Таббедпаже полупрозрачная панель вкладок в" Описание "для iOS:" особенности платформы позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы iOS, которая устанавливает режим полупрозрачность для панели вкладок в Таббедпаже ".
-MS. произв. Xamarin MS. AssetID: 9581AE81-9557-47AD-8B07-25A1AC5F055B MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/16/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Таббедпаже полупрозрачная панель вкладок в iOS
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS для установки режима полупрозрачность панели вкладок в Таббедпаже.
+ms.prod: xamarin
+ms.assetid: 9581AE81-9557-47AD-8B07-25A1AC5F055B
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/16/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8127191aab80d81fc2e532e3d5e14931b834eeae
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137037"
 ---
-
 # <a name="tabbedpage-translucent-tab-bar-on-ios"></a>Таббедпаже полупрозрачная панель вкладок в iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

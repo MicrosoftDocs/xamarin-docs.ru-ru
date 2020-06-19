@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms CollectionView Selection» Description:» по умолчанию выбор CollectionView отключен. Однако можно включить один и несколько элементов.
-MS. произв. Xamarin MS. AssetID: 423D91C7-1E58-4735-9E80-58F11CDFD953 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/06/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsCollectionView выбор
+description: По умолчанию выбор CollectionView отключен. Однако можно включить один и несколько элементов.
+ms.prod: xamarin
+ms.assetid: 423D91C7-1E58-4735-9E80-58F11CDFD953
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/06/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 39f118d7073fc551923f891681c8c6cf6a4c5ddd
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137388"
 ---
-
 # <a name="xamarinforms-collectionview-selection"></a>Xamarin.FormsCollectionView выбор
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)

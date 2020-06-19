@@ -1,8 +1,22 @@
 ---
-Title: "обнаруженное распознавания эмоцийное распознавание с помощью API распознавания лиц" Description: "API распознавания лиц принимает выражение лица в изображении в качестве входных данных и возвращает данные, включающие уровни достоверности по набору эмоции для каждого лица в изображении. В этой статье объясняется, как использовать API распознавания лиц для распознавания распознавания эмоций, чтобы оценить Xamarin.Forms приложение. "
-MS. произв. Xamarin MS. AssetID: 19D36A7C-E8D8-43D1-BE80-48DE6C02879A MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Воспринимаемое распознавание распознавания эмоций с помощью API распознавания лиц
+description: API распознавания лиц принимает выражение лица в изображении в качестве входных данных и возвращает данные, включающие уровни достоверности в наборе эмоции для каждого лица в изображении. В этой статье объясняется, как использовать API распознавания лиц для распознавания распознавания эмоций, чтобы оценить Xamarin.Forms приложение.
+ms.prod: xamarin
+ms.assetid: 19D36A7C-E8D8-43D1-BE80-48DE6C02879A
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ff384605b35f6406b628da99de500b550da811c9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136062"
 ---
-
 # <a name="perceived-emotion-recognition-using-the-face-api"></a>Воспринимаемое распознавание распознавания эмоций с помощью API распознавания лиц
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)

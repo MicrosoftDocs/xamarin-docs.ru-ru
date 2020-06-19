@@ -1,8 +1,22 @@
 ---
-Title: "преобразование текста с помощью API-интерфейса переводчика" Description: "API-интерфейс Microsoft Translator можно использовать для перевода речи и текста с помощью REST API. В этой статье объясняется, как использовать Microsoft API перевода текстов для перевода текста с одного языка на другой в Xamarin.Forms приложении. "
-MS. произв. Xamarin MS. AssetID: 68330242-92C5-46F1-B1E3-2395D8823B0C MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/08/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Преобразование текста с помощью API-интерфейса переводчика
+description: API Microsoft Translator можно использовать для перевода речи и текста с помощью REST API. В этой статье объясняется, как использовать API перевода текстов Майкрософт для перевода текста с одного языка на другой в Xamarin.Forms приложении.
+ms.prod: xamarin
+ms.assetid: 68330242-92C5-46F1-B1E3-2395D8823B0C
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/08/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f0f43f8f2113b6bd0a800ed3e0bd96b641575b1c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139286"
 ---
-
 # <a name="text-translation-using-the-translator-api"></a>Преобразование текста с помощью API-интерфейса переводчика
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)

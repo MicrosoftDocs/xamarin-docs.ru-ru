@@ -1,7 +1,21 @@
 ---
-Title: "служба Azure SignalR с Xamarin.Forms " Описание: "Приступая к работе со службой SignalR Azure и функциями Azure с Xamarin.Forms " MS. произв. Xamarin MS. AssetID: 1B9A69EF-C200-41BF-B098-D978D7F9CD8F author: профексоржеек MS. author: жусжохнс MS. дата: 06/07/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Служба Azure SignalR сXamarin.Forms
+description: Приступая к работе со службой Azure SignalR и функциями Azure с помощьюXamarin.Forms
+ms.prod: xamarin
+ms.assetid: 1B9A69EF-C200-41BF-B098-D978D7F9CD8F
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 06/07/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ffa44beb68dc845a64d8bf2a9f86f6d7e56df8f9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139442"
 ---
-
 # <a name="azure-signalr-service-with-xamarinforms"></a>Служба Azure SignalR сXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-azuresignalr/)

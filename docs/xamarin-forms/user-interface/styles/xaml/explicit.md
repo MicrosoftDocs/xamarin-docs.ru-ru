@@ -1,8 +1,22 @@
 ---
-Title: "явные стили в Xamarin.Forms описании:" явный стиль — это тот, который выборочно применяется к элементам управления путем установки их свойств стиля. В этой статье объясняется, как использовать явные стили в Xamarin.Forms приложении ".
-MS. произв. Xamarin MS. AssetID: C0DF9F8F-B431-4374-A574-325BC3C41A3B MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/17/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Явные стили вXamarin.Forms
+description: Явный стиль — это тот, который выборочно применяется к элементам управления путем установки их свойств стиля. В этой статье объясняется, как использовать явные стили в Xamarin.Forms приложении.
+ms.prod: xamarin
+ms.assetid: C0DF9F8F-B431-4374-A574-325BC3C41A3B
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/17/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 62b84a5028c17c28a69a887a832028c2064fa78d
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136270"
 ---
-
 # <a name="explicit-styles-in-xamarinforms"></a>Явные стили вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)

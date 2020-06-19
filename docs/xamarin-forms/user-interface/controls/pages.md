@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms страницы" Описание: " Xamarin.Forms страницы представляют экраны кросс-платформенного мобильного приложения. В этой статье перечислены страницы, входящие в Xamarin.Forms .
-MS. произв. Xamarin MS. AssetID: 9C8C710F-E312-420B-9324-A7A20CEDB7EC MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 01/12/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Forms Pages
+description: Xamarin.FormsСтраницы представляют собой кросс-платформенные экраны мобильных приложений. В этой статье перечислены страницы, входящие в Xamarin.Forms .
+ms.prod: xamarin
+ms.assetid: 9C8C710F-E312-420B-9324-A7A20CEDB7EC
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/12/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b72564ebbb057c8154140c9845961d4c42e93db3
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84573317"
 ---
-
 # <a name="xamarinforms-pages"></a>Xamarin.Forms Pages
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/)

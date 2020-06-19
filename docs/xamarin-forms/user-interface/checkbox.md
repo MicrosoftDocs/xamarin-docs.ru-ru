@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms флажок" Description: " Xamarin.Forms CheckBox — это тип кнопки, которая может быть либо установлена, либо пустой. Если флажок установлен, он считается включенным. Если флажок пуст, он считается отключенным.
-MS. произв. Xamarin MS. AssetID: B8B9268B-BCB8-42B9-B08C-C0F22C137238 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/11/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsУстановка
+description: Xamarin.FormsФлажок — это тип кнопки, который может быть установлен или пустым. Если флажок установлен, он считается включенным. Если флажок пуст, он считается отключенным.
+ms.prod: xamarin
+ms.assetid: B8B9268B-BCB8-42B9-B08C-C0F22C137238
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/11/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8399dde2e4e2c9fb53b38fca2923eb0e3bfc6ce3
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136478"
 ---
-
 # <a name="xamarinforms-checkbox"></a>Xamarin.FormsУстановка
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-checkboxdemos/)

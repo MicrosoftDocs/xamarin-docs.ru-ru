@@ -1,8 +1,22 @@
 ---
-Title: "Добавление AppCompat и дизайна материалов" Описание: "в этой статье объясняется, как преобразовать существующие Xamarin.Forms приложения Android для использования AppCompat и дизайна материалов".
-MS. произв. Xamarin MS. AssetID: 045FBCDF-4D45-48BB-9911-BD3938C87D58 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 06/27/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Добавление AppCompat и дизайна материалов
+description: В этой статье объясняется, как преобразовать существующие Xamarin.Forms приложения Android для использования AppCompat и дизайна материалов.
+ms.prod: xamarin
+ms.assetid: 045FBCDF-4D45-48BB-9911-BD3938C87D58
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/27/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 24206f6d6764c73f13a4b06fb44fa746f9d353af
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84135711"
 ---
-
 # <a name="adding-appcompat-and-material-design"></a>Добавление AppCompat и дизайна материалов
 
 _Выполните следующие действия, чтобы преобразовать существующие Xamarin.Forms приложения Android для использования AppCompat и дизайна материалов._

@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms страницы данных" Описание: "в этой статье представлены Xamarin.Forms страницы данных, которые предоставляют API для быстрой и простой привязки источника данных к предварительно созданным представлениям".
-MS. произв. Xamarin MS. AssetID: DF16EAEE-DB78-42CA-9C59-51D9D6CB6B95 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/01/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsСтраницы в виде веб-страниц
+description: В этой статье описываются Xamarin.Forms страницы данных, которые предоставляют API для быстрой и простой привязки источника данных к предварительно созданным представлениям.
+ms.prod: xamarin
+ms.assetid: DF16EAEE-DB78-42CA-9C59-51D9D6CB6B95
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/01/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 7d99870dd975d0996ffcd05d4aef153f3515ec9e
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84134320"
 ---
-
 # <a name="xamarinforms-datapages"></a>Xamarin.FormsСтраницы в виде веб-страниц
 
 ![](~/media/shared/preview.png "This API is currently in preview")

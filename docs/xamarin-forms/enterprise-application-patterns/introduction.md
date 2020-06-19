@@ -1,8 +1,22 @@
 ---
-Title: "Введение в разработку корпоративных приложений" Описание: "в этой главе содержится введение в разработку корпоративных приложений и представлено мобильное приложение eShopOnContainers".
-MS. произв. Xamarin MS. AssetID: cbce0659-fa03-447a-86ec-140438143230 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Date: 08/07/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Введение в разработку корпоративных приложений
+description: В этой главе приводятся общие сведения о разработке корпоративных приложений и представлено мобильное приложение eShopOnContainers.
+ms.prod: xamarin
+ms.assetid: cbce0659-fa03-447a-86ec-140438143230
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/07/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e78e7c3056d4f1e22114819f54c1df261aec70e1
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84198116"
 ---
-
 # <a name="introduction-to-enterprise-app-development"></a>Введение в разработку корпоративных приложений
 
 Независимо от платформы разработчики корпоративных приложений сталкиваются с несколькими трудностями:
@@ -133,7 +147,7 @@ MS. произв. Xamarin MS. AssetID: cbce0659-fa03-447a-86ec-140438143230 MS. 
 |Переходник|Содержит преобразователи значений, которые применяют пользовательскую логику к привязке.|
 |Произведенный эффект|Содержит `EntryLineColorEffect` класс, который используется для изменения цвета границы конкретных `Entry` элементов управления.|
 |Исключения|Содержит пользовательский `ServiceAuthenticationException` .|
-|Модули|Содержит методы расширения для `VisualElement` классов и `IEnumerable` .|
+|Расширения|Содержит методы расширения для `VisualElement` классов и `IEnumerable` .|
 |Вспомогательные методы|Содержит вспомогательные классы для приложения.|
 |Модели|Содержит классы модели для приложения.|
 |Свойства|Содержит `AssemblyInfo.cs` файл метаданных сборки .NET.|

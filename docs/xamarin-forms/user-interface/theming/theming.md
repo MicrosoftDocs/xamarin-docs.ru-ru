@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms Описание приложения". их можно реализовать в Xamarin.Forms приложениях, создав ResourceDictionary для каждой темы, а затем загрузив ресурсы с расширением разметки DynamicResource.
-MS. произв. Xamarin MS. assetId: B7B17F66-4E37-4B50-9A57-351B62BE4FED MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/07/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Тема Xamarin.Forms приложения
+description: Их можно реализовать в Xamarin.Forms приложениях, создав ResourceDictionary для каждой темы, а затем загрузив ресурсы с расширением разметки DynamicResource.
+ms.prod: xamarin
+ms.assetId: B7B17F66-4E37-4B50-9A57-351B62BE4FED
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/07/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 3341ada6c5605917eeec79aac96e38cb99b40fc4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138207"
 ---
-
 # <a name="theme-a-xamarinforms-application"></a>Тема Xamarin.Forms приложения
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-theming/)

@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms Grid» Description: « Xamarin.Forms Сетка — это макет, который упорядочивает дочерние элементы по строкам и столбцам ячеек».
-MS. произв. Xamarin MS. AssetID: 762B1802-D185-494C-B643-74EED55882FE MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/15/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsСетки
+description: Xamarin.FormsСетка представляет собой макет, который упорядочивает дочерние элементы по строкам и столбцам ячеек.
+ms.prod: xamarin
+ms.assetid: 762B1802-D185-494C-B643-74EED55882FE
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/15/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9d2e697a07e033fd7c3c8d3efffa1d67f6c097c3
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946344"
 ---
-
 # <a name="xamarinforms-grid"></a>Xamarin.FormsСетки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-griddemos)
@@ -274,6 +288,21 @@ grid.Children.Add(bottomRight, 1, 2, 1, 2); // second column, second row
 
 > [!NOTE]
 > Кроме того, дочерние представления можно добавлять в [`Grid`](xref:Xamarin.Forms.Grid) с помощью [`AddHorizontal`](xref:Xamarin.Forms.Grid.IGridList`1.AddHorizontal*) [`AddVertical`](xref:Xamarin.Forms.Grid.IGridList`1.AddVertical*) методов и, которые добавляют дочерние элементы в одну строку или один столбец `Grid` . `Grid`Затем разворачивает строки или столбцы по мере совершения этих вызовов, а также автоматически размещая потомки в нужных ячейках.
+
+### <a name="simplify-row-and-column-definitions"></a>Упрощение определений строк и столбцов
+
+В языке XAML характеристики строк и столбцов [`Grid`](xref:Xamarin.Forms.Grid) можно указать с помощью упрощенного синтаксиса, который позволяет избежать определения [`RowDefinition`](xref:Xamarin.Forms.RowDefinition) [`ColumnDefinition`](xref:Xamarin.Forms.ColumnDefinition) объектов и для каждой строки и столбца. Вместо этого [`RowDefinitions`](xref:Xamarin.Forms.Grid.RowDefinitions) Свойства и [`ColumnDefinitions`](xref:Xamarin.Forms.Grid.ColumnDefinitions) можно задать для строк, содержащих значения, разделенные запятыми [`GridUnitType`](xref:Xamarin.Forms.GridUnitType) , из которых встроены преобразователи типов в Xamarin.Forms Create `RowDefinition` и `ColumnDefinition` Objects:
+
+```xaml
+<Grid RowDefinitions="1*, Auto, 25, 14, 20"
+      ColumnDefinitions="*, 2*, Auto, 300">
+    ...
+</Grid>
+```
+
+В этом примере [`Grid`](xref:Xamarin.Forms.Grid) содержит пять строк и четыре столбца. Третьим, приводятся и пятая строки устанавливаются в абсолютные значения высоты, а вторая — на ее содержимое. Оставшаяся высота затем выделяется первой строке.
+
+Для столбца column задана абсолютная ширина, а в третьем — значение автоматического подбора размера содержимого. Оставшаяся ширина распределяется пропорционально между первым и Вторым столбцами на основе числа до звездочки. В этом примере ширина второго столбца дважды совпадает с шириной первого столбца (так как `*` он идентичен `1*` ).
 
 ## <a name="space-between-rows-and-columns"></a>Расстояние между строками и столбцами
 

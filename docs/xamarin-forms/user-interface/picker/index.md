@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms средство выбора" Описание: "в Xamarin.Forms средстве выбора отображается короткий список элементов, из которого пользователь может выбрать элемент. В этой статье объясняется, как использовать класс средства выбора для выбора текстового элемента из списка данных.
-MS. произв. Xamarin MS. AssetID: D4815A4B-104B-4294-951B-BD8F2EC33C86 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/26/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsПрисутствует
+description: В Xamarin.Forms средстве выбора отображается короткий список элементов, из которого пользователь может выбрать элемент. В этой статье объясняется, как использовать класс средства выбора для выбора текстового элемента из списка данных.
+ms.prod: xamarin
+ms.assetid: D4815A4B-104B-4294-951B-BD8F2EC33C86
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/26/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 50f605f4ad9839521fd4169531ad46d197f20dbf
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139672"
 ---
-
 # <a name="xamarinforms-picker"></a>Xamarin.FormsПрисутствует
 
 _Представление выбора — это элемент управления для выбора текстового элемента из списка данных._

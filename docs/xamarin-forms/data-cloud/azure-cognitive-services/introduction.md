@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms и Azure Cognitive Services введение" Описание: "в этой статье приводятся общие сведения о примере приложения, в котором демонстрируется вызов некоторых API-интерфейсов Microsoft для работы со службой Windows".
-MS. произв. Xamarin MS. AssetID: 74121ADB-1322-4C1E-A103-F37257BC7CB0 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/08/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsОбщие сведения об Azure Cognitive Services
+description: В этой статье приводятся общие сведения о примере приложения, в котором показано, как вызывать некоторые API-интерфейсы Microsoft для работы со службой.
+ms.prod: xamarin
+ms.assetid: 74121ADB-1322-4C1E-A103-F37257BC7CB0
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/08/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 7c2a63c40d1006c7d83c9dde871e17d4b194bdca
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84129718"
 ---
-
 # <a name="xamarinforms-and-azure-cognitive-services-introduction"></a>Xamarin.FormsОбщие сведения об Azure Cognitive Services
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
@@ -46,7 +60,7 @@ _Microsoft Cognitive Services — это набор API-интерфейсов, 
 
 Проект общего кода для примера приложения состоит из пяти основных папок:
 
-|Папка|Цель|
+|Папка|Назначение|
 |--- |--- |
 |Модели|Содержит классы модели данных для приложения. Сюда входит `TodoItem` класс, который моделирует один элемент данных, используемых приложением. Эта папка также содержит классы, используемые для моделирования ответов JSON, возвращаемых разными API-интерфейсами Microsoft для программирования сообщений.|
 |Репозитории|Содержит `ITodoItemRepository` интерфейс и `TodoItemRepository` класс, используемые для выполнения операций с базой данных.|

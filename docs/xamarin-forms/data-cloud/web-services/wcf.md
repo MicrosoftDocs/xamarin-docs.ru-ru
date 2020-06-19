@@ -1,8 +1,22 @@
 ---
-Title: "использование веб-службы Windows Communication Foundation (WCF)" Description: "в этой статье показано, как использовать службу протокола SOAP из Xamarin.Forms приложения".
-MS. произв. Xamarin MS. AssetID: 5696FF04-EF21-4B7A-8C8B-26DE28B5C0AD MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/28/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Использование веб-службы Windows Communication Foundation (WCF)
+description: В этой статье показано, как использовать службу протокола SOAP из Xamarin.Forms приложения.
+ms.prod: xamarin
+ms.assetid: 5696FF04-EF21-4B7A-8C8B-26DE28B5C0AD
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/28/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: cf95427807e0179a608b428bc7e02499c9616fe7
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139156"
 ---
-
 # <a name="consume-a-windows-communication-foundation-wcf-web-service"></a>Использование веб-службы Windows Communication Foundation (WCF)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todowcf)

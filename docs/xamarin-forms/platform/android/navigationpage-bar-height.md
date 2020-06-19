@@ -1,8 +1,22 @@
 ---
-Title: "Описание высоты Навигатионпаже Bar на Android" Description: "особенности платформы позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, устанавливающую высоту панели навигации в Навигатионпаже.
-MS. произв. Xamarin MS. AssetID: C8A73B64-FE70-408A-A72E-8AF147F0C52C MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 07/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Высота Навигатионпаже Bar на Android
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, устанавливающую высоту панели навигации в Навигатионпаже.
+ms.prod: xamarin
+ms.assetid: C8A73B64-FE70-408A-A72E-8AF147F0C52C
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2dcabe3c0067734250834c2927fd4cbb83906943
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128795"
 ---
-
 # <a name="navigationpage-bar-height-on-android"></a>Высота Навигатионпаже Bar на Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

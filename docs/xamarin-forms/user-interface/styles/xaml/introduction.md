@@ -1,8 +1,22 @@
 ---
-Title: "Общие сведения о Xamarin.Forms стилях" Описание: "стили позволяют настраивать внешний вид визуальных элементов. Стили определяются для конкретного типа и содержат значения для свойств, доступных для этого типа. "
-MS. произв. Xamarin MS. AssetID: 3FF899C0-6CFB-4C1D-837D-9E9E10181967 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/27/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Общие сведения о Xamarin.Forms стилях
+description: Стили позволяют настраивать внешний вид визуальных элементов. Стили определяются для конкретного типа и содержат значения для свойств, доступных для этого типа.
+ms.prod: xamarin
+ms.assetid: 3FF899C0-6CFB-4C1D-837D-9E9E10181967
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/27/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5766af7da3a0cf550a2ccb3a926dad25fd7962eb
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138829"
 ---
-
 # <a name="introduction-to-xamarinforms-styles"></a>Общие сведения о Xamarin.Forms стилях
 
 _Стили позволяют настраивать внешний вид визуальных элементов. Стили определяются для конкретного типа и содержат значения для свойств, доступных для этого типа._

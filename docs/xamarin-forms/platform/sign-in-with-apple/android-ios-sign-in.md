@@ -1,8 +1,22 @@
 ---
-Title: "использование входа с Apple для Xamarin.Forms " Description: "Узнайте, как реализовать вход с помощью Apple в Xamarin.Forms мобильных приложениях".
-MS. произв. Xamarin MS. AssetID: 2E47E7F2-93D4-4CA3-9E66-247466D25E4D MS. Technology: Xamarin-Forms author: давидортинау MS. author: даортин МС. Дата: 09/10/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Использование входа с Apple дляXamarin.Forms
+description: Узнайте, как реализовать вход с помощью Apple в Xamarin.Forms мобильных приложениях.
+ms.prod: xamarin
+ms.assetid: 2E47E7F2-93D4-4CA3-9E66-247466D25E4D
+ms.technology: xamarin-forms
+author: davidortinau
+ms.author: daortin
+ms.date: 09/10/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: fb37f8fb2d01154bf2e749e685c4e96c12d6bc5e
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139494"
 ---
-
 # <a name="use-sign-in-with-apple-in-xamarinforms"></a>Использование входа с помощью Apple вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/signinwithapple/)

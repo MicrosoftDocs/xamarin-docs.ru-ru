@@ -1,8 +1,23 @@
 ---
-Title: " Xamarin.Forms Описание диспетчера визуального состояния". Используйте Диспетчер визуальных состояний для внесения изменений в элементы XAML на основе визуальных состояний, заданных из кода. "
-MS. произв. Xamarin MS. AssetID: 17296F14-640D-484B-A24C-A4E9B7013E4F MS. Technology: Xamarin-Forms MS. Custom: ксаму — автор видео: давидбритч MS. author: дабритч МС. Дата: 02/21/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Диспетчер визуального представления состояний Xamarin.Forms
+description: Используйте Диспетчер визуальных состояний для внесения изменений в элементы XAML на основе визуальных состояний, заданных из кода.
+ms.prod: xamarin
+ms.assetid: 17296F14-640D-484B-A24C-A4E9B7013E4F
+ms.technology: xamarin-forms
+ms.custom: xamu-video
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/19/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 3dda730446ec2b4268f42ee5af853400b33565d9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946235"
 ---
-
 # <a name="xamarinforms-visual-state-manager"></a>Диспетчер визуального представления состояний Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-vsmdemos)
@@ -400,6 +415,7 @@ Xamarin.FormsДиспетчер визуальных состояний опре
 | `CarouselView` | `DefaultItem`, `CurrentItem`, `PreviousItem`, `NextItem` | [Визуальные состояния Карауселвиев](~/xamarin-forms/user-interface/carouselview/interaction.md#define-visual-states) |
 | `ImageButton` | `Pressed` | [Визуальные состояния ImageButton](~/xamarin-forms/user-interface/imagebutton.md#imagebutton-visual-states) |
 | `RadioButton` | `IsChecked` | [Визуальные состояния RadioButton](~/xamarin-forms/user-interface/radiobutton.md#radiobutton-visual-states) |
+| `Switch` | `On`, `Off` | [Переключение визуальных состояний](~/xamarin-forms/user-interface/switch.md#switch-visual-states) |
 | `VisualElement` | `Normal`, `Disabled`, `Focused`, `Selected` | [Распространенные состояния](#common-states) |
 
 Доступ к каждому из этих состояний можно получить с помощью группы визуального состояния с именем `CommonStates` .

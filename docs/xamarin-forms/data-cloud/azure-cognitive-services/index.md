@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms и Azure Cognitive Services" Description: "Добавление логики в Xamarin.Forms приложения с помощью Cognitive Services Azure, включая распознавание речи, проверку орфографии, преобразование текста и распознавание распознавания эмоций".
-MS. произв. Xamarin MS. AssetID: 64386A65-FD31-4A1B-A769-91495E57345A MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/27/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Formsи Azure Cognitive Services
+description: Добавьте аналитику в Xamarin.Forms приложения с помощью Cognitive Services Azure, включая распознавание речи, проверку орфографии, преобразование текста и распознавание распознавания эмоций.
+ms.prod: xamarin
+ms.assetid: 64386A65-FD31-4A1B-A769-91495E57345A
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/27/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 64f5dce9337444a1e910a11a69426964a09ac05a
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136023"
 ---
-
 # <a name="xamarinforms-and-azure-cognitive-services"></a>Xamarin.Formsи Azure Cognitive Services
 
 ## <a name="introduction"></a>[Введение](introduction.md)

@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms CollectionView Layout» Description:» по умолчанию CollectionView будет отображать свои элементы в вертикальном списке. Однако можно указать вертикальные и горизонтальные списки и сетки. "
-MS. произв. Xamarin MS. AssetID: 5FE78207-1BD6-4706-91EF-B13932321FC9 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/22/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsМакет CollectionView
+description: По умолчанию элементы CollectionView будут отображаться в вертикальном списке. Однако можно указать вертикальные и горизонтальные списки и сетки.
+ms.prod: xamarin
+ms.assetid: 5FE78207-1BD6-4706-91EF-B13932321FC9
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/22/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 425eb7abc14fb941dbfc28219907d98558cbfabb
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137440"
 ---
-
 # <a name="xamarinforms-collectionview-layout"></a>Xamarin.FormsМакет CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)

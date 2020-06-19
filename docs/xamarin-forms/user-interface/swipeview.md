@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms свипевиев» Description: « Xamarin.Forms свипевиев — это контейнерный элемент управления, который заключает в оболочку элемент содержимого и предоставляет элементы контекстного меню, которые выводятся с помощью жеста прокрутки».
-MS. произв. Xamarin MS. assetId: 602456B5-701B-4948-B454-B1F31283F1CF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 03/26/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Formsсвипевиев
+description: Xamarin.FormsСвипевиев — это контейнерный элемент управления, который служит оболочкой для элемента содержимого и предоставляет элементы контекстного меню, которые выводятся с помощью жеста прокрутки.
+ms.prod: xamarin
+ms.assetId: 602456B5-701B-4948-B454-B1F31283F1CF
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/26/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9c9d0621cdd5bb85690771d8bdfd0060b6a352cb
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136257"
 ---
-
 # <a name="xamarinforms-swipeview"></a>Xamarin.Formsсвипевиев
 
 ![](~/media/shared/preview.png "This API is currently pre-release")

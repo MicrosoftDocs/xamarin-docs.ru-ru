@@ -1,8 +1,22 @@
 ---
-Title: "Настройка проектов Windows" Описание: "старые Xamarin.Forms решения (или созданные на macOS) не будут иметь универсальная платформа Windows проектов, поэтому в этой статье объясняется, как добавить новый проект UWP в существующее Xamarin.Forms решение".
-MS. произв. Xamarin MS. AssetID: A0774D2E-6994-4D91-84E8-DAB66FC92320 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Настройка проектов Windows
+description: Xamarin.FormsВ старых решениях (или созданных на macOS) не будет универсальная платформа Windows проектов, поэтому в этой статье объясняется, как добавить новый проект UWP в существующее Xamarin.Forms решение.
+ms.prod: xamarin
+ms.assetid: A0774D2E-6994-4D91-84E8-DAB66FC92320
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 13b46fd06b0116332241b0d523aea707d56b39ec
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84573369"
 ---
-
 # <a name="setup-windows-projects"></a>Настройка проектов Windows
 
 _Добавление новых проектов Windows в существующее Xamarin.Forms решение_
@@ -94,7 +108,7 @@ LoadApplication(new YOUR_NAMESPACE.App());
 
 Двенадцать. Добавьте локальные ресурсы (например, файлы изображений) из существующих проектов платформы, которые необходимы.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 ### <a name="target-invocation-exception-when-using-compile-with-net-native-tool-chain"></a>"Целевое исключение вызова" при использовании "Compile с .NET Nativeной цепочкой инструментов"
 

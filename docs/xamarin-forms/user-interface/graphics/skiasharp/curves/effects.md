@@ -1,8 +1,22 @@
 ---
-Title: "эффекты пути в SkiaSharp" Описание: "в этой статье объясняются различные эффекты SkiaSharp Path, позволяющие использовать пути для обводки и заполнения, и демонстрирует это с помощью образца кода".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 95167D1F-A718-405A-AFCC-90E596D422F3 Автор: давидбритч MS. author: дабритч MS. Дата: 07/29/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Эффекты пути в SkiaSharp
+description: В этой статье объясняются различные эффекты SkiaSharp Path, позволяющие использовать пути для обводки и заливки, а также демонстрируется пример кода.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 95167D1F-A718-405A-AFCC-90E596D422F3
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/29/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f3a5a581ffb4ca2acf1d4209b8b7a744f0daa5eb
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128060"
 ---
-
 # <a name="path-effects-in-skiasharp"></a>Эффекты пути в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

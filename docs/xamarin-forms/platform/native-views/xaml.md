@@ -1,8 +1,22 @@
 ---
-Title: "собственные представления в XAML" Description: "собственные представления из iOS, Android и универсальная платформа Windows можно напрямую ссылаться из Xamarin.Forms файлов XAML. Свойства и обработчики событий могут быть установлены в собственных представлениях и могут взаимодействовать с Xamarin.Forms представлениями. В этой статье показано, как использовать собственные представления из Xamarin.Forms файлов XAML. "
-MS. произв. Xamarin MS. AssetID: 7A856D31-B300-409E-9AEB-F8A4DB99B37E MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/23/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Собственные представления в XAML
+description: На собственные представления из iOS, Android и универсальная платформа Windows можно напрямую ссылаться из Xamarin.Forms файлов XAML. Свойства и обработчики событий могут быть установлены в собственных представлениях и могут взаимодействовать с Xamarin.Forms представлениями. В этой статье показано, как использовать собственные представления из Xamarin.Forms файлов XAML.
+ms.prod: xamarin
+ms.assetid: 7A856D31-B300-409E-9AEB-F8A4DB99B37E
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/23/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0d6aa84a886d450d1dc42ec31edf16380b795404
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84564645"
 ---
-
 # <a name="native-views-in-xaml"></a>Собственные представления в XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-nativeviews-nativeswitch)

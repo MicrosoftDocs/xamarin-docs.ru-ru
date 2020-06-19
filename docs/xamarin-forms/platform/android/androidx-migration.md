@@ -1,8 +1,22 @@
 ---
-Title: "Андроидкс миграция в Xamarin.Forms " Description: "в этой статье объясняется, почему андроидкс существует и как выполнить миграцию в андроидкс в Xamarin.Forms приложении".
-MS. произв. Xamarin MS. AssetID: 98884003-E65A-4EB4-842D-66CFE27344A4 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс MS. Дата: 01/22/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Андроидкс миграция вXamarin.Forms
+description: В этой статье объясняется, почему Андроидкс существует и как выполнить миграцию в Андроидкс в Xamarin.Forms приложении.
+ms.prod: xamarin
+ms.assetid: 98884003-E65A-4EB4-842D-66CFE27344A4
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 01/22/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c2df309a8a12a05a4b492bb66977aa2411142850
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138272"
 ---
-
 # <a name="androidx-migration-in-xamarinforms"></a>Андроидкс миграция вXamarin.Forms
 
 Андроидкс заменяет библиотеку поддержки Android. В этой статье объясняется, почему Андроидкс существует, как она влияет Xamarin.Forms , и как перенести приложение для использования библиотек андроидкс.

@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms экспериментальные флаги" Описание: " Xamarin.Forms экспериментальные флаги позволяют группе инженеров-разработчиков предоставлять новые возможности пользователям быстрее, в то же время сохраняя возможность изменять API функций до того, как они переходят в стабильный выпуск".
-MS. произв. Xamarin MS. AssetID: AF4BDD27-89F6-48AE-A8CD-D7E4DDA2CCA2 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/14/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Formsэкспериментальные флаги
+description: Xamarin.Formsэкспериментальные флаги позволяют группе инженеров-разработчиков поставлять новые функции пользователям быстрее, в то же время сохраняя возможность изменять API функций до того, как они переходят в стабильный выпуск.
+ms.prod: xamarin
+ms.assetid: AF4BDD27-89F6-48AE-A8CD-D7E4DDA2CCA2
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/15/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 17fcc996b4dc8013a23a598ece8e240caba3f775
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946121"
 ---
-
 # <a name="xamarinforms-experimental-flags"></a>Xamarin.Formsэкспериментальные флаги
 
 При реализации новой Xamarin.Forms функции она иногда помещается за экспериментальный флаг. Это позволяет группе разработчиков предоставлять новые функции быстрее, в то же время сохраняя возможность изменения API-интерфейсов функций до того, как они переходят в стабильный выпуск. Затем экспериментальный флаг удаляется после того, как функция переместится в стабильный выпуск.
@@ -12,10 +26,10 @@ Xamarin.Formsвключает следующие экспериментальн�
 - `AppTheme_Experimental`
 - `CarouselView_Experimental`
 - `Expander_Experimental`
-- `IndicatorView_Experimental`
 - `Markup_Experimental`
 - `MediaElement_Experimental`
 - `RadioButton_Experimental`
+- `Shapes_Experimental`
 - `Shell_UWP_Experimental`
 - `StateTriggers_Experimental`
 - `SwipeView_Experimental`
@@ -44,7 +58,7 @@ Xamarin.Forms.Forms.SetFlags("CarouselView_Experimental");
 `Xamarin.Forms.Forms.SetFlags`Метод принимает `string` аргумент массива, что позволяет включить несколько экспериментальных флагов в одном вызове метода:
 
 ```csharp
-Xamarin.Forms.Forms.SetFlags(new string[] { "CarouselView_Experimental", "IndicatorView_Experimental", "SwipeView_Experimental" });
+Xamarin.Forms.Forms.SetFlags(new string[] { "CarouselView_Experimental", "MediaElement_Experimental", "SwipeView_Experimental" });
 ```
 
 > [!WARNING]

@@ -1,8 +1,22 @@
 ---
-Title: "масштабирование специальных возможностей для именованных размеров шрифтов в iOS" Description: "особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая отключает масштабирование специальных возможностей для именованных размеров шрифтов.
-MS. произв. Xamarin MS. AssetID: B443BAF6-E6F6-4A0E-80B5-CAACE6B550EF MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/28/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Масштабирование специальных возможностей для именованных размеров шрифтов в iOS
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая отключает масштабирование специальных возможностей для именованных размеров шрифтов.
+ms.prod: xamarin
+ms.assetid: B443BAF6-E6F6-4A0E-80B5-CAACE6B550EF
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/28/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9aa29ba4d8e6bda9126ec211af1b4febebd5bab9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128275"
 ---
-
 # <a name="accessibility-scaling-for-named-font-sizes-on-ios"></a>Масштабирование специальных возможностей для именованных размеров шрифтов в iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

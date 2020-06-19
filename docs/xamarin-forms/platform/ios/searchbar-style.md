@@ -1,8 +1,22 @@
 ---
-Title: "Сеарчбар Style for iOS" Description: "особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая определяет, имеет ли Сеарчбар фон.
-MS. произв. Xamarin MS. AssetID: 3D512DD6-078E-4BC6-926E-62BA6F4DE640 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/05/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Стиль Сеарчбар в iOS
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы iOS платформу, которая определяет, имеет ли Сеарчбар фон.
+ms.prod: xamarin
+ms.assetid: 3D512DD6-078E-4BC6-926E-62BA6F4DE640
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/05/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e02ef600af761915d05c912b586e409dd6f46b85
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137089"
 ---
-
 # <a name="searchbar-style-on-ios"></a>Стиль Сеарчбар в iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

@@ -1,8 +1,22 @@
 ---
-Title: "WebViewные оповещения JavaScript в Windows" Описание: "особенности платформы позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Windows, которая позволяет WebView отображать оповещения JavaScript в диалоговом окне сообщения UWP.
-MS. произв. Xamarin MS. AssetID: 95A153A1-72A0-4C0B-A452-ACE966BB12CB MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/24/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: WebView оповещений JavaScript в Windows
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Windows, которая позволяет WebView отображать оповещения JavaScript в диалоговом окне сообщения UWP.
+ms.prod: xamarin
+ms.assetid: 95A153A1-72A0-4C0B-A452-ACE966BB12CB
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/24/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b7d039d26895b50f937392941e42a92a6e51f322
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137492"
 ---
-
 # <a name="webview-javascript-alerts-on-windows"></a>WebView оповещений JavaScript в Windows
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

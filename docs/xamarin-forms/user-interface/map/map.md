@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms Map Control" Описание: "элемент управления" карта "представляет собой кросс-платформенное представление для отображения и аннотирования карт. Он использует собственный элемент управления картой для каждой платформы, обеспечивая быстрый и знакомый интерфейс карт для пользователей. "
-MS. произв. Xamarin MS. AssetID: 22C99029-0B16-43A6-BF58-26B48C4AED38 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/29/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsMap Control
+description: Элемент управления картой представляет собой кросс-платформенное представление для отображения и аннотирования карт. Он использует собственный элемент управления картой для каждой платформы, обеспечивая быстрый и знакомый интерфейс карт для пользователей.
+ms.prod: xamarin
+ms.assetid: 22C99029-0B16-43A6-BF58-26B48C4AED38
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/20/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1aee81b6988e1f3a7099c2722b6f336f071ad8c0
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946368"
 ---
-
 # <a name="xamarinforms-map-control"></a>Xamarin.FormsMap Control
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
@@ -23,6 +37,7 @@ MS. произв. Xamarin MS. AssetID: 22C99029-0B16-43A6-BF58-26B48C4AED38 MS. 
 - [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType)Тип [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) — указывает стиль отображения для схемы.
 - `MoveToLastRegionOnLayoutChange`, тип `bool` , определяет, будет ли передвигаться отображаемая область карт из текущей области в ее ранее заданную область при изменении макета.
 - [`Pins`](xref:Xamarin.Forms.Maps.Map.Pins)Тип — `IList<Pin>` представляет список ПИН-кодов на карте.
+- `TrafficEnabled`Тип `bool` — указывает, перемещается ли на карте данные трафика.
 - [`VisibleRegion`](xref:Xamarin.Forms.Maps.Map.VisibleRegion), типа [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) , возвращает текущую отображаемую область на карте.
 
 Эти свойства, за исключением `MapElements` `Pins` свойств, и `VisibleRegion` , поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целями привязок данных.
@@ -196,6 +211,23 @@ if (map.VisibleRegion != null)
 
 > [!NOTE]
 > Дополнительные настройки поведения карт можно получить, создав пользовательский модуль подготовки к отображению карт. Дополнительные сведения см. [в разделе Настройка Xamarin.Forms схемы](~/xamarin-forms/app-fundamentals/custom-renderer/map-pin.md).
+
+### <a name="show-traffic-data"></a>Отображение данных о трафике
+
+[`Map`](xref:Xamarin.Forms.Maps.Map)Класс определяет `TrafficEnabled` свойство типа `bool` . По умолчанию это свойство имеет значение `false` , которое указывает на то, что данные трафика не будут наложены на карту. Если это свойство имеет значение `true` , данные трафика передаются на карте. В следующем примере показано задание этого свойства:
+
+```xaml
+<maps:Map TrafficEnabled="true" />
+```
+
+Эквивалентный код на C# выглядит так:
+
+```csharp
+Map map = new Map
+{
+    TrafficEnabled = true
+};
+```
 
 ### <a name="disable-scroll"></a>Отключить прокрутку
 

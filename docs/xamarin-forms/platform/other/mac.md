@@ -1,11 +1,26 @@
 ---
-Title: "Настройка платформы Mac" Описание: "в этой статье объясняется, как добавить в проект проект Mac Xamarin.Forms , который будет создавать приложение, которое может выполняться на macOS Sierra и MacOS El Capitan".
-MS. произв. Xamarin MS. AssetID: EEC549E0-F182-4F9C-B2BA-B31D19569AA5 MS. Technology: Xamarin-Forms MS. Custom: ксаму — автор видео: давидбритч MS. author: дабритч МС. Дата: 05/03/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Настройка платформы Mac
+description: В этой статье объясняется, как добавить в проект проект Mac Xamarin.Forms , который будет создавать приложение, которое может выполняться на macOS Sierra и MacOS El Capitan.
+ms.prod: xamarin
+ms.assetid: EEC549E0-F182-4F9C-B2BA-B31D19569AA5
+ms.technology: xamarin-forms
+ms.custom: xamu-video
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/03/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 11897d2d3b8b7ba0a62956f1dbe4d8b873352e7a
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139559"
 ---
-
 # <a name="mac-platform-setup"></a>Настройка платформы Mac
 
-![Предварительный просмотр](~/media/shared/preview.png)
+![Preview (Предварительный просмотр)](~/media/shared/preview.png)
 
 Перед началом создайте (или используйте существующий) Xamarin.Forms проект. Добавлять можно только приложения Mac с помощью Visual Studio для Mac.
 

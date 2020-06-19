@@ -1,8 +1,22 @@
 ---
-Title: "Свипевиевный режим перехода на Android" Description: "особенности платформы позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, которая управляет переходом, используемым при открытии Свипевиев.
-MS. произв. Xamarin MS. AssetID: 6B1F8213-9D62-4C40-9F04-881F1371B5AA MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/11/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Режим перехода Свипевиевного считывания в Android
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать зависящую от платформы Android платформу, управляющую переходом, который используется при открытии Свипевиев.
+ms.prod: xamarin
+ms.assetid: 6B1F8213-9D62-4C40-9F04-881F1371B5AA
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/11/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c420fe65b020067169230dd06dbcd5ce65c036ab
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128626"
 ---
-
 # <a name="swipeview-swipe-transition-mode-on-android"></a>Режим перехода Свипевиевного считывания в Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

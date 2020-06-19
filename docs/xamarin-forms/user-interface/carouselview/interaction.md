@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms Карауселвиев взаимодействие" Description: "элемент, отображаемый в данный момент в карауселвиев, доступен через свойства CurrentItem и позиции".
-MS. произв. Xamarin MS. AssetID: 854D97E5-D119-4BE2-AE7C-BD428792C992 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/11/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsВзаимодействие Карауселвиев
+description: Доступ к отображаемому в данный момент элементу в Карауселвиев можно получить с помощью свойств CurrentItem и позиции.
+ms.prod: xamarin
+ms.assetid: 854D97E5-D119-4BE2-AE7C-BD428792C992
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/11/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 57c501c0f789ce448d8381cbbccb46666cf06305
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137414"
 ---
-
 # <a name="xamarinforms-carouselview-interaction"></a>Xamarin.FormsВзаимодействие Карауселвиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)

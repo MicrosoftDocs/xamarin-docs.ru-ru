@@ -1,8 +1,22 @@
 ---
-Title: "расширения разметки XAML" Description: "в статье объясняется, как использовать Xamarin.Forms расширения разметки XAML для расширения возможностей и гибкости XAML, разрешая устанавливать атрибуты элементов из источников, отличных от текстовых строк."
-MS. произв. Xamarin MS. AssetID: EB06C8B7-3FD5-47B7-A09C-A13063BD110F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/05/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Расширения разметки XAML
+description: В этой статье объясняется, как использовать Xamarin.Forms расширения разметки XAML для расширения возможностей и гибкости XAML, разрешая установку атрибутов элементов из источников, отличных от текстовых строк.
+ms.prod: xamarin
+ms.assetid: EB06C8B7-3FD5-47B7-A09C-A13063BD110F
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/05/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 568cffc335f28b1a47f3278ad061d851ebef84b6
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84130394"
 ---
-
 # <a name="xaml-markup-extensions"></a>Расширения разметки XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)

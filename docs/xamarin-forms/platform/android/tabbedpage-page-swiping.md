@@ -1,8 +1,22 @@
 ---
-Title: «Таббедпаже Page прокрутка на Android» Description: «особенности платформы» позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Android, которая позволяет выполнять прокрутку с помощью жеста горизонтального пальца между страницами в Таббедпаже ".
-MS. произв. Xamarin MS. AssetID: D1C09CCB-7246-41A4-8BD2-FA6FABCF1C72 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 07/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Таббедпаже прокрутка страниц на Android
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Android, которая позволяет выполнять прокрутку с помощью жеста горизонтального пальца между страницами в Таббедпаже.
+ms.prod: xamarin
+ms.assetid: D1C09CCB-7246-41A4-8BD2-FA6FABCF1C72
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 61c0137788303363769fdec80a16542e2d8bea5e
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128613"
 ---
-
 # <a name="tabbedpage-page-swiping-on-android"></a>Таббедпаже прокрутка страниц на Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

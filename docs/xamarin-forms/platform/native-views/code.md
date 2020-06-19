@@ -1,8 +1,22 @@
 ---
-Title: "собственные представления в C#" Description: "собственные представления из iOS, Android и UWP могут ссылаться непосредственно на Xamarin.Forms страницы, созданные с помощью C#. В этой статье показано, как добавить собственные представления в Xamarin.Forms Макет, созданный с помощью C#, и как переопределить макет пользовательских представлений для исправления использования API измерения.
-MS. произв. Xamarin MS. AssetID: 230F937C-F914-4B21-8EA1-1A2A9E644769 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/27/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Собственные представления в C#
+description: На Xamarin.Forms страницы, созданные с помощью C#, можно ссылаться непосредственно на собственные представления из iOS, Android и UWP. В этой статье показано, как добавить собственные представления в Xamarin.Forms Макет, созданный с помощью C#, и как переопределить макет пользовательских представлений для исправления использования API измерения.
+ms.prod: xamarin
+ms.assetid: 230F937C-F914-4B21-8EA1-1A2A9E644769
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/27/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 18cdeccbdff86a6b20aab4b33db259f1f06ee096
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139598"
 ---
-
 # <a name="native-views-in-c"></a>Собственные представления в C\#
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-nativeembedding)

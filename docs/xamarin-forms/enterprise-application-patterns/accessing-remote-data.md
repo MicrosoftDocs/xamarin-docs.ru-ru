@@ -1,8 +1,22 @@
 ---
-Title: "доступ к удаленным данным" Описание: "в этой главе объясняется, как мобильное приложение eShopOnContainers получает доступ к данным из контейнерных микрослужб".
-MS. произв. Xamarin MS. AssetID: 42eba6f5-9784-4e1a-9943-5c1fbeea7452 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/07/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Доступ к удаленным данным
+description: В этой главе объясняется, как мобильное приложение eShopOnContainers получает доступ к данным из контейнерных микрослужб.
+ms.prod: xamarin
+ms.assetid: 42eba6f5-9784-4e1a-9943-5c1fbeea7452
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/07/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: cef3c2369bb4aee81a52ddd27d6ad732d7544dfa
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84573850"
 ---
-
 # <a name="accessing-remote-data"></a>Доступ к удаленным данным
 
 Многие современные веб-решения используют веб-службы, размещенные на веб-серверах, для обеспечения функциональности удаленных клиентских приложений. Предоставляемые веб-службой операции составляют веб-API.

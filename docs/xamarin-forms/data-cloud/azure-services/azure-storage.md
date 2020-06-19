@@ -1,8 +1,22 @@
 ---
-Title: "хранение данных в службе хранилища Azure и доступ к ним из Xamarin.Forms " Description: "Служба хранилища Azure — это решение масштабируемого облачного хранилища, которое можно использовать для хранения неструктурированных и структурированных данных. В этой статье объясняется, как использовать Xamarin.Forms для хранения текстовых и двоичных данных в службе хранилища Azure, а также как получить доступ к данным.
-MS. произв. Xamarin MS. AssetID: 5B10D37B-839B-4CD0-9C65-91014A93F3EB MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/28/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Хранение данных в службе хранилища Azure и доступ к ним изXamarin.Forms
+description: Служба хранилища Azure — это решение масштабируемого облачного хранилища, которое можно использовать для хранения неструктурированных и структурированных данных. В этой статье объясняется, как использовать Xamarin.Forms для хранения текстовых и двоичных данных в службе хранилища Azure, а также как получить доступ к данным.
+ms.prod: xamarin
+ms.assetid: 5B10D37B-839B-4CD0-9C65-91014A93F3EB
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/28/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a69edd3bf014809cc479dcb7cba0e430dcefbe5b
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84564684"
 ---
-
 # <a name="store-and-access-data-in-azure-storage-from-xamarinforms"></a>Хранение данных в службе хранилища Azure и доступ к ним изXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-azurestorage)

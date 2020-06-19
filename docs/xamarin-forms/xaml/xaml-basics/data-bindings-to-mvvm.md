@@ -1,8 +1,23 @@
 ---
-Title: "часть 5. Из привязок данных к MVVM "Description:" шаблон MVVM обеспечивает разделение между тремя уровнями программного обеспечения — пользовательским интерфейсом XAML, называемым представлением. базовые данные, называемые моделью; и посредник между представлением и моделью, называемой ViewModel.
-MS. произв. Xamarin MS. Custom: видео MS. AssetID: 48B37D44-4FB1-41B2-9A5E-6D383B041F81 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 10/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Часть 5. От привязки данных до MVVM
+description: Шаблон MVVM обеспечивает разделение между тремя уровнями программного обеспечения — пользовательским интерфейсом XAML, называемым представлением; базовые данные, называемые моделью; и посредник между представлением и моделью, называемой ViewModel.
+ms.prod: xamarin
+ms.custom: video
+ms.assetid: 48B37D44-4FB1-41B2-9A5E-6D383B041F81
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/25/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 047cf963394325e8f88759ffe9da7dcf2ca3ad12
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84127534"
 ---
-
 # <a name="part-5-from-data-bindings-to-mvvm"></a>Часть 5. От привязки данных до MVVM
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)

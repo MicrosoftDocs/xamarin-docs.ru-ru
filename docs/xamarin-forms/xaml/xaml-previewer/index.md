@@ -1,8 +1,23 @@
 ---
-Title: "предварительный просмотр XAML для Xamarin.Forms " Description: "в этой статье объясняется, как использовать предварительный просмотр XAML для просмотра Xamarin.Forms макетов, отображаемых при вводе. Предварительный просмотр XAML доступен в Visual Studio 2019 и Visual Studio 2019 для Mac. "
-zone_pivot_groups: Platform MS. произв. Xamarin MS. AssetID: 84769ff1-72fd-4c44-8251-dd6d5bf8c7b2 MS. Technology: Xamarin-Forms author: maddyleger1 MS. author: малежер MS. Дата: 03/16/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Предварительный просмотр XAML дляXamarin.Forms
+description: В этой статье объясняется, как использовать предварительный просмотр XAML для просмотра Xamarin.Forms макетов, отображаемых при вводе. Предварительный просмотр XAML доступен в Visual Studio 2019 и Visual Studio 2019 для Mac.
+zone_pivot_groups: platform
+ms.prod: xamarin
+ms.assetid: 84769ff1-72fd-4c44-8251-dd6d5bf8c7b2
+ms.technology: xamarin-forms
+author: maddyleger1
+ms.author: maleger
+ms.date: 03/16/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 6916d5fde688c5b1162f12db0d36bc3ca27156d8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137323"
 ---
-
 # <a name="xaml-previewer-for-xamarinforms"></a>Предварительный просмотр XAML дляXamarin.Forms
 
 _Просмотр Xamarin.Forms макетов при вводе_
@@ -83,7 +98,7 @@ if (!DesignMode.IsDesignModeEnabled)
 
 Это свойство полезно при инициализации библиотеки в конструкторе страницы, которая не запускается во время разработки.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 Если предварительный просмотр не работает, проверьте указанные ниже проблемы и [форумы Xamarin](https://forums.xamarin.com/categories/xamarin-forms).
 

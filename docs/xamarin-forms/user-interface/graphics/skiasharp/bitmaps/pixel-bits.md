@@ -1,8 +1,22 @@
 ---
-Title: "доступ к битам точечного рисунка SkiaSharp" Описание ":" Узнайте о различных методах доступа и изменения пиксельных битов SkiaSharp точечных рисунков ".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: DBB58522-F816-4A8C-96A5-E0236F16A5C6 Автор: давидбритч MS. author: дабритч MS. Дата: 07/11/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Доступ к битовым точкам точечного рисунка SkiaSharp
+description: Узнайте о различных методах доступа и изменения битовых SkiaSharp точечных рисунков.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: DBB58522-F816-4A8C-96A5-E0236F16A5C6
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/11/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9018cbe6e41350b22a0f1f91858017531c75a0ac
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84135585"
 ---
-
 # <a name="accessing-skiasharp-bitmap-pixel-bits"></a>Доступ к битовым точкам точечного рисунка SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

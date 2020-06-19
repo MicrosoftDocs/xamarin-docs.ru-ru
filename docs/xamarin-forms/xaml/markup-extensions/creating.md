@@ -1,8 +1,22 @@
 ---
-Title: "Создание расширений разметки XAML" Description: "в этой статье объясняется, как определить собственные пользовательские Xamarin.Forms расширения разметки XAML. Расширение разметки XAML — это класс, реализующий интерфейс Имаркупекстенсион или Имаркупекстенсион <T> .
-MS. произв. Xamarin MS. AssetID: 797C1EF9-1C8E-4208-8610-9B79CCF17D46 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/05/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Создание расширений разметки XAML
+description: В этой статье объясняется, как определить собственные пользовательские Xamarin.Forms расширения разметки XAML. Расширение разметки XAML — это класс, реализующий интерфейс Имаркупекстенсион или Имаркупекстенсион <T> .
+ms.prod: xamarin
+ms.assetid: 797C1EF9-1C8E-4208-8610-9B79CCF17D46
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/05/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 878ebcaa5249261afac2776a9e7cf47c0c047135
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84130537"
 ---
-
 # <a name="creating-xaml-markup-extensions"></a>Создание расширений разметки XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)

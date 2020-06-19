@@ -1,8 +1,22 @@
 ---
-Title: "компиляция XAML в Xamarin.Forms " Description: "в этой статье объясняется, как при необходимости можно скомпилировать код XAML непосредственно в промежуточный язык (IL) с помощью Xamarin.Forms компилятора XAML (XAMLC).
-MS. произв. Xamarin MS. AssetID: 9A2D10A6-5DFC-485F-A75A-2F7B98314025 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/22/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Компиляция XAML вXamarin.Forms
+description: В этой статье объясняется, как при необходимости можно скомпилировать код XAML непосредственно в промежуточный язык (IL) с помощью Xamarin.Forms компилятора XAML (XAMLC).
+ms.prod: xamarin
+ms.assetid: 9A2D10A6-5DFC-485F-A75A-2F7B98314025
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/22/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: eebbb3040175118320639bcb4482ec77b5c16ac7
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137297"
 ---
-
 # <a name="xaml-compilation-in-xamarinforms"></a>Компиляция XAML вXamarin.Forms
 
 _При необходимости можно воспользоваться компилятором XAML (XAMLC) и скомпилировать XAML напрямую в промежуточный язык (IL)._

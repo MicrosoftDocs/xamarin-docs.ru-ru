@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms CollectionView прокрутка" Description: "когда пользователь прокручивается для инициации прокрутки, конечную точку прокрутки можно контролировать, чтобы элементы были полностью отображены. Кроме того, CollectionView определяет два метода Скроллто, которые программным путем прокрутки элементов в представление. "
-MS. произв. Xamarin MS. AssetID: 2ED719AF-33D2-434D-949A-B70B479C9BA5 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/17/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsПрокрутка CollectionView
+description: Когда пользователь начинает прокручивать, можно управлять конечной позицией прокрутки, чтобы элементы отображались полностью. Кроме того, CollectionView определяет два метода Скроллто, которые программным путем прокрутки элементов на представление.
+ms.prod: xamarin
+ms.assetid: 2ED719AF-33D2-434D-949A-B70B479C9BA5
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/17/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 04d190971fa5ef16e08091600558f7f016bc8605
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84134541"
 ---
-
 # <a name="xamarinforms-collectionview-scrolling"></a>Xamarin.FormsПрокрутка CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)

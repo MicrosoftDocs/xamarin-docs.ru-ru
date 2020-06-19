@@ -1,7 +1,22 @@
 ---
-Title: " Xamarin.Forms часто задаваемые вопросы" MS. Topic: Устранение неполадок MS. произв. Xamarin MS. AssetID: 89364175-53BA-4A09-B3E2-44AC67DD971C MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsЧасто задаваемые вопросы
+ms.topic: troubleshooting
+ms.prod: xamarin
+ms.assetid: 89364175-53BA-4A09-B3E2-44AC67DD971C
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/25/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: edd6cfefe18ff3d5cc97ec58f3bce867f11df7c8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84135880"
 ---
-
 # <a name="xamarinforms-frequently-asked-questions"></a>Xamarin.FormsЧасто задаваемые вопросы
 
 ## <a name="can-i-update-the-xamarinforms-default-template-to-a-newer-nuget-packageupdate-forms-templatemd"></a>[Можно ли обновить Xamarin.Forms шаблон по умолчанию до более нового пакета NuGet?](update-forms-template.md)

@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms описание инициализации и конфигурации карт": " Xamarin.Forms . Для использования функций карт в приложении требуется сопоставить пакет NuGet. Кроме того, для доступа к расположению пользователя требуются разрешения на размещение, предоставленные приложению.
-MS. произв. Xamarin MS. AssetID: 59CD1344-8248-406C-9144-0C8A67141E5B MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/07/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsИнициализация и Настройка карт
+description: Объект Xamarin.Forms . Для использования функций карт в приложении требуется сопоставить пакет NuGet. Кроме того, для доступа к расположению пользователя требуются разрешения на расположение, предоставленные приложению.
+ms.prod: xamarin
+ms.assetid: 59CD1344-8248-406C-9144-0C8A67141E5B
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/07/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 52e2ac5f8075c57f533fcba064223f355e07ba48
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139845"
 ---
-
 # <a name="xamarinforms-map-initialization-and-configuration"></a>Xamarin.FormsИнициализация и Настройка карт
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)

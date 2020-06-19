@@ -1,8 +1,22 @@
 ---
-Title: "универсальные шаблоны в Xamarin.Forms XAML" Description: " Xamarin.Forms XAML обеспечивает поддержку использования универсальных типов CLR, указывая универсальные ограничения в качестве аргументов типа".
-MS. произв. Xamarin MS. AssetID: 97B73048-4F90-41AD-AB48-8EB804C4998B MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/28/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Универсальные шаблоны в Xamarin.Forms XAML
+description: Xamarin.FormsXAML обеспечивает поддержку использования универсальных типов CLR путем указания универсальных ограничений в качестве аргументов типа.
+ms.prod: xamarin
+ms.assetid: 97B73048-4F90-41AD-AB48-8EB804C4998B
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/28/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5a033e5feeefc41b97be29491a70632e767aa1b4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84565204"
 ---
-
 # <a name="generics-in-xamarinforms-xaml"></a>Универсальные шаблоны в Xamarin.Forms XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-generics/)

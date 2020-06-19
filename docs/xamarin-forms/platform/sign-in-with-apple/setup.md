@@ -1,8 +1,22 @@
 ---
-Title: "шаги настройки. вход с Apple для Xamarin.Forms " Description: ". вход с помощью программы установки Apple зависит от платформы, для которой предназначено ваше мобильное приложение."
-MS. произв. Xamarin MS. AssetID: 8F712802-395B-469B-B5BE-C927AD1A8391 MS. Technology: Xamarin-Forms author: давидортинау MS. author: даортин МС. Дата: 09/10/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Шаги настройки. Войдите с помощью Apple дляXamarin.Forms
+description: Вход с помощью программы установки Apple зависит от различных платформ, на которых нацелено ваше мобильное приложение.
+ms.prod: xamarin
+ms.assetid: 8F712802-395B-469B-B5BE-C927AD1A8391
+ms.technology: xamarin-forms
+author: davidortinau
+ms.author: daortin
+ms.date: 09/10/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 95fc2547dd2f17f7aa2b2e8ca4c70915c6542318
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84198033"
 ---
-
 # <a name="setup-sign-in-with-apple-for-xamarinforms"></a>Настройка входа с помощью Apple дляXamarin.Forms
 
 В этом руководстве описывается последовательность действий, необходимых для настройки межплатформенных приложений с целью совершения входа с помощью Apple. Хотя настройка Apple выполняется прямо вперед на портале разработчика Apple, необходимо выполнить дополнительные действия, чтобы создать безопасное отношение между Android и Apple. 
@@ -91,19 +105,11 @@ MS. произв. Xamarin MS. AssetID: 8F712802-395B-469B-B5BE-C927AD1A8391 MS. 
 `.p8`Файл ключа будет скачан.  Этот файл можно открыть в блокноте или VSCode для просмотра текстового содержимого.  Они должны выглядеть примерно так:
 
 ```
----
-title: "Setup Steps - Sign In with Apple for Xamarin.Forms"
-description: Sign In with Apple setup differs depending on the different platforms your mobile application targets.
-ms.prod: xamarin
-ms.assetid: 8F712802-395B-469B-B5BE-C927AD1A8391
-ms.technology: xamarin-forms
-author: davidortinau
-ms.author: daortin
-ms.date: 09/10/2019
-no-loc:
-- "Xamarin.Forms"
-- "Xamarin.Essentials"
-
+-----BEGIN PRIVATE KEY-----
+MIGTAgEAMBMGBasGSM49AgGFCCqGSM49AwEHBHkwdwIBAQQg3MX8n6VnQ2WzgEy0
+Skoz9uOvatLMKTUIPyPCAejzzUCgCgYIKoZIzj0DAQehRANCAARZ0DoM6QPqpJxP
+JKSlWz0AohFhYre10EXPkjrih4jTm+b0AeG2BGuoIWd18i8FimGDgK6IzHHPsEqj
+DHF5Svq0
 -----END PRIVATE KEY-----
 ```
 

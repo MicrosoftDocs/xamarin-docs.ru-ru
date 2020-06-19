@@ -1,8 +1,22 @@
 ---
-Title: "Проверка подлинности пользователей с помощью Azure Cosmos DB базы данных документов и Xamarin.Forms " Описание: "в этой статье объясняется, как объединить контроль доступа с Azure Cosmos DB секционированными коллекциями, чтобы пользователь мог получить доступ к собственным документам в Xamarin.Forms приложении".
-MS. произв. Xamarin MS. AssetID: 11ED4A4C-0F05-40B2-AB06-5A0F2188EF3D MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/16/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Проверка подлинности пользователей с помощью Azure Cosmos DB базы данных документов иXamarin.Forms
+description: В этой статье объясняется, как объединить контроль доступа с Azure Cosmos DB секционированными коллекциями, чтобы пользователь мог получить доступ к собственным документам в Xamarin.Forms приложении.
+ms.prod: xamarin
+ms.assetid: 11ED4A4C-0F05-40B2-AB06-5A0F2188EF3D
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/16/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 7e1fb6342db4c97ea6946db366d356267c8c1b90
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84570561"
 ---
-
 # <a name="authenticate-users-with-an-azure-cosmos-db-document-database-and-xamarinforms"></a>Проверка подлинности пользователей с помощью Azure Cosmos DB базы данных документов иXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdbauth)

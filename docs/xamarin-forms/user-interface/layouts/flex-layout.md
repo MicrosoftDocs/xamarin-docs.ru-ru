@@ -1,8 +1,23 @@
 ---
-Title: " Xamarin.Forms флекслайаут" Описание: "используйте флекслайаут для наложения или упаковки коллекции дочерних представлений".
-MS. произв. Xamarin MS. AssetID: 6A91EA70-268C-462C-AAAF-F8DA011403F8 MS. Technology: Xamarin-Forms MS. Custom: ксаму — автор видео: давидбритч MS. author: дабритч МС. Дата: 05/07/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsФлекслайаут
+description: Используйте Флекслайаут для наложения или упаковки коллекции дочерних представлений.
+ms.prod: xamarin
+ms.assetid: 6A91EA70-268C-462C-AAAF-F8DA011403F8
+ms.technology: xamarin-forms
+ms.custom: xamu-video
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/07/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 518bf97be3dd9d906d574b15434b0bfa67612516
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84570691"
 ---
-
 # <a name="the-xamarinforms-flexlayout"></a>Xamarin.FormsФлекслайаут
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)
@@ -382,7 +397,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 - `Column`
 - `ColumnReverse`(или "Column-Reverse" в XAML)
-- `Row` (стандартный вариант);
+- `Row`, значение по умолчанию;
 - `RowReverse`(или "строка-обратная" в XAML)
 
 В XAML можно указать значение этого свойства, используя имена членов перечисления в нижнем или верхнем регистре, или можно использовать две дополнительные строки, отображаемые в круглых скобках, которые совпадают с индикаторами CSS. (Строки "Column-Reverse" и "Row-Reverse" определены в [`FlexDirectionTypeConverter`](xref:Xamarin.Forms.FlexDirectionTypeConverter) классе, используемом средством синтаксического анализа XAML.)
@@ -397,7 +412,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 [`Wrap`](xref:Xamarin.Forms.FlexLayout.Wrap)Свойство имеет тип [`FlexWrap`](xref:Xamarin.Forms.FlexWrap) , перечисление с тремя элементами:
 
-- `NoWrap` (стандартный вариант);
+- `NoWrap`, значение по умолчанию;
 - `Wrap`
 - `Reverse`(или «обернуть-Reverse» в XAML)
 
@@ -428,7 +443,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 [`AlignItems`](xref:Xamarin.Forms.FlexLayout.AlignItems)Свойство имеет тип [`FlexAlignItems`](xref:Xamarin.Forms.FlexAlignItems) , перечисление с четырьмя элементами:
 
-- `Stretch` (стандартный вариант);
+- `Stretch`, значение по умолчанию;
 - `Center`
 - `Start`(или "Flex-Start" в XAML)
 - `End`(или "Flex-End" в XAML)
@@ -445,7 +460,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 [`AlignContent`](xref:Xamarin.Forms.FlexLayout.AlignContent)Свойство имеет тип [`FlexAlignContent`](xref:Xamarin.Forms.FlexAlignContent) , перечисление с семью членами:
 
-- `Stretch` (стандартный вариант);
+- `Stretch`, значение по умолчанию;
 - `Center`
 - `Start`(или "Flex-Start" в XAML)
 - `End`(или "Flex-End" в XAML)
@@ -471,7 +486,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 [`AlignSelf`](xref:Xamarin.Forms.FlexLayout.AlignSelfProperty)Присоединенное свойство привязки имеет тип [`FlexAlignSelf`](xref:Xamarin.Forms.FlexAlignContent) , перечисление с пятью элементами:
 
-- `Auto` (стандартный вариант);
+- `Auto`, значение по умолчанию;
 - `Stretch`
 - `Center`
 - `Start`(или "Flex-Start" в XAML)

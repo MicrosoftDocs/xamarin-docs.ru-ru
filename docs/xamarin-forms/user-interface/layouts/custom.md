@@ -1,8 +1,22 @@
 ---
-Title: "Создание пользовательского макета в Xamarin.Forms описании:" в этой статье объясняется, как написать пользовательский класс макета и демонстрируется ориентированный на ориентацию класс враплайаут, который упорядочивает дочерние элементы на странице по горизонтали, а затем переносит отображение последующих дочерних элементов в дополнительные строки ".
-MS. произв. Xamarin MS. AssetID: B0CFDB59-14E5-49E9-965A-3DCCEDAC2E31 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/29/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Создание пользовательского макета вXamarin.Forms
+description: В этой статье объясняется, как написать пользовательский класс макета и демонстрируется ориентированный на ориентацию класс Враплайаут, который упорядочивает свои дочерние элементы на странице по горизонтали, а затем переносит отображение последующих дочерних элементов в дополнительные строки.
+ms.prod: xamarin
+ms.assetid: B0CFDB59-14E5-49E9-965A-3DCCEDAC2E31
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/29/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2c1a958bd4cb56096f554acf26756019eeb0693c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84572238"
 ---
-
 # <a name="create-a-custom-layout-in-xamarinforms"></a>Создание пользовательского макета вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
@@ -15,7 +29,7 @@ _Xamarin. Forms определяет пять классов макета — St
 
 Xamarin.FormsЧтобы создать пользовательский макет, необходимо глубокое понимание циклов макета и недействительности. Сейчас будут обсуждаться эти циклы.
 
-## <a name="layout"></a>Layout
+## <a name="layout"></a>Макет
 
 Макет начинается в верхней части визуального дерева со страницей и проходит через все ветви визуального дерева, чтобы охватывать каждый визуальный элемент на странице. Элементы, являющиеся родительскими для других элементов, отвечают за изменение размера и размещение своих потомков относительно самих.
 
@@ -401,6 +415,6 @@ async Task<ImageList> GetImageListAsync()
 - [Враплайаут (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
 - [Пользовательские макеты](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter26.md)
 - [Создание пользовательских макетов в Xamarin.Forms (видео)](https://www.youtube.com/watch?v=sxjOqNZFhKU)
-- [Layout\<T>](xref:Xamarin.Forms.Layout`1)
+- [Макет\<T>](xref:Xamarin.Forms.Layout`1)
 - [Макет](xref:Xamarin.Forms.Layout)
 - [висуалелемент](xref:Xamarin.Forms.VisualElement)

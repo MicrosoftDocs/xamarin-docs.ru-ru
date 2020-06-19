@@ -1,8 +1,22 @@
 ---
-Title: "сохранение точечных рисунков SkiaSharp в файлах" Description: "Изучите различные форматы файлов, поддерживаемые SkiaSharp для сохранения точечных рисунков в библиотеке фотографий пользователя".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 2D696CB6-B31B-42BC-8D3B-11D63B1E7D9C Автор: давидбритч MS. author: дабритч MS. Дата: 07/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Сохранение точечных рисунков SkiaSharp в файлах
+description: Изучите различные форматы файлов, поддерживаемые SkiaSharp для сохранения точечных рисунков в библиотеке фотографий пользователя.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 2D696CB6-B31B-42BC-8D3B-11D63B1E7D9C
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 01f4fcf1953658af44d2a8996913860a3b605abf
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138662"
 ---
-
 # <a name="saving-skiasharp-bitmaps-to-files"></a>Сохранение точечных рисунков SkiaSharp в файлах
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

@@ -1,8 +1,22 @@
 ---
-Title: "Обзор корпоративного приложения" Описание: "в этой главе объясняется, как мобильное приложение eShopOnContainers выполняет навигацию по модели в первую очередь из представления" модели ".
-MS. произв. Xamarin MS. AssetID: 4cad57b5-7fe4-4527-a988-d9b60c9620b4 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 08/07/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Навигация по корпоративному приложению
+description: В этой главе объясняется, как мобильное приложение eShopOnContainers выполняет навигацию по модели в первом режиме из моделей представления.
+ms.prod: xamarin
+ms.assetid: 4cad57b5-7fe4-4527-a988-d9b60c9620b4
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/07/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: ca562120a819d4d9fe09b2ee5891a78f1010b1a5
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84572030"
 ---
-
 # <a name="enterprise-app-navigation"></a>Навигация по корпоративному приложению
 
 Xamarin.Formsвключает поддержку навигации по страницам, что обычно приводит к взаимодействию пользователя с пользовательским ИНТЕРФЕЙСом или из самого приложения в результате внутренних изменений состояния на основе логики. Однако Навигация может быть сложной для реализации в приложениях, использующих шаблон Model-View-ViewModel (MVVM), так как должны выполняться следующие задачи:
@@ -41,7 +55,7 @@ public interface INavigationService
 
 Этот интерфейс указывает, что реализующий класс должен предоставлять следующие методы:
 
-|Метод|Цель|
+|Метод|Назначение|
 |--- |--- |
 |`InitializeAsync`|Выполняет переход на одну из двух страниц при запуске приложения.|
 |`NavigateToAsync`|Выполняет иерархическую навигацию на указанной странице.|

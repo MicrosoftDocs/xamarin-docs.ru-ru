@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms редактор" Description: "в этой статье объясняется, как использовать Xamarin.Forms элемент управления редактора для приема многострочного ввода текста в приложении".
-MS. произв. Xamarin MS. AssetID: 7074DB3A-30D2-4A6B-9A89-B029EEF20B07 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/26/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsРедактор
+description: В этой статье объясняется, как использовать Xamarin.Forms элемент управления редактора для приема многострочного ввода текста в приложении.
+ms.prod: xamarin
+ms.assetid: 7074DB3A-30D2-4A6B-9A89-B029EEF20B07
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/26/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 02749c9f8f55427bb1742e78464bbc003f1f7358
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136179"
 ---
-
 # <a name="xamarinforms-editor"></a>Xamarin.FormsРедактор
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)

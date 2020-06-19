@@ -1,8 +1,22 @@
 ---
-Title: "SkiaSharp шум и составление" Description: "Создайте шейдеры шума Perl и объедините с другими шейдерами".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 90C2D00A-2876-43EA-A836-538C3318CF93 Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: SkiaSharp шум и составление
+description: Создание шейдеров шума в Perl и объединение с другими шейдерами.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 90C2D00A-2876-43EA-A836-538C3318CF93
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/23/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 45ec48c0b7b58e26fa47d7343e96bb49591cb339
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84127768"
 ---
-
 # <a name="skiasharp-noise-and-composing"></a>SkiaSharp шум и составление
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

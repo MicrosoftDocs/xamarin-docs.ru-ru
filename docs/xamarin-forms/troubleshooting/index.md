@@ -1,8 +1,24 @@
 ---
-Title: "Устранение неполадок" Описание: "Общие условия ошибок и способы их устранения" MS. Topic: Устранение неполадок MS. произв. Xamarin MS. AssetID: 63291951-7375-4CBF-BCC3-2E4AD157A2C8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 04/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Устранение неполадок
+description: Распространенные ошибки и способы их устранения
+ms.topic: troubleshooting
+ms.prod: xamarin
+ms.assetid: 63291951-7375-4CBF-BCC3-2E4AD157A2C8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/25/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 237dfd637d5456636afd19ea0175cb388773d273
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84135919"
 ---
-
-# <a name="troubleshooting"></a>Устранение неполадок
+# <a name="troubleshooting"></a>Диагностика
 
 _Распространенные ошибки и способы их устранения_
 

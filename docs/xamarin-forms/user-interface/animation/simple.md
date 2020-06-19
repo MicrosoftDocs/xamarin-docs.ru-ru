@@ -1,8 +1,22 @@
 ---
-Title: "простые анимации в Xamarin.Forms " Description: "класс виевекстенсионс предоставляет методы расширения, которые можно использовать для создания простых анимаций. В этой статье демонстрируется создание и отмена анимации с помощью класса Виевекстенсионс.
-MS. произв. Xamarin MS. AssetID: 4A6FAE5A-848F-4CE0-BFA1-22A6309B5225 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 11/05/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Простые анимации вXamarin.Forms
+description: Класс Виевекстенсионс предоставляет методы расширения, которые можно использовать для создания простых анимаций. В этой статье показано, как создавать и отменять анимацию с помощью класса Виевекстенсионс.
+ms.prod: xamarin
+ms.assetid: 4A6FAE5A-848F-4CE0-BFA1-22A6309B5225
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/05/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 89f0182bfebc4d018eb083904595f0fbb211e3ba
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84573382"
 ---
-
 # <a name="simple-animations-in-xamarinforms"></a>Простые анимации вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-animation-basic)

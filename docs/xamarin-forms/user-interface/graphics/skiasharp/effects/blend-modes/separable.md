@@ -1,8 +1,22 @@
 ---
-Title: "Описание отделяемых Blend Mode" Description: "использование режимов смешения отделяемых для изменения красного, зеленого и синего цветов".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 66D1A537-A247-484E-B5B9-FBCB7838FBE9 Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Режимы смешения отделяемых
+description: Используйте режимы смешения отделяемых для изменения красного, зеленого и синего цветов.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 66D1A537-A247-484E-B5B9-FBCB7838FBE9
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/23/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c1939c30cbefdbf8d6546761a8c6ac7199bfff62
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139689"
 ---
-
 # <a name="the-separable-blend-modes"></a>Режимы смешения отделяемых
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

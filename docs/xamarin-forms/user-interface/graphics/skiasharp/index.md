@@ -1,8 +1,21 @@
 ---
-Title: "SkiaSharp графика в Xamarin.Forms " Description: "SkiaSharp — это двухмерная графическая система для .NET и C# на базе графического подсистемы СКИА с открытым кодом, которая широко используется в продуктах Google. В этом руководство объясняется, как использовать SkiaSharp для двухмерной графики в Xamarin.Forms приложениях. "
-MS. произв. Xamarin MS. AssetID: 2C348BEA-81DF-4794-8857-EB1DFF5E11DB Автор: давидбритч MS. author: дабритч MS. Дата: 09/11/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: SkiaSharp графика вXamarin.Forms
+description: SkiaSharp — это двухмерная графическая система для .NET и C# на базе графического подсистемы СКИА с открытым кодом, которая широко используется в продуктах Google. В этом руководство объясняется, как использовать SkiaSharp для двухмерной графики в Xamarin.Forms приложениях.
+ms.prod: xamarin
+ms.assetid: 2C348BEA-81DF-4794-8857-EB1DFF5E11DB
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/11/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 855bd0d357950b019487b3ea05e379915f54b9d4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84127638"
 ---
-
 # <a name="skiasharp-graphics-in-xamarinforms"></a>SkiaSharp графика вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

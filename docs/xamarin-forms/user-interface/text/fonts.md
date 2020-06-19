@@ -1,8 +1,22 @@
 ---
-Title: "шрифты в Xamarin.Forms " Description: "в этой статье объясняется, как задать сведения о шрифтах для элементов управления, отображающих текст в Xamarin.Forms приложениях".
-MS. произв. Xamarin MS. AssetID: 49DD2249-C575-41AE-AE06-08F890FD6031 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/01/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Шрифты вXamarin.Forms
+description: В этой статье объясняется, как задать сведения о шрифтах для элементов управления, отображающих текст в Xamarin.Forms приложениях.
+ms.prod: xamarin
+ms.assetid: 49DD2249-C575-41AE-AE06-08F890FD6031
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/01/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a657915edb41573f9637128b4c88233d58a5909a
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84572212"
 ---
-
 # <a name="fonts-in-xamarinforms"></a>Шрифты вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithfonts)
@@ -44,8 +58,8 @@ Xamarin.Formsтакже определяет поля в [`NamedSize`](xref:Xama
 
 Для свойства можно задать стили шрифта, такие как **полужирный шрифт** и *курсив* `FontAttributes` . В настоящее время поддерживаются следующие значения:
 
-- **Нет**
-- **Жирный**
+- **None**
+- **Полужирный**
 - **Деле**
 
 `FontAttribute`Перечисление можно использовать следующим образом (можно указать один атрибут или `OR` их совместно):

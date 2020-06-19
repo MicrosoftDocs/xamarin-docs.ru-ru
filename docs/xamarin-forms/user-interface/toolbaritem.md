@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms тулбаритем" Описание: "класс тулбаритем является специальной разновидностью кнопки, используемой на панели навигации приложения".
-MS. произв. Xamarin MS. assetId: CC737D54-0280-46BD-A2BC-A0FB67DDD6A1 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 07/29/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Formsтулбаритем
+description: Класс Тулбаритем является специальной разновидностью кнопки, используемой на панели навигации приложения.
+ms.prod: xamarin
+ms.assetId: CC737D54-0280-46BD-A2BC-A0FB67DDD6A1
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 07/29/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 46aba32ebbae1646b9af00877bba530b619210cd
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138220"
 ---
-
 # <a name="xamarinforms-toolbaritem"></a>Xamarin.Formsтулбаритем
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-toolbaritem/)

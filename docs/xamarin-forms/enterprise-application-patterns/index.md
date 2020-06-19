@@ -1,8 +1,22 @@
 ---
-Title: "шаблоны корпоративных приложений с использованием Xamarin.Forms электронной книги" Описание: "Эта электронная книга предоставляет рекомендации по архитектуре для разработки адаптируемых, обслуживаемых и тестируемых Xamarin.Forms корпоративных приложений."
-MS. произв. Xamarin MS. AssetID: 28cfed6c-6175-4223-a8cc-798d40bf0832 MS. Technology: автор Xamarin-Forms: давидбритч MS. author: дабритч MS. Дата: 08/07/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Электронная книга "Шаблоны корпоративного приложения с использованием Xamarin.Forms"
+description: Эта электронная книга предоставляет рекомендации по архитектуре для разработки адаптируемых, обслуживаемых и тестируемых Xamarin.Forms корпоративных приложений.
+ms.prod: xamarin
+ms.assetid: 28cfed6c-6175-4223-a8cc-798d40bf0832
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/07/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: cc0f98d94c76ff63e7a002dfb92b51eae153d7b4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139403"
 ---
-
 # <a name="enterprise-application-patterns-using-xamarinforms-ebook"></a>Электронная книга "Шаблоны корпоративного приложения с использованием Xamarin.Forms"
 
 _Руководство по архитектуре для разработки адаптируемых, обслуживаемых и тестируемых Xamarin.Forms корпоративных приложений_

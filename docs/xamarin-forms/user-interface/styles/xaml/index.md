@@ -1,8 +1,22 @@
 ---
-Title: "стилизация Xamarin.Forms приложений с использованием стилей XAML" Описание: "в этом руководство объясняется, как настроить внешний вид Xamarin.Forms приложения с помощью стилей XAML".
-MS. произв. Xamarin MS. AssetID: 344A34AA-B19A-4765-BC8A-875D9A6B5EA8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 01/30/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Задание стиля приложений Xamarin.Forms с помощью стилей XAML
+description: В этом руководство объясняется, как настроить внешний вид Xamarin.Forms приложения с помощью стилей XAML.
+ms.prod: xamarin
+ms.assetid: 344A34AA-B19A-4765-BC8A-875D9A6B5EA8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/30/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 72effe15d3456b5a48cbf5d09e889600134ac686
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84903094"
 ---
-
 # <a name="styling-xamarinforms-apps-using-xaml-styles"></a>Задание стиля приложений Xamarin.Forms с помощью стилей XAML
 
 ## <a name="introduction"></a>[Введение](introduction.md)

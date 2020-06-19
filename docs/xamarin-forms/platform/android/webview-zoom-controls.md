@@ -1,8 +1,22 @@
 ---
-Title: «WebView Zoom on Android» Description: "особенности платформы позволяют использовать функции, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Android, которая позволяет увеличить масштаб WebView.
-MS. произв. Xamarin MS. AssetID: DC1A3762-6A42-4298-929C-445F416C3E60 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/09/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: WebView Zoom в Android
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Android, которая позволяет увеличить масштаб WebView.
+ms.prod: xamarin
+ms.assetid: DC1A3762-6A42-4298-929C-445F416C3E60
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/09/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9264bdf4ab5644b1cdfa0c37f1c7cacd3ae4ed0a
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128340"
 ---
-
 # <a name="webview-zoom-on-android"></a>WebView Zoom в Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

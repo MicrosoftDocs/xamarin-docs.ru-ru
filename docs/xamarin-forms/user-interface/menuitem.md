@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms элемент MenuItem" Description: "Класс MenuItem используется для создания пунктов меню, таких как контекстные меню элементов ListView и всплывающие меню приложения оболочки."
-MS. произв. Xamarin MS. assetId: 62655C21-6053-466D-A7F4-DE2BE36538F5 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 08/01/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsMenuItem
+description: Класс MenuItem используется для создания пунктов меню для меню, таких как контекстные меню элементов ListView и всплывающих меню приложения оболочки.
+ms.prod: xamarin
+ms.assetId: 62655C21-6053-466D-A7F4-DE2BE36538F5
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 08/01/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: de8c6bff2c9dc72821692708f5852cd874c31ede
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139208"
 ---
-
 # <a name="xamarinforms-menuitem"></a>Xamarin.FormsMenuItem
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-menuitemdemos/)

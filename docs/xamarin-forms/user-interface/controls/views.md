@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms views" Description: " Xamarin.Forms представления — это стандартные блоки кросс-платформенных мобильных пользовательских интерфейсов. В этой статье перечислены представления, входящие в Xamarin.Forms .
-MS. произв. Xamarin MS. AssetID: AC070686-A423-4A98-8BB6-0B9F94C062CC MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/16/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsПредставления
+description: Xamarin.Formsпредставления — это стандартные блоки кросс-платформенных мобильных пользовательских интерфейсов. В этой статье перечислены представления, входящие в Xamarin.Forms .
+ms.prod: xamarin
+ms.assetid: AC070686-A423-4A98-8BB6-0B9F94C062CC
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/16/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8c15626e405645d28a785c32d276860f9751ea25
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84132383"
 ---
-
 # <a name="xamarinforms-views"></a>Xamarin.FormsПредставления
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/)
@@ -34,7 +48,7 @@ _Представления Xamarin. Forms — это стандартные б�
 | [`Label`](xref:Xamarin.Forms.Label)Отображает однострочные текстовые строки или многострочные блоки текста с постоянным форматированием или переменной. Присвойте [`Text`](xref:Xamarin.Forms.Label.Text) свойству значение String для постоянного форматирования или задайте [`FormattedText`](xref:Xamarin.Forms.Label.FormattedText) для свойства [`FormattedString`](xref:Xamarin.Forms.FormattedString) объект для форматирования переменных.<br /><br />[Документация по API](xref:Xamarin.Forms.Label)  /  [Руководством](~/xamarin-forms/user-interface/text/label.md)  /  [Пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text) | [![Пример метки](views-images/Label.png "Пример метки")](views-images/Label-Large.png#lightbox "Пример метки")<br /> [Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/LabelDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/LabelDemoPage.xaml) |
 |     |     |
 
-### <a name="image"></a>Изображение
+### <a name="image"></a>Образ —
 
 |     |     |
 | --- | --- |

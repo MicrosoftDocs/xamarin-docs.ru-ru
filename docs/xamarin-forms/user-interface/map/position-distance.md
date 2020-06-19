@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms расположение и расстояние на карте" Описание: " Xamarin.Forms . Пространство имен Maps содержит структуру расположения, которая обычно используется при размещении карты и ее ПИН-кодов, а также структуры расстояния, которая при необходимости может использоваться при размещении карты. "
-MS. произв. Xamarin MS. AssetID: 2F4EA3D2-1351-40AD-A71D-CF7F1F18F1E8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 03/10/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsРасположение и расстояние на карте
+description: Объект Xamarin.Forms . Пространство имен Maps содержит структуру расположения, которая обычно используется при размещении карты и ее ПИН-кодов, а также структуры расстояния, которая при необходимости может использоваться при размещении карты.
+ms.prod: xamarin
+ms.assetid: 2F4EA3D2-1351-40AD-A71D-CF7F1F18F1E8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/10/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2b1613789029d59e46a6d0431bfa9da1a53082e8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138402"
 ---
-
 # <a name="xamarinforms-map-position-and-distance"></a>Xamarin.FormsРасположение и расстояние на карте
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)

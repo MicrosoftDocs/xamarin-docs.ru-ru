@@ -1,8 +1,22 @@
 ---
-Title: "Проверка подлинности веб-службы RESTFUL" Description: "Обычная проверка подлинности предоставляет доступ к ресурсам только тем клиентам, которые имеют правильные учетные данные. В этой статье объясняется, как использовать обычную проверку подлинности для защиты доступа к ресурсам веб-службы RESTFUL. "
-MS. произв. Xamarin MS. AssetID: 7B5FFDC4-F2AA-4B12-A30A-1DACC7FECBF1 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 01/22/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Проверка подлинности веб-службы RESTFUL
+description: Обычная проверка подлинности предоставляет доступ к ресурсам только тем клиентам, которые имеют правильные учетные данные. В этой статье объясняется, как использовать обычную проверку подлинности для защиты доступа к ресурсам веб-службы RESTFUL.
+ms.prod: xamarin
+ms.assetid: 7B5FFDC4-F2AA-4B12-A30A-1DACC7FECBF1
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/22/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: d62e533d127294c77c0779c20fd9c78ef2231200
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84135724"
 ---
-
 # <a name="authenticate-a-restful-web-service"></a>Проверка подлинности веб-службы RESTFUL
 
 _Протокол HTTP поддерживает использование нескольких механизмов проверки подлинности для управления доступом к ресурсам. Обычная проверка подлинности предоставляет доступ к ресурсам только тем клиентам, которые имеют правильные учетные данные. В этой статье показано, как использовать обычную проверку подлинности для защиты доступа к ресурсам веб-службы RESTFUL._

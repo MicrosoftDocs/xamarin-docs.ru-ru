@@ -1,8 +1,22 @@
 ---
-Title: "события жизненного цикла страницы в Android" Description: "особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Android, которая отключает отображение и отображение событий страницы при приостановке и возобновлении работы приложения соответственно. "
-MS. произв. Xamarin MS. AssetID: F6E3759C-D347-407A-91A2-CF9B3B7D4CBD MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 07/10/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: События жизненного цикла страницы в Android
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу Android, которая отключает отображение и отображение событий страницы для приостановки и возобновления работы приложения соответственно.
+ms.prod: xamarin
+ms.assetid: F6E3759C-D347-407A-91A2-CF9B3B7D4CBD
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/10/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 76724ff17613fcebe35cb68518a1c932eee8aad7
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84128730"
 ---
-
 # <a name="page-lifecycle-events-on-android"></a>События жизненного цикла страницы в Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

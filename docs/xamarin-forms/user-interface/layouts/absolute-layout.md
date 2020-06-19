@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms абсолутелайаут" Описание: "в этой статье объясняется, как использовать Xamarin.Forms класс абсолутелайаут для создания интерфейсов пользователя с неполными пикселями. Этот класс размещает и изменяет размеры дочерних элементов пропорционально его размеру и положению или абсолютным значениям. "
-MS. произв. Xamarin MS. AssetID: 01A5CCE0-AD45-4806-84FD-72C007005B38 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 11/25/2015 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Formsабсолутелайаут
+description: В этой статье объясняется, как использовать Xamarin.Forms класс абсолутелайаут для создания интерфейсов пользователя с неполными пикселями. Этот класс размещает и изменяет размеры дочерних элементов пропорционально его размеру и положению или абсолютным значениям.
+ms.prod: xamarin
+ms.assetid: 01A5CCE0-AD45-4806-84FD-72C007005B38
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/25/2015
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 110b01d6482fbe3e23a772c90194b6bf40d54877
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84570535"
 ---
-
 # <a name="xamarinforms-absolutelayout"></a>Xamarin.Formsабсолутелайаут
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
@@ -20,7 +34,7 @@ MS. произв. Xamarin MS. AssetID: 01A5CCE0-AD45-4806-84FD-72C007005B38 MS. 
   - **[Пропорциональные значения](#proportional-values)** &ndash; Узнайте, как работают пропорциональные значения.
     - **[Абсолютные значения](#absolute-values)** &ndash; Узнайте, как работают абсолютные значения.
 
-## <a name="purpose"></a>Цель
+## <a name="purpose"></a>Назначение
 
 Из-за модели позиционирования `AbsoluteLayout` макета макет позволяет относительно легко позиционировать элементы, чтобы они были сброшены с любой стороны макета или центрированы. С пропорциональными размерами и позициями элементы в `AbsoluteLayout` могут автоматически масштабироваться до любого размера представления. Для элементов, где только позиция, но не размер, должны масштабироваться, абсолютные и пропорциональные значения могут быть смешанными.
 

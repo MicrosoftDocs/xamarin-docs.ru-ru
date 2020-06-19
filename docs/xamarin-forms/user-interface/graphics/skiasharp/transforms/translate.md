@@ -1,8 +1,22 @@
 ---
-Title: "преобразование преобразования" Описание: "в этой статье рассматривается использование преобразования" преобразование "для сдвига SkiaSharp графики в Xamarin.Forms приложениях и демонстрируется пример кода".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: BD28ADA1-49F9-44E2-A548-46024A29882F Автор: давидбритч MS. author: дабритч MS. Дата: 03/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Преобразование переноса
+description: В этой статье рассматривается использование преобразования «Преобразование» для сдвига SkiaSharp графики в Xamarin.Forms приложениях и демонстрируется пример кода.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: BD28ADA1-49F9-44E2-A548-46024A29882F
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/10/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0eb3b4a6b37d59363984c9248cc39de91a6819e0
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138259"
 ---
-
 # <a name="the-translate-transform"></a>Преобразование переноса
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

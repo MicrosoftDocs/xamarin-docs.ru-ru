@@ -1,8 +1,22 @@
 ---
-Title: "SkiaSharp шейдеры" Description: "использование шейдеров для создания градиентов, растровых плиток и шума в Perl".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 272B1BEB-0CBC-4E81-A3B9-A9C69AEE3722 Автор: давидбритч MS. author: дабритч MS. Дата: 08/23/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Шейдеры SkiaSharp
+description: Используйте шейдеры для создания градиентов, растровых элементов и шума в Perl.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 272B1BEB-0CBC-4E81-A3B9-A9C69AEE3722
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/23/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8f4ef3a583a7f9078f62c899d3b2abfc0848cc79
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84135438"
 ---
-
 # <a name="skiasharp-shaders"></a>Шейдеры SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

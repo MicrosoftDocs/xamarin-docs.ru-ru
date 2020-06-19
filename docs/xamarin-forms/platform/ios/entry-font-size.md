@@ -1,8 +1,22 @@
 ---
-Title: "размер шрифта записи для iOS" Описание: "особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS, которая масштабирует размер шрифта записи.
-MS. произв. Xamarin MS. AssetID: E8881D4E-902B-4397-A43E-916B2885EC87 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 10/24/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Размер шрифта записи в iOS
+description: Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффектов. В этой статье объясняется, как использовать конкретную платформу iOS для масштабирования размера шрифта записи.
+ms.prod: xamarin
+ms.assetid: E8881D4E-902B-4397-A43E-916B2885EC87
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/24/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 57498811d8789d8ef9ef775f8f39f141b77659c8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84138532"
 ---
-
 # <a name="entry-font-size-on-ios"></a>Размер шрифта записи в iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)

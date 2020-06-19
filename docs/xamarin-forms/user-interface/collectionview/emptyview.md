@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms CollectionView емптивиев" Description: "в CollectionView можно указать пустое представление, которое предоставляет пользователю отзыв о том, что данные недоступны для отображения. Пустое представление может быть строкой, представлением или несколькими представлениями. "
-MS. произв. Xamarin MS. AssetID: 6CEBCFE6-5577-4F68-9709-431062609153 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/06/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsCollectionView Емптивиев
+description: В CollectionView можно указать пустое представление, которое предоставляет пользователю отзыв о том, что данные недоступны для отображения. Пустое представление может быть строкой, представлением или несколькими представлениями.
+ms.prod: xamarin
+ms.assetid: 6CEBCFE6-5577-4F68-9709-431062609153
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/06/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: d35e39e55d66452e47c7a3e3faf86a7a7d6adaca
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136499"
 ---
-
 # <a name="xamarinforms-collectionview-emptyview"></a>Xamarin.FormsCollectionView Емптивиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)

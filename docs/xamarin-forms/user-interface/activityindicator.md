@@ -1,8 +1,22 @@
 ---
-Title: "индикатор действия в Xamarin.Forms описании:" элемент управления активитиндикатор указывает пользователям, что приложение вовлечено в длительное действие без указания хода выполнения. В этой статье объясняется, как использовать Активитиндикатор в XAML и Code. "
-MS. произв. Xamarin MS. AssetID: 4CEED02D-5CA3-4C3A-B7ED-3193FC272261 MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 07/10/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Индикатор активности вXamarin.Forms
+description: Элемент управления Активитиндикатор указывает пользователям, что приложение вовлечено в длительное действие без указания хода выполнения. В этой статье объясняется, как использовать Активитиндикатор в XAML и коде.
+ms.prod: xamarin
+ms.assetid: 4CEED02D-5CA3-4C3A-B7ED-3193FC272261
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 07/10/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a83885175a44f2174db343abf4591f8777041d39
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136517"
 ---
-
 # <a name="xamarinforms-activityindicator"></a>Xamarin.Formsактивитиндикатор
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-activityindicatordemos/)
 

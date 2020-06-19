@@ -1,8 +1,22 @@
 ---
-Title: часть 2. Важный синтаксис XAML "Описание:" в этой статье объясняются основные возможности синтаксиса XAML элементов свойств и вложенных свойств ".
-MS. произв. Xamarin MS. AssetID: 4022F1DC-3802-4635-A553-688ABD3F0D5A MS. Technology: автор Xamarin-Forms: давидбритч MS. author: дабритч MS. Дата: 10/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Часть 2. Основной синтаксис XAML
+description: В этой статье объясняются основные возможности синтаксиса XAML для элементов свойств и вложенных свойств.
+ms.prod: xamarin
+ms.assetid: 4022F1DC-3802-4635-A553-688ABD3F0D5A
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/25/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c400bb342568a0399e2a582496f85ead273b6994
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84572186"
 ---
-
 # <a name="part-2-essential-xaml-syntax"></a>Часть 2. Основной синтаксис XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)

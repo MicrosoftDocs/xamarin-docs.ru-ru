@@ -1,9 +1,23 @@
 ---
-Title: "краткие модули Xamarin.Forms подготовки отчетов" Описание: "в этой статье описываются быстрые модули подготовки отчетов, которые уменьшают затраты на инфляцию и отрисовку Xamarin.Forms элемента управления в Android путем преобразования итоговой иерархии собственных элементов управления".
-MS. произв. Xamarin MS. AssetID: 097f87f2-d891-4f3c-be02-fb7d195a481a MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/28/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsБыстрые модули подготовки отчетов
+description: В этой статье представлены быстрые модули подготовки отчетов, которые уменьшают затраты на инфляцию и отрисовку Xamarin.Forms элемента управления в Android путем преобразования итоговой иерархии собственных элементов управления.
+ms.prod: xamarin
+ms.assetid: 097f87f2-d891-4f3c-be02-fb7d195a481a
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/28/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 29f79e4aed0314fe1590fa26c8e4b052e14a94d6
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84198067"
 ---
-
-# <a name="xamarinforms-fast-renderers"></a>Быстрые отрисовщики Xamarin.Forms
+# <a name="xamarinforms-fast-renderers"></a>Xamarin.FormsБыстрые модули подготовки отчетов
 
 Обычно большинство исходных модулей подготовки элементов управления в Android состоят из двух представлений:
 

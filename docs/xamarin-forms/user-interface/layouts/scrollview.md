@@ -1,8 +1,22 @@
 ---
-Title: « Xamarin.Forms скроллвиев» Description: « Xamarin.Forms скроллвиев — это макет, который способен прокручивать его содержимое».
-MS. произв. Xamarin MS. AssetID: 7B542872-B3D1-49B3-B15E-0E98F53C1F6E MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 05/27/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Formsскроллвиев
+description: Xamarin.FormsСкроллвиев — это макет, который способен прокручивать его содержимое.
+ms.prod: xamarin
+ms.assetid: 7B542872-B3D1-49B3-B15E-0E98F53C1F6E
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/27/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f527acabe3b051cbfd6450ba6f5328449b1a728c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84199197"
 ---
-
 # <a name="xamarinforms-scrollview"></a>Xamarin.Formsскроллвиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-scrollviewdemos)

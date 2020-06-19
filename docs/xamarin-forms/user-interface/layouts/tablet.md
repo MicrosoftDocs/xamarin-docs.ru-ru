@@ -1,8 +1,22 @@
 ---
-Title: "макет для планшетных и классических приложений" Описание: "в этой статье объясняется, как оптимизировать Xamarin.Forms макеты приложений для планшетов, а не для телефонов".
-MS. произв. Xamarin MS. AssetID: D62F472B-4345-4983-8403-659A538B591F MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/01/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Макет для планшетных и настольных приложений
+description: В этой статье объясняется, как оптимизировать Xamarin.Forms макеты приложений для планшетов, а не для телефонов.
+ms.prod: xamarin
+ms.assetid: D62F472B-4345-4983-8403-659A538B591F
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/01/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 0ecbc850960465296dc4047277bdafe78ac800a4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84573252"
 ---
-
 # <a name="layout-for-tablet-and-desktop-apps"></a>Макет для планшетных и настольных приложений
 
 Xamarin.Formsподдерживает все типы устройств, доступные на поддерживаемых платформах, поэтому в дополнение к телефонам приложения также могут работать в:

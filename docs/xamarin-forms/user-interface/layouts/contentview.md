@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms ContentView" Description: "в этой статье объясняется, как использовать класс ContentView для создания пользовательского элемента управления, например кардвиев".
-MS. произв. Xamarin MS. AssetID: 638402E7-CA44-456B-863B-791F6B6B561D MS. Technology: Xamarin-Forms author: профексоржеек MS. author: жусжохнс МС. Дата: 08/14/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.Forms ContentView
+description: В этой статье объясняется, как использовать класс ContentView для создания пользовательского элемента управления, такого как пример Кардвиев.
+ms.prod: xamarin
+ms.assetid: 638402E7-CA44-456B-863B-791F6B6B561D
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 08/14/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 46d2abf895ffe31bd1dc1c22caf36440c54b331c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84130121"
 ---
-
 # <a name="xamarinforms-contentview"></a>Xamarin.Forms ContentView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)

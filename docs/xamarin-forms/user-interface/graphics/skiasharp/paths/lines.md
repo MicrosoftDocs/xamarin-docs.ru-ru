@@ -1,8 +1,22 @@
 ---
-Title: "Line and Stroke Cap" Description: "в этой статье объясняется, как использовать SkiaSharp для рисования линий с различными наконечниками штриха в Xamarin.Forms приложениях и демонстрируется в примере кода".
-MS. произв. Xamarin MS. AssetID: 1F854DDD-5D1B-4DE4-BD2D-584439429FDB MS. Technology: Xamarin-skiasharp Автор: давидбритч MS. author: дабритч МС. Дата: 03/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Линии и концы штрихов
+description: В этой статье объясняется, как использовать SkiaSharp для рисования линий с различными наконечниками штриха в Xamarin.Forms приложениях и демонстрируется в примере кода.
+ms.prod: xamarin
+ms.assetid: 1F854DDD-5D1B-4DE4-BD2D-584439429FDB
+ms.technology: xamarin-skiasharp
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/10/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 87b97ad913e08c42d16bbf055f168c07b9bd60e8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137212"
 ---
-
 # <a name="lines-and-stroke-caps"></a>Линии и концы штрихов
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

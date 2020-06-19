@@ -1,8 +1,22 @@
 ---
-Title: "Передача аргументов в XAML" Description: "в этой статье демонстрируется использование атрибутов XAML, которые можно использовать для передачи аргументов в конструкторы, отличные от по умолчанию, для вызова методов фабрики и для указания типа универсального аргумента".
-MS. произв. Xamarin MS. AssetID: 8F3B267F-499E-4D79-9193-FCA99F199519 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/25/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Передача аргументов в XAML
+description: В этой статье показано использование атрибутов XAML, которые можно использовать для передачи аргументов в конструкторы, отличные от по умолчанию, для вызова методов фабрики и для указания типа универсального аргумента.
+ms.prod: xamarin
+ms.assetid: 8F3B267F-499E-4D79-9193-FCA99F199519
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/25/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 84d8901b7f8dee8ffd6c3ba22d30c76b456555f0
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84571510"
 ---
-
 # <a name="passing-arguments-in-xaml"></a>Передача аргументов в XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-passingconstructorarguments)

@@ -1,8 +1,22 @@
 ---
-Title: "Параметры макета в Xamarin.Forms " Description: "каждое Xamarin.Forms представление имеет свойства Хоризонталоптионс и Вертикалоптионс типа LayoutOptions. В этой статье объясняется, как каждое значение LayoutOptions имеет выравнивание и расширение представления.
-MS. произв. Xamarin MS. AssetID: 7CAB5631-5153-4DEF-8AD7-C6011CE44307 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Параметры макета вXamarin.Forms
+description: Каждое Xamarin.Forms представление имеет свойства хоризонталоптионс и вертикалоптионс типа LayoutOptions. В этой статье объясняется, как каждое значение LayoutOptions имеет выравнивание и расширение представления.
+ms.prod: xamarin
+ms.assetid: 7CAB5631-5153-4DEF-8AD7-C6011CE44307
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/10/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 6fa03cf5c18e21ce5ca9e7ea907f50c8de6f3e6c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84573265"
 ---
-
 # <a name="layout-options-in-xamarinforms"></a>Параметры макета вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layoutoptions)
