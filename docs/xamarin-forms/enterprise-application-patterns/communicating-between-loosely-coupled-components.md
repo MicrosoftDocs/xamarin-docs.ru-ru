@@ -1,7 +1,22 @@
 ---
-Title: "взаимодействие между слабо связанными компонентами" Описание: "в этой главе объясняется, как мобильное приложение eShopOnContainers реализует шаблон публикации и подписки, что позволяет осуществлять связь на основе сообщений между компонентами, которые неудобно связывать по объектам и ссылкам на типы" MS. произв: Xamarin MS. AssetID: 1194af33-8a91-48d2-88b5-b84d77f2ce69 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Date: 08/07/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Взаимодействие между слабо связанными компонентами
+description: 'В этой главе объясняется, как мобильное приложение eShopOnContainers реализует шаблон публикации и подписки, что позволяет осуществлять взаимодействие на основе сообщений между компонентами, которые неудобно связывать с ссылками на объекты и типы. '
+ms.prod: xamarin
+ms.assetid: 1194af33-8a91-48d2-88b5-b84d77f2ce69
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 08/07/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c35cd6e30e7843cda0431581025aa7440a21cc29
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84140053"
 ---
-
 # <a name="communicating-between-loosely-coupled-components"></a>Взаимодействие между слабо связанными компонентами
 
 Шаблон "публикация-подписка" — это шаблон обмена сообщениями, в котором издатели отправляют сообщение без знания о получателях, известных как подписчики. Аналогичным образом подписчики прослушивают определенные сообщения, не зная издателей.

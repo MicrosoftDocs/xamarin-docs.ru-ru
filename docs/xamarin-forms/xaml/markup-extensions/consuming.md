@@ -1,8 +1,22 @@
 ---
-Title: "использование расширений разметки XAML" Description: "в этой статье объясняется, как использовать Xamarin.Forms расширения разметки XAML для повышения степени и гибкости XAML, разрешая установку атрибутов элементов из различных источников".
-MS. произв. Xamarin MS. AssetID: CE686893-609C-4EC3-9225-6C68D2A9F79C MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 04/21/2020 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Использование расширений разметки XAML
+description: В этой статье объясняется, как использовать Xamarin.Forms расширения разметки XAML для расширения возможностей и гибкости XAML, разрешая установку атрибутов элементов из различных источников.
+ms.prod: xamarin
+ms.assetid: CE686893-609C-4EC3-9225-6C68D2A9F79C
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/17/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e1429c3f39e37dc552d7f6ca8767058e5aec853b
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84903117"
 ---
-
 # <a name="consuming-xaml-markup-extensions"></a>Использование расширений разметки XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
@@ -18,7 +32,7 @@ MS. произв. Xamarin MS. AssetID: CE686893-609C-4EC3-9225-6C68D2A9F79C MS. 
 - [`OnIdiom`](#onidiom-markup-extension)— Настройка внешнего вида пользовательского интерфейса на основе идиомы устройства, на котором работает приложение.
 - [`DataTemplate`](#datatemplate-markup-extension)— Преобразует тип в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) .
 - [`FontImage`](#fontimage-markup-extension)— отображать значок шрифта в любом представлении, которое может отображать `ImageSource` .
-- [`OnAppTheme`](#onapptheme-markup-extension)— использование ресурса на основе текущей системной темы.
+- [`AppThemeBinding`](#appthemebinding-markup-extension)— использование ресурса на основе текущей системной темы.
 
 Дополнительные расширения разметки XAML исторически поддерживаются другими реализациями XAML, а также поддерживаются Xamarin.Forms . Они описаны более полно в других статьях:
 
@@ -566,60 +580,55 @@ public partial class TypeDemoPage : ContentPage
 
 Сведения о отображении значков шрифтов путем указания данных значка шрифта в `FontImageSource` объекте см. в разделе [Отображение значков шрифтов](~/xamarin-forms/user-interface/text/fonts.md#display-font-icons).
 
-## <a name="onapptheme-markup-extension"></a>Расширение разметки OnAppTheme
+## <a name="appthemebinding-markup-extension"></a>Расширение разметки Аппсемебиндинг
 
-`OnAppTheme`Расширение разметки позволяет указать ресурс, который будет использоваться, например изображение или цвет, на основе текущей системной темы. Он предоставляет те же функциональные возможности, что и `OnAppTheme<T>` класс, но с более кратким представлением.
+`AppThemeBinding`Расширение разметки позволяет указать ресурс, который будет использоваться, например изображение или цвет, на основе текущей системной темы.
 
 > [!IMPORTANT]
-> `OnAppTheme`Расширение разметки имеет минимальные требования к операционной системе. Дополнительные сведения см. [в разделе реагирование на изменения системных тем в Xamarin.Forms приложениях](~/xamarin-forms/user-interface/theming/system-theme-changes.md).
+> `AppThemeBinding`Расширение разметки имеет минимальные требования к операционной системе. Дополнительные сведения см. [в разделе реагирование на изменения системных тем в Xamarin.Forms приложениях](~/xamarin-forms/user-interface/theming/system-theme-changes.md).
 
-Расширение разметки `OnAppTheme` поддерживается классом `OnAppThemeExtension`, определяющим следующие свойства:
+Расширение разметки `AppThemeBinding` поддерживается классом `AppThemeBindingExtension`, определяющим следующие свойства:
 
 - `Default`, тип, заданный `object` для ресурса, который будет использоваться по умолчанию.
 - `Light`, тип, заданный `object` для ресурса, который будет использоваться, когда устройство использует светло-тему.
 - `Dark`, тип, заданный `object` для ресурса, который будет использоваться, когда устройство использует его темную тему.
 - `Value`Тип `object` , который возвращает ресурс, который в настоящее время используется расширением разметки.
-- `Converter`типа `IValueConverter` , для которого можно задать `IValueConverter` реализацию.
-- `ConverterParameter`типа `object` , для которого можно задать значение, передаваемое в `IValueConverter` реализацию.
 
 > [!NOTE]
-> Средство синтаксического анализа XAML позволяет сократить класс `OnAppThemeExtension` как `OnAppTheme`.
+> Средство синтаксического анализа XAML позволяет сократить класс `AppThemeBindingExtension` как `AppBindingTheme`.
 
-`Default`Свойство является свойством Content объекта `OnAppThemeExtension` . Поэтому для выражений разметки XAML, выраженных с фигурными скобками, можно исключить `Default=` часть выражения, если она является первым аргументом.
+`Default`Свойство является свойством Content объекта `AppThemeBindingExtension` . Поэтому для выражений разметки XAML, выраженных с фигурными скобками, можно исключить `Default=` часть выражения, если она является первым аргументом.
 
-На **демонстрационной странице онаппсеме** показано, как использовать `OnAppTheme` расширение разметки:
+На **демонстрационной странице аппсемебиндинг** показано, как использовать `AppThemeBinding` расширение разметки:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MarkupExtensions.OnAppThemeDemoPage"
-             Title="OnAppTheme Demo">
+             x:Class="MarkupExtensions.AppThemeBindingDemoPage"
+             Title="AppThemeBinding Demo">
     <ContentPage.Resources>
 
         <Style x:Key="labelStyle"
                TargetType="Label">
             <Setter Property="TextColor"
-                    Value="{OnAppTheme Black, Light=Blue, Dark=Teal}" />
+                    Value="{AppThemeBinding Black, Light=Blue, Dark=Teal}" />
         </Style>
 
     </ContentPage.Resources>
     <StackLayout Margin="20">
         <Label Text="This text is green in light mode, and red in dark mode."
-               TextColor="{OnAppTheme Light=Green, Dark=Red}" />
+               TextColor="{AppThemeBinding Light=Green, Dark=Red}" />
         <Label Text="This text is black by default, blue in light mode, and teal in dark mode."
-               Style="{DynamicResource labelStyle}" />
+               Style="{StaticResource labelStyle}" />
     </StackLayout>
 </ContentPage>
 ```
 
 В этом примере цвет текста первого объекта задается [`Label`](xref:Xamarin.Forms.Label) зеленым цветом, когда устройство использует его светлую тему, и задается красным, если устройство использует его темную тему. Во втором `Label` [`TextColor`](xref:Xamarin.Forms.Label.TextColor) свойство задается с помощью [`Style`](xref:Xamarin.Forms.Style) . При этом `Style` Цвет текста `Label` для черного по умолчанию устанавливается синим цветом, если устройство использует светло-тему, и синего цвета, когда устройство использует его темную тему.
 
-> [!NOTE]
-> Объект [`Style`](xref:Xamarin.Forms.Style) , который использует `OnAppTheme` расширение разметки, должен применяться к элементу управления с `DynamicResource` расширением разметки, чтобы пользовательский интерфейс приложения обновлялся при изменении темы системы.
-
 Вот работающая программа:
 
-![Демонстрация Онаппсеме](consuming-images/onappthemedemo.png "Демонстрация Онаппсеме")
+![Демонстрация Аппсемебиндинг](consuming-images/appthemebindingdemo.png "Демонстрация Аппсемебиндинг")
 
 ## <a name="define-markup-extensions"></a>Определение расширений разметки
 

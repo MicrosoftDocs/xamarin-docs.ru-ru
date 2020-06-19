@@ -1,8 +1,22 @@
 ---
-Title: "трехмерные вращения в SkiaSharp" Описание: "в этой статье объясняется, как использовать неаффинное преобразования для вращения двумерных объектов в трехмерном пространстве и демонстрируется в примере кода".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: B5894EA0-C415-41F9-93A4-BBF6EC72AFB9 Автор: давидбритч MS. author: дабритч MS. Дата: 04/14/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Трехмерные повороты в SkiaSharp
+description: В этой статье объясняется, как использовать неаффинное преобразования для вращения двумерных объектов в трехмерном пространстве и демонстрируется пример кода.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: B5894EA0-C415-41F9-93A4-BBF6EC72AFB9
+author: davidbritch
+ms.author: dabritch
+ms.date: 04/14/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 3706139a2c15d01af67203c2bd09b281de80ed52
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84140209"
 ---
-
 # <a name="3d-rotations-in-skiasharp"></a>Трехмерные повороты в SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

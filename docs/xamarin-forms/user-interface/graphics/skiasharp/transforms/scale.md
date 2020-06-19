@@ -1,8 +1,22 @@
 ---
-Title: "Описание преобразования" масштабирование: "в статье СХИС рассматривается преобразование масштабирования SkiaSharp для масштабирования объектов на различные размеры и демонстрирует это с помощью образца кода".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 54A43F3D-9DA8-44A7-9AE4-7E3025129A0B Автор: давидбритч MS. author: дабритч MS. Дата: 03/23/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Преобразование масштаба
+description: В статье СХИС рассматривается преобразование масштабирования SkiaSharp для масштабирования объектов на различные размеры и демонстрируется пример кода.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 54A43F3D-9DA8-44A7-9AE4-7E3025129A0B
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/23/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: bdf33f499bf43d99436cef815c03d35b27866b80
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84140183"
 ---
-
 # <a name="the-scale-transform"></a>Преобразование масштаба
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

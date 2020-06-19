@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms Карауселвиев введение" Description: "карауселвиев — это представление для представления данных в прокручиваемом макете, где пользователи могут перемещаться для перемещения по коллекции элементов".
-MS. произв. Xamarin MS. AssetID: 2a96e4bd-c29b-4658-bb4c-ab00872b0f8f MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч MS. Дата: 10/08/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsВведение в Карауселвиев
+description: Карауселвиев — это представление для представления данных в прокручиваемом макете, где пользователи могут перемещаться для перемещения по коллекции элементов.
+ms.prod: xamarin
+ms.assetid: 2a96e4bd-c29b-4658-bb4c-ab00872b0f8f
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/08/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 2e67acd0188e1147481005502ad9ccdaada645d9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84140274"
 ---
-
 # <a name="xamarinforms-carouselview-introduction"></a>Xamarin.FormsВведение в Карауселвиев
 
 ![](~/media/shared/preview.png "This API is currently pre-release")

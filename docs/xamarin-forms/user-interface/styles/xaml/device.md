@@ -1,8 +1,22 @@
 ---
-Title: "стили устройств в Xamarin.Forms описании:" Xamarin.Forms включает шесть динамических стилей, известных как стили устройств, в классе Device. styles. В этой статье объясняется, как использовать стили устройств в Xamarin.Forms приложении. "
-MS. произв. Xamarin MS. AssetID: 7FF19ED1-0822-4238-9435-AD970317A2F8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 02/17/2016 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Стили устройств вXamarin.Forms
+description: Xamarin.Formsвключает в себя шесть динамических стилей, известных как стили устройств, в классе Device. styles. В этой статье объясняется, как использовать стили устройств в Xamarin.Forms приложении.
+ms.prod: xamarin
+ms.assetid: 7FF19ED1-0822-4238-9435-AD970317A2F8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/17/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b835847fea39e1c2f968e7b81fb9d22f68ea461c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84140105"
 ---
-
 # <a name="device-styles-in-xamarinforms"></a>Стили устройств вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)

@@ -1,8 +1,22 @@
 ---
-Title: "часть 4. Основные сведения о привязке данных "Описание:" привязки данных позволяют связывать свойства двух объектов, чтобы изменение одного из них привело к изменению другого. "
-MS. произв. Xamarin MS. Technology: Xamarin-Forms MS. AssetID: 342288C3-BB4C-4924-B178-72E112D777BA Автор: давидбритч MS. author: дабритч MS. Дата: 10/25/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Часть 4. Основы привязки данных
+description: Привязки данных позволяют связывать свойства двух объектов, чтобы изменение одного из них привело к изменению другого.
+ms.prod: xamarin
+ms.technology: xamarin-forms
+ms.assetid: 342288C3-BB4C-4924-B178-72E112D777BA
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/25/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 08be571d3ba69891a56c08efd556a999e51431c8
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139858"
 ---
-
 # <a name="part-4-data-binding-basics"></a>Часть 4. Основы привязки данных
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)

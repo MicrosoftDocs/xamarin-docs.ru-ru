@@ -1,8 +1,22 @@
 ---
-Title: «SkiaSharp Transforms» Description:» в этой статье рассматриваются преобразования для отображения графики SkiaSharp в Xamarin.Forms приложениях и демонстрируется пример кода.
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: E9BE322E-ECB3-4395-AFE4-4474A0F25551 Автор: давидбритч MS. author: дабритч MS. Дата: 03/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Преобразование SkiaSharp
+description: В этой статье рассматриваются преобразования для отображения графики SkiaSharp в Xamarin.Forms приложениях и демонстрируется пример кода.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: E9BE322E-ECB3-4395-AFE4-4474A0F25551
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/10/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e20ea5d1d3f813b04a927601fbe1180ff39ed176
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84140196"
 ---
-
 # <a name="skiasharp-transforms"></a>Преобразование SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

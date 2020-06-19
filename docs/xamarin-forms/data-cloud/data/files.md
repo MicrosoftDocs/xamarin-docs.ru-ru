@@ -1,8 +1,22 @@
 ---
-Title: "обработка файлов в Xamarin.Forms описании:" обработка файлов Xamarin.Forms может быть достигнута с помощью кода в библиотеке .NET Standard или с помощью внедренных ресурсов ".
-MS. произв. Xamarin MS. AssetID: 9987C3F6-5F04-403B-BBB4-ECB024EA6CC8 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/21/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Обработка файлов вXamarin.Forms
+description: Обработка файлов в Xamarin.Forms среде может быть достигнута с помощью кода в библиотеке .NET Standard или с помощью внедренных ресурсов.
+ms.prod: xamarin
+ms.assetid: 9987C3F6-5F04-403B-BBB4-ECB024EA6CC8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/21/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f62e5522b5b9a10a3806a70fe949561d77ce0d4e
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84574357"
 ---
-
 # <a name="file-handling-in-xamarinforms"></a>Обработка файлов вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithfiles)

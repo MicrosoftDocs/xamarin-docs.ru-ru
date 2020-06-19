@@ -1,8 +1,22 @@
 ---
-Title: "изображения в Xamarin.Forms " Description: "образы можно совместно использовать на разных платформах Xamarin.Forms , они могут быть загружены специально для каждой платформы или загружены для просмотра".
-MS. произв. Xamarin MS. AssetID: C025AB53-05CC-49BA-9815-75D6DF9E40B7 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 12/04/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Изображения вXamarin.Forms
+description: Образы можно совместно использовать на разных платформах Xamarin.Forms , они могут загружаться специально для каждой платформы, а также могут быть загружены для просмотра.
+ms.prod: xamarin
+ms.assetid: C025AB53-05CC-49BA-9815-75D6DF9E40B7
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/19/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 7117bb809c43ab5edb67e8367840b17cd1d97ef9
+ms.sourcegitcommit: c000c0ed15b7b2ef2a8f46a39171e11b6d9f8a5d
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84980094"
 ---
-
 # <a name="images-in-xamarinforms"></a>Изображения вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithimages)
@@ -15,7 +29,7 @@ _Образы можно совместно использовать на раз
 
 ## <a name="display-images"></a>Отображение изображений
 
-Xamarin.Formsиспользует [`Image`](xref:Xamarin.Forms.Image) представление для отображения изображений на странице. Он имеет два важных свойства:
+Xamarin.Formsиспользует [`Image`](xref:Xamarin.Forms.Image) представление для отображения изображений на странице. Он имеет несколько важных свойств:
 
 - [`Source`](xref:Xamarin.Forms.Image.Source)— [`ImageSource`](xref:Xamarin.Forms.ImageSource) Экземпляр, файл, URI или ресурс, который задает отображаемое изображение.
 - [`Aspect`](xref:Xamarin.Forms.Image.Aspect)— Изменение размера изображения в пределах границ, в которых он отображается (растяжение, кадрирование или леттербокс).
@@ -30,7 +44,7 @@ Xamarin.Formsиспользует [`Image`](xref:Xamarin.Forms.Image) предс
 [`Aspect`](xref:Xamarin.Forms.Image.Aspect)Свойство определяет, как изображение будет масштабироваться в соответствии с отображаемой областью:
 
 - [`Fill`](xref:Xamarin.Forms.Aspect.Fill)— Растягивает изображение, чтобы полностью и точно заполнить отображаемую область. Это может привести к искажению изображения.
-- [`AspectFill`](xref:Xamarin.Forms.Aspect.AspectFill)— Обрезает изображение таким образом, чтобы оно заполнило область экрана при сохранении аспекта (IE. без искажений).
+- [`AspectFill`](xref:Xamarin.Forms.Aspect.AspectFill)— Обрезает изображение таким образом, чтобы оно заполнило область экрана при сохранении аспекта (т. е. без искажений).
 - [`AspectFit`](xref:Xamarin.Forms.Aspect.AspectFit)— Леттербоксес изображение (при необходимости), чтобы весь образ поместился в область экрана, с добавлением пробела в верхнюю или нижнюю часть или в зависимости от того, является ли изображение широким или максимальным.
 
 Образы могут загружаться из [локального файла](#local-images), [внедренного ресурса](#embedded-images), [скачанного](#download-images)или загруженного из потока. Кроме того, значки шрифтов могут отображаться в [`Image`](xref:Xamarin.Forms.Image) представлении путем указания данных значка шрифта в `FontImageSource` объекте. Дополнительные сведения см. в разделе [Отображение значков шрифтов](~/xamarin-forms/user-interface/text/fonts.md#display-font-icons) в пошаговом окне " [шрифты](~/xamarin-forms/user-interface/text/fonts.md) ".
@@ -39,7 +53,7 @@ Xamarin.Formsиспользует [`Image`](xref:Xamarin.Forms.Image) предс
 
 Файлы изображений можно добавлять в каждый проект приложения и ссылаться из Xamarin.Forms общего кода. Этот метод распространения является обязательным для изображений, специфических для платформы, например при использовании разных разрешений на различных платформах или немного разных вариантах изображения.
 
-Чтобы использовать один образ во всех приложениях, *на каждой платформе необходимо использовать*одно и то же имя файла, которое должно быть допустимым именем ресурса Android (только строчные буквы, цифры, символ подчеркивания и период).
+Чтобы использовать один образ во всех приложениях, *на каждой платформе необходимо использовать*одно и то же имя файла, которое должно быть допустимым именем ресурса Android (т. е. только строчные буквы, цифры, символ подчеркивания и период).
 
 - **iOS** — предпочтительный способ управления и поддержки образов с iOS 9 — использование **наборов образов каталога активов**, которые должны содержать все версии образа, необходимые для поддержки различных устройств и коэффициентов масштабирования для приложения. Дополнительные сведения см. [в разделе Добавление образов в набор изображений каталога активов](~/ios/app-fundamentals/images-icons/displaying-an-image.md).
 - Образы на устройстве **Android** в каталоге **Resources/Draw** с **действием сборки: AndroidResource**. Также можно указать версии изображения с высоким и низким разрешением (в подкаталогах **ресурсов** с соответствующим именем, например, **Draw-лдпи**, **Draw-HDPI**и **Draw-xhdpi**).
@@ -231,14 +245,13 @@ var imageSource = ImageSource.FromResource("filename.png",
 Образы могут быть автоматически скачаны для отображения, как показано в следующем коде XAML:
 
 ```xaml
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
        x:Class="WorkingWithImages.DownloadImagesXaml">
   <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
     <Label Text="Image UriSource Xaml" />
-    <Image Source="https://xamarin.com/content/images/pages/forms/example-app.png" />
-    <Label Text="example-app.png gets downloaded from xamarin.com" />
+    <Image Source="https://aka.ms/campus.jpg" />
+    <Label Text="campus.jpg gets downloaded from microsoft.com" />
   </StackLayout>
 </ContentPage>
 ```
@@ -248,7 +261,7 @@ var imageSource = ImageSource.FromResource("filename.png",
 ```csharp
 var webImage = new Image {
      Source = ImageSource.FromUri(
-        new Uri("https://xamarin.com/content/images/pages/forms/example-app.png")
+        new Uri("https://aka.ms/campus.jpg")
      ) };
 ```
 
@@ -257,7 +270,7 @@ var webImage = new Image {
 Также существует неявное преобразование для строк URI, поэтому в следующем примере также будет работать:
 
 ```csharp
-webImage.Source = "https://xamarin.com/content/images/pages/forms/example-app.png";
+webImage.Source = "https://aka.ms/campus.jpg";
 ```
 
 На следующих снимках экрана показан результат отображения удаленного образа на каждой платформе:
@@ -274,7 +287,7 @@ webImage.Source = "https://xamarin.com/content/images/pages/forms/example-app.pn
 Кэширование включено по умолчанию и будет хранить образ локально в течение 24 часов. Чтобы отключить кэширование для конкретного образа, создайте экземпляр источника образа следующим образом:
 
 ```csharp
-image.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri("http://server.com/image") };
+image.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri("https://server.com/image") };
 ```
 
 Чтобы задать определенный период кэширования (например, 5 дней), создайте экземпляр источника образа следующим образом:
@@ -282,7 +295,7 @@ image.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri("http:
 ```csharp
 webImage.Source = new UriImageSource
 {
-    Uri = new Uri("https://xamarin.com/content/images/pages/forms/example-app.png"),
+    Uri = new Uri("https://aka.ms/campus.jpg"),
     CachingEnabled = true,
     CacheValidity = new TimeSpan(5,0,0,0)
 };

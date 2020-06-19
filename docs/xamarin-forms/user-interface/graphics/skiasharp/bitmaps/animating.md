@@ -1,8 +1,22 @@
 ---
-Title: "анимирование растровых изображений SkiaSharp" Description: "Узнайте, как выполнять растровую анимацию путем последовательного отображения ряда точечных рисунков и визуализации анимированных GIF-файлов".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 97142ADC-E2FD-418C-8A09-9C561AEE5BFD Автор: давидбритч MS. author: дабритч MS. Дата: 07/12/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Анимация точечных рисунков SkiaSharp
+description: Узнайте, как выполнять растровую анимацию путем последовательного отображения ряда точечных рисунков и визуализации анимированных GIF-файлов.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 97142ADC-E2FD-418C-8A09-9C561AEE5BFD
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/12/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 763f44c26d653aa32429b2aa764989e18e8b8078
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139975"
 ---
-
 # <a name="animating-skiasharp-bitmaps"></a>Анимация точечных рисунков SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
@@ -642,7 +656,7 @@ public partial class AnimatedGifPage : ContentPage
 
 Каждый раз, когда `currentframe` переменная изменяется, `SKCanvasView` становится недействительным и отображается новый кадр:
 
-[![Анимированный GIF](animating-images/AnimatedGif.png "Анимированный GIF")](animating-images/AnimatedGif-Large.png#lightbox)
+[![Анимированный GIF](animating-images/AnimatedGif.png "Анимированный GIF-файл")](animating-images/AnimatedGif-Large.png#lightbox)
 
 Конечно, вам нужно самостоятельно запустить программу, чтобы увидеть анимацию.
 

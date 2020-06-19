@@ -1,8 +1,22 @@
 ---
-Title: "описание трех способов рисования дуги" Description: "в этой статье объясняется, как использовать SkiaSharp для определения Дуг тремя разными способами и демонстрируется в примере кода".
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: F1DA55E4-0182-4388-863C-5C340213BF3C Автор: давидбритч MS. author: дабритч MS. Дата: 05/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Три способа нарисовать дугу
+description: В этой статье объясняется, как использовать SkiaSharp для определения Дуг тремя разными способами и демонстрируется в примере кода.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: F1DA55E4-0182-4388-863C-5C340213BF3C
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/10/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 4eea7d500876793357113453493fa2fe2ede6cc4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84140024"
 ---
-
 # <a name="three-ways-to-draw-an-arc"></a>Три способа нарисовать дугу
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

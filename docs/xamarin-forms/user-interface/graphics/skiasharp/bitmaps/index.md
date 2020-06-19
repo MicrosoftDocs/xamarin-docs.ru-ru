@@ -1,8 +1,22 @@
 ---
-Title: «SkiaSharp Bitmaps» Description:» сведения о загрузке, сохранении, отображении, создании, рисовании, анимации и доступе к битам растровых изображений SkiaSharp.
-MS. произв. Xamarin MS. Technology: Xamarin-skiasharp MS. AssetID: 70C19370-157A-4B1B-9532-F77E32AC21BC Автор: давидбритч MS. author: дабритч МС. Дата: 07/17/2018 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Точечные рисунки SkiaSharp
+description: Сведения о загрузке, сохранении, отображении, создании, рисовании, анимации и доступе к битам точечных рисунков SkiaSharp.
+ms.prod: xamarin
+ms.technology: xamarin-skiasharp
+ms.assetid: 70C19370-157A-4B1B-9532-F77E32AC21BC
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/17/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1d21fc199dd67471440ca0e3eeaf9a140e7a1967
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84140235"
 ---
-
 # <a name="skiasharp-bitmaps"></a>Точечные рисунки SkiaSharp
 
 Точечный рисунок — это прямоугольный массив данных, соответствующий пикселям устройства вывода. Область графического программирования, связанная с точечными рисунками, иногда называется _растровой графикой_ (под названием «сканирование строк раннего экрана») в отличие от _векторной графики_ линий и кривых. 

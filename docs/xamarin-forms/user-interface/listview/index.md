@@ -1,8 +1,22 @@
 ---
-Title: Xamarin.Forms Описание "ListView" Description: "в этом руководство описывается Xamarin.Forms ListView, который можно использовать для представления данных в интерактивных списках".
-MS. произв. Xamarin MS. AssetID: FEFDF7E0-720F-4BD1-863F-4477226AA695 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 09/04/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsЭлементе
+description: В этом руководством представлен Xamarin.Forms список ListView, который можно использовать для представления данных в интерактивных списках.
+ms.prod: xamarin
+ms.assetid: FEFDF7E0-720F-4BD1-863F-4477226AA695
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 09/04/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: a1ff8dd5c8a8a4051cea8ce4b288c42bdbaa8d31
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139910"
 ---
-
 # <a name="xamarinforms-listview"></a>Xamarin.FormsЭлементе
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithlistview)

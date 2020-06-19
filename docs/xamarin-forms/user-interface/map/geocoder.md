@@ -1,8 +1,22 @@
 ---
-Title: " Xamarin.Forms Описание геокодирования". в этой статье объясняется, как выполнять геокодирование и реверсировать данные Геоструктурного геокода с помощью Xamarin.Forms . Сопоставляет класс геокодирования. "
-MS. произв. Xamarin MS. AssetID: DE7DB31A-8921-4614-8B49-DAEF1E7B03B3 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 10/22/2019 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Xamarin.FormsГеокодирование карт
+description: В этой статье объясняется, как выполнять геокод и реверсировать данные карт геокодирования с помощью Xamarin.Forms . Сопоставляет класс геокодирования.
+ms.prod: xamarin
+ms.assetid: DE7DB31A-8921-4614-8B49-DAEF1E7B03B3
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 10/22/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: fe099235857f6bd0531539e3aa84e41bf59b50ba
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84139871"
 ---
-
 # <a name="xamarinforms-map-geocoding"></a>Xamarin.FormsГеокодирование карт
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)

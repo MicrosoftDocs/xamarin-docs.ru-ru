@@ -1,8 +1,22 @@
 ---
-Title: "ломаные и параметрической уравнения" Описание: "в этой статье объясняется, как использовать SkiaSharp для подготовки к просмотру любой строки, которую можно определить с помощью параметрической формулы, и демонстрируется в примере кода".
-MS. произв. Xamarin MS. AssetID: 85AEBB33-E954-4364-A6E1-808FAB197BEE MS. Technology: Xamarin-skiasharp Автор: давидбритч MS. author: дабритч МС. Дата: 03/10/2017 No-Loc: [ Xamarin.Forms , Xamarin.Essentials ]
+title: Ломаные линии и параметрические уравнения
+description: В этой статье объясняется, как использовать SkiaSharp для подготовки к просмотру любой строки, которую можно определить с помощью параметрической формулы, и демонстрируется в примере кода.
+ms.prod: xamarin
+ms.assetid: 85AEBB33-E954-4364-A6E1-808FAB197BEE
+ms.technology: xamarin-skiasharp
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/10/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: b435e99180791b64e0a8ad975527fb3cb5316b7d
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84140222"
 ---
-
 # <a name="polylines-and-parametric-equations"></a>Ломаные линии и параметрические уравнения
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
