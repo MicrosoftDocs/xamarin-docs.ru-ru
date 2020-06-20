@@ -1,6 +1,6 @@
 ---
-title: 'Xamarin.FormsФигуры: геометрические объекты'
-description: Xamarin.Formsклассы Geometry позволяют описать геометрию двухмерной фигуры.
+title: 'Xamarin.FormsФигуры: геометрические контуры'
+description: Xamarin.FormsКлассы геометрических путей позволяют описать геометрию двухмерной фигуры.
 ms.prod: xamarin
 ms.assetid: 07DE3D66-1820-4642-BDDF-84146D40C99D
 ms.technology: xamarin-forms
@@ -10,14 +10,14 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 05fcd1ada62bffa4829ad422ee5eda36d9d75ae3
-ms.sourcegitcommit: 16847681df17ed59b3b3528761c02e8fb48ffc4f
+ms.openlocfilehash: 5718b0594581928e6f00e11a15163d176615378f
+ms.sourcegitcommit: d86b7a18cf8b1ef28cd0fe1d311f1c58a65101a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/19/2020
-ms.locfileid: "85104246"
+ms.locfileid: "85101890"
 ---
-# <a name="xamarinforms-shapes-geometries"></a>Xamarin.FormsФигуры: геометрические объекты
+# <a name="xamarinforms-shapes-path-geometries"></a>Xamarin.FormsФигуры: геометрические контуры
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
@@ -189,29 +189,6 @@ ms.locfileid: "85104246"
 ```
 
 В этом примере `EllipseGeometry` объединяются четыре объекта с одинаковыми координатами x-RADIUS и y-радиуса, но с разными координатами центра. При этом создаются четыре перекрывающихся кружков, внутренние области которых заполняются с помощью `EvenOdd` правила заливки.
-
-## <a name="clip-geometries"></a>Объекты Geometry
-
-[`VisualElement`](xref:Xamarin.Forms.VisualElement)Класс имеет `Clip` свойство типа `Geometry` , которое определяет контур содержимого элемента. Если `Clip` для свойства задан `Geometry` объект, видима будет только область, которая находится в пределах области `Geometry` .
-
-В следующем примере показано, как использовать `Geometry` объект в качестве области отсечения для [`Image`](xref:Xamarin.Forms.Image) :
-
-```xaml
-<Image Source="monkeyface.png">
-    <Image.Clip>
-        <EllipseGeometry RadiusX="100"
-                         RadiusY="100"
-                         Center="180,180" />
-    </Image.Clip>
-</Image>
-```
-
-В этом примере в качестве `EllipseGeometry` `RadiusX` значения типа и `RadiusY` используется значение 100, а в качестве `Center` значения (180 180) — `Clip` свойство объекта [`Image`](xref:Xamarin.Forms.Image) . Будет отображена только часть изображения, расположенная в области эллипса:
-
-![Обрезать изображение с помощью EllipseGeometry](geometries-images/clip-ellipsegeometry.png "Обрезать изображение с помощью EllipseGeometry")
-
-> [!NOTE]
-> Для обрезки объектов можно использовать простые геометрические объекты, геометрические контуры и составные геометрии [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 
 ## <a name="other-features"></a>Другие возможности
 

@@ -10,18 +10,18 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 48d68d2597986a941a6ac3a8df0d99f09f421e62
-ms.sourcegitcommit: 34fa3086c55b1e01838419c930f839c20662c362
+ms.openlocfilehash: cb2e3ea68f181f0a6e6392c012db221ef35d65bd
+ms.sourcegitcommit: 16847681df17ed59b3b3528761c02e8fb48ffc4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990881"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104303"
 ---
 # <a name="xamarinforms-shapes-path"></a>Xamarin.FormsShapes: путь
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
 
 `Path`Класс является производным от `Shape` класса и может использоваться для рисования кривых и сложных фигур. Эти кривые и фигуры часто описываются с помощью `Geometry` объектов. Сведения о свойствах, которые `Path` класс наследует от `Shape` класса, см. в разделе [ Xamarin.Forms Shapes](index.md).
 
@@ -36,7 +36,7 @@ ms.locfileid: "84990881"
 
 ## <a name="create-a-path"></a>Создание пути
 
-В следующем примере XAML показано, как нарисовать многоугольник с помощью специального сокращенного синтаксиса:
+В следующем примере XAML показано, как нарисовать многоугольник с помощью специального сокращенного синтаксиса, известного как синтаксис разметки пути:
 
 ```xaml
 <Path Data="M 10,50 L 200,70"
@@ -48,7 +48,12 @@ ms.locfileid: "84990881"
       WidthRequest="100" />
 ```
 
-`Data`Строка начинается с команды "MoveTo", обозначенной параметром `M` , который устанавливает начальную точку для пути. В параметрах данных пути учитывается регистр. Заглавная `M` позиция указывает абсолютное расположение начальной точки. В нижнем регистре `m` указываются относительные координаты. `L`команда line, которая создает прямую линию от начальной точки до указанной конечной точки.
+`Data`Строка начинается с команды "MoveTo", обозначенной параметром `M` , который устанавливает начальную точку для пути. `L`команда line, которая создает прямую линию от начальной точки до указанной конечной точки.
+
+> [!NOTE]
+> Синтаксис разметки пути доступен только в XAML.
+
+Дополнительные сведения о синтаксисе разметки пути см. в разделе [ Xamarin.Forms синтаксис разметки пути](path-markup-syntax.md).
 
 ## <a name="path-geometry"></a>Геометрическая контур
 
@@ -91,7 +96,8 @@ ms.locfileid: "84990881"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+- [Шапедемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
 - [Xamarin.FormsМногоугольник](index.md)
-- [Xamarin.FormsГеометрические фигуры](geometries.md)
+- [Xamarin.FormsОбъекты](geometries.md)
+- [Xamarin.FormsСинтаксис разметки пути](path-markup-syntax.md)
 - [Xamarin.FormsПреобразования пути](path-transforms.md)

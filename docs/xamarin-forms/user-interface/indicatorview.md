@@ -10,16 +10,14 @@ ms.date: 02/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e4c7d528cc61bb71fc495c830780ea4245ff3d87
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 0e6d223fd10e7b792f2d145a7cdd417865a095bb
+ms.sourcegitcommit: d86b7a18cf8b1ef28cd0fe1d311f1c58a65101a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84946381"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85101433"
 ---
 # <a name="xamarinforms-indicatorview"></a>Xamarin.Formsиндикаторвиев
-
-![](~/media/shared/preview.png "This API is currently pre-release")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-indicatorviewdemos/)
 

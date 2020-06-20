@@ -6,16 +6,16 @@ ms.assetId: 85A0CCF5-C1D8-40BB-927F-A4D944E5534D
 ms.technology: xamarin-forms
 author: profexorgeek
 ms.author: jusjohns
-ms.date: 08/21/2019
+ms.date: 06/19/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: deb894cccd5b6a2a9d908ef8967de91f00e7d297
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: f3ab70dc20dda78e3acf400cf51d0ee9df84ff93
+ms.sourcegitcommit: 16847681df17ed59b3b3528761c02e8fb48ffc4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136426"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104322"
 ---
 # <a name="xamarinforms-common-control-properties-methods-and-events"></a>Xamarin.FormsОбщие свойства, методы и события элемента управления
 
@@ -23,7 +23,7 @@ Xamarin.Forms `VisualElement` Класс является базовым кла�
 
 ## <a name="properties"></a>Свойства
 
-В экземплярах доступны следующие свойства `VisualElement` . Полный список см. в разделе [свойства API висуалелемент](xref:Xamarin.Forms.VisualElement#properties).
+Для объектов доступны следующие свойства [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 
 ### [`AnchorX`](xref:Xamarin.Forms.VisualElement.AnchorX)
 
@@ -44,6 +44,10 @@ Xamarin.Forms `VisualElement` Класс является базовым кла�
 ### [`Bounds`](xref:Xamarin.Forms.VisualElement.Bounds)
 
 `Bounds`Свойство является объектом только для чтения `Rectangle` , представляющим пространство, занимаемое элементом управления. `Bounds`Значение свойства назначается во время цикла макета. `Rectangle` `struct` Содержит полезные свойства и методы для тестирования пересечения и включения прямоугольников. Дополнительные сведения см. в разделе [ Xamarin.Forms API Rectangle](xref:Xamarin.Forms.Rectangle).
+
+### `Clip`
+
+`Clip`Свойство — это `Geometry` объект, определяющий контур содержимого элемента. Чтобы определить клип, используйте объект, `Geometry` например, `EllipseGeometry` для установки `Clip` свойства элемента. Будут видны только области, находящиеся в пределах области геометрии. Дополнительные сведения см. в разделе [Clip geometrys](~/xamarin-forms/user-interface/shapes/geometries.md#clip-geometries).
 
 ### [`Effects`](xref:Xamarin.Forms.Element.Effects)
 
@@ -268,4 +272,4 @@ public void Unfocus ()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-* [Документация по API Висуалелемент](xref:Xamarin.Forms.VisualElement)
+- [API Висуалелемент](xref:Xamarin.Forms.VisualElement)

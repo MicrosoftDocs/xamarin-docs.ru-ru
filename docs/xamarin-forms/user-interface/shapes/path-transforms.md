@@ -10,18 +10,18 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5814bb73f843031d672df0573775abb002fd3644
-ms.sourcegitcommit: 34fa3086c55b1e01838419c930f839c20662c362
+ms.openlocfilehash: c0abf7b30192ac9183c28e89d7917ea8d08dfc4f
+ms.sourcegitcommit: d86b7a18cf8b1ef28cd0fe1d311f1c58a65101a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990802"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85101336"
 ---
 # <a name="xamarinforms-shapes-path-transforms"></a>Xamarin.FormsФигуры: преобразования пути
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
 
 `Transform`Определяет способ преобразования `Path` объекта из одного пространства координат в другое пространство координат. Это сопоставление описывается преобразованием `Matrix` , которое представляет собой коллекцию из трех строк с тремя столбцами `double` значений.
 
@@ -352,5 +352,5 @@ Xamarin.Formsимеет два класса, которые поддержива
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+- [Шапедемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
 - [Xamarin.FormsМногоугольник](index.md)
