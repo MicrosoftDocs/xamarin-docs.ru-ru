@@ -1,8 +1,22 @@
 ---
-title: "Загрузка видеоресурсов приложения" description: "В этой статье объясняется, как загружать видео, хранящееся в виде ресурсов приложения, в приложении видеопроигрывателя с помощью Xamarin.Forms".
-ms.prod: xamarin ms.assetid: F75BD540-9354-4C17-A119-57F3DEC66D54 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12.02.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Загрузка видеоресурсов приложения
+description: В этой статье объясняется, как загружать видео, хранящееся в виде ресурсов приложения, в приложении видеопроигрывателя с помощью Xamarin.Forms.
+ms.prod: xamarin
+ms.assetid: F75BD540-9354-4C17-A119-57F3DEC66D54
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 02/12/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 472c6c2a7c5a084520aee6b8ae160d9329c3f593
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84133767"
 ---
-
 # <a name="loading-application-resource-videos"></a>Загрузка видеоресурсов приложения
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
