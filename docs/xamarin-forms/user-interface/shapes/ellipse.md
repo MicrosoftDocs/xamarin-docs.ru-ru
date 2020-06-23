@@ -10,18 +10,18 @@ ms.date: 06/20/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 053805c14f195ef0dd3ae8f0cfcac2ee7425271d
-ms.sourcegitcommit: dc49ba58510eeb52048a866e5d3daf5f1f68fbd2
+ms.openlocfilehash: 725f892a667b4e89d55266abcf69e5394b09b6a5
+ms.sourcegitcommit: ef3d4a70e70927c4f231b763842c5355f1571d15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85130919"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85243847"
 ---
 # <a name="xamarinforms-shapes-ellipse"></a>Xamarin.FormsФигуры: эллипс
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Ellipse`Класс является производным от `Shape` класса и может использоваться для рисования эллипсов и кругов. Сведения о свойствах, которые `Ellipse` класс наследует от `Shape` класса, см. в разделе [ Xamarin.Forms Shapes](index.md).
 
@@ -29,7 +29,7 @@ ms.locfileid: "85130919"
 
 ## <a name="create-an-ellipse"></a>Создание эллипса
 
-Чтобы нарисовать эллипс, создайте `Ellipse` объект и задайте его `WidthRequest` `HeightRequest` Свойства и. Используйте его `Fill` свойство, чтобы указать [`Color`](xref:Xamarin.Forms.Color) , используемое для заполнения внутренней части эллипса. Используйте его `Stroke` свойство, чтобы указать объект `Color` , используемый для рисования контура эллипса. `StrokeThickness`Свойство задает толщину контура эллипса.
+Чтобы нарисовать эллипс, создайте `Ellipse` объект и задайте его `WidthRequest` `HeightRequest` Свойства и. Чтобы закрасить внутри эллипса, задайте для его `Fill` свойства значение [`Color`](xref:Xamarin.Forms.Color) . Чтобы присвоить контуру эллипс, присвойте `Stroke` свойству значение [`Color`](xref:Xamarin.Forms.Color) . `StrokeThickness`Свойство задает толщину контура эллипса.
 
 Чтобы нарисовать круг, сделайте `WidthRequest` Свойства и `HeightRequest` `Ellipse` объекта равными.
 
@@ -60,7 +60,9 @@ ms.locfileid: "85130919"
 
 ![Круглая](ellipse-images/circle.png "Circle")
 
+Сведения о рисовании штрихового эллипса см. в разделе [Рисование пунктирных фигур](index.md#draw-dashed-shapes).
+
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.FormsМногоугольник](index.md)

@@ -10,18 +10,18 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cb2e3ea68f181f0a6e6392c012db221ef35d65bd
-ms.sourcegitcommit: 16847681df17ed59b3b3528761c02e8fb48ffc4f
+ms.openlocfilehash: 384dcef3c2b480166f17e91d547f8cda39c83dc0
+ms.sourcegitcommit: 7fc658bbdcb8130cd9d611e55e79a1830fc5d5a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85104303"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85132974"
 ---
 # <a name="xamarinforms-shapes-path"></a>Xamarin.FormsShapes: путь
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Path`Класс является производным от `Shape` класса и может использоваться для рисования кривых и сложных фигур. Эти кривые и фигуры часто описываются с помощью `Geometry` объектов. Сведения о свойствах, которые `Path` класс наследует от `Shape` класса, см. в разделе [ Xamarin.Forms Shapes](index.md).
 
@@ -96,7 +96,7 @@ ms.locfileid: "85104303"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.FormsМногоугольник](index.md)
 - [Xamarin.FormsОбъекты](geometries.md)
 - [Xamarin.FormsСинтаксис разметки пути](path-markup-syntax.md)

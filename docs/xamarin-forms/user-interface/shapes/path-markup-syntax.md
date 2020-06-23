@@ -10,18 +10,18 @@ ms.date: 06/19/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 263b77371e6fc991704fd86f2616d567584c832a
-ms.sourcegitcommit: 16847681df17ed59b3b3528761c02e8fb48ffc4f
+ms.openlocfilehash: 943636ac82163c3c575577bb4c56f6433cf73339
+ms.sourcegitcommit: 7fc658bbdcb8130cd9d611e55e79a1830fc5d5a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85104344"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85132957"
 ---
 # <a name="xamarinforms-shapes-path-markup-syntax"></a>Xamarin.FormsФигуры: синтаксис разметки пути
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 Xamarin.Formsсинтаксис разметки пути позволяет сжимать геометрические контуры в XAML. Синтаксис задается в виде строкового значения для `Path.Data` Свойства:
 
@@ -170,5 +170,5 @@ Xamarin.Formsсинтаксис разметки пути позволяет с�
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.FormsОбъекты](geometries.md)

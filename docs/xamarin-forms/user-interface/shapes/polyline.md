@@ -6,24 +6,24 @@ ms.assetid: 15D02690-AC03-457E-8815-8E4C17E4D642
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/16/2020
+ms.date: 06/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b6c884caa7bfb301f949f353f3c6c3445704aa89
-ms.sourcegitcommit: d86b7a18cf8b1ef28cd0fe1d311f1c58a65101a8
+ms.openlocfilehash: fee7dd2a2e5b713b3a82fc2e1227b21caddbceaa
+ms.sourcegitcommit: ef3d4a70e70927c4f231b763842c5355f1571d15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85101354"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85243848"
 ---
 # <a name="xamarinforms-shapes-polyline"></a>Xamarin.FormsФигуры: ломаная линия
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
-`Polyline`Класс является производным от `Shape` класса и может использоваться для рисования ряда Соединенных прямых линий. Сведения о свойствах, которые `Polyline` класс наследует от `Shape` класса, см. в разделе [ Xamarin.Forms Shapes](index.md).
+`Polyline`Класс является производным от `Shape` класса и может использоваться для рисования ряда Соединенных прямых линий. Ломаная линия похожа на многоугольник, за исключением того, что последняя точка ломаной линии не соединена с первой точкой. Сведения о свойствах, которые `Polyline` класс наследует от `Shape` класса, см. в разделе [ Xamarin.Forms Shapes](index.md).
 
 `Polyline` определяет следующие свойства:
 
@@ -32,18 +32,75 @@ ms.locfileid: "85101354"
 
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
 
+`PointsCollection`Тип является типом объекта `ObservableCollection` [`Point`](xref:Xamarin.Forms.Point) . `Point`Структура определяет `X` и `Y` свойства типа `double` , представляющие пару координат x и y в двухмерном пространстве. Таким образом, `Points` свойству следует присвоить список пар координат x и y, описывающих точки вершин ломаной линии, разделенных одной запятой и/или одним или несколькими пробелами. Например, допустимыми являются значения 40, 10 70, 80 и 40 10, 70 80.
+
+Перечисление `FillRule` определяет следующие члены:
+
+- `EvenOdd`представляет правило, определяющее, находится ли точка в области заливки ломаной линии. Он рисует луч от точки до бесконечности в любом направлении и подсчитывает количество сегментов в фигуре, пересекающих луч. Если это число нечетное, то точка находится внутри. Если это число четное, точка находится вне.
+- `Nonzero`представляет правило, определяющее, находится ли точка в области заливки ломаной линии. Он рисует луч от точки до бесконечности в любом направлении, а затем проверяет места, где сегмент фигуры пересекает луч. Начиная с нуля счетчик увеличивается каждый раз, когда сегмент пересекает луч слева направо и уменьшается каждый раз, когда сегмент пересекает луч справа налево. После подсчета пересечения, если результат равен нулю, точка находится за пределами ломаной линии. В противном случае он находится внутри.
+
 ## <a name="create-a-polyline"></a>Создание ломаной линии
 
-В следующем примере XAML показано, как нарисовать многоугольник:
+Чтобы нарисовать ломаную линию, создайте `Polyline` объект и присвойте его `Points` свойству вершины фигуры. Чтобы присвоить контуру ломаную линию, задайте `Stroke` для его свойства значение [`Color`](xref:Xamarin.Forms.Color) . `StrokeThickness`Свойство определяет толщину контура ломаной линии.
+
+> [!IMPORTANT]
+> Если свойству присвоено значение `Fill` `Polyline` [`Color`](xref:Xamarin.Forms.Color) , внутреннее пространство ломаной линии закрашивается, даже если начальная и конечная точки не пересекаются.
+
+В следующем примере XAML показано, как нарисовать ломаную линию.
+
+```xaml
+<Polyline Points="0,0 10,30, 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
+          Stroke="Red" />
+```
+
+В этом примере рисуется Красная Ломаная линия:
+
+![Ломаная линия](polyline-images/stroke.png "Ломаная линия")
+
+В следующем примере XAML показано, как нарисовать пунктирную линию.
 
 ```xaml
 <Polyline Points="0,0 10,30, 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
           Stroke="Red"
-          HeightRequest="100"
-          WidthRequest="500" />
+          StrokeThickness="2"
+          StrokeDashArray="1,1"
+          StrokeDashOffset="6" />
 ```
+
+В этом примере Ломаная линия имеет штриховую линию:
+
+![Пунктирная Ломаная линия](polyline-images/dashed.png "Пунктирная Ломаная линия")
+
+Дополнительные сведения о рисовании пунктирной линии см. в разделе [Рисование пунктирных фигур](index.md#draw-dashed-shapes).
+
+В следующем примере XAML показана Ломаная линия, использующая правило заполнения по умолчанию:
+
+```xaml
+<Polyline Points="0 48, 0 144, 96 150, 100 0, 192 0, 192 96, 50 96, 48 192, 150 200 144 48"
+          Fill="Blue"
+          Stroke="Red"
+          StrokeThickness="3" />
+```
+
+В этом примере поведение заливки ломаной линии определяется с помощью `EvenOdd` правила заполнения.
+
+![Ломаная линия EvenOdd](polyline-images/evenodd.png "EvenOdd Полине")
+
+В следующем примере XAML показана Ломаная линия, использующая `Nonzero` правило заполнения:
+
+```xaml
+<Polyline Points="0 48, 0 144, 96 150, 100 0, 192 0, 192 96, 50 96, 48 192, 150 200 144 48"
+          Fill="Black"
+          FillRule="Nonzero"
+          Stroke="Yellow"
+          StrokeThickness="3" />
+```
+
+![Ненулевая Ломаная линия](polyline-images/nonzero.png "Ненулевая Ломаная линия")
+
+В этом примере поведение заливки ломаной линии определяется с помощью `Nonzero` правила заполнения.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.FormsМногоугольник](index.md)

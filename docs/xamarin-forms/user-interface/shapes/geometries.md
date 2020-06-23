@@ -10,18 +10,18 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 05fcd1ada62bffa4829ad422ee5eda36d9d75ae3
-ms.sourcegitcommit: 16847681df17ed59b3b3528761c02e8fb48ffc4f
+ms.openlocfilehash: c3b869d10d454453172065b30eb7ce32da81c8ce
+ms.sourcegitcommit: 7fc658bbdcb8130cd9d611e55e79a1830fc5d5a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85104246"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85133039"
 ---
 # <a name="xamarinforms-shapes-geometries"></a>Xamarin.FormsФигуры: геометрические объекты
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Geometry`Класс и классы, производные от него, позволяют описать геометрию двухмерной фигуры. `Geometry`объекты могут быть простыми, например прямоугольниками и круговыми, или составными, созданными из двух или более геометрических объектов. Более сложные геометрические объекты можно создавать с помощью `PathGeometry` класса, который позволяет описывать дуги и кривые.
 
@@ -224,5 +224,5 @@ ms.locfileid: "85104246"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ShapesDemos/)
+- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.FormsМногоугольник](index.md)
