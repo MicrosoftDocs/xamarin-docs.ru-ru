@@ -9,16 +9,16 @@ metadata:
   ms.assetid: 391B4A77-7CAC-42D2-9E77-BD8E170E9BE6
   author: davidbritch
   ms.author: dabritch
-  ms.date: 03/19/2020
+  ms.date: 06/16/2020
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: 04b2a09f455446337620325859802ee1ae40cb5e
-  ms.sourcegitcommit: 2105091f2eeb7844b19ae94708a6ab07e3e79bce
+  ms.openlocfilehash: e07215723a6c54e9d5ce3eb22103cb5eba7929d2
+  ms.sourcegitcommit: 16847681df17ed59b3b3528761c02e8fb48ffc4f
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/29/2020
-  ms.locfileid: "84198348"
+  ms.lasthandoff: 06/19/2020
+  ms.locfileid: "85104277"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:
@@ -38,12 +38,6 @@ landingContent:
       url: controls/common-properties.md
     - text: Сторонние элементы управления
       url: controls/thirdparty.md
-- title: Декларативный пользовательский интерфейс в C#
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Разметка C#
-      url: csharp-markup.md
 - title: Визуальные элементы для представления данных
   linkLists:
   - linkListType: concept
@@ -158,6 +152,30 @@ landingContent:
       url: visual/index.md
     - text: Диспетчер визуальных состояний
       url: visual-state-manager.md
+- title: Фигуры
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Обзор
+      url: shapes/index.md
+    - text: Ellipse
+      url: shapes/ellipse.md
+    - text: Геометрия
+      url: shapes/geometries.md
+    - text: Строка
+      url: shapes/line.md
+    - text: Path
+      url: shapes/path.md
+    - text: Синтаксис разметки пути
+      url: shapes/path-markup-syntax.md
+    - text: Преобразования пути
+      url: shapes/path-transforms.md
+    - text: Polygon
+      url: shapes/polygon.md
+    - text: Ломаная линия
+      url: shapes/polyline.md
+    - text: Прямоугольник
+      url: shapes/rectangle.md
 - title: Макеты
   linkLists:
   - linkListType: concept

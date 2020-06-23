@@ -234,6 +234,8 @@
               href: app-fundamentals/data-binding/relative-bindings.md
             - name: Резервные значения привязки
               href: app-fundamentals/data-binding/binding-fallbacks.md
+            - name: Множественные привязки
+              href: app-fundamentals/data-binding/multibinding.md
             - name: Командный интерфейс
               href: app-fundamentals/data-binding/commanding.md
             - name: Скомпилированные привязки
@@ -355,7 +357,7 @@
       items:
         - name: Обзор
           href: user-interface/index.yml
-        - name: 'Разметка C#'
+        - name: Разметка C#
           href: user-interface/csharp-markup.md
         - name: Справочник по элементам управления
           items:
@@ -535,6 +537,30 @@
               href: user-interface/text/fonts.md
             - name: Графика SkiaSharp
               href: user-interface/graphics/skiasharp/index.md
+            - name: Фигуры
+              items:
+                - name: Обзор
+                  href: user-interface/shapes/index.md
+                - name: Ellipse
+                  href: user-interface/shapes/ellipse.md
+                - name: Геометрия
+                  href: user-interface/shapes/geometries.md
+                - name: Строка
+                  href: user-interface/shapes/line.md
+                - name: Пути
+                  items:
+                    - name: Path
+                      href: user-interface/shapes/path.md
+                    - name: Синтаксис разметки пути
+                      href: user-interface/shapes/path-markup-syntax.md
+                    - name: Преобразования пути
+                      href: user-interface/shapes/path-transforms.md
+                - name: Polygon
+                  href: user-interface/shapes/polygon.md
+                - name: Ломаная линия
+                  href: user-interface/shapes/polyline.md
+                - name: Прямоугольник
+                  href: user-interface/shapes/rectangle.md
             - name: Экран-заставка
               href: user-interface/splashscreen.md
             - name: Стили
@@ -768,7 +794,7 @@
           items:
             - name: Собственные представления в XAML
               href: platform/native-views/xaml.md
-            - name: 'Собственные представления в C#'
+            - name: Собственные представления в C#
               href: platform/native-views/code.md
         - name: Вход с помощью Apple
           href: platform/sign-in-with-apple/index.md
@@ -782,7 +808,7 @@
         - name: Другие платформы
           href: platform/other/index.md
           items:
-            - name: 'GTK#'
+            - name: GTK#
               href: platform/other/gtk.md
             - name: Mac
               href: platform/other/mac.md
