@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Permissions"; описание: "В этом документе описывается класс Permissions в Xamarin.Essentials, который позволяет проверять и запрашивать разрешения среды выполнения".
-ms.assetid: 34062D84-3E55-4AF7-A688-8551068B1E57 author: jamesmontemagno ms.author: jamont ms.custom: video ms.date: 06.01.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Разрешения
+description: В этом документе описывается класс Permissions в Xamarin.Essentials, который позволяет проверять и запрашивать разрешения среды выполнения.
+ms.assetid: 34062D84-3E55-4AF7-A688-8551068B1E57
+author: jamesmontemagno
+ms.author: jamont
+ms.custom: video
+ms.date: 01/06/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5de10511d73614570d6308b6f4deb7b4ca55549a
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802232"
 ---
-
 # <a name="xamarinessentials-permissions"></a>Xamarin.Essentials. Разрешения
 
 Класс **Permissions** позволяет проверять и запрашивать разрешения среды выполнения.
@@ -214,7 +227,7 @@ await Permissions.RequestAsync<ReadWriteStoragePermission>();
 
 ## <a name="api"></a>API
 
-- [Исходный код разрешений](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Permissions)
+- [Исходный код разрешений](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Permissions)
 - [Документация по API разрешений](xref:Xamarin.Essentials.Permissions)
 
 

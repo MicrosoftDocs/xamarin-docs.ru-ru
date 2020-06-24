@@ -1,8 +1,23 @@
 ---
-title: "Сводная информация о главе 23 (Триггеры и реакции на событие)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 23 (Триггеры и реакции на событие)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 19E84B5D-46B4-4B6D-A255-87BEFB011261 author: davidbritch ms.author: dabritch ms.date: 11/07/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Сводка по главе 23. Триггеры и реакции на событие
+description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 23. Триггеры и реакции на событие
+ms.prod: xamarin
+ms.technology: xamarin-forms
+ms.assetid: 19E84B5D-46B4-4B6D-A255-87BEFB011261
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/07/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9a0206354254f79756e29f834c85837240736eca
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136660"
 ---
-
-# <a name="summary-of-chapter-23-triggers-and-behaviors"></a>Сводная информация о главе 23. Триггеры и реакции на событие
+# <a name="summary-of-chapter-23-triggers-and-behaviors"></a>Сводка по главе 23. Триггеры и реакции на событие
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23)
 

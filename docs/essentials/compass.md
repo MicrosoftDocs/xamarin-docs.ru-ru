@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Compass"; описание: "В этом документе описывается класс Compass в Xamarin.Essentials, который позволяет отслеживать направление устройства на северный магнитный полюс".
-ms.assetid: BF85B0C3-C686-43D9-811A-07DCAF8CDD86 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Компас
+description: В этом документе описывается класс Compass в Xamarin.Essentials, который позволяет отслеживать направление устройства на северный магнитный полюс.
+ms.assetid: BF85B0C3-C686-43D9-811A-07DCAF8CDD86
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 11/04/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f85c6c1d262606ce75131e6ba39f326526bb8eb7
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802470"
 ---
-
 # <a name="xamarinessentials-compass"></a>Xamarin.Essentials. Компас
 
 Класс **Compass** позволяет отслеживать направление устройства на северный магнитный полюс.
@@ -87,7 +100,7 @@ Compass.Start(SensorSpeed.UI, applyLowPassFilter: true);
 
 ## <a name="api"></a>API
 
-- [Исходный код Compass](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Compass)
+- [Исходный код Compass](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Compass)
 - [Документация по API Compass](xref:Xamarin.Essentials.Compass)
 
 ## <a name="related-video"></a>Связанные видео

@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Battery"; описание: "В этом документе описан класс Battery в Xamarin.Essentials, который позволяет проверить информацию об аккумуляторе устройства и отслеживать изменения".
-ms.assetid: 47EB26D8-8C62-477B-A13C-6977F74E6E43 author: jamesmontemagno ms.author: jamont ms.date: 22.01.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Батарея
+description: В этом документе описан класс Battery в Xamarin.Essentials, который позволяет проверить информацию об аккумуляторе устройства и отслеживать изменения.
+ms.assetid: 47EB26D8-8C62-477B-A13C-6977F74E6E43
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 01/22/2019
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 3138db09c2a3d343f36aa48f561930df47f48ae6
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802474"
 ---
-
 # <a name="xamarinessentials-battery"></a>Xamarin.Essentials. Батарея
 
 Класс **Battery** позволяет получать сведения о батарее устройства, отслеживать изменения и просматривать информацию о состоянии энергосбережения (находится ли устройство в режиме пониженного энергопотребления). Приложениям следует избегать фоновой обработки, если на устройстве включено состояние экономии электроэнергии.
@@ -171,7 +184,7 @@ public class EnergySaverTest
 
 ## <a name="api"></a>API
 
-- [Исходный код Battery](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Battery)
+- [Исходный код Battery](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Battery)
 - [Документация по API аккумулятора](xref:Xamarin.Essentials.Battery)
 
 ## <a name="related-video"></a>Связанные видео

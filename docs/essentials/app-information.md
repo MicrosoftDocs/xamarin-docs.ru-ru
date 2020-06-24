@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Сведения о приложении"; описание: "В этом документе описывается класс AppInfo в Xamarin.Essentials, с помощью которого можно получить сведения о вашем приложении. Например, он предоставляет имя и версию приложения".
-ms.assetid: 15924FCB-19E0-45B2-944E-E94FD7AE12FA author: jamesmontemagno ms.author: jamont ms.date: 29.01.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Сведения о приложении
+description: В этом документе описывается класс AppInfo в Xamarin.Essentials, с помощью которого можно получить сведения о вашем приложении. Например, он предоставляет имя и версию приложения.
+ms.assetid: 15924FCB-19E0-45B2-944E-E94FD7AE12FA
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 01/29/2019
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 1a8673e7c405660355e3a849e6ef1709fd2980a4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802522"
 ---
-
 # <a name="xamarinessentials-app-information"></a>Xamarin.Essentials. Сведения о приложении
 
 Класс **AppInfo** предоставляет сведения о приложении.
@@ -81,7 +94,7 @@ AppInfo.ShowSettingsUI();
 
 ## <a name="api"></a>API
 
-- [Исходный код AppInfo](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/AppInfo)
+- [Исходный код AppInfo](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/AppInfo)
 - [Документация по API AppInfo](xref:Xamarin.Essentials.AppInfo)
 
 ## <a name="related-video"></a>Связанные видео

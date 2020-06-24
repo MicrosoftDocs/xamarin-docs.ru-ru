@@ -1,8 +1,22 @@
 ---
-title: "Настройка ViewCell" description: "ViewCell в Xamarin.Forms — это ячейка, которую можно добавить в представление ListView или TableView и которая содержит представления, определяемые разработчиком. В этой статье показано, как создать пользовательский отрисовщик для ячейки ViewCell, размещенной в элементе управления ListView Xamarin.Forms".
-ms.prod: xamarin ms.assetid: 61F378C9-6DEF-436B-ACC3-2324B25D404E ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/07/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Настройка ViewCell
+description: ViewCell в Xamarin.Forms — это ячейка, которую можно добавить в представление ListView или TableView и которая содержит представления, определяемые разработчиком. В этой статье показано, как создать пользовательский отрисовщик для ячейки ViewCell, размещенной в элементе управления ListView Xamarin.Forms.
+ms.prod: xamarin
+ms.assetid: 61F378C9-6DEF-436B-ACC3-2324B25D404E
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 12/07/2016
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: c908da816352e8b3790ded0bef932e1485170abd
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84573876"
 ---
-
 # <a name="customizing-a-viewcell"></a>Настройка ViewCell
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-viewcell)

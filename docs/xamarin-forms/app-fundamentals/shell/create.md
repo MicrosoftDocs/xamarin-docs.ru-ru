@@ -1,8 +1,22 @@
 ---
-title: "Создание приложения оболочки Xamarin.Forms" description: "Чтобы создать приложение оболочки Xamarin.Forms, нужно создать XAML-файл, в котором, в свою очередь, создается производный класс Shell, задаются свойства MainPage класса App приложения для подкласса объекта Shell и описывается визуальная иерархия приложения в производном классе Shell".
-ms.prod: xamarin ms.assetid: 2A51D78F-6CD5-4BC4-A62E-11CEFA799987 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/24/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Создание приложения оболочки Xamarin.Forms
+description: Чтобы создать приложение оболочки Xamarin.Forms, нужно создать XAML-файл, в котором, в свою очередь, создается подкласс Shell, задаются свойства MainPage класса App приложения для подкласса объекта Shell и описывается визуальная иерархия приложения в подклассе Shell.
+ms.prod: xamarin
+ms.assetid: 2A51D78F-6CD5-4BC4-A62E-11CEFA799987
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/24/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 62c323dd73f656d5b4f4e06c672fd952845efb22
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137804"
 ---
-
 # <a name="create-a-xamarinforms-shell-application"></a>Создание приложения оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)

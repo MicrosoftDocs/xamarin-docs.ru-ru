@@ -1,8 +1,23 @@
 ---
-title: "Сводная информация о главе 24 (Переход по страницам)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 24 (Переход по страницам)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: DDCDB49C-6008-4F72-B095-463EE21D7C23 author: davidbritch ms.author: dabritch ms.date: 11/07/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Сводка по главе 24. Переход по страницам
+description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 24. Переход по страницам
+ms.prod: xamarin
+ms.technology: xamarin-forms
+ms.assetid: DDCDB49C-6008-4F72-B095-463EE21D7C23
+author: davidbritch
+ms.author: dabritch
+ms.date: 11/07/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 09622adc269027b589a7345a7d4411c3dcecbf0c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136647"
 ---
-
-# <a name="summary-of-chapter-24-page-navigation"></a>Сводная информация о главе 24. Переход по страницам
+# <a name="summary-of-chapter-24-page-navigation"></a>Сводка по главе 24. Переход по страницам
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter24)
 

@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Геокодирование"; описание: "Класс Geocoding в Xamarin.Essentials предоставляет API-интерфейсы для геокодирования метки в позиционные координаты и обратного геокодирования координат в метку".
-ms.assetid: 3ADC440C-B000-4708-A2CC-296F5160AF90 author: jamesmontemagno ms.author: jamont ms.date: 28.05.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Геокодирование
+description: Класс Geocoding в Xamarin.Essentials предоставляет интерфейсы API для геокодирования метки в позиционные координаты и обратного геокодирования координат в метку.
+ms.assetid: 3ADC440C-B000-4708-A2CC-296F5160AF90
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 05/28/2019
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 66383e441435b5f4bdb48224c9ab602f28072b3d
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802337"
 ---
-
 # <a name="xamarinessentials-geocoding"></a>Xamarin.Essentials. Геокодирование
 
 Класс **Geocoding** предоставляет API-интерфейсы для геокодирования метки в позиционные координаты и обратного геокодирования координат в метку.
@@ -113,7 +126,7 @@ catch (Exception ex)
 
 ## <a name="api"></a>API
 
-- [Исходный код Geocoding](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Geocoding)
+- [Исходный код Geocoding](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Geocoding)
 - [Документация по API Geocoding](xref:Xamarin.Essentials.Geocoding)
 
 ## <a name="related-video"></a>Связанные видео

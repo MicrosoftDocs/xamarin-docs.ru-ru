@@ -1,8 +1,21 @@
 ---
-title: "Xamarin.Essentials: Accelerometer" description: "Класс Accelerometer в Xamarin.Essentials позволяет считывать данные с датчика акселерометра устройства, который показывает ускорение устройства в трехмерном пространстве".
-ms.assetid: 97883573-F0D9-4854-AC7C-A654814401C5 author: jamesmontemagno ms.author: jamont ms.date: 02.04.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Акселерометр
+description: Класс Accelerometer в Xamarin.Essentials позволяет отслеживать показатели акселерометра устройства, который показывает ускорение устройства в трехмерном пространстве.
+ms.assetid: 97883573-F0D9-4854-AC7C-A654814401C5
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 04/02/2019
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f3d7b313039e66294a0095fd34a2caa6689cef2e
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802534"
 ---
-
 # <a name="xamarinessentials-accelerometer"></a>Xamarin.Essentials. Акселерометр
 
 Класс **Accelerometer** позволяет считывать данные с датчика акселерометра устройства, который показывает ускорение устройства в трехмерном пространстве.
@@ -80,7 +93,7 @@ public class AccelerometerTest
 
 ## <a name="api"></a>API
 
-- [Исходный код класса Accelerometer](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Accelerometer)
+- [Исходный код класса Accelerometer](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Accelerometer)
 - [Документация по API Accelerometer](xref:Xamarin.Essentials.Accelerometer)
 
 ## <a name="related-video"></a>Связанные видео

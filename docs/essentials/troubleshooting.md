@@ -1,8 +1,20 @@
 ---
-title: "Xamarin.Essentials: устранение неполадок'' description: "В этом документе описывается, как устранять неполадки, возникающие при разработке с помощью библиотеки Xamarin.Essentials".
-ms.assetid: 2E474FAF-F841-4E3C-B815-F7ABD8EE3361 author: jamesmontemagno ms.author: jamont ms.date: 06.01.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Устранение неполадок
+description: В этом документе описывается, как устранять неполадки, возникающие при разработке с помощью библиотеки Xamarin.Essentials.
+ms.assetid: 2E474FAF-F841-4E3C-B815-F7ABD8EE3361
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 01/06/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 67a060667cef5f96fa864aa2db3356ac5b9b2dfb
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84137128"
 ---
-
 # <a name="xamarinessentials-troubleshooting"></a>Xamarin.Essentials. Устранение неполадок
 
 ## <a name="error-version-conflict-detected-for-xamarinandroidsupportcompat"></a>Ошибка: для Xamarin.Android.Support.Compat обнаружен конфликт версий

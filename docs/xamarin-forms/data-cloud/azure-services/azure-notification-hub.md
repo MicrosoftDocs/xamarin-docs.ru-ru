@@ -1,8 +1,23 @@
 ---
-title: "Отправка и получение push-уведомлений с помощью Центров уведомлений Azure и Xamarin.Forms" description: "Эта статья рассказывает, как использовать Центры уведомлений Azure для отправки push-уведомлений в приложения Xamarin.Forms на различных платформах".
-ms.prod: xamarin ms.assetid: 07D13195-3A0D-4C95-ACF0-143A9084973C ms.technology: xamarin-forms author: profexorgeek ms.author: jusjohns ms.date: 11/27/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials, Firebase]
+title: Отправка и получение push-уведомлений с помощью Центров уведомлений Azure и Xamarin.Forms
+description: В этой статье объясняется, как использовать Центры уведомлений Azure для отправки push-уведомлений в приложения Xamarin.Forms на различных платформах.
+ms.prod: xamarin
+ms.assetid: 07D13195-3A0D-4C95-ACF0-143A9084973C
+ms.technology: xamarin-forms
+author: profexorgeek
+ms.author: jusjohns
+ms.date: 11/27/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+- Firebase
+ms.openlocfilehash: 5f7b83c1fc907de790b382aabde0c5a957e5a8bb
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84565425"
 ---
-
 # <a name="send-and-receive-push-notifications-with-azure-notification-hubs-and-xamarinforms"></a>Отправка и получение push-уведомлений с помощью Центров уведомлений Azure и Xamarin.Forms
 
 [![Скачать пример](~/media/shared/download.png)Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-azurenotificationhub/)

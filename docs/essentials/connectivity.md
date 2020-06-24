@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Connectivity"; описание: "Класс Connectivity в Xamarin.Essentials позволяет отслеживать изменения в условиях подключения устройства к сети, проверять текущее состояние и используемый метод доступа".
-ms.assetid: E1B1F152-B1D5-4227-965E-C0AEBF528F49 author: jamesmontemagno ms.author: jamont ms.date: 08.01.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Подключение
+description: Класс Connectivity в Xamarin.Essentials позволяет отслеживать изменения в условиях подключения устройства к сети, проверять текущее состояние и используемый метод доступа.
+ms.assetid: E1B1F152-B1D5-4227-965E-C0AEBF528F49
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 01/08/2019
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 056992b06e012845755aa02b2076a1bb80c6f176
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802410"
 ---
-
 # <a name="xamarinessentials-connectivity"></a>Xamarin.Essentials. Подключение
 
 Класс **Connectivity** позволяет отслеживать изменения в условиях подключения устройства к сети, проверять текущее состояние и используемый метод доступа.
@@ -105,7 +118,7 @@ public class ConnectivityTest
 
 ## <a name="api"></a>API
 
-* [Исходный код Connectivity](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Connectivity)
+* [Исходный код Connectivity](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Connectivity)
 * [Документация по API-интерфейсу Connectivity](xref:Xamarin.Essentials.Connectivity)
 
 ## <a name="related-video"></a>Связанные видео

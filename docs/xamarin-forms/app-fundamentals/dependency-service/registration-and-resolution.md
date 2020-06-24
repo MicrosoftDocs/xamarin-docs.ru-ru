@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms — регистрация и разрешение класса DependencyService" description: "В этой статье объясняется, как использовать класс Xamarin.Forms DependencyService для вызова собственных функций платформы".
-ms.prod: xamarin ms.assetid: 5d019604-4f6f-4932-9b26-1fce3b4d88f8 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 06/05/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Регистрация и разрешение класса Xamarin.Forms DependencyService
+description: В этой статье объясняется, как использовать класс Xamarin.Forms DependencyService для вызова собственных функций платформы.
+ms.prod: xamarin
+ms.assetid: 5d019604-4f6f-4932-9b26-1fce3b4d88f8
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 06/05/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 050b53be5e4ae67e2adbc1436bbd56ff824f5f7b
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946394"
 ---
-
 # <a name="xamarinforms-dependencyservice-registration-and-resolution"></a>Регистрация и разрешение класса Xamarin.Forms DependencyService
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)
@@ -13,7 +27,7 @@ ms.prod: xamarin ms.assetid: 5d019604-4f6f-4932-9b26-1fce3b4d88f8 ms.technology:
 
 Реализации платформы должны быть зарегистрированы в [`DependencyService`](xref:Xamarin.Forms.DependencyService), чтобы платформа Xamarin.Forms могла их обнаруживать во время выполнения.
 
-Регистрацию можно выполнить с помощью [`DependencyAttribute`](xref:Xamarin.Forms.DependencyAttribute) или методов [`Register`](xref:Xamarin.Forms.DependencyService.Register*).
+Регистрацию можно выполнить с помощью [`DependencyAttribute`](xref:Xamarin.Forms.DependencyAttribute) или методов [`Register`](xref:Xamarin.Forms.DependencyService.Register*) и `RegisterSingleton`.
 
 > [!IMPORTANT]
 > Сборки выпуска проектов универсальной платформы Windows, использующие компиляцию в собственный код .NET, должны регистрировать реализации платформы с помощью методов [`Register`](xref:Xamarin.Forms.DependencyService.Register*).
@@ -49,7 +63,7 @@ namespace DependencyServiceDemos.iOS
 
 ### <a name="registration-by-method"></a>Регистрация с помощью метода
 
-Можно использовать методы [`DependencyService.Register`](xref:Xamarin.Forms.DependencyService.Register*), чтобы зарегистрировать реализацию платформы в [`DependencyService`](xref:Xamarin.Forms.DependencyService).
+Вы можете использовать методы [`DependencyService.Register`](xref:Xamarin.Forms.DependencyService.Register*) и `RegisterSingleton`, чтобы зарегистрировать реализацию платформы в [`DependencyService`](xref:Xamarin.Forms.DependencyService).
 
 В следующем примере демонстрируется использование метода [`Register`](xref:Xamarin.Forms.DependencyService.Register*) для регистрации реализации интерфейса `IDeviceOrientationService` для iOS.
 
@@ -75,10 +89,19 @@ DependencyService.Register<DeviceOrientationService>();
 
 В этом примере [`Register`](xref:Xamarin.Forms.DependencyService.Register*) регистрирует `DeviceOrientationService` в [`DependencyService`](xref:Xamarin.Forms.DependencyService). Это приводит к регистрации конкретного типа с интерфейсом, который он реализует.
 
-Аналогичным образом реализации интерфейса `IDeviceOrientationService` на других платформах можно зарегистрировать с помощью [`Register`](xref:Xamarin.Forms.DependencyService.Register*).
+Кроме того, можно зарегистрировать отдельный существующий экземпляр объекта с помощью метода `RegisterSingleton`:
+
+```csharp
+var service = new DeviceOrientationService();
+DependencyService.RegisterSingleton<IDeviceOrientationService>(service);
+```
+
+В этом примере метод `RegisterSingleton` регистрирует отдельный экземпляр объекта `DeviceOrientationService` с интерфейсом `IDeviceOrientationService`.
+
+Аналогичным образом реализации интерфейса `IDeviceOrientationService` на других платформах можно зарегистрировать с помощью методов [`Register`](xref:Xamarin.Forms.DependencyService.Register*) или `RegisterSingleton`.
 
 > [!IMPORTANT]
-> Регистрация с помощью методов [`Register`](xref:Xamarin.Forms.DependencyService.Register*) должна выполняться в проектах платформы до того, как функции, предоставляемые реализацией платформы, будут вызваны из общего кода.
+> Регистрация с помощью методов [`Register`](xref:Xamarin.Forms.DependencyService.Register*) и `RegisterSingleton` должна выполняться в проектах платформы до того, как функции, предоставляемые реализацией платформы, будут вызваны из общего кода.
 
 ## <a name="resolve-the-platform-implementations"></a>Разрешение реализаций платформы
 
@@ -91,7 +114,12 @@ DependencyService.Register<DeviceOrientationService>();
 
 ### <a name="resolve-using-the-getlttgt-method"></a>Разрешение с помощью метода Get&lt;T&gt;
 
-Метод [`Get<T>`](xref:Xamarin.Forms.DependencyService.Get*) извлекает реализуемый платформой интерфейс `T` во время выполнения и создает его отдельный экземпляр. Этот экземпляр существует в течение всего времени существования приложения, и его будут получать все последующие вызовы для разрешения той же реализации платформы.
+Метод [`Get<T>`](xref:Xamarin.Forms.DependencyService.Get*) извлекает реализуемый платформой интерфейс `T` во время выполнения и:
+
+- либо создает его отдельный экземпляр;
+- либо возвращает отдельный существующий экземпляр, зарегистрированный с помощью `DependencyService` методом `RegisterSingleton`.
+
+В обоих случаях этот экземпляр существует в течение всего времени существования приложения и его будут получать все последующие вызовы для разрешения той же реализации платформы.
 
 Следующий пример кода демонстрирует вызов метода [`Get<T>`](xref:Xamarin.Forms.DependencyService.Get*) для разрешения интерфейса `IDeviceOrientationService` и последующего вызова его метода `GetOrientation`:
 
@@ -107,7 +135,7 @@ DeviceOrientation orientation = DependencyService.Get<IDeviceOrientationService>
 ```
 
 > [!NOTE]
-> По умолчанию метод [`Get<T>`](xref:Xamarin.Forms.DependencyService.Get*) создает отдельный экземпляр интерфейса `T`, реализуемого платформой. Но такое поведение можно изменить. Дополнительные сведения см. в разделе [Управлении временем существования разрешенных объектов](#manage-the-lifetime-of-resolved-objects).
+> По умолчанию метод [`Get<T>`](xref:Xamarin.Forms.DependencyService.Get*) возвращает отдельный экземпляр интерфейса `T`, реализуемого платформой. Хотя это можно изменить. Дополнительные сведения см. в разделе [Управлении временем существования разрешенных объектов](#manage-the-lifetime-of-resolved-objects).
 
 ### <a name="resolve-using-the-resolvelttgt-method"></a>Разрешение с помощью метода Resolve&lt;T&gt;
 
@@ -127,7 +155,7 @@ DeviceOrientation orientation = DependencyService.Resolve<IDeviceOrientationServ
 ```
 
 > [!NOTE]
-> Когда метод [`Resolve<T>`](xref:Xamarin.Forms.DependencyService.Resolve*) переключается на вызов метода [`Get<T>`](xref:Xamarin.Forms.DependencyService.Get*), он по умолчанию создает отдельный экземпляр интерфейса `T`, реализуемого платформой. Хотя это можно изменить. Дополнительные сведения см. в разделе [Управлении временем существования разрешенных объектов](#manage-the-lifetime-of-resolved-objects).
+> Когда метод [`Resolve<T>`](xref:Xamarin.Forms.DependencyService.Resolve*) переключается на вызов метода [`Get<T>`](xref:Xamarin.Forms.DependencyService.Get*), он по умолчанию возвращает отдельный экземпляр интерфейса `T`, реализуемого платформой. Хотя это можно изменить. Дополнительные сведения см. в разделе [Управлении временем существования разрешенных объектов](#manage-the-lifetime-of-resolved-objects).
 
 ## <a name="manage-the-lifetime-of-resolved-objects"></a>Управлении временем существования разрешенных объектов
 

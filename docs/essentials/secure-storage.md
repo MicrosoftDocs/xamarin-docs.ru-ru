@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Защищенное хранилище"; описание: "В этом документе описан класс SecureStorage в Xamarin.Essentials, который организует безопасное хранение пар "ключ-значение". В документе рассматривается использование класса, особенности реализации для платформ и существующие ограничения".
-ms.assetid: 78856C0D-76BB-406E-A880-D5A3987B7D64 author: jamesmontemagno ms.author: jamont ms.date: 02.04.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Защищенное хранилище
+description: В этом документе описан класс SecureStorage в Xamarin.Essentials, который позволяет реализовать безопасное хранение пар "ключ-значение". Здесь рассматривается использование класса, особенности реализации для платформ и существующие ограничения.
+ms.assetid: 78856C0D-76BB-406E-A880-D5A3987B7D64
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 04/02/2019
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 061bc1cfe785ad080092ba21340f7d38bc499ed9
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84801950"
 ---
-
 # <a name="xamarinessentials-secure-storage"></a>Xamarin.Essentials. Защищенное хранилище
 
 Класс **SecureStorage** помогает обеспечить безопасное хранение пар "ключ-значение".
@@ -155,7 +168,7 @@ SecureStorage.RemoveAll();
 
 ## <a name="api"></a>API
 
-- [Исходный код SecureStorage](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/SecureStorage)
+- [Исходный код SecureStorage](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/SecureStorage)
 - [Документация по API SecureStorage](xref:Xamarin.Essentials.SecureStorage)
 
 ## <a name="related-video"></a>Связанные видео

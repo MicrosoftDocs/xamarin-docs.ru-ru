@@ -1,8 +1,21 @@
 ---
-title: "Xamarin.Essentials Launcher"; описание: "Класс Launcher в Xamarin.Essentials позволяет приложению открыть URI средствами системы".
-ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 20.08.2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Класс Launcher в Xamarin.Essentials
+description: Класс Launcher в Xamarin.Essentials позволяет приложению открыть URI средствами системы.
+ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 08/20/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: dcb236c47cf2eec77b3b90da798b0cf0d58f3c1d
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802305"
 ---
-
 # <a name="xamarinessentials-launcher"></a>Xamarin.Essentials. Средство запуска
 
 Класс **Launcher** позволяет приложению открыть URI средствами системы. Это часто используется при глубокой привязке к пользовательским схемам URI другого приложения. Если нужно открыть в браузере веб-сайт, следует обратиться к API **[Browser](open-browser.md)** .
@@ -108,7 +121,7 @@ await Launcher.OpenAsync(new OpenFileRequest
 
 ## <a name="api"></a>API
 
-- [Исходный код класса Launcher](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Launcher)
+- [Исходный код класса Launcher](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Launcher)
 - [Документация по API Launcher](xref:Xamarin.Essentials.Launcher)
 
 ## <a name="related-video"></a>Связанные видео

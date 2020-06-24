@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Вспомогательные методы файловой системы"; описание: "Класс FileSystem в Xamarin.Essentials содержит ряд вспомогательных функций для поиска кэша приложения, каталогов данных и открытых файлов в пакете приложения".
-ms.assetid: B3EC2DE0-EFC0-410C-AF71-7410AE84CF84 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Вспомогательные методы для файловой системы
+description: Класс FileSystem в Xamarin.Essentials содержит ряд вспомогательных функций для поиска кэша приложения, каталогов данных и открытых файлов в пакете приложения.
+ms.assetid: B3EC2DE0-EFC0-410C-AF71-7410AE84CF84
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 11/04/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 5fafc24d9c4bd35d4ef0010ae4530341316c878a
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802367"
 ---
-
 # <a name="xamarinessentials-file-system-helpers"></a>Xamarin.Essentials. Вспомогательные методы для файловой системы
 
 Класс **FileSystem** содержит ряд вспомогательных функций для поиска кэша приложения, каталогов данных и открытых файлов в пакете приложения.
@@ -70,7 +83,7 @@ var mainDir = FileSystem.AppDataDirectory;
 
 ## <a name="api"></a>API
 
-- [Исходный код вспомогательных функций класса FileSystem](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/FileSystem)
+- [Исходный код вспомогательных функций класса FileSystem](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/FileSystem)
 - [Документация по API файловой системы](xref:Xamarin.Essentials.FileSystem)
 
 ## <a name="related-video"></a>Связанные видео

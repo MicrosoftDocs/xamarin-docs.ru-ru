@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Geolocation"; описание: "В этом документе описан класс Geolocation в Xamarin.Essentials, который предоставляет API для получения текущих геолокационных координат устройства".
-ms.assetid: 8F66092C-13F0-4FEE-8AA5-901D5F79B357 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 13.03.2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Геопозиционирование
+description: В этом документе описан класс Geolocation в Xamarin.Essentials, который предоставляет интерфейсы API для получения текущих геолокационных координат устройства.
+ms.assetid: 8F66092C-13F0-4FEE-8AA5-901D5F79B357
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 03/13/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f54c31afef691d316cbc3108792ab3158359c47c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802329"
 ---
-
 # <a name="xamarinessentials-geolocation"></a>Xamarin.Essentials. Геопозиционирование
 
 Класс **Geolocation** предоставляет API для получения текущих геолокационных координат устройства.
@@ -231,7 +244,7 @@ double miles = Location.CalculateDistance(boston, sanFrancisco, DistanceUnits.Mi
 
 ## <a name="api"></a>API
 
-- [Geolocation source code](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Geolocation) (Исходный код для геолокации)
+- [Geolocation source code](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Geolocation) (Исходный код для геолокации)
 - [Документация по API геолокации](xref:Xamarin.Essentials.Geolocation)
 
 ## <a name="related-video"></a>Связанные видео

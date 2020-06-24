@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Preferences"; описание: "В этом документе описан класс Preferences в Xamarin.Essentials, который сохраняет параметры приложения в хранилище ключей и значений. Здесь рассматривается использование класса и типы данных, которые можно сохранить".
-ms.assetid: AA81BCBD-79BA-448F-942B-BA4415CA50FF author: jamesmontemagno ms.author: jamont ms.date: 15.01.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Параметры
+description: В этом документе описан класс Preferences в Xamarin.Essentials, который позволяет сохранять параметры приложения в хранилище данных типа "ключ-значение". Здесь рассматривается использование класса и типы данных, которые можно сохранить.
+ms.assetid: AA81BCBD-79BA-448F-942B-BA4415CA50FF
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 01/15/2019
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: acc0c48776c7a91e9e5a060928564bc6e0c1d775
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84801820"
 ---
-
 # <a name="xamarinessentials-preferences"></a>Xamarin.Essentials. Параметры
 
 Класс **Preferences** помогает хранить параметры приложения в хранилище ключей и значений.
@@ -104,7 +117,7 @@ Preferences.Clear();
 
 ## <a name="api"></a>API
 
-- [Исходный код класса Preferences](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Preferences)
+- [Исходный код класса Preferences](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Preferences)
 - [Документация по API параметров](xref:Xamarin.Essentials.Preferences)
 
 ## <a name="related-video"></a>Связанные видео

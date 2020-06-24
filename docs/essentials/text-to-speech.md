@@ -1,8 +1,21 @@
 ---
-title: "Xamarin.Essentials: преобразование текста в речь'' description: "Класс TextToSpeech в Xamarin.Essentials позволяет приложению использовать встроенные механизмы преобразования текста в речь, чтобы озвучивать текст на устройстве, а также запрашивать доступные языки, которые может поддерживать подсистема".
-ms.assetid: AEEF03AE-A047-4DF0-B0E8-CC8D9A7B8351 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Преобразование текста в речь
+description: Класс TextToSpeech в Xamarin.Essentials позволяет приложению использовать встроенные механизмы преобразования текста в речь, чтобы озвучивать текст на устройстве, а также запрашивать доступные языки, которые может поддерживать подсистема.
+ms.assetid: AEEF03AE-A047-4DF0-B0E8-CC8D9A7B8351
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 11/04/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 452a54637c270f80c2e1add4d6cadedbb4b27077
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84801833"
 ---
-
 # <a name="xamarinessentials-text-to-speech"></a>Xamarin.Essentials. Преобразование текста в речь
 
 Класс **TextToSpeech** позволяет приложению использовать встроенные механизмы преобразования текста в речь, чтобы озвучивать текст на устройстве, а также запрашивать доступные языки, которые может поддерживать подсистема.
@@ -139,7 +152,7 @@ public async Task SpeakNow()
 
 ## <a name="api"></a>API
 
-- [Исходный код TextToSpeech](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/TextToSpeech)
+- [Исходный код TextToSpeech](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/TextToSpeech)
 - [Документация по API TextToSpeech](xref:Xamarin.Essentials.TextToSpeech)
 
 ## <a name="related-video"></a>Связанные видео

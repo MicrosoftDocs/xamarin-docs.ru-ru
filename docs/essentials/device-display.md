@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Сведения о дисплее устройства"; описание: "В этом документе описан класс DeviceDisplay в Xamarin.Essentials, который предоставляет метрики экрана для устройства, на котором работает приложение".
-ms.assetid: 2821C908-C613-490D-8E8C-1BD3269FCEEA author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Сведения о дисплее устройства
+description: В этом документе описан класс DeviceDisplay в Xamarin.Essentials, который предоставляет метрики экрана для устройства, на котором работает приложение.
+ms.assetid: 2821C908-C613-490D-8E8C-1BD3269FCEEA
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 11/04/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 867e6bd1828d4158f70226dbaad678f9d6037bb0
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802397"
 ---
-
 # <a name="xamarinessentials-device-display-information"></a>Xamarin.Essentials. Сведения о дисплее устройства
 
 Класс **DeviceDisplay** предоставляет сведения о метриках экрана устройства, на котором запущено приложение. Он также позволяет запросить, чтобы при работе приложения устройство не переводилось в спящий режим.
@@ -92,7 +105,7 @@ public class KeepScreenOnTest
 
 ## <a name="api"></a>API
 
-- [Исходный код DeviceDisplay](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/DeviceDisplay)
+- [Исходный код DeviceDisplay](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/DeviceDisplay)
 - [Документация по API DeviceDisplay](xref:Xamarin.Essentials.DeviceDisplay)
 
 ## <a name="related-video"></a>Связанные видео

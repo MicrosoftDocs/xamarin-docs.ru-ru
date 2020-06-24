@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Vibration"; описание: "В этом документе описан класс Vibration в Xamarin.Essentials, который позволяет запускать и останавливать вибрацию в течение требуемого времени".
-ms.assetid: 7E8B24C4-2625-4DAE-A129-383542D34F1E author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Вибрация
+description: В этом документе описан класс Vibration в Xamarin.Essentials, который позволяет запускать и останавливать вибрацию в течение требуемого времени.
+ms.assetid: 7E8B24C4-2625-4DAE-A129-383542D34F1E
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 11/04/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: e2ed2dfdca6b6811089d4dbb5d6e90e794c79591
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84801807"
 ---
-
 # <a name="xamarinessentials-vibration"></a>Xamarin.Essentials. Вибрация
 
 Класс **Vibration** позволяет запускать и останавливать вибрацию в течение требуемого времени.
@@ -110,7 +123,7 @@ catch (Exception ex)
 
 ## <a name="api"></a>API
 
-- [Исходный код класса Vibration](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Vibration)
+- [Исходный код класса Vibration](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Vibration)
 - [Документация по API вибрации](xref:Xamarin.Essentials.Vibration)
 
 ## <a name="related-video"></a>Связанные видео

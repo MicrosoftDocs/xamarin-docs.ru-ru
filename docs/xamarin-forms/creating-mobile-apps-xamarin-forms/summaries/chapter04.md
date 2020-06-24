@@ -1,7 +1,22 @@
 ---
-title: "Сводная информация о главе 4. Прокрутка стека"; описание: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о Главе 4. Прокрутка стека"; ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 7A39FD4F-15AD-4F94-960E-9FEEB63FFD44 author: davidbritch ms.author: dabritch ms.date: 19.07.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Сводная информация о Главе 4. Прокрутка стека
+description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о Главе 4. Прокрутка стека
+ms.prod: xamarin
+ms.technology: xamarin-forms
+ms.assetid: 7A39FD4F-15AD-4F94-960E-9FEEB63FFD44
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/19/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 6b86bfe1e343cd50f4a133726d16364b3efb8bee
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84198276"
 ---
-
 # <a name="summary-of-chapter-4-scrolling-the-stack"></a>Сводная информация о Главе 4. Прокрутка стека
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter04)

@@ -1,8 +1,22 @@
 ---
-title: "Возможности устройства с двумя экранами Xamarin.Forms" description: "В этом руководстве рассматривается использование класса DualScreenInfo из Xamarin.Forms для оптимизации интерфейса приложения на двухэкранных устройствах, таких как Surface Duo и Surface Neo".
-ms.prod: xamarin ms.assetid: dd5eb074-f4cb-4ab4-b47d-76f862ac7cfa ms.technology: xamarin-forms author: davidortinau ms.author: daortin ms.date: 02/08/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Возможности устройства с двумя экранами Xamarin.Forms
+description: В этом руководстве рассматривается использование класса DualScreenInfo из Xamarin.Forms для оптимизации интерфейса приложения на двухэкранных устройствах, таких как Surface Duo и Surface Neo.
+ms.prod: xamarin
+ms.assetid: dd5eb074-f4cb-4ab4-b47d-76f862ac7cfa
+ms.technology: xamarin-forms
+author: davidortinau
+ms.author: daortin
+ms.date: 05/19/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 12f3ac86d2418c6516d000371753fc8ae65d557c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946355"
 ---
-
 # <a name="xamarinforms-dual-screen-device-capabilities"></a>Возможности устройства с двумя экранами Xamarin.Forms
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
@@ -18,15 +32,15 @@ ms.prod: xamarin ms.assetid: dd5eb074-f4cb-4ab4-b47d-76f862ac7cfa ms.technology:
 - `IsLandscape` указывает, находится ли устройство в альбомной ориентации. Это полезно, поскольку собственные API-интерфейсы устройства неверно сообщают ориентацию, когда приложение расширено на два экрана.
 - `SpanMode` указывает режим макета: вертикальный, горизонтальный или однопанельный.
 
-Кроме того, событие `PropertyChanged` активируется при изменении каких-либо свойств.
+Кроме того, событие `PropertyChanged` срабатывает при изменении каких-либо свойств, а событие `HingeAngleChanged` срабатывает при изменении угла сгиба.
 
-## <a name="poll-hinge-angle-on-android"></a>Запрос угла сгиба на Android
+## <a name="poll-hinge-angle-on-android-and-uwp"></a>Запрос угла сгиба на Android и UWP
 
-Следующее свойство доступно только при обращении к `DualScreenInfo` из проекта на платформе Android:
+Следующий метод доступен при обращении к `DualScreenInfo` из проектов на платформе Android и UWP:
 
 - `GetHingeAngleAsync` получает текущий угол сгиба устройства. При использовании симулятора свойство HingeAngle можно задать путем изменения значения датчика давления.
 
-Это свойство можно использовать из пользовательского отрисовщика Android:
+Этот метод можно вызвать из пользовательских отрисовщиков в Android и UWP. В следующем примере кода показан пользовательский отрисовщик для Android:
 
 ```csharp
 public class HingeAngleLabelRenderer : Xamarin.Forms.Platform.Android.FastRenderers.LabelRenderer

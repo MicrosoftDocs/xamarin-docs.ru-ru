@@ -1,8 +1,21 @@
 ---
-title: "Xamarin.Essentials: отслеживание версий'' description: "Класс VersionTracking в Xamarin.Essentials позволяет проверить версию и номера сборки приложений, а также просмотреть дополнительные сведения, например запущено ли приложение впервые, или получить сведения о предыдущей сборке для текущей версии и многое другое".
-ms.assetid: 670C7E8A-E882-4AC0-97D2-A53D90ADD6A3 author: jamesmontemagno ms.author: jamont ms.date: 28.05.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Отслеживание версий
+description: Класс VersionTracking в Xamarin.Essentials позволяет проверить версию и номера сборки приложений, а также просмотреть дополнительные сведения, например запущено ли приложение впервые, или получить сведения о предыдущей сборке для текущей версии и многое другое.
+ms.assetid: 670C7E8A-E882-4AC0-97D2-A53D90ADD6A3
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 05/28/2019
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 20819d76c23ca43f60073bcc2cd762abda280374
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802038"
 ---
-
 # <a name="xamarinessentials-version-tracking"></a>Xamarin.Essentials. Отслеживание версий
 
 Класс **VersionTracking** позволяет проверить версию и номера сборки приложений, а также просмотреть дополнительные сведения, например, запущено ли приложение впервые или получение сведений о предыдущей сборке для текущей версии и многое другое.
@@ -69,7 +82,7 @@ var buildHistory = VersionTracking.BuildHistory;
 
 ## <a name="api"></a>API
 
-- [Исходный код для отслеживания версий](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/VersionTracking)
+- [Исходный код для отслеживания версий](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/VersionTracking)
 - [Документация по API отслеживания версий](xref:Xamarin.Essentials.VersionTracking)
 
 ## <a name="related-video"></a>Связанные видео

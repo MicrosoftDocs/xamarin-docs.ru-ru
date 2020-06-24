@@ -1,8 +1,20 @@
 ---
-название: "Xamarin.Essentials: Веб-средство проверки подлинности"; описание: "В этом документе описывается класс WebAuthenticator в Xamarin.Essentials. Он позволяет запускать потоки проверки подлинности на основе браузера, ожидающие обратный вызов приложения".
-ms.assetid: 3D95371E-5D59-440E-8D31-F3C04E493DC1 author: redth ms.author: jodick ms.date: 26.03.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Веб-средство проверки подлинности
+description: В этом документе описывается класс WebAuthenticator в Xamarin.Essentials. Он позволяет запускать потоки проверки подлинности на основе браузера, ожидающие обратный вызов приложения.
+ms.assetid: 3D95371E-5D59-440E-8D31-F3C04E493DC1
+author: redth
+ms.author: jodick
+ms.date: 03/26/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 578e750afd718c684d70217355629a0286d2b028
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84801885"
 ---
-
 # <a name="xamarinessentials-web-authenticator"></a>Xamarin.Essentials. Веб-средство проверки подлинности
 
 Класс **WebAuthenticator** позволяет запускать потоки на основе браузера, которые ожидают обратного вызова по определенному URL-адресу, зарегистрированному за приложением.
@@ -220,6 +232,6 @@ public class AuthController : ControllerBase
 -----
 ## <a name="api"></a>API
 
-- [Исходный код WebAuthenticator](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/WebAuthenticator)
+- [Исходный код WebAuthenticator](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/WebAuthenticator)
 - [Документация по API WebAuthenticator](xref:Xamarin.Essentials.WebAuthenticator)
 - [Пример для сервера ASP.NET Core](https://github.com/xamarin/Essentials/blob/develop/Samples/Sample.Server.WebAuthenticator/)

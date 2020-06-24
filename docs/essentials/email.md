@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Email"; описание: "Класс Email в Xamarin.Essentials позволяет приложению открывать приложение электронной почты по умолчанию с указанной информацией, включая тему, текст и получателей (TO, CC, BCC)".
-ms.assetid: 5FBB6FF0-0E7B-4C29-8F06-91642AF12629 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 20.08.2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Адрес эл. почты
+description: Класс Email в Xamarin.Essentials позволяет приложению открывать приложение электронной почты по умолчанию с указанной информацией, включая тему, текст и получателей (TO, CC, BCC).
+ms.assetid: 5FBB6FF0-0E7B-4C29-8F06-91642AF12629
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 08/20/2019
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: eba2b6decc74c63e6b2790287842e6cc9b237bd2
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802375"
 ---
-
 # <a name="xamarinessentials-email"></a>Xamarin.Essentials. Адрес эл. почты
 
 Класс **Email** позволяет приложению открывать приложение электронной почты по умолчанию с указанной информацией, включая тему, текст и получателей (TO, CC, BCC).
@@ -95,7 +108,7 @@ await Email.ComposeAsync(message);
 
 ## <a name="api"></a>API
 
-- [Исходный код Email](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Email)
+- [Исходный код Email](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Email)
 - [Документация по API Email](xref:Xamarin.Essentials.Email)
 
 ## <a name="related-video"></a>Связанные видео

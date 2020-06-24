@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Сведения об устройстве"; описание: "В этом документе описывается класс DeviceInfo в Xamarin.Essentials, с помощью которого можно получить сведения об устройстве, на котором выполняется приложение".
-ms.assetid: A1AC5373-926A-4FB6-8D7D-4B87EB8EB522 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Сведения об устройстве
+description: В этом документе описывается класс DeviceInfo в Xamarin.Essentials, позволяющий получить сведения об устройстве, на котором выполняется приложение.
+ms.assetid: A1AC5373-926A-4FB6-8D7D-4B87EB8EB522
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 11/04/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 70619097baa2c5f10321835b087f693c4fbac0c4
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802388"
 ---
-
 # <a name="xamarinessentials-device-information"></a>Xamarin.Essentials. Сведения об устройстве
 
 Класс **DeviceInfo** предоставляет сведения об устройстве, в котором выполняется приложение.
@@ -78,7 +91,7 @@ iOS не предоставляет API, позволяющий разработ
 
 ## <a name="api"></a>API
 
-- [Исходный код DeviceInfo](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/DeviceInfo)
+- [Исходный код DeviceInfo](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/DeviceInfo)
 - [Документация по API DeviceInfo](xref:Xamarin.Essentials.DeviceInfo).
 
 ## <a name="related-video"></a>Связанные видео

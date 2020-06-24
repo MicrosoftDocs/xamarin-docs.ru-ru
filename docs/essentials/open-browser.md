@@ -1,8 +1,21 @@
 ---
-title: "Xamarin.Essentials Открыть браузер"; описание: "Класс Browser в Xamarin.Essentials позволяет приложению открыть веб-ссылку в предпочитаемом браузере оптимизированной системы или внешнем браузере".
-ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33 author: jamesmontemagno ms.author: jamont ms.date: 02.04.2019 ms.custom: video no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials Открытие браузера
+description: Класс Browser в Xamarin.Essentials позволяет приложению открыть веб-ссылку в предпочитаемом браузере оптимизированной системы или внешнем браузере.
+ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33
+author: jamesmontemagno
+ms.author: jamont
+ms.date: 04/02/2019
+ms.custom: video
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 997c6b66b5dba43eb440130f3f58d31a5a274815
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802247"
 ---
-
 # <a name="xamarinessentials-browser"></a>Xamarin.Essentials. Браузер
 
 Класс **Browser** позволяет приложению открыть веб-ссылку в предпочитаемом браузере оптимизированной системы или внешнем браузере.
@@ -84,7 +97,7 @@ await Browser.OpenAsync(uri, new BrowserLaunchOptions
 
 ## <a name="api"></a>API
 
-- [Исходный код класса Browser](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Browser)
+- [Исходный код класса Browser](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Browser)
 - [Документация по API Browser](xref:Xamarin.Essentials.Browser)
 
 ## <a name="related-video"></a>Связанные видео

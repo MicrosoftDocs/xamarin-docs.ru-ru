@@ -1,8 +1,23 @@
 ---
-title: "Сводная информация о главе 10 (Расширения разметки XAML)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 10 (Расширения разметки XAML)"; ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 575EAE55-BD4D-470F-A583-3D065FA102E2 author: davidbritch ms.author: dabritch ms.date: 19.07.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Сводка по главе 10. Расширения разметки XAML
+description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 10. Расширения разметки XAML
+ms.prod: xamarin
+ms.technology: xamarin-forms
+ms.assetid: 575EAE55-BD4D-470F-A583-3D065FA102E2
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/19/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 8f23034df684e778677e4f2e480e1c41807536fb
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136816"
 ---
-
-# <a name="summary-of-chapter-10-xaml-markup-extensions"></a>Сводная информация о главе 10. Расширения разметки XAML
+# <a name="summary-of-chapter-10-xaml-markup-extensions"></a>Сводка по главе 10. Расширения разметки XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter10)
 

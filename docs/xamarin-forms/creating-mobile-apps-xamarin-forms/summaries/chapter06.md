@@ -1,8 +1,23 @@
 ---
-title: "Сводная информация о главе 6 (Нажатия кнопки)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 6 (Нажатия кнопки)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: D4F9C429-A6CF-40FA-AC68-3F149307A5F9 author: davidbritch ms.author: dabritch ms.date: 07/18/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Сводка по главе 6. Нажатия кнопки
+description: Создание мобильных приложений с помощью Xamarin.Forms. Сводка по главе 6. Нажатия кнопки
+ms.prod: xamarin
+ms.technology: xamarin-forms
+ms.assetid: D4F9C429-A6CF-40FA-AC68-3F149307A5F9
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/18/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f9bafbf4af2a89acd02d436604e882be87cbde8c
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136842"
 ---
-
-# <a name="summary-of-chapter-6-button-clicks"></a>Сводная информация о главе 6. Нажатия кнопки
+# <a name="summary-of-chapter-6-button-clicks"></a>Сводка по главе 6. Нажатия кнопки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter06)
 

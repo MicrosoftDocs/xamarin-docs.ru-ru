@@ -1,8 +1,22 @@
 ---
-title: "Xamarin.Forms — привязка данных" description: "Привязка данных — это способ связывания свойств двух объектов так, чтобы изменения в одном свойстве автоматически отражались в другом. Привязка данных — неотъемлемая часть архитектуры приложения Model-View-ViewModel (MVVM)".
-ms.prod: xamarin ms.assetid: 938E85C8-521D-43B9-92CB-D591A06D98A6 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 03/23/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Привязка данных Xamarin.Forms
+description: Привязка данных — это способ связывания свойств двух объектов так, чтобы изменения в одном свойстве автоматически отражались в другом. Привязка данных — неотъемлемая часть архитектуры приложения Model-View-ViewModel (MVVM).
+ms.prod: xamarin
+ms.assetid: 938E85C8-521D-43B9-92CB-D591A06D98A6
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 05/21/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9abbe60865cbf5fb9082b5f4882c27fe095b36ac
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84946459"
 ---
-
 # <a name="xamarinforms-data-binding"></a>Привязка данных Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
@@ -55,6 +69,10 @@ _Привязка данных — это способ связывания с�
 ## <a name="binding-fallbacks"></a>[Привязка резервных значений](binding-fallbacks.md)
 
 Повышение надежности привязок данных с помощью определения значений отката, которые будут использоваться при сбое привязки.
+
+## <a name="multi-bindings"></a>[Множественные привязки](multibinding.md)
+
+Присоедините коллекцию объектов [`Binding`](xref:Xamarin.Forms.Binding) к одному свойству целевого объекта привязки.
 
 ## <a name="the-command-interface"></a>[Командный интерфейс](commanding.md)
 

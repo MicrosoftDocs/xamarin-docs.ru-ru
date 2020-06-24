@@ -1,8 +1,21 @@
 ---
-название: "Xamarin.Essentials: Flashlight"; описание: "В этом документе описывается класс Flashlight в Xamarin.Essentials, который позволяет включить или выключить вспышку камеры устройства и превратить ее в фонарик".
-ms.assetid: 06A03553-D212-43A2-9E6E-C2D2D93EB136 author: jamesmontemagno ms.custom: video ms.author: jamont ms.date: 04.11.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Xamarin.Essentials. Фонарик
+description: В этом документе описывается класс Flashlight в Xamarin.Essentials, который позволяет включить или выключить вспышку камеры устройства и превратить ее в фонарик.
+ms.assetid: 06A03553-D212-43A2-9E6E-C2D2D93EB136
+author: jamesmontemagno
+ms.custom: video
+ms.author: jamont
+ms.date: 11/04/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 7a8a90674b395c90f698a4a0854dc0dc3fc5fe15
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84802352"
 ---
-
 # <a name="xamarinessentials-flashlight"></a>Xamarin.Essentials. Фонарик
 
 Класс **Flashlight** позволяет включить или выключить вспышку камеры устройства и превратить ее в фонарик.
@@ -113,7 +126,7 @@ catch (Exception ex)
 
 ## <a name="api"></a>API
 
-- [Исходный код Flashlight](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/Flashlight)
+- [Исходный код Flashlight](https://github.com/xamarin/Essentials/tree/main/Xamarin.Essentials/Flashlight)
 - [Документация по API Flashlight](xref:Xamarin.Essentials.Flashlight)
 
 ## <a name="related-video"></a>Связанные видео

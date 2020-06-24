@@ -1,8 +1,22 @@
 ---
-title: "Выбор фотографии в библиотеке рисунков"; описание: "В этой статье объясняется, как использовать класс DependencyService в Xamarin.Forms для выбора фотографии в библиотеке рисунков на телефоне".
-ms.prod: xamarin ms.assetid: 4F51B0E7-6A63-403C-B488-500CCBCE75DD ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 06.03.2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Выбор фотографии в библиотеке рисунков
+description: В этой статье объясняется, как использовать класс DependencyService в Xamarin.Forms для выбора фотографии в библиотеке рисунков на телефоне.
+ms.prod: xamarin
+ms.assetid: 4F51B0E7-6A63-403C-B488-500CCBCE75DD
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 03/06/2017
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 9f999d56fbf178be160e91756643c127d574b090
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84197558"
 ---
-
 # <a name="picking-a-photo-from-the-picture-library"></a>Выбор фотографии в библиотеке рисунков
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)

@@ -1,7 +1,22 @@
 ---
-title: "Сводная информация о главе 11 (Инфраструктура c возможностью привязки)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 11 (Инфраструктура c возможностью привязки)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 34671C48-0ED4-4B76-A33D-D6505390DC5B author: davidbritch ms.author: dabritch ms.date: 19.07.2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Сводная информация о Главе 11. Инфраструктура c возможностью привязки
+description: Создание мобильных приложений с помощью Xamarin.Forms. Сводная информация о Главе 11. Инфраструктура c возможностью привязки
+ms.prod: xamarin
+ms.technology: xamarin-forms
+ms.assetid: 34671C48-0ED4-4B76-A33D-D6505390DC5B
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/19/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: edc3dfd97457fe93a04edd82574f6ed419f5fdc1
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136803"
 ---
-
 # <a name="summary-of-chapter-11-the-bindable-infrastructure"></a>Сводная информация о Главе 11. Инфраструктура c возможностью привязки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11)

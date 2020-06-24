@@ -1,7 +1,22 @@
 ---
-title: "Сводная информация о главе 13 (Растровые изображения)" description: "Создание мобильных приложений с помощью Xamarin.Forms: Сводная информация о главе 13 (Растровые изображения)" ms.prod: xamarin ms.technology: xamarin-forms ms.assetid: 5D153857-B6B7-4A14-8FB9-067DE198C2C7 author: davidbritch ms.author: dabritch ms.date: 07/18/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Аннотация к главе 13. Растровые изображения
+description: Создание мобильных приложений с помощью Xamarin.Forms. Аннотация к главе 13. Растровые изображения
+ms.prod: xamarin
+ms.technology: xamarin-forms
+ms.assetid: 5D153857-B6B7-4A14-8FB9-067DE198C2C7
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/18/2018
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 43caf088ad6cb816f049e7862a287c17839c2170
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84136777"
 ---
-
 # <a name="summary-of-chapter-13-bitmaps"></a>Аннотация к главе 13. Растровые изображения
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter13)
@@ -179,7 +194,7 @@ title: "Сводная информация о главе 13 (Растровые
 
 Количество элементов `Primary` должно быть ограничено тремя или четырьмя. Необходимо включить параметр `Text` для всех элементов. Для большинства платформ только элементам `Primary` требуется `Icon`, но для Windows 8.1 требуется `Icon` для всех элементов. У значков должен быть размер 32 аппаратно-независимые единицы. Тип `FileImageSource` указывает, что они относятся к конкретной платформе.
 
-`ToolbarItem` запускает событие [`Clicked`](xref:Xamarin.Forms.MenuItem.Clicked) при касании, подобно `Button`. `ToolbarItem` также поддерживает свойства [`Command`](xref:Xamarin.Forms.MenuItem.Command) и [`CommandParameter`](xref:Xamarin.Forms.MenuItem.CommandParameter), часто используемые для MVVM. (См. статью [Сводная информация о главе 18 (MVVM)](chapter18.md)).
+`ToolbarItem` запускает событие [`Clicked`](xref:Xamarin.Forms.MenuItem.Clicked) при касании, подобно `Button`. `ToolbarItem` также поддерживает свойства [`Command`](xref:Xamarin.Forms.MenuItem.Command) и [`CommandParameter`](xref:Xamarin.Forms.MenuItem.CommandParameter), часто используемые для MVVM. (См. статью [Сводка главы 18. MVVM](chapter18.md)).
 
 Для iOS и Android требуется, чтобы страница, на которой отображается панель инструментов, была [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) или страницей, к которой можно было бы перейти с помощью `NavigationPage`. Программа [**ToolbarDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter13/ToolbarDemo) устанавливает для свойства `MainPage` класса `App` [конструктор `NavigationPage` constructor](xref:Xamarin.Forms.NavigationPage.%23ctor(Xamarin.Forms.Page)) с аргументом `ContentPage`, а также демонстрирует конструкцию и обработчик событий панели инструментов.
 
