@@ -1,8 +1,22 @@
 ---
-название: "Поддерживаемые платформы для Xamarin.Forms"; описание: "Системные требования к платформе и разработке для Xamarin.Forms."
-ms.prod: xamarin ms.assetid: eecaf6a5-567c-49b2-ac83-2a195596c5bf ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 22.01.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]
+title: Поддерживаемые платформы для Xamarin.Forms
+description: Системные требования к платформе и разработке для Xamarin.Forms.
+ms.prod: xamarin
+ms.assetid: eecaf6a5-567c-49b2-ac83-2a195596c5bf
+ms.technology: xamarin-forms
+author: davidbritch
+ms.author: dabritch
+ms.date: 01/22/2020
+no-loc:
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: f93af19587cf962ac0c852599157261a087dadbc
+ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84197542"
 ---
-
 # <a name="xamarinforms-supported-platforms"></a>Поддерживаемые платформы для Xamarin.Forms
 
 Приложения Xamarin.Forms могут быть написаны для следующих операционных систем:
