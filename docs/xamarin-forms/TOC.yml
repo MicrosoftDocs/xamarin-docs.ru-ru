@@ -543,6 +543,8 @@
                   href: user-interface/shapes/index.md
                 - name: Ellipse
                   href: user-interface/shapes/ellipse.md
+                - name: Правила заливки
+                  href: user-interface/shapes/fillrules.md
                 - name: Геометрия
                   href: user-interface/shapes/geometries.md
                 - name: Строка
