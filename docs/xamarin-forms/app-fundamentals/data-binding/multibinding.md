@@ -6,13 +6,13 @@ ms.assetid: E73AE622-664C-4A90-B5B2-BD47D0E7A1A7
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/16/2020
-ms.openlocfilehash: 2fc5db2ddb456c9c5c6160b7fc7ce501488722de
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.date: 06/18/2020
+ms.openlocfilehash: dfe6da8a76b447bf0c2a6c0a3bea9823e498d5e4
+ms.sourcegitcommit: 8a18471b3d96f3f726b66f9bc50a829f1c122f29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84947138"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84988196"
 ---
 # <a name="xamarinforms-multi-bindings"></a>Множественные привязки Xamarin.Forms
 
@@ -53,15 +53,16 @@ public class AllTrueMultiConverter : IMultiValueConverter
     {
         if (values == null || !targetType.IsAssignableFrom(typeof(bool)))
         {
-            // Return UnsetValue to use the binding FallbackValue
-            return BindableProperty.UnsetValue;
+            return false;
+            // Alternatively, return BindableProperty.UnsetValue to use the binding FallbackValue
         }
 
         foreach (var value in values)
         {
             if (!(value is bool b))
             {
-                return BindableProperty.UnsetValue;
+                return false;
+                // Alternatively, return BindableProperty.UnsetValue to use the binding FallbackValue
             }
             else if (!b)
             {
@@ -106,7 +107,7 @@ public class AllTrueMultiConverter : IMultiValueConverter
 - `null` — указывает, что преобразователь не может выполнить преобразование и что привязка будет использовать `TargetNullValue`.
 
 > [!IMPORTANT]
-> Метод `Convert` в преобразователе с несколькими значениями должен обрабатывать ожидаемые проблемы, возвращая `BindableProperty.UnsetValue`. Объекты `MultiBinding`, получающие это значение, должны определять [`FallbackValue`](xref:Xamarin.Forms.BindingBase.FallbackValue).
+> Объект `MultiBinding`, принимающий `BindableProperty.UnsetValue` из метода `Convert`, должен определять его свойство [`FallbackValue`](xref:Xamarin.Forms.BindingBase.FallbackValue). Точно так же объект `MultiBinding`, принимающий `null` из метода `Convert`, должен определять его свойство [`TargetNullValue`](xref:Xamarin.Forms.BindingBase.TargetNullValue).
 
 Метод `ConvertBack` преобразует целевой объект привязки в значения привязки к источнику. Этот метод принимает четыре аргумента:
 
@@ -120,9 +121,6 @@ public class AllTrueMultiConverter : IMultiValueConverter
 - `BindableProperty.UnsetValue` в позиции `i` — указывает, что преобразователь не может предоставить значение для исходной привязки по индексу `i` и что для него не задано значение.
 - `Binding.DoNothing` в позиции `i` — указывает, что для исходной привязки не должно быть задано значение в индексе `i`.
 - `null` — указывает, что преобразователь не может выполнить преобразование или что он не поддерживает преобразование в этом направлении.
-
-> [!IMPORTANT]
-> Метод `ConvertBack` в преобразователе с несколькими значениями должен обрабатывать ожидаемые проблемы, возвращая `null`.
 
 ## <a name="consume-a-imultivalueconverter"></a>Использование IMultiValueConverter
 
@@ -142,8 +140,7 @@ public class AllTrueMultiConverter : IMultiValueConverter
 
     <CheckBox>
         <CheckBox.IsChecked>
-            <MultiBinding Converter="{StaticResource AllTrueConverter}"
-                          FallbackValue="false">
+            <MultiBinding Converter="{StaticResource AllTrueConverter}">
                 <Binding Path="Employee.IsOver16" />
                 <Binding Path="Employee.HasPassedTest" />
                 <Binding Path="Employee.IsSuspended"
@@ -154,7 +151,7 @@ public class AllTrueMultiConverter : IMultiValueConverter
 </ContentPage>    
 ```
 
-В этом примере объект `MultiBinding` использует экземпляр `AllTrueMultiConverter`, чтобы задать для свойства [`CheckBox.IsChecked`](xref:Xamarin.Forms.CheckBox.IsChecked) значение `true`, если трем объектам [`Binding`](xref:Xamarin.Forms.Binding) присваивается значение `true`. В противном случае свойству `CheckBox.IsChecked` присваивается значение `false`. [`FallbackValue`](xref:Xamarin.Forms.BindingBase.FallbackValue) определяется, так как `AllTrueMultiConverter` может вернуть `BindableProperty.UnsetValue`.
+В этом примере объект `MultiBinding` использует экземпляр `AllTrueMultiConverter`, чтобы задать для свойства [`CheckBox.IsChecked`](xref:Xamarin.Forms.CheckBox.IsChecked) значение `true`, если трем объектам [`Binding`](xref:Xamarin.Forms.Binding) присваивается значение `true`. В противном случае свойству `CheckBox.IsChecked` присваивается значение `false`.
 
 По умолчанию свойство [`CheckBox.IsChecked`](xref:Xamarin.Forms.CheckBox.IsChecked) использует привязку [`TwoWay`](xref:Xamarin.Forms.BindingMode.TwoWay). Таким образом, метод `ConvertBack` экземпляра `AllTrueMultiConverter` выполняется, когда пользователь не использует [`CheckBox`](xref:Xamarin.Forms.CheckBox), задавая для значений привязки к источнику значение свойства `CheckBox.IsChecked`.
 
@@ -187,7 +184,7 @@ public class AllTrueMultiConverter : IMultiValueConverter
 
 Повысить надежность привязок данных можно, определив резервные значения, которые будут использоваться в случае сбоя привязки. Для этого при необходимости можно определить свойства [`FallbackValue`](xref:Xamarin.Forms.BindingBase.FallbackValue) и [`TargetNullValue`](xref:Xamarin.Forms.BindingBase.TargetNullValue) в объекте `MultiBinding`.
 
-`MultiBinding` будет использовать [`FallbackValue`](xref:Xamarin.Forms.BindingBase.FallbackValue), когда `IMultiValueConverter` экземпляр возвращает `BindableProperty.UnsetValue`. Это означает, что преобразователь не создал значение. `MultiBinding` будет использовать [`TargetNullValue`](xref:Xamarin.Forms.BindingBase.TargetNullValue), когда экземпляр `IMultiValueConverter` возвращает `null`. Это означает, что преобразователь не может выполнить преобразование.
+`MultiBinding` будет использовать [`FallbackValue`](xref:Xamarin.Forms.BindingBase.FallbackValue), когда метод `Convert` экземпляра `IMultiValueConverter` возвращает `BindableProperty.UnsetValue`. Это означает, что преобразователь не создал значение. `MultiBinding` будет использовать [`TargetNullValue`](xref:Xamarin.Forms.BindingBase.TargetNullValue), когда метод `Convert` экземпляра `IMultiValueConverter` возвращает `null`. Это означает, что преобразователь не может выполнить преобразование.
 
 См. сведения в статье [Резервные значения привязок Xamarin.Forms](binding-fallbacks.md).
 
@@ -210,10 +207,8 @@ public class AllTrueMultiConverter : IMultiValueConverter
 
     <CheckBox>
         <CheckBox.IsChecked>
-            <MultiBinding Converter="{StaticResource AnyTrueConverter}"
-                          FallbackValue="false">
-                <MultiBinding Converter="{StaticResource AllTrueConverter}"
-                              FallbackValue="false">
+            <MultiBinding Converter="{StaticResource AnyTrueConverter}">
+                <MultiBinding Converter="{StaticResource AllTrueConverter}">
                     <Binding Path="Employee.IsOver16" />
                     <Binding Path="Employee.HasPassedTest" />
                     <Binding Path="Employee.IsSuspended" Converter="{StaticResource InverterConverter}" />                        
@@ -242,8 +237,7 @@ public class AllTrueMultiConverter : IMultiValueConverter
                       IsExpanded="{Binding IsExpanded, Source={RelativeSource TemplatedParent}}"
                       BackgroundColor="{Binding CardColor}">
                 <Expander.IsVisible>
-                    <MultiBinding Converter="{StaticResource AllTrueConverter}"
-                                  FallbackValue="false">
+                    <MultiBinding Converter="{StaticResource AllTrueConverter}">
                         <Binding Path="IsExpanded" />
                         <Binding Path="IsEnabled" />
                     </MultiBinding>

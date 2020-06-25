@@ -6,12 +6,12 @@ ms.assetid: 63c50190-7e54-4140-a30d-1a0e577c47d7
 author: davidortinau
 ms.author: daortin
 ms.date: 04/26/2019
-ms.openlocfilehash: d5898f9c6ee30eb1f12bf6480b93a609e762e6ea
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 84c5a72f887f38c5efcee09cfc19986093db226e
+ms.sourcegitcommit: d86b7a18cf8b1ef28cd0fe1d311f1c58a65101a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "75886597"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85101340"
 ---
 # <a name="remoted-ios-simulator-for-windows"></a>Удаленный симулятор iOS для Windows
 
@@ -23,7 +23,7 @@ ms.locfileid: "75886597"
 
 Удаленный симулятор iOS для Windows автоматически устанавливается в Visual Studio 2019 и Visual Studio 2017 как часть Xamarin. Чтобы использовать ее, выполните следующие действия.
 
-1. Выполните [связывание с Mac при разработке для Xamarin.iOS](~/ios/get-started/installation/windows/connecting-to-mac/index.md).
+1. [Свяжите Visual Studio 2019 с узлом сборки Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md).
 2. Начните отладку проекта iOS или tvOS в Visual Studio. Удаленный симулятор iOS для Windows появится на компьютере Windows.
 
 Просмотрите [это видео](deploy.md), чтобы получить пошаговые инструкции.

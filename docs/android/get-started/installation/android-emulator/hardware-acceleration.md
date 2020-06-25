@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: jondouglas
 ms.author: jodou
 ms.date: 02/13/2020
-ms.openlocfilehash: a776dbb2ecfaf0942d79c2b403c13f98cdc7c2e2
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 2a9260bc782d2b19e6fd74356738276e1648dcf2
+ms.sourcegitcommit: 16847681df17ed59b3b3528761c02e8fb48ffc4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571978"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104357"
 ---
 # <a name="hardware-acceleration-for-emulator-performance-hyper-v--haxm"></a>Аппаратное ускорение для производительной работы эмулятора (Hyper-V и HAXM)
 
@@ -142,9 +142,9 @@ systeminfo
 
 ### <a name="installing-haxm"></a>Установка HAXM
 
-Пакеты установки HAXM для Windows можно найти на странице [Intel Hardware Accelerated Execution Manager](https://software.intel.com/android/articles/intel-hardware-accelerated-execution-manager). Чтобы скачать и установить решение HAXM, выполните следующие действия:
+Пакеты установки HAXM для Windows можно найти на странице выпусков GitHub, посвященной [Intel Hardware Accelerated Execution Manager](https://github.com/intel/haxm/releases). Чтобы скачать и установить решение HAXM, выполните следующие действия:
 
-1. Скачайте с веб-сайта Intel последнюю версию установщика [подсистемы виртуализации HAXM](https://software.intel.com/android/articles/intel-hardware-accelerated-execution-manager/) для ОС Windows. Скачивая установщик HAXM с веб-сайта Intel, вы гарантированно получаете последнюю версию этой программы.
+1. Скачайте с веб-сайта Intel последнюю версию установщика [подсистемы виртуализации HAXM](https://github.com/intel/haxm/releases) для ОС Windows. Скачивая установщик HAXM с веб-сайта Intel, вы гарантированно получаете последнюю версию этой программы.
 
 2. Чтобы начать работу с установщиком HAXM, запустите файл **intelhaxm-android.exe**. Примите значения по умолчанию, предлагаемые в диалоговых окнах установщика:
 
