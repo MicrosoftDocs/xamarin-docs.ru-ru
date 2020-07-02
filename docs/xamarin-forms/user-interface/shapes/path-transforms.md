@@ -10,18 +10,18 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8df87f0ee3be78749d70dfc535b5d4d50874f194
-ms.sourcegitcommit: 7fc658bbdcb8130cd9d611e55e79a1830fc5d5a2
+ms.openlocfilehash: 554a9dd0ca8be54c35d1891b60149bbbb66c3e7c
+ms.sourcegitcommit: 91b4d2f93687fadec5c3f80aadc8f7298d911624
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85133026"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85795003"
 ---
 # <a name="xamarinforms-shapes-path-transforms"></a>Xamarin.FormsФигуры: преобразования пути
 
 ![](~/media/shared/preview.png "This API is currently pre-release")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Transform`Определяет способ преобразования `Path` объекта из одного пространства координат в другое пространство координат. Это сопоставление описывается преобразованием `Matrix` , которое представляет собой коллекцию из трех строк с тремя столбцами `double` значений.
 
@@ -73,7 +73,6 @@ Xamarin.Formsтакже предоставляет следующие класс
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -118,7 +117,6 @@ Xamarin.Formsтакже предоставляет следующие класс
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -156,7 +154,6 @@ Xamarin.Formsтакже предоставляет следующие класс
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -190,7 +187,6 @@ Xamarin.Formsтакже предоставляет следующие класс
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -225,7 +221,6 @@ Xamarin.Formsимеет два класса, которые поддержива
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -276,7 +271,6 @@ Xamarin.Formsимеет два класса, которые поддержива
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -310,7 +304,6 @@ Xamarin.Formsимеет два класса, которые поддержива
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -336,7 +329,6 @@ Xamarin.Formsимеет два класса, которые поддержива
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
