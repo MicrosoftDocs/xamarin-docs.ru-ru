@@ -7,14 +7,17 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/02/2017
-ms.openlocfilehash: 328633bc58f17216c071a2b2cd779704da2bbf74
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: c36159984f314ecbf90f98df6472eee2149eee92
+ms.sourcegitcommit: a3f13a216fab4fc20a9adf343895b9d6a54634a5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569417"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85853162"
 ---
 # <a name="walkthrough-binding-an-ios-objective-c-library"></a>Пошаговое руководство. привязка библиотеки цели iOS-C
+
+> [!IMPORTANT]
+> Сейчас мы изучаем использование пользовательской привязки на платформе Xamarin. Примите участие в [**опросе**](https://www.surveymonkey.com/r/KKBHNLT) , чтобы проинформировать будущие усилия по разработке.
 
 _В этой статье приводятся пошаговые инструкции по созданию привязки Xamarin. iOS для существующей библиотеки цели-C, Инфколорпиккер. В нем рассматриваются такие темы, как компиляция статической библиотеки цели-C, ее привязка и использование привязки в приложении Xamarin. iOS._
 
@@ -270,11 +273,11 @@ Architectures in the fat file: libInfColorPicker.a are: i386 armv7 x86_64 arm64
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-1. Запустите Visual Studio.
+1. Запустите среду Visual Studio.
 
 1. В меню **файл** выберите пункт **создать**  >  **проект...**:
 
-    ![Запуск нового проекта](walkthrough-images/bind01vs.png "Запуск нового проекта")
+    ![создание проекта;](walkthrough-images/bind01vs.png "создание проекта;")
 
 1. В диалоговом окне Новый проект выберите **Visual C# > iPhone & iPad > библиотека привязок iOS (Xamarin)**:
 
