@@ -9,7 +9,6 @@ ms.author: daortin
 ms.date: 06/25/2018
 ms.openlocfilehash: 371876d087c7027d4cfe2d2d9ada8b0dbedb5dd5
 ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
-ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/13/2020
 ms.locfileid: "75488976"
@@ -125,7 +124,7 @@ Certificate fingerprints:
 
    [![Нажатие кнопки "Включить" в разделе "Панель мониторинга"](obtaining-a-google-maps-api-key-images/04-enable-api-vs-sml.png)](obtaining-a-google-maps-api-key-images/04-enable-api-vs.png#lightbox)
 
-На этом этапе будет создан проект API и в него будет добавлен API Google Карт для Android версии 2. Но вы не сможете использовать этот API в проекте, пока не создадите для него учетные данные. В следующем разделе объясняется, как создать ключ API и включить приложение Xamarin.Android в белый список, чтобы ему было разрешено использовать этот ключ.
+На этом этапе будет создан проект API и в него будет добавлен API Google Карт для Android версии 2. Но вы не сможете использовать этот API в проекте, пока не создадите для него учетные данные. В следующем разделе объясняется, как создать ключ API и включить приложение Xamarin.Android в список разрешений, чтобы ему было разрешено использовать этот ключ.
 
 ## <a name="obtaining-the-api-key"></a>Получение ключа API
 
