@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 06/18/2020
-ms.openlocfilehash: dfe6da8a76b447bf0c2a6c0a3bea9823e498d5e4
-ms.sourcegitcommit: 8a18471b3d96f3f726b66f9bc50a829f1c122f29
+ms.openlocfilehash: 0aafe01fcbde6cf1aacf3e2dd47444d4b77021e2
+ms.sourcegitcommit: 79ba3deb031c8a60d0841bb3dbeaaf65daf2b224
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84988196"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85846380"
 ---
 # <a name="xamarinforms-multi-bindings"></a>Множественные привязки Xamarin.Forms
 
@@ -44,7 +44,7 @@ ms.locfileid: "84988196"
 
 ## <a name="define-a-imultivalueconverter"></a>Определение IMultiValueConverter
 
-Интерфейс `IMultiValueConverter` позволяет применять пользовательскую логику к `MultiBinding`. Чтобы связать преобразователь с `MultiBinding`, создайте класс, реализующий интерфейс `IValueConverter`, а затем реализуйте методы `Convert` и `ConvertBack`.
+Интерфейс `IMultiValueConverter` позволяет применять пользовательскую логику к `MultiBinding`. Чтобы связать преобразователь с `MultiBinding`, создайте класс, реализующий интерфейс `IMultiValueConverter`, а затем реализуйте методы `Convert` и `ConvertBack`.
 
 ```csharp
 public class AllTrueMultiConverter : IMultiValueConverter

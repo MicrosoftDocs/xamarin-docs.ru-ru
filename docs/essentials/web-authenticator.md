@@ -8,12 +8,12 @@ ms.date: 03/26/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 578e750afd718c684d70217355629a0286d2b028
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 6b094ddd7334da777d39d403eb06d72558c96ed2
+ms.sourcegitcommit: 82eabb0eaa4a674897aa6d5e64efb91fd580c330
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84801885"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86100199"
 ---
 # <a name="xamarinessentials-web-authenticator"></a>Xamarin.Essentials. Веб-средство проверки подлинности
 
@@ -192,7 +192,7 @@ API `WebAuthenticator` можно использовать с любой сер�
 
 1. В веб-приложении ASP.NET Core настройте необходимые [поставщики проверки подлинности на основе учетной записи социальной сети](https://docs.microsoft.com/aspnet/core/security/authentication/social/?view=aspnetcore-3.1&tabs=visual-studio).
 2. Задайте для схемы проверки подлинности по умолчанию значение `CookieAuthenticationDefaults.AuthenticationScheme` в вызове `.AddAuthentication()`.
-3. Используйте `.AddCookies()` в вызове `.AddAuthentication()` Startup.cs.
+3. Используйте `.AddCookie()` в вызове `.AddAuthentication()` Startup.cs.
 4. Для настройки всех поставщиков обязательно используйте `.SaveTokens = true;`.
 
 > [!TIP]

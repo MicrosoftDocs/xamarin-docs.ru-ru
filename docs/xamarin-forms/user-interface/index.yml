@@ -9,16 +9,16 @@ metadata:
   ms.assetid: 391B4A77-7CAC-42D2-9E77-BD8E170E9BE6
   author: davidbritch
   ms.author: dabritch
-  ms.date: 06/16/2020
+  ms.date: 07/08/2020
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: a0acc942c84f085c2cff4a70b5863ae4f4644bc6
-  ms.sourcegitcommit: 8f6cc5208f675c8cfb645bd9ffb0fc1f8ea71411
+  ms.openlocfilehash: 25f8139ac16b6bb51a59833544b1ab9a95547362
+  ms.sourcegitcommit: f8d10195687f91f907aa1b26400f2ecc84804002
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/24/2020
-  ms.locfileid: "85326113"
+  ms.lasthandoff: 07/08/2020
+  ms.locfileid: "86123297"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:
@@ -54,6 +54,8 @@ landingContent:
       url: map/index.md
     - text: MediaElement
       url: mediaelement.md
+    - text: Фигуры
+      url: shapes/index.md
     - text: WebView
       url: webview.md
 - title: Визуальные элементы, инициирующие команды
@@ -152,28 +154,6 @@ landingContent:
       url: visual/index.md
     - text: Диспетчер визуальных состояний
       url: visual-state-manager.md
-- title: Фигуры
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Обзор
-      url: shapes/index.md
-    - text: Ellipse
-      url: shapes/ellipse.md
-    - text: Правила заливки
-      url: shapes/fillrules.md
-    - text: Геометрия
-      url: shapes/geometries.md
-    - text: Строка
-      url: shapes/line.md
-    - text: Path
-      url: shapes/path.md
-    - text: Polygon
-      url: shapes/polygon.md
-    - text: Ломаная линия
-      url: shapes/polyline.md
-    - text: Прямоугольник
-      url: shapes/rectangle.md
 - title: Макеты
   linkLists:
   - linkListType: concept
