@@ -10,16 +10,16 @@ ms.date: 06/17/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 28bcbed3a03a2abbec42a619062579419a3063a4
-ms.sourcegitcommit: 8a18471b3d96f3f726b66f9bc50a829f1c122f29
+ms.openlocfilehash: b451fe004ca21c8770658f31c9c38253e073c259
+ms.sourcegitcommit: 82eabb0eaa4a674897aa6d5e64efb91fd580c330
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84988209"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86100187"
 ---
 # <a name="respond-to-system-theme-changes-in-xamarinforms-applications"></a>Реагирование на изменения системных тем в Xamarin.Forms приложениях
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-systemthemesdemo/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-systemthemesdemo/)
 
 Устройства обычно включают в себя светло-и темные темы, каждый из которых ссылается на широкий набор предпочтений внешнего вида, который можно задать на уровне операционной системы. Приложения должны учитывать эти системные темы и отвечать сразу после изменения темы системы.
 
@@ -46,7 +46,7 @@ Xamarin.Formsприложения могут реагировать на изм�
 
 Ресурсы для светлой и темной темы можно использовать с `AppThemeBinding` расширением разметки, а также с помощью `SetAppThemeColor` `SetOnAppTheme<T>` методов расширения и. При использовании этих подходов ресурсы автоматически применяются в зависимости от значения текущей системной темы. Кроме того, объекты, использующие эти ресурсы, автоматически обновляются при изменении темы системы во время работы приложения.
 
-### <a name="appthemebinding-markup-extension"></a>Расширение разметки Аппсемебиндинг
+### <a name="appthemebinding-markup-extension"></a>Расширение разметки AppThemeBinding
 
 `AppThemeBinding`Расширение разметки позволяет использовать ресурс, например изображение или цвет, на основе текущей системной темы:
 
@@ -159,9 +159,12 @@ Application.Current.RequestedThemeChanged += (s, a) =>
 
 `AppThemeChangedEventArgs`Объект, который прилагается к `RequestedThemeChanged` событию, имеет одно свойство с именем `RequestedTheme` типа `OSAppTheme` . Это свойство можно проверить для обнаружения требуемой системной темы.
 
+> [!IMPORTANT]
+> Чтобы реагировать на изменения темы в Android, необходимо включить `ConfigChanges.UiMode` флаг в `Activity` атрибут `MainActivity` класса.
+
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Системсемес (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-systemthemesdemo/)
-- [Расширение разметки Аппсемебиндинг](~/xamarin-forms/xaml/markup-extensions/consuming.md#appthemebinding-markup-extension)
+- [Расширение разметки AppThemeBinding](~/xamarin-forms/xaml/markup-extensions/consuming.md#appthemebinding-markup-extension)
 - [Словари ресурсов](~/xamarin-forms/xaml/resource-dictionaries.md)
 - [Задание стиля приложений Xamarin.Forms с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)
