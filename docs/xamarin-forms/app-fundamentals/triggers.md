@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms Триггеры" description: "В этой статье содержатся сведения об использовании триггеров Xamarin.Forms для реагирования на изменения пользовательского интерфейса с помощью XAML.'
-description: 'Триггеры позволяют декларативно задавать действия в XAML, которые изменяют внешний вид элементов управления при изменении событий или свойств". ms.prod: xamarin ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 17.04.2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Триггеры Xamarin.Forms
+description: В этой статье содержатся сведения об использовании триггеров Xamarin.Forms для реагирования на изменения пользовательского интерфейса с помощью XAML. Триггеры позволяют декларативно задавать действия в XAML, которые изменяют внешний вид элементов управления при изменении событий или свойств.
 ms.prod: xamarin
 ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7
 ms.technology: xamarin-forms
@@ -10,12 +10,12 @@ ms.date: 04/17/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f92ad47ae883f4b1b413ae5192a9add83045bb77
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: a287ff28ab62fcfcc00c88858cf3595ba2fa5118
+ms.sourcegitcommit: a3f13a216fab4fc20a9adf343895b9d6a54634a5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84136959"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85853137"
 ---
 # <a name="xamarinforms-triggers"></a>Триггеры Xamarin.Forms
 
@@ -319,11 +319,7 @@ public class FadeTriggerAction : TriggerAction<VisualElement>
 
 ## <a name="state-triggers"></a>Триггеры состояния
 
-Триггеры состояния введены в Xamarin.Forms 4.5 и относятся к специализированной группе триггеров, определяющих условия, при которых следует применять [`VisualState`](xref:Xamarin.Forms.VisualState). Но сейчас являются экспериментальными и могут использоваться только путем добавления следующей строки кода в файл *App.xaml.cs*:
-
-```csharp
-Device.SetFlags(new string[]{ "StateTriggers_Experimental" });
-```
+Триггеры состояния — это специализированная группа триггеров, определяющих условия применения [`VisualState`](xref:Xamarin.Forms.VisualState). 
 
 Триггеры состояния добавляются в коллекцию [`StateTriggers`](xref:Xamarin.Forms.VisualState.StateTriggers) [`VisualState`](xref:Xamarin.Forms.VisualState). Эта коллекция может содержать один или несколько триггеров состояния. При наличии активных триггеров состояния в коллекции будет применяться [`VisualState`](xref:Xamarin.Forms.VisualState).
 

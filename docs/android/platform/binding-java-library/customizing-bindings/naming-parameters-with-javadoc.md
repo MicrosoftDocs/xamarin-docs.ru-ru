@@ -7,14 +7,17 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 06/20/2017
-ms.openlocfilehash: 060c4759d39bc3b8c424ce46dc615644540fe9c2
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: bcfc5778ed4e5486d188f4eefbd32811792b44e5
+ms.sourcegitcommit: a3f13a216fab4fc20a9adf343895b9d6a54634a5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73027667"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85852983"
 ---
 # <a name="naming-parameters-with-javadoc"></a>Именование параметров с Javadoc
+
+> [!IMPORTANT]
+> В настоящее время рассматривается возможность использования настраиваемых привязок на платформе Xamarin. Примите участие в [**этом опросе**](https://www.surveymonkey.com/r/KKBHNLT), чтобы помочь определить дальнейшие направления разработки.
 
 _В этой статье объясняется восстановление имен параметров в проекте привязки Java с помощью Javadoc, созданного из проекта Java._
 

@@ -7,14 +7,17 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/01/2018
-ms.openlocfilehash: 2ac402bf423c9f3fe136d1ba31622d915d2e2eef
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 54de1cde65e9c1ab9cb758c057a87c6b15c4da54
+ms.sourcegitcommit: a3f13a216fab4fc20a9adf343895b9d6a54634a5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73027727"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85853031"
 ---
 # <a name="binding-an-eclipse-library-project"></a>Привязка проекта библиотеки Eclipse
+
+> [!IMPORTANT]
+> В настоящее время рассматривается возможность использования настраиваемых привязок на платформе Xamarin. Примите участие в [**этом опросе**](https://www.surveymonkey.com/r/KKBHNLT), чтобы помочь определить дальнейшие направления разработки.
 
 _В этом пошаговом руководстве объясняется, как использовать шаблоны проектов Xamarin.Android для привязки проекта библиотеки Android Eclipse._
 

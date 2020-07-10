@@ -7,14 +7,17 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/11/2018
-ms.openlocfilehash: 103720c8cb47b1ac4cfe5cfadeb6b18828318ad3
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 514157873412b3af31e43ba211aa636c9b53c112
+ms.sourcegitcommit: a3f13a216fab4fc20a9adf343895b9d6a54634a5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73618538"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85853112"
 ---
 # <a name="binding-an-aar"></a>Привязка AAR-файла
+
+> [!IMPORTANT]
+> В настоящее время рассматривается возможность использования настраиваемых привязок на платформе Xamarin. Примите участие в [**этом опросе**](https://www.surveymonkey.com/r/KKBHNLT), чтобы помочь определить дальнейшие направления разработки.
 
 _Это пошаговое руководство содержит инструкции по созданию библиотеки привязок Java для Xamarin.Android из AAR-файла на платформе Android._
 

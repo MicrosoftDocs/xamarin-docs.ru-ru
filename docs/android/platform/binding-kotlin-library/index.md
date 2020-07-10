@@ -7,14 +7,17 @@ ms.technology: xamarin-android
 author: alexeystrakh
 ms.author: alstrakh
 ms.date: 02/11/2020
-ms.openlocfilehash: ec7d154b0d7fcb055bd398089e142fe8b1d9f60e
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: d2251a0219ca25ecd37e42361e49ac966bac131d
+ms.sourcegitcommit: a3f13a216fab4fc20a9adf343895b9d6a54634a5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77497968"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85852993"
 ---
 # <a name="bind-android-kotlin-libraries"></a>Привязка библиотек Kotlin для Android
+
+> [!IMPORTANT]
+> В настоящее время рассматривается возможность использования настраиваемых привязок на платформе Xamarin. Примите участие в [**этом опросе**](https://www.surveymonkey.com/r/KKBHNLT), чтобы помочь определить дальнейшие направления разработки.
 
 Платформа Android, а также ее собственные языки и средства постоянно развиваются, и для нее доступно множество сторонних библиотек, разработанных с использованием новейших предложений. Максимизация повторного использования кода и компонентов является одной из основных целей кросс-платформенной разработки. Возможность повторного использования компонентов, созданных с помощью Kotlin, становится все более важной для разработчиков Xamarin, так как их популярность среди разработчиков постоянно растет. Возможно, вы уже знакомы с процессом привязки обычных [библиотек](https://docs.microsoft.com/xamarin/android/platform/binding-java-library/) Java. Теперь доступна дополнительная документация, описывающая процесс [привязки библиотеки Kotlin](walkthrough.md), поэтому они могут использоваться приложением Xamarin таким же образом. Цель этого документа — описать в общих чертах подход к созданию привязки Kotlin для Xamarin.
 
