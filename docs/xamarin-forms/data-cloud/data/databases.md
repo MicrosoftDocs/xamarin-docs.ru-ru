@@ -10,12 +10,12 @@ ms.date: 12/05/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f7cef5fd39d82cf0a4b55337835c0fe1d57b8bf9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 2268f9034a4b09adce697f5fb7b6652baa4feed6
+ms.sourcegitcommit: 898ba8e5140ae32a7df7e07c056aff65f6fe4260
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84197594"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86226824"
 ---
 # <a name="xamarinforms-local-databases"></a>Xamarin.FormsЛокальные базы данных
 
@@ -39,8 +39,10 @@ ms.locfileid: "84197594"
 
 Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
 
-- **Автор:** Фрэнк А. Крюгер (praeclarum)
 - **Идентификатор:** sqlite-net-pcl
+- **Автор:** SQLite-NET
+- **Владельцы:** праекларум
+- **URL-адрес проекта:**https://github.com/praeclarum/sqlite-net
 - **Ссылка NuGet:** [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)
 
 > [!NOTE]
@@ -236,7 +238,7 @@ public static TodoItemDatabase Database
 }
 ```
 
-Это свойство позволяет Xamarin.Forms компонентам вызывать методы получения и обработки данных в `Database` экземпляре в ответ на взаимодействие с пользователем. Пример:
+Это свойство позволяет Xamarin.Forms компонентам вызывать методы получения и обработки данных в `Database` экземпляре в ответ на взаимодействие с пользователем. Вот несколько примеров:
 
 ```csharp
 var saveButton = new Button { Text = "Save" };

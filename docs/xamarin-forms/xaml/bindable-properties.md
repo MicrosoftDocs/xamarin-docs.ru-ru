@@ -10,12 +10,12 @@ ms.date: 01/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 33b3763075b64ea8af615465825313a527d20db2
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 7d83728edc161a89b381330884e86f09b7788e3d
+ms.sourcegitcommit: 898ba8e5140ae32a7df7e07c056aff65f6fe4260
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138181"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86226785"
 ---
 # <a name="xamarinforms-bindable-properties"></a>Xamarin.FormsПривязываемые свойства
 
@@ -55,6 +55,9 @@ ms.locfileid: "84138181"
 - Тип объекта-владельца.
 - Значение по умолчанию для свойства. Это гарантирует, что свойство всегда возвращает определенное значение по умолчанию, если оно не задано, и может отличаться от значения по умолчанию для типа свойства. Значение по умолчанию будет восстановлено при [ `ClearValue` ] (xref: Xamarin.Forms . BindableObject. ClearValue ( Xamarin.Forms . Биндаблепроперти)) вызывается метод для свойства, доступного для привязки.
 
+> [!IMPORTANT]
+> Соглашение об именовании для свойств, допускающих привязку, заключается в том, что идентификатор связываемого свойства должен совпадать с именем свойства, указанным в `Create` методе, с добавлением к нему "Property". 
+
 В следующем коде показан пример привязываемого свойства с идентификатором и значениями для четырех обязательных параметров:
 
 ```csharp
@@ -62,7 +65,7 @@ public static readonly BindableProperty EventNameProperty =
   BindableProperty.Create ("EventName", typeof(string), typeof(EventToCommandBehavior), null);
 ```
 
-При этом создается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) экземпляр с именем `EventName` типа `string` . Свойство принадлежит `EventToCommandBehavior` классу и имеет значение по умолчанию `null` . Соглашение об именовании для свойств, допускающих привязку, заключается в том, что идентификатор связываемого свойства должен совпадать с именем свойства, указанным в `Create` методе, с добавлением к нему "Property". Таким образом, в приведенном выше примере идентификатор свойства, допускающий привязку, — `EventNameProperty` .
+При этом создается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) экземпляр с именем `EventNameProperty` типа `string` . Свойство принадлежит `EventToCommandBehavior` классу и имеет значение по умолчанию `null` .
 
 При необходимости при создании [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) экземпляра можно указать следующие параметры.
 

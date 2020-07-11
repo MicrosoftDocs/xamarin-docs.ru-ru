@@ -1,6 +1,6 @@
 ---
-title: Xamarin.Formsрефрешвиев
-description: Xamarin.FormsРефрешвиев — это контейнерный элемент управления, предоставляющий функции обновления для прокручиваемого содержимого.
+title: Xamarin.Forms RefreshView
+description: Xamarin.Forms RefreshView — Это контейнерный элемент управления, предоставляющий функции обновления для прокручиваемого содержимого.
 ms.prod: xamarin
 ms.assetId: 58DBD23B-ADB9-40DA-B331-4DDB6E698990
 ms.technology: xamarin-forms
@@ -10,14 +10,16 @@ ms.date: 09/19/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d84e6bb6ed41f2fbc213cd15051d071521f588cd
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+- RefreshView
+- Universal Windows Platform
+ms.openlocfilehash: 83802683aee722468acf9bcc827ba66f45c05e6b
+ms.sourcegitcommit: cd0c0999b53e825b60471bfbfd4144cfcd783587
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84127612"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86225485"
 ---
-# <a name="xamarinforms-refreshview"></a>Xamarin.Formsрефрешвиев
+# <a name="xamarinforms-refreshview"></a>Xamarin.Forms RefreshView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-refreshviewdemo/)
 
@@ -33,9 +35,9 @@ ms.locfileid: "84127612"
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
 
 > [!NOTE]
-> На универсальная платформа Windows можно задать направление извлечения для `RefreshView` конкретной платформы. Дополнительные сведения см. в статье [направление извлечения рефрешвиев](~/xamarin-forms/platform/windows/refreshview-pulldirection.md).
+> В Universal Windows Platform можно задать направление извлечения для `RefreshView` конкретной платформы. Дополнительные сведения см. в разделе [ RefreshView направление опроса](~/xamarin-forms/platform/windows/refreshview-pulldirection.md).
 
-## <a name="create-a-refreshview"></a>Создание Рефрешвиев
+## <a name="create-a-refreshview"></a>Создание класса RefreshView
 
 В следующем примере показано, как создать экземпляр `RefreshView` в XAML:
 
@@ -77,12 +79,12 @@ refreshView.Content = scrollView;
 
 Когда пользователь инициирует обновление, `ICommand` `Command` выполняется свойство, определенное свойством, которое должно обновлять отображаемые элементы. Во время обновления отображается визуализация обновления, которая состоит из анимированного круга хода выполнения:
 
-[![Снимок экрана Рефрешвиев обновления данных в iOS и Android](refreshview-images/default-progress-circle.png "Рефрешвиев обновление данных")](refreshview-images/default-progress-circle-large.png#lightbox "Рефрешвиев обновление данных")
+[![Снимок экрана RefreshView обновления данных в iOS и Android](refreshview-images/default-progress-circle.png "[! Операцион. NO-LOC (Рефрешвиев)] обновление данных")](refreshview-images/default-progress-circle-large.png#lightbox "[! Операцион. NO-LOC (Рефрешвиев)] обновление данных")
 
 > [!NOTE]
 > Ручное задание `IsRefreshing` для свойства значения `true` приведет к запуску визуализации обновления и будет выполнять объект, `ICommand` определенный `Command` свойством.
 
-## <a name="refreshview-appearance"></a>Внешний вид Рефрешвиев
+## <a name="refreshview-appearance"></a>RefreshViewвнешний вид
 
 В дополнение к свойствам, `RefreshView` унаследованным от [`VisualElement`](xref:Xamarin.Forms.VisualElement) класса, `RefreshView` также определяет `RefreshColor` свойство. Это свойство можно задать для определения цвета круга хода выполнения, отображаемого во время обновления:
 
@@ -93,14 +95,14 @@ refreshView.Content = scrollView;
 
 На следующем снимке экрана показан объект `RefreshView` с `RefreshColor` набором свойств.
 
-[![Снимок экрана Рефрешвиев с синей окружностью хода выполнения на iOS и Android](refreshview-images/teal-progress-circle.png "Рефрешвиев с синей окружностью хода выполнения")](refreshview-images/teal-progress-circle-large.png#lightbox "Рефрешвиев с синей окружностью хода выполнения")
+[![Снимок экрана RefreshView с синей окружностью хода выполнения на iOS и Android](refreshview-images/teal-progress-circle.png "[! Операцион. NO-LOC (Рефрешвиев)] с синей окружностью хода выполнения")](refreshview-images/teal-progress-circle-large.png#lightbox "[! Операцион. NO-LOC (Рефрешвиев)] с синей окружностью хода выполнения")
 
 Кроме того, `BackgroundColor` свойству может быть присвоено значение [`Color`](xref:Xamarin.Forms.Color) , представляющее цвет фона круга хода выполнения.
 
 > [!NOTE]
 > В iOS `BackgroundColor` свойство задает цвет фона `UIView` , который содержит круг хода выполнения.
 
-## <a name="disable-a-refreshview"></a>Отключение Рефрешвиев
+## <a name="disable-a-refreshview"></a>ОтключениеRefreshView
 
 Приложение может ввести состояние, при котором операция Pull для обновления не является допустимой операцией. В таких случаях `RefreshView` можно отключить, задав `IsEnabled` свойству значение `false` . Это предотвратит возможность запуска запроса Pull для обновления пользователями.
 
@@ -108,6 +110,6 @@ refreshView.Content = scrollView;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Рефрешвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-refreshviewdemo/)
+- [RefreshViewСледующий](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-refreshviewdemo/)
 - [Связываемые макеты вXamarin.Forms](~/xamarin-forms/user-interface/layouts/bindable-layouts.md)
-- [Рефрешвиев направление извлечения для конкретной платформы](~/xamarin-forms/platform/windows/refreshview-pulldirection.md)
+- [RefreshViewНаправление опроса — зависит от платформы](~/xamarin-forms/platform/windows/refreshview-pulldirection.md)

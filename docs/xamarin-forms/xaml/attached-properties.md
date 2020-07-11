@@ -1,5 +1,5 @@
 ---
-title: Присоединенные свойства
+title: Вложенные свойства
 description: В этой статье приводятся общие сведения о присоединенных свойствах и демонстрируется их создание и использование.
 ms.prod: xamarin
 ms.assetid: 6E9DCDC3-A0E4-46A6-BAA9-4FEB6DF8A5A8
@@ -10,14 +10,14 @@ ms.date: 06/02/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1f26a4415a75b2b02fd7d6893e366ef81156f077
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 1277b3cd875c1b4e05e45202a8e30ef2ff93972a
+ms.sourcegitcommit: 898ba8e5140ae32a7df7e07c056aff65f6fe4260
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138194"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86226798"
 ---
-# <a name="attached-properties"></a>Присоединенные свойства
+# <a name="attached-properties"></a>Вложенные свойства
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)
 
@@ -44,6 +44,9 @@ ms.locfileid: "84138194"
 
 Вложенное свойство может быть создано путем объявления `public static readonly` свойства типа [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) . Свойству BIND должно быть присвоено возвращаемое значение одного из [ `BindableProperty.CreateAttached` ] (xref: Xamarin.Forms . Биндаблепроперти. Креатеаттачед (System. String, System. Type, System. Type, System. Object, Xamarin.Forms . BindingMode, Xamarin.Forms . Биндаблепроперти. Валидатевалуеделегате, Xamarin.Forms . Биндаблепроперти. Биндингпропертичанжедделегате, Xamarin.Forms . Биндаблепроперти. Биндингпропертичангингделегате, Xamarin.Forms . Биндаблепроперти. Коерцевалуеделегате, Xamarin.Forms . Биндаблепроперти. Креатедефаултвалуеделегате)) перегрузки методов. Объявление должно находиться в теле класса-владельца, но за пределами определений элементов.
 
+> [!IMPORTANT]
+> Соглашение об именовании присоединенных свойств заключается в том, что идентификатор присоединенного свойства должен совпадать с именем свойства, указанным в `CreateAttached` методе, с добавлением к нему "Property".
+
 В следующем коде показан пример присоединенного свойства:
 
 ```csharp
@@ -51,7 +54,7 @@ public static readonly BindableProperty HasShadowProperty =
   BindableProperty.CreateAttached ("HasShadow", typeof(bool), typeof(ShadowEffect), false);
 ```
 
-При этом создается присоединенное свойство с именем `HasShadow` типа `bool` . Свойство принадлежит `ShadowEffect` классу и имеет значение по умолчанию `false` . Соглашение об именовании присоединенных свойств заключается в том, что идентификатор присоединенного свойства должен совпадать с именем свойства, указанным в `CreateAttached` методе, с добавлением к нему "Property". Таким образом, в приведенном выше примере идентификатор присоединенного свойства — `HasShadowProperty` .
+При этом создается присоединенное свойство с именем `HasShadowProperty` типа `bool` . Свойство принадлежит `ShadowEffect` классу и имеет значение по умолчанию `false` .
 
 Дополнительные сведения о создании связываемых свойств, включая параметры, которые могут быть указаны во время создания, см. [в разделе Создание связываемого](~/xamarin-forms/xaml/bindable-properties.md#consume-a-bindable-property)свойства.
 
