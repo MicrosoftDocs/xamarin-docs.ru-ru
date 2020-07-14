@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c174a52e413db255c0d6cfedf22b89be85f03f75
-ms.sourcegitcommit: 2105091f2eeb7844b19ae94708a6ab07e3e79bce
+ms.openlocfilehash: eda3fa134d318ca787432cf5c5a2115b93c3614e
+ms.sourcegitcommit: 898ba8e5140ae32a7df7e07c056aff65f6fe4260
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200385"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86277974"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -27,8 +27,10 @@ ms.locfileid: "84200385"
 
     > [!NOTE]
     > Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
-    > - **Автор:** Фрэнк А. Крюгер (praeclarum)
     > - **Идентификатор:** sqlite-net-pcl
+    > - **Автор(ы)** : SQLite-net
+    > - **Владелец:** praeclarum
+    > - **URL-адрес проекта:** https://github.com/praeclarum/sqlite-net
     > - **Ссылка NuGet:** [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)
     >
     > Несмотря на название, этот пакет NuGet можно использовать в проектах .NET Standard.
