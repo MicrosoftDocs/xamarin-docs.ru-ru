@@ -13,12 +13,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: 692974defc7307e63692f2b6497903fae569d0d6
-  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
+  ms.openlocfilehash: 81c87d1179e6673cf75f33a579ec21ed8dd258e1
+  ms.sourcegitcommit: 60f475a3d6ca880aff34f1177f76eff0b0f96233
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/28/2020
-  ms.locfileid: "84137583"
+  ms.lasthandoff: 07/21/2020
+  ms.locfileid: "86869826"
 landingContent:
 - title: Основные понятия
   linkLists:
