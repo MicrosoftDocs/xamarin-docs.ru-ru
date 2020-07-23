@@ -1,62 +1,62 @@
 ---
 title: Microsoft Azure и Xamarin
-description: Этот документ ссылается на документацию о подключенных службах в Визуальной студии для Mac, мобильных приложениях Azure, Active Directory Authentication и WebAPI.
+description: В этом документе содержатся ссылки на документацию по Подключенные службы в Visual Studio для Mac, мобильных приложениях Azure, Active Directory проверки подлинности и WebAPI.
 ms.prod: xamarin
 ms.assetid: 7b9aa8d9-c181-4c33-8ab0-2f56e4dbfc04
 author: davidortinau
 ms.author: daortin
 ms.date: 10/09/2017
-ms.openlocfilehash: 2b6dfeb0de0fac59556280609dbf870c23a9298b
-ms.sourcegitcommit: 2a8eb8bce427e72d4e7edd06ce432e19f17dcdd7
+ms.openlocfilehash: 441ac213531c84aa3b7edfd6dfabab3f2c37d15d
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80388529"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934788"
 ---
 # <a name="microsoft-azure-and-xamarin"></a>Microsoft Azure и Xamarin
 
-[![](images/evolve-mikej-azure-sml.png "Azure App Services features are easy to add to Xamarin apps, including cloud data storage and cross-platform push notifications")](https://evolve.xamarin.com/session/56ec886fde91c6253c277bc6)
+[![Функции служб приложений Azure легко добавлять в приложения Xamarin, включая облачное хранилище данных и Push-уведомления между платформами.](images/evolve-mikej-azure-sml.png)](https://evolve.xamarin.com/session/56ec886fde91c6253c277bc6)
 
-[Эволюция 2016: Разработка подключенных приложений с использованием Azure и Xamarin](https://evolve.xamarin.com/session/56ec886fde91c6253c277bc6)
+[Развитие 2016: Разработка подключенных приложений с помощью Azure и Xamarin](https://evolve.xamarin.com/session/56ec886fde91c6253c277bc6)
 
 ## <a name="connected-services-in-visual-studio-for-mac"></a>Подключенные службы в Visual Studio для Mac
 
-Новая функция [Connected Services](connected-services.md) Visual Studio для Mac помогает разработчикам быстро и легко добавлять функциональность Azure в мобильные приложения из IDE. В настоящее время доступен для тестирования в альфа-канале.
+Новая функция [Подключенные службы](connected-services.md) Visual Studio для Mac помогает разработчикам быстро и легко добавлять функции Azure в мобильные приложения из интегрированной среды разработки. В настоящее время доступно для тестирования в альфа-канале.
 
 ## <a name="azure-app-services"></a>Службы приложений Azure
 
-Существует коллекция [документации Azure Mobile Apps,](~/cross-platform/data-cloud/mobile-apps.md) которая поможет вам в процессе реализации [мобильного клиента Azure.](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Client/)
-Xamarin также предлагает пакеты Azure Messaging NuGet для [iOS](https://www.nuget.org/packages/Xamarin.Azure.NotificationHubs.iOS/) и [Android,](https://www.nuget.org/packages/Xamarin.Azure.NotificationHubs.Android/) чтобы помочь реализовать push-уведомления на разных платформах.
+Существует коллекция [документации по мобильным приложениям Azure](~/cross-platform/data-cloud/mobile-apps.md) , в которой описывается процесс реализации [мобильного клиента Azure](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Client/).
+Xamarin также предлагает пакеты NuGet для обмена сообщениями Azure для [iOS](https://www.nuget.org/packages/Xamarin.Azure.NotificationHubs.iOS/) и [Android](https://www.nuget.org/packages/Xamarin.Azure.NotificationHubs.Android/) , которые помогают реализовать push-уведомления на разных платформах.
 
-Назначьте приложения на [портале служб приложений Azure](https://portal.azure.com/) для доступа к мобильным приложениям, Web-аПО, хранилищам и многое другое. Узнайте о [том, чем отличаются службы приложений,](https://azure.microsoft.com/updates/whats-new-with-azure-app-service/) и наблюдайте в [этих видео от корпорации Майкрософт.](https://azure.microsoft.com/campaigns/azure-march-announcement/)
+Настройте приложения на [портале служб приложений Azure](https://portal.azure.com/) , чтобы получить доступ к мобильным приложениям, веб-API, хранилищу и т. д. Узнайте, [как отличаются службы приложений](https://azure.microsoft.com/updates/whats-new-with-azure-app-service/) и смотрите их в [этих видеороликах корпорации Майкрософт](https://azure.microsoft.com/campaigns/azure-march-announcement/).
 
 ## <a name="active-directory-authentication"></a>Каталог библиотеки проверки подлинности Active Directory ADAL
 
-[Активный каталог Azure](~/cross-platform/data-cloud/active-directory/index.md) можно использовать для входа пользователей в приложения Xamarin. Приложения могут получить доступ к дополнительным службам, таким как Office 365.
+[Azure Active Directory](~/cross-platform/data-cloud/active-directory/index.md) можно использовать для входа пользователей в приложения Xamarin. Затем приложения могут получить доступ к дополнительным службам, таким как Office 365.
 
 ## <a name="webapi"></a>WebAPI
 
-Веб-aPI корпорации Майкрософт предоставляет REST-подобный интерфейс, который может быть легко использован приложениями Xamarin.
-Вы можете легко подвести [сайт Azure](https://trywebsites.azurewebsites.net/) и создать приложение на основе WebAPI для подключения к приложениям Xamarin.
+Веб-API Майкрософт предоставляет интерфейс, подобный ОСТАЛЬному, который может легко использоваться приложениями Xamarin.
+Вы можете легко развернуть [веб-сайт Azure](https://trywebsites.azurewebsites.net/) и создать приложение на основе WebAPI для подключения к приложениям Xamarin.
 
-### <a name="introduction-to-web-services"></a>[Введение в веб-службы](~/cross-platform/data-cloud/web-services/index.md)
+### <a name="introduction-to-web-services"></a>[Общие сведения о веб-службах](~/cross-platform/data-cloud/web-services/index.md)
 
-В этом уроке представлено, как интегрировать технологии веб-сервиса REST, WCF и SOAP с мобильными приложениями Xamarin. Он рассматривает различные реализации служб, оценивает имеющиеся инструменты и библиотеки для их интеграции и предоставляет шаблоны выборки для потребления данных служб. Наконец, он предоставляет базовый обзор создания веб-сервиса RESTful для потребления с помощью мобильного приложения Xamarin.
+В этом учебнике рассказывается, как интегрировать технологии веб-служб RESTFUL, WCF и SOAP с мобильными приложениями Xamarin. Он изучает различные реализации служб, оценивает доступные инструменты и библиотеки для их интеграции и предоставляет образцы шаблонов для использования данных службы. Наконец, он предоставляет базовый обзор создания веб-службы RESTFUL для использования с мобильным приложением Xamarin.
 
-## <a name="samples"></a>Примеры
+## <a name="samples"></a>примеры
 
-В дополнение к [образцам документации,](https://github.com/xamarin/mobile-samples/tree/master/Azure)следующие полные приложения демонстрируют различные функции Azure, включенные в приложения Xamarin:
+Помимо [примеров документации](https://github.com/xamarin/mobile-samples/tree/master/Azure), в следующих готовых приложениях демонстрируются различные функции Azure, включенные в приложения Xamarin:
 
-- [Спорт](https://github.com/xamarin/Sport) - дружественное приложение для отслеживания спортивной лиги, которое использует хранение данных & push-уведомления.
-- [Моменты](https://github.com/pierceboggan/Moments) — мгновенный обмен фотографиями, который использует хранилище Azure для изображений.
-- [Xamarin CRM](https://github.com/xamarin/app-crm) — использует Web API для бэк-энда.
-- [MyShoppe](https://github.com/jamesmontemagno/MyShoppe) - Мобильные приложения Azure.
+- [Спорт](https://github.com/xamarin/Sport) — удобное приложение для отличаются отслеживания, которое использует хранилище данных & push-уведомления.
+- [Moments](https://github.com/pierceboggan/Moments) Время — Мгновенный общий доступ к фотографиям, использующий службу хранилища Azure для образов.
+- [XAMARIN CRM](https://github.com/xamarin/app-crm) — использует веб-API для серверной части.
+- [Мишоппе](https://github.com/jamesmontemagno/MyShoppe) — мобильные приложения Azure.
 
-- [eShop](https://github.com/dotnet-architecture/eShopOnContainers) - образец для [серии архитектуры](https://www.microsoft.com/net/learn/architecture) электронных книг.
-- [MyDriving](https://azure.microsoft.com/campaigns/mydriving/) - Лазурный и IoT образец из Build 2016.
+- [ешоп](https://github.com/dotnet-architecture/eShopOnContainers) — образец для серии книг по [архитектуре](https://www.microsoft.com/net/learn/architecture) .
+- [MyDriving](https://azure.microsoft.com/campaigns/mydriving/) — пример Azure + IOT из сборки 2016.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Azure PCL @paulbatum(по) (образец)](https://github.com/paulbatum/mobile-services-xamarin-pcl)
+- [Пример Azure PCL (by @paulbatum ) (пример)](https://github.com/paulbatum/mobile-services-xamarin-pcl)
 - [Портал Azure](https://azure.microsoft.com/)
 - [Мобильный клиент для Xamarin (NuGet)](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Client/)
