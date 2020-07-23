@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0db20620870340386ccd0cedf7f98cb2975527ba
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 88761472c4beae3f40f2ca6852eea4db8276c4c9
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84128053"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86930685"
 ---
 # <a name="large-page-titles-on-ios"></a>Крупные заголовки страниц в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS используется для вывода заголовка страницы в виде большого заголовка панели навигации [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) , для устройств, использующих iOS 11 или более поздней версии. Крупное название выводится по левому краю и использует более крупный шрифт, а переход к стандартному названию происходит по мере того, как пользователь начинает прокручивать содержимое, чтобы эффективное использование экрана было эффективно. Однако в альбомной ориентации заголовок вернется в центр панели навигации, чтобы оптимизировать макет содержимого. Он используется в XAML путем присвоения `NavigationPage.PrefersLargeTitles` свойству присоединенного свойства `boolean` значения:
 
@@ -100,7 +100,7 @@ switch (On<iOS>().LargeTitleDisplay())
 
 В результате заданный объект `LargeTitleDisplayMode` применяется к [`Page`](xref:Xamarin.Forms.Page) , который управляет поведением крупного заголовка:
 
-![](page-large-title-images/large-title.png "Blur Effect Platform-Specific")
+![Эффект размытия — зависит от платформы](page-large-title-images/large-title.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 

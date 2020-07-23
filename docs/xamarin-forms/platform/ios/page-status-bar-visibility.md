@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 69594924f26afff133d8f211199cac44e66254d9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 22d54b1726858b1f46cf312f4962091374385704
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84128032"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936829"
 ---
 # <a name="page-status-bar-visibility-on-ios"></a>Видимость строки состояния страницы в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS предназначена для настройки видимости строки состояния в [`Page`](xref:Xamarin.Forms.Page) , а также позволяет управлять отображением или выходом строки состояния `Page` . Он используется в XAML путем задания `Page.PrefersStatusBarHidden` для присоединенного свойства значения `StatusBarHiddenMode` перечисления, а также при необходимости `Page.PreferredStatusBarUpdateAnimation` присоединенного свойства к значению `UIStatusBarAnimation` перечисления:
 
@@ -47,7 +47,7 @@ On<iOS>().SetPrefersStatusBarHidden(StatusBarHiddenMode.True)
 
 В результате можно установить видимость строки состояния в [`Page`](xref:Xamarin.Forms.Page) .
 
-![](page-status-bar-visibility-images/hide-status-bar.png "Status Bar Visibility Platform-Specific")
+![Видимость строки состояния — зависит от платформы](page-status-bar-visibility-images/hide-status-bar.png)
 
 > [!NOTE]
 > В [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) `StatusBarHiddenMode` значение указанного перечисления также будет обновлять строку состояния на всех дочерних страницах. Для всех других [`Page`](xref:Xamarin.Forms.Page) типов, производных от, указанное `StatusBarHiddenMode` значение перечисления будет обновлять строку состояния только на текущей странице.

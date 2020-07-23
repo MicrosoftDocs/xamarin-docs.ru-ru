@@ -1,6 +1,6 @@
 ---
-title: 'title: "Передача параметров эффекта в качестве свойств среды CLR" description: "Свойства общеязыковой среды выполнения (CLR) можно использовать для определения параметров эффекта, не реагирующих на изменения свойств во время выполнения.'
-description: 'В этой статье демонстрируется использование свойств среды CLR для передачи параметров эффекту". ms.prod: xamarin ms.assetid: 4B50466C-5DBD-45DD-B1E6-BE9524C92F27 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 08/05/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Передача параметров эффекта в качестве свойств среды CLR
+description: Свойства общеязыковой среды выполнения (CLR) можно использовать для определения параметров эффекта, не реагирующих на изменения свойств во время выполнения. В этой статье демонстрируется использование свойств среды CLR для передачи параметров эффекту.
 ms.prod: xamarin
 ms.assetid: 4B50466C-5DBD-45DD-B1E6-BE9524C92F27
 ms.technology: xamarin-forms
@@ -10,12 +10,12 @@ ms.date: 08/05/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 37d870509e034f4c23afba60fa055965ed9df4de
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 24468e88d39283d2b8282fe0cb9b59f33fcef2f0
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84138870"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936699"
 ---
 # <a name="passing-effect-parameters-as-common-language-runtime-properties"></a>Передача параметров эффекта в качестве свойств среды CLR
 
@@ -33,11 +33,11 @@ _Свойства общеязыковой среды выполнения (CLR)
 
 В примере приложения показан эффект `ShadowEffect`, который добавляет тень к тексту, отображаемому элементом управления [`Label`](xref:Xamarin.Forms.Label). На следующей схеме показаны обязанности каждого проекта в примере приложения, а также связи между ними:
 
-![](clr-properties-images/shadow-effect.png "Shadow Effect Project Responsibilities")
+![Задачи проекта для эффекта тени](clr-properties-images/shadow-effect.png)
 
 Элемент управления [`Label`](xref:Xamarin.Forms.Label) в `HomePage` настраивается с помощью класса `LabelShadowEffect` в каждом проекте для конкретной платформы. Параметры передаются каждому эффекту `LabelShadowEffect` через свойства в классе `ShadowEffect`. Каждый класс `LabelShadowEffect` является производным от класса `PlatformEffect` для каждой платформы. В результате тень добавляется к тексту, отображаемому элементом управления `Label`, как показано на следующих снимках экрана.
 
-![](clr-properties-images/screenshots.png "Shadow Effect on each Platform")
+![Эффект тени на каждой платформе](clr-properties-images/screenshots.png)
 
 ## <a name="creating-effect-parameters"></a>Создание параметров эффекта
 

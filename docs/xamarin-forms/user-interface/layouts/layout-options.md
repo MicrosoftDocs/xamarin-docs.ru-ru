@@ -10,16 +10,16 @@ ms.date: 02/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6fa03cf5c18e21ce5ca9e7ea907f50c8de6f3e6c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 1a3b9db435de49c438f458d1c4d85d3f81bbf749
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84573265"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86930693"
 ---
 # <a name="layout-options-in-xamarinforms"></a>Параметры макета вXamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layoutoptions)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layoutoptions)
 
 _Каждое Xamarin.Forms представление имеет свойства хоризонталоптионс и вертикалоптионс типа LayoutOptions. В этой статье объясняется, как каждое значение LayoutOptions имеет выравнивание и расширение представления._
 
@@ -94,7 +94,7 @@ Content = new StackLayout
 
 Код приводит к отображению макета на следующих снимках экрана:
 
-[![](layout-options-images/alignment.png "Alignment Layout Options")](layout-options-images/alignment-large.png#lightbox "Alignment Layout Options")
+[![Параметры макета выравнивания](layout-options-images/alignment.png)](layout-options-images/alignment-large.png#lightbox "Параметры макета выравнивания")
 
 ## <a name="expansion"></a>Расширение
 
@@ -147,11 +147,11 @@ Content = new StackLayout
 
 Код приводит к отображению макета на следующих снимках экрана:
 
-[![](layout-options-images/expansion.png "Expansion Layout Options")](layout-options-images/expansion-large.png#lightbox "Expansion Layout Options")
+[![Параметры макета расширения](layout-options-images/expansion.png)](layout-options-images/expansion-large.png#lightbox "Параметры макета расширения")
 
 Каждый из них [`Label`](xref:Xamarin.Forms.Label) занимает одинаковый объем пространства внутри [`StackLayout`](xref:Xamarin.Forms.StackLayout) . Но только последний `Label` со значением свойства [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions), равным [`FillAndExpand`](xref:Xamarin.Forms.LayoutOptions.FillAndExpand), имеет другой размер. Кроме того, каждая из них `Label` отделяется небольшим красным [`BoxView`](xref:Xamarin.Forms.BoxView) , что позволяет легко просматривать пространство, занимаемое запятыми `Label` .
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье объясняется, [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) как каждое значение структуры имеет выравнивание и расширение представления относительно его родителя. `Start`Поля, `Center` , `End` и используются `Fill` для определения выравнивания представления в родительском макете, а `StartAndExpand` `CenterAndExpand` поля,, `EndAndExpand` и `FillAndExpand` используются для определения параметров выравнивания, а также для определения того, займет ли представление больше места, если оно доступно, в [`StackLayout`](xref:Xamarin.Forms.StackLayout) .
 

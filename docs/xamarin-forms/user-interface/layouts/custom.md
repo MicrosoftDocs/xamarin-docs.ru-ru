@@ -10,18 +10,18 @@ ms.date: 03/29/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2c1a958bd4cb56096f554acf26756019eeb0693c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: b3063a644a48a8796b03b1a6acedbbcbfc7acbf7
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84572238"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934268"
 ---
 # <a name="create-a-custom-layout-in-xamarinforms"></a>Создание пользовательского макета вXamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
 
-_Xamarin. Forms определяет пять классов макета — StackLayout, Абсолутелайаут, RelativeLayout, Grid и Флекслайаут, каждый из которых упорядочивает свои дочерние элементы по-разному. Однако иногда необходимо упорядочить содержимое страницы, используя макет, не предоставляемый Xamarin.Forms . В этой статье объясняется, как написать пользовательский класс макета и демонстрируется ориентированный на ориентацию класс Враплайаут, который упорядочивает свои дочерние элементы на странице по горизонтали, а затем переносит отображение последующих дочерних элементов в дополнительные строки._
+_Xamarin.Formsопределяет пять классов макета — StackLayout, Абсолутелайаут, RelativeLayout, Grid и Флекслайаут, каждый из которых упорядочивает свои дочерние элементы другим способом. Однако иногда необходимо упорядочить содержимое страницы, используя макет, не предоставляемый Xamarin.Forms . В этой статье объясняется, как написать пользовательский класс макета и демонстрируется ориентированный на ориентацию класс Враплайаут, который упорядочивает свои дочерние элементы на странице по горизонтали, а затем переносит отображение последующих дочерних элементов в дополнительные строки._
 
 В Xamarin.Forms все классы макета являются производными от [`Layout<T>`](xref:Xamarin.Forms.Layout`1) класса и ограничивают универсальный тип [`View`](xref:Xamarin.Forms.View) и его производные типы. В свою очередь, `Layout<T>` класс является производным от [`Layout`](xref:Xamarin.Forms.Layout) класса, который предоставляет механизм для позиционирования и изменения размеров дочерних элементов.
 
@@ -40,7 +40,7 @@ Xamarin.FormsЧтобы создать пользовательский маке
 
 Этот цикл гарантирует, что каждый визуальный элемент на странице будет получать вызовы `Measure` к `Layout` методам и. Этот процесс показан на следующей схеме:
 
-![](custom-images/layout-cycle.png "Xamarin.Forms Layout Cycle")
+![Xamarin.FormsЦикл макета](custom-images/layout-cycle.png)
 
 > [!NOTE]
 > Обратите внимание, что циклы макета также могут возникать в подмножестве визуального дерева, если какое-либо изменение повлияет на макет. Сюда входят элементы, добавляемые или удаляемые из коллекции, например в [`StackLayout`](xref:Xamarin.Forms.StackLayout) , изменение [`IsVisible`](xref:Xamarin.Forms.VisualElement.IsVisible) свойства элемента или изменение размера элемента.
@@ -60,7 +60,7 @@ Xamarin.FormsЧтобы создать пользовательский маке
 
 [`Layout`](xref:Xamarin.Forms.Layout)Класс задает обработчик для [`MeasureInvalidated`](xref:Xamarin.Forms.VisualElement.MeasureInvalidated) события для каждого дочернего элемента, добавленного к его `Content` свойству или `Children` коллекции, и отсоединяет обработчик при удалении дочернего элемента. Таким образом, каждый элемент в визуальном дереве, имеющий дочерние элементы, уведомляется каждый раз, когда изменяется размер одного из его дочерних элементов. На следующей схеме показано, как изменение размера элемента в визуальном дереве может привести к изменениям, которые привели к дереву:
 
-![](custom-images/invalidation.png "Invalidation in the Visual Tree")
+![Недействительность в визуальном дереве](custom-images/invalidation.png)
 
 Однако `Layout` класс пытается ограничить влияние изменения размера дочернего элемента на макет страницы. Если размер макета ограничен, изменение размера дочернего элемента не влияет на содержимое, превышающее родительский макет в визуальном дереве. Однако обычно изменение размера макета влияет на то, как макет упорядочивает свои дочерние элементы. Таким образом, любое изменение размера макета приведет к запуску цикла макета для макета, и макет будет принимать вызовы к его [`OnMeasure`](xref:Xamarin.Forms.VisualElement.OnMeasure(System.Double,System.Double)) [`LayoutChildren`](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) методам и.
 
@@ -400,13 +400,13 @@ async Task<ImageList> GetImageListAsync()
 
 Когда отображается страница, содержащая `WrapLayout` , пример приложения асинхронно обращается к удаленному JSON-файлу, содержащему список фотографий, создает [`Image`](xref:Xamarin.Forms.Image) элемент для каждой фотографии и добавляет его в `WrapLayout` . Результат показан на следующих снимках экрана.
 
-![](custom-images/portait-screenshots.png "Sample Application Portrait Screenshots")
+![Пример приложения, портретные снимки экрана](custom-images/portait-screenshots.png)
 
 На следующих снимках экрана показано, что `WrapLayout` после поворота к альбомной ориентации:
 
-![](custom-images/landscape-ios.png "Sample iOS Application Landscape Screenshot")
-![](custom-images/landscape-android.png "Sample Android Application Landscape Screenshot")
-![](custom-images/landscape-uwp.png "Sample UWP Application Landscape Screenshot")
+![Пример экрана с альбомной ориентацией на примере приложения iOS пример приложения на снимке экрана с альбомной ориентацией на приложение ](custom-images/landscape-ios.png)
+ ![ ](custom-images/landscape-android.png)
+ ![ UWP](custom-images/landscape-uwp.png)
 
 Количество столбцов в каждой строке зависит от размера фотографии, ширины экрана и количества пикселов на устройство, независимое от устройства. [`Image`](xref:Xamarin.Forms.Image)Элементы асинхронно загружают фотографии, поэтому `WrapLayout` класс будет получать частые вызовы к своему [`LayoutChildren`](xref:Xamarin.Forms.Layout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)) методу, так как каждый `Image` элемент получает новый размер на основе загруженной фотографии.
 

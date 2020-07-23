@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/13/2017
-ms.openlocfilehash: 0ca65c56a742aaf23874f581b976ef50b3d16192
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 60e7c2b5771f7f65c07926b2fb5958fdc3f419fb
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574344"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931045"
 ---
 # <a name="watchos-background-tasks-in-xamarin"></a>Фоновые задачи watchOS в Xamarin
 
@@ -26,9 +26,9 @@ ms.locfileid: "84574344"
 
 Прежде чем обсуждать все способы, которыми разработчик может оставлять данные и обновленный пользовательский интерфейс watchOS приложения, в этом разделе вы узнаете о типичном наборе шаблонов использования, а также о том, как пользователь может перемещаться между iPhone и их Apple Watch в течение дня в зависимости от времени суток и активности, выполняемой в данный момент (например, при движении).
 
-Рассмотрим следующий пример:
+Возьмем следующий пример:
 
-[![](background-tasks-images/update00.png "How a user might move between their iPhone and their Apple Watch throughout the day")](background-tasks-images/update00.png#lightbox)
+[![Как пользователь может перемещаться между iPhone и их Apple Watch в течение дня](background-tasks-images/update00.png)](background-tasks-images/update00.png#lightbox)
 
 1. В утром, в то время как в процессе ожидания кофе пользователь просматривает текущие новости на iPhone в течение нескольких минут.
 2. Прежде чем покинуть кафе, они быстро проверяют погоду, усложняя свой просмотр.
@@ -41,7 +41,7 @@ ms.locfileid: "84574344"
 
 Используя новые API Apple, входящие в watchOS 3, приложение может запланировать _фоновое обновление_ и подготовить нужные сведения перед запросом пользователя. Возьмем пример усложнения погоды, описанный выше:
 
-[![](background-tasks-images/update01.png "An example of the Weather Complication")](background-tasks-images/update01.png#lightbox)
+[![Пример усложнения погоды](background-tasks-images/update01.png)](background-tasks-images/update01.png#lightbox)
 
 1. Приложение планируется пробуждении системой в определенное время. 
 2. Приложение извлекает информацию, которая потребуется для создания обновления.
@@ -50,11 +50,11 @@ ms.locfileid: "84574344"
 
 Как показано выше, система watchOS пробуждает приложение с помощью одной или нескольких задач, для которых доступен очень ограниченный пул:
 
-[![](background-tasks-images/update02.png "The watchOS system wakes the app using one or more Tasks")](background-tasks-images/update02.png#lightbox)
+[![Система watchOS пробуждает приложение с помощью одной или нескольких задач.](background-tasks-images/update02.png)](background-tasks-images/update02.png#lightbox)
 
 Компания Apple рекомендует сделать большую часть этой задачи (так как это ограниченный ресурс для приложения), добавив его до тех пор, пока приложение не завершит процесс обновления.
 
-Система доставляет эти задачи, вызывая новый `HandleBackgroundTasks` метод `WKExtensionDelegate` делегата. Пример.
+Система доставляет эти задачи, вызывая новый `HandleBackgroundTasks` метод `WKExtensionDelegate` делегата. Пример:
 
 ```csharp
 using System;
@@ -84,7 +84,7 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 Когда приложение завершит данную задачу, она вернет ее в систему, пометив ее как завершенную:
 
-[![](background-tasks-images/update03.png "The Task returns to the system by marking it completed")](background-tasks-images/update03.png#lightbox)
+[![Задача возвращается в систему, помечая ее как завершенную](background-tasks-images/update03.png)](background-tasks-images/update03.png#lightbox)
 
 <a name="New-Background-Tasks"></a>
 
@@ -105,7 +105,7 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 `WKApplicationRefreshBackgroundTask`— Это универсальная задача, которую можно запланировать на пробуждении приложения в будущем:
 
-[![](background-tasks-images/update04.png "A WKApplicationRefreshBackgroundTask woken at a future date")](background-tasks-images/update04.png#lightbox)
+[![Вкаппликатионрефрешбаккграундтаск пробуждении в будущем](background-tasks-images/update04.png)](background-tasks-images/update04.png#lightbox)
 
 В среде выполнения задачи приложение может выполнять любые локальные операции обработки, такие как обновление временной шкалы усложнения или выбор некоторых необходимых данных с помощью `NSUrlSession` .
 
@@ -115,7 +115,7 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 Система отправит сообщение `WKURLSessionRefreshBackgroundTask` после того, как данные будут загружены и готовы к обработке приложением:
 
-[![](background-tasks-images/update05.png "The WKURLSessionRefreshBackgroundTask when the data has finished downloading")](background-tasks-images/update05.png#lightbox)
+[![Вкурлсессионрефрешбаккграундтаск после завершения загрузки данных](background-tasks-images/update05.png)](background-tasks-images/update05.png#lightbox)
 
 Приложение не осталось работать, пока данные скачиваются в фоновом режиме. Вместо этого приложение планирует запрос данных, затем приостанавливается и система обрабатывает загрузку данных, выполняя только после завершения загрузки приложение.
 
@@ -125,17 +125,17 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 В watchOS 3 Компания Apple добавила закрепление, где пользователи могут закреплять свои любимые приложения и быстро получать к ним доступ. Когда пользователь нажимает кнопку сбоку на Apple Watch, отображается коллекция снимков закрепленных приложений. Пользователь может прокрутить влево или вправо, чтобы найти нужное приложение, а затем коснуться приложения, чтобы запустить его, заменив моментальный снимок на интерфейс выполняющегося приложения.
 
-[![](background-tasks-images/update06.png "Replacing the Snapshot with the running apps interface")](background-tasks-images/update06.png#lightbox)
+[![Замена моментального снимка интерфейсом выполняющихся приложений](background-tasks-images/update06.png)](background-tasks-images/update06.png#lightbox)
 
 Система периодически получает снимки пользовательского интерфейса приложения (путем отправки `WKSnapshotRefreshBackgroundTask` ) и использует эти моментальные снимки для заполнения закрепления. watchOS предоставляет приложению возможность обновить содержимое и пользовательский интерфейс перед созданием моментального снимка.
 
 Моментальные снимки очень важны в watchOS 3, так как они работают как образы для предварительного просмотра и запуска приложения. Если пользователь выполняет сопоставление в приложении в закрепления, он разворачивается в полноэкранный режим, выполняется переход на передний план и начинается выполнение, поэтому крайне важно, чтобы моментальный снимок был обновлен:
 
-[![](background-tasks-images/update07.png "If the user settles on an app in the Dock, it will expand to full screen")](background-tasks-images/update07.png#lightbox)
+[![Если пользователь сопоставлен с приложением в закрепления, он будет расширен до полноэкранного режима.](background-tasks-images/update07.png)](background-tasks-images/update07.png#lightbox)
 
 Опять же, система выдаст a, `WKSnapshotRefreshBackgroundTask` чтобы приложение может подготовиться (путем обновления данных и пользовательского интерфейса) до создания моментального снимка:
 
-[![](background-tasks-images/update08.png "The app can prepare by updating the data and the UI before the snapshot is taken")](background-tasks-images/update08.png#lightbox)
+[![Приложение может подготовиться путем обновления данных и пользовательского интерфейса до создания моментального снимка](background-tasks-images/update08.png)](background-tasks-images/update08.png#lightbox)
 
 Когда приложение помечает `WKSnapshotRefreshBackgroundTask` завершенное, система автоматически создаст моментальный снимок пользовательского интерфейса приложения.
 
@@ -144,7 +144,7 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 Кроме того, когда пользователь получает уведомление от приложения и использует его для переноса приложения на передний план, моментальный снимок должен быть обновлен так же, как и экран запуска.
 
-[![](background-tasks-images/update09.png "The user receives a notification from the app and taps it to bring the app to the foreground")](background-tasks-images/update09.png#lightbox)
+[![Пользователь получает уведомление от приложения и выполняет его касание для переноса приложения на передний план.](background-tasks-images/update09.png)](background-tasks-images/update09.png#lightbox)
 
 Если с момента взаимодействия пользователя с приложением watchOS прошло более одного часа, он сможет вернуться к состоянию по умолчанию. Состояние по умолчанию может означать различные вещи для различных приложений и, в зависимости от структуры приложения, может вообще не иметь состояния по умолчанию.
 
@@ -156,13 +156,13 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 В watchOS 3 Компания Apple имеет интегрированное наблюдение за подключением к API фонового обновления через новый `WKWatchConnectivityRefreshBackgroundTask` . С помощью этой новой функции приложение iPhone может предоставлять новые данные на свой аналог приложения для просмотра, пока приложение watchOS выполняется в фоновом режиме:
 
-[![](background-tasks-images/update10.png "An iPhone app can deliver fresh data to its watch app counterpart, while the watchOS app is running in the background")](background-tasks-images/update10.png#lightbox)
+[![Приложение iPhone может доставлять новые данные в свой аналог приложения для просмотра, пока приложение watchOS выполняется в фоновом режиме.](background-tasks-images/update10.png)](background-tasks-images/update10.png#lightbox)
 
 Запуск принудительной отправки, контекст приложения, Отправка файла или обновление сведений о пользователе из приложения iPhone приведет к пробуждать Apple Watch приложение в фоновом режиме.
 
 Когда приложение Watch пробуждении через, `WKWatchConnectivityRefreshBackgroundTask` ему потребуется использовать стандартные методы API для получения данных из приложения iPhone.
 
-[![](background-tasks-images/update11.png "The WKWatchConnectivityRefreshBackgroundTask data flow")](background-tasks-images/update11.png#lightbox)
+[![Поток данных Вкватчконнективитирефрешбаккграундтаск](background-tasks-images/update11.png)](background-tasks-images/update11.png#lightbox)
 
 1. Убедитесь, что сеанс активирован.
 2. Отслеживайте новое `HasContentPending` свойство, если оно имеет значение `true` , приложение по-прежнему содержит данные для обработки. Как и ранее, приложение должно удерживать задачу до завершения обработки всех данных.
@@ -174,7 +174,7 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 Поместив все части нового API фоновых задач вместе, типичный набор взаимодействий будет выглядеть следующим образом:
 
-[![](background-tasks-images/update12.png "The Background API Lifecycle")](background-tasks-images/update12.png#lightbox)
+[![Фоновый жизненный цикл API](background-tasks-images/update12.png)](background-tasks-images/update12.png#lightbox)
 
 1. Во-первых, приложение watchOS планирует, чтобы фоновая задача вернулся к активности в будущем.
 2. Приложение пробуждении системой и отправило задачу.
@@ -207,7 +207,7 @@ namespace MonkeyWatch.MonkeySeeExtension
 
 Рассмотрим следующий типичный сценарий использования:
 
-[![](background-tasks-images/update14.png "The typical usage scenario")](background-tasks-images/update14.png#lightbox)
+[![Типичный сценарий использования](background-tasks-images/update14.png)](background-tasks-images/update14.png#lightbox)
 
 Любимая футбольная команда пользователя воспроизводит большое совпадение от 7:00 до 9:00 PM, поэтому приложение должно рассчитывать на то, что пользователь должен регулярно проверять баллы и принимать решение об интервале обновления в 30 минут.
 
@@ -256,7 +256,7 @@ private void ScheduleNextBackgroundUpdate ()
 
 Далее подробнее рассмотрим 5-минутное окно, в котором показаны шаги, необходимые для обновления оценки.
 
-[![](background-tasks-images/update15.png "The 5 minute window showing the steps required to update the score")](background-tasks-images/update15.png#lightbox)
+[![Окно в 5 минут, в котором показаны шаги, необходимые для обновления оценки](background-tasks-images/update15.png)](background-tasks-images/update15.png#lightbox)
 
 1. На 7:30:02 PM приложение выдается системой и получает фоновую задачу обновления. Его первым приоритетом является получение последних оценок с сервера. См. раздел [планирование NSUrlSession](#Scheduling-a-NSUrlSession) ниже.
 2. В 7:30:05 приложение завершает исходную задачу, система переводит приложение в спящий режим и загружает запрошенные данные в фоновом режиме.
@@ -523,7 +523,7 @@ snapshotTask.SetTaskCompleted (false, expirationDate, userInfo);
 
 Как видно из приведенного выше примера в течение пяти минут, когда приложение Монкэйсокцер потребовало обновления своих оценок, эффективно работать и использовать новые фоновые задачи watchOS 3, приложение было активно всего 15 секунд: 
 
-[![](background-tasks-images/update16.png "The app was only active for a total of 15 seconds")](background-tasks-images/update16.png#lightbox)
+[![Приложение было активно в течение 15 секунд](background-tasks-images/update16.png)](background-tasks-images/update16.png#lightbox)
 
 Это снижает влияние приложения на доступное Apple Watch ресурсы и время работы батареи, а также позволяет приложению работать лучше с другими приложениями, работающими на часах.
 
@@ -611,7 +611,7 @@ private void UpdateComplication ()
 
 В watchOS 3 Компания Apple добавила закрепление, где пользователи могут закреплять свои любимые приложения и быстро получать к ним доступ. Когда пользователь нажимает кнопку сбоку на Apple Watch, отображается коллекция снимков закрепленных приложений. Пользователь может прокрутить влево или вправо, чтобы найти нужное приложение, а затем коснуться приложения, чтобы запустить его, заменив моментальный снимок на интерфейс выполняющегося приложения.
 
-[![](background-tasks-images/dock01.png "The Dock")](background-tasks-images/dock01.png#lightbox)
+[![Закрепить](background-tasks-images/dock01.png)](background-tasks-images/dock01.png#lightbox)
 
 Система периодически создает моментальные снимки пользовательского интерфейса приложения и использует эти моментальные снимки для заполнения документов. watchOS предоставляет приложению возможность обновить содержимое и пользовательский интерфейс перед созданием моментального снимка.
 
@@ -670,7 +670,7 @@ private void UpdateComplication ()
 
 Для работы с потоком данных Apple рекомендует следующее:
 
-[![](background-tasks-images/update17.png "App Data Flow Diagram")](background-tasks-images/update17.png#lightbox)
+[![Схема потока данных приложения](background-tasks-images/update17.png)](background-tasks-images/update17.png#lightbox)
 
 Внешнее событие (например, просмотр подключения) выводит приложение из спящего режима. Это заставляет приложение обновить свою модель данных (которая представляет текущее состояние приложений). В результате изменения модели данных приложению потребуется обновить свои сложности, запросить новый моментальный снимок, возможно, запустить фоновый режим `NSURLSession` для получения дополнительных данных и планирования дальнейшего обновления в фоновом режиме.
 
@@ -693,7 +693,7 @@ private void UpdateComplication ()
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье были рассмотрены улучшения, внесенные компанией Apple в watchOS, а также способы их использования для обновления приложения для просмотра. Во первых, он охватывает все новые фоновые задачи Apple, добавленные в watchOS 3. Затем он охватывает фоновый жизненный цикл API и способ реализации фоновых задач в приложении Xamarin watchOS. Наконец, мы рассмотрели, как работает планирование, и предоставили некоторые рекомендации.
 

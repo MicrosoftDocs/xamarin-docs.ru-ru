@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/07/2016
-ms.openlocfilehash: 99565d7e61e8e8c1d28b67a6a6d25979c79fa387
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 2a883c85eede7f7600e5716dded71f3c90f49026
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566166"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939754"
 ---
 # <a name="introduction-to-tvos-9"></a>Введение в tvOS 9
 
@@ -90,7 +90,7 @@ _В этой статье представлены все новые и изме
 
 Все остальные страны получат Пульт Apple TV Remote, который заменяет кнопку Siri на кнопку поиска, которая открывает экран поиска по умолчанию с текстовым вводом для поиска:
 
-[![](tvos9-images/remote02.png "Siri Remote")](tvos9-images/remote02.png#lightbox)
+[![Siri удаленный](tvos9-images/remote02.png)](tvos9-images/remote02.png#lightbox)
 
 Дополнительные сведения см. в документации по [удаленным Siri и контроллерам Bluetooth](~/ios/tvos/platform/remote-bluetooth.md) .
 
@@ -154,7 +154,7 @@ _В этой статье представлены все новые и изме
 
 На начальном экране Apple TV показаны все установленные приложения и предоставлен способ доступа к пользовательским настройкам.
 
-[![](tvos9-images/home01.png "The Home Screen")](tvos9-images/home01.png#lightbox)
+[![Начальный экран](tvos9-images/home01.png)](tvos9-images/home01.png#lightbox)
 
 Пользователь переходит по сетке значков приложения, используя жесты касания на Siri удаленно с помощью фокуса, чтобы выбрать приложение и запустить его. Значок приложения является вашим первым шансом создать впечатление от потенциального пользователя и должен быстро сообщить о назначении приложения.
 
@@ -168,7 +168,7 @@ _В этой статье представлены все новые и изме
 
 Если пользователь поместил ваше приложение Xamarin. tvOS в верхней строке на начальном экране Apple TV, то при выборе приложения пользователем будет отображаться большое изображение в верхнем полке. Этот образ должен выделять функции приложения или предоставлять прямые ссылки на его содержимое.
 
-[![](tvos9-images/topshelf01.png "The Top Shelf")](tvos9-images/topshelf01.png#lightbox)
+[![Верхняя полка](tvos9-images/topshelf01.png)](tvos9-images/topshelf01.png#lightbox)
 
 Верхнее изображение с полкой может быть предоставлено как один статический `.png` или `.lsr` файл или динамически создаваться во время выполнения как одна строка элементов с фокусом ввода.
 

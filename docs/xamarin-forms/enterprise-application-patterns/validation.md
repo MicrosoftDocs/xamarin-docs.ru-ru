@@ -10,12 +10,12 @@ ms.date: 08/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a4b82552956ab0e75d0a76a14ce7c919c744e09a
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cf7e3a260308a81dc40c4fe81be66e5436ed7c63
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84565334"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86935802"
 ---
 # <a name="validation-in-enterprise-apps"></a>Проверка в корпоративных приложениях
 
@@ -23,7 +23,7 @@ ms.locfileid: "84565334"
 
 В контексте шаблона Model-View-ViewModel (MVVM) для проверки данных часто требуется модель или модель представления, чтобы пользователь мог исправить все ошибки проверки. Мобильное приложение eShopOnContainers выполняет синхронную проверку свойств модели View на стороне клиента и уведомляет пользователя о любых ошибках проверки, выделяя элемент управления, содержащий недопустимые данные, и выводит сообщения об ошибках, сообщающие пользователю о причинах недопустимых данных. На рис. 6-1 показаны классы, участвующие в выполнении проверки в мобильном приложении eShopOnContainers.
 
-[![](validation-images/validation.png "Validation classes in the eShopOnContainers mobile app")](validation-images/validation-large.png#lightbox "Validation classes in the eShopOnContainers mobile app")
+[![Классы проверки в мобильном приложении eShopOnContainers](validation-images/validation.png)](validation-images/validation-large.png#lightbox "Классы проверки в мобильном приложении eShopOnContainers")
 
 **Рис. 6-1**. классы проверки в мобильном приложении eShopOnContainers
 
@@ -215,7 +215,7 @@ public bool Validate()
 
 Мобильное приложение eShopOnContainers уведомляет пользователя о любых ошибках проверки, выделяя элемент управления, содержащий недопустимые данные, с красной линией и отображая сообщение об ошибке, сообщающее пользователю, почему данные недопустимы ниже элемента управления, содержащего недопустимые данные. При исправлении недопустимых данных строка изменяется на черный, а сообщение об ошибке удаляется. На рис. 6-2 показано представление LoginView в мобильном приложении eShopOnContainers при наличии ошибок проверки.
 
-![](validation-images/validation-login.png "Displaying validation errors during login")
+![Отображение ошибок проверки во время входа](validation-images/validation-login.png)
 
 **Рис. 6-2.** Отображение ошибок проверки во время входа
 
@@ -379,7 +379,7 @@ namespace eShopOnContainers.iOS.Effects
 
 Когда в [`Entry`](xref:Xamarin.Forms.Entry) элементе управления появятся допустимые данные, в нижней части элемента управления будет применена черная линия, указывающая, что нет ошибки проверки. На рисунке 6-3 показан пример этого.
 
-![](validation-images/validation-blackline.png "Black line indicating no validation error")
+![Черная линия, указывающая на отсутствие ошибки проверки](validation-images/validation-blackline.png)
 
 **Рис. 6-3**. Черная линия, указывающая на отсутствие ошибки проверки
 
@@ -402,7 +402,7 @@ namespace eShopOnContainers.iOS.Effects
 
 [`DataTrigger`](xref:Xamarin.Forms.DataTrigger)При этом отслеживается `UserName.IsValid` свойство, и, если оно принимает значение `false` , оно выполняет [`Setter`](xref:Xamarin.Forms.Setter) , что изменяет `LineColor` присоединенное свойство `LineColorBehavior` присоединенного поведения на красный. На рисунке 6-4 показан пример этого.
 
-![](validation-images/validation-redline.png "Red line indicating validation error")
+![Красная линия, указывающая на ошибку проверки](validation-images/validation-redline.png)
 
 **Рис. 6-4**. Красная линия, указывающая на ошибку проверки
 
@@ -421,7 +421,7 @@ namespace eShopOnContainers.iOS.Effects
 
 Каждый [`Label`](xref:Xamarin.Forms.Label) привязывается к `Errors` свойству проверяемого объекта модели представления. `Errors`Свойство предоставляется `ValidatableObject<T>` классом и имеет тип `List<string>` . Так как `Errors` свойство может содержать несколько ошибок проверки, `FirstValidationErrorConverter` экземпляр используется для получения первой ошибки из коллекции для вывода.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Мобильное приложение eShopOnContainers выполняет синхронную проверку свойств модели View на стороне клиента и уведомляет пользователя о любых ошибках проверки, выделяя элемент управления, содержащий недопустимые данные, и отображая сообщения об ошибках, которые сообщают пользователю о том, что данные недопустимы.
 

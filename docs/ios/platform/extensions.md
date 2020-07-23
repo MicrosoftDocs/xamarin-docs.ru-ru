@@ -1,5 +1,5 @@
 ---
-title: Расширения iOS в Xamarin. iOS
+title: Расширения iOS в Xamarin.iOS
 description: В этом документе описываются расширения, которые представляют собой мини-приложения iOS в стандартном контексте, например в центре уведомлений. В нем обсуждается создание расширения и взаимодействие с ним из родительского приложения.
 ms.prod: xamarin
 ms.assetid: 3DEB3D43-3E4A-4099-8331-93C1E7A77095
@@ -8,12 +8,12 @@ ms.custom: xamu-video
 author: davidortinau
 ms.author: daortin
 ms.date: 05/12/2020
-ms.openlocfilehash: 6f2f1a908a43d81b2aabf5cb2db2f7a230356fa4
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+ms.openlocfilehash: d5a51b70237c4e8a6f6a5e48ae684031697a0897
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149932"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939845"
 ---
 # <a name="ios-extensions-in-xamarinios"></a>расширения iOS в Xamarin. iOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "83149932"
 |Поставщик документов|Разрешает приложению использовать удаленное хранилище документов|`com.apple.fileprovider-ui`|Приложения, использующие [уидокументпиккервиевконтроллер](xref:UIKit.UIDocumentPickerViewController)|
 |Клавиатура|Альтернативные клавиатуры|`com.apple.keyboard-service`|Любой|
 |Редактирование фотографий|Обработка и редактирование фотографий|`com.apple.photo-editing`|Photos. редактор приложений|
-|Общий доступ|Совместное применение данных с социальными сетями, службами обмена сообщениями и т. д.|`com.apple.share-services`|Любой|
+|Поделиться|Совместное применение данных с социальными сетями, службами обмена сообщениями и т. д.|`com.apple.share-services`|Любой|
 |Сегодня|"Мини-приложения", отображаемые на странице "сегодня" или в центре уведомлений|`com.apple.widget-extensions`|Сегодня и центр уведомлений|
 
 Дополнительные точки расширения были добавлены в [iOS 10](~/ios/platform/introduction-to-ios10/index.md#app-extensions) и [iOS 12](~/ios/platform/introduction-to-ios12/index.md#notification-improvements). Полную таблицу всех поддерживаемых типов можно найти в статье программное обеспечении для [расширения приложения iOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH20-SW2).
@@ -118,7 +118,7 @@ ms.locfileid: "83149932"
 
 В следующем пошаговом руководстве вы создадите мини-приложение с примером **сегодня** , которое вычисляет день и количество дней, оставшихся в году:
 
-[![](extensions-images/carpediemscreenshot-sm.png "An example Today widget that calculates the day and number of days remaining in the year")](extensions-images/carpediemscreenshot.png#lightbox)
+[![Пример мини-приложения сегодня, которое вычисляет день и количество дней, оставшихся в году](extensions-images/carpediemscreenshot-sm.png)](extensions-images/carpediemscreenshot.png#lightbox)
 
 ### <a name="creating-the-solution"></a>Создание решения
 
@@ -126,26 +126,26 @@ ms.locfileid: "83149932"
 
 1. Сначала создайте проект iOS, **единый Просмотр приложения** и нажмите кнопку **Далее** : 
 
-    [![](extensions-images/today01.png "First, create a new iOS, Single View App project and click the Next button")](extensions-images/today01.png#lightbox)
+    [![Сначала создайте проект iOS, единый Просмотр приложения и нажмите кнопку Далее.](extensions-images/today01.png)](extensions-images/today01.png#lightbox)
 2. Вызовите проект `TodayContainer` и нажмите кнопку **Далее** : 
 
-    [![](extensions-images/today02.png "Call the project TodayContainer and click the Next button")](extensions-images/today02.png#lightbox)
+    [![Вызов проекта Тодайконтаинер и нажатие кнопки "Далее"](extensions-images/today02.png)](extensions-images/today02.png#lightbox)
 3. Проверьте **имя проекта** и **имя_решения** и нажмите кнопку " **создать** ", чтобы создать решение: 
 
-    [![](extensions-images/today03.png "Verify the Project Name and SolutionName and click the Create button to create the solution")](extensions-images/today03.png#lightbox)
+    [![Проверьте имя проекта и имя_решения и нажмите кнопку "создать", чтобы создать решение.](extensions-images/today03.png)](extensions-images/today03.png#lightbox)
 4. Затем в **Обозреватель решений**щелкните решение правой кнопкой мыши и добавьте новый проект **расширения iOS** из шаблона " **Today** ". 
 
-    [![](extensions-images/today04.png "Next, in the Solution Explorer, right-click on the Solution and add a new iOS Extension project from the Today Extension template")](extensions-images/today04.png#lightbox)
+    [![Затем в обозреватель решений щелкните решение правой кнопкой мыши и добавьте новый проект расширения iOS из шаблона "Today".](extensions-images/today04.png)](extensions-images/today04.png#lightbox)
 5. Вызовите проект `DaysRemaining` и нажмите кнопку **Далее** : 
 
-    [![](extensions-images/today05.png "Call the project DaysRemaining and click the Next button")](extensions-images/today05.png#lightbox)
+    [![Вызов проекта Дайсремаининг и нажатие кнопки "Далее"](extensions-images/today05.png)](extensions-images/today05.png#lightbox)
 6. Проверьте проект и нажмите кнопку **создать** , чтобы создать его: 
 
-    [![](extensions-images/today06.png "Review the project and click the Create button to create it")](extensions-images/today06.png#lightbox)
+    [![Проверьте проект и нажмите кнопку "создать", чтобы создать его.](extensions-images/today06.png)](extensions-images/today06.png#lightbox)
 
 В полученном решении теперь должно быть два проекта, как показано ниже:
 
-[![](extensions-images/today07.png "The resulting Solution should now have two projects, as shown here")](extensions-images/today07.png#lightbox)
+[![В полученном решении теперь должно быть два проекта, как показано ниже.](extensions-images/today07.png)](extensions-images/today07.png#lightbox)
 
 ### <a name="creating-the-extension-user-interface"></a>Создание пользовательского интерфейса расширения
 
@@ -157,10 +157,10 @@ ms.locfileid: "83149932"
 
 1. В **Обозреватель решений**дважды щелкните файл проекта расширения, `Main.storyboard` чтобы открыть его для редактирования: 
 
-    [![](extensions-images/today08.png "Double-click the Extension projects Main.storyboard file to open it for editing")](extensions-images/today08.png#lightbox)
+    [![Дважды щелкните файл проекты расширения Main. Storyboard, чтобы открыть его для редактирования.](extensions-images/today08.png)](extensions-images/today08.png#lightbox)
 2. Выберите метку, которая была автоматически добавлена в пользовательский интерфейс с помощью шаблона, и присвойте ей **имя** `TodayMessage` на вкладке **мини** -приложение **обозревателя свойств**: 
 
-    [![](extensions-images/today09.png "Select the Label that was automatically added to the UI by template and give it the Name TodayMessage in the Widget tab of the Properties Explorer")](extensions-images/today09.png#lightbox)
+    [![Выберите метку, которая была автоматически добавлена в пользовательский интерфейс с помощью шаблона, и присвойте ей имя Тодаймессаже на вкладке мини-приложение обозревателя свойств.](extensions-images/today09.png)](extensions-images/today09.png#lightbox)
 3. Сохраните изменения в раскадровке.
 
 #### <a name="using-code"></a>Использование кода
@@ -169,16 +169,16 @@ ms.locfileid: "83149932"
 
 1. В **Обозреватель решений**выберите проект **дайсремаининг** , добавьте новый класс и вызовите его `CodeBasedViewController` : 
 
-    [![](extensions-images/code01.png "Aelect the DaysRemaining project, add a new class and call it CodeBasedViewController")](extensions-images/code01.png#lightbox)
+    [![Аелект проект Дайсремаининг, добавьте новый класс и назовите его Кодебаседвиевконтроллер](extensions-images/code01.png)](extensions-images/code01.png#lightbox)
 2. Опять же, в **Обозреватель решений**дважды щелкните файл расширения, `Info.plist` чтобы открыть его для редактирования: 
 
-    [![](extensions-images/code02.png "Double-click Extensions Info.plist file to open it for editing")](extensions-images/code02.png#lightbox)
+    [![Дважды щелкните файл Extensions info. plist, чтобы открыть его для редактирования.](extensions-images/code02.png)](extensions-images/code02.png#lightbox)
 3. Выберите **представление исходного кода** (в нижней части экрана) и откройте `NSExtension` узел: 
 
-    [![](extensions-images/code03.png "Select the Source View from the bottom of the screen and open the NSExtension node")](extensions-images/code03.png#lightbox)
+    [![Выберите представление исходного кода в нижней части экрана и откройте узел Нсекстенсион.](extensions-images/code03.png)](extensions-images/code03.png#lightbox)
 4. Удалите `NSExtensionMainStoryboard` ключ и добавьте `NSExtensionPrincipalClass` со значением `CodeBasedViewController` : 
 
-    [![](extensions-images/code04.png "Remove the NSExtensionMainStoryboard key and add a NSExtensionPrincipalClass with the value CodeBasedViewController")](extensions-images/code04.png#lightbox)
+    [![Удалите ключ Нсекстенсионмаинсторибоард и добавьте НсекстенсионпринЦипалкласс со значением Кодебаседвиевконтроллер](extensions-images/code04.png)](extensions-images/code04.png#lightbox)
 5. Сохраните изменения.
 
 Затем измените `CodeBasedViewController.cs` файл и сделайте его следующим:
@@ -250,7 +250,7 @@ public override void ViewDidLoad ()
 
 В этом пошаговом руководстве приложение-контейнер просто используется как метод для доставки и установки расширения и не предоставляет собственной функциональности. Измените `Main.storyboard` файл тодайконтаинер и добавьте некоторый текст, определяющий функцию расширения, и способ ее установки:
 
-[![](extensions-images/today10.png "Edit the TodayContainers Main.storyboard file and add some text defining the Extensions function and how to install it")](extensions-images/today10.png#lightbox)
+[![Измените файл main. Storyboard Тодайконтаинерс и добавьте некоторый текст, определяющий функцию Extensions, и способ ее установки.](extensions-images/today10.png)](extensions-images/today10.png#lightbox)
 
 Сохраните изменения в раскадровке.
 
@@ -258,19 +258,19 @@ public override void ViewDidLoad ()
 
 Чтобы проверить расширение в симуляторе iOS, запустите приложение **тодайконтаинер** . Отобразится главное представление контейнера:
 
-[![](extensions-images/run01.png "The containers main view will be displayed")](extensions-images/run01.png#lightbox)
+[![Будет отображено главное представление "контейнеры"](extensions-images/run01.png)](extensions-images/run01.png#lightbox)
 
 Затем нажмите кнопку " **домой** " в симуляторе, проведите вниз в верхней части экрана, чтобы открыть **Центр уведомлений**, перейдите на вкладку " **сегодня** " и нажмите кнопку " **изменить** ":
 
-[![](extensions-images/run02.png "Hit the Home button in the Simulator, swipe down from the top of the screen to open the Notification Center, select the Today tab and click the Edit button")](extensions-images/run02.png#lightbox)
+[![Нажмите кнопку "домой" в симуляторе, проведите вниз в верхней части экрана, чтобы открыть центр уведомлений, перейдите на вкладку "сегодня" и нажмите кнопку "Изменить".](extensions-images/run02.png)](extensions-images/run02.png#lightbox)
 
 Добавьте расширение **дайсремаининг** в представление " **сегодня** " и нажмите кнопку **done (Готово** ).
 
-[![](extensions-images/run03.png "Add the DaysRemaining Extension to the Today view and click the Done button")](extensions-images/run03.png#lightbox)
+[![Добавление расширения Дайсремаининг в представление "сегодня" и нажатие кнопки "Готово"](extensions-images/run03.png)](extensions-images/run03.png#lightbox)
 
 Новое мини-приложение будет добавлено в представление " **сегодня** ", и результаты будут отображены:
 
-[![](extensions-images/run04.png "The new widget will be added to the Today view and the results will be displayed")](extensions-images/run04.png#lightbox)
+[![Новое мини-приложение будет добавлено в представление "сегодня", и результаты будут отображены](extensions-images/run04.png)](extensions-images/run04.png#lightbox)
 
 ## <a name="communicating-with-the-host-app"></a>Взаимодействие с ведущим приложением
 
@@ -466,7 +466,7 @@ results.ObjectForKey("NSExtensionJavaScriptPreprocessingResultsKey");
 
 Учитывая эти строгие требования, следует развертывать только те расширения, которые были тщательно протестированы и оптимизированы для производительности и потребления памяти. 
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Этот документ содержит охваченные расширения, их типы, тип точек расширения и известные ограничения, накладываемые на расширение iOS. В нем обсуждаются создание, распространение, установка и запуск расширений, а также жизненный цикл расширения. В нем представлено пошаговое руководство по **созданию простого мини** -приложения, которое показывает два способа создания пользовательского интерфейса мини-приложения с помощью раскадровки или кода. Было показано, как тестировать расширение в симуляторе iOS. Наконец, в нем вкратце обсуждается взаимодействие с ведущим приложением и некоторые меры предосторожности и рекомендации, которые следует предпринять при разработке расширения. 
 

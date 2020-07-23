@@ -1,6 +1,6 @@
 ---
-title: 'title: "Передача параметров эффекта в качестве присоединенных свойств" description: "Присоединенные свойства можно использовать для определения параметров эффекта, реагирующих на изменения свойств времени выполнения.'
-description: 'В этой статье описывается использование присоединенных свойств для передачи параметров эффекту и изменение параметра во время выполнения". ms.prod: xamarin ms.assetid: DFCDCB9F-17DD-4117-BD53-B4FB206BB387 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 08/05/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Передача параметров эффекта в качестве присоединенных свойств
+description: Присоединенные свойства можно использовать для определения параметров эффекта, реагирующих на изменения свойств времени выполнения. В этой статье описывается использование присоединенных свойств для передачи параметров эффекту и изменение параметра во время выполнения.
 ms.prod: xamarin
 ms.assetid: DFCDCB9F-17DD-4117-BD53-B4FB206BB387
 ms.technology: xamarin-forms
@@ -10,12 +10,12 @@ ms.date: 08/05/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cf03d0c32d80d7a1821e323acdc84a351413efec
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 71238775e9cc9d3e32ab9c9287e5b52c759ca9eb
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84138883"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939936"
 ---
 # <a name="passing-effect-parameters-as-attached-properties"></a>Передача параметров эффекта в качестве присоединенных свойств
 
@@ -38,11 +38,11 @@ _Присоединенные свойства можно использоват
 
 В примере приложения показан `ShadowEffect`, который добавляет тень к тексту, отображаемому элементом управления [`Label`](xref:Xamarin.Forms.Label). Кроме того, цвет тени может быть изменен во время выполнения. На следующей схеме показаны обязанности каждого проекта в примере приложения, а также связи между ними:
 
-![](attached-properties-images/shadow-effect.png "Shadow Effect Project Responsibilities")
+![Задачи проекта для эффекта тени](attached-properties-images/shadow-effect.png)
 
 Элемент управления [`Label`](xref:Xamarin.Forms.Label) в `HomePage` настраивается с помощью класса `LabelShadowEffect` в каждом проекте для конкретной платформы. Параметры передаются каждому классу `LabelShadowEffect` через присоединенные свойства в классе `ShadowEffect`. Каждый класс `LabelShadowEffect` является производным от класса `PlatformEffect` для каждой платформы. В результате тень добавляется к тексту, отображаемому элементом управления `Label`, как показано на следующих снимках экрана.
 
-![](attached-properties-images/screenshots.png "Shadow Effect on each Platform")
+![Эффект тени на каждой платформе](attached-properties-images/screenshots.png)
 
 ## <a name="creating-effect-parameters"></a>Создание параметров эффекта
 

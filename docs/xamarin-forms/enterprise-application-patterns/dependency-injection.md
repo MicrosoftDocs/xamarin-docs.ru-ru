@@ -10,12 +10,12 @@ ms.date: 11/04/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 99cac3c597cf1d7351d3214ce59fd0a0a0a46400
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 8aea3ad36f6c35e9faf2771fc6b54c378c304afb
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84572355"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933605"
 ---
 # <a name="dependency-injection"></a>Внедрение зависимостей
 
@@ -62,7 +62,7 @@ public class ProfileViewModel : ViewModelBase
 
 В Тиниок `TinyIoCContainer` тип предоставляет контейнер внедрения зависимостей. На рис. 3-1 показаны зависимости при использовании этого контейнера, который создает экземпляр `IOrderService` объекта и внедряет его в `ProfileViewModel` класс.
 
-![](dependency-injection-images/dependencyinjection.png "Dependencies example when using dependency injection")
+![Пример зависимостей при использовании внедрения зависимостей](dependency-injection-images/dependencyinjection.png)
 
 **Рис. 3-1.** Зависимости при использовании внедрения зависимостей
 
@@ -160,7 +160,7 @@ _container.Register<LoginViewModel>().AsSingleton();
 > [!NOTE]
 > Типы, регистрируемые как singleton-экземпляры, удаляются при удалении контейнера.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Внедрение зависимостей позволяет разделять конкретные типы от кода, который зависит от этих типов. Обычно используется контейнер, содержащий список регистраций и сопоставлений между интерфейсами и абстрактными типами, а также конкретные типы, реализующие или расширяющие эти типы.
 

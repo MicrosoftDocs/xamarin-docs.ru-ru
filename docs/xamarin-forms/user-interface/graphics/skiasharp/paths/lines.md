@@ -10,22 +10,22 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 87b97ad913e08c42d16bbf055f168c07b9bd60e8
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 644e6ab4acffa7acf2d86733d68fed8db07a752a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137212"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86932370"
 ---
 # <a name="lines-and-stroke-caps"></a>Линии и концы штрихов
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Сведения об использовании SkiaSharp для рисования линий с различными наконечниками штриха_
 
 В SkiaSharp отрисовка одной строки сильно отличается от визуализации ряда Соединенных прямых линий. Однако даже при рисовании отдельных линий часто приходится присваивать линиям определенную толщину штрихов. Так как эти строки становятся шире, внешний вид концов линий также становится очень важным. Внешний вид конца линии называется *наконечником обводки*.
 
-![](lines-images/strokecapsexample.png "The three stroke caps options")
+![Три варианта штриха](lines-images/strokecapsexample.png)
 
 Для рисования отдельных строк `SKCanvas` определяет простой метод, [`DrawLine`](xref:SkiaSharp.SKCanvas.DrawLine(System.Single,System.Single,System.Single,System.Single,SkiaSharp.SKPaint)) аргументы которого указывают начальную и конечную координаты строки с `SKPaint` объектом:
 
@@ -97,7 +97,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Для каждого члена `SKStrokeCap` перечисления обработчик рисует две строки: одну с толщиной штриха 50 пикселей, а другую — с толщиной обводки, равной двум пикселям. Вторая строка предназначена для иллюстрации геометрического начала и конца строки независимо от толщины линии и конца штриха.
 
-[![](lines-images/strokecaps-small.png "Triple screenshot of the Stroke Caps page")](lines-images/strokecaps-large.png#lightbox "Triple screenshot of the Stroke Caps page")
+[![Тройной снимок экрана страницы "штрихи"](lines-images/strokecaps-small.png)](lines-images/strokecaps-large.png#lightbox "Тройной снимок экрана страницы "штрихи"")
 
 Как видите, знаки и линии `Square` `Round` обводки фактически расширяют длину строки на половину ширины штриха в начале строки и снова в конце. Это расширение имеет важное значение, когда необходимо определить размеры визуализированного объекта Graphics.
 
@@ -231,7 +231,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Снимки экрана показывают разнообразные `Picker` варианты выбора:
 
-[![](lines-images/multiplelines-small.png "Triple screenshot of the Multiple Lines page")](lines-images/multiplelines-large.png#lightbox "Triple screenshot of the Multiple Lines page")
+[![Тройной снимок экрана со страницей с несколькими строками](lines-images/multiplelines-small.png)](lines-images/multiplelines-large.png#lightbox "Тройной снимок экрана со страницей с несколькими строками")
 
 На iPhone слева показано, как `SKPointMode.Points` элемент перечисления вызывает `DrawPoints` визуализацию каждой точки в `SKPoint` массиве в виде квадрата, если конец строки имеет значение `Butt` или `Square` . Круги подготавливаются к просмотру, если конец строки имеет значение `Round` .
 

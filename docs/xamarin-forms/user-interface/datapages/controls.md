@@ -10,16 +10,16 @@ ms.date: 12/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 86b526fff305b195221aca3fb6a86ad0823cb145
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e206c89de278c8b85848294e76e4431825eaee85
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84569404"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938961"
 ---
 # <a name="datapages-controls-reference"></a>Справочник по элементам управления "страницы на странице"
 
-![](~/media/shared/preview.png "This API is currently in preview")
+![Сейчас этот API находится в предварительной версии](~/media/shared/preview.png)
 
 > [!IMPORTANT]
 > Для отображения страниц с наборами элементов требуется Xamarin.Forms ссылка на тему. Это включает установку [ Xamarin.Forms . Тему. базовый](https://www.nuget.org/packages/Xamarin.Forms.Theme.Base/) пакет NuGet в проекте, а затем — [ Xamarin.Forms . Theme. light](https://www.nuget.org/packages/Xamarin.Forms.Theme.Light/) или [ Xamarin.Forms . Themes. темные](https://www.nuget.org/packages/Xamarin.Forms.Theme.Dark/) пакеты NuGet.
@@ -47,8 +47,8 @@ Xamarin.FormsСтраницы данных NuGet содержат ряд эле�
 
 `HeroImage`Элемент управления имеет четыре свойства:
 
-* текст
-* Подробный сведения
+* Text
+* Сведения
 * ImageSource
 * Аспект
 
@@ -62,11 +62,11 @@ Xamarin.FormsСтраницы данных NuGet содержат ряд эле�
 
 **Android**
 
-![](controls-images/heroimage-light-android.png "Элемент управления Хероимаже в Android") ![](controls-images/heroimage-dark-android.png "Элемент управления Хероимаже в Android")
+![Элемент управления Хероимаже в Android](controls-images/heroimage-light-android.png) ![Элемент управления Хероимаже в Android](controls-images/heroimage-dark-android.png)
 
 **iOS**
 
-![](controls-images/heroimage-light-ios.png "Элемент управления Хероимаже в iOS") ![](controls-images/heroimage-dark-ios.png "Элемент управления Хероимаже в iOS")
+![Элемент управления Хероимаже в iOS](controls-images/heroimage-light-ios.png) ![Элемент управления Хероимаже в iOS](controls-images/heroimage-dark-ios.png)
 
 ### <a name="listitem"></a>ListItem
 
@@ -75,7 +75,7 @@ Xamarin.FormsСтраницы данных NuGet содержат ряд эле�
 Существует пять свойств:
 
 * Заголовок
-* Подробный сведения
+* Сведения
 * ImageSource
 * плацехолдимажесаурце
 * Аспект
@@ -94,11 +94,11 @@ Xamarin.FormsСтраницы данных NuGet содержат ряд эле�
 
 **Android**
 
-![](controls-images/listitem-light-android.png "Элемент управления ListItem в Android") ![](controls-images/listitem-dark-android.png "Элемент управления ListItem в Android")
+![Элемент управления ListItem в Android](controls-images/listitem-light-android.png) ![Элемент управления ListItem в Android](controls-images/listitem-dark-android.png)
 
 **iOS**
 
-![](controls-images/listitem-light-ios.png "Элемент управления ListItem в iOS") ![](controls-images/listitem-dark-ios.png "Элемент управления ListItem в iOS")
+![Элемент управления ListItem в iOS](controls-images/listitem-light-ios.png) ![Элемент управления ListItem в iOS](controls-images/listitem-dark-ios.png)
 
 ## <a name="custom-control-example"></a>Пример пользовательского элемента управления
 
@@ -106,8 +106,8 @@ Xamarin.FormsСтраницы данных NuGet содержат ряд эле�
 
 Он будет содержать три свойства:
 
-* текст
-* Подробный сведения
+* Text
+* Сведения
 * ImageSource
 
 Целью является пользовательский элемент управления, который будет выглядеть, как в приведенном ниже коде (Обратите внимание, что требуется пользовательское значение `xmlns:local` , которое ссылается на текущую сборку):
@@ -124,11 +124,11 @@ Xamarin.FormsСтраницы данных NuGet содержат ряд эле�
 
 **Android**
 
-![](controls-images/cardview-light-android.png "Пользовательский элемент управления Кардвиев в Android") ![](controls-images/cardview-dark-android.png "Пользовательский элемент управления Кардвиев в Android")
+![Пользовательский элемент управления Кардвиев в Android](controls-images/cardview-light-android.png) ![Пользовательский элемент управления Кардвиев в Android](controls-images/cardview-dark-android.png)
 
 **iOS**
 
-![](controls-images/cardview-light-ios.png "Пользовательский элемент управления Кардвиев в iOS") ![](controls-images/cardview-dark-ios.png "Пользовательский элемент управления Кардвиев в iOS")
+![Пользовательский элемент управления Кардвиев в iOS](controls-images/cardview-light-ios.png) ![Пользовательский элемент управления Кардвиев в iOS](controls-images/cardview-dark-ios.png)
 
 ### <a name="building-the-custom-cardview"></a>Создание пользовательского Кардвиев
 

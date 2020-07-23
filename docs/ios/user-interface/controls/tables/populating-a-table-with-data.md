@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: 9acdde897a3a700d0138cb67db6735a8cce07120
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 48aeaf8e3036c9b4e1ed548208b7daa822a00913
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84570834"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933423"
 ---
 # <a name="populating-a-table-with-data-in-xamarinios"></a>Заполнение таблицы данными в Xamarin. iOS
 
@@ -89,7 +89,7 @@ public override void ViewDidLoad ()
 
 Результирующая таблица выглядит следующим образом:
 
- [![](populating-a-table-with-data-images/image3.png "Sample table running")](populating-a-table-with-data-images/image3.png#lightbox)
+ [![Образец таблицы работает](populating-a-table-with-data-images/image3.png)](populating-a-table-with-data-images/image3.png#lightbox)
 
 В большинстве таблиц пользователь может коснуться строки, чтобы выбрать ее, и выполнить какое-либо другое действие (например, воспроизведение песни или вызов контакта или отображение другого экрана). Чтобы добиться этого, необходимо выполнить несколько задач. Во-первых, создадим Алертконтроллер для вывода сообщения, когда пользователь щелкнул строку, добавив в `RowSelected` метод следующее:
 
@@ -141,7 +141,7 @@ public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 
 Теперь пользователь может коснуться строки, и появится предупреждение:
 
- [![](populating-a-table-with-data-images/image4.png "The row selected alert")](populating-a-table-with-data-images/image4.png#lightbox)
+ [![Выбранная строка оповещения](populating-a-table-with-data-images/image4.png)](populating-a-table-with-data-images/image4.png#lightbox)
 
 ## <a name="cell-reuse"></a>Повторное использование ячейки
 
@@ -220,7 +220,7 @@ public class MyCell : UITableViewCell
 
 Индекс помогает пользователю прокручивать длинные списки, как правило, упорядоченные в алфавитном порядке, хотя вы можете индексировать по любому желаемому критерию. Пример **басиктаблеиндекс** загружает из файла более длинный список элементов для демонстрации индекса. Каждый элемент в индексе соответствует "разделу" таблицы.
 
- [![](populating-a-table-with-data-images/image5.png "The Index display")](populating-a-table-with-data-images/image5.png#lightbox)
+ [![Отображение индекса](populating-a-table-with-data-images/image5.png)](populating-a-table-with-data-images/image5.png#lightbox)
 
 Для поддержки "разделов" данные, лежащие в основе таблицы, должны быть сгруппированы, поэтому пример Басиктаблеиндекс создает `Dictionary<>` из массива строк, используя первую букву каждого элемента в качестве ключа словаря:
 
@@ -268,7 +268,7 @@ public override string[] SectionIndexTitles (UITableView tableView)
 Верхние и нижние колонтитулы можно использовать для визуального группирования строк в таблице. Требуемая структура данных очень похожа на добавление индекса — очень `Dictionary<>` хорошо работает. Вместо использования алфавита для группировки ячеек в этом примере будет группироваться тип овощей by ботаническом.
 Выходные данные выглядят следующим образом:
 
- [![](populating-a-table-with-data-images/image6.png "Sample Headers and Footers")](populating-a-table-with-data-images/image6.png#lightbox)
+ [![Примеры верхних и нижних колонтитулов](populating-a-table-with-data-images/image6.png)](populating-a-table-with-data-images/image6.png#lightbox)
 
 Для вывода верхних и нижних колонтитулов `UITableViewSource` подклассу требуются следующие дополнительные методы:
 

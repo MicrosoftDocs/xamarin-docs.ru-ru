@@ -10,12 +10,12 @@ ms.date: 01/29/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 062dd77f1dc7b82f16bfbc6d46e44d4adeb73350
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 4381b1fbe7b38c2695bce645903d599bdb792fc2
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84564710"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937440"
 ---
 # <a name="adding-ios-specific-formatting"></a>Добавление форматирования, относящегося к iOS
 
@@ -42,11 +42,11 @@ nav.BarTextColor = Color.White;
 
 Результат показан в следующем фрагменте экрана. Обратите внимание, что элементы строки состояния являются черными (не могут быть заданы в пределах, Xamarin.Forms так как это функция для конкретной платформы).
 
-![](theme-images/status-default-sml.png "iOS Theming")
+![данные для iOS](theme-images/status-default-sml.png)
 
 В идеале строка состояния также будет содержать белый вид, что можно выполнить непосредственно в проекте iOS. Добавьте следующие записи в файле **info. plist** , чтобы строка состояния была белыми:
 
-![](theme-images/info-plist.png "iOS Info.plist Entries")
+![Записи сведений iOS. plist](theme-images/info-plist.png)
 
 или измените соответствующий файл **info. plist** непосредственно для включения:
 
@@ -59,7 +59,7 @@ nav.BarTextColor = Color.White;
 
 Теперь при запуске приложения панель навигации отображается зеленым цветом, а ее текст — белым (из-за Xamarin.Forms форматирования) *, а* текст строки состояния также является белым благодаря конфигурации iOS:
 
-![](theme-images/status-white-sml.png "iOS Theming")
+![данные для iOS](theme-images/status-white-sml.png)
 
 ## <a name="uiappearance-api"></a>API Уиаппеаранце
 
@@ -88,7 +88,7 @@ public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 По умолчанию выбранный значок панели вкладок в элементе[`TabbedPage`](~/xamarin-forms/app-fundamentals/navigation/tabbed-page.md)
 будет синим:
 
-![](theme-images/tabbar-default.png "Default iOS Tab Bar Icon in TabbedPage")
+![Значок панели вкладок iOS по умолчанию в Таббедпаже](theme-images/tabbar-default.png)
 
 Чтобы изменить это поведение, задайте `UITabBar.Appearance` свойство:
 
@@ -98,7 +98,7 @@ UITabBar.Appearance.SelectedImageTintColor = UIColor.FromRGB(0x91, 0xCA, 0x47); 
 
 В результате выбранная вкладка будет зеленым:
 
-![](theme-images/tabbar-custom.png "Green iOS Tab Bar Icon in TabbedPage")
+![Зеленый значок панели вкладок iOS в Таббедпаже](theme-images/tabbar-custom.png)
 
 Использование этого API позволяет настроить внешний вид элементаXamarin.Forms
 `TabbedPage`в iOS с очень небольшим кодом. Дополнительные сведения об использовании пользовательского модуля подготовки отчетов для установки определенного шрифта для вкладки см. в описании инструкции по [настройке вкладок](https://github.com/xamarin/recipes/tree/master/Recipes/xamarin-forms/iOS/customize-tabs) .
@@ -113,7 +113,7 @@ UISwitch.Appearance.OnTintColor = UIColor.FromRGB(0x91, 0xCA, 0x47); // green
 
 Эти два снимка экрана показывают элемент управления по умолчанию `UISwitch` слева и настроенную версию (параметр `Appearance` ) справа в [примере TODO](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo):
 
-![](theme-images/switch-default.png "Цвет Уисвитч по умолчанию") ![](theme-images/switch-custom.png "Настроенный цвет Уисвитч")
+![Цвет Уисвитч по умолчанию](theme-images/switch-default.png) ![Настроенный цвет Уисвитч](theme-images/switch-custom.png)
 
 ### <a name="other-controls"></a>Другие элементы управления
 

@@ -6,12 +6,12 @@ ms.assetid: E442EEFB-FA9C-40E9-9668-5A3F915C8400
 author: davidortinau
 ms.author: daortin
 ms.date: 03/23/2017
-ms.openlocfilehash: de8c66e6a89f035b8370a2139361d3e942aa9c09
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 6924379f49a80733714a488851533f506e83b245
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571211"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86930836"
 ---
 # <a name="building-cross-platform-applications-overview"></a>Общие сведения о построении межплатформенных приложений
 
@@ -53,7 +53,7 @@ Xamarin — это не просто платформа "однократной 
 
 Следуя принципу разделения ответственности путем распределения архитектуры приложения и последующего перемещения основных функциональных возможностей, которые не зависят от платформы, в базовую библиотеку с возможностью повторного использования, можно максимально увеличить совместное использование кода на разных платформах, как показано ниже.
 
- ![](overview-images/layers2.png "By following the principle of separation of responsibility by layering your application architecture and then moving core functionality that is platform agnostic into a reusable core library, you can maximize code sharing across platforms")
+ ![Следуя принципу разделения ответственности путем распределения архитектуры приложения и последующего перемещения основных функциональных возможностей, которые не зависят от платформы, в базовую библиотеку с возможностью повторного использования, можно максимально увеличить совместное использование кода на разных платформах.](overview-images/layers2.png)
 
  <a name="Case_Studies"></a>
 

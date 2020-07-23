@@ -6,12 +6,12 @@ ms.assetid: 8A832A76-A770-1A7C-24BA-B3E6F57617A0
 author: davidortinau
 ms.author: daortin
 ms.date: 03/06/2018
-ms.openlocfilehash: 67e66d5d8f1023c0e7561791ff29ed2952ac040b
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 6508f7ec48d10196b47e0b51fc30e54e3c3668a6
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571016"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86930563"
 ---
 # <a name="binding-objective-c-libraries"></a>Цель привязки-библиотеки C
 
@@ -39,14 +39,14 @@ ms.locfileid: "84571016"
 Самый простой способ создать привязку — создать проект привязки Xamarin. iOS.
 Это можно сделать из Visual Studio для Mac, выбрав тип проекта, Библиотека **привязок > библиотеки iOS >**.
 
-[![](objective-c-libraries-images/00-sml.png "Do this from Visual Studio for Mac by selecting the project type, iOS Library Bindings Library")](objective-c-libraries-images/00.png#lightbox)
+[![Сделайте это из Visual Studio для Mac, выбрав тип проекта "Библиотека привязок библиотеки iOS"](objective-c-libraries-images/00-sml.png)](objective-c-libraries-images/00.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Самый простой способ создать привязку — создать проект привязки Xamarin. iOS.
 Это можно сделать в Visual Studio в Windows, выбрав тип проекта, **Visual C# > библиотека привязок > iOS (IOS)**:
 
-[![](objective-c-libraries-images/00vs-sml.png "iOS Bindings Library iOS")](objective-c-libraries-images/00vs.png#lightbox)
+[![Библиотека привязок iOS, iOS](objective-c-libraries-images/00vs-sml.png)](objective-c-libraries-images/00vs.png#lightbox)
 
 > [!IMPORTANT]
 > Примечание. проекты привязки для **Xamarin. Mac** поддерживаются только в Visual Studio для Mac.
@@ -104,7 +104,7 @@ namespace Cocos2D {
 
 На этой диаграмме показана связь между файлами:
 
- [![](objective-c-libraries-images/screen-shot-2012-02-08-at-3.33.07-pm.png "This chart shows the relationship between the files")](objective-c-libraries-images/screen-shot-2012-02-08-at-3.33.07-pm.png#lightbox)
+ [![На этой диаграмме показана связь между файлами](objective-c-libraries-images/screen-shot-2012-02-08-at-3.33.07-pm.png)](objective-c-libraries-images/screen-shot-2012-02-08-at-3.33.07-pm.png#lightbox)
 
 Файл определения API будет содержать только пространства имен и определения интерфейсов (с любыми членами, которые может содержать интерфейс) и не должны содержать классы, перечисления, делегаты или структуры. Файл определения API — это просто контракт, который будет использоваться для создания API.
 
@@ -135,7 +135,7 @@ public partial class Camera {
 Чтобы выполнить эту привязку, необходимо добавить в проект собственную библиотеку.  Это можно сделать, добавив собственную библиотеку в проект, перетащив собственную библиотеку из поиска в проект в обозревателе решений или щелкнув правой кнопкой мыши проект и выбрав **Добавить**  >  **Добавить файлы** , чтобы выбрать собственную библиотеку.
 Собственные библиотеки по соглашению начинаются с слова «lib» и заканчиваются расширением «. a». После этого Visual Studio для Mac добавит два файла:. a и автоматически заполняемый файл C#, содержащий сведения о том, что содержит собственная библиотека:
 
- [![](objective-c-libraries-images/screen-shot-2012-02-08-at-3.45.06-pm.png "Native libraries by convention start with the word lib and end with the extension .a")](objective-c-libraries-images/screen-shot-2012-02-08-at-3.45.06-pm.png#lightbox)
+ [![Собственные библиотеки по соглашению начинаются с слова lib и заканчиваются расширением. a](objective-c-libraries-images/screen-shot-2012-02-08-at-3.45.06-pm.png)](objective-c-libraries-images/screen-shot-2012-02-08-at-3.45.06-pm.png#lightbox)
 
 Содержимое этого `libMagicChord.linkwith.cs` файла содержит сведения о том, как можно использовать эту библиотеку, и указывает интегрированной среде разработки упаковать этот двоичный файл в итоговый DLL:
 
@@ -479,7 +479,7 @@ interface NSStringDrawingExtensions {
 
 ### <a name="binding-objective-c-argument-lists"></a>Цели привязки — списки аргументов C
 
-Цель-C поддерживает аргументы Variadic. Пример.
+Цель-C поддерживает аргументы Variadic. Пример:
 
 ```objc
 - (void) appendWorkers:(XWorker *) firstWorker, ...
@@ -522,7 +522,7 @@ public void AppendWorkers(params Worker[] workers)
 
 Обычно эти поля содержат значения строк или целочисленных значений, на которые необходимо ссылаться. Они обычно используются в качестве строки, представляющей конкретное уведомление, и в качестве ключей в словарях.
 
-Чтобы привязать поле, добавьте свойство в файл определения интерфейса и снабдите свойство [`[Field]`](~/cross-platform/macios/binding/binding-types-reference.md#FieldAttribute) атрибутом. Этот атрибут принимает один параметр: имя C символа для поиска. Пример.
+Чтобы привязать поле, добавьте свойство в файл определения интерфейса и снабдите свойство [`[Field]`](~/cross-platform/macios/binding/binding-types-reference.md#FieldAttribute) атрибутом. Этот атрибут принимает один параметр: имя C символа для поиска. Пример:
 
 ```csharp
 [Field ("NSSomeEventNotification")]
@@ -632,7 +632,7 @@ interface MyType {
 Можно оформлять методы (в возвращаемом значении), параметры и свойства с помощью [`[BindAs]`](~/cross-platform/macios/binding/binding-types-reference.md#BindAsAttribute) . Единственное ограничение заключается в том, что член **не должен** находиться внутри элемента[`[Protocol]`](~/cross-platform/macios/binding/binding-types-reference.md#ProtocolAttribute) 
 [`[Model]`](~/cross-platform/macios/binding/binding-types-reference.md#ModelAttribute)интерфейс или.
 
-Пример.
+Пример:
 
 ```csharp
 [return: BindAs (typeof (bool?))]
@@ -651,7 +651,7 @@ bool? ShouldDraw (CGRect rect) { ... }
 
 [`[BindAs]`](~/cross-platform/macios/binding/binding-types-reference.md#BindAsAttribute)также поддерживает массивы `NSNumber` `NSValue` и `NSString` (перечисления).
 
-Пример.
+Пример:
 
 ```csharp
 [BindAs (typeof (CAScroll []))]
@@ -682,7 +682,7 @@ CAScroll [] SupportedScrollModes { get; set; }
 
 Этот атрибут может использоваться без аргументов для уведомлений, не содержащих полезных данных, или можно указать объект `System.Type` , ссылающийся на другой интерфейс в определении API, обычно с именем EventArgs. Генератор преобразует интерфейс в класс, который подклассы `EventArgs` и будет включать все свойства, перечисленные здесь. [`[Export]`](~/cross-platform/macios/binding/binding-types-reference.md#ExportAttribute)Атрибут должен использоваться в классе EventArgs для перечисления имени ключа, используемого для поиска словаря цели-C для выборки значения.
 
-Пример.
+Пример:
 
 ```csharp
 interface MyClass {
@@ -1197,7 +1197,7 @@ void SomeString (ref NSObject byref);
 
 В приведенном выше примере значение помечается как имеющее семантику "удержания". Семантика доступна:
 
-- Назначение
+- Присвоение
 - Копировать
 - Сохранять
 
@@ -1337,7 +1337,7 @@ c.Loaded += delegate (sender, args){
 Приведенный выше пример свяжет `libMyLibrary.a` `libSystemLibrary.dylib` и `CFNetwork` библиотеку Framework с окончательным исполняемым файлом.
 
 Также можно воспользоваться преимуществами уровня сборки [`[LinkWithAttribute]`](~/cross-platform/macios/binding/binding-types-reference.md#LinkWithAttribute) , которые можно внедрить в файлы контрактов (например, `AssemblyInfo.cs` ).
-При использовании необходимо, [`[LinkWithAttribute]`](~/cross-platform/macios/binding/binding-types-reference.md#LinkWithAttribute) чтобы собственная библиотека была доступна во время создания привязки, так как в этом случае собственная библиотека будет внедрена в приложение. Пример.
+При использовании необходимо, [`[LinkWithAttribute]`](~/cross-platform/macios/binding/binding-types-reference.md#LinkWithAttribute) чтобы собственная библиотека была доступна во время создания привязки, так как в этом случае собственная библиотека будет внедрена в приложение. Пример:
 
 ```csharp
 // Specify only the library name as a constructor argument and specify everything else with properties:

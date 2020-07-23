@@ -10,26 +10,26 @@ ms.date: 11/25/2015
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f250b109f759bcf6bb7fa4ac0573743ac12c4bc1
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e9c6bc604368f36646260d6a3766cc5417a1ff52
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84127196"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937791"
 ---
 # <a name="xamarinforms-relativelayout"></a>Xamarin.FormsRelativeLayout
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
 
 `RelativeLayout`используется для размещения и изменения размеров представлений относительно свойств макета или одноуровневого представления. В отличие от `AbsoluteLayout` , не `RelativeLayout` имеет концепции перемещения привязки и не имеет средств позиционирования элементов относительно нижнего или правого края макета. `RelativeLayout`поддерживает размещение элементов за пределами собственных границ.
 
-[![](relative-layout-images/layouts-sml.png "Xamarin.Forms Layouts")](relative-layout-images/layouts.png#lightbox "Xamarin.Forms Layouts")
+[![Xamarin.FormsМетка](relative-layout-images/layouts-sml.png)](relative-layout-images/layouts.png#lightbox "[! Операцион. Макеты NO-LOC (Xamarin. Forms)]")
 
 ## <a name="purpose"></a>Назначение
 
 `RelativeLayout`может использоваться для позиционирования представлений на экране относительно общего макета или других представлений.
 
-![](relative-layout-images/flag.png "RelativeLayout Exploration")
+![Исследование RelativeLayout](relative-layout-images/flag.png)
 
 ## <a name="usage"></a>Использование
 
@@ -133,7 +133,7 @@ layout.Children.Add (blueBox, Constraint.RelativeToView (redBox, (Parent, siblin
 
 В результате получается следующий результат, а расположение синего бокса определяется _относительно_ положения красного прямоугольника:
 
-![](relative-layout-images/red-blue-box.png "RelativeLayout with Red and Blue BoxViews")
+![RelativeLayout с красным и синим Боксвиевс](relative-layout-images/red-blue-box.png)
 
 ### <a name="sizing"></a>Определение размера
 
@@ -226,7 +226,7 @@ Title="RelativeLayout">
 
 Приведенный выше код приводит к следующему макету:
 
-![](relative-layout-images/relative.png "Complex RelativeLayout")
+![Сложные RelativeLayout](relative-layout-images/relative.png)
 
 Обратите внимание, что `RelativeLayouts` s вложены, поскольку в некоторых случаях вложение макетов может быть проще, чем представление всех элементов в одном макете. Также обратите внимание, что некоторые элементы являются `RelativeToView` , так как это позволяет более простой и интуитивно понятный макет, когда связи между представлениями направляющие.
 

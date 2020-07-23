@@ -10,22 +10,22 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6ceac2d866e67af5cf3496fcf8c072ae83ecfe38
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a7a4e8c4467438d1f732508a15bee7045310109b
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84140248"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931226"
 ---
 # <a name="path-basics-in-skiasharp"></a>Основы пути в SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Изучите объект SkiaSharp Скпас для объединения Соединенных линий и кривых_
 
 Одной из наиболее важных возможностей графического контура является возможность определить, когда должно быть установлено соединение с несколькими линиями и когда они не должны быть подключены. Разница может быть значительной, так как верхние части этих двух треугольников демонстрируют:
 
-![](paths-images/connectedlinesexample.png "Two triangles showing the difference between connected and disconnected lines")
+![Два треугольника, демонстрирующие разницу между подключенными и отключенными линиями](paths-images/connectedlinesexample.png)
 
 Графический путь инкапсулируется [`SKPath`](xref:SkiaSharp.SKPath) объектом. Путь — это коллекция из одного или нескольких *контуров*. Каждый профиль является коллекцией *Соединенных* прямых линий и кривых. Контуры не связаны друг с другом, но могут визуально перекрываться. Иногда один профиль может перекрывать сам себя.
 
@@ -104,7 +104,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Первый профиль состоит из вызова [`MoveTo`](xref:SkiaSharp.SKPath.MoveTo(System.Single,System.Single)) с использованием координат X и Y, а не `SKPoint` значения, за которым следуют три вызова для [`LineTo`](xref:SkiaSharp.SKPath.LineTo(System.Single,System.Single)) рисования трех сторон треугольника. Второй профиль имеет только два вызова `LineTo` , но завершает профиль с помощью вызова [`Close`](xref:SkiaSharp.SKPath.Close) , который закрывает профиль. Разница существенна:
 
-[![](paths-images/twotrianglecontours-small.png "Triple screenshot of the Two Triangle Contours page")](paths-images/twotrianglecontours-large.png#lightbox "Triple screenshot of the Two Triangle Contours page")
+[![Тройной снимок экрана двух страниц с демонстрацией треугольников](paths-images/twotrianglecontours-small.png)](paths-images/twotrianglecontours-large.png#lightbox "Тройной снимок экрана двух страниц с демонстрацией треугольников")
 
 Как видите, первый профиль, очевидно, представляет собой последовательность из трех соединенных линий, но конец не подключается с самого начала. Две строки перекрываются сверху. Второй контур, очевидно, закрыт и был выполнен с одним меньшим числом `LineTo` вызовов, так как `Close` метод автоматически добавляет завершающую строку для закрытия контура.
 
@@ -194,7 +194,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Вот работающая программа:
 
-[![](paths-images/strokejoins-small.png "Triple screenshot of the Stroke Joins page")](paths-images/strokejoins-large.png#lightbox "Triple screenshot of the Stroke Joins page")
+[![Тройной снимок экрана страницы «объединения со штрихами»](paths-images/strokejoins-small.png)](paths-images/strokejoins-large.png#lightbox "Тройной снимок экрана страницы «объединения со штрихами»")
 
 Угловое соединение состоит из острой точки, в которой соединяются линии. При соединении двух строк с небольшим углом угловое соединение может стать довольно длинным. Во избежание чрезмерно длинных срезов соединения длина углового соединения ограничена значением [`StrokeMiter`](xref:SkiaSharp.SKPaint.StrokeMiter) свойства `SKPaint` . Угловое соединение, размер которого превышает эту длину, вырезается, чтобы стать рельефным соединением.
 

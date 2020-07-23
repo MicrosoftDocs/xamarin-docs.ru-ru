@@ -10,22 +10,22 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9a59f65655772768860ce29128f14a48641abc26
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 71e64f7b8286f22040a802336e9be756d932c0cd
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84134281"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936543"
 ---
 # <a name="basic-animation-in-skiasharp"></a>Базовая анимация в SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Узнайте, как анимировать график SkiaSharp_
 
 Вы можете анимировать график SkiaSharp в Xamarin.Forms , вызывая регулярный `PaintSurface` вызов метода, каждый раз рисуя графику немного иначе. Ниже приведена анимация, показанная далее в этой статье, с концентрическими круговами, которые кажутся раскрытием по центру:
 
-![](animation-images/animationexample.png "Several concentric circles seemingly expanding from the center")
+![В центре кажется, что несколько концентрических кругов расширяются.](animation-images/animationexample.png)
 
 Страница **эллипса пулсатинг** в программе [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) анимирует две оси эллипса, чтобы они были пулсатинг, и вы даже можете контролировать скорость этого пулсатион. Файл [**пулсатинжеллипсепаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/PulsatingEllipsePage.xaml) создает экземпляр и, Xamarin.Forms `Slider` `Label` чтобы отобразить текущее значение ползунка. Это распространенный способ интеграции `SKCanvasView` с другими Xamarin.Forms представлениями:
 
@@ -144,7 +144,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Метод вычисляет максимальный радиус на основе размера отображаемой области и минимального радиуса на основе максимального радиуса. `scale`Значение анимируется в диапазоне от 0 до 1 и возвращается к 0, поэтому метод использует его для вычислить, `xRadius` а также `yRadius` диапазон между `minRadius` и `maxRadius` . Эти значения используются для рисования и заполнения эллипса.
 
-[![](animation-images/pulsatingellipse-small.png "Triple screenshot of the Pulsating Ellipse page")](animation-images/pulsatingellipse-large.png#lightbox "Triple screenshot of the Pulsating Ellipse page")
+[![Тройной снимок экрана со страницей эллипса Пулсатинг](animation-images/pulsatingellipse-small.png)](animation-images/pulsatingellipse-large.png#lightbox "Тройной снимок экрана со страницей эллипса Пулсатинг")
 
 Обратите внимание, что `SKPaint` объект создается в `using` блоке. Как и многие классы SkiaSharp `SKPaint` являются производными от класса `SKObject` , который является производным от `SKNativeObject` , который реализует [`IDisposable`](xref:System.IDisposable) интерфейс. `SKPaint`переопределяет `Dispose` метод, чтобы освободить неуправляемые ресурсы.
 
@@ -247,7 +247,7 @@ public class ExpandingCirclesPage : ContentPage
 
 В результате изображение выглядит одинаково, когда `t` равно 0, как если `t` равно 1, а окружности, по-видимому, продолжают расширяться непрерывно:
 
-[![](animation-images/expandingcircles-small.png "Triple screenshot of the Expanding Circles page")](animation-images/expandingcircles-large.png#lightbox "Triple screenshot of the Expanding Circles page")
+[![Тройной снимок экрана с развернутой страницей кругов](animation-images/expandingcircles-small.png)](animation-images/expandingcircles-large.png#lightbox "Тройной снимок экрана с развернутой страницей кругов")
 
 ## <a name="related-links"></a>Связанные ссылки
 

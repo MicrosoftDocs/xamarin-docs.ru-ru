@@ -10,12 +10,12 @@ ms.date: 04/27/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6ae4116be99f076a7afd5ed9c2823bc12f445e18
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: b8ba915f3bc701b6a100d206dc791f9572fa594b
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137997"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936621"
 ---
 # <a name="margin-and-padding"></a>Поля и заполнение
 
@@ -30,7 +30,7 @@ _Свойства Margin и Padding управляют поведением ма
 
 На следующей схеме показаны два понятия:
 
-[![](margin-and-padding-images/margins-and-padding-sml.png "Margins and Padding Concepts")](margin-and-padding-images/margins-and-padding.png#lightbox "Margins and Padding Concepts")
+[![Основные понятия и поля](margin-and-padding-images/margins-and-padding-sml.png)](margin-and-padding-images/margins-and-padding.png#lightbox "Основные понятия и поля")
 
 Обратите внимание, что [`Margin`](xref:Xamarin.Forms.View.Margin) значения являются аддитивными. Таким образом, если два соседних элемента задают поле шириной 20 пикселей, расстояние между элементами будет 40 пикселей. Кроме того, поля и дополнения являются аддитивными при применении обоих типов, в которых расстояние между элементом и любым содержимым будет полем плюс заполнение.
 
@@ -68,7 +68,7 @@ var stackLayout = new StackLayout {
 > [!NOTE]
 > `Thickness`значения могут быть отрицательными, что обычно обрезает или перерисовывает содержимое.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье было продемонстрировано различие [`Margin`](xref:Xamarin.Forms.View.Margin) между [`Padding`](xref:Xamarin.Forms.Layout.Padding) свойствами и и способами их настройки. Поведение макета элемента управления свойства при отрисовке элемента в пользовательском интерфейсе.
 

@@ -6,12 +6,12 @@ ms.assetid: 8A14A457-F72E-4B08-B4B6-801F7619F893
 author: davidortinau
 ms.author: daortin
 ms.date: 03/23/2017
-ms.openlocfilehash: eeac7b0b70b2f11304a374de7522f28d4bcad6c6
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 2e1a96b96ea8738e162a9c49a5f7c6927bd2b0d3
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73016670"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931759"
 ---
 # <a name="step-2-configure-service-access-for-mobile-application"></a>Шаг 2. Настройка доступа к службе для мобильного приложения
 
@@ -19,15 +19,15 @@ ms.locfileid: "73016670"
 
 1. На вкладке **Настройка** перейдите к разделу **разрешения для других приложений** :
 
-   ![](configure-images/2.1-configure.png "On the Configure tab, locate permissions to other applications section")
+   ![На вкладке Настройка перейдите к разделу разрешения для других приложений.](configure-images/2.1-configure.png)
 
 2. Нажмите кнопку **Добавить приложение** . На следующем экране появится список всех приложений, защищенных с помощью Azure Active Directory. Выберите приложения, к которым требуется доступ из мобильного приложения.
 
-   ![](configure-images/2.2-add-application.png "Select the applications that needs to be accessed from the mobile application")
+   ![Выберите приложения, к которым требуется доступ из мобильного приложения.](configure-images/2.2-add-application.png)
 
 3. После выбора приложения снова выберите только что добавленное приложение в разделе **разрешения для других приложений** и предоставьте соответствующие права.
 
-   ![](configure-images/2.3-permissions.png "After selecting the application, once again select the newly-added application in permissions to other   applications section and give appropriate rights")
+   ![После выбора приложения снова выберите только что добавленное приложение в разделе разрешения для других приложений и предоставьте соответствующие права.](configure-images/2.3-permissions.png)
 
 4. Наконец, **Сохраните** конфигурацию. Эти службы теперь должны быть доступны в мобильных приложениях!
 

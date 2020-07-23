@@ -10,22 +10,22 @@ ms.date: 05/24/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 680c924280f8f3a6080b2fcc1968ecaf308f33a0
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 2571375e7ad28acbf367870b5c48e19d3a7525e7
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138064"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931291"
 ---
 # <a name="svg-path-data-in-skiasharp"></a>Данные о пути SVG в SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Определение путей с помощью текстовых строк в формате масштабируемой векторной графики_
 
 [`SKPath`](xref:SkiaSharp.SKPath)Класс поддерживает определение всех объектов Path из текстовых строк в формате, установленном спецификацией масштабируемых векторных графики (SVG). Далее в этой статье показано, как можно представить весь путь, например, в текстовой строке:
 
-![](path-data-images/pathdatasample.png "A sample path defined with SVG path data")
+![Образец пути, определенный с помощью данных пути SVG](path-data-images/pathdatasample.png)
 
 SVG — это язык программирования графики на основе XML для веб-страниц. Поскольку в языке SVG необходимо разрешить определение путей в разметке, а не в ряде вызовов функций, стандарт SVG включает очень краткий способ указания всего графического контура в виде текстовой строки.
 
@@ -222,7 +222,7 @@ public class PathDataHelloPage : ContentPage
 
 Путь заполняет холст, который выглядит более разумным при просмотре в альбомном режиме:
 
-[![](path-data-images/pathdatahello-small.png "Triple screenshot of the Path Data Hello page")](path-data-images/pathdatahello-large.png#lightbox "Triple screenshot of the Path Data Hello page")
+[![Тройной снимок экрана страницы "Hello Data Path"](path-data-images/pathdatahello-small.png)](path-data-images/pathdatahello-large.png#lightbox "Тройной снимок экрана страницы "Hello Data Path"")
 
 Страница **Data Cat** выглядит аналогично. Объекты Path и Paint определены как поля в [`PathDataCatPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathDataCatPage.cs) классе:
 
@@ -293,7 +293,7 @@ public class PathDataCatPage : ContentPage
 
 Вот работающая программа:
 
-[![](path-data-images/pathdatacat-small.png "Triple screenshot of the Path Data Cat page")](path-data-images/pathdatacat-large.png#lightbox "Triple screenshot of the Path Data Cat page")
+[![Тройной снимок экрана страницы "данные пути"](path-data-images/pathdatacat-small.png)](path-data-images/pathdatacat-large.png#lightbox "Тройной снимок экрана страницы "данные пути"")
 
 Как правило, если `SKPath` объект определен как поле, то в конструкторе или другом методе должны быть определены контуры пути. Однако при использовании данных контура SVG вы видели, что путь может быть указан полностью в определении поля.
 
@@ -430,7 +430,7 @@ public class PrettyAnalogClockPage : ContentPage
 
 Однако что-то особенно сделано с другой рукой. Так как часы обновляются каждые 16 миллисекунд, `Millisecond` свойство `DateTime` значения может быть использовано для анимации второй руки, а не для перемещения в дискретных переходах с секунды на секунду. Но этот код не допускает плавность перемещения. Вместо этого он использует Xamarin.Forms [`SpringIn`](xref:Xamarin.Forms.Easing.SpringIn) [`SpringOut`](xref:Xamarin.Forms.Easing.SpringOut) функции плавности анимации и для другого рода движения. Эти функции плавности приводят к тому, что вторая рука перемещается в жеркиерм виде &mdash; , а затем немного перемещается в место назначения, что, увы, не может быть воспроизведено в этих статических снимках экрана:
 
-[![](path-data-images/prettyanalogclock-small.png "Triple screenshot of the Pretty Analog Clock page")](path-data-images/prettyanalogclock-large.png#lightbox "Triple screenshot of the Pretty Analog Clock page")
+[![Тройной снимок экрана со страницей очень аналоговых часов](path-data-images/prettyanalogclock-small.png)](path-data-images/prettyanalogclock-large.png#lightbox "Тройной снимок экрана со страницей очень аналоговых часов")
 
 ## <a name="related-links"></a>Связанные ссылки
 

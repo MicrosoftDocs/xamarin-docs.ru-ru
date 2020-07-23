@@ -6,12 +6,12 @@ ms.assetid: F0A5A9BB-86CD-44C9-8EE8-74D1E5E74A30
 author: davidortinau
 ms.author: daortin
 ms.date: 07/25/2018
-ms.openlocfilehash: 5744bb9947b196ee319535729338bcf64a5cd09e
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: ac8e4b2eef0905ba50cb24b9eb035d50a05dd84a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73016759"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86932251"
 ---
 # <a name="nuget-multiplatform-library-projects-nugetizer-3000"></a>Проекты многоплатформенных библиотек NuGet (Нужетизер 3000)
 
@@ -19,13 +19,13 @@ _Автоматическое создание пакетов NuGet для со�
 
 Можно автоматически создать пакеты NuGet для совместного использования кода на разных платформах с помощью _нужетизер 3000_. Это позволяет создать пакеты NuGet на основе существующих проектов библиотеки или создать новый **проект многоплатформенной библиотеки**.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-Нужетизер 3000 входит в состав Visual Studio для Mac &ndash; найти тип проекта библиотеки **> библиотеки мулитплатформ** в **файле > новом** окне:
+Нужетизер 3000 входит в состав Visual Studio для Mac &ndash; найдите тип проекта **Библиотека > библиотеки Мулитплатформ** в **файле > новом** окне:
 
-[![](images/mulitplatform-library-sml.png "Create new Multiplatform Library window")](images/mulitplatform-library.png#lightbox)
+[![Создать новое окно многоплатформенной библиотеки](images/mulitplatform-library-sml.png)](images/mulitplatform-library.png#lightbox)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Чтобы использовать Нужетизер 3000 в Visual Studio, [скачайте и запустите УСТАНОВЩИК VSIX](https://bit.ly/nugetizer-2017).
 

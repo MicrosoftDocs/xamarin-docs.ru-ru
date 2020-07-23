@@ -10,16 +10,16 @@ ms.date: 09/12/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cdede547e3ef7cf9f7b6d89751c7476a2ce66d3d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 05a001d3b49f38b2cb5306d8a19a08b4f8392425
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84129016"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86935568"
 ---
 # <a name="customizing-listview-cell-appearance"></a>Настройка внешнего вида ячеек ListView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-customcells)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-customcells)
 
 Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Класс используется для представления прокручиваемых списков, которые можно настроить с помощью `ViewCell` элементов. `ViewCell`Элемент может отображать текст и изображения, указывать состояние true/false и принимать входные данные пользователя.
 
@@ -37,7 +37,7 @@ Xamarin.Formsпоставляется со встроенными ячейкам
 
 [`TextCell`](xref:Xamarin.Forms.TextCell)ячейка для отображения текста, при необходимости со второй строкой в виде подробного текста. На следующем снимке экрана показаны `TextCell` элементы в iOS и Android:
 
-![](customizing-cell-appearance-images/text-cell-default.png "Default TextCell Example")
+![Пример Текстцелл по умолчанию](customizing-cell-appearance-images/text-cell-default.png)
 
 Текстцеллс отображаются как собственные элементы управления во время выполнения, поэтому производительность очень хороша по сравнению с настраиваемым `ViewCell` . Текстцеллс можно настраивать, позволяя задавать следующие свойства:
 
@@ -48,7 +48,7 @@ Xamarin.Formsпоставляется со встроенными ячейкам
 
 На следующем снимке экрана показаны `TextCell` элементы с настроенными свойствами цвета:
 
-![](customizing-cell-appearance-images/text-cell-custom.png "Custom TextCell Example")
+![Пример настраиваемого Текстцелл](customizing-cell-appearance-images/text-cell-custom.png)
 
 ### <a name="imagecell"></a>имажецелл
 

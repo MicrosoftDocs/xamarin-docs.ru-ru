@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: cdb8505bd8c25b6e591dd86daf6a4d1e174012f6
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 177701b8b50edea965e97da225265912f1f0c198
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569040"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86932331"
 ---
 # <a name="maps-in-xamarinios"></a>Карты в Xamarin. iOS
 
@@ -30,7 +30,7 @@ View = map;
 
 `MKMapView`— `UIView` подкласс, отображающий карту. Простое добавление схемы с помощью приведенного выше кода создает интерактивную карту:
 
-![](images/00-map.png "A sample map")
+![Пример схемы](images/00-map.png)
 
 ## <a name="map-style"></a>Стиль схемы
 
@@ -44,7 +44,7 @@ map.MapType = MKMapType.Hybrid;
 
 На следующем снимке экрана показаны различные доступные стили карт.
 
-![](images/01-mapstyles.png "This screenshot show the different map styles that are available")
+![На этом снимке экрана показаны различные доступные стили карт](images/01-mapstyles.png)
 
 ## <a name="panning-and-zooming"></a>Панорамирование и масштаб
 
@@ -85,13 +85,13 @@ locationManager.RequestWhenInUseAuthorization();
 map.ShowsUserLocation = true;
 ```
 
- ![](images/02-location-alert.png "The allow location access alert")
+ ![Предупреждение о доступе к расположению](images/02-location-alert.png)
 
 ## <a name="annotations"></a>Заметки
 
  `MKMapView`также поддерживает отображение изображений, известных как заметки, на карте. Это могут быть пользовательские образы или заданные системой ПИН-коды различных цветов. Например, на следующем снимке экрана показана схема с ПИН-кодом и пользовательским изображением:
 
- ![](images/03-annotations.png "This screenshot shows a map with a both a pin and a custom image")
+ ![На этом снимке экрана показана схема с ПИН-кодом и пользовательским изображением](images/03-annotations.png)
 
 ### <a name="adding-an-annotation"></a>Добавление заметки
 
@@ -149,7 +149,7 @@ MKAnnotationView pinView = (MKPinAnnotationView)mapView.DequeueReusableAnnotatio
 
 Как упоминалось ранее, Аннотация может содержать выноску. Чтобы отобразить выноску, просто задайте `CanShowCallout` для свойства значение true `MKAnnotationView` . Это приводит к отображению заголовка заметки при касании заметки, как показано ниже.
 
- ![](images/04-callout.png "The annotations title being displayed")
+ ![Отображаемый заголовок заметок](images/04-callout.png)
 
 ### <a name="customizing-the-callout"></a>Настройка внешнего вызова
 
@@ -162,7 +162,7 @@ pinView.LeftCalloutAccessoryView = new UIImageView(UIImage.FromFile ("monkey.png
 
 Этот код приводит к следующей выноски:
 
- ![](images/05-callout-accessories.png "An example callout")
+ ![Пример выноски](images/05-callout-accessories.png)
 
 Чтобы обрабатывали пользователя, коснувшись нужного аксессуара, просто реализуйте `CalloutAccessoryControlTapped` метод в `MKMapViewDelegate` :
 
@@ -215,7 +215,7 @@ public override MKOverlayView GetViewForOverlay (MKMapView mapView, NSObject ove
 
 На карте отображается окружность, как показано ниже.
 
- ![](images/06-circle-overlay.png "A circle displayed on the map")
+ ![Круг, отображаемый на карте](images/06-circle-overlay.png)
 
 ## <a name="local-search"></a>Локальный поиск
 
@@ -273,7 +273,7 @@ NavigationItem.TitleView = searchController.SearchBar;
 
 Это приводит к отображению панели поиска на карте, как показано ниже:
 
- ![](images/07-searchbar.png "A search bar displayed over the map")
+ ![Панель поиска, отображаемая на карте](images/07-searchbar.png)
 
 ### <a name="displaying-the-search-results"></a>Отображение результатов поиска
 
@@ -393,12 +393,12 @@ public class SearchResultsUpdator : UISearchResultsUpdating
 
 Приведенная выше реализация добавляет к карте заметку при выборе элемента из результатов, как показано ниже:
 
- ![](images/08-search-results.png "An annotation added to the map when an item is selected from the results")
+ ![Заметка, добавленная к сопоставлению при выборе элемента из результатов](images/08-search-results.png)
 
 > [!IMPORTANT]
 > `UISearchController`реализован в iOS 8. Если вы хотите поддерживать устройства более ранней версии, вам потребуется использовать `UISearchDisplayController` .
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье мы рассмотрели платформу *Map* *Kit* для iOS. Во первых, он рассматривал, как `MKMapView` класс разрешает включение интерактивных карт в приложение. Затем демонстрируется дальнейшая настройка карт с помощью заметок и наложений. Наконец, мы рассмотрели возможности локального поиска, добавленные в комплекте Map с iOS 6,1, и покажу, как использовать запросы на основе расположения для интересующих точек и добавлять их на карту.
 

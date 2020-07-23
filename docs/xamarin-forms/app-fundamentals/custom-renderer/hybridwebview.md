@@ -10,12 +10,12 @@ ms.date: 03/31/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8c83742896af4a22bcff327df82c1b14ff983bb2
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e0653e46d2c349e05df8716e5114de8f631cab1a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138974"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939546"
 ---
 # <a name="customizing-a-webview"></a>Настройка WebView
 
@@ -27,7 +27,7 @@ _Xamarin.Forms `WebView` — это представление, позволяю
 
 На следующей схеме показана связь между классом [`View`](xref:Xamarin.Forms.View) и соответствующими собственными элементами управления, которые его реализуют:
 
-![](hybridwebview-images/webview-classes.png "Relationship Between the WebView Class and its Implementing Native Classes")
+![Связь между классом WebView и его реализующими собственными классами](hybridwebview-images/webview-classes.png)
 
 Процесс отрисовки можно использовать для реализации настроек для конкретных платформ путем создания пользовательского отрисовщика для [`WebView`](xref:Xamarin.Forms.WebView) на каждой платформе. Этот процесс выглядит следующим образом:
 
@@ -155,11 +155,11 @@ public partial class HybridWebViewPage : ContentPage
 
 На следующей схеме показаны обязанности каждого проекта в примере приложения, а также связи между ними:
 
-![](hybridwebview-images/solution-structure.png "HybridWebView Custom Renderer Project Responsibilities")
+![Обязанности проекта настраиваемого отрисовщика HybridWebView](hybridwebview-images/solution-structure.png)
 
 Пользовательский элемент управления `HybridWebView` отрисовывается с помощью зависящих от платформы классов отрисовщика, которые являются производными от класса `WkWebViewRenderer` в iOS и класса `WebViewRenderer` в Android и UWP. Это приводит к тому, что каждый пользовательский элемент управления `HybridWebView` отрисовывается с помощью собственных веб-элементов управления, как показано на следующих снимках экрана:
 
-![](hybridwebview-images/screenshots.png "HybridWebView on each Platform")
+![HybridWebView на каждой платформе](hybridwebview-images/screenshots.png)
 
 Классы `WkWebViewRenderer` и `WebViewRenderer` предоставляют метод `OnElementChanged`, который вызывается при создании пользовательского элемента управления Xamarin.Forms для отрисовки соответствующего собственного веб-элемента управления. Этот метод принимает параметр `VisualElementChangedEventArgs`, содержащий свойства `OldElement` и `NewElement`. Эти свойства представляют элемент Xamarin.Forms, к которому *был* присоединен отрисовщик, и элемент Xamarin.Forms, к которому *присоединен* отрисовщик, соответственно. В примере приложения свойство `OldElement` будет иметь значение `null`, а свойство `NewElement` будет содержать ссылку на экземпляр `HybridWebView`.
 

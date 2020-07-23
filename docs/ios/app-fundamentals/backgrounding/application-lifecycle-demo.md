@@ -7,25 +7,25 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/17/2018
-ms.openlocfilehash: 13f34f6287d68736ee509e6fb43e5fc47321b907
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: bb3fd0623d0361a42c573cf2b2bcb8249d32181c
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73011191"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933196"
 ---
 # <a name="application-lifecycle-demo-for-xamarinios"></a>Демонстрация жизненного цикла приложения для Xamarin. iOS
 
-В этой статье и [образце кода](https://docs.microsoft.com/samples/xamarin/ios-samples/lifecycledemo) демонстрируются четыре состояния приложений в iOS, а также роль `AppDelegate` методов уведомления приложения об изменении состояний. Приложение будет печатать обновления в консоли при каждом изменении состояния приложения:
+В этой статье и [образце кода](https://docs.microsoft.com/samples/xamarin/ios-samples/lifecycledemo) демонстрируются четыре состояния приложений в iOS, а также роль `AppDelegate` методов уведомления приложения о том, что состояния изменяются. Приложение будет печатать обновления в консоли при каждом изменении состояния приложения:
 
-[![](application-lifecycle-demo-images/image3-sml.png "The sample app")](application-lifecycle-demo-images/image3.png#lightbox)
+[![Пример приложения](application-lifecycle-demo-images/image3-sml.png)](application-lifecycle-demo-images/image3.png#lightbox)
 
-[![](application-lifecycle-demo-images/image4.png "The app will print updates to the console whenever the app changes state")](application-lifecycle-demo-images/image4.png#lightbox)
+[![Приложение будет печатать обновления в консоли при каждом изменении состояния приложения](application-lifecycle-demo-images/image4.png)](application-lifecycle-demo-images/image4.png#lightbox)
 
 ## <a name="walkthrough"></a>Пошаговое руководство
 
 1. Откройте проект **жизненного цикла** в решении **лифецикледемо** .
-1. Откройте класс `AppDelegate`. В методы жизненного цикла добавлено ведение журнала, указывающее, когда приложение изменило состояние:
+1. Откройте `AppDelegate` класс. В методы жизненного цикла добавлено ведение журнала, указывающее, когда приложение изменило состояние:
 
     ```csharp
     public override void OnActivated(UIApplication application)
@@ -51,11 +51,11 @@ ms.locfileid: "73011191"
     }
     ```
 
-1. Запустите приложение в симуляторе или на устройстве. `OnActivated` будет вызываться при запуске приложения. Теперь приложение находится в _активном_ состоянии.
-1. Нажмите кнопку "домой" на симуляторе или устройстве, чтобы перенести приложение в фоновый режим. `OnResignActivation` и `DidEnterBackground` будут вызываться при переходе приложения с `Active` на `Inactive` и в состояние `Backgrounded`. Так как для выполнения в фоновом режиме не задан код приложения, приложение считается _приостановленным_ в памяти.
-1. Вернитесь к приложению, чтобы вернуть его на передний план. будут вызваны оба `WillEnterForeground` и `OnActivated`:
+1. Запустите приложение в симуляторе или на устройстве. `OnActivated`будет вызываться при запуске приложения. Теперь приложение находится в _активном_ состоянии.
+1. Нажмите кнопку "домой" на симуляторе или устройстве, чтобы перенести приложение в фоновый режим. `OnResignActivation`и `DidEnterBackground` будут вызываться при переходе приложения из `Active` в `Inactive` `Backgrounded` состояние и. Так как для выполнения в фоновом режиме не задан код приложения, приложение считается _приостановленным_ в памяти.
+1. Вернитесь к приложению, чтобы вернуть его на передний план. `WillEnterForeground`и `OnActivated` оба будут вызваны:
 
-    ![](application-lifecycle-demo-images/image4.png "State changes printed to the console")
+    ![Изменения состояния, выводимые на консоль](application-lifecycle-demo-images/image4.png)
 
     Следующая строка кода в контроллере представления выполняется, когда приложение перешел на передний план из фона и изменяет текст, отображаемый на экране:
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: ae08d7d2d8d9de700570311f2294df737240b73f
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 2e5b7a65f565f8c4f3265c5c95e6e4a296e4681f
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572160"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938103"
 ---
 # <a name="updating-a-xamarinios-app-in-the-background"></a>Обновление приложения Xamarin. iOS в фоновом режиме
 
@@ -43,7 +43,7 @@ iOS предоставляет два API, поддерживающих расп
 
 Чтобы реализовать фоновую выборку, измените *info. plist* и установите флажки **включить фоновые режимы** и **Фоновая выборка** :
 
- [![](updating-an-application-in-the-background-images/fetch.png "Edit the Info.plist and check the Enable Background Modes and Background Fetch check boxes")](updating-an-application-in-the-background-images/fetch.png#lightbox)
+ [![Измените параметр info. plist и установите флажки Включить фоновые режимы и фоновая выборка.](updating-an-application-in-the-background-images/fetch.png)](updating-an-application-in-the-background-images/fetch.png#lightbox)
 
 Затем в `AppDelegate` Переопределите `FinishedLaunching` метод, чтобы задать минимальный интервал выборки. В этом примере мы позволяем ОС решить, как часто извлекать новое содержимое:
 
@@ -101,7 +101,7 @@ Push-уведомления — это сообщения JSON, отправля
 
 Чтобы реализовать удаленные уведомления, измените *info. plist* и установите флажки **включить фоновые режимы** и **Удаленные уведомления** :
 
- [![](updating-an-application-in-the-background-images/remote.png "Background Mode set to Enable Background Modes and Remote notifications")](updating-an-application-in-the-background-images/remote.png#lightbox)
+ [![Фоновый режим, настроенный для включения фоновых режимов и удаленных уведомлений](updating-an-application-in-the-background-images/remote.png)](updating-an-application-in-the-background-images/remote.png#lightbox)
 
 Затем установите флаг для `content-available` самого push-уведомления в значение 1. Это позволяет приложению получить новое содержимое перед отображением оповещения:
 
@@ -147,7 +147,7 @@ public override void DidReceiveRemoteNotification (UIApplication application, NS
 
 Тем не менее APNs будет разрешать автоматическому уведомлению "проникновения" с обычным удаленным уведомлением или ответом на проверку активности. Так как для обычных уведомлений не применяется ограничение частоты, их можно использовать для отправки в устройство уведомлений о неавтоматическом просмотре с APNs, как показано на следующей схеме:
 
- [![](updating-an-application-in-the-background-images/silent.png "Regular notifications can be used to push stored silent notifications from the APNs to the device, as illustrated by this diagram")](updating-an-application-in-the-background-images/silent.png#lightbox)
+ [![С помощью регулярных уведомлений можно отправлять сохраненные уведомления из APNs на устройство, как показано на этой схеме.](updating-an-application-in-the-background-images/silent.png)](updating-an-application-in-the-background-images/silent.png#lightbox)
 
 > [!IMPORTANT]
 > Компания Apple рекомендует разработчикам отправлять автоматические push-уведомления каждый раз, когда требуется приложение, и позволить APNs запланировать доставку.

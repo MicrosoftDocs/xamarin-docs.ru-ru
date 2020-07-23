@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: 81ad57119ff7271094966cf9b0c372876646f81b
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: d8dcf64f9a905557bea69402bcaf7fcfb51fb10b
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573434"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86928579"
 ---
 # <a name="programmatic-layout-constraints-in-xamarinios"></a>Программные ограничения макета в Xamarin. iOS
 
@@ -51,7 +51,7 @@ _В этом руководство рассматривается работа 
 - **Констраинтгреатерсанорекуалто** — определяет связь, где `first attribute >= second attribute + [constant]` с необязательно указанным `constant` значением смещения.
 - **Констраинтлесссанорекуалто** — определяет связь, где `first attribute <= second attribute + [constant]` с необязательно указанным `constant` значением смещения.
 
-Пример.
+Пример:
 
 ```csharp
 // Get the parent view's layout
@@ -67,9 +67,9 @@ OrangeView.TrailingAnchor.ConstraintEqualTo (margins.TrailingAnchor).Active = tr
 OrangeView.HeightAnchor.ConstraintEqualTo (OrangeView.WidthAnchor, 2.0f);
 ```
 
-Типичное ограничение макета может быть выражено просто в виде линейного выражения. Рассмотрим следующий пример:
+Типичное ограничение макета может быть выражено просто в виде линейного выражения. Возьмем следующий пример:
 
-[![](programmatic-layout-constraints-images/graph01.png "A Layout Constraint expressed as a linear expression")](programmatic-layout-constraints-images/graph01.png#lightbox)
+[![Ограничение макета, выраженное в виде линейного выражения](programmatic-layout-constraints-images/graph01.png)](programmatic-layout-constraints-images/graph01.png#lightbox)
 
 Который преобразуется в следующую строку кода C# с использованием привязок макета:
 
@@ -87,7 +87,7 @@ PurpleView.LeadingAnchor.ConstraintEqualTo (OrangeView.TrailingAnchor, 10).Activ
 |Множитель|Значение по умолчанию — 1,0, поэтому не указано|
 |Элемент 2|оранжевиев|
 |Атрибут 2|траилинганчор|
-|Константа|10,0|
+|Константа|10.0|
 
 Помимо предоставления только параметров, необходимых для решения определенного уравнения ограничения макета, каждый из методов привязки макета применяет безопасность типа передаваемых им параметров. Таким образом, горизонтальные привязки ограничений, такие как `LeadingAnchor` или, `TrailingAnchor` могут использоваться только с другими типами горизонтальных привязок, а множители — только для ограничений размера.
 
@@ -95,7 +95,7 @@ PurpleView.LeadingAnchor.ConstraintEqualTo (OrangeView.TrailingAnchor, 10).Activ
 
 ### <a name="layout-constraints"></a>Ограничения макета
 
-Можно добавить ограничения автоматического макета вручную, напрямую создав `NSLayoutConstraint` в коде C#. В отличие от привязок макета, необходимо указать значение для каждого параметра, даже если оно не будет влиять на определяемое ограничение. В результате вы получите значительный объем сложного для чтения и создания стандартного кода. Пример.
+Можно добавить ограничения автоматического макета вручную, напрямую создав `NSLayoutConstraint` в коде C#. В отличие от привязок макета, необходимо указать значение для каждого параметра, даже если оно не будет влиять на определяемое ограничение. В результате вы получите значительный объем сложного для чтения и создания стандартного кода. Пример:
 
 ```csharp
 //// Pin the leading edge of the view to the margin
@@ -155,7 +155,7 @@ NSLayoutConstraint.ActivateConstraints (constraints);
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этом руководство было представлено создание и работа с ограничениями автоматического макета в C#, а не их графическим созданием в конструкторе iOS. Во-первых, он рассматривал использование привязок макета ( `NSLayoutAnchor` ) для автоматической разметки. Далее было показано, как работать с ограничениями макета ( `NSLayoutConstraint` ). Наконец, он был представлен с использованием языка визуального формата для автоматического макета.
 

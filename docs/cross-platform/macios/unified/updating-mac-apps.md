@@ -6,12 +6,12 @@ ms.assetid: 26673CC5-C1E5-4BAC-BEF4-9A386B296FD5
 author: davidortinau
 ms.author: daortin
 ms.date: 03/29/2017
-ms.openlocfilehash: 4590e5d987acbb5bd97b41477e6aafa7c17d7778
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 956d3285459d8ed93f2db84fa0bd2bb2880d3d7a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73015317"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936517"
 ---
 # <a name="updating-existing-mac-apps"></a>Обновление существующих приложений Mac
 
@@ -31,11 +31,11 @@ Xamarin предоставляет инструментарий для Visual St
 
 После устранения предупреждений выберите существующий проект Mac в Visual Studio для Mac или Visual Studio и выберите **перенести в Xamarin. Mac Unified API** из меню **проект** . Пример:
 
-![](updating-mac-apps-images/beta-tool1.png "Choose Migrate to Xamarin.Mac Unified API from the Project menu")
+![Выберите пункт миграция в Xamarin. Mac Unified API из меню проект.](updating-mac-apps-images/beta-tool1.png)
 
 Перед выполнением автоматизированной миграции необходимо согласиться с этим предупреждением (очевидно, что перед начинать в этом Adventure необходимо убедиться в наличии резервных копий и системы управления версиями):
 
-![](updating-mac-apps-images/migrate01.png "Agree to this warning before the automated migration will run")
+![Согласиться с этим предупреждением, прежде чем будет выполняться автоматический перенос](updating-mac-apps-images/migrate01.png)
 
 Существует два поддерживаемых типа целевой платформы, которые можно выбрать при использовании Unified API в приложении Xamarin. Mac:
 
@@ -52,15 +52,15 @@ Xamarin предоставляет инструментарий для Visual St
 
 ### <a name="1-update-project-type--build-target"></a>1. Обновление типа проекта & целевой объект сборки
 
-Измените версию проекта в файлах **CSPROJ** с `42C0BBD9-55CE-4FC1-8D90-A7348ABAFB23` на `A3F8F2AB-B479-4A4A-A458-A89E7DC349F1`. Измените файл **CSPROJ** в текстовом редакторе, заменив первый элемент в элементе `<ProjectTypeGuids>`, как показано ниже:
+Измените версию проекта в файлах **CSPROJ** с `42C0BBD9-55CE-4FC1-8D90-A7348ABAFB23` на `A3F8F2AB-B479-4A4A-A458-A89E7DC349F1` . Измените файл **CSPROJ** в текстовом редакторе, заменив первый элемент в `<ProjectTypeGuids>` элементе, как показано ниже.
 
-![](updating-mac-apps-images/csproj.png "Edit the csproj file in a text editor, replacing the first item in the ProjectTypeGuids element as shown")
+![Измените файл CSPROJ в текстовом редакторе, заменив первый элемент в элементе ProjectTypeGuids, как показано ниже.](updating-mac-apps-images/csproj.png)
 
-Измените элемент **Import** , содержащий `Xamarin.Mac.targets`, на `Xamarin.Mac.CSharp.targets`, как показано ниже.
+Измените элемент **Import** , который содержит `Xamarin.Mac.targets` , `Xamarin.Mac.CSharp.targets` как показано ниже:
 
-![](updating-mac-apps-images/csproj2.png "Change the Import element that contains Xamarin.Mac.targets to Xamarin.Mac.CSharp.targets as shown")
+![Измените элемент Import, содержащий Xamarin. Mac. targets, на Xamarin. Mac. CSharp. targets, как показано ниже.](updating-mac-apps-images/csproj2.png)
 
-Добавьте следующие строки кода после элемента `<AssemblyName>`:
+Добавьте следующие строки кода после `<AssemblyName>` элемента:
 
 ```xml
 <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
@@ -68,27 +68,27 @@ Xamarin предоставляет инструментарий для Visual St
 
 ```
 
-Пример
+Пример.
 
-![Добавьте следующие строки кода после элемента \<AssemblyName >](updating-mac-apps-images/csproj3.png)
+![Добавьте следующие строки кода после \< элемента AssemblyName>](updating-mac-apps-images/csproj3.png)
 
 ### <a name="2-update-project-references"></a>2. Обновление ссылок проекта
 
 Разверните узел " **ссылки** " проекта приложения Mac. Вначале будет показана * Неработающая ссылка на **ксаммак** , как на этом снимке экрана (так как мы только что изменили тип проекта):
 
-![](updating-mac-apps-images/references.png "It will initially show a broken- XamMac reference similar to this screenshot")
+![Вначале будет показана Неработающая ссылка на Ксаммак, как на этом снимке экрана.](updating-mac-apps-images/references.png)
 
 Щелкните **значок шестеренки** рядом с записью **Ксаммак** и выберите **Удалить** , чтобы удалить неработающую ссылку.
 
 Затем щелкните правой кнопкой мыши папку **References** в **Обозреватель решений** и выберите **изменить ссылки**. Прокрутите список ссылок до конца списка и поместите флажок, помимо **Xamarin. Mac**.
 
-![](updating-mac-apps-images/references2.png "Scroll to the bottom of the list of references and place a check besides Xamarin.Mac")
+![Прокрутите список ссылок до конца списка и установите флажок, помимо Xamarin. Mac](updating-mac-apps-images/references2.png)
 
 Нажмите кнопку **ОК** , чтобы сохранить изменения ссылок на проект.
 
 ### <a name="3-remove-monomac-from-namespaces"></a>3. Удаление MonoMac из пространств имен
 
-Удалите префикс **MonoMac** из пространств имен в инструкциях `using` или в любом месте полного имени класса ClassName (например, `MonoMac.AppKit` просто `AppKit`).
+Удалите префикс **MonoMac** из пространств имен в `using` инструкциях или везде, где полное имя класса ClassName (например, `MonoMac.AppKit`будет просто `AppKit` ).
 
 ### <a name="4-remap-types"></a>4. Сопоставление типов
 
@@ -96,9 +96,9 @@ Xamarin предоставляет инструментарий для Visual St
 
 ### <a name="5-fix-method-overrides"></a>5. Исправление переопределений методов
 
-Для некоторых `AppKit` методов была изменена сигнатура для использования новых [собственных типов](~/cross-platform/macios/nativetypes.md) (например, `nint`). Если пользовательские подклассы переопределяют эти методы, сигнатуры больше не будут совпадать и будут приводить к ошибкам. Исправьте эти переопределения метода, изменив подкласс в соответствии с новой сигнатурой, используя собственные типы. 
+`AppKit`Для некоторых методов сигнатура была изменена для использования новых [собственных типов](~/cross-platform/macios/nativetypes.md) (например, `nint` ). Если пользовательские подклассы переопределяют эти методы, сигнатуры больше не будут совпадать и будут приводить к ошибкам. Исправьте эти переопределения метода, изменив подкласс в соответствии с новой сигнатурой, используя собственные типы. 
 
-## <a name="considerations"></a>Особенности
+## <a name="considerations"></a>Рекомендации
 
 При преобразовании существующего проекта Xamarin. Mac из Classic API в новый Unified API необходимо учитывать следующие моменты, если это приложение полагается на один или несколько компонентов или пакетов NuGet. 
 
@@ -113,7 +113,7 @@ Xamarin предоставляет инструментарий для Visual St
 До этого времени, как и для компонентов, необходимо переключить любой пакет NuGet, который вы включили в проект, в версию, поддерживающую унифицированные интерфейсы API, и затем выполнить чистую сборку.
 
 > [!IMPORTANT]
-> Если имеется ошибка в форме _"Ошибка 3 не может содержать" monomac. dll "и" Xamarin. Mac. dll "в одном проекте Xamarin. Mac —" Xamarin. Mac. dll "ссылается явно, а" monomac. dll "ссылается на" XXX, Version = 0.0.000, Culture = Neutral, PublicKeyToken = null ""_ после преобразования приложения в унифицированные API, как правило, это происходит из-за наличия в проекте компонента или пакета NuGet, который не был обновлен до Unified API. Необходимо удалить существующий компонент или NuGet, обновить версию, поддерживающую унифицированные API-интерфейсы, и выполнить чистую сборку.
+> Если ошибка в форме _"Ошибка 3" не может содержать "monomac.dll" и "Xamarin.Mac.dll" в одном и том же Xamarin. Проект Mac-"Xamarin.Mac.dll" упоминается явно, хотя "monomac.dll" ссылается на "XXX, Version = 0.0.000, Culture = Neutral, PublicKeyToken = null" "_ после преобразования приложения в унифицированные API, как правило, это связано с тем, что в проекте есть компонент или пакет NuGet, которые не были обновлены до Unified API. Необходимо удалить существующий компонент или NuGet, обновить версию, поддерживающую унифицированные API-интерфейсы, и выполнить чистую сборку.
 
 ## <a name="enabling-64-bit-builds-of-xamarinmac-apps"></a>Включение 64 разрядных сборок приложений Xamarin. Mac
 

@@ -1,6 +1,6 @@
 ---
-title: 'title: "Иерархическая навигация" description: "В этой статье показано, как использовать класс NavigationPage для навигации в стеке страниц по методу ЛИФО".'
-description: 'ms.prod: xamarin ms.assetid: C8A5EEFF-5A3B-4163-838A-147EE3939FAA ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 03/10/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Иерархическая навигация
+description: В этой статье показано, как использовать класс NavigationPage для навигации в стеке страниц по методу ЛИФО.
 ms.prod: xamarin
 ms.assetid: C8A5EEFF-5A3B-4163-838A-147EE3939FAA
 ms.technology: xamarin-forms
@@ -10,12 +10,12 @@ ms.date: 03/10/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ec35b03e7e96f0730813918bdd96e1408cfabde7
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 0d6a18ec55b49da2b668ccc183646d5e4dde5849
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571497"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937232"
 ---
 # <a name="hierarchical-navigation"></a>Иерархическая навигация
 
@@ -25,11 +25,11 @@ _Класс NavigationPage обеспечивает иерархическую �
 
 Для перехода с одной страницы на другую приложение помещает новую страницу в стек навигации, где она становится активной страницей, как показано на следующем рисунке.
 
-![](hierarchical-images/pushing.png "Pushing a Page to the Navigation Stack")
+![Помещение страницы в стек навигации](hierarchical-images/pushing.png)
 
 Для возврата к предыдущей странице приложение выбирает текущую страницу из стека навигации, после чего активной становится верхняя страница в стеке, как показано на следующем рисунке.
 
-![](hierarchical-images/popping.png "Popping a Page from the Navigation Stack")
+![Извлечение страницы из стека навигации](hierarchical-images/popping.png)
 
 Методы навигации предоставляются свойством [`Navigation`](xref:Xamarin.Forms.NavigableElement.Navigation) любых типов, производных от класса [`Page`](xref:Xamarin.Forms.Page). Эти методы предоставляют возможность для отправки страниц в стек навигации, извлечения страниц из стека навигации, а также для выполнения операций со стеком.
 
@@ -37,7 +37,7 @@ _Класс NavigationPage обеспечивает иерархическую �
 
 При иерархической навигации класс [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) используется для перехода по стеку объектов [`ContentPage`](xref:Xamarin.Forms.ContentPage). На следующих снимках экрана показаны основные компоненты `NavigationPage` на каждой платформе.
 
-![](hierarchical-images/navigationpage-components.png "NavigationPage Components")
+![Компоненты NavigationPage](hierarchical-images/navigationpage-components.png)
 
 Макет [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) зависит от платформы:
 
@@ -63,7 +63,7 @@ public App ()
 
 В результате в стек навигации помещается экземпляр `Page1Xaml` [`ContentPage`](xref:Xamarin.Forms.ContentPage), где он становится активной страницей и корневой страницей приложения. Эти действия показаны на следующих снимках экрана.
 
-![](hierarchical-images/mainpage.png "Root Page of Navigation Stack")
+![Корневая страница стека навигации](hierarchical-images/mainpage.png)
 
 > [!NOTE]
 > Свойство [`RootPage`](xref:Xamarin.Forms.NavigationPage.RootPage) экземпляра [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) предоставляет доступ к первой странице в стеке навигации.
@@ -81,7 +81,7 @@ async void OnNextPageButtonClicked (object sender, EventArgs e)
 
 В результате в стек навигации помещается экземпляр `Page2Xaml`, где он становится активной страницей. Эти действия показаны на следующих снимках экрана.
 
-![](hierarchical-images/secondpage.png "Page Pushed onto Navigation Stack")
+![Страница, помещенная в стек навигации](hierarchical-images/secondpage.png)
 
 Когда вызывается метод [`PushAsync`](xref:Xamarin.Forms.NavigationPage.PushAsync*), происходят следующие события.
 
@@ -181,7 +181,7 @@ public MainPage (string date)
 
 Данные отображаются на странице путем установки свойства [`Label.Text`](xref:Xamarin.Forms.Label.Text), как показано на следующих снимках экрана.
 
-![](hierarchical-images/passing-data-constructor.png "Data Passed Through a Page Constructor")
+![Данные, переданные через конструктор страниц](hierarchical-images/passing-data-constructor.png)
 
 ### <a name="passing-data-through-a-bindingcontext"></a>Передача данных через объект BindingContext
 
@@ -267,7 +267,7 @@ public class SecondPageCS : ContentPage
 
 Данные отображаются на странице с помощью нескольких элементов управления [`Label`](xref:Xamarin.Forms.Label), как показано на следующих снимках экрана.
 
-![](hierarchical-images/passing-data-bindingcontext.png "Data Passed Through a BindingContext")
+![Данные, переданные через объект BindingContext](hierarchical-images/passing-data-bindingcontext.png)
 
 Дополнительные сведения о привязке данных см. в статье [Основы привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md).
 
@@ -277,11 +277,11 @@ public class SecondPageCS : ContentPage
 
 Метод [`InsertPageBefore`](xref:Xamarin.Forms.INavigation.InsertPageBefore*) вставляет указанную страницу в стек навигации перед указанной существующей страницей, как показано на следующей схеме.
 
-![](hierarchical-images/insert-page-before.png "Inserting a Page in the Navigation Stack")
+![Вставка страницы в стек навигации](hierarchical-images/insert-page-before.png)
 
 Метод [`RemovePage`](xref:Xamarin.Forms.INavigation.RemovePage*) удаляет указанную страницу из стека навигации, как показано на следующей схеме.
 
-![](hierarchical-images/remove-page.png "Removing a Page from the Navigation Stack")
+![Удаление страницы из стека навигации](hierarchical-images/remove-page.png)
 
 Эти методы обеспечивают возможность настраиваемой навигации, например замены страницы входа на новую страницу после успешного входа. Следующий пример кода демонстрирует этот сценарий.
 

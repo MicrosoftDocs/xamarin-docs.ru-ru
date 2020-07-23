@@ -10,16 +10,16 @@ ms.date: 04/02/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2abc255964df35fbdfeb4191911c57df9be99fd9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 20bf6d3d8c802c1d4919cd16885d3939cb0102aa
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84128015"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86930628"
 ---
 # <a name="modal-page-presentation-style-on-ios"></a>Стиль представления модальной страницы в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS предназначена для задания стиля представления модальной страницы, а также может использоваться для отображения модальных страниц с прозрачными фоновыми рисунками. Он используется в XAML путем установки `Page.ModalPresentationStyle` Свойства BIND в `UIModalPresentationStyle` значение перечисления:
 
@@ -60,7 +60,7 @@ public class iOSModalFormSheetPageCS : ContentPage
 
 В результате можно установить модальный стиль представления для [`Page`](xref:Xamarin.Forms.Page) .
 
-[![](page-presentation-style-images/modal-presentation-style-small.png "Modal Presentation Styles")](page-presentation-style-images/modal-presentation-style-large.png#lightbox "Modal Presentation Styles")
+[![Модальные стили представления](page-presentation-style-images/modal-presentation-style-small.png)](page-presentation-style-images/modal-presentation-style-large.png#lightbox "Модальные стили представления")
 
 > [!NOTE]
 > Страницы, использующие эту платформу для установки модального стиля представления, должны использовать модальную навигацию. Дополнительные сведения см. в разделе [ Xamarin.Forms модальные страницы](~/xamarin-forms/app-fundamentals/navigation/modal.md).

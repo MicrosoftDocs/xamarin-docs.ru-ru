@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 9a45e87165101a8e8afcfc51d15d085982b6499e
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: d4a1cab23b8d295d899c47edc5ffe77f6d20a467
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569937"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939767"
 ---
 # <a name="working-with-tvos-page-controls-in-xamarin"></a>Работа с элементами управления страницы tvOS в Xamarin
 
 Иногда может потребоваться отобразить ряд страниц или изображений в приложении Xamarin. tvOS. Элемент управления "страница" предназначен для четкого отображения страницы, с которой пользователь выходит из максимального числа страниц. Элемент управления страницы отображает ряд точек на фоне темной, овалной в форме фона. На текущей странице отображается заполненная точка, все остальные страницы отображаются как пустые точки. Элемент управления "страница" будет обрезать внешние наиболее точки, если в области фона слишком много.
 
-[![](page-controls-images/page01.png "Sample Page control")](page-controls-images/page01.png#lightbox)
+[![Пример элемента управления страницы](page-controls-images/page01.png)](page-controls-images/page01.png#lightbox)
 
 Элемент управления страницы в неинтерактивном элементе, предназначенный для предоставления отзывов только пользователю. Необходимо добавить другие элементы управления для изменения номера текущей страницы (например, жестов или кнопок).
 
@@ -38,14 +38,14 @@ ms.locfileid: "84569937"
 1. В **панель решения**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **элемент управления страницы** из **панели элементов** и поместите его в представление:
 
-    [![](page-controls-images/page02.png "A Page Control")](page-controls-images/page02.png#lightbox)
+    [![Элемент управления страницы](page-controls-images/page02.png)](page-controls-images/page02.png#lightbox)
 1. На **вкладке мини** -приложение **панель свойств**можно настроить несколько свойств элемента управления страницы, таких как **Текущая страница** и **число страниц**:
 
-    [![](page-controls-images/page03.png "The Widget Tab")](page-controls-images/page03.png#lightbox)
+    [![Вкладка мини-приложения](page-controls-images/page03.png)](page-controls-images/page03.png#lightbox)
 1. Затем добавьте элементы управления или жесты в представление, чтобы перемещаться назад и вперед по коллекции страниц.
-1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Пример.
+1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Пример:
 
-    [![](page-controls-images/page04.png "Name the control")](page-controls-images/page04.png#lightbox)
+    [![Назовите элемент управления](page-controls-images/page04.png)](page-controls-images/page04.png#lightbox)
 1. Сохраните изменения.
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
@@ -53,14 +53,14 @@ ms.locfileid: "84569937"
 1. В **Обозреватель решений**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **элемент управления страницы** из **панели элементов** и поместите его в представление:
 
-    [![](page-controls-images/page02-vs.png "A Page Control")](page-controls-images/page02-vs.png#lightbox)
+    [![Элемент управления страницы](page-controls-images/page02-vs.png)](page-controls-images/page02-vs.png#lightbox)
 1. На **вкладке мини** -приложение **обозревателя свойств**можно настроить несколько свойств элемента управления страницы, таких как **Текущая страница** и **число страниц**:
 
-    [![](page-controls-images/page03-vs.png "The Widget tab")](page-controls-images/page03-vs.png#lightbox)
+    [![Вкладка мини-приложения](page-controls-images/page03-vs.png)](page-controls-images/page03-vs.png#lightbox)
 1. Затем добавьте элементы управления или жесты в представление, чтобы перемещаться назад и вперед по коллекции страниц.
-1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Пример.
+1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Пример:
 
-    [![](page-controls-images/page04-vs.png "Name the control")](page-controls-images/page04-vs.png#lightbox)
+    [![Назовите элемент управления](page-controls-images/page04-vs.png)](page-controls-images/page04-vs.png#lightbox)
 1. Сохраните изменения.
 
 -----
@@ -68,7 +68,7 @@ ms.locfileid: "84569937"
 > [!IMPORTANT]
 > Хотя можно назначить такие события, как `TouchUpInside` элемент пользовательского интерфейса (например, уибуттон) в конструкторе iOS, он никогда не будет вызываться, так как Apple TV не имеет сенсорного экрана или поддержки сенсорных событий. Следует всегда использовать `Primary Action` событие при создании обработчиков событий для элементов пользовательского интерфейса tvOS.
 
-Измените файл контроллера представления (example `ViewController.cs` ) и добавьте код для управления изменяемыми страницами. Пример.
+Измените файл контроллера представления (example `ViewController.cs` ) и добавьте код для управления изменяемыми страницами. Пример:
 
 ```csharp
 using System;
@@ -160,7 +160,7 @@ PageView.CurrentPage = PageNumber;
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье описано проектирование и работа с элементом управления страницы в приложении Xamarin. tvOS.
 

@@ -1,6 +1,6 @@
 ---
-title: 'title: "Создание Xamarin.Forms DataTemplateSelector" description: "В этой статье показано, как создавать и использовать объект DataTemplateSelector для выбора шаблона DataTemplate во время выполнения в соответствии со значением привязанного к данным свойства".'
-description: 'ms.prod: xamarin ms.assetid: A4629E8F-2BAF-45CE-A76E-DF225FE8D26C ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 03/08/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Создание DataTemplateSelector в Xamarin.Forms
+description: В этой статье показано, как создавать и использовать объект DataTemplateSelector для выбора шаблона DataTemplate во время выполнения в соответствии со значением привязанного к данным свойства.
 ms.prod: xamarin
 ms.assetid: A4629E8F-2BAF-45CE-A76E-DF225FE8D26C
 ms.technology: xamarin-forms
@@ -10,12 +10,12 @@ ms.date: 03/08/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 74650eb2c52f1da9d0c539b711784896267ed183
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 7cbeeb9a0eed37ec109b2e71c46e3f04cd08822d
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84135958"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936452"
 ---
 # <a name="creating-a-xamarinforms-datatemplateselector"></a>Создание DataTemplateSelector в Xamarin.Forms
 
@@ -94,7 +94,7 @@ public class PersonDataTemplateSelector : DataTemplateSelector
 
 На следующих снимках экрана показан результат применения `PersonDataTemplateSelector` к каждому объекту базовой коллекции в [`ListView`](xref:Xamarin.Forms.ListView).
 
-![](selector-images/data-template-selector.png "ListView with a Data Template Selector")
+![ListView с селектором шаблона данных](selector-images/data-template-selector.png)
 
 Все объекты `Person`, свойство `DateOfBirth` которых имеет значение не меньше 1980, отображаются зеленым цветом. Остальные объекты отображаются красным цветом.
 

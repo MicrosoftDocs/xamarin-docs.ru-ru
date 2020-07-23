@@ -10,18 +10,18 @@ ms.date: 08/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cc0f98d94c76ff63e7a002dfb92b51eae153d7b4
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 1d993afa7163beb0b24e496b0c876d903f2396e7
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139403"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934294"
 ---
 # <a name="enterprise-application-patterns-using-xamarinforms-ebook"></a>Электронная книга "Шаблоны корпоративного приложения с использованием Xamarin.Forms"
 
 _Руководство по архитектуре для разработки адаптируемых, обслуживаемых и тестируемых Xamarin.Forms корпоративных приложений_
 
-![](images/cover-sml.png "Enterprise Application Patterns using Xamarin.Forms eBook")
+![Электронная книга "Шаблоны корпоративного приложения с использованием Xamarin.Forms"](images/cover-sml.png)
 
 Эта электронная книга содержит рекомендации по реализации шаблона Model-View-ViewModel (MVVM), внедрения зависимостей, навигации, проверки и управления конфигурацией, а также поддержания слабой взаимосвязи. Кроме того, есть рекомендации по выполнению проверки подлинности и авторизации с помощью IdentityServer, доступу к данным из контейнерных микрослужб и модульного тестирования.
 

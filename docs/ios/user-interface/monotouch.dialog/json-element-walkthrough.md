@@ -7,38 +7,38 @@ ms.technology: xamarin-ios
 ms.date: 11/25/2015
 author: davidortinau
 ms.author: daortin
-ms.openlocfilehash: ad2386d912dba28041c02c4fb4a8046d341a85ed
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 8ad1bf746c129cfb5cfbc8b3e04b871224df486d
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73002268"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936582"
 ---
 # <a name="using-json-to-create-a-user-interface-in-xamarinios"></a>Использование JSON для создания пользовательского интерфейса в Xamarin. iOS
 
 _Однокасание. Dialog (MT. D) включает поддержку динамического создания пользовательского интерфейса через данные JSON. В этом руководстве мы рассмотрим, как использовать Жсонелемент для создания пользовательского интерфейса из JSON, который либо включен в приложение, либо загружен с удаленного URL-адреса._
 
-Машин. D поддерживает создание пользовательских интерфейсов, объявленных в JSON. Если элементы объявляются с помощью JSON, MT. D создаст связанные элементы автоматически. JSON можно загрузить из локального файла, проанализированного `JsonObject` экземпляра или даже удаленного URL-адреса.
+Машин. D поддерживает создание пользовательских интерфейсов, объявленных в JSON. Если элементы объявляются с помощью JSON, MT. D создаст связанные элементы автоматически. JSON можно загрузить из локального файла, с проанализированным `JsonObject` экземпляром или даже с удаленного URL-адреса.
 
 Машин. D поддерживает полный набор функций, доступных в API Elements при использовании JSON. Например, приложение на следующем снимке экрана полностью объявляется с помощью JSON:
 
-[![](json-element-walkthrough-images/01-load-from-file.png "Например, приложение на этом снимке экрана полностью объявлено с помощью JSON.")](json-element-walkthrough-images/01-load-from-file.png#lightbox)[![](json-element-walkthrough-images/01-load-from-file.png "Например, приложение на этом снимке экрана полностью объявлено с помощью JSON.")](json-element-walkthrough-images/01-load-from-file.png#lightbox)
+Например [ ![ , приложение на этом снимке экрана полностью объявляется с помощью JSON](json-element-walkthrough-images/01-load-from-file.png)](json-element-walkthrough-images/01-load-from-file.png#lightbox) [ ![ , например, приложение на этом снимке экрана полностью объявляется с помощью JSON](json-element-walkthrough-images/01-load-from-file.png)](json-element-walkthrough-images/01-load-from-file.png#lightbox) .
 
 Перейдем к примеру из [пошагового руководства по API Elements](~/ios/user-interface/monotouch.dialog/elements-api-walkthrough.md) , в котором показано, как добавить экран сведений о задаче с помощью JSON.
 
 ## <a name="setting-up-mtd"></a>Настройка MT. Четырехмерного
 
-Машин. D распространяется с помощью Xamarin. iOS. Чтобы использовать его, щелкните правой кнопкой мыши узел **ссылки** проекта Xamarin. iOS в Visual Studio 2017 или Visual Studio для Mac и добавьте ссылку на сборку " **котушь. Dialog-1** ". Затем при необходимости добавьте в исходный код инструкции `using MonoTouch.Dialog`.
+Машин. D распространяется с помощью Xamarin. iOS. Чтобы использовать его, щелкните правой кнопкой мыши узел **ссылки** проекта Xamarin. iOS в Visual Studio 2017 или Visual Studio для Mac и добавьте ссылку на сборку " **котушь. Dialog-1** ". Затем добавьте `using MonoTouch.Dialog` в исходный код инструкции, если это необходимо.
 
 ## <a name="json-walkthrough"></a>Пошаговое руководство по JSON
 
 Пример для этого пошагового руководства позволяет создавать задачи. При выборе задачи на первом экране отображается экран сведений, как показано ниже.
 
- [![](json-element-walkthrough-images/03-task-list.png "When a task is selected on the first screen, a detail screen is presented as shown")](json-element-walkthrough-images/03-task-list.png#lightbox)
+ [![При выборе задачи на первом экране отображается экран сведений, как показано](json-element-walkthrough-images/03-task-list.png)](json-element-walkthrough-images/03-task-list.png#lightbox)
 
 ## <a name="creating-the-json"></a>Создание JSON
 
-В этом примере мы загружаем JSON из файла в проекте с именем `task.json`. Машин. D — ожидание, что JSON должен соответствовать синтаксису, который отражает API элементов. Точно так же, как и при использовании API Elements из кода, в коде JSON объявляются разделы и в этих разделах добавляются элементы. Чтобы объявить разделы и элементы в JSON, мы используем строки "sections" и "Elements" соответственно в качестве ключей. Для каждого элемента связанный тип элемента задается с помощью ключа `type`. Каждое другое свойство Elements устанавливается с именем свойства в качестве ключа.
+В этом примере мы загружаем JSON из файла в проекте с именем `task.json` . Машин. D — ожидание, что JSON должен соответствовать синтаксису, который отражает API элементов. Точно так же, как и при использовании API Elements из кода, в коде JSON объявляются разделы и в этих разделах добавляются элементы. Чтобы объявить разделы и элементы в JSON, мы используем строки "sections" и "Elements" соответственно в качестве ключей. Для каждого элемента связанный тип элемента задается с помощью `type` ключа. Каждое другое свойство Elements устанавливается с именем свойства в качестве ключа.
 
 Например, в следующем JSON описываются разделы и элементы для сведений о задаче.
 
@@ -69,7 +69,7 @@ _Однокасание. Dialog (MT. D) включает поддержку ди
 
 ## <a name="loading-the-json-in-code"></a>Загрузка JSON в коде
 
-После определения JSON необходимо загрузить его в MT. D использование класса `JsonElement`. Предполагается, что файл с созданным ранее JSON был добавлен в проект с именем Sample. JSON и заданным действием сборки Content. Загрузка `JsonElement` выполняется так же просто, как вызов следующей строки кода:
+После определения JSON необходимо загрузить его в MT. D с помощью `JsonElement` класса. Предполагается, что файл с созданным ранее JSON был добавлен в проект с именем sample.json и при условии действия сборки содержимого, а загрузка `JsonElement` — так же просто, как вызов следующей строки кода:
 
 ```csharp
 var taskElement = JsonElement.FromFile ("task.json");
@@ -121,7 +121,7 @@ _addButton.Clicked += (sender, e) => {
 
 ## <a name="loading-json-from-a-url"></a>Загрузка JSON из URL-адреса
 
-Машин. D также поддерживает динамическую загрузку JSON из внешнего URL-адреса, просто передавая URL-адрес конструктору `JsonElement`. Машин. D развернет иерархию, объявленную в JSON по требованию при переходе между экранами. Например, рассмотрим файл JSON, такой как приведенный ниже, расположенный в корне локального веб-сервера:
+Машин. D также поддерживает динамическую загрузку JSON из внешнего URL-адреса, просто передавая URL-адрес конструктору объекта `JsonElement` . Машин. D развернет иерархию, объявленную в JSON по требованию при переходе между экранами. Например, рассмотрим файл JSON, такой как приведенный ниже, расположенный в корне локального веб-сервера:
 
 ```json
 {
@@ -147,7 +147,7 @@ _addButton.Clicked += (sender, e) => {
 }
 ```
 
-Мы можем загрузить его с помощью `JsonElement`, как показано в следующем коде:
+Мы можем загрузить его, используя, `JsonElement` как в следующем коде:
 
 ```csharp
 _rootElement = new RootElement ("Json Example") {
@@ -159,9 +159,9 @@ _rootElement = new RootElement ("Json Example") {
 
 Во время выполнения файл будет извлечен и проанализирован с помощью MT. D, когда пользователь переходит во второе представление, как показано на снимке экрана ниже:
 
- [![](json-element-walkthrough-images/04-json-web-example.png "The file will be retrieved and parsed by MT.D when the user navigates to the second view")](json-element-walkthrough-images/04-json-web-example.png#lightbox)
+ [![Файл будет извлечен и проанализирован с помощью MT. D, когда пользователь переходит к второму представлению](json-element-walkthrough-images/04-json-web-example.png)](json-element-walkthrough-images/04-json-web-example.png#lightbox)
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье показано, как создать интерфейс с помощью MT. D из JSON. Было показано, как загрузить JSON, входящий в файл, с приложением, а также с удаленного URL-адреса. Также показано, как получить доступ к элементам, описанным в JSON во время выполнения.
 

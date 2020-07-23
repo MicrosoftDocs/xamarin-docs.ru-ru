@@ -10,12 +10,12 @@ ms.date: 08/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c35cd6e30e7843cda0431581025aa7440a21cc29
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 0a43ce2d27c8152137101d616302f6e56a57bd39
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84140053"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931980"
 ---
 # <a name="communicating-between-loosely-coupled-components"></a>Взаимодействие между слабо связанными компонентами
 
@@ -29,7 +29,7 @@ ms.locfileid: "84140053"
 
 Класс [`MessagingCenter`](xref:Xamarin.Forms.MessagingCenter) предоставляет функцию многоадресной публикации и подписки. Это означает, что может существовать несколько издателей, публикующих одно сообщение, и может быть несколько подписчиков, прослушивающих одно и то же сообщение. Эта связь показана на рис. 4-1:
 
-![](communicating-between-loosely-coupled-components-images/messagingcenter.png "Multicast publish-subscribe functionality")
+![Функция многоадресной публикации и подписки](communicating-between-loosely-coupled-components-images/messagingcenter.png)
 
 **Рис. 4-1.** Функция многоадресной публикации и подписки
 
@@ -123,7 +123,7 @@ MessagingCenter.Unsubscribe<CatalogViewModel, CatalogItem>(this, MessengerKeys
 
 В этом примере [`Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*) синтаксис метода отражает аргументы типа, указанные при подписке на получение `AddProduct` сообщения.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Класс [`MessagingCenter`](xref:Xamarin.Forms.MessagingCenter) в Xamarin.Forms реализует шаблон "публикация-подписка", который обеспечивает взаимодействие на основе сообщений между компонентами, которые неудобно связывать по ссылкам объектов и типов. Этот механизм позволяет издателям и подписчикам взаимодействовать без ссылки друг на друга, помогая сократить зависимости между компонентами, а также разрешать независимое разработку и тестирование компонентов.
 

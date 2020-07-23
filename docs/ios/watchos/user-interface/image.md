@@ -7,30 +7,30 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 9ab18e643038d4a61b3b201295d4298f2b5e1adc
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 3fd119828a953c002c7d66f248bf26b413018ae4
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574188"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939702"
 ---
 # <a name="watchos-image-controls-in-xamarin"></a>Элементы управления изображениями watchOS в Xamarin
 
 watchOS предоставляет [`WKInterfaceImage`](xref:WatchKit.WKInterfaceImage) элемент управления для вывода изображений и простых анимаций. Некоторые элементы управления также могут иметь фоновое изображение (например, кнопки, группы и контроллеры интерфейса).
 
-![](image-images/image-walkway.png "Apple Watch отображения рисунка") ![](image-images/image-animation.png "Apple Watch с простой анимацией")
+![Apple Watch отображения ](image-images/image-walkway.png) ![ Apple Watch изображений с простой анимацией](image-images/image-animation.png)
 <!-- watch image courtesy of http://infinitapps.com/bezel/ -->
 
 Используйте образы каталога активов, чтобы добавить образы для просмотра приложений комплекта.
 **@2x**Требуются только версии, так как на всех устройствах наблюдения отображается Retina.
 
-![](image-images/asset-universal-sml.png "Only 2x versions are required, since all watch devices have Retina displays")
+![Требуются только 2x версии, так как на всех устройствах контрольных значений отображается Retina](image-images/asset-universal-sml.png)
 
 Рекомендуется убедиться, что изображения имеют правильный размер для просмотра контрольных значений. *Избегайте* использования изображений с неправильным размером (особенно больших) и масштабирования для их показа в контрольном списке.
 
 Вы можете использовать размеры набора для просмотра (38 и часы) в образе каталога активов, чтобы указать разные изображения для каждого отображаемого размера.
 
-![](image-images/asset-watch-sml.png "You can use the Watch Kit sizes 38mm and 42mm in an asset catalog image to specify different images for each display size")
+![В образе каталога активов можно использовать размеры набора для контрольных значений (38 и часы), чтобы указать разные изображения для каждого отображаемого размера.](image-images/asset-watch-sml.png)
 
 ## <a name="images-on-the-watch"></a>Изображения на часах
 
@@ -38,7 +38,7 @@ watchOS предоставляет [`WKInterfaceImage`](xref:WatchKit.WKInterfac
 
 Например, пример [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog/) содержит несколько изображений, добавленных в каталог активов в проекте Watch App.
 
-![](image-images/asset-whale-sml.png "The WatchKitCatalog sample has a number of images added to an asset catalog in the watch app project")
+![Пример Ватчкиткаталог содержит несколько изображений, добавленных в каталог активов в проекте Watch App.](image-images/asset-whale-sml.png)
 
 Они могут быть эффективно загружены и отображены в контрольном списке с помощью `SetImage` с параметром name строки:
 
@@ -59,7 +59,7 @@ myOtherImageControl.SetImage("Worry");
 
 Например, пример [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) содержит образ с именем **бумблеби** в проекте расширения Watch:
 
-![](image-images/asset-bumblebee-sml.png "The WatchKitCatalog sample has an image named Bumblebee in the watch extension project")
+![Пример Ватчкиткаталог содержит образ с именем Бумблеби в проекте расширения Watch.](image-images/asset-bumblebee-sml.png)
 
 Следующий код приведет к следующему:
 
@@ -78,7 +78,7 @@ using (var image = UIImage.FromBundle ("Bumblebee")) {
 
 В примере [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) имеется серия нумерованных изображений в проекте Watch App с префиксом **шины** :
 
-![](image-images/asset-bus-animation-sml.png "The WatchKitCatalog sample has a series of numbered images in the watch app project with the Bus prefix")
+![В примере Ватчкиткаталог имеется серия нумерованных изображений в проекте Watch App с префиксом шины.](image-images/asset-bus-animation-sml.png)
 
 Чтобы отобразить эти изображения в виде анимации, сначала загрузите изображение с помощью `SetImage` с именем префикса, а затем вызовите `StartAnimating` :
 

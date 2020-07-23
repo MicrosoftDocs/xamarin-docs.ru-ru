@@ -10,16 +10,16 @@ ms.date: 05/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ff384605b35f6406b628da99de500b550da811c9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: ac7b90fb3e70fd07fcafe78a68136338469862e0
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136062"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936374"
 ---
 # <a name="perceived-emotion-recognition-using-the-face-api"></a>Воспринимаемое распознавание распознавания эмоций с помощью API распознавания лиц
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
 
 API распознавания лиц может выполнять обнаружение распознавания эмоций для обнаружения гнев, неприятия, отвращение, аномалии, счастье, нейтрального, грусть и удивительного в выражении лица, основанного на воспринимаемых заметках человеческими программистами. Важно отметить, однако, что только выражения лица могут необязательно представлять внутренние состояния людей.
 
@@ -54,8 +54,8 @@ public FaceRecognitionService()
 
 Распознавание распознавания эмоций выполняется путем создания запроса POST, содержащего изображение, в `detect` API `https://[location].api.cognitive.microsoft.com/face/v1.0` , где `[location]]` — это регион, который вы использовали для получения ключа API. Необязательные параметры запроса:
 
-- `returnFaceId`— Указывает, следует ли возвращать Фацеидс обнаруженных сторон. Значение по умолчанию — `true`.
-- `returnFaceLandmarks`— Указывает, следует ли возвращать ориентиры обнаруженных лиц. Значение по умолчанию — `false`.
+- `returnFaceId`— Указывает, следует ли возвращать Фацеидс обнаруженных сторон. Значение по умолчанию — `true`.
+- `returnFaceLandmarks`— Указывает, следует ли возвращать ориентиры обнаруженных лиц. Значение по умолчанию — `false`.
 - `returnFaceAttributes`— следует ли анализировать и возвращать один или несколько указанных атрибутов лиц. Поддерживаются следующие атрибуты лиц: `age` , `gender` , `headPose` ,,,, `smile` `facialHair` `glasses` `emotion` , `hair` , `makeup` , `occlusion` ,,, `accessories` `blur` `exposure` и `noise` . Обратите внимание, что анализ атрибутов лица имеет дополнительные вычислительные и временные затраты.
 
 Содержимое изображения должно быть помещено в текст запроса POST в виде URL-адреса или двоичных данных.
@@ -178,7 +178,7 @@ emotionResultLabel.Text = faces.FirstOrDefault().FaceAttributes.Emotion.ToRanked
 
 На следующем снимке экрана показан результат процесса распознавания распознавания эмоций в примере приложения:
 
-![](emotion-recognition-images/emotion-recognition.png "Emotion Recognition")
+![Распознавание эмоций](emotion-recognition-images/emotion-recognition.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 

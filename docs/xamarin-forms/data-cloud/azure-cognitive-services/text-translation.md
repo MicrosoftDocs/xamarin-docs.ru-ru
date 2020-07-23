@@ -10,16 +10,16 @@ ms.date: 02/08/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f0f43f8f2113b6bd0a800ed3e0bd96b641575b1c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 38c7f11ecf65a2a9ec9ef54b5beb270f51d24dda
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139286"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929952"
 ---
 # <a name="text-translation-using-the-translator-api"></a>Преобразование текста с помощью API-интерфейса переводчика
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
 
 _API Microsoft Translator можно использовать для перевода речи и текста с помощью REST API. В этой статье объясняется, как использовать API перевода текстов Майкрософт для перевода текста с одного языка на другой в Xamarin.Forms приложении._
 
@@ -143,9 +143,9 @@ async Task<string> SendRequestAsync(string url, string bearerToken)
 
 В примере приложения XML-ответ разбивается на `XDocument` экземпляр, при этом корневое значение XML возвращается вызывающему методу для отображения, как показано на следующих снимках экрана:
 
-![](text-translation-images/text-translation.png "Text Translation to German")
+![Перевод текста на немецкий](text-translation-images/text-translation.png)
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье объясняется, как использовать API перевода текстов Майкрософт для перевода текста с одного языка на другой язык в Xamarin.Forms приложении. Помимо перевода текста, API-интерфейс Microsoft Translator также может транскрипция речь с одного языка на текст на другом языке.
 

@@ -6,12 +6,12 @@ ms.assetid: E53185FB-CEF5-4AB5-94F9-CC9B57C52300
 author: davidortinau
 ms.author: daortin
 ms.date: 03/29/2017
-ms.openlocfilehash: a06bc0cb91ff3d3894bb7be5bbb275aca35da07d
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: e2f874446b48726afc2218e5cdcac9b8736e1681
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84570964"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86930446"
 ---
 # <a name="native-references-in-ios-mac-and-bindings-projects"></a>Собственные ссылки в проектах iOS, Mac и привязок
 
@@ -73,13 +73,13 @@ _Собственные ссылки дают возможность внедр�
 1. Создайте новый или откройте существующий проект Xamarin. iOS, Xamarin. Mac или привязку.
 2. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта и выберите **Добавить**  >  **Добавить машинную ссылку**: 
 
-    [![](native-references-images/ref01.png "In the Solution Explorer, right-click on the project name and select Add Native Reference")](native-references-images/ref01.png#lightbox)
+    [![В обозреватель решений щелкните правой кнопкой мыши имя проекта и выберите Добавить встроенную ссылку.](native-references-images/ref01.png)](native-references-images/ref01.png#lightbox)
 3. В диалоговом окне **Открыть** выберите имя собственной платформы, которую необходимо внедрить, и нажмите кнопку **Открыть** : 
 
-    [![](native-references-images/ref02.png "Select the name of the Native Framework to embed and click the Open button")](native-references-images/ref02.png#lightbox)
+    [![Выберите имя собственной платформы для внедрения и нажмите кнопку "Открыть".](native-references-images/ref02.png)](native-references-images/ref02.png#lightbox)
 4. Платформа будет добавлена в дерево проекта: 
 
-    [![](native-references-images/ref03.png "The framework will be added to the projects tree")](native-references-images/ref03.png#lightbox)
+    [![Платформа будет добавлена в дерево проектов.](native-references-images/ref03.png)](native-references-images/ref03.png#lightbox)
 
 При компиляции проекта собственная платформа будет внедрена в пакет приложения.
 
@@ -95,6 +95,6 @@ _Собственные ссылки дают возможность внедр�
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье подробно рассмотрено внедрение собственной платформы в приложение Xamarin. iOS или Xamarin. Mac.

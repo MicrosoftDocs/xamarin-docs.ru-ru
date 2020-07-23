@@ -10,12 +10,12 @@ ms.date: 04/06/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0a105548f869eb448a990a1cc12e6feff4197d48
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 7ecc094abf816f11dcb16d9eba7d715c8c4e4ab1
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135789"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939156"
 ---
 # <a name="reusable-effectbehavior"></a>Повторно используемая реакция на событие EffectBehavior
 
@@ -160,7 +160,7 @@ label.Behaviors.Add (new EffectBehavior {
 
 Когда во время выполнения реакция на событие присоединяется к элементу управления [`Label`](xref:Xamarin.Forms.Label), `Xamarin.LabelShadowEffect` добавляется в коллекцию [`Effects`](xref:Xamarin.Forms.Element.Effects) элемента управления. В результате тень добавляется к тексту, отображаемому элементом управления `Label`, как показано на следующих снимках экрана.
 
-![](effect-behavior-images/screenshots.png "Sample Application with EffectsBehavior")
+![Пример приложения с EffectsBehavior](effect-behavior-images/screenshots.png)
 
 Преимущество добавления эффектов в элементы управления и удаления эффектов из них с помощью реакций на события заключается в том, что код для обработки стереотипных эффектов можно удалить из файлов кода программной части.
 

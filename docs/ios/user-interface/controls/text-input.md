@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 9f4e88cdc04431660376b885faef0a855e14efc2
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: b36ae9f9fe04ea060ef0238d5af25fb771cafe85
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572121"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86932344"
 ---
 # <a name="text-input-in-xamarinios"></a>Ввод текста в Xamarin. iOS
 
@@ -20,9 +20,9 @@ ms.locfileid: "84572121"
 
 На снимках экрана ниже показаны значки для этих элементов управления, расположенные на панели элементов в Visual Studio для Mac:
 
- [![](text-input-images/image11a.png "UITextField")](text-input-images/image11a.png#lightbox)
+ [![UITextField](text-input-images/image11a.png)](text-input-images/image11a.png#lightbox)
 
- [![](text-input-images/image13a.png "UITextView")](text-input-images/image13a.png#lightbox)
+ [![UITextView](text-input-images/image13a.png)](text-input-images/image13a.png#lightbox)
 
 После именования розетки и сохранения файла раскадровки Visual Studio для Mac обновит `.designer.cs` разделяемый класс, и вы можете добавить код C#, ссылающийся на элемент управления, в файл класса. Каждый элемент управления имеет собственные уникальные свойства и события, к которым можно получить доступ в коде C#.
 
@@ -32,7 +32,7 @@ ms.locfileid: "84572121"
 
 `UITextField`Элемент управления чаще всего используется для приема одной строки текстового ввода, такой как имя пользователя или пароль. Ниже приведены некоторые параметры, доступные для настройки элемента управления.
 
- [![](text-input-images/image15a.png "UITextField Properties")](text-input-images/image15a.png#lightbox)
+ [![Свойства текстовое поле uitextfield](text-input-images/image15a.png)](text-input-images/image15a.png#lightbox)
 
 Ниже описаны эти элементы управления.
 
@@ -74,7 +74,7 @@ View.Add(textfield1);
 
 `UITextView`Элемент управления можно использовать для вывода текста, доступного только для чтения, или для приема многострочного ввода текста. Он имеет множество тех же параметров, что и `UITextField` (например, прописные буквы, исправления и т. д.).
 
- [![](text-input-images/image16a.png "UITextView Properties")](text-input-images/image16a.png#lightbox)
+ [![Свойства Уитекствиев](text-input-images/image16a.png)](text-input-images/image16a.png#lightbox)
 
 Конкретные свойства включают:
 

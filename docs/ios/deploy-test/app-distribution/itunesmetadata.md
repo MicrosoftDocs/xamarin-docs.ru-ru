@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 65a89afb3f301fd88ac4819bb8c3658a2be5e29d
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 76f5a10720505796e30079d6be3506bc66636f7e
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573200"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938129"
 ---
 # <a name="the-itunesmetadataplist-file-in-xamarinios-apps"></a>Файл iTunesMetadata.plist в приложениях Xamarin.iOS
 
@@ -300,26 +300,26 @@ Apple определяет следующие жанры и идентифика
 1. В **Обозревателе решений** щелкните правой кнопкой на файле проекта Xamarin.iOS и выберите **Добавить** > **Новый файл...**
 2. В диалоговом окне создания файла выберите **iOS** > **Список свойств**:
 
-    ![](itunesmetadata-images/image01.png "Select iOS Property List")
+    ![Выберите список свойств iOS](itunesmetadata-images/image01.png)
 3. Введите в поле **Имя** значение `iTunesMetadata` и нажмите кнопку **Новый**.
 4. Для редактирования файла дважды щелкните на файле `iTunesMetadata.plist` в **Обозревателе решений**:
 
-    ![](itunesmetadata-images/image02.png "The iTunesMetadata.plist editor")
+    ![Редактор файла iTunesMetadata.plist](itunesmetadata-images/image02.png)
 5. Нажмите зеленый **+** для создания новой записи и введите `UIRequiredDeviceCapabilities` в качестве имени ключа:
 
-    ![](itunesmetadata-images/image03.png "Create a new entry and enter UIRequiredDeviceCapabilities as the key name")
+    ![Создайте запись и введите UIRequiredDeviceCapabilities в качестве имени ключа](itunesmetadata-images/image03.png)
 6. Нажмите на тип значение **Строка** и выберите **Словарь** в раскрывающемся списке:
 
-    ![](itunesmetadata-images/image04.png "Select Dictionary from the popup list")
+    ![Выберите "Словарь" в раскрывающемся списке](itunesmetadata-images/image04.png)
 7. Нажмите стрелку вниз слева от имени свойства, чтобы показать элементы словаря:
 
-    ![](itunesmetadata-images/image05.png "Reveal the dictionary entries")
+    ![Раскройте элементы словаря](itunesmetadata-images/image05.png)
 8. Нажмите на надпись **Добавить запись**, затем нажмите зеленый **+** для добавления записи в словарь:
 
-    ![](itunesmetadata-images/image06.png "Add an entry to the dictionary")
+    ![Добавьте запись в словарь](itunesmetadata-images/image06.png)
 9. Введите `armv7` в качестве имени ключа, выберите тип **Логическое** и введите **Да** в качестве значения:
 
-    ![](itunesmetadata-images/image07.png "Enter armv7 for the key name, select a type of Boolean and enter Yes as the value")
+    ![Введите armv7 в качестве имени ключа, выберите тип "Логическое" и введите "Да" в качестве значения](itunesmetadata-images/image07.png)
 10. Повторяйте эти шаги, пока не заполните все необходимые пары ключ/значение в файле `iTunesMetadata.plist` (подробные сведения см. в разделе [Содержимое файла iTunesMetadata.plist](#iTunesMetadata_contents)).
 
 11. Сохраните изменения в файле plist.

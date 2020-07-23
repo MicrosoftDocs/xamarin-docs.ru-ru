@@ -10,22 +10,22 @@ ms.date: 03/20/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 207b16f062a5c2137ac5fc3c21775d2486fda57d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 998584c3deebf5ab722758aeefe7560ba738f426
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135867"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939299"
 ---
 # <a name="the-skew-transform"></a>Преобразование наклона
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Узнайте, как преобразование «наклон» может создавать графические объекты с наклоном в SkiaSharp_
 
 В SkiaSharp преобразование «наклон» приводит к наклону графических объектов, таких как тень в этом изображении:
 
-![](skew-images/skewexample.png "An example of skewing from the Skew Shadow Text program")
+![Пример наклона от текстовой программы "наклон текста с тенью"](skew-images/skewexample.png)
 
 Асимметрия превращает прямоугольник в параллелограмм, но наклонный эллипс по-прежнему является эллипсом.
 
@@ -75,7 +75,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Значения `xSkew` аргумента сдвигают нижнюю часть текста вправо для положительных значений или слева для отрицательных значений. Значения `ySkew` сдвига вправо текста вниз для положительных значений или для отрицательных значений.
 
-[![](skew-images/skewexperiment-small.png "Triple screenshot of the Skew Experiment page")](skew-images/skewexperiment-large.png#lightbox "Triple screenshot of the Skew Experiment page")
+[![Тройной снимок экрана со страницей эксперимента](skew-images/skewexperiment-small.png)](skew-images/skewexperiment-large.png#lightbox "Тройной снимок экрана со страницей эксперимента")
 
 Если `xSkew` значение равно отрицательному `ySkew` значению, то результат будет поворотом, но также немного масштабируется.
 
@@ -89,7 +89,7 @@ y "= Искев · x + y
 
 Если треугольник 200 пикселей в ширину и 100 пикселей в высоком положении располагается в верхнем левом углу в точке (0, 0) и отображается со `xSkew` значением 1,5, то результат параллелограмма выглядит следующим образом:
 
-![](skew-images/skeweffect.png "The effect of the skew transform on a rectangle")
+![Результат преобразования «наклон» в прямоугольнике](skew-images/skeweffect.png)
 
 Координаты нижнего края имеют `y` значения 100, поэтому он смещается на 150 пикселей вправо.
 
@@ -111,7 +111,7 @@ y "= Искев · (x – px) + y
 
 Вы можете более удобно указать асимметрию в качестве угла наклона, например угла α на этой схеме:
 
-![](skew-images/skewangleeffect.png "The effect of the skew transform on a rectangle with a skewing angle indicated")
+![Результат преобразования отклонений в прямоугольнике с указанным углом наклона](skew-images/skewangleeffect.png)
 
 Отношение сдвига 150 пикселей к 100-пиксельному вертикали — это тангенс этого угла, в данном примере — 56,3 градусов.
 
@@ -158,7 +158,7 @@ void SkewDegrees(SKCanvas canvas, double xDegrees, double yDegrees)
 
 Когда угол приближается к положительному или отрицательному 90 градусам, тангенс приближается к бесконечности, но углы до 80 градусов или поэтому можно использовать.
 
-[![](skew-images/skewangleexperiment-small.png "Triple screenshot of the Skew Angle Experiment page")](skew-images/skewangleexperiment-large.png#lightbox "Triple screenshot of the Skew Angle Experiment page")
+[![Тройной снимок экрана со страницей эксперимента угла наклона](skew-images/skewangleexperiment-small.png)](skew-images/skewangleexperiment-large.png#lightbox "Тройной снимок экрана со страницей эксперимента угла наклона")
 
 Небольшой отрицательный сдвиг по горизонтали может имитировать наклонное или курсивное начертание текста, так как демонстрируется страница **наклонного текста** . [`ObliqueTextPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/ObliqueTextPage.cs)Класс показывает, как это делается:
 
@@ -194,7 +194,7 @@ void SkewDegrees(SKCanvas canvas, double xDegrees, double yDegrees)
 
 `TextAlign`Свойство объекта `SKPaint` имеет значение `Center` . Без каких-либо преобразований `DrawText` вызов с координатами (0, 0) будет располагать текст горизонтально по центру базового плана в левом верхнем углу. Объект `SkewDegrees` наклоняет текст на 20 градусов по горизонтали относительно базовых показателей. `Translate`Вызов перемещает горизонтальный центр базового плана текста в центр холста:
 
-[![](skew-images/obliquetext-small.png "Triple screenshot of the Oblique Text page")](skew-images/obliquetext-large.png#lightbox "Triple screenshot of the Oblique Text page")
+[![Тройной снимок экрана со страницей наклонного текста](skew-images/obliquetext-small.png)](skew-images/obliquetext-large.png#lightbox "Тройной снимок экрана со страницей наклонного текста")
 
 На странице « **наклонный текст тени** » показано, как использовать сочетание наклона и вертикального масштабирования в 45 градусов для создания тени текста, которая будет отклоняться от текста. Ниже приведена сопутствующая часть `PaintSurface` обработчика:
 
@@ -227,11 +227,11 @@ using (SKPaint textPaint = new SKPaint())
 
 Сначала отображается тень, а затем текст:
 
-[![](skew-images/skewshadowtext1-small.png "Triple screenshot of the Skew Shadow Text page")](skew-images/skewshadowtext1-large.png#lightbox "Triple screenshot of the Skew Shadow Text page")
+[![Тройной снимок экрана со страницей теневого текста «наклон»](skew-images/skewshadowtext1-small.png)](skew-images/skewshadowtext1-large.png#lightbox "Тройной снимок экрана со страницей теневого текста «наклон»")
 
 Вертикальная координата, передаваемая `DrawText` методу, указывает положение текста относительно базовой линии. Это та же вертикальная координата, которая используется для центра наклона. Этот метод не будет работать, если текстовая строка содержит нижние выносные строки. Например, замените слово "небезопасные" для "Shadow" и вот результат:
 
-[![](skew-images/skewshadowtext2-small.png "Triple screenshot of the Skew Shadow Text page with an alternative word with descenders")](skew-images/skewshadowtext2-large.png#lightbox "Triple screenshot of the Skew Shadow Text page with an alternative word with descenders")
+[![Тройной снимок экрана со страницей теневого текста «наклон» с альтернативным словом с нижними выносными элементами](skew-images/skewshadowtext2-small.png)](skew-images/skewshadowtext2-large.png#lightbox "Тройной снимок экрана со страницей теневого текста «наклон» с альтернативным словом с нижними выносными элементами")
 
 Тень и текст по-прежнему согласовываются по базовому плану, но результат просто выглядит неправильно. Чтобы устранить эту проблему, необходимо получить границы текста:
 
@@ -251,7 +251,7 @@ canvas.Translate(-xText, -yText - textBounds.Bottom);
 
 Теперь тень расширяется от нижней части этих нижних выносных элементов:
 
-[![](skew-images/skewshadowtext3-small.png "Triple screenshot of the Skew Shadow Text page with adjustments for descenders")](skew-images/skewshadowtext3-large.png#lightbox "Triple screenshot of the Skew Shadow Text page with adjustments for descenders")
+[![Тройной снимок экрана со страницей теневого текста «наклон» с корректировками для нижних выносных элементов](skew-images/skewshadowtext3-small.png)](skew-images/skewshadowtext3-large.png#lightbox "Тройной снимок экрана со страницей теневого текста «наклон» с корректировками для нижних выносных элементов")
 
 ## <a name="related-links"></a>Связанные ссылки
 

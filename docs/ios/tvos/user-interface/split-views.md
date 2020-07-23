@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 98cedb1cf02f9688581946fa21a2cb40379f606f
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 56b9f82fcc15afc8c75012b204588b4da65a32c4
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566179"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939741"
 ---
 # <a name="working-with-tvos-split-view-controllers-in-xamarin"></a>Работа с контроллерами разделенного представления tvOS в Xamarin
 
 Контроллер с разделенными представлениями позволяет параллельно управлять главным и подробным контроллером представлений на экране. Контроллеры с разделением представлений используются для представления постоянного, изменяемого содержимого в главном представлении (меньший раздел слева) и связанных сведений в подробном представлении (увеличенный раздел справа).
 
-[![](split-views-images/intro01.png "Sample Split View")](split-views-images/intro01.png#lightbox)
+[![Пример разделенного представления](split-views-images/intro01.png)](split-views-images/intro01.png#lightbox)
 
 <a name="About-Split-View-Controllers"></a>
 
@@ -28,7 +28,7 @@ ms.locfileid: "84566179"
 
 Кроме того, контроллер главного представления может быть скрыт или показан по мере необходимости: 
 
-[![](split-views-images/intro02.png "The Master View Controller hidden")](split-views-images/intro02.png#lightbox)
+[![Контроллер главного представления скрыт](split-views-images/intro02.png)](split-views-images/intro02.png#lightbox)
 
 Контроллеры с разделенными представлениями часто используются для представления списка фильтруемого содержимого с категориями в главном представлении и отфильтрованными результатами в подробном представлении. Обычно это представление представлено в виде таблицы слева, а также в [представлении коллекции](~/ios/tvos/user-interface/collection-views.md) справа.
 
@@ -51,18 +51,18 @@ ms.locfileid: "84566179"
 1. В **панель решения**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **контроллеры разделенного представления** из **панели элементов** в представление: 
 
-    [![](split-views-images/activity01.png "A Split View Controller")](split-views-images/activity01.png#lightbox)
+    [![Контроллер разделенного представления](split-views-images/activity01.png)](split-views-images/activity01.png#lightbox)
 1. По умолчанию конструктор iOS установит контроллер навигации и контроллер представления в главном представлении. Если это не соответствует требованиям приложения, просто удалите их.
 1. При удалении главного представления по умолчанию перетащите новый контроллер представления в область конструктора: 
 
-    [![](split-views-images/activity02.png "A View Controller")](split-views-images/activity02.png#lightbox)
+    [![Контроллер представления](split-views-images/activity02.png)](split-views-images/activity02.png#lightbox)
 1. Щелкните элемент управления и перетащите его из контроллера разделенного представления в новый контроллер главного представления. 
 1. В **контекстном меню**выберите пункт **Главная** : 
 
-    [![](split-views-images/activity03.png "Select Master from the Popup Menu")](split-views-images/activity03.png#lightbox)
+    [![В контекстном меню выберите пункт Главная.](split-views-images/activity03.png)](split-views-images/activity03.png#lightbox)
 1. Создайте содержимое представлений «основной» и «подробности»: 
 
-    [![](split-views-images/activity04.png "Example layout")](split-views-images/activity04.png#lightbox)
+    [![Пример макета](split-views-images/activity04.png)](split-views-images/activity04.png#lightbox)
 1. Назначьте **имена** на **вкладке мини** -приложение **панель свойств** для работы с элементами управления пользовательского интерфейса в коде C#.
 1. Сохраните изменения и вернитесь в Visual Studio для Mac.
 
@@ -71,18 +71,18 @@ ms.locfileid: "84566179"
 1. В **Обозреватель решений**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **контроллеры разделенного представления** из **панели элементов** в представление: 
 
-    [![](split-views-images/activity01-vs.png "A Split View Controller")](split-views-images/activity01-vs.png#lightbox)
+    [![Контроллер разделенного представления](split-views-images/activity01-vs.png)](split-views-images/activity01-vs.png#lightbox)
 1. По умолчанию конструктор iOS добавит контроллер навигации и контроллер представления в главное представление. Если это не соответствует требованиям приложения, просто удалите их.
 1. При удалении главного представления по умолчанию перетащите новый контроллер представления в область конструктора: 
 
-    [![](split-views-images/activity02-vs.png "A View Controller")](split-views-images/activity02-vs.png#lightbox)
+    [![Контроллер представления](split-views-images/activity02-vs.png)](split-views-images/activity02-vs.png#lightbox)
 1. Щелкните элемент управления и перетащите его из контроллера разделенного представления в новый контроллер главного представления. 
 1. В **контекстном меню**выберите пункт **Главная** : 
 
-    [![](split-views-images/activity03-vs.png "Select Master from the Popup Menu")](split-views-images/activity03-vs.png#lightbox)
+    [![В контекстном меню выберите пункт Главная.](split-views-images/activity03-vs.png)](split-views-images/activity03-vs.png#lightbox)
 1. Создайте содержимое представлений «основной» и «подробности»: 
 
-    [![](split-views-images/activity04.png "Content layout")](split-views-images/activity04.png#lightbox)
+    [![Макет содержимого](split-views-images/activity04.png)](split-views-images/activity04.png#lightbox)
 1. Назначьте **имена** на **вкладке мини** -приложение **обозревателя свойств** , чтобы работать с элементами управления пользовательского интерфейса в коде C#.
 1. Сохраните изменения.
 
@@ -100,7 +100,7 @@ ms.locfileid: "84566179"
 
 ### <a name="accessing-master-and-detail"></a>Доступ к базе данных master и Details
 
-Если требуется программный доступ к основным контроллерам представлений и представлениям сведений, используйте `ViewControllers` свойство контроллера разделенного представления. Пример.
+Если требуется программный доступ к основным контроллерам представлений и представлениям сведений, используйте `ViewControllers` свойство контроллера разделенного представления. Пример:
 
 ```csharp
 // Gain access to master and detail view controllers
@@ -122,7 +122,7 @@ var detailController = ViewControllers [1] as DetailViewController;
 public DetailViewController DetailController { get; set;}
 ```
 
-В контроллере разделенного представления Переопределите `ViewDidLoad` метод и свяжите два представления вместе. Пример.
+В контроллере разделенного представления Переопределите `ViewDidLoad` метод и свяжите два представления вместе. Пример:
 
 ```csharp
 public override void ViewDidLoad ()
@@ -146,7 +146,7 @@ public override void ViewDidLoad ()
 
 ### <a name="showing-and-hiding-master"></a>Отображение и скрытие образца
 
-При необходимости можно показать или скрыть контроллер главного представления с помощью `PreferredDisplayMode` Свойства контроллера разделенного представления. Пример.
+При необходимости можно показать или скрыть контроллер главного представления с помощью `PreferredDisplayMode` Свойства контроллера разделенного представления. Пример:
 
 ```csharp
 // Show hide split view
@@ -168,7 +168,7 @@ if (SplitViewController.DisplayMode == UISplitViewControllerDisplayMode.PrimaryH
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье рассматривается проектирование и работа с контроллерами разделенного представления внутри приложения Xamarin. tvOS.
 

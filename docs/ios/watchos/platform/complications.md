@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/03/2017
-ms.openlocfilehash: 139b58fd1953924d5a848fc79c3a1706afb760b0
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: e3ef2a667996f3fc38008521c2804cc644cfb328
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84565655"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86928609"
 ---
 # <a name="watchos-complications-in-xamarin"></a>watchOS сложности в Xamarin
 
@@ -24,7 +24,7 @@ _watchOS позволяет разработчикам писать пользо
 
 Начните с ознакомления с [документацией Apple](https://developer.apple.com/library/watchos/documentation/General/Conceptual/WatchKitProgrammingGuide/ManagingComplications.html) , чтобы определить, подходит ли ваше приложение для усложнения. Существует 5 `CLKComplicationFamily` типов отображаемых данных:
 
-[![](complications-images/all-complications-sml.png "The 5 CLKComplicationFamily types available: Circular Small, Modular Small, Modular Large, Utilitarian Small, Utilitarian Large")](complications-images/all-complications.png#lightbox)
+[![Доступны 5 типов Клккомпликатионфамили: круглый маленький, модульный мелкий, модульный крупный, утилитарные малый, утилитарные крупный](complications-images/all-complications-sml.png)](complications-images/all-complications.png#lightbox)
 
 Приложения могут реализовывать только один стиль (или все пять) в зависимости от отображаемых данных.
 Вы также можете поддерживать командировку времени, предоставляя значения в прошлом и (или) будущем по мере того, как пользователь включит Digital Crown.
@@ -41,7 +41,7 @@ _watchOS позволяет разработчикам писать пользо
 
 Мастер **добавления нового проекта...** содержит флажок, который автоматически создает класс контроллера усложнения и настраивает файл **info. plist** :
 
-![](complications-images/file-new-project-sml.png "The Include Complication checkbox")
+![Флажок "включить усложнение"](complications-images/file-new-project-sml.png)
 
 ### <a name="existing-projects"></a>Существующие проекты
 
@@ -83,7 +83,7 @@ public class ComplicationController : CLKComplicationDataSource
 
 В файле **info. plist** расширения Watch должно быть указано имя `CLKComplicationDataSource` и какие семейства осложнений, которые вы хотите поддерживать:
 
-[![](complications-images/complications-config-sml.png "The complication family types")](complications-images/complications-config.png#lightbox)
+[![Типы семейства осложнений](complications-images/complications-config-sml.png)](complications-images/complications-config.png#lightbox)
 
 В списке записей **класса источника данных** будут показаны имена классов, которые `CLKComplicationDataSource` содержат логику для подклассов.
 

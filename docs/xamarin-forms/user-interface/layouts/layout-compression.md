@@ -10,16 +10,16 @@ ms.date: 12/13/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 40af5aeaa51025dae70113faa6f7ff83edf43c73
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 5fa9c7592ecd2cb314ce12d7e303677447a5e104
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138032"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931174"
 ---
 # <a name="layout-compression"></a>Сжатие макета
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layoutcompression)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layoutcompression)
 
 _Сжатие макета удаляет указанные макеты из визуального дерева при попытке повысить производительность отрисовки страницы. В этой статье объясняется, как включить сжатие макета и преимущества, которые он может принести._
 
@@ -36,7 +36,7 @@ Xamarin.Formsвыполняет компоновку с помощью двух 
 
 Например, рассмотрим следующую кнопку из примера приложения для входа в Facebook:
 
-![](layout-compression-images/facebook-button.png "Facebook Button")
+![Кнопка Facebook](layout-compression-images/facebook-button.png)
 
 Эта кнопка указана как пользовательский элемент управления со следующей иерархией представления XAML:
 
@@ -60,7 +60,7 @@ Xamarin.Formsвыполняет компоновку с помощью двух 
 
 Результирующую иерархию вложенных представлений можно исследовать с помощью [Xamarin Inspector](~/tools/inspector/index.md). В Android иерархия вложенных представлений содержит 17 представлений:
 
-![](layout-compression-images/no-compression.png "View Hierarchy for Facebook Button")
+![Кнопка "Просмотреть иерархию" для Facebook](layout-compression-images/no-compression.png)
 
 Сжатие макета, доступное для Xamarin.Forms приложений на платформах iOS и Android, нацелено на сведение вложений представления путем удаления указанных макетов из визуального дерева, что может повысить производительность отрисовки страниц. Предоставляемое преимущество производительности зависит от сложности страницы, используемой версии операционной системы и устройства, на котором выполняется приложение. Однако наиболее заметное повышение производительности будет наблюдаться на старых устройствах.
 
@@ -101,7 +101,7 @@ CompressedLayout.SetIsHeadless(stackLayout, true);
 
 В Android это приводит к вложенной иерархии представлений из 14 представлений:
 
-![](layout-compression-images/layout-compression.png "View Hierarchy for Facebook Button with Layout Compression")
+![Просмотр иерархии для кнопки Facebook с сжатием макета](layout-compression-images/layout-compression.png)
 
 По сравнению с исходной иерархией вложенного представления из 17 представлений это уменьшает число просмотров 17%. Хотя это снижение может оказаться несущественным, уменьшение представления по всей странице может быть более значительным.
 
@@ -111,13 +111,13 @@ CompressedLayout.SetIsHeadless(stackLayout, true);
 
 Для кнопки Facebook в примере приложения объединение сжатия макета и Экспресс-рендеринга создает вложенную иерархию представления из 8 представлений:
 
-![](layout-compression-images/layout-compression-with-fast-renderers.png "View Hierarchy for Facebook Button with Layout Compression and Fast Renderers")
+![Просмотр иерархии для кнопки Facebook с использованием сжатия макета и быстрых модулей подготовки отчетов](layout-compression-images/layout-compression-with-fast-renderers.png)
 
 По сравнению с исходной иерархией вложенного представления из 17 представлений это значение представляет собой сокращение 52%.
 
 Пример приложения содержит страницу, извлеченную из реального приложения. Без сжатия макета и быстрых модулей подготовки отчетов страница создает вложенную иерархию представлений 130 в Android. Включение быстрых модулей подготовки отчетов и сжатия макета в соответствующих классах макета сокращает иерархию вложенного представления до 70 просмотров, а также уменьшает значение 46%.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Сжатие макета удаляет указанные макеты из визуального дерева при попытке повысить производительность отрисовки страницы. В этом случае рост производительности зависит от сложности страницы, версии используемой операционной системы и устройства, на котором выполняется приложение. Однако наиболее заметное повышение производительности будет наблюдаться на старых устройствах.
 

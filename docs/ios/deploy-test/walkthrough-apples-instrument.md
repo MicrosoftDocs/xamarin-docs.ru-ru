@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 41254fb6aac176cd796fba851478b31f774553d2
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 6fa1357adc9cf2f545fbcdf3a30fef70280593bb
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73023446"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938025"
 ---
 # <a name="walkthrough---using-apples-instruments-tool"></a>Пошаговое руководство. Использование средства Apple Instruments
 
@@ -27,19 +27,19 @@ _В этой статье последовательно описываются 
 2. Отправьте приложение на устройство, выбрав в меню **"Запуск" > "Отправить на устройство"** .
 3. Выберите шаблон **Allocations** (Распределения). Это оранжевый значок с белым полем
 
-    ![](walkthrough-apples-instrument-images/00-allocations-tempate.png "Choose the Allocations template")
+    ![Выбор шаблона Allocations (Распределения)](walkthrough-apples-instrument-images/00-allocations-tempate.png)
 
 4. Выберите приложение **Memory Demo** в списке **Choose a profiling template for** (Выберите шаблон профилирования для) в верхней части окна. Сначала щелкните устройство iOS, чтобы развернуть меню со списком установленных приложений.
 
-    ![](walkthrough-apples-instrument-images/01-mem-demo.png "Select the Memory Demo application")
+    ![Выбор приложения Memory Demo](walkthrough-apples-instrument-images/01-mem-demo.png)
 
 5. Нажмите кнопку **Choose** (Выбрать) в нижнем правом углу окна, чтобы запустить **Instruments**. В верхней панели шаблона отобразятся два элемента: Allocations (Выделения) и VM Tracker (Отслеживание виртуальных машин).
 
 6. Нажмите кнопку **Record** (Запись), т. е. красный кружок в верхнем левом углу экрана Instruments, чтобы запустить приложение.
 
-7. Выберите в верхней панели строку **VM Tracker**. Теперь, когда приложение запущено, в нем будет два раздела: Dirty (Изменение) и Resident Size (Размер в памяти). В области **Inspector** (Инспектор) выберите **Show Display Settings** (Показать параметры отображения), т. е. значок шестеренки, а затем установите флажок **Automatic Snapshotting** (Автоматическое создание снимков), показанный на следующем снимке экрана в правом нижнем углу:
+7. Выберите строку **VM Tracker** в верхней области. Теперь, когда приложение запущено, она будет содержать два раздела: Dirty (Черновик) и Resident Size (Размер в памяти). В области **Inspector** (Инспектор) выберите **Show Display Settings** (Показать параметры отображения), т. е. значок шестеренки, а затем установите флажок **Automatic Snapshotting** (Автоматическое создание снимков), показанный на следующем снимке экрана в правом нижнем углу:
 
-    ![](walkthrough-apples-instrument-images/02-auto-snapshot.png "Choose the Show Display Settings option the gear icon then tick the Automatic Snapshotting checkbox")
+    ![Выбор пункта Show Display Settings (Показать параметры отображения) (значок шестеренки) и установка флажка Automatic Snapshotting (Автоматическое создание снимков)](walkthrough-apples-instrument-images/02-auto-snapshot.png)
 
 8. Выберите строку **Allocations** в верхней области. Теперь, когда приложение запущено, в ней будет написано *All Heap and Anonymous VM* (Вся куча и анонимные ВМ)
 9. В области **Inspector** выберите параметр **Show Display Settings** (значок шестеренки), а затем нажмите кнопку **Mark Generation** (Отметить поколение), чтобы задать набор базовых показателей. На временной шкале в верхней части окна появится небольшой красный флажок
@@ -50,15 +50,15 @@ _В этой статье последовательно описываются 
 
 14. Обратите внимание, что узел **&lt;non-object>** (без объектов) демонстрирует чрезмерное потребление памяти. Щелкните стрелку рядом с этим узлом, чтобы увидеть дополнительные сведения. Щелкните правой кнопкой мыши по трассировке стека, чтобы добавить в область **Source Location** (Исходное расположение):
 
-    ![](walkthrough-apples-instrument-images/03-mem-growth.png "Add Source Location to the pane")
+    ![Добавление исходного расположения в область](walkthrough-apples-instrument-images/03-mem-growth.png)
 
 15. Выполните сортировку по показателю **Size** (Размер) и откройте представление **Expanded Detail** (Расширенные сведения):
 
-    ![](walkthrough-apples-instrument-images/04-extended-detail.png "Sort by Size and display the  Extended Detail view")
+    ![Сортировка по размеру и отображение представления Expanded Detail (Расширенные сведения)](walkthrough-apples-instrument-images/04-extended-detail.png)
 
 16. Щелкните нужную запись в стеке вызовов, чтобы просмотреть соответствующий код:
 
-    ![](walkthrough-apples-instrument-images/05-related-code.png "Viewing the related code")
+    ![Просмотр кода](walkthrough-apples-instrument-images/05-related-code.png)
 
 В нашем случае для каждой ячейки создается новый образ, который помещается в коллекцию. Существующие ячейки коллекции повторно не используются.
 
@@ -83,7 +83,7 @@ public override UICollectionViewCell GetCell (UICollectionView collectionView, N
 
 Теперь при запуске приложения использование памяти значительно сокращается — значение показателя **Growth** между поколениями теперь измеряется в KiB (килобайтах), а не в MiB (мегабайтах), как было до исправления кода:
 
-![](walkthrough-apples-instrument-images/06-reduced-memory.png "Showing the app memory usage")
+![Отображение использования памяти приложением](walkthrough-apples-instrument-images/06-reduced-memory.png)
 
 Улучшенный код представлен в [примере MemoryDemo](https://docs.microsoft.com/samples/xamarin/ios-samples/profiling-memorydemo) из **измененной версии** решения в Visual Studio для Mac.
 

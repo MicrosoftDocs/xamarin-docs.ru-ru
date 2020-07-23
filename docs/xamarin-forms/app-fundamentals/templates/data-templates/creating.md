@@ -10,12 +10,12 @@ ms.date: 09/11/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3054180a9deb1357357c90db7b7fbdd8058b6773
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9ed7e485adbc13862ff6fb6af9b02c43cc6a1f10
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84565503"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86935646"
 ---
 # <a name="creating-a-xamarinforms-datatemplate"></a>Создание Xamarin.Forms DataTemplate
 
@@ -31,7 +31,7 @@ _Шаблоны данных могут создаваться как встро
 
 Какой бы способ ни использовался, в результате внешний вид каждой ячейки [`ListView`](xref:Xamarin.Forms.ListView) определяется шаблоном [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), как показано на следующих снимках экрана.
 
-![](creating-images/data-template-appearance.png "ListView with a DataTemplate")
+![ListView с шаблоном DataTemplate](creating-images/data-template-appearance.png)
 
 ## <a name="creating-an-inline-datatemplate"></a>Создание встроенного шаблона DataTemplate
 

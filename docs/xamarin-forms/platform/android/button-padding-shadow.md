@@ -10,16 +10,16 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5554341493b52d20c946a4bcfe2d1230e4a02759
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 3efcd5cd7c2d00e9d646c937863fd7e55d17f240
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135573"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929887"
 ---
 # <a name="button-padding-and-shadows-on-android"></a>Заполнение и тени кнопок на Android
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Данная платформа Android определяет Xamarin.Forms , используются ли кнопки для заполнения по умолчанию и значений тени для кнопок Android. Он используется в XAML путем установки [`Button.UseDefaultPadding`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultPaddingProperty) [`Button.UseDefaultShadow`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultShadowProperty) свойств и присоединенные `boolean` значения:
 
@@ -49,7 +49,7 @@ button.On<Android>().SetUseDefaultPadding(true).SetUseDefaultShadow(true);
 
 В результате Xamarin.Forms кнопки могут использовать заполнение по умолчанию и значения тени для кнопок Android:
 
-![](button-padding-shadow-images/button-padding-and-shadow.png "Default Padding and Shadow Values on Android Buttons")
+![Заполнение и затенение значений по умолчанию на кнопках Android](button-padding-shadow-images/button-padding-and-shadow.png)
 
 Обратите внимание, что на снимке экрана выше каждый [`Button`](xref:Xamarin.Forms.Button) имеет идентичные определения, за исключением того, что в правой части `Button` используется заполнение по умолчанию и значения тени для кнопок Android.
 
