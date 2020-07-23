@@ -10,25 +10,25 @@ ms.date: 12/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: bb08d359048d53639a700cc5ff526f26d6b077b6
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 325aa7be9e8a1eb6da816ef4ec6403c2882c6ed4
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84571471"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86928917"
 ---
 # <a name="getting-started-with-datapages"></a>начало работы со страницами с данными
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/Pages/DataPagesDemo)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/Pages/DataPagesDemo)
 
-![](~/media/shared/preview.png "This API is currently in preview")
+![Сейчас этот API находится в предварительной версии](~/media/shared/preview.png)
 
 > [!IMPORTANT]
 > Для отображения страниц с наборами элементов требуется Xamarin.Forms ссылка на тему. Это включает установку [ Xamarin.Forms . Тему. базовый](https://www.nuget.org/packages/Xamarin.Forms.Theme.Base/) пакет NuGet в проекте, а затем — [ Xamarin.Forms . Theme. light](https://www.nuget.org/packages/Xamarin.Forms.Theme.Light/) или [ Xamarin.Forms . Themes. темные](https://www.nuget.org/packages/Xamarin.Forms.Theme.Dark/) пакеты NuGet.
 
 Чтобы приступить к созданию простой страницы, управляемой данными, с помощью предварительной версии страниц данных, выполните следующие действия. В этой демонстрации используется жестко закодированный стиль ("события") в сборках предварительного просмотра, которые работают только с конкретным форматом JSON в коде.
 
-[![](get-started-images/demo-sml.png "DataPages Sample Application")](get-started-images/demo.png#lightbox "DataPages Sample Application")
+[![Образец приложения "страницы с примерами"](get-started-images/demo-sml.png)](get-started-images/demo.png#lightbox "Образец приложения "страницы с примерами"")
 
 ## <a name="1-add-nuget-packages"></a>1. Добавление пакетов NuGet
 
@@ -140,7 +140,7 @@ MainPage = new NavigationPage (new SessionDataPage ());
 
 Приведенные выше действия должны привести к созданию рабочей страницы данных:
 
-[![](get-started-images/demo-sml.png "DataPages Sample Application")](get-started-images/demo.png#lightbox "DataPages Sample Application")
+[![Образец приложения "страницы с примерами"](get-started-images/demo-sml.png)](get-started-images/demo.png#lightbox "Образец приложения "страницы с примерами"")
 
 Это работает потому, что предварительно построенный стиль **"события"** существует в пакете NuGet светлой темы и имеет определенные стили, соответствующие источнику данных (например, "Title", "Image", "Presenter").
 
@@ -169,7 +169,7 @@ MainPage = new NavigationPage (new SessionDataPage ());
 
 Предоставляя `DataTemplate` этот код, переопределяет `StyleClass` и вместо этого использует макет по умолчанию для `ListItemControl` .
 
-[![](get-started-images/custom-sml.png "DataPages Sample Application")](get-started-images/custom.png#lightbox "DataPages Sample Application")
+[![Образец приложения "страницы с примерами"](get-started-images/custom-sml.png)](get-started-images/custom.png#lightbox "Образец приложения "страницы с примерами"")
 
 Разработчики, предпочитающие C# to XAML, могут также создавать привязки к источникам данных (не забывайте включать `using Xamarin.Forms.Pages;` инструкцию):
 
@@ -179,7 +179,7 @@ SetBinding (TitleProperty, new DataSourceBinding ("title"));
 
 Создавать темы с нуля немного сложнее, но будущие выпуски предварительной версии сделают это проще.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 ## <a name="could-not-load-file-or-assembly-xamarinformsthemelight-or-one-of-its-dependencies"></a>Не удалось загрузить файл или сборку Xamarin.Forms . Theme. Light ' или одна из его зависимостей
 
