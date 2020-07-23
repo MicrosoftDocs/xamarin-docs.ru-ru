@@ -7,12 +7,12 @@ ms.assetid: 9E6C986F-3FBA-4599-8367-FB0C565C0ADE
 author: davidortinau
 ms.author: daortin
 ms.date: 04/18/2018
-ms.openlocfilehash: f81df8ac253e53b16c3ab09bf80d66a7b6324854
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: b9b771efe338fbcc250aa6e7a83b73f35269d3bf
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571523"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996816"
 ---
 # <a name="updating-component-references-to-nuget"></a>Обновление ссылок на компоненты в NuGet
 
@@ -27,7 +27,7 @@ ms.locfileid: "84571523"
 
 ## <a name="manually-removing-component-references"></a>Удаление ссылок на компоненты вручную
 
-Выпуск 15,6 Visual Studio и 7,4 Visual Studio для Mac больше не поддерживают компоненты в проекте. 
+Выпуск 15,6 Visual Studio и 7,4 Visual Studio для Mac больше не поддерживают компоненты в проекте.
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
@@ -37,7 +37,7 @@ ms.locfileid: "84571523"
 
 Чтобы удалить компонент из проекта, выполните следующие действия.
 
-1. Откройте **CSPROJ**-файл. Для этого щелкните правой кнопкой мыши имя проекта и выберите команду **Выгрузить проект**. 
+1. Откройте **CSPROJ**-файл. Для этого щелкните правой кнопкой мыши имя проекта и выберите команду **Выгрузить проект**.
 
 2. Щелкните правой кнопкой мыши выгруженный проект и выберите **Изменить {имя_проекта-Project-Name}. csproj**.
 
@@ -151,7 +151,7 @@ ms.locfileid: "84571523"
 
 Обратите внимание, что вкладка **пакеты** , вероятно, будет пустой:
 
-![](component-nuget-images/packages-tab-empty-sml.png)
+![Вкладка "Пакеты"](component-nuget-images/packages-tab-empty-sml.png)
 
 _Он может содержать зависимости NuGet, но их можно игнорировать._
 
@@ -179,7 +179,7 @@ _Он может содержать зависимости NuGet, но их мо
 1. Щелкните правой кнопкой мыши узел **пакеты** и выберите команду **Добавить пакеты.**...
 2. Поиск замены NuGet по имени или автору:
 
-    ![](component-nuget-images/nuget-search-sml.png)
+    ![Поиск NuGet](component-nuget-images/nuget-search-sml.png)
 
 3. Нажмите кнопку **Добавить пакет**.
 

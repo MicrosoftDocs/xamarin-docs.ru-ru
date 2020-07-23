@@ -127,7 +127,7 @@ namespace MySingleView
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье рассматривается проектирование и работа с панелями навигации в приложении Xamarin. tvOS.
 

@@ -1,18 +1,18 @@
 ---
 title: System. Data в Xamarin. iOS
-description: В этом документе описывается, как использовать System. Data и Mono. Data. SQLite. dll для доступа к данным SQLite в приложении Xamarin. iOS.
+description: В этом документе описывается, как использовать System. Data и Mono.Data.Sqlite.dll для доступа к данным SQLite в приложении Xamarin. iOS.
 ms.prod: xamarin
 ms.assetid: F10C0C57-7BDE-A3F3-B011-9839949D15C8
 ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 11/25/2015
-ms.openlocfilehash: 736d70aebcf861b5557d5f076a42ff0a3dcfc043
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: eb3453c3475fdc2e309a888a1aa1318eccc59228
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569961"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938740"
 ---
 # <a name="systemdata-in-xamarinios"></a>System. Data в Xamarin. iOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "84569961"
 
 Сначала щелкните правой кнопкой мыши узел **ссылки** и выберите **изменить ссылки...** , а затем выберите `System.Data` и `Mono.Data.Sqlite` :
 
-[![](system.data-images/edit-references-sml.png "Adding new references")](system.data-images/edit-references.png#lightbox)
+[![Добавление новых ссылок](system.data-images/edit-references-sml.png)](system.data-images/edit-references.png#lightbox)
 
 ### <a name="sample-code"></a>Пример кода
 
@@ -139,7 +139,7 @@ using (var addCmd = conn.CreateCommand ()) {
 
 ### <a name="systemdata"></a>System.Data
 
-Функции, отсутствующие в **System. Data. dll** , состоят из следующих компонентов:
+Функции, отсутствующие в **System.Data.dll** , состоят из следующих компонентов:
 
 - Все, что требует [System. CodeDom](xref:System.CodeDom) (например,  [System. Data. TypedDataSetGenerator](xref:System.Data.TypedDataSetGenerator) )
 - Поддержка XML-файлов конфигурации (например,  [System. Data. Common. дбпровидерконфигуратионхандлер](xref:System.Data.Common.DbProviderConfigurationHandler) )
@@ -152,7 +152,7 @@ using (var addCmd = conn.CreateCommand ()) {
 
 ### <a name="monodatasqlite"></a>Mono. Data. SQLite
 
-В то же время, **Mono. Data. SQLite. dll** не имеет изменений исходного кода, но вместо этого может размещаться ряд проблем со *временем выполнения* , начиная с `Mono.Data.Sqlite.dll` привязки SQLite 3,5. с iOS 8, в то же время поставляется с SQLite 3.8.5. Достаточно сказать, что некоторые вещи изменились между двумя версиями.
+В то же время **Mono.Data.Sqlite.dll** не изменяла исходный код, но вместо этого может размещаться ряд проблем со *временем выполнения* , начиная с `Mono.Data.Sqlite.dll` привязки SQLite 3,5. с iOS 8, в то же время поставляется с SQLite 3.8.5. Достаточно сказать, что некоторые вещи изменились между двумя версиями.
 
 Более старая версия iOS поставляется со следующими версиями SQLite:
 

@@ -10,12 +10,12 @@ ms.date: 02/26/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 50f605f4ad9839521fd4169531ad46d197f20dbf
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 5e3153e796f26ef150dccc79d8ea6f90127c6a26
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139672"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938688"
 ---
 # <a name="xamarinforms-picker"></a>Xamarin.FormsПрисутствует
 
@@ -38,15 +38,15 @@ Xamarin.Forms [`Picker`](xref:Xamarin.Forms.Picker) Отображает кор�
 
 [`Picker`](xref:Xamarin.Forms.Picker)При первом отображении объект не отображает никаких данных. Вместо этого значение его [`Title`](xref:Xamarin.Forms.Picker.Title) Свойства отображается в виде заполнителя на платформах iOS и Android:
 
-[![](images/picker-initial.png "Initial Picker Display")](images/picker-initial-large.png#lightbox "Initial Picker Display")
+[![Отображение исходного окна выбора](images/picker-initial.png)](images/picker-initial-large.png#lightbox "Отображение исходного окна выбора")
 
 Когда [`Picker`](xref:Xamarin.Forms.Picker) фокус на прибыль, его данные отображаются и пользователь может выбрать элемент:
 
-[![](images/picker-selection.png "Picker Selecting an Item")](images/picker-selection-large.png#lightbox "Picker Selecting an Item")
+[![Выбор элемента в средстве выбора](images/picker-selection.png)](images/picker-selection-large.png#lightbox "Выбор элемента в средстве выбора")
 
 [`Picker`](xref:Xamarin.Forms.Picker) [`SelectedIndexChanged`](xref:Xamarin.Forms.Picker.SelectedIndexChanged) Компонент запускает событие, когда пользователь выбирает элемент. После выбора выбранный элемент отображается в `Picker` :
 
-![](images/picker-after-selection.png "Picker after Selection")
+![Средство выбора после выбора](images/picker-after-selection.png)
 
 Существует два способа заполнения [`Picker`](xref:Xamarin.Forms.Picker) данными с помощью:
 

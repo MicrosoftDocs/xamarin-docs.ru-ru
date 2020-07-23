@@ -19,7 +19,7 @@ ms.locfileid: "86935568"
 ---
 # <a name="customizing-listview-cell-appearance"></a>Настройка внешнего вида ячеек ListView
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-customcells)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-customcells)
 
 Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Класс используется для представления прокручиваемых списков, которые можно настроить с помощью `ViewCell` элементов. `ViewCell`Элемент может отображать текст и изображения, указывать состояние true/false и принимать входные данные пользователя.
 

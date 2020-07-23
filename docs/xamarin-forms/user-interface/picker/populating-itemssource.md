@@ -10,12 +10,12 @@ ms.date: 02/26/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8c4fc732082a77a2e471465af448a487862b513c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a15ca2e11dabb73054f5f0a1dc3f79342d8ce7f5
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136296"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938610"
 ---
 # <a name="setting-a-pickers-itemssource-property"></a>Задание свойства ItemsSource средства выбора
 
@@ -178,7 +178,7 @@ detailsLabel.SetBinding(Label.TextProperty, "SelectedMonkey.Details");
 
 [`SelectedItem`](xref:Xamarin.Forms.Picker.SelectedItem)Данные свойства привязываются к `SelectedMonkey` свойству подключенной модели представления, имеющей тип `Monkey` . Таким образом, когда пользователь выбирает элемент в [`Picker`](xref:Xamarin.Forms.Picker) , `SelectedMonkey` для свойства будет задан выбранный `Monkey` объект. `SelectedMonkey`Данные объекта отображаются в пользовательском интерфейсе в [`Label`](xref:Xamarin.Forms.Label) и [`Image`](xref:Xamarin.Forms.Image) представления:
 
-![](populating-itemssource-images/monkeys.png "Picker Item Selection")
+![Выбор элемента средства выбора](populating-itemssource-images/monkeys.png)
 
 > [!NOTE]
 > Обратите внимание, что [`SelectedItem`](xref:Xamarin.Forms.Picker.SelectedItem) [`SelectedIndex`](xref:Xamarin.Forms.Picker.SelectedIndex) Свойства и поддерживают двустороннюю привязку по умолчанию.

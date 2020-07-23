@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0eb3b4a6b37d59363984c9248cc39de91a6819e0
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: ed20da1005447334a99ea40c177c8f88d59d71ce
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138259"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938480"
 ---
 # <a name="the-translate-transform"></a>Преобразование переноса
 
@@ -27,7 +27,7 @@ _Сведения об использовании преобразования "
 
 Перевод также полезен для анимации и для простых текстовых эффектов:
 
-![](translate-images/translateexample.png "Text shadow, engraving, and embossing with translation")
+![Тень текста, енгравинга и тиснение с помощью перевода](translate-images/translateexample.png)
 
 [`Translate`](xref:SkiaSharp.SKCanvas.Translate(System.Single,System.Single))Метод в `SKCanvas` имеет два параметра, которые приводят к тому, что графические объекты будут сдвинуты по горизонтали и вертикали:
 
@@ -74,7 +74,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Последовательные прямоугольники тонкого вниз на странице:
 
-[![](translate-images/accumulatedtranslate-small.png "Triple screenshot of the Accumulated Translate page")](translate-images/accumulatedtranslate-large.png#lightbox "Triple screenshot of the Accumulated Translate page")
+[![Тройной снимок экрана страницы "накопленный перевод"](translate-images/accumulatedtranslate-small.png)](translate-images/accumulatedtranslate-large.png#lightbox "Тройной снимок экрана страницы "накопленный перевод"")
 
 Если накопленные коэффициенты перевода имеют значение `dx` и `dy` , а точка, указанная в функции рисования, имеет значение ( `x` , `y` ), то графический объект визуализируется в точке ( `x'` , `y'` ), где:
 
@@ -131,7 +131,7 @@ using (SKPaint textPaint = new SKPaint())
 
 В каждом из трех примеров `Translate` вызывается для отображения текста, который будет смещен из расположения, заданного `x` `y` переменными и. Затем текст отображается еще раз в другом цвете без эффектов перевода:
 
-[![](translate-images/translatetexteffects-small.png "Triple screenshot of the Translate Text Effects page")](translate-images/translatetexteffects-large.png#lightbox "Triple screenshot of the Translate Text Effects page")
+[![Тройной снимок экрана со страницей "перевод текстовых эффектов"](translate-images/translatetexteffects-small.png)](translate-images/translatetexteffects-large.png#lightbox "Тройной снимок экрана со страницей "перевод текстовых эффектов"")
 
 В каждом из трех примеров показан другой способ отрицания `Translate` вызова:
 
@@ -215,9 +215,9 @@ public class HendecagramArrayPage : ContentPage
 
 ```
 
-Ниже приведен результат.
+Ниже приведен результат:
 
-[![](translate-images/hendecagramarray-small.png "Triple screenshot of the Hendecagram Array page")](translate-images/hendecagramarray-large.png#lightbox "Triple screenshot of the Hendecagram Array page")
+[![Тройной снимок экрана со страницей массива Хендекаграм](translate-images/hendecagramarray-small.png)](translate-images/hendecagramarray-large.png#lightbox "Тройной снимок экрана со страницей массива Хендекаграм")
 
 Анимации часто подразумевают преобразования. Страница **анимации хендекаграм** перемещает звезду, указывающую на 11, вокруг круга. [`HendecagramAnimationPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/HendecagramAnimationPage.cs)Класс начинается с некоторых полей и переопределений `OnAppearing` `OnDisappearing` методов и для запуска и завершения Xamarin.Forms таймера:
 
@@ -302,7 +302,7 @@ public class HendecagramAnimationPage : ContentPage
 
 `PaintSurface`Обработчик вызывает `Translate` метод дважды, сначала для перевода в центр холста, а затем для преобразования окружности окружности вокруг (0,0). Радиус круга установлен как возможный, и по-прежнему удерживает звездочку в пределах страницы:
 
-[![](translate-images/hendecagramanimation-small.png "Triple screenshot of the Hendecagram Animation page")](translate-images/hendecagramanimation-large.png#lightbox "Triple screenshot of the Hendecagram Animation page")
+[![Тройной снимок экрана со страницей анимации Хендекаграм](translate-images/hendecagramanimation-small.png)](translate-images/hendecagramanimation-large.png#lightbox "Тройной снимок экрана со страницей анимации Хендекаграм")
 
 Обратите внимание, что звезда поддерживает ту же ориентацию, что и вокруг центра страницы. Он не вращается вообще. Это задание для преобразования «вращение».
 

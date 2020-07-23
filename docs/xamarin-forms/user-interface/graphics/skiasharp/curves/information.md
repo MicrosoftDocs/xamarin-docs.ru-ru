@@ -10,12 +10,12 @@ ms.date: 09/12/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 931b8d0946f1af5e697e581a04c0feefb31ba2d3
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 4fee695a20cae26537beb30513423492114e5c77
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84131928"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936257"
 ---
 # <a name="path-information-and-enumeration"></a>Сведения о пути и перечисление
 
@@ -29,7 +29,7 @@ _Получение сведений о путях и перечисление �
 
 Также иногда бывает полезно получить все операции рисования и точки, составляющие путь. Сначала это может показаться ненужным: Если программа создала путь, программа уже знает содержимое. Однако вы видели, что пути можно также создавать с помощью [эффектов пути](~/xamarin-forms/user-interface/graphics/skiasharp/curves/effects.md) и путем преобразования [текстовых строк в пути](~/xamarin-forms/user-interface/graphics/skiasharp/curves/text-paths.md). Вы также можете получить все операции рисования и точки, составляющие эти пути. Одна из возможных действий — применение алгоритмного преобразования ко всем точкам, например, для заключения текста вокруг полушария:
 
-![](information-images/pathenumerationsample.png "Text wrapped on a hemisphere")
+![Текст, заключенный в полушарие](information-images/pathenumerationsample.png)
 
 ## <a name="getting-the-path-length"></a>Получение длины пути
 
@@ -115,7 +115,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 `Length`Свойство созданного `SKPathMeasure` объекта получает длину пути. Длина пути делится на `baseTextWidth` значение (ширина текста зависит от размера текста, равного 10), а затем умножается на базовый размер текста, равный 10. В результате получается новый размер текста для отображения текста по этому пути:
 
-[![](information-images/pathlength-small.png "Triple screenshot of the Path Length page")](information-images/pathlength-large.png#lightbox "Triple screenshot of the Path Length page")
+[![Тройной снимок экрана страницы длины пути](information-images/pathlength-small.png)](information-images/pathlength-large.png#lightbox "Тройной снимок экрана страницы длины пути")
 
 Так как кривая Безье становится больше или короче, можно увидеть изменение размера текста.
 
@@ -141,7 +141,7 @@ Boolean GetMatrix (Single distance, out SKMatrix matrix, SKPathMeasureMatrixFlag
 
 Страница **половинной черты уницикле** анимирует фигуру на уницикле, который кажется пере в кривую Безье третьего порядка:
 
-[![](information-images/unicyclehalfpipe-small.png "Triple screenshot of the Unicycle Half-Pipe page")](information-images/unicyclehalfpipe-large.png#lightbox "Triple screenshot of the Unicycle Half-Pipe page")
+[![Тройной снимок экрана страницы Уницикле половина канала](information-images/unicyclehalfpipe-small.png)](information-images/unicyclehalfpipe-large.png#lightbox "Тройной снимок экрана страницы Уницикле половина канала")
 
 `SKPaint`Объект, используемый для обводки половинной черты и уницикле, определяется как поле в `UnicycleHalfPipePage` классе. Также определяется `SKPath` объект для уницикле:
 
@@ -252,7 +252,7 @@ SKPathVerb pathVerb = rawIterator.Next(points);
 
 Иногда желательно применить алгоритмическое преобразование к пути, чтобы малформ его каким-либо образом:
 
-![](information-images/pathenumerationsample.png "Text wrapped on a hemisphere")
+![Текст, заключенный в полушарие](information-images/pathenumerationsample.png)
 
 Большая часть этих букв состоит из прямых линий, но эти прямые линии, очевидно, были изогнуты на кривые. Как это возможно?
 
@@ -441,7 +441,7 @@ static class PathExtensions
 
 В примере **глобулартекст** этот метод расширения используется для заключения текста вокруг полушария в трехмерном эффекте:
 
-[![](information-images/globulartext-small.png "Triple screenshot of the Globular Text page")](information-images/globulartext-large.png#lightbox "Triple screenshot of the Globular Text page")
+[![Тройной снимок экрана с текстовой страницей Глобулар](information-images/globulartext-small.png)](information-images/globulartext-large.png#lightbox "Тройной снимок экрана с текстовой страницей Глобулар")
 
 [`GlobularTextPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/GlobularTextPage.cs)Конструктор класса выполняет это преобразование. Он создает `SKPaint` объект для текста, а затем получает `SKPath` объект из `GetTextPath` метода. Это путь, передаваемый `CloneWithTransform` методу расширения вместе с функцией преобразования:
 

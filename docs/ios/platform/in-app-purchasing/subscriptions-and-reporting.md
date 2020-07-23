@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: 5e1019417ff7ac93abfe2396a4acaa76c66d182f
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+ms.openlocfilehash: 534ecb6a2f779875a6934306c7f9956450d880ed
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725372"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938506"
 ---
 # <a name="subscriptions-and-reporting-in-xamarinios"></a>Подписки и отчеты в Xamarin. iOS
 
@@ -50,17 +50,17 @@ ms.locfileid: "76725372"
 
 На домашней странице iTunes Connect выберите **Мои приложения**:   
 
- [![](subscriptions-and-reporting-images/image2.png "Select My Apps")](subscriptions-and-reporting-images/image2.png#lightbox)  
+ [![Выбрать мои приложения](subscriptions-and-reporting-images/image2.png)](subscriptions-and-reporting-images/image2.png#lightbox)  
 
 Выберите приложение и щелкните вкладку **покупки в приложении** :
 
-[![](subscriptions-and-reporting-images/image6.png "Click on the In-App Purchases tab")](subscriptions-and-reporting-images/image6.png#lightbox)
+[![Щелкните вкладку покупки в приложении.](subscriptions-and-reporting-images/image6.png)](subscriptions-and-reporting-images/image6.png#lightbox)
 
 В нижней части страницы выберите **Просмотреть или создать общий секрет**:
 
- [![](subscriptions-and-reporting-images/image40.png "Select View or generate a shared secret")](subscriptions-and-reporting-images/image40.png#lightbox)
+ [![Выберите Просмотр или создание общего секрета](subscriptions-and-reporting-images/image40.png)](subscriptions-and-reporting-images/image40.png#lightbox)
 
- [![](subscriptions-and-reporting-images/image41.png "Generate a shared secret")](subscriptions-and-reporting-images/image41.png#lightbox)   
+ [![Создание общего секрета](subscriptions-and-reporting-images/image41.png)](subscriptions-and-reporting-images/image41.png#lightbox)   
 
 Чтобы использовать общий секрет, включите его в полезные данные JSON, которые отправляются на серверы Apple при проверке уведомления о покупке в приложении для автоматической подписки устанавливать возобновляемую, например:
 
@@ -108,8 +108,8 @@ iTunes Connect ( [iTunesConnect.Apple.com](https://itunesconnect.apple.com)) п�
 
 Ниже приведен пример отчета о продажах и тенденциях.   
 
- [![](subscriptions-and-reporting-images/image42.png "An example Sales and Trends report")](subscriptions-and-reporting-images/image42.png#lightbox)   
+ [![Пример отчета о продажах и тенденциях](subscriptions-and-reporting-images/image42.png)](subscriptions-and-reporting-images/image42.png#lightbox)   
 
  Существует также приложение **ИТК Connect Mobile** iOS. ниже показаны снимки экрана iPhone для некоторых доступных статистических данных.   
 
- [![](subscriptions-and-reporting-images/image43.png "iPhone screenshots for some of the statistics available")](subscriptions-and-reporting-images/image43.png#lightbox)
+ [![снимки экрана iPhone для некоторых доступных статистических данных](subscriptions-and-reporting-images/image43.png)](subscriptions-and-reporting-images/image43.png#lightbox)

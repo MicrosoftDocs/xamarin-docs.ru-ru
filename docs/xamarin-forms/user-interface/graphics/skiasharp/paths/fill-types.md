@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c8c54f3d3815e418d2f71960dc7733711cb40ae2
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e82572d88e380997fb2435179dba824c1b3f0c2f
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139052"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936192"
 ---
 # <a name="the-path-fill-types"></a>Типы заполнения пути
 
@@ -23,9 +23,9 @@ ms.locfileid: "84139052"
 
 _Узнайте о различных эффектах, возможных для типов заливки пути SkiaSharp_
 
-Два контура в контуре могут перекрываться, а линии, составляющие один контур, могут перекрываться. Любая заданная область может быть заполнена, но вы можете не заполнять все закрытые области. Ниже приведен пример:
+Два контура в контуре могут перекрываться, а линии, составляющие один контур, могут перекрываться. Любая заданная область может быть заполнена, но вы можете не заполнять все закрытые области. Ниже приведен пример.
 
-![](fill-types-images/filltypeexample.png "Five-pointed star partially filles")
+![Пять, указывающие на частичное заполнение звезды](fill-types-images/filltypeexample.png)
 
 У вас есть небольшой контроль над этим. Алгоритм заполнения регулируется [`SKFillType`](xref:SkiaSharp.SKPath.FillType) свойством `SKPath` , для которого задается член [`SKPathFillType`](xref:SkiaSharp.SKPathFillType) перечисления:
 
@@ -173,7 +173,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Как правило, тип заливки пути должен влиять только на заливки и не штрихи, но два `Inverse` режима влияют как на заливку, так и на штрихи. Для заливок два типа заполняют `Inverse` области в обратном направлении, чтобы заполнить область за пределами звезды. Для штрихов в двух `Inverse` типах цвета все, кроме штриха. Использование этих типов необратных заливок может привести к нечетным результатам, так как на снимке экрана iOS показано следующее:
 
-[![](fill-types-images/fivepointedstar-small.png "Triple screenshot of the Five-Pointed Star page")](fill-types-images/fivepointedstar-large.png#lightbox "Triple screenshot of the Five-Pointed Star page")
+[![Тройной снимок экрана с пятью страницами со звездочкой](fill-types-images/fivepointedstar-small.png)](fill-types-images/fivepointedstar-large.png#lightbox "Тройной снимок экрана с пятью страницами со звездочкой")
 
 На снимке экрана Android показаны типичные эффекты «четный-нечетный» и «обмотка», но порядок штрихов и заливки также влияет на результаты.
 
@@ -226,7 +226,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Это интересный образ, созданный с минимальным объемом кода:
 
-[![](fill-types-images/overlappingcircles-small.png "Triple screenshot of the Overlapping Circles page")](fill-types-images/overlappingcircles-large.png#lightbox "Triple screenshot of the Overlapping Circles page")
+[![Тройной снимок экрана перекрывающейся страницы кругов](fill-types-images/overlappingcircles-small.png)](fill-types-images/overlappingcircles-large.png#lightbox "Тройной снимок экрана перекрывающейся страницы кругов")
 
 ## <a name="related-links"></a>Связанные ссылки
 

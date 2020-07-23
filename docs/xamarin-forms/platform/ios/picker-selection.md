@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 75ef118b642a8c6a66205c6f7e3bc03089c6593c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: f7149a818506611176f7c34a6fae4ec733cd2ad9
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84127898"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938571"
 ---
 # <a name="picker-item-selection-on-ios"></a>Выбор элемента средства выбора в iOS
 
@@ -66,7 +66,7 @@ switch (picker.On<iOS>().UpdateMode())
 
 В результате заданный объект `UpdateMode` применяется к элементу [`Picker`](xref:Xamarin.Forms.Picker) управления, который управляет тем, когда происходит выбор элементов:
 
-[![](picker-selection-images/picker-updatemode.png "Picker UpdateMode Platform-Specific")](picker-selection-images/picker-updatemode-large.png#lightbox "Picker UpdateMode Platform-Specific")
+[![Средство выбора UpdateMode для конкретной платформы](picker-selection-images/picker-updatemode.png)](picker-selection-images/picker-updatemode-large.png#lightbox "Средство выбора UpdateMode для конкретной платформы")
 
 ## <a name="related-links"></a>Связанные ссылки
 

@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 93b4dba3e8543bd2cc2a4f2187f617aae5daff77
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: d8ca0dfb533dc5fb0b7442b85de41dcf7c18fec8
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137076"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938545"
 ---
 # <a name="slider-thumb-tap-on-ios"></a>Бегунок ползунка в iOS
 
@@ -48,7 +48,7 @@ slider.On<iOS>().SetUpdateOnTap(true);
 
 В результате касание на [`Slider`](xref:Xamarin.Forms.Slider) полосе может переместить `Slider` бегунок и установить [`Slider.Value`](xref:Xamarin.Forms.Slider.Value) свойство:
 
-![](slider-thumb-images/slider-updateontap.png "Slider Update on Tap enabled")
+![Ползунок обновляется при нажатии кнопки "включено"](slider-thumb-images/slider-updateontap.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 

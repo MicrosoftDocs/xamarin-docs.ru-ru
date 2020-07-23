@@ -10,12 +10,12 @@ ms.date: 08/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b0cbb7d26a2aea02a3255fc75947c20a3d803b86
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e0964ad7d2bf517a6a4c7cf7965c346629716166
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84131902"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936023"
 ---
 # <a name="paths-and-text-in-skiasharp"></a>Пути и текст в SkiaSharp
 
@@ -29,7 +29,7 @@ _Изучение пересечения путей и текста_
 
 Помимо использования эффекта контура для обводки контура символов, можно также создать эффекты контуров, основанные на пути, который является производным от символьной строки, и можно даже объединить два эффекта:
 
-![](text-paths-images/pathsandtextsample.png "Text Path Effect")
+![Результат текстового пути](text-paths-images/pathsandtextsample.png)
 
 В предыдущей статье, посвященной [**влиянию пути**](effects.md), вы увидели, как [`GetFillPath`](xref:SkiaSharp.SKPaint.GetFillPath(SkiaSharp.SKPath,SkiaSharp.SKPath,SkiaSharp.SKRect,System.Single)) метод `SKPaint` может получить контур контура с обводкой. Этот метод также можно использовать с путями, полученными из контуров символов.
 
@@ -49,7 +49,7 @@ public SKPath GetTextPath (String text, Single x, Single y)
 
 Одна из этих задач обрезается. На странице **Обрезка текста** создается обтравочный контур на основе символов слова «Code». Этот путь растягивается до размера страницы для обрезки точечного рисунка, содержащего изображение исходного **текста обрезки** :
 
-[![](text-paths-images/clippingtext-small.png "Triple screenshot of the Clipping Text page")](text-paths-images/clippingtext-large.png#lightbox "Triple screenshot of the Clipping Text page")
+[![Тройной снимок экрана со страницей обрезки текста](text-paths-images/clippingtext-small.png)](text-paths-images/clippingtext-large.png#lightbox "Тройной снимок экрана со страницей обрезки текста")
 
 [`ClippingTextPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ClippingTextPage.cs)Конструктор класса загружает точечный рисунок, который хранится в виде внедренного ресурса в папке **мультимедиа** решения:
 
@@ -129,7 +129,7 @@ public class ClippingTextPage : ContentPage
 
 На странице **эффектов текстового пути** один символ амперсанда преобразуется в путь для создания результата одномерного пути. Объект Paint с этим результатом будет использоваться для обводки контура более крупной версии того же символа:
 
-[![](text-paths-images/textpatheffect-small.png "Triple screenshot of the Text Path Effect page")](text-paths-images/textpatheffect-large.png#lightbox "Triple screenshot of the Text Path Effect page")
+[![Тройной снимок экрана со страницей эффектов текстового контура](text-paths-images/textpatheffect-small.png)](text-paths-images/textpatheffect-large.png#lightbox "Тройной снимок экрана со страницей эффектов текстового контура")
 
 Большая часть работы в [`TextPathEffectPath`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/TextPathEffectPage.cs) классе возникает в полях и конструкторе. Два `SKPaint` объекта, определенные как поля, используются в двух разных целях: первый (именованный `textPathPaint` ) используется для преобразования амперсанда с `TextSize` 50 в путь для результата одномерного пути. Вторая ( `textPaint` ) используется для вывода более крупной версии амперсанда с этим результатом. По этой причине для второго объекта Paint задается значение `Style` `Stroke` , но `StrokeWidth` свойство не задано, так как это свойство не требуется при использовании результата 1d-пути:
 
@@ -274,7 +274,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 `PaintSurface`Затем обработчик создает новый путь с именем `outlinePath` . Он преобразуется в целевой путь в вызове `GetFillPath` . `StrokeWidth`Свойство, состоящего из 25, приводит `outlinePath` к тому, что контур на уровне 25 пикселей обозначается обводками текстовых символов. Этот контур отображается красным цветом со штриховым штрихом, равным 5:
 
-[![](text-paths-images/characteroutlineoutlines-small.png "Triple screenshot of the Character Outline Outlines page")](text-paths-images/characteroutlineoutlines-large.png#lightbox "Triple screenshot of the Character Outline Outlines page")
+[![Тройной снимок экрана со страницей структуры символов](text-paths-images/characteroutlineoutlines-small.png)](text-paths-images/characteroutlineoutlines-large.png#lightbox "Тройной снимок экрана со страницей структуры символов")
 
 Внимательно взгляните, и вы увидите перекрытие, где контур контура образует острый угол. Это обычные компоненты этого процесса.
 
@@ -327,7 +327,7 @@ public class CircularTextPage : ContentPage
 
 `TextSize`Свойство объекта `textPaint` корректируется таким образом, чтобы ширина текста совпадала с окружностью окружности:
 
-[![](text-paths-images/circulartext-small.png "Triple screenshot of the Circular Text page")](text-paths-images/circulartext-large.png#lightbox "Triple screenshot of the Circular Text page")
+[![Тройной снимок экрана круглой текстовой страницы](text-paths-images/circulartext-small.png)](text-paths-images/circulartext-large.png#lightbox "Тройной снимок экрана круглой текстовой страницы")
 
 Сам текст был выбран и в некоторой степени круга: слово «Circle» является как темой предложения, так и объектом предположенной фразы.
 

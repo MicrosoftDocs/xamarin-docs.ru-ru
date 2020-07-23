@@ -10,12 +10,12 @@ ms.date: 03/28/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cf95427807e0179a608b428bc7e02499c9616fe7
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cee301178880a62695f4208161965b01bb6f522e
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139156"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938597"
 ---
 # <a name="consume-a-windows-communication-foundation-wcf-web-service"></a>Использование веб-службы Windows Communication Foundation (WCF)
 
@@ -41,7 +41,7 @@ WCF описывает службу с различными контрактам
 
 Решение примера приложения включает службу WCF, которая может быть запущена локально и показана на следующем снимке экрана:
 
-![](wcf-images/portal.png "Sample Application")
+![Образец приложения](wcf-images/portal.png)
 
 > [!NOTE]
 > В iOS 9 и более поздних версиях Защита транспорта приложений (ATS) обеспечивает безопасное подключение между Интернет-ресурсами (например, серверным сервером приложения) и приложением, тем самым предотвращая случайное раскрытие конфиденциальной информации. Поскольку ATS включена по умолчанию в приложениях, созданных для iOS 9, все подключения будут подвергаться требованиям безопасности ATS. Если соединения не соответствуют этим требованиям, они завершатся сбоем с исключением.

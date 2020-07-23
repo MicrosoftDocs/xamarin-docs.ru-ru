@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ee97ee2aae11e4e54a0d25e80ffd7bce301fa2f3
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a98c7210f2e71f6f26d53da3555f3f9b5e016952
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137687"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86935984"
 ---
 # <a name="integrating-text-and-graphics"></a>Интеграция текста и графики
 
@@ -25,7 +25,7 @@ _См. раздел Определение размера отображаемо
 
 В этой статье показано, как измерять текст, масштабировать текст до определенного размера и интегрировать текст с другими рисунками:
 
-![](text-images/textandgraphicsexample.png "Text surrounded by rectangles")
+![Текст, окруженный прямоугольниками](text-images/textandgraphicsexample.png)
 
 Этот образ также содержит скругленный прямоугольник. Класс SkiaSharp `Canvas` содержит [`DrawRect`](xref:SkiaSharp.SKCanvas.DrawRect*) методы для рисования прямоугольника и [`DrawRoundRect`](xref:SkiaSharp.SKCanvas.DrawRoundRect*) методов для рисования прямоугольника со скругленными углами. Эти методы позволяют прямоугольнику определяться как `SKRect` значение или другими способами.
 
@@ -126,7 +126,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Далее, оставшаяся часть метода имеет прямую переадресацию. Он создает другой `SKPaint` объект для границ и вызывает его `DrawRoundRect` дважды. Второй вызов использует прямоугольник, который расширяется другими 10 пикселами. Первый вызов задает радиус угла 20 пикселей. Второй угол имеет радиус угла 30 пикселей, поэтому они выглядят параллельно:
 
- [![](text-images/framedtext-small.png "Triple screenshot of the Framed Text page")](text-images/framedtext-large.png#lightbox "Triple screenshot of the Framed Text page")
+ [![Тройной снимок экрана с текстовой страницей в рамке](text-images/framedtext-small.png)](text-images/framedtext-large.png#lightbox "Тройной снимок экрана с текстовой страницей в рамке")
 
 Вы можете превратить свой телефон или симулятор в сторону, чтобы увеличить размер текста и фрейма.
 
@@ -134,7 +134,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Текст может обрабатываться во многом подобно любому другому графическому объекту. Один из простых вариантов — отображение контура текстовых символов:
 
-[![](text-images/outlinedtext-small.png "Triple screen shot of the Outlined Text page")](text-images/outlinedtext-large.png#lightbox "Triple screenshot of the Outlined Text page")
+[![Тройной снимок страницы «Контурная текстовая страница»](text-images/outlinedtext-small.png)](text-images/outlinedtext-large.png#lightbox "Тройной снимок экрана с выставляемой страницей текста")
 
 Для этого достаточно изменить значение свойства "Обычная" `Style` `SKPaint` объекта с установленного по умолчанию `SKPaintStyle.Fill` на `SKPaintStyle.Stroke` , а также задать толщину штриха. `PaintSurface`Обработчик **текстовой** страницы показывает, как это делается:
 

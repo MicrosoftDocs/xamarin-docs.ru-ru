@@ -10,12 +10,12 @@ ms.date: 02/17/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2a222c3ee2234904cce94b52a14654728a1aa6d1
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: ae3759c1e111906b82596af80d4bdcffd5d23305
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84140131"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938532"
 ---
 # <a name="global-styles-in-xamarinforms"></a>Глобальные стили вXamarin.Forms
 
@@ -65,7 +65,7 @@ _Стили можно сделать доступными глобально, �
 
 Результат показан на следующих снимках экрана.
 
-[![](application-images/application-styles-1.png "Global Styles Example")](application-images/application-styles-1-large.png#lightbox "Global Styles Example")
+[![Пример глобальных стилей](application-images/application-styles-1.png)](application-images/application-styles-1-large.png#lightbox "Пример глобальных стилей")
 
 Сведения о создании стилей в странице [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) см. в разделе [явные стили](~/xamarin-forms/user-interface/styles/explicit.md) и [Неявные стили](~/xamarin-forms/user-interface/styles/implicit.md).
 
@@ -103,7 +103,7 @@ _Стили можно сделать доступными глобально, �
 
 Исходный объект `buttonStyle` , определенный на уровне приложения, переопределяется `buttonStyle` экземпляром, определенным на уровне страницы. Кроме того, стиль уровня страницы переопределяется уровнем управления `buttonStyle` . Таким образом, [`Button`](xref:Xamarin.Forms.Button) экземпляры отображаются синим текстом, как показано на следующих снимках экрана:
 
-[![](application-images/application-styles-2.png "Overriding Styles Example")](application-images/application-styles-2-large.png#lightbox "Overriding Styles Example")
+[![Пример переопределения стилей](application-images/application-styles-2.png)](application-images/application-styles-2-large.png#lightbox "Пример переопределения стилей")
 
 ## <a name="create-a-global-style-in-c35"></a>Создание глобального стиля на языке C&#35;
 
