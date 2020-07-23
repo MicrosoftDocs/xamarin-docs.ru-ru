@@ -11,12 +11,12 @@ ms.date: 11/28/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c7f5979b93ff35b14ec7c13418a4565604f46bd7
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: d2bd0bf696e652e95e0feb88cca7cf685b14433b
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84570639"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936504"
 ---
 # <a name="application-indexing-and-deep-linking"></a>Индексирование приложения и создание прямых ссылок
 
@@ -32,7 +32,7 @@ _Индексирование приложения позволяет прило
 
 В этом примере представлено приложение списка задач, где данные сохраняются в локальной базе данных SQLite, как показано на следующих снимках экрана:
 
-![](deep-linking-images/screenshots.png "TodoList Application")
+![Приложение TodoList](deep-linking-images/screenshots.png)
 
 Каждый экземпляр `TodoItem`, созданный пользователем, индексируется. Механизм поиска, определяемый платформой, может использоваться для поиска индексированных данных из приложения. Когда пользователь выбирает элемент в результатах поиска для приложения, приложение запускается, осуществляется переход к `TodoItemPage` и отображается элемент `TodoItem`, на который ссылается прямая ссылка.
 
@@ -141,7 +141,7 @@ Application.Current.AppLinks.RegisterLink (appLink);
 
 После регистрации экземпляра [`AppLinkEntry`](xref:Xamarin.Forms.AppLinkEntry) для индексирования он может отображаться в результатах поиска. На следующем снимке экрана показано индексированное содержимое, отображаемое в результатах поиска на платформе iOS:
 
-![](deep-linking-images/ios-search.png "Indexed Content in Search Results on iOS")
+![Индексированное содержимое в результатах поиска в iOS](deep-linking-images/ios-search.png)
 
 ## <a name="de-registering-indexed-content"></a>Отмена регистрации индексированного содержимого
 

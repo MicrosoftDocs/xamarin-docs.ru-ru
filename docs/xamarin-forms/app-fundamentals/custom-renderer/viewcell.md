@@ -10,12 +10,12 @@ ms.date: 12/07/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c908da816352e8b3790ded0bef932e1485170abd
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: bb6167eae394b41583195911bfac9d691e48d361
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84573876"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929380"
 ---
 # <a name="customizing-a-viewcell"></a>Настройка ViewCell
 
@@ -27,7 +27,7 @@ _ViewCell в Xamarin.Forms — это ячейка, которую можно д
 
 На следующей схеме показана связь между классом [`ViewCell`](xref:Xamarin.Forms.ViewCell) и соответствующими собственными элементами управления, которые его реализуют:
 
-![](viewcell-images/viewcell-classes.png "Relationship Between the ViewCell Control and the Implementing Native Controls")
+![Связь между элементом управления ViewCell и реализацией нативных элементов управления](viewcell-images/viewcell-classes.png)
 
 Процесс отрисовки можно использовать для реализации настроек конкретных платформ путем создания пользовательского отрисовщика для [`ViewCell`](xref:Xamarin.Forms.ViewCell) на каждой платформе. Этот процесс выглядит следующим образом:
 
@@ -164,11 +164,11 @@ public class NativeCellPageCS : ContentPage
 
 На следующей схеме показаны обязанности каждого проекта в примере приложения, а также связи между ними:
 
-![](viewcell-images/solution-structure.png "NativeCell Custom Renderer Project Responsibilities")
+![Задачи проекта пользовательского отрисовщика NativeCell](viewcell-images/solution-structure.png)
 
 Пользовательская ячейка `NativeCell` отрисовывается с помощью зависящих от платформы классов отрисовщика, которые являются производными от класса `ViewCellRenderer` каждой платформы. Это приводит к тому, что каждая пользовательская ячейка `NativeCell` отрисовывается с помощью зависящих от платформы макетов, как показано на следующих снимках экрана.
 
-![](viewcell-images/screenshots.png "NativeCell on each Platform")
+![NativeCell на каждой платформе](viewcell-images/screenshots.png)
 
 Класс `ViewCellRenderer` предоставляет зависящие от платформы методы для отрисовки пользовательской ячейки. Метод `GetCell` предназначен для платформы iOS, метод `GetCellCore` — для платформы Android, а метод `GetTemplate` — для универсальной платформы Windows.
 

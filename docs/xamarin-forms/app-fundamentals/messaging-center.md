@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — MessagingCenter" description: "Класс MessagingCenter в Xamarin.Forms реализует шаблон "публикация-подписка", который обеспечивает взаимодействие на основе сообщений между компонентами, которые неудобно связывать по ссылкам объектов и типов".'
-description: 'ms.prod: xamarin ms.assetid: EDFE7B19-C5FD-40D5-816C-FAE56532E885 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 10/08/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Xamarin.Forms MessagingCenter
+description: Класс MessagingCenter в Xamarin.Forms реализует шаблон "публикация-подписка", который обеспечивает взаимодействие на основе сообщений между компонентами, которые неудобно связывать по ссылкам объектов и типов.
 ms.prod: xamarin
 ms.assetid: EDFE7B19-C5FD-40D5-816C-FAE56532E885
 ms.technology: xamarin-forms
@@ -10,12 +10,12 @@ ms.date: 10/08/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d1407c3c948afe764854cbd99f5c29332f7041aa
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: c817936c77764b95842226b9a9a31c26667d6d0f
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84137544"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937453"
 ---
 # <a name="xamarinforms-messagingcenter"></a>Xamarin.Forms MessagingCenter
 
@@ -29,7 +29,7 @@ ms.locfileid: "84137544"
 
 Класс [`MessagingCenter`](xref:Xamarin.Forms.MessagingCenter) предоставляет функцию многоадресной публикации и подписки. Это означает, что может существовать несколько издателей, которые публикуют одно сообщение, и может быть несколько подписчиков, прослушивающих одно и то же сообщение:
 
-![](messaging-center-images/messaging-center.png "Multicast publish-subscribe functionality")
+![Функция многоадресной публикации и подписки](messaging-center-images/messaging-center.png)
 
 Издатели отправляют сообщения с помощью метода [`MessagingCenter.Send`](xref:Xamarin.Forms.MessagingCenter.Send*), а подписчики прослушивают сообщения с помощью метода [`MessagingCenter.Subscribe`](xref:Xamarin.Forms.MessagingCenter.Subscribe*). Кроме того, подписчики могут также отменять подписку на сообщения, если это необходимо, с помощью метода [`MessagingCenter.Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*).
 

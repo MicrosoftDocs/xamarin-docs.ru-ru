@@ -10,12 +10,12 @@ ms.date: 11/29/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: dc28cdaf78c72c219706a30c30af7f90ae7c4eec
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 8892a49f2d7d93f8310293bc70d5e1acdfabe3f5
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84569625"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937089"
 ---
 # <a name="customizing-a-listview"></a>Настройка ListView
 
@@ -27,7 +27,7 @@ _Xamarin.Forms ListView — это представление, в котором
 
 На следующей схеме показана связь между элементом управления [`ListView`](xref:Xamarin.Forms.ListView) и соответствующими собственными элементами управления, которые его реализуют:
 
-![](listview-images/listview-classes.png "Relationship Between the ListView Control and the Implementing Native Controls")
+![Связь между элементом управления ListView и реализацией нативных элементов управления](listview-images/listview-classes.png)
 
 Процесс отрисовки можно использовать для реализации настроек конкретных платформ путем создания пользовательского отрисовщика для [`ListView`](xref:Xamarin.Forms.ListView) на каждой платформе. Этот процесс выглядит следующим образом:
 
@@ -152,11 +152,11 @@ public class MainPageCS : ContentPage
 
 На следующей схеме показаны обязанности каждого проекта в примере приложения, а также связи между ними:
 
-![](listview-images/solution-structure.png "NativeListView Custom Renderer Project Responsibilities")
+![Задачи проекта пользовательского отрисовщика NativeListView](listview-images/solution-structure.png)
 
 Пользовательский элемент управления `NativeListView` отрисовывается с помощью зависящих от платформы классов отрисовщика, которые являются производными от класса `ListViewRenderer` каждой платформы. Это приводит к тому, что каждый пользовательский элемент управления `NativeListView` отрисовывается с помощью зависящих от платформы элементов управления "Список" и собственных макетов ячеек, как показано на следующих снимках экрана.
 
-![](listview-images/screenshots.png "NativeListView on each Platform")
+![NativeListView на каждой платформе](listview-images/screenshots.png)
 
 Класс `ListViewRenderer` предоставляет метод `OnElementChanged`, который вызывается при создании пользовательского элемента управления Xamarin.Forms для отрисовки соответствующего собственного элемента управления. Этот метод принимает параметр `ElementChangedEventArgs`, содержащий свойства `OldElement` и `NewElement`. Эти свойства представляют элемент Xamarin.Forms, к которому *был* присоединен отрисовщик, и элемент Xamarin.Forms, к которому *присоединен* отрисовщик, соответственно. В примере приложения свойство `OldElement` будет иметь значение `null`, а свойство `NewElement` будет содержать ссылку на экземпляр `NativeListView`.
 

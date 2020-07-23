@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 06/22/2018
-ms.openlocfilehash: 72e0a2adc79796b3df7b6fb4eca62448f1a1a7a4
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 0b0bfc650ffa271a7616d7c6e6a436fafa2664c8
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79510735"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86932604"
 ---
 # <a name="set-up-device-for-development"></a>Настройка устройства для разработки
 
@@ -77,7 +77,7 @@ _В этой статье рассказывается о том, как нас�
 
 Вы получите запрос на доверие компьютеру на устройстве, если вы еще не использовали его для отладки. Можно также установить флажок **Всегда разрешать этот компьютер**, чтобы этот запрос не появлялся при каждом подключении устройства.
 
-![](set-up-device-for-development-images/trust-computer-for-usb-debugging.png "Google USB")
+![Google USB](set-up-device-for-development-images/trust-computer-for-usb-debugging.png)
 
 ## <a name="alternate-connection-via-wifi"></a>Альтернативное подключение через Wi-Fi
 
@@ -149,7 +149,7 @@ _В этой статье рассказывается о том, как нас�
 
 Установите пакет **USB-драйвера Google**, запустив диспетчер пакетов SDK для Android и открыв папку **Дополнения**, как показано на следующем снимке экрана:
 
-![](set-up-device-for-development-images/google-usb-driver.png "Google USB driver selected")
+![Выбран USB-драйвер Google](set-up-device-for-development-images/google-usb-driver.png)
 
 Установите флажок **USB-драйвер Google** и нажмите кнопку **Применить изменения**.
 Файлы драйверов будут скачаны в следующую папку:

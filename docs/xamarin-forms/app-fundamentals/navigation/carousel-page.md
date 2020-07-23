@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — страница карусели" description: "CarouselPage в Xamarin.Forms — это страница, по которой пользователи могут проводить из стороны в сторону, чтобы переходить по страницам содержимого, например по страницам коллекции.'
-description: 'В этой статье демонстрируется использование CarouselPage для перехода по коллекции страниц". ms.prod: xamarin ms.assetid: 2D14FC9D-DF5F-427E-9006-2AAE61ECF8DC ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/01/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Страница карусели в Xamarin.Forms
+description: CarouselPage в Xamarin.Forms — это страница, по которой пользователи могут проводить из стороны в сторону, чтобы переходить по страницам содержимого, например по страницам коллекции. В этой статье демонстрируется использование CarouselPage для перехода по коллекции страниц.
 ms.prod: xamarin
 ms.assetid: 2D14FC9D-DF5F-427E-9006-2AAE61ECF8DC
 ms.technology: xamarin-forms
@@ -10,12 +10,12 @@ ms.date: 12/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 896f652d69bca0f186e53185926ee5c46d87fa7c
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: c234af1a5d47446149c92a71e9ce592dc0366b8f
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84570678"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937466"
 ---
 # <a name="xamarinforms-carousel-page"></a>Страница карусели в Xamarin.Forms
 
@@ -28,15 +28,15 @@ _CarouselPage в Xamarin.Forms — это страница, по которой 
 
 На следующих снимках экрана показана страница [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) на каждой платформе.
 
-![](carousel-page-images/thirdpage.png "CarouselPage Third Item")
+![Третий элемент CarouselPage](carousel-page-images/thirdpage.png)
 
 Макет [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) одинаков на каждой платформе. По страницам можно переходить, проводя по экрану вправо для перехода вперед по коллекции или влево для перехода назад. На следующих снимках экрана показана первая страница в экземпляре [`CarouselPage`](xref:Xamarin.Forms.CarouselPage).
 
-![](carousel-page-images/firstpage.png "CarouselPage First Item")
+![Первый элемент CarouselPage](carousel-page-images/firstpage.png)
 
 Если провести по экрану пальцем справа налево, будет выполнен переход ко второй странице, как показано на следующих снимках экрана.
 
-![](carousel-page-images/secondpage.png "CarouselPage Second Item")
+![Второй элемент CarouselPage](carousel-page-images/secondpage.png)
 
 Если провести по экрану пальцем справа налево еще раз, будет выполнен переход к третьей странице, а если провести слева направо, то вы вернетесь к предыдущей странице.
 

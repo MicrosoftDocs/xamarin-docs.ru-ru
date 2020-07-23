@@ -10,12 +10,12 @@ ms.date: 01/19/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e2bed4d5e8f89efa2997fb085278c4b549870245
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 0eb768f5d6cabbb41b07a5aad33269fc0f493237
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135325"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939533"
 ---
 # <a name="introduction-to-custom-renderers"></a>Общие сведения о настраиваемых отрисовщиках
 
@@ -59,7 +59,7 @@ public class MyEntry : Entry
 
 После этого пользовательский элемент управления `MyEntry` отрисовывается на каждой платформе на сером фоне, как показано на следующих снимках экрана:
 
-![](introduction-images/screenshots.png "MyEntry Custom Control on each Platform")
+![Пользовательский элемент управления MyEntry на каждой платформе](introduction-images/screenshots.png)
 
 Изменение цвета фона элемента управления на каждой платформе было достигнуто исключительно посредством создания подкласса элемента управления. Однако возможности этого метода ограничены, так как он не позволяет воспользоваться преимуществами усовершенствования и настройками конкретной платформы. Если в них есть потребность, нужно реализовать настраиваемые отрисовщики.
 

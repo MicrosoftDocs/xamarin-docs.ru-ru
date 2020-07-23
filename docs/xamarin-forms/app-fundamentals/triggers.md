@@ -10,12 +10,12 @@ ms.date: 04/17/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a287ff28ab62fcfcc00c88858cf3595ba2fa5118
-ms.sourcegitcommit: a3f13a216fab4fc20a9adf343895b9d6a54634a5
+ms.openlocfilehash: 2a71f48fb9911267188e7aa4b4124cd9b7488d31
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85853137"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936478"
 ---
 # <a name="xamarinforms-triggers"></a>Триггеры Xamarin.Forms
 
@@ -257,7 +257,7 @@ XAML приведен ниже. Обратите внимание на указ�
 На этих снимках экрана показаны различия между двумя приведенными выше примерами мультитриггеров. В верхней части экранов достаточно ввести текст только в один элемент управления `Entry`, чтобы включить кнопку **Сохранить**.
 В нижней части экранов кнопка **Вход** остается неактивной до тех пор, пока не будут заполнены оба поля.
 
-![](triggers-images/multi-requireall.png "MultiTrigger Examples")
+![Примеры мультитриггеров](triggers-images/multi-requireall.png)
 
 ## <a name="enteractions-and-exitactions"></a>EnterActions и ExitActions
 
