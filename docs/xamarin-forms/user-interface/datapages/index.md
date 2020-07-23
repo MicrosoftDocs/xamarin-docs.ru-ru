@@ -10,16 +10,16 @@ ms.date: 12/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7d99870dd975d0996ffcd05d4aef153f3515ec9e
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 5e1ea94e42e98609b3f77f0198e125b94e2b437d
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84134320"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86928839"
 ---
 # <a name="xamarinforms-datapages"></a>Xamarin.FormsСтраницы в виде веб-страниц
 
-![](~/media/shared/preview.png "This API is currently in preview")
+![Сейчас этот API находится в предварительной версии](~/media/shared/preview.png)
 
 > [!IMPORTANT]
 > Для отображения страниц с наборами элементов требуется Xamarin.Forms ссылка на тему. Это включает установку [ Xamarin.Forms . Тему. базовый](https://www.nuget.org/packages/Xamarin.Forms.Theme.Base/) пакет NuGet в проекте, а затем — [ Xamarin.Forms . Theme. light](https://www.nuget.org/packages/Xamarin.Forms.Theme.Light/) или [ Xamarin.Forms . Themes. темные](https://www.nuget.org/packages/Xamarin.Forms.Theme.Dark/) пакеты NuGet.
@@ -30,7 +30,7 @@ Xamarin.FormsСтраницы с информацией были объявле�
 
 Чтобы узнать, как работает демонстрационный выступление, ознакомьтесь с [руководством по началу работы](get-started.md).
 
-[![](images/demo-sml.png "DataPages Sample Application")](images/demo.png#lightbox "DataPages Sample Application")
+[![Образец приложения "страницы с примерами"](images/demo-sml.png)](images/demo.png#lightbox "Образец приложения "страницы с примерами"")
 
 ## <a name="introduction"></a>Введение
 
@@ -38,7 +38,7 @@ Xamarin.FormsСтраницы с информацией были объявле�
 
 В приложение добавляются страницы Xamarin.Forms , включая ** Xamarin.Forms . Страница** пакета NuGet.
 
-### <a name="data-sources"></a>Data Sources
+### <a name="data-sources"></a>обозревателе решений
 
 Предварительная версия содержит некоторые готовые источники данных для использования:
 
