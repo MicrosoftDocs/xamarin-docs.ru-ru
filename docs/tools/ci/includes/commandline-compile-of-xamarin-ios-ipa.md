@@ -7,7 +7,7 @@ ms.lasthandoff: 10/21/2019
 ms.locfileid: "69529117"
 ---
 
-Следующая командная строка позволяет указать сборку выпуска решения **SOLUTION_FILE. sln** для iPhone. Расположение IPA можно задать, указав в командной строке свойство `IpaPackageDir`:
+Следующая командная строка позволяет указать сборку выпуска решения **SOLUTION_FILE. sln** для iPhone. Расположение IPA можно задать, указав `IpaPackageDir` свойство в командной строке:
 
 - На компьютере Mac с помощью **Xbuild**:
 
@@ -30,6 +30,6 @@ ms.locfileid: "69529117"
           /t:Build MyProject.sln
   ```
 
-**MSBuild** не будет автоматически расширять `$( )` выражения, переданные в командной строке. По этой причине рекомендуется использовать полный путь при задании `IpaPackageDir` в командной строке.
+**MSBuild** не будет автоматически развертывать `$( )` выражения, переданные в командной строке. По этой причине рекомендуется использовать полный путь при задании в `IpaPackageDir` командной строке.
 
-Дополнительные сведения о свойстве `IpaPackageDir` см. в [заметках о выпуске iOS 9,8](https://github.com/xamarin/release-notes-archive/blob/master/release-notes/ios/xamarin.ios_9/xamarin.ios_9.8.md#new-msbuild-property-ipapackagedir-to-customize-ipa-output-location) .
+Дополнительные сведения о свойстве см. в [заметках о выпуске iOS 9,8](https://github.com/xamarin/release-notes-archive/blob/master/release-notes/ios/xamarin.ios_9/xamarin.ios_9.8.md#new-msbuild-property-ipapackagedir-to-customize-ipa-output-location) `IpaPackageDir` .
