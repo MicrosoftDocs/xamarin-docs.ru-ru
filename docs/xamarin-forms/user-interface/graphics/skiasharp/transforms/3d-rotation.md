@@ -10,12 +10,12 @@ ms.date: 04/14/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3706139a2c15d01af67203c2bd09b281de80ed52
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 855fde62483dcbc6f8769e7a8eb66d84aadfe1da
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84140209"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934983"
 ---
 # <a name="3d-rotations-in-skiasharp"></a>Трехмерные повороты в SkiaSharp
 
@@ -25,7 +25,7 @@ _Используйте неаффинного преобразования дл
 
 Одним из распространенных приложений неаффинных преобразований является имитация вращения 2D-объекта в трехмерном пространстве:
 
-![](3d-rotation-images/3drotationsexample.png "A text string rotated in 3D space")
+![Текстовая строка, повернутая в трехмерном пространстве](3d-rotation-images/3drotationsexample.png)
 
 Это задание включает работу с трехмерными поворотами, а затем создает неаффинное `SKMatrix` Преобразование, которое выполняет эти трехмерные повороты.
 
@@ -412,7 +412,7 @@ public partial class Rotation3DPage : ContentPage
 
 При эксперименте с четвертым ползунком вы заметите, что другие параметры глубины не перемещают объект дальше от средства просмотра, а вместо этого изменяют область воздействия перспективы:
 
-[![](3d-rotation-images/rotation3d-small.png "Triple screenshot of the Rotation 3D page")](3d-rotation-images/rotation3d-large.png#lightbox "Triple screenshot of the Rotation 3D page")
+[![Тройной снимок экрана поворота 3D-страницы](3d-rotation-images/rotation3d-small.png)](3d-rotation-images/rotation3d-large.png#lightbox "Тройной снимок экрана поворота 3D-страницы")
 
 **Анимированный поворот 3D** также используется `SKMatrix44` для анимации текстовой строки в трехмерном пространстве. `textPaint`Объект, заданный как поле, используется в конструкторе для определения границ текста:
 
@@ -536,7 +536,7 @@ public class AnimatedRotation3DPage : ContentPage
 
 Этот трехмерный поворот заключается в использовании нескольких двумерных преобразований для перемещения центра вращения в центр экрана и для масштабирования размера текстовой строки таким образом, чтобы она совпадала с шириной экрана:
 
-[![](3d-rotation-images/animatedrotation3d-small.png "Triple screenshot of the Animated Rotation 3D page")](3d-rotation-images/animatedrotation3d-large.png#lightbox "Triple screenshot of the Animated Rotation 3D page")
+[![Тройной снимок экрана анимированного поворота 3D-страницы](3d-rotation-images/animatedrotation3d-small.png)](3d-rotation-images/animatedrotation3d-large.png#lightbox "Тройной снимок экрана анимированного поворота 3D-страницы")
 
 ## <a name="related-links"></a>Связанные ссылки
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: ac746c8489dae600bc2d8c6d1752d8fb10d4e016
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 84e21378a8ac7b61bc1a389352eb53b75881592a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84564723"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929653"
 ---
 # <a name="core-graphics-in-xamarinios"></a>Основные графические объекты в Xamarin. iOS
 
@@ -133,7 +133,7 @@ path.CloseSubpath ();
 
 Полученное представление показано ниже:
 
- ![](core-graphics-images/00-bluetriangle.png "The sample output triangle")
+ ![Пример выходного треугольника](core-graphics-images/00-bluetriangle.png)
 
 ## <a name="creating-gradient-fills"></a>Создание градиентных заливок
 
@@ -167,7 +167,7 @@ g.Clip ();
 
 Эти изменения приводят к градиентной заливки, как показано ниже:
 
- ![](core-graphics-images/01-gradient-fill.png "The example with a gradient fill")
+ ![Пример с градиентной заливкой](core-graphics-images/01-gradient-fill.png)
 
 ## <a name="modifying-line-patterns"></a>Изменение шаблонов линий
 
@@ -180,7 +180,7 @@ g.SetLineDash (0, new nfloat[] { 10, 4 * (nfloat)Math.PI });
 
 Добавление этого кода перед любыми операциями рисования приводит к отображению штриховых штрихов в 10 единиц, с 4 единицами расстояния между тире, как показано ниже:
 
- ![](core-graphics-images/02-dashed-stroke.png "Adding this code before any drawing operations results in dashed strokes")
+ ![Добавление этого кода перед любыми операциями рисования приводит к штриховой обводке](core-graphics-images/02-dashed-stroke.png)
 
 Обратите внимание, что при использовании Unified API в Xamarin. iOS тип массива должен быть `nfloat` , а также должен быть явно приведен к Math. PI.
 
@@ -203,7 +203,7 @@ public override void Draw (CGRect rect)
 
 Однако при этом создается изображение, отображаемое сверху вниз, как показано ниже:
 
- ![](core-graphics-images/03-upside-down-monkey.png "An image drawn upside down")
+ ![Изображение, отображаемое сверху вниз](core-graphics-images/03-upside-down-monkey.png)
 
 Причина этого — основной источник графики для рисования изображений находится в левом нижнем углу, а представление — в левом верхнем углу. Таким образом, чтобы правильно отобразить изображение, необходимо изменить источник, что можно сделать, изменив *текущую матрицу преобразования* *(CTM для)*. CTM для определяет, где находятся точки в реальном времени, также называемые *пространством пользователя*. Инвертирование CTM для в направлении y и сдвиг его на высоту границ в отрицательном направлении y может поразить изображение.
 
@@ -225,7 +225,7 @@ public override void Draw (CGRect rect)
 
 Полученное изображение будет отображаться вертикально:
 
- ![](core-graphics-images/04-upright-monkey.png "The sample image displayed upright")
+ ![Пример изображения, отображаемого вертикально](core-graphics-images/04-upright-monkey.png)
 
 > [!IMPORTANT]
 > Изменения в графическом контексте применяются ко всем последующим операциям рисования. Таким образом, при преобразовании CTM для оно повлияет на любую дополнительную прорисовку. Например, если вы нанарисовали треугольник после преобразования «CTM для», он будет выглядеть так, как показано выше.
@@ -264,7 +264,7 @@ public override void Draw (RectangleF rect)
 
 Полученный текст отображается вместе с изображением, как показано ниже:
 
- ![](core-graphics-images/05-text-on-image.png "The resulting text is displayed with the image")
+ ![Полученный текст отображается вместе с изображением](core-graphics-images/05-text-on-image.png)
 
 ## <a name="memory-backed-images"></a>Образы, поддерживающие память
 

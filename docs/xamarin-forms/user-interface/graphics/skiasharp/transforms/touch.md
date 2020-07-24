@@ -10,12 +10,12 @@ ms.date: 09/14/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f5738f376e2a814ef1af455178c2e68135184402
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 6de2caf95d4ce983f7e97e0bc017932df534aedb
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84140170"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931863"
 ---
 # <a name="touch-manipulations"></a>Манипуляции сенсорного ввода
 
@@ -25,7 +25,7 @@ _Использование преобразований матрицы для �
 
 В средах с несколькими сенсорными устройствами, например на мобильных устройствах, пользователи часто используют свои пальцы для работы с объектами на экране. Стандартные жесты, такие как перетаскивание с двумя пальцами, могут перемещать и масштабировать объекты или даже вращать их. Эти жесты обычно реализуются с помощью матриц преобразования, и в этой статье показано, как это сделать.
 
-![](touch-images/touchmanipulationsexample.png "A bitmap subjected to translation, scaling, and rotation")
+![Точечный рисунок, который подлежит преобразованию, масштабированию и повороту](touch-images/touchmanipulationsexample.png)
 
 Все приведенные здесь примеры используют Xamarin.Forms эффект сенсорного отслеживания, представленный в статье [**вызов событий из эффектов**](~/xamarin-forms/app-fundamentals/effects/touch-tracking.md).
 
@@ -920,7 +920,7 @@ public partial class TouchManipulationPage : ContentPage
 
 `PaintSurface`Обработчик завершается отображением объекта, `MatrixDisplay` отображающего накопленную сенсорную матрицу:
 
-[![](touch-images/touchmanipulation-small.png "Triple screenshot of the Touch Manipulation page")](touch-images/touchmanipulation-large.png#lightbox "Triple screenshot of the Touch Manipulation page")
+[![Тройной снимок экрана страницы "Управление касанием"](touch-images/touchmanipulation-small.png)](touch-images/touchmanipulation-large.png#lightbox "Тройной снимок экрана страницы "Управление касанием"")
 
 ## <a name="manipulating-multiple-bitmaps"></a>Управление несколькими точечными рисунками
 
@@ -1058,7 +1058,7 @@ public partial class BitmapScatterViewPage : ContentPage
 
 Код выполняет цикл по коллекции и отображает кучу точечных рисунков от начала коллекции до конца:
 
-[![](touch-images/bitmapscatterview-small.png "Triple screenshot of the Bitmap Scatter View page")](touch-images/bitmapscatterview-large.png#lightbox "Triple screenshot of the Bitmap Scatter View page")
+[![Тройной снимок экрана со страницей точечного представления точечного рисунка](touch-images/bitmapscatterview-small.png)](touch-images/bitmapscatterview-large.png#lightbox "Тройной снимок экрана со страницей точечного представления точечного рисунка")
 
 ## <a name="single-finger-scaling"></a>Масштабирование с одним пальцем
 

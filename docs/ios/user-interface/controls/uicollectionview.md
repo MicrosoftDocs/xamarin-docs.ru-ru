@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: d390ff40a964101297e205060b892b4108fe2281
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: eccd0415fdc1db357f904b843a015df60a35a488
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569911"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939611"
 ---
 # <a name="collection-views-in-xamarinios"></a>Представления коллекций в Xamarin. iOS
 
@@ -36,7 +36,7 @@ iOS предоставляет класс макета с именем `UICollec
 
 Ячейки — это объекты, представляющие один элемент в наборе данных, представленном представлением коллекции. Каждая ячейка является экземпляром `UICollectionViewCell` класса, который состоит из трех различных представлений, как показано на рисунке ниже.
 
- [![](uicollectionview-images/01-uicollectionviewcell.png "Each cell is composed of three different views, as shown here")](uicollectionview-images/01-uicollectionviewcell.png#lightbox)
+ [![Каждая ячейка состоит из трех различных представлений, как показано ниже.](uicollectionview-images/01-uicollectionviewcell.png)](uicollectionview-images/01-uicollectionviewcell.png#lightbox)
 
 `UICollectionViewCell`Класс имеет следующие свойства для каждого из этих представлений:
 
@@ -46,7 +46,7 @@ iOS предоставляет класс макета с именем `UICollec
 
 Устанавливая `ContentView` таким образом, что он меньше `BackgroundView` и `SelectedBackgroundView` , `BackgroundView` можно использовать для визуального выделения содержимого, тогда `SelectedBackgroundView` как при выборе ячейки, как показано ниже:
 
- [![](uicollectionview-images/02-cells.png "The different cell elements")](uicollectionview-images/02-cells.png#lightbox)
+ [![Различные элементы ячейки](uicollectionview-images/02-cells.png)](uicollectionview-images/02-cells.png#lightbox)
 
 Ячейки на снимке экрана выше создаются путем наследования из `UICollectionViewCell` и установки `ContentView` `SelectedBackgroundView` свойств, и `BackgroundView` соответственно, как показано в следующем коде:
 
@@ -90,7 +90,7 @@ public class AnimalCell : UICollectionViewCell
 
 Например, можно использовать вспомогательное представление для представления заголовка для определенного раздела, как показано на рисунке ниже.
 
- [![](uicollectionview-images/02a-supplementary-view.png "A Supplementary View used to present a header for a particular section, as shown here")](uicollectionview-images/02a-supplementary-view.png#lightbox)
+ [![Вспомогательное представление, используемое для представления заголовка для определенного раздела, как показано здесь](uicollectionview-images/02a-supplementary-view.png)](uicollectionview-images/02a-supplementary-view.png#lightbox)
 
 Чтобы использовать вспомогательное представление, сначала необходимо зарегистрировать его в `ViewDidLoad` методе:
 
@@ -119,7 +119,7 @@ public override UICollectionReusableView GetViewForSupplementaryElement (UIColle
 
 Декорированные представления — это чисто визуальные представления, которые могут отображаться в `UICollectionView` . В отличие от ячеек и дополнительных представлений они не управляются данными. Они всегда создаются в подклассе макета и затем могут меняться в качестве макета содержимого. Например, представление декорирования можно использовать для представления фона, который прокручивается с содержимым в `UICollectionView` , как показано ниже:
 
- [![](uicollectionview-images/02c-decoration-view.png "Decoration View with a red background")](uicollectionview-images/02c-decoration-view.png#lightbox)
+ [![Представление "Оформление" с красным фоном](uicollectionview-images/02c-decoration-view.png)](uicollectionview-images/02c-decoration-view.png#lightbox)
 
  Приведенный ниже фрагмент кода изменяет фон на красный в классе Samples `CircleLayout` :
 
@@ -134,7 +134,7 @@ public override UICollectionReusableView GetViewForSupplementaryElement (UIColle
   }
  ```
 
-## <a name="data-source"></a>источника данных
+## <a name="data-source"></a>Источник данных
 
 Как и в других частях iOS, таких как `UITableView` и `MKMapView` , `UICollectionView` получает свои данные из *источника данных*, который предоставляется в Xamarin. iOS через **`UICollectionViewDataSource`** класс. Этот класс отвечает за предоставление содержимого следующим `UICollectionView` образом:
 
@@ -149,7 +149,7 @@ public override UICollectionReusableView GetViewForSupplementaryElement (UIColle
 Как `UITableView` и в случае, `UICollectionView` класс будет вызывать его источник данных только для получения ячеек для элементов, наявляющихся на экране.
 Ячейки, проходящие за пределами экрана, помещаются в очередь для повторного использования, как показано на следующем рисунке:
 
- [![](uicollectionview-images/03-cell-reuse.png "Cells that scroll off the screen are placed in to a queue for reuse as shown here")](uicollectionview-images/03-cell-reuse.png#lightbox)
+ [![Ячейки, проходящие за пределами экрана, помещаются в очередь для повторного использования, как показано ниже.](uicollectionview-images/03-cell-reuse.png)](uicollectionview-images/03-cell-reuse.png#lightbox)
 
 Повторное использование ячеек было упрощено с помощью `UICollectionView` и `UITableView` . Больше не нужно создавать ячейку непосредственно в источнике данных, если она недоступна в очереди повторного использования, так как ячейки регистрируются в системе. Если ячейка недоступна, когда вызов удаляет ячейку из очереди повторного использования, iOS создаст его автоматически на основе зарегистрированного типа или NIB.
 Аналогичная методика также доступна для дополнительных представлений.
@@ -200,7 +200,7 @@ public override UICollectionViewCell GetCell (UICollectionView collectionView, F
 
 При нажатии ячейки ячейка переходит в выделенное состояние и не выбирается до тех пор, пока пользователь не отрывает палец от ячейки. Это позволяет временно изменить внешний вид ячейки до ее фактического выбора. После выбора отображается ячейка `SelectedBackgroundView` . На рисунке ниже показано выделенное состояние непосредственно перед выбором.
 
- [![](uicollectionview-images/04-cell-highlight.png "This figure shows the highlighted state just before the selection occurs")](uicollectionview-images/04-cell-highlight.png#lightbox)
+ [![На этом рисунке показано выделенное состояние непосредственно перед выбором.](uicollectionview-images/04-cell-highlight.png)](uicollectionview-images/04-cell-highlight.png#lightbox)
 
 Для реализации выделения `ItemHighlighted` `ItemUnhighlighted` `UICollectionViewDelegate` можно использовать методы и. Например, следующий код будет применять желтый фон элемента, `ContentView` когда ячейка выделяется, и белый фон при невыделенном виде, как показано на рисунке выше:
 
@@ -247,7 +247,7 @@ public override bool ShouldHighlightItem (UICollectionView collectionView, NSInd
 
 На следующем снимке экрана показано меню при длительной нажатии ячейки:
 
- [![](uicollectionview-images/04a-menu.png "This screenshot show the menu when a cell is long pressed")](uicollectionview-images/04a-menu.png#lightbox)
+ [![На этом снимке экрана показано меню при длительной нажатии ячейки](uicollectionview-images/04a-menu.png)](uicollectionview-images/04a-menu.png#lightbox)
 
  <a name="Layout"></a>
 
@@ -287,7 +287,7 @@ simpleCollectionViewController = new SimpleCollectionViewController (layout);
 
 Это все, что необходимо для размещения содержимого в сетке. Кроме того, при изменении ориентации `UICollectionViewFlowLayout` маркеры соответствующим образом переупорядочивают содержимое, как показано ниже:
 
- [![](uicollectionview-images/05-layout-orientation.png "Example of the orientation changes")](uicollectionview-images/05-layout-orientation.png#lightbox)
+ [![Пример изменения ориентации](uicollectionview-images/05-layout-orientation.png)](uicollectionview-images/05-layout-orientation.png#lightbox)
 
  <a name="Section_Inset"></a>
 
@@ -302,7 +302,7 @@ layout.SectionInset = new UIEdgeInsets (50,50,50,50);
 
 Это приводит к отступу вокруг раздела, как показано ниже.
 
- [![](uicollectionview-images/06-sectioninset.png "Spacing around the section as shown here")](uicollectionview-images/06-sectioninset.png#lightbox)
+ [![Отступ вокруг раздела, как показано здесь](uicollectionview-images/06-sectioninset.png)](uicollectionview-images/06-sectioninset.png#lightbox)
 
  <a name="Subclassing_UICollectionViewFlowLayout"></a>
 
@@ -310,7 +310,7 @@ layout.SectionInset = new UIEdgeInsets (50,50,50,50);
 
 В выпуске для `UICollectionViewFlowLayout` непосредственного использования он также может быть подклассом для дальнейшей настройки макета содержимого вдоль линии. Например, это можно использовать для создания макета, который не заключает ячейки в сетку, а вместо этого создает одну строку с горизонтальной прокруткой, как показано ниже:
 
- [![](uicollectionview-images/07-line-layout.png "A single row with a horizontal scrolling effect")](uicollectionview-images/07-line-layout.png#lightbox)
+ [![Одна строка с горизонтальным прокруткой](uicollectionview-images/07-line-layout.png)](uicollectionview-images/07-line-layout.png#lightbox)
 
 Для реализации этого с помощью подклассов `UICollectionViewFlowLayout` требуется:
 
@@ -402,7 +402,7 @@ namespace SimpleCollectionView
 
 Например, одно и то же содержимое может быть представлено в циклической структуре, как показано ниже:
 
- [![](uicollectionview-images/08-circle-layout.png "A circular custom layout as shown here")](uicollectionview-images/08-circle-layout.png#lightbox)
+ [![Круглый пользовательский макет, как показано здесь](uicollectionview-images/08-circle-layout.png)](uicollectionview-images/08-circle-layout.png#lightbox)
 
 Очень мощное дело в макетах заключается в том, что для того, чтобы изменить макет с горизонтальной прокруткой, а затем к этому циклу, необходимо изменить только класс макета, предоставленный для `UICollectionView` . Ничего в `UICollectionView` , его делегат или код источника данных вообще не меняются.
 
@@ -412,7 +412,7 @@ namespace SimpleCollectionView
 
 Используя эти новые методы, можно легко реализовать перетаскивание для изменения порядка в представлении коллекции и иметь возможность настройки внешнего вида элементов на любом этапе процесса изменения порядка.
 
-[![](uicollectionview-images/intro01.png "An example of the reordering process")](uicollectionview-images/intro01.png#lightbox)
+[![Пример процесса изменения порядка](uicollectionview-images/intro01.png)](uicollectionview-images/intro01.png#lightbox)
 
 В этой статье мы рассмотрим реализацию перетаскивания в приложении Xamarin. iOS, а также некоторые другие изменения, внесенные в iOS 9 в элемент управления "представление коллекции":
 
@@ -430,7 +430,7 @@ namespace SimpleCollectionView
 
 В iOS 9 самый быстрый способ добавить изменение порядка в представление коллекции — использовать `UICollectionViewController` .
 Контроллер представления коллекции теперь имеет `InstallsStandardGestureForInteractiveMovement` свойство, добавляющее Стандартный *распознаватель жестов* , поддерживающий перетаскивание для изменения порядка элементов в коллекции.
-Так как значение по умолчанию равно `true` , необходимо реализовать `MoveItem` метод `UICollectionViewDataSource` класса для поддержки перетаскивания. Пример.
+Так как значение по умолчанию равно `true` , необходимо реализовать `MoveItem` метод `UICollectionViewDataSource` класса для поддержки перетаскивания. Например.
 
 ```csharp
 public override void MoveItem (UICollectionView collectionView, NSIndexPath sourceIndexPath, NSIndexPath destinationIndexPath)
@@ -446,7 +446,7 @@ public override void MoveItem (UICollectionView collectionView, NSIndexPath sour
 
 В качестве краткого примера запустите новый проект Xamarin. iOS и измените файл **Main. Storyboard** . Перетащите элемент на `UICollectionViewController` поверхность конструктора:
 
-[![](uicollectionview-images/quick01.png "Adding a UICollectionViewController")](uicollectionview-images/quick01.png#lightbox)
+[![Добавление Уиколлектионвиевконтроллер](uicollectionview-images/quick01.png)](uicollectionview-images/quick01.png#lightbox)
 
 Выберите представление коллекции (это проще всего сделать в структуре документа). На вкладке Макет Панель свойств задайте следующие размеры, как показано на снимке экрана ниже:
 
@@ -456,7 +456,7 @@ public override void MoveItem (UICollectionView collectionView, NSIndexPath sour
 - **Минимальный промежуток**: для ячеек — 8 | Для строк — 8
 - **Раздел инсетс**: Top – 16 | Снизу — 16 | Left — 16 | Справа — 16
 
-[![](uicollectionview-images/quick04.png "Set the Collection View sizes")](uicollectionview-images/quick04.png#lightbox)
+[![Настройка размеров представлений коллекций](uicollectionview-images/quick04.png)](uicollectionview-images/quick04.png#lightbox)
 
 Затем измените ячейку по умолчанию:
 
@@ -464,21 +464,21 @@ public override void MoveItem (UICollectionView collectionView, NSIndexPath sour
 - Добавить метку, которая будет использоваться в качестве заголовка для ячейки
 - Присвоить идентификатору повторного использования значение **Cell**
 
-[![](uicollectionview-images/quick02.png "Edit the default Cell")](uicollectionview-images/quick02.png#lightbox)
+[![Изменение ячейки по умолчанию](uicollectionview-images/quick02.png)](uicollectionview-images/quick02.png#lightbox)
 
 Добавьте ограничения, чтобы поместить метку в центре ячейки по мере изменения размера:
 
 На панели **свойств** для _Коллектионвиевцелл_ и задайте **классу** значение `TextCollectionViewCell` :
 
-[![](uicollectionview-images/quick05.png "Set the Class to TextCollectionViewCell")](uicollectionview-images/quick05.png#lightbox)
+[![Присвойте классу значение Текстколлектионвиевцелл](uicollectionview-images/quick05.png)](uicollectionview-images/quick05.png#lightbox)
 
 В качестве **представления для повторного использования коллекции** задайте `Cell` следующие значения:
 
-[![](uicollectionview-images/quick06.png "Set the Collection Reusable View to Cell")](uicollectionview-images/quick06.png#lightbox)
+[![Задать представление коллекции для повторного использования в ячейке](uicollectionview-images/quick06.png)](uicollectionview-images/quick06.png#lightbox)
 
 Наконец, выберите метку и назовите ее `TextLabel` :
 
-[![](uicollectionview-images/quick07.png "name label TextLabel")](uicollectionview-images/quick07.png#lightbox)
+[![имя метки Текстлабел](uicollectionview-images/quick07.png)](uicollectionview-images/quick07.png#lightbox)
 
 Измените `TextCollectionViewCell` класс и добавьте следующие свойства:
 
@@ -672,15 +672,15 @@ namespace CollectionView
 
 Сохраните изменения, внесенные в пользовательский интерфейс, и запустите приложение.
 Если пользователь выбирает элемент из списка и перетаскивает его в новое место, другие элементы будут анимироваться автоматически по мере того, как они переходят за пределы элемента.
-Когда пользователь удаляет элемент в новом расположении, он перейдет в это место. Пример.
+Когда пользователь удаляет элемент в новом расположении, он перейдет в это место. Например.
 
-[![](uicollectionview-images/intro01.png "An example of dragging an item to a new location")](uicollectionview-images/intro01.png#lightbox)
+[![Пример перетаскивания элемента в новое место](uicollectionview-images/intro01.png)](uicollectionview-images/intro01.png#lightbox)
 
 <a name="Using-a-Custom-Gesture-Recognizer"></a>
 
 ### <a name="using-a-custom-gesture-recognizer"></a>Использование пользовательского распознавателя жестов
 
-В случаях, когда вы не можете использовать `UICollectionViewController` и должен использовать обычный `UIViewController` или если вы хотите повысить управляемость жеста перетаскивания, можно создать собственный распознаватель жестов и добавить его в представление коллекции при загрузке представления. Пример.
+В случаях, когда вы не можете использовать `UICollectionViewController` и должен использовать обычный `UIViewController` или если вы хотите повысить управляемость жеста перетаскивания, можно создать собственный распознаватель жестов и добавить его в представление коллекции при загрузке представления. Например.
 
 ```csharp
 public override void ViewDidLoad ()
@@ -1183,7 +1183,7 @@ public override void AwakeFromNib ()
 
 Если снова запустить приложение Xamarin. iOS, представление коллекции будет выглядеть следующим образом:
 
-[![](uicollectionview-images/custom01.png "The collection view will now look like this")](uicollectionview-images/custom01.png#lightbox)
+[![Представление коллекции теперь будет выглядеть следующим образом:](uicollectionview-images/custom01.png)](uicollectionview-images/custom01.png#lightbox)
 
 Мы по-прежнему можем перетаскивать элементы, как и раньше, но теперь размер элементов изменится в соответствии с новым расположением при их удалении.
 

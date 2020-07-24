@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: ef54cebebb3881f5bb08aa6edfdc344169f179b4
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 729289c1764746f9777ef3d720e77865c9a71389
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574097"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937258"
 ---
 # <a name="creating-user-interface-objects-in-xamarinios"></a>Создание объектов пользовательского интерфейса в Xamarin. iOS
 
@@ -42,17 +42,17 @@ using UIKit;
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
- [![](creating-ui-objects-images/image2b.png "Toolbox Pad")](creating-ui-objects-images/image2b.png#lightbox)
+ [![Панель элементов](creating-ui-objects-images/image2b.png)](creating-ui-objects-images/image2b.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
- [![](creating-ui-objects-images/image2b-vs.png "Toolbox Pad - Visual Stuio")](creating-ui-objects-images/image2b.png#lightbox)
+ [![Панель элементов — визуальный Стуио](creating-ui-objects-images/image2b-vs.png)](creating-ui-objects-images/image2b.png#lightbox)
 
 -----
 
 При выборе элемента управления в области конструктора **панель свойств** покажет атрибуты для этого элемента управления. Поле **имени > удостоверений мини** -приложения >, которое заполняется на снимке экрана ниже, используется в качестве имени *розетки* . Вот как можно ссылаться на элемент управления в C#:
 
- [![](creating-ui-objects-images/image3b.png "Properties Widget Pad")](creating-ui-objects-images/image3b.png#lightbox)
+ [![Панель мини-приложений свойств](creating-ui-objects-images/image3b.png)](creating-ui-objects-images/image3b.png#lightbox)
 
 Более подробные сведения об использовании конструктора iOS см. в руководстве введение в [конструктор iOS](~/ios/user-interface/designer/introduction.md) .
 
@@ -64,27 +64,27 @@ using UIKit;
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
- [![](creating-ui-objects-images/imagexcode.png "Storyboard context menu - Xcode")](creating-ui-objects-images/imagexcode.png#lightbox)
+ [![Контекстное меню раскадровки — Xcode](creating-ui-objects-images/imagexcode.png)](creating-ui-objects-images/imagexcode.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![](creating-ui-objects-images/imagexcode-vs.png "Storyboard context menu - Xcode")](creating-ui-objects-images/imagexcode-vs.png#lightbox)
+[![Контекстное меню раскадровки — Xcode](creating-ui-objects-images/imagexcode-vs.png)](creating-ui-objects-images/imagexcode-vs.png#lightbox)
 
 -----
 
 Элементы управления можно перетаскивать на область конструктора из **библиотеки объектов** , как показано ниже:
 
- [![](creating-ui-objects-images/image5a.png "Xcode Object Library")](creating-ui-objects-images/image5a.png#lightbox)
+ [![Библиотека объектов Xcode](creating-ui-objects-images/image5a.png)](creating-ui-objects-images/image5a.png#lightbox)
 
 При проектировании пользовательского интерфейса с Interface Builder необходимо создать **выход** для каждого элемента управления, на который вы хотите сослаться в C#. Это можно сделать, включив **Редактор помощника** с помощью кнопки Center **Editor** (Центральная панель) на панели инструментов Xcode:
 
- [![](creating-ui-objects-images/image6a.png "Assistant Editor button")](creating-ui-objects-images/image6a.png#lightbox)
+ [![Кнопка редактора помощника](creating-ui-objects-images/image6a.png)](creating-ui-objects-images/image6a.png#lightbox)
 
 Щелкните объект пользовательского интерфейса; затем **перетащите элемент управления** в h файл. Чтобы **управлять перетаскиванием**, удерживая нажатой клавишу CTRL, щелкните и удерживайте за объектом пользовательского интерфейса, для которого создается выход (или действие). Удерживайте нажатой клавишу Control при перетаскивании в файл заголовка. Завершите перетаскивание под `@interface` определением. На рисунке ниже показана синяя линия с подписью вставить розетку или выход из коллекции.
 
 Когда вы отпустите кнопку, появится запрос на ввод имени розетки, которая будет использоваться для создания свойства C#, на которое можно ссылаться в коде:
 
- [![](creating-ui-objects-images/image8a.png "Creating an outlet")](creating-ui-objects-images/image8a.png#lightbox)
+ [![Создание розетки](creating-ui-objects-images/image8a.png)](creating-ui-objects-images/image8a.png#lightbox)
 
 Дополнительные сведения о том, как Interface Builder Xcode интегрируется с Visual Studio для Mac, см. в документе о [создании кода XIB](~/ios/internals/xib-code-generation.md#generated) .
 
@@ -118,7 +118,7 @@ public override void ViewDidLoad () {
 
 При добавлении контроллеров представления в область конструктора в проекте создаются два соответствующих файла C#. В этом примере `ControlsViewController.cs` и были `ControlsViewController.designer.cs` созданы автоматически:
 
- [![](creating-ui-objects-images/image9b.png "ViewController partial class")](creating-ui-objects-images/image9b.png#lightbox)
+ [![Разделяемый класс ViewController](creating-ui-objects-images/image9b.png)](creating-ui-objects-images/image9b.png#lightbox)
 
 `ControlsViewController.cs`Файл предназначен для *вашего кода*. Именно здесь `View` реализуются методы жизненного цикла, такие как `ViewDidLoad` и `ViewWillAppear` , и где можно добавлять собственные свойства, поля и методы.
 

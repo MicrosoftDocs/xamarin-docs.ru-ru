@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: c4bec7d77e7778d8922640c75d23f4b1464f864f
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 8ed83ee8f0bded6258b695f7a6383cda1929f542
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573928"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997089"
 ---
 # <a name="creating-custom-controls-in-xamarinmac"></a>Создание пользовательских элементов управления в Xamarin. Mac
 
@@ -20,7 +20,7 @@ ms.locfileid: "84573928"
 
 Хотя macOS предоставляет множество встроенных пользовательских элементов управления, могут возникнуть ситуации, когда необходимо создать пользовательский элемент управления для предоставления функциональных возможностей, которые не предоставляются готовым к работе, или для соответствия настраиваемой теме пользовательского интерфейса (например, игрового интерфейса).
 
-[![](custom-controls-images/intro01.png "Example of a custom UI control")](custom-controls-images/intro01.png#lightbox)
+[![Пример пользовательского элемента управления пользовательского интерфейса](custom-controls-images/intro01.png)](custom-controls-images/intro01.png#lightbox)
 
 В этой статье рассматриваются основные сведения о создании настраиваемого пользовательского интерфейса для повторного использования в приложении Xamarin. Mac. Мы настоятельно рекомендуем сначала ознакомиться со статьей [Hello, Mac](~/mac/get-started/hello-mac.md) , в частности [Знакомство с Xcode и Interface Builder](~/mac/get-started/hello-mac.md#introduction-to-xcode-and-interface-builder) , а также с разделом "возможности [и действия](~/mac/get-started/hello-mac.md#outlets-and-actions) ", так как в нем рассматриваются основные понятия и методы, которые мы будем использовать в этой статье.
 
@@ -48,7 +48,7 @@ ms.locfileid: "84573928"
 
 В Visual Studio для Mac откройте проект Xamarin. Mac, для которого необходимо создать настраиваемый элемент управления пользовательского интерфейса (или создайте новый). Добавьте новый класс и вызовите его `NSFlipSwitch` :
 
-[![](custom-controls-images/custom01.png "Adding a new class")](custom-controls-images/custom01.png#lightbox)
+[![Добавление нового класса](custom-controls-images/custom01.png)](custom-controls-images/custom01.png#lightbox)
 
 Затем измените `NSFlipSwitch.cs` класс и сделайте его следующим:
 
@@ -183,7 +183,7 @@ private void Initialize() {
 }
 ```
 
-Этот метод вызывается из каждого из конструкторов элемента управления, чтобы обеспечить правильную настройку элемента управления. Пример.
+Этот метод вызывается из каждого из конструкторов элемента управления, чтобы обеспечить правильную настройку элемента управления. Например.
 
 ```csharp
 public NSFlipSwitch (IntPtr handle) : base (handle)
@@ -334,19 +334,19 @@ if (this.Action !=null)
 
 Чтобы добавить элемент управления с помощью Interface Builder, сначала выполните чистую сборку проекта Xamarin. Mac, а затем дважды щелкните `Main.storyboard` файл, чтобы открыть его в Interface Builder для изменения:
 
-[![](custom-controls-images/custom02.png "Editing the storyboard in Xcode")](custom-controls-images/custom02.png#lightbox)
+[![Изменение раскадровки в Xcode](custom-controls-images/custom02.png)](custom-controls-images/custom02.png#lightbox)
 
 Затем перетащите элемент в `Custom View` структуру пользовательского интерфейса:
 
-[![](custom-controls-images/custom03.png "Selecting a Custom View from the Library")](custom-controls-images/custom03.png#lightbox)
+[![Выбор пользовательского представления из библиотеки](custom-controls-images/custom03.png)](custom-controls-images/custom03.png#lightbox)
 
 Если пользовательское представление все еще выбрано, переключитесь в **инспектор удостоверений** и измените **класс** представления на `NSFlipSwitch` :
 
-[![](custom-controls-images/custom04.png "Setting the View's class")](custom-controls-images/custom04.png#lightbox)
+[![Задание класса представления](custom-controls-images/custom04.png)](custom-controls-images/custom04.png#lightbox)
 
 Переключитесь в **Редактор помощника** и создайте **выход** для пользовательского элемента управления (обязательно привяжите его к `ViewController.h` файлу, а не к `.m` файлу):
 
-[![](custom-controls-images/custom05.png "Configuring a new Outlet")](custom-controls-images/custom05.png#lightbox)
+[![Настройка новой розетки](custom-controls-images/custom05.png)](custom-controls-images/custom05.png#lightbox)
 
 Сохраните изменения, вернитесь в Visual Studio для Mac и разрешите синхронизацию изменений. Измените `ViewController.cs` файл и сделайте `ViewDidLoad` метод следующим:
 
@@ -367,7 +367,7 @@ public override void ViewDidLoad ()
 
 При необходимости можно вернуться к Interface Builder и определить **действие** для элемента управления:
 
-[![](custom-controls-images/custom06.png "Configuring a new Action")](custom-controls-images/custom06.png#lightbox)
+[![Настройка нового действия](custom-controls-images/custom06.png)](custom-controls-images/custom06.png#lightbox)
 
 Снова измените `ViewController.cs` файл и добавьте следующий метод:
 

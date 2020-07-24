@@ -10,16 +10,16 @@ ms.date: 01/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 44df710df0272afe3c6f6911381af1a88c8cf923
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: d245ebbf42333ad822e0d6ed8569cc8193f1b478
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84140287"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936712"
 ---
 # <a name="xamarinforms-carouselview-layout"></a>Xamarin.FormsМакет Карауселвиев
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
@@ -30,7 +30,7 @@ ms.locfileid: "84140287"
 
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что свойства могут быть целевыми объектами привязок данных.
 
-По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) элементы отображаются на горизонтальной ориентации. На экране будет отображаться один элемент с жестами прокрутки, приводящими к пересылке и обратной навигации по коллекции элементов. Однако также возможна вертикальная ориентация. Это обусловлено тем [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) , что свойство имеет тип `LinearItemsLayout` , который наследуется от [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) класса. `ItemsLayout`Класс определяет следующие свойства:
+По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) элементы отображаются на горизонтальной ориентации. На экране будет отображаться один элемент с жестами прокрутки, приводящими к пересылке и обратной навигации по коллекции элементов. Однако также возможна вертикальная ориентация. Это обусловлено тем [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) , что свойство имеет тип `LinearItemsLayout` , который наследуется от [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) класса. Класс `ItemsLayout` определяет следующие свойства:
 
 - [`Orientation`](xref:Xamarin.Forms.ItemsLayout.Orientation)Тип [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) задает направление, в котором [`CarouselView`](xref:Xamarin.Forms.CarouselView) добавляются элементы расширения по мере добавления.
 - [`SnapPointsAlignment`](xref:Xamarin.Forms.ItemsLayout.SnapPointsAlignment), типа [`SnapPointsAlignment`](xref:Xamarin.Forms.SnapPointsAlignment) , задает способ выравнивания точек привязки по элементам.

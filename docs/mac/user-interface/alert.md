@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 044792f37fbba13699a5ab31d815b4f2c5dafe17
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 00e5b2a2238763822172a1b7d7a7c3090634ed17
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84565490"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938090"
 ---
 # <a name="alerts-in-xamarinmac"></a>Оповещения в Xamarin. Mac
 
@@ -22,7 +22,7 @@ _В этой статье рассматривается работа с пре�
 
 Предупреждение — это особый тип диалогового окна, которое появляется при возникновении серьезной проблемы (например, ошибка) или в виде предупреждения (например, при подготовке к удалению файла). Поскольку оповещение является диалоговым окном, оно также требует ответа пользователя, прежде чем его можно будет закрыть.
 
-[![](alert-images/alert06.png "An example alert")](alert-images/alert06.png#lightbox)
+[![Пример оповещения](alert-images/alert06.png)](alert-images/alert06.png#lightbox)
 
 В этой статье рассматриваются основные принципы работы с предупреждениями в приложении Xamarin. Mac. 
 
@@ -60,7 +60,7 @@ alert.RunModal ();
 
 Приведенный выше код отображает предупреждение с значком приложения, нажимаемым на значке предупреждения, заголовок, предупреждающее сообщение и одну кнопку **ОК** :
 
-[![](alert-images/alert01.png "An alert with a OK button")](alert-images/alert01.png#lightbox)
+[![Оповещение с кнопкой "ОК"](alert-images/alert01.png)](alert-images/alert01.png#lightbox)
 
 Apple предоставляет несколько свойств, которые можно использовать для настройки оповещений.
 
@@ -93,7 +93,7 @@ alert.RunModal ();
 
 При выполнении этого кода отображается следующее:
 
-[![](alert-images/alert02.png "A simple alert")](alert-images/alert02.png#lightbox)
+[![Простое оповещение](alert-images/alert02.png)](alert-images/alert02.png#lightbox)
 
 Следующий код отображает то же самое предупреждение, что и лист:
 
@@ -108,7 +108,7 @@ alert.BeginSheet (this);
 
 При выполнении этого кода будут отображены следующие:
 
-[![](alert-images/alert03.png "An alert displayed as a sheet")](alert-images/alert03.png#lightbox)
+[![Предупреждение, отображаемое в виде листа](alert-images/alert03.png)](alert-images/alert03.png#lightbox)
 
 <a name="Working_with_Alert_Buttons"></a>
 
@@ -136,7 +136,7 @@ var result = alert.RunModal ();
 
 Если выполнить код, будут отображены следующие фрагменты кода:
 
-[![](alert-images/alert04.png "An alert with three button options")](alert-images/alert04.png#lightbox)
+[![Предупреждение с тремя параметрами кнопки](alert-images/alert04.png)](alert-images/alert04.png#lightbox)
 
 Ниже приведен код для того же оповещения, что и лист:
 
@@ -156,7 +156,7 @@ alert.BeginSheetForResponse (this, (result) => {
 
 При выполнении этого кода будут отображены следующие:
 
-[![](alert-images/alert05.png "A three button alert displayed as a sheet")](alert-images/alert05.png#lightbox)
+[![Предупреждение с тремя кнопками, отображаемое в виде листа](alert-images/alert05.png)](alert-images/alert05.png#lightbox)
 
 > [!IMPORTANT]
 > В оповещение никогда не следует добавлять более трех кнопок.
@@ -185,7 +185,7 @@ Console.WriteLine ("Alert Result: {0}, Suppress: {1}", result, alert.Suppression
 
 Если код выполняется, будет выведено следующее:
 
-[![](alert-images/alert06.png "An alert with a suppress button")](alert-images/alert06.png#lightbox)
+[![Предупреждение с кнопкой "подавлять"](alert-images/alert06.png)](alert-images/alert06.png#lightbox)
 
 Ниже приведен код для того же оповещения, что и лист:
 
@@ -206,7 +206,7 @@ alert.BeginSheetForResponse (this, (result) => {
 
 При выполнении этого кода будут отображены следующие:
 
-[![](alert-images/alert07.png "An alert with a suppress button display as a sheet")](alert-images/alert07.png#lightbox)
+[![Предупреждение с кнопкой "подавлять" отображается как лист](alert-images/alert07.png)](alert-images/alert07.png#lightbox)
 
 <a name="Adding_a_Custom_SubView"></a>
 
@@ -236,7 +236,7 @@ Console.WriteLine ("Alert Result: {0}, Suppress: {1}", result, alert.Suppression
 
 Если выполнить код, будут отображены следующие фрагменты кода:
 
-[![](alert-images/alert08.png "If we run the code, the following will be displayed")](alert-images/alert08.png#lightbox)
+[![При выполнении кода будут отображены следующие](alert-images/alert08.png)](alert-images/alert08.png#lightbox)
 
 Это то же самое предупреждение, что и лист:
 
@@ -261,7 +261,7 @@ alert.BeginSheetForResponse (this, (result) => {
 
 Если выполнить этот код, отобразятся следующие фрагменты кода:
 
-[![](alert-images/alert09.png "An alert with a custom view")](alert-images/alert09.png#lightbox)
+[![Оповещение с пользовательским представлением](alert-images/alert09.png)](alert-images/alert09.png#lightbox)
 
 <a name="Summary"></a>
 

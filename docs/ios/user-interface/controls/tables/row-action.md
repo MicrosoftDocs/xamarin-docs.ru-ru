@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/25/2017
-ms.openlocfilehash: cc83fa65fd040b30d71a30fb703da866c5d0824c
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 40640f903ad82c5f154dbb74307c0003d7271561
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84570821"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936608"
 ---
 # <a name="working-with-row-actions-in-xamarinios"></a>Работа с действиями строк в Xamarin. iOS
 
@@ -33,7 +33,7 @@ _В этом руководстве показано, как создавать 
 
 1. Переопределите `GetLeadingSwipeActionsConfiguration` методы и/или `GetTrailingSwipeActionsConfiguration` . Эти методы возвращают `UISwipeActionsConfiguration` .
 2. Создайте экземпляр `UISwipeActionsConfiguration` возвращаемого объекта. Этот класс принимает массив `UIContextualAction` .
-3. Создайте таблицу `UIContextualAction`.
+3. Создайте `UIContextualAction`.
 
 Они более подробно описаны в следующих разделах.
 
@@ -117,7 +117,7 @@ public UIContextualAction ContextualFlagAction(int row)
 
 ## <a name="uitableviewrowaction"></a>уитаблевиевровактион
 
-Чтобы определить одно или несколько действий пользовательской строки для `UITableView` , необходимо создать экземпляр `UITableViewDelegate` класса и переопределить `EditActionsForRow` метод. Пример.
+Чтобы определить одно или несколько действий пользовательской строки для `UITableView` , необходимо создать экземпляр `UITableViewDelegate` класса и переопределить `EditActionsForRow` метод. Например.
 
 ```csharp
 using System;
@@ -161,7 +161,7 @@ namespace BasicTable
 }
 ```
 
-Статический `UITableViewRowAction.Create` метод используется для создания нового `UITableViewRowAction` , который будет отображать кнопку **Hi** , когда пользователь проводит левую горизонтальную строку в строке таблицы. Позже создается новый экземпляр класса, который `TableDelegate` прикрепляется к `UITableView` . Пример.
+Статический `UITableViewRowAction.Create` метод используется для создания нового `UITableViewRowAction` , который будет отображать кнопку **Hi** , когда пользователь проводит левую горизонтальную строку в строке таблицы. Позже создается новый экземпляр класса, который `TableDelegate` прикрепляется к `UITableView` . Например.
 
 ```csharp
 TableDelegate tableDelegate;
@@ -175,7 +175,7 @@ table.Delegate = tableDelegate;
 
 Если при выполнении приведенного выше кода пользователь проводит влево по строке таблицы, вместо кнопки **Удалить** отображается кнопка **Hi** , которая отображается по умолчанию:
 
-[![](row-action-images/action01.png "The Hi button being displayed instead of the Delete button")](row-action-images/action01.png#lightbox)
+[![Кнопка "Привет", отображаемая вместо кнопки "Удалить"](row-action-images/action01.png)](row-action-images/action01.png#lightbox)
 
 Если пользователь нажмет кнопку **Hi** , `Hello World!` он будет записан в консоль в Visual Studio для Mac или Visual Studio при запуске приложения в режиме отладки.
 

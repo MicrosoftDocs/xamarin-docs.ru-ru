@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: d7491af1ced4e8e0309bb3e22298d33ee5a042be
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 25de402742978ed9d2a4e16e87d786a014f596a0
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571549"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933777"
 ---
 # <a name="changes-to-storekit-in-ios-6"></a>Изменения в StoreKit в iOS 6
 
@@ -34,7 +34,7 @@ _в iOS 6 появились два изменения в API комплекта
 Новая функция покупки в приложении в iOS позволяет пользователям просматривать сведения о продукте и покупать или скачивать продукт в приложении.
 Ранее приложениям пришлось бы активировать iTunes, App Store или эротику, что привело бы к выходу пользователя из исходного приложения. Эта новая функция автоматически возвращает пользователя в приложение по завершении работы.
 
-[![](changes-to-storekit-images/image1.png "Automatically returning to an app after purchase")](changes-to-storekit-images/image1.png#lightbox)
+[![Автоматический возврат в приложение после покупки](changes-to-storekit-images/image1.png)](changes-to-storekit-images/image1.png#lightbox)
 
 Ниже приведены примеры того, как это можно было бы использовать.
 
@@ -88,7 +88,7 @@ void Buy (int productId)
 
 Приложение выглядит как на следующем снимке экрана при запуске — загрузка или приобретение полностью выполняется в `SKStoreProductViewController` :
 
-[![](changes-to-storekit-images/image2.png "The app looks like this when running")](changes-to-storekit-images/image2.png#lightbox)
+[![Приложение выглядит следующим образом при запуске](changes-to-storekit-images/image2.png)](changes-to-storekit-images/image2.png#lightbox)
 
 ### <a name="supporting-older-operating-systems"></a>Поддержка более старых операционных систем
 
@@ -107,7 +107,7 @@ if (UIDevice.CurrentDevice.CheckSystemVersion (6,0)) {
 }
 ```
 
-### <a name="errors"></a>ошибки
+### <a name="errors"></a>Ошибки
 
 Если вы используете недопустимый идентификатор Apple ID, произойдет следующая ошибка. это может вызвать путаницу, так как она подразумевает проблему с сетью или проверкой подлинности.
 
@@ -125,7 +125,7 @@ if (UIDevice.CurrentDevice.CheckSystemVersion (6,0)) {
 
 Для публикуемых приложений можно легко найти **идентификатор Apple ID** в iTunes Connect:
 
-[![](changes-to-storekit-images/image3.png "Finding the Apple ID in iTunes Connect")](changes-to-storekit-images/image3.png#lightbox)
+[![Поиск идентификатора Apple ID в iTunes Connect](changes-to-storekit-images/image3.png)](changes-to-storekit-images/image3.png#lightbox)
 
  <a name="Search_API"></a>
 
@@ -135,7 +135,7 @@ Apple предоставляет динамический поисковый API
 
 В результаты также будут включены другие метаданные, включая отображаемые сведения и URL-адреса иллюстраций, которые можно использовать для визуализации продукта в приложении.
 
-Ниже приводится несколько примеров.
+Вот несколько примеров:
 
 - **приложение iBooks** — [ https://itunes.apple.com/search?term=ibooks&amp ; Entity = Software &amp; страна = US](https://itunes.apple.com/search?term=ibooks&amp;entity=software&amp;country=us)
 - **DOT и Кангару iBook** – [ https://itunes.apple.com/search?term=dot+and+the+kangaroo&amp ; Entity = книга &amp; страна = US](https://itunes.apple.com/search?term=dot+and+the+kangaroo&amp;entity=ebook&amp;country=us)
@@ -185,7 +185,7 @@ http://itunes.apple.com/us/app/mwc-2012-unofficial/id496963922?mt=8
 
 В iOS 6 Apple предлагает разновидность серверных продуктов: они будут размещать файлы содержимого на своих серверах. Это значительно упрощает создание серверных продуктов, поскольку вам не требуется работа с отдельным сервером, а пакет Store предоставляет функции фонового скачивания, которые ранее пришлось написать. Чтобы воспользоваться преимуществами размещения Apple, разрешите размещение содержимого для новых продуктов покупки в приложении и измените код комплекта магазина, чтобы воспользоваться его преимуществами. Затем файлы содержимого продукта создаются с помощью Xcode и передаются на серверы Apple для ознакомления и выпуска.
 
-[![](changes-to-storekit-images/image4.png "The build and deliver process")](changes-to-storekit-images/image4.png#lightbox)
+[![Процесс сборки и доставки](changes-to-storekit-images/image4.png)](changes-to-storekit-images/image4.png#lightbox)
 
 Использование магазина приложений для обеспечения покупки в приложении *с размещенным содержимым* требует выполнения следующих настроек и настройки:
 
@@ -198,11 +198,11 @@ http://itunes.apple.com/us/app/mwc-2012-unofficial/id496963922?mt=8
 
 ### <a name="sample-code"></a>Пример кода
 
-В примере проекта *хостеднонконсумаблес* (в StoreKitiOS6. zip) используется размещенное содержимое. Приложение предлагает две главы книги для продажи — содержимое, которое размещается на серверах Apple. Содержимое состоит из текстового файла и изображения, хотя гораздо более сложное содержимое можно использовать в реальных приложениях.
+В примере проекта *хостеднонконсумаблес* (в StoreKitiOS6.zip) используется размещенное содержимое. Приложение предлагает две главы книги для продажи — содержимое, которое размещается на серверах Apple. Содержимое состоит из текстового файла и изображения, хотя гораздо более сложное содержимое можно использовать в реальных приложениях.
 
 Приложение выглядит следующим образом до, во время и после покупки:
 
- [![](changes-to-storekit-images/image5.png "The app looks like this before, during and after a purchase")](changes-to-storekit-images/image5.png#lightbox)
+ [![Приложение выглядит следующим образом, во время и после покупки](changes-to-storekit-images/image5.png)](changes-to-storekit-images/image5.png#lightbox)
 
 Текстовый файл и изображение загружаются и копируются в каталог документов приложения. Дополнительные сведения о различных каталогах, доступных для хранения приложений, см. в [документации по файловой системе](~/ios/app-fundamentals/file-system.md).
 
@@ -210,19 +210,19 @@ http://itunes.apple.com/us/app/mwc-2012-unofficial/id496963922?mt=8
 
 При создании новых продуктов, которые будут использовать размещение содержимого Apple, обязательно выберите **Тип продукта "** неиспользуемый". Другие типы продуктов не поддерживают размещение содержимого. Кроме того, не следует включать размещение содержимого для *существующих* продуктов, которые продаются. включить размещение содержимого только для новых продуктов.
 
- [![](changes-to-storekit-images/image6.png "Select the Non-Consumable product type")](changes-to-storekit-images/image6.png#lightbox)
+ [![Выбор типа продукта, который не поднимается](changes-to-storekit-images/image6.png)](changes-to-storekit-images/image6.png#lightbox)
 
 Введите **идентификатор продукта**. Этот идентификатор потребуется позже при создании содержимого для этого продукта.
 
- [![](changes-to-storekit-images/image7.png "Enter a Product ID")](changes-to-storekit-images/image7.png#lightbox)
+ [![Введите идентификатор продукта](changes-to-storekit-images/image7.png)](changes-to-storekit-images/image7.png#lightbox)
 
 Размещение содержимого задается в разделе сведений. Перед покупкой в приложении снимите флажок **содержимое узла с помощью Apple** CheckBox, если вы хотите отменить его (даже если вы отправили часть тестового содержимого). Однако размещение содержимого невозможно удалить после того, как покупка в приложении будет продолжена.
 
- [![](changes-to-storekit-images/image8.png "Hosting content with Apple")](changes-to-storekit-images/image8.png#lightbox)
+ [![Размещение содержимого с помощью Apple](changes-to-storekit-images/image8.png)](changes-to-storekit-images/image8.png#lightbox)
 
 После включения содержимого размещения продукт будет вводить состояние **Ожидание отправки** и показывать следующее сообщение:
 
- [![](changes-to-storekit-images/image9.png "The product will enter Waiting for Upload status and show this message")](changes-to-storekit-images/image9.png#lightbox)
+ [![Продукт будет вводить состояние ожидания отправки и показывать это сообщение](changes-to-storekit-images/image9.png)](changes-to-storekit-images/image9.png#lightbox)
 
 Пакет содержимого должен быть создан с помощью Xcode и отправлен с использованием средства архивации. Инструкции по созданию пакетов содержимого приведены в следующем разделе **Создание. Файлы PKG**.
 
@@ -249,17 +249,17 @@ http://itunes.apple.com/us/app/mwc-2012-unofficial/id496963922?mt=8
 
 Для начала выберите **файл > создать проект** в меню и выберите **содержимое покупки в приложении**:
 
- [![](changes-to-storekit-images/image10.png "Choose In-App Purchase Content")](changes-to-storekit-images/image10.png#lightbox)
+ [![Выбор содержимого для покупки в приложении](changes-to-storekit-images/image10.png)](changes-to-storekit-images/image10.png#lightbox)
 
 Введите **Название продукта** и **идентификатор компании** , чтобы **идентификатор пакета** совпадал с **идентификатором продукта** , введенным в iTunes Connect для этого продукта.
 
-[![](changes-to-storekit-images/image11.png "Enter the  Name and Identifier")](changes-to-storekit-images/image11.png#lightbox)
+[![Введите имя и идентификатор](changes-to-storekit-images/image11.png)](changes-to-storekit-images/image11.png#lightbox)
 
 Теперь у вас будет пустой проект **содержимого для покупки в приложении** . Можно щелкнуть правой кнопкой мыши и **Добавить файлы...** или перетащите их в **Навигатор по проектам**. Убедитесь в правильности **ContentVersion** (она должна начинаться с 1,0, но если позже вы решите обновить содержимое, не забудьте увеличить его).
 
 На этом снимке экрана показан Xcode с файлами содержимого, входящими в проект, и записями plist, видимыми в главном окне:
 
-[![](changes-to-storekit-images/image12.png "This screenshot shows Xcode with the content files included in the project and the plist entries visible in the main window")](changes-to-storekit-images/image12.png#lightbox)
+[![На этом снимке экрана показано Xcode с файлами содержимого, входящими в проект, и записями plist, видимыми в главном окне.](changes-to-storekit-images/image12.png)](changes-to-storekit-images/image12.png#lightbox)
 
 После добавления всех файлов содержимого можно сохранить этот проект и изменить его позже или начать процесс отправки.
 
@@ -267,20 +267,20 @@ http://itunes.apple.com/us/app/mwc-2012-unofficial/id496963922?mt=8
 
 Самый простой способ отправить пакеты содержимого — с помощью **средства архивирования Xcode**. Выберите **продукт > Архив** в меню, чтобы начать:
 
-![](changes-to-storekit-images/image13.png "Choose Archiven")
+![Выберите Арчивен](changes-to-storekit-images/image13.png)
 
 Пакет содержимого будет отображаться в архиве, как показано ниже.
 Тип архива и значок показывают, что эта строка представляет собой **Архив содержимого для покупки в приложении**. Нажмите кнопку **проверить...** для проверки пакета содержимого на наличие ошибок без фактического выполнения отправки.
 
-[![](changes-to-storekit-images/image14.png "Validate the package")](changes-to-storekit-images/image14.png#lightbox)
+[![Проверка пакета](changes-to-storekit-images/image14.png)](changes-to-storekit-images/image14.png#lightbox)
 
 Войдите с помощью учетных данных iTunes Connect:
 
-[![](changes-to-storekit-images/image15.png "Login with your iTunes Connect credentials")](changes-to-storekit-images/image15.png#lightbox)
+[![Вход с использованием учетных данных iTunes Connect](changes-to-storekit-images/image15.png)](changes-to-storekit-images/image15.png#lightbox)
 
 Выберите правильное приложение и покупка в приложении, чтобы связать это содержимое с:
 
-[![](changes-to-storekit-images/image16.png "Choose the correct application and in-app purchase to associate this content with")](changes-to-storekit-images/image16.png#lightbox)
+[![Выберите правильное приложение и покупка в приложении, чтобы связать это содержимое с](changes-to-storekit-images/image16.png)](changes-to-storekit-images/image16.png#lightbox)
 
 Вы должны увидеть сообщение, как на следующем снимке экрана:
 
@@ -296,23 +296,23 @@ http://itunes.apple.com/us/app/mwc-2012-unofficial/id496963922?mt=8
 
 Выполните вход еще раз:
 
-[![](changes-to-storekit-images/image15.png "Login in")](changes-to-storekit-images/image15.png#lightbox)
+[![Вход в](changes-to-storekit-images/image15.png)](changes-to-storekit-images/image15.png#lightbox)
 
 Выберите правильное приложение и запись покупки в приложении для отправки содержимого в:
 
-[![](changes-to-storekit-images/image20.png "Choose the application and in-app purchase record")](changes-to-storekit-images/image20.png#lightbox)
+[![Выбор приложения и записи о покупках в приложении](changes-to-storekit-images/image20.png)](changes-to-storekit-images/image20.png#lightbox)
 
 Подождите, пока отправляются файлы:
 
-[![](changes-to-storekit-images/image21.png "The content upload dialog")](changes-to-storekit-images/image21.png#lightbox)
+[![Диалоговое окно отправки содержимого](changes-to-storekit-images/image21.png)](changes-to-storekit-images/image21.png#lightbox)
 
 После завершения передачи появится сообщение о том, что содержимое отправлено в App Store.
 
-[![](changes-to-storekit-images/image22.png "An example successful upload message")](changes-to-storekit-images/image22.png#lightbox)
+[![Пример успешного отправки сообщения](changes-to-storekit-images/image22.png)](changes-to-storekit-images/image22.png#lightbox)
 
 После этого при возврате на страницу продукта в iTunes Connect он отобразит сведения о пакете и будет **готов к отправке** состояния. Если продукт находится в этом состоянии, можно начать тестирование в среде "песочницы". НЕ нужно отправлять продукт для тестирования в песочнице.
 
-[![](changes-to-storekit-images/image23.png "iTunes Connect it will show the package details and be in Ready to Submit status")](changes-to-storekit-images/image23.png#lightbox)
+[![iTunes Connect он отобразит сведения о пакете и будет готов к отправке состояния](changes-to-storekit-images/image23.png)](changes-to-storekit-images/image23.png#lightbox)
 
 Это может занять некоторое время (например, через несколько минут) между отправкой архива и обновлением состояния iTunes Connect. Вы можете отправить продукт для проверки отдельно или отправить его вместе с двоичным файлом приложения. Только после официального одобрения Apple содержимое будет доступно в рабочем магазине приложений для приобретения в вашем приложении.
 
@@ -320,7 +320,7 @@ http://itunes.apple.com/us/app/mwc-2012-unofficial/id496963922?mt=8
 
 Использование Xcode и средства архивации для создания и отправки пакета размещенного содержимого означает, что содержимое самого пакета не отображается. Файлы и каталоги в пакетах, созданных для примера приложения, выглядят как на снимке экрана ниже, где файл **plist** находится в корневом каталоге и файлы продукта в подкаталоге **содержимого** :
 
-[![](changes-to-storekit-images/image24.png "The plist file in the root and the product files in a Contents subdirectory")](changes-to-storekit-images/image24.png#lightbox)
+[![Файл plist в корневом каталоге и файлах продуктов в подкаталоге содержимого](changes-to-storekit-images/image24.png)](changes-to-storekit-images/image24.png#lightbox)
 
 Обратите внимание на структуру каталогов пакета (особенно расположение файлов в `Contents` подкаталоге), так как вам потребуется разобраться с этими сведениями, чтобы извлечь файлы из пакета на устройстве.
 
@@ -340,7 +340,7 @@ http://itunes.apple.com/us/app/mwc-2012-unofficial/id496963922?mt=8
 
 Последовательность событий, возникающих при приобретении продукта с размещенным содержимым и показанный в этой схеме.
 
-[![](changes-to-storekit-images/image25.png "The sequence of events that occurs when a product with hosted content is purchased and download")](changes-to-storekit-images/image25.png#lightbox)
+[![Последовательность событий, возникающих при приобретении и скачивании продукта с размещенным содержимым](changes-to-storekit-images/image25.png)](changes-to-storekit-images/image25.png#lightbox)
 
 1. Новые продукты можно создать в iTunes Connect с включенным размещенным содержимым. Реальное содержимое создается отдельно в Xcode (как просто перетаскивание файлов в папку), а затем заархивировано и отправлено в iTunes (код не требуется). После этого каждый продукт отправляется на утверждение, после чего он становится доступным для приобретения. В примере кода эти идентификаторы продуктов жестко, но размещение содержимого с помощью Apple является более гибким, если список доступных продуктов хранится на удаленном сервере, чтобы его можно было обновить при отправке новых продуктов и содержимого в iTunes Connect.
 1. Когда пользователь приобретает продукт, транзакция помещается в очередь платежей для обработки.
@@ -376,7 +376,7 @@ http://itunes.apple.com/us/app/mwc-2012-unofficial/id496963922?mt=8
 
 Взаимодействие между классами в образце кода показано на этой схеме (код, относящийся к размещенному содержимому, показан зеленым цветом):
 
-[![](changes-to-storekit-images/image26.png "Hosted content purchases is shown in green in this diagram")](changes-to-storekit-images/image26.png#lightbox)
+[![Покупка размещенного содержимого на этой схеме показана зеленым цветом](changes-to-storekit-images/image26.png)](changes-to-storekit-images/image26.png#lightbox)
 
 В оставшейся части этого раздела показан пример кода, в котором используются эти классы.
 

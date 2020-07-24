@@ -10,12 +10,12 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 76724ff17613fcebe35cb68518a1c932eee8aad7
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: fb4d1e28fded70005ef23eb4f7540eccd2fba372
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84128730"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939312"
 ---
 # <a name="page-lifecycle-events-on-android"></a>События жизненного цикла страницы в Android
 
@@ -58,7 +58,7 @@ Xamarin.Forms.Application.Current.On<Android>()
 
 В результате [`Disappearing`](xref:Xamarin.Forms.Page.Appearing) [`Appearing`](xref:Xamarin.Forms.Page.Appearing) события и страницы не будут срабатывать при приостановке приложения и возобновлении соответственно, и что если экранная клавиатура отображалась при приостановке приложения, она также будет отображаться при возобновлении работы приложения:
 
-[![](page-lifecycle-events-images/keyboard-on-resume.png "Lifecycle Events Platform-Specific")](page-lifecycle-events-images/keyboard-on-resume-large.png#lightbox "Lifecycle Events Platform-Specific")
+[![События жизненного цикла — специфичные для платформы](page-lifecycle-events-images/keyboard-on-resume.png)](page-lifecycle-events-images/keyboard-on-resume-large.png#lightbox "События жизненного цикла — специфичные для платформы")
 
 ## <a name="related-links"></a>Связанные ссылки
 

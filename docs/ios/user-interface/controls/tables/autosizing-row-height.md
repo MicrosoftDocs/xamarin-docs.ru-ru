@@ -7,65 +7,65 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: 4129370ecb465340a893e0a7f16703a08cc1db72
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 03e6a513f367be4c19f925427c8a896b1fc87107
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021929"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996335"
 ---
 # <a name="auto-sizing-row-height-in-xamarinios"></a>Автоматическое изменение высоты строки в Xamarin. iOS
 
-Начиная с iOS 8, компания Apple добавила возможность создания табличного представления (`UITableView`), которое может автоматически увеличивать и уменьшать высоту заданной строки в зависимости от размера ее содержимого с помощью автоматического макета, классов размеров и ограничений.
+Начиная с iOS 8, компания Apple добавила возможность создания табличного представления ( `UITableView` ), которое может автоматически увеличивать и уменьшать высоту заданной строки на основе размера содержимого с помощью автоматического макета, классов размеров и ограничений.
 
 в iOS 11 добавлена возможность автоматического расширения строк. Размеры верхних, нижних колонтитулов и ячеек теперь можно изменять автоматически в зависимости от их содержимого. Однако если таблица создана в конструкторе iOS, Interface Builder или если она имеет фиксированную высоту строк, необходимо вручную включить автоматическое изменение размера ячеек, как описано в этом разделе.
 
 ## <a name="cell-layout-in-the-ios-designer"></a>Макет ячеек в конструкторе iOS
 
-Откройте раскадровку для табличного представления, для которой нужно Автоподбор размера строки в конструкторе iOS, выберите *прототип* ячейки и разработайте макет ячейки. Пример:
+Откройте раскадровку для табличного представления, для которой нужно Автоподбор размера строки в конструкторе iOS, выберите *прототип* ячейки и разработайте макет ячейки. Например.
 
-[![](autosizing-row-height-images/table01.png "The Cell's Prototype design")](autosizing-row-height-images/table01.png#lightbox)
+[![Конструкция прототипа ячейки](autosizing-row-height-images/table01.png)](autosizing-row-height-images/table01.png#lightbox)
 
-Для каждого элемента в прототипе добавьте ограничения для сохранения элементов в правильном положении при изменении размеров представления таблицы для вращения или различных размеров экрана устройства iOS. Например, закреплять `Title` в верхней, левой и правой части *представления содержимого*ячейки:
+Для каждого элемента в прототипе добавьте ограничения для сохранения элементов в правильном положении при изменении размеров представления таблицы для вращения или различных размеров экрана устройства iOS. Например, закрепите в `Title` верхней, левой и правой части *представления содержимого*ячейки:
 
-[![](autosizing-row-height-images/table02.png "Pinning the Title to the top, left and right of the Cells Content View")](autosizing-row-height-images/table02.png#lightbox)
+[![Закрепление заголовка в верхней, левой и правой части представления содержимого ячеек](autosizing-row-height-images/table02.png)](autosizing-row-height-images/table02.png#lightbox)
 
-В нашем примере таблицы небольшие `Label` (в `Title`) — это поле, которое может сжиматься и увеличиваться для увеличения или уменьшения высоты строки. Чтобы добиться этого результата, добавьте следующие ограничения, чтобы закрепить левую, правую, верхнюю и нижнюю части Метки:
+В нашем примере таблицы мелким `Label` (под `Title` ) является поле, которое может сжиматься и увеличиваться для увеличения или уменьшения высоты строки. Чтобы добиться этого результата, добавьте следующие ограничения, чтобы закрепить левую, правую, верхнюю и нижнюю части Метки:
 
-[![](autosizing-row-height-images/table03.png "These constraints to pin the left, right, top and bottom of the label")](autosizing-row-height-images/table03.png#lightbox)
+[![Эти ограничения позволяют закрепить левую, правую, верхнюю и нижнюю части метки](autosizing-row-height-images/table03.png)](autosizing-row-height-images/table03.png#lightbox)
 
 Теперь, когда мы полностью ограничены элементами в ячейке, необходимо уточнить, какой элемент следует растянуть. Для этого задайте приоритет **Хуггинг содержимого** и **Сжатие содержимого** , как это необходимо в разделе **макета** панель свойств.
 
-[![](autosizing-row-height-images/table03a.png "The Layout section of the Properties Pad")](autosizing-row-height-images/table03a.png#lightbox)
+[![Раздел макета Панель свойств](autosizing-row-height-images/table03a.png)](autosizing-row-height-images/table03a.png#lightbox)
 
 Задайте для элемента, который требуется расширить, значение приоритета **хуггинг и более** **низкое** значение приоритета сопротивления.
 
 Далее необходимо выбрать прототип ячейки и присвоить ему уникальный **идентификатор**:
 
-[![](autosizing-row-height-images/table04.png "Giving the Cell Prototype a unique Identifier")](autosizing-row-height-images/table04.png#lightbox)
+[![Присвоение прототипу ячейки уникального идентификатора](autosizing-row-height-images/table04.png)](autosizing-row-height-images/table04.png#lightbox)
 
-В нашем примере `GrowCell`. Это значение будет использоваться позже при заполнении таблицы.
+В нашем примере — `GrowCell` . Это значение будет использоваться позже при заполнении таблицы.
 
 > [!IMPORTANT]
-> Если таблица содержит более одного типа ячеек (**прототип**), необходимо убедиться, что каждый тип имеет собственные уникальные `Identifier`, чтобы автоматическое изменение размера строк работало.
+> Если таблица содержит более одного типа ячеек (**прототип**), необходимо убедиться, что каждый тип имеет уникальное `Identifier` значение, чтобы автоматическое изменение размера строк работало.
 
-Для каждого элемента прототипа ячейки присвойте ему **имя** , чтобы предоставить его C# коду. Пример:
+Для каждого элемента прототипа ячейки присвойте **имя** , чтобы предоставить его коду C#. Например.
 
-[![](autosizing-row-height-images/table05.png "Assign a Name to expose it to C# code")](autosizing-row-height-images/table05.png#lightbox)
+[![Назначение имени для предоставления его коду C#](autosizing-row-height-images/table05.png)](autosizing-row-height-images/table05.png#lightbox)
 
-Затем добавьте пользовательский класс для `UITableViewController`, `UITableView` и `UITableCell` (прототип). Пример: 
+Затем добавьте пользовательский класс для `UITableViewController` , `UITableView` и `UITableCell` (прототип). Например.
 
-[![](autosizing-row-height-images/table06.png "Adding a custom class for the UITableViewController, the UITableView and the UITableCell")](autosizing-row-height-images/table06.png#lightbox)
+[![Добавление пользовательского класса для Уитаблевиевконтроллер, Уитаблевиев и Уитаблецелл](autosizing-row-height-images/table06.png)](autosizing-row-height-images/table06.png#lightbox)
 
-Наконец, чтобы убедиться, что в нашей метке отображается все ожидаемое содержимое, задайте для свойства **строки** значение `0`:
+Наконец, чтобы убедиться, что в нашей метке отображается все ожидаемое содержимое, задайте для свойства **строки** значение `0` :
 
-[![](autosizing-row-height-images/table06.png "The Lines property set to 0")](autosizing-row-height-images/table06a.png#lightbox)
+[![Свойство Lines, установленное в значение 0](autosizing-row-height-images/table06.png)](autosizing-row-height-images/table06a.png#lightbox)
 
 Определив пользовательский интерфейс, добавим код, чтобы включить автоматическое изменение высоты строк.
 
 ## <a name="enabling-auto-resizing-height"></a>Включение автоподбора высоты
 
-В представлении источника данных (`UITableViewDatasource`) или исходной (`UITableViewSource`) табличного представления при выводе ячейки в очередь необходимо использовать `Identifier`, определенные в конструкторе. Пример:
+В представлении DataSource ( `UITableViewDatasource` ) или Source () нашего табличного представления `UITableViewSource` , когда мы выведем из очереди ячейку, нам нужно использовать тот `Identifier` , который мы определили в конструкторе. Например.
 
 ```csharp
 public string CellID {
@@ -87,7 +87,7 @@ public override UITableViewCell GetCell (UITableView tableView, Foundation.NSInd
 }
 ```
 
-По умолчанию табличное представление будет настроено для автоподбора высоты строки. Чтобы убедиться в этом, свойству `RowHeight` должно быть присвоено значение `UITableView.AutomaticDimension`. Также необходимо задать свойство `EstimatedRowHeight` в `UITableViewController`. Пример:
+По умолчанию табличное представление будет настроено для автоподбора высоты строки. Чтобы убедиться в этом, `RowHeight` свойству следует присвоить значение `UITableView.AutomaticDimension` . Также необходимо задать `EstimatedRowHeight` свойство в нашем `UITableViewController` . Например.
 
 ```csharp
 public override void ViewWillAppear (bool animated)
@@ -105,9 +105,9 @@ public override void ViewWillAppear (bool animated)
 
 Эта оценка не должна быть точной, просто приблизительная оценка средней высоты каждой строки в табличном представлении.
 
-При использовании этого кода при запуске приложения каждая строка будет сжиматься и увеличиваться в зависимости от высоты последней метки в прототипе ячейки. Пример:
+При использовании этого кода при запуске приложения каждая строка будет сжиматься и увеличиваться в зависимости от высоты последней метки в прототипе ячейки. Например.
 
-[![](autosizing-row-height-images/table07.png "A sample table run")](autosizing-row-height-images/table07.png#lightbox)
+[![Пример выполнения таблицы](autosizing-row-height-images/table07.png)](autosizing-row-height-images/table07.png#lightbox)
 
 ## <a name="related-links"></a>Связанные ссылки
 

@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fb873102bfb8568b8298a39ea2429fb6c27af175
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 785532d1a8fedfaef367c8fb8ae437220c3de9c4
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137726"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938181"
 ---
 # <a name="drawing-a-simple-circle-in-skiasharp"></a>Рисование простого круга в SkiaSharp
 
@@ -27,7 +27,7 @@ _Изучите основы рисования SkiaSharp, включая хол
 
 Программа [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) содержит весь пример кода для этой серии статей SkiaSharp. Первая страница имеет право на **простой круг** и вызывает класс страницы [`SimpleCirclePage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs) . В этом коде показано, как нарисовать окружность в центре страницы с радиусом 100 пикселей. Контур окружности красного цвета, а внутренняя часть окружности — синим.
 
-![](circle-images/circleexample.png "A blue circle outlined in red")
+![Синий круг, выделенный красным цветом](circle-images/circleexample.png)
 
 [`SimpleCircle`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs)Класс Page является производным от `ContentPage` и содержит две `using` директивы для пространств имен SkiaSharp:
 
@@ -146,7 +146,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Вот программа, выполняемая в iOS и Android:
 
-[![](circle-images/simplecircle-small.png "Triple screenshot of the Simple Circle page")](circle-images/simplecircle-large.png#lightbox "Triple screenshot of the Simple Circle page")
+[![Тройной снимок экрана простой круговой страницы](circle-images/simplecircle-small.png)](circle-images/simplecircle-large.png#lightbox "Тройной снимок экрана простой круговой страницы")
 
 При самостоятельном запуске программы можно превратить телефон или симулятор в сторону, чтобы увидеть, как изображение перерисовывается. Каждый раз, когда необходимо перерисовать график, `PaintSurface` обработчик событий вызывается снова.
 

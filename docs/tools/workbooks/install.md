@@ -6,12 +6,12 @@ ms.assetid: 9D4E10E8-A288-4C6C-9475-02969198C119
 author: davidortinau
 ms.author: daortin
 ms.date: 06/19/2018
-ms.openlocfilehash: a044169f86b46abff4158011e99320c528180ffc
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 99ecf661679f02bda6cfffa6093bd4a904676bce
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573889"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939351"
 ---
 # <a name="workbooks-installation-and-requirements"></a>Установка и требования к книгам
 
@@ -37,7 +37,7 @@ ms.locfileid: "84573889"
 
 ## <a name="requirements"></a>Требования
 
-#### <a name="supported-operating-systems"></a>Supported Operating Systems
+#### <a name="supported-operating-systems"></a>Поддерживаемые операционные системы
 
 - **Mac** -OS X 10,11 или более поздней версии
 - **Windows** 7 или более поздняя (с Internet Explorer 11 или более поздней версии и .NET 4.6.1 или более поздней версии)
@@ -57,7 +57,7 @@ ms.locfileid: "84573889"
 
 Сообщите о [проблемах на GitHub][bugs]и включите в него все приведенные ниже сведения.
 
-### <a name="log-files"></a>Файлы журналов
+### <a name="log-files"></a>Файлы журнала
 
 Всегда прикреплять книги файлы журналов клиента:
 
@@ -118,7 +118,7 @@ Visual Studio
 
 В зависимости от того, как были получены книги, может потребоваться выполнить две процедуры удаления. Проверьте оба этих параметра, чтобы полностью удалить программное обеспечение.
 
-#### <a name="visual-studio-installer"></a>Visual Studio Installer
+#### <a name="visual-studio-installer"></a>Visual Studio Installer
 
 Если у вас есть Visual Studio 2017, откройте **Visual Studio Installer**и просмотрите **отдельные компоненты** для **Xamarin Workbooks**. Если флажок установлен, снимите его и нажмите кнопку **изменить** , чтобы удалить.
 
@@ -128,13 +128,13 @@ Visual Studio
 
 > **Запуск параметров > > приложений системы > & компонентов**
 
-![](install-images/windows-remove.png "Xamarin Workbooks as listed in &quot;Apps &amp; features&quot;")
+![Xamarin Workbooks, как указано &quot; в &amp; функциях приложений&quot;](install-images/windows-remove.png)
 
 **По-прежнему следует выполнить процедуру Visual Studio Installer убедиться, что книги не переустанавливаются без вашего ведома.**
 
 <a name="uninstall-macos"></a>
 
-### <a name="macos"></a>MacOS
+### <a name="macos"></a>macOS
 
 Начиная с [1.2.2](https://github.com/xamarin/release-notes-archive/blob/master/release-notes/interactive/interactive-1.2.md), Xamarin Workbooks можно удалить из терминала, выполнив:
 

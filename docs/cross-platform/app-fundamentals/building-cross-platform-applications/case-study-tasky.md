@@ -6,12 +6,12 @@ ms.assetid: B581B2D0-9890-C383-C654-0B0E12DAD5A6
 author: davidortinau
 ms.author: daortin
 ms.date: 03/23/2017
-ms.openlocfilehash: 71d5ed3512980086d244acc5a604d7b33a5dd77c
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 87ba471dad102059788695f3fe50633bc1a3de0c
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571354"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86930186"
 ---
 # <a name="cross-platform-app-case-study-tasky"></a>Пример межплатформенного приложения: задача
 
@@ -42,7 +42,7 @@ ms.locfileid: "84571354"
 Начните с высокого уровня проекта, который можно реализовать на целевых платформах. Обратите внимание на ограничения пользовательского интерфейса Platform-указанной. Например, в `TabBarController` iOS может отображаться более пяти кнопок, в то время как Windows Phone эквивалент может отображать до четырех.
 Нарисуйте экранный поток с помощью выбранного инструмента (документ работает).
 
- [![](case-study-tasky-images/taskydesign.png "Draw the screen-flow using the tool of your choice paper works")](case-study-tasky-images/taskydesign.png#lightbox)
+ [![Нарисуйте экранный поток с помощью инструмента на бумаге для выбора](case-study-tasky-images/taskydesign.png)](case-study-tasky-images/taskydesign.png#lightbox)
 
  <a name="Data_Model"></a>
 
@@ -79,7 +79,7 @@ ms.locfileid: "84571354"
 - **Общий код** — это общий проект, содержащий повторно применяемый код для хранения данных задачи; Предоставьте класс модели и API для управления сохранением и загрузкой данных.
 - **Код, зависящий от платформы** — зависящие от платформы проекты, которые реализуют собственный пользовательский интерфейс для каждой операционной системы, используя общий код в качестве серверной части.
 
-[![](case-study-tasky-images/taskypro-architecture.png "Platform-specific projects implement a native UI for each operating system, utilizing the common code as the back end")](case-study-tasky-images/taskypro-architecture.png#lightbox)
+[![Проекты, зависящие от платформы, реализуют собственный пользовательский интерфейс для каждой операционной системы, используя общий код в качестве серверной части](case-study-tasky-images/taskypro-architecture.png)](case-study-tasky-images/taskypro-architecture.png#lightbox)
 
 Эти две части описаны в следующих разделах.
 
@@ -93,11 +93,11 @@ ms.locfileid: "84571354"
 
 Полный проект PCL показан ниже. Весь код в переносимой библиотеке совместим с каждой целевой платформой. При развертывании каждое собственное приложение будет ссылаться на эту библиотеку.
 
-![](case-study-tasky-images/portable-project.png "When deployed, each native app will reference that library")
+![При развертывании каждое собственное приложение будет ссылаться на эту библиотеку.](case-study-tasky-images/portable-project.png)
 
 На схеме классов ниже показаны классы, сгруппированные по слоям. `SQLiteConnection`Класс — это стандартный код из пакета SQLite-NET. Остальные классы являются пользовательским кодом для задачи. `TaskItemManager`Классы и `TaskItem` представляют API, который предоставляется приложениям для конкретной платформы.
 
- [![](case-study-tasky-images/classdiagram-core.png "The TaskItemManager and TaskItem classes represent the API that is exposed to the platform-specific applications")](case-study-tasky-images/classdiagram-core.png#lightbox)
+ [![Классы Таскитемманажер и TaskItem представляют API, который предоставляется приложениям для конкретной платформы.](case-study-tasky-images/classdiagram-core.png)](case-study-tasky-images/classdiagram-core.png#lightbox)
 
 Использование пространств имен для разделения уровней помогает управлять ссылками между слоями. Проекты, зависящие от платформы, должны включать только `using` оператор для бизнес-уровня. Уровень доступа к данным и уровень данных должны инкапсулироваться через API, предоставляемый `TaskItemManager` на уровне бизнес-данных.
 
@@ -255,11 +255,11 @@ path> /Documents/TaskDB.db3" для Android или просто "таскдб. d
 
 Существует несколько классов, необходимых для реализации приложения задач iOS с помощью общего проекта PCL для хранения и извлечения данных. Полный проект iOS Xamarin. iOS показан ниже:
 
- ![](case-study-tasky-images/taskyios-solution.png "iOS project is shown here")
+ ![Здесь показан проект iOS](case-study-tasky-images/taskyios-solution.png)
 
 Классы показаны на этой диаграмме, сгруппированные по слоям.
 
- [![](case-study-tasky-images/classdiagram-android.png "The classes are shown in this diagram, grouped into layers")](case-study-tasky-images/classdiagram-android.png#lightbox)
+ [![Классы показаны на этой диаграмме, сгруппированные по слоям](case-study-tasky-images/classdiagram-android.png)](case-study-tasky-images/classdiagram-android.png#lightbox)
 
  <a name="References"></a>
 
@@ -270,7 +270,7 @@ path> /Documents/TaskDB.db3" для Android или просто "таскдб. d
 Он также должен ссылаться на `TaskyPortableLibrary` проект PCL.
 Список ссылок показан здесь:
 
- ![](case-study-tasky-images/taskyios-references.png "The references list is shown here")
+ ![Список ссылок показан здесь](case-study-tasky-images/taskyios-references.png)
 
 Уровень приложения и уровень пользовательского интерфейса реализуются в этом проекте с помощью этих ссылок.
 
@@ -328,7 +328,7 @@ public class TaskDialog {
 
 Начальный экран — это `MonoTouch.Dialog` экран, на котором отображается список задач из базы данных SQLite. Он наследует от `DialogViewController` и реализует код, чтобы установить в значение, `Root` содержащее коллекцию `TaskItem` объектов для вывода.
 
- [![](case-study-tasky-images/ios-taskylist.png "It inherits from DialogViewController and implements code to set the Root to contain a collection of TaskItem objects for display")](case-study-tasky-images/ios-taskylist.png#lightbox)
+ [![Он наследует от Диалогвиевконтроллер и реализует код для установки корневого элемента, содержащего коллекцию объектов TaskItem для вывода.](case-study-tasky-images/ios-taskylist.png)](case-study-tasky-images/ios-taskylist.png#lightbox)
 
 Ниже приведены два основных метода отображения списка задач и взаимодействия с ним.
 
@@ -345,7 +345,7 @@ public class TaskDialog {
 
 На этом снимке экрана показан пустой экран, демонстрирующий `Entry` атрибут установки текста водяного знака в полях " **имя** " и " **Примечания** ":
 
- [![](case-study-tasky-images/ios-taskydetail.png "This screenshot shows an empty screen that demonstrates the Entry attribute setting the watermark text in the Name and Notes fields")](case-study-tasky-images/ios-taskydetail.png#lightbox)
+ [![На этом снимке экрана показан пустой экран, демонстрирующий атрибут записи, задавая текст водяного знака в полях "имя" и "Примечания".](case-study-tasky-images/ios-taskydetail.png)](case-study-tasky-images/ios-taskydetail.png#lightbox)
 
 Функциональность экрана **сведений о задачах** (например, сохранение или удаление задачи) должна быть реализована в `HomeScreen` классе, так как в этом случае `MonoTouch.Dialog.BindingContext` создается. `HomeScreen`Экран сведений о задачах поддерживается следующими методами.
 
@@ -359,11 +359,11 @@ public class TaskDialog {
 
 Полный проект Xamarin. Android приведен ниже.
 
- ![](case-study-tasky-images/taskyandroid-solution.png "Android project is pictured here")
+ ![Проект Android отображается здесь](case-study-tasky-images/taskyandroid-solution.png)
 
 Схема классов с классами, сгруппированными по слоям:
 
- [![](case-study-tasky-images/classdiagram-android.png "The class diagram, with classes grouped by layer")](case-study-tasky-images/classdiagram-android.png#lightbox)
+ [![Схема классов с классами, сгруппированными по слоям](case-study-tasky-images/classdiagram-android.png)](case-study-tasky-images/classdiagram-android.png#lightbox)
 
  <a name="References"></a>
 
@@ -373,7 +373,7 @@ public class TaskDialog {
 
 Он также должен ссылаться на проект PCL (например, Таскипортаблелибрари) для доступа к общим данным и коду бизнес-уровня.
 
- ![](case-study-tasky-images/taskyandroid-references.png "TaskyPortableLibrary to access the common data and business layer code")
+ ![Таскипортаблелибрари доступ к общим данным и коду бизнес-уровня](case-study-tasky-images/taskyandroid-references.png)
 
  <a name="Application_Layer_(AL)"></a>
 
@@ -399,7 +399,7 @@ public class TaskDialog {
 
 Начальный экран состоит из подкласса действия `HomeScreen` и `HomeScreen.axml` файла, определяющего макет (положение кнопки и списка задач). Экран выглядит следующим образом:
 
- [![](case-study-tasky-images/android-taskylist.png "The screen looks like this")](case-study-tasky-images/android-taskylist.png#lightbox)
+ [![Экран выглядит следующим образом:](case-study-tasky-images/android-taskylist.png)](case-study-tasky-images/android-taskylist.png#lightbox)
 
 В коде на начальном экране определяются обработчики для нажатия кнопки и выбора элементов в списке, а также заполнения списка в `OnResume` методе (чтобы он отражал изменения, внесенные на экране сведений о задаче). Данные загружаются с использованием бизнес-уровня `TaskItemManager` и `TaskListAdapter` с уровня приложения.
 
@@ -409,7 +409,7 @@ public class TaskDialog {
 
 Экран сведения о задаче также состоит из `Activity` подкласса и файла макета AXML. Макет определяет расположение элементов управления вводом, а класс C# определяет поведение для загрузки и сохранения `TaskItem` объектов.
 
- [![](case-study-tasky-images/android-taskydetail.png "The class defines the behavior to load and save TaskItem objects")](case-study-tasky-images/android-taskydetail.png#lightbox)
+ [![Класс определяет поведение для загрузки и сохранения объектов TaskItem](case-study-tasky-images/android-taskydetail.png)](case-study-tasky-images/android-taskydetail.png#lightbox)
 
 Все ссылки на библиотеку PCL проходят через `TaskItemManager` класс.
 
@@ -418,11 +418,11 @@ public class TaskDialog {
 ## <a name="windows-phone-app"></a>Приложение Windows Phone
 Полный проект Windows Phone:
 
- ![](case-study-tasky-images/taskywp7-solution.png "Windows Phone App The complete Windows Phone project")
+ ![Windows Phone приложение полный проект Windows Phone](case-study-tasky-images/taskywp7-solution.png)
 
 На приведенной ниже схеме представлены классы, сгруппированные по уровням.
 
- [![](case-study-tasky-images/classdiagram-wp7.png "This diagram presents the classes grouped into layers")](case-study-tasky-images/classdiagram-wp7.png#lightbox)
+ [![На этой диаграмме представлены классы, сгруппированные по уровням](case-study-tasky-images/classdiagram-wp7.png)](case-study-tasky-images/classdiagram-wp7.png#lightbox)
 
  <a name="References"></a>
 
@@ -432,7 +432,7 @@ public class TaskDialog {
 
 Он также должен ссылаться на проект PCL (например, `TaskyPortableLibrary`) для использования `TaskItem` класса и базы данных.
 
- ![](case-study-tasky-images/taskywp7-references.png "TaskyPortableLibrary to utilize the TaskItem class and database")
+ ![Таскипортаблелибрари для использования класса и базы данных TaskItem](case-study-tasky-images/taskywp7-references.png)
 
  <a name="Application_Layer_(AL)"></a>
 
@@ -479,7 +479,7 @@ XAML имеет уникальную возможность привязки д�
 
 Приложение использует стандартную структуру пользовательского интерфейса iOS, например кнопку "Добавить", расположенную на панели навигации, и используя встроенный значок " **плюс" (+)** . Он также использует `UINavigationController` поведение кнопки "назад" по умолчанию и поддерживает "Прокрутка на удаление" в таблице.
 
- [![](case-study-tasky-images/ios-taskylist.png "Он также использует поведение Уинавигатионконтроллер по умолчанию для кнопки возврата и поддерживает прокрутку на удаление в таблице.")](case-study-tasky-images/ios-taskylist.png#lightbox) [![](case-study-tasky-images/ios-taskylist.png "Он также использует поведение Уинавигатионконтроллер по умолчанию для кнопки возврата и поддерживает прокрутку на удаление в таблице.")](case-study-tasky-images/ios-taskylist.png#lightbox)
+ [ ![ Он также использует поведение кнопки уинавигатионконтроллер по умолчанию и поддерживает прокрутку на удаление в таблице](case-study-tasky-images/ios-taskylist.png)](case-study-tasky-images/ios-taskylist.png#lightbox) , а [ ![ также поведение по умолчанию для кнопки «назад» уинавигатионконтроллер и поддерживает прокрутку в таблице](case-study-tasky-images/ios-taskylist.png)](case-study-tasky-images/ios-taskylist.png#lightbox) .
 
  <a name="Android"></a>
 
@@ -487,7 +487,7 @@ XAML имеет уникальную возможность привязки д�
 
 Приложение Android использует встроенные элементы управления, включая встроенный макет для строк, требующих отображения "Tick". В дополнение к экранной кнопке «Back» поддерживается поведение оборудования и системы обратно.
 
- [![](case-study-tasky-images/android-taskylist.png "The hardware/system back behavior is supported in addition to an on-screen back button")](case-study-tasky-images/android-taskylist.png#lightbox)[![](case-study-tasky-images/android-taskylist.png "The hardware/system back behavior is supported in addition to an on-screen back button")](case-study-tasky-images/android-taskylist.png#lightbox)
+ В [ ![ дополнение к экранной кнопке обратной передачи, поддерживаемой аппаратным и системным нажатием](case-study-tasky-images/android-taskylist.png)](case-study-tasky-images/android-taskylist.png#lightbox), в дополнение к экранной кнопке «Back»[ ![ поддерживается поведение оборудования и системы](case-study-tasky-images/android-taskylist.png)](case-study-tasky-images/android-taskylist.png#lightbox) .
 
  <a name="Windows_Phone"></a>
 
@@ -495,7 +495,7 @@ XAML имеет уникальную возможность привязки д�
 
 Приложение Windows Phone использует стандартный макет, заполняя панель приложения в нижней части экрана вместо панели навигации вверху.
 
- [![](case-study-tasky-images/wp-taskylist.png "Приложение Windows Phone использует стандартный макет, заполняя панель приложения в нижней части экрана вместо панели навигации в верхней части окна")](case-study-tasky-images/wp-taskylist.png#lightbox) [![](case-study-tasky-images/wp-taskylist.png "Приложение Windows Phone использует стандартный макет, заполняя панель приложения в нижней части экрана вместо панели навигации в верхней части окна")](case-study-tasky-images/wp-taskylist.png#lightbox)
+ [ ![ Приложение Windows Phone использует стандартный макет, заполняя панель приложения в нижней части экрана вместо панели навигации в верхней части](case-study-tasky-images/wp-taskylist.png)](case-study-tasky-images/wp-taskylist.png#lightbox) [ ![ Windows Phone приложение использует стандартный макет, заполняя панель приложения в нижней части экрана вместо панели навигации вверху](case-study-tasky-images/wp-taskylist.png)](case-study-tasky-images/wp-taskylist.png#lightbox) .
 
  <a name="Summary"></a>
 

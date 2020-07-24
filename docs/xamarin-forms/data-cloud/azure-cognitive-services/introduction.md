@@ -10,12 +10,12 @@ ms.date: 02/08/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7c2a63c40d1006c7d83c9dde871e17d4b194bdca
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cce5b0fc9c3d1d04c20b1be242197e3bc9e4f901
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84129718"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929342"
 ---
 # <a name="xamarinforms-and-azure-cognitive-services-introduction"></a>Xamarin.FormsОбщие сведения об Azure Cognitive Services
 
@@ -42,17 +42,17 @@ _Microsoft Cognitive Services — это набор API-интерфейсов, 
 
 `TodoListPage`Отображается при запуске приложения. На этой странице отображается список всех задач, хранящихся в локальной базе данных, и пользователь имеет возможность создать новую задачу или оценить приложение:
 
-![](introduction-images/sample-application-1.png "TodoListPage")
+![тодолистпаже](introduction-images/sample-application-1.png)
 
 Новые элементы можно создать, нажав *+* кнопку, которая переходит к `TodoItemPage` . Для перехода на эту страницу можно также выбрать задачу:
 
-![](introduction-images/sample-application-2.png "TodoItemPage")
+![тодоитемпаже](introduction-images/sample-application-2.png)
 
 `TodoItemPage`Позволяет создавать, изменять, проверять орфографию, переводить, сохранять и удалять задачи. Для создания или изменения задачи можно использовать распознавание речи. Это достигается нажатием кнопки микрофона для начала записи и нажатием этой же кнопки во второй раз для отмены записи, которая отправляет запись в API-интерфейс распознавания Распознавание речи Bing.
 
 При нажатии кнопки SMIL на панели `TodoListPage` переходит к элементу `RateAppPage` , который используется для выполнения распознавания распознавания эмоций на изображении выражения лица:
 
-![](introduction-images/sample-application-3.png "RateAppPage")
+![ратеапппаже](introduction-images/sample-application-3.png)
 
 `RateAppPage`Позволяет пользователю получить фотографию своего лица, которая отправляется в API распознавания лиц с отображаемым распознавания эмоций.
 

@@ -10,12 +10,12 @@ ms.date: 08/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a05de34089fdf6ad90740067b88edea0b62f55a7
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 4f30b8be762e23f84a90595a56912587cc3aa838
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84134658"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934255"
 ---
 # <a name="unit-testing-enterprise-apps"></a>Модульное тестирование корпоративных приложений
 
@@ -55,7 +55,7 @@ public class OrderDetailViewModel : ViewModelBase
 
 `OrderDetailViewModel`Класс зависит от `IOrderService` типа, который разрешается контейнером при создании `OrderDetailViewModel` объекта. Однако вместо того, чтобы создавать `OrderService` объект для модульного тестирования `OrderDetailViewModel` класса, замените `OrderService` объект на макет для целей тестов. Эта связь показана на рис. 10-1.
 
-![](unit-testing-images/unittesting.png "Classes that implement the IOrderService interface")
+![Классы, реализующие интерфейс Иордерсервице](unit-testing-images/unittesting.png)
 
 **Рис. 10-1.** Классы, реализующие интерфейс Иордерсервице
 

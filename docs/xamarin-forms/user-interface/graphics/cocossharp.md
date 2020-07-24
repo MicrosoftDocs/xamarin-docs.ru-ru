@@ -10,12 +10,12 @@ ms.date: 05/03/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a3183997eb229fd3548a1afeccf82670cf651a71
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 31b82586b47ead1a851000d59c8271deec063020
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84565308"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933787"
 ---
 # <a name="using-cocossharp-in-xamarinforms"></a>Использование CocosSharp вXamarin.Forms
 
@@ -59,11 +59,11 @@ Xamarin.Formsпостроена на основе собственных, зав
 Добавьте **CocosSharp. Forms** NuGet и **CocosSharp** будет автоматически добавляться.
 Для этого щелкните правой кнопкой мыши папку **packages** в проекте библиотеки .NET Standard и выберите **Добавить пакеты...**. Введите условие поиска **CocosSharp. Forms**, выберите **CocosSharp для Xamarin.Forms **, а затем щелкните **Добавить пакет**.
 
-![](cocossharp-images/image1.png "Add Packages Dialog")
+![Диалоговое окно добавления пакетов](cocossharp-images/image1.png)
 
 В проект будут добавлены пакеты NuGet **CocosSharp** и **CocosSharp. Forms** :
 
-![](cocossharp-images/image2.png "Packages Folder")
+![Папка Packages](cocossharp-images/image2.png)
 
 Повторите описанные выше действия для проектов, связанных с платформой (например, iOS и Android).
 
@@ -129,7 +129,7 @@ public HomePage ()
 
 В iOS отображается, `HomePage` как показано на следующем рисунке:
 
-![](cocossharp-images/image3.png "HomePage Screenshot")
+![Снимок экрана домашней страницы](cocossharp-images/image3.png)
 
 ### <a name="2-adding-a-cocossharpview"></a>2. Добавление Кокосшарпвиев
 
@@ -181,7 +181,7 @@ void HandleViewCreated (object sender, EventArgs e)
 
 Следующая диаграмма поможет визуализировать типичную CocosSharp иерархию:
 
-![](cocossharp-images/image4.png "Typical CocosSharp Hierarchy")
+![Типичная CocosSharp иерархия](cocossharp-images/image4.png)
 
 `CCScene`В один момент времени может быть активным только один. Большинство игр используют несколько `CCLayer` экземпляров для сортировки содержимого, но наше приложение использует только одно. Точно так же большинство игр используют несколько визуальных объектов, но в нашем приложении мы будем использовать только один. Более подробное обсуждение визуальной иерархии CocosSharp можно найти в [разделе Пошаговое руководство по баунЦинггаме](https://github.com/xamarin/docs-archive/blob/master/Docs/CocosSharp/bouncing-game.md).
 
@@ -207,7 +207,7 @@ GameScene gameScene;
 
 Теперь можно скомпилировать наш проект и запустить его, чтобы увидеть CocosSharp. Мы не добавили в наш объект ничего, `GameScene,` поэтому верхняя половина нашей страницы является черным — цвет по умолчанию для CocosSharp сцены:
 
-![](cocossharp-images/image5.png "Blank GameScene")
+![Пустой Гамесцене](cocossharp-images/image5.png)
 
 ### <a name="4-adding-a-circle"></a>4. Добавление круга
 
@@ -239,7 +239,7 @@ public class GameScene : CCScene
 
 Теперь при запуске приложения в левой части области отображения CocosSharp отображается окружность:
 
-![](cocossharp-images/image6.png "Circle in GameScene")
+![Окружность в Гамесцене](cocossharp-images/image6.png)
 
 #### <a name="understanding-designresolution"></a>Основные сведения о Десигнресолутион
 
@@ -247,7 +247,7 @@ public class GameScene : CCScene
 
 `DesignResolution`Представляет ширину и высоту области CocosSharp для размещения и изменения размеров объектов. Фактическое разрешение области измеряется в *пикселях* , а `DesignResolution` измеряется в *единицах*мира. На следующей схеме показано разрешение различных частей представления, отображаемых на iPhone 5 с разрешением экрана 640x1136 пикселей.
 
-![](cocossharp-images/image7.png "iPhone 5s Design Resolution")
+![Решение iPhone 5S](cocossharp-images/image7.png)
 
 На схеме выше отображаются размеры пикселя за пределами экрана в виде черного текста. Единицы отображаются в виде белого текста на диаграмме внутри диаграммы. Ниже приведены некоторые важные сведения.
 
@@ -313,7 +313,7 @@ void CreateBottomHalf(Grid grid)
 
 Теперь CocosSharp окружность перемещается в ответ на нажатия. Также можно четко увидеть границы холста CocosSharp, переместив круг достаточного края влево или вправо:
 
-![](cocossharp-images/image8.png "GameScene with Moving Circle")
+![Гамесцене с перемещением круга](cocossharp-images/image8.png)
 
 ## <a name="summary"></a>Сводка
 

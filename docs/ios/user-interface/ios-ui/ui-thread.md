@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 584b398deafd233fdbe6b24189a2047ae712fdcf
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 01f95641a0cf65341479c51b2f6314a0ef3ea2de
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573525"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939078"
 ---
 # <a name="working-with-the-ui-thread-in-xamarinios"></a>Работа с потоком пользовательского интерфейса в Xamarin. iOS
 
@@ -36,7 +36,7 @@ InvokeOnMainThread ( () => {
 
 При отладке приложений Xamarin. iOS возникнет ошибка, если код пытается получить доступ к элементу управления пользовательского интерфейса из неправильного потока. Это поможет вам отвестись и устранить эти проблемы с помощью метода Инвокеонмаинсреад. Это происходит только при отладке и не вызывает ошибку в сборках выпуска. Сообщение об ошибке будет выглядеть следующим образом:
 
- ![](ui-thread-images/image10.png "UI Thread Execution")
+ ![Выполнение потока пользовательского интерфейса](ui-thread-images/image10.png)
 
  <a name="Background_Thread_Example"></a>
 

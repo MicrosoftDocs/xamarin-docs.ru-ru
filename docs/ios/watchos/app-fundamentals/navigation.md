@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 1ad4ecad90238436f8d2a02727596186c6205eeb
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 8b1ffe54ad199acbc7bf3918c187e198d96b51c8
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572095"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939403"
 ---
 # <a name="working-with-watchos-navigation-in-xamarin"></a>Работа с навигацией watchOS в Xamarin
 
@@ -49,7 +49,7 @@ DismissController();
 
 Представляет собой такие сцены, как стек, к которому можно перейти обратно, аналогично тому, как это `UINavigationController` работает в iOS. Монтажные кадры можно помещаться в стек навигации и выключать (программно или по выбору пользователя).
 
-![](navigation-images/hierarchy-1.png "Сцены можно помещаться в стек навигации") ![](navigation-images/hierarchy-2.png "Сцены можно извлекать из стека навигации")
+![Сцены можно помещаться в стек навигации](navigation-images/hierarchy-1.png) ![Сцены можно извлекать из стека навигации](navigation-images/hierarchy-2.png)
 
 Как и в iOS, левый-краевый прокрутка переходит назад к родительскому контроллеру в иерархическом стеке навигации.
 
@@ -95,7 +95,7 @@ public override NSObject GetContextForSegue (string segueIdentifier)
 
 Интерфейсы на основе страниц проведите слева направо, аналогично тому, как `UIPageViewController` работает в iOS. Точки индикаторов отображаются вдоль нижней части экрана, чтобы показать, какая страница в настоящий момент отображается.
 
-![](navigation-images/paged-1.png "Пример первой страницы") ![](navigation-images/paged-2.png "Вторая страница образца") ![](navigation-images/paged-5.png "Пример пятой страницы")
+![Пример первой страницы](navigation-images/paged-1.png) ![Вторая страница образца](navigation-images/paged-2.png) ![Пример пятой страницы](navigation-images/paged-5.png)
 
 Чтобы сделать интерфейс на основе страниц основным ИНТЕРФЕЙСом для вашего приложения наблюдения, используйте `ReloadRootControllers` с массивом контроллеров интерфейса и контекстов:
 

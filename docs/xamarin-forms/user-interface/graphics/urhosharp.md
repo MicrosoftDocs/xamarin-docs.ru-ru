@@ -10,12 +10,12 @@ ms.date: 03/11/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fbf717092da7f77e265803fae87efb5bf0e9876f
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: fd1893a91d9d8e5d2c2581a9f3f9b5ef8ee59f1f
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84574370"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937677"
 ---
 # <a name="using-urhosharp-in-xamarinforms"></a>Использование UrhoSharp вXamarin.Forms
 
@@ -28,8 +28,8 @@ ms.locfileid: "84574370"
 UrhoSharp можно использовать для отрисовки графики в Xamarin.Forms приложениях.
 В этом [образце](https://github.com/xamarin/urho-samples/tree/master/FormsSample) показано, как UrhoSharp можно использовать для создания интерактивной трехмерной диаграммы:
 
-![](urhosharp-images/ios-animation.gif "UrhoSharp 3D Interactive Chart on iOS")
-![](urhosharp-images/android-animation.gif "UrhoSharp 3D Interactive Chart on Android")
+![Трехмерная интерактивная диаграмма UrhoSharp на устройстве iOS ](urhosharp-images/ios-animation.gif)
+ ![ UrhoSharp 3D Interactive в Android](urhosharp-images/android-animation.gif)
 
 ## <a name="adding-the-urhosharp-nuget-packages"></a>Добавление пакетов NuGet UrhoSharp
 
@@ -38,11 +38,11 @@ UrhoSharp можно использовать для отрисовки граф
 Пакет NuGet UrhoSharp. Forms содержит все объекты, необходимые для создания объектов UrhoSharp. Пакет NuGet UrhoSharp. Forms включает `UrhoSurface` класс, который используется для размещения UrhoSharp в Xamarin.Forms .
 Чтобы начать, щелкните правой кнопкой мыши папку **packages** в проекте библиотеки .NET Standard и выберите пункт **Добавить пакеты...**. Введите условие поиска **UrhoSharp. Forms**, выберите **UrhoSharp для Xamarin.Forms **, а затем щелкните **Добавить пакет**.
 
-[![](urhosharp-images/add-package-sml.png "Add Packages Dialog")](urhosharp-images/add-package.png#lightbox "Add Packages Dialog")
+[![Диалоговое окно добавления пакетов](urhosharp-images/add-package-sml.png)](urhosharp-images/add-package.png#lightbox "Диалоговое окно добавления пакетов")
 
 Пакет NuGet UrhoSharp. Forms будет добавлен в проект:
 
-![](urhosharp-images/packages.png "Packages Folder")
+![Папка Packages](urhosharp-images/packages.png)
 
 Повторите описанные выше действия для проектов, связанных с платформой (например, iOS и Android).
 

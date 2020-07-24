@@ -19,7 +19,7 @@ ms.locfileid: "86937310"
 ---
 # <a name="pixels-and-device-independent-units"></a>Пиксели и аппаратно-независимые единицы
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Изучите различия между координатами и Xamarin.Forms координатами SkiaSharp_
 

@@ -10,12 +10,12 @@ ms.date: 03/23/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 520c4c3b61049bf17c2c964523714db196da6839
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 533cb607cc2c47bf108d5e03733f31ebfc2fe475
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84132188"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934138"
 ---
 # <a name="the-rotate-transform"></a>Преобразование циклического сдвига
 
@@ -25,7 +25,7 @@ _Изучите эффекты и анимации, доступные с пом
 
 При использовании графических объектов SkiaSharp графические объекты не имеют ограничений на выравнивание по горизонтальной и вертикальной осям:
 
-![](rotate-images/rotateexample.png "Text rotated around a center")
+![Текст, повернутый вокруг центра](rotate-images/rotateexample.png)
 
 Для поворота графического объекта вокруг точки (0, 0) SkiaSharp поддерживает как [`RotateDegrees`](xref:SkiaSharp.SKCanvas.RotateDegrees(System.Single)) метод, так и [`RotateRadians`](xref:SkiaSharp.SKCanvas.RotateRadians(System.Single)) метод:
 
@@ -63,7 +63,7 @@ using (SKPaint textPaint = new SKPaint
 
 Поскольку поворот выравнивается по левому верхнему углу холста, для большинства углов, заданных в этой программе, текст поворачивается за пределы экрана:
 
-[![](rotate-images/basicrotate-small.png "Triple screenshot of the Basic Rotate page")](rotate-images/basicrotate-large.png#lightbox "Triple screenshot of the Basic Rotate page")
+[![Тройной снимок экрана с простой страницей вращения](rotate-images/basicrotate-small.png)](rotate-images/basicrotate-large.png#lightbox "Тройной снимок экрана с простой страницей вращения")
 
 Очень часто требуется поворачивать что-то по центру вокруг указанной точки вращения с помощью следующих версий [`RotateDegrees`](xref:SkiaSharp.SKCanvas.RotateDegrees(System.Single,System.Single,System.Single)) [`RotateRadians`](xref:SkiaSharp.SKCanvas.RotateRadians(System.Single,System.Single,System.Single)) методов и:
 
@@ -91,7 +91,7 @@ using (SKPaint textPaint = new SKPaint
 
 Теперь текст поворачивается вокруг точки, используемой для размещения текста, который является горизонтальным центром базового плана текста:
 
-[![](rotate-images/centeredrotate-small.png "Triple screenshot of the Centered Rotate page")](rotate-images/centeredrotate-large.png#lightbox "Triple screenshot of the Centered Rotate page")
+[![Тройной снимок экрана Центральной страницы поворота](rotate-images/centeredrotate-small.png)](rotate-images/centeredrotate-large.png#lightbox "Тройной снимок экрана Центральной страницы поворота")
 
 Как и в случае с Центральной версией `Scale` метода, Центральная версия `RotateDegrees` вызова является ярлыком. Ниже приведен метод.
 
@@ -145,7 +145,7 @@ canvas.DrawText(Title, 0, 0, textPaint);
 
 Обычно существует несколько способов объединения вращения и перевода. **Повернутая текстовая** страница создает следующее отображение:
 
-[![](rotate-images/rotatedtext-small.png "Triple screenshot of the Rotated Text page")](rotate-images/rotatedtext-large.png#lightbox "Triple screenshot of the Rotated Text page")
+[![Тройной снимок экрана повернутой текстовой страницы](rotate-images/rotatedtext-small.png)](rotate-images/rotatedtext-large.png#lightbox "Тройной снимок экрана повернутой текстовой страницы")
 
 Вот `PaintSurface` обработчик [`RotatedTextPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/RotatedTextPage.cs) класса:
 
@@ -369,7 +369,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Часы наверняка работают, хотя руки довольно грубый:
 
-[![](rotate-images/uglyanalogclock-small.png "Triple screenshot of the Ugly Analog Clock Text page")](rotate-images/uglyanalogclock-large.png#lightbox "Triple screenshot of the Ugly Analog page")
+[![Тройной снимок экрана со страницей текста некрасивого аналогового времени](rotate-images/uglyanalogclock-small.png)](rotate-images/uglyanalogclock-large.png#lightbox "Тройной снимок экрана некрасивой аналоговой страницы")
 
 Более привлекательные часы см. в статье [**данные о пути SVG в SkiaSharp**](../curves/path-data.md).
 

@@ -8,12 +8,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 17ccc67b2976b93fbb290a1d2425168cab50228e
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 497096e7f422e8337498339737ab304b0d896dfe
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84568793"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939000"
 ---
 # <a name="watchos-troubleshooting"></a>Устранение неполадок watchOS
 
@@ -31,12 +31,12 @@ ms.locfileid: "84568793"
 
 ## <a name="known-issues"></a>Известные проблемы
 
-### <a name="general"></a>Общие
+### <a name="general"></a>Общие сведения
 
 <a name="deploy"></a>
 
 - Более ранние выпуски Visual Studio для Mac неправильно отображают один из значков **апплекомпанионсеттингс** как 88x88 пикселов; Это приводит к **ошибке отсутствующего значка** при попытке отправить в App Store.
-    Этот значок должен быть 87x87 пикселей (29 единиц для **@3x** экранов Retina). Вы не можете исправить это в Visual Studio для Mac. Измените ресурс изображения в Xcode или вручную измените файл **Content. JSON** .
+    Этот значок должен быть 87x87 пикселей (29 единиц для **@3x** экранов Retina). Вы не можете исправить это в Visual Studio для Mac изменить ресурс изображения в Xcode или вручную изменить **Contents.jsв** файле.
 
 - Если **идентификатор пакета WKApp "info. > plist** " проекта расширения контрольных значений [неправильно установлен](~/ios/watchos/get-started/project-references.md) в соответствии с **идентификатором пакета**приложения Watch, отладчику не удастся подключиться, и Visual Studio для Mac будет ожидать сообщение *"Ожидание подключения отладчика"*.
 
@@ -47,7 +47,7 @@ ms.locfileid: "84568793"
 - Нельзя добавить две `WKNotificationControllers` к раскадровке.
     Обходное решение. `notificationCategory` элемент в XML-коде раскадровки всегда вставляется с тем же `id` . Чтобы обойти эту проблему, можно добавить два (или более) контроллера уведомлений, открыть файл раскадровки в текстовом редакторе, а затем вручную изменить `id` элемент на уникальный.
 
-    [![](troubleshooting-images/duplicate-id-sml.png "Opening the storyboard file in a text editor and manually change the id element to be unique")](troubleshooting-images/duplicate-id.png#lightbox)
+    [![Открытие файла раскадровки в текстовом редакторе и ручное изменение элемента ID на уникальный](troubleshooting-images/duplicate-id-sml.png)](troubleshooting-images/duplicate-id.png#lightbox)
 
 - При попытке запустить приложение может появиться сообщение об ошибке "приложение не было собрано". Это происходит после **очистки** , если запускаемый проект установлен в проект расширения Watch.
     Исправлением является выбор **сборки > перестроить все** , а затем повторно запустить приложение.
@@ -74,7 +74,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 2. Диалоговое окно, которое отображается, будет содержать флажок **альфа** -канала, если имеется канал Alpha.
 
-    ![](troubleshooting-images/remove-alpha-sml.png "The dialog that appears will include an Alpha checkbox if an alpha channel is present")
+    ![Диалоговое окно, которое отображается, будет содержать флажок альфа-канала, если присутствует канал Alpha](troubleshooting-images/remove-alpha-sml.png)
 
 3. *Untick* Снимите флажок **альфа-канала** и **Сохраните** файл в нужном месте.
 
@@ -91,15 +91,15 @@ with an alpha channel. Icons should not have an alpha channel.
 
 1. Откройте интерфейс Watch приложения **. раскадровка** в **Xcode Interface Builder**.
 
-    ![](troubleshooting-images/add-6.png "Opening the storyboard in Xcode Interface Builder")
+    ![Открытие раскадровки в Xcode Interface Builder](troubleshooting-images/add-6.png)
 
 2. Перетащите новый элемент `InterfaceController` на раскадровку:
 
-    ![](troubleshooting-images/add-1.png "A InterfaceController")
+    ![Интерфацеконтроллер](troubleshooting-images/add-1.png)
 
 3. Теперь можно перетаскивать элементы управления на контроллер интерфейса (например, Метки и кнопки), но вы не можете создавать розетки или действия, так как отсутствует **h** -файл заголовка. Следующие шаги приведут к созданию обязательного файла заголовка **. h** .
 
-    ![](troubleshooting-images/add-2.png "A button in the layout")
+    ![Кнопка в макете](troubleshooting-images/add-2.png)
 
 4. Закройте раскадровку и вернитесь к Visual Studio для Mac. Создайте новый файл C# **MyInterfaceController.CS** (или любое имя) в проекте " **Контрольное** значение" (а не в приложении для просмотра, где находится Раскадровка). Добавьте следующий код (с обновлением пространства имен, ClassName и имени конструктора):
 
@@ -158,34 +158,34 @@ with an alpha channel. Icons should not have an alpha channel.
     > [!TIP]
     > Можно (необязательно) сделать этот файл дочерним узлом первого файла, перетащив его на другой файл C# в Visual Studio для Mac Панель решения. Затем он будет выглядеть следующим образом:
 
-    ![](troubleshooting-images/add-5.png "The Solution pad")
+    ![Панель решения](troubleshooting-images/add-5.png)
 
 6. Выберите **сборка > собрать все** , чтобы в ходе синхронизации Xcode был распознан новый класс (через `Register` атрибут), который мы использовали.
 
 7. Повторно откройте раскадровку, щелкнув файл раскадровки Watch приложения правой кнопкой мыши и выбрав пункт **Открыть с помощью > Xcode Interface Builder**:
 
-    ![](troubleshooting-images/add-6.png "Opening the storyboard in Interface Builder")
+    ![Открытие раскадровки в Interface Builder](troubleshooting-images/add-6.png)
 
 8. Выберите новый контроллер интерфейса и присвойте ему значение className, указанное выше, например. `MyInterfaceController`.
     Если все работало правильно, оно должно появиться автоматически в раскрывающемся списке **класс:** , и его можно выбрать из этого списка.
 
-    ![](troubleshooting-images/add-4.png "Setting a custom class")
+    ![Настройка пользовательского класса](troubleshooting-images/add-4.png)
 
 9. Выберите представление **редактора помощника** в Xcode (значок с двумя перекрывающимися кружками), чтобы можно было увидеть раскадровку и код параллельно:
 
-    ![](troubleshooting-images/add-7.png "The Assistant Editor toolbar item")
+    ![Элемент панели инструментов редактора помощника](troubleshooting-images/add-7.png)
 
     Если фокус находится на панели кода, убедитесь, что вы просматриваете файл заголовка **h** и не щелкнули правой кнопкой мыши в строке навигации, и выберите нужный файл (**минтерфацеконтроллер. h**).
 
-    ![](troubleshooting-images/add-8.png "Select MyInterfaceController")
+    ![Выбор Минтерфацеконтроллер](troubleshooting-images/add-8.png)
 
 10. Теперь вы можете создавать розетки и действия, **удерживая нажатой клавишу CTRL + перетаскивание** из раскадровки в файл заголовка **h** .
 
-    ![](troubleshooting-images/add-9.png "Creating outlets and actions")
+    ![Создание розеток и действий](troubleshooting-images/add-9.png)
 
     При освобождении перетаскивания вам будет предложено выбрать, следует ли создать розетку или действие, и выбрать его имя:
 
-    ![](troubleshooting-images/add-a.png "The outlet and an action dialog")
+    ![Диалоговое окно «розетка» и «действие»](troubleshooting-images/add-a.png)
 
 11. Когда изменения раскадровки сохранены и Xcode закрывается, вернитесь в Visual Studio для Mac. Он определит изменения в файле заголовка и автоматически добавит код в файл **Designer.CS** :
 
@@ -257,7 +257,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 ### <a name="--sdkroot"></a>--sdkroot добавлен
 
-Обязательный. Указывает путь к Xcode (6,2 или более поздней версии).
+Обязательный элемент. Указывает путь к Xcode (6,2 или более поздней версии).
 
 Пример.
 

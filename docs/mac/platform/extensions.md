@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 1d1e40de646362e9b573ad7040ab08ba6d01d6e8
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: ac4c8d7bbd28946b6089e7f22a36727d2d73ec18
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571614"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939208"
 ---
 # <a name="xamarinmac-extension-support"></a>Поддержка расширения Xamarin.Mac
 
@@ -42,7 +42,7 @@ ms.locfileid: "84571614"
 - Любые неперехваченные исключения призавершат процесс расширения, предоставляя только небольшой объем полезной информации в **системном журнале**. Создание оболочки с проблемным кодом в `try/catch` блоке (исключения), который `NSLog` перед повторным созданием, может оказаться полезным.
 - Доступ к **системному журналу** можно получить из **консольного** **приложения в разделе**  >  **Служебные программы**:
 
-    [![](extensions-images/extension02.png "The system log")](extensions-images/extension02.png#lightbox)
+    [![Системный журнал](extensions-images/extension02.png)](extensions-images/extension02.png#lightbox)
 - Как отмечалось выше, запуск приложения расширения приведет к его регистрации в системе. Удаление пакета приложений с отменой регистрации. 
 - Если регистрируются "недопустимые" версии расширений приложения, используйте следующую команду, чтобы их можно было удалить.`plugin kit -mv`
 

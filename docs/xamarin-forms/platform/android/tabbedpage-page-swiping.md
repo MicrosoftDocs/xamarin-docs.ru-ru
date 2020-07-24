@@ -8,24 +8,24 @@ author: davidbritch
 ms.author: dabritch
 ms.date: 07/10/2018
 no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 61c0137788303363769fdec80a16542e2d8bea5e
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+- ':::no-loc(Xamarin.Forms):::'
+- ':::no-loc(Xamarin.Essentials):::'
+ms.openlocfilehash: 0043d90e631c19a55b766a877a9cd30316f14650
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84128613"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997388"
 ---
 # <a name="tabbedpage-page-swiping-on-android"></a>Таббедпаже прокрутка страниц на Android
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
-Эта платформа для Android используется для включения прокрутки с помощью жеста горизонтального пальца между страницами в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) . Он используется в XAML путем присвоения [`TabbedPage.IsSwipePagingEnabled`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.IsSwipePagingEnabledProperty) свойству присоединенного свойства `boolean` значения:
+Эта платформа для Android используется для включения прокрутки с помощью жеста горизонтального пальца между страницами в [`TabbedPage`](xref::::no-loc(Xamarin.Forms):::.TabbedPage) . Он используется в XAML путем присвоения [`TabbedPage.IsSwipePagingEnabled`](xref::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific.TabbedPage.IsSwipePagingEnabledProperty) свойству присоединенного свойства `boolean` значения:
 
 ```xaml
 <TabbedPage ...
-            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:android="clr-namespace::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific;assembly=:::no-loc(Xamarin.Forms):::.Core"
             android:TabbedPage.OffscreenPageLimit="2"
             android:TabbedPage.IsSwipePagingEnabled="true">
     ...
@@ -35,23 +35,23 @@ ms.locfileid: "84128613"
 Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
-using Xamarin.Forms.PlatformConfiguration;
-using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
+using :::no-loc(Xamarin.Forms):::.PlatformConfiguration;
+using :::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific;
 ...
 
 On<Android>().SetOffscreenPageLimit(2)
              .SetIsSwipePagingEnabled(true);
 ```
 
-`TabbedPage.On<Android>`Метод указывает, что эта платформа будет запускаться только в Android. [ `TabbedPage.SetIsSwipePagingEnabled` ] (Xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Сетиссвипепагинженаблед ( Xamarin.Forms . BindableObject, System. Boolean)) в [`Xamarin.Forms.PlatformConfiguration.AndroidSpecific`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространстве имен используется для включения прокрутки между страницами в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) . Кроме `TabbedPage` того, класс в `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` пространстве имен также имеет [ `EnableSwipePaging` ] (xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Енаблесвипепагинг ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Таббедпаже})), который включает этот метод для конкретной платформы и [ `DisableSwipePaging` ] (xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Дисаблесвипепагинг ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . Таббедпаже})). Этот метод отключает данную платформу. [`TabbedPage.OffscreenPageLimit`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.OffscreenPageLimitProperty)Присоединенное свойство и [ `SetOffscreenPageLimit` ] (xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Сетоффскринпажелимит ( Xamarin.Forms . BindableObject, System. Int32)) используются для задания числа страниц, которые должны храниться в состоянии простоя с любой стороны текущей страницы.
+`TabbedPage.On<Android>`Метод указывает, что эта платформа будет запускаться только в Android. [ `TabbedPage.SetIsSwipePagingEnabled` ] (Xref: :::no-loc(Xamarin.Forms)::: . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Сетиссвипепагинженаблед ( :::no-loc(Xamarin.Forms)::: . BindableObject, System. Boolean)) в [`:::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific`](xref::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific) пространстве имен используется для включения прокрутки между страницами в [`TabbedPage`](xref::::no-loc(Xamarin.Forms):::.TabbedPage) . Кроме `TabbedPage` того, класс в `:::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific` пространстве имен также имеет [ `EnableSwipePaging` ] (xref: :::no-loc(Xamarin.Forms)::: . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Енаблесвипепагинг ( :::no-loc(Xamarin.Forms)::: . Иплатформелементконфигуратион { :::no-loc(Xamarin.Forms)::: . Платформконфигуратион. Android, :::no-loc(Xamarin.Forms)::: . Таббедпаже})), который включает этот метод для конкретной платформы и [ `DisableSwipePaging` ] (xref: :::no-loc(Xamarin.Forms)::: . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Дисаблесвипепагинг ( :::no-loc(Xamarin.Forms)::: . Иплатформелементконфигуратион { :::no-loc(Xamarin.Forms)::: . Платформконфигуратион. Android, :::no-loc(Xamarin.Forms)::: . Таббедпаже})). Этот метод отключает данную платформу. [`TabbedPage.OffscreenPageLimit`](xref::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific.TabbedPage.OffscreenPageLimitProperty)Присоединенное свойство и [ `SetOffscreenPageLimit` ] (xref: :::no-loc(Xamarin.Forms)::: . Платформконфигуратион. АндроидспеЦифик. Таббедпаже. Сетоффскринпажелимит ( :::no-loc(Xamarin.Forms)::: . BindableObject, System. Int32)) используются для задания числа страниц, которые должны храниться в состоянии простоя с любой стороны текущей страницы.
 
-Результат заключается в том, что проведите разбиение по страницам, отображаемым объектом, [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) включенным.
+Результат заключается в том, что проведите разбиение по страницам, отображаемым объектом, [`TabbedPage`](xref::::no-loc(Xamarin.Forms):::.TabbedPage) включенным.
 
-![](tabbedpage-page-swiping-images/tabbedpage-swipe.png)
+![Проведите разбиение по страницам Таббедпаже](tabbedpage-page-swiping-images/tabbedpage-swipe.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
-- [API АндроидспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific)
-- [АндроидспеЦифик. AppCompat API](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat)
+- [API АндроидспеЦифик](xref::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific)
+- [АндроидспеЦифик. AppCompat API](xref::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific.AppCompat)

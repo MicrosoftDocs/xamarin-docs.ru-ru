@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 156a31e37d14ce3e3cbe7173ae97b608e9d4c32e
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: f523b6a028c8d9dcc0df772dc617c57bc947905d
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73032653"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936892"
 ---
 # <a name="working-with-watchos-text-input-in-xamarin"></a>Работа с вводом текста watchOS в Xamarin
 
@@ -25,12 +25,12 @@ ms.locfileid: "73032653"
 
 Симулятор в настоящее время не поддерживает диктовку, но вы по-прежнему можете проверить другие параметры контроллера ввода текста, например Scribble, как показано ниже:
 
-![](text-input-images/textinput-sml.png "Testing the scribble option")
+![Тестирование параметра Scribble](text-input-images/textinput-sml.png)
 
 Для приема ввода текста в приложении для просмотра контрольных данных:
 
 1. Создайте массив строк предопределенных параметров.
-2. Вызовите `PresentTextInputController` с массивом, следует ли разрешить эмодзи, а также `Action`, который вызывается после завершения работы пользователя.
+2. Вызовите метод `PresentTextInputController` с массивом, следует ли разрешить эмодзи, а также метод `Action` , вызываемый после завершения работы пользователя.
 3. В действии завершения проверьте наличие входного результата и выполните соответствующее действие в приложении (возможно задание текстового значения метки).
 
 В следующем фрагменте кода представлено три предварительно определенных параметра для пользователя:
@@ -49,7 +49,7 @@ PresentTextInputController (suggest, WatchKit.WKTextInputMode.AllowEmoji, (resul
 });
 ```
 
-Перечисление `WKTextInputMode` имеет три значения:
+`WKTextInputMode`Перечисление имеет три значения:
 
 - Plain
 - алловеможи
@@ -63,11 +63,11 @@ PresentTextInputController (suggest, WatchKit.WKTextInputMode.AllowEmoji, (resul
 - Scribble или
 - из предварительно определенного списка, предоставленного приложением.
 
-[![](text-input-images/plain-scribble-sml.png "Dictation, Scribble, or from a pre-defined list that the app supplies")](text-input-images/plain-scribble.png#lightbox)
+[![Диктовка, Рисованная кривая или из предварительно определенного списка, предоставляемого приложением](text-input-images/plain-scribble-sml.png)](text-input-images/plain-scribble.png#lightbox)
 
-Результат всегда возвращается в виде `NSObject`, который можно привести к `string`.
+Результат всегда возвращается в виде `NSObject` , который можно привести к типу `string` .
 
-## <a name="emoji"></a>Символ
+## <a name="emoji"></a>Эмодзи
 
 Существует два типа эмодзи:
 
@@ -76,14 +76,14 @@ PresentTextInputController (suggest, WatchKit.WKTextInputMode.AllowEmoji, (resul
 
 Когда пользователь выбирает Юникод эмодзи, он возвращается в виде строки.
 
-Если выбрано анимированное изображение эмодзи, `result` в обработчике завершения будет содержать объект `NSData`, содержащий `UIImage`эмодзи.
+Если выбрано анимированное изображение эмодзи, `result` в обработчике завершения будет содержаться `NSData` объект, содержащий символ эмодзи `UIImage` .
 
 ## <a name="accepting-dictation-only"></a>Принятие только диктовки
 
 Чтобы перевести пользователя непосредственно на экран диктовки, не отображая никаких предложений (или параметра Scribble), сделайте следующее:
 
 - передайте пустой массив для списка предложений и
-- Задайте `WatchKit.WKTextInputMode.Plain`.
+- Задайте значение `WatchKit.WKTextInputMode.Plain` .
 
 ```csharp
 PresentTextInputController (new string[0], WatchKit.WKTextInputMode.Plain, (result) => {
@@ -98,11 +98,11 @@ PresentTextInputController (new string[0], WatchKit.WKTextInputMode.Plain, (resu
 
 Когда пользователь говорит, на экране контрольные значения отображается следующий экран, который содержит текст, как он понимает (например, "это тест"):
 
-![](text-input-images/dictation.png "When the user is speaking, the watch screen displays the text as it is understood")
+![Когда пользователь говорит, на экране контрольные значения отображается текст, как он понимается.](text-input-images/dictation.png)
 
 После нажатия кнопки **done (Готово** ) будет возвращен текст.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Документ Apple Text and Labels](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/TextandLabels.html)
-- [Введение в watchOS 3](~/ios/watchos/platform/introduction-to-watchos3/index.md)
+- [Введение в watchOS 3](~/ios/watchos/platform/introduction-to-watchos3/index.md)

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 ms.date: 11/25/2015
 author: davidortinau
 ms.author: daortin
-ms.openlocfilehash: 1a6391c0e626c60fe35acee61f55f2f202f077b8
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: bdbff7760e7680173c57e5fc83cecb80967c0a51
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573447"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996101"
 ---
 # <a name="creating-a-xamarinios-application-using-the-reflection-api"></a>Создание приложения Xamarin. iOS с помощью API отражения
 
@@ -27,12 +27,12 @@ MT. API отражения D позволяет декорированию кл�
 Использовать API отражения очень просто:
 
 1. Создание класса, снабженного MT. Атрибуты D.
-1. Создание `BindingContext` экземпляра, передавая ему экземпляр указанного выше класса. 
-1. Создание `DialogViewController` , передавая ему `BindingContext’s` `RootElement` . 
+1. Создание `BindingContext` экземпляра, передавая ему экземпляр указанного выше класса.
+1. Создание `DialogViewController` , передавая ему `BindingContext’s` `RootElement` .
 
 Рассмотрим пример, иллюстрирующий использование API отражения. В этом примере мы создадим простой экран ввода данных, как показано ниже:
 
- [![](reflection-api-walkthrough-images/01-expense-entry.png "In this example, we'll build a simple data entry screen as shown here")](reflection-api-walkthrough-images/01-expense-entry.png#lightbox)
+ [![В этом примере мы создадим простой экран ввода данных, как показано ниже.](reflection-api-walkthrough-images/01-expense-entry.png)](reflection-api-walkthrough-images/01-expense-entry.png#lightbox)
 
 ## <a name="creating-a-class-with-mtd-attributes"></a>Создание класса с помощью MT. Атрибуты D
 
@@ -45,13 +45,13 @@ public class Expense
 
     [Entry("Enter expense name")]
     public string Name;
-        
+
     [Section("Expense Details")]
-  
+
     [Caption("Description")]
     [Entry]
     public string Details;
-        
+
     [Checkbox]
     public bool IsApproved = true;
 }
@@ -81,14 +81,14 @@ UIWindow window;
 public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 {   
     window = new UIWindow (UIScreen.MainScreen.Bounds);
-            
+
     var expense = new Expense ();
     var bctx = new BindingContext (null, expense, "Create a task");
     var dvc = new DialogViewController (bctx.Root);
-            
+
     window.RootViewController = dvc;
     window.MakeKeyAndVisible ();
-            
+
     return true;
 }
 ```
@@ -106,7 +106,7 @@ window.RootViewController = nav;
 
 Теперь при запуске приложения заголовок отображается на `UINavigationController’s` панели навигации, как показано ниже.
 
- [![](reflection-api-walkthrough-images/02-create-task.png "Now when we run the application, the title appears in the UINavigationControllers navigation bar")](reflection-api-walkthrough-images/02-create-task.png#lightbox)
+ [![Теперь при запуске приложения заголовок отображается на панели навигации Уинавигатионконтроллерс.](reflection-api-walkthrough-images/02-create-task.png)](reflection-api-walkthrough-images/02-create-task.png#lightbox)
 
 Благодаря включению `UINavigationController` можно использовать преимущества других функций MT. D, для которого требуется Навигация. Например, можно добавить перечисление в класс, `Expense` чтобы определить категорию для расходов и MT. D создаст экран выбора автоматически. Чтобы продемонстрировать, измените `Expense` класс так, чтобы он включал `ExpenseCategory` поле, как показано ниже.
 
@@ -117,7 +117,7 @@ public enum Category
     Lodging,
     Books
 }
-        
+
 public class Expense
 {
     …
@@ -129,11 +129,11 @@ public class Expense
 
 Выполнение приложения теперь приводит к отображению новой строки в таблице для категории, как показано ниже.
 
- [![](reflection-api-walkthrough-images/03-set-details.png "Running the application now results in a new row in the table for the category as shown")](reflection-api-walkthrough-images/03-set-details.png#lightbox)
+ [![Выполнение приложения теперь приводит к отображению новой строки в таблице для категории, как показано ниже.](reflection-api-walkthrough-images/03-set-details.png)](reflection-api-walkthrough-images/03-set-details.png#lightbox)
 
 Выбор строки приводит к переходу приложения на новый экран со строками, соответствующими перечислениям, как показано ниже:
 
- [![](reflection-api-walkthrough-images/04-set-category.png "Selecting the row results in the application navigating to a new screen with rows corresponding to the enumeration")](reflection-api-walkthrough-images/04-set-category.png#lightbox)
+ [![Выбор строки приводит к переходу приложения на новый экран со строками, соответствующими перечислению](reflection-api-walkthrough-images/04-set-category.png)](reflection-api-walkthrough-images/04-set-category.png#lightbox)
 
  <a name="Summary"></a>
 

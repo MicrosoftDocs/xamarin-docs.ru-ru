@@ -10,16 +10,16 @@ ms.date: 04/29/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1081bfafae8e4d7a7a522414e9b45cde48037f1d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e8898120ae234c13c6650a7c818796fd25fa1101
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136556"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929142"
 ---
 # <a name="xamarinforms-carouselview-data"></a>Xamarin.FormsДанные Карауселвиев
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
@@ -83,7 +83,7 @@ carouselView.ItemsSource = new string[]
 
 Сведения о том, как изменить [`CarouselView`](xref:Xamarin.Forms.CarouselView) ориентацию, см. в разделе [ Xamarin.Forms карауселвиев Layout](layout.md). Сведения о том, как определить внешний вид каждого элемента в `CarouselView` , см. в [разделе Определение внешнего вида элемента](#define-item-appearance).
 
-### <a name="data-binding"></a>привязка данных,
+### <a name="data-binding"></a>Привязка данных
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView)может заполняться данными с помощью привязки данных для привязки своего [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства к `IEnumerable` коллекции. В XAML это достигается с помощью `Binding` расширения разметки:
 

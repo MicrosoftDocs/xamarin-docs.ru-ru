@@ -10,12 +10,12 @@ ms.date: 12/11/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3045db1248aa16529d4e43b9a8afc97377cfd9cb
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9e5aeedb7dd51717a9bb987e90dffdcd9b514da0
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84128973"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937947"
 ---
 # <a name="android-platform-features"></a>Возможности на платформе Android
 
@@ -56,7 +56,7 @@ Xamarin.FormsДля разработки приложений для Android т�
 - Установка режима работы экранной клавиатуры. Дополнительные сведения см. [в разделе режим ввода с клавиатуры](soft-keyboard-input-mode.md).
 - Отключение [`Disappearing`](xref:Xamarin.Forms.Page.Appearing) событий и [`Appearing`](xref:Xamarin.Forms.Page.Appearing) жизненного цикла страницы при приостановке и возобновлении соответственно для приложений, использующих AppCompat. Дополнительные сведения см. [в разделе события жизненного цикла страницы в Android](page-lifecycle-events.md).
 
-## <a name="platform-support"></a>Поддержка платформ
+## <a name="platform-support"></a>Поддержка платформы
 
 Изначально проект Android по умолчанию Xamarin.Forms использовал устаревший стиль визуализации элементов управления, который был распространен до Android 5,0. Приложения, созданные с помощью шаблона, имеют `FormsApplicationActivity` базовый класс для своего основного действия.
 
@@ -68,11 +68,11 @@ Xamarin.FormsПроекты Android теперь используют в `FormsA
 
 Ниже приведен пример **TODO** со значением по умолчанию `FormsApplicationActivity` .
 
-[![](images/before-appcompat-sml.png "Todo Sample Application Without AppCompat")](images/before-appcompat.png#lightbox "Todo Sample Application Without AppCompat")
+[![Пример приложения Todo без AppCompat](images/before-appcompat-sml.png)](images/before-appcompat.png#lightbox "Пример приложения Todo без AppCompat")
 
 И это тот же код после обновления проекта для использования `FormsAppCompatActivity` (и добавления дополнительных сведений о теме):
 
-[![](images/post-appcompat-sml.png "Todo Sample Application With AppCompat and Theming")](images/post-appcompat.png#lightbox "Todo Sample Application With AppCompat and Theming")
+[![Пример приложения Todo с AppCompat и](images/post-appcompat-sml.png)](images/post-appcompat.png#lightbox "Пример приложения Todo с AppCompat и")
 
 > [!NOTE]
 > При использовании `FormsAppCompatActivity` [базовые классы для некоторых настраиваемых модулей подготовки Android](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md) будут отличаться.

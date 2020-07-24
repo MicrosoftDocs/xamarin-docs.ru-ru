@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: 2341d90a297d6241c47a5f03fbe8fffa89dd34b0
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 6d87f99ae504346d55c4ddf86a093799ba9ddbd5
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73032314"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936725"
 ---
 # <a name="purchasing-non-consumable-products-in-xamarinios"></a>Приобретение невоспроизводимых продуктов в Xamarin. iOS
 
@@ -24,13 +24,13 @@ ms.locfileid: "73032314"
 
 Процесс покупки показан в этой серии снимков экрана — кнопка **купить** становится кнопкой активации функций:   
 
- [![](purchasing-non-consumable-products-images/image34.png "The purchase process is shown in this series of screenshots")](purchasing-non-consumable-products-images/image34.png#lightbox)   
+ [![Процесс покупки показан в этой серии снимков экрана](purchasing-non-consumable-products-images/image34.png)](purchasing-non-consumable-products-images/image34.png#lightbox)   
 
 Процесс покупки такой же, как и использующий продукт; Основное различие заключается в том, как покупка будет отслеживанием в коде приложения. В этом примере кнопка Купить доступна только в том случае, если продукт еще не приобретен, в противном случае кнопка активирует саму функцию.   
 
 На следующей схеме показаны взаимодействия между классами и сервером App Store для выполнения невоспроизводимой покупки продукта:   
 
- [![](purchasing-non-consumable-products-images/image35.png "The interactions between classes and the App Store server to perform a non-consumable product purchase")](purchasing-non-consumable-products-images/image35.png#lightbox)   
+ [![Взаимодействие между классами и сервером App Store для выполнения невоспроизводимой покупки продукта](purchasing-non-consumable-products-images/image35.png)](purchasing-non-consumable-products-images/image35.png#lightbox)   
 
 Основное отличие от возможного примера состоит в том, что после завершения покупки пользовательский интерфейс обновляется для предотвращения повторного приобретения. В этом примере уведомление об успешной транзакции обновляет пользовательский интерфейс, чтобы кнопка **купить** была преобразована в кнопку, которая активирует саму функцию.
 
@@ -47,5 +47,5 @@ ms.locfileid: "73032314"
 Путь кода в этом сценарии точно такой же, как и для обычной покупки. единственными отличиями являются:
 
 - У пользователя нет оплаты за продукт.
-- Объект `SKPaymentTransaction`, переданный в приложение, будет иметь свойство `OriginalTransaction`, которое ссылается на транзакцию, созданную при первоначальном приобретении продукта. 
+- `SKPaymentTransaction`Объект, переданный в приложение, будет иметь `OriginalTransaction` свойство, которое ссылается на транзакцию, созданную при первоначальном приобретении продукта. 
 - Приложения, которые продают невоспроизводимые продукты, должны также реализовать функцию **восстановления** StoreKit, чтобы помочь пользователям получить доступ к существующим покупкам. 

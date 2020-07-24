@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: dd453ab5397e409cc9a7ccef9b4b845d47f32a8b
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 1b2b9cdc08f20e2867d51c3b9c413f45c7cbdf69
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573733"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939325"
 ---
 # <a name="publishing-to-the-apple-tv-app-store"></a>Публикация в App Store Apple TV
 
@@ -145,13 +145,13 @@ tvOS использует *профили подготовки* для упра�
 
 1. Выберите конфигурацию **Выпуск | Устройство** в Visual Studio для Mac:
 
-    ![](app-store-publishing-images/buildxs01new.png "Select the Release configuration")
-2. В меню **Сборка** выберите пункт **Архивировать для публикации**:
+    ![Выберите конфигурацию выпуска](app-store-publishing-images/buildxs01new.png)
+2. В меню **Сборка** выберите **Архивировать для публикации**:
 
-    [![](app-store-publishing-images/buildxs02new.png "Select Archive for Publishing")](app-store-publishing-images/buildxs02new.png#lightbox)
+    [![Выбор элемента "Архивировать для публикации"](app-store-publishing-images/buildxs02new.png)](app-store-publishing-images/buildxs02new.png#lightbox)
 3. После создания архива появится представление **Архивы**:
 
-    [![](app-store-publishing-images/buildxs03new.png "The Archives view")](app-store-publishing-images/buildxs03new.png#lightbox)
+    [![Представление архивов](app-store-publishing-images/buildxs03new.png)](app-store-publishing-images/buildxs03new.png#lightbox)
 
 ### <a name="sign-and-distribute-your-app"></a>Подписывание и распространение приложения
 
@@ -163,19 +163,19 @@ tvOS использует *профили подготовки* для упра�
 
 1. Выберите **знак и распространить...**, как показано ниже:
 
-    [![](app-store-publishing-images/buildxs04new.png ", Select theSign and Distribute...")](app-store-publishing-images/buildxs04new.png#lightbox)
+    [![Выберите Сесигн и распространить...](app-store-publishing-images/buildxs04new.png)](app-store-publishing-images/buildxs04new.png#lightbox)
 2. Откроется мастер публикации. Выберите **App Store** в качестве канала распространения, чтобы создать пакет, и откройте загрузчик приложений:
 
-    [![](app-store-publishing-images/distribute01.png "Select the App Store distribution channel")](app-store-publishing-images/distribute01.png#lightbox)
+    [![Выберите канал распространения App Store](app-store-publishing-images/distribute01.png)](app-store-publishing-images/distribute01.png#lightbox)
 3. На экране профиль подготовки выберите удостоверение подписывания и соответствующий профиль подготовки или повторно подпишите другое удостоверение:
 
-    [![](app-store-publishing-images/distribute02.png "Select the signing identity and corresponding provisioning profile")](app-store-publishing-images/distribute02.png#lightbox)
+    [![Выбор удостоверения для подписи и соответствующего профиля подготовки](app-store-publishing-images/distribute02.png)](app-store-publishing-images/distribute02.png#lightbox)
 4. Проверьте сведения о пакете и затем нажмите кнопку **Опубликовать**, чтобы сохранить пакет `.ipa`:
 
-    [![](app-store-publishing-images/distribute03.png "Verify the details of the package")](app-store-publishing-images/distribute03.png#lightbox)
+    [![Проверка сведений о пакете](app-store-publishing-images/distribute03.png)](app-store-publishing-images/distribute03.png#lightbox)
 5. После сохранения файла `.ipa` ваше приложение готово для загрузки в iTunes Connect с помощью загрузчика приложений:
 
-    [![](app-store-publishing-images/distribute04.png "Uploaded to iTunes Connect via the Application Loader")](app-store-publishing-images/distribute04.png#lightbox)
+    [![Отправлено в iTunes Connect через загрузчик приложений](app-store-publishing-images/distribute04.png)](app-store-publishing-images/distribute04.png#lightbox)
 
 После того как была создана и архивирована сборка для распространения, все готово для отправки приложения в iTunes Connect.
 
@@ -189,15 +189,15 @@ tvOS использует *профили подготовки* для упра�
 
 1. Щелкните *Deliver Your App* (Доставить приложение) и нажмите кнопку *Choose* (Выбрать):
 
-    [![](app-store-publishing-images/publishvs01.png "Select Deliver Your App")](app-store-publishing-images/publishvs01.png#lightbox)
+    [![Нажатие кнопки доставки приложения](app-store-publishing-images/publishvs01.png)](app-store-publishing-images/publishvs01.png#lightbox)
 
 2. Выберите ранее созданный ZIP- или IPA-файл и нажмите кнопку **OK**.
 3. Загрузчик приложения выполнит проверку файла:
 
-    [![](app-store-publishing-images/publishvs02.png "The Application Loader validation screen")](app-store-publishing-images/publishvs02.png#lightbox)
+    [![Экран проверки загрузчика приложения](app-store-publishing-images/publishvs02.png)](app-store-publishing-images/publishvs02.png#lightbox)
 4. Нажмите кнопку *Next* (Далее). Приложение будет проверено на соответствие требованиям App Store:
 
-    [![](app-store-publishing-images/publishvs03.png "The application being validated against the App Store")](app-store-publishing-images/publishvs03.png#lightbox)
+    [![Приложение, проверяемое в магазине App Store](app-store-publishing-images/publishvs03.png)](app-store-publishing-images/publishvs03.png#lightbox)
 5. Нажмите кнопку **Send** (Отправить), чтобы отправить приложение на проверку в компанию Apple.
 6. После успешной загрузки появится соответствующее сообщение загрузчика приложений.
 
@@ -207,7 +207,7 @@ tvOS использует *профили подготовки* для упра�
 
 Если войти в iTunes Connect и выбрать приложение из списка доступных приложений, в iTunes Connect появится сообщение о том, что он **ожидает проверки** (он может временно считывать полученные сведения о **передаче** во время обработки):
 
-[![](app-store-publishing-images/image21.png "The status in iTunes Connect showing Waiting for Review")](app-store-publishing-images/image21.png#lightbox)
+[![Состояние в iTunes Connect, которое показывает ожидание проверки](app-store-publishing-images/image21.png)](app-store-publishing-images/image21.png#lightbox)
 
 <a name="Troubleshooting"></a>
 

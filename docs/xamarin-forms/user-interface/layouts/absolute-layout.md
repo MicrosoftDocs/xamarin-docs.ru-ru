@@ -10,12 +10,12 @@ ms.date: 11/25/2015
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 110b01d6482fbe3e23a772c90194b6bf40d54877
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 923f7643bd1e137192bfb80dbbc7c5d2c25b5471
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84570535"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938428"
 ---
 # <a name="xamarinforms-absolutelayout"></a>Xamarin.Formsабсолутелайаут
 
@@ -23,7 +23,7 @@ ms.locfileid: "84570535"
 
 [`AbsoluteLayout`](xref:Xamarin.Forms.AbsoluteLayout)позиции и размеры дочерних элементов пропорционально его размеру и положению или абсолютным значениям. Дочерние представления можно располагать и изменять их размер с помощью пропорциональных или статических значений, а пропорциональные и статические значения могут быть смешанными.
 
-[![](absolute-layout-images/layouts-sml.png "Xamarin.Forms Layouts")](absolute-layout-images/layouts.png#lightbox "Xamarin.Forms Layouts")
+[![Xamarin.FormsМетка](absolute-layout-images/layouts-sml.png)](absolute-layout-images/layouts.png#lightbox "[! Операцион. Макеты NO-LOC (Xamarin. Forms)]")
 
 В этой статье рассматриваются следующие темы:
 
@@ -53,9 +53,9 @@ ms.locfileid: "84570535"
 
 Обратите внимание, что на следующем снимке экрана привязка бокса является белой точкой. Обратите внимание на связь между точкой привязки и полем при перемещении по макету:
 
-![](absolute-layout-images/anchor-start.png "Anchor at Start")
-![](absolute-layout-images/anchor-center.png "Anchor at Center")
-![](absolute-layout-images/anchor-end.png "Anchor at End")
+![Закрепить при запуске ](absolute-layout-images/anchor-start.png)
+ ![ привязки в центре ](absolute-layout-images/anchor-center.png)
+ ![ Привязка в конце](absolute-layout-images/anchor-end.png)
 
 ### <a name="specifying-values"></a>Указание значений
 
@@ -109,7 +109,7 @@ Title="Absolute Layout Exploration">
 </ContentPage>
 ```
 
-![](absolute-layout-images/exploration.png "AbsoluteLayout Examples")
+![Примеры Абсолутелайаут](absolute-layout-images/exploration.png)
 
 Следует отметить следующее.
 
@@ -275,7 +275,7 @@ Title="AbsoluteLayout">
 
 Приведенный выше код приводит к следующему макету:
 
-![](absolute-layout-images/abs.png "Complex AbsoluteLayout")
+![Сложные Абсолутелайаут](absolute-layout-images/abs.png)
 
 Обратите внимание, что `AbsoluteLayout` s вложены, поскольку в некоторых случаях вложение макетов может быть проще, чем представление всех элементов в одном макете.
 

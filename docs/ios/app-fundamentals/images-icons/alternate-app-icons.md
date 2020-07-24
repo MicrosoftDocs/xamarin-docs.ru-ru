@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/29/2017
-ms.openlocfilehash: e90ee165073dbbe792e4ca1916463517ad86255d
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 39a18a775946c2f139b4c032d2c360bc5680a0e7
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572303"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937921"
 ---
 # <a name="alternate-app-icons-in-xamarinios"></a>Альтернативные значки приложений в Xamarin. iOS
 
@@ -25,7 +25,7 @@ _В этой статье описывается использование ал
 - `AlternateIconName`— Возвращает имя выбранного в данный момент альтернативного значка или `null` значение, если используется основной значок.
 - `SetAlternameIconName`— Используйте этот метод, чтобы переключить значок приложения на заданный альтернативный значок.
 
-![](alternate-app-icons-images/icons04.png "A sample alert when an app changes its icon")
+![Пример оповещения, когда приложение изменяет свой значок](alternate-app-icons-images/icons04.png)
 
 <a name="Adding-Alternate-Icons"></a>
 
@@ -37,15 +37,15 @@ _В этой статье описывается использование ал
 
 1. Выберите нужные изображения значков в папке, выберите все и перетащите их в папку **ресурсы** в **Обозреватель решений**:
 
-    ![](alternate-app-icons-images/icons00.png "Select the icons images from a folder")
+    ![Выбор значков изображений из папки](alternate-app-icons-images/icons00.png)
 
 2. При появлении запроса выберите **Копировать**, **Используйте то же действие для всех выбранных файлов** и нажмите кнопку **ОК** :
 
-    ![](alternate-app-icons-images/icons02.png "The Add File to Folder dialog box")
+    ![Диалоговое окно "Добавление файла в папку"](alternate-app-icons-images/icons02.png)
 
 3. При завершении папка **Resources** должна выглядеть следующим образом:
 
-    ![](alternate-app-icons-images/icons01.png "The Resources folder should look like this")
+    ![Папка Resources должна выглядеть следующим образом:](alternate-app-icons-images/icons01.png)
 
 <a name="Modifying-the-Info.plist-File"></a>
 
@@ -56,18 +56,18 @@ _В этой статье описывается использование ал
 Выполните следующие действия.
 
 1. В **Обозревателе решений** дважды щелкните файл **Info.plist**, чтобы открыть его для редактирования.
-2. Переключитесь в представление **исходного кода** .
+2. Перейдите в представление **исходного кода**.
 3. Добавьте раздел **значков пакета** и оставьте для **типа** значение **Dictionary**.
 4. Добавьте `CFBundleAlternateIcons` ключ и задайте для **типа** значение **Dictionary**.
 5. Добавьте `AppIcon2` ключ и задайте для **типа** значение **Dictionary**. Это будет имя нового альтернативного набора значков приложения.
 6. Добавьте `CFBundleIconFiles` ключ и задайте для **типа** значение **Array** .
 7. Добавьте в массив новую строку `CFBundleIconFiles` для каждого файла значка, исходящего из расширения, а `@2x` также `@3x` суффиксов, и т. д. (пример `100_icon` ). Повторите этот шаг для каждого файла, составляющего альтернативный набор значков.
 8. Добавьте `UIPrerenderedIcon` ключ в `AppIcon2` словарь, установите **Тип** **Boolean** и значение **нет**.
-9. Сохраните изменения, внесенные в файл.
+9. Сохраните изменения в файле.
 
 Полученный файл **info. plist** должен выглядеть следующим образом после завершения:
 
-![](alternate-app-icons-images/icons03.png "The completed Info.plist file")
+![Завершенный файл info. plist](alternate-app-icons-images/icons03.png)
 
 Или, как и при открытии в текстовом редакторе:
 
@@ -111,7 +111,7 @@ _В этой статье описывается использование ал
 
 Используя изображения значков, включенные в проект Xamarin. iOS и правильно настроенный файл **info. plist** , разработчик может использовать одну из многих новых функций, добавленных в iOS 10,3 для управления значком приложения.
 
-`SupportsAlternateIcons`Свойство `UIApplication` класса позволяет разработчику определить, поддерживает ли приложение альтернативные значки. Пример.
+`SupportsAlternateIcons`Свойство `UIApplication` класса позволяет разработчику определить, поддерживает ли приложение альтернативные значки. Например.
 
 ```csharp
 // Can the app select a different icon?
@@ -119,14 +119,14 @@ PrimaryIconButton.Enabled = UIApplication.SharedApplication.SupportsAlternateIco
 AlternateIconButton.Enabled = UIApplication.SharedApplication.SupportsAlternateIcons;
 ```
 
-`ApplicationIconBadgeNumber`Свойство `UIApplication` класса позволяет разработчику получить или задать номер текущего значка приложения в Springboard Series. Значение по умолчанию равно нулю (0). Пример.
+`ApplicationIconBadgeNumber`Свойство `UIApplication` класса позволяет разработчику получить или задать номер текущего значка приложения в Springboard Series. Значение по умолчанию равно нулю (0). Например.
 
 ```csharp
 // Set the badge number to 1
 UIApplication.SharedApplication.ApplicationIconBadgeNumber = 1;
 ```
 
-`AlternateIconName`Свойство `UIApplication` класса позволяет разработчику получить имя выбранного в данный момент альтернативного приложения или возвращает, `null` Если приложение использует основной значок. Пример.
+`AlternateIconName`Свойство `UIApplication` класса позволяет разработчику получить имя выбранного в данный момент альтернативного приложения или возвращает, `null` Если приложение использует основной значок. Например.
 
 ```csharp
 // Get the name of the currently selected alternate
@@ -138,7 +138,7 @@ if (name != null ) {
 }
 ```
 
-`SetAlternameIconName`Свойство `UIApplication` класса позволяет разработчику изменить значок приложения. Передайте имя значка, чтобы выбрать или `null` вернуться к основному значку. Пример.
+`SetAlternameIconName`Свойство `UIApplication` класса позволяет разработчику изменить значок приложения. Передайте имя значка, чтобы выбрать или `null` вернуться к основному значку. Например.
 
 ```csharp
 partial void UsePrimaryIcon (Foundation.NSObject sender)
@@ -158,11 +158,11 @@ partial void UseAlternateIcon (Foundation.NSObject sender)
 
 Когда приложение запускается и пользователь выбирает альтернативный значок, отображается предупреждение следующего вида:
 
-![](alternate-app-icons-images/icons04.png "A sample alert when an app changes its icon")
+![Пример оповещения, когда приложение изменяет свой значок](alternate-app-icons-images/icons04.png)
 
 Если пользователь переключается на основной значок, будет выведено предупреждение следующего вида:
 
-![](alternate-app-icons-images/icons05.png "A sample alert when an app changes to the primary icon")
+![Пример оповещения при смене приложения на основной значок](alternate-app-icons-images/icons05.png)
 
 <a name="Summary"></a>
 

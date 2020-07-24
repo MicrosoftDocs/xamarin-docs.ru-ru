@@ -10,12 +10,12 @@ ms.date: 02/01/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0ecbc850960465296dc4047277bdafe78ac800a4
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 8c53b1e58ad97f7d0e17972a2b232c16e05ecc1a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84573252"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934892"
 ---
 # <a name="layout-for-tablet-and-desktop-apps"></a>Макет для планшетных и настольных приложений
 
@@ -43,7 +43,7 @@ Xamarin.FormsШаблон автоматически включает подде
 До версии iOS 9 все приложения заняли весь экран на устройстве, но некоторые iPad теперь могут выполнять [многозадачные разбиение экрана](~/ios/platform/multitasking.md).
 Это означает, что ваше приложение может занимать только тонкий столбец на стороне экрана, 50% от ширины экрана или всего экрана.
 
-[![](tablet-images/ipad-sml.png "iPad Split Screen Example")](tablet-images/ipad.png#lightbox "iPad Split Screen Example")
+[![Пример разделения экрана для iPad](tablet-images/ipad-sml.png)](tablet-images/ipad.png#lightbox "Пример разделения экрана для iPad")
 
 Работа с разделением экрана означает, что вы должны проектировать приложение так, чтобы оно работало с шириной в 320 пикселей в ширину или в ширину 1366 пикселов.
 
@@ -60,7 +60,7 @@ Xamarin.FormsШаблон автоматически включает подде
 
 В дополнение к полноэкранному режиму приложения, работающие на планшетах и настольных компьютерах под управлением Windows, можно изменять размеры до произвольных измерений.
 
-[![](tablet-images/splitscreen-sml.png "Windows Split Screen Example")](tablet-images/splitscreen.png#lightbox "Windows Split Screen Example")
+[![Пример экранного разделителя Windows](tablet-images/splitscreen-sml.png)](tablet-images/splitscreen.png#lightbox "Пример экранного разделителя Windows")
 
 ## <a name="optimize-for-tablet-and-desktop"></a>Оптимизация для планшетов и настольных компьютеров
 

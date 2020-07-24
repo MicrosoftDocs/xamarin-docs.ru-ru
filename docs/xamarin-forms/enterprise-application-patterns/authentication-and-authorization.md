@@ -10,12 +10,12 @@ ms.date: 08/08/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8b712b2a5d7eeb2ee5e71047b9e6c460eb10d72a
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 5550ea7a355492f724459449f3b37cdcb8d05b1e
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84573837"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86932149"
 ---
 # <a name="authentication-and-authorization"></a>Аутентификация и авторизация
 
@@ -23,7 +23,7 @@ ms.locfileid: "84573837"
 
 Существует множество подходов к интеграции проверки подлинности и авторизации в Xamarin.Forms приложение, которое взаимодействует с веб-приложением ASP.NET MVC, включая использование удостоверения ASP.NET Core, внешних поставщиков проверки подлинности, таких как Microsoft, Google, Facebook, Twitter и по промежуточного слоя для проверки подлинности. Мобильное приложение eShopOnContainers выполняет проверку подлинности и авторизацию с помощью микрослужбы контейнерных удостоверений, которая использует IdentityServer 4. Мобильное приложение запрашивает маркеры безопасности от IdentityServer для проверки подлинности пользователя или доступа к ресурсу. Чтобы IdentityServer выдавал маркеры от имени пользователя, пользователь должен войти в IdentityServer. Однако IdentityServer не предоставляет пользовательский интерфейс или базу данных для проверки подлинности. Поэтому в приложении-образце eShopOnContainers для этой цели используется удостоверение ASP.NET Core.
 
-## <a name="authentication"></a>Аутентификация
+## <a name="authentication"></a>Проверка подлинности
 
 Проверка подлинности необходима, когда приложению необходимо известно удостоверение текущего пользователя. Основным механизмом для идентификации пользователей ASP.NET Core является система членства в ASP.NET Core, которая хранит сведения о пользователе в хранилище данных, настроенном разработчиком. Как правило, это хранилище данных будет EntityFramework хранилищем, хотя пользовательские хранилища и пакеты сторонних производителей можно использовать для хранения сведений об удостоверениях в службе хранилища Azure, Azure Cosmos DB или в других расположениях.
 
@@ -42,7 +42,7 @@ OpenID Connect Connect — это уровень проверки подлинн
 
 В приложениях, использующих прямое взаимодействие клиента с микрослужбой, например эталонное приложение eShopOnContainers, для проверки подлинности пользователей можно использовать выделенную микрослужбу проверки подлинности, действующую в качестве службы маркеров безопасности (STS), как показано на рис. 9-1. Дополнительные сведения о прямой связи клиента с микрослужбой см. в разделе [взаимодействие между клиентом и микрослужбами](~/xamarin-forms/enterprise-application-patterns/containerized-microservices.md#communication-between-client-and-microservices).
 
-![](authentication-and-authorization-images/authentication.png "Authentication by a dedicated authentication microservice")
+![Проверка подлинности с помощью выделенной микрослужбы проверки подлинности](authentication-and-authorization-images/authentication.png)
 
 **Рис. 9-1.** Проверка подлинности с помощью выделенной микрослужбы проверки подлинности
 
@@ -224,7 +224,7 @@ public static IEnumerable<Client> GetClients(Dictionary<string,string> clien
 
 Мобильное приложение eShopOnContainers проходит проверку подлинности с помощью IdentityServer с гибридным потоком проверки подлинности, как показано на рис. 9-2.
 
-![](authentication-and-authorization-images/sign-in.png "High-level overview of the sign-in process")
+![Высокоуровневый обзор процесса входа](authentication-and-authorization-images/sign-in.png)
 
 **Рис. 9-2.** Высокоуровневый обзор процесса входа
 
@@ -232,7 +232,7 @@ public static IEnumerable<Client> GetClients(Dictionary<string,string> clien
 
 Мобильное приложение eShopOnContainers выходит из IdentityServer, отправляя запрос в `<base endpoint>:5105/connect/endsession` , с дополнительными параметрами. После выхода из системы IdentityServer отвечает, отправляя в мобильное приложение URI перенаправления обратного выхода. Этот процесс показан на рис. 9-3.
 
-![](authentication-and-authorization-images/sign-out.png "High-level overview of the sign-out process")
+![Высокоуровневый обзор процесса выхода](authentication-and-authorization-images/sign-out.png)
 
 **Рис. 9-3.** Высокоуровневый обзор процесса выхода
 
@@ -288,7 +288,7 @@ public string CreateAuthorizationRequest()
 
 Возвращенный URI хранится в `LoginUrl` свойстве `LoginViewModel` класса. Когда `IsLogin` свойство примет значение `true` , элемент [`WebView`](xref:Xamarin.Forms.WebView) в `LoginView` станет видимым. `WebView`Данные привязывают свое [`Source`](xref:Xamarin.Forms.WebView.Source) свойство к `LoginUrl` свойству `LoginViewModel` класса и делают запрос на вход в IdentityServer, если `LoginUrl` свойство имеет значение конечной точки авторизации IdentityServer. Когда IdentityServer получает этот запрос и пользователь не прошел проверку подлинности, он `WebView` будет перенаправлен на настроенную страницу входа, которая показана на рис. 9-4.
 
-![](authentication-and-authorization-images/login.png "Login page displayed by the WebView")
+![Страница входа, отображаемая WebView](authentication-and-authorization-images/login.png)
 
 **Рис. 9-4.** Страница входа, отображаемая WebView
 
@@ -409,7 +409,7 @@ public class BasketController : Controller
 
 IdentityServer можно интегрировать в рабочий процесс авторизации, чтобы получить маркеры доступа, обеспечивающие управление авторизацией. Этот подход показан на рис. 9-5.
 
-![](authentication-and-authorization-images/authorization.png "Authorization by access token")
+![Авторизация по маркеру доступа](authentication-and-authorization-images/authorization.png)
 
 **Рис. 9-5.** Авторизация по маркеру доступа
 

@@ -10,12 +10,12 @@ ms.date: 03/10/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a7ddd9134b7214b84a883e171d7b0cadaba3390b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 75cc3070f552ef05c3e8702d27caf7c353ac0a8f
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136322"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931876"
 ---
 # <a name="display-pop-ups"></a>Отображать всплывающие окна
 
@@ -23,7 +23,7 @@ ms.locfileid: "84136322"
 
 Отображение предупреждения, предоставление пользователю возможности выбора или отображение запроса — это обычная задача пользовательского интерфейса. Xamarin.Formsимеет три метода в [`Page`](xref:Xamarin.Forms.Page) классе для взаимодействия с пользователем через всплывающее окно: [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) , [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*) и `DisplayPromptAsync` . Эти элементы визуализируются на каждой платформе с помощью соответствующих собственных элементов управления.
 
-## <a name="display-an-alert"></a>Отображение оповещений
+## <a name="display-an-alert"></a>Отображение предупреждения
 
 Все Xamarin.Forms Поддерживаемые платформы имеют модальное всплывающее окно для оповещения пользователя или запроса простых вопросов. Чтобы отобразить эти предупреждения в Xamarin.Forms , используйте [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*) метод для любого из них [`Page`](xref:Xamarin.Forms.Page) . Следующая строка отображает простое сообщение:
 
@@ -31,7 +31,7 @@ ms.locfileid: "84136322"
 await DisplayAlert ("Alert", "You have been alerted", "OK");
 ```
 
-![](pop-ups-images/alert.png "Alert Dialog with One Button")
+![Диалоговое окно предупреждения с одной кнопкой](pop-ups-images/alert.png)
 
 В этом примере не предполагается получение сведений от пользователя. Предупреждение отображается в модальном режиме, и после его закрытия пользователь продолжает работать с приложением.
 
@@ -61,7 +61,7 @@ async void OnActionSheetSimpleClicked (object sender, EventArgs e)
 }
 ```
 
-![](pop-ups-images/action.png "ActionSheet Dialog")
+![Диалоговое окно с листом действий](pop-ups-images/action.png)
 
 Кнопка `destroy` отрисовывается не так, как другие. Ее можно оставить со значением `null` или указать в качестве третьего строкового параметра. В следующем примере используется кнопка `destroy`.
 

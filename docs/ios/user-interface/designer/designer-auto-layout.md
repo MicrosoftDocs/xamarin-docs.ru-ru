@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 5aa3baa6aba76483866911d905687be6c3a5ae4e
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 44297e32821721d483a265e7d2a69016f4e1a87b
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569833"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86940027"
 ---
 # <a name="auto-layout-with-the-xamarin-designer-for-ios"></a>Автоматический макет с Xamarin Designer для iOS
 
@@ -45,13 +45,13 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 1. Щелкните пустое пространство в области конструктора. Это отменит выбор всех элементов и выведет свойства документа раскадровки.
 1. Установите или снимите флажок **использовать Автомакет** на панели свойств:
 
-    ![](designer-auto-layout-images/image01.png "The Use Autolayout checkbox in the property panel")
+    ![Флажок использовать Автомакет на панели свойств](designer-auto-layout-images/image01.png)
 
 По умолчанию на поверхности не создаются и не отображаются никакие ограничения. Вместо этого они автоматически выводятся из сведений о кадре во время компиляции. Чтобы добавить ограничения, необходимо выбрать элемент в области конструктора и добавить к нему ограничения. Это можно сделать с помощью **панели инструментов ограничения**.
 
 ## <a name="constraints-toolbar"></a>Панель инструментов "ограничения"
 
- [![](designer-auto-layout-images/toolbarnew.png "The Context Menu Commands")](designer-auto-layout-images/toolbarnew.png#lightbox)
+ [![Команды контекстного меню](designer-auto-layout-images/toolbarnew.png)](designer-auto-layout-images/toolbarnew.png#lightbox)
 
 Панель инструментов ограничения обновлена и теперь состоит из двух основных частей:
 
@@ -93,7 +93,7 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 
 Чтобы создать ограничение, выберите маркер и перетащите его в область конструктора. Когда вы начнете перетаскивание, на поверхности появится ряд зеленых линий или квадратиков, которые будут использоваться для ограничения. Например, на следующем снимке экрана мы ограничивающи верхнюю сторону средней кнопки:
 
- [![](designer-auto-layout-images/image07.png "Constraining the top side of the middle button")](designer-auto-layout-images/image07.png#lightbox)
+ [![Ограничение верхней части средней кнопки](designer-auto-layout-images/image07.png)](designer-auto-layout-images/image07.png#lightbox)
 
 Обратите внимание на три пунктирных зеленой линии на двух других кнопках. Зеленые линии обозначают *области перетаскивания*или атрибуты других элементов, с которыми можно ограничиться. На снимке экрана выше две другие кнопки предлагают три вертикальных области перетаскивания ( *снизу*, по *центру*, *сверху*), чтобы ограничить нашу кнопку. Пунктирная зеленая линия в верхней части представления означает, что контроллер представления предлагает ограничение в верхней части представления, а сплошной зеленый прямоугольник означает, что контроллер представления предлагает ограничение, которое находится ниже верхней структуры макета.
 
@@ -106,13 +106,13 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 
 С ограничениями размера — *Высота* и *Ширина* — у вас есть два варианта. Первый вариант — перетащить маркер, чтобы ограничить размер соседнего элемента, как показано в примере выше. Другой вариант — дважды щелкнуть маркер, чтобы создать самоограничение. Это позволяет нам указать значение постоянного размера, как показано на снимке экрана ниже:
 
- [![](designer-auto-layout-images/sizec.png "Drag the handle to constrain to a neighbor element size, as illustrated here")](designer-auto-layout-images/sizec.png#lightbox)
+ [![Перетащите маркер, чтобы ограничить размер соседнего элемента, как показано здесь](designer-auto-layout-images/sizec.png)](designer-auto-layout-images/sizec.png#lightbox)
 
 ### <a name="center-constraints"></a>Ограничения центра
 
 Квадратный маркер создаст *centerXное* или *Центрированное* ограничение в зависимости от контекста. Перетаскивание квадратного маркера приведет к освещению других элементов, предлагающих вертикальные и горизонтальные области перетаскивания, как показано на снимке экрана ниже:
 
- [![](designer-auto-layout-images/centerc.png "Center Constraints")](designer-auto-layout-images/centerc.png#lightbox)
+ [![Ограничения центра](designer-auto-layout-images/centerc.png)](designer-auto-layout-images/centerc.png#lightbox)
 
 Если выбрана вертикальная область перетаскивания, будет создано ограничение по *центру* . При выборе горизонтальной области перетаскивания ограничение будет основываться на *CenterX*.
 
@@ -120,17 +120,17 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 
 Чтобы создать ограничения выравнивания и равенства размера между двумя элементами, можно выбрать элементы на верхней панели инструментов, чтобы задать выравнивание по горизонтали, вертикальное выравнивание и размер екуалитиес, как показано на снимке экрана ниже:
 
- [![](designer-auto-layout-images/image06.png "Combinational Constraints")](designer-auto-layout-images/image06.png#lightbox)
+ [![Комбинированные ограничения](designer-auto-layout-images/image06.png)](designer-auto-layout-images/image06.png#lightbox)
 
 ### <a name="visualizing-and-editing-constraints"></a>Визуализация и редактирование ограничений
 
 При добавлении ограничения оно будет отображаться в области конструктора в виде синей линии при выборе элемента:
 
- [![](designer-auto-layout-images/image09.png "Visualizing Constraints")](designer-auto-layout-images/image09.png#lightbox)
+ [![Визуализация ограничений](designer-auto-layout-images/image09.png)](designer-auto-layout-images/image09.png#lightbox)
 
 Можно выбрать ограничение, щелкнув синюю линию и изменив значения ограничений непосредственно на панели свойств. Кроме того, при двойном щелчке на синей линии появится контекстном меню Action, позволяющий изменить значения непосредственно в области конструктора.
 
- [![](designer-auto-layout-images/image08.png "Editing Constraints")](designer-auto-layout-images/image08.png#lightbox)
+ [![Изменение ограничений](designer-auto-layout-images/image08.png)](designer-auto-layout-images/image08.png#lightbox)
 
 ## <a name="constraint-issues"></a>Проблемы с ограничениями
 
@@ -146,27 +146,27 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 
 Конфликтующие ограничения отмечены красным цветом и содержат символ предупреждения. При наведении указателя мыши на символы предупреждения появляется контекстном меню Action со сведениями о конфликте:
 
- [![](designer-auto-layout-images/image11.png "Conflicting Constraints warning")](designer-auto-layout-images/image11.png#lightbox)
+ [![Предупреждение об конфликтующих ограничениях](designer-auto-layout-images/image11.png)](designer-auto-layout-images/image11.png#lightbox)
 
 ### <a name="underconstrained-items"></a>Элементы с неограниченным ограничением
 
 Элементы с неограниченным набором текста отображаются оранжевым цветом и инициируют внешний вид оранжевого значка маркера на панели объектов контроллера представления.
 
- [![](designer-auto-layout-images/image02.png "Underconstrained items appear in orange")](designer-auto-layout-images/image02.png#lightbox)
+ [![Элементы с неограниченным ограничением отображаются оранжевым цветом](designer-auto-layout-images/image02.png)](designer-auto-layout-images/image02.png#lightbox)
 
 Если щелкнуть значок маркера, можно получить сведения о неограниченных элементах в сцене и решить проблемы, полностью ограничив их или удалив их ограничения, как показано на снимке экрана ниже:
 
- [![](designer-auto-layout-images/image10.png "Fixing Underconstrained Items")](designer-auto-layout-images/image10.png#lightbox)
+ [![Исправление элементов с неограниченным ограничением](designer-auto-layout-images/image10.png)](designer-auto-layout-images/image10.png#lightbox)
 
 ### <a name="frame-misplacement"></a>Некоторая Рамка кадра
 
 В случае неточного размещения фрейма используется тот же цветовой код, что и элементы с неограниченным набором. Элемент всегда будет отображаться на поверхности, используя его собственный кадр, но в случае несущего кадра красный прямоугольник пометит, где будет достигнут элемент при запуске приложения, как показано на снимке экрана ниже:
 
- [![](designer-auto-layout-images/image05.png "Sample Frame Misplacement view")](designer-auto-layout-images/image05.png#lightbox)
+ [![Пример представления с незаменой кадров](designer-auto-layout-images/image05.png)](designer-auto-layout-images/image05.png#lightbox)
 
 Чтобы устранить ошибки при обнаружении ошибок в кадрах, нажмите кнопку **Обновить кадры на основе ограничений** на панели инструментов ограничения (кнопка вправо):
 
- [![](designer-auto-layout-images/image03.png "Update Frames based on Constraints toolbar button")](designer-auto-layout-images/image03.png#lightbox)
+ [![Обновление кадров на основе кнопки на панели инструментов для ограничений](designer-auto-layout-images/image03.png)](designer-auto-layout-images/image03.png#lightbox)
 
 При этом рамка элемента будет автоматически настроена в соответствии с позициями, определенными элементами управления.
 
@@ -181,10 +181,10 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 1. Создайте ограничение обычным образом (используя любой из перечисленных выше методов).
 2. В **обозревателе структуры документа**найдите нужное ограничение и выберите его:
 
-    [![](designer-auto-layout-images/modify01.png "The Document Outline Explorer")](designer-auto-layout-images/modify01.png#lightbox)
+    [![Обозреватель структуры документа](designer-auto-layout-images/modify01.png)](designer-auto-layout-images/modify01.png#lightbox)
 3. Затем назначьте **имя** ограничению на вкладке **мини** -приложение **обозревателя свойств**:
 
-    [![](designer-auto-layout-images/modify02.png "The Widget Tab")](designer-auto-layout-images/modify02.png#lightbox)
+    [![Вкладка мини-приложения](designer-auto-layout-images/modify02.png)](designer-auto-layout-images/modify02.png#lightbox)
 4. Сохраните изменения.
 
 Выполнив приведенные выше изменения, можно получить доступ к ограничению в коде и изменить его свойства. Например, можно использовать следующую команду, чтобы установить высоту присоединенного представления равным нулю:
@@ -195,7 +195,7 @@ ViewInfoHeight.Constant = 0;
 
 С учетом следующего параметра для ограничения в конструкторе iOS:
 
-[![](designer-auto-layout-images/modify03.png "Editing a Constraint in the Property Explorer")](designer-auto-layout-images/modify03.png#lightbox)
+[![Изменение ограничения в обозревателе свойств](designer-auto-layout-images/modify03.png)](designer-auto-layout-images/modify03.png#lightbox)
 
 ### <a name="the-deferred-layout-pass"></a>Отложенный проход макета
 
@@ -210,7 +210,7 @@ ViewInfoHeight.Constant = 0;
 
 ### <a name="animating-constraint-changes"></a>Анимация изменений ограничений
 
-В дополнение к изменению свойств ограничений можно использовать основную анимацию для анимации изменений в ограничениях представления. Пример.
+В дополнение к изменению свойств ограничений можно использовать основную анимацию для анимации изменений в ограничениях представления. Например.
 
 ```csharp
 UIView.BeginAnimations("OpenInfo");

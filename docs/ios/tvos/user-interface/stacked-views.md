@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 321ea87bfa4f460c4eaab31ef2ede6f3eb1b927f
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 1e1a9f3cd601a9d469bb53cce412daf08a8140f6
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573577"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938896"
 ---
 # <a name="working-with-tvos-stacked-views-in-xamarin"></a>Работа с tvOSными представлениями с накоплением в Xamarin
 
@@ -20,7 +20,7 @@ ms.locfileid: "84573577"
 
 Макет всех вложенных представлений, присоединенных к представлению «стек», управляется на основе свойств, определенных разработчиком, таких как ось, распределение, выравнивание и отступы:
 
-[![](stacked-views-images/stacked01.png "Subview layout diagram")](stacked-views-images/stacked01.png#lightbox)
+[![Диаграмма макета подпредставления](stacked-views-images/stacked01.png)](stacked-views-images/stacked01.png#lightbox)
 
 При использовании `UIStackView` в приложении Xamarin. tvOS разработчик может либо определять вложенные представления в раскадровке в конструкторе iOS, либо добавлять и удалять подпредставления в коде C#.
 
@@ -97,21 +97,21 @@ ms.locfileid: "84573577"
 1. В **панель решения**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Разработайте макет отдельных элементов, которые будут добавлены в представление "стек":
 
-    [![](stacked-views-images/layout01.png "Element layout example")](stacked-views-images/layout01.png#lightbox)
+    [![Пример макета элемента](stacked-views-images/layout01.png)](stacked-views-images/layout01.png#lightbox)
 1. Добавьте к элементам необходимые ограничения, чтобы обеспечить их правильное масштабирование. Этот шаг важен после добавления элемента в представление стека.
 1. Сделайте необходимое число копий (четыре в этом случае):
 
-    [![](stacked-views-images/layout02.png "The required number of copies")](stacked-views-images/layout02.png#lightbox)
+    [![Необходимое число копий](stacked-views-images/layout02.png)](stacked-views-images/layout02.png#lightbox)
 1. Перетащите **представление стека** из **панели элементов** и поместите его в представление:
 
-    [![](stacked-views-images/layout03.png "A Stack View")](stacked-views-images/layout03.png#lightbox)
+    [![Представление "стек"](stacked-views-images/layout03.png)](stacked-views-images/layout03.png#lightbox)
 1. Выберите представление стека на **вкладке мини** -приложение **панель свойств** выберите **заполнить** для **выравнивания**, **заполните равномерно** для **распределения** и введите `25` для **интервала**:
 
-    [![](stacked-views-images/layout04.png "The Widget Tab")](stacked-views-images/layout04.png#lightbox)
+    [![Вкладка мини-приложения](stacked-views-images/layout04.png)](stacked-views-images/layout04.png#lightbox)
 1. Разместите представление стека на экране там, где оно нужно, и добавьте ограничения, чтобы они оставались в нужном месте.
 1. Выберите отдельные элементы и перетащите их в представление "стек":
 
-    [![](stacked-views-images/layout05.png "The individual elements in the Stack View")](stacked-views-images/layout05.png#lightbox)
+    [![Отдельные элементы в представлении "стек"](stacked-views-images/layout05.png)](stacked-views-images/layout05.png#lightbox)
 1. Макет будет скорректирован, и элементы будут упорядочены в представлении стека на основе атрибутов, заданных выше.
 1. Назначьте **имена** на **вкладке мини** -приложение **обозревателя свойств** , чтобы работать с элементами управления пользовательского интерфейса в коде C#.
 1. Сохраните изменения.
@@ -121,21 +121,21 @@ ms.locfileid: "84573577"
 1. В **Обозреватель решений**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Разработайте макет отдельных элементов, которые будут добавлены в представление "стек":
 
-    [![](stacked-views-images/layout01.png "Example element layout")](stacked-views-images/layout01.png#lightbox)
+    [![Пример макета элемента](stacked-views-images/layout01.png)](stacked-views-images/layout01.png#lightbox)
 1. Добавьте к элементам необходимые ограничения, чтобы обеспечить их правильное масштабирование. Этот шаг важен после добавления элемента в представление стека.
 1. Сделайте необходимое число копий (четыре в этом случае):
 
-    [![](stacked-views-images/layout02.png "The required number of copies")](stacked-views-images/layout02.png#lightbox)
+    [![Необходимое число копий](stacked-views-images/layout02.png)](stacked-views-images/layout02.png#lightbox)
 1. Перетащите **представление стека** из **панели элементов** и поместите его в представление:
 
-    [![](stacked-views-images/layout03-vs.png "A Stack View")](stacked-views-images/layout03-vs.png#lightbox)
+    [![Представление "стек"](stacked-views-images/layout03-vs.png)](stacked-views-images/layout03-vs.png#lightbox)
 1. Выберите представление стек, на **вкладке мини** -приложение **обозревателя свойств** выберите **заполнить** для **выравнивания**, **заполните равномерное** **распределение** и введите `25` для **интервала**:
 
-    [![](stacked-views-images/layout04-vs.png "The Widget Tab")](stacked-views-images/layout04-vs.png#lightbox)
+    [![Вкладка мини-приложения](stacked-views-images/layout04-vs.png)](stacked-views-images/layout04-vs.png#lightbox)
 1. Разместите представление стека на экране там, где оно нужно, и добавьте ограничения, чтобы они оставались в нужном месте.
 1. Выберите отдельные элементы и перетащите их в представление "стек":
 
-    [![](stacked-views-images/layout05-vs.png "The individual elements in the Stack View")](stacked-views-images/layout05-vs.png#lightbox)
+    [![Отдельные элементы в представлении "стек"](stacked-views-images/layout05-vs.png)](stacked-views-images/layout05-vs.png#lightbox)
 1. Макет будет скорректирован, и элементы будут упорядочены в представлении стека на основе атрибутов, заданных выше.
 1. Назначьте **имена** на **вкладке мини** -приложение **обозревателя свойств** , чтобы работать с элементами управления пользовательского интерфейса в коде C#.
 1. Сохраните изменения.
@@ -147,7 +147,7 @@ ms.locfileid: "84573577"
 
 Дополнительные сведения о работе с раскадровками см. в статье [Hello, tvOS краткое руководство по началу работы](~/ios/tvos/get-started/hello-tvos.md).
 
-В нашем примере мы предоставили розетку и действие для элемента управления "сегмент" и розетку для каждой "карты игрока". В коде мы видим и отображаем проигрыватель на основе текущего сегмента. Пример.
+В нашем примере мы предоставили розетку и действие для элемента управления "сегмент" и розетку для каждой "карты игрока". В коде мы видим и отображаем проигрыватель на основе текущего сегмента. Например.
 
 ```csharp
 partial void PlayerCountChanged (Foundation.NSObject sender) {
@@ -184,11 +184,11 @@ partial void PlayerCountChanged (Foundation.NSObject sender) {
 
 При запуске приложения четыре элемента будут равномерно распределяться в нашем представлении Stack:
 
-[![](stacked-views-images/layout06.png "When the app is run, the four elements will equally be distributed in our Stack View")](stacked-views-images/layout06.png#lightbox)
+[![При запуске приложения четыре элемента будут равномерно распределены в представлении Stack.](stacked-views-images/layout06.png)](stacked-views-images/layout06.png#lightbox)
 
 Если число игроков уменьшилось, неиспользуемые представления скрываются, а представление стека корректирует макет таким образом:
 
-[![](stacked-views-images/layout07.png "If the number of players is decreased, the unused views are hidden and the Stack View adjust the layout to fit")](stacked-views-images/layout07.png#lightbox)
+[![При уменьшении числа игроков неиспользуемые представления скрываются, а представление стека настраивает макет в соответствии с](stacked-views-images/layout07.png)](stacked-views-images/layout07.png#lightbox)
 
 <a name="Populate-a-Stack-View-from-Code"></a>
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/11/2016
-ms.openlocfilehash: 3ff868ed10d59a7c1026a222f314a1166a8de45e
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 588dadbfe63a46bc7658d5d29a052cebe52be65c
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86930199"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997414"
 ---
 # <a name="cloudkit-in-xamarinios"></a>CloudKit в Xamarin. iOS
 
@@ -23,7 +23,7 @@ ms.locfileid: "86930199"
 > [!IMPORTANT]
 > Компания Apple [предоставляет инструменты](https://developer.apple.com/support/allowing-users-to-manage-data/), которые помогают разработчикам надлежащим образом соблюдать Общий регламент по защите данных Европейского союза (GDPR).
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
 
 Для выполнения действий, описанных в этой статье, необходимо выполнить следующие действия.
 
@@ -218,7 +218,7 @@ await CloudManager.SaveAsync (newRecord);
 var recordID =  new CKRecordID("My Record");
 ```
 
-### <a name="references"></a>Ссылки (на английском языке)
+### <a name="references"></a>Ссылки
 
 Ссылки предоставляют связи между связанными записями в заданной базе данных:
 
@@ -626,7 +626,7 @@ public override void ReceivedRemoteNotification (UIApplication application, NSDi
 
 Как отмечалось в начале этой статьи, CloudKit строится на основе существующей инфраструктуры iCloud. В следующем разделе подробно рассматривается, как учетные записи предоставляются разработчику с помощью API CloudKit.
 
-### <a name="authentication"></a>Аутентификация
+### <a name="authentication"></a>Проверка подлинности
 
 При работе с учетными записями пользователей первым вопросом является проверка подлинности. CloudKit поддерживает проверку подлинности с помощью текущего пользователя iCloud, вошедшего на устройство. Проверка подлинности выполняется в фоновом режиме и обрабатывается iOS. Таким образом разработчикам не придется беспокоиться о реализации проверки подлинности. Они проверяют, вошел ли пользователь в систему.
 
@@ -641,7 +641,7 @@ CloudKit предоставляет разработчику следующие 
 
 Далее мы рассмотрим эти темы подробно.
 
-#### <a name="identity"></a>Удостоверение
+#### <a name="identity"></a>Идентификация
 
 Как упоминалось выше, CloudKit предоставляет приложению возможность однозначно идентифицировать данного пользователя:
 
@@ -811,7 +811,7 @@ CloudKit предоставляет отдельную среду разрабо
 
 6. Выберите архив приложения и нажмите кнопку **Export... (экспорт...** ):
 
-    [![](intro-to-cloudkit-images/shipping05.png "The application's archive")](intro-to-cloudkit-images/shipping05.png#lightbox)
+    [![Архив приложения](intro-to-cloudkit-images/shipping05.png)](intro-to-cloudkit-images/shipping05.png#lightbox)
 
 7. Выберите метод экспорта и нажмите кнопку **Далее** :
 
@@ -848,7 +848,7 @@ CloudKit предоставляет отдельную среду разрабо
 
 Учитывая эти случаи использования, разработчик должен выбрать правильную технологию iCloud для предоставления как текущих требуемых функций приложения, так и обеспечить хорошую масштабируемость для будущего роста.
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье было рассмотрено краткое введение в API CloudKit. В нем показано, как подготавливать и настраивать приложение Xamarin iOS для использования CloudKit. В нем были рассмотрены функции API CloudKit. В нем показано, как спроектировать приложение с поддержкой CloudKit для масштабируемости с помощью запросов и подписок. И, наконец, он показывает сведения об учетной записи пользователя, предоставляемые приложению CloudKit.
 

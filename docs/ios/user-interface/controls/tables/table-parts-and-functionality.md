@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: bf023543d3159f5d5baf7f7036a576b8a746cf9e
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 6002e5cc62dfe30c14f21943c690a5a1b15a0c12
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572134"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936595"
 ---
 # <a name="table-parts-and-functionality-in-xamarinios"></a>Части и функции таблиц в Xamarin. iOS
 
@@ -21,12 +21,12 @@ ms.locfileid: "84572134"
 - [Заголовок раздела](#Section_Header)
 - [Ячейки](#Cells) (или строки, если вы предпочитаете)
 - [Нижний колонтитул раздела](#Section_Footer)
-- [Номер](#Index)
+- [Index](#Index)
 - [Режим редактирования](#Edit_Features) (включает операцию "прокрутить для удаления" и перетаскивание маркеров для изменения порядка строк) 
 
 На этих снимках экрана показано, как отображаются строки разделов, верхние и нижние колонтитулы, элементы управления правки и индекс.
 
- [![](table-parts-and-functionality-images/image1a.png "These screenshots show how section rows, headers, footers, edit controls and the index are displayed")](table-parts-and-functionality-images/image1a.png#lightbox)
+ [![На этих снимках экрана показано, как отображаются строки разделов, верхние и нижние колонтитулы, элементы управления правки и индекс.](table-parts-and-functionality-images/image1a.png)](table-parts-and-functionality-images/image1a.png#lightbox)
 
 Эти компоненты подробно описаны ниже.
 
@@ -72,7 +72,7 @@ ms.locfileid: "84572134"
 
 Ниже показаны основные классы, используемые для отображения табличных представлений.
 
-[![](table-parts-and-functionality-images/classdiagram.png "The primary classes used to display table views are shown here")](table-parts-and-functionality-images/classdiagram.png#lightbox)
+[![Здесь показаны основные классы, используемые для отображения табличных представлений.](table-parts-and-functionality-images/classdiagram.png)](table-parts-and-functionality-images/classdiagram.png#lightbox)
 
 Назначение каждого класса описывается ниже.
 

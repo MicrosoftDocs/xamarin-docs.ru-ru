@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/13/2016
-ms.openlocfilehash: 3dcd5f17b35b9829831adcf997d8bde97c0572e7
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 96873e1bff34a4ef3ed76d675ca0a2b5c03f0d72
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030158"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997245"
 ---
 # <a name="watchos-project-references-in-xamarin"></a>Ссылки на проекты watchOS в Xamarin
 
@@ -26,30 +26,30 @@ _Описание связи между приложением iOS, просмо
 
 - Приложение для **iPhone** . ссылки приложения **Watch**
 
-  ![](project-references-images/catalog-reference1.png "iPhone app references Watch App")
+  ![Приложение для iPhone. ссылки приложения Watch](project-references-images/catalog-reference1.png)
 
 - **Просмотр** ссылок на приложения **Просмотр расширения приложения**
 
-  ![](project-references-images/catalog-reference2.png "iPhone app references Watch App")
+  ![Приложение для iPhone. ссылки приложения Watch](project-references-images/catalog-reference2.png)
 
 - **Расширение Watch App** не ссылается ни на один из других проектов
 
-  ![](project-references-images/catalog-reference3.png "Watch App Extension does not reference the other projects")
+  ![Контрольное расширение приложения не ссылается на другие проекты](project-references-images/catalog-reference3.png)
 
 ## <a name="bundle-identifiers"></a>Идентификаторы пакета
 
 Также необходимо убедиться в правильности **идентификаторов пакета** .
-Все три проекта должны иметь *одинаковый* префикс идентификатора, два из которых имеют предопределенные расширения `watchkitextension` и `watchkitapp`, как показано ниже (для примера **ватчкиткаталог** ):
+Все три проекта должны иметь *один и тот же* префикс идентификатора, при этом два проекта наблюдения имеют предопределенные расширения `watchkitextension` и `watchkitapp` , как показано ниже (для примера **ватчкиткаталог** ):
 
-- Унифицированный проект Xamarin. iOS — `com.xamarin.WatchKitCatalog`
+- Унифицированный проект Xamarin. iOS —`com.xamarin.WatchKitCatalog`
 
-- Проект расширения WatchKit — `com.xamarin.WatchKitCatalog.watchkitextension`
+- Проект расширения WatchKit —`com.xamarin.WatchKitCatalog.watchkitextension`
 
-- Просмотр проекта приложения — `com.xamarin.WatchKitCatalog.watchkitapp`
+- Просмотр проекта приложения-`com.xamarin.WatchKitCatalog.watchkitapp`
 
 Также убедитесь, что эти параметры **info. plist** верны:
 
-- `WKCompanionAppBundleIdentifier` проекта контрольного приложения соответствует ИДЕНТИФИКАТОРу пакета родительского приложения или контейнера (Internet Explorer), который выполняется на iPhone.
+- Проект Watch App `WKCompanionAppBundleIdentifier` соответствует идентификатору пакета родительского приложения или контейнера (IE. тот, который работает на iPhone);
 
 - **Идентификатор пакета WKApp** проекта расширения набора контрольных пакетов соответствует идентификатору пакета проекта приложения Watch.
 
@@ -57,19 +57,19 @@ _Описание связи между приложением iOS, просмо
 
 На этом снимке экрана показан файл info. plist **расширения Watch** , где также отображается идентификатор **приложения для просмотра** .
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-![](project-references-images/infoplist-extension.png "This screenshot is the Watch Extension's Info.plist file")
+![На этом снимке экрана показан файл info. plist расширения Watch.](project-references-images/infoplist-extension.png)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-![](project-references-images/infoplist-extension-vs.png "This screenshot is the Watch Extension's Info.plist file")
+![На этом снимке экрана показан файл info. plist расширения Watch.](project-references-images/infoplist-extension-vs.png)
 
 -----
 
 На этом снимке экрана показан файл info. plist **приложения Watch** .
 Текущая версия **ОС контрольных значений** — 8,2, поэтому **целевой объект развертывания** для приложения Watch должен быть равен **8,2**. Обратите внимание, что при наличии установленного Xcode 6,3 это значение может быть равно 8,3. Вы должны изменить его на 8,2.
 
-![](project-references-images/infoplist-watchapp.png "The watch Info.plist file")
+![Файл Watch info. plist](project-references-images/infoplist-watchapp.png)
 
 Целевой объект развертывания для приложения Watch может отличаться от расширения Watch и приложения iOS.

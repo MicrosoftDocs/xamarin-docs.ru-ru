@@ -10,12 +10,12 @@ ms.date: 02/28/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d714b4c9d598d8cca26ae992abf3f15df703d11b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cd9815c6448efae0bb0af982c8807c47263ae13e
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139182"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938216"
 ---
 # <a name="xamarinforms-web-services-introduction"></a>Xamarin.FormsВведение в веб-службы
 
@@ -34,8 +34,8 @@ _В этом разделе приводится пошаговое руково
 
 При запуске приложения отображается страница со списком задач, полученных от веб-службы, и позволяет пользователю создать новую задачу. Если щелкнуть задачу, приложение перейдет к другой странице, где задача может быть изменена, сохранена, удалена и произнесена. Ниже показано итоговое приложение:
 
-![](introduction-images/app-example-1.png "Todo application - first page")
-![](introduction-images/app-example-2.png "Todo application - second page")
+![Приложение Todo — первая страница ](introduction-images/app-example-1.png)
+ ![ TODO — Вторая страница](introduction-images/app-example-2.png)
 
 В каждом разделе этого руководстве содержится ссылка для скачивания на *другую* версию приложения, которая демонстрирует конкретный тип серверной части веб-службы. Скачайте соответствующий пример кода на странице, относящейся к каждому стилю веб-службы.
 

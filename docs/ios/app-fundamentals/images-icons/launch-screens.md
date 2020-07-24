@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/02/2018
-ms.openlocfilehash: a2f15c8385b7df7afc3f04e033a085cb00bc9005
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: b4191ae3c25ee5d2eeccd44377177d7d0df6f19e
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573863"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937375"
 ---
 # <a name="launch-screens-for-xamarinios-apps"></a>Экраны запуска приложений Xamarin. iOS
 
@@ -191,34 +191,34 @@ _В этой статье объясняется, как создать экра
 
 При обновлении существующего приложения для использования раскадровки на экранах запуска щелкните правой кнопкой мыши **имя проекта** в **Обозреватель решений** и выберите **добавить**  >  **новый файл...**. Выберите **iOS**  >  **экран запуска** iOS и нажмите кнопку **создать** :
 
-![](launch-screens-images/storyboard02.png "Select an iOS Launch Screen")
+![Выбор экрана запуска iOS](launch-screens-images/storyboard02.png)
 
 Затем дважды щелкните `Info.plist` файл в **Обозреватель решений** , чтобы открыть его для редактирования. На **экране запуск**выберите новый файл раскадровки, созданный выше.
 
-![](launch-screens-images/storyboard09.png "Select the new Storyboard file created above")
+![Выберите новый файл раскадровки, созданный выше](launch-screens-images/storyboard09.png)
 
 Чтобы использовать новую раскадровку в качестве экрана запуска, выполните следующие действия.
 
 1. Дважды щелкните `Info.plist` файл в **Обозреватель решений** , чтобы открыть его для редактирования.
 2. Перейдите к разделу " **универсальные образы запуска** " редактора, откройте раскрывающийся список **запуска** и выберите имя раскадровки, созданной выше: 
 
-    ![](launch-screens-images/storyboard08.png "Setting the launch screen to the storyboard")
+    ![Установка для экрана запуска раскадровки](launch-screens-images/storyboard08.png)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 1. Щелкните правой кнопкой мыши имя проекта в **Обозреватель решений** и выберите **Добавить**  >  **новый файл...**: 
 
-    ![](launch-screens-images/image012.png "Add new file")
+    ![Добавить новый файл](launch-screens-images/image012.png)
 2. Введите имя для экрана запуска и нажмите кнопку **Добавить** : 
 
-    ![](launch-screens-images/image013.png "Enter a name for the launch screen")
+    ![Введите имя для экрана запуска](launch-screens-images/image013.png)
 3. В **Обозреватель решений**дважды щелкните только что созданный файл раскадровки, чтобы открыть его для редактирования.
 4. Убедитесь, что для **класса Size** задано значение **Any: Any** и **представление как** **универсальное**: 
 
-    ![](launch-screens-images/image016.png "Ensure that the Size Class is set to any:any and the View As is Generic")
+    ![Убедитесь, что для класса Size задано значение Any: Any и представление как универсальный.](launch-screens-images/image016.png)
 5. Выпускайте экран запуска из классов размера, простых элементов пользовательского интерфейса (например, `UIImageView` ) и изображений, включенных в пакет приложения: 
 
-    ![](launch-screens-images/image017.png "Assembly the launch screen in the iOS Designer")
+    ![Сборка экрана запуска в конструкторе iOS](launch-screens-images/image017.png)
 6. Сохраните изменения в раскадровке.
 
 -----

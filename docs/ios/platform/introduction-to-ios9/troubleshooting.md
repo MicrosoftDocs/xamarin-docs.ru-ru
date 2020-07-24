@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: 2d554fa2f967a966195007ea67c48506eaac1e79
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 435fe894e4082f7eddf37d100bb8b2d2ed3a166f
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84570886"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938012"
 ---
 # <a name="xamarinios-9--troubleshooting"></a>Xamarin. iOS 9 — Устранение неполадок
 
@@ -32,7 +32,7 @@ _Эта статья содержит несколько советов по у�
 
 В Xcode выберите меню **Xcode** , а затем — **настройки...**  >  **Загружаемые файлы**:
 
-[![](troubleshooting-images/ios8.png "iOS 8 Simulators Downloads")](troubleshooting-images/ios8.png#lightbox)
+[![Загрузки для симуляторов iOS 8](troubleshooting-images/ios8.png)](troubleshooting-images/ios8.png#lightbox)
 
 Нажмите кнопку " **проверить и установить сейчас** ", чтобы переустановить симуляторы iOS 8.
 
@@ -137,28 +137,28 @@ Dyld Message: no cach image with name (/System/Library/PrivateFrameworks/JavaScr
 
 ## <a name="untrusted-enterprise-developer"></a>Недоверенный корпоративный разработчик
 
-При попытке запуска версии iOS 9 приложения Xamarin. iOS на реальном устройстве iOS может появиться сообщение о том, что учетная запись разработчика не является доверенной для устройства. Пример.
+При попытке запуска версии iOS 9 приложения Xamarin. iOS на реальном устройстве iOS может появиться сообщение о том, что учетная запись разработчика не является доверенной для устройства. Например.
 
-[![](troubleshooting-images/untrusted01.png "Untrusted Enterprise Developer alert")](troubleshooting-images/untrusted01.png#lightbox)
+[![Оповещение о ненадежном корпоративном разработчике](troubleshooting-images/untrusted01.png)](troubleshooting-images/untrusted01.png#lightbox)
 
 Чтобы решить эту проблему, выполните следующие действия.
 
 1. Запустите Xcode (последняя бета-версия) на компьютере под управлением системы разработки Mac.
 2. В меню **окно** выберите **устройства** , чтобы открыть окно устройства: 
 
-    [![](troubleshooting-images/untrusted02.png "The Devices Window")](troubleshooting-images/untrusted02.png#lightbox)
+    [![Окно "устройства"](troubleshooting-images/untrusted02.png)](troubleshooting-images/untrusted02.png#lightbox)
 3. На боковой панели **устройства** выберите устройство, щелкните его правой кнопкой мыши и выберите команду **Показать профили подготовки...**: 
 
-    [![](troubleshooting-images/untrusted03.png "SShow Provisioning Profiles")](troubleshooting-images/untrusted03.png#lightbox)
+    [![Профили подготовки Сшов](troubleshooting-images/untrusted03.png)](troubleshooting-images/untrusted03.png#lightbox)
 4. Выберите в настоящее время каждый профиль подготовки на устройстве и нажмите кнопку, **-** чтобы удалить его: 
 
-    [![](troubleshooting-images/untrusted04.png "Deleting a provisioning profile")](troubleshooting-images/untrusted04.png#lightbox)
+    [![Удаление профиля подготовки](troubleshooting-images/untrusted04.png)](troubleshooting-images/untrusted04.png#lightbox)
 5. В меню **Xcode** выберите **настройки...** и **учетные записи**: 
 
-    [![](troubleshooting-images/untrusted05.png "Xcode account preferences")](troubleshooting-images/untrusted05.png#lightbox)
+    [![Параметры учетной записи Xcode](troubleshooting-images/untrusted05.png)](troubleshooting-images/untrusted05.png#lightbox)
 6. Нажмите кнопку **Просмотреть подробности...** , а затем нажмите кнопку **скачать все** : 
 
-    [![](troubleshooting-images/untrusted06.png "Download all profiles")](troubleshooting-images/untrusted06.png#lightbox)
+    [![Скачать все профили](troubleshooting-images/untrusted06.png)](troubleshooting-images/untrusted06.png#lightbox)
 7. После завершения обновления списка нажмите кнопку **done (Готово** ) и закройте окно настройки.
 8. Удалите существующую версию приложения Xamarin. iOS, которую вы пытались протестировать с устройства iOS.
 9. Вернитесь к Visual Studio для Mac, выполните чистую сборку и попытайтесь повторно запустить приложение на устройстве.

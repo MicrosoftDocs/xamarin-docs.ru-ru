@@ -10,12 +10,12 @@ ms.date: 04/05/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 61ae651a2402204f69f642235d74d8d641b47988
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 074b782bfc5458cf89e593913b6f31de633ffd73
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139026"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938155"
 ---
 # <a name="finger-painting-in-skiasharp"></a>Рисование пальцами в SkiaSharp
 
@@ -25,7 +25,7 @@ _Используйте пальцы для рисования на холсте
 
 `SKPath`Объект может постоянно обновляться и отображаться. Эта функция позволяет использовать путь для интерактивного рисования, например в программе рисования пальца.
 
-![](finger-paint-images/fingerpaintsample.png "An exercise in finger painting")
+![Упражнения в выкраске пальца](finger-paint-images/fingerpaintsample.png)
 
 Поддержка сенсорного ввода в Xamarin.Forms не позволяет отслеживать отдельные пальцы на экране, поэтому Xamarin.Forms для обеспечения дополнительной поддержки сенсорного ввода был разработан такой режим. Этот эффект описан в статье [**вызов событий из эффектов**](~/xamarin-forms/app-fundamentals/effects/touch-tracking.md). Демонстрационные видеоролики программы с примерами с [**поддержкой сенсорного экрана**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/) включают две страницы, использующие SkiaSharp, в том числе программу рисования пальца.
 
@@ -168,7 +168,7 @@ public partial class FingerPaintPage : ContentPage
 
 Ваш палец картин только по вашему автору:
 
-[![](finger-paint-images/fingerpaint-small.png "Triple screenshot of the Finger Paint page")](finger-paint-images/fingerpaint-large.png#lightbox "Triple screenshot of the Finger Paint page")
+[![Снимок экрана с тремя изображениями страницы рисования пальцами](finger-paint-images/fingerpaint-small.png)](finger-paint-images/fingerpaint-large.png#lightbox "Снимок экрана с тремя изображениями страницы рисования пальцами")
 
 Теперь вы узнали, как рисовать линии и определять кривые с помощью параметрической уравнения. В следующем разделе [**SkiaSharp кривых и paths**](../curves/index.md) рассматриваются различные типы кривых, которые `SKPath` поддерживаются. Но полезным условием является исследование [**преобразований SkiaSharp**](../transforms/index.md).
 

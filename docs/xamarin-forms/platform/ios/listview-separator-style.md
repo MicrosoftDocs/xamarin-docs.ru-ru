@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c8d660896684283ba9b40cde168adbfe30ca0c51
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: fda45bc0aa2b7bc582c30b752662055bd4bd4865
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135997"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937063"
 ---
 # <a name="listview-separator-style-on-ios"></a>Стиль разделителя ListView в iOS
 
@@ -51,7 +51,7 @@ listView.On<iOS>().SetSeparatorStyle(SeparatorStyle.FullWidth);
 
 В результате заданное [`SeparatorStyle`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle) значение применяется к элементу [`ListView`](xref:Xamarin.Forms.ListView) , который управляет шириной разделителя ячеек.
 
-![](listview-separator-style-images/listview-separatorstyle.png "ListView SeparatorStyle Platform-Specific")
+![ListView Сепараторстиле для конкретной платформы](listview-separator-style-images/listview-separatorstyle.png)
 
 > [!NOTE]
 > После того как для стиля разделителя задано значение `FullWidth` , его нельзя изменить обратно `Default` во время выполнения.

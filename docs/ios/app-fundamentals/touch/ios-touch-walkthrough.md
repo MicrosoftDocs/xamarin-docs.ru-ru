@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: ca1acd58ba9b5c598e19424f46cc0bcb838315aa
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: b547d21b19d223aebb345f7c4a1dc8dc126fb0d6
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571783"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86928787"
 ---
 # <a name="walkthrough-using-touch-in-xamarinios"></a>Пошаговое руководство. Использование сенсорного ввода в Xamarin. iOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "84571783"
 
 1. Откройте проект **Touch_Start**. Сначала запустите проект, чтобы убедиться, что все готово, и коснитесь кнопки **сенсорные примеры** . Вы увидите экран, аналогичный приведенному ниже (хотя ни одна из кнопок не будет работать):
 
-    [![](ios-touch-walkthrough-images/image4.png "Sample app run with non-working buttons")](ios-touch-walkthrough-images/image4.png#lightbox)
+    [![Пример приложения запускается с нерабочими кнопками](ios-touch-walkthrough-images/image4.png)](ios-touch-walkthrough-images/image4.png#lightbox)
 
 1. Измените файл **TouchViewController.CS** и добавьте в класс следующие две переменные экземпляра `TouchViewController` :
 
@@ -163,9 +163,9 @@ ms.locfileid: "84571783"
 
 1. На этом этапе экран сенсорных примеров завершен. Обратите внимание, что экран изменяется при взаимодействии с каждым из изображений, как показано на следующем снимке экрана:
 
-    [![](ios-touch-walkthrough-images/image4.png "The starting app screen")](ios-touch-walkthrough-images/image4.png#lightbox)
+    [![Экран начального приложения](ios-touch-walkthrough-images/image4.png)](ios-touch-walkthrough-images/image4.png#lightbox)
 
-    [![](ios-touch-walkthrough-images/image5.png "The screen after the user drags a button")](ios-touch-walkthrough-images/image5.png#lightbox)
+    [![Экран после того, как пользователь перетаскивает кнопку](ios-touch-walkthrough-images/image5.png)](ios-touch-walkthrough-images/image5.png#lightbox)
 
 <a name="Gesture_Recognizer_Samples"></a>
 
@@ -294,7 +294,7 @@ ms.locfileid: "84571783"
 1. Запустите приложение и взаимодействуйте с двумя образами.
 На следующем снимке экрана приведен один из примеров этих взаимодействий:
 
-    [![](ios-touch-walkthrough-images/image7.png "This screenshot shows a drag interaction")](ios-touch-walkthrough-images/image7.png#lightbox)
+    [![На этом снимке экрана показано взаимодействие перетаскивания](ios-touch-walkthrough-images/image7.png)](ios-touch-walkthrough-images/image7.png#lightbox)
 
 <a name="Custom_Gesture_Recognizer"></a>
 
@@ -302,7 +302,7 @@ ms.locfileid: "84571783"
 
 В этом разделе мы будем применять концепции из предыдущих разделов для создания пользовательского распознавателя жестов. Распознаватель пользовательских жестов будет подклассом `UIGestureRecognizer` и будет распознать, когда пользователь рисует "V" на экране, а затем переключается на точечный рисунок. Пример этого экрана приведен на следующем снимке экрана:
 
- [![](ios-touch-walkthrough-images/image8.png "The app will recognize when the user draws a `V` on the screen")](ios-touch-walkthrough-images/image8.png#lightbox)
+ [![Приложение будет распознать, когда пользователь рисует на экране "V"](ios-touch-walkthrough-images/image8.png)](ios-touch-walkthrough-images/image8.png#lightbox)
 
 Чтобы создать пользовательский распознаватель жестов, выполните следующие действия.
 
@@ -476,9 +476,9 @@ ms.locfileid: "84571783"
 
 1. Запустите приложение и попробуйте вырисовать "V" на экране. Вы увидите, что отображаемое изображение изменилось, как показано на следующих снимках экрана:
 
-    [![](ios-touch-walkthrough-images/image9.png "The button checked")](ios-touch-walkthrough-images/image9.png#lightbox)
+    [![Кнопка отмечена](ios-touch-walkthrough-images/image9.png)](ios-touch-walkthrough-images/image9.png#lightbox)
 
-    [![](ios-touch-walkthrough-images/image10.png "The button unchecked")](ios-touch-walkthrough-images/image10.png#lightbox)
+    [![Кнопка снята](ios-touch-walkthrough-images/image10.png)](ios-touch-walkthrough-images/image10.png#lightbox)
 
 В приведенных выше трех разделах демонстрируются различные способы реагирования на события касания в iOS: использование событий касания, встроенные средства распознавания жестов или пользовательский распознаватель жестов.
 

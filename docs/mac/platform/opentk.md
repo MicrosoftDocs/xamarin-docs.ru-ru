@@ -7,18 +7,18 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: bd5217173e00de7d09e4ec14a5acf4d6a8389b10
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: fbd6e4a3b1c5cdb45a057f1ed664a0d5e71e224d
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574448"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937895"
 ---
 # <a name="introduction-to-opentk-in-xamarinmac"></a>Общие сведения о Опентк в Xamarin. Mac
 
 Опентк (Open Toolkit) — это расширенная, низкоуровневого библиотека C#, которая упрощает работу с OpenGL, OpenCL и открытым. Опентк можно использовать для игр, научных приложений или других проектов, требующих трехмерной графики, аудио или вычислительной функциональности. В этой статье приводятся краткие сведения об использовании Опентк в приложении Xamarin. Mac.
 
-[![](opentk-images/intro01.png "An example app run")](opentk-images/intro01.png#lightbox)
+[![Пример выполнения приложения](opentk-images/intro01.png)](opentk-images/intro01.png#lightbox)
 
 В этой статье рассматриваются основы Опентк в приложении Xamarin. Mac. Мы настоятельно рекомендуем сначала ознакомиться со статьей [Hello, Mac](~/mac/get-started/hello-mac.md) , в частности [Знакомство с Xcode и Interface Builder](~/mac/get-started/hello-mac.md#introduction-to-xcode-and-interface-builder) , а также с разделом "возможности [и действия](~/mac/get-started/hello-mac.md#outlets-and-actions) ", так как в нем рассматриваются основные понятия и методы, которые мы будем использовать в этой статье.
 
@@ -54,11 +54,11 @@ ms.locfileid: "84574448"
 
 Запустите Visual Studio для Mac и создайте новое решение Xamarin. Mac. Выберите **Mac**  >  **приложение**Mac  >  **Общие**  >  **Cocoa приложение**:
 
-[![](opentk-images/sample01.png "Adding a new Cocoa App")](opentk-images/sample01.png#lightbox)
+[![Добавление нового приложения Cocoa](opentk-images/sample01.png)](opentk-images/sample01.png#lightbox)
 
 Введите `MacOpenTK` для **имени проекта**:
 
-[![](opentk-images/sample02.png "Setting the project name")](opentk-images/sample02.png#lightbox)
+[![Задание имени проекта](opentk-images/sample02.png)](opentk-images/sample02.png#lightbox)
 
 Нажмите кнопку **создать** , чтобы создать новый проект.
 
@@ -70,7 +70,7 @@ ms.locfileid: "84574448"
 
 Установите флажок `OpenTK` и нажмите кнопку **ОК** :
 
-[![](opentk-images/sample03.png "Editing the project references")](opentk-images/sample03.png#lightbox)
+[![Изменение ссылок на проекты](opentk-images/sample03.png)](opentk-images/sample03.png#lightbox)
 
 <a name="Using_OpenTK"></a>
 
@@ -297,7 +297,7 @@ Game.Run(60.0);
 
 Давайте запустим приложение и увидите выходные данные:
 
-[![](opentk-images/intro01.png "A sample of the apps output")](opentk-images/intro01.png#lightbox)
+[![Пример выходных данных приложений](opentk-images/intro01.png)](opentk-images/intro01.png#lightbox)
 
 Если изменить размер окна, представление игры также будет располагаться, а размер треугольника также будет изменен и обновлен в режиме реального времени.
 

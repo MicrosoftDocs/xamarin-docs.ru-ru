@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8698bacd7257df431b12166c749f5826e8d6fd3c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 47182578a6583dde34cb7f06e3433cdb2703f6ba
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138455"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937687"
 ---
 # <a name="dots-and-dashes-in-skiasharp"></a>Точки и тире в SkiaSharp
 
@@ -25,7 +25,7 @@ _Основные сложности рисования пунктирных и 
 
 SkiaSharp позволяет рисовать линии, которые не являются сплошными, а состоят из точек и тире:
 
-![](dots-images/dottedlinesample.png "Dotted line")
+![Пунктирная линия](dots-images/dottedlinesample.png)
 
 Это делается с помощью *результата пути*, который является экземпляром [`SKPathEffect`](xref:SkiaSharp.SKPathEffect) класса, установленного для [`PathEffect`](xref:SkiaSharp.SKPaint.PathEffect) свойства `SKPaint` . Можно создать эффект пути (или объединить эффекты пути) с помощью одного из статических методов создания, определенных в `SKPathEffect` . ( `SKPathEffect` является одним из шести эффектов, поддерживаемых SkiaSharp. другие описаны в разделе [**SkiaSharp Effect**](../effects/index.md).)
 
@@ -153,7 +153,7 @@ float[] GetPickerArray(Picker picker)
 
 На следующих снимках экрана на экране iOS в дальнем левом углу отображается пунктирная линия:
 
-[![](dots-images/dotsanddashes-small.png "Triple screenshot of the Dots and Dashes page")](dots-images/dotsanddashes-large.png#lightbox "Triple screenshot of the Dots and Dashes page")
+[![Тройной снимок экрана со страницей "точки и тире"](dots-images/dotsanddashes-small.png)](dots-images/dotsanddashes-large.png#lightbox "Тройной снимок экрана со страницей "точки и тире"")
 
 Однако экран Android также должен отображать пунктирную линию, используя массив {10, 10}, а строку сплошной. Что произошло? Проблема заключается в том, что экран Android также имеет параметр «Установка с прописными буквами `Square` ». Это расширяет все тире на половину толщины штрихов, что приводит к заполнению пропусков.
 
@@ -214,7 +214,7 @@ public class AnimatedSpiralPage : ContentPage
 
 Конечно, для просмотра анимации необходимо запустить программу.
 
-[![](dots-images/animatedspiral-small.png "Triple screenshot of the Animated Spiral page")](dots-images/animatedspiral-large.png#lightbox "Triple screenshot of the Animated Spiral page")
+[![Тройной снимок экрана с анимированной страницей](dots-images/animatedspiral-small.png)](dots-images/animatedspiral-large.png#lightbox "Тройной снимок экрана с анимированной страницей")
 
 ## <a name="related-links"></a>Связанные ссылки
 

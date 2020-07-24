@@ -6,12 +6,12 @@ ms.assetid: aaf675cd-d885-4dac-9754-77dbcaea3be9
 author: davidortinau
 ms.author: daortin
 ms.date: 12/02/2016
-ms.openlocfilehash: edf471f1d9a2ee4adc11f09e0c7b7ad3cf6f78f1
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: c3d0b8f2da971238b98253405f3b8fe08699ab56
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73014253"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997219"
 ---
 # <a name="deploy-checkboxes-disabled-in-configuration-manager"></a>Отключены флажки развертывания в Configuration Manager
 
@@ -19,8 +19,8 @@ ms.locfileid: "73014253"
 
 По этой причине флажки **развертывания** намеренно отключены в Configuration Manager Visual Studio для проектов Xamarin. iOS:
 
-![](deploy-checkboxes-images/configuration.png "Visual Studio Configuration Manager showing the 'Deploy' checkbox disabled for a Xamarin.iOS project in Xamarin 3.5")
+![Visual Studio Configuration Manager показывает, что флажок развертывания отключен для проекта Xamarin. iOS в Xamarin 3,5](deploy-checkboxes-images/configuration.png)
 
 Это изменение устраняет ошибку, которая может появиться в более старых версиях Xamarin (версии 3,3 и более ранних), если проект приложения Xamarin. iOS не был настроен для развертывания:
 
-![](deploy-checkboxes-images/error.png "Error dialog: The project iPhoneApp1 needs to be deployed before it can be started. Verify the project is selected to be deployed in the Solution Configuration Manager.")
+![Диалоговое окно ошибки: проект iPhoneApp1 необходимо развернуть, прежде чем его можно будет запустить. Убедитесь, что проект выбран для развертывания в Configuration Manager решения.](deploy-checkboxes-images/error.png)

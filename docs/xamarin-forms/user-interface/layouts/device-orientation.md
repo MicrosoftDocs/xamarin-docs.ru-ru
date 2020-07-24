@@ -10,12 +10,12 @@ ms.date: 04/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0b1a47d4dcc92fca4d280708a2cbbe9374c17da8
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: de5ebf086af7fa8d7c6360bf3a1f48f57b834e44
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84573304"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938441"
 ---
 # <a name="device-orientation"></a>Ориентация устройства
 
@@ -123,11 +123,11 @@ protected override void OnSizeAllocated(double width, double height)
 
 После обнаружения изменения ориентации устройства может потребоваться добавить или удалить дополнительные представления в пользовательском интерфейсе, чтобы реагировать на изменения в доступном пространстве. Например, рассмотрим встроенный калькулятор для каждой платформы в книжной ориентации:
 
-![](device-orientation-images/calculator-portrait.png "Calculator Application in Portrait")
+![Приложение калькулятора в книжной ориентации](device-orientation-images/calculator-portrait.png)
 
 и альбомная ориентация:
 
-![](device-orientation-images/calculator-landscape.png "Calculator Application in Landscape")
+![Приложение калькулятора в альбомной ориентации](device-orientation-images/calculator-landscape.png)
 
 Обратите внимание, что приложения используют преимущества доступного пространства путем добавления дополнительных функций в альбомной ориентации.
 
@@ -147,11 +147,11 @@ protected override void OnSizeAllocated(double width, double height)
 
 Рассмотрим следующее приложение, отображаемое в книжной ориентации:
 
-![](device-orientation-images/photo-stack-portrait.png "Photo Application in Portrait")
+![Фото приложение в книжной ориентации](device-orientation-images/photo-stack-portrait.png)
 
 и альбомная ориентация:
 
-![](device-orientation-images/photo-stack-landscape.png "Photo Application in Landscape")
+![Приложение для фотографий в альбомной ориентации](device-orientation-images/photo-stack-landscape.png)
 
 Это выполняется с помощью следующего кода XAML:
 
@@ -221,11 +221,11 @@ protected override void OnSizeAllocated (double width, double height){
 
 Рассмотрим следующее приложение, отображаемое в книжной ориентации:
 
-![](device-orientation-images/photo-abs-portrait.png "Photo Application in Portrait")
+![Фото приложение в книжной ориентации](device-orientation-images/photo-abs-portrait.png)
 
 и альбомная ориентация:
 
-![](device-orientation-images/photo-abs-landscape.png "Photo Application in Landscape")
+![Приложение для фотографий в альбомной ориентации](device-orientation-images/photo-abs-landscape.png)
 
 Это выполняется с помощью следующего кода XAML:
 
@@ -273,11 +273,11 @@ Title="AbsoluteLayout - XAML" BackgroundImageSource="deer.jpg">
 
 Рассмотрим следующее приложение, отображаемое в книжной ориентации:
 
-![](device-orientation-images/photo-rel-portrait.png "Photo Application in Portrait")
+![Фото приложение в книжной ориентации](device-orientation-images/photo-rel-portrait.png)
 
 и альбомная ориентация:
 
-![](device-orientation-images/photo-rel-landscape.png "Photo Application in Landscape")
+![Приложение для фотографий в альбомной ориентации](device-orientation-images/photo-rel-landscape.png)
 
 Это выполняется с помощью следующего кода XAML:
 
@@ -360,15 +360,15 @@ BackgroundImageSource="deer.jpg">
 - Из-за способа размещения страницы не требуется выполнять процедурный код, чтобы реализовать скорость реагирования.
 - Используется `ScrollView` для того, чтобы метка была видимой, даже если высота экрана меньше, чем сумма фиксированной высоты кнопок и изображения.
 
-### <a name="grid"></a>Grid
+### <a name="grid"></a>Макет Grid
 
 Рассмотрим следующее приложение, отображаемое в книжной ориентации:
 
-![](device-orientation-images/photo-grid-portrait.png "Photo Application in Portrait")
+![Фото приложение в книжной ориентации](device-orientation-images/photo-grid-portrait.png)
 
 и альбомная ориентация:
 
-![](device-orientation-images/photo-grid-landscape.png "Photo Application in Landscape")
+![Приложение для фотографий в альбомной ориентации](device-orientation-images/photo-grid-landscape.png)
 
 Это выполняется с помощью следующего кода XAML:
 

@@ -7,25 +7,25 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 015f0732e4d8cdf771af3e1d0b3cc3e31b6e806c
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 0358e1570a5e38e008894a7eb9b6ca1985a0fed0
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572273"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997258"
 ---
 # <a name="watchos-table-controls-in-xamarin"></a>Элементы управления таблицы watchOS в Xamarin
 
 `WKInterfaceTable`Элемент управления watchOS гораздо проще, чем его аналог в iOS, но выполняет аналогичную роль. Он создает прокручиваемый список строк, которые могут иметь пользовательские макеты и реагировать на события касания.
 
-![](table-images/table-list-sml.png "Список отслеживаемых таблиц") ![](table-images/table-detail-sml.png)
+![](table-images/table-list-sml.png) ![ Сведения о таблице наблюдения за списком просмотра таблиц](table-images/table-detail-sml.png)
 <!-- watch image courtesy of http://infinitapps.com/bezel/ -->
 
 ## <a name="adding-a-table"></a>Добавление таблицы
 
 Перетащите элемент управления **Table** в сцену. По умолчанию он будет выглядеть следующим образом (отображая одну неопределенную структуру строк):
 
-[![](table-images/add-table-sml.png "Adding a table")](table-images/add-table.png#lightbox)
+[![Добавление таблицы](table-images/add-table-sml.png)](table-images/add-table.png#lightbox)
 
 Присвойте таблице имя в поле **имя** панели **свойств** , чтобы на нее можно было ссылаться в коде.
 
@@ -35,7 +35,7 @@ ms.locfileid: "84572273"
 
 Чтобы задать **класс** для контроллера строк, выберите строку в **структуре документа** и введите имя класса на панели **свойств** :
 
-[![](table-images/add-row-controller-sml.png "Entering a class name in the Properties pad")](table-images/add-row-controller.png#lightbox)
+[![Ввод имени класса на панели «Свойства»](table-images/add-row-controller-sml.png)](table-images/add-row-controller.png#lightbox)
 
 После установки класса для контроллера строки интегрированная среда разработки создаст в проекте соответствующий файл C#. Перетащите элементы управления (например, метки) в строку и присвойте им имена, чтобы на них можно было ссылаться в коде.
 
@@ -107,11 +107,11 @@ public override NSObject GetContextForSegue (string segueIdentifier, WKInterface
 
 По умолчанию элемент управления "Таблица" имеет один тип строки, который можно спроектировать. Чтобы добавить дополнительные строки "Templates", используйте поле " **строки** " на панели **свойств** , чтобы создать дополнительные контроллеры строк.
 
-![](table-images/prototype-rows1.png "Setting the number of Prototype rows")
+![Задание количества строк прототипа](table-images/prototype-rows1.png)
 
 Если задать для свойства **Rows** значение **3** , будут созданы дополнительные заполнители для перетаскивания элементов управления в. Для каждой строки задайте имя **класса** на панели **свойств** , чтобы обеспечить создание класса контроллера строк.
 
-![](table-images/prototype-rows2.png "The prototype rows in the designer")
+![Строки прототипа в конструкторе](table-images/prototype-rows2.png)
 
 Чтобы заполнить таблицу с разными типами строк, используйте метод, `SetRowTypes` чтобы указать тип контроллера строки, используемый для каждой строки в таблице. Используйте идентификаторы строк, чтобы указать, какой контроллер строки следует использовать для каждой строки.
 
@@ -142,14 +142,14 @@ for (var i = 0; i < rows.Count; i++) {
 
 в watchOS 3 появилась новая функция для таблиц: возможность прокрутки страниц сведений, связанных с каждой строкой, без возврата к таблице и выбора другой строки. Экраны сведений можно прокручивать путем прокрутки вверх или вниз или с помощью Digital Crown.
 
-![](table-images/table-scroll-sml.png "Пример вертикального разбиения на страницы") ![](table-images/table-detail-sml.png)
+![Пример вертикального разбиения на страницы](table-images/table-scroll-sml.png) ![Сведения о вертикальном разбиении на страницы](table-images/table-detail-sml.png)
 
 > [!IMPORTANT]
 > Эта функция в настоящее время доступна только путем редактирования раскадровки в Xcode Interface Builder.
 
 Чтобы включить эту функцию, выберите элемент в `WKInterfaceTable` области конструктора и установите флажок **вертикальная детализация разбиения на страницы** :
 
-![](table-images/vertical-detail-paging-sml.png "Selecting the Vertical Detail Paging option")
+![Выбор параметра «вертикальный Просмотр данных»](table-images/vertical-detail-paging-sml.png)
 
 Как [описано в Apple](https://developer.apple.com/reference/watchkit/wkinterfacetable#1682023) , для работы функции разбиения по страницам необходимо использовать переходов. Перепишите любой существующий код, использующий `PushController` вместо него переходов.
 

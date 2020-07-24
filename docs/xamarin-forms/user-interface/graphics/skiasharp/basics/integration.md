@@ -10,12 +10,12 @@ ms.date: 02/09/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9e763184f38719cda4526eb0a2dfdf39b2191a03
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 60f53fb00786b183f36f7cfefa6af9062bb682db
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137700"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938168"
 ---
 # <a name="integrating-with-xamarinforms"></a>Интеграция сXamarin.Forms
 
@@ -25,7 +25,7 @@ _Создание графики SkiaSharp, которая реагирует н
 
 SkiaSharp графика может интегрироваться с остальными элементами Xamarin.Forms несколькими способами. Можно объединить SkiaSharp холст и Xamarin.Forms элементы на одной странице и даже располагать Xamarin.Forms элементы поверх SkiaSharp Canvas:
 
-![](integration-images/integrationexample.png "Selecting a color with sliders")
+![Выбор цвета с помощью ползунков](integration-images/integrationexample.png)
 
 Другой подход к созданию интерактивной SkiaSharp графики в Xamarin.Forms заключается в использовании сенсорного ввода.
 Второй страницей программы [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) является право **коснуться кнопки переключить заливку**. Он рисует простую окружность двумя способами &mdash; без заливки и с заливкой &mdash; , переключаемой касанием. [`TapToggleFillPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/TapToggleFillPage.xaml.cs)Класс показывает, как можно изменить график SkiaSharp в ответ на вводимые пользователем данные.
@@ -240,7 +240,7 @@ public partial class ColorExplorePage : ContentPage
 
 Но лучший способ познакомиться с этими двумя моделями — это поэкспериментировать с ними самостоятельно:
 
-[![](integration-images/colorexplore-large.png "Triple screenshot of the Color Explore page")](integration-images/colorexplore-small.png#lightbox "Triple screenshot of the Color Explore page")
+[![Тройной снимок экрана страницы "Обзор цветов"](integration-images/colorexplore-large.png)](integration-images/colorexplore-small.png#lightbox "Тройной снимок экрана страницы "Обзор цветов"")
 
 ## <a name="related-links"></a>Связанные ссылки
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/26/2018
-ms.openlocfilehash: c8c5b8d0417fb7fd1069d2bf6fa5d9887d569453
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: e2beb12ea366918219d2c83532e8a62d94e688b5
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73001563"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996270"
 ---
 # <a name="working-with-watchos-icons-in-xamarin"></a>Работа со значками watchOS в Xamarin
 
@@ -23,7 +23,7 @@ ms.locfileid: "73001563"
 
 ## <a name="apple-watch-icons"></a>Значки Apple Watch
 
-| | | |
+|Значок|Описание|Внешний вид|
 |-|-|-|
 |Значок приложения iOS|Отображается на iPhone и запускает родительское приложение.|![значок приложения iOS](icons-images/icon-ios.png)|
 |Значок просмотра приложения|Отображается на начальном экране Apple Watch|![значок приложения watchOS](icons-images/icon-home.png)|
@@ -42,7 +42,7 @@ ms.locfileid: "73001563"
 
 Строка, отображаемая рядом с приложением Watch в [приложении Apple Watch Settings](~/ios/watchos/app-fundamentals/settings.md) , настраивается в файле **info. plist приложения iOS**.
 
-Убедитесь, что ваша **info. plist** имеет `CFBundleName` ключ и значение (Обратите внимание, что этот `CFBundleDisplayName`может иметь и то, и другое):
+Убедитесь, что в файле **info. plist** есть `CFBundleName` ключ и значение (Обратите внимание, что это отличается от `CFBundleDisplayName` , у вас может быть и то, и другое):
 
 ```xml
 <key>CFBundleName</key>
@@ -53,23 +53,23 @@ ms.locfileid: "73001563"
 
 После настройки значков [родительского приложения](~/ios/watchos/app-fundamentals/parent-app.md) необходимо добавить в приложение Watch каталог ресурсов значка приложения.
 
-1. Щелкните проект Watch App правой кнопкой мыши и выберите **файл > добавить > новый файл... > iOS > каталога активов** , чтобы добавить каталог активов в проект.
+1. Щелкните проект Watch App правой кнопкой мыши и выберите **файл > добавить > новый файл... > iOS > каталог активов** , чтобы добавить каталог активов в проект.
 
-    ![](icons-images/newasset.png "Add an asset catalog to the project")
+    ![Добавление каталога активов в проект](icons-images/newasset.png)
 
-2. Дважды щелкните файл **AppIcon. appiconset/Contents. JSON** .
+2. Дважды щелкните **AppIcon. appiconset/Contents.jsв** файле
 
-    ![](icons-images/xcassets-iconset-sml.png "The AppIcon contents")
+    ![Содержимое AppIcon](icons-images/xcassets-iconset-sml.png)
 
 3. Добавьте все образы watchOS, как показано на следующем снимке экрана:
 
-    [![](icons-images/appicons-sml.png "Add all the watchOS images, as shown in this screenshot")](icons-images/appicons.png#lightbox)
+    [![Добавьте все образы watchOS, как показано на этом снимке экрана.](icons-images/appicons-sml.png)](icons-images/appicons.png#lightbox)
 
     См. [рекомендации по использованию значков Apple](https://developer.apple.com/design/human-interface-guidelines/watchos/icons-and-images/menu-icons/) для требуемых размеров (размеры также отображаются на экране). Помните, что эти значки будут автоматически обрезаны для отображения в окружности.
 
     Список значков должен выглядеть примерно так:
 
-    ![](icons-images/xcassets-complete-sml.png "The icon list in the Solution Explorer")
+    ![Список значков в обозреватель решений](icons-images/xcassets-complete-sml.png)
 
 4. Чтобы убедиться в том, что каталог активов включен в приложение, добавьте следующий ключ и значение в поле **info. plist приложения Watch.**
 

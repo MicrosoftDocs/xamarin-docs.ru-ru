@@ -10,18 +10,18 @@ ms.date: 02/17/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b835847fea39e1c2f968e7b81fb9d22f68ea461c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 04669479bb321da4fee6c45fd0f2c00deb5bbf1a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84140105"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929731"
 ---
 # <a name="device-styles-in-xamarinforms"></a>Стили устройств вXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
 
-_Xamarin. Forms включает в себя шесть динамических стилей, известных как стили устройств, в классе Device. styles._
+_Xamarin.Formsвключает в себя шесть динамических стилей, известных как стили устройств, в классе Device. styles._
 
 Стили *устройств* :
 
@@ -70,7 +70,7 @@ _Xamarin. Forms включает в себя шесть динамических
 
 Стили устройств привязаны к с помощью `DynamicResource` расширения разметки. Динамическую природу стилей можно увидеть в iOS, изменив параметры **специальных возможностей** для размера текста. Внешний вид стилей *устройств* на каждой платформе различается, как показано на следующих снимках экрана:
 
-![](device-images/device-styles.png "Device Styles on Each Platform")
+![Стили устройств на каждой платформе](device-images/device-styles.png)
 
 Стили *устройств* также могут быть производными от, путем присвоения [`BaseResourceKey`](xref:Xamarin.Forms.Style.BaseResourceKey) свойству имени ключа для стиля устройства. В приведенном выше примере кода `myBodyStyle` наследуется от [`BodyStyle`](xref:Xamarin.Forms.Device.Styles.BodyStyle) и задает цвет диакритических знаков. Дополнительные сведения о наследовании динамического стиля см. в разделе [динамическое наследование стиля](~/xamarin-forms/user-interface/styles/xaml/dynamic.md#dynamic-style-inheritance).
 
@@ -114,17 +114,17 @@ public class DeviceStylesPageCS : ContentPage
 
 [`Style`](xref:Xamarin.Forms.NavigableElement.Style)Свойству каждого [`Label`](xref:Xamarin.Forms.Label) экземпляра присваивается соответствующее свойство из [`Devices.Styles`](xref:Xamarin.Forms.Device.Styles) класса.
 
-## <a name="accessibility"></a>Accessibility
+## <a name="accessibility"></a>Специальные возможности
 
 Стили *устройств* учитывают настройки специальных возможностей, поэтому размеры шрифтов изменятся по мере изменения настроек специальных возможностей на каждой платформе. Поэтому для поддержки текста с поддержкой специальных возможностей убедитесь, что стили *устройств* используются в качестве базиса для любых текстовых стилей в приложении.
 
 На следующих снимках экрана показаны стили устройств на каждой платформе с наименьшим доступным размером шрифта:
 
-[![](device-images/minimum-size.png "Accessible Small Device Styles on Each Platform")](device-images/minimum-size-large.png#lightbox "Accessible Small Device Styles on Each Platform")
+[![Доступные небольшие стили устройств на каждой платформе](device-images/minimum-size.png)](device-images/minimum-size-large.png#lightbox "Доступные небольшие стили устройств на каждой платформе")
 
 На следующих снимках экрана показаны стили устройств на каждой платформе с максимальным доступным размером шрифта:
 
-![](device-images/maximum-size.png "Accessible Large Device Styles on Each Platform")
+![Доступные стили больших устройств на каждой платформе](device-images/maximum-size.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 

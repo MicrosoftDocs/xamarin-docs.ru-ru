@@ -29,7 +29,7 @@ Xamarin предоставляет инструментарий для Visual St
 
 ## <a name="automated-updating"></a>Автоматическое обновление
 
-После устранения предупреждений выберите существующий проект Mac в Visual Studio для Mac или Visual Studio и выберите **перенести в Xamarin. Mac Unified API** из меню **проект** . Пример:
+После устранения предупреждений выберите существующий проект Mac в Visual Studio для Mac или Visual Studio и выберите **перенести в Xamarin. Mac Unified API** из меню **проект** . Например.
 
 ![Выберите пункт миграция в Xamarin. Mac Unified API из меню проект.](updating-mac-apps-images/beta-tool1.png)
 

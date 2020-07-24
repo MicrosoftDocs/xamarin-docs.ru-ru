@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: cbbf8194505e9caa09587471020026d495f9f99b
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: a1ff70349ca7d7b97431b2e3d07aa4c8028c38c0
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569712"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996361"
 ---
 # <a name="testing-on-apple-watch-devices"></a>Тестирование на устройствах Apple Watch
 
@@ -28,19 +28,19 @@ ms.locfileid: "84569712"
 
 Тестирование приложений iOS на реальном устройстве iPhone или iPad всегда требует, чтобы устройство было зарегистрировано в центре разработки. Список устройств выглядит следующим образом (щелкните знак "плюс", **+** чтобы добавить новое устройство):
 
-![](device-images/devices-sml.png "The device list looks like this")
+![Список устройств выглядит следующим образом:](device-images/devices-sml.png)
 
 Контрольные значения не различаются. Теперь необходимо добавить устройство Apple Watch перед развертыванием в нем приложений. Найдите UDID для наблюдения с помощью **Xcode** (список**устройств Windows >** ). При подключении связанного телефона отобразятся также сведения о часах.
 
-[![](device-images/xcode-devices-sml.png "Paired Watch Information")](device-images/xcode-devices.png#lightbox)
+[![Сведения о парных контрольных часах](device-images/xcode-devices-sml.png)](device-images/xcode-devices.png#lightbox)
 
 Когда вы узнаете о UDIDе контрольных значений, добавьте его в список устройств в центре разработки:
 
-![](device-images/devices-watch-sml.png "The Watch's UDID in the device list")
+![UDID Watch в списке устройств](device-images/devices-watch-sml.png)
 
 После добавления устройства контрольное значение убедитесь, что оно выбрано в новых или существующих создаваемых профилях подготовки или ad-hoc.
 
-![](device-images/devices-provisioning.png "Available device list")
+![Список доступных устройств](device-images/devices-provisioning.png)
 
 Не забывайте, что при изменении существующего профиля подготовки для скачивания и повторной установки!
 
@@ -52,17 +52,17 @@ ms.locfileid: "84569712"
 
 Если у вас есть идентификатор приложения с подстановочными знаками, *потребуется только один профиль подготовки*. но если у вас есть отдельный идентификатор приложения для каждого проекта, вам потребуется профиль подготовки для каждого идентификатора приложения:
 
-![](device-images/provisioningprofile-development.png "The Development Provisioning Profile")
+![Профиль подготовки для разработки](device-images/provisioningprofile-development.png)
 
 После создания всех трех профилей они будут отображаться в списке. Не забудьте скачать и установить каждый из них:
 
-![](device-images/provisioningprofiles.png "The available Development Provisioning Profiles")
+![Доступные профили подготовки для разработки](device-images/provisioningprofiles.png)
 
 Вы можете проверить профиль подготовки в **параметрах проекта** , выбрав пункт **Сборка > пакет iOS** **и выбрав** конфигурацию **iPhone или отладить** .
 
 В списке **профиль подготовки** будут показаны все соответствующие профили. Вы увидите профили сопоставления, созданные в этом раскрывающемся списке:
 
-![](device-images/options-selectprofile.png "The Provisioning Profile list")
+![Список профилей подготовки](device-images/options-selectprofile.png)
 
 <a name="testing"></a>
 
@@ -97,7 +97,7 @@ ms.locfileid: "84569712"
 
 Чтобы *временно* обойти эту ошибку, отключите **добавочные сборки** в **параметрах проекта расширения просмотра > сборка > watchOS сборка** :
 
-[![](device-images/disable-incremental-sml.png "The Incremental Builds checkbox")](device-images/disable-incremental.png#lightbox)
+[![Флажок "добавочные сборки"](device-images/disable-incremental-sml.png)](device-images/disable-incremental.png#lightbox)
 
 Это будет исправлено в следующем выпуске, после чего можно повторно включить добавочные сборки, чтобы воспользоваться преимуществами более быстрого времени сборки.
 
@@ -112,7 +112,7 @@ Failed to install [APPNAME]
 Invalid executable/Application Verification Failed
 ```
 
-![](device-images/invalid-application-executable.png "Invalid Application Executable alert")
+![Оповещение о недопустимом исполняемом файле приложения](device-images/invalid-application-executable.png)
 
 Если эти сообщения появляются *на экране контрольных значений* после попытки установки приложения, может возникнуть несколько проблем:
 

@@ -6,12 +6,12 @@ ms.assetid: 066d36a3-e553-48d6-8769-c972274d7641
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: 6cd5acb529d617c72d8c9e1bd642a831f90b2e8c
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 976d0882c5875c1d3e1c8f0ea1732de08df8e07f
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73013745"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996179"
 ---
 # <a name="missing-visual-studio-extensions-after-installation"></a>Отсутствуют расширения Visual Studio после установки
 
@@ -33,7 +33,7 @@ ms.locfileid: "73013745"
 
 4. Убедитесь, что для параметра **Xamarin для Visual Studio 2013** установлено значение установить:
 
-    ![](missing-vs-extensions-images/installer.png "Enable Xamarin for Visual Studio 2013 installation option")
+    ![Параметр установки "включить Xamarin для Visual Studio 2013"](missing-vs-extensions-images/installer.png)
 
 5. Выполните остальные действия в мастере установки.
 
@@ -45,7 +45,7 @@ ms.locfileid: "73013745"
 
     Если расширения установлены правильно (для версии 3.1.228), в папке будет 60 элементов:
 
-    ![](missing-vs-extensions-images/folder.png "List of 'Xamarin\3.1.228.0' folder contents in Explorer")
+    ![Список содержимого папки Xamarin\3.1.228.0 в обозревателе](missing-vs-extensions-images/folder.png)
 
 2. Убедившись, что эта папка выглядит правильно, сообщите Visual Studio о необходимости повторной настройки расширений:
 
@@ -65,7 +65,7 @@ ms.locfileid: "73013745"
 
     * Xamarin для Visual Studio
 
-2. В обозревателе удалите все оставшиеся файлы из папок расширения Xamarin Visual Studio (все версии, включая **программные файлы** и **программные файлы (x86)** ):
+2. В обозревателе удалите все оставшиеся файлы из папок расширения Xamarin Visual Studio (все версии, включая **программные файлы** и **программные файлы (x86)**):
 
     `C:\Program Files*\Microsoft Visual Studio 1*.0\Common7\IDE\Extensions\Xamarin`
 
@@ -77,11 +77,11 @@ ms.locfileid: "73013745"
 
 5. Найдите следующий раздел.
 
-    _HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\SharedDlls_
+    _HKEY \_ Local \_ MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\SharedDlls_
 
 6. Найдите и удалите все записи, соответствующие этому шаблону.
 
-    _C:\Program Files\*\Microsoft Visual Studio 1\*. 0 \ Common7\IDE\Extensions\Xamarin_
+    _C:\Program Files \* \Microsoft Visual Studio 1 \* . 0 \ Common7\IDE\Extensions\Xamarin_
 
 7. Найдите следующий раздел.
 

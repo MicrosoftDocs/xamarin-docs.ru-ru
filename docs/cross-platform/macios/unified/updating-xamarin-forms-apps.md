@@ -6,12 +6,12 @@ ms.assetid: C2F0D1D1-256D-44A4-AAC9-B06A0CB41E70
 author: davidortinau
 ms.author: daortin
 ms.date: 03/29/2017
-ms.openlocfilehash: 48519431a65fba0cdc61062021ad86fb53854ef3
-ms.sourcegitcommit: 3ea19e3a51515b30349d03c70a5b3acd7eca7fe7
+ms.openlocfilehash: 620b941d7e6ac50d716916cdde18fe9aed0b0709
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73425461"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929601"
 ---
 # <a name="updating-existing-xamarinforms-apps"></a>Обновление существующих приложений Xamarin. Forms
 
@@ -32,9 +32,9 @@ _Выполните следующие действия, чтобы обнови
 
     1. Установите пакет NuGet Xamarin. Forms 1.3.1.
 
-    2. Обновите класс `App` в общем коде.
+    2. Обновите `App` класс в общем коде.
 
-    3. Обновите `AppDelegate` в проекте iOS.
+    3. Обновите в `AppDelegate` проекте iOS.
 
     4. Обновите `MainActivity` в проекте Android.
 
@@ -48,13 +48,13 @@ _Выполните следующие действия, чтобы обнови
 
 Щелкните проект iOS, чтобы он был выбран, а затем выберите **проект > перейти на Xamarin. iOS Unified API...** и примите предупреждающее сообщение, которое появляется.
 
-![](updating-xamarin-forms-apps-images/beta-tool1.png "Choose Project > Migrate to Xamarin.iOS Unified API... and agree to the warning message that appears")
+![Выберите проект > перейти на Unified API Xamarin. iOS... и согласиться с предупреждающим сообщением, которое отображается](updating-xamarin-forms-apps-images/beta-tool1.png)
 
 Это будет автоматически:
 
 - Измените тип проекта для поддержки унифицированного 64-разрядного API.
 - Измените ссылку на платформу на **Xamarin. iOS** (замените старую ссылку на **касание** ).
-- Измените ссылки на пространство имен в коде, чтобы удалить префикс `MonoTouch`.
+- Измените ссылки на пространство имен в коде, чтобы удалить `MonoTouch` префикс.
 - Обновите файл **CSPROJ** , чтобы использовать правильные целевые объекты сборки для Unified API.
 
 **Очистите** и выполните **сборку** проекта, чтобы убедиться в отсутствии других ошибок для исправления. Никаких дополнительных действий не требуется. Эти шаги более подробно описаны в [Unified API документах](~/cross-platform/macios/unified/updating-ios-apps.md).
@@ -65,10 +65,10 @@ _Выполните следующие действия, чтобы обнови
 
 ## <a name="2-xamarinforms-131-update"></a>2. Xamarin. Forms 1.3.1 обновление
 
-После обновления приложения iOS до Unified API необходимо обновить остальную часть решения до Xamarin. Forms версии 1.3.1. В том числе следующее:
+После обновления приложения iOS до Unified API необходимо обновить остальную часть решения до Xamarin. Forms версии 1.3.1. В том числе:
 
 - Обновление пакета NuGet Xamarin. Forms в каждом проекте.
-- Изменение кода для использования новых классов Xamarin. Forms `Application`, `FormsApplicationDelegate` (iOS), `FormsApplicationActivity` (Android) и `FormsApplicationPage` (Windows Phone).
+- Изменение кода для использования новых классов Xamarin. Forms `Application` , `FormsApplicationDelegate` (IOS), `FormsApplicationActivity` (Android) и `FormsApplicationPage` (Windows Phone).
 
 Ниже описаны эти действия.
 
@@ -82,14 +82,14 @@ _Выполните следующие действия, чтобы обнови
 > [!IMPORTANT]
 > Если вы используете Visual Studio, убедитесь, что установлена последняя версия диспетчера пакетов NuGet. Более старые версии NuGet в Visual Studio не будут правильно устанавливать единую версию Xamarin. Forms 1.3.1. Выберите **инструменты > расширения и обновления...** и щелкните список **установленных** , чтобы убедиться, что **Диспетчер пакетов NuGet для Visual Studio** имеет версию не ниже 2.8.5. Если это старое, щелкните список **обновлений** , чтобы скачать последнюю версию.
 
-После обновления пакета NuGet до Xamarin. Forms 1.3.1 Внесите следующие изменения в каждом проекте, чтобы выполнить обновление до нового класса `Xamarin.Forms.Application`.
+После обновления пакета NuGet до Xamarin. Forms 1.3.1 Внесите следующие изменения в каждом проекте, чтобы обновить его до нового `Xamarin.Forms.Application` класса.
 
 ### <a name="22-portable-class-library-or-shared-project"></a>2,2. Переносимая библиотека классов (или общий проект)
 
 Измените файл **app.CS** таким образом, чтобы:
 
-- Класс `App` теперь наследуется от `Application`.
-- Для свойства `MainPage` задана первая страница содержимого, которую вы хотите отобразить.
+- `App`Теперь класс наследует от `Application` .
+- `MainPage`Для свойства задается первая страница содержимого, которую необходимо отобразить.
 
 ```csharp
 public class App : Application // superclass new in 1.3
@@ -101,18 +101,18 @@ public class App : Application // superclass new in 1.3
     }
 ```
 
-Мы полностью удалили метод `GetMainPage`, а вместо этого установили *свойство* `MainPage` в подклассе `Application`.
+Мы полностью удалили `GetMainPage` метод, а вместо этого установили `MainPage` *свойство* для `Application` подкласса.
 
-Этот новый `Application` базовый класс также поддерживает переопределения `OnStart`, `OnSleep`и `OnResume`, позволяющие управлять жизненным циклом приложения.
+Этот новый `Application` базовый класс также поддерживает `OnStart` переопределения, и, позволяющие `OnSleep` `OnResume` управлять жизненным циклом приложения.
 
-Затем класс `App` передается в новый метод `LoadApplication` в каждом проекте приложения, как описано ниже.
+`App`Затем класс передается в новый `LoadApplication` метод в каждом проекте приложения, как описано ниже.
 
 ### <a name="23-ios-app"></a>2,3 приложение iOS
 
 Измените файл **AppDelegate.CS** таким образом, чтобы:
 
 - Класс наследует от `FormsApplicationDelegate` (вместо `UIApplicationDelegate` ранее).
-- `LoadApplication` вызывается с новым экземпляром `App`.
+- `LoadApplication`вызывается с новым экземпляром `App` .
 
 ```csharp
 [Register ("AppDelegate")]
@@ -135,7 +135,7 @@ public partial class AppDelegate :
 Измените файл **MainActivity.CS** таким образом, чтобы:
 
 - Класс наследует от `FormsApplicationActivity` (вместо `FormsActivity` ранее).
-- `LoadApplication` вызывается с новым экземпляром `App`
+- `LoadApplication`вызывается с новым экземпляром`App`
 
 ```csharp
 [Activity (Label = "YOURAPPNAM", Icon = "@drawable/icon", MainLauncher = true,
@@ -160,8 +160,8 @@ public class MainActivity :
 
 Измените файл **MainPage. XAML** , чтобы:
 
-- Корневой элемент XAML должен быть `winPhone:FormsApplicationPage`.
-- Атрибут `xmlns:phone` должен быть *изменен* на `xmlns:winPhone="clr-namespace:Xamarin.Forms.Platform.WinPhone;assembly=Xamarin.Forms.Platform.WP8"`
+- Корневой элемент XAML должен иметь значение `winPhone:FormsApplicationPage` .
+- `xmlns:phone`Атрибут должен быть *изменен* на`xmlns:winPhone="clr-namespace:Xamarin.Forms.Platform.WinPhone;assembly=Xamarin.Forms.Platform.WP8"`
 
 Ниже приведен обновленный пример. необходимо только изменить эти объекты (остальные атрибуты должны остаться одинаковыми):
 
@@ -176,7 +176,7 @@ public class MainActivity :
 Измените файл **MainPage.XAML.CS** таким образом, чтобы:
 
 - Класс наследует от `FormsApplicationPage` (вместо `PhoneApplicationPage` ранее).
-- `LoadApplication` вызывается с новым экземпляром класса `App` Xamarin. Forms. Может потребоваться полная квалификация этой ссылки, так как Windows Phone имеет собственный класс `App` уже определен.
+- `LoadApplication`вызывается с новым экземпляром класса Xamarin. Forms `App` . Может потребоваться полная квалификация этой ссылки, так как Windows Phone уже `App` определен собственный класс.
 
 ```csharp
 public partial class MainPage : global::Xamarin.Forms.Platform.WinPhone.FormsApplicationPage // superclass new in 1.3
@@ -192,13 +192,13 @@ public partial class MainPage : global::Xamarin.Forms.Platform.WinPhone.FormsApp
  }
 ```
 
-### <a name="troubleshooting"></a>Устранение неполадок
+### <a name="troubleshooting"></a>Диагностика
 
 Иногда после обновления пакета NuGet Xamarin. Forms вы увидите сообщение об ошибке, аналогичное следующему: Это происходит, когда компонент обновления NuGet не полностью удаляет ссылки на старые версии из файлов **CSPROJ** .
 
->Ваш\_проект. csproj: ошибка: этот проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Включите восстановление пакета NuGet, чтобы скачать их.  Для получения дополнительной информации см. https://go.microsoft.com/fwlink/?LinkID=322105. Отсутствующий файл:.. /.. /packages/Xamarin.Forms.1.2.3.6257/build/portable-win + net45 + wp80 + MonoAndroid10 + MonoTouch10/Xamarin. Forms. targets. (Ваш проект\_)
+>\_Проект. csproj: ошибка: этот проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Включите восстановление пакета NuGet, чтобы скачать их.  Для получения дополнительной информации см. https://go.microsoft.com/fwlink/?LinkID=322105. Отсутствующий файл:.. /.. /packages/Xamarin.Forms.1.2.3.6257/build/portable-win + net45 + wp80 + MonoAndroid10 + MonoTouch10/Xamarin. Forms. targets. (Ваш \_ ПРОЕКТОМ
 
-Чтобы устранить эти ошибки, откройте **CSPROJ** -файл в текстовом редакторе и найдите элементы `<Target`, которые ссылаются на более ранние версии Xamarin. Forms, например элемент, показанный ниже. Необходимо вручную удалить весь элемент из файла **CSPROJ** и сохранить изменения.
+Чтобы устранить эти ошибки, откройте **CSPROJ** -файл в текстовом редакторе и найдите `<Target` элементы, которые ссылаются на более ранние версии Xamarin. Forms, например элемент, показанный ниже. Необходимо вручную удалить весь элемент из файла **CSPROJ** и сохранить изменения.
 
 ```csharp
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -211,7 +211,7 @@ public partial class MainPage : global::Xamarin.Forms.Platform.WinPhone.FormsApp
 
 После удаления этих старых ссылок проект должен быть успешно построен.
 
-## <a name="considerations"></a>Особенности
+## <a name="considerations"></a>Рекомендации
 
 При преобразовании существующего проекта Xamarin. Forms из Classic API в новый Unified API следует учитывать следующие моменты, если это приложение полагается на один или несколько компонентов или пакетов NuGet.
 
@@ -226,7 +226,7 @@ public partial class MainPage : global::Xamarin.Forms.Platform.WinPhone.FormsApp
 До этого времени, как и для компонентов, необходимо переключить любой пакет NuGet, который вы включили в проект, в версию, поддерживающую унифицированные интерфейсы API, и затем выполнить чистую сборку.
 
 > [!IMPORTANT]
-> Если у вас есть ошибка в форме _"Ошибка 3 не может одновременно включать" и ". dll" и "Xamarin. iOS. dll" в одном проекте Xamarin. iOS, на "Xamarin. iOS. dll" имеется явная ссылка, а "0.0.000" — "XXX, Version =, Culture = нейтральный, PublicKeyToken = null ""_ после преобразования приложения в унифицированные API, обычно это происходит из-за наличия в проекте компонента или пакета NuGet, который не был обновлен до Unified API. Необходимо удалить существующий компонент или NuGet, обновить версию, поддерживающую унифицированные API-интерфейсы, и выполнить чистую сборку.
+> Если ошибка в форме _"Ошибка 3" не может содержать "monotouch.dll" и "Xamarin.iOS.dll" в одном и том же Xamarin. Проект iOS-"Xamarin.iOS.dll" ссылается явно, хотя "monotouch.dll" ссылается на "XXX, Version = 0.0.000, Culture = Neutral, PublicKeyToken = null" "_ после преобразования приложения в унифицированные API, как правило, это происходит из-за наличия в проекте компонента или пакета NuGet, который не был обновлен до Unified API. Необходимо удалить существующий компонент или NuGet, обновить версию, поддерживающую унифицированные API-интерфейсы, и выполнить чистую сборку.
 
 ## <a name="enabling-64-bit-builds-of-xamarinios-apps"></a>Включение 64 разрядных сборок приложений Xamarin. iOS
 

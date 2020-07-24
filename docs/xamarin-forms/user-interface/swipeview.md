@@ -10,16 +10,16 @@ ms.date: 03/26/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9c9d0621cdd5bb85690771d8bdfd0060b6a352cb
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 94fa094f579ad33947f1cc89e0d36c862c824472
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136257"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938948"
 ---
 # <a name="xamarinforms-swipeview"></a>Xamarin.Formsсвипевиев
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-swipeviewdemos/)
 
@@ -147,7 +147,7 @@ SwipeView swipeView = new SwipeView
 
 ## <a name="swipe-items"></a>Прокрутка элементов
 
-`LeftItems`Коллекции, `RightItems` , `TopItems` и `BottomItems` имеют тип `SwipeItems` . `SwipeItems`Класс определяет следующие свойства:
+`LeftItems`Коллекции, `RightItems` , `TopItems` и `BottomItems` имеют тип `SwipeItems` . Класс `SwipeItems` определяет следующие свойства:
 
 - `Mode`Тип `SwipeMode` , который указывает на результат взаимодействия при считывании. Дополнительные сведения о режиме прокрутки см. в разделе [режим прокрутки](#swipe-mode).
 - `SwipeBehaviorOnInvoked`Тип `SwipeBehaviorOnInvoked` , который указывает, как работает `SwipeView` после вызова элемента считывания. Дополнительные сведения о поведении при прокрутке см. в разделе [поведение при прокрутке](#swipe-behavior).

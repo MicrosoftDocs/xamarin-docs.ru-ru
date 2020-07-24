@@ -10,12 +10,12 @@ ms.date: 11/05/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 89f0182bfebc4d018eb083904595f0fbb211e3ba
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: b13ec7ab079dcf7069b5f4b0dccbb52faf25f927
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84573382"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933800"
 ---
 # <a name="simple-animations-in-xamarinforms"></a>Простые анимации вXamarin.Forms
 
@@ -53,7 +53,7 @@ _Класс Виевекстенсионс предоставляет метод
 
 Каждый метод расширения в [`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions) реализует одну операцию анимации, которая постепенно изменяет свойство из одного значения на другое в течение определенного периода времени. В этом разделе рассматриваются все операции анимации.
 
-### <a name="rotation"></a>Поворот
+### <a name="rotation"></a>Смена
 
 В следующем примере кода показано использование [ `RotateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. RotateTo ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) метод для анимации [`Rotation`](xref:Xamarin.Forms.VisualElement.Rotation) свойства объекта [`Image`](xref:Xamarin.Forms.Image) :
 
@@ -66,7 +66,7 @@ image.Rotation = 0;
 
 На следующих снимках экрана показан ход вращения на каждой платформе:
 
-![](simple-images/rotateto.png "Rotation Animation")
+![Анимация вращения](simple-images/rotateto.png)
 
 > [!NOTE]
 > В дополнение к [ `RotateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. RotateTo ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)), также есть [ `RotateXTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Ротатексто ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) и [ `RotateYTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Ротатэйто ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) методы, которые анимированы [`RotationX`](xref:Xamarin.Forms.VisualElement.RotationX) [`RotationY`](xref:Xamarin.Forms.VisualElement.RotationY) Свойства и соответственно.
@@ -83,7 +83,7 @@ await image.RelRotateTo (360, 2000);
 
 На следующих снимках экрана показано, как выполняется относительное вращение на каждой платформе.
 
-![](simple-images/relrotateto.png "Relative Rotation Animation")
+![Анимация относительного вращения](simple-images/relrotateto.png)
 
 ### <a name="scaling"></a>Масштабирование
 
@@ -97,7 +97,7 @@ await image.ScaleTo (2, 2000);
 
 На следующих снимках экрана показано, как выполняется масштабирование на каждой платформе:
 
-![](simple-images/scaleto.png "Scaling Animation")
+![Анимация масштабирования](simple-images/scaleto.png)
 
 > [!NOTE]
 > Помимо [`ScaleTo`](xref:Xamarin.Forms.ViewExtensions.ScaleTo*) метода, существуют также `ScaleXTo` `ScaleYTo` методы и, которые анимировать [`ScaleX`](xref:Xamarin.Forms.VisualElement.ScaleX) [`ScaleY`](xref:Xamarin.Forms.VisualElement.ScaleY) Свойства и соответственно.
@@ -126,7 +126,7 @@ await image.RotateTo(360, 2000);
 
 Чтобы повернуть [`Image`](xref:Xamarin.Forms.Image) экземпляр вокруг центра макета, [`AnchorX`](xref:Xamarin.Forms.VisualElement.AnchorX) [`AnchorY`](xref:Xamarin.Forms.VisualElement.AnchorY) Свойства и должны быть установлены в значения, относящиеся к ширине и высоте `Image` . В этом примере центр определяется как `Image` центр макета, поэтому значение по умолчанию `AnchorX` 0,5 не требует изменения. Однако `AnchorY` свойство переопределяется как значение от верха `Image` до центральной точки макета. Это обеспечит `Image` полный поворот на 360 градусов вокруг центральной точки макета, как показано на следующих снимках экрана:
 
-![](simple-images/rotate-anchors.png "Rotation Animation with Anchors")
+![Анимация вращения с привязками](simple-images/rotate-anchors.png)
 
 ### <a name="translation"></a>Перевод
 
@@ -140,7 +140,7 @@ await image.TranslateTo (-100, -100, 1000);
 
 На следующих снимках экрана показано, как выполняется трансляция на каждой платформе:
 
-![](simple-images/translateto.png "Translation Animation")
+![Анимация перевода](simple-images/translateto.png)
 
 > [!NOTE]
 > Если элемент изначально размещается на экране, а затем преобразуется на экран, после перевода входной макет элемента остается вне экрана и пользователь не может взаимодействовать с ним. Поэтому рекомендуется размещать представление в окончательном положении, а затем выполнять все необходимые переводы.
@@ -158,7 +158,7 @@ await image.FadeTo (1, 4000);
 
 На следующих снимках экрана показано, как выполняется выцветание на каждой платформе:
 
-![](simple-images/fadeto.png "Fading Animation")
+![Анимация затухания](simple-images/fadeto.png)
 
 ## <a name="compound-animations"></a>Составные анимации
 
@@ -218,7 +218,7 @@ await Task.WhenAll (
 
 На следующих снимках экрана показано, как выполняется несколько поворотов на каждой платформе:
 
-![](simple-images/multiple-rotations.png "Composite Animation")
+![Составная анимация](simple-images/multiple-rotations.png)
 
 ## <a name="canceling-animations"></a>Отмена анимации
 

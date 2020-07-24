@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 12/14/2016
-ms.openlocfilehash: 2d8b48892a5a1106b03778ac30eca4b18f049f4d
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+ms.openlocfilehash: 3f69f10274c413a107a40b2f404b3227cfee67cf
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725327"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936749"
 ---
 # <a name="hello-watchos--walkthrough"></a>Привет, watchOS — пошаговое руководство
 
@@ -24,21 +24,21 @@ ms.locfileid: "76725327"
 
 Проверьте [правильность ссылок](~/ios/watchos/get-started/project-references.md): у родительского приложения есть ссылка на расширение и что у расширения есть ссылка на приложение Watch.
 
-Убедитесь, что идентификаторы пакета соответствуют соглашению \*. ватчкитекстенсион \*. ватчкитапп, а файл info. plist вашего расширения имеет значение идентификатора пакета **WKApp** , которому задан идентификатор пакета приложения Watch.
+Убедитесь, что идентификаторы пакета соответствуют \* \* соглашению. ватчкитекстенсион. ватчкитапп, а файл info. plist расширения имеет значение идентификатора пакета **WKApp** , которому задан идентификатор пакета приложения Watch.
 
 Теперь вы можете запустить приложение наблюдения, но так как файл раскадровки в приложении для просмотра контрольных значений пуст, вы не сможете понять.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-![](hello-watch-images/projectstructure.png "The Solution Explorer")
+![обозреватель решений](hello-watch-images/projectstructure.png)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-![](hello-watch-images/vs-projectstructure.png "The Solution Explorer")
+![обозреватель решений](hello-watch-images/vs-projectstructure.png)
 
 -----
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 Дважды щелкните интерфейс. Раскадровка в приложении Watch, чтобы запустить конструктор Xamarin iOS (если вы используете компьютер Mac, можно также щелкнуть правой кнопкой мыши и **Открыть с помощью > Xcode Interface Builder**).
 
@@ -47,9 +47,9 @@ ms.locfileid: "76725327"
 1. Задайте для идентификатора и заголовка контроллера интерфейса значение **интерфацеконтроллер** и **Hi Watch**,
 1. Убедитесь, что для **класса** задано значение **интерфацеконтроллер** .
 
-    ![](hello-watch-images/interfacecontrollerattributes.png "Set the Identifier and Title of the Interface Controller to interfaceController and Hi Watch")
+    ![Задайте для идентификатора и заголовка контроллера интерфейса значение Интерфацеконтроллер и Hi Watch.](hello-watch-images/interfacecontrollerattributes.png)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Дважды щелкните интерфейс. Раскадровка в приложении Watch, чтобы изменить его с помощью конструктора Xamarin iOS в Visual Studio:
 
@@ -58,7 +58,7 @@ ms.locfileid: "76725327"
 1. Щелкните контроллер интерфейса; перетаскивани
 1. Задайте для идентификатора и заголовка контроллера интерфейса значение **интерфацеконтроллер** и **Hi Watch**.
 
-    ![](hello-watch-images/vs-interfacecontrollerattributes.png "Set the Identifier and Title of the Interface Controller to interfaceController and Hi Watch")
+    ![Задайте для идентификатора и заголовка контроллера интерфейса значение Интерфацеконтроллер и Hi Watch.](hello-watch-images/vs-interfacecontrollerattributes.png)
 
 -----
 
@@ -68,26 +68,26 @@ ms.locfileid: "76725327"
 1. Перетащите **кнопку** и **метку** на сцену и
 1. Задайте текст и атрибуты элементов управления, как показано ниже.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-![](hello-watch-images/draganddrop.png "Set the text and attributes of the controls as shown")
+![Задайте текст и атрибуты элементов управления, как показано ниже.](hello-watch-images/draganddrop.png)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-![](hello-watch-images/vs-draganddrop.png "Set the text and attributes of the controls as shown")
+![Задайте текст и атрибуты элементов управления, как показано ниже.](hello-watch-images/vs-draganddrop.png)
 
 -----
 
-1. Задайте **имя** на панели **свойств** для каждого элемента управления. В этом примере мы использовали `myButton` и `myLabel`.
+1. Задайте **имя** на панели **свойств** для каждого элемента управления. В этом примере мы использовали `myButton` и `myLabel` .
 
 1. Нажмите кнопку раскадровки и перейдите в список **событий** панели **свойств** , а затем
 
 1. Создайте новое **действие** , введя `OnButtonPress` и нажав клавишу **Ввод**.
-  Действие появится в списке, и разделяемый метод будет автоматически создан в C#.
+  Действие появится в списке, а разделяемый метод будет автоматически создан в C#.
 
-![](hello-watch-images/buttonaction.png "The OnButtonPress Action added to a button")
+![Действие Онбуттонпресс, добавляемое к кнопке](hello-watch-images/buttonaction.png)
 
-После сохранения раскадровки **InterfaceController.Designer.CS** обновляется с именами и действиями элементов управления. Если открыть этот файл после его обновления, можно увидеть, как `RegisterAttribute` соответствует контроллеру и каким образом элементы управления ИП соответствуют переменным C# экземпляра, помеченным `OutletAttribute`, и как действия сопоставляются с разделяемыми методами, помеченными `ActionAttribute`:
+После сохранения раскадровки **InterfaceController.Designer.CS** обновляется с именами и действиями элементов управления. Если открыть этот файл после его обновления, можно увидеть, как `RegisterAttribute` соответствует контроллеру и каким элементам управления пользовательского интерфейса соответствуют переменные экземпляра C#, помеченные атрибутом `OutletAttribute` и как действия сопоставляются с разделяемыми методами, помеченными `ActionAttribute` :
 
 ```csharp
 // WARNING
@@ -136,7 +136,7 @@ partial void OnButtonPress (WatchKit.WKInterfaceButton sender)
 }
 ```
 
-Этот код должен быть довольно прозрачным: переменная экземпляра `clickCount` увеличивается при каждом вызове функции `OnButtonPress`. Текст `myLabel` изменяется в соответствии с этим счетчиком; `myLabel`, само собой, является именем одного из розеток, созданных в XCode. Функция `partial` является реализацией функции, связанной с именем указанного действия.
+Этот код должен быть довольно прозрачным: переменная экземпляра `clickCount` увеличивается при каждом `OnButtonPress` вызове функции. Текст `myLabel` изменяется в соответствии с этим числом; само собой, `myLabel` это имя одного из экземпляров, созданных в Xcode. `partial`Функция является реализацией функции, связанной с именем указанного действия.
 
 Если он еще не является запускаемым проектом,
 
@@ -146,14 +146,14 @@ partial void OnButtonPress (WatchKit.WKInterfaceButton sender)
 
 1. Нажмите кнопку " **Отладка** ", чтобы активировать запуск сборки и симулятора.
 
-    [![](hello-watch-images/readytodebug-sml.png "The Visual Studio interface elements")](hello-watch-images/readytodebug.png#lightbox)
+    [![Элементы интерфейса Visual Studio](hello-watch-images/readytodebug-sml.png)](hello-watch-images/readytodebug.png#lightbox)
 
 При запуске симулятора нажмите кнопку, чтобы увеличить метку.
 Поздравляем, у вас есть приложение для просмотра контрольных значений!
 
-![](hello-watch-images/running.png "The app running in the Simulator")
+![Приложение, работающее в симуляторе](hello-watch-images/running.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Настройка и установка](~/ios/watchos/get-started/installation.md)
+- [Установка и установка](~/ios/watchos/get-started/installation.md)
 - [Первое видео о приложении](https://blog.xamarin.com/your-first-watch-kit-app/)

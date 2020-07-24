@@ -10,16 +10,16 @@ ms.date: 01/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 462948905f40679e2b931d4aa0039308c64a0a8f
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cf5d3924a726247ea1884acc75720566d76c76e4
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136504"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929221"
 ---
 # <a name="xamarinforms-carouselview-scrolling"></a>Xamarin.FormsПрокрутка Карауселвиев
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
@@ -145,7 +145,7 @@ carouselView.ScrollTo(monkey, position: ScrollToPosition.Start);
 
 В этом примере кода создается элемент, который прокручивается до начала представления.
 
-### <a name="center"></a>Центр.
+### <a name="center"></a>Center
 
 Элемент [`ScrollToPosition.Center`](xref:Xamarin.Forms.ScrollToPosition) указывает, что элемент должен быть прокручиваться по центру представления:
 
@@ -265,7 +265,7 @@ CarouselView carouselView = new CarouselView
 
 [![Снимок экрана Карауселвиев с начальной точкой привязки в iOS и Android](scrolling-images/snappoints-start.png "Карауселвиев с начальной точкой привязки")](scrolling-images/snappoints-start-large.png#lightbox "Карауселвиев с начальной точкой привязки")
 
-#### <a name="center"></a>Центр.
+#### <a name="center"></a>Center
 
 `SnapPointsAlignment.Center`Элемент указывает, что точки привязки выровнены по центру элементов.
 

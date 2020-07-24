@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: f42c4a6dd2f4408d7b0ccf65e60851ebd29b76f6
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 1581a58d9a6851ad880d2631660e261685260e40
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574550"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86932799"
 ---
 # <a name="deploying-watchos-apps-to-the-app-store"></a>Развертывание приложений watchOS в App Store
 
@@ -51,17 +51,17 @@ ms.locfileid: "84574550"
 
 Если у вас есть идентификатор приложения с подстановочными знаками, *потребуется только один профиль подготовки*. но если у вас есть отдельный идентификатор приложения для каждого проекта, вам потребуется профиль подготовки для каждого идентификатора приложения:
 
-![](appstore-images/provisioningprofile-distribution-sml.png "The App Store Distribution profile")
+![Профиль распространения App Store](appstore-images/provisioningprofile-distribution-sml.png)
 
 После создания всех трех профилей они будут отображаться в списке. Не забудьте скачать и установить каждый из них (дважды щелкните его):
 
-![](appstore-images/provisioningprofiles-sml.png "The list of available profiles")
+![Список доступных профилей](appstore-images/provisioningprofiles-sml.png)
 
 Проверить профиль подготовки можно в **параметрах проекта** . для этого выберите пункт **Сборка > пакет iOS** и выберите Конфигурация **AppStore | iPhone** .
 
 В списке **профиль подготовки** будут показаны все профили сопоставления. Вы должны увидеть профили сопоставления, созданные в этом раскрывающемся списке.
 
-![](appstore-images/options-selectprofile-sml.png "The iOS Bundle Signing dialog")
+![Диалоговое окно подписывания пакета iOS](appstore-images/options-selectprofile-sml.png)
 
 <a name="iTunes_Connect"></a>
 
@@ -69,12 +69,12 @@ ms.locfileid: "84574550"
 
 Выполните [Общие сведения о распространении приложений](~/ios/deploy-test/app-distribution/index.md), в частности:
 
-- [Настройка приложения в iTunes Connect](~/ios/deploy-test/app-distribution/app-store-distribution/itunesconnect.md)
-- [Публикация в Магазине приложений](~/ios/deploy-test/app-distribution/app-store-distribution/publishing-to-the-app-store.md)
+- [Настройка приложения в iTunes Connect](~/ios/deploy-test/app-distribution/app-store-distribution/itunesconnect.md)
+- [Публикация в App Store](~/ios/deploy-test/app-distribution/app-store-distribution/publishing-to-the-app-store.md)
 
 При настройке приложения в iTunes Connect не забудьте добавить значок контрольного снимка и снимков экрана:
 
-![](appstore-images/itunesconnect-watch-sml.png "The Watch icon and screenshots in iTunes Connect")
+![Значок просмотра и снимки экрана в iTunes Connect](appstore-images/itunesconnect-watch-sml.png)
 
 Файл значка должен быть 1024x1024 пикселями, и к нему будет применена циклическая маска при его отображении. Значок не должен иметь альфа-канал.
 
@@ -88,19 +88,19 @@ ms.locfileid: "84574550"
 
 1. Убедитесь, что приложение iOS является запускаемым проектом. Если это не так, щелкните правой кнопкой мыши, чтобы задать его.
 
-   ![](appstore-images/xs-startup.png "Setting the startup project")
+   ![Настройка запускаемого проекта](appstore-images/xs-startup.png)
 
 2. Выберите конфигурацию сборки **AppStore** :
 
-   ![](appstore-images/xs-appstore.png "The AppStore build configuration")
+   ![Конфигурация сборки AppStore](appstore-images/xs-appstore.png)
 
 3. Выберите пункт меню " **сборка > Архив** ", чтобы запустить процесс архивации:
 
-   ![](appstore-images/xs-archive.png "The Build menu")
+   ![Меню «Сборка»](appstore-images/xs-archive.png)
 
 Можно также выбрать пункт меню **просмотреть > архивы...** , чтобы просмотреть ранее созданные архивы.
 
-  ![](appstore-images/xs-archives-sml.png "The Archives view")
+  ![Представление архивов](appstore-images/xs-archives-sml.png)
 
 <a name="xcode"></a>
 
@@ -110,21 +110,21 @@ Xcode автоматически отображает архивы, создан
 
 1. Запустите Xcode и выберите **окно организатор >**:
 
-   ![](appstore-images/xc-organizer.png "The Window menu")
+   ![Меню «окно»](appstore-images/xc-organizer.png)
 
 2. Перейдите на вкладку **архивы** и выберите архив, созданный с помощью Visual Studio для Mac:
 
-   ![](appstore-images/xc-archives.png "The Archives tab")
+   ![Вкладка архивы](appstore-images/xc-archives.png)
 
 3. При необходимости **Проверьте...** Архив, а затем нажмите кнопку **Отправить...** , чтобы отправить приложение в iTunes Connect.
 
 4. Выберите команду разработчиков (если вы принадлежите к нескольким) и Подтвердите отправку:
 
-   ![](appstore-images/xc-submit1.png "The development team section")
+   ![Раздел команды разработчиков](appstore-images/xc-submit1.png)
 
 5. Перейдите в iTunes Connect еще раз, чтобы просмотреть отправленный двоичный файл. Перейдите на страницу настройки приложения и выберите в верхнем меню пункт **Предварительная версия** , чтобы просмотреть список **сборок** :
 
-   [![](appstore-images/itc-prerelease-sml.png "The apps configuration page in iTunes Connect")](appstore-images/itc-prerelease.png#lightbox)
+   [![Страница настройки приложений в iTunes Connect](appstore-images/itc-prerelease-sml.png)](appstore-images/itc-prerelease.png#lightbox)
 
 Затем вы можете отправить приложение на утверждение на странице **версии** . Дополнительные сведения см. в статье [Обзор распространения приложений для iOS](~/ios/deploy-test/app-distribution/index.md) .
 
@@ -172,12 +172,12 @@ Missing Icon. The watch application '...watchkitextension.appex/WatchApp.app'
 is missing icon with name pattern '*44x44@2x.png' (Home Screen 42mm).
 ```
 
-Убедитесь, что у вас установлена последняя версия Visual Studio для Mac и что **AppIcon. appiconset** содержит полный набор образов. Если эта ошибка по-прежнему возникает, просмотрите исходный код файла **Content. JSON** , чтобы убедиться, что он содержит запись для всех необходимых изображений. Кроме того, если вы уверены, что используете последнюю версию Xamarin, удалите и повторно создайте **AppIcon. appiconset**.
+Убедитесь, что у вас установлена последняя версия Visual Studio для Mac и что **AppIcon. appiconset** содержит полный набор образов. Если эта ошибка по-прежнему возникает, просмотрите источник **Contents.js** , чтобы убедиться, что она содержит запись для всех необходимых образов. Кроме того, если вы уверены, что используете последнюю версию Xamarin, удалите и повторно создайте **AppIcon. appiconset**.
 
 > [!IMPORTANT]
 > Обнаружена известная ошибка в Visual Studio для Mac поддержка значка просмотра: она ожидает изображение в виде 88x88 пикселя для **29x29@3x** изображения (которое должно быть 87x87 пикселей).
 
-Вы не можете исправить это в Visual Studio для Mac. Измените ресурс изображения в Xcode или вручную измените файл **Content. JSON** .
+Вы не можете исправить это в Visual Studio для Mac изменить ресурс изображения в Xcode или вручную изменить **Contents.jsв** файле.
 
 ### <a name="invalid-watchkit-support"></a>Недопустимая поддержка WatchKit
 

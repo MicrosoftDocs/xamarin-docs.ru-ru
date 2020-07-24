@@ -10,12 +10,12 @@ ms.date: 08/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3ebd3940cbd61342977bde60addc773460a08854
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 3f85c6528a1bf599c38a39b4e88400bc8b0c4f05
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84569573"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931993"
 ---
 # <a name="containerized-microservices"></a>Контейнерные микрослужбы
 
@@ -23,7 +23,7 @@ ms.locfileid: "84569573"
 
 В частности, в случае с возрастом облака, можно легко масштабировать отдельные компоненты. Монолитное приложение содержит функциональные возможности, зависящие от домена, и обычно разделяется функциональными уровнями, такими как интерфейсная часть, Бизнес-логика и хранилище данных. Монолитное приложение масштабируется путем клонирования всего приложения на несколько компьютеров, как показано на рисунке 8-1.
 
-![](containerized-microservices-images/monolithicapp.png "Monolithic application scaling approach")
+![Подход монолитного масштабирования приложений](containerized-microservices-images/monolithicapp.png)
 
 **Рис. 8-1**. подход монолитного масштабирования приложений
 
@@ -33,7 +33,7 @@ ms.locfileid: "84569573"
 
 Микрослужбы могут масштабироваться независимо друг от друга, по сравнению с гигантским монолитным приложением, которое масштабируется вместе. Это означает, что конкретная функциональная область, требующая большего объема вычислительной мощности или пропускной способности сети для поддержки спроса, может масштабироваться, а не иметь необходимости в масштабировании других областей приложения. На рис. 8-2 показан этот подход, когда микрослужбы развертываются и масштабируются независимо друг от друга, создавая экземпляры служб на разных компьютерах.
 
-![](containerized-microservices-images/microservicesapp.png "Microservices application scaling approach")
+![Подход к масштабированию приложений микрослужб](containerized-microservices-images/microservicesapp.png)
 
 **Рис. 8-2**. подход к масштабированию приложений микрослужб
 
@@ -67,7 +67,7 @@ ms.locfileid: "84569573"
 
 Между контейнерами и виртуальными машинами существует много сходства, как показано на рисунке 8-3.
 
-![](containerized-microservices-images/containersvsvirtualmachines.png "Microservices application scaling approach")
+![Подход к масштабированию приложений микрослужб](containerized-microservices-images/containersvsvirtualmachines.png)
 
 **Рис. 8-3**. Сравнение виртуальных машин и контейнеров
 
@@ -87,7 +87,7 @@ ms.locfileid: "84569573"
 
 Приложение-образец eShopOnContainers использует DOCKER для размещения четырех контейнерных внутренних служб, как показано на рисунке 8-4.
 
-![](containerized-microservices-images/microservicesarchitecture.png "eShopOnContainers reference application back-end microservices")
+![eShopOnContainers эталонные микрослужбы приложения](containerized-microservices-images/microservicesarchitecture.png)
 
 **Рис. 8-4**. eShopOnContainers эталонные микрослужбы приложения
 
@@ -101,7 +101,7 @@ ms.locfileid: "84569573"
 
 Мобильное приложение eShopOnContainers взаимодействует с контейнерными внутренними микрослужбами с помощью прямого обмена данными между *клиентом* и микрослужбами, как показано на рис. 8-5.
 
-![](containerized-microservices-images/directclienttomicroservicecommunication.png "Microservices application scaling approach")
+![Подход к масштабированию приложений микрослужб](containerized-microservices-images/directclienttomicroservicecommunication.png)
 
 **Рис. 8-5**. Прямая связь между клиентом и микрослужбой
 
@@ -120,19 +120,19 @@ ms.locfileid: "84569573"
 
 Шина событий обеспечивает взаимодействие публикации и подписки между микрослужбами, не требуя от них явного уведомления друг от друга, как показано на рис. 8-6.
 
-![](containerized-microservices-images/eventbus.png "Publish-subscribe with an event bus")
+![Публикация и подписка с помощью шины событий](containerized-microservices-images/eventbus.png)
 
 **Рис. 8-6.** Публикация и подписка с помощью шины событий
 
 С точки зрения приложения, шина событий — это просто канал публикации и подписки, предоставляемый через интерфейс. Однако способ реализации шины событий может различаться. Например, реализация шины событий может использовать RabbitMQ, служебную шину Azure или другие служебные шины, такие как NServiceBus и MassTransit. На рис. 8-7 показано, как шина событий используется в эталонном приложении eShopOnContainers.
 
-![](containerized-microservices-images/microservicesarchitecturewitheventbus.png "Asynchronous event-driven communication in the reference application")
+![Асинхронное взаимодействие на основе событий в приложении-образце](containerized-microservices-images/microservicesarchitecturewitheventbus.png)
 
 **Рис. 8-7.** Асинхронное взаимодействие на основе событий в приложении-образце
 
 Шина событий eShopOnContainers, реализованная с помощью RabbitMQ, предоставляет функции асинхронной публикации и подписки "один ко многим". Это означает, что после публикации события может быть несколько подписчиков, прослушивающих одно и то же событие. Эта связь показана на рис. 8-9.
 
-![](containerized-microservices-images/eventdrivencommunication.png "One-to-many communication")
+![Связь «один ко многим»](containerized-microservices-images/eventdrivencommunication.png)
 
 **Рис. 8-9**. связь «один ко многим»
 

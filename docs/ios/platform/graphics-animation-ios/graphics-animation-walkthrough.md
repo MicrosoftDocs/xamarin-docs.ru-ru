@@ -7,26 +7,26 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: b35e88cfdc0bce321068951f1617885c90331c83
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 632577d290c6d50a53d2f3fc236b5956f3795b35
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73032441"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929549"
 ---
 # <a name="using-core-graphics-and-core-animation-in-xamarinios"></a>Использование основной графической и основной анимации в Xamarin. iOS
 
-В этом пошаговом руководстве мы будем нарисовать контур, используя основные графические объекты, в ответ на сенсорный ввод. Затем мы добавим `CALayer`, содержащий изображение, которое будет анимировано вдоль пути.
+В этом пошаговом руководстве мы будем нарисовать контур, используя основные графические объекты, в ответ на сенсорный ввод. Затем мы добавим объект, `CALayer` содержащий изображение, которое будет анимировано вдоль пути.
 
-На следующем снимке экрана показано готовое приложение:
+На снимке экрана ниже показано готовое приложение:
 
-![](graphics-animation-walkthrough-images/00-final-app.png "The completed application")
+![Готовое приложение](graphics-animation-walkthrough-images/00-final-app.png)
 
-Перед началом загрузки образца *графиксдемо* , прилагаемого к этому руководству. Его можно скачать [здесь](https://docs.microsoft.com/samples/xamarin/ios-samples/graphicsandanimation) и найти в каталоге **графиксвалксраугх** . Запустите проект с именем **GraphicsDemo_starter** , дважды щелкнув его, и откройте класс `DemoView`.
+Перед началом загрузки образца *графиксдемо* , прилагаемого к этому руководству. Его можно скачать [здесь](https://docs.microsoft.com/samples/xamarin/ios-samples/graphicsandanimation) и найти в каталоге **графиксвалксраугх** . запустите проект с именем **GraphicsDemo_starter** , дважды щелкнув его, и откройте `DemoView` класс.
 
 ## <a name="drawing-a-path"></a>Рисование контура
 
-1. В `DemoView` добавьте переменную `CGPath` в класс и создайте ее экземпляр в конструкторе. Кроме того, объявите две `CGPoint` переменные, `initialPoint` и `latestPoint`, которые будут использоваться для записи сенсорной точки, из которой строится путь:
+1. В `DemoView` добавьте `CGPath` переменную в класс и создайте ее экземпляр в конструкторе. Также объявите две `CGPoint` переменные `initialPoint` и, `latestPoint` которые будут использоваться для захвата сенсорной точки, из которой строится путь:
 
     ```csharp
     public class DemoView : UIView
@@ -44,7 +44,7 @@ ms.locfileid: "73032441"
     }
     ```
 
-2. Добавьте следующие директивы using:
+2. Добавьте следующие директивы using.
 
     ```csharp
     using CoreGraphics;
@@ -52,7 +52,7 @@ ms.locfileid: "73032441"
     using Foundation;
     ```
 
-3. Затем переопределите `TouchesBegan` и `TouchesMoved,` и добавьте следующие реализации для записи начальной сенсорной точки и каждой последующей сенсорной точки соответственно:
+3. Затем переопределите `TouchesBegan` и `TouchesMoved,` добавьте следующие реализации для захвата начальной сенсорной точки и каждой последующей сенсорной точки соответственно:
 
     ```csharp
     public override void TouchesBegan (NSSet touches, UIEvent evt){
@@ -79,9 +79,9 @@ ms.locfileid: "73032441"
     }
     ```
 
-    `SetNeedsDisplay` будет вызываться каждый раз, чтобы приступить к перемещению, чтобы `Draw` был вызван при следующем прохождении цикла выполнения.
+    `SetNeedsDisplay`будет вызываться каждый раз при перемещении, `Draw` чтобы их можно было вызывать при следующем передаче цикла выполнения.
 
-4. Мы будем добавлять строки к пути в методе `Draw` и использовать красную пунктирную линию для рисования. [Реализуйте `Draw`](~/ios/platform/graphics-animation-ios/core-graphics.md) с помощью приведенного ниже кода.
+4. Мы будем добавлять строки к пути в `Draw` методе и использовать красную пунктирную линию для рисования. [Реализация `Draw` ](~/ios/platform/graphics-animation-ios/core-graphics.md) с кодом, показанным ниже:
 
     ```csharp
     public override void Draw (CGRect rect){
@@ -117,13 +117,13 @@ ms.locfileid: "73032441"
 
 Если запустить приложение сейчас, можно нарисовать экран на экране, как показано на следующем снимке экрана:
 
-![](graphics-animation-walkthrough-images/01-path.png "Drawing on the screen")
+![Рисование на экране](graphics-animation-walkthrough-images/01-path.png)
 
 ## <a name="animating-along-a-path"></a>Анимация вдоль пути
 
 Теперь, когда мы реализовали код, чтобы пользователи могли нарисовать контур, добавим код для анимации слоя вдоль рисуемого контура.
 
-1. Сначала добавьте переменную [`CALayer`](~/ios/platform/graphics-animation-ios/core-animation.md) в класс и создайте ее в конструкторе:
+1. Сначала добавьте [`CALayer`](~/ios/platform/graphics-animation-ios/core-animation.md) переменную в класс и создайте ее в конструкторе:
 
     ```csharp
     public class DemoView : UIView
@@ -148,7 +148,7 @@ ms.locfileid: "73032441"
             }
     ```
 
-2. Далее мы добавим слой в качестве подслоя слоя представления, когда пользователь отрывает свой палец с экрана. Затем мы создадим анимацию опорного кадра с помощью пути, что позволяет анимировать `Position`слоя.
+2. Далее мы добавим слой в качестве подслоя слоя представления, когда пользователь отрывает свой палец с экрана. Затем мы создадим анимацию опорного кадра с помощью пути, и анимировать слой `Position` .
 
     Для этого необходимо переопределить `TouchesEnded` и добавить следующий код:
 
@@ -173,7 +173,7 @@ ms.locfileid: "73032441"
 
 3. Запустить приложение сейчас и после рисования. слой с изображением добавляется и перемещается по изображенному пути:
 
-![](graphics-animation-walkthrough-images/00-final-app.png "A layer with an image is added and travels along the drawn path")
+![Слой с изображением добавляется и перемещается по изображенному контуру](graphics-animation-walkthrough-images/00-final-app.png)
 
 ## <a name="summary"></a>Сводка
 

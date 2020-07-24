@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5142965216b328172ae7fa04cdc0c13590f5ff38
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 287b116d9ba2cb84e4e196fff080b8212e4eca3b
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139892"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938415"
 ---
 # <a name="listview-interactivity"></a>Интерактивность ListView
 
@@ -48,7 +48,7 @@ Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Класс поддер�
 
 На следующих снимках экрана показан [`ListView`](xref:Xamarin.Forms.ListView) режим выбора по умолчанию:
 
-![](interactivity-images/selection-default.png "ListView with Selection Enabled")
+![ListView с включенным выделением](interactivity-images/selection-default.png)
 
 ### <a name="disable-selection"></a>Отключить выделение
 
@@ -66,7 +66,7 @@ var listView = new ListView { ... SelectionMode = ListViewSelectionMode.None };
 
 Часто пользователи хотят предпринять действия с элементом в `ListView` . Например, рассмотрим список сообщений электронной почты в почтовом приложении. В iOS можно прокрутить, чтобы удалить сообщение:
 
-![](interactivity-images/context-default.png "ListView with Context Actions")
+![ListView с действиями контекста](interactivity-images/context-default.png)
 
 Действия контекста могут быть реализованы в C# и XAML. Ниже вы найдете конкретные руководства для обоих, но сначала рассмотрим некоторые основные сведения о реализации для обоих.
 
@@ -181,11 +181,11 @@ listView.RefreshControlColor = Color.Red;
 
 На следующих снимках экрана показан запрос на обновление по мере извлечения пользователя:
 
-![](interactivity-images/refresh-start.png "ListView Pull to Refresh In-Progress")
+![Выполняется извлечение из ListView для обновления](interactivity-images/refresh-start.png)
 
 На следующих снимках экрана показан запрос на обновление после того, как пользователь освободил запрос на вытягивание, и при обновлении отображается счетчик [`ListView`](xref:Xamarin.Forms.ListView) :
 
-![](interactivity-images/refresh-in-progress.png "ListView Pull to Refresh Complete")
+![Извлечение ListView для обновления завершено](interactivity-images/refresh-in-progress.png)
 
 [`ListView`](xref:Xamarin.Forms.ListView)запускает [`Refreshing`](xref:Xamarin.Forms.ListView.Refreshing) событие для запуска обновления, и [`IsRefreshing`](xref:Xamarin.Forms.ListView.IsRefreshing) свойство будет установлено в значение `true` . Любой код, необходимый для обновления содержимого, `ListView` должен затем выполняться обработчиком событий для `Refreshing` события или методом, выполняемым [`RefreshCommand`](xref:Xamarin.Forms.ListView.RefreshCommand) . После `ListView` обновления `IsRefreshing` свойство должно иметь значение `false` , или [`EndRefresh`](xref:Xamarin.Forms.ListView.EndRefresh) метод должен быть вызван, чтобы указать, что обновление завершено.
 

@@ -16,7 +16,7 @@ ms.locfileid: "86934697"
 ---
 # <a name="using-custom-controls-with-the-ios-designer"></a>Использование пользовательских элементов управления в конструкторе iOS
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
 
 Xamarin Designer для iOS доступен в Visual Studio для Mac и Visual Studio 2017 и более поздних версий в Windows.
 
@@ -260,7 +260,7 @@ public override void Draw(CGRect rect)
 
  [![Изменение свойств времени разработки](ios-designable-controls-walkthrough-images/11-customproperty.png)](ios-designable-controls-walkthrough-images/10-app.png#lightbox)
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье мы рассмотрели, как создать пользовательский элемент управления, а также как использовать его в приложении iOS с помощью конструктора iOS. Мы увидели, как создать и построить элемент управления, чтобы сделать его доступным для приложения на **панели элементов**конструктора. Кроме того, мы рассматривали, как реализовать элемент управления таким образом, чтобы он правильно отображался как во время разработки, так и в среде выполнения, а также как предоставить настраиваемые свойства элемента управления в конструкторе.
 

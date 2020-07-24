@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: 74d6dfb2b6a722e5af4dc97cdf23b84aa4bd95d0
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: ddd46da0787f853e949d08c45dff5be17b9451fd
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84565048"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86932760"
 ---
 # <a name="core-animation-in-xamarinios"></a>Основная анимация в Xamarin. iOS
 
@@ -70,7 +70,7 @@ PresentViewController (vc2, true, null);
 
 На следующем снимке экрана показано, как выглядит переход в `PartialCurl` случае:
 
- ![](core-animation-images/06-view-transitions.png "This screenshot shows the PartialCurl transition")
+ ![На этом снимке экрана показан переход Партиалкурл](core-animation-images/06-view-transitions.png)
 
 ### <a name="view-transitions"></a>Просмотр переходов
 
@@ -92,7 +92,7 @@ UIView.Transition (
 
 На следующем снимке экрана показан анимированный переход между представлениями изображений, когда `TransitionFlipFromTop` используется.
 
- ![](core-animation-images/07-animated-transition.png "This screenshot shows the animated transition between the image views when TransitionFlipFromTop is used")
+ ![На этом снимке экрана показан анимированный переход между представлениями изображений при использовании Транситионфлипфромтоп](core-animation-images/07-animated-transition.png)
 
 ### <a name="view-property-animations"></a>Просмотр анимаций свойств
 
@@ -100,7 +100,7 @@ UIKit поддерживает бесплатное анимацию разли�
 
 - Frame
 - Bounds
-- Центр.
+- Center
 - Коэффициент альфа
 - Преобразование
 - Цвет
@@ -125,11 +125,11 @@ UIView.Animate (
 
 Это приводит к анимации на изображении в верхней части экрана, как показано ниже:
 
- ![](core-animation-images/08-animate-center.png "An image animating back and forth across the top of the screen as the output")
+ ![Анимация изображения в верхней части экрана в качестве выходных данных](core-animation-images/08-animate-center.png)
 
 Как и в `Transition` случае с методом, `Animate` можно задать длительность, а также функцию плавности. В этом примере также используется `UIViewAnimationOptions.Autoreverse` параметр, который вызывает анимацию анимации из значения обратно в исходное значение. Однако код также задает `Center` начальное значение обратно в обработчике завершения. Хотя анимация выполняет интерполяцию значений свойств с течением времени, фактическое значение модели свойства всегда является конечным значением, которое было задано. В этом примере значение — это точка, расположенная ближе к правой части. Без установки в качестве `Center` начальной точки, в которой анимация завершается из-за того, что `Autoreverse` задается, изображение будет привязано к правой стороне после завершения анимации, как показано ниже:
 
- ![](core-animation-images/09-animation-complete.png "Without setting the Center to the initial point, the image would snap back to the right side after the animation completes")
+ ![Без настройки центра на начальную точку, после завершения анимации изображение будет привязано к правой стороне.](core-animation-images/09-animation-complete.png)
 
 ## <a name="using-core-animation"></a>Использование основной анимации
 
@@ -184,11 +184,11 @@ public override void ViewDidAppear (bool animated)
 
 На следующем рисунке показано расположение и точка привязки:
 
- ![](core-animation-images/10-postion-anchorpt.png "This figure shows the position and anchor point")
+ ![На рисунке показано расположение и точка привязки](core-animation-images/10-postion-anchorpt.png)
 
 При выполнении примера, `Position` `BorderWidth` и `BorderColor` анимации, как показано на следующих снимках экрана:
 
- ![](core-animation-images/11-implicit-animation.png "When the example is run, the Position, BorderWidth and BorderColor animate as shown")
+ ![При выполнении этого примера значение свойства положением, BorderWidth и BorderColor анимируется, как показано](core-animation-images/11-implicit-animation.png)
 
 ### <a name="explicit-animations"></a>Явная анимация
 
@@ -229,7 +229,7 @@ public override void ViewDidAppear (bool animated)
 
 На следующих снимках экрана показан слой, содержащий анимированное изображение по указанному пути:
 
- ![](core-animation-images/12-explicit-animation.png "This screenshot shows the layer containing the image animating through the specified path")
+ ![На этом снимке экрана показан слой, содержащий анимированное изображение по указанному пути](core-animation-images/12-explicit-animation.png)
 
 ## <a name="summary"></a>Сводка
 

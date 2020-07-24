@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 1d64a212dae055d6a7a5ff1005b25dc48a10d52e
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: e779b874cda016a0cd6cc0444ff42a761ee7483e
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566205"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934684"
 ---
 # <a name="tvos-user-interface-styles-in-xamarin"></a>Стили пользовательского интерфейса tvOS в Xamarin
 
@@ -28,11 +28,11 @@ tvOS 10 теперь поддерживает как темную, так и с�
 
 Пользователь может переключить эту тему, выбрав **Параметры**  >  **Общий**  >  **вид** и переключение между **светлым** и **темным**:
 
-[![](user-interface-styles-images/theme01.png "The Settings app")](user-interface-styles-images/theme01.png#lightbox)
+[![Приложение параметров](user-interface-styles-images/theme01.png)](user-interface-styles-images/theme01.png#lightbox)
 
 Если выбрана **темная** тема, все элементы пользовательского интерфейса будут переключаться на светлый текст на темном фоне:
 
-[![](user-interface-styles-images/theme02.png "The Dark theme")](user-interface-styles-images/theme02.png#lightbox)
+[![Темная тема](user-interface-styles-images/theme02.png)](user-interface-styles-images/theme02.png#lightbox)
 
 Пользователь имеет возможность переключить тему в любое время и может сделать это на основе текущего действия, в котором находится Apple TV, или время суток.
 
@@ -50,11 +50,11 @@ tvOS 10 теперь поддерживает как темную, так и с�
 2. Выберите представление **исходного кода** (в нижней части редактора).
 3. Добавьте новый ключ и вызовите его `UIUserInterfaceStyle` :
 
-    [![](user-interface-styles-images/theme03.png "The UIUserInterfaceStyle key")](user-interface-styles-images/theme03.png#lightbox)
+    [![Ключ Уиусеринтерфацестиле](user-interface-styles-images/theme03.png)](user-interface-styles-images/theme03.png#lightbox)
 4. Оставьте для типа значение `String` и введите `Automatic` :
 
-    [![](user-interface-styles-images/theme04.png "Enter Automatic")](user-interface-styles-images/theme04.png#lightbox)
-5. Сохраните изменения, внесенные в файл.
+    [![Введите автоматический](user-interface-styles-images/theme04.png)](user-interface-styles-images/theme04.png#lightbox)
+5. Сохраните изменения в файле.
 
 Существует три возможных значения `UIUserInterfaceStyle` ключа:
 
@@ -128,7 +128,7 @@ button.ForTraitCollection(dark).SetTitleColor (UIColor.White, UIControlState.Nor
 
 Разработчику требуется более глубокий контроль над внешним видом элемента пользовательского интерфейса на основе выбранной темы пользовательского интерфейса, но они могут переопределить `TraitCollectionDidChange` метод `UIView` `UIViewController` класса или.
 
-Пример.
+Например.
 
 ```csharp
 public override void TraitCollectionDidChange (UITraitCollection previousTraitCollection)
@@ -146,7 +146,7 @@ public override void TraitCollectionDidChange (UITraitCollection previousTraitCo
 
 В зависимости от структуры приложения tvOS могут возникнуть ситуации, когда разработчику нужно переопределить коллекцию признаков данного элемента пользовательского интерфейса и всегда использовать определенную тему ПОЛЬЗОВАТЕЛЬСКОГО интерфейса.
 
-Это можно сделать с помощью `SetOverrideTraitCollection` метода для `UIViewController` класса. Пример.
+Это можно сделать с помощью `SetOverrideTraitCollection` метода для `UIViewController` класса. Например.
 
 ```csharp
 // Create new trait and configure it
@@ -169,13 +169,13 @@ SetOverrideTraitCollection (trait, this);
 
 1. Щелкните правой кнопкой мыши файл раскадровки в **Обозреватель решений** и выберите **Открыть с помощью**  >  **Xcode Interface Builder**:
 
-    [![](user-interface-styles-images/theme05.png "Open With Xcode Interface Builder")](user-interface-styles-images/theme05.png#lightbox)
+    [![Открыть с помощью Xcode Interface Builder](user-interface-styles-images/theme05.png)](user-interface-styles-images/theme05.png#lightbox)
 2. Чтобы включить поддержку коллекции признаков, переключитесь в **инспекторе файлов** и установите флажок **использовать** признаки в **Interface Builder разделе документа** :
 
-    [![](user-interface-styles-images/theme06.png "Enable Trait Collection support")](user-interface-styles-images/theme06.png#lightbox)
+    [![Включить поддержку коллекции признаков](user-interface-styles-images/theme06.png)](user-interface-styles-images/theme06.png#lightbox)
 3. Подтвердите изменение, чтобы использовать варианты характеристик:
 
-    [![](user-interface-styles-images/theme07.png "The use Trait Variations alert")](user-interface-styles-images/theme07.png#lightbox)
+    [![Предупреждение о вариантах использования](user-interface-styles-images/theme07.png)](user-interface-styles-images/theme07.png#lightbox)
 4. Сохраните изменения в файле раскадровки.
 
 Компания Apple добавила следующие возможности при редактировании раскадровок tvOS в Interface Builder:
@@ -184,20 +184,20 @@ SetOverrideTraitCollection (trait, this);
 
   - У нескольких свойств теперь есть несколько **+** значков, которые можно щелкнуть, чтобы добавить конкретную версию темы пользовательского интерфейса:
 
-    [![](user-interface-styles-images/theme08.png "Add a UI theme specific version")](user-interface-styles-images/theme08.png#lightbox)
+    [![Добавление определенной версии темы пользовательского интерфейса](user-interface-styles-images/theme08.png)](user-interface-styles-images/theme08.png#lightbox)
 
   - Разработчик может указать новое свойство или нажать кнопку **x** , чтобы удалить его:
 
-    [![](user-interface-styles-images/theme09.png "Specify a new property or click the x button to remove it")](user-interface-styles-images/theme09.png#lightbox)
+    [![Укажите новое свойство или нажмите кнопку x, чтобы удалить его](user-interface-styles-images/theme09.png)](user-interface-styles-images/theme09.png#lightbox)
 - Разработчик может выполнить предварительный просмотр дизайна пользовательского интерфейса в светлой или темной теме в Interface Builder:
 
   - Нижняя часть область конструктора позволяет разработчику переключать текущую тему пользовательского интерфейса:
 
-    [![](user-interface-styles-images/theme10.png "The bottom of the Design Surface")](user-interface-styles-images/theme10.png#lightbox)
+    [![В нижней части область конструктора](user-interface-styles-images/theme10.png)](user-interface-styles-images/theme10.png#lightbox)
 
   - Новая тема отобразится в Interface Builder и будут отображены определенные корректировки коллекции признаков:
 
-    [![](user-interface-styles-images/theme11.png "The theme displayed in Interface Builder")](user-interface-styles-images/theme11.png#lightbox)
+    [![Тема, отображаемая в Interface Builder](user-interface-styles-images/theme11.png)](user-interface-styles-images/theme11.png#lightbox)
 
 Кроме того, симулятор tvOS теперь имеет сочетание клавиш, которое позволяет разработчику быстро переключаться между светлой и темной темами при отладке приложения tvOS. Используйте сочетание клавиш **Command-Shift-D** для переключения между светлым и темным.
 

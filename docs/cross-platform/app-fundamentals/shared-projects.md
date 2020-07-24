@@ -6,12 +6,12 @@ ms.assetid: 191c71fb-44a4-4e6c-af4b-7b1107dce6af
 author: davidortinau
 ms.author: daortin
 ms.date: 07/18/2018
-ms.openlocfilehash: b8be06b9da4561ffc0d628b53f8daf639b5e3179
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 1a71b84d1068fef1730196bafb0f0d7e2a948c5c
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571105"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936920"
 ---
 # <a name="shared-projects-code-sharing"></a>Совместное использование общего кода проектов
 
@@ -27,7 +27,7 @@ _Общие проекты позволяют писать общий код, н
 
 В отличие от большинства других типов проектов, общий проект не имеет выходных данных (в виде библиотеки DLL), а код компилируется в каждый проект, который ссылается на него. Это показано на схеме ниже — по сути, все содержимое общего проекта «копируется в» каждый проект ссылки и компилируется, как будто оно является частью.
 
-![](shared-projects-images/sharedassetproject.png "Shared Project architecture")
+![Архитектура общего проекта](shared-projects-images/sharedassetproject.png)
 
 Код в общем проекте может содержать директивы компилятора, которые будут включать или отключать разделы кода в зависимости от того, какой проект приложения использует код, который предлагается в цветовых полях платформы на схеме.
 
@@ -57,7 +57,7 @@ _Общие проекты позволяют писать общий код, н
 
 Добавление ссылки на общий проект выполняется таким же образом, как и ссылка на обычный проект библиотеки. На этом снимке экрана показан проект Xamarin. iOS, ссылающийся на общий проект.
 
-![](shared-projects-images/xs-reference.png "Project reference to Shared Project")
+![Ссылка проекта на общий проект](shared-projects-images/xs-reference.png)
 
 После того как на общий проект ссылается другая библиотека или приложение, можно создать решение и просмотреть все ошибки в коде. Если на общий проект ссылаются _два или более_ других проекта, в левом верхнем углу редактора исходного кода появится меню, показывающее, какие проекты ссылаются на этот файл.
 
@@ -67,7 +67,7 @@ _Общие проекты позволяют писать общий код, н
 
 Экран **Параметры** показан ниже: **имя** проекта и **пространство имен по умолчанию** являются единственными двумя параметрами, которые обычно меняются.
 
-![](shared-projects-images/xs-sharedprojectoptions.png "Shared Project Options")
+![Параметры общего проекта](shared-projects-images/xs-sharedprojectoptions.png)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
@@ -87,13 +87,13 @@ _Общие проекты позволяют писать общий код, н
 
 Можно также добавить новый общий проект в существующее решение, щелкнув файл решения правой кнопкой мыши и выбрав **добавить > новый проект**. Новый общий проект выглядит, как показано ниже (после добавления файла класса). Обратите внимание, что ссылки или узлы компонентов отсутствуют. они не поддерживаются для общих проектов.
 
-![](shared-projects-images/vs-empty.png "Empty Shared Project")
+![Пустой общий проект](shared-projects-images/vs-empty.png)
 
 Чтобы общий проект был полезен, на него должен быть указан хотя бы один проект, поддерживающий сборку (например, приложение или библиотека iOS или Android или проект PCL). Общий проект не компилируется, если он не ссылается на него, поэтому ошибки синтаксиса (или любые другие) не будут выделяться, пока на него не будет ссылка.
 
 Добавление ссылки на общий проект выполняется таким же образом, как и ссылка на обычный проект библиотеки. На этом снимке экрана показан проект Xamarin. iOS, ссылающийся на общий проект.
 
-![](shared-projects-images/vs-reference.png "Project reference to Shared Project")
+![Ссылка проекта на общий проект](shared-projects-images/vs-reference.png)
 
 После того как на общий проект ссылается другая библиотека или приложение, можно создать решение и просмотреть все ошибки в коде. Если на общий проект ссылаются _два или более_ других проекта, в левом верхнем углу редактора исходного кода появится меню, чтобы увидеть, какие проекты ссылаются на текущий файл кода.
 
@@ -103,7 +103,7 @@ _Общие проекты позволяют писать общий код, н
 
 Ниже показана панель **Свойства** . **корневое пространство имен** — это единственный параметр, который можно изменить.
 
-![](shared-projects-images/vs-sharedprojectproperties.png "Shared Project Properties")
+![Свойства общего проекта](shared-projects-images/vs-sharedprojectproperties.png)
 
 -----
 
@@ -117,11 +117,11 @@ _Общие проекты позволяют писать общий код, н
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-![](shared-projects-images/xs-examplesolution.png "Visual Studio for Mac solution")
+![Visual Studio для Mac решение](shared-projects-images/xs-examplesolution.png)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-![](shared-projects-images/vs-examplesolution.png "Visual Studio solution")
+![Решение Visual Studio](shared-projects-images/vs-examplesolution.png)
 
 -----
 
@@ -129,7 +129,7 @@ Windows Phone проект можно перемещать из Visual Studio д
 
 Ниже показаны выполняющиеся приложения.
 
-![](shared-projects-images/example.png "iOS, Android, Windows Phone examples")
+![Примеры для iOS, Android, Windows Phone](shared-projects-images/example.png)
 
 ## <a name="summary"></a>Сводка
 

@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8bcd17658156694bfb0638d0ddc1a1ca3fe295c2
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 401de4883c91c682d4734dd036ea87b6dc694edb
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136049"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939052"
 ---
 # <a name="visualelement-legacy-color-mode-on-ios"></a>Устаревший цветовой режим Висуалелемент в iOS
 
@@ -53,7 +53,7 @@ _legacyColorModeDisabledButton.On<iOS>().SetIsLegacyColorModeEnabled(false);
 
 В результате можно отключить устаревший цветовой режим, чтобы цвета, заданные для представления пользователем, оставались даже при отключенном представлении:
 
-![](legacy-color-mode-images/legacy-color-mode-disabled.png "Legacy color mode disabled")
+![Устаревший режим цвета отключен](legacy-color-mode-images/legacy-color-mode-disabled.png)
 
 > [!NOTE]
 > При задании [`VisualStateGroup`](xref:Xamarin.Forms.VisualStateGroup) для представления устаревший цветовой режим не учитывается полностью. Дополнительные сведения о визуальных состояниях см. [в разделе Xamarin.Forms Диспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md).

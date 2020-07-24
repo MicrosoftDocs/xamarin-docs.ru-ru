@@ -161,7 +161,7 @@ _rootElement = new RootElement ("Json Example") {
 
  [![Файл будет извлечен и проанализирован с помощью MT. D, когда пользователь переходит к второму представлению](json-element-walkthrough-images/04-json-web-example.png)](json-element-walkthrough-images/04-json-web-example.png#lightbox)
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье показано, как создать интерфейс с помощью MT. D из JSON. Было показано, как загрузить JSON, входящий в файл, с приложением, а также с удаленного URL-адреса. Также показано, как получить доступ к элементам, описанным в JSON во время выполнения.
 

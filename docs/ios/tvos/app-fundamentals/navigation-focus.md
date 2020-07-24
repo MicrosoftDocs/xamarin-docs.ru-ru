@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 69886a0da53d419a0c40bdf34f91d301c9efe504
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: d9e8d91b03a5a82373012da215bd29a747e67d3e
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573720"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939455"
 ---
 # <a name="working-with-tvos-navigation-and-focus-in-xamarin"></a>Работа с tvOS навигацией и фокусом в Xamarin
 
@@ -20,7 +20,7 @@ _В этой статье рассматривается понятие фоку
 
 В этой статье рассматривается понятие [фокуса](#Focus-and-Selection) и его использование для управления [навигацией](#Navigation) в пользовательском интерфейсе приложения Xamarin. tvOS. Мы рассмотрим, как встроенные элементы управления навигацией tvOS используют фокус, выделение и выделение, чтобы обеспечить навигацию по пользовательскому интерфейсу приложения Xamarin. tvOS.
 
-[![](navigation-focus-images/intro01.png "tvOS apps User Interface Navigation")](navigation-focus-images/intro01.png#lightbox)
+[![Навигация по пользовательскому интерфейсу tvOS Apps](navigation-focus-images/intro01.png)](navigation-focus-images/intro01.png#lightbox)
 
 Далее мы рассмотрим, как можно использовать [фокусировки](#Focus-and-Parallax) и *многослойные изображения* , чтобы дать визуальные подсказки для текущего состояния навигации конечному пользователю.
 
@@ -34,7 +34,7 @@ _В этой статье рассматривается понятие фоку
 
 Успешное приложение tvOS реализует навигацию таким образом, чтобы она поддерживала назначение приложения и структуру данных, которые он представляет, не обращая внимание на саму навигацию. Разработайте навигацию так, чтобы она была естественным и знакомой, не выполняя никаких проблем с пользовательским интерфейсом или рисованием пользователей.
 
-[![](navigation-focus-images/nav01.png "The tvOS settings app")](navigation-focus-images/nav01.png#lightbox)
+[![Приложение параметров tvOS](navigation-focus-images/nav01.png)](navigation-focus-images/nav01.png#lightbox)
 
 При использовании Apple TV пользователь обычно переходит по набору экранов с накоплением, каждый из которых представляет определенный набор содержимого. В свою очередь, каждый новый экран может привести к одному или нескольким вложенным экранам содержимого с помощью стандартных элементов управления пользовательского интерфейса, таких как [кнопки](~/ios/tvos/user-interface/buttons.md), [панели вкладок](~/ios/tvos/user-interface/tab-bars.md), таблицы, [представления коллекций](~/ios/tvos/user-interface/collection-views.md) или [разделенные представления](~/ios/tvos/user-interface/split-views.md).
 
@@ -57,7 +57,7 @@ _В этой статье рассматривается понятие фоку
 
 На Apple TV изображение, кнопка или другой элемент пользовательского интерфейса считаются _фокусом_ , если он является целевым объектом текущей навигации.
 
-[![](navigation-focus-images/focus01.png "Focus and Selection example")](navigation-focus-images/focus01.png#lightbox)
+[![Пример фокуса и выбора](navigation-focus-images/focus01.png)](navigation-focus-images/focus01.png#lightbox)
 
 В отличие от устройств iOS, где пользователь напрямую взаимодействует с элементами на сенсорном экране устройства, пользователи взаимодействуют с элементами tvOS из комнаты с помощью удаленного Siri. Для представления и управления этим взаимодействием с пользователем Apple TV использует модель на основе _фокуса_ .
 
@@ -80,7 +80,7 @@ _В этой статье рассматривается понятие фоку
 
 ### <a name="working-with-focus"></a>Работа с фокусом
 
-Иногда требуется создать настраиваемый элемент управления, который может стать элементом, получающим фокус. Если это так, переопределите `CanBecomeFocused` свойство и возвратите значение `true` , иначе возвратит `false` . Пример.
+Иногда требуется создать настраиваемый элемент управления, который может стать элементом, получающим фокус. Если это так, переопределите `CanBecomeFocused` свойство и возвратите значение `true` , иначе возвратит `false` . Например.
 
 ```csharp
 public class myView : UIView
@@ -91,7 +91,7 @@ public class myView : UIView
 }
 ```
 
-В любой момент можно использовать `Focused` свойство `UIKit` элемента управления, чтобы определить, является ли он текущим элементом. `true`Значение, если элемент пользовательского интерфейса в данный момент находится в фокусе, в противном случае — нет. Пример.
+В любой момент можно использовать `Focused` свойство `UIKit` элемента управления, чтобы определить, является ли он текущим элементом. `true`Значение, если элемент пользовательского интерфейса в данный момент находится в фокусе, в противном случае — нет. Например.
 
 ```csharp
 // Is my view in focus?
@@ -101,7 +101,7 @@ if (myView.Focused) {
 }
 ```
 
-Хотя нельзя напрямую перемещать фокус на другой элемент пользовательского интерфейса с помощью кода, можно указать, какой элемент пользовательского интерфейса сначала получает фокус при загрузке экрана, задав `PreferredFocusedView` свойству значение `true` . Пример.
+Хотя нельзя напрямую перемещать фокус на другой элемент пользовательского интерфейса с помощью кода, можно указать, какой элемент пользовательского интерфейса сначала получает фокус при загрузке экрана, задав `PreferredFocusedView` свойству значение `true` . Например.
 
 ```csharp
 // Make the play button the starting focus item
@@ -134,7 +134,7 @@ playButton.PreferredFocusedView = true;
 
 Рассмотрим следующий макет пользовательского интерфейса в качестве примера:
 
- [![](navigation-focus-images/guide01.png "Working with Focus Guides example")](navigation-focus-images/guide01.png#lightbox)
+ [![Пример работы с направляющими фокуса](navigation-focus-images/guide01.png)](navigation-focus-images/guide01.png#lightbox)
 
 Так как кнопка " **больше информации** " не находится на горизонтальной и вертикальной сетке с кнопкой " **купить** ", она будет недоступна пользователю. Тем не менее это можно легко исправить с помощью _фокусирования_ , чтобы предоставить подсказки о перемещении обработчику фокуса. 
 
@@ -164,9 +164,9 @@ public override void ViewDidLoad ()
 
 Сначала создается новый объект, `UIFocusGuide` который добавляется в коллекцию руководств по макету представления с помощью `AddLayoutGuide` метода.
 
-Далее все привязки верхнего, левого, ширины и высоты корректируются относительно **дополнительных сведений** и кнопок **покупки** для их позиционирования. Пример
+Далее все привязки верхнего, левого, ширины и высоты корректируются относительно **дополнительных сведений** и кнопок **покупки** для их позиционирования. См.
 
-[![](navigation-focus-images/guide02.png "Example Focus Guide")](navigation-focus-images/guide02.png#lightbox)
+[![Пример указания фокуса](navigation-focus-images/guide02.png)](navigation-focus-images/guide02.png#lightbox)
 
 Также важно отметить, что новые ограничения активируются при их создании, задав `Active` для их свойства значение `true` :
 
@@ -204,7 +204,7 @@ public override void DidUpdateFocus (UIFocusUpdateContext context, UIFocusAnimat
 
 Во-первых, этот код получает `NextFocusedView` из объекта `UIFocusUpdateContext` , переданного в ( `context` ). Если это представление имеет значение `null` , обработка не требуется и метод завершает работу.
 
-Далее `nextFocusableItem` вычисляется. Если он совпадает с кнопками " **больше информации** " или " **купить** ", фокус передается обратной кнопке с помощью свойства "Focus Guide" `PreferredFocusedView` . Пример.
+Далее `nextFocusableItem` вычисляется. Если он совпадает с кнопками " **больше информации** " или " **купить** ", фокус передается обратной кнопке с помощью свойства "Focus Guide" `PreferredFocusedView` . Например.
 
 ```csharp
 // Move from the More Info to Buy button
@@ -222,7 +222,7 @@ FocusGuide.PreferredFocusedView = null;
 
 ### <a name="working-with-focus-in-collections"></a>Работа с фокусом в коллекциях
 
-При принятии решения о том, может ли отдельный элемент быть доступен в `UICollectionView` или `UITableView` , вы переопределяете методы `UICollectionViewDelegate` или `UITableViewDelegate` соответственно. Пример.
+При принятии решения о том, может ли отдельный элемент быть доступен в `UICollectionView` или `UITableView` , вы переопределяете методы `UICollectionViewDelegate` или `UITableViewDelegate` соответственно. Например.
 
 ```csharp
 public class CardHandDelegate : UICollectionViewDelegateFlowLayout

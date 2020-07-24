@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: 45b7c1081571b52bb8760b4207e3a05a4ffa77ae
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: fb63568adee9e89d08a0fc64168c865eeb271f10
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572316"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86928891"
 ---
 # <a name="in-app-purchase-basics-and-configuration-in-xamarinios"></a>Основные сведения о приобретении в приложении и конфигурации в Xamarin. iOS
 
 Для реализации покупок из приложения приложение должно использовать API StoreKit на устройстве. StoreKit управляет обменом данными с серверами iTunes Apple для получения сведений о продукте и выполнения транзакций. Профиль подготовки должен быть настроен для покупки в приложении, а сведения о продукте должны быть указаны в iTunes Connect.
 
- [![](in-app-purchase-basics-and-configuration-images/image1.png "StoreKit manages all communication with Apple’s as shown in this chart")](in-app-purchase-basics-and-configuration-images/image1.png#lightbox)
+ [![StoreKit управляет всем обменом данными с Apple, как показано на этой диаграмме](in-app-purchase-basics-and-configuration-images/image1.png)](in-app-purchase-basics-and-configuration-images/image1.png#lightbox)
 
 Для обеспечения покупки в приложении с помощью магазина приложений необходимо выполнить следующие действия по установке и настройке.
 
@@ -57,11 +57,11 @@ ms.locfileid: "84572316"
 
 Создание и распространение бесплатных приложений требует очень малой настройки в [iTunes Connect](https://itunesconnect.apple.com), однако для продажи платных приложений или покупок в приложении необходимо предоставить Apple сведения о банковской и налогообложении. В главном меню, показанном здесь **, щелкните соглашения, налоговые и банковские** операции:
 
- [![](in-app-purchase-basics-and-configuration-images/image2.png "Click on Agreements, Tax and Banking from the main menu")](in-app-purchase-basics-and-configuration-images/image2.png#lightbox)
+ [![Щелкните "соглашения", "налоги" и "банковские операции" в главном меню](in-app-purchase-basics-and-configuration-images/image2.png)](in-app-purchase-basics-and-configuration-images/image2.png#lightbox)
 
 В учетной записи разработчика должен действовать контракт на **оплату приложений iOS** , как показано на следующем снимке экрана:
 
- [![](in-app-purchase-basics-and-configuration-images/image3.png "Your Developer Account should have an iOS Paid Applications contract in effect")](in-app-purchase-basics-and-configuration-images/image3.png#lightbox)
+ [![В учетной записи разработчика должен действовать контракт на оплату приложений iOS](in-app-purchase-basics-and-configuration-images/image3.png)](in-app-purchase-basics-and-configuration-images/image3.png#lightbox)
 
 Вы не сможете протестировать какие-либо функции StoreKit, пока у вас не будет контракта с **платными приложениями iOS** — StoreKit вызовы в коде будут завершаться сбоем до тех пор, пока компания Apple не обработала свои **контракты, налоговые и банковские** сведения.
 
@@ -73,7 +73,7 @@ ms.locfileid: "84572316"
 
  выглядит следующим образом:
 
- [![](in-app-purchase-basics-and-configuration-images/image4.png "The form for creating new App IDs")](in-app-purchase-basics-and-configuration-images/image4.png#lightbox)
+ [![Форма для создания новых идентификаторов приложений](in-app-purchase-basics-and-configuration-images/image4.png)](in-app-purchase-basics-and-configuration-images/image4.png#lightbox)
 
 Введите что-нибудь подходящее для *описания*, чтобы идентификатор приложения можно было легко найти в списке. В качестве *префикса идентификатора приложения*выберите идентификатор группы.
 
@@ -88,7 +88,7 @@ ms.locfileid: "84572316"
 
 Обратите внимание, что **Покупка в приложении** будет автоматически включена в списке служб:
 
- [![](in-app-purchase-basics-and-configuration-images/image5.png "In-App Purchase will be automatically enabled in the Services list")](in-app-purchase-basics-and-configuration-images/image5.png#lightbox)
+ [![Покупка в приложении будет автоматически включена в списке "службы".](in-app-purchase-basics-and-configuration-images/image5.png)](in-app-purchase-basics-and-configuration-images/image5.png#lightbox)
 
 #### <a name="provisioning-profiles"></a>Профили подготовки
 
@@ -98,16 +98,16 @@ ms.locfileid: "84572316"
 
 Щелкните **Мои приложения** в iTunes Connect, чтобы создать или изменить запись приложения iOS. Страница "Обзор приложения" показана здесь:
 
- [![](in-app-purchase-basics-and-configuration-images/image6.png "The application overview page")](in-app-purchase-basics-and-configuration-images/image6.png#lightbox)
+ [![Страница "Обзор приложения"](in-app-purchase-basics-and-configuration-images/image6.png)](in-app-purchase-basics-and-configuration-images/image6.png#lightbox)
 
 Щелкните **покупки в приложении** , чтобы создать или изменить продукты для продажи. На этом снимке экрана показан пример приложения, в котором уже добавлено несколько продуктов:
 
- [![](in-app-purchase-basics-and-configuration-images/image7.png "The sample app with several products already added")](in-app-purchase-basics-and-configuration-images/image7.png#lightbox)
+ [![Пример приложения, в котором уже добавлено несколько продуктов](in-app-purchase-basics-and-configuration-images/image7.png)](in-app-purchase-basics-and-configuration-images/image7.png#lightbox)
 
 Процесс добавления новых продуктов выполняется в два этапа:
 
-1. Выберите тип продукта:[![](in-app-purchase-basics-and-configuration-images/image8.png "Выбор типа продукта")](in-app-purchase-basics-and-configuration-images/image8.png#lightbox) 
-2. Введите атрибуты продукта, включая идентификатор продукта, ценовую категорию и локализованные описания:[![](in-app-purchase-basics-and-configuration-images/image9.png "Ввод атрибутов продуктов")](in-app-purchase-basics-and-configuration-images/image9.png#lightbox)
+1. Выберите тип продукта: [ ![ выберите тип продукта](in-app-purchase-basics-and-configuration-images/image8.png)](in-app-purchase-basics-and-configuration-images/image8.png#lightbox) 
+2. Введите атрибуты продукта, включая идентификатор продукта, ценовую категорию и локализованные описания: [ ![ ввод атрибутов продуктов](in-app-purchase-basics-and-configuration-images/image9.png)](in-app-purchase-basics-and-configuration-images/image9.png#lightbox) .
 
 Ниже описаны поля, необходимые для каждого продукта покупки в приложении.
 
@@ -154,13 +154,13 @@ com.xamarin.storekit.testing.greyscale
 
 Компания Apple предоставляет ценовую матрицу, помогающую выбрать нужный уровень для нужной валюты или цены. Выдержка из матрицы цен (2012 августа) показана здесь:
 
- [![](in-app-purchase-basics-and-configuration-images/image10.png "An excerpt of the price matrix August 2012")](in-app-purchase-basics-and-configuration-images/image10.png#lightbox)
+ [![Выдержка из матрицы цен 2012 августа](in-app-purchase-basics-and-configuration-images/image10.png)](in-app-purchase-basics-and-configuration-images/image10.png#lightbox)
 
 На момент написания статьи (Июнь 2013) имеется 87 уровней от USD 0,99 до USD 999,99. В матрице ценообразования показана Цена, на которую клиенты будут оплачиваться, а также сумма, которую вы получаете от Apple. это меньше 30% оплаты, а также всех местных налогов, которые необходимо составлять (Обратите внимание в примере, в котором США и Канада продавцов получают 70C для продукта 99C, а Австралии продавцов — только 63c из-за &amp; цены на цену продажи).
 
 Цены на продукт можно обновить в любое время, включая запланированные изменения цен, которые вступают в силу в будущем. На этом снимке экрана показано, как добавляется изменение цены в будущем — цена временно изменяется с уровня 1 на уровень 3 в месяц только для сентября:
 
- [![](in-app-purchase-basics-and-configuration-images/image11.png "A future-dated price change where the price is being temporarily changed from tier 1 to tier 3 for the month of September only")](in-app-purchase-basics-and-configuration-images/image11.png#lightbox)
+ [![Изменение цены, принятой в будущем, при изменении цены с уровня 1 на уровень 3 для месяца сентября](in-app-purchase-basics-and-configuration-images/image11.png)](in-app-purchase-basics-and-configuration-images/image11.png#lightbox)
 
 ### <a name="free-products-not-supported"></a>Бесплатные продукты не поддерживаются
 
@@ -170,7 +170,7 @@ com.xamarin.storekit.testing.greyscale
 
 В iTunes Connect можно ввести разные имена и описания для любого числа поддерживаемых языков. Каждый язык можно добавить или изменить в с помощью всплывающего окна:
 
- [![](in-app-purchase-basics-and-configuration-images/image12.png "Each language can be added/edited in via a popup")](in-app-purchase-basics-and-configuration-images/image12.png#lightbox)   
+ [![Каждый язык можно добавить или изменить в через всплывающее окно.](in-app-purchase-basics-and-configuration-images/image12.png)](in-app-purchase-basics-and-configuration-images/image12.png#lightbox)   
 
 При отображении в приложении сведений о продукте локализованный текст доступен для просмотра через StoreKit. Отображение валюты также должно быть локализовано для отображения правильного формата символов и десятичного форматирования — это форматирование рассматривается далее в документе.
 
@@ -180,7 +180,7 @@ com.xamarin.storekit.testing.greyscale
 
 При первой отправке приложения с включенной покупкой в приложении (если это новое приложение или функция добавлена к существующей) необходимо также выбрать некоторые продукты для отправки вместе с ним. На портале iTunes Connect будет предложено сделать это, как показано на следующем снимке экрана:
 
- [![](in-app-purchase-basics-and-configuration-images/image13.png "The iTunes Connect portal will prompt you to submit some products as well")](in-app-purchase-basics-and-configuration-images/image13.png#lightbox)   
+ [![На портале iTunes Connect появится запрос на отправку некоторых продуктов.](in-app-purchase-basics-and-configuration-images/image13.png)](in-app-purchase-basics-and-configuration-images/image13.png#lightbox)   
 
 Приложение и покупка в приложении будут рассматриваться вместе, чтобы все они были утверждены одновременно (чтобы приложение не переходило в магазин без утвержденных продуктов!).
 

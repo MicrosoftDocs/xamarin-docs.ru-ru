@@ -10,12 +10,12 @@ ms.date: 10/01/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8478db85bd9904ee6c5cfeab9b2af390e7d3096d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e0c6e305287c97abac3500cba4771479b60381ac
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139507"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939806"
 ---
 # <a name="platform-specifics"></a>Особенности платформы
 
@@ -58,7 +58,7 @@ _Особенности платформы позволяют использов
 
 [Пример приложения](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shadowplatformspecific) демонстрирует `Shadow` конкретную платформу, которая добавляет тень к тексту, отображаемому [`Label`](xref:Xamarin.Forms.Label) элементом управления:
 
-![](images/screenshots.png "Shadow Platform-Specific")
+![Теневая платформа — зависит от платформы](images/screenshots.png)
 
 В [примере приложения](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shadowplatformspecific) `Shadow` для каждой платформы реализована конкретная платформа для простоты понимания. Тем не менее, помимо реализации влияния на конкретную платформу, реализация теневого класса в значительной степени идентична для каждой платформы. Поэтому в этом руководством рассматриваются реализация теневого класса и связанная с ней воздействие на одну платформу.
 

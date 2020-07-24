@@ -10,12 +10,12 @@ ms.date: 04/27/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 18cdeccbdff86a6b20aab4b33db259f1f06ee096
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 4cad46bdee1b49c316947bc56bdb69a3b9e9a270
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139598"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938220"
 ---
 # <a name="native-views-in-c"></a>Собственные представления в C\#
 
@@ -29,7 +29,7 @@ _На Xamarin.Forms страницы, созданные с помощью C#, �
 
 На следующих снимках экрана показаны представления для конкретной платформы, добавленные в Xamarin.Forms [`StackLayout`](xref:Xamarin.Forms.StackLayout) :
 
-[![](code-images/screenshots-sml.png "StackLayout Containing Platform-Specific Views")](code-images/screenshots.png#lightbox "StackLayout Containing Platform-Specific Views")
+[![StackLayout, содержащий представления для конкретной платформы](code-images/screenshots-sml.png)](code-images/screenshots.png#lightbox "StackLayout, содержащий представления для конкретной платформы")
 
 Возможность добавления в макет представлений для конкретной платформы Xamarin.Forms включена двумя методами расширения на каждой платформе:
 
@@ -132,7 +132,7 @@ stackLayout.Children.Add (customControl);
 
 Однако поскольку `CustomControl.SizeThatFits` Переопределение всегда возвращает высоту 150, представление будет отображаться с пустым пространством выше и ниже, как показано на следующем снимке экрана:
 
-![](code-images/ios-bad-measurement.png "iOS CustomControl with Bad SizeThatFits Implementation")
+![Ошибка customcontrol iOS с неправильной реализацией Сизесатфитс](code-images/ios-bad-measurement.png)
 
 Решением этой проблемы является предоставление `GetDesiredSizeDelegate` реализации, как показано в следующем примере кода:
 
@@ -163,7 +163,7 @@ stackLayout.Children.Add (customControl, FixSize);
 
 Это приводит к правильному отображению настраиваемого представления без пустого пространства выше и ниже, как показано на следующем снимке экрана:
 
-![](code-images/ios-good-measurement.png "iOS CustomControl with GetDesiredSize Override")
+![Ошибка customcontrol iOS с переопределением Жетдесиредсизе](code-images/ios-good-measurement.png)
 
 ### <a name="android"></a>Android
 
@@ -201,7 +201,7 @@ stackLayout.Children.Add (customControl);
 
 Однако поскольку `CustomControl.OnMeasure` Переопределение всегда возвращает половину запрошенной ширины, представление будет отображаться только в половину доступной ширины устройства, как показано на следующем снимке экрана:
 
-![](code-images/android-bad-measurement.png "Android CustomControl with Bad OnMeasure Implementation")
+![Android ошибка customcontrol с неправильной реализацией onmeasure](code-images/android-bad-measurement.png)
 
 Решением этой проблемы является предоставление `GetDesiredSizeDelegate` реализации, как показано в следующем примере кода:
 
@@ -230,7 +230,7 @@ stackLayout.Children.Add (customControl, FixSize);
 
 Это приведет к правильному отображению пользовательского представления, занимая ширину устройства, как показано на следующем снимке экрана:
 
-![](code-images/android-good-measurement.png "Android CustomControl with Custom GetDesiredSize Delegate")
+![Android ошибка customcontrol с настраиваемым делегатом Жетдесиредсизе](code-images/android-good-measurement.png)
 
 ### <a name="universal-windows-platform"></a>Универсальная платформа Windows
 
@@ -298,7 +298,7 @@ stackLayout.Children.Add(brokenControl);
 
 Однако поскольку `CustomControl.ArrangeOverride` Переопределение всегда возвращает половину запрошенной ширины, представление будет обрезано до половины доступной ширины устройства, как показано на следующем снимке экрана:
 
-![](code-images/winrt-bad-measurement.png "UWP CustomControl with Bad ArrangeOverride Implementation")
+![UWP ошибка customcontrol с неправильной реализацией ArrangeOverride](code-images/winrt-bad-measurement.png)
 
 Решением этой проблемы является предоставление `ArrangeOverrideDelegate` реализации при добавлении представления в [`StackLayout`](xref:Xamarin.Forms.StackLayout) , как показано в следующем примере кода:
 
@@ -317,7 +317,7 @@ stackLayout.Children.Add(fixedControl, arrangeOverrideDelegate: (renderer, final
 
 Этот метод использует ширину, предоставленную `CustomControl.ArrangeOverride` методом, но умножает его на два. Это приведет к правильному отображению пользовательского представления, занимая ширину устройства, как показано на следующем снимке экрана:
 
-![](code-images/winrt-good-measurement.png "UWP CustomControl with ArrangeOverride Delegate")
+![UWP ошибка customcontrol с делегатом ArrangeOverride](code-images/winrt-good-measurement.png)
 
 ## <a name="summary"></a>Сводка
 

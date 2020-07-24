@@ -6,12 +6,12 @@ ms.assetid: 0060E9D1-C003-4E4C-ADE8-B406978FE891
 author: davidortinau
 ms.author: daortin
 ms.date: 10/27/2017
-ms.openlocfilehash: 5b4b4bdf85ec79a46a4e4c06504eb8b9b85af329
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 93c3f4dcb56710c72cdc61c25aa6481fbd27582e
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566961"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934918"
 ---
 # <a name="xamarin-profiler-troubleshooting"></a>Устранение неполадок Xamarin Profiler
 
@@ -43,11 +43,11 @@ ms.locfileid: "84566961"
 
 **Visual Studio для Mac**:
 
-![](troubleshooting-images/image17.png "Saving .mlpd file in Visual Studio for Mac")
+![Сохранение файла. MLPD в Visual Studio для Mac](troubleshooting-images/image17.png)
 
 **Visual Studio**:
 
-![](troubleshooting-images/image17-vs.png "Saving .mlpd file in Visual Studio")
+![Сохранение файла. MLPD в Visual Studio](troubleshooting-images/image17-vs.png)
 
 Важно отметить, что **. MLPD** содержит много информации, и размер файла будет большим.
 
@@ -73,7 +73,7 @@ ms.locfileid: "84566961"
 
 Если при использовании профилировщика в Visual Studio вы выпустили эту ошибку:
 
-![](troubleshooting-images/error.png "Error box when using the profiler in Visual Studio")
+![Поле "ошибка" при использовании профилировщика в Visual Studio](troubleshooting-images/error.png)
 
 Обычно это связано с невозможностью запуска симулятора или эмулятора. Попробуйте и запустите приложение обычным образом, исправьте возникающие проблемы и попытайтесь снова использовать профилировщик.
 

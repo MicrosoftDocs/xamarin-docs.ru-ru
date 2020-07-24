@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: a31b0bcf3a61b5a1ea7e84f35131e6ceca1eef82
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: f9f1b09c5cbd5660018e8e8d346aa1d25e51dab2
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569885"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937388"
 ---
 # <a name="working-with-tvos-segmented-controls-in-xamarin"></a>Работа с сегментированными элементами управления tvOS в Xamarin
 
 Сегментированный элемент управления предоставляет набор линейных элементов, каждый из которых может содержать значок или текст, и используется для предоставления пользователю набора связанных вариантов.
 
-[![](segmented-controls-images/segment01.png "Sample segment controls")](segmented-controls-images/segment01.png#lightbox)
+[![Элементы управления образцами сегментов](segmented-controls-images/segment01.png)](segmented-controls-images/segment01.png#lightbox)
 
 У Apple есть следующие рекомендации по работе с сегментированными элементами управления:
 
@@ -59,15 +59,15 @@ Apple предлагает следующие рекомендации по ра
 1. В **панель решения**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **элемент управления "сегмент** " из **панели элементов** и поместите его в представление: 
 
-    [![](segmented-controls-images/segment02.png "A Segment Control")](segmented-controls-images/segment02.png#lightbox)
+    [![Элемент управления "сегмент"](segmented-controls-images/segment02.png)](segmented-controls-images/segment02.png#lightbox)
 1. На **вкладке мини** -приложение панели **свойств**можно настроить несколько свойств элемента управления "сегмент", например его **стиль** и **состояние**: 
 
-    [![](segmented-controls-images/segment03.png "The Widget Tab")](segmented-controls-images/segment03.png#lightbox)
+    [![Вкладка мини-приложения](segmented-controls-images/segment03.png)](segmented-controls-images/segment03.png#lightbox)
 1. Используйте поле **сегменты** для управления количеством сегментов в контроллере.
 1. Выберите данный сегмент из **раскрывающегося списка сегмент** , чтобы настроить его отдельные свойства, такие как **заголовок** или **изображение** , а также управлять тем, **включен** или **выбран** данный сегмент при отображении элемента управления.
-1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Пример. 
+1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Например. 
 
-    [![](segmented-controls-images/segment04.png "Assign a Name")](segmented-controls-images/segment04.png#lightbox)
+    [![Назначение имени](segmented-controls-images/segment04.png)](segmented-controls-images/segment04.png#lightbox)
 1. Сохраните изменения.
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
@@ -75,15 +75,15 @@ Apple предлагает следующие рекомендации по ра
 1. В **Обозреватель решений**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Перетащите **элемент управления "сегмент** " из **панели элементов** и поместите его в представление: 
 
-    [![](segmented-controls-images/segment02-vs.png "A Segment Control")](segmented-controls-images/segment02-vs.png#lightbox)
+    [![Элемент управления "сегмент"](segmented-controls-images/segment02-vs.png)](segmented-controls-images/segment02-vs.png#lightbox)
 1. На **вкладке мини** -приложение **обозревателя свойств**можно настроить несколько свойств элемента управления "сегмент", например его **стиль** и **состояние**: 
 
-    [![](segmented-controls-images/segment03-vs.png "The Widget Tab")](segmented-controls-images/segment03-vs.png#lightbox)
+    [![Вкладка мини-приложения](segmented-controls-images/segment03-vs.png)](segmented-controls-images/segment03-vs.png#lightbox)
 1. Используйте поле **сегменты** для управления количеством сегментов в контроллере.
 1. Выберите данный сегмент из **раскрывающегося списка сегмент** , чтобы настроить его отдельные свойства, такие как **заголовок** или **изображение** , а также управлять тем, **включен** или **выбран** данный сегмент при отображении элемента управления.
-1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Пример. 
+1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Например. 
 
-    [![](segmented-controls-images/segment04-vs.png "Assign a Name")](segmented-controls-images/segment04-vs.png#lightbox)
+    [![Назначение имени](segmented-controls-images/segment04-vs.png)](segmented-controls-images/segment04-vs.png#lightbox)
 1. Сохраните изменения.
 
 -----
@@ -206,15 +206,15 @@ SegmentedControl.SetBackgroundImage (UIImage.FromFile("background.png"), UIContr
 
 Где `UIControlState` указывает состояние элемента управления, для которого задается изображение:
 
-- Нормальный
+- Норм.
 - Выделено
 - Выключено
-- Selected
+- Выбрано
 - Focused
 
 И `UIBarMetrics` указывает метрики для использования в качестве:
 
-- Значение по умолчанию
+- По умолчанию
 - Компактный
 - дефаултпромпт
 - компактпромпт

@@ -7,38 +7,38 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/25/2018
-ms.openlocfilehash: a881629c63ea2991b8ea4673811311076fcaabe9
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 08085877080c954142729e75e88235011c3a1324
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73028995"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997141"
 ---
-# <a name="user-interface"></a>Пользовательский интерфейс
+# <a name="user-interfaces-with-xamarinandroid"></a>Пользовательские интерфейсы с Xamarin. Android
 
 В следующих разделах объясняются различные средства и стандартные блоки, которые используются для создания пользовательских интерфейсов в приложениях Xamarin. Android.
 
-## <a name="android-designerandroiduser-interfaceandroid-designerindexmd"></a>[Android Designer](~/android/user-interface/android-designer/index.md)
+## <a name="android-designer"></a>[Android Designer](~/android/user-interface/android-designer/index.md)
 
 В этом разделе объясняется, как использовать Android Designer для визуального размещения элементов управления и изменения их свойств. В нем также объясняется, как использовать конструктор для работы с пользовательскими интерфейсами и ресурсами в различных конфигурациях, таких как темы, языки и конфигурации устройств, а также как разработать альтернативные представления, такие как Альбомная и книжная.
 
-## <a name="material-themeandroiduser-interfacematerial-thememd"></a>[Тема материала](~/android/user-interface/material-theme.md)
+## <a name="material-theme"></a>[Material Theme](~/android/user-interface/material-theme.md)
 
 *Тема «материал* » — это стиль пользовательского интерфейса, который определяет внешний вид представлений и действий в Android. Тема материалов встроена в Android, поэтому она используется системным ИНТЕРФЕЙСом и приложениями. В этом руководстве описываются принципы проектирования материалов и объясняется, как создать тему приложения с помощью встроенных или пользовательских тем.
 
-## <a name="user-profileandroiduser-interfaceuser-profilemd"></a>[Профиль пользователя](~/android/user-interface/user-profile.md)
+## <a name="user-profile"></a>[Профиль пользователя](~/android/user-interface/user-profile.md)
 
 В этом руководство объясняется, как получить доступ к личному профилю владельца устройства, включая контактные данные, такие как имя и номер телефона владельца устройства.
 
-## <a name="splash-screenandroiduser-interfacesplash-screenmd"></a>[Экран-заставка](~/android/user-interface/splash-screen.md)
+## <a name="splash-screen"></a>[Экран-заставка](~/android/user-interface/splash-screen.md)
 
 Запуск приложения Android занимает некоторое время, особенно при первом запуске приложения на устройстве. На экран-заставку может отображаться ход запуска для пользователя. В этом руководство объясняется, как создать экран-заставку для приложения.
 
-## <a name="layoutsandroiduser-interfacelayoutsindexmd"></a>[Макеты](~/android/user-interface/layouts/index.md)
+## <a name="layouts"></a>[Макеты](~/android/user-interface/layouts/index.md)
 
 Макеты используются для определения визуальной структуры пользовательского интерфейса.
-Такие макеты, как `ListView` и `RecyclerView`, являются наиболее фундаментальными стандартными блоками приложений Android. Как правило, макет будет использовать `Adapter` в качестве моста из макета к базовым данным, которые используются для заполнения элементов данных в макете. В этом разделе объясняется, как использовать макеты, такие как `LinearLayout`, `RelativeLayout`, `TableLayout`, `RecyclerView`и `GridView`.
+Такие макеты, как `ListView` и, `RecyclerView` являются наиболее фундаментальными строительными блоками приложений Android. Как правило, макет будет использовать, `Adapter` чтобы действовать как мост из макета к базовым данным, которые используются для заполнения элементов данных в макете. В этом разделе объясняется, как использовать макеты, такие как `LinearLayout` ,, `RelativeLayout` `TableLayout` , `RecyclerView` и `GridView` .
 
-## <a name="controlsandroiduser-interfacecontrolsindexmd"></a>[Элементы управления](~/android/user-interface/controls/index.md)
+## <a name="controls"></a>[Элементы управления](~/android/user-interface/controls/index.md)
 
 Элементы управления Android (также называемые *мини*-приложениями) — это элементы пользовательского интерфейса, используемые для создания пользовательского интерфейса. В этом разделе объясняется, как использовать такие элементы управления, как кнопки, панели инструментов, выборки даты и времени, календари, счетчики, переключатели, всплывающие меню, просмотр пейджеров и веб-представления.

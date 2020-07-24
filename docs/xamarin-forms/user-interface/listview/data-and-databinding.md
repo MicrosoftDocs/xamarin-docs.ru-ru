@@ -10,12 +10,12 @@ ms.date: 03/23/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 38a895c9064fc012aec35b37eac78bb16ff009a9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 1e5f3b6cb84081f5e167d9afe7e7f2f2dffce247
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84131512"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938116"
 ---
 # <a name="listview-data-sources"></a>Источники данных ListView
 
@@ -63,7 +63,7 @@ listView.ItemsSource = new string[]
 };
 ```
 
-![](data-and-databinding-images/itemssource-simple.png "ListView Displaying List of Strings")
+![ListView, отображающий список строк](data-and-databinding-images/itemssource-simple.png)
 
 Этот подход будет заполняться `ListView` списком строк. По умолчанию `ListView` будет вызывать `ToString` и отображать результат в `TextCell` каждой строке. Сведения о настройке отображения данных см. в разделе [внешний вид ячеек](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md).
 
@@ -144,7 +144,7 @@ public EmployeeListPage()
 
 В этом примере XAML определяется объект `ContentPage` , содержащий `ListView` . Источник данных для `ListView` задается с помощью атрибута `ItemsSource`. Макет каждой строки в `ItemsSource` определяется в элементе `ListView.ItemTemplate`. Это приводит к следующим снимкам экрана:
 
-![](data-and-databinding-images/bound-data.png "ListView using Data Binding")
+![ListView с использованием привязки данных](data-and-databinding-images/bound-data.png)
 
 > [!WARNING]
 > `ObservableCollection`Интерфейс  не является потокобезопасным. Изменение `ObservableCollection` приводит к тому, что обновления пользовательского интерфейса происходят в том же потоке, в котором были выполнены изменения. Если поток не является основным потоком пользовательского интерфейса, это вызовет исключение.

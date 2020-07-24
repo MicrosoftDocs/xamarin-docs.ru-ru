@@ -10,12 +10,12 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2dcabe3c0067734250834c2927fd4cbb83906943
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 5f5e6311c79a88a6018526a2e1c0c06065eefb32
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84128795"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929744"
 ---
 # <a name="navigationpage-bar-height-on-android"></a>Высота Навигатионпаже Bar на Android
 
@@ -51,7 +51,7 @@ public class AndroidNavigationPageCS : Xamarin.Forms.NavigationPage
 
 В результате высота панели навигации на [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) может быть задана следующим образом:
 
-![](navigationpage-bar-height-images/navigationpage-barheight.png "NavigationPage navigation bar height")
+![Высота панели навигации Навигатионпаже](navigationpage-bar-height-images/navigationpage-barheight.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 

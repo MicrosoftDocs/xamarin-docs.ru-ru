@@ -7,22 +7,22 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 83edaf46519790d9674b7b537fc424ddd7a09a1c
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 3822a03a78c91777ad9614ec298bbac1ab2332b1
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566153"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939481"
 ---
 # <a name="working-with-tvos-text-and-search-fields-in-xamarin"></a>Работа с tvOS текста и полями поиска в Xamarin
 
 При необходимости приложение Xamarin. tvOS может запрашивать от пользователя небольшие фрагменты текста (например, идентификаторы пользователей и пароли), используя текстовое поле и экранную клавиатуру:
 
-[![](text-fields-and-search-images/intro01.png "Sample Search Field")](text-fields-and-search-images/intro01.png#lightbox)
+[![Пример поля поиска](text-fields-and-search-images/intro01.png)](text-fields-and-search-images/intro01.png#lightbox)
 
 При необходимости можно указать возможность поиска по ключевым словам для содержимого приложения с помощью поля поиска:
 
-[![](text-fields-and-search-images/intro02.png "Sample Search Results")](text-fields-and-search-images/intro02.png#lightbox)
+[![Примеры результатов поиска](text-fields-and-search-images/intro02.png)](text-fields-and-search-images/intro02.png#lightbox)
 
 В этом документе рассматриваются сведения о работе с полями текста и поиска в приложении Xamarin. tvOS.
 
@@ -40,7 +40,7 @@ ms.locfileid: "84566153"
 
 В tvOS текстовое поле представляется как поле ввода с фиксированной высотой и круглым углом, которое выводит экранную клавиатуру при нажатии пользователем.
 
-[![](text-fields-and-search-images/text01.png "Text Fields In tvOS")](text-fields-and-search-images/text01.png#lightbox)
+[![Текстовые поля в tvOS](text-fields-and-search-images/text01.png)](text-fields-and-search-images/text01.png#lightbox)
 
 Когда пользователь перемещает [фокус](~/ios/tvos/app-fundamentals/navigation-focus.md) на заданное текстовое поле, его размер увеличивается и отображается глубокая тень. Это необходимо учитывать при проектировании пользовательского интерфейса, так как текстовые поля могут перекрывать другие элементы пользовательского интерфейса при наличии фокуса.
 
@@ -57,7 +57,7 @@ ms.locfileid: "84566153"
 
 Когда пользователь щелкает текстовое поле в пользовательском интерфейсе, отображается линейная экранная клавиатура. Пользователь использует сенсорную поверхность [Siri Remote](~/ios/tvos/platform/remote-bluetooth.md#The-Siri-Remote) для выбора отдельных букв с клавиатуры и ввода требуемой информации:
 
-[![](text-fields-and-search-images/keyboard01.png "The Siri Remote keyboard")](text-fields-and-search-images/keyboard01.png#lightbox)
+[![Удаленная клавиатура Siri](text-fields-and-search-images/keyboard01.png)](text-fields-and-search-images/keyboard01.png#lightbox)
 
 Если в текущем представлении имеется более одного текстового поля, будет автоматически отображена кнопка **Далее** , чтобы перейти к следующему текстовому полю. Кнопка **done (Готово** ) будет отображаться для последнего текстового поля, завершающего ввод текста и возвращающего пользователя на предыдущий экран.
 
@@ -76,7 +76,7 @@ ms.locfileid: "84566153"
 
 Поле поиска представляет собой специализированный экран, предоставляющий текстовое поле и экранную клавиатуру, позволяющие пользователю отфильтровать коллекцию элементов, отображаемых под клавиатурой:
 
-[![](text-fields-and-search-images/search01.png "Sample search results")](text-fields-and-search-images/search01.png#lightbox)
+[![Примеры результатов поиска](text-fields-and-search-images/search01.png)](text-fields-and-search-images/search01.png#lightbox)
 
 По мере того, как пользователь вводит буквы в поле поиска, приведенные ниже результаты будут автоматически отражать результаты поиска. Пользователь может в любое время переместить фокус на результаты и выбрать один из представленных элементов.
 
@@ -103,16 +103,16 @@ ms.locfileid: "84566153"
 1. В **панель решения**дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования.
 1. Перетащите одно или несколько **текстовых полей из поля** int в область конструктора в представление:
 
-    [![](text-fields-and-search-images/text02.png "A Text Field")](text-fields-and-search-images/text02.png#lightbox)
+    [![Текстовое поле](text-fields-and-search-images/text02.png)](text-fields-and-search-images/text02.png#lightbox)
 1. Выберите **текстовые поля** и присвойте каждому уникальному **имени** на вкладке **мини** -приложение **панель свойств**:
 
-    [![](text-fields-and-search-images/text03.png "The Widget tab of the Properties Pad")](text-fields-and-search-images/text03.png#lightbox)
+    [![Вкладка мини-приложения Панель свойств](text-fields-and-search-images/text03.png)](text-fields-and-search-images/text03.png#lightbox)
 1. В разделе **текстовое поле** можно определить такие элементы, как указание **заполнителя** и **значение**по умолчанию:
 
-    [![](text-fields-and-search-images/text04.png "The Text Field section")](text-fields-and-search-images/text04.png#lightbox)
+    [![Раздел текстового поля](text-fields-and-search-images/text04.png)](text-fields-and-search-images/text04.png#lightbox)
 1. Прокрутите вниз, чтобы определить такие свойства, как **Проверка орфографии**, **регистр букв** и **тип клавиатуры**по умолчанию:
 
-    [![](text-fields-and-search-images/text05.png "Spell Checking, Capitalization and the default Keyboard Type")](text-fields-and-search-images/text05.png#lightbox)
+    [![Проверка орфографии, регистр букв и тип клавиатуры по умолчанию](text-fields-and-search-images/text05.png)](text-fields-and-search-images/text05.png#lightbox)
 1. Сохраните изменения в раскадровке.
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
@@ -120,16 +120,16 @@ ms.locfileid: "84566153"
 1. В **обозревателе решений** дважды щелкните файл `Main.storyboard`, чтобы открыть его для редактирования.
 1. Перетащите одно или несколько **текстовых полей из поля** int в область конструктора в представление:
 
-    [![](text-fields-and-search-images/text02-vs.png "A Text Field")](text-fields-and-search-images/text02-vs.png#lightbox)
+    [![Текстовое поле](text-fields-and-search-images/text02-vs.png)](text-fields-and-search-images/text02-vs.png#lightbox)
 1. Выберите **текстовые поля** и присвойте каждому из них **уникальное имя** на вкладке **мини** -приложение **обозревателя свойств**:
 
-    [![](text-fields-and-search-images/text03-vs.png "The Widget tab")](text-fields-and-search-images/text03-vs.png#lightbox)
+    [![Вкладка мини-приложения](text-fields-and-search-images/text03-vs.png)](text-fields-and-search-images/text03-vs.png#lightbox)
 1. В разделе **текстовое поле** можно определить такие элементы, как указание **заполнителя** и **значение**по умолчанию:
 
-    [![](text-fields-and-search-images/text04-vs.png "The Text Field section")](text-fields-and-search-images/text04-vs.png#lightbox)
+    [![Раздел текстового поля](text-fields-and-search-images/text04-vs.png)](text-fields-and-search-images/text04-vs.png#lightbox)
 1. Прокрутите вниз, чтобы определить такие свойства, как **Проверка орфографии**, **регистр букв** и **тип клавиатуры**по умолчанию:
 
-    [![](text-fields-and-search-images/text05-vs.png "Spell Checking, Capitalization and the default Keyboard Type")](text-fields-and-search-images/text05-vs.png#lightbox)
+    [![Проверка орфографии, регистр букв и тип клавиатуры по умолчанию](text-fields-and-search-images/text05-vs.png)](text-fields-and-search-images/text05-vs.png#lightbox)
 1. Сохраните изменения в раскадровке.
 
 -----
@@ -155,17 +155,17 @@ Console.WriteLine ("User ID {0} and Password {1}", UserId.Text, Password.Text);
 1. В **панель решения**дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования.
 1. Перетащите новый контроллер представления коллекции в раскадровку для представления результатов поиска пользователя:
 
-    [![](text-fields-and-search-images/search02.png "A Collection View Controller")](text-fields-and-search-images/search02.png#lightbox)
+    [![Контроллер представления коллекции](text-fields-and-search-images/search02.png)](text-fields-and-search-images/search02.png#lightbox)
 1. На вкладке **мини** -приложение **панель свойств**используйте `SearchResultsViewController` для **класса** и `SearchResults` для **идентификатора раскадровки**:
 
-    [![](text-fields-and-search-images/search03.png "The Widget tab")](text-fields-and-search-images/search03.png#lightbox)
+    [![Вкладка мини-приложения](text-fields-and-search-images/search03.png)](text-fields-and-search-images/search03.png#lightbox)
 1. Выберите **прототип ячейки** в области конструктора.
 1. На вкладке **мини** -приложение **обозревателя свойств**используйте `SearchResultCell` для **класса** и `ImageCell` для **идентификатора**:
 
-    [![](text-fields-and-search-images/search04.png "The Widget tab")](text-fields-and-search-images/search04.png#lightbox)
+    [![Вкладка мини-приложения](text-fields-and-search-images/search04.png)](text-fields-and-search-images/search04.png#lightbox)
 1. Создайте макет для **прототипа ячейки** и предоставьте каждому элементу уникальное **имя** на вкладке **мини** -приложение **обозревателя свойств**:
 
-    [![](text-fields-and-search-images/search05.png "Layout the design of the Cell Prototype")](text-fields-and-search-images/search05.png#lightbox)
+    [![Создание макета прототипа ячейки](text-fields-and-search-images/search05.png)](text-fields-and-search-images/search05.png#lightbox)
 1. Сохраните изменения в раскадровке.
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
@@ -173,17 +173,17 @@ Console.WriteLine ("User ID {0} and Password {1}", UserId.Text, Password.Text);
 1. В **обозревателе решений** дважды щелкните файл `Main.storyboard`, чтобы открыть его для редактирования.
 1. Перетащите новый контроллер представления коллекции в раскадровку для представления результатов поиска пользователя:
 
-    [![](text-fields-and-search-images/seach02-vs.png "A Collection View Controller")](text-fields-and-search-images/seach02-vs.png#lightbox)
+    [![Контроллер представления коллекции](text-fields-and-search-images/seach02-vs.png)](text-fields-and-search-images/seach02-vs.png#lightbox)
 1. На вкладке **мини** -приложение **обозревателя свойств**используйте `SearchResultsViewController` для **класса** и `SearchResults` для **идентификатора раскадровки**:
 
-    [![](text-fields-and-search-images/search03-vs.png "The Widget tab")](text-fields-and-search-images/search03-vs.png#lightbox)
+    [![Вкладка мини-приложения](text-fields-and-search-images/search03-vs.png)](text-fields-and-search-images/search03-vs.png#lightbox)
 1. Выберите **прототип ячейки** в области конструктора.
 1. На вкладке **мини** -приложение **обозревателя свойств**используйте `SearchResultCell` для **класса** и `ImageCell` для **идентификатора**:
 
-    [![](text-fields-and-search-images/search04-vs.png "The Widget tab")](text-fields-and-search-images/search04-vs.png#lightbox)
+    [![Вкладка мини-приложения](text-fields-and-search-images/search04-vs.png)](text-fields-and-search-images/search04-vs.png#lightbox)
 1. Создайте макет для **прототипа ячейки** и предоставьте каждому элементу уникальное **имя** на вкладке **мини** -приложение **обозревателя свойств**:
 
-    [![](text-fields-and-search-images/search05-vs.png "Layout the design of the Cell Prototype")](text-fields-and-search-images/search05-vs.png#lightbox)
+    [![Создание макета прототипа ячейки](text-fields-and-search-images/search05-vs.png)](text-fields-and-search-images/search05-vs.png#lightbox)
 1. Сохраните изменения в раскадровке.
 
 -----
@@ -196,13 +196,13 @@ Console.WriteLine ("User ID {0} and Password {1}", UserId.Text, Password.Text);
 
 Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта и выберите **Добавить**  >  **новый файл...**  >  **Общие**  >  сведения **Пустой класс** и укажите **имя**:
 
-[![](text-fields-and-search-images/search06.png "Select Empty Class and provide a Name")](text-fields-and-search-images/search06.png#lightbox)
+[![Выберите пустой класс и укажите имя](text-fields-and-search-images/search06.png)](text-fields-and-search-images/search06.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта и выберите команду **Добавить**  >  **новый элемент...**  >  **Apple**  >  **Прочие**  >  **И укажите** **имя**:
 
-[![](text-fields-and-search-images/search06-vs.png "Select Class and provide a Name")](text-fields-and-search-images/search06-vs.png#lightbox)
+[![Выбор класса и указание имени](text-fields-and-search-images/search06-vs.png)](text-fields-and-search-images/search06-vs.png#lightbox)
 
 -----
 
@@ -770,11 +770,11 @@ public override void ViewDidAppear (bool animated)
 
 При запуске приложения и выборе пользователем вкладки поиска полный список неотфильтрованных элементов будет представлен пользователю:
 
-[![](text-fields-and-search-images/intro02.png "Default search results")](text-fields-and-search-images/intro02.png#lightbox)
+[![Результаты поиска по умолчанию](text-fields-and-search-images/intro02.png)](text-fields-and-search-images/intro02.png#lightbox)
 
 По мере того, как пользователь начинает вводить условие поиска, список результатов будет отфильтрован по этому термину и автоматически обновлен:
 
-[![](text-fields-and-search-images/intro03.png "Filtered search results")](text-fields-and-search-images/intro03.png#lightbox)
+[![Отфильтрованные результаты поиска](text-fields-and-search-images/intro03.png)](text-fields-and-search-images/intro03.png#lightbox)
 
 В любой момент времени пользователь может переключить фокус на элемент в результатах поиска и щелкнуть сенсорную поверхность Siri удаленно, чтобы выбрать ее.
 

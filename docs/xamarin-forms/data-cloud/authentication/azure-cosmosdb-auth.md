@@ -10,12 +10,12 @@ ms.date: 06/16/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7e1fb6342db4c97ea6946db366d356267c8c1b90
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 05547e960ba1ea141a830396f803dfc265283627
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84570561"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936465"
 ---
 # <a name="authenticate-users-with-an-azure-cosmos-db-document-database-and-xamarinforms"></a>Проверка подлинности пользователей с помощью Azure Cosmos DB базы данных документов иXamarin.Forms
 
@@ -36,7 +36,7 @@ _Базы данных документов Azure Cosmos DB поддержива
 
 Типичный подход к запросу, созданию и доставке маркеров ресурсов мобильному приложению — использование брокера маркера ресурса. На следующей схеме показан общий обзор того, как пример приложения использует брокер маркера ресурса для управления доступом к данным в базе данных документов.
 
-![](azure-cosmosdb-auth-images/documentdb-authentication.png "Document Database Authentication Process")
+![Документирование процесса проверки подлинности базы данных](azure-cosmosdb-auth-images/documentdb-authentication.png)
 
 Брокер маркера ресурса — это служба веб-API среднего уровня, размещенная в службе приложений Azure, которая владеет главным ключом учетной записи Cosmos DB. Пример приложения использует брокер маркера ресурса для управления доступом к данным базы данных документов следующим образом:
 
@@ -51,7 +51,7 @@ _Базы данных документов Azure Cosmos DB поддержива
 
 Дополнительные сведения о секционировании Cosmos DB см. [в разделе как секционировать и масштабировать в Azure Cosmos DB](/azure/cosmos-db/partition-data/). Дополнительные сведения об управлении доступом Cosmos DB см. в разделе [Защита доступа к Cosmos DB данных](/azure/cosmos-db/secure-access-to-data/) и [Управление доступом в API SQL](/rest/api/documentdb/access-control-on-documentdb-resources/).
 
-## <a name="setup"></a>Настройка
+## <a name="setup"></a>Установка
 
 Процесс интеграции брокера маркеров ресурсов в Xamarin.Forms приложение выглядит следующим образом:
 
@@ -85,7 +85,7 @@ _Базы данных документов Azure Cosmos DB поддержива
 
     Эта конфигурация показана на следующем снимке экрана:
 
-    [![](azure-cosmosdb-auth-images/azure-web-app-settings.png "App Service Web App Settings")](azure-cosmosdb-auth-images/azure-web-app-settings-large.png#lightbox "App Service Web App Settings")
+    [![Параметры веб-приложения службы приложений](azure-cosmosdb-auth-images/azure-web-app-settings.png)](azure-cosmosdb-auth-images/azure-web-app-settings-large.png#lightbox "Параметры веб-приложения службы приложений")
 
 1. Опубликуйте решение брокера маркеров ресурсов в веб-приложении службы приложений Azure.
 
@@ -102,7 +102,7 @@ _Базы данных документов Azure Cosmos DB поддержива
 
   Эта конфигурация показана на следующем снимке экрана:
 
-  ![](azure-cosmosdb-auth-images/facebook-oauth-settings.png "Facebook Login OAuth Settings")
+  ![Параметры OAuth для входа в Facebook](azure-cosmosdb-auth-images/facebook-oauth-settings.png)
 
 Дополнительные сведения см. в статье [Регистрация приложения в Facebook](/azure/app-service-mobile/app-service-mobile-how-to-configure-facebook-authentication#a-nameregister-aregister-your-application-with-facebook).
 
@@ -117,7 +117,7 @@ _Базы данных документов Azure Cosmos DB поддержива
 
     Эта конфигурация показана на следующем снимке экрана:
 
-    [![](azure-cosmosdb-auth-images/app-service-authentication-settings.png "App Service Web App Authentication Settings")](azure-cosmosdb-auth-images/app-service-authentication-settings-large.png#lightbox "App Service Web App Authentication Settings")
+    [![Параметры проверки подлинности веб-приложения службы приложений](azure-cosmosdb-auth-images/app-service-authentication-settings.png)](azure-cosmosdb-auth-images/app-service-authentication-settings-large.png#lightbox "Параметры проверки подлинности веб-приложения службы приложений")
 
 Веб-приложение службы приложений также должно быть настроено для взаимодействия с приложением Facebook, чтобы включить поток проверки подлинности. Это можно сделать, выбрав поставщик удостоверений Facebook и введя значения **идентификатора приложения** и **секрета приложения** из параметров приложения Facebook в центре разработчиков Facebook. Дополнительные сведения см. [в разделе Добавление сведений Facebook в приложение](/azure/app-service-mobile/app-service-mobile-how-to-configure-facebook-authentication#a-namesecrets-aadd-facebook-information-to-your-application).
 
@@ -144,7 +144,7 @@ var auth = new Xamarin.Auth.WebRedirectAuthenticator(
 
 Это приводит к инициации потока проверки подлинности OAuth между службой приложений Azure и Facebook, которая отображает страницу входа Facebook:
 
-![](azure-cosmosdb-auth-images/login.png "Facebook Login")
+![Имя входа Facebook](azure-cosmosdb-auth-images/login.png)
 
 Имя входа можно отменить, нажав кнопку **Отмена** в iOS или нажав кнопку **назад** на Android. в этом случае пользователь остается непроверенным и пользовательский интерфейс поставщика удостоверений удаляется с экрана.
 

@@ -10,16 +10,16 @@ ms.date: 06/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9c90b0ae4ae3d241dcd6d6d749f220dcfb683693
-ms.sourcegitcommit: 8f6cc5208f675c8cfb645bd9ffb0fc1f8ea71411
+ms.openlocfilehash: 628218f47f318aebe7e4d0ff30efdce9617eb2c6
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85326149"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937648"
 ---
 # <a name="xamarinforms-shapes-polygon"></a>Xamarin.FormsФигуры: многоугольник
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 

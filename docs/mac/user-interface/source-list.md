@@ -618,7 +618,7 @@ public override void DidFinishLaunching (NSNotification notification)
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье подробно рассматривается работа с исходными списками в приложении Xamarin. Mac. Мы узнали, как создавать и обслуживать списки источников в Interface Builder Xcode и как работать с исходными списками в коде C#.
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/15/2017
-ms.openlocfilehash: 116ae63619aa90defb25db31b959e36b8b44edf2
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 791ab82e0e5f47929eff561ac836ec87e6d6c134
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934736"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997323"
 ---
 # <a name="callkit-in-xamarinios"></a>Каллкит в Xamarin. iOS
 
@@ -635,7 +635,7 @@ Provider = new CXProvider (Configuration);
 Provider.SetDelegate (this, null);
 ```
 
-При использовании Каллкит приложение больше не будет создавать и обслуживать собственные звуковые сеансы, вместо этого потребуется настроить и использовать звуковой сеанс, который система создаст и обработает для нее. 
+При использовании Каллкит приложение больше не будет создавать и обслуживать собственные звуковые сеансы, вместо этого потребуется настроить и использовать звуковой сеанс, который система создаст и обработает для нее.
 
 Если это реальное приложение, `DidActivateAudioSession` метод будет использован для запуска вызова с предварительно настроенным объектом `AVAudioSession` , предоставленным системой:
 
@@ -697,7 +697,7 @@ namespace MonkeyCall
             // Found?
             if (handle == null) {
                 // No, report to system
-                Console.WriteLine ("Unable to get call handle from URL: {0}", url); 
+                Console.WriteLine ("Unable to get call handle from URL: {0}", url);
                 return false;
             } else {
                 // Yes, start call and inform system
@@ -820,7 +820,7 @@ public override void PerformAnswerCallAction (CXProvider provider, CXAnswerCallA
 
 Если пользователь желает завершить вызов из пользовательского интерфейса приложения, происходит следующее:
 
-[![](callkit-images/callkit07.png "The user terminates the call from within the app's UI")](callkit-images/callkit07.png#lightbox)
+[![Пользователь прерывает вызов в пользовательском интерфейсе приложения.](callkit-images/callkit07.png)](callkit-images/callkit07.png#lightbox)
 
 1. Приложение создает `CXEndCallAction` , которое входит в состав `CXTransaction` , который отправляется в систему, чтобы сообщить ему о завершении вызова.
 2. Система проверяет цель конечного вызова и отправляет `CXEndCallAction` обратно в приложение через `CXProvider` .
@@ -872,12 +872,12 @@ public override void PerformEndCallAction (CXProvider provider, CXEndCallAction 
 
 [![Получение цели вызова для начала](callkit-images/callkit08.png)](callkit-images/callkit08.png#lightbox)
 
-1. Приложение создаст _действие начать вызов_ на основе цели вызова Start, полученной от системы. 
+1. Приложение создаст _действие начать вызов_ на основе цели вызова Start, полученной от системы.
 2. Приложение будет использовать `CXCallController` для запроса действия "начать вызов" из системы.
 3. Если система принимает действие, оно будет возвращено приложению через `XCProvider` делегат.
 4. Приложение запускает исходящий вызов со своей сетью связи.
 
-Дополнительные сведения о целях см. в документации по [расширениям пользовательского интерфейса для целей и](~/ios/platform/sirikit/understanding-sirikit.md) целей. 
+Дополнительные сведения о целях см. в документации по [расширениям пользовательского интерфейса для целей и](~/ios/platform/sirikit/understanding-sirikit.md) целей.
 
 ### <a name="the-outgoing-call-lifecycle"></a>Жизненный цикл исходящего вызова
 
@@ -1025,7 +1025,7 @@ public void EndCall (ActiveCall call)
 }
 ```
 
-Если создает объект `CXEndCallAction` с UUID вызова End, объединяет его в объект `CXTransaction` , который отправляется в систему с помощью `RequestTransaction` метода `CXCallController` класса. 
+Если создает объект `CXEndCallAction` с UUID вызова End, объединяет его в объект `CXTransaction` , который отправляется в систему с помощью `RequestTransaction` метода `CXCallController` класса.
 
 ## <a name="additional-callkit-details"></a>Дополнительные сведения о Каллкит
 
@@ -1044,11 +1044,11 @@ public void EndCall (ActiveCall call)
 
 - Отображение локализованного имени.
 - Включить поддержку видеовызовов.
-- Настройте кнопки в пользовательском интерфейсе, выполнив собственный значок изображения шаблона. Взаимодействие с пользователем с пользовательскими кнопками отправляется непосредственно в приложение для обработки. 
+- Настройте кнопки в пользовательском интерфейсе, выполнив собственный значок изображения шаблона. Взаимодействие с пользователем с пользовательскими кнопками отправляется непосредственно в приложение для обработки.
 
 ### <a name="action-errors"></a>Ошибки действий
 
-приложения для iOS 10 VOIP, использующие Каллкит, нуждаются в некорректной обработке действий и постоянно сообщают пользователю о состоянии действия. 
+приложения для iOS 10 VOIP, использующие Каллкит, нуждаются в некорректной обработке действий и постоянно сообщают пользователю о состоянии действия.
 
 Примите во внимание следующий пример:
 
@@ -1082,7 +1082,7 @@ public class ProviderDelegate : CXProviderDelegate
         // Create update to describe the incoming call and caller
         var update = new CXCallUpdate ();
         update.RemoteHandle = new CXHandle (CXHandleType.Generic, handle);
-    
+
         // Report incoming call to system
         Provider.ReportNewIncomingCall (uuid, update, (error) => {
             // Was the call accepted
@@ -1134,21 +1134,21 @@ public class ProviderDelegate : CXProviderDelegate
 
 1. Откройте решение приложения в Visual Studio для Mac.
 2. Щелкните правой кнопкой мыши имя решения в **Обозреватель решений** и выберите **Добавить**  >  **Добавить новый проект**.
-3. Выберите **iOS**  >  **расширения**iOS  >  **расширения каталога** и нажмите кнопку **Далее** : 
+3. Выберите **iOS**  >  **расширения**iOS  >  **расширения каталога** и нажмите кнопку **Далее** :
 
     [![Создание нового расширения каталога вызовов](callkit-images/calldir01.png)](callkit-images/calldir01.png#lightbox)
-4. Введите **имя** для расширения и нажмите кнопку **Далее** : 
+4. Введите **имя** для расширения и нажмите кнопку **Далее** :
 
     [![Ввод имени для расширения](callkit-images/calldir02.png)](callkit-images/calldir02.png#lightbox)
-5. При необходимости измените **имя проекта** или **имя решения** , а затем нажмите кнопку **создать** : 
+5. При необходимости измените **имя проекта** или **имя решения** , а затем нажмите кнопку **создать** :
 
-    [![Создание проекта](callkit-images/calldir03.png)](callkit-images/calldir03.png#lightbox) 
+    [![Создание проекта](callkit-images/calldir03.png)](callkit-images/calldir03.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 1. Откройте решение приложения в Visual Studio.
 2. Щелкните правой кнопкой мыши имя решения в **Обозреватель решений** и выберите **Добавить**  >  **Добавить новый проект**.
-3. Выберите **iOS**  >  **расширения**iOS  >  **расширения каталога** и нажмите кнопку **Далее** : 
+3. Выберите **iOS**  >  **расширения**iOS  >  **расширения каталога** и нажмите кнопку **Далее** :
 
     [![Создание нового расширения каталога вызовов](callkit-images/calldir01w.png)](callkit-images/calldir01.png#lightbox)
 4. Введите **имя** расширения и нажмите кнопку " **ОК** ".
@@ -1255,7 +1255,7 @@ namespace MonkeyCallDirExtension
 
 Чтобы сообщить приложению о контактных номерах, известном для приложения VOIP, используйте `AddIdentificationEntry` метод `CXCallDirectoryExtensionContext` класса и укажите число и идентифицирующую метку. Опять же, числа, предоставленные методу, _должны_ быть отсортированы по возрастанию. Для оптимальной производительности и использования памяти при наличии большого числа телефонных номеров рассмотрите возможность загрузки подмножества чисел в заданный момент времени и использования пулов автоосвобождения для освобождения объектов, выделенных во время каждого пакета загружаемых пакетов.
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье рассматривается новый API Каллкит, выпущенный компанией Apple в iOS 10, и способы его реализации в приложениях VOIP для Xamarin. iOS. В нем показано, как Каллкит позволяет интегрировать приложение в систему iOS, а также предоставляет возможность учитывать соответствие функций встроенным приложениям (например, телефону) и тем, как она увеличивает видимость приложения в iOS в таких местах, как блокировки и домашние экраны, через Siriные взаимодействия и через приложения контактов.
 

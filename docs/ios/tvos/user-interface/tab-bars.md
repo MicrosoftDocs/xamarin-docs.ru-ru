@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 0e6edaccb9e0c163ee46c59ed11769476037aa90
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: a462e3adf4109cc9a7a2e17e775609e2c3c81906
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573551"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938883"
 ---
 # <a name="working-with-tvos-tab-bar-controllers-in-xamarin"></a>Работа с контроллерами панели вкладок tvOS в Xamarin
 
 Для многих типов приложений tvOS Основная навигация представлена в виде панели вкладок, работающей в верхней части экрана. Пользователь переходит влево и вправо по списку возможных категорий и области содержимого под изменениями, чтобы отразить выбор пользователя.
 
-[![](tab-bars-images/tab01.png "Sample Tab Bar")](tab-bars-images/tab01.png#lightbox)
+[![Образец панели вкладок](tab-bars-images/tab01.png)](tab-bars-images/tab01.png#lightbox)
 
 Панель вкладок по умолчанию прозрачна и всегда отображается в верхней части экрана. В фокусе панель вкладок будет охватывать первые 140 пикселей экрана, но быстро пропустить, когда фокус переместится на область содержимого ниже.
 
@@ -62,22 +62,22 @@ ms.locfileid: "84573551"
 
 1. Запустите новое приложение Xamarin. tvOS и выберите приложение **tvOS**с  >  **App**  >  **вкладками**: 
 
-    [![](tab-bars-images/tab02.png "Select Tabbed App")](tab-bars-images/tab02.png#lightbox)
+    [![Выбор приложения с вкладками](tab-bars-images/tab02.png)](tab-bars-images/tab02.png#lightbox)
 1. Следуйте всем запросам, чтобы создать новое решение Xamarin. tvOS.
 1. В **панель решения**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Чтобы изменить **значок** или **заголовок** для данной категории, выберите **элемент панели вкладок** для **контроллера представления** в разделе **Структура документа**:
 
-    [![](tab-bars-images/tab03a.png "The Tab Bar Item for the View Controller in the Document Outline")](tab-bars-images/tab03a.png#lightbox)
+    [![Элемент панели вкладок для контроллера представления в структуре документа](tab-bars-images/tab03a.png)](tab-bars-images/tab03a.png#lightbox)
 1. Затем задайте необходимые свойства на **вкладке мини** -приложение **обозревателя свойств**. 
 
-    [![](tab-bars-images/tab03.png "The Widget Tab")](tab-bars-images/tab03.png#lightbox)
+    [![Вкладка мини-приложения](tab-bars-images/tab03.png)](tab-bars-images/tab03.png#lightbox)
 1. Чтобы добавить новую категорию (вкладку), перетащите **контроллер представления** в область конструктора: 
 
-    [![](tab-bars-images/tab04.png "A View Controller")](tab-bars-images/tab04.png#lightbox)
+    [![Контроллер представления](tab-bars-images/tab04.png)](tab-bars-images/tab04.png#lightbox)
 1. Щелкните элемент управления и перетащите его из **контроллера представления вкладок** в новый **контроллер представления**.
 1. В контекстном меню выберите **вид контроллеры** , чтобы добавить новое представление в виде вкладки (категория): 
 
-    [![](tab-bars-images/tab05.png "Select Tab")](tab-bars-images/tab05.png#lightbox)
+    [![Выбор вкладки](tab-bars-images/tab05.png)](tab-bars-images/tab05.png#lightbox)
 1. Разработайте макет пользовательского интерфейса для каждой области содержимого Катерогиес обычным образом, добавив элементы пользовательского интерфейса в конструктор iOS.
 1. Предоставьте все необходимые события для работы с элементами управления пользовательского интерфейса в коде C#.
 1. Назовите все элементы управления пользовательского интерфейса, которые необходимо предоставить в коде C#.
@@ -87,22 +87,22 @@ ms.locfileid: "84573551"
 
 1. Запустите новое приложение Xamarin. tvOS и выберите приложение **tvOS**с  >  **App**  >  **вкладками**: 
 
-    [![](tab-bars-images/tab02vs.png "Select Tabbed App")](tab-bars-images/tab02vs.png#lightbox)
+    [![Выбор приложения с вкладками](tab-bars-images/tab02vs.png)](tab-bars-images/tab02vs.png#lightbox)
 1. Следуйте всем запросам, чтобы создать новое решение Xamarin. tvOS.
 1. В **Обозреватель решений**дважды щелкните `Main.storyboard` файл и откройте его для редактирования.
 1. Чтобы изменить **значок** или **заголовок** для данной категории, выберите **элемент панели вкладок** для **контроллера представления** в разделе **Структура документа**:
 
-    [![](tab-bars-images/tab03avs.png "The View Controller in the Document Outline")](tab-bars-images/tab03avs.png#lightbox)
+    [![Контроллер представления в структуре документа](tab-bars-images/tab03avs.png)](tab-bars-images/tab03avs.png#lightbox)
 1. Затем задайте необходимые свойства на **вкладке мини** -приложение **обозревателя свойств**. 
 
-    [![](tab-bars-images/tab03vs.png "The Widget Tab")](tab-bars-images/tab03vs.png#lightbox)
+    [![Вкладка мини-приложения](tab-bars-images/tab03vs.png)](tab-bars-images/tab03vs.png#lightbox)
 1. Чтобы добавить новую категорию (вкладку), перетащите **контроллер представления** из **панели элементов** и поместите его в область конструктора: 
 
-    [![](tab-bars-images/tab04vs.png "A View Controller")](tab-bars-images/tab04vs.png#lightbox)
+    [![Контроллер представления](tab-bars-images/tab04vs.png)](tab-bars-images/tab04vs.png#lightbox)
 1. Щелкните элемент управления и перетащите его из **контроллера представления вкладок** в новый **контроллер представления**.
 1. В контекстном меню выберите **вид контроллеры** , чтобы добавить новое представление в виде вкладки (категория): 
 
-    [![](tab-bars-images/tab05vs.png "Select Tab")](tab-bars-images/tab05vs.png#lightbox)
+    [![Выбор вкладки](tab-bars-images/tab05vs.png)](tab-bars-images/tab05vs.png#lightbox)
 1. Разработайте макет пользовательского интерфейса для каждой области содержимого Катерогиес обычным образом, добавив элементы пользовательского интерфейса в конструктор iOS.
 1. Предоставьте все необходимые события для работы с элементами управления пользовательского интерфейса в коде C#.
 1. Назовите все элементы управления пользовательского интерфейса, которые необходимо предоставить в коде C#.
@@ -134,7 +134,7 @@ TabBar.Items [2].BadgeValue = "10";
 
 При выполнении этого действия будут получены следующие результаты:
 
-[![](tab-bars-images/tab06.png "A Tab Bar Item with badge")](tab-bars-images/tab06.png#lightbox)
+[![Элемент панели вкладок с эмблемой](tab-bars-images/tab06.png)](tab-bars-images/tab06.png#lightbox)
 
 Используйте `Title` свойство объекта, `UITabBarItem` чтобы изменить заголовок и `Image` свойство, чтобы изменить значок.
 

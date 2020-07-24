@@ -19,7 +19,7 @@ ms.locfileid: "86936322"
 ---
 # <a name="entry-font-size-on-ios"></a>Размер шрифта записи в iOS
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS предназначена для масштабирования размера шрифта, [`Entry`](xref:Xamarin.Forms.Entry) чтобы гарантировать, что выводимый текст умещается в элемент управления. Он используется в XAML путем присвоения [`Entry.AdjustsFontSizeToFitWidth`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Entry.AdjustsFontSizeToFitWidthProperty) свойству присоединенного свойства `boolean` значения:
 

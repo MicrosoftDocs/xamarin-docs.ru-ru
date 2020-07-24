@@ -19,7 +19,7 @@ ms.locfileid: "86936829"
 ---
 # <a name="page-status-bar-visibility-on-ios"></a>Видимость строки состояния страницы в iOS
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS предназначена для настройки видимости строки состояния в [`Page`](xref:Xamarin.Forms.Page) , а также позволяет управлять отображением или выходом строки состояния `Page` . Он используется в XAML путем задания `Page.PrefersStatusBarHidden` для присоединенного свойства значения `StatusBarHiddenMode` перечисления, а также при необходимости `Page.PreferredStatusBarUpdateAnimation` присоединенного свойства к значению `UIStatusBarAnimation` перечисления:
 

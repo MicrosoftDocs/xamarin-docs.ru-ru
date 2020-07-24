@@ -10,12 +10,12 @@ ms.date: 12/13/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c7fdecdb0ce209c88dbe9e6f4e6e6588ec4fd3fd
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: be8dd5d29aebf29395885d650fbd28082013d0d1
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139923"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929168"
 ---
 # <a name="listview-appearance"></a>Внешний вид ListView
 
@@ -114,7 +114,7 @@ static PageTypeGroup()
 
 На следующем снимке экрана показан итоговый пользовательский интерфейс:
 
-![](customizing-list-appearance-images/grouping-depth.png "ListView Grouping Example")
+![Пример группировки ListView](customizing-list-appearance-images/grouping-depth.png)
 
 ### <a name="customizing-grouping"></a>Настройка группирования
 
@@ -183,7 +183,7 @@ ListView HeaderList = new ListView()
 </ListView>
 ```
 
-![](customizing-list-appearance-images/header-default.png "ListView with Header and Footer")
+![ListView с верхним и нижним колонтитулами](customizing-list-appearance-images/header-default.png)
 
 Чтобы создать настраиваемый верхний и нижний колонтитулы, определите представления верхнего и нижнего колонтитулов.
 
@@ -204,7 +204,7 @@ ListView HeaderList = new ListView()
 </ListView.Footer>
 ```
 
-![](customizing-list-appearance-images/header-custom.png "ListView with Customized Header and Footer")
+![ListView с настроенным верхним и нижним колонтитулами](customizing-list-appearance-images/header-custom.png)
 
 ## <a name="scrollbar-visibility"></a>Видимость полосы прокрутки
 
@@ -235,7 +235,7 @@ SeparatorDemoListView.SeparatorVisibility = SeparatorVisibility.Default;
 <ListView x:Name="SeparatorDemoListView" SeparatorVisibility="Default" />
 ```
 
-![](customizing-list-appearance-images/separator-default.png "ListView with Default Row Separators")
+![ListView с разделителями строк по умолчанию](customizing-list-appearance-images/separator-default.png)
 
 Нет.
 
@@ -251,7 +251,7 @@ SeparatorDemoListView.SeparatorVisibility = SeparatorVisibility.None;
 <ListView x:Name="SeparatorDemoListView" SeparatorVisibility="None" />
 ```
 
-![](customizing-list-appearance-images/separator-none.png "ListView without Row Separators")
+![ListView без разделителей строк](customizing-list-appearance-images/separator-none.png)
 
 Можно также задать цвет разделительной линии через `SeparatorColor` свойство:
 
@@ -267,7 +267,7 @@ SeparatorDemoListView.SeparatorColor = Color.Green;
 <ListView x:Name="SeparatorDemoListView" SeparatorColor="Green" />
 ```
 
-![](customizing-list-appearance-images/separator-custom.png "ListView with Green Row Separators")
+![ListView с зелеными разделителями строк](customizing-list-appearance-images/separator-custom.png)
 
 > [!NOTE]
 > Установка любого из этих свойств на Android после загрузки приводит к `ListView` значительному снижению производительности.
@@ -295,7 +295,7 @@ RowHeightDemoListView.RowHeight = 100;
 <ListView x:Name="RowHeightDemoListView" RowHeight="100" />
 ```
 
-![](customizing-list-appearance-images/height-custom.png "ListView with Fixed Row Height")
+![ListView с фиксированной высотой строки](customizing-list-appearance-images/height-custom.png)
 
 ### <a name="uneven-rows"></a>Нечетные строки
 
@@ -313,7 +313,7 @@ RowHeightDemoListView.HasUnevenRows = true;
 <ListView x:Name="RowHeightDemoListView" HasUnevenRows="true" />
 ```
 
-![](customizing-list-appearance-images/height-uneven.png "ListView with Uneven Rows")
+![ListView с нечетными строками](customizing-list-appearance-images/height-uneven.png)
 
 ### <a name="resize-rows-at-runtime"></a>Изменение размера строк во время выполнения
 
@@ -334,7 +334,7 @@ void OnImageTapped (object sender, EventArgs args)
 
 `OnImageTapped`Обработчик событий выполняется в ответ на [`Image`](xref:Xamarin.Forms.Image) Нажатие в ячейке и увеличивает размер `Image` отображаемой в ячейке ячейки, чтобы его было легко просмотреть.
 
-![](customizing-list-appearance-images/dynamic-row-resizing.png "ListView with Runtime Row Resizing")
+![ListView с изменением размера строк среды выполнения](customizing-list-appearance-images/dynamic-row-resizing.png)
 
 > [!WARNING]
 > Чрезмерное изменение размера строк во время выполнения может привести к снижению производительности.

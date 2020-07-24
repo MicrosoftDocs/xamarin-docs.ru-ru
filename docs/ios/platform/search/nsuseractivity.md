@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: cbf5f8c6f53b075f587a0e7763a4019d44352f14
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: bbd3d1663c3d796768095a12e5048b18f447fa7a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569002"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937024"
 ---
 # <a name="search-with-nsuseractivity-in-xamarinios"></a>Поиск с помощью Нсусерактивити в Xamarin. iOS
 
@@ -21,7 +21,7 @@ ms.locfileid: "84569002"
 
 Новые возможности iOS 9 `NSUserActivity` могут индексироваться (как общедоступные, так и частные) и выполнять поиск в центре поиска Spotlight и Safari. Пометив элемент `NSUserActivity` как поддерживающий поиск и добавив индексируемые метаданные, действие может быть указано в результатах поиска на устройстве iOS.
 
-[![](nsuseractivity-images/apphistory01.png "The App History overview")](nsuseractivity-images/apphistory01.png#lightbox)
+[![Обзор журнала приложений](nsuseractivity-images/apphistory01.png)](nsuseractivity-images/apphistory01.png#lightbox)
 
 Если пользователь выбирает результат поиска, принадлежащий действию из приложения, приложение будет запущено и действие, описанное в, `NSUserActivity` будет перезапущено и представлено пользователю.
 
@@ -59,7 +59,7 @@ Apple предлагает использовать нотацию в стиле
 
 Чтобы создать необходимые идентификаторы типов действий для поддержки такого поведения, измените файл **info. plist** и переключитесь в представление **исходного кода** . Добавьте `NSUserActivityTypes` ключ и создайте идентификаторы в следующем формате:
 
-[![](nsuseractivity-images/type01.png "The NSUserActivityTypes key and required identifiers in the plist editor")](nsuseractivity-images/type01.png#lightbox)
+[![Ключ Нсусерактивититипес и необходимые идентификаторы в редакторе plist](nsuseractivity-images/type01.png)](nsuseractivity-images/type01.png#lightbox)
 
 В приведенном выше примере мы создали один новый идентификатор типа действия для действия поиска ( `com.xamarin.platform` ). При создании собственных приложений замените содержимое `NSUserActivityTypes` массива идентификаторами типов действий, характерными для действий, которые поддерживает приложение.
 
@@ -88,7 +88,7 @@ activity.BecomeCurrent();
 
 Мы можем добавить дополнительные сведения, задав для `ContentAttributeSet` Свойства наше значение `NSUserActivity` следующим образом:
 
-[![](nsuseractivity-images/apphistory02.png "Addition Search Details overview")](nsuseractivity-images/apphistory02.png#lightbox)
+[![Обзор дополнительных сведений о поиске](nsuseractivity-images/apphistory02.png)](nsuseractivity-images/apphistory02.png#lightbox)
 
 С помощью можно `ContentAttributeSet` создавать сложные результаты поиска, которые приводят к взаимодействию конечного пользователя с ними.
 
@@ -96,7 +96,7 @@ activity.BecomeCurrent();
 
 ## <a name="responding-to-an-activity"></a>Реагирование на действие
 
-Чтобы ответить на пользователя, коснувшись результата поиска ( `NSUserActivity` ) для нашего приложения, измените файл **AppDelegate.CS** и переопределите `ContinueUserActivity` метод. Пример.
+Чтобы ответить на пользователя, коснувшись результата поиска ( `NSUserActivity` ) для нашего приложения, измените файл **AppDelegate.CS** и переопределите `ContinueUserActivity` метод. Например.
 
 ```csharp
 public override bool ContinueUserActivity (UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
@@ -115,7 +115,7 @@ public override bool ContinueUserActivity (UIApplication application, NSUserActi
 
 Обратите внимание, что это то же переопределение метода, которое используется для реагирования на запросы на перегрузку. Теперь, если пользователь щелкнет ссылку из нашего приложения в результатах поиска Spotlight, наше приложение будет перенесено на передний план (или запущено, если оно еще не запущено), а содержимое, Навигация или компонент, представленные этой ссылкой, будут отображаться следующим образом:
 
-[![](nsuseractivity-images/apphistory03.png "Restore Previous State from Search")](nsuseractivity-images/apphistory03.png#lightbox)
+[![Восстановить предыдущее состояние из поиска](nsuseractivity-images/apphistory03.png)](nsuseractivity-images/apphistory03.png#lightbox)
 
 <a name="indexing"></a>
 

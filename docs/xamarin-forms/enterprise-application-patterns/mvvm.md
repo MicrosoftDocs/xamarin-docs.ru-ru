@@ -10,12 +10,12 @@ ms.date: 08/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c07fc9f42c4175b4e4569ab95a951b24c130c4f3
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cc0528e7696130a772e93be67526ea9d6b10373f
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84572056"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936530"
 ---
 # <a name="the-model-view-viewmodel-pattern"></a>Шаблон Model-View-ViewModel
 
@@ -27,7 +27,7 @@ Xamarin.FormsПроцесс разработки обычно подразуме
 
 В шаблоне MVVM есть три основных компонента: модель, представление и модель представления. Каждый из них обслуживает отдельную цель. На рис. 2-1 показаны связи между тремя компонентами.
 
-![](mvvm-images/mvvm.png "The MVVM pattern")
+![Шаблон MVVM](mvvm-images/mvvm.png)
 
 **Рис. 2-1**. шаблон MVVM
 

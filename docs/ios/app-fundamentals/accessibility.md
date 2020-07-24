@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/18/2016
-ms.openlocfilehash: 2259566fc6342a40a8c0a94bacd1c146b6509d52
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: e976f5bf0789ca6c703a14b667e75b05a7f47819
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574162"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937856"
 ---
 # <a name="accessibility-on-ios"></a>Специальные возможности в iOS
 
@@ -29,7 +29,7 @@ iOS предоставляет `AccessibilityLabel` `AccessibilityHint` разр
 
 **Панель свойств** содержит раздел со специальными возможностями, позволяющий изменять эти параметры при выборе элемента управления в КОНСТРУКТОРЕ пользовательского интерфейса iOS:
 
-![](accessibility-images/ios-designer-sml.png "Accessibility Settings")
+![Параметры специальных возможностей](accessibility-images/ios-designer-sml.png)
 
 **C#**
 
@@ -115,7 +115,7 @@ notesText.AccessibilityHint = NSBundle.MainBundle.LocalizedString ("Provide more
 
 VoiceOver включается в приложении " **Параметры** " путем перехода к **общему > специальные возможности > VoiceOver**:
 
-![](accessibility-images/settings-sml.png "Setting the speaking rate")
+![Настройка скорости речи](accessibility-images/settings-sml.png)
 
 На экране **Специальные возможности** также приводятся параметры масштабирования, размера текста, цвета & контрастности, параметров речи и других параметров конфигурации.
 
@@ -125,12 +125,12 @@ VoiceOver включается в приложении " **Параметры** 
 
 При тестировании в симуляторе доступен **инспектор специальных возможностей** , позволяющий проверить правильность настройки свойств и событий специальных возможностей. Чтобы включить инспектор в приложении " **Параметры** ", перейдите к **общей > специальные возможности > Специальные возможности инспектора специальных возможностей**:
 
-![](accessibility-images/settings-inspector-sml.png "Enable Accessibility Inspector")
+![Включить инспектор специальных возможностей](accessibility-images/settings-inspector-sml.png)
 
 После включения окно инспектора отображается на экране iOS в любое время.
 Ниже приведен пример выходных данных, когда выбрана строка представления таблицы. Обратите внимание, что **Метка** содержит предложение, которое дает содержимое строки, а также то, что это «готово» (элемент «выполнено» (Internet Explorer)):
 
-![](accessibility-images/tableview-a11y-sml.png "Using Accessibility Inspector")
+![Использование инспектора специальных возможностей](accessibility-images/tableview-a11y-sml.png)
 
 Пока инспектор виден, используйте значок "X" в левом верхнем углу, чтобы временно показать и скрыть наложение, а также включить или отключить параметры специальных возможностей.
 

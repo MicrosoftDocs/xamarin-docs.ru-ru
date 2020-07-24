@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/03/2018
-ms.openlocfilehash: 75ee2c4df9c7f54fa0200272ebc1e9682622ab31
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: edf224428103c318307f3a05dc79e1e8d286f512
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73031447"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86935124"
 ---
 # <a name="advanced-user-notifications-in-xamarinios"></a>Расширенные уведомления пользователей в Xamarin. iOS
 
@@ -53,7 +53,7 @@ ms.locfileid: "73031447"
 
 В iOS 8 компания Apple предоставила такие уведомления, в которых разработчик может присоединить настраиваемые действия к уведомлению и разрешить пользователю предпринимать действия с уведомлением без запуска приложения. В iOS 9 улучшенные возможности уведомлений Apple с быстрым ответом, позволяющие пользователю отвечать на уведомления с текстовым вводом.
 
-Поскольку уведомления пользователей являются более неотъемлемой частью взаимодействия с пользователем в iOS 10, компания Apple предоставляет дополнительные расширенные уведомления для поддержки трехмерного касания, когда пользователь нажимает на уведомление и пользовательский интерфейс отображается для обеспечения богатого взаимодействия. с уведомлением.
+Поскольку уведомления пользователей являются более неотъемлемой частью взаимодействия с пользователем в iOS 10, компания Apple предоставляет дополнительные расширенные уведомления для поддержки трехмерного касания, когда пользователь нажимает на уведомление, а пользовательский интерфейс отображается для обеспечения богатого взаимодействия с уведомлением.
 
 При отображении пользовательского интерфейса уведомления настраиваемого пользователя, если пользователь взаимодействует с любыми действиями, присоединенными к уведомлению, Пользовательский интерфейс можно мгновенно обновить, чтобы оставить отзыв о том, что было изменено.
 
@@ -61,11 +61,11 @@ ms.locfileid: "73031447"
 
 ## <a name="adding-media-attachments"></a>Добавление мультимедийных вложений
 
-Одним из наиболее распространенных элементов, которыми обмениваются пользователи, являются фотографии, поэтому iOS 10 добавил возможность присоединить мультимедийный элемент (например, фотографию) непосредственно к уведомлению, где оно будет доступно пользователю вместе с остальными контекс уведомления. NT.
+Одним из наиболее распространенных элементов, которыми обмениваются пользователи, являются фотографии, поэтому iOS 10 добавил возможность присоединить мультимедийный элемент (например, фотографию) непосредственно к уведомлению, где оно будет доступно пользователю вместе с остальной частью содержимого уведомления.
 
 Однако из-за размера, связанного с отправкой даже небольшого изображения, присоединение его к удаленным полезным данным уведомлений станет непрактичным. Чтобы справиться с этой ситуацией, разработчик может использовать новое расширение службы в iOS 10 для загрузки образа из другого источника (например, хранилища данных CloudKit) и подключения его к содержимому уведомления перед его отображением пользователю.
 
-Чтобы удаленное уведомление было изменено с помощью расширения службы, его полезные данные должны быть помечены как изменяемые. Пример:
+Чтобы удаленное уведомление было изменено с помощью расширения службы, его полезные данные должны быть помечены как изменяемые. Например.
 
 ```csharp
 {
@@ -79,9 +79,9 @@ ms.locfileid: "73031447"
 
 Рассмотрим следующий обзор процесса:
 
-[![](advanced-user-notifications-images/extension02.png "Adding Media Attachments process")](advanced-user-notifications-images/extension02.png#lightbox)
+[![Добавление процесса вложений мультимедиа](advanced-user-notifications-images/extension02.png)](advanced-user-notifications-images/extension02.png#lightbox)
 
-После доставки удаленного уведомления на устройство (через APNs) расширение службы может загрузить требуемый образ с помощью любого необходимого средства (например, `NSURLSession`) и после того, как он получит образ, он может изменить содержимое уведомления и отобразить его на пользователь.
+После доставки удаленного уведомления на устройство (через APNs) расширение службы может загрузить требуемый образ с помощью любого нужного средства (например, `NSURLSession` ) и после того, как он получит образ, он может изменить содержимое уведомления и отобразить его пользователю.
 
 Ниже приведен пример того, как этот процесс может быть обработан в коде:
 
@@ -134,11 +134,11 @@ namespace MonkeyNotification
 }
 ```
 
-При получении уведомления от APNs пользовательский адрес образа считывается из содержимого, а файл загружается с сервера. Затем создается `UNNotificationAttachement` с уникальным ИДЕНТИФИКАТОРом и локальным расположением образа (как `NSUrl`). Создается изменяемая копия содержимого уведомления и добавляются вложения мультимедиа. Наконец, уведомление отображается пользователю путем вызова `contentHandler`.
+При получении уведомления от APNs пользовательский адрес образа считывается из содержимого, а файл загружается с сервера. Затем `UNNotificationAttachement` создается с уникальным идентификатором и локальным расположением образа (в виде `NSUrl` ). Создается изменяемая копия содержимого уведомления и добавляются вложения мультимедиа. Наконец, уведомление отображается пользователю путем вызова `contentHandler` .
 
 После добавления вложения к уведомлению система берет на себя перемещение и управление этим файлом.
 
-В дополнение к удаленным уведомлениям, представленным выше, вложения мультимедиа также поддерживаются в локальных уведомлениях, где `UNNotificationAttachement` создается и подключается к уведомлению вместе с его содержимым.
+В дополнение к удаленным уведомлениям, представленным выше, вложения мультимедиа также поддерживаются в локальных уведомлениях, где `UNNotificationAttachement` создается и вкладывается в уведомление вместе с его содержимым.
 
 Уведомление в iOS 10 поддерживает мультимедийные вложения изображений (статические и GIF), аудио или видео, а система автоматически отображает правильный пользовательский интерфейс для каждого из этих типов вложений при отображении уведомления для пользователя.
 
@@ -155,7 +155,7 @@ namespace MonkeyNotification
 
 При отображении пользователю пользовательского интерфейса с пользовательским интерфейсом он будет иметь следующие элементы:
 
-[![](advanced-user-notifications-images/customui01.png "A User Notification with a Custom UI elements")](advanced-user-notifications-images/customui01.png#lightbox)
+[![Уведомление пользователя с настраиваемыми элементами пользовательского интерфейса](advanced-user-notifications-images/customui01.png)](advanced-user-notifications-images/customui01.png#lightbox)
 
 Если пользователь взаимодействует с настраиваемыми действиями (представленными под уведомлением), можно обновить пользовательский интерфейс, чтобы дать пользователю отзыв о том, что произошло при вызове данного действия.
 
@@ -165,38 +165,38 @@ namespace MonkeyNotification
 
 <!-- markdownlint-disable MD001 -->
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 1. Откройте решение приложения в Visual Studio для Mac.
-2. Щелкните правой кнопкой мыши имя решения в **панель решения** и выберите **Добавить** > **Добавить новый проект**.
-3. Выберите **расширения** > **iOS** > **расширения содержимого уведомлений** и нажмите кнопку **Далее** : 
+2. Щелкните правой кнопкой мыши имя решения в **панель решения** и выберите **Добавить**  >  **Добавить новый проект**.
+3. Выберите **iOS**  >  **расширения**iOS расширения  >  **содержимого уведомлений** и нажмите кнопку **Далее** : 
 
-    [![](advanced-user-notifications-images/notify01.png "Select Notification Content Extensions")](advanced-user-notifications-images/notify01.png#lightbox)
+    [![Выбор расширений содержимого уведомлений](advanced-user-notifications-images/notify01.png)](advanced-user-notifications-images/notify01.png#lightbox)
 4. Введите **имя** для расширения и нажмите кнопку **Далее** : 
 
-    [![](advanced-user-notifications-images/notify02.png "Enter a Name for the extension")](advanced-user-notifications-images/notify02.png#lightbox)
+    [![Введите имя для расширения](advanced-user-notifications-images/notify02.png)](advanced-user-notifications-images/notify02.png#lightbox)
 5. При необходимости измените **имя проекта** или **имя решения** , а затем нажмите кнопку **создать** : 
 
-    [![](advanced-user-notifications-images/notify03.png "Adjust the Project Name and/or Solution Name")](advanced-user-notifications-images/notify03.png#lightbox)
+    [![Изменение имени проекта и/или имени решения](advanced-user-notifications-images/notify03.png)](advanced-user-notifications-images/notify03.png#lightbox)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 1. Откройте решение приложения в Visual Studio для Mac.
-2. Щелкните правой кнопкой мыши имя решения в **Обозреватель решений** и выберите **Добавить > новый проект...** .
+2. Щелкните правой кнопкой мыши имя решения в **Обозреватель решений** и выберите **Добавить > новый проект...**.
 3. Выберите **Visual C# > расширения iOS > расширение содержимого уведомлений**:
 
-    [![](advanced-user-notifications-images/notify01.w157-sml.png "Select Notification Content Extensions")](advanced-user-notifications-images/notify01.w157.png#lightbox)
+    [![Выбор расширений содержимого уведомлений](advanced-user-notifications-images/notify01.w157-sml.png)](advanced-user-notifications-images/notify01.w157.png#lightbox)
 4. Введите **имя** расширения и нажмите кнопку **ОК** .
 
 -----
 
 При добавлении расширения содержимого уведомлений в решение в проекте расширения будут созданы три файла:
 
-1. `NotificationViewController.cs` — это основной контроллер представления для расширения содержимого уведомлений.
-2. `MainInterface.storyboard` — где разработчик видит видимый пользовательский интерфейс для расширения содержимого уведомлений в конструкторе iOS.
-3. `Info.plist` — управляет конфигурацией расширения содержимого уведомлений.
+1. `NotificationViewController.cs`— Это основной контроллер представления для расширения содержимого уведомлений.
+2. `MainInterface.storyboard`— Где разработчик видит видимый пользовательский интерфейс для расширения содержимого уведомления в конструкторе iOS.
+3. `Info.plist`— Управляет конфигурацией расширения содержимого уведомлений.
 
-Файл `NotificationViewController.cs` по умолчанию выглядит следующим образом:
+Файл по умолчанию `NotificationViewController.cs` выглядит следующим образом:
 
 ```csharp
 using System;
@@ -240,67 +240,67 @@ namespace MonkeyChatNotifyExtension
 }
 ```
 
-Метод `DidReceiveNotification` вызывается при расширении уведомления пользователем, чтобы расширение содержимого уведомлений могла заполнить пользовательский интерфейс содержимым `UNNotification`. В приведенном выше примере к представлению добавлена метка, предоставленная коду с именем `label` и используемая для отображения текста уведомления.
+`DidReceiveNotification`Метод вызывается при расширении уведомления пользователем, чтобы расширение содержимого уведомлений могла заполнять пользовательский интерфейс содержимым `UNNotification` . В приведенном выше примере к представлению добавлена метка, доступная для кода с именем `label` и используемая для отображения текста уведомления.
 
 ### <a name="setting-the-notification-content-extensions-categories"></a>Настройка категорий расширения содержимого уведомлений
 
-Системе необходимо знать, как найти расширение содержимого уведомлений приложения на основе категорий, на которые он отвечает. Выполните следующие действия:
+Системе необходимо знать, как найти расширение содержимого уведомлений приложения на основе категорий, на которые он отвечает. Выполните следующие действия.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-1. Дважды щелкните файл `Info.plist` расширения на **панель решения** , чтобы открыть его для редактирования.
-2. Переключитесь в представление **исходного кода** .
+1. Дважды щелкните `Info.plist` файл расширения в **панель решения** , чтобы открыть его для редактирования.
+2. Перейдите в представление **исходного кода**.
 3. Разверните `NSExtension` ключ.
 4. Добавьте `UNNotificationExtensionCategory` ключ в качестве **строки** типа со значением категории, к которой принадлежит расширение (в этом примере — INVITE): 
 
-    [![](advanced-user-notifications-images/customui02.png "Add the UNNotificationExtensionCategory key")](advanced-user-notifications-images/customui02.png#lightbox)
+    [![Добавление ключа Уннотификатионекстенсионкатегори](advanced-user-notifications-images/customui02.png)](advanced-user-notifications-images/customui02.png#lightbox)
 5. Сохраните изменения.
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-1. Дважды щелкните файл `Info.plist` расширения на **Обозреватель решений** , чтобы открыть его для редактирования.
+1. Дважды щелкните `Info.plist` файл расширения в **Обозреватель решений** , чтобы открыть его для редактирования.
 2. Разверните `NSExtension` ключ.
 3. Добавьте `UNNotificationExtensionCategory` ключ в качестве **строки** типа со значением категории, к которой принадлежит расширение (в этом примере — INVITE): 
 
-    [![](advanced-user-notifications-images/customui02w.png "Add the UNNotificationExtensionCategory key")](advanced-user-notifications-images/customui02w.png#lightbox)
+    [![Добавление ключа Уннотификатионекстенсионкатегори](advanced-user-notifications-images/customui02w.png)](advanced-user-notifications-images/customui02w.png#lightbox)
 4. Сохраните изменения.
 
 -----
 
-Категории расширения содержимого уведомлений (`UNNotificationExtensionCategory`) используют те же значения категорий, которые используются для регистрации действий уведомления. В ситуации, когда приложение будет использовать один и тот же пользовательский интерфейс для нескольких категорий, переключайте `UNNotificationExtensionCategory` в **массив** типов и предоставьте все необходимые категории. Пример:
+Категории расширения содержимого уведомлений ( `UNNotificationExtensionCategory` ) используют те же значения категории, которые используются для регистрации действий уведомления. В ситуации, когда приложение будет использовать один и тот же пользовательский интерфейс для нескольких категорий, переключиться `UNNotificationExtensionCategory` на **массив** типов и предоставить все необходимые категории. Например.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![](advanced-user-notifications-images/customui03.png "Notification Content Extension Categories")](advanced-user-notifications-images/customui03.png#lightbox)
+[![Категории расширения содержимого уведомлений](advanced-user-notifications-images/customui03.png)](advanced-user-notifications-images/customui03.png#lightbox)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![](advanced-user-notifications-images/customui03w.png "Notification Content Extension Categories")](advanced-user-notifications-images/customui03w.png#lightbox)
+[![Категории расширения содержимого уведомлений](advanced-user-notifications-images/customui03w.png)](advanced-user-notifications-images/customui03w.png#lightbox)
 
 -----
 
 ### <a name="hiding-the-default-notification-content"></a>Скрытие содержимого уведомлений по умолчанию
 
-В ситуации, когда пользовательский интерфейс уведомления будет отображать то же содержимое, что и уведомление по умолчанию (заголовок, подзаголовок и текст, отображаемые в нижней части пользовательского интерфейса уведомления), эти сведения по умолчанию можно скрыть, добавив `UNNotificationExtensionDefaultContentHidden` ключ к `NSExtensionAttributes`ному ключу как тип **Boolean** со значением `YES` в файле `Info.plist` расширения:
+В ситуации, когда пользовательский интерфейс уведомления будет отображать то же содержимое, что и уведомление по умолчанию (заголовок, подзаголовок и текст, отображаемые в нижней части пользовательского интерфейса уведомления), эти сведения по умолчанию можно скрыть, добавив `UNNotificationExtensionDefaultContentHidden` ключ к `NSExtensionAttributes` ключу как тип **Boolean** со значением `YES` в файле расширения `Info.plist` :
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![](advanced-user-notifications-images/customui04.png "Finding default information")](advanced-user-notifications-images/customui04.png#lightbox)
+[![Поиск сведений по умолчанию](advanced-user-notifications-images/customui04.png)](advanced-user-notifications-images/customui04.png#lightbox)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![](advanced-user-notifications-images/customui04w.png "Finding default information")](advanced-user-notifications-images/customui04w.png#lightbox)
+[![Поиск сведений по умолчанию](advanced-user-notifications-images/customui04w.png)](advanced-user-notifications-images/customui04w.png#lightbox)
 
 -----
 
 ### <a name="designing-the-custom-ui"></a>Разработка пользовательского интерфейса
 
-Чтобы создать настраиваемый пользовательский интерфейс расширения содержимого уведомлений, дважды щелкните файл `MainInterface.storyboard`, чтобы открыть его для редактирования в конструкторе iOS, перетащите элементы, необходимые для создания требуемого интерфейса (например, `UILabels` и `UIImageViews`).
+Чтобы создать настраиваемый пользовательский интерфейс расширения содержимого уведомлений, дважды щелкните `MainInterface.storyboard` файл, чтобы открыть его для редактирования в конструкторе iOS. Перетащите элементы, необходимые для создания требуемого интерфейса (например `UILabels` , и `UIImageViews` ).
 
 > [!NOTE]
 > Начиная с iOS 12, расширение содержимого уведомления может включать интерактивные элементы управления, такие как кнопки и текстовые поля. Дополнительные сведения см. в документации по [интерактивным уведомлениям в iOS 12](~/ios/platform/introduction-to-ios12/notifications/interactive.md) .
 
-После размещения пользовательского интерфейса и необходимых элементов управления для C# кода откройте`NotificationViewController.cs`для редактирования и измените метод`DidReceiveNotification`для заполнения пользовательского интерфейса, когда пользователь развернет уведомление. Пример:
+После размещения пользовательского интерфейса и необходимых элементов управления для кода C# откройте `NotificationViewController.cs` для редактирования и измените `DidReceiveNotification` метод, чтобы заполнить пользовательский интерфейс, когда пользователь развернет уведомление. Например.
 
 ```csharp
 using System;
@@ -357,19 +357,19 @@ namespace MonkeyChatNotifyExtension
 
 ### <a name="setting-the-content-area-size"></a>Задание размера области содержимого
 
-Чтобы настроить размер области содержимого, отображаемой для пользователя, приведенный ниже код устанавливает для свойства `PreferredContentSize` в методе `ViewDidLoad` требуемый размер. Этот размер можно также изменить, применив ограничения к представлению в конструкторе iOS, и разработчик должен выбрать метод, который лучше подходит для них.
+Чтобы настроить размер области содержимого, отображаемой для пользователя, приведенный ниже код задает `PreferredContentSize` для свойства в `ViewDidLoad` методе нужный размер. Этот размер можно также изменить, применив ограничения к представлению в конструкторе iOS, и разработчик должен выбрать метод, который лучше подходит для них.
 
 Так как система уведомлений уже выполняется до вызова расширения содержимого уведомления, область содержимого начинает работать в полном размере и анимируется до требуемого размера, когда пользователь будет представлен пользователю.
 
-Чтобы устранить этот результат, измените файл `Info.plist` для расширения и задайте `UNNotificationExtensionInitialContentSizeRatio` ключ `NSExtensionAttributes`ого ключа, чтобы ввести **число** со значением, представляющим нужное соотношение. Пример:
+Чтобы устранить этот результат, измените `Info.plist` файл для расширения и присвойте `UNNotificationExtensionInitialContentSizeRatio` ключу `NSExtensionAttributes` ключа значение Type **Number** со значением, представляющим требуемое соотношение. Например.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![](advanced-user-notifications-images/customui05.png "The UNNotificationExtensionInitialContentSizeRatio key")](advanced-user-notifications-images/customui05.png#lightbox)
+[![Ключ Уннотификатионекстенсионинитиалконтентсизератио](advanced-user-notifications-images/customui05.png)](advanced-user-notifications-images/customui05.png#lightbox)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![](advanced-user-notifications-images/customui05w.png "The UNNotificationExtensionInitialContentSizeRatio key")](advanced-user-notifications-images/customui05w.png#lightbox)
+[![Ключ Уннотификатионекстенсионинитиалконтентсизератио](advanced-user-notifications-images/customui05w.png)](advanced-user-notifications-images/customui05w.png#lightbox)
 
 -----
 
@@ -377,7 +377,7 @@ namespace MonkeyChatNotifyExtension
 
 Поскольку вложенные файлы (как показано в разделе [Добавление вложений мультимедиа](#adding-media-attachments) выше) являются частью полезных данных уведомления, доступ к ним можно получить и отобразить в расширении содержимого уведомления так же, как и в пользовательском интерфейсе уведомления по умолчанию.
 
-Например, если пользовательский пользовательский интерфейс выше включал `UIImageView`, предоставленный C# коду, можно использовать следующий код, чтобы заполнить его с помощью вложения мультимедиа:
+Например, если пользовательский пользовательский интерфейс выше включал в себя объект `UIImageView` , предоставленный коду C#, можно использовать следующий код, чтобы заполнить его с помощью вложения мультимедиа:
 
 ```csharp
 using System;
@@ -440,7 +440,7 @@ namespace MonkeyChatNotifyExtension
 }
 ```
 
-Так как вложение мультимедиа управляется системой, оно находится за пределами песочницы приложения. Расширение должно информировать систему, что ей требуется доступ к файлу, вызвав метод `StartAccessingSecurityScopedResource`. Когда расширение выполняется с помощью файла, ему необходимо вызвать `StopAccessingSecurityScopedResource`, чтобы освободить его подключение.
+Так как вложение мультимедиа управляется системой, оно находится за пределами песочницы приложения. Расширение должно информировать систему о том, что ему нужен доступ к файлу, вызвав `StartAccessingSecurityScopedResource` метод. Когда расширение выполняется с помощью файла, ему необходимо вызвать метод, `StopAccessingSecurityScopedResource` чтобы освободить его подключение.
 
 ### <a name="adding-custom-actions-to-a-custom-ui"></a>Добавление настраиваемых действий в пользовательский интерфейс
 
@@ -453,7 +453,7 @@ namespace MonkeyChatNotifyExtension
 
 Расширения содержимого уведомлений также могут обновлять пользовательский интерфейс при вызове пользователем одного из настраиваемых действий, например, отображение даты, принятой при нажатии пользователем кнопки **принять** пользовательское действие. Кроме того, расширения содержимого уведомлений могут сообщить системе о задержке закрытия пользовательского интерфейса уведомления, чтобы пользователь мог увидеть результат действия до закрытия уведомления.
 
-Это делается путем реализации второй версии метода `DidReceiveNotification`, включающего обработчик завершения. Пример:
+Это делается путем реализации второй версии `DidReceiveNotification` метода, включающей обработчик завершения. Например.
 
 ```csharp
 using System;
@@ -527,7 +527,7 @@ namespace myApp {
 }
 ```
 
-Добавив обработчик `Server.PostEventResponse` в метод `DidReceiveNotification` расширения содержимого уведомления, расширение *должно* поддерживать все пользовательские действия. Расширение также может перенаправить пользовательские действия в включающее приложение, изменив `UNNotificationContentExtensionResponseOption`. Пример:
+При добавлении `Server.PostEventResponse` обработчика в `DidReceiveNotification` метод расширения содержимого уведомления расширение *должно* поддерживать все пользовательские действия. Расширение также может перенаправить пользовательские действия в включающее приложение, изменив `UNNotificationContentExtensionResponseOption` . Например.
 
 ```csharp
 // Close Notification
@@ -538,7 +538,7 @@ completionHandler (UNNotificationContentExtensionResponseOption.DismissAndForwar
 
 В зависимости от структуры приложения и уведомления могут возникнуть моменты, требующие от пользователя ввести текст в уведомление (например, ответ на сообщение). Расширение содержимого уведомлений имеет доступ ко встроенному действию ввода текста, как и стандартное уведомление.
 
-Пример:
+Например.
 
 ```csharp
 using System;
@@ -676,7 +676,7 @@ namespace MonkeyChatNotifyExtension
 }
 ```
 
-Этот код создает новое действие ввода текста и добавляет его в категорию расширения (в методе `MakeExtensionCategory`). В методе переопределения `DidReceive` обрабатывается ввод текста пользователем с помощью следующего кода:
+Этот код создает новое действие ввода текста и добавляет его в категорию расширения (в `MakeExtensionCategory` методе). В `DidReceive` методе переопределения он обрабатывает ввод текста пользователем с помощью следующего кода:
 
 ```csharp
 // Is text input?
