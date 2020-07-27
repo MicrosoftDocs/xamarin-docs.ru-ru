@@ -1,1023 +1,1021 @@
-- name: Xamarin.Forms
-  href: index.yml
-  items:
-    - name: Приступая к работе
-      href: ~/get-started/index.yml
-      items:
-        - name: Что такое Xamarin.Forms?
-          href: ~/get-started/what-is-xamarin-forms.md
-        - name: Установка
-          href: ~/get-started/installation/index.md
-          items:
-            - name: Установка Xamarin в Windows
-              href: ~/get-started/installation/windows.md
-              items:
-                - name: Установка предварительных версий Xamarin в Windows
-                  href: ~/get-started/installation/windows-preview.md
-                - name: Удаление Xamarin из Visual Studio
-                  href: ~/get-started/installation/uninstalling-xamarin.md
-            - name: Установка Visual Studio для Mac
-              href: /visualstudio/mac/installation/
-              items:
-                - name: Установка предварительных версий Xamarin в Mac
-                  href: /visualstudio/mac/update/
-                - name: Удаление Visual Studio для Mac
-                  href: /visualstudio/mac/uninstall
-            - name: Инструкции по настройке брандмауэра Xamarin
-              href: ~/get-started/installation/firewall.md
-        - name: Поддерживаемые платформы
-          href: ~/get-started/supported-platforms.md
-        - name: Первое приложение
-          href: ~/get-started/first-app/index.md
-        - name: Краткие руководства
-          href: ~/get-started/quickstarts/index.md
-          items:
-            - name: Файл > Создать
-              href: ~/get-started/quickstarts/single-page.md
-            - name: Многостраничное приложение
-              href: ~/get-started/quickstarts/multi-page.md
-            - name: База данных
-              href: ~/get-started/quickstarts/database.md
-            - name: Задание стиля
-              href: ~/get-started/quickstarts/styling.md
-            - name: Подробный обзор
-              href: ~/get-started/quickstarts/deepdive.md
-        - name: Учебники
-          href: ~/get-started/tutorials/index.yml
-          items:
-            - name: Макет "стопка"
-              href: ~/get-started/tutorials/stacklayout/index.yml
-            - name: Метка
-              href: ~/get-started/tutorials/label/index.yml
-            - name: Кнопка
-              href: ~/get-started/tutorials/button/index.yml
-            - name: Ввод текст
-              href: ~/get-started/tutorials/entry/index.yml
-            - name: Текстовый редактор
-              href: ~/get-started/tutorials/editor/index.yml
-            - name: Образы
-              href: ~/get-started/tutorials/image/index.yml
-            - name: Макет Grid
-              href: ~/get-started/tutorials/grid/index.yml
-            - name: Списки
-              href: ~/get-started/tutorials/listview/index.yml
-            - name: Всплывающие окна
-              href: ~/get-started/tutorials/pop-ups/index.yml
-            - name: Жизненный цикл приложения
-              href: ~/get-started/tutorials/app-lifecycle/index.yml
-            - name: Локальная база данных
-              href: ~/get-started/tutorials/local-database/index.yml
-            - name: Веб-службы
-              href: ~/get-started/tutorials/web-service/index.yml
-        - name: Дополнительные сведения о Xamarin
-          items:
-            - name: 'Разработчики, использующие .NET'
-              href: ~/cross-platform/desktop/index.md
-            - name: 'Разработчики, использующие Java'
-              href: ~/android/get-started/java-developers.md
-            - name: 'Разработчики, использующие Objective-C'
-              href: ~/ios/get-started/objective-c-developers/index.md
-            - name: Azure
-              href: ~/xamarin-forms/data-cloud/index.yml
-        - name: Рекомендации по разработке
-          href: ~/cross-platform/index.yml
-    - name: XAML
-      items:
-        - name: Обзор
-          href: xaml/index.yml
-        - name: Основы XAML
-          href: xaml/xaml-basics/index.md
-          items:
-            - name: "Часть\_1. Начало работы с XAML"
-              href: xaml/xaml-basics/get-started-with-xaml.md
-            - name: "Часть\_2. Основной синтаксис XAML"
-              href: xaml/xaml-basics/essential-xaml-syntax.md
-            - name: "Часть\_3. Расширения разметки XAML"
-              href: xaml/xaml-basics/xaml-markup-extensions.md
-            - name: "Часть\_4. Основы привязки данных"
-              href: xaml/xaml-basics/data-binding-basics.md
-            - name: "Часть\_5. От привязки данных до MVVM"
-              href: xaml/xaml-basics/data-bindings-to-mvvm.md
-        - name: Элементы управления XAML
-          href: xaml/xaml-controls.md
-        - name: Компиляция XAML
-          href: xaml/xamlc.md
-        - name: Расширения разметки XAML
-          href: xaml/markup-extensions/index.md
-          items:
-            - name: Использование расширений разметки XAML
-              href: xaml/markup-extensions/consuming.md
-            - name: Создание расширений разметки XAML
-              href: xaml/markup-extensions/creating.md
-        - name: Инструментарий
-          items:
-            - name: Горячая перезагрузка XAML
-              href: xaml/hot-reload.md
-            - name: Инструментарий XAML
-              href: xaml/toolbox.md
-            - name: Средство предварительного просмотра XAML
-              href: xaml/xaml-previewer/index.md
-              items:
-                - name: Данные времени разработки
-                  href: xaml/xaml-previewer/design-time-data.md
-                - name: Пользовательские элементы управления
-                  href: xaml/xaml-previewer/render-custom-controls.md
-        - name: Пространства имен
-          items:
-            - name: Пространства имен языка XAML
-              href: xaml/namespaces.md
-            - name: "Схемы настраиваемых пространств имен\_XAML"
-              href: xaml/custom-namespace-schemas.md
-            - name: Рекомендуемые префиксы пространств имен XAML
-              href: xaml/custom-prefix.md
-        - name: Дополнительные возможности
-          items:
-            - name: Привязываемые свойства
-              href: xaml/bindable-properties.md
-            - name: Вложенные свойства
-              href: xaml/attached-properties.md
-            - name: Словари ресурсов
-              href: xaml/resource-dictionaries.md
-            - name: Передача аргументов
-              href: xaml/passing-arguments.md
-            - name: Универсальные шаблоны
-              href: xaml/generics.md
-            - name: Модификаторы полей
-              href: xaml/field-modifiers.md
-            - name: Загрузка XAML во время выполнения
-              href: xaml/runtime-load.md
-    - name: Принципы работы приложения
-      items:
-        - name: Обзор
-          href: app-fundamentals/index.yml
-        - name: Специальные возможности
-          href: app-fundamentals/accessibility/index.md
-          items:
-            - name: Свойства автоматизации
-              href: app-fundamentals/accessibility/automation-properties.md
-            - name: Специальные возможности клавиатуры
-              href: app-fundamentals/accessibility/keyboard.md
-        - name: Класс приложения
-          href: app-fundamentals/application-class.md
-        - name: Жизненный цикл приложения
-          href: app-fundamentals/app-lifecycle.md
-        - name: Индексирование приложения и создание прямых ссылок
-          href: app-fundamentals/deep-linking.md
-        - name: поведения
-          href: app-fundamentals/behaviors/index.md
-          items:
-            - name: Вступление
-              href: app-fundamentals/behaviors/introduction.md
-            - name: Присоединенные реакции на события
-              href: app-fundamentals/behaviors/attached.md
-            - name: Реакции на события Xamarin.Forms
-              href: app-fundamentals/behaviors/creating.md
-            - name: Повторно используемые реакции на события
-              href: app-fundamentals/behaviors/reusable/index.md
-              items:
-                - name: EffectBehavior
-                  href: app-fundamentals/behaviors/reusable/effect-behavior.md
-                - name: EventToCommandBehavior
-                  href: app-fundamentals/behaviors/reusable/event-to-command-behavior.md
-        - name: Пользовательские отрисовщики
-          href: app-fundamentals/custom-renderer/index.md
-          items:
-            - name: Вступление
-              href: app-fundamentals/custom-renderer/introduction.md
-            - name: Базовые классы отрисовщика и собственные элементы управления
-              href: app-fundamentals/custom-renderer/renderers.md
-            - name: Настройка элемента управления Entry
-              href: app-fundamentals/custom-renderer/entry.md
-            - name: Настройка ContentPage
-              href: app-fundamentals/custom-renderer/contentpage.md
-            - name: Настройка закрепления карты
-              href: app-fundamentals/custom-renderer/map-pin.md
-            - name: Настройка ListView
-              href: app-fundamentals/custom-renderer/listview.md
-            - name: Настройка ViewCell
-              href: app-fundamentals/custom-renderer/viewcell.md
-            - name: Настройка WebView
-              href: app-fundamentals/custom-renderer/hybridwebview.md
-            - name: Реализация представления
-              href: app-fundamentals/custom-renderer/view.md
-            - name: Реализация видеопроигрывателя
-              href: app-fundamentals/custom-renderer/video-player/index.md
-              items:
-                - name: Создание видеопроигрывателей платформы
-                  href: app-fundamentals/custom-renderer/video-player/player-creation.md
-                - name: Воспроизведение видео через Интернет
-                  href: app-fundamentals/custom-renderer/video-player/web-videos.md
-                - name: Привязка источников видео к проигрывателю
-                  href: app-fundamentals/custom-renderer/video-player/source-bindings.md
-                - name: Загрузка видеоресурсов приложения
-                  href: app-fundamentals/custom-renderer/video-player/loading-resources.md
-                - name: Доступ к видеотеке устройства
-                  href: app-fundamentals/custom-renderer/video-player/accessing-library.md
-                - name: Пользовательские элементы управления транспортировкой видео
-                  href: app-fundamentals/custom-renderer/video-player/custom-transport.md
-                - name: Настраиваемое размещение видео
-                  href: app-fundamentals/custom-renderer/video-player/custom-positioning.md
-        - name: Привязка данных
-          href: app-fundamentals/data-binding/index.md
-          items:
-            - name: Основные привязки
-              href: app-fundamentals/data-binding/basic-bindings.md
-            - name: Режим привязки
-              href: app-fundamentals/data-binding/binding-mode.md
-            - name: Форматирование строки
-              href: app-fundamentals/data-binding/string-formatting.md
-            - name: Путь привязки
-              href: app-fundamentals/data-binding/binding-path.md
-            - name: Преобразователи значений привязки
-              href: app-fundamentals/data-binding/converters.md
-            - name: Относительные привязки
-              href: app-fundamentals/data-binding/relative-bindings.md
-            - name: Резервные значения привязки
-              href: app-fundamentals/data-binding/binding-fallbacks.md
-            - name: Множественные привязки
-              href: app-fundamentals/data-binding/multibinding.md
-            - name: Командный интерфейс
-              href: app-fundamentals/data-binding/commanding.md
-            - name: Скомпилированные привязки
-              href: app-fundamentals/data-binding/compiled-bindings.md
-        - name: DependencyService
-          href: app-fundamentals/dependency-service/index.md
-          items:
-            - name: Вступление
-              href: app-fundamentals/dependency-service/introduction.md
-            - name: Регистрация и разрешение
-              href: app-fundamentals/dependency-service/registration-and-resolution.md
-            - name: Выбор из медиатеки
-              href: app-fundamentals/dependency-service/photo-picker.md
-        - name: Два экрана
-          href: app-fundamentals/dual-screen/index.md
-          items:
-            - name: Шаблоны для двух экранов
-              href: app-fundamentals/dual-screen/design-patterns.md
-            - name: Макет для двух экранов
-              href: app-fundamentals/dual-screen/twopaneview.md
-            - name: Возможности устройства для двух экранов
-              href: app-fundamentals/dual-screen/dual-screen-info.md
-            - name: Вспомогательные функции платформы для двух экранов
-              href: app-fundamentals/dual-screen/dual-screen-helper.md
-            - name: Триггеры для двух экранов
-              href: app-fundamentals/dual-screen/triggers.md
-        - name: Произведенный эффект
-          href: app-fundamentals/effects/index.md
-          items:
-            - name: Вступление
-              href: app-fundamentals/effects/introduction.md
-            - name: Создание эффекта
-              href: app-fundamentals/effects/creating.md
-            - name: Передача параметров
-              href: app-fundamentals/effects/passing-parameters/index.md
-              items:
-                - name: Параметры в качестве свойств среды CLR
-                  href: app-fundamentals/effects/passing-parameters/clr-properties.md
-                - name: Параметры в качестве вложенных свойств
-                  href: app-fundamentals/effects/passing-parameters/attached-properties.md
-            - name: Вызов событий
-              href: app-fundamentals/effects/touch-tracking.md
-            - name: Повторно используемый класс RoundEffect
-              href: app-fundamentals/effects/reusable-roundeffect.md
-        - name: Жесты
-          href: app-fundamentals/gestures/index.md
-          items:
-            - name: Касание
-              href: app-fundamentals/gestures/tap.md
-            - name: Сжатие
-              href: app-fundamentals/gestures/pinch.md
-            - name: Сдвиг
-              href: app-fundamentals/gestures/pan.md
-            - name: Прокрутка
-              href: app-fundamentals/gestures/swipe.md
-        - name: Локальные уведомления
-          href: app-fundamentals/local-notifications.md
-        - name: Локализация
-          href: app-fundamentals/localization/index.md
-          items:
-            - name: Локализация строк и изображений
-              href: app-fundamentals/localization/text.md
-            - name: Локализация справа налево
-              href: app-fundamentals/localization/right-to-left.md
-        - name: MessagingCenter
-          href: app-fundamentals/messaging-center.md
-        - name: Навигация
-          href: app-fundamentals/navigation/index.md
-          items:
-            - name: Иерархическая навигация
-              href: app-fundamentals/navigation/hierarchical.md
-            - name: TabbedPage
-              href: app-fundamentals/navigation/tabbed-page.md
-            - name: CarouselPage
-              href: app-fundamentals/navigation/carousel-page.md
-            - name: MasterDetailPage
-              href: app-fundamentals/navigation/master-detail-page.md
-            - name: Модальные страницы
-              href: app-fundamentals/navigation/modal.md
-        - name: Оболочка
-          href: app-fundamentals/shell/index.md
-          items:
-            - name: Вступление
-              href: app-fundamentals/shell/introduction.md
-            - name: Создание приложения оболочки
-              href: app-fundamentals/shell/create.md
-            - name: Flyout
-              href: app-fundamentals/shell/flyout.md
-            - name: Вкладки
-              href: app-fundamentals/shell/tabs.md
-            - name: Конфигурация страницы
-              href: app-fundamentals/shell/configuration.md
-            - name: Навигация
-              href: app-fundamentals/shell/navigation.md
-            - name: Поиск
-              href: app-fundamentals/shell/search.md
-            - name: Жизненный цикл
-              href: app-fundamentals/shell/lifecycle.md
-            - name: Пользовательские отрисовщики
-              href: app-fundamentals/shell/customrenderers.md
-        - name: Шаблоны
-          items:
-            - name: Обзор
-              href: app-fundamentals/templates/index.md
-            - name: Шаблоны элементов управления
-              href: app-fundamentals/templates/control-template.md
-            - name: Шаблоны данных
-              href: app-fundamentals/templates/data-templates/index.md
-              items:
-                - name: Вступление
-                  href: app-fundamentals/templates/data-templates/introduction.md
-                - name: Создание шаблона данных
-                  href: app-fundamentals/templates/data-templates/creating.md
-                - name: Выбор шаблона данных
-                  href: app-fundamentals/templates/data-templates/selector.md
-        - name: Триггеры
-          href: app-fundamentals/triggers.md
-    - name: Пользовательский интерфейс
-      items:
-        - name: Обзор
-          href: user-interface/index.yml
-        - name: Разметка C#
-          href: user-interface/csharp-markup.md
-        - name: Справочник по элементам управления
-          items:
-            - name: Обзор
-              href: user-interface/controls/index.md
-            - name: Pages
-              href: user-interface/controls/pages.md
-            - name: Макеты
-              href: user-interface/controls/layouts.md
-            - name: Представления
-              href: user-interface/controls/views.md
-            - name: Ячейки
-              href: user-interface/controls/cells.md
-            - name: 'Общие свойства, методы и события'
-              href: user-interface/controls/common-properties.md
-            - name: Сторонние элементы управления
-              href: user-interface/controls/thirdparty.md
-        - name: Представление данных
-          items:
-            - name: BoxView
-              href: user-interface/boxview.md
-            - name: Expander
-              href: user-interface/expander.md
-            - name: Изображение
-              href: user-interface/images.md
-            - name: Метка
-              href: user-interface/text/label.md
-            - name: Карта
-              items:
-                - name: Обзор
-                  href: user-interface/map/index.md
-                - name: Инициализация и настройка
-                  href: user-interface/map/setup.md
-                - name: Элемент управления картой
-                  href: user-interface/map/map.md
-                - name: Размещение и расстояние
-                  href: user-interface/map/position-distance.md
-                - name: Маркеры
-                  href: user-interface/map/pins.md
-                - name: 'Многоугольники, ломаные линии и круги'
-                  href: user-interface/map/polygons.md
-                - name: Геокодирование
-                  href: user-interface/map/geocoder.md
-                - name: Запуск собственного приложения для работы с картой
-                  href: user-interface/map/native-map-app.md
-            - name: MediaElement
-              href: user-interface/mediaelement.md
-            - name: Фигуры
-              items:
-                - name: Обзор
-                  href: user-interface/shapes/index.md
-                - name: Ellipse
-                  href: user-interface/shapes/ellipse.md
-                - name: Правила заливки
-                  href: user-interface/shapes/fillrules.md
-                - name: Геометрия
-                  href: user-interface/shapes/geometries.md
-                - name: Строка
-                  href: user-interface/shapes/line.md
-                - name: Пути
-                  items:
-                    - name: Path
-                      href: user-interface/shapes/path.md
-                    - name: Синтаксис разметки пути
-                      href: user-interface/shapes/path-markup-syntax.md
-                    - name: Преобразования пути
-                      href: user-interface/shapes/path-transforms.md
-                - name: Polygon
-                  href: user-interface/shapes/polygon.md
-                - name: Ломаная линия
-                  href: user-interface/shapes/polyline.md
-                - name: Прямоугольник
-                  href: user-interface/shapes/rectangle.md
-            - name: WebView
-              href: user-interface/webview.md
-        - name: Инициирование команд
-          items:
-            - name: Кнопка
-              href: user-interface/button.md
-            - name: ImageButton
-              href: user-interface/imagebutton.md
-            - name: RadioButton
-              href: user-interface/radiobutton.md
-            - name: RefreshView
-              href: user-interface/refreshview.md
-            - name: Панель поиска
-              href: user-interface/searchbar.md
-            - name: SwipeView
-              href: user-interface/swipeview.md
-        - name: Установка значений
-          items:
-            - name: CheckBox
-              href: user-interface/checkbox.md
-            - name: DatePicker
-              href: user-interface/datepicker.md
-            - name: Slider
-              href: user-interface/slider.md
-            - name: Шаговый переключатель
-              href: user-interface/stepper.md
-            - name: Параметр
-              href: user-interface/switch.md
-            - name: TimePicker
-              href: user-interface/timepicker.md
-        - name: Редактирование текста
-          items:
-            - name: Редактор
-              href: user-interface/text/editor.md
-            - name: Ввод
-              href: user-interface/text/entry.md
-        - name: Обозначение действий
-          items:
-            - name: ActivityIndicator
-              href: user-interface/activityindicator.md
-            - name: ProgressBar
-              href: user-interface/progressbar.md
-        - name: Отображение коллекций
-          items:
-            - name: CarouselView
-              href: user-interface/carouselview/index.md
-              items:
-                - name: Вступление
-                  href: user-interface/carouselview/introduction.md
-                - name: Данные
-                  href: user-interface/carouselview/populate-data.md
-                - name: Макет
-                  href: user-interface/carouselview/layout.md
-                - name: Взаимодействие
-                  href: user-interface/carouselview/interaction.md
-                - name: EmptyView
-                  href: user-interface/carouselview/emptyview.md
-                - name: Прокрутка
-                  href: user-interface/carouselview/scrolling.md
-            - name: CollectionView
-              href: user-interface/collectionview/index.md
-              items:
-                - name: Вступление
-                  href: user-interface/collectionview/introduction.md
-                - name: Данные
-                  href: user-interface/collectionview/populate-data.md
-                - name: Макет
-                  href: user-interface/collectionview/layout.md
-                - name: Выбранное
-                  href: user-interface/collectionview/selection.md
-                - name: EmptyView
-                  href: user-interface/collectionview/emptyview.md
-                - name: Прокрутка
-                  href: user-interface/collectionview/scrolling.md
-                - name: Группирование
-                  href: user-interface/collectionview/grouping.md
-            - name: IndicatorView
-              href: user-interface/indicatorview.md
-            - name: ListView
-              href: user-interface/listview/index.md
-              items:
-                - name: Data Sources
-                  href: user-interface/listview/data-and-databinding.md
-                - name: Вид ячейки
-                  href: user-interface/listview/customizing-cell-appearance.md
-                - name: Вид списка
-                  href: user-interface/listview/customizing-list-appearance.md
-                - name: Интерактивность
-                  href: user-interface/listview/interactivity.md
-                - name: Производительность
-                  href: user-interface/listview/performance.md
-            - name: Средство выбора
-              href: user-interface/picker/index.md
-              items:
-                - name: Задание свойства ItemsSource средства выбора
-                  href: user-interface/picker/populating-itemssource.md
-                - name: Добавление данных в коллекцию элементов средства выбора
-                  href: user-interface/picker/populating-items.md
-            - name: TableView
-              href: user-interface/tableview.md
-        - name: Дополнительные элементы управления
-          items:
-            - name: MenuItem
-              href: user-interface/menuitem.md
-            - name: ToolbarItem
-              href: user-interface/toolbaritem.md
-        - name: Основные понятия
-          items:
-            - name: Анимация
-              href: user-interface/animation/index.md
-              items:
-                - name: Простые анимации
-                  href: user-interface/animation/simple.md
-                - name: Функции плавности
-                  href: user-interface/animation/easing.md
-                - name: Пользовательские анимации
-                  href: user-interface/animation/custom.md
-            - name: Цвета
-              href: user-interface/colors.md
-            - name: DataPages
-              href: user-interface/datapages/index.md
-              items:
-                - name: Приступая к работе
-                  href: user-interface/datapages/get-started.md
-                - name: Справочник по элементам управления
-                  href: user-interface/datapages/controls.md
-            - name: Отображение всплывающих элементов
-              href: user-interface/pop-ups.md
-            - name: Шрифты
-              href: user-interface/text/fonts.md
-            - name: Графика SkiaSharp
-              href: user-interface/graphics/skiasharp/index.md
-            - name: Экран-заставка
-              href: user-interface/splashscreen.md
-            - name: Стили
-              href: user-interface/styles/index.md
-              items:
-                - name: Задание стиля приложений Xamarin.Forms с помощью стилей XAML
-                  href: user-interface/styles/xaml/index.md
-                  items:
-                    - name: Вступление
-                      href: user-interface/styles/xaml/introduction.md
-                    - name: Явные стили
-                      href: user-interface/styles/xaml/explicit.md
-                    - name: Неявные стили
-                      href: user-interface/styles/xaml/implicit.md
-                    - name: Глобальные стили
-                      href: user-interface/styles/xaml/application.md
-                    - name: Наследование стилей
-                      href: user-interface/styles/xaml/inheritance.md
-                    - name: Динамические стили
-                      href: user-interface/styles/xaml/dynamic.md
-                    - name: Стили устройства
-                      href: user-interface/styles/xaml/device.md
-                    - name: Классы стилей
-                      href: user-interface/styles/xaml/style-class.md
-                - name: Задание стиля приложений Xamarin.Forms с помощью каскадных таблиц стилей (CSS)
-                  href: user-interface/styles/css/index.md
-            - name: Темы
-              href: user-interface/theming/index.md
-              items:
-                - name: Создание темы для приложения
-                  href: user-interface/theming/theming.md
-                - name: Реагирование на изменения темы системы
-                  href: user-interface/theming/system-theme-changes.md
-            - name: Визуальный элемент
-              href: user-interface/visual/index.md
-              items:
-                - name: Визуальный элемент материала
-                  href: user-interface/visual/material-visual.md
-                - name: Создание отрисовщика визуальных элементов
-                  href: user-interface/visual/create.md
-            - name: Диспетчер визуального представления состояний
-              href: user-interface/visual-state-manager.md
-        - name: Макеты
-          items:
-            - name: Обзор
-              href: user-interface/layouts/index.yml
-            - name: Выбор макета
-              href: user-interface/layouts/choose-layout.md
-            - name: Основные макеты
-              items:
-                - name: AbsoluteLayout
-                  href: user-interface/layouts/absolute-layout.md
-                - name: FlexLayout
-                  href: user-interface/layouts/flex-layout.md
-                - name: Grid
-                  href: user-interface/layouts/grid.md
-                - name: RelativeLayout
-                  href: user-interface/layouts/relative-layout.md
-                - name: StackLayout
-                  href: user-interface/layouts/stacklayout.md
-            - name: Дополнительные макеты
-              items:
-                - name: ContentView
-                  href: user-interface/layouts/contentview.md
-                - name: Frame
-                  href: user-interface/layouts/frame.md
-                - name: ScrollView
-                  href: user-interface/layouts/scrollview.md
-            - name: Основные понятия
-              items:
-                - name: Привязываемые макеты
-                  href: user-interface/layouts/bindable-layouts.md
-                - name: Пользовательские макеты
-                  href: user-interface/layouts/custom.md
-                - name: Ориентация устройства
-                  href: user-interface/layouts/device-orientation.md
-                - name: LayoutOptions
-                  href: user-interface/layouts/layout-options.md
-                - name: Сжатие макета
-                  href: user-interface/layouts/layout-compression.md
-                - name: Поля и заполнение
-                  href: user-interface/layouts/margin-and-padding.md
-                - name: Планшет и настольный компьютер
-                  href: user-interface/layouts/tablet.md
-    - name: Функции платформы
-      items:
-        - name: Обзор
-          href: platform/index.yml
-        - name: Android
-          items:
-            - name: Обзор
-              href: platform/android/index.md
-            - name: Миграция AndroidX
-              href: platform/android/androidx-migration.md
-            - name: AppCompat и материальное исполнение
-              href: platform/android/appcompat-material-design.md
-            - name: Заполнение и тени кнопки
-              href: platform/android/button-padding-shadow.md
-            - name: Параметры редактора метода ввода записей
-              href: platform/android/entry-ime-options.md
-            - name: Тени для ImageButton
-              href: platform/android/imagebutton-drop-shadow.md
-            - name: Быстрая прокрутка ListView
-              href: platform/android/listview-fast-scrolling.md
-            - name: Высота панели NavigationPage
-              href: platform/android/navigationpage-bar-height.md
-            - name: События жизненного цикла приложения
-              href: platform/android/page-lifecycle-events.md
-            - name: Режим ввода с программной клавиатуры
-              href: platform/android/soft-keyboard-input-mode.md
-            - name: Режим перехода для прокрутки SwipeView
-              href: platform/android/swipeview-swipetransitionmode.md
-            - name: Прокрутка страницы TabbedPage
-              href: platform/android/tabbedpage-page-swiping.md
-            - name: Анимация при смене страницы TabbedPage
-              href: platform/android/tabbedpage-transition-animations.md
-            - name: Цвет и расположение панели инструментов TabbedPage
-              href: platform/android/tabbedpage-toolbar-placement-color.md
-            - name: Контекстные действия ViewCell
-              href: platform/android/viewcell-context-actions.md
-            - name: Повышение прав VisualElement
-              href: platform/android/visualelement-elevation.md
-            - name: Устаревший цветовой режим VisualElement
-              href: platform/android/legacy-color-mode.md
-            - name: Смешанное содержимое WebView
-              href: platform/android/webview-mixed-content.md
-            - name: Масштабирование WebView
-              href: platform/android/webview-zoom-controls.md
-        - name: iOS
-          items:
-            - name: Обзор
-              href: platform/ios/index.md
-            - name: 'Специальные возможности: масштабирование для именованных размеров шрифта'
-              href: platform/ios/named-font-size-scaling.md
-            - name: Цвет фона ячейки
-              href: platform/ios/cell-background-color.md
-            - name: Выбор элемента DatePicker
-              href: platform/ios/datepicker-selection.md
-            - name: Цвет курсора в поле ввода
-              href: platform/ios/entry-cursor-color.md
-            - name: Размер шрифта вводимого текста
-              href: platform/ios/entry-font-size.md
-            - name: Форматирование
-              href: platform/ios/formatting.md
-            - name: Стиль представления модальной страницы
-              href: platform/ios/page-presentation-style.md
-            - name: Крупные заголовки страниц
-              href: platform/ios/page-large-title.md
-            - name: Стиль заголовка группы ListView
-              href: platform/ios/listview-group-header-style.md
-            - name: Анимации строк ListView
-              href: platform/ios/listview-row-animations.md
-            - name: Стиль разделителя ListView
-              href: platform/ios/listview-separator-style.md
-            - name: Обновления элементов управления основного потока
-              href: platform/ios/main-thread-updates-ui.md
-            - name: Тень MasterDetailPage
-              href: platform/ios/masterdetailpage-shadow.md
-            - name: Разделитель панели NavigationPage
-              href: platform/ios/navigation-bar-separator.md
-            - name: Цветовой режим текста панели NavigationPage
-              href: platform/ios/status-bar-text-color.md
-            - name: Полупрозрачность панели NavigationPage
-              href: platform/ios/navigation-bar-translucent.md
-            - name: Видимость индикатора домашней страницы
-              href: platform/ios/page-home-indicator.md
-            - name: Видимость строки состояния страницы
-              href: platform/ios/page-status-bar-visibility.md
-            - name: Выбор элемента средства выбора
-              href: platform/ios/picker-selection.md
-            - name: Направляющая макета безопасной области
-              href: platform/ios/page-safe-area-layout.md
-            - name: Касания содержимого ScrollView
-              href: platform/ios/scrollview-content-touches.md
-            - name: Стиль панели поиска
-              href: platform/ios/searchbar-style.md
-            - name: Распознавание одновременных жестов сдвига
-              href: platform/ios/application-pan-gesture.md
-            - name: Касание ползунка
-              href: platform/ios/slider-thumb.md
-            - name: Режим перехода для прокрутки SwipeView
-              href: platform/ios/swipeview-swipetransitionmode.md
-            - name: Полупрозрачная панель вкладок TabbedPage
-              href: platform/ios/tabbedpage-translucent-tabbar.md
-            - name: Выбор элемента TimePicker
-              href: platform/ios/timepicker-selection.md
-            - name: Размытие VisualElement
-              href: platform/ios/visualelement-blur.md
-            - name: Тени для VisualElement
-              href: platform/ios/visualelement-drop-shadow.md
-            - name: Устаревший цветовой режим VisualElement
-              href: platform/ios/legacy-color-mode.md
-            - name: Оперативное отвечающее устройство VisualElement
-              href: platform/ios/visualelement-first-responder.md
-        - name: Windows
-          items:
-            - name: Обзор
-              href: platform/windows/index.md
-            - name: Каталог изображений по умолчанию
-              href: platform/windows/default-image-directory.md
-            - name: Порядок чтения InputView
-              href: platform/windows/inputview-reading-order.md
-            - name: SelectionMode для ListView
-              href: platform/windows/listview-selectionmode.md
-            - name: Панель навигации MasterDetailPage
-              href: platform/windows/masterdetailpage-navigation-bar.md
-            - name: Положение панели инструментов страницы
-              href: platform/windows/page-toolbar-placement.md
-            - name: Настройка платформы
-              href: platform/windows/installation/index.md
-            - name: Направление движения RefreshView
-              href: platform/windows/refreshview-pulldirection.md
-            - name: Проверка орфографии в SearchBar
-              href: platform/windows/searchbar-spell-check.md
-            - name: Значки TabbedPage
-              href: platform/windows/tabbedpage-icons.md
-            - name: Ключи доступа VisualElement
-              href: platform/windows/visualelement-access-keys.md
-            - name: Устаревший цветовой режим VisualElement
-              href: platform/windows/legacy-color-mode.md
-            - name: Оповещения JavaScript WebView
-              href: platform/windows/webview-javascript-alert.md
-        - name: Создание особенностей платформы
-          href: platform/platform-specifics/index.md
-        - name: Класс устройства
-          href: platform/device.md
-        - name: Собственные формы
-          href: platform/native-forms.md
-        - name: Собственные представления
-          href: platform/native-views/index.md
-          items:
-            - name: Собственные представления в XAML
-              href: platform/native-views/xaml.md
-            - name: Собственные представления в C#
-              href: platform/native-views/code.md
-        - name: Вход с помощью Apple
-          href: platform/sign-in-with-apple/index.md
-          items:
-            - name: Настройка для iOS
-              href: ~/ios/platform/ios13/sign-in.md
-            - name: Настройка для других платформ
-              href: platform/sign-in-with-apple/setup.md
-            - name: Использование входа с помощью Apple
-              href: platform/sign-in-with-apple/android-ios-sign-in.md
-        - name: Другие платформы
-          href: platform/other/index.md
-          items:
-            - name: GTK#
-              href: platform/other/gtk.md
-            - name: Mac
-              href: platform/other/mac.md
-            - name: Tizen
-              href: platform/other/tizen.md
-            - name: WPF
-              href: platform/other/wpf.md
-    - name: Xamarin.Essentials
-      href: ~/essentials/index.md?context=xamarin/xamarin-forms
-      items:
-        - name: Приступая к работе
-          href: ~/essentials/get-started.md?context=xamarin/xamarin-forms
-        - name: Поддержка платформы и компонентов
-          href: ~/essentials/platform-feature-support.md?context=xamarin/xamarin-forms
-        - name: Акселерометр
-          href: ~/essentials/accelerometer.md?context=xamarin/xamarin-forms
-        - name: Сведения о приложении
-          href: ~/essentials/app-information.md?context=xamarin/xamarin-forms
-        - name: Тема приложения
-          href: ~/essentials/app-theme.md?context=xamarin/xamarin-forms
-        - name: Барометр
-          href: ~/essentials/barometer.md?context=xamarin/xamarin-forms
-        - name: Батарея
-          href: ~/essentials/battery.md?context=xamarin/xamarin-forms
-        - name: буфер обмена
-          href: ~/essentials/clipboard.md?context=xamarin/xamarin-forms
-        - name: Преобразователи цвета
-          href: ~/essentials/color-converters.md?context=xamarin/xamarin-forms
-        - name: Компас
-          href: ~/essentials/compass.md?context=xamarin/xamarin-forms
-        - name: Подключение
-          href: ~/essentials/connectivity.md?context=xamarin/xamarin-forms
-        - name: Обнаружение тряски
-          href: ~/essentials/detect-shake.md?context=xamarin/xamarin-forms
-        - name: Сведения о дисплее устройства
-          href: ~/essentials/device-display.md?context=xamarin/xamarin-forms
-        - name: Сведения об устройстве
-          href: ~/essentials/device-information.md?context=xamarin/xamarin-forms
-        - name: Адрес эл. почты
-          href: ~/essentials/email.md?context=xamarin/xamarin-forms
-        - name: Вспомогательные методы для файловой системы
-          href: ~/essentials/file-system-helpers.md?context=xamarin/xamarin-forms
-        - name: Фонарик
-          href: ~/essentials/flashlight.md?context=xamarin/xamarin-forms
-        - name: Геокодирование
-          href: ~/essentials/geocoding.md?context=xamarin/xamarin-forms
-        - name: Геопозиционирование
-          href: ~/essentials/geolocation.md?context=xamarin/xamarin-forms
-        - name: Гироскоп
-          href: ~/essentials/gyroscope.md?context=xamarin/xamarin-forms
-        - name: Средство запуска
-          href: ~/essentials/launcher.md?context=xamarin/xamarin-forms
-        - name: Магнитометр
-          href: ~/essentials/magnetometer.md?context=xamarin/xamarin-forms
-        - name: Главный поток
-          href: ~/essentials/main-thread.md?context=xamarin/xamarin-forms
-        - name: Карты
-          href: ~/essentials/maps.md?context=xamarin/xamarin-forms
-        - name: Открыть браузер
-          href: ~/essentials/open-browser.md?context=xamarin/xamarin-forms
-        - name: Датчик ориентации
-          href: ~/essentials/orientation-sensor.md?context=xamarin/xamarin-forms
-        - name: Разрешения
-          href: ~/essentials/permissions.md?context=xamarin/xamarin-forms
-        - name: Телефон
-          href: ~/essentials/phone-dialer.md?context=xamarin/xamarin-forms
-        - name: 'Расширения платформы (размер, прямоугольник, точка)'
-          href: ~/essentials/platform-extensions.md?context=xamarin/xamarin-forms
-        - name: Параметры
-          href: ~/essentials/preferences.md?context=xamarin/xamarin-forms
-        - name: Защищенное хранилище
-          href: ~/essentials/secure-storage.md?context=xamarin/xamarin-forms
-        - name: Общий доступ
-          href: ~/essentials/share.md?context=xamarin/xamarin-forms
-        - name: SMS
-          href: ~/essentials/sms.md?context=xamarin/xamarin-forms
-        - name: Преобразование текста в речь
-          href: ~/essentials/text-to-speech.md?context=xamarin/xamarin-forms
-        - name: Преобразователи единиц
-          href: ~/essentials/unit-converters.md?context=xamarin/xamarin-forms
-        - name: Отслеживание версий
-          href: ~/essentials/version-tracking.md?context=xamarin/xamarin-forms
-        - name: Вибрация
-          href: ~/essentials/vibrate.md?context=xamarin/xamarin-forms
-        - name: Веб-средство проверки подлинности
-          href: ~/essentials/web-authenticator.md?context=xamarin/xamarin-forms
-        - name: Заметки о выпуске Xamarin.Essentials
-          href: 'https://docs.microsoft.com/xamarin/essentials/release-notes/'
-        - name: Устранение неполадок
-          href: ~/essentials/troubleshooting.md?context=xamarin/xamarin-forms
-    - name: Данные и облачные службы Azure
-      items:
-        - name: Обзор
-          href: data-cloud/index.yml
-        - name: Локальное хранилище данных
-          items:
-            - name: Обзор
-              href: data-cloud/data/index.md
-            - name: Обработка файлов
-              href: data-cloud/data/files.md
-            - name: Локальные базы данных
-              href: data-cloud/data/databases.md
-        - name: Службы Azure
-          items:
-            - name: Обзор служб Azure
-              href: data-cloud/azure-services/index.md
-            - name: "База данных документов по Azure\_Cosmos\_DB"
-              href: data-cloud/azure-services/azure-cosmosdb.md
-            - name: Центры уведомлений Azure
-              href: data-cloud/azure-services/azure-notification-hub.md
-            - name: Хранилище Azure
-              href: data-cloud/azure-services/azure-storage.md
-            - name: Поиск Azure
-              href: data-cloud/azure-services/azure-search.md
-            - name: Проверка
-              href: data-cloud/azure-services/azure-functions.md
-            - name: Служба Azure SignalR
-              href: data-cloud/azure-services/azure-signalr.md
-        - name: Azure Cognitive Services
-          items:
-            - name: Обзор Cognitive Services
-              href: data-cloud/azure-cognitive-services/index.md
-            - name: Вступление
-              href: data-cloud/azure-cognitive-services/introduction.md
-            - name: Распознавание речи
-              href: data-cloud/azure-cognitive-services/speech-recognition.md
-            - name: Проверка орфографии
-              href: data-cloud/azure-cognitive-services/spell-check.md
-            - name: Преобразование текста
-              href: data-cloud/azure-cognitive-services/text-translation.md
-            - name: Распознанное распознавание эмоций
-              href: data-cloud/azure-cognitive-services/emotion-recognition.md
-        - name: Веб-службы
-          items:
-            - name: Общие сведения о веб-службах
-              href: data-cloud/web-services/index.md
-            - name: Вступление
-              href: data-cloud/web-services/introduction.md
-            - name: ASMX
-              href: data-cloud/web-services/asmx.md
-            - name: WCF
-              href: data-cloud/web-services/wcf.md
-            - name: REST
-              href: data-cloud/web-services/rest.md
-        - name: Проверка подлинности
-          items:
-            - name: Общие сведения об аутентификации
-              href: data-cloud/authentication/index.md
-            - name: REST
-              href: data-cloud/authentication/rest.md
-            - name: Azure Active Directory B2C
-              href: data-cloud/authentication/azure-ad-b2c.md
-            - name: "Аутентификация в Azure\_Cosmos\_DB"
-              href: data-cloud/authentication/azure-cosmosdb-auth.md
-    - name: Тестирование и развертывание
-      items:
-        - name: Обзор
-          href: deploy-test/index.yml
-        - name: Повышение производительности
-          href: deploy-test/performance.md
-        - name: Горячий перезапуск
-          href: deploy-test/hot-restart.md
-        - name: "Автоматизация тестирования в Центре приложений Visual\_Studio"
-          href: /appcenter/test-cloud/uitest/get-started-xamarin-forms
-        - name: Публикация приложений iOS
-          href: ~/ios/deploy-test/app-distribution/index.md
-        - name: Публикация приложений Android
-          href: ~/android/deploy-test/publishing/index.md
-        - name: Публикация приложений UWP
-          href: /windows/uwp/packaging/
-        - name: Публикация приложений Mac
-          href: ~/mac/deploy-test/publishing-to-the-app-store/index.md
-    - name: Дополнительные понятия и внутренние компоненты
-      items:
-        - name: Обзор
-          href: internals/index.md
-        - name: Иерархия классов элементов управления
-          href: internals/class-hierarchy.md
-        - name: Разрешение зависимостей
-          href: internals/dependency-resolution.md
-        - name: Флаги экспериментального режима
-          href: internals/experimental-flags.md
-        - name: Быстрые отрисовщики
-          href: internals/fast-renderers.md
-        - name: Source Link
-          href: internals/sourcelink.md
-    - name: Устранение неполадок
-      href: troubleshooting/index.md
-      items:
-        - name: Вопросы и ответы
-          href: troubleshooting/questions/index.md
-          items:
-            - name: Можно ли обновить шаблон по умолчанию Xamarin.Forms до более поздней версии пакета NuGet?
-              href: troubleshooting/questions/update-forms-template.md
-            - name: Почему конструктор XAML в Visual Studio не работает с XAML-файлами Xamarin.Forms?
-              href: troubleshooting/questions/forms-xaml-designer.md
-            - name: 'Ошибка сборки Android: Непредвиденный сбой задачи LinkAssemblies'
-              href: troubleshooting/questions/android-linkassemblies-error.md
-            - name: 'Почему проект Android Xamarin.Forms.Maps завершается ошибкой COMPILETODALVIK: непредвиденная высокоуровневая ошибка?'
-              href: troubleshooting/questions/maps-compiletodalvik-error.md
-    - name: заметки о выпуске;
-      href: 'https://docs.microsoft.com/xamarin/xamarin-forms/release-notes/'
-    - name: Примеры
-      href: samples/index.md
-    - name: Создание мобильных приложений с помощью Xamarin.Forms (книга)
-      href: creating-mobile-apps-xamarin-forms/index.md
-    - name: Электронная книга "Шаблоны корпоративного приложения"
-      href: enterprise-application-patterns/index.md
-    - name: Графика SkiaSharp в Xamarin.Forms
-      href: user-interface/graphics/skiasharp/index.md
+href: index.yml
+items:
+  - name: Приступая к работе
+    href: ~/get-started/index.yml
+    items:
+      - name: Что такое Xamarin.Forms?
+        href: ~/get-started/what-is-xamarin-forms.md
+      - name: Установка
+        href: ~/get-started/installation/index.md
+        items:
+          - name: Установка Xamarin в Windows
+            href: ~/get-started/installation/windows.md
+            items:
+              - name: Установка предварительных версий Xamarin в Windows
+                href: ~/get-started/installation/windows-preview.md
+              - name: Удаление Xamarin из Visual Studio
+                href: ~/get-started/installation/uninstalling-xamarin.md
+          - name: Установка Visual Studio для Mac
+            href: /visualstudio/mac/installation/
+            items:
+              - name: Установка предварительных версий Xamarin в Mac
+                href: /visualstudio/mac/update/
+              - name: Удаление Visual Studio для Mac
+                href: /visualstudio/mac/uninstall
+          - name: Инструкции по настройке брандмауэра Xamarin
+            href: ~/get-started/installation/firewall.md
+      - name: Поддерживаемые платформы
+        href: ~/get-started/supported-platforms.md
+      - name: Первое приложение
+        href: ~/get-started/first-app/index.md
+      - name: Краткие руководства
+        href: ~/get-started/quickstarts/index.md
+        items:
+          - name: Файл > Создать
+            href: ~/get-started/quickstarts/single-page.md
+          - name: Многостраничное приложение
+            href: ~/get-started/quickstarts/multi-page.md
+          - name: База данных
+            href: ~/get-started/quickstarts/database.md
+          - name: Задание стиля
+            href: ~/get-started/quickstarts/styling.md
+          - name: Подробный обзор
+            href: ~/get-started/quickstarts/deepdive.md
+      - name: Учебники
+        href: ~/get-started/tutorials/index.yml
+        items:
+          - name: Макет "стопка"
+            href: ~/get-started/tutorials/stacklayout/index.yml
+          - name: Метка
+            href: ~/get-started/tutorials/label/index.yml
+          - name: Кнопка
+            href: ~/get-started/tutorials/button/index.yml
+          - name: Ввод текст
+            href: ~/get-started/tutorials/entry/index.yml
+          - name: Текстовый редактор
+            href: ~/get-started/tutorials/editor/index.yml
+          - name: Образы
+            href: ~/get-started/tutorials/image/index.yml
+          - name: Макет Grid
+            href: ~/get-started/tutorials/grid/index.yml
+          - name: Списки
+            href: ~/get-started/tutorials/listview/index.yml
+          - name: Всплывающие окна
+            href: ~/get-started/tutorials/pop-ups/index.yml
+          - name: Жизненный цикл приложения
+            href: ~/get-started/tutorials/app-lifecycle/index.yml
+          - name: Локальная база данных
+            href: ~/get-started/tutorials/local-database/index.yml
+          - name: Веб-службы
+            href: ~/get-started/tutorials/web-service/index.yml
+      - name: Дополнительные сведения о Xamarin
+        items:
+          - name: 'Разработчики, использующие .NET'
+            href: ~/cross-platform/desktop/index.md
+          - name: 'Разработчики, использующие Java'
+            href: ~/android/get-started/java-developers.md
+          - name: 'Разработчики, использующие Objective-C'
+            href: ~/ios/get-started/objective-c-developers/index.md
+          - name: Azure
+            href: ~/xamarin-forms/data-cloud/index.yml
+      - name: Рекомендации по разработке
+        href: ~/cross-platform/index.yml
+  - name: XAML
+    items:
+      - name: Обзор
+        href: xaml/index.yml
+      - name: Основы XAML
+        href: xaml/xaml-basics/index.md
+        items:
+          - name: "Часть\_1. Начало работы с XAML"
+            href: xaml/xaml-basics/get-started-with-xaml.md
+          - name: "Часть\_2. Основной синтаксис XAML"
+            href: xaml/xaml-basics/essential-xaml-syntax.md
+          - name: "Часть\_3. Расширения разметки XAML"
+            href: xaml/xaml-basics/xaml-markup-extensions.md
+          - name: "Часть\_4. Основы привязки данных"
+            href: xaml/xaml-basics/data-binding-basics.md
+          - name: "Часть\_5. От привязки данных до MVVM"
+            href: xaml/xaml-basics/data-bindings-to-mvvm.md
+      - name: Элементы управления XAML
+        href: xaml/xaml-controls.md
+      - name: Компиляция XAML
+        href: xaml/xamlc.md
+      - name: Расширения разметки XAML
+        href: xaml/markup-extensions/index.md
+        items:
+          - name: Использование расширений разметки XAML
+            href: xaml/markup-extensions/consuming.md
+          - name: Создание расширений разметки XAML
+            href: xaml/markup-extensions/creating.md
+      - name: Инструментарий
+        items:
+          - name: Горячая перезагрузка XAML
+            href: xaml/hot-reload.md
+          - name: Инструментарий XAML
+            href: xaml/toolbox.md
+          - name: Средство предварительного просмотра XAML
+            href: xaml/xaml-previewer/index.md
+            items:
+              - name: Данные времени разработки
+                href: xaml/xaml-previewer/design-time-data.md
+              - name: Пользовательские элементы управления
+                href: xaml/xaml-previewer/render-custom-controls.md
+      - name: Пространства имен
+        items:
+          - name: Пространства имен языка XAML
+            href: xaml/namespaces.md
+          - name: "Схемы настраиваемых пространств имен\_XAML"
+            href: xaml/custom-namespace-schemas.md
+          - name: Рекомендуемые префиксы пространств имен XAML
+            href: xaml/custom-prefix.md
+      - name: Дополнительные возможности
+        items:
+          - name: Привязываемые свойства
+            href: xaml/bindable-properties.md
+          - name: Вложенные свойства
+            href: xaml/attached-properties.md
+          - name: Словари ресурсов
+            href: xaml/resource-dictionaries.md
+          - name: Передача аргументов
+            href: xaml/passing-arguments.md
+          - name: Универсальные шаблоны
+            href: xaml/generics.md
+          - name: Модификаторы полей
+            href: xaml/field-modifiers.md
+          - name: Загрузка XAML во время выполнения
+            href: xaml/runtime-load.md
+  - name: Принципы работы приложения
+    items:
+      - name: Обзор
+        href: app-fundamentals/index.yml
+      - name: Специальные возможности
+        href: app-fundamentals/accessibility/index.md
+        items:
+          - name: Свойства автоматизации
+            href: app-fundamentals/accessibility/automation-properties.md
+          - name: Специальные возможности клавиатуры
+            href: app-fundamentals/accessibility/keyboard.md
+      - name: Класс приложения
+        href: app-fundamentals/application-class.md
+      - name: Жизненный цикл приложения
+        href: app-fundamentals/app-lifecycle.md
+      - name: Индексирование приложения и создание прямых ссылок
+        href: app-fundamentals/deep-linking.md
+      - name: поведения
+        href: app-fundamentals/behaviors/index.md
+        items:
+          - name: Вступление
+            href: app-fundamentals/behaviors/introduction.md
+          - name: Присоединенные реакции на события
+            href: app-fundamentals/behaviors/attached.md
+          - name: Реакции на события Xamarin.Forms
+            href: app-fundamentals/behaviors/creating.md
+          - name: Повторно используемые реакции на события
+            href: app-fundamentals/behaviors/reusable/index.md
+            items:
+              - name: EffectBehavior
+                href: app-fundamentals/behaviors/reusable/effect-behavior.md
+              - name: EventToCommandBehavior
+                href: app-fundamentals/behaviors/reusable/event-to-command-behavior.md
+      - name: Пользовательские отрисовщики
+        href: app-fundamentals/custom-renderer/index.md
+        items:
+          - name: Вступление
+            href: app-fundamentals/custom-renderer/introduction.md
+          - name: Базовые классы отрисовщика и собственные элементы управления
+            href: app-fundamentals/custom-renderer/renderers.md
+          - name: Настройка элемента управления Entry
+            href: app-fundamentals/custom-renderer/entry.md
+          - name: Настройка ContentPage
+            href: app-fundamentals/custom-renderer/contentpage.md
+          - name: Настройка закрепления карты
+            href: app-fundamentals/custom-renderer/map-pin.md
+          - name: Настройка ListView
+            href: app-fundamentals/custom-renderer/listview.md
+          - name: Настройка ViewCell
+            href: app-fundamentals/custom-renderer/viewcell.md
+          - name: Настройка WebView
+            href: app-fundamentals/custom-renderer/hybridwebview.md
+          - name: Реализация представления
+            href: app-fundamentals/custom-renderer/view.md
+          - name: Реализация видеопроигрывателя
+            href: app-fundamentals/custom-renderer/video-player/index.md
+            items:
+              - name: Создание видеопроигрывателей платформы
+                href: app-fundamentals/custom-renderer/video-player/player-creation.md
+              - name: Воспроизведение видео через Интернет
+                href: app-fundamentals/custom-renderer/video-player/web-videos.md
+              - name: Привязка источников видео к проигрывателю
+                href: app-fundamentals/custom-renderer/video-player/source-bindings.md
+              - name: Загрузка видеоресурсов приложения
+                href: app-fundamentals/custom-renderer/video-player/loading-resources.md
+              - name: Доступ к видеотеке устройства
+                href: app-fundamentals/custom-renderer/video-player/accessing-library.md
+              - name: Пользовательские элементы управления транспортировкой видео
+                href: app-fundamentals/custom-renderer/video-player/custom-transport.md
+              - name: Настраиваемое размещение видео
+                href: app-fundamentals/custom-renderer/video-player/custom-positioning.md
+      - name: Привязка данных
+        href: app-fundamentals/data-binding/index.md
+        items:
+          - name: Основные привязки
+            href: app-fundamentals/data-binding/basic-bindings.md
+          - name: Режим привязки
+            href: app-fundamentals/data-binding/binding-mode.md
+          - name: Форматирование строки
+            href: app-fundamentals/data-binding/string-formatting.md
+          - name: Путь привязки
+            href: app-fundamentals/data-binding/binding-path.md
+          - name: Преобразователи значений привязки
+            href: app-fundamentals/data-binding/converters.md
+          - name: Относительные привязки
+            href: app-fundamentals/data-binding/relative-bindings.md
+          - name: Резервные значения привязки
+            href: app-fundamentals/data-binding/binding-fallbacks.md
+          - name: Множественные привязки
+            href: app-fundamentals/data-binding/multibinding.md
+          - name: Командный интерфейс
+            href: app-fundamentals/data-binding/commanding.md
+          - name: Скомпилированные привязки
+            href: app-fundamentals/data-binding/compiled-bindings.md
+      - name: DependencyService
+        href: app-fundamentals/dependency-service/index.md
+        items:
+          - name: Вступление
+            href: app-fundamentals/dependency-service/introduction.md
+          - name: Регистрация и разрешение
+            href: app-fundamentals/dependency-service/registration-and-resolution.md
+          - name: Выбор из медиатеки
+            href: app-fundamentals/dependency-service/photo-picker.md
+      - name: Два экрана
+        items:
+          - name: Начало работы
+            href: app-fundamentals/dual-screen/index.md
+          - name: Шаблоны для двух экранов
+            href: app-fundamentals/dual-screen/design-patterns.md
+          - name: Макет TwoPaneView
+            href: app-fundamentals/dual-screen/twopaneview.md
+          - name: Вспомогательный класс DualScreenInfo
+            href: app-fundamentals/dual-screen/dual-screen-info.md
+          - name: Триггеры для двух экранов
+            href: app-fundamentals/dual-screen/triggers.md
+      - name: Произведенный эффект
+        href: app-fundamentals/effects/index.md
+        items:
+          - name: Вступление
+            href: app-fundamentals/effects/introduction.md
+          - name: Создание эффекта
+            href: app-fundamentals/effects/creating.md
+          - name: Передача параметров
+            href: app-fundamentals/effects/passing-parameters/index.md
+            items:
+              - name: Параметры в качестве свойств среды CLR
+                href: app-fundamentals/effects/passing-parameters/clr-properties.md
+              - name: Параметры в качестве вложенных свойств
+                href: app-fundamentals/effects/passing-parameters/attached-properties.md
+          - name: Вызов событий
+            href: app-fundamentals/effects/touch-tracking.md
+          - name: Повторно используемый класс RoundEffect
+            href: app-fundamentals/effects/reusable-roundeffect.md
+      - name: Жесты
+        href: app-fundamentals/gestures/index.md
+        items:
+          - name: Касание
+            href: app-fundamentals/gestures/tap.md
+          - name: Сжатие
+            href: app-fundamentals/gestures/pinch.md
+          - name: Сдвиг
+            href: app-fundamentals/gestures/pan.md
+          - name: Прокрутка
+            href: app-fundamentals/gestures/swipe.md
+      - name: Локальные уведомления
+        href: app-fundamentals/local-notifications.md
+      - name: Локализация
+        href: app-fundamentals/localization/index.md
+        items:
+          - name: Локализация строк и изображений
+            href: app-fundamentals/localization/text.md
+          - name: Локализация справа налево
+            href: app-fundamentals/localization/right-to-left.md
+      - name: MessagingCenter
+        href: app-fundamentals/messaging-center.md
+      - name: Навигация
+        href: app-fundamentals/navigation/index.md
+        items:
+          - name: Иерархическая навигация
+            href: app-fundamentals/navigation/hierarchical.md
+          - name: TabbedPage
+            href: app-fundamentals/navigation/tabbed-page.md
+          - name: CarouselPage
+            href: app-fundamentals/navigation/carousel-page.md
+          - name: MasterDetailPage
+            href: app-fundamentals/navigation/master-detail-page.md
+          - name: Модальные страницы
+            href: app-fundamentals/navigation/modal.md
+      - name: Оболочка
+        href: app-fundamentals/shell/index.md
+        items:
+          - name: Вступление
+            href: app-fundamentals/shell/introduction.md
+          - name: Создание приложения оболочки
+            href: app-fundamentals/shell/create.md
+          - name: Flyout
+            href: app-fundamentals/shell/flyout.md
+          - name: Вкладки
+            href: app-fundamentals/shell/tabs.md
+          - name: Конфигурация страницы
+            href: app-fundamentals/shell/configuration.md
+          - name: Навигация
+            href: app-fundamentals/shell/navigation.md
+          - name: Поиск
+            href: app-fundamentals/shell/search.md
+          - name: Жизненный цикл
+            href: app-fundamentals/shell/lifecycle.md
+          - name: Пользовательские отрисовщики
+            href: app-fundamentals/shell/customrenderers.md
+      - name: Шаблоны
+        items:
+          - name: Обзор
+            href: app-fundamentals/templates/index.md
+          - name: Шаблоны элементов управления
+            href: app-fundamentals/templates/control-template.md
+          - name: Шаблоны данных
+            href: app-fundamentals/templates/data-templates/index.md
+            items:
+              - name: Вступление
+                href: app-fundamentals/templates/data-templates/introduction.md
+              - name: Создание шаблона данных
+                href: app-fundamentals/templates/data-templates/creating.md
+              - name: Выбор шаблона данных
+                href: app-fundamentals/templates/data-templates/selector.md
+      - name: Триггеры
+        href: app-fundamentals/triggers.md
+  - name: Пользовательский интерфейс
+    items:
+      - name: Обзор
+        href: user-interface/index.yml
+      - name: Разметка C#
+        href: user-interface/csharp-markup.md
+      - name: Справочник по элементам управления
+        items:
+          - name: Обзор
+            href: user-interface/controls/index.md
+          - name: Pages
+            href: user-interface/controls/pages.md
+          - name: Макеты
+            href: user-interface/controls/layouts.md
+          - name: Представления
+            href: user-interface/controls/views.md
+          - name: Ячейки
+            href: user-interface/controls/cells.md
+          - name: 'Общие свойства, методы и события'
+            href: user-interface/controls/common-properties.md
+          - name: Сторонние элементы управления
+            href: user-interface/controls/thirdparty.md
+      - name: Представление данных
+        items:
+          - name: BoxView
+            href: user-interface/boxview.md
+          - name: Expander
+            href: user-interface/expander.md
+          - name: Изображение
+            href: user-interface/images.md
+          - name: Метка
+            href: user-interface/text/label.md
+          - name: Карта
+            items:
+              - name: Обзор
+                href: user-interface/map/index.md
+              - name: Инициализация и настройка
+                href: user-interface/map/setup.md
+              - name: Элемент управления картой
+                href: user-interface/map/map.md
+              - name: Размещение и расстояние
+                href: user-interface/map/position-distance.md
+              - name: Маркеры
+                href: user-interface/map/pins.md
+              - name: 'Многоугольники, ломаные линии и круги'
+                href: user-interface/map/polygons.md
+              - name: Геокодирование
+                href: user-interface/map/geocoder.md
+              - name: Запуск собственного приложения для работы с картой
+                href: user-interface/map/native-map-app.md
+          - name: MediaElement
+            href: user-interface/mediaelement.md
+          - name: Фигуры
+            items:
+              - name: Обзор
+                href: user-interface/shapes/index.md
+              - name: Ellipse
+                href: user-interface/shapes/ellipse.md
+              - name: Правила заливки
+                href: user-interface/shapes/fillrules.md
+              - name: Геометрия
+                href: user-interface/shapes/geometries.md
+              - name: Строка
+                href: user-interface/shapes/line.md
+              - name: Пути
+                items:
+                  - name: Path
+                    href: user-interface/shapes/path.md
+                  - name: Синтаксис разметки пути
+                    href: user-interface/shapes/path-markup-syntax.md
+                  - name: Преобразования пути
+                    href: user-interface/shapes/path-transforms.md
+              - name: Polygon
+                href: user-interface/shapes/polygon.md
+              - name: Ломаная линия
+                href: user-interface/shapes/polyline.md
+              - name: Прямоугольник
+                href: user-interface/shapes/rectangle.md
+          - name: WebView
+            href: user-interface/webview.md
+      - name: Инициирование команд
+        items:
+          - name: Кнопка
+            href: user-interface/button.md
+          - name: ImageButton
+            href: user-interface/imagebutton.md
+          - name: RadioButton
+            href: user-interface/radiobutton.md
+          - name: RefreshView
+            href: user-interface/refreshview.md
+          - name: Панель поиска
+            href: user-interface/searchbar.md
+          - name: SwipeView
+            href: user-interface/swipeview.md
+      - name: Установка значений
+        items:
+          - name: CheckBox
+            href: user-interface/checkbox.md
+          - name: DatePicker
+            href: user-interface/datepicker.md
+          - name: Slider
+            href: user-interface/slider.md
+          - name: Шаговый переключатель
+            href: user-interface/stepper.md
+          - name: Параметр
+            href: user-interface/switch.md
+          - name: TimePicker
+            href: user-interface/timepicker.md
+      - name: Редактирование текста
+        items:
+          - name: Редактор
+            href: user-interface/text/editor.md
+          - name: Ввод
+            href: user-interface/text/entry.md
+      - name: Обозначение действий
+        items:
+          - name: ActivityIndicator
+            href: user-interface/activityindicator.md
+          - name: ProgressBar
+            href: user-interface/progressbar.md
+      - name: Отображение коллекций
+        items:
+          - name: CarouselView
+            href: user-interface/carouselview/index.md
+            items:
+              - name: Вступление
+                href: user-interface/carouselview/introduction.md
+              - name: Данные
+                href: user-interface/carouselview/populate-data.md
+              - name: Макет
+                href: user-interface/carouselview/layout.md
+              - name: Взаимодействие
+                href: user-interface/carouselview/interaction.md
+              - name: EmptyView
+                href: user-interface/carouselview/emptyview.md
+              - name: Прокрутка
+                href: user-interface/carouselview/scrolling.md
+          - name: CollectionView
+            href: user-interface/collectionview/index.md
+            items:
+              - name: Вступление
+                href: user-interface/collectionview/introduction.md
+              - name: Данные
+                href: user-interface/collectionview/populate-data.md
+              - name: Макет
+                href: user-interface/collectionview/layout.md
+              - name: Выбранное
+                href: user-interface/collectionview/selection.md
+              - name: EmptyView
+                href: user-interface/collectionview/emptyview.md
+              - name: Прокрутка
+                href: user-interface/collectionview/scrolling.md
+              - name: Группирование
+                href: user-interface/collectionview/grouping.md
+          - name: IndicatorView
+            href: user-interface/indicatorview.md
+          - name: ListView
+            href: user-interface/listview/index.md
+            items:
+              - name: Data Sources
+                href: user-interface/listview/data-and-databinding.md
+              - name: Вид ячейки
+                href: user-interface/listview/customizing-cell-appearance.md
+              - name: Вид списка
+                href: user-interface/listview/customizing-list-appearance.md
+              - name: Интерактивность
+                href: user-interface/listview/interactivity.md
+              - name: Производительность
+                href: user-interface/listview/performance.md
+          - name: Средство выбора
+            href: user-interface/picker/index.md
+            items:
+              - name: Задание свойства ItemsSource средства выбора
+                href: user-interface/picker/populating-itemssource.md
+              - name: Добавление данных в коллекцию элементов средства выбора
+                href: user-interface/picker/populating-items.md
+          - name: TableView
+            href: user-interface/tableview.md
+      - name: Дополнительные элементы управления
+        items:
+          - name: MenuItem
+            href: user-interface/menuitem.md
+          - name: ToolbarItem
+            href: user-interface/toolbaritem.md
+      - name: Основные понятия
+        items:
+          - name: Анимация
+            href: user-interface/animation/index.md
+            items:
+              - name: Простые анимации
+                href: user-interface/animation/simple.md
+              - name: Функции плавности
+                href: user-interface/animation/easing.md
+              - name: Пользовательские анимации
+                href: user-interface/animation/custom.md
+          - name: Цвета
+            href: user-interface/colors.md
+          - name: DataPages
+            href: user-interface/datapages/index.md
+            items:
+              - name: Приступая к работе
+                href: user-interface/datapages/get-started.md
+              - name: Справочник по элементам управления
+                href: user-interface/datapages/controls.md
+          - name: Отображение всплывающих элементов
+            href: user-interface/pop-ups.md
+          - name: Шрифты
+            href: user-interface/text/fonts.md
+          - name: Графика SkiaSharp
+            href: user-interface/graphics/skiasharp/index.md
+          - name: Экран-заставка
+            href: user-interface/splashscreen.md
+          - name: Стили
+            href: user-interface/styles/index.md
+            items:
+              - name: Задание стиля приложений Xamarin.Forms с помощью стилей XAML
+                href: user-interface/styles/xaml/index.md
+                items:
+                  - name: Вступление
+                    href: user-interface/styles/xaml/introduction.md
+                  - name: Явные стили
+                    href: user-interface/styles/xaml/explicit.md
+                  - name: Неявные стили
+                    href: user-interface/styles/xaml/implicit.md
+                  - name: Глобальные стили
+                    href: user-interface/styles/xaml/application.md
+                  - name: Наследование стилей
+                    href: user-interface/styles/xaml/inheritance.md
+                  - name: Динамические стили
+                    href: user-interface/styles/xaml/dynamic.md
+                  - name: Стили устройства
+                    href: user-interface/styles/xaml/device.md
+                  - name: Классы стилей
+                    href: user-interface/styles/xaml/style-class.md
+              - name: Задание стиля приложений Xamarin.Forms с помощью каскадных таблиц стилей (CSS)
+                href: user-interface/styles/css/index.md
+          - name: Темы
+            href: user-interface/theming/index.md
+            items:
+              - name: Создание темы для приложения
+                href: user-interface/theming/theming.md
+              - name: Реагирование на изменения темы системы
+                href: user-interface/theming/system-theme-changes.md
+          - name: Визуальный элемент
+            href: user-interface/visual/index.md
+            items:
+              - name: Визуальный элемент материала
+                href: user-interface/visual/material-visual.md
+              - name: Создание отрисовщика визуальных элементов
+                href: user-interface/visual/create.md
+          - name: Диспетчер визуального представления состояний
+            href: user-interface/visual-state-manager.md
+      - name: Макеты
+        items:
+          - name: Обзор
+            href: user-interface/layouts/index.yml
+          - name: Выбор макета
+            href: user-interface/layouts/choose-layout.md
+          - name: Основные макеты
+            items:
+              - name: AbsoluteLayout
+                href: user-interface/layouts/absolute-layout.md
+              - name: FlexLayout
+                href: user-interface/layouts/flex-layout.md
+              - name: Grid
+                href: user-interface/layouts/grid.md
+              - name: RelativeLayout
+                href: user-interface/layouts/relative-layout.md
+              - name: StackLayout
+                href: user-interface/layouts/stacklayout.md
+          - name: Дополнительные макеты
+            items:
+              - name: ContentView
+                href: user-interface/layouts/contentview.md
+              - name: Frame
+                href: user-interface/layouts/frame.md
+              - name: ScrollView
+                href: user-interface/layouts/scrollview.md
+          - name: Основные понятия
+            items:
+              - name: Привязываемые макеты
+                href: user-interface/layouts/bindable-layouts.md
+              - name: Пользовательские макеты
+                href: user-interface/layouts/custom.md
+              - name: Ориентация устройства
+                href: user-interface/layouts/device-orientation.md
+              - name: LayoutOptions
+                href: user-interface/layouts/layout-options.md
+              - name: Сжатие макета
+                href: user-interface/layouts/layout-compression.md
+              - name: Поля и заполнение
+                href: user-interface/layouts/margin-and-padding.md
+              - name: Планшет и настольный компьютер
+                href: user-interface/layouts/tablet.md
+  - name: Функции платформы
+    items:
+      - name: Обзор
+        href: platform/index.yml
+      - name: Android
+        items:
+          - name: Обзор
+            href: platform/android/index.md
+          - name: Миграция AndroidX
+            href: platform/android/androidx-migration.md
+          - name: AppCompat и материальное исполнение
+            href: platform/android/appcompat-material-design.md
+          - name: Заполнение и тени кнопки
+            href: platform/android/button-padding-shadow.md
+          - name: Параметры редактора метода ввода записей
+            href: platform/android/entry-ime-options.md
+          - name: Тени для ImageButton
+            href: platform/android/imagebutton-drop-shadow.md
+          - name: Быстрая прокрутка ListView
+            href: platform/android/listview-fast-scrolling.md
+          - name: Высота панели NavigationPage
+            href: platform/android/navigationpage-bar-height.md
+          - name: События жизненного цикла приложения
+            href: platform/android/page-lifecycle-events.md
+          - name: Режим ввода с программной клавиатуры
+            href: platform/android/soft-keyboard-input-mode.md
+          - name: Режим перехода для прокрутки SwipeView
+            href: platform/android/swipeview-swipetransitionmode.md
+          - name: Прокрутка страницы TabbedPage
+            href: platform/android/tabbedpage-page-swiping.md
+          - name: Анимация при смене страницы TabbedPage
+            href: platform/android/tabbedpage-transition-animations.md
+          - name: Цвет и расположение панели инструментов TabbedPage
+            href: platform/android/tabbedpage-toolbar-placement-color.md
+          - name: Контекстные действия ViewCell
+            href: platform/android/viewcell-context-actions.md
+          - name: Повышение прав VisualElement
+            href: platform/android/visualelement-elevation.md
+          - name: Устаревший цветовой режим VisualElement
+            href: platform/android/legacy-color-mode.md
+          - name: Смешанное содержимое WebView
+            href: platform/android/webview-mixed-content.md
+          - name: Масштабирование WebView
+            href: platform/android/webview-zoom-controls.md
+      - name: iOS
+        items:
+          - name: Обзор
+            href: platform/ios/index.md
+          - name: 'Специальные возможности: масштабирование для именованных размеров шрифта'
+            href: platform/ios/named-font-size-scaling.md
+          - name: Цвет фона ячейки
+            href: platform/ios/cell-background-color.md
+          - name: Выбор элемента DatePicker
+            href: platform/ios/datepicker-selection.md
+          - name: Цвет курсора в поле ввода
+            href: platform/ios/entry-cursor-color.md
+          - name: Размер шрифта вводимого текста
+            href: platform/ios/entry-font-size.md
+          - name: Форматирование
+            href: platform/ios/formatting.md
+          - name: Стиль представления модальной страницы
+            href: platform/ios/page-presentation-style.md
+          - name: Крупные заголовки страниц
+            href: platform/ios/page-large-title.md
+          - name: Стиль заголовка группы ListView
+            href: platform/ios/listview-group-header-style.md
+          - name: Анимации строк ListView
+            href: platform/ios/listview-row-animations.md
+          - name: Стиль разделителя ListView
+            href: platform/ios/listview-separator-style.md
+          - name: Обновления элементов управления основного потока
+            href: platform/ios/main-thread-updates-ui.md
+          - name: Тень MasterDetailPage
+            href: platform/ios/masterdetailpage-shadow.md
+          - name: Разделитель панели NavigationPage
+            href: platform/ios/navigation-bar-separator.md
+          - name: Цветовой режим текста панели NavigationPage
+            href: platform/ios/status-bar-text-color.md
+          - name: Полупрозрачность панели NavigationPage
+            href: platform/ios/navigation-bar-translucent.md
+          - name: Видимость индикатора домашней страницы
+            href: platform/ios/page-home-indicator.md
+          - name: Видимость строки состояния страницы
+            href: platform/ios/page-status-bar-visibility.md
+          - name: Выбор элемента средства выбора
+            href: platform/ios/picker-selection.md
+          - name: Направляющая макета безопасной области
+            href: platform/ios/page-safe-area-layout.md
+          - name: Касания содержимого ScrollView
+            href: platform/ios/scrollview-content-touches.md
+          - name: Стиль панели поиска
+            href: platform/ios/searchbar-style.md
+          - name: Распознавание одновременных жестов сдвига
+            href: platform/ios/application-pan-gesture.md
+          - name: Касание ползунка
+            href: platform/ios/slider-thumb.md
+          - name: Режим перехода для прокрутки SwipeView
+            href: platform/ios/swipeview-swipetransitionmode.md
+          - name: Полупрозрачная панель вкладок TabbedPage
+            href: platform/ios/tabbedpage-translucent-tabbar.md
+          - name: Выбор элемента TimePicker
+            href: platform/ios/timepicker-selection.md
+          - name: Размытие VisualElement
+            href: platform/ios/visualelement-blur.md
+          - name: Тени для VisualElement
+            href: platform/ios/visualelement-drop-shadow.md
+          - name: Устаревший цветовой режим VisualElement
+            href: platform/ios/legacy-color-mode.md
+          - name: Оперативное отвечающее устройство VisualElement
+            href: platform/ios/visualelement-first-responder.md
+      - name: Windows
+        items:
+          - name: Обзор
+            href: platform/windows/index.md
+          - name: Каталог изображений по умолчанию
+            href: platform/windows/default-image-directory.md
+          - name: Порядок чтения InputView
+            href: platform/windows/inputview-reading-order.md
+          - name: SelectionMode для ListView
+            href: platform/windows/listview-selectionmode.md
+          - name: Панель навигации MasterDetailPage
+            href: platform/windows/masterdetailpage-navigation-bar.md
+          - name: Положение панели инструментов страницы
+            href: platform/windows/page-toolbar-placement.md
+          - name: Настройка платформы
+            href: platform/windows/installation/index.md
+          - name: Направление движения RefreshView
+            href: platform/windows/refreshview-pulldirection.md
+          - name: Проверка орфографии в SearchBar
+            href: platform/windows/searchbar-spell-check.md
+          - name: Значки TabbedPage
+            href: platform/windows/tabbedpage-icons.md
+          - name: Ключи доступа VisualElement
+            href: platform/windows/visualelement-access-keys.md
+          - name: Устаревший цветовой режим VisualElement
+            href: platform/windows/legacy-color-mode.md
+          - name: Оповещения JavaScript WebView
+            href: platform/windows/webview-javascript-alert.md
+      - name: Создание особенностей платформы
+        href: platform/platform-specifics/index.md
+      - name: Класс устройства
+        href: platform/device.md
+      - name: Собственные формы
+        href: platform/native-forms.md
+      - name: Собственные представления
+        href: platform/native-views/index.md
+        items:
+          - name: Собственные представления в XAML
+            href: platform/native-views/xaml.md
+          - name: Собственные представления в C#
+            href: platform/native-views/code.md
+      - name: Вход с помощью Apple
+        href: platform/sign-in-with-apple/index.md
+        items:
+          - name: Настройка для iOS
+            href: ~/ios/platform/ios13/sign-in.md
+          - name: Настройка для других платформ
+            href: platform/sign-in-with-apple/setup.md
+          - name: Использование входа с помощью Apple
+            href: platform/sign-in-with-apple/android-ios-sign-in.md
+      - name: Другие платформы
+        href: platform/other/index.md
+        items:
+          - name: GTK#
+            href: platform/other/gtk.md
+          - name: Mac
+            href: platform/other/mac.md
+          - name: Tizen
+            href: platform/other/tizen.md
+          - name: WPF
+            href: platform/other/wpf.md
+  - name: Xamarin.Essentials
+    href: ~/essentials/index.md?context=xamarin/xamarin-forms
+    items:
+      - name: Приступая к работе
+        href: ~/essentials/get-started.md?context=xamarin/xamarin-forms
+      - name: Поддержка платформы и компонентов
+        href: ~/essentials/platform-feature-support.md?context=xamarin/xamarin-forms
+      - name: Акселерометр
+        href: ~/essentials/accelerometer.md?context=xamarin/xamarin-forms
+      - name: Сведения о приложении
+        href: ~/essentials/app-information.md?context=xamarin/xamarin-forms
+      - name: Тема приложения
+        href: ~/essentials/app-theme.md?context=xamarin/xamarin-forms
+      - name: Барометр
+        href: ~/essentials/barometer.md?context=xamarin/xamarin-forms
+      - name: Батарея
+        href: ~/essentials/battery.md?context=xamarin/xamarin-forms
+      - name: буфер обмена
+        href: ~/essentials/clipboard.md?context=xamarin/xamarin-forms
+      - name: Преобразователи цвета
+        href: ~/essentials/color-converters.md?context=xamarin/xamarin-forms
+      - name: Компас
+        href: ~/essentials/compass.md?context=xamarin/xamarin-forms
+      - name: Подключение
+        href: ~/essentials/connectivity.md?context=xamarin/xamarin-forms
+      - name: Обнаружение тряски
+        href: ~/essentials/detect-shake.md?context=xamarin/xamarin-forms
+      - name: Сведения о дисплее устройства
+        href: ~/essentials/device-display.md?context=xamarin/xamarin-forms
+      - name: Сведения об устройстве
+        href: ~/essentials/device-information.md?context=xamarin/xamarin-forms
+      - name: Адрес эл. почты
+        href: ~/essentials/email.md?context=xamarin/xamarin-forms
+      - name: Вспомогательные методы для файловой системы
+        href: ~/essentials/file-system-helpers.md?context=xamarin/xamarin-forms
+      - name: Фонарик
+        href: ~/essentials/flashlight.md?context=xamarin/xamarin-forms
+      - name: Геокодирование
+        href: ~/essentials/geocoding.md?context=xamarin/xamarin-forms
+      - name: Геопозиционирование
+        href: ~/essentials/geolocation.md?context=xamarin/xamarin-forms
+      - name: Гироскоп
+        href: ~/essentials/gyroscope.md?context=xamarin/xamarin-forms
+      - name: Средство запуска
+        href: ~/essentials/launcher.md?context=xamarin/xamarin-forms
+      - name: Магнитометр
+        href: ~/essentials/magnetometer.md?context=xamarin/xamarin-forms
+      - name: Главный поток
+        href: ~/essentials/main-thread.md?context=xamarin/xamarin-forms
+      - name: Карты
+        href: ~/essentials/maps.md?context=xamarin/xamarin-forms
+      - name: Открыть браузер
+        href: ~/essentials/open-browser.md?context=xamarin/xamarin-forms
+      - name: Датчик ориентации
+        href: ~/essentials/orientation-sensor.md?context=xamarin/xamarin-forms
+      - name: Разрешения
+        href: ~/essentials/permissions.md?context=xamarin/xamarin-forms
+      - name: Телефон
+        href: ~/essentials/phone-dialer.md?context=xamarin/xamarin-forms
+      - name: 'Расширения платформы (размер, прямоугольник, точка)'
+        href: ~/essentials/platform-extensions.md?context=xamarin/xamarin-forms
+      - name: Параметры
+        href: ~/essentials/preferences.md?context=xamarin/xamarin-forms
+      - name: Защищенное хранилище
+        href: ~/essentials/secure-storage.md?context=xamarin/xamarin-forms
+      - name: Общий доступ
+        href: ~/essentials/share.md?context=xamarin/xamarin-forms
+      - name: SMS
+        href: ~/essentials/sms.md?context=xamarin/xamarin-forms
+      - name: Преобразование текста в речь
+        href: ~/essentials/text-to-speech.md?context=xamarin/xamarin-forms
+      - name: Преобразователи единиц
+        href: ~/essentials/unit-converters.md?context=xamarin/xamarin-forms
+      - name: Отслеживание версий
+        href: ~/essentials/version-tracking.md?context=xamarin/xamarin-forms
+      - name: Вибрация
+        href: ~/essentials/vibrate.md?context=xamarin/xamarin-forms
+      - name: Веб-средство проверки подлинности
+        href: ~/essentials/web-authenticator.md?context=xamarin/xamarin-forms
+      - name: Заметки о выпуске Xamarin.Essentials
+        href: 'https://docs.microsoft.com/xamarin/essentials/release-notes/'
+      - name: Устранение неполадок
+        href: ~/essentials/troubleshooting.md?context=xamarin/xamarin-forms
+  - name: Данные и облачные службы Azure
+    items:
+      - name: Обзор
+        href: data-cloud/index.yml
+      - name: Локальное хранилище данных
+        items:
+          - name: Обзор
+            href: data-cloud/data/index.md
+          - name: Обработка файлов
+            href: data-cloud/data/files.md
+          - name: Локальные базы данных
+            href: data-cloud/data/databases.md
+      - name: Службы Azure
+        items:
+          - name: Обзор служб Azure
+            href: data-cloud/azure-services/index.md
+          - name: "База данных документов по Azure\_Cosmos\_DB"
+            href: data-cloud/azure-services/azure-cosmosdb.md
+          - name: Центры уведомлений Azure
+            href: data-cloud/azure-services/azure-notification-hub.md
+          - name: Хранилище Azure
+            href: data-cloud/azure-services/azure-storage.md
+          - name: Поиск Azure
+            href: data-cloud/azure-services/azure-search.md
+          - name: Проверка
+            href: data-cloud/azure-services/azure-functions.md
+          - name: Служба Azure SignalR
+            href: data-cloud/azure-services/azure-signalr.md
+      - name: Azure Cognitive Services
+        items:
+          - name: Обзор Cognitive Services
+            href: data-cloud/azure-cognitive-services/index.md
+          - name: Вступление
+            href: data-cloud/azure-cognitive-services/introduction.md
+          - name: Распознавание речи
+            href: data-cloud/azure-cognitive-services/speech-recognition.md
+          - name: Проверка орфографии
+            href: data-cloud/azure-cognitive-services/spell-check.md
+          - name: Преобразование текста
+            href: data-cloud/azure-cognitive-services/text-translation.md
+          - name: Распознанное распознавание эмоций
+            href: data-cloud/azure-cognitive-services/emotion-recognition.md
+      - name: Веб-службы
+        items:
+          - name: Общие сведения о веб-службах
+            href: data-cloud/web-services/index.md
+          - name: Вступление
+            href: data-cloud/web-services/introduction.md
+          - name: ASMX
+            href: data-cloud/web-services/asmx.md
+          - name: WCF
+            href: data-cloud/web-services/wcf.md
+          - name: REST
+            href: data-cloud/web-services/rest.md
+      - name: Проверка подлинности
+        items:
+          - name: Общие сведения об аутентификации
+            href: data-cloud/authentication/index.md
+          - name: REST
+            href: data-cloud/authentication/rest.md
+          - name: Azure Active Directory B2C
+            href: data-cloud/authentication/azure-ad-b2c.md
+          - name: "Аутентификация в Azure\_Cosmos\_DB"
+            href: data-cloud/authentication/azure-cosmosdb-auth.md
+  - name: Тестирование и развертывание
+    items:
+      - name: Обзор
+        href: deploy-test/index.yml
+      - name: Повышение производительности
+        href: deploy-test/performance.md
+      - name: Горячий перезапуск
+        href: deploy-test/hot-restart.md
+      - name: "Автоматизация тестирования в Центре приложений Visual\_Studio"
+        href: /appcenter/test-cloud/uitest/get-started-xamarin-forms
+      - name: Публикация приложений iOS
+        href: ~/ios/deploy-test/app-distribution/index.md
+      - name: Публикация приложений Android
+        href: ~/android/deploy-test/publishing/index.md
+      - name: Публикация приложений UWP
+        href: /windows/uwp/packaging/
+      - name: Публикация приложений Mac
+        href: ~/mac/deploy-test/publishing-to-the-app-store/index.md
+  - name: Дополнительные понятия и внутренние компоненты
+    items:
+      - name: Обзор
+        href: internals/index.md
+      - name: Иерархия классов элементов управления
+        href: internals/class-hierarchy.md
+      - name: Разрешение зависимостей
+        href: internals/dependency-resolution.md
+      - name: Флаги экспериментального режима
+        href: internals/experimental-flags.md
+      - name: Быстрые отрисовщики
+        href: internals/fast-renderers.md
+      - name: Source Link
+        href: internals/sourcelink.md
+  - name: Устранение неполадок
+    href: troubleshooting/index.md
+    items:
+      - name: Вопросы и ответы
+        href: troubleshooting/questions/index.md
+        items:
+          - name: Можно ли обновить шаблон по умолчанию Xamarin.Forms до более поздней версии пакета NuGet?
+            href: troubleshooting/questions/update-forms-template.md
+          - name: Почему конструктор XAML в Visual Studio не работает с XAML-файлами Xamarin.Forms?
+            href: troubleshooting/questions/forms-xaml-designer.md
+          - name: 'Ошибка сборки Android: Непредвиденный сбой задачи LinkAssemblies'
+            href: troubleshooting/questions/android-linkassemblies-error.md
+          - name: 'Почему проект Android Xamarin.Forms.Maps завершается ошибкой COMPILETODALVIK: непредвиденная высокоуровневая ошибка?'
+            href: troubleshooting/questions/maps-compiletodalvik-error.md
+  - name: заметки о выпуске;
+    href: 'https://docs.microsoft.com/xamarin/xamarin-forms/release-notes/'
+  - name: Примеры
+    href: samples/index.md
+  - name: Создание мобильных приложений с помощью Xamarin.Forms (книга)
+    href: creating-mobile-apps-xamarin-forms/index.md
+  - name: Электронная книга "Шаблоны корпоративного приложения"
+    href: enterprise-application-patterns/index.md
+  - name: Графика SkiaSharp в Xamarin.Forms
+    href: user-interface/graphics/skiasharp/index.md
