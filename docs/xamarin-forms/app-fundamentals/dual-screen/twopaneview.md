@@ -1,6 +1,6 @@
 ---
-title: 'title: "Макет для двух экранов Xamarin.Forms" description: "В этом руководстве рассматривается использование контейнера TwoPaneView из Xamarin.Forms для оптимизации интерфейса приложения на двухэкранных устройствах, таких как Surface Duo и Surface Neo".'
-description: 'ms.prod: xamarin ms.assetid: 17ee8afa-5e7c-4a4f-a9b6-2aca03f30fe3 ms.technology: xamarin-forms author: davidortinau ms.author: daortin ms.date: 02/08/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Макет для двух экранов Xamarin.Forms
+description: В этом руководстве рассматривается использование контейнера TwoPaneView из Xamarin.Forms для оптимизации интерфейса приложения на двухэкранных устройствах, таких как Surface Duo и Surface Neo.
 ms.prod: xamarin
 ms.assetid: 17ee8afa-5e7c-4a4f-a9b6-2aca03f30fe3
 ms.technology: xamarin-forms
@@ -10,16 +10,16 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 28d4b3da44cc1a022b70c0de0720be747e047f9f
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: fb5474c7436cb985a1404b662fcf842f22cfdc0d
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84138896"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937700"
 ---
-# <a name="xamarinforms-dual-screen-layout"></a>Макет для двух экранов Xamarin.Forms
+# <a name="xamarinforms-twopaneview-layout"></a>Xamarin.Forms Макет TwoPaneView
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![Предварительный выпуск API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
 
@@ -27,24 +27,31 @@ ms.locfileid: "84138896"
 
 ## <a name="set-up-twopaneview"></a>Настройка TwoPaneView
 
-Свойство `TwoPaneView.Source` может принимать универсальный код ресурса (URI) или локальный путь к файлу. Воспроизведение начнется сразу после открытия элемента мультимедиа:
+Чтобы создать макет для двух экранов в приложении, выполните указанные ниже действия.
 
-```xaml
-<ContentPage xmlns:dualScreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen">
-    <dualScreen:TwoPaneView>
-        <dualScreen:TwoPaneView.Pane1>
-            <StackLayout>
-                <Label Text="Pane1 Content" />
-            </StackLayout>
-        </dualScreen:TwoPaneView.Pane1>
-        <dualScreen:TwoPaneView.Pane2>
-            <StackLayout>
-                <Label Text="Pane2 Content" />
-            </StackLayout>
-        </dualScreen:TwoPaneView.Pane2>
-    </dualScreen:TwoPaneView>
-</ContentPage>
-```
+1. Выполните [начальные](index.md) инструкции, чтобы добавить NuGet и настроить класс Android `MainActivity`.
+1. Начните с базового макета `TwoPaneView`, используя следующий код XAML:
+
+    ```xaml
+    <ContentPage 
+        xmlns:dualScreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen">
+        <dualScreen:TwoPaneView>
+            <dualScreen:TwoPaneView.Pane1>
+                <StackLayout>
+                    <Label Text="Pane1 Content" />
+                </StackLayout>
+            </dualScreen:TwoPaneView.Pane1>
+            <dualScreen:TwoPaneView.Pane2>
+                <StackLayout>
+                    <Label Text="Pane2 Content" />
+                </StackLayout>
+            </dualScreen:TwoPaneView.Pane2>
+        </dualScreen:TwoPaneView>
+    </ContentPage>
+    ```
+
+> [!TIP]
+> В приведенном выше коде XAML в элементе `ContentPage` опущены многие стандартные атрибуты. При добавлении `TwoPaneView` в приложение не забудьте объявить пространство имен `xmlns:dualScreen`, как показано в примере.
 
 ## <a name="understand-twopaneview-modes"></a>Сведения о режимах TwoPaneView
 

@@ -1,6 +1,6 @@
 ---
-title: 'title: "Создание реакций на событие Xamarin.Forms" description: "Реакции на событие Xamarin.Forms создаются путем наследования от класса Behavior или Behavior<T>.'
-description: 'В этой статье содержатся сведения о создании и использовании реакций на события Xamarin.Forms". ms.prod: xamarin ms.assetid: 300C16FE-A7E0-445B-9099-8E93ABB6F73D ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/06/2016 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Создание реакций на события Xamarin.Forms
+description: Реакции на событие Xamarin.Forms создаются путем наследования от класса Behavior или Behavior<T>. В этой статье содержатся сведения о создании и использовании реакций на события Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: 300C16FE-A7E0-445B-9099-8E93ABB6F73D
 ms.technology: xamarin-forms
@@ -10,18 +10,18 @@ ms.date: 04/06/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 67db30b5caadce75a41755530db2b245562d0304
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: f265d1da894b195402c91cbf9468a11837c53bcf
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84135828"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933716"
 ---
 # <a name="create-xamarinforms-behaviors"></a>Создание реакций на события Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-numericvalidationbehavior)
 
-_Режимы Xamarin.Forms являются производными от класса Behavior или Behavior&lt;T&gt;. В этой статье содержатся сведения о создании и использовании реакций на события Xamarin.Forms._
+Реакции на событие _Xamarin.Forms создаются путем наследования от класса Behavior или Behavior&lt;T&gt;. В этой статье содержатся сведения о создании и использовании реакций на события Xamarin.Forms._
 
 ## <a name="overview"></a>Обзор
 
@@ -113,7 +113,7 @@ entry.Behaviors.Add (new NumericValidationBehavior ());
 
 Во время выполнения реакция на событие будет реагировать на взаимодействие с элементом управления в соответствии с ее реализацией. На следующих снимках экрана показана реакция на событие ввода недопустимого значения:
 
-[![](creating-images/screenshots-sml.png "Sample Application with Xamarin.Forms Behavior")](creating-images/screenshots.png#lightbox "Sample Application with Xamarin.Forms Behavior")
+[![Пример приложения с реакцией на событие Xamarin.Forms](creating-images/screenshots-sml.png)](creating-images/screenshots.png#lightbox "Пример приложения с реакцией на событие Xamarin.Forms")
 
 > [!NOTE]
 > Реакция на событие создается для элементов управления определенного типа (или суперкласса, включающего множество разных элементов управления) и должна добавляться только к совместимым элементам управления. Попытка присоединить реакцию на событие к несовместимому элементу управления может привести к возникновению исключения.

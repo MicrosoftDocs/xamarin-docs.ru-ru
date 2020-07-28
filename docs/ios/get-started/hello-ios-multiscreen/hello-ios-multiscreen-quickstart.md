@@ -9,18 +9,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: c89a3616bfa239ba919ae9750082bcef48c9f890
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 1b279b125ce88a37ddb3209cfe689a7fef50a256
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73023373"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938753"
 ---
 # <a name="hello-ios-multiscreen--quickstart"></a>Привет, iOS (несколько экранов): краткое руководство
 
 В этой части пошагового руководства вы добавите в приложение Phoneword второй экран с журналом телефонных номеров, на которые из приложения совершались звонки. Итоговое приложение будет иметь второй экран с журналом вызовов, как показано на следующем снимке экрана:
 
-[![](hello-ios-multiscreen-quickstart-images/00.png "The final application will have a second screen that displays the call history, as illustrated by this screenshot")](hello-ios-multiscreen-quickstart-images/00.png#lightbox)
+[![Итоговое приложение будет иметь второй экран с журналом вызовов, как показано на снимке экрана](hello-ios-multiscreen-quickstart-images/00.png)](hello-ios-multiscreen-quickstart-images/00.png#lightbox)
 
 Прилагаемый [подробный обзор](~/ios/get-started/hello-ios-multiscreen/hello-ios-multiscreen-deepdive.md) описывает полученное приложение, а также затрагивает архитектуру, навигацию и другие новые понятия iOS, которые вам встретились.
 
@@ -38,32 +38,32 @@ ms.locfileid: "73023373"
 
 2. Откройте файл **Main.storyboard** из **Панели решения**:
 
-    ![](hello-ios-multiscreen-quickstart-images/02new.png "The Main.storyboard in the iOS Designer")
+    ![Файл Main.storyboard в конструкторе iOS](hello-ios-multiscreen-quickstart-images/02new.png)
 
 3. Перетащите **контроллер навигации** из **панели элементов** в область конструктора (чтобы уместить все элементы в этой области, может потребоваться уменьшить масштаб):
 
-    ![](hello-ios-multiscreen-quickstart-images/03new.png "Drag a navigation controller from the Toolbox onto the design surface")
+    ![Перетаскивание контроллера навигации из панели элементов в область конструктора](hello-ios-multiscreen-quickstart-images/03new.png)
 
 4. Перетащите элемент **Sourceless Segue** (Переход без источника) (это серая стрелка слева от контроллера представления) в **контроллер навигации**, чтобы изменить начальную точку приложения:
 
-    ![](hello-ios-multiscreen-quickstart-images/04new.png "Drag the Sourceless Segue to the navigation controller to change the starting point of the application")
+    ![Перетаскивание перехода без источника на контроллер навигации для изменения начальной точки приложения](hello-ios-multiscreen-quickstart-images/04new.png)
 
 5. Выберите существующий **контроллер корневого представления**, щелкнув нижнюю панель, а затем нажмите клавишу **DELETE**, чтобы удалить его из области конструктора.
 Переместите сцену **Phoneword** к **контроллеру навигации**:
 
-    ![](hello-ios-multiscreen-quickstart-images/05new.png "Move the Phoneword scene next to the navigation controller")
+    ![Перемещение сцены Phoneword к контроллеру навигации](hello-ios-multiscreen-quickstart-images/05new.png)
 
 6. Задайте **ViewController** в качестве **контроллера корневого представления** у контроллера навигации. Нажмите и удерживайте клавишу **CTRL** и щелкните внутри **контроллера навигации**. Должна появиться синяя линия. Затем, продолжая удерживать клавишу **CTRL**, перетащите элементы из **контроллера навигации** в сцену **Phoneword**. Это называется _перетаскиванием с удержанием клавиши CTRL_:
 
-    ![](hello-ios-multiscreen-quickstart-images/06.png "Drag from the navigation controller to the Phoneword scene and release")
+    ![Перетаскивание элементов из контроллера навигации в сцену Phoneword](hello-ios-multiscreen-quickstart-images/06.png)
 
 7. В контекстном меню задайте связь **Корень**:
 
-    ![](hello-ios-multiscreen-quickstart-images/07new.png "Setting the relationship to Root")
+    ![Задание связи "Корень"](hello-ios-multiscreen-quickstart-images/07new.png)
 
     Теперь **ViewController** является **контроллером корневого представления контроллера навигации:**
 
-    ![](hello-ios-multiscreen-quickstart-images/08.png "The ViewController is now the navigation controllers Root view controller")
+    ![Теперь ViewController является контроллером корневого представления у контроллера навигации](hello-ios-multiscreen-quickstart-images/08.png)
 
 8. Дважды щелкните **Phoneword** экрана **заголовок** панели и изменить **заголовок** для **Phoneword**:
 
@@ -71,23 +71,23 @@ ms.locfileid: "73023373"
 
 9. Перетащите элемент **Button** из **панели элементов** и поместите его под элементом **Call Button** (Кнопка вызова). Перетащите маркеры, чтобы сделать новый элемент **Button** такой же ширины, что и элемент **Call Button** (Кнопка вызова):
 
-    ![](hello-ios-multiscreen-quickstart-images/10new.png "Make the new Button the same width as the Call Button")
+    ![Сделайте новый элемент Button такой же ширины, что и элемент Call Button (Кнопка вызова)](hello-ios-multiscreen-quickstart-images/10new.png)
 
 10. На **Панели свойств** измените **имя** кнопки на **CallHistoryButton**, а **заголовок** — на **Call History**:
 
-    ![](hello-ios-multiscreen-quickstart-images/11new.png "Change the Name of the Button to CallHistoryButton and change the Title to Call History")
+    ![Измените "Имя" с Button на CallHistoryButton и измените "Заголовок" на Call History (Журнал вызовов)](hello-ios-multiscreen-quickstart-images/11new.png)
 
 11. Создайте экран **Call History** (Журнал вызовов). Перетащите **контроллер представления таблиц** из **панели элементов** в область конструктора:
 
-    ![](hello-ios-multiscreen-quickstart-images/12new.png "Drag a table view controller onto the design surface")
+    ![Перетащите контроллер представления таблиц в область конструктора](hello-ios-multiscreen-quickstart-images/12new.png)
 
 12. Затем выберите **контроллер представления таблиц**, щелкнув черную полосу в нижней части сцены. На **Панели свойств** измените класс **контроллера представления таблиц** на `CallHistoryController` и нажмите клавишу **ВВОД**:
 
-    ![](hello-ios-multiscreen-quickstart-images/13new.png "Change the table view controllers class to CallHistoryController")
+    ![Изменение класса контроллеров представления таблицы на CallHistoryController](hello-ios-multiscreen-quickstart-images/13new.png)
 
     Конструктор iOS создает пользовательский резервный класс `CallHistoryController` для управления иерархией представлений содержимого на этом экране. На **Панели решения** появляется файл **CallHistoryController.cs**:
 
-    ![](hello-ios-multiscreen-quickstart-images/14new.png "The CallHistoryController.cs file in the Solution Pad")
+    ![Файл CallHistoryController.cs на Панели решения](hello-ios-multiscreen-quickstart-images/14new.png)
 
 13. Дважды щелкните файл **CallHistoryController.cs**, чтобы открыть его, и замените содержимое следующим кодом:
     
@@ -144,17 +144,17 @@ ms.locfileid: "73023373"
 14. Создайте _переход_ между сценой **Phoneword** и сценой **Журнал вызовов**.
   В **сцене Phoneword** выберите **Кнопка журнала вызовов** и, удерживая нажатой клавишу CTRL, перетащите из элемента **Кнопка** в сцену **Журнал вызовов**:
 
-    ![](hello-ios-multiscreen-quickstart-images/15.png "Ctrl-drag from the Button to the Call History scene")
+    ![Удерживая нажатой клавишу CTRL, перетащите из элемента "Кнопка" в сцену "Журнал вызовов"](hello-ios-multiscreen-quickstart-images/15.png)
 
     В контекстном меню **Action Segue** (Переход между действиями) выберите **Показать**.
 
     Конструктор iOS добавляет переход между двумя сценами:
 
-    ![](hello-ios-multiscreen-quickstart-images/17new.png "The Segue between the two scenes")
+    ![Переход между двумя сценами](hello-ios-multiscreen-quickstart-images/17new.png)
 
 15. Добавьте **Заголовок** в **контроллер представления таблиц**, выбрав черную полосу в нижней части сцены и изменив **Контроллер представления > Заголовок** на **Журнал вызовов** на **Панели свойств**:
 
-    ![](hello-ios-multiscreen-quickstart-images/18new.png "Change the view controller title to Call History in the Properties Pad")
+    ![Изменение заголовка контроллера представления на Call History (Журнал вызовов) на Панели свойств](hello-ios-multiscreen-quickstart-images/18new.png)
 
 16. При запуске приложения **Кнопка журнала вызовов** откроет экран **Журнал вызовов**, однако представление таблиц будет пустым, так как отсутствует код для отслеживания и отображения телефонных номеров.
 
@@ -264,7 +264,7 @@ ms.locfileid: "73023373"
 
 18. Нажмите кнопку **Запустить**, чтобы запустить приложение в **симуляторе iOS**:
 
-    ![](hello-ios-multiscreen-quickstart-images/19.png "Press the Start button to launch the application inside the iOS Simulator")
+    ![Нажмите кнопку "Запустить", чтобы запустить приложение в симуляторе iOS.](hello-ios-multiscreen-quickstart-images/19.png)
 
 Поздравляем! Вы создали свое первое приложение Xamarin.iOS с несколькими экранами!
 
@@ -279,38 +279,38 @@ ms.locfileid: "73023373"
 
 2. Сначала измените пользовательский интерфейс. Откройте файл **Main.storyboard** в **обозревателе решений** и убедитесь, что в поле **Просмотреть как** задано значение _iPhone 6_:
 
-    ![](hello-ios-multiscreen-quickstart-images/image1.png "The Main.storyboard in the iOS Designer")
+    ![Файл Main.storyboard в конструкторе iOS](hello-ios-multiscreen-quickstart-images/image1.png)
 
 3. Перетащите **контроллер навигации** из **панели элементов** в область конструктора:
 
-    ![](hello-ios-multiscreen-quickstart-images/image2.png "Drag a navigation controller from the Toolbox onto the design surface")
+    ![Перетаскивание контроллера навигации из панели элементов в область конструктора](hello-ios-multiscreen-quickstart-images/image2.png)
 
 4. Перетащите **переход без источника** (это серая стрелка слева от сцены **Phoneword**) из сцены **Phoneword** на **контроллер навигации**, чтобы изменить начальную точку приложения:
 
-    ![](hello-ios-multiscreen-quickstart-images/image3.png "Drag the Sourceless Segue to the navigation controller to change the starting point of the application")
+    ![Перетаскивание перехода без источника на контроллер навигации для изменения начальной точки приложения](hello-ios-multiscreen-quickstart-images/image3.png)
 
 5. Выберите **контроллер корневого представления**, щелкнув черную полосу, а затем нажмите клавишу **DELETE**, чтобы удалить его из области конструктора.
   Переместите сцену **Phoneword** к **контроллеру навигации**:
 
-    ![](hello-ios-multiscreen-quickstart-images/image4.png "Move the Phoneword scene next to the navigation controller")
+    ![Перемещение сцены Phoneword к контроллеру навигации](hello-ios-multiscreen-quickstart-images/image4.png)
 
 6. Задайте **ViewController** в качестве контроллера корневого представления у контроллера навигации. Нажмите и удерживайте клавишу **CTRL** и щелкните внутри **контроллера навигации**. Должна появиться синяя линия. Затем, продолжая удерживать клавишу **CTRL**, перетащите элементы из **контроллера навигации** в сцену **Phoneword**. Это называется _перетаскиванием с удержанием клавиши CTRL_:
 
-    ![](hello-ios-multiscreen-quickstart-images/image5.png "Drag from the navigation controller to the Phoneword scene and release")
+    ![Перетаскивание элементов из контроллера навигации в сцену Phoneword](hello-ios-multiscreen-quickstart-images/image5.png)
 
 7. В контекстном меню задайте связь **Корень**:
 
-    ![](hello-ios-multiscreen-quickstart-images/image6.png "Set the relationship to Root")
+    ![Задание связи "Корень"](hello-ios-multiscreen-quickstart-images/image6.png)
 
     Теперь **ViewController** является **контроллером корневого представления у контроллера навигации**.
 
 8. Дважды щелкните **Phoneword** экрана **заголовок** панели и изменить **заголовок** для **Phoneword**:
 
-    ![](hello-ios-multiscreen-quickstart-images/image7.png "Change the Title to Phoneword")
+    ![Изменение заголовка на Phoneword](hello-ios-multiscreen-quickstart-images/image7.png)
 
 9. Перетащите элемент **Button** из **панели элементов** и поместите его под элементом **Call Button** (Кнопка вызова). Перетащите маркеры, чтобы сделать новый элемент **Button** такой же ширины, что и элемент **Call Button** (Кнопка вызова):
 
-    ![](hello-ios-multiscreen-quickstart-images/image8.png "Make the new Button the same width as the Call Button")
+    ![Сделайте новый элемент Button такой же ширины, что и элемент Call Button (Кнопка вызова)](hello-ios-multiscreen-quickstart-images/image8.png)
 
 10. В **обозревателе свойств** измените **Имя** с **Button** на `CallHistoryButton` и измените **Заголовок** на **Call History** (Журнал вызовов):
 
@@ -318,15 +318,15 @@ ms.locfileid: "73023373"
 
 11. Создайте экран **Call History** (Журнал вызовов). Перетащите **контроллер представления таблиц** из **панели элементов** в область конструктора:
 
-    ![](hello-ios-multiscreen-quickstart-images/image10.png "Drag a table view controller onto the design surface")
+    ![Перетащите контроллер представления таблиц в область конструктора](hello-ios-multiscreen-quickstart-images/image10.png)
 
 12. Выберите **контроллер представления таблиц**, щелкнув черную полосу в нижней части сцены. В **обозревателе свойств** измените класс **контроллера представления таблиц** на `CallHistoryController` и нажмите клавишу **ВВОД**:
 
-    ![](hello-ios-multiscreen-quickstart-images/image11.png "Change the table view controllers class to CallHistoryController")
+    ![Изменение класса контроллеров представления таблицы на CallHistoryController](hello-ios-multiscreen-quickstart-images/image11.png)
 
     Конструктор iOS создает пользовательский резервный класс `CallHistoryController` для управления иерархией представлений содержимого на этом экране. В **обозревателе решений** появляется файл **CallHistoryController.cs**:
 
-    ![](hello-ios-multiscreen-quickstart-images/image12.png "The CallHistoryController.cs file in the Solution Explorer")
+    ![Файл CallHistoryController.cs в обозревателе решений](hello-ios-multiscreen-quickstart-images/image12.png)
 
 13. Дважды щелкните файл **CallHistoryController.cs**, чтобы открыть его, и замените содержимое следующим кодом:
 
@@ -384,19 +384,19 @@ ms.locfileid: "73023373"
 14. Создайте _переход_ между сценой **Phoneword** и сценой **Журнал вызовов**.
   В **сцене Phoneword** выберите **Кнопку журнала вызовов** и, удерживая нажатой **клавишу CTRL**, перетащите из элемента **Кнопка** в сцену **Журнал вызовов**:
 
-    ![](hello-ios-multiscreen-quickstart-images/image13.png "Ctrl-drag from the Button to the Call History scene")
+    ![Удерживая нажатой клавишу CTRL, перетащите из элемента "Кнопка" в сцену "Журнал вызовов"](hello-ios-multiscreen-quickstart-images/image13.png)
 
     В контекстном меню **Action Segue** (Переход между действиями) выберите **Показать**:
 
-    ![](hello-ios-multiscreen-quickstart-images/image14.png "Select Show as the segue type")
+    ![Выбор типа перехода "Показать"](hello-ios-multiscreen-quickstart-images/image14.png)
 
     Конструктор iOS добавляет переход между двумя сценами:
 
-    ![](hello-ios-multiscreen-quickstart-images/image15.png "The Segue between the two scenes")
+    ![Переход между двумя сценами](hello-ios-multiscreen-quickstart-images/image15.png)
 
 15. Добавьте **Заголовок** в **контроллер представления таблиц**, выбрав черную полосу в нижней части сцены и изменив **Контроллер представления > Заголовок** на **Журнал вызовов** в **обозревателе свойств**:
 
-    ![](hello-ios-multiscreen-quickstart-images/image16.png "Change the view controller Title to Call History")
+    ![Изменение заголовка контроллера представления на Call History (Журнал вызовов)](hello-ios-multiscreen-quickstart-images/image16.png)
 
 16. При запуске приложения **Кнопка журнала вызовов** откроет экран **Журнал вызовов**, однако представление таблиц будет пустым, так как отсутствует код для отслеживания и отображения телефонных номеров.
 
@@ -507,7 +507,7 @@ ms.locfileid: "73023373"
 
 18. Нажмите кнопку **Запустить**, чтобы запустить приложение в **симуляторе iOS**.
 
-    ![](hello-ios-multiscreen-quickstart-images/19.png "The first screen of the sample app")
+    ![Первый экран примера приложения](hello-ios-multiscreen-quickstart-images/19.png)
 
 Поздравляем! Вы создали свое первое приложение Xamarin.iOS с несколькими экранами!
 

@@ -9,12 +9,12 @@ ms.date: 01/06/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5de10511d73614570d6308b6f4deb7b4ca55549a
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: d594e627fed21c3c2a73770313fcae29695370c5
+ms.sourcegitcommit: a658de488a6da916145ed4aa016825565110e767
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84802232"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972562"
 ---
 # <a name="xamarinessentials-permissions"></a>Xamarin.Essentials. Разрешения
 
@@ -148,7 +148,7 @@ public async Task<PermissionStatus> CheckAndRequestPermissionAsync<T>(T permissi
 
 ## <a name="extending-permissions"></a>Расширение разрешений
 
-API разрешений обеспечивает гибкость и расширяемость для приложений, требующих дополнительной проверки или разрешений, которые не включены в Xamarin.Essentials. Создайте класс, наследуемый от `BasePermission`, и реализуйте необходимые абстрактные методы. Следующее действие
+API разрешений обеспечивает гибкость и расширяемость для приложений, требующих дополнительной проверки или разрешений, которые не включены в Xamarin.Essentials. Создайте класс, наследуемый от `BasePermission`, и реализуйте необходимые абстрактные методы.
 
 ```csharp
 public class MyPermission : BasePermission
@@ -175,19 +175,8 @@ public class MyPermission : BasePermission
 
 При реализации разрешения на определенной платформе класс `BasePlatformPermission` может быть унаследован. Это позволяет получить дополнительные вспомогательные методы платформы для автоматической проверки объявлений и может помочь при создании настраиваемых разрешений для группирования. Например, вы можете запросить доступ для чтения и записи к хранилищу на Android, используя следующее настраиваемое разрешение.
 
-Создайте новое разрешение в проекте, из которого вы вызываете разрешения.
-
 ```csharp
-public partial class ReadWriteStoragePermission  : Xamarin.Essentials.Permissions.BasePlatformPermission
-{
-
-}
-```
-
-В своем проекте Android дополните это разрешение теми разрешениями, которые вам нужно запросить.
-
-```csharp
-public partial class ReadWriteStoragePermission : Xamarin.Essentials.Permissions.BasePlatformPermission
+public class ReadWriteStoragePermission : Xamarin.Essentials.Permissions.BasePlatformPermission
 {
     public override (string androidPermission, bool isRuntime)[] RequiredPermissions => new List<(string androidPermission, bool isRuntime)>
     {
@@ -197,10 +186,49 @@ public partial class ReadWriteStoragePermission : Xamarin.Essentials.Permissions
 }
 ```
 
-После этого вы сможете вызвать новое разрешение из общей логики.
+После этого вы сможете вызвать новое разрешение из проекта Android.
 
 ```csharp
 await Permissions.RequestAsync<ReadWriteStoragePermission>();
+```
+
+Если бы вы хотели вызывать этот API из общего кода, можно было бы создать интерфейс и использовать [службу зависимостей](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/dependency-service/) для регистрации и получения реализации.
+
+```csharp
+public interface IReadWritePermission
+{        
+    Task<PermissionStatus> CheckStatusAsync();
+    Task<PermissionStatus> RequestAsync();
+}
+```
+
+Затем реализуйте интерфейс в проекте платформы:
+
+```csharp
+public class ReadWriteStoragePermission : Xamarin.Essentials.Permissions.BasePlatformPermission, IReadWritePermission
+{
+    public override (string androidPermission, bool isRuntime)[] RequiredPermissions => new List<(string androidPermission, bool isRuntime)>
+    {
+        (Android.Manifest.Permission.ReadExternalStorage, true),
+        (Android.Manifest.Permission.WriteExternalStorage, true)
+    }.ToArray();
+}
+```
+
+После этого можно зарегистрировать конкретную реализацию:
+
+```csharp
+DependencyService.Register<IReadWritePermission, ReadWriteStoragePermission>();
+```
+Далее можно разрешить и использовать ее из общего проекта:
+
+```csharp
+var readWritePermission = DependencyService.Get<IReadWritePermission>();
+var status = await readWritePermission.CheckStatusAsync();
+if (status != PermissionStatus.Granted)
+{
+    status = await readWritePermission.RequestAsync();
+}
 ```
 
 ## <a name="platform-implementation-specifics"></a>Особенности реализации для платформ

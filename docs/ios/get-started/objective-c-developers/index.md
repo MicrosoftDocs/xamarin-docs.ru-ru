@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/05/2017
-ms.openlocfilehash: 2c5451b379968230d75599601052e3a33f5b5951
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: c6e1faec24b62464efa1ffb5325844bfed41d110
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73022446"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86932773"
 ---
 # <a name="xamarin-for-objective-c-developers"></a>Xamarin для разработчиков на Objective-C
 
@@ -20,7 +20,7 @@ Xamarin позволяет разработчикам, создающим реш
 
 Кроме того, Xamarin позволяет использовать существующие ресурсы Objective-C через специальную технологию привязок. Вам нужно лишь создать статическую библиотеку на Objective-C и предоставить ее в C# через привязку, как показано на следующей схеме.
 
- [![](images/01-bindings.png "A static library in Objective-C exposed to C# via a binding")](images/01-bindings.png#lightbox)
+ [![Статическая библиотека Objective-C, предоставленная для C# через привязку](images/01-bindings.png)](images/01-bindings.png#lightbox)
 
 Такой подход применим не только для кода без пользовательского интерфейса. Привязки могут предоставлять и код пользовательского интерфейса, разработанный на Objective-C.
 

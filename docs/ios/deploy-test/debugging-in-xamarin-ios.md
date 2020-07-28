@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 141d268e7a5670f9ba8002ae9edda828538a01a4
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 8dc70cc8f1bf29a58cb20540fa538be2025b2ba4
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571796"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86935633"
 ---
 # <a name="debugging-xamarinios-apps"></a>Отладка приложений Xamarin.iOS
 
@@ -33,11 +33,11 @@ _Для отладки приложений Xamarin.iOS можно исполь�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![](debugging-in-xamarin-ios-images/debugging1.png "Setting Breakpoints")](debugging-in-xamarin-ios-images/debugging1.png#lightbox)
+[![Задание точек останова](debugging-in-xamarin-ios-images/debugging1.png)](debugging-in-xamarin-ios-images/debugging1.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![](debugging-in-xamarin-ios-images/debugging1a.png "Setting Breakpoints")](debugging-in-xamarin-ios-images/debugging1a.png#lightbox)
+[![Задание точек останова](debugging-in-xamarin-ios-images/debugging1a.png)](debugging-in-xamarin-ios-images/debugging1a.png#lightbox)
 
 -----
 
@@ -45,13 +45,13 @@ _Для отладки приложений Xamarin.iOS можно исполь�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![](debugging-in-xamarin-ios-images/image0a.png "The Breakpoints pad")](debugging-in-xamarin-ios-images/image0a.png#lightbox)
+[![Панель точек останова](debugging-in-xamarin-ios-images/image0a.png)](debugging-in-xamarin-ios-images/image0a.png#lightbox)
 
  Если панель точки останова не отображается автоматически, выберите _"Представление" > "Отладка Windows" > "Точки останова"_
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![](debugging-in-xamarin-ios-images/image0.png "The Breakpoints pad")](debugging-in-xamarin-ios-images/image0.png#lightbox)
+[![Панель точек останова](debugging-in-xamarin-ios-images/image0.png)](debugging-in-xamarin-ios-images/image0.png#lightbox)
 
  Если панель точки останова не отображается автоматически, выберите _"Отладка" > "Windows" > "Точки останова"_
 
@@ -61,13 +61,13 @@ _Для отладки приложений Xamarin.iOS можно исполь�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![](debugging-in-xamarin-ios-images/debugging7.png "Debugging on simulator")](debugging-in-xamarin-ios-images/debugging7.png#lightbox)
-[![](debugging-in-xamarin-ios-images/debugging7a.png "Debugging on a physical device")](debugging-in-xamarin-ios-images/debugging7a.png#lightbox)
+[![Отладка в симуляторе](debugging-in-xamarin-ios-images/debugging7.png)](debugging-in-xamarin-ios-images/debugging7.png#lightbox)
+[![Отладка на физическом устройстве](debugging-in-xamarin-ios-images/debugging7a.png)](debugging-in-xamarin-ios-images/debugging7a.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![](debugging-in-xamarin-ios-images/debugging7c.png "Debugging on simulator")](debugging-in-xamarin-ios-images/debugging7c.png#lightbox)
-[![](debugging-in-xamarin-ios-images/debugging7d.png "Debugging on a physical device")](debugging-in-xamarin-ios-images/debugging7d.png#lightbox)
+[![Отладка в симуляторе](debugging-in-xamarin-ios-images/debugging7c.png)](debugging-in-xamarin-ios-images/debugging7c.png#lightbox)
+[![Отладка на физическом устройстве](debugging-in-xamarin-ios-images/debugging7d.png)](debugging-in-xamarin-ios-images/debugging7d.png#lightbox)
 
 -----
 
@@ -76,11 +76,11 @@ _Для отладки приложений Xamarin.iOS можно исполь�
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![](debugging-in-xamarin-ios-images/debugging7b.png "Select the target device")](debugging-in-xamarin-ios-images/debugging7b.png#lightbox)
+[![Выбор целевого устройства](debugging-in-xamarin-ios-images/debugging7b.png)](debugging-in-xamarin-ios-images/debugging7b.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![](debugging-in-xamarin-ios-images/debugging7e.png "Select the target device")](debugging-in-xamarin-ios-images/debugging7e.png#lightbox)
+[![Выбор целевого устройства](debugging-in-xamarin-ios-images/debugging7e.png)](debugging-in-xamarin-ios-images/debugging7e.png#lightbox)
 
 -----
 
@@ -88,11 +88,11 @@ _Для отладки приложений Xamarin.iOS можно исполь�
 
 При попадании в точку останова код выделяется желтым цветом:
 
-[![](debugging-in-xamarin-ios-images/image2.png "The code will be highlighted yellow")](debugging-in-xamarin-ios-images/image2.png#lightbox)
+[![Код будет выделен желтым цветом](debugging-in-xamarin-ios-images/image2.png)](debugging-in-xamarin-ios-images/image2.png#lightbox)
 
 На этом этапе вы можете использовать средства отладки, например проверку значений объектов, для получения дополнительных сведений о том, что происходит в коде:
 
-[![](debugging-in-xamarin-ios-images/image3.png "Displaying a color value")](debugging-in-xamarin-ios-images/image3.png#lightbox)
+[![Отображение значения цвета](debugging-in-xamarin-ios-images/image3.png)](debugging-in-xamarin-ios-images/image3.png#lightbox)
 
 ## <a name="conditional-breakpoints"></a>Условные точки останова
 
@@ -104,25 +104,25 @@ _Для отладки приложений Xamarin.iOS можно исполь�
 
 - Чтобы добавить условную точку останова, щелкните правой кнопкой мыши поле редактора слева от номера строки кода, где требуется задать точку останова, а затем выберите пункт "Создать точку останова":
 
-  [![](debugging-in-xamarin-ios-images/image4.png "Select New Breakpoint")](debugging-in-xamarin-ios-images/image4.png#lightbox)
+  [![Выбор новой точки останова](debugging-in-xamarin-ios-images/image4.png)](debugging-in-xamarin-ios-images/image4.png#lightbox)
 
-- Чтобы добавить условие в существующую точку останова, щелкните ее правой кнопкой мыши и выберите пункт **Свойства точки останова** или на **панели точек останова** нажмите кнопку свойств, как показано ниже:
+- Чтобы добавить условие в существующую точку останова, щелкните ее правой кнопкой мыши и выберите пункт ***Свойства точки останова** или на **панели точек останова** нажмите кнопку свойств, как показано ниже:
 
-  [![](debugging-in-xamarin-ios-images/image5.png "The Breakpoints Pad")](debugging-in-xamarin-ios-images/image5.png#lightbox)
+  [![Панель точек останова](debugging-in-xamarin-ios-images/image5.png)](debugging-in-xamarin-ios-images/image5.png#lightbox)
 
 Затем вы можете ввести условие, при котором эта точка останова активируется:
 
-[![](debugging-in-xamarin-ios-images/image6.png "Enter the condition for the breakpoint to occur")](debugging-in-xamarin-ios-images/image6.png#lightbox)
+[![Ввод условия для точки останова](debugging-in-xamarin-ios-images/image6.png)](debugging-in-xamarin-ios-images/image6.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Чтобы задать условную точку останова в Visual Studio, сначала [задайте обычную точку останова](https://github.com/xamarin/recipes/tree/master/Recipes/cross-platform/ide/debugging/set_a_breakpoint). Щелкните точку останова правой кнопкой мыши, чтобы открыть контекстное меню:
 
- [![](debugging-in-xamarin-ios-images/image4vs.png "The breakpoint context menu")](debugging-in-xamarin-ios-images/image4vs.png#lightbox)
+ [![Контекстное меню точки останова](debugging-in-xamarin-ios-images/image4vs.png)](debugging-in-xamarin-ios-images/image4vs.png#lightbox)
 
 Выберите пункт **Условия…** , чтобы открыть меню _Параметры точки останова_:
 
- [![](debugging-in-xamarin-ios-images/image6vs.png "The Breakpoint Settings menu")](debugging-in-xamarin-ios-images/image6vs.png#lightbox)
+ [![Меню параметров точки останова](debugging-in-xamarin-ios-images/image6vs.png)](debugging-in-xamarin-ios-images/image6vs.png#lightbox)
 
 Здесь вы можете ввести условия, при которых эта точка останова активируется
 
@@ -138,7 +138,7 @@ _Для отладки приложений Xamarin.iOS можно исполь�
 
 В Visual Studio для Mac они будут выглядеть так:
 
- [![](debugging-in-xamarin-ios-images/image7.png "The Debug tools enable the developer to get control over the program’s execution")](debugging-in-xamarin-ios-images/image7.png#lightbox)
+ [![Инструменты отладки позволяют разработчику контролировать выполнение программы](debugging-in-xamarin-ios-images/image7.png)](debugging-in-xamarin-ios-images/image7.png#lightbox)
 
 Эти особые значения приведены ниже.
 
@@ -151,7 +151,7 @@ _Для отладки приложений Xamarin.iOS можно исполь�
 
 В Visual Studio они будут выглядеть так:
 
-[![](debugging-in-xamarin-ios-images/image7vs.png "The Debug tools enable the developer to get control over the program’s execution")](debugging-in-xamarin-ios-images/image7vs.png#lightbox)
+[![Инструменты отладки позволяют разработчику контролировать выполнение программы](debugging-in-xamarin-ios-images/image7vs.png)](debugging-in-xamarin-ios-images/image7vs.png#lightbox)
 
 Эти особые значения приведены ниже.
 

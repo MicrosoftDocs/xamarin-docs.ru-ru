@@ -9,12 +9,12 @@ ms.date: 01/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b4d644591ab85f185709e7bd53353580a6578d77
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 1eae29e8531c9d401630f9d113b01eb3c2510689
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84570114"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939169"
 ---
 # <a name="uninstall-xamarin-from-visual-studio"></a>Удаление Xamarin из Visual Studio
 
@@ -30,25 +30,25 @@ Xamarin можно удалить из Visual Studio 2019 и Visual Studio 2
 
 2. Нажмите кнопку **Изменить**, предварительно выбрав изменяемый экземпляр.
 
-    [![](uninstalling-xamarin-images/vs2017-02-sml.png "Press the modify button")](uninstalling-xamarin-images/vs2017-02.png#lightbox)
+    [![Нажатие кнопки "Изменить"](uninstalling-xamarin-images/vs2017-02-sml.png)](uninstalling-xamarin-images/vs2017-02.png#lightbox)
 
 3. На вкладке **Рабочие нагрузки** отмените выбор параметра **Разработка мобильных приложений на платформе .NET** (в разделе **Мобильные приложения и игры**).
 
-    [![](uninstalling-xamarin-images/vs2017-03-sml.png "Uncheck the Mobile Development workload")](uninstalling-xamarin-images/vs2017-03.png#lightbox)
+    [![Отмена выбора рабочей нагрузки "Разработка мобильных приложений"](uninstalling-xamarin-images/vs2017-03-sml.png)](uninstalling-xamarin-images/vs2017-03.png#lightbox)
 
 4. Нажмите кнопку **Изменить** в правом нижнем углу окна.
 
 5. Установщик удалит компоненты, выбор которых отменен (прежде чем установщик сможет вносить изменения, необходимо закрыть Visual Studio 2017).
 
-    [![](uninstalling-xamarin-images/vs2017-04-sml.png "Press the Modify button")](uninstalling-xamarin-images/vs2017-04.png#lightbox)
+    [![Нажатие кнопки "Изменить"](uninstalling-xamarin-images/vs2017-04-sml.png)](uninstalling-xamarin-images/vs2017-04.png#lightbox)
 
 Чтобы удалить отдельные компоненты Xamarin (например, Profiler или Workbooks), на шаге 3 перейдите на вкладку **Отдельные компоненты** и отмените их выбор.
 
-[![](uninstalling-xamarin-images/vs2017-components-sml.png "Uninstall individual components")](uninstalling-xamarin-images/vs2017-components.png#lightbox)
+[![Удаление отдельных компонентов](uninstalling-xamarin-images/vs2017-components-sml.png)](uninstalling-xamarin-images/vs2017-components.png#lightbox)
 
 Чтобы удалить Visual Studio 2017 полностью, в трехстрочном меню рядом с кнопкой **Запустить** выберите пункт **Удалить**.
 
-[![](uninstalling-xamarin-images/vs2017-uninstall-sml.png "Uninstall Visual Studio completely")](uninstalling-xamarin-images/vs2017-uninstall.png#lightbox)
+[![Полное удаление Visual Studio](uninstalling-xamarin-images/vs2017-uninstall-sml.png)](uninstalling-xamarin-images/vs2017-uninstall.png#lightbox)
 
 > [!IMPORTANT]
 > При наличии двух (или более) параллельно установленных (SxS) экземпляров Visual Studio (например, версии выпуска и предварительной версии) удаление одного экземпляра может привести к удалению некоторых компонентов Xamarin из других экземпляров Visual Studio, включая:
@@ -70,7 +70,7 @@ Xamarin можно удалить из Visual Studio 2019 и Visual Studio 2
 
 Xamarin можно удалить с компьютера Windows через **панель управления**. Перейдите к элементу **Программы и компоненты** или **Программы > Удаление программы**, как показано ниже:
 
- [![](uninstalling-xamarin-images/image3.png "Navigate to Programs and Features or Programs  Uninstall a Program as illustrated here")](uninstalling-xamarin-images/image3.png#lightbox)
+ [![Перейдите к элементу "Программы и компоненты" или "Программы" > "Удаление программы", как показано ниже](uninstalling-xamarin-images/image3.png)](uninstalling-xamarin-images/image3.png#lightbox)
 
 В панели управления удалите любые из следующих имеющихся компонентов.
 

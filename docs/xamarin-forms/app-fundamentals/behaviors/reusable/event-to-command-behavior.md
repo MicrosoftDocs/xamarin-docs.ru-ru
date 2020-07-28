@@ -10,12 +10,12 @@ ms.date: 11/09/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 46d1566c89de763a469f30ce8ed2c6ef919f1426
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 0967845ac61ddf5f8e1cc76664a50877d041f011
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135802"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939676"
 ---
 # <a name="reusable-eventtocommandbehavior"></a>Повторно используемый EventToCommandBehavior
 
@@ -201,7 +201,7 @@ selectedItemLabel.SetBinding(Label.TextProperty, "SelectedItemText");
 
 Во время выполнения реакция на событие будет реагировать на взаимодействие с элементом управления. При выборе элемента в [`ListView`](xref:Xamarin.Forms.ListView) активируется событие [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected), из-за чего выполняется `OutputAgeCommand` в модели представления. В свою очередь, это вызывает обновление свойства `SelectedItemText` модели представления, к которому привязан [`Label`](xref:Xamarin.Forms.Label), как показано на следующем снимке экрана:
 
-[![](event-to-command-behavior-images/screenshots-sml.png "Sample Application with EventToCommandBehavior")](event-to-command-behavior-images/screenshots.png#lightbox "Sample Application with EventToCommandBehavior")
+[![Пример приложения с EventToCommandBehavior](event-to-command-behavior-images/screenshots-sml.png)](event-to-command-behavior-images/screenshots.png#lightbox "Пример приложения с EventToCommandBehavior")
 
 Преимуществом использования этой реакции на событие для выполнения команды при возникновении события является то, что команды можно сопоставить с элементами управления, которые не были предназначены для взаимодействия с командами. Кроме того, это удаляет стандартный код обработки событий из файлов кода программной части.
 

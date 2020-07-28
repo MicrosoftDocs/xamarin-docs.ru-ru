@@ -10,12 +10,12 @@ ms.date: 03/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 45b7d0d20c43aa22ebde3a17552f10ceea77a48b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 5367d7933e70c59298faacff85c1d5f533bc0776
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139143"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929285"
 ---
 # <a name="xamarin-hot-restart-preview"></a>Горячий перезапуск Xamarin (предварительная версия)
 
@@ -44,7 +44,7 @@ ms.locfileid: "84139143"
 
 2. Выберите и щелкните элемент **Локальное устройство** на панели инструментов, чтобы запустить мастер установки:
 
-    [![](hot-restart-images/toolbar.png "Screenshot of the Visual Studio toolbar with local device set as the debug target.")](hot-restart-images/toolbar.png)
+    [![Снимок экрана: панель инструментов Visual Studio с локальным устройством, указанным в качестве целевого объекта отладки.](hot-restart-images/toolbar.png)](hot-restart-images/toolbar.png)
 
 3. Если компонент iTunes не установлен, щелкните **Скачать iTunes**, чтобы скачать установщик. После завершения установки iTunes нажмите кнопку **Далее**.
 
@@ -62,7 +62,7 @@ ms.locfileid: "84139143"
 
 Вы можете внести изменения в файлы кода во время отладки, а затем нажмите кнопку **Перезапустить** на панели инструментов отладки или используйте сочетание клавиш **CTRL+ SHIFT+F5** для перезапуска сеанса отладки с применением новых изменений:
 
-[![](hot-restart-images/restart.png "Screenshot of the debug toolbar with the restart button highlighted.")](hot-restart-images/toolbar.png)
+[![Снимок экрана: панель инструментов отладки с выделенной кнопкой перезапуска.](hot-restart-images/restart.png)](hot-restart-images/toolbar.png)
 
 Можете также использовать символ препроцессора `HOTRESTART`, чтобы предотвратить выполнение определенного кода при отладке с использованием горячего перезапуска Xamarin.
 

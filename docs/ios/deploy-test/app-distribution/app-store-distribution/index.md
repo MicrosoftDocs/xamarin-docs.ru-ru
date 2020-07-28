@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/23/2017
-ms.openlocfilehash: ee8ff58566732c6a86a339d3080c7243be4b4a4e
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: c9882944938b2d5136d36304c4a400208a68663a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572199"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937336"
 ---
 # <a name="app-store-distribution"></a>Распространение через App Store
 
@@ -53,13 +53,13 @@ ms.locfileid: "84572199"
 3. Нажмите кнопку **+** , чтобы создать новый сертификат.
 4. В разделе *Production* (Производство) установите флажок **App Store and Ad Hoc** (Магазин приложений и специальный):
 
-    [![](images/createcertmanually01.png "Select App Store and Ad Hoc")](images/createcertmanually01.png#lightbox)
+    [![Выбор пункта App Store and Ad Hoc (Магазин приложений и специальный)](images/createcertmanually01.png)](images/createcertmanually01.png#lightbox)
 5. Нажмите кнопку **Continue** (Продолжить) и следуйте инструкциям, чтобы создать запрос подписи сертификата через доступ к цепочке ключей:
 
-    [![](images/createcertmanually02.png "Create a Certificate Signing Request via Keychain Access")](images/createcertmanually02.png#lightbox)
+    [![Создание запроса подписи сертификата через доступ к цепочке ключей](images/createcertmanually02.png)](images/createcertmanually02.png#lightbox)
 6. После создания запроса согласно инструкции нажмите кнопку **Continue** (Продолжить) и отправьте его в центр участников:
 
-    [![](images/createcertmanually03.png "Upload the CSR to the Member Center")](images/createcertmanually03.png#lightbox)
+    [![Отправка запроса подписи сертификата в центр участников](images/createcertmanually03.png)](images/createcertmanually03.png#lightbox)
 
 7. Нажмите **Generate** (Создать), чтобы создать сертификат.
 8. Наконец, **скачайте** готовый сертификат и дважды щелкните файл, чтобы установить его.
@@ -67,11 +67,11 @@ ms.locfileid: "84572199"
 
 Можно также запросить сертификат в Xcode через диалоговое окно "Preferences" (Параметры). Выполните указанные ниже действия:
 
-1. Выберите свою команду и щелкните **Manage Certificates…** (Управление сертификатами): [![](images/selectteam.png "Выбор команды и просмотр сведений")](images/selectteam.png#lightbox)
+1. Выберите свою команду и нажмите **Manage Certificates** (Управление сертификатами):  [![Выбор команды и просмотр сведений](images/selectteam.png)](images/selectteam.png#lightbox)
 
-2. Затем нажмите кнопку **Create** (Создать) рядом с полем **iOS Distribution Certificate** (Сертификат распространения iOS): [![](images/selectcert.png "Создание сертификата распространения iOS")](images/selectcert.png#lightbox)
+2. Затем нажмите кнопку **Create** (Создать) рядом с полем **iOS Distribution Certificate** (Сертификат распространения iOS):  [![Создание сертификата распространения iOS](images/selectcert.png)](images/selectcert.png#lightbox)
 
-3. В зависимости от привилегий вашей команды будет создано удостоверение подписывания, как показано ниже, или вам придется ждать, пока администратор или агент команды утвердит его: [![](images/generated.png "Создание удостоверения подписывания и отображение диалогового окна")](images/generated.png#lightbox)
+3. В зависимости от привилегий вашей команды будет создано удостоверение подписывания, как показано ниже, или вам придется ждать, пока администратор или агент команды утвердит его:  [![Создание удостоверения подписывания и отображение диалогового окна](images/generated.png)](images/generated.png#lightbox)
 
 <a name="creatingprofile"></a>
 
@@ -97,27 +97,27 @@ ms.locfileid: "84572199"
 
 1. Вернитесь на портал подготовки Apple и выберите **Provisioning** > **Distribution** (Подготовка > Распространение):
 
-    [![](images/distribute01.png "RSelect Provisioning > Distribution")](images/distribute01.png#lightbox)
+    [![Выбор элемента "Provisioning" (Подготовка) > "Distribution" (Распространение)](images/distribute01.png)](images/distribute01.png#lightbox)
 
 2. Нажмите кнопку **+** и выберите тип профиля распространения, который нужно создать для **App Store**:
 
-    [![](images/distribute02.png "Create an App Store distribution profile")](images/distribute02.png#lightbox)
+    [![Создание профиля распространения через App Store](images/distribute02.png)](images/distribute02.png#lightbox)
 
 3. Нажмите кнопку **Continue** (Продолжить) и выберите из раскрывающегося списка ИД приложения, для которого необходимо создать профиль распространения:
 
-    [![](images/distribute03.png "Select App ID from the dropdown list")](images/distribute03.png#lightbox)
+    [![Выбор идентификатора приложения в раскрывающемся списке](images/distribute03.png)](images/distribute03.png#lightbox)
 
 4. Нажмите кнопку **Continue** (Продолжить) и выберите сертификат, необходимый для подписи приложения:
 
-    [![](images/distribute04.png "Select the certificate required to sign the application")](images/distribute04.png#lightbox)
+    [![Выбор сертификата, необходимого для подписи приложения](images/distribute04.png)](images/distribute04.png#lightbox)
 
 5. Нажмите кнопку **Continue** (Продолжить) и выберите устройства iOS, на которых можно будет запускать приложение Xamarin.iOS:
 
-    [![](images/distribute05.png "Select the iOS devices that app will be allowed to run on")](images/distribute05.png#lightbox)
+    [![Выбор устройств iOS, на которых можно будет запускать это приложение](images/distribute05.png)](images/distribute05.png#lightbox)
 
 6. Нажмите кнопку **Continue** (Продолжить) и введите **имя** нового профиля распространения:
 
-    [![](images/distribute06.png "Enter a Name for the new Distribution Profile")](images/distribute06.png#lightbox)
+    [![Ввод имени нового профиля распространения](images/distribute06.png)](images/distribute06.png#lightbox)
 
 7. Нажмите кнопку **Generate** (Создать), чтобы создать профиль и завершить процесс.
 
@@ -144,13 +144,13 @@ ms.locfileid: "84572199"
 1. Дважды щелкните проект в **обозревателе решений**, чтобы открыть его для редактирования.
 2. Выберите **Подписывание пакета iOS** и **Выпуск | iPhone** в раскрывающемся списке **Конфигурация**:
 
-    ![](images/releasexs01.png "Select Release | iPhone from the Configuration dropdown")
+    ![Выбор элемента "Выпуск | iPhone" в раскрывающемся списке "Конфигурация"](images/releasexs01.png)
 3. В большинстве случаев в полях **Удостоверение подписывания** и **Профиль подготовки** можно оставить значения по умолчанию (**Автоматически**), чтобы программа Visual Studio для Mac выбрала подходящий профиль на основе идентификатора пакета в файле Info.plist:
 
-    ![](images/releasexs02.png "The Signing Identity and the Provisioning Profile set to the default values of Automatic")
+    ![Для удостоверения подписывания и профиля подготовки заданы значения по умолчанию ("Автоматически")](images/releasexs02.png)
 4. При необходимости выберите требуемое удостоверение подписывания и профиль распространения, созданный выше:
 
-    ![](images/releasexs03.png "Select the Signing Identity and Distribution Profiles")
+    ![Выбор удостоверения подписывания и профиля распространения](images/releasexs03.png)
 5. Нажмите кнопку **ОК**, чтобы сохранить изменения.
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
@@ -160,13 +160,13 @@ ms.locfileid: "84572199"
 1. Щелкните проект правой кнопкой мыши в **обозревателе решений** и выберите пункт **Свойства**, чтобы открыть его для изменения.
 2. Выберите **Подписывание пакета iOS** и **Выпуск | iPhone** в раскрывающемся списке **Конфигурация**:
 
-    ![](images/releasevs01.png "Select Release | iPhone from the Configuration dropdown")
+    ![Выбор элемента "Выпуск | iPhone" в раскрывающемся списке "Конфигурация"](images/releasevs01.png)
 3. В большинстве случаев в полях **Удостоверение подписывания** и **Профиль подготовки** можно оставить значения по умолчанию (**Автоматически**), чтобы программа Visual Studio выбрала подходящий профиль на основе идентификатора пакета в файле Info.plist.
 
-    ![](images/releasevs02.png "The Signing Identity and the Provisioning Profile set to the default values of Automatic")
+    ![Для удостоверения подписывания и профиля подготовки заданы значения по умолчанию ("Автоматически")](images/releasevs02.png)
 4. При необходимости выберите требуемое удостоверение подписывания и профиль распространения, созданный выше:
 
-    ![](images/releasevs03.png "Select the Signing Identity and Distribution Profile")
+    ![Выбор удостоверения подписывания и профиля распространения](images/releasevs03.png)
 5. Сохраните изменения в свойствах проекта.
 
 -----

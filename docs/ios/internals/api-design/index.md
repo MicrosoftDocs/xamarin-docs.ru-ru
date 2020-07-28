@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: a2435b30b7d5b468fca6c55d295c87b9a0d20652
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 173af9638f4e7b2da39a89dd745ec53f54cf6c39
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303729"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937570"
 ---
 # <a name="xamarinios-api-design"></a>Разработка API Xamarin.iOS
 
@@ -537,7 +537,7 @@ public class AppController : UIApplicationDelegate {
 > [!IMPORTANT]
 > В этом разделе объясняется интеграция IDE с аутлетами при использовании файлов XIB. При использовании Xamarin Designer для iOS вместо этого вводится имя в пункте **Идентификатор > Имя** в разделе "Свойства" в IDE, как показано ниже:
 >
-> [![](images/designeroutlet.png "Entering an item Name in the iOS Designer")](images/designeroutlet.png#lightbox)
+> [![Ввод имени элемента в конструкторе iOS](images/designeroutlet.png)](images/designeroutlet.png#lightbox)
 >
 >Дополнительные сведения о конструкторе iOS см. в документе [Введение в конструктор iOS](~/ios/user-interface/designer/introduction.md#how-it-works).
 

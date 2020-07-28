@@ -10,12 +10,12 @@ ms.date: 04/06/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 08b1c738dc87bb9373436a3fd96486eb15341112
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a705eef2ecd240b8944117a67a90ebeebc382bcb
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139429"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933751"
 ---
 # <a name="attached-behaviors"></a>Присоединенные реакции на события
 
@@ -106,7 +106,7 @@ NumericValidationBehavior.SetAttachBehavior (entry, true);
 
 Во время выполнения реакция на событие будет реагировать на взаимодействие с элементом управления в соответствии с ее реализацией. На следующих снимках экрана показана присоединенная реакция на событие ввода недопустимого значения:
 
-[![](attached-images/screenshots-sml.png "Sample Application with Attached Behavior")](attached-images/screenshots.png#lightbox "Sample Application with Attached Behavior")
+[![Пример приложения с присоединенной реакцией на событие](attached-images/screenshots-sml.png)](attached-images/screenshots.png#lightbox "Пример приложения с присоединенной реакцией на событие")
 
 > [!NOTE]
 > Присоединенная реакция на событие создается для элементов управления определенного типа (или суперкласса, включающего множество разных элементов управления) и должна добавляться только к совместимым элементам управления. Попытка присоединить реакцию на событие к несовместимому элементу управления может привести к неожиданному результату, который зависит от реализации реакции на событие.

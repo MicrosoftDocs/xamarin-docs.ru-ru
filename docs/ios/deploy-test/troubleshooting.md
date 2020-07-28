@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/23/2017
-ms.openlocfilehash: b27608642ed04216b10767d37d26699a0aef7f3e
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 12194eed21fc95aaadc194be8a57319cf5c3cd3d
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573772"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937245"
 ---
 # <a name="xamarinios-testing-and-deployment---troubleshooting"></a>Развертывание и тестирование Xamarin.iOS — устранение неполадок
 
@@ -22,7 +22,7 @@ ms.locfileid: "84573772"
 
 - Большим командам не следует использовать показанную ниже кнопку "Исправить ошибки" в Xcode:
 
-    [![](troubleshooting-images/fixissue.png "The Fix Issues dialog")](troubleshooting-images/fixissue.png#lightbox)
+    [![Диалоговое окно "Исправление ошибок"](troubleshooting-images/fixissue.png)](troubleshooting-images/fixissue.png#lightbox)
 
     Она создаст новые профили подготовки и сертификаты. В лучшем случае каждый раз, когда кто-то из команды нажимает эту кнопку, будет создаваться новый профиль подготовки, что приведет к путанице. В худшем случае эта функция отменит сертификаты всех сотрудников компании, и их приложения перестанут работать.
 

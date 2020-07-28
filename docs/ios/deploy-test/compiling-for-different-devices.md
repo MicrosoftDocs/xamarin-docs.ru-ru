@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: 1f71179ccafc2daf65e792c4538bf47ea2df1e7d
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 2f70dd3b18c36d478548672bb78d329cb2a4c9ab
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "75663734"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86938779"
 ---
 # <a name="compiling-for-different-devices-in-xamarinios"></a>Компиляция для разных устройств в Xamarin.iOS
 
@@ -20,11 +20,11 @@ ms.locfileid: "75663734"
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![](compiling-for-different-devices-images/image1.png "The Projects iOS Build properties page")](compiling-for-different-devices-images/image1.png#lightbox) 
+[![Страница свойств "Сборка iOS" в Project](compiling-for-different-devices-images/image1.png)](compiling-for-different-devices-images/image1.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![](compiling-for-different-devices-images/image1a.png "The Projects iOS Build properties page")](compiling-for-different-devices-images/image1a.png#lightbox)
+[![Страница свойств "Сборка iOS" в Project](compiling-for-different-devices-images/image1a.png)](compiling-for-different-devices-images/image1a.png#lightbox)
 
 -----
 
@@ -58,9 +58,9 @@ Visual Studio для Mac позволяет настроить для пакет
 
 Вы можете выбрать используемый вариант в параметрах сборки iOS в Visual Studio или Visual Studio для Mac.
 
-[![](compiling-for-different-devices-images/image2.png "Enabling LLVM")](compiling-for-different-devices-images/image2.png#lightbox)
+[![Включение LLVM](compiling-for-different-devices-images/image2.png)](compiling-for-different-devices-images/image2.png#lightbox)
 
-[![](compiling-for-different-devices-images/image2a.png "Enabling LLVM")](compiling-for-different-devices-images/image2a.png#lightbox)
+[![Включение LLVM](compiling-for-different-devices-images/image2a.png)](compiling-for-different-devices-images/image2a.png#lightbox)
 
 ## <a name="architecture-support"></a>Поддержка архитектур
 
@@ -112,7 +112,7 @@ Thumb — это более компактный набор инструкций
 - Откройте **Параметры проекта** и перейдите к панели **Сборка iOS**.
 - Добавьте `'-gcc_flags "-weak_framework iAd"'` в раздел **Дополнительные параметры** для каждой конфигурации, к которой должна действовать слабая привязка:
 
-[![](compiling-for-different-devices-images/image3.png "Additional Options")](compiling-for-different-devices-images/image3.png#lightbox)
+[![Дополнительные параметры](compiling-for-different-devices-images/image3.png)](compiling-for-different-devices-images/image3.png#lightbox)
 
 Помимо этого, нужно запретить использование в коде тех типов, которые не существуют в более старых версиях iOS при работе на устройствах с этими версиями. Эту задачу можно решить несколькими способами, например с помощью синтаксического анализа `UIDevice.CurrentDevice.SystemVersion`.
 

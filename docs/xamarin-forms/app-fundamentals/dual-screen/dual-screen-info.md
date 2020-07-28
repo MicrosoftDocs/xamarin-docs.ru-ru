@@ -10,20 +10,28 @@ ms.date: 05/19/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 12f3ac86d2418c6516d000371753fc8ae65d557c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 760d03cb5667853ab7eea021e281ebd863dd8dc4
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84946355"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86935243"
 ---
-# <a name="xamarinforms-dual-screen-device-capabilities"></a>Возможности устройства с двумя экранами Xamarin.Forms
+# <a name="xamarinforms-dualscreeninfo-helper-class"></a>Xamarin.Forms Вспомогательный класс DualScreenInfo
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![Предварительный выпуск API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
 
 Класс `DualScreenInfo` позволяет определить, в какой области отображается ваше представление, сколько места оно занимает, в каком положении находится устройство, каков угол сгиба и т. д.
+
+## <a name="configure-dualscreeninfo"></a>Настройка DualScreenInfo
+
+Чтобы создать макет для двух экранов в приложении, выполните указанные ниже действия.
+
+1. Выполните [начальные](index.md) инструкции, чтобы добавить NuGet и настроить класс Android `MainActivity`.
+1. Добавьте `using Xamarin.Forms.DualScreen;` в файл класса.
+1. Используйте класс `DualScreenInfo.Current` в приложении.
 
 ## <a name="properties"></a>Свойства
 
@@ -213,7 +221,7 @@ public partial class GridUsingDualScreenInfo : ContentPage
 
 На следующем снимке экрана показан получившийся макет:
 
-![](dual-screen-info-images/grid-on-two-screens.png "Positioning Grid on Two Screens")
+![Размещение сетки на двух экранах](dual-screen-info-images/grid-on-two-screens.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 

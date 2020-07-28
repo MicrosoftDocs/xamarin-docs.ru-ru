@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/24/2017
-ms.openlocfilehash: 263c48c5006ba0060756e1050497c38dfb7c8eae
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 7769e3d02acc9f1522c6028f88f37c1f522866af
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84567779"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936764"
 ---
 # <a name="linking-xamarinios-apps"></a>Компоновка приложений Xamarin.iOS
 
@@ -30,7 +30,7 @@ ms.locfileid: "84567779"
 
 Вы можете изменить поведение компоновщика в специальном раскрывающемся списке в разделе **Параметры проекта**. Чтобы открыть эту страницу, дважды щелкните проект iOS и последовательно выберите пункты **Сборка iOS > Параметры компоновщика**, как показано ниже:
 
-[![](linker-images/image1.png "Linker Options")](linker-images/image1.png#lightbox)
+[![Параметры компоновщика](linker-images/image1.png)](linker-images/image1.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
@@ -40,10 +40,10 @@ ms.locfileid: "84567779"
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши **имя проекта** и выберите пункт **Свойства**.
 
-    ![](linker-images/linking01w.png "Right-click on the Project Name in the Solution Explorer and select Properties")
+    ![Щелчок имени проекта в обозревателе решений правой кнопкой мыши и выбор пункта "Свойства"](linker-images/linking01w.png)
 2. В разделе **Свойства проекта** выберите **Сборка IOS**:
 
-    ![](linker-images/linking02w.png "Select IOS Build")
+    ![Выбор пункта "Сборка IOS"](linker-images/linking02w.png)
 3. Следуйте приведенным ниже инструкциям, чтобы изменить параметры компоновки.
 
 -----

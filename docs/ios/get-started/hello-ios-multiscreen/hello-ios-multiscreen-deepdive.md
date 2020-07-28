@@ -8,12 +8,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: 3bcfb20d8283f621ac1d32730ee67be2b09efe50
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 28dddc35ac829cb58a40a9296bb995e119b5b6e3
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303699"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937271"
 ---
 # <a name="hello-ios-multiscreen--deep-dive"></a>Привет, iOS (несколько экранов): теперь подробнее
 
@@ -26,7 +26,7 @@ ms.locfileid: "79303699"
 
 В руководстве [Привет, iOS](~/ios/get-started/hello-ios/index.md) мы узнали, что у приложений iOS есть только одно *окно*, в которое контроллеры представления могут загружать свои *иерархии представления содержимого*. Во втором пошаговом руководстве по созданию приложения Phoneword мы добавим второй экран для нашего приложения и настроим обмен данными (список телефонных номеров) между экранами, как показано на следующей схеме:
 
- [![](hello-ios-multiscreen-deepdive-images/08.png "This diagram illustrates passing data between two screens")](hello-ios-multiscreen-deepdive-images/08.png#lightbox)
+ [![Схема иллюстрирует передачу данных между двумя экранами](hello-ios-multiscreen-deepdive-images/08.png)](hello-ios-multiscreen-deepdive-images/08.png#lightbox)
 
 В нашем примере данные собираются на первом экране, передаются из первого контроллера представления во второй и отображаются на втором экране. Такое разделение экранов, данных и контроллеров представлений соответствует шаблону *MVC (Модель — представление — контроллер)* . В следующих разделах мы рассмотрим преимущества этого шаблона и его компонентов, а также применим его в нашем приложении Phoneword.
 
@@ -34,7 +34,7 @@ ms.locfileid: "79303699"
 
 Модель-представление-контроллер (MVC) — это *шаблон проектирования*, многократно используемое архитектурное решение типовых проблем или сценариев использования в коде. MVC — это архитектура для приложений с *графическим интерфейсом пользователя (GUI)* . В этой архитектуре объектам приложения назначается одна из трех ролей: *модель* (данные или логика приложения), *представление* (интерфейс пользователя) и *контроллер* (код программной части). На следующей схеме показаны связи между тремя элементами шаблона MVC и пользователем:
 
- [![](hello-ios-multiscreen-deepdive-images/00.png "This diagram illustrates the relationships between the three pieces of the MVC pattern and the user")](hello-ios-multiscreen-deepdive-images/00.png#lightbox)
+ [![Схема иллюстрирует связи между тремя элементами шаблона MVC и пользователем](hello-ios-multiscreen-deepdive-images/00.png)](hello-ios-multiscreen-deepdive-images/00.png#lightbox)
 
 Преимущество использования шаблона MVC в том, что он обеспечивает логическое разделение между разными частями приложения с графическим интерфейсом и упрощает повторное использование кода и представлений. Давайте начнем и рассмотрим каждую из трех ролей более подробно.
 
@@ -68,13 +68,13 @@ ms.locfileid: "79303699"
 
 Контроллер навигации часто используется в iOS и обеспечивает навигацию в основных приложениях, например в приложении **Настройки**, как показано на рисунке ниже:
 
- [![](hello-ios-multiscreen-deepdive-images/01.png "The navigation controller provides navigation for iOS applications like the Settings app shown here")](hello-ios-multiscreen-deepdive-images/01.png#lightbox)
+ [![Контроллер навигации обеспечивает навигацию для приложений iOS, таких как изображенное здесь приложение "Параметры"](hello-ios-multiscreen-deepdive-images/01.png)](hello-ios-multiscreen-deepdive-images/01.png#lightbox)
 
 Контроллер навигации выполняет три основные функции:
 
 - **Обеспечивает привязку при переходах вперед** — контроллер навигации использует метафору иерархической навигации, согласно которой иерархии содержимого представления *помещаются*  в *стек навигации*. Мы можем представить стек навигации в виде стопки игральных карт, в которой видна только самая верхняя карта, как показано на приведенной ниже схеме:  
 
-    [![](hello-ios-multiscreen-deepdive-images/02.png "This diagram illustrates navigation as a stack of cards")](hello-ios-multiscreen-deepdive-images/02.png#lightbox)
+    [![Схема иллюстрирует навигацию в виде стопки игральных карт](hello-ios-multiscreen-deepdive-images/02.png)](hello-ios-multiscreen-deepdive-images/02.png#lightbox)
 
 - **При необходимости отображает кнопку возврата** — когда мы отправляем новый элемент в стек навигации, в строке заголовка может автоматически отображаться *кнопка возврата*, позволяющая при навигации возвращаться назад. Нажатие кнопки возврата *извлекает* текущий контроллер представления из стека навигации и загружает в окно предыдущую иерархию представлений содержимого:  
 
@@ -82,18 +82,18 @@ ms.locfileid: "79303699"
 
 - **Отображает строку заголовка** — верхняя часть контроллера навигации называется *заголовком*. Он отвечает за отображение заголовка контроллера представления, как показано на следующей схеме:  
 
-    [![](hello-ios-multiscreen-deepdive-images/04.png "The Title Bar is responsible for displaying the view controller title")](hello-ios-multiscreen-deepdive-images/04.png#lightbox)
+    [![В заголовке отображается заголовок контроллера представления](hello-ios-multiscreen-deepdive-images/04.png)](hello-ios-multiscreen-deepdive-images/04.png#lightbox)
 
 ### <a name="root-view-controller"></a>Корневой контроллер представления
 
 Контроллер навигации не управляет иерархией представлений содержимого, поэтому сам по себе он ничего не отображает.
 Вместо этого контроллер навигации сопряжен с *корневым контроллером представления*:
 
- [![](hello-ios-multiscreen-deepdive-images/05.png "A navigation controller is paired with a Root view controller")](hello-ios-multiscreen-deepdive-images/05.png#lightbox)
+ [![Контроллер навигации сопряжен с корневым контроллером представления](hello-ios-multiscreen-deepdive-images/05.png)](hello-ios-multiscreen-deepdive-images/05.png#lightbox)
 
 Корневой контроллер представления является первым контроллером представления в стеке контроллеров навигации, а иерархия представлений содержимого корневого контроллера загружается в окно первой. Если требуется поместить в стек контроллеров навигации приложение целиком, можно переместить переход без источника в контроллер навигации и установить контроллер представления первого экрана в качестве корневого контроллера представления, как мы сделали в приложении Phoneword:
 
- [![](hello-ios-multiscreen-deepdive-images/06.png "The Sourceless Segue sets the first screens view controller as the Root view controller")](hello-ios-multiscreen-deepdive-images/06.png#lightbox)
+ [![Переход без источника устанавливает контроллер представления первого экрана в качестве корневого контроллера представления](hello-ios-multiscreen-deepdive-images/06.png)](hello-ios-multiscreen-deepdive-images/06.png#lightbox)
 
 ### <a name="additional-navigation-options"></a>Дополнительные возможности навигации
 
@@ -107,7 +107,7 @@ ms.locfileid: "79303699"
 
 Когда мы добавляем переход к раскадровке при помощи действия **Show**, мы даем команду операционной системе iOS для отправки второго контроллера представления в стек контроллеров навигации:
 
- [![](hello-ios-multiscreen-deepdive-images/09.png "Setting the segue type from a dropdown list")](hello-ios-multiscreen-deepdive-images/09.png#lightbox)
+ [![Выбор типа перехода в раскрывающемся списке](hello-ios-multiscreen-deepdive-images/09.png)](hello-ios-multiscreen-deepdive-images/09.png#lightbox)
 
 Добавления перехода в раскадровку достаточно для создания простого перехода между экранами. Если нам необходимо передавать данные между контроллерами представления, то необходимо переопределить метод `PrepareForSegue` и обрабатывать данные самим:
 

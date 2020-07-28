@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 08ddf282c8839a6283b90c0736c0b4259bd01469
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: f5796ee17e947494d1e22f750bc43ff823d56d55
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73028447"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937284"
 ---
 # <a name="unit-testing-xamarinios-apps"></a>Модульное тестирование приложений Xamarin.iOS
 
@@ -23,11 +23,11 @@ ms.locfileid: "73028447"
 
 Чтобы настроить платформу модульного тестирования для проекта, необходимо лишь добавить в решение проект типа **Проект модульных тестов iOS**. Для этого щелкните решение правой кнопкой мыши и выберите **Добавить > Добавить новый проект**. В списке выберите **iOS > Тесты > Unified API > Проект модульных тестов iOS** (можно выбрать язык C# или F#).
 
-![](touch.unit-images/00.png "Choose either C# or F#")
+![Выбор языка C# или F#](touch.unit-images/00.png)
 
 После этого будет создан базовый проект, содержащий основное средство выполнения тестов и ссылающийся на новую сборку MonoTouch.NUnitLite. Проект будет выглядеть следующим образом:
 
-![](touch.unit-images/01.png "The project in the Solution Explorer")
+![Проект в обозревателе решений](touch.unit-images/01.png)
 
 Класс `AppDelegate.cs` содержит средство выполнения тестов и выглядит следующим образом:
 
@@ -105,14 +105,14 @@ namespace Fixtures {
 
 Средство выполнения тестов позволяет просмотреть, какие тесты регистрируются, и по отдельности выбрать, какие тесты могут выполняться.
 
-[![](touch.unit-images/02-sml.png "The list of registered tests")](touch.unit-images/02.png#lightbox) 
-[![](touch.unit-images/03-sml.png "An individual text")](touch.unit-images/03.png#lightbox) 
+[![Список зарегистрированных тестов](touch.unit-images/02-sml.png)](touch.unit-images/02.png#lightbox) 
+[![Отдельный текст](touch.unit-images/03-sml.png)](touch.unit-images/03.png#lightbox) 
 
-[![](touch.unit-images/04-sml.png "The run results")](touch.unit-images/04.png#lightbox)
+[![Результаты выполнения](touch.unit-images/04-sml.png)](touch.unit-images/04.png#lightbox)
 
 Можно выполнить отдельное средство тестирования, выбрав его из вложенных представлений, или выполнить все тесты, выбрав "Выполнить все". При выполнении теста по умолчанию он должен содержать один пройденный тест, один непройденный тест и один пропущенный тест. Отчет будет выглядеть следующим образом. Можно перейти непосредственно к непройденному тесту и изучить дополнительные сведения о сбое:
 
-[![](touch.unit-images/05-sml.png "Пример отчета")](touch.unit-images/05.png#lightbox) [![](touch.unit-images/06-sml.png "Пример отчета")](touch.unit-images/06.png#lightbox) [![](touch.unit-images/07-sml.png "Пример отчета")](touch.unit-images/07.png#lightbox)
+[![Пример отчета](touch.unit-images/05-sml.png)](touch.unit-images/05.png#lightbox) [![Пример отчета](touch.unit-images/06-sml.png)](touch.unit-images/06.png#lightbox) [![Пример отчета](touch.unit-images/07-sml.png)](touch.unit-images/07.png#lightbox)
 
 Можно также обратиться к окну выходных данных приложения в интегрированной среде разработки, чтобы увидеть, какие тесты выполняются, и их текущее состояние.
 

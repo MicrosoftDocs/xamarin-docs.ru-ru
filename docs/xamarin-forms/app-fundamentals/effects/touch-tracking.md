@@ -10,12 +10,12 @@ ms.date: 12/14/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 892bffa4027a1a61d6c22cc26d1556fb007432d8
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cc150ecffbf9b6b31ec2f533bcc33876100614dc
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136985"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936855"
 ---
 # <a name="invoking-events-from-effects"></a>Вызов событий из эффекта
 
@@ -456,7 +456,7 @@ void OnTouchEffectAction(object sender, TouchActionEventArgs args)
 
 Вы можете одновременно перетаскивать несколько элементов `BoxView` разными пальцами.
 
-[![](touch-tracking-images/boxviewdragging-small.png "Triple screenshot of the BoxView Dragging page")](touch-tracking-images/boxviewdragging-large.png#lightbox "Triple screenshot of the BoxView Dragging page")
+[![Снимок экрана с тремя изображениями страницы перетаскивания элементов BoxView](touch-tracking-images/boxviewdragging-small.png)](touch-tracking-images/boxviewdragging-large.png#lightbox "Снимок экрана с тремя изображениями страницы перетаскивания элементов BoxView")
 
 ### <a name="subclassing-the-view"></a>Создание подкласса представления
 
@@ -519,7 +519,7 @@ class DraggableBoxView : BoxView
 
 На странице **рисования эллипса** вы можете нарисовать эллипс, проводя пальцами по экрану. В зависимости от характера движения пальцев, вы можете нарисовать эллипс из верхнего левого угла в нижний правый либо из любого другого угла в противоположный. Цвет и степень непрозрачности эллипса задаются случайным образом.
 
-[![](touch-tracking-images/ellipsedrawing-small.png "Triple screenshot of the Ellipse Drawing page")](touch-tracking-images/ellipsedrawing-large.png#lightbox "Triple screenshot of the Ellipse Drawing page")
+[![Снимок экрана с тремя изображениями страницы рисования эллипса](touch-tracking-images/ellipsedrawing-small.png)](touch-tracking-images/ellipsedrawing-large.png#lightbox "Снимок экрана с тремя изображениями страницы рисования эллипса")
 
 При необходимости вы можете коснуться любого нарисованного эллипса и перетащить его в новое место. Для этого применяется метод проверки на попадание, в рамках которого осуществляется поиск графического объекта в конкретной точке. Эллипсы SkiaSharp не являются элементами Xamarin.Forms и не имеют собственной логики обработки объекта `TouchEffect`. Эффект `TouchEffect` должен применяться ко всему объекту `SKCanvasView`.
 
@@ -691,7 +691,7 @@ case TouchActionType.Pressed:
 
 Еще один пример использования SkiaSharp содержит страницу **рисования пальцами**. Вы можете выбрать цвет и ширину кисти в двух представлениях `Picker`, а затем начать рисование одним или несколькими пальцами:
 
-[![](touch-tracking-images/fingerpaint-small.png "Triple screenshot of the Finger Paint page")](touch-tracking-images/fingerpaint-large.png#lightbox "Triple screenshot of the Finger Paint page")
+[![Снимок экрана с тремя изображениями страницы рисования пальцами](touch-tracking-images/fingerpaint-small.png)](touch-tracking-images/fingerpaint-large.png#lightbox "Снимок экрана с тремя изображениями страницы рисования пальцами")
 
 В этом примере также используется отдельный класс, который представляет каждую рисуемую на экране линию:
 
@@ -799,7 +799,7 @@ void OnTouchEffectAction(object sender, TouchActionEventArgs args)
 
 Различные элементы `WhiteKey` и `BlackKey` упорядочиваются в [файле XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/Effects/TouchTrackingEffect/TouchTrackingEffect/TouchTrackingEffect/SilentKeyboardPage.xaml) страницы, который удобнее просматривать в альбомном режиме:
 
-[![](touch-tracking-images/silentkeyboard-small.png "Triple screenshot of the Silent Keyboard page")](touch-tracking-images/silentkeyboard-large.png#lightbox "Triple screenshot of the Silent Keyboard page")
+[![Снимок экрана с тремя изображениями страницы беззвучной клавиатуры](touch-tracking-images/silentkeyboard-small.png)](touch-tracking-images/silentkeyboard-large.png#lightbox "Снимок экрана с тремя изображениями страницы беззвучной клавиатуры")
 
 Если вы проведете пальцами по клавишам, вы увидите небольшое изменение цвета, свидетельствующее о передаче событий прикосновения от одной клавиши другой.
 

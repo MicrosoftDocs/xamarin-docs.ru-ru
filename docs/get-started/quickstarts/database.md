@@ -12,12 +12,12 @@ ms.date: 04/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2864c7edabde18faec06c2c42042168d3e6c9671
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a28e391c6bacd460f095c94e30b2d9433a5191e4
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139806"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86931802"
 ---
 # <a name="store-data-in-a-local-sqlitenet-database"></a>Хранение данных в локальной базе данных SQLite.NET
 
@@ -30,8 +30,8 @@ ms.locfileid: "84139806"
 
 Это краткое руководство описывает, как хранить данные в локальной базе данных SQLite.NET. Ниже показано итоговое приложение:
 
-[![](database-images/screenshots1-sml.png "Notes Page")](database-images/screenshots1.png#lightbox "Notes Page")
-[![](database-images/screenshots2-sml.png "Note Entry Page")](database-images/screenshots2.png#lightbox "Note Entry Page")
+[![Страница заметок](database-images/screenshots1-sml.png)](database-images/screenshots1.png#lightbox "Страница заметок")
+[![Страница ввода заметки](database-images/screenshots2-sml.png)](database-images/screenshots2.png#lightbox "Страница ввода заметки")
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -45,11 +45,11 @@ ms.locfileid: "84139806"
 
 2. В **обозревателе решений** выберите проект **Notes**, щелкните правой кнопкой мыши и выберите **Управление пакетами NuGet...** :
 
-    ![](database-images/vs/add-nuget-packages.png "Add NuGet Packages")    
+    ![Добавление пакетов NuGet](database-images/vs/add-nuget-packages.png)    
 
 3. В разделе **Диспетчер пакетов NuGet** выберите вкладку **Обзор**, выполните поиск пакета NuGet **sqlite-net-pcl**, выберите его и нажмите кнопку **Установить**, чтобы добавить его в проект.
 
-    ![](database-images/vs/add-package.png "Add Package")
+    ![Добавление пакета](database-images/vs/add-package.png)
 
     > [!NOTE]
     > Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
@@ -262,11 +262,11 @@ ms.locfileid: "84139806"
 
 2. На **Панели решения** выберите проект **Notes**, щелкните правой кнопкой мыши и выберите **Добавить > Добавить пакеты NuGet...** :
 
-    ![](database-images/vsmac/add-nuget-packages.png "Add NuGet Packages")    
+    ![Добавление пакетов NuGet](database-images/vsmac/add-nuget-packages.png)    
 
 3. В окне **Добавление пакетов** выполните поиск пакета NuGet **sqlite-net-pcl**, выберите его и нажмите кнопку **Добавить пакет**, чтобы добавить его в проект.
 
-    ![](database-images/vsmac/add-package.png "Add Package")
+    ![Добавление пакета](database-images/vsmac/add-package.png)
 
     > [!NOTE]
     > Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 66d832f624bdd942f53c5f6d890457958969b1b7
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: c7cc3c74f5a26ec7e07636ebab865e9016409f89
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73028419"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939182"
 ---
 # <a name="profiling-xamarinios-applications-with-instruments"></a>Профилирование приложений Xamarin.iOS с помощью Instruments
 
@@ -35,13 +35,13 @@ Xcode Instruments работает только на компьютерах Ma
 
 Instruments откроется со следующим диалоговым окном:
 
- [![](using-instruments-to-detect-native-leaks-using-markheap-images/instruments1.png "Choosing a profiling template")](using-instruments-to-detect-native-leaks-using-markheap-images/instruments1.png#lightbox)
+ [![Выбор шаблона профилирования](using-instruments-to-detect-native-leaks-using-markheap-images/instruments1.png)](using-instruments-to-detect-native-leaks-using-markheap-images/instruments1.png#lightbox)
 
 Щелкните шаблон **Allocations** (Распределения). Вы можете использовать и другие шаблоны, однако в этой статье рассматривается только шаблон профиля **Allocations**.
 
 Теперь выберите устройство и приложение в меню в верхней части окна:
 
-[![](using-instruments-to-detect-native-leaks-using-markheap-images/instruments2.png "Select the device and application")](using-instruments-to-detect-native-leaks-using-markheap-images/instruments2.png#lightbox)
+[![Выбор устройства и приложения](using-instruments-to-detect-native-leaks-using-markheap-images/instruments2.png)](using-instruments-to-detect-native-leaks-using-markheap-images/instruments2.png#lightbox)
 
 Выберите устройство iOS в меню в верхней части окна приложения, а рядом с ним — приложение, для которого требуется профилирование (на снимке экрана выше это **MemoryDemo**).
 
@@ -49,13 +49,13 @@ Instruments откроется со следующим диалоговым ок
 
 Нажмите кнопку **Choose** (Выбрать). Откроется следующий экран:
 
-[![](using-instruments-to-detect-native-leaks-using-markheap-images/instruments3.png "The profiling interface")](using-instruments-to-detect-native-leaks-using-markheap-images/instruments3.png#lightbox)
+[![Интерфейс профилирования](using-instruments-to-detect-native-leaks-using-markheap-images/instruments3.png)](using-instruments-to-detect-native-leaks-using-markheap-images/instruments3.png#lightbox)
 
 Чтобы начать профилирование, нажмите кнопку записи (красный кружок в левом верхнем углу).
 
 На следующем снимке экрана показан пример профилирования с помощью **Instruments**:
 
-[![](using-instruments-to-detect-native-leaks-using-markheap-images/instruments4.png "An example of profiling using Instruments")](using-instruments-to-detect-native-leaks-using-markheap-images/instruments4.png#lightbox)
+[![Пример профилирования с помощью Instruments](using-instruments-to-detect-native-leaks-using-markheap-images/instruments4.png)](using-instruments-to-detect-native-leaks-using-markheap-images/instruments4.png#lightbox)
 
 ## <a name="summary"></a>Сводка
 

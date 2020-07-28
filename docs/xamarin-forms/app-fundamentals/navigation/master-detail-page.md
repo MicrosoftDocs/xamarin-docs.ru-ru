@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — главная страница и страница сведений" description: "MasterDetailPage Xamarin.Forms представляет собой страницу, управляющую двумя страницами связанных данных — главной страницей, которая представляет элементы, и страницей сведений, которая представляет сведения об элементах на главной странице.'
-description: 'В этой статье описываются принципы работы со страницей MasterDetailPage и перехода между управляемыми страницами данных". ms.prod: xamarin ms.assetid: 119945E3-58B8-4630-A3D2-8B561529D53B ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 12/01/2017 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Главная страница и страница сведений в Xamarin.Forms
+description: Xamarin.Forms MasterDetailPage представляет собой страницу, управляющую двумя страницами связанных данных — главной страницей, которая представляет элементы, и страницей сведений, которая представляет сведения об элементах на главной странице. В этой статье описываются принципы работы со страницей MasterDetailPage и перехода между управляемыми страницами данных.
 ms.prod: xamarin
 ms.assetid: 119945E3-58B8-4630-A3D2-8B561529D53B
 ms.technology: xamarin-forms
@@ -10,12 +10,12 @@ ms.date: 12/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c751a1843479f1e98739964631999dfdb0e3b634
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 3a65e9bb90f01bcb5e0b1182a21d998e2335da9a
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84569638"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86934528"
 ---
 # <a name="xamarinforms-master-detail-page"></a>Главная страница и страница сведений в Xamarin.Forms
 
@@ -27,7 +27,7 @@ _Xamarin.Forms MasterDetailPage представляет собой страни
 
 На главной странице обычно отображается список элементов, как показано на следующем снимке экрана:
 
-[![](master-detail-page-images/masterpage-components.png "Master Page Components")](master-detail-page-images/masterpage-components-large.png#lightbox "Master Page Components")
+[![Компоненты эталонной страницы](master-detail-page-images/masterpage-components.png)](master-detail-page-images/masterpage-components-large.png#lightbox "Компоненты эталонной страницы")
 
 Расположение списка элементов одинаково для каждой платформы, а при выборе отдельного элемента осуществляется переход на соответствующую страницу сведений. Кроме того, на главной странице также представлена панель навигации с кнопкой, с помощью которой можно перейти к активной странице сведений:
 
@@ -37,7 +37,7 @@ _Xamarin.Forms MasterDetailPage представляет собой страни
 
 Страница сведений с данными, соответствующими выбранному на главной странице элементу, а также основные компоненты страницы сведений показаны на следующих снимках экрана:
 
-![](master-detail-page-images/detailpage-components.png "Detail Page Components")
+![Компоненты страницы сведений](master-detail-page-images/detailpage-components.png)
 
 На странице сведений располагается панель навигации, содержимое которой зависит от платформы:
 
@@ -213,7 +213,7 @@ public class MasterPageCS : ContentPage
 
 На следующих снимках экрана показаны главные страницы на каждой платформе:
 
-![](master-detail-page-images/masterpage.png "Master Page Example")
+![Пример эталонной страницы](master-detail-page-images/masterpage.png)
 
 ### <a name="creating-and-displaying-the-detail-page"></a>Создание и отображение страницы сведений
 
@@ -248,7 +248,7 @@ public partial class MainPage : MasterDetailPage
 
 На следующих снимках экрана показана страница сведений `ContactPage`, которая выводится на экран после выбора соответствующего элемента на главной странице:
 
-![](master-detail-page-images/detailpage.png "Detail Page Example")
+![Пример страницы сведений](master-detail-page-images/detailpage.png)
 
 ### <a name="controlling-the-detail-page-display-behavior"></a>Управление поведением при отображении страницы сведений
 

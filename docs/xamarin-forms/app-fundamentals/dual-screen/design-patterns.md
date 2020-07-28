@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — конструктивные шаблоны двухэкранных устройств" description: "В этом руководстве описаны поддерживаемые в Xamarin.Forms конструктивные шаблоны, оптимизированные для двухэкранных устройств".'
-description: 'ms.prod: xamarin ms.assetid: 3176d792-6dba-4e00-b463-497c58678ee9 ms.technology: xamarin-forms author: davidortinau ms.author: daortin ms.date: 02/08/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Конструктивные шаблоны Xamarin.Forms для двухэкранных устройств
+description: В этом руководстве описаны поддерживаемые в Xamarin.Forms конструктивные шаблоны, оптимизированные для двухэкранных устройств.
 ms.prod: xamarin
 ms.assetid: 3176d792-6dba-4e00-b463-497c58678ee9
 ms.technology: xamarin-forms
@@ -10,16 +10,16 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 277fb67eeea465239d9340e755240288286d2359
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 79c0f41e8ed0bffce0154ee618729316aab5e8e2
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84138792"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86935282"
 ---
 # <a name="xamarinforms-dual-screen-design-patterns"></a>Конструктивные шаблоны Xamarin.Forms для двухэкранных устройств
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![Предварительный выпуск API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
 
@@ -29,7 +29,7 @@ ms.locfileid: "84138792"
 
 В шаблоне расширенного холста оба экрана считаются одним большим холстом, чтобы использовать максимум доступного пространства для отображения карты, изображения, электронной таблицы или другого подобного содержимого:
 
-![](design-patterns-images/extended-canvas-sample.png "Extended canvas sample")
+![Пример шаблона расширенного холста](design-patterns-images/extended-canvas-sample.png)
 
 ```xaml
 <ContentPage xmlns:local="clr-namespace:Xamarin.Duo.Forms.Samples"
@@ -59,7 +59,7 @@ ms.locfileid: "84138792"
 
 Шаблон "Основное-подробности" включает основное представление (обычно это список слева), в котором пользователь может выбрать какой-то элемент, и представление, где отображаются подробности о выбранном элементе, в правой части:
 
-![](design-patterns-images/master-detail-sample.png "Master detail sample")
+![Пример шаблона "Основное-подробности"](design-patterns-images/master-detail-sample.png)
 
 ```xaml
 <ContentPage xmlns:local="clr-namespace:Xamarin.Duo.Forms.Samples"
@@ -85,7 +85,7 @@ ms.locfileid: "84138792"
 
 Шаблон для двух страниц идеально подходит, например, для документов, заметок или рисования:
 
-![](design-patterns-images/two-page-sample.png "Two page sample")
+![Пример шаблона для двух страниц](design-patterns-images/two-page-sample.png)
 
 ```xaml
 <Grid x:Name="layout">
@@ -126,7 +126,7 @@ ms.locfileid: "84138792"
 
 Шаблон двойного представления может выглядеть аналогично двухстраничному представлению. Однако оно отличается расположением содержимого и действиями пользователя. Этот шаблон используется для параллельного сравнения содержимого, например для редактирования документа или фотографии, сравнения меню разных ресторанов или различения конфликтов слияния в файлах кода:
 
-![](design-patterns-images/dual-view-sample.png "Dual view sample")
+![Пример шаблона двойного представления](design-patterns-images/dual-view-sample.png)
 
 ```xaml
 <ContentPage xmlns:local="clr-namespace:Xamarin.Duo.Forms.Samples"
@@ -164,7 +164,7 @@ ms.locfileid: "84138792"
 
 Шаблон вспомогательной области демонстрирует, как можно использовать второй экран для вывода дополнительного уровня содержимого, связанного с основным представлением, например в приложении для рисования, в игре или при редактировании мультимедиа:
 
-![](design-patterns-images/companion-pane-sample.png "Companion pane sample")
+![Пример шаблона вспомогательной области](design-patterns-images/companion-pane-sample.png)
 
 ```xaml
 <ContentPage xmlns:local="clr-namespace:Xamarin.Duo.Forms.Samples"

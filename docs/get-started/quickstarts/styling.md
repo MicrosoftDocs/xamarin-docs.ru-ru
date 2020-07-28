@@ -1,6 +1,6 @@
 ---
-title: 'title: "Стилизация кроссплатформенного приложения Xamarin.Forms" description: "В этой статье описывается изменение стиля кроссплатформенного приложения Xamarin.Forms с помощью стилей XAML".'
-description: 'zone_pivot_groups: platform ms.topic: quickstart ms.prod: xamarin ms.assetid: CCCF8E57-D021-4542-8709-5808570FC26A ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 02/07/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Стилизация кроссплатформенного приложения Xamarin.Forms
+description: В этой статье описывается изменение стиля кроссплатформенного приложения Xamarin.Forms с помощью стилей XAML.
 zone_pivot_groups: platform
 ms.topic: quickstart
 ms.prod: xamarin
@@ -12,12 +12,12 @@ ms.date: 02/07/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2d458bafc5bb1c8dcffc7858fd15734187f7612b
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 05560ae7c3d255140c0782e5f442dd2356d86cad
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84134073"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86937427"
 ---
 # <a name="style-a-cross-platform-xamarinforms-application"></a>Стилизация кроссплатформенного приложения Xamarin.Forms
 
@@ -29,8 +29,8 @@ ms.locfileid: "84134073"
 
 Из этого краткого руководства вы узнаете, как изменить стиль кроссплатформенного приложения Xamarin.Forms с помощью стилей XAML. Ниже показано итоговое приложение:
 
-[![](styling-images/screenshots1-sml.png "Notes Page")](styling-images/screenshots1.png#lightbox "Notes Page")
-[![](styling-images/screenshots2-sml.png "Note Entry Page")](styling-images/screenshots2.png#lightbox "Note Entry Page")
+[![Страница заметок](styling-images/screenshots1-sml.png)](styling-images/screenshots1.png#lightbox "Страница заметок")
+[![Страница ввода заметки](styling-images/screenshots2-sml.png)](styling-images/screenshots2.png#lightbox "Страница ввода заметки")
 
 ### <a name="prerequisites"></a>Предварительные требования
 

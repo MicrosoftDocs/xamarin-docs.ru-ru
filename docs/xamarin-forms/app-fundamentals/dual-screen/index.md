@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms Два экрана" description: "Это руководство рассказывает, как создавать приложения Xamarin.Forms с поддержкой двухэкранных устройств".'
-description: 'ms.prod: xamarin ms.assetid: f9906e83-f8ae-48f9-997b-e1540b96ee8e ms.technology: xamarin-forms author: davidortinau ms.author: daortin ms.date: 02/08/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Два экрана в Xamarin.Forms
+description: Это руководство рассказывает, как создавать приложения с поддержкой двухэкранных устройств с помощью Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: f9906e83-f8ae-48f9-997b-e1540b96ee8e
 ms.technology: xamarin-forms
@@ -10,35 +10,56 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: aeaaeb732adaea45446d6baf833027801abf4d2a
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 737cb819cfd762e81536fba03f3ae5b563416a4e
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84138909"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86930745"
 ---
 # <a name="xamarinforms-dual-screen"></a>Два экрана в Xamarin.Forms
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![Предварительный выпуск API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
-Теперь на устройствах Surface Duo (Android) и Surface Neo (Windows 10X) доступны новые шаблоны разработки для приложений с сенсорным управлением. Xamarin.Forms включает классы `TwoPaneView` и `DualScreenInfo`, позволяющие разрабатывать приложения для этих устройств.
+Устройства с двумя экранами, такие как Microsoft Surface Duo, упрощают реализацию новых возможностей работы для пользователей в приложениях. Xamarin.Forms включает в себя классы `TwoPaneView` и `DualScreenInfo`, позволяющие разрабатывать приложения для устройств с двумя экранами.
 
-## <a name="dual-screen-design-patterns"></a>[Конструктивные шаблоны для двухэкранных устройств](design-patterns.md)
+## <a name="get-started"></a>Начало работы
 
-Наше руководство по шаблонам поможет вам подобрать оптимальный вариант использования интерфейса приложения на устройстве с двумя экранами.
+Чтобы добавить возможности работы с двумя экранами в приложение Xamarin.Forms, выполните указанные ниже действия.
 
-## <a name="dual-screen-layout"></a>[Макет для двух экранов](twopaneview.md)
+1. Откройте диалоговое окно **Диспетчер пакетов NuGet** для вашего решения.
+2. На вкладке **Обзор** выполните поиск по `Xamarin.Forms.DualScreen`.
+3. Установите пакет `Xamarin.Forms.DualScreen` в решении.
+4. Добавьте следующий вызов метода инициализации в класс `MainActivity` проекта Android в событии `OnCreate`:
 
-Класс `TwoPaneView` в Xamarin.Forms, созданный в стиле элемента управления UWP с таким же именем, представляет собой кроссплатформенный макет, оптимизированный для двухэкранных устройств.
+    ```csharp
+    Xamarin.Forms.DualScreen.DualScreenService.Init(this);
+    ```
 
-## <a name="dual-screen-device-capabilities"></a>[Возможности устройства с двумя экранами](dual-screen-info.md)
+    Этот метод необходим для того, чтобы приложение могло обнаруживать изменения в состоянии приложения, например, разбиение на два экрана.
 
-Класс `DualScreenInfo` позволяет определить, в какой области отображается ваше представление, сколько места оно занимает, в каком положении находится устройство, каков угол сгиба и т. д.
+5. Измените атрибут `Activity` в классе `MainActivity` проекта Android так, чтобы он включал _все_ следующие параметры `ConfigurationChanges`:
 
-## <a name="dual-screen-platform-helpers"></a>[Вспомогательные функции платформы для двух экранов](dual-screen-helper.md)
+    ```@csharp
+    ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation 
+        | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.UiMode
+    ```
 
-Класс `DualScreenHelper` позволяет проверить, поддерживает ли платформа открытие нового окна в режиме "картинка в картинке". Если вы используете устройство Neo в режиме создания, окно откроется на панели WonderBar.
+    Эти значения необходимы для более надежного получения сообщений об изменениях конфигурации и состояния разбиения. По умолчанию в проекты Xamarin.Forms добавляются только два из них, поэтому обязательно добавьте остальные для надежной поддержки двух экранов.
 
-## <a name="dual-screen-triggers"></a>[Триггеры для двух экранов](triggers.md)
+## <a name="troubleshooting"></a>Устранение неполадок
 
-Пространство имен [`Xamarin.Forms.DualScreen`](xref:Xamarin.Forms.DualScreen) включает два триггера состояния, которые активируют изменение [`VisualState`](xref:Xamarin.Forms.VisualState) при изменении режима просмотра в присоединенном макете или окне.
+Если класс `DualScreenInfo` или макет `TwoPaneView` работают не так, как нужно, тщательно проверьте инструкции по настройке на этой странице. Распространенными причинами ошибок являются отсутствие или неправильная настройка метода `Init` или значений атрибутов `ConfigurationChanges`.
+
+Дополнительные рекомендации и эталонную реализацию см. в [образцах Xamarin.Forms с поддержкой двух экранов](https://docs.microsoft.com/dual-screen/xamarin/samples).
+
+## <a name="next-steps"></a>Следующие шаги
+
+После добавления NuGet добавьте в приложение функции работы с двумя экранами, следуя приведенным ниже рекомендациям.
+
+- [Шаблоны проектирования для двух экранов](design-patterns.md). Наше руководство по шаблонам поможет вам подобрать оптимальный вариант использования интерфейса приложения на устройстве с двумя экранами.
+- [Макет TwoPaneView](twopaneview.md). Класс `TwoPaneView` в Xamarin.Forms, созданный в стиле элемента управления UWP с таким же именем, представляет собой кроссплатформенный макет, оптимизированный для двухэкранных устройств.
+- [Вспомогательный класс DualScreenInfo](dual-screen-info.md). Класс `DualScreenInfo` позволяет определить, в какой области отображается ваше представление, сколько места оно занимает, в каком положении находится устройство, каков угол сгиба и т. д.
+- [Триггеры для двух экранов](triggers.md). Пространство имен [`Xamarin.Forms.DualScreen`](xref:Xamarin.Forms.DualScreen) включает два триггера состояния, которые активируют изменение [`VisualState`](xref:Xamarin.Forms.VisualState) при изменении режима просмотра в присоединенном макете или окне.
+
+Дополнительные сведения см. в [документации по поддержке двух экранов для разработчиков](https://docs.microsoft.com/dual-screen/).

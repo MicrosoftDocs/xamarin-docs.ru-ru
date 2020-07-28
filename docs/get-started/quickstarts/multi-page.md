@@ -1,6 +1,6 @@
 ---
-title: 'title: "Навигация в многостраничном приложении Xamarin.Forms" description: "Эта статья поясняет, как на основе одностраничного приложения, которое может хранить одну заметку, создать многостраничное, позволяющее хранить несколько заметок".'
-description: 'zone_pivot_groups: platform ms.topic: quickstart ms.prod: xamarin ms.assetid: 9DC3B3D6-6CBC-4705-BE80-3D86A9E65F92 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 04/01/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Навигация в многостраничном приложении Xamarin.Forms
+description: Эта статья поясняет, как на основе одностраничного приложения, которое может хранить одну заметку, создать многостраничное приложение, позволяющее хранить несколько заметок.
 zone_pivot_groups: platform
 ms.topic: quickstart
 ms.prod: xamarin
@@ -12,12 +12,12 @@ ms.date: 04/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b3616d0cf4804dfb37d4fe65034796c672dec828
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 8858a66d2caeea815bf06d5d2741bfc3623598f5
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84127885"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933735"
 ---
 # <a name="perform-navigation-in-a-multi-page-xamarinforms-application"></a>Навигация в многостраничном приложении Xamarin.Forms
 
@@ -31,8 +31,8 @@ ms.locfileid: "84127885"
 
 В этом кратком руководстве описано, как на основе одностраничного кроссплатформенного приложения Xamarin.Forms, которое может хранить одну заметку, создать многостраничное приложение, позволяющее хранить несколько заметок. Ниже показано итоговое приложение:
 
-[![](multi-page-images/screenshots1-sml.png "Notes Page")](multi-page-images/screenshots1.png#lightbox "Notes Page")
-[![](multi-page-images/screenshots2-sml.png "Note Entry Page")](multi-page-images/screenshots2.png#lightbox "Note Entry Page")
+[![Страница заметок](multi-page-images/screenshots1-sml.png)](multi-page-images/screenshots1.png#lightbox "Страница заметок")
+[![Страница ввода заметки](multi-page-images/screenshots2-sml.png)](multi-page-images/screenshots2.png#lightbox "Страница ввода заметки")
 
 ### <a name="prerequisites"></a>Предварительные требования
 
@@ -44,23 +44,23 @@ ms.locfileid: "84127885"
 
 1. Запустите Visual Studio. В начальном окне щелкните решение **Notes** в списке недавних проектов/решений или элемент **Открыть проект или решение**, а затем в диалоговом окне **Открыть проект/решение** выберите файл решения для проекта Notes:
 
-    ![](multi-page-images/vs/open-solution.png "Open Project")
+    ![Открытие проекта](multi-page-images/vs/open-solution.png)
 
 2. В **обозревателе решений** щелкните проект **Notes** правой кнопкой мыши и выберите **Добавить > Новая папка**.
 
-    ![](multi-page-images/vs/add-new-item.png "Add New Item")
+    ![Добавить новый элемент](multi-page-images/vs/add-new-item.png)
 
 3. В **обозревателе решений** присвойте новой папке имя **Models**:
 
-    ![](multi-page-images/vs/name-folder.png "Models Folder")
+    ![Папка Models](multi-page-images/vs/name-folder.png)
 
 4. В **обозревателе решений** выберите папку **Models**, щелкните правой кнопкой мыши и выберите **Добавить > Новый элемент...** :
 
-    ![](multi-page-images/vs/add-new-models-file.png "Add New File")
+    ![Добавление нового файла](multi-page-images/vs/add-new-models-file.png)
 
 5. В диалоговом окне **Добавление нового элемента** выберите **Элементы Visual C# > Класс**, назовите новый файл **Note** и нажмите кнопку **Добавить**:
 
-    ![](multi-page-images/vs/add-note-class.png "Add Note Class")
+    ![Добавление класса Note](multi-page-images/vs/add-note-class.png)
 
     Это приведет к добавлению класса с именем **Note** в папку **Models** проекта **Notes**.
 
@@ -86,7 +86,7 @@ ms.locfileid: "84127885"
 
 7. В **обозревателе решений** щелкните проект **Notes** правой кнопкой мыши и выберите **Добавить > Новый элемент**. В диалоговом окне **Добавление нового элемента** выберите **Элементы Visual C# > Xamarin.Forms > Страница содержимого**, присвойте новому файлу имя **NoteEntryPage** и нажмите кнопку **Добавить**.
 
-    ![](multi-page-images/vs/add-note-entry-page.png "Add Xamarin.Forms ContentPage")
+    ![Добавление Xamarin.Forms ContentPage](multi-page-images/vs/add-note-entry-page.png)
 
     Это приведет к добавлению новой страницы с именем **NoteEntryPage** в корневую папку проекта. Эта страница будет второй страницей в приложении.
 
@@ -327,23 +327,23 @@ ms.locfileid: "84127885"
 
 1. Запуск Visual Studio для Mac В начальном окне щелкните **Открыть**, а затем в диалоговом окне выберите файл решения проекта Notes:
 
-    ![](multi-page-images/vsmac/open-solution.png "Open Solution")
+    ![Открытие решения](multi-page-images/vsmac/open-solution.png)
 
 2. На **Панели решения** выберите проект **Notes**, щелкните правой кнопкой мыши и выберите **Добавить > Новая папка**:
 
-    ![](multi-page-images/vsmac/add-new-folder.png "Add New Folder")
+    ![Добавление новой папки](multi-page-images/vsmac/add-new-folder.png)
 
 3. На **Панели решения** присвойте новой папке имя **Models**:
 
-    ![](multi-page-images/vsmac/name-folder.png "Models Folder")
+    ![Папка Models](multi-page-images/vsmac/name-folder.png)
 
 4. На **Панели решения** выберите папку **Models**, щелкните правой кнопкой мыши и выберите **Добавить > Новый файл...** :
 
-    ![](multi-page-images/vsmac/add-new-models-file.png "Add New File")
+    ![Добавление нового файла](multi-page-images/vsmac/add-new-models-file.png)
 
 5. В диалоговом окне **Новый файл** выберите **Общие > Пустой класс**, присвойте новому файлу имя **Note** и нажмите кнопку **Создать**:
 
-    ![](multi-page-images/vsmac/add-note-class.png "Add Note Class")
+    ![Добавление класса Note](multi-page-images/vsmac/add-note-class.png)
 
     Это приведет к добавлению класса с именем **Note** в папку **Models** проекта **Notes**.
 
@@ -369,7 +369,7 @@ ms.locfileid: "84127885"
 
 7. На **Панели решения** выберите проект **Notes**, щелкните правой кнопкой мыши и выберите **Добавить > Новый файл...** . В диалоговом окне **Новый файл** выберите **Forms > Forms ContentPage XAML**, назовите новый файл **NoteEntryPage** и нажмите кнопку **Создать**:
 
-    ![](multi-page-images/vsmac/add-note-entry-page.png "Add Xamarin.Forms ContentPage")
+    ![Добавление Xamarin.Forms ContentPage](multi-page-images/vsmac/add-note-entry-page.png)
 
     Это приведет к добавлению новой страницы с именем **NoteEntryPage** в корневую папку проекта. Эта страница будет второй страницей в приложении.
 

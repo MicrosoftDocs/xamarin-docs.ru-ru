@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — подробное изучение кратких руководств" description: "Эта статья содержит общие сведения о разработке приложений с использованием Xamarin.Forms.'
-description: 'Помимо прочего, здесь описываются структура приложения Xamarin.Forms и принципы его работы, а также пользовательский интерфейс". zone_pivot_groups: platform ms.topic: quickstart ms.prod: xamarin ms.custom: video ms.assetid: 7B2340A1-6883-41D8-860C-0BB6C4E0C316 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/27/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Подробное изучение кратких руководств по Xamarin.Forms
+description: Эта статья содержит общие сведения о разработке приложений с использованием Xamarin.Forms. Помимо прочего, здесь описываются структура приложения Xamarin.Forms и принципы его работы, а также пользовательский интерфейс.
 zone_pivot_groups: platform
 ms.topic: quickstart
 ms.prod: xamarin
@@ -13,12 +13,12 @@ ms.date: 11/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1bfb76f71a2ac9d8bc9ae84152501909000b9623
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: d1670506fa78b39825368fc91d2452a44ddf8f03
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84132526"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939923"
 ---
 # <a name="xamarinforms-quickstart-deep-dive"></a>Подробное изучение кратких руководств по Xamarin.Forms
 
@@ -30,7 +30,7 @@ ms.locfileid: "84132526"
 
 Код в Visual Studio упорядочен по *решениям* и *проектам*. Решение — это контейнер для одного или нескольких проектов. Проект может представлять собой приложение, вспомогательную библиотеку, тестовое приложение и т. д. Приложение Notes включает в себя одно решение, содержащее четыре проекта, как показано на следующем снимке экрана:
 
-![](deepdive-images/vs/solution.png "Visual Studio Solution Explorer")
+![Обозреватель решений Visual Studio](deepdive-images/vs/solution.png)
 
 Решение содержит следующие проекты:
 
@@ -43,7 +43,7 @@ ms.locfileid: "84132526"
 
 На следующих снимках экрана показано содержимое проекта библиотеки .NET Standard Notes в Visual Studio:
 
-![](deepdive-images/vs/net-standard-project.png "Phoneword .NET Standard Project Contents")
+![Содержимое проекта .NET Standard Phoneword](deepdive-images/vs/net-standard-project.png)
 
 В этом проекте есть узел **Зависимости**, который содержит узлы **NuGet** и **SDK**:
 
@@ -57,7 +57,7 @@ ms.locfileid: "84132526"
 
 В [Visual Studio для Mac](/visualstudio/mac/), так же как в Visual Studio, код упорядочивается по *решениям* и *проектам*. Решение — это контейнер для одного или нескольких проектов. Проект может представлять собой приложение, вспомогательную библиотеку, тестовое приложение и т. д. Приложение Notes включает в себя одно решение, содержащее три проекта, как показано на следующем снимке экрана:
 
-![](deepdive-images/vsmac/solution.png "Visual Studio for Mac Solution Pane")
+![Область решений в Visual Studio для Mac](deepdive-images/vsmac/solution.png)
 
 Решение содержит следующие проекты:
 
@@ -69,7 +69,7 @@ ms.locfileid: "84132526"
 
 На следующих снимках экрана показано содержимое проекта библиотеки .NET Standard Notes в Visual Studio для Mac:
 
-![](deepdive-images/vsmac/net-standard-project.png "Phoneword .NET Standard Library Project Contents")
+![Содержимое проекта библиотеки .NET Standard Phoneword](deepdive-images/vsmac/net-standard-project.png)
 
 В этом проекте есть узел **Зависимости**, который содержит узлы **NuGet** и **SDK**:
 
@@ -98,12 +98,12 @@ ms.locfileid: "84132526"
 
 ::: zone pivot="windows"
 
-![](deepdive-images/vs/architecture.png "Notes Architecture")
+![Архитектура приложения Notes](deepdive-images/vs/architecture.png)
 
 ::: zone-end
 ::: zone pivot="macos"
 
-![](deepdive-images/vsmac/architecture.png "Notes Architecture")
+![Архитектура приложения Notes](deepdive-images/vsmac/architecture.png)
 
 ::: zone-end
 
@@ -388,7 +388,7 @@ await Navigation.PopAsync();
 
 Привязка данных связывает два объекта, которые называются *источником* и *целевым объектом*. *Источник* предоставляет данные. *Целевой* объект будет использовать (и часто отображать) данные из источника. Например, свойство [`Text`](xref:Xamarin.Forms.InputView.Text) элемента [`Editor`](xref:Xamarin.Forms.Editor) (*целевого* объекта) часто связывается с открытым свойством `string` объекта *источника*. На следующей схеме показано отношение привязки:
 
-![](deepdive-images/data-binding.png "Data Binding")
+![Привязка данных](deepdive-images/data-binding.png)
 
 Главным преимуществом привязки данных является то, что вам больше не нужно беспокоиться о синхронизации данных между представлениями и источником данных. Изменения в *источнике* автоматически передаются в *целевой* объект платформой привязки. При необходимости изменения в целевом объекте также могут передаваться в *источник*.
 
@@ -532,7 +532,7 @@ async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
 - Эффекты также позволяют настраивать собственные элементы управления на каждой платформе. Эффекты создаются в проектах для конкретных платформ путем создания подклассов класса [`PlatformEffect`](xref:Xamarin.Forms.PlatformEffect`2) и используются путем их присоединения к соответствующему элементу управления Xamarin.Forms. Дополнительные сведения см. в статье [Эффекты](~/xamarin-forms/app-fundamentals/effects/index.md).
 - Общий код может получать доступ к собственным функциональным возможностям посредством класса [`DependencyService`](xref:Xamarin.Forms.DependencyService). Дополнительные сведения см. в статье, посвященной [доступу к собственным функциональным возможностям с помощью DependencyService](~/xamarin-forms/app-fundamentals/dependency-service/index.md).
 
-Много полезной информации о платформе Xamarin.Forms можно почерпнуть из книги Чарльза Петцольда (Charles Petzold) [_Creating Mobile Apps with Xamarin.Forms_](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md) (Создание мобильных приложений с помощью Xamarin.Forms). Книга доступна в формате PDF, а также в нескольких форматах электронных книг.
+Много полезной информации о платформе Xamarin.Forms можно почерпнуть из книги Чарльза Петцольда (Charles Petzold) [_Creating Mobile Apps with Xamarin.Forms_ ](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md) (Создание мобильных приложений с помощью Xamarin.Forms). Книга доступна в формате PDF, а также в нескольких форматах электронных книг.
 
 ## <a name="related-links"></a>Связанные ссылки
 

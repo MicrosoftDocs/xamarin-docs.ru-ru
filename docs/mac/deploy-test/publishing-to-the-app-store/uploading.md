@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 5569e10c059dec26137aadb814101992ed7e9f7e
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 57591a6e9fcaa3c8271ab27756160ee1c46a4fa3
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76725055"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86935932"
 ---
 # <a name="upload-to-mac-app-store"></a>Отправка в Mac App Store
 
@@ -22,57 +22,57 @@ _В этом руководстве описано, как отправить п
 
 1. Выберите **приложение macOS**, которое требуется создать:
 
-    [![](uploading-images/image65.png "iTunes Connect")](uploading-images/image65.png#lightbox)
+    [![iTunes Connect](uploading-images/image65.png)](uploading-images/image65.png#lightbox)
 
 2. Введите имя приложения и укажите другие сведения. Можно выбрать только значения существующего параметра **Идентификатор пакета**, который был создан ранее:
 
-    [![](uploading-images/image66.png "Selecting the bundle ID")](uploading-images/image66.png#lightbox)
+    [![Выбор идентификатора пакета](uploading-images/image66.png)](uploading-images/image66.png#lightbox)
 
 3. Выберите дату доступности и цену. Независимо от выбранной даты приложение станет доступно для продажи только после его утверждения. Если вам требуется больший контроль над фактической датой доступности, это значение можно задать далеко в будущем.
 
-    [![](uploading-images/image67.png "Setting the available date and price")](uploading-images/image67.png#lightbox)
+    [![Задание даты доступности и цены](uploading-images/image67.png)](uploading-images/image67.png#lightbox)
 
 4. Введите сведения о приложении, включая категорию Магазина приложений, в которую оно входит.
 
-    [![](uploading-images/image68.png "Entering the app information")](uploading-images/image68.png#lightbox)
+    [![Ввод данных о приложении](uploading-images/image68.png)](uploading-images/image68.png#lightbox)
 
     Выберите применимые оценки:
 
-    [![](uploading-images/image69.png "Setting the app ratings")](uploading-images/image69.png#lightbox)
+    [![Установка оценок приложения](uploading-images/image69.png)](uploading-images/image69.png#lightbox)
 
     Описание, ключевые слова и контактные URL-адреса:
 
-    [![](uploading-images/image70.png "Editing the Description, keywords and contact URLs")](uploading-images/image70.png#lightbox)
+    [![Редактирование описания, ключевых слов и контактных URL-адресов](uploading-images/image70.png)](uploading-images/image70.png#lightbox)
 
     Контактные данные и информация для рецензентов Магазина приложений:
 
-    [![](uploading-images/image71.png "Editing the contact information and advice for the App Store reviewers")](uploading-images/image71.png#lightbox)
+    [![Редактирование контактных данных и информации для рецензентов App Store](uploading-images/image71.png)](uploading-images/image71.png#lightbox)
 
     И, наконец, снимки экранов:
 
-    [![](uploading-images/image72.png "Adding the required screenshots")](uploading-images/image72.png#lightbox)
+    [![Добавление необходимых снимков экрана](uploading-images/image72.png)](uploading-images/image72.png#lightbox)
 
     Снимки экрана должны иметь формат JPG, TIF или PNG и размер 1280 x 800, 1440 x 900, 2880 x 1800 или 2560 x 1600 пикселей. Нажмите клавишу **Сохранить** для завершения.
 
 5. Сведения о приложении доступны для просмотра. Нажмите кнопку **Показать сведения**, чтобы изменить состояние:
 
-    [![](uploading-images/image73.png "Viewing the app details")](uploading-images/image73.png#lightbox)
+    [![Просмотр сведений о приложении](uploading-images/image73.png)](uploading-images/image73.png#lightbox)
 
 6. В представлении сведений нажмите кнопку "Ready to Upload Binary" (Готово для отправки двоичного файла), чтобы отправить файл пакета приложения:
 
-    [![](uploading-images/image74.png "Selecting Ready to Upload Binary")](uploading-images/image74.png#lightbox)
+    [![Кнопка "Ready to Upload Binary" (Готово для отправки двоичного файла)](uploading-images/image74.png)](uploading-images/image74.png#lightbox)
 
 7. Ответьте на вопрос шифрования:
 
-    [![](uploading-images/image75.png "Answering the cryptography question")](uploading-images/image75.png#lightbox)
+    [![Ответ на вопрос шифрования](uploading-images/image75.png)](uploading-images/image75.png#lightbox)
 
 8. Появится сообщение о том, когда сайт будет готов принять файл пакета приложения:
 
-    [![](uploading-images/image76.png "The acceptance notification")](uploading-images/image76.png#lightbox)
+    [![Уведомление о принятии](uploading-images/image76.png)](uploading-images/image76.png#lightbox)
 
 9. Запустите **Transporter** и войдите с помощью идентификатора Apple ID, а затем выберите **ADD APP** (Добавить приложение):
 
-    [![](uploading-images/transporter01-sml.png "The Application Loader interface")](uploading-images/transporter01.png#lightbox)
+    [![Интерфейс загрузчика приложений](uploading-images/transporter01-sml.png)](uploading-images/transporter01.png#lightbox)
 
     Следуйте инструкциям, чтобы отправить пакет приложения в iTunes Connect.
 

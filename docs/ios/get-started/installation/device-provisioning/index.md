@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/06/2018
-ms.openlocfilehash: bb1ef1e948c796e6b0d91230be3c82c5a8c7d366
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: dea08895b59626da97c1ca3d97464cfc80f42b88
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303741"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86928709"
 ---
 # <a name="device-provisioning-for-xamarinios"></a>Подготовка устройства для Xamarin.iOS
 
@@ -20,7 +20,7 @@ ms.locfileid: "79303741"
 
 Выделенные разделы на приведенном ниже рисунке содержат шаги, необходимые для подготовки iOS к тестированию:
 
-[![](images/provisioningdiagram.png "The highlighted sections in this image show the steps required to get set up for iOS provisioning")](images/provisioningdiagram.png#lightbox)
+[![Выделенные разделы на этом рисунке содержат шаги, необходимые для подготовки iOS к тестированию](images/provisioningdiagram.png)](images/provisioningdiagram.png#lightbox)
 
 Следующим шагом после этого является распространение приложения. Дополнительные сведения о развертывании см. в руководствах [Распространение приложений](~/ios/deploy-test/app-distribution/index.md).
 

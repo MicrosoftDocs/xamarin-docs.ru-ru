@@ -10,16 +10,16 @@ ms.date: 02/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: df10327b2ac12d2b119f1ab558d7f27e8c319507
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 2e4d85077e1047f4158164d0c752570519c8ecdc
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84131200"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86936842"
 ---
 # <a name="xamarinforms-dual-screen-triggers"></a>Триггеры двухэкранного режима в Xamarin.Forms
 
-![](~/media/shared/preview.png "This API is currently pre-release")
+![Предварительный выпуск API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 Пространство имен [`Xamarin.Forms.DualScreen`](xref:Xamarin.Forms.DualScreen) содержит два триггера состояния:
 

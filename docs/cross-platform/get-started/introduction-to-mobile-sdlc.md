@@ -6,12 +6,12 @@ ms.assetid: 420c5fdf-4610-4e71-9db5-fe894c961924
 author: davidortinau
 ms.author: daortin
 ms.date: 11/22/2016
-ms.openlocfilehash: c428d39911da9abff7d53d478fbe99dbe9a3604e
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 32dec6b8fcdd5387e138a7812d8c3e2074673111
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76724838"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86939624"
 ---
 # <a name="mobile-software-development-lifecycle"></a>Жизненный цикл разработки мобильного ПО
 
@@ -72,7 +72,7 @@ ms.locfileid: "76724838"
 
 Взаимодействие с пользователем обычно реализуется на основе каркасов или макетов с помощью многочисленных [наборов инструментов для проектирования](https://docs.microsoft.com/windows/uwp/design/downloads/). Применение макетов позволяет проектировать взаимодействие с пользователем, не заботясь о его фактической разработке.
 
- [![](introduction-to-mobile-sdlc-images/balsamiq.png "UX is usually done via wireframes or mockups using tools such as Balsamiq")](introduction-to-mobile-sdlc-images/balsamiq.png#lightbox)
+ [![Взаимодействие с пользователем обычно реализуется на основе каркасов или макетов с помощью таких средств, как Balsamiq.](introduction-to-mobile-sdlc-images/balsamiq.png)](introduction-to-mobile-sdlc-images/balsamiq.png#lightbox)
 
 При создании макетов взаимодействия с пользователем важно учитывать рекомендации по работе с интерфейсом для различных целевых платформ приложения. На любой платформе приложение должно работать "как у себя дома". Ниже приводятся ссылки на официальные рекомендации по разработке для различных платформ.
 
@@ -84,11 +84,11 @@ ms.locfileid: "76724838"
 
 Кроме того, реализация механизма взаимодействия с пользователем во многом зависит от особенностей оборудования. Например, на устройствах iOS отсутствует физическая кнопка *возврата* и в связи с этим используется концепция контроллера навигации:
 
- ![](introduction-to-mobile-sdlc-images/01-navigation-controller.png "iOS devices have no physical back button, and therefore introduce the Navigation Controller metaphor")
+ ![На устройствах iOS отсутствует физическая кнопка возврата, и в связи с этим используется концепция контроллера навигации.](introduction-to-mobile-sdlc-images/01-navigation-controller.png)
 
 Также решения о взаимодействии с пользователем необходимо принимать с учетом форм-фактора устройств. Так, экран планшета гораздо больше и, соответственно, может вмещать больше информации. Поэтому зачастую информация, которая выводится на телефоне на нескольких экранах, на планшете умещается на одном:
 
- [![](introduction-to-mobile-sdlc-images/iphone-vs-ipad.png "Often what needs multiple screens on a phone is compressed into one for a tablet")](introduction-to-mobile-sdlc-images/iphone-vs-ipad.png#lightbox)
+ [![Зачастую информация, которая выводится на телефоне на нескольких экранах, умещается на планшете на одном экране.](introduction-to-mobile-sdlc-images/iphone-vs-ipad.png)](introduction-to-mobile-sdlc-images/iphone-vs-ipad.png#lightbox)
 
 На современном рынке представлены устройства самых разных форм-факторов, включая промежуточные (например, между телефоном и планшетом).
 
@@ -98,7 +98,7 @@ ms.locfileid: "76724838"
 
 Как и в случае с механизмом взаимодействия, важно понимать, что каждая платформа использует собственный язык проектирования и даже хорошо проработанное приложение может выглядеть на них по-разному:
 
- [![](introduction-to-mobile-sdlc-images/multiplatform-1.png "A well-designed application may still look different on each platform")](introduction-to-mobile-sdlc-images/multiplatform-1.png#lightbox)
+ [![Даже хорошо проработанное приложение может выглядеть по-разному на различных платформах.](introduction-to-mobile-sdlc-images/multiplatform-1.png)](introduction-to-mobile-sdlc-images/multiplatform-1.png#lightbox)
 
 ### <a name="development"></a>Разработка
 

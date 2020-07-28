@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 311e0a84cfc71421c0992ffcecde975429eb7d3a
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 1214360f98464e1451da58aaca13df6a3964aba9
+ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572173"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86933072"
 ---
 # <a name="connection-troubleshooting-for-a-xamarinios-build-host"></a>Устранение неполадок подключения для узла сборки Xamarin.iOS
 
@@ -44,15 +44,15 @@ _В этом руководстве приводятся инструкции п
 
 2. Проверьте, включена ли на компьютере Mac функция **Удаленный вход**. Разрешите доступ **Только этим пользователям** и убедитесь в том, что ваш пользователь Mac включен в список или группу:
 
-    [![](troubleshooting-images/troubleshooting-image1.png "Set access for Only these users")](troubleshooting-images/troubleshooting-image1.png#lightbox)
+    [![Разрешение доступа "Только этим пользователям"](troubleshooting-images/troubleshooting-image1.png)](troubleshooting-images/troubleshooting-image1.png#lightbox)
 
 3. Проверьте в брандмауэре, разрешены ли входящие подключения через порт 22 (порт по умолчанию для протокола SSH):
 
-    [![](troubleshooting-images/troubleshooting-image2.png "Check that the firewall allows incoming connections through port 22")](troubleshooting-images/troubleshooting-image2.png#lightbox)
+    [![Проверьте в брандмауэре, разрешены ли входящие подключения через порт 22](troubleshooting-images/troubleshooting-image2.png)](troubleshooting-images/troubleshooting-image2.png#lightbox)
 
     Если параметр **Автоматически разрешать подписанному ПО входящие подключения** отключен, во время связывания в системе OS X будет появляться диалоговое окно с запросом, следует ли разрешить программе `mono-sgen` или `mono-sgen32` принимать входящие подключения. В этом диалоговом окне необходимо нажать кнопку **Разрешить**:
 
-    [![](troubleshooting-images/troubleshooting-image4a.png "Click Allow on this dialog")](troubleshooting-images/troubleshooting-image4a.png#lightbox)
+    [![Нажмите кнопку "Разрешить"](troubleshooting-images/troubleshooting-image4a.png)](troubleshooting-images/troubleshooting-image4a.png#lightbox)
 
 4. Убедитесь, что на компьютере Mac выполнен вход в учетную запись пользователя и запущен сеанс работы с графическим пользовательским интерфейсом.
 
@@ -62,11 +62,11 @@ _В этом руководстве приводятся инструкции п
 
     Например, на приведенном ниже снимке экрана имя учетной записи будет **amyb**, а не **Amy Burns**:
 
-    [![](troubleshooting-images/troubleshooting-image5a.png "Getting the account name from the Terminal app")](troubleshooting-images/troubleshooting-image5a.png#lightbox)
+    [![Получение имени учетной записи с помощью приложения Terminal](troubleshooting-images/troubleshooting-image5a.png)](troubleshooting-images/troubleshooting-image5a.png#lightbox)
 
 6. Проверьте правильность IP-адреса, используемого для компьютера Mac. Чтобы узнать IP-адрес, на компьютере Mac последовательно выберите **Системные настройки > Общий доступ > Удаленный вход**.
 
-    [![](troubleshooting-images/troubleshooting-image17.png "The IP address in the System Preferences app")](troubleshooting-images/troubleshooting-image17.png#lightbox)
+    [![IP-адрес в приложении "Системные настройки"](troubleshooting-images/troubleshooting-image17.png)](troubleshooting-images/troubleshooting-image17.png#lightbox)
 
 7. Подтвердив IP-адрес компьютера Mac, попробуйте выполнить запрос `ping` к этому адресу в программе `cmd.exe` в Windows:
 
@@ -159,7 +159,7 @@ _В этом руководстве приводятся инструкции п
 
     1. Проверьте расположение файла **sshd\_config**, выполнив команды `ls /etc/ssh/sshd_config` и `ls /etc/sshd_config` в окне командной строки Terminal. При выполнении дальнейших инструкций используйте расположение, которое _не_ возвращает результат "Нет такого файла или каталога".
 
-        [![](troubleshooting-images/troubleshooting-image18.png "Running `ls /etc/ssh/sshd_config` and `ls /etc/sshd_config` in the Terminal")](troubleshooting-images/troubleshooting-image18.png#lightbox)
+        [![Выполнение команд "ls /etc/ssh/sshd_config" и "ls /etc/sshd_config" в программе Terminal](troubleshooting-images/troubleshooting-image18.png)](troubleshooting-images/troubleshooting-image18.png#lightbox)
 
     2. Выполните команду `cp /etc/ssh/sshd_config "$HOME/Desktop/"` в программе Terminal, чтобы скопировать файл на рабочий стол.
 
@@ -193,7 +193,7 @@ _В этом руководстве приводятся инструкции п
     
 2. Щелкните папку **XMA**, удерживая нажатой клавишу CONTROL, и выберите команду **Переместить в Корзину**:
 
-    [![](troubleshooting-images/troubleshooting-image8.png "Move the XMA folder to Trash")](troubleshooting-images/troubleshooting-image8.png#lightbox)
+    [![Перемещение папки XMA в корзину](troubleshooting-images/troubleshooting-image8.png)](troubleshooting-images/troubleshooting-image8.png#lightbox)
 
 3. В Windows также есть кэш, который может быть полезно очистить. Откройте в Windows командную строку как администратор:
 
@@ -233,7 +233,7 @@ _В этом руководстве приводятся инструкции п
 2. Откройте раскрывающееся меню **Показать выходные данные из**.
 3. Выберите пункт **Xamarin**.
 
-[![](troubleshooting-images/troubleshooting-image11.png "Select Xamarin in the Output tab")](troubleshooting-images/troubleshooting-image11.png#lightbox)
+[![Выбор Xamarin на вкладке "Вывод"](troubleshooting-images/troubleshooting-image11.png)](troubleshooting-images/troubleshooting-image11.png#lightbox)
 
 #### <a name="log-files"></a>Файлы журнала
 
@@ -248,17 +248,17 @@ _В этом руководстве приводятся инструкции п
 
 3. После того как в Visual Studio произойдет ошибка подключения, соберите журналы с помощью команды **Справка > Xamarin > Запаковать журналы**:
 
-    [![](troubleshooting-images/troubleshooting-image12.png "Collect the logs from Help > Xamarin > Zip Logs")](troubleshooting-images/troubleshooting-image12.png#lightbox)
+    [![Сбор журналов с помощью команды "Справка > Xamarin > Запаковать журналы"](troubleshooting-images/troubleshooting-image12.png)](troubleshooting-images/troubleshooting-image12.png#lightbox)
 
 4. Когда вы откроете файл ZIP, вы увидите список файлов, как в примере ниже. Для ошибок подключения наиболее важными файлами являются **\*Ide.log** и **\*Ide.svclog**. Эти файлы содержат одни и те же сообщения в двух немного разных форматах. Файл **SVCLOG** содержит данные в формате XML и полезен для просмотра сообщений. Файл **LOG** содержит обычный текст и полезен для фильтрации сообщений с помощью программ командной строки.
 
     Для просмотра всех сообщений выберите и откройте файл **SVCLOG**:
 
-    [![](troubleshooting-images/troubleshooting-image13.png "Select the svclog file")](troubleshooting-images/troubleshooting-image13.png#lightbox)
+    [![Выбор файла SVCLOG](troubleshooting-images/troubleshooting-image13.png)](troubleshooting-images/troubleshooting-image13.png#lightbox)
 
 5. Файл **SVCLOG** откроется в программе **Microsoft Service Trace Viewer**. Сообщения можно группировать в потоки для просмотра связанных сообщений. Для просмотра по потокам выберите вкладку **Диаграмма** и в раскрывающемся меню **Режим макета** выберите пункт **Поток**:
 
-    [![](troubleshooting-images/troubleshooting-image14.png "Click the Layout Mode drop-down menu and select Thread")](troubleshooting-images/troubleshooting-image14.png#lightbox)
+    [![Выбор пункта "Поток" в раскрывающемся меню "Режим макета"](troubleshooting-images/troubleshooting-image14.png)](troubleshooting-images/troubleshooting-image14.png#lightbox)
 
 <a name="verboselogs"></a>
 
@@ -324,7 +324,7 @@ error : Building from a network share path is not supported at the moment. Pleas
 
 Запустите Xcode на компьютере Mac и убедитесь в том, что выполнен вход в учетную запись разработчика Apple и профиль разработки iOS скачан:
 
-[![](troubleshooting-images/troubleshooting-image7.png "Ensuring that the Apple developer account is logged in and the iOS Development Profile is downloaded")](troubleshooting-images/troubleshooting-image7.png#lightbox)
+[![Убедитесь в том, что выполнен вход в учетную запись разработчика Apple и профиль разработки iOS скачан](troubleshooting-images/troubleshooting-image7.png)](troubleshooting-images/troubleshooting-image7.png#lightbox)
 
 ### <a name="a-socket-operation-was-attempted-to-an-unreachable-network"></a>"Попытка доступа к недействующей сети при выполнении операции над сокетом"
 
@@ -350,7 +350,7 @@ error : Building from a network share path is not supported at the moment. Pleas
 ps -A | grep mono
 ```
 
-[![](troubleshooting-images/troubleshooting-image10.png "Running commands in Terminal on the Mac")](troubleshooting-images/troubleshooting-image10.png#lightbox)
+[![Выполнение команд в программе Terminal на компьютере Mac](troubleshooting-images/troubleshooting-image10.png)](troubleshooting-images/troubleshooting-image10.png#lightbox)
 
 Чтобы завершить существующие процессы, выполните следующую команду:
 
@@ -370,7 +370,7 @@ killall mono
 
 2. Щелкните папку **mtbs**, удерживая нажатой клавишу CONTROL, и выберите команду **Переместить в Корзину**:
 
-    [![](troubleshooting-images/troubleshooting-image9.png "Move the mtbs folder to Trash")](troubleshooting-images/troubleshooting-image9.png#lightbox)
+    [![Перемещение папки mtbs в корзину](troubleshooting-images/troubleshooting-image9.png)](troubleshooting-images/troubleshooting-image9.png#lightbox)
 
 ## <a name="related-links"></a>Связанные ссылки
 
