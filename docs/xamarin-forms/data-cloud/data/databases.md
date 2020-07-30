@@ -10,14 +10,14 @@ ms.date: 12/05/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2268f9034a4b09adce697f5fb7b6652baa4feed6
-ms.sourcegitcommit: 898ba8e5140ae32a7df7e07c056aff65f6fe4260
+ms.openlocfilehash: 021831da13a936fc5eb9d2e4cb63412484ceb465
+ms.sourcegitcommit: 69d9a61ba479f707d96eb4c1c56a4b05a2a2a26f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86226824"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87426868"
 ---
-# <a name="xamarinforms-local-databases"></a>Xamarin.FormsЛокальные базы данных
+# <a name="no-locxamarinforms-local-databases"></a>Xamarin.FormsЛокальные базы данных
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo)
 
@@ -40,9 +40,9 @@ ms.locfileid: "86226824"
 Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
 
 - **Идентификатор:** sqlite-net-pcl
-- **Автор:** SQLite-NET
-- **Владельцы:** праекларум
-- **URL-адрес проекта:**https://github.com/praeclarum/sqlite-net
+- **Автор(ы)** : SQLite-net
+- **Владелец:** praeclarum
+- **URL-адрес проекта:** https://github.com/praeclarum/sqlite-net
 - **Ссылка NuGet:** [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)
 
 > [!NOTE]
@@ -122,8 +122,8 @@ public class TodoItemDatabase
             if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(TodoItem).Name))
             {
                 await Database.CreateTablesAsync(CreateFlags.None, typeof(TodoItem)).ConfigureAwait(false);
-                initialized = true;
             }
+            initialized = true;
         }
     }
 
@@ -219,7 +219,7 @@ public class TodoItemDatabase {
 }
 ```
 
-## <a name="access-data-in-xamarinforms"></a>Доступ к данным вXamarin.Forms
+## <a name="access-data-in-no-locxamarinforms"></a>Доступ к данным вXamarin.Forms
 
 Xamarin.Forms `App` Класс предоставляет экземпляр `TodoItemDatabase` класса:
 
@@ -238,7 +238,7 @@ public static TodoItemDatabase Database
 }
 ```
 
-Это свойство позволяет Xamarin.Forms компонентам вызывать методы получения и обработки данных в `Database` экземпляре в ответ на взаимодействие с пользователем. Вот несколько примеров:
+Это свойство позволяет Xamarin.Forms компонентам вызывать методы получения и обработки данных в `Database` экземпляре в ответ на взаимодействие с пользователем. Пример:
 
 ```csharp
 var saveButton = new Button { Text = "Save" };

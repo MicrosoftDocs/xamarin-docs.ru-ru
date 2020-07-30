@@ -10,12 +10,12 @@ ms.date: 09/30/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e38080fc9bc4ef0b74eb8c12c3a3f646c4888f53
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 874793975f027e1323dbf8a8acd30d19e980370b
+ms.sourcegitcommit: 562d4f2d51a43af21b7dc3ab892dd3a4264349a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84198078"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87177649"
 ---
 # <a name="part-1-getting-started-with-xaml"></a>Часть 1. Начало работы с XAML
 
@@ -148,7 +148,7 @@ namespace XamlSamples
 
 При компиляции и запуске этой программы в `Label` центре страницы отображается элемент, как показано в XAML:
 
-[![Отображение по умолчанию Xamarin.Forms](get-started-with-xaml-images/xamlsamples.png)](get-started-with-xaml-images/xamlsamples-large.png#lightbox)
+[![По умолчанию::: No-Loc (Xamarin. Forms)::: дисплей](get-started-with-xaml-images/xamlsamples.png)](get-started-with-xaml-images/xamlsamples-large.png#lightbox)
 
 Для более интересных визуальных элементов требуется только более интересный код XAML.
 
