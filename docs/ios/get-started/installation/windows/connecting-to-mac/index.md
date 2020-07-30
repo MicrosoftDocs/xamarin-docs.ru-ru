@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/29/2018
-ms.openlocfilehash: 81377d790d695b60465319aeb166eb1e62483211
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 7bc6a7ce1b8cd20aa782ddde42925e4e72374ec4
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76940932"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996951"
 ---
 # <a name="pair-to-mac-for-xamarinios-development"></a>Связывание с Mac при разработке для Xamarin.iOS
 
@@ -176,9 +176,9 @@ _В этом руководстве описывается использова�
 
 В ходе выполнения выводятся различные запросы, как показано на следующих снимках экрана (щелкните, чтобы увеличить):
 
-||Проверка установки|Загрузка|Установка
+|Mono|Проверка установки|Загрузка|Установка
 |---|---|---|---|
-|Mono|[![Установка Mono отсутствует](images/mono-missing.png "Установка Mono отсутствует")](images/mono-missing-large.png#lightbox)|[![Скачивание Mono](images/mono-downloading.png "Скачивание Mono")](images/mono-downloading-large.png#lightbox)|[![Установка Mono](images/mono-installing.png "Установка Mono")](images/mono-installing-large.png#lightbox)|
+||[![Установка Mono отсутствует](images/mono-missing.png "Установка Mono отсутствует")](images/mono-missing-large.png#lightbox)|[![Скачивание Mono](images/mono-downloading.png "Скачивание Mono")](images/mono-downloading-large.png#lightbox)|[![Установка Mono](images/mono-installing.png "Установка Mono")](images/mono-installing-large.png#lightbox)|
 
 ### <a name="xamarinios"></a>Xamarin.iOS
 
@@ -192,17 +192,17 @@ _В этом руководстве описывается использова�
 
 В ходе выполнения выводятся различные запросы, как показано на следующих снимках экрана (щелкните, чтобы увеличить):
 
-||Проверка установки|Загрузка|Установка
+|Xamarin.iOS|Проверка установки|Загрузка|Установка
 |---|---|---|---|
-|Xamarin.iOS|[![Установка Xamarin.iOS отсутствует](images/xamios-missing.png "Установка Xamarin.iOS отсутствует")](images/xamios-missing-large.png#lightbox)|[![Скачивание Xamarin.iOS](images/xamios-downloading.png "Скачивание Xamarin.iOS")](images/xamios-downloading-large.png#lightbox)|[![Установка Xamarin.iOS](images/xamios-installing.png "Установка Xamarin.iOS")](images/xamios-installing-large.png#lightbox)|
+||[![Установка Xamarin.iOS отсутствует](images/xamios-missing.png "Установка Xamarin.iOS отсутствует")](images/xamios-missing-large.png#lightbox)|[![Скачивание Xamarin.iOS](images/xamios-downloading.png "Скачивание Xamarin.iOS")](images/xamios-downloading-large.png#lightbox)|[![Установка Xamarin.iOS](images/xamios-installing.png "Установка Xamarin.iOS")](images/xamios-installing-large.png#lightbox)|
 
 ### <a name="xcode-tools-and-license"></a>Средства и лицензии Xcode
 
 Функция "Связать с Mac" также проверяет наличие установки Xcode и принятие его лицензии. Функция "Связать с Mac" не устанавливает Xcode, однако предлагает принять условия лицензионного соглашения, как показано на следующих снимках экрана (щелкните, чтобы увеличить):
 
-||Проверка установки|Принятие условий лицензионного соглашения|
+|Xcode|Проверка установки|Принятие условий лицензионного соглашения|
 |---|---|---|
-|Xcode|[![Установка Xcode отсутствует](images/xcode-missing.png "Установка Xcode отсутствует")](images/xcode-missing-large.png#lightbox)|[![Лицензия Xcode](images/xcode-license.png "Лицензия Xcode")](images/xcode-license-large.png#lightbox)|
+||[![Установка Xcode отсутствует](images/xcode-missing.png "Установка Xcode отсутствует")](images/xcode-missing-large.png#lightbox)|[![Лицензия Xcode](images/xcode-license.png "Лицензия Xcode")](images/xcode-license-large.png#lightbox)|
 
 Кроме того, функция "Связать с Mac" установит или обновит различные пакеты, распространяемые с Xcode. Пример:
 

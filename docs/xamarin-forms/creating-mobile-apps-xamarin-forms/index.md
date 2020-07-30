@@ -10,18 +10,18 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e38c319db0d0adf23a2ec0d328ccc3822e33f66d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: de85e9108244230e9c0a740b1aa9140ecf92a033
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84198283"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997401"
 ---
-# <a name="creating-mobile-apps-with-xamarinforms-book"></a>Книга о создании мобильных приложений с помощью Xamarin.Forms
+# <a name="creating-mobile-apps-with-no-locxamarinforms-book"></a>Книга о создании мобильных приложений с помощью Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples)
 
-<img src="images/cover-sml.png" title="Книга о создании мобильных приложений с помощью Xamarin.Forms" align="left" />Книга (Charles Petzold) *Создание мобильных приложений с помощью Xamarin.Forms* Чарльза Петцольда служит руководством по разработке приложений Xamarin.Forms. Единственным предварительным условием является знание языка программирования C#. Книга предоставляет подробный обзор пользовательского интерфейса Xamarin.Forms, а также охватывает анимацию, MVVM, триггеры, реакции на событие, пользовательские макеты, пользовательские отрисовщики и многое другое.
+<img src="images/cover-sml.png" title="Книга о создании мобильных приложений с помощью Xamarin.Forms" alt="Creating Mobile Apps with Xamarin.Forms Book" align="left" />Книга (Charles Petzold) *Создание мобильных приложений с помощью Xamarin.Forms* Чарльза Петцольда служит руководством по разработке приложений Xamarin.Forms. Единственным предварительным условием является знание языка программирования C#. Книга предоставляет подробный обзор пользовательского интерфейса Xamarin.Forms, а также охватывает анимацию, MVVM, триггеры, реакции на событие, пользовательские макеты, пользовательские отрисовщики и многое другое.
 
 Книга была опубликована весной 2016 г. и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые [материалы устарели](#ways-in-which-the-book-is-outdated), а некоторые разделы перестали быть полностью верными или полными.
 
