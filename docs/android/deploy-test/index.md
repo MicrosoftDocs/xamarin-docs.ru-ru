@@ -7,14 +7,14 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/25/2018
-ms.openlocfilehash: 4b7d3d19ce8766ccdbfc41163fcad44074e832b8
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: bec2bef92433320925c4179535c8371b69b9bf22
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "80159770"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996556"
 ---
-# <a name="deployment-and-testing"></a>Развертывание и тестирование
+# <a name="deployment-and-testing-of-xamarinandroid-apps"></a>Развертывание и тестирование приложений Xamarin.Android
 
 В этом разделе перечислены руководства, в которых рассматриваются вопросы тестирования приложения, оптимизации его производительности, подготовки к выпуску, подписывания с помощью сертификата и публикации в магазине приложений.
 

@@ -10,14 +10,14 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fb5474c7436cb985a1404b662fcf842f22cfdc0d
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 4f7fdc0bb18a49e601c00ce1e3eb13371bb80be3
+ms.sourcegitcommit: 3698b35c823225a74892a47139d19e8ae8e6d9ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937700"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87113821"
 ---
-# <a name="xamarinforms-twopaneview-layout"></a>Xamarin.Forms Макет TwoPaneView
+# <a name="no-locxamarinforms-twopaneview-layout"></a>Xamarin.Forms Макет TwoPaneView
 
 ![Предварительный выпуск API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
@@ -77,8 +77,8 @@ ms.locfileid: "86937700"
 
 Следующие свойства применяются, когда `TwoPaneView` занимает один экран или два экрана:
 
-- `TallModeConfiguration` — в вертикальном режиме это свойство задает расположение слева и справа либо отображение только одной области, как определено свойством TwoPaneViewPriority.
-- `WideModeConfiguration` — в горизонтальном режиме это свойство задает расположение сверху и снизу либо отображение только одной области, как определено свойством TwoPaneViewPriority.
+- `TallModeConfiguration` — в вертикальном режиме это свойство задает расположение сверху и снизу либо отображение только одной области, как определено свойством TwoPaneViewPriority.
+- `WideModeConfiguration` — в горизонтальном режиме это свойство позволяет задать расположение слева и справа либо отображение только одной области, как определено свойством TwoPaneViewPriority.
 - `PanePriority` определяет, какая область (Pane1 или Pane2) будет отображаться в режиме SinglePane.
 
 ## <a name="related-links"></a>Связанные ссылки

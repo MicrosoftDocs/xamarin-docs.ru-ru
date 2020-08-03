@@ -6,12 +6,12 @@ ms.assetid: 9ce61f18-22ac-4b93-91be-5b499677d661
 author: davidortinau
 ms.author: daortin
 ms.date: 03/24/2017
-ms.openlocfilehash: d21394b3c33b3f415cbe45ae13c84cabab1ec30b
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 89b5dc2ae296b9e9033c45bf93c87de83054f721
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571042"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996491"
 ---
 # <a name="cross-platform-performance"></a>Кроссплатформенная производительность
 
@@ -298,11 +298,11 @@ SGen использует одну из трех куч для выделени�
 
 На приведенном ниже снимке экрана показаны параметры компоновщика для проекта Xamarin.iOS в Visual Studio для Mac:
 
-![](memory-perf-best-practices-images/linker-options-ios.png)
+![Параметры компоновщика для Xamarin.iOS](memory-perf-best-practices-images/linker-options-ios.png)
 
 На приведенном ниже снимке экрана показаны параметры компоновщика для проекта Xamarin.Android в Visual Studio для Mac:
 
-![](memory-perf-best-practices-images/linker-options-droid.png)
+![Параметры компоновщика для Xamarin.Android](memory-perf-best-practices-images/linker-options-droid.png)
 
 Для управления работой компоновщика служат три параметра:
 

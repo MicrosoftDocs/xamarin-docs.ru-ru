@@ -7,18 +7,18 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 08/21/2018
-ms.openlocfilehash: 043ad02f9ca9148910364ac82917551ee58d72ba
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 56c9fc307166ec9c72ab6cb1f7a726c4cd12cb3e
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73027402"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997037"
 ---
 # <a name="fragments-walkthrough-ndash-phone"></a>Пошаговое руководство по фрагментам для смартфонов &ndash;
 
 Это первая часть пошагового руководства, в рамках которого будет создано приложение Xamarin.Android, предназначенное для устройства Android в книжной ориентации. В этом пошаговом руководстве рассказывается, как создавать фрагменты в Xamarin.Android и как добавлять их в пример.
 
-[![](./images/intro-screenshot-phone-sml.png)](./images/intro-screenshot-phone.png#lightbox)
+[![Снимок экрана приложения с пошаговыми инструкциями](./images/intro-screenshot-phone-sml.png)](./images/intro-screenshot-phone.png#lightbox)
 
 Для этого приложения будут созданы следующие классы:
 

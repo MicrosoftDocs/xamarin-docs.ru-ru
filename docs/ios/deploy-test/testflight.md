@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: f020219f28ce9389c3f8d5157ddfddc32af07f0f
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 1f86227573fc5e9dc39d4781125c49a067e8967d
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939975"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997492"
 ---
 # <a name="using-testflight-to-distribute-xamarinios-apps"></a>Использование TestFlight для распространения приложений Xamarin.iOS
 
@@ -75,7 +75,7 @@ TestFlight — служба бета-тестирования Apple для пр�
 
 Форма должна в точности отражать данные в файле Info.plist, как показано ниже:
 
-[![](testflight-images/infoplist.png "Файл Info.plist приложения")](testflight-images/infoplist.png#lightbox)
+[![Файл Info.plist приложения](testflight-images/infoplist.png)](testflight-images/infoplist.png#lightbox)
 [![Форма в iTunes Connect](testflight-images/newiosapp.png)](testflight-images/newiosapp.png#lightbox)
 
 - **Имя** — описательное имя, используемое при настройке пакета приложений. Параметр должен точно совпадать с записью **Application name** в `Info.plist`.
@@ -227,7 +227,7 @@ TestFlight — служба бета-тестирования Apple для пр�
 
 Если у вас большое количество внешних тестировщиков, можно, нажав на ссылку **Импортировать файл**, импортировать файл `CSV` со следующим форматом строки:
 
-``` 
+```
 first name, last name, email address
 ```
 

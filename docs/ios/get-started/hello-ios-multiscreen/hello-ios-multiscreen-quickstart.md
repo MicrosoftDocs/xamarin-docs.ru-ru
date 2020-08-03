@@ -9,12 +9,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: 1b279b125ce88a37ddb3209cfe689a7fef50a256
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: b937cc653275f509b7f759af5c3d995e84381cb2
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938753"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997349"
 ---
 # <a name="hello-ios-multiscreen--quickstart"></a>Привет, iOS (несколько экранов): краткое руководство
 
@@ -67,7 +67,7 @@ ms.locfileid: "86938753"
 
 8. Дважды щелкните **Phoneword** экрана **заголовок** панели и изменить **заголовок** для **Phoneword**:
 
-    ![](hello-ios-multiscreen-quickstart-images/09.png "Change the Title to 'Phoneword'")
+    ![Изменение заголовка на Phoneword](hello-ios-multiscreen-quickstart-images/09.png)
 
 9. Перетащите элемент **Button** из **панели элементов** и поместите его под элементом **Call Button** (Кнопка вызова). Перетащите маркеры, чтобы сделать новый элемент **Button** такой же ширины, что и элемент **Call Button** (Кнопка вызова):
 
@@ -90,7 +90,7 @@ ms.locfileid: "86938753"
     ![Файл CallHistoryController.cs на Панели решения](hello-ios-multiscreen-quickstart-images/14new.png)
 
 13. Дважды щелкните файл **CallHistoryController.cs**, чтобы открыть его, и замените содержимое следующим кодом:
-    
+
     ```csharp
     using System;
     using Foundation;
@@ -314,7 +314,7 @@ ms.locfileid: "86938753"
 
 10. В **обозревателе свойств** измените **Имя** с **Button** на `CallHistoryButton` и измените **Заголовок** на **Call History** (Журнал вызовов):
 
-    ![](hello-ios-multiscreen-quickstart-images/image9.png "Change the Name of the Button to 'CallHistoryButton' and the Title to 'Call History'")
+    ![Измените "Имя" с Button на CallHistoryButton и "Заголовок" на Call History (Журнал вызовов)](hello-ios-multiscreen-quickstart-images/image9.png)
 
 11. Создайте экран **Call History** (Журнал вызовов). Перетащите **контроллер представления таблиц** из **панели элементов** в область конструктора:
 

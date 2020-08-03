@@ -7,14 +7,14 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 08/21/2018
-ms.openlocfilehash: 38052eee1b71ace9795f5c16bdf714f9538e353d
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 9b4b74b3dbde34cb94b2ce3b104b2b5a4e1abe21
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303480"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996894"
 ---
-# <a name="platform-features"></a>Функции платформы
+# <a name="xamarinandroid-platform-features"></a>Возможности на платформе Xamarin.Android
 
 _Документы в этом разделе охватывают функции, относящиеся к Android. Здесь вы найдете сведения о том, как использовать фрагменты, работать с картами и инкапсулировать данные с помощью поставщиков содержимого._
 

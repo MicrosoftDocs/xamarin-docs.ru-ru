@@ -7,14 +7,14 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 06/22/2018
-ms.openlocfilehash: 0de2ed96c7b2af69e99fbd742c0fd07b27f2ef9d
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 2725f189ee3999061d3dcd397eed17cc4590eaa8
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73020730"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996153"
 ---
-# <a name="setup-and-installation"></a>Настройка и установка
+# <a name="install-and-setup-xamarinandroid"></a>Установка и настройка Xamarin.Android
 
 В разделах этого документа содержатся сведения об установке и настройке Xamarin.Android для работы с Visual Studio в Windows и macOS, использовании диспетчера пакетов SDK для Android для скачивания и установки средств и компонентов пакета SDK для Android, которые необходимы для создания и тестирования приложения, настройке эмулятора Android для отладки и подключения физического устройства Android к компьютеру разработки для отладки и окончательного тестирования приложения.
 

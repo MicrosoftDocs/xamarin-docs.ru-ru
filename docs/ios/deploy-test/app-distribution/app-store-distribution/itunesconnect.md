@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 1de157540011011be6d48db25414c8667195c679
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 90309fe8a9282110a685151455d0b1407b269128
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86932712"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997362"
 ---
 # <a name="configuring-an-app-in-itunes-connect"></a>Настройка приложения в iTunes Connect
 
@@ -185,7 +185,7 @@ Apple требует предоставлять снимки экрана и в�
 4. Прокрутите страницу до раздела **Name** (Имя).
 5. Заполните все необходимые сведения:
 
-    [![](itunesconnect-images/name01.png "Editing Name, Description, What's New, Keywords and URLs in iTunes Connect")](itunesconnect-images/name01.png#lightbox)
+    [![Изменение имени, описания, сведений о новых возможностях, ключевых слов и URL-адресов в iTunes Connect](itunesconnect-images/name01.png)](itunesconnect-images/name01.png#lightbox)
 6. Чтобы сохранить изменения, нажмите кнопку **Save** (Сохранить) в верхней части экрана.
 
 > [!IMPORTANT]

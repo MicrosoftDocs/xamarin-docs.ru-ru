@@ -8,12 +8,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: 28dddc35ac829cb58a40a9296bb995e119b5b6e3
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 8a9a38c24af3e14cd6930cbb27717ba184dd0235
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937271"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86996413"
 ---
 # <a name="hello-ios-multiscreen--deep-dive"></a>Привет, iOS (несколько экранов): теперь подробнее
 
@@ -78,7 +78,7 @@ ms.locfileid: "86937271"
 
 - **При необходимости отображает кнопку возврата** — когда мы отправляем новый элемент в стек навигации, в строке заголовка может автоматически отображаться *кнопка возврата*, позволяющая при навигации возвращаться назад. Нажатие кнопки возврата *извлекает* текущий контроллер представления из стека навигации и загружает в окно предыдущую иерархию представлений содержимого:  
 
-    [![](hello-ios-multiscreen-deepdive-images/03.png "This diagram illustrates 'popping' a card off the stack")](hello-ios-multiscreen-deepdive-images/03.png#lightbox)
+    [![Схема иллюстрирует извлечение карты из стопки](hello-ios-multiscreen-deepdive-images/03.png)](hello-ios-multiscreen-deepdive-images/03.png#lightbox)
 
 - **Отображает строку заголовка** — верхняя часть контроллера навигации называется *заголовком*. Он отвечает за отображение заголовка контроллера представления, как показано на следующей схеме:  
 

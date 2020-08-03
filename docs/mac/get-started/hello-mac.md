@@ -8,12 +8,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 09/02/2018
-ms.openlocfilehash: 767282516d9fc2ce097d13641697290dad7bd8ad
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: fe052fee9bd72164ce0d739f01cc1c21a9517cc6
+ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938077"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86997167"
 ---
 # <a name="hello-mac-walkthrough"></a>Знакомство с Mac. Пошаговое руководство
 
@@ -324,7 +324,7 @@ namespace Hello_Mac
 
 3. В окне **Attribute Inspector** (Инспектор атрибутов) щелкните свойство **Title** (Название) и измените название кнопки на **Click Me** (Нажми меня).
 
-    [![](hello-mac-images/xcode09.png "Setting the button's properties")](hello-mac-images/xcode09.png#lightbox)
+    [![Задание свойств кнопки](hello-mac-images/xcode09.png)](hello-mac-images/xcode09.png#lightbox)
 
 4. Перетащите **метку** из **раздела "Библиотека"** :
 
