@@ -10,18 +10,21 @@ ms.date: 10/22/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fe099235857f6bd0531539e3aa84e41bf59b50ba
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 7e92385f3a82c2d12881be4ff3e54bc47533696d
+ms.sourcegitcommit: ea2abdc789d0e292c3e1700a2b53b92097e0e542
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139871"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87517497"
 ---
-# <a name="xamarinforms-map-geocoding"></a>Xamarin.FormsГеокодирование карт
+# <a name="no-locxamarinforms-map-geocoding"></a>Xamarin.FormsГеокодирование карт
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
 [`Xamarin.Forms.Maps`](xref:Xamarin.Forms.Maps)Пространство имен предоставляет [`Geocoder`](xref:Xamarin.Forms.Maps.Geocoder) класс, который выполняет преобразование между строковыми адресами и координатами широты и долготы, хранящимися в [`Position`](xref:Xamarin.Forms.Maps.Position) объектах. Дополнительные сведения о [`Position`](xref:Xamarin.Forms.Maps.Position) структуре см. в разделе [Map Disposition and Distance](position-distance.md).
+
+> [!NOTE]
+> Альтернативный API-интерфейс геокодирования доступные в Xamarin.Essentials . Xamarin.Essentials `Geocoding` API предлагает структурированные данные адреса при геокодировании адресов, в отличие от строк, возвращаемых этим API. Дополнительные сведения см. в разделе [ Xamarin.Essentials геокодирование](~/essentials/geocoding.md).
 
 ## <a name="geocode-an-address"></a>Геокодирование адреса
 
