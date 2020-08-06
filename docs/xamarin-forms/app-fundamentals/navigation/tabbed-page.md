@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms TabbedPage" description: "Xamarin.Forms TabbedPage состоит из списка вкладок и большой области сведений, где каждая вкладка загружает содержимое в область сведений.'
-description: 'В этой статье демонстрируется использование TabbedPage для перехода по коллекции страниц". ms.prod: xamarin ms.assetid: C946057F-C77C-412D-82A0-DAF475A24EF5 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 11/07/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Xamarin.Forms TabbedPage
+description: Xamarin.Forms TabbedPage состоит из списка вкладок и большой области сведений, где каждая вкладка загружает содержимое в область сведений. В этой статье демонстрируется использование TabbedPage для перехода по коллекции страниц.
 ms.prod: xamarin
 ms.assetid: C946057F-C77C-412D-82A0-DAF475A24EF5
 ms.technology: xamarin-forms
@@ -10,14 +10,14 @@ ms.date: 11/07/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 38389867ba52e63d8310e3b59d7838f58e8cf488
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 733ec985f4d285f26aca62930868970026847825
+ms.sourcegitcommit: 69d9a61ba479f707d96eb4c1c56a4b05a2a2a26f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84137518"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87426881"
 ---
-# <a name="xamarinforms-tabbedpage"></a>Xamarin.Forms TabbedPage
+# <a name="no-locxamarinforms-tabbedpage"></a>Xamarin.Forms TabbedPage
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-tabbedpagewithnavigationpage)
 
@@ -33,7 +33,7 @@ Xamarin.Forms [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) состоит из 
 В Android список вкладок отображается в верхней части экрана, а также в области данных ниже. У каждой вкладки есть заголовок и значок, который должен быть PNG-файлом с альфа-каналом. Но эти вкладки можно переместить в нижнюю часть экрана в зависимости от конкретной платформы. При наличии более пяти вкладок, список которых отображается внизу экрана, появляется вкладка *Дополнительно*, которую можно использовать для доступа к дополнительным вкладкам. Дополнительные сведения о требованиях к значкам см. в разделах о [вкладках](https://material.io/components/tabs/#) на сайте material.io и [поддержке разных значений плотности пикселей](https://developer.android.com/training/multiscreen/screendensities) на сайте developer.android.com. Дополнительные сведения о перемещении вкладок в нижнюю часть экрана см. в статье [TabbedPage Toolbar Placement and Color on Android](~/xamarin-forms/platform/android/tabbedpage-toolbar-placement-color.md) (Цвет и размещение значков на панели TabbedPage в Android).
 
 > [!TIP]
-> Кроме того, у `TabbedPageRenderer` для Android AppCompat есть переопределяемый метод `GetIconDrawable`, который может использоваться для загрузки значков вкладок из настраиваемого объекта `Drawable`. Это переопределение позволяет использовать изображения SVG в виде значков в `TabbedPage` и работает как для верхних, так и для нижних панелей вкладок. Кроме того, можно использовать переопределяемый метод `SetTabIcon` для загрузки значков вкладок из настраиваемого `Drawable` для верхних панелей вкладок.
+> Кроме того, у `TabbedPageRenderer` для Android AppCompat есть переопределяемый метод `SetTabIconImageSource`, который может использоваться для загрузки значков вкладок из настраиваемого объекта `Drawable`. Это переопределение позволяет использовать изображения SVG в виде значков в `TabbedPage` и работает как для верхних, так и для нижних панелей вкладок.
 
 На универсальной платформе Windows (UWP) список вкладок отображается в верхней части экрана, а также в области данных ниже. У каждой вкладки есть заголовок. Тем не менее на каждую вкладку можно добавлять значки в зависимости от платформы. Дополнительные сведения см. в статье о [значках TabbedPage в Windows](~/xamarin-forms/platform/windows/tabbedpage-icons.md).
 
