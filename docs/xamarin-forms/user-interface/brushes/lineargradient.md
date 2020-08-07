@@ -10,18 +10,18 @@ ms.date: 07/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e83e3cc110e2ab5f9bf6a1cda54fbb88e65bee17
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 734ecae4fdafd71f0c88ddc5e4b4ed0c672f2019
+ms.sourcegitcommit: 579ec4f2884fa391e5e214a3952cd6004c521eb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/07/2020
-ms.locfileid: "87919153"
+ms.locfileid: "87919636"
 ---
 # <a name="no-locxamarinforms-brushes-linear-gradients"></a>Xamarin.FormsКисти: линейные градиенты
 
 ![Предварительный просмотр API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/BrushDemos)
 
 `LinearGradientBrush`Класс является производным от `GradientBrush` класса и закрашивает область линейным градиентом, который смешивает два или более цвета вдоль линии, известной как ось градиента. `GradientStop`объекты используются для указания цветов в градиенте и их позиций. Дополнительные сведения об `GradientStop` объектах см. в разделе [ Xamarin.Forms кисти: градиенты](gradient.md).
 
@@ -134,5 +134,5 @@ ms.locfileid: "87919153"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Брушесдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
+- [Брушесдемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/BrushDemos)
 - [Xamarin.FormsКисти: градиенты](gradient.md)
