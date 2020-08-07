@@ -10,18 +10,18 @@ ms.date: 04/29/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e8898120ae234c13c6650a7c818796fd25fa1101
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f2359880626b292f410af094c82ba6bb3ed50426
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929142"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918405"
 ---
-# <a name="xamarinforms-carouselview-data"></a>Xamarin.FormsДанные Карауселвиев
+# <a name="no-locxamarinforms-carouselview-data"></a>Xamarin.FormsДанные Карауселвиев
 
-![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView)включает следующие свойства, которые определяют отображаемые данные и его внешний вид:
 
@@ -83,7 +83,7 @@ carouselView.ItemsSource = new string[]
 
 Сведения о том, как изменить [`CarouselView`](xref:Xamarin.Forms.CarouselView) ориентацию, см. в разделе [ Xamarin.Forms карауселвиев Layout](layout.md). Сведения о том, как определить внешний вид каждого элемента в `CarouselView` , см. в [разделе Определение внешнего вида элемента](#define-item-appearance).
 
-### <a name="data-binding"></a>Привязка данных
+### <a name="data-binding"></a>привязка данных,
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView)может заполняться данными с помощью привязки данных для привязки своего [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства к `IEnumerable` коллекции. В XAML это достигается с помощью `Binding` расширения разметки:
 

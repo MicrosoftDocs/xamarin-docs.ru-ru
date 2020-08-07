@@ -10,18 +10,18 @@ ms.date: 06/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2f00daff6cada3f74b2dbcf6daa8245b80cf13eb
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 5b7e6404dec40814b800aef696afd058cafb69e5
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937661"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918358"
 ---
-# <a name="xamarinforms-shapes-polyline"></a>Xamarin.FormsФигуры: ломаная линия
+# <a name="no-locxamarinforms-shapes-polyline"></a>Xamarin.FormsФигуры: ломаная линия
 
-![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Polyline`Класс является производным от `Shape` класса и может использоваться для рисования ряда Соединенных прямых линий. Ломаная линия похожа на многоугольник, за исключением того, что последняя точка ломаной линии не соединена с первой точкой. Сведения о свойствах, которые `Polyline` класс наследует от `Shape` класса, см. в разделе [ Xamarin.Forms Shapes](index.md).
 
@@ -47,7 +47,8 @@ ms.locfileid: "86937661"
 
 ```xaml
 <Polyline Points="0,0 10,30, 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
-          Stroke="Red" />
+          Stroke="Red"
+          StrokeThickness="1" />
 ```
 
 В этом примере рисуется Красная Ломаная линия:

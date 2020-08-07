@@ -6,20 +6,20 @@ ms.assetid: 5FE78207-1BD6-4706-91EF-B13932321FC9
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 08/22/2019
+ms.date: 07/20/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 425eb7abc14fb941dbfc28219907d98558cbfabb
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 73e7ace96c17aea2b397f2706e128ea498338b09
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137440"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918268"
 ---
-# <a name="xamarinforms-collectionview-layout"></a>Xamarin.FormsМакет CollectionView
+# <a name="no-locxamarinforms-collectionview-layout"></a>Xamarin.FormsМакет CollectionView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
 [`CollectionView`](xref:Xamarin.Forms.CollectionView)определяет следующие свойства, управляющие макетом:
 
@@ -97,7 +97,7 @@ ms.locfileid: "84137440"
 </CollectionView>
 ```
 
-Однако для полноты [`CollectionView`](xref:Xamarin.Forms.CollectionView) можно задать отображение элементов в вертикальном списке, задав [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) для его свойства значение `VerticalList` :
+Однако для полноты в XAML [`CollectionView`](xref:Xamarin.Forms.CollectionView) можно задать отображение элементов в вертикальном списке, задав [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) для его свойства значение `VerticalList` :
 
 ```xaml
 <CollectionView ItemsSource="{Binding Monkeys}"
@@ -133,7 +133,7 @@ CollectionView collectionView = new CollectionView
 
 ## <a name="horizontal-list"></a>Горизонтальный список
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)может отображать свои элементы в горизонтальном списке, присвоив [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) свойству значение `HorizontalList` :
+В XAML [`CollectionView`](xref:Xamarin.Forms.CollectionView) может отображать свои элементы в горизонтальном списке, присвоив [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) свойству значение `HorizontalList` :
 
 ```xaml
 <CollectionView ItemsSource="{Binding Monkeys}"
@@ -197,14 +197,11 @@ CollectionView collectionView = new CollectionView
 
 ## <a name="vertical-grid"></a>Вертикальная сетка
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)может отображать свои элементы в вертикальной сетке, присвоив его [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) свойству [`GridItemsLayout`](xref:Xamarin.Forms.GridItemsLayout) объект, [`Orientation`](xref:Xamarin.Forms.ItemsLayout.Orientation) свойство которого имеет значение `Vertical` :
+В XAML [`CollectionView`](xref:Xamarin.Forms.CollectionView) может отображать свои элементы в вертикальной сетке, присвоив [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) свойству значение `VerticalGrid` :
 
 ```xaml
-<CollectionView ItemsSource="{Binding Monkeys}">
-    <CollectionView.ItemsLayout>
-       <GridItemsLayout Orientation="Vertical"
-                        Span="2" />
-    </CollectionView.ItemsLayout>
+<CollectionView ItemsSource="{Binding Monkeys}"
+                ItemsLayout="VerticalGrid, 2">
     <CollectionView.ItemTemplate>
         <DataTemplate>
             <Grid Padding="10">
@@ -237,6 +234,18 @@ CollectionView collectionView = new CollectionView
 </CollectionView>
 ```
 
+Кроме того, этот макет можно также выполнить, задав [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) для свойства объект, [`GridItemsLayout`](xref:Xamarin.Forms.GridItemsLayout) свойство которого [`Orientation`](xref:Xamarin.Forms.ItemsLayout.Orientation) имеет значение `Vertical` :
+
+```xaml
+<CollectionView ItemsSource="{Binding Monkeys}">
+    <CollectionView.ItemsLayout>
+       <GridItemsLayout Orientation="Vertical"
+                        Span="2" />
+    </CollectionView.ItemsLayout>
+    ...
+</CollectionView>
+```
+
 Эквивалентный код на C# выглядит так:
 
 ```csharp
@@ -253,14 +262,11 @@ CollectionView collectionView = new CollectionView
 
 ## <a name="horizontal-grid"></a>Горизонтальная сетка
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)может отображать свои элементы в горизонтальной сетке, присвоив [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) свойству значение [`GridItemsLayout`](xref:Xamarin.Forms.GridItemsLayout) объекта, [`Orientation`](xref:Xamarin.Forms.ItemsLayout.Orientation) свойство которого имеет значение `Horizontal` :
+В XAML [`CollectionView`](xref:Xamarin.Forms.CollectionView) может отображать свои элементы в горизонтальной сетке, присвоив [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) свойству значение `HorizontalGrid` :
 
 ```xaml
-<CollectionView ItemsSource="{Binding Monkeys}">
-    <CollectionView.ItemsLayout>
-       <GridItemsLayout Orientation="Horizontal"
-                        Span="4" />
-    </CollectionView.ItemsLayout>
+<CollectionView ItemsSource="{Binding Monkeys}"
+                ItemsLayout="HorizontalGrid, 4">
     <CollectionView.ItemTemplate>
         <DataTemplate>
             <Grid Padding="10">
@@ -290,6 +296,18 @@ CollectionView collectionView = new CollectionView
             </Grid>
         </DataTemplate>
     </CollectionView.ItemTemplate>
+</CollectionView>
+```
+
+Кроме того, этот макет можно также выполнить, задав [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) для свойства объект, [`GridItemsLayout`](xref:Xamarin.Forms.GridItemsLayout) свойство которого [`Orientation`](xref:Xamarin.Forms.ItemsLayout.Orientation) имеет значение `Horizontal` :
+
+```xaml
+<CollectionView ItemsSource="{Binding Monkeys}">
+    <CollectionView.ItemsLayout>
+       <GridItemsLayout Orientation="Horizontal"
+                        Span="4" />
+    </CollectionView.ItemsLayout>
+    ...
 </CollectionView>
 ```
 

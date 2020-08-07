@@ -1,6 +1,6 @@
 ---
-title: ':::no-loc(Xamarin.Forms):::Фигуры: преобразования пути'
-description: :::no-loc(Xamarin.Forms):::Преобразование определяет способ преобразования объекта пути из одного пространства координат в другое пространство координат.
+title: 'Xamarin.FormsФигуры: преобразования пути'
+description: Xamarin.FormsПреобразование определяет способ преобразования объекта пути из одного пространства координат в другое пространство координат.
 ms.prod: xamarin
 ms.assetid: 07DE3D66-1820-4642-BDDF-84146D40C99D
 ms.technology: xamarin-forms
@@ -8,31 +8,31 @@ author: davidbritch
 ms.author: dabritch
 ms.date: 07/02/2020
 no-loc:
-- ':::no-loc(Xamarin.Forms):::'
-- ':::no-loc(Xamarin.Essentials):::'
-ms.openlocfilehash: 30036fdde589fdc5d47735c215196b52a32dd732
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: fc0ff4a361175b52c0014427cee54ce5e14ab8f8
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997440"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918403"
 ---
-# <a name="no-locxamarinforms-shapes-path-transforms"></a>:::no-loc(Xamarin.Forms):::Фигуры: преобразования пути
+# <a name="no-locxamarinforms-shapes-path-transforms"></a>Xamarin.FormsФигуры: преобразования пути
 
-![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Transform`Определяет способ преобразования `Path` объекта из одного пространства координат в другое пространство координат. При применении преобразования к `Path` объекту он изменяет способ отрисовки объекта в пользовательском интерфейсе.
 
-Преобразования можно разделить на четыре общие классификации: вращение, масштабирование, наклон и перевод. :::no-loc(Xamarin.Forms):::Определяет класс для каждой из этих классификаций преобразований:
+Преобразования можно разделить на четыре общие классификации: вращение, масштабирование, наклон и перевод. Xamarin.FormsОпределяет класс для каждой из этих классификаций преобразований:
 
 - `RotateTransform`, который поворачивает объект на `Path` указанный объект `Angle` .
 - `ScaleTransform`, который масштабирует `Path` объект по указанному `ScaleX` и `ScaleY` сумме.
 - `SkewTransform`, который наклоняет `Path` объект по указанному `AngleX` и `AngleY` сумме.
 - `TranslateTransform`, который перемещает `Path` объект по указанному `X` и `Y` сумме.
 
-:::no-loc(Xamarin.Forms):::также предоставляет следующие классы для создания более сложных преобразований:
+Xamarin.Formsтакже предоставляет следующие классы для создания более сложных преобразований:
 
 - `TransformGroup`, представляющий составное преобразование, состоящее из нескольких объектов Transform.
 - `CompositeTransform`, который применяет к объекту несколько операций преобразования `Path` .
@@ -52,7 +52,7 @@ ms.locfileid: "86997440"
 - `CenterX`Тип `double` представляет координату x центральной точки вращения. Значение этого свойства по умолчанию равно 0,0.
 - `CenterY`Тип `double` представляет координату y центральной точки вращения. Значение этого свойства по умолчанию равно 0,0.
 
-Эти свойства поддерживаются [`BindableProperty`](xref::::no-loc(Xamarin.Forms):::.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
 
 `CenterX`Свойства и `CenterY` определяют точку, вокруг которой `Path` поворачивается объект. Эта центральная точка выражается в пространстве координат объекта, который преобразуется. По умолчанию поворот применяется к (0, 0), который является верхним левым углом `Path` объекта.
 
@@ -60,6 +60,7 @@ ms.locfileid: "86997440"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -86,7 +87,7 @@ ms.locfileid: "86997440"
 - `CenterX`Тип `double` , который представляет координату x центральной точки этого преобразования. Значение этого свойства по умолчанию равно 0,0.
 - `CenterY`Тип `double` , который представляет координату по оси y центральной точки этого преобразования. Значение этого свойства по умолчанию равно 0,0.
 
-Эти свойства поддерживаются [`BindableProperty`](xref::::no-loc(Xamarin.Forms):::.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
 
 Значение `ScaleX` и `ScaleY` имеет огромное влияние на итоговое масштабирование:
 
@@ -104,6 +105,7 @@ ms.locfileid: "86997440"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -131,7 +133,7 @@ ms.locfileid: "86997440"
 - `CenterX`Тип `double` , который представляет координату x центра преобразования. Значение этого свойства по умолчанию равно 0,0.
 - `CenterY`Тип `double` , который представляет координату по оси y центра преобразования. Значение этого свойства по умолчанию равно 0,0.
 
-Эти свойства поддерживаются [`BindableProperty`](xref::::no-loc(Xamarin.Forms):::.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
 
 Чтобы спрогнозировать воздействие преобразования «наклон», рассмотрите возможность `AngleX` расравномерности значений оси x относительно исходной системы координат. Таким образом, для `AngleX` 30 ось y поворачивается на 30 градусов по происхождению, а значения по оси x — на 30 градусов относительно этого источника. Аналогичным образом, значение, `AngleY` равное 30, отклоняет значения y `Path` объекта на 30 градусов от источника.
 
@@ -142,6 +144,7 @@ ms.locfileid: "86997440"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -167,7 +170,7 @@ ms.locfileid: "86997440"
 - `X`Тип `double` , который представляет расстояние для перемещения вдоль оси x. Значение этого свойства по умолчанию равно 0,0.
 - `Y`Тип `double` , который представляет расстояние для перемещения вдоль оси y. Значение этого свойства по умолчанию равно 0,0.
 
-Эти свойства поддерживаются [`BindableProperty`](xref::::no-loc(Xamarin.Forms):::.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
 
 Отрицательные `X` значения перемещают объект влево, а положительные значения перемещают объект вправо. Отрицательные `Y` значения перемещают объект, а положительные значения перемещают объект вниз.
 
@@ -175,6 +178,7 @@ ms.locfileid: "86997440"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -191,13 +195,13 @@ ms.locfileid: "86997440"
 
 ## <a name="multiple-transforms"></a>Множественные преобразования
 
-:::no-loc(Xamarin.Forms):::имеет два класса, которые поддерживают применение нескольких преобразований к `Path` объекту. Это `TransformGroup` и `CompositeTransform` . `TransformGroup`Выполняет преобразование в любом нужном порядке, в то время как `CompositeTransform` выполняет преобразование в определенном порядке.
+Xamarin.Formsимеет два класса, которые поддерживают применение нескольких преобразований к `Path` объекту. Это `TransformGroup` и `CompositeTransform` . `TransformGroup`Выполняет преобразование в любом нужном порядке, в то время как `CompositeTransform` выполняет преобразование в определенном порядке.
 
 ### <a name="transform-groups"></a>Группы преобразований
 
 Группы преобразований представляют составные преобразования, состоящие из нескольких `Transform` объектов.
 
-`TransformGroup`Класс, производный от `Transform` класса, определяет `Children` свойство типа `TransformCollection` , которое представляет коллекцию `Transform` объектов. Это свойство поддерживается [`BindableProperty`](xref::::no-loc(Xamarin.Forms):::.BindableProperty) объектом, что означает, что он может быть целевым объектом привязок данных и имеет стиль.
+`TransformGroup`Класс, производный от `Transform` класса, определяет `Children` свойство типа `TransformCollection` , которое представляет коллекцию `Transform` объектов. Это свойство поддерживается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом, что означает, что он может быть целевым объектом привязок данных и имеет стиль.
 
 Порядок преобразований важен в составном преобразовании, использующем `TransformGroup` класс. Например, если сначала повернуть, затем масштабировать, а затем преобразовать, вы получите другой результат, чем при первом переводе, при повороте, а затем при масштабировании. Один из причин важен в том, что преобразования, такие как вращение и масштабирование, выполняются в отношении происхождения системы координат. Масштабирование объекта, центрированного по отношению к источнику, приводит к другому результату масштабирования объекта, который был перемещен от источника. Аналогично, поворот объекта, центрированного по отношению к источнику, приводит к результату, отличному от поворота объекта, который был перемещен от источника.
 
@@ -205,6 +209,7 @@ ms.locfileid: "86997440"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -238,7 +243,7 @@ ms.locfileid: "86997440"
 - `TranslateX`Тип `double` , который представляет расстояние для перемещения вдоль оси x. Значение этого свойства по умолчанию равно 0,0.
 - `TranslateY`Тип `double` , который представляет расстояние для перемещения вдоль оси y. Значение этого свойства по умолчанию равно 0,0.
 
-Эти свойства поддерживаются [`BindableProperty`](xref::::no-loc(Xamarin.Forms):::.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
 
 `CompositeTransform`Применяет преобразования в следующем порядке:
 
@@ -256,6 +261,7 @@ ms.locfileid: "86997440"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       HeightRequest="100"
@@ -294,7 +300,7 @@ ms.locfileid: "86997440"
 
 Кроме того, `Matrix` Структура предоставляет ряд методов, которые можно использовать для управления значениями матрицы, включая `Append` ,, `Invert` `Multiply` `Prepend` и многие другие.
 
-В следующей таблице показана структура :::no-loc(Xamarin.Forms)::: матрицы.
+В следующей таблице показана структура Xamarin.Forms матрицы.
 
 :::row:::
     :::column:::
@@ -337,7 +343,7 @@ ms.locfileid: "86997440"
 
 ## <a name="custom-transforms"></a>Пользовательские преобразования
 
-`MatrixTransform`Класс, производный от `Transform` класса, определяет `Matrix` свойство типа `Matrix` , которое представляет матрицу, определяющую преобразование. Это свойство поддерживается [`BindableProperty`](xref::::no-loc(Xamarin.Forms):::.BindableProperty) объектом, что означает, что он может быть целевым объектом привязок данных и имеет стиль.
+`MatrixTransform`Класс, производный от `Transform` класса, определяет `Matrix` свойство типа `Matrix` , которое представляет матрицу, определяющую преобразование. Это свойство поддерживается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом, что означает, что он может быть целевым объектом привязок данных и имеет стиль.
 
 Любое преобразование, которое можно описать с помощью `TranslateTransform` `ScaleTransform` объекта,, `RotateTransform` или, `SkewTransform` может быть также описано в `MatrixTransform` . Однако `TranslateTransform` `ScaleTransform` классы,, `RotateTransform` и `SkewTransform` проще концептуализировать, чем задавать компоненты вектора в `Matrix` . Таким образом, `MatrixTransform` класс обычно используется для создания пользовательских преобразований, которые не предоставляются `RotateTransform` `ScaleTransform` `SkewTransform` классами,, или `TranslateTransform` .
 
@@ -345,6 +351,7 @@ ms.locfileid: "86997440"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       Data="M13.908992,16.207977L32.000049,16.207977 32.000049,31.999985 13.908992,30.109983z">
@@ -364,10 +371,11 @@ ms.locfileid: "86997440"
 
 В этом примере `Path` объект растягивается, наклонен и смещается в измерениях X и Y.
 
-Кроме того, это может быть написано в упрощенной форме, которая использует преобразователь типов, встроенный в :::no-loc(Xamarin.Forms)::: :
+Кроме того, это может быть написано в упрощенной форме, которая использует преобразователь типов, встроенный в Xamarin.Forms :
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       Data="M13.908992,16.207977L32.000049,16.207977 32.000049,31.999985 13.908992,30.109983z">
@@ -383,6 +391,7 @@ ms.locfileid: "86997440"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Center"
       RenderTransform="1.5 1 0 1 10 100"
@@ -392,4 +401,4 @@ ms.locfileid: "86997440"
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
-- [:::no-loc(Xamarin.Forms):::Многоугольник](index.md)
+- [Xamarin.FormsМногоугольник](index.md)

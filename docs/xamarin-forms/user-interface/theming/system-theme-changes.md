@@ -6,18 +6,18 @@ ms.prod: xamarin
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/17/2020
+ms.date: 08/06/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b451fe004ca21c8770658f31c9c38253e073c259
-ms.sourcegitcommit: 82eabb0eaa4a674897aa6d5e64efb91fd580c330
+ms.openlocfilehash: efd9cabc9504a9fa56f1f7a763013e6852be9382
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86100187"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918096"
 ---
-# <a name="respond-to-system-theme-changes-in-xamarinforms-applications"></a>Реагирование на изменения системных тем в Xamarin.Forms приложениях
+# <a name="respond-to-system-theme-changes-in-no-locxamarinforms-applications"></a>Реагирование на изменения системных тем в Xamarin.Forms приложениях
 
 [![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-systemthemesdemo/)
 
@@ -26,9 +26,6 @@ ms.locfileid: "86100187"
 Тема системы может измениться по ряду причин, в зависимости от конфигурации устройства. К ним относится пользовательская тема, измененная пользователем, она изменяется из-за времени суток и изменяется из-за таких факторов окружающей среды, как низкая интенсивность.
 
 Xamarin.Formsприложения могут реагировать на изменения темы системы за счет использования ресурсов с `AppThemeBinding` расширением разметки, а также `SetAppThemeColor` `SetOnAppTheme<T>` методов расширения и.
-
-> [!IMPORTANT]
-> Реагирование на изменение системной темы в настоящее время экспериментально и может использоваться только путем установки `AppTheme_Experimental` флага. Дополнительные сведения см. в разделе [экспериментальные флаги](~/xamarin-forms/internals/experimental-flags.md).
 
 Для Xamarin.Forms реагирования на изменение системной темы должны быть выполнены следующие требования.
 

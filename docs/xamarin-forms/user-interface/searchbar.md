@@ -6,26 +6,26 @@ ms.assetId: F5EFEA72-CB23-4DD6-9545-D9BB755AF3CB
 ms.technology: xamarin-forms
 author: profexorgeek
 ms.author: jusjohns
-ms.date: 11/04/2019
+ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d8ceb139b1b9cd77aa922f98c80884d5c3e1a474
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a4c782f95db0f8e777494c47e9e668e9af67a2cc
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84127547"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87917770"
 ---
-# <a name="xamarinforms-searchbar"></a>Xamarin.Formsсеарчбар
+# <a name="no-locxamarinforms-searchbar"></a>Xamarin.Formsсеарчбар
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)
 
 Xamarin.Forms [`SearchBar`](xref:Xamarin.Forms.SearchBar) — Это элемент управления вводом пользователя, используемый для запуска поиска. `SearchBar`Элемент управления поддерживает текст заполнителя, ввод запроса, выполнение поиска и отмену. На следующем снимке экрана показан `SearchBar` запрос с результатами, отображаемыми в `ListView` :
 
 [![Снимок экрана Сеарчбар в iOS и Android](searchbar-images/device-searchbars-cropped.png "Сеарчбар в iOS и Android")](searchbar-images/device-searchbars.png#lightbox "Сеарчбар в iOS и Android")
 
-`SearchBar`Класс определяет следующие свойства:
+Класс `SearchBar` определяет следующие свойства:
 
 * [`CancelButtonColor`](xref:Xamarin.Forms.SearchBar.CancelButtonColor)значение типа `Color` , определяющее цвет кнопки отмены.
 * `CharacterSpacing` с типом `double` представляет собой интервал между знаками текста `SearchBar`.
@@ -40,6 +40,7 @@ Xamarin.Forms [`SearchBar`](xref:Xamarin.Forms.SearchBar) — Это элеме�
 * [`SearchCommandParameter`](xref:Xamarin.Forms.SearchBar.SearchCommandParameter)Аргумент `object` , указывающий параметр, который должен быть передан в `SearchCommand` .
 * [`Text`](xref:Xamarin.Forms.InputView.Text)Объект, `string` содержащий текст запроса в `SearchBar` .
 * [`TextColor`](xref:Xamarin.Forms.InputView.TextColor)значение типа `Color` , определяющее цвет текста запроса.
+* `TextTransform``TextTransform`значение, определяющее регистр `SearchBar` текста.
 
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает `SearchBar` возможность настройки и назначения привязок данных. Указание свойств шрифта в `SearchBar` согласуется с настройкой текста в других [ Xamarin.Forms текстовых элементах управления](~/xamarin-forms/user-interface/text/index.md). Дополнительные сведения см. [в разделе Шрифты Xamarin.Forms в ](~/xamarin-forms/user-interface/text/fonts.md).
 
@@ -66,6 +67,7 @@ SearchBar searchBar = new SearchBar{ Placeholder = "Search items..." };
            CancelButtonColor="Orange"
            PlaceholderColor="Orange"
            TextColor="Orange"
+           TextTransform="Lowercase"
            HorizontalTextAlignment="Center"
            FontSize="Medium"
            FontAttributes="Italic" />
@@ -79,6 +81,7 @@ SearchBar searchBar = new SearchBar
     Placeholder = "Search items...",
     PlaceholderColor = Color.Orange,
     TextColor = Color.Orange,
+    TextTransform = TextTransform.Lowercase,
     HorizontalTextAlignment = TextAlignment.Center,
     FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(SearchBar)),
     FontAttributes = FontAttributes.Italic

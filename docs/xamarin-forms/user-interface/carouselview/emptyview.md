@@ -10,18 +10,18 @@ ms.date: 10/03/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: dc54e30878bc58425aeb032fbd38c02d62728287
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 0dd1f4a15d9a8c1315cd3f0f71b641c82bebe004
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86935087"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918658"
 ---
-# <a name="xamarinforms-carouselview-emptyview"></a>Xamarin.FormsКарауселвиев Емптивиев
+# <a name="no-locxamarinforms-carouselview-emptyview"></a>Xamarin.FormsКарауселвиев Емптивиев
 
-![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView)определяет следующие свойства, которые можно использовать для предоставления отзывов пользователей, когда нет данных для показа:
 

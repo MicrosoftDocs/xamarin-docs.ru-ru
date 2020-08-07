@@ -6,22 +6,22 @@ ms.assetid: 02E6C553-5670-49A0-8EE9-5153ED21EA91
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 04/09/2020
+ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8bf6517e3624ad80c2fd4d209e5a77472460be76
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 1fcfc2c3fbb91a7ee326db7aeef08459e05d834d
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84570522"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87917877"
 ---
-# <a name="xamarinforms-label"></a>Xamarin.FormsЗаголовка
+# <a name="no-locxamarinforms-label"></a>Xamarin.FormsЗаголовка
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
 
-_Отображение текста в Xamarin. Forms_
+_Отображение текста вXamarin.Forms_
 
 [`Label`](xref:Xamarin.Forms.Label)Представление используется для отображения текста как с одним, так и с несколькими строками. Метки могут иметь оформление текста, цветной текст и использовать пользовательские шрифты (семейства, размеры и параметры).
 
@@ -55,6 +55,32 @@ var bothLabel = new Label { Text = "This is underlined text with strikethrough."
 
 > [!NOTE]
 > Оформление текста также может применяться к [`Span`](xref:Xamarin.Forms.Span) экземплярам. Дополнительные сведения о `Span` классе см. в разделе [форматированный текст](#formatted-text).
+
+## <a name="transform-text"></a>Преобразование текста
+
+[`Label`](xref:Xamarin.Forms.Entry)Может преобразовать регистр текста, хранящийся в `Text` свойстве, путем присвоения `TextTransform` свойству значения `TextTransform` перечисления. Это перечисление имеет четыре значения:
+
+- `None`Указывает, что текст не будет преобразован.
+- `Default`Указывает, что будет использоваться поведение по умолчанию для платформы. Это значение по умолчанию для свойства `TextTransform`.
+- `Lowercase`Указывает, что текст будет преобразован в нижний регистр.
+- `Uppercase`Указывает, что текст будет преобразован в верхний регистр.
+
+В следующем примере показано преобразование текста в верхний регистр:
+
+```xaml
+<Label Text="This text will be displayed in uppercase."
+       TextTransform="Uppercase" />
+```
+
+Эквивалентный код на C# выглядит так:
+
+```csharp
+Label label = new Label
+{
+    Text = "This text will be displayed in uppercase.",
+    TextTransform = TextTransform.Uppercase
+};
+```
 
 ## <a name="character-spacing"></a>Интервалы между символами
 
@@ -143,7 +169,7 @@ public partial class LabelPage : ContentPage
 
 Дополнительные сведения о цветах см. в разделе [цвета](~/xamarin-forms/user-interface/colors.md).
 
-## <a name="fonts"></a>Fonts
+## <a name="fonts"></a>Шрифты
 
 Дополнительные сведения об указании шрифтов в см `Label` . в разделе [шрифты](~/xamarin-forms/user-interface/text/fonts.md).
 

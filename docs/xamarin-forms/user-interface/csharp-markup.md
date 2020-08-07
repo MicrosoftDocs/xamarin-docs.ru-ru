@@ -10,18 +10,18 @@ ms.date: 05/15/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 279df31eeda506d6780533bac8ae190f799424a3
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 3e8c95e84dd525c274403290712260ba86abd677
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936036"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918569"
 ---
-# <a name="xamarinforms-c-markup"></a>Xamarin.FormsРазметка C#
+# <a name="no-locxamarinforms-c-markup"></a>Xamarin.FormsРазметка C#
 
-![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-csharpmarkupdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-csharpmarkupdemos/)
 
 Разметка C# — это набор вспомогательных методов и классов Fluent, позволяющий упростить процесс создания декларативных Xamarin.Forms пользовательских интерфейсов в C#. API-интерфейс Fluent, предоставляемый разметкой C#, доступен в `Xamarin.Forms.Markup` пространстве имен.
 
@@ -90,7 +90,7 @@ Content = new Grid
 > [!NOTE]
 > Разметка C# включает методы расширения, которые задают свойства конкретного представления. Эти методы расширения не предназначены для замены всех методов задания свойств. Вместо этого они предназначены для улучшения читаемости кода и могут использоваться в сочетании с методами задания свойств. Рекомендуется всегда использовать метод расширения, если он существует для свойства, но вы можете выбрать предпочтительный баланс.
 
-## <a name="data-binding"></a>Привязка данных
+## <a name="data-binding"></a>привязка данных,
 
 Разметка C# включает `Bind` метод расширения вместе с перегрузками, который создает привязку данных между связанным свойством представления и указанным свойством. `Bind`Метод знает свойство, которое поддерживает привязку по умолчанию, для большинства элементов управления, которые включены в Xamarin.Forms . Поэтому при использовании этого метода обычно не требуется указывать целевое свойство. Однако вы также можете зарегистрировать свойство, которое можно привязать по умолчанию для дополнительных элементов управления:
 
@@ -235,7 +235,7 @@ new Label { Text = "Tap Me" }
 
 Разметка C# включает ряд методов расширения макета, которые поддерживают представления позиционирования в макетах и содержимое в представлениях:
 
-| Type | Методы расширения |
+| Тип | Методы расширения |
 |---|---|
 | `FlexLayout` | `AlignSelf`, `Basis`, `Grow`, `Menu`, `Order`, `Shrink` |
 | `Grid` | `Row`, `Column`, `RowSpan`, `ColumnSpan` |
@@ -253,7 +253,7 @@ new Label { Text = "Tap Me" }
 
 Для разметки C#, предназначенной для поддержки направления потока слева направо и справа налево, рекомендуется использовать методы расширения, приведенные в следующей таблице, а не одно из указанных выше пространств имен.
 
-| Type | Методы расширения |
+| Тип | Методы расширения |
 |---|---|
 | `Label` | `TextStart`, `TextEnd` |
 | `LayoutOptions` | `Start`, `End` <br/> `StartExpand`, `EndExpand` |
@@ -403,7 +403,7 @@ using Xamarin.Forms.Markup;
 new ListView { } .Assign (out MyListView)
 ```
 
-## <a name="styles"></a>стили.
+## <a name="styles"></a>Стили
 
 В следующем примере показано, как создать явные и неявные стили с помощью разметки C#:
 

@@ -6,31 +6,24 @@ ms.assetid: 7074DB3A-30D2-4A6B-9A89-B029EEF20B07
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 09/26/2019
+ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 36f4946ffc6d5a42e1997f389501f921449d0259
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 3a7dedad6fc33b75a687f94897b64d04a72a0b08
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937596"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918436"
 ---
-# <a name="xamarinforms-editor"></a>Xamarin.FormsРедактор
+# <a name="no-locxamarinforms-editor"></a>Xamarin.FormsРедактор
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
 
-_Многострочный ввод текста_
+[`Editor`](xref:Xamarin.Forms.Editor)Элемент управления используется для приема многострочного ввода.
 
-[`Editor`](xref:Xamarin.Forms.Editor)Элемент управления используется для приема многострочного ввода. В этой статье рассматриваются следующие вопросы:
-
-- **[Настройка](#customization)** &ndash; Параметры клавиатуры и цвета.
-- **[Интерактивность](#interactivity)** &ndash; события, которые можно прослушивать для предоставления интерактивности.
-
-## <a name="customization"></a>Настройка
-
-### <a name="setting-and-reading-text"></a>Установка и чтение текста
+## <a name="set-and-read-text"></a>Установка и чтение текста
 
 [`Editor`](xref:Xamarin.Forms.Editor), Как и другие представления, представляемые текстом, предоставляет `Text` свойство. Это свойство можно использовать для установки и чтения текста, представленного `Editor` . В следующем примере показано задание `Text` свойства в XAML:
 
@@ -50,7 +43,7 @@ var MyEditor = new Editor { Text = "I am an Editor" };
 var text = MyEditor.Text;
 ```
 
-### <a name="setting-placeholder-text"></a>Задание текста заполнителя
+## <a name="set-placeholder-text"></a>Задать текст заполнителя
 
 [`Editor`](xref:Xamarin.Forms.Editor)Может быть установлен для отображения текста заполнителя, если он не хранит данные, вводимые пользователем. Это достигается путем присвоения [`Placeholder`](xref:Xamarin.Forms.InputView.Placeholder) свойству значения `string` , и часто используется для указания типа содержимого, подходящего для `Editor` . Кроме того, цвет текста заполнителя можно контролировать, присвоив [`PlaceholderColor`](xref:Xamarin.Forms.InputView.PlaceholderColor) свойству значение [`Color`](xref:Xamarin.Forms.Color) .
 
@@ -62,7 +55,7 @@ var text = MyEditor.Text;
 var editor = new Editor { Placeholder = "Enter text here", PlaceholderColor = Color.Olive };
 ```
 
-### <a name="preventing-text-entry"></a>Предотвращение ввода текста
+## <a name="prevent-text-entry"></a>Запретить ввод текста
 
 Пользователям может быть запрещено изменять текст в, [`Editor`](xref:Xamarin.Forms.Editor) задавая `IsReadOnly` свойство, которое по умолчанию имеет значение `false` , равным `true` :
 
@@ -78,7 +71,33 @@ var editor = new Editor { Text = "This is a read-only Editor", IsReadOnly = true
 > [!NOTE]
 > `IsReadonly`Свойство не изменяет внешний вид [`Editor`](xref:Xamarin.Forms.Editor) , в отличие от `IsEnabled` свойства, которое также изменяет внешний вид изображения `Editor` на серый.
 
-### <a name="limiting-input-length"></a>Ограничение длины входных данных
+## <a name="transform-text"></a>Преобразование текста
+
+[`Editor`](xref:Xamarin.Forms.Editor)Может преобразовать регистр текста, хранящийся в `Text` свойстве, путем присвоения `TextTransform` свойству значения `TextTransform` перечисления. Это перечисление имеет четыре значения:
+
+- `None`Указывает, что текст не будет преобразован.
+- `Default`Указывает, что будет использоваться поведение по умолчанию для платформы. Это значение по умолчанию для свойства `TextTransform`.
+- `Lowercase`Указывает, что текст будет преобразован в нижний регистр.
+- `Uppercase`Указывает, что текст будет преобразован в верхний регистр.
+
+В следующем примере показано преобразование текста в верхний регистр:
+
+```xaml
+<Editor Text="This text will be displayed in uppercase."
+        TextTransform="Uppercase" />
+```
+
+Эквивалентный код на C# выглядит так:
+
+```csharp
+Editor editor = new Editor
+{
+    Text = "This text will be displayed in uppercase.",
+    TextTransform = TextTransform.Uppercase
+};
+```
+
+## <a name="limit-input-length"></a>Ограничить длину входных данных
 
 [`MaxLength`](xref:Xamarin.Forms.InputView.MaxLength)Свойство можно использовать для ограничения длины ввода, разрешенной для [`Editor`](xref:Xamarin.Forms.Editor) . Для этого свойства необходимо задать положительное целое число:
 
@@ -92,7 +111,7 @@ var editor = new Editor { ... MaxLength = 10 };
 
 [`MaxLength`](xref:Xamarin.Forms.InputView.MaxLength)Значение свойства 0 указывает, что входные данные не допускаются, и значение `int.MaxValue` , которое является значением по умолчанию для [`Editor`](xref:Xamarin.Forms.Editor) , указывает на отсутствие действительного ограничения на количество вводимых символов.
 
-### <a name="character-spacing"></a>Интервалы между символами
+## <a name="character-spacing"></a>Интервалы между символами
 
 Интервал между символами можно применить к [`Editor`](xref:Xamarin.Forms.Editor) , присвоив `Editor.CharacterSpacing` свойству `double` значение:
 
@@ -112,7 +131,7 @@ Editor editor = new editor { CharacterSpacing = 10 };
 > [!NOTE]
 > `CharacterSpacing`Значение свойства применяется к тексту, отображаемому `Text` `Placeholder` свойствами и.
 
-### <a name="auto-sizing-an-editor"></a>Автоматическое изменение размера редактора
+## <a name="auto-size-an-editor"></a>Автоподбор размера редактора
 
 [`Editor`](xref:Xamarin.Forms.Editor)Можно установить для автоматического изменения размера содержимого, задав [`Editor.AutoSize`](xref:Xamarin.Forms.Editor.AutoSize) свойству [`TextChanges`](xref:Xamarin.Forms.EditorAutoSizeOption.TextChanges) значение, которое является значением [`EditoAutoSizeOption`](xref:Xamarin.Forms.EditorAutoSizeOption) перечисления. Это перечисление имеет два значения:
 
@@ -134,7 +153,7 @@ var editor = new Editor { Text = "Enter text here", AutoSize = EditorAutoSizeOpt
 > [!NOTE]
 > [`Editor`](xref:Xamarin.Forms.Editor)Если свойство задано, автоматическое масштабирование не выполняется [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) .
 
-### <a name="customizing-the-keyboard"></a>Настройка клавиатуры
+## <a name="customize-the-keyboard"></a>Настройка клавиатуры
 
 Клавиатура, представленная, когда пользователи взаимодействуют с [`Editor`](xref:Xamarin.Forms.Editor) компонентом, может быть задана программно с помощью [`Keyboard`](xref:Xamarin.Forms.InputView.Keyboard) свойства, к одному из следующих свойств [`Keyboard`](xref:Xamarin.Forms.Keyboard) класса:
 
@@ -193,7 +212,7 @@ var editor = new Editor();
 editor.Keyboard = Keyboard.Create(KeyboardFlags.Suggestions | KeyboardFlags.CapitalizeCharacter);
 ```
 
-### <a name="enabling-and-disabling-spell-checking"></a>Включение и отключение проверки орфографии
+## <a name="enable-and-disable-spell-checking"></a>Включение и отключение проверки орфографии
 
 [`IsSpellCheckEnabled`](xref:Xamarin.Forms.InputView.IsSpellCheckEnabled)Свойство определяет, включена ли проверка орфографии. По умолчанию свойство имеет значение `true` . При вводе пользователем текста указывается опечатка.
 
@@ -210,7 +229,7 @@ var editor = new Editor { ... IsSpellCheckEnabled = false };
 > [!NOTE]
 > Если [`IsSpellCheckEnabled`](xref:Xamarin.Forms.InputView.IsSpellCheckEnabled) свойство имеет значение `false` , а пользовательская клавиатура не используется, встроенная проверка орфографии будет отключена. Однако если [`Keyboard`](xref:Xamarin.Forms.Keyboard) задано значение, которое отключает проверку орфографии, например [`Keyboard.Chat`](xref:Xamarin.Forms.Keyboard.Chat) , `IsSpellCheckEnabled` свойство игнорируется. Поэтому свойство не может быть использовано для включения проверки орфографии для того `Keyboard` , что явно отключает его.
 
-### <a name="enabling-and-disabling-text-prediction"></a>Включение и отключение прогнозирования текста
+## <a name="enable-and-disable-text-prediction"></a>Включение и отключение прогнозирования текста
 
 `IsTextPredictionEnabled`Свойство определяет, включена ли функция прогнозирования текста и автоматического исправления текста. По умолчанию свойство имеет значение `true` . При вводе пользователем текста отображаются прогнозы Word.
 
@@ -227,7 +246,7 @@ var editor = new Editor { ... IsTextPredictionEnabled = false };
 > [!NOTE]
 > Если `IsTextPredictionEnabled` свойство имеет значение `false` , а пользовательская клавиатура не используется, прогнозирование текста и автоматическое исправление текста отключаются. Однако если было [`Keyboard`](xref:Xamarin.Forms.Keyboard) задано, что отключает прогнозирование текста, `IsTextPredictionEnabled` свойство игнорируется. Таким образом, свойство нельзя использовать для включения прогнозирования текста для `Keyboard` , который явно отключает его.
 
-### <a name="colors"></a>Цвета
+## <a name="colors"></a>Цвета
 
 `Editor`можно настроить для использования пользовательского цвета фона с помощью `BackgroundColor` Свойства. Чтобы обеспечить возможность использования цветов на каждой платформе, необходимо особое внимание. Так как каждая платформа имеет разные значения по умолчанию для цвета текста, может потребоваться задать пользовательский цвет фона для каждой платформы. Дополнительные сведения об оптимизации пользовательского интерфейса для каждой платформы см. [в разделе Работа с](~/xamarin-forms/platform/device.md) оптимизациями платформы.
 
@@ -275,7 +294,7 @@ public partial class EditorPage : ContentPage
 
 Убедитесь, что выбранный цвет фона и текста можно использовать на каждой платформе и не закрывает текст заполнителя.
 
-## <a name="interactivity"></a>Интерактивность
+## <a name="events-and-interactivity"></a>События и интерактивность
 
 `Editor`предоставляет два события:
 

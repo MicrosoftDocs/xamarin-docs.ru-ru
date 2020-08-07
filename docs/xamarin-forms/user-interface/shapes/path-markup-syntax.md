@@ -10,23 +10,24 @@ ms.date: 06/19/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 971cf76fece1ea9b0744052eb23e696d02ce0bc1
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 8250bd5e5f7d6c9cb93a986656e908b40cec9ae2
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937739"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918514"
 ---
-# <a name="xamarinforms-shapes-path-markup-syntax"></a>Xamarin.FormsФигуры: синтаксис разметки пути
+# <a name="no-locxamarinforms-shapes-path-markup-syntax"></a>Xamarin.FormsФигуры: синтаксис разметки пути
 
-![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 Xamarin.Formsсинтаксис разметки пути позволяет сжимать геометрические контуры в XAML. Синтаксис задается в виде строкового значения для `Path.Data` Свойства:
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Data="M13.908992,16.207977 L32.000049,16.207977 32.000049,31.999985 13.908992,30.109983Z" />
 ```
 

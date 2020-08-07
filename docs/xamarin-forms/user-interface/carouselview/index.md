@@ -10,22 +10,22 @@ ms.date: 10/08/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 40b918adff523fa446e69c064029311c54d01290
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 2ff88431869c4a14919fb13e5059cd11fcdbdc3c
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86935048"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918645"
 ---
-# <a name="xamarinforms-carouselview"></a>Xamarin.Formsкарауселвиев
+# <a name="no-locxamarinforms-carouselview"></a>Xamarin.Formsкарауселвиев
 
-![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
 ## <a name="introduction"></a>[Введение](introduction.md)
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView)Представляет собой представление для представления данных в прокручиваемом макете, где пользователи могут перемещаться для перемещения по коллекции элементов.
 
-## <a name="data"></a>[Data](populate-data.md)
+## <a name="data"></a>[Данные](populate-data.md)
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView)Заполняется данными путем установки его [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства в любую коллекцию, реализующую `IEnumerable` . Внешний вид каждого элемента можно определить, задав [`ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate) для свойства значение [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) .
 

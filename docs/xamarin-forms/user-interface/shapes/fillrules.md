@@ -10,18 +10,18 @@ ms.date: 06/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 86bbad476f206c13e6437f867c8e85e6bea5063a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 536992f5a8501f51e14dc15caa9825771e4ed950
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937297"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918609"
 ---
-# <a name="xamarinforms-shapes-fill-rules"></a>Xamarin.FormsФигуры: правила заливки
+# <a name="no-locxamarinforms-shapes-fill-rules"></a>Xamarin.FormsФигуры: правила заливки
 
-![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 Некоторые Xamarin.Forms классы фигур имеют `FillRule` свойства типа `FillRule` . К ним относятся `Polygon` , `Polyline` и `GeometryGroup` .
 
@@ -38,6 +38,7 @@ ms.locfileid: "86937297"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Fill="#CCCCFF"
       Aspect="Uniform"
       HorizontalOptions="Start">
@@ -79,6 +80,7 @@ ms.locfileid: "86937297"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Fill="#CCCCFF"
       Aspect="Uniform"
       HorizontalOptions="Start">
@@ -115,6 +117,7 @@ ms.locfileid: "86937297"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Fill="#CCCCFF">
      <Path.Data>
          <GeometryGroup FillRule="Nonzero">

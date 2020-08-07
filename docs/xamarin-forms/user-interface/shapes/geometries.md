@@ -10,16 +10,16 @@ ms.date: 06/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: be0c12231ff6106e07c935a111195df779698172
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 420099cadd3a541736084403265b9302c9a32b37
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934281"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918319"
 ---
-# <a name="xamarinforms-shapes-geometries"></a>Xamarin.FormsФигуры: геометрические объекты
+# <a name="no-locxamarinforms-shapes-geometries"></a>Xamarin.FormsФигуры: геометрические объекты
 
-![API предварительного выпуска](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -62,7 +62,8 @@ ms.locfileid: "86934281"
 
 ```xaml
 <Path Fill="Blue"
-      Stroke="Red">
+      Stroke="Red"
+      StrokeThickness="1">
   <Path.Data>
     <EllipseGeometry Center="50,50"
                      RadiusX="50"
@@ -89,7 +90,8 @@ ms.locfileid: "86934281"
 В следующем примере показано, как создать и визуализировать `LineGeometry` `Path` объект в объекте.
 
 ```xaml
-<Path Stroke="Black">
+<Path Stroke="Black"
+      StrokeThickness="1">
   <Path.Data>
     <LineGeometry StartPoint="10,20"
                   EndPoint="100,130" />
@@ -108,13 +110,14 @@ ms.locfileid: "86934281"
 
 Прямоугольная геометрия представляет геометрию прямоугольника или квадрата и определяется `Rect` структурой, указывающей ее относительное расположение и высоту и ширину.
 
-`RectangleGeometry`Класс определяет `Rect` свойство типа [`Rectangle`](xref:Xamarin.Forms.Rectangle) , которое представляет размеры прямоугольника. Это свойство поддерживается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом, что означает, что он может быть целевым объектом привязок данных и имеет стиль.
+`RectangleGeometry`Класс определяет `Rect` свойство типа `Rect` , которое представляет размеры прямоугольника. Это свойство поддерживается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом, что означает, что он может быть целевым объектом привязок данных и имеет стиль.
 
 В следующем примере показано, как создать и визуализировать `RectangleGeometry` `Path` объект в объекте.
 
 ```xaml
 <Path Fill="Blue"
-      Stroke="Red">
+      Stroke="Red"
+      StrokeThickness="1">
   <Path.Data>
     <RectangleGeometry Rect="10,10,150,100" />
   </Path.Data>
@@ -156,7 +159,8 @@ ms.locfileid: "86934281"
 Сегменты в `PathFigure` объединяются в одну геометрическую форму, а конечная точка каждого сегмента является начальной точкой следующего сегмента. `StartPoint`Свойство объекта `PathFigure` определяет точку, из которой рисуется первый сегмент. Каждый последующий сегмент начинается в конечной точке предыдущего сегмента. Например, вертикальная линия из `10,50` в `10,150` может быть определена путем присвоения `StartPoint` свойству значения `10,50` и создания `LineSegment` свойства со `Point` свойством `10,150` :
 
 ```xaml
-<Path Stroke="Black">
+<Path Stroke="Black"
+      StrokeThickness="1">
     <Path.Data>
         <PathGeometry>
             <PathGeometry.Figures>
@@ -202,7 +206,8 @@ ms.locfileid: "86934281"
 В следующем примере показано, как создать и отобразить `ArcSegment` `Path` объект в объекте.
 
 ```xaml
-<Path Stroke="Black">
+<Path Stroke="Black"
+      StrokeThickness="1">
     <Path.Data>
         <PathGeometry>
             <PathGeometry.Figures>
@@ -247,7 +252,8 @@ ms.locfileid: "86934281"
 В следующем примере показано, как создать и визуализировать `BezierSegment` `Path` объект в объекте.
 
 ```xaml
-<Path Stroke="Black">
+<Path Stroke="Black"
+      StrokeThickness="1">
     <Path.Data>
         <PathGeometry>
             <PathGeometry.Figures>
@@ -285,6 +291,7 @@ ms.locfileid: "86934281"
 
 ```xaml
 <Path Stroke="Black"
+      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Start">
     <Path.Data>
@@ -323,7 +330,8 @@ ms.locfileid: "86934281"
 В следующем примере показано, как создать и визуализировать `PolyBezierSegment` `Path` объект в объекте.
 
 ```xaml
-<Path Stroke="Black">
+<Path Stroke="Black"
+      StrokeThickness="1">
     <Path.Data>
         <PathGeometry>
             <PathGeometry.Figures>
@@ -358,7 +366,8 @@ ms.locfileid: "86934281"
 В следующем примере показано, как создать и визуализировать `PolyLineSegment` `Path` объект в объекте.
 
 ```xaml
-<Path Stroke="Black">
+<Path Stroke="Black"
+      StrokeThickness="1">
     <Path.Data>
         <PathGeometry>
             <PathGeometry.Figures>
@@ -389,7 +398,8 @@ ms.locfileid: "86934281"
 В следующем примере показано, как создать и визуализировать `PolyQuadraticBezierSegment` объект в `Path` объекте:
 
 ```xaml
-<Path Stroke="Black">
+<Path Stroke="Black"
+      StrokeThickness="1">
     <Path.Data>
         <PathGeometry>
             <PathGeometry.Figures>
@@ -429,7 +439,8 @@ ms.locfileid: "86934281"
 В следующем примере показано, как создать и визуализировать `QuadraticBezierSegment` `Path` объект в объекте.
 
 ```xaml
-<Path Stroke="Black">
+<Path Stroke="Black"
+      StrokeThickness="1">
     <Path.Data>
         <PathGeometry>
             <PathGeometry.Figures>
@@ -458,7 +469,8 @@ ms.locfileid: "86934281"
 Более сложные геометрические объекты можно создавать с помощью сочетания `PathSegment` объектов. В следующем примере создается фигура с помощью `BezierSegment` , `LineSegment` и `ArcSegment` .
 
 ```xaml
-<Path Stroke="Black">
+<Path Stroke="Black"
+      StrokeThickness="1">
     <Path.Data>
         <PathGeometry>
             <PathGeometry.Figures>
