@@ -9,16 +9,16 @@ metadata:
   ms.assetid: 391B4A77-7CAC-42D2-9E77-BD8E170E9BE6
   author: davidbritch
   ms.author: dabritch
-  ms.date: 07/08/2020
+  ms.date: 07/22/2020
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: 25f8139ac16b6bb51a59833544b1ab9a95547362
-  ms.sourcegitcommit: f8d10195687f91f907aa1b26400f2ecc84804002
+  ms.openlocfilehash: 8b49ebb0dcba9372a9c35e0e4c9870fda0f74895
+  ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/08/2020
-  ms.locfileid: "86123297"
+  ms.lasthandoff: 08/07/2020
+  ms.locfileid: "87918371"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:
