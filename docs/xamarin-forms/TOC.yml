@@ -289,6 +289,8 @@ items:
             href: app-fundamentals/gestures/pan.md
           - name: Прокрутка
             href: app-fundamentals/gestures/swipe.md
+          - name: Перетаскивание
+            href: app-fundamentals/gestures/drag-and-drop.md
       - name: Локальные уведомления
         href: app-fundamentals/local-notifications.md
       - name: Локализация
@@ -546,6 +548,20 @@ items:
                 href: user-interface/animation/easing.md
               - name: Пользовательские анимации
                 href: user-interface/animation/custom.md
+          - name: Кисти
+            items:
+              - name: Обзор
+                href: user-interface/brushes/index.md
+              - name: Сплошные цвета
+                href: user-interface/brushes/solidcolor.md
+              - name: Градиенты
+                items:
+                  - name: Обзор
+                    href: user-interface/brushes/gradient.md
+                  - name: Линейные градиенты
+                    href: user-interface/brushes/lineargradient.md
+                  - name: Радиальные градиенты
+                    href: user-interface/brushes/radialgradient.md
           - name: Цвета
             href: user-interface/colors.md
           - name: DataPages

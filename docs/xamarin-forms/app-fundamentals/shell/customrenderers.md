@@ -6,18 +6,18 @@ ms.assetid: 3B1A6AE8-1D1E-4C34-B9AB-48F4444FEF32
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 05/06/2019
+ms.date: 07/29/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 321539f877a86804245d27a2d76d1edeb1abd1e9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 76f9b4e243af908e5d00ba8b812dfd143104fe65
+ms.sourcegitcommit: 69d9a61ba479f707d96eb4c1c56a4b05a2a2a26f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137791"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87426855"
 ---
-# <a name="xamarinforms-shell-custom-renderers"></a>Пользовательские отрисовщики оболочки Xamarin.Forms
+# <a name="no-locxamarinforms-shell-custom-renderers"></a>Пользовательские отрисовщики оболочки Xamarin.Forms
 
 Одним из преимуществ приложений оболочки Xamarin.Forms является то, что их внешний вид и поведение подробно настраиваются через свойства и методы, которые предоставляются в классах оболочки. Но вы можете создать собственный отрисовщик оболочки, если доступных возможностей настройки для конкретной платформы недостаточно. Пользовательский отрисовщик оболочки, как и в других системах, можно добавить только в один проект платформы, чтобы настроить для нее внешний вид и поведение, сохраняя поведение по умолчанию для другой платформы. Вы также можете добавить разные пользовательские отрисовщики оболочки в каждый проект платформы, чтобы раздельно настраивать внешний вид и поведение для iOS и Android.
 
@@ -42,14 +42,14 @@ ms.locfileid: "84137791"
 
 Класс `ShellRenderer` предоставляет следующие переопределяемые методы.
 
-| iOS | Android |
-| --- | --- |
-| `SetElementSize`<br />`CreateFlyoutRenderer`<br />`CreateNavBarAppearanceTracker`<br />`CreatePageRendererTracker`<br />`CreateShellFlyoutContentRenderer`<br />`CreateShellItemRenderer`<br />`CreateShellItemTransition`<br />`CreateShellSearchResultsRenderer`<br />`CreateShellSectionRenderer`<br />`CreateTabBarAppearanceTracker`<br />`Dispose`<br />`OnCurrentItemChanged`<br />`OnElementPropertyChanged`<br />`OnElementSet`<br />`UpdateBackgroundColor` | `CreateFragmentForPage`<br />`CreateShellFlyoutContentRenderer`<br />`CreateShellFlyoutRenderer`<br />`CreateShellItemRenderer`<br />`CreateShellSectionRenderer`<br />`CreateTrackerForToolbar`<br />`CreateToolbarAppearanceTracker`<br />`CreateTabLayoutAppearanceTracker`<br />`CreateBottomNavViewAppearanceTracker`<br />`OnElementPropertyChanged`<br />`OnElementSet`<br />`SwitchFragment`<br />`Dispose` |
+| iOS | Android | UWP |
+| --- | --- | --- |
+| `SetElementSize`<br />`CreateFlyoutRenderer`<br />`CreateNavBarAppearanceTracker`<br />`CreatePageRendererTracker`<br />`CreateShellFlyoutContentRenderer`<br />`CreateShellItemRenderer`<br />`CreateShellItemTransition`<br />`CreateShellSearchResultsRenderer`<br />`CreateShellSectionRenderer`<br />`CreateTabBarAppearanceTracker`<br />`Dispose`<br />`OnCurrentItemChanged`<br />`OnElementPropertyChanged`<br />`OnElementSet`<br />`UpdateBackgroundColor` | `CreateFragmentForPage`<br />`CreateShellFlyoutContentRenderer`<br />`CreateShellFlyoutRenderer`<br />`CreateShellItemRenderer`<br />`CreateShellSectionRenderer`<br />`CreateTrackerForToolbar`<br />`CreateToolbarAppearanceTracker`<br />`CreateTabLayoutAppearanceTracker`<br />`CreateBottomNavViewAppearanceTracker`<br />`OnElementPropertyChanged`<br />`OnElementSet`<br />`SwitchFragment`<br />`Dispose` | `CreateShellFlyoutTemplateSelector`<br />`CreateShellHeaderRenderer`<br />`CreateShellItemRenderer`<br />`CreateShellSectionRenderer`<br />`OnElementPropertyChanged`<br />`OnElementSet`<br />`UpdateFlyoutBackdropColor`<br />`UpdateFlyoutBackgroundColor` |
 
 Классы `FlyoutItem` и `TabBar` являются псевдонимами для класса `ShellItem`, а класс `Tab` — для класса `ShellSection`. Таким образом, методы `CreateShellItemRenderer` и `CreateShellSectionRenderer` должны быть переопределены при создании пользовательского отрисовщика для объектов `FlyoutItem` и `Tab` соответственно.
 
 > [!IMPORTANT]
-> Для iOS и Android существуют дополнительные классы отрисовщика оболочки, такие как `ShellSectionRenderer` и `ShellItemRenderer`. Но эти дополнительные классы отрисовщика создаются путем переопределения класса `ShellRenderer`. Это означает, что любое поведение этих дополнительных классов отрисовщика можно переопределить, создавая для них подклассы и экземпляры этого подкласса в соответствующем переопределении производного класса `ShellRenderer`.
+> Для iOS, Android и UWP существуют дополнительные классы отрисовщика оболочки, такие как `ShellSectionRenderer` и `ShellItemRenderer`. Но эти дополнительные классы отрисовщика создаются путем переопределения класса `ShellRenderer`. Это означает, что любое поведение этих дополнительных классов отрисовщика можно переопределить, создавая для них подклассы и экземпляры этого подкласса в соответствующем переопределении производного класса `ShellRenderer`.
 
 ### <a name="ios-example"></a>Пример для iOS
 

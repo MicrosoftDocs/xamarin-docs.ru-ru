@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: deb3516cc134a8b2eecba8460931003de8bb312f
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: d9834c2d2974787de989b640449fddae6c1ce39b
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "77135027"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87919272"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
