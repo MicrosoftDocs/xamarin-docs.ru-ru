@@ -10,22 +10,22 @@ ms.date: 08/21/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 16a48423d05ce1cede75c0020bf18f4f398f5adc
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9a097d6dad067f209d3aad27bde382f28910324a
+ms.sourcegitcommit: c3329ab25d377907d8804cdd5e26dc84a274f39c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138506"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88130933"
 ---
-# <a name="choose-a-xamarinforms-layout"></a>Выбор Xamarin.Forms макета
+# <a name="choose-a-no-locxamarinforms-layout"></a>Выбор Xamarin.Forms макета
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
 
 Xamarin.Formsклассы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении. Выбор класса макета требует знания того, как макет позиционирует свои дочерние элементы, и как макет изменяет свои дочерние элементы. Кроме того, может потребоваться вложение макетов для создания желаемого макета.
 
 На следующем рисунке показаны типичные макеты, которые можно достичь с помощью основных Xamarin.Forms классов макета:
 
-[![Основные классы макета вXamarin.Forms](images/layouts.png "[! Операцион. Классы макета NO-LOC (Xamarin. Forms)]")](images/layouts-large.png#lightbox "[! Операцион. Классы макета NO-LOC (Xamarin. Forms)]")
+[![Основные классы макета в::: No-Loc (Xamarin. Forms):::](images/layouts.png "::: No-Loc (Xamarin. Forms)::: классы макета")](images/layouts-large.png#lightbox "::: No-Loc (Xamarin. Forms)::: классы макета")
 
 ## <a name="stacklayout"></a>StackLayout
 
@@ -234,7 +234,7 @@ Xamarin.Formsклассы макетов позволяют упорядочив
 > [!CAUTION]
 > Старайтесь не использовать [`AbsoluteLayout.AutoSize`](xref:Xamarin.Forms.AbsoluteLayout.AutoSize) свойство, когда это возможно, так как оно приведет к тому, что обработчик макетов будет выполнять дополнительные вычисления макета.
 
-Дополнительные сведения см. в разделе [ Xamarin.Forms абсолутелайаут](absolute-layout.md).
+Дополнительные сведения см. в разделе [ Xamarin.Forms абсолутелайаут](absolutelayout.md).
 
 ## <a name="input-transparency"></a>Прозрачность ввода
 
@@ -255,7 +255,7 @@ Xamarin.Formsклассы макетов позволяют упорядочив
 - [Xamarin.FormsStackLayout](stacklayout.md)
 - [Xamarin.FormsСетки](grid.md)
 - [Xamarin.Formsфлекслайаут](flex-layout.md)
-- [Xamarin.Formsабсолутелайаут](absolute-layout.md)
+- [Xamarin.Formsабсолутелайаут](absolutelayout.md)
 - [Xamarin.FormsRelativeLayout](relative-layout.md)
 - [Оптимизация производительности макета](~/xamarin-forms/deploy-test/performance.md#optimize-layout-performance)
 - [Сжатие макета](layout-compression.md)
