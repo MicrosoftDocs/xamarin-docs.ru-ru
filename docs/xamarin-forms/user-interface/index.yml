@@ -13,12 +13,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: 8b49ebb0dcba9372a9c35e0e4c9870fda0f74895
-  ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+  ms.openlocfilehash: dd748fc93548b73d013eefb35452b211b57a176b
+  ms.sourcegitcommit: c3329ab25d377907d8804cdd5e26dc84a274f39c
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/07/2020
-  ms.locfileid: "87918371"
+  ms.lasthandoff: 08/12/2020
+  ms.locfileid: "88130868"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:
@@ -161,7 +161,7 @@ landingContent:
     - text: Выбор макета
       url: layouts/choose-layout.md
     - text: AbsoluteLayout
-      url: layouts/absolute-layout.md
+      url: layouts/absolutelayout.md
     - text: ContentView
       url: layouts/contentview.md
     - text: FlexLayout

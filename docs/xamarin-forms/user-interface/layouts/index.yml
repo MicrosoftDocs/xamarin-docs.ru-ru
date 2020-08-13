@@ -13,12 +13,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: 361344e5a63a82a058edbba57f358ab2071a65cb
-  ms.sourcegitcommit: 2105091f2eeb7844b19ae94708a6ab07e3e79bce
+  ms.openlocfilehash: 03716b2c6d4a66e4f895f8881c8fd22bd61f3280
+  ms.sourcegitcommit: c3329ab25d377907d8804cdd5e26dc84a274f39c
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/29/2020
-  ms.locfileid: "84198300"
+  ms.lasthandoff: 08/12/2020
+  ms.locfileid: "88130881"
 landingContent:
 - title: Основные макеты
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
     - text: Выбор макета
       url: choose-layout.md
     - text: AbsoluteLayout
-      url: absolute-layout.md
+      url: absolutelayout.md
     - text: FlexLayout
       url: flex-layout.md
     - text: Grid
