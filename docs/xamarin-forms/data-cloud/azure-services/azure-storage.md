@@ -10,14 +10,14 @@ ms.date: 12/28/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f67543a6c678e2c3a1395f816e020d69af4bf873
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: d7b97f21e5184a445cfac85dc06a7da0e1a6a4c5
+ms.sourcegitcommit: f7fe46c0236a7130b63a33d9d1670d5111582dd2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936660"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88186217"
 ---
-# <a name="store-and-access-data-in-azure-storage-from-xamarinforms"></a>Хранение данных в службе хранилища Azure и доступ к ним изXamarin.Forms
+# <a name="store-and-access-data-in-azure-storage-from-no-locxamarinforms"></a>Хранение данных в службе хранилища Azure и доступ к ним изXamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-azurestorage)
 
@@ -65,7 +65,7 @@ _Служба хранилища Azure — это решение масштаб�
 
 URL-адрес для доступа к объекту в учетной записи хранения строится путем добавления местоположения объекта в учетной записи хранения к конечной точке. Например, адрес большого двоичного объекта будет иметь формат `https://mystorageaccount.blob.core.windows.net/mycontainer/myblob` .
 
-## <a name="setup"></a>Установка
+## <a name="setup"></a>Настройка
 
 Процесс интеграции учетной записи хранения Azure в Xamarin.Forms приложение выглядит следующим образом:
 

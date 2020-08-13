@@ -10,12 +10,12 @@ ms.date: 08/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0a43ce2d27c8152137101d616302f6e56a57bd39
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: bf0315d2d077e06ff3ded4d66814afe050fdfad4
+ms.sourcegitcommit: f7fe46c0236a7130b63a33d9d1670d5111582dd2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86931980"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88186204"
 ---
 # <a name="communicating-between-loosely-coupled-components"></a>Взаимодействие между слабо связанными компонентами
 
@@ -58,7 +58,7 @@ ms.locfileid: "86931980"
 [`MessagingCenter`](xref:Xamarin.Forms.MessagingCenter)сообщения — это строки, используемые для распознавания сообщений. В следующем примере кода показаны сообщения, определенные в мобильном приложении eShopOnContainers:
 
 ```csharp
-public class MessengerKeys  
+public class MessageKeys  
 {  
     // Add product to basket  
     public const string AddProduct = "AddProduct";  
@@ -78,7 +78,7 @@ public class MessengerKeys
 Издатели уведомляют подписчиков о сообщении с помощью одной из перегрузок [`MessagingCenter.Send`](xref:Xamarin.Forms.MessagingCenter.Send*). В следующем примере кода демонстрируется публикация `AddProduct` сообщения.
 
 ```csharp
-MessagingCenter.Send(this, MessengerKeys.AddProduct, catalogItem);
+MessagingCenter.Send(this, MessageKeys.AddProduct, catalogItem);
 ```
 
 В этом примере [`Send`](xref:Xamarin.Forms.MessagingCenter.Send*) метод задает три аргумента:
@@ -118,12 +118,12 @@ MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>(
 Если подписчики больше не должны получать сообщения, можно отменить подписку на них. Это достигается с одной из [`MessagingCenter.Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*) перегрузок, как показано в следующем примере кода:
 
 ```csharp
-MessagingCenter.Unsubscribe<CatalogViewModel, CatalogItem>(this, MessengerKeys.AddProduct);
+MessagingCenter.Unsubscribe<CatalogViewModel, CatalogItem>(this, MessageKeys.AddProduct);
 ```
 
 В этом примере [`Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*) синтаксис метода отражает аргументы типа, указанные при подписке на получение `AddProduct` сообщения.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Класс [`MessagingCenter`](xref:Xamarin.Forms.MessagingCenter) в Xamarin.Forms реализует шаблон "публикация-подписка", который обеспечивает взаимодействие на основе сообщений между компонентами, которые неудобно связывать по ссылкам объектов и типов. Этот механизм позволяет издателям и подписчикам взаимодействовать без ссылки друг на друга, помогая сократить зависимости между компонентами, а также разрешать независимое разработку и тестирование компонентов.
 

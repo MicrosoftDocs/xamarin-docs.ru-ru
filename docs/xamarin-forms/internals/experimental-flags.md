@@ -6,16 +6,16 @@ ms.assetid: AF4BDD27-89F6-48AE-A8CD-D7E4DDA2CCA2
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 07/31/2020
+ms.date: 08/13/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6dafdc547e4673134e8ff3badc85a3527dfc55c4
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 94fed78d7cf67ec5b6d783b1ced25a81266242d6
+ms.sourcegitcommit: f7fe46c0236a7130b63a33d9d1670d5111582dd2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87917417"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88186113"
 ---
 # <a name="no-locxamarinforms-experimental-flags"></a>Xamarin.Formsэкспериментальные флаги
 
@@ -80,3 +80,17 @@ Device.SetFlags(new string[]{ "CarouselView_Experimental", "MediaElement_Experim
 
 > [!WARNING]
 > Никогда не вызывайте `SetFlags` метод более одного раза, так как последующие вызовы будут перезаписывать результат предыдущих вызовов.
+
+## <a name="old-experimental-flags"></a>Старые экспериментальные флаги
+
+В следующей таблице перечислены экспериментальные флаги для функций, которые теперь доступны в общедоступной версии, и Xamarin.Forms выпуск, в котором был удален экспериментальный флаг:
+
+| Flag | Xamarin.FormsОтпускании |
+| ---- | --------------------- |
+| `AppTheme_Experimental` | 4.8 |
+| `CollectionView_Experimental` | 4.3 |
+| `FastRenderers_Experimental` | 4,0 |
+| `IndicatorView_Experimental` | 4.7 |
+| `Shell_Experimental` | 4,0  |
+| `StateTriggers_Experimental` | 4.7 |
+| `Visual_Experimental` | 3.6 |

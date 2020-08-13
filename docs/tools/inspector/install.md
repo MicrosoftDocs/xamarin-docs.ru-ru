@@ -6,12 +6,12 @@ ms.assetid: 81174493-02D3-4FF5-AD57-04F3288A7F94
 author: davidortinau
 ms.author: daortin
 ms.date: 06/19/2018
-ms.openlocfilehash: 39e7a6c86a2d4ab4231a29c0e1014de702af01ac
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 1545af984c0a409244c323048b448ec44e9be6a8
+ms.sourcegitcommit: f7fe46c0236a7130b63a33d9d1670d5111582dd2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573421"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88186191"
 ---
 # <a name="inspector-installation-and-requirements"></a>Установка и требования инспектора
 
@@ -33,7 +33,7 @@ ms.locfileid: "84573421"
 
 ## <a name="requirements"></a>Требования
 
-### <a name="supported-operating-systems"></a>Supported Operating Systems
+### <a name="supported-operating-systems"></a>Поддерживаемые операционные системы
 
 - **Mac** -OS X 10,11 или более поздней версии
 - **Windows** 7 или более поздняя (с Internet Explorer 11 или более поздней версии и .NET 4.6.1 или более поздней версии)
@@ -52,7 +52,7 @@ ms.locfileid: "84573421"
 |Платформа приложений|Поддержка интегрированной среды разработки|Примечания|
 |--- |--- |--- |
 |Mac|Поддерживается только в Visual Studio для Mac|
-|iOS|Поддерживается в Visual Studio 2017 и Visual Studio для Mac| Для поведения компоновщика необходимо задать значение " **не связывать** " (в разделе Параметры проекта **сборки iOS** ) |
+|iOS|Поддерживается в Visual Studio 2017 и Visual Studio для Mac| Для поведения компоновщика необходимо задать значение " [**не связывать**](~/ios/deploy-test/linker.md) " (в разделе Параметры проекта **сборки iOS** ) |
 |Android|Поддерживается в Visual Studio 2017 и Visual Studio для Mac|Необходимо выбрать Android >= 4.0.3 с включенным **Фастдев** .<br />Необходимо использовать Эмуляторы Google, Visual Studio или Xamarin Android. В настоящее время Эмуляторы Android 7 могут не допускать проверку.|
 |WPF|Поддерживается только в Visual Studio 2017|
 
@@ -80,7 +80,7 @@ Visual Studio
 - **Справка > о > скопировать сведения о программе Visual Studio**
 - Сообщите нам о версии операционной системы и о том, используете ли вы 32-разрядную или 64-разрядную версию Windows.
 
-### <a name="log-files"></a>Файлы журналов
+### <a name="log-files"></a>Файлы журнала
 
 Всегда Прикрепите файлы журнала клиента IDE и инспектора.
 
