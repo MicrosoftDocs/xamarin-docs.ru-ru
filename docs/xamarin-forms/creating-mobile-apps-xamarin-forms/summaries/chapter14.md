@@ -10,12 +10,12 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 72ee9c4a481388e69aeeb52dbd5b8eeaabb164f6
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 5aa62927efe0a9803efbddaef97ac6557edccd6c
+ms.sourcegitcommit: c3329ab25d377907d8804cdd5e26dc84a274f39c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136764"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88130907"
 ---
 # <a name="summary-of-chapter-14-absolute-layout"></a>Сводная информация о Главе 14. Абсолютный макет
 
@@ -106,5 +106,5 @@ layoutBounds.Y = (fractionalChildCoordinate.Y / (1 - layoutBounds.Height))
 
 - [Глава 14, полный текст в формате PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch14-Apr2016.pdf)
 - [Примеры для Главы 14](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter14)
-- [AbsoluteLayout](~/xamarin-forms/user-interface/layouts/absolute-layout.md)
+- [AbsoluteLayout](~/xamarin-forms/user-interface/layouts/absolutelayout.md)
 - [Вложенные свойства](~/xamarin-forms/xaml/attached-properties.md)

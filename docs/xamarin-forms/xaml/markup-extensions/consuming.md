@@ -10,16 +10,16 @@ ms.date: 06/17/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e1429c3f39e37dc552d7f6ca8767058e5aec853b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: b23aca29fa77b58183a1f09053bc2bb9ba66bb49
+ms.sourcegitcommit: 808ff109928a1eea16e17e23ea81f8c903a239e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84903117"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88181515"
 ---
 # <a name="consuming-xaml-markup-extensions"></a>Использование расширений разметки XAML
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
 
 Расширения разметки XAML помогают повысить степень гибкости и гибкость XAML, разрешая установку атрибутов элементов из различных источников. Несколько расширений разметки XAML являются частью спецификации XAML 2009. Они отображаются в файлах XAML с `x` префиксом пользовательского пространства имен и обычно называются этим префиксом. В этой статье рассматриваются следующие расширения разметки:
 
@@ -42,7 +42,7 @@ ms.locfileid: "84903117"
 - `TemplateBinding`— выполняет привязку данных из шаблона элемента управления, как описано в статье [** Xamarin.Forms шаблоны элементов управления**](~/xamarin-forms/app-fundamentals/templates/control-template.md).
 - `RelativeSource`— Задает источник привязки относительно положения целевого объекта привязки, как описано в статье [относительные привязки](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md).
 
-[`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout)Макет использует пользовательское расширение разметки [`ConstraintExpression`](xref:Xamarin.Forms.ConstraintExpression) . Это расширение разметки описано в статье [**RelativeLayout**](~/xamarin-forms/user-interface/layouts/relative-layout.md).
+[`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout)Макет использует пользовательское расширение разметки [`ConstraintExpression`](xref:Xamarin.Forms.ConstraintExpression) . Это расширение разметки описано в статье [**RelativeLayout**](~/xamarin-forms/user-interface/layouts/relativelayout.md).
 
 ## <a name="xstatic-markup-extension"></a>расширение разметки x:Static
 
@@ -580,7 +580,7 @@ public partial class TypeDemoPage : ContentPage
 
 Сведения о отображении значков шрифтов путем указания данных значка шрифта в `FontImageSource` объекте см. в разделе [Отображение значков шрифтов](~/xamarin-forms/user-interface/text/fonts.md#display-font-icons).
 
-## <a name="appthemebinding-markup-extension"></a>Расширение разметки Аппсемебиндинг
+## <a name="appthemebinding-markup-extension"></a>Расширение разметки AppThemeBinding
 
 `AppThemeBinding`Расширение разметки позволяет указать ресурс, который будет использоваться, например изображение или цвет, на основе текущей системной темы.
 

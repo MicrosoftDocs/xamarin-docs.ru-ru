@@ -10,12 +10,12 @@ ms.date: 08/07/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 696429e04775640d46add77ec6a4bbf6e69f675b
-ms.sourcegitcommit: c3329ab25d377907d8804cdd5e26dc84a274f39c
+ms.openlocfilehash: a6efa4615f0061c83243f2d00d2d141a51607301
+ms.sourcegitcommit: 808ff109928a1eea16e17e23ea81f8c903a239e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88134159"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88181502"
 ---
 # <a name="no-locxamarinforms-absolutelayout"></a>Xamarin.Formsабсолутелайаут
 
@@ -55,7 +55,7 @@ ms.locfileid: "88134159"
 
 ## <a name="absolute-positioning-and-sizing"></a>Абсолютное позиционирование и изменение размера
 
-По умолчанию [`AbsoluteLayout`](xref:Xamarin.Forms.AbsoluteLayout) позиции и размеры дочерние элементы, использующие абсолютные значения, заданные в аппаратно-независимых единицах, которые явно определяют, где должны размещаться представления в макете. Это достигается путем добавления дочерних элементов в `Children` коллекцию `AbsoluteLayout` и присвоения [`AbsoluteLayout.LayoutBounds`](xref:Xamarin.Forms.AbsoluteLayout.LayoutBoundsProperty) свойству присоединенного свойства для каждого дочернего элемента значения абсолютного расположения и (или) размера.
+По умолчанию [`AbsoluteLayout`](xref:Xamarin.Forms.AbsoluteLayout) позиции и размеры дочерние элементы, использующие абсолютные значения, заданные в единицах, не зависящих от устройства, которые явно определяют, где дочерние элементы должны размещаться в макете. Это достигается путем добавления дочерних элементов в `Children` коллекцию `AbsoluteLayout` и присвоения [`AbsoluteLayout.LayoutBounds`](xref:Xamarin.Forms.AbsoluteLayout.LayoutBoundsProperty) свойству присоединенного свойства для каждого дочернего элемента значения абсолютного расположения и (или) размера.
 
 > [!WARNING]
 > Использование абсолютных значений для позиционирования и изменения размера дочернего элемента может быть проблематичным, так как разные устройства имеют разные размеры и разрешения экрана. Поэтому Координаты центра экрана на одном устройстве могут быть смещены на других устройствах.
@@ -190,7 +190,7 @@ public class StylishHeaderDemoPageCS : ContentPage
 
 На следующем снимке экрана показан получившийся макет:
 
-![Дочерние элементы, помещенные в Абсолутелайаут с использованием пропорциональных значений поситино](absolutelayout-images/proportional-position.png)
+![Дочерние элементы, помещенные в Абсолутелайаут с использованием значений пропорционального позиционирования](absolutelayout-images/proportional-position.png)
 
 Эквивалентный код C# показан ниже:
 

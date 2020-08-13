@@ -10,16 +10,16 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4f7fdc0bb18a49e601c00ce1e3eb13371bb80be3
-ms.sourcegitcommit: 3698b35c823225a74892a47139d19e8ae8e6d9ed
+ms.openlocfilehash: 734dea456af56f4103691e0368ae72202bce9556
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87113821"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918244"
 ---
 # <a name="no-locxamarinforms-twopaneview-layout"></a>Xamarin.Forms Макет TwoPaneView
 
-![Предварительный выпуск API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
 
@@ -33,7 +33,7 @@ ms.locfileid: "87113821"
 1. Начните с базового макета `TwoPaneView`, используя следующий код XAML:
 
     ```xaml
-    <ContentPage 
+    <ContentPage
         xmlns:dualScreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen">
         <dualScreen:TwoPaneView>
             <dualScreen:TwoPaneView.Pane1>

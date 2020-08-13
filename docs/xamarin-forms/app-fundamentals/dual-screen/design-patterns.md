@@ -10,16 +10,16 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 79c0f41e8ed0bffce0154ee618729316aab5e8e2
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: b6d2dd1d6bdfd071ffb8fc52396cb6b2d73416e2
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86935282"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918454"
 ---
-# <a name="xamarinforms-dual-screen-design-patterns"></a>Конструктивные шаблоны Xamarin.Forms для двухэкранных устройств
+# <a name="no-locxamarinforms-dual-screen-design-patterns"></a>Конструктивные шаблоны Xamarin.Forms для двухэкранных устройств
 
-![Предварительный выпуск API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
+![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
 

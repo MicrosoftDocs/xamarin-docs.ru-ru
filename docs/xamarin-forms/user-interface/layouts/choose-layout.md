@@ -10,12 +10,12 @@ ms.date: 08/21/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9a097d6dad067f209d3aad27bde382f28910324a
-ms.sourcegitcommit: c3329ab25d377907d8804cdd5e26dc84a274f39c
+ms.openlocfilehash: 38b44bbb8f01f090d286bb2203014455a32a2290
+ms.sourcegitcommit: 808ff109928a1eea16e17e23ea81f8c903a239e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88130933"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88181489"
 ---
 # <a name="choose-a-no-locxamarinforms-layout"></a>Выбор Xamarin.Forms макета
 
@@ -194,7 +194,7 @@ Xamarin.Formsклассы макетов позволяют упорядочив
 > [!WARNING]
 > По возможности избегайте использования `RelativeLayout`. В противном случае ЦП будет испытывать значительно большую нагрузку.
 
-Дополнительные сведения см. в разделе [ Xamarin.Forms RelativeLayout](relative-layout.md).
+Дополнительные сведения см. в разделе [ Xamarin.Forms RelativeLayout](relativelayout.md).
 
 ## <a name="absolutelayout"></a>AbsoluteLayout
 
@@ -256,6 +256,6 @@ Xamarin.Formsклассы макетов позволяют упорядочив
 - [Xamarin.FormsСетки](grid.md)
 - [Xamarin.Formsфлекслайаут](flex-layout.md)
 - [Xamarin.Formsабсолутелайаут](absolutelayout.md)
-- [Xamarin.FormsRelativeLayout](relative-layout.md)
+- [Xamarin.FormsRelativeLayout](relativelayout.md)
 - [Оптимизация производительности макета](~/xamarin-forms/deploy-test/performance.md#optimize-layout-performance)
 - [Сжатие макета](layout-compression.md)
