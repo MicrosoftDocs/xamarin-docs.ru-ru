@@ -13,12 +13,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: dd748fc93548b73d013eefb35452b211b57a176b
-  ms.sourcegitcommit: c3329ab25d377907d8804cdd5e26dc84a274f39c
+  ms.openlocfilehash: c9551fd6035f65931e476d16cb40887dcd0425db
+  ms.sourcegitcommit: 808ff109928a1eea16e17e23ea81f8c903a239e8
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/12/2020
-  ms.locfileid: "88130868"
+  ms.lasthandoff: 08/13/2020
+  ms.locfileid: "88181476"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:
@@ -171,7 +171,7 @@ landingContent:
     - text: Grid
       url: layouts/grid.md
     - text: RelativeLayout
-      url: layouts/relative-layout.md
+      url: layouts/relativelayout.md
     - text: ScrollView
       url: layouts/scrollview.md
     - text: StackLayout
