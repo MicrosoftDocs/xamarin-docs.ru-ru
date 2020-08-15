@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5bab1166ade7a5eeebbb720fa48f6116b4ec95d0
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 920246e9cbbe85c606969333ccb05d3c87dcef66
+ms.sourcegitcommit: 14d67a2db82e67471584b1749e0d5b9ec0c0c09b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86933722"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88228590"
 ---
 # <a name="safe-area-layout-guide-on-ios"></a>Структура безопасного макета области в iOS
 
@@ -53,7 +53,7 @@ On<iOS>().SetUseSafeArea(true);
 > [!NOTE]
 > Защищенная область, определенная Apple, используется в Xamarin.Forms для задания [`Page.Padding`](xref:Xamarin.Forms.Page.Padding) Свойства и переопределяет все предыдущие значения этого свойства, которые были заданы.
 
-Защищенную область можно настроить, извлекая ее [`Thickness`](xref:Xamarin.Forms.Thickness) значение с помощью `Page.SafeAreaInsets` метода из [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен. Затем его можно изменить по мере необходимости и повторно назначить `Padding` свойству в конструкторе страницы или [`OnAppearing`](xref:Xamarin.Forms.Page.OnAppearing) переопределить:
+Защищенную область можно настроить, извлекая ее [`Thickness`](xref:Xamarin.Forms.Thickness) значение с помощью `Page.SafeAreaInsets` метода из [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен. Затем его можно изменить по мере необходимости и повторно назначить `Padding` свойству в [`OnAppearing`](xref:Xamarin.Forms.Page.OnAppearing) переопределении:
 
 ```csharp
 protected override void OnAppearing()
