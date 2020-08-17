@@ -6,18 +6,18 @@ ms.assetid: F8F9471D-6771-4D23-96C0-2B79473A06D4
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 12/18/2019
+ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cc5e0c4cb8b474a1b7e23b476b0c5125eb2ba298
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 00dfec5b48507c83f43d0622c11770ecec304ea6
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138090"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87917558"
 ---
-# <a name="xamarinforms-shell-search"></a>Поиск по оболочке Xamarin.Forms
+# <a name="no-locxamarinforms-shell-search"></a>Поиск по оболочке Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
@@ -224,6 +224,7 @@ Shell.SetSearchHandler(this, new MonkeySearchHandler
 - `HorizontalTextAlignment` с типом `TextAlignment` определяет горизонтальное выравнивание для текста поля поиска.
 - `PlaceholderColor` с типом `Color` определяет цвет текста заполнителя в поле поиска.
 - `TextColor` с типом `Color` определяет цвет текста в поле поиска.
+- `TextTransform` с типом `TextTransform`, определяет регистр текста в поле поиска.
 - `VerticalTextAlignment` с типом `TextAlignment` определяет вертикальное выравнивание для текста поля поиска.
 
 ## <a name="searchhandler-keyboard"></a>Клавиатура SearchHandler
@@ -320,6 +321,7 @@ searchHandler.Keyboard = Keyboard.Create(KeyboardFlags.Suggestions | KeyboardFla
 - `SelectedItem` с типом `object` — выбранный элемент в результатах поиска. Это свойство доступно только для чтения и по умолчанию имеет значение `null`.
 - `ShowsResults` с типом `bool` обозначает, нужно ли ожидать результаты поиска в области поисковых подсказок при вводе текста. Значение по умолчанию — `false`.
 - `TextColor` с типом `Color` определяет цвет текста в поле поиска.
+- `TextTransform` с типом `TextTransform`, определяет регистр текста в поле поиска.
 
 Все эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть их можно указывать в качестве целевых для привязки данных.
 

@@ -6,35 +6,39 @@ ms.assetid: 0E197A51-2304-4C09-A710-C7FF24A89F15
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 07/25/2018
+ms.date: 08/04/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5e1e93f74ab8ef6d63213a8fbdc7ec45a794cf55
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 7528afd0971cf06eb69df4ed7c08c3fd6dcc9e22
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137881"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87917821"
 ---
-# <a name="xamarinforms-gestures"></a>Жесты в Xamarin.Forms
+# <a name="no-locxamarinforms-gestures"></a>Жесты в Xamarin.Forms
 
 _Распознаватели жестов можно использовать для определения взаимодействия пользователя с представлениями в приложении Xamarin.Forms._
 
-Класс Xamarin.Forms [`GestureRecognizer`](xref:Xamarin.Forms.GestureRecognizer) поддерживает касание, сжатие, сдвиг и прокрутку в экземплярах [`View`](xref:Xamarin.Forms.View).
+Класс Xamarin.Forms [`GestureRecognizer`](xref:Xamarin.Forms.GestureRecognizer) поддерживает касание, сжатие, сдвиг и перетаскивание в экземплярах [`View`](xref:Xamarin.Forms.View).
 
-## <a name="adding-a-tap-gesture-recognizer"></a>[Добавление распознавателя жестов касания](tap.md)
+## <a name="add-a-tap-gesture-recognizer"></a>[Добавление распознавателя жестов касания](tap.md)
 
 Жест касания используется для обнаружения касания и распознается классом [`TapGestureRecognizer`](xref:Xamarin.Forms.TapGestureRecognizer).
 
-## <a name="adding-a-pinch-gesture-recognizer"></a>[Добавление распознавателя жестов сжатия](pinch.md)
+## <a name="add-a-pinch-gesture-recognizer"></a>[Добавление распознавателя жестов сжатия](pinch.md)
 
 Жест сжатия используется для интерактивного масштабирования и распознается классом [`PinchGestureRecognizer`](xref:Xamarin.Forms.PinchGestureRecognizer).
 
-## <a name="adding-a-pan-gesture-recognizer"></a>[Добавление распознавателя жестов сдвига](pan.md)
+## <a name="add-a-pan-gesture-recognizer"></a>[Добавление распознавателя жестов сдвига](pan.md)
 
 Жест сдвига используется для обнаружения движения пальцев по экрану и применения этого движения к содержимому и распознается классом [`PanGestureRecognizer`](xref:Xamarin.Forms.PanGestureRecognizer).
 
-## <a name="adding-a-swipe-gesture-recognizer"></a>[Добавление распознавателя жестов прокрутки](swipe.md)
+## <a name="add-a-swipe-gesture-recognizer"></a>[Добавление распознавателя жестов прокрутки](swipe.md)
 
 Жест прокрутки происходит, когда палец перемещается по экрану в горизонтальном или вертикальном направлении. Он часто используется для перемещения по содержимому. Жесты прокрутки распознаются классом [`SwipeGestureRecognizer`](xref:Xamarin.Forms.SwipeGestureRecognizer).
+
+## <a name="add-a-drag-and-drop-gesture-recognizer"></a>[Добавление распознавателя жестов перетаскивания](drag-and-drop.md)
+
+Жест перетаскивания позволяет перетаскивать элементы и связанные с ними пакеты данных из одного расположения на экране в другое, используя непрерывный жест. Жесты перетаскивания распознаются с помощью класса `DragGestureRecognizer`, а жесты отпускания — с помощью класса `DropGestureRecognizer`.

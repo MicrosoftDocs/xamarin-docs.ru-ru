@@ -10,12 +10,12 @@ ms.date: 11/06/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7c4ed503e0379c2c7f235bd91621a031bd660c85
-ms.sourcegitcommit: 69d9a61ba479f707d96eb4c1c56a4b05a2a2a26f
+ms.openlocfilehash: 9ecdc3aca3264b52163d35e29659f434f521147f
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87426894"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918623"
 ---
 # <a name="no-locxamarinforms-shell-tabs"></a>Вкладки оболочки Xamarin.Forms
 
@@ -184,6 +184,7 @@ ms.locfileid: "87426894"
 - `Icon` с типом `ImageSource` определяет значок, который отображается в частях хрома, не являющихся всплывающими элементами.
 - `IsChecked` с типом `boolean` определяет, выделен ли этот элемент во всплывающем элементе в настоящий момент.
 - `IsEnabled` с типом `boolean` определяет, можно ли выбрать элемент в хроме.
+- `IsVisible` с типом `bool` указывает, скрыт ли объект `ShellContent` во всех структурах пользовательского интерфейса. Значение по умолчанию — `true`.
 - `MenuItems` с типом `MenuItemCollection` обозначает элементы меню, которые отображаются во всплывающем элементе, если этот `ShellContent` является отображаемой страницей.
 - `Title` с типом `string` определяет заголовок, отображаемый на вкладке в пользовательском интерфейсе.
 

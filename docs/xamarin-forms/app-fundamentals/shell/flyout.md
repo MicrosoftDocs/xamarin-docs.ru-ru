@@ -6,18 +6,18 @@ ms.assetid: FEDE51EB-577E-4B3E-9890-B7C1A5E52516
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/10/2020
+ms.date: 07/30/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1a1d47b2b37fa532b3e2a64ada5f367e612f557d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 821eafab6896d8771ba38332a43c0cbc319797a7
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84946264"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87917842"
 ---
-# <a name="xamarinforms-shell-flyout"></a>Всплывающий элемент оболочки Xamarin.Forms
+# <a name="no-locxamarinforms-shell-flyout"></a>Всплывающий элемент оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
@@ -234,6 +234,7 @@ Shell.Current.FlyoutIsPresented = false;
 - `IsChecked` с типом `boolean` определяет, выделен ли этот элемент во всплывающем элементе в настоящий момент.
 - `IsEnabled` с типом `boolean` определяет, можно ли выбрать элемент в хроме.
 - `IsTabStop` с типом `bool` указывает, включается ли `FlyoutItem` в навигацию по клавише TAB. Значение по умолчанию — `true`, а если оно равно `false`, элемент `FlyoutItem` игнорируется инфраструктурой навигации по клавише TAB, независимо от значения `TabIndex`.
+- `IsVisible` с типом `bool` указывает, скрыт ли объект `FlyoutItem` во всплывающем меню. Значение по умолчанию — `true`.
 - `TabIndex` с типом `int` обозначает порядок, в котором объекты `FlyoutItem` получают фокус при переходе пользователя между элементами посредством нажатия клавиши TAB. Это свойство по умолчанию имеет значение 0.
 - `Title` с типом `string` определяет заголовок, отображаемый на вкладке в пользовательском интерфейсе.
 - `Route` с типом `string` — строка, используемая для адресации элемента.
@@ -249,6 +250,46 @@ Shell.Current.FlyoutIsPresented = false;
 - `OnTabStopPropertyChanged` вызывается при изменении свойства `IsTabStop`;
 - `TabIndexDefaultValueCreator` возвращает `int` и позволяет задать значение по умолчанию для свойства `TabIndex`;
 - `TabStopDefaultValueCreator` возвращает `bool` и позволяет задать значение по умолчанию для свойства `TabStop`.
+
+## <a name="flyout-backdrop"></a>Фон всплывающего элемента
+
+Фон всплывающего элемента (внешний вид наложения всплывающего окна), можно указать, задав для `Brush` присоединенное свойство `Shell.FlyoutBackdrop`.
+
+```xaml
+<Shell ...
+       FlyoutBackdrop="Silver">
+    ...
+</Shell>
+```
+
+В этом примере для фона всплывающего элемента выбран серебряный цвет (`SolidColorBrush`).
+
+> [!IMPORTANT]
+> Присоединенное свойство `FlyoutBackdrop` можно задать для любого элемента оболочки, но оно будет применяться только в том случае, если задано для объектов `Shell`, `FlyoutItem` или `TabBar`.
+
+В следующем примере показано, что для фона всплывающего элемента `FlyoutItem` указана кисть `LinearGradientBrush`:
+
+```xaml
+<Shell ...>
+    <FlyoutItem ...>
+      <Shell.FlyoutBackdrop>
+          <LinearGradientBrush StartPoint="0,0"
+                               EndPoint="1,1">
+              <GradientStop Color="#8A2387"
+                            Offset="0.1" />
+              <GradientStop Color="#E94057"
+                            Offset="0.6" />
+              <GradientStop Color="#F27121"
+                            Offset="1.0" />
+          </LinearGradientBrush>
+      </Shell.FlyoutBackdrop>
+      ...
+    </FlyoutItem>
+    ...
+</Shell>
+```
+
+Дополнительные сведения о кистях см. в статье [Кисти Xamarin.Forms](~/xamarin-forms/user-interface/brushes/index.md).
 
 ## <a name="flyout-vertical-scroll"></a>Вертикальная прокрутка всплывающего меню
 
@@ -652,3 +693,4 @@ Shell.Current.CurrentItem = aboutItem;
 - [Xaminals (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 - [Классы стилей Xamarin.Forms](~/xamarin-forms/user-interface/styles/xaml/style-class.md)
 - [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)
+- [Кисти Xamarin.Forms](~/xamarin-forms/user-interface/brushes/index.md)

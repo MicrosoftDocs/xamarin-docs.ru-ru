@@ -10,14 +10,14 @@ ms.date: 08/14/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 03663803313c870a3361c6e1ffc85cf1f8999068
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: db0beb59ed882d76288968a239f0a0dd735d9990
+ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137892"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87918481"
 ---
-# <a name="adding-a-swipe-gesture-recognizer"></a>Добавление распознавателя жестов прокрутки
+# <a name="add-a-swipe-gesture-recognizer"></a>Добавление распознавателя жестов прокрутки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-swipegesture)
 
