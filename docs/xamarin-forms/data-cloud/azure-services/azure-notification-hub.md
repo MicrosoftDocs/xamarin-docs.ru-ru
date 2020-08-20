@@ -11,12 +11,12 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 - Firebase
-ms.openlocfilehash: 5fd657a3d55bd26b95e79e39540dcfe5b8bce08f
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 5a069595aa12852a4a861de9bac52eebd7247e48
+ms.sourcegitcommit: 14d67a2db82e67471584b1749e0d5b9ec0c0c09b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918595"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88228629"
 ---
 # <a name="send-and-receive-push-notifications-with-azure-notification-hubs-and-no-locxamarinforms"></a>Отправка и получение push-уведомлений с помощью Центров уведомлений Azure и Xamarin.Forms
 
@@ -251,7 +251,7 @@ void SendLocalNotification(string body)
     var requestCode = new Random().Next();
     var pendingIntent = PendingIntent.GetActivity(this, requestCode, intent, PendingIntentFlags.OneShot);
 
-    var notificationBuilder = new NotificationCompat.Builder(this)
+    var notificationBuilder = new NotificationCompat.Builder(this, AppConstants.NotificationChannelName)
         .SetContentTitle("XamarinNotify Message")
         .SetSmallIcon(Resource.Drawable.ic_launcher)
         .SetContentText(body)
