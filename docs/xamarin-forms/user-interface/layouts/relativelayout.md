@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsRelativeLayout
+title: Xamarin.Forms RelativeLayout
 description: Xamarin.FormsRelativeLayout используется для позиционирования и размера потомков относительно свойств макета или элементов того же уровня.
 ms.prod: xamarin
 ms.assetid: 2530BCB8-01B8-4C4F-BF14-CA53659F1B5A
@@ -7,19 +7,20 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/13/2020
+ms.custom: contperfq1
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b23da34239d99faa64578bd30c5a3e969cf4b289
-ms.sourcegitcommit: 808ff109928a1eea16e17e23ea81f8c903a239e8
+ms.openlocfilehash: 77b1837fb58d5743fd887b9f636f7f7311b807d3
+ms.sourcegitcommit: 9bd6b1b20d126b3f837c4cf859b25895c242e54e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88181822"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88648178"
 ---
-# <a name="no-locxamarinforms-relativelayout"></a>Xamarin.FormsRelativeLayout
+# <a name="no-locxamarinforms-relativelayout"></a>Xamarin.Forms RelativeLayout
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-relativelayoutdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-relativelayoutdemos)
 
 [![::: No-Loc (Xamarin. Forms)::: RelativeLayout](relativelayout-images/layouts.png)](relativelayout-images/layouts-large.png#lightbox)
 
@@ -224,7 +225,7 @@ public class StylishHeaderDemoPageCS : ContentPage
 В этом примере расположение каждого [`BoxView`](xref:Xamarin.Forms.BoxView) объекта определяется с помощью установки [`XConstraint`](xref:Xamarin.Forms.RelativeLayout.XConstraintProperty) [`YConstraint`](xref:Xamarin.Forms.RelativeLayout.YConstraintProperty) присоединенных свойств и. Первый `BoxView` имеет `XConstraint` `YConstraint` вложенные свойства и присвоены к константам, которые являются абсолютными значениями. Все остальные `BoxView` объекты имеют установленную позиции, используя по меньшей мере одно относительное значение. Например, желтый `BoxView` объект устанавливает `XConstraint` присоединенное свойство в ширину его родителя (значение [`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout) ) минус 40. Аналогичным образом для `BoxView` `YConstraint` присоединенного свойства устанавливается высота родителя минус 40. Это гарантирует, что желтый цвет `BoxView` появится в правом нижнем углу экрана.
 
 > [!NOTE]
-> [`BoxView`](xref:Xamarin.Forms.BoxView)объекты, для которых не задан размер, автоматически изменяются в соответствии с размером 40x40 Xamarin.Forms .
+> [`BoxView`](xref:Xamarin.Forms.BoxView) объекты, для которых не задан размер, автоматически изменяются в соответствии с размером 40x40 Xamarin.Forms .
 
 Серебристое [`BoxView`](xref:Xamarin.Forms.BoxView) название располагается `oneThird` централизованно относительно его родителя. Он также имеет размер относительно родительского элемента, равный третьему из его ширины и высоты. Это достигается путем задания [`XConstraint`](xref:Xamarin.Forms.RelativeLayout.XConstraintProperty) [`WidthConstraint`](xref:Xamarin.Forms.RelativeLayout.WidthConstraintProperty) свойству и вложенным свойствам ширины родителя ( [`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout) ), умноженной на 0,33. Аналогично, [`YConstraint`](xref:Xamarin.Forms.RelativeLayout.YConstraintProperty) [`HeightConstraint`](xref:Xamarin.Forms.RelativeLayout.HeightConstraintProperty) вложенным свойствам и присваивается высота родителя, умноженная на 0,33.
 
@@ -341,7 +342,7 @@ public class RelativePositioningAndSizingDemoPageCS : ContentPage
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Демонстрации RelativeLayout (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-relativelayoutdemos)
-- [Xamarin.FormsВложенные свойства](~/xamarin-forms/xaml/attached-properties.md)
+- [Xamarin.Forms Вложенные свойства](~/xamarin-forms/xaml/attached-properties.md)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md)
 - [Выбор Xamarin.Forms макета](choose-layout.md)
 - [Улучшение Xamarin.Forms производительности приложения](~/xamarin-forms/deploy-test/performance.md)
