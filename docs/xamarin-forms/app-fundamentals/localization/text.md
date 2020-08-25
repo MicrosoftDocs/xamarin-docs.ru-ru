@@ -1,6 +1,6 @@
 ---
-title: 'title: "Локализация строк и изображений в Xamarin.Forms" description: "Приложения Xamarin.Forms могут быть локализованы с помощью файлов ресурсов .NET".'
-description: 'zone_pivot_groups: "platform" ms.prod: xamarin ms.assetid: 852B4ED3-2D2D-48A5-A759-A6591F6A1509 ms.technology: xamarin-forms author: profexorgeek ms.author: jusjohns ms.date: 11/01/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Локализация строк и изображений в Xamarin.Forms
+description: Приложения Xamarin.Forms можно локализовать с помощью файлов ресурсов .NET.
 zone_pivot_groups: platform
 ms.prod: xamarin
 ms.assetid: 852B4ED3-2D2D-48A5-A759-A6591F6A1509
@@ -11,14 +11,14 @@ ms.date: 11/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: af15dc5a23404a11be6207bef7b4fc3e4bf9fad7
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: d68227fbf4a4c9db8f4ba8858fdeda6637ce4732
+ms.sourcegitcommit: 14d67a2db82e67471584b1749e0d5b9ec0c0c09b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84137609"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88228614"
 ---
-# <a name="xamarinforms-string-and-image-localization"></a>Локализация строк и изображений в Xamarin.Forms
+# <a name="no-locxamarinforms-string-and-image-localization"></a>Локализация строк и изображений в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/usingresxlocalization)
 
@@ -59,7 +59,7 @@ ms.locfileid: "84137609"
 
 Значение, выбранное в раскрывающемся списке **Модификатор доступа**, определяет то, как Visual Studio создает класс, используемый для доступа к ресурсам. Если выбрать **общедоступный** или **внутренний** модификатор доступа, будет создан класс с соответствующим уровнем доступности. Если выбрать модификатор доступа **Без создания кода**, файл класса не создается. Для создания файла класса необходимо настроить файл ресурсов по умолчанию. В результате в проект будет добавлен файл с расширением **.designer.cs**.
 
-После создания файла ресурсов по умолчанию можно создать дополнительные файлы для каждого языка и региональных параметров, поддерживаемых приложением. В имени каждого дополнительного файла ресурсов должен быть указан целевой язык и региональные параметры, а в качестве **модификатора доступа** должно быть выбрано значение **Без создания кода**. 
+После создания файла ресурсов по умолчанию можно создать дополнительные файлы для каждого языка и региональных параметров, поддерживаемых приложением. В имени каждого дополнительного файла ресурсов должен быть указан целевой язык и региональные параметры, а в качестве **модификатора доступа** должно быть выбрано значение **Без создания кода**.
 
 Во время выполнения приложение пытается разрешить запрос ресурса в порядке от более конкретного к более общему. Например, если на устройстве выбраны язык и региональные параметры **ru-RU**, приложение ищет файлы ресурсов в следующем порядке:
 
@@ -149,7 +149,37 @@ using System.Resources;
 
 Дополнительные сведения о файлах ресурсов см. в статье [Создание файлов ресурсов для приложений .NET](https://docs.microsoft.com/dotnet/framework/resources/creating-resource-files-for-desktop-apps).
 
-## <a name="localize-text-in-xamarinforms"></a>Локализация текста в Xamarin.Forms
+## <a name="specify-supported-languages-on-ios"></a>Указание поддерживаемых языков в iOS
+
+В iOS необходимо объявить все поддерживаемые языки в файле **Info.plist** для своего проекта. В файле **Info.plist** используйте представление **Source** (Источник), чтобы задать массив для ключа `CFBundleLocalizations`, и укажите значения, соответствующие RESX-файлам. Кроме того, убедитесь, что вы установили ожидаемый язык с помощью ключа `CFBundleDevelopmentRegion`.
+
+![Снимок экрана редактора файла Info.plist с разделом Localizations (Локализация)](text-images/info-plist.png)
+
+Либо можно открыть файл **Info.plist** в редакторе XML и добавить следующее содержимое.
+
+```xml
+<key>CFBundleLocalizations</key>
+<array>
+    <string>de</string>
+    <string>es</string>
+    <string>fr</string>
+    <string>ja</string>
+    <string>pt</string> <!-- Brazil -->
+    <string>pt-PT</string> <!-- Portugal -->
+    <string>ru</string>
+    <string>zh-Hans</string>
+    <string>zh-Hant</string>
+</array>
+<key>CFBundleDevelopmentRegion</key>
+<string>en</string>
+```
+
+> [!NOTE]
+> Apple обрабатывает португальский язык не совсем так, как можно ожидать. Дополнительные сведения см. в разделе [Adding Languages](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html#//apple_ref/doc/uid/10000171i-CH5-SW2) (Добавление языков) на сайте developer.apple.com.
+
+Дополнительные сведения см. в разделе [Указание поддерживаемых языков по умолчанию в файле Info.plist](~/ios/app-fundamentals/localization/index.md#specifying-default-and-supported-languages-in-infoplist).
+
+## <a name="localize-text-in-no-locxamarinforms"></a>Локализация текста в Xamarin.Forms
 
 Текст в Xamarin.Forms локализуется с помощью создаваемого класса `AppResources`. Его имя совпадает с именем файла ресурсов по умолчанию. Так как файл ресурсов в примере проекта называется **AppResources.cs**, Visual Studio создает соответствующий класс с именем `AppResources`. Для каждой строки в файле ресурсов в классе `AppResources` создаются статические свойства. В классе `AppResources` для примера приложения создаются следующие статические свойства:
 
@@ -178,19 +208,19 @@ public LocalizedCodePage()
         Text = AppResources.NotesLabel,
         // ...
     };
-    
+
     Entry notesEntry = new Entry
     {
         Placeholder = AppResources.NotesPlaceholder,
         //...
     };
-    
+
     Button addButton = new Button
     {
         Text = AppResources.AddButton,
         // ...
     };
-    
+
     Content = new StackLayout
     {
         Children = {

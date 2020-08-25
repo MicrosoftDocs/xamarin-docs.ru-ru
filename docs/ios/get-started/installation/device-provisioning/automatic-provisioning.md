@@ -8,12 +8,12 @@ author: davidortinau
 ms.author: daortin
 ms.custom: video
 ms.date: 03/05/2020
-ms.openlocfilehash: 069c40b74876bea1d3a0c8fca23b3d90c4b91635
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 09d20ef2e4fece36ce67a7891892defb05a5f3df
+ms.sourcegitcommit: ca1eca5bcf6c82bc4ec05db12ee1be585006d59f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79510683"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88514633"
 ---
 # <a name="automatic-provisioning-for-xamarinios"></a>Автоматическая подготовка для Xamarin.iOS
 
@@ -45,13 +45,15 @@ _Установив Xamarin.iOS для разработки приложений
 
 2. Откройте файл **Info.plist**.
 
-3. В разделе **Подписывание** выберите **Автоматическая подготовка**:
+3. Перейдите на вкладку **Приложение**.
+
+4. В разделе **Подписывание** выберите **Автоматическая подготовка**:
 
     ![Раскрывающийся список для выбора команды](automatic-provisioning-images/image2.png)
 
-4. Выберите свою команду в раскрывающемся списке **Team** (Команда).
+5. Выберите свою команду в раскрывающемся списке **Team** (Команда).
 
-5. Через несколько секунд будут созданы сертификат для подписи и профиль подготовки:
+6. Через несколько секунд будут созданы сертификат для подписи и профиль подготовки:
 
     ![успешное создание сертификата и профиля](automatic-provisioning-images/image5.png)
 
@@ -102,7 +104,7 @@ _Установив Xamarin.iOS для разработки приложений
 - Покупки из приложений
 - Несколько путей
 - NFC
-- Личная VPN
+- Личный VPN
 - Push-уведомления
 - Конфигурация беспроводных периферийных устройств
 
