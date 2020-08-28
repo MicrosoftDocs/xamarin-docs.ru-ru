@@ -171,13 +171,8 @@ items:
             href: app-fundamentals/behaviors/attached.md
           - name: Реакции на события Xamarin.Forms
             href: app-fundamentals/behaviors/creating.md
-          - name: Повторно используемые реакции на события
-            href: app-fundamentals/behaviors/reusable/index.md
-            items:
-              - name: EffectBehavior
-                href: app-fundamentals/behaviors/reusable/effect-behavior.md
-              - name: EventToCommandBehavior
-                href: app-fundamentals/behaviors/reusable/event-to-command-behavior.md
+          - name: Повторно используемая реакция на событие EffectBehavior
+            href: app-fundamentals/behaviors/effect-behavior.md
       - name: Пользовательские отрисовщики
         href: app-fundamentals/custom-renderer/index.md
         items:

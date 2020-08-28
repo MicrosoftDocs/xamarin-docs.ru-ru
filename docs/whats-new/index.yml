@@ -10,17 +10,19 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 02/28/2020
-  ms.openlocfilehash: 3438722403e57ab376544f8ca627fbba5c0a0ab2
-  ms.sourcegitcommit: 34fa3086c55b1e01838419c930f839c20662c362
+  ms.openlocfilehash: 187eb18553bc4952afc0d323885453d3fa3d285d
+  ms.sourcegitcommit: edfbdd4222dcb59656e5e9de9604610fec155e65
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/18/2020
-  ms.locfileid: "84990744"
+  ms.lasthandoff: 08/27/2020
+  ms.locfileid: "88957155"
 landingContent:
 - title: Новые возможности
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Август 2020 г.
+      url: 2020-08.md
     - text: Июнь 2020 г.
       url: 2020-06.md
     - text: Апрель 2020 г.
