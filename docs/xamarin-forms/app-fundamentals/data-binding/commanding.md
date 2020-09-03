@@ -1,6 +1,6 @@
 ---
-title: 'title: "Командный интерфейс Xamarin.Forms" description: "В этой статье объясняется, как реализовать свойство Command с привязками данных Xamarin.Forms.'
-description: 'Командный интерфейс предоставляет альтернативный подход к реализации команд, который гораздо лучше подходит для архитектуры MVVM". ms.prod: xamarin ms.assetid: 69922284-F398-45C3-B4CC-B8E29BB4C533 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Командный интерфейс Xamarin.Forms
+description: В этой статье объясняется, как реализовать свойство Command с привязками данных Xamarin.Forms. Командный интерфейс предоставляет альтернативный подход к реализации команд, который гораздо лучше подходит для архитектуры MVVM.
 ms.prod: xamarin
 ms.assetid: 69922284-F398-45C3-B4CC-B8E29BB4C533
 ms.technology: xamarin-forms
@@ -10,14 +10,14 @@ ms.date: 01/05/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 253255f08cec6f08e03df94798c8572f7cf10f30
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: ad36bd5efe09909753fed948a961a690feb0592a
+ms.sourcegitcommit: a003b036f6fb83818e2ecc9c72a641e3aeb373bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84139728"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964666"
 ---
-# <a name="the-xamarinforms-command-interface"></a>Командный интерфейс Xamarin.Forms
+# <a name="the-no-locxamarinforms-command-interface"></a>Командный интерфейс Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
@@ -688,10 +688,6 @@ public class DecimalKeypadViewModel : INotifyPropertyChanged
 Метод `canExecute` возвращает `false` только в том случае, если аргумент является десятичным разделителем (указывая, что десятичный разделитель нажат) и `Entry` уже содержит десятичный разделитель.
 
 Все методы `execute` вызывают `RefreshCanExecutes`, который затем вызывает `ChangeCanExecute` для `DigitCommand` и `ClearCommand`. Это гарантирует, что кнопки десятичного разделителя и удаления включаются и отключаются в соответствии с текущей последовательностью введенных цифр.
-
-## <a name="adding-commands-to-existing-views"></a>Добавление команд в существующие представления
-
-Если вы хотите использовать командный интерфейс с представлениями, которые его не поддерживают, можно использовать поведение Xamarin.Forms, которое преобразует событие в команду. Это описано в статье [**EventToCommandBehavior для повторного использования**](~/xamarin-forms/app-fundamentals/behaviors/reusable/event-to-command-behavior.md).
 
 ## <a name="asynchronous-commanding-for-navigation-menus"></a>Асинхронные команды для меню навигации
 

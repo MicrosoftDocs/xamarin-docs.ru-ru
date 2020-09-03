@@ -10,14 +10,14 @@ ms.date: 04/06/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 83952982bd163725fb931c860cac3e267726315c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: d917d7d6421cfae7fc877c81023a835573fa99b1
+ms.sourcegitcommit: a003b036f6fb83818e2ecc9c72a641e3aeb373bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135815"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964627"
 ---
-# <a name="xamarinforms-behaviors"></a>Реакции на события Xamarin.Forms
+# <a name="no-locxamarinforms-behaviors"></a>Реакции на события Xamarin.Forms
 
 _Реакции на события позволяют добавлять функциональные возможности в элементы управления пользовательского интерфейса без разделения их на подклассы. Реакции на события пишутся в коде и добавляются в элементы управления в XAML или коде._
 
@@ -29,10 +29,10 @@ _Реакции на события позволяют добавлять фун
 
 Присоединенные реакции на события — это классы `static` с одним или несколькими присоединенными свойствами. В этой статье содержатся сведения о создании и использовании присоединенных реакций на события.
 
-## <a name="xamarinforms-behaviorscreatingmd"></a>[Реакции на события Xamarin.Forms](creating.md)
+## <a name="no-locxamarinforms-behaviors"></a>[Реакции на события Xamarin.Forms](creating.md)
 
 Реакции на событие Xamarin.Forms создаются путем наследования от классов [`Behavior`](xref:Xamarin.Forms.Behavior) или [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1). В этой статье содержатся сведения о создании и использовании реакций на события Xamarin.Forms.
 
-## <a name="reusable-behaviors"></a>[Повторно используемые реакции на событие](reusable/index.md)
+## <a name="reusable-effectbehavior"></a>[Повторно используемая EffectBehavior](effect-behavior.md)
 
-Реакции на события могут повторно использоваться в нескольких приложениях. В этих статьях содержатся сведения о создании полезных реакций на события для выполнения часто используемых функций.
+Реакции на события удобно использовать для добавления эффекта в элемент управления, удаления стереотипного эффекта, обработки кода из файлов кода программной части. В этой статье демонстрируется создание и использование реакции на событие Xamarin.Forms для добавления эффекта в элемент управления.
