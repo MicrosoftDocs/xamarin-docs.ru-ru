@@ -1,6 +1,6 @@
 ---
-title: 'title: "Начало работы с Xamarin.Essentials" description: "Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows, независимо от используемого метода создания пользовательского интерфейса".'
-description: 'ms.assetid: B2669C48-B659-4854-BD80-FEB0E876F5B9 author: jamesmontemagno ms.author: jamont ms.custom: video ms.date: 05/11/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Начало работы с Xamarin.Essentials
+description: Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса.
 ms.assetid: B2669C48-B659-4854-BD80-FEB0E876F5B9
 author: jamesmontemagno
 ms.author: jamont
@@ -9,20 +9,20 @@ ms.date: 05/11/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0c0052b35475522ffb3634ebe22f69f66fe3b22b
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 3599958a493dd4051064b5e7f54aa5901e6bf32c
+ms.sourcegitcommit: f6a2f07d2e689e0cfd01b30008d50c83c63fa70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84129315"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89052764"
 ---
-# <a name="get-started-with-xamarinessentials"></a>Начало работы с Xamarin.Essentials
+# <a name="get-started-with-no-locxamarinessentials"></a>Начало работы с Xamarin.Essentials
 
 Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса. Дополнительные сведения о поддерживаемых операционных системах см. в [руководстве по поддержке платформ и функций](platform-feature-support.md).
 
 ## <a name="installation"></a>Установка
 
-Xamarin.Essentials предоставляется в виде пакета NuGet и включается в каждый новый проект в Visual Studio. Его также можно добавить в любой существующий пакет с помощью Visual Studio, выполнив указанные ниже действия.
+Xamarin.Essentials предоставляется в виде пакета NuGet и включается в каждый новый проект в Visual Studio. Его также можно добавлять в любые существующие проекты с помощью Visual Studio, выполнив указанные ниже действия.
 
 1. Скачайте и установите [Visual Studio](https://visualstudio.microsoft.com/) с помощью [средств Visual Studio для Xamarin](~/get-started/installation/index.md).
 
@@ -93,7 +93,7 @@ Xamarin.Essentials предоставляется в виде пакета NuGet
 
 6. Выполните инструкции в [руководствах Xamarin.Essentials](index.md) по копированию и вставке фрагментов кода для каждого компонента.
 
-## <a name="xamarinessentials---cross-platform-apis-for-mobile-apps-video"></a>Xamarin.Essentials — кроссплатформенные API-интерфейсы для мобильных приложений (видео)
+## <a name="no-locxamarinessentials---cross-platform-apis-for-mobile-apps-video"></a>Xamarin.Essentials — кроссплатформенные API-интерфейсы для мобильных приложений (видео)
 
 > [!Video https://channel9.msdn.com/Shows/XamarinShow/Snack-Pack-XamarinEssentials-Cross-Platform-APIs-for-Mobile-Apps/player]
 

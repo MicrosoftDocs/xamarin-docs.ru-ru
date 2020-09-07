@@ -8,12 +8,12 @@ author: davidortinau
 ms.author: daortin
 ms.custom: video
 ms.date: 03/05/2020
-ms.openlocfilehash: 09d20ef2e4fece36ce67a7891892defb05a5f3df
-ms.sourcegitcommit: ca1eca5bcf6c82bc4ec05db12ee1be585006d59f
+ms.openlocfilehash: 32d9142fb74cba637982438a2aa984adb759d847
+ms.sourcegitcommit: bb18e6b3b5d592374b17932efa1e85c3b5fbad57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88514633"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88950720"
 ---
 # <a name="automatic-provisioning-for-xamarinios"></a>Автоматическая подготовка для Xamarin.iOS
 
@@ -25,7 +25,7 @@ _Установив Xamarin.iOS для разработки приложений
 
 > [!NOTE]
 > Для использования этой функции у вас также должна быть платная учетная запись разработчика Apple. Дополнительные сведения об учетных записях разработчика Apple можно найти в статье [Подготовка устройства для Xamarin.iOS](~/ios/get-started/installation/device-provisioning/index.md).
-> Если у вас нет платной учетной записи разработчика Apple, ознакомьтесь с руководством [Бесплатная подготовка для Xamarin.iOS] (~/ios/get-started/installation/device-provisioning/free-provisioning.md).
+> Если у вас нет платной учетной записи разработчика Apple, см. руководство [Бесплатная подготовка для Xamarin.iOS](~/ios/get-started/installation/device-provisioning/free-provisioning.md).
 
 > [!NOTE]
 > Прежде чем начать, обязательно примите все лицензионные соглашения на [портале разработчика Apple](https://developer.apple.com/account/) или [App Store Connect](https://appstoreconnect.apple.com/).

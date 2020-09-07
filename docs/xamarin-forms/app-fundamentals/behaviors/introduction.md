@@ -10,12 +10,12 @@ ms.date: 04/06/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d5bee3baa08387a1ed67384ba4089d63aad08d2c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 37c76a5f325c363a92c2a2c1e597dab28f064cd9
+ms.sourcegitcommit: a003b036f6fb83818e2ecc9c72a641e3aeb373bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135776"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964614"
 ---
 # <a name="introduction-to-behaviors"></a>Общие сведения о реакциях на события
 
@@ -32,7 +32,7 @@ _Реакции на события позволяют добавлять фун
 
 В Xamarin.Forms поддерживаются два вида реакций на события.
 
-- **Реакции на события Xamarin.Forms**  — это классы, производные от класса [`Behavior`](xref:Xamarin.Forms.Behavior) или [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1), где `T` — это тип элемента управления, к которому должна применяться реакция на событие. Дополнительные сведения о реакциях на события Xamarin.Forms см. в статьях [Реакции на события Xamarin.Forms](~/xamarin-forms/app-fundamentals/behaviors/creating.md) и [Повторно используемые реакции на события](~/xamarin-forms/app-fundamentals/behaviors/reusable/index.md).
+- **Реакции на события Xamarin.Forms**  — это классы, производные от класса [`Behavior`](xref:Xamarin.Forms.Behavior) или [`Behavior<T>`](xref:Xamarin.Forms.Behavior`1), где `T` — это тип элемента управления, к которому должна применяться реакция на событие. Дополнительные сведения о расширениях функциональности Xamarin.Forms см. в разделе [Расширения функциональности Xamarin.Forms](~/xamarin-forms/app-fundamentals/behaviors/creating.md).
 - **Присоединенные реакции на события** — классы `static` с одним или несколькими присоединенными свойствами. Дополнительные сведения о присоединенных реакциях на события см. в статье [Присоединенные реакции на события](~/xamarin-forms/app-fundamentals/behaviors/attached.md).
 
 В этой статье рассматриваются реакции на события Xamarin.Forms как предпочтительный способ создания реакций на события.
