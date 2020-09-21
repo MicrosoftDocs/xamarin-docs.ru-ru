@@ -11,13 +11,13 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 ms.openlocfilehash: f265d1da894b195402c91cbf9468a11837c53bcf
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.sourcegitcommit: f6a2f07d2e689e0cfd01b30008d50c83c63fa70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/10/2020
 ms.locfileid: "86933716"
 ---
-# <a name="create-xamarinforms-behaviors"></a>Создание реакций на события Xamarin.Forms
+# <a name="create-no-locxamarinforms-behaviors"></a>Создание реакций на события Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-numericvalidationbehavior)
 
@@ -59,7 +59,7 @@ public class CustomBehavior : Behavior<View>
 
 После этого реакцию на событие можно использовать посредством ее присоединения к коллекции [`Behaviors`](xref:Xamarin.Forms.VisualElement.Behaviors) соответствующего элемента управления.
 
-## <a name="creating-a-xamarinforms-behavior"></a>Создание реакции на событие Xamarin.Forms
+## <a name="creating-a-no-locxamarinforms-behavior"></a>Создание реакции на событие Xamarin.Forms
 
 В примере приложения демонстрируется реакция на событие `NumericValidationBehavior`, которая выделяет значение, введенное пользователем в элементе управления [`Entry`](xref:Xamarin.Forms.Entry), красным цветом, если оно не имеет тип `double`. Эта реакция на событие показана в следующем примере кода:
 
@@ -92,7 +92,7 @@ public class NumericValidationBehavior : Behavior<Entry>
 > [!NOTE]
 > Xamarin.Forms не задает `BindingContext` для реакции на событие, так как реакции на событие можно использовать совместно и применять к нескольким элементам управления через стили.
 
-## <a name="consuming-a-xamarinforms-behavior"></a>Использование реакции на событие Xamarin.Forms
+## <a name="consuming-a-no-locxamarinforms-behavior"></a>Использование реакции на событие Xamarin.Forms
 
 Каждый элемент управления Xamarin.Forms имеет коллекцию [`Behaviors`](xref:Xamarin.Forms.VisualElement.Behaviors), в которую можно добавить одну или несколько реакций на событие, как показано в следующем примере кода XAML:
 
@@ -113,12 +113,12 @@ entry.Behaviors.Add (new NumericValidationBehavior ());
 
 Во время выполнения реакция на событие будет реагировать на взаимодействие с элементом управления в соответствии с ее реализацией. На следующих снимках экрана показана реакция на событие ввода недопустимого значения:
 
-[![Пример приложения с реакцией на событие Xamarin.Forms](creating-images/screenshots-sml.png)](creating-images/screenshots.png#lightbox "Пример приложения с реакцией на событие Xamarin.Forms")
+[![Примеры приложений с Xamarin.Forms Поведение](creating-images/screenshots-sml.png)](creating-images/screenshots.png#lightbox "Примеры приложений с Xamarin.Forms Поведение")
 
 > [!NOTE]
 > Реакция на событие создается для элементов управления определенного типа (или суперкласса, включающего множество разных элементов управления) и должна добавляться только к совместимым элементам управления. Попытка присоединить реакцию на событие к несовместимому элементу управления может привести к возникновению исключения.
 
-### <a name="consuming-a-xamarinforms-behavior-with-a-style"></a>Использование реакции на событие Xamarin.Forms с помощью стиля
+### <a name="consuming-a-no-locxamarinforms-behavior-with-a-style"></a>Использование реакции на событие Xamarin.Forms с помощью стиля
 
 Реакции на событие также могут использоваться явным или неявным стилем. Однако создание стиля, который задает свойство [`Behaviors`](xref:Xamarin.Forms.VisualElement.Behaviors) элемента управления, не поддерживается, так как это свойство доступно только для чтения. Решение заключается в том, чтобы добавить присоединенное свойство в класс реакции на событие, управляющий добавлением и удалением реакции на событие. Процесс выглядит следующим образом:
 
