@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/25/2018
-ms.openlocfilehash: a70095c5897163d3699d03ec42c33826f6d40419
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: aca9227bc5c885000bffe858e0fc8b34d3724dfd
+ms.sourcegitcommit: 0c45e3f810947e3d43223aa01bf3e43a0defca65
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997154"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90843503"
 ---
 # <a name="ios-platform-features-overview"></a>Общие сведения о функциях платформы iOS
 
@@ -20,8 +20,9 @@ ms.locfileid: "86997154"
 
 ## <a name="ios-releases"></a>выпуски iOS
 
-| Release | Описание |
+| Выпуск | Description |
 |-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Введение в iOS 14](~/ios/platform/ios14/index.md) | В этом документе описывается Xamarin. iOS 14.|
 | [Введение в iOS 13](~/ios/platform/ios13/index.md) | В этом документе описывается Xamarin. iOS 13.|
 | [Введение в iOS 12](~/ios/platform/introduction-to-ios12/index.md) | В этом документе описываются функции iOS 12, доступные для использования при создании приложений Xamarin. iOS.|
 | [Введение в iOS 11](~/ios/platform/introduction-to-ios11/index.md) | В этом документе описываются новые и обновленные функции iOS 11 и Xcode 9, такие как ARKit, Core ML, ядра NFC, перетаскивание, Мапкит, Пдфкит, SiriKit и концепция. Он содержит ссылки на руководства, описывающие использование этих функций с Xamarin. iOS. |
