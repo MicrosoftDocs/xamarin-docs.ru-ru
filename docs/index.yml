@@ -9,12 +9,12 @@ metadata:
   author: conceptdev
   ms.author: crdun
   ms.date: 09/26/2019
-  ms.openlocfilehash: c28f849f772bb496b526552745a0aea1c2e08e62
-  ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+  ms.openlocfilehash: 161b1570f668ed13f235b72fca064b1349e25d8b
+  ms.sourcegitcommit: 0c45e3f810947e3d43223aa01bf3e43a0defca65
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "76940710"
+  ms.lasthandoff: 09/21/2020
+  ms.locfileid: "90843542"
 highlightedContent:
   items:
   - title: Настройка и установка
@@ -56,8 +56,8 @@ productDirectory:
     links:
     - url: ~/ios/get-started/hello-ios/hello-ios-quickstart.md
       text: Создание приложения iOS
-    - url: ~/ios/platform/ios13/index.md
-      text: iOS 13
+    - url: ~/ios/platform/ios14/index.md
+      text: iOS 14
     - url: ~/ios/index.yml
       text: Вся документация по iOS
   - title: Mac
@@ -93,13 +93,13 @@ conceptualContent:
     - text: Макет "стопка"
       url: ~/get-started/tutorials/stacklayout/index.yml
       itemType: tutorial
-    - text: Метки
+    - text: Подписи
       url: ~/get-started/tutorials/label/index.yml
       itemType: tutorial
     - text: Кнопки
       url: ~/get-started/tutorials/button/index.yml
       itemType: tutorial
-    - text: Изображения
+    - text: Образы
       url: ~/get-started/tutorials/image/index.yml
       itemType: tutorial
     footerLink:

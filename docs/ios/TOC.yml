@@ -56,7 +56,7 @@
           items:
             - name: Xamarin для разработчиков Objective-C
               href: get-started/objective-c-developers/index.md
-            - name: 'Начальное руководство по C# для разработчиков Objective-C'
+            - name: Начальное руководство по C# для разработчиков Objective-C
               href: get-started/objective-c-developers/primer.md
     - name: Принципы работы приложений
       items:
@@ -244,6 +244,12 @@
       items:
         - name: Обзор
           href: platform/index.md
+        - name: iOS 14
+          items:
+            - name: "Введение в iOS\_14"
+              href: platform/ios14/index.md
+            - name: Начало работы
+              href: platform/ios14/get-started.md
         - name: iOS 13
           items:
             - name: "Введение в iOS\_13"
