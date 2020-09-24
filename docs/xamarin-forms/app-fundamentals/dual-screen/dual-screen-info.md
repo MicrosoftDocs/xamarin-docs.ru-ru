@@ -10,16 +10,14 @@ ms.date: 05/19/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e1f0ee6b3c509fcdb15653789866a9ec2dc88791
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 8081eb604da0c9d2de07ee17abe05030efdc1005
+ms.sourcegitcommit: 69bd0fdc698c9b0c0d73217776d7084f32ae88ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918210"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832298"
 ---
 # <a name="no-locxamarinforms-dualscreeninfo-helper-class"></a>Xamarin.Forms Вспомогательный класс DualScreenInfo
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
 
