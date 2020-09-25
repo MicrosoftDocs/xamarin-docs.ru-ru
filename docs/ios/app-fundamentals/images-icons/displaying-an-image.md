@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 04/24/2018
-ms.openlocfilehash: f9de09065d7c26c9ae98ef664be63599becb4da5
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: a7bc2b87e267e78d841217b7860e5d54c046b788
+ms.sourcegitcommit: d7c09c6cc2f479b8f14910ad2d20ec76800cd9c7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997453"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91248143"
 ---
 # <a name="displaying-an-image-in-xamarinios"></a>Отображение изображения в Xamarin. iOS
 
@@ -100,9 +100,9 @@ MonkeyImage.Image = UIImage.FromBundle ("PurpleMonkey");
 
 Например, если разработчик включает `MonkeyIcon.pdf` файл в качестве вектора каталога активов с разрешением 150px x 150px, следующие ресурсы растрового изображения будут включены в окончательный набор приложений при компиляции:
 
-- `MonkeyIcon@1x.png`-150px x 150px разрешение.
-- `MonkeyIcon@2x.png`-300 пикселей x 300 пикселей разрешение.
-- `MonkeyIcon@3x.png`-450px x 450px разрешение.
+- `MonkeyIcon@1x.png` -150px x 150px разрешение.
+- `MonkeyIcon@2x.png` -300 пикселей x 300 пикселей разрешение.
+- `MonkeyIcon@3x.png` -450px x 450px разрешение.
 
 При использовании векторных изображений PDF в каталогах активов следует учитывать следующее:
 
@@ -159,9 +159,9 @@ if (MyIcon.Image != null) {
 
 Существует три возможных параметра `UIImage.RenderMode` с помощью `UIImageRenderingMode` перечисления:
 
-- `AlwaysOriginal`— Принудительное отображение изображения в качестве исходного файла исходного изображения без каких-либо изменений.
-- `AlwaysTemplate`— Принудительное отображение изображения в виде шаблона путем выделения цветом пикселов указанного `Tint` цвета.
-- `Automatic`— Отображает изображение в виде шаблона или исходного файла в зависимости от среды, в которой он используется. Например, если изображение используется в `UIToolBar` , `UINavigationBar` `UITabBar` или `UISegmentControl` будет рассматриваться как шаблон.
+- `AlwaysOriginal` — Принудительное отображение изображения в качестве исходного файла исходного изображения без каких-либо изменений.
+- `AlwaysTemplate` — Принудительное отображение изображения в виде шаблона путем выделения цветом пикселов указанного `Tint` цвета.
+- `Automatic` — Отображает изображение в виде шаблона или исходного файла в зависимости от среды, в которой он используется. Например, если изображение используется в `UIToolBar` , `UINavigationBar` `UITabBar` или `UISegmentControl` будет рассматриваться как шаблон.
 
 ## <a name="adding-new-assets-collections"></a>Добавление новых коллекций активов
 
@@ -207,7 +207,7 @@ TabBarItem.Image = UIImage.FromBundle ("MyImage");
 TabBarItem.Image = UIImage.FromBundle ("MyImage");
 ```
 
-Для любого другого формата изображения Включите расширение с именем. Например.
+Для любого другого формата изображения Включите расширение с именем. Пример:
 
 ```csharp
 TabBarItem.Image = UIImage.FromBundle ("MyImage.jpg");
@@ -215,7 +215,7 @@ TabBarItem.Image = UIImage.FromBundle ("MyImage.jpg");
 
 Дополнительные сведения о значках и изображениях см. в документации Apple о [пользовательских значках и руководстве по созданию изображений](https://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/IconsImages/IconsImages.html).
 
-## <a name="displaying-an-image-in-a-storyboards"></a>Отображение изображения в раскадровках
+## <a name="displaying-an-image-in-a-storyboard"></a>Отображение изображения в раскадровке
 
 После добавления образа в проект Xamarin. iOS с помощью каталогов активов его можно легко отобразить в раскадровке с помощью элемента `UIImageView` в конструкторе iOS. Например, если был добавлен следующий ресурс изображения:
 
