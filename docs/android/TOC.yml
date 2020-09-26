@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Приступая к работе
+    - name: Начало работы
       href: get-started/index.md
       expanded: true
       items:
@@ -33,14 +33,14 @@
           items:
             - name: "Часть\_1. Краткое руководство"
               href: get-started/hello-android/hello-android-quickstart.md
-            - name: "Часть\_2. Глубокое погружение"
+            - name: "Часть\_2. Подробные сведения"
               href: get-started/hello-android/hello-android-deepdive.md
         - name: 'Привет, Android (несколько экранов)'
           href: get-started/hello-android-multiscreen/index.md
           items:
             - name: "Часть\_1. Краткое руководство"
               href: get-started/hello-android-multiscreen/hello-android-multiscreen-quickstart.md
-            - name: "Часть\_2. Глубокое погружение"
+            - name: "Часть\_2. Подробные сведения"
               href: get-started/hello-android-multiscreen/hello-android-multiscreen-deepdive.md
         - name: Xamarin для разработчиков Java
           href: get-started/java-developers.md
@@ -103,7 +103,7 @@
           href: app-fundamentals/cpu-architectures.md
         - name: Обработка поворота
           href: app-fundamentals/handling-rotation.md
-        - name: Звук
+        - name: звук;
           href: app-fundamentals/android-audio.md
         - name: Уведомления
           href: app-fundamentals/notifications/index.md
@@ -145,7 +145,7 @@
               href: user-interface/android-designer/diagnostics.md
             - name: Анализаторы диагностики Android Designer
               href: user-interface/android-designer/diagnostic-analyzers.md
-        - name: Тема материала
+        - name: Material Theme
           href: user-interface/material-theme.md
         - name: Профиль пользователя
           href: user-interface/user-profile.md
@@ -217,7 +217,7 @@
               href: user-interface/controls/card-view.md
             - name: EditText
               href: user-interface/controls/edit-text.md
-            - name: Коллекция
+            - name: Коллекции
               href: user-interface/controls/gallery.md
             - name: Панель переходов
               href: user-interface/controls/navigation-bar.md
@@ -226,7 +226,7 @@
               items:
                 - name: Управляющий элемент выбора даты.
                   href: user-interface/controls/pickers/date-picker.md
-                - name: Выбор времени
+                - name: Средство выбора времени
                   href: user-interface/controls/pickers/time-picker.md
             - name: Всплывающее меню
               href: user-interface/controls/popup-menu.md
@@ -234,11 +234,11 @@
               href: user-interface/controls/ratingbar.md
             - name: Spinner
               href: user-interface/controls/spinner.md
-            - name: Параметр
+            - name: Коммутатор
               href: user-interface/controls/switch.md
             - name: TextureView
               href: user-interface/controls/texture-view.md
-            - name: Toolbar
+            - name: Панель инструментов
               href: user-interface/controls/tool-bar/index.md
               items:
                 - name: Замена панели действий
@@ -271,7 +271,7 @@
         - name: Проверка подлинности по отпечаткам
           href: platform/fingerprint-authentication/index.md
           items:
-            - name: Начало работы
+            - name: Приступая к работе
               href: platform/fingerprint-authentication/get-started.md
             - name: Сканирование отпечатков
               href: platform/fingerprint-authentication/scanning.md
@@ -287,7 +287,7 @@
           href: platform/android-job-scheduler.md
         - name: Диспетчер заданий Firebase
           href: platform/firebase-job-dispatcher.md
-        - name: Фрагменты
+        - name: Fragments
           href: platform/fragments/index.md
           items:
             - name: Реализация фрагментов
@@ -339,9 +339,9 @@
         - name: Карты и расположение
           href: platform/maps-and-location/index.md
           items:
-            - name: Местоположение
+            - name: Расположение
               href: platform/maps-and-location/location.md
-            - name: Карты
+            - name: Maps
               href: platform/maps-and-location/maps/index.md
               items:
                 - name: Приложение карт
@@ -359,7 +359,7 @@
               href: platform/java-integration/android-callable-wrappers.md
             - name: Работа с JNI
               href: platform/java-integration/working-with-jni.md
-            - name: 'Перенос Java в C#'
+            - name: Перенос Java в C#
               href: platform/java-integration/porting-java-to-csharp.md
         - name: Привязка библиотеки Java
           href: platform/binding-java-library/index.md
@@ -391,7 +391,7 @@
     - name: Xamarin.Essentials
       href: ~/essentials/index.md?context=xamarin/android
       items:
-        - name: Начало работы
+        - name: Приступая к работе
           href: ~/essentials/get-started.md?context=xamarin/android
         - name: Поддержка платформы и компонентов
           href: ~/essentials/platform-feature-support.md?context=xamarin/android
@@ -504,7 +504,7 @@
         - name: Обмен сообщениями Google
           href: data-cloud/google-messaging/index.md
           items:
-            - name: Обмен сообщениями Firebase Cloud
+            - name: Firebase Cloud Messaging
               href: data-cloud/google-messaging/firebase-cloud-messaging.md
             - name: Пошаговое руководство по уведомлениям FCM
               href: data-cloud/google-messaging/remote-notifications-with-fcm.md
@@ -526,6 +526,12 @@
           items:
             - name: Процесс сборки
               href: deploy-test/building-apps/build-process.md
+            - name: Элементы сборки
+              href: deploy-test/building-apps/build-items.md
+            - name: Свойства сборки
+              href: deploy-test/building-apps/build-properties.md
+            - name: Цели сборки
+              href: deploy-test/building-apps/build-targets.md
             - name: Создание пакетов APK для конкретного ABI
               href: deploy-test/building-apps/abi-specific-apks.md
         - name: Эмулятор командной строки
@@ -586,7 +592,7 @@
     - name: Дополнительные понятия и внутренние компоненты
       href: internals/index.md
       items:
-        - name: Архитектура
+        - name: Architecture
           href: internals/architecture.md
         - name: Доступные сборки
           href: ~/cross-platform/internals/available-assemblies.md?context=xamarin/android
@@ -601,7 +607,7 @@
       items:
         - name: Советы по устранению неполадок
           href: troubleshooting/troubleshooting.md
-        - name: Вопросы и ответы
+        - name: Часто задаваемые вопросы
           href: troubleshooting/questions/index.md
           items:
             - name: Какие пакеты SDK для Android следует установить?
@@ -643,7 +649,7 @@
     - name: Wear
       href: wear/index.md
       items:
-        - name: Приступая к работе
+        - name: Начало работы
           href: wear/get-started/index.md
           items:
             - name: Введение в Android Wear
