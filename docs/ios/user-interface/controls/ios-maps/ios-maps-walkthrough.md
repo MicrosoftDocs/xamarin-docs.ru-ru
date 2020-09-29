@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 59ad6a11eecf629fc2a815e21a29493f4a1a1397
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 56306b04b57295a3625804bdbbb6a9810675be2b
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86932227"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436770"
 ---
 # <a name="annotations-and-overlays-in-xamarinios"></a>Заметки и наложенные наложения в Xamarin. iOS
 
@@ -20,7 +20,7 @@ ms.locfileid: "86932227"
 
  [![Пример приложения Мапкит](ios-maps-walkthrough-images/00-map-overlay.png)](ios-maps-walkthrough-images/00-map-overlay.png#lightbox)
 
-Полный код можно найти в [примере пошагового руководства по картам](https://docs.microsoft.com/samples/xamarin/ios-samples/mapswalkthrough).
+Полный код можно найти в [примере пошагового руководства по картам](/samples/xamarin/ios-samples/mapswalkthrough).
 
 Начнем с создания нового **пустого проекта iOS**и присвоив ему соответствующее имя. Начнем с добавления кода в наш контроллер представления для отображения MapView, а затем создадим новые классы для нашего Мапделегате и пользовательские заметки. Для этого выполните следующие действия:
 
@@ -80,7 +80,7 @@ ms.locfileid: "86932227"
 
     ```
 
-1. Создайте новый экземпляр `MapDelegate` и присвойте его параметру `Delegate` объекта `MKMapView` . Опять же, мы будем реализовывать `MapDelegate` чуть ниже.
+1. Создайте новый экземпляр  `MapDelegate` и присвойте его параметру `Delegate` объекта `MKMapView` . Опять же, мы будем реализовывать `MapDelegate` чуть ниже.
 
     ```csharp
     mapDelegate = new MapDelegate ();
@@ -280,12 +280,12 @@ ms.locfileid: "86932227"
 
  [![Коснитесь заметки, и появится изображение Остине](ios-maps-walkthrough-images/01-map-image.png)](ios-maps-walkthrough-images/01-map-image.png#lightbox)
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье мы рассмотрели, как добавить заметку к карте, а также как добавить наложение для указанного многоугольника. Мы также показали, как добавить поддержку сенсорного ввода в заметку для анимации изображения на карте.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример пошагового руководства по картам](https://docs.microsoft.com/samples/xamarin/ios-samples/mapswalkthrough)
-- [Пример демонстрационной версии Map](https://docs.microsoft.com/samples/xamarin/ios-samples/mapdemo)
+- [Пример пошагового руководства по картам](/samples/xamarin/ios-samples/mapswalkthrough)
+- [Пример демонстрационной версии Map](/samples/xamarin/ios-samples/mapdemo)
 - [iOS Maps](~/ios/user-interface/controls/ios-maps/index.md)

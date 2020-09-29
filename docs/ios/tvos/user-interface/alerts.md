@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 1274fc409cd20b974c44fecd87b6d1b175591710
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 83831b71ebb349873b2a77bbd77ba08e08002d4a
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86930173"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436605"
 ---
 # <a name="working-with-tvos-alerts-in-xamarin"></a>Работа с оповещениями tvOS в Xamarin
 
@@ -160,7 +160,7 @@ alert.AddAction(UIAlertAction.Create("OK",UIAlertActionStyle.Default,(actionOK) 
 controller.PresentViewController(alert,true,null);
 ```
 
-`AddTextField`Метод добавляет в предупреждение новое текстовое поле, которое затем можно настроить, задав такие свойства, как текст заполнителя (текст, отображаемый при пустом поле), текстовое значение по умолчанию и тип клавиатуры. Например.
+`AddTextField`Метод добавляет в предупреждение новое текстовое поле, которое затем можно настроить, задав такие свойства, как текст заполнителя (текст, отображаемый при пустом поле), текстовое значение по умолчанию и тип клавиатуры. Пример:
 
 ```csharp
 // Initialize field
@@ -192,7 +192,7 @@ alert.AddTextField ((textField) => {
 
 ## <a name="alert-view-controller-helper-class"></a>Вспомогательный класс контроллера представления предупреждений
 
-Поскольку отображение простых и распространенных типов оповещений с помощью `UIAlertViewController` может привести к созданию повторяющегося кода, можно использовать вспомогательный класс, чтобы уменьшить количество повторяющихся кодов. Например.
+Поскольку отображение простых и распространенных типов оповещений с помощью `UIAlertViewController` может привести к созданию повторяющегося кода, можно использовать вспомогательный класс, чтобы уменьшить количество повторяющихся кодов. Пример:
 
 ```csharp
 using System;
@@ -369,7 +369,7 @@ partial void DisplayTextInputAlert (Foundation.NSObject sender) {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

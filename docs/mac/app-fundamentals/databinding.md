@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 2f9b4dfac4909a5c68b6c53fc913925ee95313a3
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 688febbb8b2aae3ae9dff45ea06ef3cf3809641a
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997518"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436542"
 ---
 # <a name="data-binding-and-key-value-coding-in-xamarinmac"></a>Привязка данных и кодирование значений ключа в Xamarin. Mac
 
@@ -70,7 +70,7 @@ namespace MacDatabinding
 
 `[Register("PersonModel")]`Во-первых, атрибут регистрирует класс и предоставляет его цели — C. Затем класс должен наследовать от `NSObject` (или от подкласса, который наследует от `NSObject` ), в результате чего добавляется несколько базовых методов, позволяющих КВК соответствовать классу. Далее `[Export("Name")]` атрибут предоставляет `Name` свойство и определяет значение ключа, которое впоследствии будет использоваться для доступа к свойству с помощью методов КВК и кво.
 
-Наконец, чтобы иметь возможность принимать изменения, внесенные в ключ, в значение свойства, метод доступа должен заключить изменения в его значение `WillChangeValue` в `DidChangeValue` вызовах методов и (указав тот же ключ, что и `Export` атрибут).  Например.
+Наконец, чтобы иметь возможность принимать изменения, внесенные в ключ, в значение свойства, метод доступа должен заключить изменения в его значение `WillChangeValue` в `DidChangeValue` вызовах методов и (указав тот же ключ, что и `Export` атрибут).  Пример:
 
 ```csharp
 set {
@@ -159,7 +159,7 @@ Person.SetValueForKey(new NSString("Jane Doe"), new NSString("Name"));
 
 ### <a name="observing-value-changes"></a>Наблюдение за изменениями значений
 
-С помощью отслеживания "ключ-значение" (кво) можно присоединить наблюдатель к конкретному ключу класса, совместимого с КВК, и получать уведомления каждый раз, когда изменяется значение этого ключа (с помощью методов КВК или прямого доступа к заданному свойству в коде C#). Например.
+С помощью отслеживания "ключ-значение" (кво) можно присоединить наблюдатель к конкретному ключу класса, совместимого с КВК, и получать уведомления каждый раз, когда изменяется значение этого ключа (с помощью методов КВК или прямого доступа к заданному свойству в коде C#). Пример:
 
 ```csharp
 // Watch for the name value changing
@@ -173,7 +173,7 @@ Person.AddObserver ("Name", NSKeyValueObservingOptions.New, (sender) => {
 
 Дополнительные сведения см. [в статье Введение в знакомство с руководством по программированию](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i)для Apple.
 
-## <a name="data-binding"></a>Привязка данных
+## <a name="data-binding"></a>привязка данных,
 
 В следующих разделах показано, как можно использовать кодирование значений и ключ-значение для привязки данных к элементам пользовательского интерфейса в Interface Builder Xcode вместо чтения и записи значений с помощью кода C#. Таким образом, _модель данных_ отделяется от представлений, используемых для их отображения, что делает приложение Xamarin. Mac более гибким и удобным в обслуживании. Кроме того, значительно сокращается объем кода, который должен быть написан.
 
@@ -371,10 +371,10 @@ public void SetPeople(NSMutableArray array) {
 
 Они позволяют контроллерам запрашивать и изменять отображаемые данные. Как и представленное `NSArray` выше, они имеют очень специфичное соглашение об именовании (отличающееся от стандартных соглашений об именовании C#):
 
-- `addObject:`— Добавляет объект в массив.
-- `insertObject:in{class_name}ArrayAtIndex:`— Где `{class_name}` — это имя класса. Этот метод вставляет объект в массив по заданному индексу.
-- `removeObjectFrom{class_name}ArrayAtIndex:`— Где `{class_name}` — это имя класса. Этот метод удаляет объект в массиве по указанному индексу.
-- `set{class_name}Array:`— Где `{class_name}` — это имя класса. Этот метод позволяет заменить существующий объект на новый.
+- `addObject:` — Добавляет объект в массив.
+- `insertObject:in{class_name}ArrayAtIndex:` — Где `{class_name}` — это имя класса. Этот метод вставляет объект в массив по заданному индексу.
+- `removeObjectFrom{class_name}ArrayAtIndex:` — Где `{class_name}` — это имя класса. Этот метод удаляет объект в массиве по указанному индексу.
+- `set{class_name}Array:` — Где `{class_name}` — это имя класса. Этот метод позволяет заменить существующий объект на новый.
 
 Внутри этих методов мы упакованы изменения в массив в `WillChangeValue` и `DidChangeValue` сообщениях для обеспечения соответствия кво.
 
@@ -602,7 +602,7 @@ public override void AwakeFromNib ()
 3. Выберите **ячейку табличное представление** в столбце **сотрудник** . В **инспекторе привязок** в разделе **значение** турндовн выберите **Привязка к** и **представление ячейки таблицы**. Введите `objectValue.Name` для **пути к ключу модели**:
 
     [![Задание пути к ключу модели](databinding-images/table09.png "Задание пути к ключу модели")](databinding-images/table09-large.png#lightbox)
-4. `objectValue`является текущим `PersonModel` в массиве, управляемом контроллером массива.
+4. `objectValue` является текущим `PersonModel` в массиве, управляемом контроллером массива.
 5. Выберите **ячейку табличное представление** в столбце « **профессия** ». В **инспекторе привязок** в разделе **значение** турндовн выберите **Привязка к** и **представление ячейки таблицы**. Введите `objectValue.Occupation` для **пути к ключу модели**:
 
     [![Задание пути к ключу модели](databinding-images/table10.png "Задание пути к ключу модели")](databinding-images/table10-large.png#lightbox)
@@ -724,7 +724,7 @@ public override void AwakeFromNib ()
 3. Выберите **ячейку табличное представление** в столбце **сотрудник** . В **инспекторе привязок** в разделе **значение** турндовн выберите **Привязка к** и **представление ячейки таблицы**. Введите `objectValue.Name` для **пути к ключу модели**:
 
     [![Ввод пути к ключу модели](databinding-images/outline09.png "Ввод пути к ключу модели")](databinding-images/outline09-large.png#lightbox)
-4. `objectValue`является текущим `PersonModel` в массиве, управляемом контроллером дерева.
+4. `objectValue` является текущим `PersonModel` в массиве, управляемом контроллером дерева.
 5. Выберите **ячейку табличное представление** в столбце « **профессия** ». В **инспекторе привязок** в разделе **значение** турндовн выберите **Привязка к** и **представление ячейки таблицы**. Введите `objectValue.Occupation` для **пути к ключу модели**:
 
     [![Ввод пути к ключу модели](databinding-images/outline10.png "Ввод пути к ключу модели")](databinding-images/outline10-large.png#lightbox)
@@ -891,8 +891,8 @@ For more information on working with Collection Views, please see our [Collectio
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Раскадровка Макдатабиндинг (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macdatabinding-storyboard)
-- [Макдатабиндинг XIB (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macdatabinding-xibs)
+- [Раскадровка Макдатабиндинг (пример)](/samples/xamarin/mac-samples/macdatabinding-storyboard)
+- [Макдатабиндинг XIB (пример)](/samples/xamarin/mac-samples/macdatabinding-xibs)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Стандартные элементы управления](~/mac/user-interface/standard-controls.md)
 - [Табличные представления](~/mac/user-interface/table-view.md)

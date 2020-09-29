@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: 03e6a513f367be4c19f925427c8a896b1fc87107
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: eedf76a4ecc566a18f4d4b7d5c4f1b63642b8e25
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86996335"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437187"
 ---
 # <a name="auto-sizing-row-height-in-xamarinios"></a>Автоматическое изменение высоты строки в Xamarin. iOS
 
@@ -22,7 +22,7 @@ ms.locfileid: "86996335"
 
 ## <a name="cell-layout-in-the-ios-designer"></a>Макет ячеек в конструкторе iOS
 
-Откройте раскадровку для табличного представления, для которой нужно Автоподбор размера строки в конструкторе iOS, выберите *прототип* ячейки и разработайте макет ячейки. Например.
+Откройте раскадровку для табличного представления, для которой нужно Автоподбор размера строки в конструкторе iOS, выберите *прототип* ячейки и разработайте макет ячейки. Пример:
 
 [![Конструкция прототипа ячейки](autosizing-row-height-images/table01.png)](autosizing-row-height-images/table01.png#lightbox)
 
@@ -49,11 +49,11 @@ ms.locfileid: "86996335"
 > [!IMPORTANT]
 > Если таблица содержит более одного типа ячеек (**прототип**), необходимо убедиться, что каждый тип имеет уникальное `Identifier` значение, чтобы автоматическое изменение размера строк работало.
 
-Для каждого элемента прототипа ячейки присвойте **имя** , чтобы предоставить его коду C#. Например.
+Для каждого элемента прототипа ячейки присвойте **имя** , чтобы предоставить его коду C#. Пример:
 
 [![Назначение имени для предоставления его коду C#](autosizing-row-height-images/table05.png)](autosizing-row-height-images/table05.png#lightbox)
 
-Затем добавьте пользовательский класс для `UITableViewController` , `UITableView` и `UITableCell` (прототип). Например.
+Затем добавьте пользовательский класс для `UITableViewController` , `UITableView` и `UITableCell` (прототип). Пример:
 
 [![Добавление пользовательского класса для Уитаблевиевконтроллер, Уитаблевиев и Уитаблецелл](autosizing-row-height-images/table06.png)](autosizing-row-height-images/table06.png#lightbox)
 
@@ -65,7 +65,7 @@ ms.locfileid: "86996335"
 
 ## <a name="enabling-auto-resizing-height"></a>Включение автоподбора высоты
 
-В представлении DataSource ( `UITableViewDatasource` ) или Source () нашего табличного представления `UITableViewSource` , когда мы выведем из очереди ячейку, нам нужно использовать тот `Identifier` , который мы определили в конструкторе. Например.
+В представлении DataSource ( `UITableViewDatasource` ) или Source () нашего табличного представления `UITableViewSource` , когда мы выведем из очереди ячейку, нам нужно использовать тот `Identifier` , который мы определили в конструкторе. Пример:
 
 ```csharp
 public string CellID {
@@ -87,7 +87,7 @@ public override UITableViewCell GetCell (UITableView tableView, Foundation.NSInd
 }
 ```
 
-По умолчанию табличное представление будет настроено для автоподбора высоты строки. Чтобы убедиться в этом, `RowHeight` свойству следует присвоить значение `UITableView.AutomaticDimension` . Также необходимо задать `EstimatedRowHeight` свойство в нашем `UITableViewController` . Например.
+По умолчанию табличное представление будет настроено для автоподбора высоты строки. Чтобы убедиться в этом, `RowHeight` свойству следует присвоить значение `UITableView.AutomaticDimension` . Также необходимо задать `EstimatedRowHeight` свойство в нашем `UITableViewController` . Пример:
 
 ```csharp
 public override void ViewWillAppear (bool animated)
@@ -105,10 +105,10 @@ public override void ViewWillAppear (bool animated)
 
 Эта оценка не должна быть точной, просто приблизительная оценка средней высоты каждой строки в табличном представлении.
 
-При использовании этого кода при запуске приложения каждая строка будет сжиматься и увеличиваться в зависимости от высоты последней метки в прототипе ячейки. Например.
+При использовании этого кода при запуске приложения каждая строка будет сжиматься и увеличиваться в зависимости от высоты последней метки в прототипе ячейки. Пример:
 
 [![Пример выполнения таблицы](autosizing-row-height-images/table07.png)](autosizing-row-height-images/table07.png#lightbox)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Гровровтабле (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/growrowtable)
+- [Гровровтабле (пример)](/samples/xamarin/ios-samples/growrowtable)

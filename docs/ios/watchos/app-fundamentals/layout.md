@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 345c05a439423474644ac64ef86f9adc580ab0b1
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 1fdb7a10bd767085ba8758fa2e026cc36c93639a
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937726"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436919"
 ---
 # <a name="working-with-watchos-layout-in-xamarin"></a>Работа с макетом watchOS в Xamarin
 
@@ -54,9 +54,9 @@ ms.locfileid: "86937726"
 
 ![Предоставление пропорционального значения и смещения](layout-images/button-attributes.png)
 
-### <a name="group"></a>Группа
+### <a name="group"></a>Group
 
-`WKInterfaceGroup`— Это простой контейнер макета, который можно настроить для упорядочения элементов управления по вертикали или по горизонтали. Он включает интервал между элементами управления по умолчанию, но можно изменить интервалы (и инсетс) в инспекторе **атрибутов** .
+`WKInterfaceGroup` — Это простой контейнер макета, который можно настроить для упорядочения элементов управления по вертикали или по горизонтали. Он включает интервал между элементами управления по умолчанию, но можно изменить интервалы (и инсетс) в инспекторе **атрибутов** .
 
 ![Изменение расстояния и инсетс в инспекторе атрибутов](layout-images/group-attributes.png)
 
@@ -79,6 +79,6 @@ ms.locfileid: "86937726"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Ватчкиткаталог (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog)
+- [Ватчкиткаталог (пример)](/samples/xamarin/ios-samples/watchos-watchkitcatalog)
 - [Справочник по макету Apple](https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/WatchHumanInterfaceGuidelines/Layout.html)
 - [Справочник по цветовой & Apple](https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/WatchHumanInterfaceGuidelines/ColorandTypography.html)

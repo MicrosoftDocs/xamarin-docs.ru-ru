@@ -1,22 +1,22 @@
 ---
 title: Создание приложения Xamarin. iOS с помощью API элементов
-description: Эта статья посвящена информации, приведенной в статье Общие сведения о диалоговом окне с ограниченным касанием. В нем представлено пошаговое руководство, в котором показано, как использовать «некасание» (MT. D). API элементов, чтобы быстро приступить к созданию приложения с помощью MT. Четырехмерного.
+description: Эта статья посвящена информации, приведенной в статье Общие сведения о диалоговом окне с ограниченным касанием. В нем представлено пошаговое руководство, в котором показано, как использовать «некасание» (MT. D). API элементов, чтобы быстро приступить к созданию приложения с помощью MT. D.
 ms.prod: xamarin
 ms.assetid: F1124734-DF44-F1F3-0832-46F52A788CDC
 ms.technology: xamarin-ios
 ms.date: 11/25/2015
 author: davidortinau
 ms.author: daortin
-ms.openlocfilehash: 3e1e7a9c5fb01f73cddb4cab3a95aa421bd8c3fb
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: b95066379e7b6845bf1265b43681aec83b130aa4
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86933371"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436756"
 ---
 # <a name="creating-a-xamarinios-application-using-the-elements-api"></a>Создание приложения Xamarin. iOS с помощью API элементов
 
-_Эта статья посвящена информации, приведенной в статье Общие сведения о диалоговом окне с ограниченным касанием. В нем представлено пошаговое руководство, в котором показано, как использовать «некасание» (MT. D). API элементов, чтобы быстро приступить к созданию приложения с помощью MT. Четырехмерного._
+_Эта статья посвящена информации, приведенной в статье Общие сведения о диалоговом окне с ограниченным касанием. В нем представлено пошаговое руководство, в котором показано, как использовать «некасание» (MT. D). API элементов, чтобы быстро приступить к созданию приложения с помощью MT. D._
 
 В этом пошаговом руководстве мы будем использовать MT. D элементов API для создания стиля приложения "основной/подробности", отображающего список задач. Когда пользователь нажимает **+** кнопку на панели навигации, в таблицу добавляется новая строка для задачи. Выбор строки приведет к переходу на экран сведений, который позволяет обновить описание задачи и дату выполнения, как показано ниже:
 
@@ -28,7 +28,7 @@ _Эта статья посвящена информации, приведенн
 
 ## <a name="elements-api-walkthrough"></a>Пошаговое руководство по API элементов
 
-В статье [Общие сведения о диалоговом окне с ограниченным касанием](~/ios/user-interface/monotouch.dialog/index.md) мы получили полное представление о различных частях MT. Четырехмерного. Давайте будем использовать API Elements, чтобы объединить их в приложение.
+В [диалоговом окне Введение в Бескасание](~/ios/user-interface/monotouch.dialog/index.md) мы получили основательное представление о различных частях MT. D. Давайте будем использовать API Elements, чтобы объединить их в приложение.
 
 ## <a name="setting-up-the-multi-screen-application"></a>Настройка приложения для нескольких экранов
 
@@ -38,9 +38,9 @@ _Эта статья посвящена информации, приведенн
 
 1. Создание класса `UINavigationController.`
 1. Создание класса `DialogViewController.`
-1. Добавьте в `DialogViewController` качестве корня`UINavigationController.` 
+1. Добавьте в `DialogViewController` качестве корня  `UINavigationController.` 
 1. Добавьте в `RootElement``DialogViewController.`
-1. Добавьте `Sections` и `Elements` в`RootElement.` 
+1. Добавьте `Sections` и  `Elements` в  `RootElement.` 
 
 ### <a name="using-a-uinavigationcontroller"></a>Использование Уинавигатионконтроллер
 
@@ -143,7 +143,7 @@ public class Task
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Мтдвалксраугх (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/mtdwalkthrough)
+- [Мтдвалксраугх (пример)](/samples/xamarin/ios-samples/mtdwalkthrough)
 - [Введение в бескасание. Dialog](~/ios/user-interface/monotouch.dialog/index.md)
 - [Пошаговое руководство по API отражения](~/ios/user-interface/monotouch.dialog/reflection-api-walkthrough.md)
 - [Пошаговое руководство по элементу JSON](~/ios/user-interface/monotouch.dialog/json-element-walkthrough.md)

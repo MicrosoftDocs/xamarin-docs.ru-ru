@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 ms.date: 11/25/2015
 author: davidortinau
 ms.author: daortin
-ms.openlocfilehash: 8ad1bf746c129cfb5cfbc8b3e04b871224df486d
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: c19cf373a89798703224574fe13724dfbade33bb
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936582"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436687"
 ---
 # <a name="using-json-to-create-a-user-interface-in-xamarinios"></a>Использование JSON для создания пользовательского интерфейса в Xamarin. iOS
 
@@ -167,7 +167,7 @@ _rootElement = new RootElement ("Json Example") {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Мтджсондемо (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/mtdjsondemo)
+- [Мтджсондемо (пример)](/samples/xamarin/ios-samples/mtdjsondemo)
 - [Введение в бескасание. Dialog](~/ios/user-interface/monotouch.dialog/index.md)
 - [Пошаговое руководство по API элементов](~/ios/user-interface/monotouch.dialog/elements-api-walkthrough.md)
 - [Пошаговое руководство по API отражения](~/ios/user-interface/monotouch.dialog/reflection-api-walkthrough.md)

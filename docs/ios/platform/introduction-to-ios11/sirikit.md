@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/07/2017
-ms.openlocfilehash: 48ea94b62ba01f32699bf595bc004de133371468
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 7bc102069d673b9459c863282b0423952c8fa59d
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574576"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437322"
 ---
 # <a name="sirikit-updates-in-ios-11"></a>Обновления SiriKit в iOS 11
 
@@ -49,7 +49,7 @@ SiriKit в iOS 11 добавляет новые и обновленные дом
 
 - Иметь заголовок и поле содержимого.
 
-Задачи и заметки можно организовывать в группы. В оставшейся части этого раздела описывается, как реализовать этот новый домен с помощью SiriKit, используя [Пример Таскснотес SiriKit](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-sirikitsample).
+Задачи и заметки можно организовывать в группы. В оставшейся части этого раздела описывается, как реализовать этот новый домен с помощью SiriKit, используя [Пример Таскснотес SiriKit](/samples/xamarin/ios-samples/ios11-sirikitsample).
 
 ### <a name="how-to-process-a-sirikit-request"></a>Обработка запроса SiriKit
 
@@ -68,10 +68,10 @@ SiriKit в iOS 11 добавляет новые и обновленные дом
 
 В качестве примера для `IINCreateTaskListIntent` интерфейса требуется метод `HandleCreateTaskList` . Существует четыре необязательных метода, которые обеспечивают больший контроль над взаимодействием Siri:
 
-- `ResolveTitle`— Проверяет заголовок, задает заголовок по умолчанию (при необходимости) или сигнализирует, что данные не являются обязательными.
-- `ResolveTaskTitles`— Проверяет список задач, произнесенных пользователем.
-- `ResolveGroupName`— Проверяет имя группы, выбирает группу по умолчанию или сообщает о том, что данные не являются обязательными.
-- `ConfirmCreateTaskList`— Проверяет, может ли код выполнять запрошенную операцию, но не выполняет его (только `Handle*` методы должны изменять данные).
+- `ResolveTitle` — Проверяет заголовок, задает заголовок по умолчанию (при необходимости) или сигнализирует, что данные не являются обязательными.
+- `ResolveTaskTitles` — Проверяет список задач, произнесенных пользователем.
+- `ResolveGroupName` — Проверяет имя группы, выбирает группу по умолчанию или сообщает о том, что данные не являются обязательными.
+- `ConfirmCreateTaskList` — Проверяет, может ли код выполнять запрошенную операцию, но не выполняет его (только `Handle*` методы должны изменять данные).
 
 ### <a name="handle-the-intent"></a>Обработайте намерение
 
@@ -94,18 +94,18 @@ SiriKit в iOS 11 добавляет новые и обновленные дом
 
 Обязательные `Handle*` и необязательные `Confirm*` методы указывают код ответа, устанавливая значение для объекта, передаваемого в обработчик завершения. Ответы берутся из `INCreateTaskListIntentResponseCode` перечисления:
 
-- `Ready`— Возвращает на этапе подтверждения (IE. из `Confirm*` метода, но не из `Handle*` метода).
-- `InProgress`— Используется для длительных задач (например, для работы сети или сервера).
-- `Success`— Возвращает сведения об успешной операции (только из `Handle*` метода).
-- `Failure`— Означает, что произошла ошибка и операция не может быть завершена.
-- `RequiringAppLaunch`— Не может быть обработано намерением, но операция возможна в приложении.
-- `Unspecified`— Не использовать: пользователю будет отображаться сообщение об ошибке.
+- `Ready` — Возвращает на этапе подтверждения (IE. из `Confirm*` метода, но не из `Handle*` метода).
+- `InProgress` — Используется для длительных задач (например, для работы сети или сервера).
+- `Success` — Возвращает сведения об успешной операции (только из `Handle*` метода).
+- `Failure` — Означает, что произошла ошибка и операция не может быть завершена.
+- `RequiringAppLaunch` — Не может быть обработано намерением, но операция возможна в приложении.
+- `Unspecified` — Не использовать: пользователю будет отображаться сообщение об ошибке.
 
 Дополнительные сведения об этих методах и ответах см. в [документации Apple SiriKit Lists and Notes](https://developer.apple.com/documentation/sirikit/lists_and_notes).
 
 ### <a name="implementing-lists-and-notes"></a>Реализация списков и заметок
 
-[Пример Таскснотес SiriKit](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-sirikitsample) был создан с помощью следующих шагов, чтобы добавить поддержку SiriKit в пустое приложение iOS.
+[Пример Таскснотес SiriKit](/samples/xamarin/ios-samples/ios11-sirikitsample) был создан с помощью следующих шагов, чтобы добавить поддержку SiriKit в пустое приложение iOS.
 
 Прежде всего, чтобы добавить поддержку SiriKit, выполните следующие действия для приложения iOS:
 
@@ -211,7 +211,7 @@ public void HandleCreateTaskList(INCreateTaskListIntent intent, Action<INCreateT
 - «Сделайте список продуктов, используя яблоки, «полукруглые» и «груши» в _монкэйнотес_»
 - "Добавить задачу ВВДК в _монкэйтодо_"
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 Некоторые ошибки, которые могут возникнуть при выполнении примера или добавлении SiriKit в свои приложения:
 
@@ -229,5 +229,5 @@ _Вызвано исключение цели-C.  Имя: Нсинтернали
 ## <a name="related-links"></a>Связанные ссылки
 
 - [SiriKit (Apple)](https://developer.apple.com/documentation/sirikit)
-- [Пример SiriKit Таскснотес](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-sirikitsample)
+- [Пример SiriKit Таскснотес](/samples/xamarin/ios-samples/ios11-sirikitsample)
 - [Новые возможности в SiriKit (ВВДК) (видео)](https://developer.apple.com/videos/play/wwdc2017/214/)

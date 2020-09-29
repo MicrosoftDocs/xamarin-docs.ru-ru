@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: d9e8d91b03a5a82373012da215bd29a747e67d3e
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 844da10aaf5882ce8c381ee2407dbf91e0bc6c89
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939455"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437098"
 ---
 # <a name="working-with-tvos-navigation-and-focus-in-xamarin"></a>Работа с tvOS навигацией и фокусом в Xamarin
 
@@ -80,7 +80,7 @@ _В этой статье рассматривается понятие фоку
 
 ### <a name="working-with-focus"></a>Работа с фокусом
 
-Иногда требуется создать настраиваемый элемент управления, который может стать элементом, получающим фокус. Если это так, переопределите `CanBecomeFocused` свойство и возвратите значение `true` , иначе возвратит `false` . Например.
+Иногда требуется создать настраиваемый элемент управления, который может стать элементом, получающим фокус. Если это так, переопределите `CanBecomeFocused` свойство и возвратите значение `true` , иначе возвратит `false` . Пример:
 
 ```csharp
 public class myView : UIView
@@ -91,7 +91,7 @@ public class myView : UIView
 }
 ```
 
-В любой момент можно использовать `Focused` свойство `UIKit` элемента управления, чтобы определить, является ли он текущим элементом. `true`Значение, если элемент пользовательского интерфейса в данный момент находится в фокусе, в противном случае — нет. Например.
+В любой момент можно использовать `Focused` свойство `UIKit` элемента управления, чтобы определить, является ли он текущим элементом. `true`Значение, если элемент пользовательского интерфейса в данный момент находится в фокусе, в противном случае — нет. Пример:
 
 ```csharp
 // Is my view in focus?
@@ -101,7 +101,7 @@ if (myView.Focused) {
 }
 ```
 
-Хотя нельзя напрямую перемещать фокус на другой элемент пользовательского интерфейса с помощью кода, можно указать, какой элемент пользовательского интерфейса сначала получает фокус при загрузке экрана, задав `PreferredFocusedView` свойству значение `true` . Например.
+Хотя нельзя напрямую перемещать фокус на другой элемент пользовательского интерфейса с помощью кода, можно указать, какой элемент пользовательского интерфейса сначала получает фокус при загрузке экрана, задав `PreferredFocusedView` свойству значение `true` . Пример:
 
 ```csharp
 // Make the play button the starting focus item
@@ -204,7 +204,7 @@ public override void DidUpdateFocus (UIFocusUpdateContext context, UIFocusAnimat
 
 Во-первых, этот код получает `NextFocusedView` из объекта `UIFocusUpdateContext` , переданного в ( `context` ). Если это представление имеет значение `null` , обработка не требуется и метод завершает работу.
 
-Далее `nextFocusableItem` вычисляется. Если он совпадает с кнопками " **больше информации** " или " **купить** ", фокус передается обратной кнопке с помощью свойства "Focus Guide" `PreferredFocusedView` . Например.
+Далее `nextFocusableItem` вычисляется. Если он совпадает с кнопками " **больше информации** " или " **купить** ", фокус передается обратной кнопке с помощью свойства "Focus Guide" `PreferredFocusedView` . Пример:
 
 ```csharp
 // Move from the More Info to Buy button
@@ -222,7 +222,7 @@ FocusGuide.PreferredFocusedView = null;
 
 ### <a name="working-with-focus-in-collections"></a>Работа с фокусом в коллекциях
 
-При принятии решения о том, может ли отдельный элемент быть доступен в `UICollectionView` или `UITableView` , вы переопределяете методы `UICollectionViewDelegate` или `UITableViewDelegate` соответственно. Например.
+При принятии решения о том, может ли отдельный элемент быть доступен в `UICollectionView` или `UITableView` , вы переопределяете методы `UICollectionViewDelegate` или `UITableViewDelegate` соответственно. Пример:
 
 ```csharp
 public class CardHandDelegate : UICollectionViewDelegateFlowLayout
@@ -276,7 +276,7 @@ myImageView.AdjustsImageWhenAncestorFocused = true;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

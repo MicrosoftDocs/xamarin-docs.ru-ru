@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 ms.date: 11/25/2015
 author: davidortinau
 ms.author: daortin
-ms.openlocfilehash: bdbff7760e7680173c57e5fc83cecb80967c0a51
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 2eef38791f420fd49b87b46fd131f1e6ce501892
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86996101"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436581"
 ---
 # <a name="creating-a-xamarinios-application-using-the-reflection-api"></a>Создание приложения Xamarin. iOS с помощью API отражения
 
@@ -27,8 +27,8 @@ MT. API отражения D позволяет декорированию кл�
 Использовать API отражения очень просто:
 
 1. Создание класса, снабженного MT. Атрибуты D.
-1. Создание `BindingContext` экземпляра, передавая ему экземпляр указанного выше класса.
-1. Создание `DialogViewController` , передавая ему `BindingContext’s` `RootElement` .
+1. Создание  `BindingContext` экземпляра, передавая ему экземпляр указанного выше класса.
+1. Создание  `DialogViewController` , передавая ему  `BindingContext’s` `RootElement` .
 
 Рассмотрим пример, иллюстрирующий использование API отражения. В этом примере мы создадим простой экран ввода данных, как показано ниже:
 
@@ -143,7 +143,7 @@ public class Expense
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Мтдрефлектионвалксраугх (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/mtdreflectionwalkthrough)
+- [Мтдрефлектионвалксраугх (пример)](/samples/xamarin/ios-samples/mtdreflectionwalkthrough)
 - [Общие сведения о диалоговом окне для бескасания](~/ios/user-interface/monotouch.dialog/index.md)
 - [Пошаговое руководство по API элементов](~/ios/user-interface/monotouch.dialog/elements-api-walkthrough.md)
 - [Пошаговое руководство по элементу JSON](~/ios/user-interface/monotouch.dialog/monotouch.dialog-json-markup.md)

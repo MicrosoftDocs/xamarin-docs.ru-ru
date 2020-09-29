@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/31/2017
-ms.openlocfilehash: c7d68687208c07ba551a4e142abb23ec97a24d20
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 74322180d43d35d7c18aa98a3212ac0209f5d76a
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73032103"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437301"
 ---
 # <a name="troubleshooting-tips-for-ios-11-and-xamarinios"></a>Советы по устранению неполадок в iOS 11 и Xamarin. iOS
 
@@ -20,7 +20,7 @@ ms.locfileid: "73032103"
 
 ## <a name="known-issues-and-troubleshooting"></a>Известные проблемы и устранение неполадок
 
-Если возникли проблемы с созданием приложений iOS 11 с помощью Xamarin, см. [заметки о выпуске](https://docs.microsoft.com/xamarin/ios/release-notes/), [форумы Xamarin. iOS](https://forums.xamarin.com/categories/ios), [средство записи Xamarin бугзилла](https://bugzilla.xamarin.com/query.cgi?product=iOS)и [GitHub](https://github.com/xamarin/xamarin-macios/issues) для существующих проблем.
+Если возникли проблемы с созданием приложений iOS 11 с помощью Xamarin, см. [заметки о выпуске](/xamarin/ios/release-notes/), [форумы Xamarin. iOS](https://forums.xamarin.com/categories/ios), [средство записи Xamarin бугзилла](https://bugzilla.xamarin.com/query.cgi?product=iOS)и [GitHub](https://github.com/xamarin/xamarin-macios/issues) для существующих проблем.
 
 Если вы считаете, что в Xamarin. iOS обнаружена ошибка, сообщите о ней о проблемах [на сайте GitHub](https://github.com/xamarin/xamarin-macios/issues).
 

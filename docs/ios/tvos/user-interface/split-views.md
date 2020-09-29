@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 56b9f82fcc15afc8c75012b204588b4da65a32c4
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 9cd19cfccac03ea1edb59c0422f197e33873abc6
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939741"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436893"
 ---
 # <a name="working-with-tvos-split-view-controllers-in-xamarin"></a>Работа с контроллерами разделенного представления tvOS в Xamarin
 
@@ -168,13 +168,13 @@ if (SplitViewController.DisplayMode == UISplitViewControllerDisplayMode.PrimaryH
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье рассматривается проектирование и работа с контроллерами разделенного представления внутри приложения Xamarin. tvOS.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

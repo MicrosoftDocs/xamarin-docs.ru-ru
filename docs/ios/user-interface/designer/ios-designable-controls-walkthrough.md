@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: 4652497aa6a7819afe7224617a429b2852566255
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: ad07d6e7381c646273eae8fe6aaecb2d487027f7
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934697"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436801"
 ---
 # <a name="using-custom-controls-with-the-ios-designer"></a>Использование пользовательских элементов управления в конструкторе iOS
 
@@ -266,5 +266,5 @@ public override void Draw(CGRect rect)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Скратчтиккет (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/scratchticket)
+- [Скратчтиккет (пример)](/samples/xamarin/ios-samples/scratchticket)
 - [требуемые образы (пример)](https://github.com/xamarin/ios-samples/blob/master/ScratchTicket/Resources/images.zip?raw=true)

@@ -7,19 +7,19 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 11/25/2015
-ms.openlocfilehash: 9d3f4388601c1bdf38f0446b4fa58cdf79b20612
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 244bce9fdf96083ba76347a38f6e302f7ed889d8
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73022378"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437185"
 ---
 # <a name="xamarinios-api-overview"></a>Общие сведения об API Xamarin. iOS
 
-Xamarin. iOS предоставляет C#/Цилную привязку к API кокоатауч, а также предоставляет доступ к интерфейсам API ECMA CIL и другим API-интерфейсам .NET.
+Xamarin. iOS предоставляет привязку C#/цил к API Кокоатауч, а также предоставляет доступ к API-интерфейсам ECMA CIL и другим API-интерфейсам .NET.
 
- **Справочник по API**. Справочник по API доступен по адресу [docs.Microsoft.com/DotNet/API/](https://docs.microsoft.com/dotnet/api/). Начните со [справочника по Xamarin. iOS](https://docs.microsoft.com/dotnet/api/?view=xamarin-ios-sdk-12) для привязок API для собственных API-интерфейсов iPhone или перейдите к [узлу библиотек базовых классов](https://docs.microsoft.com/dotnet/api/?view=xamarinios-10.8) для документации по API .NET.
+ **Справочник по API**. Справочник по API доступен по адресу [docs.Microsoft.com/DotNet/API/](/dotnet/api/). Начните со [справочника по Xamarin. iOS](/dotnet/api/?view=xamarin-ios-sdk-12) для привязок API для собственных API-интерфейсов iPhone или перейдите к [УЗЛУ библиотек базовых классов](/dotnet/api/?view=xamarinios-10.8) для документации по API .NET.
 
- **Разработка API**. схема API для привязки CIL/цели-C рассматривается в документе по [разработке API Xamarin. iOS](~/ios/internals/api-design/index.md) и описывает, как мы привязывает API цели-C и C из кокоатауч и предоставляли их в C#/цил World.
+ **Разработка API**. Структура API для привязки CIL/цели-C рассматривается в документе по [разработке API Xamarin. iOS](~/ios/internals/api-design/index.md) и описывает, как мы привязывает API цели-c и C из кокоатауч и предоставляли их в C#/цил World.
 
- **Сборки**. Просмотрите наш [список привязанных сборок](~/cross-platform/internals/available-assemblies.md) , чтобы получить подробные сведения о том, C#какие интерфейсы API из/цил/екма доступны для использования в Xamarin. iOS.
+ **Сборки**. Просмотрите наш [список привязанных сборок](~/cross-platform/internals/available-assemblies.md) , чтобы получить подробные сведения о том, какие интерфейсы API из C#/цил/екма доступны для использования в Xamarin. iOS.

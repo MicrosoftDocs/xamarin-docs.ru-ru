@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 49f2bdf63c286464073308cd1f17239692aa2395
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 002c57a1549201018cb2068f000a038f686eb2c0
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84567337"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436737"
 ---
 # <a name="working-with-the-watchos-parent-application-in-xamarin"></a>Работа с родительским приложением watchOS в Xamarin
 
@@ -30,8 +30,8 @@ ms.locfileid: "84567337"
 
 Эти два примера демонстрируют, как использовать `WCSession` для запуска кода и отправки сообщений между приложением Watch и парным iPhone.
 
-- [Просмотр подключения](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchconnectivity/)
-- [симплеватчконнективити](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-simplewatchconnectivity/) 
+- [Просмотр подключения](/samples/xamarin/ios-samples/watchos-watchconnectivity/)
+- [симплеватчконнективити](/samples/xamarin/ios-samples/watchos-simplewatchconnectivity/) 
 
 ## <a name="shared-storage"></a>Общее хранилище
 

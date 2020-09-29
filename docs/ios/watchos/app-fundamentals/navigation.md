@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 8b1ffe54ad199acbc7bf3918c187e198d96b51c8
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: a44d68426ff03ba0b6ab41f57e339caebce62c39
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939403"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436709"
 ---
 # <a name="working-with-watchos-navigation-in-xamarin"></a>Работа с навигацией watchOS в Xamarin
 
@@ -53,7 +53,7 @@ DismissController();
 
 Как и в iOS, левый-краевый прокрутка переходит назад к родительскому контроллеру в иерархическом стеке навигации.
 
-Примеры [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) и [ватчтаблес](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchtables) включают иерархическую навигацию.
+Примеры [ватчкиткаталог](/samples/xamarin/ios-samples/watchos-watchkitcatalog) и [ватчтаблес](/samples/xamarin/ios-samples/watchos-watchtables) включают иерархическую навигацию.
 
 ### <a name="pushing-and-popping-in-code"></a>Отправка и выталкивания в коде
 
@@ -115,5 +115,5 @@ PresentController (controllerNames, contexts);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Ватчкиткаталог (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog)
+- [Ватчкиткаталог (пример)](/samples/xamarin/ios-samples/watchos-watchkitcatalog)
 - [Ватчтаблес (пример)](https://developer.xamarin.com//samples/monotouch/watchOS/WatchTables/)

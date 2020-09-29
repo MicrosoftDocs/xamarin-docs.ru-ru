@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/30/2017
-ms.openlocfilehash: bddab35044c2b85b69146a03babd9884784baceb
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 8ccafec971a97a05dbf16488974d7a8e8e349708
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574591"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437339"
 ---
 # <a name="new-features-in-mapkit-on-ios-11"></a>Новые возможности Мапкит в iOS 11
 
@@ -29,7 +29,7 @@ iOS 11 добавляет следующие новые функции в Мап
 
 ## <a name="automatically-grouping-markers-while-zooming"></a>Автоматически группировать маркеры при изменении масштаба
 
-В примере [Мапкит Sample "тандм"](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample) показано, как реализовать новую функцию кластеризации заметок iOS 11.
+В примере [Мапкит Sample "тандм"](/samples/xamarin/ios-samples/ios11-mapkitsample) показано, как реализовать новую функцию кластеризации заметок iOS 11.
 
 ### <a name="1-create-an-mkpointannotation-subclass"></a>1. Создание `MKPointAnnotation` подкласса
 
@@ -108,7 +108,7 @@ public class BikeView : MKMarkerAnnotationView
 
 Хотя представление заметок, представляющее собой кластер маркеров, _может_ быть простым изображением, пользователи хотят, чтобы приложение представило визуальные подсказки о том, сколько маркеров было сгруппировано.
 
-В [образце кода](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample) используется кореграфикс для отображения количества маркеров в кластере, а также представления круговой диаграммы пропорции каждого типа маркера.
+В [образце кода](/samples/xamarin/ios-samples/ios11-mapkitsample) используется кореграфикс для отображения количества маркеров в кластере, а также представления круговой диаграммы пропорции каждого типа маркера.
 
 Необходимо также задать:
 
@@ -200,7 +200,7 @@ MapView.Register(typeof(ClusterView), MKMapViewDefault.ClusterAnnotationViewReus
 
 ## <a name="compass-button"></a>Кнопка компаса
 
-в iOS 11 добавлена возможность открыть Компас из схемы и визуализировать ее в любом расположении. Пример см. в примере [приложения тандм](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample) .
+в iOS 11 добавлена возможность открыть Компас из схемы и визуализировать ее в любом расположении. Пример см. в примере [приложения тандм](/samples/xamarin/ios-samples/ios11-mapkitsample) .
 
 Создайте кнопку, которая выглядит как компас (включая динамическую анимацию при изменении ориентации на карте) и визуализирует ее в другом элементе управления.
 
@@ -255,6 +255,6 @@ View.AddSubview(button); // constraints omitted for simplicity
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Мапкит пример "Тандм"](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample)
+- [Мапкит пример "Тандм"](/samples/xamarin/ios-samples/ios11-mapkitsample)
 - [мккомпассбуттон](https://developer.apple.com/documentation/mapkit/mkcompassbutton)
 - [Новые возможности в Мапкит (ВВДК) (видео)](https://developer.apple.com/videos/play/wwdc2017/237/)

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/31/2017
-ms.openlocfilehash: 89a21eec369691e5c6e1ec8ce2430d679b6b309d
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 9a31cd31f7cbfb4748991d45204ca867b5d62c8c
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572147"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436624"
 ---
 # <a name="vision-framework-in-xamarinios"></a>Инфраструктура концепции в Xamarin. iOS
 
@@ -35,7 +35,7 @@ ms.locfileid: "84572147"
 
 ## <a name="rectangle-detection"></a>Определение прямоугольника
 
-В [примере висионректс](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-visionrectangles) показано, как обработать изображение и нарисовать обнаруженные на нем прямоугольники.
+В [примере висионректс](/samples/xamarin/ios-samples/ios11-visionrectangles) показано, как обработать изображение и нарисовать обнаруженные на нем прямоугольники.
 
 ### <a name="1-initialize-the-vision-request"></a>1. Инициализация запроса концепции
 
@@ -94,7 +94,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 - Рисование прямоугольника для указания места обнаружения каждого из них и
 - Добавление текстовой метки для каждого прямоугольника с помощью Кореграфикс.
 
-Просмотрите [Источник образца](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-visionrectangles) для точного метода кореграфикс.
+Просмотрите [Источник образца](/samples/xamarin/ios-samples/ios11-visionrectangles) для точного метода кореграфикс.
 
 ![Фотография с обнаруженными тремя прямоугольниками](vision-images/found-rectangles-phone-sml.png)
 
@@ -106,7 +106,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 
 ## <a name="face-detection"></a>Обнаружение лиц
 
-[Пример висионфацес](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-visionfaces) работает аналогично образцу **висионректанглес** , используя другой класс запроса концепции.
+[Пример висионфацес](/samples/xamarin/ios-samples/ios11-visionfaces) работает аналогично образцу **висионректанглес** , используя другой класс запроса концепции.
 
 ### <a name="1-initialize-the-vision-request"></a>1. Инициализация запроса концепции
 
@@ -167,7 +167,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 - Рисование прямоугольника для каждого обнаруженного лица и
 - Добавление текстовой метки для каждой грани с помощью Кореграфикс.
 
-Просмотрите [Источник образца](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-visionfaces) для точного метода кореграфикс.
+Просмотрите [Источник образца](/samples/xamarin/ios-samples/ios11-visionfaces) для точного метода кореграфикс.
 
 ![Обнаружена фотография с двумя лицами](vision-images/found-faces-phone-sml.png)
 
@@ -177,6 +177,6 @@ private void HandleRectangles(VNRequest request, NSError error){
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Прямоугольники концепции (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-visionrectangles)
-- [Лица с видением (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-visionfaces)
+- [Прямоугольники концепции (пример)](/samples/xamarin/ios-samples/ios11-visionrectangles)
+- [Лица с видением (пример)](/samples/xamarin/ios-samples/ios11-visionfaces)
 - [Усовершенствования в основном образе — фильтры, металл, концепция и многое другое (ВВДК) (видео)](https://developer.apple.com/videos/play/wwdc2017/510/)

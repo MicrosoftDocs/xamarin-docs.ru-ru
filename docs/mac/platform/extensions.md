@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: ac4c8d7bbd28946b6089e7f22a36727d2d73ec18
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: abb14f2074a2f519037ef2a9e85f2bf66613b836
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939208"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436788"
 ---
 # <a name="xamarinmac-extension-support"></a>Поддержка расширения Xamarin.Mac
 
@@ -34,7 +34,7 @@ ms.locfileid: "86939208"
 
 <a name="Tips"></a>
 
-## <a name="tips"></a>"Советы"
+## <a name="tips"></a>Советы
 
 При работе с расширениями в Xamarin. Mac могут быть полезны следующие советы.
 
@@ -44,7 +44,7 @@ ms.locfileid: "86939208"
 
     [![Системный журнал](extensions-images/extension02.png)](extensions-images/extension02.png#lightbox)
 - Как отмечалось выше, запуск приложения расширения приведет к его регистрации в системе. Удаление пакета приложений с отменой регистрации. 
-- Если регистрируются "недопустимые" версии расширений приложения, используйте следующую команду, чтобы их можно было удалить.`plugin kit -mv`
+- Если регистрируются "недопустимые" версии расширений приложения, используйте следующую команду, чтобы их можно было удалить. `plugin kit -mv`
 
 <a name="Walkthrough-and-Sample-App"></a>
 
@@ -52,7 +52,7 @@ ms.locfileid: "86939208"
 
 Так как разработчик будет создавать расширения Xamarin. Mac и работать с ними так же, как расширения Xamarin. iOS, ознакомьтесь с нашим введением в документацию по [расширениям](~/ios/platform/extensions.md) для получения дополнительных сведений.
 
-Пример проекта Xamarin. Mac, содержащий небольшие рабочие примеры для каждого типа расширения, можно найти [здесь](https://docs.microsoft.com/samples/xamarin/mac-samples/extensionsamples).
+Пример проекта Xamarin. Mac, содержащий небольшие рабочие примеры для каждого типа расширения, можно найти [здесь](/samples/xamarin/mac-samples/extensionsamples).
 
 <a name="Summary"></a>
 
@@ -63,5 +63,5 @@ ms.locfileid: "86939208"
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
-- [екстенсионсамплес](https://docs.microsoft.com/samples/xamarin/mac-samples/extensionsamples)
+- [екстенсионсамплес](/samples/xamarin/mac-samples/extensionsamples)
 - [Рекомендации по созданию пользовательских интерфейсов в macOS](https://developer.apple.com/design/human-interface-guidelines/macos/overview/themes/)
