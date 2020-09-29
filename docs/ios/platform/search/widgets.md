@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: aa9d946f295b46a3aa2d9559d28907d9a30f184b
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 9a45fcccd693a51230a51600964acd75704e1b93
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938974"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91429723"
 ---
 # <a name="search-and-home-screen-widget-enhancements-in-ios-10"></a>Улучшения поиска и мини-приложений начального экрана в iOS 10
 
@@ -50,14 +50,14 @@ _В этой статье рассматриваются улучшения, в�
 
 ## <a name="working-with-vibrancy"></a>Работа с вибрация
 
-Вибрация гарантирует, что текст мини-приложения остается неудобочитаемым при отображении на светлом фоне мини-приложения (предоставленном системой). До выпуска iOS 10 разработчик использовал [нотификатионцентервибранциеффект](https://developer.apple.com/reference/uikit/uivibrancyeffect/1613917-notificationcentervibrancyeffect) для своей вибрация мини-приложения. Например.
+Вибрация гарантирует, что текст мини-приложения остается неудобочитаемым при отображении на светлом фоне мини-приложения (предоставленном системой). До выпуска iOS 10 разработчик использовал [нотификатионцентервибранциеффект](https://developer.apple.com/reference/uikit/uivibrancyeffect/1613917-notificationcentervibrancyeffect) для своей вибрация мини-приложения. Пример:
 
 ```csharp
 // DEPRECATED: Get Widget Vibrancy Effect
 var vibrancy = UIVibrancyEffect.CreateForNotificationCenter ();
 ```
 
-В iOS 10 это не рекомендуется, поэтому его следует заменить на [виджетпримаривибранциеффект](https://developer.apple.com/reference/uikit/uivibrancyeffect/1771278-widgetprimaryvibrancyeffect) или [виджетсекондаривибранциеффект](https://developer.apple.com/reference/uikit/uivibrancyeffect/1771277-widgetsecondaryvibrancyeffect). Например.
+В iOS 10 это не рекомендуется, поэтому его следует заменить на [виджетпримаривибранциеффект](https://developer.apple.com/reference/uikit/uivibrancyeffect/1771278-widgetprimaryvibrancyeffect) или [виджетсекондаривибранциеффект](https://developer.apple.com/reference/uikit/uivibrancyeffect/1771277-widgetsecondaryvibrancyeffect). Пример:
 
 ```csharp
 // Get Primary Widget Vibrancy Effect
@@ -194,7 +194,7 @@ public void WidgetActiveDisplayModeDidChange (NCWidgetDisplayMode activeDisplayM
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры iOS 10](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS10)
+- [Примеры iOS 10](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS10)
 - [Общие сведения о расширениях](~/ios/platform/extensions.md)
 - [Введение в трехмерное касание](~/ios/platform/3d-touch.md)
 - [Инструкции по программированию расширения приложения](https://developer.apple.com/library/prerelease/content/documentation/General/Conceptual/ExtensibilityPG/index.html)

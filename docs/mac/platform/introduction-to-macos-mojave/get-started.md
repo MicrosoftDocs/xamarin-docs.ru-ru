@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: a7aba55f0470ad44dcce3de56ed15308439785e2
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: f6461c1d571afb29f6ac3c0615165d8d0380a66d
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73029855"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91429665"
 ---
 # <a name="get-started-with-macos-mojave"></a>Начало работы с macOS Можаве
 
 В этом документе описано, как настроить сборку приложений macOS Можаве с помощью Xamarin. Mac. В нем описано, как загрузить Xcode 10 и обновить Visual Studio для Mac.
 
-## <a name="download-and-install"></a>Скачать и установить
+## <a name="download-and-install"></a>Загрузите и установите
 
 1. **Установите последнюю версию Xcode 10 бета-версий** . Зарегистрированные разработчики Apple могут скачать и установить последнюю версии Xcode 10 на [портале разработчика Apple](https://developer.apple.com/download/).
 
@@ -38,4 +38,4 @@ ms.locfileid: "73029855"
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Скачать Xcode 10](https://developer.apple.com/download/)
-- [Заметки о выпуске Xamarin. Mac 5,0](https://docs.microsoft.com/xamarin/mac/release-notes/5/5.0/)
+- [Заметки о выпуске Xamarin. Mac 5,0](/xamarin/mac/release-notes/5/5.0/)

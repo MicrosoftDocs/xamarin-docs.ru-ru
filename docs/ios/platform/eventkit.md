@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: a797fc654c7bdbbdb621c9d18dc7f1a82676778b
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 2e52fea7975094eb19d5247ea7747b40fda92630
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86930238"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433165"
 ---
 # <a name="eventkit-in-xamarinios"></a>EventKit в Xamarin. iOS
 
@@ -106,7 +106,7 @@ App.Current.EventStore.RequestAccess (EKEntityType.Event,
 
 ### <a name="ekentitytype"></a>екентититипе
 
-`EKEntityType`— Это перечисление, описывающее тип `EventKit` элемента или данных. Он имеет два значения: `Event` и напоминание. Он используется в ряде методов, в том числе `EventStore.RequestAccess` для `EventKit` определения того, какой тип данных получить доступ или получить.
+`EKEntityType` — Это перечисление, описывающее тип `EventKit` элемента или данных. Он имеет два значения: `Event` и напоминание. Он используется в ряде методов, в том числе `EventStore.RequestAccess` для `EventKit` определения того, какой тип данных получить доступ или получить.
 
 ### <a name="ekcalendar"></a>еккалендар
 
@@ -126,9 +126,9 @@ App.Current.EventStore.RequestAccess (EKEntityType.Event,
 
 ### <a name="ekspan"></a>експан
 
-*Експан* — это перечисление, которое описывает диапазон событий при изменении событий, которые могут повторяться, и имеет два значения: *данный* и *футуривентс*. `ThisEvent`означает, что любые изменения будут происходить только с определенным событием в ряде, на который указывает ссылка, тогда как `FutureEvents` на это событие и на все будущие повторения будут повлиять.
+*Експан* — это перечисление, которое описывает диапазон событий при изменении событий, которые могут повторяться, и имеет два значения: *данный* и *футуривентс*. `ThisEvent` означает, что любые изменения будут происходить только с определенным событием в ряде, на который указывает ссылка, тогда как `FutureEvents` на это событие и на все будущие повторения будут повлиять.
 
-## <a name="tasks"></a>Задачи
+## <a name="tasks"></a>Задания
 
 Для простоты использования EventKit было разбито на распространенные задачи, описанные в следующих разделах.
 
@@ -274,7 +274,7 @@ App.Current.EventStore.SaveEvent ( newEvent, EKSpan.ThisEvent, out e );
 Console.WriteLine ("Event Saved, ID: " + newEvent.CalendarItemIdentifier);
 ```
 
- `EventIdentifier`представляет собой строковый формат GUID.
+ `EventIdentifier` представляет собой строковый формат GUID.
 
 ### <a name="create-a-reminder-programmatically"></a>Создание напоминания программными средствами
 
@@ -378,6 +378,6 @@ App.Current.EventStore.FetchReminders (
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Календари (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/calendars)
+- [Календари (пример)](/samples/xamarin/ios-samples/calendars)
 - [Введение в iOS 6](~/ios/platform/introduction-to-ios6/index.md)
 - [Общие сведения о календарях и напоминаниях](https://developer.apple.com/library/prerelease/ios/#documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html)

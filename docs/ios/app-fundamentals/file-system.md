@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 11/12/2018
-ms.openlocfilehash: a552b7c395634c264114a378ee3f5c67d164d9f3
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: ef632b4bff3313de82c71cb5839ecdc24c9242ad
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937960"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431484"
 ---
 # <a name="file-system-access-in-xamarinios"></a>Доступ к файловой системе в Xamarin. iOS
 
@@ -245,7 +245,7 @@ var tmp = Path.Combine (documents, "..", "tmp");
 
 ![Set Лссуппортсопенингдокументсинплаце в info. plist](file-system-images/51-supports-opening.png)
 
-Каталог **документов** приложения теперь будет доступен для обзора в приложении " **файлы** ". В приложении " **файлы** " перейдите на **мой iPhone** , и все приложения с общими файлами будут видны. На снимках экрана ниже показано, как выглядит [пример приложения FileSystem](https://docs.microsoft.com/samples/xamarin/ios-samples/filesystemsamplecode) :
+Каталог **документов** приложения теперь будет доступен для обзора в приложении " **файлы** ". В приложении " **файлы** " перейдите на **мой iPhone** , и все приложения с общими файлами будут видны. На снимках экрана ниже показано, как выглядит [пример приложения FileSystem](/samples/xamarin/ios-samples/filesystemsamplecode) :
 
 ![приложение iOS 11 Files](file-system-images/50-files-app-1-sml.png) ![Просмотр моих файлов iPhone](file-system-images/50-files-app-2-sml.png) ![Файлы примеров приложений](file-system-images/50-files-app-3-sml.png)
 
@@ -356,6 +356,6 @@ Console.WriteLine ("Group Path: " + appGroupContainerPath);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример кода FileSystem](https://docs.microsoft.com/samples/xamarin/ios-samples/filesystemsamplecode)
+- [Пример кода FileSystem](/samples/xamarin/ios-samples/filesystemsamplecode)
 - [Инструкции по программированию файловой системы](https://developer.apple.com/library/ios/#documentation/FileManagement/Conceptual/FileSystemProgrammingGUide/Introduction/Introduction.html)
 - [Регистрация типов файлов, поддерживаемых приложением](https://developer.apple.com/library/ios/#documentation/FileManagement/Conceptual/DocumentInteraction_TopicsForIOS/Articles/RegisteringtheFileTypesYourAppSupports.html#/apple_ref/doc/uid/TP40010411-SW1)

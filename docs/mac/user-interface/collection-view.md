@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 05/24/2017
-ms.openlocfilehash: f6e9a9338c0bce628cfd62d1106601ddc7a11490
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 0d95ecb1997ba70a2994d74bacdedd334f2b4c61
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84568637"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91429726"
 ---
 # <a name="collection-views-in-xamarinmac"></a>Представления коллекций в Xamarin. Mac
 
@@ -769,7 +769,7 @@ var flowLayout = new NSCollectionViewFlowLayout()
 };
 ```
 
-`ItemSize`Свойство определяет размер каждой отдельной ячейки в коллекции. `SectionInset`Свойство определяет инсетс от края коллекции, в которой будут размещены ячейки. `MinimumInteritemSpacing`Определяет минимальный интервал между элементами и `MinimumLineSpacing` определяет минимальный интервал между строками в коллекции.
+`ItemSize`Свойство определяет размер каждой отдельной ячейки в коллекции. `SectionInset`Свойство определяет инсетс от края коллекции, в которой будут размещены ячейки. `MinimumInteritemSpacing` Определяет минимальный интервал между элементами и `MinimumLineSpacing` определяет минимальный интервал между строками в коллекции.
 
 Макет назначается представлению коллекции, а экземпляр объекта `CollectionViewDelegate` прикрепляется к выбранному элементу управления.
 
@@ -817,7 +817,7 @@ public override void ViewDidLoad()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Макколлектионнев (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/maccollectionnew)
+- [Макколлектионнев (пример)](/samples/xamarin/mac-samples/maccollectionnew)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Привязка данных и кодирование типа "ключ — значение"](~/mac/app-fundamentals/databinding.md)
 - [нсколлектионвиев](https://developer.apple.com/reference/appkit/nscollectionview)

@@ -6,12 +6,12 @@ ms.assetid: C6B99E44-00C1-4139-A1B7-FCFBE8749AB1
 author: conceptdev
 ms.author: crdun
 ms.date: 03/28/2017
-ms.openlocfilehash: 59bfad17e4c3a4720360f007ddf3e85835f972fd
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 5d970c596d403c7d55ccc23bb5e9ba7e5fbd623a
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86931083"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431971"
 ---
 # <a name="creating-a-monogame-uwp-project"></a>Создание проекта UWP с универсальной платформой
 
@@ -21,7 +21,7 @@ _С помощью односторонней игры можно создава
 
 В этом пошаговом руководстве создается пустой проект, который отображает *Васильковый синий* фон (традиционный цвет фона приложений XNA).
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
 
 Разработка приложений универсальной платформы Windows требует:
 
@@ -31,15 +31,15 @@ _С помощью односторонней игры можно создава
 - Настройка устройства в режим разработчика
 - [3.7.1 для Visual Studio](http://community.monogame.net/t/monogame-3-7-1-release/11173) или более поздней версии
 
-Дополнительные сведения см. на этой [странице в разделе Настройка для разработки Windows 10 UWP](https://msdn.microsoft.com/windows/uwp/get-started/get-set-up).
+Дополнительные сведения см. на этой [странице в разделе Настройка для разработки Windows 10 UWP](/windows/uwp/get-started/get-set-up).
 
-Xbox One Games можно разрабатывать на розничном устройстве Xbox One. На компьютере, на котором разрабатывается компьютер и Xbox One, требуется дополнительное программное обеспечение. Сведения о настройке Xbox One для разработки игр см. на этой странице, посвященной [настройке Xbox One](https://msdn.microsoft.com/windows/uwp/xbox-apps/index).
+Xbox One Games можно разрабатывать на розничном устройстве Xbox One. На компьютере, на котором разрабатывается компьютер и Xbox One, требуется дополнительное программное обеспечение. Сведения о настройке Xbox One для разработки игр см. на этой странице, посвященной [настройке Xbox One](/windows/uwp/xbox-apps/).
 
 ## <a name="creating-an-empty-template"></a>Создание пустого шаблона
 
 После установки всех необходимых ресурсов и включения режима разработчика на компьютере с Windows 10 можно создать новый проект с одним проектом с помощью Visual Studio, выполнив следующие действия.
 
-1. Выберите **файл**  >  **создать**  >  **проект...**
+1. Выберите **Файл** > **Создать** > **Проект**.
 1. Выберите категорию **установленные**  >  **шаблоны**  >  **Visual C#**  >  Категория "**Неигровое** ":
 
     ![Категория категории «в игре»](uwp-images/image1.png)
@@ -114,6 +114,6 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 Дополнительные сведения об использовании см `Texture2D` . в статье [Введение в в игру](~/graphics-games/monogame/introduction/index.md).
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этом руководстве описано, как создать новый проект UWP и учитывать особенности, связанные с UWP при загрузке файлов. Разработчики, заинтересованные в создании полнофункциональных игр UWP, могут ознакомиться с дополнительными сведениями о полной игре в статье Общие сведения об ограниченном [развертывании](~/graphics-games/monogame/introduction/index.md).

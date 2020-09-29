@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: fbd6e4a3b1c5cdb45a057f1ed664a0d5e71e224d
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 7f600593d7a3bb180ef8daca6639dbbea4bf07aa
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937895"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430075"
 ---
 # <a name="introduction-to-opentk-in-xamarinmac"></a>Общие сведения о Опентк в Xamarin. Mac
 
@@ -315,7 +315,7 @@ Game.Run(60.0);
 
 Дополнительные примеры см. в репозитории [Опентк Samples GitHub](https://github.com/opentk/opentk/tree/master/Source/Examples) . Он содержит официальный список примеров использования Опентк. Вам потребуется адаптировать эти примеры для использования с версией Опентк для Xamarin. Mac.
 
-Более сложный пример реализации Опентк в Xamarin. Mac см. в нашем примере [мономакгамевиев](https://docs.microsoft.com/samples/xamarin/mac-samples/monomacgamewindow) .
+Более сложный пример реализации Опентк в Xamarin. Mac см. в нашем примере [мономакгамевиев](/samples/xamarin/mac-samples/monomacgamewindow) .
 
 <a name="Summary"></a>
 
@@ -325,8 +325,8 @@ Game.Run(60.0);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Макопентк (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macopentk)
-- [Мономакгамевиев (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/monomacgamewindow)
+- [Макопентк (пример)](/samples/xamarin/mac-samples/macopentk)
+- [Мономакгамевиев (пример)](/samples/xamarin/mac-samples/monomacgamewindow)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Работа с Windows](~/mac/user-interface/window.md)
 - [Открытый набор средств](https://opentk.net)

@@ -7,12 +7,12 @@ ms.assetid: 846B59D3-F66A-48F3-A78C-84217697194E
 author: davidortinau
 ms.author: daortin
 ms.date: 09/25/2017
-ms.openlocfilehash: 556ea205e9894a2553224da0dc71c00d9bb55a9b
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 17f5caa7849b076fd8ac2b7a22459fbf8fed1c9d
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84564747"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432802"
 ---
 # <a name="core-nfc-in-xamarinios"></a>Ядро NFC в Xamarin. iOS
 
@@ -29,7 +29,7 @@ _Чтение тегов NFC с помощью iOS 11_
 - Приложения должны отображаться на переднем плане для сканирования.
 - Коренфк можно тестировать только на реальных устройствах (не в симуляторе).
 
-На этой странице описывается конфигурация, необходимая для использования Коренфк, и демонстрируется использование API с помощью [примера кода "нфктагреадер"](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-nfctagreader).
+На этой странице описывается конфигурация, необходимая для использования Коренфк, и демонстрируется использование API с помощью [примера кода "нфктагреадер"](/samples/xamarin/ios-samples/ios11-nfctagreader).
 
 ## <a name="configuration"></a>Конфигурация
 
@@ -71,12 +71,12 @@ _Чтение тегов NFC с помощью iOS 11_
 
 После настройки проекта добавьте `using CoreNFC;` в начало файла и выполните следующие три шага, чтобы реализовать функцию чтения тегов NFC:
 
-### <a name="1-implement-infcndefreadersessiondelegate"></a>1. Реализация`INFCNdefReaderSessionDelegate`
+### <a name="1-implement-infcndefreadersessiondelegate"></a>1. Реализация `INFCNdefReaderSessionDelegate`
 
 Интерфейс имеет два метода для реализации:
 
-- `DidDetect`— Вызывается при успешном считывании тега.
-- `DidInvalidate`— Вызывается при возникновении ошибки или при достижении времени ожидания 60 секунд.
+- `DidDetect` — Вызывается при успешном считывании тега.
+- `DidInvalidate` — Вызывается при возникновении ошибки или при достижении времени ожидания 60 секунд.
 
 #### <a name="diddetect"></a>диддетект
 
@@ -125,7 +125,7 @@ public void DidInvalidate(NFCNdefReaderSession session, NSError error)
 
 <a name="step2"></a>
 
-### <a name="2-start-an-nfcndefreadersession"></a>2. Запустите`NFCNdefReaderSession`
+### <a name="2-start-an-nfcndefreadersession"></a>2. Запустите `NFCNdefReaderSession`
 
 Сканирование должно начаться с запроса пользователя, например нажатия кнопки.
 Следующий код создает и запускает сеанс сканирования:
@@ -137,9 +137,9 @@ Session?.BeginSession();
 
 Ниже приведены параметры для `NFCNdefReaderSession` конструктора.
 
-- `delegate`— Реализация `INFCNdefReaderSessionDelegate` . В примере кода делегат реализуется в контроллере представления таблицы, поэтому `this` используется в качестве параметра делегата.
-- `queue`— Очередь, в которой обрабатываются обратные вызовы. Это может быть `null` , в этом случае следует использовать `DispatchQueue.MainQueue` при обновлении элементов управления пользовательского интерфейса (как показано в примере).
-- `invalidateAfterFirstRead`— Когда `true` , сканирование останавливается после первого успешного сканирования; при `false` продолжении сканирования будет выполнено несколько результатов, пока сканирование не будет отменено или не будет достигнуто время ожидания 60 секунд.
+- `delegate` — Реализация `INFCNdefReaderSessionDelegate` . В примере кода делегат реализуется в контроллере представления таблицы, поэтому `this` используется в качестве параметра делегата.
+- `queue` — Очередь, в которой обрабатываются обратные вызовы. Это может быть `null` , в этом случае следует использовать `DispatchQueue.MainQueue` при обновлении элементов управления пользовательского интерфейса (как показано в примере).
+- `invalidateAfterFirstRead` — Когда `true` , сканирование останавливается после первого успешного сканирования; при `false` продолжении сканирования будет выполнено несколько результатов, пока сканирование не будет отменено или не будет достигнуто время ожидания 60 секунд.
 
 ### <a name="3-cancel-the-scanning-session"></a>3. Отмена сеанса сканирования
 
@@ -161,5 +161,5 @@ Session.InvalidateSession();
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Нфктагреадер (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-nfctagreader)
+- [Нфктагреадер (пример)](/samples/xamarin/ios-samples/ios11-nfctagreader)
 - [Знакомство с ядром NFC (ВВДК) (видео)](https://developer.apple.com/videos/play/wwdc2017/718/)

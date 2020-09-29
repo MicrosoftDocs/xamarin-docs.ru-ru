@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 631b1019313ddde6b53ffe63600be8f3fc58673a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f4d90960547fb43d6681667daadde1ce71fc105a
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86931473"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431756"
 ---
 # <a name="dialogs-in-xamarinmac"></a>Диалоговые окна в Xamarin. Mac
 
@@ -1099,7 +1099,7 @@ void ShowSaveAs (NSObject sender)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Маквиндовс (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macwindows)
+- [Маквиндовс (пример)](/samples/xamarin/mac-samples/macwindows)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Меню](~/mac/user-interface/menu.md)
 - [Windows](~/mac/user-interface/window.md)

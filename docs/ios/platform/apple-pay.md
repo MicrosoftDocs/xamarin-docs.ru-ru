@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/05/2017
-ms.openlocfilehash: 87f81f96e51b6744e37a80819c3c88d1abb644f1
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 51a18042bea820221f450d8d7ceedf3f69359a6d
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73022233"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431633"
 ---
 # <a name="apple-pay-in-xamarinios"></a>Apple Pay в Xamarin. iOS
 
@@ -79,7 +79,7 @@ Apple Pay доступен только в iOS 8 и более поздних в
 
 ### <a name="passkit-framework-enhancements"></a>Усовершенствования платформы PassKit
 
-В iOS 10 платформа PassKit была расширена для поддержки Apple Pay за пределами `UIKit` и позволяет поставщикам карт предоставлять собственные карты в своих приложениях.
+В iOS 10 платформа PassKit была расширена для поддержки Apple Pay вне `UIKit` и позволяет поставщикам карт предоставлять собственные карты в своих приложениях.
 
 #### <a name="supporting-apple-pay-outside-of-uikit"></a>Поддержка Apple Pay за пределами UIKit
 
@@ -87,15 +87,15 @@ Apple Pay доступен только в iOS 8 и более поздних в
 
 #### <a name="presenting-issuer-cards-from-within-apps"></a>Представление карточек поставщика в приложениях
 
-В iOS 10 в платформу PassKit были добавлены новые функции, позволяющие поставщикам карт предоставлять свои карты в своих приложениях. Разработчик может добавить `PKPaymentButtonTypeInStore` Уибуттон в пользовательский интерфейс приложения, который будет отображать кнопку Apple Pay для карточки.
+В iOS 10 в платформу PassKit были добавлены новые функции, позволяющие поставщикам карт предоставлять свои карты в своих приложениях. Разработчик может добавить `PKPaymentButtonTypeInStore` уибуттон в пользовательский интерфейс приложения, который будет отображать кнопку Apple Pay для карточки.
 
-Метод `PresentPaymentPass` класса [пкпасслибрари](https://developer.apple.com/reference/passkit/pkpasslibrary) можно также использовать для программного вывода карты.
+`PresentPaymentPass`Метод класса [пкпасслибрари](https://developer.apple.com/reference/passkit/pkpasslibrary) также можно использовать для программного вывода карты.
 
 ### <a name="new-payment-network-support"></a>Поддержка новой оплаты по сети
 
 До iOS 10 приложение может автоматически поддерживать новую платежную сеть, когда она станет доступной, без необходимости изменения, повторной компиляции приложения и повторной отправки в App Store.
 
-Новый метод [аваилабленетворкс](https://developer.apple.com/reference/passkit/pkpaymentrequest/1833288-availablenetworks) класса `PKPaymentNetwork` позволяет приложению обнаруживать сети, доступные на устройстве пользователя во время выполнения. Кроме того, свойство [суппортеднетворкс](https://developer.apple.com/reference/passkit/pkpaymentrequest/1619329-supportednetworks) было расширено, чтобы взять имя поставщика платежа в качестве аргумента. Используя эти методы, приложение может автоматически поддерживать любую сеть, поддерживаемую поставщиком платежей.
+Новый метод [аваилабленетворкс](https://developer.apple.com/reference/passkit/pkpaymentrequest/1833288-availablenetworks) `PKPaymentNetwork` класса позволяет приложению обнаруживать сети, доступные на устройстве пользователя во время выполнения. Кроме того, свойство [суппортеднетворкс](https://developer.apple.com/reference/passkit/pkpaymentrequest/1619329-supportednetworks) было расширено, чтобы взять имя поставщика платежа в качестве аргумента. Используя эти методы, приложение может автоматически поддерживать любую сеть, поддерживаемую поставщиком платежей.
 
 Дополнительные сведения см. в нашей [Apple Pay конфигурации](~/ios/platform/apple-pay.md) и в разделе [руководств по Apple Pay](https://developer.apple.com/apple-pay/)Apple.
 
@@ -123,4 +123,4 @@ Apple Pay доступен только в iOS 8 и более поздних в
 - [Введение в PassKit](~/ios/platform/passkit.md)
 - [PassKit](https://developer.apple.com/library/ios/documentation/PassKit/Reference/PKPaymentAuthorizationViewController_Ref/)
 - [Apple Pay](https://developer.apple.com/apple-pay/)
-- [Емпориум (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-emporium)
+- [Емпориум (пример)](/samples/xamarin/ios-samples/ios9-emporium)

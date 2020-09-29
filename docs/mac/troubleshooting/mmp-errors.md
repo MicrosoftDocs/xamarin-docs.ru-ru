@@ -8,12 +8,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/27/2018
-ms.openlocfilehash: 48399d35d27a700fa0b24583cce9cd0335f0e354
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 9f21ccccbc3faf17fc272f303ef913b40b11ecd3
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572082"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430912"
 ---
 # <a name="xamarinmac-error-messages-mmp"></a>Сообщения об ошибках Xamarin. Mac (MMP)
 
@@ -23,7 +23,7 @@ ms.locfileid: "84572082"
 
 <a name="MM0000"></a>
 
-#### <a name="mm0000-unexpected-error---please-file-a-bug-report-at-httpsgithubcomxamarinxamarin-maciosissuesnew"></a>MM0000: непредвиденная ошибка. файл отчета об ошибке можно отправить по адресуhttps://github.com/xamarin/xamarin-macios/issues/new
+#### <a name="mm0000-unexpected-error---please-file-a-bug-report-at-httpsgithubcomxamarinxamarin-maciosissuesnew"></a>MM0000: непредвиденная ошибка. файл отчета об ошибке можно отправить по адресу https://github.com/xamarin/xamarin-macios/issues/new
 
 Произошло непредвиденное условие ошибки. Создайте [отчет об ошибке](https://github.com/xamarin/xamarin-macios/issues/new) с максимально возможной информацией, включая:
 
@@ -35,7 +35,7 @@ ms.locfileid: "84572082"
 
 <a name="MM0001"></a>
 
-#### <a name="mm0001-this-version-of-xamarinmac-requires-mono-0-the-current-mono-version-is-1-please-update-the-monoframework-from-httpmono-projectcomdownloads"></a>MM0001: для этой версии Xamarin. Mac требуется Mono {0} (Текущая версия Mono — {1} ). Обновите Mono. Framework сhttp://mono-project.com/Downloads
+#### <a name="mm0001-this-version-of-xamarinmac-requires-mono-0-the-current-mono-version-is-1-please-update-the-monoframework-from-httpmono-projectcomdownloads"></a>MM0001: для этой версии Xamarin. Mac требуется Mono {0} (Текущая версия Mono — {1} ). Обновите Mono. Framework с http://mono-project.com/Downloads
 
 <a name="MM0003"></a>
 
@@ -57,7 +57,7 @@ ms.locfileid: "84572082"
 
 <a name="MM0010"></a>
 
-#### <a name="mm0010-could-not-parse-the-command-line-arguments-0"></a>MM0010: не удалось проанализировать аргументы командной строки:{0}
+#### <a name="mm0010-could-not-parse-the-command-line-arguments-0"></a>MM0010: не удалось проанализировать аргументы командной строки: {0}
 
 <!-- 0013 is unused -->
 
@@ -83,7 +83,7 @@ ms.locfileid: "84572082"
 
 <a name="MM0026"></a>
 
-#### <a name="mm0026-could-not-parse-the-command-line-argument-0-1"></a>MM0026: не удалось проанализировать аргумент командной строки " {0} ":{1}
+#### <a name="mm0026-could-not-parse-the-command-line-argument-0-1"></a>MM0026: не удалось проанализировать аргумент командной строки " {0} ": {1}
 
 <a name="MM0043"></a>
 
@@ -164,7 +164,7 @@ Xamarin. Mac не поддерживает установку версии ми�
 
 <a name="MM0097"></a>
 
-#### <a name="mm0097-machineconfig-file-0-can-not-be-found"></a>MM0097: не удается найти файл Machine. config {0} .
+#### <a name="mm0097-machineconfig-file-0-can-not-be-found"></a>MM0097: не удается найти файл machine.config " {0} ".
 
 <a name="MM0098"></a>
 
@@ -204,7 +204,7 @@ Xamarin. Mac не поддерживает установку версии ми�
 
 <a name="MM0132"></a>
 
-#### <a name="mm0132-unknown-optimization--valid-values-are-"></a>MM0132: неизвестная оптимизация: \* . Допустимые значения:\*
+#### <a name="mm0132-unknown-optimization--valid-values-are-"></a>MM0132: неизвестная оптимизация: \* . Допустимые значения: \*
 
 Указанная оптимизация не распознана.
 
@@ -224,7 +224,7 @@ Xamarin. Mac не поддерживает установку версии ми�
 
 Кроме того, 32-разрядные приложения не будут работать в версии macOS после высокого уровня Сьерра "без компромиссов".
 
-Дополнительные сведения:https://developer.apple.com/news/?id=06282017a
+Дополнительные сведения: https://developer.apple.com/news/?id=06282017a
 
 Рассмотрите возможность обновления приложения и всех зависимостей до 64-разр.
 
@@ -236,7 +236,7 @@ Xamarin. Mac не поддерживает установку версии ми�
 
 Чтобы устранить эту ошибку, рекомендуется обновить Xcode, чтобы получить необходимый пакет SDK. Если у вас установлено несколько версий Xcode или вы хотите использовать Xcode в расположении, отличном от расположения по умолчанию, убедитесь, что в настройках IDE задано правильное расположение Xcode.
 
-Кроме того, можно разрешить управляемому [компоновщику](https://docs.microsoft.com/xamarin/mac/deploy-test/linker) удалять неиспользуемые API, в том числе (в большинстве случаев) новые, для которых требуется Указанная библиотека. Однако это не будет работать, если для проекта требуются API, появившиеся в более новом пакете SDK, чем тот, который предоставляет Xcode.
+Кроме того, можно разрешить управляемому [компоновщику](../deploy-test/linker.md) удалять неиспользуемые API, в том числе (в большинстве случаев) новые, для которых требуется Указанная библиотека. Однако это не будет работать, если для проекта требуются API, появившиеся в более новом пакете SDK, чем тот, который предоставляет Xcode.
 
 В качестве последнего страв решения используйте более раннюю версию Xamarin. Mac, которая не требует наличия этих новых пакетов SDK в процессе сборки.
 
@@ -280,7 +280,7 @@ Xamarin. Mac не поддерживает установку версии ми�
 
 <a name="MM1501"></a>
 
-#### <a name="mm1501-can-not-resolve-reference-0"></a>MM1501: не удается разрешить ссылку:{0}
+#### <a name="mm1501-can-not-resolve-reference-0"></a>MM1501: не удается разрешить ссылку: {0}
 
 ### <a name="machocs"></a>MachO.cs
 
@@ -314,7 +314,7 @@ Xamarin. Mac не поддерживает установку версии ми�
 
 <a name="MM2002"></a>
 
-#### <a name="mm2002-can-not-resolve-reference-0"></a>MM2002: не удается разрешить ссылку:{0}
+#### <a name="mm2002-can-not-resolve-reference-0"></a>MM2002: не удается разрешить ссылку: {0}
 
 <a name="MM2003"></a>
 
@@ -350,7 +350,7 @@ Xamarin. Mac не поддерживает установку версии ми�
 
 <a name="MM2012"></a>
 
-#### <a name="mm2012-only-first-0-of-1-referenced-by-warnings-shown--this-message-related-to-2009-"></a>MM2012: показаны только {0} первые {1} предупреждения, указанные в ссылке. \*\*Это сообщение связано с 2009\*\*
+#### <a name="mm2012-only-first-0-of-1-referenced-by-warnings-shown--this-message-related-to-2009-"></a>MM2012: показаны только {0} первые {1} предупреждения, указанные в ссылке. \*\* Это сообщение связано с 2009 \*\*
 
 <a name="MM2013"></a>
 
@@ -358,7 +358,7 @@ Xamarin. Mac не поддерживает установку версии ми�
 
 <a name="MM2014"></a>
 
-#### <a name="mm2014-xamarinmac-extensions-do-not-support-linking-request-for-linking-will-be-ignored--this-message-is-obsolete-in-xm-36-"></a>MM2014: расширения Xamarin. Mac не поддерживают компоновку. Запрос на компоновку будет проигнорирован. \*\*Это сообщение является устаревшим в XM 3.6 +\*\*
+#### <a name="mm2014-xamarinmac-extensions-do-not-support-linking-request-for-linking-will-be-ignored--this-message-is-obsolete-in-xm-36-"></a>MM2014: расширения Xamarin. Mac не поддерживают компоновку. Запрос на компоновку будет проигнорирован. \*\* Это сообщение является устаревшим в XM 3.6 + \*\*
 
 <!-- 2015 used by mtouch -->
 
@@ -368,7 +368,7 @@ Xamarin. Mac не поддерживает установку версии ми�
 
 <a name="MM2017"></a>
 
-#### <a name="mm2017-could-not-process-xml-description-0"></a>MM2017: не удалось обработать XML-описание:{0}
+#### <a name="mm2017-could-not-process-xml-description-0"></a>MM2017: не удалось обработать XML-описание: {0}
 
 <a name="MM202x"></a>
 
@@ -501,7 +501,7 @@ https://docs.microsoft.com/cpp/dotnet/mixed-native-and-managed-assembliesДоп�
 
 <a name="MM5103"></a>
 
-#### <a name="mm5103-failed-to-compile-error-code---0-please-file-a-bug-report-at-httpbugzillaxamarincom"></a>MM5103: не удалось выполнить компиляцию. Код ошибки- {0} . Отправляйте отчет об ошибках по адресуhttp://bugzilla.xamarin.com
+#### <a name="mm5103-failed-to-compile-error-code---0-please-file-a-bug-report-at-httpbugzillaxamarincom"></a>MM5103: не удалось выполнить компиляцию. Код ошибки- {0} . Отправляйте отчет об ошибках по адресу http://bugzilla.xamarin.com
 
 <!-- 5104 used by mtouch -->
 
@@ -509,7 +509,7 @@ https://docs.microsoft.com/cpp/dotnet/mixed-native-and-managed-assembliesДоп�
 
 <a name="MM5202"></a>
 
-#### <a name="mm5202-monoframework-mdk-is-missing-please-install-the-mdk-for-your-monoframework-version-from-httpmono-projectcomdownloads"></a>MM5202: отсутствует МДК Mono. Framework. Установите МДК для версии Mono. Framework сhttp://mono-project.com/Downloads
+#### <a name="mm5202-monoframework-mdk-is-missing-please-install-the-mdk-for-your-monoframework-version-from-httpmono-projectcomdownloads"></a>MM5202: отсутствует МДК Mono. Framework. Установите МДК для версии Mono. Framework с http://mono-project.com/Downloads
 
 <a name="MM5203"></a>
 
@@ -546,7 +546,7 @@ https://docs.microsoft.com/cpp/dotnet/mixed-native-and-managed-assembliesДоп�
 
 <a name="MM5301"></a>
 
-#### <a name="mm5301-pkg-config-could-not-be-found-please-install-the-monoframework-from-httpmono-projectcomdownloads"></a>MM5301: не удалось найти файл pkg-config. Установите Mono. Framework изhttp://mono-project.com/Downloads
+#### <a name="mm5301-pkg-config-could-not-be-found-please-install-the-monoframework-from-httpmono-projectcomdownloads"></a>MM5301: не удалось найти файл pkg-config. Установите Mono. Framework из http://mono-project.com/Downloads
 
 <!-- 5302 used by mtouch -->
 <!-- 5303 used by mtouch -->

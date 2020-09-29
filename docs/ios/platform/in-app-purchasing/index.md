@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: 5aabaadfb1781f9f1622abf5687252b16b327d34
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+ms.openlocfilehash: 7e061f12e45e6d60c1772fc8699ffdb1f1b1d730
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725426"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430400"
 ---
 # <a name="in-app-purchasing-in-xamarinios"></a>Покупка в приложении в Xamarin. iOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "76725426"
 
 ## <a name="contents"></a>Содержимое
 
-- [Основные сведения о покупке из приложения и ее конфигурация](~/ios/platform/in-app-purchasing/in-app-purchase-basics-and-configuration.md)
+- [Основные сведения о покупке из приложения и ее настройка](~/ios/platform/in-app-purchasing/in-app-purchase-basics-and-configuration.md)
 
 - [StoreKit обзор и получение сведений о продуктах](~/ios/platform/in-app-purchasing/store-kit-overview-and-retreiving-product-information.md)
 
@@ -58,11 +58,11 @@ ms.locfileid: "76725426"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [инапппурчасесампле](https://docs.microsoft.com/samples/xamarin/ios-samples/storekit/)
+- [инапппурчасесампле](/samples/xamarin/ios-samples/storekit/)
 - [В статье по программированию покупки приложения](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html)
 - [Руководство по iTunes Connect для разработчиков](https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/iTunesConnect_Guide.pdf)
 - [Справочник по платформе Store Kit](https://developer.apple.com/library/ios/documentation/StoreKit/Reference/StoreKit_Collection/StoreKit_Collection.pdf)
-- [Идентификаторы продуктов для покупки в приложении Q & A](https://developer.apple.com/library/ios/#qa/qa1329/_index.html)
+- [Идентификаторы продуктов для покупки в приложении Q&A](https://developer.apple.com/library/ios/#qa/qa1329/_index.html)
 - [Техническое примечание о приобретении в приложении](https://developer.apple.com/library/ios/#technotes/tn2259/_index.html)
 - [Ваши первые отправки магазина приложений](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html)
 - [Советы по отправке в App Store](https://developer.apple.com/appstore/resources/submission/tips.html)

@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 9280917f451d58ae864398088bec7faaf15ad96a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: ae82918c1f87e47be9446e80f99ebc4dc967c078
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937349"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431947"
 ---
 # <a name="source-lists-in-xamarinmac"></a>Списки источников в Xamarin. Mac
 
@@ -624,7 +624,7 @@ public override void DidFinishLaunching (NSNotification notification)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Макаутлинес (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macoutlines)
+- [Макаутлинес (пример)](/samples/xamarin/mac-samples/macoutlines)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Представления таблиц](~/mac/user-interface/table-view.md)
 - [Представления структур](~/mac/user-interface/outline-view.md)

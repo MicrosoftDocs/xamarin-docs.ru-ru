@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/29/2017
-ms.openlocfilehash: 39a18a775946c2f139b4c032d2c360bc5680a0e7
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 6ac5a6924f2b297b63a73b8b417dd68bad062a84
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937921"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431355"
 ---
 # <a name="alternate-app-icons-in-xamarinios"></a>Альтернативные значки приложений в Xamarin. iOS
 
@@ -20,10 +20,10 @@ _В этой статье описывается использование ал
 
 Компания Apple добавила несколько улучшений в iOS 10,3, которые позволяют приложению управлять своим значком:
 
-- `ApplicationIconBadgeNumber`— Получает или задает эмблему значка приложения в Springboard Series.
-- `SupportsAlternateIcons`— Если `true` приложение имеет альтернативный набор значков.
-- `AlternateIconName`— Возвращает имя выбранного в данный момент альтернативного значка или `null` значение, если используется основной значок.
-- `SetAlternameIconName`— Используйте этот метод, чтобы переключить значок приложения на заданный альтернативный значок.
+- `ApplicationIconBadgeNumber` — Получает или задает эмблему значка приложения в Springboard Series.
+- `SupportsAlternateIcons` — Если `true` приложение имеет альтернативный набор значков.
+- `AlternateIconName` — Возвращает имя выбранного в данный момент альтернативного значка или `null` значение, если используется основной значок.
+- `SetAlternameIconName` — Используйте этот метод, чтобы переключить значок приложения на заданный альтернативный значок.
 
 ![Пример оповещения, когда приложение изменяет свой значок](alternate-app-icons-images/icons04.png)
 
@@ -111,7 +111,7 @@ _В этой статье описывается использование ал
 
 Используя изображения значков, включенные в проект Xamarin. iOS и правильно настроенный файл **info. plist** , разработчик может использовать одну из многих новых функций, добавленных в iOS 10,3 для управления значком приложения.
 
-`SupportsAlternateIcons`Свойство `UIApplication` класса позволяет разработчику определить, поддерживает ли приложение альтернативные значки. Например.
+`SupportsAlternateIcons`Свойство `UIApplication` класса позволяет разработчику определить, поддерживает ли приложение альтернативные значки. Пример:
 
 ```csharp
 // Can the app select a different icon?
@@ -119,14 +119,14 @@ PrimaryIconButton.Enabled = UIApplication.SharedApplication.SupportsAlternateIco
 AlternateIconButton.Enabled = UIApplication.SharedApplication.SupportsAlternateIcons;
 ```
 
-`ApplicationIconBadgeNumber`Свойство `UIApplication` класса позволяет разработчику получить или задать номер текущего значка приложения в Springboard Series. Значение по умолчанию равно нулю (0). Например.
+`ApplicationIconBadgeNumber`Свойство `UIApplication` класса позволяет разработчику получить или задать номер текущего значка приложения в Springboard Series. Значение по умолчанию равно нулю (0). Пример:
 
 ```csharp
 // Set the badge number to 1
 UIApplication.SharedApplication.ApplicationIconBadgeNumber = 1;
 ```
 
-`AlternateIconName`Свойство `UIApplication` класса позволяет разработчику получить имя выбранного в данный момент альтернативного приложения или возвращает, `null` Если приложение использует основной значок. Например.
+`AlternateIconName`Свойство `UIApplication` класса позволяет разработчику получить имя выбранного в данный момент альтернативного приложения или возвращает, `null` Если приложение использует основной значок. Пример:
 
 ```csharp
 // Get the name of the currently selected alternate
@@ -138,7 +138,7 @@ if (name != null ) {
 }
 ```
 
-`SetAlternameIconName`Свойство `UIApplication` класса позволяет разработчику изменить значок приложения. Передайте имя значка, чтобы выбрать или `null` вернуться к основному значку. Например.
+`SetAlternameIconName`Свойство `UIApplication` класса позволяет разработчику изменить значок приложения. Передайте имя значка, чтобы выбрать или `null` вернуться к основному значку. Пример:
 
 ```csharp
 partial void UsePrimaryIcon (Foundation.NSObject sender)
@@ -172,4 +172,4 @@ partial void UseAlternateIcon (Foundation.NSObject sender)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Иостенсри](https://docs.microsoft.com/samples/xamarin/ios-samples/ios10-iostenthree/)
+- [Пример Иостенсри](/samples/xamarin/ios-samples/ios10-iostenthree/)

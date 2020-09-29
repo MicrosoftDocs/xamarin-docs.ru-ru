@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: c4fc1607667dd6201c28c4d00a2938760e429f0f
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 826d8c982e9976cb4147c0ed77a55a4b1d18f879
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938987"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432406"
 ---
 # <a name="watchos-workout-apps-in-xamarin"></a>watchOSные приложения в Xamarin
 
@@ -390,8 +390,8 @@ public override void DidGenerateEvent (HKWorkoutSession workoutSession, HKWorkou
 
 Компания Apple добавила следующие новые типы событий в watchOS 3:
 
-- `HKWorkoutEventType.Lap`— Для событий, которые нарушают тренировку на одинаковые расстояния. Например, для пометки на одну запись во время выполнения.
-- `HKWorkoutEventType.Marker`— Для произвольных точек, представляющих интерес, в ходе тренировки. Например, достижение определенной точки на маршруте внешнего запуска.
+- `HKWorkoutEventType.Lap` — Для событий, которые нарушают тренировку на одинаковые расстояния. Например, для пометки на одну запись во время выполнения.
+- `HKWorkoutEventType.Marker` — Для произвольных точек, представляющих интерес, в ходе тренировки. Например, достижение определенной точки на маршруте внешнего запуска.
 
 Эти новые типы могут быть созданы приложением и сохранены в тренировки для последующего использования при создании графов и статистики.
 
@@ -1253,5 +1253,5 @@ namespace MonkeyWorkout.MWWatchExtension
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры iOS 10](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS10)
+- [Примеры iOS 10](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS10)
 - [Введение в HealthKit](~/ios/platform/healthkit.md)

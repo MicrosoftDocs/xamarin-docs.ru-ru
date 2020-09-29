@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 3fd119828a953c002c7d66f248bf26b413018ae4
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f1c21d64c8e1e271043e7d0b918f6033e21daac7
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939702"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432998"
 ---
 # <a name="watchos-image-controls-in-xamarin"></a>Элементы управления изображениями watchOS в Xamarin
 
@@ -36,7 +36,7 @@ watchOS предоставляет [`WKInterfaceImage`](xref:WatchKit.WKInterfac
 
 Наиболее эффективный способ отобразить изображения — *включить их в проект приложения Watch* и отобразить их с помощью `SetImage(string imageName)` метода.
 
-Например, пример [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog/) содержит несколько изображений, добавленных в каталог активов в проекте Watch App.
+Например, пример [ватчкиткаталог](/samples/xamarin/ios-samples/watchos-watchkitcatalog/) содержит несколько изображений, добавленных в каталог активов в проекте Watch App.
 
 ![Пример Ватчкиткаталог содержит несколько изображений, добавленных в каталог активов в проекте Watch App.](image-images/asset-whale-sml.png)
 
@@ -57,7 +57,7 @@ myOtherImageControl.SetImage("Worry");
 
 Чтобы загрузить изображения из расширения Watch, создайте `UIImage` экземпляры, а затем вызовите `SetImage` их с помощью `UIImage` объекта.
 
-Например, пример [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) содержит образ с именем **бумблеби** в проекте расширения Watch:
+Например, пример [ватчкиткаталог](/samples/xamarin/ios-samples/watchos-watchkitcatalog) содержит образ с именем **бумблеби** в проекте расширения Watch:
 
 ![Пример Ватчкиткаталог содержит образ с именем Бумблеби в проекте расширения Watch.](image-images/asset-bumblebee-sml.png)
 
@@ -76,7 +76,7 @@ using (var image = UIImage.FromBundle ("Bumblebee")) {
 
 Чтобы анимировать набор изображений, все они должны начинаться с того же префикса и иметь числовой суффикс.
 
-В примере [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) имеется серия нумерованных изображений в проекте Watch App с префиксом **шины** :
+В примере [ватчкиткаталог](/samples/xamarin/ios-samples/watchos-watchkitcatalog) имеется серия нумерованных изображений в проекте Watch App с префиксом **шины** :
 
 ![В примере Ватчкиткаталог имеется серия нумерованных изображений в проекте Watch App с префиксом шины.](image-images/asset-bus-animation-sml.png)
 
@@ -124,5 +124,5 @@ using (var image = UIImage.FromBundle ("Bumblebee")) {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Ватчкиткаталог (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog)
+- [Ватчкиткаталог (пример)](/samples/xamarin/ios-samples/watchos-watchkitcatalog)
 - [Документ с изображением Apple](https://developer.apple.com/documentation/watchkit/wkinterfaceimage)

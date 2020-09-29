@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: d50f104b8b6e3e82fb7e9d6dbea45757742a5739
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 6e76821033276ed3bb756cecd10e801fa615fb1e
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937037"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431836"
 ---
 # <a name="introduction-to-3d-touch-in-xamarinios"></a>Введение в трехмерное касание в Xamarin. iOS
 
@@ -102,7 +102,7 @@ public override void TraitCollectionDidChange(UITraitCollection previousTraitCol
 
 ### <a name="handling-peek-and-pop"></a>Обработка просмотра и POP
 
-На устройстве iOS, которое может работать с трехмерным касанием, можно использовать экземпляр `UIViewControllerPreviewingDelegate` класса для управления отображением сведений об элементах **просмотра** и элемента **POP** . Например, если у нас есть контроллер представления таблиц, `MasterViewController` можно использовать следующий код для поддержки **просмотра** и **POP**:
+На устройстве iOS, которое может работать с трехмерным касанием, можно использовать экземпляр  `UIViewControllerPreviewingDelegate` класса для управления отображением сведений об элементах **просмотра** и элемента **POP** . Например, если у нас есть контроллер представления таблиц, `MasterViewController` можно использовать следующий код для поддержки **просмотра** и **POP**:
 
 ```csharp
 using System;
@@ -195,7 +195,7 @@ public override void ViewDidLoad ()
 
 Здесь мы вызываем `RegisterForPreviewingWithDelegate` метод с помощью `PreviewingDelegate` созданного ранее экземпляра. На устройствах iOS, поддерживающих трехмерное касание, пользователь может нажать на элемент тяжело, чтобы посмотреть на него. Если они нажимают еще сложнее, элемент будет открываться в виде стандартного представления отображения.
 
-Дополнительные сведения см. в нашем [примере для iOS 9 аппликатионшорткутс](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-viewcontrollerpreview) и Apple [Виевконтроллерпревиевс: с помощью примера приложения API предварительного просмотра UIViewController](https://developer.apple.com/library/prerelease/ios/samplecode/ViewControllerPreviews/Introduction/Intro.html) , [ссылки на класс уипревиевактион](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPreviewAction_Class/), Справочник по [классу уипревиевактионграуп](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPreviewActionGroup_Class/) и [Справочник по протоколу UIPreviewActionItem](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPreviewActionItem_Protocol/).
+Дополнительные сведения см. в нашем [примере для iOS 9 аппликатионшорткутс](/samples/xamarin/ios-samples/ios9-viewcontrollerpreview) и Apple [Виевконтроллерпревиевс: с помощью примера приложения API предварительного просмотра UIViewController](https://developer.apple.com/library/prerelease/ios/samplecode/ViewControllerPreviews/Introduction/Intro.html) , [ссылки на класс уипревиевактион](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPreviewAction_Class/), Справочник по [классу уипревиевактионграуп](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPreviewActionGroup_Class/) и [Справочник по протоколу UIPreviewActionItem](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPreviewActionItem_Protocol/).
 
 <a name="Quick-Actions"></a>
 
@@ -239,7 +239,7 @@ public override void ViewDidLoad ()
 
 Здесь мы определяем два статических элемента быстрого действия со следующими ключами:
 
-- `UIApplicationShortcutItemIconType`— Определяет значок, который будет отображаться элементом быстрого действия как одно из следующих значений:
+- `UIApplicationShortcutItemIconType` — Определяет значок, который будет отображаться элементом быстрого действия как одно из следующих значений:
   - `UIApplicationShortcutIconTypeAdd`
   - `UIApplicationShortcutIconTypeAlarm`
   - `UIApplicationShortcutIconTypeAudio`
@@ -272,9 +272,9 @@ public override void ViewDidLoad ()
 
   ![Изображение Уиаппликатионшорткутиконтипе](3d-touch-images/uiapplicationshortcuticontype.png)
 
-- `UIApplicationShortcutItemSubtitle`— Определяет подзаголовок для элемента.
-- `UIApplicationShortcutItemTitle`— Определяет заголовок для элемента.
-- `UIApplicationShortcutItemType`— Строковое значение, которое будет использоваться для распознавания элемента в нашем приложении. Дополнительные сведения см. в следующем разделе.
+- `UIApplicationShortcutItemSubtitle` — Определяет подзаголовок для элемента.
+- `UIApplicationShortcutItemTitle` — Определяет заголовок для элемента.
+- `UIApplicationShortcutItemType` — Строковое значение, которое будет использоваться для распознавания элемента в нашем приложении. Дополнительные сведения см. в следующем разделе.
 
 > [!IMPORTANT]
 > Элементы ярлыков быстрого действия, заданные в `Info.plist` файле, недоступны со `Application.ShortcutItems` свойством. Они передаются только `HandleShortcutItem` обработчику событий.
@@ -420,7 +420,7 @@ public override bool FinishedLaunching (UIApplication application, NSDictionary 
 
 Следует отметить, что вы можете создать сочетание статических и динамических элементов быстрого действия (как мы делаем здесь), но вы не ограничены одним или другим.
 
-Дополнительные сведения см. в нашем [примере виевконтроллерпревиев для iOS 9](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-viewcontrollerpreview) [: использование](https://developer.apple.com/library/prerelease/ios/samplecode/ApplicationShortcuts/) примера приложения Уиаппликатионшорткутитем, [ссылка на класс уиаппликатионшорткутитем](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationShortcutItem_class/), Справочник по классам [UIMutableApplicationShortcutItem](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIMutableApplicationShortcutItem_class/) и [UIApplicationShortcutIcon](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationShortcutIcon_Class/).
+Дополнительные сведения см. в нашем [примере виевконтроллерпревиев для iOS 9](/samples/xamarin/ios-samples/ios9-viewcontrollerpreview) [: использование](https://developer.apple.com/library/prerelease/ios/samplecode/ApplicationShortcuts/) примера приложения Уиаппликатионшорткутитем, [ссылка на класс уиаппликатионшорткутитем](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationShortcutItem_class/), Справочник по классам [UIMutableApplicationShortcutItem](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIMutableApplicationShortcutItem_class/) и [UIApplicationShortcutIcon](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationShortcutIcon_Class/).
 
 <a name="Testing-3D-Touch-in-the-Simulator"></a>
 
@@ -440,8 +440,8 @@ public override bool FinishedLaunching (UIApplication application, NSDictionary 
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Виевконтроллерпревиев iOS 9](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-viewcontrollerpreview)
-- [Пример Аппликатионшорткутс iOS 9](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-applicationshortcuts)
+- [Пример Виевконтроллерпревиев iOS 9](/samples/xamarin/ios-samples/ios9-viewcontrollerpreview)
+- [Пример Аппликатионшорткутс iOS 9](/samples/xamarin/ios-samples/ios9-applicationshortcuts)
 - [iOS 9 для разработчиков](https://developer.apple.com/ios/pre-release/)
 - [iOS 9,0](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html)
 - [Подготовка приложений iPhone для трехмерного касания](https://developer.apple.com/ios/3d-touch/)

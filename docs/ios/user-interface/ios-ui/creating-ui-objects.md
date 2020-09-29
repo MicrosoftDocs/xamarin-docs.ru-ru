@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 729289c1764746f9777ef3d720e77865c9a71389
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 5b1bd4a07f9df13bff517db28715d985fc33e322
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937258"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430248"
 ---
 # <a name="creating-user-interface-objects-in-xamarinios"></a>Создание объектов пользовательского интерфейса в Xamarin. iOS
 
-Apple группирует связанные элементы функциональности в "frameworks", которые соответствуют пространствам имен Xamarin. iOS. `UIKit`пространство имен, содержащее все элементы управления пользовательского интерфейса для iOS.
+Apple группирует связанные элементы функциональности в "frameworks", которые соответствуют пространствам имен Xamarin. iOS. `UIKit` пространство имен, содержащее все элементы управления пользовательского интерфейса для iOS.
 
 Каждый раз, когда код должен ссылаться на элемент управления пользовательского интерфейса, например метку или кнопку, не забудьте включить следующую инструкцию using:
 
@@ -171,4 +171,4 @@ public override void ViewDidLoad () {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Элементы управления (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/controls)
+- [Элементы управления (пример)](/samples/xamarin/ios-samples/controls)

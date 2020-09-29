@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: f65b4f8f97059858067df8c847bc9ed181c8cc4c
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: dd79c2059d53702d947a966327bf22b2043d36c5
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86932682"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91429935"
 ---
 # <a name="customizing-a-tables-appearance-in-xamarinios"></a>Настройка внешнего вида таблицы в Xamarin. iOS
 
@@ -48,7 +48,7 @@ cell.DetailTextLabel.Text = tableItems[indexPath.Row].SubHeading;
 cell.ImageView.Image = UIImage.FromFile("Images/" + tableItems[indexPath.Row].ImageName); // don't use for Value2
 ```
 
-## <a name="accessories"></a>Принадлежности
+## <a name="accessories"></a>Accessories
 
 В ячейки могут быть добавлены следующие аксессуары справа от представления:
 
@@ -123,7 +123,7 @@ TableView.SeparatorInset.InsetRect(new CGRect(4, 4, 150, 2));
 Класс пользовательской ячейки состоит только из трех методов:
 
 - **Конструктор** — создает элементы управления пользовательского интерфейса и задает свойства пользовательского стиля (например, начертание, размер и цвет шрифта).
-- **Упдатецелл** — метод, `UITableView.GetCell` используемый для задания свойств ячейки.
+- **Упдатецелл** — метод,  `UITableView.GetCell` используемый для задания свойств ячейки.
 - **Лайаутсубвиевс** — задает расположение элементов управления пользовательского интерфейса. В примере каждая ячейка имеет одинаковый макет, но более сложная ячейка (особенно с различными размерами) может потребовать различных макетов в зависимости от отображаемого содержимого.
 
 Полный пример кода в **целлкустомтабле > CustomVegeCell.CS** приведен ниже.
@@ -184,4 +184,4 @@ public override UITableViewCell GetCell (UITableView tableView, NSIndexPath inde
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Воркингвистаблес (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/workingwithtables)
+- [Воркингвистаблес (пример)](/samples/xamarin/ios-samples/workingwithtables)

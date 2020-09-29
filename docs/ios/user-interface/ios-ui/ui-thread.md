@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 01f95641a0cf65341479c51b2f6314a0ef3ea2de
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: e91b7fdf99e8eb69cca240253f169ba16b0b11c4
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939078"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432009"
 ---
 # <a name="working-with-the-ui-thread-in-xamarinios"></a>Работа с потоком пользовательского интерфейса в Xamarin. iOS
 
@@ -93,5 +93,5 @@ async partial void button2_TouchUpInside (UIButton sender)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Элементы управления (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/controls)
+- [Элементы управления (пример)](/samples/xamarin/ios-samples/controls)
 - [Работа с потоками](~/ios/app-fundamentals/threading.md)

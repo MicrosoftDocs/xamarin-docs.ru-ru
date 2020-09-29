@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: 48aeaf8e3036c9b4e1ed548208b7daa822a00913
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 819e4f89b1443b2e1154aedfb51007ca38fdca02
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86933423"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91429923"
 ---
 # <a name="populating-a-table-with-data-in-xamarinios"></a>Заполнение таблицы данными в Xamarin. iOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "86933423"
 
 Для представления данных в таблице требуется только два обязательных метода:
 
-- **Ровсинсектион** — возвращает [`nint`](~/cross-platform/macios/nativetypes.md) число всех строк данных, которые должна отобразить таблица.
+- **Ровсинсектион** — возвращает  [`nint`](~/cross-platform/macios/nativetypes.md) число всех строк данных, которые должна отобразить таблица.
 - @ **Cell** — возврат `UITableViewCell` заполненного данными для соответствующего индекса строки, переданного в метод.
 
 Пример файла **TableSource.CS** басиктабле имеет простейшую возможную реализацию `UITableViewSource` . В следующем фрагменте кода можно увидеть, что он принимает массив строк, отображаемых в таблице, и возвращает стиль ячейки по умолчанию, содержащий каждую строку:
@@ -292,4 +292,4 @@ public override string TitleForFooter (UITableView tableView, nint section)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Воркингвистаблес (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/workingwithtables)
+- [Воркингвистаблес (пример)](/samples/xamarin/ios-samples/workingwithtables)

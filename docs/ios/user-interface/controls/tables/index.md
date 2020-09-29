@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 01/06/2016
-ms.openlocfilehash: 7f5af84a8dfb9f774822e28e50cf8bbca9acf94b
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: fc2a76d97fe6c3bb52877bd58707872068f25968
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021892"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430812"
 ---
 # <a name="working-with-tables-and-cells-in-xamarinios"></a>Работа с таблицами и ячейками в Xamarin. iOS
 
@@ -22,14 +22,14 @@ ms.locfileid: "73021892"
 
 В этих статьях подробно рассматривается работа с таблицами, в том числе:
 
-- **Части таблицы** — знакомство с визуальными элементами элемента управления `UITableView` и их объяснения. 
+- **Части таблицы** — знакомство с визуальными элементами элемента управления и их объяснение  `UITableView` . 
 - **Отображение данных в таблицах** — демонстрация создания и заполнения таблицы, использование различных стилей таблиц и ячеек и избежание проблем с памятью путем повторного запуска объектов ячеек. 
 - **Расширенное использование** — создание пользовательских ячеек и использование функций редактирования класса уитаблевиев. 
 - **Визуальное создание таблицы** с помощью Xamarin Designer для iOS для создания интерфейса с раскадровкой, основанного на таблицах. 
 
-## <a name="contents"></a>Описание
+## <a name="contents"></a>Содержимое
 
- [Части таблицы &amp; функциональные возможности](~/ios/user-interface/controls/tables/table-parts-and-functionality.md)
+ [&amp;Функциональные возможности частей таблиц](~/ios/user-interface/controls/tables/table-parts-and-functionality.md)
 
  [Заполнение таблицы данными](~/ios/user-interface/controls/tables/populating-a-table-with-data.md)
 
@@ -45,8 +45,8 @@ ms.locfileid: "73021892"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Воркингвистаблес (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/workingwithtables)
-- [Таблицы в раскадровках (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/storyboardtable)
+- [Воркингвистаблес (пример)](/samples/xamarin/ios-samples/workingwithtables)
+- [Таблицы в раскадровках (пример)](/samples/xamarin/ios-samples/storyboardtable)
 - [Введение в раскадровку](~/ios/user-interface/storyboards/index.md)
 - [Раскадровка для рецепта Таблевиев](https://github.com/xamarin/recipes/tree/master/Recipes/ios/general/storyboard/storyboard_a_tableview)
 - [Введение в бескасание. Dialog](~/ios/user-interface/monotouch.dialog/index.md)

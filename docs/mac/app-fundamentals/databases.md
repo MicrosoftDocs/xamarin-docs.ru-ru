@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 034169b4e77dace365b36733442afe295b62fb80
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: cae2b0ebfa81d140af1c233938ceddb9acd5ff07
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574022"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432916"
 ---
 # <a name="databases-in-xamarinmac"></a>Базы данных в Xamarin. Mac
 
@@ -532,7 +532,7 @@ public void Create(SqliteConnection conn) {
 command.CommandText = "INSERT INTO [People] (ID, Name, Occupation, isManager, ManagerID) VALUES (@COL1, @COL2, @COL3, @COL4, @COL5)";
 ```
 
-Позже мы задали значения для параметров с помощью `Parameters.AddWithValue` метода в `SQLiteCommand` . С помощью параметров мы гарантируете, что значения (такие как одинарные кавычки) будут правильно кодироваться перед отправкой в SQLite. Пример.
+Позже мы задали значения для параметров с помощью `Parameters.AddWithValue` метода в `SQLiteCommand` . С помощью параметров мы гарантируете, что значения (такие как одинарные кавычки) будут правильно кодироваться перед отправкой в SQLite. Пример:
 
 ```csharp
 command.Parameters.AddWithValue ("@COL1", ID);
@@ -1401,11 +1401,11 @@ namespace MacDatabase
 
 В этом примере мы создаем новый объект `NSComboBoxDataSource` , который может представлять элементы поля со списком из любого источника данных SQLite. Сначала определим следующие свойства:
 
-- `Conn`— Возвращает или задает соединение с базой данных SQLite.
-- `TableName`— Возвращает или задает имя таблицы.
-- `IDField`— Возвращает или задает поле, которое предоставляет уникальный идентификатор для данной таблицы. Значение по умолчанию — `ID`.
-- `DisplayField`— Получает или задает поле, отображаемое в раскрывающемся списке.
-- `RecordCount`— Возвращает количество записей в заданной таблице.
+- `Conn` — Возвращает или задает соединение с базой данных SQLite.
+- `TableName` — Возвращает или задает имя таблицы.
+- `IDField` — Возвращает или задает поле, которое предоставляет уникальный идентификатор для данной таблицы. Значение по умолчанию — `ID`.
+- `DisplayField` — Получает или задает поле, отображаемое в раскрывающемся списке.
+- `RecordCount` — Возвращает количество записей в заданной таблице.
 
 При создании нового экземпляра объекта мы передаем соединение, имя таблицы, при необходимости поле ID и отображаемое поле:
 
@@ -2224,7 +2224,7 @@ public override void AwakeFromNib ()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Макдатабасе (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macdatabase)
+- [Макдатабасе (пример)](/samples/xamarin/mac-samples/macdatabase)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Привязка данных и кодирование значений ключа](~/mac/app-fundamentals/databinding.md)
 - [Стандартные элементы управления](~/mac/user-interface/standard-controls.md)

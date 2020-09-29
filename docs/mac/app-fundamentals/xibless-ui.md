@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: fe4927384470a37581f556f06e71d489ef90ecbb
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 47025f48b1f3455f70a077f2ca55da2cdeeba761
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574524"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430887"
 ---
 # <a name="storyboardxib-less-user-interface-design-in-xamarinmac"></a>Структура пользовательского интерфейса. Storyboard/. XIB-меньше в Xamarin. Mac
 
@@ -294,7 +294,7 @@ mainWindowController.Window.MakeKeyAndOrderFront (this);
 
 ## <a name="adding-a-ui-element-to-a-window-in-code"></a>Добавление элемента пользовательского интерфейса в окно в коде
 
-Было ли окно создано в коде или загружено из файла. Storyboard или. XIB, иногда требуется добавить элемент пользовательского интерфейса в окно из кода. Пример.
+Было ли окно создано в коде или загружено из файла. Storyboard или. XIB, иногда требуется добавить элемент пользовательского интерфейса в окно из кода. Пример:
 
 ```csharp
 var ClickMeButton = new NSButton (new CGRect (10, 10, 100, 30)){
@@ -359,7 +359,7 @@ public override void DidFinishLaunching (NSNotification notification)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Макксиблесс (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macxibless)
+- [Макксиблесс (пример)](/samples/xamarin/mac-samples/macxibless)
 - [Windows](~/mac/user-interface/window.md)
 - [Меню](~/mac/user-interface/menu.md)
 - [Рекомендации по созданию пользовательских интерфейсов в macOS](https://developer.apple.com/macos/human-interface-guidelines/overview/themes/)

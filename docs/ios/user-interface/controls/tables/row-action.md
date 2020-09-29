@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/25/2017
-ms.openlocfilehash: 40640f903ad82c5f154dbb74307c0003d7271561
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 2cb453996a43d1e70f4fb818c86f6215c213b988
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936608"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91429747"
 ---
 # <a name="working-with-row-actions-in-xamarinios"></a>Работа с действиями строк в Xamarin. iOS
 
@@ -22,7 +22,7 @@ _В этом руководстве показано, как создавать 
 
 в iOS предусмотрено два способа выполнения действий с таблицей: `UISwipeActionsConfiguration` и `UITableViewRowAction` .
 
-`UISwipeActionsConfiguration`была введена в iOS 11 и используется для определения набора действий, которые должны выполняться, когда пользователь просматривает _любое направление_ на строке в табличном представлении. Такое поведение аналогично поведению собственного mail. app.
+`UISwipeActionsConfiguration` была введена в iOS 11 и используется для определения набора действий, которые должны выполняться, когда пользователь просматривает _любое направление_ на строке в табличном представлении. Такое поведение аналогично поведению собственного mail. app.
 
 `UITableViewRowAction`Класс используется для определения действия, которое будет выполнено, когда пользователь просматривает строку в табличном представлении влево по горизонтали.
 Например, при редактировании таблицы прокрутка влево по строке по умолчанию отображает кнопку **Удалить** . Присоединив несколько экземпляров `UITableViewRowAction` класса к `UITableView` , можно определить несколько пользовательских действий, каждое из которых имеет собственный текст, форматирование и поведение.
@@ -33,15 +33,15 @@ _В этом руководстве показано, как создавать 
 
 1. Переопределите `GetLeadingSwipeActionsConfiguration` методы и/или `GetTrailingSwipeActionsConfiguration` . Эти методы возвращают `UISwipeActionsConfiguration` .
 2. Создайте экземпляр `UISwipeActionsConfiguration` возвращаемого объекта. Этот класс принимает массив `UIContextualAction` .
-3. Создайте `UIContextualAction`.
+3. Создайте таблицу `UIContextualAction`.
 
 Они более подробно описаны в следующих разделах.
 
 ### <a name="1-implementing-the-swipeactionsconfigurations-methods"></a>1. Реализация методов Свипеактионсконфигуратионс
 
-`UITableViewController`(а также `UITableViewSource` и `UITableViewDelegate` ) содержат два метода: `GetLeadingSwipeActionsConfiguration` и `GetTrailingSwipeActionsConfiguration` , которые используются для реализации набора действий по считыванию в строке представления таблицы. Первое действие по прокрутке означает прокрутку с левой стороны экрана на языке слева направо и с правой стороны экрана на языке с письмом справа налево.
+`UITableViewController` (а также `UITableViewSource` и `UITableViewDelegate` ) содержат два метода: `GetLeadingSwipeActionsConfiguration` и `GetTrailingSwipeActionsConfiguration` , которые используются для реализации набора действий по считыванию в строке представления таблицы. Первое действие по прокрутке означает прокрутку с левой стороны экрана на языке слева направо и с правой стороны экрана на языке с письмом справа налево.
 
-В следующем примере (из примера [таблесвипеактионс](https://docs.microsoft.com/samples/xamarin/ios-samples/tableswipeactions) ) показано, как реализовать начальную конфигурацию считывания. Из контекстных действий создаются два действия, которые описаны [ниже](#create-uicontextualaction). Затем эти действия передаются в инициализированное [`UISwipeActionsConfiguration`](#create-uiswipeactionsconfigurations) , которое используется в качестве возвращаемого значения.
+В следующем примере (из примера [таблесвипеактионс](/samples/xamarin/ios-samples/tableswipeactions) ) показано, как реализовать начальную конфигурацию считывания. Из контекстных действий создаются два действия, которые описаны [ниже](#create-uicontextualaction). Затем эти действия передаются в инициализированное [`UISwipeActionsConfiguration`](#create-uiswipeactionsconfigurations) , которое используется в качестве возвращаемого значения.
 
 ```csharp
 public override UISwipeActionsConfiguration GetLeadingSwipeActionsConfiguration(UITableView tableView, NSIndexPath indexPath)
@@ -61,7 +61,7 @@ public override UISwipeActionsConfiguration GetLeadingSwipeActionsConfiguration(
 
 <a name="create-uiswipeactionsconfigurations"></a>
 
-### <a name="2-instantiate-a-uiswipeactionsconfiguration"></a>2. Создайте экземпляр`UISwipeActionsConfiguration`
+### <a name="2-instantiate-a-uiswipeactionsconfiguration"></a>2. Создайте экземпляр `UISwipeActionsConfiguration`
 
 Создайте экземпляр с `UISwipeActionsConfiguration` помощью метода, `FromActions` чтобы добавить новый массив объектов `UIContextualAction` , как показано в следующем фрагменте кода:
 
@@ -117,7 +117,7 @@ public UIContextualAction ContextualFlagAction(int row)
 
 ## <a name="uitableviewrowaction"></a>уитаблевиевровактион
 
-Чтобы определить одно или несколько действий пользовательской строки для `UITableView` , необходимо создать экземпляр `UITableViewDelegate` класса и переопределить `EditActionsForRow` метод. Например.
+Чтобы определить одно или несколько действий пользовательской строки для `UITableView` , необходимо создать экземпляр `UITableViewDelegate` класса и переопределить `EditActionsForRow` метод. Пример:
 
 ```csharp
 using System;
@@ -161,7 +161,7 @@ namespace BasicTable
 }
 ```
 
-Статический `UITableViewRowAction.Create` метод используется для создания нового `UITableViewRowAction` , который будет отображать кнопку **Hi** , когда пользователь проводит левую горизонтальную строку в строке таблицы. Позже создается новый экземпляр класса, который `TableDelegate` прикрепляется к `UITableView` . Например.
+Статический `UITableViewRowAction.Create` метод используется для создания нового `UITableViewRowAction` , который будет отображать кнопку **Hi** , когда пользователь проводит левую горизонтальную строку в строке таблицы. Позже создается новый экземпляр класса, который `TableDelegate` прикрепляется к `UITableView` . Пример:
 
 ```csharp
 TableDelegate tableDelegate;
@@ -181,5 +181,5 @@ table.Delegate = tableDelegate;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Таблесвипеактионс (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/tableswipeactions)
-- [Воркингвистаблес (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/workingwithtables)
+- [Таблесвипеактионс (пример)](/samples/xamarin/ios-samples/tableswipeactions)
+- [Воркингвистаблес (пример)](/samples/xamarin/ios-samples/workingwithtables)

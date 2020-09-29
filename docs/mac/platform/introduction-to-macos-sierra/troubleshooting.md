@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 09/22/2016
-ms.openlocfilehash: e7bc6fa12ab6720842ab264678cbf8124353fc40
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: d3ec300cbda5d22a285c3f63d3281bde29b94024
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574422"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430061"
 ---
 # <a name="xamarinmac---macos-sierra-troubleshooting"></a>Xamarin. Mac — macOS Sierra устранение неполадок
 
@@ -28,11 +28,11 @@ _В этой статье приведены некоторые советы п�
 - [Основное изображение](#CoreImage)
 - [Уведомления](#Notifications)
 - [NSUserActivity](#NSUserActivity)
-- [Safari](#Safari)
+- [Обозревателе](#Safari)
 
 <a name="App-Store"></a>
 
-## <a name="app-store"></a>Магазин App Store
+## <a name="app-store"></a>App Store
 
 Известные проблемы:
 
@@ -66,13 +66,13 @@ _В этой статье приведены некоторые советы п�
 
 ## <a name="cloudkit"></a>CloudKit
 
-Длительные операции будут возвращать _«у вас нет разрешения на сохранение файла»._ отобразится.
+Длительные операции будут возвращать _«у вас нет разрешения на сохранение файла»._ ошибка".
 
 <a name="CoreImage"></a>
 
 ## <a name="core-image"></a>Основное изображение
 
-`CIImageProcessor`API теперь поддерживает произвольное число образов ввода. `CIImageProcessor`API, который был добавлен в macOS Sierra бета-версии 1, будет удален.
+`CIImageProcessor`API теперь поддерживает произвольное число образов ввода. `CIImageProcessor` API, который был добавлен в macOS Sierra бета-версии 1, будет удален.
 
 <a name="Notifications"></a>
 
@@ -94,5 +94,5 @@ _В этой статье приведены некоторые советы п�
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры Mac](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Mac)
+- [Примеры Mac](/samples/browse/?products=xamarin&term=Xamarin.Mac)
 - [Новые возможности в macOS 10,12](https://developer.apple.com/library/prerelease/content/releasenotes/MacOSX/WhatsNewInOSX/Articles/OSXv10.html#//apple_ref/doc/uid/TP40017145-SW1)

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 86c7c726465257d71b6b407686153650dddbcbca
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: e6879db1631bc6b58a36142344ff1fba997ee4fb
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574474"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432044"
 ---
 # <a name="providing-haptic-feedback-in-xamarinios"></a>Предоставление обратной связи Хаптик в Xamarin. iOS
 
@@ -37,9 +37,9 @@ ms.locfileid: "84574474"
 
 Разработчик может использовать один из следующих `UIFeedbackGenerator` подклассов для программного запуска обратной связи хаптик:
 
-- `UIImpactFeedbackGenerator`— Используйте этот генератор обратной связи, чтобы дополнить действие или задачу, например выпустить "суд" при наличии слайдов представления или при конфликте двух объектов на экране.
-- `UINotificationFeedbackGenerator`— Используйте этот генератор обратной связи для таких уведомлений, как завершение действия, сбой или предупреждение любого другого типа.
-- `UISelectionFeedbackGenerator`— Используйте этот генератор обратной связи для изменяемого выбора, например комплектации элемента из списка.
+- `UIImpactFeedbackGenerator` — Используйте этот генератор обратной связи, чтобы дополнить действие или задачу, например выпустить "суд" при наличии слайдов представления или при конфликте двух объектов на экране.
+- `UINotificationFeedbackGenerator` — Используйте этот генератор обратной связи для таких уведомлений, как завершение действия, сбой или предупреждение любого другого типа.
+- `UISelectionFeedbackGenerator` — Используйте этот генератор обратной связи для изменяемого выбора, например комплектации элемента из списка.
 
 <a name="UIImpactFeedbackGenerator"></a>
 
@@ -129,4 +129,4 @@ selection.SelectionChanged ();
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры iOS 10](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS10)
+- [Примеры iOS 10](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS10)

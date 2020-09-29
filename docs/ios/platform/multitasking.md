@@ -8,12 +8,12 @@ ms.custom: xamu-video
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: b86f3a159a144f02ea13663bfddb41ed0100f740
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: e32042c4b7e7d67e219611014d3a06ad9ed17b9d
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86931408"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432463"
 ---
 # <a name="multitasking-for-ipad-in-xamarinios"></a>Многозадачность для iPad в Xamarin. iOS
 
@@ -100,7 +100,7 @@ iOS 9 предлагает новые возможности многозада�
 
 Чтобы приложение отображало видео PIP по запросу пользователя, необходимо использовать _авкит_ или _API-интерфейсы AV Foundation_. Среда проигрывателя мультимедиа была амортизировано в iOS 9 и не поддерживает PIP.
 
-Рисунок на рисунке доступен только в iPad Pro, iPad Air, iPad AIR 2, iPad Mini 2, iPad Mini 3 или iPad Mini 4. Дополнительные сведения см. в [Пиктуреинпиктуре примере приложения](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9) и [на рисунке Apple в](https://developer.apple.com/library/prerelease/ios/documentation/WindowsViews/Conceptual/AdoptingMultitaskingOniPad/QuickStartForPictureInPicture.html#//apple_ref/doc/uid/TP40015145-CH14) документации по быстрое начало.
+Рисунок на рисунке доступен только в iPad Pro, iPad Air, iPad AIR 2, iPad Mini 2, iPad Mini 3 или iPad Mini 4. Дополнительные сведения см. в [Пиктуреинпиктуре примере приложения](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9) и [на рисунке Apple в](https://developer.apple.com/library/prerelease/ios/documentation/WindowsViews/Conceptual/AdoptingMultitaskingOniPad/QuickStartForPictureInPicture.html#//apple_ref/doc/uid/TP40015145-CH14) документации по быстрое начало.
 
 <a name="Supporting-Multitasking-in-your-App"></a>
 
@@ -130,7 +130,7 @@ iOS 9 предлагает новые возможности многозада�
 | **Альбомная** |75% экрана<br />Обычная по горизонтали<br />Обычный вертикальный|25% экрана<br />Горизонтальное сжатие<br />Обычный вертикальный|
 | **Альбомная** |50% экрана<br />Горизонтальное сжатие<br />Обычный вертикальный|50% экрана<br />Горизонтальное сжатие<br />Обычный вертикальный|
 
-В примере приложения [мулитаск](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-multitask) , если оно выполняется во весь экран на iPad в альбомном режиме, в нем одновременно будет представлен список и подробное представление:
+В примере приложения [мулитаск](/samples/xamarin/ios-samples/ios9-multitask) , если оно выполняется во весь экран на iPad в альбомном режиме, в нем одновременно будет представлен список и подробное представление:
 
 [![Список и подробное представление, представленные в одно и то же время](multitasking-images/sizeclasses03.png)](multitasking-images/sizeclasses03.png#lightbox)
 
@@ -196,7 +196,7 @@ public void NewEntry() {
 
 [![Всплывающее меню сочетаний клавиш](multitasking-images/keyboard03.png)](multitasking-images/keyboard03.png#lightbox)
 
-Пример реализации см. в примере [приложения для многозадачности](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-multitask) .
+Пример реализации см. в примере [приложения для многозадачности](/samples/xamarin/ios-samples/ios9-multitask) .
 
 <a name="Resource-Management-Considerations"></a>
 
@@ -247,14 +247,14 @@ public void NewEntry() {
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье описаны действия, которые необходимо выполнить, чтобы убедиться, что приложение Xamarin. iOS будет запущено и правильно работать в новой многозадачной возможности iOS 9 для iPad. Кроме того, он охватывает не все задачи для приложений, где это не подходит.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры для iOS 9](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9)
-- [Многозадачная (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-multitask)
+- [Примеры для iOS 9](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9)
+- [Многозадачная (пример)](/samples/xamarin/ios-samples/ios9-multitask)
 - [Введение в унифицированные раскадровки](~/ios/user-interface/storyboards/unified-storyboards.md)
 - [iOS 9 для разработчиков](https://developer.apple.com/ios/pre-release/)
 - [iOS 9,0](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html)

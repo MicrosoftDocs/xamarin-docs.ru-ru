@@ -7,19 +7,19 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 6cfb567e6f74228a0b7e9ce017c57436df06cb56
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 719436835f5d104930adfe8cd7aa95de326784e9
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939104"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432081"
 ---
 # <a name="layout-options-in-xamarinios"></a>Параметры макета в Xamarin. iOS
 
 Существует два разных механизма управления макетом при изменении размера или поворота представления.
 
 - **Автоподбор размера** — инспектор автоизменения размера в конструкторе предоставляет способ задания `AutoresizingMask` свойств. Это позволит элементу управления быть привязан к краям контейнера и (или) исправлению их размера. Автоподбор размера работает во всех версиях iOS. Более подробно это описано ниже.
-- **Автоматический макет** — функция, появившаяся в iOS 6, которая позволяет точно контролировать связи элементов управления пользовательского интерфейса. Он обеспечивает управление позициями элементов относительно других элементов в области конструктора. Этот раздел более подробно рассматривается в разделе [Автоматическое размещение с помощью программы Xamarin iOS Designer](~/ios/user-interface/designer/designer-auto-layout.md) .
+- **Автоматический макет** — функция, появившаяся в iOS 6, которая позволяет точно контролировать связи элементов управления пользовательского интерфейса. Он обеспечивает управление позициями элементов относительно других элементов в области конструктора. Этот раздел более подробно рассматривается в разделе  [Автоматическое размещение с помощью программы Xamarin iOS Designer](~/ios/user-interface/designer/designer-auto-layout.md) .
 
 ## <a name="autosizing"></a>Автоматическое изменение размера
 
@@ -64,4 +64,4 @@ imageview1.AutoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutor
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Элементы управления (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/controls)
+- [Элементы управления (пример)](/samples/xamarin/ios-samples/controls)

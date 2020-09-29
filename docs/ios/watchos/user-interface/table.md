@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 0358e1570a5e38e008894a7eb9b6ca1985a0fed0
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 21154ee5ed83d9d6af2c5d5f70bb64759de43137
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997258"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431517"
 ---
 # <a name="watchos-table-controls-in-xamarin"></a>Элементы управления таблицы watchOS в Xamarin
 
@@ -41,7 +41,7 @@ ms.locfileid: "86997258"
 
 ## <a name="create-and-populate-rows"></a>Создание и заполнение строк
 
-`SetNumberOfRows`создает классы контроллеров строк для каждой строки, используя для выбора нужного для нее класса `Identifier` . Если вы назначаете свой контроллер строк настраиваемому `Identifier` , измените **значение по умолчанию** в следующем фрагменте кода на используемый идентификатор. `RowController` *Для каждой строки* создается при `SetNumberOfRows` вызове и отображении таблицы.
+`SetNumberOfRows` создает классы контроллеров строк для каждой строки, используя для выбора нужного для нее класса `Identifier` . Если вы назначаете свой контроллер строк настраиваемому `Identifier` , измените **значение по умолчанию** в следующем фрагменте кода на используемый идентификатор. `RowController` *Для каждой строки* создается при `SetNumberOfRows` вызове и отображении таблицы.
 
 ```csharp
 myTable.SetNumberOfRows ((nint)rows.Count, "default");
@@ -51,7 +51,7 @@ myTable.SetNumberOfRows ((nint)rows.Count, "default");
 > [!IMPORTANT]
 > Строки таблицы не виртуализованы, как в iOS. Попробуйте ограничить число строк (Apple рекомендует меньше 20).
 
-После создания строк необходимо заполнить каждую ячейку (например `GetCell` , в iOS). Этот фрагмент кода из [примера ватчтаблес](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchtables) обновляет метку в каждой строке.
+После создания строк необходимо заполнить каждую ячейку (например `GetCell` , в iOS). Этот фрагмент кода из [примера ватчтаблес](/samples/xamarin/ios-samples/watchos-watchtables) обновляет метку в каждой строке.
 
 ```csharp
 for (var i = 0; i < rows.Count; i++) {
@@ -208,6 +208,6 @@ namespace WatchTables.OnWatchExtension
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Ватчтаблес (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchtables)
-- [Ватчкиткаталог (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog)
+- [Ватчтаблес (пример)](/samples/xamarin/ios-samples/watchos-watchtables)
+- [Ватчкиткаталог (пример)](/samples/xamarin/ios-samples/watchos-watchkitcatalog)
 - [Doc в таблице Apple](https://developer.apple.com/reference/watchkit/wkinterfacetable)
