@@ -6,33 +6,33 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 05/01/2017
-ms.openlocfilehash: 99d0303dc1560796cb372d0b8af2fafd16c6097f
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+ms.openlocfilehash: 67c5655c3bbea8cd0a8c21f27719221f599bf481
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725144"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457436"
 ---
 # <a name="xamarinandroid-navigation-bar"></a>Панель навигации Xamarin. Android
 
 В Android 4 появилась новая функция пользовательского интерфейса системы, называемая *панелью навигации*, которая предоставляет элементы управления навигацией на устройствах, которые не включают аппаратные кнопки для **домашних**, **задних**и **меню**.
 На следующем снимке экрана показана панель навигации из устройства для создания хранилища:
 
- [![пример панели навигации Android](navigation-bar-images/19-navbar.png)](navigation-bar-images/19-navbar.png#lightbox)
+ [![Пример панели навигации Android](navigation-bar-images/19-navbar.png)](navigation-bar-images/19-navbar.png#lightbox)
 
-Доступно несколько новых флагов, контролирующих видимость панели навигации и ее элементов управления, а также видимость системной панели, представленной в Android 3. Флаги определяются в классе `Android.View.View` и перечислены ниже.
+Доступно несколько новых флагов, контролирующих видимость панели навигации и ее элементов управления, а также видимость системной панели, представленной в Android 3. Флаги определены в `Android.View.View` классе и перечислены ниже:
 
-- `SystemUiFlagVisible` &ndash; делает панель навигации видимой.
-- `SystemUiFlagLowProfile` &ndash; затемнение элементов управления на панели навигации.
-- `SystemUiFlagHideNavigation` &ndash; скрывает панель навигации.
+- `SystemUiFlagVisible`&ndash;Делает панель навигации видимой.
+- `SystemUiFlagLowProfile`&ndash;Затемнение элементов управления на панели навигации.
+- `SystemUiFlagHideNavigation`&ndash;Скрывает панель навигации.
 
-Эти флаги можно применить к любому представлению в иерархии представлений, задав свойство `SystemUiVisibility`. Если для нескольких представлений задано это свойство, система объединяет их с операцией или и применяет их до тех пор, пока в окне, в котором установлены флаги, остается фокус. При удалении представления все установленные флаги также будут удалены.
+Эти флаги можно применить к любому представлению в иерархии представлений, задав `SystemUiVisibility` свойство. Если для нескольких представлений задано это свойство, система объединяет их с операцией или и применяет их до тех пор, пока в окне, в котором установлены флаги, остается фокус. При удалении представления все установленные флаги также будут удалены.
 
-В следующем примере показано простое приложение, при щелчке на любой из кнопок изменяется `SystemUiVisibility`:
+В следующем примере показано простое приложение, при щелчке на любой из кнопок изменяется `SystemUiVisibility` :
 
- [![снимки экрана, демонстрирующие видимые, низкие профили и скрытые Системуивисибилити](navigation-bar-images/18-systemuivisibility.png)](navigation-bar-images/18-systemuivisibility.png#lightbox)
+ [![Снимки экрана, демонстрирующие видимые, низкие профили и скрытые Системуивисибилити](navigation-bar-images/18-systemuivisibility.png)](navigation-bar-images/18-systemuivisibility.png#lightbox)
 
-Код для изменения `SystemUiVisibility` задает свойство для `TextView` из обработчика событий нажатия каждой кнопки, как показано ниже:
+Код для изменения `SystemUiVisibility` задает свойство для `TextView` обработчика событий нажатия для каждой кнопки, как показано ниже:
 
 ```csharp
 var tv = FindViewById<TextView> (Resource.Id.systemUiFlagTextView);
@@ -55,7 +55,7 @@ visibleButton.Click += delegate {
 }
 ```
 
-Кроме того, `SystemUiVisibility`ное изменение вызывает событие `SystemUiVisibilityChange`. Как и при задании свойства `SystemUiVisibility`, обработчик события `SystemUiVisibilityChange` может быть зарегистрирован для любого представления в иерархии. Например, в приведенном ниже коде для регистрации события используется экземпляр `TextView`.
+Кроме того, `SystemUiVisibility` изменение вызывает `SystemUiVisibilityChange` событие. Как и при задании `SystemUiVisibility` свойства, обработчик `SystemUiVisibilityChange` события может быть зарегистрирован для любого представления в иерархии. Например, приведенный ниже код использует `TextView` экземпляр для регистрации события:
 
 ```csharp
 tv.SystemUiVisibilityChange +=
@@ -66,4 +66,4 @@ tv.SystemUiVisibilityChange +=
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Системуивисибилитидемо (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/systemuivisibilitydemo)
+- [Системуивисибилитидемо (пример)](/samples/xamarin/monodroid-samples/systemuivisibilitydemo)

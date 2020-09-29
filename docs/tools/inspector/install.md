@@ -6,12 +6,12 @@ ms.assetid: 81174493-02D3-4FF5-AD57-04F3288A7F94
 author: davidortinau
 ms.author: daortin
 ms.date: 06/19/2018
-ms.openlocfilehash: 1545af984c0a409244c323048b448ec44e9be6a8
-ms.sourcegitcommit: f7fe46c0236a7130b63a33d9d1670d5111582dd2
+ms.openlocfilehash: 70bc0f90b2802587dba8e2da19430164fccfe861
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88186191"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457345"
 ---
 # <a name="inspector-installation-and-requirements"></a>Установка и требования инспектора
 
@@ -20,13 +20,13 @@ ms.locfileid: "88186191"
 # <a name="windows"></a>[Windows](#tab/windows)
 
 1. Скачайте и установите [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/) и выберите рабочую нагрузку **Разработка мобильных приложений на .NET** .
-1. [Войдите](https://docs.microsoft.com/visualstudio/ide/signing-in-to-visual-studio) , чтобы включить корпоративную подписку.
+1. [Войдите](/visualstudio/ide/signing-in-to-visual-studio) , чтобы включить корпоративную подписку.
 1. [Проверьте](~/tools/inspector/inspect.md) свое приложение!
 
 # <a name="macos"></a>[macOS](#tab/macos)
 
 1. Скачайте и установите [Visual Studio для Mac](https://visualstudio.microsoft.com/vs/mac/).
-1. [Войдите](https://docs.microsoft.com/visualstudio/mac/activation) , чтобы включить корпоративную подписку.
+1. [Войдите](/visualstudio/mac/activation) , чтобы включить корпоративную подписку.
 1. [Проверьте](~/tools/inspector/inspect.md) свое приложение!
 
 -----

@@ -7,16 +7,16 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 07/30/2018
-ms.openlocfilehash: 6093c983a80c53b4900bb26c3a7020724a59c06d
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: d4a775d1e96fd6650623c2a151ae74b8b68ce0ac
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571320"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457085"
 ---
 # <a name="a-basic-recyclerview-example"></a>Пример базового RecyclerView
 
-Чтобы понять, как `RecyclerView` работает типичное приложение, в этом разделе рассматривается пример приложения [рециклервиевер](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-recyclerviewer) — простой пример кода, который используется `RecyclerView` для отображения большой коллекции фотографий: 
+Чтобы понять, как `RecyclerView` работает типичное приложение, в этом разделе рассматривается пример приложения [рециклервиевер](/samples/xamarin/monodroid-samples/android50-recyclerviewer) — простой пример кода, который используется `RecyclerView` для отображения большой коллекции фотографий: 
 
 [![Два снимка экрана приложения RecyclerView, использующего Кардвиевс для показа фотографий](recyclerview-example-images/01-recyclerviewer-sml.png)](recyclerview-example-images/01-recyclerviewer.png#lightbox)
 
@@ -25,7 +25,7 @@ ms.locfileid: "84571320"
 ### <a name="an-example-data-source"></a>Пример источника данных
 
 В этом примере приложения источник данных «фотоальбом» (представленный `PhotoAlbum` классом) предоставляет `RecyclerView` содержимое элемента.
-`PhotoAlbum`— Это коллекция фотографий с заголовками; При создании экземпляра вы получаете готовый набор из 32 фотографий:
+`PhotoAlbum` — Это коллекция фотографий с заголовками; При создании экземпляра вы получаете готовый набор из 32 фотографий:
 
 ```csharp
 PhotoAlbum mPhotoAlbum = new PhotoAlbum ();
@@ -38,13 +38,13 @@ int imageId = mPhotoAlbum[9].ImageId;
 string caption = mPhotoAlbum[9].Caption;
 ```
 
-`PhotoAlbum`также предоставляет `RandomSwap` метод, который можно вызвать для переключения первого фото в коллекции на случайное значение, которое еще не выбрано в коллекции.
+`PhotoAlbum` также предоставляет `RandomSwap` метод, который можно вызвать для переключения первого фото в коллекции на случайное значение, которое еще не выбрано в коллекции.
 
 ```csharp
 mPhotoAlbum.RandomSwap ();
 ```
 
-Поскольку сведения о реализации `PhotoAlbum` не важны для понимания `RecyclerView` , `PhotoAlbum` Исходный код здесь не представлен. Исходный код `PhotoAlbum` доступен по адресу [PhotoAlbum.CS](https://github.com/xamarin/monodroid-samples/blob/master/android5.0/RecyclerViewer/RecyclerViewer/PhotoAlbum.cs) в примере приложения [рециклервиевер](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-recyclerviewer) .
+Поскольку сведения о реализации `PhotoAlbum` не важны для понимания `RecyclerView` , `PhotoAlbum` Исходный код здесь не представлен. Исходный код `PhotoAlbum` доступен по адресу [PhotoAlbum.CS](https://github.com/xamarin/monodroid-samples/blob/master/android5.0/RecyclerViewer/RecyclerViewer/PhotoAlbum.cs) в примере приложения [рециклервиевер](/samples/xamarin/monodroid-samples/android50-recyclerviewer) .
 
 ### <a name="layout-and-initialization"></a>Макет и инициализация
 
@@ -126,8 +126,8 @@ mRecyclerView.SetLayoutManager (mLayoutManager);
 
 [![Схема Кардвиев, содержащая Имажевиев и TextView](recyclerview-example-images/02-cardview-layout-sml.png)](recyclerview-example-images/02-cardview-layout.png#lightbox)
 
-`PhotoViewHolder`является производным от `RecyclerView.ViewHolder` и содержит свойства для хранения ссылок на объект `ImageView` и, `TextView` показанный в приведенном выше макете.
-`PhotoViewHolder`состоит из двух свойств и одного конструктора:
+`PhotoViewHolder` является производным от `RecyclerView.ViewHolder` и содержит свойства для хранения ссылок на объект `ImageView` и, `TextView` показанный в приведенном выше макете.
+`PhotoViewHolder` состоит из двух свойств и одного конструктора:
 
 ```csharp
 public class PhotoViewHolder : RecyclerView.ViewHolder
@@ -179,7 +179,7 @@ public class PhotoAlbumAdapter : RecyclerView.Adapter
 
 #### <a name="oncreateviewholder"></a>онкреатевиевхолдер
 
-Диспетчер макетов вызывает `OnCreateViewHolder` , когда `RecyclerView` для представления элемента требуется новый владелец представления. `OnCreateViewHolder`увеличивает представление элемента из файла макета представления и заключает представление в новый `PhotoViewHolder` экземпляр. `PhotoViewHolder`Конструктор находит и сохраняет ссылки на дочерние представления в макете, как описано ранее в [заполнителье представления](#view-holder).
+Диспетчер макетов вызывает `OnCreateViewHolder` , когда `RecyclerView` для представления элемента требуется новый владелец представления. `OnCreateViewHolder` увеличивает представление элемента из файла макета представления и заключает представление в новый `PhotoViewHolder` экземпляр. `PhotoViewHolder`Конструктор находит и сохраняет ссылки на дочерние представления в макете, как описано ранее в [заполнителье представления](#view-holder).
 
 Каждый элемент строки представлен объектом `CardView` , который содержит `ImageView` (для фотографии) и `TextView` (для заголовка). Этот макет находится в файле **фотокардвиев. axml**:
 
@@ -220,7 +220,7 @@ public class PhotoAlbumAdapter : RecyclerView.Adapter
 ```
 
 Этот макет представляет один элемент строки в `RecyclerView` . `OnBindViewHolder`Метод (описан ниже) копирует данные из источника данных в `ImageView` и в `TextView` этом макете.
-`OnCreateViewHolder`увеличивает этот макет для заданного расположения фотографии в `RecyclerView` и создает новый `PhotoViewHolder` экземпляр (который находит и кэширует ссылки на `ImageView` и `TextView` дочерние представления в связанном `CardView` макете):
+`OnCreateViewHolder` увеличивает этот макет для заданного расположения фотографии в `RecyclerView` и создает новый `PhotoViewHolder` экземпляр (который находит и кэширует ссылки на `ImageView` и `TextView` дочерние представления в связанном `CardView` макете):
 
 ```csharp
 public override RecyclerView.ViewHolder
@@ -241,7 +241,7 @@ public override RecyclerView.ViewHolder
 
 #### <a name="onbindviewholder"></a>онбиндвиевхолдер
 
-Когда Диспетчер макетов готов к отображению определенного представления в `RecyclerView` видимой области экрана, он вызывает `OnBindViewHolder` метод адаптера для заполнения элемента в указанной позиции строки содержимым из источника данных. `OnBindViewHolder`Получает сведения о фотографии для указанной позицией строки (ресурса изображения фотографии и строки для подписи фотографии) и копирует эти данные в связанные представления. Представления размещаются через ссылки, хранящиеся в объекте-владельцу представления (который передается через `holder` параметр):
+Когда Диспетчер макетов готов к отображению определенного представления в `RecyclerView` видимой области экрана, он вызывает `OnBindViewHolder` метод адаптера для заполнения элемента в указанной позиции строки содержимым из источника данных. `OnBindViewHolder` Получает сведения о фотографии для указанной позицией строки (ресурса изображения фотографии и строки для подписи фотографии) и копирует эти данные в связанные представления. Представления размещаются через ссылки, хранящиеся в объекте-владельцу представления (который передается через `holder` параметр):
 
 ```csharp
 public override void
@@ -277,7 +277,7 @@ public override int ItemCount
 
 ### <a name="putting-it-all-together"></a>Совместное размещение
 
-Результирующая `RecyclerView` реализация в примере Photo App состоит из `MainActivity` кода, который создает источник данных, Диспетчер макетов и адаптер. `MainActivity`создает `mRecyclerView` экземпляр источника данных и адаптер и подключает его к диспетчеру макета и адаптеру:
+Результирующая `RecyclerView` реализация в примере Photo App состоит из `MainActivity` кода, который создает источник данных, Диспетчер макетов и адаптер. `MainActivity` создает `mRecyclerView` экземпляр источника данных и адаптер и подключает его к диспетчеру макета и адаптеру:
 
 ```csharp
 public class MainActivity : Activity
@@ -306,7 +306,7 @@ public class MainActivity : Activity
 
 ```
 
-`PhotoViewHolder`находит и кэширует ссылки на представление:
+`PhotoViewHolder` находит и кэширует ссылки на представление:
 
 ```csharp
 public class PhotoViewHolder : RecyclerView.ViewHolder
@@ -323,7 +323,7 @@ public class PhotoViewHolder : RecyclerView.ViewHolder
 }
 ```
 
-`PhotoAlbumAdapter`реализует три переопределенных метода.
+`PhotoAlbumAdapter` реализует три переопределенных метода.
 
 ```csharp
 public class PhotoAlbumAdapter : RecyclerView.Adapter
@@ -362,7 +362,7 @@ public class PhotoAlbumAdapter : RecyclerView.Adapter
 
 [![Два снимка экрана приложения для просмотра фотографий с вертикальной прокруткой карт фото](recyclerview-example-images/03-recyclerviewer-basic-sml.png)](recyclerview-example-images/03-recyclerviewer-basic.png#lightbox)
 
-Если тени не рисуются (как показано на снимке экрана выше), измените **Свойства/AndroidManifest. XML** и добавьте следующий параметр атрибута в `<application>` элемент:
+Если тени не рисуются (как показано на снимке экрана выше), измените **Свойства/AndroidManifest.xml** и добавьте следующий параметр атрибута в `<application>` элемент:
 
 ```xml
 android:hardwareAccelerated="true"
@@ -389,7 +389,7 @@ mLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.Horizontal, fa
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Рециклервиевер (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-recyclerviewer)
+- [Рециклервиевер (пример)](/samples/xamarin/monodroid-samples/android50-recyclerviewer)
 - [RecyclerView](~/android/user-interface/layouts/recycler-view/index.md)
 - [RecyclerView части и функциональные возможности](~/android/user-interface/layouts/recycler-view/parts-and-functionality.md)
 - [Расширение примера RecyclerView](~/android/user-interface/layouts/recycler-view/extending-the-example.md)

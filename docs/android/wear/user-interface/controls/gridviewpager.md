@@ -6,16 +6,16 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/02/2018
-ms.openlocfilehash: 77c5eb65601e5bfdac2cbaad2e196a8ae2813981
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 9c80535dfddd2a279fac66ab159c2a600681bb71
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030325"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457007"
 ---
 # <a name="gridviewpager"></a>GridViewPager
 
-В образце [гридвиевпажер](https://docs.microsoft.com/samples/xamarin/monodroid-samples/wear-gridviewpager) показано, как реализовать шаблон навигации для средства выбора 2D для выполнения износа Android.
+В образце [гридвиевпажер](/samples/xamarin/monodroid-samples/wear-gridviewpager) показано, как реализовать шаблон навигации для средства выбора 2D для выполнения износа Android.
 
 ![Пример снимка экрана Гридвиевпажер на квадратном дисплее](gridviewpager-images/gridviewpager.png)
 
@@ -31,11 +31,11 @@ XML-файл макета выглядит следующим образом:
     android:keepScreenOn="true" />
 ```
 
-Создание [`GridPagerAdapter`](https://developer.android.com/reference/android/support/wearable/view/GridPagerAdapter.html)
+Создайте [`GridPagerAdapter`](https://developer.android.com/reference/android/support/wearable/view/GridPagerAdapter.html)
 (или подкласс, например [`FragmentGridPagerAdapter`](https://developer.android.com/reference/android/support/wearable/view/FragmentGridPagerAdapter.html)
 для предоставления представлений, отображаемых при переходе пользователя.
 
-В [примере адаптера](https://github.com/xamarin/monodroid-samples/blob/master/wear/GridViewPager/GridViewPager/SimpleGridPagerAdapter.cs) показано, как реализовать необходимые методы, включая переопределения для `RowCount`, `GetColumnCount`, `GetBackground`и `GetFragment`
+В [примере адаптера](https://github.com/xamarin/monodroid-samples/blob/master/wear/GridViewPager/GridViewPager/SimpleGridPagerAdapter.cs) показано, как реализовать необходимые методы, включая переопределения для `RowCount` ,, `GetColumnCount` `GetBackground` и `GetFragment`
 
 Присоединить адаптер, как показано ниже.
 
@@ -47,4 +47,4 @@ pager.Adapter = new SimpleGridPagerAdapter (this, FragmentManager);
 
 - [Документ средства выбора 2D в Google](https://developer.android.com/training/wearables/ui/2d-picker.html)
 - [Документация по Android. support. носимого пользователем](https://developer.android.com/reference/android/support/wearable/view/package-summary.html)
-- [Гридвиевпажер (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/wear-gridviewpager)
+- [Гридвиевпажер (пример)](/samples/xamarin/monodroid-samples/wear-gridviewpager)

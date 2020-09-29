@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 01/03/2018
-ms.openlocfilehash: bce89be8bec512ac70ca40015521c7d56f3460d3
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: a972f6686103dc9b3a1317d15985cbf3dc78bd82
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73028811"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457070"
 ---
 # <a name="recyclerview"></a>RecyclerView
 
@@ -21,9 +21,9 @@ _RecyclerView — это группа представлений для отоб
 ## <a name="recyclerview"></a>RecyclerView
 
 Многие приложения должны отображать коллекции одного типа (например, сообщения, контакты, изображения или песни). часто эта коллекция слишком велика, чтобы уместиться на экране, поэтому коллекция представлена в маленьком окне, позволяющем плавно прокручивать все элементы коллекции.
-`RecyclerView` — это мини-приложение Android, которое отображает коллекцию элементов в списке или сетке, позволяя пользователю прокручивать коллекцию. Ниже приведен снимок экрана примера приложения, которое использует `RecyclerView` для отображения содержимого папки "Входящие" электронной почты в прокручиваемом вертикальном списке:
+`RecyclerView` — Это мини-приложение Android, которое отображает коллекцию элементов в списке или сетке, позволяя пользователю прокручивать коллекцию. Ниже приведен снимок экрана примера приложения, которое использует `RecyclerView` для отображения содержимого папки "Входящие" электронной почты в вертикальном списке прокрутки:
 
-[![пример приложения с использованием RecyclerView для вывода списка сообщений в папке "Входящие"](images/01-recyclerview-example-sml.png)](images/01-recyclerview-example.png#lightbox)
+[![Пример приложения, использующего RecyclerView для вывода списка входящих сообщений](images/01-recyclerview-example-sml.png)](images/01-recyclerview-example.png#lightbox)
 
 `RecyclerView` предлагает две интересные функции:
 
@@ -31,56 +31,56 @@ _RecyclerView — это группа представлений для отоб
 
 - Она работает эффективно с большими коллекциями, так как она повторно использует представления элементов и требует использования *владельцев представления* для ссылок на представления кэша.
 
-В этом руководство объясняется, как использовать `RecyclerView` в приложениях Xamarin. Android. в нем объясняется, как добавить пакет `RecyclerView` в проект Xamarin. Android, и в нем описано, как `RecyclerView` функции в типичном приложении. Реальные примеры кода содержат сведения о том, как интегрировать `RecyclerView` в приложение, как реализовать нажатие кнопки "Просмотр элементов" и как обновить `RecyclerView` при изменении базовых данных. В этом учебнике предполагается, что вы знакомы с разработкой Xamarin. Android.
+В этом руководство объясняется, как использовать `RecyclerView` в приложениях Xamarin. Android. в нем объясняется `RecyclerView` , как добавить пакет в проект Xamarin. Android, и в нем описываются `RecyclerView` функции типичного приложения. Реальные примеры кода содержат сведения о том, как интегрироваться `RecyclerView` в приложение, как реализовать нажатие кнопки "Просмотр элементов" и как обновляться `RecyclerView` при изменении базовых данных. В этом учебнике предполагается, что вы знакомы с разработкой Xamarin. Android.
 
 ### <a name="requirements"></a>Требования
 
-Хотя `RecyclerView` часто связывается с интерфейсом загрузки Android 5,0, она предоставляется в виде библиотеки поддержки &ndash; `RecyclerView` работает с приложениями, предназначенными для API уровня 7 (Android 2,1) и более поздних версий. Для использования `RecyclerView` в приложениях на основе Xamarin необходимо следующее:
+Несмотря на `RecyclerView` то, что часто связывается с интерфейсом загрузки Android 5,0, оно предоставляется в виде библиотеки поддержки &ndash; `RecyclerView` для приложений, предназначенных для API уровня 7 (Android 2,1) и более поздних версий. Для использования `RecyclerView` в приложениях на основе Xamarin необходимо следующее:
 
-- **Xamarin. android** &ndash; Xamarin. Android 4,20 или более поздней версии должен быть установлен и настроен с помощью Visual Studio или Visual Studio для Mac.
+- **Xamarin. Android** &ndash; xamarin. Android 4,20 или более поздней версии должен быть установлен и настроен с помощью Visual Studio или Visual Studio для Mac.
 
-- Проект приложения должен содержать пакет **Xamarin. Android. support. версии 7. RecyclerView** . Дополнительные сведения об установке пакетов NuGet см. [в разделе Пошаговое руководство. Включение NuGet в проект](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough).
+- Проект приложения должен содержать пакет **Xamarin. Android. support. версии 7. RecyclerView** . Дополнительные сведения об установке пакетов NuGet см. [в разделе Пошаговое руководство. Включение NuGet в проект](/visualstudio/mac/nuget-walkthrough).
 
 ### <a name="overview"></a>Обзор
 
-`RecyclerView` можно рассматривать как замену для мини-приложений `ListView` и `GridView` в Android. Как и предшественники, `RecyclerView` предназначен для отображения большого набора данных в маленьком окне, но `RecyclerView` предлагает больше вариантов макета и лучше оптимизирован для отображения больших коллекций. Если вы знакомы с `ListView`, существует несколько важных различий между `ListView` и `RecyclerView`:
+`RecyclerView` можно рассматривать как замену для мини-приложений `ListView` и `GridView` в Android. Как и его предшественники, `RecyclerView` предназначен для отображения большого набора данных в маленьком окне, но `RecyclerView` предлагает больше вариантов макета и лучше оптимизирован для отображения больших коллекций. Если вы знакомы с `ListView` , существует несколько важных различий между `ListView` и `RecyclerView` :
 
-- `RecyclerView` немного сложнее в использовании: необходимо написать дополнительный код для использования `RecyclerView` по сравнению с `ListView`.
+- `RecyclerView` немного сложнее в использовании: необходимо написать дополнительный код для использования по `RecyclerView` сравнению с `ListView` .
 
-- `RecyclerView` не предоставляет предопределенный адаптер; необходимо реализовать код адаптера, который обращается к источнику данных. Однако Android включает несколько стандартных адаптеров, которые работают с `ListView` и `GridView`.
+- `RecyclerView` не предоставляет предопределенный адаптер; необходимо реализовать код адаптера, который обращается к источнику данных. Однако Android включает несколько стандартных адаптеров, которые работают с `ListView` и `GridView` .
 
-- `RecyclerView` не предлагает событие щелчка элемента, когда пользователь касается элемента; Вместо этого события щелчка элемента обрабатываются вспомогательными классами. Напротив, `ListView` предлагает событие щелчка элемента.
+- `RecyclerView` не предлагает событие щелчка элемента, когда пользователь касается элемента. Вместо этого события щелчка элемента обрабатываются вспомогательными классами. В отличие от этого, `ListView` предлагает событие щелчка элемента.
 
-- `RecyclerView` повышает производительность, перезапуская представления и применяя шаблон представления, который устраняет ненужные Просмотры ресурсов макета. Использование шаблона представления-заполнителя является необязательным в `ListView`.
+- `RecyclerView` повышает производительность, перезапуская представления и применяя шаблон представления, который устраняет ненужные Просмотры ресурсов макета. Использование шаблона представления-заполнителя является необязательным в `ListView` .
 
 - `RecyclerView` основан на модульной конструкции, которая упрощает настройку. Например, можно подключить другую политику макета без значительных изменений кода в приложении.
-    Напротив, `ListView` является относительно монолитной структурой.
+    Напротив, `ListView` является относительно монолитным в структуре.
 
-- `RecyclerView` включает встроенные анимации для элемента добавить и удалить. для анимации `ListView` требуются некоторые дополнительные усилия в части разработчика приложения.
+- `RecyclerView` включает встроенные анимации для элемента добавить и удалить. `ListView` Анимация требует некоторых дополнительных усилий в части разработчика приложения.
 
 ### <a name="sections"></a>Разделы
 
-#### <a name="recyclerview-parts-and-functionalityandroiduser-interfacelayoutsrecycler-viewparts-and-functionalitymd"></a>[RecyclerView части и функциональные возможности](~/android/user-interface/layouts/recycler-view/parts-and-functionality.md)
+#### <a name="recyclerview-parts-and-functionality"></a>[RecyclerView части и функциональные возможности](~/android/user-interface/layouts/recycler-view/parts-and-functionality.md)
 
-В этом разделе объясняется, как `Adapter`, `LayoutManager`и `ViewHolder` работают вместе в качестве вспомогательных классов для поддержки `RecyclerView`.
+В этом разделе объясняется `Adapter` , как, `LayoutManager` и `ViewHolder` работают вместе как вспомогательные классы для поддержки `RecyclerView` .
 Он предоставляет общий обзор каждого из этих вспомогательных классов и объясняет, как использовать их в приложении.
 
-#### <a name="a-basic-recyclerview-exampleandroiduser-interfacelayoutsrecycler-viewrecyclerview-examplemd"></a>[Пример базового RecyclerView](~/android/user-interface/layouts/recycler-view/recyclerview-example.md)
+#### <a name="a-basic-recyclerview-example"></a>[Пример базового RecyclerView](~/android/user-interface/layouts/recycler-view/recyclerview-example.md)
 
-В этом разделе приводятся реальные примеры кода, демонстрирующие реализацию различных элементов `RecyclerView` для создания приложения для [работы](~/android/user-interface/layouts/recycler-view/parts-and-functionality.md) с фотографиями в реальном мире.
+Этот раздел основан на информации, представленной в [RecyclerView частях и функциональных](~/android/user-interface/layouts/recycler-view/parts-and-functionality.md) возможностях, предоставляя реальные примеры кода `RecyclerView` реализации различных элементов для создания приложения для работы с фотографиями в реальном мире.
 
-#### <a name="extending-the-recyclerview-exampleandroiduser-interfacelayoutsrecycler-viewextending-the-examplemd"></a>[Расширение примера RecyclerView](~/android/user-interface/layouts/recycler-view/extending-the-example.md)
+#### <a name="extending-the-recyclerview-example"></a>[Расширение примера RecyclerView](~/android/user-interface/layouts/recycler-view/extending-the-example.md)
 
-В этом разделе добавляется дополнительный код в пример приложения, представленный в [базовом примере RecyclerView](~/android/user-interface/layouts/recycler-view/recyclerview-example.md) , чтобы продемонстрировать, как обрабатывает события щелчка элемента и обновляет `RecyclerView` при изменении базового источника данных.
+В этом разделе добавляется дополнительный код для примера приложения, представленного в [базовом примере RecyclerView](~/android/user-interface/layouts/recycler-view/recyclerview-example.md) , чтобы продемонстрировать, как обрабатывает события щелчка элемента и обновляются `RecyclerView` при изменении базового источника данных.
 
 ### <a name="summary"></a>Сводка
 
-В этом руководством появился мини-приложение `RecyclerView` Android. в нем было объяснено, как добавить библиотеку поддержки `RecyclerView` в проекты Xamarin. Android, как `RecyclerView` перезапускать представления, как он обеспечивает эффективность шаблона представления и как различные вспомогательные классы, которые составляют `RecyclerView` совместной работы для отображения коллекций. В нем приведен пример кода для демонстрации того, как `RecyclerView` интегрирована в приложение, было объяснено, как настроить политику макета `RecyclerView`, подключив различные диспетчеры макетов и описывали обработку событий щелчка элемента и уведомления `RecyclerView` данных. исходные изменения.
+В этом руководство было представлено `RecyclerView` мини-приложение Android. в нем было объяснено, как добавить `RecyclerView` библиотеку поддержки в проекты Xamarin. Android, как `RecyclerView` перезапускать представления, как она применяет шаблон представления для повышения эффективности и как различные вспомогательные классы, которые составляют `RecyclerView` совместную работу для отображения коллекций. В нем представлен пример кода для демонстрации того `RecyclerView` , как интегрирована в приложение, было объяснено, как настроить `RecyclerView` политику макета в соответствии с разделом в различных диспетчерах макета, и было описано, как управлять событиями щелчка элемента и уведомлять об `RecyclerView` изменениях в источнике данных.
 
-Дополнительные сведения о `RecyclerView`см. в [справочнике по классам RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html).
+Дополнительные сведения о `RecyclerView` см. в [справочнике по классам RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html).
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Рециклервиевер (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-recyclerviewer)
+- [Рециклервиевер (пример)](/samples/xamarin/monodroid-samples/android50-recyclerviewer)
 - [Введение в интерфейс без описания операций](~/android/platform/lollipop.md)
 - [RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html)

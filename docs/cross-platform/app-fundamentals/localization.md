@@ -6,12 +6,12 @@ ms.assetid: CC6847B2-23FB-4EDE-9F7E-EF29DD46A5C5
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: dab6d1ff573f0f74b3b230732aa4669ba9fda0d5
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 38bee7e2c4c0b3cdf5107842e47feeeb1445d626
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934866"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457735"
 ---
 # <a name="localization"></a>Локализация
 
@@ -108,7 +108,7 @@ double.Parse("1,999.99", CultureInfo.InvariantCulture);
 double.Parse("1 999,99", CultureInfo.CreateSpecificCulture("fr-FR"));
 ```
 
-Дополнительные сведения см. в статьях [анализ числовых строк](https://msdn.microsoft.com/library/xbtzcc4w(v=vs.110).aspx) и [Анализ строк даты и времени](https://msdn.microsoft.com/library/2h3syy57(v=vs.110).aspx) статьи MSDN.
+Дополнительные сведения см. в статьях [анализ числовых строк](/dotnet/standard/base-types/parsing-numeric) и [Анализ строк даты и времени](/dotnet/standard/base-types/parsing-datetime) статьи MSDN.
 
 <a name="rtl"></a>
 
@@ -128,7 +128,7 @@ double.Parse("1 999,99", CultureInfo.CreateSpecificCulture("fr-FR"));
 
 Разные языки определяют порядок сортировки алфавитов по-разному, даже если они используют один и тот же набор символов.
 
-См. [подробные сведения о сравнении строк](https://msdn.microsoft.com/library/dd465121(v=vs.110).aspx#the_details_of_string_comparison) в рекомендациях [по использованию строк в .NET Framework](https://msdn.microsoft.com/library/dd465121(v=vs.110).aspx) в качестве примера, где Language (CultureInfo) влияет на порядок сортировки.
+См. [подробные сведения о сравнении строк](/dotnet/standard/base-types/best-practices-strings#the_details_of_string_comparison) в рекомендациях [по использованию строк в .NET Framework](/dotnet/standard/base-types/best-practices-strings) в качестве примера, где Language (CultureInfo) влияет на порядок сортировки.
 
 Маловероятно, что встроенные возможности баз данных на мобильных платформах будут поддерживать порядок сортировки для конкретного языка, поэтому вам может потребоваться реализовать дополнительный код в бизнес-логике.
 
@@ -155,7 +155,7 @@ double.Parse("1 999,99", CultureInfo.CreateSpecificCulture("fr-FR"));
 
 ### <a name="dont-over-translate"></a>Не чрезмерно перевод
 
-Некоторые строки в приложении могут не потребовать преобразования или, как минимум, требуется особое внимание переводчику. К распространенным примерам относятся следующие.
+Некоторые строки в приложении могут не потребовать преобразования или, как минимум, требуется особое внимание переводчику. Примеры могут включать в себя следующие элементы:
 
 - URL-адреса. Если вы передаете URL-адрес, он может быть или не должен корректироваться языком. Например, facebook.com не требует перевода автоматически определяет язык на основном сайте. Другие сайты имеют содержимое, зависящее от языкового стандарта, и вы можете предложить другой URL-адрес, например yahoo.com и yahoo.fr или yahoo.it.
 - Телефонные номера, особенно те, которые имеют разные коды стран или номера для вызывающих объектов, говорящих на определенном языке.
@@ -281,7 +281,7 @@ double.Parse("1 999,99", CultureInfo.CreateSpecificCulture("fr-FR"));
 
 Одна из наиболее известных служб — [лионбридже](https://www.lionbridge.com/). Большинство профессиональных служб поддерживают все распространенные типы файлов, включая строки, XML, RESX и POT/PO.
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье были рассмотрены некоторые концепции, с которыми следует ознакомиться, прежде чем интернатионализинг приложение, а затем локализовать ресурсы, а также как изменить языковые настройки для каждой платформы.
 
@@ -297,4 +297,4 @@ double.Parse("1 999,99", CultureInfo.CreateSpecificCulture("fr-FR"));
 
 - [Обзор локализации Apple](https://developer.apple.com/internationalization/)
 - [Контрольный список локализации для Android](https://developer.android.com/distribute/tools/localization-checklist.html)
-- [Рекомендации по разработке приложений, готовых к международному использованию (MSDN)](https://msdn.microsoft.com/library/w7x1y988%28v=vs.90%29.aspx)
+- [Рекомендации по разработке приложений, готовых к международному использованию (MSDN)](/previous-versions/visualstudio/visual-studio-2008/w7x1y988(v=vs.90))

@@ -6,12 +6,12 @@ ms.assetid: B581B2D0-9890-C383-C654-0B0E12DAD5A6
 author: davidortinau
 ms.author: daortin
 ms.date: 03/23/2017
-ms.openlocfilehash: 96f5dd638de17569d105e95c44a539e652b35986
-ms.sourcegitcommit: d7c09c6cc2f479b8f14910ad2d20ec76800cd9c7
+ms.openlocfilehash: 803b42cfcc27dc86b0d4bc78fc4745af5565e8cb
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91248130"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457553"
 ---
 # <a name="cross-platform-app-case-study-tasky"></a>Пример межплатформенного приложения: задача
 
@@ -164,7 +164,7 @@ public T GetItem<T> (int id) where T : BL.Contracts.IBusinessEntity, new ()
 
 #### <a name="locking-to-prevent-concurrent-access"></a>Блокировка для предотвращения параллельного доступа
 
-[Блокировка](https://msdn.microsoft.com/library/c5kehkcz(v=vs.100).aspx) реализуется в `TaskItemDatabase` классе для предотвращения параллельного доступа к базе данных. Это позволяет обеспечить сериализацию параллельного доступа из разных потоков (в противном случае компонент пользовательского интерфейса может попытаться прочитать базу данных одновременно с его обновлением в фоновом потоке). Ниже показан пример реализации блокировки.
+[Блокировка](/previous-versions/visualstudio/visual-studio-2010/c5kehkcz(v=vs.100)) реализуется в `TaskItemDatabase` классе для предотвращения параллельного доступа к базе данных. Это позволяет обеспечить сериализацию параллельного доступа из разных потоков (в противном случае компонент пользовательского интерфейса может попытаться прочитать базу данных одновременно с его обновлением в фоновом потоке). Ниже показан пример реализации блокировки.
 
 ```csharp
 static object locker = new object ();

@@ -5,12 +5,12 @@ description: Простое объяснение того, как отделит
 author: davidortinau
 ms.author: daortin
 ms.date: 04/26/2017
-ms.openlocfilehash: 181034a4936b2da010a2fcd280ded1a3419d43ae
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 0bb5a7b851a80cb92881968729e561caeaf48d12
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73016453"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91456851"
 ---
 # <a name="desktop-app-porting-guidance"></a>Руководство по переносу приложений для настольных компьютеров
 
@@ -22,11 +22,11 @@ ms.locfileid: "73016453"
 - Хранение локальных данных и доступ к ним
 - Веб-службы и удаленный доступ к данным
 
-Для приложений Windows Forms и WPF, написанных с помощью C# (или Visual Basic.NET), неудивительное количество бизнес-логики, доступ к локальным данным и веб-службы могут совместно использоваться различными платформами.
+Для Windows Forms и приложений WPF, написанных на C# (или Visual Basic.NET), неудивительное количество бизнес-логики, доступ к локальным данным и веб-службам можно совместно использовать на разных платформах.
 
 ## <a name="net-portability-analyzer"></a>Анализатор переносимости .NET
 
-Visual Studio 2017 и более поздней версии поддерживают [анализатор переносимости .NET](https://docs.microsoft.com/dotnet/articles/standard/portability-analyzer) ([загружаемый для Windows](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)), который может изучить имеющиеся приложения и узнать, сколько кода можно перенести "как есть" на другие платформы. Дополнительные сведения см. в [видео Channel 9](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer).
+Visual Studio 2017 и более поздней версии поддерживают [анализатор переносимости .NET](/dotnet/articles/standard/portability-analyzer) ([загружаемый для Windows](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)), который может изучить имеющиеся приложения и узнать, сколько кода можно перенести "как есть" на другие платформы. Дополнительные сведения см. в [видео Channel 9](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer).
 
 Кроме того, можно загрузить средство командной строки из [анализатора переносимости на GitHub](https://github.com/Microsoft/dotnet-apiport) и использовать его для создания одних и тех же отчетов.
 

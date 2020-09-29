@@ -6,12 +6,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/25/2018
-ms.openlocfilehash: 86e05dc0e9cd5df325126cc5a339b36dd27c1e45
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 1747601596cd1772210d9a66755d7aa98ca14052
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030358"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457033"
 ---
 # <a name="working-with-screen-sizes"></a>Работа с размерами экрана
 
@@ -21,15 +21,15 @@ ms.locfileid: "73030358"
 
 ## <a name="identifying-screen-type"></a>Определение типа экрана
 
-Библиотека "износ" предоставляет некоторые элементы управления, помогающие обнаруживать и адаптировать различные экранные формы, например `WatchViewStub` и `BoxInsetLayout`.
+Библиотека "износ" предоставляет некоторые элементы управления, помогающие обнаруживать и адаптировать различные экранные формы, такие как `WatchViewStub` и `BoxInsetLayout` .
 
-Имейте в виду, что некоторые другие элементы управления библиотеки поддержки (например, `GridViewPager`) *автоматически* обнаруживают экранную форму и не должны добавляться как дочерние элементы управления, описанные ниже.
+Имейте в виду, что некоторые из других элементов управления библиотеки поддержки (например, `GridViewPager` ) *автоматически* обнаруживают экранную форму и не должны добавляться как дочерние элементы управления, описанные ниже.
 
 ### <a name="watchviewstub"></a>ватчвиевстуб
 
-См. пример [ватчвиевстуб](https://docs.microsoft.com/samples/xamarin/monodroid-samples/wear-watchviewstub) , чтобы узнать, как определить тип экрана и отобразить различные макеты для каждого типа.
+См. пример [ватчвиевстуб](/samples/xamarin/monodroid-samples/wear-watchviewstub) , чтобы узнать, как определить тип экрана и отобразить различные макеты для каждого типа.
 
-Основной файл макета содержит `android.support.wearable.view.WatchViewStub`, который ссылается на различные макеты прямоугольных и круглых экранов с помощью атрибутов `app:rectLayout` и `app:roundLayout`:
+Основной файл макета содержит, `android.support.wearable.view.WatchViewStub` который ссылается на различные макеты для прямоугольных и круглых экранов с использованием `app:rectLayout` `app:roundLayout` атрибутов и.
 
 ```xml
 <android.support.wearable.view.WatchViewStub

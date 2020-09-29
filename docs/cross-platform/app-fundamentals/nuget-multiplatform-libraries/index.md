@@ -6,12 +6,12 @@ ms.assetid: F0A5A9BB-86CD-44C9-8EE8-74D1E5E74A30
 author: davidortinau
 ms.author: daortin
 ms.date: 07/25/2018
-ms.openlocfilehash: ac8e4b2eef0905ba50cb24b9eb035d50a05dd84a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f0d1195d9159623ec865b1ea1fec26d9969925ca
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86932251"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91456604"
 ---
 # <a name="nuget-multiplatform-library-projects-nugetizer-3000"></a>Проекты многоплатформенных библиотек NuGet (Нужетизер 3000)
 
@@ -53,9 +53,9 @@ _Автоматическое создание пакетов NuGet для со�
 
 ## <a name="further-nuget-information"></a>Дополнительные сведения о NuGet
 
-Узнайте больше о [создании NuGet для Xamarin вручную](~/cross-platform/app-fundamentals/nuget-manual.md) и о том, как [включить пакет NuGet в приложение](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough).
+Узнайте больше о [создании NuGet для Xamarin вручную](~/cross-platform/app-fundamentals/nuget-manual.md) и о том, как [включить пакет NuGet в приложение](/visualstudio/mac/nuget-walkthrough).
 
-Документация по Microsoft [NuGet](https://docs.microsoft.com/nuget/) содержит более подробные сведения о формате **nupkg** и использовании пакетов NuGet в Visual Studio.
+Документация по Microsoft [NuGet](/nuget/) содержит более подробные сведения о формате **nupkg** и использовании пакетов NuGet в Visual Studio.
 
 Обсуждение разработки для проектов пакетов NuGet ( Нужетизер 3000) доступен в [репозитории GitHub для NuGet](https://github.com/NuGet/Home/wiki/NuGetizer-3000).
 
@@ -63,4 +63,4 @@ _Автоматическое создание пакетов NuGet для со�
 
 - [Примеры использования Нужетизер-3000](https://github.com/NuGet/Home/wiki/NuGetizer-Core-Scenarios)
 - [Создание пакетов NuGet для Xamarin вручную](~/cross-platform/app-fundamentals/nuget-manual.md)
-- [Документация по NuGet](https://docs.microsoft.com/nuget/)
+- [Документация по NuGet](/nuget/)

@@ -6,16 +6,16 @@ ms.assetid: 19B1F126-866E-4672-92D2-BE2B70ACF0F1
 author: davidortinau
 ms.author: daortin
 ms.date: 06/13/2019
-ms.openlocfilehash: d5f3fb2a793f658334555aae3328e69134b2666a
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 8c5e470c1a0bd029fedabb1bd1e228cb2a62f84d
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73029673"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457384"
 ---
 # <a name="xamarin-live-player-for-xamarinforms"></a>Xamarin Live Player для Xamarin. Forms
 
-Так как исходный код интерпретируется, вы можете достичь [ограничений](limitations.md) через некоторое время и выполнить полную компиляцию приложения для устройства или эмулятора.
+Так как исходный код интерпретируется, вы можете достичь [ограничений](./troubleshooting.md) через некоторое время и выполнить полную компиляцию приложения для устройства или эмулятора.
 
 ![Предварительная версия](~/media/shared/preview.png)
 
@@ -33,10 +33,10 @@ ms.locfileid: "73029673"
 2. Управление устройствами Live Player для сканирования QR-кода для связывания устройства с Visual Studio.
 3. Приложение выполняется на телефоне или планшете.
 
-## <a name="xamarin-live-player-appplayermd"></a>[Приложение Xamarin Live Player](player.md)
+## <a name="xamarin-live-player-app"></a>[Приложение Xamarin Live Player](player.md)
 
 С помощью приложения Xamarin Live Player.
 
-## <a name="troubleshootingtroubleshootingmd"></a>[Устранение неполадок](troubleshooting.md)
+## <a name="troubleshooting"></a>[Устранение неполадок](troubleshooting.md)
 
 Поиск справки в случае возникновения проблем.

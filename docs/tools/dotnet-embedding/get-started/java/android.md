@@ -6,12 +6,12 @@ ms.assetid: 870F0C18-A794-4C5D-881B-64CC78759E30
 author: davidortinau
 ms.author: daortin
 ms.date: 03/28/2018
-ms.openlocfilehash: bcda03d41cb3bafcfb3ee4b92046014cc5b0c119
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 813fb08835f30d0fc24f0c04e1f26b1f4e7f83e0
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73029767"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91456553"
 ---
 # <a name="getting-started-with-android"></a>Начало работы с Android
 
@@ -22,7 +22,7 @@ ms.locfileid: "73029767"
 
 В качестве обзора мы будем делать следующее:
 
-- Создание проекта C# Библиотеки Android
+- Создание проекта библиотеки C# для Android
 - Установка внедрения .NET с помощью NuGet
 - Запуск внедрения .NET в сборку библиотеки Android
 - Используйте созданный файл AAR в проекте Java в Android Studio
@@ -70,9 +70,9 @@ public class HelloActivity : Activity
 ```
 
 > [!NOTE]
-> Не забывайте атрибут `[Register]`. Дополнительные сведения см. в разделе [ограничения](#current-limitations-on-android).
+> Не забудьте `[Register]` атрибут. Дополнительные сведения см. в разделе [ограничения](#current-limitations-on-android).
 
-Выполните построение проекта. Полученная сборка будет сохранена в `bin/Debug/hello-from-csharp.dll`.
+Выполните построение проекта. Результирующая сборка будет сохранена в `bin/Debug/hello-from-csharp.dll` .
 
 ## <a name="installing-net-embedding-from-nuget"></a>Установка внедрения .NET из NuGet
 
@@ -97,9 +97,9 @@ if exist %E4K_OUTPUT% rmdir /S /Q %E4K_OUTPUT%
 ## <a name="use-the-generated-output-in-an-android-studio-project"></a>Использование созданных выходных данных в проекте Android Studio
 
 1. Откройте Android Studio и создайте новый проект с **пустым действием**.
-2. Щелкните правой кнопкой мыши модуль **приложения** и выберите пункт **Создать > модуль**.
+2. Щелкните правой кнопкой мыши модуль **приложения** и выберите пункт **создать > модуль**.
 3. Выберите **Импорт. JAR/. Пакет AAR**.
-4. С помощью обозревателя каталогов перейдите на вкладку **~/Projects/Hello-from-CSharp/Output/hello_from_csharp.AAR** и нажмите кнопку **Готово**.
+4. С помощью обозревателя каталогов перейдите к папке **~/прожектс/хелло-фром-кшарп/аутпут/hello_from_csharp. AAR** и нажмите кнопку **Готово**.
 
 ![Импорт AAR в Android Studio](android-images/androidstudioimport.png)
 
@@ -111,7 +111,7 @@ if exist %E4K_OUTPUT% rmdir /S /Q %E4K_OUTPUT%
 
 ![Зависимости Android Studio](android-images/androidstudiodependencies.png)
 
-В действии добавьте новый метод `onResume` и используйте следующий код для запуска C# действия:
+В действии добавьте новый `onResume` метод и используйте следующий код для запуска действия C#:
 
 ```java
 import hello_from_csharp.*;
@@ -155,11 +155,11 @@ com.xamarin.hellocsharp A/monodroid: No assemblies found in '(null)' or '<unavai
 
 При запуске приложения:
 
-![Приветствие C# из примера, выполняемого в эмуляторе](android-images/hello-from-csharp-android.png)
+![Пример "Hello from C#", выполняемый в эмуляторе](android-images/hello-from-csharp-android.png)
 
 Обратите внимание на то, что произошло здесь:
 
-- У нас есть C# класс,`HelloActivity`, который подклассировать на Java
+- У нас есть класс C#, `HelloActivity` который подклассировать Java
 - У нас есть файлы ресурсов Android
 - Мы использовали их из Java в Android Studio
 
@@ -167,11 +167,11 @@ com.xamarin.hellocsharp A/monodroid: No assemblies found in '(null)' or '<unavai
 
 - Xamarin. Android настраивается при запуске приложения
 - Сборки .NET, включаемые в **активы или сборки**
-- Изменения **AndroidManifest. XML** для ваших C# действий и т. д.
+- **AndroidManifest.xml** изменения для действий C# и т. д.
 - Ресурсы и активы Android из библиотек .NET
-- [Вызываемые оболочки Android](~/android/platform/java-integration/android-callable-wrappers.md) для любого подкласса `Java.Lang.Object`
+- [Вызываемые оболочки Android](~/android/platform/java-integration/android-callable-wrappers.md) для любого `Java.Lang.Object` подкласса
 
-Если вы ищете дополнительное пошаговое руководство, ознакомьтесь с приведенным ниже видео, в котором демонстрируется внедрение [демонстрационного финжерпаинта](https://docs.microsoft.com/samples/xamarin/monodroid-samples/applicationfundamentals-fingerpaint) Чарльз Петцольд в проект Android Studio.
+Если вы ищете дополнительное пошаговое руководство, ознакомьтесь с приведенным ниже видео, в котором демонстрируется внедрение [демонстрационного финжерпаинта](/samples/xamarin/monodroid-samples/applicationfundamentals-fingerpaint) Чарльз Петцольд в проект Android Studio.
 
 [![Ембеддинатор-4000 для Android](https://img.youtube.com/vi/ZVcrXUpCNpI/0.jpg)](https://www.youtube.com/watch?v=ZVcrXUpCNpI)
 
@@ -207,7 +207,7 @@ android {
 
 ## <a name="current-limitations-on-android"></a>Текущие ограничения в Android
 
-Сейчас, если подкласс `Java.Lang.Object`, Xamarin. Android создаст заглушку Java (вызываемую оболочку Android) вместо внедрения .NET. Поэтому необходимо следовать тем же правилам для экспорта C# в Java как Xamarin. Android. Пример:
+Прямо сейчас, если вы `Java.Lang.Object` подпишете подкласс, Xamarin. Android создаст заглушку Java (вызываемую оболочку Android) вместо внедрения .NET. Поэтому необходимо следовать тем же правилам для экспорта C# в Java в качестве Xamarin. Android. Пример:
 
 ```csharp
 [Register("mono.embeddinator.android.ViewSubclass")]
@@ -224,9 +224,9 @@ public class ViewSubclass : TextView
 ```
 
 - `[Register]` требуется для соответствия требуемому имени пакета Java
-- `[Export]` требуется сделать метод видимым для Java
+- `[Export]` требуется для того, чтобы метод был виден Java
 
-Можно использовать `ViewSubclass` в Java следующим образом:
+Мы можем использовать `ViewSubclass` в Java следующим образом:
 
 ```java
 import mono.embeddinator.android.ViewSubclass;
@@ -239,7 +239,7 @@ v.apply("Hello");
 
 ## <a name="multiple-assemblies"></a>Несколько сборок
 
-Внедрение одной сборки является простой задачей. Однако гораздо более вероятно, что у вас будет несколько C# сборок. Многие случаи зависят от пакетов NuGet, таких как библиотеки поддержки Android или Сервисы Google Play, которые еще более усложняют.
+Внедрение одной сборки является простой задачей. Однако гораздо более вероятно, что у вас будет более одной сборки C#. Многие случаи зависят от пакетов NuGet, таких как библиотеки поддержки Android или Сервисы Google Play, которые еще более усложняют.
 
 Это вызывает дилеммой, так как внедрение .NET должно включать в окончательный AAR множество типов файлов, например:
 

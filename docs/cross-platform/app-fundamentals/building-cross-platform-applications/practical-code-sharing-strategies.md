@@ -6,12 +6,12 @@ ms.assetid: 328D042A-FF78-A7B6-1574-B5AF49A1AADB
 author: davidortinau
 ms.author: daortin
 ms.date: 03/23/2017
-ms.openlocfilehash: fd0e48c8f954ba926c5e1b5dc3a1c9bf6aab8c54
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: d10917471c37d91fa02db2585895f5694a5a4a60
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571198"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457449"
 ---
 # <a name="part-5---practical-code-sharing-strategies"></a>Часть 5. Практические стратегии совместного использования кода
 
@@ -90,7 +90,7 @@ SQLite-NET выступает в качестве простой ORM, котор
 Функции SQLite-NET:
 
 - Таблицы определяются путем добавления атрибутов к классам модели.
-- Экземпляр базы данных представлен подклассом `SQLiteConnection` класса, основным классом в библиотеке SQLite-NET.
+- Экземпляр базы данных представлен подклассом  `SQLiteConnection` класса, основным классом в библиотеке SQLite-NET.
 - Данные можно вставлять, запрашивать и удалять с помощью объектов. Инструкции SQL не требуются (хотя при необходимости можно написать инструкции SQL).
 - Базовые запросы LINQ можно выполнять с коллекциями, возвращаемыми SQLite-NET.
 
@@ -140,7 +140,7 @@ Table<TodoItem>.ToList(); // returns all rows in a collection
 
 У каждой платформы есть разные ограничения доступа, которые необходимо учитывать:
 
-- приложения iOS выполняются в песочнице с очень ограниченным доступом к файловой системе. Компания Apple дополнительно определяет, как следует использовать файловую систему, указав определенные расположения для резервного копирования (и другие). Дополнительные сведения см. в разделе [Работа с файловой системой в руководстве по Xamarin. iOS](~/ios/app-fundamentals/file-system.md) .
+- приложения iOS выполняются в песочнице с очень ограниченным доступом к файловой системе. Компания Apple дополнительно определяет, как следует использовать файловую систему, указав определенные расположения для резервного копирования (и другие). Дополнительные сведения см. в разделе  [Работа с файловой системой в руководстве по Xamarin. iOS](~/ios/app-fundamentals/file-system.md) .
 - Android также ограничен доступ к определенным каталогам, связанным с приложением, но также поддерживает внешний носитель (например, Карты SD) и доступ к общим данным.
 - Windows Phone 8 (Silverlight) запретить прямой доступ к файлам — файлы можно манипулировать только с помощью `IsolatedStorage` .
 - Проекты Windows 8.1 WinRT и Windows 10 UWP предлагают только асинхронные операции с файлами через `Windows.Storage` API-интерфейсы, которые отличаются от других платформ.
@@ -184,7 +184,7 @@ await FileIO.WriteTextAsync(storageFile, "Contents of text file");
 
 Это механизм по умолчанию для доступа к файлам в Windows Phone (Silverlight), реализованный в Xamarin. iOS и Xamarin. Android, чтобы обеспечить написание общего кода для доступа к файлам. На этот `System.IO.IsolatedStorage` класс можно ссылаться во всех трех платформах в [общем проекте](~/cross-platform/app-fundamentals/shared-projects.md).
 
-Дополнительные сведения см. в [обзоре изолированного хранилища Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/ff402541(v=vs.105).aspx) .
+Дополнительные сведения см. в [обзоре изолированного хранилища Windows Phone](/previous-versions/windows/apps/ff402541(v=vs.105)) .
 
 Интерфейсы API изолированного хранилища недоступны в [переносимых библиотеках классов](~/cross-platform/app-fundamentals/pcl.md). Одним из альтернативных вариантов для PCL является [Пклстораже NuGet](https://pclstorage.codeplex.com/) .
 
@@ -232,13 +232,13 @@ webClient.Encoding = System.Text.Encoding.UTF8;
 webClient.DownloadStringAsync (new Uri ("http://some-server.com/file.xml"));
 ```
 
- `WebClient`также имеет `DownloadFileCompleted` и `DownloadFileAsync` для извлечения двоичных данных.
+ `WebClient` также имеет `DownloadFileCompleted` и `DownloadFileAsync` для извлечения двоичных данных.
 
 <a name="HttpWebRequest"></a>
 
 ### <a name="httpwebrequest"></a>HttpWebRequest
 
-`HttpWebRequest`предлагает больше настроек `WebClient` , чем, и в результате требует больше кода для использования.
+`HttpWebRequest` предлагает больше настроек `WebClient` , чем, и в результате требует больше кода для использования.
 
 Вот код для простой синхронной `HttpWebRequest` операции:
 
@@ -345,10 +345,10 @@ static Context uiContext = TaskScheduler.FromCurrentSynchronizationContext();
 
 Для кода, который не использует библиотеку параллельных задач, каждая платформа имеет собственный синтаксис для упаковки операций в поток пользовательского интерфейса:
 
-- **iOS** —`owner.BeginInvokeOnMainThread(new NSAction(action))`
-- **Android** —`owner.RunOnUiThread(action)`
-- **Xamarin. Forms** —`Device.BeginInvokeOnMainThread(action)`
-- **Windows** —`Deployment.Current.Dispatcher.BeginInvoke(action)`
+- **iOS** — `owner.BeginInvokeOnMainThread(new NSAction(action))`
+- **Android** — `owner.RunOnUiThread(action)`
+- **Xamarin. Forms** — `Device.BeginInvokeOnMainThread(action)`
+- **Windows** — `Deployment.Current.Dispatcher.BeginInvoke(action)`
 
 Для синтаксиса iOS и Android требуется доступность класса "Context", что означает, что код должен передать этот объект в любые методы, требующие обратного вызова в потоке пользовательского интерфейса.
 

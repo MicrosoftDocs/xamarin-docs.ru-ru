@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/10/2018
-ms.openlocfilehash: 0fe08856c70d8a23fb768a5b94b933addd42714b
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 8b640e867e3f7adb6960ecda557ac1e410ec5799
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73028668"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91456973"
 ---
 # <a name="hello-wear"></a>Основные сведения о Wear
 
@@ -30,13 +30,13 @@ _Создайте свое первое приложение "износ Android
 
 <!-- markdownlint-disable MD001 -->
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![создании нового приложения "износ Android" в диалоговом окне "Создание проекта"](hello-wear-images/vs/new-solution-sml.w157.png)](hello-wear-images/vs/new-solution.w157.png#lightbox)
+[![Создание нового приложения "износ Android" в диалоговом окне "Создание проекта"](hello-wear-images/vs/new-solution-sml.w157.png)](hello-wear-images/vs/new-solution.w157.png#lightbox)
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![создании нового приложения "износ Android" в диалоговом окне создания решения](hello-wear-images/xs/new-solution-sml.png)](hello-wear-images/xs/new-solution.png#lightbox)
+[![Создание нового приложения "износ Android" в диалоговом окне "Создание решения"](hello-wear-images/xs/new-solution-sml.png)](hello-wear-images/xs/new-solution.png#lightbox)
 
 -----
 
@@ -44,17 +44,17 @@ _Создайте свое первое приложение "износ Android
 
 ### <a name="2-choose-the-correct-target-framework"></a>2. Выберите правильную **целевую платформу**
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Убедитесь, что для параметра **Минимальная Целевая версия Android** установлено значение **Android 5,0 (без описания операций)** или более поздней версии: 
 
-[![настройки целевой платформы на Android 5,0 в Visual Studio](hello-wear-images/vs/target-framework-sml.png)](hello-wear-images/vs/target-framework.png#lightbox)
+[![Настройка требуемой версии .NET Framework для Android 5,0 в Visual Studio](hello-wear-images/vs/target-framework-sml.png)](hello-wear-images/vs/target-framework.png#lightbox)
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 Убедитесь, что для целевой платформы задано значение **Android 5,0 (без описания операций)** или более поздней версии:
 
-[![настройки целевой платформы на Android 5,0 в Visual Studio для Mac](hello-wear-images/xs/target-framework-sml.png)](hello-wear-images/xs/target-framework.png#lightbox)
+[![Настройка целевой платформы на Android 5,0 в Visual Studio для Mac](hello-wear-images/xs/target-framework-sml.png)](hello-wear-images/xs/target-framework.png#lightbox)
 
 -----
 
@@ -62,7 +62,7 @@ _Создайте свое первое приложение "износ Android
 
 ### <a name="3-edit-the-mainaxml-layout"></a>3. изменение макета **Main. axml**
 
-Настройте макет так, чтобы в нем содержался `TextView` и `Button` для примера: 
+Настройте макет таким образом, чтобы `TextView` он содержал и `Button` для образца: 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -141,13 +141,13 @@ public class MainActivity : Activity
 
 Устройство "износ Android" должно отобразиться в меню устройства. Прежде чем начать отладку, обязательно выберите правильное устройство "износ Android" или AVD. Выбрав устройство, нажмите кнопку Воспроизвести, чтобы развернуть приложение в эмуляторе или на устройстве.
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![выборе «износа AVD» в меню устройств Visual Studio](hello-wear-images/vs/choose-wear-sim.png)](hello-wear-images/vs/choose-wear-sim.png#lightbox)
+[![Выбор "износа AVD" в меню "устройство" Visual Studio](hello-wear-images/vs/choose-wear-sim.png)](hello-wear-images/vs/choose-wear-sim.png#lightbox)
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![выборе «износа AVD» в меню устройств Visual Studio для Mac](hello-wear-images/xs/choose-wear-sim.png)](hello-wear-images/xs/choose-wear-sim.png#lightbox)
+[![Выбор "износа AVD" в меню "устройство" Visual Studio для Mac](hello-wear-images/xs/choose-wear-sim.png)](hello-wear-images/xs/choose-wear-sim.png#lightbox)
 
 -----
 
@@ -159,18 +159,18 @@ public class MainActivity : Activity
 
 После успешного развертывания приложения на экране устройства «износ» появится экран следующего вида:
 
-[![начальный экран приложения "износ"](hello-wear-images/mainactivity-screen.png)](hello-wear-images/mainactivity-screen.png#lightbox)
+[![Начальный экран приложения "износ"](hello-wear-images/mainactivity-screen.png)](hello-wear-images/mainactivity-screen.png#lightbox)
 
 Коснитесь элемента **Click Me!** на лицевой стороне устройства «износ» и увидите шаг счетчика с каждым касанием:
 
-[![снимок экрана приложения "износ" после трех щелчков](hello-wear-images/mainactivity-counts.png)](hello-wear-images/mainactivity-counts.png#lightbox)
+[![Снимок экрана приложения "износ" после трех щелчков](hello-wear-images/mainactivity-counts.png)](hello-wear-images/mainactivity-counts.png#lightbox)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
 
-Ознакомьтесь с [примерами износа](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Android+wear) , включая приложения "износ Android", с сопутствующими телефонными приложениями.
+Ознакомьтесь с [примерами износа](/samples/browse/?products=xamarin&term=Xamarin.Android%2bwear) , включая приложения "износ Android", с сопутствующими телефонными приложениями.
 
 Когда вы будете готовы к распространению приложения, см. статью [Работа с упаковкой](~/android/wear/deploy-test/packaging.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Щелкните приложение Me (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/wear-weartest)
+- [Щелкните приложение Me (пример)](/samples/xamarin/monodroid-samples/wear-weartest)

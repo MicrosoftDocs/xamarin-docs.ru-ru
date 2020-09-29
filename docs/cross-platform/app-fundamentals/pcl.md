@@ -6,12 +6,12 @@ ms.assetid: 76ba8f7a-9b6e-40f5-9a29-ff1274ece4f2
 author: davidortinau
 ms.author: daortin
 ms.date: 07/18/2018
-ms.openlocfilehash: 63ef7045051f21259e01c36fc5f702585b04a57b
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: a1672937b8c7c0ce429b82aee34ecf45aa59d4c8
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934390"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457423"
 ---
 # <a name="portable-class-libraries-pcl"></a>Переносимые библиотеки классов (PCL)
 
@@ -37,11 +37,11 @@ ms.locfileid: "86934390"
 
 В таблице ниже показаны некоторые функции, зависящие от платформы .NET. Для написания сборки PCL, которая гарантированно будет выполняться на конкретных устройствах и платформах, вы просто выбираете, какая поддержка необходима при создании проекта.
 
-|Компонент|.NET Framework|Приложения универсальной платформы Windows|Silverlight|Windows Phone|Xamarin|
+|Признак|.NET Framework|Приложения UWP|Silverlight|Windows Phone|Xamarin|
 |---|---|---|---|---|---|
-|Ядро|Да|Да|Да|Да|Да|
+|Основные сведения|Да|Да|Да|Да|Да|
 |LINQ|Да|Да|Да|Да|Да|
-|IQueryable|Да|Да|Да|7,5 +|Y|
+|IQueryable|Да|Да|Да|7,5 +|Да|
 |Сериализация|Да|Да|Да|Да|Да|
 |Заметки к данным|4.0.3 +|Да|Да||Да|
 
@@ -52,9 +52,9 @@ ms.locfileid: "86934390"
 - .NET 4 или .NET 4,5
 - Silverlight 5
 - Windows Phone 8
-- Приложения универсальной платформы Windows
+- Приложения UWP
 
-Вы можете прочитать дополнительные сведения о возможностях различных профилей на [веб-сайте Майкрософт](https://msdn.microsoft.com/library/gg597391(v=vs.110).aspx) и просмотреть [сводку профиля PCL](https://portablelibraryprofiles.stephencleary.com/) , включающую сведения о поддерживаемых платформах и другие примечания.
+Вы можете прочитать дополнительные сведения о возможностях различных профилей на [веб-сайте Майкрософт](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library) и просмотреть [сводку профиля PCL](https://portablelibraryprofiles.stephencleary.com/) , включающую сведения о поддерживаемых платформах и другие примечания.
 
 **Преимущества**
 
@@ -198,7 +198,7 @@ ms.locfileid: "86934390"
 
 ## <a name="pcl-example"></a>Пример PCL
 
-В примере приложения [таскипортабле](https://docs.microsoft.com/samples/xamarin/mobile-samples/taskyportable/) показано, как можно использовать переносимую библиотеку классов с Xamarin.
+В примере приложения [таскипортабле](/samples/xamarin/mobile-samples/taskyportable/) показано, как можно использовать переносимую библиотеку классов с Xamarin.
 Ниже приведены некоторые снимки экрана приложений, работающих в iOS и Android.
 
 [![Ниже приведены некоторые снимки экрана приложений, работающих в iOS, Android и Windows Phone](pcl-images/image18.png)](pcl-images/image18.png#lightbox)
@@ -266,15 +266,15 @@ public static extern Result Close(IntPtr db);
 
 Полную реализацию можно увидеть в примере кода.
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье кратко обсуждались преимущества и ловушки переносимых библиотек классов, в которых демонстрируется создание и использование PCL из Visual Studio для Mac и Visual Studio. и, наконец, появился полный пример приложения — Таскипортабле —, в котором показана PCL в действии.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Таскипортабле (пример)](https://docs.microsoft.com/samples/xamarin/mobile-samples/taskyportable/)
+- [Таскипортабле (пример)](/samples/xamarin/mobile-samples/taskyportable/)
 - [Создание кроссплатформенных приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/index.md)
 - [Переносимые Visual Basic](~/cross-platform/platform/visual-basic/index.md)
 - [Общие проекты](~/cross-platform/app-fundamentals/shared-projects.md)
 - [Параметры общего доступа к коду](~/cross-platform/app-fundamentals/code-sharing.md)
-- [Кросс-платформенная разработка с помощью .NET Framework (Майкрософт)](https://docs.microsoft.com/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)
+- [Кросс-платформенная разработка с помощью .NET Framework (Майкрософт)](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)

@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/02/2018
-ms.openlocfilehash: 83c4ba8cbdc360682a4e06a885be15dd20d0f249
-ms.sourcegitcommit: f4b26c5b8cc84f79123951e80c15061eb859452d
+ms.openlocfilehash: 3263bfd9cea184a7bfbb29099abe2f1b3deb4126
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88720309"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91458060"
 ---
 # <a name="packaging-wear-apps"></a>Упаковка неизносных приложений
 
@@ -24,7 +24,7 @@ ms.locfileid: "88720309"
 
 Приложения Android износа 2,0 можно отправлять в Google Play как [автономные приложения][standalone].
 
-[xa-11.1]: https://docs.microsoft.com/xamarin/android/release-notes/11/11.1
+[xa-11.1]: /xamarin/android/release-notes/11/11.1
 [standalone]: https://developer.android.com/training/wearables/apps/standalone-apps
 
 ## <a name="automatic-packaging"></a>Автоматическая упаковка
@@ -57,7 +57,7 @@ ms.locfileid: "88720309"
 
 -----
 
-Обратите внимание, что вы получите ошибку **XA5211** , если имя пакета приложения "износ" не соответствует имени пакета карманного приложения. Пример.
+Обратите внимание, что вы получите ошибку **XA5211** , если имя пакета приложения "износ" не соответствует имени пакета карманного приложения. Пример:
 
 ```shell
 Error XA5211: Embedded wear app package name differs from handheld 
@@ -72,7 +72,7 @@ app package name (com.companyname.mywearapp != com.companyname.myapp). (XA5211)
 
 - Проверяет совпадение имен пакетов. 
 
-- Создает XML и добавляет его в проект карманного приложения, чтобы связать его с приложением "износ". Пример. 
+- Создает XML и добавляет его в проект карманного приложения, чтобы связать его с приложением "износ". Пример: 
 
     ```xml
     <!-- Handheld (Phone) Project.csproj -->

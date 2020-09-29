@@ -6,12 +6,12 @@ ms.assetid: a5964686-5fc6-4280-b087-7ba27cc1c8bf
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: 16b8f303555bc2f45516c3c060c0d2482f9c4954
-ms.sourcegitcommit: 4691b48f14b166afcec69d1350b769ff5bf8c9f6
+ms.openlocfilehash: 3e67d2c329e5ea0ad91eebcc4301965682d647aa
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75728230"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91458008"
 ---
 # <a name="manually-creating-nuget-packages-for-xamarin"></a>Создание пакетов NuGet для Xamarin вручную
 
@@ -51,7 +51,7 @@ _На этой странице содержатся некоторые сове
 
 Можно указать версию с набором чисел без десятичной запятой или указать ее с помощью десятичных разделителей. Без десятичной запятой NuGet просто принимает каждое число и преобразует его в версию, вставляя символ "." между каждой цифрой.
 
-В приведенном выше "MonoAndroid10" означает "Android 1,0". Это означает, что [Целевая платформа](~/android/app-fundamentals/android-api-levels.md) проекта должна иметь версию Android 1,0 или более позднюю. Версия указывается в элементе `<TargetFrameworkVersion>` в файле проекта.
+В приведенном выше "MonoAndroid10" означает "Android 1,0". Это означает, что [Целевая платформа](~/android/app-fundamentals/android-api-levels.md) проекта должна иметь версию Android 1,0 или более позднюю. Версия указывается в `<TargetFrameworkVersion>` элементе в файле проекта.
 
 Пояснение:
 
@@ -80,4 +80,4 @@ _На этой странице содержатся некоторые сове
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Нужетизер-3000 автоматическое создание NuGet](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/index.md)       
-- [Включение NuGet в проект](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough)
+- [Включение NuGet в проект](/visualstudio/mac/nuget-walkthrough)

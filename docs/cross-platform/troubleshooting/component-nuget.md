@@ -7,12 +7,12 @@ ms.assetid: 9E6C986F-3FBA-4599-8367-FB0C565C0ADE
 author: davidortinau
 ms.author: daortin
 ms.date: 04/18/2018
-ms.openlocfilehash: b9b771efe338fbcc250aa6e7a83b73f35269d3bf
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 08713afa4e781f0712ffccbbcf80533dda8e4bfc
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86996816"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457228"
 ---
 # <a name="updating-component-references-to-nuget"></a>Обновление ссылок на компоненты в NuGet
 
@@ -21,7 +21,7 @@ ms.locfileid: "86996816"
 >
 > Компоненты Xamarin больше не поддерживаются в Visual Studio и должны быть заменены пакетами NuGet. Следуйте приведенным ниже инструкциям, чтобы вручную удалить ссылки на компоненты из проектов.
 
-Дополнительные сведения о добавлении пакетов NuGet в [Windows](https://docs.microsoft.com/nuget/quickstart/use-a-package) или [Mac](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough)см. в этих инструкциях.
+Дополнительные сведения о добавлении пакетов NuGet в [Windows](/nuget/quickstart/use-a-package) или [Mac](/visualstudio/mac/nuget-walkthrough)см. в этих инструкциях.
 
 Доступен список популярных [подключаемых модулей и библиотек](https://github.com/xamarin/XamarinComponents/blob/master/README.md) Xamarin, которые помогают найти альтернативы компонентам, недоступным в качестве пакетов NuGet.
 
@@ -95,7 +95,7 @@ ms.locfileid: "86996816"
     </ItemGroup>
     ```
 
-3. Удалите ссылки на `XamarinComponentReference` и сохраните файл. В приведенном выше примере можно спокойно удалить все`ItemGroup`
+3. Удалите ссылки на `XamarinComponentReference` и сохраните файл. В приведенном выше примере можно спокойно удалить все `ItemGroup`
 
 4. Повторите описанные выше действия для каждого проекта в решении.
 
@@ -159,8 +159,8 @@ _Он может содержать зависимости NuGet, но их мо
 
 В качестве примера можно найти популярный пакет **SQLite-NET-PCL** , выполнив поиск по следующим параметрам:
 
-- [`sqlite-net-pcl`](https://www.nuget.org/packages?q=sqlite-net-pcl)— Название продукта.
-- [`praeclarum`](https://www.nuget.org/packages?q=praeclarum)— Профиль автора.
+- [`sqlite-net-pcl`](https://www.nuget.org/packages?q=sqlite-net-pcl) — Название продукта.
+- [`praeclarum`](https://www.nuget.org/packages?q=praeclarum) — Профиль автора.
 
 ### <a name="updating-the-solution"></a>Обновление решения
 
@@ -204,5 +204,5 @@ _Он может содержать зависимости NuGet, но их мо
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Список популярных подключаемых модулей и библиотек Xamarin](https://github.com/xamarin/XamarinComponents/blob/master/README.md)
-- [Установка и использование пакета NuGet (Windows)](https://docs.microsoft.com/nuget/quickstart/use-a-package)
-- [Включение пакета NuGet (Mac)](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough)
+- [Установка и использование пакета NuGet (Windows)](/nuget/quickstart/use-a-package)
+- [Включение пакета NuGet (Mac)](/visualstudio/mac/nuget-walkthrough)

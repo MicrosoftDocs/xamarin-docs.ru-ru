@@ -6,12 +6,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2018
-ms.openlocfilehash: 395f7c477f1f2bdb608aec918f877f6d320d75cc
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+ms.openlocfilehash: 1b7202a199315bf0be1664bf34725c26d12a66c8
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76724794"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91458084"
 ---
 # <a name="user-profile"></a>Профиль пользователя
 
@@ -45,16 +45,16 @@ if (cursor != null)
 }
 ```
 
-Начиная с Android 4 (API уровня 14) класс [контактсконтакт. Profile](xref:Android.Provider.ContactsContract.Profile) доступен через поставщика `ContactsContract`. `ContactsContact.Profile` предоставляет доступ к личному профилю для владельца устройства, который содержит контактные данные, такие как имя владельца устройства и номер телефона.
+Начиная с Android 4 (API уровня 14) класс [контактсконтакт. Profile](xref:Android.Provider.ContactsContract.Profile) доступен через `ContactsContract` поставщик. `ContactsContact.Profile`Предоставляет доступ к личному профилю для владельца устройства, который содержит контактные данные, такие как имя владельца устройства и номер телефона.
 
 ## <a name="required-permissions"></a>Необходимые разрешения
 
-Для чтения и записи контактных данных приложения должны запрашивать разрешения `READ_CONTACTS` и `WRITE_CONTACTS` соответственно.
-Кроме того, для чтения и изменения профиля пользователя приложения должны запрашивать разрешения `READ_PROFILE` и `WRITE_PROFILE`.
+Для чтения и записи контактных данных приложения должны запрашивать `READ_CONTACTS` `WRITE_CONTACTS` разрешения и соответственно.
+Кроме того, для чтения и изменения профиля пользователя приложения должны запрашивать `READ_PROFILE` разрешения и `WRITE_PROFILE` .
 
 ## <a name="updating-profile-data"></a>Обновление данных профиля
 
-После установки этих разрешений приложение может использовать обычные методы Android для взаимодействия с данными профиля пользователя. Например, чтобы обновить отображаемое имя профиля, вызовите [ContentResolver. Update](xref:Android.Content.ContentResolver.Update*) с `Uri`, полученным с помощью свойства [контактсконтракт. Profile. контентравконтактсури](xref:Android.Provider.ContactsContract.Profile.ContentRawContactsUri) , как показано ниже:
+После установки этих разрешений приложение может использовать обычные методы Android для взаимодействия с данными профиля пользователя. Например, чтобы обновить отображаемое имя профиля, вызовите [ContentResolver. Update](xref:Android.Content.ContentResolver.Update*) с параметром, `Uri` полученным через свойство [Контактсконтракт. Profile. контентравконтактсури](xref:Android.Provider.ContactsContract.Profile.ContentRawContactsUri) , как показано ниже:
 
 ```csharp
 var values = new ContentValues ();
@@ -90,7 +90,7 @@ if (cursor != null)
 
 ## <a name="navigating-to-the-user-profile"></a>Переход к профилю пользователя
 
-Наконец, чтобы выполнить переход к профилю пользователя, создайте намерение с действием `ActionView` и `ContactsContract.Profile.ContentUri` затем передайте его методу `StartActivity` следующим образом:
+Наконец, чтобы выполнить переход к профилю пользователя, создайте намерение с `ActionView` действием и `ContactsContract.Profile.ContentUri` затем передайте его в `StartActivity` метод следующим образом:
 
 ```csharp
 var intent = new Intent (Intent.ActionView,
@@ -100,10 +100,10 @@ StartActivity (intent);
 
 При выполнении приведенного выше кода профиль пользователя отображается, как показано на следующем снимке экрана:
 
-[Снимок экрана ![профиля, отображающего профиль пользователя Джон Петров](user-profile-images/01-profile-screen-sml.png)](user-profile-images/01-profile-screen.png#lightbox)
+[![Снимок экрана: профиль, отображающий профиль пользователя Джон Петров](user-profile-images/01-profile-screen-sml.png)](user-profile-images/01-profile-screen.png#lightbox)
 
 Работа с профилем пользователя аналогична взаимодействию с другими данными в Android и обеспечивает дополнительный уровень персонализации устройств.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Контактспровидердемо (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/contactsproviderdemo)
+- [Контактспровидердемо (пример)](/samples/xamarin/monodroid-samples/contactsproviderdemo)

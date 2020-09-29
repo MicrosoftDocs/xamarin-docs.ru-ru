@@ -6,12 +6,12 @@ ms.assetid: f264c632-8feb-4015-a5e5-cb9c681c787d
 author: davidortinau
 ms.author: daortin
 ms.date: 04/24/2019
-ms.openlocfilehash: 594f7584e914b7bd8f4d7b72b3c82c42bb2fb73e
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 8ccf96e266f9d5eae69a178cfcad3d1e48fb6962
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73014574"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457538"
 ---
 # <a name="visual-basic-and-net-standard"></a>Visual Basic и .NET Standard
 
@@ -39,13 +39,13 @@ ms.locfileid: "73014574"
 
 2. Введите **Visual Basic библиотеку** , чтобы отфильтровать параметры проекта, и выберите параметр **библиотека классов (.NET Standard)** со значком Visual Basic:
 
-    [Фильтр![для библиотеки Visual Basic](xamarin-forms-images/06-sml.png)](xamarin-forms-images/06.png#lightbox)
+    [![Фильтр для библиотеки Visual Basic](xamarin-forms-images/06-sml.png)](xamarin-forms-images/06.png#lightbox)
 
 3. На следующем экране введите имя проекта и нажмите кнопку **создать**.
 
-4. Проект Visual Basic будет выглядеть так, как показано в **Обозреватель решений** следующим образом:
+4. Проект Visual Basic будет выглядеть так, как показано в  **Обозреватель решений** следующим образом:
 
-    [![пустой проект Visual Basic](images/new-library-sml.png)](images/new-library.png#lightbox)
+    [![Пустой проект Visual Basic](images/new-library-sml.png)](images/new-library.png#lightbox)
 
 Теперь проект готов к добавлению кода Visual Basic. На .NET Standard проекты могут ссылаться другие проекты (проекты приложений или проекты библиотек).
 
@@ -60,7 +60,7 @@ ms.locfileid: "73014574"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Таскивб (пример)](https://docs.microsoft.com/samples/xamarin/mobile-samples/visualbasic-taskyvb/)
-- [Ксамаринформсвб (пример)](https://docs.microsoft.com/samples/xamarin/mobile-samples/visualbasic-xamarinformsvb/)
+- [Таскивб (пример)](/samples/xamarin/mobile-samples/visualbasic-taskyvb/)
+- [Ксамаринформсвб (пример)](/samples/xamarin/mobile-samples/visualbasic-xamarinformsvb/)
 - [.NET Standard и Xamarin](~/cross-platform/app-fundamentals/net-standard.md)
 - [.NET Standard](/dotnet/standard/net-standard/)

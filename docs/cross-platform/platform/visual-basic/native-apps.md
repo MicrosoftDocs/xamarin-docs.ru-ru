@@ -6,24 +6,24 @@ ms.assetid: 455fda67-3879-4299-8036-b12840e6a498
 author: davidortinau
 ms.author: daortin
 ms.date: 04/24/2019
-ms.openlocfilehash: 9f227f51596a4ed93fd830c3f3495a90c1f7f722
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 77df7d986f63861667c67b9c74b88ea6176f42ad
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73014563"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91458190"
 ---
 # <a name="visual-basic-in-xamarin-android-and-ios"></a>Visual Basic в Xamarin Android и iOS
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/mobile-samples/visualbasic-taskyvb/)
 
-Пример приложения [таскивб](https://docs.microsoft.com/samples/xamarin/mobile-samples/visualbasic-taskyvb/) демонстрирует, как Visual Basic код, скомпилированный в библиотеку .NET Standard, можно использовать с Xamarin. Ниже приведены некоторые снимки экрана приложений, работающих в Android и iOS.
+Пример приложения [таскивб](/samples/xamarin/mobile-samples/visualbasic-taskyvb/) демонстрирует, как Visual Basic код, скомпилированный в библиотеку .NET Standard, можно использовать с Xamarin. Ниже приведены некоторые снимки экрана приложений, работающих в Android и iOS.
 
  [![Android и iOS, на которых работает приложение, созданное с помощью Visual Basic](native-apps-images/simulators-sml.png)](native-apps-images/simulators.png#lightbox)
 
-Проекты Android и iOS в примере написаны на C#языке. Пользовательский интерфейс для каждого приложения строится с помощью собственных технологий, а управление `TodoItem` предоставляется библиотекой Visual Basic .NET Standard с помощью XML-файла (для демонстрационных целей, а не для полной базы данных).
+Проекты Android и iOS в примере написаны на языке C#. Пользовательский интерфейс для каждого приложения строится с помощью собственных технологий, а `TodoItem` Управление обеспечивается библиотекой Visual Basic .NET Standard с помощью XML-файла (для демонстрационных целей, а не для полной базы данных).
 
-## <a name="sample-walkthrough"></a>Пошаговое руководство по образцу
+## <a name="sample-walkthrough"></a>Пример пошагового руководства
 
 В этом руководство объясняется, как Visual Basic реализован в образце Xamarin для iOS и Android в [таскивб](https://github.com/xamarin/mobile-samples/tree/master/VisualBasic/TaskyVB) .
 
@@ -44,7 +44,7 @@ Visual Basic библиотеки .NET Standard можно создавать т
 
 ### <a name="todoitemvb"></a>TodoItem. vb
 
-Этот класс содержит бизнес-объект, используемый во всем приложении. Он будет определен в Visual Basic и использоваться совместно с проектами Android и iOS, написанными на C#.
+Этот класс содержит бизнес-объект, используемый во всем приложении. Он будет определен в Visual Basic и использоваться в проектах Android и iOS, написанных на языке C#.
 
 Определение класса показано ниже:
 
@@ -61,7 +61,7 @@ End Class
 
 ### <a name="todoitemmanagervb"></a>TodoItemManager. vb
 
-Класс Manager представляет "API" для переносимого кода. Он предоставляет базовые операции CRUD для класса `TodoItem`, но не реализует эти операции.
+Класс Manager представляет "API" для переносимого кода. Он предоставляет базовые операции CRUD для `TodoItem` класса, но не реализует эти операции.
 
 ```vb
 Public Class TodoItemManager
@@ -154,7 +154,7 @@ End Class
 
 ### <a name="ios"></a>iOS
 
-В приложении iOS `TodoItemManager` и `XmlStorageImplementation` создаются в файле **AppDelegate.CS** , как показано в этом фрагменте кода. Первые четыре строки — это просто создание пути к файлу, в котором будут храниться данные; в последних двух строках показаны два создаваемых класса.
+В приложении iOS приложения `TodoItemManager` и `XmlStorageImplementation` создаются в файле **AppDelegate.CS** , как показано в этом фрагменте кода. Первые четыре строки — это просто создание пути к файлу, в котором будут храниться данные; в последних двух строках показаны два создаваемых класса.
 
 ```csharp
 var xmlFilename = "TodoList.xml";
@@ -167,7 +167,7 @@ TaskMgr = new TodoItemManager(path);
 
 ### <a name="android"></a>Android
 
-В приложении Android `TodoItemManager` и `XmlStorageImplementation` создаются в файле **Application.CS** , как показано в этом фрагменте кода. Первые три строки — это просто создание пути к файлу, в котором будут храниться данные. в последних двух строках показаны два создаваемых класса.
+В приложении Android приложения `TodoItemManager` и `XmlStorageImplementation` создаются в файле **Application.CS** , как показано в этом фрагменте кода. Первые три строки — это просто создание пути к файлу, в котором будут храниться данные. в последних двух строках показаны два создаваемых класса.
 
 ```csharp
 var xmlFilename = "TodoList.xml";
@@ -177,7 +177,7 @@ var path = Path.Combine(libraryPath, xmlFilename);
 TaskMgr = new TodoItemManager(path);
 ```
 
-Остальная часть кода приложения в первую очередь касается пользовательского интерфейса и использования класса `TaskMgr` для загрузки и сохранения `TodoItem` классов.
+Остальная часть кода приложения в первую очередь касается пользовательского интерфейса и использования `TaskMgr` класса для загрузки и сохранения `TodoItem` классов.
 
 ## <a name="visual-studio-2019-for-mac"></a>Visual Studio 2019 для Mac
 
@@ -195,4 +195,4 @@ Visual Studio 2017 _не может_ создавать проекты Visual Ba
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Таскивб (пример .NET Standard)](https://github.com/xamarin/mobile-samples/tree/master/VisualBasic/TaskyVB)
-- [Новые возможности .NET Standard](https://docs.microsoft.com/dotnet/standard/whats-new/whats-new-in-dotnet-standard?tabs=csharp)
+- [Новые возможности .NET Standard](/dotnet/standard/whats-new/whats-new-in-dotnet-standard?tabs=csharp)
