@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/02/2018
-ms.openlocfilehash: b4191ae3c25ee5d2eeccd44377177d7d0df6f19e
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f4f24ee8bfc6bdde0becb9539ff9e2f532d06381
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937375"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432032"
 ---
 # <a name="launch-screens-for-xamarinios-apps"></a>Экраны запуска приложений Xamarin. iOS
 
@@ -225,7 +225,7 @@ _В этой статье объясняется, как создать экра
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Экраны динамического запуска (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios8-dynamiclaunchscreen)
+- [Экраны динамического запуска (пример)](/samples/xamarin/ios-samples/ios8-dynamiclaunchscreen)
 - [Унифицированные раскадровки](~/ios/user-interface/storyboards/unified-storyboards.md)
 - [Основные сведения о конструкторе iOS](~/ios/user-interface/designer/index.md)
 - [Добавление изображений в набор изображений каталога активов](~/ios/app-fundamentals/images-icons/displaying-an-image.md#adding-images-to-an-asset-catalog-image-set)

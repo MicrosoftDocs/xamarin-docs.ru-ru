@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: eb95970066f85bb62eb207f23cfc135dc1625a11
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 364aa1ebc70517ee8378e603922486ae29adf6c1
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937102"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436440"
 ---
 # <a name="working-with-tvos-table-views-in-xamarin"></a>Работа с табличными представлениями tvOS в Xamarin
 
@@ -582,7 +582,7 @@ internal void RaiseAttractionHighlighted (AttractionInformation attraction)
 }
 ```
 
-`CanFocusRow`Метод вызывается для каждой строки, которая собирается получить фокус в табличном представлении. Возвращает `true` значение, если строка может получить фокус, иначе возвращается `false` . В этом примере мы создали пользовательское `AttractionHighlighted` событие, которое будет создано в каждой строке при получении фокуса.
+`CanFocusRow`Метод вызывается для каждой строки, которая собирается получить фокус в табличном представлении. Возвращает `true` значение, если строка может получить фокус, иначе возвращается    `false` . В этом примере мы создали пользовательское `AttractionHighlighted` событие, которое будет создано в каждой строке при получении фокуса.
 
 Дополнительные сведения о работе с `UITableViewDelegate` см. в документации Apple [уитаблевиевделегате](https://developer.apple.com/library/prerelease/tvos/documentation/UIKit/Reference/UITableViewDelegate_Protocol/index.html#//apple_ref/doc/uid/TP40006942) .
 
@@ -731,7 +731,7 @@ namespace tvTable
 
 ## <a name="pulling-it-all-together"></a>Совместное извлечение
 
-Как указано в начале этого документа, представления таблиц обычно отображаются в одной стороне [разделенного представления](~/ios/tvos/user-interface/split-views.md) в виде навигации с подробными сведениями о выбранном элементе, отображаемом на противоположной стороне. Например. 
+Как указано в начале этого документа, представления таблиц обычно отображаются в одной стороне [разделенного представления](~/ios/tvos/user-interface/split-views.md) в виде навигации с подробными сведениями о выбранном элементе, отображаемом на противоположной стороне. Пример: 
 
 [![Запуск примера приложения](table-views-images/intro01.png)](table-views-images/intro01.png#lightbox)
 
@@ -883,8 +883,8 @@ namespace tvTable
 
 Опять же, этот класс просто определяет несколько сочетаний клавиш, чтобы упростить взаимодействие между двумя сторонами контроллера разделенного представления:
 
-- `SplitView`— Ссылка на контроллер разделенного представления ( `MainSpiltViewController` ), к которому относится контроллер представления навигации.
-- `TableController`— Получает контроллер представления таблицы ( `AttractionTableViewController` ), представленный в качестве верхнего представления в контроллере представления навигации.
+- `SplitView` — Ссылка на контроллер разделенного представления ( `MainSpiltViewController` ), к которому относится контроллер представления навигации.
+- `TableController` — Получает контроллер представления таблицы ( `AttractionTableViewController` ), представленный в качестве верхнего представления в контроллере представления навигации.
 
 <a name="The-Split-View-Controller"></a>
 
@@ -941,7 +941,7 @@ namespace tvTable
 
 Затем, когда представление с разделением загружается в память, мы подключим контроллер разделенного представления к обеим сторонам разделенного представления и реагируем на пользователя, выделяющий притяжения в табличном представлении ( `AttractionHighlighted` ), отображая новый притяжения в области **сведений** в представлении с разделением.
 
-Ознакомьтесь с примером приложения [твтаблес](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvtable) для полной реализации табличных представлений в представлении с разделением.
+Ознакомьтесь с примером приложения [твтаблес](/samples/xamarin/ios-samples/tvos-tvtable) для полной реализации табличных представлений в представлении с разделением.
 
 ## <a name="table-views-in-detail"></a>Подробное представление таблицы
 
@@ -955,7 +955,7 @@ namespace tvTable
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [уитаблевиевконтроллер](https://developer.apple.com/library/prerelease/tvos/documentation/UIKit/Reference/UITableViewController_Class/index.html#//apple_ref/doc/uid/TP40007523)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)

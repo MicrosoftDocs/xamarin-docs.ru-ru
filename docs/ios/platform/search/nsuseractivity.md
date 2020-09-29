@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: bbd3d1663c3d796768095a12e5048b18f447fa7a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 29ccf115facf9a086db473301f7dfb548a80dc9f
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937024"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431109"
 ---
 # <a name="search-with-nsuseractivity-in-xamarinios"></a>Поиск с помощью Нсусерактивити в Xamarin. iOS
 
-`NSUserActivity`был представлен в iOS 8 и используется для передачи данных.
+`NSUserActivity` был представлен в iOS 8 и используется для передачи данных.
 Она позволяет создавать действия в отдельных частях приложения, которые затем можно передать в другой экземпляр приложения, работающего на другом устройстве iOS. Принимающее устройство может затем продолжить действие, запущенное на предыдущем устройстве. Дополнительные сведения об использовании передачи см. [в статье Введение в](~/ios/platform/handoff.md) документацию по передаче данных.
 
 Новые возможности iOS 9 `NSUserActivity` могут индексироваться (как общедоступные, так и частные) и выполнять поиск в центре поиска Spotlight и Safari. Пометив элемент `NSUserActivity` как поддерживающий поиск и добавив индексируемые метаданные, действие может быть указано в результатах поиска на устройстве iOS.
@@ -27,14 +27,14 @@ ms.locfileid: "86937024"
 
 `NSUserActivity`Для поддержки поиска приложений используются следующие свойства служб:
 
-- `EligibleForHandoff`— Если `true` это действие можно использовать в операции передачи.
-- `EligibleForSearch`— Если `true` это действие будет добавлено в индекс устройства и появится в результатах поиска.
-- `EligibleForPublicIndexing`— Если `true` это действие будет добавлено в облачный индекс Apple и представлено пользователям (с помощью поиска), которые еще не установили приложение на устройстве iOS. Дополнительные сведения см. в разделе [индексирование общедоступного поиска](#public-search-indexing) .
-- `Title`— Содержит название действия и отображается в результатах поиска. Пользователи также могут искать текст самого заголовка.
-- `Keywords`— Это массив строк, используемый для описания действия, которое будет индексироваться и предоставляться для поиска конечным пользователем.
-- `ContentAttributeSet`— `CSSearchableItemAttributeSet` Используется для более подробного описания действия и предоставления расширенного содержимого в результатах поиска.
-- `ExpirationDate`— Если требуется, чтобы действие отображалось только до определенной даты, можно указать здесь дату.
-- `WebpageURL`— Если действие можно просмотреть в Интернете или ваше приложение поддерживает глубокие ссылки Safari, можно установить ссылку для посещения этой статьи.
+- `EligibleForHandoff` — Если `true` это действие можно использовать в операции передачи.
+- `EligibleForSearch` — Если `true` это действие будет добавлено в индекс устройства и появится в результатах поиска.
+- `EligibleForPublicIndexing` — Если `true` это действие будет добавлено в облачный индекс Apple и представлено пользователям (с помощью поиска), которые еще не установили приложение на устройстве iOS. Дополнительные сведения см. в разделе [индексирование общедоступного поиска](#public-search-indexing) .
+- `Title` — Содержит название действия и отображается в результатах поиска. Пользователи также могут искать текст самого заголовка.
+- `Keywords` — Это массив строк, используемый для описания действия, которое будет индексироваться и предоставляться для поиска конечным пользователем.
+- `ContentAttributeSet` — `CSSearchableItemAttributeSet` Используется для более подробного описания действия и предоставления расширенного содержимого в результатах поиска.
+- `ExpirationDate` — Если требуется, чтобы действие отображалось только до определенной даты, можно указать здесь дату.
+- `WebpageURL` — Если действие можно просмотреть в Интернете или ваше приложение поддерживает глубокие ссылки Safari, можно установить ссылку для посещения этой статьи.
 
 ## <a name="nsuseractivity-quickstart"></a>Краткое руководство по Нсусерактивити
 
@@ -96,7 +96,7 @@ activity.BecomeCurrent();
 
 ## <a name="responding-to-an-activity"></a>Реагирование на действие
 
-Чтобы ответить на пользователя, коснувшись результата поиска ( `NSUserActivity` ) для нашего приложения, измените файл **AppDelegate.CS** и переопределите `ContinueUserActivity` метод. Например.
+Чтобы ответить на пользователя, коснувшись результата поиска ( `NSUserActivity` ) для нашего приложения, измените файл **AppDelegate.CS** и переопределите `ContinueUserActivity` метод. Пример:
 
 ```csharp
 public override bool ContinueUserActivity (UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
@@ -168,7 +168,7 @@ activity.BecomeCurrent();
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры для iOS 9](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9)
+- [Примеры для iOS 9](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9)
 - [iOS 9 для разработчиков](https://developer.apple.com/ios/pre-release/)
 - [iOS 9,0](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html)
 - [Инструкции по программированию поиска приложений](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/AppSearch/index.html#//apple_ref/doc/uid/TP40016308)

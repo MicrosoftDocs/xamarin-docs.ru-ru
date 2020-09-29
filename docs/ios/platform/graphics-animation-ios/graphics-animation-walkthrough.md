@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: 632577d290c6d50a53d2f3fc236b5956f3795b35
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 1245531d68e43c833e892fe888830decc9d07c85
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929549"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430598"
 ---
 # <a name="using-core-graphics-and-core-animation-in-xamarinios"></a>Использование основной графической и основной анимации в Xamarin. iOS
 
@@ -22,7 +22,7 @@ ms.locfileid: "86929549"
 
 ![Готовое приложение](graphics-animation-walkthrough-images/00-final-app.png)
 
-Перед началом загрузки образца *графиксдемо* , прилагаемого к этому руководству. Его можно скачать [здесь](https://docs.microsoft.com/samples/xamarin/ios-samples/graphicsandanimation) и найти в каталоге **графиксвалксраугх** . запустите проект с именем **GraphicsDemo_starter** , дважды щелкнув его, и откройте `DemoView` класс.
+Перед началом загрузки образца *графиксдемо* , прилагаемого к этому руководству. Его можно скачать [здесь](/samples/xamarin/ios-samples/graphicsandanimation) и найти в каталоге **графиксвалксраугх** . запустите проект с именем **GraphicsDemo_starter** , дважды щелкнув его, и откройте `DemoView` класс.
 
 ## <a name="drawing-a-path"></a>Рисование контура
 
@@ -79,7 +79,7 @@ ms.locfileid: "86929549"
     }
     ```
 
-    `SetNeedsDisplay`будет вызываться каждый раз при перемещении, `Draw` чтобы их можно было вызывать при следующем передаче цикла выполнения.
+    `SetNeedsDisplay` будет вызываться каждый раз при перемещении, `Draw` чтобы их можно было вызывать при следующем передаче цикла выполнения.
 
 4. Мы будем добавлять строки к пути в `Draw` методе и использовать красную пунктирную линию для рисования. [Реализация `Draw` ](~/ios/platform/graphics-animation-ios/core-graphics.md) с кодом, показанным ниже:
 

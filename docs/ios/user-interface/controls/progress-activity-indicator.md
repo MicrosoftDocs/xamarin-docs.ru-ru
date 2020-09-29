@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/11/2017
-ms.openlocfilehash: 76e1ee54a5e1b729fdcb0b0a2c1f278703b2b4d6
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: a2e8e6d1fdf3f51f015dccf12a6a3b455ceff741
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021962"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432742"
 ---
 # <a name="progress-and-activity-indicators-in-xamarinios"></a>Индикаторы хода выполнения и активности в Xamarin. iOS
 
@@ -20,7 +20,7 @@ ms.locfileid: "73021962"
 
 iOS предоставляет два основных способа предоставления индикатора хода выполнения в приложении: Индикаторы действий (включая конкретный индикатор активности _сети_ ) и индикаторы выполнения.
 
-## <a name="activity-indicator"></a>Индикатор действия
+## <a name="activity-indicator"></a>Индикатор активности
 
 Индикаторы действий должны отображаться, когда приложение выполняет длительный процесс, но неизвестно точное время, которое потребуется задаче.
 
@@ -32,7 +32,7 @@ iOS предоставляет два основных способа предо
 
 ### <a name="implementing-an-activity-indicator"></a>Реализация индикатора действия
 
-Индикатор действия реализуется через класс [`UIActivityIndictorView`](xref:UIKit.UIActivityIndicatorView) , чтобы указать, что выполняется `UIActivity`.
+Индикатор действия реализуется через класс, [`UIActivityIndictorView`](xref:UIKit.UIActivityIndicatorView) чтобы указать, что `UIActivity` выполняется.
 
 ### <a name="activity-indicators-and-storyboards"></a>Индикаторы действий и раскадровки
 
@@ -42,19 +42,19 @@ iOS предоставляет два основных способа предо
 
 ### <a name="managing-activity-indicator-behavior"></a>Управление поведением индикатора действия
 
-Используйте методы `StartAnimating()` и `StopAnimating()` для запуска и завершения анимации индикатора действия.
+Используйте `StartAnimating()` методы и `StopAnimating()` для запуска и завершения анимации индикатора действия.
 
-Задайте для свойства `HidesWhenStopped` значение `true`, чтобы индикатор действия исчезал после вызова `StopAnimating()`. По умолчанию задано значение `true`. В любой момент можно увидеть, выполняет ли индикатор действия вращающуюся анимацию, проверив свойство `IsAnimating`. 
+Задайте для `HidesWhenStopped` свойства значение `true` , чтобы индикатор действия исчезал после `StopAnimating()` вызова. По умолчанию задано значение `true` . В любой момент можно увидеть, выполняет ли индикатор действия вращающуюся анимацию, проверив `IsAnimating` свойство. 
 
 ### <a name="managing-activity-indicator-appearances"></a>Управление внешним видом индикаторов действий
 
-Перечисление `UIActivityIndicatorViewStyle` может быть передано в качестве параметра при создании экземпляра индикатора действия. Его можно использовать для задания стиля оформления `Gray`, `White`или `WhiteLarge`, например:
+`UIActivityIndicatorViewStyle`Перечисление может быть передано в качестве параметра при создании экземпляра индикатора действия. С помощью этого параметра можно задать для визуального стиля значение `Gray` , `White` или `WhiteLarge` , например:
 
 ```csharp
 activitySpinner = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.WhiteLarge);
 ```
 
-Можно переопределить цвет, предоставленный `UIActivityIndicatorViewStyle`, установив свойство `Color`.
+Цвет, предоставляемый, можно переопределить `UIActivityIndicatorViewStyle`  , задав `Color` свойство.
 
 ## <a name="progress-bar"></a>Progress Bar
 
@@ -79,23 +79,23 @@ activitySpinner = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.White
 
 ### <a name="managing-progress-bar-behavior"></a>Управление поведением индикатора выполнения
 
-Ход выполнения линейки можно изначально задать с помощью свойства `Progress`:
+Ход выполнения линейки можно изначально задать с помощью `Progress` Свойства:
 
 ```csharp
 ProgressBar.Progress = 0f;
 ```
 
-Ход выполнения можно настроить с помощью метода `SetProgress` и передачи логического объявления, если требуется, чтобы изменение было анимировано.
+Ход выполнения можно изменить с помощью `SetProgress` метода и передав логическое объявление, если вы хотите, чтобы изменение было анимировано.
 
 ```csharp
 ProgressBar.SetProgress(1.0f, true);
 ```
 
-Дополнительные сведения об использовании индикатора выполнения см. в разделе о [ходе выполнения отчетов](https://github.com/xamarin/recipes/tree/master/Recipes/cross-platform/networking/download_progress) и в [примере уикаталог tvOS](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-uicatalog).
+Дополнительные сведения об использовании индикатора выполнения см. в разделе о [ходе выполнения отчетов](https://github.com/xamarin/recipes/tree/master/Recipes/cross-platform/networking/download_progress) и в [примере уикаталог tvOS](/samples/xamarin/ios-samples/tvos-uicatalog).
 
 ### <a name="managing-progress-bar-appearance"></a>Управление видом индикатора выполнения
 
-Как и индикатор действия, перечисление `UIProgressViewStyle` может быть передано в качестве параметра при создании экземпляра индикатора выполнения.
+Подобно индикатору действия, `UIProgressViewStyle` перечисление может быть передано в качестве параметра при создании экземпляра индикатора выполнения.
 
 Для изменения хода выполнения и отслеживания изображения и цвета оттенок можно использовать следующие свойства:
 

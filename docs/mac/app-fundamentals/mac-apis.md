@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/02/2017
-ms.openlocfilehash: c8fd877c6addac7dd865d8464e24a455b2f1aa88
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 67638a261cd9a6e8c356924d47ea4adb4eae6a80
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84573941"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430989"
 ---
 # <a name="macos-apis-for-xamarinmac-developers"></a>API-интерфейсы macOS для разработчиков Xamarin. Mac
 
@@ -31,12 +31,12 @@ ms.locfileid: "84573941"
 Объявление может быть прочитано слева направо:
 
 - `-`Префикс означает, что это метод экземпляра (не статический). + означает, что это метод класса (статический)
-- `(BOOL)`Тип возвращаемого значения (bool в C#)
-- `canDragRowsWithIndexes`Первая часть имени.
-- `(NSIndexSet *)rowIndexes`параметр является первым параметром и имеет тип. Первый параметр имеет формат:`(Type) pararmName`
-- `atPoint:(NSPoint)mouseDownPoint`Второй параметр и его тип. Каждый параметр после первого является форматом:`selectorPart:(Type) pararmName`
+- `(BOOL)` Тип возвращаемого значения (bool в C#)
+- `canDragRowsWithIndexes` Первая часть имени.
+- `(NSIndexSet *)rowIndexes` параметр является первым параметром и имеет тип. Первый параметр имеет формат: `(Type) pararmName`
+- `atPoint:(NSPoint)mouseDownPoint` Второй параметр и его тип. Каждый параметр после первого является форматом: `selectorPart:(Type) pararmName`
 - Полное имя этого селектора сообщений: `canDragRowsWithIndexes:atPoint:` . Обратите внимание, что в `:` конечном итоге это важно.
-- Фактическая привязка C# для Xamarin. Mac:`bool CanDragRows (NSIndexSet rowIndexes, PointF mouseDownPoint)`
+- Фактическая привязка C# для Xamarin. Mac: `bool CanDragRows (NSIndexSet rowIndexes, PointF mouseDownPoint)`
 
 Этот вызов селектора может быть прочитан таким же образом:
 
@@ -45,7 +45,7 @@ ms.locfileid: "84573941"
 ```
 
 - Экземпляр `v` имеет свой `canDragRowsWithIndexes:atPoint` селектор, вызываемый с двумя параметрами, `set` и `point` , переданным в.
-- В C# вызов метода выглядит следующим образом:`x.CanDragRows (set, point);`
+- В C# вызов метода выглядит следующим образом: `x.CanDragRows (set, point);`
 
 <a name="finding_selector"></a>
 
@@ -56,8 +56,8 @@ ms.locfileid: "84573941"
 1. Используйте список автозавершения, чтобы быстро проверить наличие что-то с тем же именем. Так как известно, что это экземпляр, `NSTableView` можно ввести:
 
     - `NSTableView x;`
-    - `x.`[Ctrl + пробел, если список не отображается).
-    - `CanDrag`входить
+    - `x.` [Ctrl + пробел, если список не отображается).
+    - `CanDrag` входить
     - Щелкните метод правой кнопкой мыши, перейдите к объявлению, чтобы открыть браузер сборок, где можно сравнить `Export` атрибут с выбранным селектором.
 
 2. Поиск по всей привязке класса. Так как известно, что это экземпляр, `NSTableView` можно ввести:
@@ -66,7 +66,7 @@ ms.locfileid: "84573941"
     - Щелчок правой кнопкой мыши `NSTableView` , переход к объявлению в браузере сборки
     - Поиск рассматриваемого селектора
 
-3. Вы можете использовать [интерактивную документацию по API Xamarin. Mac](https://docs.microsoft.com/dotnet/api/?view=xamarinmac-3.0) .
+3. Вы можете использовать [интерактивную документацию по API Xamarin. Mac](/dotnet/api/?view=xamarinmac-3.0) .
 
 4. Мигель предоставляет представление "Розеттском" для API Xamarin. Mac [здесь](https://tirania.org/tmp/rosetta.html) , где можно выполнять поиск по заданному API. Если ваш API не является AppKit или macOS, его можно найти там.
 

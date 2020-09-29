@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/15/2017
-ms.openlocfilehash: 791ab82e0e5f47929eff561ac836ec87e6d6c134
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 0dd7736d37f6db17ad794258d9dff852b2745053
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997323"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431846"
 ---
 # <a name="callkit-in-xamarinios"></a>Каллкит в Xamarin. iOS
 
@@ -56,8 +56,8 @@ ms.locfileid: "86997323"
 
 В Каллкит есть два основных интерфейса, которые использует приложение:
 
-- `CXProvider`— Это позволяет приложению Монкэйкалл информировать систему о любых возможностях нестандартных уведомлений, которые могут возникнуть.
-- `CXCallController`— Разрешает приложению Монкэйкалл уведомлять систему о действиях локальных пользователей.
+- `CXProvider` — Это позволяет приложению Монкэйкалл информировать систему о любых возможностях нестандартных уведомлений, которые могут возникнуть.
+- `CXCallController` — Разрешает приложению Монкэйкалл уведомлять систему о действиях локальных пользователей.
 
 ### <a name="the-cxprovider"></a>Ккспровидер
 
@@ -217,7 +217,7 @@ namespace MonkeyCall
 }
 ```
 
-`ActiveCall`содержит несколько свойств, определяющих состояние вызова, и два события, которые могут быть вызваны при изменении состояния вызова. Поскольку это только пример, для имитации запуска, ответа и завершения вызова используются три метода.
+`ActiveCall` содержит несколько свойств, определяющих состояние вызова, и два события, которые могут быть вызваны при изменении состояния вызова. Поскольку это только пример, для имитации запуска, ответа и завершения вызова используются три метода.
 
 ### <a name="the-startcallrequest-class"></a>Класс Старткаллрекуест
 
@@ -1261,4 +1261,4 @@ namespace MonkeyCallDirExtension
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры iOS 10](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS10)
+- [Примеры iOS 10](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS10)

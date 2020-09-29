@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/07/2017
-ms.openlocfilehash: abe9c95c889aed5258ea3a5367e05368ddb7c77f
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: ec43c98b891ee1541be9b1ac2563e280730628e3
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574175"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430507"
 ---
 # <a name="introduction-to-watchos-3"></a>Введение в watchOS 3
 
@@ -149,7 +149,7 @@ watchOS 3 позволяет приложению заранее предост�
 watchOS 3 включает в себя несколько усовершенствований платформы WatchKit, включая следующие:
 
 - Приложение может получить состояние Digital Crown с помощью нового класса [вккровнсекуенцер](https://developer.apple.com/reference/watchkit/wkcrownsequencer) и получать обновления, когда пользователь поворачивает самые с помощью класса [вккровнделегате](https://developer.apple.com/reference/watchkit/wkcrowndelegate) .
-- Класс [вкекстенсион](https://developer.apple.com/reference/watchkit/wkextension) теперь включает в себя `ApplicationState` метод и константу [вкаппликатионстате](https://developer.apple.com/reference/watchkit/wkapplicationstate) , которые приложение может использовать для отслеживания состояния среды выполнения приложения. `WKExtension`также предоставляет два новых метода, которые можно использовать для планирования фоновых задач.
+- Класс [вкекстенсион](https://developer.apple.com/reference/watchkit/wkextension) теперь включает в себя `ApplicationState` метод и константу [вкаппликатионстате](https://developer.apple.com/reference/watchkit/wkapplicationstate) , которые приложение может использовать для отслеживания состояния среды выполнения приложения. `WKExtension` также предоставляет два новых метода, которые можно использовать для планирования фоновых задач.
 - [Вкекстенсионделегате](https://developer.apple.com/reference/watchkit/wkextensiondelegate) теперь включает новые `ApplicationWillEnterForeground` `ApplicationDidEnterBackground` `HandleBackgroundTasks` методы и для отслеживания изменений состояния приложения и управления обновлениями фоновых задач.
 - Добавлен новый класс [вкжестуререкогнизер](https://developer.apple.com/reference/watchkit/wkgesturerecognizer) для предоставления следующих типов распознавания жестов для приложений Watch: [вклонгпрессжестуререкогнизер](https://developer.apple.com/reference/watchkit/wklongpressgesturerecognizer), [вкпанжестуререкогнизер](https://developer.apple.com/reference/watchkit/wkpangesturerecognizer), [вксвипежестуререкогнизер](https://developer.apple.com/reference/watchkit/wkswipegesturerecognizer) и [WKTapGestureRecognizer](https://developer.apple.com/reference/watchkit/wktapgesturerecognizer).
 - Новый класс [вкинтерфацехмкамера](https://developer.apple.com/reference/watchkit/wkinterfacehmcamera) предоставляет интерфейс для любой IP-камеры, подключенной к HomeKit.
@@ -190,5 +190,5 @@ watchOS 3 включает в себя несколько усовершенст
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры watchOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+watchOS)
+- [Примеры watchOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2bwatchOS)
 - [Новые возможности в watchOS 3](https://developer.apple.com/library/prerelease/content/releasenotes/General/WhatsNewInwatchOS/Articles/watchOS3.html#//apple_ref/doc/uid/TP40017085-SW1)

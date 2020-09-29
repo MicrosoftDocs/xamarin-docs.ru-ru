@@ -7,12 +7,12 @@ ms.assetid: 19506F08-2603-465E-A806-6BD01638DE90
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/03/2018
-ms.openlocfilehash: 4d0e57b98a479112b9fdf4f9c503418f3966cc73
-ms.sourcegitcommit: 9bfedf07940dad7270db86767eb2cc4007f2a59f
+ms.openlocfilehash: fd8926edce6b2310271e15418f2498162723ba49
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "64749929"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436446"
 ---
 # <a name="skiasharp-platform-independent-examples"></a>Примеры, независимые от платформы SkiaSharp
 
@@ -22,7 +22,7 @@ SkiaSharp предоставляет богатый и мощный API двух
 
 В настоящее время библиотека доступна в качестве кросс-платформенного [пакета NuGet](https://www.nuget.org/packages/SkiaSharp). ее можно добавить в проект, добавив ссылку NuGet.
 
-Для рисования код создаст `SkCanvas`, описывающий поверхность, в которой будут выполняться операции рисования.
+Для рисования код создаст объект, `SkCanvas` описывающий поверхность, в которой будут выполняться операции рисования.
 
 ## <a name="obtaining-an-skcanvas"></a>Получение Скканвас
 
@@ -36,9 +36,9 @@ using (var surface = SKSurface.Create (width: 640, height: 480, SKImageInfo.Plat
 
 ## <a name="drawing-on-skcanvas"></a>Рисование на Скканвас
 
-@No__t_0 использует модель рисования, похожую на "другие модели рисования, с которыми вы можете ознакомиться, она использует цвета с дополнительным каналом прозрачности и может рисовать линии, дуги, текст и изображения.
+`SKCanvas`Использует модель рисования, похожую на "другие модели рисования, с которыми вы можете ознакомиться, она использует цвета с дополнительным каналом прозрачности и может рисовать линии, дуги, текст и изображения.
 
-Ниже приведены лишь некоторые из множества различных вещей, которые можно выполнить с помощью SkiaSharp.  В примерах ниже переменная `canvas` имеет тип Скканвас.
+Ниже приведены лишь некоторые из множества различных вещей, которые можно выполнить с помощью SkiaSharp.  В приведенных ниже примерах переменная `canvas` имеет тип скканвас.
 
 ### <a name="drawing-xamagon"></a>Рисование Ксамагон
 
@@ -135,4 +135,4 @@ using (var paint = new SKPaint()) {
 
 ## <a name="more-information"></a>Дополнительные сведения
 
-Дополнительные сведения об использовании SkiaSharp можно найти в документации по [API](https://docs.microsoft.com/dotnet/api/skiasharp) .
+Дополнительные сведения об использовании SkiaSharp можно найти в документации по [API](/dotnet/api/skiasharp) .

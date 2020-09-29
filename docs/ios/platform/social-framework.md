@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: a77b5cd33710a7a8755441efc8b7134d82855c2a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 0c5f2a5c6a3274b298d3de216a2a0f42ed590611
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937973"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436475"
 ---
 # <a name="social-framework-in-xamarinios"></a>Социальные платформы в Xamarin. iOS
 
@@ -50,11 +50,11 @@ if (SLComposeViewController.IsAvailable (SLServiceKind.Twitter)) {
 }
 ```
 
- `SLComposeViewController`никогда не отправляет твит непосредственно без взаимодействия с пользователем. Однако его можно инициализировать с помощью следующих методов:
+ `SLComposeViewController` никогда не отправляет твит непосредственно без взаимодействия с пользователем. Однако его можно инициализировать с помощью следующих методов:
 
-- `SetInitialText`— Добавляет начальный текст для отображения в твите.
-- `AddUrl`— Добавляет URL-адрес твита.
-- `AddImage`— Добавляет изображение в твит.
+- `SetInitialText` — Добавляет начальный текст для отображения в твите.
+- `AddUrl` — Добавляет URL-адрес твита.
+- `AddImage` — Добавляет изображение в твит.
 
 После инициализации вызов `PresentVIewController` отображает представление, созданное `SLComposeViewController` . Пользователь может при необходимости изменить и отправить твит или отменить его отправку. В любом случае контроллер должен быть закрыт в `CompletionHandler` , где результат также можно проверить, чтобы увидеть, был ли твит отправлен или отменен, как показано ниже:
 
@@ -298,7 +298,7 @@ request.PerformRequest ((data, response, error) => {
 
 Так как социальные платформы — единый API, предназначенный для доступа к нескольким социальным сетям, код остается практически одинаковым независимо от используемой социальной сети.
 
-Например, `SLComposeViewController` можно использовать точно так же, как в приведенном выше примере Twitter, но единственным отличием является переключение на параметры и параметры, относящиеся к Facebook. Например.
+Например, `SLComposeViewController` можно использовать точно так же, как в приведенном выше примере Twitter, но единственным отличием является переключение на параметры и параметры, относящиеся к Facebook. Пример:
 
 ```csharp
 using System;
@@ -472,5 +472,5 @@ accountStore.RequestAccess (accountType, options, (granted, error) => {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [СоЦиалфрамеворкдемо (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/socialframeworkdemo)
+- [СоЦиалфрамеворкдемо (пример)](/samples/xamarin/ios-samples/socialframeworkdemo)
 - [Введение в веб-службы](~/cross-platform/data-cloud/web-services/index.md)

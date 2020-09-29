@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/02/2017
-ms.openlocfilehash: d4fe04412eb4fb456bc49d71c1e5fe87df5f9e76
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 207aac33101615a0a103176cd2bf5dd061e0d264
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939648"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91430423"
 ---
 # <a name="enhanced-user-notifications-in-xamarinios"></a>Расширенные уведомления пользователей в Xamarin. iOS
 
@@ -274,7 +274,7 @@ UNUserNotificationCenter.Current.AddNotificationRequest (request, (err) => {
 
 ## <a name="handling-foreground-app-notifications"></a>Обработка уведомлений приложения переднего плана
 
-В iOS 10 приложение может выполнять уведомления по-разному, когда оно находится на переднем плане, и запускается уведомление. Предоставляя `UNUserNotificationCenterDelegate` и реализуя `WillPresentNotification` метод, приложение может принять за собой ответственность за отображение уведомления. Например.
+В iOS 10 приложение может выполнять уведомления по-разному, когда оно находится на переднем плане, и запускается уведомление. Предоставляя `UNUserNotificationCenterDelegate` и реализуя `WillPresentNotification` метод, приложение может принять за собой ответственность за отображение уведомления. Пример:
 
 ```csharp
 using System;
@@ -307,7 +307,7 @@ namespace MonkeyNotification
 
 Этот код просто записывает содержимое в `UNNotification` Выход приложения и запрашивает у системы отображение стандартного оповещения для уведомления. 
 
-Если приложение отображало бы само уведомление, когда оно находилось на переднем плане, и не использовало системные значения по умолчанию, передайте `None` обработчику завершения. Пример.
+Если приложение отображало бы само уведомление, когда оно находилось на переднем плане, и не использовало системные значения по умолчанию, передайте `None` обработчику завершения. Пример
 
 ```csharp
 completionHandler (UNNotificationPresentationOptions.None);
@@ -358,7 +358,7 @@ UNUserNotificationCenter.Current.RemoveDeliveredNotifications (requests);
 
 ### <a name="updating-an-existing-notification"></a>Обновление существующего уведомления
 
-Чтобы обновить существующее уведомление, просто создайте новое уведомление с измененными параметрами (например, новым временем активации) и добавьте его в систему с тем же идентификатором запроса, что и у уведомления, которое необходимо изменить. Пример.
+Чтобы обновить существующее уведомление, просто создайте новое уведомление с измененными параметрами (например, новым временем активации) и добавьте его в систему с тем же идентификатором запроса, что и у уведомления, которое необходимо изменить. Пример
 
 ```csharp
 using UserNotifications;
@@ -430,7 +430,7 @@ UNUserNotificationCenter.Current.SetNotificationCategories (new NSSet<UNNotifica
 
 После того как набор настраиваемых действий и категорий был создан и зарегистрирован в системе, они могут быть представлены как из локальных, так и из удаленных уведомлений.
 
-Для удаленного уведомления задайте `category` в полезных данных удаленного уведомления, которые соответствуют одной из категорий, созданных выше. Например.
+Для удаленного уведомления задайте `category` в полезных данных удаленного уведомления, которые соответствуют одной из категорий, созданных выше. Пример:
 
 ```csharp
 {
@@ -441,7 +441,7 @@ UNUserNotificationCenter.Current.SetNotificationCategories (new NSSet<UNNotifica
 }
 ```
 
-Для локальных уведомлений задайте `CategoryIdentifier` свойство `UNMutableNotificationContent` объекта. Например.
+Для локальных уведомлений задайте `CategoryIdentifier` свойство `UNMutableNotificationContent` объекта. Пример:
 
 ```csharp
 var content = new UNMutableNotificationContent ();
@@ -457,7 +457,7 @@ content.CategoryIdentifier = "message";
 
 ### <a name="handling-dismiss-actions"></a>Обработка действий закрытия
 
-Как упоминалось выше, действие закрытия может быть отправлено в приложение, когда пользователь откроет уведомление. Поскольку это не стандартное действие, при создании категории необходимо задать параметр. Например.
+Как упоминалось выше, действие закрытия может быть отправлено в приложение, когда пользователь откроет уведомление. Поскольку это не стандартное действие, при создании категории необходимо задать параметр. Пример:
 
 ```csharp
 var categoryID = "message";
@@ -470,7 +470,7 @@ var category = UNNotificationCategory.FromIdentifier (categoryID, actions, inten
 
 ### <a name="handling-action-responses"></a>Обработка ответов действий
 
-Когда пользователь взаимодействует с настраиваемыми действиями и категориями, созданными ранее, приложение должно выполнить запрошенную задачу. Это делается путем предоставления `UNUserNotificationCenterDelegate` и реализации `UserNotificationCenter` метода. Например.
+Когда пользователь взаимодействует с настраиваемыми действиями и категориями, созданными ранее, приложение должно выполнить запрошенную задачу. Это делается путем предоставления `UNUserNotificationCenterDelegate` и реализации `UserNotificationCenter` метода. Пример:
 
 ```csharp
 using System;
@@ -558,9 +558,9 @@ namespace MonkeyNotification
 -----
 
 > [!IMPORTANT]
-> Идентификатор пакета для расширения службы должен соответствовать идентификатору пакета основного приложения с `.appnameserviceextension` добавлением к концу. Например, если основное приложение имело идентификатор пакета `com.xamarin.monkeynotify` , расширение службы должно иметь идентификатор пакета `com.xamarin.monkeynotify.monkeynotifyserviceextension` . Это значение должно автоматически устанавливаться при добавлении расширения в решение. 
+> Идентификатор пакета для расширения службы должен соответствовать идентификатору пакета основного приложения с `.appnameserviceextension` добавлением к концу. Например, если основное приложение имело идентификатор пакета  `com.xamarin.monkeynotify` , расширение службы должно иметь идентификатор пакета `com.xamarin.monkeynotify.monkeynotifyserviceextension` . Это значение должно автоматически устанавливаться при добавлении расширения в решение. 
 
-В расширении службы уведомлений имеется один основной класс, который необходимо изменить, чтобы обеспечить требуемую функциональность. Например.
+В расширении службы уведомлений имеется один основной класс, который необходимо изменить, чтобы обеспечить требуемую функциональность. Пример:
 
 ```csharp
 using System;
@@ -615,7 +615,7 @@ namespace MonkeyChatServiceExtension
 
 ### <a name="triggering-a-service-extension"></a>Активация расширения службы
 
-Если расширение службы создано и доставляется вместе с приложением, оно может быть запущено путем изменения полезных данных удаленного уведомления, отправляемых на устройство. Например.
+Если расширение службы создано и доставляется вместе с приложением, оно может быть запущено путем изменения полезных данных удаленного уведомления, отправляемых на устройство. Пример:
 
 ```csharp
 {
@@ -666,7 +666,7 @@ namespace myApp {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры iOS 10](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS10)
+- [Примеры iOS 10](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS10)
 - [Справочник по Усернотификатионс Framework](https://developer.apple.com/reference/usernotifications)
 - [усернотификатионсуи](https://developer.apple.com/reference/usernotificationsui)
 - [Локальное и удаленное уведомление по программированию](https://developer.apple.com/documentation/usernotifications)

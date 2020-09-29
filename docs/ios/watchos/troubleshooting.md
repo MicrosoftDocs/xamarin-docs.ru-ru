@@ -8,12 +8,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 497096e7f422e8337498339737ab304b0d896dfe
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 7e56eed866cb647bd654370d587b02bcaba04d4e
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939000"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432818"
 ---
 # <a name="watchos-troubleshooting"></a>Устранение неполадок watchOS
 
@@ -31,7 +31,7 @@ ms.locfileid: "86939000"
 
 ## <a name="known-issues"></a>Известные проблемы
 
-### <a name="general"></a>Общие сведения
+### <a name="general"></a>Общее
 
 <a name="deploy"></a>
 
@@ -162,7 +162,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 6. Выберите **сборка > собрать все** , чтобы в ходе синхронизации Xcode был распознан новый класс (через `Register` атрибут), который мы использовали.
 
-7. Повторно откройте раскадровку, щелкнув файл раскадровки Watch приложения правой кнопкой мыши и выбрав пункт **Открыть с помощью > Xcode Interface Builder**:
+7. Повторно откройте раскадровку, щелкнув файл раскадровки Watch приложения правой кнопкой мыши и выбрав пункт  **Открыть с помощью > Xcode Interface Builder**:
 
     ![Открытие раскадровки в Interface Builder](troubleshooting-images/add-6.png)
 
@@ -175,7 +175,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
     ![Элемент панели инструментов редактора помощника](troubleshooting-images/add-7.png)
 
-    Если фокус находится на панели кода, убедитесь, что вы просматриваете файл заголовка **h** и не щелкнули правой кнопкой мыши в строке навигации, и выберите нужный файл (**минтерфацеконтроллер. h**).
+    Если фокус находится на панели кода, убедитесь, что вы просматриваете файл заголовка  **h** и не щелкнули правой кнопкой мыши в строке навигации, и выберите нужный файл (**минтерфацеконтроллер. h**).
 
     ![Выбор Минтерфацеконтроллер](troubleshooting-images/add-8.png)
 
@@ -233,7 +233,7 @@ with an alpha channel. Icons should not have an alpha channel.
 > [!NOTE]
 > Путь, который необходимо предоставить, предназначен для *файла приложения iPhone. app*, т. е. который будет развернут в симуляторе iOS и содержит как расширение, так и контрольное приложение.
 
-Пример.
+Пример
 
 ```bash
 --launchsimwatch=/path/to/watchkitproject/watchsample/bin/iPhoneSimulator/Debug/watchsample.app
@@ -257,9 +257,9 @@ with an alpha channel. Icons should not have an alpha channel.
 
 ### <a name="--sdkroot"></a>--sdkroot добавлен
 
-Обязательный элемент. Указывает путь к Xcode (6,2 или более поздней версии).
+Обязательный. Указывает путь к Xcode (6,2 или более поздней версии).
 
-Пример.
+Пример
 
 ```bash
  --sdkroot /Applications/Xcode.app/Contents/Developer/
@@ -277,7 +277,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 **UDID.**
 
-Пример.
+Пример
 
 ```bash
 --device=:v2:udid=AAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE
@@ -285,7 +285,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 **Среда выполнения и тип устройства**
 
-Пример.
+Пример
 
 ```bash
 --device=:v2:runtime=com.apple.CoreSimulator.SimRuntime.iOS-8-2,devicetype=com.apple.CoreSimulator.SimDeviceType.iPhone-6
@@ -293,5 +293,5 @@ with an alpha channel. Icons should not have an alpha channel.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Ватчкиткаталог (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog)
-- [Ватчтаблес (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchtables)
+- [Ватчкиткаталог (пример)](/samples/xamarin/ios-samples/watchos-watchkitcatalog)
+- [Ватчтаблес (пример)](/samples/xamarin/ios-samples/watchos-watchtables)

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/22/2018
-ms.openlocfilehash: 11c106483a98e4cd1412a6edb185d5da42da61ea
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: c460eb28197ded7e56c6e11cde98abe201bd06b5
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73032044"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434285"
 ---
 # <a name="arkit-2-in-xamarinios"></a>ARKit 2 в Xamarin. iOS
 
@@ -25,13 +25,13 @@ ARKit был значительно развит с момента его вве
 
 ## <a name="recognizing-reference-objects"></a>Распознавание ссылочных объектов
 
-Одной из демонстрационных функций в ARKit 2 является возможность распознавания эталонных изображений и объектов. Образы ссылок могут загружаться из обычных файлов изображений (см.[ниже](#more-tracking-configurations)), но объекты Reference должны быть проверены с помощью [`ARObjectScanningConfiguration`](xref:ARKit.ARObjectScanningConfiguration), ориентированного на разработчика.
+Одной из демонстрационных функций в ARKit 2 является возможность распознавания эталонных изображений и объектов. Образы ссылок могут загружаться из обычных файлов изображений (см.[ниже](#more-tracking-configurations)), но объекты ссылок должны быть проверены с помощью ориентированного на разработчика [`ARObjectScanningConfiguration`](xref:ARKit.ARObjectScanningConfiguration) .
 
-### <a name="sample-app-scanning-and-detecting-3d-objects"></a>Пример приложения: Сканирование и обнаружение трехмерных объектов
+### <a name="sample-app-scanning-and-detecting-3d-objects"></a>Пример приложения: сканирование и обнаружение трехмерных объектов
 
-Пример « [сканирование и обнаружение трехмерных объектов](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-scanninganddetecting3dobjects) » — это порт [проекта Apple](https://developer.apple.com/documentation/arkit/scanning_and_detecting_3d_objects?language=objc) , который демонстрирует:
+Пример « [сканирование и обнаружение трехмерных объектов](/samples/xamarin/ios-samples/ios12-scanninganddetecting3dobjects) » — это порт [проекта Apple](https://developer.apple.com/documentation/arkit/scanning_and_detecting_3d_objects?language=objc) , который демонстрирует:
 
-- Управление состоянием приложения с помощью объектов [`NSNotification`](xref:Foundation.NSNotification)
+- Управление состоянием приложения с помощью [`NSNotification`](xref:Foundation.NSNotification) объектов
 - Пользовательская визуализация
 - Сложные жесты
 - Просмотр объектов
@@ -48,14 +48,14 @@ ARKit был значительно развит с момента его вве
 - `AppState.Scanning`
 - `AppState.Testing`
 
-Кроме того, в `AppState.Scanning`используется внедренный набор состояний и переходов:
+И дополнительно использует внедренный набор состояний и переходов в `AppState.Scanning` :
 
 - `Scan.ScanState.Ready`
 - `Scan.ScanState.DefineBoundingBox`
 - `Scan.ScanState.Scanning`
 - `Scan.ScanState.AdjustingOrigin`
 
-Приложение использует реактивную архитектуру, которая отправляет уведомления о переходе состояния в [`NSNotificationCenter`](xref:Foundation.NSNotificationCenter) и подписывается на эти уведомления. Программа установки выглядит так же, как в следующем фрагменте `ViewController.cs`:
+Приложение использует реактивную архитектуру, которая отправляет уведомления о смене состояния в [`NSNotificationCenter`](xref:Foundation.NSNotificationCenter) эти уведомления и подписывается на них. Программа установки выглядит следующим образом `ViewController.cs` :
 
 ```csharp
 // Configure notifications for application state changes
@@ -119,10 +119,10 @@ internal void EnterStateTesting()
 
 Приложение показывает низкоуровневые "облачные" точки объекта, содержащегося в ограничивающем прямоугольнике, на обнаруженной горизонтальной плоскости.
 
-Это облако точки доступно для разработчиков в свойстве [`ARFrame.RawFeaturePoints`](xref:ARKit.ARFrame.RawFeaturePoints) . Эффективное Визуализация облачной точки может быть непростой задачей. Проход по точкам, а затем создание и размещение нового узла SceneKit для каждой точки приведет к уничтожению частоты кадров. Кроме того, при асинхронном завершении произойдет задержка. Пример поддерживает производительность с помощью стратегии из трех частей:
+Это облако точки доступно для разработчиков в [`ARFrame.RawFeaturePoints`](xref:ARKit.ARFrame.RawFeaturePoints) свойстве. Эффективное Визуализация облачной точки может быть непростой задачей. Проход по точкам, а затем создание и размещение нового узла SceneKit для каждой точки приведет к уничтожению частоты кадров. Кроме того, при асинхронном завершении произойдет задержка. Пример поддерживает производительность с помощью стратегии из трех частей:
 
 - Использование ненадежного кода для закрепления данных на месте и интерпретации данных в виде необработанного буфера байтов.
-- Преобразование этого необработанного буфера в [`SCNGeometrySource`](xref:SceneKit.SCNGeometrySource) и создание объекта [`SCNGeometryElement`](xref:SceneKit.SCNGeometryElement) шаблона.
+- Преобразование этого необработанного буфера в [`SCNGeometrySource`](xref:SceneKit.SCNGeometrySource) и создание [`SCNGeometryElement`](xref:SceneKit.SCNGeometryElement) объекта шаблона.
 - Быстро «объединяя» необработанные данные и шаблон с помощью [`SCNGeometry.Create(SCNGeometrySource[], SCNGeometryElement[])`](xref:SceneKit.SCNGeometry.Create(SceneKit.SCNGeometrySource[],SceneKit.SCNGeometryElement[]))
 
 ```csharp
@@ -174,7 +174,7 @@ internal static SCNGeometry CreateVisualization(NVector3[] points, UIColor color
 }
 ```
 
-Результат выглядит следующим образом:
+Результат имеет следующий вид:
 
 ![point_cloud](images/arkit_point_cloud.jpeg)
 
@@ -251,15 +251,15 @@ internal partial class ThresholdRotationGestureRecognizer : UIRotationGestureRec
 
 Теперь вы можете использовать любой из следующих элементов в качестве основания для работы в смешанной реальности:
 
-- Только акселерометр устройства ([`AROrientationTrackingConfiguration`](xref:ARKit.AROrientationTrackingConfiguration), iOS 11)
-- Лица ([`ARFaceTrackingConfiguration`](xref:ARKit.ARFaceTrackingConfiguration), iOS 11)
-- Эталонные изображения ([`ARImageTrackingConfiguration`](xref:ARKit.ARImageTrackingConfiguration), iOS 12)
-- Сканирование объемных объектов ([`ARObjectScanningConfiguration`](xref:ARKit.ARObjectScanningConfiguration), iOS 12)
-- Визуальная инерция одометри ([`ARWorldTrackingConfiguration`](xref:ARKit.ARWorldTrackingConfiguration), улучшена в iOS 12)
+- Только акселерометр устройства ( [`AROrientationTrackingConfiguration`](xref:ARKit.AROrientationTrackingConfiguration) iOS 11)
+- Лица ( [`ARFaceTrackingConfiguration`](xref:ARKit.ARFaceTrackingConfiguration) , iOS 11)
+- Эталонные изображения ( [`ARImageTrackingConfiguration`](xref:ARKit.ARImageTrackingConfiguration) , iOS 12)
+- Сканирование объемных объектов ( [`ARObjectScanningConfiguration`](xref:ARKit.ARObjectScanningConfiguration) , iOS 12)
+- Визуальный инерциый одометри ( [`ARWorldTrackingConfiguration`](xref:ARKit.ARWorldTrackingConfiguration) Улучшенный в iOS 12)
 
-`AROrientationTrackingConfiguration`, обсуждаемые в [этой записи и F# образце блога](https://github.com/lobrien/FSharp_Face_AR), являются наиболее ограниченными и предоставляют неплохой опыт работы в смешанной среде, так как он только помещает цифровые объекты в связи с движением устройства, не пытаясь привязать устройство и экран к реальному реального.
+`AROrientationTrackingConfiguration`, обсуждаемые в [этой записи блога и примере F #](https://github.com/lobrien/FSharp_Face_AR), является наиболее ограниченным и предоставляет неплохой опыт работы в смешанной реальности, так как он лишь помещает только цифровые объекты в связи с движением устройства, не пытаясь привязать устройство и экран к реальному миру.
 
-`ARImageTrackingConfiguration` позволяет распознать реальные 2D-изображения (картин, логотипы и т. д.) и использовать их для привязки цифровых изображений:
+`ARImageTrackingConfiguration`Позволяет распознать реальные 2D-изображения (картин, логотипы и т. д.) и использовать их для привязки цифровых изображений:
 
 ```csharp
 var imagesAndWidths = new[] {
@@ -287,9 +287,9 @@ configuration.TrackingImages = referenceImages;
 - Он эффективен и может использоваться с потенциально большим количеством эталонных образов.
 - Цифровая картинка привязывается к изображению, даже если этот образ перемещается в реальном мире (например, если изображение книги распознается, книга будет отслежена по мере ее извлечения, размещения и т. д.).
 
-`ARObjectScanningConfiguration` обсуждалось [ранее](#recognizing-reference-objects) и является ориентированной на разработчика конфигурацией для сканирования трехмерных объектов. Это сильно ресурсоемкий процессор и аккумулятор, и его не следует использовать в приложениях для конечных пользователей. Пример [сканирования и обнаружения трехмерных объектов](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-scanninganddetecting3dobjects) демонстрирует использование этой конфигурации.
+`ARObjectScanningConfiguration` [Ранее](#recognizing-reference-objects) обсуждалось и является ориентированной на разработчика конфигурацией для сканирования трехмерных объектов. Это сильно ресурсоемкий процессор и аккумулятор, и его не следует использовать в приложениях для конечных пользователей. Пример [сканирования и обнаружения трехмерных объектов](/samples/xamarin/ios-samples/ios12-scanninganddetecting3dobjects) демонстрирует использование этой конфигурации.
 
-Последняя Конфигурация отслеживания, `ARWorldTrackingConfiguration`, является основныхом большинства возможностей смешанной реальности. В этой конфигурации используется "визуальный инерциый одометри" для связи реальных "точек компонентов" с цифровыми изображениями. Цифровые геометрии или спрайты привязаны к реальным горизонтальным и вертикальным плоскостям или относительно обнаруженных `ARReferenceObject`ных экземпляров. В этой конфигурации источник мира — это исходная положение камеры в пространстве с горизонтальной осью Z и цифровыми объектами «Оставайтесь на месте» относительно объектов в реальном мире.
+Окончательная конфигурация отслеживания, `ARWorldTrackingConfiguration` , — это основных большинства возможностей смешанной реальности. В этой конфигурации используется "визуальный инерциый одометри" для связи реальных "точек компонентов" с цифровыми изображениями. Цифровые геометрии или спрайты привязаны к реальным горизонтальным и вертикальным плоскостям или по отношению к обнаруженным `ARReferenceObject` экземплярам. В этой конфигурации источник мира — это исходная положение камеры в пространстве с горизонтальной осью Z и цифровыми объектами «Оставайтесь на месте» относительно объектов в реальном мире.
 
 ### <a name="environmental-texturing"></a>Текстурирование окружающей среды
 
@@ -299,8 +299,8 @@ ARKit 2 поддерживает «текстурирование окружаю
 
 Для использования текстурирования окружающей среды:
 
-- Объекты [`SCNMaterial`](xref:SceneKit.SCNMaterial) должны использовать [`SCNLightingModel.PhysicallyBased`](xref:SceneKit.SCNLightingModel.PhysicallyBased) и присвоить значение в диапазоне от 0 до 1 для [`Metalness.Contents`](xref:SceneKit.SCNMaterial.Metalness) и [`Roughness.Contents`](xref:SceneKit.SCNMaterialProperty.Contents) и
-- Ваша конфигурация отслеживания должна задать [`EnvironmentTexturing`](xref:ARKit.ARWorldTrackingConfiguration.EnvironmentTexturing) = [`AREnvironmentTexturing.Automatic`](xref:ARKit.AREnvironmentTexturing.Automatic) :
+- [`SCNMaterial`](xref:SceneKit.SCNMaterial)Объекты должны использовать [`SCNLightingModel.PhysicallyBased`](xref:SceneKit.SCNLightingModel.PhysicallyBased) и присвоить значение в диапазоне от 0 до 1 для [`Metalness.Contents`](xref:SceneKit.SCNMaterial.Metalness) и [`Roughness.Contents`](xref:SceneKit.SCNMaterialProperty.Contents) и
+- Настройка отслеживания должна быть задана [`EnvironmentTexturing`](xref:ARKit.ARWorldTrackingConfiguration.EnvironmentTexturing)  =  [`AREnvironmentTexturing.Automatic`](xref:ARKit.AREnvironmentTexturing.Automatic) :
 
 ```csharp
 var sphere = SCNSphere.Create(0.33F);
@@ -318,11 +318,11 @@ var configuration = new ARWorldTrackingConfiguration
 };
 ```
 
-Хотя вполне отражающаяся текстура, показанная в предыдущем фрагменте кода, является приятной в примере, текстурирование окружающей среды, вероятно, лучше использовать с ограничения допустим, что он запускает «нестандартные» ответы (текстура — это только оценка, основанная на том, что представляет собой Камера записано).
+Хотя вполне отражающаяся текстура, показанная в предыдущем фрагменте кода, является приятной для примера, текстурирование окружающей среды, вероятно, лучше использовать с ограничения допустим, что он запускает «нестандартные» ответы (текстура — это лишь оценка, основанная на том, что записывает камера).
 
 ### <a name="shared-and-persistent-ar-experiences"></a>Общие и устойчивые возможности AR
 
-Еще одним основным дополнением к ARKit 2 является класс [`ARWorldMap`](xref:ARKit.ARWorldMap) , который позволяет предоставлять общий доступ к данным отслеживания мира или сохранять их. Вы получаете текущую карту мира с [`ARSession.GetCurrentWorldMapAsync`](xref:ARKit.ARSession.GetCurrentWorldMapAsync) или [`GetCurrentWorldMap(Action<ARWorldMap,NSError>)`](xref:ARKit.ARSession.GetCurrentWorldMap(System.Action{ARKit.ARWorldMap,Foundation.NSError})) :
+Еще одним основным дополнением к ARKit 2 является [`ARWorldMap`](xref:ARKit.ARWorldMap) класс, который позволяет предоставлять общий доступ или хранить данные для отслеживания мира. Вы получаете текущую карту мира с помощью [`ARSession.GetCurrentWorldMapAsync`](xref:ARKit.ARSession.GetCurrentWorldMapAsync) или [`GetCurrentWorldMap(Action<ARWorldMap,NSError>)`](xref:ARKit.ARSession.GetCurrentWorldMap(System.Action{ARKit.ARWorldMap,Foundation.NSError})) :
 
 ```csharp
 // Local storage
@@ -344,8 +344,8 @@ if (worldMap != null)
 Чтобы поделиться или восстановить карту мира, сделайте следующее:
 
 1. Загрузите данные из файла,
-2. Разархивируйте его в объект `ARWorldMap`,
-3. Используйте это значение в качестве значения для свойства [`ARWorldTrackingConfiguration.InitialWorldMap`](xref:ARKit.ARWorldTrackingConfiguration.InitialWorldMap) :
+2. Разархивируйте его в `ARWorldMap` объект,
+3. Используйте это значение в качестве значения для [`ARWorldTrackingConfiguration.InitialWorldMap`](xref:ARKit.ARWorldTrackingConfiguration.InitialWorldMap) Свойства:
 
 ```csharp
 var data = NSData.FromArray(File.ReadAllBytes(PersistentWorldController.PersistenWorldPath));
@@ -360,7 +360,7 @@ var configuration = new ARWorldTrackingConfiguration
 };
 ```
 
-`ARWorldMap` содержит только невидимые данные для отслеживания мира и объекты [`ARAnchor`](xref:ARKit.ARAnchor) , они _не_ содержат цифровых ресурсов. Чтобы поделиться геометрией или изображениями, необходимо разработать собственную стратегию, соответствующую Вашему варианту использования (возможно, путем хранения/передачи только расположения и ориентации геометрии и его применения к статическому `SCNGeometry` или, возможно, путем хранения/передачи сериализованные объекты). Преимущество `ARWorldMap` заключается в том, что ресурсы, которые после их размещения относительно общего `ARAnchor`, будут постоянно отображаться между устройствами и сеансами.
+`ARWorldMap`Он содержит только невидимые данные для отслеживания мира и [`ARAnchor`](xref:ARKit.ARAnchor) объекты, но _не_ содержит цифровых ресурсов. Чтобы поделиться геометрией или изображениями, необходимо разработать собственную стратегию, соответствующую Вашему варианту использования (возможно, путем сохранения/передачи только расположения и ориентации геометрии и его применения к статическому `SCNGeometry` или, возможно, путем хранения и передачи сериализованных объектов). Преимущество состоит в том `ARWorldMap` , что активы, которые после их размещения относительно общего ресурса `ARAnchor` , будут постоянно отображаться между устройствами или сеансами.
 
 ### <a name="universal-scene-description-file-format"></a>Формат файла описания универсальной сцены
 
@@ -370,15 +370,15 @@ var configuration = new ARWorldTrackingConfiguration
 
 ### <a name="manual-resource-management"></a>Ручное управление ресурсами
 
-В ARKit важно управлять ресурсами вручную. Это позволяет не только обеспечить высокую частоту кадров, _но и избежать_ путаницы при «замораживании экрана». Платформа ARKit является ленивой для предоставления нового кадра камеры ([`ARSession.CurrentFrame`](xref:ARKit.ARSession.CurrentFrame). Пока в текущем [`ARFrame`](xref:ARKit.ARFrame) не будет вызван `Dispose()`, ARKit не предоставит новый кадр. Это приводит к тому, что видео зависает, даже если остальная часть приложения отвечает. Решение заключается в том, чтобы всегда получать доступ к `ARSession.CurrentFrame` с `using`ным блоком или вручную вызывать `Dispose()`.
+В ARKit важно управлять ресурсами вручную. Это позволяет не только обеспечить высокую частоту кадров, _но и избежать_ путаницы при «замораживании экрана». Платформа ARKit является ленивой для предоставления нового кадра камеры ( [`ARSession.CurrentFrame`](xref:ARKit.ARSession.CurrentFrame) . До тех пор пока [`ARFrame`](xref:ARKit.ARFrame) `Dispose()` не будет вызвана текущая ошибка, ARKit не предоставит новый кадр! Это приводит к тому, что видео зависает, даже если остальная часть приложения отвечает. Решение заключается в том, чтобы всегда обращаться к `ARSession.CurrentFrame` `using` блоку или вызывать `Dispose()` его вручную.
 
-Все объекты, производные от `NSObject`, `IDisposable` и `NSObject` реализуют [шаблон удаления](https://docs.microsoft.com/dotnet/standard/design-guidelines/dispose-pattern), поэтому обычно следует следовать [этому шаблону для реализации `Dispose` в производном классе](https://docs.microsoft.com/dotnet/standard/garbage-collection/implementing-dispose).
+Все объекты, производные от `NSObject` , `IDisposable` и `NSObject` реализуют [шаблон Dispose](/dotnet/standard/design-guidelines/dispose-pattern), поэтому обычно следует следовать [этому шаблону для реализации `Dispose` в производном классе](/dotnet/standard/garbage-collection/implementing-dispose).
 
 ### <a name="manipulating-transform-matrices"></a>Обработка матриц преобразований
 
-В любом трехмерном приложении вы будете иметь дело с матрицами преобразования 4x4, которые в сжатой области описывают перемещение, поворот и наклон объекта через трехмерное пространство. В SceneKit это объекты [`SCNMatrix4`](xref:SceneKit.SCNMatrix4) .  
+В любом трехмерном приложении вы будете иметь дело с матрицами преобразования 4x4, которые в сжатой области описывают перемещение, поворот и наклон объекта через трехмерное пространство. В SceneKit это [`SCNMatrix4`](xref:SceneKit.SCNMatrix4) объекты.  
 
-Свойство [`SCNNode.Transform`](xref:SceneKit.SCNNode.Transform) Возвращает матрицу преобразования `SCNMatrix4` для [`SCNNode`](xref:SceneKit.SCNNode) _в соответствии с_ типом `simdfloat4x4` строкового типа. Итак, например:
+[`SCNNode.Transform`](xref:SceneKit.SCNNode.Transform)Свойство возвращает `SCNMatrix4` матрицу преобразования для, которая [`SCNNode`](xref:SceneKit.SCNNode) _является_ `simdfloat4x4` типом строки. Итак, например:
 
 ```csharp
 var node = new SCNNode { Position = new SCNVector3(2, 3, 4) };  
@@ -389,7 +389,7 @@ Console.WriteLine(xform);
 
 Как видите, это расположение кодируется в первых трех элементах нижней строки.
 
-В Xamarin распространенным типом для манипулирования матрицами преобразования является `NVector4`, который в соответствии с соглашением интерпретируется как основной метод. Это означает, что компонент перевода или позиционирования ожидается в M14, M24, m34, а не M41, M42, M43:
+В Xamarin общий тип для манипулирования матрицами преобразований — это `NVector4` , что по соглашению интерпретируется как основной способ столбца. Это означает, что компонент перевода или позиционирования ожидается в M14, M24, m34, а не M41, M42, M43:
 
 ![строка — основной и столбец — основной](images/arkit_row_vs_column.png)
 
@@ -397,7 +397,7 @@ Console.WriteLine(xform);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример приложения — сканирование и обнаружение трехмерных объектов](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-scanninganddetecting3dobjects)
+- [Пример приложения — сканирование и обнаружение трехмерных объектов](/samples/xamarin/ios-samples/ios12-scanninganddetecting3dobjects)
 - [Новые возможности в ARKit 2 (ВВДК 2018)](https://developer.apple.com/videos/play/wwdc2018/602/)
 - [Основные сведения об отслеживании и обнаружении ARKit (ВВДК 2018)](https://developer.apple.com/videos/play/wwdc2018/610/)
-- [Общие сведения о ARKit в Xamarin. iOS](https://docs.microsoft.com/xamarin/ios/platform/introduction-to-ios11/arkit/)
+- [Общие сведения о ARKit в Xamarin. iOS](../introduction-to-ios11/arkit/index.md)

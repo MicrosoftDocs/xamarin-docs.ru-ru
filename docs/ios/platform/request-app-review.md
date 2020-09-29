@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/29/2017
-ms.openlocfilehash: 795bbffe17a5b14f3814967c1ec4032dfd2739aa
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: b51eeb3594f1b41f8b8f7fdaedc7577138c4f5ba
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937076"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435674"
 ---
 # <a name="request-app-review-in-xamarinios"></a>Запрос проверки приложения в Xamarin. iOS
 
@@ -57,7 +57,7 @@ namespace iOSTenThree
 ```
 
 > [!NOTE]
-> Вызов в приложении, предназначенном для `RequestReview()` разработки, всегда будет отображать диалоговое окно оценки и проверки, чтобы его можно было протестировать. Это не относится к приложениям, которые были распространены через TestFlight, где вызов метода будет проигнорирован.
+> Вызов в приложении, предназначенном для  `RequestReview()` разработки, всегда будет отображать диалоговое окно оценки и проверки, чтобы его можно было протестировать. Это не относится к приложениям, которые были распространены через TestFlight, где вызов метода будет проигнорирован.
 
 Когда `RequestReview()` метод вызывается в приложении-отгрузке, установленном пользователем из магазина приложений, iOS 10 будет обрабатывать всю оценку и процесс проверки для разработчика. Опять же, поскольку этот процесс регулируется политикой магазина приложений, предупреждение может быть или не отображаться.
 
@@ -71,4 +71,4 @@ namespace iOSTenThree
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Иостенсри](https://docs.microsoft.com/samples/xamarin/ios-samples/ios10-iostenthree/)
+- [Пример Иостенсри](/samples/xamarin/ios-samples/ios10-iostenthree/)

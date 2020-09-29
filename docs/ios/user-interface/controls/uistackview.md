@@ -8,12 +8,12 @@ ms.custom: xamu-video
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: f38aee099cd2551ab2bdbaa94a8a3f9c0e1cf869
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: a926ae3aa91b7c1dbe13ba78c28f4df63228e151
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939559"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436486"
 ---
 # <a name="stack-views-in-xamarinios"></a>Представления стеков в Xamarin. iOS
 
@@ -62,7 +62,7 @@ _В этой статье описывается использование но
 При работе с представлением стека можно представить **Выравнивание** в виде **координат X** и **Y** для подпредставления и **распределения** по **высоте** и **ширине**.
 
 > [!IMPORTANT]
-> `UIStackView`класс предназначен для неотрисовки представления контейнера и поэтому не отображается на холсте, как и другие подклассы `UIView` . Поэтому установка таких свойств, как `BackgroundColor` или переопределение, не `DrawRect` будет иметь визуального влияния.
+> `UIStackView` класс предназначен для неотрисовки представления контейнера и поэтому не отображается на холсте, как и другие подклассы `UIView` . Поэтому установка таких свойств, как `BackgroundColor` или переопределение, не `DrawRect` будет иметь визуального влияния.
 
 Продолжайте размечать интерфейс приложения, добавляя метку, Имажевиев, две кнопки и горизонтальное представление стека, чтобы оно наглядело следующим образом:
 
@@ -273,7 +273,7 @@ UIView.Animate(0.25, ()=>{
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры для iOS 9](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9)
+- [Примеры для iOS 9](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9)
 - [iOS 9 для разработчиков](https://developer.apple.com/ios/pre-release/)
 - [Новые возможности iOS 9,0](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html)
 - [Справочник по Уистакквиев](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIStackView_Class_Reference/)

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: e779b874cda016a0cd6cc0444ff42a761ee7483e
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 793a82b7bb88f3e0c0a233c8c18c2d90f741b137
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934684"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434767"
 ---
 # <a name="tvos-user-interface-styles-in-xamarin"></a>Стили пользовательского интерфейса tvOS в Xamarin
 
@@ -81,8 +81,8 @@ tvOS 10 теперь поддерживает как темную, так и с�
 
 Для поддержки светлых и темных тем в приложении tvOS 10 компания Apple добавила два новых эффекта размытия. Эти новые эффекты будут автоматически настраивать размытие на основе темы пользовательского интерфейса, выбранной пользователем, следующим образом.
 
-- `UIBlurEffectStyleRegular`— Использует светло размытие в светлой теме и темное размытие в темной теме.
-- `UIBlurEffectStyleProminent`— Использует очень светлое размытие в светлой теме и очень темное размытие в темной теме.
+- `UIBlurEffectStyleRegular` — Использует светло размытие в светлой теме и темное размытие в темной теме.
+- `UIBlurEffectStyleProminent` — Использует очень светлое размытие в светлой теме и очень темное размытие в темной теме.
 
 <a name="Working-with-Trait-Collections"></a>
 
@@ -128,7 +128,7 @@ button.ForTraitCollection(dark).SetTitleColor (UIColor.White, UIControlState.Nor
 
 Разработчику требуется более глубокий контроль над внешним видом элемента пользовательского интерфейса на основе выбранной темы пользовательского интерфейса, но они могут переопределить `TraitCollectionDidChange` метод `UIView` `UIViewController` класса или.
 
-Например.
+Пример:
 
 ```csharp
 public override void TraitCollectionDidChange (UITraitCollection previousTraitCollection)
@@ -146,7 +146,7 @@ public override void TraitCollectionDidChange (UITraitCollection previousTraitCo
 
 В зависимости от структуры приложения tvOS могут возникнуть ситуации, когда разработчику нужно переопределить коллекцию признаков данного элемента пользовательского интерфейса и всегда использовать определенную тему ПОЛЬЗОВАТЕЛЬСКОГО интерфейса.
 
-Это можно сделать с помощью `SetOverrideTraitCollection` метода для `UIViewController` класса. Например.
+Это можно сделать с помощью `SetOverrideTraitCollection` метода для `UIViewController` класса. Пример:
 
 ```csharp
 // Create new trait and configure it
@@ -209,5 +209,5 @@ SetOverrideTraitCollection (trait, this);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [Новые возможности в tvOS 10](https://developer.apple.com/library/prerelease/content/releasenotes/General/WhatsNewinTVOS/Articles/tvOS10.html#//apple_ref/doc/uid/TP40017259-SW1)

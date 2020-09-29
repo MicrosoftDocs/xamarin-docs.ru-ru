@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: c02b810cc61779f5c3b5ee5eb61169e8c3fceab4
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 724d6ab8d39a5c0054302685c5f9f4ba0f3d9908
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86931213"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91431739"
 ---
 # <a name="ios-7-user-interface-overview"></a>Обзор пользовательского интерфейса iOS 7
 
@@ -144,7 +144,7 @@ iOS 7 предназначена для того, чтобы позволить 
 
 #### <a name="toplayoutguide-and-bottomlayoutguide"></a>Топлайаутгуиде и Боттомлайаутгуиде
 
- `TopLayoutGuide`и `BottomLayoutGuide` служат в качестве ссылки для того, где должны начинаться или заканчиваться представления, чтобы содержимое не перекрыто полупрозрачной `UIKit` полосой, как показано в следующем примере:
+ `TopLayoutGuide` и `BottomLayoutGuide` служат в качестве ссылки для того, где должны начинаться или заканчиваться представления, чтобы содержимое не перекрыто полупрозрачной `UIKit` полосой, как показано в следующем примере:
 
  [![Образец содержимого, который не перекрывается полупрозрачной UIKit полосой](ios7-ui-images/clipped.png)](ios7-ui-images/clipped.png#lightbox)
 
@@ -168,12 +168,12 @@ public override void ViewDidLayoutSubviews ()
 
  [![Пример смещения Имажевиевс в верхней части экрана](ios7-ui-images/good2.png)](ios7-ui-images/good2.png#lightbox)
 
-См. [имажевиевер](https://docs.microsoft.com/samples/xamarin/ios-samples/ios7-ui-updates/) для работы с примером.
+См. [имажевиевер](/samples/xamarin/ios-samples/ios7-ui-updates/) для работы с примером.
 
 Значение смещения создается динамически после добавления представления в иерархию, поэтому попытка чтения `TopLayoutGuide` и `BottomLayoutGuide` значения в возвратит `ViewDidLoad` 0. Вычислите значение после загрузки представления, например, в `ViewDidLayoutSubviews` .
 
 > [!IMPORTANT]
-> `TopLayoutGuide`и `BottomLayoutGuide` не рекомендуются в iOS 11 в пользу новой защищенной области. Компания Apple объявила о том, что использование защищенной области совместимо с iOS версии более ранней, чем iOS 11. Дополнительные сведения см. в статье [Обновление приложения для iOS 11](~/ios/platform/introduction-to-ios11/updating-your-app/visual-design.md#fullscreen) .
+> `TopLayoutGuide` и `BottomLayoutGuide` не рекомендуются в iOS 11 в пользу новой защищенной области. Компания Apple объявила о том, что использование защищенной области совместимо с iOS версии более ранней, чем iOS 11. Дополнительные сведения см. в статье [Обновление приложения для iOS 11](~/ios/platform/introduction-to-ios11/updating-your-app/visual-design.md#fullscreen) .
 
 #### <a name="edgesforextendedlayout"></a>еджесфорекстендедлайаут
 
@@ -203,7 +203,7 @@ if (UIDevice.CurrentDevice.CheckSystemVersion (7, 0)) {
 
 Обратите внимание, что хотя воздействие `TopLayoutGuide/BottomLayoutGuide` `EdgesForExtendedLayout` API-интерфейсов и аналогично, они предназначены для того, чтобы заполнять разные цели. Изменение `EdgesForExtendedLayout` значения по умолчанию может привести к исправлению обрезанных представлений в приложениях, предназначенных для iOS 6, но хорошая разработка iOS 7 должна состоять из полноэкранного Aesthetic и предоставить возможность просмотра в полноэкранном режиме, полагаться на то, `TopLayoutGuide` `BottomLayoutGuide` чтобы правильно разместить содержимое, которое должно работать в удобном для пользователя месте.
 
-См. [имажевиевер](https://docs.microsoft.com/samples/xamarin/ios-samples/ios7-ui-updates/) для работы с примером.
+См. [имажевиевер](/samples/xamarin/ios-samples/ios7-ui-updates/) для работы с примером.
 
 ### <a name="status-and-navigation-bars"></a>Состояние и панели навигации
 
@@ -256,12 +256,12 @@ public override bool PrefersStatusBarHidden ()
 
 ### <a name="dynamic-type"></a>Динамический тип
 
-В iOS 7 пользователь может указать размер текста в параметрах системы. При использовании динамического типа шрифт изменяется динамически, чтобы выглядеть хорошо, независимо от размера. `UIFont.PreferredFontForTextStyle`следует использовать для получения шрифта, оптимизированного для управляемого пользователем размера.
+В iOS 7 пользователь может указать размер текста в параметрах системы. При использовании динамического типа шрифт изменяется динамически, чтобы выглядеть хорошо, независимо от размера. `UIFont.PreferredFontForTextStyle` следует использовать для получения шрифта, оптимизированного для управляемого пользователем размера.
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье рассматриваются изменения в элементах пользовательского интерфейса в iOS 7. Он изучает несколько изменений, внесенных в представления и элементы управления в UIKit, выделяя как визуальные изменения, так и изменения связанных API. Наконец, в нем появились новые API-интерфейсы для работы с полноэкранным содержимым, новой поддержкой цвета оттенков и динамического типа.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Имажевиевер (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios7-ui-updates)
+- [Имажевиевер (пример)](/samples/xamarin/ios-samples/ios7-ui-updates)

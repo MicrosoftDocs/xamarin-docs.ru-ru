@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: cf0e617b225cc7535acffa0880a0bc089ae8da28
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 01a09294d55490a723eb59b0365ac2dc516110c9
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934060"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434666"
 ---
 # <a name="sliders-switches-and-segmented-controls-in-xamarinios"></a>Ползунки, переключатели и сегментированные элементы управления в Xamarin. iOS
 
 <a name="Sliders"></a>
 
-## <a name="sliders"></a>через ползунки;
+## <a name="sliders"></a>Ползунки
 
 Элемент управления "ползунок" позволяет просто выбрать числовое значение в диапазоне. Элемент управления по умолчанию имеет значение от 0 до 1, но эти ограничения можно настроить.
 
@@ -58,11 +58,11 @@ slider1.MaximumTrackTintColor = UIColor.Green;
 
 <a name="Switch"></a>
 
-## <a name="switch"></a>Параметр
+## <a name="switch"></a>Коммутатор
 
 iOS использует `UISwitch` как логическое входное значение, которое может быть представлено переключателем на других платформах. Пользователь может управлять этим элементом управления, перемещая *бегунок* между положениями **On/Off** .
 
- [![Параметр](slider-switch-segmented-controls-images/image28a.png)](slider-switch-segmented-controls-images/image28a.png#lightbox)
+ [![Коммутатор](slider-switch-segmented-controls-images/image28a.png)](slider-switch-segmented-controls-images/image28a.png#lightbox)
 
 Внешний вид переключателя можно настроить в **панель свойств** конструктора, который позволит управлять состоянием оттенок по умолчанию, **вкл./выкл** . и **изображением включения/выключения**. Это показано на рисунке ниже.
 
@@ -94,5 +94,5 @@ switch1.On = true;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Элементы управления (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/controls)
+- [Элементы управления (пример)](/samples/xamarin/ios-samples/controls)
 - [Контроллер предупреждений](https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/alertcontroller)

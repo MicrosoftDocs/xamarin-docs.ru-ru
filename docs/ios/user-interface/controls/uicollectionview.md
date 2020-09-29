@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: eccd0415fdc1db357f904b843a015df60a35a488
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: e71760f813a8974a11ac46e6c9b286bb0eb55f83
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939611"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432821"
 ---
 # <a name="collection-views-in-xamarinios"></a>Представления коллекций в Xamarin. iOS
 
@@ -40,9 +40,9 @@ iOS предоставляет класс макета с именем `UICollec
 
 `UICollectionViewCell`Класс имеет следующие свойства для каждого из этих представлений:
 
-- `ContentView`— Это представление содержит содержимое, которое представляет ячейка. Он отображается в самом верхнем z-порядке на экране.
-- `SelectedBackgroundView`— Ячейки имеют встроенную поддержку выбора. Это представление позволяет визуально отметьте, что ячейка выбрана. Он отображается непосредственно под тем, `ContentView` когда выбрана ячейка.
-- `BackgroundView`— Ячейки могут также отображать фон, который представлен в `BackgroundView` . Это представление отображается под `SelectedBackgroundView` .
+- `ContentView` — Это представление содержит содержимое, которое представляет ячейка. Он отображается в самом верхнем z-порядке на экране.
+- `SelectedBackgroundView` — Ячейки имеют встроенную поддержку выбора. Это представление позволяет визуально отметьте, что ячейка выбрана. Он отображается непосредственно под тем,  `ContentView` когда выбрана ячейка.
+- `BackgroundView` — Ячейки могут также отображать фон, который представлен в  `BackgroundView` . Это представление отображается под  `SelectedBackgroundView` .
 
 Устанавливая `ContentView` таким образом, что он меньше `BackgroundView` и `SelectedBackgroundView` , `BackgroundView` можно использовать для визуального выделения содержимого, тогда `SelectedBackgroundView` как при выборе ячейки, как показано ниже:
 
@@ -134,14 +134,14 @@ public override UICollectionReusableView GetViewForSupplementaryElement (UIColle
   }
  ```
 
-## <a name="data-source"></a>Источник данных
+## <a name="data-source"></a>источника данных
 
 Как и в других частях iOS, таких как `UITableView` и `MKMapView` , `UICollectionView` получает свои данные из *источника данных*, который предоставляется в Xamarin. iOS через **`UICollectionViewDataSource`** класс. Этот класс отвечает за предоставление содержимого следующим `UICollectionView` образом:
 
-- **Ячейки** — возвращаются из `GetCell` метода.
-- **Дополнительные представления** — возвращаются из `GetViewForSupplementaryElement` метода.
-- **Число разделов,** возвращаемое `NumberOfSections` методом. Значение по умолчанию равно 1, если не реализовано.
-- **Количество элементов в разделе** , возвращаемых `GetItemsCount` методом.
+- **Ячейки** — возвращаются из  `GetCell` метода.
+- **Дополнительные представления** — возвращаются из  `GetViewForSupplementaryElement` метода.
+- **Число разделов,** возвращаемое  `NumberOfSections` методом. Значение по умолчанию равно 1, если не реализовано.
+- **Количество элементов в разделе** , возвращаемых  `GetItemsCount` методом.
 
 ### <a name="uicollectionviewcontroller"></a>уиколлектионвиевконтроллер
 Для удобства `UICollectionViewController` класс доступен. Он автоматически настраивается как делегат, который обсуждается в следующем разделе, и источник данных для его `UICollectionView` представления.
@@ -233,7 +233,7 @@ public override bool ShouldHighlightItem (UICollectionView collectionView, NSInd
 
 Если выделение отключено, процесс выбора ячейки также отключается. Кроме того, существует также `ShouldSelectItem` метод, который управляет выбором напрямую, хотя если `ShouldHighlightItem` реализуется и возвращает значение false, `ShouldSelectItem` не вызывается.
 
- `ShouldSelectItem`позволяет включать или отключать выбор для отдельных элементов, если `ShouldHighlightItem` не реализован. Он также позволяет выделять выделение без выделения, если `ShouldHighlightItem` реализуется и возвращает значение true, тогда как `ShouldSelectItem` возвращает значение false.
+ `ShouldSelectItem` позволяет включать или отключать выбор для отдельных элементов, если `ShouldHighlightItem` не реализован. Он также позволяет выделять выделение без выделения, если `ShouldHighlightItem` реализуется и возвращает значение true, тогда как `ShouldSelectItem` возвращает значение false.
 
  <a name="Cell_Menus"></a>
 
@@ -241,9 +241,9 @@ public override bool ShouldHighlightItem (UICollectionView collectionView, NSInd
 
 Каждая ячейка в может `UICollectionView` Отображать меню, которое позволяет при необходимости поддерживать вырезание, копирование и вставку. Чтобы создать меню редактирования для ячейки, выполните следующие действия.
 
-1. Переопределяйте `ShouldShowMenu` и возвращают значение true, если элемент должен отображать меню.
-1. Переопределяйте `CanPerformAction` и возвращают значение true для каждого действия, которое может выполнять элемент, что может быть любым из вырезания, копирования или вставки.
-1. Переопределите `PerformAction` для выполнения операции редактирования, копирования и вставки.
+1. Переопределяйте  `ShouldShowMenu` и возвращают значение true, если элемент должен отображать меню.
+1. Переопределяйте  `CanPerformAction` и возвращают значение true для каждого действия, которое может выполнять элемент, что может быть любым из вырезания, копирования или вставки.
+1. Переопределите  `PerformAction` для выполнения операции редактирования, копирования и вставки.
 
 На следующем снимке экрана показано меню при длительной нажатии ячейки:
 
@@ -253,7 +253,7 @@ public override bool ShouldHighlightItem (UICollectionView collectionView, NSInd
 
 ## <a name="layout"></a>Layout
 
-`UICollectionView`поддерживает систему макета, которая позволяет управлять расположением всех ее элементов, ячеек, дополнительных представлений и Декорирований, независимо от `UICollectionView` самого себя.
+`UICollectionView` поддерживает систему макета, которая позволяет управлять расположением всех ее элементов, ячеек, дополнительных представлений и Декорирований, независимо от `UICollectionView` самого себя.
 Используя систему макета, приложение может поддерживать макеты, такие как сетка, как показано в этой статье, а также предоставлять пользовательские макеты.
 
  <a name="Layout_Basics"></a>
@@ -262,8 +262,8 @@ public override bool ShouldHighlightItem (UICollectionView collectionView, NSInd
 
 Макеты в `UICollectionView` определяются в классе, который наследует от `UICollectionViewLayout` . Реализация макета отвечает за создание атрибутов макета для каждого элемента в `UICollectionView` . Существует два способа создания макета.
 
-- Используйте встроенный `UICollectionViewFlowLayout` .
-- Предоставьте пользовательский макет, наследуя от `UICollectionViewLayout` .
+- Используйте встроенный  `UICollectionViewFlowLayout` .
+- Предоставьте пользовательский макет, наследуя от  `UICollectionViewLayout` .
 
  <a name="Flow_Layout"></a>
 
@@ -273,13 +273,13 @@ public override bool ShouldHighlightItem (UICollectionView collectionView, NSInd
 
 Чтобы использовать потоковый макет:
 
-- Создайте экземпляр `UICollectionViewFlowLayout` :
+- Создайте экземпляр  `UICollectionViewFlowLayout` :
 
 ```csharp
 var layout = new UICollectionViewFlowLayout ();
 ```
 
-- Передайте экземпляр в конструктор класса `UICollectionView` :
+- Передайте экземпляр в конструктор класса  `UICollectionView` :
 
 ```csharp
 simpleCollectionViewController = new SimpleCollectionViewController (layout);
@@ -315,9 +315,9 @@ layout.SectionInset = new UIEdgeInsets (50,50,50,50);
 Для реализации этого с помощью подклассов `UICollectionViewFlowLayout` требуется:
 
 - Инициализация любых свойств макета, которые применяются к самому макету или ко всем элементам в макете в конструкторе.
-- Переопределение `ShouldInvalidateLayoutForBoundsChange` , возвращающее значение true, чтобы при `UICollectionView` изменении границ изменений Макет ячеек будет пересчитан. В этом случае в этом случае код для преобразования, применяемый к ячейке центермост, будет применен во время прокрутки.
-- Переопределение `TargetContentOffset` для того, чтобы привязать ячейку центермост к центру по `UICollectionView` мере остановки прокрутки.
-- Переопределение `LayoutAttributesForElementsInRect` для возврата массива `UICollectionViewLayoutAttributes` . Каждый из них `UICollectionViewLayoutAttribute` содержит сведения о разметке конкретного элемента, включая такие свойства, `Center` как `Size` , `ZIndex` и `Transform3D` .
+- Переопределение  `ShouldInvalidateLayoutForBoundsChange` , возвращающее значение true, чтобы при  `UICollectionView` изменении границ изменений Макет ячеек будет пересчитан. В этом случае в этом случае код для преобразования, применяемый к ячейке центермост, будет применен во время прокрутки.
+- Переопределение  `TargetContentOffset` для того, чтобы привязать ячейку центермост к центру по  `UICollectionView` мере остановки прокрутки.
+- Переопределение  `LayoutAttributesForElementsInRect` для возврата массива  `UICollectionViewLayoutAttributes` . Каждый из них  `UICollectionViewLayoutAttribute` содержит сведения о разметке конкретного элемента, включая такие свойства,  `Center` как  `Size` ,  `ZIndex` и  `Transform3D` .
 
 В следующем коде показана такая реализация:
 
@@ -396,9 +396,9 @@ namespace SimpleCollectionView
 
 Ниже приведены ключевые методы переопределения.
 
-- `PrepareLayout`— Используется для выполнения начальных геометрических вычислений, которые будут использоваться в процессе макета.
-- `CollectionViewContentSize`— Возвращает размер области, используемой для вывода содержимого.
-- `LayoutAttributesForElementsInRect`— Как и в приведенном ранее примере Уиколлектионвиевфловлайаут, этот метод используется для предоставления сведений о `UICollectionView` том, как разметка каждого элемента. Однако, в отличие от `UICollectionViewFlowLayout` , при создании пользовательского макета можно располагать элементы, но вы выбираете их.
+- `PrepareLayout` — Используется для выполнения начальных геометрических вычислений, которые будут использоваться в процессе макета.
+- `CollectionViewContentSize` — Возвращает размер области, используемой для вывода содержимого.
+- `LayoutAttributesForElementsInRect` — Как и в приведенном ранее примере Уиколлектионвиевфловлайаут, этот метод используется для предоставления сведений о  `UICollectionView` том, как разметка каждого элемента. Однако, в отличие от  `UICollectionViewFlowLayout` , при создании пользовательского макета можно располагать элементы, но вы выбираете их.
 
 Например, одно и то же содержимое может быть представлено в циклической структуре, как показано ниже:
 
@@ -430,7 +430,7 @@ namespace SimpleCollectionView
 
 В iOS 9 самый быстрый способ добавить изменение порядка в представление коллекции — использовать `UICollectionViewController` .
 Контроллер представления коллекции теперь имеет `InstallsStandardGestureForInteractiveMovement` свойство, добавляющее Стандартный *распознаватель жестов* , поддерживающий перетаскивание для изменения порядка элементов в коллекции.
-Так как значение по умолчанию равно `true` , необходимо реализовать `MoveItem` метод `UICollectionViewDataSource` класса для поддержки перетаскивания. Например.
+Так как значение по умолчанию равно `true` , необходимо реализовать `MoveItem` метод `UICollectionViewDataSource` класса для поддержки перетаскивания. Пример:
 
 ```csharp
 public override void MoveItem (UICollectionView collectionView, NSIndexPath sourceIndexPath, NSIndexPath destinationIndexPath)
@@ -672,7 +672,7 @@ namespace CollectionView
 
 Сохраните изменения, внесенные в пользовательский интерфейс, и запустите приложение.
 Если пользователь выбирает элемент из списка и перетаскивает его в новое место, другие элементы будут анимироваться автоматически по мере того, как они переходят за пределы элемента.
-Когда пользователь удаляет элемент в новом расположении, он перейдет в это место. Например.
+Когда пользователь удаляет элемент в новом расположении, он перейдет в это место. Пример:
 
 [![Пример перетаскивания элемента в новое место](uicollectionview-images/intro01.png)](uicollectionview-images/intro01.png#lightbox)
 
@@ -680,7 +680,7 @@ namespace CollectionView
 
 ### <a name="using-a-custom-gesture-recognizer"></a>Использование пользовательского распознавателя жестов
 
-В случаях, когда вы не можете использовать `UICollectionViewController` и должен использовать обычный `UIViewController` или если вы хотите повысить управляемость жеста перетаскивания, можно создать собственный распознаватель жестов и добавить его в представление коллекции при загрузке представления. Например.
+В случаях, когда вы не можете использовать `UICollectionViewController` и должен использовать обычный `UIViewController` или если вы хотите повысить управляемость жеста перетаскивания, можно создать собственный распознаватель жестов и добавить его в представление коллекции при загрузке представления. Пример:
 
 ```csharp
 public override void ViewDidLoad ()
@@ -718,10 +718,10 @@ public override void ViewDidLoad ()
 
 Здесь мы используем несколько новых методов, добавленных в представление коллекции для реализации и управления операцией перетаскивания:
 
-- `BeginInteractiveMovementForItem`— Отмечает начало операции перемещения.
-- `UpdateInteractiveMovementTargetPosition`— Отправляется при обновлении расположения элемента.
-- `EndInteractiveMovement`— Отмечает конец перемещения элемента.
-- `CancelInteractiveMovement`— Помечает пользователя, который отменяет операцию перемещения.
+- `BeginInteractiveMovementForItem` — Отмечает начало операции перемещения.
+- `UpdateInteractiveMovementTargetPosition` — Отправляется при обновлении расположения элемента.
+- `EndInteractiveMovement` — Отмечает конец перемещения элемента.
+- `CancelInteractiveMovement` — Помечает пользователя, который отменяет операцию перемещения.
 
 При запуске приложения операция перетаскивания будет работать точно так же, как распознаватель по умолчанию, который поставляется с представлением коллекции.
 
@@ -1195,77 +1195,77 @@ public override void AwakeFromNib ()
 
 В класс для iOS 9 были внесены следующие изменения или дополнения `UICollectionView` :
 
-- `BeginInteractiveMovementForItem`— Отмечает начало операции перетаскивания.
-- `CancelInteractiveMovement`— Информирует представление коллекции о том, что пользователь отменил операцию перетаскивания.
-- `EndInteractiveMovement`— Информирует представление коллекции о том, что пользователь завершил операцию перетаскивания.
-- `GetIndexPathsForVisibleSupplementaryElements`— Возвращает элемент `indexPath` верхнего или нижнего колонтитула в разделе представления коллекции.
-- `GetSupplementaryView`— Возвращает заданный верхний или нижний колонтитул.
-- `GetVisibleSupplementaryViews`— Возвращает список всех видимых верхних и нижних колонтитулов.
-- `UpdateInteractiveMovementTargetPosition`— Информирует представление коллекции о том, что пользователь переместил или перемещает элемент во время операции перетаскивания.
+- `BeginInteractiveMovementForItem` — Отмечает начало операции перетаскивания.
+- `CancelInteractiveMovement` — Информирует представление коллекции о том, что пользователь отменил операцию перетаскивания.
+- `EndInteractiveMovement` — Информирует представление коллекции о том, что пользователь завершил операцию перетаскивания.
+- `GetIndexPathsForVisibleSupplementaryElements` — Возвращает элемент `indexPath` верхнего или нижнего колонтитула в разделе представления коллекции.
+- `GetSupplementaryView` — Возвращает заданный верхний или нижний колонтитул.
+- `GetVisibleSupplementaryViews` — Возвращает список всех видимых верхних и нижних колонтитулов.
+- `UpdateInteractiveMovementTargetPosition` — Информирует представление коллекции о том, что пользователь переместил или перемещает элемент во время операции перетаскивания.
 
 ### <a name="uicollectionviewcontroller"></a>уиколлектионвиевконтроллер
 
 В класс в iOS 9 были внесены следующие изменения или дополнения `UICollectionViewController` .
 
-- `InstallsStandardGestureForInteractiveMovement`— Если `true` будет использоваться новый распознаватель жестов, который автоматически поддерживает возможность перетаскивания.
-- `CanMoveItem`— Информирует представление коллекции, если для данного элемента можно изменить порядок перетаскивания.
-- `GetTargetContentOffset`— Используется для получения смещения заданного элемента представления коллекции.
-- `GetTargetIndexPathForMove`— Получает объект `indexPath` для заданного элемента для операции перетаскивания.
-- `MoveItem`— Перемещает порядок заданного элемента в списке.
+- `InstallsStandardGestureForInteractiveMovement` — Если `true` будет использоваться новый распознаватель жестов, который автоматически поддерживает возможность перетаскивания.
+- `CanMoveItem` — Информирует представление коллекции, если для данного элемента можно изменить порядок перетаскивания.
+- `GetTargetContentOffset` — Используется для получения смещения заданного элемента представления коллекции.
+- `GetTargetIndexPathForMove` — Получает объект `indexPath` для заданного элемента для операции перетаскивания.
+- `MoveItem` — Перемещает порядок заданного элемента в списке.
 
 ### <a name="uicollectionviewdatasource"></a>уиколлектионвиевдатасаурце
 
 В класс в iOS 9 были внесены следующие изменения или дополнения `UICollectionViewDataSource` .
 
-- `CanMoveItem`— Информирует представление коллекции, если для данного элемента можно изменить порядок перетаскивания.
-- `MoveItem`— Перемещает порядок заданного элемента в списке.
+- `CanMoveItem` — Информирует представление коллекции, если для данного элемента можно изменить порядок перетаскивания.
+- `MoveItem` — Перемещает порядок заданного элемента в списке.
 
 ### <a name="uicollectionviewdelegate"></a>уиколлектионвиевделегате
 
 В класс в iOS 9 были внесены следующие изменения или дополнения `UICollectionViewDelegate` .
 
-- `GetTargetContentOffset`— Используется для получения смещения заданного элемента представления коллекции.
-- `GetTargetIndexPathForMove`— Получает объект `indexPath` для заданного элемента для операции перетаскивания.
+- `GetTargetContentOffset` — Используется для получения смещения заданного элемента представления коллекции.
+- `GetTargetIndexPathForMove` — Получает объект `indexPath` для заданного элемента для операции перетаскивания.
 
 ### <a name="uicollectionviewflowlayout"></a>уиколлектионвиевфловлайаут
 
 В класс в iOS 9 были внесены следующие изменения или дополнения `UICollectionViewFlowLayout` .
 
-- `SectionFootersPinToVisibleBounds`— Фиксирует нижние колонтитулы раздела до видимых границ представления коллекции.
-- `SectionHeadersPinToVisibleBounds`— Фиксирует заголовки разделов в видимых границах представления коллекции.
+- `SectionFootersPinToVisibleBounds` — Фиксирует нижние колонтитулы раздела до видимых границ представления коллекции.
+- `SectionHeadersPinToVisibleBounds` — Фиксирует заголовки разделов в видимых границах представления коллекции.
 
 ### <a name="uicollectionviewlayout"></a>уиколлектионвиевлайаут
 
 В класс в iOS 9 были внесены следующие изменения или дополнения `UICollectionViewLayout` .
 
-- `GetInvalidationContextForEndingInteractiveMovementOfItems`— Возвращает контекст недействительности в конце операции перетаскивания, когда пользователь либо завершает перетаскивание, либо отменяет его.
-- `GetInvalidationContextForInteractivelyMovingItems`— Возвращает контекст недействительности в начале операции перетаскивания.
-- `GetLayoutAttributesForInteractivelyMovingItem`— Получает атрибуты макета для данного элемента при перетаскивании элемента.
-- `GetTargetIndexPathForInteractivelyMovingItem`— Возвращает объект `indexPath` элемента, который находится в заданной точке при перетаскивании элемента.
+- `GetInvalidationContextForEndingInteractiveMovementOfItems` — Возвращает контекст недействительности в конце операции перетаскивания, когда пользователь либо завершает перетаскивание, либо отменяет его.
+- `GetInvalidationContextForInteractivelyMovingItems` — Возвращает контекст недействительности в начале операции перетаскивания.
+- `GetLayoutAttributesForInteractivelyMovingItem` — Получает атрибуты макета для данного элемента при перетаскивании элемента.
+- `GetTargetIndexPathForInteractivelyMovingItem` — Возвращает объект `indexPath` элемента, который находится в заданной точке при перетаскивании элемента.
 
 ### <a name="uicollectionviewlayoutattributes"></a>уиколлектионвиевлайаутаттрибутес
 
 В класс в iOS 9 были внесены следующие изменения или дополнения `UICollectionViewLayoutAttributes` .
 
-- `CollisionBoundingPath`— Возвращает путь конфликта двух элементов во время операции перетаскивания.
-- `CollisionBoundsType`— Возвращает тип конфликта (как `UIDynamicItemCollisionBoundsType` ), произошедший во время операции перетаскивания.
+- `CollisionBoundingPath` — Возвращает путь конфликта двух элементов во время операции перетаскивания.
+- `CollisionBoundsType` — Возвращает тип конфликта (как `UIDynamicItemCollisionBoundsType` ), произошедший во время операции перетаскивания.
 
 ### <a name="uicollectionviewlayoutinvalidationcontext"></a>уиколлектионвиевлайаутинвалидатионконтекст
 
 В класс в iOS 9 были внесены следующие изменения или дополнения `UICollectionViewLayoutInvalidationContext` .
 
-- `InteractiveMovementTarget`— Возвращает целевой элемент операции перетаскивания.
-- `PreviousIndexPathsForInteractivelyMovingItems`— Возвращает `indexPaths` список других элементов, вовлеченных в операцию перетаскивания для изменения порядка.
-- `TargetIndexPathsForInteractivelyMovingItems`— Возвращает `indexPaths` элементы, которые будут переупорядочены в результате операции перетаскивания.
+- `InteractiveMovementTarget` — Возвращает целевой элемент операции перетаскивания.
+- `PreviousIndexPathsForInteractivelyMovingItems` — Возвращает `indexPaths` список других элементов, вовлеченных в операцию перетаскивания для изменения порядка.
+- `TargetIndexPathsForInteractivelyMovingItems` — Возвращает `indexPaths` элементы, которые будут переупорядочены в результате операции перетаскивания.
 
 ### <a name="uicollectionviewsource"></a>уиколлектионвиевсаурце
 
 В класс в iOS 9 были внесены следующие изменения или дополнения `UICollectionViewSource` .
 
-- `CanMoveItem`— Информирует представление коллекции, если для данного элемента можно изменить порядок перетаскивания.
-- `GetTargetContentOffset`— Возвращает смещения элементов, которые будут перемещены с помощью операции перетаскивания.
-- `GetTargetIndexPathForMove`— Возвращает объект `indexPath` , который будет перемещен во время операции перетаскивания.
-- `MoveItem`— Перемещает порядок заданного элемента в списке.
+- `CanMoveItem` — Информирует представление коллекции, если для данного элемента можно изменить порядок перетаскивания.
+- `GetTargetContentOffset` — Возвращает смещения элементов, которые будут перемещены с помощью операции перетаскивания.
+- `GetTargetIndexPathForMove` — Возвращает объект `indexPath` , который будет перемещен во время операции перетаскивания.
+- `MoveItem` — Перемещает порядок заданного элемента в списке.
 
 ## <a name="summary"></a>Сводка
 
@@ -1274,8 +1274,8 @@ public override void AwakeFromNib ()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры для iOS 9](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9)
-- [Пример представления коллекции](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-collectionview)
-- [Симплеколлектионвиев (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/simplecollectionview)
+- [Примеры для iOS 9](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9)
+- [Пример представления коллекции](/samples/xamarin/ios-samples/ios9-collectionview)
+- [Симплеколлектионвиев (пример)](/samples/xamarin/ios-samples/simplecollectionview)
 - [События, протоколы и делегаты](~/ios/app-fundamentals/delegates-protocols-and-events.md)
 - [Работа с таблицами и ячейками](~/ios/user-interface/controls/tables/index.md)
