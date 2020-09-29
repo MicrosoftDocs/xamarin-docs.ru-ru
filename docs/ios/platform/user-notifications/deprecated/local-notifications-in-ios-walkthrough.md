@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: b0a45207ba036f73c2d1066ea292a02ebcc45064
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 915b5cb11aed96598e0460125734b15757f45466
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934632"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436135"
 ---
 # <a name="walkthrough---using-local-notifications-in-xamarinios"></a>Пошаговое руководство. Использование локальных уведомлений в Xamarin. iOS
 
@@ -120,5 +120,5 @@ _В этом разделе мы рассмотрим, как использов
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Локальные уведомления (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/localnotifications)
+- [Локальные уведомления (пример)](/samples/xamarin/ios-samples/localnotifications)
 - [Инструкции по программированию локальных и push-уведомлений](https://developer.apple.com/library/prerelease/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/)

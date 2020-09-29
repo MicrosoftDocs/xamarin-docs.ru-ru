@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: b316e0629bce66e295241be9d67dc4eb37ce1972
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 43692bf2180887e7983cf35fb1812a91222dbc7a
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939572"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435152"
 ---
 # <a name="configure-your-tvos-app-in-itunes-connect"></a>Настройка приложения tvOS в iTunes Connect
 
@@ -74,13 +74,13 @@ _В этой статье представлено дополнительное 
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье представлен обзор настроек tvOS, необходимых в iTunes Connect для выпуска приложения tvOS в Apple TV App Store.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

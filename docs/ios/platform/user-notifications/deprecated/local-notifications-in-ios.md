@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/13/2018
-ms.openlocfilehash: 04631993d47a1d51858ab24948ab61170d37bb6e
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f99776a0e6a84c193362d0e5a4efb68e70717ad0
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939893"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436110"
 ---
 # <a name="notifications-in-xamarinios"></a>Уведомления в Xamarin.iOS
 
@@ -32,7 +32,7 @@ iOS также предоставляет *Центр уведомлений* , 
 ## <a name="creating-local-notifications-in-ios"></a>Создание локальных уведомлений в iOS
 
 iOS делает создание и обработку локальных уведомлений довольно простым.
-Во первых, iOS 8 требует, чтобы приложения запросили разрешение пользователя на отображение уведомлений. Добавьте следующий код в приложение перед попыткой отправить локальное уведомление — [присоединенный пример](https://docs.microsoft.com/samples/xamarin/ios-samples/localnotifications) помещает его в метод **FinishedLaunching** **AppDelegate**.
+Во первых, iOS 8 требует, чтобы приложения запросили разрешение пользователя на отображение уведомлений. Добавьте следующий код в приложение перед попыткой отправить локальное уведомление — [присоединенный пример](/samples/xamarin/ios-samples/localnotifications) помещает его в метод **FinishedLaunching** **AppDelegate**.
 
 ```csharp
 var notificationSettings = UIUserNotificationSettings.GetSettingsForTypes(
@@ -135,8 +135,8 @@ if(remoteNotification != null)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Локальные уведомления (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/localnotifications)
+- [Локальные уведомления (пример)](/samples/xamarin/ios-samples/localnotifications)
 - [Локальные и Push-уведомления для разработчиков](https://developer.apple.com/notifications/)
 - [руководстве по программированию локальных и push-уведомлений](https://developer.apple.com/library/prerelease/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/)
-- [UIApplication](https://docs.microsoft.com/dotnet/api/uikit.uiapplication)
-- [уилокалнотификатион](https://docs.microsoft.com/dotnet/api/uikit.UILocalNotification)
+- [UIApplication](/dotnet/api/uikit.uiapplication)
+- [уилокалнотификатион](/dotnet/api/uikit.UILocalNotification)

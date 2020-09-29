@@ -8,12 +8,12 @@ ms.custom: xamu-video
 author: davidortinau
 ms.author: daortin
 ms.date: 05/12/2020
-ms.openlocfilehash: 540fd0180899f8eb7c1b171148be81c5d541613b
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: d305f671ef68e9a1eded61936f3f32cc8769393f
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997505"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436294"
 ---
 # <a name="ios-extensions-in-xamarinios"></a>расширения iOS в Xamarin. iOS
 
@@ -27,13 +27,13 @@ ms.locfileid: "86997505"
 
 ## <a name="extension-points"></a>Точки расширения
 
-|Type|Описание|Точка расширения|Ведущее приложение|
+|Тип|Описание|Точка расширения|Ведущее приложение|
 |--- |--- |--- |--- |
 |Действие|Специализированный редактор или средство просмотра для определенного типа мультимедиа|`com.apple.ui-services`|Любой|
 |Поставщик документов|Разрешает приложению использовать удаленное хранилище документов|`com.apple.fileprovider-ui`|Приложения, использующие [уидокументпиккервиевконтроллер](xref:UIKit.UIDocumentPickerViewController)|
 |Клавиатура|Альтернативные клавиатуры|`com.apple.keyboard-service`|Любой|
 |Редактирование фотографий|Обработка и редактирование фотографий|`com.apple.photo-editing`|Photos. редактор приложений|
-|Поделиться|Совместное применение данных с социальными сетями, службами обмена сообщениями и т. д.|`com.apple.share-services`|Любой|
+|Общий доступ|Совместное применение данных с социальными сетями, службами обмена сообщениями и т. д.|`com.apple.share-services`|Любой|
 |Сегодня|"Мини-приложения", отображаемые на странице "сегодня" или в центре уведомлений|`com.apple.widget-extensions`|Сегодня и центр уведомлений|
 
 Дополнительные точки расширения были добавлены в [iOS 10](~/ios/platform/introduction-to-ios10/index.md#app-extensions) и [iOS 12](~/ios/platform/introduction-to-ios12/index.md#notification-improvements). Полную таблицу всех поддерживаемых типов можно найти в статье программное обеспечении для [расширения приложения iOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH20-SW2).
@@ -472,6 +472,6 @@ results.ObjectForKey("NSExtensionJavaScriptPreprocessingResultsKey");
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Контаинерапп (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/intro-to-extensions)
+- [Контаинерапп (пример)](/samples/xamarin/ios-samples/intro-to-extensions)
 - [Создание расширений в Xamarin. iOS (видео)](https://university.xamarin.com/lightninglectures/creating-extensions-in-ios)
 - [Оптимизация эффективности и производительности расширения приложения для iOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionCreation.html#//apple_ref/doc/uid/TP40014214-CH5-SW7)

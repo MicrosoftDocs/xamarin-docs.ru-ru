@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/08/2018
-ms.openlocfilehash: 40b7adbed3489d449e583b22fa477287d11bdf42
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: f2a350cb227e55188830161818779e4155c53bcc
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73031873"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434174"
 ---
 # <a name="siri-shortcuts-in-xamarinios"></a>Сочетания клавиш Siri в Xamarin. iOS
 
@@ -26,7 +26,7 @@ ms.locfileid: "73031873"
 
 ## <a name="sample-app-soup-chef"></a>Пример приложения: полный курс Chef
 
-Чтобы лучше понять Siriные сочетания клавиш, ознакомьтесь с примером приложения [полный курс Chef](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-soupchef) . Полный курс Chef позволяет пользователям размещать заказы из воображаемого полный курсного ресторана, просматривать историю их заказов и определять фразы, используемые при упорядочении полный курс путем взаимодействия с Siri.
+Чтобы лучше понять Siriные сочетания клавиш, ознакомьтесь с примером приложения [полный курс Chef](/samples/xamarin/ios-samples/ios12-soupchef) . Полный курс Chef позволяет пользователям размещать заказы из воображаемого полный курсного ресторана, просматривать историю их заказов и определять фразы, используемые при упорядочении полный курс путем взаимодействия с Siri.
 
 > [!TIP]
 > Перед тестированием полный курс Chef на симуляторе или устройстве iOS 12, включите следующие два параметра, которые полезны при отладке сочетаний клавиш:
@@ -60,7 +60,7 @@ ms.locfileid: "73031873"
 
 ### <a name="infoplist"></a>Info.plist
 
-Файл **info. plist** в проекте **Саупчеф** определяет **идентификатор пакета** как `com.xamarin.SoupChef`. Этот идентификатор пакета будет использоваться в качестве префикса для идентификаторов пакетов, используемых в расширениях пользовательского интерфейса для целей и целей, которые обсуждаются далее в этом документе.
+Файл **info. plist** в проекте **Саупчеф** определяет **идентификатор пакета** как `com.xamarin.SoupChef` . Этот идентификатор пакета будет использоваться в качестве префикса для идентификаторов пакетов, используемых в расширениях пользовательского интерфейса для целей и целей, которые обсуждаются далее в этом документе.
 
 Файл **info. plist** также содержит следующее:
 
@@ -72,9 +72,9 @@ ms.locfileid: "73031873"
 </array>
 ```
 
-Эта `NSUserActivityTypes` пара "ключ-значение" указывает, что полный курс Chef знает, как обрабатывает `OrderSoupIntent`, и [`NSUserActivity`](xref:Foundation.NSUserActivity) имеет [`ActivityType`](xref:Foundation.NSUserActivity.ActivityType) "com. Xamarin. саупчеф. виевмену".
+Эта `NSUserActivityTypes` пара "ключ-значение" указывает, что полный курс Chef знает, как обрабатывает `OrderSoupIntent` и [`NSUserActivity`](xref:Foundation.NSUserActivity) имеет [`ActivityType`](xref:Foundation.NSUserActivity.ActivityType) "com. Xamarin. саупчеф. виевмену".
 
-Действия и пользовательские методы, передаваемые в само приложение, в отличие от его расширений, обрабатываются в `AppDelegate` ( [`UIApplicationDelegate`](xref:UIKit.UIApplicationDelegate) методом [`ContinueUserActivity`](xref:UIKit.UIApplicationDelegate.ContinueUserActivity*) .
+Действия и пользовательские методы, передаваемые в само приложение, в отличие от его расширений, обрабатываются в `AppDelegate` (a [`UIApplicationDelegate`](xref:UIKit.UIApplicationDelegate) [`ContinueUserActivity`](xref:UIKit.UIApplicationDelegate.ContinueUserActivity*) методом.
 
 ### <a name="entitlementsplist"></a>Entitlements.plist
 
@@ -90,20 +90,20 @@ ms.locfileid: "73031873"
 ```
 
 Эта конфигурация указывает, что приложение использует группу приложений "Group. com. Xamarin. Саупчеф". Расширение приложения **саупчефинтентс** использует ту же группу приложений, которая позволяет двум проектам совместно использовать [`NSUserDefaults`](xref:Foundation.NSUserDefaults)
-данные.
+данных.
 
-Ключ `com.apple.developer.siri` указывает, что приложение взаимодействует с Siri.
+`com.apple.developer.siri`Ключ указывает, что приложение взаимодействует с Siri.
 
 > [!NOTE]
 > Конфигурация сборки проекта **саупчеф** задает **Настраиваемые** права для прав **. plist**.
 
 ## <a name="using-an-nsuseractivity-shortcut-to-open-an-app"></a>Открытие приложения с помощью ярлыка Нсусерактивити
 
-Чтобы создать ярлык, открывающий приложение для отображения определенного содержимого, создайте `NSUserActivity` и вложите его в контроллер представления для экрана, который вы хотите открыть.
+Чтобы создать ярлык, открывающий приложение для отображения определенного содержимого, создайте `NSUserActivity` и прикрепите его к контроллеру представления для экрана, который нужно открыть.
 
 ### <a name="setting-up-an-nsuseractivity"></a>Настройка Нсусерактивити
 
-На экране меню `SoupMenuViewController` создает `NSUserActivity` и назначает его свойству [`UserActivity`](xref:UIKit.UIResponder.UserActivity) контроллера представления:
+На экране меню `SoupMenuViewController` создает объект `NSUserActivity` и назначает его [`UserActivity`](xref:UIKit.UIResponder.UserActivity) свойству контроллера представления:
 
 ```csharp
 public override void ViewDidLoad()
@@ -113,9 +113,9 @@ public override void ViewDidLoad()
 }
 ```
 
-Установка свойства `UserActivity` подает _действию значение Siri_ . В этом пожертвовании Siri получает информацию о том, когда и где это действие имеет отношение к пользователю, и узнает, как лучше предлагать его в будущем.
+Установка свойства подает `UserActivity` действию _значение_ Siri. В этом пожертвовании Siri получает информацию о том, когда и где это действие имеет отношение к пользователю, и узнает, как лучше предлагать его в будущем.
 
-`NSUserActivityHelper` — это служебный класс, включенный в решение **саупчеф** в библиотеке классов **саупкит** . Он создает `NSUserActivity` и задает различные свойства, связанные с Siri и поиском.
+`NSUserActivityHelper` — Это служебный класс, включенный в решение **саупчеф** в библиотеке классов **саупкит** . Он создает `NSUserActivity` и устанавливает различные свойства, связанные с Siri и поиском:
 
 ```csharp
 public static string ViewMenuActivityType = "com.xamarin.SoupChef.viewMenu";
@@ -148,13 +148,13 @@ public static NSUserActivity ViewMenuActivity {
 
 Обратите внимание на следующие особенности.
 
-- При установке `EligibleForPrediction` на `true` указывает, что Siri может прогнозировать это действие и отображать его как ярлык.
-- Массив [`ContentAttributeSet`](xref:Foundation.NSUserActivity.ContentAttributeSet) является стандартным [`CSSearchableItemAttributeSet`ом](xref:CoreSpotlight.CSSearchableItemAttributeSet) , используемым для включения `NSUserActivity` в результаты поиска iOS.
-- [`SuggestedInvocationPhrase`](xref:Foundation.NSUserActivity.SuggestedInvocationPhrase) — это фраза, которую Siri предлагает пользователю в качестве потенциального выбора при назначении Фразы ярлыку.
+- Значение `EligibleForPrediction` `true` указывает, что Siri может прогнозировать это действие и отображать его как ярлык.
+- [`ContentAttributeSet`](xref:Foundation.NSUserActivity.ContentAttributeSet)Массив является стандартом, [`CSSearchableItemAttributeSet`](xref:CoreSpotlight.CSSearchableItemAttributeSet) используемым для включения `NSUserActivity` в результаты поиска iOS.
+- [`SuggestedInvocationPhrase`](xref:Foundation.NSUserActivity.SuggestedInvocationPhrase) — Это фраза, которую Siri предлагает пользователю в качестве потенциального выбора при назначении Фразы ярлыку.
 
 ### <a name="handling-an-nsuseractivity-shortcut"></a>Обработка ярлыка Нсусерактивити
 
-Для работы с назначенным пользователем сочетанием клавиш `NSUserActivity` приложение iOS должно переопределять метод `ContinueUserActivity` класса `AppDelegate`, отвечая на основании поля `ActivityType` переданного объекта `NSUserActivity`:
+Для работы с `NSUserActivity` ярлыком, вызываемым пользователем, приложение iOS должно переопределять `ContinueUserActivity` метод `AppDelegate` класса, реагируя на `ActivityType` поле переданного `NSUserActivity` объекта:
 
 ```csharp
 public override bool ContinueUserActivity(UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
@@ -169,7 +169,7 @@ public override bool ContinueUserActivity(UIApplication application, NSUserActiv
 }
 ```
 
-Этот метод вызывает `HandleUserActivity`, который находит перехода на экране меню и вызывает его:
+Этот метод вызывает `HandleUserActivity` , который находит перехода на экране меню и вызывает его:
 
 ```csharp
 void HandleUserActivity()
@@ -188,7 +188,7 @@ void HandleUserActivity()
 
 ### <a name="assigning-a-phrase-to-an-nsuseractivity"></a>Назначение фразы Нсусерактивити
 
-Чтобы назначить фразу `NSUserActivity`, откройте приложение iOS **Settings** и выберите **Siri & Search > Мои ярлыки**. Затем выберите сочетание клавиш (в данном случае «заказ обедов») и запишите фразу.
+Чтобы назначить фразу `NSUserActivity` , откройте приложение iOS **Settings** и выберите **Siri & Search > Мои ярлыки**. Затем выберите сочетание клавиш (в данном случае «заказ обедов») и запишите фразу.
 
 При вызове Siri и использовании этой фразы в окне меню откроется полный курс Chef.
 
@@ -200,7 +200,7 @@ void HandleUserActivity()
 
 Используйте Xcode 10 для создания пользовательских целей. В [репозитории саупчеф](https://github.com/xamarin/ios-samples/tree/master/ios12/SoupChef)пользовательская цель определяется в **Ордерсаупинтенткодежен**, проекте цели-C. Откройте этот проект и выберите в **навигаторе проекта** файл **интентдефинитион.** Files, чтобы просмотреть намерение **ордерсауп** .
 
-Обратите внимание на следующее:
+Обратите внимание на следующее.
 
 - Цель имеет **категорию** **Order**. Существуют различные предварительно определенные категории, которые можно использовать для пользовательских целей. Выберите тот, который наиболее полно соответствует задаче, которую включит пользовательская цель. Так как это приложение заказа полный курс, **ордерсаупинтент** использует **Order**.
 - Флажок **подтверждения** указывает, должно ли Siri запрашивать подтверждение перед выполнением задачи. В полный курс Chef с намерением **Order полный курс** этот параметр включен, так как пользователь делает покупку.
@@ -228,23 +228,23 @@ void HandleUserActivity()
 
 - Откройте **AppDelegate. m**.
 - Добавьте импорт в файл заголовка пользовательской цели: `#import "OrderSoupIntent.h"`
-- В любом методе класса добавьте ссылку на `OrderSoupIntent`.
+- В любом методе в классе добавьте ссылку на `OrderSoupIntent` .
 - Щелкните правой кнопкой мыши `OrderSoupIntent` и выберите **Перейти к определению**.
 - Щелкните правой кнопкой мыши недавно открытый файл **ордерсаупинтент. h**и выберите команду " **отобразить в Finder**".
 - Откроется окно **Finder** , содержащее файл. h и. m, содержащий созданный код.
 
 Этот созданный код включает:
 
-- `OrderSoupIntent` — класс, представляющий пользовательскую намерение.
-- `OrderSoupIntentHandling` — протокол, определяющий методы, которые будут использоваться для подтверждения выполнения намерений и метода, который фактически выполняет его.
-- `OrderSoupIntentResponseCode` — перечисление, определяющее различные состояния ответа.
+- `OrderSoupIntent` — Класс, представляющий пользовательскую намерение.
+- `OrderSoupIntentHandling` — Протокол, определяющий методы, которые будут использоваться для подтверждения выполнения намерений и метода, который фактически выполняет его.
+- `OrderSoupIntentResponseCode` — Перечисление, определяющее различные состояния ответа.
 - `OrderSoupIntentResponse` — класс, представляющий ответ на выполнение намерения.
 
 ### <a name="creating-a-binding-to-the-custom-intent"></a>Создание привязки к пользовательской цели
 
-Чтобы использовать код, созданный Xcode в приложении Xamarin. iOS, создайте для него C# привязку.
+Чтобы использовать код, созданный Xcode в приложении Xamarin. iOS, создайте для него привязку C#.
 
-#### <a name="creating-a-static-library-and-c-binding-definitions"></a>Создание статической библиотеки и C# определений привязок
+#### <a name="creating-a-static-library-and-c-binding-definitions"></a>Создание статической библиотеки и определений привязок C#
 
 В [репозитории саупчеф](https://github.com/xamarin/ios-samples/tree/master/ios12/SoupChef)просмотрите папку **ордерсаупинтентстатиклиб** и откройте проект **ордерсаупинтентстатиклиб. xcodeproj** Xcode.
 
@@ -256,11 +256,11 @@ void HandleUserActivity()
 Обратите внимание, что **ордерсаупинтент. m** (импортируемый **ордерсаупинтент. h**) указан здесь. Обратите внимание, что в **Link binary с библиотеками**включены. **Framework** и **Foundation. Framework** .
 После этих настроек платформа будет правильно построена.
 
-#### <a name="building-the-static-library-and-generating-c-bindings-definitions"></a>Построение статической библиотеки и создание C# определений привязок
+#### <a name="building-the-static-library-and-generating-c-bindings-definitions"></a>Построение статической библиотеки и создание определений привязок C#
 
-Чтобы создать статическую библиотеку и создать C# для нее определения привязок, выполните следующие действия.
+Чтобы создать статическую библиотеку и создать для нее определения привязок C#, выполните следующие действия.
 
-- [Установите целевое Шарпие](https://docs.microsoft.com/xamarin/cross-platform/macios/binding/objective-sharpie/get-started?context=xamarin/mac#installing-objective-sharpie), инструмент, используемый для создания определений привязок из файлов h и m, созданных Xcode.
+- [Установите целевое Шарпие](../../../cross-platform/macios/binding/objective-sharpie/get-started.md?context=xamarin%252fmac#installing-objective-sharpie), инструмент, используемый для создания определений привязок из файлов h и m, созданных Xcode.
 
 - Настройте систему для использования программ командной строки Xcode 10:
 
@@ -269,23 +269,23 @@ void HandleUserActivity()
 
   - В Xcode выберите **Xcode > предпочтения > расположения** и задайте для **средств командной строки** самую последнюю установку Xcode 10, доступную в системе.
 
-- В окне терминала `cd` в каталог **ордерсаупинтентстатиклиб** .
+- В терминале в `cd` каталог **ордерсаупинтентстатиклиб** .
 
-- Введите `make`, который создает:
+- Тип `make` , который создает:
 
   - Статическая библиотека **либордерсаупинтентстатиклиб. a**
-  - **В каталоге выходных данных** , C# определения привязок:
+  - В каталоге **выходных данных, определения** привязок C#:
     - **ApiDefinitions.cs**
     - **StructsAndEnums.cs**
 
 Проект **ордерсаупинтентбиндингс** , который использует эту статическую библиотеку и связанные с ней определения привязок, автоматически создает эти элементы.
 Однако выполнение описанного выше процесса вручную обеспечит его сборку должным образом.
 
-Дополнительные сведения о создании статической библиотеки и использовании цели Шарпие для создания C# определений привязок см. в пошаговом руководстве по [привязке к библиотеке цели iOS-C](https://docs.microsoft.com/xamarin/ios/platform/binding-objective-c/walkthrough?tabs=vsmac#creating-a-static-library) .
+Дополнительные сведения о создании статической библиотеки и использовании цели Шарпие для создания определений привязок C# см. в пошаговом руководстве по [привязке к библиотеке цели iOS-C](../binding-objective-c/walkthrough.md?tabs=vsmac#creating-a-static-library) .
 
 #### <a name="creating-a-bindings-library"></a>Создание библиотеки привязок
 
-После создания статической библиотеки и определений C# привязок оставшаяся часть, необходимая для использования кода, созданного Xcode намерением, в проекте Xamarin. IOS является библиотекой привязок.
+После создания статической библиотеки и определений привязок C# оставшаяся часть, необходимая для использования кода, созданного Xcode намерением в проекте Xamarin. iOS, является библиотекой привязок.
 
 В [репозитории Chef полный курс](https://github.com/xamarin/ios-samples/tree/master/ios12/SoupChef)откройте файл **саупчеф. sln** . Помимо прочего, это решение содержит **ордерсаупинтентбиндинг**, библиотеку привязок для статической библиотеки, созданной выше.
 
@@ -296,11 +296,11 @@ void HandleUserActivity()
 - **Собственная ссылка** на **либордерсаупинтентстатиклиб. a**, созданная выше статическая библиотека.
 
 > [!NOTE]
-> И **ApiDefinitions.CS** , и **StructsAndEnums.CS** содержат атрибуты, такие как `[Watch (5,0), iOS (12,0)]`. Эти атрибуты, созданные целевым Шарпие, были добавлены в комментарий, так как они не нужны для этого проекта.
+> И **ApiDefinitions.CS** , и **StructsAndEnums.CS** содержат атрибуты, такие как `[Watch (5,0), iOS (12,0)]` . Эти атрибуты, созданные целевым Шарпие, были добавлены в комментарий, так как они не нужны для этого проекта.
 
-Дополнительные сведения о создании библиотеки C# привязок см. в пошаговом руководстве по [привязке к библиотеке цели iOS-C](https://docs.microsoft.com/xamarin/ios/platform/binding-objective-c/walkthrough?tabs=vsmac#create-a-xamarinios-binding-project) .
+Дополнительные сведения о создании библиотеки привязок C# см. в пошаговом руководстве по [привязке цели и библиотеки](../binding-objective-c/walkthrough.md?tabs=vsmac#create-a-xamarinios-binding-project) на языке C для iOS.
 
-Обратите внимание, что проект **саупчеф** содержит ссылку на **ордерсаупинтентбиндинг**, что означает, что теперь он может получать C#доступ к классам, интерфейсам и перечислениям, содержащимся в нем.
+Обратите внимание, что проект **саупчеф** содержит ссылку на **ордерсаупинтентбиндинг**, что означает, что теперь он может получить доступ к классам, интерфейсам и перечислениям в C#, которые он содержит:
 
 - `OrderSoupIntent`
 - `OrderSoupIntentHandling`
@@ -309,7 +309,7 @@ void HandleUserActivity()
 
 ### <a name="adding-the-intentdefinition-file-to-your-solution"></a>Добавление файла интентдефинитион в решение
 
-C# В решении **саупчеф** проект **саупкит** содержит код, совместно используемый приложением и его расширениями. Файл **. интентдефинитион** был помещен в каталог **base. лпрож** **Саупкит**и имеет **действие сборки** **Content**. Процесс сборки копирует этот файл в пакет приложений полный курс Chef, где он необходим для правильной работы приложения.
+В решении C# **саупчеф** проект **саупкит** содержит код, совместно используемый приложением и его расширениями. Файл **. интентдефинитион** был помещен в каталог **base. лпрож** **Саупкит**и имеет **действие сборки** **Content**. Процесс сборки копирует этот файл в пакет приложений полный курс Chef, где он необходим для правильной работы приложения.
 
 ### <a name="donating-an-intent"></a>Пожертвование намерения
 
@@ -317,8 +317,8 @@ C# В решении **саупчеф** проект **саупкит** соде
 
 Чтобы дать Siri в этом понимании, полный курс _Chef_ полагает намерения на Siri каждый раз, когда пользователь помещает полный курс заказ. На основе этого пожертвования — когда она была пожертвована, где она была пожертвована, содержащиеся в ней параметры – Siri, когда вы хотите предложить это в будущем.
 
-**Саупчеф** использует класс `SoupOrderDataManager` для размещения пожертвования.
-При вызове для размещения полный курс заказа для пользователя метод `PlaceOrder`, в свою очередь, вызывает [`DonateInteraction`](xref:Intents.INInteraction.DonateInteraction*):
+**Саупчеф** использует `SoupOrderDataManager` класс для размещения пожертвования.
+При вызове для размещения полный курс заказа для пользователя `PlaceOrder` метод, в свою очередь, вызывает [`DonateInteraction`](xref:Intents.INInteraction.DonateInteraction*) :
 
 ```csharp
 void DonateInteraction(Order order)
@@ -332,11 +332,11 @@ void DonateInteraction(Order order)
 }
 ```
 
-После выборке намерения он упаковывается в [`INInteraction`](xref:Intents.INInteraction).
-`INInteraction` задается [`Identifier`](xref:Intents.INInteraction.Identifier*)
+После выборке намерения он упаковывается в [`INInteraction`](xref:Intents.INInteraction) .
+Получает `INInteraction` объект [`Identifier`](xref:Intents.INInteraction.Identifier*)
 Это соответствует уникальному ИДЕНТИФИКАТОРу заказа (это будет полезно позже при удалении пожертвований с намерениями, которые больше не действительны). Затем взаимодействие передается в Siri.
 
-Вызов метода получения `order.Intent` извлекает `OrderSoupIntent`, который представляет порядок, задавая его `Quantity`, `Soup`, `Options`и Image, а также фразу вызова для использования в качестве предложения, когда пользователь записывает фразу для Siri, чтобы связать с намерением. :
+При вызове `order.Intent` метода получения `OrderSoupIntent` , который представляет порядок, задается его `Quantity` изображение, `Soup` , `Options` и, а также фраза вызова для использования в качестве предложения, когда пользователь записывает фразу для Siri, чтобы связать с намерением.
 
 ```csharp
 public OrderSoupIntent Intent
@@ -372,7 +372,7 @@ public OrderSoupIntent Intent
 
 Важно удалить пожертвования, которые больше не являются допустимыми, чтобы Siri не помогая или путаницу в сокращенных предложениях.
 
-В полный курс Chef экран **меню Настройка** можно использовать для пометки элемента меню как недоступного. Siri больше не должен предлагать ярлык для заказа недоступного пункта меню, поэтому `RemoveDonation` метод `SoupMenuManager` удаляет пожертвования для пунктов меню, которые больше не доступны. Это делается следующим образом:
+В полный курс Chef экран **меню Настройка** можно использовать для пометки элемента меню как недоступного. Siri больше не должен предлагать ярлык для заказа недоступного пункта меню, поэтому `RemoveDonation` метод `SoupMenuManager` удаления пожертвования для пунктов меню, которые больше не доступны. Это делается следующим образом:
 
 - Поиск заказов, связанных с пунктом меню "сейчас недоступно".
 - Получение идентификаторов.
@@ -417,7 +417,7 @@ void RemoveDonation(MenuItem menuItem)
 
 ##### <a name="soupchefintents-infoplist"></a>Саупчефинтентс — info. plist
 
-Параметр **info. plist** в проекте **Саупчефинтентс** определяет **идентификатор пакета** как `com.xamarin.SoupChef.SoupChefIntents`.
+Параметр **info. plist** в проекте **Саупчефинтентс** определяет **идентификатор пакета** как `com.xamarin.SoupChef.SoupChefIntents` .
 
 Файл **info. plist** также содержит следующее:
 
@@ -444,10 +444,10 @@ void RemoveDonation(MenuItem menuItem)
 
 В предыдущем файле **info. plist**:
 
-- `IntentsRestrictedWhileLocked` список целей, которые должны быть обработаны только при разблокировании устройства.
-- `IntentsSupported` список целей, обрабатываемых этим расширением.
-- `NSExtensionPointIdentifier` указывает тип расширения приложения (Дополнительные сведения см. в [документации Apple](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15) ).
-- `NSExtensionPrincipalClass` указывает класс, который должен использоваться для обработки целей, поддерживаемых этим расширением.
+- `IntentsRestrictedWhileLocked` Список целей, которые должны быть обработаны только при разблокировании устройства.
+- `IntentsSupported` Список целей, обрабатываемых этим расширением.
+- `NSExtensionPointIdentifier` Указывает тип расширения приложения (Дополнительные сведения см. в [документации Apple](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15) ).
+- `NSExtensionPrincipalClass` Указывает класс, который должен использоваться для обработки целей, поддерживаемых этим расширением.
 
 ##### <a name="soupchefintents-entitlementsplist"></a>Саупчефинтентс — права. plist
 
@@ -460,7 +460,7 @@ void RemoveDonation(MenuItem menuItem)
 </array>
 ```
 
-Полный курс Chef сохраняет данные с `NSUserDefaults`. Чтобы предоставить общий доступ к данным между приложением и расширением приложения, они ссылаются на одну группу приложений в файлах прав **. plist** .
+Полный курс Chef сохраняет данные с помощью `NSUserDefaults` . Чтобы предоставить общий доступ к данным между приложением и расширением приложения, они ссылаются на одну группу приложений в файлах прав **. plist** .
 
 > [!NOTE]
 > Конфигурация сборки проекта **саупчефинтентс** задает **Настраиваемые** права для прав **. plist**.
@@ -469,7 +469,7 @@ void RemoveDonation(MenuItem menuItem)
 
 Расширение целей выполняет необходимые фоновые задачи для ярлыка на основе пользовательской намеренности.
 
-Siri вызывает метод [`GetHandler`](xref:Intents.INExtension.GetHandler*) класса `IntentHandler` (определенный в **info. plist** как `NSExtensionPrincipalClass`) для получения экземпляра класса, расширяющего `OrderSoupIntentHandling`, который можно использовать для управления `OrderSoupIntent`:
+Siri вызывает [`GetHandler`](xref:Intents.INExtension.GetHandler*) метод `IntentHandler` класса (определенного в **info. plist** как `NSExtensionPrincipalClass` ), чтобы получить экземпляр класса, который расширяет класс `OrderSoupIntentHandling` , который может использоваться для управления `OrderSoupIntent` :
 
 ```csharp
 [Register("IntentHandler")]
@@ -488,15 +488,15 @@ public class IntentHandler : INExtension
 }
 ```
 
-`OrderSoupIntentHandler`, определенные в проекте **саупкит** общего кода, реализуют два важных метода:
+`OrderSoupIntentHandler`, определенный в проекте **саупкит** общего кода, реализует два важных метода:
 
-- `ConfirmOrderSoup` — подтверждает, действительно ли задача, связанная с намерением, должна быть выполнена
-- `HandleOrderSoup` — помещает порядок полный курс и реагирует на пользователя, вызывая переданный обработчик завершения.
+- `ConfirmOrderSoup` — Подтверждает, действительно ли задача, связанная с намерением, должна выполняться
+- `HandleOrderSoup` — Помещает порядок полный курс и реагирует на пользователя путем вызова переданного обработчика завершения.
 
 #### <a name="handling-an-ordersoupintent-that-opens-the-app"></a>Обработка Ордерсаупинтент, который открывает приложение
 
 Приложение должно правильно обработано намерения, которые не выполняются в фоновом режиме.
-Они обрабатываются так же, как `NSUserActivity`ные ярлыки, в методе `ContinueUserActivity` `AppDelegate`:
+Они обрабатываются так же, как и `NSUserActivity` ярлыки, в `ContinueUserActivity` методе `AppDelegate` :
 
 ```csharp
 public override bool ContinueUserActivity(UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
@@ -519,7 +519,7 @@ public override bool ContinueUserActivity(UIApplication application, NSUserActiv
 
 #### <a name="soupchefintentsui-infoplist"></a>Саупчефинтентсуи — info. plist
 
-Параметр **info. plist** в проекте **Саупчефинтентсуи** определяет **идентификатор пакета** как `com.xamarin.SoupChef.SoupChefIntentsui`.
+Параметр **info. plist** в проекте **Саупчефинтентсуи** определяет **идентификатор пакета** как `com.xamarin.SoupChef.SoupChefIntentsui` .
 
 Файл **info. plist** также содержит следующее:
 
@@ -543,9 +543,9 @@ public override bool ContinueUserActivity(UIApplication application, NSUserActiv
 
 В предыдущем файле **info. plist**:
 
-- `IntentsSupported` указывает, что `OrderSoupIntent` обрабатывается этим расширением пользовательского интерфейса.
-- `NSExtensionPointIdentifier` указывает тип расширения приложения (Дополнительные сведения см. в [документации Apple](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15) ).
-- `NSExtensionMainStoryboard` указывает раскадровку, определяющую основной интерфейс этого расширения
+- `IntentsSupported` Указывает, что объект `OrderSoupIntent` обрабатывается этим расширением пользовательского интерфейса.
+- `NSExtensionPointIdentifier` Указывает тип расширения приложения (Дополнительные сведения см. в [документации Apple](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15) ).
+- `NSExtensionMainStoryboard` Указывает раскадровку, определяющую основной интерфейс этого расширения
 
 #### <a name="soupchefintentsui-entitlementsplist"></a>Саупчефинтентсуи — права. plist
 
@@ -553,19 +553,19 @@ public override bool ContinueUserActivity(UIApplication application, NSUserActiv
 
 ### <a name="creating-the-user-interface"></a>Создание пользовательского интерфейса
 
-Так как параметр **info. plist** для **саупчефинтентсуи** задает для `NSExtensionMainStoryboard` ключ `MainInterface`, файл **маининтераце. Storyboard** определяет интерфейс для расширения пользовательского интерфейса для целей.
+Поскольку файл **info. plist** для **саупчефинтентсуи** задает `NSExtensionMainStoryboard` для ключа значение `MainInterface` , в файле **маининтераце. Storyboard** определяется интерфейс для расширения пользовательского интерфейса для целей.
 
 В этой раскадровке имеется единственный контроллер представления типа **интентвиевконтроллер**. Он ссылается на два представления:
 
-- **инвоицевиев**типа `InvoiceView`
-- **конфирматионвиев**типа `ConfirmOrderView`
+- **инвоицевиев**, тип `InvoiceView`
+- **конфирматионвиев**, тип `ConfirmOrderView`
 
 > [!NOTE]
 > Интерфейсы для **инвоицевиев** и **Конфирматионвиев** определены в **главном. Storyboard** как дополнительные представления. Конструктор iOS в Visual Studio для Mac и Visual Studio 2017 не поддерживает просмотр и редактирование дополнительных представлений. для этого откройте **главное. Storyboard** в Interface Builder Xcode.
 
-`IntentViewController` реализует [`IINUIHostedViewControlling`](xref:IntentsUI.IINUIHostedViewControlling)
+`IntentViewController` реализует класс [`IINUIHostedViewControlling`](xref:IntentsUI.IINUIHostedViewControlling)
 интерфейс, используемый для предоставления пользовательского интерфейса при работе с Siri. [`ConfigureView`](xref:IntentsUI.INUIHostedViewControlling_Extensions.ConfigureView*)
-метод вызывается для настройки интерфейса, отображения подтверждения или счета в зависимости от того, подтверждено ли взаимодействие ([`INIntentHandlingStatus.Ready`](xref:Intents.INIntentHandlingStatus)) или выполнено успешно ([`INIntentHandlingStatus.Success`](xref:Intents.INIntentHandlingStatus)):
+метод вызывается для настройки интерфейса, отображения подтверждения или счета в зависимости от того, подтверждается ли взаимодействие ( [`INIntentHandlingStatus.Ready`](xref:Intents.INIntentHandlingStatus) ) или выполнено успешно ( [`INIntentHandlingStatus.Success`](xref:Intents.INIntentHandlingStatus) ):
 
 ```csharp
 [Export("configureViewForParameters:ofInteraction:interactiveBehavior:context:completion:")]
@@ -594,13 +594,13 @@ public void ConfigureView(
 ```
 
 > [!TIP]
-> Дополнительные сведения о методе `ConfigureView` см. в статье Apple ВВДК 2017, [что нового в SiriKit](https://developer.apple.com/videos/play/wwdc2017/214/).
+> Дополнительные сведения о `ConfigureView` методе см. в статье Apple ввдк 2017, [что нового в SiriKit](https://developer.apple.com/videos/play/wwdc2017/214/).
 
 ## <a name="creating-a-voice-shortcut"></a>Создание ярлыка голоса
 
 Полный курс Chef предоставляет интерфейс для назначения для каждого заказа ярлыка голоса, что позволяет заказать полный курс с Siri. Фактически, интерфейс, используемый для записи и назначения речевых ярлыков, предоставляется iOS и не требует дополнительного пользовательского кода.
 
-В `OrderDetailViewController`, когда пользователь касается строки **Add to Siri** таблицы, метод [`RowSelected`](xref:UIKit.UITableViewSource.RowSelected*) предоставляет экран для добавления или изменения ярлыка.
+В `OrderDetailViewController` , когда пользователь касается строки **Add to Siri** таблицы, [`RowSelected`](xref:UIKit.UITableViewSource.RowSelected*) метод предоставляет экран для добавления или изменения ярлыка.
 
 ```csharp
 public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
@@ -631,8 +631,8 @@ public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 }
 ```
 
-В зависимости от того, существует ли имеющееся сочетание голоса для текущего порядка, `RowSelected` представляет контроллер представления типа [`INUIEditVoiceShortcutViewController`](xref:IntentsUI.INUIEditVoiceShortcutViewController) или [`INUIAddVoiceShortcutViewController`](xref:IntentsUI.INUIAddVoiceShortcutViewController).
-В каждом случае `OrderDetailViewController` устанавливает себя как `Delegate`контроллера представления, поэтому он также реализует [`IINUIAddVoiceShortcutViewControllerDelegate`](xref:IntentsUI.IINUIAddVoiceShortcutViewControllerDelegate)
+В зависимости от того, существует ли имеющееся сочетание голоса для текущего порядка, `RowSelected` представляет собой контроллер представления типа [`INUIEditVoiceShortcutViewController`](xref:IntentsUI.INUIEditVoiceShortcutViewController) или [`INUIAddVoiceShortcutViewController`](xref:IntentsUI.INUIAddVoiceShortcutViewController) .
+В каждом случае `OrderDetailViewController` присваивает себя как контроллер представления `Delegate` , поэтому он также реализует [`IINUIAddVoiceShortcutViewControllerDelegate`](xref:IntentsUI.IINUIAddVoiceShortcutViewControllerDelegate)
 и [`IINUIEditVoiceShortcutViewControllerDelegate`](xref:IntentsUI.IINUIEditVoiceShortcutViewControllerDelegate).
 
 ## <a name="testing-on-device"></a>Тестирование на устройстве
@@ -679,7 +679,7 @@ public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 - Обновите файл прав **. plist** для проекта **саупчефинтентс** :
   - Для возможности **группы приложений** задайте для группы новую группу приложений, созданную выше (в приведенном выше примере это **Group. com. yourcompanyname. саупчеф**).
 
-- Наконец, откройте **NSUserDefaultsHelper.CS**. Присвойте переменной `AppGroup` значение новой группы приложений (например, установите для нее `group.com.yourcompanyname.SoupChef`).
+- Наконец, откройте **NSUserDefaultsHelper.CS**. Задайте `AppGroup` переменную в качестве значения для новой группы приложений (например, задайте для нее значение `group.com.yourcompanyname.SoupChef` ).
 
 ### <a name="configuring-the-build-settings"></a>Настройка параметров сборки
 
@@ -695,12 +695,12 @@ public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 
 ### <a name="automatic-provisioning"></a>Автоматическая подготовка
 
-Обратите внимание, что вы можете использовать [автоматическую подготовку](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/automatic-provisioning) для выполнения многих из этих задач подготовки непосредственно в интегрированной среде разработки.
-Однако автоматическая подготовка не настраивает группы приложений. Вам потребуется вручную настроить файлы прав **. plist** с именем группы приложений, которую вы хотите использовать, на портале разработчика Apple, чтобы создать группу приложений, назначить эту группу приложений каждому идентификатору приложения, созданному функцией автоматической подготовки, повторного создания профили подготовки (расширение приложения, определение целей, расширение пользовательского интерфейса) позволяют включить только что созданную группу приложений, а также загрузить и установить их.
+Обратите внимание, что вы можете использовать [автоматическую подготовку](../../get-started/installation/device-provisioning/automatic-provisioning.md) для выполнения многих из этих задач подготовки непосредственно в интегрированной среде разработки.
+Однако автоматическая подготовка не настраивает группы приложений. Вам потребуется вручную настроить права **. plist** файлы с именем группы приложений, которую вы хотите использовать, посетите портал разработчика Apple, чтобы создать группу приложений, назначьте эту группу приложений каждому идентификатору приложения, созданному с помощью автоматической подготовки, повторно создайте профили подготовки (расширение app, удержания, расширение пользовательского интерфейса), чтобы включить только что созданную группу приложений, а затем скачайте и установите их.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Полный курс Chef (Xamarin)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-soupchef)
+- [Полный курс Chef (Xamarin)](/samples/xamarin/ios-samples/ios12-soupchef)
 - [Полный курс Chef (SWIFT)](https://developer.apple.com/documentation/sirikit/accelerating_app_interactions_with_shortcuts?language=objc)
 - [SiriKit (Apple)](https://developer.apple.com/sirikit/)
 - [Общие сведения о сочетаниях клавиш Siri — ВВДК 2018](https://developer.apple.com/videos/play/wwdc2018/211/)

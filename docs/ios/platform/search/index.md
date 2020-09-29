@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: d95261a3b884507d3fc4a68018d57c5d3e3a2c84
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 63daa2f449685b39cb7d622790fd3bccd7590f62
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939416"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433219"
 ---
 # <a name="search-apis-in-xamarinios"></a>Поиск API в Xamarin. iOS
 
@@ -78,7 +78,7 @@ _В этой статье описывается использование API-
 - Переключатель приложений
 - Экран блокировки
 - карплай
-- Maps
+- Карты
 - Взаимодействия Siri
 - Предложения Куикктипе 
 
@@ -92,7 +92,7 @@ _В этой статье описывается использование API-
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры для iOS 9](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9)
+- [Примеры для iOS 9](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9)
 - [iOS 9 для разработчиков](https://developer.apple.com/ios/pre-release/)
 - [iOS 9,0](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html)
 - [Инструкции по программированию поиска приложений](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/AppSearch/index.html#//apple_ref/doc/uid/TP40016308)

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 0358b2b422e4cc69faa15187ee24d72c7d02ca38
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: c8275811cb61aaa1a033ca414e9abd4d20ecc873
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937934"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435431"
 ---
 # <a name="watchos-notifications-in-xamarin"></a>Уведомления watchOS в Xamarin
 
@@ -123,7 +123,7 @@ Visual Studio для Mac отображает дополнительные па�
 
 ### <a name="example-notification-payload"></a>Пример полезных данных уведомления
 
-В примере из [каталога контрольных материалов](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) приведен пример файла полезных данных JSON **NotificationPayload.jsв** (см. ниже).
+В примере из [каталога контрольных материалов](/samples/xamarin/ios-samples/watchos-watchkitcatalog) приведен пример файла полезных данных JSON **NotificationPayload.jsв** (см. ниже).
 
 ```json
 {
@@ -146,5 +146,5 @@ Visual Studio для Mac отображает дополнительные па�
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Ватчкиткаталог (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog)
+- [Ватчкиткаталог (пример)](/samples/xamarin/ios-samples/watchos-watchkitcatalog)
 - [Документация по уведомлениям в комплекте Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/BasicSupport.html)

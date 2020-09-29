@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/05/2017
-ms.openlocfilehash: 0de7fcd5af9e0338679893b3d7fde073c5274365
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 30709b9b75c18f954135e950b95094f9ee2d71ac
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84567732"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435275"
 ---
 # <a name="threading-in-xamarinios"></a>Создание потоков в Xamarin. iOS
 
 Среда выполнения Xamarin. iOS предоставляет разработчикам доступ к API-интерфейсам потоков .NET, как явно, при использовании потоков (), так `System.Threading.Thread, System.Threading.ThreadPool` и неявно при использовании шаблонов асинхронных делегатов или методов BeginXXX, а также полный спектр интерфейсов API, поддерживающих библиотеку параллельных задач.
 
-Xamarin настоятельно рекомендует использовать [библиотеку параллельных задач](https://msdn.microsoft.com/library/dd460717.aspx) (TPL) для создания приложений по нескольким причинам:
+Xamarin настоятельно рекомендует использовать [библиотеку параллельных задач](/dotnet/standard/parallel-programming/task-parallel-library-tpl) (TPL) для создания приложений по нескольким причинам:
 
 - Планировщик TPL по умолчанию делегирует выполнение задачи пулу потоков, который, в свою очередь, динамически увеличит количество потоков, необходимых для выполнения процесса, а также избежать ситуации, когда слишком много потоков приконкурирует к бесконечному времени ЦП. 
 - Проще подумать об операциях с точки зрения задач TPL. Вы можете легко управлять ими, запланировать их, выполнять сериализацию выполнения или запускать множество параллельно с обширным набором интерфейсов API. 

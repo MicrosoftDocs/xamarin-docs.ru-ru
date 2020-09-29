@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/05/2018
-ms.openlocfilehash: cbed65ce39e9298d397051740737aa164fadbc0b
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 5f37bc10a545dc0b364621be6b78dc300a222a75
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73031847"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434017"
 ---
 # <a name="troubleshooting-ios-12-development-with-xamarin"></a>Устранение неполадок при разработке iOS 12 с помощью Xamarin
 
@@ -22,10 +22,10 @@ ms.locfileid: "73031847"
 
 Для устранения известных проблем обратитесь к следующим ресурсам:
 
-- заметки о выпуске;
-  - Архив [заметок о выпуске](https://docs.microsoft.com/xamarin/ios/release-notes/) Xamarin
-  - Visual Studio для Mac ([стабильный](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-relnotes), [Предварительный просмотр](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-preview-relnotes))
-  - Visual Studio 2017 ([стабильная](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes), [Предварительная версия](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-preview-relnotes))
+- Заметки о выпуске
+  - Архив [заметок о выпуске](/xamarin/ios/release-notes/) Xamarin
+  - Visual Studio для Mac ([стабильный](/visualstudio/releasenotes/vs2017-mac-relnotes), [Предварительный просмотр](/visualstudio/releasenotes/vs2017-mac-preview-relnotes))
+  - Visual Studio 2017 ([стабильная](/visualstudio/releasenotes/vs2017-relnotes), [Предварительная версия](/visualstudio/releasenotes/vs2017-preview-relnotes))
 - [Сообщество разработчиков](https://developercommunity.visualstudio.com/search.html)
 - [GitHub](https://github.com/xamarin/xamarin-macios/issues)
 - [Xamarin Бугзилла](https://bugzilla.xamarin.com/query.cgi?product=iOS)
@@ -33,7 +33,7 @@ ms.locfileid: "73031847"
 
 ## <a name="report-a-new-issue"></a>Сообщить о новой ошибке
 
-Сообщите о новых проблемах [сообществу разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) , выбрав вариант **сообщить о проблеме** в [Visual Studio 2017](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) или [Visual Studio для Mac](https://docs.microsoft.com/visualstudio/mac/report-a-problem).
+Сообщите о новых проблемах [сообществу разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) , выбрав вариант **сообщить о проблеме** в [Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) или [Visual Studio для Mac](/visualstudio/mac/report-a-problem).
 
 ## <a name="xamarin-forums-and-stack-overflow"></a>Форумы и Stack Overflow на Xamarin
 

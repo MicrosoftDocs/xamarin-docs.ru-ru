@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: f9f1b09c5cbd5660018e8e8d346aa1d25e51dab2
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 47530b27fb754bf2efd50615fef9dfc558d9c7d2
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937388"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436198"
 ---
 # <a name="working-with-tvos-segmented-controls-in-xamarin"></a>Работа с сегментированными элементами управления tvOS в Xamarin
 
@@ -65,7 +65,7 @@ Apple предлагает следующие рекомендации по ра
     [![Вкладка мини-приложения](segmented-controls-images/segment03.png)](segmented-controls-images/segment03.png#lightbox)
 1. Используйте поле **сегменты** для управления количеством сегментов в контроллере.
 1. Выберите данный сегмент из **раскрывающегося списка сегмент** , чтобы настроить его отдельные свойства, такие как **заголовок** или **изображение** , а также управлять тем, **включен** или **выбран** данный сегмент при отображении элемента управления.
-1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Например. 
+1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Пример: 
 
     [![Назначение имени](segmented-controls-images/segment04.png)](segmented-controls-images/segment04.png#lightbox)
 1. Сохраните изменения.
@@ -81,7 +81,7 @@ Apple предлагает следующие рекомендации по ра
     [![Вкладка мини-приложения](segmented-controls-images/segment03-vs.png)](segmented-controls-images/segment03-vs.png#lightbox)
 1. Используйте поле **сегменты** для управления количеством сегментов в контроллере.
 1. Выберите данный сегмент из **раскрывающегося списка сегмент** , чтобы настроить его отдельные свойства, такие как **заголовок** или **изображение** , а также управлять тем, **включен** или **выбран** данный сегмент при отображении элемента управления.
-1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Например. 
+1. Наконец, назначьте **имена** элементам управления, чтобы вы могли реагировать на них в коде C#. Пример: 
 
     [![Назначение имени](segmented-controls-images/segment04-vs.png)](segmented-controls-images/segment04-vs.png#lightbox)
 1. Сохраните изменения.
@@ -209,7 +209,7 @@ SegmentedControl.SetBackgroundImage (UIImage.FromFile("background.png"), UIContr
 - Норм.
 - Выделено
 - Выключено
-- Выбрано
+- Selected
 - Focused
 
 И `UIBarMetrics` указывает метрики для использования в качестве:
@@ -235,7 +235,7 @@ SegmentedControl.SetDividerImage (UIImage.FromFile("divider.png"), UIControlStat
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

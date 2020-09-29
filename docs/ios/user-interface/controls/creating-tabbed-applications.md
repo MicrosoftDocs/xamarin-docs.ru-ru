@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 2e8dde87456c6e33eda6846967ceea13eb412b93
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 9bd048239c404c0eb3309fdc74b26bcb94db4740
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934307"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434127"
 ---
 # <a name="tab-bars-and-tab-bar-controllers-in-xamarinios"></a>Панели вкладок и контроллеры панели вкладок в Xamarin. iOS
 
-Приложения с вкладками используются в iOS для поддержки пользовательских интерфейсов, в которых доступ к нескольким экранам можно получить без определенного порядка. С помощью `UITabBarController` класса приложения могут легко включать поддержку таких сценариев с несколькими экранами. `UITabBarController`осуществляет управление несколькими экранами, позволяя разработчику приложения сосредоточиться на деталях каждого экрана.
+Приложения с вкладками используются в iOS для поддержки пользовательских интерфейсов, в которых доступ к нескольким экранам можно получить без определенного порядка. С помощью `UITabBarController` класса приложения могут легко включать поддержку таких сценариев с несколькими экранами. `UITabBarController` осуществляет управление несколькими экранами, позволяя разработчику приложения сосредоточиться на деталях каждого экрана.
 
 Как правило, приложения с вкладками строятся с учетом `UITabBarController` `RootViewController` основного окна. Однако с помощью некоторого дополнительного кода приложения с вкладками также могут использоваться для последующего перехода на другой начальный экран, например сценарий, в котором приложение сначала отображает экран входа, а затем — интерфейс с вкладками.
 
@@ -27,7 +27,7 @@ ms.locfileid: "86934307"
 `UITabBarController`Поддерживает разработку приложений с вкладками следующим образом:
 
 - Разрешение добавления к нему нескольких контроллеров.
-- Предоставление пользовательского интерфейса с вкладками через `UITabBar` класс, чтобы разрешить пользователю переключаться между контроллерами и их представлениями.
+- Предоставление пользовательского интерфейса с вкладками через  `UITabBar` класс, чтобы разрешить пользователю переключаться между контроллерами и их представлениями.
 
 Контроллеры добавляются в с `UITabBarController` помощью его `ViewControllers` свойства, которое является `UIViewController` массивом. `UITabBarController`Сам по себе обрабатывает загрузку соответствующего контроллера и представление его представления на основе выбранной вкладки.
 
@@ -63,9 +63,9 @@ ms.locfileid: "86934307"
 
 Для реализации `UITabBarController` необходимо выполнить следующие действия.
 
-1. Установите для базового класса значение `TabController` `UITabBarController` .
-1. Создайте `UIViewController` экземпляры для добавления в `TabController` .
-1. Добавьте `UIViewController` экземпляры в массив, назначенный `ViewControllers` свойству объекта `TabController` .
+1. Установите для базового класса значение  `TabController`  `UITabBarController` .
+1. Создайте  `UIViewController` экземпляры для добавления в  `TabController` .
+1. Добавьте  `UIViewController` экземпляры в массив, назначенный  `ViewControllers` свойству объекта  `TabController` .
 
 Чтобы выполнить следующие действия, добавьте в класс следующий код `TabController` :
 
@@ -221,7 +221,7 @@ tab3.TabBarItem.BadgeValue = null;
 
 [![Добавление файла файл mainstoryboard в проект](creating-tabbed-applications-images/new-file-dialog.png)](creating-tabbed-applications-images/new-file-dialog.png#lightbox)
 
-Есть несколько важных шагов, которые необходимо учитывать при добавлении раскадровки в ранее не раскадровый файл, который рассматривается в руководстве [Общие сведения о раскадровках](~/ios/user-interface/storyboards/index.md) . Эти особые значения приведены ниже.
+Есть несколько важных шагов, которые необходимо учитывать при добавлении раскадровки в ранее не раскадровый файл, который рассматривается в руководстве [Общие сведения о раскадровках](~/ios/user-interface/storyboards/index.md) . А именно:
 
 1. Добавьте имя раскадровки в раздел " **основной интерфейс** " раздела `Info.plist` :
 
@@ -332,6 +332,6 @@ public override void ViewDidLoad ()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Создание приложений с вкладками (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/creatingtabbedapplications)
+- [Создание приложений с вкладками (пример)](/samples/xamarin/ios-samples/creatingtabbedapplications)
 - [Images.zip](https://github.com/xamarin/ios-samples/blob/master/CreatingTabbedApplications/Resources/images.zip?raw=true)
 - [Справочник по классам Уитаббарконтроллер](https://developer.apple.com/library/ios/#documentation/uikit/reference/UITabBarController_Class/Reference/Reference.html)

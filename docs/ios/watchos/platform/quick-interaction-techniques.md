@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: e57b6df0f0137d5a8a8f2c0ba68793008986ba18
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 0252626cb58ff334e3cff2cc60e6544e4eba18c0
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86932188"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435390"
 ---
 # <a name="quick-interaction-techniques-for-watchos-3-in-xamarin"></a>Методы быстрого взаимодействия для watchOS 3 в Xamarin
 
@@ -115,12 +115,12 @@ watchOS 3 будет поддерживать четыре следующих р
 
 Digital Crown доступ предоставляется следующими элементами:
 
-- `WKCrownSequencer`— Предоставляет доступ к поворотам в секунду.
-- `WKCrownDelegate`— Предоставляет доступ к циклическим событиям смещения.
+- `WKCrownSequencer` — Предоставляет доступ к поворотам в секунду.
+- `WKCrownDelegate` — Предоставляет доступ к циклическим событиям смещения.
 
 #### <a name="rotations-per-second"></a>Поворотов в секунду
 
-Доступ к поворотам в секунду из Digital Crown полезен при работе с анимациями на основе физических объектов. Чтобы получить доступ к поворотам в секунду, используйте `CrownSequencer` свойство объекта `WKInterfaceController` расширения Watch. Например.
+Доступ к поворотам в секунду из Digital Crown полезен при работе с анимациями на основе физических объектов. Чтобы получить доступ к поворотам в секунду, используйте `CrownSequencer` свойство объекта `WKInterfaceController` расширения Watch. Пример:
 
 ```csharp
 var rotationsPerSecond = CrownSequencer.RotationsPerSecond;
@@ -128,7 +128,7 @@ var rotationsPerSecond = CrownSequencer.RotationsPerSecond;
 
 #### <a name="rotational-deltas"></a>Изменения ротации
 
-Для подсчета числа поворотов используйте поворотные разницы из Digital Crown. Используйте `CrownDidRotate` метод override объекта, `WKCrownDelegate` чтобы получить доступ к вращательным сдвигам. Например.
+Для подсчета числа поворотов используйте поворотные разницы из Digital Crown. Используйте `CrownDidRotate` метод override объекта, `WKCrownDelegate` чтобы получить доступ к вращательным сдвигам. Пример:
 
 ```csharp
 using System;
@@ -252,8 +252,8 @@ MenuTable.PerformSegue (0);
 
 Для поддержки этой функции были добавлены два новых класса интерфейсов:
 
-- `WKInterfaceSKScene`— Для работы с SpriteKit двухмерной графикой.
-- `WKInterfaceSCNScene`— Для работы с SceneKit трехмерной графикой.
+- `WKInterfaceSKScene` — Для работы с SpriteKit двухмерной графикой.
+- `WKInterfaceSCNScene` — Для работы с SceneKit трехмерной графикой.
 
 Чтобы использовать эти объекты, просто перетащите их в область конструктора в раскадровке приложения Interface Builder Xcode и используйте **инспектор атрибутов** для их настройки.
 
@@ -354,4 +354,4 @@ Apple рекомендует искать способы объединения 
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры watchOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+watchOS)
+- [Примеры watchOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2bwatchOS)

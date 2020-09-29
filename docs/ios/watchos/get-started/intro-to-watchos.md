@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/13/2016
-ms.openlocfilehash: 1b71ff60ea0e23ce9d631286aec624a84f163ce5
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 9cbf6e58586a223de51f1294aa1b4235b3b631f8
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937514"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436289"
 ---
 # <a name="introduction-to-watchos"></a>Введение в watchOS
 
@@ -69,7 +69,7 @@ ms.locfileid: "86937514"
 ### <a name="normal-interaction"></a>Нормальное взаимодействие
 
 Большая часть отслеживания взаимодействия между приложениями и расширениями будет состоять из подклассов `WKInterfaceController` , которые вы пишете в соответствии с сценой в интерфейсе вашего приложения-наблюдателя. **раскадровка**. Это подробно описано в статьях об [установке](~/ios/watchos/get-started/installation.md) и [Начало работы](~/ios/watchos/get-started/index.md) .
-На следующем рисунке показана часть раскадровки с примером в [каталоге контрольного комплекта](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) . Для каждого показанного здесь сцены имеется соответствующий пользовательский `WKInterfaceController` ( `LabelDetailController` , `ButtonDetailController` , `SwitchDetailController` и т. д.) в проекте расширения.
+На следующем рисунке показана часть раскадровки с примером в [каталоге контрольного комплекта](/samples/xamarin/ios-samples/watchos-watchkitcatalog) . Для каждого показанного здесь сцены имеется соответствующий пользовательский `WKInterfaceController` ( `LabelDetailController` , `ButtonDetailController` , `SwitchDetailController` и т. д.) в проекте расширения.
 
 ![Примеры обычных взаимодействий](intro-to-watchos-images/scenes.png)
 
@@ -81,7 +81,7 @@ ms.locfileid: "86937514"
 
 Длинный вид сочетает в себе предоставляемую системой **лентой** область и кнопку закрыть с пользовательским содержимым на основе раскадровки.
 
-`WKUserNotificationInterfaceController`расширяется `WKInterfaceController` методами `DidReceiveLocalNotification` и `DidReceiveRemoteNotification` .
+`WKUserNotificationInterfaceController` расширяется `WKInterfaceController` методами `DidReceiveLocalNotification` и `DidReceiveRemoteNotification` .
 Переопределите эти методы, чтобы реагировать на события уведомления.
 
 Дополнительные сведения о проектировании пользовательского интерфейса для уведомлений см. в [Apple Watch рекомендации по](https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/WatchHumanInterfaceGuidelines/Notifications.html#//apple_ref/doc/uid/TP40014992-CH20-SW1) работе с человеком.
@@ -130,8 +130,8 @@ Apple Watch имеет два размера граней: 38 и часы, а т
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Каталог watchOS 3 (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog)
-- [Каталог watchOS 1 (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog)
+- [Каталог watchOS 3 (пример)](/samples/xamarin/ios-samples/watchos-watchkitcatalog)
+- [Каталог watchOS 1 (пример)](/samples/xamarin/ios-samples/watchos-watchkitcatalog)
 - [Настройка и установка](~/ios/watchos/get-started/installation.md)
 - [Первое видео о приложении](https://blog.xamarin.com/your-first-watch-kit-app/)
 - [Руководство по разработке Apple для контрольного набора](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html)

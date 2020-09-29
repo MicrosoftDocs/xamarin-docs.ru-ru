@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 3822a03a78c91777ad9614ec298bbac1ab2332b1
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: ae54f4f4cfb9b2c604be9c55d2a47303fb22485e
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939481"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435566"
 ---
 # <a name="working-with-tvos-text-and-search-fields-in-xamarin"></a>Работа с tvOS текста и полями поиска в Xamarin
 
@@ -786,7 +786,7 @@ public override void ViewDidAppear (bool animated)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

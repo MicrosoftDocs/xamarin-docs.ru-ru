@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/07/2017
-ms.openlocfilehash: 0de41379800d3f8fcb26e2bc58497010b8e3bf95
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 07d48a38751680f5e7227682d0639b77b3a3627b
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86931382"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436148"
 ---
 # <a name="working-with-tvos-buttons-in-xamarin"></a>Работа с кнопками tvOS в Xamarin
 
@@ -152,19 +152,19 @@ View.AddSubview (button);
 - **Аддконтакт** — отображение кнопки в виде кнопки Добавить контакт.
 - **Custom** — позволяет настроить несколько характеристик кнопки.
 
-Далее вы определите размер и расположение кнопки на экране. Пример.
+Далее вы определите размер и расположение кнопки на экране. Пример:
 
 ```csharp
 button.Frame = new CGRect (25, 25, 300, 150);
 ```
 
-Затем задайте заголовок для кнопки. `UIButtons`отличаются от большинства `UIKit` элементов управления тем, что они имеют состояние, поэтому нельзя просто изменить название, его необходимо изменить для определенного `UIControlState` . Пример:
+Затем задайте заголовок для кнопки. `UIButtons` отличаются от большинства `UIKit` элементов управления тем, что они имеют состояние, поэтому нельзя просто изменить название, его необходимо изменить для определенного `UIControlState` . Пример:
 
 ```csharp
 button.SetTitle ("Hello", UIControlState.Normal);
 ```
 
-Затем используйте событие, `AllEvents` чтобы увидеть, когда пользователь нащелкнул кнопку. Пример.
+Затем используйте событие, `AllEvents` чтобы увидеть, когда пользователь нащелкнул кнопку. Пример:
 
 ```csharp
 button.AllEvents += (sender, e) => {
@@ -248,13 +248,13 @@ button.SetImage(UIImage.FromFile("my image.png"), UIControlState.Normal);
 
 <a name="Summary"></a>
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье рассматривается проектирование и работа с кнопками внутри приложения Xamarin. tvOS. В нем было показано, как работать с кнопками в конструкторе iOS и как создавать кнопки в коде C#. Наконец, было показано, как изменить заголовок кнопки и изменить его стиль и внешний вид.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

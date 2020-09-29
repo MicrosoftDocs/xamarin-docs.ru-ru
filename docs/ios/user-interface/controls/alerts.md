@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 1264b28b2ee56ec5de610350a199668c67d5c33c
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: b7dae8afbb5db378687f9ecb9469236dc68831ae
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73022105"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435487"
 ---
 # <a name="displaying-alerts-in-xamarinios"></a>Отображение предупреждений в Xamarin. iOS
 
@@ -20,7 +20,7 @@ ms.locfileid: "73022105"
 
 В отличие от заменяющих классов, являющихся подклассами UIView, Уиалертконтроллер является подклассом UIViewController.
 
-Используйте `UIAlertControllerStyle`, чтобы указать тип оповещения для отображения. Эти типы оповещений:
+Используется `UIAlertControllerStyle` для указания типа оповещения для отображения. Эти типы оповещений:
 
 - **уиалертконтроллерстилеактионшит**
   - До iOS 8 это было бы Уиактионшит
@@ -30,7 +30,7 @@ ms.locfileid: "73022105"
 При создании контроллера предупреждений необходимо выполнить три шага.
 
 - Создайте и настройте оповещение с помощью:
-  - заголовок
+  - title
   - сообщение
   - преферредстиле
 
@@ -81,7 +81,7 @@ okayCancelButton.TouchUpInside += ((sender, e) => {
 
  ![Оповещение на листе действий](alerts-images/alert3.png)
 
-Кнопки добавляются к предупреждению с помощью метода `AddAction`:
+Кнопки добавляются к предупреждению с помощью `AddAction` метода:
 
 ```csharp
 actionSheetButton.TouchUpInside += ((sender, e) => {
@@ -111,5 +111,5 @@ actionSheetButton.TouchUpInside += ((sender, e) => {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Элементы управления (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/controls)
+- [Элементы управления (пример)](/samples/xamarin/ios-samples/controls)
 - [Контроллер предупреждений](https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/alertcontroller)

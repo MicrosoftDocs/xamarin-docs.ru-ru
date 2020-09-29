@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 01/23/2017
-ms.openlocfilehash: edf5f1c82857930a2647f306195a4c82f4338db6
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+ms.openlocfilehash: db3e66920beb355e0b05df2118cd2645c602f0d5
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76724633"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433915"
 ---
 # <a name="handling-touch-in-xamarinios-apps"></a>Обработка сенсорного ввода в приложениях Xamarin. iOS
 
 Как и другие мобильные платформы, iOS имеет несколько способов для управления сенсорным вводом. Он может поддерживать несколько касаний — множество точек контакта на экране, а также сложные жесты. В этом руководством рассматриваются некоторые основные понятия, а также особенности реализации сенсорного ввода и жестов в iOS.
 
-iOS инкапсулирует данные касания в классе `UITouch`, который предоставляется приложениям через ряд методов `UIResponder`. Приложения могут переопределять эти методы в подклассах `UIView` и `UIViewController`, оба из которых наследуются от `UIResponder`.
+iOS инкапсулирует сенсорные данные в `UITouch` классе, который становится доступным для приложений с помощью ряда `UIResponder` методов. Приложения могут переопределять эти методы в подклассах `UIView` и `UIViewController` , оба из которых являются производными от `UIResponder` .
 
 В дополнение к записи сенсорных данных, iOS предоставляет средства для интерпретации шаблонов касаний на жесты. Эти распознаватели жестов могут использоваться для интерпретации команд, относящихся к приложению, таких как поворот изображения или включение страницы. iOS предоставляет обширную коллекцию классов для управления общими жестами с минимальным добавленным кодом.
 
@@ -39,5 +39,5 @@ iOS инкапсулирует данные касания в классе `UITo
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Последняя версия iOS Touch (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/applicationfundamentals-touch-final)
-- [Финжерпаинт (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/applicationfundamentals-fingerpaint)
+- [Последняя версия iOS Touch (пример)](/samples/xamarin/ios-samples/applicationfundamentals-touch-final)
+- [Финжерпаинт (пример)](/samples/xamarin/ios-samples/applicationfundamentals-fingerpaint)

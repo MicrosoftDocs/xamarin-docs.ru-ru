@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 022e458fd398366a79970635c1d064cfc2981375
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 50049115407c8d0f4bd1ecddc138185af4716cac
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030733"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435142"
 ---
 # <a name="deploying-and-testing-tvos-apps-in-xamarin"></a>Развертывание и тестирование приложений tvOS в Xamarin
 
-## <a name="app-distributioniostvosdeploy-testapp-distributionindexmd"></a>[Распространение приложений](~/ios/tvos/deploy-test/app-distribution/index.md)
+## <a name="app-distribution"></a>[Распространение приложений](~/ios/tvos/deploy-test/app-distribution/index.md)
 
 В этой статье показано, как настроить, собрать и опубликовать приложение Xamarin. tvOS для распространения с использованием различных средств, включая следующие.
 
@@ -28,7 +28,7 @@ ms.locfileid: "73030733"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

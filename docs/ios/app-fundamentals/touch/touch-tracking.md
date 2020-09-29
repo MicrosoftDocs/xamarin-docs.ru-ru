@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: b1ba548135cedd951d7f0a349f273b29182839d1
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: deda3a96272db42af17221e613822b858d57abb1
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86928683"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436339"
 ---
 # <a name="multi-touch-finger-tracking-in-xamarinios"></a>Отслеживание пальцев с несколькими касаниями в Xamarin. iOS
 
@@ -22,7 +22,7 @@ _В этом документе показано, как отвести собы
 
 Когда палец впервые касается экрана, iOS создает [`UITouch`](xref:UIKit.UITouch) объект для этого пальца. Этот объект остается таким же, как палец перемещается на экране, а затем убирается с экрана, после чего объект удаляется. Чтобы контролировать пальцы, программа должна избегать `UITouch` непосредственного сохранения этого объекта. Вместо этого он может использовать [`Handle`](xref:Foundation.NSObject.Handle) свойство типа `IntPtr` для уникальной идентификации этих `UITouch` объектов.
 
-Почти всегда программа, которая отслеживает отдельных пальцев, поддерживает словарь для отслеживания касаний. Для программы iOS ключ словаря — это `Handle` значение, идентифицирующее конкретный палец. Значение словаря зависит от приложения. В программе [финжерпаинт](https://docs.microsoft.com/samples/xamarin/ios-samples/applicationfundamentals-fingerpaint) каждый палец (от прикосновения к выпуску) связан с объектом, который содержит всю информацию, необходимую для отрисовки линии, нарисованной с помощью этого пальца. `FingerPaintPolyline`Для этой цели программа определяет небольшой класс:
+Почти всегда программа, которая отслеживает отдельных пальцев, поддерживает словарь для отслеживания касаний. Для программы iOS ключ словаря — это `Handle` значение, идентифицирующее конкретный палец. Значение словаря зависит от приложения. В программе [финжерпаинт](/samples/xamarin/ios-samples/applicationfundamentals-fingerpaint) каждый палец (от прикосновения к выпуску) связан с объектом, который содержит всю информацию, необходимую для отрисовки линии, нарисованной с помощью этого пальца. `FingerPaintPolyline`Для этой цели программа определяет небольшой класс:
 
 ```csharp
 class FingerPaintPolyline
@@ -58,7 +58,7 @@ List<FingerPaintPolyline> completedPolylines = new List<FingerPaintPolyline>();
 
 Объекты в этой области `List` находятся в том же порядке, в котором они были выведены.
 
-`FingerPaintCanvasView`переопределяет пять методов, определенных `View` :
+`FingerPaintCanvasView` переопределяет пять методов, определенных `View` :
 
 - [`TouchesBegan`](xref:UIKit.UIResponder.TouchesBegan(Foundation.NSSet,UIKit.UIEvent))
 - [`TouchesMoved`](xref:UIKit.UIResponder.TouchesMoved(Foundation.NSSet,UIKit.UIEvent))
@@ -181,7 +181,7 @@ public override void TouchesCancelled(NSSet touches, UIEvent evt)
 }
 ```
 
-В целом, эта обработка позволяет программе [финжерпаинт](https://docs.microsoft.com/samples/xamarin/ios-samples/applicationfundamentals-fingerpaint) отслеживанию отдельных пальцев и выводить результаты на экране:
+В целом, эта обработка позволяет программе [финжерпаинт](/samples/xamarin/ios-samples/applicationfundamentals-fingerpaint) отслеживанию отдельных пальцев и выводить результаты на экране:
 
 [![Отслеживание отдельных пальцев и рисование результатов на экране](touch-tracking-images/image01.png)](touch-tracking-images/image01.png#lightbox)
 
@@ -190,4 +190,4 @@ public override void TouchesCancelled(NSSet touches, UIEvent evt)
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Эквивалентное руководством по Xamarin для Android](~/android/app-fundamentals/touch/touch-tracking.md)
-- [Финжерпаинт (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/applicationfundamentals-fingerpaint)
+- [Финжерпаинт (пример)](/samples/xamarin/ios-samples/applicationfundamentals-fingerpaint)

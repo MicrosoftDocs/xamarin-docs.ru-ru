@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: bfa2a74bf9cd30fb7b9888ecd7339a80fe472c9e
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 75da06af3444cdb83f00c1089d43ca4d34f2177e
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939091"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436820"
 ---
 # <a name="introduction-to-ios-9"></a>Введение в iOS 9
 
@@ -105,7 +105,7 @@ _В этой статье представлены все новые и изме
 
 В iOS 9 Компания Apple стала проще в установке, расширила типы поддерживаемых аксессуаров и предоставила дополнительные взаимодействия (например, управлять аксессуаром удаленно через iCloud).
 
-Дополнительные сведения см. в статье [Введение в](~/ios/platform/homekit.md) [пример приложения HomeKit, хомекитинтро iOS](https://docs.microsoft.com/samples/xamarin/ios-samples/homekit-homekitintro) и документация Apple [HomeKit](https://developer.apple.com/homekit/) .
+Дополнительные сведения см. в статье [Введение в](~/ios/platform/homekit.md) [пример приложения HomeKit, хомекитинтро iOS](/samples/xamarin/ios-samples/homekit-homekitintro) и документация Apple [HomeKit](https://developer.apple.com/homekit/) .
 
 ## <a name="handoff-framework-changes"></a>Изменения инфраструктуры передачи
 
@@ -145,7 +145,7 @@ _В этой статье представлены все новые и изме
 
 ## <a name="right-to-left-language-support"></a>Поддержка языков с письмом справа налево
 
-В iOS 9 Компания Apple предоставила упрощенный пользовательский интерфейс, что обеспечивает полную поддержку языков с письмом справа налево. Это включает следующие действия.
+В iOS 9 Компания Apple предоставила упрощенный пользовательский интерфейс, что обеспечивает полную поддержку языков с письмом справа налево. Например:
 
 - Стандартные элементы управления [UIKit](xref:UIKit) автоматически отворачивают справа налево в соответствии с региональными и языковыми параметрами устройств iOS.
 - Класс [UIView](xref:UIKit.UIView) предоставляет атрибуты, позволяющие определить, как заданное представление должно отображаться при зеркальном отображении справа налево.
@@ -185,14 +185,14 @@ _В этой статье представлены все новые и изме
 
 ## <a name="ios-9-sample-apps"></a>Примеры приложений для iOS 9
 
-У нас есть некоторые [примеры для iOS 9](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9) , которые помогут приступить к работе:
+У нас есть некоторые [примеры для iOS 9](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9) , которые помогут приступить к работе:
 
 - [астролайаут](https://github.com/xamarin/monotouch-samples/tree/master/ios9/AstroLayout)
 - [CollectionView](https://github.com/xamarin/monotouch-samples/tree/master/ios9/CollectionView)
-- [металперформанцешадершелловорлд](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-metalperformanceshadershelloworld)
-- [мусикмотион](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-musicmotion)
-- [Фотовыполнение](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-photoprogress)
-- [сегуекаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/ios9-seguecatalog)
+- [металперформанцешадершелловорлд](/samples/xamarin/ios-samples/ios9-metalperformanceshadershelloworld)
+- [мусикмотион](/samples/xamarin/ios-samples/ios9-musicmotion)
+- [Фотовыполнение](/samples/xamarin/ios-samples/ios9-photoprogress)
+- [сегуекаталог](/samples/xamarin/ios-samples/ios9-seguecatalog)
 - [стакквиев](https://github.com/xamarin/monotouch-samples/tree/master/ios9/StackView)
 - [стиккикорнерс](https://github.com/xamarin/monotouch-samples/tree/master/ios9/StickyCorners)
 
@@ -203,7 +203,7 @@ _В этой статье представлены все новые и изме
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры для iOS 9](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9)
+- [Примеры для iOS 9](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9)
 - [Введение в трехмерное касание](~/ios/platform/3d-touch.md)
 - [Защита транспорта приложения](~/ios/app-fundamentals/ats.md)
 - [Многозадачность для iPad](~/ios/platform/multitasking.md)

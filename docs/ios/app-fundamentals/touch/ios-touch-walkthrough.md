@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: b547d21b19d223aebb345f7c4a1dc8dc126fb0d6
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 3d296c36febfb5671c816372aa97661494179b83
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86928787"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433901"
 ---
 # <a name="walkthrough-using-touch-in-xamarinios"></a>Пошаговое руководство. Использование сенсорного ввода в Xamarin. iOS
 
@@ -24,7 +24,7 @@ ms.locfileid: "86928787"
 
 В каждом разделе содержатся инструкции по написанию кода с нуля.
 
-Следуйте приведенным ниже инструкциям, чтобы добавить код в раскадровку и узнать о различных типах событий касания, доступных в iOS. Также можно открыть [готовый пример](https://docs.microsoft.com/samples/xamarin/ios-samples/applicationfundamentals-touch-final) , чтобы увидеть все работу.
+Следуйте приведенным ниже инструкциям, чтобы добавить код в раскадровку и узнать о различных типах событий касания, доступных в iOS. Также можно открыть [готовый пример](/samples/xamarin/ios-samples/applicationfundamentals-touch-final) , чтобы увидеть все работу.
 
 <a name="Touch_Samples"></a>
 
@@ -159,7 +159,7 @@ ms.locfileid: "86928787"
     }
     ```
 
-    Оба этих метода сбрасывают `touchStartedInside` флаг в значение false. `TouchesEnded`также отображается `TouchesEnded` на экране.
+    Оба этих метода сбрасывают `touchStartedInside` флаг в значение false. `TouchesEnded` также отображается `TouchesEnded` на экране.
 
 1. На этом этапе экран сенсорных примеров завершен. Обратите внимание, что экран изменяется при взаимодействии с каждым из изображений, как показано на следующем снимке экрана:
 
@@ -484,4 +484,4 @@ ms.locfileid: "86928787"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Последняя версия iOS Touch (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/applicationfundamentals-touch-final)
+- [Последняя версия iOS Touch (пример)](/samples/xamarin/ios-samples/applicationfundamentals-touch-final)

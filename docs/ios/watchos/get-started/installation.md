@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 12/05/2017
-ms.openlocfilehash: 4cc321f44238a7b738e40c02656b42f1eda1155a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 89d074e14f2a66d472f06acecf42127a7ff44c4c
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938766"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437370"
 ---
 # <a name="installing-and-using-watchos-in-xamarin"></a>Установка и использование watchOS в Xamarin
 
@@ -33,7 +33,7 @@ watchOS 1 первоначально требовал OS X Yosemite (10,10) с X
 
 - **Просмотр проекта приложения** — содержит файл раскадровки пользовательского интерфейса со всеми ресурсами пользовательского интерфейса для приложения Watch.
 
-Пример решения " [Контрольный образец каталога](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) " в Xamarin. Studio выглядит следующим образом:
+Пример решения " [Контрольный образец каталога](/samples/xamarin/ios-samples/watchos-watchkitcatalog) " в Xamarin. Studio выглядит следующим образом:
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
@@ -45,7 +45,7 @@ watchOS 1 первоначально требовал OS X Yosemite (10,10) с X
 
 -----
 
-Скачайте и запустите пример [ватчкиткаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog) , чтобы приступить к работе.
+Скачайте и запустите пример [ватчкиткаталог](/samples/xamarin/ios-samples/watchos-watchkitcatalog) , чтобы приступить к работе.
 Экраны из примера можно найти на странице [элементы управления](~/ios/watchos/user-interface/index.md) .
 
 ## <a name="creating-a-new-project"></a>Создание нового проекта
@@ -151,7 +151,7 @@ watchOS 1 первоначально требовал OS X Yosemite (10,10) с X
 
 При запуске отладки необходимо запустить *два* симулятора — симулятор iOS *и* симулятор Apple Watch. Используйте **команду + Shift + H** для перехода к меню Watch и циферблату часов; и используйте меню **оборудование** для установки **Force Touch давления**. Прокрутка трекпада или мыши имитируется с помощью Digital Crown.
 
-#### <a name="troubleshooting"></a>Диагностика
+#### <a name="troubleshooting"></a>Устранение неполадок
 
 Следующая ошибка появится в **выходных данных приложения** при попытке запуска в симуляторе, для которого нет парных часов:
 
@@ -216,6 +216,6 @@ To test the functionality in your  and
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Ватчкиткаталог (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/watchos-watchkitcatalog)
+- [Ватчкиткаталог (пример)](/samples/xamarin/ios-samples/watchos-watchkitcatalog)
 - [Первое видео о приложении](https://blog.xamarin.com/your-first-watch-kit-app/)
 - [Советы по WatchKit Apple](https://developer.apple.com/watchkit/tips/)

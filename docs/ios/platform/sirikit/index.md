@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 90d3a3b6a1e3a3c20ba8cf2ed1f12f234e3af33b
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: c50d02b4fc806a9ce466da450cfeb6afaa68df93
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73031488"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433691"
 ---
 # <a name="sirikit-in-xamarinios"></a>SiriKit в Xamarin. iOS
 
@@ -31,17 +31,17 @@ Siri работает с понятием **доменов**, группами �
 
 Когда пользователь выполняет запрос Siri, включающий одну из служб расширения приложения, SiriKit отправляет расширение объект **намерения** , описывающий запрос пользователя вместе с любыми вспомогательными данными. Затем расширение приложения создает соответствующий объект **ответа** для заданной **цели**, чтобы получить сведения о том, как расширение может справиться с запросом.
 
-## <a name="understanding-sirikit-conceptsiosplatformsirikitunderstanding-sirikitmd"></a>[Основные сведения о понятиях SiriKit](~/ios/platform/sirikit/understanding-sirikit.md)
+## <a name="understanding-sirikit-concepts"></a>[Основные сведения о понятиях SiriKit](~/ios/platform/sirikit/understanding-sirikit.md)
 
 В этой статье рассматриваются основные понятия, которые необходимо выполнить для работы с SiriKit в приложении Xamarin. iOS. Он охватывает новые точки расширения пользовательского интерфейса и способы их работы с приложением и словарем пользователя, чтобы открыть приложение для Siri.
 
-## <a name="implementing-sirikitiosplatformsirikitimplementing-sirikitmd"></a>[Реализация SiriKit](~/ios/platform/sirikit/implementing-sirikit.md)
+## <a name="implementing-sirikit"></a>[Реализация SiriKit](~/ios/platform/sirikit/implementing-sirikit.md)
 
 В этой статье рассматриваются шаги, необходимые для реализации поддержки SiriKit в приложениях Xamarin. iOS. Прежде чем пытаться добавить поддержку SiriKit в приложение, разработчик должен ознакомиться с руководством по основным понятиям SiriKit. в этом разделе рассматриваются основные понятия, которые необходимы для успешной реализации.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Елизачат](https://docs.microsoft.com/samples/xamarin/ios-samples/ios10-elizachat)
+- [Пример Елизачат](/samples/xamarin/ios-samples/ios10-elizachat)
 - [SiriKit по программированию](https://developer.apple.com/library/prerelease/content/documentation/Intents/Conceptual/SiriIntegrationGuide/index.html)
 - [Ссылка на платформу целей](https://developer.apple.com/reference/intents)
 - [Справочник по структуре пользовательского интерфейса для целей](https://developer.apple.com/reference/intentsui)

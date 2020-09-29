@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 00e5b2a2238763822172a1b7d7a7c3090634ed17
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 55c4d4e6154ef75f15b2e75edc020b7cb4c96e38
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938090"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435310"
 ---
 # <a name="alerts-in-xamarinmac"></a>Оповещения в Xamarin. Mac
 
@@ -232,7 +232,7 @@ var result = alert.RunModal ();
 Console.WriteLine ("Alert Result: {0}, Suppress: {1}", result, alert.SuppressionButton.State == NSCellStateValue.On);
 ```
 
-Ключевые строки здесь `var input = new NSTextField (new CGRect (0, 0, 300, 20));` создают новое **текстовое поле** , в которое мы добавим предупреждение. `alert.AccessoryView = input;`При этом **текстовое поле** подключается к предупреждению и вызывается `Layout()` метод, который требуется для изменения размера предупреждения в соответствии с новым подпредставлением.
+Ключевые строки здесь `var input = new NSTextField (new CGRect (0, 0, 300, 20));` создают новое **текстовое поле** , в которое мы добавим предупреждение. `alert.AccessoryView = input;` При этом **текстовое поле** подключается к предупреждению и вызывается `Layout()` метод, который требуется для изменения размера предупреждения в соответствии с новым подпредставлением.
 
 Если выполнить код, будут отображены следующие фрагменты кода:
 
@@ -271,7 +271,7 @@ alert.BeginSheetForResponse (this, (result) => {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Маквиндовс (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macwindows)
+- [Маквиндовс (пример)](/samples/xamarin/mac-samples/macwindows)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Работа с Windows](~/mac/user-interface/window.md)
 - [Рекомендации по работе с человеческим интерфейсом OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)

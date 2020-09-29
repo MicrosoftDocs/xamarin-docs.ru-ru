@@ -7,30 +7,30 @@ ms.technology: xamarin-ios
 author: alexeystrakh
 ms.author: alstrakh
 ms.date: 02/11/2020
-ms.openlocfilehash: 72ab1d9f10ee308313569528d152d5930a258207
-ms.sourcegitcommit: a3f13a216fab4fc20a9adf343895b9d6a54634a5
+ms.openlocfilehash: f678ec02ca5b9b47f6f78eea77547b038274190f
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85852968"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435513"
 ---
 # <a name="bind-ios-swift-libraries"></a>Привязка библиотек SWIFT для iOS
 
 > [!IMPORTANT]
-> Сейчас мы изучаем использование пользовательской привязки на платформе Xamarin. Примите участие в [**опросе**](https://www.surveymonkey.com/r/KKBHNLT) , чтобы проинформировать будущие усилия по разработке.
+> В настоящее время рассматривается возможность использования настраиваемых привязок на платформе Xamarin. Примите участие в [**этом опросе**](https://www.surveymonkey.com/r/KKBHNLT), чтобы помочь определить дальнейшие направления разработки.
 
-Платформа iOS, а также ее собственные языки и средства постоянно развиваются, и существует множество сторонних библиотек, разработанных с использованием новейших предложений. Максимизация повторного использования кода и компонентов является одной из основных целей кросс-платформенной разработки. Возможность повторного использования компонентов, созданных с помощью SWIFT, становится все более важной для разработчиков Xamarin, так как их популярность растет в развитии разработчиков. Возможно, вы уже знакомы с процессом привязки стандартных библиотек [цели-C](https://docs.microsoft.com/xamarin/ios/platform/binding-objective-c/walkthrough) . Теперь доступна дополнительная документация, описывающая процесс [привязки к платформе SWIFT](walkthrough.md), поэтому она может использоваться приложением Xamarin таким же образом. Цель этого документа — описать высокоуровневый подход к созданию привязки SWIFT для Xamarin.
+Платформа iOS, а также ее собственные языки и средства постоянно развиваются, и существует множество сторонних библиотек, разработанных с использованием новейших предложений. Максимизация повторного использования кода и компонентов является одной из основных целей кросс-платформенной разработки. Возможность повторного использования компонентов, созданных с помощью SWIFT, становится все более важной для разработчиков Xamarin, так как их популярность растет в развитии разработчиков. Возможно, вы уже знакомы с процессом привязки стандартных библиотек [цели-C](../binding-objective-c/walkthrough.md) . Теперь доступна дополнительная документация, описывающая процесс [привязки к платформе SWIFT](walkthrough.md), поэтому она может использоваться приложением Xamarin таким же образом. Цель этого документа — описать высокоуровневый подход к созданию привязки SWIFT для Xamarin.
 
-## <a name="high-level-approach"></a>Высокоуровневый подход
+## <a name="high-level-approach"></a>Обобщенный подход
 
-С помощью Xamarin можно привязать любую собственную библиотеку стороннего производителя для использования приложением Xamarin. SWIFT — это новый язык, и для создания привязки библиотек, созданных на этом языке, требуются некоторые дополнительные действия и средства. Этот подход включает в себя следующие четыре шага:
+С помощью Xamarin можно привязать любую собственную библиотеку стороннего производителя для использования приложением Xamarin. SWIFT — это новый язык, и для создания привязки библиотек, созданных на этом языке, требуются некоторые дополнительные действия и средства. Этот подход предусматривает следующие четыре шага:
 
 1. Создание собственной библиотеки
 1. Подготовка метаданных Xamarin, которая позволяет средствам Xamarin создавать классы C#
 1. Создание библиотеки привязок Xamarin с помощью собственной библиотеки и метаданных
 1. Использование библиотеки привязки Xamarin в приложении Xamarin
 
-В следующих разделах описаны эти действия с дополнительными сведениями.
+В следующих разделах эти действия описаны более подробно.
 
 ### <a name="build-the-native-library"></a>Создание собственной библиотеки
 
@@ -41,7 +41,7 @@ ms.locfileid: "85852968"
 
 ### <a name="prepare-the-xamarin-metadata"></a>Подготовка метаданных Xamarin
 
-Вторым шагом является подготовка интерфейсов определения API, которые используются в проекте привязки для создания классов C#. Эти определения можно создать вручную или автоматически с помощью инструмента " [целевое Шарпие](https://docs.microsoft.com/xamarin/cross-platform/macios/binding/objective-sharpie/) " и упомянутого выше файла заголовка "автоматическое создание" ** \<FrameworkName> -SWIFT. h** . После создания метаданных их необходимо проверить и проверить вручную.
+Вторым шагом является подготовка интерфейсов определения API, которые используются в проекте привязки для создания классов C#. Эти определения можно создать вручную или автоматически с помощью инструмента " [целевое Шарпие](../../../cross-platform/macios/binding/objective-sharpie/index.md) " и упомянутого выше файла заголовка "автоматическое создание" ** \<FrameworkName> -SWIFT. h** . После создания метаданных их необходимо проверить и проверить вручную.
 
 ### <a name="build-the-xamarinios-binding-library"></a>Создание библиотеки привязки Xamarin. iOS
 
@@ -56,19 +56,19 @@ ms.locfileid: "85852968"
 
 ## <a name="walkthrough"></a>Пошаговое руководство
 
-Приведенный выше подход описывает действия высокого уровня, необходимые для создания привязки SWIFT для Xamarin. Существует множество действий более низкого уровня, которые необходимо учитывать при подготовке этих привязок на практике, включая адаптацию к изменениям в собственных средствах и языках. Цель — помочь вам получить более глубокое представление об этой концепции и общих действиях, связанных с этим процессом. Подробное пошаговое руководство см. в документации по [привязке Xamarin SWIFT](walkthrough.md) .
+Приведенный выше подход описывает действия высокого уровня, необходимые для создания привязки SWIFT для Xamarin. При подготовке этих привязок на практике, необходимо предпринять множество ситуативных действий, включая адаптацию к изменениям в собственных инструментах и языках. Этот документ призван помочь вам получить более глубокое представление об этой концепции и общем характере действий, связанных с этим процессом. Подробное пошаговое руководство см. в документации по [привязке Xamarin SWIFT](walkthrough.md) .
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
 - [Visual Studio для Mac](https://visualstudio.microsoft.com/downloads)
-- [Objective Sharpie](https://docs.microsoft.com/xamarin/cross-platform/macios/binding/objective-sharpie/)
-- [Проверка метаданных Шарпие](https://docs.microsoft.com/xamarin/cross-platform/macios/binding/objective-sharpie/platform/verify)
-- [Цель привязки — платформа C](https://docs.microsoft.com/xamarin/ios/platform/binding-objective-c/walkthrough)
+- [Objective Sharpie](../../../cross-platform/macios/binding/objective-sharpie/index.md)
+- [Проверка метаданных Шарпие](../../../cross-platform/macios/binding/objective-sharpie/platform/verify.md)
+- [Цель привязки — платформа C](../binding-objective-c/walkthrough.md)
 - [Пакет SDK для Gigya iOS (платформа SWIFT)](https://developers.gigya.com/display/GD/Swift+SDK)
 - [Нестабильность SWIFT 5,1 ABI](https://swift.org/blog/swift-5-1-released/)
 - [Свифтрунтимесуппорт NuGet](https://www.nuget.org/packages/Xamarin.iOS.SwiftRuntimeSupport/)
-- [Автоматизация UITest в Xamarin](https://docs.microsoft.com/appcenter/test-cloud/uitest/)
-- [Конфигурация Xamarin. iOS UITest](https://docs.microsoft.com/appcenter/test-cloud/preparing-for-upload/xamarin-ios-uitest)
-- [Аппцентер Test Cloud](https://docs.microsoft.com/appcenter/test-cloud/preparing-for-upload/xamarin-ios-uitest)
-- [Пример репозитория проекта](https://github.com/xamcat/xamarin-binding-swift-framework)
+- [Автоматизация UITest в Xamarin](/appcenter/test-cloud/uitest/)
+- [Конфигурация Xamarin. iOS UITest](/appcenter/test-cloud/preparing-for-upload/xamarin-ios-uitest)
+- [Аппцентер Test Cloud](/appcenter/test-cloud/preparing-for-upload/xamarin-ios-uitest)
+- [Репозиторий примеров проектов](https://github.com/xamcat/xamarin-binding-swift-framework)

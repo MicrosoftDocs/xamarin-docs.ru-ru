@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/02/2017
-ms.openlocfilehash: 342558908c5f42941c9e6e7ef5c7f75d8e0fa9d4
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 82367d63d1cc7b52d69de52ee635e380cd68c382
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937986"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435658"
 ---
 # <a name="walkthrough-binding-an-ios-objective-c-library"></a>Пошаговое руководство. привязка библиотеки цели iOS-C
 
@@ -51,7 +51,7 @@ _В этой статье приводятся пошаговые инструк
 - **Xcode и iOS SDK** . на компьютере разработчика необходимо установить и настроить Apple Xcode и последнюю версию API iOS.
 - **[Средства командной строки Xcode](#Installing_the_Xcode_Command_Line_Tools)** . для текущей установленной версии Xcode должны быть установлены средства командной строки Xcode (Дополнительные сведения об установке см. ниже).
 - **Visual Studio для Mac или Visual Studio** . на компьютере разработчика должны быть установлены и настроены последняя версия Visual Studio для Mac или Visual Studio. Для разработки приложения Xamarin. iOS требуется компьютер Apple Mac. при использовании Visual Studio необходимо подключение к [узлу сборки Xamarin. iOS](~/ios/get-started/installation/windows/connecting-to-mac/index.md)
-- **Последняя версия цели Шарпие** — текущая копия инструмента объектив Шарпие, скачанного [отсюда](~/cross-platform/macios/binding/objective-sharpie/get-started.md). Если вы уже установили цель Шарпие, вы можете обновить ее до последней версии, используя`sharpie update`
+- **Последняя версия цели Шарпие** — текущая копия инструмента объектив Шарпие, скачанного [отсюда](~/cross-platform/macios/binding/objective-sharpie/get-started.md). Если вы уже установили цель Шарпие, вы можете обновить ее до последней версии, используя `sharpie update`
 
 <a name="Installing_the_Xcode_Command_Line_Tools"></a>
 
@@ -491,7 +491,7 @@ Europa:Resources kmullins$
 
 Далее мы делаем то же самое с содержимым `InfColorPicker.enums.cs` файла, копируя и вставляя их в `StructsAndEnums.cs` файл `using` без изменений:
 
-[![Содержимое файла StructsAndEnums.cs](walkthrough-images/os09.png)](walkthrough-images/os09.png#lightbox)
+[![Содержимое файла StructsAndEnums.cs ](walkthrough-images/os09.png)](walkthrough-images/os09.png#lightbox)
 
 Кроме того, вы можете обнаружить, что цель Шарпие закомментировать привязку с `[Verify]` атрибутами. Эти атрибуты указывают на то, что необходимо убедиться, что цель Шарпиеа правильно, сравнив привязку с исходным объявлением C/объектив-C (которое будет предоставлено в комментарии над объявлением привязки). После проверки привязок следует удалить атрибут Verify. Дополнительные сведения см. в руководстве по [проверке](~/cross-platform/macios/binding/objective-sharpie/platform/verify.md) .
 
@@ -726,4 +726,4 @@ public void ColorPickerControllerDidFinish (InfColorPickerController controller)
 - [Сведения о привязке](~/cross-platform/macios/binding/overview.md)
 - [Справочное руководство по типам привязки](~/cross-platform/macios/binding/binding-types-reference.md)
 - [Xamarin для разработчиков цели-C](~/ios/get-started/objective-c-developers/index.md)
-- [Рекомендации по проектированию платформы](https://msdn.microsoft.com/library/ms229042.aspx)
+- [Рекомендации по проектированию платформы](/dotnet/standard/design-guidelines/)

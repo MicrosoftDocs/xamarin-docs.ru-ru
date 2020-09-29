@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: 1e1a9f3cd601a9d469bb53cce412daf08a8140f6
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: b318f11e866c94ab1f5aa8f6b4f351ac88475ac3
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938896"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437055"
 ---
 # <a name="working-with-tvos-stacked-views-in-xamarin"></a>Работа с tvOSными представлениями с накоплением в Xamarin
 
@@ -147,7 +147,7 @@ ms.locfileid: "86938896"
 
 Дополнительные сведения о работе с раскадровками см. в статье [Hello, tvOS краткое руководство по началу работы](~/ios/tvos/get-started/hello-tvos.md).
 
-В нашем примере мы предоставили розетку и действие для элемента управления "сегмент" и розетку для каждой "карты игрока". В коде мы видим и отображаем проигрыватель на основе текущего сегмента. Например.
+В нашем примере мы предоставили розетку и действие для элемента управления "сегмент" и розетку для каждой "карты игрока". В коде мы видим и отображаем проигрыватель на основе текущего сегмента. Пример:
 
 ```csharp
 partial void PlayerCountChanged (Foundation.NSObject sender) {
@@ -309,7 +309,7 @@ UIView.Animate(0.25, ()=>{
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

@@ -8,12 +8,12 @@ ms.custom: xamu-video
 author: davidortinau
 ms.author: daortin
 ms.date: 02/02/2018
-ms.openlocfilehash: e61aaa6a2071797f905bf7398576f2045a46faea
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: a001cabae5e137cda4b31e15d3e75401575b96a7
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030701"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435041"
 ---
 # <a name="introduction-to-tvos-in-xamarin"></a>Общие сведения о tvOS в Xamarin
 
@@ -50,31 +50,31 @@ ms.locfileid: "73030701"
 
 Примеры приложений tvOS, созданных с помощью Xamarin:
 
-- [Привет, tvOS](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-hello-tvos) — этот пример реализует простое приложение "Hello World" в Xamarin. tvOS и предоставляет основы работы с tvOS.
-- [твалертс](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvalerts) — в этом примере показано, как работать с предупреждениями в приложении Xamarin. tvOS.
-- [твбуттонс](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvbuttons) — в этом примере показано, как работать с кнопками — приложение Xamarin. tvOS.
-- [твремоте](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvremote) — в этом примере представлено несколько способов взаимодействия приложения Xamarin. TvOS с удаленным Siri для навигации по пользовательскому интерфейсу.
-- [твколлектион](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvcollection) — в этом примере показано, как работать с контроллерами представлений коллекций в приложении Xamarin. tvOS.
-- [твнавбарс](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvnavbars) — в этом примере показано, как работать с панелями навигации в приложении Xamarin. tvOS.
-- [твпажес](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvpages) — в этом примере показано, как работать с элементами управления страницы в приложении Xamarin. tvOS.
-- [твпрогресс](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvprogress) — в этом примере показано, как работать с индикаторами хода выполнения в приложении Xamarin. tvOS.
-- [твсплит](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvsplit) — в этом примере показано, как работать с контроллерами разделенного представления в приложении Xamarin. tvOS.
-- [твстакквиев](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-tvstackview) — в этом примере показано, как работать с представлениями стека в приложении Xamarin. tvOS.
-- [Уикаталог](https://docs.microsoft.com/samples/xamarin/ios-samples/tvos-uicatalog) — демонстрируется использование множества представлений и элементов управления в инфраструктуре UIKit на tvOS. Ознакомьтесь с этим примером, если вы ищете определенные элементы управления или представления, предоставляемые системой.
+- [Привет, tvOS](/samples/xamarin/ios-samples/tvos-hello-tvos) — этот пример реализует простое приложение "Hello World" в Xamarin. tvOS и предоставляет основы работы с tvOS.
+- [твалертс](/samples/xamarin/ios-samples/tvos-tvalerts) — в этом примере показано, как работать с предупреждениями в приложении Xamarin. tvOS.
+- [твбуттонс](/samples/xamarin/ios-samples/tvos-tvbuttons) — в этом примере показано, как работать с кнопками — приложение Xamarin. tvOS.
+- [твремоте](/samples/xamarin/ios-samples/tvos-tvremote) — в этом примере представлено несколько способов взаимодействия приложения Xamarin. TvOS с удаленным Siri для навигации по пользовательскому интерфейсу.
+- [твколлектион](/samples/xamarin/ios-samples/tvos-tvcollection) — в этом примере показано, как работать с контроллерами представлений коллекций в приложении Xamarin. tvOS.
+- [твнавбарс](/samples/xamarin/ios-samples/tvos-tvnavbars) — в этом примере показано, как работать с панелями навигации в приложении Xamarin. tvOS.
+- [твпажес](/samples/xamarin/ios-samples/tvos-tvpages) — в этом примере показано, как работать с элементами управления страницы в приложении Xamarin. tvOS.
+- [твпрогресс](/samples/xamarin/ios-samples/tvos-tvprogress) — в этом примере показано, как работать с индикаторами хода выполнения в приложении Xamarin. tvOS.
+- [твсплит](/samples/xamarin/ios-samples/tvos-tvsplit) — в этом примере показано, как работать с контроллерами разделенного представления в приложении Xamarin. tvOS.
+- [твстакквиев](/samples/xamarin/ios-samples/tvos-tvstackview) — в этом примере показано, как работать с представлениями стека в приложении Xamarin. tvOS.
+- [Уикаталог](/samples/xamarin/ios-samples/tvos-uicatalog) — демонстрируется использование множества представлений и элементов управления в инфраструктуре UIKit на tvOS. Ознакомьтесь с этим примером, если вы ищете определенные элементы управления или представления, предоставляемые системой.
 
-Кроме того, Apple предоставляет следующие примеры приложений, которые можно перекодировать C# для работы с поддержкой Xamarin для приложений tvOS.
+Кроме того, Apple предоставляет следующие примеры приложений, которые можно перекодировать в C# для работы с поддержкой Xamarin для приложений tvOS.
 
 - [Демоботс: создание кросс-платформенной игры с помощью SpriteKit и Гамеплайкит](https://developer.apple.com/library/prerelease/tvos/samplecode/DemoBots/)
 
 ## <a name="known-issues-and-troubleshooting"></a>Известные проблемы и устранение неполадок
 
-При возникновении проблем с созданием tvOS с помощью Xamarin просмотрите [заметки о выпуске](https://docs.microsoft.com/xamarin/ios/release-notes/), [форумы Xamarin. iOS](https://forums.xamarin.com/categories/ios), [Xamarin бугзилла Tracker](https://bugzilla.xamarin.com/query.cgi?product=iOS)и [GitHub](https://github.com/xamarin/xamarin-macios/issues) для существующих проблем.
+При возникновении проблем с созданием tvOS с помощью Xamarin просмотрите [заметки о выпуске](/xamarin/ios/release-notes/), [форумы Xamarin. iOS](https://forums.xamarin.com/categories/ios), [Xamarin бугзилла Tracker](https://bugzilla.xamarin.com/query.cgi?product=iOS)и [GitHub](https://github.com/xamarin/xamarin-macios/issues) для существующих проблем.
 
 Сообщать о новых проблемах и предложениях [на GitHub](https://github.com/xamarin/xamarin-macios/issues).
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

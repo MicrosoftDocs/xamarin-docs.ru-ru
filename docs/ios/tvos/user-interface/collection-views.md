@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: fd1bf68e45fa163588d91640147d9e9dbf8ff237
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 2adc161742e7891fcce65cf2025a1b7c531c7a39
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939494"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435240"
 ---
 # <a name="working-with-tvos-collection-views-in-xamarin"></a>Работа с представлениями коллекций tvOS в Xamarin
 
@@ -56,10 +56,10 @@ ms.locfileid: "86939494"
 
 Поскольку представления коллекций создавались для работы с большими коллекциями элементов, отдельные ячейки могут быть выведены из очереди и повторно использованы для предотвращения ограничений памяти. Существует два разных метода вывода представлений из очереди:
 
-- `DequeueReusableCell`— Создает или возвращает ячейку заданного типа (как указано в раскадровке приложения).
-- `DequeueReusableSupplementaryView`— Создает или возвращает вспомогательное представление заданного типа (как указано в раскадровке приложения).
+- `DequeueReusableCell` — Создает или возвращает ячейку заданного типа (как указано в раскадровке приложения).
+- `DequeueReusableSupplementaryView` — Создает или возвращает вспомогательное представление заданного типа (как указано в раскадровке приложения).
 
-Перед вызовом любого из этих методов необходимо зарегистрировать класс, раскадровку или `.xib` файл, используемый для создания представления ячейки с представлением коллекции. Например.
+Перед вызовом любого из этих методов необходимо зарегистрировать класс, раскадровку или `.xib` файл, используемый для создания представления ячейки с представлением коллекции. Пример:
 
 ```csharp
 public CityCollectionView (IntPtr handle) : base (handle)
@@ -101,7 +101,7 @@ public CityCollectionView (IntPtr handle) : base (handle)
 1. Добавьте представление изображения, метку и кнопку в существующее представление и настройте их так, чтобы они выглядели следующим образом: 
 
     [![Образец макета](collection-views-images/collection02.png)](collection-views-images/collection02.png#lightbox)
-1. Присвойте **имя** представлению изображения и метке на **вкладке мини** -приложение **обозревателя свойств**. Например. 
+1. Присвойте **имя** представлению изображения и метке на **вкладке мини** -приложение **обозревателя свойств**. Пример: 
 
     [![Задание имени](collection-views-images/collection03.png)](collection-views-images/collection03.png#lightbox)
 1. Затем перетащите контроллер представления коллекции на раскадровку: 
@@ -139,7 +139,7 @@ public CityCollectionView (IntPtr handle) : base (handle)
 1. Добавьте представление изображения, метку и кнопку в существующее представление и настройте их так, чтобы они выглядели следующим образом: 
 
     [![Настройка макета](collection-views-images/collection02vs.png)](collection-views-images/collection02vs.png#lightbox)
-1. Присвойте **имя** представлению изображения и метке на **вкладке мини** -приложение **обозревателя свойств**. Например. 
+1. Присвойте **имя** представлению изображения и метке на **вкладке мини** -приложение **обозревателя свойств**. Пример: 
 
     [![Обозреватель свойств](collection-views-images/collection03vs.png)](collection-views-images/collection03vs.png#lightbox)
 1. Затем перетащите контроллер представления коллекции на раскадровку: 
@@ -825,7 +825,7 @@ public override void ViewWillAppear (bool animated)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

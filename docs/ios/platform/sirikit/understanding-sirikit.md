@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/02/2017
-ms.openlocfilehash: 2ba5d6b99a32684fd53572e0db00b19a6841ed64
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 74c45a4e8880e1b9c98d11dd4874a4ecf569f0c0
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86996465"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433805"
 ---
 # <a name="understanding-sirikit-concepts"></a>Основные сведения о понятиях SiriKit
 
@@ -402,7 +402,7 @@ SiriKit является неотъемлемой частью iOS и испол
 
 Если приложение представлено с одним и тем же значением, предпочтительным способом его решения является Siri запросить у пользователя подтверждение. Например, *«вы значите, что вы Бобо отлично?»*, на которые они могут ответить простым ответом «да» или «нет».
 
-Если существует ситуация, когда несколько возможных вариантов могут быть верными для одного значения, то предпочтительным методом обработки является неоднозначность. В этом случае Siri может предложить пользователю выбрать до десяти возможных вариантов. Например.
+Если существует ситуация, когда несколько возможных вариантов могут быть верными для одного значения, то предпочтительным методом обработки является неоднозначность. В этом случае Siri может предложить пользователю выбрать до десяти возможных вариантов. Пример:
 
 ```csharp
 Who do you want to send the message to?
@@ -463,7 +463,7 @@ Siri имеет несколько встроенных пользователь
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Елизачат](https://docs.microsoft.com/samples/xamarin/ios-samples/ios10-elizachat)
+- [Пример Елизачат](/samples/xamarin/ios-samples/ios10-elizachat)
 - [SiriKit по программированию](https://developer.apple.com/library/prerelease/content/documentation/Intents/Conceptual/SiriIntegrationGuide/index.html)
 - [Ссылка на платформу целей](https://developer.apple.com/reference/intents)
 - [Справочник по структуре пользовательского интерфейса для целей](https://developer.apple.com/reference/intentsui)

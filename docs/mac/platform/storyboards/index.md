@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 8b911be4b1bf547a9a1ad5d6b795894ddba3c26d
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 24a1e1af5b56a3cd10557658a0cad0c4e73ebac8
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939065"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433377"
 ---
 # <a name="introduction-to-storyboards-in-xamarinmac"></a>Общие сведения о раскадровках в Xamarin. Mac
 
@@ -102,7 +102,7 @@ _В этой статье приводятся общие сведения о р
 
 ## <a name="complex-storyboard-example"></a>Пример сложной раскадровки
 
-Пример сложного примера работы с раскадровками в приложении Xamarin. Mac см. в примере [приложения SourceWriter](https://docs.microsoft.com/samples/xamarin/mac-samples/sourcewriter). SourceWriter — это простой редактор исходного кода, который предоставляет поддержку для автозавершения и выделения простого синтаксиса.
+Пример сложного примера работы с раскадровками в приложении Xamarin. Mac см. в примере [приложения SourceWriter](/samples/xamarin/mac-samples/sourcewriter). SourceWriter — это простой редактор исходного кода, который предоставляет поддержку для автозавершения и выделения простого синтаксиса.
 
 Код SourceWriter полностью закомментирован, и там, где это возможно, предоставлены ссылки из основных технологий и методов на соответствующую информацию в документации по руководствам для Xamarin.Mac.
 
@@ -114,7 +114,7 @@ _В этой статье приводятся общие сведения о р
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- ["Привет, Mac" (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/hello-mac)
+- ["Привет, Mac" (пример)](/samples/xamarin/mac-samples/hello-mac)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Работа с Windows](~/mac/user-interface/window.md)
 - [Рекомендации по работе с человеческим интерфейсом OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)

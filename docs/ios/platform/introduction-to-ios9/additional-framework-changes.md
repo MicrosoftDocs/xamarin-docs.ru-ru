@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 30501600e0b86498ae967340e2201a135b22d7ad
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 8a4b1b5ed3089cb7044850cf19629fa063e43703
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939128"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436343"
 ---
 # <a name="additional-ios-9-frameworks-changes"></a>Дополнительные изменения платформ iOS 9
 
@@ -74,8 +74,8 @@ var voices = AVSpeechSynthesisVoice.GetSpeechVoices ();
 
 В класс [нсбундле](xref:Foundation.NSBundle) для iOS 9 были внесены следующие изменения:
 
-- `GetPreservationPriorityForTag (NSString tag)`— Получает текущий приоритет сохранения для ресурсов с заданным тегом. Допустимые значения находятся в диапазоне от `0.0` до `1.0` , первыми очищаются ресурсы с наименьшим приоритетом.
-- `SetPreservationPriorityForTag (double priority, NSSet tags)`— Задает текущий приоритет хранения для ресурсов с заданными тегами. Допустимые значения находятся в диапазоне от `0.0` до `1.0` , первыми очищаются ресурсы с наименьшим приоритетом.
+- `GetPreservationPriorityForTag (NSString tag)` — Получает текущий приоритет сохранения для ресурсов с заданным тегом. Допустимые значения находятся в диапазоне от `0.0` до `1.0` , первыми очищаются ресурсы с наименьшим приоритетом.
+- `SetPreservationPriorityForTag (double priority, NSSet tags)` — Задает текущий приоритет хранения для ресурсов с заданными тегами. Допустимые значения находятся в диапазоне от `0.0` до `1.0` , первыми очищаются ресурсы с наименьшим приоритетом.
 
 Дополнительные сведения см. в [справочнике по Нсбундле](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index.html#//apple_ref/occ/cl/NSBundle)Apple.
 
@@ -260,7 +260,7 @@ PresentViewController(controller, true, null);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры для iOS 9](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9)
+- [Примеры для iOS 9](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9)
 - [Введение в iOS 9](~/ios/platform/introduction-to-ios9/index.md)
 - [iOS 9 для разработчиков](https://developer.apple.com/ios/pre-release/)
 - [Новые возможности iOS 9,0](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html)

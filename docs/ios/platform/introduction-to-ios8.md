@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/14/2017
-ms.openlocfilehash: 6f2a188617b00a008dafa20012c0997bc399045d
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 87b828221582db37ded66d075bdc933b0743b793
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86930966"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436164"
 ---
 # <a name="introduction-to-ios-8"></a>Введение в iOS 8
 
@@ -101,7 +101,7 @@ Touch ID появился в iOS 7 как средство проверки по
 
 Дополнительные сведения о средстве выбора документов и о том, как интегрировать его в приложение Xamarin. iOS, см. в руководстве по [средству выбора документов](~/ios/platform/document-picker.md) .
 
-### <a name="handoff"></a>перемещение вручную;
+### <a name="handoff"></a>Handoff
 
 Функция передачи, которая является частью более функциональной функции непрерывности, делает шаг вперед к интеграции OS X и iOS. Сюда входит кросс-платформенный AirDrop, возможность принимать вызовы iPhone, SMS на iPad и Mac и усовершенствования модема из iPhone.
 
@@ -166,7 +166,7 @@ Photo Kit — это новая платформа, которая позвол�
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Уикитенханцементс (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios8-uikitenhancements)
+- [Уикитенханцементс (пример)](/samples/xamarin/ios-samples/ios8-uikitenhancements)
 - [Общие сведения о расширениях приложений](~/ios/platform/extensions.md)
 - [Введение в CloudKit](~/ios/data-cloud/intro-to-cloudkit.md)
 - [Общие сведения о средстве выбора документов](~/ios/platform/document-picker.md)

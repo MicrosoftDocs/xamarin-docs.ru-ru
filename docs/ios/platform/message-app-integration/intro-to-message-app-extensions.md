@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/02/2017
-ms.openlocfilehash: 2cc27b18bdb58ee633cae2d61e8cc6a8064df581
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 0a2ca9fea8135e0188829b8651e9ec15303b933d
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937137"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436521"
 ---
 # <a name="message-app-extension-basics-in-xamarinios"></a>Основные сведения о расширении приложения для сообщений в Xamarin. iOS
 
@@ -99,7 +99,7 @@ _В этой статье показано, как включить расшир
 
 Используйте инспектор атрибутов Xcode, чтобы задать размер для всего пакета наклеек и предоставить только ресурсы изображений, соответствующие запрошенному размеру, для получения наилучших результатов в браузере наклейок в приложении "сообщения".
 
-Дополнительные сведения см. в справочнике [по нашим приложениям](https://docs.microsoft.com/samples/xamarin/ios-samples/ios10-icecreambuilder) и [сообщениям](https://developer.apple.com/reference/messages)Apple.
+Дополнительные сведения см. в справочнике [по нашим приложениям](/samples/xamarin/ios-samples/ios10-icecreambuilder) и [сообщениям](https://developer.apple.com/reference/messages)Apple.
 
 ## <a name="creating-a-custom-sticker-experience"></a>Создание пользовательских интерфейсов наклейок
 
@@ -147,9 +147,9 @@ _В этой статье показано, как включить расшир
 
 Платформа сообщений предоставляет классы для предоставления пользователям доступных наклеек:
 
-- `MSStickerBrowserViewController`— Управляет представлением, в котором будут представлены наклейки. Он также соответствует `IMSStickerBrowserViewDataSource` интерфейсу, который возвращает число наклеек и наклейку для заданного индекса браузера.
-- `MSStickerBrowserView`— Это представление, в котором будут отображаться доступные наклейки.
-- `MSStickerSize`— Определяет отдельные размеры ячеек для сетки наклеек, представленных в представлении браузера.
+- `MSStickerBrowserViewController` — Управляет представлением, в котором будут представлены наклейки. Он также соответствует `IMSStickerBrowserViewDataSource` интерфейсу, который возвращает число наклеек и наклейку для заданного индекса браузера.
+- `MSStickerBrowserView` — Это представление, в котором будут отображаться доступные наклейки.
+- `MSStickerSize` — Определяет отдельные размеры ячеек для сетки наклеек, представленных в представлении браузера.
 
 ### <a name="creating-a-custom-sticker-browser"></a>Создание пользовательского браузера наклейок
 
@@ -705,12 +705,12 @@ public override void DidTransition (MSMessagesAppPresentationStyle presentationS
 }
 ```
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье рассматривается расширение приложения сообщений в решении Xamarin. iOS, которое интегрируется с приложением **сообщений** и предоставляет пользователю новые функции. Он покрывает использование расширения для отправки текста, наклеек, файлов мультимедиа и интерактивных сообщений.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Построитель немороженных (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios10-icecreambuilder)
+- [Построитель немороженных (пример)](/samples/xamarin/ios-samples/ios10-icecreambuilder)
 - [Справочник по сообщениям](https://developer.apple.com/reference/messages)
 - [Инструкции по программированию расширения приложения](https://developer.apple.com/library/prerelease/content/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214)

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/04/2018
-ms.openlocfilehash: e629cd8f481558991d02c7fb879502ebd54753bd
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: af06aa4dc7ea836887edcc0416cfd15ce3aa1446
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73031941"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433780"
 ---
 # <a name="interactive-notification-user-interfaces-in-xamarinios"></a>Пользовательские интерфейсы интерактивного уведомления в Xamarin. iOS
 
@@ -20,7 +20,7 @@ ms.locfileid: "73031941"
 
 ## <a name="sample-app-redgreennotifications"></a>Пример приложения: Редгриннотификатионс
 
-Пример приложения [редгриннотификатионс](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-redgreennotifications) содержит расширение содержимого уведомлений с интерактивным пользовательским интерфейсом.
+Пример приложения [редгриннотификатионс](/samples/xamarin/ios-samples/ios12-redgreennotifications) содержит расширение содержимого уведомлений с интерактивным пользовательским интерфейсом.
 
 Фрагменты кода в этом пошаговом окне взяты из этого примера.
 
@@ -58,15 +58,15 @@ ms.locfileid: "73031941"
 
 Обратите внимание на следующие возможности.
 
-- `UNNotificationExtensionCategory` массив указывает тип категорий уведомлений, обрабатываемых расширением содержимого.
-- Для поддержки интерактивного содержимого расширение содержимого уведомлений устанавливает для `UNNotificationExtensionUserInteractionEnabled` ключа значение `true`.
-- Ключ `UNNotificationExtensionInitialContentSizeRatio` задает начальное соотношение высоты и ширины для интерфейса расширения содержимого.
+- `UNNotificationExtensionCategory`Массив указывает тип категорий уведомлений, обрабатываемых расширением содержимого.
+- Для поддержки интерактивного содержимого расширение уведомления устанавливает `UNNotificationExtensionUserInteractionEnabled` ключ в значение `true` .
+- `UNNotificationExtensionInitialContentSizeRatio`Ключ задает начальное соотношение высоты и ширины для интерфейса расширения содержимого.
 
 ## <a name="interactive-interface"></a>Интерактивный интерфейс
 
-**Маининтерфаце. Storyboard**, определяющий интерфейс для расширения содержимого уведомлений, представляет собой стандартную раскадровку, содержащую один контроллер представления. В примере приложения контроллер представления имеет тип `NotificationViewController`и содержит представление изображений, три кнопки и ползунок. Раскадровка связывает эти элементы управления с обработчиками, определенными в **NotificationViewController.CS**:
+**Маининтерфаце. Storyboard**, определяющий интерфейс для расширения содержимого уведомлений, представляет собой стандартную раскадровку, содержащую один контроллер представления. В примере приложения контроллер представления имеет тип `NotificationViewController` и содержит представление изображения, три кнопки и ползунок. Раскадровка связывает эти элементы управления с обработчиками, определенными в **NotificationViewController.CS**:
 
-- Обработчик кнопки **запустить приложение** вызывает метод действия `PerformNotificationDefaultAction` для `ExtensionContext`, который запускает приложение:
+- Обработчик кнопки **запустить приложение** вызывает `PerformNotificationDefaultAction` метод действия для `ExtensionContext` , который запускает приложение:
 
     ```csharp
     partial void HandleLaunchAppButtonTap(UIButton sender)
@@ -75,7 +75,7 @@ ms.locfileid: "73031941"
     }
     ```
 
-    В приложении `Delegate` центра уведомлений пользователей (в примере приложения `AppDelegate`) может реагировать на взаимодействие в методе `DidReceiveNotificationResponse`:
+    В приложении центр уведомлений пользователя `Delegate` (в примере приложения `AppDelegate` ) может отвечать на взаимодействие в   `DidReceiveNotificationResponse` методе:
 
     ```csharp
     [Export("userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:")]
@@ -87,7 +87,7 @@ ms.locfileid: "73031941"
             // ...
     ```
 
-- Обработчик кнопки **закрытия уведомления** вызывает `DismissNotificationContentExtension` на `ExtensionContext`, который закрывает уведомление:
+- Обработчик кнопки **закрытия уведомления** вызывает `DismissNotificationContentExtension` On `ExtensionContext` , который закрывает уведомление:
 
     ```csharp
     partial void HandleDismissNotificationButtonTap(UIButton sender)
@@ -117,7 +117,7 @@ ms.locfileid: "73031941"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример приложения — Редгриннотификатионс](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-redgreennotifications)
+- [Пример приложения — Редгриннотификатионс](/samples/xamarin/ios-samples/ios12-redgreennotifications)
 - [Платформа уведомлений пользователей в Xamarin. iOS](~/ios/platform/user-notifications/index.md)
 - [Усернотификатионс (Apple)](https://developer.apple.com/documentation/usernotifications?language=objc)
 - [Новые возможности уведомлений пользователей (ВВДК 2018)](https://developer.apple.com/videos/play/wwdc2018/710/)

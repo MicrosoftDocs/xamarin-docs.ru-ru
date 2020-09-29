@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 11/15/2018
-ms.openlocfilehash: e2dcd5ea0f099ea84d7824eda4170df8efb22cb6
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 7ba6eca8f74c10254ae93b95725bc73ae100be70
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937219"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433851"
 ---
 # <a name="appearance-api-in-xamarinios"></a>Интерфейс API внешнего вида в Xamarin. iOS
 
@@ -20,7 +20,7 @@ _iOS позволяет применять параметры визуальны
 
 Эта функция предоставляется в Xamarin. iOS через статическое `Appearance` свойство для всех элементов управления UIKit, которые его поддерживают. Таким образом, внешний вид (свойства как цвет оттенка и фоновое изображение) можно легко настроить, чтобы обеспечить единообразное оформление приложения. API внешнего вида был представлен в iOS 5, а некоторые части его не рекомендуются в iOS 9. он по-прежнему является хорошим способом достижения некоторых стилей и эффектов в приложениях Xamarin. iOS.
 
-## <a name="overview"></a>Обзор
+## <a name="overview"></a>Общие сведения
 
 iOS позволяет настраивать внешний вид многих элементов управления UIKit, чтобы обеспечить соответствие стандартных элементов управления фирменной символике, которую вы хотите применить к вашему приложению.
 
@@ -35,7 +35,7 @@ iOS позволяет настраивать внешний вид многих
 [![Пример приложения "внешний вид" демонстрирует все три метода](introduction-to-the-appearance-api-images/appearance01-sml.png)](introduction-to-the-appearance-api-images/appearance01.png#lightbox)
 
 Начиная с iOS 8, прокси-сервер внешнего вида был расширен до Траитколлектионс.
- `AppearanceForTraitCollection`можно использовать для задания внешнего вида по умолчанию для определенной коллекции признаков. Дополнительные сведения см. в статье [Введение в раскадровки](~/ios/user-interface/storyboards/unified-storyboards.md) .
+ `AppearanceForTraitCollection` можно использовать для задания внешнего вида по умолчанию для определенной коллекции признаков. Дополнительные сведения см. в статье [Введение в раскадровки](~/ios/user-interface/storyboards/unified-storyboards.md) .
 
 ## <a name="setting-appearance-properties"></a>Задание свойств внешнего вида
 
@@ -101,12 +101,12 @@ UISegmentedControl.Appearance.TintColor = UIColor.Magenta;
 
 [![Настройка оттенка элемента управления внешнего вида](introduction-to-the-appearance-api-images/image54.png)](introduction-to-the-appearance-api-images/image54.png#lightbox)
 
-`Appearance`свойства должны быть установлены на раннем этапе жизненного цикла приложения, например в `FinishedLaunching` событии AppDelegate или в ViewController до отображения затронутых элементов управления.
+`Appearance` свойства должны быть установлены на раннем этапе жизненного цикла приложения, например в `FinishedLaunching` событии AppDelegate или в ViewController до отображения затронутых элементов управления.
 
 Более подробные сведения см. в статье [Введение в интерфейс API внешнего вида](~/ios/user-interface/ios-ui/introduction-to-the-appearance-api.md) .
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Внешний вид (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/appearance)
+- [Внешний вид (пример)](/samples/xamarin/ios-samples/appearance)
 - [Справочник по протоколу Уиаппеаранце](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIAppearance_Protocol/)
 - [Внешний вид в Xamarin. Forms](~/xamarin-forms/platform/ios/formatting.md#uiappearance-api)

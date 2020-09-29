@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/07/2016
-ms.openlocfilehash: c65a06b8f2a04eda669b2d741135538fa8a583f2
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 587ce48f3d40bb4f16634409920b01d150d628ef
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571731"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436310"
 ---
 # <a name="working-with-user-defaults-in-xamarinios"></a>Работа с пользовательскими по умолчанию в Xamarin. iOS
 
@@ -77,16 +77,16 @@ var plist = new NSUserDefaults ("group.com.xamarin.todaysharing", NSUserDefaults
 
 После доступа к нужной пользовательской базе данных по умолчанию можно считывать значения из значений по умолчанию, используя пары "ключ-значение", и несколько удобных методов в зависимости от типа считываемых данных:
 
-- `ArrayForKey`— Возвращает массив `NSObjects` для заданного значения ключа.
-- `BoolForKey`— Возвращает логическое значение для заданного ключа.
-- `DataForKey`— Возвращает `NSData` объект для заданного ключа.
-- `DictionaryForKey`— Возвращает `NSDictionary` для заданного ключа.
-- `DoubleForKey`— Возвращает значение типа Double для заданного ключа.
-- `FloatForKey`— Возвращает значение типа float для заданного ключа.
-- `IntForKey`— Возвращает целочисленное значение для заданного ключа.
-- `StringArrayForKey`— Возвращает массив `String` объектов из заданного значения ключа.
-- `StringForKey`— Возвращает строковое значение для заданного ключа.
-- `URLForKey`— Возвращает `NSUrl` значение для заданного ключа.
+- `ArrayForKey` — Возвращает массив `NSObjects` для заданного значения ключа.
+- `BoolForKey` — Возвращает логическое значение для заданного ключа.
+- `DataForKey` — Возвращает `NSData` объект для заданного ключа.
+- `DictionaryForKey` — Возвращает `NSDictionary` для заданного ключа.
+- `DoubleForKey` — Возвращает значение типа Double для заданного ключа.
+- `FloatForKey` — Возвращает значение типа float для заданного ключа.
+- `IntForKey` — Возвращает целочисленное значение для заданного ключа.
+- `StringArrayForKey` — Возвращает массив `String` объектов из заданного значения ключа.
+- `StringForKey` — Возвращает строковое значение для заданного ключа.
+- `URLForKey` — Возвращает `NSUrl` значение для заданного ключа.
 
 Например, следующий код считывает логическое значение из значений по умолчанию для пользователя:
 
@@ -106,11 +106,11 @@ var useHeader = plist.BoolForKey("UseHeader");
 
 Как и при чтении значений выше, после доступа к нужной пользовательской базе данных по умолчанию можно записать значения по умолчанию, используя пары "ключ-значение", и несколько удобных методов в зависимости от типа записываемых данных:
 
-- `SetBool`— Записывает заданное логическое значение в заданный ключ.
-- `SetDouble`— Записывает заданное значение типа Double в заданный ключ.
-- `SetFloat`— Записывает заданное значение float в заданный ключ.
-- `SetString`— Записывает заданное строковое значение в заданный ключ.
-- `SetURL`— Записывает заданное значение URL ( `NSUrl` ) в заданный ключ.
+- `SetBool` — Записывает заданное логическое значение в заданный ключ.
+- `SetDouble` — Записывает заданное значение типа Double в заданный ключ.
+- `SetFloat` — Записывает заданное значение float в заданный ключ.
+- `SetString` — Записывает заданное строковое значение в заданный ключ.
+- `SetURL` — Записывает заданное значение URL ( `NSUrl` ) в заданный ключ.
 
 Например, следующий код будет записывать логическое значение в значения по умолчанию для пользователя:
 
@@ -136,6 +136,6 @@ plist.SetBool(useHeader, "UseHeader");
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [Инструкции по программированию для настройки и настройки](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/UserDefaults/Introduction/Introduction.html#//apple_ref/doc/uid/10000059i)
 - [нсусердефаултс](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSUserDefaults_Class/#//apple_ref/doc/constant_group/NSUserDefaults_Domains)

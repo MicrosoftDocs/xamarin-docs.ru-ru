@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 002b6ced319bf7e7b1c5b9b7cc472c43eefcc450
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: e85a273c75fd09672c6c75738adcdc576705af09
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574306"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433984"
 ---
 # <a name="copy-and-paste-in-xamarinmac"></a>Копирование и вставка в Xamarin. Mac
 
@@ -541,7 +541,7 @@ void PasteImage (NSObject sender)
 var window = NSApplication.SharedApplication.KeyWindow as ImageWindow;
 ```
 
-Теперь мы вызываем `ImageDocument` экземпляр класса этого окна для выполнения действий копирования и вставки. Пример. 
+Теперь мы вызываем `ImageDocument` экземпляр класса этого окна для выполнения действий копирования и вставки. Пример: 
 
 ```csharp
 window.Document.CopyImage (sender);
@@ -659,11 +659,11 @@ public override void DidFinishLaunching (NSNotification notification)
 
 Монтажный стол может быть общедоступным или частным и может использоваться для различных целей в приложении или между несколькими приложениями. macOS предоставляет несколько стандартных монтажных столе, каждый из которых имеет определенную четкое использование:
 
-- `NSGeneralPboard`— Монтажный стол по умолчанию для операций **вырезания**, **копирования** и **вставки** .
-- `NSRulerPboard`— Поддерживает операции **вырезания**, **копирования** и **вставки** на **линейках**.
-- `NSFontPboard`— Поддерживает операции **вырезания**, **копирования** и **вставки** `NSFont` объектов.
-- `NSFindPboard`— Поддерживает определенные приложением панели поиска, которые могут совместно использовать искомый текст.
-- `NSDragPboard`— Поддерживает операции **перетаскивания &** .
+- `NSGeneralPboard` — Монтажный стол по умолчанию для операций **вырезания**, **копирования** и **вставки** .
+- `NSRulerPboard` — Поддерживает операции **вырезания**, **копирования** и **вставки** на **линейках**.
+- `NSFontPboard` — Поддерживает операции **вырезания**, **копирования** и **вставки** `NSFont` объектов.
+- `NSFindPboard` — Поддерживает определенные приложением панели поиска, которые могут совместно использовать искомый текст.
+- `NSDragPboard` — Поддерживает операции **перетаскивания &** .
 
 В большинстве случаев используется один из системных монтажных систем. Но могут возникнуть ситуации, требующие создания собственных монтажных столе. В таких ситуациях можно использовать `FromName (string name)` метод `NSPasteboard` класса для создания пользовательского монтажного стола с заданным именем.
 
@@ -703,7 +703,7 @@ public override void DidFinishLaunching (NSNotification notification)
 
 Чтобы выполнить копирование, сначала нужно получить доступ к монтажному столу, удалив все существующие содержимое и записав столько данных, сколько необходимо для монтажного стола.
 
-Пример.
+Пример:
 
 ```csharp
 // Get the standard pasteboard
@@ -937,7 +937,7 @@ public class ImageInfo : NSObject, INSCoding, INSPasteboardWriting, INSPasteboar
 ...
 ```
 
-Класс также должен быть предоставлен для цели-C с помощью `Register` директивы и должен предоставлять все необходимые свойства или методы с помощью `Export` . Пример.
+Класс также должен быть предоставлен для цели-C с помощью `Register` директивы и должен предоставлять все необходимые свойства или методы с помощью `Export` . Пример:
 
 ```csharp
 [Export("name")]
@@ -1278,7 +1278,7 @@ if (ok) {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Маккопипасте (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/maccopypaste)
+- [Маккопипасте (пример)](/samples/xamarin/mac-samples/maccopypaste)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Путеводитель по программированию для монтажного стола](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/PasteboardGuide106/Articles/pbGettingStarted.html)
 - [Рекомендации по созданию пользовательских интерфейсов в macOS](https://developer.apple.com/macos/human-interface-guidelines/overview/themes/)

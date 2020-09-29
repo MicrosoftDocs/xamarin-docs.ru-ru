@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/04/2018
-ms.openlocfilehash: 8c4ad31d91e6f9e4415309eee6c3da8a095dc097
-ms.sourcegitcommit: 80bd4d74812d2c086a164323b72a14662276d302
+ms.openlocfilehash: 8c440d61a41fc26aa7537dc169be08c2bf413c68
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608602"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435218"
 ---
 # <a name="grouped-notifications-in-xamarinios"></a>Сгруппированные уведомления в Xamarin. iOS
 
@@ -22,7 +22,7 @@ ms.locfileid: "88608602"
 
 ## <a name="sample-app-groupednotifications"></a>Пример приложения: Граупеднотификатионс
 
-Чтобы узнать, как использовать сгруппированные уведомления с Xamarin. iOS, ознакомьтесь с примером приложения [граупеднотификатионс](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-groupednotifications) .
+Чтобы узнать, как использовать сгруппированные уведомления с Xamarin. iOS, ознакомьтесь с примером приложения [граупеднотификатионс](/samples/xamarin/ios-samples/ios12-groupednotifications) .
 
 Этот пример приложения имитирует беседы с различными друзьями, отправляя уведомление для каждого сообщения и группируя их по потоку. Здесь также показано, как непотоковые уведомления помещаются в группу уровня приложения.
 
@@ -139,7 +139,7 @@ async partial void ScheduleThreadedNotification(UIButton sender)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример приложения — Граупеднотификатионс](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-groupednotifications)
+- [Пример приложения — Граупеднотификатионс](/samples/xamarin/ios-samples/ios12-groupednotifications)
 - [Платформа уведомлений пользователей в Xamarin. iOS](~/ios/platform/user-notifications/index.md)
 - [Новые возможности уведомлений пользователей (ВВДК 2018)](https://developer.apple.com/videos/play/wwdc2018/710/)
 - [Использование сгруппированных уведомлений (ВВДК 2018)](https://developer.apple.com/videos/play/wwdc2018/711/)

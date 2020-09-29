@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/04/2018
-ms.openlocfilehash: 7d9fe2a651d8d75d8dd9d8c0dd1225350a58373d
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 745bfbc56dec12b7d46003a1d488e5638dc6c110
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73031885"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435176"
 ---
 # <a name="provisional-notifications-in-xamarinios"></a>Подготовка уведомлений в Xamarin. iOS
 
@@ -22,12 +22,12 @@ ms.locfileid: "73031885"
 
 ## <a name="sample-app-redgreennotifications"></a>Пример приложения: Редгриннотификатионс
 
-Ознакомьтесь с примером приложения [редгриннотификатионс](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-redgreennotifications) , которое отправляет подготовленные уведомления.
+Ознакомьтесь с примером приложения [редгриннотификатионс](/samples/xamarin/ios-samples/ios12-redgreennotifications) , которое отправляет подготовленные уведомления.
 
 ## <a name="sending-provisional-notifications"></a>Отправка подготовленных уведомлений
 
-Чтобы отправить подготовленные уведомления, укажите `UNAuthorizationOptions.Provisional` в качестве параметра для [`RequestAuthorization`](xref:UserNotifications.UNUserNotificationCenter.RequestAuthorization*)
-метод `UNUserNotificationCenter`:
+Чтобы отправить подготовленные уведомления, укажите в `UNAuthorizationOptions.Provisional` качестве параметра [`RequestAuthorization`](xref:UserNotifications.UNUserNotificationCenter.RequestAuthorization*)
+метод `UNUserNotificationCenter` :
 
 ```csharp
 public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
@@ -41,11 +41,11 @@ public override bool FinishedLaunching(UIApplication application, NSDictionary l
 }
 ```
 
-Если пользователь продвигает подготовленные уведомления для выразительной доставки, `UNAuthorizationOptions` значения, переданные в `RequestAuthorization`, будут определять новые параметры доставки уведомлений (в приведенном выше коде `UNAuthorizationOptions.Alert` и `UNAuthorizationOptions.Sound`).
+Если пользователь продвигает подготовленные уведомления для выразительной доставки, `UNAuthorizationOptions` значения, передаваемые в, `RequestAuthorization` будут определять новые параметры доставки уведомлений (в приведенном выше коде `UNAuthorizationOptions.Alert` и `UNAuthorizationOptions.Sound` ).
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример приложения — Редгриннотификатионс](https://docs.microsoft.com/samples/xamarin/ios-samples/ios12-redgreennotifications)
+- [Пример приложения — Редгриннотификатионс](/samples/xamarin/ios-samples/ios12-redgreennotifications)
 - [Платформа уведомлений пользователей в Xamarin. iOS](~/ios/platform/user-notifications/index.md)
 - [Усернотификатионс (Apple)](https://developer.apple.com/documentation/usernotifications?language=objc)
 - [Новые возможности уведомлений пользователей (ВВДК 2018)](https://developer.apple.com/videos/play/wwdc2018/710/)

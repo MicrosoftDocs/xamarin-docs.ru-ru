@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 4dde8941b09ac7b235b94e73e86dc60167fb6bd4
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 8715559db3f551773f41659a0c7c36adb29f0d1e
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84574461"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437238"
 ---
 # <a name="introduction-to-macos-sierra"></a>Введение в macOS Sierra
 
@@ -127,7 +127,7 @@ macOS Sierra расширяет поддержку форматов пиксел
 
 При работе с широкими цветами Apple предлагает следующие рекомендации:
 
-- `NSColor`Теперь использует цветовое пространство sRGB и больше не будет заменять значения `0.0` в `1.0` диапазоне до. Если приложение использует предыдущее поведение среза, его необходимо изменить для macOS Sierra.
+- `NSColor` Теперь использует цветовое пространство sRGB и больше не будет заменять значения `0.0` в `1.0` диапазоне до. Если приложение использует предыдущее поведение среза, его необходимо изменить для macOS Sierra.
 - При использовании низкоуровневых API, таких как основные графические или металлы для обработки изображений, приложение должно использовать расширенное цветовое пространство и формат пикселей, поддерживающий 16-разрядные значения с плавающей точкой. При необходимости приложению придется вручную закрасить значения компонентов цвета.
 - Базовые шейдеры основной графики, основного образа и металлических характеристик предоставляют новые методы для преобразования между двумя цветовыми пространствами.
 
@@ -153,5 +153,5 @@ macOS Sierra расширяет поддержку форматов пиксел
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры Mac](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Mac)
+- [Примеры Mac](/samples/browse/?products=xamarin&term=Xamarin.Mac)
 - [Новые возможности в macOS 10,12](https://developer.apple.com/library/prerelease/content/releasenotes/MacOSX/WhatsNewInOSX/Articles/OSXv10.html#//apple_ref/doc/uid/TP40017145-SW1)

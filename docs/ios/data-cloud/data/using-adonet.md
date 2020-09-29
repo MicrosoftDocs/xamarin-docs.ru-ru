@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: d5830fcc4eab2feb5002253a519d72099d6bcdde
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: d72a9722a9d48ea52932e4fd6516c0712dbd693c
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929991"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436254"
 ---
 # <a name="using-adonet-with-xamarinios"></a>Использование ADO.NET с Xamarin. iOS
 
@@ -149,7 +149,7 @@ public static string DoSomeDataAccess ()
 Поскольку SQLite позволяет выполнять произвольные команды SQL для данных, можно выполнять любые инструкции CREATE, INSERT, UPDATE, DELETE или SELECT. Сведения о командах SQL, поддерживаемых SQLite, можно узнать на веб-сайте SQLite. Инструкции SQL выполняются с помощью одного из трех методов объекта Склитекомманд:
 
 - **ExecuteNonQuery** — обычно используется для создания таблицы или вставки данных. Возвращаемым значением для некоторых операций является число затронутых строк, в противном случае — значение-1.
-- **ExecuteReader** — используется, когда коллекция строк должна возвращаться в виде `SqlDataReader` .
+- **ExecuteReader** — используется, когда коллекция строк должна возвращаться в виде  `SqlDataReader` .
 - **ExecuteScalar** — извлекает одно значение (например, статистическое выражение).
 
 ### <a name="executenonquery"></a>EXECUTENONQUERY
@@ -214,7 +214,7 @@ using (var contents = connection.CreateCommand ()) {
 
 Существует другая библиотека `Microsoft.Data.Sqlite` , которую можно [установить из NuGet](https://www.nuget.org/packages/Microsoft.Data.Sqlite), которая функционально эквивалентна `Mono.Data.Sqlite` и позволяет использовать те же типы запросов.
 
-[Между двумя библиотеками](https://docs.microsoft.com/dotnet/standard/data/sqlite/compare) и некоторыми [сведениями о Xamarin](https://docs.microsoft.com/dotnet/standard/data/sqlite/xamarin)есть сравнение. Самое важное для приложений Xamarin. iOS. необходимо включить вызов инициализации:
+[Между двумя библиотеками](/dotnet/standard/data/sqlite/compare) и некоторыми [сведениями о Xamarin](/dotnet/standard/data/sqlite/xamarin)есть сравнение. Самое важное для приложений Xamarin. iOS. необходимо включить вызов инициализации:
 
 ```csharp
 // required for Xamarin.iOS

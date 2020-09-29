@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/30/2017
-ms.openlocfilehash: 51b28ec05af91dea21b1291956de30c549b1868e
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 6803ecf2303ff2c91265f3ac8352a7aa15e74d40
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84571679"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436200"
 ---
 # <a name="introduction-to-arkit-in-xamarinios"></a>Общие сведения о ARKit в Xamarin. iOS
 
@@ -113,6 +113,6 @@ ARKit предоставляет множество более сложных ф
 
 - [Дополненная реальность (Apple)](https://developer.apple.com/arkit/)
 - [Использование ARKit с UrhoSharp](urhosharp.md)
-- [Пример простого ARKit (Jet)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-arkitsample)
-- [ARKit размещения объектов (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-arkitplacingobjects)
+- [Пример простого ARKit (Jet)](/samples/xamarin/ios-samples/ios11-arkitsample)
+- [ARKit размещения объектов (пример)](/samples/xamarin/ios-samples/ios11-arkitplacingobjects)
 - [Введение в ARKit для iOS (ВВДК) (видео)](https://developer.apple.com/videos/play/wwdc2017/602/)

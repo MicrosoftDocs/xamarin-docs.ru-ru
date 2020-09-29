@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 4235e6049b9700edbb3974f1e4cbaf7c405f6e83
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 246757ddc43c5480b26ab4c1360a036fd111dcfa
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937479"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435352"
 ---
 # <a name="watchos-proactive-suggestions-in-xamarin"></a>watchOS упреждающие предложения в Xamarin
 
@@ -44,7 +44,7 @@ _В этой статье показано, как использовать уп
 
 Упреждающие предложения работают с приложениями тремя основными способами:
 
-- **`NSUserActivity`**— Помогает системе понять, с какой информацией в данный момент работает пользователь на экране.
+- **`NSUserActivity`** — Помогает системе понять, с какой информацией в данный момент работает пользователь на экране.
 - **Варианты расположения** . Если приложение предлагает или использует сведения на основе расположения, эти расширения API предлагают новые способы совместного использования этих сведений в приложениях.
 
 И поддерживаются в приложении путем реализации следующего:
@@ -57,7 +57,7 @@ _В этой статье показано, как использовать уп
 
 ## <a name="nsuseractivity"></a>NSUserActivity
 
-Как упоминалось выше, `NSUserActivity` помогает системе понять, какие сведения пользователь в данный момент работает на экране. `NSUserActivity`— это облегченный механизм кэширования состояния, позволяющий захватывать действия пользователя по мере их перемещения по приложению. Например, рассмотрим приложение ресторана:
+Как упоминалось выше, `NSUserActivity` помогает системе понять, какие сведения пользователь в данный момент работает на экране. `NSUserActivity` — это облегченный механизм кэширования состояния, позволяющий захватывать действия пользователя по мере их перемещения по приложению. Например, рассмотрим приложение ресторана:
 
 [![Приложение ресторана](proactive-suggestions-images/activity02.png)](proactive-suggestions-images/activity02.png#lightbox)
 
@@ -153,7 +153,7 @@ public override bool ContinueUserActivity (UIApplication application, NSUserActi
 
 С минимальным объемом приведенного выше кода приложение теперь может воспользоваться преимуществами трех новых функций iOS 10:
 
-- **перемещение вручную;**
+- **Handoff**
 - **Поиск Spotlight**
 - **Контекстные напоминания Siri**
 
@@ -175,7 +175,7 @@ public override bool ContinueUserActivity (UIApplication application, NSUserActi
 
 watchOS 3 улучшена, чтобы реализовать эту функциональность для приложения с помощью нескольких небольших изменений и дополнений к существующим платформам:
 
-- `NSUserActivity`содержит дополнительные поля для записи сведений о местоположении, которые просматриваются в приложении.
+- `NSUserActivity` содержит дополнительные поля для записи сведений о местоположении, которые просматриваются в приложении.
 - В Мапкит и Кореспотлигхт было внесено несколько дополнений для захвата расположения.
 - Функции, учитывающие расположение, добавлены в Siri, Maps, многозадачность и другие приложения в системе.
 
@@ -356,11 +356,11 @@ geocoder.GeocodeAddress(address, (place, err)=> {
 
 ```
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье были рассмотрены упреждающие предложения и показано, как разработчик может использовать их для передачи трафика в приложение Xamarin. iOS для watchOS. В нем рассмотрены действия по реализации упреждающего предложения и предоставлены рекомендации по использованию.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры watchOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+watchOS)
+- [Примеры watchOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2bwatchOS)
 - [SiriKit по программированию](https://developer.apple.com/library/prerelease/content/documentation/Intents/Conceptual/SiriIntegrationGuide/index.html)

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 02/02/2018
-ms.openlocfilehash: f2f0ab8079eea3762a8f37ca93a3caf70ba5ec33
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 57cb31ce2df82345972d3c2032bec8b25fff191b
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030714"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435067"
 ---
 # <a name="installing-tvos-support-in-xamarin"></a>Установка поддержки tvOS в Xamarin
 
@@ -23,7 +23,7 @@ ms.locfileid: "73030714"
 
 Xamarin. iOS 11 и более поздней версии поддерживают пакет SDK для tvOS 11, поставляемый с компанией Apple Xcode 9.
 
-- [Заметки о выпуске для Xamarin. iOS](https://docs.microsoft.com/xamarin/ios/release-notes/)
+- [Заметки о выпуске для Xamarin. iOS](/xamarin/ios/release-notes/)
 - [Заметки о выпуске для Xcode](https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW876)
 
 ## <a name="installation"></a>Установка
@@ -36,7 +36,7 @@ Xamarin. iOS 11 и более поздней версии поддерживаю
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры tvOS](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+tvOS)
+- [Примеры tvOS](/samples/browse/?products=xamarin&term=Xamarin.iOS%2btvOS)
 - [tvOS](https://developer.apple.com/tvos/)
 - [Руководства по tvOSму интерфейсу](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Руководством по программированию приложений для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

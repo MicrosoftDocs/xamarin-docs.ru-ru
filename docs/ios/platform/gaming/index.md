@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/20/2017
-ms.openlocfilehash: b21e72cc072b614c2e900d7c7b3aa04c9f0812cb
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 20efcf1af10b7c1d3d36e570bc838e396241ffee
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939780"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436248"
 ---
 # <a name="ios-gaming-apis-in-xamarinios"></a>Игровые API iOS в Xamarin. iOS
 
@@ -462,13 +462,13 @@ public override void ViewWillLayoutSubviews ()
 
 Дополнительные сведения см. в [документации по SpriteKit](~/ios/platform/introduction-to-ios8.md#spritekit) [Framework Apple SpriteKit](https://developer.apple.com/library/prerelease/ios/documentation/SpriteKit/Reference/SpriteKitFramework_Ref/index.html#//apple_ref/doc/uid/TP40013041) Platform и их [Демоботс: создание кросс-платформенной игры с помощью SpriteKit и гамеплайкит](https://developer.apple.com/library/prerelease/ios/samplecode/DemoBots/Introduction/Intro.html#//apple_ref/doc/uid/TP40015179) Sample App.
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье были рассмотрены новые игровые функции, предоставляемые iOS 9 для приложений Xamarin. iOS.
 В нем появился Гамеплайкит и модель ввода-вывода. Основные усовершенствования для металла; и новые возможности SceneKit и SpriteKit.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Примеры для iOS 9](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.iOS+iOS9)
+- [Примеры для iOS 9](/samples/browse/?products=xamarin&term=Xamarin.iOS%2biOS9)
 - [iOS 9 для разработчиков](https://developer.apple.com/ios/pre-release/)
 - [iOS 9,0](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html)

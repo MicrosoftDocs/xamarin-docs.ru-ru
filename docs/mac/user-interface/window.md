@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 65ebefef0f03e2b4abd8c36fc1e0a68812e48218
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 2cacbf5640da60a7d084bf4ab113ef62fad097d8
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939520"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436384"
 ---
 # <a name="windows-in-xamarinmac"></a>Windows в Xamarin. Mac
 
@@ -104,7 +104,7 @@ Apple рекомендует следующие рекомендации:
 
 [![Пример инспектора](window-images/panel02.png)](window-images/panel02.png#lightbox)
 
-Дополнительные сведения см. в разделе " [панели](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/WindowPanels.html#//apple_ref/doc/uid/20000957-CH42-SW1) " темы " [macOS](https://developer.apple.com/design/human-interface-guidelines/macos/overview/themes/) " и нашем примере приложения [МаЦинспектор](https://docs.microsoft.com/samples/xamarin/mac-samples/macinspector) для полной реализации **интерфейса инспектора** в приложении Xamarin. Mac.
+Дополнительные сведения см. в разделе " [панели](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/WindowPanels.html#//apple_ref/doc/uid/20000957-CH42-SW1) " темы " [macOS](https://developer.apple.com/design/human-interface-guidelines/macos/overview/themes/) " и нашем примере приложения [МаЦинспектор](/samples/xamarin/mac-samples/macinspector) для полной реализации **интерфейса инспектора** в приложении Xamarin. Mac.
 
 ## <a name="creating-and-maintaining-windows-in-xcode"></a>Создание и обслуживание Windows в Xcode
 
@@ -252,7 +252,7 @@ public override void ViewWillAppear ()
 
 Если приложение реализует `NSWindow` `WillClose` событие, оно будет создано до закрытия окна. Если событие возвращается `false` , окно не будет закрыто. Если окно не содержит кнопку **Закрыть** или не может быть закрыто по какой-либо причине, операционная система выдаст предупреждение.
 
-Например.
+Пример:
 
 ```csharp
 MyWindow.PerformClose(this);
@@ -271,7 +271,7 @@ MyWindow.PerformClose(this);
 1. Он не пытается вызвать `WillClose` событие.
 2. Он не имитирует нажатие кнопки « **Закрыть** » пользователем, выделяя кнопку.
 
-Например.
+Пример:
 
 ```csharp
 MyWindow.Close();
@@ -307,7 +307,7 @@ Window.DocumentEdited = false;
 
 ### <a name="saving-changes-before-closing-a-window"></a>Сохранение изменений перед закрытием окна
 
-Чтобы отслеживать закрытие окна пользователем и позволить ему сохранить измененное содержимое заранее, необходимо создать подкласс `NSWindowDelegate` и переопределить его `WindowShouldClose` метод. Например.
+Чтобы отслеживать закрытие окна пользователем и позволить ему сохранить измененное содержимое заранее, необходимо создать подкласс `NSWindowDelegate` и переопределить его `WindowShouldClose` метод. Пример:
 
 ```csharp
 using System;
@@ -475,7 +475,7 @@ var window = NSApplication.SharedApplication.KeyWindow;
 
 Иногда требуется доступ ко всем окнам, открытым в настоящее время приложением Xamarin. Mac. Например, если файл, который пользователь хочет открыть, уже открыт в окне выхода.
 
-`NSApplication.SharedApplication` `Windows` Компонент поддерживает свойство, которое содержит массив всех открытых окон в приложении. Вы можете выполнить итерацию по этому массиву, чтобы получить доступ ко всем текущим окнам приложения. Например.
+`NSApplication.SharedApplication` `Windows` Компонент поддерживает свойство, которое содержит массив всех открытых окон в приложении. Вы можете выполнить итерацию по этому массиву, чтобы получить доступ ко всем текущим окнам приложения. Пример:
 
 ```csharp
 // Is the file already open?
@@ -521,7 +521,7 @@ SetFrame (frame, true);
 
 [![Инспектор удостоверений](window-images/resize01.png)](window-images/resize01.png#lightbox)
 
-Затем измените класс пользовательского контроллера окна и отслеживайте `DidResize` событие в окне контроллера, чтобы получать уведомления об изменениях в динамическом размере. Например.
+Затем измените класс пользовательского контроллера окна и отслеживайте `DidResize` событие в окне контроллера, чтобы получать уведомления об изменениях в динамическом размере. Пример:
 
 ```csharp
 public override void WindowDidLoad ()
@@ -750,7 +750,7 @@ public override void DidFinishLaunching (NSNotification notification)
 [![Панель в работающем приложении](window-images/panels04.png)](window-images/panels04.png#lightbox)
 
 > [!IMPORTANT]
-> Окна панели не рекомендуются компанией Apple и должны быть заменены **интерфейсами инспектора**. Полный пример создания **инспектора** в приложении Xamarin. Mac см. в нашем примере приложения [маЦинспектор](https://docs.microsoft.com/samples/xamarin/mac-samples/macinspector) .
+> Окна панели не рекомендуются компанией Apple и должны быть заменены **интерфейсами инспектора**. Полный пример создания **инспектора** в приложении Xamarin. Mac см. в нашем примере приложения [маЦинспектор](/samples/xamarin/mac-samples/macinspector) .
 
 ## <a name="summary"></a>Сводка
 
@@ -758,8 +758,8 @@ public override void DidFinishLaunching (NSNotification notification)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Маквиндовс (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macwindows)
-- [МаЦинспектор (пример)](https://docs.microsoft.com/samples/xamarin/mac-samples/macinspector)
+- [Маквиндовс (пример)](/samples/xamarin/mac-samples/macwindows)
+- [МаЦинспектор (пример)](/samples/xamarin/mac-samples/macinspector)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Работа с меню](~/mac/user-interface/menu.md)
 - [темы проектирования macOS (Apple)](https://developer.apple.com/design/human-interface-guidelines/macos/overview/themes/)

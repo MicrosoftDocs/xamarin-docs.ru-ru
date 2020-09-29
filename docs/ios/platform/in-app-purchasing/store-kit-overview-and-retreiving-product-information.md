@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: f05bc534b1220e6659f123a17dc57e02185fdea4
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: b7bfa98f84210c921790989c60a7bda21b7c6bcd
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86996348"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435547"
 ---
 # <a name="storekit-overview-and-retrieving-product-info-in-xamarinios"></a>StoreKit обзор и получение сведений о продукте в Xamarin. iOS
 
@@ -80,11 +80,11 @@ ms.locfileid: "86996348"
 
 Независимо от типа продуктов, которые продаются приложением (используемая, неиспользуемая или тип подписки), процесс получения сведений о продукте на экране будет одинаковым. Код Инапппурчасесампле, прилагаемый к этой статье, содержит проект с именем *расходных материалов* , демонстрирующий получение рабочей информации для отображения. В нем показано, как:
 
-- Создайте реализацию `SKProductsRequestDelegate` и реализуйте `ReceivedResponse` абстрактный метод. В примере кода этот класс вызывается `InAppPurchaseManager` .
-- Чтобы узнать, разрешены ли платежи (с использованием), обратитесь к StoreKit `SKPaymentQueue.CanMakePayments` .
-- Создайте экземпляр `SKProductsRequest` с идентификаторами продуктов, которые были определены в iTunes Connect. Это делается в `InAppPurchaseManager.RequestProductData` методе примера.
-- Вызовите метод Start для `SKProductsRequest` . Это активирует асинхронный вызов серверов App Store. Делегат ( `InAppPurchaseManager` ) будет вызван с результатами.
-- Метод делегата ( `InAppPurchaseManager` ) `ReceivedResponse` обновляет пользовательский интерфейс данными, возвращенными из магазина приложений (цены продуктов & описания или сообщения о недопустимых продуктах).
+- Создайте реализацию  `SKProductsRequestDelegate` и реализуйте  `ReceivedResponse` абстрактный метод. В примере кода этот класс вызывается  `InAppPurchaseManager` .
+- Чтобы узнать, разрешены ли платежи (с использованием), обратитесь к StoreKit  `SKPaymentQueue.CanMakePayments` .
+- Создайте экземпляр  `SKProductsRequest` с идентификаторами продуктов, которые были определены в iTunes Connect. Это делается в  `InAppPurchaseManager.RequestProductData` методе примера.
+- Вызовите метод Start для  `SKProductsRequest` . Это активирует асинхронный вызов серверов App Store. Делегат ( `InAppPurchaseManager` ) будет вызван с результатами.
+- Метод делегата ( `InAppPurchaseManager` )  `ReceivedResponse` обновляет пользовательский интерфейс данными, возвращенными из магазина приложений (цены продуктов & описания или сообщения о недопустимых продуктах).
 
 Общее взаимодействие выглядит следующим образом ( **StoreKit** встроен в iOS, а **магазин приложений** представляет серверы Apple):
 
@@ -92,7 +92,7 @@ ms.locfileid: "86996348"
 
 ### <a name="displaying-product-information-example"></a>Пример отображения сведений о продукте
 
-Пример кода [инапппурчасесампле](https://docs.microsoft.com/samples/xamarin/ios-samples/storekit) *расходных материалов* показывает, как можно получить сведения о продукте. На главном экране образца отображаются сведения о двух продуктах, получаемых из магазина приложений:   
+Пример кода [инапппурчасесампле](/samples/xamarin/ios-samples/storekit) *расходных материалов* показывает, как можно получить сведения о продукте. На главном экране образца отображаются сведения о двух продуктах, получаемых из магазина приложений:   
 
  [![На главном экране отображаются сведения о продуктах, полученных из магазина приложений.](store-kit-overview-and-retreiving-product-information-images/image23.png)](store-kit-overview-and-retreiving-product-information-images/image23.png#lightbox)   
 
