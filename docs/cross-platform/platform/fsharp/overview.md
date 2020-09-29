@@ -6,12 +6,12 @@ ms.assetid: 1A0E627D-A4C1-4F95-BAED-76A0E40B9054
 author: davidortinau
 ms.author: daortin
 ms.date: 03/24/2017
-ms.openlocfilehash: 6050ede8a8f725f75011a1ebc018406c197b1dcd
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f6fca3bd02833e429ca3cbe8592124cb4cfba65b
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938842"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453185"
 ---
 # <a name="getting-started-with-f35"></a>Начало работы с F&#35;
 
@@ -51,6 +51,6 @@ F # включен по умолчанию в Visual Studio для Mac.
 
 - [F# Software Foundation](https://fsharp.org)
 - [Портал разработки в Visual F#](https://go.microsoft.com/fwlink/?LinkID=234174)
-- [Visual F# коллекции кода](https://go.microsoft.com/fwlink/?LinkID=124614)
-- [Программирование математических и статистических Visual F#](https://go.microsoft.com/fwlink/?LinkId=235173)
-- [Visual F# диаграммы](https://go.microsoft.com/fwlink/?LinkId=235176)
+- [Visual F# коллекции кода](/samples/browse/)
+- [Программирование математических и статистических Visual F#](/previous-versions/visualstudio/visual-studio-2010/hh273075(v=vs.100))
+- [Visual F# диаграммы](/previous-versions/visualstudio/visual-studio-2010/hh273079(v=vs.100))

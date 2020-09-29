@@ -7,12 +7,12 @@ manager: crdun
 ms.workload:
 - xamarin
 ms.date: 10/23/2018
-ms.openlocfilehash: bd1a728dfe14ff9243402bedae74db7be93bf466
-ms.sourcegitcommit: db422e33438f1b5c55852e6942c3d1d75dc025c4
+ms.openlocfilehash: 61a7017d2ba784770d1199b6332d781b36b6d0e0
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725135"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91452483"
 ---
 # <a name="devops-with-xamarin"></a>DevOps с Xamarin
 
@@ -30,7 +30,7 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 Общий комментарий: все возможности планирования и отслеживания не зависят от типа проекта и языков программирования.
 
-|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|
+|Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|----------------------------|-------------------------|
 |Управление невыполненной работой и спринтами|Да||
 |Отслеживание трудозатрат|Да||
@@ -40,11 +40,11 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 ## <a name="modeling"></a>Моделирование
 
-Ссылка: **[Анализ и моделирование архитектуры](/visualstudio/modeling/analyze-and-model-your-architecture)**
+Ссылка для справки: **[Анализ и моделирование архитектуры](/visualstudio/modeling/analyze-and-model-your-architecture)**
 
-Функции разработки не зависят от языка программирования или работы с языками .NET, такими как C#. Аспекты, связанные с кодом, описаны в разделе [Роли архитектуры и схем моделирования в разработке программного обеспечения](/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling#ModelingDiagramsTools).
+Функции разработки не зависят от языка программирования или работы с языками .NET, такими как C#. Сведения о том, какие аспекты связаны с кодом, см. [в разделе роли архитектуры и схем моделирования в разработке программного обеспечения](/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling#ModelingDiagramsTools) .
 
-|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|
+|Признак|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|----------------------------|-------------------------|
 |Схемы последовательностей|Да||
 |Графы зависимости|Да||
@@ -57,7 +57,7 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 
 ## <a name="code"></a>Код
 
-|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|
+|Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|----------------------------|-------------------------|
 |[Использование системы управления версиями Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) или Azure Repos|Да||
 |[Приступая к работе с Git в Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Да||
@@ -65,55 +65,55 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 |[Поиск изменений кода и других журналов](/visualstudio/ide/find-code-changes-and-other-history-with-codelens)|Да|Кроме выхода за границы конкретной платформы, где реализация не разрешается до времени выполнения.|
 |[Использование карт кода для отладки приложений](/visualstudio/modeling/use-code-maps-to-debug-your-applications)|Да||
 
-## <a name="build"></a>Сборка
+## <a name="build"></a>Построение
 
 Ссылка для справки: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
-|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|
+|Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|----------------------------|-------------------------|
-|Локальный сервер TFS|Да|На компьютерах для сборки должна быть установлена платформа Xamarin; кроме того, они могут быть связаны с компьютером OSX для сборки приложений для iOS. См. раздел [Использование TFVC](/azure/devops/repos/tfvc/overview?view=vsts).|
+|Локальный сервер TFS|Да|На компьютерах для сборки должна быть установлена платформа Xamarin; кроме того, они могут быть связаны с компьютером OSX для сборки приложений для iOS. См. раздел [Использование TFVC](/azure/devops/repos/tfvc/overview?view=vsts)|
 |Локальные серверы сборки, связанные с Azure Pipelines|Да|Инструкции см. в разделе [Агенты сборки и выпуска](/azure/devops/pipelines/agents/agents?view=vsts).|
 |Служба размещенного контроллера Azure Pipelines|Да|См. [Сборка приложения Xamarin](/azure/devops/pipelines/languages/xamarin?view=vsts&tabs=vsts).|
 |Определения сборки с сценариями до и после сборки|Да||
 |Непрерывная интеграция, включая условный возврат|Да|Условный возврат доступен только для TFVC, так как Git работает с моделью запроса на включение внесенных изменений, а не с возвратом.|
 
-## <a name="test"></a>Тест
+## <a name="test"></a>Проверка
 
-|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|
+|Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|----------------------------|-------------------------|
 |Планирование тестов, создание тестовых случаев и организация наборов тестов|Да||
 |Тестирование вручную|Да||
 |Test Manager (запись и воспроизведение тестов)|Да|Только устройства Windows и эмуляторы Android из Visual Studio.|
-|Покрытие кода|Недоступно||
+|Покрытие кода|Н/Д||
 |[Модульное тестирование кода](/visualstudio/test/unit-test-your-code/)|Да|Для целевых платформ Windows и Android можно использовать встроенные средства MSTest. Для выполнения модульных тестов в Windows, iOS и Android Xamarin рекомендует использовать NUnit. См. раздел [Использование TFVC](/azure/devops/repos/tfvc/overview?view=vsts).|
-|[Использование автоматизации пользовательского интерфейса для тестирования кода](/visualstudio/test/use-ui-automation-to-test-your-code/)|Только для Windows|Средства записи тестов пользовательского интерфейса Visual Studio предназначено только для Windows. Сведения для других платформ см. в разделе [Xamarin.UITest](/appcenter/test-cloud/uitest/).|
+|[Использование автоматизации пользовательского интерфейса для тестирования кода](/visualstudio/test/use-ui-automation-to-test-your-code/)|Только в Windows|Средства записи тестов пользовательского интерфейса Visual Studio предназначено только для Windows. Сведения для других платформ см. в разделе [Xamarin.UITest](/appcenter/test-cloud/uitest/).|
 
 ## <a name="improve-code-quality"></a>Улучшите качество кода
 
-Ссылка: **[Улучшите качество кода](/visualstudio/test/improve-code-quality)**
+Ссылка: ** [улучшение качества кода](/visualstudio/test/improve-code-quality)**
 
-|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|
+|Признак|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|----------------------------|-------------------------|
 |[Анализ качества управляемого кода](/visualstudio/code-quality/analyzing-managed-code-quality-by-using-code-analysis)|Да||
-|[Поиск повторяющегося кода с помощью обнаружения клонов кода](https://msdn.microsoft.com/library/hh205279.aspx)|Да||
+|[Поиск повторяющегося кода с помощью обнаружения клонов кода](/previous-versions/hh205279(v=vs.140))|Да||
 |[Оценка сложности и удобства сопровождения управляемого кода](/visualstudio/code-quality/measuring-complexity-and-maintainability-of-managed-code)|Да||
-|[Обозреватель производительности](/visualstudio/profiling/performance-explorer)|нет|Используйте [Xamarin Profiler](/xamarin/tools/profiler/) с помощью Visual Studio для Mac. Обратите внимание, что профилировщик Xamarin находится в режиме предварительной версии и пока не работает для целевых платформ Windows.|
-|[Анализ проблем с памятью .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|нет|Инструменты Visual Studio не имеют обработчиков в платформе Mono для профилирования.|
+|[Обозреватель производительности](/visualstudio/profiling/performance-explorer)|Нет|Используйте [Xamarin Profiler](../profiler/index.md) с помощью Visual Studio для Mac. Обратите внимание, что профилировщик Xamarin находится в режиме предварительной версии и пока не работает для целевых платформ Windows.|
+|[Анализ проблем с памятью .NET Framework](/visualstudio/misc/analyze-dotnet-framework-memory-issues)|Нет|Инструменты Visual Studio не имеют обработчиков в платформе Mono для профилирования.|
 
 ## <a name="release-management"></a>Управление выпуском
 
-Ссылка для справки: **[Сборка и выпуск в Azure Pipelines и TFS](/azure/devops/pipelines/overview?view=vsts)**
+Ссылка: ** [Сборка и выпуск в Azure PIPELINES и TFS](/azure/devops/pipelines/overview?view=vsts)**
 
-|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|
+|Признак|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|----------------------------|-------------------------|
 |Управление процессами выпуска|Да||
 |Развертывание на серверах для загрузки неопубликованных приложений через сценарии|Да||
-|Отправка в магазин приложений|Частично|Доступны расширения, которые автоматизируют этот процесс для некоторых магазинов приложений.  См. раздел [Расширения для Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), например [расширение для Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Отправка в магазин приложений|Partial|Доступны расширения, которые автоматизируют этот процесс для некоторых магазинов приложений.  См. раздел [Расширения для Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), например [расширение для Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Мониторинг с HockeyApp
 
-Ссылка: **[Мониторинг с HockeyApp](https://www.hockeyapp.net/features/)**
+Ссылка для справки: **[Мониторинг с HockeyApp](https://www.hockeyapp.net/features/)**
 
-|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|
+|Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|----------------------------|-------------------------|
 |Анализ сбоев, телеметрия и бета-распределение|Да||

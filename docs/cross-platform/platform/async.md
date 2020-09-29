@@ -6,12 +6,12 @@ ms.assetid: F87BF587-AB64-4C60-84B1-184CAE36ED65
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: 3bb2ba863913c2cc3098a2481ebd034c78eabdea
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 9821519c680de61767792c8122938bf826e457f5
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938868"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453250"
 ---
 # <a name="async-support-overview"></a>Обзор поддержки асинхронного выполнения
 
@@ -23,7 +23,7 @@ _В C# 5 появились два ключевых слова для упрощ
 
 В этом документе представлены новые ключевые слова Async и await, а затем приведены некоторые простые примеры реализации асинхронных методов в Xamarin. iOS и Xamarin. Android.
 
-Более подробное обсуждение новых асинхронных функций C# 5 (включая множество примеров и различных сценариев использования) см. в статье [Асинхронное программирование](https://docs.microsoft.com/dotnet/csharp/async).
+Более подробное обсуждение новых асинхронных функций C# 5 (включая множество примеров и различных сценариев использования) см. в статье [Асинхронное программирование](/dotnet/csharp/async).
 
 Пример приложения выполняет простой асинхронный веб-запрос (без блокировки основного потока), а затем обновляет пользовательский интерфейс с загруженным кодом HTML и числом символов.
 
@@ -37,7 +37,7 @@ _В C# 5 появились два ключевых слова для упрощ
 
 ## <a name="using-async-amp-await"></a>Использование Async &amp; await
 
- `async`и `await` являются новыми функциями языка C#, которые работают совместно с библиотекой параллельных задач, чтобы упростить написание потокового кода для выполнения длительных задач без блокировки основного потока приложения.
+ `async` и `await` являются новыми функциями языка C#, которые работают совместно с библиотекой параллельных задач, чтобы упростить написание потокового кода для выполнения длительных задач без блокировки основного потока приложения.
 
 ## <a name="async"></a>async
 
@@ -69,7 +69,7 @@ _В C# 5 появились два ключевых слова для упрощ
 
 По завершении задачи метод возобновляет выполнение в той же точке кода. Сюда входит возврат к области try блока try-catch-finally (если таковой имеется). await нельзя использовать в блоке catch или finally.
 
-Дополнительные сведения о [ожидании](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/await) в документация Майкрософт.
+Дополнительные сведения о [ожидании](/dotnet/csharp/language-reference/keywords/await) в документация Майкрософт.
 
 ## <a name="exception-handling"></a>Обработка исключений
 
@@ -85,11 +85,11 @@ _В C# 5 появились два ключевых слова для упрощ
 
 Затем задача отменяет саму себя и подтверждает отмену.
 
-Дополнительные сведения об отмене см. в разделе [Настройка асинхронного приложения (C#)](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/fine-tuning-your-async-application).
+Дополнительные сведения об отмене см. в разделе [Настройка асинхронного приложения (C#)](/dotnet/csharp/programming-guide/concepts/async/fine-tuning-your-async-application).
 
 ## <a name="example"></a>Пример
 
-Скачайте [пример решения Xamarin](https://docs.microsoft.com/samples/xamarin/mobile-samples/asyncawait/) (для iOS и Android), чтобы просмотреть рабочий пример `async` и `await` в мобильных приложениях. Пример кода более подробно рассматривается в этом разделе.
+Скачайте [пример решения Xamarin](/samples/xamarin/mobile-samples/asyncawait/) (для iOS и Android), чтобы просмотреть рабочий пример `async` и `await` в мобильных приложениях. Пример кода более подробно рассматривается в этом разделе.
 
 ### <a name="writing-an-async-method"></a>Написание асинхронного метода
 
@@ -120,9 +120,9 @@ public async Task<int> DownloadHomepage()
 
 Обратите внимание на следующие моменты:
 
-- Объявление метода включает `async` ключевое слово.
-- Тип возвращаемого значения заключается в том, `Task<int>` что вызывающий код может получить доступ к `int` значению, вычисленному в этом методе.
-- Оператор Return представляет собой `return exampleInt;` целочисленный объект — тот факт, что возвращаемый метод `Task<int>` является частью улучшений языка.
+- Объявление метода включает  `async` ключевое слово.
+- Тип возвращаемого значения заключается в том,  `Task<int>` что вызывающий код может получить доступ к  `int` значению, вычисленному в этом методе.
+- Оператор Return представляет собой  `return exampleInt;` целочисленный объект — тот факт, что возвращаемый метод  `Task<int>` является частью улучшений языка.
 
 ### <a name="calling-an-async-method-1"></a>Вызов асинхронного метода 1
 
@@ -150,7 +150,7 @@ GetButton.Click += async (sender, e) => {
 - Анонимный делегат имеет префикс ключевого слова Async.
 - Асинхронный метод Довнлоадхомепаже возвращает задачу \<int> , которая хранится в переменной сизетаск.
 - Код ожидает переменную Сизетаск.  *Это* расположение, в котором метод приостанавливается, и управление возвращается вызывающему коду до тех пор, пока асинхронная задача не завершится в собственном потоке.
-- Выполнение *не* приостанавливается при создании задачи в первой строке метода, несмотря на то, что в ней создается задача. Ключевое слово await обозначает место приостановки выполнения.
+- Выполнение  *не* приостанавливается при создании задачи в первой строке метода, несмотря на то, что в ней создается задача. Ключевое слово await обозначает место приостановки выполнения.
 - По завершении асинхронной задачи устанавливается параметр tResult, и выполнение остается в исходном потоке из строки await.
 
 ### <a name="calling-an-async-method-2"></a>Вызов асинхронного метода 2
@@ -179,9 +179,9 @@ async void HandleTouchUpInside (object sender, EventArgs e)
 
 Некоторые важные моменты:
 
-- Метод помечается как, `async` но возвращает `void` . Обычно это делается только для обработчиков событий (в противном случае возвращается `Task` или `Task<TResult>` ).
+- Метод помечается как,  `async` но возвращает  `void` . Обычно это делается только для обработчиков событий (в противном случае возвращается  `Task` или  `Task<TResult>` ).
 - `await`Ключевое слово в `DownloadHomepage` методе непосредственно присваивает переменной () в `intResult` отличие от предыдущего примера, где мы использовали промежуточную `Task<int>` переменную для ссылки на задачу.  *Это* расположение, где управление возвращается вызывающему объекту до тех пор, пока асинхронный метод не завершит работу в другом потоке.
-- Когда асинхронный метод завершает работу и возвращает значение, выполнение возобновляется с, `await` что означает возврат целочисленного результата и последующее его отображение в мини-приложении пользовательского интерфейса.
+- Когда асинхронный метод завершает работу и возвращает значение, выполнение возобновляется с,  `await` что означает возврат целочисленного результата и последующее его отображение в мини-приложении пользовательского интерфейса.
 
 ## <a name="summary"></a>Сводка
 
@@ -191,14 +191,14 @@ async void HandleTouchUpInside (object sender, EventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Асинкаваит (пример)](https://docs.microsoft.com/samples/xamarin/mobile-samples/asyncawait/)
+- [Асинкаваит (пример)](/samples/xamarin/mobile-samples/asyncawait/)
 - [Обратные вызовы в качестве оператора Go в поколениях](https://tirania.org/blog/archive/2013/Aug-15.html)
-- [Данные (iOS) (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/data/)
-- [HttpClient (iOS) (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/httpclient/)
+- [Данные (iOS) (пример)](/samples/xamarin/ios-samples/data/)
+- [HttpClient (iOS) (пример)](/samples/xamarin/ios-samples/httpclient/)
 - [Мапкитсеарч (iOS) (пример)](https://github.com/xamarin/monotouch-samples/tree/master/MapKitSearch)
-- [Асинхронное программирование](https://docs.microsoft.com/dotnet/csharp/async)
-- [Fine-Tuning Your Async Application (C#)](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/fine-tuning-your-async-application) (Тонкая настройка асинхронного приложения в C#)
+- [Асинхронное программирование](/dotnet/csharp/async)
+- [Fine-Tuning Your Async Application (C#)](/dotnet/csharp/programming-guide/concepts/async/fine-tuning-your-async-application) (Тонкая настройка асинхронного приложения в C#)
 - [Ожидание, Пользовательский интерфейс и взаимоблокировки! Вот это да!](https://devblogs.microsoft.com/pfxteam/await-and-ui-and-deadlocks-oh-my/)
 - [Обработка задач по мере их завершения)](https://devblogs.microsoft.com/pfxteam/processing-tasks-as-they-complete/)
-- [Task-based Asynchronous Pattern (TAP)](https://msdn.microsoft.com/library/hh873175.aspx) (Асинхронный шаблон, основанный на задачах (TAP))
-- [Асинхронность в C# 5 (блог «Липперта») — о вводе ключевых слов](https://blogs.msdn.microsoft.com/ericlippert/2010/11/11/asynchrony-in-c-5-part-six-whither-async/)
+- [Task-based Asynchronous Pattern (TAP)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) (Асинхронный шаблон, основанный на задачах (TAP))
+- [Асинхронность в C# 5 (блог «Липперта») — о вводе ключевых слов](/archive/blogs/ericlippert/asynchrony-in-c-5-part-six-whither-async)

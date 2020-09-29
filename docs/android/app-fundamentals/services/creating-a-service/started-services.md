@@ -6,12 +6,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/16/2018
-ms.openlocfilehash: 74226aff2ae135144172a06be5e7869c5cd8e408
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 6075b125f36625a8dec12c041631e3794a71cc6a
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84568455"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91455370"
 ---
 # <a name="started-services-with-xamarinandroid"></a>Службы, запущенные с помощью Xamarin. Android
 
@@ -23,7 +23,7 @@ ms.locfileid: "84568455"
 
 - `OnCreate`&ndash;Вызывается один раз при первом запуске службы. Здесь следует реализовать код инициализации.
 - `OnBind`&ndash;Этот метод должен быть реализован всеми классами служб, однако запущенная служба обычно не привязана к клиенту. Поэтому запущенная служба просто возвращает `null` . В отличие от этого, гибридная служба (которая является сочетанием привязанной службы и запущенной службы) должна реализовывать и возвращать `Binder` для клиента.
-- `OnStartCommand`&ndash;Вызывается для каждого запроса на запуск службы либо в ответ на вызов `StartService` или перезагрузку системой. Именно в этом случае служба может запустить любую длительную задачу. Метод возвращает `StartCommandResult` значение, указывающее, должна ли система перезапускать службу после завершения работы из-за нехватки памяти. Этот вызов выполняется в основном потоке. Этот метод более подробно описан ниже.
+- `OnStartCommand`&ndash;Вызывается для каждого запроса на запуск службы либо в ответ на вызов `StartService` или перезагрузку системой. Именно в этом случае служба может запустить любую длительную задачу. Метод возвращает  `StartCommandResult` значение, указывающее, должна ли система перезапускать службу после завершения работы из-за нехватки памяти. Этот вызов выполняется в основном потоке. Этот метод более подробно описан ниже.
 - `OnDestroy`&ndash;Этот метод вызывается при уничтожении службы. Он используется для выполнения любой окончательной очистки.
 
 Важным методом для запущенной службы является `OnStartCommand` метод. Он будет вызываться каждый раз, когда служба получает запрос для выполнения некоторой работы. Ниже приведен пример фрагмента кода `OnStartCommand` . 
@@ -81,7 +81,7 @@ public override StartCommandResult OnStartCommand (Android.Content.Intent intent
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Стартедсервицесдемо (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/applicationfundamentals-servicesamples-startedservicesdemo)
+- [Стартедсервицесдемо (пример)](/samples/xamarin/monodroid-samples/applicationfundamentals-servicesamples-startedservicesdemo)
 - [Android. app. Service](xref:Android.App.Service)
 - [Android. app. Старткоммандфлагс](xref:Android.App.StartCommandFlags)
 - [Android. app. Старткоммандресулт](xref:Android.App.StartCommandResult)

@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/25/2018
-ms.openlocfilehash: ea54dcd1df800df1df855fc6b7efedecfda1a24f
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 7c63f4c245d6fc5cb6e9da6320e159229b07de6e
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86996868"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453679"
 ---
 # <a name="install-and-setup-wear-os-on-xamarinandroid"></a>Установка и настройка износа ОС в Xamarin. Android
 
@@ -28,7 +28,7 @@ _В этой статье рассматриваются этапы устано
 
 - **Пакет SDK для Android** -пакет SDK для Android 5.0.1 (API 21) или более поздней версии должен быть установлен с помощью диспетчера пакет SDK для Android.
 
-- **Пакет Java Developer Kit** &ndash; Для разработки Xamarin Android требуется [JDK 1,8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) , если вы разрабатываете для API уровня 24 или выше (JDK 1,8 также поддерживает уровни API, предшествующие 24).
+- **Пакет Java Developer Kit** &ndash; Для разработки Xamarin Android требуется   [JDK 1,8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) , если вы разрабатываете для API уровня 24 или выше (JDK 1,8 также поддерживает уровни API, предшествующие 24).
 
 Вы можете продолжать использовать [JDK 1,7](https://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) при разработке специально для API уровня 23 или более ранней версии.
 
@@ -115,4 +115,4 @@ _В этой статье рассматриваются этапы устано
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Скелетонвеар (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/wear-skeletonwear)
+- [Скелетонвеар (пример)](/samples/xamarin/monodroid-samples/wear-skeletonwear)

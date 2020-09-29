@@ -1,21 +1,21 @@
 ---
-title: Безопасность транспортного уровня (TLS) 1,2
+title: Протокол TLS версии 1.2
 description: В этом документе описано, как включить TLS 1,2 для проектов Xamarin. iOS, Xamarin. Android и Xamarin. Mac. В нем показано, как это сделать в Visual Studio 2019 и Visual Studio для Mac.
 ms.prod: xamarin
 ms.assetid: 399F71C6-16A4-4ABC-B30D-AF17D066A5FA
 author: davidortinau
 ms.author: daortin
 ms.date: 04/20/2018
-ms.openlocfilehash: 8999efc3e954f4917e6c91a1e325d16e41c48b19
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: fda004fe32b8f7d047298608a500cf72c4e9f06c
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73016681"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453370"
 ---
-# <a name="transport-layer-security-tls-12"></a>Безопасность транспортного уровня (TLS) 1,2
+# <a name="transport-layer-security-tls-12"></a>Протокол TLS версии 1.2
 
-Использование последней версии протокола [_Transport Layer Security_ (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security) важно для обеспечения безопасности сетевых подключений приложений.
+Использование последней версии протокола TLS важно для обеспечения безопасности сетевых подключений приложений. [ _Transport Layer Security_ ](https://en.wikipedia.org/wiki/Transport_Layer_Security)
 
 > [!WARNING]
 > **Апрель 2018** — из-за повышенных требований к безопасности, включая соответствие требованиям PCI, основным поставщикам облачных услуг и веб-серверам требуется отключить поддержку протоколов TLS версий старше 1,2. Проекты Xamarin, созданные в предыдущих версиях Visual Studio по умолчанию, используют более старые версии TLS.
@@ -31,17 +31,17 @@ ms.locfileid: "73016681"
 > [!NOTE]
 > Требуется Android 5,0 или более поздней версии.
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Эти параметры можно найти в **свойствах проекта > параметры Android** , а затем нажать кнопку **Дополнительно** :
 
-[![настройке HttpClient и TLS в Visual Studio](transport-layer-security-images/android-win-sml.png)](transport-layer-security-images/android-win.png#lightbox)
+[![Настройка HttpClient и TLS в Visual Studio](transport-layer-security-images/android-win-sml.png)](transport-layer-security-images/android-win.png#lightbox)
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 Эти параметры можно найти в окне " **Параметры проекта" > "сборка > вкладка" сборка Android** ":
 
-[![настроить HttpClient и TLS в Visual Studio для Mac](transport-layer-security-images/android-mac-sml.png)](transport-layer-security-images/android-mac.png#lightbox)
+[![Настройка HttpClient и TLS в Visual Studio для Mac](transport-layer-security-images/android-mac-sml.png)](transport-layer-security-images/android-mac.png#lightbox)
 
 -----
 
@@ -49,25 +49,25 @@ ms.locfileid: "73016681"
 
 Обновите параметр **реализации HttpClient** , чтобы включить безопасность TSL 1,2.
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Этот параметр можно найти в **свойствах проекта > сборка iOS**:
 
-[![настройке HttpClient и TLS в Visual Studio](transport-layer-security-images/ios-win-sml.png)](transport-layer-security-images/ios-win.png#lightbox)
+[![Настройка HttpClient и TLS в Visual Studio](transport-layer-security-images/ios-win-sml.png)](transport-layer-security-images/ios-win.png#lightbox)
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 Этот параметр можно найти в **параметрах проекта > сборка > вкладка сборки iOS** :
 
-[![настроить HttpClient в Visual Studio для Mac](transport-layer-security-images/ios-mac-sml.png)](transport-layer-security-images/ios-mac.png#lightbox)
+[![Настройка HttpClient в Visual Studio для Mac](transport-layer-security-images/ios-mac-sml.png)](transport-layer-security-images/ios-mac.png#lightbox)
 
 -----
 
 ## <a name="update-xamarinmac-to-tls-12"></a>Обновление Xamarin. Mac до TLS 1,2
 
-В Visual Studio для Mac, чтобы включить TLS 1,2 в приложении Xamarin. Mac, обновите параметр **реализации HttpClient** в параметрах **проекта > сборка Mac >** .
+В Visual Studio для Mac, чтобы включить TLS 1,2 в приложении Xamarin. Mac, обновите параметр **реализации HttpClient** в параметрах **проекта > сборка Mac >**.
 
-[![настроить HttpClient в Visual Studio для Mac](transport-layer-security-images/macos-mac-sml.png)](transport-layer-security-images/macos-mac.png#lightbox)
+[![Настройка HttpClient в Visual Studio для Mac](transport-layer-security-images/macos-mac-sml.png)](transport-layer-security-images/macos-mac.png#lightbox)
 
 > [!WARNING]
 > Будущий выпуск Xamarin.Mac 4.8 будет поддерживать только macOS 10.9 или более поздней версии.
@@ -80,16 +80,16 @@ ms.locfileid: "73016681"
 
 ### <a name="httpclient-implementation"></a>Реализация HttpClient
 
-Разработчики Xamarin всегда могли использовать собственные сетевые классы в своем коде, однако существует также параметр, определяющий, какой сетевой стек используется классами `HttpClient`. Это предоставляет знакомый API .NET, который обладает преимуществами скорости и безопасности собственной платформы.
+Разработчики Xamarin всегда могли использовать собственные сетевые классы в своем коде, однако существует также параметр, который определяет, какой сетевой стек используется `HttpClient` классами. Это предоставляет знакомый API .NET, который обладает преимуществами скорости и безопасности собственной платформы.
 
-Доступны следующие варианты.
+Доступны следующие возможности:
 
 - **Управляемый стек** — предоставляемая моно функциональность сети или
 - **Собственный стек** — различные сетевые интерфейсы API, предоставляемые базовыми платформами (Android, iOS или macOS).
 
 Управляемый стек обеспечивает наивысший уровень совместимости с существующим кодом .NET, однако он может быть медленнее, что приведет к увеличению размера исполняемого файла.
 
-Собственные параметры могут быть более быстрыми и иметь более высокий уровень безопасности (включая TLS 1,2), но могут не предоставлять все функции и параметры класса `HttpClient`.
+Собственные параметры могут быть более быстрыми и иметь более высокий уровень безопасности (включая TLS 1,2), но могут не предоставлять все функции и возможности `HttpClient` класса.
 
 ### <a name="ssltls-implementation-android"></a>Реализация SSL/TLS (Android)
 
@@ -119,21 +119,21 @@ ms.locfileid: "73016681"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Безопасность транспорта приложения](~/ios/app-fundamentals/ats.md)
-- [Среда Xamarin. Android](~/android/deploy-test/environment.md)
+- [Защита транспорта приложения](~/ios/app-fundamentals/ats.md)
+- [Среда Xamarin.Android](~/android/deploy-test/environment.md)
 - [Xamarin Cycle 9 (Февраль 2017)](https://releases.xamarin.com/stable-release-cycle-9/)
 - [TLS (Википедии)](https://en.wikipedia.org/wiki/Transport_Layer_Security)
 - [Заметки о выпуске Mono 4,8 — поддержка TLS 1,2](https://www.mono-project.com/docs/about-mono/releases/4.8.0/#tls-12-support)
 - [борингссл](https://boringssl.googlesource.com/boringssl/)
-- [Описание HttpClient, HttpClientHandler и Вебрекуессандлер](https://blogs.msdn.microsoft.com/henrikn/2012/08/07/httpclient-httpclienthandler-and-webrequesthandler-explained/)
-- [System.Net.HttpClient](https://msdn.microsoft.com/library/system.net.http.httpclient(v=vs.118).aspx)
-- [System .NET. HttpClientHandler](https://msdn.microsoft.com/library/system.net.http.httpclienthandler(v=vs.118).aspx)
-- [System .NET. HttpMessageHandler](https://msdn.microsoft.com/library/system.net.http.httpmessagehandler(v=vs.118).aspx)
-- [System.Net.HttpWebRequest](https://msdn.microsoft.com/library/system.net.httpwebrequest(v=vs.110).aspx)
-- [System .NET. WebClient](https://msdn.microsoft.com/library/system.net.webclient(v=vs.110).aspx)
-- [System .NET. WebRequest](https://msdn.microsoft.com/library/system.net.webrequest(v=vs.110).aspx)
+- [Описание HttpClient, HttpClientHandler и Вебрекуессандлер](/archive/blogs/henrikn/httpclient-httpclienthandler-and-webrequesthandler-explained)
+- [System.Net.HttpClient](/previous-versions/visualstudio/hh193681(v=vs.118))
+- [System .NET. HttpClientHandler](/previous-versions/visualstudio/hh138157(v=vs.118))
+- [System .NET. HttpMessageHandler](/previous-versions/visualstudio/hh138091(v=vs.118))
+- [System.Net.HttpWebRequest](/dotnet/api/system.net.httpwebrequest)
+- [System.Net.WebClient](/dotnet/api/system.net.webclient)
+- [System .NET. WebRequest](/dotnet/api/system.net.webrequest)
 - [Java. NET. Урлконнектион](https://developer.android.com/reference/java/net/URLConnection.html)
 - [Foundation. CFNetwork](xref:CoreFoundation.CFNetwork)
 - [Foundation. Нсурлконнектион](xref:Foundation.NSUrlConnection)
-- [System .NET. WebRequest](https://msdn.microsoft.com/library/system.net.webrequest(v=vs.110).aspx)
-- [HTTP-клиент (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/httpclient/)
+- [System .NET. WebRequest](/dotnet/api/system.net.webrequest)
+- [HTTP-клиент (пример)](/samples/xamarin/ios-samples/httpclient/)

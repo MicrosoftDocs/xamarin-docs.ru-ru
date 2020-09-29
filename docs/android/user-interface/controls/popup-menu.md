@@ -7,22 +7,22 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 07/31/2018
-ms.openlocfilehash: a5370cfb8a5c4950b361e5f58b253c63f4f1e240
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 5d445f84b7634895c59120e905daaf6fee403ac9
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73029181"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453612"
 ---
 # <a name="xamarinandroid-popup-menu"></a>Всплывающее меню Xamarin. Android
 
 [Всплывающее меню](xref:Android.Widget.PopupMenu) (также называемое _контекстным меню_) — это меню, привязанное к определенному представлению. В следующем примере одно действие содержит кнопку. Когда пользователь нажмет кнопку, отображается всплывающее меню из трех элементов:
 
-[![пример приложения с помощью кнопки и всплывающего меню с тремя элементами](popup-menu-images/01-app-example-sml.png)](popup-menu-images/01-app-example.png#lightbox)
+[![Пример приложения с кнопкой и всплывающим меню с тремя элементами](popup-menu-images/01-app-example-sml.png)](popup-menu-images/01-app-example.png#lightbox)
 
 ## <a name="creating-a-popup-menu"></a>Создание всплывающего меню
 
-Первый шаг — создать файл ресурсов меню и поместить его в меню **ресурсы** Например, следующий код XML является кодом для меню из трех элементов, отображаемого на предыдущем снимке экрана, **Resources/Menu/popup_menu. XML**:
+Первый шаг — создать файл ресурсов меню и поместить его в меню **ресурсы** Например, следующий код XML является кодом для меню из трех элементов, отображаемого на предыдущем снимке экрана, **Resources/Menu/popup_menu.xml**:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -36,9 +36,9 @@ ms.locfileid: "73029181"
 </menu>
 ```
 
-Затем создайте экземпляр `PopupMenu` и прикрепите его к представлению. При создании экземпляра `PopupMenu`вы передаете его конструктору ссылку на `Context`, а также к представлению, к которому будет присоединено меню. В результате всплывающее меню привязывается к этому представлению во время его создания.
+Затем создайте экземпляр `PopupMenu` и прикрепите его к представлению. При создании экземпляра `PopupMenu` вы передаете его конструктору ссылку на, а `Context` также представление, к которому будет присоединено меню. В результате всплывающее меню привязывается к этому представлению во время его создания.
 
-В следующем примере `PopupMenu` создается в обработчике событий Click для кнопки (с именем `showPopupMenu`). Эта кнопка также является представлением, к которому привязан `PopupMenu`, как показано в следующем примере кода:
+В следующем примере `PopupMenu` создается в обработчике события Click для кнопки (с именем `showPopupMenu` ). Эта кнопка также является представлением, к которому `PopupMenu` привязан объект, как показано в следующем примере кода:
 
 ```csharp
 showPopupMenu.Click += (s, arg) => {
@@ -58,7 +58,7 @@ showPopupMenu.Click += (s, arg) => {
 
 ## <a name="handling-menu-events"></a>Обработка событий меню
 
-Когда пользователь выбирает пункт меню, будет вызвано событие щелчка [MenuItemClick](xref:Android.Widget.PopupMenu.MenuItemClick) , и меню будет закрыто. Касание в любом месте вне меню просто откроет его. В любом случае при закрытии меню будет вызвано его [дисмиссевент](xref:Android.Widget.PopupMenu.Dismiss) . Следующий код добавляет обработчики событий для событий `MenuItemClick` и `DismissEvent`:
+Когда пользователь выбирает пункт меню, будет вызвано событие щелчка [MenuItemClick](xref:Android.Widget.PopupMenu.MenuItemClick) , и меню будет закрыто. Касание в любом месте вне меню просто откроет его. В любом случае при закрытии меню будет вызвано его [дисмиссевент](xref:Android.Widget.PopupMenu.Dismiss) . Следующий код добавляет обработчики событий для `MenuItemClick` `DismissEvent` событий и:
 
 ```csharp
 showPopupMenu.Click += (s, arg) => {
@@ -78,4 +78,4 @@ showPopupMenu.Click += (s, arg) => {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Попупменудемо (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/popupmenudemo)
+- [Попупменудемо (пример)](/samples/xamarin/monodroid-samples/popupmenudemo)

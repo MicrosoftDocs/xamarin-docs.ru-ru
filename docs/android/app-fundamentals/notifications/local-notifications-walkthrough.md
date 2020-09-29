@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 08/16/2018
-ms.openlocfilehash: 6d48d650b0900e71b7d3d4d5e1ff1ac919dcb948
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 09603fa86bce18c7cfdc141938267ee54710842c
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025548"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91455749"
 ---
 # <a name="walkthrough---using-local-notifications-in-xamarinandroid"></a>Пошаговое руководство. Использование локальных уведомлений в Xamarin. Android
 
@@ -24,7 +24,7 @@ _В этом пошаговом руководстве показано, как 
 
 На следующих снимках экрана показаны некоторые примеры этого приложения:
 
-[![пример снимков экрана с уведомлением](local-notifications-walkthrough-images/1-overview-sml.png)](local-notifications-walkthrough-images/1-overview.png#lightbox)
+[![Пример снимков экрана с уведомлением](local-notifications-walkthrough-images/1-overview-sml.png)](local-notifications-walkthrough-images/1-overview.png#lightbox)
 
 > [!NOTE]
 > В этом руководством основное внимание уделяется [интерфейсам API нотификатионкомпат](https://developer.android.com/reference/android/support/v4/app/NotificationCompat.html) из [библиотеки поддержки Android](https://www.nuget.org/packages/Xamarin.Android.Support.v4/). Эти API обеспечивают максимальную обратную совместимость с Android 4,0 (API уровня 14).
@@ -33,7 +33,7 @@ _В этом пошаговом руководстве показано, как 
 
 Для начала создадим новый проект Android с помощью шаблона **приложения Android** . Давайте назовем этот проект **локалнотификатионс**. (Если вы не знакомы с созданием проектов Xamarin. Android, см. раздел [Hello, Android](~/android/get-started/hello-android/hello-android-quickstart.md).)
 
-Измените файл ресурсов Files **/Strings. XML** , чтобы он содержал два дополнительных строковых ресурса, которые будут использоваться при создании канала уведомления:
+Измените значения в файле ресурсов **или Strings.xml** так, чтобы они содержали два дополнительных строковых ресурса, которые будут использоваться при создании канала уведомления:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -49,15 +49,15 @@ _В этом пошаговом руководстве показано, как 
 
 ### <a name="add-the-androidsupportv4-nuget-package"></a>Добавление пакета NuGet для Android. support. v4
 
-В этом пошаговом руководстве мы используем `NotificationCompat.Builder` для создания локального уведомления. Как описано в разделах [локальные уведомления](~/android/app-fundamentals/notifications/local-notifications.md), необходимо включить в проект [библиотеку поддержки Android v4](https://www.nuget.org/packages/Xamarin.Android.Support.v4/) для использования `NotificationCompat.Builder`.
+В этом пошаговом руководстве мы используем `NotificationCompat.Builder` для создания локального уведомления. Как описано в разделах [локальные уведомления](~/android/app-fundamentals/notifications/local-notifications.md), мы должны включить в наш проект [библиотеку поддержки Android версии 4](https://www.nuget.org/packages/Xamarin.Android.Support.v4/) (NuGet) `NotificationCompat.Builder` .
 
-Теперь измените **MainActivity.CS** и добавьте следующую инструкцию `using`, чтобы типы в `Android.Support.V4.App` были доступны для нашего кода:
+Теперь изменим **MainActivity.CS** и добавим следующую `using` инструкцию, чтобы типы в `Android.Support.V4.App` были доступны для нашего кода:
 
 ```csharp
 using Android.Support.V4.App;
 ```
 
-Кроме того, необходимо сделать так, чтобы компилятор использовал `Android.Support.V4.App` версию `TaskStackBuilder`, а не `Android.App`ную версию. Добавьте следующую инструкцию `using` для устранения неоднозначности:
+Кроме того, необходимо сделать так, чтобы компилятор использовал `Android.Support.V4.App` версию, `TaskStackBuilder` а не `Android.App` версию. Добавьте следующую `using` инструкцию для устранения неоднозначности:
 
 ```csharp
 using TaskStackBuilder = Android.Support.V4.App.TaskStackBuilder;
@@ -65,7 +65,7 @@ using TaskStackBuilder = Android.Support.V4.App.TaskStackBuilder;
 
 ### <a name="create-the-notification-channel"></a>Создание канала уведомления
 
-Затем добавьте метод в `MainActivity`, который создаст канал уведомления (при необходимости):
+Затем добавьте метод для `MainActivity` , который создаст канал уведомления (при необходимости):
 
 ```csharp
 void CreateNotificationChannel()
@@ -90,7 +90,7 @@ void CreateNotificationChannel()
 }
 ```
 
-Обновите метод `OnCreate`, чтобы вызвать этот новый метод:
+Обновите `OnCreate` метод, чтобы вызвать этот новый метод:
 
 ```csharp
 protected override void OnCreate(Bundle bundle)
@@ -104,7 +104,7 @@ protected override void OnCreate(Bundle bundle)
 
 ### <a name="define-the-notification-id"></a>Определение идентификатора уведомления
 
-Для наших уведомлений и каналов уведомлений потребуется уникальный идентификатор. Давайте изменим **MainActivity.CS** и добавим следующую переменную статического экземпляра в класс `MainActivity`:
+Для наших уведомлений и каналов уведомлений потребуется уникальный идентификатор. Давайте изменим **MainActivity.CS** и добавим в класс следующую переменную статического экземпляра `MainActivity` :
 
 ```csharp
 static readonly int NOTIFICATION_ID = 1000;
@@ -114,7 +114,7 @@ internal static readonly string COUNT_KEY = "count";
 
 ### <a name="add-code-to-generate-the-notification"></a>Добавление кода для создания уведомления
 
-Далее необходимо создать новый обработчик событий для кнопки `Click` событие. Добавьте следующий метод к `MainActivity`:
+Далее необходимо создать новый обработчик событий для `Click` события кнопки. Добавьте следующий метод к `MainActivity`:
 
 ```csharp
 void ButtonOnClick(object sender, EventArgs eventArgs)
@@ -155,7 +155,7 @@ void ButtonOnClick(object sender, EventArgs eventArgs)
 }
 ```
 
-Метод `OnCreate` MainActivity должен сделать вызов для создания канала уведомления и назначить метод `ButtonOnClick` для события `Click` кнопки (Замените обработчик событий делегата, предоставленный шаблоном):
+`OnCreate`Метод MainActivity должен сделать вызов для создания канала уведомления и назначить `ButtonOnClick` метод для `Click` события кнопки (Замените обработчик событий делегата, предоставленный шаблоном):
 
 ```csharp
 protected override void OnCreate(Bundle bundle)
@@ -229,37 +229,37 @@ namespace LocalNotifications
 
 ### <a name="add-a-notification-icon"></a>Добавить значок уведомления
 
-Наконец, добавьте маленький значок, который будет отображаться в области уведомлений при запуске уведомления. [Этот значок](local-notifications-walkthrough-images/ic-stat-button-click.png) можно скопировать в свой проект или создать собственный пользовательский значок. Назовите файл Icon **мф\_stat\_\_щелкните. png** и скопируйте его в папку **Resources/Draw** . Не забудьте использовать **добавление > существующий элемент...** , чтобы включить этот файл значка в проект.
+Наконец, добавьте маленький значок, который будет отображаться в области уведомлений при запуске уведомления. [Этот значок](local-notifications-walkthrough-images/ic-stat-button-click.png) можно скопировать в свой проект или создать собственный пользовательский значок. Присвойте **кнопке имя файл МФ \_ stat, \_ \_click.png** и скопируйте ее в папку **Resources/Draw** . Не забудьте использовать **добавление > существующий элемент...** , чтобы включить этот файл значка в проект.
 
 ### <a name="run-the-application"></a>Запуск приложения
 
-Выполните сборку и запуск приложения. Должно быть представлено первое действие, аналогичное следующему снимку экрана:
+Выполните сборку и запустите приложение. Должно быть представлено первое действие, аналогичное следующему снимку экрана:
 
-[снимок экрана первого действия![](local-notifications-walkthrough-images/2-start-screen-sml.png)](local-notifications-walkthrough-images/2-start-screen.png#lightbox)
+[![Снимок экрана первого действия](local-notifications-walkthrough-images/2-start-screen-sml.png)](local-notifications-walkthrough-images/2-start-screen.png#lightbox)
 
 При нажатии кнопки следует заметить, что в области уведомлений отображается маленький значок уведомления:
 
-[отображается значок уведомления![](local-notifications-walkthrough-images/3-notification-icon-sml.png)](local-notifications-walkthrough-images/3-notification-icon.png#lightbox)
+[![Отображается значок уведомления](local-notifications-walkthrough-images/3-notification-icon-sml.png)](local-notifications-walkthrough-images/3-notification-icon.png#lightbox)
 
 При прокрутке и предоставлении этого ящика уведомлений должно отобразиться следующее уведомление:
 
-[сообщение уведомления![](local-notifications-walkthrough-images/4-notifications-sml.png)](local-notifications-walkthrough-images/4-notifications.png#lightbox)
+[![Сообщение уведомления](local-notifications-walkthrough-images/4-notifications-sml.png)](local-notifications-walkthrough-images/4-notifications.png#lightbox)
 
-Если щелкнуть уведомление, оно должно исчезнуть, а наше другое действие должно быть запущено &ndash; выглядеть, как на следующем снимке экрана:
+Если щелкнуть уведомление, оно должно исчезнуть, а наше другое действие должно быть запущено, &ndash; как на следующем снимке экрана:
 
-[снимок экрана![второго действия](local-notifications-walkthrough-images/5-second-activity-sml.png)](local-notifications-walkthrough-images/5-second-activity.png#lightbox)
+[![Снимок экрана второго действия](local-notifications-walkthrough-images/5-second-activity-sml.png)](local-notifications-walkthrough-images/5-second-activity.png#lightbox)
 
 Поздравляем! На этом этапе вы завершили пошаговое руководство по локальному уведомлению Android, и у вас есть рабочий пример, на который можно ссылаться. Здесь больше больше уведомлений, чем показано здесь, поэтому если вы хотите получить дополнительные сведения, ознакомьтесь с [документацией Google по уведомлениям](https://developer.android.com/guide/topics/ui/notifiers/notifications.html).
 
 ## <a name="summary"></a>Сводка
 
-Это пошаговое руководство использовалось `NotificationCompat.Builder` для создания и вывода уведомлений. Он показал простой пример того, как запустить второе действие как способ реагирования на взаимодействие пользователя с уведомлением и продемонстрировать перенос данных из первого действия во второе действие.
+Это пошаговое руководство используется `NotificationCompat.Builder` для создания и вывода уведомлений. Он показал простой пример того, как запустить второе действие как способ реагирования на взаимодействие пользователя с уведомлением и продемонстрировать перенос данных из первого действия во второе действие.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Локалнотификатионс (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/localnotifications)
+- [Локалнотификатионс (пример)](/samples/xamarin/monodroid-samples/localnotifications)
 - [Каналы уведомлений Android Oreo](https://blog.xamarin.com/android-oreo-notification-channels/)
-- [Уведомлений](xref:Android.App.Notification)
+- [Уведомление](xref:Android.App.Notification)
 - [нотификатионманажер](xref:Android.App.NotificationManager)
 - [Нотификатионкомпат. Builder](https://developer.android.com/reference/android/support/v4/app/NotificationCompat.Builder.html)
-- [Pendingintents](xref:Android.App.PendingIntent)
+- [PendingIntent](xref:Android.App.PendingIntent)

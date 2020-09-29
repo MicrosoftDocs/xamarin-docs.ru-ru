@@ -6,12 +6,12 @@ ms.assetid: 5E2A3251-D17F-4F9C-9EA0-6321FEBE8577
 author: davidortinau
 ms.author: daortin
 ms.date: 03/29/2017
-ms.openlocfilehash: c74c4bedc040ef8f01222b12ee3e6cb99bf5355a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: d545daa10f9f771cd1708adf32569a49f6c4e709
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938909"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453510"
 ---
 # <a name="migrating-a-binding-to-the-unified-api"></a>Миграция привязки в Unified API
 
@@ -220,4 +220,4 @@ XMBindingLibrary.dll: AssemblyInfo.cs XMBindingLibrarySample.cs extras.cs libXMB
 - [32/64. рекомендации по разрядной платформе](~/cross-platform/macios/32-and-64/index.md)
 - [Обновление существующих приложений iOS](~/cross-platform/macios/unified/updating-ios-apps.md)
 - [Unified API](~/cross-platform/macios/unified/index.md)
-- [биндингсампле](https://docs.microsoft.com/samples/xamarin/ios-samples/bindingsample/)
+- [биндингсампле](/samples/xamarin/ios-samples/bindingsample/)
