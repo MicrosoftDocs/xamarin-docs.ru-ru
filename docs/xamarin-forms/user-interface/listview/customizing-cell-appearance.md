@@ -10,12 +10,12 @@ ms.date: 09/12/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 05a001d3b49f38b2cb5306d8a19a08b4f8392425
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: d3deb5631bd37e4081ebaa591a52adb09d9db274
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86935568"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560303"
 ---
 # <a name="customizing-listview-cell-appearance"></a>Настройка внешнего вида ячеек ListView
 
@@ -24,18 +24,18 @@ ms.locfileid: "86935568"
 Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Класс используется для представления прокручиваемых списков, которые можно настроить с помощью `ViewCell` элементов. `ViewCell`Элемент может отображать текст и изображения, указывать состояние true/false и принимать входные данные пользователя.
 
 ## <a name="built-in-cells"></a>Встроенные ячейки
-Xamarin.Formsпоставляется со встроенными ячейками, которые работают во многих приложениях:
+Xamarin.Forms поставляется со встроенными ячейками, которые работают во многих приложениях:
 
-- [`TextCell`](#textcell)элементы управления используются для отображения текста с необязательной второй строкой для подробного текста.
-- [`ImageCell`](#imagecell)элементы управления похожи на `TextCell` s, но включают изображение слева от текста.
-- `SwitchCell`элементы управления используются для представления и записи состояния "вкл./выкл" или "истина/ложь".
-- `EntryCell`элементы управления используются для представления текстовых данных, которые пользователь может изменять.
+- [`TextCell`](#textcell) элементы управления используются для отображения текста с необязательной второй строкой для подробного текста.
+- [`ImageCell`](#imagecell) элементы управления похожи на `TextCell` s, но включают изображение слева от текста.
+- `SwitchCell` элементы управления используются для представления и записи состояния "вкл./выкл" или "истина/ложь".
+- `EntryCell` элементы управления используются для представления текстовых данных, которые пользователь может изменять.
 
 [`SwitchCell`](~/xamarin-forms/user-interface/tableview.md#switchcell) [`EntryCell`](~/xamarin-forms/user-interface/tableview.md#entrycell) Элементы управления и чаще используются в контексте [`TableView`](~/xamarin-forms/user-interface/tableview.md) .
 
 ### <a name="textcell"></a>текстцелл
 
-[`TextCell`](xref:Xamarin.Forms.TextCell)ячейка для отображения текста, при необходимости со второй строкой в виде подробного текста. На следующем снимке экрана показаны `TextCell` элементы в iOS и Android:
+[`TextCell`](xref:Xamarin.Forms.TextCell) ячейка для отображения текста, при необходимости со второй строкой в виде подробного текста. На следующем снимке экрана показаны `TextCell` элементы в iOS и Android:
 
 ![Пример Текстцелл по умолчанию](customizing-cell-appearance-images/text-cell-default.png)
 
@@ -52,11 +52,11 @@ Xamarin.Formsпоставляется со встроенными ячейкам
 
 ### <a name="imagecell"></a>имажецелл
 
-[`ImageCell`](xref:Xamarin.Forms.ImageCell), например `TextCell` , может использоваться для отображения текста и дополнительного текста подробностей, а также обеспечивает высокую производительность, используя собственные элементы управления платформы. `ImageCell`отличается от `TextCell` в тем, что отображает изображение слева от текста.
+[`ImageCell`](xref:Xamarin.Forms.ImageCell), например `TextCell` , может использоваться для отображения текста и дополнительного текста подробностей, а также обеспечивает высокую производительность, используя собственные элементы управления платформы. `ImageCell` отличается от `TextCell` в тем, что отображает изображение слева от текста.
 
 На следующем снимке экрана показаны `ImageCell` элементы в iOS и Android: ![Пример Имажецелл по умолчанию](customizing-cell-appearance-images/image-cell-default.png "Пример Имажецелл по умолчанию")
 
-`ImageCell`полезен, если необходимо отобразить список данных с визуальным аспектом, например со списком контактов или фильмов. `ImageCell`можно настраивать, что позволяет задать следующие значения:
+`ImageCell` полезен, если необходимо отобразить список данных с визуальным аспектом, например со списком контактов или фильмов. `ImageCell`можно настраивать, что позволяет задать следующие значения:
 
 - `Text`&ndash;текст, отображаемый в первой строке крупным шрифтом
 - `Detail`&ndash;текст, отображаемый под первой строкой, с меньшим шрифтом
@@ -71,7 +71,7 @@ Xamarin.Formsпоставляется со встроенными ячейкам
 
 Все пользовательские ячейки должны быть производными от того [`ViewCell`](xref:Xamarin.Forms.ViewCell) же базового класса, который используется всеми встроенными типами ячеек.
 
-Xamarin.Formsпредлагает [поведение кэширования](~/xamarin-forms/user-interface/listview/performance.md#caching-strategy) для `ListView` элемента управления, которое может улучшить производительность прокрутки для некоторых типов пользовательских ячеек.
+Xamarin.Forms предлагает [поведение кэширования](~/xamarin-forms/user-interface/listview/performance.md#caching-strategy) для `ListView` элемента управления, которое может улучшить производительность прокрутки для некоторых типов пользовательских ячеек.
 
 На следующем снимке экрана показан пример пользовательской ячейки:
 
@@ -112,7 +112,7 @@ x:Class="demoListView.ImageCellPage">
 КОД XAML работает следующим образом:
 
 - Пользовательская ячейка вложена в объект `DataTemplate` , который находится внутри `ListView.ItemTemplate` . Это тот же процесс, что и при использовании любой встроенной ячейки.
-- `ViewCell`Тип пользовательской ячейки. Дочерний `DataTemplate` элемент элемента должен иметь класс или быть производным от `ViewCell` класса.
+- `ViewCell` Тип пользовательской ячейки. Дочерний `DataTemplate` элемент элемента должен иметь класс или быть производным от `ViewCell` класса.
 - Внутри `ViewCell` макет может управляться любым Xamarin.Forms макетом. В этом примере макет управляется `StackLayout` , что позволяет настроить цвет фона.
 
 > [!NOTE]
@@ -258,6 +258,6 @@ var listView = new ListView
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Встроенные ячейки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-builtincells)
-- [Пользовательские ячейки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-customcells)
-- [Контекст привязки изменен (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-bindingcontextchanged)
+- [Встроенные ячейки (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-builtincells)
+- [Пользовательские ячейки (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-customcells)
+- [Контекст привязки изменен (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-bindingcontextchanged)

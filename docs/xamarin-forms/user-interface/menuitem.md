@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsMenuItem
+title: Xamarin.Forms MenuItem
 description: Класс MenuItem используется для создания пунктов меню для меню, таких как контекстные меню элементов ListView и всплывающих меню приложения оболочки.
 ms.prod: xamarin
 ms.assetId: 62655C21-6053-466D-A7F4-DE2BE36538F5
@@ -10,14 +10,14 @@ ms.date: 08/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6b27f778a417a2bc0b458af4214ee8cb914fd93d
-ms.sourcegitcommit: 34fa3086c55b1e01838419c930f839c20662c362
+ms.openlocfilehash: 749e569e36896441c5b7cebbc4425d9c0e860e0b
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990858"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559640"
 ---
-# <a name="xamarinforms-menuitem"></a>Xamarin.FormsMenuItem
+# <a name="no-locxamarinforms-menuitem"></a>Xamarin.Forms MenuItem
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-menuitemdemos/)
 
@@ -27,10 +27,10 @@ Xamarin.Forms [`MenuItem`](xref:Xamarin.Forms.MenuItem) Класс опреде�
 
 [!["MenuItems в iOS и Android"](menuitem-images/menuitem-demo-cropped.png "MenuItems в iOS и Android")](menuitem-images/menuitem-demo-full.png#lightbox "Все MenuItems в iOS и Android Full Image")
 
-`MenuItem`Класс определяет следующие свойства:
+Класс `MenuItem` определяет следующие свойства:
 
-* [`Command`](xref:Xamarin.Forms.MenuItem.Command)— Это `ICommand` , которое позволяет привязать пользовательские действия, такие как касания пальца или щелчки, к командам, определенным в ViewModel.
-* [`CommandParameter`](xref:Xamarin.Forms.MenuItem.CommandParameter)Аргумент `object` , указывающий параметр, который должен быть передан в `Command` .
+* [`Command`](xref:Xamarin.Forms.MenuItem.Command) — Это `ICommand` , которое позволяет привязать пользовательские действия, такие как касания пальца или щелчки, к командам, определенным в ViewModel.
+* [`CommandParameter`](xref:Xamarin.Forms.MenuItem.CommandParameter) Аргумент `object` , указывающий параметр, который должен быть передан в `Command` .
 * [`IconImageSource`](xref:Xamarin.Forms.MenuItem.IconImageSource)`ImageSource`значение, определяющее значок вывода.
 * [`IsDestructive`](xref:Xamarin.Forms.MenuItem.IsDestructive)`bool`значение, указывающее, `MenuItem` удаляет ли связанный элемент пользовательского интерфейса из списка.
 * [`IsEnabled`](xref:Xamarin.Forms.MenuItem.IsEnabled)`bool`значение, указывающее, реагирует ли этот объект на вводимые пользователем данные.
@@ -40,7 +40,7 @@ Xamarin.Forms [`MenuItem`](xref:Xamarin.Forms.MenuItem) Класс опреде�
 
 ## <a name="create-a-menuitem"></a>Создание элемента меню
 
-`MenuItem`объекты можно использовать в контекстном меню `ListView` элементов объекта. Наиболее распространенным шаблоном является создание `MenuItem` объектов в `ViewCell` экземпляре, который используется в качестве `DataTemplate` объекта для `ListView` s `ItemTemplate` . Когда `ListView` объект заполняется, он создает каждый элемент с помощью `DataTemplate` , предоставляя `MenuItem` варианты при активации контекстного меню для элемента.
+`MenuItem` объекты можно использовать в контекстном меню `ListView` элементов объекта. Наиболее распространенным шаблоном является создание `MenuItem` объектов в `ViewCell` экземпляре, который используется в качестве `DataTemplate` объекта для `ListView` s `ItemTemplate` . Когда `ListView` объект заполняется, он создает каждый элемент с помощью `DataTemplate` , предоставляя `MenuItem` варианты при активации контекстного меню для элемента.
 
 В следующем примере показано `MenuItem` Создание экземпляра в контексте `ListView` объекта:
 
@@ -192,7 +192,7 @@ public MenuItemXamlMvvmPage()
 ## <a name="menuitem-icons"></a>Значки MenuItem
 
 > [!WARNING]
-> `MenuItem`на устройствах Android отображаются только значки. На других платформах будет отображаться только текст, заданный `Text` свойством.
+> `MenuItem` на устройствах Android отображаются только значки. На других платформах будет отображаться только текст, заданный `Text` свойством.
 
  Значки задаются с помощью `IconImageSource` Свойства. Если указан значок, то текст, заданный `Text` свойством, не будет отображаться. На следующем снимке экрана показан `MenuItem` значок со значком на Android:
 
@@ -263,5 +263,5 @@ public class MyViewModel : INotifyPropertyChanged
 
 ## <a name="related-links"></a>Связанные ссылки
 
-* [Демонстрации MenuItem](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-menuitemdemos/)
-* [Изображения вXamarin.Forms](~/xamarin-forms/user-interface/images.md)
+* [Демонстрации MenuItem](/samples/xamarin/xamarin-forms-samples/userinterface-menuitemdemos/)
+* [Изображения в Xamarin.Forms](~/xamarin-forms/user-interface/images.md)

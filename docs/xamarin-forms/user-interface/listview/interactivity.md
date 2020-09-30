@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 287b116d9ba2cb84e4e196fff080b8212e4eca3b
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: d665a80d6f1e0319fc9dc8696db379cf781ee833
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938415"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560121"
 ---
 # <a name="listview-interactivity"></a>Интерактивность ListView
 
@@ -27,13 +27,13 @@ Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Класс поддер�
 
 [`ListView`](xref:Xamarin.Forms.ListView)Режим выбора контролируется путем присвоения [`ListView.SelectionMode`](xref:Xamarin.Forms.ListView.SelectionMode) свойству значения [`ListViewSelectionMode`](xref:Xamarin.Forms.ListViewSelectionMode) перечисления.
 
-- [`Single`](xref:Xamarin.Forms.ListViewSelectionMode.Single)Указывает, что можно выбрать один элемент, при этом выделенный элемент выделяется. Это значение по умолчанию.
-- [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None)Указывает, что элементы не могут быть выбраны.
+- [`Single`](xref:Xamarin.Forms.ListViewSelectionMode.Single) Указывает, что можно выбрать один элемент, при этом выделенный элемент выделяется. Это значение по умолчанию.
+- [`None`](xref:Xamarin.Forms.ListViewSelectionMode.None) Указывает, что элементы не могут быть выбраны.
 
 Когда пользователь касается элемента, запускаются два события:
 
-- [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected)активируется при выборе нового элемента.
-- [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped)активируется при касании элемента.
+- [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) активируется при выборе нового элемента.
+- [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) активируется при касании элемента.
 
 Если коснуться одного и того же элемента дважды, будет срабатывать два [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) события, но будет запущено только одно [`ItemSelected`](xref:Xamarin.Forms.ListView.ItemSelected) событие.
 
@@ -76,7 +76,7 @@ var listView = new ListView { ... SelectionMode = ListViewSelectionMode.None };
 
 ### <a name="xaml"></a>XAML
 
-`MenuItem`элементы можно создавать в коллекции XAML. В XAML-коде ниже показана пользовательская ячейка с двумя реализованными контекстными действиями:
+`MenuItem` элементы можно создавать в коллекции XAML. В XAML-коде ниже показана пользовательская ячейка с двумя реализованными контекстными действиями:
 
 ```xaml
 <ListView x:Name="ContextDemoList">
@@ -187,14 +187,14 @@ listView.RefreshControlColor = Color.Red;
 
 ![Извлечение ListView для обновления завершено](interactivity-images/refresh-in-progress.png)
 
-[`ListView`](xref:Xamarin.Forms.ListView)запускает [`Refreshing`](xref:Xamarin.Forms.ListView.Refreshing) событие для запуска обновления, и [`IsRefreshing`](xref:Xamarin.Forms.ListView.IsRefreshing) свойство будет установлено в значение `true` . Любой код, необходимый для обновления содержимого, `ListView` должен затем выполняться обработчиком событий для `Refreshing` события или методом, выполняемым [`RefreshCommand`](xref:Xamarin.Forms.ListView.RefreshCommand) . После `ListView` обновления `IsRefreshing` свойство должно иметь значение `false` , или [`EndRefresh`](xref:Xamarin.Forms.ListView.EndRefresh) метод должен быть вызван, чтобы указать, что обновление завершено.
+[`ListView`](xref:Xamarin.Forms.ListView) запускает [`Refreshing`](xref:Xamarin.Forms.ListView.Refreshing) событие для запуска обновления, и [`IsRefreshing`](xref:Xamarin.Forms.ListView.IsRefreshing) свойство будет установлено в значение `true` . Любой код, необходимый для обновления содержимого, `ListView` должен затем выполняться обработчиком событий для `Refreshing` события или методом, выполняемым [`RefreshCommand`](xref:Xamarin.Forms.ListView.RefreshCommand) . После `ListView` обновления `IsRefreshing` свойство должно иметь значение `false` , или [`EndRefresh`](xref:Xamarin.Forms.ListView.EndRefresh) метод должен быть вызван, чтобы указать, что обновление завершено.
 
 > [!NOTE]
 > При определении [`RefreshCommand`](xref:Xamarin.Forms.ListView.RefreshCommand) `CanExecute` метода можно указать метод команды, чтобы включить или отключить команду.
 
 ## <a name="detect-scrolling"></a>Обнаружение прокрутки
 
-[`ListView`](xref:Xamarin.Forms.ListView)Определяет `Scrolled` событие, которое срабатывает для указания на то, что произошла прокрутка. В следующем примере XAML показан объект `ListView` , который задает обработчик событий для `Scrolled` события:
+[`ListView`](xref:Xamarin.Forms.ListView) Определяет `Scrolled` событие, которое срабатывает для указания на то, что произошла прокрутка. В следующем примере XAML показан объект `ListView` , который задает обработчик событий для `Scrolled` события:
 
 ```xaml
 <ListView Scrolled="OnListViewScrolled">
@@ -223,4 +223,4 @@ void OnListViewScrolled(object sender, ScrolledEventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Взаимодействие с ListView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-interactivity)
+- [Взаимодействие с ListView (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-interactivity)

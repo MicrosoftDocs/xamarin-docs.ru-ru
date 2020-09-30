@@ -10,12 +10,12 @@ ms.date: 01/05/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 878ebcaa5249261afac2776a9e7cf47c0c047135
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 43c8cd0dd7b50e3a5bfbd15d9858bd4502fedacc
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84130537"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91558782"
 ---
 # <a name="creating-xaml-markup-extensions"></a>Создание расширений разметки XAML
 
@@ -47,7 +47,7 @@ public interface IMarkupExtension<out T> : IMarkupExtension
 
 Поскольку `IMarkupExtension<T>` является производным от `IMarkupExtension` и включает `new` ключевое слово в `ProvideValue` , оно содержит оба `ProvideValue` метода.
 
-Очень часто расширения разметки XAML определяют свойства, которые вносят вклад в возвращаемое значение. (Очевидное исключение — `NullExtension` , в котором `ProvideValue` просто возвращается `null` .) `ProvideValue`Метод имеет единственный аргумент типа `IServiceProvider` , который будет рассмотрен далее в этой статье.
+Очень часто расширения разметки XAML определяют свойства, которые вносят вклад в возвращаемое значение. (Очевидное исключение — `NullExtension` , в котором `ProvideValue` просто возвращается `null` .) `ProvideValue` Метод имеет единственный аргумент типа `IServiceProvider` , который будет рассмотрен далее в этой статье.
 
 ## <a name="a-markup-extension-for-specifying-color"></a>Расширение разметки для указания цвета
 
@@ -156,7 +156,7 @@ class ImageResourceExtension : IMarkupExtension<ImageSource>
 }
 ```
 
-`ImageResourceExtension`полезен, когда XAML-файл должен получить доступ к файлу изображения, хранящемуся как внедренный ресурс в проекте библиотеки .NET Standard. `Source`Для вызова статического метода используется свойство `ImageSource.FromResource` . Для этого метода требуется полное имя ресурса, состоящее из имени сборки, имени папки и имени файла, разделенного точками. Второй аргумент `ImageSource.FromResource` метода предоставляет имя сборки и является обязательным только для сборок выпуска в UWP. Независимо от этого, он `ImageSource.FromResource` должен вызываться из сборки, содержащей точечный рисунок. Это означает, что это расширение ресурса XAML не может быть частью внешней библиотеки, если изображения также не находятся в этой библиотеке. (Дополнительные сведения о доступе к точечным рисункам, хранящимся в виде внедренных ресурсов, см. в статье [**внедренные изображения**](~/xamarin-forms/user-interface/images.md#embedded-images) .)
+`ImageResourceExtension` полезен, когда XAML-файл должен получить доступ к файлу изображения, хранящемуся как внедренный ресурс в проекте библиотеки .NET Standard. `Source`Для вызова статического метода используется свойство `ImageSource.FromResource` . Для этого метода требуется полное имя ресурса, состоящее из имени сборки, имени папки и имени файла, разделенного точками. Второй аргумент `ImageSource.FromResource` метода предоставляет имя сборки и является обязательным только для сборок выпуска в UWP. Независимо от этого, он `ImageSource.FromResource` должен вызываться из сборки, содержащей точечный рисунок. Это означает, что это расширение ресурса XAML не может быть частью внешней библиотеки, если изображения также не находятся в этой библиотеке. (Дополнительные сведения о доступе к точечным рисункам, хранящимся в виде внедренных ресурсов, см. в статье [**внедренные изображения**](~/xamarin-forms/user-interface/images.md#embedded-images) .)
 
 Хотя `ImageResourceExtension` требует `Source` установки свойства, `Source` свойство указывается в атрибуте как свойство Content класса. Это означает, что `Source=` часть выражения в фигурных скобках может быть опущена. В **демонстрационной странице ресурса изображения** элементы получают `Image` два изображения, используя имя папки и имя файла, разделенные точками:
 
@@ -206,5 +206,5 @@ class ImageResourceExtension : IMarkupExtension<ImageSource>
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Расширения разметки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
+- [Расширения разметки (пример)](/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
 - [Глава о расширениях разметки XAML из Xamarin.Forms книги](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter10.md)

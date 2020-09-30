@@ -480,7 +480,7 @@
         - name: Веб-средство проверки подлинности
           href: ~/essentials/web-authenticator.md?context=xamarin/android
         - name: Заметки о выпуске Xamarin.Essentials
-          href: 'https://docs.microsoft.com/xamarin/essentials/release-notes/'
+          href: /xamarin/essentials/release-notes/
         - name: Устранение неполадок
           href: ~/essentials/troubleshooting.md?context=xamarin/android
     - name: Данные и облачные службы
@@ -695,6 +695,6 @@
             - name: Упаковка
               href: wear/deploy-test/packaging.md
     - name: Заметки о выпуске
-      href: 'https://docs.microsoft.com/xamarin/android/release-notes/'
+      href: /xamarin/android/release-notes/
     - name: Примеры
       href: samples/index.md

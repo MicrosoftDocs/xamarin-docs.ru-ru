@@ -10,12 +10,12 @@ ms.date: 04/27/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4cad46bdee1b49c316947bc56bdb69a3b9e9a270
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 71df780c648bcaa5a2ca4db388b52ac77a64d158
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938220"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560550"
 ---
 # <a name="native-views-in-c"></a>Собственные представления в C\#
 
@@ -33,8 +33,8 @@ _На Xamarin.Forms страницы, созданные с помощью C#, �
 
 Возможность добавления в макет представлений для конкретной платформы Xamarin.Forms включена двумя методами расширения на каждой платформе:
 
-- `Add`— Добавляет специфическое для платформы представление в [`Children`](xref:Xamarin.Forms.Layout`1.Children) коллекцию макета.
-- `ToView`— принимает представление, зависящее от платформы, и заключает его в оболочку Xamarin.Forms [`View`](xref:Xamarin.Forms.View) , которое может быть задано как `Content` свойство элемента управления.
+- `Add` — Добавляет специфическое для платформы представление в [`Children`](xref:Xamarin.Forms.Layout`1.Children) коллекцию макета.
+- `ToView` — принимает представление, зависящее от платформы, и заключает его в оболочку Xamarin.Forms [`View`](xref:Xamarin.Forms.View) , которое может быть задано как `Content` свойство элемента управления.
 
 Использование этих методов в Xamarin.Forms общем проекте требует импорта соответствующего пространства имен для конкретной платформы Xamarin.Forms :
 
@@ -325,5 +325,5 @@ stackLayout.Children.Add(fixedControl, arrangeOverrideDelegate: (renderer, final
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Нативимбеддинг (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-nativeembedding)
+- [Нативимбеддинг (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-nativeembedding)
 - [Собственные формы](~/xamarin-forms/platform/native-forms.md)

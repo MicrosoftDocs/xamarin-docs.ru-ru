@@ -10,16 +10,16 @@ ms.date: 03/23/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2c271c3537c6e96497763c67c5b8128148191f16
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 78bd93e2f6556480ae7d2903771d7d6303dda148
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937362"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91558380"
 ---
 # <a name="native-views-in-xaml"></a>Собственные представления в XAML
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-nativeviews-nativeswitch)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-nativeviews-nativeswitch)
 
 _На собственные представления из iOS, Android и универсальная платформа Windows можно напрямую ссылаться из Xamarin.Forms файлов XAML. Свойства и обработчики событий могут быть установлены в собственных представлениях и могут взаимодействовать с Xamarin.Forms представлениями. В этой статье показано, как использовать собственные представления из Xamarin.Forms файлов XAML._
 
@@ -171,7 +171,7 @@ _На собственные представления из iOS, Android и у�
 
 [`Typeface.Create`](xref:Android.Graphics.Typeface.Create*)Метод Factory используется для присвоения [`TextView.Typeface`](xref:Android.Widget.TextView.Typeface) свойству нового [`Typeface`](xref:Android.Graphics.Typeface) в Android. `Typeface`Имя и стиль семейства задаются аргументами метода, которые являются дочерними по отношению к `x:Arguments` атрибуту.
 
-[`FontFamily`](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.fontfamily)Конструктор используется для присвоения [`TextBlock.FontFamily`](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.fontfamily) свойству нового значения `FontFamily` в универсальная платформа Windows (UWP). `FontFamily`Имя задается аргументом метода, который является дочерним по отношению к `x:Arguments` атрибуту.
+[`FontFamily`](/uwp/api/Windows.UI.Xaml.Media.FontFamily)Конструктор используется для присвоения [`TextBlock.FontFamily`](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) свойству нового значения `FontFamily` в универсальная платформа Windows (UWP). `FontFamily`Имя задается аргументом метода, который является дочерним по отношению к `x:Arguments` атрибуту.
 
 > [!NOTE]
 > Аргументы должны соответствовать типам, необходимым конструктору или фабричному методу.
@@ -466,9 +466,9 @@ class MySpinner : Spinner
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Нативесвитч (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-nativeviews-nativeswitch)
-- [Forms2Native (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/forms2native)
-- [Нативевиевинсидеконтентвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-nativeviews-nativeviewinsidecontentview)
-- [Субкласседнативеконтролс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-nativeviews-subclassednativecontrols)
+- [Нативесвитч (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-nativeviews-nativeswitch)
+- [Forms2Native (пример)](/samples/xamarin/xamarin-forms-samples/forms2native)
+- [Нативевиевинсидеконтентвиев (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-nativeviews-nativeviewinsidecontentview)
+- [Субкласседнативеконтролс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-nativeviews-subclassednativecontrols)
 - [Собственные формы](~/xamarin-forms/platform/native-forms.md)
 - [Передача аргументов в XAML](~/xamarin-forms/xaml/passing-arguments.md)

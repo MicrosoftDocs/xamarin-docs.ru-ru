@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsКонтакты карт
+title: Xamarin.Forms Контакты карт
 description: В этой статье объясняется, как создавать ПИН-коды на Xamarin.Forms карте.
 ms.prod: xamarin
 ms.assetid: F8FC081B-A811-4FBB-B8F8-30D6FD36BD40
@@ -10,14 +10,14 @@ ms.date: 10/23/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5e22888291a430863b8e45ee21d359a5acec750f
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 476ef1b8fd6c8e16c5fb3e5fdd1ac60eafd90b7c
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138441"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559848"
 ---
-# <a name="xamarinforms-map-pins"></a>Xamarin.FormsКонтакты карт
+# <a name="no-locxamarinforms-map-pins"></a>Xamarin.Forms Контакты карт
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
@@ -157,7 +157,7 @@ wharfPin.InfoWindowClicked += async (s, args) =>
 
 ## <a name="pin-types"></a>Типы ПИН-кодов
 
-[`Pin`](xref:Xamarin.Forms.Maps.Pin)объекты включают [`Type`](xref:Xamarin.Forms.Maps.Pin.Type) свойство типа [`PinType`](xref:Xamarin.Forms.Maps.PinType) , представляющее тип ПИН-кода. Перечисление `PinType` определяет следующие члены:
+[`Pin`](xref:Xamarin.Forms.Maps.Pin) объекты включают [`Type`](xref:Xamarin.Forms.Maps.Pin.Type) свойство типа [`PinType`](xref:Xamarin.Forms.Maps.PinType) , представляющее тип ПИН-кода. Перечисление `PinType` определяет следующие члены:
 
 - `Generic`представляет универсальный ПИН-код.
 - `Place`, представляет ПИН-код для места.
@@ -271,7 +271,7 @@ public class MapItemTemplateSelector : DataTemplateSelector
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Maps](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+- [Пример Maps](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 - [Преобразование пользовательского модуля подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/map-pin.md)
 - [Передача аргументов в XAML](~/xamarin-forms/xaml/passing-arguments.md)
 - [Создание Xamarin.Forms DataTemplateSelector](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md)

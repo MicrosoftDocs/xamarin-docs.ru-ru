@@ -1,5 +1,5 @@
 ---
-title: Xamarin.Formsв проектах Xamarin Native
+title: Xamarin.Forms в проектах Xamarin Native
 description: В этой статье объясняется, как использовать страницы, производные от ContentPage, которые непосредственно добавляются в собственные проекты Xamarin, и как осуществляется переход между ними.
 ms.prod: xamarin
 ms.assetid: f343fc21-dfb1-4364-a332-9da6705d36bc
@@ -10,14 +10,14 @@ ms.date: 08/19/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9fb741a03d1c8dd2a8754120d0b46567d8889a0b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e34144f253b19796ea6ec83cb3873fe373aeb914
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84132279"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560615"
 ---
-# <a name="xamarinforms-in-xamarin-native-projects"></a>Xamarin.Formsв проектах Xamarin Native
+# <a name="no-locxamarinforms-in-xamarin-native-projects"></a>Xamarin.Forms в проектах Xamarin Native
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/native2forms)
 
@@ -27,11 +27,11 @@ ms.locfileid: "84132279"
 
 1. Добавьте Xamarin.Forms пакет NuGet в собственный проект.
 1. Добавьте [`ContentPage`](xref:Xamarin.Forms.ContentPage) производную страницу и все зависимости в собственный проект.
-1. Вызовите метод `Forms.Init`.
+1. Вызовите метод `Forms.Init` .
 1. Создайте экземпляр страницы, производной от класса, [`ContentPage`](xref:Xamarin.Forms.ContentPage) и преобразуйте ее в соответствующий собственный тип с помощью одного из следующих методов расширения: `CreateViewController` для iOS, `CreateSupportFragment` для Android или `CreateFrameworkElement` для UWP.
 1. Перейдите к представлению собственного типа для [`ContentPage`](xref:Xamarin.Forms.ContentPage) страницы, производной от, с помощью собственного API навигации.
 
-Xamarin.Formsдолжен быть инициализирован путем вызова `Forms.Init` метода до того, как собственный проект может построить [`ContentPage`](xref:Xamarin.Forms.ContentPage) страницу, производную от. Выбор времени выполнения этого действия зависит от того, когда он наиболее удобен в потоке приложения — он может выполняться при запуске приложения или непосредственно перед созданием `ContentPage` страницы, производной от. В этой статье и прилагаемых примерах приложений `Forms.Init` метод вызывается при запуске приложения.
+Xamarin.Forms должен быть инициализирован путем вызова `Forms.Init` метода до того, как собственный проект может построить [`ContentPage`](xref:Xamarin.Forms.ContentPage) страницу, производную от. Выбор времени выполнения этого действия зависит от того, когда он наиболее удобен в потоке приложения — он может выполняться при запуске приложения или непосредственно перед созданием `ContentPage` страницы, производной от. В этой статье и прилагаемых примерах приложений `Forms.Init` метод вызывается при запуске приложения.
 
 > [!NOTE]
 > Решение примера приложения **нативеформс** не содержит Xamarin.Forms проектов. Вместо этого он состоит из проекта Xamarin. iOS, проекта Xamarin. Android и проекта UWP. Каждый проект является собственным проектом, который использует собственные формы для использования [`ContentPage`](xref:Xamarin.Forms.ContentPage) производных страниц. Однако нет причин, по которым собственные проекты не смогли использовать `ContentPage` производные страницы из проекта .NET Standard библиотеки или общего проекта.
@@ -80,7 +80,7 @@ public class AppDelegate : UIApplicationDelegate
 
 Метод `FinishedLaunching` выполняет следующие задачи:
 
-- Xamarin.Formsинициализируется путем вызова `Forms.Init` метода.
+- Xamarin.Forms инициализируется путем вызова `Forms.Init` метода.
 - Ссылка на `AppDelegate` класс хранится в `static` `Instance` поле. Это необходимо для предоставления другим классам механизма вызова методов, определенных в `AppDelegate` классе.
 - `UIWindow`Создается объект, который является основным контейнером для представлений в собственных приложениях iOS.
 - `FolderPath`Свойство инициализируется по пути на устройстве, где будут храниться данные о заметках.
@@ -181,7 +181,7 @@ public class MainActivity : AppCompatActivity
 
 Метод `OnCreate` выполняет следующие задачи:
 
-- Xamarin.Formsинициализируется путем вызова `Forms.Init` метода.
+- Xamarin.Forms инициализируется путем вызова `Forms.Init` метода.
 - Ссылка на `MainActivity` класс хранится в `static` `Instance` поле. Это необходимо для предоставления другим классам механизма вызова методов, определенных в `MainActivity` классе.
 - `Activity`Содержимое задается из ресурса макета. В примере приложения макет состоит из объекта `LinearLayout` , содержащего `Toolbar` , и, `FrameLayout` который будет использоваться в качестве контейнера фрагментов.
 - `Toolbar`Извлекается и устанавливается в качестве панели действий для, а также задается `Activity` заголовок панели действий.
@@ -278,7 +278,7 @@ protected override void OnActivityResult(int requestCode, Result resultCode, Int
 
 ## <a name="uwp"></a>UWP
 
-В платформе UWP собственный `App` класс обычно используется для выполнения задач, связанных с запуском приложения. Xamarin.Formsобычно инициализируется в Xamarin.Forms приложениях UWP в `OnLaunched` переопределении в собственном `App` классе для передачи `LaunchActivatedEventArgs` аргумента в `Forms.Init` метод. По этой причине собственные приложения UWP, использующие Xamarin.Forms [`ContentPage`](xref:Xamarin.Forms.ContentPage) производную страницу, могут наиболее просто вызывать `Forms.Init` метод из `App.OnLaunched` метода.
+В платформе UWP собственный `App` класс обычно используется для выполнения задач, связанных с запуском приложения. Xamarin.Forms обычно инициализируется в Xamarin.Forms приложениях UWP в `OnLaunched` переопределении в собственном `App` классе для передачи `LaunchActivatedEventArgs` аргумента в `Forms.Init` метод. По этой причине собственные приложения UWP, использующие Xamarin.Forms [`ContentPage`](xref:Xamarin.Forms.ContentPage) производную страницу, могут наиболее просто вызывать `Forms.Init` метод из `App.OnLaunched` метода.
 
 По умолчанию исходный `App` класс запускает `MainPage` класс в качестве первой страницы приложения. В следующем примере кода показан `MainPage` класс в примере приложения:
 
@@ -314,7 +314,7 @@ public sealed partial class MainPage : Page
 
 После `MainPage` выполнения конструктора будет отображен пользовательский интерфейс, определенный в Xamarin.Forms `NotesPage` классе, как показано на следующем снимке экрана:
 
-[![Снимок экрана приложения UWP, использующего пользовательский интерфейс, определенный с помощью Xamarin.Forms XAML](native-forms-images/uwp-notespage.png "Приложение UWP с [! Операцион. БЕЗ-LOC (Xamarin. Forms)] Пользовательский интерфейс XAML")](native-forms-images/uwp-notespage-large.png#lightbox "Приложение UWP с [! Операцион. БЕЗ-LOC (Xamarin. Forms)] Пользовательский интерфейс XAML")
+[![Снимок экрана приложения UWP, использующего пользовательский интерфейс, определенный с помощью::: No-Loc (Xamarin. Forms)::: XAML](native-forms-images/uwp-notespage.png "Приложение UWP с пользовательским интерфейсом::: No-Loc (Xamarin. Forms)::: XAML")](native-forms-images/uwp-notespage-large.png#lightbox "Приложение UWP с пользовательским интерфейсом::: No-Loc (Xamarin. Forms)::: XAML")
 
 При взаимодействии с пользовательским интерфейсом, например нажатием кнопки **+** [`Button`](xref:Xamarin.Forms.Button) , будет создан следующий обработчик событий в `NotesPage` коде программной части:
 
@@ -338,9 +338,9 @@ public void NavigateToNoteEntryPage(Note note)
 }
 ```
 
-Навигация в UWP обычно выполняется с помощью `Frame.Navigate` метода, который принимает `Page` аргумент. Xamarin.FormsОпределяет `Frame.Navigate` метод расширения, принимающий [`ContentPage`](xref:Xamarin.Forms.ContentPage) экземпляр страницы, производной от. Поэтому при `NavigateToNoteEntryPage` выполнении метода отображается пользовательский интерфейс, определенный в элементе Xamarin.Forms `NoteEntryPage` , как показано на следующем снимке экрана:
+Навигация в UWP обычно выполняется с помощью `Frame.Navigate` метода, который принимает `Page` аргумент. Xamarin.Forms Определяет `Frame.Navigate` метод расширения, принимающий [`ContentPage`](xref:Xamarin.Forms.ContentPage) экземпляр страницы, производной от. Поэтому при `NavigateToNoteEntryPage` выполнении метода отображается пользовательский интерфейс, определенный в элементе Xamarin.Forms `NoteEntryPage` , как показано на следующем снимке экрана:
 
-[![Снимок экрана приложения UWP, использующего пользовательский интерфейс, определенный с помощью Xamarin.Forms XAML](native-forms-images/uwp-noteentrypage.png "Приложение UWP с [! Операцион. БЕЗ-LOC (Xamarin. Forms)] Пользовательский интерфейс XAML")](native-forms-images/uwp-noteentrypage-large.png#lightbox "Приложение UWP с [! Операцион. БЕЗ-LOC (Xamarin. Forms)] Пользовательский интерфейс XAML")
+[![Снимок экрана приложения UWP, использующего пользовательский интерфейс, определенный с помощью::: No-Loc (Xamarin. Forms)::: XAML](native-forms-images/uwp-noteentrypage.png "Приложение UWP с пользовательским интерфейсом::: No-Loc (Xamarin. Forms)::: XAML")](native-forms-images/uwp-noteentrypage-large.png#lightbox "Приложение UWP с пользовательским интерфейсом::: No-Loc (Xamarin. Forms)::: XAML")
 
 Когда `NoteEntryPage` отобразится окно, коснитесь стрелки назад, `FrameworkElement` `NoteEntryPage` чтобы перейти из стека в приложении назад и вернуть пользователя к `FrameworkElement` `NotesPage` классу.
 
@@ -419,5 +419,5 @@ void OnNavigated(object sender, NavigationEventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Нативеформс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/native2forms)
+- [Нативеформс (пример)](/samples/xamarin/xamarin-forms-samples/native2forms)
 - [Собственные представления](~/xamarin-forms/platform/native-views/index.md)

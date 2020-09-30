@@ -1,6 +1,6 @@
 ---
-title: Стили устройств вXamarin.Forms
-description: Xamarin.Formsвключает в себя шесть динамических стилей, известных как стили устройств, в классе Device. styles. В этой статье объясняется, как использовать стили устройств в Xamarin.Forms приложении.
+title: Стили устройств в Xamarin.Forms
+description: Xamarin.Forms включает в себя шесть динамических стилей, известных как стили устройств, в классе Device. styles. В этой статье объясняется, как использовать стили устройств в Xamarin.Forms приложении.
 ms.prod: xamarin
 ms.assetid: 7FF19ED1-0822-4238-9435-AD970317A2F8
 ms.technology: xamarin-forms
@@ -10,18 +10,18 @@ ms.date: 02/17/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 04669479bb321da4fee6c45fd0f2c00deb5bbf1a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: b8665e5489da396cb9f7ef984c97fe79fda17434
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929731"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91558327"
 ---
-# <a name="device-styles-in-xamarinforms"></a>Стили устройств вXamarin.Forms
+# <a name="device-styles-in-no-locxamarinforms"></a>Стили устройств в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
 
-_Xamarin.Formsвключает в себя шесть динамических стилей, известных как стили устройств, в классе Device. styles._
+_Xamarin.Forms включает в себя шесть динамических стилей, известных как стили устройств, в классе Device. styles._
 
 Стили *устройств* :
 
@@ -130,8 +130,8 @@ public class DeviceStylesPageCS : ContentPage
 
 - [Стили текста](~/xamarin-forms/user-interface/text/styles.md)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/xaml-basics/xaml-markup-extensions.md)
-- [Динамические стили (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
-- [Работа со стилями (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithstyles)
+- [Динамические стили (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-styles-dynamicstyles)
+- [Работа со стилями (пример)](/samples/xamarin/xamarin-forms-samples/workingwithstyles)
 - [Device. Styles](xref:Xamarin.Forms.Device.Styles)
 - [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
 - [Style](xref:Xamarin.Forms.Style)

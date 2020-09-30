@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsРежима
+title: Xamarin.Forms Режима
 description: Это средство Xamarin.Forms позволяет пользователю выбрать числовое значение из диапазона значений. Он состоит из двух кнопок с знаками "минус" и "плюс". При манипуляции с двумя кнопками выбранное значение изменяется постепенно.
 ms.prod: xamarin
 ms.assetid: 62571B3E-D84B-4F52-9FC7-C105D6733B16
@@ -10,14 +10,14 @@ ms.date: 10/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4f071530fb17de44d8ede786ca1b42f5e11f4f7c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 390bca8cb74fd2da725724769956b164e0264173
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84130550"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91558762"
 ---
-# <a name="xamarinforms-stepper"></a>Xamarin.FormsРежима
+# <a name="no-locxamarinforms-stepper"></a>Xamarin.Forms Режима
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stepperdemos)
 
@@ -27,10 +27,10 @@ Xamarin.Forms [`Stepper`](xref:Xamarin.Forms.Stepper) Состоит из дву
 
 [`Stepper`](xref:Xamarin.Forms.Stepper)Определяет четыре свойства типа `double` :
 
-- [`Increment`](xref:Xamarin.Forms.Stepper.Increment)величина, на которую нужно изменить выбранное значение по умолчанию, равное 1.
-- [`Minimum`](xref:Xamarin.Forms.Stepper.Minimum)является минимумом диапазона и значением по умолчанию 0.
-- [`Maximum`](xref:Xamarin.Forms.Stepper.Maximum)Максимальное значение диапазона со значением по умолчанию 100.
-- [`Value`](xref:Xamarin.Forms.Stepper.Value)— Это значение средства Организации, которое может находиться в диапазоне от `Minimum` до до `Maximum` и имеет значение по умолчанию 0.
+- [`Increment`](xref:Xamarin.Forms.Stepper.Increment) величина, на которую нужно изменить выбранное значение по умолчанию, равное 1.
+- [`Minimum`](xref:Xamarin.Forms.Stepper.Minimum) является минимумом диапазона и значением по умолчанию 0.
+- [`Maximum`](xref:Xamarin.Forms.Stepper.Maximum) Максимальное значение диапазона со значением по умолчанию 100.
+- [`Value`](xref:Xamarin.Forms.Stepper.Value) — Это значение средства Организации, которое может находиться в диапазоне от `Minimum` до до `Maximum` и имеет значение по умолчанию 0.
 
 Все эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами. [`Value`](xref:Xamarin.Forms.Stepper.Value)Свойство имеет режим привязки по умолчанию [`BindingMode.TwoWay`](xref:Xamarin.Forms.BindingMode.TwoWay) , что означает, что он подходит как источник привязки в приложении, использующем архитектуру [Model-View-ViewModel (MVVM)](~/xamarin-forms/enterprise-application-patterns/mvvm.md) .
 
@@ -39,17 +39,17 @@ Xamarin.Forms [`Stepper`](xref:Xamarin.Forms.Stepper) Состоит из дву
 
 Объект [`Stepper`](xref:Xamarin.Forms.Stepper) приводит [`Value`](xref:Xamarin.Forms.Stepper.Value) свойство таким образом, чтобы оно было между [`Minimum`](xref:Xamarin.Forms.Stepper.Minimum) и [`Maximum`](xref:Xamarin.Forms.Stepper.Maximum) включительно. Если `Minimum` свойству присвоено значение, большее, чем `Value` свойство, `Stepper` `Value` свойство устанавливает для значения `Minimum` . Аналогично, если для параметра задано `Maximum` значение меньше `Value` , то `Stepper` для свойства задается `Value` `Maximum` .
 
-[`Stepper`](xref:Xamarin.Forms.Stepper)Определяет [`ValueChanged`](xref:Xamarin.Forms.Stepper.ValueChanged) событие, возникающее при изменении с [`Value`](xref:Xamarin.Forms.Stepper.Value) помощью пользовательской манипуляции `Stepper` или, когда приложение задает `Value` свойство напрямую. `ValueChanged`Событие также срабатывает при `Value` приведении свойства, как описано в предыдущем абзаце.
+[`Stepper`](xref:Xamarin.Forms.Stepper) Определяет [`ValueChanged`](xref:Xamarin.Forms.Stepper.ValueChanged) событие, возникающее при изменении с [`Value`](xref:Xamarin.Forms.Stepper.Value) помощью пользовательской манипуляции `Stepper` или, когда приложение задает `Value` свойство напрямую. `ValueChanged`Событие также срабатывает при `Value` приведении свойства, как описано в предыдущем абзаце.
 
 [`ValueChangedEventArgs`](xref:Xamarin.Forms.ValueChangedEventArgs)Объект, сопровождающий [`ValueChanged`](xref:Xamarin.Forms.Stepper.ValueChanged) событие, имеет два свойства типа `double` : [`OldValue`](xref:Xamarin.Forms.ValueChangedEventArgs.OldValue) и [`NewValue`](xref:Xamarin.Forms.ValueChangedEventArgs.NewValue) . Во время срабатывания события значение совпадает `NewValue` со [`Value`](xref:Xamarin.Forms.Stepper.Value) свойством [`Stepper`](xref:Xamarin.Forms.Stepper) объекта.
 
 ## <a name="basic-stepper-code-and-markup"></a>Базовый код и разметка для организации пошагового разметки
 
-Пример [**степпердемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stepperdemos) содержит три страницы, которые функционально идентичны, но реализуются различными способами. На первой странице используется только код C#, второй использует XAML с обработчиком событий в коде, а третья позволяет избежать обработчика событий с помощью привязки данных в файле XAML.
+Пример [**степпердемос**](/samples/xamarin/xamarin-forms-samples/userinterface-stepperdemos) содержит три страницы, которые функционально идентичны, но реализуются различными способами. На первой странице используется только код C#, второй использует XAML с обработчиком событий в коде, а третья позволяет избежать обработчика событий с помощью привязки данных в файле XAML.
 
 ### <a name="creating-a-stepper-in-code"></a>Создание средства организации пошагового режима в коде
 
-На странице " **базовый код для многошагового** руководства" в примере [**степпердемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stepperdemos) показано, как создать [`Stepper`](xref:Xamarin.Forms.Stepper) и два [`Label`](xref:Xamarin.Forms.Label) объекта в коде:
+На странице " **базовый код для многошагового** руководства" в примере [**степпердемос**](/samples/xamarin/xamarin-forms-samples/userinterface-stepperdemos) показано, как создать [`Stepper`](xref:Xamarin.Forms.Stepper) и два [`Label`](xref:Xamarin.Forms.Label) объекта в коде:
 
 ```csharp
 public class BasicStepperCodePage : ContentPage
@@ -99,7 +99,7 @@ public class BasicStepperCodePage : ContentPage
 
 [![Базовый код средства Организации](stepper-images/basic-stepper-code.png "Базовый код средства Организации")](stepper-images/basic-stepper-code-large.png#lightbox)
 
-Во втором [`Label`](xref:Xamarin.Forms.Label) выводится текст "(не инициализировано)" до тех пор [`Stepper`](xref:Xamarin.Forms.Stepper) , пока не будет выполнен манипуляций, что приводит к [`ValueChanged`](xref:Xamarin.Forms.Stepper.ValueChanged) срабатыванию первого события.
+Во втором [`Label`](xref:Xamarin.Forms.Label)  выводится текст "(не инициализировано)" до тех пор [`Stepper`](xref:Xamarin.Forms.Stepper) , пока не будет выполнен манипуляций, что приводит к [`ValueChanged`](xref:Xamarin.Forms.Stepper.ValueChanged) срабатыванию первого события.
 
 ### <a name="creating-a-stepper-in-xaml"></a>Создание средства организации пошагового режима в XAML
 
@@ -261,5 +261,5 @@ Stepper stepper = new Stepper
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример с демонстрацией пошагового использования](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stepperdemos)
+- [Пример с демонстрацией пошагового использования](/samples/xamarin/xamarin-forms-samples/userinterface-stepperdemos)
 - [API организации пошагового режима](xref:Xamarin.Forms.Stepper)

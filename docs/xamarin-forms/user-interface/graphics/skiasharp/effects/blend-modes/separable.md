@@ -10,12 +10,12 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c1939c30cbefdbf8d6546761a8c6ac7199bfff62
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 0fd934a305e34bb7406a0379a0882873e3400fe8
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139689"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91558366"
 ---
 # <a name="the-separable-blend-modes"></a>Режимы смешения отделяемых
 
@@ -153,18 +153,18 @@ public partial class LightenAndDarkenPage : ContentPage
 | Режим смешения   | Без изменения. | Операция |
 | ------------ | --------- | --------- |
 | `Plus`       | Черный     | Досветлить, добавив цвета: SC + DC |
-| `Modulate`   | White     | Затемнение путем умножения цветов: SC · Постоянный | 
+| `Modulate`   | Белый     | Затемнение путем умножения цветов: SC · Постоянный | 
 | `Screen`     | Черный     | Дополнение продукта к дополнением: SC + DC &ndash; SC · Постоянный |
-| `Overlay`    | Серый      | Обратная часть`HardLight` |
-| `Darken`     | White     | Минимальное число цветов: min (SC, DC) |
+| `Overlay`    | Серый      | Обратная часть `HardLight` |
+| `Darken`     | Белый     | Минимальное число цветов: min (SC, DC) |
 | `Lighten`    | Черный     | Максимум цветов: Max (SC, DC) |
 | `ColorDodge` | Черный     | Назначение яркости на основе источника |
-| `ColorBurn`  | White     | Затемнение места назначения на основе источника | 
+| `ColorBurn`  | Белый     | Затемнение места назначения на основе источника | 
 | `HardLight`  | Серый      | Аналогично результату Харша Spotlight |
 | `SoftLight`  | Серый      | Аналогично последствием мягкого прожектора | 
 | `Difference` | Черный     | Вычитает темную оттенок от более светлого: ABS (DC &ndash; SC) | 
 | `Exclusion`  | Черный     | Аналогично, `Difference` но с меньшим контрастом |
-| `Multiply`   | White     | Затемнение путем умножения цветов: SC · Постоянный |
+| `Multiply`   | Белый     | Затемнение путем умножения цветов: SC · Постоянный |
 
 Более подробные алгоритмы можно найти в спецификации W3C по [**компоновке и смешению 1**](https://www.w3.org/TR/compositing-1/) , а также в [**справочнике**](https://skia.org/user/api/SkBlendMode_Reference)по СКИА скблендмоде, хотя нотация в этих двух источниках не одинакова. Помните, что `Plus` обычно рассматривается как режим Портер-Дуфф Blend и `Modulate` не является частью спецификации W3C.
 
@@ -430,5 +430,5 @@ public class PrimaryColorsPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

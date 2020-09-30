@@ -10,12 +10,12 @@ ms.date: 12/13/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: be8dd5d29aebf29395885d650fbd28082013d0d1
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: dcf4e7ca0f081ff000aaa69d8be3a3cb3aa43e8e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929168"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560290"
 ---
 # <a name="listview-appearance"></a>Внешний вид ListView
 
@@ -55,7 +55,7 @@ public class PageTypeGroup : List<PageModel>
     }
 ```
 
-В приведенном выше коде `All` — это список, который будет передан в ListView в качестве источника привязки. `Title`и `ShortName` — это свойства, которые будут использоваться для заголовков групп.
+В приведенном выше коде `All` — это список, который будет передан в ListView в качестве источника привязки. `Title` и `ShortName` — это свойства, которые будут использоваться для заголовков групп.
 
 На этом этапе `All` является пустым списком. Добавьте статический конструктор, чтобы список был заполнен при запуске программы:
 
@@ -210,9 +210,9 @@ ListView HeaderList = new ListView()
 
 [`ListView`](xref:Xamarin.Forms.ListView)Класс имеет `HorizontalScrollBarVisibility` Свойства и `VerticalScrollBarVisibility` , которые получают или задают [`ScrollBarVisibility`](xref:Xamarin.Forms.ScrollBarVisibility) значение, представляющее, когда отображается горизонтальная или вертикальная полоса прокрутки. Для обоих свойств можно задать следующие значения:
 
-- [`Default`](xref:Xamarin.Forms.ScrollBarVisibility)Указывает поведение полосы прокрутки по умолчанию для платформы и является значением по умолчанию `HorizontalScrollBarVisibility` для `VerticalScrollBarVisibility` свойств и.
-- [`Always`](xref:Xamarin.Forms.ScrollBarVisibility)Указывает, что полосы прокрутки будут видимы, даже если содержимое умещается в представлении.
-- [`Never`](xref:Xamarin.Forms.ScrollBarVisibility)Указывает, что полосы прокрутки не будут видны, даже если содержимое не умещается в представлении.
+- [`Default`](xref:Xamarin.Forms.ScrollBarVisibility) Указывает поведение полосы прокрутки по умолчанию для платформы и является значением по умолчанию `HorizontalScrollBarVisibility` для `VerticalScrollBarVisibility` свойств и.
+- [`Always`](xref:Xamarin.Forms.ScrollBarVisibility) Указывает, что полосы прокрутки будут видимы, даже если содержимое умещается в представлении.
+- [`Never`](xref:Xamarin.Forms.ScrollBarVisibility) Указывает, что полосы прокрутки не будут видны, даже если содержимое не умещается в представлении.
 
 ## <a name="row-separators"></a>Разделители строк
 
@@ -341,8 +341,8 @@ void OnImageTapped (object sender, EventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Группирование (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-grouping)
-- [Настраиваемое представление модуля подготовки отчетов (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithlistviewnative)
-- [Динамическое изменение размера строк (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-dynamicunevenlistcells)
+- [Группирование (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-grouping)
+- [Настраиваемое представление модуля подготовки отчетов (пример)](/samples/xamarin/xamarin-forms-samples/workingwithlistviewnative)
+- [Динамическое изменение размера строк (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-dynamicunevenlistcells)
 - [Заметки о выпуске 1,4](https://forums.xamarin.com/discussion/35451/xamarin-forms-1-4-0-released/)
 - [Заметки о выпуске 1,3](https://forums.xamarin.com/discussion/29934/xamarin-forms-1-3-0-released/)

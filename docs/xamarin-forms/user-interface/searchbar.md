@@ -1,5 +1,5 @@
 ---
-title: Xamarin.Formsсеарчбар
+title: Xamarin.Forms сеарчбар
 description: Xamarin.FormsСеарчбар — это элемент управления вводом пользователя, который используется для запуска поиска. Элемент управления Сеарчбар поддерживает текст заполнителя, ввод запроса, выполнение и отмену. В этой статье объясняется, как использовать Сеарчбар в XAML и коде.
 ms.prod: xamarin
 ms.assetId: F5EFEA72-CB23-4DD6-9545-D9BB755AF3CB
@@ -10,16 +10,16 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a4c782f95db0f8e777494c47e9e668e9af67a2cc
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 3061692311811a360020041603bb8aca7af1b1f2
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87917770"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559276"
 ---
-# <a name="no-locxamarinforms-searchbar"></a>Xamarin.Formsсеарчбар
+# <a name="no-locxamarinforms-searchbar"></a>Xamarin.Forms сеарчбар
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)
 
 Xamarin.Forms [`SearchBar`](xref:Xamarin.Forms.SearchBar) — Это элемент управления вводом пользователя, используемый для запуска поиска. `SearchBar`Элемент управления поддерживает текст заполнителя, ввод запроса, выполнение поиска и отмену. На следующем снимке экрана показан `SearchBar` запрос с результатами, отображаемыми в `ListView` :
 
@@ -27,19 +27,19 @@ Xamarin.Forms [`SearchBar`](xref:Xamarin.Forms.SearchBar) — Это элеме�
 
 Класс `SearchBar` определяет следующие свойства:
 
-* [`CancelButtonColor`](xref:Xamarin.Forms.SearchBar.CancelButtonColor)значение типа `Color` , определяющее цвет кнопки отмены.
+* [`CancelButtonColor`](xref:Xamarin.Forms.SearchBar.CancelButtonColor) значение типа `Color` , определяющее цвет кнопки отмены.
 * `CharacterSpacing` с типом `double` представляет собой интервал между знаками текста `SearchBar`.
 * [`FontAttributes`](xref:Xamarin.Forms.SearchBar.FontAttributes)`FontAttributes`значение перечисления, которое определяет, является ли `SearchBar` шрифт полужирным, курсивом или ни тем ни другого.
-* [`FontFamily`](xref:Xamarin.Forms.SearchBar.FontFamily)значение типа `string` , определяющее семейство шрифтов, используемое `SearchBar` .
-* [`FontSize`](xref:Xamarin.Forms.SearchBar.FontSize)может быть `NamedSize` значением перечисления или `double` значением, представляющим определенные размеры шрифтов на разных платформах.
+* [`FontFamily`](xref:Xamarin.Forms.SearchBar.FontFamily) значение типа `string` , определяющее семейство шрифтов, используемое `SearchBar` .
+* [`FontSize`](xref:Xamarin.Forms.SearchBar.FontSize) может быть `NamedSize` значением перечисления или `double` значением, представляющим определенные размеры шрифтов на разных платформах.
 * [`HorizontalTextAlignment`](xref:Xamarin.Forms.SearchBar.HorizontalTextAlignment)`TextAlignment`значение перечисления, определяющее выравнивание текста запроса по горизонтали.
 * `VerticalTextAlignment``TextAlignment`значение перечисления, определяющее вертикальное выравнивание текста запроса.
-* [`Placeholder`](xref:Xamarin.Forms.InputView.Placeholder)значение `string` , определяющее текст заполнителя, например "Поиск...".
-* [`PlaceholderColor`](xref:Xamarin.Forms.InputView.PlaceholderColor)значение типа `Color` , определяющее цвет текста заполнителя.
-* [`SearchCommand`](xref:Xamarin.Forms.SearchBar.SearchCommand)— Это `ICommand` , которое позволяет привязать пользовательские действия, такие как касания пальца или щелчки, к командам, определенным в ViewModel.
-* [`SearchCommandParameter`](xref:Xamarin.Forms.SearchBar.SearchCommandParameter)Аргумент `object` , указывающий параметр, который должен быть передан в `SearchCommand` .
-* [`Text`](xref:Xamarin.Forms.InputView.Text)Объект, `string` содержащий текст запроса в `SearchBar` .
-* [`TextColor`](xref:Xamarin.Forms.InputView.TextColor)значение типа `Color` , определяющее цвет текста запроса.
+* [`Placeholder`](xref:Xamarin.Forms.InputView.Placeholder) значение `string` , определяющее текст заполнителя, например "Поиск...".
+* [`PlaceholderColor`](xref:Xamarin.Forms.InputView.PlaceholderColor) значение типа `Color` , определяющее цвет текста заполнителя.
+* [`SearchCommand`](xref:Xamarin.Forms.SearchBar.SearchCommand) — Это `ICommand` , которое позволяет привязать пользовательские действия, такие как касания пальца или щелчки, к командам, определенным в ViewModel.
+* [`SearchCommandParameter`](xref:Xamarin.Forms.SearchBar.SearchCommandParameter) Аргумент `object` , указывающий параметр, который должен быть передан в `SearchCommand` .
+* [`Text`](xref:Xamarin.Forms.InputView.Text) Объект, `string` содержащий текст запроса в `SearchBar` .
+* [`TextColor`](xref:Xamarin.Forms.InputView.TextColor) значение типа `Color` , определяющее цвет текста запроса.
 * `TextTransform``TextTransform`значение, определяющее регистр `SearchBar` текста.
 
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает `SearchBar` возможность настройки и назначения привязок данных. Указание свойств шрифта в `SearchBar` согласуется с настройкой текста в других [ Xamarin.Forms текстовых элементах управления](~/xamarin-forms/user-interface/text/index.md). Дополнительные сведения см. [в разделе Шрифты Xamarin.Forms в ](~/xamarin-forms/user-interface/text/fonts.md).
@@ -99,8 +99,8 @@ SearchBar searchBar = new SearchBar
 
 Поиск можно выполнить с помощью `SearchBar` элемента управления, присоединив обработчик событий к одному из следующих событий:
 
-* [`SearchButtonPressed`](xref:Xamarin.Forms.SearchBar.SearchButtonPressed)вызывается, когда пользователь либо нажимает кнопку поиска, либо нажимает клавишу ВВОД.
-* [`TextChanged`](xref:Xamarin.Forms.InputView.TextChanged)вызывается всякий раз, когда изменяется текст в поле запроса.
+* [`SearchButtonPressed`](xref:Xamarin.Forms.SearchBar.SearchButtonPressed) вызывается, когда пользователь либо нажимает кнопку поиска, либо нажимает клавишу ВВОД.
+* [`TextChanged`](xref:Xamarin.Forms.InputView.TextChanged) вызывается всякий раз, когда изменяется текст в поле запроса.
 
 В следующем примере показан обработчик событий, присоединенный к `TextChanged` событию в XAML и использующий `ListView` для отображения результатов поиска:
 
@@ -195,7 +195,7 @@ public class SearchViewModel : INotifyPropertyChanged
 
 ## <a name="related-links"></a>Связанные ссылки
 
-* [Демонстрации Сеарчбар](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)
-* [Xamarin.FormsТекстовые элементы управления](~/xamarin-forms/user-interface/text/index.md)
-* [Шрифты вXamarin.Forms](~/xamarin-forms/user-interface/text/fonts.md)
-* [Xamarin.FormsПривязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)
+* [Демонстрации Сеарчбар](/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)
+* [Xamarin.Forms Текстовые элементы управления](~/xamarin-forms/user-interface/text/index.md)
+* [Шрифты в Xamarin.Forms](~/xamarin-forms/user-interface/text/fonts.md)
+* [Xamarin.Forms Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)

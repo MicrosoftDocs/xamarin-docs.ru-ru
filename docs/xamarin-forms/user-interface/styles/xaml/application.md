@@ -1,5 +1,5 @@
 ---
-title: Глобальные стили вXamarin.Forms
+title: Глобальные стили в Xamarin.Forms
 description: Стили можно сделать доступными глобально, добавив их в словарь ресурсов приложения. Это помогает избежать дублирования стилей на страницах или в элементах управления.
 ms.prod: xamarin
 ms.assetid: BDC65F82-65E0-4C8E-BB91-8E340EB2D15A
@@ -10,14 +10,14 @@ ms.date: 02/17/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ae3759c1e111906b82596af80d4bdcffd5d23305
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 4b32c4b3ac4dea9dcdf52e3b9316f5f82aaad6ef
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938532"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91558340"
 ---
-# <a name="global-styles-in-xamarinforms"></a>Глобальные стили вXamarin.Forms
+# <a name="global-styles-in-no-locxamarinforms"></a>Глобальные стили в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
 
@@ -107,7 +107,7 @@ _Стили можно сделать доступными глобально, �
 
 ## <a name="create-a-global-style-in-c35"></a>Создание глобального стиля на языке C&#35;
 
-[`Style`](xref:Xamarin.Forms.Style)экземпляры можно добавить в [`Resources`](xref:Xamarin.Forms.VisualElement.Resources) коллекцию приложения в C#, создав новый объект [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) , а затем добавив `Style` экземпляры в `ResourceDictionary` , как показано в следующем примере кода:
+[`Style`](xref:Xamarin.Forms.Style) экземпляры можно добавить в [`Resources`](xref:Xamarin.Forms.VisualElement.Resources) коллекцию приложения в C#, создав новый объект [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) , а затем добавив `Style` экземпляры в `ResourceDictionary` , как показано в следующем примере кода:
 
 ```csharp
 public class App : Application
@@ -156,8 +156,8 @@ public class ApplicationStylesPageCS : ContentPage
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Расширения разметки XAML](~/xamarin-forms/xaml/xaml-basics/xaml-markup-extensions.md)
-- [Базовые стили (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
-- [Работа со стилями (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithstyles)
+- [Базовые стили (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
+- [Работа со стилями (пример)](/samples/xamarin/xamarin-forms-samples/workingwithstyles)
 - [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
 - [Style](xref:Xamarin.Forms.Style)
 - [Setter](xref:Xamarin.Forms.Setter)

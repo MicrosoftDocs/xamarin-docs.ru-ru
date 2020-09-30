@@ -1,5 +1,5 @@
 ---
-title: 'Xamarin.FormsФигуры: ломаная линия'
+title: 'Xamarin.Forms Фигуры: ломаная линия'
 description: Xamarin.FormsКласс ломаной линии может использоваться для рисования ряда Соединенных прямых линий.
 ms.prod: xamarin
 ms.assetid: 15D02690-AC03-457E-8815-8E4C17E4D642
@@ -10,18 +10,18 @@ ms.date: 06/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5b7e6404dec40814b800aef696afd058cafb69e5
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 3926e063fcabf9c70103e3ee72a4723358f26b2a
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918358"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91558873"
 ---
-# <a name="no-locxamarinforms-shapes-polyline"></a>Xamarin.FormsФигуры: ломаная линия
+# <a name="no-locxamarinforms-shapes-polyline"></a>Xamarin.Forms Фигуры: ломаная линия
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Polyline`Класс является производным от `Shape` класса и может использоваться для рисования ряда Соединенных прямых линий. Ломаная линия похожа на многоугольник, за исключением того, что последняя точка ломаной линии не соединена с первой точкой. Сведения о свойствах, которые `Polyline` класс наследует от `Shape` класса, см. в разделе [ Xamarin.Forms Shapes](index.md).
 
@@ -30,7 +30,7 @@ ms.locfileid: "87918358"
 - `Points`Тип `PointCollection` , представляющий собой коллекцию `Point` структур, описывающих точки вершин ломаной линии.
 - `FillRule`Тип `FillRule` , который определяет способ объединения пересекающихся областей в ломаной линии. Значение по умолчанию этого свойства равно `FillRule.EvenOdd`.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 `PointsCollection`Тип является типом объекта `ObservableCollection` [`Point`](xref:Xamarin.Forms.Point) . `Point`Структура определяет `X` и `Y` свойства типа `double` , представляющие пару координат x и y в двухмерном пространстве. Таким образом, `Points` свойству следует присвоить список пар координат x и y, описывающих точки вершин ломаной линии, разделенных одной запятой и/или одним или несколькими пробелами. Например, допустимыми являются значения 40, 10 70, 80 и 40 10, 70 80.
 
@@ -100,6 +100,6 @@ ms.locfileid: "87918358"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
-- [Xamarin.FormsМногоугольник](index.md)
-- [Xamarin.FormsФигуры: правила заливки](fillrules.md)
+- [Шапедемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+- [Xamarin.Forms Многоугольник](index.md)
+- [Xamarin.Forms Фигуры: правила заливки](fillrules.md)

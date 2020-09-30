@@ -10,12 +10,12 @@ ms.date: 02/26/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a15ca2e11dabb73054f5f0a1dc3f79342d8ce7f5
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 395536752fb0d581408d0b8f91ef623d926aeeb4
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938610"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559549"
 ---
 # <a name="setting-a-pickers-itemssource-property"></a>Задание свойства ItemsSource средства выбора
 
@@ -23,7 +23,7 @@ ms.locfileid: "86938610"
 
 _Представление выбора — это элемент управления для выбора текстового элемента из списка данных. В этой статье объясняется, как заполнить средство выбора данными, задав свойство ItemsSource, и как реагировать на выбор элементов пользователем._
 
-Xamarin.Forms2.3.4 улучшила [`Picker`](xref:Xamarin.Forms.Picker) представление, добавляя возможность заполнять его данными, задавая его [`ItemsSource`](xref:Xamarin.Forms.Picker.ItemsSource) свойство и извлекать выбранный элемент из [`SelectedItem`](xref:Xamarin.Forms.Picker.SelectedItem) Свойства. Кроме того, цвет текста для выбранного элемента можно изменить, задав [`TextColor`](xref:Xamarin.Forms.Picker.TextColor) свойству значение [`Color`](xref:Xamarin.Forms.Color) .
+Xamarin.Forms 2.3.4 улучшила [`Picker`](xref:Xamarin.Forms.Picker) представление, добавляя возможность заполнять его данными, задавая его [`ItemsSource`](xref:Xamarin.Forms.Picker.ItemsSource) свойство и извлекать выбранный элемент из [`SelectedItem`](xref:Xamarin.Forms.Picker.SelectedItem) Свойства. Кроме того, цвет текста для выбранного элемента можно изменить, задав [`TextColor`](xref:Xamarin.Forms.Picker.TextColor) свойству значение [`Color`](xref:Xamarin.Forms.Color) .
 
 ## <a name="populating-a-picker-with-data"></a>Заполнение средства выбора данными
 
@@ -185,7 +185,7 @@ detailsLabel.SetBinding(Label.TextProperty, "SelectedMonkey.Details");
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демонстрация средства выбора (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-pickerdemo)
-- [Приложение для обезьяны (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-monkeyapppicker)
-- [Средство выбора с возможностью привязки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-bindablepicker)
+- [Демонстрация средства выбора (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-pickerdemo)
+- [Приложение для обезьяны (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-monkeyapppicker)
+- [Средство выбора с возможностью привязки (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-bindablepicker)
 - [API средства выбора](xref:Xamarin.Forms.Picker)

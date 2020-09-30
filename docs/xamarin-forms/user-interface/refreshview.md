@@ -12,14 +12,14 @@ no-loc:
 - Xamarin.Essentials
 - RefreshView
 - Universal Windows Platform
-ms.openlocfilehash: 83802683aee722468acf9bcc827ba66f45c05e6b
-ms.sourcegitcommit: cd0c0999b53e825b60471bfbfd4144cfcd783587
+ms.openlocfilehash: aa71e486e81c62a39840e4db05f206c4cb20bacd
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86225485"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559315"
 ---
-# <a name="xamarinforms-refreshview"></a>Xamarin.Forms RefreshView
+# <a name="no-locxamarinforms-no-locrefreshview"></a>Xamarin.Forms RefreshView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-refreshviewdemo/)
 
@@ -32,12 +32,12 @@ ms.locfileid: "86225485"
 - `IsRefreshing`Тип `bool` , который указывает текущее состояние `RefreshView` .
 - `RefreshColor`Тип `Color` — Цвет круга хода выполнения, отображаемый во время обновления.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 > [!NOTE]
 > В Universal Windows Platform можно задать направление извлечения для `RefreshView` конкретной платформы. Дополнительные сведения см. в разделе [ RefreshView направление опроса](~/xamarin-forms/platform/windows/refreshview-pulldirection.md).
 
-## <a name="create-a-refreshview"></a>Создание класса RefreshView
+## <a name="create-a-no-locrefreshview"></a>Создание класса RefreshView
 
 В следующем примере показано, как создать экземпляр `RefreshView` в XAML:
 
@@ -79,12 +79,12 @@ refreshView.Content = scrollView;
 
 Когда пользователь инициирует обновление, `ICommand` `Command` выполняется свойство, определенное свойством, которое должно обновлять отображаемые элементы. Во время обновления отображается визуализация обновления, которая состоит из анимированного круга хода выполнения:
 
-[![Снимок экрана RefreshView обновления данных в iOS и Android](refreshview-images/default-progress-circle.png "[! Операцион. NO-LOC (Рефрешвиев)] обновление данных")](refreshview-images/default-progress-circle-large.png#lightbox "[! Операцион. NO-LOC (Рефрешвиев)] обновление данных")
+[![Снимок экрана::: No-Loc (Рефрешвиев)::: обновление данных в iOS и Android](refreshview-images/default-progress-circle.png "::: No-Loc (Рефрешвиев)::: обновление данных")](refreshview-images/default-progress-circle-large.png#lightbox "::: No-Loc (Рефрешвиев)::: обновление данных")
 
 > [!NOTE]
 > Ручное задание `IsRefreshing` для свойства значения `true` приведет к запуску визуализации обновления и будет выполнять объект, `ICommand` определенный `Command` свойством.
 
-## <a name="refreshview-appearance"></a>RefreshViewвнешний вид
+## <a name="no-locrefreshview-appearance"></a>RefreshView внешний вид
 
 В дополнение к свойствам, `RefreshView` унаследованным от [`VisualElement`](xref:Xamarin.Forms.VisualElement) класса, `RefreshView` также определяет `RefreshColor` свойство. Это свойство можно задать для определения цвета круга хода выполнения, отображаемого во время обновления:
 
@@ -95,14 +95,14 @@ refreshView.Content = scrollView;
 
 На следующем снимке экрана показан объект `RefreshView` с `RefreshColor` набором свойств.
 
-[![Снимок экрана RefreshView с синей окружностью хода выполнения на iOS и Android](refreshview-images/teal-progress-circle.png "[! Операцион. NO-LOC (Рефрешвиев)] с синей окружностью хода выполнения")](refreshview-images/teal-progress-circle-large.png#lightbox "[! Операцион. NO-LOC (Рефрешвиев)] с синей окружностью хода выполнения")
+[![Снимок экрана элемента::: No-Loc (Рефрешвиев)::: с синей окружностью хода выполнения в iOS и Android](refreshview-images/teal-progress-circle.png "::: No-Loc (Рефрешвиев)::. с синей окружностью хода выполнения")](refreshview-images/teal-progress-circle-large.png#lightbox "::: No-Loc (Рефрешвиев)::. с синей окружностью хода выполнения")
 
 Кроме того, `BackgroundColor` свойству может быть присвоено значение [`Color`](xref:Xamarin.Forms.Color) , представляющее цвет фона круга хода выполнения.
 
 > [!NOTE]
 > В iOS `BackgroundColor` свойство задает цвет фона `UIView` , который содержит круг хода выполнения.
 
-## <a name="disable-a-refreshview"></a>ОтключениеRefreshView
+## <a name="disable-a-no-locrefreshview"></a>Отключение RefreshView
 
 Приложение может ввести состояние, при котором операция Pull для обновления не является допустимой операцией. В таких случаях `RefreshView` можно отключить, задав `IsEnabled` свойству значение `false` . Это предотвратит возможность запуска запроса Pull для обновления пользователями.
 
@@ -110,6 +110,6 @@ refreshView.Content = scrollView;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [RefreshViewСледующий](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-refreshviewdemo/)
-- [Связываемые макеты вXamarin.Forms](~/xamarin-forms/user-interface/layouts/bindable-layouts.md)
-- [RefreshViewНаправление опроса — зависит от платформы](~/xamarin-forms/platform/windows/refreshview-pulldirection.md)
+- [RefreshView Следующий](/samples/xamarin/xamarin-forms-samples/userinterface-refreshviewdemo/)
+- [Связываемые макеты в Xamarin.Forms](~/xamarin-forms/user-interface/layouts/bindable-layouts.md)
+- [RefreshView Направление опроса — зависит от платформы](~/xamarin-forms/platform/windows/refreshview-pulldirection.md)

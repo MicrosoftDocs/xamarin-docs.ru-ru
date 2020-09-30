@@ -1,6 +1,6 @@
 ---
-title: 'Xamarin.FormsФигуры: геометрические объекты'
-description: Xamarin.Formsклассы Geometry позволяют описать геометрию двухмерной фигуры.
+title: 'Xamarin.Forms Фигуры: геометрические объекты'
+description: Xamarin.Forms классы Geometry позволяют описать геометрию двухмерной фигуры.
 ms.prod: xamarin
 ms.assetid: 07DE3D66-1820-4642-BDDF-84146D40C99D
 ms.technology: xamarin-forms
@@ -10,20 +10,20 @@ ms.date: 06/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 420099cadd3a541736084403265b9302c9a32b37
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: c6c6fb0ea9d3e2b728072fa36c3cdb2a86ade131
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918319"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559328"
 ---
-# <a name="no-locxamarinforms-shapes-geometries"></a>Xamarin.FormsФигуры: геометрические объекты
+# <a name="no-locxamarinforms-shapes-geometries"></a>Xamarin.Forms Фигуры: геометрические объекты
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
-`Geometry`Класс и классы, производные от него, позволяют описать геометрию двухмерной фигуры. `Geometry`объекты могут быть простыми, например прямоугольниками и круговыми, или составными, созданными из двух или более геометрических объектов. Кроме того, можно создать более сложные геометрические объекты, включающие дуги и кривые.
+`Geometry`Класс и классы, производные от него, позволяют описать геометрию двухмерной фигуры. `Geometry` объекты могут быть простыми, например прямоугольниками и круговыми, или составными, созданными из двух или более геометрических объектов. Кроме того, можно создать более сложные геометрические объекты, включающие дуги и кривые.
 
 `Geometry`Класс является родительским классом для нескольких классов, определяющих различные категории геометрических объектов:
 
@@ -56,7 +56,7 @@ ms.locfileid: "87918319"
 - `RadiusX`Тип `double` , представляющий значение x-радиуса геометрии. Значение этого свойства по умолчанию равно 0,0.
 - `RadiusY`Тип `double` , представляющий значение y-радиуса геометрии. Значение этого свойства по умолчанию равно 0,0.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 В следующем примере показано, как создать и отобразить `EllipseGeometry` `Path` объект в объекте.
 
@@ -85,7 +85,7 @@ ms.locfileid: "87918319"
 - `StartPoint`Тип [`Point`](xref:Xamarin.Forms.Point) , представляющий начальную точку линии.
 - `EndPoint`Тип [`Point`](xref:Xamarin.Forms.Point) , представляющий конечную точку линии.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 В следующем примере показано, как создать и визуализировать `LineGeometry` `Path` объект в объекте.
 
@@ -137,7 +137,7 @@ ms.locfileid: "87918319"
 - `Figures`Тип `PathFigureCollection` , который представляет коллекцию `PathFigure` объектов, описывающих содержимое пути.
 - `FillRule`Тип `FillRule` , который определяет, как объединяются пересекающиеся области, содержащиеся в геометрии. Значение по умолчанию этого свойства равно `FillRule.EvenOdd`.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 Дополнительные сведения о `FillRule` перечислении см. в разделе [ Xamarin.Forms фигуры: правила заливки](fillrules.md).
 
@@ -193,7 +193,7 @@ ms.locfileid: "87918319"
 - `SweepDirection`Тип `SweepDirection` , который указывает направление рисования дуги. Значение по умолчанию этого свойства равно `SweepDirection.CounterClockwise`.
 - `IsLargeArc`Тип `bool` , который указывает, должна ли дуга быть больше 180 градусов. Значение по умолчанию этого свойства равно `false`.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 > [!NOTE]
 > `ArcSegment`Класс не содержит свойство для начальной точки дуги. Он определяет только конечную точку дуги, которую он представляет. Начальная точка дуги — это текущая точка элемента, `PathFigure` к которому `ArcSegment` добавляется объект.
@@ -242,7 +242,7 @@ ms.locfileid: "87918319"
 - `Point2`Тип [`Point`](xref:Xamarin.Forms.Point) , представляющий вторую контрольную точку кривой. Значение этого свойства по умолчанию равно (0, 0).
 - `Point3`Тип [`Point`](xref:Xamarin.Forms.Point) , представляющий конечную точку кривой. Значение этого свойства по умолчанию равно (0, 0).
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 > [!NOTE]
 > `BezierSegment`Класс не содержит свойство для начальной точки кривой. Начальная точка кривой — это текущая точка элемента, `PathFigure` к которому `BezierSegment` добавляется объект.
@@ -431,7 +431,7 @@ ms.locfileid: "87918319"
 - `Point1`Тип [`Point`](xref:Xamarin.Forms.Point) , который представляет контрольную точку кривой. Значение этого свойства по умолчанию равно (0, 0).
 - `Point2`Тип [`Point`](xref:Xamarin.Forms.Point) , представляющий конечную точку кривой. Значение этого свойства по умолчанию равно (0, 0).
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 > [!NOTE]
 > `QuadraticBezierSegment`Класс не содержит свойство для начальной точки кривой. Начальная точка кривой — это текущая точка элемента, `PathFigure` к которому `QuadraticBezierSegment` добавляется объект.
@@ -560,7 +560,7 @@ ms.locfileid: "87918319"
 - `Children`Тип `GeometryCollection` , который виды цветов объекты, определяющие `GeomtryGroup` . Объект `GeometryCollection` является `ObservableCollection` набором `Geometry` объектов.
 - `FillRule`Тип `FillRule` , который определяет способ объединения пересекающихся областей в `GeometryGroup` . Значение по умолчанию этого свойства равно `FillRule.EvenOdd`.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 > [!NOTE]
 > `Children`Свойство является свойством `ContentProperty` `GeometryGroup` класса, поэтому его не нужно явно задавать из XAML.
@@ -630,6 +630,6 @@ ms.locfileid: "87918319"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
-- [Xamarin.FormsМногоугольник](index.md)
-- [Xamarin.FormsФигуры: правила заливки](fillrules.md)
+- [Шапедемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+- [Xamarin.Forms Многоугольник](index.md)
+- [Xamarin.Forms Фигуры: правила заливки](fillrules.md)

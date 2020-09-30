@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1bfd61e79a2b4697e884afb45e4b9080ee939b87
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 6e25654fb856935c119d731df5db3eaa2d501930
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136530"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560251"
 ---
 # <a name="visualelement-access-keys-on-windows"></a>Ключи доступа Висуалелемент в Windows
 
@@ -80,12 +80,12 @@ button4.On<Windows>()
 
 `VisualElement.On<Windows>`Метод указывает, что данная платформа будет запускаться только на универсальная платформа Windows. [ `VisualElement.SetAccessKey` ] (Xref: Xamarin.Forms . Платформконфигуратион. ВиндовсспеЦифик. Висуалелемент. Сетакцесскэй ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Windows, Xamarin.Forms . Висуалелемент}, System. String)) в [`Xamarin.Forms.PlatformConfiguration.WindowsSpecific`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific) пространстве имен используется для задания значения ключа доступа для `VisualElement` . [ `VisualElement.SetAccessKeyPlacement` ] (Xref: Xamarin.Forms . Платформконфигуратион. ВиндовсспеЦифик. Висуалелемент. Сетакцесскэйплацемент ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Windows, Xamarin.Forms . Висуалелемент}, Xamarin.Forms . Акцесскэйплацемент)) метод, при необходимости определяет, какую точку следует использовать для отображения подсказки ключа доступа, с [`AccessKeyPlacement`](xref:Xamarin.Forms.AccessKeyPlacement) перечислением, которое предоставляет следующие возможные значения:
 
-- [`Auto`](xref:Xamarin.Forms.AccessKeyPlacement.Auto)— Указывает, что размещение подсказки ключа доступа будет определяться операционной системой.
-- [`Top`](xref:Xamarin.Forms.AccessKeyPlacement.Top)— Указывает, что подсказка ключа доступа будет отображаться над верхней границей `VisualElement` .
-- [`Bottom`](xref:Xamarin.Forms.AccessKeyPlacement.Bottom)— Указывает, что подсказка ключа доступа будет отображаться под нижней границей `VisualElement` .
-- [`Right`](xref:Xamarin.Forms.AccessKeyPlacement.Right)— Указывает, что подсказка ключа доступа будет отображаться справа от правого края `VisualElement` .
-- [`Left`](xref:Xamarin.Forms.AccessKeyPlacement.Left)— Указывает, что подсказка ключа доступа будет отображаться слева от левого края `VisualElement` .
-- [`Center`](xref:Xamarin.Forms.AccessKeyPlacement.Center)— Указывает, что подсказка ключа доступа будет отмечена в центре `VisualElement` .
+- [`Auto`](xref:Xamarin.Forms.AccessKeyPlacement.Auto) — Указывает, что размещение подсказки ключа доступа будет определяться операционной системой.
+- [`Top`](xref:Xamarin.Forms.AccessKeyPlacement.Top) — Указывает, что подсказка ключа доступа будет отображаться над верхней границей `VisualElement` .
+- [`Bottom`](xref:Xamarin.Forms.AccessKeyPlacement.Bottom) — Указывает, что подсказка ключа доступа будет отображаться под нижней границей `VisualElement` .
+- [`Right`](xref:Xamarin.Forms.AccessKeyPlacement.Right) — Указывает, что подсказка ключа доступа будет отображаться справа от правого края `VisualElement` .
+- [`Left`](xref:Xamarin.Forms.AccessKeyPlacement.Left) — Указывает, что подсказка ключа доступа будет отображаться слева от левого края `VisualElement` .
+- [`Center`](xref:Xamarin.Forms.AccessKeyPlacement.Center) — Указывает, что подсказка ключа доступа будет отмечена в центре `VisualElement` .
 
 > [!NOTE]
 > Как правило, [`Auto`](xref:Xamarin.Forms.AccessKeyPlacement.Auto) достаточно разместить ключевую подсказку, которая включает поддержку адаптивных пользовательских интерфейсов.
@@ -107,6 +107,6 @@ button4.On<Windows>()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ВиндовсспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific)

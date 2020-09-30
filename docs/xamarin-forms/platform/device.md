@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsКласс устройства
+title: Xamarin.Forms Класс устройства
 description: В этой статье объясняется, как использовать Xamarin.Forms класс Device для детального контроля над функциональными возможностями и макетами на уровне отдельных платформ.
 ms.prod: xamarin
 ms.assetid: 2F304AEC-8612-4833-81E5-B2F3F469B2DF
@@ -10,16 +10,16 @@ ms.date: 07/20/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 38452ac477404d92468b7c9c4d2c88ce60104b50
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 8eff115e894f77aeacff0f6c072bfd338fa19844
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918021"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560511"
 ---
-# <a name="no-locxamarinforms-device-class"></a>Xamarin.FormsКласс устройства
+# <a name="no-locxamarinforms-device-class"></a>Xamarin.Forms Класс устройства
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithdevice)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithdevice)
 
 [`Device`](xref:Xamarin.Forms.Device)Класс содержит ряд свойств и методов, помогающих разработчикам настраивать макет и функциональность для отдельных платформ.
 
@@ -29,7 +29,7 @@ ms.locfileid: "87918021"
 
 До 2.3.4 платформа, в которой Xamarin.Forms было запущено приложение, может быть получена путем проверки [`Device.OS`](xref:Xamarin.Forms.Device.OS) Свойства и его сравнения со [`TargetPlatform.iOS`](xref:Xamarin.Forms.TargetPlatform.iOS) [`TargetPlatform.Android`](xref:Xamarin.Forms.TargetPlatform.Android) [`TargetPlatform.WinPhone`](xref:Xamarin.Forms.TargetPlatform.WinPhone) значениями перечисления,, и [`TargetPlatform.Windows`](xref:Xamarin.Forms.TargetPlatform.Windows) . Аналогично одной из [`Device.OnPlatform`](xref:Xamarin.Forms.Device.OnPlatform(System.Action,System.Action,System.Action,System.Action)) перегрузок можно использовать для предоставления для элемента управления значений, зависящих от платформы.
 
-Однако, поскольку Xamarin.Forms 2.3.4 эти API-интерфейсы являются устаревшими и замененными. [`Device`](xref:Xamarin.Forms.Device)Класс теперь содержит константы открытых строк, которые обозначают платформы: [`Device.iOS`](xref:Xamarin.Forms.Device.iOS) , [`Device.Android`](xref:Xamarin.Forms.Device.Android) , `Device.WinPhone` (не рекомендуется), `Device.WinRT` [`Device.UWP`](xref:Xamarin.Forms.Device.UWP) и [`Device.macOS`](xref:Xamarin.Forms.Device.macOS) . Аналогичным образом [`Device.OnPlatform`](xref:Xamarin.Forms.Device.OnPlatform(System.Action,System.Action,System.Action,System.Action)) перегрузки заменяются API- [`OnPlatform`](xref:Xamarin.Forms.OnPlatform`1) [`On`](xref:Xamarin.Forms.On) интерфейсами и.
+Однако, поскольку Xamarin.Forms 2.3.4 эти API-интерфейсы являются устаревшими и замененными. [`Device`](xref:Xamarin.Forms.Device)Класс теперь содержит константы открытых строк, которые обозначают платформы: [`Device.iOS`](xref:Xamarin.Forms.Device.iOS) , [`Device.Android`](xref:Xamarin.Forms.Device.Android) , `Device.WinPhone` (не рекомендуется), `Device.WinRT` [`Device.UWP`](xref:Xamarin.Forms.Device.UWP) и [`Device.macOS`](xref:Xamarin.Forms.Device.macOS) . Аналогичным образом  [`Device.OnPlatform`](xref:Xamarin.Forms.Device.OnPlatform(System.Action,System.Action,System.Action,System.Action)) перегрузки заменяются API- [`OnPlatform`](xref:Xamarin.Forms.OnPlatform`1) [`On`](xref:Xamarin.Forms.On) интерфейсами и.
 
 В C# значения, зависящие от платформы, можно предоставить, создав `switch` инструкцию для [`Device.RuntimePlatform`](xref:Xamarin.Forms.Device.RuntimePlatform) свойства, а затем предоставив `case` инструкции для требуемых платформ:
 
@@ -147,7 +147,7 @@ this.FlowDirection = Device.FlowDirection;
 
 ## <a name="devicegetnamedsize"></a>Device. Жетнамедсизе
 
-`GetNamedSize`может использоваться при задании [`FontSize`](~/xamarin-forms/user-interface/text/fonts.md) в коде C#:
+`GetNamedSize` может использоваться при задании [`FontSize`](~/xamarin-forms/user-interface/text/fonts.md) в коде C#:
 
 ```csharp
 myLabel.FontSize = Device.GetNamedSize (NamedSize.Small, myLabel);
@@ -160,7 +160,7 @@ someLabel.FontSize = Device.OnPlatform (
 
 ## <a name="devicegetnamedcolor"></a>Device.GetNamedColor
 
-Xamarin.Formsв 4,6 введена поддержка именованных цветов. Именованный цвет — это цвет, имеющий разное значение в зависимости от того, какой системный режим (например, светло-или темный) активен на устройстве. В Android доступ к именованным цветам осуществляется через класс [R. Color](https://developer.android.com/reference/android/R.color#constants_2) . В iOS именованные цвета называются [системными цветами](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/#system-colors). На универсальная платформа Windows именованные цвета называются [ресурсами темы XAML](/windows/uwp/design/controls-and-patterns/xaml-theme-resources).
+Xamarin.Forms в 4,6 введена поддержка именованных цветов. Именованный цвет — это цвет, имеющий разное значение в зависимости от того, какой системный режим (например, светло-или темный) активен на устройстве. В Android доступ к именованным цветам осуществляется через класс [R. Color](https://developer.android.com/reference/android/R.color#constants_2) . В iOS именованные цвета называются [системными цветами](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/#system-colors). На универсальная платформа Windows именованные цвета называются [ресурсами темы XAML](/windows/uwp/design/controls-and-patterns/xaml-theme-resources).
 
 `GetNamedColor`Метод можно использовать для получения именованных цветов в Android, iOS и UWP. Метод принимает `string` аргумент и возвращает [`Color`](xref:Xamarin.Forms.Color) :
 
@@ -169,14 +169,14 @@ Xamarin.Formsв 4,6 введена поддержка именованных ц�
 Color color = Device.GetNamedColor(NamedPlatformColor.HoloBlueBright);
 ```
 
-`Color.Default`будет возвращен, если не удается найти имя цвета или если `GetNamedColor` вызывается на неподдерживаемой платформе.
+`Color.Default` будет возвращен, если не удается найти имя цвета или если `GetNamedColor` вызывается на неподдерживаемой платформе.
 
 > [!NOTE]
 > Поскольку `GetNamedColor` метод возвращает объект `Color` , относящийся к платформе, он обычно следует использовать вместе со [`Device.RuntimePlatform`](xref:Xamarin.Forms.Device.RuntimePlatform) свойством.
 
 `NamedPlatformColor`Класс содержит константы, определяющие именованные цвета для Android, iOS и UWP:
 
-| Android | iOS | MacOS | UWP |
+| Android | iOS | macOS | UWP |
 | --- | --- | --- | --- |
 | `BackgroundDark` | `Label` | `AlternateSelectedControlTextColor` | `SystemAltHighColor` |
 | `BackgroundLight` | `Link` | `ControlAccent` | `SystemAltLowColor` |
@@ -273,6 +273,6 @@ Device.BeginInvokeOnMainThread (() =>
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример устройства](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithdevice)
-- [Пример стилей](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithstyles)
+- [Пример устройства](/samples/xamarin/xamarin-forms-samples/workingwithdevice)
+- [Пример стилей](/samples/xamarin/xamarin-forms-samples/workingwithstyles)
 - [API устройств](xref:Xamarin.Forms.Device)

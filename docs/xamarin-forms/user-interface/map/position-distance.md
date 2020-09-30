@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsРасположение и расстояние на карте
+title: Xamarin.Forms Расположение и расстояние на карте
 description: Объект Xamarin.Forms . Пространство имен Maps содержит структуру расположения, которая обычно используется при размещении карты и ее ПИН-кодов, а также структуры расстояния, которая при необходимости может использоваться при размещении карты.
 ms.prod: xamarin
 ms.assetid: 2F4EA3D2-1351-40AD-A71D-CF7F1F18F1E8
@@ -10,14 +10,14 @@ ms.date: 03/10/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2b1613789029d59e46a6d0431bfa9da1a53082e8
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 896b7f878e1ec9c3ed3c8324330c288220963e62
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138402"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559718"
 ---
-# <a name="xamarinforms-map-position-and-distance"></a>Xamarin.FormsРасположение и расстояние на карте
+# <a name="no-locxamarinforms-map-position-and-distance"></a>Xamarin.Forms Расположение и расстояние на карте
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
@@ -30,7 +30,7 @@ ms.locfileid: "84138402"
 - [`Latitude`](xref:Xamarin.Forms.Maps.Position.Latitude)Тип `double` , представляющий широту расположения в десятичных градусах.
 - [`Longitude`](xref:Xamarin.Forms.Maps.Position.Longitude)Тип `double` , представляющий долготу расположения в десятичных градусах.
 
-[`Position`](xref:Xamarin.Forms.Maps.Position)объекты создаются с помощью `Position` конструктора, для которого требуются аргументы широты и долготы, указанные в качестве `double` значений:
+[`Position`](xref:Xamarin.Forms.Maps.Position) объекты создаются с помощью `Position` конструктора, для которого требуются аргументы широты и долготы, указанные в качестве `double` значений:
 
 ```csharp
 Position position = new Position(36.9628066, -122.0194722);
@@ -41,7 +41,7 @@ Position position = new Position(36.9628066, -122.0194722);
 > [!NOTE]
 > `GeographyUtils`Класс имеет `ToRadians` метод расширения, который преобразует `double` значение из градусов в радианы и `ToDegrees` метод расширения, который преобразует `double` значение из радиан в градусы.
 
-## <a name="distance"></a>Distance
+## <a name="distance"></a>расстояние;
 
 [`Distance`](xref:Xamarin.Forms.Maps.Distance)Структура инкапсулирует расстояние `double` , хранящееся в виде значения, которое представляет расстояние в метрах. Эта структура определяет три свойства только для чтения:
 
@@ -49,7 +49,7 @@ Position position = new Position(36.9628066, -122.0194722);
 - [`Meters`](xref:Xamarin.Forms.Maps.Distance.Meters)Тип `double` , который представляет расстояние в метрах, занимаемое `Distance` .
 - [`Miles`](xref:Xamarin.Forms.Maps.Distance.Miles)Тип `double` , который представляет расстояние в милях, охваченное `Distance` .
 
-[`Distance`](xref:Xamarin.Forms.Maps.Distance)объекты можно создавать с помощью `Distance` конструктора, для чего требуется аргумент метрах, заданный как `double` :
+[`Distance`](xref:Xamarin.Forms.Maps.Distance) объекты можно создавать с помощью `Distance` конструктора, для чего требуется аргумент метрах, заданный как `double` :
 
 ```csharp
 Distance distance = new Distance(1450.5);
@@ -66,4 +66,4 @@ Distance distance4 = Distance.BetweenPositions(position1, position2);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Maps](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+- [Пример Maps](/samples/xamarin/xamarin-forms-samples/workingwithmaps)

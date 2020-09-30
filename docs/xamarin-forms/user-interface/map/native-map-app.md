@@ -1,5 +1,5 @@
 ---
-title: Запустите собственное приложение Map изXamarin.Forms
+title: Запустите собственное приложение Map из Xamarin.Forms
 description: Собственное приложение Maps на каждой платформе может быть запущено из Xamarin.Forms приложения с помощью Xamarin.Essentials класса Launcher.
 ms.prod: xamarin
 ms.assetid: 5CF7CD67-3F20-4D80-B99E-D35A5FD1019A
@@ -10,14 +10,14 @@ ms.date: 10/30/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c135d5dd02bba5102f5a93132f079526c84865d5
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: ede34258650c378a45ee694f90de1e8b249acf71
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84129342"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559887"
 ---
-# <a name="launch-the-native-map-app-from-xamarinforms"></a>Запустите собственное приложение Map изXamarin.Forms
+# <a name="launch-the-native-map-app-from-no-locxamarinforms"></a>Запустите собственное приложение Map из Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
@@ -80,7 +80,7 @@ else if (Device.RuntimePlatform == Device.UWP)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Maps](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+- [Пример Maps](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 - [Xamarin.Essentials](~/essentials/index.md?context=xamarin/xamarin-forms)
 - [Ссылки на карту](https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/MapLinks/MapLinks.html)
 - [Руководством для разработчиков карт](https://developer.android.com/guide/components/intents-common.html#Maps)

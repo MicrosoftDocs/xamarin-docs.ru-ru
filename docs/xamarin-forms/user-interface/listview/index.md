@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsЭлементе
+title: Xamarin.Forms Элементе
 description: В этом руководством представлен Xamarin.Forms список ListView, который можно использовать для представления данных в интерактивных списках.
 ms.prod: xamarin
 ms.assetid: FEFDF7E0-720F-4BD1-863F-4477226AA695
@@ -10,18 +10,18 @@ ms.date: 09/04/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a1ff8dd5c8a8a4051cea8ce4b288c42bdbaa8d31
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: fa3769d2533a5a6b482c92b832d54506e4954250
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139910"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560147"
 ---
-# <a name="xamarinforms-listview"></a>Xamarin.FormsЭлементе
+# <a name="no-locxamarinforms-listview"></a>Xamarin.Forms Элементе
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithlistview)
 
-[`ListView`](xref:Xamarin.Forms.ListView)представляет собой представление для представления списков данных, особенно длинных списков, требующих прокрутки.
+[`ListView`](xref:Xamarin.Forms.ListView) представляет собой представление для представления списков данных, особенно длинных списков, требующих прокрутки.
 
 > [!IMPORTANT]
 > Представление [`CollectionView`](xref:Xamarin.Forms.CollectionView) служит для вывода списков данных с различными спецификациями макета. Она нацелена на предоставление более гибкой и производительной альтернативы [`ListView`](xref:Xamarin.Forms.ListView) . Дополнительные сведения см. в разделе [Xamarin.Forms CollectionView](~/xamarin-forms/user-interface/collectionview/index.md).
@@ -83,10 +83,10 @@ ms.locfileid: "84139910"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Работа с ListView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithlistview)
-- [Двусторонняя привязка (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-switchentrytwobinding)
-- [Встроенные ячейки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-builtincells)
-- [Пользовательские ячейки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-customcells)
-- [Группирование (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-grouping)
-- [Настраиваемое представление модуля подготовки отчетов (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithlistviewnative/)
-- [Взаимодействие с ListView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-interactivity)
+- [Работа с ListView (пример)](/samples/xamarin/xamarin-forms-samples/workingwithlistview)
+- [Двусторонняя привязка (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-switchentrytwobinding)
+- [Встроенные ячейки (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-builtincells)
+- [Пользовательские ячейки (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-customcells)
+- [Группирование (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-grouping)
+- [Настраиваемое представление модуля подготовки отчетов (пример)](/samples/xamarin/xamarin-forms-samples/workingwithlistviewnative/)
+- [Взаимодействие с ListView (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-interactivity)

@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsMediaElement
+title: Xamarin.Forms MediaElement
 description: В этой статье объясняется, как использовать MediaElement для воспроизведения видео и аудио в Xamarin.Forms приложении.
 ms.prod: xamarin
 ms.assetid: e65f1e56-a80d-46c7-9ff4-7ae6650a3165
@@ -10,40 +10,40 @@ ms.date: 02/18/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4a8ca74fc12b59100cc60b72d3c2287cffadfd18
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: e868eccf446ab22879a66e6e507d810b7e0e13d7
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918117"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559770"
 ---
-# <a name="no-locxamarinforms-mediaelement"></a>Xamarin.FormsMediaElement
+# <a name="no-locxamarinforms-mediaelement"></a>Xamarin.Forms MediaElement
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
 
-[`MediaElement`](xref:Xamarin.Forms.MediaElement)— Это представление для воспроизведения видео и аудио. Носители, поддерживаемые базовой платформой, можно воспроизводить из следующих источников:
+[`MediaElement`](xref:Xamarin.Forms.MediaElement) — Это представление для воспроизведения видео и аудио. Носители, поддерживаемые базовой платформой, можно воспроизводить из следующих источников:
 
 - Веб-узел с использованием URI (HTTP или HTTPS).
 - Ресурс, внедренный в приложение платформы, с использованием `ms-appx:///` схемы URI.
 - Файлы, полученные из локальных и временных папок приложения с использованием `ms-appdata:///` схемы URI.
 - Библиотека устройства.
 
-[`MediaElement`](xref:Xamarin.Forms.MediaElement)может использовать элементы управления воспроизведением платформы, которые называются элементами управления транспортом. Однако по умолчанию они отключены и могут быть заменены собственными элементами управления транспорта. На следующих снимках экрана показано `MediaElement` Воспроизведение видео с помощью элементов управления транспортной платформы:
+[`MediaElement`](xref:Xamarin.Forms.MediaElement) может использовать элементы управления воспроизведением платформы, которые называются элементами управления транспортом. Однако по умолчанию они отключены и могут быть заменены собственными элементами управления транспорта. На следующих снимках экрана показано `MediaElement` Воспроизведение видео с помощью элементов управления транспортной платформы:
 
 [![Снимок экрана элемента MediaElement: воспроизведение видео в iOS и Android](mediaelement-images/playback-controls.png "Элемент MediaElement воспроизводит видео")](mediaelement-images/playback-controls-large.png#lightbox "Элемент MediaElement воспроизводит видео")
 
-[`MediaElement`](xref:Xamarin.Forms.MediaElement)доступна в Xamarin.Forms 4,5. Однако в настоящее время он экспериментальен и может использоваться только путем добавления следующей строки кода в файл *app.XAML.CS* :
+[`MediaElement`](xref:Xamarin.Forms.MediaElement) доступна в Xamarin.Forms 4,5. Однако в настоящее время он экспериментальен и может использоваться только путем добавления следующей строки кода в файл *app.XAML.CS* :
 
 ```csharp
 Device.SetFlags(new string[]{ "MediaElement_Experimental" });
 ```
 
 > [!NOTE]
-> [`MediaElement`](xref:Xamarin.Forms.MediaElement)доступен в iOS, Android, универсальная платформа Windows (UWP), macOS, Windows Presentation Foundation и Tizen.
+> [`MediaElement`](xref:Xamarin.Forms.MediaElement) доступен в iOS, Android, универсальная платформа Windows (UWP), macOS, Windows Presentation Foundation и Tizen.
 
-[`MediaElement`](xref:Xamarin.Forms.MediaElement)определяет следующие свойства:
+[`MediaElement`](xref:Xamarin.Forms.MediaElement) определяет следующие свойства:
 
 - [`Aspect`](xref:Xamarin.Forms.MediaElement.Aspect), типа [`Aspect`](xref:Xamarin.Forms.Aspect) определяет, как будет масштабироваться носитель в соответствии с отображаемой областью. Значение по умолчанию этого свойства равно `AspectFit`.
 - [`AutoPlay`](xref:Xamarin.Forms.MediaElement.AutoPlay)Тип `bool` — указывает, начнется ли воспроизведение мультимедиа автоматически при [`Source`](xref:Xamarin.Forms.MediaElement.Source) установке свойства. Значение по умолчанию этого свойства равно `true`.
@@ -64,10 +64,10 @@ Device.SetFlags(new string[]{ "MediaElement_Experimental" });
 
 [`MediaElement`](xref:Xamarin.Forms.MediaElement)Класс также определяет четыре события:
 
-- [`MediaOpened`](xref:Xamarin.Forms.MediaElement.MediaOpened)возникает при проверке и открытии потока мультимедиа.
-- [`MediaEnded`](xref:Xamarin.Forms.MediaElement.MediaEnded)срабатывает, когда `MediaElement` завершает воспроизведение носителя.
-- [`MediaFailed`](xref:Xamarin.Forms.MediaElement.MediaFailed)возникает при возникновении ошибки, связанной с источником мультимедиа.
-- [`SeekCompleted`](xref:Xamarin.Forms.MediaElement.SeekCompleted)возникает, когда точка поиска запрошенной операции поиска готова к воспроизведению.
+- [`MediaOpened`](xref:Xamarin.Forms.MediaElement.MediaOpened) возникает при проверке и открытии потока мультимедиа.
+- [`MediaEnded`](xref:Xamarin.Forms.MediaElement.MediaEnded) срабатывает, когда `MediaElement` завершает воспроизведение носителя.
+- [`MediaFailed`](xref:Xamarin.Forms.MediaElement.MediaFailed) возникает при возникновении ошибки, связанной с источником мультимедиа.
+- [`SeekCompleted`](xref:Xamarin.Forms.MediaElement.SeekCompleted) возникает, когда точка поиска запрошенной операции поиска готова к воспроизведению.
 
 Кроме того, [`MediaElement`](xref:Xamarin.Forms.MediaElement) включает [`Play`](xref:Xamarin.Forms.MediaElement.Play) [`Pause`](xref:Xamarin.Forms.MediaElement.Pause) методы, и [`Stop`](xref:Xamarin.Forms.MediaElement.Stop) .
 
@@ -84,7 +84,7 @@ Device.SetFlags(new string[]{ "MediaElement_Experimental" });
 
 По умолчанию носитель, определяемый [`Source`](xref:Xamarin.Forms.MediaElement.Source) свойством, воспроизводится сразу после открытия носителя. Чтобы отключить автоматическое воспроизведение мультимедиа, присвойте [`AutoPlay`](xref:Xamarin.Forms.MediaElement.AutoPlay) свойству значение `false` .
 
-Элементы управления воспроизведением мультимедиа по умолчанию отключены и включаются путем присвоения [`ShowsPlaybackControls`](xref:Xamarin.Forms.MediaElement.ShowsPlaybackControls) свойству значения `true` . [`MediaElement`](xref:Xamarin.Forms.MediaElement)затем будет использовать элементы управления воспроизведением платформы.
+Элементы управления воспроизведением мультимедиа по умолчанию отключены и включаются путем присвоения [`ShowsPlaybackControls`](xref:Xamarin.Forms.MediaElement.ShowsPlaybackControls) свойству значения `true` . [`MediaElement`](xref:Xamarin.Forms.MediaElement) затем будет использовать элементы управления воспроизведением платформы.
 
 ## <a name="play-local-media"></a>Воспроизвести локальный носитель
 
@@ -251,9 +251,9 @@ if (!string.IsNullOrWhiteSpace(filename))
 
 [`Aspect`](xref:Xamarin.Forms.MediaElement.Aspect)Свойство определяет способ масштабирования видео мультимедиа в соответствии с отображаемой областью. По умолчанию этому свойству присваивается `AspectFit` элемент перечисления, но его можно задать любому из [`Aspect`](xref:Xamarin.Forms.Aspect) членов перечисления:
 
-- `AspectFit`Указывает, что при необходимости видео будет леттербоксед, чтобы уместиться в области экрана, сохраняя пропорции.
-- `AspectFill`Указывает, что видео будет обрезано, чтобы заполнить область экрана, сохраняя пропорции.
-- `Fill`Указывает, что видео будет растянуто для заполнения отображаемой области.
+- `AspectFit` Указывает, что при необходимости видео будет леттербоксед, чтобы уместиться в области экрана, сохраняя пропорции.
+- `AspectFill` Указывает, что видео будет обрезано, чтобы заполнить область экрана, сохраняя пропорции.
+- `Fill` Указывает, что видео будет растянуто для заполнения отображаемой области.
 
 ## <a name="poll-for-position-data"></a>Опрос данных о положении
 
@@ -313,12 +313,12 @@ protected override void OnDisappearing()
 
 [`MediaElementState`](xref:Xamarin.Forms.MediaElementState)Перечисление определяет следующие члены:
 
-- `Closed`Указывает, что объект `MediaElement` не содержит носитель.
-- `Opening`Указывает, что `MediaElement` проверяется и пытается загрузить указанный источник.
-- `Buffering`Указывает, что `MediaElement` загружает носитель для воспроизведения. Его [`Position`](xref:Xamarin.Forms.MediaElement.Position) свойство не переходит в это состояние. Если `MediaElement` воспроизводилось видео, то будет отображаться последний отображаемый кадр.
-- `Playing`Указывает, что `MediaElement` воспроизводит источник мультимедиа.
-- `Paused`Указывает, что `MediaElement` свойство не выполняет продвижение его [`Position`](xref:Xamarin.Forms.MediaElement.Position) Свойства. Если `MediaElement` воспроизводилось видео, текущий кадр будет отображаться.
-- `Stopped`Указывает, что объект `MediaElement` содержит носитель, но не воспроизводится или приостанавливается. Его [`Position`](xref:Xamarin.Forms.MediaElement.Position) свойство равно 0 и не выполняется. Если загруженный носитель — видео, то `MediaElement` отображается первый кадр.
+- `Closed` Указывает, что объект `MediaElement` не содержит носитель.
+- `Opening` Указывает, что `MediaElement` проверяется и пытается загрузить указанный источник.
+- `Buffering` Указывает, что `MediaElement` загружает носитель для воспроизведения. Его [`Position`](xref:Xamarin.Forms.MediaElement.Position) свойство не переходит в это состояние. Если `MediaElement` воспроизводилось видео, то будет отображаться последний отображаемый кадр.
+- `Playing` Указывает, что `MediaElement` воспроизводит источник мультимедиа.
+- `Paused` Указывает, что `MediaElement` свойство не выполняет продвижение его [`Position`](xref:Xamarin.Forms.MediaElement.Position) Свойства. Если `MediaElement` воспроизводилось видео, текущий кадр будет отображаться.
+- `Stopped` Указывает, что объект `MediaElement` содержит носитель, но не воспроизводится или приостанавливается. Его [`Position`](xref:Xamarin.Forms.MediaElement.Position) свойство равно 0 и не выполняется. Если загруженный носитель — видео, то `MediaElement` отображается первый кадр.
 
 Обычно не требуется проверять [`CurrentState`](xref:Xamarin.Forms.MediaElement.CurrentState) свойство при использовании [`MediaElement`](xref:Xamarin.Forms.MediaElement) элементов управления транспорта. Однако это свойство очень важно при реализации собственных элементов управления транспортом.
 
@@ -377,7 +377,7 @@ protected override void OnDisappearing()
 </ContentPage>
 ```
 
-В этом примере пользовательские элементы управления транспортом определяются как [`Button`](xref:Xamarin.Forms.Button) объекты. Однако существует только два `Button` объекта, первый из `Button` которых представляет **Воспроизведение** и **приостановку**, а второй `Button` представляет **остановку**. [`DataTrigger`](xref:Xamarin.Forms.DataTrigger)объекты используются для включения и отключения кнопок, а также для переключения первой кнопки между **воспроизведением** и **паузой**. Дополнительные сведения о триггерах данных см. в разделе [ Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md).
+В этом примере пользовательские элементы управления транспортом определяются как [`Button`](xref:Xamarin.Forms.Button) объекты. Однако существует только два `Button` объекта, первый из `Button` которых представляет **Воспроизведение** и **приостановку**, а второй `Button` представляет **остановку**. [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) объекты используются для включения и отключения кнопок, а также для переключения первой кнопки между **воспроизведением** и **паузой**. Дополнительные сведения о триггерах данных см. в разделе [ Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md).
 
 Файл кода программной части содержит обработчики для [`Clicked`](xref:Xamarin.Forms.Button.Clicked) событий:
 
@@ -540,9 +540,9 @@ public class PositionSlider : Slider
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Медиаелементдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
+- [Медиаелементдемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
 - [Схемы URI](/windows/uwp/app-resources/uri-schemes)
 - [Триггеры Xamarin.Forms](~/xamarin-forms/app-fundamentals/triggers.md)
-- [Xamarin.FormsГруппу](~/xamarin-forms/user-interface/slider.md)
+- [Xamarin.Forms Группу](~/xamarin-forms/user-interface/slider.md)
 - [Android: Поддерживаемые форматы мультимедиа](https://developer.android.com/guide/topics/media/media-formats)
 - [UWP: Поддерживаемые кодеки](/windows/uwp/audio-video-camera/supported-codecs)

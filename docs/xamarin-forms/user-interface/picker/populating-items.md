@@ -10,12 +10,12 @@ ms.date: 02/26/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8872c6748ba778a2622d82803d580c781bd282cd
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: d65352022057ce32bd969950c2165ad530c05bbb
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139637"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91559627"
 ---
 # <a name="adding-data-to-a-pickers-items-collection"></a>Добавление данных в коллекцию элементов средства выбора
 
@@ -86,5 +86,5 @@ void OnPickerSelectedIndexChanged(object sender, EventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демонстрация средства выбора (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-pickerdemo)
+- [Демонстрация средства выбора (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-pickerdemo)
 - [Средство выбора](xref:Xamarin.Forms.Picker)

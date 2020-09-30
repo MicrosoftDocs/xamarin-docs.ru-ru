@@ -1,5 +1,5 @@
 ---
-title: 'Xamarin.FormsShapes: путь'
+title: 'Xamarin.Forms Shapes: путь'
 description: Xamarin.FormsКласс Path можно использовать для рисования кривых и сложных фигур.
 ms.prod: xamarin
 ms.assetid: B29486F4-9A5E-4588-ABDF-7EB1E69B9AE6
@@ -10,18 +10,18 @@ ms.date: 06/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 274ff08d7fffc1cd3a817906e14ebddfac2c9337
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 80b0bcd84602fc999764e7e0896a44f83401a9dd
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918256"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91558899"
 ---
-# <a name="no-locxamarinforms-shapes-path"></a>Xamarin.FormsShapes: путь
+# <a name="no-locxamarinforms-shapes-path"></a>Xamarin.Forms Shapes: путь
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Path`Класс является производным от `Shape` класса и может использоваться для рисования кривых и сложных фигур. Эти кривые и фигуры часто описываются с помощью `Geometry` объектов. Сведения о свойствах, которые `Path` класс наследует от `Shape` класса, см. в разделе [ Xamarin.Forms Shapes](index.md).
 
@@ -30,7 +30,7 @@ ms.locfileid: "87918256"
 - `Data`Тип `Geometry` , который указывает рисуемую фигуру.
 - `RenderTransform`Тип `Transform` , который представляет преобразование, применяемое к геометрии пути перед его прорисовкой.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 Дополнительные сведения о преобразованиях см. в разделе [ Xamarin.Forms преобразования пути](path-transforms.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "87918256"
       HorizontalOptions="Start" />
 ```
 
-`Data`Строка начинается с команды Move, обозначенной параметром `M` , который устанавливает абсолютную начальную точку для пути. `L`команда line, которая создает прямую линию от начальной точки до указанной конечной точки. `Z`Команда Close, которая создает линию, соединяющую текущую точку с начальной точкой. Результат представляет собой треугольник:
+`Data`Строка начинается с команды Move, обозначенной параметром `M` , который устанавливает абсолютную начальную точку для пути. `L` команда line, которая создает прямую линию от начальной точки до указанной конечной точки. `Z` Команда Close, которая создает линию, соединяющую текущую точку с начальной точкой. Результат представляет собой треугольник:
 
 ![Треугольник пути](path-images/triangle.png "Треугольник пути")
 
@@ -66,7 +66,7 @@ ms.locfileid: "87918256"
 
 Кривые и фигуры можно описать с помощью `Geometry` объектов, которые используются для задания `Path` `Data` свойства объекта. Существует множество `Geometry` объектов для выбора. `EllipseGeometry`Классы, `LineGeometry` и `RectangleGeometry` описывают относительно простые фигуры. Чтобы создать более сложные фигуры или создать кривые, используйте `PathGeometry` .
 
-`PathGeometry`объекты состоят из одного или нескольких `PathFigure` объектов. Каждый `PathFigure` объект представляет отдельную форму. Каждый `PathFigure` объект состоит из одного или нескольких `PathSegment` объектов, каждый из которых представляет часть фигуры соединения. Типы сегментов включают следующие `LineSegment` `BezierSegment` классы, и `ArcSegment` .
+`PathGeometry` объекты состоят из одного или нескольких `PathFigure` объектов. Каждый `PathFigure` объект представляет отдельную форму. Каждый `PathFigure` объект состоит из одного или нескольких `PathSegment` объектов, каждый из которых представляет часть фигуры соединения. Типы сегментов включают следующие `LineSegment` `BezierSegment` классы, и `ArcSegment` .
 
 В следующем примере XAML показано, как нарисовать треугольник с помощью `PathGeometry` объекта:
 
@@ -103,8 +103,8 @@ ms.locfileid: "87918256"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шапедемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
-- [Xamarin.FormsМногоугольник](index.md)
-- [Xamarin.FormsОбъекты](geometries.md)
-- [Xamarin.FormsСинтаксис разметки пути](path-markup-syntax.md)
-- [Xamarin.FormsПреобразования пути](path-transforms.md)
+- [Шапедемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+- [Xamarin.Forms Многоугольник](index.md)
+- [Xamarin.Forms Объекты](geometries.md)
+- [Xamarin.Forms Синтаксис разметки пути](path-markup-syntax.md)
+- [Xamarin.Forms Преобразования пути](path-transforms.md)

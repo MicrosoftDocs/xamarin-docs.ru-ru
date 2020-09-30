@@ -10,12 +10,12 @@ ms.date: 03/23/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1e5f3b6cb84081f5e167d9afe7e7f2f2dffce247
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: c77a219ab1b729aa279708d04610911fbbfe4e81
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938116"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560134"
 ---
 # <a name="listview-data-sources"></a>Источники данных ListView
 
@@ -67,7 +67,7 @@ listView.ItemsSource = new string[]
 
 Этот подход будет заполняться `ListView` списком строк. По умолчанию `ListView` будет вызывать `ToString` и отображать результат в `TextCell` каждой строке. Сведения о настройке отображения данных см. в разделе [внешний вид ячеек](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md).
 
-Поскольку объект был `ItemsSource` отправлен в массив, содержимое не будет обновляться при изменении базового списка или массива. Если необходимо, чтобы ListView автоматически подменялся при добавлении, удалении и изменении элементов в базовом списке, необходимо использовать `ObservableCollection` . [`ObservableCollection`](xref:System.Collections.ObjectModel.ObservableCollection`1)определен в `System.Collections.ObjectModel` и, как и `List` , за исключением того, что он может уведомлять о `ListView` любых изменениях:
+Поскольку объект был `ItemsSource` отправлен в массив, содержимое не будет обновляться при изменении базового списка или массива. Если необходимо, чтобы ListView автоматически подменялся при добавлении, удалении и изменении элементов в базовом списке, необходимо использовать `ObservableCollection` . [`ObservableCollection`](xref:System.Collections.ObjectModel.ObservableCollection`1) определен в `System.Collections.ObjectModel` и, как и `List` , за исключением того, что он может уведомлять о `ListView` любых изменениях:
 
 ```csharp
 ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
@@ -165,4 +165,4 @@ public EmployeeListPage()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Двусторонняя привязка (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-switchentrytwobinding)
+- [Двусторонняя привязка (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-listview-switchentrytwobinding)

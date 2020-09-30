@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsMap Control
+title: Xamarin.Forms Map Control
 description: Элемент управления картой представляет собой кросс-платформенное представление для отображения и аннотирования карт. Он использует собственный элемент управления картой для каждой платформы, обеспечивая быстрый и знакомый интерфейс карт для пользователей.
 ms.prod: xamarin
 ms.assetid: 22C99029-0B16-43A6-BF58-26B48C4AED38
@@ -10,14 +10,14 @@ ms.date: 05/20/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1aee81b6988e1f3a7099c2722b6f336f071ad8c0
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: df3189455102cedab232e0c629e63f65e242c9b5
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84946368"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560056"
 ---
-# <a name="xamarinforms-map-control"></a>Xamarin.FormsMap Control
+# <a name="no-locxamarinforms-map-control"></a>Xamarin.Forms Map Control
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
@@ -89,9 +89,9 @@ namespace WorkingWithMaps
 
 [`Map.MapType`](xref:Xamarin.Forms.Maps.Map.MapType)Свойство может быть задано для [`MapType`](xref:Xamarin.Forms.Maps.MapType) элемента перечисления, чтобы определить стиль отображения для схемы. Перечисление `MapType` определяет следующие члены:
 
-- `Street`Указывает, что будет отображаться улица.
-- `Satellite`Указывает, что будет отображена схема, содержащая сопутствующие изображения.
-- `Hybrid`Указывает, что будет отображено сочетание улицы и вспомогательных данных на карте.
+- `Street` Указывает, что будет отображаться улица.
+- `Satellite` Указывает, что будет отображена схема, содержащая сопутствующие изображения.
+- `Hybrid` Указывает, что будет отображено сочетание улицы и вспомогательных данных на карте.
 
 По умолчанию [`Map`](xref:Xamarin.Forms.Maps.Map) отображает карту улицы, если [`MapType`](xref:Xamarin.Forms.Maps.Map.MapType) свойство не определено. Кроме того, `MapType` свойству может быть присвоено одно из [`MapType`](xref:Xamarin.Forms.Maps.MapType) членов перечисления:
 
@@ -163,9 +163,9 @@ Map map = new Map(mapSpan);
 
 Кроме того, в классе есть три метода [`MapSpan`](xref:Xamarin.Forms.Maps.MapSpan) , которые возвращают новые `MapSpan` объекты:
 
-1. [`ClampLatitude`](xref:Xamarin.Forms.Maps.MapSpan.ClampLatitude*)Возвращает объект `MapSpan` с тем же, `LongitudeDegrees` что и экземпляр класса метода, и радиус, определенный его `north` `south` аргументами и.
-1. [`FromCenterAndRadius`](xref:Xamarin.Forms.Maps.MapSpan.FromCenterAndRadius*)Возвращает объект `MapSpan` , определяемый его [`Position`](xref:Xamarin.Forms.Maps.Position) [`Distance`](xref:Xamarin.Forms.Maps.Distance) аргументами и.
-1. [`WithZoom`](xref:Xamarin.Forms.Maps.MapSpan.WithZoom*)Возвращает объект `MapSpan` с тем же центром, что и экземпляр класса метода, но с радиусом, умноженным на `double` аргумент.
+1. [`ClampLatitude`](xref:Xamarin.Forms.Maps.MapSpan.ClampLatitude*) Возвращает объект `MapSpan` с тем же, `LongitudeDegrees` что и экземпляр класса метода, и радиус, определенный его `north` `south` аргументами и.
+1. [`FromCenterAndRadius`](xref:Xamarin.Forms.Maps.MapSpan.FromCenterAndRadius*) Возвращает объект `MapSpan` , определяемый его [`Position`](xref:Xamarin.Forms.Maps.Position) [`Distance`](xref:Xamarin.Forms.Maps.Distance) аргументами и.
+1. [`WithZoom`](xref:Xamarin.Forms.Maps.MapSpan.WithZoom*) Возвращает объект `MapSpan` с тем же центром, что и экземпляр класса метода, но с радиусом, умноженным на `double` аргумент.
 
 Сведения о [`Distance`](xref:Xamarin.Forms.Maps.Distance) структуре см. в разделе [Map Disposition and Distance](position-distance.md).
 
@@ -328,7 +328,7 @@ map.MapClicked += OnMapClicked;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Maps](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+- [Пример Maps](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 - [Расположение и расстояние на карте](position-distance.md)
 - [Настройка Xamarin.Forms схемы](~/xamarin-forms/app-fundamentals/custom-renderer/map-pin.md)
 - [Передача аргументов в XAML](~/xamarin-forms/xaml/passing-arguments.md)
