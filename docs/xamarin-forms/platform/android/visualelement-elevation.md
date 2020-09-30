@@ -8,14 +8,14 @@ author: davidbritch
 ms.author: dabritch
 ms.date: 07/10/2018
 no-loc:
-- ':::no-loc(Xamarin.Forms):::'
-- ':::no-loc(Xamarin.Essentials):::'
-ms.openlocfilehash: a721f51d3f59bc166a48f5cc3a3eec9712ace837
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+- Xamarin.Forms
+- Xamarin.Essentials
+ms.openlocfilehash: 7eb21f9a6a679c294a848d7fa79721c6db03bb0d
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86996686"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563228"
 ---
 # <a name="visualelement-elevation-on-android"></a>Повышение прав Висуалелемент в Android
 
@@ -25,7 +25,7 @@ ms.locfileid: "86996686"
 
 ```xaml
 <ContentPage ...
-             xmlns:android="clr-namespace::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific;assembly=:::no-loc(Xamarin.Forms):::.Core"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              Title="Elevation">
     <StackLayout>
         <Grid>
@@ -43,8 +43,8 @@ ms.locfileid: "86996686"
 Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
 
 ```csharp
-using :::no-loc(Xamarin.Forms):::.PlatformConfiguration;
-using :::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific;
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 ...
 
 public class AndroidElevationPageCS : ContentPage
@@ -82,15 +82,15 @@ public class AndroidElevationPageCS : ContentPage
 }
 ```
 
-`Button.On<Android>`Метод указывает, что эта платформа будет запускаться только в Android. `VisualElement.SetElevation`Метод в [`:::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific`](xref::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific) пространстве имен используется для установки повышения уровня визуального элемента до значения NULL `float` . Кроме того, `VisualElement.GetElevation` метод можно использовать для получения значения повышения прав визуального элемента.
+`Button.On<Android>`Метод указывает, что эта платформа будет запускаться только в Android. `VisualElement.SetElevation`Метод в [`Xamarin.Forms.PlatformConfiguration.AndroidSpecific`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространстве имен используется для установки повышения уровня визуального элемента до значения NULL `float` . Кроме того, `VisualElement.GetElevation` метод можно использовать для получения значения повышения прав визуального элемента.
 
-В результате повышение уровня визуальных элементов может быть управляемым, чтобы визуальные элементы с более высоким значением Z окклуде визуальные элементы с более низкими значениями Z. Таким образом, в этом примере вторая отображается [`Button`](xref::::no-loc(Xamarin.Forms):::.Button) над, [`BoxView`](xref::::no-loc(Xamarin.Forms):::.BoxView) так как имеет более высокое значение повышения прав:
+В результате повышение уровня визуальных элементов может быть управляемым, чтобы визуальные элементы с более высоким значением Z окклуде визуальные элементы с более низкими значениями Z. Таким образом, в этом примере вторая отображается [`Button`](xref:Xamarin.Forms.Button) над, [`BoxView`](xref:Xamarin.Forms.BoxView) так как имеет более высокое значение повышения прав:
 
 ![Снимок экрана Висуалелемент повышения прав](visualelement-elevation-images/elevation.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
-- [API АндроидспеЦифик](xref::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific)
-- [АндроидспеЦифик. AppCompat API](xref::::no-loc(Xamarin.Forms):::.PlatformConfiguration.AndroidSpecific.AppCompat)
+- [API АндроидспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific)
+- [АндроидспеЦифик. AppCompat API](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat)

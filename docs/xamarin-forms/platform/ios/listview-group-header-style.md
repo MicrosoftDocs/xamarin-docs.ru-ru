@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 46e8dec3d5644defdeb8a2265a73815adfde92d8
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: b8be4610a327fb9902d62efb061406bff16de484
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136040"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557482"
 ---
 # <a name="listview-group-header-style-on-ios"></a>Стиль заголовка группы ListView в iOS
 
@@ -46,8 +46,8 @@ listView.On<iOS>().SetGroupHeaderStyle(GroupHeaderStyle.Grouped);
 
 `ListView.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `ListView.SetGroupHeaderStyle`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, будут ли [`ListView`](xref:Xamarin.Forms.ListView) ячейки заголовка перемещаться во время прокрутки. `GroupHeaderStyle`Перечисление предоставляет два возможных значения:
 
-- `Plain`— Указывает, что ячейки заголовка имеют плавающее значение при [`ListView`](xref:Xamarin.Forms.ListView) прокрутке (по умолчанию).
-- `Grouped`— Указывает, что ячейки заголовка не перемещаются при [`ListView`](xref:Xamarin.Forms.ListView) прокрутке.
+- `Plain` — Указывает, что ячейки заголовка имеют плавающее значение при [`ListView`](xref:Xamarin.Forms.ListView) прокрутке (по умолчанию).
+- `Grouped` — Указывает, что ячейки заголовка не перемещаются при [`ListView`](xref:Xamarin.Forms.ListView) прокрутке.
 
 Кроме того, `ListView.GetGroupHeaderStyle` метод можно использовать для возврата объекта `GroupHeaderStyle` , который применяется к [`ListView`](xref:Xamarin.Forms.ListView) .
 
@@ -57,6 +57,6 @@ listView.On<iOS>().SetGroupHeaderStyle(GroupHeaderStyle.Grouped);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

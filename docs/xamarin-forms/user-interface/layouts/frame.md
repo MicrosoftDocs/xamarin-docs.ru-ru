@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsNOFRAMES
+title: Xamarin.Forms NOFRAMES
 description: Xamarin.FormsКласс Frame — это макет, используемый для создания оболочки представления или макета с границей, которая может быть настроена с помощью цвета, тени и других параметров.
 ms.prod: xamarin
 ms.assetId: 4E074714-0928-41C8-A468-B60E23236A8C
@@ -10,14 +10,14 @@ ms.date: 08/06/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 42192111befbefda7e0f62b7691a8392c2828818
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 8a14390afc04c1a0b2ccb5199350b69a9645a794
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137193"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563553"
 ---
-# <a name="xamarinforms-frame"></a>Xamarin.FormsNOFRAMES
+# <a name="no-locxamarinforms-frame"></a>Xamarin.Forms NOFRAMES
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-frame/)
 
@@ -27,7 +27,7 @@ Xamarin.Forms [`Frame`](xref:Xamarin.Forms.Frame) Класс является м
 
 [!["Примеры кадров в iOS и Android"](frame-images/frame-cropped.png)](frame-images/frame-full.png#lightbox "Примеры кадров в iOS и Android")
 
-`Frame`Класс определяет следующие свойства:
+Класс `Frame` определяет следующие свойства:
 
 * [`BorderColor`](xref:Xamarin.Forms.Frame.BorderColor)`Color`значение, определяющее цвет `Frame` границы.
 * [`CornerRadius`](xref:Xamarin.Forms.Frame.CornerRadius)`float`значение, определяющее закругленный радиус угла.
@@ -57,7 +57,7 @@ Frame defaultFrame = new Frame
 };
 ```
 
-`Frame`объекты можно настраивать с помощью скругленных углов, цветных границ и теней, задавая свойства в XAML. В следующем примере показан настраиваемый `Frame` объект:
+`Frame` объекты можно настраивать с помощью скругленных углов, цветных границ и теней, задавая свойства в XAML. В следующем примере показан настраиваемый `Frame` объект:
 
 ```xaml
 <Frame BorderColor="Orange"
@@ -196,5 +196,5 @@ Frame circleImageFrame = new Frame
 
 ## <a name="related-links"></a>Связанные ссылки
 
-* [Демонстрации кадров](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-frame/)
-* [Изображения вXamarin.Forms](~/xamarin-forms/user-interface/images.md)
+* [Демонстрации кадров](/samples/xamarin/xamarin-forms-samples/userinterface-frame/)
+* [Изображения в Xamarin.Forms](~/xamarin-forms/user-interface/images.md)

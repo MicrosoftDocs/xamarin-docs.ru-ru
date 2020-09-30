@@ -1,6 +1,6 @@
 ---
-title: Ускорение функций вXamarin.Forms
-description: Xamarin.Formsвключает класс замедления, позволяющий указать функцию передачи, которая управляет скоростью анимации или замедляется при их выполнении. В этой статье показано, как использовать предварительно определенные функции плавности и как создавать пользовательские функции плавности.
+title: Ускорение функций в Xamarin.Forms
+description: Xamarin.Forms включает класс замедления, позволяющий указать функцию передачи, которая управляет скоростью анимации или замедляется при их выполнении. В этой статье показано, как использовать предварительно определенные функции плавности и как создавать пользовательские функции плавности.
 ms.prod: xamarin
 ms.assetid: E6F124C7-A161-4C1F-AF40-52F0935E54DE
 ms.technology: xamarin-forms
@@ -10,18 +10,18 @@ ms.date: 07/14/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 574b6f82aea3c71d43799c6ca86997d895eed4c5
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 1769a1eb562d4ae0551598493afa9b04491a42d5
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84573811"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562799"
 ---
-# <a name="easing-functions-in-xamarinforms"></a>Ускорение функций вXamarin.Forms
+# <a name="easing-functions-in-no-locxamarinforms"></a>Ускорение функций в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-animation-easing)
 
-_Xamarin. Forms включает класс замедления, который позволяет указать функцию передачи, которая управляет скоростью анимации или замедляется при их выполнении. В этой статье показано, как использовать предварительно определенные функции плавности и как создавать пользовательские функции плавности._
+_Xamarin.Forms включает класс замедления, позволяющий указать функцию передачи, которая управляет скоростью анимации или замедляется при их выполнении. В этой статье показано, как использовать предварительно определенные функции плавности и как создавать пользовательские функции плавности._
 
 [`Easing`](xref:Xamarin.Forms.Easing)Класс определяет ряд функций плавности, которые могут использоваться анимациями:
 
@@ -105,11 +105,11 @@ await image.TranslateTo (0, 200, 2000, new Easing (t => 1 - Math.Cos (10 * Math.
 
 ## <a name="summary"></a>Сводка
 
-В этой статье показано, как использовать предварительно определенные функции плавности и как создавать пользовательские функции плавности. Xamarin.Formsвключает [`Easing`](xref:Xamarin.Forms.Easing) класс, который позволяет указать функцию передачи, которая управляет скоростью анимации или замедляется при их выполнении.
+В этой статье показано, как использовать предварительно определенные функции плавности и как создавать пользовательские функции плавности. Xamarin.Forms включает [`Easing`](xref:Xamarin.Forms.Easing) класс, который позволяет указать функцию передачи, которая управляет скоростью анимации или замедляется при их выполнении.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Общие сведения о поддержке асинхронного выполнения](~/cross-platform/platform/async.md)
-- [Функции плавности (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-animation-easing)
+- [Функции плавности (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-animation-easing)
 - [Медлен](xref:Xamarin.Forms.Easing)
 - [виевекстенсионс](xref:Xamarin.Forms.ViewExtensions)

@@ -10,12 +10,12 @@ ms.date: 06/16/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a4bb6c30ada13691146d00d2094df8f13ca453b9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 604d2aa8368c85b852530f999601fffca8e104e6
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84140261"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562929"
 ---
 # <a name="clipping-with-paths-and-regions"></a>Обрезка изображения по границам области с помощью путей
 
@@ -173,9 +173,9 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 [`SKClipOperation`](xref:SkiaSharp.SKClipOperation)Перечисление имеет только два члена:
 
-- `Difference`Удаляет указанный путь или прямоугольник из существующей области обрезки
+- `Difference` Удаляет указанный путь или прямоугольник из существующей области обрезки
 
-- `Intersect`пересекает указанный путь или прямоугольник с существующей областью отсечения
+- `Intersect` пересекает указанный путь или прямоугольник с существующей областью отсечения
 
 Если заменить четыре `SKClipOperation.Intersect` аргумента в классе на `FourCircleIntersectClipPage` `SKClipOperation.Difference` , вы увидите следующее:
 
@@ -515,5 +515,5 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

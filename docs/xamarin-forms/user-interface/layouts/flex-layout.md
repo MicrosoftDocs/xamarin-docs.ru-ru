@@ -11,14 +11,14 @@ ms.date: 05/07/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 518bf97be3dd9d906d574b15434b0bfa67612516
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 88f89e3d17c693c48176a45605b036f56599ee6d
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84570691"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563631"
 ---
-# <a name="the-xamarinforms-flexlayout"></a>Xamarin.FormsФлекслайаут
+# <a name="the-no-locxamarinforms-flexlayout"></a>Xamarin.FormsФлекслайаут
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)
 
@@ -26,15 +26,15 @@ _Используйте Флекслайаут для наложения или 
 
 Xamarin.Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) Новое в Xamarin.Forms версии 3,0. Он основан на [модуле макета гибкой рамки](https://www.w3.org/TR/css-flexbox-1/)CSS, обычно известном как _Flex Layout_ или _Flex-Box_, поэтому вызывается, так как он включает множество гибких параметров для упорядочения дочерних элементов в макете.
 
-`FlexLayout`функция похожа на Xamarin.Forms [`StackLayout`](~/xamarin-forms/user-interface/layouts/stacklayout.md) в том, что она может упорядочивать дочерние элементы по горизонтали и вертикали в стеке. Тем не менее `FlexLayout` компонент также может обернуть свои дочерние элементы, если слишком много подходит для одной строки или столбца, а также имеет множество параметров ориентации, выравнивания и адаптации к различным размерам экрана.
+`FlexLayout` функция похожа на Xamarin.Forms [`StackLayout`](~/xamarin-forms/user-interface/layouts/stacklayout.md) в том, что она может упорядочивать дочерние элементы по горизонтали и вертикали в стеке. Тем не менее `FlexLayout` компонент также может обернуть свои дочерние элементы, если слишком много подходит для одной строки или столбца, а также имеет множество параметров ориентации, выравнивания и адаптации к различным размерам экрана.
 
-`FlexLayout`является производным от [`Layout<View>`](xref:Xamarin.Forms.Layout`1) и наследует [`Children`](xref:Xamarin.Forms.Layout`1.Children) свойство типа `IList<View>` .
+`FlexLayout` является производным от [`Layout<View>`](xref:Xamarin.Forms.Layout`1) и наследует [`Children`](xref:Xamarin.Forms.Layout`1.Children) свойство типа `IList<View>` .
 
-`FlexLayout`определяет шесть общедоступных связываемых свойств и пять присоединенных связываемых свойств, которые влияют на размер, ориентацию и выравнивание дочерних элементов. (Если вы не знакомы с присоединенными связанными свойствами, см. статью **[присоединенные свойства](~/xamarin-forms/xaml/attached-properties.md)**.) Эти свойства подробно описаны в разделах ниже в разделе сведения о **[связываемых свойствах](#the-bindable-properties-in-detail)** , а **[также подробно присоединенные привязываемые свойства](#the-attached-bindable-properties-in-detail)**. Однако эта статья начинается с раздела о некоторых **[распространенных сценариях использования](#common-usage-scenarios)** `FlexLayout` , которые более подробно описывают многие из этих свойств. В конце статьи вы увидите, как сочетаться `FlexLayout` с [таблицами стилей CSS](~/xamarin-forms/user-interface/styles/css/index.md).
+`FlexLayout` определяет шесть общедоступных связываемых свойств и пять присоединенных связываемых свойств, которые влияют на размер, ориентацию и выравнивание дочерних элементов. (Если вы не знакомы с присоединенными связанными свойствами, см. статью **[присоединенные свойства](~/xamarin-forms/xaml/attached-properties.md)**.) Эти свойства подробно описаны в разделах ниже в разделе сведения о **[связываемых свойствах](#the-bindable-properties-in-detail)** , а **[также подробно присоединенные привязываемые свойства](#the-attached-bindable-properties-in-detail)**. Однако эта статья начинается с раздела о некоторых **[распространенных сценариях использования](#common-usage-scenarios)** `FlexLayout` , которые более подробно описывают многие из этих свойств. В конце статьи вы увидите, как сочетаться `FlexLayout` с [таблицами стилей CSS](~/xamarin-forms/user-interface/styles/css/index.md).
 
 ## <a name="common-usage-scenarios"></a>Основные сценарии использования
 
-Пример программы **[флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** содержит несколько страниц, демонстрирующих некоторые распространенные способы применения `FlexLayout` , и позволяет экспериментировать со своими свойствами.
+Пример программы **[флекслайаутдемос](/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** содержит несколько страниц, демонстрирующих некоторые распространенные способы применения `FlexLayout` , и позволяет экспериментировать со своими свойствами.
 
 ### <a name="using-flexlayout-for-a-simple-stack"></a>Использование Флекслайаут для простого стека
 
@@ -93,7 +93,7 @@ Xamarin.Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) Новое в Xamari
 
 ### <a name="using-flexlayout-for-wrapping-items"></a>Использование Флекслайаут для упаковки элементов
 
-На странице « **Перенос фотографий** » примера **[флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** показано, как `FlexLayout` можно переносить дочерние элементы в дополнительные строки или столбцы. Файл XAML создает экземпляр `FlexLayout` и присваивает ему два свойства:
+На странице « **Перенос фотографий** » примера **[флекслайаутдемос](/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** показано, как `FlexLayout` можно переносить дочерние элементы в дополнительные строки или столбцы. Файл XAML создает экземпляр `FlexLayout` и присваивает ему два свойства:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -193,7 +193,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 В веб-дизайне есть стандартный макет, именуемый « [_Великий граил_](https://en.wikipedia.org/wiki/Holy_grail_(web_design)) », так как это очень желательный формат макета, но часто трудно реализовать с помощью совершенство. Макет состоит из заголовка в верхней части страницы и нижнего колонтитула в нижней части, что расширяется до полной ширины страницы. Занимаясь центром страницы, это основное содержимое, но часто с меню в столбцах слева от содержимого и дополнительными сведениями (иногда называемыми незанятой _областью_ ) справа. [Раздел 5.4.1 спецификации гибкой рамки CSS](https://www.w3.org/TR/css-flexbox-1/#order-accessibility) описывает, как можно реализовать макет "Святой граил" с помощью Flex Box.
 
-На странице **макета «Святой граил** » примера **[флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** показана простая реализация этого макета с использованием одного `FlexLayout` вложенного в другой. Так как эта страница предназначена для телефона в книжной ориентации, области слева и справа от области содержимого выводятся только в 50 пикселей в ширину.
+На странице **макета «Святой граил** » примера **[флекслайаутдемос](/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** показана простая реализация этого макета с использованием одного `FlexLayout` вложенного в другой. Так как эта страница предназначена для телефона в книжной ориентации, области слева и справа от области содержимого выводятся только в 50 пикселей в ширину.
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -262,7 +262,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 ### <a name="catalog-items-with-flexlayout"></a>Элементы каталога с Флекслайаут
 
-Страница « **элементы каталога** » в образце **[флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** похожа на [Пример 1 в разделе 1,1 спецификации CSS Flex Layout Box](https://www.w3.org//TR/css-flexbox-1/#overview) , за исключением того, что он отображает последовательности изображений и описания трех монкэйс по горизонтали.
+Страница « **элементы каталога** » в образце **[флекслайаутдемос](/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** похожа на [Пример 1 в разделе 1,1 спецификации CSS Flex Layout Box](https://www.w3.org//TR/css-flexbox-1/#overview) , за исключением того, что он отображает последовательности изображений и описания трех монкэйс по горизонтали.
 
 [![Страница «элементы каталога»](flex-layout-images/CatalogItems.png "Страница «элементы каталога»")](flex-layout-images/CatalogItems-Large.png#lightbox)
 
@@ -381,9 +381,9 @@ public partial class PhotoWrappingPage : ContentPage
 ## <a name="the-bindable-properties-in-detail"></a>Подробные сведения о связываемых свойствах
 
 Теперь, когда вы видели некоторые распространенные приложения `FlexLayout` , свойства `FlexLayout` можно изучить более подробно.
-`FlexLayout`определяет шесть связываемых свойств, заданных в `FlexLayout` коде или коде XAML для управления ориентацией и выравниванием. (Одно из этих свойств, [`Position`](xref:Xamarin.Forms.FlexLayout.Position) не рассматривается в этой статье.)
+`FlexLayout` определяет шесть связываемых свойств, заданных в `FlexLayout` коде или коде XAML для управления ориентацией и выравниванием. (Одно из этих свойств, [`Position`](xref:Xamarin.Forms.FlexLayout.Position) не рассматривается в этой статье.)
 
-Вы можете поэкспериментировать с пятью оставшимися связываемыми свойствами, используя страницу **эксперимента** образца **[флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** . На этой странице можно добавлять или удалять дочерние элементы из `FlexLayout` и для установки сочетаний пяти связываемых свойств. Все дочерние элементы объекта `FlexLayout` — это `Label` представления различных цветов и размеров, для `Text` свойства которого задано число, соответствующее его положению в `Children` коллекции.
+Вы можете поэкспериментировать с пятью оставшимися связываемыми свойствами, используя страницу **эксперимента** образца **[флекслайаутдемос](/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** . На этой странице можно добавлять или удалять дочерние элементы из `FlexLayout` и для установки сочетаний пяти связываемых свойств. Все дочерние элементы объекта `FlexLayout` — это `Label` представления различных цветов и размеров, для `Text` свойства которого задано число, соответствующее его положению в `Children` коллекции.
 
 При запуске программы в пяти `Picker` представлениях отображаются значения по умолчанию для этих пяти `FlexLayout` свойств. В `FlexLayout` нижней части экрана содержатся три дочерних элемента:
 
@@ -396,9 +396,9 @@ public partial class PhotoWrappingPage : ContentPage
 [`Direction`](xref:Xamarin.Forms.FlexLayout.Direction)Свойство имеет тип [`FlexDirection`](xref:Xamarin.Forms.FlexDirection) , перечисление с четырьмя элементами:
 
 - `Column`
-- `ColumnReverse`(или "Column-Reverse" в XAML)
+- `ColumnReverse` (или "Column-Reverse" в XAML)
 - `Row`, значение по умолчанию;
-- `RowReverse`(или "строка-обратная" в XAML)
+- `RowReverse` (или "строка-обратная" в XAML)
 
 В XAML можно указать значение этого свойства, используя имена членов перечисления в нижнем или верхнем регистре, или можно использовать две дополнительные строки, отображаемые в круглых скобках, которые совпадают с индикаторами CSS. (Строки "Column-Reverse" и "Row-Reverse" определены в [`FlexDirectionTypeConverter`](xref:Xamarin.Forms.FlexDirectionTypeConverter) классе, используемом средством синтаксического анализа XAML.)
 
@@ -414,7 +414,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 - `NoWrap`, значение по умолчанию;
 - `Wrap`
-- `Reverse`(или «обернуть-Reverse» в XAML)
+- `Reverse` (или «обернуть-Reverse» в XAML)
 
 На этих экранах слева направо отображаются `NoWrap` Параметры, `Wrap` и `Reverse` для 12 дочерних элементов:
 
@@ -426,18 +426,18 @@ public partial class PhotoWrappingPage : ContentPage
 
 [`JustifyContent`](xref:Xamarin.Forms.FlexLayout.JustifyContent)Свойство имеет тип [`FlexJustify`](xref:Xamarin.Forms.FlexJustify) , перечисление с шестью членами:
 
-- `Start`(или "Flex-Start" в XAML), по умолчанию
+- `Start` (или "Flex-Start" в XAML), по умолчанию
 - `Center`
-- `End`(или "Flex-End" в XAML)
-- `SpaceBetween`(или "пробел между" в XAML)
-- `SpaceAround`(или «пробел вокруг» в XAML)
+- `End` (или "Flex-End" в XAML)
+- `SpaceBetween` (или "пробел между" в XAML)
+- `SpaceAround` (или «пробел вокруг» в XAML)
 - `SpaceEvenly`
 
 Это свойство указывает, как расположены элементы на главной оси, которая является горизонтальной осью в этом примере:
 
 [![Страница эксперимента: выравнивание содержимого](flex-layout-images/ExperimentJustifyContent.png "Содержимое по ширине страницы эксперимента")](flex-layout-images/ExperimentJustifyContent-Large.png#lightbox)
 
-Во всех трех снимках экрана `Wrap` свойство имеет значение `Wrap` . Значение `Start` по умолчанию показано на предыдущем снимке экрана Android. На снимке экрана iOS здесь показан `Center` параметр: все элементы перемещаются в центр. Три других параметра, начинающиеся с слова, `Space` выделяют дополнительное пространство, не занятое элементами. `SpaceBetween`равномерно распределяет интервал между элементами; `SpaceAround`устанавливает равные пробелы вокруг каждого элемента, в то же время `SpaceEvenly` устанавливает равное пространство между каждым элементом и перед первым и последним элементом в строке.
+Во всех трех снимках экрана `Wrap` свойство имеет значение `Wrap` . Значение `Start` по умолчанию показано на предыдущем снимке экрана Android. На снимке экрана iOS здесь показан `Center` параметр: все элементы перемещаются в центр. Три других параметра, начинающиеся с слова, `Space` выделяют дополнительное пространство, не занятое элементами. `SpaceBetween` равномерно распределяет интервал между элементами; `SpaceAround` устанавливает равные пробелы вокруг каждого элемента, в то же время `SpaceEvenly` устанавливает равное пространство между каждым элементом и перед первым и последним элементом в строке.
 
 ### <a name="the-alignitems-property"></a>Свойство Алигнитемс
 
@@ -445,8 +445,8 @@ public partial class PhotoWrappingPage : ContentPage
 
 - `Stretch`, значение по умолчанию;
 - `Center`
-- `Start`(или "Flex-Start" в XAML)
-- `End`(или "Flex-End" в XAML)
+- `Start` (или "Flex-Start" в XAML)
+- `End` (или "Flex-End" в XAML)
 
 Это одно из двух свойств (другое — [`AlignContent`](#the-aligncontent-property) ), которое указывает, как дочерние элементы выводятся по перекрестной оси. В каждой строке дочерние элементы растягиваются (как показано на предыдущем снимке экрана) или выравниваются по началу, центру или концу каждого элемента, как показано на следующих трех снимках экрана:
 
@@ -462,10 +462,10 @@ public partial class PhotoWrappingPage : ContentPage
 
 - `Stretch`, значение по умолчанию;
 - `Center`
-- `Start`(или "Flex-Start" в XAML)
-- `End`(или "Flex-End" в XAML)
-- `SpaceBetween`(или "пробел между" в XAML)
-- `SpaceAround`(или «пробел вокруг» в XAML)
+- `Start` (или "Flex-Start" в XAML)
+- `End` (или "Flex-End" в XAML)
+- `SpaceBetween` (или "пробел между" в XAML)
+- `SpaceAround` (или «пробел вокруг» в XAML)
 - `SpaceEvenly`
 
 Как и `AlignItems` свойство, оно `AlignContent` также совмещает дочерние элементы на перекрестной оси, но влияет на целые строки или столбцы:
@@ -480,7 +480,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 ## <a name="the-attached-bindable-properties-in-detail"></a>Подробно присоединенные связываемые свойства
 
-`FlexLayout`определяет пять присоединенных привязанных свойств. Эти свойства задаются для дочерних элементов `FlexLayout` и относятся только к этому конкретному дочернему элементу.
+`FlexLayout` определяет пять присоединенных привязанных свойств. Эти свойства задаются для дочерних элементов `FlexLayout` и относятся только к этому конкретному дочернему элементу.
 
 ### <a name="the-alignself-property"></a>Свойство Алигнселф
 
@@ -489,8 +489,8 @@ public partial class PhotoWrappingPage : ContentPage
 - `Auto`, значение по умолчанию;
 - `Stretch`
 - `Center`
-- `Start`(или "Flex-Start" в XAML)
-- `End`(или "Flex-End" в XAML)
+- `Start` (или "Flex-Start" в XAML)
+- `End` (или "Flex-End" в XAML)
 
 Для любого отдельного дочернего элемента этого `FlexLayout` параметра свойства переопределяет свойство, заданное [`AlignItems`](#the-alignitems-property) для `FlexLayout` самого себя. Значение по умолчанию `Auto` означает использование `AlignItems` параметра.
 
@@ -556,7 +556,7 @@ FlexLayout.SetBasis(label, new FlexBasis(0.25f, true));
 <Label ... FlexLayout.Basis="25%" ... />
 ```
 
-На странице «основной **эксперимент** » образца **[флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** можно поэкспериментировать со `Basis` свойством. На странице отображается столбец с текстом из пяти `Label` элементов с чередованием цветов фона и переднего плана. Два `Slider` элемента позволяют указать `Basis` значения для второго и четвертого `Label` :
+На странице «основной **эксперимент** » образца **[флекслайаутдемос](/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** можно поэкспериментировать со `Basis` свойством. На странице отображается столбец с текстом из пяти `Label` элементов с чередованием цветов фона и переднего плана. Два `Slider` элемента позволяют указать `Basis` значения для второго и четвертого `Label` :
 
 [![Страница «эксперимент»](flex-layout-images/BasisExperiment.png "Страница «эксперимент»")](flex-layout-images/BasisExperiment-Large.png#lightbox)
 
@@ -592,7 +592,7 @@ FlexLayout.SetBasis(label, new FlexBasis(0.25f, true));
 
 ## <a name="css-styling-with-flexlayout"></a>Стилизация CSS с помощью Флекслайаут
 
-Можно использовать функцию [стилизации CSS](~/xamarin-forms/user-interface/styles/css/index.md) , представленную в Xamarin.Forms 3,0 в связи с `FlexLayout` . Страница « **элементы каталога CSS** » примера **[флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** дублирует макет страницы « **элементы каталога** », но с таблицей стилей CSS для многих стилей.
+Можно использовать функцию [стилизации CSS](~/xamarin-forms/user-interface/styles/css/index.md) , представленную в Xamarin.Forms 3,0 в связи с `FlexLayout` . Страница « **элементы каталога CSS** » примера **[флекслайаутдемос](/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)** дублирует макет страницы « **элементы каталога** », но с таблицей стилей CSS для многих стилей.
 
 [![Страница «элементы каталога CSS»](flex-layout-images/CssCatalogItems.png "Страница «элементы каталога CSS»")](flex-layout-images/CssCatalogItems-Large.png#lightbox)
 
@@ -721,8 +721,8 @@ button {
 
 > [!VIDEO https://youtube.com/embed/Ng3sel_5D_0]
 
-**Xamarin.Formsвидео о гибком макете 3,0**
+**Xamarin.Forms видео о гибком макете 3,0**
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [флекслайаутдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)
+- [флекслайаутдемос](/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)

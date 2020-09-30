@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fda45bc0aa2b7bc582c30b752662055bd4bd4865
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: fe9a93e8e5a35df98587efc0dc3ad6192653d173
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937063"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563709"
 ---
 # <a name="listview-separator-style-on-ios"></a>Стиль разделителя ListView в iOS
 
@@ -46,8 +46,8 @@ listView.On<iOS>().SetSeparatorStyle(SeparatorStyle.FullWidth);
 
 `ListView.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. [ `ListView.SetSeparatorStyle` ] (Xref: Xamarin.Forms . Платформконфигуратион. ИосспеЦифик. ListView. Сетсепараторстиле ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. iOS, Xamarin.Forms . ListView}, Xamarin.Forms . Платформконфигуратион. ИосспеЦифик. Сепараторстиле)). в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, используется ли в качестве разделителя ячеек [`ListView`](xref:Xamarin.Forms.ListView) полная ширина `ListView` , с [`SeparatorStyle`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle) перечислением, предоставляющим два возможных значения:
 
-- [`Default`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle.Default)— Указывает поведение разделителя iOS по умолчанию. Это поведение по умолчанию в Xamarin.Forms .
-- [`FullWidth`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle.FullWidth)— Указывает, что разделители будут отображаться от одного края `ListView` до другого.
+- [`Default`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle.Default) — Указывает поведение разделителя iOS по умолчанию. Это поведение по умолчанию в Xamarin.Forms .
+- [`FullWidth`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle.FullWidth) — Указывает, что разделители будут отображаться от одного края `ListView` до другого.
 
 В результате заданное [`SeparatorStyle`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle) значение применяется к элементу [`ListView`](xref:Xamarin.Forms.ListView) , который управляет шириной разделителя ячеек.
 
@@ -58,6 +58,6 @@ listView.On<iOS>().SetSeparatorStyle(SeparatorStyle.FullWidth);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

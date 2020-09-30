@@ -1,5 +1,5 @@
 ---
-title: 'Xamarin.FormsКисти: градиенты'
+title: 'Xamarin.Forms Кисти: градиенты'
 description: Xamarin.FormsКласс GradientBrush является абстрактным классом, который описывает градиент, состоящий из ограничителей градиента.
 ms.prod: xamarin
 ms.assetid: 24763E56-74EC-4082-897B-E4EAACCADFEE
@@ -10,18 +10,18 @@ ms.date: 07/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 254a4433888be0e441ae37d41c24b1886040998b
-ms.sourcegitcommit: 579ec4f2884fa391e5e214a3952cd6004c521eb8
+ms.openlocfilehash: 08a423830ee3db55cb0ec7facfa5630c8832885b
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87919623"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562942"
 ---
-# <a name="no-locxamarinforms-brushes-gradients"></a>Xamarin.FormsКисти: градиенты
+# <a name="no-locxamarinforms-brushes-gradients"></a>Xamarin.Forms Кисти: градиенты
 
 ![Предварительный просмотр API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/BrushDemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
 
 `GradientBrush`Класс является производным от `Brush` класса и является абстрактным классом, описывающим градиент, который состоит из ограничителей градиента. Градиентные кисти закрашивают область разными цветами, которые переходят из одного в другой по некоторой оси. Классы, производные от, `GradientBrush` описывают различные способы интерпретации ограничителей градиента и Xamarin.Forms предоставляют следующие градиентные кисти:
 
@@ -42,7 +42,7 @@ ms.locfileid: "87919623"
 - `Color`Тип [`Color`](xref:Xamarin.Forms.Color) , представляющий цвет ограничителя градиента. Значение по умолчанию этого свойства равно `Color.Default`.
 - `Offset`Тип `float` , который представляет положение ограничителя градиента в векторе градиента. Значение этого свойства по умолчанию равно 0, а допустимые значения находятся в диапазоне от 0,0 до 1,0. Чем ближе это значение к 0, тем ближе цвет к началу градиента. Аналогично, чем ближе это значение к 1, тем ближе цвет к концу градиента.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 > [!IMPORTANT]
 > Система координат, используемая градиентами, относится к ограничивающему прямоугольнику для области вывода. 0 указывает 0 процентов ограничивающего прямоугольника, а 1 указывает 100 процентов ограничивающего прямоугольника. Таким образом, (0,5, 0,5) описывается точка в середине ограничивающего прямоугольника, а (1, 1) описывает точку в нижней правой части ограничивающего прямоугольника.
@@ -71,6 +71,6 @@ ms.locfileid: "87919623"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Брушесдемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/BrushDemos)
-- [Xamarin.FormsКисти: линейные градиенты](lineargradient.md)
-- [Xamarin.FormsКисти: радиальные градиенты](radialgradient.md)
+- [Брушесдемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
+- [Xamarin.Forms Кисти: линейные градиенты](lineargradient.md)
+- [Xamarin.Forms Кисти: радиальные градиенты](radialgradient.md)

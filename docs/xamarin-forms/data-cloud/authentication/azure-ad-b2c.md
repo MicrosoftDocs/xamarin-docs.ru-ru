@@ -10,12 +10,12 @@ ms.date: 12/04/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 64529b81a375ee5a8cc8a96ec557c03401e60495
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: be1de99ba42e58e375792b0a4e03d1847e2e3c87
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84130576"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562890"
 ---
 # <a name="authenticate-users-with-azure-active-directory-b2c"></a>Проверка подлинности с помощью Azure Active Directory B2C
 
@@ -207,7 +207,7 @@ public partial class LoginPage : ContentPage
 }
 ```
 
-`OnForgotPassword`Метод аналогичен процессу входа, но реализует пользовательскую политику. `OnForgotPassword`использует другую перегрузку `AcquireTokenAsync` , которая позволяет предоставить определенный **центр**. В следующем примере показано, как предоставить пользовательский **центр** при получении маркера.
+`OnForgotPassword`Метод аналогичен процессу входа, но реализует пользовательскую политику. `OnForgotPassword` использует другую перегрузку `AcquireTokenAsync` , которая позволяет предоставить определенный **центр**. В следующем примере показано, как предоставить пользовательский **центр** при получении маркера.
 
 ```csharp
 public partial class LoginPage : ContentPage
@@ -344,7 +344,7 @@ public class MainActivity : FormsAppCompatActivity
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [AzureADB2CAuth (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-azureadb2cauth)
+- [AzureADB2CAuth (пример)](/samples/xamarin/xamarin-forms-samples/webservices-azureadb2cauth)
 - [Azure Active Directory B2C](/azure/active-directory-b2c/)
 - [Библиотека проверки подлинности Майкрософт](https://www.nuget.org/packages/Microsoft.Identity.Client)
 - [Документация по библиотеке проверки подлинности Майкрософт](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki)

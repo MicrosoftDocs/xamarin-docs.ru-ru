@@ -10,25 +10,25 @@ ms.date: 07/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ae30b4a4b75906613baf8a2568548c8890ccb33a
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 6d4c9be2166881824e798e9cb801a5720ab55178
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139091"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557860"
 ---
-# <a name="dependency-resolution-in-xamarinforms"></a>Разрешение зависимостей в Xamarin.Forms
+# <a name="dependency-resolution-in-no-locxamarinforms"></a>Разрешение зависимостей в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-dicontainerdemo)
 
-_В этой статье объясняется, как внедрить метод разрешения зависимостей в Xamarin.Forms , чтобы контейнер внедрения зависимостей приложения получил контроль над созданием и временем существования пользовательских модулей подготовки отчетов, эффектов и реализаций DependencyService. Примеры кода в этой статье взяты из примера [разрешения зависимостей с помощью контейнеров](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-dicontainerdemo) ._
+_В этой статье объясняется, как внедрить метод разрешения зависимостей в Xamarin.Forms , чтобы контейнер внедрения зависимостей приложения получил контроль над созданием и временем существования пользовательских модулей подготовки отчетов, эффектов и реализаций DependencyService. Примеры кода в этой статье взяты из примера [разрешения зависимостей с помощью контейнеров](/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-dicontainerdemo) ._
 
 В контексте Xamarin.Forms приложения, использующего шаблон Model-View-ViewModel (MVVM), контейнер внедрения зависимостей можно использовать для регистрации и разрешения моделей представлений, а также для регистрации служб и их внедрения в модели представления. Во время создания модели представления контейнер внедряет все необходимые зависимости. Если эти зависимости не были созданы, контейнер сначала создает и разрешает зависимости. Дополнительные сведения о внедрении зависимостей, включая примеры внедрения зависимостей в модели представления, см. в разделе [внедрение зависимостей](~/xamarin-forms/enterprise-application-patterns/dependency-injection.md).
 
-Управление созданием и временем существования типов в проектах платформы традиционно выполняется с помощью Xamarin.Forms , которое использует `Activator.CreateInstance` метод для создания экземпляров пользовательских модулей подготовки отчетов, эффектов и [`DependencyService`](xref:Xamarin.Forms.DependencyService) реализаций. К сожалению, это ограничивает Управление созданием и временем существования этих типов, а также возможность внедрять в них зависимости. Это поведение можно изменить, добавив в него метод разрешения зависимостей Xamarin.Forms , который управляет созданием типов — либо с помощью контейнера внедрения зависимостей приложения, либо с помощью Xamarin.Forms . Однако обратите внимание, что нет необходимости внедрять метод разрешения зависимостей в Xamarin.Forms . Xamarin.Formsбудет продолжать создавать и администрировать время существования типов в проектах платформы, если не внедрен метод разрешения зависимостей.
+Управление созданием и временем существования типов в проектах платформы традиционно выполняется с помощью Xamarin.Forms , которое использует `Activator.CreateInstance` метод для создания экземпляров пользовательских модулей подготовки отчетов, эффектов и [`DependencyService`](xref:Xamarin.Forms.DependencyService) реализаций. К сожалению, это ограничивает Управление созданием и временем существования этих типов, а также возможность внедрять в них зависимости. Это поведение можно изменить, добавив в него метод разрешения зависимостей Xamarin.Forms , который управляет созданием типов — либо с помощью контейнера внедрения зависимостей приложения, либо с помощью Xamarin.Forms . Однако обратите внимание, что нет необходимости внедрять метод разрешения зависимостей в Xamarin.Forms . Xamarin.Forms будет продолжать создавать и администрировать время существования типов в проектах платформы, если не внедрен метод разрешения зависимостей.
 
 > [!NOTE]
-> Хотя эта статья посвящена внедрению метода разрешения зависимостей в Xamarin.Forms , который разрешает зарегистрированные типы с помощью контейнера внедрения зависимостей, можно также внедрить метод разрешения зависимостей, использующий заводские методы для разрешения зарегистрированных типов. Дополнительные сведения см. в примере [разрешения зависимостей с использованием фабричных методов](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-factoriesdemo) .
+> Хотя эта статья посвящена внедрению метода разрешения зависимостей в Xamarin.Forms , который разрешает зарегистрированные типы с помощью контейнера внедрения зависимостей, можно также внедрить метод разрешения зависимостей, использующий заводские методы для разрешения зарегистрированных типов. Дополнительные сведения см. в примере [разрешения зависимостей с использованием фабричных методов](/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-factoriesdemo) .
 
 ## <a name="injecting-a-dependency-resolution-method"></a>Внедрение метода разрешения зависимостей
 
@@ -304,7 +304,7 @@ async void OnSelectPhotoButtonClicked(object sender, EventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Разрешение зависимостей с помощью контейнеров (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-dicontainerdemo)
+- [Разрешение зависимостей с помощью контейнеров (пример)](/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-dicontainerdemo)
 - [Внедрение зависимостей](~/xamarin-forms/enterprise-application-patterns/dependency-injection.md)
 - [Реализация видеопроигрывателя](~/xamarin-forms/app-fundamentals/custom-renderer/video-player/index.md)
 - [Вызов событий из эффектов](~/xamarin-forms/app-fundamentals/effects/touch-tracking.md)

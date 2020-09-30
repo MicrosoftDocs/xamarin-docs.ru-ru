@@ -1,5 +1,5 @@
 ---
-title: Использование базы данных документов Azure Cosmos DB вXamarin.Forms
+title: Использование базы данных документов Azure Cosmos DB в Xamarin.Forms
 description: В этой статье объясняется, как использовать клиентскую библиотеку Azure Cosmos DB .NET Standard для интеграции базы данных документов Azure Cosmos DB в Xamarin.Forms приложение.
 ms.prod: xamarin
 ms.assetid: 7C0605D9-9B7F-4002-9B60-2B5DAA3EA30C
@@ -11,14 +11,14 @@ ms.date: 06/16/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b8cd2ea2f54e4bfdfea4fa5787a01aca252691b4
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: ef6ccbaac73946ac19f4f5fe194f395234226b5e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84564658"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562851"
 ---
-# <a name="consume-an-azure-cosmos-db-document-database-in-xamarinforms"></a>Использование базы данных документов Azure Cosmos DB вXamarin.Forms
+# <a name="consume-an-azure-cosmos-db-document-database-in-no-locxamarinforms"></a>Использование базы данных документов Azure Cosmos DB в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdb)
 
@@ -223,13 +223,13 @@ await client.DeleteDatabaseAsync(UriFactory.CreateDatabaseUri(Constants.Database
 
 `DeleteDatabaseAsync`Метод задает `Uri` аргумент, представляющий удаляемую базу данных. Обратите внимание, что при вызове этого метода будут также удалены коллекции документов, хранящиеся в базе данных, и документы, хранящиеся в коллекциях документов.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье объясняется, как использовать клиентскую библиотеку Azure Cosmos DB .NET Standard для интеграции базы данных документов Azure Cosmos DB в Xamarin.Forms приложение. База данных документов Azure Cosmos DB — это база данных NoSQL, которая обеспечивает доступ к документам JSON с низкой задержкой, предлагая быструю, высокодоступную и масштабируемую службу баз данных для приложений, которым требуется эффективное масштабирование и Глобальная репликация.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Azure Cosmos DB ToDo (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdb)
-- [Документация по Azure Cosmos DB](/azure/cosmos-db/)
+- [Azure Cosmos DB ToDo (пример)](/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdb)
+- [Документация по Azure Cosmos DB](/azure/cosmos-db/)
 - [Клиентская библиотека Azure Cosmos DB .NET Standard](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)
-- [API Azure Cosmos DB](https://docs.microsoft.com/dotnet/api/overview/azure/cosmosdb/client?view=azure-dotnet)
+- [API Azure Cosmos DB](/dotnet/api/overview/azure/cosmosdb/client?view=azure-dotnet)

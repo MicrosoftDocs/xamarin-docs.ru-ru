@@ -10,12 +10,12 @@ ms.date: 08/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 10192e93d2e20f9aa58ca95dd81c07f560193905
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 827b5618dce019e2dedb773f270fe1090da5d616
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136413"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562513"
 ---
 # <a name="skiasharp-mask-filters"></a>Фильтры маски SkiaSharp
 
@@ -37,7 +37,7 @@ public static SKMaskFilter CreateBlur (SKBlurStyle blurStyle, float sigma);
 
 Перегрузки позволяют задавать флаги для алгоритма, используемого для создания размытия, и прямоугольник, чтобы избежать размытия в областях, которые будут охвачены другими графическими объектами.
 
-[`SKBlurStyle`](xref:SkiaSharp.SKBlurStyle)является перечислением со следующими членами:
+[`SKBlurStyle`](xref:SkiaSharp.SKBlurStyle) является перечислением со следующими членами:
 
 - `Normal`
 - `Solid`
@@ -46,7 +46,7 @@ public static SKMaskFilter CreateBlur (SKBlurStyle blurStyle, float sigma);
 
 Эффекты этих стилей показаны в приведенных ниже примерах. `sigma`Параметр задает экстент размытия. В более ранних версиях СКИА экстент размытия был обозначен значением радиуса. Если значение радиуса предпочтительнее для вашего приложения, то существует статический [`SKMaskFilter.ConvertRadiusToSigma`](xref:SkiaSharp.SKMaskFilter.ConvertRadiusToSigma*) метод, который может преобразовать из одного в другой. Метод умножает радиус на 0,57735 и добавляет 0,5.
 
-На странице **эксперимент размытия маски** в образце [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) можно поэкспериментировать с стилями размытия и Сигма. XAML-файл создает экземпляр `Picker` с четырьмя `SKBlurStyle` членами перечисления и `Slider` для указания значения Сигма:
+На странице **эксперимент размытия маски** в образце [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) можно поэкспериментировать с стилями размытия и Сигма. XAML-файл создает экземпляр `Picker` с четырьмя `SKBlurStyle` членами перечисления и `Slider` для указания значения Сигма:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -276,5 +276,5 @@ paint.MaskFilter = SKMaskFilter.CreateBlur(SKBlurStyle.Normal, paint.TextSize / 
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

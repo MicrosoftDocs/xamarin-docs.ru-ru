@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 97c7305e59a023e65535186bbbe39a9c2b7d4c26
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 380c9d5b8159a1a142ebf005955e4345dbc6e6d8
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139000"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562903"
 ---
 # <a name="skiasharp-lines-and-paths"></a>Строки и пути SkiaSharp
 
@@ -27,7 +27,7 @@ _Использование SkiaSharp для рисования линий и г
 
 Графический контур — это наиболее обобщенный подход к рисованию линий и кривых в SkiaSharp. В этом разделе описывается использование [`SKPath`](xref:SkiaSharp.SKPath) объекта для рисования прямых линий и использование набора маленьких прямых линий (которые называются *ломаными*линиями) для рисования кривых, которые можно определить алгоритмически. В следующем разделе, посвященном [**SkiaSharp кривых и путям**](../curves/index.md) , обсуждаются различные виды кривых, поддерживаемые `SKPath` .
 
-Все примеры программ в этом разделе отображаются под **строками заголовка и путями** на домашней странице программы [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) и в папке [**paths**](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths) этого решения.
+Все примеры программ в этом разделе отображаются под **строками заголовка и путями** на домашней странице программы [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) и в папке [**paths**](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths) этого решения.
 
 ## <a name="lines-and-stroke-caps"></a>[Линии и концы штрихов](lines.md)
 
@@ -55,5 +55,5 @@ _Использование SkiaSharp для рисования линий и г
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

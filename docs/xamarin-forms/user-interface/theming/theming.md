@@ -10,18 +10,18 @@ ms.date: 08/07/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3341ada6c5605917eeec79aac96e38cb99b40fc4
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 7eef9cdf353c527be4e1de4721a5658a7763dabe
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138207"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557547"
 ---
-# <a name="theme-a-xamarinforms-application"></a>Тема Xamarin.Forms приложения
+# <a name="theme-a-no-locxamarinforms-application"></a>Тема Xamarin.Forms приложения
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-theming/)
 
-Xamarin.Formsприложения могут динамически реагировать на изменения стиля во время выполнения с помощью `DynamicResource` расширения разметки. Это расширение разметки аналогично `StaticResource` расширению разметки в том, что оба используют ключ словаря для выборки значения из [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Однако, хотя `StaticResource` расширение разметки выполняет поиск по одному словарю, `DynamicResource` расширение разметки сохраняет ссылку на ключ словаря. Таким образом, если значение, связанное с ключом, заменяется, это изменение применяется к [`VisualElement`](xref:Xamarin.Forms.VisualElement) . Это позволяет реализовать среду выполнения в Xamarin.Forms приложениях.
+Xamarin.Forms приложения могут динамически реагировать на изменения стиля во время выполнения с помощью `DynamicResource` расширения разметки. Это расширение разметки аналогично `StaticResource` расширению разметки в том, что оба используют ключ словаря для выборки значения из [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Однако, хотя `StaticResource` расширение разметки выполняет поиск по одному словарю, `DynamicResource` расширение разметки сохраняет ссылку на ключ словаря. Таким образом, если значение, связанное с ключом, заменяется, это изменение применяется к [`VisualElement`](xref:Xamarin.Forms.VisualElement) . Это позволяет реализовать среду выполнения в Xamarin.Forms приложениях.
 
 Процесс реализации среды выполнения в Xamarin.Forms приложении выглядит следующим образом:
 
@@ -225,8 +225,8 @@ void OnPickerSelectionChanged(object sender, EventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Их (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-theming/)
+- [Их (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-theming/)
 - [Реагирование на изменения темы системы](system-theme-changes.md)
 - [Словари ресурсов](~/xamarin-forms/xaml/resource-dictionaries.md)
-- [Динамические стили вXamarin.Forms](~/xamarin-forms/user-interface/styles/xaml/dynamic.md)
+- [Динамические стили в Xamarin.Forms](~/xamarin-forms/user-interface/styles/xaml/dynamic.md)
 - [Задание стиля приложений Xamarin.Forms с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)

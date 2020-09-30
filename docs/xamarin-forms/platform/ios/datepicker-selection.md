@@ -10,12 +10,12 @@ ms.date: 01/15/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c65cac4c777150185524b291adc6e9d1e79958d3
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: f8b98d103021864aeb589787224f90bdaed17146
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138558"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563787"
 ---
 # <a name="datepicker-item-selection-on-ios"></a>Выбор элемента DatePicker в iOS
 
@@ -47,8 +47,8 @@ datePicker.On<iOS>().SetUpdateMode(UpdateMode.WhenFinished);
 
 `DatePicker.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `DatePicker.SetUpdateMode`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, когда происходит выбор элементов, с `UpdateMode` перечислением, предоставляющим два возможных значения:
 
-- `Immediately`— Выбор элементов происходит при просмотре пользователем элементов в [`DatePicker`](xref:Xamarin.Forms.DatePicker) . Это поведение по умолчанию в Xamarin.Forms .
-- `WhenFinished`— Выбор элементов происходит только после нажатия пользователем кнопки **done (Готово** ) в [`DatePicker`](xref:Xamarin.Forms.DatePicker) .
+- `Immediately` — Выбор элементов происходит при просмотре пользователем элементов в [`DatePicker`](xref:Xamarin.Forms.DatePicker) . Это поведение по умолчанию в Xamarin.Forms .
+- `WhenFinished` — Выбор элементов происходит только после нажатия пользователем кнопки **done (Готово** ) в [`DatePicker`](xref:Xamarin.Forms.DatePicker) .
 
 Кроме того, `SetUpdateMode` метод можно использовать для переключения значений перечисления путем вызова `UpdateMode` метода, который возвращает текущий объект `UpdateMode` :
 
@@ -70,6 +70,6 @@ switch (datePicker.On<iOS>().UpdateMode())
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

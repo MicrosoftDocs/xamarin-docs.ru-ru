@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsСетки
+title: Xamarin.Forms Сетки
 description: Xamarin.FormsСетка представляет собой макет, который упорядочивает дочерние элементы по строкам и столбцам ячеек.
 ms.prod: xamarin
 ms.assetid: 762B1802-D185-494C-B643-74EED55882FE
@@ -10,18 +10,18 @@ ms.date: 06/15/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9d2e697a07e033fd7c3c8d3efffa1d67f6c097c3
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 59a4d5c0730719d6cc332728c6cab641d02239b4
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84946344"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563566"
 ---
-# <a name="xamarinforms-grid"></a>Xamarin.FormsСетки
+# <a name="no-locxamarinforms-grid"></a>Xamarin.Forms Сетки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-griddemos)
 
-[![Xamarin.FormsСетки](grid-images/layouts.png "[! Операцион. Таблица NO-LOC (Xamarin. Forms)]")](grid-images/layouts-large.png#lightbox "[! Операцион. Таблица NO-LOC (Xamarin. Forms)]")
+[![::: No-Loc (Xamarin. Forms)::: Grid](grid-images/layouts.png "::: No-Loc (Xamarin. Forms)::: Grid")](grid-images/layouts-large.png#lightbox "::: No-Loc (Xamarin. Forms)::: Grid")
 
 [`Grid`](xref:Xamarin.Forms.Grid)— Это макет, который упорядочивает свои дочерние элементы по строкам и столбцам, которые могут иметь пропорциональные или абсолютные размеры. По умолчанию `Grid` содержит одну строку и один столбец. Кроме того, `Grid` можно использовать в качестве родительского макета, содержащего другие дочерние макеты.
 
@@ -67,9 +67,9 @@ ms.locfileid: "84946344"
 
 [`RowDefinition`](xref:Xamarin.Forms.RowDefinition)Класс определяет [`Height`](xref:Xamarin.Forms.RowDefinition.Height) свойство типа [`GridLength`](xref:Xamarin.Forms.GridLength) , а [`ColumnDefinition`](xref:Xamarin.Forms.ColumnDefinition) класс определяет [`Width`](xref:Xamarin.Forms.ColumnDefinition.Width) свойство типа [`GridLength`](xref:Xamarin.Forms.GridLength) . [`GridLength`](xref:Xamarin.Forms.GridLength)Структура задает высоту строки или ширину столбца в терминах [`GridUnitType`](xref:Xamarin.Forms.GridUnitType) перечисления, которая имеет три члена:
 
-- `Absolute`— Высота строки или ширина столбца — это значение в единицах, не зависящих от устройства (число в XAML).
-- `Auto`— Высота строки или ширина столбца определяется авторазмерами на основе содержимого ячейки ( `Auto` в XAML).
-- `Star`— Высота неразнесенной строки или ширина столбца выделяется пропорционально (число, за которым следует `*` код XAML).
+- `Absolute` — Высота строки или ширина столбца — это значение в единицах, не зависящих от устройства (число в XAML).
+- `Auto` — Высота строки или ширина столбца определяется авторазмерами на основе содержимого ячейки ( `Auto` в XAML).
+- `Star` — Высота неразнесенной строки или ширина столбца выделяется пропорционально (число, за которым следует `*` код XAML).
 
 [`Grid`](xref:Xamarin.Forms.Grid)Строка со `Height` свойством `Auto` ограничивает высоту представлений в этой строке так же, как и по вертикали [`StackLayout`](xref:Xamarin.Forms.StackLayout) . Аналогичным образом столбец со `Width` свойством `Auto` работает примерно так же, как по горизонтали `StackLayout` .
 
@@ -752,7 +752,7 @@ public class ColorSlidersGridPageCS : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демонстрации сетки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-griddemos)
-- [Параметры макета вXamarin.Forms](layout-options.md)
+- [Демонстрации сетки (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-griddemos)
+- [Параметры макета в Xamarin.Forms](layout-options.md)
 - [Выбор Xamarin.Forms макета](choose-layout.md)
 - [Улучшение Xamarin.Forms производительности приложения](~/xamarin-forms/deploy-test/performance.md)

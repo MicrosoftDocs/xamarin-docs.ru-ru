@@ -1,5 +1,5 @@
 ---
-title: Неявные стили вXamarin.Forms
+title: Неявные стили в Xamarin.Forms
 description: Неявный стиль — это тот, который используется всеми элементами управления одного и того же TargetType, не требуя, чтобы каждый элемент управления ссылался на стиль.
 ms.prod: xamarin
 ms.assetid: 02A75F3B-4389-49D4-A2F4-AFD473A4A161
@@ -10,14 +10,14 @@ ms.date: 01/30/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3fb6ea40ced93103ec9cc92fa707f68c674d7826
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: ad297b735449796925b92fbc9d1887db9e8a1c99
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139013"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563332"
 ---
-# <a name="implicit-styles-in-xamarinforms"></a>Неявные стили вXamarin.Forms
+# <a name="implicit-styles-in-no-locxamarinforms"></a>Неявные стили в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
 
@@ -89,7 +89,7 @@ _Неявный стиль — это тот, который используе�
 
 ## <a name="create-an-implicit-style-in-c35"></a>Создание неявного стиля в C&#35;
 
-[`Style`](xref:Xamarin.Forms.Style)экземпляры можно добавить в [`Resources`](xref:Xamarin.Forms.VisualElement.Resources) коллекцию страницы в C#, создав новый объект [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) , а затем добавив `Style` экземпляры в `ResourceDictionary` , как показано в следующем примере кода:
+[`Style`](xref:Xamarin.Forms.Style) экземпляры можно добавить в [`Resources`](xref:Xamarin.Forms.VisualElement.Resources) коллекцию страницы в C#, создав новый объект [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) , а затем добавив `Style` экземпляры в `ResourceDictionary` , как показано в следующем примере кода:
 
 ```csharp
 public class ImplicitStylesPageCS : ContentPage
@@ -160,8 +160,8 @@ Resources = new ResourceDictionary { buttonStyle };
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Расширения разметки XAML](~/xamarin-forms/xaml/xaml-basics/xaml-markup-extensions.md)
-- [Базовые стили (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
-- [Работа со стилями (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithstyles)
+- [Базовые стили (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
+- [Работа со стилями (пример)](/samples/xamarin/xamarin-forms-samples/workingwithstyles)
 - [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
 - [Style](xref:Xamarin.Forms.Style)
 - [Setter](xref:Xamarin.Forms.Setter)

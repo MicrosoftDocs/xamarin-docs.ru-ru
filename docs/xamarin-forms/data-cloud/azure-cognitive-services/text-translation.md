@@ -10,16 +10,16 @@ ms.date: 02/08/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 38c7f11ecf65a2a9ec9ef54b5beb270f51d24dda
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 2b26e80267be9af6bf300b2ffc82e43fe717f59c
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929952"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563124"
 ---
 # <a name="text-translation-using-the-translator-api"></a>Преобразование текста с помощью API-интерфейса переводчика
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
 
 _API Microsoft Translator можно использовать для перевода речи и текста с помощью REST API. В этой статье объясняется, как использовать API перевода текстов Майкрософт для перевода текста с одного языка на другой в Xamarin.Forms приложении._
 
@@ -39,7 +39,7 @@ API-интерфейс переводчика имеет два компонен
 
 Дополнительные сведения о API перевода текстов Майкрософт см. в [документации по API перевода текстов](/azure/cognitive-services/translator/).
 
-## <a name="authentication"></a>Аутентификация
+## <a name="authentication"></a>Проверка подлинности
 
 Для каждого запроса к API перевода текстов требуется маркер доступа JSON Web Token (JWT), который можно получить из службы маркеров работы со службами в `https://api.cognitive.microsoft.com/sts/v1.0/issueToken` . Маркер можно получить, выполнив запрос POST к службе маркеров, указав `Ocp-Apim-Subscription-Key` заголовок, содержащий ключ API в качестве значения.
 
@@ -153,5 +153,5 @@ async Task<string> SendRequestAsync(string url, string bearerToken)
 
 - [Документация по API перевода текстов](/azure/cognitive-services/translator/)
 - [Использование веб-службы RESTFUL](~/xamarin-forms/data-cloud/web-services/rest.md)
-- [Cognitive Services ToDo (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
+- [Cognitive Services ToDo (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
 - [API Перевода текстов](/azure/cognitive-services/translator/reference/v3-0-reference)

@@ -1,5 +1,5 @@
 ---
-title: Xamarin.Formsсвипевиев
+title: Xamarin.Forms свипевиев
 description: Xamarin.FormsСвипевиев — это контейнерный элемент управления, который служит оболочкой для элемента содержимого и предоставляет элементы контекстного меню, которые выводятся с помощью жеста прокрутки.
 ms.prod: xamarin
 ms.assetId: 602456B5-701B-4948-B454-B1F31283F1CF
@@ -10,24 +10,24 @@ ms.date: 03/26/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4a51f2d7bef446bc14938aaa3e9b60d85580ebc9
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 178d36eabfdbe0452bec456979fcca89acdf8926
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918337"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563345"
 ---
-# <a name="no-locxamarinforms-swipeview"></a>Xamarin.Formsсвипевиев
+# <a name="no-locxamarinforms-swipeview"></a>Xamarin.Forms свипевиев
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-swipeviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-swipeviewdemos/)
 
 `SwipeView`— Это контейнерный элемент управления, который служит оболочкой для элемента содержимого и предоставляет пункты контекстного меню, которые выводятся с помощью жеста прокрутки:
 
 [![Снимок экрана Свипевиев: считывание элементов в CollectionView на iOS и Android](swipeview-images/swipeview-collectionview.png "Свипевиев считывание элементов")](swipeview-images/swipeview-collectionview-large.png#lightbox "Свипевиев считывание элементов")
 
-`SwipeView`доступна в Xamarin.Forms 4,4. Однако в настоящее время он экспериментальен и может использоваться только путем добавления следующей строки кода в `AppDelegate` класс в iOS, в `MainActivity` класс на Android или в `App` класс в UWP перед вызовом `Forms.Init` :
+`SwipeView` доступна в Xamarin.Forms 4,4. Однако в настоящее время он экспериментальен и может использоваться только путем добавления следующей строки кода в `AppDelegate` класс в iOS, в `MainActivity` класс на Android или в `App` класс в UWP перед вызовом `Forms.Init` :
 
 ```csharp
 Forms.SetFlags("SwipeView_Experimental");
@@ -40,21 +40,21 @@ Forms.SetFlags("SwipeView_Experimental");
 - `TopItems`Тип `SwipeItems` , который представляет элементы считывания, которые могут быть вызваны при прокрутке элемента управления сверху вниз.
 - `BottomItems`Тип `SwipeItems` , который представляет элементы считывания, которые могут быть вызваны при прокрутке элемента управления снизу вверх.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 Кроме того, `SwipeView` компонент наследует [`Content`](xref:Xamarin.Forms.ContentView.Content) свойство от [`ContentView`](xref:Xamarin.Forms.ContentView) класса. `Content`Свойство является свойством Content `SwipeView` класса, поэтому его не нужно задавать явно.
 
 `SwipeView`Класс также определяет четыре события:
 
-- `SwipeStarted`активируется при начале считывания. `SwipeStartedEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` .
-- `SwipeChanging`происходит при перемещении прокрутки. `SwipeChangingEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` и `Offset` свойство типа `double` .
-- `SwipeEnded`возникает, когда прокрутка заканчивается. `SwipeEndedEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` .
-- `CloseRequested`возникает при закрытии считывания элементов.
+- `SwipeStarted` активируется при начале считывания. `SwipeStartedEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` .
+- `SwipeChanging` происходит при перемещении прокрутки. `SwipeChangingEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` и `Offset` свойство типа `double` .
+- `SwipeEnded` возникает, когда прокрутка заканчивается. `SwipeEndedEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` .
+- `CloseRequested` возникает при закрытии считывания элементов.
 
 Кроме того, `SwipeView` включает `Open` `Close` методы и, которые программно открывают и закрывают элементы для прокрутки соответственно.
 
 > [!NOTE]
-> `SwipeView`имеет зависящую от платформы платформу iOS и Android, которая управляет переходом, используемым при открытии `SwipeView` . Дополнительные сведения см. в разделе [Свипевиев считывание режима переходов в iOS](~/xamarin-forms/platform/ios/swipeview-swipetransitionmode.md) и [Свипевиев, проведите переход на Android](~/xamarin-forms/platform/android/swipeview-swipetransitionmode.md).
+> `SwipeView` имеет зависящую от платформы платформу iOS и Android, которая управляет переходом, используемым при открытии `SwipeView` . Дополнительные сведения см. в разделе [Свипевиев считывание режима переходов в iOS](~/xamarin-forms/platform/ios/swipeview-swipetransitionmode.md) и [Свипевиев, проведите переход на Android](~/xamarin-forms/platform/android/swipeview-swipetransitionmode.md).
 
 ## <a name="create-a-swipeview"></a>Создание Свипевиев
 
@@ -152,7 +152,7 @@ SwipeView swipeView = new SwipeView
 - `Mode`Тип `SwipeMode` , который указывает на результат взаимодействия при считывании. Дополнительные сведения о режиме прокрутки см. в разделе [режим прокрутки](#swipe-mode).
 - `SwipeBehaviorOnInvoked`Тип `SwipeBehaviorOnInvoked` , который указывает, как работает `SwipeView` после вызова элемента считывания. Дополнительные сведения о поведении при прокрутке см. в разделе [поведение при прокрутке](#swipe-behavior).
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 Каждый элемент прокрутки определяется как `SwipeItem` объект, помещенный в одну из четырех `SwipeItems` направленных коллекций. `SwipeItem`Класс является производным от [`MenuItem`](xref:Xamarin.Forms.MenuItem) класса и добавляет следующие члены:
 
@@ -195,7 +195,7 @@ SwipeView swipeView = new SwipeView
 
 ## <a name="swipe-direction"></a>Направление прокрутки
 
-`SwipeView`поддерживает четыре разных направления прокрутки с направлением считывания, определяемым направленной `SwipeItems` коллекцией, `SwipeItem` в которую добавляются объекты. Каждое направление прокрутки может содержать собственные элементы для считывания. Например, в следующем примере показано, для `SwipeView` которого элементы прокрутки зависят от направления прокрутки:
+`SwipeView` поддерживает четыре разных направления прокрутки с направлением считывания, определяемым направленной `SwipeItems` коллекцией, `SwipeItem` в которую добавляются объекты. Каждое направление прокрутки может содержать собственные элементы для считывания. Например, в следующем примере показано, для `SwipeView` которого элементы прокрутки зависят от направления прокрутки:
 
 ```xaml
 <SwipeView>
@@ -230,17 +230,17 @@ SwipeView swipeView = new SwipeView
 
 `SwipeStarted`События, `SwipeChanging` и `SwipeEnded` сообщают направление прокрутки через `SwipeDirection` свойство в аргументах события. Это свойство имеет тип `SwipeDirection` , который представляет собой перечисление, состоящее из четырех элементов:
 
-- `Right`Указывает, что произошло право прокрутки.
-- `Left`Указывает, что произошла левая прокрутка.
-- `Up`Указывает, что произошло предыдущее считывание.
-- `Down`Указывает, что произошло прокрутка вниз.
+- `Right` Указывает, что произошло право прокрутки.
+- `Left` Указывает, что произошла левая прокрутка.
+- `Up` Указывает, что произошло предыдущее считывание.
+- `Down` Указывает, что произошло прокрутка вниз.
 
 ## <a name="swipe-mode"></a>Режим прокрутки
 
 `SwipeItems`Класс имеет `Mode` свойство, которое указывает на результат взаимодействия при считывании. Этому свойству должно быть присвоено значение одного из `SwipeMode` членов перечисления:
 
-- `Reveal`Указывает, что прокрутка показывает элементы считывания. Это значение по умолчанию для свойства `SwipeItems.Mode`.
-- `Execute`Указывает, что прокрутка выполняет прокрутку элементов.
+- `Reveal` Указывает, что прокрутка показывает элементы считывания. Это значение по умолчанию для свойства `SwipeItems.Mode`.
+- `Execute` Указывает, что прокрутка выполняет прокрутку элементов.
 
 В режиме открытия пользователь выполняет `SwipeView` команду, чтобы открыть меню, состоящее из одного или нескольких элементов считывания, и для его выполнения необходимо явно коснуться элемента для прокрутки. После выполнения элемента прокрутки элементы прокрутки закрываются, а `SwipeView` содержимое снова отображается. В режиме выполнения пользователь проведите объект, `SwipeView` чтобы открыть меню, состоящее из одного большего количества элементов, которые затем автоматически выполняются. После выполнения прокрутка элементов закрывается и `SwipeView` содержимое снова отображается.
 
@@ -266,9 +266,9 @@ SwipeView swipeView = new SwipeView
 
 `SwipeItems`Класс имеет `SwipeBehaviorOnInvoked` свойство, которое указывает, как работает `SwipeView` после вызова элемента считывания. Этому свойству должно быть присвоено значение одного из `SwipeBehaviorOnInvoked` членов перечисления:
 
-- `Auto`Указывает, что в режиме отображения `SwipeView` закрывается после вызова элемента считывания и в режиме выполнения `SwipeView` после вызова элемента считывания остается открытым. Это значение по умолчанию для свойства `SwipeItems.SwipeBehaviorOnInvoked`.
-- `Close`Указывает, что `SwipeView` закрывается после вызова элемента считывания.
-- `RemainOpen`Указывает, что `SwipeView` компонент остается открытым после вызова элемента считывания.
+- `Auto` Указывает, что в режиме отображения `SwipeView` закрывается после вызова элемента считывания и в режиме выполнения `SwipeView` после вызова элемента считывания остается открытым. Это значение по умолчанию для свойства `SwipeItems.SwipeBehaviorOnInvoked`.
+- `Close` Указывает, что `SwipeView` закрывается после вызова элемента считывания.
+- `RemainOpen` Указывает, что `SwipeView` компонент остается открытым после вызова элемента считывания.
 
 В следующем примере показана `SwipeView` Настройка, которая остается открытой после вызова элемента считывания:
 
@@ -297,7 +297,7 @@ SwipeView swipeView = new SwipeView
 - `Command`Тип `ICommand` , который выполняется при касании элемента прокрутки.
 - `CommandParameter` с типом `object`, который передается как параметр в `Command`.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 `SwipeItemView`Класс также определяет `Invoked` событие, которое возникает при касании элемента, после `Command` выполнения.
 
@@ -329,7 +329,7 @@ SwipeView swipeView = new SwipeView
 
 ## <a name="open-and-close-a-swipeview-programmatically"></a>Программное открытие и закрытие SwipeView
 
-`SwipeView`включает `Open` `Close` методы и, которые программно открывают и закрывают элементы прокрутки соответственно.
+`SwipeView` включает `Open` `Close` методы и, которые программно открывают и закрывают элементы прокрутки соответственно.
 
 `Open`Метод требует `OpenSwipeItem` аргумент, чтобы указать направление, `SwipeView` из которого будет открываться. `OpenSwipeItem`Перечисление состоит из четырех элементов:
 
@@ -361,5 +361,5 @@ swipeView.Close();
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Свипевиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-swipeviewdemos/)
-- [Xamarin.FormsMenuItem](~/xamarin-forms/user-interface/menuitem.md)
+- [Свипевиев (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-swipeviewdemos/)
+- [Xamarin.Forms MenuItem](~/xamarin-forms/user-interface/menuitem.md)

@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsСтили текста
+title: Xamarin.Forms Стили текста
 description: В этой статье объясняется, как выполнять стилизацию текста в Xamarin.Forms приложениях. Стили можно определить один раз и использовать во многих представлениях, но стиль можно использовать только с представлениями одного типа.
 ms.prod: xamarin
 ms.assetid: 57C0CFD6-A568-46B8-ADA1-BF25681893CF
@@ -10,25 +10,25 @@ ms.date: 05/22/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7d82348231c4b4905f2f70b80f73c45f2f0bf66b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e2c6898439da5869d79bc500643ca3cfc52c2e3f
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84572004"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557560"
 ---
-# <a name="xamarinforms-text-styles"></a>Xamarin.FormsСтили текста
+# <a name="no-locxamarinforms-text-styles"></a>Xamarin.Forms Стили текста
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
 
-_Стилизация текста в Xamarin. Forms_
+_Стилизация текста в Xamarin.Forms_
 
 Стили можно использовать для настройки внешнего вида меток, записей и редакторов. Стили можно определить один раз и использовать во многих представлениях, но стиль можно использовать только с представлениями одного типа.
 Стили могут быть предоставлены `Key` и применены выборочно с помощью свойства конкретного элемента управления `Style` .
 
 ## <a name="built-in-styles"></a>Встроенные стили
 
-Xamarin.Formsвключает несколько [встроенных](xref:Xamarin.Forms.Device.Styles) стилей для распространенных сценариев:
+Xamarin.Forms включает несколько [встроенных](xref:Xamarin.Forms.Device.Styles) стилей для распространенных сценариев:
 
 - `BodyStyle`
 - `CaptionStyle`
@@ -126,7 +126,7 @@ label.Style = (Style)Resources["LabelStyle"];
 label.Style = Device.Styles.TitleStyle;
 ```
 
-## <a name="accessibility"></a>Accessibility
+## <a name="accessibility"></a>Специальные возможности
 
 Существуют встроенные стили, облегчающие соблюдение настроек специальных возможностей. При использовании любого из встроенных стилей размеры шрифтов автоматически увеличиваются, если пользователь настроит свои настройки специальных возможностей соответствующим образом.
 
@@ -146,5 +146,5 @@ label.Style = Device.Styles.TitleStyle;
 
 - [Создание мобильных приложений с помощью Xamarin.Forms , глава 12](https://developer.xamarin.com/r/xamarin-forms/book/chapter12.pdf)
 - [Стили](~/xamarin-forms/user-interface/styles/index.md)
-- [Текст (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+- [Текст (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-text)
 - [Style](xref:Xamarin.Forms.Style)

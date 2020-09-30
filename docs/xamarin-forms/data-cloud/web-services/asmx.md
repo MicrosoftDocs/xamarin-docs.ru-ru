@@ -10,16 +10,16 @@ ms.date: 04/02/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: aa600974cdf25f8f85d9152edc4a377334cc8c78
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 90f93c2fd17771ccd8bc5dc67404b76cd4ab9c30
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936556"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563007"
 ---
 # <a name="consume-an-aspnet-web-service-asmx"></a>Использование веб-службы ASP.NET (ASMX)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todoasmx)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todoasmx)
 
 _ASMX предоставляет возможность создавать веб-службы, которые отправляют сообщения с помощью протокола SOAP. SOAP — это независимый от платформы и не зависящий от языка протокол для создания веб-служб и доступа к ним. Потребители службы ASMX не должны знать ничего о платформе, объектной модели или языке программирования, используемом для реализации службы. Им нужно только разобраться, как отправлять и получать сообщения SOAP. В этой статье показано, как использовать службу ASMX SOAP из Xamarin.Forms приложения._
 
@@ -67,7 +67,7 @@ SOAP может использовать несколько транспортн
 
 1. Создает экземпляр в `TodoService` качестве экземпляра уровня класса
 1. Создает коллекцию, вызываемую `Items` для хранения `TodoItem` объектов
-1. Указывает пользовательскую конечную точку для необязательного `Url` свойства в`TodoService`
+1. Указывает пользовательскую конечную точку для необязательного `Url` свойства в `TodoService`
 
 ```csharp
 public class SoapService : ISoapService
@@ -270,5 +270,5 @@ public class SoapService : ISoapService
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Тодоасмкс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todoasmx)
-- [Объектом](https://docs.microsoft.com/dotnet/api/system.iasyncresult)
+- [Тодоасмкс (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todoasmx)
+- [Объектом](/dotnet/api/system.iasyncresult)

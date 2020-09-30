@@ -10,12 +10,12 @@ ms.date: 01/29/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4381b1fbe7b38c2695bce645903d599bdb792fc2
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f447a89ca4b4f21554a75ec52c5771ee9f9d35fd
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937440"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562994"
 ---
 # <a name="adding-ios-specific-formatting"></a>Добавление форматирования, относящегося к iOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "86937440"
 
 Файл **info. plist** позволяет настроить некоторые аспекты Рендереринг приложения iOS, например способ отображения строки состояния (и состояние).
 
-Например, в [примере TODO](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo) используется следующий код для установки цвета и цвета текста панели навигации на всех платформах:
+Например, в [примере TODO](/samples/xamarin/xamarin-forms-samples/todo) используется следующий код для установки цвета и цвета текста панели навигации на всех платформах:
 
 ```csharp
 var nav = new NavigationPage (new TodoListPage ());
@@ -85,7 +85,7 @@ public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 
 ### <a name="uitabbar"></a>уитаббар
 
-По умолчанию выбранный значок панели вкладок в элементе[`TabbedPage`](~/xamarin-forms/app-fundamentals/navigation/tabbed-page.md)
+По умолчанию выбранный значок панели вкладок в элементе [`TabbedPage`](~/xamarin-forms/app-fundamentals/navigation/tabbed-page.md)
 будет синим:
 
 ![Значок панели вкладок iOS по умолчанию в Таббедпаже](theme-images/tabbar-default.png)
@@ -100,8 +100,8 @@ UITabBar.Appearance.SelectedImageTintColor = UIColor.FromRGB(0x91, 0xCA, 0x47); 
 
 ![Зеленый значок панели вкладок iOS в Таббедпаже](theme-images/tabbar-custom.png)
 
-Использование этого API позволяет настроить внешний вид элементаXamarin.Forms
-`TabbedPage`в iOS с очень небольшим кодом. Дополнительные сведения об использовании пользовательского модуля подготовки отчетов для установки определенного шрифта для вкладки см. в описании инструкции по [настройке вкладок](https://github.com/xamarin/recipes/tree/master/Recipes/xamarin-forms/iOS/customize-tabs) .
+Использование этого API позволяет настроить внешний вид элемента Xamarin.Forms
+`TabbedPage` в iOS с очень небольшим кодом. Дополнительные сведения об использовании пользовательского модуля подготовки отчетов для установки определенного шрифта для вкладки см. в описании инструкции по [настройке вкладок](https://github.com/xamarin/recipes/tree/master/Recipes/xamarin-forms/iOS/customize-tabs) .
 
 ### <a name="uiswitch"></a>UISwitch
 
@@ -111,7 +111,7 @@ UITabBar.Appearance.SelectedImageTintColor = UIColor.FromRGB(0x91, 0xCA, 0x47); 
 UISwitch.Appearance.OnTintColor = UIColor.FromRGB(0x91, 0xCA, 0x47); // green
 ```
 
-Эти два снимка экрана показывают элемент управления по умолчанию `UISwitch` слева и настроенную версию (параметр `Appearance` ) справа в [примере TODO](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo):
+Эти два снимка экрана показывают элемент управления по умолчанию `UISwitch` слева и настроенную версию (параметр `Appearance` ) справа в [примере TODO](/samples/xamarin/xamarin-forms-samples/todo):
 
 ![Цвет Уисвитч по умолчанию](theme-images/switch-default.png) ![Настроенный цвет Уисвитч](theme-images/switch-custom.png)
 

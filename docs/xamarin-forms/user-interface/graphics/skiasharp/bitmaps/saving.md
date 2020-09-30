@@ -10,12 +10,12 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 01f4fcf1953658af44d2a8996913860a3b605abf
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 2e0c4d247f3ecf9c1b8e077c4a96712e9ed138ca
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138662"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562955"
 ---
 # <a name="saving-skiasharp-bitmaps-to-files"></a>Сохранение точечных рисунков SkiaSharp в файлах
 
@@ -71,7 +71,7 @@ public Boolean Encode (SKWStream dst, SKEncodedImageFormat format, Int32 quality
 
 Если файл должен совместно использоваться другими приложениями, его необходимо сохранить в библиотеке фотографий пользователя. Для этой задачи требуется код, зависящий от платформы, и использование Xamarin.Forms [`DependencyService`](xref:Xamarin.Forms.DependencyService) .
 
-Проект **скиашарпформсдемо** в приложении [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) определяет `IPhotoLibrary` интерфейс, используемый с `DependencyService` классом. Он определяет синтаксис `SavePhotoAsync` метода:
+Проект **скиашарпформсдемо** в приложении [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) определяет `IPhotoLibrary` интерфейс, используемый с `DependencyService` классом. Он определяет синтаксис `SavePhotoAsync` метода:
 
 ```csharp
 public interface IPhotoLibrary
@@ -248,7 +248,7 @@ public class PhotoLibrary : IPhotoLibrary
 public Boolean Encode (SKWStream dst, SKEncodedImageFormat format, Int32 quality)
 ```
 
-[`SKEncodedImageFormat`](xref:SkiaSharp.SKEncodedImageFormat)— Это перечисление с элементами, которые ссылаются на одиннадцать форматов файлов, некоторые из которых довольно понятны:
+[`SKEncodedImageFormat`](xref:SkiaSharp.SKEncodedImageFormat) — Это перечисление с элементами, которые ссылаются на одиннадцать форматов файлов, некоторые из которых довольно понятны:
 
 - `Astc`&mdash;Адаптивное масштабируемое сжатие текстур
 - `Bmp`&mdash;Точечный рисунок Windows
@@ -283,7 +283,7 @@ using (SKManagedWStream wstream = new SKManagedWStream(memStream))
 
 `SKManagedWStream`Класс является производным от `SKWStream` (который означает "записываемый поток"). `Encode`Метод записывает закодированный файл точечного рисунка в поток. Комментарии в этом коде относятся к проверке ошибок, которые может потребоваться выполнить.
 
-На странице **Сохранение форматов файлов** в приложении [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) используется аналогичный код, позволяющий экспериментировать с сохранением растрового изображения в различных форматах.
+На странице **Сохранение форматов файлов** в приложении [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) используется аналогичный код, позволяющий экспериментировать с сохранением растрового изображения в различных форматах.
 
 XAML-файл содержит объект `SKCanvasView` , который отображает точечный рисунок, а остальная часть страницы содержит все, что требуется приложению для вызова `Encode` метода `SKBitmap` . Он имеет `Picker` для члена `SKEncodedImageFormat` перечисления, `Slider` для аргумента Quality в форматах с потерей растровых изображений, двух `Entry` представлений для имени файла и папки, а также `Button` для сохранения файла.
 
@@ -458,7 +458,7 @@ public partial class SaveFileFormatsPage : ContentPage
 
 |Формат|Качество|Размер|
 |------|------:|---:|
-| PNG | Недоступно | 492K |
+| PNG | Н/Д | 492K |
 | JPEG | 0 | 2.95 р |
 |      | 50 | 22.1 р |
 |      | 100 | 206K |
@@ -474,7 +474,7 @@ public partial class SaveFileFormatsPage : ContentPage
 
 В статье о [**прорисовке пальцев в SkiaSharp**](../paths/finger-paint.md) показано, как использовать сенсорное отслеживание для реализации простейшей программы рисования пальцами. Программа поддерживала только один цвет и только одну толщину обводки, но все рисование в коллекции объектов сохранилась `SKPath` .
 
-На странице с изображением **пальца с сохранением** в образце [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) также сохраняется вся прорисовка в коллекции `SKPath` объектов, но рисунок также визуализируется на точечном рисунке, который может быть сохранен в библиотеке фотографий.
+На странице с изображением **пальца с сохранением** в образце [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) также сохраняется вся прорисовка в коллекции `SKPath` объектов, но рисунок также визуализируется на точечном рисунке, который может быть сохранен в библиотеке фотографий.
 
 Большая часть этой программы похожа на первоначальную программу **рисования пальца** . Одним из улучшений является то, что XAML-файл теперь создает экземпляры кнопок с надписью **clear** и **Save**:
 
@@ -701,7 +701,7 @@ public partial class FingerPaintSavePage : ContentPage
 
 [![Экономия при сохранении пальца](saving-images/FingerPaintSave.png "Экономия при сохранении пальца")](saving-images/FingerPaintSave-Large.png#lightbox)
 
-В примере [**спинпаинт**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-spinpaint) используется очень похожий метод. Это также программа рисования пальцами, за исключением того, что пользователь рисует на цикличном диске, который затем воссоздает макет по другим четырем квадрантам. Цвет заливки пальца изменяется по мере вращения диска:
+В примере [**спинпаинт**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-spinpaint) используется очень похожий метод. Это также программа рисования пальцами, за исключением того, что пользователь рисует на цикличном диске, который затем воссоздает макет по другим четырем квадрантам. Цвет заливки пальца изменяется по мере вращения диска:
 
 [![Покраска](saving-images/SpinPaint.png "Покраска")](saving-images/SpinPaint-Large.png#lightbox)
 
@@ -709,6 +709,6 @@ public partial class FingerPaintSavePage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
-- [Спинпаинт (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-spinpaint)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [Спинпаинт (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-spinpaint)

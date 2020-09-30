@@ -1,5 +1,5 @@
 ---
-title: Пользовательские анимации вXamarin.Forms
+title: Пользовательские анимации в Xamarin.Forms
 description: В этой статье показано, как использовать класс анимации Xamarin. Forms для создания и отмены анимации, синхронизации нескольких анимаций и создания пользовательских анимаций, которые анимировать свойства, которые не анимированы с помощью существующих методов анимации.
 ms.prod: xamarin
 ms.assetid: 03B2E3FC-E720-4D45-B9A0-711081FC1907
@@ -10,14 +10,14 @@ ms.date: 02/10/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 573f18de0d7593d832505eb6bb2b492caea024a1
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 3731f35ab03edf9b65c3adca7a2091c2a609b552
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84946108"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563397"
 ---
-# <a name="custom-animations-in-xamarinforms"></a>Пользовательские анимации вXamarin.Forms
+# <a name="custom-animations-in-no-locxamarinforms"></a>Пользовательские анимации в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-animation-custom)
 
@@ -181,6 +181,6 @@ await boxView.ColorTo(Color.Blue, Color.Red, c => boxView.Color = c, 4000);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пользовательские анимации (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-animation-custom)
+- [Пользовательские анимации (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-animation-custom)
 - [API анимации](xref:Xamarin.Forms.Animation)
 - [API AnimationExtensions](xref:Xamarin.Forms.AnimationExtensions)

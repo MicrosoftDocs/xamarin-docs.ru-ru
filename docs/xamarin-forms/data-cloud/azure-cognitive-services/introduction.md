@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsОбщие сведения об Azure Cognitive Services
+title: Xamarin.Forms Общие сведения об Azure Cognitive Services
 description: В этой статье приводятся общие сведения о примере приложения, в котором показано, как вызывать некоторые API-интерфейсы Microsoft для работы со службой.
 ms.prod: xamarin
 ms.assetid: 74121ADB-1322-4C1E-A103-F37257BC7CB0
@@ -10,14 +10,14 @@ ms.date: 02/08/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cce5b0fc9c3d1d04c20b1be242197e3bc9e4f901
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f40220a29611bb365dc77eeb5e85445a0df19fd6
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929342"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563254"
 ---
-# <a name="xamarinforms-and-azure-cognitive-services-introduction"></a>Xamarin.FormsОбщие сведения об Azure Cognitive Services
+# <a name="no-locxamarinforms-and-azure-cognitive-services-introduction"></a>Xamarin.Forms Общие сведения об Azure Cognitive Services
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
 
@@ -79,10 +79,10 @@ _Microsoft Cognitive Services — это набор API-интерфейсов, 
 
 Пример приложения использует следующие пакеты NuGet:
 
-- `Newtonsoft.Json`— предоставляет платформу JSON для .NET.
-- `PCLStorage`— предоставляет набор межплатформенных API-интерфейсов ввода-вывода локальных файлов.
-- `sqlite-net-pcl`— предоставляет хранилище базы данных SQLite.
-- `Xam.Plugin.Media`— предоставляет API-интерфейсы для межплатформенного принятия и выбора фотографий.
+- `Newtonsoft.Json` — предоставляет платформу JSON для .NET.
+- `PCLStorage` — предоставляет набор межплатформенных API-интерфейсов ввода-вывода локальных файлов.
+- `sqlite-net-pcl` — предоставляет хранилище базы данных SQLite.
+- `Xam.Plugin.Media` — предоставляет API-интерфейсы для межплатформенного принятия и выбора фотографий.
 
 Кроме того, эти пакеты NuGet также устанавливают собственные зависимости.
 
@@ -132,4 +132,4 @@ public class TodoItem
 
 - [Распознавание речи с помощью API службы распознавания речи](~/xamarin-forms/data-cloud/azure-cognitive-services/speech-recognition.md)
 - [Документация по Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services/documentation)
-- [Cognitive Services ToDo (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
+- [Cognitive Services ToDo (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)

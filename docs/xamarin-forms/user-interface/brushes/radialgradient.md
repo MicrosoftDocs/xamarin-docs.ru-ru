@@ -1,5 +1,5 @@
 ---
-title: 'Xamarin.FormsКисти: радиальные градиенты'
+title: 'Xamarin.Forms Кисти: радиальные градиенты'
 description: Xamarin.FormsКласс RadialGradientBrush закрашивает область с радиальным градиентом.
 ms.prod: xamarin
 ms.assetid: 099BA530-3B38-4005-9B19-A0EB4D4DEEFC
@@ -10,27 +10,27 @@ ms.date: 07/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 897ffd8b86eb161f0264a095b5a041828e631dae
-ms.sourcegitcommit: 579ec4f2884fa391e5e214a3952cd6004c521eb8
+ms.openlocfilehash: a56d2f590b78bef0f47c764862b891c9c0d46129
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87919554"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563579"
 ---
-# <a name="no-locxamarinforms-brushes-radial-gradients"></a>Xamarin.FormsКисти: радиальные градиенты
+# <a name="no-locxamarinforms-brushes-radial-gradients"></a>Xamarin.Forms Кисти: радиальные градиенты
 
 ![Предварительный просмотр API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/BrushDemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
 
-`RadialGradientBrush`Класс является производным от `GradientBrush` класса и закрашивает область с радиальным градиентом, который смешивает два или более цвета в окружности. `GradientStop`объекты используются для указания цветов в градиенте и их позиций. Дополнительные сведения об `GradientStop` объектах см. в разделе [ Xamarin.Forms кисти: градиенты](gradient.md).
+`RadialGradientBrush`Класс является производным от `GradientBrush` класса и закрашивает область с радиальным градиентом, который смешивает два или более цвета в окружности. `GradientStop` объекты используются для указания цветов в градиенте и их позиций. Дополнительные сведения об `GradientStop` объектах см. в разделе [ Xamarin.Forms кисти: градиенты](gradient.md).
 
 Класс `RadialGradientBrush` определяет следующие свойства:
 
 - `Center`Тип [`Point`](xref:Xamarin.Forms.Point) , представляющий центральную точку окружности для радиального градиента. Значение этого свойства по умолчанию равно (0,5, 0,5).
 - `Radius`Тип `double` , который представляет радиус окружности для радиального градиента. Значение этого свойства по умолчанию равно 0,5.
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 `RadialGradientBrush`Класс также содержит `IsEmpty` метод, который возвращает объект `bool` , который представляет, назначена ли кисть какие-либо `GradientStop` объекты.
 
@@ -102,5 +102,5 @@ ms.locfileid: "87919554"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Брушесдемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/BrushDemos)
-- [Xamarin.FormsКисти: градиенты](gradient.md)
+- [Брушесдемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
+- [Xamarin.Forms Кисти: градиенты](gradient.md)

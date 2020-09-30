@@ -10,12 +10,12 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6a28dd20eb8978334365ac217df1241e5288fd28
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 8c6d139e47974247ce4af6bfa6c32331fcf7c824
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137432"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563137"
 ---
 # <a name="skiasharp-bitmap-tiling"></a>Разбиение растрового изображения SkiaSharp
 
@@ -45,7 +45,7 @@ public static SKShader CreateBitmap (SKBitmap src, SKShaderTileMode tmx, SKShade
 
 ## <a name="exploring-the-tile-modes"></a>Изучение режимов плиток
 
-Первая программа в разделе **Мозаичное заполнение растрового изображения** на странице **шейдеры и другие эффекты** в образце [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) демонстрирует влияние двух `SKShaderTileMode` аргументов. Файл XAML **режима отражения плитки растрового изображения** создает `SKCanvasView` и два `Picker` представления, которые позволяют выбрать `SKShaderTilerMode` значение для горизонтального и вертикального мозаичного заполнения. Обратите внимание, что `SKShaderTileMode` в разделе определен массив элементов `Resources` :
+Первая программа в разделе **Мозаичное заполнение растрового изображения** на странице **шейдеры и другие эффекты** в образце [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) демонстрирует влияние двух `SKShaderTileMode` аргументов. Файл XAML **режима отражения плитки растрового изображения** создает `SKCanvasView` и два `Picker` представления, которые позволяют выбрать `SKShaderTilerMode` значение для горизонтального и вертикального мозаичного заполнения. Обратите внимание, что `SKShaderTileMode` в разделе определен массив элементов `Resources` :
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -250,7 +250,7 @@ public class AlgorithmicBrickWallPage : ContentPage
 }
 ```
 
-Ниже приведен результат.
+Ниже приведен результат:
 
 [![Настенный стенной кирпич](bitmap-tiling-images/AlgorithmicBrickWall.png "Настенный стенной кирпич")](bitmap-tiling-images/AlgorithmicBrickWall-Large.png#lightbox)
 
@@ -303,7 +303,7 @@ public class PhotographicBrickWallPage : ContentPage
 
 Для получения подходящего точечного рисунка для плитки требуется некоторое задание. Это не работает слишком хорошо, так как более темный модуль оказывается слишком большим. Он отображается регулярно в повторяющихся изображениях, что приводит к тому, что этот кирпич был создан из уменьшенного точечного рисунка.
 
-В папку **Media** образца [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) также входит этот образ стены фишки:
+В папку **Media** образца [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) также входит этот образ стены фишки:
 
 ![Плитка стены фишек](bitmap-tiling-images/StoneWallTile.jpg "Плитка стены фишек")
 
@@ -369,7 +369,7 @@ SKMatrix.PostConcat(ref matrix, SKMatrix.MakeRotationDegrees(15));
 
 В разделе [**Выравнивание мозаики**](#tile-alignment)раздела вы увидите пример преобразования Преобразование, примененного к шейдеру.
 
-Пример автономного типа данных [**Cat**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/catclock) (не часть **скиашарпформсдемос**) имитирует фон в виде мозаичного изображения, основанного на этом битовом рисунке размером 240 пикселей.
+Пример автономного типа данных [**Cat**](/samples/xamarin/xamarin-forms-samples/catclock) (не часть **скиашарпформсдемос**) имитирует фон в виде мозаичного изображения, основанного на этом битовом рисунке размером 240 пикселей.
 
 ![Деревянное зерно](bitmap-tiling-images/WoodGrain.png "Деревянное зерно")
 
@@ -782,6 +782,6 @@ public class AnimatedBitmapTilePage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
-- [Катклокк (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/catclock)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [Катклокк (пример)](/samples/xamarin/xamarin-forms-samples/catclock)

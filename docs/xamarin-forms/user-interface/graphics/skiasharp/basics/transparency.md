@@ -10,18 +10,18 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 735aae1b9d94865bd34450861bd6c57b08c420c2
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: af1747a19af6c715d1594122393e500d1f73c79b
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84134723"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562526"
 ---
 # <a name="skiasharp-transparency"></a>Прозрачность SkiaSharp
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-Как вы видели, [`SKPaint`](xref:SkiaSharp.SKPaint) класс включает [`Color`](xref:SkiaSharp.SKPaint.Color) свойство типа [`SKColor`](xref:SkiaSharp.SKColor) . `SKColor`включает альфа-канал, поэтому все цвета со `SKColor` значением могут быть частично прозрачными. 
+Как вы видели, [`SKPaint`](xref:SkiaSharp.SKPaint) класс включает [`Color`](xref:SkiaSharp.SKPaint.Color) свойство типа [`SKColor`](xref:SkiaSharp.SKColor) . `SKColor` включает альфа-канал, поэтому все цвета со `SKColor` значением могут быть частично прозрачными. 
 
 Часть прозрачности была продемонстрирована в статье [**основная анимация в SkiaSharp**](animation.md) . В этой статье более подробно рассматривается прозрачность для объединения нескольких объектов в одной сцене, способ, который иногда называется _наложением_. Более сложные методики наложения обсуждаются в статьях в разделе [**SkiaSharp шейдеры**](../effects/shaders/index.md) .
 
@@ -39,7 +39,7 @@ SKColor (byte red, byte green, byte blue, byte alpha);
 SKColor halfTransparentBlue = SKColors.Blue.WithAlpha(0x80);
 ```
 
-Использование частично прозрачного текста демонстрируется в кодовой странице **код больше** в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . На этой странице два текстовых строки постепенно перетекает, включая прозрачность `SKColor` значений:
+Использование частично прозрачного текста демонстрируется в кодовой странице **код больше** в примере [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . На этой странице два текстовых строки постепенно перетекает, включая прозрачность `SKColor` значений:
 
 ```csharp
 public class CodeMoreCodePage : ContentPage
@@ -242,5 +242,5 @@ public partial class BitmapDissolvePage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

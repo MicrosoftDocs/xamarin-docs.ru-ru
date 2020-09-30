@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsДанные Карауселвиев
+title: Xamarin.Forms Данные Карауселвиев
 description: Карауселвиев заполняется данными путем присвоения свойству ItemsSource любой коллекции, реализующей IEnumerable.
 ms.prod: xamarin
 ms.assetid: 20DB2C57-CE3A-4D91-80DC-73AE361A3CB0
@@ -10,20 +10,20 @@ ms.date: 04/29/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f2359880626b292f410af094c82ba6bb3ed50426
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: b0654aef28ac356fdffc5a846f9ca654db240367
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918405"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562864"
 ---
-# <a name="no-locxamarinforms-carouselview-data"></a>Xamarin.FormsДанные Карауселвиев
+# <a name="no-locxamarinforms-carouselview-data"></a>Xamarin.Forms Данные Карауселвиев
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)включает следующие свойства, которые определяют отображаемые данные и его внешний вид:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) включает следующие свойства, которые определяют отображаемые данные и его внешний вид:
 
 - [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource), типа `IEnumerable` , задает коллекцию элементов для отображения и имеет значение по умолчанию `null` .
 - [`ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate)Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) — указывает шаблон, применяемый к каждому элементу в коллекции отображаемых элементов.
@@ -31,9 +31,9 @@ ms.locfileid: "87918405"
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что свойства могут быть целевыми объектами привязок данных.
 
 > [!NOTE]
-> [`CarouselView`](xref:Xamarin.Forms.CarouselView)Определяет `ItemsUpdatingScrollMode` свойство, представляющее поведение прокрутки `CarouselView` при добавлении новых элементов к нему. Дополнительные сведения об этом свойстве см. в разделе [управление позицией прокрутки при добавлении новых элементов](scrolling.md#control-scroll-position-when-new-items-are-added).
+> [`CarouselView`](xref:Xamarin.Forms.CarouselView) Определяет `ItemsUpdatingScrollMode` свойство, представляющее поведение прокрутки `CarouselView` при добавлении новых элементов к нему. Дополнительные сведения об этом свойстве см. в разделе [управление позицией прокрутки при добавлении новых элементов](scrolling.md#control-scroll-position-when-new-items-are-added).
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)поддерживает добавочную виртуализацию данных при прокрутке пользователем. Дополнительные сведения см. в статье [добавочная загрузка данных](#load-data-incrementally).
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) поддерживает добавочную виртуализацию данных при прокрутке пользователем. Дополнительные сведения см. в статье [добавочная загрузка данных](#load-data-incrementally).
 
 ## <a name="populate-a-carouselview-with-data"></a>Заполнение Карауселвиев данными
 
@@ -85,7 +85,7 @@ carouselView.ItemsSource = new string[]
 
 ### <a name="data-binding"></a>привязка данных,
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)может заполняться данными с помощью привязки данных для привязки своего [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства к `IEnumerable` коллекции. В XAML это достигается с помощью `Binding` расширения разметки:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) может заполняться данными с помощью привязки данных для привязки своего [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства к `IEnumerable` коллекции. В XAML это достигается с помощью `Binding` расширения разметки:
 
 ```xaml
 <CarouselView ItemsSource="{Binding Monkeys}" />
@@ -291,7 +291,7 @@ public class MonkeyDataTemplateSelector : DataTemplateSelector
 
 ## <a name="context-menus"></a>Контекстные меню
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)поддерживает контекстные меню для элементов данных с помощью `SwipeView` , которое открывает контекстное меню с помощью жеста прокрутки. `SwipeView`— Это контейнерный элемент управления, который создает оболочку вокруг элемента содержимого и предоставляет элементы контекстного меню для этого элемента содержимого. Таким образом, контекстные меню реализуются для, `CarouselView` создавая объект `SwipeView` , который определяет содержимое, `SwipeView` вокруг которого выполняется оболочка, и элементы контекстного меню, которые выводятся с помощью жеста прокрутки. Это достигается путем добавления в `SwipeView` [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , который определяет внешний вид каждого элемента данных в `CarouselView` :
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) поддерживает контекстные меню для элементов данных с помощью `SwipeView` , которое открывает контекстное меню с помощью жеста прокрутки. `SwipeView`— Это контейнерный элемент управления, который создает оболочку вокруг элемента содержимого и предоставляет элементы контекстного меню для этого элемента содержимого. Таким образом, контекстные меню реализуются для, `CarouselView` создавая объект `SwipeView` , который определяет содержимое, `SwipeView` вокруг которого выполняется оболочка, и элементы контекстного меню, которые выводятся с помощью жеста прокрутки. Это достигается путем добавления в `SwipeView` [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , который определяет внешний вид каждого элемента данных в `CarouselView` :
 
 ```xaml
 <CarouselView x:Name="carouselView"
@@ -383,13 +383,13 @@ carouselView.ItemTemplate = new DataTemplate(() =>
 [![Снимок экрана: элемент контекстного меню карауселвиев внизу в iOS и Android](populate-data-images/swipeview-bottom.png "Карауселвиев с наименьшим пунктом контекстного меню Свипевиев")](populate-data-images/swipeview-bottom-large.png#lightbox "Карауселвиев с наименьшим пунктом контекстного меню Свипевиев") 
  [ ![Снимок экрана: элемент меню верхнего уровня Карауселвиев в iOS и Android](populate-data-images/swipeview-top.png "Карауселвиев с элементом контекстного меню Top Свипевиев")](populate-data-images/swipeview-top-large.png#lightbox "Карауселвиев с элементом контекстного меню Top Свипевиев")
 
-`SwipeView`поддерживает четыре разных направления прокрутки с направлением считывания, определяемым направленной `SwipeItems` коллекцией, `SwipeItems` в которую добавляются объекты. По умолчанию элемент прокрутки выполняется при касании пользователем. Кроме того, после выполнения элемента считывания элементы прокрутки скрываются и `SwipeView` содержимое отображается повторно. Однако эти поведения можно изменить.
+`SwipeView` поддерживает четыре разных направления прокрутки с направлением считывания, определяемым направленной `SwipeItems` коллекцией, `SwipeItems` в которую добавляются объекты. По умолчанию элемент прокрутки выполняется при касании пользователем. Кроме того, после выполнения элемента считывания элементы прокрутки скрываются и `SwipeView` содержимое отображается повторно. Однако эти поведения можно изменить.
 
 Дополнительные сведения об `SwipeView` элементе управления см. в разделе [ Xamarin.Forms свипевиев](~/xamarin-forms/user-interface/swipeview.md).
 
 ## <a name="pull-to-refresh"></a>Обновление путем оттягивания
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)поддерживает функцию Pull для обновления с помощью `RefreshView` , которая позволяет обновлять отображаемые данные путем извлечения элементов. `RefreshView`— Это контейнерный элемент управления, предоставляющий функции обновления для своего дочернего элемента, при условии, что дочерний объект поддерживает прокручиваемое содержимое. Таким образом, запрос на обновление реализуется для, `CarouselView` задавая его в качестве дочернего элемента для `RefreshView` :
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) поддерживает функцию Pull для обновления с помощью `RefreshView` , которая позволяет обновлять отображаемые данные путем извлечения элементов. `RefreshView`— Это контейнерный элемент управления, предоставляющий функции обновления для своего дочернего элемента, при условии, что дочерний объект поддерживает прокручиваемое содержимое. Таким образом, запрос на обновление реализуется для, `CarouselView` задавая его в качестве дочернего элемента для `RefreshView` :
 
 ```xaml
 <RefreshView IsRefreshing="{Binding IsRefreshing}"
@@ -428,20 +428,20 @@ refreshView.Content = carouselView;
 
 ## <a name="load-data-incrementally"></a>Добавочная загрузка данных
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)поддерживает добавочную виртуализацию данных при прокрутке пользователем. Это позволяет выполнять такие сценарии, как асинхронная загрузка страницы данных из веб-службы при прокрутке пользователем. Кроме того, точка, в которой загружаются дополнительные данные, настраивается таким образом, что пользователи не видят пустое пространство или останавливаются при прокрутке.
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) поддерживает добавочную виртуализацию данных при прокрутке пользователем. Это позволяет выполнять такие сценарии, как асинхронная загрузка страницы данных из веб-службы при прокрутке пользователем. Кроме того, точка, в которой загружаются дополнительные данные, настраивается таким образом, что пользователи не видят пустое пространство или останавливаются при прокрутке.
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)определяет следующие свойства для управления добавочной загрузкой данных:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) определяет следующие свойства для управления добавочной загрузкой данных:
 
 - `RemainingItemsThreshold`, тип `int` , пороговое значение элементов, которые еще не отображаются в списке, в котором `RemainingItemsThresholdReached` будет вызвано событие.
 - `RemainingItemsThresholdReachedCommand`Тип `ICommand` , который выполняется при `RemainingItemsThreshold` достижении.
 - `RemainingItemsThresholdReachedCommandParameter` с типом `object`, который передается как параметр в `RemainingItemsThresholdReachedCommand`.
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)также определяет `RemainingItemsThresholdReached` событие, которое возникает, когда `CarouselView` прокрутка достаточно велика, чтобы `RemainingItemsThreshold` элементы не отображались. Это событие может быть обработано для загрузки дополнительных элементов. Кроме того, при `RemainingItemsThresholdReached` срабатывании события `RemainingItemsThresholdReachedCommand` выполняется, что позволяет выполнять добавочную загрузку данных в ViewModel.
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) также определяет `RemainingItemsThresholdReached` событие, которое возникает, когда `CarouselView` прокрутка достаточно велика, чтобы `RemainingItemsThreshold` элементы не отображались. Это событие может быть обработано для загрузки дополнительных элементов. Кроме того, при `RemainingItemsThresholdReached` срабатывании события `RemainingItemsThresholdReachedCommand` выполняется, что позволяет выполнять добавочную загрузку данных в ViewModel.
 
 Значение свойства по умолчанию `RemainingItemsThreshold` равно-1, что означает, что `RemainingItemsThresholdReached` событие никогда не будет запущено. Если значение свойства равно 0, `RemainingItemsThresholdReached` событие будет инициировано при отображении последнего элемента в [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) . Для значений, превышающих 0, `RemainingItemsThresholdReached` событие будет запущено, когда `ItemsSource` содержит количество элементов, которые еще не прокручены.
 
 > [!NOTE]
-> [`CarouselView`](xref:Xamarin.Forms.CarouselView)проверяет `RemainingItemsThreshold` свойство таким образом, что его значение всегда больше или равно-1.
+> [`CarouselView`](xref:Xamarin.Forms.CarouselView) проверяет `RemainingItemsThreshold` свойство таким образом, что его значение всегда больше или равно-1.
 
 В следующем примере XAML показано, как выполнить [`CarouselView`](xref:Xamarin.Forms.CarouselView) добавочную загрузку данных:
 
@@ -479,9 +479,9 @@ void OnCollectionViewRemainingItemsThresholdReached(object sender, EventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Карауселвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
-- [Xamarin.Formsиндикаторвиев](~/xamarin-forms/user-interface/indicatorview.md)
-- [Xamarin.Formsрефрешвиев](~/xamarin-forms/user-interface/refreshview.md)
+- [Карауселвиев (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+- [Xamarin.Forms индикаторвиев](~/xamarin-forms/user-interface/indicatorview.md)
+- [Xamarin.Forms рефрешвиев](~/xamarin-forms/user-interface/refreshview.md)
 - [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md)
-- [Xamarin.FormsШаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
+- [Xamarin.Forms Шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
 - [Создание Xamarin.Forms DataTemplateSelector](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md)

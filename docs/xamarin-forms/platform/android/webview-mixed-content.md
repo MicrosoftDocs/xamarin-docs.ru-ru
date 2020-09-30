@@ -10,12 +10,12 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7269b0617be7199c365f350fc26ecd42256e28f3
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 27d19773d86c125cd5574f7a281c37c26ef643fd
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84128457"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563202"
 ---
 # <a name="webview-mixed-content-on-android"></a>WebView смешанное содержимое в Android
 
@@ -42,9 +42,9 @@ webView.On<Android>().SetMixedContentMode(MixedContentHandling.AlwaysAllow);
 
 `WebView.On<Android>`Метод указывает, что эта платформа будет запускаться только в Android. [ `WebView.SetMixedContentMode` ] (Xref: Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. WebView. Сетмикседконтентмоде ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Android, Xamarin.Forms . WebView}, Xamarin.Forms . Платформконфигуратион. АндроидспеЦифик. Микседконтенсандлинг)). в [`Xamarin.Forms.PlatformConfiguration.AndroidSpecific`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространстве имен используется для управления отображением смешанного содержимого, при этом [`MixedContentHandling`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling) перечисление предоставляет три возможных значения:
 
-- [`AlwaysAllow`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling.AlwaysAllow)— Указывает, что [`WebView`](xref:Xamarin.Forms.WebView) разрешает источнику HTTPS загружать содержимое из источника HTTP.
-- [`NeverAllow`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling.NeverAllow)— Указывает, что [`WebView`](xref:Xamarin.Forms.WebView) не будет разрешать источнику HTTPS загружать содержимое из источника HTTP.
-- [`CompatibilityMode`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling.CompatibilityMode)— Указывает, что [`WebView`](xref:Xamarin.Forms.WebView) будет пытаться обеспечить совместимость с подходом к последнему веб-браузеру устройства. Может быть разрешено загружать часть содержимого HTTP с помощью HTTPS-источника, а другие типы содержимого будут заблокированы. Блокируемые или разрешенные типы содержимого могут изменяться при каждом выпуске операционной системы.
+- [`AlwaysAllow`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling.AlwaysAllow) — Указывает, что [`WebView`](xref:Xamarin.Forms.WebView) разрешает источнику HTTPS загружать содержимое из источника HTTP.
+- [`NeverAllow`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling.NeverAllow) — Указывает, что [`WebView`](xref:Xamarin.Forms.WebView) не будет разрешать источнику HTTPS загружать содержимое из источника HTTP.
+- [`CompatibilityMode`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling.CompatibilityMode) — Указывает, что [`WebView`](xref:Xamarin.Forms.WebView) будет пытаться обеспечить совместимость с подходом к последнему веб-браузеру устройства. Может быть разрешено загружать часть содержимого HTTP с помощью HTTPS-источника, а другие типы содержимого будут заблокированы. Блокируемые или разрешенные типы содержимого могут изменяться при каждом выпуске операционной системы.
 
 В результате заданное [`MixedContentHandling`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling) значение применяется к элементу [`WebView`](xref:Xamarin.Forms.WebView) , который определяет, можно ли отобразить смешанное содержимое:
 
@@ -52,7 +52,7 @@ webView.On<Android>().SetMixedContentMode(MixedContentHandling.AlwaysAllow);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API АндроидспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific)
 - [АндроидспеЦифик. AppCompat API](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat)

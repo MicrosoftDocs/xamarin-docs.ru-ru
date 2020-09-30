@@ -10,12 +10,12 @@ ms.date: 07/29/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f3a5a581ffb4ca2acf1d4209b8b7a744f0daa5eb
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 074af11d7873ed44c0a48f923f7560dd50cea6a5
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84128060"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563241"
 ---
 # <a name="path-effects-in-skiasharp"></a>Эффекты пути в SkiaSharp
 
@@ -38,7 +38,7 @@ _Обнаружение различных эффектов пути, позво
 
 Кроме того, можно объединить два или более эффекта пути.
 
-В этой статье также показано, как использовать [`GetFillPath`](xref:SkiaSharp.SKPaint.GetFillPath*) метод `SKPaint` для преобразования одного пути в другой путем применения свойств `SKPaint` , включая `StrokeWidth` и `PathEffect` . Это приводит к некоторым интересным приемам, таким как получение пути, который является контуром другого пути. `GetFillPath`также полезно в связи с эффектами пути.
+В этой статье также показано, как использовать [`GetFillPath`](xref:SkiaSharp.SKPaint.GetFillPath*) метод `SKPaint` для преобразования одного пути в другой путем применения свойств `SKPaint` , включая `StrokeWidth` и `PathEffect` . Это приводит к некоторым интересным приемам, таким как получение пути, который является контуром другого пути. `GetFillPath` также полезно в связи с эффектами пути.
 
 ## <a name="dots-and-dashes"></a>Точки и тире
 
@@ -273,7 +273,7 @@ canvas.DrawPath(newPath, newPaint);
 
 [`SKPathEffect.Create1DPath`](xref:SkiaSharp.SKPathEffect.Create1DPath(SkiaSharp.SKPath,System.Single,System.Single,SkiaSharp.SKPath1DPathEffectStyle))Метод концептуально похож на `SKPathEffect.CreateDash` , за исключением того, что вы указываете путь, а не шаблон штрихов и пропусков. Этот путь реплицируется несколько раз для обводки линии или кривой.
 
-Синтаксис выглядит следующим образом.
+Синтаксис:
 
 ```csharp
 public static SKPathEffect Create1DPath (SKPath path, Single advance,
@@ -288,7 +288,7 @@ public static SKPathEffect Create1DPath (SKPath path, Single advance,
 - `Rotate`
 - `Morph`
 
-`Translate`Элемент заставляет путь оставаться на той же ориентации, что и репликация вдоль линии или кривой. Для `Rotate` параметр path поворачивается на основе тангенса кривой. У пути обычная ориентация для горизонтальных линий. `Morph`аналогичен `Rotate` за исключением того, что сам путь также является изогнутым, чтобы соответствовать кривизне линии, в которой выполняется штрих.
+`Translate`Элемент заставляет путь оставаться на той же ориентации, что и репликация вдоль линии или кривой. Для `Rotate` параметр path поворачивается на основе тангенса кривой. У пути обычная ориентация для горизонтальных линий. `Morph` аналогичен `Rotate` за исключением того, что сам путь также является изогнутым, чтобы соответствовать кривизне линии, в которой выполняется штрих.
 
 Эти три варианта показаны на странице **эффекты по одномерному пути** . Файл [**онедименсионалпасеффектпаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/OneDimensionalPathEffectPage.xaml) определяет средство выбора, содержащее три элемента, соответствующие трем элементам перечисления:
 
@@ -1289,7 +1289,7 @@ public class CatsInFramePage : ContentPage
 
 `catPath`Может использоваться в `SKPathEffect.Create2DPath` методе, если `SKPaint` `Style` свойство объекта имеет значение `Stroke` . Однако если используется `catPath` непосредственно в этой программе, будет заполнен весь заголовок Cat, а блочной даже не станет видимым. (Попробуйте!) Необходимо получить структуру этого пути и использовать этот контур в `SKPathEffect.Create2DPath` методе.
 
-Конструктор выполняет это задание. Сначала он применяет два преобразования для `catPath` перемещения точки (0, 0) в центр и масштабирует его по размеру. `GetFillPath`Получает все контуры в `outlinedCatPath` , и этот объект используется в `SKPathEffect.Create2DPath` вызове. Коэффициенты масштабирования в `SKMatrix` значении немного больше, чем горизонтальный и вертикальный размер объекта Cat, чтобы предоставить небольшой буфер между плитками, тогда как коэффициенты перевода были довольно сложны, так что в левом верхнем углу фрейма отображается полный объект Cat:
+Конструктор выполняет это задание. Сначала он применяет два преобразования для `catPath` перемещения точки (0, 0) в центр и масштабирует его по размеру. `GetFillPath` Получает все контуры в `outlinedCatPath` , и этот объект используется в `SKPathEffect.Create2DPath` вызове. Коэффициенты масштабирования в `SKMatrix` значении немного больше, чем горизонтальный и вертикальный размер объекта Cat, чтобы предоставить небольшой буфер между плитками, тогда как коэффициенты перевода были довольно сложны, так что в левом верхнем углу фрейма отображается полный объект Cat:
 
 ```csharp
 public class CatsInFramePage : ContentPage
@@ -1417,5 +1417,5 @@ public class DashedHatchLinesPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

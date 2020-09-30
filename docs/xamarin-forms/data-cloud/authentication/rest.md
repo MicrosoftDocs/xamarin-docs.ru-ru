@@ -10,12 +10,12 @@ ms.date: 01/22/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2a46d099520103ba6f1552d5bda3f619c07b743d
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 98b59b1dc9e32b1af1be991055057b94223a4223
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86928527"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563267"
 ---
 # <a name="authenticate-a-restful-web-service"></a>Проверка подлинности веб-службы RESTFUL
 
@@ -90,4 +90,4 @@ public class RestService : IRestService
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Использование веб-службы RESTFUL](~/xamarin-forms/data-cloud/web-services/rest.md)
-- [HttpClient](https://msdn.microsoft.com/library/system.net.http.httpclient(v=vs.110).aspx)
+- [HttpClient](/dotnet/api/system.net.http.httpclient)

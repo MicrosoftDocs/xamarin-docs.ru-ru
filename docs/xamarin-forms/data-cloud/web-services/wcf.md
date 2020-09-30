@@ -10,12 +10,12 @@ ms.date: 03/28/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cee301178880a62695f4208161965b01bb6f522e
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 596fab91a1f64e0fb6c5483e354c2ef15fd24346
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938597"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557924"
 ---
 # <a name="consume-a-windows-communication-foundation-wcf-web-service"></a>Использование веб-службы Windows Communication Foundation (WCF)
 
@@ -71,7 +71,7 @@ WCF описывает службу с различными контрактам
 
 Библиотека параллельных задач (TPL) может упростить процесс использования пары методов Begin и End APM, инкапсулирующие асинхронные операции в одном `Task` объекте. Это инкапсуляция обеспечивается несколькими перегрузками `TaskFactory.FromAsync` метода.
 
-Дополнительные сведения о APM см. в разделе [асинхронная модель программирования](https://msdn.microsoft.com/library/ms228963(v=vs.110).aspx) и [TPL и традиционная .NET Framework асинхронное программирование](https://msdn.microsoft.com/library/dd997423(v=vs.110).aspx) на MSDN.
+Дополнительные сведения о APM см. в разделе [асинхронная модель программирования](/dotnet/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm) и [TPL и традиционная .NET Framework асинхронное программирование](/dotnet/standard/parallel-programming/tpl-and-traditional-async-programming) на MSDN.
 
 ### <a name="create-the-todoserviceclient-object"></a>Создание объекта Тодосервицеклиент
 
@@ -315,6 +315,6 @@ public async Task DeleteTodoItemAsync (string id)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Тодовкф (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todowcf)
-- [Практическое руководство. Создание клиента Windows Communication Foundation](https://docs.microsoft.com/dotnet/framework/wcf/how-to-create-a-wcf-client)
-- [Средство служебной программы метаданных ServiceModel (svcutil.exe)](https://docs.microsoft.com/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe)
+- [Тодовкф (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todowcf)
+- [Практическое руководство. Создание клиента Windows Communication Foundation](/dotnet/framework/wcf/how-to-create-a-wcf-client)
+- [Средство служебной программы метаданных ServiceModel (svcutil.exe)](/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe)

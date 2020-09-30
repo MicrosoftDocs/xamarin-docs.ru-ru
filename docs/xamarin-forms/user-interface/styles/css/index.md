@@ -1,6 +1,6 @@
 ---
 title: Применение стилей к Xamarin.Forms приложениям с помощью каскадные таблицы стилей (CSS)
-description: Xamarin.Formsподдерживает визуальные элементы стилизации с помощью каскадные таблицы стилей (CSS).
+description: Xamarin.Forms поддерживает визуальные элементы стилизации с помощью каскадные таблицы стилей (CSS).
 ms.prod: xamarin
 ms.assetid: C89D57A6-DAB9-4C42-963F-26D67627DDC2
 ms.technology: xamarin-forms
@@ -11,20 +11,20 @@ ms.date: 07/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 62c8fdd6a0dd2f07b17891346081ccbcebe26c77
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 39a6dbcbd5e825c6630bfb60b61bf00a308fdc0e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918575"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562786"
 ---
 # <a name="styling-no-locxamarinforms-apps-using-cascading-style-sheets-css"></a>Применение стилей к Xamarin.Forms приложениям с помощью каскадные таблицы стилей (CSS)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-monkeyappcss)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-monkeyappcss)
 
-_Xamarin.Formsподдерживает визуальные элементы стилизации с помощью каскадные таблицы стилей (CSS)._
+_Xamarin.Forms поддерживает визуальные элементы стилизации с помощью каскадные таблицы стилей (CSS)._
 
-Xamarin.Formsприложения можно использовать в стиле CSS. Таблица стилей состоит из списка правил с каждым правилом, состоящим из одного или нескольких селекторов и блока объявления. Блок объявления состоит из списка объявлений в фигурных скобках с каждым объявлением, состоящим из свойства, двоеточия и значения. При наличии нескольких объявлений в блоке в качестве разделителя вставляется точка с запятой. В следующем примере кода показаны некоторые Xamarin.Forms соответствующие CSS:
+Xamarin.Forms приложения можно использовать в стиле CSS. Таблица стилей состоит из списка правил с каждым правилом, состоящим из одного или нескольких селекторов и блока объявления. Блок объявления состоит из списка объявлений в фигурных скобках с каждым объявлением, состоящим из свойства, двоеточия и значения. При наличии нескольких объявлений в блоке в качестве разделителя вставляется точка с запятой. В следующем примере кода показаны некоторые Xamarin.Forms соответствующие CSS:
 
 ```css
 navigationpage {
@@ -79,7 +79,7 @@ stacklayout>image {
 > [!NOTE]
 > В настоящее время все стили, которые можно реализовать с помощью стиля XAML, не могут быть выполнены с помощью CSS. Однако стили XAML можно использовать для дополнения CSS для свойств, которые в настоящее время не поддерживаются Xamarin.Forms . Дополнительные сведения о стилях XAML см. в руководстве по [оформлению приложений Xamarin.Forms с использованием стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md).
 
-В примере [монкэйаппксс](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-monkeyappcss) показано использование CSS для стиля простого приложения и показано на следующих снимках экрана:
+В примере [монкэйаппксс](/samples/xamarin/xamarin-forms-samples/userinterface-styles-monkeyappcss) показано использование CSS для стиля простого приложения и показано на следующих снимках экрана:
 
 [![Главная страница Монкэйапп с стилизацией CSS](css-images/MonkeyAppMainPage.png "Главная страница Монкэйапп с стилизацией CSS")](css-images/MonkeyAppMainPage-Large.png#lightbox "Главная страница Монкэйапп с стилизацией CSS")
 
@@ -114,7 +114,7 @@ stacklayout>image {
 [`StyleSheet.Source`](xref:Xamarin.Forms.Xaml.StyleSheetExtension.Source)Свойство определяет таблицу стилей как URI относительно расположения включающего XAML-файла или относительно корневого каталога проекта, если URI начинается с `/` .
 
 > [!WARNING]
-> Если для действия сборки не задано значение **EmbeddedResource**, Загрузка CSS-файла будет невозможна.
+> Если для действия сборки не задано значение  **EmbeddedResource**, Загрузка CSS-файла будет невозможна.
 
 Кроме того, таблицу стилей можно загрузить и проанализировать с помощью [`StyleSheet`](xref:Xamarin.Forms.StyleSheets.StyleSheet) класса перед добавлением в [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) , выполнив встраивание в `CDATA` раздел.
 
@@ -373,51 +373,51 @@ stacklayout>image {
 |`background-color`|`VisualElement`|_цветовая палитра_ \|`initial` |`background-color: springgreen;`|
 |`background-image`|`Page`|_строка_ \| `initial` |`background-image: bg.png;`|
 |`border-color`|`Button`, `Frame`, `ImageButton`|_цветовая палитра_ \|`initial`|`border-color: #9acd32;`|
-|`border-radius`|`BoxView`, `Button`, `Frame`, `ImageButton`|_double_ \| `initial` |`border-radius: 10;`|
-|`border-width`|`Button`, `ImageButton`|_double_ \| `initial` |`border-width: .5;`|
+|`border-radius`|`BoxView`, `Button`, `Frame`, `ImageButton`|_Double_ \|`initial` |`border-radius: 10;`|
+|`border-width`|`Button`, `ImageButton`|_Double_ \|`initial` |`border-width: .5;`|
 |`color`|`ActivityIndicator`, `BoxView`, `Button`, `CheckBox`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `ProgressBar`, `SearchBar`, `Switch`, `TimePicker`|_цветовая палитра_ \|`initial` |`color: rgba(255, 0, 0, 0.3);`|
-|`column-gap`|`Grid`|_double_ \| `initial`|`column-gap: 9;`|
+|`column-gap`|`Grid`|_Double_ \|`initial`|`column-gap: 9;`|
 |`direction`|`VisualElement`|`ltr` \| `rtl` \| `inherit` \| `initial` |`direction: rtl;`|
 |`flex-direction`|`FlexLayout`| `column` \| `columnreverse` \| `row` \| `rowreverse` \| `row-reverse` \| `column-reverse` \| `initial`|`flex-direction: column-reverse;`|
 |`flex-basis`|`VisualElement`|с _плавающей запятой_ \| `auto` \| `initial`. Кроме того, с помощью знака можно указать процент в диапазоне от 0% до 100% `%` .|`flex-basis: 25%;`|
-|`flex-grow`|`VisualElement`|_FLOAT_ \| `initial`|`flex-grow: 1.5;`|
-|`flex-shrink`|`VisualElement`|_FLOAT_ \| `initial`|`flex-shrink: 1;`|
+|`flex-grow`|`VisualElement`|с _плавающей запятой_ \|`initial`|`flex-grow: 1.5;`|
+|`flex-shrink`|`VisualElement`|с _плавающей запятой_ \|`initial`|`flex-shrink: 1;`|
 |`flex-wrap`|`VisualElement`| `nowrap` \| `wrap` \| `reverse` \| `wrap-reverse` \| `initial`|`flex-wrap: wrap-reverse;`|
 |`font-family`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_строка_ \| `initial` |`font-family: Consolas;`|
 |`font-size`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_Double_ \| _намедсизе_ \|  `initial` |`font-size: 12;`|
 |`font-style`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|`bold` \| `italic` \| `initial` |`font-style: bold;`|
-|`height`|`VisualElement`|_double_ \| `initial` |`min-height: 250;`|
+|`height`|`VisualElement`|_Double_ \|`initial` |`min-height: 250;`|
 |`justify-content`|`FlexLayout`| `start` \| `center` \| `end` \| `spacebetween` \| `spacearound` \| `spaceevenly` \| `flex-start` \| `flex-end` \| `space-between` \| `space-around` \| `initial`|`justify-content: flex-end;`|
-|`letter-spacing`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `SearchHandler`, `Span`, `TimePicker`|_double_ \| `initial`|`letter-spacing: 2.5;`|
-|`line-height`|`Label`, `Span`|_double_ \| `initial` |`line-height: 1.8;`|
+|`letter-spacing`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `SearchHandler`, `Span`, `TimePicker`|_Double_ \|`initial`|`letter-spacing: 2.5;`|
+|`line-height`|`Label`, `Span`|_Double_ \|`initial` |`line-height: 1.8;`|
 |`margin`|`View`|_толщина_ \|`initial` |`margin: 6 12;`|
 |`margin-left`|`View`|_толщина_ \|`initial` |`margin-left: 3;`|
 |`margin-top`|`View`|_толщина_ \|`initial` |`margin-top: 2;`|
 |`margin-right`|`View`|_толщина_ \|`initial` |`margin-right: 1;`|
 |`margin-bottom`|`View`|_толщина_ \|`initial` |`margin-bottom: 6;`|
 |`max-lines`|`Label`|_int_ \| `initial`|`max-lines: 2;`|
-|`min-height`|`VisualElement`|_double_ \| `initial` |`min-height: 50;`|
-|`min-width`|`VisualElement`|_double_ \| `initial` |`min-width: 112;`|
-|`opacity`|`VisualElement`|_double_ \| `initial` |`opacity: .3;`|
+|`min-height`|`VisualElement`|_Double_ \|`initial` |`min-height: 50;`|
+|`min-width`|`VisualElement`|_Double_ \|`initial` |`min-width: 112;`|
+|`opacity`|`VisualElement`|_Double_ \|`initial` |`opacity: .3;`|
 |`order`|`VisualElement`|_int_ \| `initial`|`order: -1;`|
 |`padding`|`Button`, `ImageButton`, `Layout`, `Page`|_толщина_ \|`initial` |`padding: 6 12 12;`|
-|`padding-left`|`Button`, `ImageButton`, `Layout`, `Page`|_double_ \| `initial`|`padding-left: 3;`|
-|`padding-top`|`Button`, `ImageButton`, `Layout`, `Page`| _double_ \| `initial` |`padding-top: 4;`|
-|`padding-right`|`Button`, `ImageButton`, `Layout`, `Page`| _double_ \| `initial` |`padding-right: 2;`|
-|`padding-bottom`|`Button`, `ImageButton`, `Layout`, `Page`| _double_ \| `initial` |`padding-bottom: 6;`|
+|`padding-left`|`Button`, `ImageButton`, `Layout`, `Page`|_Double_ \|`initial`|`padding-left: 3;`|
+|`padding-top`|`Button`, `ImageButton`, `Layout`, `Page`| _Double_ \|`initial` |`padding-top: 4;`|
+|`padding-right`|`Button`, `ImageButton`, `Layout`, `Page`| _Double_ \|`initial` |`padding-right: 2;`|
+|`padding-bottom`|`Button`, `ImageButton`, `Layout`, `Page`| _Double_ \|`initial` |`padding-bottom: 6;`|
 |`position`|`FlexLayout`| `relative` \| `absolute` \| `initial`|`position: absolute;`|
-|`row-gap`|`Grid`| _double_ \| `initial`|`row-gap: 12;`|
-|`text-align`| `Entry`, `EntryCell`, `Label`, `SearchBar`|`left` \| `top` \| `right` \| `bottom` \| `start` \| `center` \| `middle` \| `end` \| `initial`. `left`и `right` следует избегать в средах с письмом справа налево.| `text-align: right;`|
+|`row-gap`|`Grid`| _Double_ \|`initial`|`row-gap: 12;`|
+|`text-align`| `Entry`, `EntryCell`, `Label`, `SearchBar`|`left` \| `top` \| `right` \| `bottom` \| `start` \| `center` \| `middle` \| `end` \| `initial`. `left` и `right` следует избегать в средах с письмом справа налево.| `text-align: right;`|
 |`text-decoration`|`Label`, `Span`|`none` \| `underline` \| `strikethrough` \| `line-through` \| `initial`|`text-decoration: underline, line-through;`|
 |`text-transform`|`Button`,`Editor`, `Entry`, `Label`, `SearchBar`, `SearchHandler`|`none` \| `default` \| `uppercase` \| `lowercase` \| `initial` |`text-transform: uppercase;`|
 |`transform`|`VisualElement`| `none`, `rotate`, `rotateX`, `rotateY`, `scale`, `scaleX`, `scaleY`, `translate`, `translateX`, `translateY`, `initial` |`transform: rotate(180), scaleX(2.5);`|
 |`transform-origin`|`VisualElement`| _Double_, _Double_ \|`initial` |`transform-origin: 7.5, 12.5;`|
 |`vertical-align`|`Label`|`left` \| `top` \| `right` \| `bottom` \| `start` \| `center` \| `middle` \| `end` \| `initial`|`vertical-align: bottom;`|
 |`visibility`|`VisualElement`|`true` \| `visible` \| `false` \| `hidden` \| `collapse` \| `initial`|`visibility: hidden;`|
-|`width`|`VisualElement`|_double_ \| `initial`|`min-width: 320;`|
+|`width`|`VisualElement`|_Double_ \|`initial`|`min-width: 320;`|
 
 > [!NOTE]
-> `initial`является допустимым значением для всех свойств. Он очищает значение (сбрасывается до значения по умолчанию), установленное из другого стиля.
+> `initial` является допустимым значением для всех свойств. Он очищает значение (сбрасывается до значения по умолчанию), установленное из другого стиля.
 
 Следующие свойства в настоящее время не поддерживаются:
 
@@ -429,7 +429,7 @@ stacklayout>image {
 
 Целевые `Span` элементы имеют известную ошибку, препятствующую нацеливанию стилей CSS на элемент и имя (с помощью `#` символа). `Span`Элемент является производным от `GestureElement` , который не имеет свойства, `StyleClass` поэтому диапазоны не поддерживают целевые классы CSS. Дополнительные сведения см. в разделе [не удается применить стилизацию CSS для управления охватом](https://github.com/xamarin/Xamarin.Forms/issues/5979).
 
-### <a name="no-locxamarinforms-specific-properties"></a>Xamarin.Formsопределенные свойства
+### <a name="no-locxamarinforms-specific-properties"></a>Xamarin.Forms определенные свойства
 
 Xamarin.FormsТакже поддерживаются следующие конкретные свойства CSS (в столбце **значения** типы имеют _курсив_, а строковые литералы `gray` ):
 
@@ -441,16 +441,16 @@ Xamarin.FormsТакже поддерживаются следующие конк
 |`-xf-max-length`|`Entry`, `Editor`, `SearchBar`|_int_ \| `initial` |`-xf-max-length: 20;`|
 |`-xf-max-track-color`|`Slider`|_цветовая палитра_ \|`initial` |`-xf-max-track-color: red;`|
 |`-xf-min-track-color`|`Slider`|_цветовая палитра_ \|`initial` |`-xf-min-track-color: yellow;`|
-|`-xf-orientation`|`ScrollView`, `StackLayout`| `horizontal` \| `vertical` \| `both` \| `initial`. `both`поддерживается только в `ScrollView` . |`-xf-orientation: horizontal;`|
+|`-xf-orientation`|`ScrollView`, `StackLayout`| `horizontal` \| `vertical` \| `both` \| `initial`. `both` поддерживается только в `ScrollView` . |`-xf-orientation: horizontal;`|
 |`-xf-placeholder`|`Entry`, `Editor`, `SearchBar`|текст в кавычках _quoted text_ \|`initial` |`-xf-placeholder: Enter name;`|
 |`-xf-placeholder-color`|`Entry`, `Editor`, `SearchBar`|_цветовая палитра_ \|`initial` |`-xf-placeholder-color: green;`|
-|`-xf-spacing`|`StackLayout`|_double_ \| `initial` |`-xf-spacing: 8;`|
+|`-xf-spacing`|`StackLayout`|_Double_ \|`initial` |`-xf-spacing: 8;`|
 |`-xf-thumb-color`|`Slider`, `Switch`|_цветовая палитра_ \|`initial` |`-xf-thumb-color: limegreen;`|
 |`-xf-vertical-scroll-bar-visibility`|`ScrollView`| `default` \| `always` \| `never` \| `initial` |`-xf-vertical-scroll-bar-visibility: always;`|
 |`-xf-vertical-text-alignment`|`Label`| `start` \| `center` \| `end` \| `initial`|`-xf-vertical-text-alignment: end;`|
 |`-xf-visual`|`VisualElement`|_строка_ \| `initial` |`-xf-visual: material;`|
 
-### <a name="no-locxamarinforms-shell-specific-properties"></a>Xamarin.FormsСвойства оболочки
+### <a name="no-locxamarinforms-shell-specific-properties"></a>Xamarin.Forms Свойства оболочки
 
 Xamarin.FormsТакже поддерживаются следующие свойства CSS, относящиеся к оболочке (в столбце **значения** типы имеют _курсив_, а строковые литералы `gray` ):
 
@@ -473,7 +473,7 @@ Xamarin.FormsТакже поддерживаются следующие свой
 `color`Поддерживаются следующие значения:
 
 - `X11`[цвета](https://en.wikipedia.org/wiki/X11_color_names), соответствующие цветам CSS, заранее определенным цветам и Xamarin.Forms цветам UWP. Обратите внимание, что в этих цветовых значениях регистр не учитывается.
-- Шестнадцатеричные цвета: `#rgb` , `#argb` , `#rrggbb` ,`#aarrggbb`
+- Шестнадцатеричные цвета: `#rgb` , `#argb` , `#rrggbb` , `#aarrggbb`
 - цвета RGB: `rgb(255,0,0)` , `rgb(100%,0%,0%)` . Значения находятся в диапазоне 0-255 или 0%-100%.
 - цвета RGBA: `rgba(255, 0, 0, 0.8)` , `rgba(100%, 0%, 0%, 0.8)` . Значение непрозрачности находится в диапазоне от 0,0 до 1,0.
 - цвета HSL: `hsl(120, 100%, 50%)` . Значение h находится в диапазоне 0-360, а s и l — в диапазоне 0%-100%.
@@ -511,10 +511,10 @@ Xamarin.FormsТакже поддерживаются следующие свой
 
 > [!VIDEO https://youtube.com/embed/va-Vb7vtan8]
 
-**Xamarin.Forms3,0. видео в CSS**
+**Xamarin.Forms 3,0. видео в CSS**
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Монкэйаппксс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-monkeyappcss)
+- [Монкэйаппксс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-styles-monkeyappcss)
 - [Словари ресурсов](~/xamarin-forms/xaml/resource-dictionaries.md)
 - [Задание стиля приложений Xamarin.Forms с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)

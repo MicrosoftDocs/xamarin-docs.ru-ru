@@ -10,12 +10,12 @@ ms.date: 05/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ac7b90fb3e70fd07fcafe78a68136338469862e0
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 220b8a49f4f261568a653af16e333885edec23f8
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936374"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562877"
 ---
 # <a name="perceived-emotion-recognition-using-the-face-api"></a>Воспринимаемое распознавание распознавания эмоций с помощью API распознавания лиц
 
@@ -54,9 +54,9 @@ public FaceRecognitionService()
 
 Распознавание распознавания эмоций выполняется путем создания запроса POST, содержащего изображение, в `detect` API `https://[location].api.cognitive.microsoft.com/face/v1.0` , где `[location]]` — это регион, который вы использовали для получения ключа API. Необязательные параметры запроса:
 
-- `returnFaceId`— Указывает, следует ли возвращать Фацеидс обнаруженных сторон. Значение по умолчанию — `true`.
-- `returnFaceLandmarks`— Указывает, следует ли возвращать ориентиры обнаруженных лиц. Значение по умолчанию — `false`.
-- `returnFaceAttributes`— следует ли анализировать и возвращать один или несколько указанных атрибутов лиц. Поддерживаются следующие атрибуты лиц: `age` , `gender` , `headPose` ,,,, `smile` `facialHair` `glasses` `emotion` , `hair` , `makeup` , `occlusion` ,,, `accessories` `blur` `exposure` и `noise` . Обратите внимание, что анализ атрибутов лица имеет дополнительные вычислительные и временные затраты.
+- `returnFaceId` — Указывает, следует ли возвращать Фацеидс обнаруженных сторон. Значение по умолчанию — `true`.
+- `returnFaceLandmarks` — Указывает, следует ли возвращать ориентиры обнаруженных лиц. Значение по умолчанию — `false`.
+- `returnFaceAttributes` — следует ли анализировать и возвращать один или несколько указанных атрибутов лиц. Поддерживаются следующие атрибуты лиц: `age` , `gender` , `headPose` ,,,, `smile` `facialHair` `glasses` `emotion` , `hair` , `makeup` , `occlusion` ,,, `accessories` `blur` `exposure` и `noise` . Обратите внимание, что анализ атрибутов лица имеет дополнительные вычислительные и временные затраты.
 
 Содержимое изображения должно быть помещено в текст запроса POST в виде URL-адреса или двоичных данных.
 
@@ -183,5 +183,5 @@ emotionResultLabel.Text = faces.FirstOrDefault().FaceAttributes.Emotion.ToRanked
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API распознавания лиц](/azure/cognitive-services/face/overview/).
-- [Cognitive Services ToDo (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
+- [Cognitive Services ToDo (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
 - [REST API лиц](https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236)

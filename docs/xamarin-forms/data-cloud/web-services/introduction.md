@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsВведение в веб-службы
+title: Xamarin.Forms Введение в веб-службы
 description: Это руководство содержит пошаговое руководство по Xamarin.Forms использованию примера приложения, которое показывает, как взаимодействовать с различными веб-службами. Хотя каждая веб-служба использует отдельный пример приложения, они функционально похожи и совместно используют общие классы.
 ms.prod: xamarin
 ms.assetid: A3FEB262-0D79-42E6-8F8B-A565618C490B
@@ -10,14 +10,14 @@ ms.date: 02/28/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cd9815c6448efae0bb0af982c8807c47263ae13e
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: ebff259519776718f41ab0fcc0a7abb0c692dac6
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938216"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563423"
 ---
-# <a name="xamarinforms-web-services-introduction"></a>Xamarin.FormsВведение в веб-службы
+# <a name="no-locxamarinforms-web-services-introduction"></a>Xamarin.Forms Введение в веб-службы
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todorest)
 
@@ -96,6 +96,6 @@ public class TodoItem
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ASMX (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todoasmx)
-- [WCF (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todowcf)
-- [ОСТАВШАЯся (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todorest)
+- [ASMX (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todoasmx)
+- [WCF (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todowcf)
+- [ОСТАВШАЯся (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todorest)

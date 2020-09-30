@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6c73f46d2845be7bb54e24cd02ec22f3c2cd386d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: de412e064fa84e516dcb8e9b604068c84a2689e6
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137255"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563618"
 ---
 # <a name="listview-selectionmode-on-windows"></a>ListView SelectionMode в Windows
 
@@ -48,8 +48,8 @@ listView.On<Windows>().SetSelectionMode(ListViewSelectionMode.Inaccessible);
 
 `ListView.On<Windows>`Метод указывает, что данная платформа будет запускаться только на универсальная платформа Windows. [ `ListView.SetSelectionMode` ] (Xref: Xamarin.Forms . Платформконфигуратион. ВиндовсспеЦифик. ListView. Сетселектионмоде ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. Windows, Xamarin.Forms . ListView}, Xamarin.Forms . Платформконфигуратион. ВиндовсспеЦифик. Листвиевселектионмоде)). в [`Xamarin.Forms.PlatformConfiguration.WindowsSpecific`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific) пространстве имен используется для контроля над тем, могут ли элементы в элементе управления [`ListView`](xref:Xamarin.Forms.ListView) реагировать на жесты касания, с [`ListViewSelectionMode`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.ListViewSelectionMode) перечислением, предоставляющим два возможных значения:
 
-- [`Accessible`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.ListViewSelectionMode.Accessible)— Указывает, что `ListView` компонент запустит собственное `ItemClick` событие для обработки взаимодействия и, таким образом, предоставит специальные возможности. Таким образом, Экранный диктор и клавиатура Windows могут взаимодействовать с `ListView` . Однако элементы в `ListView` не могут реагировать на жесты касания. Это поведение по умолчанию для `ListView` экземпляров в универсальная платформа Windows.
-- [`Inaccessible`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.ListViewSelectionMode.Inaccessible)— Указывает, что `ListView` будет срабатывать собственное `Tapped` событие для работы с взаимодействием. Поэтому элементы в `ListView` могут реагировать на жесты касания. Однако нет специальных возможностей, поэтому экранный диктор Windows и клавиатура не могут взаимодействовать с компонентом `ListView` .
+- [`Accessible`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.ListViewSelectionMode.Accessible) — Указывает, что `ListView` компонент запустит собственное `ItemClick` событие для обработки взаимодействия и, таким образом, предоставит специальные возможности. Таким образом, Экранный диктор и клавиатура Windows могут взаимодействовать с `ListView` . Однако элементы в `ListView` не могут реагировать на жесты касания. Это поведение по умолчанию для `ListView` экземпляров в универсальная платформа Windows.
+- [`Inaccessible`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.ListViewSelectionMode.Inaccessible) — Указывает, что `ListView` будет срабатывать собственное `Tapped` событие для работы с взаимодействием. Поэтому элементы в `ListView` могут реагировать на жесты касания. Однако нет специальных возможностей, поэтому экранный диктор Windows и клавиатура не могут взаимодействовать с компонентом `ListView` .
 
 > [!NOTE]
 > `Accessible` `Inaccessible` Режимы выбора и являются взаимоисключающими, и необходимо выбрать доступ [`ListView`](xref:Xamarin.Forms.ListView) или `ListView` , который может реагировать на жесты касания.
@@ -60,6 +60,6 @@ listView.On<Windows>().SetSelectionMode(ListViewSelectionMode.Inaccessible);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ВиндовсспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific)
