@@ -10,12 +10,12 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 01/27/2020
-  ms.openlocfilehash: 394812b5150f7bbea46dff476bd2f896083b9a74
-  ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+  ms.openlocfilehash: 593d8d20433222e1b18fd65b86a7586aa5560933
+  ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "77374088"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91454290"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -35,7 +35,7 @@ landingContent:
   linkLists:
   - linkListType: concept
     links:
-    - text: Возможности доступа
+    - text: Специальные возможности
       url: ~/android/app-fundamentals/accessibility.md
     - text: Уровни API Android
       url: ~/android/app-fundamentals/android-api-levels.md
@@ -53,7 +53,7 @@ landingContent:
       url: ~/android/app-fundamentals/permissions.md
     - text: Касания и жесты
       url: ~/android/app-fundamentals/touch/index.md
-    - text: Подробнее >
+    - text: Дополнительные сведения >
       url: ~/android/app-fundamentals/index.md
 - title: Пользовательский интерфейс
   linkLists:
@@ -69,7 +69,7 @@ landingContent:
       url: ~/android/user-interface/splash-screen.md
     - text: Макеты
       url: ~/android/user-interface/layouts/index.md
-    - text: Управление
+    - text: Элементы управления
       url: ~/android/user-interface/controls/index.md
 - title: Функции платформы
   linkLists:
@@ -89,11 +89,11 @@ landingContent:
       url: ~/android/platform/fragments/index.md
     - text: Интеграция Java
       url: ~/android/platform/java-integration/index.md
-    - text: Планировщик заданий
+    - text: планировщик заданий;
       url: ~/android/platform/android-job-scheduler.md
     - text: Карты и расположение
       url: ~/android/platform/maps-and-location/index.md
-    - text: Подробнее >
+    - text: Дополнительные сведения >
       url: ~/android/platform/index.md
 - title: Xamarin.Essentials
   linkLists:
@@ -105,10 +105,10 @@ landingContent:
       url: ~/essentials/get-started.md?context=xamarin/android
     - text: Поддержка платформы и компонентов
       url: ~/essentials/platform-feature-support.md?context=xamarin/android
-    - text: Устранение неполадок
+    - text: Диагностика
       url: ~/essentials/troubleshooting.md?context=xamarin/android
     - text: Заметки о выпуске
-      url: https://docs.microsoft.com/xamarin/essentials/release-notes/
+      url: /xamarin/essentials/release-notes/
 - title: Данные и облачные службы
   linkLists:
   - linkListType: concept
@@ -131,13 +131,13 @@ landingContent:
       url: ~/android/deploy-test/app-package-size.md
     - text: Создание приложений
       url: ~/android/deploy-test/building-apps/index.md
-    - text: Компоновка
+    - text: Связывание
       url: ~/android/deploy-test/linker.md
     - text: Устройства с многоядерными процессорами
       url: ~/android/deploy-test/multicore-devices.md
     - text: Производительность
       url: ~/android/deploy-test/performance.md
-    - text: Профилирование.
+    - text: Профилирование
       url: ~/android/deploy-test/profiling.md
     - text: Подготовка к выпуску
       url: ~/android/deploy-test/release-prep/index.md
@@ -145,7 +145,7 @@ landingContent:
       url: ~/android/deploy-test/signing/index.md
     - text: Публикация приложения
       url: ~/android/deploy-test/publishing/index.md
-    - text: Подробнее >
+    - text: Дополнительные сведения >
       url: ~/android/deploy-test/index.md
 - title: Дополнительные понятия и внутренние компоненты
   linkLists:

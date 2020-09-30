@@ -10,12 +10,12 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 02/28/2020
-  ms.openlocfilehash: 187eb18553bc4952afc0d323885453d3fa3d285d
-  ms.sourcegitcommit: edfbdd4222dcb59656e5e9de9604610fec155e65
+  ms.openlocfilehash: 3b5b7a45a0aeca3be5d04047d984cdef878348cf
+  ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/27/2020
-  ms.locfileid: "88957155"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91456500"
 landingContent:
 - title: Новые возможности
   linkLists:
@@ -64,16 +64,16 @@ landingContent:
   - linkListType: whats-new
     links:
     - text: Обновления документации по .NET
-      url: https://docs.microsoft.com/dotnet/whats-new/
+      url: /dotnet/whats-new/
     - text: Заметки о выпуске Xamarin.Forms
-      url: https://docs.microsoft.com/xamarin/xamarin-forms/release-notes/
+      url: /xamarin/xamarin-forms/release-notes/
     - text: Заметки о выпуске Xamarin.Essentials
-      url: https://docs.microsoft.com/xamarin/essentials/release-notes/
+      url: /xamarin/essentials/release-notes/
     - text: Заметки о выпуске Xamarin.iOS
-      url: https://docs.microsoft.com/xamarin/ios/release-notes/
+      url: /xamarin/ios/release-notes/
     - text: Заметки о выпуске Xamarin.Android
-      url: https://docs.microsoft.com/xamarin/android/release-notes/
+      url: /xamarin/android/release-notes/
     - text: Заметки о выпуске Xamarin.Mac
-      url: https://docs.microsoft.com/xamarin/mac/release-notes/
+      url: /xamarin/mac/release-notes/
     - text: Заметки о выпуске средств Xamarin
-      url: https://docs.microsoft.com/xamarin/tools/
+      url: ../tools.yml

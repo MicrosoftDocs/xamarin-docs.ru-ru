@@ -9,12 +9,12 @@ metadata:
   ms.date: 08/27/2019
   ms.topic: landing-page
   ms.technology: xamarin-mac
-  ms.openlocfilehash: c5db1f5865a2532dfc9372834bb2315f96607338
-  ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+  ms.openlocfilehash: f75d245c886114c50c1a71263c3f78eb86daadc8
+  ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "73017704"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91433114"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -25,7 +25,7 @@ landingContent:
   - linkListType: download
     links:
     - text: Образцы Xamarin.Mac
-      url: https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Mac
+      url: /samples/browse/?products=xamarin&term=Xamarin.Mac
     - text: Visual Studio для Mac
       url: /visualstudio/mac/installation/
 - title: Создание приложений Mac
@@ -49,10 +49,10 @@ landingContent:
   - linkListType: reference
     links:
     - text: Документация по API Xamarin.Mac
-      url: https://docs.microsoft.com/dotnet/api/?view=xamarin-mac-sdk-14
+      url: /dotnet/api/?view=xamarin-mac-sdk-14
     - text: Библиотека базовых классов, доступная в Xamarin.Mac
-      url: https://docs.microsoft.com/dotnet/api/?view=xamarinmac-3.0
+      url: /dotnet/api/?view=xamarinmac-3.0
     - text: Заметки о выпуске Xamarin.Mac
-      url: https://docs.microsoft.com/xamarin/mac/release-notes/
+      url: /xamarin/mac/release-notes/
     - text: Документация для разработчиков Apple
       url: https://developer.apple.com/documentation/

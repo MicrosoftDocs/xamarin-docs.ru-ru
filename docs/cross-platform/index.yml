@@ -8,12 +8,12 @@ metadata:
   ms.author: daortin
   ms.date: 12/23/2019
   ms.topic: landing-page
-  ms.openlocfilehash: 624228746f3212b0c8b237dcb9694daea037e89f
-  ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+  ms.openlocfilehash: b6140f951000a1a1a0dc458e74fb598442bb6f70
+  ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "75718719"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91456916"
 landingContent:
 - title: Создание кроссплатформенных приложений
   linkLists:
@@ -50,13 +50,13 @@ landingContent:
   - linkListType: concept
     links:
     - text: Производительность Xamarin.Forms
-      url: /xamarin/xamarin-forms/deploy-test/performance?context=xamarin/cross-platform
+      url: ../xamarin-forms/deploy-test/performance.md?context=xamarin%252fcross-platform
     - text: Производительность для Android
-      url: /xamarin/android/deploy-test/performance?context=xamarin/cross-platform
+      url: ../android/deploy-test/performance.md?context=xamarin%252fcross-platform
     - text: Производительность для iOS
-      url: /xamarin/ios/deploy-test/performance?context=xamarin/cross-platform
+      url: ../ios/deploy-test/performance.md?context=xamarin%252fcross-platform
     - text: Производительность для Mac
-      url: /xamarin/mac/deploy-test/performance?context=xamarin/cross-platform
+      url: ../mac/deploy-test/performance.md?context=xamarin%252fcross-platform
     - text: Протокол TLS версии 1.2
       url: ~/cross-platform/app-fundamentals/transport-layer-security.md
 - title: Развертывание и отладка

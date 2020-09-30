@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Приступая к работе
+    - name: Начало работы
       href: get-started/index.md
       expanded: true
       items:
@@ -15,7 +15,7 @@
     - name: Принципы работы приложения
       href: app-fundamentals/index.md
       items:
-        - name: Возможности доступа
+        - name: Специальные возможности
           href: app-fundamentals/accessibility.md
         - name: Общие шаблоны и идиомы
           href: app-fundamentals/patterns.md
@@ -158,11 +158,11 @@
             - name: Objective Sharpie
               href: ~/cross-platform/macios/binding/objective-sharpie/index.md?context=xamarin/mac
               items:
-                - name: Приступая к работе
+                - name: Начало работы
                   href: ~/cross-platform/macios/binding/objective-sharpie/get-started.md?context=xamarin/mac
                 - name: Средства и команды
                   href: ~/cross-platform/macios/binding/objective-sharpie/tools.md?context=xamarin/mac
-                - name: Компоненты
+                - name: Функции
                   href: ~/cross-platform/macios/binding/objective-sharpie/platform/index.md?context=xamarin/mac
                   items:
                     - name: ApiDefinitions и StructsAndEnums
@@ -210,7 +210,7 @@
           href: internals/architecture.md
         - name: Как работает Xamarin.Mac
           href: internals/how-it-works.md
-        - name: Платформы
+        - name: Инфраструктуры
           href: internals/frameworks.md
         - name: регистратор
           href: internals/registrar.md
@@ -222,6 +222,6 @@
         - name: Сообщения об ошибках (mmp)
           href: troubleshooting/mmp-errors.md
     - name: Заметки о выпуске
-      href: 'https://docs.microsoft.com/xamarin/mac/release-notes/'
+      href: /xamarin/mac/release-notes/
     - name: Примеры
       href: samples/index.md

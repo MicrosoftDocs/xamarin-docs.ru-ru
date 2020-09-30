@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: e0f7e89be5de282daf10f941d0f0b8d0175df81a
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 572c6d378bdc2af72277bba8726daba860ab38fe
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "71107340"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91451430"
 ---
-Поздравляем с завершением этого учебника, где вы научились:
+Поздравляем с завершением этого руководства, в котором вы научились:
 
 > [!div class="checklist"]
 >
@@ -14,7 +14,7 @@ ms.locfileid: "71107340"
 > - Создавать классы веб-службы.
 > - Использовать классы веб-службы.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Эта серия учебников описывает основы создания приложений для мобильных устройств с помощью Xamarin.Forms. Чтобы получить дополнительные сведения о разработке для Xamarin.Forms, ознакомьтесь со следующими функциональными возможностями:
 
@@ -32,6 +32,6 @@ ms.locfileid: "71107340"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [WebServiceTutorial (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-tutorials-webservicetutorial/)
+- [WebServiceTutorial (пример)](/samples/xamarin/xamarin-forms-samples/getstarted-tutorials-webservicetutorial/)
 - [Использование веб-службы RESTful (руководство)](~/xamarin-forms/data-cloud/web-services/rest.md)
-- [Пакет NuGet Newtonsoft.JSON](https://www.nuget.org/packages/Newtonsoft.Json/)
+- [Пакет NuGet Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/)
