@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cb03ad89c4fa7a8bed876a7210add68be06cf4a3
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+ms.openlocfilehash: bfbe612f400681e1790b2c0b067b910fb8c3dd76
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83343397"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91451349"
 ---
 Поздравляем с завершением этого руководства, в котором вы научились:
 
@@ -23,7 +23,7 @@ ms.locfileid: "83343397"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [StackLayoutTutorial (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-tutorials-stacklayouttutorial/)
+- [StackLayoutTutorial (пример)](/samples/xamarin/xamarin-forms-samples/getstarted-tutorials-stacklayouttutorial/)
 - [Xamarin.Forms StackLayout (руководство)](~/xamarin-forms/user-interface/layouts/stacklayout.md)
 - [Поля и заполнение (руководство)](~/xamarin-forms/user-interface/layouts/margin-and-padding.md)
 - [Параметры макета в Xamarin.Forms (руководство)](~/xamarin-forms/user-interface/layouts/layout-options.md)

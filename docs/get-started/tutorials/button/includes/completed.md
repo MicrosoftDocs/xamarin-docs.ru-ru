@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: 95067df17424d5b9367578e675d747317a827de9
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 6316d1013a608a4e03c1cad73adaba96e1e37dc7
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "71059781"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91451444"
 ---
-Поздравляем с завершением этого учебника, где вы научились:
+Поздравляем с завершением этого руководства, в котором вы научились:
 
 > [!div class="checklist"]
 >
@@ -14,7 +14,7 @@ ms.locfileid: "71059781"
 > - Реагировать на касание `Button`.
 > - Изменять внешний вид `Button`.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы узнать больше об основах создания мобильных приложений с помощью Xamarin.Forms, перейдите к руководству по Entry.
 
@@ -23,6 +23,6 @@ ms.locfileid: "71059781"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Руководство по Button (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-tutorials-buttontutorial/)
+- [Руководство по Button (пример)](/samples/xamarin/xamarin-forms-samples/getstarted-tutorials-buttontutorial/)
 - [Button в Xamarin.Forms (руководство)](~/xamarin-forms/user-interface/button.md)
 - [API Button](xref:Xamarin.Forms.Button)
