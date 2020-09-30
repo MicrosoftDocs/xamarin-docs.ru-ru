@@ -10,16 +10,16 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 71e64f7b8286f22040a802336e9be756d932c0cd
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 3052220b914b09f18490846bbd2558bbf07e4d3a
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936543"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562266"
 ---
 # <a name="basic-animation-in-skiasharp"></a>Базовая анимация в SkiaSharp
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Узнайте, как анимировать график SkiaSharp_
 
@@ -27,7 +27,7 @@ _Узнайте, как анимировать график SkiaSharp_
 
 ![В центре кажется, что несколько концентрических кругов расширяются.](animation-images/animationexample.png)
 
-Страница **эллипса пулсатинг** в программе [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) анимирует две оси эллипса, чтобы они были пулсатинг, и вы даже можете контролировать скорость этого пулсатион. Файл [**пулсатинжеллипсепаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/PulsatingEllipsePage.xaml) создает экземпляр и, Xamarin.Forms `Slider` `Label` чтобы отобразить текущее значение ползунка. Это распространенный способ интеграции `SKCanvasView` с другими Xamarin.Forms представлениями:
+Страница **эллипса пулсатинг** в программе [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) анимирует две оси эллипса, чтобы они были пулсатинг, и вы даже можете контролировать скорость этого пулсатион. Файл [**пулсатинжеллипсепаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/PulsatingEllipsePage.xaml) создает экземпляр и, Xamarin.Forms `Slider` `Label` чтобы отобразить текущее значение ползунка. Это распространенный способ интеграции `SKCanvasView` с другими Xamarin.Forms представлениями:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -146,7 +146,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 [![Тройной снимок экрана со страницей эллипса Пулсатинг](animation-images/pulsatingellipse-small.png)](animation-images/pulsatingellipse-large.png#lightbox "Тройной снимок экрана со страницей эллипса Пулсатинг")
 
-Обратите внимание, что `SKPaint` объект создается в `using` блоке. Как и многие классы SkiaSharp `SKPaint` являются производными от класса `SKObject` , который является производным от `SKNativeObject` , который реализует [`IDisposable`](xref:System.IDisposable) интерфейс. `SKPaint`переопределяет `Dispose` метод, чтобы освободить неуправляемые ресурсы.
+Обратите внимание, что `SKPaint` объект создается в `using` блоке. Как и многие классы SkiaSharp `SKPaint` являются производными от класса `SKObject` , который является производным от `SKNativeObject` , который реализует [`IDisposable`](xref:System.IDisposable) интерфейс. `SKPaint` переопределяет `Dispose` метод, чтобы освободить неуправляемые ресурсы.
 
  Помещение `SKPaint` `using` блока гарантирует, что `Dispose` метод вызывается в конце блока, чтобы освободить неуправляемые ресурсы. Это происходит в любом случае, когда память, используемая `SKPaint` объектом, освобождается сборщиком мусора .NET, но в коде анимации лучше проактивно освободить память более упорядоченным образом.
 
@@ -251,5 +251,5 @@ public class ExpandingCirclesPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

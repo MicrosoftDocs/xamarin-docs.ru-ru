@@ -1,5 +1,5 @@
 ---
-title: Индикатор активности вXamarin.Forms
+title: Индикатор активности в Xamarin.Forms
 description: Элемент управления Активитиндикатор указывает пользователям, что приложение вовлечено в длительное действие без указания хода выполнения. В этой статье объясняется, как использовать Активитиндикатор в XAML и коде.
 ms.prod: xamarin
 ms.assetid: 4CEED02D-5CA3-4C3A-B7ED-3193FC272261
@@ -10,14 +10,14 @@ ms.date: 07/10/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a83885175a44f2174db343abf4591f8777041d39
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 76136067f40d378a6bfa28698f15b6872bb40c93
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136517"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562355"
 ---
-# <a name="xamarinforms-activityindicator"></a>Xamarin.Formsактивитиндикатор
+# <a name="no-locxamarinforms-activityindicator"></a>Xamarin.Forms активитиндикатор
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-activityindicatordemos/)
 
 Xamarin.Forms [`ActivityIndicator`](xref:Xamarin.Forms.ActivityIndicator) Элемент управления отображает анимацию, чтобы показать, что приложение вовлечено в длительное действие. В отличие от [`ProgressBar`](xref:Xamarin.Forms.ProgressBar) , параметр `ActivityIndicator` не дает указания о ходе выполнения. Объект `ActivityIndicator` наследует от [`View`](xref:Xamarin.Forms.View) .
@@ -67,5 +67,5 @@ ActivityIndicator activityIndicator = new ActivityIndicator { Color = Color.Oran
 
 ## <a name="related-links"></a>Связанные ссылки
 
-* [Демонстрации Активитиндикатор](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-activityindicatordemos/)
+* [Демонстрации Активитиндикатор](/samples/xamarin/xamarin-forms-samples/userinterface-activityindicatordemos/)
 * [ProgressBar](~/xamarin-forms/user-interface/progressbar.md)

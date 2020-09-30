@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsDatePicker
+title: Xamarin.Forms DatePicker
 description: DatePicker — это Xamarin.Forms представление, позволяющее пользователю выбрать дату. В этой статье объясняется, как использовать DatePicker в Xamarin.Forms приложении.
 ms.prod: xamarin
 ms.assetid: 68E8EF8A-42E7-4939-8ABE-64D060E609D9
@@ -10,29 +10,29 @@ ms.date: 06/04/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5c1de52e2a173e7d9a366d8fd7cbd63998b3a6d1
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: fed80f0954613a6bff49d0611d56549405c78333
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137362"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91564099"
 ---
-# <a name="xamarinforms-datepicker"></a>Xamarin.FormsDatePicker
+# <a name="no-locxamarinforms-datepicker"></a>Xamarin.Forms DatePicker
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-datepicker)
 
 _Xamarin.FormsПредставление, позволяющее пользователю выбрать дату._
 
-Xamarin.Forms [`DatePicker`](xref:Xamarin.Forms.DatePicker) Вызывает элемент управления "Выбор даты" платформы и позволяет пользователю выбрать дату. `DatePicker`Определяет восемь свойств:
+Xamarin.Forms [`DatePicker`](xref:Xamarin.Forms.DatePicker) Вызывает элемент управления "Выбор даты" платформы и позволяет пользователю выбрать дату. `DatePicker` Определяет восемь свойств:
 
-- [`MinimumDate`](xref:Xamarin.Forms.DatePicker.MinimumDate)типа [`DateTime`](xref:System.DateTime) , значение которого по умолчанию равно первому дню года 1900.
-- [`MaximumDate`](xref:Xamarin.Forms.DatePicker.MaximumDate)типа `DateTime` , значение которого по умолчанию равно последнему дню года 2100.
-- [`Date`](xref:Xamarin.Forms.DatePicker.Date)типа `DateTime` — Выбранная дата, которая по умолчанию имеет значение [`DateTime.Today`](xref:System.DateTime.Today) .
-- [`Format`](xref:Xamarin.Forms.DatePicker.Format)типа `string` — [Стандартная](/dotnet/standard/base-types/standard-date-and-time-format-strings/) или [Настраиваемая](/dotnet/standard/base-types/custom-date-and-time-format-strings/) строка форматирования .NET, которая по умолчанию имеет значение D, шаблон длинной даты.
-- [`TextColor`](xref:Xamarin.Forms.DatePicker.TextColor)для типа [`Color`](xref:Xamarin.Forms.Color) — цвет, используемый для показа выбранной даты, по умолчанию — [`Color.Default`](xref:Xamarin.Forms.Color.Default) .
-- [`FontAttributes`](xref:Xamarin.Forms.DatePicker.FontAttributes)типа [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) , значение по умолчанию — [`FontAtributes.None`](xref:Xamarin.Forms.FontAttributes.None) .
-- [`FontFamily`](xref:Xamarin.Forms.DatePicker.FontFamily)типа `string` , значение по умолчанию — `null` .
-- [`FontSize`](xref:Xamarin.Forms.DatePicker.FontSize)типа `double` , значение по умолчанию — 1,0.
+- [`MinimumDate`](xref:Xamarin.Forms.DatePicker.MinimumDate) типа [`DateTime`](xref:System.DateTime) , значение которого по умолчанию равно первому дню года 1900.
+- [`MaximumDate`](xref:Xamarin.Forms.DatePicker.MaximumDate) типа `DateTime` , значение которого по умолчанию равно последнему дню года 2100.
+- [`Date`](xref:Xamarin.Forms.DatePicker.Date) типа `DateTime` — Выбранная дата, которая по умолчанию имеет значение [`DateTime.Today`](xref:System.DateTime.Today) .
+- [`Format`](xref:Xamarin.Forms.DatePicker.Format) типа `string` — [Стандартная](/dotnet/standard/base-types/standard-date-and-time-format-strings/) или [Настраиваемая](/dotnet/standard/base-types/custom-date-and-time-format-strings/) строка форматирования .NET, которая по умолчанию имеет значение D, шаблон длинной даты.
+- [`TextColor`](xref:Xamarin.Forms.DatePicker.TextColor) для типа [`Color`](xref:Xamarin.Forms.Color) — цвет, используемый для показа выбранной даты, по умолчанию — [`Color.Default`](xref:Xamarin.Forms.Color.Default) .
+- [`FontAttributes`](xref:Xamarin.Forms.DatePicker.FontAttributes) типа [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) , значение по умолчанию — [`FontAtributes.None`](xref:Xamarin.Forms.FontAttributes.None) .
+- [`FontFamily`](xref:Xamarin.Forms.DatePicker.FontFamily) типа `string` , значение по умолчанию — `null` .
+- [`FontSize`](xref:Xamarin.Forms.DatePicker.FontSize) типа `double` , значение по умолчанию — 1,0.
 - `CharacterSpacing` с типом `double` представляет собой интервал между знаками текста `DatePicker`.
 
 `DatePicker`Запускает событие, [`DateSelected`](xref:Xamarin.Forms.DatePicker.DateSelected) когда пользователь выбирает дату.
@@ -96,7 +96,7 @@ DatePicker datePicker = new DatePicker
 
 ## <a name="datepicker-in-an-application"></a>DatePicker в приложении
 
-Образец [**дайсбетвиндатес**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-datepicker) включает два `DatePicker` представления на странице. Их можно использовать для выбора двух дат, и программа вычисляет количество дней между этими датами. Программа не изменяет параметры `MinimumDate` `MaximumDate` свойств и, поэтому две даты должны находиться в диапазоне от 1900 до 2100.
+Образец [**дайсбетвиндатес**](/samples/xamarin/xamarin-forms-samples/userinterface-datepicker) включает два `DatePicker` представления на странице. Их можно использовать для выбора двух дат, и программа вычисляет количество дней между этими датами. Программа не изменяет параметры `MinimumDate` `MaximumDate` свойств и, поэтому две даты должны находиться в диапазоне от 1900 до 2100.
 
 Вот файл XAML:
 
@@ -200,5 +200,5 @@ public partial class MainPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Дайсбетвиндатес](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-datepicker)
+- [Пример Дайсбетвиндатес](/samples/xamarin/xamarin-forms-samples/userinterface-datepicker)
 - [API DatePicker](xref:Xamarin.Forms.DatePicker)

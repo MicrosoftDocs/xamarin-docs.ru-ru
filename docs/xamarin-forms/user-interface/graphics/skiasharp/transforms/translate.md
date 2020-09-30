@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ed20da1005447334a99ea40c177c8f88d59d71ce
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 31a76e160186caec74665b7615323eb8e60b698a
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938480"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562331"
 ---
 # <a name="the-translate-transform"></a>Преобразование переноса
 
@@ -41,7 +41,7 @@ public void Translate (Single dx, Single dy)
 public void Translate (SKPoint point)
 ```
 
-На странице **накопленный перевод** примера программы [**скиашарпформс**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) показано, что несколько вызовов `Translate` метода являются кумулятивными. [`AccumulatedTranslatePage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/AccumulatedTranslatePage.cs)Класс отображает 20 версий одного и того же прямоугольника, каждое смещение от предыдущего прямоугольника достаточно просто для растяжения по диагонали. Вот `PaintSurface` обработчик событий:
+На странице **накопленный перевод** примера программы [**скиашарпформс**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) показано, что несколько вызовов `Translate` метода являются кумулятивными. [`AccumulatedTranslatePage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/AccumulatedTranslatePage.cs)Класс отображает 20 версий одного и того же прямоугольника, каждое смещение от предыдущего прямоугольника достаточно просто для растяжения по диагонали. Вот `PaintSurface` обработчик событий:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -308,5 +308,5 @@ public class HendecagramAnimationPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

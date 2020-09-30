@@ -1,5 +1,5 @@
 ---
-title: Схемы пользовательских пространств имен XAML вXamarin.Forms
+title: Схемы пользовательских пространств имен XAML в Xamarin.Forms
 description: Пользовательскую схему пространства имен XAML можно определить с помощью класса XmlnsDefinitionAttribute, который указывает сопоставление между пользовательским URL-адресом и одним или несколькими пространствами имен CLR. Пользовательская схема пространства имен может быть использована в объявлениях пространств имен XAML.
 ms.prod: xamarin
 ms.assetid: FDF201A1-8C35-4569-A728-F9B0A0C5B31A
@@ -10,14 +10,14 @@ ms.date: 12/21/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 41a95b1a82ab8aa1f6938e5a2bcdebcef368e72d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 5c7e0d90358ec230436276070ea2792539c446e5
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138168"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561486"
 ---
-# <a name="xaml-custom-namespace-schemas-in-xamarinforms"></a>Схемы пользовательских пространств имен XAML вXamarin.Forms
+# <a name="xaml-custom-namespace-schemas-in-no-locxamarinforms"></a>Схемы пользовательских пространств имен XAML в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-customnamespaceschemas)
 
@@ -136,7 +136,7 @@ namespace CustomNamespaceSchemaDemo
 </ContentPage>
 ```
 
-`CircleButton`затем экземпляры можно добавить в, [`ContentPage`](xref:Xamarin.Forms.ContentPage) объявляя их с `controls` префиксом пространства имен.
+`CircleButton` затем экземпляры можно добавить в, [`ContentPage`](xref:Xamarin.Forms.ContentPage) объявляя их с `controls` префиксом пространства имен.
 
 Чтобы найти пользовательские типы схем пространства имен, Xamarin.Forms службы будут искать экземпляры, на которые имеются ссылки `XmlnsDefinitionAttribute` . Если `xmlns` атрибут элемента в файле XAML соответствует `XmlNamespace` значению свойства в `XmlnsDefinitionAttribute` , Xamarin.Forms попытается использовать `XmlnsDefinitionAttribute.ClrNamespace` значение свойства для разрешения типа. Если разрешение типа завершается неудачей, продолжит Xamarin.Forms попытки выполнить разрешение типов на основе всех дополнительных соответствующих `XmlnsDefinitionAttribute` экземпляров.
 
@@ -146,6 +146,6 @@ namespace CustomNamespaceSchemaDemo
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Схемы пользовательских пространств имен (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-customnamespaceschemas)
+- [Схемы пользовательских пространств имен (пример)](/samples/xamarin/xamarin-forms-samples/xaml-customnamespaceschemas)
 - [Рекомендуемые префиксы пространств имен XAML](custom-prefix.md)
-- [Пространства имен XAML вXamarin.Forms](namespaces.md)
+- [Пространства имен XAML в Xamarin.Forms](namespaces.md)

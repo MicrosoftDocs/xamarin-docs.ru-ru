@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a98c7210f2e71f6f26d53da3555f3f9b5e016952
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 032a01a1e4e0f2b3e3d394aec6a30bd215fd84f8
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86935984"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562422"
 ---
 # <a name="integrating-text-and-graphics"></a>Интеграция текста и графики
 
@@ -65,10 +65,10 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 `Left`Свойства и `Top` `SKRect` структуры указывают координаты левого верхнего угла отображаемого текста, если текст отображается `DrawText` вызовом с позициями X и Y, равными 0. Например, если эта программа работает в симуляторе iPhone 7, `TextSize` ей присваивается значение 90,6254 в результате вычисления после первого вызова `MeasureText` . `SKRect`Значение, полученное во втором вызове, `MeasureText` содержит следующие значения свойств:
 
-- `Left`= 6
+- `Left` = 6
 - `Top` = &ndash;68
-- `Width`= 664,8214
-- `Height`= 88;
+- `Width` = 664,8214
+- `Height` = 88;
 
 Помните, что координаты X и Y, передаваемые в метод, `DrawText` указывают левую часть текста в базовом плане. `Top`Значение указывает, что текст расширяется на 68 пикселей над этим базовым планом и (вычитание 68 из 88) 20 пикселей ниже базового плана. `Left`Значение 6 указывает, что текст начинается на шесть пикселей справа от значения X в `DrawText` вызове. Это позволяет выполнять обычные межсимвольные интервалы. Если вы хотите отобразить текст снугли в левом верхнем углу экрана, передайте отрицательные `Left` значения этих и `Top` значений в координаты X и Y `DrawText` , в данном примере — &ndash; 6 и 68.
 
@@ -179,5 +179,5 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

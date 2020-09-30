@@ -10,12 +10,12 @@ ms.date: 08/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: eedbca080fce9f3001a7b1e2358845fd63c6121b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 4f10d39ff9fb08897f12cf1991ddcd2d7793b695
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136348"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91564034"
 ---
 # <a name="skiasharp-image-filters"></a>Фильтры изображений SkiaSharp
 
@@ -41,7 +41,7 @@ public static SkiaSharp.SKImageFilter CreateBlur (float sigmaX, float sigmaY,
 
 Метод имеет два значения &mdash; , первый для экстента размытия в горизонтальном направлении, а второй для вертикального направления. Фильтры с изображениями можно каскадировать, указав другой фильтр изображений в качестве необязательного третьего аргумента. Также можно указать прямоугольник обрезки.
 
-Страница **эксперимента с размытием изображения** в [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) включает два `Slider` представления, которые позволяют экспериментировать с установкой различных уровней размытия.
+Страница **эксперимента с размытием изображения** в [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) включает два `Slider` представления, которые позволяют экспериментировать с установкой различных уровней размытия.
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -445,5 +445,5 @@ public partial class DistantLightExperimentPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

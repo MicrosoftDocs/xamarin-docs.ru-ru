@@ -10,12 +10,12 @@ ms.date: 05/06/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e0fbdc91c2661732e3afdbde44ce9891f89c5f62
-ms.sourcegitcommit: 14d67a2db82e67471584b1749e0d5b9ec0c0c09b
+ms.openlocfilehash: d535956e03ac02e2cf0c5d7528ee8e363a2a1e55
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88228642"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561655"
 ---
 # <a name="no-locxamarinforms-webview"></a>Xamarin.Forms WebView
 
@@ -117,7 +117,7 @@ browser.Source = htmlSource;
 
 ### <a name="local-html-content"></a>Локальное содержимое HTML
 
-WebView может отображать содержимое из HTML, CSS и JavaScript Embedded в приложении. Пример.
+WebView может отображать содержимое из HTML, CSS и JavaScript Embedded в приложении. Например:
 
 ```html
 <html>
@@ -355,7 +355,7 @@ WebView создает следующие события, помогающие �
 - `Source` — элемент, который выполнил навигацию.
 - `Url` — Назначение навигации.
 
-Если предполагается использование веб-страниц, загрузка которых занимает много времени, рассмотрите возможность использования [`Navigating`](xref:Xamarin.Forms.WebView.Navigating) событий и [`Navigated`](xref:Xamarin.Forms.WebView.Navigated) для реализации индикатора состояния. Пример.
+Если предполагается использование веб-страниц, загрузка которых занимает много времени, рассмотрите возможность использования [`Navigating`](xref:Xamarin.Forms.WebView.Navigating) событий и [`Navigated`](xref:Xamarin.Forms.WebView.Navigated) для реализации индикатора состояния. Например:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -420,7 +420,7 @@ webView.Reload();
 
 `WebView` по умолчанию в Android выполняется примерно так же быстро, как и встроенный браузер.
 
-[WebView UWP](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/web-view) использует механизм визуализации Microsoft ребра. Для настольных и планшетных устройств должна отображаться такая же производительность, как и при использовании браузера Microsoft ребра.
+[WebView UWP](/windows/uwp/design/controls-and-patterns/web-view) использует механизм визуализации Microsoft ребра. Для настольных и планшетных устройств должна отображаться такая же производительность, как и при использовании браузера Microsoft ребра.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -430,7 +430,7 @@ webView.Reload();
 - **Android** &ndash; требуется `INTERNET`  только при отображении содержимого из сети. Для локального содержимого не требуются специальные разрешения.
 - **iOS** &ndash; не требует специальных разрешений.
 
-## <a name="layout"></a>Layout
+## <a name="layout"></a>Макет
 
 В отличие от большинства других Xamarin.Forms представлений, `WebView` требует, чтобы `HeightRequest` и `WidthRequest` были указаны, если они содержатся в StackLayout или RelativeLayout. Если не указать эти свойства, объект `WebView` не будет отображен.
 
@@ -490,7 +490,7 @@ RelativeLayout с Видсрекуест & Хеигхтрекуест:
 
 ## <a name="invoking-javascript"></a>Вызов JavaScript
 
-[`WebView`](xref:Xamarin.Forms.WebView) включает возможность вызывать функцию JavaScript из C# и возвращать любой результат в вызывающий код C#. Это осуществляется с помощью [`WebView.EvaluateJavaScriptAsync`](xref:Xamarin.Forms.WebView.EvaluateJavaScriptAsync*) метода, который показан в следующем примере из примера [WebView](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-webview) :
+[`WebView`](xref:Xamarin.Forms.WebView) включает возможность вызывать функцию JavaScript из C# и возвращать любой результат в вызывающий код C#. Это осуществляется с помощью [`WebView.EvaluateJavaScriptAsync`](xref:Xamarin.Forms.WebView.EvaluateJavaScriptAsync*) метода, который показан в следующем примере из примера [WebView](/samples/xamarin/xamarin-forms-samples/userinterface-webview) :
 
 ```csharp
 var numberEntry = new Entry { Text = "5" };
@@ -597,6 +597,6 @@ webView.Source = new UrlWebViewSource { Url = uri.ToString() };
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Работа с WebView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithwebview)
-- [WebView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-webview)
+- [Работа с WebView (пример)](/samples/xamarin/xamarin-forms-samples/workingwithwebview)
+- [WebView (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-webview)
 - [Устаревшие Уивебвиев](~/ios/user-interface/controls/webview.md#uiwebview-deprecation)

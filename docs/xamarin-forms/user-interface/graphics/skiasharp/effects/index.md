@@ -10,12 +10,12 @@ ms.date: 08/22/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d9fa710f5dfc61c2892b8fc409a39b37cf449018
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e63d92cde5925561dae4217c3c46af2c2c59f795
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136309"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563995"
 ---
 # <a name="skiasharp-effects"></a>Эффекты SkiaSharp
 
@@ -47,9 +47,9 @@ ms.locfileid: "84136309"
 
 Задайте [`ColorFilter`](xref:SkiaSharp.SKPaint.ColorFilter) свойство `SKPaint` объекта типа [`SKColorFilter`](xref:SkiaSharp.SKColorFilter) , чтобы изменить цвета с помощью таблиц или преобразований матрицы.
 
-Весь пример кода для этих статей находится в [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos). На домашней странице выберите **эффекты SkiaSharp**.
+Весь пример кода для этих статей находится в [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos). На домашней странице выберите **эффекты SkiaSharp**.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsПривязываемые свойства
+title: Xamarin.Forms Привязываемые свойства
 description: В этой статье приводятся общие сведения о связываемых свойствах и демонстрируется их создание и использование.
 ms.prod: xamarin
 ms.assetid: 1EE869D8-6FE1-45CA-A0AD-26EC7D032AD7
@@ -10,14 +10,14 @@ ms.date: 01/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7d83728edc161a89b381330884e86f09b7788e3d
-ms.sourcegitcommit: 898ba8e5140ae32a7df7e07c056aff65f6fe4260
+ms.openlocfilehash: df2cf99ef0ea1fcbb1b52dda7abb6c8cfdd2d2e7
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86226785"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561538"
 ---
-# <a name="xamarinforms-bindable-properties"></a>Xamarin.FormsПривязываемые свойства
+# <a name="no-locxamarinforms-bindable-properties"></a>Xamarin.Forms Привязываемые свойства
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior)
 
@@ -221,8 +221,8 @@ public static readonly BindableProperty SizeProperty =
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Пространства имен языка XAML](~/xamarin-forms/xaml/namespaces.md)
-- [Поведение события для команды (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior)
-- [Обратный вызов проверки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-validationcallback)
-- [Обратный вызов значения приведения (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-coercevaluecallback)
+- [Поведение события для команды (пример)](/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior)
+- [Обратный вызов проверки (пример)](/samples/xamarin/xamarin-forms-samples/xaml-validationcallback)
+- [Обратный вызов значения приведения (пример)](/samples/xamarin/xamarin-forms-samples/xaml-coercevaluecallback)
 - [API Биндаблепроперти](xref:Xamarin.Forms.BindableProperty)
 - [API BindableObject](xref:Xamarin.Forms.BindableObject)

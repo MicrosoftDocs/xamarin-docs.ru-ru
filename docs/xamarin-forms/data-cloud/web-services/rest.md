@@ -10,12 +10,12 @@ ms.date: 05/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 972a5ac99ff775ea7301f803c333d8239ae7f193
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 6af0641fe1f8f9be772b25c26825232b6bdba9b7
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938194"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562383"
 ---
 # <a name="consume-a-restful-web-service"></a>Использование веб-службы RESTFUL
 
@@ -58,7 +58,7 @@ API веб-службы, которые соответствуют ОСТАВШ�
 |--- |--- |--- |--- |
 |Получение списка элементов задач|GET|/апи/тодоитемс/|
 |Создать новый элемент задачи|POST|/апи/тодоитемс/|TodoItem в формате JSON|
-|Обновление элемента задачи|PUT|/апи/тодоитемс/|TodoItem в формате JSON|
+|Обновление элемента задачи|ОТПРАВКА|/апи/тодоитемс/|TodoItem в формате JSON|
 |Удаление элемента задачи|DELETE|/апи/тодоитемс/{ид}|
 
 Большинство URI содержат `TodoItem` идентификатор в пути. Например, чтобы удалить, `TodoItem` чей идентификатор — `6bb8a868-dba1-4f1a-93b7-24ebce87e243` , клиент отправляет запрос на удаление в `http://hostname/api/todoitems/6bb8a868-dba1-4f1a-93b7-24ebce87e243` . Дополнительные сведения о модели данных, используемой в примере приложения, см. в разделе [моделирование данных](~/xamarin-forms/data-cloud/web-services/introduction.md).
@@ -214,5 +214,5 @@ public async Task DeleteTodoItemAsync (string id)
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Создание серверных служб для собственных мобильных приложений](/aspnet/core/mobile/native-mobile-backend/)
-- [TodoREST (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todorest)
-- [HttpClient](https://msdn.microsoft.com/library/system.net.http.httpclient(v=vs.110).aspx)
+- [TodoREST (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todorest)
+- [HttpClient](/dotnet/api/system.net.http.httpclient)

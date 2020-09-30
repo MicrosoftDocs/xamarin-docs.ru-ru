@@ -10,12 +10,12 @@ ms.date: 03/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3fcea963b253ea34601a36434007f18d925975eb
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9923a7f0605a7ca5d9d81269c3d855e92fbccaf4
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84131343"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91564086"
 ---
 # <a name="part-3-xaml-markup-extensions"></a>Часть 3. Расширения разметки XAML
 
@@ -146,7 +146,7 @@ _Расширения разметки XAML составляют важную ф
 
 `StaticResource`Расширение разметки всегда отделяется фигурными скобками и включает ключ словаря.
 
-Имя `StaticResource` отличает его от `DynamicResource` , которое Xamarin.Forms также поддерживает. `DynamicResource`предназначен для ключей словаря, связанных со значениями, которые могут изменяться во время выполнения, а также для `StaticResource` доступа к элементам из словаря только один раз при создании элементов на странице.
+Имя `StaticResource` отличает его от `DynamicResource` , которое Xamarin.Forms также поддерживает. `DynamicResource` предназначен для ключей словаря, связанных со значениями, которые могут изменяться во время выполнения, а также для `StaticResource` доступа к элементам из словаря только один раз при создании элементов на странице.
 
 Для `BorderWidth` свойства необходимо сохранить Double в словаре. XAML удобно определяет теги для общих типов данных, таких как `x:Double` и `x:Int32` :
 
@@ -323,7 +323,7 @@ _Расширения разметки XAML составляют важную ф
 
 ## <a name="the-xstatic-markup-extension"></a>Расширение разметки x:Static
 
-Несмотря на сходства их имен, `x:Static` `StaticResource` они сильно отличаются. `StaticResource`Возвращает объект из словаря ресурсов при `x:Static` обращении к одному из следующих объектов:
+Несмотря на сходства их имен, `x:Static` `StaticResource` они сильно отличаются. `StaticResource` Возвращает объект из словаря ресурсов при `x:Static` обращении к одному из следующих объектов:
 
 - открытое статическое поле
 - открытое статическое свойство
@@ -444,9 +444,9 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 
 Несколько расширений разметки являются встроенными для XAML и поддерживаются в Xamarin.Forms файлах XAML. Некоторые из них не используются очень часто, но они необходимы при необходимости:
 
-- Если свойство имеет значение, отличное от `null` значения по умолчанию, но необходимо задать для него `null` `{x:Null}` расширение разметки.
-- Если свойство имеет тип `Type` , его можно назначить `Type` объекту с помощью расширения разметки `{x:Type someClass}` .
-- Вы можете определить массивы в XAML, используя `x:Array` расширение разметки. У этого расширения разметки есть обязательный атрибут с именем `Type` , который указывает тип элементов в массиве.
+- Если свойство имеет значение, отличное от `null` значения по умолчанию, но необходимо задать для него  `null` `{x:Null}` расширение разметки.
+- Если свойство имеет тип `Type` , его можно назначить  `Type` объекту с помощью расширения разметки `{x:Type someClass}` .
+- Вы можете определить массивы в XAML, используя `x:Array` расширение разметки. У этого расширения разметки есть обязательный атрибут с именем  `Type` , который указывает тип элементов в массиве.
 - `Binding`Расширение разметки рассматривается в [части 4. Основы привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md).
 - `RelativeSource`Расширение разметки рассматривается в разделе [относительные привязки](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md).
 
@@ -563,7 +563,7 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ксамлсамплес](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)
+- [ксамлсамплес](/samples/xamarin/xamarin-forms-samples/xamlsamples)
 - [Часть 1. начало работы с XAML](~/xamarin-forms/xaml/xaml-basics/get-started-with-xaml.md)
 - [Часть 2. Важный синтаксис XAML](~/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax.md)
 - [Часть 4. Основы привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md)

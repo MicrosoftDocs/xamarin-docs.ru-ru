@@ -1,5 +1,5 @@
 ---
-title: Интеграция сXamarin.Forms
+title: Интеграция с Xamarin.Forms
 description: В этой статье объясняется, как создать график SkiaSharp, реагирующий на касание и Xamarin.Forms элементы, и демонстрируется пример кода.
 ms.prod: xamarin
 ms.technology: xamarin-skiasharp
@@ -10,14 +10,14 @@ ms.date: 02/09/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 60f53fb00786b183f36f7cfefa6af9062bb682db
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: cca93508e022420e0d5d11de079420b367188052
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938168"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562253"
 ---
-# <a name="integrating-with-xamarinforms"></a>Интеграция сXamarin.Forms
+# <a name="integrating-with-no-locxamarinforms"></a>Интеграция с Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
@@ -28,7 +28,7 @@ SkiaSharp графика может интегрироваться с остал
 ![Выбор цвета с помощью ползунков](integration-images/integrationexample.png)
 
 Другой подход к созданию интерактивной SkiaSharp графики в Xamarin.Forms заключается в использовании сенсорного ввода.
-Второй страницей программы [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) является право **коснуться кнопки переключить заливку**. Он рисует простую окружность двумя способами &mdash; без заливки и с заливкой &mdash; , переключаемой касанием. [`TapToggleFillPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/TapToggleFillPage.xaml.cs)Класс показывает, как можно изменить график SkiaSharp в ответ на вводимые пользователем данные.
+Второй страницей программы [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) является право **коснуться кнопки переключить заливку**. Он рисует простую окружность двумя способами &mdash; без заливки и с заливкой &mdash; , переключаемой касанием. [`TapToggleFillPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/TapToggleFillPage.xaml.cs)Класс показывает, как можно изменить график SkiaSharp в ответ на вводимые пользователем данные.
 
 Для этой страницы `SKCanvasView` создается экземпляр класса в файле [таптогглефилл. XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/TapToggleFillPage.xaml) , который также задает в Xamarin.Forms [`TapGestureRecognizer`](xref:Xamarin.Forms.TapGestureRecognizer) представлении:
 
@@ -244,5 +244,5 @@ public partial class ColorExplorePage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

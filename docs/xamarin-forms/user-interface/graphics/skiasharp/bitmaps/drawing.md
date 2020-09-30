@@ -10,12 +10,12 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c045e297beca675c0582efc2f75b1d6b2bcedcf8
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 91051b1ffc859d4e3deb62d41709db0c587b2789
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84573299"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560836"
 ---
 # <a name="creating-and-drawing-on-skiasharp-bitmaps"></a>Создание и рисование на точечных рисунках SkiaSharp
 
@@ -59,7 +59,7 @@ using (SKCanvas canvas = new SKCanvas(bitmap))
 
 Затем можно отобразить точечный рисунок. В дальнейшем программа может создать новый `SKCanvas` объект на основе этого же растрового изображения и нарисовать его еще больше.
 
-Страница " **Hello Bitmap** " в приложении **[скиашарпформсдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** записывает текст "Hello, Bitmap!" на точечном рисунке, а затем отображает это растровое изображение несколько раз.
+Страница " **Hello Bitmap** " в приложении **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** записывает текст "Hello, Bitmap!" на точечном рисунке, а затем отображает это растровое изображение несколько раз.
 
 Конструктор `HelloBitmapPage` начинается с создания `SKPaint` объекта для отображения текста. Он определяет размеры текстовой строки и создает точечный рисунок с этими измерениями. Затем он создает `SKCanvas` объект на основе этого растрового изображения, вызывает `Clear` , а затем вызывает `DrawText` . Всегда рекомендуется вызывать `Clear` с новым точечным рисунком, так как только что созданный точечный рисунок может содержать случайные данные.
 
@@ -126,7 +126,7 @@ public partial class HelloBitmapPage : ContentPage
 
 Документация по `Clear` методам `SKCanvas` описывает их с помощью оператора: "заменяет все пиксели в текущем клипе холста". Использование слова «reзамены» показывает важную характеристику этих методов: все методы рисования `SKCanvas` для добавления чего-либо в существующую поверхность отображения. `Clear`Методы _заменяют_ то, что уже есть.
 
-`Clear`существует в двух разных версиях:
+`Clear` существует в двух разных версиях:
 
 - [`Clear`](xref:SkiaSharp.SKCanvas.Clear(SkiaSharp.SKColor))Метод с `SKColor` параметром заменяет Пиксели отображаемой области пикселами этого цвета.
 
@@ -176,8 +176,8 @@ Color = new SKColor(0, 0, 0, 0)
 
 Эта серия статей будет ограничена `SKBitmap` цветовыми форматами, используемыми по умолчанию, если ни один `SKColorType` элемент не указан. Этот формат по умолчанию основан на базовой платформе. Для платформ Xamarin.Forms , поддерживаемых, тип цвета по умолчанию:
 
-- `Rgba8888`для iOS и Android
-- `Bgra8888`для UWP
+- `Rgba8888` для iOS и Android
+- `Bgra8888` для UWP
 
 Единственное отличие состоит в том, что 4 байта в памяти, и это становится проблемой только при непосредственном доступе к битам пикселей. Это не станет важным, пока вы не получите доступ к статье [**SkiaSharp Bitmap пикселей**](pixel-bits.md).
 
@@ -267,7 +267,7 @@ public partial class MonkeyMoustachePage : ContentPage
 
 Самым универсальным способом изменения точечного рисунка является доступ к фактическим разрядам пикселей, предмет, который рассматривается в статье **[доступ к SkiaSharp точечным рисункам](pixel-bits.md)**. Но существует много других методов изменения точечных рисунков, которые не нуждаются в доступе к битам пикселей.
 
-Следующий рисунок, включенный в приложение **[скиашарпформсдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** , составляет 360 пикселей в ширину и 480 пикселей в высоту:
+Следующий рисунок, включенный в приложение **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** , составляет 360 пикселей в ширину и 480 пикселей в высоту:
 
 ![Горные вырасти](drawing-images/MountainClimbers.jpg "Горные вырасти")
 
@@ -497,7 +497,7 @@ public partial class BitmapRotatorPage : ContentPage
 
 Другая операция, обычно выполняемая с точечными рисунками, называется _зеркальным отображением_. По сути, точечный рисунок поворачивается в три измерения вокруг вертикальной оси или горизонтальной оси через центр точечного рисунка. При вертикальном отражении создается зеркальный образ.
 
-Эти процессы показаны на странице **Bitmap во флиппере** в приложении **[скиашарпформсдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** . Файл XAML содержит `SKCanvasView` две кнопки для зеркального отображения по вертикали и горизонтали:
+Эти процессы показаны на странице **Bitmap во флиппере** в приложении **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** . Файл XAML содержит `SKCanvasView` две кнопки для зеркального отображения по вертикали и горизонтали:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -599,5 +599,5 @@ public partial class BitmapFlipperPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

@@ -1,6 +1,6 @@
 ---
-title: Xamarin.FormsСловари ресурсов
-description: Xamarin.FormsРесурсы XAML — это объекты, которые могут использоваться совместно и повторно использоваться во всем Xamarin.Forms приложении.
+title: Xamarin.Forms Словари ресурсов
+description: Xamarin.Forms Ресурсы XAML — это объекты, которые могут использоваться совместно и повторно использоваться во всем Xamarin.Forms приложении.
 ms.prod: xamarin
 ms.assetid: DF103686-4A92-40FA-9CF1-A9376293B13C
 ms.technology: xamarin-forms
@@ -11,14 +11,14 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 ms.custom: video
-ms.openlocfilehash: a1c7cfd4a0f3549b11ac51dc13b40da552f6b758
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cdf34d78751345857e89c6bfa6862b58207ad01e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139416"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562136"
 ---
-# <a name="xamarinforms-resource-dictionaries"></a>Xamarin.FormsСловари ресурсов
+# <a name="no-locxamarinforms-resource-dictionaries"></a>Xamarin.Forms Словари ресурсов
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-resourcedictionaries)
 
@@ -236,7 +236,7 @@ Xamarin.FormsПриложение содержит только класс, пр
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Словари ресурсов (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-resourcedictionaries)
+- [Словари ресурсов (пример)](/samples/xamarin/xamarin-forms-samples/xaml-resourcedictionaries)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md)
 - [Стили Xamarin.Forms](~/xamarin-forms/user-interface/styles/index.md)
 - [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)

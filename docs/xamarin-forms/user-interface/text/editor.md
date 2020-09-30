@@ -10,16 +10,16 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3a7dedad6fc33b75a687f94897b64d04a72a0b08
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 42f89f09bd84127fd19bc3ab64794bdac7f145d7
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918436"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561629"
 ---
 # <a name="no-locxamarinforms-editor"></a>Xamarin.FormsРедактор
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
 
 [`Editor`](xref:Xamarin.Forms.Editor)Элемент управления используется для приема многострочного ввода.
 
@@ -75,10 +75,10 @@ var editor = new Editor { Text = "This is a read-only Editor", IsReadOnly = true
 
 [`Editor`](xref:Xamarin.Forms.Editor)Может преобразовать регистр текста, хранящийся в `Text` свойстве, путем присвоения `TextTransform` свойству значения `TextTransform` перечисления. Это перечисление имеет четыре значения:
 
-- `None`Указывает, что текст не будет преобразован.
-- `Default`Указывает, что будет использоваться поведение по умолчанию для платформы. Это значение по умолчанию для свойства `TextTransform`.
-- `Lowercase`Указывает, что текст будет преобразован в нижний регистр.
-- `Uppercase`Указывает, что текст будет преобразован в верхний регистр.
+- `None` Указывает, что текст не будет преобразован.
+- `Default` Указывает, что будет использоваться поведение по умолчанию для платформы. Это значение по умолчанию для свойства `TextTransform`.
+- `Lowercase` Указывает, что текст будет преобразован в нижний регистр.
+- `Uppercase` Указывает, что текст будет преобразован в верхний регистр.
 
 В следующем примере показано преобразование текста в верхний регистр:
 
@@ -135,8 +135,8 @@ Editor editor = new editor { CharacterSpacing = 10 };
 
 [`Editor`](xref:Xamarin.Forms.Editor)Можно установить для автоматического изменения размера содержимого, задав [`Editor.AutoSize`](xref:Xamarin.Forms.Editor.AutoSize) свойству [`TextChanges`](xref:Xamarin.Forms.EditorAutoSizeOption.TextChanges) значение, которое является значением [`EditoAutoSizeOption`](xref:Xamarin.Forms.EditorAutoSizeOption) перечисления. Это перечисление имеет два значения:
 
-- [`Disabled`](xref:Xamarin.Forms.EditorAutoSizeOption.Disabled)Указывает, что автоматическое изменение размера отключено и является значением по умолчанию.
-- [`TextChanges`](xref:Xamarin.Forms.EditorAutoSizeOption.TextChanges)Указывает, что автоматическое изменение размера включено.
+- [`Disabled`](xref:Xamarin.Forms.EditorAutoSizeOption.Disabled) Указывает, что автоматическое изменение размера отключено и является значением по умолчанию.
+- [`TextChanges`](xref:Xamarin.Forms.EditorAutoSizeOption.TextChanges) Указывает, что автоматическое изменение размера включено.
 
 Это можно сделать в коде следующим образом:
 
@@ -248,7 +248,7 @@ var editor = new Editor { ... IsTextPredictionEnabled = false };
 
 ## <a name="colors"></a>Цвета
 
-`Editor`можно настроить для использования пользовательского цвета фона с помощью `BackgroundColor` Свойства. Чтобы обеспечить возможность использования цветов на каждой платформе, необходимо особое внимание. Так как каждая платформа имеет разные значения по умолчанию для цвета текста, может потребоваться задать пользовательский цвет фона для каждой платформы. Дополнительные сведения об оптимизации пользовательского интерфейса для каждой платформы см. [в разделе Работа с](~/xamarin-forms/platform/device.md) оптимизациями платформы.
+`Editor` можно настроить для использования пользовательского цвета фона с помощью `BackgroundColor` Свойства. Чтобы обеспечить возможность использования цветов на каждой платформе, необходимо особое внимание. Так как каждая платформа имеет разные значения по умолчанию для цвета текста, может потребоваться задать пользовательский цвет фона для каждой платформы. Дополнительные сведения об оптимизации пользовательского интерфейса для каждой платформы см. [в разделе Работа с](~/xamarin-forms/platform/device.md) оптимизациями платформы.
 
 В C#:
 
@@ -296,7 +296,7 @@ public partial class EditorPage : ContentPage
 
 ## <a name="events-and-interactivity"></a>События и интерактивность
 
-`Editor`предоставляет два события:
+`Editor` предоставляет два события:
 
 - [TextChanged](xref:Xamarin.Forms.InputView.TextChanged) &ndash; возникает при изменении текста в редакторе. Предоставляет текст до и после изменения.
 - [Завершено](xref:Xamarin.Forms.Editor.Completed) &ndash; возникает, когда пользователь завершает ввод, нажав клавишу Return на клавиатуре.
@@ -306,7 +306,7 @@ public partial class EditorPage : ContentPage
 
 ### <a name="completed"></a>Завершено
 
-`Completed`Событие используется для реагирования на завершение взаимодействия с `Editor` . `Completed`вызывается, когда пользователь заканчивает ввод с полем, вводя ключ возврата на клавиатуре (или нажав клавишу TAB в UWP). Обработчик события является универсальным обработчиком событий, принимающим отправителя и `EventArgs` :
+`Completed`Событие используется для реагирования на завершение взаимодействия с `Editor` . `Completed` вызывается, когда пользователь заканчивает ввод с полем, вводя ключ возврата на клавиатуре (или нажав клавишу TAB в UWP). Обработчик события является универсальным обработчиком событий, принимающим отправителя и `EventArgs` :
 
 ```csharp
 void EditorCompleted (object sender, EventArgs e)
@@ -354,7 +354,7 @@ Title="Editor Demo">
 
 `TextChanged`Событие используется для реагирования на изменение содержимого поля.
 
-`TextChanged`вызывается при каждом `Text` `Editor` изменении. Обработчик события принимает экземпляр `TextChangedEventArgs` . `TextChangedEventArgs`предоставляет доступ к старым и новым значениям с `Editor` `Text` помощью `OldTextValue` `NewTextValue` свойств и:
+`TextChanged` вызывается при каждом `Text` `Editor` изменении. Обработчик события принимает экземпляр `TextChangedEventArgs` . `TextChangedEventArgs` предоставляет доступ к старым и новым значениям с `Editor` `Text` помощью `OldTextValue` `NewTextValue` свойств и:
 
 ```csharp
 void EditorTextChanged (object sender, TextChangedEventArgs e)
@@ -401,5 +401,5 @@ Title="Editor Demo">
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Текст (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+- [Текст (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-text)
 - [API редактора](xref:Xamarin.Forms.Editor)

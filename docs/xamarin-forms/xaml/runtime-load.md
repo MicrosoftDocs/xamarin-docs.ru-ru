@@ -1,5 +1,5 @@
 ---
-title: Загрузка XAML во время выполнения вXamarin.Forms
+title: Загрузка XAML во время выполнения в Xamarin.Forms
 description: XAML можно загрузить и проанализировать во время выполнения с помощью методов расширения Лоадфромксамл.
 ms.prod: xamarin
 ms.assetid: 25F73FBF-2DD3-468E-A2D8-0897414F0F4A
@@ -10,20 +10,20 @@ ms.date: 12/12/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d750aa84a48ad4c8015a619d819134cefc63c3d9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 071a7de630d7d7b7582e3c9fa8906919e92d1fb5
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139377"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562006"
 ---
-# <a name="loading-xaml-at-runtime-in-xamarinforms"></a>Загрузка XAML во время выполнения вXamarin.Forms
+# <a name="loading-xaml-at-runtime-in-no-locxamarinforms"></a>Загрузка XAML во время выполнения в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-loadruntimexaml)
 
 [`Xamarin.Forms.Xaml`](xref:Xamarin.Forms.Xaml)Пространство имен содержит два [`LoadFromXaml`](xref:Xamarin.Forms.Xaml.Extensions.LoadFromXaml*) метода расширения, которые можно использовать для загрузки и синтаксического анализа XAML во время выполнения.
 
-## <a name="background"></a>Историческая справка
+## <a name="background"></a>История
 
 При Xamarin.Forms создании класса XAML [`LoadFromXaml`](xref:Xamarin.Forms.Xaml.Extensions.LoadFromXaml*) метод вызывается неявно. Это происходит потому, что файл кода программной части для класса XAML вызывает `InitializeComponent` метод из своего конструктора:
 
@@ -104,4 +104,4 @@ monkeyLabel.Text = "Seated Monkey";
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Лоадрунтимексамл (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-loadruntimexaml)
+- [Лоадрунтимексамл (пример)](/samples/xamarin/xamarin-forms-samples/xaml-loadruntimexaml)

@@ -10,12 +10,12 @@ ms.date: 03/05/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e02ef600af761915d05c912b586e409dd6f46b85
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a9eacc76fb3da6296039a713e15c4eaa30828d44
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137089"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560966"
 ---
 # <a name="searchbar-style-on-ios"></a>Стиль Сеарчбар в iOS
 
@@ -47,9 +47,9 @@ searchBar.On<iOS>().SetSearchBarStyle(UISearchBarStyle.Minimal);
 
 `SearchBar.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `SearchBar.SetSearchBarStyle`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, имеет ли объект [`SearchBar`](xref:Xamarin.Forms.SearchBar) фон. `UISearchBarStyle`Перечисление предоставляет три возможных значения:
 
-- `Default`Указывает, что [`SearchBar`](xref:Xamarin.Forms.SearchBar) имеет стиль по умолчанию. Это значение по умолчанию для `SearchBar.SearchBarStyle` привязываемого свойства.
-- `Prominent`Указывает, что [`SearchBar`](xref:Xamarin.Forms.SearchBar) имеет полупрозрачный фон, а поле поиска является непрозрачным.
-- `Minimal`Указывает, что не [`SearchBar`](xref:Xamarin.Forms.SearchBar) имеет фона, а поле поиска прозрачно.
+- `Default` Указывает, что [`SearchBar`](xref:Xamarin.Forms.SearchBar) имеет стиль по умолчанию. Это значение по умолчанию для `SearchBar.SearchBarStyle` привязываемого свойства.
+- `Prominent` Указывает, что [`SearchBar`](xref:Xamarin.Forms.SearchBar) имеет полупрозрачный фон, а поле поиска является непрозрачным.
+- `Minimal` Указывает, что не [`SearchBar`](xref:Xamarin.Forms.SearchBar) имеет фона, а поле поиска прозрачно.
 
 Кроме того, `SearchBar.GetSearchBarStyle` метод можно использовать для возврата объекта `UISearchBarStyle` , который применяется к `SearchBar` .
 
@@ -63,6 +63,6 @@ searchBar.On<iOS>().SetSearchBarStyle(UISearchBarStyle.Minimal);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

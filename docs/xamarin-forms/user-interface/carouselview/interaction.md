@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsВзаимодействие Карауселвиев
+title: Xamarin.Forms Взаимодействие Карауселвиев
 description: Доступ к отображаемому в данный момент элементу в Карауселвиев можно получить с помощью свойств CurrentItem и позиции.
 ms.prod: xamarin
 ms.assetid: 854D97E5-D119-4BE2-AE7C-BD428792C992
@@ -10,18 +10,18 @@ ms.date: 02/11/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 57c501c0f789ce448d8381cbbccb46666cf06305
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 43f2e32a240b74fde50659033096c8a7246ea60c
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137414"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91564060"
 ---
-# <a name="xamarinforms-carouselview-interaction"></a>Xamarin.FormsВзаимодействие Карауселвиев
+# <a name="no-locxamarinforms-carouselview-interaction"></a>Xamarin.Forms Взаимодействие Карауселвиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)определяет следующие свойства, управляющие взаимодействием с пользователем:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) определяет следующие свойства, управляющие взаимодействием с пользователем:
 
 - `CurrentItem`Тип `object` , текущий отображаемый элемент. Это свойство имеет режим привязки по умолчанию `TwoWay` и имеет значение, `null` Если нет данных для вывода.
 - `CurrentItemChangedCommand`Тип `ICommand` , который выполняется при изменении текущего элемента.
@@ -35,15 +35,15 @@ ms.locfileid: "84137414"
 
 Все эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть их можно указывать в качестве целевых для привязки данных.
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)Определяет `CurrentItemChanged` событие, которое возникает при `CurrentItem` изменении свойства либо из-за прокрутки пользователем, либо когда приложение задает свойство. `CurrentItemChangedEventArgs`Объект, сопровождающий `CurrentItemChanged` событие, имеет два свойства типа `object` :
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) Определяет `CurrentItemChanged` событие, которое возникает при `CurrentItem` изменении свойства либо из-за прокрутки пользователем, либо когда приложение задает свойство. `CurrentItemChangedEventArgs`Объект, сопровождающий `CurrentItemChanged` событие, имеет два свойства типа `object` :
 
-- `PreviousItem`— Предыдущий элемент после изменения свойства.
-- `CurrentItem`— текущий элемент после изменения свойства.
+- `PreviousItem` — Предыдущий элемент после изменения свойства.
+- `CurrentItem` — текущий элемент после изменения свойства.
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)также определяет `PositionChanged` событие, которое возникает при `Position` изменении свойства либо из-за прокрутки пользователем, либо когда приложение задает свойство. `PositionChangedEventArgs`Объект, сопровождающий `PositionChanged` событие, имеет два свойства типа `int` :
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) также определяет `PositionChanged` событие, которое возникает при `Position` изменении свойства либо из-за прокрутки пользователем, либо когда приложение задает свойство. `PositionChangedEventArgs`Объект, сопровождающий `PositionChanged` событие, имеет два свойства типа `int` :
 
-- `PreviousPosition`— предыдущее расположение после изменения свойства.
-- `CurrentPosition`— Текущая заданная позицией после изменения свойства.
+- `PreviousPosition` — предыдущее расположение после изменения свойства.
+- `CurrentPosition` — Текущая заданная позицией после изменения свойства.
 
 ## <a name="respond-to-the-current-item-changing"></a>Ответ на изменение текущего элемента
 
@@ -85,7 +85,7 @@ void OnCurrentItemChanged(object sender, CurrentItemChangedEventArgs e)
 
 [![Снимок экрана Карауселвиев с предыдущими и текущими элементами в iOS и Android](interaction-images/current-item-events.png "Карауселвиев с текущими и предыдущими элементами")](interaction-images/current-item-events-large.png#lightbox "Карауселвиев с текущими и предыдущими элементами")
 
-### <a name="command"></a>Get-Help
+### <a name="command"></a>Команда
 
 В следующем примере XAML показан объект [`CarouselView`](xref:Xamarin.Forms.CarouselView) , использующий команду для реагирования на текущий изменяемый элемент:
 
@@ -158,7 +158,7 @@ void OnPositionChanged(object sender, PositionChangedEventArgs e)
 
 [![Снимок экрана Карауселвиев с предыдущими и текущими позициями в iOS и Android](interaction-images/current-position-events.png "Карауселвиев с текущими и предыдущими позициями")](interaction-images/current-position-events-large.png#lightbox "Карауселвиев с текущими и предыдущими позициями")
 
-### <a name="command"></a>Get-Help
+### <a name="command"></a>Команда
 
 В следующем примере XAML показано [`CarouselView`](xref:Xamarin.Forms.CarouselView) , в котором используется команда для реагирования на `Position` изменение свойства:
 
@@ -281,12 +281,12 @@ public class MonkeysViewModel : INotifyPropertyChanged
 
 ## <a name="define-visual-states"></a>Определение визуальных состояний
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)определяет четыре визуальных состояния:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) определяет четыре визуальных состояния:
 
-- `CurrentItem`представляет визуальное состояние для отображаемого в данный момент элемента.
-- `PreviousItem`представляет визуальное состояние для ранее отображаемого элемента.
-- `NextItem`представляет визуальное состояние для следующего элемента.
-- `DefaultItem`представляет визуальное состояние для оставшейся части элементов.
+- `CurrentItem` представляет визуальное состояние для отображаемого в данный момент элемента.
+- `PreviousItem` представляет визуальное состояние для ранее отображаемого элемента.
+- `NextItem` представляет визуальное состояние для следующего элемента.
+- `DefaultItem` представляет визуальное состояние для оставшейся части элементов.
 
 Эти визуальные состояния можно использовать для инициации визуальных изменений элементов, отображаемых в [`CarouselView`](xref:Xamarin.Forms.CarouselView) .
 
@@ -362,5 +362,5 @@ public class MonkeysViewModel : INotifyPropertyChanged
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Карауселвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+- [Карауселвиев (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 - [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

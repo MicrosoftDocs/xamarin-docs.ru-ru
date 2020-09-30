@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsОперации
+title: Xamarin.Forms Операции
 description: В этой статье объясняется, как использовать Xamarin.Forms класс entry для приема ввода текста или пароля в приложении.
 ms.prod: xamarin
 ms.assetid: 9923C541-3C10-4D14-BAB5-C4D6C514FB1E
@@ -10,16 +10,16 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3738a0fa3519f18864c2430430a6716bed5be130
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: ab2f0880f694bd9e270385dd6e0256374ed76c43
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918233"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562227"
 ---
-# <a name="no-locxamarinforms-entry"></a>Xamarin.FormsОперации
+# <a name="no-locxamarinforms-entry"></a>Xamarin.Forms Операции
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
 
 Используется Xamarin.Forms [`Entry`](xref:Xamarin.Forms.Entry) для однострочного ввода текста. `Entry`, Как и [`Editor`](xref:Xamarin.Forms.Editor) представление, поддерживает несколько типов клавиатуры. Кроме того, `Entry` можно использовать в качестве поля пароля.
 
@@ -78,10 +78,10 @@ var entry = new Entry { Text = "This is a read-only Entry", IsReadOnly = true })
 
 [`Entry`](xref:Xamarin.Forms.Entry)Может преобразовать регистр текста, хранящийся в `Text` свойстве, путем присвоения `TextTransform` свойству значения `TextTransform` перечисления. Это перечисление имеет четыре значения:
 
-- `None`Указывает, что текст не будет преобразован.
-- `Default`Указывает, что будет использоваться поведение по умолчанию для платформы. Это значение по умолчанию для свойства `TextTransform`.
-- `Lowercase`Указывает, что текст будет преобразован в нижний регистр.
-- `Uppercase`Указывает, что текст будет преобразован в верхний регистр.
+- `None` Указывает, что текст не будет преобразован.
+- `Default` Указывает, что будет использоваться поведение по умолчанию для платформы. Это значение по умолчанию для свойства `TextTransform`.
+- `Lowercase` Указывает, что текст будет преобразован в нижний регистр.
+- `Uppercase` Указывает, что текст будет преобразован в верхний регистр.
 
 В следующем примере показано преобразование текста в верхний регистр:
 
@@ -136,7 +136,7 @@ Entry entry = new Entry { CharacterSpacing = 10 };
 
 ## <a name="password-fields"></a>Поля пароля
 
-`Entry`предоставляет `IsPassword` свойство. Если `IsPassword` имеет значение `true` , содержимое поля будет представлено черными кружками:
+`Entry` предоставляет `IsPassword` свойство. Если `IsPassword` имеет значение `true` , содержимое поля будет представлено черными кружками:
 
 В XAML:
 
@@ -198,8 +198,8 @@ var entry = new Entry { Text = "Cursor position and selection length set", Curso
 
 `ClearButtonVisibility`Свойство можно использовать для управления [`Entry`](xref:Xamarin.Forms.Entry) отображением кнопки Clear, которая позволяет пользователю очистить текст. Этому свойству должно быть присвоено значение `ClearButtonVisibility` члена перечисления:
 
-- `Never`Указывает, что кнопка Clear никогда не будет отображаться. Это значение по умолчанию для свойства `Entry.ClearButtonVisibility`.
-- `WhileEditing`Указывает, что кнопка Clear будет отображаться в [`Entry`](xref:Xamarin.Forms.Entry) , тогда как у нее есть фокус и текст.
+- `Never` Указывает, что кнопка Clear никогда не будет отображаться. Это значение по умолчанию для свойства `Entry.ClearButtonVisibility`.
+- `WhileEditing` Указывает, что кнопка Clear будет отображаться в [`Entry`](xref:Xamarin.Forms.Entry) , тогда как у нее есть фокус и текст.
 
 В следующем примере показано задание свойства в XAML:
 
@@ -281,12 +281,12 @@ entry.Keyboard = Keyboard.Create(KeyboardFlags.Suggestions | KeyboardFlags.Capit
 
 Внешний вид ключа возврата на экранной клавиатуре, который отображается при [`Entry`](xref:Xamarin.Forms.Entry) наличии фокуса, может быть настроен путем присвоения [`ReturnType`](xref:Xamarin.Forms.Entry.ReturnType) свойству значения [`ReturnType`](xref:Xamarin.Forms.ReturnType) перечисления:
 
-- [`Default`](xref:Xamarin.Forms.ReturnType.Default)— Указывает, что какой-либо конкретный ключ возврата не требуется и будет использоваться платформа по умолчанию.
-- [`Done`](xref:Xamarin.Forms.ReturnType.Done)— Указывает ключ возврата "Done".
-- [`Go`](xref:Xamarin.Forms.ReturnType.Go)— Указывает ключ возврата "Go".
-- [`Next`](xref:Xamarin.Forms.ReturnType.Next)— Указывает ключ возврата "Next".
-- [`Search`](xref:Xamarin.Forms.ReturnType.Search)— Указывает ключ возврата поиска.
-- [`Send`](xref:Xamarin.Forms.ReturnType.Send)— Указывает ключ возврата "Send".
+- [`Default`](xref:Xamarin.Forms.ReturnType.Default) — Указывает, что какой-либо конкретный ключ возврата не требуется и будет использоваться платформа по умолчанию.
+- [`Done`](xref:Xamarin.Forms.ReturnType.Done) — Указывает ключ возврата "Done".
+- [`Go`](xref:Xamarin.Forms.ReturnType.Go) — Указывает ключ возврата "Go".
+- [`Next`](xref:Xamarin.Forms.ReturnType.Next) — Указывает ключ возврата "Next".
+- [`Search`](xref:Xamarin.Forms.ReturnType.Search) — Указывает ключ возврата поиска.
+- [`Send`](xref:Xamarin.Forms.ReturnType.Send) — Указывает ключ возврата "Send".
 
 В следующем примере XAML показано, как задать ключ возврата:
 
@@ -396,7 +396,7 @@ entry.BackgroundColor = Color.FromHex("#2c3e50");
 
 ### <a name="completed"></a>Завершено
 
-`Completed`Событие используется для реагирования на завершение взаимодействия с записью. `Completed`вызывается, когда пользователь заканчивает ввод с полем, нажав клавишу Return на клавиатуре (или нажав клавишу TAB в UWP). Обработчик события является универсальным обработчиком событий, принимающим отправителя и `EventArgs` :
+`Completed`Событие используется для реагирования на завершение взаимодействия с записью. `Completed` вызывается, когда пользователь заканчивает ввод с полем, нажав клавишу Return на клавиатуре (или нажав клавишу TAB в UWP). Обработчик события является универсальным обработчиком событий, принимающим отправителя и `EventArgs` :
 
 ```csharp
 void Entry_Completed (object sender, EventArgs e)
@@ -424,7 +424,7 @@ entry.Completed += Entry_Completed;
 
 `TextChanged`Событие используется для реагирования на изменение содержимого поля.
 
-`TextChanged`вызывается при каждом `Text` `Entry` изменении. Обработчик события принимает экземпляр `TextChangedEventArgs` . `TextChangedEventArgs`предоставляет доступ к старым и новым значениям с `Entry` `Text` помощью `OldTextValue` `NewTextValue` свойств и:
+`TextChanged` вызывается при каждом `Text` `Entry` изменении. Обработчик события принимает экземпляр `TextChangedEventArgs` . `TextChangedEventArgs` предоставляет доступ к старым и новым значениям с `Entry` `Text` помощью `OldTextValue` `NewTextValue` свойств и:
 
 ```csharp
 void Entry_TextChanged (object sender, TextChangedEventArgs e)
@@ -449,5 +449,5 @@ entry.TextChanged += Entry_TextChanged;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Текст (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+- [Текст (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-text)
 - [API Entry](xref:Xamarin.Forms.Entry)

@@ -10,12 +10,12 @@ ms.date: 10/25/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 84d8901b7f8dee8ffd6c3ba22d30c76b456555f0
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: dcf09adc690aee5487107630eb74bb8c4e9599cb
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84571510"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562175"
 ---
 # <a name="passing-arguments-in-xaml"></a>Передача аргументов в XAML
 
@@ -34,7 +34,7 @@ _В этой статье показано использование атриб
 
 ## <a name="passing-constructor-arguments"></a>Передача аргументов конструктора
 
-Аргументы могут передаваться в конструктор, не используемый по умолчанию, с помощью `x:Arguments` атрибута. Каждый аргумент конструктора должен разделяться внутри XML-элемента, представляющего тип аргумента. Xamarin.Formsподдерживает следующие элементы для базовых типов:
+Аргументы могут передаваться в конструктор, не используемый по умолчанию, с помощью `x:Arguments` атрибута. Каждый аргумент конструктора должен разделяться внутри XML-элемента, представляющего тип аргумента. Xamarin.Forms поддерживает следующие элементы для базовых типов:
 
 - `x:Array`
 - `x:Boolean`
@@ -136,7 +136,7 @@ _В этой статье показано использование атриб
 </BoxView>
 ```
 
-Число элементов в `x:Arguments` теге и типы этих элементов должны соответствовать аргументам вызываемого метода фабрики. [`FromRgba`](xref:Xamarin.Forms.Color.FromRgba(System.Int32,System.Int32,System.Int32,System.Int32))Фабричный метод требует четыре [`Int32`](https://docs.microsoft.com/dotnet/api/system.int32) параметра, представляющих красные, зеленые, синие и альфа-значения, в диапазоне от 0 до 255 соответственно. [`FromHsla`](xref:Xamarin.Forms.Color.FromHsla(System.Double,System.Double,System.Double,System.Double))Для метода фабрики требуется четыре [`Double`](https://docs.microsoft.com/dotnet/api/system.double) параметра, представляющие оттенок, насыщенность, яркость и альфа-значения в диапазоне от 0 до 1 соответственно. Для [`FromHex`](xref:Xamarin.Forms.Color.FromHex(System.String)) метода фабрики требуется [`String`](https://docs.microsoft.com/dotnet/api/system.string) , представляющий шестнадцатеричный цвет (a) RGB.
+Число элементов в `x:Arguments` теге и типы этих элементов должны соответствовать аргументам вызываемого метода фабрики. [`FromRgba`](xref:Xamarin.Forms.Color.FromRgba(System.Int32,System.Int32,System.Int32,System.Int32))Фабричный метод требует четыре [`Int32`](/dotnet/api/system.int32) параметра, представляющих красные, зеленые, синие и альфа-значения, в диапазоне от 0 до 255 соответственно. [`FromHsla`](xref:Xamarin.Forms.Color.FromHsla(System.Double,System.Double,System.Double,System.Double))Для метода фабрики требуется четыре [`Double`](/dotnet/api/system.double) параметра, представляющие оттенок, насыщенность, яркость и альфа-значения в диапазоне от 0 до 1 соответственно. Для [`FromHex`](xref:Xamarin.Forms.Color.FromHex(System.String)) метода фабрики требуется [`String`](/dotnet/api/system.string) , представляющий шестнадцатеричный цвет (a) RGB.
 
 На следующих снимках экрана показан результат вызова каждого [`Color`](xref:Xamarin.Forms.Color) метода фабрики с указанными значениями аргументов:
 
@@ -166,7 +166,7 @@ _В этой статье показано использование атриб
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Передача аргументов конструктора (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-passingconstructorarguments)
-- [Методы вызова фабрики (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-callingfactorymethods)
+- [Передача аргументов конструктора (пример)](/samples/xamarin/xamarin-forms-samples/xaml-passingconstructorarguments)
+- [Методы вызова фабрики (пример)](/samples/xamarin/xamarin-forms-samples/xaml-callingfactorymethods)
 - [Пространства имен языка XAML](~/xamarin-forms/xaml/namespaces.md)
 - [Универсальные шаблоны в Xamarin.Forms XAML](generics.md)

@@ -10,12 +10,12 @@ ms.date: 05/24/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7d5a4fc818cef77671b6cabddc56de8234cb858d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: f783dcc9d0070e8e816f378d261191444822841b
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84127807"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561954"
 ---
 # <a name="skiasharp-curves-and-paths"></a>Пути и кривые SkiaSharp
 
@@ -25,7 +25,7 @@ _Узнайте, как использовать SkiaSharp для рисован
 
 Исследование [`SKPath`](xref:SkiaSharp.SKPath) методов и свойств началось в статье [**SkiaSharp Lines and paths**](../paths/index.md) . В этой статье мы продолжаем использовать методы, которые добавляют кривые к `SKPath` объекту и используют другие мощные возможности пути. Вы увидите, как можно указать полный путь в краткой текстовой строке, как использовать эффекты пути и как изучить внутренние пути.
 
-Все примеры программ в этом разделе можно найти на странице **кривые и пути SkiaSharp** в программе [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) , а также в папке [**кривых**](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves) решения.
+Все примеры программ в этом разделе можно найти на странице **кривые и пути SkiaSharp** в программе [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) , а также в папке [**кривых**](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves) решения.
 
 ## <a name="three-ways-to-draw-an-arc"></a>[Три способа нарисовать дугу](arcs.md)
 
@@ -57,5 +57,5 @@ _Узнайте, как использовать SkiaSharp для рисован
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

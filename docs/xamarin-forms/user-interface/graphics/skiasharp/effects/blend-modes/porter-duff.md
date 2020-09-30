@@ -10,12 +10,12 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a1e6290c0f85b54c3fd8958bc43667714bdece20
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 12e3e95b0f87d0e93d157bebe057874430866c2b
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84131057"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560784"
 ---
 # <a name="porter-duff-blend-modes"></a>Режимы смешения Портер-Дуфф
 
@@ -71,13 +71,13 @@ ms.locfileid: "84131057"
 
 Ниже приведены 14 режимов Портер-Дуфф, как определено в SkiaSharp. В таблице показано, как цвет каждого из трех непустых областей на схеме выше:
 
-| Режим       | Назначение | Крайне | Источник |
+| Режим       | Destination | Крайне | Источник |
 | ---------- |:-----------:|:------------:|:------:|
 | `Clear`    |             |              |        |
 | `Src`      |             | Источник       | X      |
-| `Dst`      | X           | Назначение  |        |
+| `Dst`      | X           | Destination  |        |
 | `SrcOver`  | X           | Источник       | X      |
-| `DstOver`  | X           | Назначение  | X      |
+| `DstOver`  | X           | Destination  | X      |
 | `SrcIn`    |             | Источник       |        |
 | `DstIn`    |             | Назначение  |        |
 | `SrcOut`   |             |              | X      |
@@ -260,7 +260,7 @@ public class PorterDuffGridPage : ContentPage
 }
 ```
 
-Ниже приведен результат.
+Ниже приведен результат:
 
 [![Портер-Дуфф, сетка](porter-duff-images/PorterDuffGrid.png "Портер-Дуфф, сетка")](porter-duff-images/PorterDuffGrid-Large.png#lightbox)
 
@@ -286,7 +286,7 @@ canvas.Clear(SKColors.White);
 
 ![Заданная обезьяна](porter-duff-images/SeatedMonkey.jpg "Заданная обезьяна")
 
-При подготовке к композиции создается соответствующая _матовая_ рамка, которая представляет собой еще один черный рисунок, где изображение должно отображаться и прозрачно в противном случае. Этот файл называется **SeatedMonkeyMatte.png** и находится в ресурсах в папке **Media** примера [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
+При подготовке к композиции создается соответствующая _матовая_ рамка, которая представляет собой еще один черный рисунок, где изображение должно отображаться и прозрачно в противном случае. Этот файл называется **SeatedMonkeyMatte.png** и находится в ресурсах в папке **Media** примера [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
 
 ![Матовая обезьяна](porter-duff-images/SeatedMonkeyMatte.png "Матовая обезьяна")
 
@@ -905,5 +905,5 @@ public partial class GradientTransitionsPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

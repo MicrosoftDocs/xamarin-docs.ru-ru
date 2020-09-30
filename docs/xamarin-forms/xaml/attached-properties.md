@@ -10,19 +10,19 @@ ms.date: 06/02/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1277b3cd875c1b4e05e45202a8e30ef2ff93972a
-ms.sourcegitcommit: 898ba8e5140ae32a7df7e07c056aff65f6fe4260
+ms.openlocfilehash: 61edbb347b4d3466d1ca756208adb5d173d63b34
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86226798"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561551"
 ---
 # <a name="attached-properties"></a>Вложенные свойства
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)
 
 
-Присоединенные свойства позволяют объекту назначить значение для свойства, которое не определено его собственным классом. Например, дочерние элементы могут использовать присоединенные свойства для информирования своего родительского элемента о том, как они представлены в пользовательском интерфейсе. [`Grid`](xref:Xamarin.Forms.Grid)Элемент управления позволяет указать строку и столбец дочернего элемента, задав `Grid.Row` `Grid.Column` Свойства и. `Grid.Row`и `Grid.Column` являются присоединенными свойствами, так как они задаются для элементов, являющихся дочерними элементами объекта `Grid` , а не `Grid` самого самого.
+Присоединенные свойства позволяют объекту назначить значение для свойства, которое не определено его собственным классом. Например, дочерние элементы могут использовать присоединенные свойства для информирования своего родительского элемента о том, как они представлены в пользовательском интерфейсе. [`Grid`](xref:Xamarin.Forms.Grid)Элемент управления позволяет указать строку и столбец дочернего элемента, задав `Grid.Row` `Grid.Column` Свойства и. `Grid.Row` и `Grid.Column` являются присоединенными свойствами, так как они задаются для элементов, являющихся дочерними элементами объекта `Grid` , а не `Grid` самого самого.
 
 Привязываемые свойства должны быть реализованы в виде вложенных свойств в следующих сценариях:
 
@@ -145,6 +145,6 @@ ShadowEffect.SetHasShadow (label, true);
 
 - [Привязываемые свойства](~/xamarin-forms/xaml/bindable-properties.md)
 - [Пространства имен языка XAML](~/xamarin-forms/xaml/namespaces.md)
-- [Эффект тени (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)
+- [Эффект тени (пример)](/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)
 - [API Биндаблепроперти](xref:Xamarin.Forms.BindableProperty)
 - [API BindableObject](xref:Xamarin.Forms.BindableObject)

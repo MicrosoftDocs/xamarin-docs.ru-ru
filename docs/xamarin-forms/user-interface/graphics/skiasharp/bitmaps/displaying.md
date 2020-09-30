@@ -10,12 +10,12 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b0fecac02c44e3ba721dd4625e7bee264c6869d0
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 1427b6f8461c74ded933fe562a7d17221790383a
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84134762"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562318"
 ---
 # <a name="displaying-skiasharp-bitmaps"></a>Отображение точечных рисунков SkiaSharp
 
@@ -27,7 +27,7 @@ ms.locfileid: "84134762"
 
 `DrawBitmapLattice`Методы и `DrawBitmapNinePatch` обсуждаются в статье **[Сегментированное отображение точечных рисунков SkiaSharp](segmented.md)**.
 
-Примеры на этой странице относятся к приложению **[скиашарпформсдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** . На домашней странице этого приложения выберите **точечные рисунки SkiaSharp**, а затем перейдите к разделу **отображение растровых изображений** .
+Примеры на этой странице относятся к приложению **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** . На домашней странице этого приложения выберите **точечные рисунки SkiaSharp**, а затем перейдите к разделу **отображение растровых изображений** .
 
 ## <a name="loading-a-bitmap"></a>Загрузка точечного рисунка
 
@@ -95,7 +95,7 @@ using (Stream stream = assembly.GetManifestResourceStream(resourceID))
 
 Файлы точечных рисунков также могут храниться в виде ресурсов в проекте отдельной платформы для iOS, Android и универсальная платформа Windows (UWP). Однако для загрузки этих точечных рисунков требуется код, расположенный в проекте платформы.
 
-Третьим подходом к получению точечного рисунка является библиотека изображений пользователя. В следующем коде используется служба зависимостей, включенная в приложение **[скиашарпформсдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** . Библиотека .NET Standard **скиашарпформсдемо** включает `IPhotoLibrary` интерфейс, тогда как каждый проект платформы содержит `PhotoLibrary` класс, реализующий этот интерфейс.
+Третьим подходом к получению точечного рисунка является библиотека изображений пользователя. В следующем коде используется служба зависимостей, включенная в приложение **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** . Библиотека .NET Standard **скиашарпформсдемо** включает `IPhotoLibrary` интерфейс, тогда как каждый проект платформы содержит `PhotoLibrary` класс, реализующий этот интерфейс.
 
 ```csharp
 IPhotoicturePicker picturePicker = DependencyService.Get<IPhotoLibrary>();
@@ -131,7 +131,7 @@ DrawBitmap(SKBitmap bitmap, float x, float y, SKPaint paint = null)
 
 Эти два метода функционально идентичны. Указанная точка указывает расположение верхнего левого угла точечного рисунка относительно холста. Так как разрешение в пикселах мобильных устройств настолько велико, небольшие точечные рисунки обычно отображаются на этих устройствах очень маленькими.
 
-Необязательный `SKPaint` параметр позволяет отображать растровое изображение с помощью прозрачности. Для этого создайте `SKPaint` объект и задайте `Color` для свойства любое `SKColor` значение с альфа-каналом меньше 1. Пример:
+Необязательный `SKPaint` параметр позволяет отображать растровое изображение с помощью прозрачности. Для этого создайте `SKPaint` объект и задайте `Color` для свойства любое `SKColor` значение с альфа-каналом меньше 1. Например:
 
 ```csharp
 paint.Color = new SKColor(0, 0, 0, 0x80);
@@ -147,7 +147,7 @@ paint.Color = SKColors.Red.WithAlpha(0x80);
 
 `SKPaint`Объект также играет роль при отображении растровых изображений с помощью режимов смешения или фильтров. Они показаны в статьях [SkiaSharp компоновки и режимы смешения](../effects/blend-modes/index.md) и [Фильтры изображений SkiaSharp](../effects/image-filters.md).
 
-На странице **измерения в пикселах** образца программы **[скиашарпформсдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** отображается ресурс точечного рисунка размером 320 пикселей в ширину на 240 пикселей в высоком уровне:
+На странице **измерения в пикселах** образца программы **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** отображается ресурс точечного рисунка размером 320 пикселей в ширину на 240 пикселей в высоком уровне:
 
 ```csharp
 public class PixelDimensionsPage : ContentPage
@@ -197,7 +197,7 @@ public class PixelDimensionsPage : ContentPage
 
 ## <a name="a-method-for-loading-resource-bitmaps"></a>Метод загрузки точечных рисунков ресурсов
 
-Многие из примеров, которые потребуются для загрузки ресурсов точечного рисунка. Статический `BitmapExtensions` класс в решении **[скиашарпформсдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** содержит метод, помогающий:
+Многие из примеров, которые потребуются для загрузки ресурсов точечного рисунка. Статический `BitmapExtensions` класс в решении **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** содержит метод, помогающий:
 
 ```csharp
 static class BitmapExtensions
@@ -314,7 +314,7 @@ public class UniformScalingPage : ContentPage
 
 [![Ландшафт равномерного масштабирования](displaying-images/UniformScaling-Landscape.png "Ландшафт равномерного масштабирования")](displaying-images/UniformScaling-Landscape-Large.png#lightbox)
 
-Преимущества использования этого `scale` фактора становятся очевидными, если требуется реализовать немного другой алгоритм. Предположим, что необходимо сохранить пропорции растрового изображения, но также заполнить прямоугольник назначения. Единственное, что можно сделать, — обрезать часть изображения, но можно реализовать этот алгоритм просто, изменив `Math.Min` на `Math.Max` в приведенном выше коде. Ниже приведен результат. 
+Преимущества использования этого `scale` фактора становятся очевидными, если требуется реализовать немного другой алгоритм. Предположим, что необходимо сохранить пропорции растрового изображения, но также заполнить прямоугольник назначения. Единственное, что можно сделать, — обрезать часть изображения, но можно реализовать этот алгоритм просто, изменив `Math.Min` на `Math.Max` в приведенном выше коде. Ниже приведен результат: 
 
 [![Альтернатива унифицированного масштабирования](displaying-images/UniformScaling-Alternative.png "Альтернатива унифицированного масштабирования")](displaying-images/UniformScaling-Alternative-Large.png#lightbox)
 
@@ -322,7 +322,7 @@ public class UniformScalingPage : ContentPage
 
 ## <a name="a-versatile-bitmap-display-function"></a>Универсальная функция вывода растрового изображения
 
-В средах программирования на основе XAML (таких как UWP и Xamarin.Forms ) предусмотрена возможность увеличения или уменьшения размера точечных рисунков с сохранением пропорций. Хотя SkiaSharp не включает эту функцию, ее можно реализовать самостоятельно. `BitmapExtensions`Класс, входящий в приложение [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) , показывает, как это делать. Класс определяет два новых `DrawBitmap` метода, которые выполняют вычисление пропорций. Эти новые методы являются методами расширения `SKCanvas` .
+В средах программирования на основе XAML (таких как UWP и Xamarin.Forms ) предусмотрена возможность увеличения или уменьшения размера точечных рисунков с сохранением пропорций. Хотя SkiaSharp не включает эту функцию, ее можно реализовать самостоятельно. `BitmapExtensions`Класс, входящий в приложение [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) , показывает, как это делать. Класс определяет два новых `DrawBitmap` метода, которые выполняют вычисление пропорций. Эти новые методы являются методами расширения `SKCanvas` .
 
 Новые `DrawBitmap` методы включают параметр типа `BitmapStretch` , перечисление, определенное в файле **BitmapExtensions.CS** :
 
@@ -338,7 +338,7 @@ public enum BitmapStretch
 }
 ```
 
-`None`Элементы, `Fill` , `Uniform` и совпадают с `UniformToFill` элементами [`Stretch`](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.media.stretch.aspx) перечисления UWP. Аналогичное Xamarin.Forms [`Aspect`](xref:Xamarin.Forms.Aspect) перечисление определяет члены `Fill` , `AspectFit` и `AspectFill` .
+`None`Элементы, `Fill` , `Uniform` и совпадают с `UniformToFill` элементами [`Stretch`](/uwp/api/Windows.UI.Xaml.Media.Stretch) перечисления UWP. Аналогичное Xamarin.Forms [`Aspect`](xref:Xamarin.Forms.Aspect) перечисление определяет члены `Fill` , `AspectFit` и `AspectFill` .
 
 Показанная выше страница с **равномерным масштабированием** выравнивает точечный рисунок внутри прямоугольника, но могут потребоваться другие параметры, например размещение растрового изображения в левой или правой части прямоугольника, сверху или снизу. Это назначение `BitmapAlignment` перечисления:
 
@@ -668,5 +668,5 @@ public partial class ScalingModesPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

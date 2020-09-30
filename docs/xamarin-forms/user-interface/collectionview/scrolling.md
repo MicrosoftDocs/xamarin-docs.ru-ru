@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsПрокрутка CollectionView
+title: Xamarin.Forms Прокрутка CollectionView
 description: Когда пользователь начинает прокручивать, можно управлять конечной позицией прокрутки, чтобы элементы отображались полностью. Кроме того, CollectionView определяет два метода Скроллто, которые программным путем прокрутки элементов на представление.
 ms.prod: xamarin
 ms.assetid: 2ED719AF-33D2-434D-949A-B70B479C9BA5
@@ -10,32 +10,32 @@ ms.date: 09/17/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 04d190971fa5ef16e08091600558f7f016bc8605
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: dad0c3fd70e2484033268f9ad0686d0b3f42cb70
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84134541"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91564112"
 ---
-# <a name="xamarinforms-collectionview-scrolling"></a>Xamarin.FormsПрокрутка CollectionView
+# <a name="no-locxamarinforms-collectionview-scrolling"></a>Xamarin.Forms Прокрутка CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)определяет два [`ScrollTo`](xref:Xamarin.Forms.ItemsView.ScrollTo*) метода: прокрутка элементов в представление. Одна из перегрузок прокручивается элемент по указанному индексу в представление, а другой Прокручивает указанный элемент в представление. Обе перегрузки имеют дополнительные аргументы, которые могут указывать на группу, к которой принадлежит элемент, точное расположение элемента после завершения прокрутки, а также следует ли анимировать прокрутку.
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) определяет два [`ScrollTo`](xref:Xamarin.Forms.ItemsView.ScrollTo*) метода: прокрутка элементов в представление. Одна из перегрузок прокручивается элемент по указанному индексу в представление, а другой Прокручивает указанный элемент в представление. Обе перегрузки имеют дополнительные аргументы, которые могут указывать на группу, к которой принадлежит элемент, точное расположение элемента после завершения прокрутки, а также следует ли анимировать прокрутку.
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)Определяет [`ScrollToRequested`](xref:Xamarin.Forms.ItemsView.ScrollToRequested) событие, которое возникает при вызове одного из [`ScrollTo`](xref:Xamarin.Forms.ItemsView.ScrollTo*) методов. [`ScrollToRequestedEventArgs`](xref:Xamarin.Forms.ScrollToRequestedEventArgs)Объект, сопровождающий `ScrollToRequested` событие, имеет множество свойств, включая `IsAnimated` , `Index` , `Item` и `ScrollToPosition` . Эти свойства задаются из аргументов, указанных в `ScrollTo` вызовах метода.
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) Определяет [`ScrollToRequested`](xref:Xamarin.Forms.ItemsView.ScrollToRequested) событие, которое возникает при вызове одного из [`ScrollTo`](xref:Xamarin.Forms.ItemsView.ScrollTo*) методов. [`ScrollToRequestedEventArgs`](xref:Xamarin.Forms.ScrollToRequestedEventArgs)Объект, сопровождающий `ScrollToRequested` событие, имеет множество свойств, включая `IsAnimated` , `Index` , `Item` и `ScrollToPosition` . Эти свойства задаются из аргументов, указанных в `ScrollTo` вызовах метода.
 
 Кроме того, [`CollectionView`](xref:Xamarin.Forms.CollectionView) определяет `Scrolled` событие, которое срабатывает для указания на то, что произошла прокрутка. `ItemsViewScrolledEventArgs`Объект, сопровождающий `Scrolled` событие, имеет много свойств. Дополнительные сведения см. в разделе [Определение прокрутки](#detect-scrolling).
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)также определяет `ItemsUpdatingScrollMode` свойство, представляющее поведение прокрутки `CollectionView` при добавлении новых элементов к нему. Дополнительные сведения об этом свойстве см. в разделе [управление позицией прокрутки при добавлении новых элементов](#control-scroll-position-when-new-items-are-added).
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) также определяет `ItemsUpdatingScrollMode` свойство, представляющее поведение прокрутки `CollectionView` при добавлении новых элементов к нему. Дополнительные сведения об этом свойстве см. в разделе [управление позицией прокрутки при добавлении новых элементов](#control-scroll-position-when-new-items-are-added).
 
 Когда пользователь начинает прокручивать, можно управлять конечной позицией прокрутки, чтобы элементы отображались полностью. Эта функция называется привязкой, так как элементы привязываются к позиции при остановке прокрутки. Дополнительные сведения см. в разделе [точки привязки](#snap-points).
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)также может загружать данные постепенно по мере прокрутки пользователем. Дополнительные сведения см. в статье [добавочная загрузка данных](populate-data.md#load-data-incrementally).
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) также может загружать данные постепенно по мере прокрутки пользователем. Дополнительные сведения см. в статье [добавочная загрузка данных](populate-data.md#load-data-incrementally).
 
 ## <a name="detect-scrolling"></a>Обнаружение прокрутки
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)Определяет `Scrolled` событие, которое срабатывает для указания на то, что произошла прокрутка. В следующем примере XAML показан объект `CollectionView` , который задает обработчик событий для `Scrolled` события:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) Определяет `Scrolled` событие, которое срабатывает для указания на то, что произошла прокрутка. В следующем примере XAML показан объект `CollectionView` , который задает обработчик событий для `Scrolled` события:
 
 ```xaml
 <CollectionView Scrolled="OnCollectionViewScrolled">
@@ -149,7 +149,7 @@ collectionView.ScrollTo(monkey, position: ScrollToPosition.Start);
 
 [![Снимок экрана CollectionViewого вертикального списка с прокруткой элемента в представлении в iOS и Android](scrolling-images/scrolltoposition-start.png "Вертикальный список CollectionView с прокруткой элемента")](scrolling-images/scrolltoposition-start-large.png#lightbox "Вертикальный список CollectionView с прокруткой элемента")
 
-### <a name="center"></a>Центр.
+### <a name="center"></a>Center
 
 Элемент [`ScrollToPosition.Center`](xref:Xamarin.Forms.ScrollToPosition) указывает, что элемент должен быть прокручиваться по центру представления:
 
@@ -175,11 +175,11 @@ collectionView.ScrollTo(monkey, position: ScrollToPosition.End);
 
 ## <a name="control-scroll-position-when-new-items-are-added"></a>Управление позицией прокрутки при добавлении новых элементов
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)Определяет `ItemsUpdatingScrollMode` свойство, которое поддерживается связываемым свойством. Это свойство возвращает или задает `ItemsUpdatingScrollMode` значение перечисления, представляющее поведение прокрутки `CollectionView` при добавлении новых элементов к нему. Перечисление `ItemsUpdatingScrollMode` определяет следующие члены:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) Определяет `ItemsUpdatingScrollMode` свойство, которое поддерживается связываемым свойством. Это свойство возвращает или задает `ItemsUpdatingScrollMode` значение перечисления, представляющее поведение прокрутки `CollectionView` при добавлении новых элементов к нему. Перечисление `ItemsUpdatingScrollMode` определяет следующие члены:
 
-- `KeepItemsInView`корректирует смещение прокрутки, чтобы при добавлении новых элементов отображался первый видимый элемент.
-- `KeepScrollOffset`поддерживает смещение прокрутки относительно начала списка при добавлении новых элементов.
-- `KeepLastItemInView`корректирует смещение прокрутки для сохранения последнего элемента, отображаемого при добавлении новых элементов.
+- `KeepItemsInView` корректирует смещение прокрутки, чтобы при добавлении новых элементов отображался первый видимый элемент.
+- `KeepScrollOffset` поддерживает смещение прокрутки относительно начала списка при добавлении новых элементов.
+- `KeepLastItemInView` корректирует смещение прокрутки для сохранения последнего элемента, отображаемого при добавлении новых элементов.
 
 Значение свойства по умолчанию `ItemsUpdatingScrollMode` — `KeepItemsInView` . Поэтому при добавлении новых элементов к [`CollectionView`](xref:Xamarin.Forms.CollectionView) первому видимому элементу в списке будут отображаться. Чтобы убедиться, что новые добавленные элементы всегда видны в нижней части списка, `ItemsUpdatingScrollMode` свойство должно иметь значение `KeepLastItemInView` :
 
@@ -200,11 +200,11 @@ CollectionView collectionView = new CollectionView
 
 ## <a name="scroll-bar-visibility"></a>Видимость полосы прокрутки
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)Определяет `HorizontalScrollBarVisibility` `VerticalScrollBarVisibility` Свойства и, поддерживающие привязку свойств. Эти свойства получают или задают [`ScrollBarVisibility`](xref:Xamarin.Forms.ScrollBarVisibility) значение перечисления, представляющее, когда отображается горизонтальная или вертикальная полоса прокрутки. Перечисление `ScrollBarVisibility` определяет следующие члены:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) Определяет `HorizontalScrollBarVisibility` `VerticalScrollBarVisibility` Свойства и, поддерживающие привязку свойств. Эти свойства получают или задают [`ScrollBarVisibility`](xref:Xamarin.Forms.ScrollBarVisibility) значение перечисления, представляющее, когда отображается горизонтальная или вертикальная полоса прокрутки. Перечисление `ScrollBarVisibility` определяет следующие члены:
 
-- [`Default`](xref:Xamarin.Forms.ScrollBarVisibility)Указывает поведение полосы прокрутки по умолчанию для платформы и является значением по умолчанию `HorizontalScrollBarVisibility` для `VerticalScrollBarVisibility` свойств и.
-- [`Always`](xref:Xamarin.Forms.ScrollBarVisibility)Указывает, что полосы прокрутки будут видимы, даже если содержимое умещается в представлении.
-- [`Never`](xref:Xamarin.Forms.ScrollBarVisibility)Указывает, что полосы прокрутки не будут видны, даже если содержимое не умещается в представлении.
+- [`Default`](xref:Xamarin.Forms.ScrollBarVisibility) Указывает поведение полосы прокрутки по умолчанию для платформы и является значением по умолчанию `HorizontalScrollBarVisibility` для `VerticalScrollBarVisibility` свойств и.
+- [`Always`](xref:Xamarin.Forms.ScrollBarVisibility) Указывает, что полосы прокрутки будут видимы, даже если содержимое умещается в представлении.
+- [`Never`](xref:Xamarin.Forms.ScrollBarVisibility) Указывает, что полосы прокрутки не будут видны, даже если содержимое не умещается в представлении.
 
 ## <a name="snap-points"></a>Точки прикрепления
 
@@ -222,9 +222,9 @@ CollectionView collectionView = new CollectionView
 
 [`SnapPointsType`](xref:Xamarin.Forms.SnapPointsType)Перечисление определяет следующие члены:
 
-- `None`Указывает, что прокрутка не привязывается к элементам.
-- `Mandatory`Указывает, что содержимое всегда привязывается к ближайшей точке привязки, в которой будет естественно останавливаться прокрутка, а также направление инерции.
-- `MandatorySingle`Указывает на то же поведение `Mandatory` , что и, но только прокручивает по одному элементу за раз.
+- `None` Указывает, что прокрутка не привязывается к элементам.
+- `Mandatory` Указывает, что содержимое всегда привязывается к ближайшей точке привязки, в которой будет естественно останавливаться прокрутка, а также направление инерции.
+- `MandatorySingle` Указывает на то же поведение `Mandatory` , что и, но только прокручивает по одному элементу за раз.
 
 По умолчанию [`SnapPointsType`](xref:Xamarin.Forms.ItemsLayout.SnapPointsType) свойство имеет значение `SnapPointsType.None` , которое гарантирует, что прокрутка не привязывает элементы, как показано на следующих снимках экрана:
 
@@ -272,7 +272,7 @@ CollectionView collectionView = new CollectionView
 
 [![Снимок экрана с CollectionView вертикальным списком с точками привязки для запуска в iOS и Android](scrolling-images/snappoints-start.png "Вертикальный список CollectionView с начальной точкой привязки")](scrolling-images/snappoints-start-large.png#lightbox "Вертикальный список CollectionView с начальной точкой привязки")
 
-#### <a name="center"></a>Центр.
+#### <a name="center"></a>Center
 
 `SnapPointsAlignment.Center`Элемент указывает, что точки привязки выровнены по центру элементов. В следующем примере XAML показано, как задать этот элемент перечисления:
 
@@ -340,4 +340,4 @@ CollectionView collectionView = new CollectionView
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [CollectionView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+- [CollectionView (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)

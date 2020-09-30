@@ -1,6 +1,6 @@
 ---
 title: Универсальные шаблоны в Xamarin.Forms XAML
-description: Xamarin.FormsXAML обеспечивает поддержку использования универсальных типов CLR путем указания универсальных ограничений в качестве аргументов типа.
+description: Xamarin.Forms XAML обеспечивает поддержку использования универсальных типов CLR путем указания универсальных ограничений в качестве аргументов типа.
 ms.prod: xamarin
 ms.assetid: 97B73048-4F90-41AD-AB48-8EB804C4998B
 ms.technology: xamarin-forms
@@ -10,18 +10,18 @@ ms.date: 04/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5a033e5feeefc41b97be29491a70632e767aa1b4
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e6856e0ef513905a6300dcaf661ea33f4a89852c
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84565204"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563917"
 ---
-# <a name="generics-in-xamarinforms-xaml"></a>Универсальные шаблоны в Xamarin.Forms XAML
+# <a name="generics-in-no-locxamarinforms-xaml"></a>Универсальные шаблоны в Xamarin.Forms XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-generics/)
 
-Xamarin.FormsXAML обеспечивает поддержку использования универсальных типов CLR путем указания универсальных ограничений в качестве аргументов типа. Эта поддержка обеспечивается `x:TypeArguments` директивой, которая передает аргументы универсального типа с ограничением по отношению к конструктору универсального типа.
+Xamarin.Forms XAML обеспечивает поддержку использования универсальных типов CLR путем указания универсальных ограничений в качестве аргументов типа. Эта поддержка обеспечивается `x:TypeArguments` директивой, которая передает аргументы универсального типа с ограничением по отношению к конструктору универсального типа.
 
 > [!IMPORTANT]
 > Определение универсальных классов в Xamarin.Forms XAML с помощью `x:TypeArguments` директивы не поддерживается.
@@ -212,7 +212,7 @@ Xamarin.FormsXAML обеспечивает поддержку использов
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Универсальные шаблоны в XAML (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-generics/)
+- [Универсальные шаблоны в XAML (пример)](/samples/xamarin/xamarin-forms-samples/xaml-generics/)
 - [Примитивы языка XAML 2009](/dotnet/desktop-wpf/xaml-services/types-for-primitives#xaml-2009-language-primitives)
 - [Расширение разметки x:Type](~/xamarin-forms/xaml/markup-extensions/consuming.md#xtype-markup-extension)
 - [Передача аргументов конструктора](~/xamarin-forms/xaml/passing-arguments.md#passing-constructor-arguments)

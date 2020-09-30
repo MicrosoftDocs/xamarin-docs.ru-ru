@@ -1,5 +1,5 @@
 ---
-title: Создание пользовательского макета вXamarin.Forms
+title: Создание пользовательского макета в Xamarin.Forms
 description: В этой статье объясняется, как написать пользовательский класс макета и демонстрируется ориентированный на ориентацию класс Враплайаут, который упорядочивает свои дочерние элементы на странице по горизонтали, а затем переносит отображение последующих дочерних элементов в дополнительные строки.
 ms.prod: xamarin
 ms.assetid: B0CFDB59-14E5-49E9-965A-3DCCEDAC2E31
@@ -10,18 +10,18 @@ ms.date: 03/29/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b3063a644a48a8796b03b1a6acedbbcbfc7acbf7
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 63a939e7093bcbe52f1aed376253c7aa78b078bf
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86934268"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563852"
 ---
-# <a name="create-a-custom-layout-in-xamarinforms"></a>Создание пользовательского макета вXamarin.Forms
+# <a name="create-a-custom-layout-in-no-locxamarinforms"></a>Создание пользовательского макета в Xamarin.Forms
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
 
-_Xamarin.Formsопределяет пять классов макета — StackLayout, Абсолутелайаут, RelativeLayout, Grid и Флекслайаут, каждый из которых упорядочивает свои дочерние элементы другим способом. Однако иногда необходимо упорядочить содержимое страницы, используя макет, не предоставляемый Xamarin.Forms . В этой статье объясняется, как написать пользовательский класс макета и демонстрируется ориентированный на ориентацию класс Враплайаут, который упорядочивает свои дочерние элементы на странице по горизонтали, а затем переносит отображение последующих дочерних элементов в дополнительные строки._
+_Xamarin.Forms определяет пять классов макета — StackLayout, Абсолутелайаут, RelativeLayout, Grid и Флекслайаут, каждый из которых упорядочивает свои дочерние элементы другим способом. Однако иногда необходимо упорядочить содержимое страницы, используя макет, не предоставляемый Xamarin.Forms . В этой статье объясняется, как написать пользовательский класс макета и демонстрируется ориентированный на ориентацию класс Враплайаут, который упорядочивает свои дочерние элементы на странице по горизонтали, а затем переносит отображение последующих дочерних элементов в дополнительные строки._
 
 В Xamarin.Forms все классы макета являются производными от [`Layout<T>`](xref:Xamarin.Forms.Layout`1) класса и ограничивают универсальный тип [`View`](xref:Xamarin.Forms.View) и его производные типы. В свою очередь, `Layout<T>` класс является производным от [`Layout`](xref:Xamarin.Forms.Layout) класса, который предоставляет механизм для позиционирования и изменения размеров дочерних элементов.
 
@@ -40,7 +40,7 @@ Xamarin.FormsЧтобы создать пользовательский маке
 
 Этот цикл гарантирует, что каждый визуальный элемент на странице будет получать вызовы `Measure` к `Layout` методам и. Этот процесс показан на следующей схеме:
 
-![Xamarin.FormsЦикл макета](custom-images/layout-cycle.png)
+![::: No-Loc (Xamarin. Forms)::: цикл макета](custom-images/layout-cycle.png)
 
 > [!NOTE]
 > Обратите внимание, что циклы макета также могут возникать в подмножестве визуального дерева, если какое-либо изменение повлияет на макет. Сюда входят элементы, добавляемые или удаляемые из коллекции, например в [`StackLayout`](xref:Xamarin.Forms.StackLayout) , изменение [`IsVisible`](xref:Xamarin.Forms.VisualElement.IsVisible) свойства элемента или изменение размера элемента.
@@ -108,10 +108,10 @@ public class WrapLayout : Layout<View>
 
 `LayoutData`Структура хранит данные о коллекции дочерних элементов в ряде свойств:
 
-- `VisibleChildCount`— число дочерних элементов, видимых в макете.
-- `CellSize`— максимальный размер всех дочерних элементов, настраивается в соответствии с размером макета.
-- `Rows`— число строк.
-- `Columns`— число столбцов.
+- `VisibleChildCount` — число дочерних элементов, видимых в макете.
+- `CellSize` — максимальный размер всех дочерних элементов, настраивается в соответствии с размером макета.
+- `Rows` — число строк.
+- `Columns` — число столбцов.
 
 `layoutDataCache`Поле используется для хранения нескольких `LayoutData` значений. При запуске приложения `LayoutData` в словарь будут помещены два объекта `layoutDataCache` для текущей ориентации: один для аргументов ограничения `OnMeasure` переопределения, а другой — для `width` `height` аргументов `LayoutChildren` переопределения. При повороте устройства на альбомную ориентацию `OnMeasure` Переопределение и `LayoutChildren` Переопределение снова будет вызываться, что приведет к кэшированию других двух `LayoutData` объектов в словаре. Однако при возврате устройства к книжной ориентации дальнейшие вычисления не требуются, поскольку у `layoutDataCache` уже есть необходимые данные.
 
@@ -412,7 +412,7 @@ async Task<ImageList> GetImageListAsync()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Враплайаут (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
+- [Враплайаут (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-customlayout-wraplayout)
 - [Пользовательские макеты](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter26.md)
 - [Создание пользовательских макетов в Xamarin.Forms (видео)](https://www.youtube.com/watch?v=sxjOqNZFhKU)
 - [Макет\<T>](xref:Xamarin.Forms.Layout`1)

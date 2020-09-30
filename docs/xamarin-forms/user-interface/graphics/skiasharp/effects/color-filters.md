@@ -10,12 +10,12 @@ ms.date: 08/28/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b9c89d4d426884d678e77687ffa226cced97be58
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 809477fe466ee7a8f0985308896c14341f2dd460
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136387"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561941"
 ---
 # <a name="skiasharp-color-filters"></a>Фильтры по цвету SkiaSharp
 
@@ -123,7 +123,7 @@ ms.locfileid: "84136387"
 public static SKColorFilter CreateColorMatrix (float[] matrix);
 ```
 
-где `matrix` — массив из 20 `float` значений. При создании массива в C# можно легко отформатировать числа, чтобы они наглядели как матрица размером 4 × 5. Это показано на странице **Матрица серого масштаба** в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
+где `matrix` — массив из 20 `float` значений. При создании массива в C# можно легко отформатировать числа, чтобы они наглядели как матрица размером 4 × 5. Это показано на странице **Матрица серого масштаба** в примере [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
 
 ```csharp
 public class GrayScaleMatrixPage : ContentPage
@@ -166,7 +166,7 @@ public class GrayScaleMatrixPage : ContentPage
 }
 ```
 
-`DrawBitmap`Метод, используемый в этом коде, находится в файле **BitmapExtension.CS** , входящем в образец [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . 
+`DrawBitmap`Метод, используемый в этом коде, находится в файле **BitmapExtension.CS** , входящем в образец [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . 
 
 Вот результат, выполняемый в iOS, Android и универсальная платформа Windows:
 
@@ -176,7 +176,7 @@ public class GrayScaleMatrixPage : ContentPage
 
 При эксперименте с матрицами цветов преобразование можно рассматривать как с точки зрения источника, так и с точки зрения назначения. Как замещается красный пиксел источника на красный, зеленый и синий Пиксели места назначения? Это определяется значениями в первом _столбце_ матрицы. Кроме того, как должны влиять красные, зеленые и синие пикселы источника на конечный пиксель назначения? Это определяется первой _строкой_ матрицы.
 
-Некоторые идеи по использованию преобразований цветов см. на страницах « [**Перекрасить изображения**](https://docs.microsoft.com/dotnet/framework/winforms/advanced/recoloring-images) ». Обсуждение Windows Forms, а матрица имеет другой формат, но основные понятия одинаковы.
+Некоторые идеи по использованию преобразований цветов см. на страницах « [**Перекрасить изображения**](/dotnet/framework/winforms/advanced/recoloring-images) ». Обсуждение Windows Forms, а матрица имеет другой формат, но основные понятия одинаковы.
 
 **Матрица «пастель** » рассчитывает красный пиксель назначения путем затухания исходного Красного пикселя и слегка акцентирования к красному и зеленому пикселам. Этот процесс происходит аналогично зеленому и синему пикселам:
 
@@ -302,5 +302,5 @@ public class PosterizeTablePage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
