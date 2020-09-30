@@ -397,6 +397,8 @@
           href: ~/essentials/platform-feature-support.md?context=xamarin/android
         - name: Акселерометр
           href: ~/essentials/accelerometer.md?context=xamarin/android
+        - name: Действия приложения
+          href: ~/essentials/app-actions.md?context=xamarin/android
         - name: Сведения о приложении
           href: ~/essentials/app-information.md?context=xamarin/android
         - name: Тема приложения
@@ -413,6 +415,8 @@
           href: ~/essentials/compass.md?context=xamarin/android
         - name: Подключение
           href: ~/essentials/connectivity.md?context=xamarin/android
+        - name: Контакты
+          href: ~/essentials/contacts.md?context=xamarin/android
         - name: Обнаружение тряски
           href: ~/essentials/detect-shake.md?context=xamarin/android
         - name: Сведения о дисплее устройства
@@ -421,6 +425,8 @@
           href: ~/essentials/device-information.md?context=xamarin/android
         - name: Адрес эл. почты
           href: ~/essentials/email.md?context=xamarin/android
+        - name: Средство выбора файлов
+          href: ~/essentials/file-picker.md?context=xamarin/android
         - name: Вспомогательные методы для файловой системы
           href: ~/essentials/file-system-helpers.md?context=xamarin/android
         - name: Фонарик
@@ -431,6 +437,8 @@
           href: ~/essentials/geolocation.md?context=xamarin/android
         - name: Гироскоп
           href: ~/essentials/gyroscope.md?context=xamarin/android
+        - name: Тактильная обратная связь
+          href: ~/essentials/haptic-feedback.md?context=xamarin/android
         - name: Средство запуска
           href: ~/essentials/launcher.md?context=xamarin/android
         - name: Магнитометр
@@ -439,6 +447,8 @@
           href: ~/essentials/main-thread.md?context=xamarin/android
         - name: Карты
           href: ~/essentials/maps.md?context=xamarin/android
+        - name: Средство выбора мультимедиа
+          href: ~/essentials/media-picker.md?context=xamarin/android
         - name: Открыть браузер
           href: ~/essentials/open-browser.md?context=xamarin/android
         - name: Датчик ориентации
@@ -451,6 +461,8 @@
           href: ~/essentials/platform-extensions.md?context=xamarin/android
         - name: Параметры
           href: ~/essentials/preferences.md?context=xamarin/android
+        - name: Снимок экрана
+          href: ~/essentials/screenshot.md?context=xamarin/android
         - name: Защищенное хранилище
           href: ~/essentials/secure-storage.md?context=xamarin/android
         - name: Общий доступ

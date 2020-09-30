@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsМакет CollectionView
+title: Xamarin.Forms Макет CollectionView
 description: По умолчанию элементы CollectionView будут отображаться в вертикальном списке. Однако можно указать вертикальные и горизонтальные списки и сетки.
 ms.prod: xamarin
 ms.assetid: 5FE78207-1BD6-4706-91EF-B13932321FC9
@@ -10,18 +10,18 @@ ms.date: 07/20/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 73e7ace96c17aea2b397f2706e128ea498338b09
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: e399ae590dbd1260f3b2a403c39ef7e7d98d3592
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918268"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557365"
 ---
-# <a name="no-locxamarinforms-collectionview-layout"></a>Xamarin.FormsМакет CollectionView
+# <a name="no-locxamarinforms-collectionview-layout"></a>Xamarin.Forms Макет CollectionView
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)определяет следующие свойства, управляющие макетом:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) определяет следующие свойства, управляющие макетом:
 
 - [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout)Тип [`IItemsLayout`](xref:Xamarin.Forms.IItemsLayout) — указывает макет для использования.
 - [`ItemSizingStrategy`](xref:Xamarin.Forms.StructuredItemsView.ItemSizingStrategy)Тип [`ItemSizingStrategy`](xref:Xamarin.Forms.ItemSizingStrategy) — определяет применяемую стратегию мер элементов.
@@ -35,7 +35,7 @@ ms.locfileid: "87918268"
 - Вертикальная сетка — сетка с несколькими столбцами, которая растет вертикально по мере добавления новых элементов.
 - Горизонтальная сетка — многострочная сетка, которая растет горизонтально по мере добавления новых элементов.
 
-Эти макеты можно указать, задав [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) для свойства класс, производный от [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) класса. Этот класс определяет следующие свойства:
+Эти макеты можно указать, задав [`ItemsLayout`](xref:Xamarin.Forms.StructuredItemsView.ItemsLayout) для свойства класс, производный от [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) класса. Этот класс определяет приведенные ниже свойства.
 
 - [`Orientation`](xref:Xamarin.Forms.ItemsLayout.Orientation)Тип [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) задает направление, в котором [`CollectionView`](xref:Xamarin.Forms.CollectionView) добавляются элементы расширения по мере добавления.
 - [`SnapPointsAlignment`](xref:Xamarin.Forms.ItemsLayout.SnapPointsAlignment), типа [`SnapPointsAlignment`](xref:Xamarin.Forms.SnapPointsAlignment) , задает способ выравнивания точек привязки по элементам.
@@ -45,8 +45,8 @@ ms.locfileid: "87918268"
 
 [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation)Перечисление определяет следующие члены:
 
-- `Vertical`Указывает, что [`CollectionView`](xref:Xamarin.Forms.CollectionView) будет расширяться по вертикали по мере добавления элементов.
-- `Horizontal`Указывает, что [`CollectionView`](xref:Xamarin.Forms.CollectionView) будет разворачиваться горизонтально по мере добавления элементов.
+- `Vertical` Указывает, что [`CollectionView`](xref:Xamarin.Forms.CollectionView) будет расширяться по вертикали по мере добавления элементов.
+- `Horizontal` Указывает, что [`CollectionView`](xref:Xamarin.Forms.CollectionView) будет разворачиваться горизонтально по мере добавления элементов.
 
 `LinearItemsLayout`Класс наследует от [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) класса и определяет `ItemSpacing` свойство типа `double` , представляющее пустое пространство вокруг каждого элемента. Значение этого свойства по умолчанию равно 0, а его значение всегда должно быть больше или равно 0. `LinearItemsLayout`Класс также определяет статические `Vertical` `Horizontal` члены и. Эти члены можно использовать для создания вертикальных или горизонтальных списков соответственно. Кроме того, `LinearItemsLayout` можно создать объект, указав в [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) качестве аргумента член перечисления.
 
@@ -59,7 +59,7 @@ ms.locfileid: "87918268"
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что свойства могут быть целевыми объектами привязок данных.
 
 > [!NOTE]
-> [`CollectionView`](xref:Xamarin.Forms.CollectionView)использует собственные обработчики макетов для выполнения макета.
+> [`CollectionView`](xref:Xamarin.Forms.CollectionView) использует собственные обработчики макетов для выполнения макета.
 
 ## <a name="vertical-list"></a>Вертикальный список
 
@@ -327,9 +327,9 @@ CollectionView collectionView = new CollectionView
 
 ## <a name="headers-and-footers"></a>Верхние и нижние колонтитулы
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)может представлять верхний и нижний колонтитулы, которые прокручивается с элементами списка. Верхний и нижний колонтитулы могут быть строками, представлениями или [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) объектами.
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) может представлять верхний и нижний колонтитулы, которые прокручивается с элементами списка. Верхний и нижний колонтитулы могут быть строками, представлениями или [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) объектами.
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)определяет следующие свойства для указания верхнего и нижнего колонтитулов:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) определяет следующие свойства для указания верхнего и нижнего колонтитулов:
 
 - `Header`, типа `object` , указывает строку, привязку или представление, которое будет отображаться в начале списка.
 - `HeaderTemplate`Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) указывает, `DataTemplate` используемый для форматирования `Header` .
@@ -550,8 +550,8 @@ CollectionView collectionView = new CollectionView
 
 По умолчанию каждый элемент в [`CollectionView`](xref:Xamarin.Forms.CollectionView) принимает отдельное измерение и размер, при условии, что элементы пользовательского интерфейса в [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) не задают фиксированные размеры. Это поведение, которое можно изменить, задается [`CollectionView.ItemSizingStrategy`](xref:Xamarin.Forms.StructuredItemsView.ItemSizingStrategy) значением свойства. Это значение свойства может быть задано одним из [`ItemSizingStrategy`](xref:Xamarin.Forms.ItemSizingStrategy) членов перечисления:
 
-- `MeasureAllItems`— Каждый элемент по отдельности измеряется. Это значение по умолчанию.
-- `MeasureFirstItem`— измеряется только первый элемент, и все последующие элементы получают тот же размер, что и первый элемент.
+- `MeasureAllItems` — Каждый элемент по отдельности измеряется. Это значение по умолчанию.
+- `MeasureFirstItem` — измеряется только первый элемент, и все последующие элементы получают тот же размер, что и первый элемент.
 
 > [!IMPORTANT]
 > `MeasureFirstItem`Стратегия изменения размера приводит к повышению производительности при использовании в ситуациях, когда размер элемента должен быть одинаковым для всех элементов.
@@ -593,7 +593,7 @@ void OnImageTapped(object sender, EventArgs e)
 
 ## <a name="right-to-left-layout"></a>Макет с письмом справа налево
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)может Разметка содержимого в направлении справа налево путем присвоения [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) свойству значения [`RightToLeft`](xref:Xamarin.Forms.FlowDirection.RightToLeft) . Однако в `FlowDirection` идеале это свойство должно быть установлено на странице или в корневом макете, что приводит к тому, что все элементы на странице или в корневом макете реагируют на направление потока:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) может Разметка содержимого в направлении справа налево путем присвоения [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) свойству значения [`RightToLeft`](xref:Xamarin.Forms.FlowDirection.RightToLeft) . Однако в `FlowDirection` идеале это свойство должно быть установлено на странице или в корневом макете, что приводит к тому, что все элементы на странице или в корневом макете реагируют на направление потока:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -617,6 +617,6 @@ void OnImageTapped(object sender, EventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [CollectionView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+- [CollectionView (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 - [Локализация справа налево](~/xamarin-forms/app-fundamentals/localization/right-to-left.md)
-- [Xamarin.FormsПрокрутка CollectionView](scrolling.md)
+- [Xamarin.Forms Прокрутка CollectionView](scrolling.md)

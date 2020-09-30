@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsCollectionView выбор
+title: Xamarin.Forms CollectionView выбор
 description: По умолчанию выбор CollectionView отключен. Однако можно включить один и несколько элементов.
 ms.prod: xamarin
 ms.assetid: 423D91C7-1E58-4735-9E80-58F11CDFD953
@@ -10,18 +10,18 @@ ms.date: 05/06/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 39f118d7073fc551923f891681c8c6cf6a4c5ddd
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: c432c1981ba057f61bba780b7997c8b78f8cef3f
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137388"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557352"
 ---
-# <a name="xamarinforms-collectionview-selection"></a>Xamarin.FormsCollectionView выбор
+# <a name="no-locxamarinforms-collectionview-selection"></a>Xamarin.Forms CollectionView выбор
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)определяет следующие свойства, управляющие выбором элемента:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) определяет следующие свойства, управляющие выбором элемента:
 
 - [`SelectionMode`](xref:Xamarin.Forms.SelectableItemsView.SelectionMode), типа [`SelectionMode`](xref:Xamarin.Forms.SelectionMode) , режим выбора.
 - [`SelectedItem`](xref:Xamarin.Forms.SelectableItemsView.SelectedItem)Тип `object` , выбранный элемент в списке. Это свойство имеет режим привязки по умолчанию `TwoWay` и имеет значение, `null` Если ни один элемент не выбран.
@@ -33,14 +33,14 @@ ms.locfileid: "84137388"
 
 По умолчанию [`CollectionView`](xref:Xamarin.Forms.CollectionView) выделение отключено. Однако это поведение можно изменить, задав [`SelectionMode`](xref:Xamarin.Forms.SelectableItemsView.SelectionMode) для свойства значение одного из [`SelectionMode`](xref:Xamarin.Forms.SelectionMode) членов перечисления:
 
-- `None`— Указывает, что элементы не могут быть выбраны. Это значение по умолчанию.
-- `Single`— Указывает, что можно выбрать один элемент, выделив выделенный элемент.
-- `Multiple`— Указывает, что можно выбрать несколько элементов с выделенными элементами.
+- `None` — Указывает, что элементы не могут быть выбраны. Это значение по умолчанию.
+- `Single` — Указывает, что можно выбрать один элемент, выделив выделенный элемент.
+- `Multiple` — Указывает, что можно выбрать несколько элементов с выделенными элементами.
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)Определяет [`SelectionChanged`](xref:Xamarin.Forms.SelectableItemsView.SelectionChanged) событие, которое возникает при [`SelectedItem`](xref:Xamarin.Forms.SelectableItemsView.SelectedItem) изменении свойства либо из-за выбора пользователем элемента из списка, либо когда приложение задает свойство. Кроме того, это событие возникает при [`SelectedItems`](xref:Xamarin.Forms.SelectableItemsView.SelectedItems) изменении свойства. [`SelectionChangedEventArgs`](xref:Xamarin.Forms.SelectionChangedEventArgs)Объект, сопровождающий `SelectionChanged` событие, имеет два свойства типа `IReadOnlyList<object>` :
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) Определяет [`SelectionChanged`](xref:Xamarin.Forms.SelectableItemsView.SelectionChanged) событие, которое возникает при [`SelectedItem`](xref:Xamarin.Forms.SelectableItemsView.SelectedItem) изменении свойства либо из-за выбора пользователем элемента из списка, либо когда приложение задает свойство. Кроме того, это событие возникает при [`SelectedItems`](xref:Xamarin.Forms.SelectableItemsView.SelectedItems) изменении свойства. [`SelectionChangedEventArgs`](xref:Xamarin.Forms.SelectionChangedEventArgs)Объект, сопровождающий `SelectionChanged` событие, имеет два свойства типа `IReadOnlyList<object>` :
 
-- `PreviousSelection`— список элементов, которые были выбраны до изменения выбора.
-- `CurrentSelection`— список элементов, выбранных после изменения выбора.
+- `PreviousSelection` — список элементов, которые были выбраны до изменения выбора.
+- `CurrentSelection` — список элементов, выбранных после изменения выбора.
 
 Кроме того, [`CollectionView`](xref:Xamarin.Forms.CollectionView) содержит `UpdateSelectedItems` метод, который обновляет [`SelectedItems`](xref:Xamarin.Forms.SelectableItemsView.SelectedItems) свойство списком выбранных элементов, в то время как обрабатывалось только одно уведомление об изменении.
 
@@ -267,7 +267,7 @@ namespace CollectionViewDemos.ViewModels
 
 ## <a name="change-selected-item-color"></a>Изменить цвет выбранного элемента
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)имеет объект `Selected` [`VisualState`](xref:Xamarin.Forms.VisualState) , который можно использовать для инициации визуального изменения выбранного элемента в `CollectionView` . Распространенным вариантом использования этого варианта `VisualState` является изменение цвета фона выбранного элемента, который показан в следующем примере XAML:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) имеет объект `Selected` [`VisualState`](xref:Xamarin.Forms.VisualState) , который можно использовать для инициации визуального изменения выбранного элемента в `CollectionView` . Распространенным вариантом использования этого варианта `VisualState` является изменение цвета фона выбранного элемента, который показан в следующем примере XAML:
 
 ```xaml
 <ContentPage ...>
@@ -314,7 +314,7 @@ namespace CollectionViewDemos.ViewModels
 
 ## <a name="disable-selection"></a>Отключить выделение
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)по умолчанию выделение отключено. Однако если `CollectionView` включен выбор, его можно отключить, задав [`SelectionMode`](xref:Xamarin.Forms.SelectableItemsView.SelectionMode) для свойства значение `None` :
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) по умолчанию выделение отключено. Однако если `CollectionView` включен выбор, его можно отключить, задав [`SelectionMode`](xref:Xamarin.Forms.SelectableItemsView.SelectionMode) для свойства значение `None` :
 
 ```xaml
 <CollectionView ...
@@ -338,5 +338,5 @@ CollectionView collectionView = new CollectionView
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [CollectionView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+- [CollectionView (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 - [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

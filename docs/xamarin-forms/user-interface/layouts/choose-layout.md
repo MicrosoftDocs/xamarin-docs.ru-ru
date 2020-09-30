@@ -1,6 +1,6 @@
 ---
 title: Выбор Xamarin.Forms макета
-description: Xamarin.Formsклассы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении.
+description: Xamarin.Forms классы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении.
 ms.prod: xamarin
 ms.assetid: 05A39752-A174-447E-A30D-3CC9EF98CB96
 ms.technology: xamarin-forms
@@ -10,18 +10,18 @@ ms.date: 08/21/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 38b44bbb8f01f090d286bb2203014455a32a2290
-ms.sourcegitcommit: 808ff109928a1eea16e17e23ea81f8c903a239e8
+ms.openlocfilehash: 6f5702695698881a30cfbf3e63110856a97a2c24
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88181489"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555351"
 ---
 # <a name="choose-a-no-locxamarinforms-layout"></a>Выбор Xamarin.Forms макета
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
 
-Xamarin.Formsклассы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении. Выбор класса макета требует знания того, как макет позиционирует свои дочерние элементы, и как макет изменяет свои дочерние элементы. Кроме того, может потребоваться вложение макетов для создания желаемого макета.
+Xamarin.Forms классы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении. Выбор класса макета требует знания того, как макет позиционирует свои дочерние элементы, и как макет изменяет свои дочерние элементы. Кроме того, может потребоваться вложение макетов для создания желаемого макета.
 
 На следующем рисунке показаны типичные макеты, которые можно достичь с помощью основных Xamarin.Forms классов макета:
 
@@ -29,7 +29,7 @@ Xamarin.Formsклассы макетов позволяют упорядочив
 
 ## <a name="stacklayout"></a>StackLayout
 
-Объект [`StackLayout`](xref:Xamarin.Forms.StackLayout) упорядочивает элементы в одномерном стеке: по горизонтали или по вертикали. [`Orientation`](xref:Xamarin.Forms.StackLayout.Orientation)Свойство задает направление элементов, а ориентация по умолчанию — [`Vertical`](xref:Xamarin.Forms.StackOrientation) . `StackLayout`обычно используется для упорядочения подраздела пользовательского интерфейса на странице.
+Объект [`StackLayout`](xref:Xamarin.Forms.StackLayout) упорядочивает элементы в одномерном стеке: по горизонтали или по вертикали. [`Orientation`](xref:Xamarin.Forms.StackLayout.Orientation)Свойство задает направление элементов, а ориентация по умолчанию — [`Vertical`](xref:Xamarin.Forms.StackOrientation) . `StackLayout` обычно используется для упорядочения подраздела пользовательского интерфейса на странице.
 
 В следующем коде XAML показано, как создать вертикальный, [`StackLayout`](xref:Xamarin.Forms.StackLayout) содержащий три [`Label`](xref:Xamarin.Forms.Label) объекта:
 
@@ -250,12 +250,12 @@ Xamarin.Formsклассы макетов позволяют упорядочив
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Макет (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
-- [Xamarin.FormsМакеты (видео)](https://youtu.be/4HlLjTZQzjM)
-- [Xamarin.FormsStackLayout](stacklayout.md)
-- [Xamarin.FormsСетки](grid.md)
-- [Xamarin.Formsфлекслайаут](flex-layout.md)
-- [Xamarin.Formsабсолутелайаут](absolutelayout.md)
-- [Xamarin.FormsRelativeLayout](relativelayout.md)
+- [Макет (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-layout)
+- [Xamarin.Forms Макеты (видео)](https://youtu.be/4HlLjTZQzjM)
+- [Xamarin.Forms StackLayout](stacklayout.md)
+- [Xamarin.Forms Сетки](grid.md)
+- [Xamarin.Forms флекслайаут](flex-layout.md)
+- [Xamarin.Forms абсолутелайаут](absolutelayout.md)
+- [Xamarin.Forms RelativeLayout](relativelayout.md)
 - [Оптимизация производительности макета](~/xamarin-forms/deploy-test/performance.md#optimize-layout-performance)
 - [Сжатие макета](layout-compression.md)

@@ -10,18 +10,18 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 45ec48c0b7b58e26fa47d7343e96bb49591cb339
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 00b6251f530a4927d069ae92ec919645a06baf15
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84127768"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555402"
 ---
 # <a name="skiasharp-noise-and-composing"></a>SkiaSharp шум и составление
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-Простая векторная графика, как правило, выглядит неестественным. Прямые линии, гладкие кривые и сплошные цвета не похожи на реальные объекты. Работая с созданными компьютером графическими изображениями для 1982 Movie _трон_, компьютер анализу Алексей Perl начал разрабатывать алгоритмы, использующие случайные процессы для предоставления этих изображений более реалистичным текстурам. В 1997 Алексей Perl выиграл Academy награду за технические достижения. Его работа известна как шум Perl и поддерживается в SkiaSharp. Ниже приведен пример:
+Простая векторная графика, как правило, выглядит неестественным. Прямые линии, гладкие кривые и сплошные цвета не похожи на реальные объекты. Работая с созданными компьютером графическими изображениями для 1982 Movie _трон_, компьютер анализу Алексей Perl начал разрабатывать алгоритмы, использующие случайные процессы для предоставления этих изображений более реалистичным текстурам. В 1997 Алексей Perl выиграл Academy награду за технические достижения. Его работа известна как шум Perl и поддерживается в SkiaSharp. Пример:
 
 ![Пример шума на Perl](noise-images/NoiseSample.png "Пример шума на Perl")
 
@@ -47,7 +47,7 @@ public static SkiaSharp.SKShader CreatePerlinNoiseTurbulence (float baseFrequenc
 
 `seed`Параметр является отправной точкой генератора случайных чисел. Хотя в качестве значения с плавающей запятой, дробная часть усекается до ее использования, а значение 0 равно 1.
 
-На странице « **шум Perl** » в [ **скиашарпформсдемос**)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) можно экспериментировать с различными значениями `baseFrequency` `numOctaves` аргументов и. Вот файл XAML:
+На странице « **шум Perl** » в [ **скиашарпформсдемос**)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) можно экспериментировать с различными значениями `baseFrequency` `numOctaves` аргументов и. Вот файл XAML:
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -188,7 +188,7 @@ public static SKShader CreatePerlinNoiseFractalNoise (float baseFrequencyX, floa
 public static SKShader CreatePerlinNoiseTurbulence (float baseFrequencyX, float baseFrequencyY, int numOctaves, float seed, SKPointI tileSize);
 ```
 
-[`SKPointI`](xref:SkiaSharp.SKPointI)Структура — это целочисленная версия знакомой [`SKPoint`](xref:SkiaSharp.SKPoint) структуры. `SKPointI`Определяет `X` и `Y` свойства типа, `int` а не `float` .
+[`SKPointI`](xref:SkiaSharp.SKPointI)Структура — это целочисленная версия знакомой [`SKPoint`](xref:SkiaSharp.SKPoint) структуры. `SKPointI` Определяет `X` и `Y` свойства типа, `int` а не `float` .
 
 Эти методы создают Повторяющийся шаблон указанного размера. В каждой плитке правый край совпадает с левым ребром, а верхний край — с нижней границей. Эта характеристика показана на странице « **мозаичные помехи Perl** ». XAML-файл подобен предыдущему примеру, но он имеет только `Stepper` представление для изменения `seed` аргумента:
 
@@ -401,5 +401,5 @@ public static SKShader CreateCompose (SKShader dstShader, SKShader srcShader, SK
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

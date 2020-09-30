@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 22d54b1726858b1f46cf312f4962091374385704
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 65bdeef161ce4bfed18ca07966a0ab3189c65ba2
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936829"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556715"
 ---
 # <a name="page-status-bar-visibility-on-ios"></a>Видимость строки состояния страницы в iOS
 
@@ -56,6 +56,6 @@ On<iOS>().SetPrefersStatusBarHidden(StatusBarHiddenMode.True)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

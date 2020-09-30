@@ -10,18 +10,18 @@ ms.date: 03/12/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 23edbb007e912d13858686d1c5ec574c9e3349c7
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a8e8388a6a460b3a2958d3ab3b9a4c9c34ea1831
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84127145"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556468"
 ---
-# <a name="create-a-xamarinforms-visual-renderer"></a>Создание Xamarin.Forms визуального модуля подготовки отчетов
+# <a name="create-a-no-locxamarinforms-visual-renderer"></a>Создание Xamarin.Forms визуального модуля подготовки отчетов
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
 
-Xamarin.FormsВизуальный элемент позволяет создавать модули подготовки отчетов и выборочно применять их к [`VisualElement`](xref:Xamarin.Forms.VisualElement) объектам, не прибегая к Xamarin.Forms представлениям подкласс. Модуль подготовки отчетов, указывающий `IVisual` тип (как часть его `ExportRendererAttribute` ), будет использоваться для визуализации входящих в представления, а не для модуля подготовки к просмотру по умолчанию. Во время выбора модуля визуализации `Visual` свойство представления проверяется и включается в процесс выбора модуля подготовки отчетов.
+Xamarin.Forms Визуальный элемент позволяет создавать модули подготовки отчетов и выборочно применять их к [`VisualElement`](xref:Xamarin.Forms.VisualElement) объектам, не прибегая к Xamarin.Forms представлениям подкласс. Модуль подготовки отчетов, указывающий `IVisual` тип (как часть его `ExportRendererAttribute` ), будет использоваться для визуализации входящих в представления, а не для модуля подготовки к просмотру по умолчанию. Во время выбора модуля визуализации `Visual` свойство представления проверяется и включается в процесс выбора модуля подготовки отчетов.
 
 > [!IMPORTANT]
 > В настоящее время [`Visual`](xref:Xamarin.Forms.VisualElement.Visual) свойство не может быть изменено после подготовки представления, но оно будет изменено в следующем выпуске.
@@ -175,6 +175,6 @@ button.Visual = new CustomVisual();
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Визуальный элемент "материал" (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
+- [Визуальный элемент "материал" (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
 - [Визуальный элемент материала Xamarin.Forms](material-visual.md)
 - [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)

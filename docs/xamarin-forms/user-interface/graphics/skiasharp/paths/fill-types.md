@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e82572d88e380997fb2435179dba824c1b3f0c2f
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: aa427035dc33b617bed14e0c6aa0b0db27efca7f
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936192"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556572"
 ---
 # <a name="the-path-fill-types"></a>Типы заполнения пути
 
@@ -23,7 +23,7 @@ ms.locfileid: "86936192"
 
 _Узнайте о различных эффектах, возможных для типов заливки пути SkiaSharp_
 
-Два контура в контуре могут перекрываться, а линии, составляющие один контур, могут перекрываться. Любая заданная область может быть заполнена, но вы можете не заполнять все закрытые области. Ниже приведен пример.
+Два контура в контуре могут перекрываться, а линии, составляющие один контур, могут перекрываться. Любая заданная область может быть заполнена, но вы можете не заполнять все закрытые области. Пример:
 
 ![Пять, указывающие на частичное заполнение звезды](fill-types-images/filltypeexample.png)
 
@@ -230,5 +230,5 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

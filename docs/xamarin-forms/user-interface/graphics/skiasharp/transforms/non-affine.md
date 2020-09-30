@@ -10,12 +10,12 @@ ms.date: 04/14/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b4c6569acbade7edf64c9aaf54237ebaa342ea54
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 6de5e21c509203c5402ed8c7e75908b54808d140
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936647"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556897"
 ---
 # <a name="non-affine-transforms"></a>Неаффинные преобразования
 
@@ -395,7 +395,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-Вот несколько примеров:
+Ниже приводится несколько примеров.
 
 [![Тройной снимок экрана страницы "преобразование конусов"](non-affine-images/tapertransform-small.png)](non-affine-images/tapertransform-large.png#lightbox "Тройной снимок экрана страницы "преобразование конусов"")
 
@@ -474,5 +474,5 @@ W и H представляют ширину и высоту точечного 
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

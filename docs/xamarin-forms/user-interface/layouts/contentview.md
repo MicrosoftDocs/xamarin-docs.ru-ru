@@ -10,14 +10,14 @@ ms.date: 08/14/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 46d2abf895ffe31bd1dc1c22caf36440c54b331c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: eb94b2943cfe4659bb77764f810d45dc8b189005
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84130121"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555376"
 ---
-# <a name="xamarinforms-contentview"></a>Xamarin.Forms ContentView
+# <a name="no-locxamarinforms-contentview"></a>Xamarin.Forms ContentView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
 
@@ -29,11 +29,11 @@ Xamarin.Forms [`ContentView`](xref:Xamarin.Forms.ContentView) Класс явл�
 
 `ContentView`Класс определяет одно свойство:
 
-* [`Content`](xref:Xamarin.Forms.ContentView.Content)— Это `View` объект. Это свойство поддерживается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом, поэтому он может быть целевым объектом привязок данных.
+* [`Content`](xref:Xamarin.Forms.ContentView.Content) — Это `View` объект. Это свойство поддерживается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом, поэтому он может быть целевым объектом привязок данных.
 
 Объект `ContentView` также наследует свойство от `TemplatedView` класса:
 
-* [`ControlTemplate`](xref:Xamarin.Forms.TemplatedView.ControlTemplate)Объект `ControlTemplate` , который может определять или переопределять внешний вид элемента управления.
+* [`ControlTemplate`](xref:Xamarin.Forms.TemplatedView.ControlTemplate) Объект `ControlTemplate` , который может определять или переопределять внешний вид элемента управления.
 
 Дополнительные сведения о `ControlTemplate` свойстве см. в разделе [Настройка внешнего вида с помощью ControlTemplate](#customize-appearance-with-a-controltemplate).
 
@@ -211,7 +211,7 @@ CardView card = new CardView
 
 ## <a name="related-links"></a>Связанные ссылки
 
-* [Пример приложения ContentView](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
+* [Пример приложения ContentView](/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
 * [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md)
 * [Привязываемые свойства](~/xamarin-forms/xaml/bindable-properties.md).
 * [Шаблоны элементов управления Xamarin.Forms](~/xamarin-forms/app-fundamentals/templates/control-template.md)

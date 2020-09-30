@@ -1,6 +1,6 @@
 ---
-title: Визуальный элемент материала Xamarin.Forms
-description: Xamarin.FormsВизуальный элемент "материалы" можно использовать для создания Xamarin.Forms приложений, которые выглядят примерно одинаково в iOS и Android.
+title: Xamarin.Forms Визуальный элемент "материалы"
+description: Xamarin.Forms Визуальный элемент "материалы" можно использовать для создания Xamarin.Forms приложений, которые выглядят примерно одинаково в iOS и Android.
 ms.prod: xamarin
 ms.assetid: B774F68C-EF9E-49E1-B738-CDC64879ADA2
 ms.technology: xamarin-forms
@@ -10,20 +10,20 @@ ms.date: 11/25/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: bba7d77d8cf565b1b2db2c1324e171389c5d0280
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 753644b372fafc7c3ea22008267844251527050d
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84127185"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556481"
 ---
-# <a name="xamarinforms-material-visual"></a>Визуальный элемент материала Xamarin.Forms
+# <a name="no-locxamarinforms-material-visual"></a>Xamarin.Forms Визуальный элемент "материалы"
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
 
 [Проектирование материалов](https://material.io) — это упрямого система разработки, созданная Google, которая предписывает размер, цвет, расстояния и другие аспекты того, как должны выглядеть и работать представления и макеты.
 
-Xamarin.FormsВизуальный элемент "материалы" можно использовать для применения правил проектирования материалов к Xamarin.Forms приложениям, создавая приложения, которые выглядят примерно одинаково в iOS и Android. Если визуальный элемент "материалы" включен, Поддерживаемые представления применяют один и тот же проект кросс-платформенный режим, создавая единообразный внешний вид.
+Xamarin.Forms Визуальный элемент "материалы" можно использовать для применения правил проектирования материалов к Xamarin.Forms приложениям, создавая приложения, которые выглядят примерно одинаково в iOS и Android. Если визуальный элемент "материалы" включен, Поддерживаемые представления применяют один и тот же проект кросс-платформенный режим, создавая единообразный внешний вид.
 
 [![Визуальные снимки экрана материалов](material-visual-images/material-visual-cropped.png)](material-visual-images/material-visual.png#lightbox)
 
@@ -92,9 +92,9 @@ contentPage.Visual = VisualMarker.Material;
 
 Установка `VisualElement.Visual` свойства для `Material` направления приложения на использование визуальных модулей подготовки материалов к просмотру вместо модулей подготовки отчетов по умолчанию. [`Visual`](xref:Xamarin.Forms.VisualElement.Visual)Свойству можно задать любой тип, реализующий `IVisual` , с [`VisualMarker`](xref:Xamarin.Forms.VisualMarker) классом, который предоставляет следующие `IVisual` Свойства:
 
-- `Default`— Указывает, что представление должно отображаться с помощью модуля подготовки отчетов по умолчанию.
-- `MatchParent`— Указывает, что представление должно использовать тот же модуль подготовки отчетов, что и его непосредственного родителя.
-- `Material`— Указывает, что представление должно быть отображено с помощью модуля подготовки материалов.
+- `Default` — Указывает, что представление должно отображаться с помощью модуля подготовки отчетов по умолчанию.
+- `MatchParent` — Указывает, что представление должно использовать тот же модуль подготовки отчетов, что и его непосредственного родителя.
+- `Material` — Указывает, что представление должно быть отображено с помощью модуля подготовки материалов.
 
 > [!IMPORTANT]
 > [`Visual`](xref:Xamarin.Forms.VisualElement.Visual)Свойство определяется в [`VisualElement`](xref:Xamarin.Forms.VisualElement) классе с представлениями, которые наследуют `Visual` значение свойства от своих родителей. Таким образом, установка `Visual` свойства для [`ContentPage`](xref:Xamarin.Forms.ContentPage) гарантирует, что все поддерживаемые представления на странице будут использовать этот визуальный элемент. Кроме того, `Visual` свойство может быть переопределено в представлении.
@@ -157,7 +157,7 @@ namespace MyApp.Android
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Визуальный элемент "материал" (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
+- [Визуальный элемент "материал" (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
 - [Создание Xamarin.Forms визуального модуля подготовки отчетов](create.md)
-- [Xamarin.FormsПараметров](~/xamarin-forms/app-fundamentals/effects/index.md)
+- [Xamarin.Forms Параметров](~/xamarin-forms/app-fundamentals/effects/index.md)
 - [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)

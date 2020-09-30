@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 785532d1a8fedfaef367c8fb8ae437220c3de9c4
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 538a3ea3bd5b2293f93047d9796a185abfa5f2b9
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938181"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556598"
 ---
 # <a name="drawing-a-simple-circle-in-skiasharp"></a>Рисование простого круга в SkiaSharp
 
@@ -25,7 +25,7 @@ _Изучите основы рисования SkiaSharp, включая хол
 
 В этой статье рассматриваются основные понятия рисования графики в Xamarin.Forms с помощью SkiaSharp, включая создание `SKCanvasView` объекта для размещения графики, обработку `PaintSurface` события и использование `SKPaint` объекта для указания цвета и других атрибутов рисования.
 
-Программа [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) содержит весь пример кода для этой серии статей SkiaSharp. Первая страница имеет право на **простой круг** и вызывает класс страницы [`SimpleCirclePage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs) . В этом коде показано, как нарисовать окружность в центре страницы с радиусом 100 пикселей. Контур окружности красного цвета, а внутренняя часть окружности — синим.
+Программа [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) содержит весь пример кода для этой серии статей SkiaSharp. Первая страница имеет право на **простой круг** и вызывает класс страницы [`SimpleCirclePage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs) . В этом коде показано, как нарисовать окружность в центре страницы с радиусом 100 пикселей. Контур окружности красного цвета, а внутренняя часть окружности — синим.
 
 ![Синий круг, выделенный красным цветом](circle-images/circleexample.png)
 
@@ -163,5 +163,5 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

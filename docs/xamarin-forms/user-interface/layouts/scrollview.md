@@ -1,5 +1,5 @@
 ---
-title: Xamarin.Formsскроллвиев
+title: Xamarin.Forms скроллвиев
 description: Xamarin.FormsСкроллвиев — это макет, который способен прокручивать его содержимое.
 ms.prod: xamarin
 ms.assetid: 7B542872-B3D1-49B3-B15E-0E98F53C1F6E
@@ -10,25 +10,25 @@ ms.date: 05/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f527acabe3b051cbfd6450ba6f5328449b1a728c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: af8513d86b7cf02ec7adcee75241d8ce99e2dfab
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84199197"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556832"
 ---
-# <a name="xamarinforms-scrollview"></a>Xamarin.Formsскроллвиев
+# <a name="no-locxamarinforms-scrollview"></a>Xamarin.Forms скроллвиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-scrollviewdemos)
 
-[![Xamarin.Formsскроллвиев](scrollview-images/layouts.png "[! Операцион. NO-LOC (Xamarin. Forms)] Скроллвиев")](scrollview-images/layouts-large.png#lightbox "[! Операцион. NO-LOC (Xamarin. Forms)] Скроллвиев")
+[![::: No-Loc (Xamarin. Forms)::: Скроллвиев](scrollview-images/layouts.png "::: No-Loc (Xamarin. Forms)::: Скроллвиев")](scrollview-images/layouts-large.png#lightbox "::: No-Loc (Xamarin. Forms)::: Скроллвиев")
 
-[`ScrollView`](xref:Xamarin.Forms.ScrollView)— Это макет, который способен прокручивать его содержимое. `ScrollView`Класс является производным от [`Layout`](xref:Xamarin.Forms.Layout) класса, и по умолчанию прокручивает его содержимое по вертикали. `ScrollView`Может иметь только один дочерний элемент, хотя это может быть и другие макеты.
+[`ScrollView`](xref:Xamarin.Forms.ScrollView) — Это макет, который способен прокручивать его содержимое. `ScrollView`Класс является производным от [`Layout`](xref:Xamarin.Forms.Layout) класса, и по умолчанию прокручивает его содержимое по вертикали. `ScrollView`Может иметь только один дочерний элемент, хотя это может быть и другие макеты.
 
 > [!WARNING]
-> [`ScrollView`](xref:Xamarin.Forms.ScrollView)объекты не должны быть вложенными. Кроме того, `ScrollView` объекты не должны быть вложенными с другими элементами управления, обеспечивающими прокрутку, например [`CollectionView`](xref:Xamarin.Forms.CollectionView) , [`ListView`](xref:Xamarin.Forms.ListView) и [`WebView`](xref:Xamarin.Forms.WebView) .
+> [`ScrollView`](xref:Xamarin.Forms.ScrollView) объекты не должны быть вложенными. Кроме того, `ScrollView` объекты не должны быть вложенными с другими элементами управления, обеспечивающими прокрутку, например [`CollectionView`](xref:Xamarin.Forms.CollectionView) , [`ListView`](xref:Xamarin.Forms.ListView) и [`WebView`](xref:Xamarin.Forms.WebView) .
 
-[`ScrollView`](xref:Xamarin.Forms.ScrollView)определяет следующие свойства:
+[`ScrollView`](xref:Xamarin.Forms.ScrollView) определяет следующие свойства:
 
 - [`Content`](xref:Xamarin.Forms.ScrollView.Content)Тип [`View`](xref:Xamarin.Forms.View) представляет содержимое, отображаемое в [`ScrollView`](xref:Xamarin.Forms.ScrollView) .
 - [`ContentSize`](xref:Xamarin.Forms.ScrollView), типа [`Size`](xref:Xamarin.Forms.Size) , представляет размер содержимого. Это свойство доступно только для чтения.
@@ -205,19 +205,19 @@ public class BlackCatPageCS : ContentPage
 
 ## <a name="orientation"></a>Ориентация
 
-[`ScrollView`](xref:Xamarin.Forms.ScrollView)имеет [`Orientation`](xref:Xamarin.Forms.ScrollView.Orientation) свойство, представляющее направление прокрутки объекта `ScrollView` . Это свойство имеет тип [`ScrollOrientation`](xref:Xamarin.Forms.ScrollOrientation) , который определяет следующие члены:
+[`ScrollView`](xref:Xamarin.Forms.ScrollView) имеет [`Orientation`](xref:Xamarin.Forms.ScrollView.Orientation) свойство, представляющее направление прокрутки объекта `ScrollView` . Это свойство имеет тип [`ScrollOrientation`](xref:Xamarin.Forms.ScrollOrientation) , который определяет следующие члены:
 
-- `Vertical`Указывает, что `ScrollView` будет прокручиваться вертикально. Этот элемент является значением по умолчанию для [`Orientation`](xref:Xamarin.Forms.ScrollView.Orientation) Свойства.
-- `Horizontal`Указывает, что `ScrollView` будет прокручиваться по горизонтали.
-- `Both`Указывает, что `ScrollView` будет прокручиваться по горизонтали и вертикали.
-- `Neither`Указывает, что элемент `ScrollView` не будет прокручиваться.
+- `Vertical` Указывает, что `ScrollView` будет прокручиваться вертикально. Этот элемент является значением по умолчанию для [`Orientation`](xref:Xamarin.Forms.ScrollView.Orientation) Свойства.
+- `Horizontal` Указывает, что `ScrollView` будет прокручиваться по горизонтали.
+- `Both` Указывает, что `ScrollView` будет прокручиваться по горизонтали и вертикали.
+- `Neither` Указывает, что элемент `ScrollView` не будет прокручиваться.
 
 > [!TIP]
 > Прокрутку можно отключить, присвоив [`Orientation`](xref:Xamarin.Forms.ScrollView.OrientationProperty) свойству значение `Neither` .
 
 ## <a name="detect-scrolling"></a>Обнаружение прокрутки
 
-[`ScrollView`](xref:Xamarin.Forms.ScrollView)Определяет [`Scrolled`](xref:Xamarin.Forms.ScrollView.Scrolled) событие, которое срабатывает для указания на то, что произошла прокрутка. [`ScrolledEventArgs`](xref:Xamarin.Forms.ScrolledEventArgs)Объект, сопровождающий `Scrolled` событие, имеет `ScrollX` Свойства и и `ScrollY` оба типа `double` .
+[`ScrollView`](xref:Xamarin.Forms.ScrollView) Определяет [`Scrolled`](xref:Xamarin.Forms.ScrollView.Scrolled) событие, которое срабатывает для указания на то, что произошла прокрутка. [`ScrolledEventArgs`](xref:Xamarin.Forms.ScrolledEventArgs)Объект, сопровождающий `Scrolled` событие, имеет `ScrollX` Свойства и и `ScrollY` оба типа `double` .
 
 > [!IMPORTANT]
 > `ScrolledEventArgs.ScrollX`Свойства и `ScrolledEventArgs.ScrollY` могут иметь отрицательные значения из-за эффектов отскока, возникающих при прокрутке до начала [`ScrollView`](xref:Xamarin.Forms.ScrollView) .
@@ -253,7 +253,7 @@ void OnScrollViewScrolled(object sender, ScrolledEventArgs e)
 
 ## <a name="scroll-programmatically"></a>Прокрутка программным способом
 
-[`ScrollView`](xref:Xamarin.Forms.ScrollView)определяет два [`ScrollToAsync`](xref:Xamarin.Forms.ScrollView.ScrollToAsync*) метода: асинхронная прокрутка `ScrollView` . Одна из перегрузок прокручивается до указанной позицией в `ScrollView` , а другая Прокручивает указанный элемент в представление. Обе перегрузки имеют дополнительный аргумент, который можно использовать для указания, следует ли анимировать прокрутку.
+[`ScrollView`](xref:Xamarin.Forms.ScrollView) определяет два [`ScrollToAsync`](xref:Xamarin.Forms.ScrollView.ScrollToAsync*) метода: асинхронная прокрутка `ScrollView` . Одна из перегрузок прокручивается до указанной позицией в `ScrollView` , а другая Прокручивает указанный элемент в представление. Обе перегрузки имеют дополнительный аргумент, который можно использовать для указания, следует ли анимировать прокрутку.
 
 > [!IMPORTANT]
 > Эти [`ScrollToAsync`](xref:Xamarin.Forms.ScrollView.ScrollToAsync*) методы не будут приводить к прокрутке, если [`ScrollView.Orientation`](xref:Xamarin.Forms.ScrollView.OrientationProperty) свойство имеет значение `Neither` .
@@ -280,21 +280,21 @@ await scrollView.ScrollToAsync(label, ScrollToPosition.End, true);
 
 При прокрутке элемента в представлении точное расположение элемента после завершения прокрутки можно задать с помощью второго аргумента `position` [`ScrollToAsync`](xref:Xamarin.Forms.ScrollView.ScrollToAsync*) метода. Этот аргумент принимает [`ScrollToPosition`](xref:Xamarin.Forms.ScrollToPosition) член перечисления:
 
-- `MakeVisible`Указывает, что элемент должен быть прокручиваться до тех пор, пока он не будет виден в `ScrollView` .
-- `Start`Указывает, что элемент должен быть прокручиваться до начала `ScrollView` .
-- `Center`Указывает, что элемент должен быть прокручиваться по центру объекта `ScrollView` .
-- `End`Указывает, что элемент должен быть прокручиваться до конца `ScrollView` .
+- `MakeVisible` Указывает, что элемент должен быть прокручиваться до тех пор, пока он не будет виден в `ScrollView` .
+- `Start` Указывает, что элемент должен быть прокручиваться до начала `ScrollView` .
+- `Center` Указывает, что элемент должен быть прокручиваться по центру объекта `ScrollView` .
+- `End` Указывает, что элемент должен быть прокручиваться до конца `ScrollView` .
 
 ## <a name="scroll-bar-visibility"></a>Видимость полосы прокрутки
 
-[`ScrollView`](xref:Xamarin.Forms.ScrollView)Определяет [`HorizontalScrollBarVisibility`](xref:Xamarin.Forms.ScrollView) [`VerticalScrollBarVisibility`](xref:Xamarin.Forms.ScrollView) Свойства и, поддерживающие привязку свойств. Эти свойства получают или задают [`ScrollBarVisibility`](xref:Xamarin.Forms.ScrollView.HorizontalScrollBarVisibility) значение перечисления, которое показывает, отображается ли горизонтальная или вертикальная полоса прокрутки. Перечисление `ScrollBarVisibility` определяет следующие члены:
+[`ScrollView`](xref:Xamarin.Forms.ScrollView) Определяет [`HorizontalScrollBarVisibility`](xref:Xamarin.Forms.ScrollView) [`VerticalScrollBarVisibility`](xref:Xamarin.Forms.ScrollView) Свойства и, поддерживающие привязку свойств. Эти свойства получают или задают [`ScrollBarVisibility`](xref:Xamarin.Forms.ScrollView.HorizontalScrollBarVisibility) значение перечисления, которое показывает, отображается ли горизонтальная или вертикальная полоса прокрутки. Перечисление `ScrollBarVisibility` определяет следующие члены:
 
-- `Default`Указывает поведение полосы прокрутки по умолчанию для платформы и является значением по умолчанию `HorizontalScrollBarVisibility` `VerticalScrollBarVisibility` свойств и.
-- `Always`Указывает, что полосы прокрутки будут видимы, даже если содержимое умещается в представлении.
-- `Never`Указывает, что полосы прокрутки не будут видны, даже если содержимое не умещается в представлении.
+- `Default` Указывает поведение полосы прокрутки по умолчанию для платформы и является значением по умолчанию `HorizontalScrollBarVisibility` `VerticalScrollBarVisibility` свойств и.
+- `Always` Указывает, что полосы прокрутки будут видимы, даже если содержимое умещается в представлении.
+- `Never` Указывает, что полосы прокрутки не будут видны, даже если содержимое не умещается в представлении.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демонстрации Скроллвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-scrollviewdemos)
-- [Xamarin.FormsStackLayout](stacklayout.md)
-- [Связываемые макеты вXamarin.Forms](bindable-layouts.md)
+- [Демонстрации Скроллвиев (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-scrollviewdemos)
+- [Xamarin.Forms StackLayout](stacklayout.md)
+- [Связываемые макеты в Xamarin.Forms](bindable-layouts.md)

@@ -1,5 +1,5 @@
 ---
-title: Изображения вXamarin.Forms
+title: Изображения в Xamarin.Forms
 description: Образы можно совместно использовать на разных платформах Xamarin.Forms , они могут загружаться специально для каждой платформы, а также могут быть загружены для просмотра.
 ms.prod: xamarin
 ms.assetid: C025AB53-05CC-49BA-9815-75D6DF9E40B7
@@ -10,42 +10,42 @@ ms.date: 05/19/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3ad0981c0249bc81a97d5c48489167d81a1523de
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 824d5ca711495c8a8ad663034e77506468efd397
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938474"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556195"
 ---
-# <a name="images-in-xamarinforms"></a>Изображения вXamarin.Forms
+# <a name="images-in-no-locxamarinforms"></a>Изображения в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithimages)
 
 _Образы можно совместно использовать на разных платформах Xamarin.Forms , они могут загружаться специально для каждой платформы, а также могут быть загружены для просмотра._
 
-Изображения являются важной частью навигации по приложениям, их удобства использования и фирменной символики. Xamarin.Formsприложения должны иметь возможность совместно использовать изображения на всех платформах, но на каждой платформе могут отображаться разные образы.
+Изображения являются важной частью навигации по приложениям, их удобства использования и фирменной символики. Xamarin.Forms приложения должны иметь возможность совместно использовать изображения на всех платформах, но на каждой платформе могут отображаться разные образы.
 
 Для значков и экранов-заставок также требуются образы, зависящие от платформы. они должны быть настроены на уровне каждой платформы.
 
 ## <a name="display-images"></a>Отображение изображений
 
-Xamarin.Formsиспользует [`Image`](xref:Xamarin.Forms.Image) представление для отображения изображений на странице. Он имеет несколько важных свойств:
+Xamarin.Forms использует [`Image`](xref:Xamarin.Forms.Image) представление для отображения изображений на странице. Он имеет несколько важных свойств:
 
-- [`Source`](xref:Xamarin.Forms.Image.Source)— [`ImageSource`](xref:Xamarin.Forms.ImageSource) Экземпляр, файл, URI или ресурс, который задает отображаемое изображение.
-- [`Aspect`](xref:Xamarin.Forms.Image.Aspect)— Изменение размера изображения в пределах границ, в которых он отображается (растяжение, кадрирование или леттербокс).
+- [`Source`](xref:Xamarin.Forms.Image.Source) — [`ImageSource`](xref:Xamarin.Forms.ImageSource) Экземпляр, файл, URI или ресурс, который задает отображаемое изображение.
+- [`Aspect`](xref:Xamarin.Forms.Image.Aspect) — Изменение размера изображения в пределах границ, в которых он отображается (растяжение, кадрирование или леттербокс).
 
-[`ImageSource`](xref:Xamarin.Forms.ImageSource)экземпляры можно получить с помощью статических методов для каждого типа источника изображения:
+[`ImageSource`](xref:Xamarin.Forms.ImageSource) экземпляры можно получить с помощью статических методов для каждого типа источника изображения:
 
-- [`FromFile`](xref:Xamarin.Forms.ImageSource.FromFile(System.String))— Требуется имя файла или путь к файлу, который может быть разрешен на каждой платформе.
-- [`FromUri`](xref:Xamarin.Forms.ImageSource.FromUri(System.Uri))— Требуется объект URI, например.  `new Uri("http://server.com/image.jpg")` .
-- [`FromResource`](xref:Xamarin.Forms.ImageSource.FromResource*)— Требуется идентификатор ресурса для файла изображения, внедренного в проект библиотеки приложения или .NET Standard, с **действием сборки: EmbeddedResource**.
-- [`FromStream`](xref:Xamarin.Forms.ImageSource.FromStream(System.Func{System.IO.Stream}))— Требуется поток, поставляющий данные изображения.
+- [`FromFile`](xref:Xamarin.Forms.ImageSource.FromFile(System.String)) — Требуется имя файла или путь к файлу, который может быть разрешен на каждой платформе.
+- [`FromUri`](xref:Xamarin.Forms.ImageSource.FromUri(System.Uri)) — Требуется объект URI, например.  `new Uri("http://server.com/image.jpg")` .
+- [`FromResource`](xref:Xamarin.Forms.ImageSource.FromResource*) — Требуется идентификатор ресурса для файла изображения, внедренного в проект библиотеки приложения или .NET Standard, с **действием сборки: EmbeddedResource**.
+- [`FromStream`](xref:Xamarin.Forms.ImageSource.FromStream(System.Func{System.IO.Stream})) — Требуется поток, поставляющий данные изображения.
 
 [`Aspect`](xref:Xamarin.Forms.Image.Aspect)Свойство определяет, как изображение будет масштабироваться в соответствии с отображаемой областью:
 
-- [`Fill`](xref:Xamarin.Forms.Aspect.Fill)— Растягивает изображение, чтобы полностью и точно заполнить отображаемую область. Это может привести к искажению изображения.
-- [`AspectFill`](xref:Xamarin.Forms.Aspect.AspectFill)— Обрезает изображение таким образом, чтобы оно заполнило область экрана при сохранении аспекта (т. е. без искажений).
-- [`AspectFit`](xref:Xamarin.Forms.Aspect.AspectFit)— Леттербоксес изображение (при необходимости), чтобы весь образ поместился в область экрана, с добавлением пробела в верхнюю или нижнюю часть или в зависимости от того, является ли изображение широким или максимальным.
+- [`Fill`](xref:Xamarin.Forms.Aspect.Fill) — Растягивает изображение, чтобы полностью и точно заполнить отображаемую область. Это может привести к искажению изображения.
+- [`AspectFill`](xref:Xamarin.Forms.Aspect.AspectFill) — Обрезает изображение таким образом, чтобы оно заполнило область экрана при сохранении аспекта (т. е. без искажений).
+- [`AspectFit`](xref:Xamarin.Forms.Aspect.AspectFit) — Леттербоксес изображение (при необходимости), чтобы весь образ поместился в область экрана, с добавлением пробела в верхнюю или нижнюю часть или в зависимости от того, является ли изображение широким или максимальным.
 
 Образы могут загружаться из [локального файла](#local-images), [внедренного ресурса](#embedded-images), [скачанного](#download-images)или загруженного из потока. Кроме того, значки шрифтов могут отображаться в [`Image`](xref:Xamarin.Forms.Image) представлении путем указания данных значка шрифта в `FontImageSource` объекте. Дополнительные сведения см. в разделе [Отображение значков шрифтов](~/xamarin-forms/user-interface/text/fonts.md#display-font-icons) в пошаговом окне " [шрифты](~/xamarin-forms/user-interface/text/fonts.md) ".
 
@@ -91,7 +91,7 @@ image.Source = Device.RuntimePlatform == Device.Android
 
 ### <a name="native-resolutions-retina-and-high-dpi"></a>Собственные разрешения (Retina и высокое разрешение)
 
-в iOS, Android и UWP предусмотрена поддержка различных разрешений изображений, где операционная система выбирает соответствующий образ во время выполнения в зависимости от возможностей устройства. Xamarin.Formsиспользует API собственных платформ для загрузки локальных образов, поэтому он автоматически поддерживает альтернативные разрешения, если файлы правильно именованы и находятся в проекте.
+в iOS, Android и UWP предусмотрена поддержка различных разрешений изображений, где операционная система выбирает соответствующий образ во время выполнения в зависимости от возможностей устройства. Xamarin.Forms использует API собственных платформ для загрузки локальных образов, поэтому он автоматически поддерживает альтернативные разрешения, если файлы правильно именованы и находятся в проекте.
 
 Предпочтительным способом управления образами с iOS 9 является перетаскивание изображений для каждого разрешения, необходимого для соответствующего набора образов каталога активов. Дополнительные сведения см. [в разделе Добавление образов в набор изображений каталога активов](~/ios/app-fundamentals/images-icons/displaying-an-image.md).
 
@@ -101,16 +101,16 @@ image.Source = Device.RuntimePlatform == Device.Android
 
 [![Расположение образа Android с несколькими разрешениями](images-images/xs-highdpisolution-sml.png)](images-images/xs-highdpisolution.png#lightbox)
 
-Имена файлов образа UWP можно дополнить [суффиксом `.scale-xxx` перед расширением файла](https://docs.microsoft.com/windows/uwp/app-resources/images-tailored-for-scale-theme-contrast), где `xxx` — это процент масштабирования, применяемого к ресурсу, например **myimage.scale-200.png**. На образы можно ссылаться в коде или коде XAML без модификатора Scale, например, просто **myimage.png**. Платформа выберет ближайшее соответствующее масштабирование ресурса на основе текущего DPI дисплея.
+Имена файлов образа UWP можно дополнить [суффиксом `.scale-xxx` перед расширением файла](/windows/uwp/app-resources/images-tailored-for-scale-theme-contrast), где `xxx` — это процент масштабирования, применяемого к ресурсу, например **myimage.scale-200.png**. На образы можно ссылаться в коде или коде XAML без модификатора Scale, например, просто **myimage.png**. Платформа выберет ближайшее соответствующее масштабирование ресурса на основе текущего DPI дисплея.
 
 ### <a name="additional-controls-that-display-images"></a>Дополнительные элементы управления, отображающие изображения
 
 Некоторые элементы управления имеют свойства, отображающие изображение, например:
 
-- [`Button`](xref:Xamarin.Forms.Button)имеет [`ImageSource`](xref:Xamarin.Forms.Button.ImageSource) свойство, которое может быть задано для растрового изображения, отображаемого в `Button` . Дополнительные сведения см. в разделе [Использование точечных рисунков с кнопками](~/xamarin-forms/user-interface/button.md#using-bitmaps-with-buttons).
-- [`ImageButton`](xref:Xamarin.Forms.Button)имеет [`Source`](xref:Xamarin.Forms.ImageButton.Source) свойство, которое может быть задано для изображения, отображаемого в `ImageButton` . Дополнительные сведения см. [в разделе Установка источника изображения](~/xamarin-forms/user-interface/imagebutton.md#setting-the-image-source).
-- [`ToolbarItem`](xref:Xamarin.Forms.ToolbarItem)имеет [`IconImageSource`](xref:Xamarin.Forms.MenuItem.IconImageSource) свойство, которое можно задать для изображения, загружаемого из файла, внедренного ресурса, URI или потока.
-- [`ImageCell`](xref:Xamarin.Forms.ImageCell)имеет [`ImageSource`](xref:Xamarin.Forms.ImageCell.ImageSource) свойство, которое можно задать для изображения, полученного из файла, внедренного ресурса, URI или потока.
+- [`Button`](xref:Xamarin.Forms.Button) имеет [`ImageSource`](xref:Xamarin.Forms.Button.ImageSource) свойство, которое может быть задано для растрового изображения, отображаемого в `Button` . Дополнительные сведения см. в разделе [Использование точечных рисунков с кнопками](~/xamarin-forms/user-interface/button.md#using-bitmaps-with-buttons).
+- [`ImageButton`](xref:Xamarin.Forms.Button) имеет [`Source`](xref:Xamarin.Forms.ImageButton.Source) свойство, которое может быть задано для изображения, отображаемого в `ImageButton` . Дополнительные сведения см. [в разделе Установка источника изображения](~/xamarin-forms/user-interface/imagebutton.md#setting-the-image-source).
+- [`ToolbarItem`](xref:Xamarin.Forms.ToolbarItem) имеет [`IconImageSource`](xref:Xamarin.Forms.MenuItem.IconImageSource) свойство, которое можно задать для изображения, загружаемого из файла, внедренного ресурса, URI или потока.
+- [`ImageCell`](xref:Xamarin.Forms.ImageCell) имеет [`ImageSource`](xref:Xamarin.Forms.ImageCell.ImageSource) свойство, которое можно задать для изображения, полученного из файла, внедренного ресурса, URI или потока.
 - [`Page`](xref:Xamarin.Forms.Page). Любой тип страницы, производный от `Page` , [`IconImageSource`](xref:Xamarin.Forms.Page.IconImageSource) имеет [`BackgroundImageSource`](xref:Xamarin.Forms.Page.BackgroundImageSource) Свойства и, которым можно назначить файл, внедренный ресурс, URI или поток. При определенных обстоятельствах, например при [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) отображении элемента [`ContentPage`](xref:Xamarin.Forms.ContentPage) , будет отображаться значок, если он поддерживается платформой.
 
   > [!IMPORTANT]
@@ -280,8 +280,8 @@ webImage.Source = "https://aka.ms/campus.jpg";
 
 [`UriImageSource`](xref:Xamarin.Forms.UriImageSource)Также поддерживает кэширование скачанных образов, настроенных с помощью следующих свойств:
 
-- [`CachingEnabled`](xref:Xamarin.Forms.UriImageSource.CachingEnabled)— Включено ли кэширование (по `true` умолчанию).
-- [`CacheValidity`](xref:Xamarin.Forms.UriImageSource.CacheValidity)— Значение типа `TimeSpan` , определяющее, как долго образ будет храниться локально.
+- [`CachingEnabled`](xref:Xamarin.Forms.UriImageSource.CachingEnabled) — Включено ли кэширование (по `true` умолчанию).
+- [`CacheValidity`](xref:Xamarin.Forms.UriImageSource.CacheValidity) — Значение типа `TimeSpan` , определяющее, как долго образ будет храниться локально.
 
 Кэширование включено по умолчанию и будет хранить образ локально в течение 24 часов. Чтобы отключить кэширование для конкретного образа, создайте экземпляр источника образа следующим образом:
 
@@ -304,7 +304,7 @@ webImage.Source = new UriImageSource
 
 ## <a name="animated-gifs"></a>Анимированные GIF
 
-Xamarin.Formsвключает поддержку отображения мелких анимированных GIF. Это достигается путем присвоения [`Image.Source`](xref:Xamarin.Forms.Image.Source) свойству анимированного GIF-файла:
+Xamarin.Forms включает поддержку отображения мелких анимированных GIF. Это достигается путем присвоения [`Image.Source`](xref:Xamarin.Forms.Image.Source) свойству анимированного GIF-файла:
 
 ```xaml
 <Image Source="demo.gif" />
@@ -341,7 +341,7 @@ Xamarin.Formsвключает поддержку отображения мелк
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Воркингвисимажес (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithimages)
+- [Воркингвисимажес (пример)](/samples/xamarin/xamarin-forms-samples/workingwithimages)
 - [Работа iOS с изображениями](~/ios/app-fundamentals/images-icons/index.md)
 - [Иконографи Android](https://developer.android.com/design/style/iconography.html)
 - [Руководство по работе с ресурсами плиток и значков](/windows/uwp/controls-and-patterns/tiles-and-notifications-app-assets/)

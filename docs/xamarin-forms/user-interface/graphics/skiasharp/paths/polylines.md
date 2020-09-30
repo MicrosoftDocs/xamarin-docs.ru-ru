@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8ffa7ab7c9d2cebb9854ed155c3a00fe65e497c9
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 75f6f9b3e7a493121b8f4dacb87749d4a9616dee
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936140"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557105"
 ---
 # <a name="polylines-and-parametric-equations"></a>Ломаные линии и параметрические уравнения
 
@@ -126,5 +126,5 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

@@ -10,12 +10,12 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fd82f7ffe135c12c9dfc59c3353d7d9f5d73068c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 4c205c033f7032eb093b91c10292610bacc12a26
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137713"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556520"
 ---
 # <a name="skiasharp-drawing-basics"></a>Основы рисования в SkiaSharp
 
@@ -23,15 +23,15 @@ ms.locfileid: "84137713"
 
 _Основные сведения о концепциях и координатах SkiaSharp Graphics_
 
-После добавления пакета NuGet SkiaSharp в Xamarin.Forms приложение можно приступить к использованию графики SkiaSharp. Решение [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) включает множество страниц, демонстрирующих методики программирования SkiaSharp в более сложных занятиях.
+После добавления пакета NuGet SkiaSharp в Xamarin.Forms приложение можно приступить к использованию графики SkiaSharp. Решение [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) включает множество страниц, демонстрирующих методики программирования SkiaSharp в более сложных занятиях.
 
-Все примеры программ в этом разделе отображаются под заголовком **SkiaSharp Drawing (основные** ) на домашней странице программы [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) и в папке [**основные**](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics) компоненты решения.
+Все примеры программ в этом разделе отображаются под заголовком **SkiaSharp Drawing (основные** ) на домашней странице программы [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) и в папке [**основные**](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics) компоненты решения.
 
 ## <a name="drawing-a-simple-circle"></a>[Рисование простого кружка](circle.md)
 
 Изучите основы рисования SkiaSharp, включая холсты и объекты Paint.
 
-## <a name="integrating-with-xamarinformsintegrationmd"></a>[Интеграция сXamarin.Forms](integration.md)
+## <a name="integrating-with-no-locxamarinforms"></a>[Интеграция с Xamarin.Forms](integration.md)
 
 Создавайте интерактивную графику SkiaSharp, отвечая на сенсорный ввод и интеграцию с Xamarin.Forms элементами.
 
@@ -57,5 +57,5 @@ _Основные сведения о концепциях и координат
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

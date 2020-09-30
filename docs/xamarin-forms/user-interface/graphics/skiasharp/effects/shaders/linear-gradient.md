@@ -10,12 +10,12 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 43aa429046c1b0f72a1cbe6a5b921da9b8907a49
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 2cc0806af28360cf4bf2bb7e382e8d0a423abab9
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84132227"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555532"
 ---
 # <a name="the-skiasharp-linear-gradient"></a>Линейный градиент SkiaSharp
 
@@ -40,7 +40,7 @@ ms.locfileid: "84132227"
 - по горизонтали в правый верхний угол
 - по диагонали в правый нижний угол
 
-Диагональный линейный градиент показан на первой странице в разделе **SkiaSharp шейдеры и другие эффекты** в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Страница **градиента в угловом** углу создает `SKCanvasView` в своем конструкторе. `PaintSurface`Обработчик создает `SKPaint` объект в `using` операторе, а затем определяет прямоугольник размером 300 пикселей в центре холста:
+Диагональный линейный градиент показан на первой странице в разделе **SkiaSharp шейдеры и другие эффекты** в примере [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Страница **градиента в угловом** углу создает `SKCanvasView` в своем конструкторе. `PaintSurface`Обработчик создает `SKPaint` объект в `using` операторе, а затем определяет прямоугольник размером 300 пикселей в центре холста:
 
 ```csharp
 public class CornerToCornerGradientPage : ContentPage
@@ -103,7 +103,7 @@ public class CornerToCornerGradientPage : ContentPage
 
 Массив значений, `float` указанных в качестве четвертого аргумента, имеет корреспонденцию "один к одному" с массивом цветов. Значения обозначают относительное расположение вдоль линии градиента, в которой находятся эти цвета. Здесь 0 означает, что `Red` происходит в начале линии градиента, а 1 означает, что `Blue` в конце строки. Числа должны быть по возрастанию и находиться в диапазоне от 0 до 1. Если они не находятся в этом диапазоне, они будут скорректированы в этом диапазоне.
 
-Двум значениям в массиве можно присвоить значение, отличное от 0 до 1. Попробуйте выполните следующее.
+Двум значениям в массиве можно присвоить значение, отличное от 0 до 1. Попробуйте выполнить следующий код:
 
 ```csharp
 new float[] { 0.25f, 0.75f }
@@ -514,7 +514,7 @@ public class GradientAnimationPage : ContentPage
 }
 ```
 
-Несколько других подходов требуют меньшего объема кода. При таком подходе используется [`SKShader.CreateLinearGradient`](xref:SkiaSharp.SKShader.CreateLinearGradient(SkiaSharp.SKPoint,SkiaSharp.SKPoint,SkiaSharp.SKColor[],System.Single[],SkiaSharp.SKShaderTileMode,SkiaSharp.SKMatrix)) метод перегрузки с матричным преобразованием в качестве последнего аргумента. Этот подход является версией в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
+Несколько других подходов требуют меньшего объема кода. При таком подходе используется [`SKShader.CreateLinearGradient`](xref:SkiaSharp.SKShader.CreateLinearGradient(SkiaSharp.SKPoint,SkiaSharp.SKPoint,SkiaSharp.SKColor[],System.Single[],SkiaSharp.SKShaderTileMode,SkiaSharp.SKMatrix)) метод перегрузки с матричным преобразованием в качестве последнего аргумента. Этот подход является версией в примере [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
 
 ```csharp
 public class GradientAnimationPage : ContentPage
@@ -620,13 +620,13 @@ public class RainbowGradientPage : ContentPage
 }
 ```
 
-Две точки градиента в `CreateLinearGradient` методе основаны на двух точках, определяющих этот контур: обе точки находятся ближе к левому верхнему углу. Первый — на верхнем крае холста, а второй — на левом крае холста. Ниже приведен результат.
+Две точки градиента в `CreateLinearGradient` методе основаны на двух точках, определяющих этот контур: обе точки находятся ближе к левому верхнему углу. Первый — на верхнем крае холста, а второй — на левом крае холста. Ниже приведен результат:
 
 [![Сбой градиента Радуга](linear-gradient-images/RainbowGradientFaulty.png "Сбой градиента Радуга")](linear-gradient-images/RainbowGradientFaulty-Large.png#lightbox)
 
 Это интересный образ, но это не совсем цель. Проблема заключается в том, что при создании линейного градиента линии постоянного цвета перпендикулярны линии градиента. Линия градиента основана на точках, в которых фигура касается верхней и левой сторон, и эта линия обычно не перпендикулярна краям фигуры, которая распространяется на нижний правый угол. Этот подход будет работать только в том случае, если холст был квадратным.
 
-Чтобы создать правильный градиент Радуга, линия градиента должна быть перпендикулярна границе Радуга. Это более сложный расчет. Вектор должен быть определен параллельно с длинной стороной рисунка. Вектор поворачивается на 90 градусов, так что он перпендикулярен этой стороне. Затем она становится шириной фигуры, умноженной на `rainbowWidth` . Две точки градиента рассчитываются на основе точки на стороне фигуры, а также с точки зрения вектора. Ниже приведен код, отображаемый на странице " **градиентная шкала** " в образце [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
+Чтобы создать правильный градиент Радуга, линия градиента должна быть перпендикулярна границе Радуга. Это более сложный расчет. Вектор должен быть определен параллельно с длинной стороной рисунка. Вектор поворачивается на 90 градусов, так что он перпендикулярен этой стороне. Затем она становится шириной фигуры, умноженной на `rainbowWidth` . Две точки градиента рассчитываются на основе точки на стороне фигуры, а также с точки зрения вектора. Ниже приведен код, отображаемый на странице " **градиентная шкала** " в образце [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) :
 
 ```csharp
 public class RainbowGradientPage : ContentPage
@@ -919,5 +919,5 @@ textBounds.Offset(xText, yText);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

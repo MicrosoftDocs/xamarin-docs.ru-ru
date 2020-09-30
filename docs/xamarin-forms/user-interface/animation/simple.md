@@ -1,5 +1,5 @@
 ---
-title: Простые анимации вXamarin.Forms
+title: Простые анимации в Xamarin.Forms
 description: Класс Виевекстенсионс предоставляет методы расширения, которые можно использовать для создания простых анимаций. В этой статье показано, как создавать и отменять анимацию с помощью класса Виевекстенсионс.
 ms.prod: xamarin
 ms.assetid: 4A6FAE5A-848F-4CE0-BFA1-22A6309B5225
@@ -10,14 +10,14 @@ ms.date: 11/05/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b13ec7ab079dcf7069b5f4b0dccbb52faf25f927
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 2336a4fbd92a7e9158d332de1ea2e2b018d144ce
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86933800"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556663"
 ---
-# <a name="simple-animations-in-xamarinforms"></a>Простые анимации вXamarin.Forms
+# <a name="simple-animations-in-no-locxamarinforms"></a>Простые анимации в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-animation-basic)
 
@@ -26,9 +26,9 @@ _Класс Виевекстенсионс предоставляет метод
 [`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions)Класс предоставляет следующие методы расширения, которые можно использовать для создания простых анимаций:
 
 - [ `TranslateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Транслатето ( Xamarin.Forms . Висуалелемент, System. Double, System. Double, System. UInt32, Xamarin.Forms . Замедление)) анимируется [`TranslationX`](xref:Xamarin.Forms.VisualElement.TranslationX) [`TranslationY`](xref:Xamarin.Forms.VisualElement.TranslationY) Свойства и объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
-- [`ScaleTo`](xref:Xamarin.Forms.ViewExtensions.ScaleTo*)анимируется [`Scale`](xref:Xamarin.Forms.VisualElement.Scale) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
-- `ScaleXTo`анимируется [`ScaleX`](xref:Xamarin.Forms.VisualElement.ScaleX) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
-- `ScaleYTo`анимируется [`ScaleY`](xref:Xamarin.Forms.VisualElement.ScaleY) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
+- [`ScaleTo`](xref:Xamarin.Forms.ViewExtensions.ScaleTo*) анимируется [`Scale`](xref:Xamarin.Forms.VisualElement.Scale) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
+- `ScaleXTo` анимируется [`ScaleX`](xref:Xamarin.Forms.VisualElement.ScaleX) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
+- `ScaleYTo` анимируется [`ScaleY`](xref:Xamarin.Forms.VisualElement.ScaleY) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 - [ `RelScaleTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Релскалето ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) применяет анимированное добавочное увеличение или уменьшение к [`Scale`](xref:Xamarin.Forms.VisualElement.Scale) свойству объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 - [ `RotateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. RotateTo ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) анимируется [`Rotation`](xref:Xamarin.Forms.VisualElement.Rotation) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 - [ `RelRotateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Релротатето ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) применяет анимированное добавочное увеличение или уменьшение к [`Rotation`](xref:Xamarin.Forms.VisualElement.Rotation) свойству объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
@@ -53,7 +53,7 @@ _Класс Виевекстенсионс предоставляет метод
 
 Каждый метод расширения в [`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions) реализует одну операцию анимации, которая постепенно изменяет свойство из одного значения на другое в течение определенного периода времени. В этом разделе рассматриваются все операции анимации.
 
-### <a name="rotation"></a>Смена
+### <a name="rotation"></a>Поворот
 
 В следующем примере кода показано использование [ `RotateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. RotateTo ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) метод для анимации [`Rotation`](xref:Xamarin.Forms.VisualElement.Rotation) свойства объекта [`Image`](xref:Xamarin.Forms.Image) :
 
@@ -237,5 +237,5 @@ ViewExtensions.CancelAnimations (image);
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Общие сведения о поддержке асинхронного выполнения](~/cross-platform/platform/async.md)
-- [Базовая анимация (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-animation-basic)
+- [Базовая анимация (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-animation-basic)
 - [виевекстенсионс](xref:Xamarin.Forms.ViewExtensions)

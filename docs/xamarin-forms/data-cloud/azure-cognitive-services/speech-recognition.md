@@ -10,12 +10,12 @@ ms.date: 01/14/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 171ecc02fda304135e5f535c3e798067595d7047
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e5888e77948bef0fbb60a4e0068cbedf2d2a50e7
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139325"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555389"
 ---
 # <a name="speech-recognition-using-azure-speech-service"></a>Распознавание речи с помощью служб речи Azure
 
@@ -34,7 +34,7 @@ ms.locfileid: "84139325"
 
 ## <a name="create-an-azure-speech-service-resource"></a>Создание ресурса службы распознавания речи Azure
 
-Служба распознавания речи Azure входит в состав Azure Cognitive Services, которая предоставляет облачные API для таких задач, как распознавание изображений, распознавание речи, перевод и поиск Bing. Дополнительные сведения см. в статье [что такое Azure Cognitive Services?](https://docs.microsoft.com/azure/cognitive-services/welcome).
+Служба распознавания речи Azure входит в состав Azure Cognitive Services, которая предоставляет облачные API для таких задач, как распознавание изображений, распознавание речи, перевод и поиск Bing. Дополнительные сведения см. в статье [что такое Azure Cognitive Services?](/azure/cognitive-services/welcome).
 
 Для примера проекта требуется создание ресурса Azure Cognitive Services в портал Azure. Ресурс Cognitive Services может быть создан для одной службы, например службы речи, или как ресурс с несколькими службами. Ниже приведены действия по созданию ресурса службы речи.
 
@@ -43,7 +43,7 @@ ms.locfileid: "84139325"
 1. Получите ключ API и сведения о регионе для ресурса.
 1. Обновите пример файла **Constants.CS** .
 
-Пошаговое пошаговое инструкции по созданию ресурса см. в разделе [создание Cognitive Services ресурса](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account).
+Пошаговое пошаговое инструкции по созданию ресурса см. в разделе [создание Cognitive Services ресурса](/azure/cognitive-services/cognitive-services-apis-create-account).
 
 > [!NOTE]
 > Если у вас еще нет [подписки Azure](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), создайте [бесплатную учетную запись Azure](https://aka.ms/azfree-docs-mobileapps), прежде чем начать работу. После создания учетной записи на уровне Free можно создать ресурс с одной службой, чтобы испытать службу.
@@ -471,7 +471,7 @@ namespace CognitiveSpeechService.UWP.Services
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример службы распознавания речи Azure](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-cognitivespeechservice)
-- [Обзор службы распознавания речи Azure](https://docs.microsoft.com/azure/cognitive-services/speech-service/overview)
-- [Создание ресурса Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account)
-- [Краткое руководство. по распознаванию речи с микрофона](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/speech-to-text-from-microphone)
+- [Пример службы распознавания речи Azure](/samples/xamarin/xamarin-forms-samples/webservices-cognitivespeechservice)
+- [Обзор службы распознавания речи Azure](/azure/cognitive-services/speech-service/overview)
+- [Создание ресурса Cognitive Services](/azure/cognitive-services/cognitive-services-apis-create-account)
+- [Краткое руководство. по распознаванию речи с микрофона](/azure/cognitive-services/speech-service/quickstarts/speech-to-text-from-microphone)

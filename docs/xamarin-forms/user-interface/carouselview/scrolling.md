@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsПрокрутка Карауселвиев
+title: Xamarin.Forms Прокрутка Карауселвиев
 description: Когда пользователь начинает прокручивать, можно управлять конечной позицией прокрутки, чтобы элементы отображались полностью. Кроме того, Карауселвиев определяет два метода Скроллто, которые программным путем прокрутки элементов на представление.
 ms.prod: xamarin
 ms.assetid: 92D7B618-07FA-4343-9D0F-212525E92C39
@@ -10,38 +10,38 @@ ms.date: 01/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5c15760919c2511ee24485ab7539463ec252d999
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 5e48b962130acf98aa99c83773318d077dde2666
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918142"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556650"
 ---
-# <a name="no-locxamarinforms-carouselview-scrolling"></a>Xamarin.FormsПрокрутка Карауселвиев
+# <a name="no-locxamarinforms-carouselview-scrolling"></a>Xamarin.Forms Прокрутка Карауселвиев
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)определяет следующие свойства, связанные с прокруткой:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) определяет следующие свойства, связанные с прокруткой:
 
 - `HorizontalScrollBarVisibility`Тип `ScrollBarVisibility` , который указывает, когда отображается горизонтальная полоса прокрутки.
 - `IsDragging`Тип `bool` , который указывает, `CarouselView` прокручивается ли прокрутка. Это свойство доступно только для чтения, для которого значение по умолчанию — `false` .
-- `IsScrollAnimated`Тип `bool` , который указывает, будет ли выполняться анимация при прокрутке `CarouselView` . Значение по умолчанию — `true`.
+- `IsScrollAnimated`Тип `bool` , который указывает, будет ли выполняться анимация при прокрутке `CarouselView` . Значение по умолчанию — `true`.
 - `ItemsUpdatingScrollMode`Тип `ItemsUpdatingScrollMode` , который представляет поведение прокрутки `CarouselView` при добавлении новых элементов к нему.
 - `VerticalScrollBarVisibility`Тип `ScrollBarVisibility` , который указывает, когда отображается вертикальная полоса прокрутки.
 
 Все эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целями привязок данных.
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)также определяет два [`ScrollTo`](xref:Xamarin.Forms.ItemsView.ScrollTo*) метода: прокрутка элементов в представление. Одна из перегрузок прокручивается элемент по указанному индексу в представление, а другой Прокручивает указанный элемент в представление. Обе перегрузки имеют дополнительные аргументы, которые можно указать, чтобы указать точную позицию элемента после завершения прокрутки и следует ли анимировать прокрутку.
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) также определяет два [`ScrollTo`](xref:Xamarin.Forms.ItemsView.ScrollTo*) метода: прокрутка элементов в представление. Одна из перегрузок прокручивается элемент по указанному индексу в представление, а другой Прокручивает указанный элемент в представление. Обе перегрузки имеют дополнительные аргументы, которые можно указать, чтобы указать точную позицию элемента после завершения прокрутки и следует ли анимировать прокрутку.
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)Определяет [`ScrollToRequested`](xref:Xamarin.Forms.ItemsView.ScrollToRequested) событие, которое возникает при вызове одного из [`ScrollTo`](xref:Xamarin.Forms.ItemsView.ScrollTo*) методов. [`ScrollToRequestedEventArgs`](xref:Xamarin.Forms.ScrollToRequestedEventArgs)Объект, сопровождающий `ScrollToRequested` событие, имеет множество свойств, включая `IsAnimated` , `Index` , `Item` и `ScrollToPosition` . Эти свойства задаются из аргументов, указанных в `ScrollTo` вызовах метода.
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) Определяет [`ScrollToRequested`](xref:Xamarin.Forms.ItemsView.ScrollToRequested) событие, которое возникает при вызове одного из [`ScrollTo`](xref:Xamarin.Forms.ItemsView.ScrollTo*) методов. [`ScrollToRequestedEventArgs`](xref:Xamarin.Forms.ScrollToRequestedEventArgs)Объект, сопровождающий `ScrollToRequested` событие, имеет множество свойств, включая `IsAnimated` , `Index` , `Item` и `ScrollToPosition` . Эти свойства задаются из аргументов, указанных в `ScrollTo` вызовах метода.
 
 Кроме того, [`CarouselView`](xref:Xamarin.Forms.CarouselView) определяет `Scrolled` событие, которое срабатывает для указания на то, что произошла прокрутка. `ItemsViewScrolledEventArgs`Объект, сопровождающий `Scrolled` событие, имеет много свойств. Дополнительные сведения см. в разделе [Определение прокрутки](#detect-scrolling).
 
 Когда пользователь начинает прокручивать, можно управлять конечной позицией прокрутки, чтобы элементы отображались полностью. Эта функция называется привязкой, так как элементы привязываются к позиции при остановке прокрутки. Дополнительные сведения см. в разделе [точки привязки](#snap-points).
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)также может загружать данные постепенно по мере прокрутки пользователем. Дополнительные сведения см. в статье [добавочная загрузка данных](populate-data.md#load-data-incrementally).
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) также может загружать данные постепенно по мере прокрутки пользователем. Дополнительные сведения см. в статье [добавочная загрузка данных](populate-data.md#load-data-incrementally).
 
 ## <a name="detect-scrolling"></a>Обнаружение прокрутки
 
@@ -167,11 +167,11 @@ carouselViewView.ScrollTo(monkey, position: ScrollToPosition.End);
 
 ## <a name="control-scroll-position-when-new-items-are-added"></a>Управление позицией прокрутки при добавлении новых элементов
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)Определяет `ItemsUpdatingScrollMode` свойство, которое поддерживается связываемым свойством. Это свойство возвращает или задает `ItemsUpdatingScrollMode` значение перечисления, представляющее поведение прокрутки `CarouselView` при добавлении новых элементов к нему. Перечисление `ItemsUpdatingScrollMode` определяет следующие члены:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) Определяет `ItemsUpdatingScrollMode` свойство, которое поддерживается связываемым свойством. Это свойство возвращает или задает `ItemsUpdatingScrollMode` значение перечисления, представляющее поведение прокрутки `CarouselView` при добавлении новых элементов к нему. Перечисление `ItemsUpdatingScrollMode` определяет следующие члены:
 
-- `KeepItemsInView`корректирует смещение прокрутки, чтобы при добавлении новых элементов отображался первый видимый элемент.
-- `KeepScrollOffset`поддерживает смещение прокрутки относительно начала списка при добавлении новых элементов.
-- `KeepLastItemInView`корректирует смещение прокрутки для сохранения последнего элемента, отображаемого при добавлении новых элементов.
+- `KeepItemsInView` корректирует смещение прокрутки, чтобы при добавлении новых элементов отображался первый видимый элемент.
+- `KeepScrollOffset` поддерживает смещение прокрутки относительно начала списка при добавлении новых элементов.
+- `KeepLastItemInView` корректирует смещение прокрутки для сохранения последнего элемента, отображаемого при добавлении новых элементов.
 
 Значение свойства по умолчанию `ItemsUpdatingScrollMode` — `KeepItemsInView` . Поэтому при добавлении новых элементов к [`CarouselView`](xref:Xamarin.Forms.CarouselView) первому видимому элементу в списке будут отображаться. Чтобы убедиться, что новые добавленные элементы всегда видны в нижней части списка, `ItemsUpdatingScrollMode` свойство должно иметь значение `KeepLastItemInView` :
 
@@ -192,11 +192,11 @@ CarouselView carouselView = new CarouselView
 
 ## <a name="scroll-bar-visibility"></a>Видимость полосы прокрутки
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)Определяет `HorizontalScrollBarVisibility` `VerticalScrollBarVisibility` Свойства и, поддерживающие привязку свойств. Эти свойства получают или задают [`ScrollBarVisibility`](xref:Xamarin.Forms.ScrollBarVisibility) значение перечисления, представляющее, когда отображается горизонтальная или вертикальная полоса прокрутки. Перечисление `ScrollBarVisibility` определяет следующие члены:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) Определяет `HorizontalScrollBarVisibility` `VerticalScrollBarVisibility` Свойства и, поддерживающие привязку свойств. Эти свойства получают или задают [`ScrollBarVisibility`](xref:Xamarin.Forms.ScrollBarVisibility) значение перечисления, представляющее, когда отображается горизонтальная или вертикальная полоса прокрутки. Перечисление `ScrollBarVisibility` определяет следующие члены:
 
-- [`Default`](xref:Xamarin.Forms.ScrollBarVisibility)Указывает поведение полосы прокрутки по умолчанию для платформы и является значением по умолчанию `HorizontalScrollBarVisibility` для `VerticalScrollBarVisibility` свойств и.
-- [`Always`](xref:Xamarin.Forms.ScrollBarVisibility)Указывает, что полосы прокрутки будут видимы, даже если содержимое умещается в представлении.
-- [`Never`](xref:Xamarin.Forms.ScrollBarVisibility)Указывает, что полосы прокрутки не будут видны, даже если содержимое не умещается в представлении.
+- [`Default`](xref:Xamarin.Forms.ScrollBarVisibility) Указывает поведение полосы прокрутки по умолчанию для платформы и является значением по умолчанию `HorizontalScrollBarVisibility` для `VerticalScrollBarVisibility` свойств и.
+- [`Always`](xref:Xamarin.Forms.ScrollBarVisibility) Указывает, что полосы прокрутки будут видимы, даже если содержимое умещается в представлении.
+- [`Never`](xref:Xamarin.Forms.ScrollBarVisibility) Указывает, что полосы прокрутки не будут видны, даже если содержимое не умещается в представлении.
 
 ## <a name="snap-points"></a>Точки прикрепления
 
@@ -214,9 +214,9 @@ CarouselView carouselView = new CarouselView
 
 [`SnapPointsType`](xref:Xamarin.Forms.SnapPointsType)Перечисление определяет следующие члены:
 
-- `None`Указывает, что прокрутка не привязывается к элементам.
-- `Mandatory`Указывает, что содержимое всегда привязывается к ближайшей точке привязки, в которой будет естественно останавливаться прокрутка, а также направление инерции.
-- `MandatorySingle`Указывает на то же поведение `Mandatory` , что и, но только прокручивает по одному элементу за раз.
+- `None` Указывает, что прокрутка не привязывается к элементам.
+- `Mandatory` Указывает, что содержимое всегда привязывается к ближайшей точке привязки, в которой будет естественно останавливаться прокрутка, а также направление инерции.
+- `MandatorySingle` Указывает на то же поведение `Mandatory` , что и, но только прокручивает по одному элементу за раз.
 
 По умолчанию для [`CarouselView`](xref:Xamarin.Forms.CarouselView) [`SnapPointsType`](xref:Xamarin.Forms.ItemsLayout.SnapPointsType) свойства задано значение `SnapPointsType.MandatorySingle` , которое обеспечивает прокрутку только по одному элементу за раз.
 
@@ -337,4 +337,4 @@ CarouselView carouselView = new CarouselView
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Карауселвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+- [Карауселвиев (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)

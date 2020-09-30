@@ -10,12 +10,12 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 440a078857a940f57f5700a18f91fc8b25bdfae8
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: a62d8f8e04d97b45fff779739d817defce1414f2
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937206"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556871"
 ---
 # <a name="bitmap-basics-in-skiasharp"></a>Основы точечного рисунка в SkiaSharp
 
@@ -251,6 +251,6 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 - [Выбор фотографии в библиотеке рисунков](~/xamarin-forms/app-fundamentals/dependency-service/photo-picker.md)

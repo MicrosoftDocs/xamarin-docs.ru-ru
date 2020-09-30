@@ -10,12 +10,12 @@ ms.date: 09/12/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4fee695a20cae26537beb30513423492114e5c77
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: cf9ebb819d5b424963170d563575c4900bbed28b
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936257"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556364"
 ---
 # <a name="path-information-and-enumeration"></a>Сведения о пути и перечисление
 
@@ -121,7 +121,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="traversing-the-path"></a>Обход пути
 
-`SKPathMeasure`можно сделать больше, чем просто измерять длину пути. Для любого значения в диапазоне от нуля до длины пути `SKPathMeasure` объект может получить позицию на пути, а тангенс — к кривой пути в этой точке. Тангенс доступен в виде вектора в виде `SKPoint` объекта или вращения, инкапсулированного в `SKMatrix` объекте. Ниже приведены способы `SKPathMeasure` получения этих сведений различными и гибкими способами.
+`SKPathMeasure` можно сделать больше, чем просто измерять длину пути. Для любого значения в диапазоне от нуля до длины пути `SKPathMeasure` объект может получить позицию на пути, а тангенс — к кривой пути в этой точке. Тангенс доступен в виде вектора в виде `SKPoint` объекта или вращения, инкапсулированного в `SKMatrix` объекте. Ниже приведены способы `SKPathMeasure` получения этих сведений различными и гибкими способами.
 
 ```csharp
 Boolean GetPosition (Single distance, out SKPoint position)
@@ -232,12 +232,12 @@ SKPathVerb pathVerb = rawIterator.Next(points);
 
 `Next`Метод возвращает член [`SKPathVerb`](xref:SkiaSharp.SKPathVerb) типа перечисления. Эти значения указывают на определенную команду рисования в пути. Количество допустимых точек, вставляемых в массив, зависит от этой команды:
 
-- `Move`с одной точкой
-- `Line`с двумя точками
-- `Cubic`с четырьмя точками
-- `Quad`с тремя точками
-- `Conic`с тремя точками (и также вызовом [`ConicWeight`](xref:SkiaSharp.SKPath.RawIterator.ConicWeight*) метода для веса);
-- `Close`с одной точкой
+- `Move` с одной точкой
+- `Line` с двумя точками
+- `Cubic` с четырьмя точками
+- `Quad` с тремя точками
+- `Conic` с тремя точками (и также вызовом [`ConicWeight`](xref:SkiaSharp.SKPath.RawIterator.ConicWeight*) метода для веса);
+- `Close` с одной точкой
 - `Done`
 
 `Done`Команда указывает, что перечисление пути завершено.
@@ -258,7 +258,7 @@ SKPathVerb pathVerb = rawIterator.Next(points);
 
 Ключ состоит в том, что оригинальные прямые линии разбиваются на ряд меньших прямых линий. Эти отдельные небольшие прямые линии можно манипулировать различными способами, образуя кривую.
 
-Чтобы упростить этот процесс, пример [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) содержит статический [`PathExtensions`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathExtensions.cs) класс с `Interpolate` методом, который разделяет прямую линию на несколько коротких строк, которые имеют длину только одну единицу. Кроме того, класс содержит несколько методов, которые преобразуют три типа кривых Безье в ряд маленьких прямых линий, приближенных к кривой. (Параметрической формулы представлены в статье [**три типа кривых Безье**](~/xamarin-forms/user-interface/graphics/skiasharp/curves/beziers.md).) Этот процесс называется _плоской_ кривой:
+Чтобы упростить этот процесс, пример [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) содержит статический [`PathExtensions`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathExtensions.cs) класс с `Interpolate` методом, который разделяет прямую линию на несколько коротких строк, которые имеют длину только одну единицу. Кроме того, класс содержит несколько методов, которые преобразуют три типа кривых Безье в ряд маленьких прямых линий, приближенных к кривой. (Параметрической формулы представлены в статье [**три типа кривых Безье**](~/xamarin-forms/user-interface/graphics/skiasharp/curves/beziers.md).) Этот процесс называется _плоской_ кривой:
 
 ```csharp
 static class PathExtensions
@@ -526,5 +526,5 @@ public class GlobularTextPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

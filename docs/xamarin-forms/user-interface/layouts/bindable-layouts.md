@@ -1,5 +1,5 @@
 ---
-title: Связываемые макеты вXamarin.Forms
+title: Связываемые макеты в Xamarin.Forms
 description: Макеты с возможностью привязки позволяют классам макета создавать свое содержимое путем привязки к коллекции элементов с параметром для установки внешнего вида каждого элемента с помощью DataTemplate.
 ms.prod: xamarin
 ms.assetid: 824C3319-20A0-42D0-8632-CDECD98349C3
@@ -10,30 +10,30 @@ ms.date: 03/09/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9d0497c0c0593b54f69bac84307976c4050e9c95
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a5b1e43586810521e87360d8b6537d9bafdabad7
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138246"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555441"
 ---
-# <a name="bindable-layouts-in-xamarinforms"></a>Связываемые макеты вXamarin.Forms
+# <a name="bindable-layouts-in-no-locxamarinforms"></a>Связываемые макеты в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-bindablelayouts)
 
 Макеты с возможностью привязки позволяют любому классу макета, производному от [`Layout<T>`](xref:Xamarin.Forms.Layout`1) класса, создавать его содержимое путем привязки к коллекции элементов с возможностью задать внешний вид каждого элемента с помощью [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) . Связываемые макеты предоставляются `BindableLayout` классом, который предоставляет следующие вложенные свойства:
 
-- `ItemsSource`— Указывает коллекцию элементов, `IEnumerable` отображаемых макетом.
-- `ItemTemplate`— Задает объект, [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) применяемый к каждому элементу в коллекции элементов, отображаемых макетом.
-- `ItemTemplateSelector`— Указывает [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) , который будет использоваться для выбора [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) элемента во время выполнения.
+- `ItemsSource` — Указывает коллекцию элементов, `IEnumerable` отображаемых макетом.
+- `ItemTemplate` — Задает объект, [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) применяемый к каждому элементу в коллекции элементов, отображаемых макетом.
+- `ItemTemplateSelector` — Указывает [`DataTemplateSelector`](xref:Xamarin.Forms.DataTemplateSelector) , который будет использоваться для выбора [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) элемента во время выполнения.
 
 > [!NOTE]
 > `ItemTemplate`Свойство имеет приоритет, если `ItemTemplate` `ItemTemplateSelector` заданы свойства и.
 
 Кроме того, `BindableLayout` класс предоставляет следующие привязываемые свойства:
 
-- `EmptyView`— Указывает `string` представление или, которое будет отображаться `ItemsSource` , если свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
-- `EmptyViewTemplate`— Указывает [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , который будет отображаться, если `ItemsSource` свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
+- `EmptyView` — Указывает `string` представление или, которое будет отображаться `ItemsSource` , если свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
+- `EmptyViewTemplate` — Указывает [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) , который будет отображаться, если `ItemsSource` свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
 
 > [!NOTE]
 > `EmptyViewTemplate`Свойство имеет приоритет, если `EmptyView` `EmptyViewTemplate` заданы свойства и.
@@ -253,7 +253,7 @@ void ToggleEmptyView(bool isToggled)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демонстрация компоновки с возможностью привязки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-bindablelayouts)
+- [Демонстрация компоновки с возможностью привязки (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-bindablelayouts)
 - [Создание пользовательского макета](~/xamarin-forms/user-interface/layouts/custom.md)
-- [Xamarin.FormsШаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
+- [Xamarin.Forms Шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
 - [Создание Xamarin.Forms DataTemplateSelector](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md)

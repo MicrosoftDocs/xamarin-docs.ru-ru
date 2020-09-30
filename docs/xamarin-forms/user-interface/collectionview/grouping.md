@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsГруппирование CollectionView
+title: Xamarin.Forms Группирование CollectionView
 description: CollectionView может отображать правильно сгруппированные данные, присвоив свойству «IsTrue» значение true.
 ms.prod: xamarin
 ms.assetid: 7E494245-FDBD-49D6-B7FA-CEF976EB59BB
@@ -10,20 +10,20 @@ ms.date: 09/17/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 51661d6573d78386f4ca8bfea0063b752295c2d8
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 51bdcc6f9a95911c548269dbf7b3050cc5921183
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136465"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556624"
 ---
-# <a name="xamarinforms-collectionview-grouping"></a>Xamarin.FormsГруппирование CollectionView
+# <a name="no-locxamarinforms-collectionview-grouping"></a>Xamarin.Forms Группирование CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
 Большие наборы данных часто становятся неудобными, если они представлены в постоянном списке прокрутки. В этом сценарии Организация данных в группы может улучшить взаимодействие с пользователем, упрощая навигацию по данным.
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)поддерживает отображение сгруппированных данных и определяет следующие свойства, которые определяют, как они будут представлены:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) поддерживает отображение сгруппированных данных и определяет следующие свойства, которые определяют, как они будут представлены:
 
 - `IsGrouped`Тип `bool` — указывает, должны ли базовые данные отображаться в группах. Значение по умолчанию этого свойства равно `false`.
 - `GroupHeaderTemplate`Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) — шаблон, используемый для заголовка каждой группы.
@@ -142,7 +142,7 @@ Animals.Add(new AnimalGroup("Monkeys", new List<Animal>
 
 ## <a name="display-grouped-data"></a>Отображение сгруппированных данных
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)Отображает сгруппированные данные при условии, что данные были сгруппированы правильно, путем присвоения `IsGrouped` свойству значения `true` :
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) Отображает сгруппированные данные при условии, что данные были сгруппированы правильно, путем присвоения `IsGrouped` свойству значения `true` :
 
 ```xaml
 <CollectionView ItemsSource="{Binding Animals}"
@@ -241,7 +241,7 @@ collectionView.SetBinding(ItemsView.ItemsSourceProperty, "Animals");
 
 ## <a name="group-without-templates"></a>Группа без шаблонов
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)может отображать правильно сгруппированные данные, не присвоив [`CollectionView.ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate) свойству значение [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) .
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) может отображать правильно сгруппированные данные, не присвоив [`CollectionView.ItemTemplate`](xref:Xamarin.Forms.ItemsView.ItemTemplate) свойству значение [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) .
 
 ```xaml
 <CollectionView ItemsSource="{Binding Animals}"
@@ -252,5 +252,5 @@ collectionView.SetBinding(ItemsView.ItemsSourceProperty, "Animals");
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [CollectionView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
-- [Xamarin.FormsШаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
+- [CollectionView (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+- [Xamarin.Forms Шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)

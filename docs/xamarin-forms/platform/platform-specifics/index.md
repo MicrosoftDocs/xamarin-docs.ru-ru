@@ -10,12 +10,12 @@ ms.date: 10/01/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e0c6e305287c97abac3500cba4771479b60381ac
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: b029ffdb0a16d9f54951ae3754ca0f1eb7f69aaa
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939806"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556884"
 ---
 # <a name="platform-specifics"></a>Особенности платформы
 
@@ -56,11 +56,11 @@ _Особенности платформы позволяют использов
 > [!NOTE]
 > Это предусмотрено, что поставщики будут использовать этот метод для создания собственных платформ для простоты потребления пользователями. Хотя пользователи могут создавать свои собственные платформы, следует отметить, что для этого требуется больше кода, чем создание и использование влияния.
 
-[Пример приложения](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shadowplatformspecific) демонстрирует `Shadow` конкретную платформу, которая добавляет тень к тексту, отображаемому [`Label`](xref:Xamarin.Forms.Label) элементом управления:
+[Пример приложения](/samples/xamarin/xamarin-forms-samples/userinterface-shadowplatformspecific) демонстрирует `Shadow` конкретную платформу, которая добавляет тень к тексту, отображаемому [`Label`](xref:Xamarin.Forms.Label) элементом управления:
 
 ![Теневая платформа — зависит от платформы](images/screenshots.png)
 
-В [примере приложения](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shadowplatformspecific) `Shadow` для каждой платформы реализована конкретная платформа для простоты понимания. Тем не менее, помимо реализации влияния на конкретную платформу, реализация теневого класса в значительной степени идентична для каждой платформы. Поэтому в этом руководством рассматриваются реализация теневого класса и связанная с ней воздействие на одну платформу.
+В [примере приложения](/samples/xamarin/xamarin-forms-samples/userinterface-shadowplatformspecific) `Shadow` для каждой платформы реализована конкретная платформа для простоты понимания. Тем не менее, помимо реализации влияния на конкретную платформу, реализация теневого класса в значительной степени идентична для каждой платформы. Поэтому в этом руководством рассматриваются реализация теневого класса и связанная с ней воздействие на одну платформу.
 
 Дополнительные сведения о влиянии см. [в разделе Настройка элементов управления с помощью эффектов](~/xamarin-forms/app-fundamentals/effects/index.md).
 
@@ -280,8 +280,8 @@ shadowLabel.On<iOS>().SetIsShadowed(true);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
-- [ШадовплатформспеЦифик (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shadowplatformspecific)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ШадовплатформспеЦифик (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-shadowplatformspecific)
 - [Особенности платформы iOS](~/xamarin-forms/platform/ios/index.md)
 - [Особенности платформы Android](~/xamarin-forms/platform/android/index.md)
 - [Особенности платформы Windows](~/xamarin-forms/platform/windows/index.md)

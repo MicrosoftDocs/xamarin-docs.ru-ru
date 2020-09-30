@@ -10,16 +10,16 @@ ms.date: 04/12/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 020319761ba1274495b7595a0d18435f98a5f990
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 911365b6293fecd3bf309f3e61d9b232d90b7a13
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937180"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556559"
 ---
 # <a name="matrix-transforms-in-skiasharp"></a>Преобразования матрицы в SkiaSharp
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Подробное рассмотрение SkiaSharp преобразований с помощью универсальной матрицы преобразования_
 
@@ -41,7 +41,7 @@ _Подробное рассмотрение SkiaSharp преобразован�
 | 0  0  1 |
 </pre>
 
-Матрицу идентификаторов можно создать с помощью статического [`SKMatrix.MakeIdentity`](xref:SkiaSharp.SKMatrix.MakeIdentity) метода:
+Матрицу идентификаторов можно создать с помощью статического  [`SKMatrix.MakeIdentity`](xref:SkiaSharp.SKMatrix.MakeIdentity) метода:
 
 ```csharp
 SKMatrix matrix = SKMatrix.MakeIdentity();
@@ -174,7 +174,7 @@ canvas.Scale(sx, sy);
 |  0   0   1 |   | tx  ty   1 |   | tx  ty   1 |
 </pre>
 
-`Scale`метод можно вызвать до `Translate` следующего вида:
+`Scale` метод можно вызвать до `Translate` следующего вида:
 
 ```csharp
 canvas.Scale(sx, sy);
@@ -221,7 +221,7 @@ canvas.Translate(–px, –py);
 │ TransX  TransY  Persp2 │
 </pre>
 
-`SKMatrix`также определяет свойство с именем [`Values`](xref:SkiaSharp.SKMatrix.Values) типа `float[]` . Это свойство можно использовать для задания или получения девяти значений в одном снимке в порядке,,,,,,, `ScaleX` `SkewX` `TransX` `SkewY` `ScaleY` `TransY` `Persp0` `Persp1` и `Persp2` .
+`SKMatrix` также определяет свойство с именем [`Values`](xref:SkiaSharp.SKMatrix.Values) типа `float[]` . Это свойство можно использовать для задания или получения девяти значений в одном снимке в порядке,,,,,,, `ScaleX` `SkewX` `TransX` `SkewY` `ScaleY` `TransY` `Persp0` `Persp1` и `Persp2` .
 
 `Persp0`Ячейки, `Persp1` и `Persp2` обсуждаются в статье [**неаффинных преобразований**](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/non-affine.md). Если значения по умолчанию для этих ячеек равны 0, 0 и 1, то преобразование умножается на точку координат следующего вида:
 
@@ -243,14 +243,14 @@ canvas.Translate(–px, –py);
 
 - [`MakeTranslation`](xref:SkiaSharp.SKMatrix.MakeTranslation(System.Single,System.Single))
 - [`MakeScale`](xref:SkiaSharp.SKMatrix.MakeScale(System.Single,System.Single))
-- [`MakeScale`](xref:SkiaSharp.SKMatrix.MakeScale(System.Single,System.Single,System.Single,System.Single))с точкой вращения
-- [`MakeRotation`](xref:SkiaSharp.SKMatrix.MakeRotation(System.Single))для угла в радианах
-- [`MakeRotation`](xref:SkiaSharp.SKMatrix.MakeRotation(System.Single,System.Single,System.Single))угол в радианах с точкой вращения
+- [`MakeScale`](xref:SkiaSharp.SKMatrix.MakeScale(System.Single,System.Single,System.Single,System.Single)) с точкой вращения
+- [`MakeRotation`](xref:SkiaSharp.SKMatrix.MakeRotation(System.Single)) для угла в радианах
+- [`MakeRotation`](xref:SkiaSharp.SKMatrix.MakeRotation(System.Single,System.Single,System.Single)) угол в радианах с точкой вращения
 - [`MakeRotationDegrees`](xref:SkiaSharp.SKMatrix.MakeRotationDegrees(System.Single))
-- [`MakeRotationDegrees`](xref:SkiaSharp.SKMatrix.MakeRotationDegrees(System.Single,System.Single,System.Single))с точкой вращения
+- [`MakeRotationDegrees`](xref:SkiaSharp.SKMatrix.MakeRotationDegrees(System.Single,System.Single,System.Single)) с точкой вращения
 - [`MakeSkew`](xref:SkiaSharp.SKMatrix.MakeSkew(System.Single,System.Single))
 
-`SKMatrix`также определяет несколько статических методов, объединяющих две матрицы, что означает их умножение. Эти методы называются [`Concat`](xref:SkiaSharp.SKMatrix.Concat*) , [`PostConcat`](xref:SkiaSharp.SKMatrix.PostConcat*) и [`PreConcat`](xref:SkiaSharp.SKMatrix.PreConcat*) , и существует две версии каждого из них. Эти методы не имеют возвращаемых значений; Вместо этого они ссылаются на существующие `SKMatrix` значения с помощью `ref` аргументов. В следующем примере,, `A` `B` и `R` (для "Result") являются `SKMatrix` значениями.
+`SKMatrix` также определяет несколько статических методов, объединяющих две матрицы, что означает их умножение. Эти методы называются [`Concat`](xref:SkiaSharp.SKMatrix.Concat*) , [`PostConcat`](xref:SkiaSharp.SKMatrix.PostConcat*) и [`PreConcat`](xref:SkiaSharp.SKMatrix.PreConcat*) , и существует две версии каждого из них. Эти методы не имеют возвращаемых значений; Вместо этого они ссылаются на существующие `SKMatrix` значения с помощью `ref` аргументов. В следующем примере,, `A` `B` и `R` (для "Result") являются `SKMatrix` значениями.
 
 Два `Concat` метода вызываются следующим образом:
 
@@ -444,9 +444,9 @@ SKRect transformedRect = matrix.MapRect(rect);
 
 Одним из способов сделать аффинное преобразование является Интерактивное перемещение трех углов точечного рисунка вокруг экрана и просмотр результатов преобразования. Это идея на странице « **Показывать аффинное матрицу** ». На этой странице требуются два других класса, которые также используются в других демонстрациях:
 
-[`TouchPoint`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/TouchPoint.cs)Класс отображает полупрозрачный круг, который можно перетащить вокруг экрана. `TouchPoint`требует, чтобы `SKCanvasView` элемент или, являющийся родительским для, `SKCanvasView` имел [`TouchEffect`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/TouchEffect.cs) присоединенный объект. Задайте свойству `Capture` значение `true`. В `TouchAction` обработчике событий программа должна вызывать `ProcessTouchEvent` метод в `TouchPoint` для каждого `TouchPoint` экземпляра. Метод возвращает значение, `true` Если событие касания привело к перемещению сенсорной точки. Кроме того, `PaintSurface` обработчик должен вызвать `Paint` метод в каждом `TouchPoint` экземпляре, передав ему `SKCanvas` объект.
+[`TouchPoint`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/TouchPoint.cs)Класс отображает полупрозрачный круг, который можно перетащить вокруг экрана. `TouchPoint` требует, чтобы `SKCanvasView` элемент или, являющийся родительским для, `SKCanvasView` имел [`TouchEffect`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/TouchEffect.cs) присоединенный объект. Задайте для свойства `Capture` значение `true`. В `TouchAction` обработчике событий программа должна вызывать `ProcessTouchEvent` метод в `TouchPoint` для каждого `TouchPoint` экземпляра. Метод возвращает значение, `true` Если событие касания привело к перемещению сенсорной точки. Кроме того, `PaintSurface` обработчик должен вызвать `Paint` метод в каждом `TouchPoint` экземпляре, передав ему `SKCanvas` объект.
 
-`TouchPoint`демонстрирует распространенный способ, которым SkiaSharp визуальный элемент можно инкапсулировать в отдельный класс. Класс может определять свойства для определения характеристик визуального элемента, а метод `Paint` с именем с `SKCanvas` аргументом может визуализировать его.
+`TouchPoint` демонстрирует распространенный способ, которым SkiaSharp визуальный элемент можно инкапсулировать в отдельный класс. Класс может определять свойства для определения характеристик визуального элемента, а метод `Paint` с именем с `SKCanvas` аргументом может визуализировать его.
 
 `Center`Свойство объекта `TouchPoint` указывает расположение объекта. Это свойство можно задать для инициализации расположения. свойство изменяется, когда пользователь перетаскивает окружность вокруг холста.
 
@@ -655,5 +655,5 @@ public partial class ShowAffineMatrixPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

@@ -10,12 +10,12 @@ ms.date: 01/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d5c5e6db8ddcf3cef32bde5c387adc378afd0058
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: d6a8674f0cffe534b1ee83f20ab255766fbfcbda
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135620"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557404"
 ---
 # <a name="default-image-directory-on-windows"></a>Каталог изображений по умолчанию в Windows
 
@@ -48,6 +48,6 @@ Application.Current.On<Windows>().SetImageDirectory("Assets");
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ВиндовсспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific)

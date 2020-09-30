@@ -836,6 +836,8 @@ items:
         href: ~/essentials/platform-feature-support.md?context=xamarin/xamarin-forms
       - name: Акселерометр
         href: ~/essentials/accelerometer.md?context=xamarin/xamarin-forms
+      - name: Действия приложения
+        href: ~/essentials/app-actions.md?context=xamarin/xamarin-forms
       - name: Сведения о приложении
         href: ~/essentials/app-information.md?context=xamarin/xamarin-forms
       - name: Тема приложения
@@ -852,6 +854,8 @@ items:
         href: ~/essentials/compass.md?context=xamarin/xamarin-forms
       - name: Подключение
         href: ~/essentials/connectivity.md?context=xamarin/xamarin-forms
+      - name: Контакты
+        href: ~/essentials/contacts.md?context=xamarin/xamarin-forms
       - name: Обнаружение тряски
         href: ~/essentials/detect-shake.md?context=xamarin/xamarin-forms
       - name: Сведения о дисплее устройства
@@ -860,6 +864,8 @@ items:
         href: ~/essentials/device-information.md?context=xamarin/xamarin-forms
       - name: Адрес эл. почты
         href: ~/essentials/email.md?context=xamarin/xamarin-forms
+      - name: Средство выбора файлов
+        href: ~/essentials/file-picker.md?context=xamarin/xamarin-forms
       - name: Вспомогательные методы для файловой системы
         href: ~/essentials/file-system-helpers.md?context=xamarin/xamarin-forms
       - name: Фонарик
@@ -870,6 +876,8 @@ items:
         href: ~/essentials/geolocation.md?context=xamarin/xamarin-forms
       - name: Гироскоп
         href: ~/essentials/gyroscope.md?context=xamarin/xamarin-forms
+      - name: Тактильная обратная связь
+        href: ~/essentials/haptic-feedback.md?context=xamarin/xamarin-forms
       - name: Средство запуска
         href: ~/essentials/launcher.md?context=xamarin/xamarin-forms
       - name: Магнитометр
@@ -878,6 +886,8 @@ items:
         href: ~/essentials/main-thread.md?context=xamarin/xamarin-forms
       - name: Карты
         href: ~/essentials/maps.md?context=xamarin/xamarin-forms
+      - name: Средство выбора мультимедиа
+        href: ~/essentials/media-picker.md?context=xamarin/xamarin-forms
       - name: Открыть браузер
         href: ~/essentials/open-browser.md?context=xamarin/xamarin-forms
       - name: Датчик ориентации
@@ -890,6 +900,8 @@ items:
         href: ~/essentials/platform-extensions.md?context=xamarin/xamarin-forms
       - name: Параметры
         href: ~/essentials/preferences.md?context=xamarin/xamarin-forms
+      - name: Снимок экрана
+        href: ~/essentials/screenshot.md?context=xamarin/xamarin-forms
       - name: Защищенное хранилище
         href: ~/essentials/secure-storage.md?context=xamarin/xamarin-forms
       - name: Общий доступ

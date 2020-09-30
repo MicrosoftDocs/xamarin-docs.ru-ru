@@ -10,12 +10,12 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 52be7641ac3b2983f537e11bccd76f2a5b52574d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a77ebb07a09c1bbd2df482c81040f271cdf8f56e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84130186"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556351"
 ---
 # <a name="the-non-separable-blend-modes"></a>Режимы смешения не отделяемых
 
@@ -211,11 +211,11 @@ public partial class NonSeparableBlendModesPage : ContentPage
 
 ## <a name="a-matte-for-a-separable-mode"></a>Матовая для режима отделяемых
 
-Ниже приведено одно из точечных рисунков, входящих в состав примера [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **Banana.jpg**:
+Ниже приведено одно из точечных рисунков, входящих в состав примера [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **Banana.jpg**:
 
 ![Обезьяна в полукруглой](non-separable-images/Banana.jpg "Обезьяна в полукруглой")
 
-Можно создать матовый, охватывающий только «полукруглый». Это также является ресурсом в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **BananaMatte.png**:
+Можно создать матовый, охватывающий только «полукруглый». Это также является ресурсом в примере [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **BananaMatte.png**:
 
 ![Полукруглая матовая](non-separable-images/BananaMatte.png "Полукруглая матовая")
 
@@ -294,5 +294,5 @@ public class BlueBananaPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

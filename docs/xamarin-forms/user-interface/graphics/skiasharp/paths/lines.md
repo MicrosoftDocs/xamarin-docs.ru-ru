@@ -10,16 +10,16 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 644e6ab4acffa7acf2d86733d68fed8db07a752a
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 75d19e41243076da127d58defdabeca908d900cd
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86932370"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556091"
 ---
 # <a name="lines-and-stroke-caps"></a>Линии и концы штрихов
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Сведения об использовании SkiaSharp для рисования линий с различными наконечниками штриха_
 
@@ -37,11 +37,11 @@ canvas.DrawLine (x0, y0, x1, y1, paint);
 
 Внешний вид линий начала и конца линии называется *концом строки* или, в СКИА, *наконечником обводки*. Слово «Cap» в этом контексте относится к типу Hat &mdash; , который находится в конце строки. [`StrokeCap`](xref:SkiaSharp.SKPaint.StrokeCap)Свойству объекта задается `SKPaint` один из следующих членов [`SKStrokeCap`](xref:SkiaSharp.SKStrokeCap) перечисления:
 
-- `Butt`(по умолчанию)
+- `Butt` (по умолчанию)
 - `Square`
 - `Round`
 
-Они лучше проиллюстрированы с помощью примера программы. Раздел **SkiaSharp Lines and paths** программы [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) начинается со страницы, наименованной **прописные буквы** на основе [`StrokeCapsPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths/StrokeCapsPage.cs) класса. На этой странице определяется `PaintSurface` обработчик событий, который циклически проходит по трем элементам `SKStrokeCap` перечисления, отображая как имя члена перечисления, так и рисование линии с помощью этого конца штриха:
+Они лучше проиллюстрированы с помощью примера программы. Раздел **SkiaSharp Lines and paths** программы [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) начинается со страницы, наименованной **прописные буквы** на основе [`StrokeCapsPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths/StrokeCapsPage.cs) класса. На этой странице определяется `PaintSurface` обработчик событий, который циклически проходит по трем элементам `SKStrokeCap` перечисления, отображая как имя члена перечисления, так и рисование линии с помощью этого конца штриха:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -109,9 +109,9 @@ DrawPoints (SKPointMode mode, points, paint)
 
 `points`Параметр является массивом `SKPoint` значений и `mode` является членом [`SKPointMode`](xref:SkiaSharp.SKPointMode) перечисления, который имеет три члена:
 
-- `Points`отрисовка отдельных точек
-- `Lines`соединение каждой пары точек
-- `Polygon`подключение всех последовательных точек
+- `Points` отрисовка отдельных точек
+- `Lines` соединение каждой пары точек
+- `Polygon` подключение всех последовательных точек
 
 Этот метод показан на странице с **несколькими строками** . Файл [**мултиплелинеспаже. XAML**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths/MultipleLinesPage.xaml) создает два `Picker` представления, которые позволяют выбрать член `SKPointMode` перечисления и член `SKStrokeCap` перечисления:
 
@@ -243,5 +243,5 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

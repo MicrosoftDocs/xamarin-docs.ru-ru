@@ -10,12 +10,12 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 418d29010a8cce81d2bb8c365608c54b61739622
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: ec84ac906ac146f37ba5b161a898582ce483bc95
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84135646"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556676"
 ---
 # <a name="the-skiasharp-circular-gradients"></a>Круговые градиенты SkiaSharp
 
@@ -57,7 +57,7 @@ public static SKShader CreateRadialGradient (SKPoint center,
 
 При использовании `CreateRadialGradient` для заполнения окружности можно задать центр градиента по центру окружности, а радиус градиента — радиусу круга. В этом случае `SKShaderTileMode` аргумент не влияет на отрисовку градиента. Но если область, заполненная градиентом, больше круга, определенного градиентом, то `SKShaderTileMode` аргумент имеет более глубокое воздействие на то, что происходит вне круга.
 
-Результат `SKShaderMode` показан на странице **радиальный градиент** в примере [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . XAML-файл для этой страницы создает экземпляр `Picker` , который позволяет выбрать один из трех членов `SKShaderTileMode` перечисления:
+Результат `SKShaderMode` показан на странице **радиальный градиент** в примере [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . XAML-файл для этой страницы создает экземпляр `Picker` , который позволяет выбрать один из трех членов `SKShaderTileMode` перечисления:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -334,7 +334,7 @@ public class RadialSpecularHighlightPage : ContentPage
 }
 ```
 
-`CreateRadialGradient`Вызов создает градиент, который начинается с белого, `offCenter` и заканчивается красным на расстоянии половины радиуса. Вот как оно выглядит:
+`CreateRadialGradient`Вызов создает градиент, который начинается с белого, `offCenter` и заканчивается красным на расстоянии половины радиуса. Он выглядит следующим образом.
 
 [![Радиальное отраженное выделение](circular-gradients-images/RadialSpecularHighlight.png "Радиальное отраженное выделение")](circular-gradients-images/RadialSpecularHighlight-Large.png#lightbox)
 
@@ -622,5 +622,5 @@ public class ConicalSpecularHighlightPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

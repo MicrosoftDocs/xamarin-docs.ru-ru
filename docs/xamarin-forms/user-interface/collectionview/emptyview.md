@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsCollectionView Емптивиев
+title: Xamarin.Forms CollectionView Емптивиев
 description: В CollectionView можно указать пустое представление, которое предоставляет пользователю отзыв о том, что данные недоступны для отображения. Пустое представление может быть строкой, представлением или несколькими представлениями.
 ms.prod: xamarin
 ms.assetid: 6CEBCFE6-5577-4F68-9709-431062609153
@@ -10,21 +10,21 @@ ms.date: 05/06/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d35e39e55d66452e47c7a3e3faf86a7a7d6adaca
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 041e614d94342834ed8e62c0f432794b3bc7d21a
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136499"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556416"
 ---
-# <a name="xamarinforms-collectionview-emptyview"></a>Xamarin.FormsCollectionView Емптивиев
+# <a name="no-locxamarinforms-collectionview-emptyview"></a>Xamarin.Forms CollectionView Емптивиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
-[`CollectionView`](xref:Xamarin.Forms.CollectionView)определяет следующие свойства, которые можно использовать для предоставления отзывов пользователей, когда нет данных для показа:
+[`CollectionView`](xref:Xamarin.Forms.CollectionView) определяет следующие свойства, которые можно использовать для предоставления отзывов пользователей, когда нет данных для показа:
 
-- [`EmptyView`](xref:Xamarin.Forms.ItemsView.EmptyView)Тип `object` , строка, привязка или представление, которые будут отображаться, если [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
-- [`EmptyViewTemplate`](xref:Xamarin.Forms.ItemsView.EmptyViewTemplate)Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) — шаблон, используемый для форматирования указанного объекта `EmptyView` . Значение по умолчанию — `null`.
+- [`EmptyView`](xref:Xamarin.Forms.ItemsView.EmptyView)Тип `object` , строка, привязка или представление, которые будут отображаться, если [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
+- [`EmptyViewTemplate`](xref:Xamarin.Forms.ItemsView.EmptyViewTemplate)Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) — шаблон, используемый для форматирования указанного объекта `EmptyView` . Значение по умолчанию — `null`.
 
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что свойства могут быть целевыми объектами привязок данных.
 
@@ -330,7 +330,7 @@ public class SearchTermDataTemplateSelector : DataTemplateSelector
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [CollectionView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
-- [Xamarin.FormsШаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
+- [CollectionView (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+- [Xamarin.Forms Шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
 - [Словари ресурсов Xamarin.Forms](~/xamarin-forms/xaml/resource-dictionaries.md)
 - [Создание Xamarin.Forms DataTemplateSelector](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Xamarin.FormsКисти: сплошные цвета'
+title: 'Xamarin.Forms Кисти: сплошные цвета'
 description: Xamarin.FormsКласс SolidColorBrush закрашивает область сплошным цветом.
 ms.prod: xamarin
 ms.assetid: 4225D40A-16C1-40E1-ACBE-23E321E7FDE4
@@ -10,18 +10,18 @@ ms.date: 07/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7b77cab7c0f87dbedf66651c3ab59ef20b7f3ecd
-ms.sourcegitcommit: 579ec4f2884fa391e5e214a3952cd6004c521eb8
+ms.openlocfilehash: 3c3caf064ca550086f8e7924786ac8bcaf1badfc
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87919567"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556286"
 ---
-# <a name="no-locxamarinforms-brushes-solid-colors"></a>Xamarin.FormsКисти: сплошные цвета
+# <a name="no-locxamarinforms-brushes-solid-colors"></a>Xamarin.Forms Кисти: сплошные цвета
 
 ![Предварительный просмотр API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/BrushDemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
 
 `SolidColorBrush`Класс является производным от `Brush` класса и используется для заливки области сплошным цветом. Существует множество подходов к указанию цвета `SolidColorBrush` . Например, можно указать его цвет со [`Color`](xref:Xamarin.Forms.Color) значением или с помощью одного из предопределенных `SolidColorBrush` объектов, предоставляемых `Brush` классом.
 
@@ -35,7 +35,7 @@ ms.locfileid: "87919567"
 
 ### <a name="use-a-predefined-color"></a>Использовать стандартный цвет
 
-Xamarin.Formsвключает преобразователь типов, который создает `SolidColorBrush` из [`Color`](xref:Xamarin.Forms.Color) значения. В XAML это позволяет `SolidColorBrush` создать из предопределенного `Color` значения:
+Xamarin.Forms включает преобразователь типов, который создает `SolidColorBrush` из [`Color`](xref:Xamarin.Forms.Color) значения. В XAML это позволяет `SolidColorBrush` создать из предопределенного `Color` значения:
 
 ```xaml
 <Frame Background="DarkBlue"
@@ -98,11 +98,11 @@ Frame frame = new Frame
 
 ### <a name="use-hexadecimal-notation"></a>Использовать шестнадцатеричную нотацию
 
-`SolidColorBrush`объекты также можно создавать с помощью шестнадцатеричного формата. При таком подходе цвет задается с точки зрения красного, зеленого и синего цветов для объединения в один цвет. Основной формат для указания цвета в шестнадцатеричной нотации — `#rrggbb` , где:
+`SolidColorBrush` объекты также можно создавать с помощью шестнадцатеричного формата. При таком подходе цвет задается с точки зрения красного, зеленого и синего цветов для объединения в один цвет. Основной формат для указания цвета в шестнадцатеричной нотации — `#rrggbb` , где:
 
-- `rr`представляет собой двузначное шестнадцатеричное число, указывающее относительный объем красного.
-- `gg`представляет собой двузначное шестнадцатеричное число, определяющее относительный объем зеленого цвета.
-- `bb`представляет собой двузначное шестнадцатеричное число, указывающее относительный объем синего.
+- `rr` представляет собой двузначное шестнадцатеричное число, указывающее относительный объем красного.
+- `gg` представляет собой двузначное шестнадцатеричное число, определяющее относительный объем зеленого цвета.
+- `bb` представляет собой двузначное шестнадцатеричное число, указывающее относительный объем синего.
 
 Кроме того, цвет можно указать как, `#aarrggbb` где `aa` указывает альфа-значение или прозрачность цвета. Этот подход позволяет создавать частично прозрачные цвета.
 
@@ -131,5 +131,5 @@ Frame frame = new Frame
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Брушесдемос (пример)](https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/BrushDemos)
-- [Цвета вXamarin.Forms](~/xamarin-forms/user-interface/colors.md)
+- [Брушесдемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
+- [Цвета в Xamarin.Forms](~/xamarin-forms/user-interface/colors.md)

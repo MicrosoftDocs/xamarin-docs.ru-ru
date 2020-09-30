@@ -10,12 +10,12 @@ ms.date: 04/05/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 074b782bfc5458cf89e593913b6f31de633ffd73
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 98722d29a674e4d69f31a670a541eaabb550898e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938155"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555649"
 ---
 # <a name="finger-painting-in-skiasharp"></a>Рисование пальцами в SkiaSharp
 
@@ -27,9 +27,9 @@ _Используйте пальцы для рисования на холсте
 
 ![Упражнения в выкраске пальца](finger-paint-images/fingerpaintsample.png)
 
-Поддержка сенсорного ввода в Xamarin.Forms не позволяет отслеживать отдельные пальцы на экране, поэтому Xamarin.Forms для обеспечения дополнительной поддержки сенсорного ввода был разработан такой режим. Этот эффект описан в статье [**вызов событий из эффектов**](~/xamarin-forms/app-fundamentals/effects/touch-tracking.md). Демонстрационные видеоролики программы с примерами с [**поддержкой сенсорного экрана**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/) включают две страницы, использующие SkiaSharp, в том числе программу рисования пальца.
+Поддержка сенсорного ввода в Xamarin.Forms не позволяет отслеживать отдельные пальцы на экране, поэтому Xamarin.Forms для обеспечения дополнительной поддержки сенсорного ввода был разработан такой режим. Этот эффект описан в статье [**вызов событий из эффектов**](~/xamarin-forms/app-fundamentals/effects/touch-tracking.md). Демонстрационные видеоролики программы с примерами с [**поддержкой сенсорного экрана**](/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/) включают две страницы, использующие SkiaSharp, в том числе программу рисования пальца.
 
-Решение [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) включает в себя это событие отслеживания касаний. Проект библиотеки .NET Standard включает `TouchEffect` класс, `TouchActionType` перечисление, `TouchActionEventHandler` делегат и `TouchActionEventArgs` класс. Каждый из проектов платформы включает `TouchEffect` класс для этой платформы. Проект iOS также содержит `TouchRecognizer` класс.
+Решение [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) включает в себя это событие отслеживания касаний. Проект библиотеки .NET Standard включает `TouchEffect` класс, `TouchActionType` перечисление, `TouchActionEventHandler` делегат и `TouchActionEventArgs` класс. Каждый из проектов платформы включает `TouchEffect` класс для этой платформы. Проект iOS также содержит `TouchRecognizer` класс.
 
 Страница **прорисовки пальца** в **скиашарпформсдемос** — это упрощенная реализация рисования пальца. Он не позволяет выбрать цвет или толщину штриха, он не может очистить холст. Конечно, вы не можете сохранить иллюстрацию.
 
@@ -56,7 +56,7 @@ _Используйте пальцы для рисования на холсте
 
 Присоединение `TouchEffect` непосредственно к элементу `SKCanvasView` не работает на всех платформах.
 
-Файл кода программной части [**FingerPaintPage.XAML.CS**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths/FingerPaintPage.xaml.cs) определяет две коллекции для хранения `SKPath` объектов, а также `SKPaint` объект для визуализации этих путей:
+Файл кода программной части  [**FingerPaintPage.XAML.CS**](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Paths/FingerPaintPage.xaml.cs) определяет две коллекции для хранения `SKPath` объектов, а также `SKPaint` объект для визуализации этих путей:
 
 ```csharp
 public partial class FingerPaintPage : ContentPage
@@ -174,7 +174,7 @@ public partial class FingerPaintPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
-- [Демонстрации эффектов для отслеживания касаний (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [Демонстрации эффектов для отслеживания касаний (пример)](/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/)
 - [Вызов событий из эффекта](~/xamarin-forms/app-fundamentals/effects/touch-tracking.md)

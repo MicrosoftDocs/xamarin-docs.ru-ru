@@ -10,14 +10,14 @@ ms.date: 04/25/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: bdead80671a1ae6539de6614441df7e86863a5a6
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9dc5b8e63a35c3a0b797d0794af7a31aea4969c9
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137479"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555597"
 ---
-# <a name="can-i-update-the-xamarinforms-default-template-to-a-newer-nuget-package"></a>Можно ли обновить Xamarin.Forms шаблон по умолчанию до более нового пакета NuGet?
+# <a name="can-i-update-the-no-locxamarinforms-default-template-to-a-newer-nuget-package"></a>Можно ли обновить Xamarin.Forms шаблон по умолчанию до более нового пакета NuGet?
 
 В этом руководством в Xamarin.Forms качестве примера используется шаблон библиотеки .NET Standard, но один и тот же общий метод также будет работать для Xamarin.Forms шаблона общего проекта. Это руководство написано с примером обновления с Xamarin.Forms 1.5.1.6471 на 2.1.0.6529, но для этого можно задать другие версии по умолчанию.
 
@@ -34,7 +34,7 @@ ms.locfileid: "84137479"
 
     Пример: `<package id="Xamarin.Forms" version="1.5.1.6471" />` -> `<package id="Xamarin.Forms" version="2.1.0.6529" />`.
 
-4. Измените элемент Name основного [файла многопроектного шаблона](https://msdn.microsoft.com/library/ms185308.aspx) ( `Xamarin.Forms.PCL.vstemplate` ), чтобы сделать его уникальным. Пример:
+4. Измените элемент Name основного [файла многопроектного шаблона](/visualstudio/ide/how-to-create-multi-project-templates) ( `Xamarin.Forms.PCL.vstemplate` ), чтобы сделать его уникальным. Пример:
 
     > `<Name>Blank App (Xamarin.Forms Portable) - 2.1.0.6529</Name>`
 

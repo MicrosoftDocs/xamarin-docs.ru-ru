@@ -1,5 +1,5 @@
 ---
-title: Обработка файлов вXamarin.Forms
+title: Обработка файлов в Xamarin.Forms
 description: Обработка файлов в Xamarin.Forms среде может быть достигнута с помощью кода в библиотеке .NET Standard или с помощью внедренных ресурсов.
 ms.prod: xamarin
 ms.assetid: 9987C3F6-5F04-403B-BBB4-ECB024EA6CC8
@@ -10,14 +10,14 @@ ms.date: 06/21/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f62e5522b5b9a10a3806a70fe949561d77ce0d4e
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: f8d81e037d63a7144263ce4b3520647e6829bd57
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84574357"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557261"
 ---
-# <a name="file-handling-in-xamarinforms"></a>Обработка файлов вXamarin.Forms
+# <a name="file-handling-in-no-locxamarinforms"></a>Обработка файлов в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithfiles)
 
@@ -25,7 +25,7 @@ _Обработка файлов в Xamarin.Forms среде может быть
 
 ## <a name="overview"></a>Обзор
 
-Xamarin.Formsкод выполняется на нескольких платформах, каждый из которых имеет собственную файловую систему. Ранее это означало, что чтение и запись файлов проще всего выполнялись с помощью собственных API файлов на каждой платформе. Кроме того, внедренные ресурсы позволяют проще распространять файлы данных с приложением. Однако с помощью .NET Standard 2.0 можно совместно использовать код доступа к файлам в библиотеках .NET Standard.
+Xamarin.Forms код выполняется на нескольких платформах, каждый из которых имеет собственную файловую систему. Ранее это означало, что чтение и запись файлов проще всего выполнялись с помощью собственных API файлов на каждой платформе. Кроме того, внедренные ресурсы позволяют проще распространять файлы данных с приложением. Однако с помощью .NET Standard 2.0 можно совместно использовать код доступа к файлам в библиотеках .NET Standard.
 
 Дополнительные сведения об обработке файлов изображений см. на странице [Работа с изображениями](~/xamarin-forms/user-interface/images.md).
 
@@ -87,7 +87,7 @@ using (var reader = new System.IO.StreamReader (stream))
 }
 ```
 
-После этого можно воспользоваться переменной `text`, чтобы отобразить текст или использовать его в коде иным образом. Этот снимок экрана [примера приложения](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithfiles) отображает текст, отрисованный в элементе управления `Label`.
+После этого можно воспользоваться переменной `text`, чтобы отобразить текст или использовать его в коде иным образом. Этот снимок экрана [примера приложения](/samples/xamarin/xamarin-forms-samples/workingwithfiles) отображает текст, отрисованный в элементе управления `Label`.
 
  [![Текстовый файл, внедренный в библиотеку .NET Standard](files-images/pcltext-sml.png "Внедренный текстовый файл в библиотеке .NET Standard, отображаемой в приложении")](files-images/pcltext.png#lightbox "Внедренный текстовый файл в библиотеке .NET Standard, отображаемой в приложении")
 
@@ -159,6 +159,6 @@ foreach (var res in assembly.GetManifestResourceNames()) {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [FilesSample](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithfiles)
+- [FilesSample](/samples/xamarin/xamarin-forms-samples/workingwithfiles)
 - [Примеры для Xamarin.Forms](https://github.com/xamarin/xamarin-forms-samples)
 - [Работа с файловой системой в Xamarin.iOS](~/ios/app-fundamentals/file-system.md)

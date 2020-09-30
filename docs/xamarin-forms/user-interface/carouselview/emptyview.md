@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsКарауселвиев Емптивиев
+title: Xamarin.Forms Карауселвиев Емптивиев
 description: В Карауселвиев можно указать пустое представление, которое предоставляет пользователю отзыв о том, что данные недоступны для отображения. Пустое представление может быть строкой, представлением или несколькими представлениями.
 ms.prod: xamarin
 ms.assetid: C6DEE1A9-63FC-4889-BC77-F401D5D7DF32
@@ -10,23 +10,23 @@ ms.date: 10/03/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0dd1f4a15d9a8c1315cd3f0f71b641c82bebe004
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: 5a6ca7926196a993dda301bac1b87041a975da71
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918658"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557391"
 ---
-# <a name="no-locxamarinforms-carouselview-emptyview"></a>Xamarin.FormsКарауселвиев Емптивиев
+# <a name="no-locxamarinforms-carouselview-emptyview"></a>Xamarin.Forms Карауселвиев Емптивиев
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)определяет следующие свойства, которые можно использовать для предоставления отзывов пользователей, когда нет данных для показа:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) определяет следующие свойства, которые можно использовать для предоставления отзывов пользователей, когда нет данных для показа:
 
-- [`EmptyView`](xref:Xamarin.Forms.ItemsView.EmptyView)Тип `object` , строка, привязка или представление, которые будут отображаться, если [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
-- [`EmptyViewTemplate`](xref:Xamarin.Forms.ItemsView.EmptyViewTemplate)Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) — шаблон, используемый для форматирования указанного объекта `EmptyView` . Значение по умолчанию — `null`.
+- [`EmptyView`](xref:Xamarin.Forms.ItemsView.EmptyView)Тип `object` , строка, привязка или представление, которые будут отображаться, если [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойство имеет значение `null` , или если коллекция, указанная `ItemsSource` свойством, имеет значение `null` или пустое значение. Значение по умолчанию — `null`.
+- [`EmptyViewTemplate`](xref:Xamarin.Forms.ItemsView.EmptyViewTemplate)Тип [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) — шаблон, используемый для форматирования указанного объекта `EmptyView` . Значение по умолчанию — `null`.
 
 Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что свойства могут быть целевыми объектами привязок данных.
 
@@ -321,7 +321,7 @@ public class SearchTermDataTemplateSelector : DataTemplateSelector
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Карауселвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
-- [Xamarin.FormsШаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
+- [Карауселвиев (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+- [Xamarin.Forms Шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md)
 - [Словари ресурсов Xamarin.Forms](~/xamarin-forms/xaml/resource-dictionaries.md)
 - [Создание Xamarin.Forms DataTemplateSelector](~/xamarin-forms/app-fundamentals/templates/data-templates/selector.md)

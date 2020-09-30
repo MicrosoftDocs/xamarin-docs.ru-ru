@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsTimePicker
+title: Xamarin.Forms TimePicker
 description: TimePicker — это Xamarin.Forms представление, позволяющее пользователю выбрать время. В этой статье объясняется, как использовать TimePicker в Xamarin.Forms приложении.
 ms.prod: xamarin
 ms.assetid: 2E99FB23-B82D-4EB4-AFB3-5002E736E7B2
@@ -10,14 +10,14 @@ ms.date: 10/16/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7c2e6b97f2207ebb6543fb6a720cd430331f989b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9b913d9d310b4b2f1b560d06256f18e7532e1834
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138233"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556533"
 ---
-# <a name="xamarinforms-timepicker"></a>Xamarin.FormsTimePicker
+# <a name="no-locxamarinforms-timepicker"></a>Xamarin.Forms TimePicker
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-timepicker)
 
@@ -25,12 +25,12 @@ _Xamarin.FormsПредставление, позволяющее пользов�
 
 Xamarin.Forms [`TimePicker`](xref:Xamarin.Forms.TimePicker) Компонент вызывает элемент управления средства выбора времени платформы и позволяет пользователю выбрать время. `TimePicker` определяет следующие свойства:
 
-- [`Time`](xref:Xamarin.Forms.TimePicker.Time)типа `TimeSpan` — выбранное время, которое по умолчанию равно `TimeSpan` 0. `TimeSpan`Тип обозначает длительность времени, начиная с полуночи.
-- [`Format`](xref:Xamarin.Forms.TimePicker.Format)типа `string` — [Стандартная](/dotnet/standard/base-types/standard-date-and-time-format-strings/) или [Пользовательская](/dotnet/standard/base-types/custom-date-and-time-format-strings/) строка форматирования .NET, которая по умолчанию имеет значение t, то есть короткий шаблон времени.
-- [`TextColor`](xref:Xamarin.Forms.TimePicker.TextColor)типа [`Color`](xref:Xamarin.Forms.Color) — цвет, используемый для показа выбранного времени, по умолчанию — [`Color.Default`](xref:Xamarin.Forms.Color.Default) .
-- [`FontAttributes`](xref:Xamarin.Forms.TimePicker.FontAttributes)типа [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) , значение по умолчанию — [`FontAtributes.None`](xref:Xamarin.Forms.FontAttributes.None) .
-- [`FontFamily`](xref:Xamarin.Forms.TimePicker.FontFamily)типа `string` , значение по умолчанию — `null` .
-- [`FontSize`](xref:Xamarin.Forms.TimePicker.FontSize)типа `double` , значение по умолчанию — 1,0.
+- [`Time`](xref:Xamarin.Forms.TimePicker.Time) типа `TimeSpan` — выбранное время, которое по умолчанию равно `TimeSpan` 0. `TimeSpan`Тип обозначает длительность времени, начиная с полуночи.
+- [`Format`](xref:Xamarin.Forms.TimePicker.Format) типа `string` — [Стандартная](/dotnet/standard/base-types/standard-date-and-time-format-strings/) или [Пользовательская](/dotnet/standard/base-types/custom-date-and-time-format-strings/) строка форматирования .NET, которая по умолчанию имеет значение t, то есть короткий шаблон времени.
+- [`TextColor`](xref:Xamarin.Forms.TimePicker.TextColor) типа [`Color`](xref:Xamarin.Forms.Color) — цвет, используемый для показа выбранного времени, по умолчанию — [`Color.Default`](xref:Xamarin.Forms.Color.Default) .
+- [`FontAttributes`](xref:Xamarin.Forms.TimePicker.FontAttributes) типа [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) , значение по умолчанию — [`FontAtributes.None`](xref:Xamarin.Forms.FontAttributes.None) .
+- [`FontFamily`](xref:Xamarin.Forms.TimePicker.FontFamily) типа `string` , значение по умолчанию — `null` .
+- [`FontSize`](xref:Xamarin.Forms.TimePicker.FontSize) типа `double` , значение по умолчанию — 1,0.
 - `CharacterSpacing` с типом `double` представляет собой интервал между знаками текста `TimePicker`.
 
 Все эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, то есть они могут быть стилями, а свойства могут быть целями привязок данных. [`Time`](xref:Xamarin.Forms.TimePicker.Time)Свойство имеет режим привязки по умолчанию [`BindingMode.TwoWay`](xref:Xamarin.Forms.BindingMode.TwoWay) , то есть может быть целевым объектом привязки данных в приложении, использующем архитектуру [Model-View-ViewModel (MVVM)](~/xamarin-forms/enterprise-application-patterns/mvvm.md) .
@@ -83,7 +83,7 @@ TimePicker timePicker = new TimePicker
 
 ## <a name="timepicker-in-an-application"></a>TimePicker в приложении
 
-Образец [**сеттимер**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-timepicker) включает [`TimePicker`](xref:Xamarin.Forms.TimePicker) представления, [`Entry`](xref:Xamarin.Forms.Entry) и [`Switch`](xref:Xamarin.Forms.Switch) на странице. `TimePicker`Можно использовать для выбора времени, а при возникновении этого времени отображается диалоговое окно предупреждения, напоминающее пользователю текст в `Entry` , при условии, что параметр `Switch` включен. Вот файл XAML:
+Образец [**сеттимер**](/samples/xamarin/xamarin-forms-samples/userinterface-timepicker) включает [`TimePicker`](xref:Xamarin.Forms.TimePicker) представления, [`Entry`](xref:Xamarin.Forms.Entry) и [`Switch`](xref:Xamarin.Forms.Switch) на странице. `TimePicker`Можно использовать для выбора времени, а при возникновении этого времени отображается диалоговое окно предупреждения, напоминающее пользователю текст в `Entry` , при условии, что параметр `Switch` включен. Вот файл XAML:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -183,5 +183,5 @@ public partial class MainPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример Сеттимер](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-timepicker)
+- [Пример Сеттимер](/samples/xamarin/xamarin-forms-samples/userinterface-timepicker)
 - [API TimePicker](xref:Xamarin.Forms.TimePicker)

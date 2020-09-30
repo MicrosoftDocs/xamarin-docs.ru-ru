@@ -10,12 +10,12 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5c3909271580d0568d7c603de0d434ff5b3f3bc4
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9a39433a0bad518055542adb190f4f441675ddfb
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138675"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556377"
 ---
 # <a name="segmented-display-of-skiasharp-bitmaps"></a>Сегментированное отображение точечных рисунков SkiaSharp
 
@@ -27,7 +27,7 @@ ms.locfileid: "84138675"
 
 Эти методы обычно используются для отрисовки точечных рисунков, образующих часть объектов пользовательского интерфейса, таких как кнопки. При проектировании кнопки обычно требуется, чтобы размер кнопки основывался на содержимом кнопки, но, вероятно, требуется, чтобы граница кнопки была одинаковой ширины независимо от содержимого кнопки. Это идеальное приложение `DrawBitmapNinePatch` .
 
-`DrawBitmapNinePatch`является особым случаем, `DrawBitmapLattice` но это более простой из двух методов для использования и понимания.
+`DrawBitmapNinePatch` является особым случаем, `DrawBitmapLattice` но это более простой из двух методов для использования и понимания.
 
 ## <a name="the-nine-patch-display"></a>Дисплей с девятью исправлениями 
 
@@ -47,7 +47,7 @@ canvas.DrawBitmapNinePatch(bitmap, centerRectangle, destRectangle, paint);
 
 Центральный прямоугольник задается относительно точечного рисунка. Это `SKRectI` значение (целочисленная версия `SKRect` ), а все координаты и размеры находятся в пикселях. Прямоугольник назначения задается относительно поверхности отображения. Аргумент `paint` не обязателен.
 
-На **девяти страницах с отображением исправлений** в образце [**скиашарпформсдемос**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) сначала используется статический конструктор для создания открытого статического свойства типа `SKBitmap` :
+На **девяти страницах с отображением исправлений** в образце [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) сначала используется статический конструктор для создания открытого статического свойства типа `SKBitmap` :
 
 ```csharp
 public partial class NinePatchDisplayPage : ContentPage
@@ -131,7 +131,7 @@ SKRectI centerRect = new SKRectI(150, 150, 350, 350);
 - [`XDivs`](xref:SkiaSharp.SKLattice.XDivs), массив целых чисел
 - [`YDivs`](xref:SkiaSharp.SKLattice.YDivs), массив целых чисел
 - [`Flags`](xref:SkiaSharp.SKLattice.Flags), массив `SKLatticeFlags` типа перечисления
-- [`Bounds`](xref:SkiaSharp.SKLattice.Bounds)типа `Nullable<SKRectI>` , чтобы указать необязательный исходный прямоугольник в пределах точечного рисунка
+- [`Bounds`](xref:SkiaSharp.SKLattice.Bounds) типа `Nullable<SKRectI>` , чтобы указать необязательный исходный прямоугольник в пределах точечного рисунка
 
 `XDivs`Массив делит ширину растрового изображения на вертикальные полосы. Первая полоса расширяется с точки 0 слева направо на `XDivs[0]` . Эта полоса отображается по ширине в пикселях. Вторая полоса расширяется с `XDivs[0]` на `XDivs[1]` и растягивается. Третья полоса расширяется с `XDivs[1]` на `XDivs[2]` и подготавливается к просмотру по ширине в пикселях. Последняя полоса расширяется от последнего элемента массива до правого края растрового изображения. Если массив содержит четное число элементов, то он отображается в его ширине в пикселе. В противном случае он растягивается. Общее число вертикальных полос больше числа элементов в массиве.
 
@@ -141,8 +141,8 @@ SKRectI centerRect = new SKRectI(150, 150, 350, 350);
 
 В соответствии с документацией по СКИА, `Flags` массив содержит по одному элементу для каждого прямоугольника, сначала к верхней строке прямоугольников, второй строке и т. д. `Flags`Массив имеет тип [`SKLatticeFlags`](xref:SkiaSharp.SKLatticeFlags) , перечисление со следующими элементами:
 
-- `Default`со значением 0
-- `Transparent`со значением 1
+- `Default` со значением 0
+- `Transparent` со значением 1
 
 Однако эти флаги не работают так, как ожидается, и их лучше игнорировать. Но не присвойте `Flags` свойству значение `null` . Задайте для него массив значений, `SKLatticeFlags` достаточно больших для охватывающего общее количество прямоугольников.
 
@@ -230,5 +230,5 @@ public class LatticeDisplayPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

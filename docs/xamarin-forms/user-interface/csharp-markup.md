@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsРазметка C#
+title: Xamarin.Forms Разметка C#
 description: Разметка C# — это набор вспомогательных методов и классов Fluent, позволяющий упростить процесс создания декларативных Xamarin.Forms пользовательских интерфейсов в C#.
 ms.prod: xamarin
 ms.assetid: D41B9DCD-5C34-4C2F-B177-FC082AB2E9E0
@@ -10,18 +10,18 @@ ms.date: 05/15/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3e8c95e84dd525c274403290712260ba86abd677
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: a07931bfa53a5e4d77c2755b08745b8dd962b695
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918569"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557157"
 ---
-# <a name="no-locxamarinforms-c-markup"></a>Xamarin.FormsРазметка C#
+# <a name="no-locxamarinforms-c-markup"></a>Xamarin.Forms Разметка C#
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-csharpmarkupdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-csharpmarkupdemos/)
 
 Разметка C# — это набор вспомогательных методов и классов Fluent, позволяющий упростить процесс создания декларативных Xamarin.Forms пользовательских интерфейсов в C#. API-интерфейс Fluent, предоставляемый разметкой C#, доступен в `Xamarin.Forms.Markup` пространстве имен.
 
@@ -231,11 +231,11 @@ new Label { Text = "Tap Me" }
 
 Так как распознаватель жестов — это `BindableObject` , вы можете использовать `Bind` `BindCommand` методы расширения и при его инициализации. Можно также инициализировать пользовательские типы распознавателя жестов с помощью `Gesture<TGestureElement, TGestureRecognizer>` метода расширения.
 
-## <a name="layout"></a>Layout
+## <a name="layout"></a>Макет
 
 Разметка C# включает ряд методов расширения макета, которые поддерживают представления позиционирования в макетах и содержимое в представлениях:
 
-| Тип | Методы расширения |
+| Type | Методы расширения |
 |---|---|
 | `FlexLayout` | `AlignSelf`, `Basis`, `Grow`, `Menu`, `Order`, `Shrink` |
 | `Grid` | `Row`, `Column`, `RowSpan`, `ColumnSpan` |
@@ -253,7 +253,7 @@ new Label { Text = "Tap Me" }
 
 Для разметки C#, предназначенной для поддержки направления потока слева направо и справа налево, рекомендуется использовать методы расширения, приведенные в следующей таблице, а не одно из указанных выше пространств имен.
 
-| Тип | Методы расширения |
+| Type | Методы расширения |
 |---|---|
 | `Label` | `TextStart`, `TextEnd` |
 | `LayoutOptions` | `Start`, `End` <br/> `StartExpand`, `EndExpand` |
@@ -553,7 +553,7 @@ new Label { }
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Кшарпформаркупдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-csharpmarkupdemos/)
+- [Кшарпформаркупдемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-csharpmarkupdemos/)
 - [Возможности платформы Android](~/xamarin-forms/platform/android/index.md)
 - [возможности платформы iOS](~/xamarin-forms/platform/ios/index.md)
 - [Возможности платформы Windows](~/xamarin-forms/platform/windows/index.md)

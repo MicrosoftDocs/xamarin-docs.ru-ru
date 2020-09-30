@@ -10,12 +10,12 @@ ms.date: 05/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4eea7d500876793357113453493fa2fe2ede6cc4
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 32de64c0fa6b0ec0a0b03c8075710e1cbc92dd49
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84140024"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557417"
 ---
 # <a name="three-ways-to-draw-an-arc"></a>Три способа нарисовать дугу
 
@@ -29,7 +29,7 @@ _Узнайте, как использовать SkiaSharp для определ
 
 Несмотря на простоту определения, не существует способа определить функцию Arc-Drawing, удовлетворяющую всем потребностям, и поэтому нет согласия между графическими системами лучших способов рисования дуги. По этой причине класс не `SKPath` ограничивает себя только одним подходом.
 
-`SKPath`Определяет [`AddArc`](xref:SkiaSharp.SKPath.AddArc*) метод, пять различных [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo*) методов и два относительных [`RArcTo`](xref:SkiaSharp.SKPath.RArcTo*) метода. Эти методы делятся на три категории, представляющие три очень разные подходы к указанию дуги. Используемый способ зависит от информации, доступной для определения дуги, а также от того, как эта дуга помещается вместе с другими графическими изображениями.
+`SKPath` Определяет [`AddArc`](xref:SkiaSharp.SKPath.AddArc*) метод, пять различных [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo*) методов и два относительных [`RArcTo`](xref:SkiaSharp.SKPath.RArcTo*) метода. Эти методы делятся на три категории, представляющие три очень разные подходы к указанию дуги. Используемый способ зависит от информации, доступной для определения дуги, а также от того, как эта дуга помещается вместе с другими графическими изображениями.
 
 ## <a name="the-angle-arc"></a>Дуга угла
 
@@ -65,7 +65,7 @@ public void ArcTo (SKRect oval, Single startAngle, Single sweepAngle, Boolean fo
 
 Однако не `AddArc` определяет *not* закрытый профиль. Если вы `LineTo` `AddArc` выберете после, линия будет выведена с конца дуги на точку в `LineTo` методе, и то же самое справедливо для `ArcTo` .
 
-`AddArc`автоматически запускает новый профиль и функционально эквивалентен вызову `ArcTo` с последним аргументом `true` :
+`AddArc` автоматически запускает новый профиль и функционально эквивалентен вызову `ArcTo` с последним аргументом `true` :
 
 ```csharp
 path.ArcTo (oval, startAngle, sweepAngle, true);
@@ -221,7 +221,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Второй тип дуги, поддерживаемой, `SKPath` — это *дуга*, так что она вызывается, так как дуга является окружностью окружности, которая является тангенсом двух соединенных линий.
 
-Дуга касательно добавляется в путь с вызовом [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(SkiaSharp.SKPoint,SkiaSharp.SKPoint,System.Single)) метода с двумя `SKPoint` параметрами или [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(System.Single,System.Single,System.Single,System.Single,System.Single)) перегрузкой с отдельными `Single` параметрами для точек:
+Дуга касательно добавляется в путь с вызовом  [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(SkiaSharp.SKPoint,SkiaSharp.SKPoint,System.Single)) метода с двумя `SKPoint` параметрами или [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(System.Single,System.Single,System.Single,System.Single,System.Single)) перегрузкой с отдельными `Single` параметрами для точек:
 
 ```csharp
 public void ArcTo (SKPoint point1, SKPoint point2, Single radius)
@@ -498,7 +498,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="the-elliptical-arc"></a>Эллиптическая дуга
 
-Эллиптическая дуга добавляется в путь с вызовом [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(SkiaSharp.SKPoint,System.Single,SkiaSharp.SKPathArcSize,SkiaSharp.SKPathDirection,SkiaSharp.SKPoint)) метода, имеющего два `SKPoint` параметра, или [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(System.Single,System.Single,System.Single,SkiaSharp.SKPathArcSize,SkiaSharp.SKPathDirection,System.Single,System.Single)) перегрузки с отдельными координатами X и Y:
+Эллиптическая дуга добавляется в путь с вызовом [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(SkiaSharp.SKPoint,System.Single,SkiaSharp.SKPathArcSize,SkiaSharp.SKPathDirection,SkiaSharp.SKPoint)) метода, имеющего два `SKPoint` параметра, или  [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(System.Single,System.Single,System.Single,SkiaSharp.SKPathArcSize,SkiaSharp.SKPathDirection,System.Single,System.Single)) перегрузки с отдельными координатами X и Y:
 
 ```csharp
 public void ArcTo (SKPoint r, Single xAxisRotate, SKPathArcSize largeArc, SKPathDirection sweep, SKPoint xy)
@@ -671,5 +671,5 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

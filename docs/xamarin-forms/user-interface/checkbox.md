@@ -1,34 +1,23 @@
 ---
-title: Xamarin.FormsУстановка
-description: Xamarin.FormsФлажок — это тип кнопки, который может быть установлен или пустым. Если флажок установлен, он считается включенным. Если флажок пуст, он считается отключенным.
-ms.prod: xamarin
-ms.assetid: B8B9268B-BCB8-42B9-B08C-C0F22C137238
-ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 06/11/2019
-no-loc:
-- Xamarin.Forms
-- Xamarin.Essentials
-ms.openlocfilehash: 8399dde2e4e2c9fb53b38fca2923eb0e3bfc6ce3
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136478"
+Title: « Xamarin.Forms CheckBox» Description: Xamarin.Forms CheckBox — это тип кнопки, который может быть установлен или пустым. Если флажок установлен, он считается включенным. Если флажок пуст, он считается отключенным.
+MS. произв. Xamarin MS. AssetID: B8B9268B-BCB8-42B9-B08C-C0F22C137238 MS. Technology: Xamarin-Forms author: давидбритч MS. author: дабритч МС. Дата: 06/11/2019 No-Loc:
+- "Xamarin.Forms"
+- "Xamarin.Essentials"
+
 ---
-# <a name="xamarinforms-checkbox"></a>Xamarin.FormsУстановка
+
+# <a name="no-locxamarinforms-checkbox"></a>Xamarin.Forms Установка
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-checkboxdemos/)
 
 Xamarin.Forms `CheckBox` — Это тип кнопки, которая может быть либо установлена, либо пустой. Если флажок установлен, он считается включенным. Если флажок пуст, он считается отключенным.
 
-`CheckBox`Определяет `bool` свойство с именем `IsChecked` , которое указывает, `CheckBox` установлен ли флажок. Это свойство также поддерживается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом, то есть его можно присвоить стилю и быть целевым объектом привязок данных.
+`CheckBox` Определяет `bool` свойство с именем `IsChecked` , которое указывает, `CheckBox` установлен ли флажок. Это свойство также поддерживается [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектом, то есть его можно присвоить стилю и быть целевым объектом привязок данных.
 
 > [!NOTE]
 > `IsChecked`Свойство BIND имеет режим привязки по умолчанию [`BindingMode.TwoWay`](xref:Xamarin.Forms.BindingMode.TwoWay) .
 
-`CheckBox`Определяет `CheckedChanged` событие, которое возникает при `IsChecked` изменении свойства с помощью манипуляции пользователя или когда приложение задает `IsChecked` свойство. `CheckedChangedEventArgs`Объект, сопровождающий `CheckedChanged` событие, имеет одно свойство с именем `Value` типа `bool` . При срабатывании события в качестве значения `Value` свойства задается новое значение `IsChecked` Свойства.
+`CheckBox` Определяет `CheckedChanged` событие, которое возникает при `IsChecked` изменении свойства с помощью манипуляции пользователя или когда приложение задает `IsChecked` свойство. `CheckedChangedEventArgs`Объект, сопровождающий `CheckedChanged` событие, имеет одно свойство с именем `Value` типа `bool` . При срабатывании события в качестве значения `Value` свойства задается новое значение `IsChecked` Свойства.
 
 ## <a name="create-a-checkbox"></a>Создание флажка
 
@@ -133,7 +122,7 @@ checkBox.CheckedChanged += (sender, e) =>
 
 ## <a name="checkbox-visual-states"></a>Визуальные состояния флажка
 
-`CheckBox`имеет объект `IsChecked` [`VisualState`](xref:Xamarin.Forms.VisualState) , который можно использовать для инициации визуального изменения в `CheckBox` при проверке.
+`CheckBox` имеет объект `IsChecked` [`VisualState`](xref:Xamarin.Forms.VisualState) , который можно использовать для инициации визуального изменения в `CheckBox` при проверке.
 
 В следующем примере XAML показано, как определить визуальное состояние для `IsChecked` состояния:
 
@@ -165,6 +154,6 @@ checkBox.CheckedChanged += (sender, e) =>
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демонстрации CheckBox (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-checkboxdemos/)
+- [Демонстрации CheckBox (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-checkboxdemos/)
 - [Триггеры Xamarin.Forms](~/xamarin-forms/app-fundamentals/triggers.md)
 - [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md)

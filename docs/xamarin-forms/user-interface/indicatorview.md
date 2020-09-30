@@ -1,5 +1,5 @@
 ---
-title: Xamarin.Formsиндикаторвиев
+title: Xamarin.Forms индикаторвиев
 description: Индикаторвиев — это элемент управления, отображающий индикаторы, представляющие количество элементов и текущую позиции в Карауселвиев.
 ms.prod: xamarin
 ms.assetId: BBCC223B-4B02-46B7-80BB-EE0E86A67CE2
@@ -10,14 +10,14 @@ ms.date: 02/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0e6d223fd10e7b792f2d145a7cdd417865a095bb
-ms.sourcegitcommit: d86b7a18cf8b1ef28cd0fe1d311f1c58a65101a8
+ms.openlocfilehash: 95c4e247ca0be6e5f0f39a7bc95c41a73b3f590e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85101433"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556793"
 ---
-# <a name="xamarinforms-indicatorview"></a>Xamarin.Formsиндикаторвиев
+# <a name="no-locxamarinforms-indicatorview"></a>Xamarin.Forms индикаторвиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-indicatorviewdemos/)
 
@@ -28,18 +28,18 @@ ms.locfileid: "85101433"
 `IndicatorView` определяет следующие свойства:
 
 - `Count`, типа `int` , количество индикаторов.
-- `HideSingle`Тип `bool` — указывает, должен ли индикатор быть скрытым, если существует только один. Значение по умолчанию — `true`.
+- `HideSingle`Тип `bool` — указывает, должен ли индикатор быть скрытым, если существует только один. Значение по умолчанию — `true`.
 - `IndicatorColor`Тип `Color` — Цвет индикаторов.
 - `IndicatorSize`Тип — `double` Размер индикаторов. Значение по умолчанию — 6,0.
 - `IndicatorLayout`Тип `Layout<View>` определяет класс макета, используемый для визуализации `IndicatorView` . Это свойство задается параметром Xamarin.Forms и обычно не требуется задавать разработчиками.
 - `IndicatorTemplate`Тип `DataTemplate` — шаблон, определяющий внешний вид каждого индикатора.
 - `IndicatorsShape`Тип `IndicatorShape` — Форма каждого индикатора.
 - `ItemsSource`Тип `IEnumerable` — коллекция, для которой будут отображаться индикаторы. Это свойство будет автоматически установлено при `CarouselView.IndicatorView` установке свойства.
-- `MaximumVisible`, типа `int` , максимальное количество видимых индикаторов. Значение по умолчанию — `int.MaxValue`.
+- `MaximumVisible`, типа `int` , максимальное количество видимых индикаторов. Значение по умолчанию — `int.MaxValue`.
 - `Position`Тип `int` — текущий выбранный индекс индикатора. Это свойство использует `TwoWay` привязку. Это свойство будет автоматически установлено при `CarouselView.IndicatorView` установке свойства.
 - `SelectedIndicatorColor`Тип `Color` — Цвет индикатора, представляющий текущий элемент в `CarouselView` .
 
-Эти свойства поддерживаются [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) объектами, что означает, что они могут быть целевыми объектами привязки данных и стилями.
+Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
 ## <a name="create-an-indicatorview"></a>Создание Индикаторвиев
 
@@ -69,8 +69,8 @@ ms.locfileid: "85101433"
 
 `IndicatorView`Класс имеет `IndicatorsShape` свойство, которое определяет форму индикаторов. Этому свойству может быть присвоено одно из `IndicatorShape` членов перечисления:
 
-- `Circle`Указывает, что фигуры индикаторов будут циклическими. Это значение по умолчанию для свойства `IndicatorView.IndicatorsShape`.
-- `Square`Указывает, что фигуры индикаторов будут квадратными.
+- `Circle` Указывает, что фигуры индикаторов будут циклическими. Это значение по умолчанию для свойства `IndicatorView.IndicatorsShape`.
+- `Square` Указывает, что фигуры индикаторов будут квадратными.
 
 В следующем примере показана `IndicatorView` Настройка для использования квадратных индикаторов:
 
@@ -138,5 +138,5 @@ ms.locfileid: "85101433"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Индикаторвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-indicatorviewdemos/)
+- [Индикаторвиев (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-indicatorviewdemos/)
 - [Расширение разметки FontImage](~/xamarin-forms/xaml/markup-extensions/consuming.md#fontimage-markup-extension)

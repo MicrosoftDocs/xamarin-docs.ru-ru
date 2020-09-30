@@ -10,12 +10,12 @@ ms.date: 02/21/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 594e436c9db7c123fea4f9aa262c9d27af765b07
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 53930f6b6b83ea855db9538f19e88482a4d1a82f
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136010"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557456"
 ---
 # <a name="listview-row-animations-on-ios"></a>Анимация строк ListView в iOS
 
@@ -47,10 +47,10 @@ listView.On<iOS>().SetRowAnimationsEnabled(false);
 `ListView.On<iOS>`Метод указывает, что эта платформа будет запускаться только в iOS. `ListView.SetRowAnimationsEnabled`Метод в [`Xamarin.Forms.PlatformConfiguration.iOSSpecific`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространстве имен используется для управления тем, отключается ли анимация строк при [`ListView`](xref:Xamarin.Forms.ListView) обновлении коллекции Items. Кроме того, `ListView.GetRowAnimationsEnabled` метод можно использовать для возврата к отключению анимации строк в `ListView` .
 
 > [!NOTE]
-> [`ListView`](xref:Xamarin.Forms.ListView)анимация по строкам включена по умолчанию. Таким образом, анимация возникает при вставке новой строки в `ListView` .
+> [`ListView`](xref:Xamarin.Forms.ListView) анимация по строкам включена по умолчанию. Таким образом, анимация возникает при вставке новой строки в `ListView` .
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)

@@ -11,12 +11,12 @@ ms.date: 10/26/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b67594e2675c774512f3bf64f2e91ef10dbff444
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: bdc5b715d4502590b56b41b864835a47076ad518
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84134216"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556455"
 ---
 # <a name="xamarin-live-reload-preview"></a>Динамическая перезагрузка Xamarin (Предварительная версия)
 
@@ -33,7 +33,7 @@ ms.locfileid: "84134216"
 * [Visual Studio 2017 версии 15,7 или более поздней](https://visualstudio.microsoft.com/vs/) с рабочей нагрузкой **для разработки мобильных приложений на .NET** .
 * [ Xamarin.Forms 3.0.0 или выше](https://www.nuget.org/packages/Xamarin.Forms/).
 
-## <a name="getting-started"></a>Приступая к работе
+## <a name="getting-started"></a>Начало работы
 ### <a name="1-install-xamarin-live-reload-from-the-visual-studio-marketplace"></a>1. Установите динамическую перезагрузку Xamarin из Visual Studio Marketplace
 
 Динамическая перезагрузка Xamarin распространяется с помощью Visual Studio Marketplace. Чтобы установить расширение, перейдите на [страницу "перезагрузка Xamarin Live" на](https://marketplace.visualstudio.com/items?itemName=Xamarin.XamarinLiveReload) веб-сайте Visual Studio Marketplace и нажмите кнопку " **скачать**".
@@ -84,7 +84,7 @@ public partial class App : Application
 
 Динамическая перезагрузка работает с изменениями в любом файле XAML. Для вступления в силу изменений в C# или добавления или удаления пакетов NuGet требуется новая сборка и развертывание.
 
-## <a name="frequently-asked-questions"></a>Вопросы и ответы 
+## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы 
 ### <a name="is-xamarin-live-reload-available-on-visual-studio-for-mac"></a>Доступна ли перезагрузка Xamarin Live на Visual Studio для Mac? 
 
 Нет, предварительная версия окончательной перезагрузки Xamarin доступна только для Visual Studio 2017.
@@ -127,7 +127,7 @@ public partial class App : Application
 * Элементы, содержащие AutomationId, могут вызвать сбой перезагрузки.
 * Изменение XAML во время отладки UWP может привести к сбою среды выполнения. Обходное решение. Используйте команду **запустить без отладки (CTRL + F5)** , а не **начать отладку (F5)**.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 ### <a name="error-codes"></a>Коды ошибок
 
@@ -145,7 +145,7 @@ public partial class App : Application
 
 * *Исключение при загрузке сборок: System. IO. FileNotFoundException: не удалось загрузить сборку Xamarin. Live. Reload, Version = 0.3.27.0, Culture = Neutral, PublicKeyToken = ".*
 
-  Проект размещения следует использовать `PackageReference` вместо`packages.config`
+  Проект размещения следует использовать `PackageReference` вместо `packages.config`
 
 ### <a name="app-doesnt-connect"></a>Приложение не подключается
 
@@ -186,7 +186,7 @@ public partial class App : Application
 
 1. Создание новой виртуальной машины Ubuntu Server на портале Azure
 2. Добавьте новое правило для входящего порта для 1883 (порт MQTT по умолчанию) на вкладке "сеть".
-3. Открытие [Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview) (режим bash)
+3. Открытие [Cloud Shell](/azure/cloud-shell/overview) (режим bash)
 4. Введите `ssh [USERNAME]@[PUBLIC_IP]` , используя имя пользователя, выбранное в 1), и общедоступный IP-адрес, показанный на странице обзора виртуальной машины.
 5. Выполните команду `sudo apt-get install mosquitto` , указав пароль, выбранный в 1).
 

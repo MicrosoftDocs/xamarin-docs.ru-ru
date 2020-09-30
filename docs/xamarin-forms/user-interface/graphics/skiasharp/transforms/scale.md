@@ -10,12 +10,12 @@ ms.date: 03/23/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5cb43bfe572b98a6530dfeb8d923ac71b5b633a7
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 5ea4fa88925925ba7c81f47c30875c3419603ab8
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86932058"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555467"
 ---
 # <a name="the-scale-transform"></a>Преобразование масштаба
 
@@ -105,7 +105,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-Может возникнуть вопрос: как коэффициенты масштабирования влияют на значение, возвращаемое `MeasureText` методом `SKPaint` ? Ответ: не все. `Scale`является методом `SKCanvas` . Он не влияет на все действия с `SKPaint` объектом, пока вы не используете этот объект для визуализации чего-либо на холсте.
+Может возникнуть вопрос: как коэффициенты масштабирования влияют на значение, возвращаемое `MeasureText` методом `SKPaint` ? Ответ: не все. `Scale` является методом `SKCanvas` . Он не влияет на все действия с `SKPaint` объектом, пока вы не используете этот объект для визуализации чего-либо на холсте.
 
 Как видите, все, что отображается после `Scale` вызова, увеличивается пропорционально:
 
@@ -348,5 +348,5 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

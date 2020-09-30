@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsМакет Карауселвиев
+title: Xamarin.Forms Макет Карауселвиев
 description: По умолчанию Карауселвиев отображает элементы по горизонтали. Однако также возможна вертикальная ориентация.
 ms.prod: xamarin
 ms.assetid: fede0382-c972-4023-a4ea-fe5cadec91a6
@@ -10,20 +10,20 @@ ms.date: 01/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b45b1375ab7676e96976951e10b903d25c88bc14
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: b9edd2cc8c0376a3d20c17bfb6e3fbdef16e4aa1
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918522"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556702"
 ---
-# <a name="no-locxamarinforms-carouselview-layout"></a>Xamarin.FormsМакет Карауселвиев
+# <a name="no-locxamarinforms-carouselview-layout"></a>Xamarin.Forms Макет Карауселвиев
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)определяет следующие свойства, управляющие макетом:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) определяет следующие свойства, управляющие макетом:
 
 - [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout)Тип `LinearItemsLayout` — указывает макет для использования.
 - `PeekAreaInsets`, типа [`Thickness`](xref:Xamarin.Forms.Thickness) , указывает, сколько элементов можно сделать смежными, частично видимыми для.
@@ -40,13 +40,13 @@ ms.locfileid: "87918522"
 
 [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation)Перечисление определяет следующие члены:
 
-- `Vertical`Указывает, что [`CarouselView`](xref:Xamarin.Forms.CarouselView) будет расширяться по вертикали по мере добавления элементов.
-- `Horizontal`Указывает, что [`CarouselView`](xref:Xamarin.Forms.CarouselView) будет разворачиваться горизонтально по мере добавления элементов.
+- `Vertical` Указывает, что [`CarouselView`](xref:Xamarin.Forms.CarouselView) будет расширяться по вертикали по мере добавления элементов.
+- `Horizontal` Указывает, что [`CarouselView`](xref:Xamarin.Forms.CarouselView) будет разворачиваться горизонтально по мере добавления элементов.
 
 `LinearItemsLayout`Класс наследует от [`ItemsLayout`](xref:Xamarin.Forms.ItemsLayout) класса и определяет `ItemSpacing` свойство типа `double` , представляющее пустое пространство вокруг каждого элемента. Значение этого свойства по умолчанию равно 0, а его значение всегда должно быть больше или равно 0. `LinearItemsLayout`Класс также определяет статические `Vertical` `Horizontal` члены и. Эти члены можно использовать для создания вертикальных или горизонтальных списков соответственно. Кроме того, `LinearItemsLayout` можно создать объект, указав в [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) качестве аргумента член перечисления.
 
 > [!NOTE]
-> [`CarouselView`](xref:Xamarin.Forms.CarouselView)использует собственные обработчики макетов для выполнения макета.
+> [`CarouselView`](xref:Xamarin.Forms.CarouselView) использует собственные обработчики макетов для выполнения макета.
 
 ## <a name="horizontal-layout"></a>Горизонтальное расположение
 
@@ -117,7 +117,7 @@ CarouselView carouselView = new CarouselView
 
 ## <a name="vertical-layout"></a>Вертикальное расположение
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)может отображать элементы по вертикали, присвоив [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) свойству `LinearItemsLayout` значение Object, указав в `Vertical` [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) качестве `Orientation` значения свойства элемент перечисления:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) может отображать элементы по вертикали, присвоив [`ItemsLayout`](xref:Xamarin.Forms.CarouselView.ItemsLayout) свойству `LinearItemsLayout` значение Object, указав в `Vertical` [`ItemsLayoutOrientation`](xref:Xamarin.Forms.ItemsLayoutOrientation) качестве `Orientation` значения свойства элемент перечисления:
 
 ```xaml
 <CarouselView ItemsSource="{Binding Monkeys}">
@@ -253,7 +253,7 @@ void OnImageTapped(object sender, EventArgs e)
 
 ## <a name="right-to-left-layout"></a>Макет с письмом справа налево
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)может Разметка содержимого в направлении справа налево путем присвоения [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) свойству значения [`RightToLeft`](xref:Xamarin.Forms.FlowDirection.RightToLeft) . Однако в `FlowDirection` идеале это свойство должно быть установлено на странице или в корневом макете, что приводит к тому, что все элементы на странице или в корневом макете реагируют на направление потока:
+[`CarouselView`](xref:Xamarin.Forms.CarouselView) может Разметка содержимого в направлении справа налево путем присвоения [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) свойству значения [`RightToLeft`](xref:Xamarin.Forms.FlowDirection.RightToLeft) . Однако в `FlowDirection` идеале это свойство должно быть установлено на странице или в корневом макете, что приводит к тому, что все элементы на странице или в корневом макете реагируют на направление потока:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -273,6 +273,6 @@ void OnImageTapped(object sender, EventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Карауселвиев (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+- [Карауселвиев (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 - [Локализация справа налево](~/xamarin-forms/app-fundamentals/localization/right-to-left.md)
-- [Xamarin.FormsПрокрутка Карауселвиев](scrolling.md)
+- [Xamarin.Forms Прокрутка Карауселвиев](scrolling.md)

@@ -11,12 +11,12 @@ ms.custom: contperfq1
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 77b1837fb58d5743fd887b9f636f7f7311b807d3
-ms.sourcegitcommit: 9bd6b1b20d126b3f837c4cf859b25895c242e54e
+ms.openlocfilehash: d350ceee778c9f9ba9f25555a89a925558c6d38b
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88648178"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556845"
 ---
 # <a name="no-locxamarinforms-relativelayout"></a>Xamarin.Forms RelativeLayout
 
@@ -341,7 +341,7 @@ public class RelativePositioningAndSizingDemoPageCS : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демонстрации RelativeLayout (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-relativelayoutdemos)
+- [Демонстрации RelativeLayout (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-relativelayoutdemos)
 - [Xamarin.Forms Вложенные свойства](~/xamarin-forms/xaml/attached-properties.md)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md)
 - [Выбор Xamarin.Forms макета](choose-layout.md)

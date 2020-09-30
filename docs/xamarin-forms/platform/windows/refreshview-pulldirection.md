@@ -10,12 +10,12 @@ ms.date: 09/20/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 46a1b4d00b9eea276b9a3b3d5bffbdac3d31e0ef
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: b5c1310e300373fe75cbcd1464220acf989516ba
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136582"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555688"
 ---
 # <a name="refreshview-pull-direction-on-windows"></a>Направление движения RefreshView в Windows
 
@@ -47,10 +47,10 @@ refreshView.On<Windows>().SetRefreshPullDirection(RefreshPullDirection.LeftToRig
 
 `RefreshView.On<Windows>`Метод указывает, что данная платформа будет запускаться только на универсальная платформа Windows. `RefreshView.SetRefreshPullDirection`Метод в [`Xamarin.Forms.PlatformConfiguration.WindowsSpecific`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific) пространстве имен используется для задания направления извлечения объекта `RefreshView` , при этом `RefreshPullDirection` перечисление предоставляет четыре возможных значения:
 
-- `LeftToRight`Указывает, что операция извлечения слева направо инициирует обновление.
-- `TopToBottom`Указывает, что операция извлечения сверху вниз инициирует обновление, а является направлением по умолчанию для `RefreshView` .
-- `RightToLeft`Указывает, что операция извлечения справа налево инициирует обновление.
-- `BottomToTop`Указывает, что операция извлечения снизу вверх инициирует обновление.
+- `LeftToRight` Указывает, что операция извлечения слева направо инициирует обновление.
+- `TopToBottom` Указывает, что операция извлечения сверху вниз инициирует обновление, а является направлением по умолчанию для `RefreshView` .
+- `RightToLeft` Указывает, что операция извлечения справа налево инициирует обновление.
+- `BottomToTop` Указывает, что операция извлечения снизу вверх инициирует обновление.
 
 Кроме того, `GetRefreshPullDirection` метод можно использовать для возврата текущего `RefreshPullDirection` объекта `RefreshView` .
 
@@ -63,6 +63,6 @@ refreshView.On<Windows>().SetRefreshPullDirection(RefreshPullDirection.LeftToRig
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ВиндовсспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific)

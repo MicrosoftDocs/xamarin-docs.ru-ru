@@ -1,5 +1,5 @@
 ---
-title: Xamarin.FormsStackLayout
+title: Xamarin.Forms StackLayout
 description: 'StackLayout организует дочерние представления в одномерном стеке: по горизонтали или по вертикали.'
 ms.prod: xamarin
 ms.assetid: 6A91EA70-268C-462C-AAAF-F8DA011403F8
@@ -10,18 +10,18 @@ ms.date: 05/11/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f624674cc6d4ba1bdc34a42fb52fb63ff8a7135a
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 0c8e7c0e3edb581e13944ce48e2241f035791574
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137973"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556858"
 ---
-# <a name="xamarinforms-stacklayout"></a>Xamarin.FormsStackLayout
+# <a name="no-locxamarinforms-stacklayout"></a>Xamarin.Forms StackLayout
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stacklayoutdemos)
 
-[![Xamarin.FormsStackLayout](stacklayout-images/layouts.png "[! Операцион. NO-LOC (Xamarin. Forms)] StackLayout")](stacklayout-images/layouts-large.png#lightbox "[! Операцион. NO-LOC (Xamarin. Forms)] StackLayout")
+[![::: No-Loc (Xamarin. Forms)::: StackLayout](stacklayout-images/layouts.png "::: No-Loc (Xamarin. Forms)::: StackLayout")](stacklayout-images/layouts-large.png#lightbox "::: No-Loc (Xamarin. Forms)::: StackLayout")
 
 Объект [`StackLayout`](xref:Xamarin.Forms.StackLayout) упорядочивает дочерние представления в одномерном стеке: по горизонтали или по вертикали. По умолчанию объект `StackLayout` ориентирован по вертикали. Кроме того, `StackLayout` можно использовать в качестве родительского макета, содержащего другие дочерние макеты.
 
@@ -471,7 +471,7 @@ public class CombinedStackLayoutPageCS : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демонстрации StackLayout (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stacklayoutdemos)
-- [Параметры макета вXamarin.Forms](layout-options.md)
+- [Демонстрации StackLayout (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-stacklayoutdemos)
+- [Параметры макета в Xamarin.Forms](layout-options.md)
 - [Выбор Xamarin.Forms макета](choose-layout.md)
 - [Улучшение Xamarin.Forms производительности приложения](~/xamarin-forms/deploy-test/performance.md)

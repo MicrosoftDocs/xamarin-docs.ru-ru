@@ -10,12 +10,12 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d613c4f73c0a377a599b0137ce2f2b557c04ad6a
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 45634695050dc6f74a9b1617a2180481e3788d11
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84572342"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557326"
 ---
 # <a name="cropping-skiasharp-bitmaps"></a>Обрезка точечных рисунков SkiaSharp
 
@@ -448,7 +448,7 @@ class PhotoCropperCanvasView : SKCanvasView
 
 ## <a name="hosting-the-photo-cropper-canvas-view"></a>Размещение представления холста кадрирования фотографий
 
-С этими двумя классами, обрабатывающими логику обрезки, страница **кадрирования фотографий** в приложении **[скиашарпформсдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** имеет очень мало усилий. XAML-файл создает экземпляр `Grid` для размещения `PhotoCropperCanvasView` кнопки and Done ( **Готово** ):
+С этими двумя классами, обрабатывающими логику обрезки, страница **кадрирования фотографий** в приложении **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** имеет очень мало усилий. XAML-файл создает экземпляр `Grid` для размещения `PhotoCropperCanvasView` кнопки and Done ( **Готово** ):
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -535,9 +535,9 @@ photoCropper = new PhotoCropperCanvasView(bitmap, 1.78f);
 
 ## <a name="dividing-a-bitmap-into-tiles"></a>Деление растрового изображения на плитки
 
-Версия известной Xamarin.Forms головоломки 14-15, появилось в главе 22 книги [_Создание мобильных приложений с помощью Xamarin. Forms_](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md) и может быть загружена как [**ксамагонксуззле**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter22/XamagonXuzzle). Однако головоломка становится более интересной (и зачастую более сложной), если она основана на изображении из собственной фотобиблиотеки.
+Версия известной Xamarin.Forms головоломки 14-15, появилось в главе 22 книги [_Создание мобильных приложений с помощью Xamarin.Forms _](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md) и может быть загружена как [**ксамагонксуззле**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter22/XamagonXuzzle). Однако головоломка становится более интересной (и зачастую более сложной), если она основана на изображении из собственной фотобиблиотеки.
 
-Эта версия головоломки 14-15 является частью приложения **[скиашарпформсдемос](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** и состоит из ряда страниц с названием " **головоломка в фотографии**".
+Эта версия головоломки 14-15 является частью приложения **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** и состоит из ряда страниц с названием " **головоломка в фотографии**".
 
 Файл **PhotoPuzzlePage1. XAML** состоит из `Button` :
 
@@ -650,7 +650,7 @@ public partial class PhotoPuzzlePage2 : ContentPage
 
 Когда пользователь нажимает кнопку **Готово** , `Clicked` обработчик переходит к `PhotoPuzzlePage3` , передавая окончательное повернутое растровое изображение в конструктор страницы.
 
-`PhotoPuzzlePage3`позволяет обрезать фотографию. Программе требуется квадратный точечный рисунок для деления на сетку 4 на 4 элемента мозаики.
+`PhotoPuzzlePage3` позволяет обрезать фотографию. Программе требуется квадратный точечный рисунок для деления на сетку 4 на 4 элемента мозаики.
 
 Файл **PhotoPuzzlePage3. XAML** содержит `Label` , `Grid` для размещения `PhotoCropperCanvasView` и еще одной кнопки **done** :
 
@@ -737,9 +737,9 @@ public partial class PhotoPuzzlePage3 : ContentPage
 }
 ```
 
-Обработчик кнопки **done** получает ширину и высоту обрезанного растрового изображения (эти два значения должны быть одинаковыми), а затем делит их на 15 отдельных точечных рисунков, каждый из которых равен 1/4 ширине и высоте оригинала. (Последняя из возможных 16 растровых изображений не создается.) `DrawBitmap`Метод с исходным и конечным прямоугольником позволяет создать точечный рисунок на основе подмножества большего точечного рисунка.
+Обработчик кнопки **done** получает ширину и высоту обрезанного растрового изображения (эти два значения должны быть одинаковыми), а затем делит их на 15 отдельных точечных рисунков, каждый из которых равен 1/4 ширине и высоте оригинала. (Последняя из возможных 16 растровых изображений не создается.) `DrawBitmap` Метод с исходным и конечным прямоугольником позволяет создать точечный рисунок на основе подмножества большего точечного рисунка.
 
-## <a name="converting-to-xamarinforms-bitmaps"></a>Преобразование в Xamarin.Forms точечные рисунки
+## <a name="converting-to-no-locxamarinforms-bitmaps"></a>Преобразование в Xamarin.Forms точечные рисунки
 
 В `OnDoneButtonClicked` методе массив, созданный для 15 битовых карт, имеет тип [`ImageSource`](xref:Xamarin.Forms.ImageSource) :
 
@@ -747,7 +747,7 @@ public partial class PhotoPuzzlePage3 : ContentPage
 ImageSource[] imgSources = new ImageSource[15];
 ```
 
-`ImageSource`Xamarin.Formsбазовый тип, инкапсулирующий точечный рисунок. К счастью, SkiaSharp позволяет преобразовывать точечные рисунки SkiaSharp в Xamarin.Forms точечные рисунки. Сборка **SkiaSharp. views. Forms** определяет [`SKBitmapImageSource`](xref:SkiaSharp.Views.Forms.SKBitmapImageSource) класс, производный от, `ImageSource` но может быть создан на основе `SKBitmap` объекта SkiaSharp. `SKBitmapImageSource`даже определяет преобразования между `SKBitmapImageSource` и `SKBitmap` , и именно то, как `SKBitmap` объекты хранятся в виде Xamarin.Forms точечных рисунков:
+`ImageSource`Xamarin.Formsбазовый тип, инкапсулирующий точечный рисунок. К счастью, SkiaSharp позволяет преобразовывать точечные рисунки SkiaSharp в Xamarin.Forms точечные рисунки. Сборка **SkiaSharp. views. Forms** определяет [`SKBitmapImageSource`](xref:SkiaSharp.Views.Forms.SKBitmapImageSource) класс, производный от, `ImageSource` но может быть создан на основе `SKBitmap` объекта SkiaSharp. `SKBitmapImageSource` даже определяет преобразования между `SKBitmapImageSource` и `SKBitmap` , и именно то, как `SKBitmap` объекты хранятся в виде Xamarin.Forms точечных рисунков:
 
 ```csharp
 imgSources[4 * row + col] = (SKBitmapImageSource)bitmap;
@@ -765,5 +765,5 @@ imgSources[4 * row + col] = (SKBitmapImageSource)bitmap;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API-интерфейсы SkiaSharp](https://docs.microsoft.com/dotnet/api/skiasharp)
-- [Скиашарпформсдемос (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+- [API-интерфейсы SkiaSharp](/dotnet/api/skiasharp)
+- [Скиашарпформсдемос (пример)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)

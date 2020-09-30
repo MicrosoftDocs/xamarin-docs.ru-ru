@@ -1,6 +1,6 @@
 ---
-title: Цвета вXamarin.Forms
-description: Xamarin.Formsпредоставляет гибкий класс цветов кросс-платформенного цвета. В этой статье объясняются функциональные возможности, предоставляемые классом Color, и способы их использования.
+title: Цвета в Xamarin.Forms
+description: Xamarin.Forms предоставляет гибкий класс цветов кросс-платформенного цвета. В этой статье объясняются функциональные возможности, предоставляемые классом Color, и способы их использования.
 ms.prod: xamarin
 ms.assetid: 22288ABF-57BE-47A9-ACC3-AC604D787C46
 ms.technology: xamarin-forms
@@ -10,31 +10,31 @@ ms.date: 04/02/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a02fe7451702367d85d322b756df4a547a009454
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 6b4e44cb667335ecca7a0c7e5ec77d6e14ed975c
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137349"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557235"
 ---
-# <a name="colors-in-xamarinforms"></a>Цвета вXamarin.Forms
+# <a name="colors-in-no-locxamarinforms"></a>Цвета в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithcolors)
 
-_Xamarin. Forms предоставляет гибкий класс цветового кросс-платформенного цвета._
+_Xamarin.Forms предоставляет гибкий класс цветов кросс-платформенного цвета._
 
 В этой статье описываются различные способы [`Color`](xref:Xamarin.Forms.Color) использования класса в Xamarin.Forms .
 
 [`Color`](xref:Xamarin.Forms.Color)Класс предоставляет ряд методов для создания `Color` экземпляра:
 
 - **Именованные цвета** — коллекция общих именованных цветов, включая `Red` , `Green` и `Blue` .
-- `FromHex`— Строковое значение, аналогичное синтаксису, используемому в HTML, например "00FF00". При необходимости в качестве первой пары символов ("CC00FF00") можно указать альфа-канал.
-- `FromHsla`— Значения тона, насыщенности и яркости `double` с необязательным альфа-значением (0,0 – 1,0).
-- `FromHsv`— Оттенок, насыщенность, значение `int` или `double` значения.
-- `FromHsva`— Оттенок, насыщенность, значение `int` или `double` значения.
-- `FromRgb`— Красный, зеленый и синий `int` значения (0-255).
-- `FromRgba`— Красный, зеленый, синий и альфа- `int` значения (0-255).
-- `FromUint`-задать одиночное `double` значение, представляющее **ARGB**.
+- `FromHex` — Строковое значение, аналогичное синтаксису, используемому в HTML, например "00FF00". При необходимости в качестве первой пары символов ("CC00FF00") можно указать альфа-канал.
+- `FromHsla` — Значения тона, насыщенности и яркости `double` с необязательным альфа-значением (0,0 – 1,0).
+- `FromHsv` — Оттенок, насыщенность, значение `int` или `double` значения.
+- `FromHsva` — Оттенок, насыщенность, значение `int` или `double` значения.
+- `FromRgb` — Красный, зеленый и синий `int` значения (0-255).
+- `FromRgba` — Красный, зеленый, синий и альфа-  `int` значения (0-255).
+- `FromUint` -задать одиночное `double` значение, представляющее **ARGB**.
 
 Вот несколько примеров цветов, назначенных для `BackgroundColor` некоторых меток с использованием различных вариантов разрешенного синтаксиса:
 
@@ -72,14 +72,14 @@ var accent = new Label      { Text = "Accent",     BackgroundColor = Color.Accen
 
 ## <a name="additional-methods"></a>Дополнительные методы
 
-[`Color`](xref:Xamarin.Forms.Color)к экземплярам относятся следующие дополнительные методы:
+[`Color`](xref:Xamarin.Forms.Color) к экземплярам относятся следующие дополнительные методы:
 
-- `AddLuminosity`— Возвращает объект `Color` , изменяя яркость на заданную разницу.
-- `MultiplyAlpha`— Возвращает объект, `Color` изменяя альфа-канал, умножая его на заданное альфа-значение.
-- `ToHex`— Возвращает шестнадцатеричное `string` представление `Color` .
-- `WithHue`— Возвращает `Color` , заменяя оттенок на заданное значение.
-- `WithLuminosity`— Возвращает `Color` , заменяя яркость на предоставляемое значение.
-- `WithSaturation`— Возвращает `Color` , заменяя насыщенность заданным значением.
+- `AddLuminosity` — Возвращает объект `Color` , изменяя яркость на заданную разницу.
+- `MultiplyAlpha` — Возвращает объект, `Color` изменяя альфа-канал, умножая его на заданное альфа-значение.
+- `ToHex` — Возвращает шестнадцатеричное `string` представление `Color` .
+- `WithHue` — Возвращает `Color` , заменяя оттенок на заданное значение.
+- `WithLuminosity` — Возвращает `Color` , заменяя яркость на предоставляемое значение.
+- `WithSaturation` — Возвращает `Color` , заменяя насыщенность заданным значением.
 
 ## <a name="implicit-conversions"></a>Неявные преобразования
 
@@ -125,5 +125,5 @@ ActivityIndicator activityIndicator = new ActivityIndicator
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [колорссампле](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithcolors)
-- [Средство выбора с возможностью привязки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-bindablepicker)
+- [колорссампле](/samples/xamarin/xamarin-forms-samples/workingwithcolors)
+- [Средство выбора с возможностью привязки (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-bindablepicker)
