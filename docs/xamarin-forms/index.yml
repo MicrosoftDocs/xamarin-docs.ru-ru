@@ -12,12 +12,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: 05429940463d2ab309fe1ce0bc012f9290bfc73b
-  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
+  ms.openlocfilehash: 3d877571a6c5eca75f9c3e8b2368e97af14d44bd
+  ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/28/2020
-  ms.locfileid: "84138701"
+  ms.lasthandoff: 09/30/2020
+  ms.locfileid: "91558132"
 highlightedContent:
   items:
   - title: Что такое Xamarin.Forms?
@@ -25,13 +25,13 @@ highlightedContent:
     url: ~/get-started/what-is-xamarin-forms.md
   - title: Найти пример
     itemType: download
-    url: https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms
+    url: /samples/browse/?products=xamarin&term=Xamarin.Forms
   - title: Новые возможности
     itemType: whats-new
     url: ~/whats-new/index.yml
   - title: Совершенствуйтесь в разработке мобильных приложений
     itemType: learn
-    url: https://docs.microsoft.com/learn/browse/?roles=developer&products=xamarin
+    url: /learn/browse/?products=xamarin&roles=developer
 productDirectory:
   title: Начало работы
   summary: Узнайте, как создавать кросс-платформенные приложения для Android и iOS, используя C# и .NET в среде Visual Studio на Windows и macOS.
@@ -163,7 +163,7 @@ conceptualContent:
       url: ~/essentials/troubleshooting.md
       itemType: overview
     - text: Пространство имен Xamarin.Essentials
-      url: https://docs.microsoft.com/dotnet/api/xamarin.essentials?view=xamarin-essentials
+      url: /dotnet/api/xamarin.essentials?view=xamarin-essentials
       itemType: reference
     footerLink:
       url: ~/essentials/index.md?context=xamarin/xamarin-forms
@@ -232,4 +232,4 @@ additionalContent:
     - title: Графика SkiaSharp в Xamarin.Forms
       summary: Эта электронная книга представляет собой руководство по созданию двухмерной векторной графики, растровых изображений и текста в приложениях Xamarin.Forms.
       url: ~/xamarin-forms/user-interface/graphics/skiasharp/index.md
-  footer: '[Блоги](https://devblogs.microsoft.com/xamarin/) - [Twitter](https://twitter.com/xamarinhq) - [Stack Overflow](https://stackoverflow.com/questions/tagged/xamarin) - [Сообщество разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) - [Заметки о выпуске](https://docs.microsoft.com/xamarin/xamarin-forms/release-notes/)'
+  footer: '[Блоги](https://devblogs.microsoft.com/xamarin/) - [Twitter](https://twitter.com/xamarinhq) - [Stack Overflow](https://stackoverflow.com/questions/tagged/xamarin) - [Сообщество разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) - [Заметки о выпуске](/xamarin/xamarin-forms/release-notes/)'

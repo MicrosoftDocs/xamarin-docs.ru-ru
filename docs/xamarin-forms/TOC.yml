@@ -919,7 +919,7 @@ items:
       - name: Веб-средство проверки подлинности
         href: ~/essentials/web-authenticator.md?context=xamarin/xamarin-forms
       - name: Заметки о выпуске Xamarin.Essentials
-        href: 'https://docs.microsoft.com/xamarin/essentials/release-notes/'
+        href: /xamarin/essentials/release-notes/
       - name: Устранение неполадок
         href: ~/essentials/troubleshooting.md?context=xamarin/xamarin-forms
   - name: Данные и облачные службы Azure
@@ -1033,7 +1033,7 @@ items:
           - name: 'Почему проект Android Xamarin.Forms.Maps завершается ошибкой COMPILETODALVIK: непредвиденная высокоуровневая ошибка?'
             href: troubleshooting/questions/maps-compiletodalvik-error.md
   - name: заметки о выпуске;
-    href: 'https://docs.microsoft.com/xamarin/xamarin-forms/release-notes/'
+    href: /xamarin/xamarin-forms/release-notes/
   - name: Примеры
     href: samples/index.md
   - name: Создание мобильных приложений с помощью Xamarin.Forms (книга)

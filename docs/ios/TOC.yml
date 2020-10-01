@@ -599,7 +599,7 @@
         - name: Веб-средство проверки подлинности
           href: ~/essentials/web-authenticator.md?context=xamarin/ios
         - name: Заметки о выпуске Xamarin.Essentials
-          href: 'https://docs.microsoft.com/xamarin/essentials/release-notes/'
+          href: /xamarin/essentials/release-notes/
         - name: Устранение неполадок
           href: ~/essentials/troubleshooting.md?context=xamarin/ios
     - name: Данные и облачные службы
@@ -1143,6 +1143,6 @@
             - name: Инфраструктуры
               href: tvos/internals/frameworks.md
     - name: Заметки о выпуске
-      href: 'https://docs.microsoft.com/xamarin/ios/release-notes/'
+      href: /xamarin/ios/release-notes/
     - name: Примеры
       href: samples/index.md
