@@ -9,14 +9,14 @@ ms.custom: video
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 061bc1cfe785ad080092ba21340f7d38bc499ed9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: f4bb252448abe3c2987def143634d15b5cae194c
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84801950"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433507"
 ---
-# <a name="xamarinessentials-secure-storage"></a>Xamarin.Essentials. Защищенное хранилище
+# <a name="no-locxamarinessentials-secure-storage"></a>Xamarin.Essentials. Защищенное хранилище
 
 Класс **SecureStorage** помогает обеспечить безопасное хранение пар "ключ-значение".
 
@@ -154,7 +154,7 @@ SecureStorage.RemoveAll();
 
 # <a name="uwp"></a>[UWP](#tab/uwp)
 
-Для безопасного шифрования значений на устройствах универсальной платформы Windows применяется [DataProtectionProvider](https://docs.microsoft.com/uwp/api/windows.security.cryptography.dataprotection.dataprotectionprovider).
+Для безопасного шифрования значений на устройствах универсальной платформы Windows применяется [DataProtectionProvider](/uwp/api/windows.security.cryptography.dataprotection.dataprotectionprovider).
 
 Зашифрованные значения хранятся в `ApplicationData.Current.LocalSettings` внутри контейнера с именем **[идентификатор_приложения].xamarinessentials**.
 

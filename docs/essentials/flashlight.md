@@ -9,14 +9,14 @@ ms.date: 11/04/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7a8a90674b395c90f698a4a0854dc0dc3fc5fe15
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a7341137d7f7ddf1d0db47672af8810380805478
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84802352"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434364"
 ---
-# <a name="xamarinessentials-flashlight"></a>Xamarin.Essentials. Фонарик
+# <a name="no-locxamarinessentials-flashlight"></a>Xamarin.Essentials. Фонарик
 
 Класс **Flashlight** позволяет включить или выключить вспышку камеры устройства и превратить ее в фонарик.
 
@@ -120,7 +120,7 @@ catch (Exception ex)
 
 ### <a name="uwp"></a>[UWP](#tab/uwp)
 
-[Lamp](https://docs.microsoft.com/uwp/api/windows.devices.lights.lamp) используется для обнаружения первого фонарика на обратной стороне устройства, который можно включить и выключить.
+[Lamp](/uwp/api/windows.devices.lights.lamp) используется для обнаружения первого фонарика на обратной стороне устройства, который можно включить и выключить.
 
 -----
 

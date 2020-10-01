@@ -6,12 +6,12 @@ ms.assetid: 63c50190-7e54-4140-a30d-1a0e577c47d7
 author: davidortinau
 ms.author: daortin
 ms.date: 04/26/2019
-ms.openlocfilehash: 84c5a72f887f38c5efcee09cfc19986093db226e
-ms.sourcegitcommit: d86b7a18cf8b1ef28cd0fe1d311f1c58a65101a8
+ms.openlocfilehash: 826fb2bbfb202507bf4ffe062004fb0137e19176
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85101340"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91456669"
 ---
 # <a name="remoted-ios-simulator-for-windows"></a>Удаленный симулятор iOS для Windows
 
@@ -80,4 +80,4 @@ ms.locfileid: "85101340"
 - **Mac** — `~/Library/Logs/Xamarin/Simulator.Server`
 - **Windows** — `%LOCALAPPDATA%\Xamarin\Logs\Xamarin.Simulator`
 
-Если вы [сообщаете проблеме в Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio), прикрепление этих журналов может быть полезным (есть параметры для сохранения конфиденциальности загрузок).
+Если вы [сообщаете проблеме в Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio), прикрепление этих журналов может быть полезным (есть параметры для сохранения конфиденциальности загрузок).

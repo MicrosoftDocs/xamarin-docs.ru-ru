@@ -10,12 +10,12 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d4582a8c27f1fe63a60f48830113f3a5514c56f9
-ms.sourcegitcommit: 69bd0fdc698c9b0c0d73217776d7084f32ae88ae
+ms.openlocfilehash: 3c77e81dccea9bc6953d719d52056c772c16d823
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832259"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562669"
 ---
 # <a name="no-locxamarinforms-twopaneview-layout"></a>Xamarin.Forms Макет TwoPaneView
 
@@ -81,4 +81,4 @@ ms.locfileid: "90832259"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [DualScreen (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
+- [DualScreen (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)

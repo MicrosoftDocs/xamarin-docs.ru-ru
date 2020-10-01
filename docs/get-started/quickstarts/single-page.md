@@ -12,14 +12,14 @@ ms.date: 04/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cc09f93a8d86b96324435bf63cd3d19b51242ed2
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 96b3e6bd055c0bc89ae7bcbb66c8b3f48b21ad17
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86931811"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436236"
 ---
-# <a name="create-a-single-page-xamarinforms-application"></a>Создание одностраничного приложения Xamarin.Forms
+# <a name="create-a-single-page-no-locxamarinforms-application"></a>Создание одностраничного приложения Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-singlepage/)
 
@@ -506,5 +506,5 @@ ms.locfileid: "86931811"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Заметки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-singlepage/)
+- [Заметки (пример)](/samples/xamarin/xamarin-forms-samples/getstarted-notes-singlepage/)
 - [Подробное изучение кратких руководств по Xamarin.Forms](deepdive.md)

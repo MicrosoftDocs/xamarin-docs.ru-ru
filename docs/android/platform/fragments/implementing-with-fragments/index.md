@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/26/2018
-ms.openlocfilehash: b601fc37cc75dcd43c3688de8d302f0a47a06b35
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: ab680020f62548eed4d1da0e4dbb13434a6d8ce7
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73027419"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453952"
 ---
 # <a name="implementing-fragments---walkthrough"></a>Реализация фрагментов кода — пошаговое руководство
 
@@ -33,7 +33,7 @@ _Фрагменты — это автономные модульные комп
 
 [![Приложение, работающее на планшете Android](./images/intro-screenshot-tablet-sml.png)](./images/intro-screenshot-tablet.png#lightbox)
 
-Этот пример приложения можно легко адаптировать к различным формфакторам и ориентациям с минимальными изменениями кода, используя фрагменты и [альтернативные макеты](/xamarin/android/app-fundamentals/resources-in-android/alternate-resources).
+Этот пример приложения можно легко адаптировать к различным формфакторам и ориентациям с минимальными изменениями кода, используя фрагменты и [альтернативные макеты](../../../app-fundamentals/resources-in-android/alternate-resources.md).
 
 Данные для приложения будут находиться в двух строковых массивах, которые прописаны в приложении C# в виде строковых массивов. Каждый массив будет служить источником данных для одного фрагмента.  Один массив будет содержать название пьесы Шекспира, а другой массив будет содержать цитату из нее. При запуске приложение будет отображать названия пьес в `ListFragment`. Когда пользователь нажимает название пьесы в `ListFragment`, приложение запустит другое действие, которое будет отображать цитату.
 
@@ -50,7 +50,7 @@ _Фрагменты — это автономные модульные комп
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [FragmentsWalkthrough (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/fragmentswalkthrough)
+- [FragmentsWalkthrough (пример)](/samples/xamarin/monodroid-samples/fragmentswalkthrough)
 - [Общие сведения о конструкторе](~/android/user-interface/android-designer/index.md)
 - [Реализация фрагментов](https://developer.android.com/guide/topics/fundamentals/fragments.html)
 - [Пакет поддержки](https://developer.android.com/sdk/compatibility-library.html)

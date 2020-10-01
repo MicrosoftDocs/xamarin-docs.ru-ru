@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/26/2018
-ms.openlocfilehash: 4d9ef88f39914f8fa5e578577ee9f6977c2bc88e
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: c0d4b0d1a31be43d16fb69eba18c07815631f496
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73020269"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453939"
 ---
 # <a name="fragments-walkthrough-ndash-landscape"></a>Фрагменты Пошаговое руководство &ndash; альбомная ориентация
 
@@ -34,9 +34,9 @@ ms.locfileid: "73020269"
 
 ## <a name="1-create-an-alternate-layout"></a>1. Создание альтернативного макета
 
-Когда основное действие создается на устройстве Android, Android выбирает макет для загрузки в зависимости от ориентации устройства. По умолчанию Android предоставит файл макета **Resources/layout/activity_main.axml**. Для устройств, загружаемых в альбомной ориентации, Android предоставит файл макета **Resources/layout-land/activity_main.axml**. Руководство по [ресурсах Android](/xamarin/android/app-fundamentals/resources-in-android) содержит более подробную информацию о способе принятия Android решений о том, какие файлы ресурсов загружать для приложения.
+Когда основное действие создается на устройстве Android, Android выбирает макет для загрузки в зависимости от ориентации устройства. По умолчанию Android предоставит файл макета **Resources/layout/activity_main.axml**. Для устройств, загружаемых в альбомной ориентации, Android предоставит файл макета **Resources/layout-land/activity_main.axml**. Руководство по [ресурсах Android](../../../app-fundamentals/resources-in-android/index.md) содержит более подробную информацию о способе принятия Android решений о том, какие файлы ресурсов загружать для приложения.
 
-Создайте альтернативный макет, предназначенный для **альбомной** ориентации, выполнив действия, описанные в руководстве [Альтернативные представления макета](/xamarin/android/user-interface/android-designer/alternative-layout-views). При этом в проект необходимо добавить новый файл ресурсов макета, **Resources/layout/activity_main.axml**:
+Создайте альтернативный макет, предназначенный для **альбомной** ориентации, выполнив действия, описанные в руководстве [Альтернативные представления макета](../../../user-interface/android-designer/alternative-layout-views.md). При этом в проект необходимо добавить новый файл ресурсов макета, **Resources/layout/activity_main.axml**:
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 

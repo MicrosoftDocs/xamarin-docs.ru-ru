@@ -6,12 +6,12 @@ ms.assetid: dd344d57-18e2-42a5-8c15-3f5be4123c72
 author: davidortinau
 ms.author: daortin
 ms.date: 10/16/2019
-ms.openlocfilehash: c4eaebc8d5f184b1108815c37e992fa97e67aa8f
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: e732e4f04aa5a219a267502bd1aca11ccb2b72f8
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "79303681"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91458216"
 ---
 # <a name="system-requirements"></a>Требования к системе
 
@@ -70,7 +70,7 @@ ms.locfileid: "79303681"
 
 ## <a name="installation-instructions"></a>Инструкции по установке
 
-Последний выпуск Xamarin для macOS можно скачать вместе с [Visual Studio для Mac](https://docs.microsoft.com/visualstudio/mac/installation). В Windows следуйте инструкциям по установке [Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio).
+Последний выпуск Xamarin для macOS можно скачать вместе с [Visual Studio для Mac](/visualstudio/mac/installation). В Windows следуйте инструкциям по установке [Visual Studio](/visualstudio/install/install-visual-studio).
 
 Полный список текущих выпусков продукта доступен на [странице новых возможностей](~/whats-new/index.yml). На этой странице также приведены ссылки на заметки о выпусках.
 

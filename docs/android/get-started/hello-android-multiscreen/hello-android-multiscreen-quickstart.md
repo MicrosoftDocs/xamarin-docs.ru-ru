@@ -9,18 +9,18 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: b8f7d882306ed5c00404ae7a050da8e02a49d609
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 91583ff57c7336f6dabf7e83301ebfde7274ddbd
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "75607910"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454784"
 ---
 # <a name="hello-android-multiscreen-quickstart"></a>Привет, Android (несколько экранов) Краткое руководство
 
 _В этом руководстве из двух частей описано, как расширить возможности приложения Phoneword для работы со вторым экраном. Также здесь рассмотрены основные стандартные блоки приложения Android и приведен анализ архитектуры Android._
 
-В пошаговых инструкциях вы добавите второй экран в приложение [Phoneword](https://docs.microsoft.com/samples/xamarin/monodroid-samples/phoneword), чтобы отслеживать журнал номеров, преобразуемых этим приложением. [Итоговое приложение](https://docs.microsoft.com/samples/xamarin/monodroid-samples/phonewordmultiscreen) будет иметь второй экран, где отображаются преобразованные номера, как показано на снимке экрана справа:
+В пошаговых инструкциях вы добавите второй экран в приложение [Phoneword](/samples/xamarin/monodroid-samples/phoneword), чтобы отслеживать журнал номеров, преобразуемых этим приложением. [Итоговое приложение](/samples/xamarin/monodroid-samples/phonewordmultiscreen) будет иметь второй экран, где отображаются преобразованные номера, как показано на снимке экрана справа:
 
 [![Снимки экрана примера приложения](hello-android-multiscreen-quickstart-images/screenshot-sml.png)](hello-android-multiscreen-quickstart-images/screenshot.png#lightbox)
 
@@ -29,7 +29,7 @@ _В этом руководстве из двух частей описано, �
 ## <a name="requirements"></a>Требования
 
 Так как эта часть начинается с того момента, на котором заканчивается часть [Привет, Android](~/android/get-started/hello-android/index.md), вам нужно сначала изучить [Привет, Android: краткое руководство](~/android/get-started/hello-android/hello-android-quickstart.md).
-Если вы хотите перейти сразу к указанному ниже пошаговому руководству, можете скачать готовую версию [Phoneword](https://docs.microsoft.com/samples/xamarin/monodroid-samples/phoneword) (из части "Привет, Android: краткое руководство") и использовать ее при работе с руководством.
+Если вы хотите перейти сразу к указанному ниже пошаговому руководству, можете скачать готовую версию [Phoneword](/samples/xamarin/monodroid-samples/phoneword) (из части "Привет, Android: краткое руководство") и использовать ее при работе с руководством.
 
 ## <a name="walkthrough"></a>Пошаговое руководство
 
@@ -322,5 +322,5 @@ translateButton.Click += (sender, e) =>
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Значки приложения Xamarin и экраны запуска (ZIP)](https://github.com/xamarin/monodroid-samples/blob/master/Phoneword/Resources/XamarinAndroidIcons.zip?raw=true)
-- [Phoneword (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/phoneword)
-- [PhonewordMultiscreen (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/phonewordmultiscreen)
+- [Phoneword (пример)](/samples/xamarin/monodroid-samples/phoneword)
+- [PhonewordMultiscreen (пример)](/samples/xamarin/monodroid-samples/phonewordmultiscreen)

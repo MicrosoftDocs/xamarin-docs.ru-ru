@@ -5,12 +5,12 @@ ms.assetid: B3342772-FB88-4B7F-BC15-8BC78EED749E
 author: JonDouglas
 ms.author: jodou
 ms.date: 09/17/2019
-ms.openlocfilehash: b26d99c131e9759da3077a767476de38712bcb18
-ms.sourcegitcommit: a9280318bf7bb69e4e5744ee739e76a9cba36b28
+ms.openlocfilehash: 1ce0233a45211ee91b9f1e30247ac18cdd5c5a66
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82047577"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454303"
 ---
 # <a name="android-10-with-xamarin"></a>Android 10 с Xamarin
 
@@ -22,7 +22,7 @@ _Начните разрабатывать приложения для Android 
 
 Эта статья содержит сведения, которые помогут вам приступить к разработке приложений Xamarin.Android для Android 10. В ней объясняется, как установить необходимые обновления, настроить пакет SDK и подготовить эмулятор или устройство для тестирования. Кроме того, здесь приводится описание новых возможностей Android 10, а также пример исходного кода, демонстрирующий использование некоторых ключевых функций Android 10.
 
-Xamarin.Android 10.0 предоставляет поддержку Android 10. Дополнительные сведения о поддержке Android 10 в Xamarin.Android см. в заметках о выпуске [здесь](https://docs.microsoft.com/xamarin/android/release-notes/10/10.0).
+Xamarin.Android 10.0 предоставляет поддержку Android 10. Дополнительные сведения о поддержке Android 10 в Xamarin.Android см. в заметках о выпуске [здесь](/xamarin/android/release-notes/10/10.0).
 
 ## <a name="requirements"></a>Требования
 
@@ -53,7 +53,7 @@ Xamarin.Android 10.0 предоставляет поддержку Android 10.
 
 Для создания приложений Android 10 с использованием Xamarin мы рекомендуем использовать Visual Studio 2019.
 
-Если вы используете Visual Studio 2019, обновите его до Visual Studio 2019 версии 16.3 или более поздней (инструкции см. [здесь](https://docs.microsoft.com/visualstudio/install/update-visual-studio)). На платформе macOS обновите Visual Studio 2019 до версии 8.3 или более поздней (инструкции см. [здесь](https://docs.microsoft.com/visualstudio/mac/update)).
+Если вы используете Visual Studio 2019, обновите его до Visual Studio 2019 версии 16.3 или более поздней (инструкции см. [здесь](/visualstudio/install/update-visual-studio)). На платформе macOS обновите Visual Studio 2019 до версии 8.3 или более поздней (инструкции см. [здесь](/visualstudio/mac/update)).
 
 ### <a name="install-the-android-sdk"></a>Установка пакета SDK для Android
 
@@ -64,15 +64,15 @@ Xamarin.Android 10.0 предоставляет поддержку Android 10.
 
     ![Выбор репозитория для Диспетчера SDK Android](~/android/platform/android-10-images/sdkrepository.png)
 
-3. Установите пакеты **SDK платформы для Android 10**, которые обозначены в списке как **Android SDK Platform 29** на вкладке **Платформы** (дополнительные сведения об использовании Диспетчера SDK Android см. [здесь](https://docs.microsoft.com/xamarin/android/get-started/installation/android-sdk)):
+3. Установите пакеты **SDK платформы для Android 10**, которые обозначены в списке как **Android SDK Platform 29** на вкладке **Платформы** (дополнительные сведения об использовании Диспетчера SDK Android см. [здесь](../get-started/installation/android-sdk.md)):
 
     ![Вкладка "Платформы" Диспетчера SDK Android](~/android/platform/android-10-images/sdkplatforms.png)
 
 ### <a name="create-a-xamarinandroid-project"></a>Создание проекта Xamarin.Android
 
-Создайте проект Xamarin.Android. Если вы не знакомы с разработкой приложений для Android с использованием Xamarin, ознакомьтесь с [этой статьей](https://docs.microsoft.com/xamarin/android/get-started/hello-android/index), чтобы узнать о создании проектов Xamarin.Android.
+Создайте проект Xamarin.Android. Если вы не знакомы с разработкой приложений для Android с использованием Xamarin, ознакомьтесь с [этой статьей](../get-started/hello-android/index.md), чтобы узнать о создании проектов Xamarin.Android.
 
-При создании проекта Android необходимо настроить параметры версии для целевой версии Android 10.0 или более поздней. Например, чтобы выбрать проект для Android 10, необходимо настроить для проекта целевой уровень API Android — **Android 10.0 (API 29)** . API 29 должна быть указана как для **версии целевой платформы**, так и для **версии целевого пакета SDK для Android**. Дополнительную информацию о настройке уровней API Android, см. в [этой статье](https://docs.microsoft.com/xamarin/android/app-fundamentals/android-api-levels).
+При создании проекта Android необходимо настроить параметры версии для целевой версии Android 10.0 или более поздней. Например, чтобы выбрать проект для Android 10, необходимо настроить для проекта целевой уровень API Android — **Android 10.0 (API 29)** . API 29 должна быть указана как для **версии целевой платформы**, так и для **версии целевого пакета SDK для Android**. Дополнительную информацию о настройке уровней API Android, см. в [этой статье](../app-fundamentals/android-api-levels.md).
 
 ![Целевая платформа Xamarin.Android](~/android/platform/android-10-images/targetframework.png)
 
@@ -80,7 +80,7 @@ Xamarin.Android 10.0 предоставляет поддержку Android 10.
 
 Если вы используете физическое устройство, например Pixel, обновление Android 10 вы можете скачать, просто перейдя к разделу Система > Обновление системы > Проверить обновления в настройках телефона. Если вы предпочитаете изменить прошивку устройства, воспользуйтесь инструкциями по [прошивке заводского образа](https://developers.google.com/android/images) или [обновлению образа по беспроводной сети](https://developers.google.com/android/ota) для вашего устройства.
 
-Если вы используете эмулятор, создайте виртуальное устройство, которое поддерживает API уровня 29, и выберите образ на базе x86. Дополнительные сведения о создании виртуальных устройств и управлении ими с помощью Диспетчера устройств Android см. в [этой статье](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/device-manager). Сведения об использовании Android Emulator для тестирования и отладки см. [здесь](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator).
+Если вы используете эмулятор, создайте виртуальное устройство, которое поддерживает API уровня 29, и выберите образ на базе x86. Дополнительные сведения о создании виртуальных устройств и управлении ими с помощью Диспетчера устройств Android см. в [этой статье](../get-started/installation/android-emulator/device-manager.md). Сведения об использовании Android Emulator для тестирования и отладки см. [здесь](../deploy-test/debugging/debug-on-emulator.md).
 
 ## <a name="new-features"></a>Новые функции
 

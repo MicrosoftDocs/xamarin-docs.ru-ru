@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/05/2017
-ms.openlocfilehash: 451e69be771a1a3214a772f0f9afc48893a6fa8d
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: acde83ee88ab17884cadd375f83efee8afb0385e
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929588"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433382"
 ---
 # <a name="c-primer-for-objective-c-developers"></a>Начальное руководство по C# для разработчиков Objective-C
 
@@ -143,7 +143,7 @@ List<MyClass> myList = new List<MyClass>{ object1, object2 };
 };
 ```
 
-Дополнительные сведения о лямбда-выражениях см. в [руководстве по программированию на C#](https://msdn.microsoft.com/library/vstudio/bb397687.aspx), предоставленном корпорацией Майкрософт.
+Дополнительные сведения о лямбда-выражениях см. в [руководстве по программированию на C#](/dotnet/csharp/language-reference/operators/lambda-expressions), предоставленном корпорацией Майкрософт.
 
 ## <a name="summary"></a>Сводка
 

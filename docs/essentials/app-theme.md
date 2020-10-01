@@ -9,14 +9,14 @@ ms.date: 01/06/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: eca052c82ae3333feb0437b8a4e24bc6b97b836d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: c68f00b77f0b9f88d014334dc56e1e58ed057986
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84802504"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436885"
 ---
-# <a name="xamarinessentials-app-theme"></a>Xamarin.Essentials. Тема приложения
+# <a name="no-locxamarinessentials-app-theme"></a>Xamarin.Essentials. Тема приложения
 
 API **RequestedTheme** входит в состав класса [`AppInfo`](app-information.md) и предоставляет сведения о том, какая тема запрашивается системой для работающего приложения.
 
@@ -70,7 +70,7 @@ AppTheme appTheme = AppInfo.RequestedTheme;
 
 Приложения UWP будут учитывать значение в приложении UWP. XAML в разделе **RequestedTheme**. Если задана конкретная тема, Xamarin.Essentials всегда будет возвращать этот параметр. Чтобы использовать динамическую тему операционной системы, удалите этот узел из приложения, а затем при его запуске приложение вернет тему, заданную пользователем в параметрах Windows (**Параметры > Персонализация > Цвета > выберите режим приложения по умолчанию**).
 
-Дополнительные сведения по запрошенной теме UWP см. [здесь](https://docs.microsoft.com/uwp/api/windows.ui.xaml.application.requestedtheme).
+Дополнительные сведения по запрошенной теме UWP см. [здесь](/uwp/api/windows.ui.xaml.application.requestedtheme).
 
 --------------
 

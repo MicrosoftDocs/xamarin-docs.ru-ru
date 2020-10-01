@@ -10,12 +10,12 @@ ms.date: 08/04/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2d929043a6b4cd5dd8b06318df0d7a347708fe6c
-ms.sourcegitcommit: c3329ab25d377907d8804cdd5e26dc84a274f39c
+ms.openlocfilehash: d3eb7edbb24c7e28ee375e1de85f6a7597ec63ac
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88130920"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561019"
 ---
 # <a name="add-drag-and-drop-gesture-recognizers"></a>Добавление распознавателя жестов перетаскивания
 
@@ -312,4 +312,4 @@ void OnDrop(object sender, DropEventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Распознаватель жестов перетаскивания Xamarin.Forms](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/)
+- [Распознаватель жестов перетаскивания Xamarin.Forms](/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/)

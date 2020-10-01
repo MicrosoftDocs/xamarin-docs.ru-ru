@@ -10,12 +10,12 @@ ms.date: 10/24/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: bb4e0c81fb3f2e58be9c44d1ec7fddcf4d72a656
-ms.sourcegitcommit: a003b036f6fb83818e2ecc9c72a641e3aeb373bd
+ms.openlocfilehash: b109459f583afd491b613b4e32e4e4530eeb5ca4
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88964601"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562695"
 ---
 # <a name="creating-an-effect"></a>Создание эффекта
 
@@ -274,5 +274,5 @@ public HomePageCS ()
 - [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)
 - [Эффект](xref:Xamarin.Forms.Effect)
 - [PlatformEffect](xref:Xamarin.Forms.PlatformEffect`2)
-- [Эффект цвета фона (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-backgroundcoloreffect)
-- [Эффект фокуса (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-focuseffect)
+- [Эффект цвета фона (пример)](/samples/xamarin/xamarin-forms-samples/effects-backgroundcoloreffect)
+- [Эффект фокуса (пример)](/samples/xamarin/xamarin-forms-samples/effects-focuseffect)

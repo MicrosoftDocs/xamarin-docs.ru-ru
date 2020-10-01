@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — основные привязки" description: "В этой статье описывается использование привязки данных Xamarin.Forms, которая связывает пару свойств между двумя объектами, по крайней мере один из которых обычно является объектом пользовательского интерфейса.'
-description: 'Эти два объекта называются целевым объектом и источником". ms.prod: xamarin ms.assetid: 96553DF7-12EA-4FB2-AE85-3D1D59382B40 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/22/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials] ms.custom: video'
+title: Основные привязки Xamarin.Forms
+description: В этой статье описывается использование привязки данных Xamarin.Forms, которая связывает пару свойств между двумя объектами, по крайней мере один из которых обычно является объектом пользовательского интерфейса. Эти два объекта называются целевым объектом и источником.
 ms.prod: xamarin
 ms.assetid: 96553DF7-12EA-4FB2-AE85-3D1D59382B40
 ms.technology: xamarin-forms
@@ -11,14 +11,14 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 ms.custom: video
-ms.openlocfilehash: c0c6bc6e1005997548952aedc09cd83a451e7caa
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 9bedde64f0eda233c289cb31296854b5cbca54a1
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84133553"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561122"
 ---
-# <a name="xamarinforms-basic-bindings"></a>Основные привязки Xamarin.Forms
+# <a name="no-locxamarinforms-basic-bindings"></a>Основные привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
@@ -334,7 +334,7 @@ Scale="{Binding Value, Source={x:Reference slider}}" />
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демоверсии привязок данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+- [Демоверсии привязок данных (пример)](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 - [Глава, посвященная привязкам данных, из книги о Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter16.md)
 
 ## <a name="related-video"></a>Связанные видео

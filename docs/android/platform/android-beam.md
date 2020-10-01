@@ -6,12 +6,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 06/06/2017
-ms.openlocfilehash: aab121ed5f811baf38eed48cf891ccdf076eaf44
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 8132be3e709e6cfe519934ce6c16ae16ac7054c6
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76723816"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454225"
 ---
 # <a name="android-beam"></a>Android Beam
 
@@ -72,10 +72,10 @@ IParcelable [] rawMsgs = intent.GetParcelableArrayExtra (NfcAdapter.ExtraNdefMes
 NdefMessage msg = (NdefMessage) rawMsgs [0];
 ```
 
-Полный пример кода, в котором используется Android Beam, показанный на снимке экрана ниже, см. в Коллекции образцов [Xamarin.Android. Демонстрационная версия Android Beam](https://docs.microsoft.com/samples/xamarin/monodroid-samples/androidbeamdemo).
+Полный пример кода, в котором используется Android Beam, показанный на снимке экрана ниже, см. в Коллекции образцов [Xamarin.Android. Демонстрационная версия Android Beam](/samples/xamarin/monodroid-samples/androidbeamdemo).
 
 [![Пример снимков экрана с демонстрационной версией Android Beam](android-beam-images/24.png)](android-beam-images/24.png#lightbox)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Xamarin.Android. Демонстрационная версия Android Beam](https://docs.microsoft.com/samples/xamarin/monodroid-samples/androidbeamdemo)
+- [Xamarin.Android. Демонстрационная версия Android Beam](/samples/xamarin/monodroid-samples/androidbeamdemo)

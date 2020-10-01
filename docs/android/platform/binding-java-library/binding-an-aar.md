@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/11/2018
-ms.openlocfilehash: 514157873412b3af31e43ba211aa636c9b53c112
-ms.sourcegitcommit: a3f13a216fab4fc20a9adf343895b9d6a54634a5
+ms.openlocfilehash: 489408400a7a900bf867a4303188cdc927020f7f
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85853112"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454472"
 ---
 # <a name="binding-an-aar"></a>Привязка AAR-файла
 
@@ -303,5 +303,5 @@ var a = new ArrayAdapter<string>(this, Resource.Layout.row_layout, ...);
 - [Создание библиотеки привязок Java (видео)](https://university.xamarin.com/classes#10090)
 - [Привязка JAR-файла](~/android/platform/binding-java-library/binding-a-jar.md)
 - [Привязка библиотеки Java](~/android/platform/binding-java-library/index.md)
-- [AarBinding (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/javaintegration-aarbinding)
+- [AarBinding (пример)](/samples/xamarin/monodroid-samples/javaintegration-aarbinding)
 - [Ошибка 44573 — один проект не может привязать несколько AAR-файлов](https://bugzilla.xamarin.com/show_bug.cgi?id=44573)

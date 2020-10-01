@@ -11,12 +11,12 @@ ms.date: 05/07/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 212674472706a36c66436a3955ab7b988f8e246b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: fe27c00752723ac34d614c510f1305b197933715
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137557"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91558171"
 ---
 # <a name="right-to-left-localization"></a>Локализация справа налево
 
@@ -77,7 +77,7 @@ this.FlowDirection = Device.FlowDirection;
 
 ![Поддерживаемые языки Info.plist](rtl-images/ios-locales.png "Поддерживаемые языки Info.plist")
 
-Подробнее об этом см. в разделе [Основы локализации в iOS](https://docs.microsoft.com/xamarin/ios/app-fundamentals/localization/#localization-basics-in-ios).
+Подробнее об этом см. в разделе [Основы локализации в iOS](../../../ios/app-fundamentals/localization/index.md#localization-basics-in-ios).
 
 После этого локализацию справа налево можно протестировать, изменив язык и регион на устройстве или симуляторе на языковой стандарт с направлением потока справа налево, который был указан в **Info.plist**.
 
@@ -197,4 +197,4 @@ Window.DecorView.LayoutDirection = LayoutDirection.Rtl;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример приложения TodoLocalizedRTL](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todolocalizedrtl)
+- [Пример приложения TodoLocalizedRTL](/samples/xamarin/xamarin-forms-samples/todolocalizedrtl)

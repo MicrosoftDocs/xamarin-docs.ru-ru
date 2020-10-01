@@ -10,12 +10,12 @@ ms.date: 12/14/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cc150ecffbf9b6b31ec2f533bcc33876100614dc
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 3bbad7f96403cb1f386b80b2923b0cdd222f9596
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936855"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555883"
 ---
 # <a name="invoking-events-from-effects"></a>Вызов событий из эффекта
 
@@ -55,7 +55,7 @@ API `Pointer` на универсальной платформе Windows обе�
 
 ## <a name="the-touch-tracking-effect-api"></a>API эффекта отслеживания сенсорного ввода
 
-В примере, [**демонстрирующем эффект отслеживания сенсорного ввода**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/), содержится класс (и перечисление) для реализации низкоуровневого отслеживания сенсорного ввода. Эти типы принадлежат пространству имен `TouchTracking` и начинаются со слова `Touch`. Проект библиотеки .NET Standard **TouchTrackingEffectDemos** включает перечисление `TouchActionType` для типа событий прикосновения:
+В примере, [**демонстрирующем эффект отслеживания сенсорного ввода**](/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/), содержится класс (и перечисление) для реализации низкоуровневого отслеживания сенсорного ввода. Эти типы принадлежат пространству имен `TouchTracking` и начинаются со слова `Touch`. Проект библиотеки .NET Standard **TouchTrackingEffectDemos** включает перечисление `TouchActionType` для типа событий прикосновения:
 
 ```csharp
 public enum TouchActionType
@@ -362,7 +362,7 @@ static Dictionary<long, TouchRecognizer> idToTouchDictionary =
 
 ## <a name="putting-the-touch-effect-to-work"></a>Применение эффекта сенсорного ввода на практике
 
-Программа [**TouchTrackingEffectDemos**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/) содержит пять страниц, на которых можно протестировать применение эффекта отслеживания сенсорного ввода при выполнении стандартных задач.
+Программа [**TouchTrackingEffectDemos**](/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/) содержит пять страниц, на которых можно протестировать применение эффекта отслеживания сенсорного ввода при выполнении стандартных задач.
 
 На странице **перетаскивания элементов BoxView** вы можете добавить элементы `BoxView` в объект `AbsoluteLayout` и затем перетаскивать их по экрану. В [файле XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/Effects/TouchTrackingEffect/TouchTrackingEffect/TouchTrackingEffect/BoxViewDraggingPage.xaml) создаются экземпляры двух представлений `Button` для добавления элементов `BoxView` в объект `AbsoluteLayout` и очистки объекта `AbsoluteLayout`.
 
@@ -811,4 +811,4 @@ void OnTouchEffectAction(object sender, TouchActionEventArgs args)
 
 - [Отслеживание мультисенсорного ввода в iOS](~/ios/app-fundamentals/touch/touch-tracking.md)
 - [Отслеживание мультисенсорного ввода в Android](~/android/app-fundamentals/touch/touch-tracking.md)
-- [Эффект отслеживания сенсорного ввода (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/)
+- [Эффект отслеживания сенсорного ввода (пример)](/samples/xamarin/xamarin-forms-samples/effects-touchtrackingeffect/)

@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/01/2018
-ms.openlocfilehash: fb1ba92be9527d490b3d34bd4c0e454b0a750837
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 52c44efa335d81004ce2e3dbf0d9160640118bea
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73019991"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453549"
 ---
 # <a name="marshmallow-features"></a>Возможности Marshmallow
 
@@ -131,7 +131,7 @@ Xamarin.Android поддерживает Android Marshmallow и включает
 Система разрешений Android значительно оптимизирована и упрощена со времени выпуска Android Lollipop. В Android Marshmallow пользователи предоставляют разрешения в каждом конкретном случае во время выполнения, а не во время установки. Для поддержки этой возможности в Android Marshmallow и более поздних версиях вы разрабатываете приложение с учетом запроса у пользователя разрешений во время выполнения (в контексте, когда разрешения требуются). Это изменение позволяет пользователям быстрее начать работу с приложением, так как упрощает процесс установки и обновления приложения. 
 
 Дополнительные сведения о реализации разрешений в среде выполнения в приложениях Xamarin.Android (в том числе примеры кода) см. в [этом блоге](https://blog.xamarin.com/requesting-runtime-permissions-in-android-marshmallow/).
-Xamarin также предоставляет пример приложения, который показывает, как работают разрешения среды выполнения в Android Marshmallow (и более поздних версиях): [RuntimePermissions](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android-m-runtimepermissions).
+Xamarin также предоставляет пример приложения, который показывает, как работают разрешения среды выполнения в Android Marshmallow (и более поздних версиях): [RuntimePermissions](/samples/xamarin/monodroid-samples/android-m-runtimepermissions).
 
 В этом примере приложения показано следующее:
 
@@ -160,7 +160,7 @@ Xamarin также предоставляет пример приложения,
 На устройствах, поддерживающих сканирование отпечатка пальца, можно использовать новый класс `FingerPrintManager` для проверки подлинности пользователя.
 Дополнительные сведения о функции проверки подлинности отпечатка пальца в Android Marshmallow см. [здесь](https://developer.android.com/preview/api-overview.html#fingerprint-authentication).
 
-Xamarin предоставляет пример приложения, демонстрирующий использование зарегистрированных отпечатков пальцев для проверки подлинности пользователя в приложении: [Диалоговое окно отпечатка](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android-m-fingerprintdialog).
+Xamarin предоставляет пример приложения, демонстрирующий использование зарегистрированных отпечатков пальцев для проверки подлинности пользователя в приложении: [Диалоговое окно отпечатка](/samples/xamarin/monodroid-samples/android-m-fingerprintdialog).
 
 Чтобы использовать этот пример приложения, сделайте следующее:
 
@@ -182,7 +182,7 @@ Xamarin предоставляет пример приложения, демон
 Благодаря новой возможности *подтверждения учетных данных* в Android Marshmallow пользователям нет необходимости запоминать и вводить пароли для конкретных приложений, потому что аутентификация происходит в зависимости от того, как долго устройство разблокировано.
 Для этого используется новый метод `SetUserAuthenticationValidityDurationSeconds` для `KeyGenerator`. Используйте метод `CreateConfirmDeviceCredentialIntent` для `KeyGuardManager`, чтобы повторно проверять подлинность пользователя в приложении. Дополнительные сведения об этой новой возможности в Android Marshmallow см. в разделе [Подтверждение учетных данных](https://developer.android.com/preview/api-overview.html#confirm-credential).
 
-Xamarin предоставляет пример приложения, демонстрирующий использование учетных данных в устройстве (например, ПИН-кода, рисунка или пароля) в приложении: [ConfirmCredential](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android-m-confirmcredential)
+Xamarin предоставляет пример приложения, демонстрирующий использование учетных данных в устройстве (например, ПИН-кода, рисунка или пароля) в приложении: [ConfirmCredential](/samples/xamarin/monodroid-samples/android-m-confirmcredential)
 
 Чтобы использовать этот пример приложения, сделайте следующее:
 
@@ -227,7 +227,7 @@ Xamarin предоставляет пример приложения, демон
 Чтобы наделить приложение Xamarin.Android преимуществами [библиотеки поддержки дизайна](https://developer.android.com/tools/support-library/features.html#design), скачайте и установите пакет NuGet [библиотеки поддержки дизайна Xamarin](https://www.nuget.org/packages/Xamarin.Android.Support.Design/).
 
 Дополнительные сведения об использовании библиотеки поддержки материального дизайна в приложениях Xamarin.Android (в том числе примеры кода) см. в записи блога [здесь](https://blog.xamarin.com/add-beautiful-material-design-with-the-android-support-design-library/).
-Xamarin предоставляет пример приложения, которое демонстрирует новую библиотеку дизайна Android в Xamarin.Android — [Cheesesquare](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-cheesesquare).
+Xamarin предоставляет пример приложения, которое демонстрирует новую библиотеку дизайна Android в Xamarin.Android — [Cheesesquare](/samples/xamarin/monodroid-samples/android50-cheesesquare).
 Этот пример демонстрирует следующие возможности библиотеки дизайна:
 
 - свертывание панели инструментов;
@@ -258,6 +258,6 @@ Xamarin предоставляет пример приложения, котор
 - [Скачивание пакета SDK для Android](https://developer.android.com/sdk/index.html#Other)
 - [Общие сведения о функциях](https://developer.android.com/preview/api-overview.html)
 - [Заметки о выпуске](https://github.com/xamarin/release-notes-archive/blob/master/release-notes/android/xamarin.android_5/xamarin.android_5.1.99/index.md)
-- [RuntimePermissions (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android-m-runtimepermissions)
-- [ConfirmCredential (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android-m-confirmcredential)
-- [Диалоговое окно отпечатка (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android-m-fingerprintdialog)
+- [RuntimePermissions (пример)](/samples/xamarin/monodroid-samples/android-m-runtimepermissions)
+- [ConfirmCredential (пример)](/samples/xamarin/monodroid-samples/android-m-confirmcredential)
+- [Диалоговое окно отпечатка (пример)](/samples/xamarin/monodroid-samples/android-m-fingerprintdialog)

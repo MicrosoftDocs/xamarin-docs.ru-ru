@@ -10,12 +10,12 @@ ms.date: 01/21/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a3405e3bff1b500bcf0f7fab6bea1a888f2d4604
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: bb471787a4b3304be3df008fc3ecea66ff8263b3
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87918284"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560992"
 ---
 # <a name="add-a-pinch-gesture-recognizer"></a>Добавление распознавателя жестов сжатия
 
@@ -167,6 +167,6 @@ void OnPinchUpdated (object sender, PinchGestureUpdatedEventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [PinchGesture (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-pinchgesture)
+- [PinchGesture (пример)](/samples/xamarin/xamarin-forms-samples/workingwithgestures-pinchgesture)
 - [GestureRecognizer](xref:Xamarin.Forms.GestureRecognizer)
 - [PinchGestureRecognizer](xref:Xamarin.Forms.PinchGestureRecognizer)

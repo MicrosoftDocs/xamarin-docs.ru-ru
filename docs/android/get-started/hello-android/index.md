@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 12/02/2016
-ms.openlocfilehash: 2cb2e90355cf93903c7a3b7e1beb65528d09d82d
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: b5e089e488835de910626801e78dbd261456861f
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73027975"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454498"
 ---
 # <a name="hello-android"></a>Привет, Android
 
@@ -23,12 +23,12 @@ _Из этого руководства из двух частей вы узна
 
 В первой части этого руководства вы создадите приложение, которое преобразует введенный пользователем буквенно-цифровой телефонный номер в числовой телефонный номер и затем набирает его.
 
-## <a name="part-2-deep-dive"></a>[Часть 2. Глубокое погружение](~/android/get-started/hello-android/hello-android-deepdive.md)
+## <a name="part-2-deep-dive"></a>[Часть 2. Подробные сведения](~/android/get-started/hello-android/hello-android-deepdive.md)
 
 Во второй части этого документа вы проверите, что было создано, и получите полное представление о работе приложения Android.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Начало работы с Android](https://developer.android.com/training/index.html)
-- [Отладка в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/)
+- [Отладка в Visual Studio](/visualstudio/debugger/)
 - [Руководство по отладке в Visual Studio для Mac](https://github.com/xamarin/recipes/tree/master/Recipes/cross-platform/ide/debugging)

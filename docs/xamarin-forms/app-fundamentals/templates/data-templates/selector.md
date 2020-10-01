@@ -10,14 +10,14 @@ ms.date: 03/08/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7cbeeb9a0eed37ec109b2e71c46e3f04cd08822d
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: a0e84bd0bb6b2eb62ea5a25eefe6216ccdc08289
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936452"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562565"
 ---
-# <a name="creating-a-xamarinforms-datatemplateselector"></a>Создание DataTemplateSelector в Xamarin.Forms
+# <a name="creating-a-no-locxamarinforms-datatemplateselector"></a>Создание DataTemplateSelector в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-datatemplateselector)
 
@@ -139,5 +139,5 @@ public class HomePageCS : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Селектор шаблона данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-datatemplateselector)
+- [Селектор шаблона данных (пример)](/samples/xamarin/xamarin-forms-samples/templates-datatemplateselector)
 - [DataTemplateSelector](xref:Xamarin.Forms.DataTemplateSelector)

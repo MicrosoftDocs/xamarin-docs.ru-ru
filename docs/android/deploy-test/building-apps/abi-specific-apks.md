@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/15/2018
-ms.openlocfilehash: 0520439b89458b7f73a025cd8d6b2cf8fc41dac0
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 0a066b9f1c75093257e364070e48f0cfbeb565ce
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76940640"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91455096"
 ---
 # <a name="building-abi-specific-apks"></a>Создание пакетов APK для конкретного ABI
 
@@ -157,7 +157,7 @@ $ rake build
 [![Расположение папок для каждой платформы с файлами xamarin.helloworld.apk](abi-specific-apks-images/image01.png)](abi-specific-apks-images/image01.png#lightbox)
 
 > [!NOTE]
-> Процесс сборки, описанный в этом руководстве, можно реализовать во многих системах сборки. Например, такой режим точно поддерживают [PowerShell](https://technet.microsoft.com/scriptcenter/powershell.aspx) / [psake](https://github.com/psake/psake) и [Fake](https://fsharp.github.io/FAKE/), но мы пока не можем предложить для них готовых примеров.
+> Процесс сборки, описанный в этом руководстве, можно реализовать во многих системах сборки. Например, такой режим точно поддерживают [PowerShell](/powershell/) / [psake](https://github.com/psake/psake) и [Fake](https://fsharp.github.io/FAKE/), но мы пока не можем предложить для них готовых примеров.
 
 ## <a name="summary"></a>Сводка
 
@@ -165,6 +165,6 @@ $ rake build
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [OneABIPerAPK (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/oneabiperapk)
+- [OneABIPerAPK (пример)](/samples/xamarin/monodroid-samples/oneabiperapk)
 - [Публикация приложения](~/android/deploy-test/publishing/index.md)
 - [Поддержка нескольких APK для Google Play](https://developer.android.com/google/play/publishing/multiple-apks.html)

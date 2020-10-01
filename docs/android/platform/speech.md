@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/02/2018
-ms.openlocfilehash: e8c7d1a4fb3537644ed3b7737158a5e50abcdae5
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: ce94179fe0ae7f3df1f2fa5ead20ec09fd6f8f5e
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73019767"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457917"
 ---
 # <a name="android-speech"></a>Обработка речи в Android
 
@@ -28,7 +28,7 @@ Google предоставляет разработчикам через прос
 
 Но даже при наличии возможностей для работы с речью нельзя забывать об аппаратных ограничениях. Не стоит ожидать, что устройство сможет успешно интерпретировать любую речь на любом из существующих языков.
 
-## <a name="requirements"></a>Требования
+## <a name="requirements"></a>Requirements (Требования)
 
 Для работы с этим руководством нет особых требований. Вам потребуется только устройство с микрофоном и динамиком.
 
@@ -231,8 +231,8 @@ void TextToSpeech.IOnInitListener.OnInit(OperationResult status)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [DependencyService в Xamarin.Forms](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice//)
-- [Преобразование текста в речь (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/platformfeatures-texttospeech)
-- [Преобразование речи в текст (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/platformfeatures-speechtotext)
+- [Xamarin.Forms DependencyService](/samples/xamarin/xamarin-forms-samples/dependencyservice//)
+- [Преобразование текста в речь (пример)](/samples/xamarin/monodroid-samples/platformfeatures-texttospeech)
+- [Преобразование речи в текст (пример)](/samples/xamarin/monodroid-samples/platformfeatures-speechtotext)
 - [Пространство имен Android.Speech](xref:Android.Speech)
 - [Пространство имен Android.Speech.Tts](xref:Android.Speech.Tts)

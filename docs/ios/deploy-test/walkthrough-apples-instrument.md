@@ -7,19 +7,19 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 6fa1357adc9cf2f545fbcdf3a30fef70280593bb
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 2458abc3363d847623a27a73626266dabe6a7a5c
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938025"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437251"
 ---
 # <a name="walkthrough---using-apples-instruments-tool"></a>Пошаговое руководство. Использование средства Apple Instruments
 
 _В этой статье последовательно описываются этапы использования средства Apple Instruments для диагностики проблем с памятью в приложении iOS, созданном с помощью Xamarin. В ней описывается запуск Instruments, создание мгновенного снимка кучи и анализ роста памяти. В статье также показано, как использовать Instruments для отображения и определения именно тех строк кода, которые приводят к возникновению проблем с памятью._
 
 На этой странице рассказывается, как использовать **средство Xcode Instruments** для диагностики проблем с памятью в приложении iOS.
-Для начала загрузите [Пример MemoryDemo](https://docs.microsoft.com/samples/xamarin/ios-samples/profiling-memorydemo) и откройте **предыдущую версию** решения в Visual Studio для Mac.
+Для начала загрузите [Пример MemoryDemo](/samples/xamarin/ios-samples/profiling-memorydemo) и откройте **предыдущую версию** решения в Visual Studio для Mac.
 
 ## <a name="diagnosing-the-memory-issues"></a>Диагностика проблем с памятью
 
@@ -85,7 +85,7 @@ public override UICollectionViewCell GetCell (UICollectionView collectionView, N
 
 ![Отображение использования памяти приложением](walkthrough-apples-instrument-images/06-reduced-memory.png)
 
-Улучшенный код представлен в [примере MemoryDemo](https://docs.microsoft.com/samples/xamarin/ios-samples/profiling-memorydemo) из **измененной версии** решения в Visual Studio для Mac.
+Улучшенный код представлен в [примере MemoryDemo](/samples/xamarin/ios-samples/profiling-memorydemo) из **измененной версии** решения в Visual Studio для Mac.
 
 Эта статья блога сообщества о [сборке мусора в Xamarin.iOS](https://c-sharx.net/2015-04-27-xamarin-ios-the-garbage-collector-and-me/) — полезный справочный ресурс по устранению проблем с памятью с помощью Xamarin.iOS.
 
@@ -97,5 +97,5 @@ public override UICollectionViewCell GetCell (UICollectionView collectionView, N
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример MemoryDemo](https://docs.microsoft.com/samples/xamarin/ios-samples/profiling-memorydemo)
+- [Пример MemoryDemo](/samples/xamarin/ios-samples/profiling-memorydemo)
 - [Сборка мусора Xamarin.iOS (запись блога)](https://c-sharx.net/2015-04-27-xamarin-ios-the-garbage-collector-and-me/)

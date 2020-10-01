@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/09/2018
-ms.openlocfilehash: 4fbbe1bec317e66166d5218ef0ed54247aa4f6dd
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 1e72a09acc08fc4db49da0e94eb64fbd523e9ecf
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76724379"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453693"
 ---
 # <a name="ice-cream-sandwich-features"></a>Возможности Ice Cream Sandwich
 
@@ -60,8 +60,8 @@ ICS пока не поддерживает разработку с исполь�
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [TextureViewDemo (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/textureviewdemo)
-- [CalendarDemo (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/calendardemo)
+- [TextureViewDemo (пример)](/samples/xamarin/monodroid-samples/textureviewdemo)
+- [CalendarDemo (пример)](/samples/xamarin/monodroid-samples/calendardemo)
 - [Учебник по макету вкладок](~/android/user-interface/layouts/tab-layout/index.md)
 - [Ice Cream Sandwich](https://developer.android.com/about/versions/android-4.0-highlights.html)
 - [Платформа Android 4.0](https://developer.android.com/about/versions/android-4.0.html)

@@ -10,12 +10,12 @@ ms.date: 03/10/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0d6a18ec55b49da2b668ccc183646d5e4dde5849
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 8e8c52c03534ca5d8b653eed4d8fc2c8f39edf61
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937232"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562643"
 ---
 # <a name="hierarchical-navigation"></a>Иерархическая навигация
 
@@ -307,7 +307,7 @@ async void OnLoginButtonClicked (object sender, EventArgs e)
 
 Любое представление Xamarin.Forms [`View`](xref:Xamarin.Forms.View) может отображаться на панели навигации [`NavigationPage`](xref:Xamarin.Forms.NavigationPage). Для этого нужно установить присоединенное свойство [`NavigationPage.TitleView`](xref:Xamarin.Forms.NavigationPage.TitleViewProperty) в `View`. Это присоединенное свойство может быть задано для любого объекта [`Page`](xref:Xamarin.Forms.Page), и, когда `Page` помещается в `NavigationPage`, `NavigationPage` будет учитывать значение этого свойства.
 
-В следующем примере, взятом из [примера представления заголовка](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-titleview), показано, как задать присоединенное свойство [`NavigationPage.TitleView`](xref:Xamarin.Forms.NavigationPage.TitleViewProperty) в XAML.
+В следующем примере, взятом из [примера представления заголовка](/samples/xamarin/xamarin-forms-samples/navigation-titleview), показано, как задать присоединенное свойство [`NavigationPage.TitleView`](xref:Xamarin.Forms.NavigationPage.TitleViewProperty) в XAML.
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -359,9 +359,9 @@ public class TitleViewPage : ContentPage
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Переход по страницам](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf)
-- [Иерархическое (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-hierarchical)
-- [PassingData (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-passingdata)
-- [LoginFlow (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-loginflow)
-- [TitleView (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-titleview)
+- [Иерархическое (пример)](/samples/xamarin/xamarin-forms-samples/navigation-hierarchical)
+- [PassingData (пример)](/samples/xamarin/xamarin-forms-samples/navigation-passingdata)
+- [LoginFlow (пример)](/samples/xamarin/xamarin-forms-samples/navigation-loginflow)
+- [TitleView (пример)](/samples/xamarin/xamarin-forms-samples/navigation-titleview)
 - [Видеоролик о создании страницы для входа в Xamarin.Forms](https://www.youtube.com/watch?v=qKQ7pyyG1fo)
 - [NavigationPage](xref:Xamarin.Forms.NavigationPage)

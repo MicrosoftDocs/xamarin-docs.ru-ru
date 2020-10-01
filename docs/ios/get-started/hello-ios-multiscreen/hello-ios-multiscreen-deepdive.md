@@ -8,12 +8,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: 8a9a38c24af3e14cd6930cbb27717ba184dd0235
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 3020bb588f79ce4faf471488c116516402642b73
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86996413"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437288"
 ---
 # <a name="hello-ios-multiscreen--deep-dive"></a>Привет, iOS (несколько экранов): теперь подробнее
 
@@ -203,6 +203,6 @@ CallHistoryButton.TouchUpInside += (object sender, EventArgs e) => {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Привет, iOS (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/hello-ios)
+- [Привет, iOS (пример)](/samples/xamarin/ios-samples/hello-ios)
 - [Рекомендации по работе с человеческим интерфейсом iOS](https://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/Introduction/Introduction.html)
 - [Портал подготовки iOS](https://developer.apple.com/ios/manage/overview/index.action)

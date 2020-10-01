@@ -8,14 +8,14 @@ ms.date: 03/13/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 56cb9619a4132f6568cee8fbf590965934024639
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 4a13ed8e12e11595c6c1b7617e32a492205a9175
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84801927"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436570"
 ---
-# <a name="xamarinessentials-platform-extensions"></a>Xamarin.Essentials. расширения платформы
+# <a name="no-locxamarinessentials-platform-extensions"></a>Xamarin.Essentials. расширения платформы
 
 Xamarin.Essentials предоставляет несколько методов расширения платформы при работе с такими типами платформы, как Rect, Size и Point. Это означает, что можно осуществлять преобразование между версией `System` этих типов для их конкретных типов в iOS, Android и UWP.
 
@@ -89,7 +89,7 @@ void Platform_ActivityStateChanged(object sender, Xamarin.Essentials.ActivitySta
 * Запуск
 * Остановлено
 
-См. документацию по [жизненному циклу действия](https://docs.microsoft.com/xamarin/android/app-fundamentals/activity-lifecycle/).
+См. документацию по [жизненному циклу действия](../android/app-fundamentals/activity-lifecycle/index.md).
 
 ## <a name="ios-extensions"></a>Расширения iOS
 

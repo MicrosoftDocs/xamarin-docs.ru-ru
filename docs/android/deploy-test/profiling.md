@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 04/03/2018
-ms.openlocfilehash: fbd9fff6e7b63e86f0bba38f22025c5ea288f7c2
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 96c9e750238bce35d5c8c12dd2ceba6be7ab8fcc
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73027991"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454823"
 ---
 # <a name="profiling-android-apps"></a>Профилирование приложений Android
 
@@ -37,7 +37,7 @@ Android Studio 3.0 и более поздних версий включает в
 
 ### <a name="launching-a-xamarin-android-app-in-android-profiler"></a>Запуск приложения Xamarin Android в Android Profiler
 
-Ниже описано, как запустить приложение Xamarin Android в средстве Android Profiler среды Android Studio. На примерах снимков экрана ниже приложение [XamagonXuzzle](https://docs.microsoft.com/samples/xamarin/mobile-samples/liveplayer-xamagonxuzzlelp/) Xamarin Forms создается и профилируется с помощью Android Profiler:
+Ниже описано, как запустить приложение Xamarin Android в средстве Android Profiler среды Android Studio. На примерах снимков экрана ниже приложение [XamagonXuzzle](/samples/xamarin/mobile-samples/liveplayer-xamagonxuzzlelp/) Xamarin Forms создается и профилируется с помощью Android Profiler:
 
 1. В параметрах сборки проекта Android отключите параметр **Использовать общую среду выполнения**. Это позволяет выполнить сборку пакета приложения Android (APK) без зависимости от общей среды выполнения Mono времени разработки.
 

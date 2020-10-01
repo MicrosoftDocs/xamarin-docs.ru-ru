@@ -10,14 +10,14 @@ ms.date: 06/05/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 050b53be5e4ae67e2adbc1436bbd56ff824f5f7b
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: da3c6c2f55f1cdbed1b3c4e1bb16c4f78e32cf23
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84946394"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556052"
 ---
-# <a name="xamarinforms-dependencyservice-registration-and-resolution"></a>Регистрация и разрешение класса Xamarin.Forms DependencyService
+# <a name="no-locxamarinforms-dependencyservice-registration-and-resolution"></a>Регистрация и разрешение класса Xamarin.Forms DependencyService
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)
 
@@ -192,5 +192,5 @@ using (service as IDisposable)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Использование класса DependencyService (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)
+- [Использование класса DependencyService (пример)](/samples/xamarin/xamarin-forms-samples/dependencyservice/)
 - [Разрешение зависимостей в Xamarin.Forms](~/xamarin-forms/internals/dependency-resolution.md)

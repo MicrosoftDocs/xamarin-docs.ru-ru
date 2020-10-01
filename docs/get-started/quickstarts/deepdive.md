@@ -13,14 +13,14 @@ ms.date: 11/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d1670506fa78b39825368fc91d2452a44ddf8f03
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 8bfa78ef334829ab228d691368ec44ac71d415ad
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939923"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433509"
 ---
-# <a name="xamarinforms-quickstart-deep-dive"></a>Подробное изучение кратких руководств по Xamarin.Forms
+# <a name="no-locxamarinforms-quickstart-deep-dive"></a>Подробное изучение кратких руководств по Xamarin.Forms
 
 В [кратком руководстве по Xamarin.Forms](~/get-started/index.yml) было создано приложение Notes. В этой статье выполняется проверка созданных компонентов, позволяющая получить представление об основных принципах работы приложений Xamarin.Forms.
 
@@ -39,7 +39,7 @@ ms.locfileid: "86939923"
 - Notes.iOS — этот проект содержит код для iOS и представляет собой точку входа для приложения iOS.
 - Notes.UWP — этот проект содержит код для универсальной платформы Windows (UWP) и представляет собой точку входа для приложения UWP.
 
-## <a name="anatomy-of-a-xamarinforms-application"></a>Структура приложения Xamarin.Forms
+## <a name="anatomy-of-a-no-locxamarinforms-application"></a>Структура приложения Xamarin.Forms
 
 На следующих снимках экрана показано содержимое проекта библиотеки .NET Standard Notes в Visual Studio:
 
@@ -65,7 +65,7 @@ ms.locfileid: "86939923"
 - Notes.Android — этот проект содержит код для Android и представляет собой точку входа для приложений Android.
 - Notes.iOS — этот проект содержит код для iOS и представляет собой точку входа для приложений iOS.
 
-## <a name="anatomy-of-a-xamarinforms-application"></a>Структура приложения Xamarin.Forms
+## <a name="anatomy-of-a-no-locxamarinforms-application"></a>Структура приложения Xamarin.Forms
 
 На следующих снимках экрана показано содержимое проекта библиотеки .NET Standard Notes в Visual Studio для Mac:
 
@@ -540,8 +540,8 @@ async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
 - [Привязка данных](~/xamarin-forms/app-fundamentals/data-binding/index.md)
 - [Справочник по элементам управления](~/xamarin-forms/user-interface/controls/index.md)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md)
-- [Примеры для Xamarin.Forms](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms)
-- [Примеры для начала работы](https://docs.microsoft.com/samples/browse/?products=xamarin&term=Xamarin.Forms%20get%20started)
+- [Примеры для Xamarin.Forms](/samples/browse/?products=xamarin&term=Xamarin.Forms)
+- [Примеры для начала работы](/samples/browse/?products=xamarin&term=Xamarin.Forms%2bget%2bstarted)
 - [Справочник по API Xamarin.Forms](xref:Xamarin.Forms)
 - [Бесплатное самостоятельное обучение (видео)](https://university.xamarin.com/self-guided/)
 

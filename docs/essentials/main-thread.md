@@ -9,14 +9,14 @@ ms.date: 08/20/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 82c54a72d0e0bc991644295f05136f89fd280d7f
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 0dc8981024105e24ef4dcd725284723060e7313c
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84802271"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432320"
 ---
-# <a name="xamarinessentials-mainthread"></a>Xamarin.Essentials. MainThread
+# <a name="no-locxamarinessentials-mainthread"></a>Xamarin.Essentials. MainThread
 
 Класс **MainThread** позволяет выполнять код в основном потоке приложения, а также проверять, выполняется ли конкретный блок кода в основном потоке в конкретный момент.
 
@@ -63,7 +63,7 @@ MainThread.BeginInvokeOnMainThread(MyMainThreadCode);
 ```
 
 > [!NOTE]
-> Xamarin.Forms содержит метод с именем [`Device.BeginInvokeOnMainThread(Action)`](https://docs.microsoft.com/dotnet/api/xamarin.forms.device.begininvokeonmainthread)
+> Xamarin.Forms содержит метод с именем [`Device.BeginInvokeOnMainThread(Action)`](/dotnet/api/xamarin.forms.device.begininvokeonmainthread)
 > который делает то же, что и `MainThread.BeginInvokeOnMainThread(Action)`.
 > Вы можете использовать в приложении Xamarin.Forms любой из этих методов, но при выборе желательно учитывать, есть ли у вызывающего кода любая другая зависимость от Xamarin.Forms. Если такой зависимости нет, обычно лучше использовать `MainThread.BeginInvokeOnMainThread(Action)`.
 

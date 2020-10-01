@@ -6,12 +6,12 @@ ms.assetid: 420c5fdf-4610-4e71-9db5-fe894c961924
 author: davidortinau
 ms.author: daortin
 ms.date: 11/22/2016
-ms.openlocfilehash: 32dec6b8fcdd5387e138a7812d8c3e2074673111
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: f3de8f6bb5cc8cb717642ebc86cefe1a184f4a78
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939624"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91456630"
 ---
 # <a name="mobile-software-development-lifecycle"></a>Жизненный цикл разработки мобильного ПО
 
@@ -70,7 +70,7 @@ ms.locfileid: "86939624"
 
 #### <a name="ux-design"></a>Проектирование механизма взаимодействия с пользователем
 
-Взаимодействие с пользователем обычно реализуется на основе каркасов или макетов с помощью многочисленных [наборов инструментов для проектирования](https://docs.microsoft.com/windows/uwp/design/downloads/). Применение макетов позволяет проектировать взаимодействие с пользователем, не заботясь о его фактической разработке.
+Взаимодействие с пользователем обычно реализуется на основе каркасов или макетов с помощью многочисленных [наборов инструментов для проектирования](/windows/uwp/design/downloads/). Применение макетов позволяет проектировать взаимодействие с пользователем, не заботясь о его фактической разработке.
 
  [![Взаимодействие с пользователем обычно реализуется на основе каркасов или макетов с помощью таких средств, как Balsamiq.](introduction-to-mobile-sdlc-images/balsamiq.png)](introduction-to-mobile-sdlc-images/balsamiq.png#lightbox)
 
@@ -78,7 +78,7 @@ ms.locfileid: "86939624"
 
 1. **Apple** -  [рекомендации по работе с человеческим интерфейсом](https://developer.apple.com/ios/human-interface-guidelines/overview/themes/)
 1. **Android** — [рекомендации по разработке](https://developer.android.com/design/index.html)
-1. **UWP** — [основы проектирования UWP](https://docs.microsoft.com/windows/uwp/design/basics/)
+1. **UWP** — [основы проектирования UWP](/windows/uwp/design/basics/)
 
 Например, в каждом приложении реализуется концепция переключения между различными разделами приложения. В iOS для этого используется панель вкладок в нижней части экрана, в Android — панель вкладок вверху экрана, а в UWP — [элемент управления Pivot или вкладка](/windows/uwp/design/controls-and-patterns/pivot).
 
@@ -153,7 +153,7 @@ ms.locfileid: "86939624"
 
 #### <a name="uwp"></a>UWP
 
-Приложения UWP распространяются среди пользователей через магазин Microsoft Store. Приложения могут появиться в Store только после того, как разработчики отправят их на утверждение. Дополнительные сведения о публикации приложений Windows см. в документации UWP о [публикации приложений](https://docs.microsoft.com/windows/uwp/publish/).
+Приложения UWP распространяются среди пользователей через магазин Microsoft Store. Приложения могут появиться в Store только после того, как разработчики отправят их на утверждение. Дополнительные сведения о публикации приложений Windows см. в документации UWP о [публикации приложений](/windows/uwp/publish/).
 
 ## <a name="mobile-development-considerations"></a>Рекомендации по разработке мобильных приложений
 
@@ -243,7 +243,7 @@ Google не накладывает никаких ограничений на у
 
 #### <a name="security-considerations"></a>Замечания по безопасности
 
-Сведения о вопросах безопасности в UWP см. в документации по [безопасности](https://docs.microsoft.com/windows/uwp/security/).
+Сведения о вопросах безопасности в UWP см. в документации по [безопасности](/windows/uwp/security/).
 
 ## <a name="summary"></a>Сводка
 

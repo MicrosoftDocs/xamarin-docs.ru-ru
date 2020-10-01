@@ -10,14 +10,14 @@ ms.date: 09/11/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e0961fad18ccd961a5b84b2a5535bca70781dd8d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 459b918869bd3e2b5c1927d3fbcded6035226a58
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136127"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562591"
 ---
-# <a name="xamarinforms-data-templates"></a>Шаблоны данных Xamarin.Forms
+# <a name="no-locxamarinforms-data-templates"></a>Шаблоны данных Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-datatemplates)
 
@@ -37,4 +37,4 @@ _Шаблон данных используется для определени�
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Шаблоны данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-datatemplates)
+- [Шаблоны данных (пример)](/samples/xamarin/xamarin-forms-samples/templates-datatemplates)

@@ -6,12 +6,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 01/22/2018
-ms.openlocfilehash: fca57b7af34ae2b28dda9bf20a95183138cbc641
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 8c3608837132e221bec12b2c00fb2dd0b1730e76
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73020543"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454082"
 ---
 # <a name="using-the-contacts-contentprovider"></a>Использование контактов ContentProvider
 
@@ -197,4 +197,4 @@ listView.Adapter = adapter;
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демонстрационный пример для ContactsAdapter](https://docs.microsoft.com/samples/xamarin/monodroid-samples/platformfeatures-contactsadapterdemo)
+- [Демонстрационный пример для ContactsAdapter](/samples/xamarin/monodroid-samples/platformfeatures-contactsadapterdemo)

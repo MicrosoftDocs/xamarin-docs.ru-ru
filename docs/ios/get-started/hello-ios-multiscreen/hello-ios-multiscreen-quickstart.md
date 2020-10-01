@@ -9,12 +9,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: b937cc653275f509b7f759af5c3d995e84381cb2
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 94bb87e10b8cab2a9a37c7701b59d621f6329b8d
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997349"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436177"
 ---
 # <a name="hello-ios-multiscreen--quickstart"></a>Привет, iOS (несколько экранов): краткое руководство
 
@@ -26,7 +26,7 @@ ms.locfileid: "86997349"
 
 ## <a name="requirements"></a>Требования
 
-Это руководство начинается с того момента, на котором заканчивается документ "Привет, iOS", поэтому вам нужно сначала изучить [Привет, iOS: краткое руководство](~/ios/get-started/hello-ios/index.md). Скачайте готовую версию приложения Phoneword из примера [Привет, iOS](https://docs.microsoft.com/samples/xamarin/ios-samples/hello-ios).
+Это руководство начинается с того момента, на котором заканчивается документ "Привет, iOS", поэтому вам нужно сначала изучить [Привет, iOS: краткое руководство](~/ios/get-started/hello-ios/index.md). Скачайте готовую версию приложения Phoneword из примера [Привет, iOS](/samples/xamarin/ios-samples/hello-ios).
 
 ::: zone pivot="macos"
 
@@ -34,7 +34,7 @@ ms.locfileid: "86997349"
 
 В этом пошаговом руководстве вы добавите в приложение **Phoneword** экран "Call History" (Журнал вызовов).
 
-1. Откройте приложение **Phoneword** в Visual Studio для Mac. При необходимости готовое приложение Phoneword из пошагового руководства [Привет, iOS](~/ios/get-started/hello-ios/index.md) можно скачать [здесь](https://docs.microsoft.com/samples/xamarin/ios-samples/hello-ios).
+1. Откройте приложение **Phoneword** в Visual Studio для Mac. При необходимости готовое приложение Phoneword из пошагового руководства [Привет, iOS](~/ios/get-started/hello-ios/index.md) можно скачать [здесь](/samples/xamarin/ios-samples/hello-ios).
 
 2. Откройте файл **Main.storyboard** из **Панели решения**:
 
@@ -275,7 +275,7 @@ ms.locfileid: "86997349"
 
 В этом пошаговом руководстве вы добавите в приложение **Phoneword** экран "Call History" (Журнал вызовов).
 
-1. Откройте приложение **Phoneword** в Visual Studio. При необходимости скачайте [готовое приложение Phoneword](https://docs.microsoft.com/samples/xamarin/ios-samples/hello-ios) из пошагового руководства [Привет, iOS](~/ios/get-started/hello-ios/index.md). Не забывайте, что для подключения к [Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md) нужно использовать конструктор iOS и симулятор iOS.
+1. Откройте приложение **Phoneword** в Visual Studio. При необходимости скачайте [готовое приложение Phoneword](/samples/xamarin/ios-samples/hello-ios) из пошагового руководства [Привет, iOS](~/ios/get-started/hello-ios/index.md). Не забывайте, что для подключения к [Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md) нужно использовать конструктор iOS и симулятор iOS.
 
 2. Сначала измените пользовательский интерфейс. Откройте файл **Main.storyboard** в **обозревателе решений** и убедитесь, что в поле **Просмотреть как** задано значение _iPhone 6_:
 
@@ -517,6 +517,6 @@ ms.locfileid: "86997349"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Привет, iOS (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/hello-ios)
+- [Привет, iOS (пример)](/samples/xamarin/ios-samples/hello-ios)
 - [Рекомендации по работе с человеческим интерфейсом iOS](https://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/Introduction/Introduction.html)
 - [Портал подготовки iOS](https://developer.apple.com/ios/manage/overview/index.action)

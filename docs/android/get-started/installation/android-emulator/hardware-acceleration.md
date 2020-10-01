@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: jondouglas
 ms.author: jodou
 ms.date: 02/13/2020
-ms.openlocfilehash: 93336f5a741cf9643288163f2bf1d8ef44ea52d2
-ms.sourcegitcommit: d42dadc6da584953865b1adb616489d91a7b25d0
+ms.openlocfilehash: baeabf2cde7e0aabe3439d698e63636810069705
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86473441"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454615"
 ---
 # <a name="hardware-acceleration-for-emulator-performance-hyper-v--haxm"></a>Аппаратное ускорение для производительной работы эмулятора (Hyper-V и HAXM)
 
@@ -37,7 +37,7 @@ Visual Studio упрощает тестирование и отладку пр�
 Следующие технологии виртуализации доступны для ускорения эмулятора Android:
 
 1. **Microsoft Hyper-V и платформа гипервизора Windows (WHPX)** .
-   [Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/) — это функция виртуализации в Windows, которая позволяет запускать виртуализированные компьютерные системы на физическом главном компьютере.
+   [Hyper-V](/virtualization/hyper-v-on-windows/) — это функция виртуализации в Windows, которая позволяет запускать виртуализированные компьютерные системы на физическом главном компьютере.
 
 2. **Intel Hardware Accelerated Execution Manager (HAXM)** .
    HAXM — это механизм виртуализации для компьютеров на базе процессоров Intel.

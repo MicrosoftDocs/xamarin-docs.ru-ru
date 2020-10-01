@@ -12,14 +12,14 @@ ms.date: 02/07/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 05560ae7c3d255140c0782e5f442dd2356d86cad
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 9794f429744611654ce883b48aa828b997ec881f
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937427"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435441"
 ---
-# <a name="style-a-cross-platform-xamarinforms-application"></a>Стилизация кроссплатформенного приложения Xamarin.Forms
+# <a name="style-a-cross-platform-no-locxamarinforms-application"></a>Стилизация кроссплатформенного приложения Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-styled/)
 
@@ -34,7 +34,7 @@ ms.locfileid: "86937427"
 
 ### <a name="prerequisites"></a>Предварительные требования
 
-Прежде чем приступать к этому краткому руководству, необходимо успешно завершить [предыдущее](database.md). Также вы можете скачать [пример из предыдущего краткого руководства](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-database/) и использовать его в качестве отправной точки для работы с этим руководством.
+Прежде чем приступать к этому краткому руководству, необходимо успешно завершить [предыдущее](database.md). Также вы можете скачать [пример из предыдущего краткого руководства](/samples/xamarin/xamarin-forms-samples/getstarted-notes-database/) и использовать его в качестве отправной точки для работы с этим руководством.
 
 ::: zone pivot="windows"
 
@@ -326,5 +326,5 @@ ms.locfileid: "86937427"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Заметки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-styled/)
+- [Заметки (пример)](/samples/xamarin/xamarin-forms-samples/getstarted-notes-styled/)
 - [Подробное изучение кратких руководств по Xamarin.Forms](deepdive.md)

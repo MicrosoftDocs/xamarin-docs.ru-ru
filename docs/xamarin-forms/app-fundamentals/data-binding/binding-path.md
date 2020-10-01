@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — путь привязки" description: "В этой статье описывается, как использовать привязки данных Xamarin.Forms для доступа к вложенным свойствам и элементам коллекций с помощью свойства Path класса Binding".'
-description: 'ms.prod: xamarin ms.assetid: 3CF721A5-E157-468B-AD3A-DA0A45E58E8D ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/05/2018 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Путь привязки Xamarin.Forms
+description: В этой статье описывается, как использовать привязки данных Xamarin.Forms для доступа к вложенным свойствам и элементам коллекций с помощью свойства Path класса Binding.
 ms.prod: xamarin
 ms.assetid: 3CF721A5-E157-468B-AD3A-DA0A45E58E8D
 ms.technology: xamarin-forms
@@ -10,14 +10,14 @@ ms.date: 01/05/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a0ac8a568c3e8c46fa7e53112461aa0bff5684ae
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 154219f58c22005de0a0a2171aeedd04ec9f9ff9
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84570795"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557963"
 ---
-# <a name="xamarinforms-binding-path"></a>Путь привязки Xamarin.Forms
+# <a name="no-locxamarinforms-binding-path"></a>Путь привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
@@ -168,5 +168,5 @@ ms.locfileid: "84570795"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демоверсии привязок данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+- [Демоверсии привязок данных (пример)](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 - [Глава, посвященная привязкам данных, из книги о Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter16.md)

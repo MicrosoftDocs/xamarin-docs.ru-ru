@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 173af9638f4e7b2da39a89dd745ec53f54cf6c39
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 4ba1daeb94706efc9d27136c6bd4b4d13e774689
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937570"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437212"
 ---
 # <a name="xamarinios-api-design"></a>Разработка API Xamarin.iOS
 
@@ -26,7 +26,7 @@ ms.locfileid: "86937570"
 
 Вот некоторые принципы разработки для привязок Xamarin.iOS (они также применяются к Xamarin.Mac, привязкам Mono для Objective-C на macOS).
 
-- Следуйте [рекомендациям по разработке платформы](https://docs.microsoft.com/dotnet/standard/design-guidelines).
+- Следуйте [рекомендациям по разработке платформы](/dotnet/standard/design-guidelines).
 - Разрешите разработчикам использовать подклассы классов Objective-C.
 
   - Используйте наследование от существующего класса.
@@ -665,7 +665,7 @@ public Foo (NSCoder coder)
 
 Предоставление доступа к интерфейсу `IDisposable` — это удобный способ помочь разработчикам освобождать объекты, которые могут занимать большие блоки памяти (например, `UIImage` может выглядеть как безобидный указатель, но указывать на изображение размером 2 МБ) и другие важные и ограниченные ресурсы (например, буфер декодирования видео).
 
-NSObject реализует интерфейс IDisposable, а также [шаблон освобождения .NET](https://msdn.microsoft.com/library/fs2xkftw.aspx). Это позволяет разработчикам использовать подклассы NSObject, чтобы переопределять поведение Dispose и освобождать свои ресурсы по запросу. Например, рассмотрим этот контроллер представления, который поддерживает несколько изображений:
+NSObject реализует интерфейс IDisposable, а также [шаблон освобождения .NET](/dotnet/standard/garbage-collection/implementing-dispose). Это позволяет разработчикам использовать подклассы NSObject, чтобы переопределять поведение Dispose и освобождать свои ресурсы по запросу. Например, рассмотрим этот контроллер представления, который поддерживает несколько изображений:
 
 ```csharp
 class MenuViewController : UIViewController {

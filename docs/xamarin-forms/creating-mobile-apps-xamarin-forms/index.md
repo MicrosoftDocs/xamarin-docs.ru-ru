@@ -10,12 +10,12 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: de85e9108244230e9c0a740b1aa9140ecf92a033
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: af6da36e242ae2d967d795b61d65a38e5e43e22b
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997401"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557287"
 ---
 # <a name="creating-mobile-apps-with-no-locxamarinforms-book"></a>Книга о создании мобильных приложений с помощью Xamarin.Forms
 
@@ -88,7 +88,7 @@ ms.locfileid: "86997401"
 
 ## <a name="ways-in-which-the-book-is-outdated"></a>Где и в чем устарела эта книга
 
-С момента публикации книги *Создание мобильных приложений с помощью Xamarin.Forms* в Xamarin.Forms добавлено несколько новых возможностей. Эти возможности описаны в отдельных статьях документации по [Xamarin.Forms](/xamarin/).
+С момента публикации книги *Создание мобильных приложений с помощью Xamarin.Forms* в Xamarin.Forms добавлено несколько новых возможностей. Эти возможности описаны в отдельных статьях документации по [Xamarin.Forms](../../index.yml).
 
 Другие изменения привели к тому, что часть содержимого книги устарела.
 
@@ -131,5 +131,5 @@ Xamarin.Forms более не поддерживает платформы Window
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Блог Microsoft Press](https://blogs.msdn.microsoft.com/microsoft_press/2016/03/31/free-ebook-creating-mobile-apps-with-xamarin-forms/)
+- [Блог Microsoft Press](/archive/blogs/microsoft_press/free-ebook-creating-mobile-apps-with-xamarin-forms)
 - [Пример кода из книги](https://github.com/xamarin/xamarin-forms-book-samples)

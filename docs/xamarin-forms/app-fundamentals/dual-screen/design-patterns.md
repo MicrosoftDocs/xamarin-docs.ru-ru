@@ -10,12 +10,12 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 74f06f88cd974d774d3b2527505bb45b3db03191
-ms.sourcegitcommit: 69bd0fdc698c9b0c0d73217776d7084f32ae88ae
+ms.openlocfilehash: 9b553a2fc3dea0d2793cb337142eacf0419ad994
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832311"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556078"
 ---
 # <a name="no-locxamarinforms-dual-screen-design-patterns"></a>Конструктивные шаблоны Xamarin.Forms для двухэкранных устройств
 
@@ -271,5 +271,5 @@ ms.locfileid: "90832311"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [DualScreen (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
+- [DualScreen (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
 - [Создание приложений для двухэкранных устройств](index.md)

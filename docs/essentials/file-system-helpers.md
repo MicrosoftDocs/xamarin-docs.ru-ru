@@ -9,14 +9,14 @@ ms.date: 11/04/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: eb35750372c5ccb878c7b38f9d25898b09fd7f1e
-ms.sourcegitcommit: e412858ce431b3280c88241e324fcab33066eb58
+ms.openlocfilehash: 967fa5f54ec9ccbb1f8bac2a87d77dca63caba3a
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865901"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434334"
 ---
-# <a name="xamarinessentials-file-system-helpers"></a>Xamarin.Essentials. Вспомогательные методы для файловой системы
+# <a name="no-locxamarinessentials-file-system-helpers"></a>Xamarin.Essentials. Вспомогательные методы для файловой системы
 
 Класс **FileSystem** содержит ряд вспомогательных функций для поиска кэша приложения, каталогов данных и открытых файлов в пакете приложения.
 
@@ -77,8 +77,8 @@ var mainDir = FileSystem.AppDataDirectory;
 
 # <a name="uwp"></a>[UWP](#tab/uwp)
 
-- **CacheDirectory** — возвращает каталог [LocalCacheFolder](https://docs.microsoft.com/uwp/api/windows.storage.applicationdata.localcachefolder#Windows_Storage_ApplicationData_LocalCacheFolder).
-- **AppDataDirectory** — возвращает каталог [LocalFolder](https://docs.microsoft.com/uwp/api/windows.storage.applicationdata.localfolder#Windows_Storage_ApplicationData_LocalFolder), чья резервная копия создана в облаке.
+- **CacheDirectory** — возвращает каталог [LocalCacheFolder](/uwp/api/windows.storage.applicationdata.localcachefolder#Windows_Storage_ApplicationData_LocalCacheFolder).
+- **AppDataDirectory** — возвращает каталог [LocalFolder](/uwp/api/windows.storage.applicationdata.localfolder#Windows_Storage_ApplicationData_LocalFolder), чья резервная копия создана в облаке.
 
 Добавьте любой файл в корневой каталог в проекте UWP и пометьте действие сборки как **Content** для использования с `OpenAppPackageFileAsync`.
 

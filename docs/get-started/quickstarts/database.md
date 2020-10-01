@@ -12,12 +12,12 @@ ms.date: 04/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a28e391c6bacd460f095c94e30b2d9433a5191e4
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 8f19595fdabd663312e6346deaed65f85aed1280
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86931802"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436968"
 ---
 # <a name="store-data-in-a-local-sqlitenet-database"></a>Хранение данных в локальной базе данных SQLite.NET
 
@@ -35,7 +35,7 @@ ms.locfileid: "86931802"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Прежде чем приступать к этому краткому руководству, необходимо успешно завершить [предыдущее](multi-page.md). Также вы можете скачать [пример из предыдущего краткого руководства](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-multipage/) и использовать его в качестве отправной точки для работы с этим руководством.
+Прежде чем приступать к этому краткому руководству, необходимо успешно завершить [предыдущее](multi-page.md). Также вы можете скачать [пример из предыдущего краткого руководства](/samples/xamarin/xamarin-forms-samples/getstarted-notes-multipage/) и использовать его в качестве отправной точки для работы с этим руководством.
 
 ::: zone pivot="windows"
 
@@ -486,5 +486,5 @@ ms.locfileid: "86931802"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Заметки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-database/)
+- [Заметки (пример)](/samples/xamarin/xamarin-forms-samples/getstarted-notes-database/)
 - [Подробное изучение кратких руководств по Xamarin.Forms](deepdive.md)

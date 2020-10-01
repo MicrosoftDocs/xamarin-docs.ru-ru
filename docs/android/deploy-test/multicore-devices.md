@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 05/30/2019
-ms.openlocfilehash: e27e73ac2c5164fa3431c8892b21a71c32fcd8ef
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 85efadaa88e8923f363bd92c0426d536b6ebd331
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76724019"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454875"
 ---
 # <a name="multi-core-devices--xamarinandroid"></a>Многоядерные устройства и Xamarin.Android
 
@@ -226,7 +226,7 @@ Xamarin.Android поддерживает следующие варианты 32-
 - `x86`
 
 > [!NOTE]
-> **^** Начиная с версии [Xamarin.Android 9.2](https://docs.microsoft.com/xamarin/android/release-notes/9/9.2#removal-of-support-for-armeabi-cpu-architecture)`armeabi` больше не поддерживается.
+> **^** Начиная с версии [Xamarin.Android 9.2](/xamarin/android/release-notes/9/9.2#removal-of-support-for-armeabi-cpu-architecture)`armeabi` больше не поддерживается.
 
 Xamarin.Android сейчас не поддерживает `mips`.
 

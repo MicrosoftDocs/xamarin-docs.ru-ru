@@ -10,12 +10,12 @@ ms.date: 04/06/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7ecc094abf816f11dcb16d9eba7d715c8c4e4ab1
-ms.sourcegitcommit: a003b036f6fb83818e2ecc9c72a641e3aeb373bd
+ms.openlocfilehash: 3a085226da3c63f4f151bc657976bba384c02170
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88964800"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561148"
 ---
 # <a name="reusable-effectbehavior"></a>Повторно используемая реакция на событие EffectBehavior
 
@@ -35,7 +35,7 @@ _Реакции на события удобно использовать для
 Дополнительные сведения об эффектах см. в статье [Эффекты](~/xamarin-forms/app-fundamentals/effects/index.md).
 
 > [!NOTE]
-> `EffectBehavior` — это пользовательский класс, который можно найти в [примере реакции на событие для эффекта](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-effectbehavior). Он не входит в Xamarin.Forms.
+> `EffectBehavior` — это пользовательский класс, который можно найти в [примере реакции на событие для эффекта](/samples/xamarin/xamarin-forms-samples/behaviors-effectbehavior). Он не входит в Xamarin.Forms.
 
 ## <a name="creating-the-behavior"></a>Создание реакции на событие
 
@@ -171,6 +171,6 @@ label.Behaviors.Add (new EffectBehavior {
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Эффекты](~/xamarin-forms/app-fundamentals/effects/index.md)
-- [Реакция на событие для эффекта (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-effectbehavior)
+- [Реакция на событие для эффекта (пример)](/samples/xamarin/xamarin-forms-samples/behaviors-effectbehavior)
 - [Реакция на событие](xref:Xamarin.Forms.Behavior)
 - [Реакция на событие&lt;T&gt;](xref:Xamarin.Forms.Behavior`1)

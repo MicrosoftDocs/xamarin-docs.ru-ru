@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 04/16/2018
-ms.openlocfilehash: c5c819221bc08f1c39bde9b5900c2f9f9889764d
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 0f57c10ea263a3dcf882d2cf75a57105e7f7d0d4
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73022539"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434534"
 ---
 # <a name="configuring-visual-studio-for-ios-development"></a>Настройка Visual Studio при разработке приложений для iOS
 
@@ -27,7 +27,7 @@ _В этой статье описываются различные параме
 - Если вы используете предварительную версию Visual Studio 2019, выберите **альфа**-канал обновлений в Visual Studio для Mac.
 
 > [!NOTE]
-> Начиная с [Visual Studio 2017 версии 15.6](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes#automatic-macos-provisioning) система Visual Studio 2017 автоматически определяет, использует ли узел сборки Mac ту же версию Xamarin.iOS, что и Windows. В случае несовпадения версий Visual Studio 2017 предлагает удаленно установить правильную версию на узле сборки Mac. Дополнительные сведения см. в разделе [Автоматическая подготовка Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md#automatic-mac-provisioning) руководства [Связывание с компьютером Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md).
+> Начиная с [Visual Studio 2017 версии 15.6](/visualstudio/releasenotes/vs2017-relnotes#automatic-macos-provisioning) система Visual Studio 2017 автоматически определяет, использует ли узел сборки Mac ту же версию Xamarin.iOS, что и Windows. В случае несовпадения версий Visual Studio 2017 предлагает удаленно установить правильную версию на узле сборки Mac. Дополнительные сведения см. в разделе [Автоматическая подготовка Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md#automatic-mac-provisioning) руководства [Связывание с компьютером Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md).
 
 ## <a name="ios-toolbar"></a>Панель инструментов iOS
 

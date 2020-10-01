@@ -11,12 +11,12 @@ ms.date: 11/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 727bac49c5bff522125a2f21a9742e428b81c924
-ms.sourcegitcommit: bb18e6b3b5d592374b17932efa1e85c3b5fbad57
+ms.openlocfilehash: fac41e57d13815dcd202521d16ae4730e1d99cfa
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88950746"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555870"
 ---
 # <a name="no-locxamarinforms-string-and-image-localization"></a>Локализация строк и изображений в Xamarin.Forms
 
@@ -26,7 +26,7 @@ ms.locfileid: "88950746"
 
 ![Снимки экрана: локализованное приложения в iOS и Android](text-images/localizationdemo-screenshots.png)
 
-Платформа .NET Framework включает встроенный механизм для локализации приложений с помощью [файлов ресурсов RESX](https://docs.microsoft.com/dotnet/framework/resources/creating-resource-files-for-desktop-apps). В файле ресурсов текст и другое содержимое хранится в виде пар "имя-значение", что позволяет приложению извлекать содержимое по указанному ключу. Файлы ресурсов позволяют отделить локализованное содержимое от кода приложения.
+Платформа .NET Framework включает встроенный механизм для локализации приложений с помощью [файлов ресурсов RESX](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). В файле ресурсов текст и другое содержимое хранится в виде пар "имя-значение", что позволяет приложению извлекать содержимое по указанному ключу. Файлы ресурсов позволяют отделить локализованное содержимое от кода приложения.
 
 Для локализации приложений Xamarin.Forms с помощью файлов ресурсов необходимо выполнить следующие действия:
 
@@ -153,7 +153,7 @@ using System.Resources;
 
 После создания файла ресурсов по умолчанию и указания языка и региональных параметров по умолчанию в файле **AssemblyInfo.cs** приложение может извлекать локализованные строки во время выполнения.
 
-Дополнительные сведения о файлах ресурсов см. в статье [Создание файлов ресурсов для приложений .NET](https://docs.microsoft.com/dotnet/framework/resources/creating-resource-files-for-desktop-apps).
+Дополнительные сведения о файлах ресурсов см. в статье [Создание файлов ресурсов для приложений .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).
 
 ## <a name="specify-supported-languages-on-ios"></a>Указание поддерживаемых языков в iOS
 
@@ -306,7 +306,7 @@ Image flag = new Image
 
 ## <a name="localize-the-application-name"></a>Локализация имени приложения
 
-Имя приложения указывается для каждой платформы без использования файлов ресурсов RESX. Сведения о локализации имени приложения на Android см. в статье [Локализация имени приложения на Android](~/android/app-fundamentals/localization.md#stringsxml-file-format). Сведения о локализации имени приложения в iOS см. в статье [Локализация имени приложения в iOS](~/ios/app-fundamentals/localization/index.md#app-name). Сведения о локализации имени приложения в UWP см. в статье [Локализация строк в манифесте пакета UWP](https://docs.microsoft.com/windows/uwp/app-resources/localize-strings-ui-manifest).
+Имя приложения указывается для каждой платформы без использования файлов ресурсов RESX. Сведения о локализации имени приложения на Android см. в статье [Локализация имени приложения на Android](~/android/app-fundamentals/localization.md#stringsxml-file-format). Сведения о локализации имени приложения в iOS см. в статье [Локализация имени приложения в iOS](~/ios/app-fundamentals/localization/index.md#app-name). Сведения о локализации имени приложения в UWP см. в статье [Локализация строк в манифесте пакета UWP](/windows/uwp/app-resources/localize-strings-ui-manifest).
 
 ## <a name="test-localization"></a>Тестирование локализации
 
@@ -318,11 +318,11 @@ Image flag = new Image
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример проекта локализации](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/usingresxlocalization)
-- [Создание файлов ресурсов для приложений .NET](https://docs.microsoft.com/dotnet/framework/resources/creating-resource-files-for-desktop-apps)
+- [Пример проекта локализации](/samples/xamarin/xamarin-forms-samples/usingresxlocalization)
+- [Создание файлов ресурсов для приложений .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)
 - [Кроссплатформенная локализация](~/cross-platform/app-fundamentals/localization.md)
-- [Использование класса CultureInfo (MSDN)](https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo)
+- [Использование класса CultureInfo (MSDN)](/dotnet/api/system.globalization.cultureinfo)
 - [Локализация в Android](~/android/app-fundamentals/localization.md)
 - [Локализация в iOS](~/ios/app-fundamentals/localization/index.md)
 - [Локализация на универсальной платформе Windows](/windows/uwp/design/globalizing/globalizing-portal/)
-- [Обнаружение и использование ресурсов для определенного языка и региональных параметров (MSDN)](https://msdn.microsoft.com/library/s9ckwb4b%28v=vs.90%29.aspx)
+- [Обнаружение и использование ресурсов для определенного языка и региональных параметров (MSDN)](/previous-versions/visualstudio/visual-studio-2008/s9ckwb4b(v=vs.90))

@@ -6,12 +6,12 @@ ms.assetid: FD8FE199-898B-4841-8041-CC9CA1A00917
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/29/2020
-ms.openlocfilehash: 29875b3f6c747d5dc2f45eb876a269d2bc7e85c6
-ms.sourcegitcommit: 443ecd9146fe2a7bbb9b5ab6d33c835876efcf1f
+ms.openlocfilehash: 9520f4e81403869542cf758627b8e3cfc9fabdd8
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852458"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457982"
 ---
 # <a name="connect-to-local-web-services-from-ios-simulators-and-android-emulators"></a>Подключение к локальным веб-службам из iOS Simulator и Android Emulator
 
@@ -126,7 +126,7 @@ public HttpClientHandler GetInsecureHandler()
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [TodoREST (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todorest/)
+- [TodoREST (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todorest/)
 - [Включение локального HTTPS](/aspnet/core/getting-started#enable-local-https)
 - [HttpClient and SSL/TLS implementation selector for iOS/macOS](~/cross-platform/macios/http-stack.md) (Селектор реализации HttpClient и SSL/TLS для iOS и macOS)
 - [HttpClient Stack and SSL/TLS Implementation selector for Android](~/android/app-fundamentals/http-stack.md) (Селектор реализации HttpClient и SSL/TLS для Android)

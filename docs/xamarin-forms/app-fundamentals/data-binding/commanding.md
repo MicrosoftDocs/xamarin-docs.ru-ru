@@ -10,12 +10,12 @@ ms.date: 01/05/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ad36bd5efe09909753fed948a961a690feb0592a
-ms.sourcegitcommit: a003b036f6fb83818e2ecc9c72a641e3aeb373bd
+ms.openlocfilehash: 7edde81a926b142a5e792a203e96ee61b1fdfb7b
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88964666"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562708"
 ---
 # <a name="the-no-locxamarinforms-command-interface"></a>Командный интерфейс Xamarin.Forms
 
@@ -89,7 +89,7 @@ public ICommand MyCommand { private set; get; }
 
 ## <a name="basic-commanding"></a>Базовые команды
 
-Страница **Запись пользователя** в программе [**Демоверсии привязок данных**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos) показывает несколько простых команд, реализованных в модели представления.
+Страница **Запись пользователя** в программе [**Демоверсии привязок данных**](/samples/xamarin/xamarin-forms-samples/databindingdemos) показывает несколько простых команд, реализованных в модели представления.
 
 `PersonViewModel` определяет три свойства с именами `Name`, `Age` и `Skills`, которые определяют пользователя. Этот класс *не* содержит свойств `ICommand`:
 
@@ -691,7 +691,7 @@ public class DecimalKeypadViewModel : INotifyPropertyChanged
 
 ## <a name="asynchronous-commanding-for-navigation-menus"></a>Асинхронные команды для меню навигации
 
-Команды удобны для реализации меню навигации, как, например, в самой программе [**Демоверсии привязок данных**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos). Вот часть **MainPage.xaml**:
+Команды удобны для реализации меню навигации, как, например, в самой программе [**Демоверсии привязок данных**](/samples/xamarin/xamarin-forms-samples/databindingdemos). Вот часть **MainPage.xaml**:
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -765,5 +765,5 @@ public partial class MainPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демоверсии привязок данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+- [Демоверсии привязок данных (пример)](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 - [Глава, посвященная привязкам данных, из книги о Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter18.md)

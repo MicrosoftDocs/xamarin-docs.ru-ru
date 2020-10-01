@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/16/2019
-ms.openlocfilehash: 76696c094634c90fc0f9d445b932e04f53bc87c7
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 9754018d48a64c3f3df27f3c0979939ee3cbfee3
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73022528"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91435407"
 ---
 # <a name="xamarinios-installation"></a>Установка Xamarin.iOS
 
-## <a name="required-components"></a>Требуемые компоненты
+## <a name="required-components"></a>Необходимые компоненты
 
 Для выполнения сборки для Xamarin.iOS необходимы следующие компоненты:
 
@@ -33,7 +33,7 @@ ms.locfileid: "73022528"
 
 ## <a name="mac-installation"></a>Установка в Mac
 
-Инструкции по установке Xamarin.iOS на компьютер Mac см. в руководстве по [установке для компьютеров Mac](https://docs.microsoft.com/visualstudio/mac/installation).
+Инструкции по установке Xamarin.iOS на компьютер Mac см. в руководстве по [установке для компьютеров Mac](/visualstudio/mac/installation).
 
 ## <a name="windows-installation"></a>Установка в Windows
 

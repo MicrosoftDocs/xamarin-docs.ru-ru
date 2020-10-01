@@ -9,12 +9,12 @@ ms.date: 05/11/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3599958a493dd4051064b5e7f54aa5901e6bf32c
-ms.sourcegitcommit: f6a2f07d2e689e0cfd01b30008d50c83c63fa70c
+ms.openlocfilehash: f8a65c7bd3476114b849bb0e9383227e2ec78c7c
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89052764"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91432616"
 ---
 # <a name="get-started-with-no-locxamarinessentials"></a>Начало работы с Xamarin.Essentials
 
@@ -58,7 +58,7 @@ Xamarin.Essentials предоставляется в виде пакета NuGet
 
     При компиляции для Android 9.0 набор Xamarin.Essentials устанавливает версию 28.0.0.3 всех требуемых библиотек Xamarin.Android.Support. Все другие библиотеки Xamarin.Android.Support, которые использует приложение, также следует обновить до версии 28.0.0.3 с помощью диспетчера пакетов NuGet. Все библиотеки Xamarin.Android.Support, используемые в приложении, должны иметь одну и ту же версию (не ниже версии 28.0.0.3). Если вы столкнетесь с проблемами при добавлении пакета NuGet для Xamarin.Essentials или при обновлении пакетов NuGet в решении, воспользуйтесь [страницей устранения неполадок](troubleshooting.md).
 
-    Начиная с версии 1.5.0 при компиляции для Android 10.0 набор Xamarin.Essentials устанавливает необходимые ему вспомогательные библиотеки AndroidX. Если вы еще не перешли на эту версию, прочтите [документацию по AndroidX](https://docs.microsoft.com/xamarin/android/platform/androidx).
+    Начиная с версии 1.5.0 при компиляции для Android 10.0 набор Xamarin.Essentials устанавливает необходимые ему вспомогательные библиотеки AndroidX. Если вы еще не перешли на эту версию, прочтите [документацию по AndroidX](../android/platform/androidx.md).
 
     В `MainLauncher` проекта Android или в любом запущенном действии `Activity` необходимо инициализировать Xamarin.Essentials в методе `OnCreate`:
 

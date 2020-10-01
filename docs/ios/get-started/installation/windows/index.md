@@ -8,12 +8,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 04/16/2018
-ms.openlocfilehash: d638bf17d2a4ea23134a2d4ed335637f67e46ff7
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 89c6125b4afacd23ddf2c2877c97dff34b5692e3
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73022456"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436638"
 ---
 # <a name="installing-xamarinios-on-windows"></a>Установка Xamarin.iOS в Windows
 
@@ -38,7 +38,7 @@ _В этой статье описывается настройка компью
   >
   > Если у вас нет доступа к Mac, вы можете использовать [MacinCloud](https://www.macincloud.com/pages/visual-studio-mac.html) или [MacStadium](https://www.macstadium.com/); обе службы предоставляют размещенное в облаке оборудование Mac, которое можно использовать для сборки проектов Xamarin.iOS.
 
-## <a name="setup"></a>Установка
+## <a name="setup"></a>Настройка
 
 Процедура настройки для разработки Xamarin.iOS в Visual Studio 2019 включает следующие этапы.
 
@@ -53,10 +53,10 @@ _В этой статье описывается настройка компью
     Для сборки, отладки и подписывания приложений iOS для распространения Visual Studio 2017 необходим сетевой доступ к узлу сборки Mac, на котором настроены средства разработчика Apple (Xcode) и Xamarin.iOS.
 
     - [Скачайте и установите Xcode из магазина Mac App Store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).
-    - [Установите Visual Studio для Mac](https://docs.microsoft.com/visualstudio/mac/installation), при этом также устанавливается Xamarin.iOS.
+    - [Установите Visual Studio для Mac](/visualstudio/mac/installation), при этом также устанавливается Xamarin.iOS.
 
     > [!NOTE]
-    > Если вы не хотите устанавливать Visual Studio для Mac, начиная с Visual Studio 2019, поддерживается [автоматическая настройка](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes#automatic-macos-provisioning) на узле сборки Mac программного обеспечения, необходимого для сборки приложений Xamarin.iOS.
+    > Если вы не хотите устанавливать Visual Studio для Mac, начиная с Visual Studio 2019, поддерживается [автоматическая настройка](/visualstudio/releasenotes/vs2017-relnotes#automatic-macos-provisioning) на узле сборки Mac программного обеспечения, необходимого для сборки приложений Xamarin.iOS.
     > Дополнительные сведения см. в разделе [Автоматическая подготовка Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md#automatic-mac-provisioning).
 
 3. Связывание с компьютером Mac (подключение Visual Studio 2019 к Mac)
@@ -78,7 +78,7 @@ _В этой статье описывается настройка компью
 - Доступный по сети компьютер Mac, на котором настроены средства сборки Apple и Xamarin.iOS. Visual Studio 2017 обращается к этому компьютеру по сети, чтобы использовать средства сборки Apple, которые необходимы для компиляции приложений в машинном коде iOS.
   - [Требования к системе Mac](~/cross-platform/get-started/requirements.md#macos-requirements)
 
-## <a name="setup"></a>Установка
+## <a name="setup"></a>Настройка
 
 Процедура настройки для разработки Xamarin.iOS в Visual Studio 2017 включает следующие этапы.
 
@@ -93,10 +93,10 @@ _В этой статье описывается настройка компью
     Для сборки, отладки и подписывания приложений iOS для распространения Visual Studio 2017 необходим сетевой доступ к узлу сборки Mac, на котором настроены средства разработчика Apple (Xcode) и Xamarin.iOS.
 
     - [Скачайте и установите Xcode из магазина Mac App Store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).
-    - [Установите Visual Studio для Mac](https://docs.microsoft.com/visualstudio/mac/installation), при этом также устанавливается Xamarin.iOS.
+    - [Установите Visual Studio для Mac](/visualstudio/mac/installation), при этом также устанавливается Xamarin.iOS.
 
     > [!NOTE]
-    > Если вы не хотите устанавливать Visual Studio для Mac, начиная с [Visual Studio 2017 версии 15.6](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes#automatic-macos-provisioning) поддерживается автоматическая настройка на узле сборки Mac программного обеспечения, необходимого для сборки приложений Xamarin.iOS. Дополнительные сведения см. в разделе [Автоматическая подготовка Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md#automatic-mac-provisioning).
+    > Если вы не хотите устанавливать Visual Studio для Mac, начиная с [Visual Studio 2017 версии 15.6](/visualstudio/releasenotes/vs2017-relnotes#automatic-macos-provisioning) поддерживается автоматическая настройка на узле сборки Mac программного обеспечения, необходимого для сборки приложений Xamarin.iOS. Дополнительные сведения см. в разделе [Автоматическая подготовка Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md#automatic-mac-provisioning).
 
 3. Связывание с компьютером Mac (подключение Visual Studio 2017 к Mac)
 
@@ -110,7 +110,7 @@ _В этой статье описывается настройка компью
 
 В этой статье описывается настройка компьютера Windows и связанного узла сборки Mac для разработки Xamarin.iOS.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Введение в Xamarin.iOS для Visual Studio](introduction-to-xamarin-ios-for-visual-studio.md)
 - [Настройка Visual Studio для разработки приложений для iOS](config-options.md)

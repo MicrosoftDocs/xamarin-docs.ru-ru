@@ -10,20 +10,20 @@ ms.date: 05/01/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c14215071a1d9d3ec804c307fa6edbbe4ddcf8e9
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 8a7c62ec6d7329227abd8f52644212341098185f
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139780"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556442"
 ---
-# <a name="xamarinforms-binding-mode"></a>Режим привязки Xamarin.Forms
+# <a name="no-locxamarinforms-binding-mode"></a>Режим привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
 В [предыдущей статье](basic-bindings.md), в разделах **Альтернативная привязка кода** и **Альтернативная привязка XAML**, объект `Label` со свойством `Scale` привязывался к свойству `Value` объекта `Slider`. Так как начальное значение `Slider` равно 0, свойство `Scale` объекта `Label` также было равно 0, а не 1, поэтому объект `Label` исчезал.
 
-В примере [**DataBindingDemos**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos) страница **Обратная привязка** аналогична программам в предыдущей статье, только привязка данных определяется для `Slider`, а не `Label`:
+В примере [**DataBindingDemos**](/samples/xamarin/xamarin-forms-samples/databindingdemos) страница **Обратная привязка** аналогична программам в предыдущей статье, только привязка данных определяется для `Slider`, а не `Label`:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -686,5 +686,5 @@ public partial class SampleSettingsPage : ContentPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демоверсии привязок данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+- [Демоверсии привязок данных (пример)](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 - [Глава, посвященная привязкам данных, из книги о Xamarin.Forms](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter16.md)

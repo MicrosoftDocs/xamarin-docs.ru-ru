@@ -10,14 +10,14 @@ ms.date: 08/16/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2c5ce10aa0a1137ad4e4832d5dc931c902b82810
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 24a9a351dbe6932b09add2ee7c3111256e013201
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84946212"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91560693"
 ---
-# <a name="xamarinforms-binding-fallbacks"></a>Резервные значения привязки в Xamarin.Forms
+# <a name="no-locxamarinforms-binding-fallbacks"></a>Резервные значения привязки в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
@@ -109,4 +109,4 @@ ms.locfileid: "84946212"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демоверсии привязок данных (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+- [Демоверсии привязок данных (пример)](/samples/xamarin/xamarin-forms-samples/databindingdemos)

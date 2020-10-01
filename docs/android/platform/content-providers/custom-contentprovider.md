@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/07/2018
-ms.openlocfilehash: 3e57e0cd2fa87db8035fa68995b69f231151fa09
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 7583cfcb4f1a22167b95370f1376aa70d61188a0
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73020528"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454056"
 ---
 # <a name="creating-a-custom-contentprovider"></a>Создание настраиваемого поставщика ContentProvider
 
@@ -303,4 +303,4 @@ protected void OnListItemClick(object sender, AdapterView.ItemClickEventArgs e)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [SimpleContentProvider (пример)](https://docs.microsoft.com/samples/xamarin/monodroid-samples/platformfeatures-simplecontentprovider)
+- [SimpleContentProvider (пример)](/samples/xamarin/monodroid-samples/platformfeatures-simplecontentprovider)

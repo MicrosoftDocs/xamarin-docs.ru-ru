@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 05/29/2018
-ms.openlocfilehash: ffe88546ff58387865d71268bd64ec05c8aec3c5
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: d58cb676b347caac00c39a381de94954219d1865
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73026791"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91456864"
 ---
 # <a name="how-do-i-resolve-a-pathtoolongexception-error"></a>Как устранить ошибку PathTooLongException?
 
@@ -24,7 +24,7 @@ ms.locfileid: "73026791"
 
 **C:\\Some\\Directory\\Solution\\Project\\obj\\Debug\\__library_projects__\\Xamarin.Forms.Platform.Android\\library_project_imports\\assets**
 
-В Windows (где максимальная длина пути — [260 символов](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx)), **PathTooLongException** может появиться при построении проекта, если размер созданного пути превышает максимальную длину. 
+В Windows (где максимальная длина пути — [260 символов](/windows/win32/fileio/naming-a-file)), **PathTooLongException** может появиться при построении проекта, если размер созданного пути превышает максимальную длину. 
 
 ## <a name="fix"></a>Исправление
 
@@ -41,7 +41,7 @@ ms.locfileid: "73026791"
 </PropertyGroup>
 ```
 
-Если установка этого флага не приводит к устранению ошибки **PathTooLongException**, другой подход заключается в указании [общего промежуточного корневого каталога](https://blogs.msdn.microsoft.com/kirillosenkov/2015/04/04/using-a-common-intermediate-and-output-directory-for-your-solution/) для проектов в решении путем установки `IntermediateOutputPath` в файле проекта **.csproj**. Попробуйте использовать относительно короткий путь. Пример:
+Если установка этого флага не приводит к устранению ошибки **PathTooLongException**, другой подход заключается в указании [общего промежуточного корневого каталога](/archive/blogs/kirillosenkov/using-a-common-intermediate-and-output-directory-for-your-solution) для проектов в решении путем установки `IntermediateOutputPath` в файле проекта **.csproj**. Попробуйте использовать относительно короткий путь. Пример:
 
 ```xml
 <PropertyGroup>

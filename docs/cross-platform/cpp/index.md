@@ -5,12 +5,12 @@ description: Visual Studio для Mac можно использовать для
 author: mikeparker104
 ms.author: miparker
 ms.date: 11/07/2019
-ms.openlocfilehash: 42a59570d727657b2f3c23bd9d1f37e1205717d0
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 80878ec36eb319ff6c798788493469793efdcf56
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73842821"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457995"
 ---
 # <a name="use-cc-libraries-with-xamarin"></a>Использование библиотек C/C++ в Xamarin
 
@@ -18,13 +18,13 @@ ms.locfileid: "73842821"
 
 Xamarin позволяет разработчикам создавать собственные кроссплатформенные мобильные приложения с использованием Visual Studio. Как правило, для предоставления разработчикам существующих компонентов платформы используются привязки C#. Однако бывают случаи, когда приложениям Xamarin требуется работать с существующими базами кода. Иногда у команд разработчиков просто нет времени, бюджета или ресурсов для переноса больших, хорошо протестированных и оптимизированных баз кода C#.
 
-[Visual C++ для разработки кроссплатформенных мобильных приложений](https://docs.microsoft.com/visualstudio/cross-platform/visual-cpp-for-cross-platform-mobile-development) позволяет создавать код C/C++ и C# в рамках одного решения, предлагая множество преимуществ, включая унифицированный процесс отладки. Корпорация Майкрософт использует C/C++ и Xamarin, чтобы предоставлять такие приложения, как [Hyperlapse Mobile](https://www.microsoft.com/p/hyperlapse-mobile/9wzdncrd1prw) и [Pix Camera](https://www.microsoft.com/microsoftpix).
+[Visual C++ для разработки кроссплатформенных мобильных приложений](/visualstudio/cross-platform/visual-cpp-for-cross-platform-mobile-development) позволяет создавать код C/C++ и C# в рамках одного решения, предлагая множество преимуществ, включая унифицированный процесс отладки. Корпорация Майкрософт использует C/C++ и Xamarin, чтобы предоставлять такие приложения, как [Hyperlapse Mobile](https://www.microsoft.com/p/hyperlapse-mobile/9wzdncrd1prw) и [Pix Camera](https://www.microsoft.com/microsoftpix).
 
 Однако в некоторых случаях хочется (или требуется) сохранить существующие инструменты и процессы C/C++, а также отделить код библиотек от приложения, чтобы библиотеки использовались как сторонние компоненты. В таких ситуациях необходимо не только предоставить соответствующие элементы в C#, но и управлять библиотекой как зависимостью. И, конечно, следует автоматизировать как можно большую часть этого процесса.  
 
 В этой публикации рассматривается обобщенный подход к этому сценарию и демонстрируется простой пример.
 
-## <a name="background"></a>Фон
+## <a name="background"></a>История
 
 C/C++ считается кроссплатформенным языком, но необходимо уделить исходному коду особое внимание, чтобы он стал действительно кроссплатформенным, используя только версии C/C++, поддерживаемые всеми целевыми компиляторами, и практически не используя условно добавляемый код для определенных платформ или компиляторов.
 
@@ -81,7 +81,7 @@ C/C++ считается кроссплатформенным языком, но
 
 Для работы разработчику потребуется:
 
-- [командная строка NuGet](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference#macoslinux);
+- [командная строка NuGet](/nuget/tools/nuget-exe-cli-reference#macoslinux);
 
 - [*Visual Studio* *для Mac*](https://visualstudio.microsoft.com/downloads).
 
@@ -90,7 +90,7 @@ C/C++ считается кроссплатформенным языком, но
 
 ## <a name="creating-the-native-libraries-stage-1"></a>Создание собственных библиотек (этап 1)
 
-Функциональные возможности собственной библиотеки основаны на примере из раздела [Пошаговое руководство. Создание и использование статической библиотеки (C++)](https://docs.microsoft.com/cpp/windows/walkthrough-creating-and-using-a-static-library-cpp?view=vs-2017).
+Функциональные возможности собственной библиотеки основаны на примере из раздела [Пошаговое руководство. Создание и использование статической библиотеки (C++)](/cpp/windows/walkthrough-creating-and-using-a-static-library-cpp?view=vs-2017).
 
 В этом пошаговом руководстве пропускается первый этап — создание собственных библиотек, так как в этом сценарии библиотека предоставляется как сторонняя зависимость. Предварительно скомпилированные собственные библиотеки можно добавить вместе с [примером кода](https://github.com/xamcat/mobcat-samples/tree/master/cpp_with_xamarin) или [скачать](https://github.com/xamcat/mobcat-samples/tree/master/cpp_with_xamarin/Sample/Artefacts) напрямую.
 
@@ -189,10 +189,10 @@ extern "C" {
 
 1. **Нажмите клавишу CONTROL и щелкните** проект **MathFuncs.Android**, а затем в меню **Добавить** выберите **Создать папку** и укажите имя **libs**.
 
-2. Для каждого **ABI** (двоичный интерфейс приложения) **нажмите клавишу CONTROL и щелкните** папку **libs**, а затем в меню **Добавить** выберите **Создать папку** и укажите имя, соответствующее выбранному **ABI**. В этом случае:
+2. Для каждого **ABI** (двоичный интерфейс приложения) **нажмите клавишу CONTROL и щелкните** папку **libs**, а затем в меню **Добавить** выберите **Создать папку** и укажите имя, соответствующее выбранному **ABI**. В данном случае:
 
     - arm64-v8a
-    - armeabi-v7a;
+    - armeabi-v7a
     - x86
     - x86_64  
 
@@ -250,7 +250,7 @@ extern "C" {
     - Интеллектуальная связь
 
     > [!NOTE]
-    > Использование типа проекта библиотеки привязки вместе с [собственной ссылкой](https://docs.microsoft.com/xamarin/cross-platform/macios/native-references) позволяет внедрить статическую библиотеку и автоматически связать ее с приложением Xamarin.iOS, которое ссылается на нее (даже если библиотека добавлена как пакет NuGet).
+    > Использование типа проекта библиотеки привязки вместе с [собственной ссылкой](../macios/native-references.md) позволяет внедрить статическую библиотеку и автоматически связать ее с приложением Xamarin.iOS, которое ссылается на нее (даже если библиотека добавлена как пакет NuGet).
 
 5. Откройте **ApiDefinition.cs** и удалите закомментированный шаблонный код (оставив только пространство имен `MathFuncs`), а затем выполните то же действие для файла **Structs.cs**. 
 
@@ -289,7 +289,7 @@ extern "C" {
     ```
 
     > [!NOTE]
-    > Рекомендуется использовать [SafeHandle](https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle?view=netframework-4.7.2) для работы с неуправляемыми ресурсами в управляемом коде. Это позволяет абстрагировать большой объем стандартного кода, связанного с критическим завершением и жизненным циклом объектов. Владелец этого дескриптора сможет впоследствии обрабатывать его так же, как и любой другой управляемый ресурс, и ему не придется реализовывать полный [высвобождаемый шаблон](https://docs.microsoft.com/dotnet/standard/garbage-collection/implementing-dispose). 
+    > Рекомендуется использовать [SafeHandle](/dotnet/api/system.runtime.interopservices.safehandle?view=netframework-4.7.2) для работы с неуправляемыми ресурсами в управляемом коде. Это позволяет абстрагировать большой объем стандартного кода, связанного с критическим завершением и жизненным циклом объектов. Владелец этого дескриптора сможет впоследствии обрабатывать его так же, как и любой другой управляемый ресурс, и ему не придется реализовывать полный [высвобождаемый шаблон](/dotnet/standard/garbage-collection/implementing-dispose). 
 
 #### <a name="creating-the-internal-wrapper-class"></a>Создание внутреннего класса-оболочки
 
@@ -497,7 +497,7 @@ extern "C" {
     ```
 
     > [!NOTE]
-    > Дополнительные сведения о схеме, используемой для этого манифеста, см. в документе по [NUSPEC](https://docs.microsoft.com/nuget/reference/nuspec).
+    > Дополнительные сведения о схеме, используемой для этого манифеста, см. в документе по [NUSPEC](/nuget/reference/nuspec).
 
 5. Добавьте элемент `<files>` в качестве дочернего элемента `<package>` (под `<metadata>`), обозначая каждый файл с помощью отдельного элемента `<file>`.
 
@@ -588,7 +588,7 @@ extern "C" {
 
 1. Для параметра **Конфигурация сборки** выберите значение **Выпуск** и выполните сборку, нажав клавиши **COMMAND + B**.
 2. Откройте **Терминал** и перейдите в каталог, содержащую **NUSPEC**-файл.
-3. В **Терминале** выполните команду **nuget pack**, указав **NUSPEC**-файл, значение **Version** (например, 1.0.0) и **OutputDirectory**, указав папку, созданную на [предыдущем шаге](https://docs.microsoft.com/xamarin/cross-platform/cpp/index#creating-a-local-nuget-feed), то есть **local-nuget-feed**. Пример:
+3. В **Терминале** выполните команду **nuget pack**, указав **NUSPEC**-файл, значение **Version** (например, 1.0.0) и **OutputDirectory**, указав папку, созданную на [предыдущем шаге](#preparing-a-local-packages-directory), то есть **local-nuget-feed**. Пример:
 
     ```bash
     nuget pack MathFuncs.nuspec -Version 1.0.0 -OutputDirectory ~/local-nuget-feed
@@ -598,9 +598,9 @@ extern "C" {
 
 ### <a name="optional-using-a-private-nuget-feed-with-azure-devops"></a>[Дополнительно] Использование частного веб-канала NuGet в Azure DevOps
 
-Более надежная методика описана в разделе о [начале работы с пакетами NuGet в Azure DevOps](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=vsts&tabs=new-nav#publish-a-package), в котором показано, как создать частный веб-канал и отправить в него пакет, созданный на предыдущем шаге.
+Более надежная методика описана в разделе о [начале работы с пакетами NuGet в Azure DevOps](/azure/devops/artifacts/get-started-nuget?tabs=new-nav&view=vsts#publish-a-package), в котором показано, как создать частный веб-канал и отправить в него пакет, созданный на предыдущем шаге.
 
-Рекомендуется полностью автоматизировать этот рабочий процесс, например с помощью [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/index?view=vsts). Чтобы узнать больше, ознакомьтесь с разделом [Get started with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/index?view=vsts) (Приступая к работе с Azure Pipelines).
+Рекомендуется полностью автоматизировать этот рабочий процесс, например с помощью [Azure Pipelines](/azure/devops/pipelines/index?view=vsts). Чтобы узнать больше, ознакомьтесь с разделом [Get started with Azure Pipelines](/azure/devops/pipelines/get-started/index?view=vsts) (Приступая к работе с Azure Pipelines).
 
 ## <a name="consuming-the-net-wrapper-from-a-xamarinforms-app"></a>Использование оболочки .NET из приложения Xamarin.Forms
 
@@ -761,17 +761,17 @@ extern "C" {
 
 В этой статье объясняется, как создать приложение Xamarin.Forms, использующее собственные библиотеки через общую оболочку .NET, распространяемую как пакет NuGet. Пример, приведенный в этом пошаговом руководстве, намеренно очень упрощен в целях демонстрации метода. Реальное приложение потребует реализации сложных механизмов, таких как обработка исключений, обратные вызовы, маршалинг более сложных типов и привязка к другим библиотекам зависимостей. Основной идеей является процесс, с помощью которого развитие C++ кода координируется и синхронизируется с оболочкой и клиентскими приложениями. Этот процесс может отличаться в зависимости от того, отвечает ли за выполнение обеих задач одна группа разработчиков. В любом случае, автоматизация является реальным преимуществом. Ниже приведены ссылки на материалы для дальнейшего чтения, посвященные основным принципам, а также ссылки для скачивания соответствующих компонентов. 
 
-### <a name="downloads"></a>Загрузки
+### <a name="downloads"></a>Файлы для загрузки
 
-- [Программы командной строки NuGet](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference#macoslinux)
+- [Программы командной строки NuGet](/nuget/tools/nuget-exe-cli-reference#macoslinux)
 - [Visual Studio](https://visualstudio.microsoft.com/vs)
 
 ### <a name="examples"></a>Примеры
 
 - [Использование Hyperlapse для разработки кроссплатформенных мобильных приложений на языке C++](https://blogs.msdn.microsoft.com/vcblog/2015/06/26/hyperlapse-cross-platform-mobile-development-with-visual-c-and-xamarin/)
 - [Microsoft PIX (C++ и Xamarin)](https://devblogs.microsoft.com/xamarin/microsoft-research-ships-intelligent-apps-with-the-power-of-c-and-ai/)
-- [Перенос примера Mono San Angeles](https://docs.microsoft.com/samples/xamarin/monodroid-samples/sanangeles-ndk/)
+- [Перенос примера Mono San Angeles](/samples/xamarin/monodroid-samples/sanangeles-ndk/)
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 [Статьи, связанные с темой этой публикации](https://github.com/xamcat/mobcat-samples/tree/master/cpp_with_xamarin#wrapping-up)

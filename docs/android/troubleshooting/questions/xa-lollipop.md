@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/16/2018
-ms.openlocfilehash: 9e36189c771ed0c91a6030fd0ab615ab9af4dd52
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 27631d19ea157c1af08666b55a067e729b806434
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73026715"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453640"
 ---
 # <a name="what-version-of-xamarinandroid-added-lollipop-support"></a>В какой версии Xamarin.Android добавлена поддержка Lollipop?
 
@@ -22,7 +22,7 @@ ms.locfileid: "73026715"
 - [В Xamarin.Android 4.17](https://github.com/xamarin/release-notes-archive/blob/master/release-notes/android/xamarin.android_4/xamarin.android_4.17/index.md) добавлена поддержка предварительной версии Android L.
 - [Xamarin.Android 4.20](https://github.com/xamarin/release-notes-archive/blob/master/release-notes/android/xamarin.android_4/xamarin.android_4.20/index.md) — добавлена поддержка Android Lollipop.
 
-Xamarin активно поддерживает текущий стабильный выпуск инструментов Xamarin. Приведенные ниже сведения предоставляются "как есть" для более старых версий средств. Последние сведения о выпусках Xamarin см. в [заметках о выпуске](https://docs.microsoft.com/xamarin/whats-new/#product-release-notes).
+Xamarin активно поддерживает текущий стабильный выпуск инструментов Xamarin. Приведенные ниже сведения предоставляются "как есть" для более старых версий средств. Последние сведения о выпусках Xamarin см. в [заметках о выпуске](/xamarin/android/release-notes/).
 
 ## <a name="missing-androidjar-for-api-level-21-in-android-l-preview"></a>"Отсутствие android.jar для API уровня 21" в предварительной версии Android L
 

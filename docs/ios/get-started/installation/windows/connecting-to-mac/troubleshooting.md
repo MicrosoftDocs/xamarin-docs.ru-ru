@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: 1214360f98464e1451da58aaca13df6a3964aba9
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 56c4e9c5b0ca44500ca3930a63b300b6bd3fb33f
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86933072"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436597"
 ---
 # <a name="connection-troubleshooting-for-a-xamarinios-build-host"></a>Устранение неполадок подключения для узла сборки Xamarin.iOS
 
@@ -268,7 +268,7 @@ _В этом руководстве приводятся инструкции п
 
 1. Выйдите из Visual Studio.
 
-2. Запустите [**Командную строку разработчика**](https://msdn.microsoft.com/library/ms229859(v=vs.110).aspx).
+2. Запустите [**Командную строку разработчика**](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
 3. Чтобы запустить Visual Studio с подробным ведением журнала, выполните в командной строке следующую команду:
 

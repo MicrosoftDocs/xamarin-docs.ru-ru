@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 12/02/2016
-ms.openlocfilehash: 199b9de670e424bdc21a05966cfdd73c7e2cbb42
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: d1272360656cb3c526b84fbad4219a715a4f0716
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73020909"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91454551"
 ---
 # <a name="hello-android-multiscreen"></a>Привет, Android (несколько экранов)
 
@@ -23,12 +23,12 @@ _Из этого руководства из двух частей вы узна
 
 В первой части этого руководства вы добавите второй экран в приложение Phoneword, чтобы отслеживать журнал номеров, набранных из приложения. В готовом приложении будет отображаться второй экран с журналом вызовов.
 
-## <a name="part-2-deep-dive"></a>[Часть 2. Глубокое погружение](~/android/get-started/hello-android-multiscreen/hello-android-multiscreen-deepdive.md)
+## <a name="part-2-deep-dive"></a>[Часть 2. Подробные сведения](~/android/get-started/hello-android-multiscreen/hello-android-multiscreen-deepdive.md)
 
 Во второй части этого документа вы проверите, что было создано, а также ознакомитесь с архитектурой, навигацией и другими новыми понятиями Android, которые вам встретились.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Начало работы с Android](https://developer.android.com/training/index.html)
-- [Отладка в Visual Studio](https://docs.microsoft.com/visualstudio/debugger/)
+- [Отладка в Visual Studio](/visualstudio/debugger/)
 - [Руководство по отладке в Visual Studio для Mac](https://github.com/xamarin/recipes/tree/master/Recipes/cross-platform/ide/debugging)

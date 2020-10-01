@@ -9,12 +9,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 10/05/2018
-ms.openlocfilehash: 655cf1efcb479df27131029aa30036f0343c1841
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: bde05cfeecaeba389224bbbdb7ae01fcb7bcb56c
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86931161"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434108"
 ---
 # <a name="hello-ios--quickstart"></a>Краткое руководство по приложению "Привет, iOS"
 
@@ -495,6 +495,6 @@ Xamarin.iOS работает со следующими конфигурация�
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Значки приложения Xamarin и изображения при запуске (пример)](https://github.com/xamarin/ios-samples/blob/master/Hello_iOS/Resources/XamarinAppIconsandLaunchImages.zip?raw=true)
-- [Привет, iOS (пример)](https://docs.microsoft.com/samples/xamarin/ios-samples/hello-ios)
+- [Привет, iOS (пример)](/samples/xamarin/ios-samples/hello-ios)
 - [Рекомендации по работе с человеческим интерфейсом iOS](https://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/Introduction/Introduction.html)
 - [Портал подготовки iOS](https://developer.apple.com/ios/manage/overview/index.action)

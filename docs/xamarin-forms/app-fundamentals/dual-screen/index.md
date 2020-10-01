@@ -10,12 +10,12 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a414127c01d26db6bf7b462d6fc5a7f9ae44dddc
-ms.sourcegitcommit: 69bd0fdc698c9b0c0d73217776d7084f32ae88ae
+ms.openlocfilehash: e1d2a443a6005050c518e21e4e0f2df64c2aab0c
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832284"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91562630"
 ---
 # <a name="no-locxamarinforms-dual-screen"></a>Два экрана в Xamarin.Forms
 
@@ -49,7 +49,7 @@ ms.locfileid: "90832284"
 
 Если класс `DualScreenInfo` или макет `TwoPaneView` работают не так, как нужно, тщательно проверьте инструкции по настройке на этой странице. Распространенными причинами ошибок являются отсутствие или неправильная настройка метода `Init` или значений атрибутов `ConfigurationChanges`.
 
-Дополнительные рекомендации и эталонную реализацию см. в [образцах Xamarin.Forms с поддержкой двух экранов](https://docs.microsoft.com/dual-screen/xamarin/samples).
+Дополнительные рекомендации и эталонную реализацию см. в [образцах Xamarin.Forms с поддержкой двух экранов](/dual-screen/xamarin/samples).
 
 ## <a name="next-steps"></a>Следующие шаги
 
@@ -60,4 +60,4 @@ ms.locfileid: "90832284"
 - [Вспомогательный класс DualScreenInfo](dual-screen-info.md). Класс `DualScreenInfo` позволяет определить, в какой области отображается ваше представление, сколько места оно занимает, в каком положении находится устройство, каков угол сгиба и т. д.
 - [Триггеры для двух экранов](triggers.md). Пространство имен [`Xamarin.Forms.DualScreen`](xref:Xamarin.Forms.DualScreen) включает два триггера состояния, которые активируют изменение [`VisualState`](xref:Xamarin.Forms.VisualState) при изменении режима просмотра в присоединенном макете или окне.
 
-Дополнительные сведения см. в [документации по поддержке двух экранов для разработчиков](https://docs.microsoft.com/dual-screen/).
+Дополнительные сведения см. в [документации по поддержке двух экранов для разработчиков](/dual-screen/).

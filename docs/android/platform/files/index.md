@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 07/23/2018
-ms.openlocfilehash: 746433293c52d7071a3289962ea021f716fd0cfe
-ms.sourcegitcommit: f7fe46c0236a7130b63a33d9d1670d5111582dd2
+ms.openlocfilehash: 69c99d6aa132bb5326085f752b9220054e9f3e69
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88186178"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453926"
 ---
 # <a name="file-storage-and-access-with-xamarinandroid"></a>Хранение и доступ к файлам с помощью Xamarin.Android
 
@@ -81,7 +81,7 @@ ms.locfileid: "88186178"
 
 ### <a name="reading-or-writing-to-files-on-internal-storage"></a>Чтение или запись в файлы во внутреннем хранилище
 
-Можно использовать любой [API C# для записи](https://docs.microsoft.com/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file) в файл. Достаточно просто получить путь к файлу, который находится в каталоге, выделенном для приложения. Настоятельно рекомендуется использовать асинхронные версии API .NET, чтобы возникало меньше проблем с блокировкой основного потока в связи с доступом к файлу.
+Можно использовать любой [API C# для записи](/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file) в файл. Достаточно просто получить путь к файлу, который находится в каталоге, выделенном для приложения. Настоятельно рекомендуется использовать асинхронные версии API .NET, чтобы возникало меньше проблем с блокировкой основного потока в связи с доступом к файлу.
 
 Этот фрагмент кода представляет один из примеров записи целого числа в текстовый файл в кодировке UTF-8 в каталоге внутреннего хранилища приложения:
 

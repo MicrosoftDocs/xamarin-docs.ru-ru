@@ -6,12 +6,12 @@ ms.assetid: 9ce61f18-22ac-4b93-91be-5b499677d661
 author: davidortinau
 ms.author: daortin
 ms.date: 03/24/2017
-ms.openlocfilehash: 89b5dc2ae296b9e9033c45bf93c87de83054f721
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: f7f5d7daed42eeb3a36dd9b0d09b31a06b0de142
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86996491"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91457956"
 ---
 # <a name="cross-platform-performance"></a>Кроссплатформенная производительность
 
@@ -207,7 +207,7 @@ double Compute(double x)
 
 Отложенная инициализация производится при первом обращении к свойству `Lazy<T>.Value`. При первом доступе заключенный в оболочку тип создается, возвращается и сохраняется для использования в будущем.
 
-Дополнительные сведения об отложенной инициализации см. в статье [Отложенная инициализация](https://msdn.microsoft.com/library/dd997286(v=vs.110).aspx).
+Дополнительные сведения об отложенной инициализации см. в статье [Отложенная инициализация](/dotnet/framework/performance/lazy-initialization).
 
 <a name="async"></a>
 

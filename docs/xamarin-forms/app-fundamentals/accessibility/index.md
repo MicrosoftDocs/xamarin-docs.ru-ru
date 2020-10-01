@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — специальные возможности" description: "Если вы создаете приложение со специальными возможностями, им смогут пользоваться люди с различными потребностями".'
-description: 'ms.prod: xamarin ms.assetid: 99B8A8E8-6F5E-46BC-9639-1C4A6D301049 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/28/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials] ms.custom: video'
+title: Специальные возможности в Xamarin.Forms
+description: Если вы создаете приложение со специальными возможностями, им смогут пользоваться люди с различными потребностями.
 ms.prod: xamarin
 ms.assetid: 99B8A8E8-6F5E-46BC-9639-1C4A6D301049
 ms.technology: xamarin-forms
@@ -11,20 +11,20 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 ms.custom: video
-ms.openlocfilehash: 7ac8b305ae09e005013aea9f83fb4a3e4740f2b2
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: f2fc7000df2c14dfdd863bd431df67643c5501cf
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84129811"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561291"
 ---
-# <a name="xamarinforms-accessibility"></a>Специальные возможности в Xamarin.Forms
+# <a name="no-locxamarinforms-accessibility"></a>Специальные возможности в Xamarin.Forms
 
 _Если вы создаете приложение со специальными возможностями, им смогут пользоваться люди с различными потребностями._
 
 Специальные возможности в приложении Xamarin.Forms требуют обдумывания макета и дизайна многих элементов пользовательского интерфейса. Рекомендации по аспектам, которые нужно учесть, см. в разделе [Контрольный список для специальных возможностей](~/cross-platform/app-fundamentals/accessibility.md). Многие вопросы реализации специальных возможностей, например крупный шрифт и подходящие настройки цвета и контрастности, уже решаются API-интерфейсами в Xamarin.Forms.
 
-Руководства по [специальным возможностям в Android](~/android/app-fundamentals/accessibility.md) и [специальным возможностям в iOS](~/ios/app-fundamentals/accessibility.md) содержат сведения о собственных API, предоставляемых Xamarin, а [руководство по специальным возможностям универсальной платформы Windows на сайте MSDN](https://msdn.microsoft.com/windows/uwp/accessibility/basic-accessibility-information) объясняет собственный подход на этой платформе. Эти API используются для полной реализации приложений со специальными возможностями на каждой платформе.
+Руководства по [специальным возможностям в Android](~/android/app-fundamentals/accessibility.md) и [специальным возможностям в iOS](~/ios/app-fundamentals/accessibility.md) содержат сведения о собственных API, предоставляемых Xamarin, а [руководство по специальным возможностям универсальной платформы Windows на сайте MSDN](/windows/uwp/design/accessibility/basic-accessibility-information) объясняет собственный подход на этой платформе. Эти API используются для полной реализации приложений со специальными возможностями на каждой платформе.
 
 Xamarin.Forms в данный момент не имеет *встроенной* поддержки всех API специальных возможностей, доступных на каждом из базовых платформ. Тем не менее он поддерживает задание свойств автоматизации в элементах пользовательского интерфейса для поддержки средств чтения с экрана и помощи в навигации, а это самые важные компоненты создания приложений со специальными возможностями. Дополнительные сведения см. в разделе [Свойства автоматизации](~/xamarin-forms/app-fundamentals/accessibility/automation-properties.md).
 
@@ -38,7 +38,7 @@ Xamarin.Forms в данный момент не имеет *встроенной
 
 - [**Тестирование в iOS**](~/ios/app-fundamentals/accessibility.md)
 - [**Тестирование в Android**](~/android/app-fundamentals/accessibility.md)
-- [**Windows AccScope (MSDN)** ](https://msdn.microsoft.com/library/windows/desktop/dn433239)
+- [**Windows AccScope (MSDN)** ](/windows/win32/winauto/accscope)
 
 ## <a name="related-links"></a>Связанные ссылки
 

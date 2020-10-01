@@ -10,14 +10,14 @@ ms.date: 10/25/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fc3776934a4c109b2527132b11c6c6a93b7d9f9e
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 47b459945aec4ef8f1c3fa9729efd82461aec0e0
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138857"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561967"
 ---
-# <a name="xamarinforms-reusable-roundeffect"></a>Многоразовый RoundEffect в Xamarin.Forms
+# <a name="no-locxamarinforms-reusable-roundeffect"></a>Многоразовый RoundEffect в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-roundeffect/)
 
@@ -224,6 +224,6 @@ image.Effects.Add(new RoundEffect());
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пример приложения RoundEffect](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-roundeffect/)
+- [Пример приложения RoundEffect](/samples/xamarin/xamarin-forms-samples/effects-roundeffect/)
 - [Введение в эффекты](~/xamarin-forms/app-fundamentals/effects/introduction.md)
 - [Создание эффекта](~/xamarin-forms/app-fundamentals/effects/creating.md)

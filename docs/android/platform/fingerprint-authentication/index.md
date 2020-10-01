@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/16/2018
-ms.openlocfilehash: 4a4b6ee7a123683a9d5a140c46c0b3542767ffa3
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: a3fd03ece3618172e68539e2a92e8924e85e2ce5
+ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "73027515"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91453887"
 ---
 # <a name="fingerprint-authentication"></a>Проверка подлинности по отпечаткам
 
@@ -45,7 +45,7 @@ fingerprintManager.Authenticate(FingerprintManager.CryptoObject crypto,
 
 В этом руководстве объясняется использование API `FingerprintManager` для улучшения приложения Android с проверкой подлинности по отпечаткам. В нем рассматривается создание экземпляров и `CryptoObject` для защиты результатов сканера отпечатков. Мы рассмотрим, как приложение должно создать подкласс `FingerprintManager.AuthenticationCallback` и реагировать на отзывы от сканера отпечатков. Наконец, мы узнаем, как зарегистрировать отпечаток на устройстве или эмуляторе Android и как использовать **adb** для имитации сканирования отпечатков.
 
-## <a name="requirements"></a>Требования
+## <a name="requirements"></a>Requirements (Требования)
 
 Для проверки подлинности по отпечаткам требуется Android 6.0 (API уровня 23) или более поздней версии и устройство со сканером отпечатков. 
 
@@ -53,8 +53,8 @@ fingerprintManager.Authenticate(FingerprintManager.CryptoObject crypto,
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Xamarin.Android. Пример отпечатка пальца](https://docs.microsoft.com/samples/xamarin/monodroid-samples/fingerprintguide)
-- [Xamarin.Android. Пример диалогового окна отпечатка](https://docs.microsoft.com/samples/xamarin/monodroid-samples/android-m-fingerprintdialog)
+- [Xamarin.Android. Пример отпечатка пальца](/samples/xamarin/monodroid-samples/fingerprintguide)
+- [Xamarin.Android. Пример диалогового окна отпечатка](/samples/xamarin/monodroid-samples/android-m-fingerprintdialog)
 - [Запрос прав доступа](https://developer.android.com/training/permissions/requesting.html)
 - [android.hardware.fingerprint](https://developer.android.com/reference/android/hardware/fingerprint/package-summary.html)
 - [android.support.v4.hardware.fingerprint](https://developer.android.com/reference/android/support/v4/hardware/fingerprint/package-summary.html)
