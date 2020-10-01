@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — конфигурация страницы оболочки" description: "Класс Shell определяет присоединенные свойства, с помощью которых можно настраивать внешний вид страниц в приложениях оболочки Xamarin.Forms.'
-description: 'Сюда относится настройка цветов страницы, отключение панели навигации, отключение панели вкладок и отображение представлений на панели навигации". ms.prod: xamarin ms.assetid: 3FC2FBD1-C30B-4408-97B2-B04E3A2E4F03 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/29/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Конфигурация страницы оболочки Xamarin.Forms
+description: Класс Shell определяет присоединенные свойства, с помощью которых можно настраивать внешний вид страниц в приложениях оболочки Xamarin.Forms. Сюда относится настройка цветов страницы, отключение панели навигации, отключение панели вкладок и отображение представлений на панели навигации.
 ms.prod: xamarin
 ms.assetid: 3FC2FBD1-C30B-4408-97B2-B04E3A2E4F03
 ms.technology: xamarin-forms
@@ -10,14 +10,14 @@ ms.date: 01/29/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 102070fc478b42e9fbc0c7d0006197c81a49c9b8
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 3f3eca53f9f7347472a554b4ec30b83f40a96e0e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84137505"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563306"
 ---
-# <a name="xamarinforms-shell-page-configuration"></a>Конфигурация страницы оболочки Xamarin.Forms
+# <a name="no-locxamarinforms-shell-page-configuration"></a>Конфигурация страницы оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
@@ -196,6 +196,6 @@ ms.locfileid: "84137505"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Xaminals (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+- [Xaminals (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 - [Задание стиля приложений Xamarin.Forms с помощью стилей XAML](~/xamarin-forms/user-interface/styles/xaml/index.md)
 - [Особые свойства каскадных таблиц стилей оболочки Xamarin.Forms](~/xamarin-forms/user-interface/styles/css/index.md#xamarinforms-shell-specific-properties)

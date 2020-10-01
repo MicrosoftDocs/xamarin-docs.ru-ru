@@ -1,6 +1,6 @@
 ---
-title: 'title: "Шаблон элементов управления Xamarin.Forms" description: "Шаблоны элементов управления Xamarin.Forms определяют визуальную структуру производных пользовательских элементов управления ContentView и производных страниц ContentPage".'
-description: 'ms.prod: xamarin ms.assetid: 8B8E2360-6531-44A3-A7C8-9A8808DE9B86 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 01/13/2020 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Шаблоны элементов управления Xamarin.Forms
+description: Шаблоны элементов управления Xamarin.Forms определяют визуальную структуру производных пользовательских элементов управления ContentView и производных страниц ContentPage.
 ms.prod: xamarin
 ms.assetid: 8B8E2360-6531-44A3-A7C8-9A8808DE9B86
 ms.technology: xamarin-forms
@@ -10,14 +10,14 @@ ms.date: 01/13/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 44eebed2a49fbdda5504f9a09873f93466d0326c
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 575169459433725ae3f3a7db675fc65caef1494e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84132552"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563449"
 ---
-# <a name="xamarinforms-control-templates"></a>Шаблоны элементов управления Xamarin.Forms
+# <a name="no-locxamarinforms-control-templates"></a>Шаблоны элементов управления Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-controltemplatedemos)
 
@@ -637,7 +637,7 @@ public partial class AccessTemplateElementPage : HeaderFooterPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ControlTemplateDemos (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-controltemplatedemos)
+- [ControlTemplateDemos (пример)](/samples/xamarin/xamarin-forms-samples/templates-controltemplatedemos)
 - [Xamarin.Forms ContentView](~/xamarin-forms/user-interface/layouts/contentview.md)
 - [Относительные привязки Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md)
 - [Словари ресурсов Xamarin.Forms](~/xamarin-forms/xaml/resource-dictionaries.md)

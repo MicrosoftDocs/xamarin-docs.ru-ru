@@ -10,12 +10,12 @@ ms.date: 02/12/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 00f1434a55fb815710bff26ac090a90bce5f41ee
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: ff9f44ad790f3acda1e855f3308942bb702e66ee
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84197524"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563904"
 ---
 # <a name="accessing-the-devices-video-library"></a>Доступ к видеотеке устройства
 
@@ -191,7 +191,7 @@ namespace FormsVideoLibrary.Droid
 }
 ```
 
-Дополнением к объекту `MainActivity` является только код в решении [**VideoPlayerDemos**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos), где требуется изменить обычный код приложения для поддержки классов `FormsVideoLibrary`.
+Дополнением к объекту `MainActivity` является только код в решении [**VideoPlayerDemos**](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos), где требуется изменить обычный код приложения для поддержки классов `FormsVideoLibrary`.
 
 ### <a name="the-uwp-video-picker"></a>Средство выбора видео на платформе UWP
 
@@ -232,7 +232,7 @@ namespace FormsVideoLibrary.UWP
 
 ## <a name="invoking-the-dependency-service"></a>Вызов службы зависимостей
 
-На странице **Play Library Video** (Воспроизведение видео из библиотеки) программы [**VideoPlayerDemos**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos) показано, как использовать службу зависимостей средства выбора видео. Файл XAML содержит экземпляр `VideoPlayer` и `Button` с меткой **Show Video Library** (Показать видеотеку):
+На странице **Play Library Video** (Воспроизведение видео из библиотеки) программы [**VideoPlayerDemos**](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos) показано, как использовать службу зависимостей средства выбора видео. Файл XAML содержит экземпляр `VideoPlayer` и `Button` с меткой **Show Video Library** (Показать видеотеку):
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -391,5 +391,5 @@ namespace FormsVideoLibrary.UWP
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демоверсии видеопроигрывателя (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
+- [Демоверсии видеопроигрывателя (пример)](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
 - [Выбор фотографии в библиотеке рисунков](~/xamarin-forms/app-fundamentals/dependency-service/photo-picker.md)

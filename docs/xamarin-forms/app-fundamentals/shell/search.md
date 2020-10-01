@@ -10,12 +10,12 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 00dfec5b48507c83f43d0622c11770ecec304ea6
-ms.sourcegitcommit: 08290d004d1a7e7ac579bf1f96abf8437921dc70
+ms.openlocfilehash: f0d8766420f876898a3f10c2f23a35a0b0afeb43
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87917558"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563475"
 ---
 # <a name="no-locxamarinforms-shell-search"></a>Поиск по оболочке Xamarin.Forms
 
@@ -336,5 +336,5 @@ searchHandler.Keyboard = Keyboard.Create(KeyboardFlags.Suggestions | KeyboardFla
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Xaminals (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+- [Xaminals (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 - [Навигация по оболочке Xamarin.Forms](navigation.md)

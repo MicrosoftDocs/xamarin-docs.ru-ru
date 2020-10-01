@@ -10,12 +10,12 @@ ms.date: 11/07/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 733ec985f4d285f26aca62930868970026847825
-ms.sourcegitcommit: 69d9a61ba479f707d96eb4c1c56a4b05a2a2a26f
+ms.openlocfilehash: afcf182fe093a9bb02ea23f53d0f568fd83c862c
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87426881"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563319"
 ---
 # <a name="no-locxamarinforms-tabbedpage"></a>Xamarin.Forms TabbedPage
 
@@ -238,8 +238,8 @@ public class TabbedPageDemoPageCS : TabbedPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [TabbedPageWithNavigationPage (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-tabbedpagewithnavigationpage)
-- [TabbedPage (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-tabbedpage)
+- [TabbedPageWithNavigationPage (пример)](/samples/xamarin/xamarin-forms-samples/navigation-tabbedpagewithnavigationpage)
+- [TabbedPage (пример)](/samples/xamarin/xamarin-forms-samples/navigation-tabbedpage)
 - [Иерархическая навигация](~/xamarin-forms/app-fundamentals/navigation/hierarchical.md)
 - [Виды страниц](https://developer.xamarin.com/r/xamarin-forms/book/chapter25.pdf)
 - [API TabbedPage](xref:Xamarin.Forms.TabbedPage)

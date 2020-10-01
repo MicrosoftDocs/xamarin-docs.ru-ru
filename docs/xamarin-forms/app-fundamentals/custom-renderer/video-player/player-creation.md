@@ -10,18 +10,18 @@ ms.date: 02/12/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d026ecc3288da155aefb0f68ee0c70721106c0da
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 7de5f0ec67a4735b8157b539b80e193fa67256b1
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84133748"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563488"
 ---
 # <a name="creating-the-platform-video-players"></a>Создание видеопроигрывателей платформы
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
 
-Решение [**VideoPlayerDemos**](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos) содержит весь необходимый код для внедрения видеопроигрывателя для Xamarin.Forms. Оно также включает ряд страниц, где демонстрируется использование видеопроигрывателя в приложении. Весь код `VideoPlayer` и отрисовщики платформ находятся в папках проекта с именем `FormsVideoLibrary` и используют пространство имен `FormsVideoLibrary`. Благодаря этому вы сможете легко копировать файлы в собственное приложение и ссылаться на классы.
+Решение [**VideoPlayerDemos**](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos) содержит весь необходимый код для внедрения видеопроигрывателя для Xamarin.Forms. Оно также включает ряд страниц, где демонстрируется использование видеопроигрывателя в приложении. Весь код `VideoPlayer` и отрисовщики платформ находятся в папках проекта с именем `FormsVideoLibrary` и используют пространство имен `FormsVideoLibrary`. Благодаря этому вы сможете легко копировать файлы в собственное приложение и ссылаться на классы.
 
 ## <a name="the-video-player"></a>Видеопроигрыватель
 
@@ -467,4 +467,4 @@ namespace FormsVideoLibrary.UWP
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Демоверсии видеопроигрывателя (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
+- [Демоверсии видеопроигрывателя (пример)](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)

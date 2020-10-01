@@ -10,14 +10,14 @@ ms.date: 05/24/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 62c323dd73f656d5b4f4e06c672fd952845efb22
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9ce36af6b8b2a70a7993ff9605c6a7b7735fd974
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137804"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91563280"
 ---
-# <a name="create-a-xamarinforms-shell-application"></a>Создание приложения оболочки Xamarin.Forms
+# <a name="create-a-no-locxamarinforms-shell-application"></a>Создание приложения оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
@@ -142,4 +142,4 @@ namespace Xaminals
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Xaminals (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+- [Xaminals (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
