@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: 5c3d829038692635284c447e11ab08ad2afe6885
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: a99ce9ed5046c782a9cbdb09a6dec495900c3a32
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "71059785"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91451466"
 ---
-Поздравляем с завершением этого учебника, где вы научились:
+Поздравляем с завершением этого руководства, в котором вы научились:
 
 > [!div class="checklist"]
 >
@@ -14,7 +14,7 @@ ms.locfileid: "71059785"
 > - Отвечать на текст в изменении `Editor`.
 > - Настраивать поведение `Editor`.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы узнать больше об основах создания мобильных приложений с помощью Xamarin.Forms, перейдите к учебнику по образам.
 
@@ -23,6 +23,6 @@ ms.locfileid: "71059785"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [EditorTutorial (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-tutorials-editortutorial/)
+- [EditorTutorial (пример)](/samples/xamarin/xamarin-forms-samples/getstarted-tutorials-editortutorial/)
 - [Редактор Xamarin.Forms (руководство)](~/xamarin-forms/user-interface/text/editor.md)
 - [API редактора](xref:Xamarin.Forms.Editor)
