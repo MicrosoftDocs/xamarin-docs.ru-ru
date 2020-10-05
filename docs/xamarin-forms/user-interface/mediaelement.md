@@ -10,12 +10,12 @@ ms.date: 02/18/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e868eccf446ab22879a66e6e507d810b7e0e13d7
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 43702453d1defc3b5a63aba845231f514913d7c5
+ms.sourcegitcommit: 1649554b8c08369b713d20246154455c0ba7d1c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91559770"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "91712559"
 ---
 # <a name="no-locxamarinforms-mediaelement"></a>Xamarin.Forms MediaElement
 
@@ -534,7 +534,7 @@ public class PositionSlider : Slider
 В этом примере [`Slider`](xref:Xamarin.Forms.Slider) данные привязывают свое `Value` свойство к [`Volume`](xref:Xamarin.Forms.MediaElement.Volume) свойству объекта [`MediaElement`](xref:Xamarin.Forms.MediaElement) . Это возможно, поскольку `Volume` свойство использует `TwoWay` привязку. Поэтому изменение свойства `Value` приведет к `Volume` изменению свойства.
 
 > [!NOTE]
-> [`Volume`](xref:Xamarin.Forms.MediaElement.Volume)Свойство имеет обратный вызов влидатион, гарантирующий, что его значение больше или равно 0,0 и меньше или равно 1,0.
+> [`Volume`](xref:Xamarin.Forms.MediaElement.Volume)Свойство имеет обратный вызов проверки, гарантирующий, что его значение больше или равно 0,0 и меньше или равно 1,0.
 
 Дополнительные сведения об использовании значка [`Slider`](xref:Xamarin.Forms.Slider) просмотра, [ Xamarin.Forms ползунка](~/xamarin-forms/user-interface/slider.md)
 
