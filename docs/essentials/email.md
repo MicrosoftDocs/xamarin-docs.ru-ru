@@ -5,20 +5,47 @@ ms.assetid: 5FBB6FF0-0E7B-4C29-8F06-91642AF12629
 author: jamesmontemagno
 ms.custom: video
 ms.author: jamont
-ms.date: 08/20/2019
+ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: eba2b6decc74c63e6b2790287842e6cc9b237bd2
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 059405d4e3219162022b3f8c0208ee5cc4ac2d38
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84802375"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91434538"
 ---
-# <a name="xamarinessentials-email"></a>Xamarin.Essentials. Адрес эл. почты
+# <a name="no-locxamarinessentials-email"></a>Xamarin.Essentials. Адрес эл. почты
 
 Класс **Email** позволяет приложению открывать приложение электронной почты по умолчанию с указанной информацией, включая тему, текст и получателей (TO, CC, BCC).
+
+Для доступа к функции **Email** нужно создать описанную ниже конфигурацию для конкретной платформы.
+
+# <a name="android"></a>[Android](#tab/android)
+
+Если целевой версией Android для проекта является **Android 11 (API R 30)** , необходимо обновить манифест Android с помощью запросов, которые используются с новыми [требованиями к видимости пакета](https://developer.android.com/preview/privacy/package-visibility).
+
+Откройте файл **AndroidManifest.xml** в папке **Properties** и добавьте приведенный ниже код в узел **manifest**:
+
+```xml
+<queries>
+  <intent>
+    <action android:name="android.intent.action.SENDTO" />
+    <data android:scheme="mailto" />
+  </intent>
+</queries>
+```
+
+# <a name="ios"></a>[iOS](#tab/ios)
+
+Дополнительная настройка не требуется.
+
+# <a name="uwp"></a>[UWP](#tab/uwp)
+
+Различия платформ отсутствуют.
+
+-----
 
 ## <a name="get-started"></a>Начало работы
 
@@ -102,7 +129,7 @@ await Email.ComposeAsync(message);
 
 Поддерживается только `PlainText`, так как если `BodyFormat` попытается отправить `Html`, возникнет исключение `FeatureNotSupportedException`.
 
-Не все почтовые клиенты поддерживают отправку вложений. Дополнительные сведения см. в [документации](https://docs.microsoft.com/windows/uwp/contacts-and-calendar/sending-email).
+Не все почтовые клиенты поддерживают отправку вложений. Дополнительные сведения см. в [документации](/windows/uwp/contacts-and-calendar/sending-email).
 
 -----
 

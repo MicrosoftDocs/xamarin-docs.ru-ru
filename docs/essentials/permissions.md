@@ -5,18 +5,18 @@ ms.assetid: 34062D84-3E55-4AF7-A688-8551068B1E57
 author: jamesmontemagno
 ms.author: jamont
 ms.custom: video
-ms.date: 01/06/2020
+ms.date: 09/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d594e627fed21c3c2a73770313fcae29695370c5
-ms.sourcegitcommit: a658de488a6da916145ed4aa016825565110e767
+ms.openlocfilehash: 12631abacc56edf88d375d4be89e71a9a4588d03
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86972562"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436380"
 ---
-# <a name="xamarinessentials-permissions"></a>Xamarin.Essentials. Разрешения
+# <a name="no-locxamarinessentials-permissions"></a>Xamarin.Essentials. Разрешения
 
 Класс **Permissions** позволяет проверять и запрашивать разрешения среды выполнения.
 
@@ -67,6 +67,13 @@ var status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
 * Disabled — эта возможность отключена на устройстве.
 * Granted — пользователь предоставил разрешение или оно предоставляется автоматически.
 * Restricted — в ограниченном состоянии.
+
+
+## <a name="explain-why-permission-is-needed"></a>Пояснение причины, по которой требуется разрешение
+
+![Предварительный выпуск API](~/media/shared/preview.png)
+
+Рекомендуется объяснять, почему приложению требуется определенное разрешение. В iOS необходимо указать строку, которая будет отображаться для пользователя. В Android нет такой возможности, и по умолчанию разрешение имеет состояние "Отключено". Из-за этого не так легко определить, отказался ли пользователь от предоставления разрешения или оно запрашивается впервые. Чтобы определить, следует ли отображать пользовательский интерфейс с пояснением, можно использовать метод `ShouldShowRationale`. Если метод возвращает `true`, значит пользователь отклонил или отключил разрешение в прошлом. На других платформах при вызове этого метода всегда возвращается `false`.
 
 ## <a name="available-permissions"></a>Доступные разрешения
 
@@ -192,7 +199,7 @@ public class ReadWriteStoragePermission : Xamarin.Essentials.Permissions.BasePla
 await Permissions.RequestAsync<ReadWriteStoragePermission>();
 ```
 
-Если бы вы хотели вызывать этот API из общего кода, можно было бы создать интерфейс и использовать [службу зависимостей](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/dependency-service/) для регистрации и получения реализации.
+Если бы вы хотели вызывать этот API из общего кода, можно было бы создать интерфейс и использовать [службу зависимостей](../xamarin-forms/app-fundamentals/dependency-service/index.md) для регистрации и получения реализации.
 
 ```csharp
 public interface IReadWritePermission
@@ -235,21 +242,21 @@ if (status != PermissionStatus.Granted)
 
 # <a name="android"></a>[Android](#tab/android)
 
-У разрешений должны быть соответствующие атрибуты, заданные в файле манифеста Android.
+У разрешений должны быть соответствующие атрибуты, заданные в файле манифеста Android. Состояние разрешения по умолчанию — "Отклонено".
 
-Дополнительные сведения см. в статье [Permissions in Xamarin.Android](https://docs.microsoft.com/xamarin/android/app-fundamentals/permissions) (Разрешения в Xamarin.Android).
+Дополнительные сведения см. в статье [Permissions in Xamarin.Android](../android/app-fundamentals/permissions.md) (Разрешения в Xamarin.Android).
 
 # <a name="ios"></a>[iOS](#tab/ios)
 
-У разрешений должна быть совпадающая строка в файле `Info.plist`. После того, как разрешение будет запрошено и отклонено, при повторном запросе этого разрешения всплывающее окно отображаться не будет. Вы должны запрашивать у пользователя вручную настроить параметры на экране параметров приложений в iOS.
+У разрешений должна быть совпадающая строка в файле `Info.plist`. После того, как разрешение будет запрошено и отклонено, при повторном запросе этого разрешения всплывающее окно отображаться не будет. Вы должны запрашивать у пользователя вручную настроить параметры на экране параметров приложений в iOS. Состояние разрешения по умолчанию — "Неизвестно".
 
-Дополнительные сведения о компонентах обеспечения безопасности и конфиденциальности в iOS см. [здесь](https://docs.microsoft.com/xamarin/ios/app-fundamentals/security-privacy).
+Дополнительные сведения о компонентах обеспечения безопасности и конфиденциальности в iOS см. [здесь](../ios/app-fundamentals/security-privacy.md).
 
 # <a name="uwp"></a>[UWP](#tab/uwp)
 
-Разрешения должны иметь соответствующие возможности, объявленные в манифесте пакета.
+Разрешения должны иметь соответствующие возможности, объявленные в манифесте пакета. В большинстве случаев состояние разрешения по умолчанию — "Неизвестно".
 
-Дополнительные сведения об объявлении возможностей приложения см. [здесь](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations).
+Дополнительные сведения об объявлении возможностей приложения см. [здесь](/windows/uwp/packaging/app-capability-declarations).
 
 --------------
 

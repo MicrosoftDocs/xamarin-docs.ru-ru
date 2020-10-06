@@ -12,14 +12,14 @@ ms.date: 05/23/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: da56bde956a0ff7730ef6737e2802c3723d6d716
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e6670faf921248c007c20307fddb6a34057c5202
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84133488"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91436676"
 ---
-# <a name="build-your-first-xamarinforms-app"></a>Создание первого приложения Xamarin.Forms
+# <a name="build-your-first-no-locxamarinforms-app"></a>Создание первого приложения Xamarin.Forms
 
 _Просмотрите это видео и следуйте инструкциям, чтобы создать свое первое приложение для мобильных устройств с помощью Xamarin.Forms._
 
@@ -210,7 +210,7 @@ _Просмотрите это видео и следуйте инструкци
 
 ::: zone-end
 
-Загрузите полный код из [коллекции примеров](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-firstapp/) или просмотрите его на [GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/GetStarted/FirstApp).
+Загрузите полный код из [коллекции примеров](/samples/xamarin/xamarin-forms-samples/getstarted-firstapp/) или просмотрите его на [GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/GetStarted/FirstApp).
 
 ## <a name="next-steps"></a>Следующие шаги
 

@@ -12,14 +12,14 @@ ms.date: 04/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8858a66d2caeea815bf06d5d2741bfc3623598f5
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 06cd68c56192664f6d11ec9f6adbe30f9ae5168c
+ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86933735"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91433470"
 ---
-# <a name="perform-navigation-in-a-multi-page-xamarinforms-application"></a>Навигация в многостраничном приложении Xamarin.Forms
+# <a name="perform-navigation-in-a-multi-page-no-locxamarinforms-application"></a>Навигация в многостраничном приложении Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-multipage/)
 
@@ -36,7 +36,7 @@ ms.locfileid: "86933735"
 
 ### <a name="prerequisites"></a>Предварительные требования
 
-Прежде чем приступать к этому краткому руководству, необходимо успешно завершить [предыдущее](single-page.md). Также вы можете скачать [пример из предыдущего краткого руководства](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-singlepage/) и использовать его в качестве отправной точки для работы с этим руководством.
+Прежде чем приступать к этому краткому руководству, необходимо успешно завершить [предыдущее](single-page.md). Также вы можете скачать [пример из предыдущего краткого руководства](/samples/xamarin/xamarin-forms-samples/getstarted-notes-singlepage/) и использовать его в качестве отправной точки для работы с этим руководством.
 
 ::: zone pivot="windows"
 
@@ -620,5 +620,5 @@ ms.locfileid: "86933735"
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Заметки (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-multipage/)
+- [Заметки (пример)](/samples/xamarin/xamarin-forms-samples/getstarted-notes-multipage/)
 - [Подробное изучение кратких руководств по Xamarin.Forms](deepdive.md)

@@ -1,6 +1,6 @@
 ---
-title: 'title: "Xamarin.Forms — общие сведения о DependencyService" description: "В этой статье объясняется, как использовать класс Xamarin.Forms DependencyService для вызова собственных функций платформы".'
-description: 'ms.prod: xamarin ms.assetid: 5d019604-4f6f-4932-9b26-1fce3b4d88f8 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 06/12/2019 no-loc: [Xamarin.Forms, Xamarin.Essentials]'
+title: Общие сведения о Xamarin.Forms DependencyService
+description: В этой статье объясняется, как использовать класс Xamarin.Forms DependencyService для вызова собственных функций платформы.
 ms.prod: xamarin
 ms.assetid: 5d019604-4f6f-4932-9b26-1fce3b4d88f8
 ms.technology: xamarin-forms
@@ -10,14 +10,14 @@ ms.date: 06/12/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f4d43a0c9c4878733d65b170c27e744b397aa4d0
-ms.sourcegitcommit: ea9269b5d9e3d68b61bb428560a10034117ee457
+ms.openlocfilehash: 2d63ac91031fc4a2cc127272a075f15a8ea81f4e
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84138363"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91555286"
 ---
-# <a name="xamarinforms-dependencyservice-introduction"></a>Общие сведения о Xamarin.Forms DependencyService
+# <a name="no-locxamarinforms-dependencyservice-introduction"></a>Общие сведения о Xamarin.Forms DependencyService
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)
 
@@ -159,5 +159,5 @@ DeviceOrientation orientation = DependencyService.Get<IDeviceOrientationService>
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Использование класса DependencyService (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)
+- [Использование класса DependencyService (пример)](/samples/xamarin/xamarin-forms-samples/dependencyservice/)
 - [Регистрация и разрешение класса Xamarin.Forms DependencyService](registration-and-resolution.md)

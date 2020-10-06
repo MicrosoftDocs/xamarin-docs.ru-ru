@@ -10,14 +10,14 @@ ms.date: 12/18/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 341e1454c37d1fd20423204c95337e580eba7ecb
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cadefcf4eb3fbc1c8e5c1e2545ef5f4a98eb64e7
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84573408"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91561319"
 ---
-# <a name="automation-properties-in-xamarinforms"></a>Свойства автоматизации в Xamarin.Forms
+# <a name="automation-properties-in-no-locxamarinforms"></a>Свойства автоматизации в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-accessibility)
 
@@ -174,4 +174,4 @@ master.IconImageSource.AutomationId = "btnMDPAutomationID";
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Вложенные свойства](~/xamarin-forms/xaml/attached-properties.md)
-- [Специальные возможности (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-accessibility)
+- [Специальные возможности (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-accessibility)

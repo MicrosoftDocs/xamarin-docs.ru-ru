@@ -4,25 +4,56 @@ description: Класс Browser в Xamarin.Essentials позволяет при�
 ms.assetid: BABF40CC-8BEE-43FD-BE12-6301DF27DD33
 author: jamesmontemagno
 ms.author: jamont
-ms.date: 04/02/2019
+ms.date: 09/24/2020
 ms.custom: video
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 997c6b66b5dba43eb440130f3f58d31a5a274815
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 0c38949e9c8c0a957a7afa37206683588ffbb4cf
+ms.sourcegitcommit: 3a15d9b29d65139b18dcf0871fe00cffb2a56357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84802247"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353412"
 ---
-# <a name="xamarinessentials-browser"></a>Xamarin.Essentials. Браузер
+# <a name="no-locxamarinessentials-browser"></a>Xamarin.Essentials. Браузер
 
 Класс **Browser** позволяет приложению открыть веб-ссылку в предпочитаемом браузере оптимизированной системы или внешнем браузере.
 
 ## <a name="get-started"></a>Начало работы
 
 [!include[](~/essentials/includes/get-started.md)]
+
+Для доступа к функции **Browser** нужно создать описанную ниже конфигурацию для конкретной платформы.
+
+# <a name="android"></a>[Android](#tab/android)
+
+Если целевой версией Android для проекта является **Android 11 (API R 30)** , необходимо обновить манифест Android с помощью запросов, которые используются с новыми [требованиями к видимости пакета](https://developer.android.com/preview/privacy/package-visibility).
+
+Откройте файл **AndroidManifest.xml** в папке **Properties** и добавьте приведенный ниже код в узел **manifest**:
+
+```xml
+<queries>
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="http"/>
+  </intent>
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="https"/>
+  </intent>
+</queries>
+```
+
+# <a name="ios"></a>[iOS](#tab/ios)
+
+Дополнительная настройка не требуется.
+
+# <a name="uwp"></a>[UWP](#tab/uwp)
+
+Различия платформ отсутствуют.
+
+-----
 
 ## <a name="using-browser"></a>Использование класса Browser
 

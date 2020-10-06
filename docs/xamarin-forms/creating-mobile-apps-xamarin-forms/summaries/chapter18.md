@@ -10,12 +10,12 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1f180173a42654c54c5686e423ba20d9586271ea
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: b2309d6ec6712be32f6e972fab130a542fbec857
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136712"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91557430"
 ---
 # <a name="summary-of-chapter-18-mvvm"></a>Сводная информация о Главе 18. MVVM
 
@@ -45,7 +45,7 @@ ms.locfileid: "84136712"
 
 ### <a name="a-viewmodel-clock"></a>Часы ViewModel
 
-[`DateTimeViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/DateTimeViewModel.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit) определяет свойство с типом `DateTime`, значение которого изменятся по таймеру. Этот класс реализует `INotifyPropertyChanged` и активирует событие `PropertyChanged` при каждом изменении свойства `DateTime`.
+[`DateTimeViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/DateTimeViewModel.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit) определяет свойство типа `DateTime`, значение которого изменятся по таймеру. Этот класс реализует `INotifyPropertyChanged` и активирует событие `PropertyChanged` при каждом изменении свойства `DateTime`.
 
 Пример [**MvvmClock**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter18/MvvmClock) создает экземпляр этой ViewModel и использует привязку данных к ViewModel для отображения сведений о текущих дате и времени.
 
@@ -55,13 +55,13 @@ ms.locfileid: "84136712"
 
 ### <a name="a-color-viewmodel"></a>ViewModel для цвета
 
-[`ColorViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ColorViewModel.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit) включает в себя цветовые модели RGB и HSL. Его использование представлено в примере [**HslSliders**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter18/HslSliders):
+[`ColorViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ColorViewModel.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit) включает в себя цветовые модели RGB и HSL. Его использование представлено в примере [**HslSliders**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter18/HslSliders):
 
 [![Три снимка экрана с набором инструментов](images/ch18fg08-small.png "Цветовая модель HSL")](images/ch18fg08-large.png#lightbox "Цветовая модель HSL")
 
 ### <a name="streamlining-the-viewmodel"></a>Упрощение ViewModel
 
-Вы можете упростить код ViewModel, определив метод `OnPropertyChanged` с атрибутом [`CallerMemberName`](xref:System.Runtime.CompilerServices.CallerMemberNameAttribute), который автоматически получает имя вызывающего свойства. Класс [`ViewModelBase`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ViewModelBase.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit) выполняет именно эту функцию и служит базовым классом для ViewModel.
+Вы можете упростить код ViewModel, определив метод `OnPropertyChanged` с атрибутом [`CallerMemberName`](xref:System.Runtime.CompilerServices.CallerMemberNameAttribute), который автоматически получает имя вызывающего свойства. Класс [`ViewModelBase`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ViewModelBase.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit) выполняет именно эту функцию и служит базовым классом для ViewModel.
 
 ## <a name="the-command-interface"></a>Командный интерфейс
 
@@ -90,7 +90,7 @@ MVVM работает с привязками данных, а они в сво�
 
 ### <a name="a-calculator-almost"></a>Калькулятор, ну почти
 
-Пример [**AddingMachine**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter18/AddingMachine) использует оба метода класса `ICommand`: `Execute` и `CanExecute`. Он использует также класс [`AdderViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/AdderViewModel.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/AdderViewModel.cs). ViewModel содержит шесть свойств с типом `ICommand`. Они инициализируются из [конструктора `Command`](xref:Xamarin.Forms.Command.%23ctor(System.Action)) и [конструктора `Command`](xref:Xamarin.Forms.Command.%23ctor(System.Action,System.Func{System.Boolean})) класса `Command`, а также [конструктора `Command<T>`](https://docs.microsoft.com/dotnet/api/xamarin.forms.command.-ctor?view=xamarin-forms#Xamarin_Forms_Command__ctor_System_Action_System_Object__System_Func_System_Object_System_Boolean__) класса `Command<T>`. Все числовые кнопки на сумматоре привязаны к свойству, которое инициализируется значением `Command<T>`, а аргумент `string` — к `Execute`, где `CanExecute` обозначает конкретную кнопку.
+Пример [**AddingMachine**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter18/AddingMachine) использует оба метода класса `ICommand`: `Execute` и `CanExecute`. Он использует также класс [`AdderViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/AdderViewModel.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/AdderViewModel.cs). ViewModel содержит шесть свойств с типом `ICommand`. Они инициализируются из [конструктора `Command`](xref:Xamarin.Forms.Command.%23ctor(System.Action)) и [конструктора `Command`](xref:Xamarin.Forms.Command.%23ctor(System.Action,System.Func{System.Boolean})) класса `Command`, а также [конструктора `Command<T>`](/dotnet/api/xamarin.forms.command.-ctor?view=xamarin-forms#Xamarin_Forms_Command__ctor_System_Action_System_Object__System_Func_System_Object_System_Boolean__) класса `Command<T>`. Все числовые кнопки на сумматоре привязаны к свойству, которое инициализируется значением `Command<T>`, а аргумент `string` — к `Execute`, где `CanExecute` обозначает конкретную кнопку.
 
 ## <a name="viewmodels-and-the-application-lifecycle"></a>ViewModel и жизненный цикл приложения
 

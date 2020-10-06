@@ -9,14 +9,14 @@ ms.custom: video
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: acc0c48776c7a91e9e5a060928564bc6e0c1d775
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 60a5fbaa8386d0ecdc5d205b3262e05406cec4a6
+ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84801820"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91556247"
 ---
-# <a name="xamarinessentials-preferences"></a>Xamarin.Essentials. Параметры
+# <a name="no-locxamarinessentials-preferences"></a>Xamarin.Essentials. Параметры
 
 Класс **Preferences** помогает хранить параметры приложения в хранилище ключей и значений.
 
@@ -62,7 +62,7 @@ Preferences.Remove("my_key");
 Preferences.Clear();
 ```
 
-В дополнение к этим методам каждый принимает необязательное свойство `sharedName`, которое может использоваться для создания дополнительных контейнеров для параметров. Особенности реализации для платформ см. ниже.
+Представленные выше методы также принимают необязательный параметр `sharedName`, который может использоваться для создания дополнительных контейнеров для настроек. Особенности реализации для платформ см. ниже.
 
 ## <a name="supported-data-types"></a>Поддерживаемые типы данных
 
@@ -81,7 +81,7 @@ Preferences.Clear();
 Настройки хранятся в собственном коде, что позволяет интегрировать параметры в собственные системные параметры. Для интеграции с платформой используйте документацию и примеры платформы:
 
 * Apple: [Реализация пакета параметров iOS](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/UserDefaults/Preferences/Preferences.html)
-* [Пример настроек приложения для iOS](https://docs.microsoft.com/samples/xamarin/ios-samples/appprefs/)
+* [Пример настроек приложения для iOS](/samples/xamarin/ios-samples/appprefs/)
 * [Параметры watchOS](https://developer.xamarin.com/guides/ios/watch/working-with/settings/)
 * Android: [Начало работы с экранами параметров](https://developer.android.com/guide/topics/ui/settings.html)
 
@@ -93,15 +93,15 @@ Preferences.Clear();
 
 # <a name="android"></a>[Android](#tab/android)
 
-Все данные хранятся в объекте [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences.html). Если свойство `sharedName` не указано, используются общие параметры по умолчанию, в противном случае используется имя для получения **частных** общих параметров с указанным именем.
+Все данные хранятся в объекте [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences.html). Если свойство `sharedName` не указано, используются общие настройки по умолчанию. В противном случае используется имя для получения **частных** общих настроек с указанным именем.
 
 # <a name="ios"></a>[iOS](#tab/ios)
 
-[NSUserDefaults](https://docs.microsoft.com/xamarin/ios/app-fundamentals/user-defaults) используются для хранения значений на устройствах iOS. Если свойство `sharedName` не указано, используется `StandardUserDefaults`. В противном случае используется имя для создания `NSUserDefaults` с определенным именем, используемым для `NSUserDefaultsType.SuiteName`.
+[NSUserDefaults](../ios/app-fundamentals/user-defaults.md) используются для хранения значений на устройствах iOS. Если свойство `sharedName` не указано, используется `StandardUserDefaults`. В противном случае используется имя для создания `NSUserDefaults` с определенным именем, используемым для `NSUserDefaultsType.SuiteName`.
 
 # <a name="uwp"></a>[UWP](#tab/uwp)
 
-[ApplicationDataContainer](https://docs.microsoft.com/uwp/api/windows.storage.applicationdatacontainer) используется для хранения значений на устройстве. Если свойство `sharedName` не указано, используется `LocalSettings`. В противном случае используется имя для создания контейнера в `LocalSettings`.
+[ApplicationDataContainer](/uwp/api/windows.storage.applicationdatacontainer) используется для хранения значений на устройстве. Если свойство `sharedName` не указано, используется `LocalSettings`. В противном случае используется имя для создания контейнера в `LocalSettings`.
 
 `LocalSettings` также имеет следующее ограничение: длина имени каждого параметра не может превышать 255 символов. Каждый параметр может иметь размер до 8 КБ, а каждый составной параметр — до 64 КБ.
 
@@ -109,11 +109,11 @@ Preferences.Clear();
 
 ## <a name="persistence"></a>Сохраняемость
 
-При удалении приложения все _параметры_ удаляются. Существует одно исключение: приложения, которые выполняются на платформе Android 6.0 (API уровня 23) или более поздних версий и используют [__автоматическое резервное хранение__](https://developer.android.com/guide/topics/data/autobackup). Эта функция включена по умолчанию и сохраняет данные приложения, включая __общие параметры__, которые использует API **параметров**. Ее можно отключить, выполнив следующие шаги в [документации Google](https://developer.android.com/guide/topics/data/autobackup).
+Удаление приложения приводит к удалению всех _настроек_ за одним исключением: приложения, которые выполняются на платформе Android 6.0 (API уровня 23) или более поздних версий и используют [__автоматическое резервное копирование__](https://developer.android.com/guide/topics/data/autobackup). Эта функция включена по умолчанию и сохраняет данные приложения, включая __общие параметры__, которые использует API **параметров**. Ее можно отключить, выполнив следующие шаги в [документации Google](https://developer.android.com/guide/topics/data/autobackup).
 
 ## <a name="limitations"></a>Ограничения
 
-При сохранении строки этот API сохраняет небольшие блоки текста.  Производительность может быть низкой, если сохранять большие объемы текста.
+При сохранении строки этот API сохраняет небольшие блоки текста. Производительность может быть низкой, если сохранять большие объемы текста.
 
 ## <a name="api"></a>API
 
