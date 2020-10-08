@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 07/31/2018
-ms.openlocfilehash: 702ca70e220d8e4d28a1a2ddc6be40daae052d58
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: 75edc03706908df365bfda05229a8081ef50a4ac
+ms.sourcegitcommit: db5173f26edbb94b0ec60ab9a708fa04478480f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91456124"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91853294"
 ---
 # <a name="remote-notifications-with-firebase-cloud-messaging"></a>Удаленные уведомления с помощью Firebase Cloud Messaging
 
@@ -34,7 +34,7 @@ _В этом пошаговом руководстве представлено 
 
 В ходе этого пошагового руководства вы будете постепенно добавлять функции в **фкмклиент** и запускать их на устройстве или в эмуляторе, чтобы понять, как она взаимодействует с FCM. Вы будете использовать ведение журнала для транзакций с активными приложениями-свидетелями с FCM серверами, и вы будете видеть, как создаются уведомления из сообщений FCM, которые вводятся в графический интерфейс уведомлений консоли Firebase.
 
-## <a name="requirements"></a>Требования
+## <a name="requirements"></a>Requirements (Требования)
 
 Будет полезно ознакомиться с [различными типами сообщений](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages) , которые могут быть отправлены Firebase облачными сообщениями. Полезная нагрузка сообщения определит, как клиентское приложение будет принимать и обрабатывать сообщение.
 
@@ -476,7 +476,7 @@ if (Intent.Extras != null)
 Log.Debug(TAG, "google app id: " + GetString(Resource.String.google_app_id));
 ```
 
-`google_app_id`Значение, записываемое в окно вывода, должно соответствовать `mobilesdk_app_id` значению, записанному в **google-services.js**.
+`google_app_id`Значение, записываемое в окно вывода, должно соответствовать `mobilesdk_app_id` значению, записанному в **google-services.js**. Объект `Resource.String.google_app_id` создается MSBuild при обработке **google-services.jsв**. 
 
 ### <a name="send-a-message"></a>Отправка сообщения
 

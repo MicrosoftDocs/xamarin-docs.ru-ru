@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/02/2017
-ms.openlocfilehash: 67638a261cd9a6e8c356924d47ea4adb4eae6a80
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: efac76338af710e716decf47635652bf8de74910
+ms.sourcegitcommit: 6d347e1d7641ac1d2b389fb1dc7a6882a08f7c00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91430989"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91851513"
 ---
 # <a name="macos-apis-for-xamarinmac-developers"></a>API-интерфейсы macOS для разработчиков Xamarin. Mac
 
@@ -33,8 +33,8 @@ ms.locfileid: "91430989"
 - `-`Префикс означает, что это метод экземпляра (не статический). + означает, что это метод класса (статический)
 - `(BOOL)` Тип возвращаемого значения (bool в C#)
 - `canDragRowsWithIndexes` Первая часть имени.
-- `(NSIndexSet *)rowIndexes` параметр является первым параметром и имеет тип. Первый параметр имеет формат: `(Type) pararmName`
-- `atPoint:(NSPoint)mouseDownPoint` Второй параметр и его тип. Каждый параметр после первого является форматом: `selectorPart:(Type) pararmName`
+- `(NSIndexSet *)rowIndexes` параметр является первым параметром и имеет тип. Первый параметр имеет формат: `(Type) paramName`
+- `atPoint:(NSPoint)mouseDownPoint` Второй параметр и его тип. Каждый параметр после первого является форматом: `selectorPart:(Type) paramName`
 - Полное имя этого селектора сообщений: `canDragRowsWithIndexes:atPoint:` . Обратите внимание, что в `:` конечном итоге это важно.
 - Фактическая привязка C# для Xamarin. Mac: `bool CanDragRows (NSIndexSet rowIndexes, PointF mouseDownPoint)`
 
@@ -45,7 +45,7 @@ ms.locfileid: "91430989"
 ```
 
 - Экземпляр `v` имеет свой `canDragRowsWithIndexes:atPoint` селектор, вызываемый с двумя параметрами, `set` и `point` , переданным в.
-- В C# вызов метода выглядит следующим образом: `x.CanDragRows (set, point);`
+- В C# вызов метода выглядит следующим образом: `v.CanDragRows (set, point);`
 
 <a name="finding_selector"></a>
 
