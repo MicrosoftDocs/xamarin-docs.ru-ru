@@ -10,16 +10,19 @@ ms.date: 03/27/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 182256fd572a370a7b322898b1e24ade12e971fd
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 4221cd313ca8fbc3f3f9f886e3bd3f774c7472f7
+ms.sourcegitcommit: 27f33b0a83b9dc871ad9fb207a1c9960ef197d9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84127383"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91897951"
 ---
 # <a name="use-design-time-data-with-the-xaml-previewer"></a>Использование данных времени разработки с предварительным просмотром XAML
 
 _Некоторые макеты трудно визуализировать без данных. Используйте эти советы, чтобы максимально эффективно использовать предварительный просмотр страниц, интенсивно использующих данные, в средстве предварительного просмотра XAML._
+
+> [!NOTE]
+> Если вы используете Windows Presentation Foundation (WPF) или UWP, см. статью [использование данных времени разработки с конструктор XAML для классических приложений](/visualstudio/xaml-tools/xaml-designtime-data) .
 
 ## <a name="design-time-data-basics"></a>Основы данных во время разработки
 
@@ -41,7 +44,7 @@ mc:Ignorable="d"
 
 [![Данные времени разработки с текстом в метке](xaml-previewer-images/designtimedata-label-sm.png "Добавление метки данных времени разработки с помощью текста")](xaml-previewer-images/designtimedata-label-lg.png#lightbox)
 
-В этом примере, без `d:Text` , предварительный просмотр XAML не будет показывать ничего для метки. Вместо этого отображается "Name!" где метка будет содержать реальные данные во время выполнения.
+В этом примере, без `d:Text` , предварительный просмотр XAML не будет показывать ничего для метки. Теперь же отображается текст "Name!" где метка будет содержать реальные данные во время выполнения.
 
 Можно использовать `d:` с любым атрибутом для Xamarin.Forms элемента управления, например цветов, размеров шрифта и промежутков. Можно даже добавить его в сам элемент управления:
 
@@ -136,7 +139,7 @@ xmlns:models="clr-namespace:Monkeys.Models"
 
 Если вы не хотите добавлять данные времени разработки в отдельные элементы управления, можно настроить фиктивное хранилище данных для привязки к странице. См. запись блога Джеймс Монтеманьо, [посвященную добавлению данных времени разработки](https://montemagno.com/xamarin-forms-design-time-data-tips-best-practices/) , чтобы увидеть, как выполнить привязку к статическому VIEWMODEL в XAML.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 ### <a name="requirements"></a>Требования
 
@@ -148,4 +151,4 @@ xmlns:models="clr-namespace:Monkeys.Models"
 
 ### <a name="the-xaml-previewer-stopped-working"></a>Предварительный просмотр XAML перестал работать
 
-Попробуйте закрыть и снова открыть XAML файл, а также очистить и перестроить проект.
+Попробуйте закрыть и снова открыть XAML-файл, а также очистить и перестроить проект.
