@@ -6,12 +6,12 @@ ms.assetid: 191c71fb-44a4-4e6c-af4b-7b1107dce6af
 author: davidortinau
 ms.author: daortin
 ms.date: 07/18/2018
-ms.openlocfilehash: 1a71b84d1068fef1730196bafb0f0d7e2a948c5c
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: bd8314e0f84dd74477782a1cfdcb6b91953ecdcd
+ms.sourcegitcommit: 827daa78c090bf79a1b55da45bb8012a1723b720
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936920"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997524"
 ---
 # <a name="shared-projects-code-sharing"></a>Совместное использование общего кода проектов
 
