@@ -10,12 +10,12 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 42f89f09bd84127fd19bc3ab64794bdac7f145d7
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 257962516b8a183e63c49b22bc2be108364d9425
+ms.sourcegitcommit: e7d6f8bb074c08d87f7507ad5f1377cfacefa32a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561629"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92041890"
 ---
 # <a name="no-locxamarinforms-editor"></a>Xamarin.FormsРедактор
 
@@ -133,7 +133,7 @@ Editor editor = new editor { CharacterSpacing = 10 };
 
 ## <a name="auto-size-an-editor"></a>Автоподбор размера редактора
 
-[`Editor`](xref:Xamarin.Forms.Editor)Можно установить для автоматического изменения размера содержимого, задав [`Editor.AutoSize`](xref:Xamarin.Forms.Editor.AutoSize) свойству [`TextChanges`](xref:Xamarin.Forms.EditorAutoSizeOption.TextChanges) значение, которое является значением [`EditoAutoSizeOption`](xref:Xamarin.Forms.EditorAutoSizeOption) перечисления. Это перечисление имеет два значения:
+[`Editor`](xref:Xamarin.Forms.Editor)Можно установить для автоматического изменения размера содержимого, задав [`Editor.AutoSize`](xref:Xamarin.Forms.Editor.AutoSize) свойству [`TextChanges`](xref:Xamarin.Forms.EditorAutoSizeOption.TextChanges) значение, которое является значением [`EditorAutoSizeOption`](xref:Xamarin.Forms.EditorAutoSizeOption) перечисления. Это перечисление имеет два значения:
 
 - [`Disabled`](xref:Xamarin.Forms.EditorAutoSizeOption.Disabled) Указывает, что автоматическое изменение размера отключено и является значением по умолчанию.
 - [`TextChanges`](xref:Xamarin.Forms.EditorAutoSizeOption.TextChanges) Указывает, что автоматическое изменение размера включено.
@@ -304,7 +304,7 @@ public partial class EditorPage : ContentPage
 > [!NOTE]
 > [`VisualElement`](xref:Xamarin.Forms.VisualElement)Класс, от которого [`Entry`](xref:Xamarin.Forms.Entry) наследует, также имеет [`Focused`](xref:Xamarin.Forms.VisualElement.Focused) события и [`Unfocused`](xref:Xamarin.Forms.VisualElement.Unfocused) .
 
-### <a name="completed"></a>Завершено
+### <a name="completed"></a>Completed
 
 `Completed`Событие используется для реагирования на завершение взаимодействия с `Editor` . `Completed` вызывается, когда пользователь заканчивает ввод с полем, вводя ключ возврата на клавиатуре (или нажав клавишу TAB в UWP). Обработчик события является универсальным обработчиком событий, принимающим отправителя и `EventArgs` :
 
