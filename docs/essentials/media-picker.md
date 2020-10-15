@@ -8,12 +8,12 @@ ms.date: 09/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 536c0da222441808a842656853c642a2e876188b
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 7c4299abf9c461a16f67ccf3d8caf03d5e568f13
+ms.sourcegitcommit: 827daa78c090bf79a1b55da45bb8012a1723b720
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91432250"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997513"
 ---
 # <a name="no-locxamarinessentials-media-picker"></a>Xamarin.Essentials: Средство выбора мультимедиа
 
@@ -39,7 +39,7 @@ ms.locfileid: "91432250"
 
 // Needed for Taking photo/video
 [assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
-[assembly: UsesPermission(Android.Manifest.Permission.CameraExternalStorage)]
+[assembly: UsesPermission(Android.Manifest.Permission.Camera)]
 
 // Add these properties if you would like to filter out cameras that do not have cameras or set to false to make them optional
 [assembly: UsesFeature("android.hardware.camera", Required = true)]
