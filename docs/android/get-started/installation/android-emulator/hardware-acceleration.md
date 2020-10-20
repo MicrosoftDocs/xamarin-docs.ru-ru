@@ -8,12 +8,12 @@ ms.technology: xamarin-android
 author: jondouglas
 ms.author: jodou
 ms.date: 02/13/2020
-ms.openlocfilehash: baeabf2cde7e0aabe3439d698e63636810069705
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: 4956e0dc4961065650fc9289884c24cd5b5f702c
+ms.sourcegitcommit: 6d347e1d7641ac1d2b389fb1dc7a6882a08f7c00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91454615"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91851539"
 ---
 # <a name="hardware-acceleration-for-emulator-performance-hyper-v--haxm"></a>Аппаратное ускорение для производительной работы эмулятора (Hyper-V и HAXM)
 
@@ -115,9 +115,11 @@ systeminfo
 
 При создании виртуального устройства (см. раздел [Управление виртуальными устройствами с помощью Android Device Manager](~/android/get-started/installation/android-emulator/device-manager.md)) не забудьте выбрать образ системы на базе **x86**. Если вы используете образ системы на основе ARM, виртуальное устройство не ускорится и будет работать медленно.
 
+Теперь технология Hyper-V должна быть включена, и вы можете запустить эмулятор Android с ускорением.
+
 ## <a name="accelerating-with-haxm"></a>Ускорение с помощью HAXM
 
-Используйте HAXM для ускорения эмулятора Android, если компьютер не поддерживает Hyper-V. Отключите [отключить Device Guard](~/android/get-started/installation/android-emulator/troubleshooting.md?tabs=vswin#disable-devguard), чтобы использовать HAXM.
+Если компьютер не поддерживает Hyper-V, используйте HAXM для ускорения эмулятора Android. Отключите [отключить Device Guard](~/android/get-started/installation/android-emulator/troubleshooting.md?tabs=vswin#disable-devguard), чтобы использовать HAXM.
 
 ### <a name="verifying-haxm-support"></a>Проверка поддержки HAXM
 
