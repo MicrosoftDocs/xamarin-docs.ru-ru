@@ -9,12 +9,12 @@ ms.custom: video
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0c38949e9c8c0a957a7afa37206683588ffbb4cf
-ms.sourcegitcommit: 3a15d9b29d65139b18dcf0871fe00cffb2a56357
+ms.openlocfilehash: d4e89a30075cf0d59c90d386403c3ff533b518d6
+ms.sourcegitcommit: dac04cec56290fb19034f3e135708f6966a8f035
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353412"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92169947"
 ---
 # <a name="no-locxamarinessentials-browser"></a>Xamarin.Essentials. Браузер
 
@@ -71,7 +71,14 @@ public class BrowserTest
 {
     public async Task OpenBrowser(Uri uri)
     {
-        await Browser.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
+        try
+        {
+            await Browser.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
+        }
+        catch(Exception ex)
+        {
+            // An unexpected error occured. No browser may be installed on the device.
+        }
     }
 }
 ```
