@@ -9,12 +9,12 @@ ms.date: 09/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 12631abacc56edf88d375d4be89e71a9a4588d03
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 01902942c750a3cd278d648fa82499af4c5d3ab6
+ms.sourcegitcommit: dac04cec56290fb19034f3e135708f6966a8f035
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91436380"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92169973"
 ---
 # <a name="no-locxamarinessentials-permissions"></a>Xamarin.Essentials. Разрешения
 
@@ -44,7 +44,7 @@ var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>()
 
 Если требуемое разрешение не объявлено, происходит исключение `PermissionException`.
 
-Прежде чем запрашивать разрешение, рекомендуется проверить его состояние. Если пользователь не получал запрос, каждая операционная система возвращает разные состояния по умолчанию. iOS возвращает `Unknown`, тогда как другие ОС возвращают `Denied`.
+Прежде чем запрашивать разрешение, рекомендуется проверить его состояние. Если пользователь не получал запрос, каждая операционная система возвращает разные состояния по умолчанию. iOS возвращает `Unknown`, тогда как другие ОС возвращают `Denied`. Если отображается состояние `Granted`, то нет необходимости выполнять другие вызовы. В iOS, если отображается состояние `Denied`, необходимо попросить пользователя изменить разрешение в параметрах. В Android, можно вызвать `ShouldShowRationale` для проверки того, отклонил ли пользователь разрешение в прошлом.
 
 ## <a name="requesting-permissions"></a>Запрос прав доступа
 
@@ -56,7 +56,7 @@ var status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
 
 Если требуемое разрешение не объявлено, происходит исключение `PermissionException`.
 
-Обратите внимание, что на некоторых платформах запрос разрешения может быть активирован только один раз. Для последующих запросов разработчику необходимо проверять, находится ли разрешение в состоянии `Denied`, и просить пользователя активировать его вручную.
+Обратите внимание, что на некоторых платформах запрос разрешения может быть активирован только один раз. Для последующих запросов разработчику необходимо проверять, находится ли разрешение в состоянии `Denied`, и просить пользователя активировать его вручную. 
 
 ## <a name="permission-status"></a>Состояние разрешения
 
@@ -114,12 +114,24 @@ Xamarin.Essentials пытается абстрагировать максима�
 public async Task<PermissionStatus> CheckAndRequestLocationPermission()
 {
     var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
-    if (status != PermissionStatus.Granted)
+    
+    if (status == PermissionStatus.Granted)
+        return status;
+        
+    
+    if (status == PermissionStatus.Denied && DeviceInfo.Platform == DevicePlatform.iOS)
     {
-        status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+        // Prompt the user to turn on in settings
+        // On iOS once a permission has been denied it may not be requested again from the application
+        return status;
     }
+    
+    if (Permissions.ShouldShowRationale<Permissions.LocationWhenInUse>())
+    {
+        // Prompt the user with additional information as to why the permission is needed
+    }   
 
-    // Additionally could prompt the user to turn on in settings
+    status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
 
     return status;
 }

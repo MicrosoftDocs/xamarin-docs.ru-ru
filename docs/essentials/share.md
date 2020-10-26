@@ -9,14 +9,14 @@ ms.custom: video
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ef4c9961e7e1fac20084247f4c85e87b79bcc427
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 93ad745790a746924f7037e490985c53c332c089
+ms.sourcegitcommit: dac04cec56290fb19034f3e135708f6966a8f035
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84801937"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92169921"
 ---
-# <a name="xamarinessentials-share"></a>Xamarin.Essentials. Общий доступ
+# <a name="no-locxamarinessentials-share"></a>Xamarin.Essentials. Общий доступ
 
 Класс **Share** позволяет приложению обмениваться данными, такими как текст и веб-ссылки, с другими приложениями на устройстве.
 
@@ -82,7 +82,7 @@ await Share.RequestAsync(new ShareFileRequest
 
 ## <a name="presentation-location"></a>Расположение презентации
 
-Запрашивая общую папку на iPadOS, вы можете использовать всплывающий элемент поверх элемента управления. Расположение можно указать с помощью свойства `PresentationSourceBounds`:
+Запрашивая общую папку на iPadOS, вы можете использовать всплывающий элемент поверх элемента управления. При этом определяется место отображения всплывающего элемента, а также указывается стрелка на него. В этом расположении обычно указывается элемент управления, который инициировал действие. Расположение можно указать с помощью свойства `PresentationSourceBounds`:
 
 ```csharp
 await Share.RequestAsync(new ShareFileRequest
@@ -93,6 +93,72 @@ await Share.RequestAsync(new ShareFileRequest
                             ? new System.Drawing.Rectangle(0, 20, 0, 0)
                             : System.Drawing.Rectangle.Empty
 });
+```
+
+Если вы используете Xamarin.Forms, можете передать `View` и вычислить границы:
+
+
+```
+public static class ViewHelpers
+{
+    public static Rectangle GetAbsoluteBounds(this Xamarin.Forms.View element)
+    {
+        Element looper = element;
+
+        var absoluteX = element.X + element.Margin.Top;
+        var absoluteY = element.Y + element.Margin.Left;
+
+        // Add logic to handle titles, headers, or other non-view bars
+
+        while (looper.Parent != null)
+        {
+            looper = looper.Parent;
+            if (looper is Xamarin.Forms.View v)
+            {
+                absoluteX += v.X + v.Margin.Top;
+                absoluteY += v.Y + v.Margin.Left;
+            }
+        }
+
+        return new Rectangle(absoluteX, absoluteY, element.Width, element.Height);
+    }
+
+    public static System.Drawing.Rectangle ToSystemRectangle(this Rectangle rect) =>
+        new System.Drawing.Rectangle((int)rect.X, (int)rect.Y, (int)rect.Width, (int)rect.Height);
+}
+```
+
+Затем при вызове `RequstAsync` можете использовать следующий код:
+
+```csharp
+public Command<Xamarin.Forms.View> ShareCommand { get; } = new Command<Xamarin.Forms.View>(Share);
+async void Share(Xamarin.Forms.View element)
+{
+    try
+    {
+        Analytics.TrackEvent("ShareWithFriends");
+        var bounds = element.GetAbsoluteBounds();
+
+        await Share.RequestAsync(new ShareTextRequest
+        {
+            PresentationSourceBounds = bounds.ToSystemRectangle(),
+            Title = "Title",
+            Text = "Text"
+        });
+    }
+    catch (Exception)
+    {
+        // Handle exception that share failed
+    }
+}
+```
+
+Вы можете передать вызывающий элемент при активации `Command`:
+
+```xml
+<Button Text="Share"
+        Command="{Binding ShareWithFriendsCommand}"
+        CommandParameter="{Binding Source={RelativeSource Self}}"/>
 ```
 
 ## <a name="platform-differences"></a>Различия платформ

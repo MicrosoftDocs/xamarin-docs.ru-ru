@@ -8,12 +8,12 @@ ms.date: 03/26/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c4437f05eddd6885f88fc57ddc108f4fc9f4376d
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: f373b8c249d4dba11db3b8445648afe2c61d273f
+ms.sourcegitcommit: eda6acc7471acc2f95df498e747376006e3d3f2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91433529"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92214827"
 ---
 # <a name="no-locxamarinessentials-web-authenticator"></a>Xamarin.Essentials. Веб-средство проверки подлинности
 
@@ -74,12 +74,28 @@ protected override void OnResume()
 
 # <a name="ios"></a>[iOS](#tab/ios)
 
-В iOS необходимо добавить шаблон URI обратного вызова приложения в файл Info.plist.
+В iOS необходимо добавить шаблон URI обратного вызова приложения в файл Info.plist следующим образом:
+
+```xml
+<key>CFBundleURLTypes</key>
+<array>
+    <dict>
+        <key>CFBundleURLName</key>
+        <string>xamarinessentials</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+            <string>xamarinessentials</string>
+        </array>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+    </dict>
+</array>
+```
 
 > [!NOTE]
 > Для регистрации URI обратного вызова приложения рекомендуется использовать [универсальные ссылки приложений](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content).
 
-Кроме того, потребуется переопределить метод `OpenUrl` `AppDelegate` для обращений к Essentials:
+Кроме того, потребуется переопределить методы `OpenUrl` и `ContinueUserActivity` класса `AppDelegate` для обращений к Essentials:
 
 ```csharp
 public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
@@ -88,6 +104,13 @@ public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
         return true;
 
     return base.OpenUrl(app, url, options);
+}
+
+public override bool ContinueUserActivity(UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
+{
+    if (Xamarin.Essentials.Platform.ContinueUserActivity(application, userActivity, completionHandler))
+        return true;
+    return base.ContinueUserActivity(application, userActivity, completionHandler);
 }
 ```
 
@@ -190,19 +213,23 @@ var accessToken = r?.AccessToken;
 
 API `WebAuthenticator` можно использовать с любой серверной веб-службой.  Для использования с приложением ASP.NET Core сначала нужно настроить веб-приложение, выполнив такие действия:
 
-1. В веб-приложении ASP.NET Core настройте необходимые [поставщики проверки подлинности на основе учетной записи социальной сети](/aspnet/core/security/authentication/social/?tabs=visual-studio&view=aspnetcore-3.1).
+1. В веб-приложении ASP.NET Core настройте необходимые [поставщики проверки подлинности на основе учетной записи социальной сети](/aspnet/core/security/authentication/social/?tabs=visual-studio).
 2. Задайте для схемы проверки подлинности по умолчанию значение `CookieAuthenticationDefaults.AuthenticationScheme` в вызове `.AddAuthentication()`.
 3. Используйте `.AddCookie()` в вызове `.AddAuthentication()` Startup.cs.
 4. Для настройки всех поставщиков обязательно используйте `.SaveTokens = true;`.
 
+
+``csharp services.AddAuthentication(o => { o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme; }) .AddCookie() .AddFacebook(fb => { fb.AppId = Configuration["FacebookAppId"]; fb.AppSecret = Configuration["FacebookAppSecret"]; fb.SaveTokens = true; });
+```
+
 > [!TIP]
-> Чтобы включить вход с помощью Apple ID, можно использовать пакет NuGet `AspNet.Security.OAuth.Apple`.  Полный пример [Startup.cs](https://github.com/xamarin/Essentials/blob/develop/Samples/Sample.Server.WebAuthenticator/Startup.cs#L32-L60) можно просмотреть в репозитории GitHub для Essentials.
+> If you'd like to include Apple Sign In, you can use the `AspNet.Security.OAuth.Apple` NuGet package.  You can view the full [Startup.cs sample](https://github.com/xamarin/Essentials/blob/develop/Samples/Sample.Server.WebAuthenticator/Startup.cs#L32-L60) in the Essentials GitHub repository.
 
-### <a name="add-a-custom-mobile-auth-controller"></a>Добавление пользовательского контроллера для проверки подлинности на мобильных устройствах
+### Add a custom mobile auth controller
 
-Поток проверки подлинности на мобильных устройствах желательно инициировать непосредственно для выбранного пользователем поставщика (например, путем нажатия кнопки "Майкрософт" на экране входа в приложение).  Важно также реализовать возврат в приложение соответствующих сведений по конкретному URI обратного вызова для завершения потока проверки подлинности.
+With a mobile authentication flow it is usually desirable to initiate the flow directly to a provider that the user has chosen (e.g. by clicking a "Microsoft" button on the sign in screen of the app).  It is also important to be able to return relevant information to your app at a specific callback URI to end the authentication flow.
 
-Для таких задач используйте контроллер API:
+To achieve this, use a custom API Controller:
 
 ```csharp
 [Route("mobileauth")]
@@ -228,6 +255,9 @@ public class AuthController : ControllerBase
 Иногда может потребоваться вернуть данные, например `access_token` поставщика, в приложение, что можно сделать с помощью параметров запроса URI обратного вызова. Вы также можете создать свое удостоверение на сервере и передать собственный маркер в приложение. Этот процесс вы можете настроить на свое усмотрение.
 
 Ознакомьтесь с [полным примером контроллера](https://github.com/xamarin/Essentials/blob/develop/Samples/Sample.Server.WebAuthenticator/Controllers/MobileAuthController.cs) в репозитории Essentials.
+
+> [!NOTE]
+> В приведенном выше примере показано, как реализовать возврат маркера доступа из стороннего поставщика проверки подлинности (то есть OAuth). Чтобы получить маркер, который можно использовать для авторизации веб-запросов к самой внутренней веб-службе, вам потребуется создать собственный маркер в веб-приложении и реализовать его возврат.  Дополнительные сведения о расширенных сценариях проверки подлинности в ASP.NET Core см. в статье [Общие сведения о проверке подлинности в ASP.NET Core](/aspnet/core/security/authentication).
 
 -----
 ## <a name="api"></a>API
