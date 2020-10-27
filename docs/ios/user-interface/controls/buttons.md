@@ -7,24 +7,24 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/11/2018
-ms.openlocfilehash: 0619488199c202e1877e4cfa60d622ef247e2b3f
-ms.sourcegitcommit: 24883be72e485e5311dd0eb91f9a22f78eeec11a
+ms.openlocfilehash: d763d4433ef0979343de059c5113314f553142fa
+ms.sourcegitcommit: 01ccefd54c0ced724784dbe1aec9ecfc9b00e633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77374123"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92630222"
 ---
 # <a name="buttons-in-xamarinios"></a>Кнопки в Xamarin. iOS
 
-В iOS класс `UIButton` представляет элемент управления Button.
+В iOS `UIButton` класс представляет элемент управления Button.
 
-Свойства кнопки можно изменить программно или с помощью **панель свойств** конструктора iOS:
+Свойства кнопки можно изменить программно или с помощью **окна свойств или** панели конструктора iOS:
 
 ![Панель свойств конструктора iOS](buttons-images/properties.png "Панель свойств конструктора iOS")
 
 ## <a name="creating-a-button-programmatically"></a>Создание кнопки программным способом
 
-`UIButton` можно создать только с помощью нескольких строк кода.
+`UIButton`Можно создать только с помощью нескольких строк кода.
 
 - Создайте экземпляр кнопки и укажите ее тип:
 
@@ -32,14 +32,14 @@ ms.locfileid: "77374123"
   UIButton myButton = new UIButton(UIButtonType.System);
   ```
 
-  Тип кнопки задается `UIButtonType`:
+  Тип кнопки задается `UIButtonType` свойством:
 
-  - `UIButtonType.System` — кнопка общего назначения
-  - `UIButtonType.DetailDisclosure` — указывает доступность подробных сведений, обычно о конкретном элементе в таблице.
-  - `UIButtonType.InfoDark` — указывает доступность сведений о конфигурации; темно-цветной
-  - `UIButtonType.InfoLight` — указывает доступность сведений о конфигурации; светло-цветной
-  - `UIButtonType..AddContact` — указывает, что можно добавить контакт
-  - Настраиваемая кнопка `UIButtonType.Custom`
+  - `UIButtonType.System` — Кнопка общего назначения
+  - `UIButtonType.DetailDisclosure` — Указывает доступность подробных сведений, обычно о конкретном элементе в таблице.
+  - `UIButtonType.InfoDark` — Указывает доступность сведений о конфигурации; темно-цветной
+  - `UIButtonType.InfoLight` — Указывает доступность сведений о конфигурации; светло-цветной
+  - `UIButtonType..AddContact` — Указывает, что контакт можно добавить
+  - `UIButtonType.Custom` — Настраиваемая кнопка
 
   Дополнительные сведения о различных типах кнопок см. в следующих статьях:
   
@@ -53,12 +53,22 @@ ms.locfileid: "77374123"
   myButton.Frame = new CGRect(25, 25, 300, 150);
   ```
 
-- Задайте текст кнопки. Используйте метод `SetTitle`, для которого требуется текст и значение `UIControlState`:
+- Задайте текст кнопки. Используйте `SetTitle` метод, для которого требуется текст и `UIControlState` значение для состояния кнопки:
 
   ```csharp
   myButton.SetTitle("Hello, World!", UIControlState.Normal);
   ```
-
+  
+  Ниже перечислены типы состояния кнопки.
+  
+  - `UIControlState.Normal`
+  - `UIControlState.Highlighted`
+  - `UIControlState.Disabled`
+  - `UIControlState.Selected`
+  - `UIControlState.Focused`
+  - `UIControlState.Application`
+  - `UIControlState.Reserved`
+  
   Дополнительные сведения о оформлении кнопки и задании ее текста см. в следующих источниках:
 
   - Стиль раздела для [кнопки](#styling-a-button) в этом документе
@@ -66,7 +76,7 @@ ms.locfileid: "77374123"
 
 ## <a name="handling-a-button-tap"></a>Обработка касания кнопки
 
-Чтобы ответить на касание кнопки, укажите обработчик для события `TouchUpInside` кнопки:
+Чтобы ответить на касание кнопки, укажите обработчик для `TouchUpInside` события кнопки:
 
 ```csharp
 myButton.TouchUpInside += (sender, e) => {
@@ -75,7 +85,7 @@ myButton.TouchUpInside += (sender, e) => {
 ```
 
 > [!NOTE]
-> `TouchUpInside` не является единственным доступным событием кнопки. `UIButton` является дочерним классом `UIControl`, который определяет [множество различных событий](xref:UIKit.UIControlEvent).
+> `TouchUpInside` не является единственным доступным событием кнопки. `UIButton` является дочерним классом `UIControl` , который определяет [множество различных событий](xref:UIKit.UIControlEvent).
 
 ### <a name="using-the-ios-designer-to-specify-button-event-handlers"></a>Использование конструктора iOS для задания обработчиков событий кнопок
 
@@ -87,20 +97,20 @@ myButton.TouchUpInside += (sender, e) => {
 
 ## <a name="styling-a-button"></a>Стилизация кнопки
 
-элементы управления `UIButton` могут существовать в разных состояниях, каждое из которых задается значением `UIControlState` — `Normal`, `Disabled`, `Focused`, `Highlighted`и т. д. Каждому состоянию можно присвоить уникальный стиль, заданный программно или с помощью конструктора iOS.
+`UIButton` элементы управления могут находиться в разных состояниях, каждое из которых задается `UIControlState` значением — `Normal` ,,, и `Disabled` `Focused` `Highlighted` т. д. Каждому состоянию можно присвоить уникальный стиль, заданный программно или с помощью конструктора iOS.
 
 > [!NOTE]
-> Полный список всех `UIControlState` значений см. в [`UIKit.UIControlState enumeration`](xref:UIKit.UIControlState)
+> Чтобы получить полный список всех `UIControlState` значений, Взгляните на [`UIKit.UIControlState enumeration`](xref:UIKit.UIControlState)
 > документации.
 
-Например, чтобы задать цвет заголовка и цвет тени для `UIControlState.Normal`:
+Например, чтобы задать цвет заголовка и цвет тени для `UIControlState.Normal` :
 
 ```csharp
 myButton.SetTitleColor(UIColor.White, UIControlState.Normal);
 myButton.SetTitleShadowColor(UIColor.Black, UIControlState.Normal);
 ```
 
-Следующий код задает в качестве заголовка кнопки строку с атрибутом (стилизованную) для `UIControlState.Normal` и `UIControlState.Highlighted`:
+Следующий код задает в качестве заголовка кнопки строку с атрибутом (стилизацию) для `UIControlState.Normal` и `UIControlState.Highlighted` :
 
 ```csharp
 var normalAttributedTitle = new NSAttributedString(buttonTitle, foregroundColor: UIColor.Blue, strikethroughStyle: NSUnderlineStyle.Single);
@@ -112,7 +122,7 @@ myButton.SetAttributedTitle(highlightedAttributedTitle, UIControlState.Highlight
 
 ## <a name="custom-button-types"></a>Типы настраиваемых кнопок
 
-Кнопки с `UIButtonType` `Custom` не имеют стилей по умолчанию. Однако можно настроить внешний вид кнопки, задав для нее изображение в различных состояниях.
+Кнопки с параметром `UIButtonType` `Custom` не имеют стилей по умолчанию. Однако можно настроить внешний вид кнопки, задав для нее изображение в различных состояниях.
 
 ```csharp
 myButton.SetImage (UIImage.FromBundle ("Buttons/MagicWand.png"), UIControlState.Normal);
@@ -120,10 +130,10 @@ myButton.SetImage (UIImage.FromBundle ("Buttons/MagicWand_Highlight.png"), UICon
 myButton.SetImage (UIImage.FromBundle ("Buttons/MagicWand_On.png"), UIControlState.Selected);
 ```
 
-В зависимости от того, касается ли пользователь кнопки, она будет отображаться как одно из следующих изображений (`UIControlState.Normal`, `UIControlState.Highlighted` и `UIControlState.Selected` состояния соответственно):
+В зависимости от того, касается ли пользователь кнопки, она будет отображаться как одно из следующих изображений ( `UIControlState.Normal` `UIControlState.Highlighted` и `UIControlState.Selected` состояний соответственно):
 
-![Уиконтролстате. обычная](buttons-images/image22.png "Уиконтролстате. Обычная")
-![Уиконтролстате. выделено](buttons-images/image23.png "Уиконтролстате. выделенный")
-![уиконтролстате. Selected](buttons-images/image24.png "Уиконтролстате. выбрано")
+![Уиконтролстате. Обычная](buttons-images/image22.png "Уиконтролстате. Обычная") 
+ ![Уиконтролстате. выделенный](buttons-images/image23.png "Уиконтролстате. выделенный") 
+ ![Уиконтролстате. выбрано](buttons-images/image24.png "Уиконтролстате. выбрано")
 
 Дополнительные сведения о работе с пользовательскими кнопками см. в разделе [использование изображения для](https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/buttons/use_an_image_for_a_button) рецепта кнопки.
