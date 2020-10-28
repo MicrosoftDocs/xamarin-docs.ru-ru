@@ -6,22 +6,22 @@ ms.assetid: 20DB2C57-CE3A-4D91-80DC-73AE361A3CB0
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 04/29/2020
+ms.date: 10/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b0654aef28ac356fdffc5a846f9ca654db240367
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 82098c47a313eac48b457575620287af74aacd15
+ms.sourcegitcommit: 1550019cd1e858d4d13a4ae6dfb4a5947702f24b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562864"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92897550"
 ---
 # <a name="no-locxamarinforms-carouselview-data"></a>Xamarin.Forms Данные Карауселвиев
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView) включает следующие свойства, которые определяют отображаемые данные и его внешний вид:
 
@@ -37,53 +37,10 @@ ms.locfileid: "91562864"
 
 ## <a name="populate-a-carouselview-with-data"></a>Заполнение Карауселвиев данными
 
-[`CarouselView`](xref:Xamarin.Forms.CarouselView)Заполняется данными путем установки его [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства в любую коллекцию, реализующую `IEnumerable` . Элементы можно добавлять в XAML путем инициализации `ItemsSource` свойства из массива строк:
-
-```xaml
-<CarouselView>
-    <CarouselView.ItemsSource>
-        <x:Array Type="{x:Type x:String}">
-            <x:String>Baboon</x:String>
-            <x:String>Capuchin Monkey</x:String>
-            <x:String>Blue Monkey</x:String>
-            <x:String>Squirrel Monkey</x:String>
-            <x:String>Golden Lion Tamarin</x:String>
-            <x:String>Howler Monkey</x:String>
-            <x:String>Japanese Macaque</x:String>
-        </x:Array>
-    </CarouselView.ItemsSource>
-</CarouselView>
-```
-
-> [!NOTE]
-> Обратите внимание на то, что для элемента `x:Array` требуется атрибут `Type`, указывающий тип элементов в массиве.
-
-Эквивалентный код на C# выглядит так:
-
-```csharp
-CarouselView carouselView = new CarouselView();
-carouselView.ItemsSource = new string[]
-{
-    "Baboon",
-    "Capuchin Monkey",
-    "Blue Monkey",
-    "Squirrel Monkey",
-    "Golden Lion Tamarin",
-    "Howler Monkey",
-    "Japanese Macaque"
-};
-```
+[`CarouselView`](xref:Xamarin.Forms.CarouselView)Заполняется данными путем установки его [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства в любую коллекцию, реализующую `IEnumerable` . По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) отображает элементы по горизонтали.
 
 > [!IMPORTANT]
 > Если [`CarouselView`](xref:Xamarin.Forms.CarouselView) требуется обновление при добавлении, удалении или изменении элементов в базовой коллекции, то базовая коллекция должна быть `IEnumerable` коллекцией, которая отправляет уведомления об изменении свойств, например `ObservableCollection` .
-
-По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) отображает элементы по горизонтали. На следующих снимках экрана показано `CarouselView` Отображение различных строковых элементов в iOS и Android.
-
-[![Снимок экрана Карауселвиев, содержащий текстовые элементы, в iOS и Android](populate-data-images/text.png "Текстовые элементы в Карауселвиев")](populate-data-images/text-large.png#lightbox "Текстовые элементы в Карауселвиев")
-
-Сведения о том, как изменить [`CarouselView`](xref:Xamarin.Forms.CarouselView) ориентацию, см. в разделе [ Xamarin.Forms карауселвиев Layout](layout.md). Сведения о том, как определить внешний вид каждого элемента в `CarouselView` , см. в [разделе Определение внешнего вида элемента](#define-item-appearance).
-
-### <a name="data-binding"></a>привязка данных,
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView) может заполняться данными с помощью привязки данных для привязки своего [`ItemsSource`](xref:Xamarin.Forms.ItemsView.ItemsSource) свойства к `IEnumerable` коллекции. В XAML это достигается с помощью `Binding` расширения разметки:
 
@@ -103,7 +60,7 @@ carouselView.SetBinding(ItemsView.ItemsSourceProperty, "Monkeys");
 > [!NOTE]
 > Скомпилированные привязки можно включить для повышения производительности привязки данных в Xamarin.Forms приложениях. Дополнительные сведения см. в статье [Скомпилированные привязки](~/xamarin-forms/app-fundamentals/data-binding/compiled-bindings.md).
 
-Дополнительные сведения о привязке данных см. в разделе [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md).
+Сведения о том, как изменить [`CarouselView`](xref:Xamarin.Forms.CarouselView) ориентацию, см. в разделе [ Xamarin.Forms карауселвиев Layout](layout.md). Сведения о том, как определить внешний вид каждого элемента в `CarouselView` , см. в [разделе Определение внешнего вида элемента](#define-item-appearance). Дополнительные сведения о привязке данных см. в разделе [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md).
 
 ## <a name="define-item-appearance"></a>Определение внешнего вида элемента
 
