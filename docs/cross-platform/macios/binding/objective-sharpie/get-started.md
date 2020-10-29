@@ -6,12 +6,12 @@ ms.assetid: 577512BF-1A90-41E5-89DE-9E056C478678
 author: davidortinau
 ms.author: daortin
 ms.date: 10/11/2017
-ms.openlocfilehash: 35f2db71f582c7e6e30448cf32ba4d95033652bf
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: 5bee8df72290cab3ed6d5c23fef6c2ae2f1a2559
+ms.sourcegitcommit: d1980b2251999224e71c1289e4b4097595b7e261
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84570990"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92928520"
 ---
 # <a name="getting-started-with-objective-sharpie"></a>начало работы с Шарпие цели
 
@@ -22,13 +22,13 @@ ms.locfileid: "84570990"
 
 ## <a name="installing-objective-sharpie"></a>Установка цели Шарпие
 
-Цель Шарпие в настоящее время является автономным средством командной строки для Mac OS X 10,10 и более поздних версий и _не является полностью поддерживаемым продуктом Xamarin_. Он должен использоваться только опытными разработчиками, чтобы помочь в создании проекта привязки для сторонней библиотеки цели-C.
+Цель Шарпие в настоящее время является автономным средством командной строки для Mac OS X 10,10 и более поздних версий и _не является полностью поддерживаемым продуктом Xamarin_ . Он должен использоваться только опытными разработчиками, чтобы помочь в создании проекта привязки для сторонней библиотеки цели-C.
 
 Целевое Шарпие можно скачать как стандартный установщик пакета OS X.
 Запустите установщик и следуйте всем отображаемым на экране запросам мастера установки.
 
 - **Текущая версия: 3,4**
-  - [Скачать последний выпуск](https://dl.xamarin.com/objective-sharpie/ObjectiveSharpie.pkg)
+  - [Скачать последний выпуск](https://aka.ms/objective-sharpie)
   - [Объявление форума](https://forums.xamarin.com/discussion/104800/objective-sharpie-3-4)
 
 > [!TIP]
