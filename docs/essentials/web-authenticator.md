@@ -8,12 +8,12 @@ ms.date: 03/26/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f373b8c249d4dba11db3b8445648afe2c61d273f
-ms.sourcegitcommit: eda6acc7471acc2f95df498e747376006e3d3f2a
+ms.openlocfilehash: 3df31f500290189bb9ce36148729a7b1d22df3ae
+ms.sourcegitcommit: 9bf375b43907384551188ec6f0ebd3290b3e9295
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92214827"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436948"
 ---
 # <a name="no-locxamarinessentials-web-authenticator"></a>Xamarin.Essentials. Веб-средство проверки подлинности
 
@@ -219,17 +219,28 @@ API `WebAuthenticator` можно использовать с любой сер�
 4. Для настройки всех поставщиков обязательно используйте `.SaveTokens = true;`.
 
 
-``csharp services.AddAuthentication(o => { o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme; }) .AddCookie() .AddFacebook(fb => { fb.AppId = Configuration["FacebookAppId"]; fb.AppSecret = Configuration["FacebookAppSecret"]; fb.SaveTokens = true; });
+```csharp
+services.AddAuthentication(o =>
+    {
+        o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    })
+    .AddCookie()
+    .AddFacebook(fb =>
+    {
+        fb.AppId = Configuration["FacebookAppId"];
+        fb.AppSecret = Configuration["FacebookAppSecret"];
+        fb.SaveTokens = true;
+    });
 ```
 
 > [!TIP]
-> If you'd like to include Apple Sign In, you can use the `AspNet.Security.OAuth.Apple` NuGet package.  You can view the full [Startup.cs sample](https://github.com/xamarin/Essentials/blob/develop/Samples/Sample.Server.WebAuthenticator/Startup.cs#L32-L60) in the Essentials GitHub repository.
+> Чтобы включить вход с помощью Apple ID, можно использовать пакет NuGet `AspNet.Security.OAuth.Apple`.  Полный пример [Startup.cs](https://github.com/xamarin/Essentials/blob/develop/Samples/Sample.Server.WebAuthenticator/Startup.cs#L32-L60) можно просмотреть в репозитории GitHub для Essentials.
 
-### Add a custom mobile auth controller
+### <a name="add-a-custom-mobile-auth-controller"></a>Добавление пользовательского контроллера для проверки подлинности на мобильных устройствах
 
-With a mobile authentication flow it is usually desirable to initiate the flow directly to a provider that the user has chosen (e.g. by clicking a "Microsoft" button on the sign in screen of the app).  It is also important to be able to return relevant information to your app at a specific callback URI to end the authentication flow.
+Поток проверки подлинности на мобильных устройствах желательно инициировать непосредственно для выбранного пользователем поставщика (например, путем нажатия кнопки "Майкрософт" на экране входа в приложение).  Важно также реализовать возврат в приложение соответствующих сведений по конкретному URI обратного вызова для завершения потока проверки подлинности.
 
-To achieve this, use a custom API Controller:
+Для таких задач используйте контроллер API:
 
 ```csharp
 [Route("mobileauth")]

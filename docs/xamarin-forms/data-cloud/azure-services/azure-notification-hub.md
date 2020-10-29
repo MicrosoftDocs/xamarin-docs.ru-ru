@@ -11,12 +11,12 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 - Firebase
-ms.openlocfilehash: 721785fe2eeb35f0ef04d1a7854afe4039a66849
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 6135d8caec196ded385bc0f962f007c41d20e2cb
+ms.sourcegitcommit: 1550019cd1e858d4d13a4ae6dfb4a5947702f24b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561837"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92897506"
 ---
 # <a name="send-and-receive-push-notifications-with-azure-notification-hubs-and-no-locxamarinforms"></a>Отправка и получение push-уведомлений с помощью Центров уведомлений Azure и Xamarin.Forms
 
@@ -122,7 +122,7 @@ public static class AppConstants
 Чтобы подключить приложение из примера к Центру уведомлений Azure, задайте в `AppConstants` следующие значения:
 
 * `NotificationHubName`. Используйте имя Центра уведомлений Azure, созданного на портале Azure.
-* `ListenConnectionString`. Это значение указано в Центре уведомлений Azure в разделе **Политики доступа**.
+* `ListenConnectionString`. Это значение указано в Центре уведомлений Azure в разделе **Политики доступа** .
 
 На следующем снимке экрана показано, где находятся эти значения на портале Azure:
 
@@ -278,9 +278,6 @@ void SendMessageToMainPage(string body)
 
 В примере с локальным уведомлением и объектом `Intent` необходимо, чтобы пользователь нажал на уведомление. Это оптимально, когда пользователь должен предпринять действие до изменения состояния приложения. Однако в некоторых случаях вам может быть нужно обратиться к данным сообщений без вмешательства пользователя. В предыдущем примере сообщение также отправляется непосредственно в текущий экземпляр `MainPage` с помощью метода `SendMessageToMainPage`. Если в рабочей среде для одного и того же типа сообщений реализованы оба этих метода, объект `MainPage` будет получать дублируемые сообщения, когда пользователь нажимает на уведомление.
 
-> [!NOTE]
-> Приложение Android будет получать push-уведомления, только если оно работает на переднем плане или в фоновом режиме. Чтобы push-уведомления доставлялись, когда основной процесс `Activity` не выполняется, необходимо реализовать службу, которая выходит за рамки этого примера. Дополнительные сведения см. в статье [Создание служб Android](../../../android/app-fundamentals/services/index.md).
-
 ### <a name="add-incoming-notifications-to-the-no-locxamarinforms-ui"></a>Добавление входящих уведомлений в пользовательский интерфейс Xamarin.Forms
 
 Классу `MainActivity` необходимо получить разрешение на обработку уведомлений и управление данными входящих сообщений. В следующем коде показана полная реализация класса `MainActivity`:
@@ -396,7 +393,7 @@ void RegisterForRemoteNotifications()
     if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
     {
         UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert |
-            UNAuthorizationOptions.Sound |
+            UNAuthorizationOptions.Badge |
             UNAuthorizationOptions.Sound,
             (granted, error) =>
             {

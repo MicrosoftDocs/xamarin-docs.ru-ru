@@ -9,20 +9,45 @@ ms.date: 07/02/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d642005e9aed663570c251e955c6a3af4704ed5c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9bd281a61fd53ef3f6d0d3d2307f78a218f33cf4
+ms.sourcegitcommit: db423d51356cf5a2dfa1b3925204797b1baf3cd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84802204"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92734780"
 ---
-# <a name="xamarinessentials-phone-dialer"></a>Xamarin.Essentials. Телефон
+# <a name="no-locxamarinessentials-phone-dialer"></a>Xamarin.Essentials. Телефон
 
 Класс **PhoneDialer** позволяет приложению открывать номер телефона в набирателе номера.
 
 ## <a name="get-started"></a>Начало работы
 
 [!include[](~/essentials/includes/get-started.md)]
+
+# <a name="android"></a>[Android](#tab/android)
+
+Если целевой версией Android для проекта является **Android 11 (API R 30)** , необходимо обновить манифест Android с помощью запросов, которые используются с новыми [требованиями к видимости пакета](https://developer.android.com/preview/privacy/package-visibility).
+
+Откройте файл **AndroidManifest.xml** в папке **Properties** и добавьте приведенный ниже код в узел **manifest** :
+
+```xml
+<queries>
+  <intent>
+    <action android:name="android.intent.action.DIAL" />
+    <data android:scheme="tel"/>
+  </intent>
+</queries>
+```
+
+# <a name="ios"></a>[iOS](#tab/ios)
+
+Дополнительная настройка не требуется.
+
+# <a name="uwp"></a>[UWP](#tab/uwp)
+
+Различия платформ отсутствуют.
+
+-----
 
 ## <a name="using-phone-dialer"></a>Использование PhoneDialer
 
