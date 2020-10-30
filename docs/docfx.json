@@ -44,6 +44,7 @@
       "breadcrumb_path": "/xamarin/breadcrumb/toc.json",
       "titleSuffix": "Xamarin",
       "extendBreadcrumb": true,
+      "bilingual_type": "hover over",
       "manager": "crdun",
       "audience": "developer",
       "ms.topic": "conceptual",
@@ -81,6 +82,14 @@
       },
       "feedback_product_url": {
         "essentials/**/**.md": "https://github.com/xamarin/Essentials/blob/master/PRODUCT-FEEDBACK.md"
+      },
+      "feedback_system": {
+        "android/**/*":"None",
+        "cross-platform/**/*":"None",
+        "graphics-games/**/*":"None",
+        "ios/**/*":"None",
+        "mac/**/*":"None",
+        "tools/**/*":"None"
       },
       "breadcrumb_path": {
         "get-started/tutorials/**/*.yml": "/xamarin/breadcrumb/tutorials/toc.json",
