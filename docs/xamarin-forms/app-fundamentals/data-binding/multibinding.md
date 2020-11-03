@@ -6,13 +6,13 @@ ms.assetid: E73AE622-664C-4A90-B5B2-BD47D0E7A1A7
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/18/2020
-ms.openlocfilehash: 0c10e73d8d6c2dcafacbb069eaf905a227030b87
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.date: 10/26/2020
+ms.openlocfilehash: 6a3154d159c491c6460e118395286aa33cfa7e7e
+ms.sourcegitcommit: 1550019cd1e858d4d13a4ae6dfb4a5947702f24b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557534"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92897459"
 ---
 # <a name="xamarinforms-multi-bindings"></a>Множественные привязки Xamarin.Forms
 
@@ -155,6 +155,33 @@ public class AllTrueMultiConverter : IMultiValueConverter
 
 По умолчанию свойство [`CheckBox.IsChecked`](xref:Xamarin.Forms.CheckBox.IsChecked) использует привязку [`TwoWay`](xref:Xamarin.Forms.BindingMode.TwoWay). Таким образом, метод `ConvertBack` экземпляра `AllTrueMultiConverter` выполняется, когда пользователь не использует [`CheckBox`](xref:Xamarin.Forms.CheckBox), задавая для значений привязки к источнику значение свойства `CheckBox.IsChecked`.
 
+Ниже приведен эквивалентный код на C#:
+
+```csharp
+public class MultiBindingConverterCodePage : ContentPage
+{
+    public MultiBindingConverterCodePage()
+    {
+        BindingContext = new GroupViewModel();
+
+        CheckBox checkBox = new CheckBox();
+        checkBox.SetBinding(CheckBox.IsCheckedProperty, new MultiBinding
+        {
+            Bindings = new Collection<BindingBase>
+            {
+                new Binding("Employee1.IsOver16"),
+                new Binding("Employee1.HasPassedTest"),
+                new Binding("Employee1.IsSuspended", converter: new InverterConverter())
+            },
+            Converter = new AllTrueMultiConverter()
+        });
+
+        Title = "MultiBinding converter demo";
+        Content = checkBox;
+    }
+}
+```
+
 ## <a name="format-strings"></a>Строки формата
 
 `MultiBinding` может форматировать результат множественной привязки, отображаемый в виде строки, со свойством `StringFormat`. Для этого свойства можно задать стандартную строку форматирования .NET с заполнителями, которая определяет способ форматирования результата множественной привязки.
@@ -172,6 +199,22 @@ public class AllTrueMultiConverter : IMultiValueConverter
 ```
 
 В этом примере свойство `StringFormat` объединяет три привязанных значения в одну строку, отображаемую [`Label`](xref:Xamarin.Forms.Label).
+
+Ниже приведен эквивалентный код на C#:
+
+```csharp
+Label label = new Label();
+label.SetBinding(Label.TextProperty, new MultiBinding
+{
+    Bindings = new Collection<BindingBase>
+    {
+        new Binding("Employee1.Forename"),
+        new Binding("Employee1.MiddleName"),
+        new Binding("Employee1.Surname")
+    },
+    StringFormat = "{0} {1} {2}"
+});
+```
 
 > [!IMPORTANT]
 > Число параметров в формате составной строки не должно превышать число дочерних `Binding` объектов в `MultiBinding`.

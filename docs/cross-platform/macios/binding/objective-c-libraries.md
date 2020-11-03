@@ -6,12 +6,12 @@ ms.assetid: 8A832A76-A770-1A7C-24BA-B3E6F57617A0
 author: davidortinau
 ms.author: daortin
 ms.date: 03/06/2018
-ms.openlocfilehash: ebb9baf7bb1a6da96615eac65d5384cb7a05a9d6
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: d7f66d9bda014337ae6108ab42158faa856632bb
+ms.sourcegitcommit: 4f0223cf13e14d35c52fa72a026b1c7696bf8929
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91457605"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93278342"
 ---
 # <a name="binding-objective-c-libraries"></a>Цель привязки-библиотеки C
 
@@ -44,7 +44,7 @@ ms.locfileid: "91457605"
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Самый простой способ создать привязку — создать проект привязки Xamarin. iOS.
-Это можно сделать в Visual Studio в Windows, выбрав тип проекта, **Visual C# > библиотека привязок > iOS (IOS)**:
+Это можно сделать в Visual Studio в Windows, выбрав тип проекта, **Visual C# > библиотека привязок > iOS (IOS)** :
 
 [![Библиотека привязок iOS, iOS](objective-c-libraries-images/00vs-sml.png)](objective-c-libraries-images/00vs.png#lightbox)
 
@@ -445,7 +445,7 @@ class MyDelegate : NSObject, IUITableViewDelegate {
 }
 ```
 
-Реализация методов интерфейса автоматически экспортируется с соответствующим именем, поэтому она эквивалентна следующей:
+Реализация для требуемых методов интерфейса экспортируется с соответствующим именем, поэтому она эквивалентна следующей:
 
 ```csharp
 class MyDelegate : NSObject, IUITableViewDelegate {
@@ -456,7 +456,29 @@ class MyDelegate : NSObject, IUITableViewDelegate {
 }
 ```
 
-Не имеет значения, реализован ли интерфейс неявно или явно.
+Это будет работать для всех обязательных членов протокола, но существует особый случай с необязательными селекторами, о которых следует помнить.
+При использовании базового класса необязательные члены протокола обрабатываются одинаково:
+
+```
+public class UrlSessionDelegate : NSUrlSessionDownloadDelegate {
+    public override void DidWriteData (NSUrlSession session, NSUrlSessionDownloadTask downloadTask, long bytesWritten, long totalBytesWritten, long totalBytesExpectedToWrite)
+```
+
+но при использовании интерфейса протокола необходимо добавить [Export]. Интегрированная среда разработки добавит ее через автозаполнение при добавлении, начиная с override. 
+
+```
+public class UrlSessionDelegate : NSObject, INSUrlSessionDownloadDelegate {
+    [Export ("URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:")]
+    public void DidWriteData (NSUrlSession session, NSUrlSessionDownloadTask downloadTask, long bytesWritten, long totalBytesWritten, long totalBytesExpectedToWrite)
+```
+
+Существует небольшая разница в поведении между двумя во время выполнения.
+
+- Пользователи базового класса (Нсурлсессиондовнлоадделегате в примере) предоставляют все обязательные и необязательные селекторы, возвращая разумные значения по умолчанию.
+- Пользователи интерфейса (Инсурлсессиондовнлоадделегате в примере) отвечают только на конкретные предоставленные селекторы.
+
+Некоторые редкие классы могут вести себя по-разному. Почти во всех случаях можно использовать любой из них.
+
 
 <a name="Binding_Class_Extensions"></a>
 

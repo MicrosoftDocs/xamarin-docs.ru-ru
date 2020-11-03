@@ -6,22 +6,25 @@ ms.assetid: B5DE7507-B565-4EE5-9897-27E5733FD173
 ms.technology: xamarin-forms
 author: profexorgeek
 ms.author: jusjohns
-ms.date: 10/25/2019
+ms.date: 10/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 47b459945aec4ef8f1c3fa9729efd82461aec0e0
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: e1474167d3bb56f0e5eb7ee0a8d321a5d4367ef2
+ms.sourcegitcommit: 1550019cd1e858d4d13a4ae6dfb4a5947702f24b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561967"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92897563"
 ---
 # <a name="no-locxamarinforms-reusable-roundeffect"></a>Многоразовый RoundEffect в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-roundeffect/)
 
-RoundEffect упрощает отрисовку любого элемента управления, производного от VisualElement, в виде круга. Этот эффект можно использовать для создания круглых изображений, кнопок или других элементов управления:
+> [!IMPORTANT]
+> Больше не нужно использовать `RoundEffect` для отрисовки элемента управления в виде окружности. Последний рекомендуемый подход заключается в обрезке элемента управления с помощью `EllipseGeometry`. Дополнительные сведения см. в разделе [Обрезка с помощью класса Geometry](~/xamarin-forms/user-interface/shapes/geometries.md#clip-with-a-geometry).
+
+RoundEffect упрощает отрисовку любого элемента управления, производного от `VisualElement`, в виде круга. Этот эффект можно использовать для создания круглых изображений, кнопок или других элементов управления:
 
 [![Снимки экрана RoundEffect в iOS и Android](example-roundeffect-images/round-effect-cropped.png)](example-roundeffect-images/round-effect.png#lightbox)
 
@@ -220,7 +223,7 @@ image.Effects.Add(new RoundEffect());
 Класс `RoundEffect` можно применить к любому элементу управления, производному от `VisualElement`.
 
 > [!NOTE]
-> Чтобы эффект вычислил правильный радиус, элемент управления, к которому он применяется, должен иметь явно заданный размер. То есть должны быть определены свойства `HeightRequest` и `WidthRequest`. Если затронутый элемент управления отображается в `StackLayout`, его свойство `HorizontalOptions` не должно использовать одно из значений **Expand**, например `LayoutOptions.CenterAndExpand`, или измерения будут неточными.
+> Чтобы эффект вычислил правильный радиус, элемент управления, к которому он применяется, должен иметь явно заданный размер. То есть должны быть определены свойства `HeightRequest` и `WidthRequest`. Если затронутый элемент управления отображается в `StackLayout`, его свойство `HorizontalOptions` не должно использовать одно из значений **Expand** , например `LayoutOptions.CenterAndExpand`, или измерения будут неточными.
 
 ## <a name="related-links"></a>Связанные ссылки
 

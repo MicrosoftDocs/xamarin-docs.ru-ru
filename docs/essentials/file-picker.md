@@ -8,12 +8,12 @@ ms.date: 09/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b3ee20de5534329f9e4686c908fe923ba94f3fff
-ms.sourcegitcommit: 744f977b0595f489c592e29c8a3ba548fde02b6f
+ms.openlocfilehash: e997ae3137110e18df9eed90ef07bfa2703e8088
+ms.sourcegitcommit: 58247fe066ad271ee43c8967ac3301fdab6ca2d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414693"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92629604"
 ---
 # <a name="no-locxamarinessentials-file-picker"></a>Xamarin.Essentials: Средство выбора файлов
 
@@ -56,6 +56,9 @@ ms.locfileid: "91414693"
 Дополнительная настройка не требуется.
 
 -----
+
+> [!TIP]
+> Все методы должны вызываться в потоке пользовательского интерфейса, так как проверки разрешений и запросы автоматически обрабатываются Xamarin.Essentials.
 
 ## <a name="pick-file"></a>Выбор файла
 

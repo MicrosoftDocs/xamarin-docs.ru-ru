@@ -9,12 +9,12 @@ ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 059405d4e3219162022b3f8c0208ee5cc4ac2d38
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 577628237d1e7433c2ad06466a2e804808874108
+ms.sourcegitcommit: d8627a500a9b8a07615aef9822c9b1dba2bf6650
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91434538"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92629640"
 ---
 # <a name="no-locxamarinessentials-email"></a>Xamarin.Essentials. Адрес эл. почты
 
@@ -26,7 +26,7 @@ ms.locfileid: "91434538"
 
 Если целевой версией Android для проекта является **Android 11 (API R 30)** , необходимо обновить манифест Android с помощью запросов, которые используются с новыми [требованиями к видимости пакета](https://developer.android.com/preview/privacy/package-visibility).
 
-Откройте файл **AndroidManifest.xml** в папке **Properties** и добавьте приведенный ниже код в узел **manifest**:
+Откройте файл **AndroidManifest.xml** в папке **Properties** и добавьте приведенный ниже код в узел **manifest** :
 
 ```xml
 <queries>
@@ -39,7 +39,14 @@ ms.locfileid: "91434538"
 
 # <a name="ios"></a>[iOS](#tab/ios)
 
-Дополнительная настройка не требуется.
+В iOS 9 и более поздних версиях Apple обеспечивает применение схем, которые может запрашивать приложение. Чтобы запросить, является ли адрес электронной почты допустимым целевым объектом, в параметре LSApplicationQueriesSchemes в файле Info.plist должна быть указана схема `mailto`.
+
+```xml
+<key>LSApplicationQueriesSchemes</key>
+<array>
+  <string>mailto</string>
+</array>
+```
 
 # <a name="uwp"></a>[UWP](#tab/uwp)
 

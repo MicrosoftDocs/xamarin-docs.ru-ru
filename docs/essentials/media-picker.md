@@ -8,12 +8,12 @@ ms.date: 09/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7c4299abf9c461a16f67ccf3d8caf03d5e568f13
-ms.sourcegitcommit: 827daa78c090bf79a1b55da45bb8012a1723b720
+ms.openlocfilehash: 9a988803b5e18ab91ff65a2b4976158458f68274
+ms.sourcegitcommit: 58247fe066ad271ee43c8967ac3301fdab6ca2d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91997513"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92629565"
 ---
 # <a name="no-locxamarinessentials-media-picker"></a>Xamarin.Essentials: Средство выбора мультимедиа
 
@@ -91,6 +91,9 @@ ms.locfileid: "91997513"
 * `CaptureVideoAsync`: открывает камеру, чтобы снять видео.
 
 Каждый метод может принимать параметр `MediaPickerOptions`, который позволяет задавать в некоторых операционных системах заголовок `Title`, отображаемый для пользователей.
+
+> [!TIP]
+> Все методы должны вызываться в потоке пользовательского интерфейса, так как проверки разрешений и запросы автоматически обрабатываются Xamarin.Essentials.
 
 ## <a name="general-usage"></a>Общие сведения об использовании
 

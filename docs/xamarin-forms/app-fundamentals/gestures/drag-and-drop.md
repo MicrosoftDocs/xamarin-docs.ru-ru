@@ -6,16 +6,16 @@ ms.assetid: 4CB2F270-908A-4A89-B852-70BC04066E8C
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 08/04/2020
+ms.date: 10/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d3eb7edbb24c7e28ee375e1de85f6a7597ec63ac
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: af56e84598f73693a8cb0e93573b789a716c194a
+ms.sourcegitcommit: 1550019cd1e858d4d13a4ae6dfb4a5947702f24b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561019"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92897472"
 ---
 # <a name="add-drag-and-drop-gesture-recognizers"></a>Добавление распознавателя жестов перетаскивания
 
@@ -30,7 +30,7 @@ ms.locfileid: "91561019"
 >
 > Распознавание жестов перетаскивания поддерживается в iOS, Android и универсальной платформе Windows (UWP). Однако в iOS требуется минимальная версия платформы iOS 11.
 
-*Источник перетаскивания*, являющийся элементом, на котором инициируется жест перетаскивания, может обеспечить передачу данных путем заполнения объекта пакета данных. Когда источник перетаскивания освобождается, происходит отпускание. *Целевой объект перетаскивания*, который является элементом источника перетаскивания, обрабатывает пакет данных.
+*Источник перетаскивания* , являющийся элементом, на котором инициируется жест перетаскивания, может обеспечить передачу данных путем заполнения объекта пакета данных. Когда источник перетаскивания освобождается, происходит отпускание. *Целевой объект перетаскивания* , который является элементом источника перетаскивания, обрабатывает пакет данных.
 
 Процесс включения перетаскивания в приложение выглядит следующим образом:
 
@@ -50,7 +50,7 @@ ms.locfileid: "91561019"
 - `CanDrag` с типом `bool`, который указывает, может ли элемент, к которому прикреплен распознаватель жестов, быть источником перетаскивания. Значение по умолчанию этого свойства равно `false`.
 - `DragStartingCommand` с типом `ICommand`, который выполняется при первом распознавании жеста перетаскивания.
 - `DragStartingCommandParameter` с типом `object`, который передается как параметр в `DragStartingCommand`.
-- `DropCompletedCommmand` с типом `ICommand`, который выполняется при отпускании источника перетаскивания.
+- `DropCompletedCommand` с типом `ICommand`, который выполняется при отпускании источника перетаскивания.
 - `DropCompletedCommandParameter` с типом `object`, который передается как параметр в `DropCompletedCommand`.
 
 Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
@@ -79,6 +79,8 @@ ms.locfileid: "91561019"
 
 > [!TIP]
 > В iOS, Android и UWP жест перетаскивания инициируется с помощью длительного нажатия, за которым следует перетаскивание.
+
+Пример использования команд `DragGestureRecognizer` см. в [образце](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/).
 
 ## <a name="build-a-data-package"></a>Создание пакета данных
 
@@ -211,6 +213,8 @@ void OnDragStarting(object sender, DragStartingEventArgs e)
 ```
 
 В этом примере, когда источник перетаскивания отпускается на целевом объекте отпускания [`Image`](xref:Xamarin.Forms.Image), источник перетаскивания копируется в целевой объект отпускания при условии, что источником перетаскивания является [`ImageSource`](xref:Xamarin.Forms.ImageSource). Это происходит потому, что Xamarin.Forms автоматически копирует перетаскиваемые изображения и текст в совместимые целевые объекты отпускания.
+
+Пример использования команд `DropGestureRecognizer` см. в [образце](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/).
 
 ## <a name="handle-the-dragover-event"></a>Обработка события DragOver
 

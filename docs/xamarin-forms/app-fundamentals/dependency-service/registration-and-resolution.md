@@ -10,12 +10,12 @@ ms.date: 06/05/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: da3c6c2f55f1cdbed1b3c4e1bb16c4f78e32cf23
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 9e8c0eeb70393cd3a5c6db7b99146b69b79ec14d
+ms.sourcegitcommit: 01ccefd54c0ced724784dbe1aec9ecfc9b00e633
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556052"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92630248"
 ---
 # <a name="no-locxamarinforms-dependencyservice-registration-and-resolution"></a>Регистрация и разрешение класса Xamarin.Forms DependencyService
 
@@ -36,7 +36,7 @@ ms.locfileid: "91556052"
 
 Можно использовать [`DependencyAttribute`](xref:Xamarin.Forms.DependencyAttribute), чтобы зарегистрировать реализацию платформы в [`DependencyService`](xref:Xamarin.Forms.DependencyService). Атрибут указывает, что заданный тип предоставляет конкретную реализацию интерфейса.
 
-В следующем примере демонстрируется использование [`DependencyAttribute`](xref:Xamarin.Forms.DependencyAttribute) для регистрации реализации интерфейса `IDeviceOrientationService` для iOS.
+В следующем примере используется [`DependencyAttribute`](xref:Xamarin.Forms.DependencyAttribute) для регистрации реализации интерфейса `IDeviceOrientationService` для iOS.
 
 ```csharp
 using Xamarin.Forms;
@@ -65,7 +65,7 @@ namespace DependencyServiceDemos.iOS
 
 Вы можете использовать методы [`DependencyService.Register`](xref:Xamarin.Forms.DependencyService.Register*) и `RegisterSingleton`, чтобы зарегистрировать реализацию платформы в [`DependencyService`](xref:Xamarin.Forms.DependencyService).
 
-В следующем примере демонстрируется использование метода [`Register`](xref:Xamarin.Forms.DependencyService.Register*) для регистрации реализации интерфейса `IDeviceOrientationService` для iOS.
+В следующем примере используется метод [`Register`](xref:Xamarin.Forms.DependencyService.Register*) для регистрации реализации интерфейса `IDeviceOrientationService` для iOS.
 
 ```csharp
 [Register("AppDelegate")]
