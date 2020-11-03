@@ -9,20 +9,20 @@ ms.date: 09/11/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6ca08815e422b9ec96dcb11d6b069a227bf62866
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 733f640a18196e6bf31eadfa1c632a7202fc1ccc
+ms.sourcegitcommit: 836d54779190b1bef1b43bc0c2016c9b3034bfda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91555272"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93281278"
 ---
 # <a name="skiasharp-graphics-in-no-locxamarinforms"></a>SkiaSharp графика в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Использование SkiaSharp для двухмерной графики в Xamarin.Forms приложениях_
 
-SkiaSharp — это двухмерная графическая система для .NET и C# на базе графического подсистемы СКИА с открытым кодом, которая широко используется в продуктах Google. SkiaSharp можно использовать в Xamarin.Forms приложениях для рисования двухмерной векторной графики, точечных рисунков и текста. Более общие сведения о библиотеке SkiaSharp и других руководствах см. в разделе Руководство по [2D-чертежу](~/graphics-games/skiasharp/index.md) .
+SkiaSharp — это двухмерная графическая система для .NET и C# на базе графического подсистемы СКИА с открытым кодом, которая широко используется в продуктах Google. SkiaSharp можно использовать в Xamarin.Forms приложениях для рисования двухмерной векторной графики, точечных рисунков и текста.
 
 В этом учебнике предполагается, что вы знакомы с Xamarin.Forms программированием.
 

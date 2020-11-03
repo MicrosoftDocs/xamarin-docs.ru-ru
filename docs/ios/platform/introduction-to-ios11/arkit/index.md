@@ -7,21 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/30/2017
-ms.openlocfilehash: 6803ecf2303ff2c91265f3ac8352a7aa15e74d40
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 6e96a57d2425d99839b723520ac24bafa57cc1a3
+ms.sourcegitcommit: 836d54779190b1bef1b43bc0c2016c9b3034bfda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91436200"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93281265"
 ---
 # <a name="introduction-to-arkit-in-xamarinios"></a>Общие сведения о ARKit в Xamarin. iOS
 
 _Дополненная реальность для iOS 11_
 
-ARKit обеспечивает широкий спектр расширенных приложений и игр в реальности. В этом разделе описываются следующие темы:
-
-- [начало работы с ARKit](#gettingstarted)
-- [Использование ARKit с UrhoSharp](urhosharp.md)
+ARKit включает широкий спектр расширенных приложений и игр в реальности
 
 <a name="gettingstarted"></a>
 
@@ -103,16 +100,15 @@ ship.Position = new SCNVector3(2f, -2f, -9f);
 SceneView.Session.Pause();
 ```
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 Приведенный выше код приводит к попросту ARKit приложению. Более сложные примеры предполагают, что контроллер представления, на котором размещается реализованный сеанс реальности, реализуется `IARSCNViewDelegate` , а также реализуются дополнительные методы.
 
-ARKit предоставляет множество более сложных функций, таких как отслеживание поверхности и взаимодействие с пользователем. Пример объединения отслеживания ARKit с UrhoSharp см. в [демонстрационном примере UrhoSharp](urhosharp.md) .
+ARKit предоставляет множество более сложных функций, таких как отслеживание поверхности и взаимодействие с пользователем.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Дополненная реальность (Apple)](https://developer.apple.com/arkit/)
-- [Использование ARKit с UrhoSharp](urhosharp.md)
 - [Пример простого ARKit (Jet)](/samples/xamarin/ios-samples/ios11-arkitsample)
 - [ARKit размещения объектов (пример)](/samples/xamarin/ios-samples/ios11-arkitplacingobjects)
 - [Введение в ARKit для iOS (ВВДК) (видео)](https://developer.apple.com/videos/play/wwdc2017/602/)

@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/19/2017
-ms.openlocfilehash: 35de7c5cf8fdb46f5bba0552e767ac00ee0fe34f
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 09b3ef1446f489b8f9077d59f74fee7cf157ca50
+ms.sourcegitcommit: 836d54779190b1bef1b43bc0c2016c9b3034bfda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91437346"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93281291"
 ---
 # <a name="introduction-to-ios-11"></a>Введение в iOS 11
 
-![Пример ARKit](images/arkit.png) ![Объекты, размещенные в AR](images/arkit2.png) ![Пример CoreML](images/coreml.png) ![Пример Мапкит](images/mapkit.png) ![Пример прямоугольников концепции](images/vision1.png) ![Пример лиц с видением](images/vision2.png) ![Пример перетаскивания](images/drag-drop.png) ![Пример перетаскивания](images/drag-drop2.png) ![Пример SiriKit](images/sirikit.png)
+![Пример ARKit](images/arkit.png) ![Объекты, размещенные в AR](images/arkit2.png) ![Пример CoreML](images/coreml.png) ![Пример Мапкит](images/mapkit.png) ![Пример прямоугольников концепции](images/vision1.png) ![Пример лиц с видением](images/vision2.png) ![Пример перетаскивания 1](images/drag-drop.png) ![Пример перетаскивания 2](images/drag-drop2.png) ![Пример SiriKit](images/sirikit.png)
 
 iOS 11 включает в себя множество новых и усовершенствованных возможностей в различных платформах:
 
@@ -27,7 +27,6 @@ iOS 11 включает в себя множество новых и усове�
 ## <a name="arkit"></a>[ARKit](arkit/index.md)
 
 ARKit расширяет возможности iOS, позволяя пользователям взаимодействовать с миром через камеру устройства.
-С помощью Xamarin можно также использовать [ARKit с UrhoSharp](arkit/urhosharp.md).
 
 ## <a name="coreml"></a>[CoreML](coreml.md)
 
@@ -63,7 +62,6 @@ Siri теперь поддерживает еще больше взаимоде�
 
 - [Пример ARKit](/samples/xamarin/ios-samples/ios11-arkitsample)
 - [ARKit размещения объектов](/samples/xamarin/ios-samples/ios11-arkitplacingobjects)
-- [ARKit и UrhoSharp](arkit/urhosharp.md)
 - [Пример распознавания изображений CoreML](/samples/xamarin/ios-samples/ios11-coremlimagerecognition)
 - [CoreML с настраиваемой моделью Azure](/samples/xamarin/ios-samples/ios11-coremlazuremodel)
 - [Пример средства чтения тегов Коренфк](/samples/xamarin/ios-samples/ios11-nfctagreader)
