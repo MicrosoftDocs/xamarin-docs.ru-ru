@@ -72,7 +72,7 @@
           href: curves/text-paths.md
         - name: Сведения о пути и перечисление
           href: curves/information.md
-    - name: Битовые карты
+    - name: Растровые изображения
       href: bitmaps/index.md
       items:
         - name: Вывод растровых изображений
@@ -89,7 +89,7 @@
           href: bitmaps/pixel-bits.md
         - name: Анимация растровых изображений
           href: bitmaps/animating.md
-    - name: Произведенный эффект
+    - name: Эффекты
       href: effects/index.md
       items:
         - name: Шейдеры
@@ -118,10 +118,5 @@
           href: effects/image-filters.md
         - name: Фильтры цветов
           href: effects/color-filters.md
-    - name: 'Примеры, независимые от платформы'
-      href: ~/graphics-games/skiasharp/introduction.md
-      items:
-        - name: Заметки о конкретных платформах
-          href: ~/graphics-games/skiasharp/platform.md
-    - name: Справочник по API
+    - name: Справочник по интерфейсам API
       href: /dotnet/api/skiasharp/
