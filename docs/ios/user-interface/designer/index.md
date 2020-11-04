@@ -7,22 +7,25 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/31/2018
-ms.openlocfilehash: 157e16da2c524029c29e767cd6b3e5eb550a2389
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 3a58fc58b429a8a16437773289cd4d7286bbff81
+ms.sourcegitcommit: d2aa3a8bf9a60b6708db55b10b0c6893c06d3256
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021759"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93331495"
 ---
 # <a name="building-user-interfaces-with-the-ios-designer"></a>Создание пользовательских интерфейсов с помощью конструктора iOS
 
 _Xamarin Designer для iOS является визуальным конструктором для раскадровки iOS и форматов Interface Builder, полностью интегрированных с Visual Studio для Mac и Visual Studio. Конструктор iOS поддерживает полную совместимость с форматами Storyboard и XIB, чтобы файлы можно было изменять либо в Visual Studio для Mac, либо в Visual Studio в дополнение к Interface Builderам Xcode. Кроме того, Xamarin Designer для iOS поддерживает дополнительные функции, такие как пользовательские элементы управления, отображаемые во время разработки в редакторе._
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+> [!WARNING]
+> Рекомендуемый способ создания пользовательских интерфейсов iOS теперь находится непосредственно на компьютере Mac с Xcode. Дополнительные сведения можно [найти здесь](~/ios/user-interface/ios-use-xcode.md).
+
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 [![Конструктор iOS в Visual Studio для Mac](images/designer-vsmac-sml.png "Конструктор iOS")](images/designer-vsmac.png#lightbox)
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 [![Конструктор iOS в Visual Studio](images/designer-vs.png "Конструктор iOS")](images/designer-vs.png#lightbox)
 
@@ -34,18 +37,18 @@ Xamarin Designer для iOS доступен в Visual Studio для Mac и в V
 
 В этих руководствах предполагается знание содержимого, описываемого в [руководствах по начало работы Xamarin. iOS](~/ios/get-started/index.md).
 
-## <a name="ios-designer-basicsintroductionmd"></a>[Основные сведения о конструкторе iOS](introduction.md)
+## <a name="ios-designer-basics"></a>[Основные сведения о конструкторе iOS](introduction.md)
 
 В этом руководстве описываются функции конструктора Xamarin iOS. Он охватывает основы конструктора, показывая, как использовать конструктор для визуального размещения элементов управления и изменения свойств.
 
-## <a name="designable-controls-overviewios-designable-controls-overviewmd"></a>[Общие сведения о конструированных элементах управления](ios-designable-controls-overview.md)
+## <a name="designable-controls-overview"></a>[Общие сведения о конструированных элементах управления](ios-designable-controls-overview.md)
 
 В этом руководство подробно рассматриваются пользовательские элементы управления, способы их создания и требования, которым они должны удовлетворять для подготовки к просмотру в области конструктора. Кроме того, в нем показано, как выполнять отладку распространенных проблем, которые могут возникнуть при использовании элементов управления, подопределяющих разработку.
 
-## <a name="walkthrough---using-custom-controls-with-ios-designerios-designable-controls-walkthroughmd"></a>[Пошаговое руководство. Использование настраиваемых элементов управления с помощью конструктора iOS](ios-designable-controls-walkthrough.md)
+## <a name="walkthrough---using-custom-controls-with-ios-designer"></a>[Пошаговое руководство. Использование настраиваемых элементов управления с помощью конструктора iOS](ios-designable-controls-walkthrough.md)
 
 В этой статье представлено пошаговое пошаговое руководство, в котором показано, как создать пользовательский элемент управления и использовать его в конструкторе iOS. В нем показано, как сделать элемент управления доступным на панели элементов конструктора, чтобы его можно было перетаскивать на представление. Кроме того, в нем показано, как реализовать элемент управления, чтобы он правильно отображался во время разработки и в среде выполнения, а также как создавать свойства, которые могут быть установлены во время разработки.
 
-## <a name="auto-layout-with-the-xamarin-ios-designerdesigner-auto-layoutmd"></a>[Автоматический макет с помощью конструктора Xamarin iOS](designer-auto-layout.md)
+## <a name="auto-layout-with-the-xamarin-ios-designer"></a>[Автоматический макет с помощью конструктора Xamarin iOS](designer-auto-layout.md)
 
 В этом разделе представлено описание автоматического макета iOS и рабочего процесса "новые ограничения", доступного в конструкторе iOS.

@@ -1,5 +1,5 @@
 ---
-title: Предварительный просмотр XAML дляXamarin.Forms
+title: Предварительный просмотр XAML для Xamarin.Forms
 description: В этой статье объясняется, как использовать предварительный просмотр XAML для просмотра Xamarin.Forms макетов, отображаемых при вводе. Предварительный просмотр XAML доступен в Visual Studio 2019 и Visual Studio 2019 для Mac.
 zone_pivot_groups: platform
 ms.prod: xamarin
@@ -11,16 +11,19 @@ ms.date: 03/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6916d5fde688c5b1162f12db0d36bc3ca27156d8
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: dff01728c986b23e59af702edb3bfd8c74ad744a
+ms.sourcegitcommit: d2aa3a8bf9a60b6708db55b10b0c6893c06d3256
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84137323"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93331452"
 ---
-# <a name="xaml-previewer-for-xamarinforms"></a>Предварительный просмотр XAML дляXamarin.Forms
+# <a name="xaml-previewer-for-no-locxamarinforms"></a>Предварительный просмотр XAML для Xamarin.Forms
 
 _Просмотр Xamarin.Forms макетов при вводе_
+
+> [!WARNING]
+> Для предварительного просмотра XAML рекомендуется использовать **[горячую перезагрузку XAML](~/xamarin-forms/xaml/hot-reload.md)**.
 
 ## <a name="overview"></a>Обзор
 
@@ -34,7 +37,7 @@ _Просмотр Xamarin.Forms макетов при вводе_
 
 Вы можете открыть предварительный просмотр XAML, щелкнув стрелки на панели разделенное представление. Если необходимо изменить поведение представления с разделением по умолчанию, воспользуйтесь **инструментами > параметры > диалоговом окне Xamarin.Forms предварительного просмотра для Xamarin > XAML** . В этом диалоговом окне можно выбрать представление документа по умолчанию и ориентацию разбиения.
 
-[![Xamarin.FormsПараметры средства предварительного просмотра в Visual Studio](xaml-previewer-images/xamlp-options-vs-sm.png "[! Операцион. Параметры предварительного просмотра в Visual Studio ОТСУТСТВУЮТ-LOC (Xamarin. Forms)]")](xaml-previewer-images/xamlp-options-vs-lg.png#lightbox)
+[![::: No-Loc (Xamarin. Forms)::: параметры предварительного просмотра в Visual Studio](xaml-previewer-images/xamlp-options-vs-sm.png "::: No-Loc (Xamarin. Forms)::: параметры предварительного просмотра в Visual Studio")](xaml-previewer-images/xamlp-options-vs-lg.png#lightbox)
 
 При открытии XAML-файла редактор открывает полный размер или рядом с предварительным просмотром на основе параметров, выбранных в **меню сервис > параметры > Xamarin > Xamarin.Forms XAML** Preview Dialog. Однако разбиение можно изменить для каждого файла в окне редактора.
 
@@ -42,15 +45,15 @@ _Просмотр Xamarin.Forms макетов при вводе_
 
 Выберите, следует ли просматривать код, предварительный просмотр XAML или оба эти кнопки на панели разделенное представление. С помощью средней кнопки можно поменять местами, на которых располагается предварительный просмотр и ваш код:
 
-[![Xamarin.FormsЭлементы управления предварительного просмотра для переключения между представлением конструктора, источника и разделения в Visual Studio](xaml-previewer-images/xamlp-controls-splitview-vs-sm.png "[! Операцион. НЕТ-LOC (Xamarin. Forms)] элементы управления предварительного просмотра для переключения между представлением конструктора, источника и разделения в Visual Studio")](xaml-previewer-images/xamlp-controls-splitview-vs-lg.png#lightbox)
+[![::: No-Loc (Xamarin. Forms)::: элементы управления предварительного просмотра для переключения между представлением конструктора, источника и разделения в Visual Studio](xaml-previewer-images/xamlp-controls-splitview-vs-sm.png "::: No-Loc (Xamarin. Forms)::: элементы управления предварительного просмотра для переключения между представлением конструктора, источника и разделения в Visual Studio")](xaml-previewer-images/xamlp-controls-splitview-vs-lg.png#lightbox)
 
 Можно изменить, разбивается ли экран по вертикали или по горизонтали, или полностью свернуть одну панель:
 
-[![Xamarin.FormsЭлементы управления ориентацией панели предварительного просмотра в Visual Studio](xaml-previewer-images/xamlp-controls-orientation-vs-sm.png "[! Операцион. НЕТ-LOC (Xamarin. Forms)] элементы управления ориентацией панели предварительного просмотра в Visual Studio")](xaml-previewer-images/xamlp-controls-orientation-vs-lg.png#lightbox)
+[![::: No-Loc (Xamarin. Forms)::: панель предварительного просмотра элементы управления ориентацией в Visual Studio](xaml-previewer-images/xamlp-controls-orientation-vs-sm.png "::: No-Loc (Xamarin. Forms)::: панель предварительного просмотра элементы управления ориентацией в Visual Studio")](xaml-previewer-images/xamlp-controls-orientation-vs-lg.png#lightbox)
 
 #### <a name="enable-or-disable-the-xaml-previewer"></a>Включение или отключение предварительного просмотра XAML
 
-Вы можете отключить средство предварительного просмотра XAML в диалоговом окне **средства > параметры > Xamarin > Xamarin.Forms XAML** , выбрав редактор **XML по** умолчанию в качестве **редактора XAML по умолчанию**. Это также выключает структуру документа, панель свойств и панель элементов XAML. Чтобы включить средство предварительного просмотра XAML и эти средства снова, измените **редактор XAML по умолчанию** на " ** Xamarin.Forms Предварительный просмотр**".
+Вы можете отключить средство предварительного просмотра XAML в диалоговом окне **средства > параметры > Xamarin > Xamarin.Forms XAML** , выбрав редактор **XML по** умолчанию в качестве **редактора XAML по умолчанию**. Это также выключает структуру документа, панель свойств и панель элементов XAML. Чтобы включить средство предварительного просмотра XAML и эти средства снова, измените **редактор XAML по умолчанию** на " **Xamarin.Forms Предварительный просмотр** ".
 
 ::: zone-end
 ::: zone pivot="macos"
@@ -59,14 +62,14 @@ _Просмотр Xamarin.Forms макетов при вводе_
 
 Кнопка **Предварительный просмотр** отображается в редакторе при открытии страницы XAML. Показать или скрыть предварительный просмотр, нажав кнопки **предварительного просмотра** или **разбиения** в левом нижнем углу окна документа XAML:
 
-[![Xamarin.FormsПредварительный просмотр включен с кнопкой "Просмотр" или "разделить"](xaml-previewer-images/xamlp-list-sml.png)](xaml-previewer-images/xamlp-list.png#lightbox)
+[![::: No-Loc (Xamarin. Forms)::. Предварительный просмотр включен с помощью кнопки предварительного просмотра или разбиения](xaml-previewer-images/xamlp-list-sml.png)](xaml-previewer-images/xamlp-list.png#lightbox)
 
 > [!NOTE]
 > В более ранних версиях Visual Studio для Mac кнопка **Предварительный просмотр** находится в правом верхнем углу окна.
 
 #### <a name="enable-or-disable-the-xaml-previewer"></a>Включение или отключение предварительного просмотра XAML
 
-Вы можете отключить предварительный просмотр XAML в **Visual Studio > предпочтения > текстовый редактор > XAML** , ВЫБРАВ **Редактор XML по** умолчанию в качестве **редактора XAML по умолчанию**. Это также выключает структуру документа, панель свойств и панель элементов XAML. Чтобы включить средство предварительного просмотра XAML и эти средства снова, измените **редактор XAML по умолчанию** на " ** Xamarin.Forms Предварительный просмотр**".
+Вы можете отключить предварительный просмотр XAML в **Visual Studio > предпочтения > текстовый редактор > XAML** , ВЫБРАВ **Редактор XML по** умолчанию в качестве **редактора XAML по умолчанию**. Это также выключает структуру документа, панель свойств и панель элементов XAML. Чтобы включить средство предварительного просмотра XAML и эти средства снова, измените **редактор XAML по умолчанию** на " **Xamarin.Forms Предварительный просмотр** ".
 
 ::: zone-end
 
@@ -75,7 +78,7 @@ _Просмотр Xamarin.Forms макетов при вводе_
 Ниже перечислены параметры, доступные в верхней части области просмотра.
 
 * **Android** — отображение версии экрана Android
-* **iOS** — показывать версию iOS на экране (*Примечание. Если вы используете Visual Studio в Windows, для использования этого режима необходимо [связать с компьютером Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md) *)
+* **iOS** — показывать версию iOS на экране ( *Примечание. Если вы используете Visual Studio в Windows, для использования этого режима необходимо [связать с компьютером Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md)* )
 * **Устройство** -раскрывающийся список устройств Android или iOS, включая разрешение и размер экрана
 * **Книжная (значок)** — использует книжную ориентацию для предварительного просмотра.
 * **Альбомная (значок)** — использует альбомную ориентацию для предварительного просмотра
@@ -98,7 +101,7 @@ if (!DesignMode.IsDesignModeEnabled)
 
 Это свойство полезно при инициализации библиотеки в конструкторе страницы, которая не запускается во время разработки.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 Если предварительный просмотр не работает, проверьте указанные ниже проблемы и [форумы Xamarin](https://forums.xamarin.com/categories/xamarin-forms).
 
