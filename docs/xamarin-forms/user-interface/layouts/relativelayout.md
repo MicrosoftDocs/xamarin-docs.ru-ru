@@ -11,16 +11,16 @@ ms.custom: contperfq1
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d350ceee778c9f9ba9f25555a89a925558c6d38b
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 26c7294b816dbfeb42a7a313ec9b8ad1dcbf6583
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556845"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369250"
 ---
 # <a name="no-locxamarinforms-relativelayout"></a>Xamarin.Forms RelativeLayout
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-relativelayoutdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-relativelayoutdemos)
 
 [![::: No-Loc (Xamarin. Forms)::: RelativeLayout](relativelayout-images/layouts.png)](relativelayout-images/layouts-large.png#lightbox)
 
@@ -110,7 +110,7 @@ ms.locfileid: "91556845"
 
 ![Дочерние элементы, размещенные в RelativeLayout с использованием абсолютных значений](relativelayout-images/absolute-values.png)
 
-Эквивалентный код C# показан ниже:
+Ниже приведен эквивалентный код на C#:
 
 ```csharp
 public class StylishHeaderDemoPageCS : ContentPage

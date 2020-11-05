@@ -10,16 +10,16 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7e2f9d27fb111feb31272df03c3676c7f4d36769
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: d8cc1cf0bb121fadb150523f71d09a2558265be3
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556637"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369224"
 ---
 # <a name="skiasharp-shaders"></a>Шейдеры SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Можно задать [`Shader`](xref:SkiaSharp.SKPaint.Shader) свойство `SKPaint` объекта типа, [`SKShader`](xref:SkiaSharp.SKShader) чтобы создать несколько типов градиентов, шаблон мозаичного точечного рисунка или шум Perl.
 

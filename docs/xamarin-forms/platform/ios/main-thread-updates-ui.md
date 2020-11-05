@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 844e04b91910152954973f7e6f10c0d56acadf22
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 404e84e9da1df8a44fa176a17f2407e314ae7968
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563693"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368319"
 ---
 # <a name="main-thread-control-updates-on-ios"></a>Основные обновления управления потоком в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS позволяет выполнять обновления элементов управления и отрисовки в основном потоке, а не выполнять в фоновом потоке. Он должен быть редко необходим, но в некоторых случаях может препятствовать сбоям. Его использование в XAML путем установки `Application.HandleControlUpdatesOnMainThread` Свойства BIND в значение `true` :
 

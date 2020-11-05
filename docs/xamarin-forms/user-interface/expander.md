@@ -10,16 +10,16 @@ ms.date: 04/15/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4be3744e0cce465aab8fc4af39495d2f7d8e9004
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 0d6cf880be995949553602f9925535e55a8dbb49
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556611"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369510"
 ---
 # <a name="no-locxamarinforms-expander"></a>Xamarin.Forms Expander
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
 
 Xamarin.Forms `Expander` Элемент управления предоставляет расширяемый контейнер для размещения любого содержимого. Элемент управления имеет заголовок и содержимое, и содержимое отображается или скрыто путем касания `Expander` заголовка. Если отображается только `Expander` заголовок, `Expander` *сворачивается*. Если `Expander` содержимое видимо, `Expander` *разворачивается*.
 

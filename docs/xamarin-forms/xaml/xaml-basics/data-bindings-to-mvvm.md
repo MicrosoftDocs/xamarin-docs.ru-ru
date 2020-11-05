@@ -11,16 +11,16 @@ ms.date: 10/25/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8cb59738519af933e509ebf63a923e573667941e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: a62fee4ca3cdb4de7f23856f123389df23692f62
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562916"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368938"
 ---
 # <a name="part-5-from-data-bindings-to-mvvm"></a>Часть 5. От привязки данных до MVVM
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xamlsamples)
 
 _Шаблон архитектуры Model-View-ViewModel (MVVM) был создан с учетом XAML. Шаблон обеспечивает разделение между тремя уровнями программного обеспечения — пользовательским интерфейсом XAML, называемым представлением; базовые данные, называемые моделью; и посредник между представлением и моделью, называемой ViewModel. Представления и ViewModel часто соединяются с помощью привязок данных, определенных в файле XAML. BindingContext для представления обычно является экземпляром ViewModel._
 
@@ -298,7 +298,7 @@ namespace XamlSamples
 
 По умолчанию используется привязка для каждого из них `Label` `OneWay` . Оно должно отображать только значение. Но привязка для каждого из них `Slider` — `TwoWay` . Это позволяет `Slider` инициализировать объект из ViewModel. Обратите внимание, что `Color` для свойства задано значение, `Aqua` когда создается экземпляр ViewModel. Но изменение в `Slider` также должно задавать новое значение для свойства в ViewModel, которое затем вычисляет новый цвет.
 
-[![MVVM с использованием двухсторонней привязки данных](data-bindings-to-mvvm-images/hslcolorscroll.png)](data-bindings-to-mvvm-images/hslcolorscroll-large.png#lightbox "MVVM с использованием двухсторонней привязки данных")
+[![MVVM с использованием Two-Way привязок данных](data-bindings-to-mvvm-images/hslcolorscroll.png)](data-bindings-to-mvvm-images/hslcolorscroll-large.png#lightbox "MVVM с использованием Two-Way привязок данных")
 
 ## <a name="commanding-with-viewmodels"></a>Командная команда с ViewModels
 
@@ -566,7 +566,7 @@ namespace XamlSamples
 Команды также могут вызывать асинхронные методы. Это достигается при использовании `async` `await` ключевых слов и при указании `Execute` метода:
 
 ```csharp
-DownloadCommand = new Command (async () => await DownloadAsync ());
+DownloadCommand = new Command (async () => await DownloadAsync ());
 ```
 
 Это означает, что `DownloadAsync` метод является `Task` и должен быть ожидаемым:
@@ -708,7 +708,7 @@ private async void OnListViewItemSelected(object sender, SelectedItemChangedEven
 
 **Xamarin развивается 2016: MVVM Simple с Xamarin.Forms и Prism**
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 XAML — это мощный инструмент для определения пользовательских интерфейсов в Xamarin.Forms приложениях, особенно при использовании привязки данных и MVVM. Результатом является четкое, элегантное и потенциально доступное для инструментария представление пользовательского интерфейса со всей фоновой поддержкой в коде.
 

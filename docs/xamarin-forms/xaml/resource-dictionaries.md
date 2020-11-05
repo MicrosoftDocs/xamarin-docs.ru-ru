@@ -11,16 +11,16 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 ms.custom: video
-ms.openlocfilehash: cdf34d78751345857e89c6bfa6862b58207ad01e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 90068096eced1fd1ddd2eb59b845eb4d5e41286f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562136"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368886"
 ---
 # <a name="no-locxamarinforms-resource-dictionaries"></a>Xamarin.Forms Словари ресурсов
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-resourcedictionaries)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xaml-resourcedictionaries)
 
 [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary)— Это репозиторий для ресурсов, используемых Xamarin.Forms приложением. Типичные ресурсы, которые хранятся в `ResourceDictionary` [стилях](~/xamarin-forms/user-interface/styles/index.md)включения, [шаблонах элементов управления](~/xamarin-forms/app-fundamentals/templates/control-template.md), [шаблонах данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md), цветах и конвертерах.
 
@@ -137,7 +137,7 @@ Xamarin.FormsПриложение содержит только класс, пр
 
 Чтобы создать такой файл, добавьте в проект новое **представление содержимого** или элемент **страницы содержимого** (но не **представление содержимого** или **страницу содержимого** с файлом C#). Удалите файл кода программной части и в XAML-файле измените имя базового класса с [`ContentView`](xref:Xamarin.Forms.ContentView) или [`ContentPage`](xref:Xamarin.Forms.ContentPage) на [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Кроме того, удалите `x:Class` атрибут из корневого тега файла.
 
-В следующем примере XAML показан [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) именованный **миресаурцедиктионари. XAML**:
+В следующем примере XAML показан [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) именованный **миресаурцедиктионари. XAML** :
 
 ```xaml
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
@@ -194,7 +194,7 @@ Xamarin.FormsПриложение содержит только класс, пр
 
 ### <a name="merge-resource-dictionaries-from-other-assemblies"></a>Объединить словари ресурсов из других сборок
 
-[`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary)Можно также объединить в другой `ResourceDictionary` , добавив его в [`MergedDictionaries`](xref:Xamarin.Forms.ResourceDictionary.MergedDictionaries) свойство объекта `ResourceDictionary` . Этот метод позволяет объединять словари ресурсов независимо от сборки, в которой они находятся. Для объединения словарей ресурсов из внешних сборок требуется, [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) чтобы для свойства для действия сборки было задано значение **EmbeddedResource**, чтобы имелся файл кода программной части, а также для определения `x:Class` атрибута в корневом теге файла.
+[`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary)Можно также объединить в другой `ResourceDictionary` , добавив его в [`MergedDictionaries`](xref:Xamarin.Forms.ResourceDictionary.MergedDictionaries) свойство объекта `ResourceDictionary` . Этот метод позволяет объединять словари ресурсов независимо от сборки, в которой они находятся. Для объединения словарей ресурсов из внешних сборок требуется, [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) чтобы для свойства для действия сборки было задано значение **EmbeddedResource** , чтобы имелся файл кода программной части, а также для определения `x:Class` атрибута в корневом теге файла.
 
 > [!WARNING]
 > [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary)Класс также определяет [`MergedWith`](xref:Xamarin.Forms.ResourceDictionary.MergedWith) свойство. Однако это свойство является устаревшим и больше не должно использоваться.

@@ -10,18 +10,18 @@ ms.date: 02/18/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 43702453d1defc3b5a63aba845231f514913d7c5
-ms.sourcegitcommit: 1649554b8c08369b713d20246154455c0ba7d1c0
+ms.openlocfilehash: 0daae3edcfbf95d75c566b3ce10f20c83d099e13
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91712559"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368342"
 ---
 # <a name="no-locxamarinforms-mediaelement"></a>Xamarin.Forms MediaElement
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
 
 [`MediaElement`](xref:Xamarin.Forms.MediaElement) — Это представление для воспроизведения видео и аудио. Носители, поддерживаемые базовой платформой, можно воспроизводить из следующих источников:
 
@@ -324,7 +324,7 @@ protected override void OnDisappearing()
 
 ## <a name="implement-custom-transport-controls"></a>Реализация пользовательских элементов управления транспортом
 
-Элементы управления транспорта проигрывателя мультимедиа включают кнопки, выполняющие функции **воспроизведения**, **приостановки**и **остановки**. Эти кнопки обычно определяются по знакомым значкам, а не тексту. Как правило, функции **Воспроизведение** и **Пауза** объединены в одну кнопку.
+Элементы управления транспорта проигрывателя мультимедиа включают кнопки, выполняющие функции **воспроизведения** , **приостановки** и **остановки**. Эти кнопки обычно определяются по знакомым значкам, а не тексту. Как правило, функции **Воспроизведение** и **Пауза** объединены в одну кнопку.
 
 По умолчанию [`MediaElement`](xref:Xamarin.Forms.MediaElement) элементы управления воспроизведением отключены. Это позволяет управлять `MediaElement` программно или путем предоставления собственных элементов управления транспорта. В поддержку этого `MediaElement` [`Play`](xref:Xamarin.Forms.MediaElement.Play) метода входят методы, [`Pause`](xref:Xamarin.Forms.MediaElement.Pause) и [`Stop`](xref:Xamarin.Forms.MediaElement.Stop) .
 
@@ -377,7 +377,7 @@ protected override void OnDisappearing()
 </ContentPage>
 ```
 
-В этом примере пользовательские элементы управления транспортом определяются как [`Button`](xref:Xamarin.Forms.Button) объекты. Однако существует только два `Button` объекта, первый из `Button` которых представляет **Воспроизведение** и **приостановку**, а второй `Button` представляет **остановку**. [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) объекты используются для включения и отключения кнопок, а также для переключения первой кнопки между **воспроизведением** и **паузой**. Дополнительные сведения о триггерах данных см. в разделе [ Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md).
+В этом примере пользовательские элементы управления транспортом определяются как [`Button`](xref:Xamarin.Forms.Button) объекты. Однако существует только два `Button` объекта, первый из `Button` которых представляет **Воспроизведение** и **приостановку** , а второй `Button` представляет **остановку**. [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) объекты используются для включения и отключения кнопок, а также для переключения первой кнопки между **воспроизведением** и **паузой**. Дополнительные сведения о триггерах данных см. в разделе [ Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md).
 
 Файл кода программной части содержит обработчики для [`Clicked`](xref:Xamarin.Forms.Button.Clicked) событий:
 

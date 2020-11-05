@@ -10,16 +10,16 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f90fc5bdc29009584536cd6d4321ed8abfc8b878
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 96e05e29c6488113f31c05020870ca9e9a73f3f5
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563410"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368626"
 ---
 # <a name="tabbedpage-page-swiping-on-android"></a>Таббедпаже прокрутка страниц на Android
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа для Android используется для включения прокрутки с помощью жеста горизонтального пальца между страницами в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) . Он используется в XAML путем присвоения [`TabbedPage.IsSwipePagingEnabled`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.IsSwipePagingEnabledProperty) свойству присоединенного свойства `boolean` значения:
 

@@ -6,16 +6,16 @@ ms.assetid: 455fda67-3879-4299-8036-b12840e6a498
 author: davidortinau
 ms.author: daortin
 ms.date: 04/24/2019
-ms.openlocfilehash: 77df7d986f63861667c67b9c74b88ea6176f42ad
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: 96f8a8c2fa49e1ff59621908ef89d08d302aaffa
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91458190"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367976"
 ---
 # <a name="visual-basic-in-xamarin-android-and-ios"></a>Visual Basic в Xamarin Android и iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/mobile-samples/visualbasic-taskyvb/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/mobile-samples/visualbasic-taskyvb/)
 
 Пример приложения [таскивб](/samples/xamarin/mobile-samples/visualbasic-taskyvb/) демонстрирует, как Visual Basic код, скомпилированный в библиотеку .NET Standard, можно использовать с Xamarin. Ниже приведены некоторые снимки экрана приложений, работающих в Android и iOS.
 

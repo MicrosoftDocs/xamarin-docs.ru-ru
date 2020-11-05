@@ -10,16 +10,16 @@ ms.date: 01/30/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ad297b735449796925b92fbc9d1887db9e8a1c99
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: d986d66b9b83bb1034c9e635c3a35f2a0ac3dfda
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563332"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369068"
 ---
 # <a name="implicit-styles-in-no-locxamarinforms"></a>Неявные стили в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
 
 _Неявный стиль — это тот, который используется всеми элементами управления одного и того же TargetType, не требуя, чтобы каждый элемент управления ссылался на стиль._
 

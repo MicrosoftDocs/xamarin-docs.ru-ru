@@ -10,16 +10,16 @@ ms.date: 08/21/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6f5702695698881a30cfbf3e63110856a97a2c24
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: b67dcbfbd67ad2ef6fa94948e211dfb8e2a9e9cb
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91555351"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368574"
 ---
 # <a name="choose-a-no-locxamarinforms-layout"></a>Выбор Xamarin.Forms макета
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layout)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-layout)
 
 Xamarin.Forms классы макетов позволяют упорядочивать и группировать элементы управления ИП в приложении. Выбор класса макета требует знания того, как макет позиционирует свои дочерние элементы, и как макет изменяет свои дочерние элементы. Кроме того, может потребоваться вложение макетов для создания желаемого макета.
 
@@ -78,7 +78,7 @@ Xamarin.Forms классы макетов позволяют упорядочи�
 
 Дополнительные сведения см. в разделе [ Xamarin.Forms StackLayout](stacklayout.md).
 
-## <a name="grid"></a>Grid
+## <a name="grid"></a>Макет Grid
 
 Объект [`Grid`](xref:Xamarin.Forms.Grid) используется для отображения элементов в строках и столбцах, которые могут иметь пропорциональные или абсолютные размеры. Строки и столбцы сетки указываются с помощью [`RowDefinitions`](xref:Xamarin.Forms.Grid.RowDefinitions) [`ColumnDefinitions`](xref:Xamarin.Forms.Grid.ColumnDefinitions) свойств и.
 

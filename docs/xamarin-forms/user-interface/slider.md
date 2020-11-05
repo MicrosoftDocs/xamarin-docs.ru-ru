@@ -10,16 +10,16 @@ ms.date: 02/27/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4d53f999e27aa5aea852f09e8650ea66aac1d9b9
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 364cda6372986113e8a782a061783e0ca5455f3b
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91558834"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368548"
 ---
 # <a name="no-locxamarinforms-slider"></a>Xamarin.Forms Группу
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-sliderdemos)
 
 _Используйте ползунок для выбора из диапазона непрерывных значений._
 
@@ -298,7 +298,7 @@ Slider slider = new Slider
 
 ### <a name="the-stepslider-solution"></a>Решение Степслидер
 
-Более гибкая часть `StepSlider` обсуждается в [главе 27. Пользовательские модули подготовки](https://xamarin.azureedge.net/developer/xamarin-forms-book/XamarinFormsBook-Ch27-Apr2016.pdf) книги, *создающие мобильные приложения с Xamarin.Forms помощью *. Объект `StepSlider` аналогичен, `Slider` но добавляет `Steps` свойство, чтобы указать количество значений в диапазоне от `Minimum` до `Maximum` .
+Более гибкая часть `StepSlider` обсуждается в [главе 27. Пользовательские модули подготовки](https://xamarin.azureedge.net/developer/xamarin-forms-book/XamarinFormsBook-Ch27-Apr2016.pdf) книги, *создающие мобильные приложения с Xamarin.Forms помощью*. Объект `StepSlider` аналогичен, `Slider` но добавляет `Steps` свойство, чтобы указать количество значений в диапазоне от `Minimum` до `Maximum` .
 
 ## <a name="sliders-for-color-selection"></a>Ползунки для выбора цвета
 

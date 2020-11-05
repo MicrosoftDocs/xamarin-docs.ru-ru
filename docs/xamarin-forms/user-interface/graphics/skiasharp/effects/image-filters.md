@@ -10,16 +10,16 @@ ms.date: 08/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4f10d39ff9fb08897f12cf1991ddcd2d7793b695
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 16e41b7a15483bddb3232de4bfeba0fd19b3c01f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91564034"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369874"
 ---
 # <a name="skiasharp-image-filters"></a>Фильтры изображений SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Фильтры изображений — это эффекты, которые работают со всеми цветовыми битами пикселов, составляющих изображение. Они являются более гибкими, чем фильтры маски, которые работают только с альфа-каналом, как описано в статье [**SkiaSharp Mask Filters**](mask-filters.md). Чтобы использовать фильтр изображений, задайте [`ImageFilter`](xref:SkiaSharp.SKPaint.ImageFilter) `SKPaint` для свойства объекта тип [`SKImageFilter`](xref:SkiaSharp.SKImageFilter) , который вы создали, вызвав один из статических методов класса.
 

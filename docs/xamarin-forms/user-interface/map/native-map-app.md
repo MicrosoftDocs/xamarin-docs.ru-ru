@@ -10,16 +10,16 @@ ms.date: 10/30/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ede34258650c378a45ee694f90de1e8b249acf71
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: cbd61d956b17df556cb4bb452f60b0e41b31b707
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91559887"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368249"
 ---
 # <a name="launch-the-native-map-app-from-no-locxamarinforms"></a>Запустите собственное приложение Map из Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithmaps)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
 Собственное приложение Map на каждой платформе можно запустить из Xamarin.Forms приложения с помощью Xamarin.Essentials `Launcher` класса. Этот класс позволяет приложению открывать другое приложение с помощью собственной схемы URI. Функцию запуска можно вызвать с помощью `OpenAsync` метода, передав `string` `Uri` аргумент или, представляющий настраиваемую схему URL-адресов для открытия. Дополнительные сведения о Xamarin.Essentials см. в разделе [Xamarin.Essentials](~/essentials/index.md?context=xamarin/xamarin-forms) .
 

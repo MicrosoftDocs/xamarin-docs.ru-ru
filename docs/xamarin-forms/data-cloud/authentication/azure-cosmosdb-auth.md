@@ -10,16 +10,16 @@ ms.date: 06/16/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2dacbc18fdbc7d9c7bd38d5ddfad2157e3a0a503
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: caa4f78d70f583c22fb4a00fd85b91ec7357013a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563293"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369744"
 ---
 # <a name="authenticate-users-with-an-azure-cosmos-db-document-database-and-no-locxamarinforms"></a>Проверка подлинности пользователей с помощью Azure Cosmos DB базы данных документов и Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdbauth)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/webservices-tododocumentdbauth)
 
 _Базы данных документов Azure Cosmos DB поддерживают секционированные коллекции, которые могут охватывать несколько серверов и секций при поддержке неограниченного объема хранилища и пропускной способности. В этой статье объясняется, как объединить контроль доступа с секционированными коллекциями, чтобы пользователь мог получить доступ к собственным документам в Xamarin.Forms приложении._
 
@@ -258,7 +258,7 @@ await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(Constants.Database
 
 Дополнительные сведения об удалении документа из коллекции документов см. в разделе [Удаление документа из коллекции документов](~/xamarin-forms/data-cloud/azure-services/azure-cosmosdb.md#deleting-a-document-from-a-document-collection).
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье объясняется, как объединить контроль доступа с секционированными коллекциями, чтобы пользователь мог получить доступ к собственным документам базы данных документов в Xamarin.Forms приложении. Указание удостоверения пользователя в качестве ключа секции гарантирует, что секционированная коллекция сможет хранить только документы для этого пользователя.
 

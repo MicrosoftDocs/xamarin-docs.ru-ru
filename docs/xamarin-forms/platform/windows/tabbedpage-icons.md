@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 60b331b01f7ba16bd2ea828d429ee64ae25766ea
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 3b63e66018ec96df49dfed2eb0ac6320a9585084
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560277"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368336"
 ---
 # <a name="tabbedpage-icons-on-windows"></a>Значки Таббедпаже в Windows
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Этот универсальная платформа Windows, зависящий от платформы, позволяет отображать значки страниц на [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) панели инструментов и позволяет дополнительно указывать размер значка. Он используется в XAML путем присвоения [`TabbedPage.HeaderIconsEnabled`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.HeaderIconsEnabledProperty) присоединенному свойству `true` значения, а также при необходимости установки [`TabbedPage.HeaderIconsSize`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.TabbedPage.HeaderIconsSizeProperty) присоединенного свойства в [`Size`](xref:Xamarin.Forms.Size) значение:
 

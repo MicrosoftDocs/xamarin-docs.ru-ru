@@ -10,16 +10,16 @@ ms.date: 01/05/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 98eb35697aee9022a837a7b0b531edb0c53b2239
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: da88337778f31378d257894c3428ad89889673d3
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562149"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368951"
 ---
 # <a name="xaml-markup-extensions"></a>Расширения разметки XAML
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
 
 Расширения разметки XAML помогают расширить возможности и гибкость XAML, разрешая установку атрибутов элементов из источников, отличных от текстовых строк.
 

@@ -10,16 +10,16 @@ ms.date: 09/12/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cf9ebb819d5b424963170d563575c4900bbed28b
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 64a81b04961ebb0d03f661e99839b7ed78d710f2
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556364"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368678"
 ---
 # <a name="path-information-and-enumeration"></a>Сведения о пути и перечисление
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Получение сведений о путях и перечисление содержимого_
 
@@ -141,7 +141,7 @@ Boolean GetMatrix (Single distance, out SKMatrix matrix, SKPathMeasureMatrixFlag
 
 Страница **половинной черты уницикле** анимирует фигуру на уницикле, который кажется пере в кривую Безье третьего порядка:
 
-[![Тройной снимок экрана страницы Уницикле половина канала](information-images/unicyclehalfpipe-small.png)](information-images/unicyclehalfpipe-large.png#lightbox "Тройной снимок экрана страницы Уницикле половина канала")
+[![Тройной снимок экрана страницы Half-Pipe Уницикле](information-images/unicyclehalfpipe-small.png)](information-images/unicyclehalfpipe-large.png#lightbox "Тройной снимок экрана страницы Half-Pipe Уницикле")
 
 `SKPaint`Объект, используемый для обводки половинной черты и уницикле, определяется как поле в `UnicycleHalfPipePage` классе. Также определяется `SKPath` объект для уницикле:
 

@@ -10,16 +10,16 @@ ms.date: 07/29/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 074af11d7873ed44c0a48f923f7560dd50cea6a5
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 21e06560bd67683496b10c8e8c9c3fff520fc36a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563241"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368171"
 ---
 # <a name="path-effects-in-skiasharp"></a>Эффекты пути в SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Обнаружение различных эффектов пути, позволяющих использовать пути для обводки и заливки_
 
@@ -421,7 +421,7 @@ public partial class OneDimensionalPathEffectPage : ContentPage
 
 `y = a · cosh(x / a)`
 
-*Cosh* является гиперболическим косинусом. Для *x* , равного 0, *cosh* равен нулю, а *y* равно *a*. Это центр катенари. Как и в *косинусе* , *cosh* считается *четным*, а это означает, что *cosh (– x)* равен *cosh (x)*, а значения увеличиваются для увеличения положительных или отрицательных аргументов. Эти значения описывают кривые, которые формируют стороны катенари.
+*Cosh* является гиперболическим косинусом. Для *x* , равного 0, *cosh* равен нулю, а *y* равно *a*. Это центр катенари. Как и в *косинусе* , *cosh* считается *четным* , а это означает, что *cosh (– x)* равен *cosh (x)* , а значения увеличиваются для увеличения положительных или отрицательных аргументов. Эти значения описывают кривые, которые формируют стороны катенари.
 
 Нахождение правильного *значения для катенари к* размерам страницы телефона не является прямым вычислением. Если *w* и *h* — ширина и высота прямоугольника, оптимальное значение *выражения удовлетворяет следующему* уравнению:
 
@@ -691,7 +691,7 @@ public class ConveyorBeltPage : ContentPage
 
 ## <a name="from-path-to-path-again"></a>От пути к пути
 
-В нижней части `DrawSurface` обработчика **конвейерной транспортера**закомментируйте `canvas.DrawPath` вызов и замените его следующим кодом:
+В нижней части `DrawSurface` обработчика **конвейерной транспортера** закомментируйте `canvas.DrawPath` вызов и замените его следующим кодом:
 
 ```csharp
 SKPath newPath = new SKPath();

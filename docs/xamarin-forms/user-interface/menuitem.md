@@ -10,16 +10,16 @@ ms.date: 08/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 749e569e36896441c5b7cebbc4425d9c0e860e0b
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: a7adb890ed103b595aa777d33254ab2fcb776901
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91559640"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368145"
 ---
 # <a name="no-locxamarinforms-menuitem"></a>Xamarin.Forms MenuItem
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-menuitemdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-menuitemdemos/)
 
 Xamarin.Forms [`MenuItem`](xref:Xamarin.Forms.MenuItem) Класс определяет пункты меню для меню, такие как `ListView` Контекстные меню элементов и всплывающие меню приложения оболочки.
 

@@ -10,16 +10,16 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4c205c033f7032eb093b91c10292610bacc12a26
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 3ec4a30f077aac53eda0a317bcb5294816e3c51a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556520"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369315"
 ---
 # <a name="skiasharp-drawing-basics"></a>Основы рисования в SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Основные сведения о концепциях и координатах SkiaSharp Graphics_
 

@@ -10,16 +10,16 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3baadfcb06a595c5809dbabd484a8f886ab84aec
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: e041c766d0a4beefb8b4c74b9024c7554c818511
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562370"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368639"
 ---
 # <a name="soft-keyboard-input-mode-on-android"></a>Режим ввода с программируемой клавиатуры в Android
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа для Android предназначена для установки режима работы для области ввода с мягкими клавиатурами и используется в XAML путем задания [`Application.WindowSoftInputModeAdjust`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Application.WindowSoftInputModeAdjustProperty) для присоединенного свойства значения [`WindowSoftInputModeAdjust`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WindowSoftInputModeAdjust) перечисления:
 
@@ -45,7 +45,7 @@ App.Current.On<Android>().UseWindowSoftInputModeAdjust(WindowSoftInputModeAdjust
 
 Результат заключается в том, что режим работы с экранной клавиатурой может быть установлен, когда фокус ввода находится на элементе управления вводом:
 
-[![Горячая клавиатура режим операционной системы — зависит от платформы](soft-keyboard-input-mode-images/pan-resize.png)](soft-keyboard-input-mode-images/pan-resize-large.png#lightbox "Горячая клавиатура режим операционной системы — зависит от платформы")
+[![Горячая клавиатура режим операционной системы — зависит от платформы](soft-keyboard-input-mode-images/pan-resize.png)](soft-keyboard-input-mode-images/pan-resize-large.png#lightbox "Platform-Specific режим работы с программируемой клавиатурой")
 
 ## <a name="related-links"></a>Связанные ссылки
 

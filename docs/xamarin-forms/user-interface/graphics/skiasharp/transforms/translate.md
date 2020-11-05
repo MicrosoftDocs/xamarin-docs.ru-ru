@@ -10,16 +10,16 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 31a76e160186caec74665b7615323eb8e60b698a
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: fdb59cf8b40c62bc4375a12368ed871898497adf
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562331"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368598"
 ---
 # <a name="the-translate-transform"></a>Преобразование переноса
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Сведения об использовании преобразования "преобразование" для сдвига SkiaSharp графики_
 
@@ -145,7 +145,7 @@ using (SKPaint textPaint = new SKPaint())
 
 Однако нет необходимости беспокоиться о преобразованиях, которые применяют один вызов `PaintSurface` обработчика к следующему. Каждый новый вызов `PaintSurface` доставляет новые `SKCanvas` объекты с преобразованиями по умолчанию.
 
-Другое распространенное применение `Translate` преобразования — визуализация визуального объекта, созданного с помощью координат, удобного для рисования. Например, можно указать координаты для аналоговых часов с центром в точке (0, 0). Затем можно использовать преобразования для показа часов там, где это необходимо. Этот метод показан на странице [**Хендекаграм Array**]. [`HendecagramArrayPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/HendecagramArrayPage.cs)Класс начинается с создания `SKPath` объекта для 11-ориентированной звездочки. `HendecagramPath`Объект определен как открытый, статический и доступный только для чтения, поэтому к нему можно получить доступ из других демонстрационных программ. Он создается в статическом конструкторе:
+Другое распространенное применение `Translate` преобразования — визуализация визуального объекта, созданного с помощью координат, удобного для рисования. Например, можно указать координаты для аналоговых часов с центром в точке (0, 0). Затем можно использовать преобразования для показа часов там, где это необходимо. Этот метод показан на странице [ **Хендекаграм Array** ]. [`HendecagramArrayPage`](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/HendecagramArrayPage.cs)Класс начинается с создания `SKPath` объекта для 11-ориентированной звездочки. `HendecagramPath`Объект определен как открытый, статический и доступный только для чтения, поэтому к нему можно получить доступ из других демонстрационных программ. Он создается в статическом конструкторе:
 
 ```csharp
 public class HendecagramArrayPage : ContentPage

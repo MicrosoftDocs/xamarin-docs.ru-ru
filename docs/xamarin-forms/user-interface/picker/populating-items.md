@@ -10,16 +10,16 @@ ms.date: 02/26/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d65352022057ce32bd969950c2165ad530c05bbb
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 8904f3392e935b3d8aa08d87d208bdb46ac37b30
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91559627"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368076"
 ---
 # <a name="adding-data-to-a-pickers-items-collection"></a>Добавление данных в коллекцию элементов средства выбора
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-pickerdemo)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-pickerdemo)
 
 _Представление выбора — это элемент управления для выбора текстового элемента из списка данных. В этой статье объясняется, как заполнить средство выбора данными, добавив их в коллекцию Items, и как реагировать на выбор элементов пользователем._
 
@@ -42,7 +42,7 @@ _Представление выбора — это элемент управл�
 </Picker>
 ```
 
-Эквивалентный код C# показан ниже:
+Ниже приведен эквивалентный код на C#:
 
 ```csharp
 var picker = new Picker { Title = "Select a monkey", TitleColor = Color.Red };

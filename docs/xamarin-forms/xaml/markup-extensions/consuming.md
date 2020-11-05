@@ -10,16 +10,16 @@ ms.date: 06/17/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ee834bf7bae945536facb576ae26b9d13f5b7bcd
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 6409bd5052f7943eee00e4405bf3e7da6623278e
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91558951"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369289"
 ---
 # <a name="consuming-xaml-markup-extensions"></a>Использование расширений разметки XAML
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
 
 Расширения разметки XAML помогают повысить степень гибкости и гибкость XAML, разрешая установку атрибутов элементов из различных источников. Несколько расширений разметки XAML являются частью спецификации XAML 2009. Они отображаются в файлах XAML с `x` префиксом пользовательского пространства имен и обычно называются этим префиксом. В этой статье рассматриваются следующие расширения разметки:
 
@@ -39,7 +39,7 @@ ms.locfileid: "91558951"
 - `StaticResource` — ссылки на объекты из словаря ресурсов, как описано в статье  [**словари ресурсов**](~/xamarin-forms/xaml/resource-dictionaries.md).
 - `DynamicResource` — реагирование на изменения объектов в словаре ресурсов, как описано в статье [**динамические стили**](~/xamarin-forms/user-interface/styles/dynamic.md).
 - `Binding` — Установите связь между свойствами двух объектов, как описано в статье [**Привязка данных**](~/xamarin-forms/app-fundamentals/data-binding/index.md).
-- `TemplateBinding`— выполняет привязку данных из шаблона элемента управления, как описано в статье [** Xamarin.Forms шаблоны элементов управления**](~/xamarin-forms/app-fundamentals/templates/control-template.md).
+- `TemplateBinding`— выполняет привязку данных из шаблона элемента управления, как описано в статье [**Xamarin.Forms шаблоны элементов управления**](~/xamarin-forms/app-fundamentals/templates/control-template.md).
 - `RelativeSource` — Задает источник привязки относительно положения целевого объекта привязки, как описано в статье [относительные привязки](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md).
 
 [`RelativeLayout`](xref:Xamarin.Forms.RelativeLayout)Макет использует пользовательское расширение разметки [`ConstraintExpression`](xref:Xamarin.Forms.ConstraintExpression) . Это расширение разметки описано в статье [**RelativeLayout**](~/xamarin-forms/user-interface/layouts/relativelayout.md).
@@ -239,7 +239,7 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 </ContentPage>
 ```
 
-Вот как открыть главную страницу в **расширениях разметки**:
+Вот как открыть главную страницу в **расширениях разметки** :
 
 [![Главная страница](consuming-images/mainpage-small.png "Главная страница")](consuming-images/mainpage-large.png#lightbox "Главная страница")
 

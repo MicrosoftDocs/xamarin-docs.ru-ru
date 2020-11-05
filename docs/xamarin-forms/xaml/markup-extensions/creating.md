@@ -10,18 +10,18 @@ ms.date: 01/05/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 43c8cd0dd7b50e3a5bfbd15d9858bd4502fedacc
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 87153223c79365053bfc05b2a8a97c9aa1d4c4a4
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91558782"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369055"
 ---
 # <a name="creating-xaml-markup-extensions"></a>Создание расширений разметки XAML
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xaml-markupextensions)
 
-На программном уровне расширение разметки XAML является классом, реализующим [`IMarkupExtension`](xref:Xamarin.Forms.Xaml.IMarkupExtension) интерфейс или [`IMarkupExtension<T>`](xref:Xamarin.Forms.Xaml.IMarkupExtension`1) . Исходный код стандартных расширений разметки, описанных ниже, можно просмотреть в каталоге [ **расширений MarkupExtension** ](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Xaml/MarkupExtensions) Xamarin.Forms репозитория GitHub.
+На программном уровне расширение разметки XAML является классом, реализующим [`IMarkupExtension`](xref:Xamarin.Forms.Xaml.IMarkupExtension) интерфейс или [`IMarkupExtension<T>`](xref:Xamarin.Forms.Xaml.IMarkupExtension`1) . Исходный код стандартных расширений разметки, описанных ниже, можно просмотреть в каталоге [ **расширений MarkupExtension**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Xaml/MarkupExtensions) Xamarin.Forms репозитория GitHub.
 
 Также можно определить собственные расширения разметки XAML, производные от `IMarkupExtension` или `IMarkupExtension<T>` . Используйте универсальную форму, если расширение разметки получает значение определенного типа. В этом случае есть несколько Xamarin.Forms расширений разметки:
 
@@ -188,7 +188,7 @@ class ImageResourceExtension : IMarkupExtension<ImageSource>
 
 ## <a name="service-providers"></a>Поставщики услуг
 
-С помощью `IServiceProvider` аргумента в `ProvideValue` расширения разметки XAML могут получить доступ к полезной информации о файле XAML, в котором они используются. Но для успешного использования `IServiceProvider` аргумента необходимо знать, какие типы служб доступны в определенных контекстах. Лучший способ получить представление об этой функции — изучить исходный код существующих расширений разметки XAML в [папке **расширений MarkupExtension** ](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Xaml/MarkupExtensions) в Xamarin.Forms репозитории на сайте GitHub. Имейте в виду, что некоторые типы служб являются внутренними для Xamarin.Forms .
+С помощью `IServiceProvider` аргумента в `ProvideValue` расширения разметки XAML могут получить доступ к полезной информации о файле XAML, в котором они используются. Но для успешного использования `IServiceProvider` аргумента необходимо знать, какие типы служб доступны в определенных контекстах. Лучший способ получить представление об этой функции — изучить исходный код существующих расширений разметки XAML в [папке **расширений MarkupExtension**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Xaml/MarkupExtensions) в Xamarin.Forms репозитории на сайте GitHub. Имейте в виду, что некоторые типы служб являются внутренними для Xamarin.Forms .
 
 В некоторых расширениях разметки XAML эта служба может оказаться полезной:
 

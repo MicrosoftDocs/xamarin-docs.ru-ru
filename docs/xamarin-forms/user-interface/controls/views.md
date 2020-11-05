@@ -10,16 +10,16 @@ ms.date: 07/09/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 369dbac74eef990a8773fe101a57530797ad2c2d
-ms.sourcegitcommit: 836d54779190b1bef1b43bc0c2016c9b3034bfda
+ms.openlocfilehash: 322fa0e3e6ee9adf31c9fe11418fceee3eff93ac
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93281304"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368535"
 ---
 # <a name="no-locxamarinforms-views"></a>Xamarin.Forms Представления
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/formsgallery/)
 
 _Xamarin.Forms представления — это стандартные блоки кросс-платформенных мобильных пользовательских интерфейсов._
 
