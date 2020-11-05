@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: de412e064fa84e516dcb8e9b604068c84a2689e6
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 9588feeaae1391bcd2ac7fd05e7340a3a40f6236
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563618"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374801"
 ---
 # <a name="listview-selectionmode-on-windows"></a>ListView SelectionMode в Windows
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 На универсальная платформа Windows по умолчанию Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) использует собственное `ItemClick` событие для реагирования на взаимодействие, а не на собственное `Tapped` событие. Это обеспечивает специальные возможности, чтобы экранный диктор и клавиатура Windows могли взаимодействовать с `ListView` . Однако он также визуализирует любые жесты касания в `ListView` неработоспособном виде.
 

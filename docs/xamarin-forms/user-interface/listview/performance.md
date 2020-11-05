@@ -10,16 +10,16 @@ ms.date: 12/11/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c010ac513cec8ac59927325dbe80ad1c8ac556d8
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 98f91ec614df08997e7cbf23530086f541500b5d
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560004"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375477"
 ---
 # <a name="listview-performance"></a>Производительность ListView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithlistviewnative)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithlistviewnative)
 
 При написании мобильных приложений имеет значение производительность. Пользователям приходится ждать плавной прокрутки и быстрой загрузки. Если не удовлетворить ожидания пользователей, вы сможете получить оценку в магазине приложений или в случае бизнес-приложения, изменяя время и деньги Организации.
 

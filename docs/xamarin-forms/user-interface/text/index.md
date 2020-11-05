@@ -10,16 +10,16 @@ ms.date: 10/26/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5e1ad1d4fa9d5ce006373382e85398edac59a82a
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 37973db6288f092d756a29de61731a296eac3924
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557599"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375412"
 ---
 # <a name="text-in-no-locxamarinforms"></a>Текст в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-text)
 
 _Использование Xamarin.Forms для ввода или вывода текста._
 
@@ -59,7 +59,7 @@ Xamarin.Forms имеет три основных представления дл
 
 Дополнительные сведения см. в статье [редактора](editor.md) .
 
-## <a name="fonts"></a>[Шрифты](fonts.md)
+## <a name="fonts"></a>[Fonts](fonts.md)
 
 Многие элементы управления поддерживают различные параметры шрифтов, используя встроенные шрифты на каждой платформе, или пользовательские шрифты, включенные в приложение. Более подробные сведения см. в статье [шрифты](fonts.md) .
 

@@ -10,16 +10,16 @@ ms.date: 09/25/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d665a80d6f1e0319fc9dc8696db379cf781ee833
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 4a922a841452e5e934cc7dcb88a9f84373ae3ded
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560121"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375503"
 ---
 # <a name="listview-interactivity"></a>Интерактивность ListView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-interactivity)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-listview-interactivity)
 
 Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Класс поддерживает взаимодействие пользователя с данными, которые он представляет.
 
@@ -181,7 +181,7 @@ listView.RefreshControlColor = Color.Red;
 
 На следующих снимках экрана показан запрос на обновление по мере извлечения пользователя:
 
-![Выполняется извлечение из ListView для обновления](interactivity-images/refresh-start.png)
+![Извлечение ListView для обновления In-Progress](interactivity-images/refresh-start.png)
 
 На следующих снимках экрана показан запрос на обновление после того, как пользователь освободил запрос на вытягивание, и при обновлении отображается счетчик [`ListView`](xref:Xamarin.Forms.ListView) :
 

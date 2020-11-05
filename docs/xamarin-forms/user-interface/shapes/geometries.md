@@ -10,18 +10,18 @@ ms.date: 06/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c6c6fb0ea9d3e2b728072fa36c3cdb2a86ade131
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 6fe7ce75af14e25fa3dc213f0fb5ed99a2e70a87
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91559328"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374827"
 ---
 # <a name="no-locxamarinforms-shapes-geometries"></a>Xamarin.Forms Фигуры: геометрические объекты
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Geometry`Класс и классы, производные от него, позволяют описать геометрию двухмерной фигуры. `Geometry` объекты могут быть простыми, например прямоугольниками и круговыми, или составными, созданными из двух или более геометрических объектов. Кроме того, можно создать более сложные геометрические объекты, включающие дуги и кривые.
 
@@ -38,7 +38,7 @@ ms.locfileid: "91559328"
 Следующие классы имеют свойства, которые могут быть установлены в `Geometry` объекты:
 
 - `Path`Класс использует `Geometry` для описания его содержимого. Можно подготовить к просмотру `Geometry` , присвоив `Path.Data` свойству `Geometry` объект и задав `Path` `Fill` свойства объекта и `Stroke` .
-- [`VisualElement`](xref:Xamarin.Forms.VisualElement)Класс имеет `Clip` свойство типа `Geometry` , которое определяет контур содержимого элемента. Если `Clip` для свойства задан `Geometry` объект, видима будет только область, которая находится в пределах области `Geometry` . Дополнительные сведения см. в разделе [Clip с геометрическим](#clip-with-a-geometry)объектом.
+- [`VisualElement`](xref:Xamarin.Forms.VisualElement)Класс имеет `Clip` свойство типа `Geometry` , которое определяет контур содержимого элемента. Если `Clip` для свойства задан `Geometry` объект, видима будет только область, которая находится в пределах области `Geometry` . Дополнительные сведения см. в разделе [Обрезка с помощью класса Geometry](#clip-with-a-geometry).
 
 Классы, производные от класса, `Geometry` можно сгруппировать в три категории: простые геометрические объекты, геометрические объекты траекторий и составные геометрические объекты.
 

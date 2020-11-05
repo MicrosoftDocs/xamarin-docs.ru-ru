@@ -10,20 +10,23 @@ ms.date: 08/08/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5550ea7a355492f724459449f3b37cdcb8d05b1e
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: b5d52f92b88a3b0dbcd21a64b647c6d75e6c6ca1
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86932149"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374944"
 ---
 # <a name="authentication-and-authorization"></a>Аутентификация и авторизация
+
+> [!NOTE]
+> Эта электронная книга была опубликована в пружине 2017 и не была обновлена с этого момента. В книге есть много ценных материалов, но некоторые из них устарели.
 
 Проверка подлинности — это процесс получения учетных данных для идентификации, таких как имя и пароль пользователя, и проверки этих учетных данных в центре сертификации. Если учетные данные действительны, сущность, которая отправила учетные данные, считается аутентифицированным удостоверением. После проверки подлинности удостоверения процесс авторизации определяет, имеет ли это удостоверение доступ к данному ресурсу.
 
 Существует множество подходов к интеграции проверки подлинности и авторизации в Xamarin.Forms приложение, которое взаимодействует с веб-приложением ASP.NET MVC, включая использование удостоверения ASP.NET Core, внешних поставщиков проверки подлинности, таких как Microsoft, Google, Facebook, Twitter и по промежуточного слоя для проверки подлинности. Мобильное приложение eShopOnContainers выполняет проверку подлинности и авторизацию с помощью микрослужбы контейнерных удостоверений, которая использует IdentityServer 4. Мобильное приложение запрашивает маркеры безопасности от IdentityServer для проверки подлинности пользователя или доступа к ресурсу. Чтобы IdentityServer выдавал маркеры от имени пользователя, пользователь должен войти в IdentityServer. Однако IdentityServer не предоставляет пользовательский интерфейс или базу данных для проверки подлинности. Поэтому в приложении-образце eShopOnContainers для этой цели используется удостоверение ASP.NET Core.
 
-## <a name="authentication"></a>Проверка подлинности
+## <a name="authentication"></a>Аутентификация
 
 Проверка подлинности необходима, когда приложению необходимо известно удостоверение текущего пользователя. Основным механизмом для идентификации пользователей ASP.NET Core является система членства в ASP.NET Core, которая хранит сведения о пользователе в хранилище данных, настроенном разработчиком. Как правило, это хранилище данных будет EntityFramework хранилищем, хотя пользовательские хранилища и пакеты сторонних производителей можно использовать для хранения сведений об удостоверениях в службе хранилища Azure, Azure Cosmos DB или в других расположениях.
 
@@ -61,12 +64,12 @@ OpenID Connect Connect — это уровень проверки подлинн
 После включения IdentityServer в решение Visual Studio веб-приложения оно должно быть добавлено к конвейеру обработки HTTP-запросов в Интернете, чтобы он мог обслуживать запросы к конечным точкам OpenID Connect Connect и OAuth 2,0. Это достигается в `Configure` методе в классе веб-приложения `Startup` , как показано в следующем примере кода:
 
 ```csharp
-public void Configure(  
-    IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)  
+public void Configure(  
+    IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)  
 {  
-    ...  
-    app.UseIdentity();  
-    ...  
+    ...  
+    app.UseIdentity();  
+    ...  
 }
 ```
 
@@ -77,19 +80,19 @@ public void Configure(
 IdentityServer должен быть настроен в `ConfigureServices` методе в классе веб-приложения `Startup` путем вызова `services.AddIdentityServer` метода, как показано в следующем примере кода из эталонного приложения eShopOnContainers:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)  
+public void ConfigureServices(IServiceCollection services)  
 {  
-    ...  
-    services.AddIdentityServer(x => x.IssuerUri = "null")  
-        .AddSigningCredential(Certificate.Get())                 
-        .AddAspNetIdentity<ApplicationUser>()  
-        .AddConfigurationStore(builder =>  
-            builder.UseSqlServer(connectionString, options =>  
-                options.MigrationsAssembly(migrationsAssembly)))  
-        .AddOperationalStore(builder =>  
-            builder.UseSqlServer(connectionString, options =>  
-                options.MigrationsAssembly(migrationsAssembly)))  
-        .Services.AddTransient<IProfileService, ProfileService>();  
+    ...  
+    services.AddIdentityServer(x => x.IssuerUri = "null")  
+        .AddSigningCredential(Certificate.Get())                 
+        .AddAspNetIdentity<ApplicationUser>()  
+        .AddConfigurationStore(builder =>  
+            builder.UseSqlServer(connectionString, options =>  
+                options.MigrationsAssembly(migrationsAssembly)))  
+        .AddOperationalStore(builder =>  
+            builder.UseSqlServer(connectionString, options =>  
+                options.MigrationsAssembly(migrationsAssembly)))  
+        .Services.AddTransient<IProfileService, ProfileService>();  
 }
 ```
 
@@ -110,13 +113,13 @@ public void ConfigureServices(IServiceCollection services)
 При настройке ресурсов API `AddInMemoryApiResources` метод принимает `IEnumerable<ApiResource>` коллекцию. В следующем примере кода показан `GetApis` метод, который предоставляет эту коллекцию в эталонном приложении eShopOnContainers:
 
 ```csharp
-public static IEnumerable<ApiResource> GetApis()  
+public static IEnumerable<ApiResource> GetApis()  
 {  
-    return new List<ApiResource>  
-    {  
-        new ApiResource("orders", "Orders Service"),  
-        new ApiResource("basket", "Basket Service")  
-    };  
+    return new List<ApiResource>  
+    {  
+        new ApiResource("orders", "Orders Service"),  
+        new ApiResource("basket", "Basket Service")  
+    };  
 }
 ```
 
@@ -127,13 +130,13 @@ public static IEnumerable<ApiResource> GetApis()
 При настройке ресурсов удостоверений `AddInMemoryIdentityResources` метод принимает `IEnumerable<IdentityResource>` коллекцию. Ресурсы удостоверений — это такие данные, как идентификатор пользователя, имя или адрес электронной почты. Каждый ресурс удостоверения имеет уникальное имя, и к нему могут быть назначены произвольные типы утверждений, которые затем будут включаться в маркер идентификации для пользователя. В следующем примере кода показан `GetResources` метод, который предоставляет эту коллекцию в эталонном приложении eShopOnContainers:
 
 ```csharp
-public static IEnumerable<IdentityResource> GetResources()  
+public static IEnumerable<IdentityResource> GetResources()  
 {  
-    return new List<IdentityResource>  
-    {  
-        new IdentityResources.OpenId(),  
-        new IdentityResources.Profile()  
-    };  
+    return new List<IdentityResource>  
+    {  
+        new IdentityResources.OpenId(),  
+        new IdentityResources.Profile()  
+    };  
 }
 ```
 
@@ -156,38 +159,38 @@ IdentityServer также поддерживает определение пол
 При настройке клиентов `AddInMemoryClients` метод принимает `IEnumerable<Client>` коллекцию. В следующем примере кода показана конфигурация мобильного приложения eShopOnContainers в `GetClients` методе, который предоставляет эту коллекцию в эталонном приложении eShopOnContainers:
 
 ```csharp
-public static IEnumerable<Client> GetClients(Dictionary<string,string> clientsUrl)
+public static IEnumerable<Client> GetClients(Dictionary<string,string> clientsUrl)
 {
-    return new List<Client>
-    {
-        ...
-        new Client
-        {
-            ClientId = "xamarin",
-            ClientName = "eShop Xamarin OpenId Client",
-            AllowedGrantTypes = GrantTypes.Hybrid,
-            ClientSecrets =
-            {
-                new Secret("secret".Sha256())
-            },
-            RedirectUris = { clientsUrl["Xamarin"] },
-            RequireConsent = false,
-            RequirePkce = true,
-            PostLogoutRedirectUris = { $"{clientsUrl["Xamarin"]}/Account/Redirecting" },
-            AllowedCorsOrigins = { "http://eshopxamarin" },
-            AllowedScopes = new List<string>
-            {
-                IdentityServerConstants.StandardScopes.OpenId,
-                IdentityServerConstants.StandardScopes.Profile,
-                IdentityServerConstants.StandardScopes.OfflineAccess,
-                "orders",
-                "basket"
-            },
-            AllowOfflineAccess = true,
-            AllowAccessTokensViaBrowser = true
-        },
-        ...
-    };
+    return new List<Client>
+    {
+        ...
+        new Client
+        {
+            ClientId = "xamarin",
+            ClientName = "eShop Xamarin OpenId Client",
+            AllowedGrantTypes = GrantTypes.Hybrid,
+            ClientSecrets =
+            {
+                new Secret("secret".Sha256())
+            },
+            RedirectUris = { clientsUrl["Xamarin"] },
+            RequireConsent = false,
+            RequirePkce = true,
+            PostLogoutRedirectUris = { $"{clientsUrl["Xamarin"]}/Account/Redirecting" },
+            AllowedCorsOrigins = { "http://eshopxamarin" },
+            AllowedScopes = new List<string>
+            {
+                IdentityServerConstants.StandardScopes.OpenId,
+                IdentityServerConstants.StandardScopes.Profile,
+                IdentityServerConstants.StandardScopes.OfflineAccess,
+                "orders",
+                "basket"
+            },
+            AllowOfflineAccess = true,
+            AllowAccessTokensViaBrowser = true
+        },
+        ...
+    };
 }
 ```
 
@@ -243,40 +246,40 @@ public static IEnumerable<Client> GetClients(Dictionary<string,string> clien
 Когда пользователь нажмет кнопку **входа** в `LoginView` , `SignInCommand` `LoginViewModel` выполняется в классе, который, в свою очередь, выполняет `SignInAsync` метод. Этот метод показан в следующем примере кода:
 
 ```csharp
-private async Task SignInAsync()  
+private async Task SignInAsync()  
 {  
-    ...  
-    LoginUrl = _identityService.CreateAuthorizationRequest();  
-    IsLogin = true;  
-    ...  
+    ...  
+    LoginUrl = _identityService.CreateAuthorizationRequest();  
+    IsLogin = true;  
+    ...  
 }
 ```
 
 Этот метод вызывает `CreateAuthorizationRequest` метод в `IdentityService` классе, который показан в следующем примере кода:
 
 ```csharp
-public string CreateAuthorizationRequest()
+public string CreateAuthorizationRequest()
 {
-    // Create URI to authorization endpoint
-    var authorizeRequest = new AuthorizeRequest(GlobalSetting.Instance.IdentityEndpoint);
+    // Create URI to authorization endpoint
+    var authorizeRequest = new AuthorizeRequest(GlobalSetting.Instance.IdentityEndpoint);
 
-    // Dictionary with values for the authorize request
-    var dic = new Dictionary<string, string>();
-    dic.Add("client_id", GlobalSetting.Instance.ClientId);
-    dic.Add("client_secret", GlobalSetting.Instance.ClientSecret); 
-    dic.Add("response_type", "code id_token");
-    dic.Add("scope", "openid profile basket orders locations marketing offline_access");
-    dic.Add("redirect_uri", GlobalSetting.Instance.Callback);
-    dic.Add("nonce", Guid.NewGuid().ToString("N"));
-    dic.Add("code_challenge", CreateCodeChallenge());
-    dic.Add("code_challenge_method", "S256");
+    // Dictionary with values for the authorize request
+    var dic = new Dictionary<string, string>();
+    dic.Add("client_id", GlobalSetting.Instance.ClientId);
+    dic.Add("client_secret", GlobalSetting.Instance.ClientSecret); 
+    dic.Add("response_type", "code id_token");
+    dic.Add("scope", "openid profile basket orders locations marketing offline_access");
+    dic.Add("redirect_uri", GlobalSetting.Instance.Callback);
+    dic.Add("nonce", Guid.NewGuid().ToString("N"));
+    dic.Add("code_challenge", CreateCodeChallenge());
+    dic.Add("code_challenge_method", "S256");
 
-    // Add CSRF token to protect against cross-site request forgery attacks.
-    var currentCSRFToken = Guid.NewGuid().ToString("N");
-    dic.Add("state", currentCSRFToken);
+    // Add CSRF token to protect against cross-site request forgery attacks.
+    var currentCSRFToken = Guid.NewGuid().ToString("N");
+    dic.Add("state", currentCSRFToken);
 
-    var authorizeUri = authorizeRequest.Create(dic); 
-    return authorizeUri;
+    var authorizeUri = authorizeRequest.Create(dic); 
+    return authorizeUri;
 }
 
 ```
@@ -295,25 +298,25 @@ public string CreateAuthorizationRequest()
 После завершения входа объект [`WebView`](xref:Xamarin.Forms.WebView) будет перенаправлен на URI возврата. Эта `WebView` Навигация приведет к `NavigateAsync` выполнению метода в `LoginViewModel` классе, который показан в следующем примере кода:
 
 ```csharp
-private async Task NavigateAsync(string url)  
+private async Task NavigateAsync(string url)  
 {  
-    ...  
-    var authResponse = new AuthorizeResponse(url);  
-    if (!string.IsNullOrWhiteSpace(authResponse.Code))  
-    {  
-        var userToken = await _identityService.GetTokenAsync(authResponse.Code);  
-        string accessToken = userToken.AccessToken;  
+    ...  
+    var authResponse = new AuthorizeResponse(url);  
+    if (!string.IsNullOrWhiteSpace(authResponse.Code))  
+    {  
+        var userToken = await _identityService.GetTokenAsync(authResponse.Code);  
+        string accessToken = userToken.AccessToken;  
 
-        if (!string.IsNullOrWhiteSpace(accessToken))  
-        {  
-            Settings.AuthAccessToken = accessToken;  
-            Settings.AuthIdToken = authResponse.IdentityToken;  
+        if (!string.IsNullOrWhiteSpace(accessToken))  
+        {  
+            Settings.AuthAccessToken = accessToken;  
+            Settings.AuthIdToken = authResponse.IdentityToken;  
 
-            await NavigationService.NavigateToAsync<MainViewModel>();  
-            await NavigationService.RemoveLastFromBackStackAsync();  
-        }  
-    }  
-    ...  
+            await NavigationService.NavigateToAsync<MainViewModel>();  
+            await NavigationService.RemoveLastFromBackStackAsync();  
+        }  
+    }  
+    ...  
 }
 ```
 
@@ -336,30 +339,30 @@ private async Task NavigateAsync(string url)
 При создании представления и переходе к ему `InitializeAsync` выполняется метод связанной с представлением модели представления, который затем выполняет `Logout` метод `LoginViewModel` класса, который показан в следующем примере кода:
 
 ```csharp
-private void Logout()  
+private void Logout()  
 {  
-    var authIdToken = Settings.AuthIdToken;  
-    var logoutRequest = _identityService.CreateLogoutRequest(authIdToken);  
+    var authIdToken = Settings.AuthIdToken;  
+    var logoutRequest = _identityService.CreateLogoutRequest(authIdToken);  
 
-    if (!string.IsNullOrEmpty(logoutRequest))  
-    {  
-        // Logout  
-        LoginUrl = logoutRequest;  
-    }  
-    ...  
+    if (!string.IsNullOrEmpty(logoutRequest))  
+    {  
+        // Logout  
+        LoginUrl = logoutRequest;  
+    }  
+    ...  
 }
 ```
 
 Этот метод вызывает `CreateLogoutRequest` метод в `IdentityService` классе, передавая маркер удостоверения, полученный из параметров приложения, в качестве параметра. Дополнительные сведения о параметрах приложений см. в разделе [Управление конфигурацией](~/xamarin-forms/enterprise-application-patterns/configuration-management.md). Метод `CreateLogoutRequest` показан в следующем примере кода:
 
 ```csharp
-public string CreateLogoutRequest(string token)  
+public string CreateLogoutRequest(string token)  
 {  
-    ...  
-    return string.Format("{0}?id_token_hint={1}&post_logout_redirect_uri={2}",   
-        GlobalSetting.Instance.LogoutEndpoint,  
-        token,  
-        GlobalSetting.Instance.LogoutCallback);  
+    ...  
+    return string.Format("{0}?id_token_hint={1}&post_logout_redirect_uri={2}",   
+        GlobalSetting.Instance.LogoutEndpoint,  
+        token,  
+        GlobalSetting.Instance.LogoutCallback);  
 }
 ```
 
@@ -370,14 +373,14 @@ public string CreateLogoutRequest(string token)
 В мобильном приложении [`WebView`](xref:Xamarin.Forms.WebView) будет перенаправлен на URI перенаправления выхода из системы. Эта `WebView` Навигация приведет к `NavigateAsync` выполнению метода в `LoginViewModel` классе, который показан в следующем примере кода:
 
 ```csharp
-private async Task NavigateAsync(string url)  
+private async Task NavigateAsync(string url)  
 {  
-    ...  
-    Settings.AuthAccessToken = string.Empty;  
-    Settings.AuthIdToken = string.Empty;  
-    IsLogin = false;  
-    LoginUrl = _identityService.CreateAuthorizationRequest();  
-    ...  
+    ...  
+    Settings.AuthAccessToken = string.Empty;  
+    Settings.AuthIdToken = string.Empty;  
+    IsLogin = false;  
+    LoginUrl = _identityService.CreateAuthorizationRequest();  
+    ...  
 }
 ```
 
@@ -396,9 +399,9 @@ private async Task NavigateAsync(string url)
 
 ```csharp
 [Authorize]  
-public class BasketController : Controller  
+public class BasketController : Controller  
 {  
-    ...  
+    ...  
 }
 ```
 
@@ -420,16 +423,16 @@ IdentityServer можно интегрировать в рабочий проц�
 Для выполнения авторизации с помощью IdentityServer по промежуточного слоя авторизации должно быть добавлено в конвейер запросов HTTP веб-приложения. По промежуточного слоя добавляется в `ConfigureAuth` метод в классе веб-приложения `Startup` , который вызывается из `Configure` метода и демонстрируется в следующем примере кода из эталонного приложения eShopOnContainers:
 
 ```csharp
-protected virtual void ConfigureAuth(IApplicationBuilder app)  
+protected virtual void ConfigureAuth(IApplicationBuilder app)  
 {  
-    var identityUrl = Configuration.GetValue<string>("IdentityUrl");  
-    app.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions  
-    {  
-        Authority = identityUrl.ToString(),  
-        ScopeName = "basket",  
-        RequireHttpsMetadata = false  
-    });  
-} 
+    var identityUrl = Configuration.GetValue<string>("IdentityUrl");  
+    app.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions  
+    {  
+        Authority = identityUrl.ToString(),  
+        ScopeName = "basket",  
+        RequireHttpsMetadata = false  
+    });  
+} 
 ```
 
 Этот метод гарантирует, что доступ к API может осуществляться только с помощью действительного маркера доступа. По промежуточного слоя проверяет входящий токен, чтобы убедиться, что он отправляется от доверенного издателя, и проверяет, что токен является допустимым для использования с API, который его получает. Поэтому при переходе к контроллеру упорядочивания или Подборка будет возвращен код состояния HTTP 401 (несанкционированный), указывающий на необходимость использования маркера доступа.
@@ -442,8 +445,8 @@ protected virtual void ConfigureAuth(IApplicationBuilder app)
 При выполнении запросов к микрослужбам упорядочивания и подбора маркер доступа, полученный от IdentityServer во время процесса проверки подлинности, должен быть включен в запрос, как показано в следующем примере кода:
 
 ```csharp
-var authToken = Settings.AuthAccessToken;  
-Order = await _ordersService.GetOrderAsync(Convert.ToInt32(order.OrderNumber), authToken);
+var authToken = Settings.AuthAccessToken;  
+Order = await _ordersService.GetOrderAsync(Convert.ToInt32(order.OrderNumber), authToken);
 ```
 
 Маркер доступа хранится как параметр приложения и извлекается из хранилища, зависящего от платформы, и включается в вызов `GetOrderAsync` метода в `OrderService` классе.
@@ -451,12 +454,12 @@ Order = await _ordersService.GetOrderAsync(Convert.ToInt32(order.OrderNumber)
 Аналогичным образом маркер доступа должен быть включен при отправке данных в защищенный API IdentityServer, как показано в следующем примере кода:
 
 ```csharp
-var authToken = Settings.AuthAccessToken;  
-await _basketService.UpdateBasketAsync(new CustomerBasket  
+var authToken = Settings.AuthAccessToken;  
+await _basketService.UpdateBasketAsync(new CustomerBasket  
 {  
-    BuyerId = userInfo.UserId,   
-    Items = BasketItems.ToList()  
-}, authToken);
+    BuyerId = userInfo.UserId,   
+    Items = BasketItems.ToList()  
+}, authToken);
 ```
 
 Маркер доступа извлекается из хранилища, зависящего от платформы, и включается в вызов `UpdateBasketAsync` метода в `BasketService` классе.
@@ -464,7 +467,7 @@ await _basketService.UpdateBasketAsync(new CustomerBasket
 `RequestProvider`Класс в мобильном приложении eShopOnContainers использует `HttpClient` класс для выполнения запросов к интерфейсам API RESTful, предоставляемым эталонным приложением eShopOnContainers. При выполнении запросов к интерфейсам API упорядочивания и корзины, для которых требуется авторизация, в запрос должен быть включен допустимый маркер доступа. Это достигается путем добавления маркера доступа к заголовкам `HttpClient` экземпляра, как показано в следующем примере кода:
 
 ```csharp
-httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 ```
 
 `DefaultRequestHeaders`Свойство `HttpClient` класса предоставляет заголовки, которые отправляются с каждым запросом, а маркер доступа добавляется в `Authorization` заголовок с префиксом String `Bearer` . Когда запрос отправляется в API RESTFUL, значение `Authorization` заголовка извлекается и проверяется, чтобы убедиться, что оно отправлено от доверенного издателя, и используется для определения того, имеет ли пользователь разрешение на вызов API, который его получает.

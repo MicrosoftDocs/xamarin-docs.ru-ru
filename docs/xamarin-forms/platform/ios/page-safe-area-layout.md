@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c4bdc3a5d952fda525b3e62cfbaabd9b5272bd6a
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: f5907e5493ff43c6a69dc4a8a8e5d2b4fc78210e
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556390"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374879"
 ---
 # <a name="safe-area-layout-guide-on-ios"></a>Структура безопасного макета области в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS предназначена для того, чтобы обеспечить расположение содержимого страницы в области экрана, которая является надежной для всех устройств, использующих iOS 11 и более поздних версий. В частности, это поможет убедиться, что содержимое не обрезается углами скругленных устройств, индикатором дома или корпусом датчика на iPhone X. Он используется в XAML путем присвоения `Page.UseSafeArea` свойству присоединенного свойства `boolean` значения:
 

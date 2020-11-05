@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/10/2019
-ms.openlocfilehash: d8c458ad30d7e281427dad0e29092c55fede7347
-ms.sourcegitcommit: fc689c1a6b641c124378dedc1bd157d96fc759a7
+ms.openlocfilehash: 5cbe3f36d1aeb12be671b14a4f76c79764e814e6
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71319527"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375009"
 ---
 # <a name="sign-in-with-apple-in-xamarinios"></a>Вход с помощью Apple в Xamarin. iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/ios-samples/ios13-addingthesigninwithappleflowtoyourapp/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/ios-samples/ios13-addingthesigninwithappleflowtoyourapp/)
 
 Вход с помощью Apple — это новая служба, которая обеспечивает защиту идентификации для пользователей сторонних служб проверки подлинности. Начиная с iOS 13, Apple требует, чтобы любое новое приложение, использующее сторонние службы проверки подлинности, также предпредоставило вход с помощью Apple. При обновлении существующих приложений не требуется добавлять вход с помощью Apple до апреля 2020.
 
@@ -28,7 +28,7 @@ ms.locfileid: "71319527"
 
 1. Создайте идентификатор нового **приложения** .
 2. Задайте описание в поле **Описание** .
-3. Выберите **явный** идентификатор пакета и задайте `com.xamarin.AddingTheSignInWithAppleFlowToYourApp` его в поле.
+3. Выберите **ЯВНЫЙ** идентификатор пакета и задайте `com.xamarin.AddingTheSignInWithAppleFlowToYourApp` его в поле.
 4. Включите **Вход с помощью функции Apple** и зарегистрируйте новое удостоверение.
 5. Создайте новый профиль подготовки с новым удостоверением.
 6. Скачайте и установите его на устройстве.
@@ -65,11 +65,11 @@ appleIdProvider.GetCredentialState (KeychainItem.CurrentUserIdentifier, (credent
 });
 ```
 
-В этом коде, вызванном `FinishedLaunching` во время `AppDelegate.cs`в, приложение будет `NotFound` работать, когда `LoginViewController` состояние и представляется пользователю. Если состояние возвращает `Authorized` значение или `Revoked`, пользователю может быть предоставлено другое действие.
+В этом коде, вызванном во время `FinishedLaunching` в `AppDelegate.cs` , приложение будет работать, когда состояние и представляется `NotFound` `LoginViewController` пользователю. Если состояние возвращает значение `Authorized` или `Revoked` , пользователю может быть предоставлено другое действие.
 
 ## <a name="a-loginviewcontroller-for-sign-in-with-apple"></a>Логинвиевконтроллер для входа с помощью Apple
 
-Класс, реализующий логику входа в систему и предлагающий вход с `IASAuthorizationControllerDelegate` помощью Apple, должен `LoginViewController` реализовать и `IASAuthorizationControllerPresentationContextProviding` , как в примере ниже. `UIViewController`
+`UIViewController`Класс, реализующий логику входа в систему и предлагающий вход с помощью Apple, должен реализовать `IASAuthorizationControllerDelegate` и `IASAuthorizationControllerPresentationContextProviding` , как в `LoginViewController` примере ниже.
 
 ```csharp
 public partial class LoginViewController : UIViewController, IASAuthorizationControllerDelegate, IASAuthorizationControllerPresentationContextProviding {
@@ -131,13 +131,13 @@ public partial class LoginViewController : UIViewController, IASAuthorizationCon
 
 ![Анимация примера приложения с помощью функции входа с Apple](sign-in-images/sign-in-flow.png)
 
-Этот пример кода проверяет текущее состояние входа в `PerformExistingAccountSetupFlows` систему и подключается к текущему представлению в качестве делегата. При обнаружении существующих учетных данных для цепочки ключей iCloud или Apple ID пользователю будет предложено использовать его.
+Этот пример кода проверяет текущее состояние входа в систему `PerformExistingAccountSetupFlows` и подключается к текущему представлению в качестве делегата. При обнаружении существующих учетных данных для цепочки ключей iCloud или Apple ID пользователю будет предложено использовать его.
 
-Компания Apple `ASAuthorizationAppleIdButton`предоставляет кнопку специально для этой цели. При затронутой кнопке запускается рабочий процесс, обрабатываемый в `HandleAuthorizationAppleIDButtonPress`методе.
+Компания Apple предоставляет `ASAuthorizationAppleIdButton` кнопку специально для этой цели. При затронутой кнопке запускается рабочий процесс, обрабатываемый в методе `HandleAuthorizationAppleIDButtonPress` .
 
 ## <a name="handling-authorization"></a>Обработка авторизации
 
-`IASAuthorizationController` В реализуется любая пользовательская логика для хранения учетной записи пользователя. В примере ниже хранится учетная запись пользователя в связке ключей, собственная служба хранилища Apple.
+В `IASAuthorizationController` реализуется любая пользовательская логика для хранения учетной записи пользователя. В примере ниже хранится учетная запись пользователя в связке ключей, собственная служба хранилища Apple.
 
 ```csharp
 #region IASAuthorizationController Delegate
@@ -211,7 +211,7 @@ public UIWindow GetPresentationAnchor (ASAuthorizationController controller) => 
 
 * [Вход с использованием рекомендаций Apple](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/overview/)
 * [Войдите с помощью прав Apple.][2]
-* [ВВДК 2019 сеанс 706: Введение в вход с помощью Apple.][3]
+* [ВВДК 2019 Session 706: введение в вход с помощью Apple.][3]
 * [Настройка входа с помощью Apple для Xamarin. Forms][4]
 
 [1]: https://developer.apple.com/documentation/authenticationservices/adding_the_sign_in_with_apple_flow_to_your_app

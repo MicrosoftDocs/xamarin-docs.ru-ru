@@ -10,16 +10,16 @@ ms.date: 08/14/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: eb94b2943cfe4659bb77764f810d45dc8b189005
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: a11178b9034561e9f1fdf1bbf17cf28cfe9d967b
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91555376"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375087"
 ---
 # <a name="no-locxamarinforms-contentview"></a>Xamarin.Forms ContentView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/)
 
 Xamarin.Forms [`ContentView`](xref:Xamarin.Forms.ContentView) Класс является типом `Layout` , который содержит один дочерний элемент и обычно используется для создания настраиваемых, многократно используемых элементов управления. `ContentView`Класс наследует от [`TemplatedView`](xref:Xamarin.Forms.TemplatedView) . В этой статье и связанном примере объясняется, как создать пользовательский `CardView` элемент управления на основе `ContentView` класса.
 
@@ -119,7 +119,7 @@ public string CardTitle
 </ContentView>
 ```
 
-`ContentView`Элемент задает `x:Name` для свойства значение **this**, которое можно использовать для доступа к объекту, привязанному к `CardView` экземпляру. Элементы в привязках набора макетов для своих свойств к значениям, определенным для привязанного объекта.
+`ContentView`Элемент задает `x:Name` для свойства значение **this** , которое можно использовать для доступа к объекту, привязанному к `CardView` экземпляру. Элементы в привязках набора макетов для своих свойств к значениям, определенным для привязанного объекта.
 
 Дополнительные сведения о привязке данных см. в разделе [Привязка данных Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/index.md).
 

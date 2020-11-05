@@ -10,16 +10,16 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ab2f0880f694bd9e270385dd6e0256374ed76c43
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 625dd57d1f84b95cef1c6513ae832af805bf565a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562227"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375035"
 ---
 # <a name="no-locxamarinforms-entry"></a>Xamarin.Forms Операции
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-text)
 
 Используется Xamarin.Forms [`Entry`](xref:Xamarin.Forms.Entry) для однострочного ввода текста. `Entry`, Как и [`Editor`](xref:Xamarin.Forms.Editor) представление, поддерживает несколько типов клавиатуры. Кроме того, `Entry` можно использовать в качестве поля пароля.
 

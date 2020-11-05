@@ -10,14 +10,17 @@ ms.date: 08/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: bf0315d2d077e06ff3ded4d66814afe050fdfad4
-ms.sourcegitcommit: f7fe46c0236a7130b63a33d9d1670d5111582dd2
+ms.openlocfilehash: be8b0866a6d16fdec62f7c6cd3f4fc3e6de3168d
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88186204"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374905"
 ---
 # <a name="communicating-between-loosely-coupled-components"></a>Взаимодействие между слабо связанными компонентами
+
+> [!NOTE]
+> Эта электронная книга была опубликована в пружине 2017 и не была обновлена с этого момента. В книге есть много ценных материалов, но некоторые из них устарели.
 
 Шаблон "публикация-подписка" — это шаблон обмена сообщениями, в котором издатели отправляют сообщение без знания о получателях, известных как подписчики. Аналогичным образом подписчики прослушивают определенные сообщения, не зная издателей.
 
@@ -55,19 +58,19 @@ ms.locfileid: "88186204"
 
 ## <a name="defining-a-message"></a>Определение сообщения
 
-[`MessagingCenter`](xref:Xamarin.Forms.MessagingCenter)сообщения — это строки, используемые для распознавания сообщений. В следующем примере кода показаны сообщения, определенные в мобильном приложении eShopOnContainers:
+[`MessagingCenter`](xref:Xamarin.Forms.MessagingCenter) сообщения — это строки, используемые для распознавания сообщений. В следующем примере кода показаны сообщения, определенные в мобильном приложении eShopOnContainers:
 
 ```csharp
-public class MessageKeys  
+public class MessageKeys  
 {  
-    // Add product to basket  
-    public const string AddProduct = "AddProduct";  
+    // Add product to basket  
+    public const string AddProduct = "AddProduct";  
 
-    // Filter  
-    public const string Filter = "Filter";  
+    // Filter  
+    public const string Filter = "Filter";  
 
-    // Change selected Tab programmatically  
-    public const string ChangeTab = "ChangeTab";  
+    // Change selected Tab programmatically  
+    public const string ChangeTab = "ChangeTab";  
 }
 ```
 
@@ -78,7 +81,7 @@ public class MessageKeys
 Издатели уведомляют подписчиков о сообщении с помощью одной из перегрузок [`MessagingCenter.Send`](xref:Xamarin.Forms.MessagingCenter.Send*). В следующем примере кода демонстрируется публикация `AddProduct` сообщения.
 
 ```csharp
-MessagingCenter.Send(this, MessageKeys.AddProduct, catalogItem);
+MessagingCenter.Send(this, MessageKeys.AddProduct, catalogItem);
 ```
 
 В этом примере [`Send`](xref:Xamarin.Forms.MessagingCenter.Send*) метод задает три аргумента:
@@ -97,12 +100,12 @@ MessagingCenter.Send(this, MessageKeys.AddProduct, catalogItem);
 Подписчики могут зарегистрироваться для получения сообщения с помощью одной из перегрузок [`MessagingCenter.Subscribe`](xref:Xamarin.Forms.MessagingCenter.Subscribe*). В следующем примере кода показано, как мобильное приложение eShopOnContainers подписывается на, и обрабатывает `AddProduct` сообщение:
 
 ```csharp
-MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>(  
-    this, MessageKeys.AddProduct, async (sender, arg) =>  
+MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>(  
+    this, MessageKeys.AddProduct, async (sender, arg) =>  
 {  
-    BadgeCount++;  
+    BadgeCount++;  
 
-    await AddCatalogItemAsync(arg);  
+    await AddCatalogItemAsync(arg);  
 });
 ```
 
@@ -118,12 +121,12 @@ MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>(
 Если подписчики больше не должны получать сообщения, можно отменить подписку на них. Это достигается с одной из [`MessagingCenter.Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*) перегрузок, как показано в следующем примере кода:
 
 ```csharp
-MessagingCenter.Unsubscribe<CatalogViewModel, CatalogItem>(this, MessageKeys.AddProduct);
+MessagingCenter.Unsubscribe<CatalogViewModel, CatalogItem>(this, MessageKeys.AddProduct);
 ```
 
 В этом примере [`Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*) синтаксис метода отражает аргументы типа, указанные при подписке на получение `AddProduct` сообщения.
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 Класс [`MessagingCenter`](xref:Xamarin.Forms.MessagingCenter) в Xamarin.Forms реализует шаблон "публикация-подписка", который обеспечивает взаимодействие на основе сообщений между компонентами, которые неудобно связывать по ссылкам объектов и типов. Этот механизм позволяет издателям и подписчикам взаимодействовать без ссылки друг на друга, помогая сократить зависимости между компонентами, а также разрешать независимое разработку и тестирование компонентов.
 

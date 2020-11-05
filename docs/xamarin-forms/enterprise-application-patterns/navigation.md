@@ -10,16 +10,19 @@ ms.date: 08/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ca562120a819d4d9fe09b2ee5891a78f1010b1a5
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 8f35a213d279f756b1242fbac2a82ad6aeb928d2
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84572030"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375308"
 ---
 # <a name="enterprise-app-navigation"></a>Навигация по корпоративному приложению
 
-Xamarin.Formsвключает поддержку навигации по страницам, что обычно приводит к взаимодействию пользователя с пользовательским ИНТЕРФЕЙСом или из самого приложения в результате внутренних изменений состояния на основе логики. Однако Навигация может быть сложной для реализации в приложениях, использующих шаблон Model-View-ViewModel (MVVM), так как должны выполняться следующие задачи:
+> [!NOTE]
+> Эта электронная книга была опубликована в пружине 2017 и не была обновлена с этого момента. В книге есть много ценных материалов, но некоторые из них устарели.
+
+Xamarin.Forms включает поддержку навигации по страницам, что обычно приводит к взаимодействию пользователя с пользовательским ИНТЕРФЕЙСом или из самого приложения в результате внутренних изменений состояния на основе логики. Однако Навигация может быть сложной для реализации в приложениях, использующих шаблон Model-View-ViewModel (MVVM), так как должны выполняться следующие задачи:
 
 - Определение представления, к которому осуществляется переход, с использованием подхода, который не обеспечивает тесное связывание и зависимости между представлениями.
 - Способ координации процесса, с которым будет осуществляться переход к представлению, — это экземпляр и инициализирован. При использовании MVVM модель представления и представления необходимо создать и связать друг с другом через контекст привязки представления. Если приложение использует контейнер внедрения зависимостей, то для создания экземпляров представлений и моделей представлений может потребоваться специальный механизм построения.
@@ -42,14 +45,14 @@ Xamarin.Formsвключает поддержку навигации по стр�
 Мобильное приложение eShopOnContainers использует `NavigationService` класс для предоставления навигации представления модели. Этот класс реализует `INavigationService` интерфейс, который показан в следующем примере кода:
 
 ```csharp
-public interface INavigationService  
+public interface INavigationService  
 {  
-    ViewModelBase PreviousPageViewModel { get; }  
-    Task InitializeAsync();  
-    Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase;  
-    Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase;  
-    Task RemoveLastFromBackStackAsync();  
-    Task RemoveBackStackAsync();  
+    ViewModelBase PreviousPageViewModel { get; }  
+    Task InitializeAsync();  
+    Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase;  
+    Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase;  
+    Task RemoveLastFromBackStackAsync();  
+    Task RemoveBackStackAsync();  
 }
 ```
 
@@ -79,7 +82,7 @@ builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstanc
 `INavigationService`Интерфейс разрешается в `ViewModelBase` конструкторе класса, как показано в следующем примере кода:
 
 ```csharp
-NavigationService = ViewModelLocator.Resolve<INavigationService>();
+NavigationService = ViewModelLocator.Resolve<INavigationService>();
 ```
 
 Он возвращает ссылку на `NavigationService` объект, хранящийся в контейнере внедрения зависимостей Autofac, который создается `InitNavigation` методом в `App` классе. Дополнительные сведения см. [в разделе переходы при запуске приложения](#navigating-when-the-app-is-launched).
@@ -88,22 +91,22 @@ NavigationService = ViewModelLocator.Resolve<INavigationService>();
 
 ### <a name="handling-navigation-requests"></a>Обработка запросов навигации
 
-Xamarin.Formsпредоставляет [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) класс, реализующий иерархическую навигацию, в которой пользователь может перемещаться по страницам, перемещая и обратнее по мере необходимости. Дополнительные сведения об иерархической навигации см. в статье [Иерархическая навигация](~/xamarin-forms/app-fundamentals/navigation/hierarchical.md).
+Xamarin.Forms предоставляет [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) класс, реализующий иерархическую навигацию, в которой пользователь может перемещаться по страницам, перемещая и обратнее по мере необходимости. Дополнительные сведения об иерархической навигации см. в статье [Иерархическая навигация](~/xamarin-forms/app-fundamentals/navigation/hierarchical.md).
 
 Вместо [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) непосредственного использования класса приложение eShopOnContainers заключает `NavigationPage` класс в `CustomNavigationView` класс, как показано в следующем примере кода:
 
 ```csharp
-public partial class CustomNavigationView : NavigationPage  
+public partial class CustomNavigationView : NavigationPage  
 {  
-    public CustomNavigationView() : base()  
-    {  
-        InitializeComponent();  
-    }  
+    public CustomNavigationView() : base()  
+    {  
+        InitializeComponent();  
+    }  
 
-    public CustomNavigationView(Page root) : base(root)  
-    {  
-        InitializeComponent();  
-    }  
+    public CustomNavigationView(Page root) : base(root)  
+    {  
+        InitializeComponent();  
+    }  
 }
 ```
 
@@ -112,20 +115,20 @@ public partial class CustomNavigationView : NavigationPage
 Навигация выполняется внутри классов модели представления путем вызова одного из `NavigateToAsync` методов, указывающих тип модели представления для страницы, к которой осуществляется переход, как показано в следующем примере кода:
 
 ```csharp
-await NavigationService.NavigateToAsync<MainViewModel>();
+await NavigationService.NavigateToAsync<MainViewModel>();
 ```
 
 В следующем примере кода показаны `NavigateToAsync` методы, предоставляемые `NavigationService` классом:
 
 ```csharp
-public Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase  
+public Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase  
 {  
-    return InternalNavigateToAsync(typeof(TViewModel), null);  
+    return InternalNavigateToAsync(typeof(TViewModel), null);  
 }  
 
-public Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase  
+public Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase  
 {  
-    return InternalNavigateToAsync(typeof(TViewModel), parameter);  
+    return InternalNavigateToAsync(typeof(TViewModel), parameter);  
 }
 ```
 
@@ -134,50 +137,50 @@ public Task NavigateToAsync<TViewModel>(object parameter) where TViewModel�
 `InternalNavigateToAsync`Метод выполняет запрос навигации и показан в следующем примере кода:
 
 ```csharp
-private async Task InternalNavigateToAsync(Type viewModelType, object parameter)  
+private async Task InternalNavigateToAsync(Type viewModelType, object parameter)  
 {  
-    Page page = CreatePage(viewModelType, parameter);  
+    Page page = CreatePage(viewModelType, parameter);  
 
-    if (page is LoginView)  
-    {  
-        Application.Current.MainPage = new CustomNavigationView(page);  
-    }  
-    else  
-    {  
-        var navigationPage = Application.Current.MainPage as CustomNavigationView;  
-        if (navigationPage != null)  
-        {  
-            await navigationPage.PushAsync(page);  
-        }  
-        else  
-        {  
-            Application.Current.MainPage = new CustomNavigationView(page);  
-        }  
-    }  
+    if (page is LoginView)  
+    {  
+        Application.Current.MainPage = new CustomNavigationView(page);  
+    }  
+    else  
+    {  
+        var navigationPage = Application.Current.MainPage as CustomNavigationView;  
+        if (navigationPage != null)  
+        {  
+            await navigationPage.PushAsync(page);  
+        }  
+        else  
+        {  
+            Application.Current.MainPage = new CustomNavigationView(page);  
+        }  
+    }  
 
-    await (page.BindingContext as ViewModelBase).InitializeAsync(parameter);  
+    await (page.BindingContext as ViewModelBase).InitializeAsync(parameter);  
 }  
 
-private Type GetPageTypeForViewModel(Type viewModelType)  
+private Type GetPageTypeForViewModel(Type viewModelType)  
 {  
-    var viewName = viewModelType.FullName.Replace("Model", string.Empty);  
-    var viewModelAssemblyName = viewModelType.GetTypeInfo().Assembly.FullName;  
-    var viewAssemblyName = string.Format(  
-                CultureInfo.InvariantCulture, "{0}, {1}", viewName, viewModelAssemblyName);  
-    var viewType = Type.GetType(viewAssemblyName);  
-    return viewType;  
+    var viewName = viewModelType.FullName.Replace("Model", string.Empty);  
+    var viewModelAssemblyName = viewModelType.GetTypeInfo().Assembly.FullName;  
+    var viewAssemblyName = string.Format(  
+                CultureInfo.InvariantCulture, "{0}, {1}", viewName, viewModelAssemblyName);  
+    var viewType = Type.GetType(viewAssemblyName);  
+    return viewType;  
 }  
 
-private Page CreatePage(Type viewModelType, object parameter)  
+private Page CreatePage(Type viewModelType, object parameter)  
 {  
-    Type pageType = GetPageTypeForViewModel(viewModelType);  
-    if (pageType == null)  
-    {  
-        throw new Exception($"Cannot locate page type for {viewModelType}");  
-    }  
+    Type pageType = GetPageTypeForViewModel(viewModelType);  
+    if (pageType == null)  
+    {  
+        throw new Exception($"Cannot locate page type for {viewModelType}");  
+    }  
 
-    Page page = Activator.CreateInstance(pageType) as Page;  
-    return page;  
+    Page page = Activator.CreateInstance(pageType) as Page;  
+    return page;  
 }
 ```
 
@@ -202,10 +205,10 @@ private Page CreatePage(Type viewModelType, object parameter)
 При запуске приложения `InitNavigation` `App` вызывается метод в классе. Этот метод показан в следующем примере кода:
 
 ```csharp
-private Task InitNavigation()  
+private Task InitNavigation()  
 {  
-    var navigationService = ViewModelLocator.Resolve<INavigationService>();  
-    return navigationService.InitializeAsync();  
+    var navigationService = ViewModelLocator.Resolve<INavigationService>();  
+    return navigationService.InitializeAsync();  
 }
 ```
 
@@ -217,12 +220,12 @@ private Task InitNavigation()
 Метод `NavigationService` `InitializeAsync` показан в следующем примере кода:
 
 ```csharp
-public Task InitializeAsync()  
+public Task InitializeAsync()  
 {  
-    if (string.IsNullOrEmpty(Settings.AuthAccessToken))  
-        return NavigateToAsync<LoginViewModel>();  
-    else  
-        return NavigateToAsync<MainViewModel>();  
+    if (string.IsNullOrEmpty(Settings.AuthAccessToken))  
+        return NavigateToAsync<LoginViewModel>();  
+    else  
+        return NavigateToAsync<MainViewModel>();  
 }
 ```
 
@@ -237,9 +240,9 @@ public Task InitializeAsync()
 Например, `ProfileViewModel` класс содержит объект `OrderDetailCommand` , который выполняется, когда пользователь выбирает заказ на `ProfileView` странице. В свою очередь, выполняет `OrderDetailAsync` метод, который показан в следующем примере кода:
 
 ```csharp
-private async Task OrderDetailAsync(Order order)  
+private async Task OrderDetailAsync(Order order)  
 {  
-    await NavigationService.NavigateToAsync<OrderDetailViewModel>(order);  
+    await NavigationService.NavigateToAsync<OrderDetailViewModel>(order);  
 }
 ```
 
@@ -248,15 +251,15 @@ private async Task OrderDetailAsync(Order order)
 `InitializeAsync`Метод определяется в `ViewModelBase` классе как метод, который можно переопределить. Этот метод задает `object` аргумент, представляющий данные, передаваемые в модель представления во время операции навигации. Поэтому Просмотрите классы модели, которые хотят получить данные из операции перехода, и предоставьте собственную реализацию `InitializeAsync` метода для выполнения необходимой инициализации. В следующем примере кода показан `InitializeAsync` метод из `OrderDetailViewModel` класса:
 
 ```csharp
-public override async Task InitializeAsync(object navigationData)  
+public override async Task InitializeAsync(object navigationData)  
 {  
-    if (navigationData is Order)  
-    {  
-        ...  
-        Order = await _ordersService.GetOrderAsync(  
-                        Convert.ToInt32(order.OrderNumber), authToken);  
-        ...  
-    }  
+    if (navigationData is Order)  
+    {  
+        ...  
+        Order = await _ordersService.GetOrderAsync(  
+                        Convert.ToInt32(order.OrderNumber), authToken);  
+        ...  
+    }  
 }
 ```
 
@@ -267,13 +270,13 @@ public override async Task InitializeAsync(object navigationData)
 Навигация обычно запускается из представления с помощью взаимодействия с пользователем. Например, `LoginView` выполняет навигацию после успешной проверки подлинности. В следующем примере кода показано, как вызывается Навигация с помощью поведения:
 
 ```xaml
-<WebView ...>  
-    <WebView.Behaviors>  
-        <behaviors:EventToCommandBehavior  
-            EventName="Navigating"  
-            EventArgsConverter="{StaticResource WebNavigatingEventArgsConverter}"  
-            Command="{Binding NavigateCommand}" />  
-    </WebView.Behaviors>  
+<WebView ...>  
+    <WebView.Behaviors>  
+        <behaviors:EventToCommandBehavior  
+            EventName="Navigating"  
+            EventArgsConverter="{StaticResource WebNavigatingEventArgsConverter}"  
+            Command="{Binding NavigateCommand}" />  
+    </WebView.Behaviors>  
 </WebView>
 ```
 
@@ -282,12 +285,12 @@ public override async Task InitializeAsync(object navigationData)
 В свою очередь, `NavigationCommand` выполняет `NavigateAsync` метод, который показан в следующем примере кода:
 
 ```csharp
-private async Task NavigateAsync(string url)  
+private async Task NavigateAsync(string url)  
 {  
-    ...          
-    await NavigationService.NavigateToAsync<MainViewModel>();  
-    await NavigationService.RemoveLastFromBackStackAsync();  
-    ...  
+    ...          
+    await NavigationService.NavigateToAsync<MainViewModel>();  
+    await NavigationService.RemoveLastFromBackStackAsync();  
+    ...  
 }
 ```
 
@@ -299,7 +302,7 @@ private async Task NavigateAsync(string url)
 
 ## <a name="summary"></a>Сводка
 
-Xamarin.Formsвключает поддержку навигации по страницам, что обычно приводит к взаимодействию пользователя с пользовательским ИНТЕРФЕЙСом или из самого приложения в результате внутренних изменений состояния, управляемых логическими операциями. Однако Навигация может быть сложной для реализации в приложениях, использующих шаблон MVVM.
+Xamarin.Forms включает поддержку навигации по страницам, что обычно приводит к взаимодействию пользователя с пользовательским ИНТЕРФЕЙСом или из самого приложения в результате внутренних изменений состояния, управляемых логическими операциями. Однако Навигация может быть сложной для реализации в приложениях, использующих шаблон MVVM.
 
 В этой главе представлен `NavigationService` класс, который используется для выполнения навигации по модели представления при первом просмотре моделей. Размещение логики навигации в классах представления позволяет выполнять логику с помощью автоматических тестов. Кроме того, модель представления может реализовать логику для управления навигацией, чтобы обеспечить применение определенных бизнес-правил.
 

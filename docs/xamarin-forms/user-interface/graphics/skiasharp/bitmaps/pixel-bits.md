@@ -10,16 +10,16 @@ ms.date: 07/11/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7f0b7c61d44170ab97b060a16693287c28903660
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 6e3edf7d0e7630429f8f1c76009987ee8a4b737a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562968"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375334"
 ---
 # <a name="accessing-skiasharp-bitmap-pixel-bits"></a>Доступ к битовым точкам точечного рисунка SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Как было показано в статье [**Сохранение точечных рисунков SkiaSharp в файлах**](saving.md), точечные рисунки обычно хранятся в файлах в сжатом формате, таком как JPEG или PNG. В большинстве случаях точечный рисунок SkiaSharp, хранящийся в памяти, не сжимается. Он хранится в виде последовательности пикселей. Этот формат без сжатия упрощает перенос точечных рисунков на экранную поверхность.
 
@@ -492,7 +492,7 @@ public class GradientBitmapPage : ContentPage
 | API       | Тип данных | iOS  | Android | UWP  |
 | --------- | --------- | ----:| -------:| ----:|
 | SetPixel  |           | 3,17 |   10,77 | 3.49 |
-| Перекрытых    |           | 0,32 |    1.23 | 0,07 |
+| Перекрытых    |           | 0,32 |    1,23 | 0,07 |
 | В точках | byte      | 0,09 |    0,24 | 0,10 |
 |           | uint      | 0,06 |    0,26 | 0,05 |
 |           | скколор   | 0,29 |    0,99 | 0,07 |

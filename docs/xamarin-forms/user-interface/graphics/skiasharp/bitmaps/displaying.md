@@ -10,16 +10,16 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1427b6f8461c74ded933fe562a7d17221790383a
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c266cdee5a0949edc6ade7fff81816d0405af27f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562318"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374892"
 ---
 # <a name="displaying-skiasharp-bitmaps"></a>Отображение точечных рисунков SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Тема точечных рисунков SkiaSharp была представлена в статье **[основы битовой карты в SkiaSharp](../basics/bitmaps.md)**. В этой статье показано три способа загрузки точечных рисунков и три способа отобразить точечные рисунки. В этой статье рассматриваются методы загрузки растровых изображений и более подробное использование `DrawBitmap` методов `SKCanvas` .
 
@@ -27,7 +27,7 @@ ms.locfileid: "91562318"
 
 `DrawBitmapLattice`Методы и `DrawBitmapNinePatch` обсуждаются в статье **[Сегментированное отображение точечных рисунков SkiaSharp](segmented.md)**.
 
-Примеры на этой странице относятся к приложению **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** . На домашней странице этого приложения выберите **точечные рисунки SkiaSharp**, а затем перейдите к разделу **отображение растровых изображений** .
+Примеры на этой странице относятся к приложению **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** . На домашней странице этого приложения выберите **точечные рисунки SkiaSharp** , а затем перейдите к разделу **отображение растровых изображений** .
 
 ## <a name="loading-a-bitmap"></a>Загрузка точечного рисунка
 
@@ -131,7 +131,7 @@ DrawBitmap(SKBitmap bitmap, float x, float y, SKPaint paint = null)
 
 Эти два метода функционально идентичны. Указанная точка указывает расположение верхнего левого угла точечного рисунка относительно холста. Так как разрешение в пикселах мобильных устройств настолько велико, небольшие точечные рисунки обычно отображаются на этих устройствах очень маленькими.
 
-Необязательный `SKPaint` параметр позволяет отображать растровое изображение с помощью прозрачности. Для этого создайте `SKPaint` объект и задайте `Color` для свойства любое `SKColor` значение с альфа-каналом меньше 1. Например:
+Необязательный `SKPaint` параметр позволяет отображать растровое изображение с помощью прозрачности. Для этого создайте `SKPaint` объект и задайте `Color` для свойства любое `SKColor` значение с альфа-каналом меньше 1. Пример:
 
 ```csharp
 paint.Color = new SKColor(0, 0, 0, 0x80);
@@ -622,7 +622,7 @@ public partial class ScalingModesPage : ContentPage
 
 [![Режимы масштабирования](displaying-images/ScalingModes.png "Режимы масштабирования")](displaying-images/ScalingModes-Large.png#lightbox)
 
-Страница **подмножества прямоугольников** имеет практически тот же XAML-файл, что и **режимы масштабирования**, но файл кода программной части определяет прямоугольное подмножество точечного рисунка, заданное `SOURCE` полем: 
+Страница **подмножества прямоугольников** имеет практически тот же XAML-файл, что и **режимы масштабирования** , но файл кода программной части определяет прямоугольное подмножество точечного рисунка, заданное `SOURCE` полем: 
 
 ```csharp
 public partial class ScalingModesPage : ContentPage

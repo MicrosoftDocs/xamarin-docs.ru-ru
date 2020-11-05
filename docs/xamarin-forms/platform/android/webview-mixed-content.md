@@ -10,16 +10,16 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 27d19773d86c125cd5574f7a281c37c26ef643fd
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: cfcdd52187fe8e3af258aedb25e8c0df85cbea4e
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563202"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375496"
 ---
 # <a name="webview-mixed-content-on-android"></a>WebView смешанное содержимое в Android
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Этот элемент управления для платформы Android определяет, [`WebView`](xref:Xamarin.Forms.WebView) может ли объект отображать смешанное содержимое в приложениях, предназначенных для API 21 или более поздней версии. Смешанное содержимое — это содержимое, которое изначально загружается через HTTPS-соединение, но при этом ресурсы (например, изображения, аудио, видео, таблицы стилей и сценарии) загружаются по протоколу HTTP. Он используется в XAML путем присвоения [`WebView.MixedContentMode`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.MixedContentModeProperty) свойству присоединенного свойства значения [`MixedContentHandling`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling) перечисления:
 

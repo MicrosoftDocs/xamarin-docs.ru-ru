@@ -10,16 +10,16 @@ ms.date: 02/17/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b462535815e1c8ca6262d82d2527d7667b645db8
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 6f812e252f714539c41b57552038ca74e4d5137c
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563930"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374918"
 ---
 # <a name="explicit-styles-in-no-locxamarinforms"></a>Явные стили в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
 
 _Явный стиль — это тот, который выборочно применяется к элементам управления путем установки их свойств стиля._
 
