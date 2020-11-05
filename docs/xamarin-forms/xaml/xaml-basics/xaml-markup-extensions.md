@@ -10,16 +10,16 @@ ms.date: 03/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9923a7f0605a7ca5d9d81269c3d855e92fbccaf4
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: b934885369882dea2c3a5de1954b428fcfcbac59
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91564086"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374606"
 ---
 # <a name="part-3-xaml-markup-extensions"></a>Часть 3. Расширения разметки XAML
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xamlsamples)
 
 _Расширения разметки XAML составляют важную функцию в XAML, которая позволяет задавать свойства для объектов или значений, на которые косвенно ссылаются другие источники. Расширения разметки XAML особенно важны для совместного использования объектов и ссылок на константы, используемые в приложении, но они находят наибольшую служебную программу в привязках данных._
 
@@ -398,7 +398,7 @@ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 xmlns:local="clr-namespace:XamlSamples"
 ```
 
-Также можно определить объявления пространств имен XML для пространств имен .NET в любой сборке, на которую ссылается библиотека .NET Standard. Например, вот `sys` префикс для стандартного `System` пространства имен .NET, который находится в сборке **netstandard** . Так как это другая сборка, необходимо также указать имя сборки, в данном случае **netstandard**:
+Также можно определить объявления пространств имен XML для пространств имен .NET в любой сборке, на которую ссылается библиотека .NET Standard. Например, вот `sys` префикс для стандартного `System` пространства имен .NET, который находится в сборке **netstandard** . Так как это другая сборка, необходимо также указать имя сборки, в данном случае **netstandard** :
 
 ```csharp
 xmlns:sys="clr-namespace:System;assembly=netstandard"

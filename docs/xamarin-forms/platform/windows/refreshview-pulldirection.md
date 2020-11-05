@@ -10,16 +10,16 @@ ms.date: 09/20/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b5c1310e300373fe75cbcd1464220acf989516ba
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 2aebd86b4b15dec1a79cb60057e0c04f2e196ac5
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91555688"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372903"
 ---
 # <a name="refreshview-pull-direction-on-windows"></a>Направление движения RefreshView в Windows
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Этот универсальная платформа Windows зависящий от платформы, позволяет изменить направление извлечения объекта, `RefreshView` чтобы оно совпадало с ориентацией прокручиваемого элемента управления, отображающего данные. Он используется в XAML путем задания `RefreshView.RefreshPullDirection` свойству BIND значения `RefreshPullDirection` перечисления.
 

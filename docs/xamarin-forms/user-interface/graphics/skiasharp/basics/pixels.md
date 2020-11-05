@@ -10,16 +10,16 @@ ms.date: 02/09/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3df3a606c54d7367079638d48330dfe1b214043b
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 5f12dbd4ef0cfea9d276fd8c939afab585541ece
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563189"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373904"
 ---
 # <a name="pixels-and-device-independent-units"></a>Пиксели и аппаратно-независимые единицы
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Изучите различия между координатами и Xamarin.Forms координатами SkiaSharp_
 
@@ -29,7 +29,7 @@ _Изучите различия между координатами и Xamarin.
 
 Если вы еще не работали с программированием Xamarin.Forms , вы можете иметь представление о Xamarin.Forms координатах и размерах. Круги, вырисованные в двух предыдущих статьях, могут показаться немного маленькими.
 
-Эти кружки *являются* небольшими по сравнению с Xamarin.Forms размерами. По умолчанию SkiaSharp рисует в единицах измерения, в то время как Xamarin.Forms базовые координаты и размеры в единицах, независимых от устройства, устанавливаются базовой платформой. (Дополнительные сведения о Xamarin.Forms системе координат можно найти в [главе 5. Работа с размерами](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter05.md) книги *Создание мобильных приложений с помощью Xamarin.Forms *.)
+Эти кружки *являются* небольшими по сравнению с Xamarin.Forms размерами. По умолчанию SkiaSharp рисует в единицах измерения, в то время как Xamarin.Forms базовые координаты и размеры в единицах, независимых от устройства, устанавливаются базовой платформой. (Дополнительные сведения о Xamarin.Forms системе координат можно найти в [главе 5. Работа с размерами](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter05.md) книги *Создание мобильных приложений с помощью Xamarin.Forms*.)
 
 Страница в программе [**скевшарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) с **соответствующим размером поверхности** использует SkiaSharp Text OUTPUT для отображения размера отображаемой поверхности из трех различных источников:
 

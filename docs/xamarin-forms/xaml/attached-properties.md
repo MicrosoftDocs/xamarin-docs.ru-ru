@@ -1,5 +1,5 @@
 ---
-title: Вложенные свойства
+title: Присоединенные свойства
 description: В этой статье приводятся общие сведения о присоединенных свойствах и демонстрируется их создание и использование.
 ms.prod: xamarin
 ms.assetid: 6E9DCDC3-A0E4-46A6-BAA9-4FEB6DF8A5A8
@@ -10,16 +10,16 @@ ms.date: 06/02/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 61edbb347b4d3466d1ca756208adb5d173d63b34
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: b3db63018bc8d927b9e9041c762b1989cfb17679
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561551"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374099"
 ---
-# <a name="attached-properties"></a>Вложенные свойства
+# <a name="attached-properties"></a>Присоединенные свойства
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/effects-shadoweffect)
 
 
 Присоединенные свойства позволяют объекту назначить значение для свойства, которое не определено его собственным классом. Например, дочерние элементы могут использовать присоединенные свойства для информирования своего родительского элемента о том, как они представлены в пользовательском интерфейсе. [`Grid`](xref:Xamarin.Forms.Grid)Элемент управления позволяет указать строку и столбец дочернего элемента, задав `Grid.Row` `Grid.Column` Свойства и. `Grid.Row` и `Grid.Column` являются присоединенными свойствами, так как они задаются для элементов, являющихся дочерними элементами объекта `Grid` , а не `Grid` самого самого.

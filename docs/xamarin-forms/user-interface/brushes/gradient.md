@@ -10,18 +10,18 @@ ms.date: 07/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 08a423830ee3db55cb0ec7facfa5630c8832885b
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 025832a6f51f94812e49cfb5245700b62d98ced3
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562942"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374346"
 ---
 # <a name="no-locxamarinforms-brushes-gradients"></a>Xamarin.Forms Кисти: градиенты
 
 ![Предварительный просмотр API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
 
 `GradientBrush`Класс является производным от `Brush` класса и является абстрактным классом, описывающим градиент, который состоит из ограничителей градиента. Градиентные кисти закрашивают область разными цветами, которые переходят из одного в другой по некоторой оси. Классы, производные от, `GradientBrush` описывают различные способы интерпретации ограничителей градиента и Xamarin.Forms предоставляют следующие градиентные кисти:
 

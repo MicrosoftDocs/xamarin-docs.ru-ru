@@ -10,24 +10,24 @@ ms.date: 02/11/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 43f2e32a240b74fde50659033096c8a7246ea60c
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c6b6a5a538d69d396f8b30381fd1d0b73d3f0e9f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91564060"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373826"
 ---
 # <a name="no-locxamarinforms-carouselview-interaction"></a>Xamarin.Forms Взаимодействие Карауселвиев
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView) определяет следующие свойства, управляющие взаимодействием с пользователем:
 
 - `CurrentItem`Тип `object` , текущий отображаемый элемент. Это свойство имеет режим привязки по умолчанию `TwoWay` и имеет значение, `null` Если нет данных для вывода.
 - `CurrentItemChangedCommand`Тип `ICommand` , который выполняется при изменении текущего элемента.
 - `CurrentItemChangedCommandParameter` с типом `object`, который передается как параметр в `CurrentItemChangedCommand`.
-- `IsBounceEnabled`Тип `bool` , который указывает, `CarouselView` будет ли передается значение на границе содержимого. Значение по умолчанию — `true`.
-- `IsSwipeEnabled`Тип `bool` , который определяет, будет ли жест прокрутки изменять отображаемый элемент. Значение по умолчанию — `true`.
+- `IsBounceEnabled`Тип `bool` , который указывает, `CarouselView` будет ли передается значение на границе содержимого. Значение по умолчанию — `true`.
+- `IsSwipeEnabled`Тип `bool` , который определяет, будет ли жест прокрутки изменять отображаемый элемент. Значение по умолчанию — `true`.
 - `Position`Тип `int` — индекс текущего элемента в базовой коллекции. Это свойство имеет режим привязки по умолчанию `TwoWay` и имеет значение 0, если нет данных для вывода.
 - `PositionChangedCommand`Тип `ICommand` , который выполняется при изменении расположения.
 - `PositionChangedCommandParameter` с типом `object`, который передается как параметр в `PositionChangedCommand`.
@@ -85,7 +85,7 @@ void OnCurrentItemChanged(object sender, CurrentItemChangedEventArgs e)
 
 [![Снимок экрана Карауселвиев с предыдущими и текущими элементами в iOS и Android](interaction-images/current-item-events.png "Карауселвиев с текущими и предыдущими элементами")](interaction-images/current-item-events-large.png#lightbox "Карауселвиев с текущими и предыдущими элементами")
 
-### <a name="command"></a>Команда
+### <a name="command"></a>Get-Help
 
 В следующем примере XAML показан объект [`CarouselView`](xref:Xamarin.Forms.CarouselView) , использующий команду для реагирования на текущий изменяемый элемент:
 
@@ -158,7 +158,7 @@ void OnPositionChanged(object sender, PositionChangedEventArgs e)
 
 [![Снимок экрана Карауселвиев с предыдущими и текущими позициями в iOS и Android](interaction-images/current-position-events.png "Карауселвиев с текущими и предыдущими позициями")](interaction-images/current-position-events-large.png#lightbox "Карауселвиев с текущими и предыдущими позициями")
 
-### <a name="command"></a>Команда
+### <a name="command"></a>Get-Help
 
 В следующем примере XAML показано [`CarouselView`](xref:Xamarin.Forms.CarouselView) , в котором используется команда для реагирования на `Position` изменение свойства:
 

@@ -10,16 +10,16 @@ ms.date: 07/26/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3fba761d2740f323fb55e80d8cb4e3ba3d8e7cad
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 32571724c945c4bbd845943ac72fc959c42d584a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563605"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374359"
 ---
 # <a name="no-locxamarinforms-boxview"></a>Xamarin.Forms боксвиев
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/boxview-basicboxview)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/boxview-basicboxview)
 
 [`BoxView`](xref:Xamarin.Forms.BoxView) визуализирует простой прямоугольник с заданной шириной, высотой и цветом. Можно использовать `BoxView` для украшения, элементарной графики и взаимодействия с пользователем с помощью сенсорного ввода.
 
@@ -349,7 +349,7 @@ class LifeCell : BoxView
 
 Программа [**дотматриксклокк**](/samples/xamarin/xamarin-forms-samples/boxview-dotmatrixclock) создает элементы 210 `BoxView` для имитации точек старого и постороннего матрицы с 5 по 7. Время можно прочитать в книжном или альбомном режиме, но оно имеет больший размер в альбомной ориентации:
 
-[![Часовая точка-матрица](boxview-images/dotmatrixclock-small.png "Часовая точка-матрица")](boxview-images/dotmatrixclock-large.png#lightbox "Часовая точка-матрица")
+[![Часовая точка-матрица](boxview-images/dotmatrixclock-small.png "Часы Dot-Matrix")](boxview-images/dotmatrixclock-large.png#lightbox "Часы Dot-Matrix")
 
 Файл XAML выполняет немного больше, чем создание экземпляра, `AbsoluteLayout` используемого для часов:
 

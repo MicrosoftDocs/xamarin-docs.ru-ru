@@ -10,16 +10,16 @@ ms.date: 12/04/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: be1de99ba42e58e375792b0a4e03d1847e2e3c87
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c24c8eb2ea4801037621cdc82f49073c89115817
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562890"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374374"
 ---
 # <a name="authenticate-users-with-azure-active-directory-b2c"></a>Проверка подлинности с помощью Azure Active Directory B2C
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-azureadb2cauth)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/webservices-azureadb2cauth)
 
 _Azure Active Directory B2C обеспечивает управление удостоверениями в облаке для мобильных и веб-приложений. В этой статье показано, как использовать Azure Active Directory B2C для интеграции управления удостоверениями в мобильное приложение с помощью библиотеки проверки подлинности Майкрософт._
 
@@ -110,7 +110,7 @@ public static class Constants
 
 Пакет NuGet библиотеки проверки подлинности (Майкрософт) (MSAL) должен быть добавлен в общий, .NET Standard проект и проекты платформы в Xamarin.Forms решении. MSAL включает `PublicClientApplicationBuilder` класс, который конструирует объект, который придерживается `IPublicClientApplication` интерфейса. MSAL использует `With` предложения для предоставления дополнительных параметров конструктору и методам проверки подлинности.
 
-В примере проекта код программной части для **app. XAML** определяет статические свойства с именами `AuthenticationClient` и и `UIParent` создает `AuthenticationClient` объект в конструкторе. `WithIosKeychainSecurityGroup`Предложение предоставляет имя группы безопасности для приложений iOS. `WithB2CAuthority`Предложение предоставляет **центр**по умолчанию или политику, которые будут использоваться для проверки подлинности пользователей. `WithRedirectUri`Предложение сообщает экземпляру концентраторов уведомлений Azure, какой URI перенаправления используется, если указано несколько URI. В следующем примере показано, как создать экземпляр `PublicClientApplication` :
+В примере проекта код программной части для **app. XAML** определяет статические свойства с именами `AuthenticationClient` и и `UIParent` создает `AuthenticationClient` объект в конструкторе. `WithIosKeychainSecurityGroup`Предложение предоставляет имя группы безопасности для приложений iOS. `WithB2CAuthority`Предложение предоставляет **центр** по умолчанию или политику, которые будут использоваться для проверки подлинности пользователей. `WithRedirectUri`Предложение сообщает экземпляру концентраторов уведомлений Azure, какой URI перенаправления используется, если указано несколько URI. В следующем примере показано, как создать экземпляр `PublicClientApplication` :
 
 ```csharp
 public partial class App : Application
@@ -169,7 +169,7 @@ public partial class LoginPage : ContentPage
 }
 ```
 
-`OnLoginButtonClicked`Обработчик событий (срабатывает при нажатии кнопки входа) вызывает `AcquireTokenAsync` . Библиотека MSAL автоматически открывает браузер мобильных устройств и переходит на страницу входа. URL-адрес входа, называемый **центром**, представляет собой сочетание имени клиента и политик, определенных в файле **Constants.CS** . Если пользователь выбирает параметр забыл пароль, он возвращается в приложение с исключением, которое запускает процедуру забытого пароля. В следующем примере показан процесс проверки подлинности.
+`OnLoginButtonClicked`Обработчик событий (срабатывает при нажатии кнопки входа) вызывает `AcquireTokenAsync` . Библиотека MSAL автоматически открывает браузер мобильных устройств и переходит на страницу входа. URL-адрес входа, называемый **центром** , представляет собой сочетание имени клиента и политик, определенных в файле **Constants.CS** . Если пользователь выбирает параметр забыл пароль, он возвращается в приложение с исключением, которое запускает процедуру забытого пароля. В следующем примере показан процесс проверки подлинности.
 
 ```csharp
 public partial class LoginPage : ContentPage
@@ -260,7 +260,7 @@ public partial class LogoutPage : ContentPage
 
 !["Регистрация настраиваемой схемы URL-адресов в iOS"](azure-ad-b2c-images/customurl-ios.png)
 
-Для MSAL также требуются права на цепочку ключей в iOS, зарегистрированные в **ентитилементс. plist**, как показано на следующем снимке экрана:
+Для MSAL также требуются права на цепочку ключей в iOS, зарегистрированные в **ентитилементс. plist** , как показано на следующем снимке экрана:
 
 !["Настройка прав приложения в iOS"](azure-ad-b2c-images/entitlements-ios.png)
 

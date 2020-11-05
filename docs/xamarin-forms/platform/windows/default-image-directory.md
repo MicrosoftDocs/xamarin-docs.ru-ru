@@ -10,16 +10,16 @@ ms.date: 01/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d6a8674f0cffe534b1ee83f20ab255766fbfcbda
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 4dd8655d4cd84f7d4214801e55677706eb67efa7
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557404"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374684"
 ---
 # <a name="default-image-directory-on-windows"></a>Каталог изображений по умолчанию в Windows
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Этот универсальная платформа Windows зависит от конкретной платформы определяет каталог в проекте, из которого будут загружаться ресурсы изображений. Он используется в XAML путем задания для параметра значения `Application.ImageDirectory` `string` , представляющего каталог проекта, в котором содержатся ресурсы изображений:
 

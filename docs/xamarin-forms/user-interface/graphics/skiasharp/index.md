@@ -9,16 +9,16 @@ ms.date: 09/11/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 733f640a18196e6bf31eadfa1c632a7202fc1ccc
-ms.sourcegitcommit: 836d54779190b1bef1b43bc0c2016c9b3034bfda
+ms.openlocfilehash: b91d8f459992d33f417e99f5d92ece63f887f691
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93281278"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373436"
 ---
 # <a name="skiasharp-graphics-in-no-locxamarinforms"></a>SkiaSharp графика в Xamarin.Forms
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Использование SkiaSharp для двухмерной графики в Xamarin.Forms приложениях_
 

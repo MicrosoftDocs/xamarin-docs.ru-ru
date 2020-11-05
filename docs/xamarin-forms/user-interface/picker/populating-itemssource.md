@@ -10,16 +10,16 @@ ms.date: 02/26/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 395536752fb0d581408d0b8f91ef623d926aeeb4
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c08ef265cb3cf08f9d7015503f8038d9180a2c18
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91559549"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373150"
 ---
 # <a name="setting-a-pickers-itemssource-property"></a>Задание свойства ItemsSource средства выбора
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-monkeyapppicker)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-monkeyapppicker)
 
 _Представление выбора — это элемент управления для выбора текстового элемента из списка данных. В этой статье объясняется, как заполнить средство выбора данными, задав свойство ItemsSource, и как реагировать на выбор элементов пользователем._
 
@@ -50,7 +50,7 @@ Xamarin.Forms 2.3.4 улучшила [`Picker`](xref:Xamarin.Forms.Picker) пр�
 > [!NOTE]
 > Обратите внимание на то, что для элемента `x:Array` требуется атрибут `Type`, указывающий тип элементов в массиве.
 
-Эквивалентный код C# показан ниже:
+Ниже приведен эквивалентный код на C#:
 
 ```csharp
 var monkeyList = new List<string>();
@@ -79,7 +79,7 @@ picker.ItemsSource = monkeyList;
 <Label Text="{Binding Source={x:Reference picker}, Path=SelectedItem}" />
 ```
 
-Эквивалентный код C# показан ниже:
+Ниже приведен эквивалентный код на C#:
 
 ```csharp
 var monkeyNameLabel = new Label();
@@ -117,7 +117,7 @@ void OnPickerSelectedIndexChanged(object sender, EventArgs e)
         ItemDisplayBinding="{Binding Name}" />
 ```
 
-Эквивалентный код C# показан ниже:
+Ниже приведен эквивалентный код на C#:
 
 ```csharp
 var picker = new Picker { Title = "Select a monkey", TitleColor = Color.Red };
@@ -155,7 +155,7 @@ public class Monkey
 <Label Text="{Binding SelectedMonkey.Details}" ... />
 ```
 
-Эквивалентный код C# показан ниже:
+Ниже приведен эквивалентный код на C#:
 
 ```csharp
 var picker = new Picker { Title = "Select a monkey", TitleColor = Color.Red };

@@ -10,16 +10,16 @@ ms.date: 06/15/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 59a4d5c0730719d6cc332728c6cab641d02239b4
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 226c20acef7fc65cd0a4daf082c86e3c9c17bf54
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563566"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373787"
 ---
 # <a name="no-locxamarinforms-grid"></a>Xamarin.Forms Сетки
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-griddemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-griddemos)
 
 [![::: No-Loc (Xamarin. Forms)::: Grid](grid-images/layouts.png "::: No-Loc (Xamarin. Forms)::: Grid")](grid-images/layouts-large.png#lightbox "::: No-Loc (Xamarin. Forms)::: Grid")
 
@@ -270,7 +270,7 @@ public class BasicGridPageCS : ContentPage
 
 В коде, чтобы указать высоту [`RowDefinition`](xref:Xamarin.Forms.RowDefinition) объекта и ширину [`ColumnDefinition`](xref:Xamarin.Forms.ColumnDefinition) объекта, используются значения [`GridLength`](xref:Xamarin.Forms.GridLength) структуры, часто в сочетании с [`GridUnitType`](xref:Xamarin.Forms.GridUnitType) перечислением.
 
-В приведенном выше примере кода также показано несколько различных подходов к добавлению дочерних элементов в [`Grid`](xref:Xamarin.Forms.Grid) и указания ячеек, в которых они находятся. При использовании `Add` перегрузки, указывающей *левые*, *правые*, *верхние*и *нижние* аргументы, а аргументы *Left* и *Top* всегда ссылаются на ячейки внутри `Grid` , аргументы *right* и *Bottom* будут ссылаться на ячейки, находящиеся за пределами `Grid` . Это происходит потому, что *правый* аргумент всегда должен быть больше *левого* аргумента, а *Нижний* аргумент всегда должен быть больше, чем *верхний* аргумент. В следующем примере, который предполагает использование 2x2 `Grid` , показан эквивалентный код, использующий обе `Add` перегрузки:
+В приведенном выше примере кода также показано несколько различных подходов к добавлению дочерних элементов в [`Grid`](xref:Xamarin.Forms.Grid) и указания ячеек, в которых они находятся. При использовании `Add` перегрузки, указывающей *левые* , *правые* , *верхние* и *нижние* аргументы, а аргументы *Left* и *Top* всегда ссылаются на ячейки внутри `Grid` , аргументы *right* и *Bottom* будут ссылаться на ячейки, находящиеся за пределами `Grid` . Это происходит потому, что *правый* аргумент всегда должен быть больше *левого* аргумента, а *Нижний* аргумент всегда должен быть больше, чем *верхний* аргумент. В следующем примере, который предполагает использование 2x2 `Grid` , показан эквивалентный код, использующий обе `Add` перегрузки:
 
 ```csharp
 // left, top
@@ -344,7 +344,7 @@ public GridSpacingPageCS()
 }
 ```
 
-## <a name="alignment"></a>Выравнивание
+## <a name="alignment"></a>Соответствие
 
 Дочерние представления в [`Grid`](xref:Xamarin.Forms.Grid) можно располагать в своих ячейках по [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) свойствам и. Для этих свойств можно задать следующие поля из [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) структуры:
 

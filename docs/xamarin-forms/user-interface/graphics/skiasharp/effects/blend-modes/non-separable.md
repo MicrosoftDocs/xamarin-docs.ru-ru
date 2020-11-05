@@ -10,16 +10,16 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a77ebb07a09c1bbd2df482c81040f271cdf8f56e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: ea590c0390ab045e5cf8b526aee66c2408d1b784
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556351"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374671"
 ---
 # <a name="the-non-separable-blend-modes"></a>Режимы смешения не отделяемых
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Как было показано в статье [**SkiaSharp отделяемых Blend modes**](separable.md), режимы смешения отделяемых выполняют операции с красным, зеленым и синим каналами отдельно. Режимы отделяемых Blend не являются. При работе с цветами оттенков, насыщенностью и яркости цвета отделяемых режимы наложения могут изменять цвета в интересных целях:
 
@@ -29,7 +29,7 @@ ms.locfileid: "91556351"
 
 Чтобы разобраться в отделяемых режимах наложения, необходимо рассматривать целевые и исходные Пиксели как цвета в модели оттенок-насыщенность-яркость. (Яркость также называется освещением.)
 
-Цветовая модель HSL обсуждалась в статье [**Интеграция с Xamarin.Forms **](../../basics/integration.md) , а пример программы в этой статье позволяет ЭКСПЕРИМЕНТИРОВАТЬ с цветами HSL. Можно создать значение, `SKColor` используя оттенок, насыщенность и значения яркости с помощью статического [`SKColor.FromHsl`](xref:SkiaSharp.SKColor.FromHsl*) метода.
+Цветовая модель HSL обсуждалась в статье [**Интеграция с Xamarin.Forms**](../../basics/integration.md) , а пример программы в этой статье позволяет ЭКСПЕРИМЕНТИРОВАТЬ с цветами HSL. Можно создать значение, `SKColor` используя оттенок, насыщенность и значения яркости с помощью статического [`SKColor.FromHsl`](xref:SkiaSharp.SKColor.FromHsl*) метода.
 
 Цветовой тон представляет доминирующее вавеленгс цвета. Значения оттенка находятся в диапазоне от 0 до 360 и проходят через аддитивные и вычитаемые первичные цвета: красный — значение 0, желтый — 60, зеленый — 120, голубой — 180, синий — 240, пурпурный — 300, а цикл — как красный в 360.
 
@@ -211,11 +211,11 @@ public partial class NonSeparableBlendModesPage : ContentPage
 
 ## <a name="a-matte-for-a-separable-mode"></a>Матовая для режима отделяемых
 
-Ниже приведено одно из точечных рисунков, входящих в состав примера [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **Banana.jpg**:
+Ниже приведено одно из точечных рисунков, входящих в состав примера [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **Banana.jpg** :
 
 ![Обезьяна в полукруглой](non-separable-images/Banana.jpg "Обезьяна в полукруглой")
 
-Можно создать матовый, охватывающий только «полукруглый». Это также является ресурсом в примере [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **BananaMatte.png**:
+Можно создать матовый, охватывающий только «полукруглый». Это также является ресурсом в примере [**скиашарпформсдемос**](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) . Имя файла — **BananaMatte.png** :
 
 ![Полукруглая матовая](non-separable-images/BananaMatte.png "Полукруглая матовая")
 

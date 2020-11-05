@@ -10,16 +10,16 @@ ms.date: 06/21/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f8d81e037d63a7144263ce4b3520647e6829bd57
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 11f33c07d2a98e326717f284f0b5d6308a65a693
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557261"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374723"
 ---
 # <a name="file-handling-in-no-locxamarinforms"></a>Обработка файлов в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithfiles)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithfiles)
 
 _Обработка файлов в Xamarin.Forms среде может быть достигнута с помощью кода в библиотеке .NET Standard или с помощью внедренных ресурсов._
 
@@ -63,7 +63,7 @@ string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFold
 
 ## <a name="loading-files-embedded-as-resources"></a>Загрузка файлов, внедряемых в качестве ресурсов
 
-Чтобы внедрить файл в сборку **.NET Standard**, создайте или добавьте файл и убедитесь, что настроено **Действие при сборке: EmbeddedResource**.
+Чтобы внедрить файл в сборку **.NET Standard** , создайте или добавьте файл и убедитесь, что настроено **Действие при сборке: EmbeddedResource**.
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
@@ -75,7 +75,7 @@ string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFold
 
 -----
 
-`GetManifestResourceStream` используется для доступа к внедренному файлу с помощью его **идентификатора ресурса**. По умолчанию идентификатор ресурса — это имя файла с префиксом пространства имен по умолчанию для проекта, в котором он внедрен. в этом случае сборка является **воркингвисфилес** , а имя файла — **LibTextResource.txt**, поэтому идентификатор ресурса — `WorkingWithFiles.LibTextResource.txt` .
+`GetManifestResourceStream` используется для доступа к внедренному файлу с помощью его **идентификатора ресурса**. По умолчанию идентификатор ресурса — это имя файла с префиксом пространства имен по умолчанию для проекта, в котором он внедрен. в этом случае сборка является **воркингвисфилес** , а имя файла — **LibTextResource.txt** , поэтому идентификатор ресурса — `WorkingWithFiles.LibTextResource.txt` .
 
 ```csharp
 var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
@@ -135,13 +135,13 @@ Stream stream = assembly.GetManifestResourceStream
 
 ### <a name="organizing-resources"></a>Упорядочение ресурсов
 
-В приведенных выше примерах предполагается, что файл внедряется в корень проекта библиотеки .NET Standard, то есть идентификатор ресурса имеет форму **пространство_имен.имя_файла.расширение**, например `WorkingWithFiles.LibTextResource.txt` и `WorkingWithFiles.iOS.SharedTextResource.txt`.
+В приведенных выше примерах предполагается, что файл внедряется в корень проекта библиотеки .NET Standard, то есть идентификатор ресурса имеет форму **пространство_имен.имя_файла.расширение** , например `WorkingWithFiles.LibTextResource.txt` и `WorkingWithFiles.iOS.SharedTextResource.txt`.
 
-Можно упорядочить внедренные ресурсы по папкам. Если внедренный ресурс помещается в папку, ее имя становится частью идентификатора ресурса (разделенного точками), таким образом, формат идентификатора ресурса принимает вид **пространство_имен.папка.имя_файла.расширение**. Если поместить файлы, используемые в примере приложения, в папку **MyFolder**, соответствующие идентификаторы ресурсов примут вид `WorkingWithFiles.MyFolder.LibTextResource.txt` и `WorkingWithFiles.iOS.MyFolder.SharedTextResource.txt`.
+Можно упорядочить внедренные ресурсы по папкам. Если внедренный ресурс помещается в папку, ее имя становится частью идентификатора ресурса (разделенного точками), таким образом, формат идентификатора ресурса принимает вид **пространство_имен.папка.имя_файла.расширение**. Если поместить файлы, используемые в примере приложения, в папку **MyFolder** , соответствующие идентификаторы ресурсов примут вид `WorkingWithFiles.MyFolder.LibTextResource.txt` и `WorkingWithFiles.iOS.MyFolder.SharedTextResource.txt`.
 
 ### <a name="debugging-embedded-resources"></a>Отладка внедренных ресурсов
 
-Так как иногда сложно понять, почему конкретный ресурс не загружается, можно временно добавить в приложение приведенный ниже код отладки, чтобы убедиться, что ресурсы настроены правильно. Он выводит все известные ресурсы, внедренные в заданную сборку, на панели **Ошибки**, чтобы облегчить отладку проблем с загрузкой ресурсов.
+Так как иногда сложно понять, почему конкретный ресурс не загружается, можно временно добавить в приложение приведенный ниже код отладки, чтобы убедиться, что ресурсы настроены правильно. Он выводит все известные ресурсы, внедренные в заданную сборку, на панели **Ошибки** , чтобы облегчить отладку проблем с загрузкой ресурсов.
 
 ```csharp
 using System.Reflection;

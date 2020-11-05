@@ -10,16 +10,16 @@ ms.date: 04/12/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 911365b6293fecd3bf309f3e61d9b232d90b7a13
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: e26e4b66cfc9648eee3c1caab2f8cdc0c02d5c7b
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556559"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374567"
 ---
 # <a name="matrix-transforms-in-skiasharp"></a>Преобразования матрицы в SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Подробное рассмотрение SkiaSharp преобразований с помощью универсальной матрицы преобразования_
 

@@ -10,16 +10,16 @@ ms.date: 03/05/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a9eacc76fb3da6296039a713e15c4eaa30828d44
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 9cb48c5ddca6f5e6f6aeba76d27d9cd2c95dd450
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560966"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373683"
 ---
 # <a name="searchbar-style-on-ios"></a>Стиль Сеарчбар в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Этот элемент управления, относящийся к платформе iOS, определяет, [`SearchBar`](xref:Xamarin.Forms.SearchBar) имеет ли он фон. Он используется в XAML путем задания `SearchBar.SearchBarStyle` свойству BIND значения `UISearchBarStyle` перечисления.
 

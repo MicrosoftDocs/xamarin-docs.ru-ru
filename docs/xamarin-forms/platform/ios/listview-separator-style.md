@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fe9a93e8e5a35df98587efc0dc3ad6192653d173
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 527ae4eee614e1b3c6225c6cd2b220030faa7f3e
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563709"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372487"
 ---
 # <a name="listview-separator-style-on-ios"></a>Стиль разделителя ListView в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS определяет, использует ли разделитель ячеек в пределах [`ListView`](xref:Xamarin.Forms.ListView) всей ширины `ListView` . Он используется в XAML путем присвоения [`ListView.SeparatorStyle`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SeparatorStyleProperty) свойству присоединенного свойства значения [`SeparatorStyle`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle) перечисления:
 
@@ -51,7 +51,7 @@ listView.On<iOS>().SetSeparatorStyle(SeparatorStyle.FullWidth);
 
 В результате заданное [`SeparatorStyle`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle) значение применяется к элементу [`ListView`](xref:Xamarin.Forms.ListView) , который управляет шириной разделителя ячеек.
 
-![ListView Сепараторстиле для конкретной платформы](listview-separator-style-images/listview-separatorstyle.png)
+![Platform-Specific ListView Сепараторстиле](listview-separator-style-images/listview-separatorstyle.png)
 
 > [!NOTE]
 > После того как для стиля разделителя задано значение `FullWidth` , его нельзя изменить обратно `Default` во время выполнения.

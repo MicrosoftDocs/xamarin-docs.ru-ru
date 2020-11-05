@@ -10,18 +10,18 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8c6d139e47974247ce4af6bfa6c32331fcf7c824
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 92bcdd2c86387f229b9acf066456985c4a7ad514
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563137"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373670"
 ---
 # <a name="skiasharp-bitmap-tiling"></a>Разбиение растрового изображения SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/catclock)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/catclock)
 
 Как видно в двух предыдущих статьях, [`SKShader`](xref:SkiaSharp.SKShader) класс может создавать линейные или кольцевые градиенты. В этой статье основное внимание уделяется `SKShader` объекту, который использует точечный рисунок для мозаичного заполнения области. Точечный рисунок может повторяться горизонтально и вертикально, либо в исходной ориентации, либо в альтернативном направлении по горизонтали и вертикали. Зеркальное отображение позволяет избежать небесперебойности между плитками:
 
@@ -369,7 +369,7 @@ SKMatrix.PostConcat(ref matrix, SKMatrix.MakeRotationDegrees(15));
 
 В разделе [**Выравнивание мозаики**](#tile-alignment)раздела вы увидите пример преобразования Преобразование, примененного к шейдеру.
 
-Пример автономного типа данных [**Cat**](/samples/xamarin/xamarin-forms-samples/catclock) (не часть **скиашарпформсдемос**) имитирует фон в виде мозаичного изображения, основанного на этом битовом рисунке размером 240 пикселей.
+Пример автономного типа данных [**Cat**](/samples/xamarin/xamarin-forms-samples/catclock) (не часть **скиашарпформсдемос** ) имитирует фон в виде мозаичного изображения, основанного на этом битовом рисунке размером 240 пикселей.
 
 ![Деревянное зерно](bitmap-tiling-images/WoodGrain.png "Деревянное зерно")
 
@@ -655,7 +655,7 @@ public class ChainLinkFencePage : ContentPage
 
 Обратите внимание, что шейдер поворачивается в 45 градусов, поэтому он ориентирован как реальная огражденная цепочка связей:
 
-[![Ограждение связи между цепочкой](bitmap-tiling-images/ChainLinkFence.png "Ограждение связи между цепочкой")](bitmap-tiling-images/ChainLinkFence-Large.png#lightbox)
+[![Ограждение связи между цепочкой](bitmap-tiling-images/ChainLinkFence.png "Chain-Link ограждение")](bitmap-tiling-images/ChainLinkFence-Large.png#lightbox)
 
 ## <a name="animating-bitmap-tiles"></a>Анимация плиток с растровыми изображениями
 

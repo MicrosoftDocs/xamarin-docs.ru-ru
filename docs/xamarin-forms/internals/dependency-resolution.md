@@ -10,16 +10,16 @@ ms.date: 07/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6d4c9be2166881824e798e9cb801a5720ab55178
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 58210aaaa7c017c50ba3e2aee3e8402c1b76be16
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557860"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373930"
 ---
 # <a name="dependency-resolution-in-no-locxamarinforms"></a>Разрешение зависимостей в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-dicontainerdemo)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-dicontainerdemo)
 
 _В этой статье объясняется, как внедрить метод разрешения зависимостей в Xamarin.Forms , чтобы контейнер внедрения зависимостей приложения получил контроль над созданием и временем существования пользовательских модулей подготовки отчетов, эффектов и реализаций DependencyService. Примеры кода в этой статье взяты из примера [разрешения зависимостей с помощью контейнеров](/samples/xamarin/xamarin-forms-samples/advanced-dependencyresolution-dicontainerdemo) ._
 

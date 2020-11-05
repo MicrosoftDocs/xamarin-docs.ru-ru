@@ -10,16 +10,16 @@ ms.date: 08/27/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 827b5618dce019e2dedb773f270fe1090da5d616
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 2a9291a56ffa1a05f8e2041033279363f8ec4d34
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562513"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374151"
 ---
 # <a name="skiasharp-mask-filters"></a>Фильтры маски SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Фильтры маски — это эффекты, управляющие геометрией и альфа-каналом графических объектов. Чтобы использовать фильтр маски, задайте [`MaskFilter`](xref:SkiaSharp.SKPaint.MaskFilter) `SKPaint` для свойства объекта тип [`SKMaskFilter`](xref:SkiaSharp.SKMaskFilter) , который вы создали, вызвав один из `SKMaskFilter` статических методов.
 

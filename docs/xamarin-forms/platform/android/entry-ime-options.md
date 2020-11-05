@@ -10,16 +10,16 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 308b0aa56afdbdbd0ac1e918eefd72b1edb4f338
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 79ceca6f028ec5d0399251e178d82d1b2fff81ef
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563826"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373345"
 ---
 # <a name="entry-input-method-editor-options-on-android"></a>Параметры редактора метода ввода для Android
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа Android определяет параметры редактора метода ввода (IME) для экранной клавиатуры для [`Entry`](xref:Xamarin.Forms.Entry) . Это включает в себя настройку кнопки действия пользователя в нижнем углу экранной клавиатуры и взаимодействие с `Entry` . Он используется в XAML путем присвоения [`Entry.ImeOptions`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Entry.ImeOptionsProperty) свойству присоединенного свойства значения [`ImeFlags`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags) перечисления:
 

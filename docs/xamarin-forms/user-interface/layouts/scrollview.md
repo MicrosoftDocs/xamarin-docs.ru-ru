@@ -10,16 +10,16 @@ ms.date: 05/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: af8513d86b7cf02ec7adcee75241d8ce99e2dfab
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: f59d58ed582b3fd6fd5cc25b08bbf1c262d602b4
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556832"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372691"
 ---
 # <a name="no-locxamarinforms-scrollview"></a>Xamarin.Forms скроллвиев
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-scrollviewdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-scrollviewdemos)
 
 [![::: No-Loc (Xamarin. Forms)::: Скроллвиев](scrollview-images/layouts.png "::: No-Loc (Xamarin. Forms)::: Скроллвиев")](scrollview-images/layouts-large.png#lightbox "::: No-Loc (Xamarin. Forms)::: Скроллвиев")
 
@@ -203,7 +203,7 @@ public class BlackCatPageCS : ContentPage
 }
 ```
 
-## <a name="orientation"></a>Ориентация
+## <a name="orientation"></a>Orientation
 
 [`ScrollView`](xref:Xamarin.Forms.ScrollView) имеет [`Orientation`](xref:Xamarin.Forms.ScrollView.Orientation) свойство, представляющее направление прокрутки объекта `ScrollView` . Это свойство имеет тип [`ScrollOrientation`](xref:Xamarin.Forms.ScrollOrientation) , который определяет следующие члены:
 

@@ -10,16 +10,16 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a62d8f8e04d97b45fff779739d817defce1414f2
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 3b73aabd184060e273d7a1e3e20f6e78eb0ba0d1
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556871"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373553"
 ---
 # <a name="bitmap-basics-in-skiasharp"></a>Основы точечного рисунка в SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Загрузка растровых изображений из различных источников и их отображение._
 
@@ -104,7 +104,7 @@ protected override async void OnAppearing()
 
 ## <a name="loading-a-bitmap-resource"></a>Загрузка ресурса точечного рисунка
 
-С точки зрения кода самым простым подходом к загрузке точечных рисунков является включение ресурса точечного рисунка непосредственно в приложение. Программа **скиашарпформсдемос** включает папку с именем **Media** , содержащую несколько файлов точечных рисунков, включая один с именем **monkey.png**. Для точечных рисунков, хранящихся как ресурсы программы, необходимо использовать диалоговое окно **свойств** , чтобы дать файлу **действие сборки** **внедренного ресурса**!
+С точки зрения кода самым простым подходом к загрузке точечных рисунков является включение ресурса точечного рисунка непосредственно в приложение. Программа **скиашарпформсдемос** включает папку с именем **Media** , содержащую несколько файлов точечных рисунков, включая один с именем **monkey.png**. Для точечных рисунков, хранящихся как ресурсы программы, необходимо использовать диалоговое окно **свойств** , чтобы дать файлу **действие сборки** **внедренного ресурса** !
 
 Каждый внедренный ресурс имеет *идентификатор ресурса* , состоящий из имени проекта, папки и имени файла, Соединенных точками: **SkiaSharpFormsDemos.Media.monkey.png**. Доступ к этому ресурсу можно получить, указав идентификатор ресурса в качестве аргумента [`GetManifestResourceStream`](xref:System.Reflection.Assembly.GetManifestResourceStream(System.String)) метода [`Assembly`](xref:System.Reflection.Assembly) класса:
 

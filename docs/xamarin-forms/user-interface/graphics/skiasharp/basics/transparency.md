@@ -10,16 +10,16 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: af1747a19af6c715d1594122393e500d1f73c79b
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 837d58508c3f5b14c4c36a867a2aa974a5bf397c
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562526"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374320"
 ---
 # <a name="skiasharp-transparency"></a>Прозрачность SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Как вы видели, [`SKPaint`](xref:SkiaSharp.SKPaint) класс включает [`Color`](xref:SkiaSharp.SKPaint.Color) свойство типа [`SKColor`](xref:SkiaSharp.SKColor) . `SKColor` включает альфа-канал, поэтому все цвета со `SKColor` значением могут быть частично прозрачными. 
 

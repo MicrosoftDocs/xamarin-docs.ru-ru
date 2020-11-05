@@ -10,16 +10,16 @@ ms.date: 01/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: df2cf99ef0ea1fcbb1b52dda7abb6c8cfdd2d2e7
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: f50dde4bb96f43c6487cb40889746514f23d9d44
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561538"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374086"
 ---
 # <a name="no-locxamarinforms-bindable-properties"></a>Xamarin.Forms Привязываемые свойства
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior)
 
 Привязываемые свойства расширяют функциональные возможности свойства CLR путем резервного копирования свойства с [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) типом, а не для резервного копирования свойства с полем. Назначение свойств, допускающих привязку, заключается в предоставлении системы свойств, поддерживающей привязку данных, стили, шаблоны и значения, заданные с помощью связей типа «родители-потомки». Кроме того, привязываемые свойства могут предоставлять значения по умолчанию, проверку значений свойств и обратные вызовы, которые отслеживают изменения свойств.
 

@@ -10,18 +10,18 @@ ms.date: 07/02/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 37ee7fe2278176024dc1662b87b494e84344b98c
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: e8e41ef3b17c253132668ac7be5ed448695f3685
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91558964"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373865"
 ---
 # <a name="no-locxamarinforms-shapes-path-transforms"></a>Xamarin.Forms Фигуры: преобразования пути
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
 `Transform`Определяет способ преобразования `Path` объекта из одного пространства координат в другое пространство координат. При применении преобразования к `Path` объекту он изменяет способ отрисовки объекта в пользовательском интерфейсе.
 
@@ -332,7 +332,7 @@ Xamarin.Forms имеет два класса, которые поддержив�
         OffsetY
     :::column-end:::
     :::column:::
-        1,0
+        1.0
     :::column-end:::
 :::row-end:::
 

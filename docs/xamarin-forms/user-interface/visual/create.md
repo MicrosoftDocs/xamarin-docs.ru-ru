@@ -10,16 +10,16 @@ ms.date: 03/12/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a8e8388a6a460b3a2958d3ab3b9a4c9c34ea1831
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 3cf29c550a6ef3e4f12bdc3a1525d33b53198220
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556468"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374398"
 ---
 # <a name="create-a-no-locxamarinforms-visual-renderer"></a>Создание Xamarin.Forms визуального модуля подготовки отчетов
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-visualdemos)
 
 Xamarin.Forms Визуальный элемент позволяет создавать модули подготовки отчетов и выборочно применять их к [`VisualElement`](xref:Xamarin.Forms.VisualElement) объектам, не прибегая к Xamarin.Forms представлениям подкласс. Модуль подготовки отчетов, указывающий `IVisual` тип (как часть его `ExportRendererAttribute` ), будет использоваться для визуализации входящих в представления, а не для модуля подготовки к просмотру по умолчанию. Во время выбора модуля визуализации `Visual` свойство представления проверяется и включается в процесс выбора модуля подготовки отчетов.
 

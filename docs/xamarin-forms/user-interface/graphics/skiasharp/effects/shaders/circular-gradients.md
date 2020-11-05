@@ -10,16 +10,16 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ec84ac906ac146f37ba5b161a898582ce483bc95
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: db2baea124f013d3b35451e62bd67c32dcebc470
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556676"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373605"
 ---
 # <a name="the-skiasharp-circular-gradients"></a>Круговые градиенты SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 [`SKShader`](xref:SkiaSharp.SKShader)Класс определяет статические методы для создания четырех различных типов градиентов. В статье о [**линейном градиенте SkiaSharp**](linear-gradient.md) обсуждается [`CreateLinearGradient`](xref:SkiaSharp.SKShader.CreateLinearGradient*) метод. В этой статье описываются другие три типа градиентов, все из которых основаны на кругах.
 
@@ -215,7 +215,7 @@ public class RainbowArcGradientPage : ContentPage
 
 ## <a name="radial-gradients-for-masking"></a>Радиальные градиенты для маскирования
 
-Как и линейные градиенты, радиальные градиенты могут включать прозрачные или частично прозрачные цвета. Эта функция полезна для процесса, называемого _маскированием_, который скрывает часть изображения для акцентирования другой части изображения.
+Как и линейные градиенты, радиальные градиенты могут включать прозрачные или частично прозрачные цвета. Эта функция полезна для процесса, называемого _маскированием_ , который скрывает часть изображения для акцентирования другой части изображения.
 
 Пример показан на странице **маски радиального градиента** . Программа загружает один из битовых рисунков ресурсов. `CENTER`Поля и `RADIUS` были определены с помощью проверки растрового изображения и ссылаются на область, которую следует выделить. `PaintSurface`Обработчик начинает с вычисления прямоугольника для отображения точечного рисунка, а затем отображает его в этом прямоугольнике:
 
@@ -285,7 +285,7 @@ public class RadialGradientMaskPage : ContentPage
 
 [![Маска радиального градиента](circular-gradients-images/RadialGradientMask.png "Маска радиального градиента")](circular-gradients-images/RadialGradientMask-Large.png#lightbox)
 
-Этот подход не является лучшим способом маскирования растрового изображения. Проблема заключается в том, что маска в основном имеет цвет белого цвета, который был выбран в соответствии с фоном холста. Если фон является другим цветом &mdash; или, возможно, &mdash; он не соответствует самому градиенту. Лучший подход к маскировке показан в статье [SkiaSharp Портер-Дуфф Blend modes](../blend-modes/porter-duff.md).
+Этот подход не является лучшим способом маскирования растрового изображения. Проблема заключается в том, что маска в основном имеет цвет белого цвета, который был выбран в соответствии с фоном холста. Если фон является другим цветом &mdash; или, возможно, &mdash; он не соответствует самому градиенту. Более эффективный подход к маскировке показан в статье [SkiaSharp Porter-Duff режимах смешения](../blend-modes/porter-duff.md).
 
 ## <a name="radial-gradients-for-specular-highlights"></a>Радиальные градиенты для отраженных светов
 

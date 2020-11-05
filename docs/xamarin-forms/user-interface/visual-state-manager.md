@@ -11,16 +11,16 @@ ms.date: 05/19/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7e59cddbe9192f29ca1636c567131aad60157066
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: f1ceadb6d7985f5d448fe729a42e0cf0a3d5d6f6
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556585"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374476"
 ---
 # <a name="no-locxamarinforms-visual-state-manager"></a>Xamarin.Forms Диспетчер визуальных состояний
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-vsmdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-vsmdemos)
 
 _Используйте Диспетчер визуальных состояний для внесения изменений в элементы XAML на основе визуальных состояний, заданных из кода._
 
@@ -408,7 +408,7 @@ Xamarin.FormsДиспетчер визуальных состояний опре
 
 В следующей таблице перечислены визуальные состояния, определенные в Xamarin.Forms .
 
-| Class | Состояния | Дополнительные сведения |
+| Класс | Состояния | Дополнительные сведения |
 | ----- | ------ | ---------------- |
 | `Button` | `Pressed` | [Визуальные состояния кнопки](~/xamarin-forms/user-interface/button.md#button-visual-states) |
 | `CheckBox` | `IsChecked` | [Визуальные состояния флажка](~/xamarin-forms/user-interface/checkbox.md#checkbox-visual-states) |

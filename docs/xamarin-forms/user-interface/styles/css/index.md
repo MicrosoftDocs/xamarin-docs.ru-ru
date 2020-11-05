@@ -11,16 +11,16 @@ ms.date: 07/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 39a6dbcbd5e825c6630bfb60b61bf00a308fdc0e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 656a9dbec5f0520b4167c482b227ea863eb4c412
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562786"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373540"
 ---
 # <a name="styling-no-locxamarinforms-apps-using-cascading-style-sheets-css"></a>Применение стилей к Xamarin.Forms приложениям с помощью каскадные таблицы стилей (CSS)
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-monkeyappcss)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-styles-monkeyappcss)
 
 _Xamarin.Forms поддерживает визуальные элементы стилизации с помощью каскадные таблицы стилей (CSS)._
 
@@ -114,7 +114,7 @@ stacklayout>image {
 [`StyleSheet.Source`](xref:Xamarin.Forms.Xaml.StyleSheetExtension.Source)Свойство определяет таблицу стилей как URI относительно расположения включающего XAML-файла или относительно корневого каталога проекта, если URI начинается с `/` .
 
 > [!WARNING]
-> Если для действия сборки не задано значение  **EmbeddedResource**, Загрузка CSS-файла будет невозможна.
+> Если для действия сборки не задано значение  **EmbeddedResource** , Загрузка CSS-файла будет невозможна.
 
 Кроме того, таблицу стилей можно загрузить и проанализировать с помощью [`StyleSheet`](xref:Xamarin.Forms.StyleSheets.StyleSheet) класса перед добавлением в [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) , выполнив встраивание в `CDATA` раздел.
 
@@ -363,7 +363,7 @@ stacklayout>image {
 
 ## <a name="property-reference"></a>Справочные данные по свойствам
 
-Следующие свойства CSS поддерживаются Xamarin.Forms (в столбце **значения** типы имеют _курсив_, а строковые литералы `gray` ):
+Следующие свойства CSS поддерживаются Xamarin.Forms (в столбце **значения** типы имеют _курсив_ , а строковые литералы `gray` ):
 
 |Свойство|Применяется к|Значения|Пример|
 |---|---|---|---|
@@ -371,7 +371,7 @@ stacklayout>image {
 |`align-items`|`FlexLayout`| `stretch` \| `center` \| `start` \| `end` \| `flex-start` \| `flex-end` \| `initial` |`align-items: flex-start;`|
 |`align-self`|`VisualElement`| `auto` \| `stretch` \| `center` \| `start` \| `end` \| `flex-start` \| `flex-end` \| `initial`|`align-self: flex-end;`|
 |`background-color`|`VisualElement`|_цветовая палитра_ \|`initial` |`background-color: springgreen;`|
-|`background-image`|`Page`|_строка_ \| `initial` |`background-image: bg.png;`|
+|`background-image`|`Page`|_строка_ \|`initial` |`background-image: bg.png;`|
 |`border-color`|`Button`, `Frame`, `ImageButton`|_цветовая палитра_ \|`initial`|`border-color: #9acd32;`|
 |`border-radius`|`BoxView`, `Button`, `Frame`, `ImageButton`|_Double_ \|`initial` |`border-radius: 10;`|
 |`border-width`|`Button`, `ImageButton`|_Double_ \|`initial` |`border-width: .5;`|
@@ -383,7 +383,7 @@ stacklayout>image {
 |`flex-grow`|`VisualElement`|с _плавающей запятой_ \|`initial`|`flex-grow: 1.5;`|
 |`flex-shrink`|`VisualElement`|с _плавающей запятой_ \|`initial`|`flex-shrink: 1;`|
 |`flex-wrap`|`VisualElement`| `nowrap` \| `wrap` \| `reverse` \| `wrap-reverse` \| `initial`|`flex-wrap: wrap-reverse;`|
-|`font-family`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_строка_ \| `initial` |`font-family: Consolas;`|
+|`font-family`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_строка_ \|`initial` |`font-family: Consolas;`|
 |`font-size`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|_Double_ \| _намедсизе_ \|  `initial` |`font-size: 12;`|
 |`font-style`|`Button`, `DatePicker`, `Editor`, `Entry`, `Label`, `Picker`, `SearchBar`, `TimePicker`, `Span`|`bold` \| `italic` \| `initial` |`font-style: bold;`|
 |`height`|`VisualElement`|_Double_ \|`initial` |`min-height: 250;`|
@@ -395,11 +395,11 @@ stacklayout>image {
 |`margin-top`|`View`|_толщина_ \|`initial` |`margin-top: 2;`|
 |`margin-right`|`View`|_толщина_ \|`initial` |`margin-right: 1;`|
 |`margin-bottom`|`View`|_толщина_ \|`initial` |`margin-bottom: 6;`|
-|`max-lines`|`Label`|_int_ \| `initial`|`max-lines: 2;`|
+|`max-lines`|`Label`|_INT_ \| `initial`|`max-lines: 2;`|
 |`min-height`|`VisualElement`|_Double_ \|`initial` |`min-height: 50;`|
 |`min-width`|`VisualElement`|_Double_ \|`initial` |`min-width: 112;`|
 |`opacity`|`VisualElement`|_Double_ \|`initial` |`opacity: .3;`|
-|`order`|`VisualElement`|_int_ \| `initial`|`order: -1;`|
+|`order`|`VisualElement`|_INT_ \| `initial`|`order: -1;`|
 |`padding`|`Button`, `ImageButton`, `Layout`, `Page`|_толщина_ \|`initial` |`padding: 6 12 12;`|
 |`padding-left`|`Button`, `ImageButton`, `Layout`, `Page`|_Double_ \|`initial`|`padding-left: 3;`|
 |`padding-top`|`Button`, `ImageButton`, `Layout`, `Page`| _Double_ \|`initial` |`padding-top: 4;`|
@@ -411,7 +411,7 @@ stacklayout>image {
 |`text-decoration`|`Label`, `Span`|`none` \| `underline` \| `strikethrough` \| `line-through` \| `initial`|`text-decoration: underline, line-through;`|
 |`text-transform`|`Button`,`Editor`, `Entry`, `Label`, `SearchBar`, `SearchHandler`|`none` \| `default` \| `uppercase` \| `lowercase` \| `initial` |`text-transform: uppercase;`|
 |`transform`|`VisualElement`| `none`, `rotate`, `rotateX`, `rotateY`, `scale`, `scaleX`, `scaleY`, `translate`, `translateX`, `translateY`, `initial` |`transform: rotate(180), scaleX(2.5);`|
-|`transform-origin`|`VisualElement`| _Double_, _Double_ \|`initial` |`transform-origin: 7.5, 12.5;`|
+|`transform-origin`|`VisualElement`| _Double_ , _Double_ \|`initial` |`transform-origin: 7.5, 12.5;`|
 |`vertical-align`|`Label`|`left` \| `top` \| `right` \| `bottom` \| `start` \| `center` \| `middle` \| `end` \| `initial`|`vertical-align: bottom;`|
 |`visibility`|`VisualElement`|`true` \| `visible` \| `false` \| `hidden` \| `collapse` \| `initial`|`visibility: hidden;`|
 |`width`|`VisualElement`|_Double_ \|`initial`|`min-width: 320;`|
@@ -431,14 +431,14 @@ stacklayout>image {
 
 ### <a name="no-locxamarinforms-specific-properties"></a>Xamarin.Forms определенные свойства
 
-Xamarin.FormsТакже поддерживаются следующие конкретные свойства CSS (в столбце **значения** типы имеют _курсив_, а строковые литералы `gray` ):
+Xamarin.FormsТакже поддерживаются следующие конкретные свойства CSS (в столбце **значения** типы имеют _курсив_ , а строковые литералы `gray` ):
 
 |Свойство|Применяется к|Значения|Пример|
 |---|---|---|---|
 |`-xf-bar-background-color`|`NavigationPage`, `TabbedPage`|_цветовая палитра_ \|`initial` |`-xf-bar-background-color: teal;`|
 |`-xf-bar-text-color`|`NavigationPage`, `TabbedPage`|_цветовая палитра_ \|`initial` |`-xf-bar-text-color: gray`|
 |`-xf-horizontal-scroll-bar-visibility`|`ScrollView`| `default` \| `always` \| `never` \| `initial` |`-xf-horizontal-scroll-bar-visibility: never;`|
-|`-xf-max-length`|`Entry`, `Editor`, `SearchBar`|_int_ \| `initial` |`-xf-max-length: 20;`|
+|`-xf-max-length`|`Entry`, `Editor`, `SearchBar`|_INT_ \| `initial` |`-xf-max-length: 20;`|
 |`-xf-max-track-color`|`Slider`|_цветовая палитра_ \|`initial` |`-xf-max-track-color: red;`|
 |`-xf-min-track-color`|`Slider`|_цветовая палитра_ \|`initial` |`-xf-min-track-color: yellow;`|
 |`-xf-orientation`|`ScrollView`, `StackLayout`| `horizontal` \| `vertical` \| `both` \| `initial`. `both` поддерживается только в `ScrollView` . |`-xf-orientation: horizontal;`|
@@ -448,11 +448,11 @@ Xamarin.FormsТакже поддерживаются следующие конк
 |`-xf-thumb-color`|`Slider`, `Switch`|_цветовая палитра_ \|`initial` |`-xf-thumb-color: limegreen;`|
 |`-xf-vertical-scroll-bar-visibility`|`ScrollView`| `default` \| `always` \| `never` \| `initial` |`-xf-vertical-scroll-bar-visibility: always;`|
 |`-xf-vertical-text-alignment`|`Label`| `start` \| `center` \| `end` \| `initial`|`-xf-vertical-text-alignment: end;`|
-|`-xf-visual`|`VisualElement`|_строка_ \| `initial` |`-xf-visual: material;`|
+|`-xf-visual`|`VisualElement`|_строка_ \|`initial` |`-xf-visual: material;`|
 
 ### <a name="no-locxamarinforms-shell-specific-properties"></a>Xamarin.Forms Свойства оболочки
 
-Xamarin.FormsТакже поддерживаются следующие свойства CSS, относящиеся к оболочке (в столбце **значения** типы имеют _курсив_, а строковые литералы `gray` ):
+Xamarin.FormsТакже поддерживаются следующие свойства CSS, относящиеся к оболочке (в столбце **значения** типы имеют _курсив_ , а строковые литералы `gray` ):
 
 |Свойство|Применяется к|Значения|Пример|
 |---|---|---|---|

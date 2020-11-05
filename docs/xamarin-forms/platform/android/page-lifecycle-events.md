@@ -10,16 +10,16 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d4a8690e7361d58a07f4fbfa7aac8aac839c2ea3
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: af3954df9db94a56e1097b2de0451d6486916fa2
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91564021"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374528"
 ---
 # <a name="page-lifecycle-events-on-android"></a>События жизненного цикла страницы в Android
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа для Android используется для отключения [`Disappearing`](xref:Xamarin.Forms.Page.Appearing) [`Appearing`](xref:Xamarin.Forms.Page.Appearing) событий и события страницы для приостановки и возобновления работы приложений, которые используют AppCompat. Кроме того, он включает возможность управлять отображением экранной клавиатуры при возобновлении, если она отображалась при приостановке при условии, что режим работы экранной клавиатуры установлен в значение [`WindowSoftInputModeAdjust.Resize`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WindowSoftInputModeAdjust.Resize) .
 
@@ -58,7 +58,7 @@ Xamarin.Forms.Application.Current.On<Android>()
 
 В результате [`Disappearing`](xref:Xamarin.Forms.Page.Appearing) [`Appearing`](xref:Xamarin.Forms.Page.Appearing) события и страницы не будут срабатывать при приостановке приложения и возобновлении соответственно, и что если экранная клавиатура отображалась при приостановке приложения, она также будет отображаться при возобновлении работы приложения:
 
-[![События жизненного цикла — специфичные для платформы](page-lifecycle-events-images/keyboard-on-resume.png)](page-lifecycle-events-images/keyboard-on-resume-large.png#lightbox "События жизненного цикла — специфичные для платформы")
+[![События жизненного цикла — специфичные для платформы](page-lifecycle-events-images/keyboard-on-resume.png)](page-lifecycle-events-images/keyboard-on-resume-large.png#lightbox "События жизненного цикла Platform-Specific")
 
 ## <a name="related-links"></a>Связанные ссылки
 

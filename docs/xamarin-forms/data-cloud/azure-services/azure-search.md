@@ -10,16 +10,16 @@ ms.date: 12/05/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 14d26c1360c1c1b7997598ef1263e3dd62e3c013
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 487ff8114a36212c1e7d413cc9bd1f4f2c016faa
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561785"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374437"
 ---
 # <a name="search-data-with-azure-search-and-no-locxamarinforms"></a>Поиск данных с помощью поиска Azure и Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-azuresearch)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/webservices-azuresearch)
 
 _Поиск Azure — это облачная служба, которая предоставляет возможности индексирования и запросов для отправленных данных. При этом удаляются требования к инфраструктуре и сложные алгоритмы поиска, которые традиционно связаны с реализацией функции поиска в приложении. В этой статье показано, как использовать библиотеку поиска Microsoft Azure для интеграции службы поиска Azure в Xamarin.Forms приложение._
 

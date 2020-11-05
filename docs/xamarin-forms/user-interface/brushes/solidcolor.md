@@ -10,18 +10,18 @@ ms.date: 07/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3c3caf064ca550086f8e7924786ac8bcaf1badfc
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 3260f934eb3cfe147b218b65e981928a4683555e
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556286"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372708"
 ---
 # <a name="no-locxamarinforms-brushes-solid-colors"></a>Xamarin.Forms Кисти: сплошные цвета
 
 ![Предварительный просмотр API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
 
 `SolidColorBrush`Класс является производным от `Brush` класса и используется для заливки области сплошным цветом. Существует множество подходов к указанию цвета `SolidColorBrush` . Например, можно указать его цвет со [`Color`](xref:Xamarin.Forms.Color) значением или с помощью одного из предопределенных `SolidColorBrush` объектов, предоставляемых `Brush` классом.
 

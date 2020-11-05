@@ -10,16 +10,16 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fba8dcb344f79c21815a58cff0d8132967381cca
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 6534d25e46ecdd5fcdcd9c525aa49b8e2ded5f49
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556741"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374216"
 ---
 # <a name="no-locxamarinforms-button"></a>Xamarin.Forms Переключатель
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-buttondemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-buttondemos)
 
 _Кнопка реагирует на касание или щелчок, которое направляет приложение для выполнения определенной задачи._
 
@@ -59,7 +59,7 @@ _Кнопка реагирует на касание или щелчок, кот
 
 По умолчанию `Button` является прямоугольным, но можно передать скругленные углы с помощью [`CornerRadius`](xref:Xamarin.Forms.Button.CornerRadius) свойства, как описано ниже в разделе « [**внешний вид кнопки**](#button-appearance)раздела».
 
-[`Text`](xref:Xamarin.Forms.Button.Text)Свойство задает текст, отображаемый в `Button` . [`Clicked`](xref:Xamarin.Forms.Button.Clicked)Для события задается обработчик событий с именем `OnButtonClicked` . Этот обработчик находится в файле кода программной части **BasicButtonClickPage.XAML.CS**:
+[`Text`](xref:Xamarin.Forms.Button.Text)Свойство задает текст, отображаемый в `Button` . [`Clicked`](xref:Xamarin.Forms.Button.Clicked)Для события задается обработчик событий с именем `OnButtonClicked` . Этот обработчик находится в файле кода программной части **BasicButtonClickPage.XAML.CS** :
 
 ```csharp
 public partial class BasicButtonClickPage : ContentPage
@@ -133,7 +133,7 @@ public class CodeButtonClickPage : ContentPage
 button.Clicked += async (sender, args) => await label.RelRotateTo(360, 1000);
 ```
 
-Разумеется, можно также определить обработчик событий как отдельный метод (точно так же, как `OnButtonClick` метод при **нажатии кнопки Basic**) и присоединить этот метод к событию:
+Разумеется, можно также определить обработчик событий как отдельный метод (точно так же, как `OnButtonClick` метод при **нажатии кнопки Basic** ) и присоединить этот метод к событию:
 
 ```csharp
 button.Clicked += OnButtonClicked;
@@ -631,7 +631,7 @@ class ToggleButton : Button
 
 `ToggleButton`Конструктор присоединяет обработчик к `Clicked` событию, чтобы он мог изменить значение `IsToggled` Свойства. `OnIsToggledChanged`Метод запускает `Toggled` событие.
 
-Последняя строка `OnIsToggledChanged` метода вызывает статический `VisualStateManager.GoToState` метод с двумя текстовыми строками «тоггледон» и «тоггледофф». Вы можете прочитать об этом методе и о том, как приложение может реагировать на визуальные состояния в статье [** Xamarin.Forms Диспетчер визуальных состояний**](~/xamarin-forms/user-interface/visual-state-manager.md).
+Последняя строка `OnIsToggledChanged` метода вызывает статический `VisualStateManager.GoToState` метод с двумя текстовыми строками «тоггледон» и «тоггледофф». Вы можете прочитать об этом методе и о том, как приложение может реагировать на визуальные состояния в статье [**Xamarin.Forms Диспетчер визуальных состояний**](~/xamarin-forms/user-interface/visual-state-manager.md).
 
 Поскольку вызывает `ToggleButton` `VisualStateManager.GoToState` класс, ему не нужно включать дополнительные средства для изменения внешнего вида кнопки в зависимости от ее `IsToggled` состояния. Это несет ответственность за XAML, в котором размещается `ToggleButton` .
 

@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5bea8b58d8b80ced97856fc7c981afdd5c2102a7
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: f1baf5d71cc25a1f84ff683e9d0072f34715c0da
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562409"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373241"
 ---
 # <a name="simultaneous-pan-gesture-recognition-on-ios"></a>Одновременный распознавание жестов панорамирования в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 При [`PanGestureRecognizer`](xref:Xamarin.Forms.PanGestureRecognizer) присоединении к представлению в прокручиваемом представлении все жесты сдвига фиксируются `PanGestureRecognizer` и не передаются в представление прокрутки. Таким образом, представление прокрутки больше не будет прокручиваться.
 

@@ -10,16 +10,16 @@ ms.date: 08/19/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e34144f253b19796ea6ec83cb3873fe373aeb914
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: aec9f0ec0b3092a5f84f183fb90cfc8bc9da7324
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560615"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374229"
 ---
 # <a name="no-locxamarinforms-in-xamarin-native-projects"></a>Xamarin.Forms в проектах Xamarin Native
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/native2forms)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/native2forms)
 
 Как правило, Xamarin.Forms приложение включает одну или несколько страниц, производных от [`ContentPage`](xref:Xamarin.Forms.ContentPage) , и эти страницы совместно используются всеми платформами в проекте .NET Standard библиотеки или в общем проекте. Однако собственные формы позволяют `ContentPage` добавлять страницы, производные от, непосредственно в собственные приложения Xamarin. iOS, Xamarin. Android и UWP. По сравнению с `ContentPage` созданием собственных страниц, производных от использования в проекте .NET Standard проекта библиотеки или общего проекта, преимущество добавления страниц непосредственно в собственные проекты заключается в том, что эти страницы можно расширить с помощью собственных представлений. Собственные представления могут называться в XAML с помощью `x:Name` и ссылаться на них из кода программной части. Дополнительные сведения о собственных представлениях см. в разделе [собственные представления](~/xamarin-forms/platform/native-views/index.md).
 
@@ -27,7 +27,7 @@ ms.locfileid: "91560615"
 
 1. Добавьте Xamarin.Forms пакет NuGet в собственный проект.
 1. Добавьте [`ContentPage`](xref:Xamarin.Forms.ContentPage) производную страницу и все зависимости в собственный проект.
-1. Вызовите метод `Forms.Init` .
+1. Вызовите метод `Forms.Init`.
 1. Создайте экземпляр страницы, производной от класса, [`ContentPage`](xref:Xamarin.Forms.ContentPage) и преобразуйте ее в соответствующий собственный тип с помощью одного из следующих методов расширения: `CreateViewController` для iOS, `CreateSupportFragment` для Android или `CreateFrameworkElement` для UWP.
 1. Перейдите к представлению собственного типа для [`ContentPage`](xref:Xamarin.Forms.ContentPage) страницы, производной от, с помощью собственного API навигации.
 

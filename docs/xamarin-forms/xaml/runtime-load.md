@@ -10,20 +10,20 @@ ms.date: 12/12/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 071a7de630d7d7b7582e3c9fa8906919e92d1fb5
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c027ef35462e6d2d43acf4ea5241a38abe15d41f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562006"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374281"
 ---
 # <a name="loading-xaml-at-runtime-in-no-locxamarinforms"></a>Загрузка XAML во время выполнения в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xaml-loadruntimexaml)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xaml-loadruntimexaml)
 
 [`Xamarin.Forms.Xaml`](xref:Xamarin.Forms.Xaml)Пространство имен содержит два [`LoadFromXaml`](xref:Xamarin.Forms.Xaml.Extensions.LoadFromXaml*) метода расширения, которые можно использовать для загрузки и синтаксического анализа XAML во время выполнения.
 
-## <a name="background"></a>История
+## <a name="background"></a>Историческая справка
 
 При Xamarin.Forms создании класса XAML [`LoadFromXaml`](xref:Xamarin.Forms.Xaml.Extensions.LoadFromXaml*) метод вызывается неявно. Это происходит потому, что файл кода программной части для класса XAML вызывает `InitializeComponent` метод из своего конструктора:
 
@@ -37,7 +37,7 @@ public partial class MainPage : ContentPage
 }
 ```
 
-Когда Visual Studio создает проект, содержащий файл XAML, он анализирует XAML-файл для создания файла кода C# (например, **MainPage.XAML.g.CS**), содержащего определение `InitializeComponent` метода:
+Когда Visual Studio создает проект, содержащий файл XAML, он анализирует XAML-файл для создания файла кода C# (например, **MainPage.XAML.g.CS** ), содержащего определение `InitializeComponent` метода:
 
 ```csharp
 private void InitializeComponent()

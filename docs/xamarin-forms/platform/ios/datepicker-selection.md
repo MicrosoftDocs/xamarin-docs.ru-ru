@@ -10,16 +10,16 @@ ms.date: 01/15/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f8b98d103021864aeb589787224f90bdaed17146
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 8668ef01e7fac02243934f145eb2e3f4ff4a6a8a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563787"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373215"
 ---
 # <a name="datepicker-item-selection-on-ios"></a>Выбор элемента DatePicker в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Элементы управления для конкретных платформ iOS при выборе элементов в [`DatePicker`](xref:Xamarin.Forms.DatePicker) , позволяя пользователю указать, что выбор элементов выполняется при просмотре элементов в элементе управления, или только после нажатия кнопки **done (Готово** ). Он используется в XAML путем присвоения `DatePicker.UpdateMode` свойству присоединенного свойства значения `UpdateMode` перечисления:
 
@@ -66,7 +66,7 @@ switch (datePicker.On<iOS>().UpdateMode())
 
 В результате заданный объект `UpdateMode` применяется к элементу [`DatePicker`](xref:Xamarin.Forms.DatePicker) управления, который управляет тем, когда происходит выбор элементов:
 
-[![Снимок экрана режимов обновления DatePicker](datepicker-selection-images/datepicker-updatemode.png "DatePicker UpdateMode для конкретной платформы")](datepicker-selection-images/datepicker-updatemode-large.png#lightbox "DatePicker UpdateMode для конкретной платформы")
+[![Снимок экрана режимов обновления DatePicker](datepicker-selection-images/datepicker-updatemode.png "Platform-Specific DatePicker UpdateMode")](datepicker-selection-images/datepicker-updatemode-large.png#lightbox "Platform-Specific DatePicker UpdateMode")
 
 ## <a name="related-links"></a>Связанные ссылки
 

@@ -10,16 +10,16 @@ ms.date: 05/21/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f749bda3f0fb10edf8c662ef08c22164087dee47
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: d64f1919bebc1988753a7b6d37c8d31fcb6d84e3
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563748"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373254"
 ---
 # <a name="no-locxamarinforms-layouts"></a>Xamarin.Forms Метка
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/formsgallery)
 
 _Xamarin.Forms Макеты используются для создания элементов управления пользовательского интерфейса в визуальных структурах._
 
@@ -33,7 +33,7 @@ _Xamarin.Forms Макеты используются для создания э�
 
 Эти классы являются производными от класса [`Layout`](xref:Xamarin.Forms.Layout) , который определяет [`Padding`](xref:Xamarin.Forms.Layout.Padding) [`IsClippedToBounds`](xref:Xamarin.Forms.Layout.IsClippedToBounds) Свойства и:
 
-| Тип | Описание: | Внешний вид |
+| Тип | Описание | Внешний вид |
 | --- | --- | --- |
 | `ContentView` | [`ContentView`](xref:Xamarin.Forms.ContentView) содержит один дочерний элемент, заданный [`Content`](xref:Xamarin.Forms.ContentView.Content) свойством. `Content` Свойство может устанавливаться к любому `View` производных продуктов, включая другие `Layout` производные от него. `ContentView` в основном используется в качестве структурного элемента и служит базовым классом для [`Frame`](xref:Xamarin.Forms.Frame) .<br /><br />[Документация по API](xref:Xamarin.Forms.ContentView)  /  [Руководством](~/xamarin-forms/user-interface/layouts/contentview.md)  /  [Пример](/samples/xamarin/xamarin-forms-samples/userinterface-contentviewdemos/) | [![Пример ContentView](layouts-images/ContentView.png "Пример ContentView")](layouts-images/ContentView-Large.png#lightbox "Пример ContentView")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ContentViewDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ContentViewDemoPage.xaml) |
 | `Frame` | [`Frame`](xref:Xamarin.Forms.Frame)Класс является производным от [`ContentView`](xref:Xamarin.Forms.ContentView) и отображает границу (рамку) вокруг ее дочернего элемента. `Frame`Класс имеет значение по умолчанию [`Padding`](xref:Xamarin.Forms.Layout.Padding) 20, а также [`BorderColor`](xref:Xamarin.Forms.Frame.BorderColor) [`CornerRadius`](xref:Xamarin.Forms.Frame.CornerRadius) свойства, и [`HasShadow`](xref:Xamarin.Forms.Frame.HasShadow) .<br /><br />[Документация по API](xref:Xamarin.Forms.Frame)  /  [Руководством](~/xamarin-forms/user-interface/layouts/frame.md)  /  [Пример](/samples/xamarin/xamarin-forms-samples/userinterface-frame/) | [![Пример кадра](layouts-images/Frame.png "Пример кадра")](layouts-images/Frame-Large.png#lightbox "Пример кадра")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/FrameDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/FrameDemoPage.xaml) |
@@ -46,7 +46,7 @@ _Xamarin.Forms Макеты используются для создания э�
 
 Эти классы являются производными от [`Layout<View>`](xref:Xamarin.Forms.Layout`1) :
 
-| Тип | Описание: | Внешний вид |
+| Тип | Описание | Внешний вид |
 | --- | --- | --- |
 | `StackLayout` | [`StackLayout`](xref:Xamarin.Forms.StackLayout) размещает дочерние элементы в стеке по горизонтали или вертикали в зависимости от [`Orientation`](xref:Xamarin.Forms.StackLayout.Orientation) Свойства. [`Spacing`](xref:Xamarin.Forms.StackLayout.Spacing)Свойство регулирует интервал между дочерними элементами и имеет значение по умолчанию 6.<br /><br />[Документация по API](xref:Xamarin.Forms.StackLayout)  /  [Руководством](~/xamarin-forms/user-interface/layouts/stacklayout.md)  /  [Пример](/samples/xamarin/xamarin-forms-samples/userinterface-layout)| [![Пример StackLayout](layouts-images/StackLayout.png "Пример StackLayout")](layouts-images/StackLayout-Large.png#lightbox "Пример StackLayout")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/StackLayoutDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/StackLayoutDemoPage.xaml) |
 | `Grid` | [`Grid`](xref:Xamarin.Forms.Grid) размещает свои дочерние элементы в сетке строк и столбцов. Расположение дочернего элемента указывается с помощью [вложенных свойств](~/xamarin-forms/xaml/attached-properties.md) ,, [`Row`](xref:Xamarin.Forms.Grid.RowProperty) [`Column`](xref:Xamarin.Forms.Grid.ColumnProperty) [`RowSpan`](xref:Xamarin.Forms.Grid.RowSpanProperty) и [`ColumnSpan`](xref:Xamarin.Forms.Grid.ColumnSpanProperty) .<br /><br />[Документация по API](xref:Xamarin.Forms.Grid)  /  [Руководством](~/xamarin-forms/user-interface/layouts/grid.md)  /  [Пример](/samples/xamarin/xamarin-forms-samples/userinterface-layout) | [![Пример сетки](layouts-images/Grid.png "Пример сетки")](layouts-images/Grid-Large.png#lightbox "Пример сетки")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/GridDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/GridDemoPage.xaml) |

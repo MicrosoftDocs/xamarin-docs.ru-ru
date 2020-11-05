@@ -10,22 +10,22 @@ ms.date: 08/08/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 60c58ee17f68a12e3e51170f143adc9dc204e275
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 90d97e690c4d1fcdb22f17bbc856f9f9b2d0900c
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562773"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374658"
 ---
 # <a name="controls-reference"></a>Справочник по элементам управления
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/formsgallery/)
 
 Пользовательский интерфейс Xamarin.Forms приложения состоит из объектов, которые сопоставляются с собственными элементами управления каждой целевой платформы. Это позволяет приложениям для конкретных платформ для iOS, Android и универсальная платформа Windows использовать Xamarin.Forms код, содержащийся в [библиотеке .NET Standard](~/cross-platform/app-fundamentals/net-standard.md).
 
 Ниже приведены четыре основные группы управления, используемые для создания пользовательского интерфейса Xamarin.Forms приложения.
 
-- [**Pages**](pages.md)
+- [**Страницы**](pages.md)
 - [**Макеты**](layouts.md)
 - [**Представления**](views.md)
 - [**Ячейки**](cells.md)

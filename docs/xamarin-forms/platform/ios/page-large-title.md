@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 162683c4fabb0a8b6deed1fb30bd7a7dece1f597
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: cd1271df727b3b37c49f744e0893703b9c2460d5
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562292"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373722"
 ---
 # <a name="large-page-titles-on-ios"></a>Крупные заголовки страниц в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS используется для вывода заголовка страницы в виде большого заголовка панели навигации [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) , для устройств, использующих iOS 11 или более поздней версии. Крупное название выводится по левому краю и использует более крупный шрифт, а переход к стандартному названию происходит по мере того, как пользователь начинает прокручивать содержимое, чтобы эффективное использование экрана было эффективно. Однако в альбомной ориентации заголовок вернется в центр панели навигации, чтобы оптимизировать макет содержимого. Он используется в XAML путем присвоения `NavigationPage.PrefersLargeTitles` свойству присоединенного свойства `boolean` значения:
 
@@ -100,7 +100,7 @@ switch (On<iOS>().LargeTitleDisplay())
 
 В результате заданный объект `LargeTitleDisplayMode` применяется к [`Page`](xref:Xamarin.Forms.Page) , который управляет поведением крупного заголовка:
 
-![Эффект размытия — зависит от платформы](page-large-title-images/large-title.png)
+![Эффект размытия Platform-Specific](page-large-title-images/large-title.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 

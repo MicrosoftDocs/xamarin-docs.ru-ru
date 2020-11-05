@@ -10,16 +10,16 @@ ms.date: 03/23/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2a6e19d25cefb4b8fcd870a9b590f129b2d9d85b
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: eb0c8bd01c9cab8a4048c0ee3deacad7afd56899
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557885"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373899"
 ---
 # <a name="the-rotate-transform"></a>Преобразование циклического сдвига
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Изучите эффекты и анимации, доступные с помощью преобразования «SkiaSharp вращение»_
 
@@ -258,7 +258,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-`revolveDegrees`Поля и `rotateDegrees` являются анимированными. Эта программа использует другой метод анимации на основе Xamarin.Forms [`Animation`](xref:Xamarin.Forms.Animation) класса. (Этот класс описан в [главе 22 о *создании мобильных приложений с помощью Xamarin.Forms * ](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch22-Apr2016.pdf)) `OnAppearing` . переопределение создает два `Animation` объекта с методами обратного вызова и затем вызывает `Commit` их для длительности анимации:
+`revolveDegrees`Поля и `rotateDegrees` являются анимированными. Эта программа использует другой метод анимации на основе Xamarin.Forms [`Animation`](xref:Xamarin.Forms.Animation) класса. (Этот класс описан в [главе 22 о *создании мобильных приложений с помощью Xamarin.Forms*](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch22-Apr2016.pdf)) `OnAppearing` . переопределение создает два `Animation` объекта с методами обратного вызова и затем вызывает `Commit` их для длительности анимации:
 
 ```csharp
 protected override void OnAppearing()

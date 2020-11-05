@@ -10,16 +10,16 @@ ms.date: 05/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 32de64c0fa6b0ec0a0b03c8075710e1cbc92dd49
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 5f48300b6c974bbbb0106f1afaa6c863f8159c58
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557417"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374645"
 ---
 # <a name="three-ways-to-draw-an-arc"></a>Три способа нарисовать дугу
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Узнайте, как использовать SkiaSharp для определения Дуг тремя разными способами._
 
@@ -219,7 +219,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="the-tangent-arc"></a>Дуга касательной
 
-Второй тип дуги, поддерживаемой, `SKPath` — это *дуга*, так что она вызывается, так как дуга является окружностью окружности, которая является тангенсом двух соединенных линий.
+Второй тип дуги, поддерживаемой, `SKPath` — это *дуга* , так что она вызывается, так как дуга является окружностью окружности, которая является тангенсом двух соединенных линий.
 
 Дуга касательно добавляется в путь с вызовом  [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(SkiaSharp.SKPoint,SkiaSharp.SKPoint,System.Single)) метода с двумя `SKPoint` параметрами или [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(System.Single,System.Single,System.Single,System.Single,System.Single)) перегрузкой с отдельными `Single` параметрами для точек:
 
@@ -235,7 +235,7 @@ public void ArcTo (Single x1, Single y1, Single x2, Single y2, Single radius)
 
 - Текущая точка контура или точка (0, 0), если `MoveTo` не был вызван
 - Первый аргумент точки для `ArcTo` метода, называемый *угловой точкой*
-- Второй аргумент точки для `ArcTo` , называемый *конечной точкой*:
+- Второй аргумент точки для `ArcTo` , называемый *конечной точкой* :
 
 ![Три точки, начинающиеся с дуги по касательной](arcs-images/tangentarcthreepoints.png)
 
