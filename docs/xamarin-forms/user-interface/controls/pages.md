@@ -10,16 +10,16 @@ ms.date: 01/12/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9164275b75c021a79b6ea5ea64194997ad804ece
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 2a3540773aec977c6d17592ff6a0ea1e16acc2b9
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563215"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372175"
 ---
 # <a name="no-locxamarinforms-pages"></a>Xamarin.Forms Pages
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/formsgallery/)
 
 _Xamarin.Forms Страницы представляют собой кросс-платформенные экраны мобильных приложений._
 
@@ -27,11 +27,11 @@ _Xamarin.Forms Страницы представляют собой кросс-�
 
 [![::: No-Loc (Xamarin. Forms)::: типы страниц](pages-images/pages-sml.png)](pages-images/pages.png#lightbox "::: No-Loc (Xamarin. Forms)::: типы страниц")
 
-## <a name="pages"></a>Pages
+## <a name="pages"></a>Страницы
 
 Xamarin.Forms поддерживает следующие типы страниц:
 
-| Тип | Описание: | Внешний вид |
+| Тип | Описание | Внешний вид |
 | --- | --- | --- |
 | `ContentPage` | [`ContentPage`](xref:Xamarin.Forms.ContentPage) — Это самый простой и наиболее распространенный тип страницы. Задайте [`Content`](xref:Xamarin.Forms.ContentPage.Content) для свойства один [`View`](views.md) объект, который чаще всего [`Layout`](layouts.md) такой, как [`StackLayout`](xref:Xamarin.Forms.StackLayout) , [`Grid`](xref:Xamarin.Forms.Grid) или [`ScrollView`](xref:Xamarin.Forms.ScrollView) .<br /><br />[Документация по API](xref:Xamarin.Forms.ContentPage) | [![Пример ContentPage](pages-images/ContentPage.png "Пример ContentPage")](pages-images/ContentPage-Large.png#lightbox "Пример ContentPage")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ContentPageDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ContentPageDemoPage.xaml) |
 | `MasterDetailPage` | А [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) управляет двумя областями информации. Задайте [`Master`](xref:Xamarin.Forms.MasterDetailPage.Master) для свойства страницу, обычно отображающую список или меню. Задайте [`Detail`](xref:Xamarin.Forms.MasterDetailPage.Detail) для свойства страницу, показывающую выбранный элемент на главной странице. [`IsPresented`](xref:Xamarin.Forms.MasterDetailPage.IsPresented)Свойство определяет, является ли страница «основной» или «подробности» видимой.<br /><br />[Документация по API](xref:Xamarin.Forms.MasterDetailPage)  /  [Руководством](~/xamarin-forms/app-fundamentals/navigation/master-detail-page.md)  /  [Пример](/samples/xamarin/xamarin-forms-samples/navigation-masterdetailpage) | [![Пример Мастердетаилпаже](pages-images/MasterDetailPage.png "Пример Мастердетаилпаже")](pages-images/MasterDetailPage-Large.png#lightbox "Пример Мастердетаилпаже")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/MasterDetailPageDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/MasterDetailPageDemoPage.xaml) с [кодом программной части](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/MasterDetailPageDemoPage.xaml.cs) |

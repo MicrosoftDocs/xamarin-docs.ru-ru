@@ -10,16 +10,16 @@ ms.date: 01/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: bfd581eebba259ecf7e4e9a426f7382c8a3d1d5a
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: f6431e2cbb187cbf89bdccad0ba5de57eed162e1
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562552"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93371330"
 ---
 # <a name="tabbedpage-translucent-tab-bar-on-ios"></a>Таббедпаже полупрозрачная панель вкладок в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS используется для установки режима полупрозрачность для панели вкладок в [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) . Он используется в XAML путем установки `TabbedPage.TranslucencyMode` Свойства BIND в `TranslucencyMode` значение перечисления:
 

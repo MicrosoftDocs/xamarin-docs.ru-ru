@@ -10,16 +10,16 @@ ms.date: 05/09/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6a5249b6929b283cbbcb5ea4a4bc1f136003ea43
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 49fd8c563509d88b80fcb91b5e6298b8a5bb3363
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563657"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372305"
 ---
 # <a name="home-indicator-visibility-on-ios"></a>Видимость индикатора дома в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS задает видимость индикатора Home на [`Page`](xref:Xamarin.Forms.Page) . Он используется в XAML путем установки [`Page.PrefersHomeIndicatorAutoHidden`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Page.PrefersHomeIndicatorAutoHiddenProperty) Свойства BIND в значение `boolean` :
 

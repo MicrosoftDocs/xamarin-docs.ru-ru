@@ -10,16 +10,16 @@ ms.date: 09/04/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fa3769d2533a5a6b482c92b832d54506e4954250
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 18a9347de9297c4c853cf695d169992ca60ace36
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560147"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372019"
 ---
 # <a name="no-locxamarinforms-listview"></a>Xamarin.Forms Элементе
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithlistview)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithlistview)
 
 [`ListView`](xref:Xamarin.Forms.ListView) представляет собой представление для представления списков данных, особенно длинных списков, требующих прокрутки.
 
@@ -38,7 +38,7 @@ ms.locfileid: "91560147"
 
 Дополнительные сведения о привязке данных к `ListView` экземпляру см. в разделе [Источники данных в ListView](~/xamarin-forms/user-interface/listview/data-and-databinding.md).
 
-## <a name="components"></a>Компоненты
+## <a name="components"></a>Components
 
 У `ListView` элемента управления есть ряд компонентов, позволяющих использовать собственные функции каждой платформы. Эти компоненты определены в следующих разделах.
 
@@ -67,7 +67,7 @@ ms.locfileid: "91560147"
 
 Дополнительные сведения о настройке ячеек в `ListView` см. в разделе [Настройка внешнего вида ячеек ListView](customizing-cell-appearance.md).
 
-## <a name="functionality"></a>Функциональность
+## <a name="functionality"></a>функциональное назначение;
 
 `ListView`Класс поддерживает несколько стилей взаимодействия.
 

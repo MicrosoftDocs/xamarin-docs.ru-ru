@@ -10,16 +10,16 @@ ms.date: 02/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 95c4e247ca0be6e5f0f39a7bc95c41a73b3f590e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 938bdc55cc577bda53fcf8c6d70bc71ea5cb97a0
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556793"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93371967"
 ---
 # <a name="no-locxamarinforms-indicatorview"></a>Xamarin.Forms индикаторвиев
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-indicatorviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-indicatorviewdemos/)
 
 `IndicatorView`— Это элемент управления, отображающий индикаторы, представляющие количество элементов и текущую позиции в `CarouselView` :
 
@@ -28,14 +28,14 @@ ms.locfileid: "91556793"
 `IndicatorView` определяет следующие свойства:
 
 - `Count`, типа `int` , количество индикаторов.
-- `HideSingle`Тип `bool` — указывает, должен ли индикатор быть скрытым, если существует только один. Значение по умолчанию — `true`.
+- `HideSingle`Тип `bool` — указывает, должен ли индикатор быть скрытым, если существует только один. Значение по умолчанию — `true`.
 - `IndicatorColor`Тип `Color` — Цвет индикаторов.
 - `IndicatorSize`Тип — `double` Размер индикаторов. Значение по умолчанию — 6,0.
 - `IndicatorLayout`Тип `Layout<View>` определяет класс макета, используемый для визуализации `IndicatorView` . Это свойство задается параметром Xamarin.Forms и обычно не требуется задавать разработчиками.
 - `IndicatorTemplate`Тип `DataTemplate` — шаблон, определяющий внешний вид каждого индикатора.
 - `IndicatorsShape`Тип `IndicatorShape` — Форма каждого индикатора.
 - `ItemsSource`Тип `IEnumerable` — коллекция, для которой будут отображаться индикаторы. Это свойство будет автоматически установлено при `CarouselView.IndicatorView` установке свойства.
-- `MaximumVisible`, типа `int` , максимальное количество видимых индикаторов. Значение по умолчанию — `int.MaxValue`.
+- `MaximumVisible`, типа `int` , максимальное количество видимых индикаторов. Значение по умолчанию — `int.MaxValue`.
 - `Position`Тип `int` — текущий выбранный индекс индикатора. Это свойство использует `TwoWay` привязку. Это свойство будет автоматически установлено при `CarouselView.IndicatorView` установке свойства.
 - `SelectedIndicatorColor`Тип `Color` — Цвет индикатора, представляющий текущий элемент в `CarouselView` .
 

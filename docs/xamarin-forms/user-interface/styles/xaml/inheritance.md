@@ -10,16 +10,16 @@ ms.date: 02/17/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a8aea2617d31289266e792afba773973eddb2d93
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 46e4147b61d4d78ec30e047452720c422e7b1dc9
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562240"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93371863"
 ---
 # <a name="style-inheritance-in-no-locxamarinforms"></a>Наследование стилей в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
 
 _Стили могут наследоваться от других стилей для сокращения дублирования и включения повторного использования._
 
@@ -74,7 +74,7 @@ _Стили могут наследоваться от других стилей
 
 ### <a name="respecting-the-inheritance-chain"></a>Уважение цепочки наследования
 
-Стиль может наследоваться только от стилей на том же уровне или выше в иерархии представления. Это означает следующее.
+Стиль может наследоваться только от стилей на том же уровне или выше в иерархии представления. Это означает следующее:
 
 - Ресурс уровня приложения может наследовать только от других ресурсов уровня приложения.
 - Ресурс уровня страницы может наследовать от ресурсов уровня приложения и других ресурсов на уровне страницы.

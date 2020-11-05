@@ -10,16 +10,16 @@ ms.date: 09/25/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2a54b5e2523f4d1993cf0c86ba141135b1e9d74c
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: afb2c7c5c82a7ce530846c266d231b893bbbf39d
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561748"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93371239"
 ---
 # <a name="no-locxamarinforms-tableview"></a>Xamarin.Forms таблевиев
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-tableview)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-tableview)
 
 [`TableView`](xref:Xamarin.Forms.TableView) — Это представление для отображения прокручиваемых списков данных или вариантов выбора, где имеются строки, которые не используют один и тот же шаблон. В отличие от [ListView](~/xamarin-forms/user-interface/listview/index.md), не `TableView` имеет концепции `ItemsSource` , поэтому элементы должны добавляться вручную в качестве дочерних элементов.
 
@@ -35,7 +35,7 @@ ms.locfileid: "91561748"
 
 [`TableView`](xref:Xamarin.Forms.TableView) обрабатывает прокрутку и размещение строк в привлекательных разделах, что часто требуется для приведенных выше сценариев. `TableView`Элемент управления использует собственное эквивалентное представление каждой платформы, если оно доступно, создавая собственный внешний вид для каждой платформы.
 
-## <a name="structure"></a>structure
+## <a name="structure"></a>Структура
 
 Элементы в разделе [`TableView`](xref:Xamarin.Forms.TableView) упорядочены по разделам. В корне объекта `TableView` — [`TableRoot`](xref:Xamarin.Forms.TableRoot) , который является родительским для одного или нескольких [`TableSection`](xref:Xamarin.Forms.TableSection) экземпляров. Каждый [`TableSection`](xref:Xamarin.Forms.TableSection) из них состоит из заголовка и одного или нескольких [`ViewCell`](xref:Xamarin.Forms.ViewCell) экземпляров:
 

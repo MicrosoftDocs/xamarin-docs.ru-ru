@@ -10,18 +10,18 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 00b6251f530a4927d069ae92ec919645a06baf15
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 1a9a8b8dc31369b5774935a2e8fca5cf17faa24b
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91555402"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93371252"
 ---
 # <a name="skiasharp-noise-and-composing"></a>SkiaSharp шум и составление
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-Простая векторная графика, как правило, выглядит неестественным. Прямые линии, гладкие кривые и сплошные цвета не похожи на реальные объекты. Работая с созданными компьютером графическими изображениями для 1982 Movie _трон_, компьютер анализу Алексей Perl начал разрабатывать алгоритмы, использующие случайные процессы для предоставления этих изображений более реалистичным текстурам. В 1997 Алексей Perl выиграл Academy награду за технические достижения. Его работа известна как шум Perl и поддерживается в SkiaSharp. Пример:
+Простая векторная графика, как правило, выглядит неестественным. Прямые линии, гладкие кривые и сплошные цвета не похожи на реальные объекты. Работая с созданными компьютером графическими изображениями для 1982 Movie _трон_ , компьютер анализу Алексей Perl начал разрабатывать алгоритмы, использующие случайные процессы для предоставления этих изображений более реалистичным текстурам. В 1997 Алексей Perl выиграл Academy награду за технические достижения. Его работа известна как шум Perl и поддерживается в SkiaSharp. Ниже приведен пример:
 
 ![Пример шума на Perl](noise-images/NoiseSample.png "Пример шума на Perl")
 
@@ -47,7 +47,7 @@ public static SkiaSharp.SKShader CreatePerlinNoiseTurbulence (float baseFrequenc
 
 `seed`Параметр является отправной точкой генератора случайных чисел. Хотя в качестве значения с плавающей запятой, дробная часть усекается до ее использования, а значение 0 равно 1.
 
-На странице « **шум Perl** » в [ **скиашарпформсдемос**)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) можно экспериментировать с различными значениями `baseFrequency` `numOctaves` аргументов и. Вот файл XAML:
+На странице « **шум Perl** » в [ **скиашарпформсдемос** )](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos) можно экспериментировать с различными значениями `baseFrequency` `numOctaves` аргументов и. Вот файл XAML:
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>

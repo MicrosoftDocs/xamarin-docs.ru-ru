@@ -10,16 +10,16 @@ ms.date: 06/16/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 604d2aa8368c85b852530f999601fffca8e104e6
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 79c32595053cc80ffae91b5434e18690ca2dce4a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562929"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370719"
 ---
 # <a name="clipping-with-paths-and-regions"></a>Обрезка изображения по границам области с помощью путей
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Использование контуров для обрезки изображений в определенные области и для создания регионов_
 
@@ -511,7 +511,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Он не выглядит как клевера с четырьмя листами, но это изображение, которое в противном случае может быть трудно визуализировать без усечения:
 
-[![Тройной снимок экрана с четырьмя листами клевера страницы](clipping-images//fourleafclover-small.png)](clipping-images/fourleafclover-large.png#lightbox)
+[![Тройной снимок экрана страницы Four-Leaf клевера](clipping-images//fourleafclover-small.png)](clipping-images/fourleafclover-large.png#lightbox)
 
 ## <a name="related-links"></a>Связанные ссылки
 

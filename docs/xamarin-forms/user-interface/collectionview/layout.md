@@ -10,16 +10,16 @@ ms.date: 07/20/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e399ae590dbd1260f3b2a403c39ef7e7d98d3592
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: dcff583f929e0ce8cda9fe81dc88452c6056ddf1
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557365"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93371486"
 ---
 # <a name="no-locxamarinforms-collectionview-layout"></a>Xamarin.Forms Макет CollectionView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
 [`CollectionView`](xref:Xamarin.Forms.CollectionView) определяет следующие свойства, управляющие макетом:
 

@@ -10,16 +10,16 @@ ms.date: 06/28/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e693565bf34b2ab17992aed72d022315a33b87e3
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: bdf910443295a4a54ea76aa39ee67f1c3aeb10d4
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563670"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372344"
 ---
 # <a name="accessibility-scaling-for-named-font-sizes-on-ios"></a>Масштабирование специальных возможностей для именованных размеров шрифтов в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS отключает масштабирование доступа для именованных размеров шрифтов. Он используется в XAML путем установки `Application.EnableAccessibilityScalingForNamedFontSizes` Свойства BIND в значение `false` :
 

@@ -10,16 +10,16 @@ ms.date: 01/12/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: be5b2854c2f546e2194bd4dc95db77c9dcaf0760
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 01f625d9ecfb91bc36013b7f6d45fb3d275e8bee
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562812"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370836"
 ---
 # <a name="no-locxamarinforms-cells"></a>Xamarin.Forms Ячеек
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/formsgallery)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/formsgallery)
 
 _Xamarin.Forms ячейки можно добавлять в ListView и Таблевиевс._
 
@@ -31,7 +31,7 @@ _Xamarin.Forms ячейки можно добавлять в ListView и Таб�
 
 Xamarin.Forms поддерживает следующие типы ячеек:
 
-| Тип | Описание: | Внешний вид |
+| Тип | Описание | Внешний вид |
 | --- | --- | --- |
 | `TextCell` | [`TextCell`](xref:Xamarin.Forms.TextCell)Отображает одну или две текстовые строки. Задайте [`Text`](xref:Xamarin.Forms.TextCell.Text) свойство и, при необходимости, [`Detail`](xref:Xamarin.Forms.TextCell.Detail) свойство для этих текстовых строк.<br /><br />[Документация по API](xref:Xamarin.Forms.TextCell)  /  [Руководством](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md#textcell) | [![Пример Текстцелл](cells-images/TextCell.png "Пример Текстцелл")](cells-images/TextCell-Large.png#lightbox "Пример Текстцелл")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/TextCellDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/TextCellDemoPage.xaml) |
 | `ImageCell` | [`ImageCell`](xref:Xamarin.Forms.ImageCell)Отображает те же сведения, что и, [`TextCell`](xref:Xamarin.Forms.TextCell) но содержит точечный рисунок, заданный с помощью [`Source`](xref:Xamarin.Forms.Image.Source) Свойства.<br /><br />[Документация по API](xref:Xamarin.Forms.ImageCell)  /  [Руководством](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md#imagecell) | [![Пример Имажецелл](cells-images/ImageCell.png "Пример Имажецелл")](cells-images/ImageCell-Large.png#lightbox "Пример Имажецелл")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ImageCellDemoPage.cs)  /  [Страница XAML](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ImageCellDemoPage.xaml) |

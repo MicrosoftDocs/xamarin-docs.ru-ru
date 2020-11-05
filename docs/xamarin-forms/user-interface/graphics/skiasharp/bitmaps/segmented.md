@@ -10,16 +10,16 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9a39433a0bad518055542adb190f4f441675ddfb
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: fe63f3fdab5d508ab0202fbfe93bdc223f97d28a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556377"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370179"
 ---
 # <a name="segmented-display-of-skiasharp-bitmaps"></a>Сегментированное отображение точечных рисунков SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Объект SkiaSharp `SKCanvas` определяет метод с именем `DrawBitmapNinePatch` и два метода с именем `DrawBitmapLattice` , которые очень похожи. Оба эти метода отображают точечный рисунок на размер прямоугольника назначения, но вместо того, чтобы растянуть растровое изображение единообразно, они отображают части точечного рисунка в своих размерах в пикселях и растягивают другие части точечного рисунка таким образом, чтобы он соответствовал прямоугольнику:
 
@@ -110,7 +110,7 @@ public class NinePatchDisplayPage : ContentPage
 
 `centerRect`Прямоугольник охватывает Центральный массив из 16 кругов. Круги в углах отображаются в размерах пикселов, а все остальное растягивается соответствующим образом:
 
-[![Отображение девяти исправлений](segmented-images/NinePatchDisplay.png "Отображение девяти исправлений")](segmented-images/NinePatchDisplay-Large.png#lightbox)
+[![Отображение девяти исправлений](segmented-images/NinePatchDisplay.png "Отображение Nine-Patch")](segmented-images/NinePatchDisplay-Large.png#lightbox)
 
 Страница UWP имеет размер 500 пикселей в ширину и поэтому отображает верхние и нижние строки в виде ряда кругов такого же размера. В противном случае все круги, которые не находятся в углах, растягиваются в виде эллипсов.
 
@@ -182,7 +182,7 @@ public class LatticeNinePatchPage : ContentPage
 
 Отображение идентично предыдущей программе:
 
-[![Lattice девять обновлений](segmented-images/LatticeNinePatch.png "Lattice девять обновлений")](segmented-images/LatticeNinePatch-Large.png#lightbox)
+[![Lattice девять обновлений](segmented-images/LatticeNinePatch.png "Lattice Nine-Patch")](segmented-images/LatticeNinePatch-Large.png#lightbox)
 
 Страница **Lattice отображает** точечный рисунок на 16 прямоугольников:
 

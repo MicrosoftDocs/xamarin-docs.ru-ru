@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 09b5f145b273d234322eb560207c65aab3313558
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 9459ce5e8b8f167f94d1f88e79d9acb32e4788bf
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560798"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370615"
 ---
 # <a name="navigationpage-bar-text-color-mode-on-ios"></a>Цветовой режим текста на панели Навигатионпаже в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа определяет, изменяется ли цвет текста в строке состояния в с [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) учетом яркости панели навигации. Он используется в XAML путем присвоения [`NavigationPage.StatusBarTextColorMode`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.StatusBarTextColorModeProperty) свойству присоединенного свойства значения [`StatusBarTextColorMode`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.StatusBarTextColorMode) перечисления:
 
@@ -75,7 +75,7 @@ IsPresentedChanged += (sender, e) =>
 
 В результате цвет текста строки состояния на [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) можно изменить в соответствии с яркостью панели навигации. В этом примере цвет текста строки состояния изменяется при переключении пользователя между [`Master`](xref:Xamarin.Forms.MasterDetailPage.Master) [`Detail`](xref:Xamarin.Forms.MasterDetailPage.Detail) страницами и [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) :
 
-![Режим цвет текста строки состояния — зависит от платформы](status-bar-text-color-images/status-bar-text-color-mode.png)
+![Режим цвет текста строки состояния Platform-Specific](status-bar-text-color-images/status-bar-text-color-mode.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 

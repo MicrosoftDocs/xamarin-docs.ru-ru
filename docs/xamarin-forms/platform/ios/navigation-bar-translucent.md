@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 99e163364161287a8506bfc741d737edfaf88e4c
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c565467d3c42dbaa9f9d9fc40352efbc964503a9
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556767"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372318"
 ---
 # <a name="navigationpage-bar-translucency-on-ios"></a>Навигатионпаже линейчатая полупрозрачность на iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS предназначена для изменения прозрачности панели навигации на [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) и используется в XAML путем установки [`NavigationPage.IsNavigationBarTranslucent`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.IsNavigationBarTranslucentProperty) для присоединенного свойства `boolean` значения:
 
@@ -53,7 +53,7 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 В результате прозрачность панели навигации может быть изменена:
 
-![Прозрачная для платформы панель навигации](navigation-bar-translucent-images/translucent-navigation-bar.png)
+![Полупрозрачная панель навигации Platform-Specific](navigation-bar-translucent-images/translucent-navigation-bar.png)
 
 ## <a name="related-links"></a>Связанные ссылки
 

@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c3e74d52eee5da11dffc3c8a778fa2f691f1ca02
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 66fd7fcd5accbc1b6b1595fcb8ee7b1f8eb8d6d4
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560940"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370745"
 ---
 # <a name="slider-thumb-tap-on-ios"></a>Бегунок ползунка в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS позволяет [`Slider.Value`](xref:Xamarin.Forms.Slider.Value) задать свойство, коснувшись расположения на [`Slider`](xref:Xamarin.Forms.Slider) панели, а не путем перетаскивания `Slider` бегунка. Он используется в XAML путем установки [`Slider.UpdateOnTap`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.Slider.UpdateOnTapProperty) Свойства BIND в значение `true` :
 

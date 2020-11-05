@@ -11,20 +11,20 @@ ms.date: 05/07/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 88f89e3d17c693c48176a45605b036f56599ee6d
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c7705304a6eda662095c1e2a57633bf74c90c6de
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563631"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370147"
 ---
 # <a name="the-no-locxamarinforms-flexlayout"></a>Xamarin.FormsФлекслайаут
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)
 
 _Используйте Флекслайаут для наложения или упаковки коллекции дочерних представлений._
 
-Xamarin.Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) Новое в Xamarin.Forms версии 3,0. Он основан на [модуле макета гибкой рамки](https://www.w3.org/TR/css-flexbox-1/)CSS, обычно известном как _Flex Layout_ или _Flex-Box_, поэтому вызывается, так как он включает множество гибких параметров для упорядочения дочерних элементов в макете.
+Xamarin.Forms [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) Новое в Xamarin.Forms версии 3,0. Он основан на [модуле макета гибкой рамки](https://www.w3.org/TR/css-flexbox-1/)CSS, обычно известном как _Flex Layout_ или _Flex-Box_ , поэтому вызывается, так как он включает множество гибких параметров для упорядочения дочерних элементов в макете.
 
 `FlexLayout` функция похожа на Xamarin.Forms [`StackLayout`](~/xamarin-forms/user-interface/layouts/stacklayout.md) в том, что она может упорядочивать дочерние элементы по горизонтали и вертикали в стеке. Тем не менее `FlexLayout` компонент также может обернуть свои дочерние элементы, если слишком много подходит для одной строки или столбца, а также имеет множество параметров ориентации, выравнивания и адаптации к различным размерам экрана.
 

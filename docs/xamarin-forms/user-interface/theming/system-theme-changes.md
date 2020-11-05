@@ -10,16 +10,16 @@ ms.date: 08/06/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 258061042fc8ab80b8bbdd9a0a9a965d87a1e064
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 0275e3d26b86807b113ed78a00c0654809f10990
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557573"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370953"
 ---
 # <a name="respond-to-system-theme-changes-in-no-locxamarinforms-applications"></a>Реагирование на изменения системных тем в Xamarin.Forms приложениях
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-systemthemesdemo/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-systemthemesdemo/)
 
 Устройства обычно включают в себя светло-и темные темы, каждый из которых ссылается на широкий набор предпочтений внешнего вида, который можно задать на уровне операционной системы. Приложения должны учитывать эти системные темы и отвечать сразу после изменения темы системы.
 

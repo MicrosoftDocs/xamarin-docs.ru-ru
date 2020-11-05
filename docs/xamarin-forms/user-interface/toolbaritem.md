@@ -10,16 +10,16 @@ ms.date: 07/29/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c6aabe5931dce51889432e7d5dce2be40631ffe2
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 59954a16cbf1fb01c974968848596138469ab9b2
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556507"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93371213"
 ---
 # <a name="no-locxamarinforms-toolbaritem"></a>Xamarin.Forms тулбаритем
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-toolbaritem/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-toolbaritem/)
 
 Xamarin.Forms [`ToolbarItem`](xref:Xamarin.Forms.ToolbarItem) Класс является специальной разновидностью кнопки, которую можно добавить в `Page` `ToolbarItems` коллекцию объекта. Каждый `ToolbarItem` объект будет отображаться в виде кнопки на панели навигации приложения. `ToolbarItem`Экземпляр может иметь значок и отображаться как первичный или вторичный элемент меню. `ToolbarItem`Класс наследует от [`MenuItem`](xref:Xamarin.Forms.MenuItem) .
 

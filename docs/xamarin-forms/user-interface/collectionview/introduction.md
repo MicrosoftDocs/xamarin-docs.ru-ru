@@ -10,16 +10,16 @@ ms.date: 12/11/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fbaa5779787efe2b7c62368080789fe767ca8021
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: a46214af677cd164a4e55b06cf386533d3130ccb
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560342"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370576"
 ---
 # <a name="no-locxamarinforms-collectionview-introduction"></a>Xamarin.Forms Введение в CollectionView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 
 Представление [`CollectionView`](xref:Xamarin.Forms.CollectionView) служит для вывода списков данных с различными спецификациями макета. Она нацелена на предоставление более гибкой и производительной альтернативы [`ListView`](xref:Xamarin.Forms.ListView) . Например, на следующих снимках экрана показан объект `CollectionView` , использующий вертикальную сетку двух столбцов и допускающий множественный выбор:
 
@@ -52,9 +52,9 @@ ms.locfileid: "91560342"
 | Внешний вид элемента | `ItemTemplate` | Внешний вид каждого элемента в [`CollectionView`](xref:Xamarin.Forms.CollectionView) может быть определен путем присвоения `ItemTemplate` свойству значения [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) . Дополнительные сведения см. в разделе [Определение внешнего вида элемента](populate-data.md#define-item-appearance). |
 | Ячейки | `TextCell`, `ImageCell`, `ViewCell` | [`CollectionView`](xref:Xamarin.Forms.CollectionView) не имеет концепции ячеек и, следовательно, нет концепции индикаторов раскрытия. Вместо этого шаблон данных используется для определения внешнего вида каждого элемента данных в списке. |
 | Разделители строк | `SeparatorColor`, `SeparatorVisibility` | [`CollectionView`](xref:Xamarin.Forms.CollectionView) не включает встроенные разделители. При необходимости они могут быть предоставлены в шаблоне элемента. |
-| Выбранное | `SelectionMode`, `SelectedItem` | [`CollectionView`](xref:Xamarin.Forms.CollectionView) поддерживает выбор одного и нескольких элементов. Дополнительные сведения см. в разделе [ Xamarin.Forms CollectionView Selection](selection.md). |
+| Выбор | `SelectionMode`, `SelectedItem` | [`CollectionView`](xref:Xamarin.Forms.CollectionView) поддерживает выбор одного и нескольких элементов. Дополнительные сведения см. в разделе [ Xamarin.Forms CollectionView Selection](selection.md). |
 | Высота строки | `HasUnevenRows`, `RowHeight` | В `CollectionView` Высота строки каждого элемента определяется `ItemSizingStrategy` свойством. Дополнительные сведения см. в разделе [изменение размера элемента](layout.md#item-sizing).|
-| Caching | `CachingStrategy` | [`CollectionView`](xref:Xamarin.Forms.CollectionView) автоматически использует виртуализацию, предоставляемую базовыми элементами управления. |
+| Кэширование | `CachingStrategy` | [`CollectionView`](xref:Xamarin.Forms.CollectionView) автоматически использует виртуализацию, предоставляемую базовыми элементами управления. |
 | Верхние и нижние колонтитулы | `Header`, `HeaderElement`, `HeaderTemplate`, `Footer`, `FooterElement`, `FooterTemplate` | [`CollectionView`](xref:Xamarin.Forms.CollectionView) может представлять верхний и нижний колонтитулы для прокрутки элементов списка с помощью `Header` свойств,, `Footer` `HeaderTemplate` и `FooterTemplate` . Дополнительные сведения см. в разделе [верхние и нижние колонтитулы](layout.md#headers-and-footers). |
 | Группирование | `GroupDisplayBinding`, `GroupHeaderTemplate`, `GroupShortNameBinding`, `IsGroupingEnabled` | [`CollectionView`](xref:Xamarin.Forms.CollectionView) Отображает правильно сгруппированные данные, присвоив `IsGrouped` свойству значение `true` . Заголовки групп и нижние колонтитулы групп можно настроить, задав `GroupHeaderTemplate` `GroupFooterTemplate` для свойств и значение  [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) Objects. Дополнительные сведения см. в разделе [ Xamarin.Forms CollectionView GROUPING](grouping.md). |
 | Обновление путем оттягивания | `IsPullToRefreshEnabled`, `IsRefreshing`, `RefreshAllowed`, `RefreshCommand`, `RefreshControlColor`, `BeginRefresh()`, `EndRefresh()` | Функция Pull для обновления поддерживается путем установки в [`CollectionView`](xref:Xamarin.Forms.CollectionView) качестве дочернего элемента для `RefreshView` . Дополнительные сведения см. в статье по [запросу на обновление](populate-data.md#pull-to-refresh). |
