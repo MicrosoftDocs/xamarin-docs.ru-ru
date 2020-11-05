@@ -10,16 +10,16 @@ ms.date: 01/30/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f100f98418b7e3cb82939bf67dda61b66cb5864e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: abe0b4804cdcca7fa5864dbadbfa2254b6c8c469
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557755"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366494"
 ---
 # <a name="no-locxamarinforms-style-classes"></a>Xamarin.Forms Классы стилей
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-styles-basicstyles)
 
 _Xamarin.Forms классы стилей позволяют применять к элементу управления несколько стилей, не прибегая к наследованию стиля._
 

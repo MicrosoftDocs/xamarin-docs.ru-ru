@@ -10,20 +10,20 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: aa427035dc33b617bed14e0c6aa0b0db27efca7f
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 63833e80b15bb27ab656825b4b1f6b1e3eb31670
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556572"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367820"
 ---
 # <a name="the-path-fill-types"></a>Типы заполнения пути
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Узнайте о различных эффектах, возможных для типов заливки пути SkiaSharp_
 
-Два контура в контуре могут перекрываться, а линии, составляющие один контур, могут перекрываться. Любая заданная область может быть заполнена, но вы можете не заполнять все закрытые области. Пример:
+Два контура в контуре могут перекрываться, а линии, составляющие один контур, могут перекрываться. Любая заданная область может быть заполнена, но вы можете не заполнять все закрытые области. Ниже приведен пример:
 
 ![Пять, указывающие на частичное заполнение звезды](fill-types-images/filltypeexample.png)
 
@@ -173,7 +173,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Как правило, тип заливки пути должен влиять только на заливки и не штрихи, но два `Inverse` режима влияют как на заливку, так и на штрихи. Для заливок два типа заполняют `Inverse` области в обратном направлении, чтобы заполнить область за пределами звезды. Для штрихов в двух `Inverse` типах цвета все, кроме штриха. Использование этих типов необратных заливок может привести к нечетным результатам, так как на снимке экрана iOS показано следующее:
 
-[![Тройной снимок экрана с пятью страницами со звездочкой](fill-types-images/fivepointedstar-small.png)](fill-types-images/fivepointedstar-large.png#lightbox "Тройной снимок экрана с пятью страницами со звездочкой")
+[![Тройной снимок экрана со страницей Five-Pointedной звезды](fill-types-images/fivepointedstar-small.png)](fill-types-images/fivepointedstar-large.png#lightbox "Тройной снимок экрана со страницей Five-Pointedной звезды")
 
 На снимке экрана Android показаны типичные эффекты «четный-нечетный» и «обмотка», но порядок штрихов и заливки также влияет на результаты.
 

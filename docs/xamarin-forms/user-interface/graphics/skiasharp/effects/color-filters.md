@@ -10,16 +10,16 @@ ms.date: 08/28/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 809477fe466ee7a8f0985308896c14341f2dd460
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: f7a31f54cb90fa3633217e8eb59d92c1e4d063c7
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561941"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93365922"
 ---
 # <a name="skiasharp-color-filters"></a>Фильтры по цвету SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Цветовые фильтры могут переводить цвета в точечном рисунке (или другом изображении) в другие цвета для таких эффектов, как Афиша:
 
@@ -170,7 +170,7 @@ public class GrayScaleMatrixPage : ContentPage
 
 Вот результат, выполняемый в iOS, Android и универсальная платформа Windows:
 
-[![Матрица серого масштаба](color-filters-images/GrayScaleMatrix.png "Матрица серого масштаба")](color-filters-images/GrayScaleMatrix-Large.png#lightbox)
+[![Матрица серого масштаба](color-filters-images/GrayScaleMatrix.png "Матрица Gray-Scale")](color-filters-images/GrayScaleMatrix-Large.png#lightbox)
 
 Просмотрите значение в четвертой и четвертой столбцах. Это ключевой фактор, умноженный на значение исходного цвета для значения «A» преобразованного цвета. Если эта ячейка равна нулю, то ничего не отображается, и проблема может быть сложно обнаружить.
 

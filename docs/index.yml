@@ -9,12 +9,12 @@ metadata:
   author: conceptdev
   ms.author: crdun
   ms.date: 09/26/2019
-  ms.openlocfilehash: c478d4f7f93d7ddeeb307aa87f324127f98ec6f4
-  ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+  ms.openlocfilehash: 4ca300805c51c6394ed39fb96a7e178a62e72856
+  ms.sourcegitcommit: 836d54779190b1bef1b43bc0c2016c9b3034bfda
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/29/2020
-  ms.locfileid: "91453237"
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "93281199"
 highlightedContent:
   items:
   - title: Настройка и установка
@@ -128,8 +128,8 @@ additionalContent:
       summary: Узнайте, как приложения запускаются и переходят в фоновый режим.
       url: ~/xamarin-forms/app-fundamentals/app-lifecycle.md
     - title: Отображение списка данных
-      summary: Используйте ListView для прокрутки и выбора данных.
-      url: ~/xamarin-forms/user-interface/listview/index.md
+      summary: Используйте CollectionView для прокрутки и выбора данных.
+      url: ~/xamarin-forms/user-interface/collectionview/index.md
     - title: Использование XAML и привязка данных
       summary: Используйте шаблон MVVM для отображения данных в пользовательском интерфейсе.
       url: ~/xamarin-forms/xaml/xaml-basics/index.md
@@ -148,20 +148,6 @@ additionalContent:
     - title: Отрисовка графики SkiaSharp
       summary: Кроссплатформенная отрисовка двухмерной векторной графики.
       url: ~/xamarin-forms/user-interface/graphics/skiasharp/index.md
-  - title: Средства мобильной разработки
-    items:
-    - title: Симулятор iOS для Windows
-      summary: Используйте iOS Simulator с помощью Visual Studio в Windows.
-      url: ~/tools/ios-simulator/index.md
-    - title: Profiler
-      summary: Определяйте и устраняйте проблемы с производительностью.
-      url: ~/tools/profiler/index.md
-    - title: Внедрение кода .NET
-      summary: Позволяет использовать код .NET в других языках программирования.
-      url: ~/tools/dotnet-embedding/index.md
-    - title: MonoGame
-      summary: Создание игр для мобильных устройств, компьютеров и игровых приставок с помощью C#.
-      url: ~/graphics-games/monogame/introduction/index.md
   - title: Обзор платформ Xamarin
     items:
     - title: Кроссплатформенность Xamarin.Forms

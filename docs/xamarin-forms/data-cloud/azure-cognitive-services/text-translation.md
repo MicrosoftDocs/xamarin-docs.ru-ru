@@ -10,16 +10,16 @@ ms.date: 02/08/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2b26e80267be9af6bf300b2ffc82e43fe717f59c
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 857a4e465a4f42d2fd6a2a4d977334820fb2ea4f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563124"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366091"
 ---
 # <a name="text-translation-using-the-translator-api"></a>Преобразование текста с помощью API-интерфейса переводчика
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/webservices-todocognitiveservices)
 
 _API Microsoft Translator можно использовать для перевода речи и текста с помощью REST API. В этой статье объясняется, как использовать API перевода текстов Майкрософт для перевода текста с одного языка на другой в Xamarin.Forms приложении._
 
@@ -39,7 +39,7 @@ API-интерфейс переводчика имеет два компонен
 
 Дополнительные сведения о API перевода текстов Майкрософт см. в [документации по API перевода текстов](/azure/cognitive-services/translator/).
 
-## <a name="authentication"></a>Проверка подлинности
+## <a name="authentication"></a>Аутентификация
 
 Для каждого запроса к API перевода текстов требуется маркер доступа JSON Web Token (JWT), который можно получить из службы маркеров работы со службами в `https://api.cognitive.microsoft.com/sts/v1.0/issueToken` . Маркер можно получить, выполнив запрос POST к службе маркеров, указав `Ocp-Apim-Subscription-Key` заголовок, содержащий ключ API в качестве значения.
 
@@ -145,7 +145,7 @@ async Task<string> SendRequestAsync(string url, string bearerToken)
 
 ![Перевод текста на немецкий](text-translation-images/text-translation.png)
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье объясняется, как использовать API перевода текстов Майкрософт для перевода текста с одного языка на другой язык в Xamarin.Forms приложении. Помимо перевода текста, API-интерфейс Microsoft Translator также может транскрипция речь с одного языка на текст на другом языке.
 

@@ -10,10 +10,10 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 ms.openlocfilehash: 255c870407f1657196abd826b46c7e9b114285c9
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.sourcegitcommit: d1980b2251999224e71c1289e4b4097595b7e261
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91433318"
 ---
 # <a name="installing-xamarin-in-visual-studio-2019"></a>Установка Xamarin в Visual Studio 2019
@@ -26,7 +26,7 @@ ms.locfileid: "91433318"
 
 [!include[](~/cross-platform/includes/install-xamarin-windows-2019.md)]
 
-Чтобы проверить, установлена ли среда Xamarin, в Visual Studio 2019 щелкните меню **Справка**. Если Xamarin установлен, вы увидите пункт меню **Xamarin**, как показано на снимке экрана:
+Чтобы проверить, установлена ли среда Xamarin, в Visual Studio 2019 щелкните меню **Справка**. Если Xamarin установлен, вы увидите пункт меню **Xamarin** , как показано на снимке экрана:
 
 ![Пункт меню "Xamarin" в меню "Справка"](windows-images/12-xamarin-menu-item.png "Пункт меню "Xamarin" в меню "Справка"")
 

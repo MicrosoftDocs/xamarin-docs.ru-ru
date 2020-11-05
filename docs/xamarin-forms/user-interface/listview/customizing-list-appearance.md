@@ -10,16 +10,16 @@ ms.date: 12/13/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: dcf4e7ca0f081ff000aaa69d8be3a3cb3aa43e8e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 415c10706252b11cc2ec009137feab1d6d7d90ba
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560290"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93365948"
 ---
 # <a name="listview-appearance"></a>Внешний вид ListView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-grouping)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-listview-grouping)
 
 Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Позволяет настроить представление списка в дополнение к [`ViewCell`](xref:Xamarin.Forms.ViewCell) экземплярам для каждой строки в списке.
 

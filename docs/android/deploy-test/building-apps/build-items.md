@@ -8,10 +8,10 @@ author: jonpryor
 ms.author: jopryo
 ms.date: 09/23/2020
 ms.openlocfilehash: 8a23e973687ac9f775042685122d558788fc7be7
-ms.sourcegitcommit: 1550019cd1e858d4d13a4ae6dfb4a5947702f24b
+ms.sourcegitcommit: 145bd7550d19088c84949ecf5b1cc39002183234
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 11/02/2020
 ms.locfileid: "92897446"
 ---
 # <a name="build-items"></a>Элементы сборки
@@ -77,7 +77,7 @@ ms.locfileid: "92897446"
 
 ### <a name="item-attribute-name"></a>Имя атрибута элемента
 
- ABI&ndash; — указывает ABI собственной библиотеки.
+ABI&ndash; — указывает ABI собственной библиотеки.
 
 ```xml
 <ItemGroup>

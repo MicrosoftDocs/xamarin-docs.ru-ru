@@ -8,12 +8,12 @@ ms.date: 09/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9a988803b5e18ab91ff65a2b4976158458f68274
-ms.sourcegitcommit: 58247fe066ad271ee43c8967ac3301fdab6ca2d1
+ms.openlocfilehash: 32d05208250a4e9927aac50caa5a42c1c6c59bcb
+ms.sourcegitcommit: 4f0223cf13e14d35c52fa72a026b1c7696bf8929
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92629565"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93278368"
 ---
 # <a name="no-locxamarinessentials-media-picker"></a>Xamarin.Essentials: Средство выбора мультимедиа
 
@@ -41,7 +41,7 @@ ms.locfileid: "92629565"
 [assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
 [assembly: UsesPermission(Android.Manifest.Permission.Camera)]
 
-// Add these properties if you would like to filter out cameras that do not have cameras or set to false to make them optional
+// Add these properties if you would like to filter out devices that do not have cameras, or set to false to make them optional
 [assembly: UsesFeature("android.hardware.camera", Required = true)]
 [assembly: UsesFeature("android.hardware.camera.autofocus", Required = true)]
 ```

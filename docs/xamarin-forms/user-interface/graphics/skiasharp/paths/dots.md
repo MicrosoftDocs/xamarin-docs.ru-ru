@@ -10,16 +10,16 @@ ms.date: 03/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5064a53b140c26acdc5149f5495cc002e657a9b0
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 56a652f6f8ff2c4e9780d72117241d79f71210b5
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91564008"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367397"
 ---
 # <a name="dots-and-dashes-in-skiasharp"></a>Точки и тире в SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 _Основные сложности рисования пунктирных и пунктирных линий в SkiaSharp_
 
@@ -27,7 +27,7 @@ SkiaSharp позволяет рисовать линии, которые не я
 
 ![Пунктирная линия](dots-images/dottedlinesample.png)
 
-Это делается с помощью *результата пути*, который является экземпляром [`SKPathEffect`](xref:SkiaSharp.SKPathEffect) класса, установленного для [`PathEffect`](xref:SkiaSharp.SKPaint.PathEffect) свойства `SKPaint` . Можно создать эффект пути (или объединить эффекты пути) с помощью одного из статических методов создания, определенных в `SKPathEffect` . ( `SKPathEffect` является одним из шести эффектов, поддерживаемых SkiaSharp. другие описаны в разделе [**SkiaSharp Effect**](../effects/index.md).)
+Это делается с помощью *результата пути* , который является экземпляром [`SKPathEffect`](xref:SkiaSharp.SKPathEffect) класса, установленного для [`PathEffect`](xref:SkiaSharp.SKPaint.PathEffect) свойства `SKPaint` . Можно создать эффект пути (или объединить эффекты пути) с помощью одного из статических методов создания, определенных в `SKPathEffect` . ( `SKPathEffect` является одним из шести эффектов, поддерживаемых SkiaSharp. другие описаны в разделе [**SkiaSharp Effect**](../effects/index.md).)
 
 Для рисования пунктирных или пунктирных линий используется [`SKPathEffect.CreateDash`](xref:SkiaSharp.SKPathEffect.CreateDash(System.Single[],System.Single)) статический метод. Существует два аргумента: сначала это массив `float` значений, указывающий длины точек и тире, а также длину пробелов между ними. Этот массив должен содержать четное число элементов, и должно быть по крайней мере два элемента. (В массиве могут быть нулевые элементы, но это приводит к сплошной линии.) Если имеется два элемента, первый — это длина точки или тире, а вторая — длину разрыва перед следующей точкой или тире. Если имеется более двух элементов, они находятся в следующем порядке: длина тире, длина зазора, длина тире, длина зазора и т. д.
 

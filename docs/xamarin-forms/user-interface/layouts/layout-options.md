@@ -10,16 +10,16 @@ ms.date: 02/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: bf85bb3bf6f694aa5eefa8512b8391084228598e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: dc85f93110d2faec69ae42823a121b6d16fdfe7f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563527"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367781"
 ---
 # <a name="layout-options-in-no-locxamarinforms"></a>Параметры макета в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-layoutoptions)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-layoutoptions)
 
 _Каждое Xamarin.Forms представление имеет свойства хоризонталоптионс и вертикалоптионс типа LayoutOptions. В этой статье объясняется, как каждое значение LayoutOptions имеет выравнивание и расширение представления._
 
@@ -53,7 +53,7 @@ _Каждое Xamarin.Forms представление имеет свойств
 > [!NOTE]
 > Значение по умолчанию свойств представления [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) и [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) — [`LayoutOptions.Fill`](xref:Xamarin.Forms.LayoutOptions.Fill).
 
-## <a name="alignment"></a>Выравнивание
+## <a name="alignment"></a>Соответствие
 
 Выравнивание управляет порядком расположения представления в родительском макете, если родительский макет содержит неиспользуемое пространство (то есть размер родительского макета больше, чем общий размер всех его дочерних элементов).
 
@@ -76,7 +76,7 @@ _Каждое Xamarin.Forms представление имеет свойств
 </StackLayout>
 ```
 
-Эквивалентный код C# показан ниже:
+Ниже приведен эквивалентный код на C#:
 
 ```csharp
 Content = new StackLayout
@@ -124,7 +124,7 @@ Content = new StackLayout
 </StackLayout>
 ```
 
-Эквивалентный код C# показан ниже:
+Ниже приведен эквивалентный код на C#:
 
 ```csharp
 Content = new StackLayout

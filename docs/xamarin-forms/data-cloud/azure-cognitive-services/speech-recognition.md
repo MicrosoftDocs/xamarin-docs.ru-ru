@@ -10,16 +10,16 @@ ms.date: 01/14/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e5888e77948bef0fbb60a4e0068cbedf2d2a50e7
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 45cf62354eb54007b9380ee06b1d93ee49000909
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91555389"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93365857"
 ---
 # <a name="speech-recognition-using-azure-speech-service"></a>Распознавание речи с помощью служб речи Azure
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-cognitivespeechservice)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/webservices-cognitivespeechservice)
 
 Служба распознавания речи Azure — это облачный API, который предоставляет следующие функциональные возможности:
 

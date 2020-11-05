@@ -11,16 +11,16 @@ ms.date: 10/25/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3d2620014c9554712c746b98de3b9a0eeaa20864
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 1c660c04e89c56f10435964425b2b20dbf5c8eb3
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562760"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93365871"
 ---
 # <a name="no-locxamarinforms-xaml-basics"></a>Xamarin.Forms Основы XAML
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/xamlsamples)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xamlsamples)
 
 Язык XAML — это язык на основе XML, созданный корпорацией Майкрософт в качестве альтернативы программированию кода для создания экземпляров и инициализации объектов, а также организации этих объектов в иерархиях типа «родители-потомки». XAML был адаптирован к нескольким технологиям в .NET Framework, но он нашел свою большую служебную программу в определении макета пользовательских интерфейсов в Windows Presentation Foundation (WPF), Silverlight, среда выполнения Windows и универсальная платформа Windows (UWP).
 
@@ -52,9 +52,9 @@ XAML — это, по сути, XML, но в языке XAML есть некот
 
 Эти функции *не* являются расширениями XML. XAML является полностью юридическим XML. Но эти функции синтаксиса XAML используют XML уникальным образом. Они подробно обсуждаются в статьях, в которых приводится введение в использование XAML для реализации MVVM.
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
 
-В этой статье предполагается, что у вас есть опыт работы с Xamarin.Forms . В этой статье также предполагается знание XML, включая понимание использования объявлений пространств имен XML, а также *элементов*терминов, *тегов*и *атрибутов*.
+В этой статье предполагается, что у вас есть опыт работы с Xamarin.Forms . В этой статье также предполагается знание XML, включая понимание использования объявлений пространств имен XML, а также *элементов* терминов, *тегов* и *атрибутов*.
 
 Если вы знакомы с Xamarin.Forms и XML, начните читать [часть 1. Начало работы с XAML](~/xamarin-forms/xaml/xaml-basics/get-started-with-xaml.md).
 

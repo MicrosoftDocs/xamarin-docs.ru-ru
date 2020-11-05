@@ -10,16 +10,16 @@ ms.date: 03/13/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 964bac947f46e5279cbdcc6bdb61d74deba7f622
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 20ccf71771493afe56d4d899186c7e6330ee96dd
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91559393"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366585"
 ---
 # <a name="no-locxamarinforms-radiobutton"></a>Xamarin.Forms RadioButton
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-radiobuttondemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-radiobuttondemos/)
 
 Xamarin.Forms `RadioButton` — Это тип кнопки, который позволяет пользователям выбрать один вариант из набора. Каждый параметр представлен одним переключателем, и вы можете выбрать только один переключатель в группе. `RadioButton`Класс наследует от [`Button`](xref:Xamarin.Forms.Button) класса.
 

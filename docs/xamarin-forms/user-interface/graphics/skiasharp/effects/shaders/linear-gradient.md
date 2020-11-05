@@ -10,22 +10,22 @@ ms.date: 08/23/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2cc0806af28360cf4bf2bb7e382e8d0a423abab9
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 9d2ac2eec5422068243ac43e78092e25c10652f5
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91555532"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366793"
 ---
 # <a name="the-skiasharp-linear-gradient"></a>Линейный градиент SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
-[`SKPaint`](xref:SkiaSharp.SKPaint)Класс определяет [`Color`](xref:SkiaSharp.SKPaint.Color) свойство, используемое для обводки линий или заливки областей сплошным цветом. Можно также обводка линий или заливки с помощью _градиентов_, которые являются постепенным смешением цветов.
+[`SKPaint`](xref:SkiaSharp.SKPaint)Класс определяет [`Color`](xref:SkiaSharp.SKPaint.Color) свойство, используемое для обводки линий или заливки областей сплошным цветом. Можно также обводка линий или заливки с помощью _градиентов_ , которые являются постепенным смешением цветов.
 
 ![Пример линейного градиента](linear-gradient-images/LinearGradientSample.png "Пример линейного градиента")
 
-Самый простой тип градиента — _линейный_ градиент. Смешение цветов выполняется в строке ( _линия градиента_) с одной точки на другую. Линии, перпендикулярные линии градиента, имеют одинаковый цвет. Линейный градиент можно создать с помощью одного из двух статических [`SKShader.CreateLinearGradient`](xref:SkiaSharp.SKShader.CreateLinearGradient*) методов. Разница между двумя перегрузками состоит в том, что одна из них включает преобразование матрицы, а другая — нет. 
+Самый простой тип градиента — _линейный_ градиент. Смешение цветов выполняется в строке ( _линия градиента_ ) с одной точки на другую. Линии, перпендикулярные линии градиента, имеют одинаковый цвет. Линейный градиент можно создать с помощью одного из двух статических [`SKShader.CreateLinearGradient`](xref:SkiaSharp.SKShader.CreateLinearGradient*) методов. Разница между двумя перегрузками состоит в том, что одна из них включает преобразование матрицы, а другая — нет. 
 
 Эти методы возвращают объект типа [`SKShader`](xref:SkiaSharp.SKShader) , для которого задается [`Shader`](xref:SkiaSharp.SKPaint.Shader) свойство `SKPaint` . Если `Shader` свойство не имеет значение null, оно переопределяет `Color` свойство. Любая линия с обводкой или любая область, заполненная с помощью этого `SKPaint` объекта, основана на градиенте, а не на сплошном цвете.
 

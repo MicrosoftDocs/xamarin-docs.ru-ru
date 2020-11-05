@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6a81e5a589e99a62aeaea58707228afd03016a8c
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: f02de8bc2bf0ed1091c73c3a91f748400f8615b7
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563943"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367586"
 ---
 # <a name="visualelement-blur-on-ios"></a>Висуалелемент размытие в iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа iOS предназначена для размытия содержимого, размещенного под ним, и может применяться к любому [`VisualElement`](xref:Xamarin.Forms.VisualElement) . Он используется в XAML путем присвоения [`VisualElement.BlurEffect`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.VisualElement.BlurEffectProperty) свойству присоединенного свойства значения [`BlurEffectStyle`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.BlurEffectStyle) перечисления:
 
@@ -49,7 +49,7 @@ boxView.On<iOS>().UseBlurEffect(BlurEffectStyle.ExtraLight);
 
 В результате заданный объект [`BlurEffectStyle`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.BlurEffectStyle) применяется к [`BoxView`](xref:Xamarin.Forms.BoxView) экземпляру, который размещается на [`Image`](xref:Xamarin.Forms.Image) слое под ним:
 
-![Эффект размытия — зависит от платформы](applying-blur-images/blur-effect.png)
+![Эффект размытия Platform-Specific](applying-blur-images/blur-effect.png)
 
 > [!NOTE]
 > При добавлении эффект размытия [`VisualElement`](xref:Xamarin.Forms.VisualElement) события касания по-прежнему будут приниматься `VisualElement` .

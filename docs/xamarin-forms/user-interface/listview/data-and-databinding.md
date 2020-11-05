@@ -10,16 +10,16 @@ ms.date: 03/23/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c77a219ab1b729aa279708d04610911fbbfe4e81
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: e133c684009c116b9cf70a3ccef78484b5515ddb
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560134"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93365805"
 ---
 # <a name="listview-data-sources"></a>Источники данных ListView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-listview-switchentrytwobinding)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-listview-switchentrytwobinding)
 
 Xamarin.Forms [`ListView`](xref:Xamarin.Forms.ListView) Используется для отображения списков данных. В этой статье объясняется, как заполнить `ListView` с помощью данных и как привязать данные к выбранному элементу.
 

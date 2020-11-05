@@ -10,12 +10,12 @@ ms.date: 04/02/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6cf4932c3265d1d66200ae12ba448a758586f11c
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: ee027399aec51bb7ae4fac15e9c706c65d3af235
+ms.sourcegitcommit: d1980b2251999224e71c1289e4b4097595b7e261
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563150"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92928637"
 ---
 # <a name="no-locxamarinforms-shell-navigation"></a>Навигация по оболочке Xamarin.Forms
 
@@ -213,8 +213,8 @@ await Shell.Current.GoToAsync("../../route");
 
 | Формат | Объяснение |
 | --- | --- |
-| *маршрут* или /*маршрут* | Маршруты в визуальной иерархии нельзя принудительно передать в стек навигации. |
-| //*страница* или / / /*страница* | В настоящее время глобальные маршруты не могут быть единственной страницей в стеке навигации. Таким образом, абсолютная маршрутизация для глобальных маршрутов не поддерживается. |
+| *маршрут* или / *маршрут* | Маршруты в визуальной иерархии нельзя принудительно передать в стек навигации. |
+| //*страница* или / / / *страница* | В настоящее время глобальные маршруты не могут быть единственной страницей в стеке навигации. Таким образом, абсолютная маршрутизация для глобальных маршрутов не поддерживается. |
 
 Использование любого из этих форматов маршрутов приводит к созданию исключения `Exception`.
 
@@ -254,19 +254,13 @@ await Shell.Current.GoToAsync("../../route");
 
 Кроме того, класс `ShellNavigatingEventArgs` предоставляет метод `Cancel` для отмены навигации.
 
-> [!NOTE]
-> Событие `Navigated` создается переопределяемым методом `OnNavigating` в классе `Shell`.
-
 Класс `Shell` также определяет событие `Navigated`, которое возникает при завершении навигации. Объект `ShellNavigatedEventArgs`, который прилагается к событию `Navigating`, содержит следующие свойства:
 
-| Свойство. | type | Описание |
+| Свойство. | Тип | Описание |
 |---|---|---|
 | `Current` | `ShellNavigationState` | URI текущей страницы. |
 | `Previous`| `ShellNavigationState` | URI предыдущей страницы. |
 | `Source`  | `ShellNavigationSource` | Тип выполненного перехода. |
-
-> [!NOTE]
-> Событие `Navigating` создается переопределяемым методом `OnNavigated` в классе `Shell`.
 
 Классы `ShellNavigatedEventArgs` и `ShellNavigatingEventArgs` имеют свойства `Source` с типом `ShellNavigationSource`. Значения перечисления указаны ниже:
 

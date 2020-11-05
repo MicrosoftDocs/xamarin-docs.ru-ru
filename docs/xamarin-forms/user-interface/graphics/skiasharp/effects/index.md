@@ -10,16 +10,16 @@ ms.date: 08/22/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e63d92cde5925561dae4217c3c46af2c2c59f795
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c6179f94b43f12a7bf4b91a05702c0539f3c8658
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563995"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367794"
 ---
 # <a name="skiasharp-effects"></a>Эффекты SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 Класс SkiaSharp [`SKPaint`](xref:SkiaSharp.SKPaint) определяет шесть свойств, которые можно классифицировать по общему условию _влияния_. Это свойства, которые каким образом изменяют нормальное отображение графических объектов. Эффекты SkiaSharp делятся на шесть категорий:
 
@@ -33,7 +33,7 @@ ms.locfileid: "91563995"
 
 ## <a name="blend-modes"></a>[Режимы смешения](blend-modes/index.md)
 
-Установите [`BlendMode`](xref:SkiaSharp.SKPaint.BlendMode) свойство элемента `SKPaint` на элемент [`SKBlendMode`](xref:SkiaSharp.SKBlendMode) перечисления, чтобы определить, что происходит при отображении исходного изображения в назначении. SkiaSharp поддерживает все режимы компоновки и смешения CSS, в том числе режимы Портер-Дуфф, режимы наложения отделяемых и неотделяемых режимы смешения.
+Установите [`BlendMode`](xref:SkiaSharp.SKPaint.BlendMode) свойство элемента `SKPaint` на элемент [`SKBlendMode`](xref:SkiaSharp.SKBlendMode) перечисления, чтобы определить, что происходит при отображении исходного изображения в назначении. SkiaSharp поддерживает все режимы компоновки и смешения CSS, в том числе режимы Porter-Duff, режимы наложения отделяемых и режимы смешения, отличные от отделяемых.
 
 ## <a name="mask-filters"></a>[Фильтры масок](mask-filters.md)
 

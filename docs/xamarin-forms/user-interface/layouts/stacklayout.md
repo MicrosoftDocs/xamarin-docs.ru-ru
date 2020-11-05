@@ -10,16 +10,16 @@ ms.date: 05/11/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0c8e7c0e3edb581e13944ce48e2241f035791574
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: fcd5f3deb2c7645988cd70b3556b718151df99fd
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556858"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366676"
 ---
 # <a name="no-locxamarinforms-stacklayout"></a>Xamarin.Forms StackLayout
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-stacklayoutdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-stacklayoutdemos)
 
 [![::: No-Loc (Xamarin. Forms)::: StackLayout](stacklayout-images/layouts.png "::: No-Loc (Xamarin. Forms)::: StackLayout")](stacklayout-images/layouts-large.png#lightbox "::: No-Loc (Xamarin. Forms)::: StackLayout")
 
@@ -213,7 +213,7 @@ public class StackLayoutSpacingPageCS : ContentPage
 > [!TIP]
 > Не устанавливайте [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) Свойства и для объекта [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) , [`StackLayout`](xref:Xamarin.Forms.StackLayout) если не требуется. Значения по умолчанию для свойств `LayoutOptions.Fill` и `LayoutOptions.FillAndExpand` обеспечивают наилучшую оптимизацию макета. Изменение этих свойств требует затрат и потребляет память даже при восстановлении значений по умолчанию.
 
-### <a name="alignment"></a>Выравнивание
+### <a name="alignment"></a>Соответствие
 
 В следующем примере XAML устанавливаются параметры выравнивания для каждого дочернего представления в [`StackLayout`](xref:Xamarin.Forms.StackLayout) :
 

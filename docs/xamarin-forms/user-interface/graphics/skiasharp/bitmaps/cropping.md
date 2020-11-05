@@ -10,16 +10,16 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 45634695050dc6f74a9b1617a2180481e3788d11
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 639b9db51d4a9f0bb0ddd55a3d35bcbda7e31962
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557326"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366468"
 ---
 # <a name="cropping-skiasharp-bitmaps"></a>Обрезка точечных рисунков SkiaSharp
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)
 
 В статье [**Создание и рисование растровых изображений SkiaSharp**](drawing.md) описано, как `SKBitmap` объект может быть передан `SKCanvas` конструктору. Любой метод рисования, вызываемый на этом холсте, приводит к отрисовке графики на точечном рисунке. Эти методы рисования включают `DrawBitmap` , что это означает, что этот метод позволяет передавать часть или все одно растровое изображение другому точечному рисунку, возможно, с применением преобразований.
 
@@ -535,9 +535,9 @@ photoCropper = new PhotoCropperCanvasView(bitmap, 1.78f);
 
 ## <a name="dividing-a-bitmap-into-tiles"></a>Деление растрового изображения на плитки
 
-Версия известной Xamarin.Forms головоломки 14-15, появилось в главе 22 книги [_Создание мобильных приложений с помощью Xamarin.Forms _](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md) и может быть загружена как [**ксамагонксуззле**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter22/XamagonXuzzle). Однако головоломка становится более интересной (и зачастую более сложной), если она основана на изображении из собственной фотобиблиотеки.
+Версия известной Xamarin.Forms головоломки 14-15, появилось в главе 22 книги [_Создание мобильных приложений с помощью Xamarin.Forms_](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md) и может быть загружена как [**ксамагонксуззле**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter22/XamagonXuzzle). Однако головоломка становится более интересной (и зачастую более сложной), если она основана на изображении из собственной фотобиблиотеки.
 
-Эта версия головоломки 14-15 является частью приложения **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** и состоит из ряда страниц с названием " **головоломка в фотографии**".
+Эта версия головоломки 14-15 является частью приложения **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** и состоит из ряда страниц с названием " **головоломка в фотографии** ".
 
 Файл **PhotoPuzzlePage1. XAML** состоит из `Button` :
 

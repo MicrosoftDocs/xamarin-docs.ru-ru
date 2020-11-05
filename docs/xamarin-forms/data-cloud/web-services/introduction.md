@@ -10,16 +10,16 @@ ms.date: 02/28/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ebff259519776718f41ab0fcc0a7abb0c692dac6
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 7d1cb1d9fa418cd16cb25519680e526864c9917c
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563423"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367729"
 ---
 # <a name="no-locxamarinforms-web-services-introduction"></a>Xamarin.Forms Введение в веб-службы
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todorest)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/webservices-todorest)
 
 _В этом разделе приводится пошаговое руководство по Xamarin.Forms использованию примера приложения, которое показывает, как взаимодействовать с различными веб-службами. Хотя каждая веб-служба использует отдельный пример приложения, они функционально похожи и совместно используют общие классы._
 

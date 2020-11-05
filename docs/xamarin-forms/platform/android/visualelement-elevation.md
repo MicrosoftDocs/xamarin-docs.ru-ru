@@ -10,16 +10,16 @@ ms.date: 07/10/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 7eb21f9a6a679c294a848d7fa79721c6db03bb0d
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 19f09025e44bb7deddbb8a9e6ae326d2137a5ce0
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563228"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367534"
 ---
 # <a name="visualelement-elevation-on-android"></a>Повышение прав Висуалелемент в Android
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа для Android используется для управления повышением или Z-порядком визуальных элементов в приложениях, предназначенных для API 21 или более поздней версии. Повышение уровня визуального элемента определяет его порядок отображения, при этом визуальные элементы с более высоким значением Z окклудинг визуальные элементы с более низкими значениями Z. Он используется в XAML путем присвоения `VisualElement.Elevation` свойству присоединенного свойства `boolean` значения:
 

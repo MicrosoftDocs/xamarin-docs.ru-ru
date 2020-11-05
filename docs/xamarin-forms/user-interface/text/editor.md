@@ -10,16 +10,16 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 257962516b8a183e63c49b22bc2be108364d9425
-ms.sourcegitcommit: e7d6f8bb074c08d87f7507ad5f1377cfacefa32a
+ms.openlocfilehash: 0a0517f0eac552f18a88d84bafba2e7e1e1f2631
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92041890"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367560"
 ---
 # <a name="no-locxamarinforms-editor"></a>Xamarin.FormsРедактор
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-text)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-text)
 
 [`Editor`](xref:Xamarin.Forms.Editor)Элемент управления используется для приема многострочного ввода.
 
@@ -304,7 +304,7 @@ public partial class EditorPage : ContentPage
 > [!NOTE]
 > [`VisualElement`](xref:Xamarin.Forms.VisualElement)Класс, от которого [`Entry`](xref:Xamarin.Forms.Entry) наследует, также имеет [`Focused`](xref:Xamarin.Forms.VisualElement.Focused) события и [`Unfocused`](xref:Xamarin.Forms.VisualElement.Unfocused) .
 
-### <a name="completed"></a>Completed
+### <a name="completed"></a>Завершено
 
 `Completed`Событие используется для реагирования на завершение взаимодействия с `Editor` . `Completed` вызывается, когда пользователь заканчивает ввод с полем, вводя ключ возврата на клавиатуре (или нажав клавишу TAB в UWP). Обработчик события является универсальным обработчиком событий, принимающим отправителя и `EventArgs` :
 

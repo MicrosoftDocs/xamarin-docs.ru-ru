@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6e25654fb856935c119d731df5db3eaa2d501930
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 7df914ae5b6de38b5179f5b1139b9c41e9559198
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560251"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367456"
 ---
 # <a name="visualelement-access-keys-on-windows"></a>Ключи доступа Висуалелемент в Windows
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Ключи доступа — это сочетания клавиш, которые улучшают удобство использования и доступность приложений на универсальная платформа Windows (UWP), предоставляя интуитивно понятный способ быстрого перехода к видимому пользовательскому интерфейсу приложения и взаимодействия с ним с помощью клавиатуры, а не с помощью сенсорного ввода или мыши. Они являются сочетаниями клавиши ALT и одним или несколькими буквенно-цифровыми клавишами, которые обычно направляются последовательно. Сочетания клавиш автоматически поддерживаются для ключей доступа, использующих один алфавитно-цифровой символ.
 
