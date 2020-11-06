@@ -10,12 +10,12 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 01/24/2020
-  ms.openlocfilehash: c54bbc3d1157ad46abbfe798dbf3227efaed4f78
-  ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+  ms.openlocfilehash: 0e85efff7b1f5af066d21e876de0b31ff7ae5f85
+  ms.sourcegitcommit: d2aa3a8bf9a60b6708db55b10b0c6893c06d3256
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/29/2020
-  ms.locfileid: "91432231"
+  ms.lasthandoff: 11/04/2020
+  ms.locfileid: "93331320"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -53,7 +53,7 @@ landingContent:
       url: ~/ios/app-fundamentals/security-privacy.md
     - text: Сенсорные технологии
       url: ~/ios/app-fundamentals/touch/index.md
-    - text: Дополнительные сведения >
+    - text: Подробнее >
       url: ~/ios/app-fundamentals/index.md
 - title: Пользовательский интерфейс
   linkLists:
@@ -71,6 +71,8 @@ landingContent:
       url: ~/ios/user-interface/programmatic-layout-constraints.md
     - text: MonoTouch.Dialog
       url: ~/ios/user-interface/monotouch.dialog/index.md
+    - text: Проектирование с помощью Xcode
+      url: ~/ios/user-interface/ios-use-xcode.md
 - title: Функции платформы
   linkLists:
   - linkListType: concept
@@ -93,7 +95,7 @@ landingContent:
       url: ~/ios/platform/3d-touch.md
     - text: Touch ID и Face ID
       url: ~/ios/platform/touch-id-face-id.md
-    - text: Дополнительные сведения >
+    - text: Подробнее >
       url: ~/ios/platform/index.md
 - title: Xamarin.Essentials
   linkLists:
@@ -149,7 +151,7 @@ landingContent:
       url: ~/ios/deploy-test/touch.unit.md
     - text: Развертывание по беспроводному соединению
       url: ~/ios/deploy-test/wireless-deployment.md
-    - text: Дополнительные сведения >
+    - text: Подробнее >
       url: ~/ios/deploy-test/index.md
 - title: Дополнительные понятия и внутренние компоненты
   linkLists:
@@ -161,7 +163,7 @@ landingContent:
       url: ~/ios/internals/api-design/index.md
     - text: Доступные сборки
       url: ~/cross-platform/internals/available-assemblies.md?context=xamarin/ios
-    - text: С плавающей запятой
+    - text: Число с плавающей запятой
       url: ~/ios/internals/floating-point.md
     - text: Создание кода для XIB-файлов
       url: ~/ios/internals/xib-code-generation.md
