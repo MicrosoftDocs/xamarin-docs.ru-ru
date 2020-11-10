@@ -10,12 +10,12 @@ ms.date: 01/13/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 575169459433725ae3f3a7db675fc65caef1494e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c89c6b50335405b56349e502f95b9d2975a04f73
+ms.sourcegitcommit: 145bd7550d19088c84949ecf5b1cc39002183234
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563449"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93185502"
 ---
 # <a name="no-locxamarinforms-control-templates"></a>Шаблоны элементов управления Xamarin.Forms
 
@@ -172,7 +172,7 @@ public class CardView : ContentView
 Расширение разметки `TemplateBinding` привязывает свойство элемента из шаблона [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate) к общему свойству, которое определено шаблонным пользовательским элементом управления или шаблонной страницей. Благодаря использованию расширения `TemplateBinding` свойства элемента управления могут действовать в качестве параметров шаблона. Таким образом, если присвоено свойство шаблонного пользовательского элемента управления или шаблонной страницы, значение передается в элемент с расширением разметки `TemplateBinding`.
 
 > [!IMPORTANT]
-> Расширение разметки `TemplateBinding` является альтернативой созданию шаблона [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate), где используется расширение разметки `RelativeSource`, чтобы задать для `BindingContext` корневого элемента шаблона значение шаблонного родительского элемента. Расширение разметки `TemplateBinding` исключает привязку `RelativeSource` и заменяет выражения `Binding` на выражения `TemplateBinding`.
+> Выражение разметки `TemplateBinding` позволяет удалить привязку `RelativeSource` из предыдущего шаблона элемента управления и заменяет выражения `Binding`.
 
 Расширение разметки `TemplateBinding` определяет следующие свойства:
 
@@ -253,7 +253,7 @@ public class CardView : ContentView
 
 В этом примере расширение разметки `TemplateBinding` разрешает выражения привязки для свойств каждого объекта `CardView`. На приведенных ниже снимках экрана показан шаблон `CardViewControlTemplate`, применяемый к трем объектам `CardView`:
 
-[![Снимки экрана шаблонных объектов CardView в iOS и Android](control-template-images/templatebinding-controltemplate.png "Шаблонные объекты CardView")](control-template-images/templatebinding-controltemplate-large.png#lightbox "Шаблонные объекты CardView")
+[![Снимки экрана шаблонных объектов CardView](control-template-images/templatebinding-controltemplate.png "Шаблонные объекты CardView")](control-template-images/templatebinding-controltemplate-large.png#lightbox "Шаблонные объекты CardView")
 
 > [!IMPORTANT]
 > Использование расширения разметки `TemplateBinding` эквивалентно присвоению для свойства `BindingContext` корневого элемента шаблона значения шаблонного родительского элемента с помощью расширения разметки `RelativeSource` и разрешению привязки дочерних объектов с помощью расширения разметки `Binding`. На самом деле расширение разметки `TemplateBinding` создает `Binding` с `Source` в качестве `RelativeBindingSource.TemplatedParent`.
@@ -549,7 +549,7 @@ public partial class AccessTemplateElementPage : HeaderFooterPage
 
 В этом примере объект [`Label`](xref:Xamarin.Forms.Label) с именем `changeThemeLabel` извлекается после создания экземпляра `ControlTemplate`. После этого объект `changeThemeLabel` станет доступным для использования классом `AccessTemplateElementPage`. На приведенных ниже снимках экрана показано, что текст, отображаемый объектом `Label`, изменен:
 
-[![Снимки экрана шаблонного объекта страницы в iOS и Android](control-template-images/get-named-element.png "Шаблонная страница ContentPage")](control-template-images/get-named-element-large.png#lightbox "Шаблонная страница ContentPage")
+[![Снимки экрана шаблонного объекта страницы](control-template-images/get-named-element.png "Шаблонная страница ContentPage")](control-template-images/get-named-element-large.png#lightbox "Шаблонная страница ContentPage")
 
 ## <a name="bind-to-a-viewmodel"></a>Привязка к ViewModel
 
@@ -625,13 +625,13 @@ public partial class AccessTemplateElementPage : HeaderFooterPage
 
 В этом примере корневым элементом шаблона [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate) является объект [`Frame`](xref:Xamarin.Forms.Frame). Объект `Frame` использует расширение разметки `RelativeSource`, чтобы задать для `BindingContext` значение шаблонного родительского элемента. Выражения привязки объекта `Frame` и его дочерних элементов разрешаются для свойств `CardView` из-за наследования `BindingContext` от корневого элемента `Frame`. На следующих снимках экрана показана страница с коллекцией `People`, состоящей из трех элементов:
 
-[![Снимки экрана шаблонных объектов CardView в iOS и Android](control-template-images/viewmodel-controltemplate.png "Шаблонные объекты CardView")](control-template-images/viewmodel-controltemplate-large.png#lightbox "Шаблонные объекты CardView")
+[![Снимки экрана трех шаблонных объектов CardView](control-template-images/viewmodel-controltemplate.png "Шаблонные объекты CardView")](control-template-images/viewmodel-controltemplate-large.png#lightbox "Шаблонные объекты CardView")
 
 Хотя объекты в шаблоне [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate) привязываются к свойствам родительского элемента, [`Button`](xref:Xamarin.Forms.Button) в шаблоне элемента управления привязывается к шаблонному родительскому элементу и к `DeletePersonCommand` в объекте ViewModel. Это связано с тем, что свойство `Button.Command` переопределяет источник привязки как контекст привязки предка с типом `PeopleViewModel`, то есть [`StackLayout`](xref:Xamarin.Forms.StackLayout). Затем часть `Path` выражений привязки может разрешить свойство `DeletePersonCommand`. Однако свойство `Button.CommandParameter` не изменяет источник привязки, а наследует его от родительского элемента в [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate). Таким образом, свойство `CommandParameter` привязывается к свойству `CardTitle` `CardView`.
 
 Общим эффектом привязок [`Button`](xref:Xamarin.Forms.Button) является то, что при нажатии `Button` в классе `PeopleViewModel` выполняется `DeletePersonCommand` со значением свойства `CardName`, которое передается в `DeletePersonCommand`. В результате заданный объект `CardView` удаляется из привязываемого макета:
 
-[![Снимки экрана шаблонных объектов CardView в iOS и Android](control-template-images/viewmodel-itemdeleted.png "Шаблонные объекты CardView")](control-template-images/viewmodel-itemdeleted-large.png#lightbox "Шаблонные объекты CardView")
+[![Снимки экрана двух шаблонных объектов CardView](control-template-images/viewmodel-itemdeleted.png "Шаблонные объекты CardView")](control-template-images/viewmodel-itemdeleted-large.png#lightbox "Шаблонные объекты CardView")
 
 Дополнительные сведения об относительных привязках см. в статье [Относительные привязки Xamarin.Forms](~/xamarin-forms/app-fundamentals/data-binding/relative-bindings.md).
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/29/2018
-ms.openlocfilehash: c8c9e721bc46d9071bb2af479a5e1d37b93fce27
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: ae33472fb32b3cf1a7bfe3c967c4279f38d415cd
+ms.sourcegitcommit: d1980b2251999224e71c1289e4b4097595b7e261
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91458203"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92928533"
 ---
 # <a name="how-do-i-automate-an-android-nunit-test-project"></a>Как автоматизировать тестовый проект Android NUnit?
 
@@ -20,17 +20,17 @@ ms.locfileid: "91458203"
 > В этом руководстве объясняется, как автоматизировать тестовый проект NUnit на Android, а не проект Xamarin.UITest. Руководства по Xamarin.UITest можно найти [здесь](/appcenter/test-cloud/preparing-for-upload/xamarin-android-uitest).
 
 При создании проекта **Приложение модульного тестирования (Android)** в Visual Studio (или проект **Модульный тест Android** в Visual Studio для Mac), этот проект не будет автоматически выполнять тестовые проекты по умолчанию.
-Для выполнения тестовых проектов NUnit на целевом устройстве можно создать подкласс [Android.App.Instrumentation](xref:Android.App.Instrumentation), запущенный с помощью следующей команды: 
+Для выполнения тестовых проектов NUnit на целевом устройстве можно создать подкласс [Android.App.Instrumentation](xref:Android.App.Instrumentation), запущенный с помощью следующей команды:
 
 ```shell
-adb shell am instrument 
+adb shell am instrument
 ```
 
 Приведенные ниже шаги показывают, как это сделать.
 
-1. Создайте новый файл с именем **TestInstrumentation.cs**: 
+1. Создайте новый файл с именем **TestInstrumentation.cs** :
 
-    ```cs 
+    ```cs
     using System;
     using System.Reflection;
     using Android.App;
@@ -55,7 +55,7 @@ adb shell am instrument
     }
     ```
 
-    В этом файле `Xamarin.Android.NUnitLite.TestSuiteInstrumentation` (из **Xamarin.Android.NUnitLite.dll**) содержит подклассы для создания `TestInstrumentation`.
+    В этом файле `Xamarin.Android.NUnitLite.TestSuiteInstrumentation` (из **Xamarin.Android.NUnitLite.dll** ) содержит подклассы для создания `TestInstrumentation`.
 
 2. Реализуйте конструктор `TestInstrumentation` и метод `AddTests`. Метод `AddTests` определяет, какие тестовые проекты выполняются.
 
@@ -75,13 +75,15 @@ adb shell am instrument
     </Project>
     ```
 
-4. Используйте следующую команду для запуска модульных тестов. Замените `PACKAGE_NAME` именем пакета приложения (имя пакета можно найти в атрибуте приложения `/manifest/@package`, расположенном в папке **AndroidManifest.xml**):
+4. Разверните приложение в режиме отладки или выпуска, а затем выйдите из этого режима.
+
+5. Используйте следующую команду для запуска модульных тестов. Замените `PACKAGE_NAME` именем пакета приложения (имя пакета можно найти в атрибуте приложения `/manifest/@package`, расположенном в папке **AndroidManifest.xml** ):
 
     ```shell
     adb shell am instrument -w PACKAGE_NAME/app.tests.TestInstrumentation
     ```
 
-5. При необходимости файл `.csproj` можно изменить, добавив целевой объект MSBuild `RunTests`. Это дает возможность вызывать модульные тесты с помощью команды, как в приведенном ниже примере.
+6. При необходимости файл `.csproj` можно изменить, добавив целевой объект MSBuild `RunTests`. Это дает возможность вызывать модульные тесты с помощью команды, как в приведенном ниже примере.
 
     ```shell
     msbuild /t:RunTests Project.csproj

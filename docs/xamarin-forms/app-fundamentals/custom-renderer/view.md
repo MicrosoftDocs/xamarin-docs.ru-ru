@@ -1,6 +1,6 @@
 ---
 title: Описание реализации представления: В этой статье описывается, как создать настраиваемый отрисовщик для пользовательского элемента управления Xamarin.Forms, который используется для отображения видеопотока для предварительного просмотра с камеры устройства.
-ms.prod: xamarin ms.assetid: 915E25E7-4A6B-4F34-B7B4-07D5F4B240F2 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 05/10/2018 no-loc:
+ms.prod: xamarin ms.assetid: 915E25E7-4A6B-4F34-B7B4-07D5F4B240F2 ms.technology: xamarin-forms author: davidbritch ms.author: dabritch ms.date: 10/30/2020 no-loc:
 - "Xamarin.Forms"
 - "Xamarin.Essentials"
 
@@ -12,6 +12,9 @@ ms.prod: xamarin ms.assetid: 915E25E7-4A6B-4F34-B7B4-07D5F4B240F2 ms.technology:
 Пользовательские элементы управления пользовательского интерфейса _Xamarin.Forms должны быть производными от класса View, который используется для размещения макетов и элементов управления на экране. Эта статья описывает, как создать настраиваемый отрисовщик для пользовательского элемента управления Xamarin.Forms, который используется для отображения видеопотока для предварительного просмотра с камеры устройства._
 
 Каждое представление Xamarin.Forms имеет сопутствующий отрисовщик для каждой платформы, который создает экземпляр собственного элемента управления. Когда [`View`](xref:Xamarin.Forms.View) отображается в приложении Xamarin.Forms, на платформе iOS создается класс `ViewRenderer`, который, в свою очередь, создает собственный элемент управления `UIView`. На платформе Android класс `ViewRenderer` создает собственный элемент управления `View`. На универсальной платформе Windows (UWP) класс `ViewRenderer` создает экземпляр собственного элемента управления `FrameworkElement`. Дополнительные сведения об отрисовщике и классах собственных элементов управления, с которыми сопоставляются элементы управления Xamarin.Forms, см. в статье [Базовые классы и собственные элементы управления отрисовщика](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
+
+> [!NOTE]
+> Некоторые элементы управления в Android используют быстрые отрисовщики, которые не используют класс `ViewRenderer`. Дополнительные сведения о быстрых отрисовщиках см. в разделе [Xamarin.Forms Быстрые отрисовщики](~/xamarin-forms/internals/fast-renderers.md).
 
 На следующей схеме показана связь между классом [`View`](xref:Xamarin.Forms.View) и соответствующими собственными элементами управления, которые его реализуют:
 
@@ -38,7 +41,8 @@ public class CameraPreview : View
     declaringType: typeof(CameraPreview),
     defaultValue: CameraOptions.Rear);
 
-  public CameraOptions Camera {
+  public CameraOptions Camera
+  {
     get { return (CameraOptions)GetValue (CameraProperty); }
     set { SetValue (CameraProperty, value); }
   }
@@ -55,13 +59,12 @@ public class CameraPreview : View
 <ContentPage ...
              xmlns:local="clr-namespace:CustomRenderer;assembly=CustomRenderer"
              ...>
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Camera Preview:" />
-            <local:CameraPreview Camera="Rear"
-              HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+        <Label Text="Camera Preview:" />
+        <local:CameraPreview Camera="Rear"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand" />
+    </StackLayout>
 </ContentPage>
 ```
 
@@ -75,10 +78,13 @@ public class MainPageCS : ContentPage
   public MainPageCS ()
   {
     ...
-    Content = new StackLayout {
-      Children = {
+    Content = new StackLayout
+    {
+      Children =
+      {
         new Label { Text = "Camera Preview:" },
-        new CameraPreview {
+        new CameraPreview
+        {
           Camera = CameraOptions.Rear,
           HorizontalOptions = LayoutOptions.FillAndExpand,
           VerticalOptions = LayoutOptions.FillAndExpand
@@ -95,10 +101,16 @@ public class MainPageCS : ContentPage
 
 ## <a name="creating-the-custom-renderer-on-each-platform"></a>Создание пользовательского отрисовщика на каждой платформе
 
-Процесс создания класса пользовательского отрисовщика выглядит следующим образом:
+Процесс создания класса пользовательского отрисовщика в iOS и UWP выглядит следующим образом:
 
 1. Создайте подкласс класса `ViewRenderer<T1,T2>`, который отрисовывает пользовательский элемент управления. Первый аргумент типа должен быть пользовательским элементом управления, для которого предназначен отрисовщик, в данном случае — `CameraPreview`. Второй аргумент типа должен быть собственным элементом управления, который будет реализовывать пользовательский элемент управления.
 1. Переопределите метод `OnElementChanged`, который отрисовывает пользовательский элемент управления, и напишите логику для его настройки. Этот метод вызывается при создании соответствующего элемента управления Xamarin.Forms.
+1. Добавьте атрибут `ExportRenderer` в класс настраиваемого отрисовщика, чтобы указать, что он будет использоваться для отрисовки пользовательского элемента управления Xamarin.Forms. Этот атрибут используется для регистрации пользовательского отрисовщика в Xamarin.Forms.
+
+Процесс создания класса пользовательского отрисовщика в Android в качестве быстрого отрисовщика выглядит следующим образом:
+
+1. Создайте подкласс элемента управления Android, который отрисовывает пользовательский элемент управления. Кроме того, укажите, что подкласс будет реализовывать интерфейсы `IVisualElementRenderer` и `IViewRenderer`.
+1. Реализуйте интерфейсы `IVisualElementRenderer` и `IViewRenderer` в классе быстрого отрисовщика.
 1. Добавьте атрибут `ExportRenderer` в класс настраиваемого отрисовщика, чтобы указать, что он будет использоваться для отрисовки пользовательского элемента управления Xamarin.Forms. Этот атрибут используется для регистрации пользовательского отрисовщика в Xamarin.Forms.
 
 > [!NOTE]
@@ -108,7 +120,7 @@ public class MainPageCS : ContentPage
 
 ![Задачи проекта настраиваемого отрисовщика CameraPreview](view-images/solution-structure.png)
 
-Пользовательский элемент управления `CameraPreview` отрисовывается с помощью зависящих от платформы классов отрисовщика, которые являются производными от класса `ViewRenderer` каждой платформы. Это приводит к тому, что каждый пользовательский элемент управления `CameraPreview` отрисовывается с помощью зависящих от платформы элементов управления, как показано на следующих снимках экрана:
+Пользовательский элемент управления `CameraPreview` отрисовывается с помощью зависящих от платформы классов отрисовщика, которые являются производными от класса `ViewRenderer` в iOS и UWP, а также класса `FrameLayout` в Android. Это приводит к тому, что каждый пользовательский элемент управления `CameraPreview` отрисовывается с помощью зависящих от платформы элементов управления, как показано на следующих снимках экрана:
 
 ![CameraPreview на каждой платформе](view-images/screenshots.png)
 
@@ -123,12 +135,15 @@ protected override void OnElementChanged (ElementChangedEventArgs<NativeListView
 {
   base.OnElementChanged (e);
 
-  if (e.OldElement != null) {
+  if (e.OldElement != null)
+  {
     // Unsubscribe from event handlers and cleanup any resources
   }
 
-  if (e.NewElement != null) {
-    if (Control == null) {
+  if (e.NewElement != null)
+  {    
+    if (Control == null)
+    {
       // Instantiate the native control and assign it to the Control property with
       // the SetNativeControl method
     }
@@ -195,62 +210,89 @@ namespace CustomRenderer.iOS
 
 ### <a name="creating-the-custom-renderer-on-android"></a>Создание пользовательского отрисовщика в Android
 
-В следующем примере кода показан пользовательский отрисовщик для платформы Android:
+В следующем примере кода показан быстрый отрисовщик для платформы Android:
 
 ```csharp
 [assembly: ExportRenderer(typeof(CustomRenderer.CameraPreview), typeof(CameraPreviewRenderer))]
 namespace CustomRenderer.Droid
 {
-    public class CameraPreviewRenderer : ViewRenderer<CustomRenderer.CameraPreview, CustomRenderer.Droid.CameraPreview>
+    public class CameraPreviewRenderer : FrameLayout, IVisualElementRenderer, IViewRenderer
     {
-        CameraPreview cameraPreview;
+        // ...
+        CameraPreview element;
+        VisualElementTracker visualElementTracker;
+        VisualElementRenderer visualElementRenderer;
+        FragmentManager fragmentManager;
+        CameraFragment cameraFragment;
+
+        FragmentManager FragmentManager => fragmentManager ??= Context.GetFragmentManager();
+
+        public event EventHandler<VisualElementChangedEventArgs> ElementChanged;
+        public event EventHandler<PropertyChangedEventArgs> ElementPropertyChanged;
+
+        CameraPreview Element
+        {
+            get => element;
+            set
+            {
+                if (element == value)
+                {
+                    return;
+                }
+
+                var oldElement = element;
+                element = value;
+                OnElementChanged(new ElementChangedEventArgs<CameraPreview>(oldElement, element));
+            }
+        }
 
         public CameraPreviewRenderer(Context context) : base(context)
         {
+            visualElementRenderer = new VisualElementRenderer(this);
         }
 
-        protected override void OnElementChanged(ElementChangedEventArgs<CustomRenderer.CameraPreview> e)
+        void OnElementChanged(ElementChangedEventArgs<CameraPreview> e)
         {
-            base.OnElementChanged(e);
+            CameraFragment newFragment = null;
 
             if (e.OldElement != null)
             {
-                // Unsubscribe
-                cameraPreview.Click -= OnCameraPreviewClicked;
+                e.OldElement.PropertyChanged -= OnElementPropertyChanged;
+                cameraFragment.Dispose();
             }
             if (e.NewElement != null)
             {
-                if (Control == null)
-                {
-                  cameraPreview = new CameraPreview(Context);
-                  SetNativeControl(cameraPreview);
-                }
-                Control.Preview = Camera.Open((int)e.NewElement.Camera);
+                this.EnsureId();
 
-                // Subscribe
-                cameraPreview.Click += OnCameraPreviewClicked;
+                e.NewElement.PropertyChanged += OnElementPropertyChanged;
+
+                ElevationHelper.SetElevation(this, e.NewElement);
+                newFragment = new CameraFragment { Element = element };
             }
+
+            FragmentManager.BeginTransaction()
+                .Replace(Id, cameraFragment = newFragment, "camera")
+                .Commit();
+            ElementChanged?.Invoke(this, new VisualElementChangedEventArgs(e.OldElement, e.NewElement));
         }
 
-        void OnCameraPreviewClicked(object sender, EventArgs e)
+        async void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            if (cameraPreview.IsPreviewing)
+            ElementPropertyChanged?.Invoke(this, e);
+
+            switch (e.PropertyName)
             {
-                cameraPreview.Preview.StopPreview();
-                cameraPreview.IsPreviewing = false;
+                case "Width":
+                    await cameraFragment.RetrieveCameraDevice();
+                    break;
             }
-            else
-            {
-                cameraPreview.Preview.StartPreview();
-                cameraPreview.IsPreviewing = true;
-            }
-        }
-        ...
+        }       
+        // ...
     }
 }
 ```
 
-При условии, что свойство `Control` имеет значение `null`, вызывается метод `SetNativeControl`, чтобы создать экземпляр нового элемента управления `CameraPreview` и назначить ссылку на него свойству `Control`. Элемент управления `CameraPreview` является пользовательским элементом управления, относящимся к конкретной платформе, который использует API`Camera` для предоставления потока предварительного просмотра с камеры. Элемент управления `CameraPreview` настраивается, если настраиваемый отрисовщик подключен к новому элементу Xamarin.Forms. Эта конфигурация включает в себя создание собственного объекта `Camera` для обращения к конкретной аппаратной камере и регистрацию обработчика событий для обработки события `Click`. В свою очередь, этот обработчик останавливает и запускает предварительный просмотр видео при касании. Подписка на событие `Click` отменяется, если изменяется элемент Xamarin.Forms, к которому подключен отрисовщик.
+В этом примере метод `OnElementChanged` создает объект `CameraFragment`, если настраиваемый отрисовщик подключен к новому элементу Xamarin.Forms. Тип `CameraFragment` — это пользовательский класс, который использует API `Camera2` для предоставления потока предварительного просмотра с камеры. Объект `CameraFragment` удаляется, когда элемент Xamarin.Forms, к которому присоединен отрисовщик, меняется.
 
 ### <a name="creating-the-custom-renderer-on-uwp"></a>Создание пользовательского отрисовщика на универсальной платформе Windows
 
