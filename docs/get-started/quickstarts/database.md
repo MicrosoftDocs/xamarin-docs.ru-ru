@@ -12,16 +12,16 @@ ms.date: 04/01/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0992f7db22d79e58db0306bc09329f2852ef9489
-ms.sourcegitcommit: 145bd7550d19088c84949ecf5b1cc39002183234
+ms.openlocfilehash: 54a6dca3b16ed4ac9fb7ab2065f1d8462a3f3da4
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "92897524"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368119"
 ---
 # <a name="store-data-in-a-local-sqlitenet-database"></a>Хранение данных в локальной базе данных SQLite.NET
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/getstarted-notes-database/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/getstarted-notes-database/)
 
 В этом кратком руководстве рассматриваются следующие темы:
 

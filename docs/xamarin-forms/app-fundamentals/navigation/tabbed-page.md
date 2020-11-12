@@ -10,27 +10,27 @@ ms.date: 11/07/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: afcf182fe093a9bb02ea23f53d0f568fd83c862c
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: d5c380a5ce6e76b0f9275b09d2943be479ef09e4
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563319"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370901"
 ---
 # <a name="no-locxamarinforms-tabbedpage"></a>Xamarin.Forms TabbedPage
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-tabbedpagewithnavigationpage)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/navigation-tabbedpagewithnavigationpage)
 
 Xamarin.Forms [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) состоит из списка вкладок и большой области сведений, где каждая вкладка загружает содержимое в область сведений. На снимках экрана ниже показана страница `TabbedPage` в iOS и Android.
 
 [![Снимок экрана TabbedPage с тремя вкладками в iOS и Android](tabbed-page-images/tabbedpage-today.png "TabbedPage с тремя вкладками")](tabbed-page-images/tabbedpage-today-large.png#lightbox "TabbedPage с тремя вкладками")
 
-В iOS список вкладок отображается в нижней части экрана, а также в области данных сверху. У каждой вкладки есть заголовок и значок, который должен быть PNG-файлом с альфа-каналом. В книжной ориентации значки панели вкладок отображаются над заголовками вкладок. В альбомной ориентации значки и заголовки отображаются рядом. Кроме того, в зависимости от устройства и ориентации может отображаться обычная или компактная панель вкладок. При наличии более пяти вкладок появляется вкладка **Дополнительно**, используемая для доступа к дополнительным вкладкам. Сведения о требованиях к значкам см. в разделе о [размере значков на панели вкладок](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/custom-icons#tab-bar-icon-size) на сайте developer.apple.com.
+В iOS список вкладок отображается в нижней части экрана, а также в области данных сверху. У каждой вкладки есть заголовок и значок, который должен быть PNG-файлом с альфа-каналом. В книжной ориентации значки панели вкладок отображаются над заголовками вкладок. В альбомной ориентации значки и заголовки отображаются рядом. Кроме того, в зависимости от устройства и ориентации может отображаться обычная или компактная панель вкладок. При наличии более пяти вкладок появляется вкладка **Дополнительно** , используемая для доступа к дополнительным вкладкам. Сведения о требованиях к значкам см. в разделе о [размере значков на панели вкладок](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/custom-icons#tab-bar-icon-size) на сайте developer.apple.com.
 
 > [!TIP]
 > Для `TabbedRenderer` в iOS есть переопределяемый метод `GetIcon`, который можно использовать для загрузки значков вкладок из указанного источника. Это переопределение позволяет использовать изображения SVG в виде значков в `TabbedPage`. Кроме того, можно предоставить варианты значка в выбранном и невыбранном состоянии.
 
-В Android список вкладок отображается в верхней части экрана, а также в области данных ниже. У каждой вкладки есть заголовок и значок, который должен быть PNG-файлом с альфа-каналом. Но эти вкладки можно переместить в нижнюю часть экрана в зависимости от конкретной платформы. При наличии более пяти вкладок, список которых отображается внизу экрана, появляется вкладка *Дополнительно*, которую можно использовать для доступа к дополнительным вкладкам. Дополнительные сведения о требованиях к значкам см. в разделах о [вкладках](https://material.io/components/tabs/#) на сайте material.io и [поддержке разных значений плотности пикселей](https://developer.android.com/training/multiscreen/screendensities) на сайте developer.android.com. Дополнительные сведения о перемещении вкладок в нижнюю часть экрана см. в статье [TabbedPage Toolbar Placement and Color on Android](~/xamarin-forms/platform/android/tabbedpage-toolbar-placement-color.md) (Цвет и размещение значков на панели TabbedPage в Android).
+В Android список вкладок отображается в верхней части экрана, а также в области данных ниже. У каждой вкладки есть заголовок и значок, который должен быть PNG-файлом с альфа-каналом. Но эти вкладки можно переместить в нижнюю часть экрана в зависимости от конкретной платформы. При наличии более пяти вкладок, список которых отображается внизу экрана, появляется вкладка *Дополнительно* , которую можно использовать для доступа к дополнительным вкладкам. Дополнительные сведения о требованиях к значкам см. в разделах о [вкладках](https://material.io/components/tabs/#) на сайте material.io и [поддержке разных значений плотности пикселей](https://developer.android.com/training/multiscreen/screendensities) на сайте developer.android.com. Дополнительные сведения о перемещении вкладок в нижнюю часть экрана см. в статье [TabbedPage Toolbar Placement and Color on Android](~/xamarin-forms/platform/android/tabbedpage-toolbar-placement-color.md) (Цвет и размещение значков на панели TabbedPage в Android).
 
 > [!TIP]
 > Кроме того, у `TabbedPageRenderer` для Android AppCompat есть переопределяемый метод `SetTabIconImageSource`, который может использоваться для загрузки значков вкладок из настраиваемого объекта `Drawable`. Это переопределение позволяет использовать изображения SVG в виде значков в `TabbedPage` и работает как для верхних, так и для нижних панелей вкладок.

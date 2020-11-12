@@ -10,16 +10,16 @@ ms.date: 04/06/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 53df681e79c4c233a8908764d31c8ee416c8a621
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: d5b0cc2bb4617a0f093971dfca69e8352779c088
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561174"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373657"
 ---
 # <a name="create-no-locxamarinforms-behaviors"></a>Создание реакций на события Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-numericvalidationbehavior)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/behaviors-numericvalidationbehavior)
 
 Реакции на событие _Xamarin.Forms создаются путем наследования от класса Behavior или Behavior&lt;T&gt;. В этой статье содержатся сведения о создании и использовании реакций на события Xamarin.Forms._
 

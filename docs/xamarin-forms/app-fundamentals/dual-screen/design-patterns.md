@@ -10,16 +10,16 @@ ms.date: 02/08/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9b553a2fc3dea0d2793cb337142eacf0419ad994
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 8cd98f529c324e89a4b935a364a09ff794b6c5be
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556078"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369432"
 ---
 # <a name="no-locxamarinforms-dual-screen-design-patterns"></a>Конструктивные шаблоны Xamarin.Forms для двухэкранных устройств
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
 
 В этом руководстве представлены рекомендуемые конструктивные шаблоны для двухэкранных устройств с кодом и примерами, которые помогут вам в создании интересных и удобных пользовательских интерфейсов.
 

@@ -10,16 +10,16 @@ ms.date: 02/12/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 113265ffd26fcb1daf1cc85867e55f3e8ebd091f
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 29d3dbc29424089b9e5c492395ccbadfa0a69ae7
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557950"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373410"
 ---
 # <a name="playing-a-web-video"></a>Воспроизведение видео через Интернет
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
 
 Класс `VideoPlayer` определяет свойство `Source`, используемое для указания источника видеофайла, а также свойство `AutoPlay`. Свойству `AutoPlay` задано значение по умолчанию `true`. Это значит, что видеовоспроизведение должно начинаться автоматически после установки свойства `Source`.
 

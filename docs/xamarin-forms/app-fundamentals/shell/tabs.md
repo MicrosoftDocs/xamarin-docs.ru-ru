@@ -10,16 +10,16 @@ ms.date: 11/06/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 59c7435273d7c01f93ef0bbfb0240e3917f8b716
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 5df5560966def16741f6eabdacb3312944063a1f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563020"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372617"
 ---
 # <a name="no-locxamarinforms-shell-tabs"></a>Вкладки оболочки Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
 Когда шаблон навигации для приложения предусматривает всплывающее меню, следующим уровнем навигации в приложении будет нижняя панель вкладок. Кроме того, когда всплывающее меню закрыто, верхним уровнем навигации в приложении будет нижняя панель вкладок.
 
@@ -105,7 +105,7 @@ ms.locfileid: "91563020"
 
 [![Снимок экрана двухстраничного приложения оболочки с нижними вкладками для iOS и Android](tabs-images/two-page-app-bottom-tabs.png "Двухстраничное приложение оболочки с нижними вкладками")](tabs-images/two-page-app-bottom-tabs-large.png#lightbox "Двухстраничное приложение оболочки с нижними вкладками")
 
-При наличии более пяти вкладок появляется вкладка **Дополнительно**, используемая для доступа к дополнительным вкладкам.
+При наличии более пяти вкладок появляется вкладка **Дополнительно** , используемая для доступа к дополнительным вкладкам.
 
 [![Снимок экрана: приложение оболочки со вкладкой Дополнительно для iOS и Android](tabs-images/more-tabs.png "Приложение оболочки со вкладкой Дополнительно")](tabs-images/more-tabs-large.png#lightbox "Приложение оболочки со вкладками Дополнительно")
 

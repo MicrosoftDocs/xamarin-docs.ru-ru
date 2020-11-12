@@ -10,16 +10,16 @@ ms.date: 04/17/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 29fb1300e62d15130e999f6816e2afefcd3fba3b
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 1f2484fe7c6dee1f1b4df1318263624f3f50f604
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562604"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367196"
 ---
 # <a name="no-locxamarinforms-triggers"></a>Триггеры Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithtriggers)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithtriggers)
 
 Триггеры позволяют декларативно задавать действия в XAML, которые изменяют внешний вид элементов управления при изменении событий или свойств. Кроме того, триггеры состояния, которые относятся к специализированной группе триггеров, определяют, когда следует применять [`VisualState`](xref:Xamarin.Forms.VisualState).
 

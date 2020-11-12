@@ -10,16 +10,16 @@ ms.date: 02/12/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 00b6617f754eb251eae0a7be9715deb840c33102
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 15529520668f4d6353fe99c13ddb2e6cc2801500
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562747"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367248"
 ---
 # <a name="custom-video-positioning"></a>Настраиваемая строка позиционирования видео
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
 
 На каждой платформе реализуются элементы управления транспортировкой, в том числе строка позиционирования. Эта строка похожа на ползунок или полосу прокрутки и отображает общую продолжительность видео, а также текущую позицию его воспроизведения. Кроме того, с помощью строки позиционирования пользователь может перемещаться вперед или назад в другую позицию воспроизведения.
 
@@ -421,7 +421,7 @@ if (newPosition.Seconds != Position.Seconds)
 
 Это хорошая рекомендация, однако в трех классах `VideoPlayerRenderer` при обновлении свойства `Position` таймер уже используется косвенным образом. Свойство `Position` изменяется в обработчике события `UpdateStatus`, которое вызывается только 10 раз в секунду.
 
-Таким образом, свойство `Position` объекта `VideoPlayer` может быть привязано к свойству `Position` объекта `PositionSlider` без риска для производительности, что продемонстрировано на странице **Настраиваемая строка позиционирования**:
+Таким образом, свойство `Position` объекта `VideoPlayer` может быть привязано к свойству `Position` объекта `PositionSlider` без риска для производительности, что продемонстрировано на странице **Настраиваемая строка позиционирования** :
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"

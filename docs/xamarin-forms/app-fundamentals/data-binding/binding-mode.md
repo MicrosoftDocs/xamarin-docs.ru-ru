@@ -10,18 +10,18 @@ ms.date: 05/01/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8a7c62ec6d7329227abd8f52644212341098185f
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 1ab0603555c55d969e1bee8ae709df3cac23de73
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556442"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373644"
 ---
 # <a name="no-locxamarinforms-binding-mode"></a>Режим привязки Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
-В [предыдущей статье](basic-bindings.md), в разделах **Альтернативная привязка кода** и **Альтернативная привязка XAML**, объект `Label` со свойством `Scale` привязывался к свойству `Value` объекта `Slider`. Так как начальное значение `Slider` равно 0, свойство `Scale` объекта `Label` также было равно 0, а не 1, поэтому объект `Label` исчезал.
+В [предыдущей статье](basic-bindings.md), в разделах **Альтернативная привязка кода** и **Альтернативная привязка XAML** , объект `Label` со свойством `Scale` привязывался к свойству `Value` объекта `Slider`. Так как начальное значение `Slider` равно 0, свойство `Scale` объекта `Label` также было равно 0, а не 1, поэтому объект `Label` исчезал.
 
 В примере [**DataBindingDemos**](/samples/xamarin/xamarin-forms-samples/databindingdemos) страница **Обратная привязка** аналогична программам в предыдущей статье, только привязка данных определяется для `Slider`, а не `Label`:
 
@@ -208,7 +208,7 @@ public class HslColorViewModel : INotifyPropertyChanged
 }
 ```
 
-Когда свойство `Color` меняется, статический метод `GetNearestColorName` в классе `NamedColor` (также входит в решение **DataBindingDemos**) получает ближайший именованный цвет и задает свойство `Name`. Это свойство `Name` имеет закрытый метод доступа `set`, поэтому его нельзя установить за пределами класса.
+Когда свойство `Color` меняется, статический метод `GetNearestColorName` в классе `NamedColor` (также входит в решение **DataBindingDemos** ) получает ближайший именованный цвет и задает свойство `Name`. Это свойство `Name` имеет закрытый метод доступа `set`, поэтому его нельзя установить за пределами класса.
 
 Если модель представления задана как источник привязки, инфраструктура привязки присоединяет обработчик к событию `PropertyChanged`. Таким образом, привязка получает уведомления об изменениях свойств и может задать целевые свойства на основе измененных значений.
 
@@ -287,7 +287,7 @@ public class HslColorViewModel : INotifyPropertyChanged
 
 Если режим привязки целевого свойства по умолчанию не подходит для конкретной привязки данных, можно переопределить его, задав свойство [`Mode`](xref:Xamarin.Forms.BindingBase.Mode) объекта `Binding` (или свойство [`Mode`](xref:Xamarin.Forms.Xaml.BindingExtension.Mode) расширения разметки `Binding`) одному из членов перечисления `BindingMode`.
 
-Однако, если указать для свойства `Mode` значение `TwoWay`, оно не всегда будет работать так, как вы ожидаете. Например, попробуйте изменить файл XAML **Альтернативная привязка XAML**, чтобы включить `TwoWay` в определение привязки:
+Однако, если указать для свойства `Mode` значение `TwoWay`, оно не всегда будет работать так, как вы ожидаете. Например, попробуйте изменить файл XAML **Альтернативная привязка XAML** , чтобы включить `TwoWay` в определение привязки:
 
 ```xaml
 <Label Text="TEXT"
@@ -301,7 +301,7 @@ public class HslColorViewModel : INotifyPropertyChanged
 
 Можно ожидать, что объект `Slider` будет инициализироваться с начальным значением свойства `Scale`, равным 1, но этого не происходит. Когда привязка `TwoWay` инициализируется, целевой объект сначала получает значение из источника, то есть свойство `Scale` имеет значение объекта `Slider` по умолчанию, равное 0. Когда привязка `TwoWay` устанавливается для объекта `Slider`, объект `Slider` получает первоначальное значение из источника.
 
-Можно задать режим привязки `OneWayToSource` в примере **альтернативной привязки XAML**:
+Можно задать режим привязки `OneWayToSource` в примере **альтернативной привязки XAML** :
 
 ```xaml
 <Label Text="TEXT"

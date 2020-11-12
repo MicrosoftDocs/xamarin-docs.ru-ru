@@ -10,16 +10,16 @@ ms.date: 01/13/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c89c6b50335405b56349e502f95b9d2975a04f73
-ms.sourcegitcommit: 145bd7550d19088c84949ecf5b1cc39002183234
+ms.openlocfilehash: ad65c46f216af9a24eb02ab55411f0a89ac61100
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185502"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374619"
 ---
 # <a name="no-locxamarinforms-control-templates"></a>Шаблоны элементов управления Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/templates-controltemplatedemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/templates-controltemplatedemos)
 
 Шаблоны элементов управления Xamarin.Forms позволяют определить визуальную структуру производных пользовательских элементов управления [`ContentView`](xref:Xamarin.Forms.ContentView) и производных страниц [`ContentPage`](xref:Xamarin.Forms.ContentPage). Шаблоны элементов управления отделяют пользовательский интерфейс элемента управления или страницы от логики, которая их реализует. Вы можете добавить дополнительное содержимое в шаблонный пользовательский элемент управления или шаблонную страницу в заранее определенное расположение.
 

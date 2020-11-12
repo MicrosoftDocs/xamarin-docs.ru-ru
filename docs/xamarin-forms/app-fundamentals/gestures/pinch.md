@@ -10,16 +10,16 @@ ms.date: 01/21/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: bb471787a4b3304be3df008fc3ecea66ff8263b3
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 4f7f0a1d8951166327b84f0003f5670f117d65f9
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560992"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375217"
 ---
 # <a name="add-a-pinch-gesture-recognizer"></a>Добавление распознавателя жестов сжатия
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-pinchgesture)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithgestures-pinchgesture)
 
 _Жест сжатия используется для интерактивного масштабирования и реализуется с помощью класса PinchGestureRecognizer. Стандартное назначение жеста сжатия — интерактивное масштабирование изображения в месте сжатия. Для этого изменяется масштаб содержимого в окне просмотра, как показано в этой статье._
 

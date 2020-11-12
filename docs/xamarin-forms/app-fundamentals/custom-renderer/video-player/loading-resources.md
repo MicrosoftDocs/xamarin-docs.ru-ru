@@ -10,16 +10,16 @@ ms.date: 02/12/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a1a0febfdb38e577363ba59e8d0a5ceda9464a26
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: be7f7d953b47af96d0325e227e24748624948433
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563501"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367170"
 ---
 # <a name="loading-application-resource-videos"></a>Загрузка видеоресурсов приложения
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
 
 Пользовательские отрисовщики для представления `VideoPlayer` могут воспроизводить видеофайлы, внедренные в проекты для отдельных платформ в виде ресурсов приложения. Однако текущая версия `VideoPlayer` не может обращаться к ресурсам, внедренным в библиотеку .NET Standard.
 
@@ -31,15 +31,15 @@ ms.locfileid: "91563501"
 
 ### <a name="ios-video-resources"></a>Видеоресурсы в iOS
 
-В проекте iOS видео можно хранить в папке **Resources** или во вложенной в нее папке. Видеофайл должен иметь `Build Action` типа `BundleResource`. Присвойте свойству `Path` объекта `ResourceVideoSource` имя файла, например **MyFile.mp4** для файла в папке **Resources** или **MyFolder/MyFile.mp4**, где **MyFolder** — это папка, вложенная в папку **Resources**.
+В проекте iOS видео можно хранить в папке **Resources** или во вложенной в нее папке. Видеофайл должен иметь `Build Action` типа `BundleResource`. Присвойте свойству `Path` объекта `ResourceVideoSource` имя файла, например **MyFile.mp4** для файла в папке **Resources** или **MyFolder/MyFile.mp4** , где **MyFolder**  — это папка, вложенная в папку **Resources**.
 
-В решении **VideoPlayerDemos** проект **VideoPlayerDemos.iOS** содержит в папке **Resources** вложенную папку **Videos**, в которой есть файл с именем **iOSApiVideo.mp4**. Это короткое видео, в котором показано, как найти документацию по классу iOS `AVPlayerViewController` на веб-сайте Xamarin.
+В решении **VideoPlayerDemos** проект **VideoPlayerDemos.iOS** содержит в папке **Resources** вложенную папку **Videos** , в которой есть файл с именем **iOSApiVideo.mp4**. Это короткое видео, в котором показано, как найти документацию по классу iOS `AVPlayerViewController` на веб-сайте Xamarin.
 
 ### <a name="android-video-resources"></a>Видеоресурсы в Android
 
-В проекте Android видео должно храниться в папке **raw**, вложенной в папку **Resources**. В папке **raw** не может быть вложенных папок. Видеофайл должен иметь `Build Action` типа `AndroidResource`. Присвойте свойству `Path` объекта `ResourceVideoSource` имя файла, например **MyFile.mp4**.
+В проекте Android видео должно храниться в папке **raw** , вложенной в папку **Resources**. В папке **raw** не может быть вложенных папок. Видеофайл должен иметь `Build Action` типа `AndroidResource`. Присвойте свойству `Path` объекта `ResourceVideoSource` имя файла, например **MyFile.mp4**.
 
-Проект **VideoPlayerDemos.Android** содержит папку **raw**, вложенную в папку **Resources** и содержащую файл с именем **AndroidApiVideo.mp4**.
+Проект **VideoPlayerDemos.Android** содержит папку **raw** , вложенную в папку **Resources** и содержащую файл с именем **AndroidApiVideo.mp4**.
 
 ### <a name="uwp-video-resources"></a>Видеоресурсы в UWP
 
@@ -87,7 +87,7 @@ namespace FormsVideoLibrary.iOS
 
 ### <a name="android-resource-loading"></a>Загрузка ресурсов в Android
 
-В Android представление `VideoPlayerRenderer` использует имя файла и имя пакета для формирования объекта `Uri`. Имя пакета — это имя приложения (в данном случае **VideoPlayerDemos.Android**), которое можно получить из статического свойства `Context.PackageName`. Полученный объект `Uri` затем передается в метод `SetVideoURI` класса `VideoView`:
+В Android представление `VideoPlayerRenderer` использует имя файла и имя пакета для формирования объекта `Uri`. Имя пакета — это имя приложения (в данном случае **VideoPlayerDemos.Android** ), которое можно получить из статического свойства `Context.PackageName`. Полученный объект `Uri` затем передается в метод `SetVideoURI` класса `VideoView`:
 
 ```csharp
 namespace FormsVideoLibrary.Droid
@@ -176,7 +176,7 @@ namespace FormsVideoLibrary.UWP
 </ContentPage>
 ```
 
-Если ресурс iOS хранится в папке **Resources**, а ресурс UWP — в корневой папке проекта, для всех платформ можно использовать одно и то же имя файла. В таком случае это имя можно напрямую присвоить свойству `Source` представления `VideoPlayer`.
+Если ресурс iOS хранится в папке **Resources** , а ресурс UWP — в корневой папке проекта, для всех платформ можно использовать одно и то же имя файла. В таком случае это имя можно напрямую присвоить свойству `Source` представления `VideoPlayer`.
 
 Так выглядит работающая страница:
 

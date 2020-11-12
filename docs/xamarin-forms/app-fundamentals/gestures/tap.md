@@ -10,16 +10,16 @@ ms.date: 01/21/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: fef28c88c0de0bd14eb1ab5868dc6433456184e1
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: d0b9b5a568a94208d5e177c88d2e73edb54b735c
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563436"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375191"
 ---
 # <a name="add-a-tap-gesture-recognizer"></a>Добавление распознавателя жестов касания
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-tapgesture)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithgestures-tapgesture)
 
 _Жест касания используется для распознавания касания и реализован с помощью класса TapGestureRecognizer._
 
@@ -43,7 +43,7 @@ tapGestureRecognizer.NumberOfTapsRequired = 2; // double-tap
 
 ## <a name="using-xaml"></a>Использование XAML
 
-Распознаватель жестов можно добавить к элементу управления в XAML с помощью присоединенных свойств. Синтаксис для добавления [`TapGestureRecognizer`](xref:Xamarin.Forms.TapGestureRecognizer) к изображению показан ниже (в этом случае определяется событие *двойного касания*).
+Распознаватель жестов можно добавить к элементу управления в XAML с помощью присоединенных свойств. Синтаксис для добавления [`TapGestureRecognizer`](xref:Xamarin.Forms.TapGestureRecognizer) к изображению показан ниже (в этом случае определяется событие *двойного касания* ).
 
 ```xaml
 <Image Source="tapped.jpg">

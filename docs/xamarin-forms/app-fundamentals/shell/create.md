@@ -10,16 +10,16 @@ ms.date: 05/24/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9ce36af6b8b2a70a7993ff9605c6a7b7735fd974
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: f4b15911f48b4260da8839f376800e95c63bf0e4
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563280"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373631"
 ---
 # <a name="create-a-no-locxamarinforms-shell-application"></a>Создание приложения оболочки Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
 Чтобы создать приложение оболочки Xamarin.Forms, сделайте следующее:
 
@@ -30,7 +30,7 @@ ms.locfileid: "91563280"
 
 ## <a name="subclass-the-shell-class"></a>Создание производного класса оболочки
 
-Чтобы создать приложение оболочки Xamarin.Forms, нужно сначала добавить XAML-файл в проект с общим кодом, который создает производный класс `Shell`. Файл можно назвать произвольно, но рекомендуется использовать имя **AppShell**. В следующем примере кода показан только что созданный файл **AppShell.xaml**:
+Чтобы создать приложение оболочки Xamarin.Forms, нужно сначала добавить XAML-файл в проект с общим кодом, который создает производный класс `Shell`. Файл можно назвать произвольно, но рекомендуется использовать имя **AppShell**. В следующем примере кода показан только что созданный файл **AppShell.xaml** :
 
 ```xaml
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
@@ -40,7 +40,7 @@ ms.locfileid: "91563280"
 </Shell>
 ```
 
-В следующем примере показан файл кода программной части **AppShell.xaml.cs**:
+В следующем примере показан файл кода программной части **AppShell.xaml.cs** :
 
 ```csharp
 using Xamarin.Forms;

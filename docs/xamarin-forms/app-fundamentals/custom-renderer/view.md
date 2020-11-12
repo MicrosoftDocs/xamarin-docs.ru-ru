@@ -7,7 +7,7 @@ ms.prod: xamarin ms.assetid: 915E25E7-4A6B-4F34-B7B4-07D5F4B240F2 ms.technology:
 ---
 # <a name="implementing-a-view"></a>Реализация представления
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-view)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/customrenderers-view)
 
 Пользовательские элементы управления пользовательского интерфейса _Xamarin.Forms должны быть производными от класса View, который используется для размещения макетов и элементов управления на экране. Эта статья описывает, как создать настраиваемый отрисовщик для пользовательского элемента управления Xamarin.Forms, который используется для отображения видеопотока для предварительного просмотра с камеры устройства._
 

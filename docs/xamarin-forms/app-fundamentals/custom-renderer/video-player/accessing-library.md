@@ -10,16 +10,16 @@ ms.date: 02/12/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ff9f44ad790f3acda1e855f3308942bb702e66ee
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 595eda84026a9b609f7bd0dadb72fdc9ac762a34
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563904"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93367245"
 ---
 # <a name="accessing-the-devices-video-library"></a>Доступ к видеотеке устройства
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
 
 Большинство современных мобильных устройств и настольных компьютеров позволяют записывать видео с помощью камеры. Создаваемые пользователем видеоролики сохраняются в виде файлов на устройстве. Эти файлы можно извлечь из библиотеки изображений и воспроизвести с помощью класса `VideoPlayer`, как и любые другие видеоролики.
 
@@ -149,7 +149,7 @@ namespace VideoPlayerDemos.Droid
 }
 ```
 
-Метод `OnCreate` в `MainActivity` сохраняет свой собственный экземпляр в статическом свойстве `Current`. Это позволяет реализации `IVideoPicker` получить экземпляр `MainActivity` для запуска средства выбора **, Выбор видео**:
+Метод `OnCreate` в `MainActivity` сохраняет свой собственный экземпляр в статическом свойстве `Current`. Это позволяет реализации `IVideoPicker` получить экземпляр `MainActivity` для запуска средства выбора **, Выбор видео** :
 
 ```csharp
 using System;

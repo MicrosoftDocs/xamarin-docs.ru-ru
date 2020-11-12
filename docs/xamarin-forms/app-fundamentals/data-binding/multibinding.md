@@ -7,16 +7,16 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/26/2020
-ms.openlocfilehash: 6a3154d159c491c6460e118395286aa33cfa7e7e
-ms.sourcegitcommit: 1550019cd1e858d4d13a4ae6dfb4a5947702f24b
+ms.openlocfilehash: 79d27cf9d6ba01235962b43ee7f05c904c265c2f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92897459"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370849"
 ---
 # <a name="xamarinforms-multi-bindings"></a>Множественные привязки Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
 Множественные привязки позволяют присоединять коллекцию объектов [`Binding`](xref:Xamarin.Forms.Binding) к одному свойству целевого объекта привязки. Они создаются с помощью класса `MultiBinding`, который вычисляет все объекты `Binding` и возвращает одно значение через экземпляр `IMultiValueConverter`, предоставляемый приложением. Кроме того, `MultiBinding` повторно вычисляет все объекты `Binding` при изменении каких-либо привязанных данных.
 

@@ -10,16 +10,16 @@ ms.date: 04/02/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ee027399aec51bb7ae4fac15e9c706c65d3af235
-ms.sourcegitcommit: d1980b2251999224e71c1289e4b4097595b7e261
+ms.openlocfilehash: fb9d5243e5be4d99d741349564854c9c54e7a1bb
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92928637"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373293"
 ---
 # <a name="no-locxamarinforms-shell-navigation"></a>Навигация по оболочке Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
 Оболочка Xamarin.Forms предоставляет улучшенные возможности навигации по интерфейсу на основе URI, позволяя переходить на любую страницу в приложении без соблюдения строгой иерархии. Кроме того, они также дают возможность перехода назад без необходимости прохода всех страниц в стеке навигации.
 

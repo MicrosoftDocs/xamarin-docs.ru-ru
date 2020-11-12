@@ -10,16 +10,16 @@ ms.date: 03/06/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 083c8b97d158f817dbe98212bc244e8d1cac845c
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 2d66464798860848e42e05bb3aaa36fc80e115b1
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556780"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93369406"
 ---
 # <a name="picking-a-photo-from-the-picture-library"></a>Выбор фотографии в библиотеке рисунков
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/dependencyservice/)
 
 Эта статья описывает создание приложения, позволяющего пользователю выбрать фотографию в библиотеке рисунков на телефоне. Так как Xamarin.Forms не содержит эту функцию, требуется использовать [`DependencyService`](xref:Xamarin.Forms.DependencyService) для доступа к собственным API на каждой платформе.
 

@@ -6,16 +6,16 @@ ms.assetid: FD8FE199-898B-4841-8041-CC9CA1A00917
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/29/2020
-ms.openlocfilehash: 9520f4e81403869542cf758627b8e3cfc9fabdd8
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: 2b289e5ffe4fba5c2f20caf0cf1d59cd277767f9
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91457982"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373423"
 ---
 # <a name="connect-to-local-web-services-from-ios-simulators-and-android-emulators"></a>Подключение к локальным веб-службам из iOS Simulator и Android Emulator
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-todorest/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/webservices-todorest/)
 
 Многие мобильные приложения используют веб-службы. На этапе разработки веб-службу обычно развертывают локально и подключаются к ней из мобильного приложения, выполняемого в iOS Simulator или Android Emulator. Это избавляет от необходимости развертывать веб-службу в размещенной конечной точке и позволяет упростить процесс отладки, так как и мобильное приложение, и веб-служба выполняются локально.
 

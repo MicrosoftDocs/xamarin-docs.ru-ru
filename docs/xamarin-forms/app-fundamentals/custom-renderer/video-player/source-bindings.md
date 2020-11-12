@@ -10,18 +10,18 @@ ms.date: 02/12/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d417f5e0b2b0bea5a3e129c87e94b289dc7201ed
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 812adbbb4a9572d38dd57a3edd5c1a561909f1b0
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562487"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374970"
 ---
 # <a name="binding-video-sources-to-the-player"></a>Привязка источников видео к проигрывателю
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos)
 
-Когда свойству `Source` представления `VideoPlayer` присваивается новый видеофайл, воспроизведение текущего видео останавливается и начинает воспроизводиться новое видео. Это демонстрируется на странице **Select Web Video** (Выбор видео из Интернета) в примере [**VideoPlayerDemos**](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos). На ней есть представление `ListView` с названиями трех видеороликов, на которые указывают ссылки в файле **App.xaml**:
+Когда свойству `Source` представления `VideoPlayer` присваивается новый видеофайл, воспроизведение текущего видео останавливается и начинает воспроизводиться новое видео. Это демонстрируется на странице **Select Web Video** (Выбор видео из Интернета) в примере [**VideoPlayerDemos**](/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos). На ней есть представление `ListView` с названиями трех видеороликов, на которые указывают ссылки в файле **App.xaml** :
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -99,7 +99,7 @@ namespace VideoPlayerDemos
 }
 ```
 
-Элемент `ListView` в файле **BindToVideoPlayer.xaml** содержит массив объектов `VideoInfo`, каждый из которых инициализируется с использованием названия видео и объекта `UriVideoSource` из словаря ресурсов в файле **App.xaml**:
+Элемент `ListView` в файле **BindToVideoPlayer.xaml** содержит массив объектов `VideoInfo`, каждый из которых инициализируется с использованием названия видео и объекта `UriVideoSource` из словаря ресурсов в файле **App.xaml** :
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -140,7 +140,7 @@ namespace VideoPlayerDemos
 
 Свойство `Source` представления `VideoPlayer` привязано к `ListView`. Свойство `Path` привязки задается как `SelectedItem.VideoSource`. Это составная строка, включающая два свойства: `SelectedItem` — это свойства элемента `ListView`. Выбранный элемент имеет тип `VideoInfo`, у которого есть свойство `VideoSource`.
 
-Так же как и в случае с первой страницей **Select Web Video**, элемент в `ListView` изначально не выбран. Поэтому, чтобы видео начало воспроизводиться, нужно выбрать один из видеороликов.
+Так же как и в случае с первой страницей **Select Web Video** , элемент в `ListView` изначально не выбран. Поэтому, чтобы видео начало воспроизводиться, нужно выбрать один из видеороликов.
 
 ## <a name="related-links"></a>Связанные ссылки
 

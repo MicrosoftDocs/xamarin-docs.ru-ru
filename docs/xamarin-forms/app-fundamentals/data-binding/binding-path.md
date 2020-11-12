@@ -10,16 +10,16 @@ ms.date: 01/05/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 154219f58c22005de0a0a2171aeedd04ec9f9ff9
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 4fd8c91ccf18e72c4e5881261637b7f41b2f3c79
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557963"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373618"
 ---
 # <a name="no-locxamarinforms-binding-path"></a>Путь привязки Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
 Во всех предыдущих примерах привязки данных в свойстве [`Path`](xref:Xamarin.Forms.Binding.Path) класса `Binding` (или свойстве [`Path`](xref:Xamarin.Forms.Xaml.BindingExtension.Path) расширения разметки `Binding`) указывалось одно свойство. В действительности `Path` может указывать на *вложенное свойство* (свойство свойства) или элемент коллекции.
 

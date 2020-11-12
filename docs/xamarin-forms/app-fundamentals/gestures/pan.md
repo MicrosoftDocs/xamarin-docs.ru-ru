@@ -10,16 +10,16 @@ ms.date: 01/21/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8c9968ac7de45f3e6e239f82ba43b53abd05a647
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 401924de371efb14095499a655a42642c3032d4b
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91558522"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375230"
 ---
 # <a name="add-a-pan-gesture-recognizer"></a>Добавление распознавателя жестов сдвига
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-pangesture)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithgestures-pangesture)
 
 _Жест сдвига используется для обнаружения движения пальцев по экрану и применения этого движения к содержимому. Он реализуется с помощью класса `PanGestureRecognizer`. Жест сдвига обычно используется для смещения изображения по горизонтали или вертикали, когда оно не помещается полностью в окне просмотра. Для этого изображение перемещается в пределах окна просмотра, как показано в этой статье._
 

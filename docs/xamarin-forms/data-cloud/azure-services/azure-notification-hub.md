@@ -11,16 +11,16 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 - Firebase
-ms.openlocfilehash: 6135d8caec196ded385bc0f962f007c41d20e2cb
-ms.sourcegitcommit: 1550019cd1e858d4d13a4ae6dfb4a5947702f24b
+ms.openlocfilehash: 498e3b0bd2cb88df3e04dc19c66dbe671a8378dd
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92897506"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374450"
 ---
 # <a name="send-and-receive-push-notifications-with-azure-notification-hubs-and-no-locxamarinforms"></a>Отправка и получение push-уведомлений с помощью Центров уведомлений Azure и Xamarin.Forms
 
-[![Скачать пример](~/media/shared/download.png)Скачать пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/webservices-azurenotificationhub/)
+[![Скачать пример](~/media/shared/download.png)Скачать пример](/samples/xamarin/xamarin-forms-samples/webservices-azurenotificationhub/)
 
 Push-уведомления передают информацию из серверной системы в мобильное приложение. Платформы Apple, Google и других поставщиков имеют свои собственные службы push-уведомлений (Push Notification Services, PNS). Центры уведомлений Azure позволяют вашему серверному приложению взаимодействовать с единым центром, который возьмет на себя отправку уведомлений всем PNS-службам на различных платформах.
 
@@ -122,7 +122,7 @@ public static class AppConstants
 Чтобы подключить приложение из примера к Центру уведомлений Azure, задайте в `AppConstants` следующие значения:
 
 * `NotificationHubName`. Используйте имя Центра уведомлений Azure, созданного на портале Azure.
-* `ListenConnectionString`. Это значение указано в Центре уведомлений Azure в разделе **Политики доступа** .
+* `ListenConnectionString`. Это значение указано в Центре уведомлений Azure в разделе **Политики доступа**.
 
 На следующем снимке экрана показано, где находятся эти значения на портале Azure:
 

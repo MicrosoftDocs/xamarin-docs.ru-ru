@@ -10,16 +10,16 @@ ms.date: 03/31/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3d0cbae406861565d91b0bbc9f39d661c547ca1e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: dcfb713da09a9dab1974110e161d8045132f6b2f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561161"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375022"
 ---
 # <a name="customizing-a-webview"></a>Настройка WebView
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-hybridwebview)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/customrenderers-hybridwebview)
 
 _Xamarin.Forms `WebView` — это представление, позволяющее отображать веб-содержимое и содержимое HTML в приложении. В этой статье рассказывается, как создать пользовательский отрисовщик, расширяющий возможности `WebView` и позволяющий вызывать код C# из JavaScript._
 
@@ -148,7 +148,7 @@ public partial class HybridWebViewPage : ContentPage
 
 1. Создайте подкласс класса `WkWebViewRenderer` в iOS и класса `WebViewRenderer` в Android и UWP, который отрисовывает пользовательский элемент управления.
 1. Переопределите метод `OnElementChanged`, который отрисовывает [`WebView`](xref:Xamarin.Forms.WebView), и напишите логику для его настройки. Этот метод вызывается при создании объекта `HybridWebView`.
-1. Добавьте атрибут `ExportRenderer` в класс пользовательского отрисовщика или *AssemblyInfo.cs*, чтобы указать, что он будет использоваться для отрисовки пользовательского элемента управления Xamarin.Forms. Этот атрибут используется для регистрации пользовательского отрисовщика в Xamarin.Forms.
+1. Добавьте атрибут `ExportRenderer` в класс пользовательского отрисовщика или *AssemblyInfo.cs* , чтобы указать, что он будет использоваться для отрисовки пользовательского элемента управления Xamarin.Forms. Этот атрибут используется для регистрации пользовательского отрисовщика в Xamarin.Forms.
 
 > [!NOTE]
 > Для большинства элементов Xamarin.Forms предоставлять пользовательский отрисовщик в проекте для каждой платформы необязательно. Если пользовательский отрисовщик не зарегистрирован, будет использоваться отрисовщик по умолчанию для базового класса элемента управления. Однако настраиваемые отрисовщики необходимы в каждом зависящем от платформы проекте при отрисовке элемента [View](xref:Xamarin.Forms.View).
@@ -300,7 +300,7 @@ namespace CustomRenderer.iOS
 > [!NOTE]
 > Класс `WKWebView` поддерживается только в iOS 8 и более поздних версий.
 
-Кроме того, необходимо изменить файл **Info.plist**, включив в него следующие значения:
+Кроме того, необходимо изменить файл **Info.plist** , включив в него следующие значения:
 
 ```xml
 <key>NSAppTransportSecurity</key>

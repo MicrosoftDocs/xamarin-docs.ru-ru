@@ -10,16 +10,16 @@ ms.date: 10/08/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d24ff6831bb8b52d840ff2db7c13c3eb674b7bd8
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 5ccff2fd24537be0bbf2d809b20a00bc35667c95
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91555792"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366871"
 ---
 # <a name="no-locxamarinforms-messagingcenter"></a>Xamarin.Forms MessagingCenter
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/usingmessagingcenter)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/usingmessagingcenter)
 
 Шаблон "публикация-подписка" — это шаблон обмена сообщениями, в котором издатели отправляют сообщение без знания о получателях, известных как подписчики. Аналогичным образом подписчики прослушивают определенные сообщения, не зная издателей.
 
@@ -94,7 +94,7 @@ MessagingCenter.Subscribe<MainPage, string>(this, "Hi", async (sender, arg) =>
 Если подписчики больше не должны получать сообщения, можно отменить подписку на них. Для этого используется одна из перегрузок [`MessagingCenter.Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*).
 
 ```csharp
-MessagingCenter.Unsubscribe<MainPage>(this, "Hi");
+MessagingCenter.Unsubscribe<MainPage>(this, "Hi");
 ```
 
 В этом примере метод [`Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*) отменяет подписывание объекта `this` на сообщения `Hi`, отправляемые типом `MainPage`.
@@ -102,7 +102,7 @@ MessagingCenter.Unsubscribe<MainPage>(this, "Hi");
 Подписку на сообщения, содержащие полезные данные, необходимо отменять с помощью перегрузки [`Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*), указывающей два универсальных аргумента:
 
 ```csharp
-MessagingCenter.Unsubscribe<MainPage, string>(this, "Hi");
+MessagingCenter.Unsubscribe<MainPage, string>(this, "Hi");
 ```
 
 В этом примере метод [`Unsubscribe`](xref:Xamarin.Forms.MessagingCenter.Unsubscribe*) отменяет подписывание объекта `this` на сообщения `Hi`, отправляемые типом `MainPage`, полезные данные которого — `string`.

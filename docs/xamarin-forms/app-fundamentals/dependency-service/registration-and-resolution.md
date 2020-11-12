@@ -10,16 +10,16 @@ ms.date: 06/05/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9e8c0eeb70393cd3a5c6db7b99146b69b79ec14d
-ms.sourcegitcommit: 01ccefd54c0ced724784dbe1aec9ecfc9b00e633
+ms.openlocfilehash: a3112191b7392ee3fcc0f383682acf40cf8f65cd
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92630248"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373475"
 ---
 # <a name="no-locxamarinforms-dependencyservice-registration-and-resolution"></a>Регистрация и разрешение класса Xamarin.Forms DependencyService
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/dependencyservice/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/dependencyservice/)
 
 При использовании Xamarin.Forms [`DependencyService`](xref:Xamarin.Forms.DependencyService) для вызова собственных функций платформы реализации платформы нужно зарегистрировать в `DependencyService`, после чего разрешить их из общего кода для вызова.
 

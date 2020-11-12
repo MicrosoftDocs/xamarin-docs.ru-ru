@@ -10,18 +10,18 @@ ms.date: 10/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: af56e84598f73693a8cb0e93573b789a716c194a
-ms.sourcegitcommit: 1550019cd1e858d4d13a4ae6dfb4a5947702f24b
+ms.openlocfilehash: 30e77d4978e9a191c1ba19e80109f9854cc46f8f
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92897472"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375243"
 ---
 # <a name="add-drag-and-drop-gesture-recognizers"></a>Добавление распознавателя жестов перетаскивания
 
 ![Предварительный выпуск API](~/media/shared/preview.png)
 
-[![Скачать пример](~/media/shared/download.png) Скачайте пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/)
+[![Скачать пример](~/media/shared/download.png) Скачайте пример](/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/)
 
 Жест перетаскивания позволяет перетаскивать элементы и связанные с ними пакеты данных из одного расположения на экране в другое, используя непрерывный жест. Перетаскивание можно выполнять в одном приложении или запустить в одном приложении и закончить в другом.
 
@@ -80,7 +80,7 @@ ms.locfileid: "92897472"
 > [!TIP]
 > В iOS, Android и UWP жест перетаскивания инициируется с помощью длительного нажатия, за которым следует перетаскивание.
 
-Пример использования команд `DragGestureRecognizer` см. в [образце](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/).
+Пример использования команд `DragGestureRecognizer` см. в [образце](/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/).
 
 ## <a name="build-a-data-package"></a>Создание пакета данных
 
@@ -214,7 +214,7 @@ void OnDragStarting(object sender, DragStartingEventArgs e)
 
 В этом примере, когда источник перетаскивания отпускается на целевом объекте отпускания [`Image`](xref:Xamarin.Forms.Image), источник перетаскивания копируется в целевой объект отпускания при условии, что источником перетаскивания является [`ImageSource`](xref:Xamarin.Forms.ImageSource). Это происходит потому, что Xamarin.Forms автоматически копирует перетаскиваемые изображения и текст в совместимые целевые объекты отпускания.
 
-Пример использования команд `DropGestureRecognizer` см. в [образце](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/).
+Пример использования команд `DropGestureRecognizer` см. в [образце](/samples/xamarin/xamarin-forms-samples/workingwithgestures-draganddropgesture/).
 
 ## <a name="handle-the-dragover-event"></a>Обработка события DragOver
 

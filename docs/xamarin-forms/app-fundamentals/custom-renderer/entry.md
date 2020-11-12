@@ -10,16 +10,16 @@ ms.date: 11/26/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a96e81314ad48ab0618083c215048e0678d09768
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c04626a3139a7fa44b2b13b2c1dd343188322f3c
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557378"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368509"
 ---
 # <a name="customizing-an-entry"></a>Настройка элемента управления Entry
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/customrenderers-entry)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/customrenderers-entry)
 
 _Элемент управления Xamarin.Forms Entry допускает редактирование одной строки текста. В этой статье показано, как создать пользовательский отрисовщик для элемента управления Entry, чтобы переопределить собственный способ отрисовки по умолчанию с помощью настройки для конкретной платформы._
 

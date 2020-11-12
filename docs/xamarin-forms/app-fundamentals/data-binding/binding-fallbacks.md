@@ -10,16 +10,16 @@ ms.date: 08/16/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 24a9a351dbe6932b09add2ee7c3111256e013201
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: d288d43bcee5719c1ab3667812e5bac4891bb188
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91560693"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366325"
 ---
 # <a name="no-locxamarinforms-binding-fallbacks"></a>Резервные значения привязки в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
 Иногда может происходить сбой привязки данных из-за того, что не удалось разрешить источник привязки, или из-за того, что успешно выполненная привязка возвращает значение `null`. Хотя в таких ситуациях можно применять преобразователи величин или другой дополнительный код, повысить надежность привязок можно путем определения резервных значений, которые используются в случае сбоя привязки. Для этого можно определить свойства [`FallbackValue`](xref:Xamarin.Forms.BindingBase.FallbackValue) и [`TargetNullValue`](xref:Xamarin.Forms.BindingBase.TargetNullValue) в выражении привязки. Так как эти свойства находятся в классе [`BindingBase`](xref:Xamarin.Forms.BindingBase), их можно использовать с обычными привязками, множественными привязками, скомпилированными привязками и расширением разметки `Binding`.
 

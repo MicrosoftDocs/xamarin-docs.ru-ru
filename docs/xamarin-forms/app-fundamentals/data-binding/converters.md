@@ -10,20 +10,20 @@ ms.date: 01/05/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2a5912d18787543b05b3937f2b8b5c6a36b04873
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 7a2d7251f3896994ab75aba07c2fb03af6558c4e
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91556819"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370927"
 ---
 # <a name="no-locxamarinforms-binding-value-converters"></a>Преобразователи значений привязки Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/databindingdemos)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
 Привязки данных обычно передают данные из исходного свойства в целевое свойство (а иногда из целевого свойства в исходное). Эта передача проста в том случае, когда исходные и целевые свойства относятся к одному типу или когда один тип может быть преобразован в другой тип путем неявного преобразования. Если это не так, должно выполняться преобразование типов.
 
-В статье, посвященной [**форматированию строк**](string-formatting.md), было показано, как можно использовать свойство `StringFormat` привязки данных для преобразования любого типа в строку. Для других типов преобразований необходимо написать специальный код в классе, реализующем интерфейс [`IValueConverter`](xref:Xamarin.Forms.IValueConverter). (Универсальная платформа Windows содержит аналогичный класс с именем [`IValueConverter`](/uwp/api/Windows.UI.Xaml.Data.IValueConverter/) в пространстве имен `Windows.UI.Xaml.Data`, однако этот `IValueConverter` находится в пространстве имен `Xamarin.Forms`.) Классы, реализующие `IValueConverter`, называются *преобразователями величин*, а также *преобразователями привязки* или *преобразователями значений привязки*.
+В статье, посвященной [**форматированию строк**](string-formatting.md), было показано, как можно использовать свойство `StringFormat` привязки данных для преобразования любого типа в строку. Для других типов преобразований необходимо написать специальный код в классе, реализующем интерфейс [`IValueConverter`](xref:Xamarin.Forms.IValueConverter). (Универсальная платформа Windows содержит аналогичный класс с именем [`IValueConverter`](/uwp/api/Windows.UI.Xaml.Data.IValueConverter/) в пространстве имен `Windows.UI.Xaml.Data`, однако этот `IValueConverter` находится в пространстве имен `Xamarin.Forms`.) Классы, реализующие `IValueConverter`, называются *преобразователями величин* , а также *преобразователями привязки* или *преобразователями значений привязки*.
 
 ## <a name="the-ivalueconverter-interface"></a>Интерфейс IValueConverter
 

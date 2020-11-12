@@ -10,16 +10,16 @@ ms.date: 07/30/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a0ec978c1947cde4bd6f7fd619ad8cd2f0dbdbce
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 90f06c0379cc40a946970ad4248dc8527ee34f3a
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563046"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93372786"
 ---
 # <a name="no-locxamarinforms-shell-flyout"></a>Всплывающий элемент оболочки Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
 Всплывающее меню выполняет роль главного меню для приложения оболочки. Его можно вызвать специальным значком или жестом пальцем от края экрана. Всплывающее меню состоит из необязательного заголовка, вложенных элементов всплывающего меню и необязательных пунктов меню.
 

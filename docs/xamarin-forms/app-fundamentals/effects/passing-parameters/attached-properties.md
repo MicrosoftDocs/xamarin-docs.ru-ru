@@ -10,16 +10,16 @@ ms.date: 08/05/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c014396f9670ece93295c2c8da1738f9dc7dae9e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 103839c7016b7e9776e80f3f3459f8dc92b3bcbb
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91555987"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93371655"
 ---
 # <a name="passing-effect-parameters-as-attached-properties"></a>Передача параметров эффекта в качестве присоединенных свойств
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/effects-shadoweffectruntimechange)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/effects-shadoweffectruntimechange)
 
 _Присоединенные свойства можно использовать для определения параметров эффекта, реагирующих на изменения свойств времени выполнения. В этой статье описывается использование присоединенных свойств для передачи параметров эффекту и изменение параметра во время выполнения._
 

@@ -10,16 +10,16 @@ ms.date: 12/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: d29dafd5bcdf991f275580850d77a4923d37286e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 46f88b1672690645a8e71aba2c0dbe44d7b123cd
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563059"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368769"
 ---
 # <a name="no-locxamarinforms-master-detail-page"></a>Главная страница и страница сведений в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-masterdetailpage)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/navigation-masterdetailpage)
 
 _Xamarin.Forms MasterDetailPage представляет собой страницу, управляющую двумя страницами связанных данных — главной страницей, которая представляет элементы, и страницей сведений, которая представляет сведения об элементах на главной странице. В этой статье описываются принципы работы со страницей MasterDetailPage и перехода между управляемыми страницами данных._
 
@@ -254,11 +254,11 @@ public partial class MainPage : MasterDetailPage
 
 Принципы управления главными страницами и страницами сведений для объекта [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) зависят от того, выполняется ли приложение на телефоне или планшете, от ориентации устройства, а также от значения свойства [`MasterBehavior`](xref:Xamarin.Forms.MasterDetailPage.MasterBehavior). Это свойство определяет, каким образом будет отображаться страница сведений. Возможные значения:
 
-- **Default** — страницы отображаются с использованием платформы по умолчанию.
-- **Popover** — страница сведений частично перекрывает главную страницу.
-- **Split** — главная страница отображается слева, а страница сведений выводится справа.
-- **SplitOnLandscape** — экран разделяется в том случае, если устройство имеет альбомную ориентацию.
-- **SplitOnPortrait** — экран разделяется в том случае, если устройство имеет книжную ориентацию.
+- **Default**  — страницы отображаются с использованием платформы по умолчанию.
+- **Popover**  — страница сведений частично перекрывает главную страницу.
+- **Split**  — главная страница отображается слева, а страница сведений выводится справа.
+- **SplitOnLandscape**  — экран разделяется в том случае, если устройство имеет альбомную ориентацию.
+- **SplitOnPortrait**  — экран разделяется в том случае, если устройство имеет книжную ориентацию.
 
 В следующем примере кода XAML показано, как задать свойство [`MasterBehavior`](xref:Xamarin.Forms.MasterDetailPage.MasterBehavior) на объекте [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage):
 

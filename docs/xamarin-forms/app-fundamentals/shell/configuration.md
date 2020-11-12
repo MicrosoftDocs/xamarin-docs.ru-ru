@@ -10,16 +10,16 @@ ms.date: 01/29/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3f3eca53f9f7347472a554b4ec30b83f40a96e0e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: c5be4e600b370c39387302aea42645c8684501ea
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563306"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374390"
 ---
 # <a name="no-locxamarinforms-shell-page-configuration"></a>Конфигурация страницы оболочки Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
 Класс `Shell` определяет присоединенные свойства, с помощью которых можно настраивать внешний вид страниц в приложениях оболочки Xamarin.Forms. Сюда относится настройка цветов страниц, установка режима презентации страницы, отключение панели навигации, отключение панели вкладок и отображение представлений на панели навигации.
 

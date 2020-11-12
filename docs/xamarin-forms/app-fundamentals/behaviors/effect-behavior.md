@@ -10,16 +10,16 @@ ms.date: 04/06/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3a085226da3c63f4f151bc657976bba384c02170
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 6cc6b1a33f2334239d2135d6ffe72c24d2243335
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91561148"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374749"
 ---
 # <a name="reusable-effectbehavior"></a>Повторно используемая реакция на событие EffectBehavior
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/behaviors-effectbehavior)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/behaviors-effectbehavior)
 
 _Реакции на события удобно использовать для добавления эффекта в элемент управления, удаления стереотипного эффекта, обработки кода из файлов кода программной части. В этой статье демонстрируется создание и использование реакции на событие Xamarin.Forms для добавления эффекта в элемент управления._
 
@@ -29,8 +29,8 @@ _Реакции на события удобно использовать для
 
 Для использования реакции на событие необходимо задать следующие ее свойства:
 
-- **Group** — значение атрибута [`ResolutionGroupName`](xref:Xamarin.Forms.ResolutionGroupNameAttribute) для класса эффекта;
-- **Name** — значение атрибута [`ExportEffect`](xref:Xamarin.Forms.ExportEffectAttribute) для класса эффекта.
+- **Group**  — значение атрибута [`ResolutionGroupName`](xref:Xamarin.Forms.ResolutionGroupNameAttribute) для класса эффекта;
+- **Name**  — значение атрибута [`ExportEffect`](xref:Xamarin.Forms.ExportEffectAttribute) для класса эффекта.
 
 Дополнительные сведения об эффектах см. в статье [Эффекты](~/xamarin-forms/app-fundamentals/effects/index.md).
 

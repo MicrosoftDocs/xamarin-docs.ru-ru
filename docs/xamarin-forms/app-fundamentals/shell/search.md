@@ -10,16 +10,16 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f0d8766420f876898a3f10c2f23a35a0b0afeb43
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: bfac785e6bfa3dce698d5657d0be1079e675ecc6
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91563475"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366351"
 ---
 # <a name="no-locxamarinforms-shell-search"></a>Поиск по оболочке Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
 Оболочка Xamarin.Forms включает встроенные функции поиска, предоставляемые классом `SearchHandler`. Возможность поиска можно добавить на страницу, указав для присоединенного свойства `Shell.SearchHandler` в качестве значения объект подкласса `SearchHandler`. После этого в верхней части страницы появится поле поиска:
 
