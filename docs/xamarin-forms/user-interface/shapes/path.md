@@ -10,12 +10,12 @@ ms.date: 06/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 62bfb13f3aa4c09da76eca6723a34e6e8a72853d
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 1ba44903f20d0431c27f2d49429b2feb9c9a51e0
+ms.sourcegitcommit: f920ac0724f09e5c9b4f36be1995a5a17a6d9f95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373735"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94591064"
 ---
 # <a name="no-locxamarinforms-shapes-path"></a>Xamarin.Forms Shapes: путь
 
@@ -56,9 +56,6 @@ ms.locfileid: "93373735"
 `Data`Строка начинается с команды Move, обозначенной параметром `M` , который устанавливает абсолютную начальную точку для пути. `L` команда line, которая создает прямую линию от начальной точки до указанной конечной точки. `Z` Команда Close, которая создает линию, соединяющую текущую точку с начальной точкой. Результат представляет собой треугольник:
 
 ![Треугольник пути](path-images/triangle.png "Треугольник пути")
-
-> [!NOTE]
-> Синтаксис разметки пути доступен только в XAML.
 
 Дополнительные сведения о синтаксисе разметки пути см. в разделе [ Xamarin.Forms синтаксис разметки пути](path-markup-syntax.md).
 

@@ -6,17 +6,17 @@ ms.assetid: DF103686-4A92-40FA-9CF1-A9376293B13C
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 04/01/2020
+ms.date: 11/10/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 ms.custom: video
-ms.openlocfilehash: 90068096eced1fd1ddd2eb59b845eb4d5e41286f
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 60d16183e1a2ea162c97bbf8b30636a5a9999204
+ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93368886"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94590273"
 ---
 # <a name="no-locxamarinforms-resource-dictionaries"></a>Xamarin.Forms Словари ресурсов
 
@@ -133,7 +133,7 @@ Xamarin.FormsПриложение содержит только класс, пр
 
 ## <a name="stand-alone-resource-dictionaries"></a>Независимые словари ресурсов
 
-Класс, производный от, [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) также может находиться в отдельном изолированном файле. Затем результирующий файл может совместно использоваться приложениями.
+Класс, производный от, [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) также может находиться в автономном файле XAML. Затем файл XAML может совместно использоваться приложениями.
 
 Чтобы создать такой файл, добавьте в проект новое **представление содержимого** или элемент **страницы содержимого** (но не **представление содержимого** или **страницу содержимого** с файлом C#). Удалите файл кода программной части и в XAML-файле измените имя базового класса с [`ContentView`](xref:Xamarin.Forms.ContentView) или [`ContentPage`](xref:Xamarin.Forms.ContentPage) на [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) . Кроме того, удалите `x:Class` атрибут из корневого тега файла.
 
@@ -167,6 +167,17 @@ Xamarin.FormsПриложение содержит только класс, пр
 ```
 
 В этом примере [`ResourceDictionary`](xref:Xamarin.Forms.ResourceDictionary) компонент содержит один ресурс, который является объектом типа [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) . **Миресаурцедиктионари. XAML** можно использовать, объединив его с другим словарем ресурсов.
+
+По умолчанию компоновщик удаляет автономные файлы XAML из сборок выпуска, если поведение компоновщика настроено для связывания всех сборок. Чтобы гарантировать, что автономные файлы XAML остаются в сборке выпуска, выполните следующие действия.
+
+1. Добавьте настраиваемый `Preserve` атрибут в сборку, содержащую автономные файлы XAML. Дополнительные сведения см. в разделе [Сохранение кода](~/ios/deploy-test/linker.md).
+1. Задайте `Preserve` атрибут на уровне сборки:
+
+    ```csharp
+    [assembly:Preserve(AllMembers = true)]
+    ```
+
+Дополнительные сведения о связывании см. в статье [связывание приложений Xamarin. iOS](~/ios/deploy-test/linker.md) и [связывание в Android](~/android/deploy-test/linker.md).
 
 ## <a name="merged-resource-dictionaries"></a>Объединенные словари ресурсов
 
@@ -239,7 +250,9 @@ Xamarin.FormsПриложение содержит только класс, пр
 - [Словари ресурсов (пример)](/samples/xamarin/xamarin-forms-samples/xaml-resourcedictionaries)
 - [Расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md)
 - [Стили Xamarin.Forms](~/xamarin-forms/user-interface/styles/index.md)
-- [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
+- [Компоновка приложений Xamarin.iOS](~/ios/deploy-test/linker.md)
+- [Linking on Android](~/android/deploy-test/linker.md) (Компоновка на Android)
+- [API ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)
 
 ## <a name="related-video"></a>Связанные видео
 

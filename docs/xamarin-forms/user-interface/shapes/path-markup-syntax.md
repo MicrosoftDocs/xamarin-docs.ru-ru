@@ -6,16 +6,16 @@ ms.assetid: A2C1BD59-1A16-4E26-A825-0338E2AF9E65
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/19/2020
+ms.date: 11/13/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c774b795fce50b32f01b50c29cb71dd5fd02585c
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 4f60a48d2d8b43ea08ccc36401103d8987e48b1c
+ms.sourcegitcommit: f920ac0724f09e5c9b4f36be1995a5a17a6d9f95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373527"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94591051"
 ---
 # <a name="no-locxamarinforms-shapes-path-markup-syntax"></a>Xamarin.Forms Фигуры: синтаксис разметки пути
 
@@ -43,7 +43,13 @@ Xamarin.Forms синтаксис разметки пути позволяет с
 В синтаксисе разметки пути пробелы не требуются перед командами или после них. Кроме того, два числа не обязательно должны быть разделены запятыми или пробелами, но это может быть достигнуто только в том случае, если строка является однозначной.
 
 > [!TIP]
-> Язык разметки пути использует синтаксис, совместимый с определениями путей к изображениям масштабируемых векторных изображений (SVG), поэтому он может быть полезен для переноса графики из формата SVG.
+> Синтаксис разметки пути совместим с определениями пути к графическому рисунку (SVG), поэтому он может быть полезен для переноса графики из формата SVG.
+
+Хотя синтаксис разметки пути предназначен для использования в XAML, его можно преобразовать в `Geometry` объект в коде, вызвав `ConvertFromInvariantString` метод в `PathGeometryConverter` классе:
+
+```csharp
+Geometry pathData = (Geometry)new PathGeometryConverter().ConvertFromInvariantString("M13.908992,16.207977 L32.000049,16.207977 32.000049,31.999985 13.908992,30.109983Z");
+```
 
 ## <a name="move-command"></a>Команда перемещения
 

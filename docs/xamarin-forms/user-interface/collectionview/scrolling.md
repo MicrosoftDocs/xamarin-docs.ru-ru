@@ -10,12 +10,12 @@ ms.date: 09/17/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1872f86c0e7be6ab07b4e962d17be7d8030c1d96
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 557c82ac9318faaef5628a15989af2982a7f5ba4
+ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373163"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94590419"
 ---
 # <a name="no-locxamarinforms-collectionview-scrolling"></a>Xamarin.Forms Прокрутка CollectionView
 
@@ -132,7 +132,7 @@ collectionView.ScrollTo(monkey, position: ScrollToPosition.MakeVisible);
 
 В этом примере кода создается минимальная прокрутка, необходимая для прокрутки элемента на представление:
 
-[![Снимок экрана CollectionViewого вертикального списка с прокруткой элемента в представлении в iOS и Android](scrolling-images/scrolltoposition-makevisible.png "Вертикальный список CollectionView с прокруткой элемента")](scrolling-images/scrolltoposition-makevisible-large.png#lightbox "Вертикальный список CollectionView с прокруткой элемента")
+[![Снимок экрана с CollectionViewным вертикальным списком с Скроллтопоситион. Макевисибле, в iOS и Android](scrolling-images/scrolltoposition-makevisible.png "Вертикальный список CollectionView с прокруткой элемента")](scrolling-images/scrolltoposition-makevisible-large.png#lightbox "Вертикальный список CollectionView с прокруткой элемента")
 
 > [!NOTE]
 > [`ScrollToPosition.MakeVisible`](xref:Xamarin.Forms.ScrollToPosition)Элемент используется по умолчанию, если `position` аргумент не указан при вызове `ScrollTo` метода.
@@ -147,7 +147,7 @@ collectionView.ScrollTo(monkey, position: ScrollToPosition.Start);
 
 Этот пример кода приводит к прокрутке элемента до начала представления:
 
-[![Снимок экрана CollectionViewого вертикального списка с прокруткой элемента в представлении в iOS и Android](scrolling-images/scrolltoposition-start.png "Вертикальный список CollectionView с прокруткой элемента")](scrolling-images/scrolltoposition-start-large.png#lightbox "Вертикальный список CollectionView с прокруткой элемента")
+[![Снимок экрана с CollectionViewным вертикальным списком с Скроллтопоситион. Start, в iOS и Android](scrolling-images/scrolltoposition-start.png "Вертикальный список CollectionView с прокруткой элемента")](scrolling-images/scrolltoposition-start-large.png#lightbox "Вертикальный список CollectionView с прокруткой элемента")
 
 ### <a name="center"></a>Center
 
@@ -159,7 +159,7 @@ collectionView.ScrollTo(monkey, position: ScrollToPosition.Center);
 
 В этом примере кода показано, что элемент прокручивается в центр представления:
 
-[![Снимок экрана CollectionViewого вертикального списка с прокруткой элемента в представлении в iOS и Android](scrolling-images/scrolltoposition-center.png "Вертикальный список CollectionView с прокруткой элемента")](scrolling-images/scrolltoposition-center-large.png#lightbox "Вертикальный список CollectionView с прокруткой элемента")
+[![Снимок экрана с CollectionViewным вертикальным списком с Скроллтопоситион. Center, в iOS и Android](scrolling-images/scrolltoposition-center.png "Вертикальный список CollectionView с прокруткой элемента")](scrolling-images/scrolltoposition-center-large.png#lightbox "Вертикальный список CollectionView с прокруткой элемента")
 
 ### <a name="end"></a>Конец
 
@@ -171,17 +171,17 @@ collectionView.ScrollTo(monkey, position: ScrollToPosition.End);
 
 Этот пример кода приводит к прокрутке элемента до конца представления:
 
-[![Снимок экрана CollectionViewого вертикального списка с прокруткой элемента в представлении в iOS и Android](scrolling-images/scrolltoposition-end.png "Вертикальный список CollectionView с прокруткой элемента")](scrolling-images/scrolltoposition-end-large.png#lightbox "Вертикальный список CollectionView с прокруткой элемента")
+[![Снимок экрана с CollectionViewным вертикальным списком с Скроллтопоситион. end, в iOS и Android](scrolling-images/scrolltoposition-end.png "Вертикальный список CollectionView с прокруткой элемента")](scrolling-images/scrolltoposition-end-large.png#lightbox "Вертикальный список CollectionView с прокруткой элемента")
 
 ## <a name="control-scroll-position-when-new-items-are-added"></a>Управление позицией прокрутки при добавлении новых элементов
 
 [`CollectionView`](xref:Xamarin.Forms.CollectionView) Определяет `ItemsUpdatingScrollMode` свойство, которое поддерживается связываемым свойством. Это свойство возвращает или задает `ItemsUpdatingScrollMode` значение перечисления, представляющее поведение прокрутки `CollectionView` при добавлении новых элементов к нему. Перечисление `ItemsUpdatingScrollMode` определяет следующие члены:
 
-- `KeepItemsInView` корректирует смещение прокрутки, чтобы при добавлении новых элементов отображался первый видимый элемент.
-- `KeepScrollOffset` поддерживает смещение прокрутки относительно начала списка при добавлении новых элементов.
-- `KeepLastItemInView` корректирует смещение прокрутки для сохранения последнего элемента, отображаемого при добавлении новых элементов.
+- `KeepItemsInView` сохраняет первый элемент в списке, отображаемом при добавлении новых элементов.
+- `KeepScrollOffset` гарантирует, что текущая позиция прокрутки сохраняется при добавлении новых элементов.
+- `KeepLastItemInView` корректирует смещение прокрутки для сохранения последнего элемента списка, отображаемого при добавлении новых элементов.
 
-Значение свойства по умолчанию `ItemsUpdatingScrollMode` — `KeepItemsInView` . Поэтому при добавлении новых элементов к [`CollectionView`](xref:Xamarin.Forms.CollectionView) первому видимому элементу в списке будут отображаться. Чтобы убедиться, что новые добавленные элементы всегда видны в нижней части списка, `ItemsUpdatingScrollMode` свойство должно иметь значение `KeepLastItemInView` :
+Значение свойства по умолчанию `ItemsUpdatingScrollMode` — `KeepItemsInView` . Поэтому при добавлении новых элементов к [`CollectionView`](xref:Xamarin.Forms.CollectionView) первому элементу в списке будут отображаться. Чтобы обеспечить отображение последнего элемента в списке при добавлении новых элементов, задайте `ItemsUpdatingScrollMode` для свойства значение `KeepLastItemInView` :
 
 ```xaml
 <CollectionView ItemsUpdatingScrollMode="KeepLastItemInView">

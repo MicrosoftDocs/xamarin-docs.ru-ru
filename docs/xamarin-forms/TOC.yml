@@ -948,8 +948,6 @@ items:
             href: data-cloud/azure-services/azure-search.md
           - name: Проверка
             href: data-cloud/azure-services/azure-functions.md
-          - name: Служба Azure SignalR
-            href: data-cloud/azure-services/azure-signalr.md
       - name: Azure Cognitive Services
         items:
           - name: Обзор Cognitive Services

@@ -10,12 +10,12 @@ ms.date: 01/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 945b6656895b4c148ac4b138af0c4922f9e3bc8f
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 58d0da21c81586a2cee2268c5d2df668eab0515a
+ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93365701"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94590302"
 ---
 # <a name="no-locxamarinforms-carouselview-scrolling"></a>Xamarin.Forms Прокрутка Карауселвиев
 
@@ -27,7 +27,7 @@ ms.locfileid: "93365701"
 
 - `HorizontalScrollBarVisibility`Тип `ScrollBarVisibility` , который указывает, когда отображается горизонтальная полоса прокрутки.
 - `IsDragging`Тип `bool` , который указывает, `CarouselView` прокручивается ли прокрутка. Это свойство доступно только для чтения, для которого значение по умолчанию — `false` .
-- `IsScrollAnimated`Тип `bool` , который указывает, будет ли выполняться анимация при прокрутке `CarouselView` . Значение по умолчанию — `true`.
+- `IsScrollAnimated`Тип `bool` , который указывает, будет ли выполняться анимация при прокрутке `CarouselView` . Значение по умолчанию — `true`.
 - `ItemsUpdatingScrollMode`Тип `ItemsUpdatingScrollMode` , который представляет поведение прокрутки `CarouselView` при добавлении новых элементов к нему.
 - `VerticalScrollBarVisibility`Тип `ScrollBarVisibility` , который указывает, когда отображается вертикальная полоса прокрутки.
 
@@ -169,11 +169,11 @@ carouselViewView.ScrollTo(monkey, position: ScrollToPosition.End);
 
 [`CarouselView`](xref:Xamarin.Forms.CarouselView) Определяет `ItemsUpdatingScrollMode` свойство, которое поддерживается связываемым свойством. Это свойство возвращает или задает `ItemsUpdatingScrollMode` значение перечисления, представляющее поведение прокрутки `CarouselView` при добавлении новых элементов к нему. Перечисление `ItemsUpdatingScrollMode` определяет следующие члены:
 
-- `KeepItemsInView` корректирует смещение прокрутки, чтобы при добавлении новых элементов отображался первый видимый элемент.
-- `KeepScrollOffset` поддерживает смещение прокрутки относительно начала списка при добавлении новых элементов.
-- `KeepLastItemInView` корректирует смещение прокрутки для сохранения последнего элемента, отображаемого при добавлении новых элементов.
+- `KeepItemsInView` сохраняет первый элемент в списке, отображаемом при добавлении новых элементов.
+- `KeepScrollOffset` гарантирует, что текущая позиция прокрутки сохраняется при добавлении новых элементов.
+- `KeepLastItemInView` корректирует смещение прокрутки для сохранения последнего элемента списка, отображаемого при добавлении новых элементов.
 
-Значение свойства по умолчанию `ItemsUpdatingScrollMode` — `KeepItemsInView` . Поэтому при добавлении новых элементов к [`CarouselView`](xref:Xamarin.Forms.CarouselView) первому видимому элементу в списке будут отображаться. Чтобы убедиться, что новые добавленные элементы всегда видны в нижней части списка, `ItemsUpdatingScrollMode` свойство должно иметь значение `KeepLastItemInView` :
+Значение свойства по умолчанию `ItemsUpdatingScrollMode` — `KeepItemsInView` . Поэтому при добавлении новых элементов к [`CarouselView`](xref:Xamarin.Forms.CarouselView) первому элементу в списке будут отображаться. Чтобы обеспечить отображение последнего элемента в списке при добавлении новых элементов, задайте `ItemsUpdatingScrollMode` для свойства значение `KeepLastItemInView` :
 
 ```xaml
 <CarouselView ItemsUpdatingScrollMode="KeepLastItemInView">
