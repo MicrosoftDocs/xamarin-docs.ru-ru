@@ -10,21 +10,21 @@ ms.date: 07/18/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ad71dc5f5389f1676698a761a138b3f76ffa9fa0
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 75c79c7a5300cf5708bb46740bec11f84b59c786
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136686"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374027"
 ---
 # <a name="summary-of-chapter-20-async-and-file-io"></a>Сводка по главе 20. Асинхронные и файловые операции ввода-вывода
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter20)
 
-> [!NOTE] 
-> Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
- Графический пользовательский интерфейс должен последовательно реагировать на события пользовательского ввода. Это означает, что вся обработка пользовательских событий должна выполняться в одном потоке, который часто называют *основным потоком* или *потоком пользовательского интерфейса*.
+Графический пользовательский интерфейс должен последовательно реагировать на события пользовательского ввода. Это означает, что вся обработка пользовательских событий должна выполняться в одном потоке, который часто называют *основным потоком* или *потоком пользовательского интерфейса*.
 
 Пользователи ожидают, что графический интерфейс будет реагировать без задержек. Это означает, что программа должна быстро обрабатывать события пользовательского ввода. Если это невозможно, обработку следует передать на выполнение во вторичные потоки.
 
@@ -40,7 +40,7 @@ ms.locfileid: "84136686"
 Сам класс `Page` содержит три асинхронных метода для отображения окон с предупреждениями:
 
 - [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert(System.String,System.String,System.String)) возвращает объект `Task`;
-- [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert(System.String,System.String,System.String,System.String)) возвращает объект `Task<bool>`;
+- [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert(System.String,System.String,System.String,System.String)) возвращает объект `Task<bool>`.
 - [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet(System.String,System.String,System.String,System.String[])) возвращает объект `Task<string>`.
 
 Объекты `Task` указывают, что эти методы реализуют асинхронную модель на основе задач (TAP). Эти объекты `Task` быстро возвращаются методом. Возвращаемые значения `Task<T>` составляют так называемое обещание того, что после завершения задачи будет доступно значение типа `TResult`. Возвращаемое значение `Task` указывает на асинхронное действие, которое будет выполнено, но не возвращает значения.
@@ -102,13 +102,13 @@ ms.locfileid: "84136686"
 
 Многократно используемый код удобнее всего хранить в библиотеках. Конечно же, это становится намного сложнее, если разные фрагменты повторно используемого кода предназначены для совершенно разных операционных систем.
 
-Один из возможных подходов демонстрируется в решении [**Xamarin.FormsBook.Platform**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform). Это решение содержит семь разных проектов:
+Один из возможных подходов демонстрируется в решении [ **Xamarin.FormsBook.Platform**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform). Это решение содержит семь разных проектов:
 
-- [**Xamarin.FormsBook.Platform**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform) — обычная библиотека PCL для Xamarin.Forms.
-- [**Xamarin.FormsBook.Platform.iOS**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.iOS) — библиотека классов для iOS.
-- [**Xamarin.FormsBook.Platform.Android**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.Android) — библиотека классов для Android.
-- [**Xamarin.FormsBook.Platform.UWP**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.UWP) — библиотека классов для Универсальной платформы Windows.
-- [**Xamarin.FormsBook.Platform.WinRT**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.WinRT) — общий проект для кода, которые используется на всех платформах Windows.
+- [ **Xamarin.FormsBook.Platform**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform) — обычная библиотека Xamarin.Forms PCL;
+- [ **Xamarin.FormsBook.Platform.iOS**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.iOS) — библиотека классов для iOS;
+- [ **Xamarin.FormsBook.Platform.Android**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.Android) — библиотека классов для Android;
+- [ **Xamarin.FormsBook.Platform.UWP**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.UWP) — библиотека классов для Универсальной платформы Windows;
+- [ **Xamarin.FormsBook.Platform.WinRT**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.WinRT) — общий проект для кода, которые используется на всех платформах Windows.
 
 Все проекты для отдельных платформ (кроме **Xamarin.FormsBook.Platform.WinRT**) содержат ссылки на **Xamarin.FormsBook.Platform**. Три проекта для Windows содержат ссылки на **Xamarin.FormsBook.Platform.WinRT**.
 
@@ -126,7 +126,7 @@ ms.locfileid: "84136686"
 
 Чтобы использовать эти библиотеки, решение приложения должно включать все проекты в решении **Xamarin.FormsBook.Platform**, и каждый из проектов приложений должен иметь ссылку на соответствующую библиотеку из **Xamarin.FormsBook.Platform**.
 
-В решении [**Xamarin.FormsBook.Platform**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter20/TextFileAsync) демонстрируется использование библиотек **Xamarin.FormsBook.Platform**. Каждый из этих проектов вызывает `Toolkit.Init`. Приложение использует асинхронные функции файлового ввода-вывода.
+В решении [**TextFileAsync**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter20/TextFileAsync) демонстрируется использование библиотек **Xamarin.FormsBook.Platform**. Каждый из этих проектов вызывает `Toolkit.Init`. Приложение использует асинхронные функции файлового ввода-вывода.
 
 ### <a name="keeping-it-in-the-background"></a>Оставляем работать в фоновом режиме
 

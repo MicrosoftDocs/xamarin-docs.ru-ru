@@ -10,19 +10,19 @@ ms.date: 07/18/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ece93730100001e8339a5f50cdb7ac437d96fa62
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 721d68db48843ee614f16d4c4237f2c753319561
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136738"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373488"
 ---
 # <a name="summary-of-chapter-16-data-binding"></a>Сводная информация о главе 16. привязка данных,
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter16)
 
-> [!NOTE] 
-> Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Программистам часто приходится писать обработчики событий, которые отслеживают изменение свойства одного объекта и используют его для изменения значения свойства в другом объекте. Этот процесс можно автоматизировать с помощью технологии *привязки данных*. Привязки данных обычно определяются в XAML и становятся частью определения пользовательского интерфейса.
 
@@ -39,7 +39,7 @@ ms.locfileid: "84136738"
 
 Следующие два класса поддерживают расширения разметки XAML для привязок:
 
-- [`BindingExtension`](xref:Xamarin.Forms.Xaml.BindingExtension) поддерживает расширение разметки `Binding`;
+- [`BindingExtension`](xref:Xamarin.Forms.Xaml.BindingExtension) поддерживает расширение разметки `Binding`.
 - [`ReferenceExtension`](xref:Xamarin.Forms.Xaml.ReferenceExtension) поддерживает расширение разметки `x:Reference`.
 
 В привязке данных участвуют два интерфейса:
@@ -128,7 +128,7 @@ ms.locfileid: "84136738"
 
 Если исходное и целевое свойства привязки имеют разные типы, преобразование между этими типами можно выполнить с помощью преобразователя привязок. Этот класс реализует интерфейс [`IValueConverter`](xref:Xamarin.Forms.IValueConverter) и содержит два метода: [`Convert`](xref:Xamarin.Forms.IValueConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)) для преобразования исходного значения в целевое и [`ConvertBack`](xref:Xamarin.Forms.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)) для преобразования целевого значения в исходное.
 
-Класс [`IntToBoolConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/IntToBoolConverter.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) служит примером преобразования `int` в `bool`. Это демонстрируется в примере [**ButtonEnabler**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter16/ButtonEnabler), который включает `Button` только в том случае, если в `Entry` введен хотя бы один символ.
+Класс [`IntToBoolConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/IntToBoolConverter.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) служит примером преобразования `int` в `bool`. Это демонстрируется в примере [**ButtonEnabler**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter16/ButtonEnabler), который включает `Button` только в том случае, если в `Entry` введен хотя бы один символ.
 
 Класс [`BoolToStringConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/BoolToStringConverter.cs) преобразует `bool` в `string` и определяет два свойства, чтобы указать текст для возвращаемых значений `false` и `true`.
 [`BoolToColorConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/BoolToColorConverter.cs) действует аналогично. В примере [**SwitchText**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter16/SwitchText) показано использование этих двух преобразователей для отображения разных текстов разными цветами на основе значения параметра `Switch`.

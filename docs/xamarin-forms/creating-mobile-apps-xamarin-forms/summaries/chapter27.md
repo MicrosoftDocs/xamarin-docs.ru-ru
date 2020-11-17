@@ -10,19 +10,19 @@ ms.date: 07/18/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4b0a3e14126dc8c92a1d1b60db7dbb2afd8e8c12
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 6b117688e1bf85266c274a44e6a4b1fda1ef5134
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136595"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375152"
 ---
 # <a name="summary-of-chapter-27-custom-renderers"></a>Сводная информация о Главе 27. Пользовательские отрисовщики
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter27)
 
-> [!NOTE] 
-> Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Элемент Xamarin.Forms, например `Button`, преобразуется для просмотра с помощью платформенной кнопки, инкапсулированной в класс с именем `ButtonRenderer`.  Ниже приведены версии для [iOS`ButtonRenderer`](https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Platform.iOS/Renderers/ButtonRenderer.cs), [Android`ButtonRenderer`](https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Platform.Android/Renderers/ButtonRenderer.cs) и [UWP`ButtonRenderer`](https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Platform.UAP/ButtonRenderer.cs).
 
@@ -39,7 +39,7 @@ ms.locfileid: "84136595"
 - [ **Xamarin.Forms.Platform.UAP**](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Platform.UAP)
 
 > [!NOTE]
-> Сборки `WinRT`, упомянутые в книге, больше не являются частью этого решения. 
+> Сборки `WinRT`, упомянутые в книге, больше не являются частью этого решения.
 
 В примере [**PlatformClassHierarchy**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter27/PlatformClassHierarchy) показана иерархия классов для сборок, которые являются допустимыми для исполняющей платформы.
 
@@ -80,7 +80,7 @@ ms.locfileid: "84136595"
 
 ## <a name="renderers-and-properties"></a>Отрисовщики и свойства
 
-Следующий набор отрисовщиков рисует эллипс и находится в различных проектах решения [**Xamarin.FormsBook.Platform**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform).
+Следующий набор отрисовщиков рисует эллипс и находится в различных проектах решения [ **Xamarin.FormsBook.Platform**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform).
 
 Класс [`EllipseView`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform/EllipseView.cs) принадлежит платформе **Xamarin.FormsBook.Platform**. Класс похож на `BoxView` и определяет только одно свойство: `Color` типа `Color`.
 

@@ -10,19 +10,19 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e8feb636057f1e11c7df90236dee44697203d51c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 6dec0c3e3fc4d25aecfe4e4141c4cc285fd7f8d8
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136865"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366195"
 ---
 # <a name="summary-of-chapter-9-platform-specific-api-calls"></a>Сводная информация о Главе 9. Вызовы API конкретных платформ
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter09)
 
-> [!NOTE] 
-> Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Иногда требуется выполнить код, меняющийся в зависимости от платформы. В этой главе рассматриваются методы.
 
@@ -40,7 +40,7 @@ ms.locfileid: "84136865"
 
 ## <a name="dependencyservice-and-the-portable-class-library"></a>DependencyService и Переносимая библиотека классов
 
-> [!NOTE] 
+> [!NOTE]
 > Переносимые библиотеки классов заменены библиотеками .NET Standard. Все примеры кода в этой книге преобразованы для использования библиотек .NET Standard.
 
 Обычно библиотека не может получить доступ к классам в проектах приложений. По-видимому, это ограничение не позволяет использовать в библиотеке метод, показанный в **PlatInfoSap2**. Однако Xamarin.Forms содержит класс с именем [`DependencyService`](xref:Xamarin.Forms.DependencyService), который использует отражение .NET для доступа к открытым классам в проекте приложения из библиотеки.

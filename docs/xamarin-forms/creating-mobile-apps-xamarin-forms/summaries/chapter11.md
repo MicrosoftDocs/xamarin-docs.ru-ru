@@ -10,22 +10,25 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: edc3dfd97457fe93a04edd82574f6ed419f5fdc1
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: e2858d0606cf9c5c97a3457b5b29f620e7da2bad
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136803"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375139"
 ---
 # <a name="summary-of-chapter-11-the-bindable-infrastructure"></a>Сводная информация о Главе 11. Инфраструктура c возможностью привязки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11)
 
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
+
 Каждый программист, работавший с C#, знает концепцию *свойств*. Свойства в C# содержат методы доступа для *присвоения* и (или) *получения* значения. Они часто называются *свойствами среды CLR* (общеязыковой среды выполнения).
 
 Xamarin.Forms использует расширенное определение свойства, именуемое *привязываемым свойством*, которое инкапсулировано классом [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) и поддерживается классом [`BindableObject`](xref:Xamarin.Forms.BindableObject). Эти классы связаны, но во многом отличаются. `BindableProperty` используется для определения самого свойства, а `BindableObject` похож на `object`, так как является базовым классом для классов, определяющих привязываемые свойства.
 
-## <a name="the-xamarinforms-class-hierarchy"></a>Иерархия классов Xamarin.Forms
+## <a name="the-no-locxamarinforms-class-hierarchy"></a>Иерархия классов Xamarin.Forms
 
 В примере [**ClassHierarchy**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11/ClassHierarchy) с помощью отражения демонстрируются иерархия классов Xamarin.Forms и решающая роль, которую в этой иерархии играет `BindableObject`. `BindableObject` является производным от `Object` и родительским классом для [`Element`](xref:Xamarin.Forms.Element), от которого, в свою очередь, наследуется [`VisualElement`](xref:Xamarin.Forms.VisualElement). Это родительский класс для [`Page`](xref:Xamarin.Forms.Page) и [`View`](xref:Xamarin.Forms.View), который является родительским классом для [`Layout`](xref:Xamarin.Forms.Layout):
 
@@ -63,7 +66,7 @@ Xamarin.Forms использует расширенное определение
 
 Чтобы определить собственные привязываемые свойства, вызовите статический метод [`BindableProperty.Create`](xref:Xamarin.Forms.BindableProperty.Create(System.String,System.Type,System.Type,System.Object,Xamarin.Forms.BindingMode,Xamarin.Forms.BindableProperty.ValidateValueDelegate,Xamarin.Forms.BindableProperty.BindingPropertyChangedDelegate,Xamarin.Forms.BindableProperty.BindingPropertyChangingDelegate,Xamarin.Forms.BindableProperty.CoerceValueDelegate,Xamarin.Forms.BindableProperty.CreateDefaultValueDelegate)) для создания статического поля только для чтения с типом `BindableProperty`.
 
-Это действие демонстрируется в классе [`AltLabel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/AltLabel.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). Класс является производным от `Label` и позволяет указать размер шрифта в пунктах. Применение этого класса демонстрируется в примере [**FramedText**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11/PointSizedText).
+Это действие демонстрируется в классе [`AltLabel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/AltLabel.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). Класс является производным от `Label` и позволяет указать размер шрифта в пунктах. Применение этого класса демонстрируется в примере [**FramedText**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11/PointSizedText).
 
 Для метода `BindableProperty.Create` обязательными являются четыре аргумента:
 

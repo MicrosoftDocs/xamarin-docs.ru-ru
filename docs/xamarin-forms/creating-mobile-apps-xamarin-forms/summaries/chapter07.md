@@ -10,19 +10,19 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0b92988e1e838072fca0d8a284455a62db05e757
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: d69c5c96138024f6a45d71013b259b2c47a20da3
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136868"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370186"
 ---
 # <a name="summary-of-chapter-7-xaml-vs-code"></a>Сводная информация о Главе 7. Сравнение XAML и кода
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter07)
 
 > [!NOTE]
-> Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Xamarin.Forms поддерживает язык разметки XAML, основанный на формате XML. Это название расшифровывается как "расширяемый язык разметки для приложений" (Extensible Application Markup Language) и произносится "заммель". XAML можно использовать вместо C# для определения макета пользовательского интерфейса в приложении Xamarin.Forms и для определения привязок между элементами пользовательского интерфейса и базовыми данными.
 

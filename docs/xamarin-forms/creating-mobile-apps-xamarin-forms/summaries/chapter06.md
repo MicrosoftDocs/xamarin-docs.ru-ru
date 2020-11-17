@@ -10,16 +10,19 @@ ms.date: 07/18/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f9bafbf4af2a89acd02d436604e882be87cbde8c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 8a95f4a88ea0adff78475dab8699308fbe49aa46
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136842"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370212"
 ---
 # <a name="summary-of-chapter-6-button-clicks"></a>Сводка по главе 6. Нажатия кнопки
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter06)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 [`Button`](xref:Xamarin.Forms.Button) — это представление, позволяющее пользователю инициировать команду. `Button` определяется текстом (и, при необходимости, изображением, как показано в [главе 13 "Растровые изображения"](chapter13.md)). Следовательно, `Button` определяет множество тех же свойств, что и `Label`:
 

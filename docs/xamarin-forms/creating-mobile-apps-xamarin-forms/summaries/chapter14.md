@@ -10,16 +10,19 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5aa62927efe0a9803efbddaef97ac6557edccd6c
-ms.sourcegitcommit: c3329ab25d377907d8804cdd5e26dc84a274f39c
+ms.openlocfilehash: 09011647428e2af1bdfcdb2f9def8da64ef84144
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88130907"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374851"
 ---
 # <a name="summary-of-chapter-14-absolute-layout"></a>Сводная информация о Главе 14. Абсолютный макет
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter14)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Как и `StackLayout`, [`AbsoluteLayout`](xref:Xamarin.Forms.AbsoluteLayout) является производным от `Layout<View>` и наследует свойство `Children`. `AbsoluteLayout` реализует систему макета, в которой программисту нужно указывать позиции дочерних элементов и их размер (необязательно). Эти позиции определяются по координатам левого верхнего угла дочернего элемента относительно левого верхнего угла `AbsoluteLayout`, выраженным в не зависящих от устройства единицах измерения. `AbsoluteLayout` также реализует функции пропорционального размещения и изменения размера.
 

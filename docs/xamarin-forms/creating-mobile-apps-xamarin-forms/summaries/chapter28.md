@@ -10,19 +10,19 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 301dc65c7909603e117717a993959e3c73fa2d32
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 25b5ad1ef7b1d5d3c545d7977ad735c18affef8e
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84133410"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375117"
 ---
 # <a name="summary-of-chapter-28-location-and-maps"></a>Сводка по главе 28. Расположение и карты
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter28)
 
 > [!NOTE]
-> Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Xamarin.Forms поддерживает элемент [`Map`](xref:Xamarin.Forms.Maps.Map), который наследует от `View`. Из-за специальных требований платформы, связанных с использованием карт, они реализуются в отдельной сборке **Xamarin.Forms.Maps** и используют другое пространство имен: `Xamarin.Forms.Maps`.
 
@@ -61,7 +61,7 @@ Xamarin.Forms поддерживает элемент [`Map`](xref:Xamarin.Forms
 
 ### <a name="the-location-tracker-api"></a>API отслеживания расположения
 
-Решение [**Xamarin.FormsBook.Platform**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform) содержит код для API отслеживания расположения. Структура [`GeographicLocation`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform/GeographicLocation.cs) инкапсулирует широту и долготу. Интерфейс [`ILocationTracker`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform/ILocationTracker.cs) определяет два метода для запуска и приостановки отслеживания расположения, а также событие, информирующее о доступности нового расположения.
+Решение [ **Xamarin.FormsBook.Platform**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Platform) содержит код для API отслеживания расположения. Структура [`GeographicLocation`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform/GeographicLocation.cs) инкапсулирует широту и долготу. Интерфейс [`ILocationTracker`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform/ILocationTracker.cs) определяет два метода для запуска и приостановки отслеживания расположения, а также событие, информирующее о доступности нового расположения.
 
 #### <a name="the-ios-location-manager"></a>Диспетчер расположения в iOS
 
@@ -97,7 +97,7 @@ Xamarin.Forms поддерживает элемент [`Map`](xref:Xamarin.Forms
 
 Приложения UWP должны иметь возможность устройства `location`, отмеченную в файле Package.appxmanifest.
 
-## <a name="working-with-xamarinformsmaps"></a>Работа с Xamarin.Forms.Maps
+## <a name="working-with-no-locxamarinformsmaps"></a>Работа с Xamarin.Forms.Maps
 
 К использованию класса `Map` применяются сразу несколько требований.
 
@@ -141,7 +141,7 @@ Xamarin.Forms поддерживает элемент [`Map`](xref:Xamarin.Forms
 - [`Satellite`](xref:Xamarin.Forms.Maps.MapType.Satellite)
 - [`Hybrid`](xref:Xamarin.Forms.Maps.MapType.Hybrid)
 
-В файле [MapTypesPage.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/MapTypesPage.xaml) показано, как использовать переключатель для выбора типа карты. Здесь используется класс [`RadioButtonManager`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/RadioButtonManager.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) и класс на основе файла [MapTypeRadioButton.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/MapTypeRadioButton.xaml).
+В файле [MapTypesPage.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/MapTypesPage.xaml) показано, как использовать переключатель для выбора типа карты. Здесь используется класс [`RadioButtonManager`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/RadioButtonManager.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) и класс на основе файла [MapTypeRadioButton.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/MapTypeRadioButton.xaml).
 
 ### <a name="map-coordinates"></a>Координаты на карте
 
@@ -163,7 +163,7 @@ Xamarin.Forms поддерживает элемент [`Map`](xref:Xamarin.Forms
 
 - [конструктор `Distance`](xref:Xamarin.Forms.Maps.Distance.%23ctor(System.Double)) с расстоянием в метрах;
 - статический метод [`Distance.FromMeters`](xref:Xamarin.Forms.Maps.Distance.FromMeters(System.Double));
-- статический метод [`Distance.FromKilometers`](xref:Xamarin.Forms.Maps.Distance.FromKilometers(System.Double));
+- статический метод [`Distance.FromKilometers`](xref:Xamarin.Forms.Maps.Distance.FromKilometers(System.Double)).
 - статический метод [`Distance.FromMiles`](xref:Xamarin.Forms.Maps.Distance.FromMiles(System.Double)).
 
 Это значение можно получить из трех свойств:
@@ -176,7 +176,7 @@ Xamarin.Forms поддерживает элемент [`Map`](xref:Xamarin.Forms
 
 ### <a name="position-extensions"></a>Расширения для определения положения
 
-Впервые в этой книге упоминается библиотека [**Xamarin.FormsBook.Toolkit.Maps**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit.Maps), которая содержит типы, зависящие от реализации карты, но не зависящие от платформы. Класс [`PositionExtensions`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit.Maps/Xamarin.FormsBook.Toolkit.Maps/PositionExtensions.cs) имеет метод `ToString` для `Position` и другой метод для вычисления расстояния между двумя значениями `Position`.
+Впервые в этой книге упоминается библиотека [ **Xamarin.FormsBook.Toolkit.Maps**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit.Maps), которая содержит типы, зависящие от реализации карты, но не зависящие от платформы. Класс [`PositionExtensions`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit.Maps/Xamarin.FormsBook.Toolkit.Maps/PositionExtensions.cs) имеет метод `ToString` для `Position` и другой метод для вычисления расстояния между двумя значениями `Position`.
 
 ### <a name="setting-an-initial-location"></a>Настройка исходного положения
 

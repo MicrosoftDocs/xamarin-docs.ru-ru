@@ -10,16 +10,19 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8f23034df684e778677e4f2e480e1c41807536fb
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: b2083a8dd17749074258c8bd5e6d1a7374c758f9
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136816"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93368496"
 ---
 # <a name="summary-of-chapter-10-xaml-markup-extensions"></a>Сводка по главе 10. Расширения разметки XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter10)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Как правило, средство синтаксического анализа XAML преобразует любую строку, заданную в качестве значения атрибута, в тип свойства на основе стандартных преобразований для базовых типов данных .NET или производной класса [`TypeConverter`](xref:Xamarin.Forms.TypeConverter), присоединенной к свойству или типу этого свойства с помощью [`TypeConverterAttribute`](xref:Xamarin.Forms.TypeConverterAttribute).
 
@@ -92,7 +95,7 @@ ms.locfileid: "84136816"
 
 Вы можете создавать собственные расширения разметки XAML, создав класс, реализующий интерфейс [`IMarkupExtension`](xref:Xamarin.Forms.Xaml.IMarkupExtension), с помощью метода [`ProvideValue`](xref:Xamarin.Forms.Xaml.IMarkupExtension.ProvideValue(System.IServiceProvider)).
 
-Класс [`HslColorExtension`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/HslColorExtension.cs) соответствует этому требованию. Он создает значение типа `Color` на основе значений свойств с именами `H`, `S`, `L` и `A`. Этот класс является первым элементом в библиотеке Xamarin.Forms под названием [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit), который создается и используется в этой книге.
+Класс [`HslColorExtension`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/HslColorExtension.cs) соответствует этому требованию. Он создает значение типа `Color` на основе значений свойств с именами `H`, `S`, `L` и `A`. Этот класс является первым элементом в библиотеке Xamarin.Forms под названием [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit), который создается и используется в этой книге.
 
 В примере [**CustomExtensionDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter10/CustomExtensionDemo) показано, как ссылаться на эту библиотеку и применять пользовательское расширение разметки.
 

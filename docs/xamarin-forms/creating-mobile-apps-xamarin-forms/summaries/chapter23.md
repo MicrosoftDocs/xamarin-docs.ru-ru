@@ -10,16 +10,19 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9a0206354254f79756e29f834c85837240736eca
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: bdbc795c0669115f822e6908590a3754af31a2d0
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136660"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373995"
 ---
 # <a name="summary-of-chapter-23-triggers-and-behaviors"></a>Сводка по главе 23. Триггеры и реакции на событие
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Триггеры и реакции на событие похожи тем, что используются в файлах XAML для упрощения взаимодействий элементов за пределами использования привязок данных и расширения функциональных возможностей элементов XAML. Как триггеры, так и реакции на событие почти всегда сочетаются с визуальными объектами пользовательского интерфейса.
 
@@ -73,7 +76,7 @@ ms.locfileid: "84136660"
 
 Чтобы использовать его, нужно написать производный от [`TriggerAction<T>`](xref:Xamarin.Forms.TriggerAction`1) класс, обычно это `TriggerAction<VisualElement>`. Определите свойства в этом классе. Это простые свойства CLR, а не привязываемые свойства, так как `TriggerAction` не наследует от `BindableObject`. Необходимо переопределить метод [`Invoke`](xref:Xamarin.Forms.TriggerAction`1.Invoke*), который вызывается при активации действия. В качестве аргумента он принимает целевой элемент.
 
-Примером служит класс [`ScaleAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ScaleAction.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). Он вызывает свойство `ScaleTo` для анимации свойства `Scale` указанного элемента. Так как одно из его свойств имеет тип `Easing`, класс [`EasingConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/EasingConverter.cs) позволяет использовать в XAML стандартные статические поля `Easing`.
+В качестве примера [`ScaleAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ScaleAction.cs) используется класс в библиотеке [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). Он вызывает свойство `ScaleTo` для анимации свойства `Scale` указанного элемента. Так как одно из его свойств имеет тип `Easing`, класс [`EasingConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/EasingConverter.cs) позволяет использовать в XAML стандартные статические поля `Easing`.
 
 В примере [**EntrySwell**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/EntrySwell) показано, как вызывать `ScaleAction` из `EventTrigger` объектов, отслеживающих события `Focused` и `Unfocused`.
 
@@ -88,7 +91,7 @@ ms.locfileid: "84136660"
 
 ### <a name="more-event-triggers"></a>Дополнительные триггеры событий
 
-Класс [`ScaleUpAndDownAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ScaleUpAndDownAction.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) дважды вызывает `ScaleTo` для увеличения и уменьшения размера. Пример [**ButtonGrowth**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/ButtonGrowth) использует этот прием в `EventTrigger` с примененным стилем, чтобы обеспечить визуальное подтверждение нажатия `Button`. Эта двойная анимация также поддерживается двумя действиями в коллекции типа [`DelayedScaleAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/DelayedScaleAction.cs).
+Класс [`ScaleUpAndDownAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ScaleUpAndDownAction.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) дважды вызывает `ScaleTo` для увеличения и уменьшения размера. Пример [**ButtonGrowth**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/ButtonGrowth) использует этот прием в `EventTrigger` с примененным стилем, чтобы обеспечить визуальное подтверждение нажатия `Button`. Эта двойная анимация также поддерживается двумя действиями в коллекции типа [`DelayedScaleAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/DelayedScaleAction.cs).
 
 Класс [`ShiverAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ShiverAction.cs) из библиотеки **Xamarin.FormsBook.Toolkit** определяет действие дрожания с возможностью настройки. Эта техника демонстрируется в примере [**ShiverButtonDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/ShiverButtonDemo).
 
@@ -137,13 +140,13 @@ ms.locfileid: "84136660"
 
 В качестве аргумента принимается элемент, к которому присоединяется реакция на событие. Как правило, метод `OnAttachedTo` присоединяет некоторые обработчики событий, а `OnDetachingFrom` отсоединяет их. Так как этот класс обычно сохраняет некоторые сведения о состоянии, его нельзя использовать совместно в `Style`.
 
-Пример [**BehaviorEntryValidation**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/BehaviorEntryValidation) похож на **TriggerEntryValidation** с той разницей, что он использует реакцию на событие &mdash; в классе [`NumericValidationBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/NumericValidationBehavior.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
+Пример [**BehaviorEntryValidation**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/BehaviorEntryValidation) похож на **TriggerEntryValidation** с той разницей, что он использует реакцию на событие &mdash; в классе [`NumericValidationBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/NumericValidationBehavior.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
 
 ### <a name="behaviors-with-properties"></a>Реакция на событие с поддержкой свойств
 
 `Behavior<T>` наследует от `Behavior`, который наследует от `BindableObject`, а значит для реакции на событие можно определить привязываемые свойства. Эти свойства можно активно использовать в привязке данных.
 
-Этот подход демонстрируется в программе [**EmailValidationDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/EmailValidationDemo) на основе класса [`ValidEmailBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ValidEmailBehavior.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). `ValidEmailBehavior` имеет привязываемое свойство только для чтения и служит источником в привязках данных.
+Этот подход демонстрируется в программе [**EmailValidationDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/EmailValidationDemo) на основе класса [`ValidEmailBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ValidEmailBehavior.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). `ValidEmailBehavior` имеет привязываемое свойство только для чтения и служит источником в привязках данных.
 
 В примере [**EmailValidationConv**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/EmailValidationConv) эта же реакция на событие используется для отображения индикатора другого типа, который информирует о допустимом формате адреса электронной почты.
 
@@ -151,7 +154,7 @@ ms.locfileid: "84136660"
 
 ### <a name="toggles-and-check-boxes"></a>Переключатели и флажки
 
-Поведение выключателя можно инкапсулировать в классе, например [`ToggleBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ToggleBehavior.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit), а затем определить все визуальные элементы для переключателя полностью в XAML.
+Поведение выключателя можно инкапсулировать в классе, например [`ToggleBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ToggleBehavior.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit), а затем определить все визуальные элементы для переключателя полностью в XAML.
 
 В примере [**ToggleLabel**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/ToggleLabel) используется `ToggleBehavior` с `DataTrigger`, чтобы применить `Label` с двумя текстовыми строками для переключения.
 
@@ -165,7 +168,7 @@ ms.locfileid: "84136660"
 
 ### <a name="responding-to-taps"></a>Реагирование на касания
 
-Недостаток `EventTrigger` заключается в том, что вы не можете присоединить его к `TapGestureRecognizer`, чтобы реагировать на касания. Чтобы обойти эту проблему, в библиотеку [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) включен [`TapBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/TapBehavior.cs).
+Недостаток `EventTrigger` заключается в том, что вы не можете присоединить его к `TapGestureRecognizer`, чтобы реагировать на касания. Чтобы обойти эту проблему, в библиотеку [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) включен [`TapBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/TapBehavior.cs).
 
 В примере [**BoxViewTapShiver**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/BoxViewTapShiver) используется `TapBehavior`, чтобы применить описанный выше `ShiverAction` для нажатых элементов `BoxView`.
 
@@ -173,7 +176,7 @@ ms.locfileid: "84136660"
 
 ### <a name="radio-buttons"></a>Переключатели
 
-Библиотека [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) также имеет класс [`RadioBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/RadioBehavior.cs) для создания переключателей, сгруппированных по имени группы `string`.
+Библиотека [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) также имеет класс [`RadioBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/RadioBehavior.cs) для создания переключателей, сгруппированных по имени группы `string`.
 
 Программа [**RadioLabels**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/RadioLabels) использует текстовые строки в качестве переключателя. В примере [**RadioStyle**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/RadioStyle) используется `Style`, чтобы различать нажатые и не нажатые кнопки. Пример [**RadioImages**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/RadioImages) использует текстовые строки в качестве переключателей.
 
@@ -183,7 +186,7 @@ ms.locfileid: "84136660"
 
 ### <a name="fades-and-orientation"></a>Исчезновение и ориентация
 
-В последнем примере [**MultiColorSliders**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/MultiColorSliders) вы с помощью переключателей можете выбирать любое из трех разных представлений для выбора цвета. Эти три представления плавно появляются и исчезают с использованием [`FadeEnableAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/FadeEnableAction.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
+В последнем примере [**MultiColorSliders**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/MultiColorSliders) вы с помощью переключателей можете выбирать любое из трех разных представлений для выбора цвета. Эти три представления плавно появляются и исчезают с использованием [`FadeEnableAction`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/FadeEnableAction.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
 
 Эта программа также реагирует на изменения ориентации (книжная или альбомная) с помощью [`GridOrientationBehavior`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/GridOrientationBehavior.cs) из библиотеки **Xamarin.FormsBook.Toolkit**.
 

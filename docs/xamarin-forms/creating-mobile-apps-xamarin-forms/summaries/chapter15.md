@@ -10,16 +10,19 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9bb930c2d0e4b6281b1aa48589ea5245eedc1a60
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 08c5152c5618b7edcfe22bc288a1a0354e3e5fed
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136751"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374255"
 ---
 # <a name="summary-of-chapter-15-the-interactive-interface"></a>Сводная информация о главе 15. Интерактивный интерфейс
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter15)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 В этой главе рассматриваются восемь производных `View`, которые обеспечивают взаимодействие с пользователем.
 
@@ -119,7 +122,7 @@ Xamarin.Forms содержит 20 классов с поддержкой соз�
 
 ### <a name="a-traditional-checkbox"></a>Традиционный флажок
 
-Некоторые разработчики предпочитают более традиционную реализацию `CheckBox` вместо `Switch`. Библиотека [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) содержит класс `CheckBox`, производный от `ContentView`. `CheckBox` реализуется через файлы [CheckBox.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/CheckBox.xaml) и [CheckBox.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/CheckBox.xaml.cs). `CheckBox` определяет три свойства (`Text`, `FontSize` и `IsChecked`) и одно событие `CheckedChanged`.
+Некоторые разработчики предпочитают более традиционную реализацию `CheckBox` вместо `Switch`. Библиотека [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) содержит класс `CheckBox`, производный от `ContentView`. `CheckBox` реализуется через файлы [CheckBox.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/CheckBox.xaml) и [CheckBox.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/CheckBox.xaml.cs). `CheckBox` определяет три свойства (`Text`, `FontSize` и `IsChecked`) и одно событие `CheckedChanged`.
 
 Эта реализация `CheckBox` демонстрируется в примере [**CheckBoxDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter15/CheckBoxDemo).
 

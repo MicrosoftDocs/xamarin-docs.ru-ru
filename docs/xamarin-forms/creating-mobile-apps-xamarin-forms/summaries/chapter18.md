@@ -10,16 +10,19 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b2309d6ec6712be32f6e972fab130a542fbec857
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 15342144a080f3056c1aaa3441f6d1ec850f4dc2
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557430"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374063"
 ---
 # <a name="summary-of-chapter-18-mvvm"></a>Сводная информация о Главе 18. MVVM
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter18)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Одним из лучших подходов к разработке приложения является отделение пользовательского интерфейса от базового кода, который иногда называют *бизнес-логикой*. Для этого существует несколько способов, но один из них специально разработан для сред на основе XAML и известен как "Модель — представление — модель представления" или MVVM.
 

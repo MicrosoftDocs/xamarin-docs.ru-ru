@@ -10,16 +10,19 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6dd13c0f592831c6488afac6727bcac734e9136a
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: d2904270b601b6602457873e8b0180c13a0d6d95
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136725"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373462"
 ---
 # <a name="summary-of-chapter-17-mastering-the-grid"></a>Сводка по главе 17. Достигаем мастерства в использовании класса Grid
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter17)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 [`Grid`](xref:Xamarin.Forms.Grid) — мощный механизм макета, который позволяет упорядочить дочерние элементы по строкам и столбцам ячеек. В отличие от аналогичного HTML-элемента `table`, `Grid` используется исключительно для макета, а не для представления.
 
@@ -103,7 +106,7 @@ ms.locfileid: "84136725"
 
 `Grid` может помочь структурировать программу для реагирования на изменения ориентации. Пример [**GridRgbSliders**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter17/GridRgbSliders) демонстрирует прием, который позволяет переместить элемент между второй строкой телефона в портретной ориентации и вторым столбцом телефона в альбомной ориентации.
 
-Программа инициализирует элементы `Slider` в диапазоне от 0 до 255 и с помощью привязок данных выводит значения ползунков в шестнадцатеричном виде. Значения `Slider` являются плавающей запятой, а строка форматирования .NET для шестнадцатеричного формата работает только с целыми числами. В этой ситуации поможет класс [`DoubleToIntConvert`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/DoubleToIntConverter.cs) в библиотеке [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
+Программа инициализирует элементы `Slider` в диапазоне от 0 до 255 и с помощью привязок данных выводит значения ползунков в шестнадцатеричном виде. Значения `Slider` являются числами с плавающей запятой, а строка форматирования .NET для шестнадцатеричного формата применяется только с целыми числами. В этой ситуации поможет класс [`DoubleToIntConvert`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/DoubleToIntConverter.cs) из библиотеке [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
 
 ## <a name="related-links"></a>Связанные ссылки
 

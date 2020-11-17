@@ -10,16 +10,19 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 09622adc269027b589a7345a7d4411c3dcecbf0c
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 4ab09546bb2a1dcbc221f3819bc891ce096ce569
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136647"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93373977"
 ---
 # <a name="summary-of-chapter-24-page-navigation"></a>Сводка по главе 24. Переход по страницам
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter24)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Многие приложения состоят из нескольких страниц, по которым переходит пользователь. У приложения всегда есть *главная* или *домашняя* страница, с которой пользователь переходит на другие страницы, которые помещаются в стек для переходов назад. Дополнительные варианты навигации описаны в главе 25 [ **Виды страниц**](chapter25.md).
 
@@ -164,7 +167,7 @@ ms.locfileid: "84136647"
 
 В общем случае многостраничная программа, которая переходит в спящий режим, должна при восстановлении возвращаться на ту же страницу. Это означает, что такой программе нужно сохранять содержимое стека навигации. В этом разделе показано, как автоматизировать этот процесс в специально разработанном для таких целей классе. Этот класс также вызывает отдельные страницы, чтобы они могли сохранить и восстановить свое состояние.
 
-В библиотеке [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) определен интерфейс с именем [`IPersistantPage`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/IPersistentPage.cs), который классы могут реализовать для сохранения данных в словаре `Properties` и восстановления их оттуда.
+В библиотеке [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) определен интерфейс с именем [`IPersistantPage`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/IPersistentPage.cs), который классы могут реализовать для сохранения данных в словаре `Properties` и их восстановления из словаря.
 
 Класс [`MultiPageRestorableApp`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/MultiPageRestorableApp.cs) в библиотеке **Xamarin.FormsBook.Toolkit** наследует от `Application`. Вы можете наследовать свой класс `App` от `MultiPageRestorableApp` и выполнять в нем действия по обслуживанию.
 

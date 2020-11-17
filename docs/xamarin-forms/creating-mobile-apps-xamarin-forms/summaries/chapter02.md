@@ -10,19 +10,19 @@ ms.date: 07/17/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 78da3ed91acea0c056074d712d368de70b251392
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 49b7a049444fe87f9237afb18935b74638fa9ebf
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136924"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93370511"
 ---
 # <a name="summary-of-chapter-2-anatomy-of-an-app"></a>Сводка по главе 2. Анатомия приложения
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter02)
 
 > [!NOTE]
-> Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 В приложении Xamarin.Forms любые объекты, занимающие место на экране, называются *визуальными элементами* и инкапсулируются в класс [`VisualElement`](xref:Xamarin.Forms.VisualElement). Визуальные элементы можно разделить на три категории, соответствующие следующим классам:
 
@@ -186,7 +186,7 @@ ms.locfileid: "84136924"
 - [`LayoutOptions.EndAndExpand`](xref:Xamarin.Forms.LayoutOptions.EndAndExpand)
 - [`LayoutOptions.FillAndExpand`](xref:Xamarin.Forms.LayoutOptions.FillAndExpand)
 
-`HorizontalOptions` и `VerticalOptions` будут самыми важными свойствами в макете Xamarin.Forms. Они подробно описываются в [**главе 4. Прокрутка стека** ](chapter04.md).
+`HorizontalOptions` и `VerticalOptions` будут самыми важными свойствами в макете Xamarin.Forms. Они подробно описываются в [**главе 4. Прокрутка стека**](chapter04.md).
 
 Ниже приведен результат отображения, в котором свойства `HorizontalOptions` и `VerticalOptions` объекта `Label` имеют значение `LayoutOptions.Center`:
 

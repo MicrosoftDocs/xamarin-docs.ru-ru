@@ -10,16 +10,19 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 32393108f84ea3a57079c86b6a9a8e628ceca03a
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cb822c7ac2a05dc9f0d51f51e9737add4395b84d
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136673"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374034"
 ---
 # <a name="summary-of-chapter-21-transforms"></a>Сводная информация о Главе 21. Transform
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter21)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Представление Xamarin.Forms появляется на экране в том месте и с тем размером, которые определяются его родительским элементом, обычно производном от `Layout` или `Layout<View>`. Возможность *преобразования* в Xamarin.Forms позволяет изменить расположение, размер и даже ориентацию элемента.
 
@@ -100,7 +103,7 @@ Xamarin.Forms поддерживает три основных типа прео
 
 ### <a name="an-analog-clock"></a>Аналоговые часы
 
-Библиотека [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) содержит класс [`AnalogClockViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/AnalogClockViewModel.cs), который вычисляет углы для положения стрелок часов. Чтобы избежать зависимостей от платформы в ViewModel, этот класс использует `Task.Delay` вместо таймера для получения нового значения `DateTime`.
+Библиотека [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) содержит класс [`AnalogClockViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/AnalogClockViewModel.cs), который вычисляет углы для положения стрелок часов. Чтобы избежать зависимостей от платформы в ViewModel, этот класс использует `Task.Delay` вместо таймера для получения нового значения `DateTime`.
 
 Также в **Xamarin.FormsBook.Toolkit** включен класс [`SecondTickConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/SecondTickConverter.cs) с реализацией `IValueConverter`, который округляет положение секундной стрелки до ближайшей секунды.
 

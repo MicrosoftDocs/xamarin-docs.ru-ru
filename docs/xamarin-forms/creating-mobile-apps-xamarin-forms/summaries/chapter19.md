@@ -10,19 +10,19 @@ ms.date: 07/18/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0eafdeffb6783a0ed54fdf23e6d10de24e2b4c6f
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 9bdab5d64f1edc60ca58993b7848f97b7125023b
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136699"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93374047"
 ---
 # <a name="summary-of-chapter-19-collection-views"></a>Аннотация к главе 19. Представления коллекций
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19)
 
-> [!NOTE] 
-> Примечания на этой странице указывают области, в которых Xamarin.Forms имеет расхождения с материалом, представленным в книге.
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Xamarin.Forms определяет три представления, которые поддерживают коллекции и показывают их элементы:
 
@@ -46,9 +46,9 @@ Xamarin.Forms определяет три представления, котор
 
 ### <a name="data-binding-the-picker"></a>Привязка данных с использованием Picker
 
-Свойство `SelectedIndex` поддерживается связываемым свойством, а `Items` — нет, поэтому использование привязки данных с `Picker` усложняется. Одним из решений является использование `Picker` в сочетании с [`ObjectToIndexConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ObjectToIndexConverter.cs), например из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). Пример [**PickerBinding**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/PickerBinding) демонстрирует, как это работает.
+Свойство `SelectedIndex` поддерживается связываемым свойством, а `Items` — нет, поэтому использование привязки данных с `Picker` усложняется. Одним из решений является использование `Picker` в сочетании с [`ObjectToIndexConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ObjectToIndexConverter.cs), например из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). Пример [**PickerBinding**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/PickerBinding) демонстрирует, как это работает.
 
-> [!NOTE] 
+> [!NOTE]
 > Xamarin.Forms `Picker` теперь включает в себя свойства `ItemsSource` и `SelectedItem`, поддерживающие привязку данных. Дополнительную информацию см. в статье о [Picker](~/xamarin-forms/user-interface/picker/index.md).
 
 ## <a name="rendering-data-with-listview"></a>Преобразование данных с помощью ListView для просмотра
@@ -88,7 +88,7 @@ Xamarin.Forms определяет три представления, котор
 
 По умолчанию `ListView` показывает элементы в коллекции с помощью метода `ToString` каждого элемента. Лучший подход — определить шаблон для отображения элементов.
 
-Чтобы опробовать эту возможность, можно использовать класс [`NamedColor`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/NamedColor.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). Этот класс определяет статическое свойство `All` типа `IList<NamedColor>`, которое содержит 141 объект `NamedColor`, соответствующий открытым полям структуры `Color`.
+Чтобы опробовать эту возможность, можно использовать класс [`NamedColor`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/NamedColor.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit). Этот класс определяет статическое свойство `All` типа `IList<NamedColor>`, которое содержит 141 объект `NamedColor`, соответствующий открытым полям структуры `Color`.
 
 В примере [**NaiveNamedColorList**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/NaiveNamedColorList) задается `ItemsSource` представления `ListView` для свойства `NamedColor.All`, но отображаются только полные имена классов объектов `NamedColor`.
 
@@ -118,7 +118,7 @@ Xamarin.Forms определяет три представления, котор
 
 `ListView` поддерживает группирование элементов и навигацию между этими группами. Для свойства `ItemsSource` следует задать коллекцию коллекций. Для объекта с заданным свойством `ItemsSource` следует реализовать `IEnumerable`, а для каждого элемента в коллекции также следует реализовывать `IEnumerable`. У каждой группы должно быть два свойства: текстовое описание группы и трехбуквенное сокращение.
 
-Класс [`NamedColorGroup`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/NamedColorGroup.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) создает семь групп объектов `NamedColor`. В примере [**ColorGroupList**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/ColorGroupList) показано, как использовать эти группы со свойством [`IsGroupingEnabled`](xref:Xamarin.Forms.ListView.IsGroupingEnabled) представления `ListView` и значением `true`, а также свойства [`GroupDisplayBinding`](xref:Xamarin.Forms.ListView.GroupDisplayBinding) и [`GroupShortNameBinding`](xref:Xamarin.Forms.ListView.GroupShortNameBinding), привязанные к свойствам в каждой группе.
+Класс [`NamedColorGroup`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/NamedColorGroup.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) создает семь групп объектов `NamedColor`. В примере [**ColorGroupList**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/ColorGroupList) показано, как использовать эти группы со свойством [`IsGroupingEnabled`](xref:Xamarin.Forms.ListView.IsGroupingEnabled) представления `ListView` и значением `true`, а также свойства [`GroupDisplayBinding`](xref:Xamarin.Forms.ListView.GroupDisplayBinding) и [`GroupShortNameBinding`](xref:Xamarin.Forms.ListView.GroupShortNameBinding), привязанные к свойствам в каждой группе.
 
 ### <a name="custom-group-headers"></a>Настраиваемые заголовки групп
 
@@ -126,7 +126,7 @@ Xamarin.Forms определяет три представления, котор
 
 ### <a name="listview-and-interactivity"></a>Интерактивность и ListView
 
-Как правило, приложение получает взаимодействие пользователя через `ListView` путем присоединения обработчика к событию `ItemSelected` или [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) или путем привязки данных в свойстве `SelectedItem`. Но некоторые типы ячеек (`EntryCell` и `SwitchCell`) также могут взаимодействовать с пользователем, поэтому можно создавать настраиваемые ячейки, чтобы они взаимодействовали с пользователем. [**InteractiveListView**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/InteractiveListView) создает 100 экземпляров [`ColorViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ColorViewModel.cs) и позволяет пользователю изменять каждый цвет с помощью тройки элементов `Slider`. Кроме того, программа использует [`ColorToContrastColorConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ColorToContrastColorConverter.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
+Как правило, приложение получает взаимодействие пользователя через `ListView` путем присоединения обработчика к событию `ItemSelected` или [`ItemTapped`](xref:Xamarin.Forms.ListView.ItemTapped) или путем привязки данных в свойстве `SelectedItem`. Но некоторые типы ячеек (`EntryCell` и `SwitchCell`) также могут взаимодействовать с пользователем, поэтому можно создавать настраиваемые ячейки, чтобы они взаимодействовали с пользователем. [**InteractiveListView**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/InteractiveListView) создает 100 экземпляров [`ColorViewModel`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ColorViewModel.cs) и позволяет пользователю изменять каждый цвет с помощью тройки элементов `Slider`. Кроме того, программа использует [`ColorToContrastColorConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ColorToContrastColorConverter.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
 
 ## <a name="listview-and-mvvm"></a>ListView и MVVM
 
@@ -167,7 +167,7 @@ Xamarin.Forms определяет три представления, котор
 ### <a name="varying-the-visuals"></a>Разные визуальные элементы
 
 Иногда может потребоваться, чтобы было несколько вариантов визуальных объектов элементов в `ListView` в зависимости от свойства. Например, если среднее значение оценок учащегося снижается ниже 2,0, то в примере [**ColorCodedStudents**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/ColorCodedStudents) имя учащегося будет отображаться красным цветом.
-Для этого используется преобразователь величин привязки [`ThresholdToObjectConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ThresholdToObjectConverter.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
+Для этого используется преобразователь величин привязки [`ThresholdToObjectConverter`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/ThresholdToObjectConverter.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
 
 ### <a name="refreshing-the-content"></a>Обновление содержимого
 
@@ -217,7 +217,7 @@ Xamarin.Forms определяет три представления, котор
 
 ### <a name="custom-cells"></a>Пользовательские ячейки
 
-В примере [**ConditionalCells**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/ConditionalCells) раскрывается **EntryForm**. Класс [`ProgrammerInformation`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter19/EntryForm/EntryForm/EntryForm/PersonalInformation.cs) включает в себя логическое свойство, которое регулирует применимость двух дополнительных свойств. Для этих двух дополнительных свойств программа использует настраиваемый элемент `PickerCell` на основе [PickerCell.xamlL](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/PickerCell.xaml) и [PickerCell.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/PickerCell.xaml.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
+В примере [**ConditionalCells**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/ConditionalCells) раскрывается **EntryForm**. Класс [`ProgrammerInformation`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter19/EntryForm/EntryForm/EntryForm/PersonalInformation.cs) включает в себя логическое свойство, которое регулирует применимость двух дополнительных свойств. Для этих двух дополнительных свойств программа использует пользовательский элемент `PickerCell` на основе [PickerCell.xamlL](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/PickerCell.xaml) и [PickerCell.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/PickerCell.xaml.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit).
 
 Хотя свойства `IsEnabled` двух элементов `PickerCell` и привязаны к логическому свойству в `ProgrammerInformation`, этот прием не работает, поэтому предлагаем следующий пример.
 

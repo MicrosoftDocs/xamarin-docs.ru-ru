@@ -10,16 +10,19 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: deb46d1a70e7c707c998be8669b4af3b8e8d7ead
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 377de0ff7e48971f9214cf86aec19ce14859139e
+ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84136608"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93366234"
 ---
 # <a name="summary-of-chapter-26-custom-layouts"></a>Сводка по главе 26. Пользовательские макеты
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter26)
+
+> [!NOTE]
+> Эта книга была опубликована весной 2016 года и с тех пор не обновлялась. Многое в этой книге остается ценным, но некоторые материалы устарели, а некоторые разделы перестали быть полностью верными или полными.
 
 Xamarin.Forms включает несколько классов, производных от [`Layout<View>`](xref:Xamarin.Forms.Layout`1):
 
@@ -105,7 +108,7 @@ Xamarin.Forms включает несколько классов, произво
 Каждый класс, производный от `Layout` или `Layout<T>`, должен переопределять `OnSizeRequest` или `OnMeasure`. Именно здесь класс макета определяет свой собственный размер, который обычно основывается на размерах его дочерних элементов, полученных путем вызова `GetSizeRequest` или `Measure` для дочерних элементов. До и после вызова `OnSizeRequest` или `OnMeasure` `GetSizeRequest` или `Measure` вносит корректировки с учетом следующих свойств:
 
 - [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) с типом `double` влияет на свойство `Request` объекта `SizeRequest`;
-- [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) с типом `double` влияет на свойство `Request` объекта `SizeRequest`;
+- [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) с типом `double` влияет на свойство `Request` объекта `SizeRequest`.
 - [`MinimumWidthRequest`](xref:Xamarin.Forms.VisualElement.MinimumWidthRequest) с типом `double` влияет на свойство `Minimum` объекта `SizeRequest`;
 - [`MinimumHeightRequest`](xref:Xamarin.Forms.VisualElement.MinimumHeightRequest) с типом `double` влияет на свойство `Minimum` объекта `SizeRequest`.
 
@@ -156,13 +159,13 @@ Xamarin.Forms включает несколько классов, произво
 
 ### <a name="a-layout-with-properties"></a>Макет с поддержкой свойств
 
-Класс [`WrapLayout`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/WrapLayout.cs) в [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) предполагает, что все его дочерние элементы имеют одинаковый размер и переносит дочерние элементы из одной строки (или столбца) в следующую. Он определяет свойство `Orientation` как `StackLayout`, свойства `ColumnSpacing` и `RowSpacing` как `Grid`, а также кэширует размеры дочерних элементов.
+Класс [`WrapLayout`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/WrapLayout.cs) из [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) предполагает, что все его дочерние элементы имеют одинаковый размер и переносит дочерние элементы из одной строки (или столбца) в следующую. Он определяет свойство `Orientation` как `StackLayout`, свойства `ColumnSpacing` и `RowSpacing` как `Grid`, а также кэширует размеры дочерних элементов.
 
 Пример [**PhotoWrap**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter26/PhotoWrap) размещает `WrapLayout` в `ScrollView` для отображения фотографий из коллекции.
 
 ### <a name="no-unconstrained-dimensions-allowed"></a>Неограниченные измерения не допускаются!
 
-Класс [`UniformGridLayout`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/UniformGridLayout.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) предназначен для отображения всех своих дочерних элементов внутри себя. Поэтому он не поддерживает неограниченные измерения и в соответствующих случаях вызывает исключение.
+Класс [`UniformGridLayout`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/UniformGridLayout.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) предназначен для отображения всех своих дочерних элементов внутри себя. Поэтому он не поддерживает неограниченные измерения и в соответствующих случаях вызывает исключение.
 
 Пример [**PhotoGrid**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter26/PhotoGrid) демонстрирует применение `UniformGridLayout`.
 
@@ -179,13 +182,13 @@ Xamarin.Forms включает несколько классов, произво
 
 Если применяется перекрытие дочерних элементов, элементы в конце коллекции визуально отображаются поверх элементов в начале коллекции.
 
-Класс [`OverlapLayout`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/OverlapLayout.cs) из библиотеки [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) определяет присоединенное свойство для указания порядка отрисовки, позволяя отображать один из дочерних элементов поверх остальных. Пример [**StudentCardFile**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter26/StudentCardFile) демонстрирует такой сценарий.
+Класс [`OverlapLayout`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/OverlapLayout.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) определяет присоединенное свойство для указания порядка отрисовки, позволяя отображать один из дочерних элементов поверх остальных. Пример [**StudentCardFile**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter26/StudentCardFile) демонстрирует такой сценарий.
 
 [![Снимок экрана с тремя изображениями сетки карточек учащихся](images/ch26fg10-small.png "Перекрывающиеся дочерние элементы в макете")](images/ch26fg10-large.png#lightbox "Перекрывающиеся дочерние элементы в макете")
 
 ### <a name="more-attached-bindable-properties"></a>Дополнительные присоединенные привязываемые свойства
 
-Класс [`CartesianLayout`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/CartesianLayout.cs) из [**Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) определяет присоединенные привязываемые свойства для указания двух значений `Point` и значения толщины, а также размещает элементы `BoxView` в виде линий.
+Класс [`CartesianLayout`](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/CartesianLayout.cs) из библиотеки [ **Xamarin.FormsBook.Toolkit**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) определяет присоединенные привязываемые свойства для указания двух значений `Point` и значения толщины, а также размещает элементы `BoxView` в виде линий.
 
 Пример [**UnitCube**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter26/UnitCube) использует эту возможность для отрисовки трехмерного куба.
 

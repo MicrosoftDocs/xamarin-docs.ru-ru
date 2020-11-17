@@ -9,12 +9,12 @@ ms.custom: video
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 93ad745790a746924f7037e490985c53c332c089
-ms.sourcegitcommit: dac04cec56290fb19034f3e135708f6966a8f035
+ms.openlocfilehash: 0870dd94c15f1bd94d5c6864b3d4caeb96349f32
+ms.sourcegitcommit: 83793378b28e8ef8624406309b4ecd41aa1a3a14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92169921"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94503271"
 ---
 # <a name="no-locxamarinessentials-share"></a>Xamarin.Essentials. Общий доступ
 
@@ -62,7 +62,7 @@ public class ShareTest
 
 ![Общий доступ](images/share.png)
 
-## <a name="files"></a>Файлы
+## <a name="file"></a>Файл
 
 Эта функция позволяет приложению предоставлять общий доступ к файлам для других приложений на устройстве. Xamarin.Essentials автоматически обнаруживает тип файла (MIME) и запрашивает его добавление в общий доступ. Каждая платформа может поддерживать только определенные расширения файлов.
 
@@ -77,6 +77,25 @@ await Share.RequestAsync(new ShareFileRequest
 {
     Title = Title,
     File = new ShareFile(file)
+});
+```
+
+## <a name="multiple-files"></a>несколько файлов
+
+![Предварительный выпуск API](~/media/shared/preview.png)
+
+Использование нескольких общих файлов отличается от использования одного файла только возможностью одновременно отправлять несколько файлов:
+
+```csharp
+var file1 = Path.Combine(FileSystem.CacheDirectory, "Attachment1.txt");
+File.WriteAllText(file, "Content 1");
+var file2 = Path.Combine(FileSystem.CacheDirectory, "Attachment2.txt");
+File.WriteAllText(file, "Content 2");
+
+await Share.RequestAsync(new ShareMultipleFilesRequest
+{
+    Title = ShareFilesTitle,
+    Files = new ShareFile[] { new ShareFile(file1), new ShareFile(file2) }
 });
 ```
 
