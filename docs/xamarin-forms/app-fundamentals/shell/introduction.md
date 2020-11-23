@@ -10,12 +10,12 @@ ms.date: 09/20/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: a7347bb1e2ef07161c5d03b76680b8770c5a49ec
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 215bf467c6f00e45d3e00e10438b01d238050504
+ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373319"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94590328"
 ---
 # <a name="no-locxamarinforms-shell-introduction"></a>Общие сведения об оболочке Xamarin.Forms
 
@@ -41,7 +41,7 @@ ms.locfileid: "93373319"
 global::Xamarin.Forms.Forms.SetFlags("Shell_UWP_Experimental");
 ```
 
-Сведения о том, как добавить проект UWP в решение Xamarin.Forms, см. в статье о [настройке проектов Windows](~/xamarin-forms/platform/windows/installation/index.md).
+Дополнительные сведения о состоянии оболочки в UWP см. на странице [проектов оболочки Xamarin.Forms](https://github.com/xamarin/Xamarin.Forms/projects/54) на сайте github.com.
 
 ## <a name="shell-navigation-experience"></a>Возможности навигации оболочки
 

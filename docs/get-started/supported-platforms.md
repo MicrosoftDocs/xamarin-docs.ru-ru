@@ -6,24 +6,24 @@ ms.assetid: eecaf6a5-567c-49b2-ac83-2a195596c5bf
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 01/22/2020
+ms.date: 11/13/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f93af19587cf962ac0c852599157261a087dadbc
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: cfb5c7ce11ca2eab5aedfd1b6f862a750fcff6e3
+ms.sourcegitcommit: bda07768b51e6d24f897ccae16e152dc7a83effa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84197542"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94595337"
 ---
-# <a name="xamarinforms-supported-platforms"></a>Поддерживаемые платформы для Xamarin.Forms
+# <a name="no-locxamarinforms-supported-platforms"></a>Поддерживаемые платформы для Xamarin.Forms
 
 Приложения Xamarin.Forms могут быть написаны для следующих операционных систем:
 
 - iOS 9 или более поздние версии;
 - Android 4.4 (API 19) или более поздние версии ([подробнее](#android-platform-support)); Однако в качестве минимального API рекомендуется использовать Android 5.0 (API 21). Это обеспечит полную совместимость со всеми библиотеками поддержки Android, при этом сохранив ориентацию на большинство устройств Android.
-- Универсальная платформа Windows для Windows 10.
+- Поддержка универсальной платформы Windows (UWP) для Windows 10 (сборка 10.0.16299.0 или более поздняя) для .NET Standard 2.0. Однако рекомендуется использовать сборку 10.0.18362.0 или более позднюю.
 
 Приложения Xamarin.Forms для iOS, Android и универсальной платформы Windows (UWP) можно разрабатывать в Visual Studio. Однако для разработки на iOS требуется подключенный к сети компьютер Mac с последней версией Xcode и минимальной версией macOS, указанной Apple. Дополнительные сведения см. в разделе [Требования к Windows](~/cross-platform/get-started/requirements.md#windows-requirements).
 

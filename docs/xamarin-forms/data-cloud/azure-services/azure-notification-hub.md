@@ -11,12 +11,12 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 - Firebase
-ms.openlocfilehash: 498e3b0bd2cb88df3e04dc19c66dbe671a8378dd
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: b560eedb1968db791c57620686c4ddb854153b1c
+ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93374450"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94590406"
 ---
 # <a name="send-and-receive-push-notifications-with-azure-notification-hubs-and-no-locxamarinforms"></a>Отправка и получение push-уведомлений с помощью Центров уведомлений Azure и Xamarin.Forms
 
@@ -142,8 +142,10 @@ public static class AppConstants
 1. [Переопределите](#override-firebasemessagingservice-to-handle-messages) `FirebaseMessagingService` для обработки сообщений.
 1. [Добавьте](#add-incoming-notifications-to-the-xamarinforms-ui) входящие уведомления в пользовательский интерфейс Xamarin.Forms.
 
-> [!NOTE]
-> Действие сборки `GoogleServicesJson` является частью пакета NuGet `Xamarin.GooglePlayServices.Base`. Visual Studio 2019 задает доступные действия сборки во время установки. Если действие сборки `GoogleServicesJson` не отображается, после установки пакетов NuGet перезапустите Visual Studio 2019.
+Действие сборки `GoogleServicesJson` является частью пакета NuGet `Xamarin.GooglePlayServices.Base`. Visual Studio 2019 задает доступные действия сборки во время установки. Если действие сборки `GoogleServicesJson` не отображается, после установки пакетов NuGet перезапустите Visual Studio 2019.
+
+> [!IMPORTANT]
+> Теперь для доставки push-уведомлений, пока приложение находится в спящем режиме, требуется использовать AndroidX. Сведения о миграции на AndroidX см. в статье [Миграция на AndroidX в Xamarin.Forms](~/xamarin-forms/platform/android/androidx-migration.md).
 
 ### <a name="configure-android-manifest"></a>Настройка манифеста Android
 

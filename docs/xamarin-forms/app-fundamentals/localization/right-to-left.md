@@ -7,16 +7,16 @@ ms.technology: xamarin-forms
 ms.custom: xamu-video
 author: davidbritch
 ms.author: dabritch
-ms.date: 05/07/2018
+ms.date: 11/05/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 05f5e79f9df59859c4514150ec591e0a96912ed5
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 676e0f062d3ed83cf433188e646f1e96f84a77cc
+ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93368782"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94590274"
 ---
 # <a name="right-to-left-localization"></a>Локализация справа налево
 
@@ -187,7 +187,10 @@ using System.Resources;
 Window.DecorView.LayoutDirection = LayoutDirection.Rtl;
 ```
 
-Такой подход удобен для приложений, которым постоянно требуется макет с написанием справа налево, и устраняет необходимость задавать свойство [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection).
+> [!NOTE]
+> Этот подход требует, чтобы приложение было настроено для поддержки макета с написанием справа налево. Дополнительные сведения см. в разделе [Настройка платформы Android](#android).
+
+Такой подход удобен для приложений, которым постоянно требуется макет с написанием справа налево, и устраняет необходимость задавать свойство [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) для большинства элементов управления. Однако некоторые элементы управления, такие как [`CollectionView`](xref:Xamarin.Forms.CollectionView), не учитывают свойство `LayoutDirection`, и для них по-прежнему необходимо задавать свойство `FlowDirection`.
 
 ## <a name="right-to-left-language-support-with-xamarinuniversity"></a>Поддержка языков с направлением потока справа налево с использованием Xamarin.University
 
