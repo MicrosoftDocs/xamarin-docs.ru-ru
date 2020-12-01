@@ -7,27 +7,31 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/21/2017
-ms.openlocfilehash: a749324c2963290c45b0e003af1518d1d517b30d
-ms.sourcegitcommit: dde593cf9dedf4a056ffef86bcf2fa0640412a4d
+ms.openlocfilehash: 4d98e061ae935605613eb0d2a9c10b3866b610c9
+ms.sourcegitcommit: d1f0e0a9100548cfe0960ed2225b979cc1d7c28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76794675"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96439409"
 ---
 # <a name="building-user-interfaces-with-xamarinios"></a>Создание пользовательских интерфейсов с помощью Xamarin. iOS
 
-## <a name="introduction-to-storyboardsiosuser-interfacestoryboardsindexmd"></a>[Введение в раскадровку](~/ios/user-interface/storyboards/index.md)
+## <a name="storyboards"></a>[Элементы Storyboard](~/ios/user-interface/storyboards/index.md)
 
-Раскадровка — это визуальное представление внешнего вида и потока приложения. В Xamarin появился конструктор, позволяющий приложениям Xamarin. iOS использовать преимущества раскадровки, что позволяет визуально проектировать экран приложения и получать доступ к представлениям, контроллерам и переходов C# с помощью для получения большего контроля. Вы также можете обратиться к [этому руководству](~/ios/user-interface/designer/introduction.md) , чтобы получить объяснение и пошаговое руководство по Xamarin Designer для iOS
+Раскадровка — это визуальное представление внешнего вида и потока приложения. Visual Studio для Mac позволяет взаимодействовать с Interface Builder Xcode для визуального проектирования экрана приложения, а также для доступа к представлениям, контроллерам и переходов с помощью C# для большей управляемости. 
 
-## <a name="ios-designeriosuser-interfacedesignerindexmd"></a>[Конструктор iOS](~/ios/user-interface/designer/index.md)
+## <a name="ios-designer"></a>[Конструктор iOS](~/ios/user-interface/designer/index.md)
+
+> [!WARNING]
+> Конструктор iOS будет запущен в Visual Studio 2019 версии 16,8 и Visual Studio 2019 для Mac версии 8,8.
+> Рекомендуемый способ создания пользовательских интерфейсов iOS — непосредственно на компьютере Mac с Xcode. Дополнительные сведения см. в разделе [Разработка пользовательских интерфейсов с помощью Xcode](~/ios/user-interface/storyboards/index.md). 
 
 Мы создали конструктор для формата раскадровки iOS, который полностью интегрирован в Visual Studio для Mac. Конструктор iOS поддерживает полную совместимость с форматом раскадровки, чтобы файлы можно было изменять либо в Xcode, либо в Visual Studio для Mac. Кроме того, редактор поддерживает дополнительные функции, такие как пользовательские элементы управления, отображаемые во время разработки в редакторе.
 
-## <a name="user-interface-in-iosiosuser-interfaceios-uiindexmd"></a>[Пользовательский интерфейс в iOS](~/ios/user-interface/ios-ui/index.md)
+## <a name="user-interface-in-ios"></a>[Пользовательский интерфейс в iOS](~/ios/user-interface/ios-ui/index.md)
 
 Рассматривается работа с пользовательским интерфейсом iOS в приложении Xamarin. iOS, в том числе: API внешнего вида, создание объектов пользовательского интерфейса, параметры макета, предоставляющая Хаптикную обратную связь и работу с потоком пользовательского интерфейса.
 
-## <a name="user-interface-controlsiosuser-interfacecontrolsindexmd"></a>[Элементы управления пользовательского интерфейса](~/ios/user-interface/controls/index.md)
+## <a name="user-interface-controls"></a>[Элементы управления пользовательского интерфейса](~/ios/user-interface/controls/index.md)
 
 Xamarin. iOS предоставляет все собственные объекты пользовательского интерфейса, предоставляемые Apple. Они легко добавляются в приложения Xamarin. iOS с помощью конструктора iOS, Interface Builder или программно. Независимо от выбранного метода Xamarin. iOS предоставляет все свойства и методы объекта пользовательского интерфейса в C#.

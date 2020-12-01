@@ -7,19 +7,20 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a58fc58b429a8a16437773289cd4d7286bbff81
-ms.sourcegitcommit: d2aa3a8bf9a60b6708db55b10b0c6893c06d3256
+ms.openlocfilehash: 07226b22243f3d463ce2630e1f12a94f83ddd64a
+ms.sourcegitcommit: d1f0e0a9100548cfe0960ed2225b979cc1d7c28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93331495"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96439435"
 ---
 # <a name="building-user-interfaces-with-the-ios-designer"></a>Создание пользовательских интерфейсов с помощью конструктора iOS
 
 _Xamarin Designer для iOS является визуальным конструктором для раскадровки iOS и форматов Interface Builder, полностью интегрированных с Visual Studio для Mac и Visual Studio. Конструктор iOS поддерживает полную совместимость с форматами Storyboard и XIB, чтобы файлы можно было изменять либо в Visual Studio для Mac, либо в Visual Studio в дополнение к Interface Builderам Xcode. Кроме того, Xamarin Designer для iOS поддерживает дополнительные функции, такие как пользовательские элементы управления, отображаемые во время разработки в редакторе._
 
 > [!WARNING]
-> Рекомендуемый способ создания пользовательских интерфейсов iOS теперь находится непосредственно на компьютере Mac с Xcode. Дополнительные сведения можно [найти здесь](~/ios/user-interface/ios-use-xcode.md).
+> Конструктор iOS будет запущен в Visual Studio 2019 версии 16,8 и Visual Studio 2019 для Mac версии 8,8.
+> Рекомендуемый способ создания пользовательских интерфейсов iOS — непосредственно на компьютере Mac с Xcode. Дополнительные сведения см. в разделе [Разработка пользовательских интерфейсов с помощью Xcode](../storyboards/index.md). 
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 

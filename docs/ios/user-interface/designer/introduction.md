@@ -7,16 +7,20 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 01/31/2018
-ms.openlocfilehash: 7c6b5a4dd2f6f5d4992d84d5d8690a6dda3d20e3
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 07f3e313a743c9d95f8baf2be7a31f16c6ca4f7e
+ms.sourcegitcommit: d1f0e0a9100548cfe0960ed2225b979cc1d7c28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91432757"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96439472"
 ---
 # <a name="ios-designer-basics"></a>основы конструктора iOS
 
 _В этом руководством описывается Xamarin Designer для iOS. В нем демонстрируется использование конструктора iOS для визуального размещения элементов управления, получения доступа к этим элементам управления в коде и изменения свойств._
+
+> [!WARNING]
+> Конструктор iOS будет запущен в Visual Studio 2019 версии 16,8 и Visual Studio 2019 для Mac версии 8,8.
+> Рекомендуемый способ создания пользовательских интерфейсов iOS — непосредственно на компьютере Mac с Xcode. Дополнительные сведения см. в разделе [Разработка пользовательских интерфейсов с помощью Xcode](../storyboards/index.md). 
 
 Xamarin Designer для iOS является конструктором визуальных интерфейсов, похожим на Interface Builder и Android Designer Xcode. Некоторые из его многих функций включают в себя простую интеграцию с Visual Studio для Windows и Mac, редактирование с помощью перетаскивания, интерфейс для настройки обработчиков событий, а также возможность отрисовки пользовательских элементов управления.
 
@@ -68,7 +72,7 @@ Xamarin Designer для iOS является конструктором визу
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-Чтобы получить доступ к кнопке в коде и управлять ей, она должна иметь уникальный идентификатор. Укажите уникальный идентификатор, нажав кнопку, открыв **панель свойств**и задав в поле **имя** значение, например "SubmitButton":
+Чтобы получить доступ к кнопке в коде и управлять ей, она должна иметь уникальный идентификатор. Укажите уникальный идентификатор, нажав кнопку, открыв **панель свойств** и задав в поле **имя** значение, например "SubmitButton":
 
 [![Задание имени кнопки в Панель свойств](introduction-images/4-settingbuttonname-vsmac.png "Задание имени кнопки в Панель свойств")](introduction-images/4-settingbuttonname-vsmac-large.png#lightbox)
 
@@ -84,13 +88,13 @@ Xamarin Designer для iOS является конструктором визу
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-В **панель решения**перейдите к **ViewController.CS** и щелкните индикатор раскрытия, чтобы определить, что определение класса контроллера представления `ViewController` охватывает два файла, каждый из которых содержит определение [разделяемого класса](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods) :
+В **панель решения** перейдите к **ViewController.CS** и щелкните индикатор раскрытия, чтобы определить, что определение класса контроллера представления `ViewController` охватывает два файла, каждый из которых содержит определение [разделяемого класса](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods) :
 
 [![Два файла, составляющие класс ViewController: ViewController.cs и ViewController.designer.cs](introduction-images/5-twoviewcontrollerfiles-vsmac.png "Два файла, составляющие класс ViewController: ViewController.cs и ViewController.designer.cs")](introduction-images/5-twoviewcontrollerfiles-vsmac-large.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-В **Обозреватель решений**перейдите к **ViewController.CS** и щелкните индикатор раскрытия, чтобы определить, что определение класса контроллера представления `ViewController` охватывает два файла, каждый из которых содержит определение [разделяемого класса](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods) :
+В **Обозреватель решений** перейдите к **ViewController.CS** и щелкните индикатор раскрытия, чтобы определить, что определение класса контроллера представления `ViewController` охватывает два файла, каждый из которых содержит определение [разделяемого класса](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods) :
 
 [![Два файла, составляющие класс ViewController: ViewController.cs и ViewController.designer.cs](introduction-images/5-twoviewcontrollerfiles-vs.png "Два файла, составляющие класс ViewController: ViewController.cs и ViewController.designer.cs")](introduction-images/5-twoviewcontrollerfiles-vs-large.png#lightbox)
 
@@ -298,7 +302,7 @@ namespace Designer
 
 Обратите внимание, что при выборе устройства и ориентации изменяется только то, как конструктор iOS предварительно просматривает проект. Независимо от текущего выбора, новые добавленные ограничения применяются ко всем устройствам и ориентациям, если только кнопка **изменить признаки** не использовалась для указания другого значения.
 
-Если [включены](~/ios/user-interface/storyboards/unified-storyboards.md#enabling-size-classes) [классы размера](~/ios/user-interface/storyboards/unified-storyboards.md#size-classes) , кнопка **изменить признаки** появится в развернутой нижней панели инструментов.  При нажатии кнопки " **изменить признаки** " отображаются параметры для создания варианта интерфейса на основе класса Size, представленного выбранным устройством и ориентацией. Рассмотрим следующие примеры.
+Если [включены](~/ios/user-interface/storyboards/unified-storyboards.md#enabling-size-classes) [классы размера](~/ios/user-interface/storyboards/unified-storyboards.md#size-classes) , кнопка **изменить признаки** появится в развернутой нижней панели инструментов.  При нажатии кнопки " **изменить признаки** " отображаются параметры для создания варианта интерфейса на основе класса Size, представленного выбранным устройством и ориентацией. Рассмотрим следующие примеры:
 
 - Если выбрано значение **iPhone SE**  /  **Книжная**, контекстном меню Action предоставит параметры для создания варианта интерфейса для компактной ширины, класса обычного размера высоты. 
 - Если выбран режим "альбомный полный экран **" iPad Pro 9,7 "**  /  **Landscape**  /  **Full Screen** , контекстном меню Action предоставит варианты для создания варианта интерфейса для обычной ширины, класса обычного размера высоты.
@@ -424,7 +428,7 @@ namespace Designer
 
 [![Нераспознанное исключение селектора](introduction-images/20-unrecognizedselector-vsmac.png "Нераспознанное исключение селектора")](introduction-images/20-unrecognizedselector-vsmac-large.png#lightbox)
 
-Обратите внимание, что после указания обработчика событий в **панель свойств**конструктор iOS немедленно откроет соответствующий файл кода и предложит вставить объявление метода. 
+Обратите внимание, что после указания обработчика событий в **панель свойств** конструктор iOS немедленно откроет соответствующий файл кода и предложит вставить объявление метода. 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
