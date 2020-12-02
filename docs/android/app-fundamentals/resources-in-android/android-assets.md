@@ -6,35 +6,35 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/13/2018
-ms.openlocfilehash: 9c8db5ad7bcb012befb2fa8dcd1ecd13fa355a55
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 795f80f69294abdfd7bf412225ab77cbbe5cb5b1
+ms.sourcegitcommit: d2daaa6ca5fe630f80d5a8151985d9f96a2fc93b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025433"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96513007"
 ---
 # <a name="using-android-assets"></a>Использование ресурсов Android
 
 _Ресурсы_ предоставляют возможность включать в приложение произвольные файлы, такие как текст, XML, шрифты, музыка и видео. Если вы попытаетесь включить эти файлы как "Resources", Android обработает их в своей системе ресурсов и вы не сможете получить необработанные данные. Если вы хотите получить доступ к данным без вмешательства пользователя, ресурсы являются одним из способов сделать это.
 
 Ресурсы, добавленные в проект, будут отображаться так же, как файловая система, способная выполнять чтение из приложения с помощью [ассетманажер](xref:Android.Content.Res.AssetManager).
-В этой простой демонстрации мы добавим к нашему проекту ресурс текстового файла, прочесть его с помощью `AssetManager`и отобразить в TextView.
+В этой простой демонстрации мы добавим к нашему проекту ресурс текстового файла, прочесть его с помощью `AssetManager` и отобразить в TextView.
 
 ## <a name="add-asset-to-project"></a>Добавить ресурс в проект
 
-Ресурсы находятся в папке `Assets` проекта. Добавьте новый текстовый файл в эту папку с именем `read_asset.txt`. Поместите в него некоторый текст, например "я пришел от ресурса!".
+Ресурсы находятся в `Assets` папке проекта. Добавьте в эту папку новый текстовый файл с именем `read_asset.txt` . Поместите в него некоторый текст, например "я пришел от ресурса!".
 
-# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
+# <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
 Visual Studio должно задать для этого файла **действие сборки** **AndroidAsset**:
 
 ![Установка для действия сборки значения AndroidAsset](android-assets-images/asset-properties-vs.png) 
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 Visual Studio для Mac должен задать для этого файла **действие сборки** **AndroidAsset**:
 
-[![установка AndroidAsset для действия сборки](android-assets-images/asset-properties-xs-sml.png)](android-assets-images/asset-properties-xs.png#lightbox)
+[![Установка для действия сборки значения AndroidAsset](android-assets-images/asset-properties-xs-sml.png)](android-assets-images/asset-properties-xs.png#lightbox)
 
 -----
 
@@ -42,8 +42,8 @@ Visual Studio для Mac должен задать для этого файла 
 
 ## <a name="reading-assets"></a>Чтение ресурсов
 
-Ресурсы считываются с помощью [ассетманажер](xref:Android.Content.Res.AssetManager). Экземпляр `AssetManager` доступен при доступе к свойству [Assets](xref:Android.Content.Context.Assets) на `Android.Content.Context`, например к действию.
-В следующем коде мы откроем ресурс **read_asset. txt** , прочтите его содержимое и отобразите с помощью TextView.
+Ресурсы считываются с помощью [ассетманажер](xref:Android.Content.Res.AssetManager). Экземпляр объекта `AssetManager` доступен при доступе к свойству [Assets](xref:Android.Content.Context.Assets) в `Android.Content.Context` , такому как действие.
+В следующем коде мы откроем наш ресурс **read_asset.txt** , прочтите его содержимое и отобразите с помощью TextView.
 
 ```csharp
 protected override void OnCreate (Bundle bundle)
@@ -67,6 +67,29 @@ protected override void OnCreate (Bundle bundle)
 }
 ```
 
+### <a name="reading-binary-assets"></a>Чтение двоичных ресурсов
+
+Использование `StreamReader` в приведенном выше примере идеально подходит для текстовых ресурсов. Для двоичных ресурсов используйте следующий код:
+
+```csharp
+protected override void OnCreate (Bundle bundle)
+{
+    base.OnCreate (bundle);
+
+    // Read the contents of our asset
+    const int maxReadSize = 256 * 1024;
+    byte[] content;
+    AssetManager assets = this.Assets;
+    using (BinaryReader br = new BinaryReader (assets.Open ("mydatabase.db")))
+    {
+        content = br.ReadBytes (maxReadSize);
+    }
+
+    // Do something with it...
+
+}
+```
+
 ## <a name="running-the-application"></a>Запуск приложения
 
 Запустите приложение, и вы должны увидеть следующее:
@@ -75,5 +98,5 @@ protected override void OnCreate (Bundle bundle)
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [AssetManager](xref:Android.Content.Res.AssetManager)
-- [Context](xref:Android.Content.Context)
+- [ассетманажер](xref:Android.Content.Res.AssetManager)
+- [Контекст](xref:Android.Content.Context)
