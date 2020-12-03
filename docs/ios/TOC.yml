@@ -140,9 +140,11 @@
       items:
         - name: Обзор
           href: user-interface/index.md
-        - name: Элементы Storyboard
+        - name: Разработка в Xcode
           href: user-interface/storyboards/index.md
           items:
+            - name: Элементы Storyboard
+              href: user-interface/storyboards/indepth-storyboard.md
             - name: Унифицированные раскадровки
               href: user-interface/storyboards/unified-storyboards.md
         - name: Конструктор iOS
