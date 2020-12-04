@@ -8,12 +8,12 @@ ms.custom: xamu-video
 author: davidortinau
 ms.author: daortin
 ms.date: 02/02/2018
-ms.openlocfilehash: a001cabae5e137cda4b31e15d3e75401575b96a7
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 2fc6c7fcd1c255e1cfd87e2e7cf91c92f17d8465
+ms.sourcegitcommit: 342cfbd2502ad92cadada4fa9aec669b99d7830a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91435041"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96604447"
 ---
 # <a name="introduction-to-tvos-in-xamarin"></a>Общие сведения о tvOS в Xamarin
 
@@ -35,7 +35,7 @@ ms.locfileid: "91435041"
 
 - [Введение в tvOS 11](~/ios/tvos/platform/introduction-to-tvos11.md) . в этой статье описываются новые функции, доступные в tvOS 11 для разработчиков Xamarin. tvOS.
 - [Введение в tvOS 10](~/ios/tvos/platform/introduction-to-tvos10/index.md) . в этой статье представлены все новые и измененные API-интерфейсы и функции, доступные в tvOS 10 для разработчиков Xamarin. tvOS.
-- [Введение в tvOS 9](~/ios/tvos/platform/tvos9.md) . в этой статье представлены все новые и измененные API-интерфейсы и функции, доступные в tvOS 9 для разработчиков Xamarin. tvOS. 
+- [Введение в tvOS 9](~/ios/tvos/platform/tvos9.md) . в этой статье представлены все новые и измененные API-интерфейсы и функции, доступные в tvOS 9 для разработчиков Xamarin. tvOS.
 - [Привет, tvOS краткое руководство по началу работы](~/ios/tvos/get-started/hello-tvos.md) — это руководство содержит инструкции по созданию первого приложения Xamarin. tvOS, а в процессе — цепочки инструментов разработки, в том числе Visual Studio для Mac, Xcode и Interface Builder. В нем также содержатся сведения о возможностях и действиях, которые предоставляют элементы управления ИП в коде, и, наконец, демонстрируется создание, запуск и тестирование приложения Xamarin. tvOS.
 - [Работа со значками и изображениями](~/ios/tvos/app-fundamentals/icons-images.md) . в этой статье рассматривается разработка значков и изображений в приложении Xamarin. tvOS и работа с ними.
 - [Работа с навигацией и фокусом](~/ios/tvos/app-fundamentals/navigation-focus.md) . в этой статье рассматривается понятие фокуса и его использование для представления и управления навигацией в приложении Xamarin. tvOS.
@@ -71,6 +71,10 @@ ms.locfileid: "91435041"
 При возникновении проблем с созданием tvOS с помощью Xamarin просмотрите [заметки о выпуске](/xamarin/ios/release-notes/), [форумы Xamarin. iOS](https://forums.xamarin.com/categories/ios), [Xamarin бугзилла Tracker](https://bugzilla.xamarin.com/query.cgi?product=iOS)и [GitHub](https://github.com/xamarin/xamarin-macios/issues) для существующих проблем.
 
 Сообщать о новых проблемах и предложениях [на GitHub](https://github.com/xamarin/xamarin-macios/issues).
+
+## <a name="xamarintvos-on-qa"></a>Xamarin. tvOS в Q&A 
+
+Задавайте вопросы о создании и развертывании приложений tvOS с помощью Xamarin на [Q&а](/answers/topics/dotnet-tvos.html).
 
 ## <a name="related-links"></a>Связанные ссылки
 

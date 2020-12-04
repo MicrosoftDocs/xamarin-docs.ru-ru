@@ -11,12 +11,12 @@ ms.custom: contperfq2
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c6fdbaf8d218044de9a4fe30ffe7e3df05619bdb
-ms.sourcegitcommit: f920ac0724f09e5c9b4f36be1995a5a17a6d9f95
+ms.openlocfilehash: 271c6c5e510a892919b5d87c4dbc38ad8e9d657d
+ms.sourcegitcommit: 342cfbd2502ad92cadada4fa9aec669b99d7830a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94591077"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96604577"
 ---
 # <a name="fonts-in-no-locxamarinforms"></a>Шрифты в Xamarin.Forms
 
@@ -24,7 +24,7 @@ ms.locfileid: "94591077"
 
 По умолчанию Xamarin.Forms использует системный шрифт, определенный каждой платформой. Однако элементы управления, отображающие текст, определяют свойства, которые можно использовать для изменения этого шрифта:
 
-- `FontAttributes`Тип `FontAttributes` , который является перечислением с тремя элементами: `None` , `Build` и `Italic` . Значение по умолчанию этого свойства равно `None`.
+- `FontAttributes`Тип `FontAttributes` , который является перечислением с тремя элементами: `None` , `Bold` и `Italic` . Значение по умолчанию этого свойства равно `None`.
 - `FontSize` типа `double`.
 - `FontFamily` типа `string`.
 
@@ -107,8 +107,8 @@ myLabel.FontSize = Device.GetNamedSize(NamedSize.Large, myLabel);
 
 Пользовательские шрифты можно добавить в Xamarin.Forms общий проект и использовать в проектах платформы без дополнительной работы. Чтобы этого добиться, выполните следующие действия.
 
-1. Добавьте шрифт в Xamarin.Forms общий проект в качестве внедренного ресурса ( **действие сборки: EmbeddedResource** ).
-1. Зарегистрируйте файл шрифта в сборке в файле, например **AssemblyInfo.CS** , с помощью `ExportFont` атрибута. Также можно указать необязательный псевдоним.
+1. Добавьте шрифт в Xamarin.Forms общий проект в качестве внедренного ресурса (**действие сборки: EmbeddedResource**).
+1. Зарегистрируйте файл шрифта в сборке в файле, например **AssemblyInfo.CS**, с помощью `ExportFont` атрибута. Также можно указать необязательный псевдоним.
 
 В следующем примере показан Lobster-Regularный шрифт, регистрируемый в сборке вместе с псевдонимом:
 
