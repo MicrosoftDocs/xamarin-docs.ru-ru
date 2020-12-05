@@ -26,16 +26,16 @@
           href: live-player/install.md
         - name: Приложение Xamarin Live Player
           href: live-player/player.md
-        - name: Устранение неполадок
+        - name: Диагностика
           href: live-player/troubleshooting.md
-    - name: Profiler
+    - name: профилировщик
       href: profiler/index.md
       items:
-        - name: Устранение неполадок
+        - name: Диагностика
           href: profiler/troubleshooting.md
         - name: Заметки о выпуске
           href: /xamarin/tools/profiler/release-notes/
-    - name: Workbooks
+    - name: Книги
       href: workbooks/index.md
       items:
         - name: Установка и требования
@@ -44,7 +44,7 @@
           href: workbooks/workbook.md
         - name: Редактор сочетаний клавиш
           href: workbooks/keybindings.md
-        - name: Устранение неполадок
+        - name: Диагностика
           href: workbooks/troubleshooting/index.md
           items:
             - name: Общие известные проблемы и их решения
@@ -69,7 +69,7 @@
     - name: Внедрение .NET
       href: dotnet-embedding/index.md
       items:
-        - name: Приступая к работе
+        - name: Начало работы
           href: dotnet-embedding/get-started/index.md
           items:
             - name: Установка
@@ -86,7 +86,7 @@
               items:
                 - name: iOS
                   href: dotnet-embedding/get-started/objective-c/ios.md
-                - name: macOS
+                - name: MacOS
                   href: dotnet-embedding/get-started/objective-c/macos.md
         - name: Android
           href: dotnet-embedding/android/index.md
