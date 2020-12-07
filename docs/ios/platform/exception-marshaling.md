@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/05/2017
-ms.openlocfilehash: 07b39f87b6eeb0fc24486be83573a721abc07966
-ms.sourcegitcommit: 93e6358aac2ade44e8b800f066405b8bc8df2510
+ms.openlocfilehash: a54a0012f7b5ed3d147242e3ee02b2ed6fe890bf
+ms.sourcegitcommit: 0a41c4aa6db72cd2d0cecbe0dc893024cecac71d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84572407"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96749882"
 ---
 # <a name="exception-marshaling-in-xamarinios"></a>Маршалирование исключений в Xamarin. iOS
 
@@ -36,11 +36,11 @@ _Xamarin. iOS содержит новые события, которые пом�
 
 ### <a name="broken-code"></a>Неработающий код
 
-Рассмотрим следующий пример кода:
+Рассмотрим следующий пример кода.
 
 ``` csharp
-var dict = new NSMutableDictionary ();
-dict.LowLevelSetObject (IntPtr.Zero, IntPtr.Zero); 
+var dict = new NSMutableDictionary ();
+dict.LowlevelSetObject (IntPtr.Zero, IntPtr.Zero); 
 ```
 
 Это приведет к вызову цели-C Нсинвалидаргументексцептион в машинном коде:
@@ -98,10 +98,10 @@ try {
 При вызове неперехваченного метода обратного вызова исключения C в Xamarin. iOS стек выглядит следующим образом:
 
 ```
- 0 libxamarin-debug.dylib   exception_handler(exc=name: "NSInvalidArgumentException" - reason: "*** setObjectForKey: key cannot be nil")
+ 0 libxamarin-debug.dylib   exception_handler(exc=name: "NSInvalidArgumentException" - reason: "**_ setObjectForKey: key cannot be nil")
  1 CoreFoundation           __handleUncaughtException + 809
  2 libobjc.A.dylib          _objc_terminate() + 100
- 3 libc++abi.dylib          std::__terminate(void (*)()) + 14
+ 3 libc++abi.dylib          std::__terminate(void (_)()) + 14
  4 libc++abi.dylib          __cxa_throw + 122
  5 libobjc.A.dylib          objc_exception_throw + 337
  6 CoreFoundation           -[__NSDictionaryM setObject:forKey:] + 1015
@@ -217,7 +217,7 @@ void UIApplicationMain ()
 
 В итоге, наличие кадров среды выполнения цели или среды выполнения Mono, которые не запрограммированы для обработки, может привести к неопределенному поведению, например к сбоям, утечкам памяти и другим типам непредсказуемых (MIS) поведений.
 
-## <a name="solution"></a>Решение
+## <a name="solution"></a>Решение
 
 В Xamarin. iOS 10 и Xamarin. Mac 2,10 мы добавили поддержку перехвата управляемых и целевых исключений на любой управляемой границе, а также для преобразования этого исключения в другой тип.
 
@@ -303,7 +303,7 @@ Runtime.MarshalObjectiveCException += (object sender, MarshalObjectiveCException
 
 <a name="build_time_flags"></a>
 
-## <a name="build-time-flags"></a>Флаги времени сборки
+## <a name="build-time-flags"></a>Флаги Build-Time
 
 Можно передать следующие параметры в **mtouch** (для приложений Xamarin. IOS) и **MMP** (для приложений Xamarin. Mac), которые будут определять, включено ли перехват исключений, и задать выполняемое по умолчанию действие:
 

@@ -8,12 +8,12 @@ ms.date: 09/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e997ae3137110e18df9eed90ef07bfa2703e8088
-ms.sourcegitcommit: 58247fe066ad271ee43c8967ac3301fdab6ca2d1
+ms.openlocfilehash: f98f0cdea812a91bbe6caf1e248e468d9a960ac6
+ms.sourcegitcommit: 8fa0cb9ccbc107d697aa5b9113a4e5d1e75d6eb9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92629604"
+ms.lasthandoff: 11/27/2020
+ms.locfileid: "96303046"
 ---
 # <a name="no-locxamarinessentials-file-picker"></a>Xamarin.Essentials: Средство выбора файлов
 
@@ -110,6 +110,21 @@ var options = new PickOptions
 ## <a name="pick-multiple-files"></a>Выбор нескольких файлов
 
 Если вы хотите, чтобы пользователь мог выбрать несколько файлов, вызовите метод `FilePicker.PickMultipleAsync()`. Он также принимает параметр `PickOptions` для указания дополнительных сведений. Результат такой же, как и при вызове метода `PickAsync`, но вместо одного объекта `FileResult` возвращается `IEnumerable<FileResult>`, который можно перебирать.
+
+
+## <a name="platform-differences"></a>Различия платформ
+
+# <a name="android"></a>[Android](#tab/android)
+
+- URI результирующего файла может не сохраниться после перезагрузки.
+
+# <a name="ios"></a>[iOS](#tab/ios)
+
+Различия платформ отсутствуют.
+
+# <a name="uwp"></a>[UWP](#tab/uwp)
+
+Различия платформ отсутствуют.
 
 ## <a name="api"></a>API
 

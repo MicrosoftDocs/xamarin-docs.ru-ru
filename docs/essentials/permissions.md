@@ -9,12 +9,12 @@ ms.date: 09/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 01902942c750a3cd278d648fa82499af4c5d3ab6
-ms.sourcegitcommit: dac04cec56290fb19034f3e135708f6966a8f035
+ms.openlocfilehash: 25677d79b29902ed0cdd0b2ed08da021d7ef9e6f
+ms.sourcegitcommit: d2daaa6ca5fe630f80d5a8151985d9f96a2fc93b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92169973"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96513022"
 ---
 # <a name="no-locxamarinessentials-permissions"></a>Xamarin.Essentials. Разрешения
 
@@ -108,7 +108,8 @@ Xamarin.Essentials пытается абстрагировать максима�
 Если разрешение помечено ![не поддерживается](~/media/shared/no.png "не поддерживается"), то оно всегда будет возвращать `Granted` при проверке или запросе.
 
 ## <a name="general-usage"></a>Общие сведения об использовании
-Ниже приведен пример общих сведений об использовании для обработки разрешений.
+
+В следующем коде представлен общий шаблон использования для определения того, было ли предоставлено разрешение, и запроса разрешения, если оно не было предоставлено. В этом коде используются функции, доступные в Xamarin.Essentials версии 1.6.0 или более поздней.
 
 ```csharp
 public async Task<PermissionStatus> CheckAndRequestLocationPermission()
@@ -116,8 +117,7 @@ public async Task<PermissionStatus> CheckAndRequestLocationPermission()
     var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
     
     if (status == PermissionStatus.Granted)
-        return status;
-        
+        return status;        
     
     if (status == PermissionStatus.Denied && DeviceInfo.Platform == DevicePlatform.iOS)
     {
