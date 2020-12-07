@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3cd4a9078a22c1f002cbc414490455c716ba884a
-ms.sourcegitcommit: 342cfbd2502ad92cadada4fa9aec669b99d7830a
+ms.openlocfilehash: 8b7cdc43570958918020f5a219392434a7ed85fb
+ms.sourcegitcommit: 1d19ee87e317a72de05f3f0fa73dfcaeb767cbd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96604590"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96755010"
 ---
 # <a name="visualelement-access-keys-on-windows"></a>Ключи доступа Висуалелемент в Windows
 
@@ -104,7 +104,7 @@ button4.On<Windows>()
 Когда пользователь активирует клавишу доступа, нажимая клавишу Alt, а затем клавишу доступа, действие по умолчанию для элемента `VisualElement` будет выполнено. Например, когда пользователь активирует клавишу доступа на [`Switch`](xref:Xamarin.Forms.Switch) , `Switch` он переключается. Когда пользователь активирует клавишу доступа на [`Entry`](xref:Xamarin.Forms.Entry) , `Entry` фокус прибыли. Когда пользователь активирует ключ доступа в [`Button`](xref:Xamarin.Forms.Button) , выполняется обработчик события для [`Clicked`](xref:Xamarin.Forms.Button.Clicked) события.
 
 > [!WARNING]
-> По умолчанию ключи доступа могут быть активированы при отображении модального диалогового окна, например `DisplayAlert` `DisplayPromptAsync` методами и. Однако пользовательская логика может быть написана для отключения ключей доступа в этом сценарии. Это можно сделать, обрабатывая `Dispatcher.AcceleratorKeyActivated` событие в `MainPage` классе проекта UWP, и в обработчике событий задавая `Handled` свойству аргументов события значение `true` при отображении модального диалогового окна.
+> По умолчанию при отображении модального диалогового окна все ключи доступа, определенные на странице за диалоговым окном, могут быть активированы. Однако пользовательская логика может быть написана для отключения ключей доступа в этом сценарии. Это можно сделать, обрабатывая `Dispatcher.AcceleratorKeyActivated` событие в `MainPage` классе проекта UWP, и в обработчике событий задавая `Handled` свойству аргументов события значение `true` при отображении модального диалогового окна.
 
 Дополнительные сведения о ключах доступа см. в разделе [ключи доступа](/windows/uwp/design/input/access-keys).
 

@@ -10,12 +10,12 @@ ms.date: 03/10/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f1caf08cf0fc2fdba6c9a9156280f9d3dafe0322
-ms.sourcegitcommit: 342cfbd2502ad92cadada4fa9aec669b99d7830a
+ms.openlocfilehash: 4af29f2df797aea4bbd0655fc0564e289f2c2a3b
+ms.sourcegitcommit: 1d19ee87e317a72de05f3f0fa73dfcaeb767cbd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96604564"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96755023"
 ---
 # <a name="display-pop-ups"></a>Отображать всплывающие окна
 
@@ -45,10 +45,10 @@ async void OnAlertYesNoClicked (object sender, EventArgs e)
 }
 ```
 
-[![дисплайалерт](pop-ups-images/alert2-sml.png "Диалоговое окно предупреждения с двумя кнопками")](pop-ups-images/alert2.png#lightbox "Диалоговое окно предупреждения с двумя кнопками")
+[![Диалоговое окно предупреждения с двумя кнопками](pop-ups-images/alert2-sml.png)](pop-ups-images/alert2.png#lightbox)
 
 > [!WARNING]
-> По умолчанию ключи доступа UWP могут быть активированы при отображении оповещения. Дополнительные сведения см. [в разделе ключи доступа висуалелемент в Windows](~/xamarin-forms/platform/windows/visualelement-access-keys.md).
+> По умолчанию в UWP при отображении оповещения какие-либо ключи доступа, определенные на странице за предупреждением, могут быть активированы. Дополнительные сведения см. [в разделе ключи доступа висуалелемент в Windows](~/xamarin-forms/platform/windows/visualelement-access-keys.md).
 
 ## <a name="guide-users-through-tasks"></a>Рекомендации для пользователей по задачам
 
@@ -111,10 +111,10 @@ string result = await DisplayPromptAsync("Question 2", "What's 5 + 5?", initialV
 
 Этот код отображает предопределенный ответ 10, ограничивает число символов, которое может быть введено равным 2, и отображает цифровую клавиатуру для ввода данных пользователем:
 
-[![Снимок экрана: модальная строка в iOS и Android](pop-ups-images/keyboard-prompt.png "Модальная строка")](pop-ups-images/keyboard-prompt-large.png#lightbox "Модальная строка")
+[![Снимок экрана необязательной модальной строки в iOS и Android](pop-ups-images/keyboard-prompt.png "Модальная строка")](pop-ups-images/keyboard-prompt-large.png#lightbox "Модальная строка")
 
 > [!WARNING]
-> По умолчанию ключи доступа UWP могут быть активированы при отображении запроса. Дополнительные сведения см. [в разделе ключи доступа висуалелемент в Windows](~/xamarin-forms/platform/windows/visualelement-access-keys.md).
+> По умолчанию в UWP при отображении запроса все ключи доступа, определенные на странице, расположенной за запросом, могут быть активированы. Дополнительные сведения см. [в разделе ключи доступа висуалелемент в Windows](~/xamarin-forms/platform/windows/visualelement-access-keys.md).
 
 ## <a name="related-links"></a>Связанные ссылки
 
