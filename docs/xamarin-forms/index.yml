@@ -12,12 +12,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: 3d877571a6c5eca75f9c3e8b2368e97af14d44bd
-  ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+  ms.openlocfilehash: 272b985cbd627fb001653e2e785015c802938fd2
+  ms.sourcegitcommit: 342cfbd2502ad92cadada4fa9aec669b99d7830a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/30/2020
-  ms.locfileid: "91558132"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96604478"
 highlightedContent:
   items:
   - title: Что такое Xamarin.Forms?
@@ -232,4 +232,4 @@ additionalContent:
     - title: Графика SkiaSharp в Xamarin.Forms
       summary: Эта электронная книга представляет собой руководство по созданию двухмерной векторной графики, растровых изображений и текста в приложениях Xamarin.Forms.
       url: ~/xamarin-forms/user-interface/graphics/skiasharp/index.md
-  footer: '[Блоги](https://devblogs.microsoft.com/xamarin/) - [Twitter](https://twitter.com/xamarinhq) - [Stack Overflow](https://stackoverflow.com/questions/tagged/xamarin) - [Сообщество разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) - [Заметки о выпуске](/xamarin/xamarin-forms/release-notes/)'
+  footer: '[Блоги](https://devblogs.microsoft.com/xamarin/) - [Twitter](https://twitter.com/xamarinhq) - [Microsoft Q&A](/answers/products/dotnet) - [Сообщество разработчиков](https://dotnet.microsoft.com/platform/community) - [Заметки о выпуске](/xamarin/xamarin-forms/release-notes/)'

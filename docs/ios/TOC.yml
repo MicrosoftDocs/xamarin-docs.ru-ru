@@ -602,6 +602,8 @@
           href: /xamarin/essentials/release-notes/
         - name: Устранение неполадок
           href: ~/essentials/troubleshooting.md?context=xamarin/ios
+        - name: Xamarin.Essentials на сайте Q&A
+          href: /answers/topics/dotnet-xamarinessentials.html
     - name: Данные и облачные службы
       items:
         - name: Обзор
@@ -1005,6 +1007,8 @@
               href: ~/essentials/version-tracking.md?context=xamarin/watchos
             - name: Устранение неполадок
               href: ~/essentials/troubleshooting.md?context=xamarin/watchos
+            - name: Xamarin.Essentials на сайте Q&A
+              href: /answers/topics/dotnet-xamarinessentials.html
         - name: Тестирование и развертывание
           href: watchos/deploy-test/index.md
           items:
@@ -1014,6 +1018,8 @@
               href: watchos/deploy-test/appstore.md
         - name: Устранение неполадок
           href: watchos/troubleshooting.md
+        - name: Xamarin watchOS на сайте Q&A
+          href: /answers/topics/dotnet-watchos.html
     - name: tvOS
       items:
         - name: Обзор
@@ -1096,6 +1102,8 @@
               href: ~/essentials/version-tracking.md?context=xamarin/tvos
             - name: Устранение неполадок
               href: ~/essentials/troubleshooting.md?context=xamarin/tvos
+            - name: Xamarin.Essentials на сайте Q&A
+              href: /answers/topics/dotnet-xamarinessentials.html
         - name: Пользовательский интерфейс
           href: tvos/user-interface/index.md
           items:
@@ -1142,6 +1150,10 @@
               href: tvos/internals/assemblies.md
             - name: Инфраструктуры
               href: tvos/internals/frameworks.md
+        - name: Xamarin.tvOS на сайте Q&A
+          href: /answers/topics/dotnet-tvos.html
+    - name: Xamarin.iOS на сайте Q&A
+      href: /answers/topics/dotnet-ios.html
     - name: Заметки о выпуске
       href: /xamarin/ios/release-notes/
     - name: Примеры

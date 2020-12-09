@@ -1,4 +1,4 @@
-- name: Кроссплатформенный
+- name: Поддержка разных платформ
   href: index.yml
   expanded: true
   items:
@@ -57,21 +57,21 @@
           href: app-fundamentals/nuget-manual.md
         - name: Использование библиотек C/C++ в кроссплатформенных приложениях
           href: cpp/index.md
-    - name: Языковая поддержка
+    - name: Поддержка языков
       href: platform/index.md
       items:
-        - name: 'C#'
+        - name: C#
           items:
             - name: Общие сведения о поддержке асинхронного выполнения
               href: platform/async.md
             - name: "6\_возможностей языка C#"
               href: platform/csharp-six.md
-        - name: 'F#'
+        - name: F#
           href: platform/fsharp/index.md
           items:
             - name: Начало работы
               href: platform/fsharp/overview.md
-            - name: 'Примеры F#'
+            - name: Примеры F#
               href: platform/fsharp/samples.md
         - name: Visual Basic
           href: platform/visual-basic/index.md
@@ -127,10 +127,10 @@
           href: desktop/porting.md
         - name: Примеры
           href: desktop/samples.md
-    - name: Устранение неполадок
+    - name: Диагностика
       href: troubleshooting/index.md
       items:
-        - name: Вопросы и ответы
+        - name: Часто задаваемые вопросы
           displayName: FAQ
           href: troubleshooting/questions/index.md
           items:
@@ -172,5 +172,7 @@
               href: troubleshooting/questions/vs-config-manager.md
         - name: Обновление ссылок на компоненты в NuGet
           href: troubleshooting/component-nuget.md
+    - name: Кросс-платформенная разработка на сайте Q&A
+      href: /answers/topics/dotnet-crossplatform-general.html
     - name: Примеры
       href: samples/index.md

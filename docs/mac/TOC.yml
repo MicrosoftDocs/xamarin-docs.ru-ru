@@ -70,7 +70,7 @@
         - name: "Введение в macOS\_Mojave"
           href: platform/introduction-to-macos-mojave/index.md
           items:
-            - name: Приступая к работе
+            - name: Начало работы
               href: platform/introduction-to-macos-mojave/get-started.md
         - name: "Введение в macOS\_High\_Sierra"
           href: platform/introduction-to-macos-high-sierra/index.md
@@ -81,7 +81,7 @@
               href: platform/introduction-to-macos-sierra/modern-cocoa-apps.md
             - name: Дополнительные изменения платформы macOS Sierra
               href: platform/introduction-to-macos-sierra/additional-framework-changes.md
-            - name: Устранение неполадок
+            - name: Диагностика
               href: platform/introduction-to-macos-sierra/troubleshooting.md
         - name: Привязка библиотек Mac
           href: platform/binding.md
@@ -210,7 +210,7 @@
           href: internals/architecture.md
         - name: Как работает Xamarin.Mac
           href: internals/how-it-works.md
-        - name: Инфраструктуры
+        - name: Платформы
           href: internals/frameworks.md
         - name: регистратор
           href: internals/registrar.md
@@ -221,6 +221,8 @@
           href: troubleshooting/troubleshooting.md
         - name: Сообщения об ошибках (mmp)
           href: troubleshooting/mmp-errors.md
+    - name: Xamarin.Mac на сайте Q&A
+      href: /answers/topics/dotnet-macos.html
     - name: Заметки о выпуске
       href: /xamarin/mac/release-notes/
     - name: Примеры

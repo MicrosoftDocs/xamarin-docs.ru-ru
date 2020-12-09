@@ -145,6 +145,8 @@ items:
             href: xaml/field-modifiers.md
           - name: Загрузка XAML во время выполнения
             href: xaml/runtime-load.md
+      - name: Xamarin.Forms XAML на сайте Q&A
+        href: /answers/topics/dotnet-xamarinforms-xaml.html
   - name: Принципы работы приложения
     items:
       - name: Обзор
@@ -922,6 +924,8 @@ items:
         href: /xamarin/essentials/release-notes/
       - name: Устранение неполадок
         href: ~/essentials/troubleshooting.md?context=xamarin/xamarin-forms
+      - name: Xamarin.Essentials на сайте Q&A
+        href: /answers/topics/dotnet-xamarinessentials.html
   - name: Данные и облачные службы Azure
     items:
       - name: Обзор
@@ -1030,6 +1034,8 @@ items:
             href: troubleshooting/questions/android-linkassemblies-error.md
           - name: 'Почему проект Android Xamarin.Forms.Maps завершается ошибкой COMPILETODALVIK: непредвиденная высокоуровневая ошибка?'
             href: troubleshooting/questions/maps-compiletodalvik-error.md
+  - name: Xamarin.Forms на сайте Q&A
+    href: /answers/topics/dotnet-xamarinforms.html
   - name: заметки о выпуске;
     href: /xamarin/xamarin-forms/release-notes/
   - name: Примеры

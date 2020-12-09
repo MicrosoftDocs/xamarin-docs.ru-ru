@@ -10,12 +10,12 @@ metadata:
   author: davidbritch
   ms.author: dabritch
   ms.date: 02/28/2020
-  ms.openlocfilehash: 3b5b7a45a0aeca3be5d04047d984cdef878348cf
-  ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+  ms.openlocfilehash: 08cb7d74ef4aeafca024f164e87875d5e16b0e80
+  ms.sourcegitcommit: 342cfbd2502ad92cadada4fa9aec669b99d7830a
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/29/2020
-  ms.locfileid: "91456500"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96604514"
 landingContent:
 - title: Новые возможности
   linkLists:
@@ -75,5 +75,7 @@ landingContent:
       url: /xamarin/android/release-notes/
     - text: Заметки о выпуске Xamarin.Mac
       url: /xamarin/mac/release-notes/
-    - text: Заметки о выпуске средств Xamarin
-      url: ../tools.yml
+  - linkListType: get-started
+    links:
+    - text: .NET на сайте Q&A
+      url: /answers/topics/dotnet
