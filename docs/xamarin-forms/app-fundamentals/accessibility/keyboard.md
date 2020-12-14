@@ -10,12 +10,12 @@ ms.date: 05/09/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 011ef1fcb2de53cb1f1aa6f0b2c3953e9240d132
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: bdc26b0745e48295c2040440d5eab90b7850b145
+ms.sourcegitcommit: 342cfbd2502ad92cadada4fa9aec669b99d7830a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93374502"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96604486"
 ---
 # <a name="keyboard-accessibility-in-no-locxamarinforms"></a>Специальные возможности клавиатуры в Xamarin.Forms
 
@@ -75,6 +75,9 @@ ms.locfileid: "93374502"
 - Конфликты для `TabIndex`, устраняемые в порядке объявления.
 
 После определения последовательности табуляции нажатие клавиши TAB будет переключать фокус между элементами управления в порядке по возрастанию `TabIndex` с возвратом в начало после достижения конечного элемента управления.
+
+> [!WARNING]
+> На универсальной платформе Windows свойству `TabIndex` каждого элемента управления должно быть задано значение `int.MaxValue`, чтобы последовательность табуляции совпадала с порядком объявления элементов управления.
 
 Следующий пример XAML показывает свойство `TabIndex`, заданное в элементах управления вводом для обеспечения навигации по столбцам:
 
