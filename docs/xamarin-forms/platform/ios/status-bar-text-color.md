@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9459ce5e8b8f167f94d1f88e79d9acb32e4788bf
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 6aa435cebe1976897f8165d1e645179b1ca4aa9f
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93370615"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940321"
 ---
 # <a name="navigationpage-bar-text-color-mode-on-ios"></a>Цветовой режим текста на панели Навигатионпаже в iOS
 
@@ -24,14 +24,14 @@ ms.locfileid: "93370615"
 Эта платформа определяет, изменяется ли цвет текста в строке состояния в с [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) учетом яркости панели навигации. Он используется в XAML путем присвоения [`NavigationPage.StatusBarTextColorMode`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.NavigationPage.StatusBarTextColorModeProperty) свойству присоединенного свойства значения [`StatusBarTextColorMode`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.StatusBarTextColorMode) перечисления:
 
 ```xaml
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     x:Class="PlatformSpecifics.iOSStatusBarTextColorModePage">
-    <MasterDetailPage.Master>
-        <ContentPage Title="Master Page Title" />
-    </MasterDetailPage.Master>
-    <MasterDetailPage.Detail>
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Flyout Page Title" />
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
         <NavigationPage BarBackgroundColor="Blue" BarTextColor="White"
                         ios:NavigationPage.StatusBarTextColorMode="MatchNavigationBarTextLuminosity">
             <x:Arguments>
@@ -40,8 +40,8 @@ ms.locfileid: "93370615"
                 </ContentPage>
             </x:Arguments>
         </NavigationPage>
-    </MasterDetailPage.Detail>
-</MasterDetailPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
 
 ```
 
@@ -54,13 +54,13 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 IsPresentedChanged += (sender, e) =>
 {
-    var mdp = sender as MasterDetailPage;
-    if (mdp.IsPresented)
-        ((Xamarin.Forms.NavigationPage)mdp.Detail)
+    var flyoutPage = sender as FlyoutPage;
+    if (flyoutPage.IsPresented)
+        ((Xamarin.Forms.NavigationPage)flyoutPage.Detail)
           .On<iOS>()
           .SetStatusBarTextColorMode(StatusBarTextColorMode.DoNotAdjust);
     else
-        ((Xamarin.Forms.NavigationPage)mdp.Detail)
+        ((Xamarin.Forms.NavigationPage)flyoutPage.Detail)
           .On<iOS>()
           .SetStatusBarTextColorMode(StatusBarTextColorMode.MatchNavigationBarTextLuminosity);
 };
@@ -73,7 +73,7 @@ IsPresentedChanged += (sender, e) =>
 
 Кроме того, [ `GetStatusBarTextColorMode` ] (xref: Xamarin.Forms . Платформконфигуратион. ИосспеЦифик. Навигатионпаже. Жетстатусбартекстколормоде ( Xamarin.Forms . Иплатформелементконфигуратион { Xamarin.Forms . Платформконфигуратион. iOS, Xamarin.Forms . Навигатионпаже})). метод можно использовать для получения текущего значения [`StatusBarTextColorMode`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.StatusBarTextColorMode) перечисления, применяемого к [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) .
 
-В результате цвет текста строки состояния на [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) можно изменить в соответствии с яркостью панели навигации. В этом примере цвет текста строки состояния изменяется при переключении пользователя между [`Master`](xref:Xamarin.Forms.MasterDetailPage.Master) [`Detail`](xref:Xamarin.Forms.MasterDetailPage.Detail) страницами и [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) :
+В результате цвет текста строки состояния на [`NavigationPage`](xref:Xamarin.Forms.NavigationPage) можно изменить в соответствии с яркостью панели навигации. В этом примере цвет текста строки состояния изменяется при переключении пользователя между [`Flyout`](xref:Xamarin.Forms.FlyoutPage.Flyout) [`Detail`](xref:Xamarin.Forms.FlyoutPage.Detail) страницами и [`FlyoutPage`](xref:Xamarin.Forms.FlyoutPage) :
 
 ![Режим цвет текста строки состояния Platform-Specific](status-bar-text-color-images/status-bar-text-color-mode.png)
 

@@ -6,20 +6,18 @@ ms.assetid: D6539F60-A5AC-46EF-86EB-E9F508EB1FA8
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/16/2020
+ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ff3d99759c161924260a465cf59a31c21795339d
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: dda3c0ded11af919dd80b2f0e00c50d8d6b77389
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373852"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939983"
 ---
 # <a name="no-locxamarinforms-shapes-polygon"></a>Xamarin.Forms Фигуры: многоугольник
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 

@@ -6,20 +6,18 @@ ms.assetid: 24763E56-74EC-4082-897B-E4EAACCADFEE
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 07/27/2020
+ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 025832a6f51f94812e49cfb5245700b62d98ced3
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 856f2f938316e1ee18b99a5df8fc7a43dc2433be
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93374346"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940412"
 ---
 # <a name="no-locxamarinforms-brushes-gradients"></a>Xamarin.Forms Кисти: градиенты
-
-![Предварительный просмотр API](~/media/shared/preview.png "Этот API-интерфейс сейчас доступен в предварительной версии.")
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-brushdemos/)
 

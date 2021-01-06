@@ -8,12 +8,12 @@ ms.date: 03/26/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 04090a2e9d97f1a5f4dae8fa850a39c3465ba05b
-ms.sourcegitcommit: 0c31f1398ec1de1a2b18ec7f25f30630df968db1
+ms.openlocfilehash: f05868bbf8da9597c4290ba687f767f3995ba437
+ms.sourcegitcommit: 07ee6a95f77f9a12fadb857e549cdcdb1928c7d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544673"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97904988"
 ---
 # <a name="no-locxamarinessentials-web-authenticator"></a>Xamarin.Essentials. Веб-средство проверки подлинности
 
@@ -46,9 +46,6 @@ ms.locfileid: "96544673"
 
 Для обработки URI обратного вызова на устройствах Android требуется настроить фильтр намерения. Это легко сделать, создав подкласс класса `WebAuthenticatorCallbackActivity`.
 
-> [!NOTE]
-> Рекомендуем реализовать [ссылки на приложения Android](https://developer.android.com/training/app-links/) для обработки URI обратного вызова. Убедитесь, что только ваше приложение может зарегистрироваться для обработки URI обратного вызова.
-
 ```csharp
 const string CALLBACK_SCHEME = "myapp";
 
@@ -58,17 +55,6 @@ const string CALLBACK_SCHEME = "myapp";
     DataScheme = CALLBACK_SCHEME)]
 public class WebAuthenticationCallbackActivity : Xamarin.Essentials.WebAuthenticatorCallbackActivity
 {
-}
-```
-
-Кроме того, вам нужно выполнить обратный вызов Essentials из переопределения `OnResume` в `MainActivity`:
-
-```csharp
-protected override void OnResume()
-{
-    base.OnResume();
-
-    Xamarin.Essentials.Platform.OnResume();
 }
 ```
 
@@ -91,9 +77,6 @@ protected override void OnResume()
     </dict>
 </array>
 ```
-
-> [!NOTE]
-> Для регистрации URI обратного вызова приложения рекомендуется использовать [универсальные ссылки приложений](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content).
 
 Кроме того, потребуется переопределить методы `OpenUrl` и `ContinueUserActivity` класса `AppDelegate` для обращений к Essentials:
 

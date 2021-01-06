@@ -10,16 +10,14 @@ ms.date: 11/13/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4f60a48d2d8b43ea08ccc36401103d8987e48b1c
-ms.sourcegitcommit: f920ac0724f09e5c9b4f36be1995a5a17a6d9f95
+ms.openlocfilehash: 542d06970cb414b7590cd13757b4e4902af3dd7f
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94591051"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939086"
 ---
 # <a name="no-locxamarinforms-shapes-path-markup-syntax"></a>Xamarin.Forms Фигуры: синтаксис разметки пути
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -27,7 +25,6 @@ Xamarin.Forms синтаксис разметки пути позволяет с
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Data="M13.908992,16.207977 L32.000049,16.207977 32.000049,31.999985 13.908992,30.109983Z" />
 ```
 

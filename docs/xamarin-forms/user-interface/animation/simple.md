@@ -6,16 +6,16 @@ ms.assetid: 4A6FAE5A-848F-4CE0-BFA1-22A6309B5225
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 11/05/2019
+ms.date: 09/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: db7101d5e50dc6ee7840023f6ec4efeb2c52150b
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: ce3dd92c09fb40ea1b864e0c613223ce8bf99e36
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93370199"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940373"
 ---
 # <a name="simple-animations-in-no-locxamarinforms"></a>Простые анимации в Xamarin.Forms
 
@@ -25,20 +25,19 @@ _Класс Виевекстенсионс предоставляет метод
 
 [`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions)Класс предоставляет следующие методы расширения, которые можно использовать для создания простых анимаций:
 
-- [ `TranslateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Транслатето ( Xamarin.Forms . Висуалелемент, System. Double, System. Double, System. UInt32, Xamarin.Forms . Замедление)) анимируется [`TranslationX`](xref:Xamarin.Forms.VisualElement.TranslationX) [`TranslationY`](xref:Xamarin.Forms.VisualElement.TranslationY) Свойства и объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
-- [`ScaleTo`](xref:Xamarin.Forms.ViewExtensions.ScaleTo*) анимируется [`Scale`](xref:Xamarin.Forms.VisualElement.Scale) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
-- `ScaleXTo` анимируется [`ScaleX`](xref:Xamarin.Forms.VisualElement.ScaleX) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
-- `ScaleYTo` анимируется [`ScaleY`](xref:Xamarin.Forms.VisualElement.ScaleY) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
+- [ `CancelAnimations` ] (xref: Xamarin.Forms . Виевекстенсионс. Канцеланиматионс ( Xamarin.Forms . Висуалелемент)) отменяет все анимации.
+- [ `FadeTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Фадето ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) анимируется [`Opacity`](xref:Xamarin.Forms.VisualElement.Opacity) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 - [ `RelScaleTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Релскалето ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) применяет анимированное добавочное увеличение или уменьшение к [`Scale`](xref:Xamarin.Forms.VisualElement.Scale) свойству объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 - [ `RotateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. RotateTo ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) анимируется [`Rotation`](xref:Xamarin.Forms.VisualElement.Rotation) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 - [ `RelRotateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Релротатето ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) применяет анимированное добавочное увеличение или уменьшение к [`Rotation`](xref:Xamarin.Forms.VisualElement.Rotation) свойству объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 - [ `RotateXTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Ротатексто ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) анимируется [`RotationX`](xref:Xamarin.Forms.VisualElement.RotationX) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 - [ `RotateYTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Ротатэйто ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) анимируется [`RotationY`](xref:Xamarin.Forms.VisualElement.RotationY) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
-- [ `FadeTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Фадето ( Xamarin.Forms . Висуалелемент, System. Double, System. UInt32, Xamarin.Forms . Замедление)) анимируется [`Opacity`](xref:Xamarin.Forms.VisualElement.Opacity) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
+- [`ScaleTo`](xref:Xamarin.Forms.ViewExtensions.ScaleTo*) анимируется [`Scale`](xref:Xamarin.Forms.VisualElement.Scale) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
+- `ScaleXTo` анимируется [`ScaleX`](xref:Xamarin.Forms.VisualElement.ScaleX) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
+- `ScaleYTo` анимируется [`ScaleY`](xref:Xamarin.Forms.VisualElement.ScaleY) свойство объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
+- [ `TranslateTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Транслатето ( Xamarin.Forms . Висуалелемент, System. Double, System. Double, System. UInt32, Xamarin.Forms . Замедление)) анимируется [`TranslationX`](xref:Xamarin.Forms.VisualElement.TranslationX) [`TranslationY`](xref:Xamarin.Forms.VisualElement.TranslationY) Свойства и объекта [`VisualElement`](xref:Xamarin.Forms.VisualElement) .
 
 По умолчанию каждая анимация займет 250 миллисекунд. Однако длительность каждой анимации может быть задана при создании анимации.
-
-[`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions)Класс также включает [ `CancelAnimations` ] (xref: Xamarin.Forms . Виевекстенсионс. Канцеланиматионс ( Xamarin.Forms . Висуалелемент)), который можно использовать для отмены любых анимаций.
 
 > [!NOTE]
 > [`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions)Класс предоставляет [ `LayoutTo` ] (xref: Xamarin.Forms . Виевекстенсионс. Лайаутто ( Xamarin.Forms . Висуалелемент, Xamarin.Forms . Прямоугольник, System. UInt32, Xamarin.Forms . Замедление)) метод расширения. Однако этот метод предназначен для использования в макетах для анимации переходов между состояниями макета, которые содержат изменения размера и расположения. Поэтому он должен использоваться только [`Layout`](xref:Xamarin.Forms.Layout) подклассами.
@@ -222,15 +221,15 @@ await Task.WhenAll (
 
 ## <a name="canceling-animations"></a>Отмена анимации
 
-Приложение может отменить одну или несколько анимаций с помощью вызова `static` [ `ViewExtensions.CancelAnimations` ] (xref: Xamarin.Forms . Виевекстенсионс. Канцеланиматионс ( Xamarin.Forms . Висуалелемент)), как показано в следующем примере кода:
+Приложение может отменить одну или несколько анимаций с помощью вызова [Канцеланиматионс '] (xref: Xamarin.Forms . Виевекстенсионс. Канцеланиматионс ( Xamarin.Forms . Висуалелемент)) метод расширения, как показано в следующем примере кода:
 
 ```csharp
-ViewExtensions.CancelAnimations (image);
+image.CancelAnimations();
 ```
 
 В результате будут немедленно отменены все анимации, выполняемые в данный момент на [`Image`](xref:Xamarin.Forms.Image) экземпляре.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье показано, как создавать и отменять анимацию с помощью [`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions) класса. Этот класс предоставляет методы расширения, которые можно использовать для создания простых анимаций, повернутых, масштабируемых, преобразованных и конусных [`VisualElement`](xref:Xamarin.Forms.VisualElement) экземпляров.
 

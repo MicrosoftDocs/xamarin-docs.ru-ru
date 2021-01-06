@@ -10,12 +10,12 @@ ms.date: 08/06/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0275e3d26b86807b113ed78a00c0654809f10990
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 421fdc3eed86ed93fe0416843867553778abd0c5
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93370953"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940529"
 ---
 # <a name="respond-to-system-theme-changes-in-no-locxamarinforms-applications"></a>Реагирование на изменения системных тем в Xamarin.Forms приложениях
 
@@ -33,6 +33,7 @@ Xamarin.Forms приложения могут реагировать на изм
 - iOS 13 или более поздняя.
 - Android 10 (API 29) или более поздней версии.
 - UWP сборки 14393 или более поздней версии.
+- macOS 10,14 или более поздней версии.
 
 На следующих снимках экрана показаны страницы с темами для светлых и темных системных тем в iOS и Android:
 

@@ -6,20 +6,18 @@ ms.assetid: 5BF81E25-12E5-49F0-A40C-0CF4C5D63B9B
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/20/2020
+ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5998f2e73df253d87750d2c553e14de82929b53b
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: b4a905371b8bda93616fee0677cbd0932d8699e5
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93368561"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939775"
 ---
 # <a name="no-locxamarinforms-shapes-ellipse"></a>Xamarin.Forms Фигуры: эллипс
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 

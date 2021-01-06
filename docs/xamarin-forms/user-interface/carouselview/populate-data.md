@@ -10,16 +10,14 @@ ms.date: 10/27/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: dd3672141382c4b68ccaa90511f184b3ad875411
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: b47c810f26dad6c1f6b58eb82bdd234d5cd3f6aa
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93365766"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940438"
 ---
 # <a name="no-locxamarinforms-carouselview-data"></a>Xamarin.Forms Данные Карауселвиев
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 

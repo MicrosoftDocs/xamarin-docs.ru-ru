@@ -6,16 +6,16 @@ ms.assetid: E6F124C7-A161-4C1F-AF40-52F0935E54DE
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 07/14/2016
+ms.date: 09/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 50b64b394314ae2f63ab1f756f1cc73ba29e59e7
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 6ec4c16249aadce668b9fe33dad661e1f7e7ee9e
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93372851"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939034"
 ---
 # <a name="easing-functions-in-no-locxamarinforms"></a>Ускорение функций в Xamarin.Forms
 
@@ -54,6 +54,9 @@ await image.TranslateTo(0, -200, 2000, Easing.BounceOut);
 ```
 
 Задавая функцию плавности анимации, скорость анимации преобразуется в нелинейную и выдает эффект, предоставляемый функцией плавности. Пропуск функции плавности при создании анимации приводит к тому, что анимация использует [`Linear`](xref:Xamarin.Forms.Easing.Linear) функцию плавности по умолчанию, которая создает линейную скорость.
+
+> [!NOTE]
+> Xamarin.Forms 5,0 включает преобразователь типов, который преобразует строковое представление функции плавности в соответствующий [`Easing`](xref:Xamarin.Forms.Easing) член перечисления. Этот преобразователь типов вызывается автоматически для всех свойств типа `Easing` , заданных в XAML.
 
 Дополнительные сведения об использовании методов расширения анимации в [`ViewExtensions`](xref:Xamarin.Forms.ViewExtensions) классе см. в разделе [простая анимация](~/xamarin-forms/user-interface/animation/simple.md). Функции плавности могут также использоваться [`Animation`](xref:Xamarin.Forms.Animation) классом. Дополнительные сведения см. в разделе [пользовательские анимации](~/xamarin-forms/user-interface/animation/custom.md).
 
@@ -103,7 +106,7 @@ await image.TranslateTo (0, 200, 2000, new Easing (t => 1 - Math.Cos (10 * Math.
 
 Пользовательская функция плавности указывается в качестве аргумента лямбда-функции для [`Easing`](xref:Xamarin.Forms.Easing) конструктора и использует `Math.Cos` метод для создания медленных эффектов перетаскивания, которые допускают `Math.Exp` метод. Таким образом, [`Image`](xref:Xamarin.Forms.Image) экземпляр преобразуется таким образом, что он перемещается в окончательное место размещения.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье показано, как использовать предварительно определенные функции плавности и как создавать пользовательские функции плавности. Xamarin.Forms включает [`Easing`](xref:Xamarin.Forms.Easing) класс, который позволяет указать функцию передачи, которая управляет скоростью анимации или замедляется при их выполнении.
 

@@ -6,20 +6,18 @@ ms.assetId: 602456B5-701B-4948-B454-B1F31283F1CF
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 03/26/2020
+ms.date: 10/05/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c9ebee7914d8d2ccfb284910f31d87999b22701f
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: de3d7df922a0b6bdc6644e2684c6f01176abbe42
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93369653"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940503"
 ---
 # <a name="no-locxamarinforms-swipeview"></a>Xamarin.Forms свипевиев
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-swipeviewdemos/)
 
@@ -27,18 +25,13 @@ ms.locfileid: "93369653"
 
 [![Снимок экрана Свипевиев: считывание элементов в CollectionView на iOS и Android](swipeview-images/swipeview-collectionview.png "Свипевиев считывание элементов")](swipeview-images/swipeview-collectionview-large.png#lightbox "Свипевиев считывание элементов")
 
-`SwipeView` доступна в Xamarin.Forms 4,4. Однако в настоящее время он экспериментальен и может использоваться только путем добавления следующей строки кода в `AppDelegate` класс в iOS, в `MainActivity` класс на Android или в `App` класс в UWP перед вызовом `Forms.Init` :
-
-```csharp
-Forms.SetFlags("SwipeView_Experimental");
-```
-
 `SwipeView` определяет следующие свойства:
 
 - `LeftItems`Тип `SwipeItems` , который представляет элементы считывания, которые могут быть вызваны при считывании элемента управления с левой стороны.
 - `RightItems`Тип `SwipeItems` , который представляет элементы считывания, которые могут быть вызваны при считывании элемента управления с правой стороны.
 - `TopItems`Тип `SwipeItems` , который представляет элементы считывания, которые могут быть вызваны при прокрутке элемента управления сверху вниз.
 - `BottomItems`Тип `SwipeItems` , который представляет элементы считывания, которые могут быть вызваны при прокрутке элемента управления снизу вверх.
+- `Threshold`Тип `double` , который представляет число независимых от устройства единиц, которые активируют жест прокрутки для полного отображения элементов считывания.
 
 Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
@@ -186,7 +179,7 @@ SwipeView swipeView = new SwipeView
 
 [![Снимок экрана с Свипевиев считывания элементов в iOS и Android](swipeview-images/swipeview-swipeitems.png "Свипевиев считывание элементов")](swipeview-images/swipeview-swipeitems-large.png#lightbox "Свипевиев считывание элементов")
 
-При `SwipeItem` касании его `Invoked` событие срабатывает и обрабатывается зарегистрированным обработчиком событий. Кроме того, `Command` для свойства можно задать `ICommand` реализацию, которая будет выполняться при `SwipeItem` вызове метода.
+При `SwipeItem` касании его `Invoked` событие срабатывает и обрабатывается зарегистрированным обработчиком событий. Кроме того, `MenuItem.Clicked` событие срабатывает. Кроме того, `Command` для свойства можно задать `ICommand` реализацию, которая будет выполняться при `SwipeItem` вызове метода.
 
 > [!NOTE]
 > Если внешний вид `SwipeItem` определяется только с помощью `Text` `IconImageSource` свойств или, содержимое всегда выравнивается по центру.
@@ -234,6 +227,30 @@ SwipeView swipeView = new SwipeView
 - `Left` Указывает, что произошла левая прокрутка.
 - `Up` Указывает, что произошло предыдущее считывание.
 - `Down` Указывает, что произошло прокрутка вниз.
+
+## <a name="swipe-threshold"></a>Порог прокрутки
+
+`SwipeView` включает `Threshold` свойство типа `double` , представляющее число независимых от устройства единиц, которые активируют жест прокрутки для полного отображения элементов считывания.
+
+В следующем примере показан объект `SwipeView` , который задает `Threshold` свойство:
+
+```xaml
+<SwipeView Threshold="200">
+    <SwipeView.LeftItems>
+        <SwipeItems>
+            <SwipeItem Text="Favorite"
+                       IconImageSource="favorite.png"
+                       BackgroundColor="LightGreen" />
+        </SwipeItems>
+    </SwipeView.LeftItems>
+    <!-- Content -->
+</SwipeView>
+```
+
+В этом примере `SwipeView` необходимо прокрутить для единиц, не зависящих от устройства 200, прежде чем `SwipeItem` будет полностью отображен.
+
+> [!NOTE]
+> В настоящее время `Threshold` свойство реализовано только в iOS и Android.
 
 ## <a name="swipe-mode"></a>Режим прокрутки
 

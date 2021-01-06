@@ -10,12 +10,12 @@ ms.date: 12/11/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: cce3fbf6f80b8a0fddff2ed2b2af027721faf59d
-ms.sourcegitcommit: bfe713c038a0d6c4362da4c3221d7aee9ab03d2b
+ms.openlocfilehash: 76b0d9eff175755d6fc13178a864ae99b345efd3
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805613"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940204"
 ---
 # <a name="android-platform-features"></a>Возможности на платформе Android
 
@@ -64,8 +64,6 @@ Xamarin.FormsДля разработки приложений для Android т�
 
 Xamarin.Forms Проекты Android теперь используют в `FormsAppCompatActivity` качестве базового класса их основного действия. Этот класс использует функции **AppCompat** , предоставляемые Android, для реализации тем дизайна материалов.
 
-Чтобы добавить темы дизайна материалов в Xamarin.Forms проект Android, следуйте инструкциям по [установке для поддержки AppCompat](appcompat-material-design.md) .
-
 Ниже приведен пример **TODO** со значением по умолчанию `FormsApplicationActivity` .
 
 [![Пример приложения Todo без AppCompat](images/before-appcompat-sml.png)](images/before-appcompat.png#lightbox "Пример приложения Todo без AppCompat")
@@ -80,7 +78,3 @@ Xamarin.Forms Проекты Android теперь используют в `Forms
 ## <a name="androidx-migration"></a>Миграция AndroidX
 
 Андроидкс заменяет библиотеку поддержки Android. Дополнительные сведения о Андроидкс и о том, как перенести Xamarin.Forms приложение для использования библиотек андроидкс, см. [в Xamarin.Forms разделе Миграция андроидкс в ](~/xamarin-forms/platform/android/androidx-migration.md).
-
-## <a name="related-links"></a>Связанные ссылки
-
-- [Добавление поддержки дизайна материалов](appcompat-material-design.md)

@@ -6,27 +6,22 @@ ms.assetid: 4E749FE8-852C-46DA-BB1E-652936106357
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 07/30/2020
+ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 07765fdb9f67f21415db495da1b635b0507b7ed1
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 6db938f01e4ac1f886149145046668202b119431
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91559211"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939762"
 ---
 # <a name="no-locxamarinforms-shapes"></a>Xamarin.Forms Многоугольник
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 `Shape`— Это тип [`View`](xref:Xamarin.Forms.View) , который позволяет нарисовать форму на экране. `Shape` объекты могут использоваться внутри классов макета и большинства элементов управления, так как `Shape` класс является производным от `View` класса.
 
 Xamarin.Forms Фигуры доступны в `Xamarin.Forms.Shapes` пространстве имен в iOS, Android, macOS, универсальная платформа Windows (UWP) и Windows Presentation Foundation (WPF).
-
-> [!IMPORTANT]
-> Xamarin.Forms Фигуры в настоящее время экспериментальны и могут использоваться только путем установки `Shapes_Experimental` флага. Дополнительные сведения см. в статье [Флаги экспериментального режима Xamarin.Forms](~/xamarin-forms/internals/experimental-flags.md).
 
 `Shape` определяет следующие свойства:
 
@@ -38,7 +33,7 @@ Xamarin.Forms Фигуры доступны в `Xamarin.Forms.Shapes` прост
 - `StrokeLineCap`, типа `PenLineCap` , описывает фигуру в начале и в конце линии или сегмента. Значение по умолчанию этого свойства равно `PenLineCap.Flat`.
 - `StrokeLineJoin`Тип `PenLineJoin` — задает тип объединения, используемый в вершинах фигуры. Значение по умолчанию этого свойства равно `PenLineJoin.Miter`.
 - `StrokeMiterLimit`, тип `double` , задает ограничение на отношение длины среза к половине `StrokeThickness` фигуры. Значение этого свойства по умолчанию равно 10,0.
-- `StrokeThickness`Тип — `double` указывает ширину контура фигуры. Значение этого свойства по умолчанию равно 0,0.
+- `StrokeThickness`Тип — `double` указывает ширину контура фигуры. Значение этого свойства по умолчанию равно 1,0.
 
 Эти свойства поддерживаются объектами [`BindableProperty`](xref:Xamarin.Forms.BindableProperty), то есть эти свойства можно указывать в качестве целевых для привязки и стилизации данных.
 
@@ -84,7 +79,6 @@ Xamarin.Forms Определяет число объектов, производ
 ```xaml
 <Path Aspect="Uniform"
       Stroke="Yellow"
-      StrokeThickness="1"
       Fill="Red"
       BackgroundColor="LightGray"
       HorizontalOptions="Start"

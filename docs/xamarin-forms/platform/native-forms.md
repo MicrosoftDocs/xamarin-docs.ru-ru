@@ -10,12 +10,12 @@ ms.date: 08/19/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: aec9f0ec0b3092a5f84f183fb90cfc8bc9da7324
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: d998ec31c6e10366409a89fa554a2d00ad2cb3e2
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93374229"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940295"
 ---
 # <a name="no-locxamarinforms-in-xamarin-native-projects"></a>Xamarin.Forms в проектах Xamarin Native
 
@@ -168,7 +168,7 @@ public class MainActivity : AppCompatActivity
         SupportActionBar.Title = "Notes";
 
         FolderPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.LocalApplicationData));
-        Android.Support.V4.App.Fragment mainPage = new NotesPage().CreateSupportFragment(this);
+        AndroidX.Fragment.App.Fragment mainPage = new NotesPage().CreateSupportFragment(this);
         SupportFragmentManager
             .BeginTransaction()
             .Replace(Resource.Id.fragment_frame_layout, mainPage)
@@ -209,7 +209,7 @@ void OnNoteAddedClicked(object sender, EventArgs e)
 ```csharp
 public void NavigateToNoteEntryPage(Note note)
 {
-    Android.Support.V4.App.Fragment noteEntryPage = new NoteEntryPage
+    AndroidX.Fragment.App.Fragment noteEntryPage = new NoteEntryPage
     {
         BindingContext = note
     }.CreateSupportFragment(this);
@@ -287,7 +287,7 @@ public sealed partial class MainPage : Page
 {
     NotesPage notesPage;
     NoteEntryPage noteEntryPage;
-    
+
     public static MainPage Instance;
     public static string FolderPath { get; private set; }
 
@@ -300,7 +300,7 @@ public sealed partial class MainPage : Page
         notesPage = new Notes.UWP.Views.NotesPage();
         this.Content = notesPage.CreateFrameworkElement();
         // ...        
-    } 
+    }
     // ...
 }
 ```

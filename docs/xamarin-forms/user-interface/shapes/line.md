@@ -6,20 +6,18 @@ ms.assetid: 384F1A72-6D3B-4FD3-BC40-E00A73A463EC
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/20/2020
+ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 78425617d95758d3663cb9f2c5ac9bebb463bd68
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 5d5ecd7804c6cd8321827cd8aef98245124beca0
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93374762"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939119"
 ---
 # <a name="no-locxamarinforms-shapes-line"></a>Xamarin.Forms Фигуры: линия
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -50,19 +48,17 @@ ms.locfileid: "93374762"
       Y1="0"
       X2="0"
       Y2="120"
-      Stroke="Red"
-      StrokeThickness="1" />
+      Stroke="Red" />
 ```
 
 В этом примере красная диагональная линия отрисовывается от (40, 0) до (0120):
 
-![Line](line-images/line.png "Линия")
+![Line](line-images/line.png "Строка")
 
 Поскольку `X1` свойства, `Y1` , `X2` и `Y2` имеют значения по умолчанию 0, можно нарисовать некоторые строки с минимальным синтаксисом:
 
 ```xaml
 <Line Stroke="Red"
-      StrokeThickness="1"
       X2="200" />
 ```
 
@@ -76,7 +72,6 @@ ms.locfileid: "93374762"
       X2="0"
       Y2="120"
       Stroke="DarkBlue"
-      StrokeThickness="1"
       StrokeDashArray="1,1"
       StrokeDashOffset="6" />
 ```

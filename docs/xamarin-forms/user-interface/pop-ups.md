@@ -6,16 +6,16 @@ ms.assetid: 46AB0D5E-0025-4A8A-9D00-3E66C3D0BA2E
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 03/10/2020
+ms.date: 12/10/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4af29f2df797aea4bbd0655fc0564e289f2c2a3b
-ms.sourcegitcommit: 1d19ee87e317a72de05f3f0fa73dfcaeb767cbd1
+ms.openlocfilehash: 09cffb4e5c7d8f6b78d5ab1de6ec9839c3969e87
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96755023"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940122"
 ---
 # <a name="display-pop-ups"></a>Отображать всплывающие окна
 
@@ -47,6 +47,8 @@ async void OnAlertYesNoClicked (object sender, EventArgs e)
 
 [![Диалоговое окно предупреждения с двумя кнопками](pop-ups-images/alert2-sml.png)](pop-ups-images/alert2.png#lightbox)
 
+[`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*)Метод также имеет перегрузки, принимающие [`FlowDirection`](xref:Xamarin.Forms.FlowDirection) аргумент, указывающий направление, в котором элементы пользовательского интерфейса поступают в пределах предупреждения. Дополнительные сведения о направлении потока см. [в разделе локализация справа налево](~/xamarin-forms/app-fundamentals/localization/right-to-left.md).
+
 > [!WARNING]
 > По умолчанию в UWP при отображении оповещения какие-либо ключи доступа, определенные на странице за предупреждением, могут быть активированы. Дополнительные сведения см. [в разделе ключи доступа висуалелемент в Windows](~/xamarin-forms/platform/windows/visualelement-access-keys.md).
 
@@ -77,6 +79,8 @@ async void OnActionSheetCancelDeleteClicked (object sender, EventArgs e)
 ```
 
 [![дисплайактионшит](pop-ups-images/action2-sml.png "Диалоговое окно листа действий с кнопкой "уничтожить"")](pop-ups-images/action2.png#lightbox "Диалоговое окно листа действий с кнопкой "уничтожить"")
+
+[`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*)Метод также имеет перегрузку, которая принимает [`FlowDirection`](xref:Xamarin.Forms.FlowDirection) аргумент, указывающий направление потока элементов пользовательского интерфейса на листе действий. Дополнительные сведения о направлении потока см. [в разделе локализация справа налево](~/xamarin-forms/app-fundamentals/localization/right-to-left.md).
 
 ## <a name="display-a-prompt"></a>Отображение запроса
 
@@ -119,3 +123,4 @@ string result = await DisplayPromptAsync("Question 2", "What's 5 + 5?", initialV
 ## <a name="related-links"></a>Связанные ссылки
 
 - [PopupsSample](/samples/xamarin/xamarin-forms-samples/navigation-pop-ups)
+- [Локализация справа налево](~/xamarin-forms/app-fundamentals/localization/right-to-left.md)

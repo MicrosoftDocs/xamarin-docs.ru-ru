@@ -6,20 +6,18 @@ ms.assetid: C6DEE1A9-63FC-4889-BC77-F401D5D7DF32
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 10/03/2019
+ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5aa20e29e22df9de1d6cdd6208e56fa2e0fe0325
-ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
+ms.openlocfilehash: 26db8044111741c7198eb1b125986e20f55b6add
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94590354"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940542"
 ---
 # <a name="no-locxamarinforms-carouselview-emptyview"></a>Xamarin.Forms Карауселвиев Емптивиев
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-carouselviewdemos/)
 

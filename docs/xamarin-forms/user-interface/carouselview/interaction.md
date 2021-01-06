@@ -6,16 +6,16 @@ ms.assetid: 854D97E5-D119-4BE2-AE7C-BD428792C992
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 02/11/2020
+ms.date: 09/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c6b6a5a538d69d396f8b30381fd1d0b73d3f0e9f
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: d8187c82033a872752a314b03950793cad4ac0d1
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373826"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939164"
 ---
 # <a name="no-locxamarinforms-carouselview-interaction"></a>Xamarin.Forms Взаимодействие Карауселвиев
 
@@ -26,8 +26,9 @@ ms.locfileid: "93373826"
 - `CurrentItem`Тип `object` , текущий отображаемый элемент. Это свойство имеет режим привязки по умолчанию `TwoWay` и имеет значение, `null` Если нет данных для вывода.
 - `CurrentItemChangedCommand`Тип `ICommand` , который выполняется при изменении текущего элемента.
 - `CurrentItemChangedCommandParameter` с типом `object`, который передается как параметр в `CurrentItemChangedCommand`.
-- `IsBounceEnabled`Тип `bool` , который указывает, `CarouselView` будет ли передается значение на границе содержимого. Значение по умолчанию — `true`.
-- `IsSwipeEnabled`Тип `bool` , который определяет, будет ли жест прокрутки изменять отображаемый элемент. Значение по умолчанию — `true`.
+- `IsBounceEnabled`Тип `bool` , который указывает, `CarouselView` будет ли передается значение на границе содержимого. Значение по умолчанию — `true`.
+- `IsSwipeEnabled`Тип `bool` , который определяет, будет ли жест прокрутки изменять отображаемый элемент. Значение по умолчанию — `true`.
+- `Loop`Тип `bool` , который определяет, предоставляет ли объект `CarouselView` доступ к коллекции элементов с помощью цикла. Значение по умолчанию — `true`.
 - `Position`Тип `int` — индекс текущего элемента в базовой коллекции. Это свойство имеет режим привязки по умолчанию `TwoWay` и имеет значение 0, если нет данных для вывода.
 - `PositionChangedCommand`Тип `ICommand` , который выполняется при изменении расположения.
 - `PositionChangedCommandParameter` с типом `object`, который передается как параметр в `PositionChangedCommand`.
@@ -355,6 +356,10 @@ public class MonkeysViewModel : INotifyPropertyChanged
 ## <a name="disable-bounce"></a>Отключить Bounce
 
 По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) посылает элементы на границах содержимого. Это можно отключить, задав `IsBounceEnabled` для свойства значение `false` .
+
+## <a name="disable-loop"></a>Отключить цикл
+
+По умолчанию [`CarouselView`](xref:Xamarin.Forms.CarouselView) обеспечивает циклический доступ к коллекции элементов. Таким образом, прокрутка назад от первого элемента в коллекции приведет к отображению последнего элемента в коллекции. Аналогичным образом, прокрутка вперед от последнего элемента в коллекции вернется к первому элементу в коллекции. Это поведение можно отключить, задав `Loop` для свойства значение `false` .
 
 ## <a name="disable-swipe-interaction"></a>Отключить взаимодействие при прокрутке
 

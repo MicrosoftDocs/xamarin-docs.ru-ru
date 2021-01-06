@@ -6,20 +6,18 @@ ms.assetid: B29486F4-9A5E-4588-ABDF-7EB1E69B9AE6
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/21/2020
+ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1ba44903f20d0431c27f2d49429b2feb9c9a51e0
-ms.sourcegitcommit: f920ac0724f09e5c9b4f36be1995a5a17a6d9f95
+ms.openlocfilehash: b184d56647e47b95bbd809baee4d9cba7360ee2f
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94591064"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939996"
 ---
 # <a name="no-locxamarinforms-shapes-path"></a>Xamarin.Forms Shapes: путь
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -48,7 +46,6 @@ ms.locfileid: "94591064"
 ```xaml
 <Path Data="M 10,100 L 100,100 100,50Z"
       Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Start" />
 ```
@@ -69,7 +66,6 @@ ms.locfileid: "94591064"
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Aspect="Uniform"
       HorizontalOptions="Start">
     <Path.Data>

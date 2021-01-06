@@ -13,12 +13,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: c9551fd6035f65931e476d16cb40887dcd0425db
-  ms.sourcegitcommit: 808ff109928a1eea16e17e23ea81f8c903a239e8
+  ms.openlocfilehash: de8dce1de6236d5d6b260afaa24527a61925a533
+  ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/13/2020
-  ms.locfileid: "88181476"
+  ms.lasthandoff: 01/06/2021
+  ms.locfileid: "97940282"
 landingContent:
 - title: Справочник по элементам управления
   linkLists:
@@ -44,16 +44,12 @@ landingContent:
     links:
     - text: BoxView
       url: boxview.md
-    - text: Expander
-      url: expander.md
     - text: Изображение
       url: images.md
     - text: Метка
       url: text/label.md
     - text: Карта
       url: map/index.md
-    - text: MediaElement
-      url: mediaelement.md
     - text: Фигуры
       url: shapes/index.md
     - text: WebView

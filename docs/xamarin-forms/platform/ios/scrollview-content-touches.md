@@ -10,12 +10,12 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e028c506745bfd61aaff8e530a4f13d2429864ff
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 072f5db9115069fad547bb363865a609e5167ce8
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373918"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939944"
 ---
 # <a name="scrollview-content-touches-on-ios"></a>Скроллвиевное содержимое касается iOS
 
@@ -24,12 +24,12 @@ ms.locfileid: "93373918"
 Неявный таймер активируется, когда жест касания начинается в [`ScrollView`](xref:Xamarin.Forms.ScrollView) iOS, и `ScrollView` принимает решение на основе действия пользователя в диапазоне таймера, должно ли оно обрабатывать этот жест или передавать его содержимому. По умолчанию в iOS `ScrollView` содержимое задерживается, но это может вызвать проблемы в некоторых обстоятельствах, `ScrollView` когда содержимое не выигрывает жест, когда оно должно. Поэтому эта платформа управляет тем, обрабатывает ли объект `ScrollView` жест касания или передает его содержимому. Он используется в XAML путем присвоения `ScrollView.ShouldDelayContentTouches` свойству присоединенного свойства `boolean` значения:
 
 ```xaml
-<MasterDetailPage ...
+<FlyoutPage ...
                   xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core">
-    <MasterDetailPage.Master>
+    <FlyoutPage.Flyout>
         <ContentPage Title="Menu" BackgroundColor="Blue" />
-    </MasterDetailPage.Master>
-    <MasterDetailPage.Detail>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
         <ContentPage>
             <ScrollView x:Name="scrollView" ios:ScrollView.ShouldDelayContentTouches="false">
                 <StackLayout Margin="0,20">
@@ -38,8 +38,8 @@ ms.locfileid: "93373918"
                 </StackLayout>
             </ScrollView>
         </ContentPage>
-    </MasterDetailPage.Detail>
-</MasterDetailPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
 ```
 
 Кроме того, его можно использовать в C# с помощью API-интерфейса Fluent:
@@ -58,7 +58,7 @@ scrollView.On<iOS>().SetShouldDelayContentTouches(false);
 scrollView.On<iOS>().SetShouldDelayContentTouches(!scrollView.On<iOS>().ShouldDelayContentTouches());
 ```
 
-В результате [`ScrollView`](xref:Xamarin.Forms.ScrollView) может быть отключена Задержка получения содержимого, поэтому в этом сценарии объект [`Slider`](xref:Xamarin.Forms.Slider) получает жест, а не [`Detail`](xref:Xamarin.Forms.MasterDetailPage.Detail) страницу из [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) :
+В результате [`ScrollView`](xref:Xamarin.Forms.ScrollView) может быть отключена Задержка получения содержимого, поэтому в этом сценарии объект [`Slider`](xref:Xamarin.Forms.Slider) получает жест, а не [`Detail`](xref:Xamarin.Forms.FlyoutPage.Detail) страницу из [`FlyoutPage`](xref:Xamarin.Forms.FlyoutPage) :
 
 [![Скроллвиев задержка содержимого касается конкретной платформы](scrollview-content-touches-images/scrollview-delay-content-touches.png)](scrollview-content-touches-images/scrollview-delay-content-touches-large.png#lightbox "Скроллвиев с задержкой содержимого Platform-Specific")
 

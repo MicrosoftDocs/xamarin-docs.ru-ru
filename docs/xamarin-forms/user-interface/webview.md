@@ -10,12 +10,12 @@ ms.date: 05/06/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9b22b46cb5452e558328c383ed97e66a60cfc166
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 05de8c554864108b90433c335074c61fc3def8cf
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93374138"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939957"
 ---
 # <a name="no-locxamarinforms-webview"></a>Xamarin.Forms WebView
 
@@ -25,7 +25,7 @@ ms.locfileid: "93374138"
 
 ![В браузере приложений](webview-images/in-app-browser.png)
 
-## <a name="content"></a>Content
+## <a name="content"></a>Содержимое
 
 `WebView` поддерживает следующие типы содержимого:
 
@@ -175,7 +175,7 @@ source.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
 
 #### <a name="ios"></a>iOS
 
-В iOS веб-содержимое должно находиться в корневом каталоге проекта или каталоге **ресурсов** с действием сборки *BundleResource* , как показано ниже:
+В iOS веб-содержимое должно находиться в корневом каталоге проекта или каталоге **ресурсов** с действием сборки *BundleResource*, как показано ниже:
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
@@ -418,6 +418,9 @@ webView.Reload();
 [assembly: ExportRenderer(typeof(Xamarin.Forms.WebView), typeof(Xamarin.Forms.Platform.iOS.WebViewRenderer))]
 ```
 
+> [!NOTE]
+> В Xamarin.Forms 5,0 `WebViewRenderer` класс был удален. Таким образом, Xamarin.Forms 5,0 не содержит ссылку на `UIWebView` элемент управления.
+
 `WebView` по умолчанию в Android выполняется примерно так же быстро, как и встроенный браузер.
 
 [WebView UWP](/windows/uwp/design/controls-and-patterns/web-view) использует механизм визуализации Microsoft ребра. Для настольных и планшетных устройств должна отображаться такая же производительность, как и при использовании браузера Microsoft ребра.
@@ -552,6 +555,9 @@ webView.Source = new UrlWebViewSource { Url = uri.ToString() };
 ## <a name="uiwebview-deprecation-and-app-store-rejection-itms-90809"></a>Уивебвиев устаревания и отклонение магазина приложений (ИТМС-90809)
 
 Начиная с 2020 апреля [компания Apple будет отклонять приложения](https://developer.apple.com/news/?id=12232019b) , которые по-прежнему используют устаревший `UIWebView` API. Хотя в Xamarin.Forms `WKWebView` качестве значения по умолчанию выбрано, по-прежнему существует ссылка на старый пакет SDK в Xamarin.Forms двоичных файлах. Текущее поведение [компоновщика iOS](~/ios/deploy-test/linker.md) не удаляет это, поэтому в результате нерекомендуемый `UIWebView` API будет по-прежнему отображаться в приложении при отправке в App Store.
+
+> [!IMPORTANT]
+> В Xamarin.Forms 5,0 `WebViewRenderer` класс был удален. Таким образом, Xamarin.Forms 5,0 не содержит ссылку на `UIWebView` элемент управления.
 
 Для устранения этой проблемы доступна предварительная версия компоновщика. Чтобы включить предварительную версию, необходимо предоставить `--optimize=experimental-xforms-product-type` компоновщику дополнительный аргумент.
 

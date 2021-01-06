@@ -6,20 +6,18 @@ ms.assetid: 5CABB22B-C6BE-43D1-91D9-6E90A4BD5622
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 06/24/2020
+ms.date: 09/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 39524a294245236bc1af875d8b6268d2129fead7
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: e78acc88c9f159fdeb797663f1c90283ed0d803b
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373085"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939788"
 ---
 # <a name="no-locxamarinforms-shapes-fill-rules"></a>Xamarin.Forms Фигуры: правила заливки
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -38,7 +36,6 @@ ms.locfileid: "93373085"
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Fill="#CCCCFF"
       Aspect="Uniform"
       HorizontalOptions="Start">
@@ -80,7 +77,6 @@ ms.locfileid: "93373085"
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Fill="#CCCCFF"
       Aspect="Uniform"
       HorizontalOptions="Start">
@@ -117,7 +113,6 @@ ms.locfileid: "93373085"
 
 ```xaml
 <Path Stroke="Black"
-      StrokeThickness="1"
       Fill="#CCCCFF">
      <Path.Data>
          <GeometryGroup FillRule="Nonzero">
