@@ -10,12 +10,12 @@ ms.date: 12/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e8dd18caf7ab6730c8529660d83511cf8c65edcf
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 289f2637b10e1ad163b0c3693176625f3bd82e6f
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93375165"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940100"
 ---
 # <a name="no-locxamarinforms-carousel-page"></a>Страница карусели в Xamarin.Forms
 
@@ -43,7 +43,7 @@ _CarouselPage в Xamarin.Forms — это страница, по которой 
 > [!NOTE]
 > [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) не поддерживает виртуализацию пользовательского интерфейса. Поэтому, если `CarouselPage` содержит слишком много дочерних элементов, производительность может снижаться.
 
-Если объект [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) внедрен на страницу [`Detail`](xref:Xamarin.Forms.MasterDetailPage.Detail) страницы [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage), свойству [`MasterDetailPage.IsGestureEnabled`](xref:Xamarin.Forms.MasterDetailPage.IsGestureEnabledProperty) необходимо присвоить значение `false`, чтобы предотвратить конфликты жестов между `CarouselPage` и `MasterDetailPage`.
+Если объект [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) внедрен на страницу [`Detail`](xref:Xamarin.Forms.FlyoutPage.Detail) страницы [`FlyoutPage`](xref:Xamarin.Forms.FlyoutPage), свойству [`FlyoutPage.IsGestureEnabled`](xref:Xamarin.Forms.FlyoutPage.IsGestureEnabledProperty) необходимо присвоить значение `false`, чтобы предотвратить конфликты жестов между `CarouselPage` и `FlyoutPage`.
 
 Дополнительные сведения о [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) см. в [главе 25](https://developer.xamarin.com/r/xamarin-forms/book/chapter25.pdf) книги о Xamarin.Forms Чарльза Петцольда (Charles Petzold).
 

@@ -11,12 +11,12 @@ ms.date: 11/05/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 676e0f062d3ed83cf433188e646f1e96f84a77cc
-ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
+ms.openlocfilehash: 5d06b0467a5029fec6d0c92a683114b9e0d04685
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94590274"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940191"
 ---
 # <a name="right-to-left-localization"></a>Локализация справа налево
 
@@ -128,7 +128,6 @@ using System.Resources;
 - Расположение кнопок [`NavigationPage`](xref:Xamarin.Forms.NavigationPage), расположение элементов панели инструментов и анимация переходов определяются языковым стандартом устройства, а не свойством [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection).
 - Направление прокрутки [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) не перевертывается.
 - Визуальное содержимое [`Image`](xref:Xamarin.Forms.Image) не перевертывается.
-- Ориентация [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert(System.String,System.String,System.String)) и [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet(System.String,System.String,System.String,System.String[])) определяется языковым стандартом устройства, а не свойством [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection).
 - Содержимое [`WebView`](xref:Xamarin.Forms.WebView) не учитывает свойство [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection).
 - Требуется добавить свойство `TextDirection` для управления выравниванием текста.
 
@@ -146,7 +145,7 @@ using System.Resources;
 ### <a name="uwp"></a>UWP
 
 - Выравнивание текста [`Editor`](xref:Xamarin.Forms.Editor) определяется языковым стандартом устройства, а не свойством [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection).
-- Свойство [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) не наследуется дочерними объектами [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage).
+- Свойство [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection) не наследуется дочерними объектами [`FlyoutPage`](xref:Xamarin.Forms.FlyoutPage).
 - Выравнивание текста [`ContextActions`](xref:Xamarin.Forms.Cell.ContextActions) определяется языковым стандартом устройства, а не свойством [`FlowDirection`](xref:Xamarin.Forms.VisualElement.FlowDirection).
 
 ## <a name="force-right-to-left-layout"></a>Принудительное использование макета с написанием справа налево

@@ -10,12 +10,12 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 05b7821a08140dda411842c5f978be2027fcc033
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: f37006e15ad4cc2c6c8d03f3c88c1c8f57fe4fd5
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373982"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940074"
 ---
 # <a name="summary-of-chapter-25-page-varieties"></a>Сводка по главе 25. Виды страниц
 
@@ -122,5 +122,5 @@ ms.locfileid: "93373982"
 
 - [Глава 25, полный текст в формате PDF](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch25-Apr2016.pdf)
 - [Примеры для Главы 25](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter25)
-- [Страница "Основной вид и подробности" Xamarin.Forms](~/xamarin-forms/app-fundamentals/navigation/master-detail-page.md)
+- [Страница "Основной вид и подробности" Xamarin.Forms](~/xamarin-forms/app-fundamentals/navigation/flyoutpage.md)
 - [Страница с вкладками](~/xamarin-forms/app-fundamentals/navigation/tabbed-page.md)

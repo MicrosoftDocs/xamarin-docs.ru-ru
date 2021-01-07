@@ -10,12 +10,12 @@ ms.date: 09/11/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 374444307ef0b6cc6354d2f660834762bb566434
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 4df1afb80cc8b261d9bc6d022fe814fd411c0c3c
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93367963"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940087"
 ---
 # <a name="introduction-to-no-locxamarinforms-data-templates"></a>Общие сведения о шаблонах данных Xamarin.Forms
 
@@ -117,17 +117,6 @@ public class Person
 ## <a name="creating-a-datatemplate"></a>Создание DataTemplate
 
 Шаблон [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) используется для определения внешнего вида данных и обычно привязывается к данным для отображения. Стандартный сценарий его использования — отображение данных из коллекции объектов в [`ListView`](xref:Xamarin.Forms.ListView). Например, если элемент `ListView` привязан к коллекции объектов `Person`, свойству `ListView.ItemTemplate` присваивается шаблон `DataTemplate`, определяющий внешний вид каждого объекта `Person` в `ListView`. Шаблон `DataTemplate` будет содержать элементы, привязанные к значениям свойств каждого объекта `Person`. Дополнительные сведения о привязке данных см. в статье [Основы привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md).
-
-Шаблон [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) можно использовать в качестве значения следующих свойств:
-
-- [`ListView.HeaderTemplate`](xref:Xamarin.Forms.ListView.HeaderTemplate)
-- [`ListView.FooterTemplate`](xref:Xamarin.Forms.ListView.FooterTemplate)
-- [`ListView.GroupHeaderTemplate`](xref:Xamarin.Forms.ListView.GroupHeaderTemplate)
-- [`ItemsView.ItemTemplate`](xref:Xamarin.Forms.ItemsView`1), наследуемое элементом [`ListView`](xref:Xamarin.Forms.ListView);
-- [`MultiPage.ItemTemplate`](xref:Xamarin.Forms.MultiPage`1), наследуемое элементами [`CarouselPage`](xref:Xamarin.Forms.CarouselPage), [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) и [`TabbedPage`](xref:Xamarin.Forms.TabbedPage).
-
-> [!NOTE]
-> Обратите внимание на то, что, хотя представление [`TableView`](xref:Xamarin.Forms.TableView) использует объекты [`Cell`](xref:Xamarin.Forms.Cell), оно не использует шаблон [`DataTemplate`](xref:Xamarin.Forms.DataTemplate). Связано это с тем, что привязки данных всегда задаются непосредственно для объектов `Cell`.
 
 Шаблон [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), являющийся прямым потомком перечисленных выше свойств, называется *встроенным*. Кроме того, шаблон `DataTemplate` можно определить как ресурс на уровне элемента управления, страницы или приложения. От того, где определен шаблон [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), зависит то, где его можно использовать.
 
