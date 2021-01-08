@@ -10,12 +10,12 @@ ms.date: 07/18/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: abe8161ea8536f5fb8b13c71fe49ebad57460ca1
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 6e53fdc689c15b3495af838f4788c1a50ad7a989
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93370420"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940347"
 ---
 # <a name="summary-of-chapter-3-deeper-into-text"></a>Сводная информация о главе 3. Более подробная информация
 
@@ -113,9 +113,9 @@ ms.locfileid: "93370420"
 
 ## <a name="changing-the-application-color-scheme"></a>Изменение цветовой схемы приложения
 
-Для нескольких платформ используется цветовая схема по умолчанию, как показано в списке выше.
+Как показано в списке выше, у разных платформ есть свои цветовые схемы по умолчанию.
 
-При нацеливании на Android вы можете включить схему темного шрифта на светлом фоне, выбрав светлую тему в файле Android.Manifest.xml или [добавив AppCompat и элементы материального дизайна](~/xamarin-forms/platform/android/appcompat-material-design.md).
+При разработке для Android вы можете переключиться на схему с темным текстом на светлом фоне, выбрав светлую тему в файле Android.Manifest.xml.
 
 Для платформ Windows цветовую тему обычно выбирает пользователь, но вы можете добавить в файл App.xaml для этой платформы атрибут `RequestedTheme`, которому присвоено значение `Light` или `Dark`. По умолчанию файл App.xaml в проекте UWP содержит атрибут `RequestedTheme` со значением `Light`.
 

@@ -10,18 +10,18 @@ ms.date: 07/30/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 90f06c0379cc40a946970ad4248dc8527ee34f3a
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 4faa0923e074460ef254db319dfcfd01cc832dce
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93372786"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940137"
 ---
 # <a name="no-locxamarinforms-shell-flyout"></a>Всплывающий элемент оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
-Всплывающее меню выполняет роль главного меню для приложения оболочки. Его можно вызвать специальным значком или жестом пальцем от края экрана. Всплывающее меню состоит из необязательного заголовка, вложенных элементов всплывающего меню и необязательных пунктов меню.
+Всплывающее меню выполняет роль главного меню для приложения оболочки. Его можно вызвать специальным значком или жестом пальцем от края экрана. Всплывающий элемент состоит из входящих в него пунктов, а также (необязательно) заголовка, пунктов меню и нижнего колонтитула:
 
 ![Снимок экрана со всплывающим меню и заметками в оболочке](flyout-images/flyout-annotated.png "Всплывающий элемент с заметками")
 
@@ -133,6 +133,59 @@ Shell.Current.FlyoutIsPresented = false;
     ...
 </Shell>
 ```
+
+## <a name="flyout-footer"></a>Нижний колонтитул всплывающего меню
+
+Нижний колонтитул всплывающего меню — это содержимое, которое при необходимости отображается в нижней части элемента. Его внешний вид, определяемый в `object`, можно задать с помощью значения свойства `Shell.FlyoutFooter`:
+
+```xaml
+<Shell.FlyoutFooter>
+    <controls:FlyoutFooter />
+</Shell.FlyoutFooter>
+```
+
+Тип `FlyoutFooter` показан в примере ниже.
+
+```xaml
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="Xaminals.Controls.FlyoutFooter">
+    <StackLayout>
+        <Label Text="Xaminals"
+               TextColor="GhostWhite"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        <Label Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='{0:MMMM dd, yyyy}'}"
+               TextColor="GhostWhite"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentView>
+```
+
+В результате получается нижний колонтитул следующего вида:
+
+![Снимок экрана нижнего колонтитула всплывающего меню](flyout-images/flyout-footer.png "Нижний колонтитул всплывающего меню")
+
+Кроме того, вид нижнего колонтитула всплывающего меню можно определить через свойство `Shell.FlyoutFooterTemplate` для [`DataTemplate`](xref:Xamarin.Forms.DataTemplate):
+
+```xaml
+<Shell.FlyoutFooterTemplate>
+    <DataTemplate>
+        <StackLayout>
+            <Label Text="Xaminals"
+                   TextColor="GhostWhite"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+            <Label Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='{0:MMMM dd, yyyy}'}"
+                   TextColor="GhostWhite"
+                   HorizontalOptions="Center" />
+        </StackLayout>
+    </DataTemplate>
+</Shell.FlyoutFooterTemplate>
+```
+
+Нижний колонтитул фиксируется в нижней части всплывающего окна и может иметь любую высоту. Кроме того, нижний колонтитул меню никогда не скрывает никаких его пунктов.
 
 ## <a name="flyout-background-image"></a>Фоновое изображение всплывающего элемента
 

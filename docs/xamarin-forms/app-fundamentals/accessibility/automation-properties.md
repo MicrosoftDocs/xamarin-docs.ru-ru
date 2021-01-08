@@ -10,12 +10,12 @@ ms.date: 12/18/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 98cf9f67188f67c4575823024106e100f6f22608
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 53f6a44ef28e00613ed0ee4e05a4e86a26bc7a6a
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93374515"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940581"
 ---
 # <a name="automation-properties-in-no-locxamarinforms"></a>Свойства автоматизации в Xamarin.Forms
 
@@ -145,11 +145,11 @@ AutomationProperties.SetLabeledBy(entry, nameLabel);
 
 На Android, чтобы задать текст средства чтения с экрана, который будет произноситься для стрелки "назад" в панели действий [`NavigationPage`](xref:Xamarin.Forms.NavigationPage), используйте свойства `AutomationProperties.Name` и `AutomationProperties.HelpText` класса [`Page`](xref:Xamarin.Forms.Page). Однако учтите, что это не относится к кнопкам "назад" в операционной системе.
 
-### <a name="masterdetailpage"></a>MasterDetailPage
+### <a name="flyoutpage"></a>FlyoutPage
 
-На iOS и универсальной платформе Windows (UWP), чтобы задать текст средства чтения с экрана, который будет произноситься для выключателя в [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage), используйте либо свойства `AutomationProperties.Name` и `AutomationProperties.HelpText` класса `MasterDetailPage`, либо свойство `IconImageSource` страницы `Master`.
+На iOS и универсальной платформе Windows (UWP), чтобы задать текст средства чтения с экрана, который будет произноситься для выключателя в [`FlyoutPage`](xref:Xamarin.Forms.FlyoutPage), используйте либо свойства `AutomationProperties.Name` и `AutomationProperties.HelpText` класса `FlyoutPage`, либо свойство `IconImageSource` страницы `Flyout`.
 
-На Android, чтобы задать текст средства чтения с экрана, который будет произноситься для выключателя в [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage), добавьте в проект Android следующие строковые ресурсы:
+На Android, чтобы задать текст средства чтения с экрана, который будет произноситься для выключателя в [`FlyoutPage`](xref:Xamarin.Forms.FlyoutPage), добавьте в проект Android следующие строковые ресурсы:
 
 ```xml
 <resources>
@@ -159,11 +159,11 @@ AutomationProperties.SetLabeledBy(entry, nameLabel);
 </resources>
 ```
 
-Затем назначьте нужную строку свойству `AutomationId` в свойстве `IconImageSource` страницы `Master`:
+Затем назначьте нужную строку свойству `AutomationId` в свойстве `IconImageSource` страницы `Flyout`:
 
 ```csharp
-var master = new ContentPage { ... };
-master.IconImageSource.AutomationId = "btnMDPAutomationID";
+var flyout = new ContentPage { ... };
+flyout.IconImageSource.AutomationId = "btnMDPAutomationID";
 ```
 
 ### <a name="toolbaritem"></a>ToolbarItem

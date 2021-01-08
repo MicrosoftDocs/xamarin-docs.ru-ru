@@ -10,18 +10,18 @@ ms.date: 12/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 65aa0f060e4d48834017a334d69b2f21645825f3
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: d976048b15c1fc545e1fbdc6c911e3cb4542d4f2
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937193"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939099"
 ---
-# <a name="xamarinforms-navigation"></a>Навигация в Xamarin.Forms
+# <a name="no-locxamarinforms-navigation"></a>Навигация в Xamarin.Forms
 
 _Xamarin.Forms предоставляет ряд различных способов перехода по страницам в зависимости от используемого типа страницы._
 
-Типы страниц ![Xamarin.Forms](images/page-types.png)
+![Xamarin.Forms Типы страниц](images/page-types.png)
 
 Кроме того, приложения оболочки Xamarin.Forms предоставляют улучшенные возможности навигации на основе URI по интерфейсу без соблюдения строгой заданной иерархии. Дополнительные сведения см. в разделе [Навигация по оболочке Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/navigation.md).
 
@@ -37,9 +37,9 @@ Xamarin.Forms [`TabbedPage`](xref:Xamarin.Forms.TabbedPage) состоит из 
 
 Xamarin.Forms [`CarouselPage`](xref:Xamarin.Forms.CarouselPage) — это страница, по которой пользователи могут проводить из стороны в сторону, чтобы переходить по страницам содержимого, например по страницам коллекции.
 
-## <a name="masterdetailpage"></a>[MasterDetailPage](master-detail-page.md)
+## <a name="flyoutpage"></a>[FlyoutPage](flyoutpage.md)
 
-Xamarin.Forms [`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) представляет собой страницу, управляющую двумя страницами связанных данных, — главной страницей, которая представляет элементы, и страницей сведений, которая представляет сведения об элементах на главной странице.
+[`FlyoutPage`](xref:Xamarin.Forms.FlyoutPage) в Xamarin.Forms представляет собой страницу, которая обеспечивает доступ к двум страницам со связанными данными: всплывающей странице, где представлены элементы, и странице со сведениями об этих элементах.
 
 ## <a name="modal-pages"></a>[Модальные страницы](modal.md)
 

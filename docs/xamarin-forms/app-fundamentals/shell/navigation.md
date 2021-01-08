@@ -6,16 +6,16 @@ ms.assetid: 57079D89-D1CB-48BD-9FEE-539CEC29EABB
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 04/02/2020
+ms.date: 10/06/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f29bacf3546b2148a3d97c3c1ccaa44e02872be8
-ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
+ms.openlocfilehash: 5fb215ea92035965b48fff85ef4ccc70edc65fdf
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94590315"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939190"
 ---
 # <a name="no-locxamarinforms-shell-navigation"></a>Навигация по оболочке Xamarin.Forms
 
@@ -27,6 +27,7 @@ ms.locfileid: "94590315"
 
 - Присоединенное свойство `BackButtonBehavior` с типом `BackButtonBehavior` определяет поведение кнопки "Назад".
 - `CurrentItem` с типом `FlyoutItem` обозначает выбранный `FlyoutItem`.
+- `CurrentPage` с типом `Page` обозначает представленную сейчас страницу.
 - `CurrentState` с типом `ShellNavigationState` обозначает текущее состояние навигации для `Shell`.
 - `Current` с типом `Shell`, является приведенным по типу псевдонимом для `Application.Current.MainPage`.
 
@@ -282,7 +283,7 @@ public class MyTab : Tab
 | `CanCancel`  | `bool` | Значение, указывающее, возможна ли отмена перехода. |
 | `Cancelled`  | `bool` | Значение, указывающее, была ли навигация отменена. |
 
-Кроме того, класс `ShellNavigatingEventArgs` предоставляет метод `Cancel` для отмены навигации.
+Кроме того, класс `ShellNavigatingEventArgs` предоставляет метод `Cancel`, позволяющий отменить переход, и метод `GetDeferral`, возвращающий токен `ShellNavigatingDeferral`, который можно использовать для завершения перехода. Дополнительные сведения: [Отложенный переход](#navigation-deferral).
 
 Класс `Shell` также определяет событие `Navigated`, которое возникает при завершении навигации. Объект `ShellNavigatedEventArgs`, который прилагается к событию `Navigating`, содержит следующие свойства:
 
@@ -316,6 +317,35 @@ void OnNavigating(object sender, ShellNavigatingEventArgs e)
     }
 }
 ```
+
+## <a name="navigation-deferral"></a>Отложенный переход
+
+Переход в рамках оболочки можно перехватить, а затем завершить или отменить в зависимости от пользовательского выбора. Для этого можно переопределить метод `OnNavigating` в подклассе `Shell` и вызвать метод `GetDeferral` для объекта `ShellNavigatingEventArgs`. Этот метод возвращает токен `ShellNavigatingDeferral` с методом `Complete`, который можно использовать для завершения запроса о переходе:
+
+```csharp
+public MyShell : Shell
+{
+    // ...
+    protected override async void OnNavigating(ShellNavigatingEventArgs args)
+    {
+        base.OnNavigating(args);
+
+        ShellNavigatingDeferral token = args.GetDeferral();
+        var result = await DisplayActionSheet("Navigate?", "Cancel", "Yes", "No");
+
+        if (result != "Yes")
+        {
+            args.Cancel();
+        }
+        token.Complete();
+    }    
+}
+```
+
+В этом примере отображается лист действий, приглашающий пользователя завершить запрос навигации или отменить его. Переход отменяется вызовом метода `Cancel` для объекта `ShellNavigatingEventArgs`. Переход завершается вызовом метода `Complete` для токена `ShellNavigatingDeferral`, полученного методом `GetDeferral` для объекта `ShellNavigatingEventArgs`.
+
+> [!IMPORTANT]
+> Если пользователь пытается выполнить переход, когда имеется ожидающий отложенный переход, метод `GoToAsync` выдает исключение `InvalidOperationException`.
 
 ## <a name="pass-data"></a>Передача данных
 

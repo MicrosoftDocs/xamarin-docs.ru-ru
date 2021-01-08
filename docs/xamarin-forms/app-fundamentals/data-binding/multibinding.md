@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/26/2020
-ms.openlocfilehash: 79d27cf9d6ba01235962b43ee7f05c904c265c2f
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: ad9171aa6138b12d66ba8289c4e68766ce733e97
+ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93370849"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97939125"
 ---
 # <a name="xamarinforms-multi-bindings"></a>Множественные привязки Xamarin.Forms
 
@@ -271,29 +271,30 @@ label.SetBinding(Label.TextProperty, new MultiBinding
 
 ```xaml
 <ContentPage ...
-             xmlns:local="clr-namespace:DataBindingDemos">
+             xmlns:local="clr-namespace:DataBindingDemos"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.UI.Views;assembly=Xamarin.CommunityToolkit">
     <ContentPage.Resources>
         <local:AllTrueMultiConverter x:Key="AllTrueConverter" />
 
         <ControlTemplate x:Key="CardViewExpanderControlTemplate">
-            <Expander BindingContext="{Binding Source={RelativeSource TemplatedParent}}"
-                      IsExpanded="{Binding IsExpanded, Source={RelativeSource TemplatedParent}}"
-                      BackgroundColor="{Binding CardColor}">
-                <Expander.IsVisible>
+            <xct:Expander BindingContext="{Binding Source={RelativeSource TemplatedParent}}"
+                          IsExpanded="{Binding IsExpanded, Source={RelativeSource TemplatedParent}}"
+                          BackgroundColor="{Binding CardColor}">
+                <xct:Expander.IsVisible>
                     <MultiBinding Converter="{StaticResource AllTrueConverter}">
                         <Binding Path="IsExpanded" />
                         <Binding Path="IsEnabled" />
                     </MultiBinding>
-                </Expander.IsVisible>
-                <Expander.Header>
+                </xct:Expander.IsVisible>
+                <xct:Expander.Header>
                     <Grid>
                         <!-- XAML that defines Expander header goes here -->
                     </Grid>
-                </Expander.Header>
+                </xct:Expander.Header>
                 <Grid>
                     <!-- XAML that defines Expander content goes here -->
                 </Grid>
-            </Expander>
+            </xct:Expander>
         </ControlTemplate>
     </ContentPage.Resources>
 
@@ -309,6 +310,9 @@ label.SetBinding(Label.TextProperty, new MultiBinding
     </StackLayout>
 </ContentPage>
 ```
+
+> [!NOTE]
+> Элемент управления `Expander` теперь входит в набор инструментов Xamarin Community Toolkit.
 
 В этом примере режим относительной привязки `TemplatedParent` используется для привязки из шаблона элемента управления к экземпляру объекта среды выполнения, к которому применяется шаблон. `Expander` — это корневой элемент [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate), у которого есть `BindingContext` с заданным экземпляром объекта среды выполнения, к которому применяется шаблон. Следовательно, `Expander` с дочерними элементами разрешают свои выражения привязки и объекты [`Binding`](xref:Xamarin.Forms.Binding) для свойств объекта `CardViewExpander`. `MultiBinding` использует экземпляр `AllTrueMultiConverter`, чтобы задать для свойства `Expander.IsVisible` значение `true`, если двум объектам [`Binding`](xref:Xamarin.Forms.Binding) присваивается значение `true`. В противном случае свойству `Expander.IsVisible` присваивается значение `false`.
 
