@@ -308,8 +308,8 @@ items:
             href: app-fundamentals/navigation/tabbed-page.md
           - name: CarouselPage
             href: app-fundamentals/navigation/carousel-page.md
-          - name: MasterDetailPage
-            href: app-fundamentals/navigation/master-detail-page.md
+          - name: FlyoutPage
+            href: app-fundamentals/navigation/flyoutpage.md
           - name: Модальные страницы
             href: app-fundamentals/navigation/modal.md
       - name: Оболочка
@@ -354,8 +354,6 @@ items:
     items:
       - name: Обзор
         href: user-interface/index.yml
-      - name: Разметка C#
-        href: user-interface/csharp-markup.md
       - name: Справочник по элементам управления
         items:
           - name: Обзор
@@ -376,8 +374,6 @@ items:
         items:
           - name: BoxView
             href: user-interface/boxview.md
-          - name: Expander
-            href: user-interface/expander.md
           - name: Изображение
             href: user-interface/images.md
           - name: Метка
@@ -400,8 +396,6 @@ items:
                 href: user-interface/map/geocoder.md
               - name: Запуск собственного приложения для работы с картой
                 href: user-interface/map/native-map-app.md
-          - name: MediaElement
-            href: user-interface/mediaelement.md
           - name: Фигуры
             items:
               - name: Обзор
@@ -561,13 +555,6 @@ items:
                     href: user-interface/brushes/radialgradient.md
           - name: Цвета
             href: user-interface/colors.md
-          - name: DataPages
-            href: user-interface/datapages/index.md
-            items:
-              - name: Приступая к работе
-                href: user-interface/datapages/get-started.md
-              - name: Справочник по элементам управления
-                href: user-interface/datapages/controls.md
           - name: Отображение всплывающих элементов
             href: user-interface/pop-ups.md
           - name: Шрифты
@@ -668,8 +655,6 @@ items:
             href: platform/android/index.md
           - name: Миграция AndroidX
             href: platform/android/androidx-migration.md
-          - name: AppCompat и материальное исполнение
-            href: platform/android/appcompat-material-design.md
           - name: Заполнение и тени кнопки
             href: platform/android/button-padding-shadow.md
           - name: Параметры редактора метода ввода записей
@@ -716,6 +701,8 @@ items:
             href: platform/ios/entry-cursor-color.md
           - name: Размер шрифта вводимого текста
             href: platform/ios/entry-font-size.md
+          - name: FlyoutPage Shadow
+            href: platform/ios/flyoutpage-shadow.md
           - name: Форматирование
             href: platform/ios/formatting.md
           - name: Стиль представления модальной страницы
@@ -730,8 +717,6 @@ items:
             href: platform/ios/listview-separator-style.md
           - name: Обновления элементов управления основного потока
             href: platform/ios/main-thread-updates-ui.md
-          - name: Тень MasterDetailPage
-            href: platform/ios/masterdetailpage-shadow.md
           - name: Разделитель панели NavigationPage
             href: platform/ios/navigation-bar-separator.md
           - name: Цветовой режим текста панели NavigationPage
@@ -774,12 +759,12 @@ items:
             href: platform/windows/index.md
           - name: Каталог изображений по умолчанию
             href: platform/windows/default-image-directory.md
+          - name: FlyoutPage Navigation Bar
+            href: platform/windows/flyoutpage-navigation-bar.md
           - name: Порядок чтения InputView
             href: platform/windows/inputview-reading-order.md
           - name: SelectionMode для ListView
             href: platform/windows/listview-selectionmode.md
-          - name: Панель навигации MasterDetailPage
-            href: platform/windows/masterdetailpage-navigation-bar.md
           - name: Положение панели инструментов страницы
             href: platform/windows/page-toolbar-placement.md
           - name: Настройка платформы
@@ -794,6 +779,8 @@ items:
             href: platform/windows/visualelement-access-keys.md
           - name: Устаревший цветовой режим VisualElement
             href: platform/windows/legacy-color-mode.md
+          - name: WebView Execution Mode
+            href: platform/windows/webview-executionmode.md
           - name: Оповещения JavaScript WebView
             href: platform/windows/webview-javascript-alert.md
       - name: Создание особенностей платформы
@@ -1026,6 +1013,8 @@ items:
       - name: Вопросы и ответы
         href: troubleshooting/questions/index.md
         items:
+          - name: "Как перенести приложение в Xamarin.Forms\_5.0?"
+            href: troubleshooting/questions/forms5-migration.md
           - name: Можно ли обновить шаблон по умолчанию Xamarin.Forms до более поздней версии пакета NuGet?
             href: troubleshooting/questions/update-forms-template.md
           - name: Почему конструктор XAML в Visual Studio не работает с XAML-файлами Xamarin.Forms?

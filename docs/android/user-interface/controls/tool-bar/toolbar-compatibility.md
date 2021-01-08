@@ -6,16 +6,16 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/15/2018
-ms.openlocfilehash: 8d5f5ff1cfe7876862371a9732f0ab8186bbeeba
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: 8d5f0b06a804e9b9af7bb15111c70e4505c79fd0
+ms.sourcegitcommit: 40a56bbc1e038a9181101580ad18a4584edb5ab0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91457640"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025517"
 ---
 # <a name="toolbar-compatibility"></a>Совместимость панели инструментов
 
-## <a name="overview"></a>Обзор
+## <a name="overview"></a>Общие сведения
 
 В этом разделе объясняется, как использовать `Toolbar` в версиях Android более ранние, чем android 5,0 без описания операций. Если приложение не поддерживает версии Android, предшествующие Android 5,0, этот раздел можно пропустить. 
 
@@ -45,7 +45,7 @@ ms.locfileid: "91457640"
 
 [![Снимок экрана пакета версии 7 AppCompat, выбранного в окне "Управление пакетами NuGet"](toolbar-compatibility-images/01-appcompat-nuget-sml.png)](toolbar-compatibility-images/01-appcompat-nuget.png#lightbox)
 
-При установке этого NuGet также устанавливаются несколько других пакетов NuGet (например, **Xamarin. Android. support. анимированные. Vector. Рисующие**, Xamarin. Android **. support. v4**и **Xamarin. Android. support. Vector. Draw**). Дополнительные сведения об установке пакетов NuGet см. [в разделе Пошаговое руководство. Включение NuGet в проект](/visualstudio/mac/nuget-walkthrough). 
+При установке этого NuGet также устанавливаются несколько других пакетов NuGet (например, **Xamarin. Android. support. анимированные. Vector. Рисующие**, Xamarin. Android **. support. v4** и **Xamarin. Android. support. Vector. Draw**). Дополнительные сведения об установке пакетов NuGet см. [в разделе Пошаговое руководство. Включение NuGet в проект](/visualstudio/mac/nuget-walkthrough). 
 
 ## <a name="use-an-appcompat-theme-and-toolbar"></a>Использование темы и панели инструментов AppCompat
 
@@ -166,7 +166,7 @@ local:showAsAction="ifRoom"
 
 ## <a name="subclass-appcompatactivity"></a>Подкласс Аппкомпатактивити
 
-Последним шагом в преобразовании является изменение `MainActivity` , чтобы он был подклассом `AppCompactActivity` . Измените **MainActivity.CS** и добавьте следующие `using` инструкции: 
+Последним шагом в преобразовании является изменение `MainActivity` , чтобы он был подклассом `AppCompatActivity` . Измените **MainActivity.CS** и добавьте следующие `using` инструкции: 
 
 ```csharp
 using Android.Support.V7.App;
