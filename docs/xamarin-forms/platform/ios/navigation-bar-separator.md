@@ -11,10 +11,10 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 ms.openlocfilehash: 44bd1ca75220d0aefe2f26bf0e3ba1afcde93150
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.sourcegitcommit: 40a56bbc1e038a9181101580ad18a4584edb5ab0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 01/08/2021
 ms.locfileid: "93372357"
 ---
 # <a name="navigationpage-bar-separator-on-ios"></a>Разделитель Навигатионпаже Bar в iOS
