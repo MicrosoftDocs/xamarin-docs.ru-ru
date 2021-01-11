@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/02/2017
-ms.openlocfilehash: 207aac33101615a0a103176cd2bf5dd061e0d264
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 8a18bfe3a72334eab3304492da63e6ce8f889a72
+ms.sourcegitcommit: 3edcc63fcf86409b73cd6e5dc77f0093a99b3f87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91430423"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062619"
 ---
 # <a name="enhanced-user-notifications-in-xamarinios"></a>Расширенные уведомления пользователей в Xamarin. iOS
 
@@ -112,6 +112,7 @@ ms.locfileid: "91430423"
 - **iOS** — полная поддержка для управления и планирования уведомлений.
 - **tvOS** — добавляет возможность значков приложений с эмблемами для локальных и удаленных уведомлений.
 - **watchOS** — обеспечивает возможность пересылки уведомлений с парного устройства iOS пользователя на свои Apple Watch и позволяет приложениям отслеживать возможность локальных уведомлений непосредственно в самих часах.
+- **macOS** — полная поддержка для управления и планирования уведомлений.
 
 Дополнительные сведения см. в [справочнике по Усернотификатионс Framework](https://developer.apple.com/reference/usernotifications) Apple и документации по [усернотификатионсуи](https://developer.apple.com/reference/usernotificationsui) .
 
@@ -129,22 +130,48 @@ ms.locfileid: "91430423"
 
 Разрешение на уведомление следует запрашивать сразу после запуска приложения, добавив следующий код в `FinishedLaunching` метод `AppDelegate` и указав требуемый тип уведомления ( `UNAuthorizationOptions` ):
 
+> [!NOTE]
+> `UNUserNotificationCenter` доступно только в iOS 10 +. Поэтому рекомендуется проверить версию macOS перед отправкой запроса. 
+
 ```csharp
 using UserNotifications;
 ...
 
 public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 {
-    // Request notification permissions from the user
-    UNUserNotificationCenter.Current.RequestAuthorization (UNAuthorizationOptions.Alert, (approved, err) => {
-        // Handle approval
-    });
+    // Version check
+    if (UIDevice.CurrentDevice.CheckSystemVersion (10, 0)) {
+        // Request notification permissions from the user
+        UNUserNotificationCenter.Current.RequestAuthorization (UNAuthorizationOptions.Alert, (approved, err) => {
+            // Handle approval
+        });
+    }
 
     return true;
 }
 ```
 
-Кроме того, пользователь всегда может изменить права уведомления для приложения в любое время с помощью приложения " **Параметры** " на устройстве. Приложение должно проверить наличие запрашиваемых уведомлений пользователя перед представлением уведомления, используя следующий код:
+Так как этот API является единым и работает в Mac 10.14 +, при предназначенных macOS необходимо также проверить разрешение на уведомление как можно скорее.
+
+```csharp
+using UserNotifications;
+...
+
+public override void DidFinishLaunching (NSNotification notification)
+{
+    // Check we're at least v10.14
+    if (NSProcessInfo.ProcessInfo.IsOperatingSystemAtLeastVersion (new NSOperatingSystemVersion (10, 14, 0))) {
+        // Request notification permissions from the user
+        UNUserNotificationCenter.Current.RequestAuthorization (UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound, (approved, err) => {
+            // Handle approval
+        });
+    }
+}
+
+> [!NOTE]
+> With MacOS apps, for the permission dialog to appear, you must sign your macOS app, even if building locally in DEBUG mode. Therefore, **Project->Options->Mac Signing->Sign the application bundle** must be checked.
+
+Additionally, a user can always change the notification privileges for an app at any time using the **Settings** app on the device. The app should check for the user's requested notification privileges before presenting a notification using the following code:
 
 ```csharp
 // Get current notification settings
@@ -242,7 +269,7 @@ content.Badge = 1;
 После создания содержимого уведомления приложение должно запланировать, когда уведомление будет представлено пользователю, установив *триггер*. iOS 10 поддерживает четыре разных типа триггеров:
 
 - **Push-уведомление** — используется исключительно с удаленными уведомлениями и активируется, когда APNs отправляет пакет уведомлений приложению, выполняющемуся на устройстве.
-- **Интервал времени** — позволяет планировать локальное уведомление с интервала времени, начиная с текущего периода, и заканчивая какой-то будущей точкой. Например `var trigger =  UNTimeIntervalNotificationTrigger.CreateTrigger (5, false);`.
+- **Интервал времени** — позволяет планировать локальное уведомление с интервала времени, начиная с текущего периода, и заканчивая какой-то будущей точкой. Например, `var trigger =  UNTimeIntervalNotificationTrigger.CreateTrigger (5, false);`
 - **Календарная дата** . позволяет планировать локальные уведомления на определенные дату и время.
 - **На основе расположения** . разрешает планировать локальные уведомления, когда устройство iOS вводит или выходит из определенного географического расположения или находится в определенном расположении с любыми маяками Bluetooth.
 
@@ -307,7 +334,7 @@ namespace MonkeyNotification
 
 Этот код просто записывает содержимое в `UNNotification` Выход приложения и запрашивает у системы отображение стандартного оповещения для уведомления. 
 
-Если приложение отображало бы само уведомление, когда оно находилось на переднем плане, и не использовало системные значения по умолчанию, передайте `None` обработчику завершения. Пример
+Если приложение отображало бы само уведомление, когда оно находилось на переднем плане, и не использовало системные значения по умолчанию, передайте `None` обработчику завершения. Пример.
 
 ```csharp
 completionHandler (UNNotificationPresentationOptions.None);
@@ -358,7 +385,7 @@ UNUserNotificationCenter.Current.RemoveDeliveredNotifications (requests);
 
 ### <a name="updating-an-existing-notification"></a>Обновление существующего уведомления
 
-Чтобы обновить существующее уведомление, просто создайте новое уведомление с измененными параметрами (например, новым временем активации) и добавьте его в систему с тем же идентификатором запроса, что и у уведомления, которое необходимо изменить. Пример
+Чтобы обновить существующее уведомление, просто создайте новое уведомление с измененными параметрами (например, новым временем активации) и добавьте его в систему с тем же идентификатором запроса, что и у уведомления, которое необходимо изменить. Пример.
 
 ```csharp
 using UserNotifications;
@@ -536,7 +563,7 @@ namespace MonkeyNotification
 
 1. Откройте решение приложения в Visual Studio для Mac.
 2. Щелкните правой кнопкой мыши имя решения в **панель решения** и выберите **Добавить**  >  **Добавить новый проект**.
-3. Выберите **iOS**  >  **модули iOS расширения**  >  **службы уведомлений** и нажмите кнопку **Далее** : 
+3. Выберите   >  **модули iOS расширения**  >  **службы уведомлений** и нажмите кнопку **Далее** : 
 
     [![Выбор расширений службы уведомлений](enhanced-user-notifications-images/extension02.png)](enhanced-user-notifications-images/extension02.png#lightbox)
 4. Введите **имя** для расширения и нажмите кнопку **Далее** : 
