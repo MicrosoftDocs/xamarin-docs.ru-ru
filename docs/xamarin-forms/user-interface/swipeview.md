@@ -6,16 +6,16 @@ ms.assetId: 602456B5-701B-4948-B454-B1F31283F1CF
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 10/05/2020
+ms.date: 01/11/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: de3d7df922a0b6bdc6644e2684c6f01176abbe42
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: d0ebae93405cb115a0f1e87453ab9b438202ef30
+ms.sourcegitcommit: 1decf2c65dc4c36513f7dd459a5df01e170a036f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940503"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98115253"
 ---
 # <a name="no-locxamarinforms-swipeview"></a>Xamarin.Forms свипевиев
 
@@ -37,12 +37,11 @@ ms.locfileid: "97940503"
 
 Кроме того, `SwipeView` компонент наследует [`Content`](xref:Xamarin.Forms.ContentView.Content) свойство от [`ContentView`](xref:Xamarin.Forms.ContentView) класса. `Content`Свойство является свойством Content `SwipeView` класса, поэтому его не нужно задавать явно.
 
-`SwipeView`Класс также определяет четыре события:
+`SwipeView`Класс также определяет три события:
 
 - `SwipeStarted` активируется при начале считывания. `SwipeStartedEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` .
 - `SwipeChanging` происходит при перемещении прокрутки. `SwipeChangingEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` и `Offset` свойство типа `double` .
-- `SwipeEnded` возникает, когда прокрутка заканчивается. `SwipeEndedEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` .
-- `CloseRequested` возникает при закрытии считывания элементов.
+- `SwipeEnded` возникает, когда прокрутка заканчивается. `SwipeEndedEventArgs`Объект, сопровождающий это событие, имеет `SwipeDirection` свойство типа `SwipeDirection` и `IsOpen` свойство типа `bool` .
 
 Кроме того, `SwipeView` включает `Open` `Close` методы и, которые программно открывают и закрывают элементы для прокрутки соответственно.
 
@@ -346,7 +345,7 @@ SwipeView swipeView = new SwipeView
 
 ## <a name="open-and-close-a-swipeview-programmatically"></a>Программное открытие и закрытие SwipeView
 
-`SwipeView` включает `Open` `Close` методы и, которые программно открывают и закрывают элементы прокрутки соответственно.
+`SwipeView` включает `Open` `Close` методы и, которые программно открывают и закрывают элементы прокрутки соответственно. По умолчанию эти методы будут анимировать объект `SwipeView` при открытии или закрытии.
 
 `Open`Метод требует `OpenSwipeItem` аргумент, чтобы указать направление, `SwipeView` из которого будет открываться. `OpenSwipeItem`Перечисление состоит из четырех элементов:
 
@@ -354,6 +353,8 @@ SwipeView swipeView = new SwipeView
 - `TopItems`, который указывает, что `SwipeView` будет открываться из верхней части, чтобы отобразить элементы считывания в `TopItems` коллекции.
 - `RightItems`, который указывает, что объект `SwipeView` будет открываться справа, чтобы показать элементы считывания в `RightItems` коллекции.
 - `BottomItems`, который указывает, что объект `SwipeView` будет открыт из нижней части для отображения элементов, прокрутхся в `BottomItems` коллекции.
+
+Кроме `Open` того, метод также принимает необязательный `bool` аргумент, который определяет, `SwipeView` будет ли анимирован при открытии.
 
 В `SwipeView` `swipeView` следующем примере показано, как открыть `SwipeView` для отображения элементов, прокрутхся в коллекции, с указанным именем `LeftItems` .
 
@@ -368,7 +369,7 @@ swipeView.Close();
 ```
 
 > [!NOTE]
-> При `Close` вызове метода `CloseRequested` запускается событие.
+> `Close`Метод также принимает необязательный `bool` аргумент, который определяет, `SwipeView` будет ли анимирован при закрытии.
 
 ## <a name="disable-a-swipeview"></a>Отключение Свипевиев
 

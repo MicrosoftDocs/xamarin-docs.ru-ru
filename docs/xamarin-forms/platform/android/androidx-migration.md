@@ -1,5 +1,5 @@
 ---
-title: Андроидкс миграция вXamarin.Forms
+title: Андроидкс миграция в Xamarin.Forms
 description: В этой статье объясняется, почему Андроидкс существует и как выполнить миграцию в Андроидкс в Xamarin.Forms приложении.
 ms.prod: xamarin
 ms.assetid: 98884003-E65A-4EB4-842D-66CFE27344A4
@@ -10,16 +10,19 @@ ms.date: 01/22/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: c2df309a8a12a05a4b492bb66977aa2411142850
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 3ef1d0322018e5c404204fdaf9f4816891cc39f3
+ms.sourcegitcommit: 1decf2c65dc4c36513f7dd459a5df01e170a036f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84138272"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98115136"
 ---
-# <a name="androidx-migration-in-xamarinforms"></a>Андроидкс миграция вXamarin.Forms
+# <a name="androidx-migration-in-no-locxamarinforms"></a>Андроидкс миграция в Xamarin.Forms
 
 Андроидкс заменяет библиотеку поддержки Android. В этой статье объясняется, почему Андроидкс существует, как она влияет Xamarin.Forms , и как перенести приложение для использования библиотек андроидкс.
+
+> [!IMPORTANT]
+> Если вы выполняете миграцию приложения на Xamarin.Forms 5,0, см. статью [разделы справки перенос приложения в Xamarin.Forms 5,0?](~/xamarin-forms/troubleshooting/questions/forms5-migration.md).
 
 ## <a name="history-of-androidx"></a>Журнал Андроидкс
 
@@ -30,17 +33,17 @@ ms.locfileid: "84138272"
 - `Fragment`Класс поддержки.
 - `RecyclerView`, Используемый для управления длинными списками.
 - Поддержка Multidex для приложений с более чем 65 536 методами.
-- Класс `ActivityCompat`.
+- класс `ActivityCompat`;
 
 Андроидкс — это замена библиотеки поддержки, которая больше не поддерживается — все новые библиотеки будут разрабатываться в библиотеке Андроидкс. Андроидкс — это переработанная Библиотека, использующая семантическое управление версиями, более четкие имена пакетов и обеспечивающая лучшую поддержку распространенных шаблонов архитектуры приложений. Андроидкс версии 1.0.0 — это двоичный эквивалент для поддержки библиотеки версии 28.0.0. Полный список сопоставлений классов из библиотеки поддержки в Андроидкс см. в разделе [Поддержка сопоставления классов библиотеки](https://developer.android.com/jetpack/androidx/migrate/class-mappings) в Developer.Android.com.
 
 Google создал процесс миграции с именем Жетифиер и Андроидкс. Жетифиер проверяет байт-код JAR-кода во время сборки и повторно сопоставляет ссылки на библиотеки поддержки как в коде приложения, так и в зависимостях, в их эквивалент Андроидкс.
 
-В Xamarin.Forms приложении, как и в Java-приложении Android, зависимости JAR должны быть перенесены в андроидкс. Однако привязки Xamarin также необходимо перенести, чтобы они указывали на правильные, базовые JAR-файлы. Xamarin.FormsДобавлена поддержка автоматической миграции Андроидкс в версии 4,5.
+В Xamarin.Forms приложении, как и в Java-приложении Android, зависимости JAR должны быть перенесены в андроидкс. Однако привязки Xamarin также необходимо перенести, чтобы они указывали на правильные, базовые JAR-файлы. Xamarin.Forms Добавлена поддержка автоматической миграции Андроидкс в версии 4,5.
 
 Дополнительные сведения о Андроидкс см. в разделе [Обзор андроидкс](https://developer.android.com/jetpack/androidx) на Developer.Android.com.
 
-## <a name="automatic-migration-in-xamarinforms"></a>Автоматическая миграция вXamarin.Forms
+## <a name="automatic-migration-in-no-locxamarinforms"></a>Автоматическая миграция в Xamarin.Forms
 
 Для автоматического перехода на Андроидкс Xamarin.Forms проект должен:
 
@@ -76,5 +79,6 @@ You can also copy and paste the following snippit into your .csproj file:
 
 ## <a name="related-links"></a>Связанные ссылки
 
+- [Разделы справки перенести приложение в Xamarin.Forms 5,0?](~/xamarin-forms/troubleshooting/questions/forms5-migration.md)
 - [Обзор библиотеки поддержки Android](https://developer.android.com/topic/libraries/support-library/index) на Developer.Android.com
 - [Обзор андроидкс](https://developer.android.com/jetpack/androidx) на Developer.Android.com

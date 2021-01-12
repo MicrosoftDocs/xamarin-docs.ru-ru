@@ -10,16 +10,16 @@ ms.date: 10/24/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e31a13daf5ff4b3e2c9fc185ddb3325f99406160
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: e2f6a4c3eaf2668eff7e2123378175f7844a3413
+ms.sourcegitcommit: 1decf2c65dc4c36513f7dd459a5df01e170a036f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940830"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98115149"
 ---
 # <a name="flyoutpage-navigation-bar-on-windows"></a>Панель навигации Флйоутпаже в Windows
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Этот универсальная платформа Windows для конкретной платформы используется для свертывания панели навигации в [`FlyoutPage`](xref:Xamarin.Forms.FlyoutPage) и используется в XAML путем установки [`FlyoutPage.CollapseStyle`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.CollapseStyleProperty) [`FlyoutPage.CollapsedPaneWidth`](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific.FlyoutPage.CollapsedPaneWidthProperty) свойств и присоединенные свойства:
 
@@ -51,6 +51,6 @@ page.On<Windows>().SetCollapseStyle(CollapseStyle.Partial).CollapsedPaneWidth(14
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ВиндовсспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.WindowsSpecific)

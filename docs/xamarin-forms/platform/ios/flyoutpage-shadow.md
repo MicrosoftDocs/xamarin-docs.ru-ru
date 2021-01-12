@@ -10,16 +10,16 @@ ms.date: 03/05/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0b05cb37a2399f438b9003e39341feb138bce490
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: 9f601ed1cfd7938a2340650604b925339328f29d
+ms.sourcegitcommit: 1decf2c65dc4c36513f7dd459a5df01e170a036f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940820"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98115227"
 ---
 # <a name="flyoutpage-shadow-on-ios"></a>Тень Флйоутпаже на iOS
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 
 Эта платформа управляет тем [`FlyoutPage`](xref:Xamarin.Forms.FlyoutPage) , применяется ли к ней теневая страница сведений при раскрытии всплывающей страницы. Он используется в XAML путем установки `FlyoutPage.ApplyShadow` Свойства BIND в значение `true` :
 
@@ -56,6 +56,6 @@ public class iOSFlyoutPageCS : FlyoutPage
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [ПлатформспеЦификс (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
+- [ПлатформспеЦификс (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-platformspecifics)
 - [Создание особенностей платформы](~/xamarin-forms/platform/platform-specifics/index.md#creating-platform-specifics)
 - [API ИосспеЦифик](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific)
