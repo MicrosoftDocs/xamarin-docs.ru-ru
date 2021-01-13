@@ -6,16 +6,16 @@ ms.assetid: 98884003-E65A-4EB4-842D-66CFE27344A4
 ms.technology: xamarin-forms
 author: profexorgeek
 ms.author: jusjohns
-ms.date: 01/22/2020
+ms.date: 01/13/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3ef1d0322018e5c404204fdaf9f4816891cc39f3
-ms.sourcegitcommit: 1decf2c65dc4c36513f7dd459a5df01e170a036f
+ms.openlocfilehash: b24ab21bf7ae5812916a968da3a59169b975e33a
+ms.sourcegitcommit: 86663f94f8eddb808eb4504cd32ddaf217b6406c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98115136"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166632"
 ---
 # <a name="androidx-migration-in-no-locxamarinforms"></a>Андроидкс миграция в Xamarin.Forms
 
@@ -45,15 +45,16 @@ Google создал процесс миграции с именем Жетифи
 
 ## <a name="automatic-migration-in-no-locxamarinforms"></a>Автоматическая миграция в Xamarin.Forms
 
-Для автоматического перехода на Андроидкс Xamarin.Forms проект должен:
+Для автоматического перехода на Андроидкс Xamarin.Forms проект платформы Android должен:
 
 - Целевой API Android версии 29 или более поздней.
 - Используйте Xamarin.Forms версию 4,5 или более позднюю.
+- Имеют прямые или транзитивные зависимости от библиотек поддержки Android.
 
 После подтверждения этих параметров в проекте создайте приложение Android в Visual Studio 2019. В процессе сборки промежуточный язык (IL) проверяется, и поддержка зависимостей и привязок библиотеки заменяется зависимостями Андроидкс. Если приложение содержит все зависимости Андроидкс, необходимые для сборки, в процессе сборки не будет различий.
 
-> [!NOTE]
-> Необходимо поддерживать ссылки на библиотеку поддержки в проекте. Они используются для компиляции приложения до того, как процесс миграции проверит полученный IL и преобразует зависимости.
+> [!IMPORTANT]
+> Миграция вручную в Андроидкс приведет к максимальному процессу сборки для приложения и является рекомендуемым подходом к миграции Андроидкс. Это включает в себя замену зависимостей библиотеки поддержки Андроидкс зависимостями и обновление кода для использования типов Андроидкс. Дополнительные сведения см. в статье [Использование типов андроидкс](~/xamarin-forms/troubleshooting/questions/forms5-migration.md#use-androidx-types).
 
 Если обнаруживаются зависимости Андроидкс, которые не являются частью проекта, то сообщается об ошибке сборки, которая указывает, какие пакеты Андроидкс отсутствуют. Ниже приведен пример ошибки сборки.
 
@@ -82,3 +83,5 @@ You can also copy and paste the following snippit into your .csproj file:
 - [Разделы справки перенести приложение в Xamarin.Forms 5,0?](~/xamarin-forms/troubleshooting/questions/forms5-migration.md)
 - [Обзор библиотеки поддержки Android](https://developer.android.com/topic/libraries/support-library/index) на Developer.Android.com
 - [Обзор андроидкс](https://developer.android.com/jetpack/androidx) на Developer.Android.com
+- [Сопоставления классов Андроидкс](https://github.com/xamarin/AndroidX/blob/master/mappings/androidx-class-mapping.csv)
+- [Андроидкс сборки](https://github.com/xamarin/AndroidX/blob/master/mappings/androidx-assemblies.csv)

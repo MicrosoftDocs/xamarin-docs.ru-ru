@@ -11,12 +11,12 @@ ms.date: 10/20/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 8f93d20dac789abed57f8f41bf41778ad50a5fb5
-ms.sourcegitcommit: 995ee23d93e08dceb8754cc6c682cd2f4594345b
+ms.openlocfilehash: 2a8aa964dd2f18998e15d68df72f3cee1bd0ac5a
+ms.sourcegitcommit: 86663f94f8eddb808eb4504cd32ddaf217b6406c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97972322"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166645"
 ---
 # <a name="how-do-i-migrate-my-app-to-no-locxamarinforms-50"></a>Разделы справки перенести приложение в Xamarin.Forms 5,0?
 
@@ -96,7 +96,7 @@ Binary XML file line #1 in com.companyname.myproject:layout/toolbar: Binary XML 
 | `Android.Support.V7.App` | `AndroidX.AppCompat.App` |
 | `Android.Support.V7.Widget` | `AndroidX.AppCompat.Widget` |
 
-Полный список сопоставлений классов из библиотек поддержки в Андроидкс см. в разделе [Поддержка сопоставления классов библиотеки](https://developer.android.com/jetpack/androidx/migrate/class-mappings) в Developer.Android.com.
+Полный список сопоставлений классов из библиотек поддержки в Андроидкс см. в разделе [сопоставления классов андроидкс](https://github.com/xamarin/AndroidX/blob/master/mappings/androidx-class-mapping.csv) в GitHub.com. Полный список сопоставлений сборок из библиотек поддержки в Андроидкс см. в разделе [сборки андроидкс](https://github.com/xamarin/AndroidX/blob/master/mappings/androidx-assemblies.csv) на GitHub.com.
 
 #### <a name="remove-axml-files"></a>Удаление файлов AXML
 
@@ -124,3 +124,5 @@ Xamarin.Forms 5,0 рекомендует версию целевой платф�
 
 - [Компоненты, перемещенные из Xamarin.Forms](https://github.com/xamarin/XamarinCommunityToolkit/wiki/Features-moved-from-Xamarin.Forms)
 - [Андроидкс миграция в Xamarin.Forms](~/xamarin-forms/platform/android/androidx-migration.md)
+- [Сопоставления классов Андроидкс](https://github.com/xamarin/AndroidX/blob/master/mappings/androidx-class-mapping.csv)
+- [Андроидкс сборки](https://github.com/xamarin/AndroidX/blob/master/mappings/androidx-assemblies.csv)
