@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 05/09/2018
-ms.openlocfilehash: 418a0196849099da03983085aca9ceed2077207b
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: 480ec0d4a815d62422e31a4110af52ca1628d1f7
+ms.sourcegitcommit: d4d293174a8324ce82b8f961ae6eadce294cafd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73030919"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98194904"
 ---
 # <a name="where-can-i-find-the-dsym-file-to-symbolicate-ios-crash-logs"></a>Где найти dSYM-файл, чтобы выразить символами журналы с данными об аварийном завершении iOS?
 
@@ -20,7 +20,7 @@ ms.locfileid: "73030919"
 
 - Если вы включили сборки для конкретных устройств, dSYM можно найти в следующем каталоге:
 
-    **&lt;каталог проекта&gt;/bin/&lt;платформа&gt;/&lt;конфигурация&gt;/девице-буилдс/&lt;устройство&gt;-&lt;версия ОС&gt;/**
+    **&lt;Каталог проекта &gt; /bin/ &lt; &gt; / &lt; Конфигурация платформы &gt; /девице-буилдс/ &lt; устройство &gt; - &lt; ОС — версия&gt;/**
 
     Пример:
   
@@ -28,7 +28,7 @@ ms.locfileid: "73030919"
 
 - Если вы не включили сборки для конкретных устройств, dSYM можно найти в следующем каталоге:
 
-    **&lt;каталог проекта&gt;/bin/&lt;платформа&gt;/&lt;Configuration&gt;/**
+    **&lt;&gt; &lt; &gt; / Конфигурация платформы/bin/каталога проекта &lt;&gt;/**
 
     Пример:
 
@@ -39,5 +39,5 @@ ms.locfileid: "73030919"
 
 ## <a name="see-also"></a>См. также
 
-- [Файлы аварийного завершения iOS симболикатинг (Xamarin. iOS)](https://www.jmillerdev.net/symbolicating-ios-crash-files-xamarin-ios/)
+- [Файлы аварийного завершения iOS симболикатинг (Xamarin. iOS)](https://www.jmillerdev.com/symbolicating-ios-crash-files-xamarin-ios/)
 - [Пояснение журналов аварийного завершения работы приложений iOS](https://www.raywenderlich.com/23704/demystifying-ios-application-crash-logs)
