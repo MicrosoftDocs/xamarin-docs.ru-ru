@@ -4,22 +4,20 @@ description: Класс Contacts в Xamarin.Essentials позволяет пол
 ms.assetid: 02280c42-720a-44c3-979e-4818a20c9821
 author: jamesmontemagno
 ms.author: jamont
-ms.date: 09/22/2020
+ms.date: 01/04/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 19c9929706b7cf285b22562b094d2de2a25ff77d
-ms.sourcegitcommit: 0a41c4aa6db72cd2d0cecbe0dc893024cecac71d
+ms.openlocfilehash: 8e47fd77bedb701e1953d903091c77af31cb6012
+ms.sourcegitcommit: 995ee23d93e08dceb8754cc6c682cd2f4594345b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96749895"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97972296"
 ---
 # <a name="no-locxamarinessentials-contacts"></a>Xamarin.Essentials: Контакты
 
 Класс **Contacts** позволяет пользователю выбрать контакт и получить сведения о нем.
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 ## <a name="get-started"></a>Начало работы
 

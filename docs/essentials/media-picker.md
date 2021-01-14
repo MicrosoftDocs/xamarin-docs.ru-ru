@@ -4,22 +4,20 @@ description: Класс MediaPicker в Xamarin.Essentials позволяет п�
 ms.assetid: 23460875-6cf9-4440-a97b-46c55b0bca69
 author: jamesmontemagno
 ms.author: jamont
-ms.date: 09/22/2020
+ms.date: 01/04/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 32d05208250a4e9927aac50caa5a42c1c6c59bcb
-ms.sourcegitcommit: 4f0223cf13e14d35c52fa72a026b1c7696bf8929
+ms.openlocfilehash: 4d080ab13bb04b8502ad547234d5b9592af406e1
+ms.sourcegitcommit: 995ee23d93e08dceb8754cc6c682cd2f4594345b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278368"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97972257"
 ---
 # <a name="no-locxamarinessentials-media-picker"></a>Xamarin.Essentials: Средство выбора мультимедиа
 
 Класс **MediaPicker** позволяет пользователю выбрать или снять фото или видео на устройстве.
-
-![Предварительный выпуск API](~/media/shared/preview.png)
 
 ## <a name="get-started"></a>Начало работы
 

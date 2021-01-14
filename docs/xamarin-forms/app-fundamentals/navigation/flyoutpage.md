@@ -10,16 +10,16 @@ ms.date: 12/01/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: ad3b5d76816710d45cd1d8e738771e39555401fa
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: ea0be2136b354ef7a613904799481079bcae52ad
+ms.sourcegitcommit: 1decf2c65dc4c36513f7dd459a5df01e170a036f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940630"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98115240"
 ---
 # <a name="no-locxamarinforms-flyoutpage"></a>FlyoutPage в Xamarin.Forms
 
-[![Загрузить образец](~/media/shared/download.png) загрузить пример](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-flyoutpage)
+[![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/navigation-flyoutpage)
 
 На всплывающей странице обычно отображается список элементов, как показано на следующих снимках экрана:
 
@@ -294,5 +294,5 @@ public class MainPageCS : FlyoutPage
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Виды страниц](https://developer.xamarin.com/r/xamarin-forms/book/chapter25.pdf)
-- [FlyoutPage (пример)](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/navigation-flyoutpage)
+- [FlyoutPage (пример)](/samples/xamarin/xamarin-forms-samples/navigation-flyoutpage)
 - [API FlyoutPage](xref:Xamarin.Forms.FlyoutPage)

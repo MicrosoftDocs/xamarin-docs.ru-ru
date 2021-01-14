@@ -10,12 +10,12 @@ ms.date: 11/07/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f37006e15ad4cc2c6c8d03f3c88c1c8f57fe4fd5
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: d9d0d75a393cc30ffaf698625cd49cf0ce5b5741
+ms.sourcegitcommit: 1decf2c65dc4c36513f7dd459a5df01e170a036f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940074"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98115266"
 ---
 # <a name="summary-of-chapter-25-page-varieties"></a>Сводка по главе 25. Виды страниц
 
@@ -33,7 +33,7 @@ ms.locfileid: "97940074"
 
 ## <a name="master-and-detail"></a>Главная и Детали
 
-[`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) определяет два свойства типа `Page`: [`Master`](xref:Xamarin.Forms.MasterDetailPage.Master) и [`Detail`](xref:Xamarin.Forms.MasterDetailPage.Detail). Обычно каждому из этих свойств присваивается `ContentPage`. `MasterDetailPage` отображает эти две страницы и переключается между ними.
+[`MasterDetailPage`](xref:Xamarin.Forms.MasterDetailPage) определяет два свойства типа `Page`: [`Master`](xref:Xamarin.Forms.MasterDetailPage.Master) и `Detail`. Обычно каждому из этих свойств присваивается `ContentPage`. `MasterDetailPage` отображает эти две страницы и переключается между ними.
 
 Существует два фундаментальных способа переключения между этими двумя страницами:
 
@@ -62,7 +62,7 @@ ms.locfileid: "97940074"
 
 Свойства `Master` и `Detail` определяются с помощью визуальных деревьев в файле [SchoolAndDetailPage.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter25/SchoolAndDetail/SchoolAndDetail/SchoolAndDetail/SchoolAndDetailPage.xaml), который является производным от `MasterDetailPage`. Это расположение позволяет устанавливать привязки данных между главной страницей и страницами деталей.
 
-Этот файл XAML также задает для свойства [`IsPresented`](xref:Xamarin.Forms.MasterDetailPage.IsPresented) из `MasterDetailPage` значение `True`. В результате главная страница будет отображаться при запуске; по умолчанию отображается страница деталей. Файл [SchoolAndDetailPage.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter25/SchoolAndDetail/SchoolAndDetail/SchoolAndDetail/SchoolAndDetailPage.xaml.cs) задает значение `IsPresented` для `false` при выборе элемента из `ListView` на главной странице. Затем отобразится страница деталей:
+Этот файл XAML также задает для свойства `IsPresented` из `MasterDetailPage` значение `True`. В результате главная страница будет отображаться при запуске; по умолчанию отображается страница деталей. Файл [SchoolAndDetailPage.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter25/SchoolAndDetail/SchoolAndDetail/SchoolAndDetail/SchoolAndDetailPage.xaml.cs) задает значение `IsPresented` для `false` при выборе элемента из `ListView` на главной странице. Затем отобразится страница деталей:
 
 [![Тройной снимок экрана школы и деталей](images/ch25fg09-small.png "Страница сведений из MasterDetailPage")](images/ch25fg09-large.png#lightbox "Страница сведений из MasterDetailPage")
 
@@ -70,8 +70,8 @@ ms.locfileid: "97940074"
 
 Несмотря на то, что Xamarin.Forms предоставляет пользовательский интерфейс для переключения между представлениями "Главная" и "Детали", вы можете указать собственное представление. Для этого сделайте следующее:
 
-- Задайте для свойства [`IsGestureEnabled`](xref:Xamarin.Forms.MasterDetailPage.IsGestureEnabled) значение `false`, чтобы отключить прокрутку.
-- Переопределите метод [`ShouldShowToolbarButton`](xref:Xamarin.Forms.MasterDetailPage.ShouldShowToolbarButton) и возвратите `false`, чтобы скрыть кнопки на панели инструментов в Windows 8.1 и Windows Phone 8.1.
+- Задайте для свойства `IsGestureEnabled` значение `false`, чтобы отключить прокрутку.
+- Переопределите метод `ShouldShowToolbarButton` и возвратите `false`, чтобы скрыть кнопки на панели инструментов в Windows 8.1 и Windows Phone 8.1.
 
 Затем необходимо предоставить средства для переключения между главной страницей и страницами деталей, например с помощью примера [**ColorsDetail**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter25/ColorsDetails).
 
