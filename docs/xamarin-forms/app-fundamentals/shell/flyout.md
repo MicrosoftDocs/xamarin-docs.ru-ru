@@ -6,16 +6,16 @@ ms.assetid: FEDE51EB-577E-4B3E-9890-B7C1A5E52516
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 07/30/2020
+ms.date: 01/12/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4faa0923e074460ef254db319dfcfd01cc832dce
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: bad3a19de5a8feae2ca2fd02c1a454ac379e9f42
+ms.sourcegitcommit: 1decf2c65dc4c36513f7dd459a5df01e170a036f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940137"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98115162"
 ---
 # <a name="no-locxamarinforms-shell-flyout"></a>Всплывающий элемент оболочки Xamarin.Forms
 
@@ -63,6 +63,20 @@ ms.locfileid: "97940137"
 ```csharp
 Shell.Current.FlyoutIsPresented = false;
 ```
+
+## <a name="flyout-width-and-height"></a>Ширина и высота всплывающего меню
+
+Ширину и высоту всплывающего меню можно настроить, установив для присоединенных свойств `Shell.FlyoutWidth` и `Shell.FlyoutHeight` значение `double`:
+
+```xaml
+<Shell ...
+       FlyoutWidth="400"
+       FlyoutHeight="200">
+    ...
+</Shell>
+```
+
+Это позволяет выполнять такие сценарии как расширение всплывающего меню по всему экрану или уменьшение высоты всплывающего меню, чтобы оно не закрывало панель вкладок.
 
 ## <a name="flyout-header"></a>Заголовок всплывающего меню
 
@@ -540,7 +554,23 @@ Shell.Current.FlyoutIsPresented = false;
 > [!NOTE]
 > Этот же шаблон можно использовать для объектов `MenuItem`.
 
-## <a name="flyoutitem-tab-order"></a>Последовательность табуляции для FlyoutItem
+## <a name="set-flyoutitem-visibility"></a>Установка видимости FlyoutItem
+
+По умолчанию элементы всплывающего меню являются видимыми. Однако элемент всплывающего меню можно скрыть. Для этого необходимо установить значение `false` для присоединенного свойства `Shell.FlyoutItemIsVisible`, которое по умолчанию имеет значение `true`:
+
+```xaml
+<Shell ...>
+    <FlyoutItem ...
+                Shell.FlyoutItemIsVisible="False">
+        ...
+    </FlyoutItem>
+</Shell>
+```
+
+> [!NOTE]
+> Присоединенное свойство `Shell.FlyoutItemIsVisible` можно задать для объектов `FlyoutItem`, `MenuItem`, `Tab`и `ShellContent`.
+
+## <a name="set-flyoutitem-tab-order"></a>Установка последовательности табуляции для FlyoutItem
 
 По умолчанию последовательность табуляции для объектов `FlyoutItem` соответствует порядку, в котором они перечислены в XAML или программно добавлены в дочернюю коллекцию. Этот порядок определяет порядок навигации по элементам `FlyoutItem` с клавиатуры, и часто порядок по умолчанию является оптимальным.
 
@@ -588,6 +618,54 @@ CurrentItem = aboutItem;
 ```csharp
 Shell.Current.CurrentItem = aboutItem;
 ```
+
+## <a name="replace-flyout-content"></a>Замена содержимого всплывающего меню
+
+Элементы всплывающего меню, представляющие содержимое всплывающего меню, при необходимости можно заменить собственным содержимым, задав значение `object` для привязываемого свойства `Shell.FlyoutContent`:
+
+```xaml
+<Shell.FlyoutContent>
+    <CollectionView BindingContext="{x:Reference shell}"
+                    IsGrouped="True"
+                    ItemsSource="{Binding FlyoutItems}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Label Text="{Binding Title}"
+                       TextColor="White"
+                       FontSize="Large" />
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</Shell.FlyoutContent>
+```
+
+В этом примере содержимое всплывающего меню заменяется содержимым [`CollectionView`](xref:Xamarin.Forms.CollectionView), в котором отображается заголовок каждого элемента в коллекции `FlyoutItems`.
+
+> [!NOTE]
+> Свойство `FlyoutItems` в классе `Shell` — это доступная только для чтения коллекция элементов всплывающего меню.
+
+Содержимое всплывающего меню также можно определить, задав значение [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) для свойства `Shell.FlyoutContentTemplate`:
+
+```xaml
+<Shell.FlyoutContentTemplate>
+    <DataTemplate>
+        <CollectionView BindingContext="{x:Reference shell}"
+                        IsGrouped="True"
+                        ItemsSource="{Binding FlyoutItems}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Title}"
+                           TextColor="White"
+                           FontSize="Large" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </DataTemplate>
+</Shell.FlyoutContentTemplate>
+```
+
+> [!IMPORTANT]
+> При желании заголовок всплывающего меню можно отобразить над содержимым всплывающего меню, а нижний колонтитул всплывающего меню — под содержимым всплывающего меню. Если содержимое всплывающего меню поддерживает прокрутку, то оболочка попытается обработать поведение прокрутки для заголовка всплывающего меню.
 
 ## <a name="menu-items"></a>Пункты меню
 
