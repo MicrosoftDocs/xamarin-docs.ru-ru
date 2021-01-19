@@ -60,7 +60,7 @@
         - name: Макет Grid
           href: tutorials/grid/index.yml
         - name: Списки
-          href: tutorials/listview/index.yml
+          href: tutorials/collectionview/index.yml
         - name: Всплывающие окна
           href: tutorials/pop-ups/index.yml
         - name: Жизненный цикл приложения

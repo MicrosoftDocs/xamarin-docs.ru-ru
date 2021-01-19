@@ -59,7 +59,7 @@ items:
           - name: Макет Grid
             href: ~/get-started/tutorials/grid/index.yml
           - name: Списки
-            href: ~/get-started/tutorials/listview/index.yml
+            href: ~/get-started/tutorials/collectionview/index.yml
           - name: Всплывающие окна
             href: ~/get-started/tutorials/pop-ups/index.yml
           - name: Жизненный цикл приложения
