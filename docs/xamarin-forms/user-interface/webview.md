@@ -10,12 +10,12 @@ ms.date: 05/06/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 05de8c554864108b90433c335074c61fc3def8cf
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: 3fe1b7d56e71cac0b7a5a7b4e2bc68710241f13f
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97939957"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98609161"
 ---
 # <a name="no-locxamarinforms-webview"></a>Xamarin.Forms WebView
 
@@ -25,7 +25,7 @@ ms.locfileid: "97939957"
 
 ![В браузере приложений](webview-images/in-app-browser.png)
 
-## <a name="content"></a>Содержимое
+## <a name="content"></a>Content
 
 `WebView` поддерживает следующие типы содержимого:
 
@@ -386,11 +386,11 @@ void webviewNavigated(object sender, WebNavigatedEventArgs e)
 
 В результате получается следующий результат (Загрузка):
 
-![Пример события навигации WebView](webview-images/loading-start.png)
+![На снимке экрана отображается событие WebView навигации при загрузке.](webview-images/loading-start.png)
 
 Загрузка завершена:
 
-![Пример события навигации WebView](webview-images/loading-end.png)
+![На снимке экрана показано событие WebView навигации после загрузки.](webview-images/loading-end.png)
 
 ## <a name="reloading-content"></a>Перезагрузка содержимого
 

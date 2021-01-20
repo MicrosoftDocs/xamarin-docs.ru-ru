@@ -10,12 +10,12 @@ ms.date: 02/09/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5f12dbd4ef0cfea9d276fd8c939afab585541ece
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 04f0a056b83c3ebb298e284fefc93d83dfc57b52
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373904"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98609005"
 ---
 # <a name="pixels-and-device-independent-units"></a>Пиксели и аппаратно-независимые единицы
 
@@ -104,7 +104,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Вот работающая программа:
 
-[![Тройной снимок экрана страницы размера поверхности](pixels-images/surfacesize-small.png)](pixels-images/surfacesize-large.png#lightbox "Тройной снимок экрана страницы размера поверхности")
+[![Снимки экрана показывают приложение размера поверхности, работающее на двух мобильных устройствах.](pixels-images/surfacesize-small.png)](pixels-images/surfacesize-large.png#lightbox "Тройной снимок экрана страницы размера поверхности")
 
 Как видите, `CanvasSize` свойство объекта `SKCanvasView` и `Size` свойство `SKImageInfo` значения согласуются в отчетах об измерениях в пикселях. `Height`Свойства и `Width` класса `SKCanvasView` являются свойствами и Xamarin.Forms сообщают размер представления в аппаратно-независимых единицах, определенных платформой.
 
@@ -147,7 +147,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Здесь он работает:
 
-[![Тройной снимок экрана страницы размера поверхности](pixels-images/ellipsefill-small.png)](pixels-images/ellipsefill-large.png#lightbox "Тройной снимок экрана страницы размера поверхности")
+[![Снимки экрана показывают приложение для заливки эллипса, работающее на двух мобильных устройствах.](pixels-images/ellipsefill-small.png)](pixels-images/ellipsefill-large.png#lightbox "Тройной снимок экрана страницы размера поверхности")
 
 Другой [`DrawOval`](xref:SkiaSharp.SKCanvas.DrawOval(SkiaSharp.SKRect,SkiaSharp.SKPaint)) метод имеет [`SKRect`](xref:SkiaSharp.SKRect) аргумент, который является прямоугольником, определяемым координатами X и Y верхнего левого угла и правого нижнего угла. Овал заполняет этот прямоугольник, который предполагает, что его можно использовать на странице **заливка эллипса** следующим образом:
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: alexeystrakh
 ms.author: alstrakh
 ms.date: 05/13/2020
-ms.openlocfilehash: b9bbbc784fa9932d087e1f1c2a575eb7848d5a80
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: ed7b7bae452db0067b330126315d5b029a08ccab
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91437121"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98608940"
 ---
 # <a name="reuse-xamarinforms-pages-in-an-ios-extension"></a>Повторное использование страниц Xamarin.Forms в расширении iOS
 
@@ -47,7 +47,7 @@ ms.locfileid: "91437121"
 
     ![Создание проекта](extensions-xf-images/1.walkthrough-createproject.png)
 
-1. В **формсшарикстенсион/MainPage. XAML**замените содержимое следующим макетом:
+1. В **формсшарикстенсион/MainPage. XAML** замените содержимое следующим макетом:
 
     ```xaml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -133,7 +133,7 @@ ms.locfileid: "91437121"
 
 1. На панели решения щелкните решение правой кнопкой мыши, выберите **добавить > новый проект > iOS > расширение действия >**, назовите **его и** нажмите кнопку **создать**:
 
-    ![Создать расширение](extensions-xf-images/2.walkthrough-createextension.png)
+    ![На снимке экрана показан выбор шаблона с выбранным расширением действия.](extensions-xf-images/2.walkthrough-createextension.png)
 
 1. Чтобы использовать Xamarin. Forms в расширении iOS и общем коде, необходимо добавить необходимые ссылки:
 
@@ -167,11 +167,11 @@ ms.locfileid: "91437121"
     
     Выполните сборку и запуск приложения:
 
-    ![Создать расширение](extensions-xf-images/3.walkthrough-runapp.png)
+    ![На снимке экрана показано сообщение Hello from Xamarin Dot Forms на мобильном устройстве.](extensions-xf-images/3.walkthrough-runapp.png)
 
     Чтобы активировать расширение, перейдите в браузер Safari, введите любой веб-адрес, например [Microsoft.com](https://microsoft.com), нажмите кнопку "Навигация", а затем нажмите значок " **поделиться** " в нижней части страницы, чтобы просмотреть доступные расширения действий. В списке доступных расширений выберите расширение **мяктион** , коснувшись его:
 
-    ![Создать расширение](extensions-xf-images/4.walkthrough-run1.png) ![Создать расширение](extensions-xf-images/5.walkthrough-run2.png) ![Создать расширение](extensions-xf-images/6.walkthrough-run3.png)
+    ![На снимке экрана показана страница Microsoft Teams дополнительные сведения с значком общего доступа, выделенным на мобильном устройстве.](extensions-xf-images/4.walkthrough-run1.png) ![На снимке экрана показана официальная домашняя страница с Мяктион, выделенной на мобильном устройстве.](extensions-xf-images/5.walkthrough-run2.png) ![На снимке экрана показана страница X F, созданная на основе сообщения расширения i O на мобильном устройстве.](extensions-xf-images/6.walkthrough-run3.png)
 
     Расширение активируется, и пользователю отображается страница Xamarin. Forms. Все привязки и команды работают так же, как в приложении контейнера.
 

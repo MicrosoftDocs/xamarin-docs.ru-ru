@@ -1,0 +1,41 @@
+### YamlMime:Tutorial
+title: Руководство по представлению CollectionView в Xamarin.Forms
+metadata:
+  title: Руководство по представлению CollectionView в Xamarin.Forms
+  description: Узнайте, как настроить представление списков данных с помощью представления CollectionView в Xamarin.Forms.
+  audience: Developer
+  level: Beginner
+  ms.topic: interactive-tutorial
+  ms.date: 01/15/2021
+  author: davidbritch
+  ms.author: dabritch
+  no-loc:
+  - Xamarin.Forms
+  - Xamarin.Essentials
+  ms.openlocfilehash: 36f481c6c8790725f797e51fbf1839a1981d741b
+  ms.sourcegitcommit: b75c369adb8e02a429b6c0fed8ba4a855099bf01
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 01/18/2021
+  ms.locfileid: "98558913"
+items:
+- durationInMinutes: 1
+  content: >
+    [!INCLUDE [](includes/intro.md)]
+- title: Создание представления CollectionView
+  durationInMinutes: 2
+  content: >
+    [!INCLUDE [](includes/create.md)]
+- title: Заполнение данными
+  durationInMinutes: 4
+  content: >
+    [!INCLUDE [](includes/populate-data.md)]
+- title: Реагирование на выбор элемента
+  durationInMinutes: 3
+  content: >
+    [!INCLUDE [](includes/item-selection.md)]
+- title: Настройка внешнего вида элемента
+  durationInMinutes: 3
+  content: >
+    [!INCLUDE [](includes/customize-item-appearance.md)]
+- content: '[!INCLUDE [](includes/completed.md)]'

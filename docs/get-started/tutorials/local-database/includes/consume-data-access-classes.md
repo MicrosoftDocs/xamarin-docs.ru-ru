@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: caee3eeda90a560f032c17657072ae5ba5023a69
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 9e78d92bdd2d6b0b398ef30ba5f30f71ef64cfd3
+ms.sourcegitcommit: b75c369adb8e02a429b6c0fed8ba4a855099bf01
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "77135017"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98557152"
 ---
 В этом упражнении будет создан пользовательский интерфейс, который используется для работы с ранее созданными классами доступа к данным.
 
@@ -24,21 +24,26 @@ ms.locfileid: "77135017"
                    Placeholder="Enter age" />
             <Button Text="Add to Database"
                     Clicked="OnButtonClicked" />
-            <ListView x:Name="listView">
-                <ListView.ItemTemplate>
+            <CollectionView x:Name="collectionView">
+                <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Name}"
-                                  Detail="{Binding Age}" />
+                        <StackLayout>
+                            <Label Text="{Binding Name}"
+                                   FontSize="Medium" />
+                            <Label Text="{Binding Age}"
+                                   TextColor="Silver"
+                                   FontSize="Small" />
+                        </StackLayout>
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </StackLayout>
     </ContentPage>
     ```
 
-    Этот код декларативно определяет пользовательский интерфейс для страницы, который состоит из двух экземпляров [`Entry`](xref:Xamarin.Forms.Entry) ([`Button`](xref:Xamarin.Forms.Button) и [`ListView`](xref:Xamarin.Forms.ListView)) в [`StackLayout`](xref:Xamarin.Forms.StackLayout). Каждый экземпляр `Entry` обладает собственным набором свойств [`Placeholder`](xref:Xamarin.Forms.InputView.Placeholder), которые указывают замещающий текст, который отображается перед вводом данных пользователем. `Button` устанавливает событие [`Clicked`](xref:Xamarin.Forms.Button.Clicked) для обработчика событий `OnButtonClicked`, который будет создан на следующем шаге. `ListView` устанавливает свойство [`ItemTemplate`](xref:Xamarin.Forms.ItemsView`1.ItemTemplate) для [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), которое использует [`TextCell`](xref:Xamarin.Forms.TextCell) для определения внешнего вида каждой строки в [`ListView`](xref:Xamarin.Forms.ListView). Данные `TextCell` привязывают свойства [`Text`](xref:Xamarin.Forms.TextCell.Text) и [`Detail`](xref:Xamarin.Forms.TextCell.Detail) к свойствам `Name` и `Age` каждого из объектов `Person` соответственно.
+    Этот код декларативно определяет пользовательский интерфейс для страницы, который состоит из двух экземпляров [`Entry`](xref:Xamarin.Forms.Entry) ([`Button`](xref:Xamarin.Forms.Button) и [`CollectionView`](xref:Xamarin.Forms.CollectionView)) в [`StackLayout`](xref:Xamarin.Forms.StackLayout). Каждый экземпляр `Entry` обладает собственным набором свойств [`Placeholder`](xref:Xamarin.Forms.InputView.Placeholder), которые указывают замещающий текст, который отображается перед вводом данных пользователем. `Button` устанавливает событие [`Clicked`](xref:Xamarin.Forms.Button.Clicked) для обработчика событий `OnButtonClicked`, который будет создан на следующем шаге. `CollectionView` устанавливает для его свойства [`ItemTemplate`](xref:Xamarin.Forms.ItemsView`1.ItemTemplate) значение [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), которое использует `StackLayout` и два объекта [`Label`](xref:Xamarin.Forms.Label) для определения внешнего вида каждого элемента в строке `CollectionView`. Объекты `Label` привязывают свои свойства `Text` к свойствам `Name` и `Age` каждого из объектов `Person` соответственно.
 
-    Кроме этого экземпляры [`Entry`](xref:Xamarin.Forms.Entry) и [`ListView`](xref:Xamarin.Forms.ListView) обладают именами, указанными в атрибуте `x:Name`. Это позволяет файлу с выделенным кодом получать доступ к этим объектам с помощью назначенных имен.
+    Кроме этого экземпляры [`Entry`](xref:Xamarin.Forms.Entry) и [`CollectionView`](xref:Xamarin.Forms.CollectionView) обладают именами, указанными в атрибуте `x:Name`. Это позволяет файлу с выделенным кодом получать доступ к этим объектам с помощью назначенных имен.
 
 1. В **обозревателе решений** в проекте **LocalDatabaseTutorial** разверните узел **MainPage.xaml** и дважды щелкните **MainPage.xaml.cs**, чтобы открыть его. Затем в **MainPage.xaml.cs** добавьте переопределение `OnAppearing` и обработчик событий `OnButtonClicked` в класс.
 
@@ -46,7 +51,7 @@ ms.locfileid: "77135017"
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        listView.ItemsSource = await App.Database.GetPeopleAsync();
+        collectionView.ItemsSource = await App.Database.GetPeopleAsync();
     }
 
     async void OnButtonClicked(object sender, EventArgs e)
@@ -60,19 +65,19 @@ ms.locfileid: "77135017"
             });
 
             nameEntry.Text = ageEntry.Text = string.Empty;
-            listView.ItemsSource = await App.Database.GetPeopleAsync();
+            collectionView.ItemsSource = await App.Database.GetPeopleAsync();
         }
     }
     ```
 
-    Метод `OnAppearing` заполняет [`ListView`](xref:Xamarin.Forms.ListView) любыми данными, хранящимися в базе данных. Метод `OnButtonClicked`, который выполняется при нажатии [`Button`](xref:Xamarin.Forms.Button), сохраняет введенные данные в базу данных перед очисткой обоих экземпляров [`Entry`](xref:Xamarin.Forms.Entry) и обновлением данных в `ListView`.
+    Метод `OnAppearing` заполняет [`CollectionView`](xref:Xamarin.Forms.CollectionView) любыми данными, хранящимися в базе данных. Метод `OnButtonClicked`, который выполняется при нажатии [`Button`](xref:Xamarin.Forms.Button), сохраняет введенные данные в базу данных перед очисткой обоих экземпляров [`Entry`](xref:Xamarin.Forms.Entry) и обновлением данных в `CollectionView`.
 
     > [!NOTE]
     > Переопределение метода `OnAppearing` выполняется после готовности [`ContentPage`](xref:Xamarin.Forms.ContentPage), но только прежде чем он станет видимым. Таким образом лучше всего задать содержимое представлений Xamarin.Forms.
 
 1. На панели инструментов Visual Studio нажмите кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном удаленном симуляторе iOS или эмуляторе Android.
 
-    Введите несколько элементов данных нажав [`Button`](xref:Xamarin.Forms.Button) для каждого из них. Это действие позволит сохранить данные в базу данных и повторно заполнить [`ListView`](xref:Xamarin.Forms.ListView) всеми данными базы данных.
+    Введите несколько элементов данных нажав [`Button`](xref:Xamarin.Forms.Button) для каждого из них. Это действие позволит сохранить данные в базу данных и повторно заполнить [`CollectionView`](xref:Xamarin.Forms.CollectionView) всеми данными базы данных.
 
     [![Снимок экрана: сохраняемость данных локальной базы данных SQLite.NET в iOS и Android](../images/consume-data-access-classes.png "Сохраняемость данных локальной базы данных")](../images/consume-data-access-classes-large.png#lightbox "Сохраняемость данных локальной базы данных")
 
@@ -94,19 +99,24 @@ ms.locfileid: "77135017"
                    Placeholder="Enter age" />
             <Button Text="Add to Database"
                     Clicked="OnButtonClicked" />
-            <ListView x:Name="listView">
-                <ListView.ItemTemplate>
+            <CollectionView x:Name="collectionView">
+                <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Name}"
-                                  Detail="{Binding Age}" />
+                        <StackLayout>
+                            <Label Text="{Binding Name}"
+                                   FontSize="Medium" />
+                            <Label Text="{Binding Age}"
+                                   TextColor="Silver"
+                                   FontSize="Small" />
+                        </StackLayout>
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </StackLayout>
     </ContentPage>
     ```
 
-    Этот код декларативно определяет пользовательский интерфейс для страницы, который состоит из двух экземпляров [`Entry`](xref:Xamarin.Forms.Entry) ([`Button`](xref:Xamarin.Forms.Button) и [`ListView`](xref:Xamarin.Forms.ListView)) в [`StackLayout`](xref:Xamarin.Forms.StackLayout). Каждый экземпляр `Entry` обладает собственным набором свойств [`Placeholder`](xref:Xamarin.Forms.InputView.Placeholder), которые указывают замещающий текст, который отображается перед вводом данных пользователем. `Button` устанавливает событие [`Clicked`](xref:Xamarin.Forms.Button.Clicked) для обработчика событий `OnButtonClicked`, который будет создан на следующем шаге. `ListView` устанавливает свойство [`ItemTemplate`](xref:Xamarin.Forms.ItemsView`1.ItemTemplate) для [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), которое использует [`TextCell`](xref:Xamarin.Forms.TextCell) для определения внешнего вида каждой строки в [`ListView`](xref:Xamarin.Forms.ListView). Данные `TextCell` привязывают свойства [`Text`](xref:Xamarin.Forms.TextCell.Text) и [`Detail`](xref:Xamarin.Forms.TextCell.Detail) к свойствам `Name` и `Age` каждого из объектов `Person` соответственно.
+    Этот код декларативно определяет пользовательский интерфейс для страницы, который состоит из двух экземпляров [`Entry`](xref:Xamarin.Forms.Entry) ([`Button`](xref:Xamarin.Forms.Button) и [`CollectionView`](xref:Xamarin.Forms.CollectionView)) в [`StackLayout`](xref:Xamarin.Forms.StackLayout). Каждый экземпляр `Entry` обладает собственным набором свойств [`Placeholder`](xref:Xamarin.Forms.InputView.Placeholder), которые указывают замещающий текст, который отображается перед вводом данных пользователем. `Button` устанавливает событие [`Clicked`](xref:Xamarin.Forms.Button.Clicked) для обработчика событий `OnButtonClicked`, который будет создан на следующем шаге. `CollectionView` устанавливает для его свойства [`ItemTemplate`](xref:Xamarin.Forms.ItemsView`1.ItemTemplate) значение [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), которое использует `StackLayout` и два объекта [`Label`](xref:Xamarin.Forms.Label) для определения внешнего вида каждого элемента в строке `CollectionView`. Объекты `Label` привязывают свои свойства `Text` к свойствам `Name` и `Age` каждого из объектов `Person` соответственно.
 
     Кроме этого экземпляры [`Entry`](xref:Xamarin.Forms.Entry) и [`ListView`](xref:Xamarin.Forms.ListView) обладают именами, указанными в атрибуте `x:Name`. Это позволяет файлу с выделенным кодом получать доступ к этим объектам с помощью назначенных имен.
 
@@ -116,7 +126,7 @@ ms.locfileid: "77135017"
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        listView.ItemsSource = await App.Database.GetPeopleAsync();
+        collectionView.ItemsSource = await App.Database.GetPeopleAsync();
     }
 
     async void OnButtonClicked(object sender, EventArgs e)
@@ -130,19 +140,19 @@ ms.locfileid: "77135017"
             });
 
             nameEntry.Text = ageEntry.Text = string.Empty;
-            listView.ItemsSource = await App.Database.GetPeopleAsync();
+            collectionView.ItemsSource = await App.Database.GetPeopleAsync();
         }
     }
     ```
 
-    Метод `OnAppearing` заполняет [`ListView`](xref:Xamarin.Forms.ListView) любыми данными, хранящимися в базе данных. Метод `OnButtonClicked`, который выполняется при нажатии [`Button`](xref:Xamarin.Forms.Button), сохраняет введенные данные в базу данных перед очисткой обоих экземпляров [`Entry`](xref:Xamarin.Forms.Entry) и обновлением данных в `ListView`.
+    Метод `OnAppearing` заполняет [`CollectionView`](xref:Xamarin.Forms.CollectionView) любыми данными, хранящимися в базе данных. Метод `OnButtonClicked`, который выполняется при нажатии [`Button`](xref:Xamarin.Forms.Button), сохраняет введенные данные в базу данных перед очисткой обоих экземпляров [`Entry`](xref:Xamarin.Forms.Entry) и обновлением данных в `CollectionView`.
 
     > [!NOTE]
     > Переопределение метода `OnAppearing` выполняется после готовности [`ContentPage`](xref:Xamarin.Forms.ContentPage), но только прежде чем он станет видимым. Таким образом лучше всего задать содержимое представлений Xamarin.Forms.
 
 1. На панели инструментов Visual Studio для Mac нажмите клавишу **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android.
 
-    Введите несколько элементов данных нажав [`Button`](xref:Xamarin.Forms.Button) для каждого из них. Это действие позволит сохранить данные в базу данных и повторно заполнить [`ListView`](xref:Xamarin.Forms.ListView) всеми данными базы данных.
+    Введите несколько элементов данных нажав [`Button`](xref:Xamarin.Forms.Button) для каждого из них. Это действие позволит сохранить данные в базу данных и повторно заполнить [`CollectionView`](xref:Xamarin.Forms.CollectionView) всеми данными базы данных.
 
     [![Снимок экрана: сохраняемость данных локальной базы данных SQLite.NET в iOS и Android](../images/consume-data-access-classes.png "Сохраняемость данных локальной базы данных")](../images/consume-data-access-classes-large.png#lightbox "Сохраняемость данных локальной базы данных")
 

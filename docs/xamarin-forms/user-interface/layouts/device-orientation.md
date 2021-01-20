@@ -10,12 +10,12 @@ ms.date: 04/24/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5c49ee7022166983f55bca4a39dd726412b070c8
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 955cb8371e6363f617738dcf2fe4a6eb27dcb032
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93366208"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98608862"
 ---
 # <a name="device-orientation"></a>Ориентация устройства
 
@@ -43,7 +43,7 @@ ms.locfileid: "93366208"
 
 ![Сведения о развертывании iPhone в Visual Studio для Mac](device-orientation-images/orientation-vsmac.png)
 
-Если вы предпочитаете изменить значения с помощью интерфейса редактора "ключ — значение", выберите вкладку **исходный** > в нижней части экрана:
+Если вы предпочитаете изменить значения с помощью интерфейса редактора "ключ — значение", выберите вкладку **исходный**> в нижней части экрана:
 
 ![Поддерживаемые ориентации устройств в Visual Studio для Mac](device-orientation-images/orientation-source-vsmac.png)
 
@@ -147,11 +147,11 @@ protected override void OnSizeAllocated(double width, double height)
 
 Рассмотрим следующее приложение, отображаемое в книжной ориентации:
 
-![Фото приложение в книжной ориентации](device-orientation-images/photo-stack-portrait.png)
+![На снимке экрана показано приложение Photo StackLayout в книжной ориентации.](device-orientation-images/photo-stack-portrait.png)
 
 и альбомная ориентация:
 
-![Приложение для фотографий в альбомной ориентации](device-orientation-images/photo-stack-landscape.png)
+![На снимке экрана показано приложение Photo StackLayout в альбомной ориентации.](device-orientation-images/photo-stack-landscape.png)
 
 Это выполняется с помощью следующего кода XAML:
 
@@ -221,11 +221,11 @@ protected override void OnSizeAllocated (double width, double height){
 
 Рассмотрим следующее приложение, отображаемое в книжной ориентации:
 
-![Фото приложение в книжной ориентации](device-orientation-images/photo-abs-portrait.png)
+![На снимке экрана показано приложение Photo Абсолутелайаут в книжной ориентации.](device-orientation-images/photo-abs-portrait.png)
 
 и альбомная ориентация:
 
-![Приложение для фотографий в альбомной ориентации](device-orientation-images/photo-abs-landscape.png)
+![На снимке экрана показано приложение Photo Абсолутелайаут в альбомной ориентации.](device-orientation-images/photo-abs-landscape.png)
 
 Это выполняется с помощью следующего кода XAML:
 
@@ -273,11 +273,11 @@ Title="AbsoluteLayout - XAML" BackgroundImageSource="deer.jpg">
 
 Рассмотрим следующее приложение, отображаемое в книжной ориентации:
 
-![Фото приложение в книжной ориентации](device-orientation-images/photo-rel-portrait.png)
+![На снимке экрана показано приложение Photo RelativeLayout в книжной ориентации.](device-orientation-images/photo-rel-portrait.png)
 
 и альбомная ориентация:
 
-![Приложение для фотографий в альбомной ориентации](device-orientation-images/photo-rel-landscape.png)
+![На снимке экрана показано приложение Photo RelativeLayout в альбомной ориентации.](device-orientation-images/photo-rel-landscape.png)
 
 Это выполняется с помощью следующего кода XAML:
 
@@ -364,11 +364,11 @@ BackgroundImageSource="deer.jpg">
 
 Рассмотрим следующее приложение, отображаемое в книжной ориентации:
 
-![Фото приложение в книжной ориентации](device-orientation-images/photo-grid-portrait.png)
+![На снимке экрана показана книжная сетка приложения.](device-orientation-images/photo-grid-portrait.png)
 
 и альбомная ориентация:
 
-![Приложение для фотографий в альбомной ориентации](device-orientation-images/photo-grid-landscape.png)
+![На снимке экрана показана альбомная сетка приложения.](device-orientation-images/photo-grid-landscape.png)
 
 Это выполняется с помощью следующего кода XAML:
 

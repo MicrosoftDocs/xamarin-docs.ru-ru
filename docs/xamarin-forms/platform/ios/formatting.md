@@ -10,12 +10,12 @@ ms.date: 01/29/2016
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f447a89ca4b4f21554a75ec52c5771ee9f9d35fd
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 6bb9156c3f097b517474b70cdacc683d96423417
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562994"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98609122"
 ---
 # <a name="adding-ios-specific-formatting"></a>Добавление форматирования, относящегося к iOS
 
@@ -42,7 +42,7 @@ nav.BarTextColor = Color.White;
 
 Результат показан в следующем фрагменте экрана. Обратите внимание, что элементы строки состояния являются черными (не могут быть заданы в пределах, Xamarin.Forms так как это функция для конкретной платформы).
 
-![данные для iOS](theme-images/status-default-sml.png)
+![Снимок экрана: отображение элементов строки состояния в виде черного текста.](theme-images/status-default-sml.png)
 
 В идеале строка состояния также будет содержать белый вид, что можно выполнить непосредственно в проекте iOS. Добавьте следующие записи в файле **info. plist** , чтобы строка состояния была белыми:
 
@@ -59,7 +59,7 @@ nav.BarTextColor = Color.White;
 
 Теперь при запуске приложения панель навигации отображается зеленым цветом, а ее текст — белым (из-за Xamarin.Forms форматирования) *, а* текст строки состояния также является белым благодаря конфигурации iOS:
 
-![данные для iOS](theme-images/status-white-sml.png)
+![Снимок экрана: отображение элементов строки состояния в виде белого текста.](theme-images/status-white-sml.png)
 
 ## <a name="uiappearance-api"></a>API Уиаппеаранце
 

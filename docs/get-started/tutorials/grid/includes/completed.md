@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 4ee2326079ba9ddea6b0f4c5c4356412a3d5b492
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 7c0896c3674304275b284a482335cb397379a2a9
+ms.sourcegitcommit: b75c369adb8e02a429b6c0fed8ba4a855099bf01
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91451471"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98557115"
 ---
 Поздравляем с завершением этого руководства, в котором вы научились:
 
@@ -16,10 +16,10 @@ ms.locfileid: "91451471"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Чтобы узнать больше об основах создания мобильных приложений с помощью Xamarin.Forms, перейдите к учебнику по ListView.
+Чтобы узнать больше об основах создания мобильных приложений с помощью Xamarin.Forms, перейдите к руководству по CollectionView.
 
 > [!div class="nextstepaction"]
-> [Учебник по ListView](~/get-started/tutorials/listview/index.yml)
+> [Учебник по ListView](~/get-started/tutorials/collectionview/index.yml)
 
 ## <a name="related-links"></a>Связанные ссылки
 
