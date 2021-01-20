@@ -10,12 +10,12 @@ ms.date: 05/10/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5f48300b6c974bbbb0106f1afaa6c863f8159c58
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 6aa52ff13dccbf6c7b65f7006195997971a7cac2
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93374645"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98609785"
 ---
 # <a name="three-ways-to-draw-an-arc"></a>Три способа нарисовать дугу
 
@@ -63,7 +63,7 @@ public void ArcTo (SKRect oval, Single startAngle, Single sweepAngle, Boolean fo
 
 `startAngle`Аргументы или `sweepAngle` могут быть отрицательными: Дуга по часовой стрелке используется для положительных значений `sweepAngle` и по часовой стрелке для отрицательных значений.
 
-Однако не `AddArc` определяет *not* закрытый профиль. Если вы `LineTo` `AddArc` выберете после, линия будет выведена с конца дуги на точку в `LineTo` методе, и то же самое справедливо для `ArcTo` .
+Однако не `AddArc` определяет  закрытый профиль. Если вы `LineTo` `AddArc` выберете после, линия будет выведена с конца дуги на точку в `LineTo` методе, и то же самое справедливо для `ArcTo` .
 
 `AddArc` автоматически запускает новый профиль и функционально эквивалентен вызову `ArcTo` с последним аргументом `true` :
 
@@ -219,7 +219,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 ## <a name="the-tangent-arc"></a>Дуга касательной
 
-Второй тип дуги, поддерживаемой, `SKPath` — это *дуга* , так что она вызывается, так как дуга является окружностью окружности, которая является тангенсом двух соединенных линий.
+Второй тип дуги, поддерживаемой, `SKPath` — это *дуга*, так что она вызывается, так как дуга является окружностью окружности, которая является тангенсом двух соединенных линий.
 
 Дуга касательно добавляется в путь с вызовом  [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(SkiaSharp.SKPoint,SkiaSharp.SKPoint,System.Single)) метода с двумя `SKPoint` параметрами или [`ArcTo`](xref:SkiaSharp.SKPath.ArcTo(System.Single,System.Single,System.Single,System.Single,System.Single)) перегрузкой с отдельными `Single` параметрами для точек:
 
@@ -235,7 +235,7 @@ public void ArcTo (Single x1, Single y1, Single x2, Single y2, Single radius)
 
 - Текущая точка контура или точка (0, 0), если `MoveTo` не был вызван
 - Первый аргумент точки для `ArcTo` метода, называемый *угловой точкой*
-- Второй аргумент точки для `ArcTo` , называемый *конечной точкой* :
+- Второй аргумент точки для `ArcTo` , называемый *конечной точкой*:
 
 ![Три точки, начинающиеся с дуги по касательной](arcs-images/tangentarcthreepoints.png)
 
@@ -257,7 +257,7 @@ public void ArcTo (Single x1, Single y1, Single x2, Single y2, Single radius)
 
 Кривая, добавленная в профиль, не затрагивает ни одну из точек, указанных в `ArcTo` методе. Он состоит из прямой линии от текущей точки до первой касательной и дуги, завершающейся во второй точке касательной, показанной здесь красным цветом:
 
-![Выделенная дуга тангенса между двумя линиями](arcs-images/tangentarchighlight.png)
+![На схеме показана Предыдущая диаграмма с заметками красной линией, которая показывает выделенную дугу тангенса между двумя линиями.](arcs-images/tangentarchighlight.png)
 
 Вот итоговая прямая линия и дуга, добавленная в профиль:
 
