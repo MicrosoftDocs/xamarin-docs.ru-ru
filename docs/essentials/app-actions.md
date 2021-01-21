@@ -8,12 +8,12 @@ ms.date: 01/04/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 0ebbc1630a6ccb294bb5fe8d3342ca13e997dee0
-ms.sourcegitcommit: 995ee23d93e08dceb8754cc6c682cd2f4594345b
+ms.openlocfilehash: 8b1da7d07c042ff10b48948c4f411d65c6c05002
+ms.sourcegitcommit: d4d293174a8324ce82b8f961ae6eadce294cafd7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97972348"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98194891"
 ---
 # <a name="no-locxamarinessentials-app-actions"></a>Xamarin.Essentials: Действия приложения
 
@@ -32,7 +32,7 @@ ms.locfileid: "97972348"
 ```csharp
 [IntentFilter(
         new[] { Xamarin.Essentials.Platform.Intent.ActionAppAction },
-        Categories = new[] { Intent.CategoryDefault })]
+        Categories = new[] { Android.Content.Intent.CategoryDefault })]
 public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 {
     ...
@@ -48,7 +48,7 @@ protected override void OnResume()
     Xamarin.Essentials.Platform.OnResume(this);
 }
 
-protected override void OnNewIntent(Intent intent)
+protected override void OnNewIntent(Android.Content.Intent intent)
 {
     base.OnNewIntent(intent);
 
@@ -129,19 +129,9 @@ void AppActions_OnAppAction(object sender, AppActionEventArgs e)
         AppActions.OnAppAction -= app.AppActions_OnAppAction;
         return;
     }
-    Device.BeginInvokeOnMainThread(async () =>
+    MainThread.BeginInvokeOnMainThread(async () =>
     {
-        var page = e.AppAction.Id switch
-        {
-            "battery_info" => new BatteryPage(),
-            "app_info" => new AppInfoPage(),
-            _ => default(Page)
-        };
-        if (page != null)
-        {
-            await Application.Current.MainPage.Navigation.PopToRootAsync();
-            await Application.Current.MainPage.Navigation.PushAsync(page);
-        }
+        await Shell.Current.GoToAsync($"//{e.AppAction.Id}");
     });
 }
 ```
