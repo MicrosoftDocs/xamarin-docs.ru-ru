@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/09/2016
-ms.openlocfilehash: cace68a1b85a4404774ca88ec697d419920d05cb
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: cf10633d06c338f5067f768b9097c9b1836d6f59
+ms.sourcegitcommit: e27e29c14b783263e063baaa65d4eecb8dd31f57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91432899"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98628830"
 ---
 # <a name="using-icloud-with-xamarinios"></a>Использование iCloud с Xamarin. iOS
 
@@ -28,7 +28,7 @@ API хранилища iCloud в iOS 5 позволяет приложениям
 
 - **Отдельные файлы и каталоги** — для управления множеством различных файлов непосредственно в файловой системе.
 
-В этом документе рассматриваются первые два типа пар "ключ-значение" и подклассов данных, а также способы использования этих функций в Xamarin. iOS.
+В этом документе обсуждаются первые две пары типов-Key-Value и подклассов данных, а также способы использования этих функций в Xamarin. iOS.
 
 > [!IMPORTANT]
 > Компания Apple [предоставляет инструменты](https://developer.apple.com/support/allowing-users-to-manage-data/), которые помогают разработчикам надлежащим образом соблюдать Общий регламент по защите данных Европейского союза (GDPR).
@@ -63,7 +63,7 @@ API хранилища iCloud в iOS 5 позволяет приложениям
 - **Для тестирования iCloud необходимо использовать устройство** . оно не будет работать в симуляторе.
 На самом деле, для просмотра iCloud в действии необходимо, чтобы два или больше устройств вошли в учетную информацию с одним и тем же идентификатором Apple ID.
 
-## <a name="key-value-storage"></a>Хранилище "ключ — значение"
+## <a name="key-value-storage"></a>Хранилище Key-Value
 
 Хранилище "ключ — значение" предназначено для небольших объемов данных, которые пользователь может сохранить на разных устройствах, например на последней странице, которую они просматривали в книге или журнале. Хранилище "ключ-значение" не следует использовать для резервного копирования данных.
 
@@ -404,9 +404,9 @@ doc.UpdateChangeCount (UIDocumentChangeKind.Done);
 
 Пользователи также получат различные предупреждения при попытке удалить приложение с поддержкой iCloud с устройства, чтобы сообщить им о состоянии документов iCloud, связанных с этим приложением.
 
- [![Пример диалогового окна, когда пользователь пытается удалить приложение с поддержкой iCloud с устройства](introduction-to-icloud-images/icloud-delete1.png)](introduction-to-icloud-images/icloud-delete1.png#lightbox)
+ [![На снимке экрана отображается предупреждение о незавершенных обновлениях документов.](introduction-to-icloud-images/icloud-delete1.png)](introduction-to-icloud-images/icloud-delete1.png#lightbox)
 
- [![Пример диалогового окна, когда пользователь пытается удалить приложение с поддержкой iCloud с устройства](introduction-to-icloud-images/icloud-delete2.png)](introduction-to-icloud-images/icloud-delete2.png#lightbox)
+ [![На снимке экрана отображается предупреждение об удалении для облака.](introduction-to-icloud-images/icloud-delete2.png)](introduction-to-icloud-images/icloud-delete2.png#lightbox)
 
 ## <a name="icloud-backup"></a>Резервное копирование iCloud
 

@@ -6,16 +6,16 @@ ms.assetid: 399F71C6-16A4-4ABC-B30D-AF17D066A5FA
 author: davidortinau
 ms.author: daortin
 ms.date: 04/20/2018
-ms.openlocfilehash: fda004fe32b8f7d047298608a500cf72c4e9f06c
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: 2beb33915d1dd03184d784ea998f91fcb64f423f
+ms.sourcegitcommit: e27e29c14b783263e063baaa65d4eecb8dd31f57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91453370"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98628908"
 ---
 # <a name="transport-layer-security-tls-12"></a>Протокол TLS версии 1.2
 
-Использование последней версии протокола TLS важно для обеспечения безопасности сетевых подключений приложений. [ _Transport Layer Security_ ](https://en.wikipedia.org/wiki/Transport_Layer_Security)
+Использование последней версии протокола TLS важно для обеспечения безопасности сетевых подключений приложений. [  ](https://en.wikipedia.org/wiki/Transport_Layer_Security)
 
 > [!WARNING]
 > **Апрель 2018** — из-за повышенных требований к безопасности, включая соответствие требованиям PCI, основным поставщикам облачных услуг и веб-серверам требуется отключить поддержку протоколов TLS версий старше 1,2. Проекты Xamarin, созданные в предыдущих версиях Visual Studio по умолчанию, используют более старые версии TLS.
@@ -35,7 +35,7 @@ ms.locfileid: "91453370"
 
 Эти параметры можно найти в **свойствах проекта > параметры Android** , а затем нажать кнопку **Дополнительно** :
 
-[![Настройка HttpClient и TLS в Visual Studio](transport-layer-security-images/android-win-sml.png)](transport-layer-security-images/android-win.png#lightbox)
+[![Настройка HttpClient и TLS в Visual Studio для устройств Android.](transport-layer-security-images/android-win-sml.png)](transport-layer-security-images/android-win.png#lightbox)
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
@@ -53,13 +53,13 @@ ms.locfileid: "91453370"
 
 Этот параметр можно найти в **свойствах проекта > сборка iOS**:
 
-[![Настройка HttpClient и TLS в Visual Studio](transport-layer-security-images/ios-win-sml.png)](transport-layer-security-images/ios-win.png#lightbox)
+[![Настройте HttpClient и TLS в Visual Studio для устройств с настройкой "O S".](transport-layer-security-images/ios-win-sml.png)](transport-layer-security-images/ios-win.png#lightbox)
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 Этот параметр можно найти в **параметрах проекта > сборка > вкладка сборки iOS** :
 
-[![Настройка HttpClient в Visual Studio для Mac](transport-layer-security-images/ios-mac-sml.png)](transport-layer-security-images/ios-mac.png#lightbox)
+[![Настройте HttpClient в Visual Studio для Mac для устройств ввода-вывода.](transport-layer-security-images/ios-mac-sml.png)](transport-layer-security-images/ios-mac.png#lightbox)
 
 -----
 
@@ -82,7 +82,7 @@ ms.locfileid: "91453370"
 
 Разработчики Xamarin всегда могли использовать собственные сетевые классы в своем коде, однако существует также параметр, который определяет, какой сетевой стек используется `HttpClient` классами. Это предоставляет знакомый API .NET, который обладает преимуществами скорости и безопасности собственной платформы.
 
-Доступны следующие возможности:
+Допустимые значения:
 
 - **Управляемый стек** — предоставляемая моно функциональность сети или
 - **Собственный стек** — различные сетевые интерфейсы API, предоставляемые базовыми платформами (Android, iOS или macOS).

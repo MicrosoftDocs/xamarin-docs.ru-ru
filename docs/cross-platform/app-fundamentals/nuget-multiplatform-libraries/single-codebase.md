@@ -6,12 +6,12 @@ ms.assetid: E7B55354-9BBE-4122-BCE3-3506B79090DD
 author: davidortinau
 ms.author: daortin
 ms.date: 03/23/2017
-ms.openlocfilehash: 3226820dddbd6ecb83b87b29ef1991d19104b2a6
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: ca874149874c420801c839fcde7afac11f46c5e1
+ms.sourcegitcommit: e27e29c14b783263e063baaa65d4eecb8dd31f57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86936985"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98628921"
 ---
 # <a name="creating-a-new-multiplatform-library-for-nuget"></a>Создание новой многоплатформенной библиотеки для NuGet
 
@@ -30,11 +30,11 @@ ms.locfileid: "86936985"
 
 2. Выберите **многоплатформенную библиотеку** из раздела **многоплатформенная > библиотека** :
 
-   [![Настройка многоплатформенной библиотеки для одной базы кода](single-codebase-images/mulitplatform-library-sml.png)](single-codebase-images/mulitplatform-library.png#lightbox)
+   [![Снимок экрана: выберите шаблон с выбранной многоплатформенной библиотекой.](single-codebase-images/mulitplatform-library-sml.png)](single-codebase-images/mulitplatform-library.png#lightbox)
 
-3. Введите **имя** и **Описание**и выберите **Single для всех платформ**:
+3. Введите **имя** и **Описание** и выберите **Single для всех платформ**:
 
-   [![Настройка многоплатформенной библиотеки для одной базы кода](single-codebase-images/single-configure-sml.png)](single-codebase-images/single-configure.png#lightbox)
+   [![Снимок экрана показывает значения, указанные для имени, описания и реализации.](single-codebase-images/single-configure-sml.png)](single-codebase-images/single-configure.png#lightbox)
 
 4. Завершите работу мастера. В решении создается один проект библиотеки.
 
@@ -60,7 +60,7 @@ ms.locfileid: "86936985"
 
 <a name="add-platforms"></a>
 
-## <a name="adding-platform-specific-code"></a>Добавление кода для конкретной платформы
+## <a name="adding-platform-specific-code"></a>Добавление кода Platform-Specific
 
 Проекты на основе PCL и проекты на основе .NET Standard не могут содержать ссылки для конкретных платформ (например, функции iOS или Android).
 
@@ -73,8 +73,8 @@ ms.locfileid: "86936985"
 [![Добавление параметров платформы, таких как iOS, Android и Shared Project](single-codebase-images/add-later-platforms-sml.png)](single-codebase-images/add-later-platforms-sml.png#lightbox)
 
 После преобразования в общий проект перейдите в раздел **Параметры проекта > пакет NuGet > справочные сборки** 
- [section](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/platform-specific.md) и убедитесь, что выбраны все необходимые профили (чтобы NuGet продолжал быть совместимыми с проектами, которые ранее использовались в).
+ [](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/platform-specific.md) и убедитесь, что выбраны все необходимые профили (чтобы NuGet продолжал быть совместимыми с проектами, которые ранее использовались в).
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Руководство по метаданным](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/metadata.md)
+- [Путеводитель по метаданным](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/metadata.md)

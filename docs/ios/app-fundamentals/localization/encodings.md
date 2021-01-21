@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 04/28/2017
-ms.openlocfilehash: 88f95f797d1230c818a635376f7b17a2264afadf
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: b832bdd25b8449ce365f87e145812ec3db27f393
+ms.sourcegitcommit: e27e29c14b783263e063baaa65d4eecb8dd31f57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86930342"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98628752"
 ---
 # <a name="internationalization-encodings-in-xamarinios"></a>Кодировки интернационализации в Xamarin. iOS
 
@@ -22,9 +22,9 @@ ms.locfileid: "86930342"
 
 Это можно сделать, выбрав дополнительные кодировки в области сборка iOS/дополнительно в Visual Studio для Mac или Visual Studio.
 
- [![Выбор дополнительных кодировок](encodings-images/00.png)](encodings-images/00.png#lightbox)
+ [![На снимке экрана показано, как выбрать дополнительные кодировки в Visual Studio для Mac.](encodings-images/00.png)](encodings-images/00.png#lightbox)
 
- [![Выбор дополнительных кодировок](encodings-images/00a.png)](encodings-images/00a.png#lightbox)
+ [![На снимке экрана показано, как выбрать дополнительные кодировки в Visual Studio.](encodings-images/00a.png)](encodings-images/00a.png#lightbox)
 
 Можно выбрать один из следующих элементов:
 
@@ -33,7 +33,7 @@ ms.locfileid: "86930342"
 - другое: кириллица, Балтийская, вьетнамский, украинский и тайский
 - редкие: кодировки EBCDIC и другие редкие кодовые страницы
 - Западная часть: языки латинского алфавита, Пасха и Западная Европа
-- все
+- all
 
  <a name="cjk"></a>
 

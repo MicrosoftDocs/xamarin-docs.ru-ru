@@ -1,20 +1,20 @@
 ---
-ms.openlocfilehash: 338b03ae5e52b06c6ddc225b418ee2bc7d5e5ffc
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: e46c86def8a22450cf8087cf36a6bb05dd24ef70
+ms.sourcegitcommit: 4d260b655cb52b990dda79c239a9721f2e964625
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "71107339"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98570766"
 ---
 Прежде чем работать с этим учебником, вы должны выполнить:
 
 - Краткое руководство [Создание первого приложения Xamarin.Forms](~/get-started/first-app/index.md).
-- Руководство по [сетке](~/get-started/tutorials/grid/index.yml).
-- Руководство по [меткам](~/get-started/tutorials/label/index.yml).
-- Руководство по [кнопкам](~/get-started/tutorials/button/index.yml).
-- Руководство по [записям](~/get-started/tutorials/entry/index.yml).
+- Руководство по [StackLayout](~/get-started/tutorials/stacklayout/index.yml).
+- Руководство по [Label](~/get-started/tutorials/label/index.yml).
+- Руководство по [Button](~/get-started/tutorials/button/index.yml).
+- Руководство по [CollectionView](~/get-started/tutorials/collectionview/index.yml).
 
-В этом руководстве описано следующее.
+В этом руководстве описано следующее:
 
 > [!div class="checklist"]
 >
@@ -22,6 +22,6 @@ ms.locfileid: "71107339"
 > - Создавать классы веб-службы.
 > - Использовать классы веб-службы.
 
-С помощью Visual Studio 2019 или Visual Studio для Mac вы создадите простое приложение, демонстрирующее, как получать данные от веб-службы [OpenWeatherMap](https://openweathermap.org/). На следующих снимках экрана показано готовое приложение.
+Вы создадите простое приложение, демонстрирующее получение данных репозитория .NET от веб-API GitHub, в Visual Studio 2019 или Visual Studio для Mac. Полученные данные будут отображаться в [`CollectionView`](xref:Xamarin.Forms.CollectionView). На следующих снимках экрана показано готовое приложение.
 
-[![Снимок экрана с данными о погоде в Сиэтле в iOS и Android](../images/consume-web-service.png "Данные о погоде в Сиэтле")](../images/consume-web-service-large.png#lightbox "Данные о погоде в Сиэтле")
+[![Снимок экрана репозиториев .NET GitHub в iOS и Android](../images/consume-web-service.png)](../images/consume-web-service-large.png#lightbox)

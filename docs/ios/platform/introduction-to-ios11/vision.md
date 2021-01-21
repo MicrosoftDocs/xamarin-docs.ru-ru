@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/31/2017
-ms.openlocfilehash: 9a31cd31f7cbfb4748991d45204ca867b5d62c8c
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: c33317835ff07826e8b9276c4f5cdc13c04c2680
+ms.sourcegitcommit: e27e29c14b783263e063baaa65d4eecb8dd31f57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91436624"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98628817"
 ---
 # <a name="vision-framework-in-xamarinios"></a>Инфраструктура концепции в Xamarin. iOS
 
@@ -27,7 +27,7 @@ ms.locfileid: "91436624"
 - Обнаружение горизонта
 - Отслеживание & обнаружения объектов
 
-![Фотография с обнаруженными тремя прямоугольниками](vision-images/found-rectangles-tiny.png) ![Обнаружена фотография с двумя лицами](vision-images/xamarin-home-faces-tiny.png)
+![Обнаружена фотография с тремя прямоугольниками.](vision-images/found-rectangles-tiny.png) ![Обнаружена фотография с двумя лицами.](vision-images/xamarin-home-faces-tiny.png)
 
 Обнаружение и обнаружение лиц прямоугольников рассматриваются более подробно ниже.
 
@@ -96,7 +96,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 
 Просмотрите [Источник образца](/samples/xamarin/ios-samples/ios11-visionrectangles) для точного метода кореграфикс.
 
-![Фотография с обнаруженными тремя прямоугольниками](vision-images/found-rectangles-phone-sml.png)
+![Фотография с тремя прямоугольниками, обнаруженными на мобильном устройстве.](vision-images/found-rectangles-phone-sml.png)
 
 ### <a name="5-further-processing"></a>5. Дальнейшая обработка
 
@@ -169,7 +169,7 @@ private void HandleRectangles(VNRequest request, NSError error){
 
 Просмотрите [Источник образца](/samples/xamarin/ios-samples/ios11-visionfaces) для точного метода кореграфикс.
 
-![Обнаружена фотография с двумя лицами](vision-images/found-faces-phone-sml.png)
+![Фотография с двумя лицами, обнаруженными на мобильном устройстве.](vision-images/found-faces-phone-sml.png)
 
 ### <a name="5-further-processing"></a>5. Дальнейшая обработка
 

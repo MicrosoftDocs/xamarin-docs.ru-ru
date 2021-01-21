@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2018
-ms.openlocfilehash: 67698ae7fe3ef9a7586d83e26ed276ba473396e5
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: 9f9e886d6e72faee6ba579fc4c9ab92dfbfb0cf4
+ms.sourcegitcommit: e27e29c14b783263e063baaa65d4eecb8dd31f57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91457514"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98628934"
 ---
 # <a name="android-wear"></a>Android Wear
 
@@ -55,15 +55,15 @@ ms.locfileid: "91457514"
 |[GridViewPager](/samples/xamarin/monodroid-samples/wear-gridviewpager)|Гридвиевпажер реализует плоский навигационный шаблон, где пользователь выполняет вертикальное перемещение, а затем по горизонтали для навигации по параметрам и содержимому.|![Снимок экрана Гридвиевпажер](images/gridviewpager.png)|
 |[WatchFace](/samples/xamarin/monodroid-samples/wear-watchface)|Ватчфаце — это пользовательское лицо с контрольными данными с использованием часов, минут и секунд с аналоговым стилем. В этом примере показано, как создать службу отслеживания лиц, которая рисует текущее время и обрабатывает события изменения внешнего режима и видимости. Он включает широковещательный приемник, который прослушивает изменения часового пояса и автоматически обновляет соответствующее время.|![Снимок экрана Ватчфаце](images/gridviewpager.png)|
 
-## <a name="videos"></a>Видео
+## <a name="videos"></a>Видеоролики
 
 Ознакомьтесь с этими видеоматериалами, посвященными Xamarin. Android с поддержкой износа:
 
 |Описание|Снимок экрана|
 |--- |--- |
-|[Android L и многое другое](https://blog.xamarin.com/webinar-recording-android-l-and-so-much-more/) &ndash; В предварительной версии Android L для разработчиков появились новые API-интерфейсы, которые позволяют разработчикам воспользоваться преимуществами, включая проектирование материалов, уведомления и новые анимации.|![Снимок экрана презентации](images/video-android-l.png)|
-|[C# находится в моем ушки и в моих глаза: "Google Glass" и "износ](https://www.youtube.com/watch?v=80H8tXByZQc) &ndash; Android" Носимого пользователемные вычисления могут показаться что-нибудь из будущего (или мини-приложения инспектора), но многие люди уже сейчас приносят будущее! Разработчики на C# узнают, что они уже имеют средства и навыки для работы с носимого пользователем устройствами (от развития до 2014).|![Снимок экрана презентации](images/video-eyes-ears.png)|
-|[Новые возможности Xamarin. Android](https://www.youtube.com/watch?v=Gpqc2XZIQfU) &ndash; Android L, Android Light, Android TV, автозапуск Android, проектирование материалов и искусство; что это означает для разработчика Xamarin? от развиваться 2014.|![Снимок экрана презентации](Images/video-whats-new.png)|
+|[Android L и многое другое](https://blog.xamarin.com/webinar-recording-android-l-and-so-much-more/) &ndash; В предварительной версии Android L для разработчиков появились новые API-интерфейсы, которые позволяют разработчикам воспользоваться преимуществами, включая проектирование материалов, уведомления и новые анимации.|![Снимок экрана с Android L и настолько большим представлением.](images/video-android-l.png)|
+|[C# находится в моем ушки и в моих глаза: "Google Glass" и "износ](https://www.youtube.com/watch?v=80H8tXByZQc) &ndash; Android" Носимого пользователемные вычисления могут показаться что-нибудь из будущего (или мини-приложения инспектора), но многие люди уже сейчас приносят будущее! Разработчики на C# узнают, что они уже имеют средства и навыки для работы с носимого пользователем устройствами (от развития до 2014).|![Снимок экрана C# находится в моей ушки и в презентации "Мои глаза".](images/video-eyes-ears.png)|
+|[Новые возможности Xamarin. Android](https://www.youtube.com/watch?v=Gpqc2XZIQfU) &ndash; Android L, Android Light, Android TV, автозапуск Android, проектирование материалов и искусство; что это означает для разработчика Xamarin? от развиваться 2014.|![Снимок экрана с новыми сведениями о новых возможностях в презентации на Android с Xamarin Dot.](Images/video-whats-new.png)|
 
 <!--
 
