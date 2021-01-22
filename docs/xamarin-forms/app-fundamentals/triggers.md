@@ -10,12 +10,12 @@ ms.date: 04/17/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1f2484fe7c6dee1f1b4df1318263624f3f50f604
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 6f54ec3afd3d53d4a7bee40159bccff2d23f44f6
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93367196"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98609055"
 ---
 # <a name="no-locxamarinforms-triggers"></a>Триггеры Xamarin.Forms
 
@@ -521,8 +521,8 @@ Unchecked state active: True
 
 В этом примере неявный элемент [`Style`](xref:Xamarin.Forms.Style) направлен на объекты [`Grid`](xref:Xamarin.Forms.Grid). Если у свойства [`IsChecked`](xref:Xamarin.Forms.CheckBox.IsChecked) [`CheckBox`](xref:Xamarin.Forms.CheckBox) значение `false`, устанавливается белый цвет фона `Grid`. Когда у свойства `CheckBox.IsChecked` значение `true`, активируется изменение [`VisualState`](xref:Xamarin.Forms.VisualState), а цвет фона `Grid` становится черным:
 
-[![Снимок экрана с активированным изменением состояния визуализации в iOS и Android](triggers-images/comparestatetrigger-unchecked.png "Пример CompareStateTrigger")](triggers-images/comparestatetrigger-unchecked-large.png#lightbox "Пример CompareStateTrigger")
-[![Снимок экрана с активированным изменением состояния визуализации в iOS и Android](triggers-images/comparestatetrigger-checked.png "Пример CompareStateTrigger")](triggers-images/comparestatetrigger-unchecked-large.png#lightbox "Пример CompareStateTrigger")
+[![Снимок экрана с активированным изменением состояния визуализации в iOS и Android с невыбранным триггером.](triggers-images/comparestatetrigger-unchecked.png "Пример CompareStateTrigger")](triggers-images/comparestatetrigger-unchecked-large.png#lightbox "Пример CompareStateTrigger")
+[![Снимок экрана с активированным изменением состояния визуализации в iOS и Android с выбранным триггером.](triggers-images/comparestatetrigger-checked.png "Пример CompareStateTrigger")](triggers-images/comparestatetrigger-checked-large.png#lightbox "Пример CompareStateTrigger")
 
 ### <a name="device-state-trigger"></a>Триггер состояния устройства
 

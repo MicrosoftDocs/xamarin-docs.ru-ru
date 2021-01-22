@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/11/2017
-ms.openlocfilehash: a2e8e6d1fdf3f51f015dccf12a6a3b455ceff741
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 0bfb4168e3d990ae1afb3ee2022553053c383083
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91432742"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697596"
 ---
 # <a name="progress-and-activity-indicators-in-xamarinios"></a>Индикаторы хода выполнения и активности в Xamarin. iOS
 
@@ -38,7 +38,7 @@ iOS предоставляет два основных способа предо
 
 Если вы используете конструктор iOS для создания пользовательского интерфейса, индикатор действия можно добавить в макет из панели элементов. Следующие свойства можно изменить с Панель свойств:
 
-![Панель свойств](progress-activity-indicator-images/progress-indicator1.png)
+![На снимке экрана показан Панель свойств, где можно изменить свойства стиля, цвета и поведения.](progress-activity-indicator-images/progress-indicator1.png)
 
 ### <a name="managing-activity-indicator-behavior"></a>Управление поведением индикатора действия
 
@@ -63,7 +63,7 @@ activitySpinner = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.White
 В Apple имеются следующие рекомендации по работе с индикаторами выполнения.
 
 - **Точный отчет** . индикаторы выполнения всегда должны быть точным представлением времени, необходимого для выполнения задачи. Никогда не иным время, чтобы приложение было занято.
-- **Используйте для хорошо определенных индикаторов длительности** . индикатор выполнения должен не только показывать длительную задачу, но и предоставить пользователю сведения о том, какая часть задачи завершена, и оценить оставшееся время.
+- **Использование для Well-Defined длительности** — индикатор выполнения не только показывает, что выполняется длительная задача, но дает пользователю возможность указать, какая часть задачи завершена, и оценить оставшееся время.
 
 ### <a name="implementing-an-progress-bar"></a>Реализация индикатора выполнения
 
@@ -75,7 +75,7 @@ activitySpinner = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.White
 
 На панели свойств можно настроить следующие свойства:
 
-![Панель свойств](progress-activity-indicator-images/progress-indicator3.png)
+![На снимке экрана показан Панель свойств, где можно изменить стиль, ход выполнения, оттенок выполнения, оттенок, изображение хода выполнения и свойства отслеживания изображения.](progress-activity-indicator-images/progress-indicator3.png)
 
 ### <a name="managing-progress-bar-behavior"></a>Управление поведением индикатора выполнения
 

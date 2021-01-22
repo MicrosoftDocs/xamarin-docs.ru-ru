@@ -10,12 +10,12 @@ ms.date: 07/21/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: bfac785e6bfa3dce698d5657d0be1079e675ecc6
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 7420c5883856379db98001fce2fd36bf576cc2fb
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93366351"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98609083"
 ---
 # <a name="no-locxamarinforms-shell-search"></a>Поиск по оболочке Xamarin.Forms
 
@@ -102,11 +102,11 @@ Shell.SetSearchHandler(this, new MonkeySearchHandler
 
 Свойству `ShowsResults` присваивается значение `true`, чтобы поисковые подсказки отображались по мере ввода поискового запроса пользователем:
 
-[![Снимок экрана: результаты поиска в объекте SearchHandler оболочки на iOS и Android](search-images/search-results.png "Результаты поиска в объекте SearchHandler оболочки")](search-images/search-results-large.png#lightbox "Результаты поиска в объекте SearchHandler оболочки")
+[![Снимок экрана с результатами поиска в объекте SearchHandler оболочки в iOS и Android; результаты для частичной строки M.](search-images/search-results.png "Результаты поиска в объекте SearchHandler оболочки")](search-images/search-results-large.png#lightbox "Результаты поиска в объекте SearchHandler оболочки")
 
 По мере изменения поискового запроса данные в области поисковых подсказок обновляются:
 
-[![Снимок экрана: результаты поиска в объекте SearchHandler оболочки на iOS и Android](search-images/search-results-change.png "Результаты поиска в объекте SearchHandler оболочки")](search-images/search-results-change-large.png#lightbox "Результаты поиска в объекте SearchHandler оболочки")
+[![Снимок экрана с результатами поиска в объекте SearchHandler оболочки в iOS и Android; показаны результаты для частичной строки M o n.](search-images/search-results-change.png "Результаты поиска в объекте SearchHandler оболочки")](search-images/search-results-change-large.png#lightbox "Результаты поиска в объекте SearchHandler оболочки")
 
 При выборе результата поиска происходит переход к `MonkeyDetailPage` и отображаются данные о выбранной обезьяне:
 

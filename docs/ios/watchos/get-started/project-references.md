@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/13/2016
-ms.openlocfilehash: 96873e1bff34a4ef3ed76d675ca0a2b5c03f0d72
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: 9c0ece6880726993b88293f13a549c16c1e91d05
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997245"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697700"
 ---
 # <a name="watchos-project-references-in-xamarin"></a>Ссылки на проекты watchOS в Xamarin
 
@@ -26,11 +26,11 @@ _Описание связи между приложением iOS, просмо
 
 - Приложение для **iPhone** . ссылки приложения **Watch**
 
-  ![Приложение для iPhone. ссылки приложения Watch](project-references-images/catalog-reference1.png)
+  ![На снимке экрана показана вкладка проекты.](project-references-images/catalog-reference1.png)
 
 - **Просмотр** ссылок на приложения **Просмотр расширения приложения**
 
-  ![Приложение для iPhone. ссылки приложения Watch](project-references-images/catalog-reference2.png)
+  ![На снимке экрана показана вкладка "проекты" с выбранным параметром Миватчапп точка Онватчекстенсион.](project-references-images/catalog-reference2.png)
 
 - **Расширение Watch App** не ссылается ни на один из других проектов
 
@@ -41,11 +41,11 @@ _Описание связи между приложением iOS, просмо
 Также необходимо убедиться в правильности **идентификаторов пакета** .
 Все три проекта должны иметь *один и тот же* префикс идентификатора, при этом два проекта наблюдения имеют предопределенные расширения `watchkitextension` и `watchkitapp` , как показано ниже (для примера **ватчкиткаталог** ):
 
-- Унифицированный проект Xamarin. iOS —`com.xamarin.WatchKitCatalog`
+- Унифицированный проект Xamarin. iOS — `com.xamarin.WatchKitCatalog`
 
-- Проект расширения WatchKit —`com.xamarin.WatchKitCatalog.watchkitextension`
+- Проект расширения WatchKit — `com.xamarin.WatchKitCatalog.watchkitextension`
 
-- Просмотр проекта приложения-`com.xamarin.WatchKitCatalog.watchkitapp`
+- Просмотр проекта приложения- `com.xamarin.WatchKitCatalog.watchkitapp`
 
 Также убедитесь, что эти параметры **info. plist** верны:
 

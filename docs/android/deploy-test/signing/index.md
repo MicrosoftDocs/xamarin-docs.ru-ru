@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 07/02/2018
-ms.openlocfilehash: 44003e55ee88db727c26def56b3363dbf6c982e9
-ms.sourcegitcommit: 124d845f8d2768353e8b7fe1ab1d959a589367f7
+ms.openlocfilehash: 07c20be730d73b080d99b2fecb88b26115c37bc2
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91872281"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98609031"
 ---
 # <a name="signing-the-android-application-package"></a>Подписывание пакета приложения для Android
 
@@ -28,7 +28,7 @@ ms.locfileid: "91872281"
 
 В разделе [Архивирование для публикации](~/android/deploy-test/release-prep/index.md#archive) в диалоговом окне **Подписать и распространить...** предлагается два варианта распространения. Выберите **Прямое** и нажмите **Далее**:
 
-[![Диалоговое окно "Подписать и распространить"](images/xs/01-select-ad-hoc-sml.png)](images/xs/01-select-ad-hoc.png#lightbox)
+[![Диалоговое окно "Подписывание и распространение", выбор канала распространения Android.](images/xs/01-select-ad-hoc-sml.png)](images/xs/01-select-ad-hoc.png#lightbox)
 
 -----
 
@@ -125,7 +125,7 @@ ms.locfileid: "91872281"
 Как мы видим, новый сертификат был добавлен в хранилище ключей. Для публикации приложения в Google Play нажмите **Отмена** и перейдите к разделу [Публикация в Google Play](~/android/deploy-test/publishing/publishing-to-google-play/index.md).
 В противоположном случае нажмите **Далее** для публикации приложения *напрямую* (для независимого распространения), как это показано в следующем примере:
 
-[![Диалоговое окно "Подписать и распространить"](images/xs/04-select-identity-sml.png)](images/xs/04-select-identity.png#lightbox)
+[![Диалоговое окно "Подписывание и распространение", удостоверение подписывания Android.](images/xs/04-select-identity-sml.png)](images/xs/04-select-identity.png#lightbox)
 
 Диалоговое окно **Опубликовать напрямую** перед публикацией отображает сводку по подписанному приложению. Проверьте правильность следующих сведений и нажмите **Опубликовать**.
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 06/22/2018
-ms.openlocfilehash: 0b0bfc650ffa271a7616d7c6e6a436fafa2664c8
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 9521c059e853b71050dda43c9f49ce688f43ffe2
+ms.sourcegitcommit: 63029dd7ea4edb707a53ea936ddbee684a926204
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86932604"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98608953"
 ---
 # <a name="set-up-device-for-development"></a>Настройка устройства для разработки
 
@@ -67,7 +67,7 @@ _В этой статье рассказывается о том, как нас�
 
 После того как вкладка **Параметры разработчика** появится в разделе **Параметры > Система**, откройте ее, чтобы увидеть параметры разработчика:
 
-[![Экран параметров разработчика в Android 9.0](set-up-device-for-development-images/usb-debugging-sml.png)](set-up-device-for-development-images/usb-debugging.png#lightbox)
+[![Экран параметров разработчика в Android](set-up-device-for-development-images/usb-debugging-sml.png)](set-up-device-for-development-images/usb-debugging.png#lightbox)
 
 Здесь можно включить такие параметры разработчика, как отладка по USB и режим бодрствования.
 
