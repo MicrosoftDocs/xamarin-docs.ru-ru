@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 01a09294d55490a723eb59b0365ac2dc516110c9
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 65fd825b6858efa02fcada196b4229cc69313b3e
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91434666"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697492"
 ---
 # <a name="sliders-switches-and-segmented-controls-in-xamarinios"></a>Ползунки, переключатели и сегментированные элементы управления в Xamarin. iOS
 
@@ -22,7 +22,7 @@ ms.locfileid: "91434666"
 
 Элемент управления "ползунок" позволяет просто выбрать числовое значение в диапазоне. Элемент управления по умолчанию имеет значение от 0 до 1, но эти ограничения можно настроить.
 
- [![Ползунок](slider-switch-segmented-controls-images/image25a.png)](slider-switch-segmented-controls-images/image25a.png#lightbox)
+ [![Slider](slider-switch-segmented-controls-images/image25a.png)](slider-switch-segmented-controls-images/image25a.png#lightbox)
 
 На следующем снимке экрана показаны свойства, которые могут быть изменены в конструкторе:
 
@@ -58,11 +58,11 @@ slider1.MaximumTrackTintColor = UIColor.Green;
 
 <a name="Switch"></a>
 
-## <a name="switch"></a>Коммутатор
+## <a name="switch"></a>Параметр
 
 iOS использует `UISwitch` как логическое входное значение, которое может быть представлено переключателем на других платформах. Пользователь может управлять этим элементом управления, перемещая *бегунок* между положениями **On/Off** .
 
- [![Коммутатор](slider-switch-segmented-controls-images/image28a.png)](slider-switch-segmented-controls-images/image28a.png#lightbox)
+ [![Параметр](slider-switch-segmented-controls-images/image28a.png)](slider-switch-segmented-controls-images/image28a.png#lightbox)
 
 Внешний вид переключателя можно настроить в **панель свойств** конструктора, который позволит управлять состоянием оттенок по умолчанию, **вкл./выкл** . и **изображением включения/выключения**. Это показано на рисунке ниже.
 
@@ -78,17 +78,17 @@ switch1.On = true;
 
 ## <a name="segmented-controls"></a>Сегментированные элементы управления
 
-Сегментированный элемент управления — это организованный способ, позволяющий пользователям взаимодействовать с небольшим количеством параметров. Он располагается горизонтально, и каждый сегмент функционирует как отдельная кнопка. При использовании конструктора сегментированный элемент управления можно найти в области **элементов > элементы управления**и должен выглядеть, как на следующем рисунке:
+Сегментированный элемент управления — это организованный способ, позволяющий пользователям взаимодействовать с небольшим количеством параметров. Он располагается горизонтально, и каждый сегмент функционирует как отдельная кнопка. При использовании конструктора сегментированный элемент управления можно найти в области **элементов > элементы управления** и должен выглядеть, как на следующем рисунке:
 
- [![Сегментированный элемент управления](slider-switch-segmented-controls-images/segmentedcontrol.png)](slider-switch-segmented-controls-images/segmentedcontrol.png#lightbox)
+ [![Значок сегментированного элемента управления.](slider-switch-segmented-controls-images/segmentedcontrol.png)](slider-switch-segmented-controls-images/segmentedcontrol.png#lightbox)
 
 Уникальная функция конструктора позволяет выбирать каждый сегмент отдельно в области конструктора, как показано ниже:
 
- [![Сегментированный элемент управления](slider-switch-segmented-controls-images/segmentedcontrolselection.png)](slider-switch-segmented-controls-images/segmentedcontrolselection.png#lightbox)
+ [![Сегментированные сегменты управления выбираются по отдельности.](slider-switch-segmented-controls-images/segmentedcontrolselection.png)](slider-switch-segmented-controls-images/segmentedcontrolselection.png#lightbox)
 
 Это позволяет использовать Панель свойств для более точного управления свойствами каждого сегмента. Редактируемые свойства можно увидеть на снимке экрана ниже:
 
- [![Сегментированный элемент управления](slider-switch-segmented-controls-images/segmentedcontrolproperties.png)](slider-switch-segmented-controls-images/segmentedcontrolproperties.png#lightbox)
+ [![Свойства сегментированного элемента управления.](slider-switch-segmented-controls-images/segmentedcontrolproperties.png)](slider-switch-segmented-controls-images/segmentedcontrolproperties.png#lightbox)
 
 Следует отметить, что стиль сегментированного элемента управления в iOS7 устарел, поэтому настройка параметров для этого в приложении iOS7 не будет действовать.
 

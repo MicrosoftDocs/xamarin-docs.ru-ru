@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 688febbb8b2aae3ae9dff45ea06ef3cf3809641a
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 4f53fc12ca056e7fc8d115cf2f8874f54a0ebd0b
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91436542"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697635"
 ---
 # <a name="data-binding-and-key-value-coding-in-xamarinmac"></a>Привязка данных и кодирование значений ключа в Xamarin. Mac
 
@@ -70,7 +70,7 @@ namespace MacDatabinding
 
 `[Register("PersonModel")]`Во-первых, атрибут регистрирует класс и предоставляет его цели — C. Затем класс должен наследовать от `NSObject` (или от подкласса, который наследует от `NSObject` ), в результате чего добавляется несколько базовых методов, позволяющих КВК соответствовать классу. Далее `[Export("Name")]` атрибут предоставляет `Name` свойство и определяет значение ключа, которое впоследствии будет использоваться для доступа к свойству с помощью методов КВК и кво.
 
-Наконец, чтобы иметь возможность принимать изменения, внесенные в ключ, в значение свойства, метод доступа должен заключить изменения в его значение `WillChangeValue` в `DidChangeValue` вызовах методов и (указав тот же ключ, что и `Export` атрибут).  Пример:
+Наконец, чтобы иметь возможность Key-Value наблюдаемых изменений в значении свойства, метод доступа должен заключить изменения в его значение в `WillChangeValue` и `DidChangeValue` вызовах методов (указав тот же ключ, что и `Export` атрибут).  Например:
 
 ```csharp
 set {
@@ -159,7 +159,7 @@ Person.SetValueForKey(new NSString("Jane Doe"), new NSString("Name"));
 
 ### <a name="observing-value-changes"></a>Наблюдение за изменениями значений
 
-С помощью отслеживания "ключ-значение" (кво) можно присоединить наблюдатель к конкретному ключу класса, совместимого с КВК, и получать уведомления каждый раз, когда изменяется значение этого ключа (с помощью методов КВК или прямого доступа к заданному свойству в коде C#). Пример:
+С помощью отслеживания "ключ-значение" (кво) можно присоединить наблюдатель к конкретному ключу класса, совместимого с КВК, и получать уведомления каждый раз, когда изменяется значение этого ключа (с помощью методов КВК или прямого доступа к заданному свойству в коде C#). Например:
 
 ```csharp
 // Watch for the name value changing
@@ -171,7 +171,7 @@ Person.AddObserver ("Name", NSKeyValueObservingOptions.New, (sender) => {
 
 Теперь при каждом `Name` `Person` изменении свойства экземпляра `PersonModel` класса новое значение записывается на консоль.
 
-Дополнительные сведения см. [в статье Введение в знакомство с руководством по программированию](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i)для Apple.
+Дополнительные сведения см. [в статье Введение в Apple по Key-Value наблюдении за руководством по программированию](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
 ## <a name="data-binding"></a>привязка данных,
 
@@ -317,7 +317,7 @@ namespace MacDatabinding
 }
 ```
 
-Большинство функций этого класса были рассмотрены в разделе [что такое кодирование "ключ — значение](#What_is_Key-Value_Coding) " выше. Тем не менее давайте взглянем на несколько определенных элементов и дополнений, которые позволяли этому классу работать в качестве модели данных для **контроллеров массива** и **контроллеров дерева** (которые мы будем использовать позже для **представлений дерева**привязки данных, **представлений структуры** и **представлений коллекций**).
+Большинство функций этого класса были рассмотрены в разделе [что такое кодирование "ключ — значение](#What_is_Key-Value_Coding) " выше. Тем не менее давайте взглянем на несколько определенных элементов и дополнений, которые позволяли этому классу работать в качестве модели данных для **контроллеров массива** и **контроллеров дерева** (которые мы будем использовать позже для **представлений дерева** привязки данных, **представлений структуры** и **представлений коллекций**).
 
 Во-первых, так как сотрудник может быть руководителем, мы использовали `NSArray` (точнее, `NSMutableArray` чтобы можно было изменить значения), чтобы разрешить к ним доступ сотрудникам, которыми они управляют.
 
@@ -333,7 +333,7 @@ public NSArray People {
 
 Здесь следует обратить внимание на две вещи:
 
-1. Мы использовали `NSMutableArray` вместо стандартного массива или коллекции C#, так как это требование к связыванию данных с элементами управления AppKit, такими как **табличные**представления, представления и **коллекции** **структуры** .
+1. Мы использовали `NSMutableArray` вместо стандартного массива или коллекции C#, так как это требование к связыванию данных с элементами управления AppKit, такими как **табличные** представления, представления и **коллекции** **структуры** .
 2. Мы предоставили массив сотрудников путем приведения их к типу `NSArray` для привязки данных и изменили его форматированное имя в формате C#, `People` на одно из которых предполагается привязка данных, `personModelArray` в виде **массива {class_name}** (Обратите внимание, что первый символ был преобразован в нижний регистр).
 
 Далее необходимо добавить некоторые специальные открытые методы имени для поддержки **контроллеров массива** и **контроллеров дерева**:
@@ -421,7 +421,7 @@ public bool isManager {
 
 Сначала добавим новый **контроллер представления** в наш файл **Main. Storyboard** в Interface Builder и назовите его класс `SimpleViewController` :
 
-[![Добавление нового контроллера представления](databinding-images/simple01.png "Добавление нового контроллера представления")](databinding-images/simple01-large.png#lightbox)
+[![Добавление нового контроллера представления с классом с именем Симплевиевконтроллер.](databinding-images/simple01.png "Добавление нового контроллера представления")](databinding-images/simple01-large.png#lightbox)
 
 Затем вернитесь к Visual Studio для Mac, измените файл **SimpleViewController.CS** (который был автоматически добавлен в наш проект) и предоставьте экземпляр, `PersonModel` который мы будем привязать к данным в нашей форме. Добавьте следующий код:
 
@@ -468,20 +468,20 @@ public override void ViewDidLoad ()
 1. Выберите текстовое поле **имя сотрудника** и перейдите в **инспектор привязок**.
 2. Установите флажок **привязать к** и выберите в раскрывающемся списке пункт **Простой контроллер представления** . Далее введите `self.Person.Name` **путь к ключу**:
 
-    [![Ввод пути к ключу](databinding-images/simple03.png "Ввод пути к ключу")](databinding-images/simple03-large.png#lightbox)
+    [![Ввод имени точки для пути к ключу.](databinding-images/simple03.png "Ввод пути к ключу")](databinding-images/simple03-large.png#lightbox)
 3. Выберите поле " **род занятий** " и установите флажок " **привязать к** " и выберите в раскрывающемся списке пункт " **Простой контроллер представления** ". Далее введите `self.Person.Occupation` **путь к ключу**:
 
-    [![Ввод пути к ключу](databinding-images/simple04.png "Ввод пути к ключу")](databinding-images/simple04-large.png#lightbox)
+    [![Ввод точки обслуживания для пути к ключу с помощью самостоятельной точки.](databinding-images/simple04.png "Ввод пути к ключу")](databinding-images/simple04-large.png#lightbox)
 4. Установите флажок **сотрудник является руководителем** и установите флажок **привязать к** и выберите в раскрывающемся списке пункт **Простой контроллер представления** . Далее введите `self.Person.isManager` **путь к ключу**:
 
-    [![Ввод пути к ключу](databinding-images/simple05.png "Ввод пути к ключу")](databinding-images/simple05-large.png#lightbox)
+    [![Ввод управляющей точки с точкой «Person Dot» для пути к ключу.](databinding-images/simple05.png "Ввод пути к ключу")](databinding-images/simple05-large.png#lightbox)
 5. Выберите текстовое поле **число управляемых сотрудников** и установите флажок **привязать к** и выберите в раскрывающемся списке пункт **Простой контроллер представления** . Далее введите `self.Person.NumberOfEmployees` **путь к ключу**:
 
-    [![Ввод пути к ключу](databinding-images/simple06.png "Ввод пути к ключу")](databinding-images/simple06-large.png#lightbox)
+    [![Ввод точки Нумберофемплойис в качестве пути к ключу.](databinding-images/simple06.png "Ввод пути к ключу")](databinding-images/simple06-large.png#lightbox)
 6. Если сотрудник не является руководителем, нам нужно скрыть текстовое поле число управляемых сотрудников и надпись.
 7. Выберите элемент **"управляемая метка" число сотрудников** , разверните **скрытые** турндовн и установите флажок " **привязать к** " и выберите в раскрывающемся списке пункт " **Простой контроллер представления** ". Далее введите `self.Person.isManager` **путь к ключу**:
 
-    [![Ввод пути к ключу](databinding-images/simple07.png "Ввод пути к ключу")](databinding-images/simple07-large.png#lightbox)
+    [![Вход в управляющую точку с точкой «Person Dot» для пути к ключу для неруководителей.](databinding-images/simple07.png "Ввод пути к ключу")](databinding-images/simple07-large.png#lightbox)
 8. Выберите `NSNegateBoolean` в раскрывающемся списке **преобразователь значений** :
 
     ![Выбор преобразования «Нснегатебулеан Key»](databinding-images/simple08.png "Выбор преобразования «Нснегатебулеан Key»")
@@ -505,7 +505,7 @@ public override void ViewDidLoad ()
 
 Сначала добавим новый **контроллер представления** в наш файл **Main. Storyboard** в Interface Builder и назовите его класс `TableViewController` :
 
-[![Добавление нового контроллера представления](databinding-images/table01.png "Добавление нового контроллера представления")](databinding-images/table01-large.png#lightbox)
+[![Добавление нового контроллера представления с классом с именем Таблевиевконтроллер.](databinding-images/table01.png "Добавление нового контроллера представления")](databinding-images/table01-large.png#lightbox)
 
 Теперь изменим файл **TableViewController.CS** (который был автоматически добавлен в наш проект) и предоставляем массив ( `NSArray` ) `PersonModel` классов, которым мы будем привязать к данным нашу форму. Добавьте следующий код:
 
@@ -584,7 +584,7 @@ public override void AwakeFromNib ()
     [![Выбор инспектора атрибутов](databinding-images/table04.png "Выбор инспектора атрибутов")](databinding-images/table04-large.png#lightbox)
 3. Введите `PersonModel` для **имени класса**, нажмите кнопку **со знаком «плюс** » и добавьте три ключа. Назовите `Name` их `Occupation` и `isManager` :
 
-    ![Добавление требуемых путей к ключам](databinding-images/table05.png "Добавление требуемых путей к ключам")
+    ![Добавление необходимых путей к ключам к контроллеру объектов.](databinding-images/table05.png "Добавление требуемых путей к ключам")
 4. Это указывает контроллеру массива, что именно управляет массивом и какие свойства он должен предоставлять (через ключи).
 5. Переключитесь в **инспектор привязок** и в разделе **массив содержимого** выберите **Привязка к** и **контроллер представления таблицы**. Введите **путь к ключу модели** `self.personModelArray` :
 
@@ -595,22 +595,22 @@ public override void AwakeFromNib ()
 
 1. Выберите представление таблицы и **инспектора привязки**:
 
-    [![Выбор инспектора привязки](databinding-images/table07.png "Выбор инспектора привязки")](databinding-images/table07-large.png#lightbox)
+    [![Выбор представления таблицы и инспектора привязки.](databinding-images/table07.png "Выбор инспектора привязки")](databinding-images/table07-large.png#lightbox)
 2. В разделе **содержимое таблицы** Турндовн выберите **Привязка к** и **контроллер массива**. Введите `arrangedObjects` для поля **ключа контроллера** :
 
     ![Определение ключа контроллера](databinding-images/table08.png "Определение ключа контроллера")
 3. Выберите **ячейку табличное представление** в столбце **сотрудник** . В **инспекторе привязок** в разделе **значение** турндовн выберите **Привязка к** и **представление ячейки таблицы**. Введите `objectValue.Name` для **пути к ключу модели**:
 
-    [![Задание пути к ключу модели](databinding-images/table09.png "Задание пути к ключу модели")](databinding-images/table09-large.png#lightbox)
+    [![Задание пути к ключу модели для столбца Employee.](databinding-images/table09.png "Задание пути к ключу модели")](databinding-images/table09-large.png#lightbox)
 4. `objectValue` является текущим `PersonModel` в массиве, управляемом контроллером массива.
 5. Выберите **ячейку табличное представление** в столбце « **профессия** ». В **инспекторе привязок** в разделе **значение** турндовн выберите **Привязка к** и **представление ячейки таблицы**. Введите `objectValue.Occupation` для **пути к ключу модели**:
 
-    [![Задание пути к ключу модели](databinding-images/table10.png "Задание пути к ключу модели")](databinding-images/table10-large.png#lightbox)
+    [![Задание пути к ключу модели для столбца «род занятий».](databinding-images/table10.png "Задание пути к ключу модели")](databinding-images/table10-large.png#lightbox)
 6. Сохраните изменения и вернитесь в Visual Studio для Mac для синхронизации с Xcode.
 
 При запуске приложения таблица будет заполнена нашим массивом `PersonModels` :
 
-[![Запуск приложения](databinding-images/table11.png "Запуск приложения")](databinding-images/table11-large.png#lightbox)
+[![Запуск приложения, которое заполняет массив Персонмоделс.](databinding-images/table11.png "Запуск приложения")](databinding-images/table11-large.png#lightbox)
 
 <a name="Outline_View_Data_Binding"></a>
 
@@ -620,7 +620,7 @@ public override void AwakeFromNib ()
 
 Сначала добавим новый **контроллер представления** в наш файл **Main. Storyboard** в Interface Builder и назовите его класс `OutlineViewController` :
 
-[![Добавление нового контроллера представления](databinding-images/outline01.png "Добавление нового контроллера представления")](databinding-images/outline01-large.png#lightbox)
+[![Добавление нового контроллера представления с классом с именем Аутлиневиевконтроллер.](databinding-images/outline01.png "Добавление нового контроллера представления")](databinding-images/outline01-large.png#lightbox)
 
 Теперь изменим файл **OutlineViewController.CS** (который был автоматически добавлен в наш проект) и предоставляем массив ( `NSArray` ) `PersonModel` классов, которым мы будем привязать к данным нашу форму. Добавьте следующий код:
 
@@ -702,7 +702,7 @@ public override void AwakeFromNib ()
     [![Выбор инспектора атрибутов](databinding-images/outline04.png "Выбор инспектора атрибутов")](databinding-images/outline04-large.png#lightbox)
 3. Введите `PersonModel` для **имени класса**, нажмите кнопку **со знаком «плюс** » и добавьте три ключа. Назовите `Name` их `Occupation` и `isManager` :
 
-    ![Добавление требуемых путей к ключам](databinding-images/outline05.png "Добавление требуемых путей к ключам")
+    ![Добавление требуемых путей к ключам для Персонмодел.](databinding-images/outline05.png "Добавление требуемых путей к ключам")
 4. Это указывает контроллеру дерева, что именно управляет массивом, и какие свойства он должен предоставлять (через ключи).
 5. В разделе **контроллер дерева** введите `personModelArray` для **дочерних элементов**, введите `NumberOfEmployees` в поле **число** и введите `isEmployee` в поле **конечный**:
 
@@ -717,22 +717,22 @@ public override void AwakeFromNib ()
 
 1. Выберите режим структуры и в **инспекторе привязок** выберите:
 
-    [![Выбор инспектора привязки](databinding-images/outline07.png "Выбор инспектора привязки")](databinding-images/outline07-large.png#lightbox)
+    [![Выбор режима структуры и инспектора привязки.](databinding-images/outline07.png "Выбор инспектора привязки")](databinding-images/outline07-large.png#lightbox)
 2. Под **содержимым в представлении структуры** Турндовн выберите **Привязка к** и **контроллер дерева**. Введите `arrangedObjects` для поля **ключа контроллера** :
 
     ![Настройка ключа контроллера](databinding-images/outline08.png "Настройка ключа контроллера")
 3. Выберите **ячейку табличное представление** в столбце **сотрудник** . В **инспекторе привязок** в разделе **значение** турндовн выберите **Привязка к** и **представление ячейки таблицы**. Введите `objectValue.Name` для **пути к ключу модели**:
 
-    [![Ввод пути к ключу модели](databinding-images/outline09.png "Ввод пути к ключу модели")](databinding-images/outline09-large.png#lightbox)
+    [![Ввод значения пути к ключу модели objectValue имя точки.](databinding-images/outline09.png "Ввод пути к ключу модели")](databinding-images/outline09-large.png#lightbox)
 4. `objectValue` является текущим `PersonModel` в массиве, управляемом контроллером дерева.
 5. Выберите **ячейку табличное представление** в столбце « **профессия** ». В **инспекторе привязок** в разделе **значение** турндовн выберите **Привязка к** и **представление ячейки таблицы**. Введите `objectValue.Occupation` для **пути к ключу модели**:
 
-    [![Ввод пути к ключу модели](databinding-images/outline10.png "Ввод пути к ключу модели")](databinding-images/outline10-large.png#lightbox)
+    [![Ввод значения пути к ключу модели objectValue точка профессия.](databinding-images/outline10.png "Ввод пути к ключу модели")](databinding-images/outline10-large.png#lightbox)
 6. Сохраните изменения и вернитесь в Visual Studio для Mac для синхронизации с Xcode.
 
 При запуске приложения структура будет заполнена нашим массивом `PersonModels` :
 
-[![Запуск приложения](databinding-images/outline11.png "Запуск приложения")](databinding-images/outline11-large.png#lightbox)
+[![Запуск приложения, которое заполняет наш массив Персонмоделс.](databinding-images/outline11.png "Запуск приложения")](databinding-images/outline11-large.png#lightbox)
 
 ### <a name="collection-view-data-binding"></a>Привязка данных в представлении коллекции
 
@@ -899,7 +899,7 @@ For more information on working with Collection Views, please see our [Collectio
 - [Представления структуры](~/mac/user-interface/outline-view.md)
 - [Представления коллекций](~/mac/user-interface/collection-view.md)
 - [Краткое справочное по программированию для кодирования значений](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/KeyValueCoding/index.html)
-- [Знакомство с руководством по программированию "ключ — значение"](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html)
+- [Общие сведения о Key-Value наблюдении за руководством по программированию](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html)
 - [Введение в разделы по программированию привязок Cocoa](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html)
 - [Введение в Справочник по привязкам Cocoa](https://developer.apple.com/library/content/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html)
 - [нсколлектионвиев](https://developer.apple.com/documentation/appkit/nscollectionview)

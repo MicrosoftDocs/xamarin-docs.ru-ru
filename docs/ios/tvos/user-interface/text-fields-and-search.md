@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/16/2017
-ms.openlocfilehash: ae54f4f4cfb9b2c604be9c55d2a47303fb22485e
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: e5a872fc18ca918b45181646ff4b279e1441f39b
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91435566"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697544"
 ---
 # <a name="working-with-tvos-text-and-search-fields-in-xamarin"></a>Работа с tvOS текста и полями поиска в Xamarin
 
@@ -100,17 +100,17 @@ ms.locfileid: "91435566"
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-1. В **панель решения**дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования.
+1. В **панель решения** дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования.
 1. Перетащите одно или несколько **текстовых полей из поля** int в область конструктора в представление:
 
     [![Текстовое поле](text-fields-and-search-images/text02.png)](text-fields-and-search-images/text02.png#lightbox)
 1. Выберите **текстовые поля** и присвойте каждому уникальному **имени** на вкладке **мини** -приложение **панель свойств**:
 
     [![Вкладка мини-приложения Панель свойств](text-fields-and-search-images/text03.png)](text-fields-and-search-images/text03.png#lightbox)
-1. В разделе **текстовое поле** можно определить такие элементы, как указание **заполнителя** и **значение**по умолчанию:
+1. В разделе **текстовое поле** можно определить такие элементы, как указание **заполнителя** и **значение** по умолчанию:
 
     [![Раздел текстового поля](text-fields-and-search-images/text04.png)](text-fields-and-search-images/text04.png#lightbox)
-1. Прокрутите вниз, чтобы определить такие свойства, как **Проверка орфографии**, **регистр букв** и **тип клавиатуры**по умолчанию:
+1. Прокрутите вниз, чтобы определить такие свойства, как **Проверка орфографии**, **регистр букв** и **тип клавиатуры** по умолчанию:
 
     [![Проверка орфографии, регистр букв и тип клавиатуры по умолчанию](text-fields-and-search-images/text05.png)](text-fields-and-search-images/text05.png#lightbox)
 1. Сохраните изменения в раскадровке.
@@ -123,11 +123,11 @@ ms.locfileid: "91435566"
     [![Текстовое поле](text-fields-and-search-images/text02-vs.png)](text-fields-and-search-images/text02-vs.png#lightbox)
 1. Выберите **текстовые поля** и присвойте каждому из них **уникальное имя** на вкладке **мини** -приложение **обозревателя свойств**:
 
-    [![Вкладка мини-приложения](text-fields-and-search-images/text03-vs.png)](text-fields-and-search-images/text03-vs.png#lightbox)
-1. В разделе **текстовое поле** можно определить такие элементы, как указание **заполнителя** и **значение**по умолчанию:
+    [![Вкладка мини-приложения, на которой можно ввести имя для каждого текстового поля.](text-fields-and-search-images/text03-vs.png)](text-fields-and-search-images/text03-vs.png#lightbox)
+1. В разделе **текстовое поле** можно определить такие элементы, как указание **заполнителя** и **значение** по умолчанию:
 
     [![Раздел текстового поля](text-fields-and-search-images/text04-vs.png)](text-fields-and-search-images/text04-vs.png#lightbox)
-1. Прокрутите вниз, чтобы определить такие свойства, как **Проверка орфографии**, **регистр букв** и **тип клавиатуры**по умолчанию:
+1. Прокрутите вниз, чтобы определить такие свойства, как **Проверка орфографии**, **регистр букв** и **тип клавиатуры** по умолчанию:
 
     [![Проверка орфографии, регистр букв и тип клавиатуры по умолчанию](text-fields-and-search-images/text05-vs.png)](text-fields-and-search-images/text05-vs.png#lightbox)
 1. Сохраните изменения в раскадровке.
@@ -152,17 +152,17 @@ Console.WriteLine ("User ID {0} and Password {1}", UserId.Text, Password.Text);
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-1. В **панель решения**дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования.
+1. В **панель решения** дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования.
 1. Перетащите новый контроллер представления коллекции в раскадровку для представления результатов поиска пользователя:
 
     [![Контроллер представления коллекции](text-fields-and-search-images/search02.png)](text-fields-and-search-images/search02.png#lightbox)
-1. На вкладке **мини** -приложение **панель свойств**используйте `SearchResultsViewController` для **класса** и `SearchResults` для **идентификатора раскадровки**:
+1. На вкладке **мини** -приложение **панель свойств** используйте `SearchResultsViewController` для **класса** и `SearchResults` для **идентификатора раскадровки**:
 
-    [![Вкладка мини-приложения](text-fields-and-search-images/search03.png)](text-fields-and-search-images/search03.png#lightbox)
+    [![Вкладка мини-приложение в Visual Studio для Mac, где можно указать класс и раскадровку I D.](text-fields-and-search-images/search03.png)](text-fields-and-search-images/search03.png#lightbox)
 1. Выберите **прототип ячейки** в области конструктора.
-1. На вкладке **мини** -приложение **обозревателя свойств**используйте `SearchResultCell` для **класса** и `ImageCell` для **идентификатора**:
+1. На вкладке **мини** -приложение **обозревателя свойств** используйте `SearchResultCell` для **класса** и `ImageCell` для **идентификатора**:
 
-    [![Вкладка мини-приложения](text-fields-and-search-images/search04.png)](text-fields-and-search-images/search04.png#lightbox)
+    [![Вкладка мини-приложение в Visual Studio для Mac, где можно указать класс и идентификатор.](text-fields-and-search-images/search04.png)](text-fields-and-search-images/search04.png#lightbox)
 1. Создайте макет для **прототипа ячейки** и предоставьте каждому элементу уникальное **имя** на вкладке **мини** -приложение **обозревателя свойств**:
 
     [![Создание макета прототипа ячейки](text-fields-and-search-images/search05.png)](text-fields-and-search-images/search05.png#lightbox)
@@ -174,13 +174,13 @@ Console.WriteLine ("User ID {0} and Password {1}", UserId.Text, Password.Text);
 1. Перетащите новый контроллер представления коллекции в раскадровку для представления результатов поиска пользователя:
 
     [![Контроллер представления коллекции](text-fields-and-search-images/seach02-vs.png)](text-fields-and-search-images/seach02-vs.png#lightbox)
-1. На вкладке **мини** -приложение **обозревателя свойств**используйте `SearchResultsViewController` для **класса** и `SearchResults` для **идентификатора раскадровки**:
+1. На вкладке **мини** -приложение **обозревателя свойств** используйте `SearchResultsViewController` для **класса** и `SearchResults` для **идентификатора раскадровки**:
 
-    [![Вкладка мини-приложения](text-fields-and-search-images/search03-vs.png)](text-fields-and-search-images/search03-vs.png#lightbox)
+    [![Вкладка мини-приложения, на которой можно указать класс и раскадровку I D.](text-fields-and-search-images/search03-vs.png)](text-fields-and-search-images/search03-vs.png#lightbox)
 1. Выберите **прототип ячейки** в области конструктора.
-1. На вкладке **мини** -приложение **обозревателя свойств**используйте `SearchResultCell` для **класса** и `ImageCell` для **идентификатора**:
+1. На вкладке **мини** -приложение **обозревателя свойств** используйте `SearchResultCell` для **класса** и `ImageCell` для **идентификатора**:
 
-    [![Вкладка мини-приложения](text-fields-and-search-images/search04-vs.png)](text-fields-and-search-images/search04-vs.png#lightbox)
+    [![Вкладка мини-приложения, на которой можно указать класс и идентификатор.](text-fields-and-search-images/search04-vs.png)](text-fields-and-search-images/search04-vs.png#lightbox)
 1. Создайте макет для **прототипа ячейки** и предоставьте каждому элементу уникальное **имя** на вкладке **мини** -приложение **обозревателя свойств**:
 
     [![Создание макета прототипа ячейки](text-fields-and-search-images/search05-vs.png)](text-fields-and-search-images/search05-vs.png#lightbox)
@@ -194,13 +194,13 @@ Console.WriteLine ("User ID {0} and Password {1}", UserId.Text, Password.Text);
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта и выберите **Добавить**  >  **новый файл...**  >  **Общие**  >  сведения **Пустой класс** и укажите **имя**:
+Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений** щелкните правой кнопкой мыши имя проекта и выберите **Добавить**  >  **новый файл...**  >  **Общие**  >  сведения **Пустой класс** и укажите **имя**:
 
 [![Выберите пустой класс и укажите имя](text-fields-and-search-images/search06.png)](text-fields-and-search-images/search06.png#lightbox)
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта и выберите команду **Добавить**  >  **новый элемент...**  >  **Apple**  >  **Прочие**  >  **И укажите** **имя**:
+Далее необходимо указать класс, который будет использоваться в качестве модели данных для результатов, которые будет искать пользователь. В **Обозреватель решений** щелкните правой кнопкой мыши имя проекта и выберите команду **Добавить**  >  **новый элемент...**  >  **Apple**  >  **Прочие**  >  **И укажите** **имя**:
 
 [![Выбор класса и указание имени](text-fields-and-search-images/search06-vs.png)](text-fields-and-search-images/search06-vs.png#lightbox)
 

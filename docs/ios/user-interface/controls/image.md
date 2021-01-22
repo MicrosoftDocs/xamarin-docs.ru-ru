@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/13/2018
-ms.openlocfilehash: 900a4bf3407b4a3d37f6102ff4b10292edf4bd25
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 2350c068b0a719e8d633c0f96712aec40e7865aa
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91434051"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697479"
 ---
 # <a name="displaying-images-with-xamarinios"></a>Отображение изображений с помощью Xamarin. iOS
 
@@ -59,7 +59,7 @@ Visual Studio для Mac, как правило, автоматически вы
 
 В конструкторе iOS используйте **представление изображений** для отображения изображения или анимированного ряда изображений. Ниже показан значок **представления изображений** из панели элементов.
 
- [![Имажевиев на панели элементов](image-images/image35a.png)](image-images/image35.png#lightbox)
+ [![Значок Имажевиев в области элементов.](image-images/image35a.png)](image-images/image35.png#lightbox)
 
 Перетащите **представление изображения** с **панели элементов** на контроллер представления. Затем в разделе Image **View > Image** (изображение) в раскрывающемся списке будет представлен список всех доступных файлов изображений в проекте. Выберите любой из них, чтобы добавить его в представление изображений.
 

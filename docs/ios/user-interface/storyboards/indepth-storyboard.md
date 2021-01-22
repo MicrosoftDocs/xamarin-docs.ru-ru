@@ -6,12 +6,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: e6bbc9d7d404136984e3d1ec93186dc85691c751
-ms.sourcegitcommit: d1f0e0a9100548cfe0960ed2225b979cc1d7c28f
+ms.openlocfilehash: b9e0f5d01d7843c25af3af3cddefbe0740f018a3
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96439745"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697518"
 ---
 # <a name="storyboards-in-xamarinios"></a>Раскадровки в Xamarin. iOS
 
@@ -57,7 +57,7 @@ ms.locfileid: "96439745"
 [![Раскрывающийся список действия перехода с классами size](images/16new.png)](images/16new.png#lightbox)
 
 > [!IMPORTANT]
-> Если вы используете VMWare для виртуальной машины Windows, при нажатии _кнопки мыши по умолчанию отображается_ нажатие клавиши CTRL. Чтобы создать перехода, измените параметры клавиатуры с помощью **параметров**  >  **Клавиатура & мышь**  >  **Mouse Shortcuts** и переназначьте **вторичную кнопку** , как показано ниже:
+> Если вы используете VMWare для виртуальной машины Windows, при нажатии _кнопки мыши по умолчанию отображается_ нажатие клавиши CTRL. Чтобы создать перехода, измените параметры клавиатуры с помощью **параметров**  >  **Клавиатура & мышь**  >   и переназначьте **вторичную кнопку** , как показано ниже:
 >
 > [![Параметры настройки клавиатуры и мыши](images/image22.png)](images/image22.png#lightbox)
 >
@@ -205,11 +205,11 @@ if (callHistoryController != null) {
 
 6. Это приложение будет переходить к другому представлению, поэтому добавьте еще одно представление в раскадровку, как и раньше. Вызовите его `PinkViewController` и задайте эти значения так же, как и в `MainViewController` .
 
-    [![Добавление дополнительного контроллера представления](images/add-additional-view-controller.png)](images/add-additional-view-controller.png#lightbox)
+    [![На снимке экрана показана раскадровка с тремя представлениями.](images/add-additional-view-controller.png)](images/add-additional-view-controller.png#lightbox)
 
 7. Так как контроллер представления будет иметь розовый фон, задайте это свойство на панели Атрибуты, используя раскрывающийся список рядом с `Background` .
 
-    [![Добавление дополнительного контроллера представления](images/set-pink-background.png)](images/set-pink-background.png#lightbox)
+    [![На снимке экрана показана раскадровка из предыдущего шага с самым крайним экраном, измененным на розовый фон.](images/set-pink-background.png)](images/set-pink-background.png#lightbox)
 
 8. Так как мы хотим `MainViewController` , чтобы объект мог переходить к `PinkViewController` , для первого потребуется кнопка для взаимодействия с. Используйте библиотеку, чтобы добавить кнопку в `MainViewController` .
 
@@ -357,7 +357,7 @@ public partial class MainViewController : UIViewController
 
 См. условное решение Storyboard. Conditional в [примере раскадровки вручную](/samples/xamarin/ios-samples/manualstoryboard) для рабочего примера.
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 В этой статье описывается концепция раскадровок и их преимущества при разработке приложений iOS. В нем обсуждаются сцены, контроллеры представлений, представления и иерархии представлений, а также принципы связывания сцен с различными типами переходов.  Кроме того, в нем рассматривается ручное создание экземпляров контроллеров представлений из раскадровки и создание условного переходов.
 
