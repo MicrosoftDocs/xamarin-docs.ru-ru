@@ -6,18 +6,18 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
-  ms.date: 02/08/2019
+  ms.date: 01/19/2021
   author: davidbritch
   ms.author: dabritch
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: 246895c2488dbdbc8613d87790078795f0662d5a
-  ms.sourcegitcommit: 57bc714633364aeb34aba9803e88802bebf321ba
+  ms.openlocfilehash: 51895d9058e1b2cd30d8f7de8cb570a7d064a24b
+  ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/28/2020
-  ms.locfileid: "84139611"
+  ms.lasthandoff: 01/21/2021
+  ms.locfileid: "98635011"
 items:
 - durationInMinutes: 1
   content: >

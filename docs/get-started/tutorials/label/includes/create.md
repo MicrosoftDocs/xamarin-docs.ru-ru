@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 1bcd808221ee319fa2818563418d2362b146e354
-ms.sourcegitcommit: 89b3e383a37db5b940f0c63bbfe9cb806dc7d5d1
+ms.openlocfilehash: 2446b4410b7ded6aa070a19ae0ac742bb519b331
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389922"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98690010"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
 Для работы с этим руководством у вас должен быть последний выпуск Visual Studio 2019 с установленной рабочей нагрузкой **Разработка мобильных приложений на .NET**. Кроме того, вам потребуется компьютер Mac для сборки учебного приложения на iOS. Сведения об установке платформы Xamarin см. в статье [Установка Xamarin](~/get-started/installation/index.md). Сведения о подключении Visual Studio 2019 к узлу сборки Mac см. в статье [Связывание с Mac при разработке для Xamarin.iOS](~/ios/get-started/installation/windows/connecting-to-mac/index.md).
 
-1. Запустите Visual Studio и создайте пустое приложение Xamarin.Forms **LabelTutorial**. Убедитесь, что в качестве механизма общего кода в приложении используется .NET Standard.
+1. Запустите Visual Studio и создайте пустое приложение Xamarin.Forms **LabelTutorial**.
 
     > [!IMPORTANT]
     > Фрагменты кода на C# и XAML из этого руководства предполагают, что решение называется **LabelTutorial**. Выбор другого имени приведет к ошибкам сборки при копировании кода из этого руководства в решение.
@@ -41,12 +41,12 @@ ms.locfileid: "81389922"
 
 Для работы с этим руководством вам нужно установить Visual Studio для Mac (последний выпуск) с поддержкой платформ Android и iOS. Кроме того, вам потребуется Xcode (последний выпуск). Дополнительные сведения об установке платформы Xamarin см. в статье [Установка Xamarin](~/get-started/installation/index.md).
 
-1. Запустите Visual Studio для Mac и создайте пустое приложение Xamarin.Forms **LabelTutorial**. Убедитесь, что в качестве механизма общего кода в приложении используется .NET Standard.
+1. Запустите Visual Studio для Mac и создайте пустое приложение Xamarin.Forms **LabelTutorial**.
 
     > [!IMPORTANT]
     > Фрагменты кода на C# и XAML из этого руководства предполагают, что решение называется **LabelTutorial**. Выбор другого имени приведет к ошибкам сборки при копировании кода из этого руководства в решение.
 
-    Дополнительные сведения о создаваемой библиотеке .NET Standard см. в разделе [Структура приложения Xamarin.Forms](~/get-started/first-app/index.md) статьи [Краткое руководство по Xamarin.Forms: глубокое погружение в обработку](~/get-started/first-app/index.md).
+    Дополнительные сведения о создаваемой библиотеке .NET Standard см. в разделе [Структура приложения Xamarin.Forms](~/get-started/first-app/index.md) статьи [Краткое руководство по Xamarin.Forms глубокое погружение в обработку](~/get-started/first-app/index.md).
 
 1. На **Панели решения** дважды щелкните файл **MainPage.xaml** в проекте **LabelTutorial**, чтобы открыть его. В **MainPage.xaml** удалите весь код шаблона и замените его приведенным ниже кодом:
 

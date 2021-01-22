@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6316d1013a608a4e03c1cad73adaba96e1e37dc7
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 5fc2c89d3f536e25249f6c9036ad570a07630ccc
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91451444"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98690166"
 ---
 Поздравляем с завершением этого руководства, в котором вы научились:
 
