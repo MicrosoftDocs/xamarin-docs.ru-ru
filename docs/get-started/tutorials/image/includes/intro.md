@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 85404d5aceb525a77c98bf2d86ebc4b464f5796f
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 48905340b579381cd1883f18a57ed9e40ca93261
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "71107328"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98689834"
 ---
 Прежде чем работать с этим учебником, вы должны выполнить:
 
@@ -22,3 +22,5 @@ ms.locfileid: "71107328"
 С помощью Visual Studio 2019 или Visual Studio для Mac вы создадите простое приложение, демонстрирующее, как отображать изображение и настраивать его внешний вид. На следующих снимках экрана показано готовое приложение.
 
 [![Снимок экрана: представление изображения с локальным изображением в iOS и Android](../images/local-file.png "Представление изображения с локальным изображением")](../images/local-file-large.png#lightbox "Представление изображения с локальным изображением")
+
+Вы также будете использовать [горячую перезагрузку XAML для Xamarin.Forms](~/xamarin-forms/xaml/hot-reload.md), чтобы просматривать изменения пользовательского интерфейса без перестроения приложения.

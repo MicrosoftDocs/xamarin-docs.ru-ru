@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3d20c4f0149c632863eace633abb759eca49a786
-ms.sourcegitcommit: 4d260b655cb52b990dda79c239a9721f2e964625
+ms.openlocfilehash: 4517415e2431193e56728e3bb1a24e3c7d119ca4
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98570787"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98634969"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -40,11 +40,11 @@ ms.locfileid: "98570787"
 
     Дополнительные сведения о создаваемой библиотеке .NET Standard см. в разделе [Структура приложения Xamarin.Forms](~/get-started/first-app/index.md) статьи [Краткое руководство по Xamarin.Forms глубокое погружение в обработку](~/get-started/first-app/index.md).
 
-1. На **панели решений** выберите проект **WebServiceTutorial**, щелкните правой кнопкой мыши и выберите **Добавить > Добавить пакеты NuGet...**:
+1. На **панели решения** выберите проект **WebServiceTutorial**, щелкните правой кнопкой мыши и выберите **Управление пакетами NuGet**:
 
     ![Снимок экрана: выбранный пункт меню "Добавить пакеты NuGet"](../images/vsmac/add-nuget-packages.png "Элемент меню "Добавление пакетов NuGet"")
 
-1. В окне **Добавление пакетов** выполните поиск пакета NuGet **Newtonsoft.Json**, выберите его и нажмите кнопку **Добавить пакет**, чтобы добавить его в проект:
+1. В окне **Управление пакетами NuGet** выполните поиск пакета NuGet **Newtonsoft.Json**, выберите его и нажмите кнопку **Добавить пакет**, чтобы добавить его в проект:
 
     ![Снимок экрана: пакет NuGet Newtonsoft.Json в диспетчере пакетов NuGet](../images/vsmac/add-package.png "Пакет NuGet Newtonsoft.Json")
 

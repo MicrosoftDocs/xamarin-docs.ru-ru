@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bd9d4bbd04f504400bd14bb3a18bf4c2b16a5849
-ms.sourcegitcommit: b75c369adb8e02a429b6c0fed8ba4a855099bf01
+ms.openlocfilehash: e2b6e6a6902fcf67e92f58da15771ce0ed8a6075
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98558939"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98689702"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -48,6 +48,8 @@ ms.locfileid: "98558939"
 
     [![Снимок экрана: представление CollectionView в iOS и Android](../images/create-collectionview.png "Представление CollectionView, отображающее данные")](../images/create-collectionview-large.png#lightbox "Представление CollectionView, отображающее данные")
 
+    В Visual Studio остановите приложение.
+
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Для работы с этим руководством вам нужно установить Visual Studio для Mac (последний выпуск) с поддержкой платформ Android и iOS. Кроме того, вам потребуется Xcode (последний выпуск). Дополнительные сведения об установке платформы Xamarin см. в статье [Установка Xamarin](~/get-started/installation/index.md).
@@ -89,3 +91,5 @@ ms.locfileid: "98558939"
 1. На панели инструментов Visual Studio для Mac нажмите кнопку **Пуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android.
 
     [![Снимок экрана: представление CollectionView в iOS и Android](../images/create-collectionview.png "Представление CollectionView, отображающее данные")](../images/create-collectionview-large.png#lightbox "Представление CollectionView, отображающее данные")
+
+    В Visual Studio для Mac остановите приложение.

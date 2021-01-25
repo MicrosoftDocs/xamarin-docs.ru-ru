@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 590acbe98b2d67a10bed0fc66de0350da888d319
-ms.sourcegitcommit: b75c369adb8e02a429b6c0fed8ba4a855099bf01
+ms.openlocfilehash: ff37327e1fd942382c3eb81b8c6bcc0041347b0e
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98558951"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98690148"
 ---
 Объект [`CollectionView`](xref:Xamarin.Forms.CollectionView) заполняется данными с помощью свойства [`ItemsSource`](xref:Xamarin.Forms.ItemsView`1.ItemsSource), которое имеет тип `IEnumerable`. Предыдущий шаг заполняет `CollectionView` в XAML массивом строк. Тем не менее обычно `CollectionView` будет заполняться данными из коллекции, определенной в коде, который реализует `IEnumerable`.
 
@@ -191,6 +191,8 @@ ms.locfileid: "98558951"
 
     [`CollectionView`](xref:Xamarin.Forms.CollectionView) отображает свойство `Name` для каждого `Monkey` в коллекции `Monkeys`. Это обусловлено тем, что по умолчанию `CollectionView` вызывает метод `ToString` при отображении объектов из коллекции (который был переопределен в классе `Monkey` для возвращения значения свойства `Name`).
 
+    В Visual Studio остановите приложение.
+
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 1. На **Панели решения** в проекте **CollectionViewTutorial** добавьте класс с именем `Monkey`, содержащий следующий код:
@@ -371,3 +373,5 @@ ms.locfileid: "98558951"
     [![Снимок экрана: представление CollectionView, заполненное данными из коллекции, в iOS и Android](../images/populate-data.png "Представление CollectionView, отображающее данные из коллекции")](../images/populate-data-large.png#lightbox "Представление CollectionView, отображающее данные из коллекции")
 
     [`CollectionView`](xref:Xamarin.Forms.CollectionView) отображает свойство `Name` для каждого `Monkey` в коллекции `Monkeys`. Это обусловлено тем, что по умолчанию `CollectionView` вызывает метод `ToString` при отображении объектов из коллекции (который был переопределен в классе `Monkey` для возвращения значения свойства `Name`).
+
+    В Visual Studio для Mac остановите приложение.

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5d9d5e4eb757d6afd1c13cb4851edd23feaa6e65
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: cd1e8aae7755953d58439211cf485dbb99ee76ea
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "77135105"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635012"
 ---
 Подкласс [`Application`](xref:Xamarin.Forms.Application) имеет статический словарь [`Properties`](xref:Xamarin.Forms.Application.Properties), который можно использовать для хранения данных в изменениях состояния жизненного цикла. Словарь использует ключ `string` и хранит значение `object`. Словарь сохраняется на устройстве автоматически и будет заполнен повторно при перезапуске приложения.
 
@@ -111,9 +111,11 @@ ms.locfileid: "77135105"
 
     Введите любой текст в [`Entry`](xref:Xamarin.Forms.Entry) и нажмите клавишу возврата. Затем выполните приложение в фоновом режиме, нажав кнопку "Домашняя страница", чтобы вызвать метод `OnSleep`.
 
-    Наконец, запустите приложение еще раз из Visual Studio и таким образом восстановится ранее введенный текст в [`Entry`](xref:Xamarin.Forms.Entry).
+    В Visual Studio остановите приложение и запустите его еще раз, после чего восстановится ранее введенный текст в [`Entry`](xref:Xamarin.Forms.Entry):
 
     [![Снимок экрана: запись, свойство текста которой сохраняется при изменении состояния жизненного цикла, в iOS и Android](../images/persist-data.png "Запись, свойство текста которой сохраняется при изменении состояния жизненного цикла")](../images/persist-data-large.png#lightbox "Запись, свойство текста которой сохраняется при изменении состояния жизненного цикла")
+
+    В Visual Studio остановите приложение.
 
     Дополнительные сведения о сохранении данных в словарь Properties см. в разделе [Словарь Properties](~/xamarin-forms/app-fundamentals/application-class.md#properties-dictionary) в руководстве [Класс App Xamarin.Forms](~/xamarin-forms/app-fundamentals/application-class.md).
 
@@ -211,12 +213,14 @@ ms.locfileid: "77135105"
 
     Когда текст в [`Entry`](xref:Xamarin.Forms.Entry) завершен с помощью ключа возврата, в свойстве `App.DisplayText`выполняется метод `OnEntryCompleted` и хранится текст `Entry`.
 
-1. Чтобы запустить приложения в выбранном симуляторе iOS или эмуляторе Android, нажмите кнопку **Пуск** (треугольная кнопка, похожая на кнопку воспроизведения) на панели инструментов Visual Studio для Mac.
+1. На панели инструментов Visual Studio для Mac нажмите клавишу **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android.
 
     Введите любой текст в [`Entry`](xref:Xamarin.Forms.Entry) и нажмите клавишу возврата. Затем выполните приложение в фоновом режиме, нажав кнопку "Домашняя страница", чтобы вызвать метод `OnSleep`.
 
-    Наконец, запустите приложение еще раз из Visual Studio для Mac и таким образом восстановится ранее введенный текст в [`Entry`](xref:Xamarin.Forms.Entry).
+    В Visual Studio для Mac остановите приложение и запустите его еще раз, после чего восстановится ранее введенный текст в [`Entry`](xref:Xamarin.Forms.Entry):
 
     [![Снимок экрана: запись, свойство текста которой сохраняется при изменении состояния жизненного цикла, в iOS и Android](../images/persist-data.png "Запись, свойство текста которой сохраняется при изменении состояния жизненного цикла")](../images/persist-data-large.png#lightbox "Запись, свойство текста которой сохраняется при изменении состояния жизненного цикла")
+
+    В Visual Studio для Mac остановите приложение.
 
     Дополнительные сведения о сохранении данных в словарь Properties см. в разделе [Словарь Properties](~/xamarin-forms/app-fundamentals/application-class.md#properties-dictionary) в руководстве [Класс App Xamarin.Forms](~/xamarin-forms/app-fundamentals/application-class.md).

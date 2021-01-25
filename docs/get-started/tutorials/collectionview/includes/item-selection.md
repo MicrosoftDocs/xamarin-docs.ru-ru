@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 41c1c8ae97c62a3eb2a73681b215e7687d0e473c
-ms.sourcegitcommit: b75c369adb8e02a429b6c0fed8ba4a855099bf01
+ms.openlocfilehash: 456bc5fc0c30563c5950f4cacf3e3e7bdb177134
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98558948"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98689901"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -34,6 +34,8 @@ ms.locfileid: "98558948"
     [![Снимок экрана представления CollectionView, которое реагирует на выбор элементов, в iOS и Android](../images/item-selection.png "Выбор элементов для представления CollectionView")](../images/item-selection-large.png#lightbox "Выбор элементов для представления CollectionView")
 
     Установите точку останова в обработчике событий `OnSelectionChanged` и выберите элемент в [`CollectionView`](xref:Xamarin.Forms.CollectionView). Проверьте значение переменной `selectedItem`, чтобы убедиться, что оно содержит данные для выбранного элемента.
+
+    В Visual Studio остановите приложение.
 
     Дополнительные сведения о выборе элементов см. в статье [Выбор CollectionView в Xamarin.Forms](~/xamarin-forms/user-interface/collectionview/selection.md).
 
@@ -65,5 +67,7 @@ ms.locfileid: "98558948"
     [![Снимок экрана представления CollectionView, которое реагирует на выбор элементов, в iOS и Android](../images/item-selection.png "Выбор элементов для представления CollectionView")](../images/item-selection-large.png#lightbox "Выбор элементов для представления CollectionView")
 
     Установите точку останова в обработчике событий `OnSelectionChanged` и выберите элемент в [`CollectionView`](xref:Xamarin.Forms.CollectionView). Проверьте значение переменной `selectedItem`, чтобы убедиться, что оно содержит данные для выбранного элемента.
+
+    В Visual Studio для Mac остановите приложение.
 
     Дополнительные сведения о выборе элементов см. в статье [Выбор CollectionView в Xamarin.Forms](~/xamarin-forms/user-interface/collectionview/selection.md).

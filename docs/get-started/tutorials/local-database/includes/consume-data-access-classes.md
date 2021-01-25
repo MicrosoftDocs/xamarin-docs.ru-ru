@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9e78d92bdd2d6b0b398ef30ba5f30f71ef64cfd3
-ms.sourcegitcommit: b75c369adb8e02a429b6c0fed8ba4a855099bf01
+ms.openlocfilehash: 6e546d85c87962b022f72c8c16cb0ece14e9bde6
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98557152"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98689970"
 ---
 В этом упражнении будет создан пользовательский интерфейс, который используется для работы с ранее созданными классами доступа к данным.
 
@@ -81,6 +81,8 @@ ms.locfileid: "98557152"
 
     [![Снимок экрана: сохраняемость данных локальной базы данных SQLite.NET в iOS и Android](../images/consume-data-access-classes.png "Сохраняемость данных локальной базы данных")](../images/consume-data-access-classes-large.png#lightbox "Сохраняемость данных локальной базы данных")
 
+    В Visual Studio остановите приложение.
+
     Дополнительные сведения о локальных базах данных в Xamarin.Forms см. в статье [Локальные базы данных Xamarin.Forms (руководство)](~/xamarin-forms/data-cloud/data/databases.md)
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/vsmac)
@@ -155,5 +157,7 @@ ms.locfileid: "98557152"
     Введите несколько элементов данных нажав [`Button`](xref:Xamarin.Forms.Button) для каждого из них. Это действие позволит сохранить данные в базу данных и повторно заполнить [`CollectionView`](xref:Xamarin.Forms.CollectionView) всеми данными базы данных.
 
     [![Снимок экрана: сохраняемость данных локальной базы данных SQLite.NET в iOS и Android](../images/consume-data-access-classes.png "Сохраняемость данных локальной базы данных")](../images/consume-data-access-classes-large.png#lightbox "Сохраняемость данных локальной базы данных")
+
+    В Visual Studio для Mac остановите приложение.
 
     Дополнительные сведения о локальных базах данных в Xamarin.Forms см. в статье [Локальные базы данных Xamarin.Forms (руководство)](~/xamarin-forms/data-cloud/data/databases.md)

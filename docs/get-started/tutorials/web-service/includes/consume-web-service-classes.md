@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bf46d8ab4ca124bc36dd971513a78147e71a0039
-ms.sourcegitcommit: 4d260b655cb52b990dda79c239a9721f2e964625
+ms.openlocfilehash: a642e34c5f49e63503b34c44f536f0428993335b
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98570865"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98634968"
 ---
 В этом упражнении вы создадите пользовательский интерфейс для класса `RestService`, который получает данные репозитория .NET от веб-API GitHub. Извлеченные данные будут отображаться [`CollectionView`](xref:Xamarin.Forms.CollectionView).
 
@@ -80,6 +80,8 @@ ms.locfileid: "98570865"
 
     [![Снимок экрана репозиториев .NET GitHub в iOS и Android](../images/consume-web-service.png)](../images/consume-web-service-large.png#lightbox)
 
+    В Visual Studio остановите приложение.
+
     Дополнительные сведения об использовании веб-служб на базе REST в Xamarin.Forms см. в разделе [Использование веб-службы RESTful (руководство)](~/xamarin-forms/data-cloud/web-services/rest.md).
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/vsmac)
@@ -153,5 +155,7 @@ ms.locfileid: "98570865"
 1. На панели инструментов Visual Studio для Mac нажмите клавишу **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android. Нажмите [`Button`](xref:Xamarin.Forms.Button), чтобы получить данные репозитория .NET из GitHub:
 
     [![Снимок экрана репозиториев .NET GitHub в iOS и Android](../images/consume-web-service.png)](../images/consume-web-service-large.png#lightbox)
+
+    В Visual Studio для Mac остановите приложение.
 
     Дополнительные сведения об использовании веб-служб на базе REST в Xamarin.Forms см. в разделе [Использование веб-службы RESTful (руководство)](~/xamarin-forms/data-cloud/web-services/rest.md).

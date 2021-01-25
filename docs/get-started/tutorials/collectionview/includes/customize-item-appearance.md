@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 4464b5cc4220072de3d55d76f568dab938d3d805
-ms.sourcegitcommit: b75c369adb8e02a429b6c0fed8ba4a855099bf01
+ms.openlocfilehash: 6118d4ee8d2fa56a3b14d3d280db4991a36874fc
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98558942"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98689746"
 ---
 Ранее мы заполнили [`CollectionView`](xref:Xamarin.Forms.CollectionView) данными с помощью привязки данных. Однако несмотря на привязку данных к коллекции, где каждый объект в коллекции определял несколько элементов данных, только один элемент данных отображался для каждого объекта (свойство `Name` объекта `Monkey`).
 
@@ -49,6 +49,8 @@ ms.locfileid: "98558942"
 
     [![Снимок экрана: представление CollectionView, элементы которого воспроизводятся по шаблону с помощью шаблона данных](../images/customize-item-appearance.png "Представление CollectionView, отображающее шаблонные данные")](../images/customize-item-appearance-large.png#lightbox "Представление CollectionView, отображающее шаблонные данные")
 
+    В Visual Studio остановите приложение.
+
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 1. В **MainPage.xaml** измените объявление [`CollectionView`](xref:Xamarin.Forms.CollectionView), чтобы настроить внешний вид каждого элемента данных:
@@ -87,3 +89,5 @@ ms.locfileid: "98558942"
 1. На панели инструментов Visual Studio для Mac нажмите кнопку **Пуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android.
 
     [![Снимок экрана: представление CollectionView, элементы которого воспроизводятся по шаблону с помощью шаблона данных](../images/customize-item-appearance.png "Представление CollectionView, отображающее шаблонные данные")](../images/customize-item-appearance-large.png#lightbox "Представление CollectionView, отображающее шаблонные данные")
+
+    В Visual Studio для Mac остановите приложение.

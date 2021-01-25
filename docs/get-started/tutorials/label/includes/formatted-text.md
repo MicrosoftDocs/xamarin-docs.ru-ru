@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 841dac9486097e27923ccfe582803b4ec50371cf
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: 4352ff38e785a0a222cf8d2d64511ed14b3ae192
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "60896722"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98689718"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -30,9 +30,11 @@ ms.locfileid: "60896722"
     > [!NOTE]
     > Свойство [`FormattedText`](xref:Xamarin.Forms.Label.FormattedText) имеет тип [`FormattedString`](xref:Xamarin.Forms.FormattedString), который состоит из одного или нескольких экземпляров [`Span`](xref:Xamarin.Forms.Span).
 
-1. На панели инструментов Visual Studio нажмите кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном удаленном симуляторе iOS или эмуляторе Android. Обратите внимание, что внешний вид [`Label`](xref:Xamarin.Forms.Label) изменился:
+1. Если приложение по-прежнему работает, сохраните изменения в файле, после чего пользовательский интерфейс приложения в симуляторе или эмуляторе будет автоматически обновлен. В противном случае нажмите на панели инструментов Visual Studio кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном удаленном симуляторе iOS или эмуляторе Android. Обратите внимание, что внешний вид [`Label`](xref:Xamarin.Forms.Label) изменился:
 
     [![Снимок экрана: метка, отображающая форматированный текст, в iOS и Android](../images/label-formatted-text.png "Метка с форматированным текстом")](../images/label-formatted-text-large.png#lightbox "Метка с форматированным текстом")
+
+    В Visual Studio остановите приложение.
 
     Дополнительные сведения о внешнем виде параметра [`Span`](xref:Xamarin.Forms.Span) см. в разделе [Форматированный текст](~/xamarin-forms/user-interface/text/label.md#formatted-text) в руководстве по [меткам в Xamarin.Forms](~/xamarin-forms/user-interface/text/label.md).
 
@@ -60,8 +62,10 @@ ms.locfileid: "60896722"
     > [!NOTE]
     > Свойство [`FormattedText`](xref:Xamarin.Forms.Label.FormattedText) имеет тип [`FormattedString`](xref:Xamarin.Forms.FormattedString), который состоит из одного или нескольких экземпляров [`Span`](xref:Xamarin.Forms.Span).
 
-1. На панели инструментов Visual Studio для Mac нажмите клавишу **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android. Обратите внимание, что внешний вид [`Label`](xref:Xamarin.Forms.Label) изменился:
+1. Если приложение по-прежнему работает, сохраните изменения в файле, после чего пользовательский интерфейс приложения в симуляторе или эмуляторе будет автоматически обновлен. В противном случае нажмите на панели инструментов Visual Studio для Mac кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном симуляторе iOS или эмуляторе Android. Обратите внимание, что внешний вид [`Label`](xref:Xamarin.Forms.Label) изменился:
 
     [![Снимок экрана: метка, отображающая форматированный текст, в iOS и Android](../images/label-formatted-text.png "Метка с форматированным текстом")](../images/label-formatted-text-large.png#lightbox "Метка с форматированным текстом")
+
+    В Visual Studio для Mac остановите приложение.
 
     Дополнительные сведения о внешнем виде параметра [`Span`](xref:Xamarin.Forms.Span) см. в разделе [Форматированный текст](~/xamarin-forms/user-interface/text/label.md#formatted-text) в руководстве по [меткам в Xamarin.Forms](~/xamarin-forms/user-interface/text/label.md).

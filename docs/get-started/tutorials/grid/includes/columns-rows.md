@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e1705e9311d4875a5b866ac5acb7d20aa107a2bb
-ms.sourcegitcommit: bc0c1740aa0708459729c0e671ab3ff7de3e2eee
+ms.openlocfilehash: 624d7f2866767bbb748988a3c486718d7691faf6
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83435417"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98634910"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -44,7 +44,7 @@ ms.locfileid: "83435417"
     > [!NOTE]
     > Расстояние между столбцами и строками в [`Grid`](xref:Xamarin.Forms.Grid) можно задать с помощью свойств [`ColumnSpacing`](xref:Xamarin.Forms.Grid.ColumnSpacing) и [`RowSpacing`](xref:Xamarin.Forms.Grid.RowSpacing). Дополнительные сведения см. в разделе [Интервалы](~/xamarin-forms/user-interface/layouts/grid.md#space-between-rows-and-columns) руководства [Сетка Xamarin.Forms](~/xamarin-forms/user-interface/layouts/grid.md).
 
-1. На панели инструментов Visual Studio нажмите кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS удаленной работы или эмуляторе Android:
+1. Если приложение по-прежнему работает, сохраните изменения в файле, после чего пользовательский интерфейс приложения в симуляторе или эмуляторе будет автоматически обновлен. В противном случае нажмите на панели инструментов Visual Studio кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном удаленном симуляторе iOS или эмуляторе Android:
 
     [![Снимок экрана: сетка с содержимым, размещенным в столбцах и строках, в iOS и Android](../images/columns-rows.png "Сетка с содержимым в столбцах и строках")](../images/columns-rows-large.png#lightbox "Сетка с содержимым в столбцах и строках")
 
@@ -86,6 +86,6 @@ ms.locfileid: "83435417"
     > [!NOTE]
     > Расстояние между столбцами и строками в [`Grid`](xref:Xamarin.Forms.Grid) можно задать с помощью свойств [`ColumnSpacing`](xref:Xamarin.Forms.Grid.ColumnSpacing) и [`RowSpacing`](xref:Xamarin.Forms.Grid.RowSpacing). Дополнительные сведения см. в разделе [Интервалы](~/xamarin-forms/user-interface/layouts/grid.md#space-between-rows-and-columns) руководства [Сетка Xamarin.Forms](~/xamarin-forms/user-interface/layouts/grid.md).
 
-1. На панели инструментов Visual Studio для Mac нажмите кнопку **Пуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android.
+1. Если приложение по-прежнему работает, сохраните изменения в файле, после чего пользовательский интерфейс приложения в симуляторе или эмуляторе будет автоматически обновлен. В противном случае нажмите на панели инструментов Visual Studio для Mac кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном симуляторе iOS или эмуляторе Android:
 
     [![Снимок экрана: сетка с содержимым, размещенным в столбцах и строках, в iOS и Android](../images/columns-rows.png "Сетка с содержимым в столбцах и строках")](../images/columns-rows-large.png#lightbox "Сетка с содержимым в столбцах и строках")

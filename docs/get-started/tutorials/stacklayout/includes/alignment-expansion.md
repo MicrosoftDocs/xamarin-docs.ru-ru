@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 97e52d593e2b59d127da324d8ad74ad7b2096cdd
-ms.sourcegitcommit: 83cf2a4d99546751c6394510a463a2b2a8bf75b8
+ms.openlocfilehash: f9bacad9732a47a143aadb3efa9096b51a22f97a
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83343423"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98634803"
 ---
 Размер и положение дочерних представлений в [`StackLayout`](xref:Xamarin.Forms.StackLayout) зависят от значений свойств [`HeightRequest`](xref:Xamarin.Forms.VisualElement.HeightRequest) и [`WidthRequest`](xref:Xamarin.Forms.VisualElement.WidthRequest) дочерних представлений и значений свойств [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) и [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions).
 
@@ -51,11 +51,11 @@ ms.locfileid: "83343423"
     > [!NOTE]
     > Значение по умолчанию свойств представления [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) и [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) — [`Fill`](xref:Xamarin.Forms.LayoutOptions.Fill).
 
-1. На панели инструментов Visual Studio нажмите кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS удаленной работы или эмуляторе Android:
+1. Если приложение по-прежнему работает, сохраните изменения в файле, после чего пользовательский интерфейс приложения в симуляторе или эмуляторе будет автоматически обновлен. В противном случае нажмите на панели инструментов Visual Studio кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном удаленном симуляторе iOS или эмуляторе Android:
 
     [![Снимок экрана: дочерние представления в StackLayout с заданными параметрами выравнивания и расширения в iOS и Android](../images/alignment-expansion.png "StackLayout, содержащий экземпляры меток, с заданным выравниванием и расширением")](../images/alignment-expansion-large.png#lightbox "StackLayout, содержащий экземпляры меток, с заданным выравниванием и расширением")
 
-    [`StackLayout`](xref:Xamarin.Forms.StackLayout) учитывает только параметры выравнивания в дочерних представлениях, которые имеют направление, противоположное ориентации `StackLayout`. Поэтому дочерние представления [`Label`](xref:Xamarin.Forms.Label) в `StackLayout` с вертикальной ориентацией получают свойства [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) в соответствии с одним из следующих полей выравнивания:
+    [`StackLayout`](xref:Xamarin.Forms.StackLayout) учитывает только параметры выравнивания дочерних представлениях, которые находятся в направлении, противоположном ориентации `StackLayout`. Поэтому дочерние представления [`Label`](xref:Xamarin.Forms.Label) в `StackLayout` с вертикальной ориентацией получают свойства [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) в соответствии с одним из следующих полей выравнивания:
 
     - [`Start`](xref:Xamarin.Forms.LayoutOptions.Start) — располагает [`Label`](xref:Xamarin.Forms.Label) в левой части [`StackLayout`](xref:Xamarin.Forms.StackLayout).
     - [`Center`](xref:Xamarin.Forms.LayoutOptions.Center) — располагает [`Label`](xref:Xamarin.Forms.Label) в центре [`StackLayout`](xref:Xamarin.Forms.StackLayout).
@@ -66,6 +66,8 @@ ms.locfileid: "83343423"
 
     > [!IMPORTANT]
     > Когда все пространство в [`StackLayout`](xref:Xamarin.Forms.StackLayout) занято, параметр расширения ни на что не влияет.
+
+    В Visual Studio остановите приложение.
 
     Дополнительные сведения о выравнивании и расширении см. в разделе [Параметры макета в Xamarin.Forms](~/xamarin-forms/user-interface/layouts/layout-options.md).
 
@@ -107,7 +109,7 @@ ms.locfileid: "83343423"
     > [!NOTE]
     > Значение по умолчанию свойств представления [`HorizontalOptions`](xref:Xamarin.Forms.View.HorizontalOptions) и [`VerticalOptions`](xref:Xamarin.Forms.View.VerticalOptions) — [`Fill`](xref:Xamarin.Forms.LayoutOptions.Fill).
 
-1. На панели инструментов Visual Studio для Mac нажмите кнопку **Пуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android.
+1. Если приложение по-прежнему работает, сохраните изменения в файле, после чего пользовательский интерфейс приложения в симуляторе или эмуляторе будет автоматически обновлен. В противном случае нажмите на панели инструментов Visual Studio для Mac кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном симуляторе iOS или эмуляторе Android:
 
     [![Снимок экрана: дочерние представления в StackLayout с заданными параметрами выравнивания и расширения в iOS и Android](../images/alignment-expansion.png "StackLayout, содержащий экземпляры меток, с заданным выравниванием и расширением")](../images/alignment-expansion-large.png#lightbox "StackLayout, содержащий экземпляры меток, с заданным выравниванием и расширением")
 
@@ -122,5 +124,7 @@ ms.locfileid: "83343423"
 
     > [!IMPORTANT]
     > Когда все пространство в [`StackLayout`](xref:Xamarin.Forms.StackLayout) занято, параметр расширения ни на что не влияет.
+
+    В Visual Studio для Mac остановите приложение.
 
     Дополнительные сведения о выравнивании и расширении см. в разделе [Параметры макета в Xamarin.Forms](~/xamarin-forms/user-interface/layouts/layout-options.md).

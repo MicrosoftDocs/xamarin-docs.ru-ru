@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a7c2aa15521b89e4930746dc5421ce67fa26b2b9
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: f205e97c11c6ae1c75b101ada57c10ef49a9c146
+ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "67560019"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98634783"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -21,7 +21,7 @@ ms.locfileid: "67560019"
 
     В этом коде свойству [`Orientation`](xref:Xamarin.Forms.StackLayout.Orientation) присваивается значение [`Horizontal`](xref:Xamarin.Forms.StackOrientation.Horizontal).
 
-1. На панели инструментов Visual Studio нажмите кнопку **Пуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном удаленном симуляторе iOS или эмуляторе Android.
+1. Если приложение по-прежнему работает, сохраните изменения в файле, после чего пользовательский интерфейс приложения в симуляторе или эмуляторе будет автоматически обновлен. В противном случае нажмите на панели инструментов Visual Studio кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном удаленном симуляторе iOS или эмуляторе Android:
 
     [![Снимок экрана: дочерние представления с горизонтальной ориентацией в StackLayout в iOS и Android](../images/orientation.png "StackLayout, содержащий горизонтально ориентированные экземпляры меток")](../images/orientation-large.png#lightbox "StackLayout, содержащий горизонтально ориентированные экземпляры меток")
 
@@ -42,7 +42,7 @@ ms.locfileid: "67560019"
 
     В этом коде свойству [`Orientation`](xref:Xamarin.Forms.StackLayout.Orientation) присваивается значение [`Horizontal`](xref:Xamarin.Forms.StackOrientation.Horizontal).
 
-1. На панели инструментов Visual Studio для Mac нажмите кнопку **Пуск** (треугольная кнопка, похожая на кнопку воспроизведения) для запуска приложения в выбранном симуляторе iOS или эмуляторе Android.
+1. Если приложение по-прежнему работает, сохраните изменения в файле, после чего пользовательский интерфейс приложения в симуляторе или эмуляторе будет автоматически обновлен. В противном случае нажмите на панели инструментов Visual Studio для Mac кнопку **Запуск** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в выбранном симуляторе iOS или эмуляторе Android:
 
     [![Снимок экрана: дочерние представления с горизонтальной ориентацией в StackLayout в iOS и Android](../images/orientation.png "StackLayout, содержащий горизонтально ориентированные экземпляры меток")](../images/orientation-large.png#lightbox "StackLayout, содержащий горизонтально ориентированные экземпляры меток")
 
