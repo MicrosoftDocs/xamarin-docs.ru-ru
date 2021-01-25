@@ -6,12 +6,12 @@ ms.assetid: A7EB73C1-38D7-46C5-9AF6-4C571C168BE7
 author: davidortinau
 ms.author: daortin
 ms.date: 06/13/2019
-ms.openlocfilehash: f1d3adfad3b9d2a64990ff11f81bf3a1a39825bb
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: d79eb9ad1ca57361e063f6ce73910d6bb149cf72
+ms.sourcegitcommit: 424eaef56fd2933c98e72f1d3e7ac71730fe4835
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73029661"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758075"
 ---
 # <a name="xamarin-live-player-app"></a>Приложение Xamarin Live Player
 
@@ -27,7 +27,7 @@ ms.locfileid: "73029661"
 
 ![Снимок экрана приложения для Android Live Player](player-images/app-android-sml.png)
 
-При нажатии клавиши **связать с Visual Studio**используйте камеру для сканирования штрихкода, показанного на компьютере:
+При нажатии клавиши **связать с Visual Studio** используйте камеру для сканирования штрихкода, показанного на компьютере:
 
 ![Снимок экрана: сканер штрихкодов Android](player-images/scan-android-sml.png)
 
@@ -39,25 +39,25 @@ ms.locfileid: "73029661"
 
 Нажмите кнопку со сведениями **(i)** в нижней части приложения, чтобы открыть меню **параметров** :
 
-[Снимок экрана![меню параметров](player-images/options-sml.png)](player-images/options.png#lightbox)
+[![Снимок экрана: меню параметров](player-images/options-sml.png)](player-images/options.png#lightbox)
 
 ### <a name="logs"></a>Журналы
 
 Просмотрите журналы, чтобы диагностировать проблемы.
 
-### <a name="settings"></a>Параметры
+### <a name="settings"></a>"Настройки"
 
 - Переключить отображение ошибок компиляции и времени выполнения.
 - Сведения о версии.
 - Отправить отзыв.
 
-[![снимок экрана параметров](player-images/settings-sml.png)](player-images/settings.png#lightbox)
+[![Снимок экрана параметров](player-images/settings-sml.png)](player-images/settings.png#lightbox)
 
-## <a name="managing-devices"></a>Управление устройствами
+## <a name="managing-devices"></a>управление устройствами;
 
 Чтобы подключить устройство в первый раз, следуйте инструкциям в разделе [требования & установки](~/tools/live-player/install.md). Вы можете связать несколько устройств и управлять ими с помощью интегрированной среды разработки.
 
-# <a name="visual-studio-2017tabwindows"></a>[Visual Studio 2017](#tab/windows)
+# <a name="visual-studio-2017"></a>[Visual Studio 2017](#tab/windows)
 
 В Visual Studio выберите **сервис > Xamarin Live Player > Управление устройствами...**
 
@@ -71,11 +71,11 @@ ms.locfileid: "73029661"
 
 Это окно также можно открыть из списка устройств.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 В Visual Studio для Mac выберите **сервис > (Xamarin Live Player) Управление устройствами...**
 
-![Окно управления устройствами](player-images/manage-tools-menu.png)
+![На снимке экрана показано управление устройствами, выбранными в окне "Инструменты".](player-images/manage-tools-menu.png)
 
 Это окно позволяет выполнять следующие действия.
 
@@ -83,7 +83,7 @@ ms.locfileid: "73029661"
 - Кроме того, можно связать устройство, введя код, отображаемый на экране
 - Удалить существующие устройства из списка
 
-![Окно управления устройствами](player-images/manage.png)
+![На снимке экрана показано окно Xamarin Live Player с возможностью предварительного просмотра приложения.](player-images/manage.png)
 
 Это окно также можно открыть из списка устройств:
 

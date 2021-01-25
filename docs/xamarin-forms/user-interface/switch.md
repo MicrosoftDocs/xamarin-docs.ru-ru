@@ -10,12 +10,12 @@ ms.date: 05/19/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b44a3fa34044327be6a928588397c3371f196336
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 760d6f6e6d57a1ab9a6537e8974e85e26195d8cb
+ms.sourcegitcommit: 424eaef56fd2933c98e72f1d3e7ac71730fe4835
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93371135"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758023"
 ---
 # <a name="no-locxamarinforms-switch"></a>Xamarin.Forms Ключом
 
@@ -23,13 +23,13 @@ ms.locfileid: "93371135"
 
 Xamarin.Forms [`Switch`](xref:Xamarin.Forms.Switch) Элемент управления является горизонтальной выключателью, с помощью которого пользователь может переключаться между состояниями включения и выключения, которые представлены `boolean` значением. `Switch`Класс наследует от [`View`](xref:Xamarin.Forms.View) .
 
-На следующих снимках экрана показан `Switch` элемент управления **on** в состояниях переключения и **отключения** в iOS и Android:
+На следующих снимках экрана показан `Switch` элемент управления  в состояниях переключения и **отключения** в iOS и Android:
 
 ![Снимок экрана параметров включения и отключения состояний, в iOS и Android](switch-images/switch-states-default.png "Параметры в iOS и Android")
 
 `Switch`Элемент управления определяет следующие свойства:
 
-- [`IsToggled`](xref:Xamarin.Forms.Switch.IsToggled)`boolean`значение, указывающее, включено ли в `Switch` . **on**
+- [`IsToggled`](xref:Xamarin.Forms.Switch.IsToggled)`boolean`значение, указывающее, включено ли в `Switch` . 
 - [`OnColor`](xref:Xamarin.Forms.Switch.OnColor) параметр `Color` , который влияет на то, как объект отображается `Switch` в переключенном или **включенном** состоянии.
 - `ThumbColor` значение параметра `Color` бегунка Switched.
 
@@ -68,7 +68,7 @@ Switch switch = new Switch { OnColor = Color.Orange, ThumbColor = Color.Green };
 
 На следующем снимке экрана показаны `Switch` состояния переключателя **On** и **Off** , для которых `OnColor` `ThumbColor` заданы свойства и.
 
-![Снимок экрана параметров включения и отключения состояний, в iOS и Android](switch-images/switch-states-colors.png "Параметры в iOS и Android")
+![Снимок экрана параметров включения и выключения, в iOS и Android с измененными цветами.](switch-images/switch-states-colors.png "Параметры в iOS и Android")
 
 ## <a name="respond-to-a-switch-state-change"></a>Ответ на изменение состояния переключения
 
