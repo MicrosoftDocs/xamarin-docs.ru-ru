@@ -8,12 +8,12 @@ ms.date: 08/20/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 9c21e4c746224902b4dcc317b53d751d33c45df1
-ms.sourcegitcommit: 86663f94f8eddb808eb4504cd32ddaf217b6406c
+ms.openlocfilehash: cb172ff7d86229d4ee0cebc2e3ea6bc326e7fa29
+ms.sourcegitcommit: 424eaef56fd2933c98e72f1d3e7ac71730fe4835
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166671"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758036"
 ---
 # <a name="platform-support"></a>Поддержка платформ
 
@@ -49,7 +49,7 @@ Xamarin.Essentials всегда пытается обеспечить компо
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [Акселерометр](accelerometer.md?context=xamarin/xamarin-forms) | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Поддерживается для UWP](~/media/shared/yes.png "Поддерживается для UWP") | ![Поддерживается для watchOS](~/media/shared/yes.png "Поддерживается для watchOS") | ![Не поддерживается для tvOS](~/media/shared/no.png "Не поддерживается для tvOS") | ![Поддерживается для Tizen](~/media/shared/yes.png "Поддерживается для Tizen") | ![macOS не поддерживается](~/media/shared/no.png "macOS не поддерживается") |
 | [Действия приложения](app-actions.md?context=xamarin/xamarin-forms) | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Поддерживается для UWP](~/media/shared/yes.png "Поддерживается для UWP") | ![Не поддерживается для watchOS](~/media/shared/no.png "Не поддерживается для watchOS") | ![Не поддерживается для tvOS](~/media/shared/no.png "Не поддерживается для tvOS") | ![Не поддерживается для Tizen](~/media/shared/no.png "Не поддерживается для Tizen") | ![macOS не поддерживается](~/media/shared/no.png "macOS не поддерживается") |
-| [Сведения о приложении](app-information.md?context=xamarin/xamarin-forms) | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Поддерживается для UWP](~/media/shared/yes.png "Поддерживается для UWP") | ![Поддерживается для watchOS](~/media/shared/no.png "Не поддерживается для watchOS") | ![Поддерживается для tvOS](~/media/shared/yes.png "Поддерживается для tvOS") | ![Поддерживается для Tizen](~/media/shared/yes.png "Поддерживается для Tizen") | ![macOS поддерживается](~/media/shared/yes.png "macOS поддерживается") |
+| [Сведения о приложении](app-information.md?context=xamarin/xamarin-forms) | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Поддерживается для UWP](~/media/shared/yes.png "Поддерживается для UWP") | ![Не поддерживается для watchOS](~/media/shared/no.png "Не поддерживается для watchOS") | ![Поддерживается для tvOS](~/media/shared/yes.png "Поддерживается для tvOS") | ![Поддерживается для Tizen](~/media/shared/yes.png "Поддерживается для Tizen") | ![macOS поддерживается](~/media/shared/yes.png "macOS поддерживается") |
 | [Тема приложения](app-theme.md?context=xamarin/xamarin-forms) | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Поддерживается для UWP](~/media/shared/yes.png "Поддерживается для UWP") | ![Поддерживается для watchOS](~/media/shared/yes.png "Поддерживается для watchOS") | ![Не поддерживается для tvOS](~/media/shared/no.png "Не поддерживается для tvOS") | ![Поддерживается для Tizen](~/media/shared/yes.png "Поддерживается для Tizen") | ![macOS поддерживается](~/media/shared/yes.png "macOS поддерживается") |
 | [Барометр](barometer.md?context=xamarin/xamarin-forms) | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Поддерживается для UWP](~/media/shared/yes.png "Поддерживается для UWP") | ![Поддерживается для watchOS](~/media/shared/yes.png "Поддерживается для watchOS") | ![Не поддерживается для tvOS](~/media/shared/no.png "Не поддерживается для tvOS") | ![Поддерживается для Tizen](~/media/shared/yes.png "Поддерживается для Tizen") | ![macOS не поддерживается](~/media/shared/no.png "macOS не поддерживается") |
 | [Батарея](battery.md?context=xamarin/xamarin-forms) | ![Поддерживается для Android](~/media/shared/yes.png "Поддерживается для Android") | ![Поддерживается для iOS](~/media/shared/yes.png "Поддерживается для iOS") | ![Поддерживается для UWP](~/media/shared/yes.png "Поддерживается для UWP") | ![Ограниченная поддержка для watchOS](~/media/shared/warn.png "Ограниченная поддержка для watchOS") | ![Не поддерживается для tvOS](~/media/shared/no.png "Не поддерживается для tvOS") | ![Ограниченная поддержка для Tizen](~/media/shared/warn.png "Ограниченная поддержка для Tizen") | ![macOS поддерживается](~/media/shared/yes.png "macOS поддерживается") |
