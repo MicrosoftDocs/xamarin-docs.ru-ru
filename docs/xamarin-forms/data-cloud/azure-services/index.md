@@ -10,12 +10,12 @@ ms.date: 06/28/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3c75fc9add49e3754241c129a8243d33095c3abf
-ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
+ms.openlocfilehash: cc080b9c69614b2e743e32139622502250de3684
+ms.sourcegitcommit: 9ab5a1e346e20f54e8b7aa655fd3d117b43978cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94590380"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99223702"
 ---
 # <a name="no-locxamarinforms-and-azure-services"></a>Xamarin.Forms и службы Azure
 
@@ -23,7 +23,7 @@ ms.locfileid: "94590380"
 
 База данных документов Azure Cosmos DB — это база данных NoSQL, которая обеспечивает доступ к документам JSON с низкой задержкой, предлагая быструю, высокодоступную и масштабируемую службу баз данных для приложений, которым требуется эффективное масштабирование и Глобальная репликация. В этой статье объясняется, как использовать клиентскую библиотеку Azure Cosmos DB .NET Standard для интеграции базы данных документов Azure Cosmos DB в Xamarin.Forms приложение.
 
-## <a name="send-and-receive-push-notifications-with-azure-notification-hubs-and-no-locxamarinforms"></a>[Отправка и получение push-уведомлений в центрах уведомлений Azure и Xamarin.Forms](azure-notification-hub.md)
+## <a name="send-and-receive-push-notifications-with-azure-notification-hubs-and-no-locxamarinforms"></a>[Отправка и получение push-уведомлений в центрах уведомлений Azure и Xamarin.Forms](/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms)
 
 Центры уведомлений Azure позволяют централизовать уведомления на разных платформах, чтобы серверное приложение могла взаимодействовать с одним концентратором. Центры уведомлений Azure принимают меры по распространению push-уведомлений нескольким поставщикам платформ. В этой статье объясняется, как интегрировать центры уведомлений Azure в Xamarin.Forms приложение.
 
