@@ -10,14 +10,14 @@ ms.date: 10/02/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: e57003825e0ea77d54ec528b18328e98f3d1b81e
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: f1f36329c36dfae3f2ca0754ecbb867520d4c530
+ms.sourcegitcommit: bd8ce0ae64698246db92a6c4396983290dc54a22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97939897"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99427750"
 ---
-# <a name="no-locxamarinforms-radiobutton"></a>Xamarin.Forms RadioButton
+# <a name="xamarinforms-radiobutton"></a>Xamarin.Forms RadioButton
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-radiobuttondemos/)
 
@@ -175,13 +175,13 @@ Xamarin.Forms [`RadioButton`](xref:Xamarin.Forms.RadioButton) — Это тип 
 
 ```xaml
 <Label Text="What's your favorite color?" />
-<RadioButton Text="Red"
+<RadioButton Content="Red"
              GroupName="colors" />
-<RadioButton Text="Green"
+<RadioButton Content="Green"
              GroupName="colors" />
-<RadioButton Text="Blue"
+<RadioButton Content="Blue"
              GroupName="colors" />
-<RadioButton Text="Other"
+<RadioButton Content="Other"
              GroupName="colors" />
 ```
 
@@ -215,7 +215,7 @@ Xamarin.Forms [`RadioButton`](xref:Xamarin.Forms.RadioButton) — Это тип 
 Когда `IsChecked` свойство изменяется с помощью пользователя или программной манипуляции, `CheckedChanged` вызывается событие. Для реагирования на изменение можно зарегистрировать обработчик событий для этого события:
 
 ```xaml
-<RadioButton Text="Red"
+<RadioButton Content="Red"
              GroupName="colors"
              CheckedChanged="OnColorsRadioButtonCheckedChanged" />
 ```
@@ -298,10 +298,10 @@ void OnColorsRadioButtonCheckedChanged(object sender, CheckedChangedEventArgs e)
     </ContentPage.Resources>
     <StackLayout>
         <Label Text="What's your favorite mode of transport?" />
-        <RadioButton Text="Car" />
-        <RadioButton Text="Bike" />
-        <RadioButton Text="Train" />
-        <RadioButton Text="Walking" />
+        <RadioButton Content="Car" />
+        <RadioButton Content="Bike" />
+        <RadioButton Content="Train" />
+        <RadioButton Content="Walking" />
     </StackLayout>
 </ContentPage>
 ```
@@ -312,7 +312,7 @@ void OnColorsRadioButtonCheckedChanged(object sender, CheckedChangedEventArgs e)
 
 Дополнительные сведения о визуальных состояниях см. в статье [Диспетчер визуального представления состояний Xamarin.Forms](~/xamarin-forms/user-interface/visual-state-manager.md).
 
-## <a name="redefine-radiobutton-appearance"></a>Переопределить вид RadioButton
+## <a name="redefine-radiobutton-appearance"></a>Изменение внешнего вида RadioButton
 
 По умолчанию [`RadioButton`](xref:Xamarin.Forms.RadioButton) объекты используют средства визуализации платформы для использования собственных элементов управления на поддерживаемых платформах. Однако `RadioButton` визуальную структуру можно переопределить с помощью [`ControlTemplate`](xref:Xamarin.Forms.ControlTemplate) , чтобы `RadioButton` объекты имели одинаковый внешний вид на всех платформах. Это возможно, поскольку [`RadioButton`](xref:Xamarin.Forms.RadioButton) класс наследуется от [`TemplatedView`](xref:Xamarin.Forms.TemplatedView) класса.
 
