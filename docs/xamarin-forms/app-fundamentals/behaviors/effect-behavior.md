@@ -29,8 +29,8 @@ _Реакции на события удобно использовать для
 
 Для использования реакции на событие необходимо задать следующие ее свойства:
 
-- **Group**  — значение атрибута [`ResolutionGroupName`](xref:Xamarin.Forms.ResolutionGroupNameAttribute) для класса эффекта;
-- **Name**  — значение атрибута [`ExportEffect`](xref:Xamarin.Forms.ExportEffectAttribute) для класса эффекта.
+- **Group** — значение атрибута [`ResolutionGroupName`](xref:Xamarin.Forms.ResolutionGroupNameAttribute) для класса эффекта;
+- **Name** — значение атрибута [`ExportEffect`](xref:Xamarin.Forms.ExportEffectAttribute) для класса эффекта.
 
 Дополнительные сведения об эффектах см. в статье [Эффекты](~/xamarin-forms/app-fundamentals/effects/index.md).
 
