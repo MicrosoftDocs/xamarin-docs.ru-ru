@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/19/2017
-ms.openlocfilehash: f5796ee17e947494d1e22f750bc43ff823d56d55
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 98855bb51552edcd567e3b99740f0be04034e388
+ms.sourcegitcommit: e27e29c14b783263e063baaa65d4eecb8dd31f57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86937284"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98628973"
 ---
 # <a name="unit-testing-xamarinios-apps"></a>Модульное тестирование приложений Xamarin.iOS
 
@@ -112,7 +112,7 @@ namespace Fixtures {
 
 Можно выполнить отдельное средство тестирования, выбрав его из вложенных представлений, или выполнить все тесты, выбрав "Выполнить все". При выполнении теста по умолчанию он должен содержать один пройденный тест, один непройденный тест и один пропущенный тест. Отчет будет выглядеть следующим образом. Можно перейти непосредственно к непройденному тесту и изучить дополнительные сведения о сбое:
 
-[![Пример отчета](touch.unit-images/05-sml.png)](touch.unit-images/05.png#lightbox) [![Пример отчета](touch.unit-images/06-sml.png)](touch.unit-images/06.png#lightbox) [![Пример отчета](touch.unit-images/07-sml.png)](touch.unit-images/07.png#lightbox)
+[![Снимок экрана: пример отчета, экран Test Runner.](touch.unit-images/05-sml.png)](touch.unit-images/05.png#lightbox) [![Снимок экрана: пример отчета, экран "Тесты".](touch.unit-images/06-sml.png)](touch.unit-images/06.png#lightbox) [![Снимок экрана: пример отчета, экран "Тесты" с данными о состоянии теста](touch.unit-images/07-sml.png)](touch.unit-images/07.png#lightbox).
 
 Можно также обратиться к окну выходных данных приложения в интегрированной среде разработки, чтобы увидеть, какие тесты выполняются, и их текущее состояние.
 

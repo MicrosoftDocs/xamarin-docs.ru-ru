@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: 2f70dd3b18c36d478548672bb78d329cb2a4c9ab
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: cac0d9bc6d4ac2c07bcfd09275ff3f78e0e18b91
+ms.sourcegitcommit: e27e29c14b783263e063baaa65d4eecb8dd31f57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938779"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98628843"
 ---
 # <a name="compiling-for-different-devices-in-xamarinios"></a>Компиляция для разных устройств в Xamarin.iOS
 
@@ -20,11 +20,11 @@ ms.locfileid: "86938779"
 
 # <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
-[![Страница свойств "Сборка iOS" в Project](compiling-for-different-devices-images/image1.png)](compiling-for-different-devices-images/image1.png#lightbox) 
+[![Страница свойств "Сборка iOS" проекта в Visual Studio для Mac.](compiling-for-different-devices-images/image1.png)](compiling-for-different-devices-images/image1.png#lightbox) 
 
 # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
 
-[![Страница свойств "Сборка iOS" в Project](compiling-for-different-devices-images/image1a.png)](compiling-for-different-devices-images/image1a.png#lightbox)
+[![Страница свойств "Сборка iOS" проекта в Visual Studio.](compiling-for-different-devices-images/image1a.png)](compiling-for-different-devices-images/image1a.png#lightbox)
 
 -----
 
@@ -58,9 +58,9 @@ Visual Studio для Mac позволяет настроить для пакет
 
 Вы можете выбрать используемый вариант в параметрах сборки iOS в Visual Studio или Visual Studio для Mac.
 
-[![Включение LLVM](compiling-for-different-devices-images/image2.png)](compiling-for-different-devices-images/image2.png#lightbox)
+[![Включение LLVM в Visual Studio для Mac.](compiling-for-different-devices-images/image2.png)](compiling-for-different-devices-images/image2.png#lightbox)
 
-[![Включение LLVM](compiling-for-different-devices-images/image2a.png)](compiling-for-different-devices-images/image2a.png#lightbox)
+[![Включение LLVM в Visual Studio.](compiling-for-different-devices-images/image2a.png)](compiling-for-different-devices-images/image2a.png#lightbox)
 
 ## <a name="architecture-support"></a>Поддержка архитектур
 

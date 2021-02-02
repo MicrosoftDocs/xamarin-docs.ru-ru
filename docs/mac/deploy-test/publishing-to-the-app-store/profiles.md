@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 04/12/2017
-ms.openlocfilehash: 0bde2ee6451b7160ac7c1655e705984e53c82ff4
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: de87e650f68e5a327564c0a4216bee2b3e04fe2f
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86939013"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697609"
 ---
 # <a name="provisioning-profiles-for-xamarinmac-apps"></a>Профили подготовки для приложений Xamarin.Mac
 
@@ -43,13 +43,13 @@ ms.locfileid: "86939013"
     [![Выбор разрешенных компьютеров](profiles-images/certif17.png)](profiles-images/certif17.png#lightbox)
 5. Введите значение в поле **Имя профиля** и нажмите кнопку **Создать**:
 
-    [![Создание профиля](profiles-images/certif18.png)](profiles-images/certif18.png#lightbox)
+    [![Снимок экрана: ввод имени профиля в окне подготовки.](profiles-images/certif18.png)](profiles-images/certif18.png#lightbox)
 6. Нажмите кнопку **Скачать**, чтобы скачать новый профиль:
 
-    [![Скачивание профиля](profiles-images/certif19.png)](profiles-images/certif19.png#lightbox)
+    [![Снимок экрана: кнопка скачивания для профиля.](profiles-images/certif19.png)](profiles-images/certif19.png#lightbox)
 7. Профили подготовки для разработки устанавливаются в области "Параметры профилей" в **системных настройках** приложения Mac:
 
-    [![Установка профиля](profiles-images/certif20.png)](profiles-images/certif20.png#lightbox)
+    [![Снимок экрана: диалоговое окно подтверждения установки.](profiles-images/certif20.png)](profiles-images/certif20.png#lightbox)
 8. Все установленные профили будут отображены в области "Параметры профилей":
 
     [![Отображение всех установленных профилей](profiles-images/image47.png)](profiles-images/image47.png#lightbox)

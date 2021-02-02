@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 12/17/2019
-ms.openlocfilehash: 2b2bfe9925a99c2ba7f1366ea28d5c72e2e1da88
-ms.sourcegitcommit: b0ea451e18504e6267b896732dd26df64ddfa843
+ms.openlocfilehash: ae62a695670f50c5385b9279c6d6de79b6d59fb7
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "76725545"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697570"
 ---
 # <a name="certificates-and-identifiers-in-xamarinmac"></a>Сертификаты и идентификаторы в Xamarin.Mac
 
@@ -51,12 +51,12 @@ _В этом руководстве описывается создание не
 1. Выберите знак "плюс" (+) или **Register an App ID** (Регистрация идентификатора приложения):
 
     > [!div class="mx-imgBorder"]
-    > [![Начало работы с идентификаторами приложения](certificates-identifiers-images/appid01.png)](certificates-identifiers-images/appid01-large.png#lightbox)
+    > [![Снимок экрана: область с информацией о начале работы с идентификаторами приложений на странице Certificates, Identifiers and Profiles (Сертификаты, идентификаторы и профили).](certificates-identifiers-images/appid01.png)](certificates-identifiers-images/appid01-large.png#lightbox)
 
 1. Выберите **App IDs** (Идентификаторы приложения).
 
     > [!div class="mx-imgBorder"]
-    > [![Начало работы с идентификаторами приложения](certificates-identifiers-images/appid02.png)](certificates-identifiers-images/appid02-large.png#lightbox)
+    > [![Снимок экрана: параметр регистрации нового идентификатора.](certificates-identifiers-images/appid02.png)](certificates-identifiers-images/appid02-large.png#lightbox)
 
 1. Введите **описание** и выберите любые **службы приложений**, которые потребуются приложению. Необходимо использовать платформу **macOS**. Выберите **описание** (используемое только на этом портале). Введите **идентификатор пакета**, который должен соответствовать файлу **Info.plist**. Выберите необходимые для приложения возможности.
 
@@ -97,12 +97,12 @@ _В этом руководстве описывается создание не
 1. Введите **имя** и идентификатор **UUID** добавляемого компьютера, а затем нажмите кнопку **Continue** (Продолжить). Проверьте сведения и нажмите кнопку **Register** (Зарегистрировать):
 
     > [!div class="mx-imgBorder"]
-    > [![Ввод сведений о новом компьютере](certificates-identifiers-images/device02.png)](certificates-identifiers-images/device02-large.png#lightbox)
+    > [![Снимок экрана: страница регистрации нового устройства, на которой можно ввести имя и UUID.](certificates-identifiers-images/device02.png)](certificates-identifiers-images/device02-large.png#lightbox)
 
 1. Проверьте и подтвердите введенные данные:
 
     > [!div class="mx-imgBorder"]
-    > [![Ввод сведений о новом компьютере](certificates-identifiers-images/device03.png)](certificates-identifiers-images/device03-large.png#lightbox)
+    > [![Снимок экрана: страница регистрации нового устройства, на которой можно подтвердить имя и UUID.](certificates-identifiers-images/device03.png)](certificates-identifiers-images/device03-large.png#lightbox)
 
 ## <a name="create-certificates"></a>Создание сертификатов
 
@@ -189,7 +189,7 @@ _В этом руководстве описывается создание не
 > [!TIP]
 > При присвоении имен запросам сертификатов используйте описательные имена, содержащие текст `Application` и `Installer`, чтобы их можно было определить позднее.
 
-После создания, скачивания и установки сертификатов они будут отображаться в программе**Keychain Access**:
+После создания, скачивания и установки сертификатов они будут отображаться в программе **Keychain Access**:
 
 [Список сертификатов в программе Keychain Access](certificates-identifiers-images/certif09.png)
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/25/2018
-ms.openlocfilehash: 1f556e7b63cabcb2a0909927df4970d367338694
-ms.sourcegitcommit: 2d41e287ccf937efa24813151e371298b2b4a582
+ms.openlocfilehash: af5678c5ed6fe5376588f39d9f878d03c7de9f9f
+ms.sourcegitcommit: e27e29c14b783263e063baaa65d4eecb8dd31f57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91102288"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98628999"
 ---
 # <a name="publishing-xamarinios-apps-to-the-app-store"></a>Публикация приложений Xamarin.iOS в App Store
 
@@ -193,7 +193,7 @@ Apple проверяет публикуемые в App Store приложени
 
     Параметры подписывания для пакета проекта теперь должны выглядеть примерно так:
 
-    ![Параметры подписывания пакета iOS](publishing-to-the-app-store-images/bundleSigning-w157.png "Параметры подписывания пакета iOS")
+    ![Снимок экрана: параметры подписывания пакета iOS.](publishing-to-the-app-store-images/bundleSigning-w157.png "Параметры подписывания пакета iOS")
 
 14. Откройте вкладку **Параметры IPA iOS**.
 15. Для элемента **Конфигурация** выберите значение **Выпуск**, а для элемента **Платформа** — **iPhone**.
@@ -204,7 +204,7 @@ Apple проверяет публикуемые в App Store приложени
 
 17. Чтобы указать имя IPA-файла, которое отличается от имени проекта Xamarin.iOS, введите его в поле **Имя пакета**.
 
-    ![Параметры подписывания пакета iOS](publishing-to-the-app-store-images/ipaOptions-w157.png "Параметры подписывания пакета iOS")
+    ![Снимок экрана: вкладка "Параметры IPA iOS".](publishing-to-the-app-store-images/ipaOptions-w157.png "Параметры подписывания пакета iOS")
 
 18. Сохраните и закройте конфигурацию сборки.
 

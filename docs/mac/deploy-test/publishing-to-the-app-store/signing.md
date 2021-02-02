@@ -7,12 +7,12 @@ ms.technology: xamarin-mac
 author: davidortinau
 ms.author: daortin
 ms.date: 03/14/2017
-ms.openlocfilehash: 84a764054567bc504b3432a503a1072362e374dd
-ms.sourcegitcommit: 008bcbd37b6c96a7be2baf0633d066931d41f61a
+ms.openlocfilehash: 7e2d676b577e835bafe5cdd8d6bc48229a1a1a06
+ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86938493"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98697583"
 ---
 # <a name="signing-xamarinmac-apps-with-a-developer-id"></a>Подписывание приложений Xamarin.Mac с помощью идентификатора разработчика
 
@@ -34,9 +34,9 @@ ms.locfileid: "86938493"
 
 При сборке приложения выводится предложение об использовании обоих сертификатов:
 
- [![Разрешение доступа к цепочке ключей](signing-images/image57.png)](signing-images/image57.png#lightbox)
+ [![Снимок экрана: диалоговое окно разрешения доступа для codesign.](signing-images/image57.png)](signing-images/image57.png#lightbox)
 
- [![Разрешение доступа к цепочке ключей](signing-images/image58.png)](signing-images/image58.png#lightbox)
+ [![Снимок экрана: диалоговое окно разрешения доступа для productbuild.](signing-images/image58.png)](signing-images/image58.png#lightbox)
 
 После сборки приложения щелкните проект правой кнопкой мыши и выберите команду **Открыть содержащую папку**, чтобы найти файл пакета (в каталоге `bin/Release`). В этом файле содержится установщик для приложения, поэтому его можно распространять любому пользователю macOS для установки.
 
