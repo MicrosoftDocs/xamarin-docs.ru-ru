@@ -196,23 +196,6 @@ items:
             href: app-fundamentals/custom-renderer/hybridwebview.md
           - name: Реализация представления
             href: app-fundamentals/custom-renderer/view.md
-          - name: Реализация видеопроигрывателя
-            href: app-fundamentals/custom-renderer/video-player/index.md
-            items:
-              - name: Создание видеопроигрывателей платформы
-                href: app-fundamentals/custom-renderer/video-player/player-creation.md
-              - name: Воспроизведение видео через Интернет
-                href: app-fundamentals/custom-renderer/video-player/web-videos.md
-              - name: Привязка источников видео к проигрывателю
-                href: app-fundamentals/custom-renderer/video-player/source-bindings.md
-              - name: Загрузка видеоресурсов приложения
-                href: app-fundamentals/custom-renderer/video-player/loading-resources.md
-              - name: Доступ к видеотеке устройства
-                href: app-fundamentals/custom-renderer/video-player/accessing-library.md
-              - name: Пользовательские элементы управления транспортировкой видео
-                href: app-fundamentals/custom-renderer/video-player/custom-transport.md
-              - name: Настраиваемое размещение видео
-                href: app-fundamentals/custom-renderer/video-player/custom-positioning.md
       - name: Привязка данных
         href: app-fundamentals/data-binding/index.md
         items:
@@ -932,7 +915,7 @@ items:
           - name: "База данных документов по Azure\_Cosmos\_DB"
             href: data-cloud/azure-services/azure-cosmosdb.md
           - name: Центры уведомлений Azure
-            href: data-cloud/azure-services/azure-notification-hub.md
+            href: /azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
           - name: Хранилище Azure
             href: data-cloud/azure-services/azure-storage.md
           - name: Поиск Azure
