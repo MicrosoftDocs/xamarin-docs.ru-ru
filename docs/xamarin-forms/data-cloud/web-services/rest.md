@@ -6,16 +6,16 @@ ms.assetid: B540910C-9C51-416A-AAB9-057BF76489C3
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 05/28/2020
+ms.date: 02/03/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 3146d1c1de66c0b2bc2e9c2d86a7a50d406ecd7e
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: a3fd59ecbaf85f24515deba8562060aadc6d2165
+ms.sourcegitcommit: 10c7dd16fe78226053d1d036492b6c9102fc421b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373371"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99540965"
 ---
 # <a name="consume-a-restful-web-service"></a>Использование веб-службы RESTFUL
 
@@ -211,8 +211,17 @@ public async Task DeleteTodoItemAsync (string id)
 - **400 (НЕдопустимый запрос)** — запрос не распознан сервером.
 - **404 (не найдено)** — запрошенный ресурс не существует на сервере.
 
+### <a name="local-development"></a>Локальная разработка
+
+При разработке веб-службы RESTFUL локально с помощью такой платформы, как ASP.NET Core веб-API, можно одновременно выполнять отладку веб-службы и мобильного приложения. В этом сценарии необходимо включить HTTP-трафик с открытым текстом для эмулятора iOS симуалтор и Android. Сведения о настройке проекта для подключения см. в разделе [Подключение к локальным веб-службам](~/cross-platform/deploy-test/connect-to-local-web-services.md).
+
 ## <a name="related-links"></a>Связанные ссылки
 
+- [Microsoft Learn: использование веб-служб RESTFUL в приложениях Xamarin](/learn/modules/consume-rest-services/)
+- [Microsoft Learn: создание веб-API с помощью ASP.NET Core](/learn/modules/build-web-api-aspnet-core/)
 - [Создание серверных служб для собственных мобильных приложений](/aspnet/core/mobile/native-mobile-backend/)
 - [TodoREST (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todorest)
-- [HttpClient](/dotnet/api/system.net.http.httpclient)
+- [API HttpClient](xref:System.Net.Http.HttpClient)
+- [Конфигурация безопасности сети Android](https://devblogs.microsoft.com/xamarin/cleartext-http-android-network-security/)
+- [Безопасность транспорта приложений iOS](~/ios/app-fundamentals/ats.md)
+- [Подключение к локальным веб-службам](~/cross-platform/deploy-test/connect-to-local-web-services.md)
