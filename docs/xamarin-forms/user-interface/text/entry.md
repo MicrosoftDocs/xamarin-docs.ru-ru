@@ -11,13 +11,13 @@ no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
 ms.openlocfilehash: 625dd57d1f84b95cef1c6513ae832af805bf565a
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.sourcegitcommit: 10c7dd16fe78226053d1d036492b6c9102fc421b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
+ms.lasthandoff: 02/05/2021
 ms.locfileid: "93375035"
 ---
-# <a name="no-locxamarinforms-entry"></a>Xamarin.Forms Операции
+# <a name="xamarinforms-entry"></a>Xamarin.Forms Операции
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-text)
 
@@ -198,7 +198,7 @@ var entry = new Entry { Text = "Cursor position and selection length set", Curso
 
 `ClearButtonVisibility`Свойство можно использовать для управления [`Entry`](xref:Xamarin.Forms.Entry) отображением кнопки Clear, которая позволяет пользователю очистить текст. Этому свойству должно быть присвоено значение `ClearButtonVisibility` члена перечисления:
 
-- `Never` Указывает, что кнопка Clear никогда не будет отображаться. Это значение по умолчанию для свойства `Entry.ClearButtonVisibility`.
+- `Never` Указывает, что кнопка Clear никогда не будет отображаться. Это значение по умолчанию для свойства `Entry.ClearButtonVisibility`;
 - `WhileEditing` Указывает, что кнопка Clear будет отображаться в [`Entry`](xref:Xamarin.Forms.Entry) , тогда как у нее есть фокус и текст.
 
 В следующем примере показано задание свойства в XAML:
