@@ -6,18 +6,18 @@ ms.assetid: D6539F60-A5AC-46EF-86EB-E9F508EB1FA8
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 09/24/2020
+ms.date: 02/05/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: dda3c0ded11af919dd80b2f0e00c50d8d6b77389
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: 2928e3bd32d7dd2722f01ad5a51dbaab127afd77
+ms.sourcegitcommit: 06701714021545eb5e932847829b876082194ffc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97939983"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585888"
 ---
-# <a name="no-locxamarinforms-shapes-polygon"></a>Xamarin.Forms Фигуры: многоугольник
+# <a name="xamarinforms-shapes-polygon"></a>Xamarin.Forms Фигуры: многоугольник
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -36,7 +36,7 @@ ms.locfileid: "97939983"
 
 ## <a name="create-a-polygon"></a>Создание многоугольника
 
-Чтобы нарисовать многоугольник, создайте `Polygon` объект и присвойте его `Points` свойству вершины фигуры. Автоматически рисуется линия, соединяющая первую и последнюю точки. Чтобы закрасить внутри многоугольника, задайте `Fill` для его свойства значение [`Color`](xref:Xamarin.Forms.Color) . Чтобы задать контур многоугольника, задайте для его `Stroke` свойства значение [`Color`](xref:Xamarin.Forms.Color) . `StrokeThickness`Свойство определяет толщину контура многоугольника.
+Чтобы нарисовать многоугольник, создайте `Polygon` объект и присвойте его `Points` свойству вершины фигуры. Автоматически рисуется линия, соединяющая первую и последнюю точки. Чтобы закрасить внутри многоугольника, присвойте его `Fill` свойству [`Brush`](xref:Xamarin.Forms.Brush) производный объект. Чтобы задать контур многоугольника, присвойте его `Stroke` свойству [`Brush`](xref:Xamarin.Forms.Brush) производный объект. `StrokeThickness`Свойство определяет толщину контура многоугольника. Дополнительные сведения об `Brush` объектах см. в разделе [ Xamarin.Forms кисти](~/xamarin-forms/user-interface/brushes/index.md).
 
 В следующем примере XAML показано, как нарисовать закрашенный многоугольник.
 
@@ -100,3 +100,4 @@ ms.locfileid: "97939983"
 - [Шапедемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.Forms Многоугольник](index.md)
 - [Xamarin.Forms Фигуры: правила заливки](fillrules.md)
+- [Кисти Xamarin.Forms](~/xamarin-forms/user-interface/brushes/index.md)

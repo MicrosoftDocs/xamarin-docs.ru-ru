@@ -6,18 +6,18 @@ ms.assetid: 15D02690-AC03-457E-8815-8E4C17E4D642
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 09/24/2020
+ms.date: 02/05/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b331ea54e1ae0d5746090d155cb14465bcec0307
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: 95b60c4ab28200dd2bc2434396df0832532bdd7a
+ms.sourcegitcommit: 06701714021545eb5e932847829b876082194ffc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97939008"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585875"
 ---
-# <a name="no-locxamarinforms-shapes-polyline"></a>Xamarin.Forms Фигуры: ломаная линия
+# <a name="xamarinforms-shapes-polyline"></a>Xamarin.Forms Фигуры: ломаная линия
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -36,10 +36,10 @@ ms.locfileid: "97939008"
 
 ## <a name="create-a-polyline"></a>Создание ломаной линии
 
-Чтобы нарисовать ломаную линию, создайте `Polyline` объект и присвойте его `Points` свойству вершины фигуры. Чтобы присвоить контуру ломаную линию, задайте `Stroke` для его свойства значение [`Color`](xref:Xamarin.Forms.Color) . `StrokeThickness`Свойство определяет толщину контура ломаной линии.
+Чтобы нарисовать ломаную линию, создайте `Polyline` объект и присвойте его `Points` свойству вершины фигуры. Чтобы создать контур ломаной линии, присвойте его `Stroke` свойству [`Brush`](xref:Xamarin.Forms.Brush) производный объект. `StrokeThickness`Свойство определяет толщину контура ломаной линии. Дополнительные сведения об `Brush` объектах см. в разделе [ Xamarin.Forms кисти](~/xamarin-forms/user-interface/brushes/index.md).
 
 > [!IMPORTANT]
-> Если свойству присвоено значение `Fill` `Polyline` [`Color`](xref:Xamarin.Forms.Color) , внутреннее пространство ломаной линии закрашивается, даже если начальная и конечная точки не пересекаются.
+> Если задать `Fill` `Polyline` для свойства объекта значение [`Brush`](xref:Xamarin.Forms.Brush) , внутреннее пространство ломаной линии закрашивается, даже если начальная и конечная точки не пересекаются.
 
 В следующем примере XAML показано, как нарисовать ломаную линию.
 
@@ -100,3 +100,4 @@ ms.locfileid: "97939008"
 - [Шапедемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.Forms Многоугольник](index.md)
 - [Xamarin.Forms Фигуры: правила заливки](fillrules.md)
+- [Кисти Xamarin.Forms](~/xamarin-forms/user-interface/brushes/index.md)

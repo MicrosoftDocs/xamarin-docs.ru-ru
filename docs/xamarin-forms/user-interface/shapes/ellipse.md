@@ -6,18 +6,18 @@ ms.assetid: 5BF81E25-12E5-49F0-A40C-0CF4C5D63B9B
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 09/24/2020
+ms.date: 02/05/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b4a905371b8bda93616fee0677cbd0932d8699e5
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: b3130fd4cb054799ca9e0a61d13cacb2629320b7
+ms.sourcegitcommit: 06701714021545eb5e932847829b876082194ffc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97939775"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585836"
 ---
-# <a name="no-locxamarinforms-shapes-ellipse"></a>Xamarin.Forms Фигуры: эллипс
+# <a name="xamarinforms-shapes-ellipse"></a>Xamarin.Forms Фигуры: эллипс
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -27,7 +27,7 @@ ms.locfileid: "97939775"
 
 ## <a name="create-an-ellipse"></a>Создание эллипса
 
-Чтобы нарисовать эллипс, создайте `Ellipse` объект и задайте его `WidthRequest` `HeightRequest` Свойства и. Чтобы закрасить внутри эллипса, задайте для его `Fill` свойства значение [`Color`](xref:Xamarin.Forms.Color) . Чтобы присвоить контуру эллипс, присвойте `Stroke` свойству значение [`Color`](xref:Xamarin.Forms.Color) . `StrokeThickness`Свойство задает толщину контура эллипса.
+Чтобы нарисовать эллипс, создайте `Ellipse` объект и задайте его `WidthRequest` `HeightRequest` Свойства и. Чтобы закрасить внутри эллипса, присвойте его `Fill` свойству [`Brush`](xref:Xamarin.Forms.Brush) производный объект. Чтобы присвоить контуру эллипс, присвойте его `Stroke` свойству [`Brush`](xref:Xamarin.Forms.Brush) производный объект. `StrokeThickness`Свойство задает толщину контура эллипса. Дополнительные сведения об `Brush` объектах см. в разделе [ Xamarin.Forms кисти](~/xamarin-forms/user-interface/brushes/index.md).
 
 Чтобы нарисовать круг, сделайте `WidthRequest` Свойства и `HeightRequest` `Ellipse` объекта равными.
 
@@ -56,7 +56,7 @@ ms.locfileid: "97939775"
 
 В этом примере рисуется красный круг с 150x150 измерениями (единицы измерения, независимые от устройства):
 
-![Circle](ellipse-images/circle.png "Circle")
+![Незаполненный круг](ellipse-images/circle.png "Circle")
 
 Сведения о рисовании штрихового эллипса см. в разделе [Рисование пунктирных фигур](index.md#draw-dashed-shapes).
 
@@ -64,3 +64,4 @@ ms.locfileid: "97939775"
 
 - [Шапедемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.Forms Многоугольник](index.md)
+- [Кисти Xamarin.Forms](~/xamarin-forms/user-interface/brushes/index.md)
