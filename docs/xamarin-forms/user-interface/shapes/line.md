@@ -6,18 +6,18 @@ ms.assetid: 384F1A72-6D3B-4FD3-BC40-E00A73A463EC
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 09/24/2020
+ms.date: 02/05/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5d5ecd7804c6cd8321827cd8aef98245124beca0
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: 962800c5deb546ddf6a74d1f52ffaf60734ae463
+ms.sourcegitcommit: 06701714021545eb5e932847829b876082194ffc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97939119"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585849"
 ---
-# <a name="no-locxamarinforms-shapes-line"></a>Xamarin.Forms Фигуры: линия
+# <a name="xamarinforms-shapes-line"></a>Xamarin.Forms Фигуры: линия
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -36,7 +36,7 @@ ms.locfileid: "97939119"
 
 ## <a name="create-a-line"></a>Создание линии
 
-Чтобы нарисовать линию, создайте `Line` объект и задайте его `X1` Свойства и `Y1` для его начальной точки, а `X2` Свойства и — `Y` для конечной точки. Кроме того, присвойте `Stroke` свойству значение, [`Color`](xref:Xamarin.Forms.Color) поскольку линия без штриха невидима.
+Чтобы нарисовать линию, создайте `Line` объект и задайте его `X1` Свойства и `Y1` для его начальной точки, а `X2` Свойства и — `Y` для конечной точки. Кроме того, присвойте его `Stroke` свойству [`Brush`](xref:Xamarin.Forms.Brush) производный объект, так как линия без штриха невидима. Дополнительные сведения об `Brush` объектах см. в разделе [ Xamarin.Forms кисти](~/xamarin-forms/user-interface/brushes/index.md).
 
 > [!NOTE]
 > Установка `Fill` свойства объекта `Line` не оказывает влияния, так как линия не имеет внутренней части.
@@ -53,7 +53,7 @@ ms.locfileid: "97939119"
 
 В этом примере красная диагональная линия отрисовывается от (40, 0) до (0120):
 
-![Line](line-images/line.png "Строка")
+![Диагональная линия](line-images/line.png "Линия")
 
 Поскольку `X1` свойства, `Y1` , `X2` и `Y2` имеют значения по умолчанию 0, можно нарисовать некоторые строки с минимальным синтаксисом:
 
@@ -86,3 +86,4 @@ ms.locfileid: "97939119"
 
 - [Шапедемос (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 - [Xamarin.Forms Многоугольник](index.md)
+- [Кисти Xamarin.Forms](~/xamarin-forms/user-interface/brushes/index.md)
