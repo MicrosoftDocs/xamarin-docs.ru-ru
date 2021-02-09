@@ -9,12 +9,12 @@ ms.date: 08/20/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: dcb236c47cf2eec77b3b90da798b0cf0d58f3c1d
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 1e68755778522fa61d593d25e763fae1569724cf
+ms.sourcegitcommit: 2a7bbe9cbee3727ba20ee755c1713bcfdb4d8ecb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84802305"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98950980"
 ---
 # <a name="xamarinessentials-launcher"></a>Xamarin.Essentials. Средство запуска
 
@@ -98,6 +98,10 @@ await Launcher.OpenAsync(new OpenFileRequest
     File = new ReadOnlyFile(file)
 });
 ```
+
+## <a name="presentation-location-when-opening-files"></a>Расположение презентации при открытии файлов
+
+[!include[](~/essentials/includes/ios-PresentationSourceBounds.md)]
 
 ## <a name="platform-differences"></a>Различия платформ
 

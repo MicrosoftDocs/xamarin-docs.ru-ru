@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 02/28/2018
-ms.openlocfilehash: 2472086c700a6b2a93a4a1a834d7a7d3e6e635ce
-ms.sourcegitcommit: 8fa0cb9ccbc107d697aa5b9113a4e5d1e75d6eb9
+ms.openlocfilehash: d01e32fcd710174aa458a749a9ede67e00301087
+ms.sourcegitcommit: 877965466ae58a6821d9d16871de1013895fd083
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2020
-ms.locfileid: "96303048"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "99987535"
 ---
 # <a name="activity-lifecycle"></a>Жизненный цикл действия
 
@@ -310,7 +310,7 @@ c = bundle.GetInt ("counter", -1);
 ```csharp
 protected override void OnRestoreInstanceState(Bundle savedState)
 {
-    base.OnRestoreSaveInstanceState(savedState);
+    base.OnRestoreInstanceState(savedState);
     var myString = savedState.GetString("myString");
     var myBool = savedState.GetBoolean("myBool");
 }
