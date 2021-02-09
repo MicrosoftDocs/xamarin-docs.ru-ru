@@ -32,9 +32,9 @@ items:
         href: ~/get-started/quickstarts/index.md
         items:
           - name: Файл > Создать
-            href: ~/get-started/quickstarts/single-page.md
+            href: ~/get-started/quickstarts/app.md
           - name: Многостраничное приложение
-            href: ~/get-started/quickstarts/multi-page.md
+            href: ~/get-started/quickstarts/navigation.md
           - name: База данных
             href: ~/get-started/quickstarts/database.md
           - name: Задание стиля

@@ -32,9 +32,9 @@
       expanded: true
       items:
         - name: Файл > Создать
-          href: quickstarts/single-page.md
-        - name: Многостраничное приложение
-          href: quickstarts/multi-page.md
+          href: quickstarts/app.md
+        - name: Навигация
+          href: quickstarts/navigation.md
         - name: База данных
           href: quickstarts/database.md
         - name: Задание стиля

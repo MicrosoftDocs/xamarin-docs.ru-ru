@@ -12,12 +12,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: 272b985cbd627fb001653e2e785015c802938fd2
-  ms.sourcegitcommit: 342cfbd2502ad92cadada4fa9aec669b99d7830a
+  ms.openlocfilehash: b94366d2b0b99d719e20b2ac125051c2f65edfc1
+  ms.sourcegitcommit: 1f391667869a4541dd9b42d78862dc01d69ed160
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "96604478"
+  ms.lasthandoff: 02/08/2021
+  ms.locfileid: "99818190"
 highlightedContent:
   items:
   - title: Что такое Xamarin.Forms?
@@ -61,9 +61,9 @@ productDirectory:
   - title: Создание полноценного приложения
     imageSrc: https://docs.microsoft.com//media/common/i_mobile-app-developement.svg
     links:
-    - url: ~/get-started/quickstarts/single-page.md
+    - url: ~/get-started/quickstarts/app.md
       text: Файл > Создать
-    - url: ~/get-started/quickstarts/multi-page.md
+    - url: ~/get-started/quickstarts/navigation.md
       text: Добавление навигации
     - url: ~/get-started/quickstarts/database.md
       text: Добавление базы данных
