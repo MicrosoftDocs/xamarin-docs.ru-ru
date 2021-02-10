@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e4c0e1500e6e445580a971c6af0af0fd267ee0f7
-ms.sourcegitcommit: a5a5c5de7d04f046a64e4875e180fc93227bf495
+ms.openlocfilehash: a204177ccd5319d0b2564c00ad0408f89bceb668
+ms.sourcegitcommit: 1f391667869a4541dd9b42d78862dc01d69ed160
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98690194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99974542"
 ---
 # <a name="visual-studio"></a>[Visual Studio](#tab/vswin)
 
@@ -26,7 +26,7 @@ ms.locfileid: "98690194"
     ![Снимок экрана: пакет NuGet для SQLite.NET в диспетчере пакетов NuGet](../images/vs/add-package.png "Пакет NuGet для SQLite.NET")
 
     > [!NOTE]
-    > Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
+    > Существует несколько пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
     > - **Авторы:** SQLite-net
     > - **Ссылка NuGet:** [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)  
     >
@@ -56,7 +56,7 @@ ms.locfileid: "98690194"
     ![Снимок экрана: пакет NuGet для SQLite.NET в диспетчере пакетов NuGet](../images/vsmac/add-package.png "Пакет NuGet для SQLite.NET")
 
     > [!NOTE]
-    > Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
+    > Существует несколько пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
     > - **Идентификатор:** sqlite-net-pcl
     > - **Автор**: SQLite-net
     > - **Ссылка NuGet:** [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)  

@@ -13,12 +13,12 @@ metadata:
   no-loc:
   - Xamarin.Forms
   - Xamarin.Essentials
-  ms.openlocfilehash: fdc3e6ec64cfda10151f5baabab47569b2df8635
-  ms.sourcegitcommit: b75c369adb8e02a429b6c0fed8ba4a855099bf01
+  ms.openlocfilehash: 6dfc1ba43e85ca8f4c5ad7ba2cd9eed78c9b9973
+  ms.sourcegitcommit: e122a06da4304c2477c934a357b236e0366a2b03
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/18/2021
-  ms.locfileid: "98554948"
+  ms.lasthandoff: 02/08/2021
+  ms.locfileid: "99821196"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -42,10 +42,10 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Создание одностраничного приложения Xamarin.Forms
-      url: quickstarts/single-page.md
-    - text: Навигация в многостраничном приложении Xamarin.Forms
-      url: quickstarts/multi-page.md
+    - text: Создание приложения Xamarin.Forms
+      url: quickstarts/app.md
+    - text: Навигация в приложении Xamarin.Forms
+      url: quickstarts/navigation.md
     - text: Хранение данных в локальной базе данных SQLite.NET
       url: quickstarts/database.md
     - text: Стилизация кроссплатформенного приложения Xamarin.Forms
