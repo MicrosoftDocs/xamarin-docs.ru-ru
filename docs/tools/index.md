@@ -4,12 +4,12 @@ description: Инструменты, которые помогут при раз
 author: davidortinau
 ms.author: daortin
 ms.date: 12/27/2019
-ms.openlocfilehash: b90b7c83d7182866afb1e976cfb065f711a3a1fd
-ms.sourcegitcommit: bc2850d6f55f2e68c6ffeb9d562b21c1a242bab9
+ms.openlocfilehash: 4d39d8390aabbe868e14ef90e0720c880b435dc8
+ms.sourcegitcommit: 0a6b19004932c1ac82e16c95d5d3d5eb35a5b17f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96850963"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100255311"
 ---
 # <a name="xamarin-tools"></a>Инструменты Xamarin
 
@@ -22,13 +22,6 @@ ms.locfileid: "96850963"
 ### <a name="ios-simulator-for-windows"></a>[Симулятор iOS для Windows](~/tools/ios-simulator/index.md)
 
 Используйте iOS Simulator с помощью Visual Studio в Windows.
-    :::column-end:::
-    :::column:::
-[![Xamarin Inspector](~/media/index/xamarin-tools-inspector.svg?branch=master)](~/tools/inspector/index.md)
-
-### <a name="xamarin-inspector"></a>[Xamarin Inspector](~/tools/inspector/index.md)
-
-Осваивайте и отлаживайте пользовательский интерфейс.
     :::column-end:::
     :::column:::
 [![Xamarin Profiler](~/media/index/xamarin-tools-profiler.svg?branch=master)](~/tools/profiler/index.md)

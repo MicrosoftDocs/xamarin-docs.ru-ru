@@ -9,15 +9,6 @@
           href: ios-simulator/deploy.md
         - name: Заметки о выпуске
           href: /xamarin/tools/ios-simulator/release-notes/?context=xamarin/tools
-    - name: Inspector
-      href: inspector/index.md
-      items:
-        - name: Установка и требования
-          href: inspector/install.md
-        - name: Проверка интерактивных приложений
-          href: inspector/inspect.md
-        - name: Заметки о выпуске
-          href: /xamarin/tools/inspector/release-notes/
     - name: Live Player
       items:
         - name: Сведения о предварительной версии Xamarin Live Player
@@ -28,7 +19,7 @@
           href: live-player/player.md
         - name: Устранение неполадок
           href: live-player/troubleshooting.md
-    - name: Profiler
+    - name: профилировщик
       href: profiler/index.md
       items:
         - name: Диагностика
