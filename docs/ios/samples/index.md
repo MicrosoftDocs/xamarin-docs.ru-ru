@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: profexorgeek
 ms.author: jusjohns
 ms.date: 12/31/2019
-ms.openlocfilehash: 4bffca8387b5c1e0b670509d29e0550e5623e209
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 83e762fd144c3df4cd311499aca548843b839d5a
+ms.sourcegitcommit: a0de974875f8fa1a29f7abc990137246789ad85a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91436904"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630180"
 ---
 # <a name="xamarinios-samples"></a>Примеры Xamarin. iOS
 
@@ -46,7 +46,7 @@ ms.locfileid: "91436904"
 
 :::row:::
     :::column:::
-[![Контакты](images/contacts.png)](/samples/xamarin/ios-samples/contacts)
+[![Контакты U](images/contacts.png)](/samples/xamarin/ios-samples/contacts)
 
 ### <a name="contacts"></a>[Контакты](/samples/xamarin/ios-samples/contacts)
 

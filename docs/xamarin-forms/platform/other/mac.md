@@ -11,16 +11,16 @@ ms.date: 05/03/2017
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 11897d2d3b8b7ba0a62956f1dbe4d8b873352e7a
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: 5a5d26813719bfe807fff6745683fa13bde4429e
+ms.sourcegitcommit: a0de974875f8fa1a29f7abc990137246789ad85a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84139559"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630154"
 ---
 # <a name="mac-platform-setup"></a>Настройка платформы Mac
 
-![Preview (Предварительный просмотр)](~/media/shared/preview.png)
+:::image type="icon" source="~/media/shared/preview.png" border="false":::
 
 Перед началом создайте (или используйте существующий) Xamarin.Forms проект. Добавлять можно только приложения Mac с помощью Visual Studio для Mac.
 
@@ -46,7 +46,7 @@ ms.locfileid: "84139559"
 
 6. В проекте Mac щелкните правой кнопкой мыши **ссылки** и добавьте ссылку на Xamarin.Forms проект (общий проект или проект библиотеки .NET Standard).
 
-    ![Добавление ссылки на Xamarin.Forms проект общего кода](mac-images/references-sml.png)
+    ![Добавьте ссылку на проект::: No-Loc (Xamarin. Forms)::: Shared Code.](mac-images/references-sml.png)
 
 7. Обновите **Main.CS** , чтобы инициализировать `AppDelegate` :
 

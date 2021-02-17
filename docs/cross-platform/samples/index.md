@@ -7,12 +7,12 @@ ms.technology: xamarin-forms
 author: profexorgeek
 ms.author: jusjohns
 ms.date: 12/26/2019
-ms.openlocfilehash: 0bca8208e1c9a0e78e3f17192002fd7e9dcd6ef6
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: 918f149c549a19f3e1488235571bdfb19411c711
+ms.sourcegitcommit: a0de974875f8fa1a29f7abc990137246789ad85a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91457410"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630193"
 ---
 # <a name="cross-platform-samples"></a>Примеры для разных платформ
 
@@ -50,21 +50,21 @@ ms.locfileid: "91457410"
 
 :::row:::
     :::column:::
-[![Acquaint](images/acquaint.jpg)](https://github.com/xamarinhq/app-acquaint/)
+[![Знакомство с экраном](images/acquaint.jpg)](https://github.com/xamarinhq/app-acquaint/)
 
 ### <a name="acquaint"></a>[Acquaint](https://github.com/xamarinhq/app-acquaint/)
 
 Приложение списка контактов с экраном сведений и редактирования. Исходный код доступен в собственных реализациях Xamarin и Xamarin.Forms.
     :::column-end:::
     :::column:::
-[![SmartHotel360](images/smarthotel360.png)](https://github.com/Microsoft/SmartHotel360-mobile-desktop-apps)
+[![Демонстрация SmartHotel360](images/smarthotel360.png)](https://github.com/Microsoft/SmartHotel360-mobile-desktop-apps)
 
 ### <a name="smarthotel360"></a>[SmartHotel360](https://github.com/Microsoft/SmartHotel360-mobile-desktop-apps)
 
 Демонстрация создания набора приложений с Xamarin и Azure для Connect 2017.
     :::column-end:::
     :::column:::
-[![BikeSharing360](images/bikesharing360.png)](https://github.com/Microsoft/BikeSharing360_MobileApps)
+[![Демонстрация BikeSharing360](images/bikesharing360.png)](https://github.com/Microsoft/BikeSharing360_MobileApps)
 
 ### <a name="bikesharing360"></a>[BikeSharing360](https://github.com/Microsoft/BikeSharing360_MobileApps)
 
@@ -73,7 +73,7 @@ ms.locfileid: "91457410"
 :::row-end:::
 :::row:::
     :::column:::
-[![eShop](images/eshop.png)](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/src/Mobile)
+[![Демонстрация Ешоп](images/eshop.png)](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/src/Mobile)
 
 ### <a name="eshop"></a>[eShop](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/src/Mobile)
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: profexorgeek
 ms.author: jusjohns
 ms.date: 12/27/2019
-ms.openlocfilehash: 2783380e486abf661955b90400a3a38a0c49bb94
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: 4d730626503ccef7a272f3ddf9f938aef07d6875
+ms.sourcegitcommit: a0de974875f8fa1a29f7abc990137246789ad85a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91457930"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630219"
 ---
 # <a name="xamarinandroid-samples"></a>Примеры Xamarin. Android
 
@@ -46,7 +46,7 @@ ms.locfileid: "91457930"
 
 :::row:::
     :::column:::
-[![Fragments](images/fragments.png)](/samples/xamarin/monodroid-samples/fragmentswalkthrough/)
+[![Пошаговое руководство](images/fragments.png)](/samples/xamarin/monodroid-samples/fragmentswalkthrough/)
 
 ### <a name="fragments"></a>[Фрагменты](/samples/xamarin/monodroid-samples/fragmentswalkthrough/)
 
@@ -70,14 +70,14 @@ ms.locfileid: "91457930"
 
 :::row:::
     :::column:::
-[![Панель инструментов](images/toolbar.png)](/samples/xamarin/monodroid-samples/android50-toolbar/)
+[![Образец панели инструментов](images/toolbar.png)](/samples/xamarin/monodroid-samples/android50-toolbar/)
 
 ### <a name="toolbar"></a>[Панель инструментов](/samples/xamarin/monodroid-samples/android50-toolbar/)
 
 Пример Android, заменяющий ActionBar новой панелью инструментов в Android 5.0 Lollipop.
     :::column-end:::
     :::column:::
-[![WatchFace](images/watchface.png)](/samples/xamarin/monodroid-samples/wear-watchface/)
+[![Android износ Ватчфаце](images/watchface.png)](/samples/xamarin/monodroid-samples/wear-watchface/)
 
 ### <a name="watchface"></a>[WatchFace](/samples/xamarin/monodroid-samples/wear-watchface/)
 

@@ -10,12 +10,12 @@ ms.date: 07/11/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 6e3edf7d0e7630429f8f1c76009987ee8a4b737a
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 0797829a566ddd71311cb701dbc4d6b1f7bb1c2e
+ms.sourcegitcommit: a0de974875f8fa1a29f7abc990137246789ad85a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93375334"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630245"
 ---
 # <a name="accessing-skiasharp-bitmap-pixel-bits"></a>Доступ к битовым точкам точечного рисунка SkiaSharp
 
@@ -492,7 +492,7 @@ public class GradientBitmapPage : ContentPage
 | API       | Тип данных | iOS  | Android | UWP  |
 | --------- | --------- | ----:| -------:| ----:|
 | SetPixel  |           | 3,17 |   10,77 | 3.49 |
-| Перекрытых    |           | 0,32 |    1,23 | 0,07 |
+| Перекрытых    |           | 0,32 |    1.23 | 0,07 |
 | В точках | byte      | 0,09 |    0,24 | 0,10 |
 |           | uint      | 0,06 |    0,26 | 0,05 |
 |           | скколор   | 0,29 |    0,99 | 0,07 |
@@ -792,7 +792,7 @@ public class PosterizePage : ContentPage
 
 Код в конструкторе обращается к каждому пикселю, выполняет побитовую операцию и со значением 0xE0E0E0FF, а затем сохраняет результат обратно в точечный рисунок. Значения 0xE0E0E0FF сохраняются старшие 3 бита каждого компонента цвета и устанавливают младшие 5 бит в значение 0. Вместо 2<sup>24</sup> или 16 777 216 цветов битовая карта сокращается до 2<sup>9</sup> или 512 цветов:
 
-[![Постеризация](pixel-bits-images/Posterize.png "Постеризация")](pixel-bits-images/Posterize-Large.png#lightbox)
+[![На снимке экрана показан постеризеный образ обезьяны Toy на двух мобильных устройствах и в окне рабочего стола.](pixel-bits-images/Posterize.png "Постеризация")](pixel-bits-images/Posterize-Large.png#lightbox)
 
 ## <a name="related-links"></a>Связанные ссылки
 

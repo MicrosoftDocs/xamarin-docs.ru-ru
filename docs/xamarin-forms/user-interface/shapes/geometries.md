@@ -10,14 +10,14 @@ ms.date: 09/28/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f3a89e0c5c49ec790cf35443030d50d3ddef9ed4
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: 2798ee872e9db86a31beb6021f6bf4c3d82caaa2
+ms.sourcegitcommit: a0de974875f8fa1a29f7abc990137246789ad85a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97939814"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630258"
 ---
-# <a name="no-locxamarinforms-shapes-geometries"></a>Xamarin.Forms Фигуры: геометрические объекты
+# <a name="xamarinforms-shapes-geometries"></a>Xamarin.Forms Фигуры: геометрические объекты
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-shapesdemos/)
 
@@ -271,7 +271,7 @@ ms.locfileid: "97939814"
 
 В этом примере кривая Безье третьего порядка рисуется от (10, 10) до (300, 10). Кривая имеет две контрольные точки в (100, 0) и (200 200):
 
-![BezierSegment](geometry-images/beziersegment.png "BezierSegment")
+![График показывает кривую Безье.](geometry-images/beziersegment.png "BezierSegment")
 
 ### <a name="create-a-linesegment"></a>Создание LineSegment
 
@@ -310,7 +310,7 @@ ms.locfileid: "97939814"
 
 В этом примере сегмент линии рисуется от (10 100) до (100 100) и от (100 100) до (100, 50). Кроме того, `PathFigure` закрывается, так как `IsClosed` свойство имеет значение `true` . Это приводит к прорисовке треугольника:
 
-![линесегментс](geometry-images/linesegments.png "линесегментс")
+![На графике показан треугольник.](geometry-images/linesegments.png "линесегментс")
 
 ### <a name="create-a-polybeziersegment"></a>Создание PolyBezierSegment
 
@@ -345,7 +345,7 @@ ms.locfileid: "97939814"
 
 В этом примере параметр `PolyBezierSegment` задает две кривые Безье третьего порядка. Первая кривая — от (10, 10) до (150 100) с контрольной точкой (0, 0) и другой контрольной точкой (100, 0). Вторая кривая — от (150 100) до (300, 10) с контрольной точкой (150, 0) и другой контрольной точкой (200, 0):
 
-![PolyBezierSegment](geometry-images/polybeziersegment.png "PolyBezierSegment")
+![На графике показаны две соединенные кривые Безье.](geometry-images/polybeziersegment.png "PolyBezierSegment")
 
 ### <a name="create-a-polylinesegment"></a>Создание PolyLineSegment
 
@@ -376,7 +376,7 @@ ms.locfileid: "97939814"
 
 В этом примере параметр `PolyLineSegment` определяет две строки. Первая строка — от (10, 10) до (50, 10), а вторая — от (50, 10) до (50, 50):
 
-![PolyLineSegment](geometry-images/polylinesegment.png "PolyLineSegment")
+![На графике линии показаны две линии с правым углом.](geometry-images/polylinesegment.png "PolyLineSegment")
 
 ### <a name="create-a-polyquadraticbeziersegment"></a>Создание PolyQuadraticBezierSegment
 
@@ -411,7 +411,7 @@ ms.locfileid: "97939814"
 
 В этом примере параметр `PolyQuadraticBezierSegment` задает две кривые Безье. Первая кривая — от (10, 10) до (150, 50) с контрольной точкой в (100 100). Вторая кривая — от (100 100) до (15 200) с контрольной точкой в (0100):
 
-![PolyQuadraticBezierSegment](geometry-images/polyquadraticbeziersegment.png "PolyQuadraticBezierSegment")
+![На графике показаны две соединенные кривые Безье.](geometry-images/polyquadraticbeziersegment.png "PolyQuadraticBezierSegment")
 
 ### <a name="create-a-quadraticbeziersegment"></a>Создание QuadraticBezierSegment
 
@@ -452,7 +452,7 @@ ms.locfileid: "97939814"
 
 В этом примере кривая Безье второго типа рисуется от (10, 10) до (300, 10). Кривая имеет контрольную точку в (200 200):
 
-![QuadraticBezierSegment](geometry-images/quadraticbeziersegment.png "QuadraticBezierSegment")
+![На графике показана кривая Безье квадратичных кривых.](geometry-images/quadraticbeziersegment.png "QuadraticBezierSegment")
 
 ### <a name="create-complex-geometries"></a>Создание сложных геометрических объектов
 
@@ -583,9 +583,9 @@ ms.locfileid: "97939814"
 
 В этом примере `EllipseGeometry` объединяются четыре объекта с одинаковыми координатами x-RADIUS и y-радиуса, но с разными координатами центра. При этом создаются четыре перекрывающихся круга, внутренние области которых заполняются оранжевый из-за правила заполнения по умолчанию `EvenOdd` :
 
-![GeometryGroup](geometry-images/geometrygroup.png "GeometryGroup")
+![На графике показано четыре перекрывающихся круга с заполненными регионами.](geometry-images/geometrygroup.png "GeometryGroup")
 
-### <a name="roundrectanglegeometry"></a>раундректанглежеометри
+### <a name="roundrectanglegeometry"></a>RoundRectangleGeometry
 
 Круглая прямоугольная геометрия представляет геометрию прямоугольника или квадрата со скругленными углами и определяется радиусом угла и [`Rect`](xref:Xamarin.Forms.Rect) структурой, указывающей ее относительное расположение и высоту и ширину.
 
