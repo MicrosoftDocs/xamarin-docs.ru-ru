@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/21/2017
-ms.openlocfilehash: 303d7d58cc0274b8d9f82c33c9f153b9fd00269f
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 9d9ae44fc303af914d19f719f32e395accfd452e
+ms.sourcegitcommit: e7a5d1ec9e50a09b3b24f4c57850a4763c3406d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91437127"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101087451"
 ---
 # <a name="can-i-change-the-output-path-of-the-ipa-file"></a>Можно ли изменить выходной путь к файлу IPA?
 
@@ -44,7 +44,7 @@ ms.locfileid: "91437127"
 
 2. Задайте для DestinationFolder нужную выходную папку. Как правило, при необходимости можно использовать свойства MSBuild (например, $ (OutputPath)) в этом аргументе.
 
-## <a name="notes"></a>Примечания
+### <a name="notes"></a>Примечания
 
 - `CreateIpaDependsOn`Свойство определяется в `Xamarin.iOS.Common.targets` файле, который является частью Xamarin. iOS. Он ведет себя, как описано в разделе [Переопределение предопределенных целевых объектов](/visualstudio/msbuild/how-to-extend-the-visual-studio-build-process#overriding-predefined-targets) в статье [как расширить процесс сборки Visual Studio](/visualstudio/msbuild/how-to-extend-the-visual-studio-build-process).
 
@@ -79,7 +79,7 @@ ms.locfileid: "91437127"
 
 2. Присвойте свойству `DestinationFolder` требуемую выходную папку. Как правило, при необходимости можно использовать свойства MSBuild (например, `$(OutputPath)` ) в этом аргументе.
 
-## <a name="notes"></a>Примечания
+### <a name="notes"></a>Примечания
 
 - `CreateIpaDependsOn`Свойство определяется в `Xamarin.iOS.Common.targets` файле, который является частью Xamarin. iOS. как описано в разделе [Переопределение предопределенных целевых объектов](/visualstudio/msbuild/how-to-extend-the-visual-studio-build-process#overriding-predefined-targets) в статье [как расширить процесс сборки Visual Studio](/visualstudio/msbuild/how-to-extend-the-visual-studio-build-process).
 
