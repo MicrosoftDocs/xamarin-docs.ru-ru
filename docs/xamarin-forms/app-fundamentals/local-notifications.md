@@ -6,18 +6,18 @@ ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7
 ms.technology: xamarin-forms
 author: profexorgeek
 ms.author: jusjohns
-ms.date: 12/03/2020
+ms.date: 02/12/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 1dad280ee8253d4ef627c5ab7ec9c8dcfa0408a2
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: 2ebc226e865bbf3e482857b9c99fdda5d4922a44
+ms.sourcegitcommit: 0a6b19004932c1ac82e16c95d5d3d5eb35a5b17f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940451"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100255382"
 ---
-# <a name="local-notifications-in-no-locxamarinforms"></a>Локальные уведомления в Xamarin.Forms
+# <a name="local-notifications-in-xamarinforms"></a>Локальные уведомления в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/local-notifications)
 
@@ -47,7 +47,7 @@ public interface INotificationManager
 
 Этот интерфейс будет реализован в каждом проекте платформы. Событие `NotificationReceived` позволяет приложению обрабатывать входящие уведомления. Метод `Initialize` должен выполнять любую собственную логику платформы, необходимую для подготовки системы уведомлений. С помощью метода `SendNotification` в определенное время, заданное с помощью необязательного параметра `DateTime`, должно быть отправлено уведомление. Метод `ReceiveNotification` должен вызываться базовой платформой при получении сообщения.
 
-## <a name="consume-the-interface-in-no-locxamarinforms"></a>Использование интерфейса в Xamarin.Forms
+## <a name="consume-the-interface-in-xamarinforms"></a>Использование интерфейса в Xamarin.Forms
 
 После создания интерфейса его можно использовать в общем проекте Xamarin.Forms, даже если реализация платформы еще не создана. Пример приложения содержит `ContentPage` с именем **MainPage.xaml** со следующим содержимым:
 
@@ -179,10 +179,15 @@ namespace LocalNotifications.Droid
 
         public static AndroidNotificationManager Instance { get; private set; }
 
+        public AndroidNotificationManager() => Initialize();
+
         public void Initialize()
         {
-            CreateNotificationChannel();
-            Instance = this;
+            if (Instance == null)
+            {
+                CreateNotificationChannel();
+                Instance = this;
+            }
         }
 
         public void SendNotification(string title, string message, DateTime? notifyTime = null)
@@ -284,14 +289,15 @@ public class AlarmHandler : BroadcastReceiver
             string title = intent.GetStringExtra(AndroidNotificationManager.TitleKey);
             string message = intent.GetStringExtra(AndroidNotificationManager.MessageKey);
 
-            AndroidNotificationManager.Instance.Show(title, message);
+            AndroidNotificationManager manager = AndroidNotificationManager.Instance ?? new AndroidNotificationManager();
+            manager.Show(title, message);
         }
     }
 }
 ```
 
 > [!IMPORTANT]
-> По умолчанию уведомления, запланированные с помощью класса `AlarmManager`, сбрасываются после перезагрузки устройства. Но можно реализовать в приложении возможность автоматически возобновить запланированные уведомления при перезапуске устройства. Дополнительные сведения см. в разделе [Start an alarm when the device restarts](https://developer.android.com/training/scheduling/alarms#boot) (Запуск службы сигнализации при перезагрузке устройства) статьи [Schedule repeating alarms](https://developer.android.com/training/scheduling/alarms) (Планирование повторяющихся сигналов) на сайте developer.android.com. Сведения о фоновой обработке в Android см. в разделе [Guide to Background processing](https://developer.android.com/guide/background) (Руководство по фоновой обработке) на сайте developer.android.com.
+> По умолчанию уведомления, запланированные с помощью класса `AlarmManager`, сбрасываются после перезагрузки устройства. Но можно реализовать в приложении возможность автоматически возобновить запланированные уведомления при перезапуске устройства. Дополнительные сведения см. в разделе [Запуск службы сигнализации при перезагрузке устройства](https://developer.android.com/training/scheduling/alarms#boot) статьи [Планирование повторяющихся сигналов](https://developer.android.com/training/scheduling/alarms) на сайте developer.android.com и в [примере](/samples/xamarin/xamarin-forms-samples/local-notifications). Сведения о фоновой обработке в Android см. в разделе [Guide to Background processing](https://developer.android.com/guide/background) (Руководство по фоновой обработке) на сайте developer.android.com.
 
 Дополнительные сведения о широковещательных приемниках см. в статье [Широковещательные приемники в Xamarin.Android](~/android/app-fundamentals/broadcast-receivers.md).
 
@@ -460,18 +466,23 @@ public class iOSNotificationReceiver : UNUserNotificationCenterDelegate
 {
     public override void WillPresentNotification(UNUserNotificationCenter center, UNNotification notification, Action<UNNotificationPresentationOptions> completionHandler)
     {
-        DependencyService.Get<INotificationManager>().ReceiveNotification(notification.Request.Content.Title, notification.Request.Content.Body);
-
-        // alerts are always shown for demonstration but this can be set to "None"
-        // to avoid showing alerts if the app is in the foreground
+        ProcessNotification(notification);
         completionHandler(UNNotificationPresentationOptions.Alert);
     }
+
+    void ProcessNotification(UNNotification notification)
+    {
+        string title = notification.Request.Content.Title;
+        string message = notification.Request.Content.Body;
+
+        DependencyService.Get<INotificationManager>().ReceiveNotification(title, message);
+    }    
 }
 ```
 
 Этот класс использует `DependencyService` для получения экземпляра класса `iOSNotificationManager` и предоставляет входные данные уведомления методу `ReceiveNotification`.
 
-Во время запуска приложения класс `AppDelegate` должен указать пользовательский делегат. Во время запуска приложения класс `AppDelegate` должен указывать объект `iOSNotificationReceiver` в качестве делегата `UNUserNotificationCenter`. Это происходит в методе `FinishedLaunching`:
+Во время запуска приложения класс `AppDelegate` должен указывать объект `iOSNotificationReceiver` в качестве делегата `UNUserNotificationCenter`. Это происходит в методе `FinishedLaunching`:
 
 ```csharp
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)

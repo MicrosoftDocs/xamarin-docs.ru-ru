@@ -6,34 +6,34 @@ ms.technology: xamarin-forms
 ms.assetid: 3318B8F8-3B24-489E-8E7B-28FA948796F8
 author: davidbritch
 ms.author: dabritch
-ms.date: 01/06/2020
+ms.date: 01/28/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 03d20114fb84bf17be40d9166e32c3d631786069
-ms.sourcegitcommit: 32d2476a5f9016baa231b7471c88c1d4ccc08eb8
+ms.openlocfilehash: a8a3aa070b061eec48cd17fb07ca264b813e4822
+ms.sourcegitcommit: 1f391667869a4541dd9b42d78862dc01d69ed160
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84132513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99818205"
 ---
 # <a name="xamarinforms-quickstarts"></a>Краткие руководства по Xamarin.Forms
 
 _Узнайте, как создавать мобильные приложения с помощью Xamarin.Forms._
 
-## <a name="create-a-single-page-xamarinforms-applicationsingle-pagemd"></a>[Создание одностраничного приложения Xamarin.Forms](single-page.md)
+## <a name="create-a-xamarinforms-application"></a>[Создание приложения Xamarin.Forms](app.md)
 
-Узнайте, как с помощью Xamarin.Forms создать одностраничное кроссплатформенное приложение, которое позволяет ввести заметку и сохранить ее в хранилище устройства.
+Узнайте, как создать кроссплатформенное приложение Xamarin.Forms, которое позволяет ввести заметку и сохранить ее в хранилище устройства.
 
-## <a name="perform-navigation-in-a-multi-page-xamarinforms-applicationmulti-pagemd"></a>[Навигация в многостраничном приложении Xamarin.Forms](multi-page.md)
+## <a name="perform-navigation-in-a-xamarinforms-application"></a>[Навигация в приложении Xamarin.Forms](navigation.md)
 
-Узнайте, как на основе одностраничного приложения, которое может хранить одну заметку, создать многостраничное приложение, позволяющее хранить несколько заметок.
+Узнайте, как на основе приложения, которое может хранить одну заметку, создать приложение, позволяющее хранить несколько заметок.
 
 ## <a name="store-data-in-a-local-sqlitenet-database"></a>[Хранение данных в локальной базе данных SQLite.NET](database.md)
 
 Узнайте, как хранить данные в локальной базе данных SQLite.NET.
 
-## <a name="style-a-cross-platform-xamarinforms-applicationstylingmd"></a>[Стилизация кроссплатформенного приложения Xamarin.Forms](styling.md)
+## <a name="style-a-cross-platform-xamarinforms-application"></a>[Стилизация кроссплатформенного приложения Xamarin.Forms](styling.md)
 
 Узнайте, как изменить стиль кроссплатформенного приложения Xamarin.Forms с помощью стилей XAML.
 

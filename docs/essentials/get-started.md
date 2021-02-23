@@ -1,6 +1,6 @@
 ---
 title: Начало работы с Xamarin.Essentials
-description: Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса.
+description: Начало работы с Xamarin.Essentials, обеспечивающим единый кроссплатформенный API, который работает с любым приложением iOS, Android или UWP.
 ms.assetid: B2669C48-B659-4854-BD80-FEB0E876F5B9
 author: jamesmontemagno
 ms.author: jamont
@@ -9,14 +9,14 @@ ms.date: 05/11/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f8a65c7bd3476114b849bb0e9383227e2ec78c7c
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 8bf7b03cb7bb211d0e25e0f75e527ad4c5c1dbd2
+ms.sourcegitcommit: e7a5d1ec9e50a09b3b24f4c57850a4763c3406d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91432616"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101087301"
 ---
-# <a name="get-started-with-no-locxamarinessentials"></a>Начало работы с Xamarin.Essentials
+# <a name="get-started-with-xamarinessentials"></a>Начало работы с Xamarin.Essentials
 
 Xamarin.Essentials обеспечивает единый кроссплатформенный API-интерфейс, который предоставляет доступ из общего кода для любого приложения iOS, Android и универсальной платформы Windows независимо от используемого метода создания пользовательского интерфейса. Дополнительные сведения о поддерживаемых операционных системах см. в [руководстве по поддержке платформ и функций](platform-feature-support.md).
 
@@ -31,7 +31,7 @@ Xamarin.Essentials предоставляется в виде пакета NuGet
     > [!IMPORTANT]
     > При добавлении в проект UWP укажите в свойствах проекта сборку 16299 или более позднюю версию.
 
-3. Добавьте в проект пакет NuGet [ **Xamarin.Essentials** ](https://www.nuget.org/packages/Xamarin.Essentials/):
+3. Добавьте в проект пакет NuGet [ **Xamarin.Essentials**](https://www.nuget.org/packages/Xamarin.Essentials/):
 
     <!--markdownlint-disable MD023 -->
     # <a name="visual-studio"></a>[Visual Studio](#tab/windows)
@@ -93,7 +93,7 @@ Xamarin.Essentials предоставляется в виде пакета NuGet
 
 6. Выполните инструкции в [руководствах Xamarin.Essentials](index.md) по копированию и вставке фрагментов кода для каждого компонента.
 
-## <a name="no-locxamarinessentials---cross-platform-apis-for-mobile-apps-video"></a>Xamarin.Essentials — кроссплатформенные API-интерфейсы для мобильных приложений (видео)
+## <a name="xamarinessentials---cross-platform-apis-for-mobile-apps-video"></a>Xamarin.Essentials — кроссплатформенные API-интерфейсы для мобильных приложений (видео)
 
 > [!Video https://channel9.msdn.com/Shows/XamarinShow/Snack-Pack-XamarinEssentials-Cross-Platform-APIs-for-Mobile-Apps/player]
 

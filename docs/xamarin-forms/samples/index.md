@@ -10,14 +10,14 @@ ms.date: 12/27/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 846cfed068cb03af9ade7af4258021abc7a0c59e
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 3e49b472427ee51674c4dfbfd67fd4e7769fde43
+ms.sourcegitcommit: a0de974875f8fa1a29f7abc990137246789ad85a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91562539"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630167"
 ---
-# <a name="no-locxamarinforms-samples"></a>Примеры Xamarin.Forms
+# <a name="xamarinforms-samples"></a>Примеры Xamarin.Forms
 
 Примеры приложений Xamarin.Forms и образцы кода помогут вам начать работу с платформой Xamarin.Forms и понять ее концепции.
 
@@ -25,14 +25,14 @@ ms.locfileid: "91562539"
 
 :::row:::
     :::column:::
-[![Список задач](images/todo.png)](/samples/xamarin/xamarin-forms-samples/todo/)
+[![Приложение со списком задач](images/todo.png)](/samples/xamarin/xamarin-forms-samples/todo/)
 
 ### <a name="todo"></a>[Список задач](/samples/xamarin/xamarin-forms-samples/todo/)
 
 В этом примере представлен список приложений списка задач. Их данные сохраняются в локальной базе данных SQLite.
     :::column-end:::
     :::column:::
-[![BugSweeper](images/bugsweeper.png)](/samples/xamarin/xamarin-forms-samples/bugsweeper/)
+[![Игра BugSweeper](images/bugsweeper.png)](/samples/xamarin/xamarin-forms-samples/bugsweeper/)
 
 ### <a name="bugsweeper"></a>[BugSweeper](/samples/xamarin/xamarin-forms-samples/bugsweeper/)
 
@@ -49,7 +49,7 @@ ms.locfileid: "91562539"
 
 :::row:::
     :::column:::
-[![SpinPaint](images/spinpaint.png)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-spinpaint/)
+[![Приложение SpinPaint](images/spinpaint.png)](/samples/xamarin/xamarin-forms-samples/skiasharpforms-spinpaint/)
 
 ### <a name="spinpaint"></a>[SpinPaint](/samples/xamarin/xamarin-forms-samples/skiasharpforms-spinpaint/)
 
@@ -63,7 +63,7 @@ ms.locfileid: "91562539"
 XAML (расширяемый язык разметки для приложений) позволяет разработчикам определить пользовательские интерфейсы приложений Xamarin.Forms с помощью разметки вместо кода.
     :::column-end:::
         :::column:::
-[![Xuzzle](images/xuzzle.png)](/samples/xamarin/mobile-samples/liveplayer-xamagonxuzzlelp/)
+[![Игра Xuzzle](images/xuzzle.png)](/samples/xamarin/mobile-samples/liveplayer-xamagonxuzzlelp/)
 
 ### <a name="xuzzle"></a>[Xuzzle](/samples/xamarin/mobile-samples/liveplayer-xamagonxuzzlelp/)
 

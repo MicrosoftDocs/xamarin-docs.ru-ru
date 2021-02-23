@@ -5,13 +5,13 @@ ms.prod: xamarin
 ms.assetid: FD8FE199-898B-4841-8041-CC9CA1A00917
 author: davidbritch
 ms.author: dabritch
-ms.date: 04/29/2020
-ms.openlocfilehash: 2b289e5ffe4fba5c2f20caf0cf1d59cd277767f9
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.date: 02/04/2021
+ms.openlocfilehash: 6c9e91d8c434a0deea8c419def7dc3f1800b1d06
+ms.sourcegitcommit: 3b6eec7841868f50827271105577ecdc6766c162
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93373423"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99606580"
 ---
 # <a name="connect-to-local-web-services-from-ios-simulators-and-android-emulators"></a>Подключение к локальным веб-службам из iOS Simulator и Android Emulator
 
@@ -83,15 +83,17 @@ iOS Simulator использует сеть главного компьютер�
 
 Виртуальный маршрутизатор каждого эмулятора управляет специализированным сетевым пространством, которое имеет предварительно выделенные адреса, а адрес `10.0.2.2` является псевдонимом для интерфейса замыкания узла на себя (127.0.0.1 на компьютере разработки). Таким образом, если имеется локальная защищенная веб-служба, которая предоставляет операцию GET по относительному URI `/api/todoitems/`, то приложение, работающее в Android Emulator, может использовать операцию путем отправки запроса GET к `https://10.0.2.2:<port>/api/todoitems/`.
 
-### <a name="xamarinforms-example"></a>Пример Xamarin.Forms
+### <a name="detect-the-operating-system"></a>Определение операционной системы
 
-В приложении Xamarin.Forms можно определить платформу, на которой запущено приложение, с помощью класса [`Device`](xref:Xamarin.Forms.Device). Соответствующее имя узла, предоставляющего доступ к локальной защищенной веб-службе, можно задать следующим образом:
+С помощью класса [`DeviceInfo`](xref:Xamarin.Essentials.DeviceInfo) можно определить платформу, на которой запущено приложение. Соответствующее имя узла, предоставляющего доступ к локальной защищенной веб-службе, можно задать следующим образом:
 
 ```csharp
 public static string BaseAddress =
-    Device.RuntimePlatform == Device.Android ? "https://10.0.2.2:5001" : "https://localhost:5001";
+    DeviceInfo.Platform == DevicePlatform.Android ? "https://10.0.2.2:5001" : "https://localhost:5001";
 public static string TodoItemsUrl = $"{BaseAddress}/api/todoitems/";
 ```
+
+Дополнительные сведения о классе `DeviceInfo` см. в разделе [Xamarin. Essentials. Сведения об устройстве](~/essentials/device-information.md).
 
 ## <a name="bypass-the-certificate-security-check"></a>Обход проверки безопасности сертификата
 
@@ -124,9 +126,58 @@ public HttpClientHandler GetInsecureHandler()
 #endif
 ```
 
+## <a name="enable-http-clear-text-traffic"></a>Включение HTTP-трафика с открытым текстом
+
+При необходимости для проектов iOS и Android можно настроить разрешение HTTP-трафика с открытым текстом. Если для серверной службы настроено разрешение HTTP-трафика, в базовых URL-адресах можно указать HTTP, а затем настроить для проектов разрешение трафика с открытым текстом:
+
+```csharp
+public static string BaseAddress =
+    DeviceInfo.Platform == DevicePlatform.Android ? "http://10.0.2.2:5000" : "http://localhost:5000";
+public static string TodoItemsUrl = $"{BaseAddress}/api/todoitems/";
+```
+
+### <a name="ios-ats-opt-out"></a>Отказ от ATS в iOS
+
+Чтобы включить в iOS локальный трафик с открытым текстом, следует [отказаться от ATS](~/ios/app-fundamentals/ats.md#optout), добавив следующий текст в файл **Info.plist**:
+
+```xml
+<key>NSAppTransportSecurity</key>    
+<dict>
+    <key>NSAllowsLocalNetworking</key>
+    <true/>
+</dict>
+```
+
+### <a name="android-network-security-configuration"></a>Конфигурация сетевой безопасности в Android
+
+Чтобы включить в Android локальный трафик с открытым текстом, необходимо создать конфигурацию сетевой безопасности, добавив новый XML-файл с именем **network_security_config.xml** в папку **Resources/xml**. XML-файл должен содержать следующую конфигурацию:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">10.0.2.2</domain>
+  </domain-config>
+</network-security-config>
+```
+
+Затем настройте свойство **networkSecurityConfig** в узле **приложения** в манифесте Android:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    <application android:networkSecurityConfig="@xml/network_security_config">
+        ...
+    </application>
+</manifest>
+```
+
 ## <a name="related-links"></a>Связанные ссылки
 
 - [TodoREST (пример)](/samples/xamarin/xamarin-forms-samples/webservices-todorest/)
 - [Включение локального HTTPS](/aspnet/core/getting-started#enable-local-https)
 - [HttpClient and SSL/TLS implementation selector for iOS/macOS](~/cross-platform/macios/http-stack.md) (Селектор реализации HttpClient и SSL/TLS для iOS и macOS)
 - [HttpClient Stack and SSL/TLS Implementation selector for Android](~/android/app-fundamentals/http-stack.md) (Селектор реализации HttpClient и SSL/TLS для Android)
+- [Конфигурация сетевой безопасности в Android](https://devblogs.microsoft.com/xamarin/cleartext-http-android-network-security/)
+- [Защита транспорта приложения в iOS](~/ios/app-fundamentals/ats.md)
+- [Xamarin.Essentials. Сведения об устройстве](~/essentials/device-information.md)

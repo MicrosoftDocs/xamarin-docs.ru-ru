@@ -10,14 +10,14 @@ ms.date: 07/19/2018
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: af6da36e242ae2d967d795b61d65a38e5e43e22b
-ms.sourcegitcommit: 122b8ba3dcf4bc59368a16c44e71846b11c136c5
+ms.openlocfilehash: 0f04037941cb73af2f6cb9987c7cd4525477720b
+ms.sourcegitcommit: e7a5d1ec9e50a09b3b24f4c57850a4763c3406d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91557287"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101087470"
 ---
-# <a name="creating-mobile-apps-with-no-locxamarinforms-book"></a>Книга о создании мобильных приложений с помощью Xamarin.Forms
+# <a name="creating-mobile-apps-with-xamarinforms-book"></a>Книга о создании мобильных приложений с помощью Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](https://github.com/xamarin/xamarin-forms-book-samples)
 
@@ -29,11 +29,11 @@ ms.locfileid: "91557287"
 
 Скачайте электронную книгу из Microsoft Virtual Academy в любом удобном формате:
 
-- [**PDF (56 МБ)** ](https://aka.ms/xamformsebook)
+- [**PDF (56 МБ)**](https://aka.ms/xamformsebook)
 
-- [**ePub (151 МБ)** ](https://aka.ms/xamebook/epub)
+- [**ePub (151 МБ)**](https://aka.ms/xamebook/epub)
 
-- [**Kindle Edition (325 МБ)** ](https://aka.ms/xamebook/mobi)
+- [**Kindle Edition (325 МБ)**](https://aka.ms/xamebook/mobi)
 
 Можно также [загрузить отдельные главы](#download-chapters-and-summaries) в формате PDF-файлов.
 
@@ -127,7 +127,7 @@ Xamarin.Forms более не поддерживает платформы Window
 
 ### <a name="samples"></a>Примеры
 
-В репозитории [**xamarin-forms-book-samples**](https://github.com/xamarin/xamarin-forms-book-samples) на сайте GitHub в ветви **original-code-from-book** содержатся примеры программ, согласованные с этой книгой. Ветвь **master** содержит проекты, которые были обновлены с учетом устаревания некоторых API и расширения других API. Кроме того, проекты Android в ветви **master** обновлены с учетом [материального исполнения AppCompat](~/xamarin-forms/platform/android/index.md) для Android и в большинстве случаев теперь отображают черный текст на белом фоне.
+В репозитории [**xamarin-forms-book-samples**](https://github.com/xamarin/xamarin-forms-book-samples) на сайте GitHub в ветви **original-code-from-book** содержатся примеры программ, согласованные с этой книгой. Главная ветвь содержит проекты, в которых удалены нерекомендуемые API и добавлены улучшенные API. Кроме того, проекты Android в главной ветви обновлены с учетом [материального исполнения с помощью AppCompat](~/xamarin-forms/platform/android/index.md) для Android и в большинстве случаев теперь отображают черный текст на белом фоне.
 
 ## <a name="related-links"></a>Связанные ссылки
 

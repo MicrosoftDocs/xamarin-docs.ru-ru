@@ -1,23 +1,24 @@
 ---
 title: Хранение данных в локальной базе данных SQLite.NET
-description: Эта статья описывает, как хранить данные в локальной базе данных SQLite.NET.
+description: В этой статье описывается, как хранить данные в локальной базе данных SQLite.NET из приложения Оболочки в Xamarin.Forms.
 zone_pivot_groups: platform
 ms.topic: quickstart
 ms.prod: xamarin
-ms.assetid: 5BF901BD-FDE8-4B74-B4AB-418E81745A3B
+ms.assetid: F669CE4E-1E1B-409F-BC1C-8364633EB7EF
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 04/01/2019
+ms.custom: contperf-fy21q3
+ms.date: 01/28/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 54a6dca3b16ed4ac9fb7ab2065f1d8462a3f3da4
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: cfc479e6211692f3de7d78e2fd52cd80a2630660
+ms.sourcegitcommit: 1f391667869a4541dd9b42d78862dc01d69ed160
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93368119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99818408"
 ---
 # <a name="store-data-in-a-local-sqlitenet-database"></a>Хранение данных в локальной базе данных SQLite.NET
 
@@ -25,17 +26,16 @@ ms.locfileid: "93368119"
 
 В этом кратком руководстве рассматриваются следующие темы:
 
-- Использование диспетчер пакетов NuGet для добавления пакета NuGet в проект.
 - Локальное хранение данных в базе данных SQLite.NET.
 
-Это краткое руководство описывает, как хранить данные в локальной базе данных SQLite.NET. Ниже показано итоговое приложение:
+В этом кратком руководстве объясняется, как хранить данные в локальной базе данных SQLite.NET из приложения Оболочки в Xamarin.Forms. Ниже показано итоговое приложение:
 
-[![Страница заметок](database-images/screenshots1-sml.png)](database-images/screenshots1.png#lightbox "Страница заметок")
-[![Страница ввода заметки](database-images/screenshots2-sml.png)](database-images/screenshots2.png#lightbox "Страница ввода заметки")
+[![Страница заметок](database-images/screenshots1-sml.png)](database-images/screenshots1.png#lightbox)
+[![Страница ввода заметки](database-images/screenshots2-sml.png)](database-images/screenshots2.png#lightbox)
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Прежде чем приступать к этому краткому руководству, необходимо успешно завершить [предыдущее](multi-page.md). Также вы можете скачать [пример из предыдущего краткого руководства](/samples/xamarin/xamarin-forms-samples/getstarted-notes-multipage/) и использовать его в качестве отправной точки для работы с этим руководством.
+Прежде чем приступать к этому краткому руководству, необходимо успешно завершить [предыдущее](navigation.md). Также вы можете скачать [пример из предыдущего краткого руководства](/samples/xamarin/xamarin-forms-samples/getstarted-notes-navigation/) и использовать его в качестве отправной точки для работы с этим руководством.
 
 ::: zone pivot="windows"
 
@@ -43,25 +43,28 @@ ms.locfileid: "93368119"
 
 1. Запустите Visual Studio и откройте решение Notes.
 
-2. В **обозревателе решений** выберите проект **Notes** , щелкните правой кнопкой мыши и выберите **Управление пакетами NuGet...** :
+2. В **обозревателе решений** щелкните правой кнопкой мыши решение **Notes** и выберите **Manage NuGet Packages for Solution...** (Управление пакетами NuGet для решения...):
 
-    ![Добавление пакетов NuGet](database-images/vs/add-nuget-packages.png)    
+    ![Управление пакетами NuGet](database-images/vs/manage-nuget-packages.png)    
 
-3. В разделе **Диспетчер пакетов NuGet** выберите вкладку **Обзор** , выполните поиск пакета NuGet **sqlite-net-pcl** , выберите его и нажмите кнопку **Установить** , чтобы добавить его в проект.
+3. В разделе **Диспетчер пакетов NuGet** выберите вкладку **Обзор** и найдите пакет NuGet **sqlite-net-pcl**.
 
-    ![Добавление пакета](database-images/vs/add-package.png)
-
-    > [!NOTE]
-    > Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
-    > - **Владелец:** praeclarum
+    > [!WARNING]
+    > Существует несколько пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
     > - **Авторы:** SQLite-net
     > - **Ссылка NuGet:** [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)  
     >
     > Несмотря на название, этот пакет NuGet можно использовать в проектах .NET Standard.
 
-    Этот пакет будет использоваться для включения операций базы данных в приложение.
+    В разделе **Диспетчер пакетов NuGet** выберите правильный пакет **sqlite-net-pcl**, установите флажок **Проект** и нажмите кнопку **Установить**, чтобы добавить его в решение.
 
-4. В **обозревателе решений** выберите проект **Notes** и откройте файл **Note.cs** в папке **Models** , а затем замените существующий код следующим:
+    ![Выбор sqlite-net-pcl](database-images/vs/select-package.png)
+
+    Этот пакет будет использоваться для включения в приложение операций с базами данных и будет добавлен в каждый проект решения.
+
+    Закройте **Диспетчер пакетов NuGet**.
+
+4. В **обозревателе решений** выберите проект **Notes** и откройте файл **Note.cs** в папке **Models**, а затем замените существующий код следующим:
 
     ```csharp
     using System;
@@ -81,10 +84,10 @@ ms.locfileid: "93368119"
 
     Этот класс определяет модель `Note`, где будут храниться данные о каждой заметке в этом приложении. Свойство `ID` помечено атрибутами `PrimaryKey` и `AutoIncrement`, чтобы каждый экземпляр `Note` в базе данных SQLite.NET имел уникальный идентификатор, предоставленный SQLite.NET.
 
-    Сохраните изменения в **Note.cs** , нажав клавиши **CTRL+S** , и закройте файл.
+    Сохраните изменения в **Note.cs**, нажав клавиши **CTRL+S**.
 
     > [!WARNING]
-    > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+    > В данный момент сборка приложения не будет выполнена из-за ошибок, которые будут исправлены в последующих шагах.
 
 5. В **обозревателе решений** добавьте новую папку с именем **Data** в проект **Notes**.
 
@@ -102,22 +105,24 @@ ms.locfileid: "93368119"
     {
         public class NoteDatabase
         {
-            readonly SQLiteAsyncConnection _database;
+            readonly SQLiteAsyncConnection database;
 
             public NoteDatabase(string dbPath)
             {
-                _database = new SQLiteAsyncConnection(dbPath);
-                _database.CreateTableAsync<Note>().Wait();
+                database = new SQLiteAsyncConnection(dbPath);
+                database.CreateTableAsync<Note>().Wait();
             }
 
             public Task<List<Note>> GetNotesAsync()
             {
-                return _database.Table<Note>().ToListAsync();
+                //Get all notes.
+                return database.Table<Note>().ToListAsync();
             }
 
             public Task<Note> GetNoteAsync(int id)
             {
-                return _database.Table<Note>()
+                // Get a specific note.
+                return database.Table<Note>()
                                 .Where(i => i.ID == id)
                                 .FirstOrDefaultAsync();
             }
@@ -126,17 +131,20 @@ ms.locfileid: "93368119"
             {
                 if (note.ID != 0)
                 {
-                    return _database.UpdateAsync(note);
+                    // Update an existing note.
+                    return database.UpdateAsync(note);
                 }
                 else
                 {
-                    return _database.InsertAsync(note);
+                    // Save a new note.
+                    return database.InsertAsync(note);
                 }
             }
 
             public Task<int> DeleteNoteAsync(Note note)
             {
-                return _database.DeleteAsync(note);
+                // Delete a note.
+                return database.DeleteAsync(note);
             }
         }
     }
@@ -144,18 +152,18 @@ ms.locfileid: "93368119"
 
     Этот класс содержит код, чтобы создать базу данных, считывать и записывать данные в ней, а также удалять данные из нее. В коде используются асинхронные API-интерфейсы SQLite.NET, которые перемещают операции базы данных в фоновые потоки. Кроме того конструктор `NoteDatabase` принимает путь файла базы данных в качестве аргумента. Этот путь будет предоставлен классом `App` в следующем шаге.
 
-    Сохраните изменения в **NoteDatabase.cs** , нажав клавиши **CTRL+S** , и закройте файл.
+    Сохраните изменения в **NoteDatabase.cs**, нажав клавиши **CTRL+S**.  
 
     > [!WARNING]
-    > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+    > В данный момент сборка приложения не будет выполнена из-за ошибок, которые будут исправлены в последующих шагах.
 
-8. В **обозревателе решений** дважды щелкните файл **App.xaml.cs** в проекте **Notes** , чтобы открыть его. Затем замените существующий код следующим:
+8. В **обозревателе решений** в проекте **Notes** разверните **App.xaml** и дважды щелкните файл **App.xaml.cs**, чтобы открыть его: Затем замените существующий код следующим:
 
     ```csharp
     using System;
     using System.IO;
-    using Xamarin.Forms;
     using Notes.Data;
+    using Xamarin.Forms;
 
     namespace Notes
     {
@@ -163,6 +171,7 @@ ms.locfileid: "93368119"
         {
             static NoteDatabase database;
 
+            // Create the database connection as a singleton.
             public static NoteDatabase Database
             {
                 get
@@ -178,22 +187,19 @@ ms.locfileid: "93368119"
             public App()
             {
                 InitializeComponent();
-                MainPage = new NavigationPage(new NotesPage());
+                MainPage = new AppShell();
             }
 
             protected override void OnStart()
             {
-                // Handle when your app starts
             }
 
             protected override void OnSleep()
             {
-                // Handle when your app sleeps
             }
 
             protected override void OnResume()
             {
-                // Handle when your app resumes
             }
         }
     }
@@ -201,84 +207,125 @@ ms.locfileid: "93368119"
 
     Этот код определяет свойство `Database`, которое создает экземпляр `NoteDatabase` в качестве отдельной базы данных, передавая имя файла базы данных в качестве аргумента в конструктор `NoteDatabase`. Преимущество использования отдельной базы данных в том, что создается отдельное подключение к базе данных, которое остается открытым, пока работает приложение. Это позволяет избежать затрат, связанных с открытием и закрытием файла базы данных каждый раз, когда выполняется операция с ней.
 
-    Сохраните изменения в файле **App.xaml.cs** , нажав клавиши **CTRL+S** , и закройте файл.
+    Сохраните изменения в файле **App.xaml.cs**, нажав клавиши **CTRL+S**.  
 
     > [!WARNING]
-    > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+    > В данный момент сборка приложения не будет выполнена из-за ошибок, которые будут исправлены в последующих шагах.
 
-9. В **обозревателе решений** дважды щелкните файл **NotesPage.xaml.cs** в проекте **Notes** , чтобы открыть его. Замените метод `OnAppearing` следующим кодом:
+9. В **обозревателе решений** в проекте **Notes** разверните **NotesPage.xaml** в папке **Views** и откройте **NotesPage.xaml.cs**. Затем замените методы `OnAppearing` и `OnSelectionChanged` следующим кодом:
 
     ```csharp
     protected override async void OnAppearing()
     {
         base.OnAppearing();
 
-        listView.ItemsSource = await App.Database.GetNotesAsync();
+        // Retrieve all the notes from the database, and set them as the
+        // data source for the CollectionView.
+        collectionView.ItemsSource = await App.Database.GetNotesAsync();
     }
+
+    async void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (e.CurrentSelection != null)
+        {
+            // Navigate to the NoteEntryPage, passing the ID as a query parameter.
+            Note note = (Note)e.CurrentSelection.FirstOrDefault();
+            await Shell.Current.GoToAsync($"{nameof(NoteEntryPage)}?{nameof(NoteEntryPage.ItemId)}={note.ID.ToString()}");
+        }
+    }    
     ```    
 
-    Этот код заполняет [`ListView`](xref:Xamarin.Forms.ListView) заметками, которые хранятся в базе данных.
+    Метод `OnAppearing` заполняет [`CollectionView`](xref:Xamarin.Forms.CollectionView) любыми заметками, хранящимися в базе данных. Метод `OnSelectionChanged` переходит к объекту `NoteEntryPage`, передавая свойство `ID` выбранного объекта `Note` в качестве параметра запроса.
 
-    Сохраните изменения в файле **NotesPage.xaml.cs** , нажав клавиши **CTRL+S** , и закройте файл.
+    Сохраните изменения в файле **NotesPage.xaml.cs**, нажав клавиши **CTRL+S**.  
 
     > [!WARNING]
-    > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+    > В данный момент сборка приложения не будет выполнена из-за ошибок, которые будут исправлены в последующих шагах.
 
-10. В **обозревателе решений** дважды щелкните файл **NoteEntryPage.xaml.cs** , чтобы открыть его. Затем замените методы `OnSaveButtonClicked` и `OnDeleteButtonClicked` следующим кодом:
+10. В **обозревателе решений** разверните **NoteEntryPage.xaml** в папке **Views** и откройте **NoteEntryPage.xaml.cs**. Затем замените методы `LoadNote`, `OnSaveButtonClicked` и `OnDeleteButtonClicked` следующим кодом:
 
       ```csharp
+      async void LoadNote(string itemId)
+      {
+          try
+          {
+              int id = Convert.ToInt32(itemId);
+              // Retrieve the note and set it as the BindingContext of the page.
+              Note note = await App.Database.GetNoteAsync(id);
+              BindingContext = note;
+          }
+          catch (Exception)
+          {
+              Console.WriteLine("Failed to load note.");
+          }
+      }
+
       async void OnSaveButtonClicked(object sender, EventArgs e)
       {
           var note = (Note)BindingContext;
           note.Date = DateTime.UtcNow;
-          await App.Database.SaveNoteAsync(note);
-          await Navigation.PopAsync();
+          if (!string.IsNullOrWhiteSpace(note.Text))
+          {
+              await App.Database.SaveNoteAsync(note);
+          }
+
+          // Navigate backwards
+          await Shell.Current.GoToAsync("..");
       }
 
       async void OnDeleteButtonClicked(object sender, EventArgs e)
       {
           var note = (Note)BindingContext;
           await App.Database.DeleteNoteAsync(note);
-          await Navigation.PopAsync();
+
+          // Navigate backwards
+          await Shell.Current.GoToAsync("..");
       }
       ```    
 
-      `NoteEntryPage` сохраняет экземпляр `Note`, представляющий одну заметку, в [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) страницы. При выполнении обработчика событий `OnSaveButtonClicked` экземпляр `Note` сохраняется в базе данных, и приложение возвращается на предыдущую страницу. При выполнении обработчика событий `OnDeleteButtonClicked` экземпляр `Note` удаляется из базы данных, и приложение возвращается на предыдущую страницу.
+      `NoteEntryPage` использует метод `LoadNote` для получения заметки из базы данных, идентификатор которой был передан на страницу в качестве параметра запроса, и сохраняет его в виде объекта `Note` в[`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) страницы. При выполнении обработчика событий `OnSaveButtonClicked` экземпляр `Note` сохраняется в базе данных, и приложение возвращается на предыдущую страницу. При выполнении обработчика событий `OnDeleteButtonClicked` экземпляр `Note` удаляется из базы данных, и приложение возвращается на предыдущую страницу.
 
-      Сохраните изменения в файле **NoteEntryPage.xaml.cs** , нажав клавиши **CTRL+S** , и закройте файл.
+      Сохраните изменения в файле **NoteEntryPage.xaml.cs**, нажав клавиши **CTRL+S**.  
 
-11. Создайте и запустите проект на каждой соответствующей платформе. Дополнительные сведения см. в разделе [Сборка примера из краткого руководства](single-page.md#building-the-quickstart).
+11. Создайте и запустите проект на каждой соответствующей платформе. Дополнительные сведения см. в разделе [Сборка примера из краткого руководства](app.md#building-the-quickstart).
 
-    На странице **NotesPage** нажмите кнопку **+** , чтобы перейти к странице **NoteEntryPage** и ввести заметку. После сохранения заметки приложение вернется на страницу **NotesPage**.
+    На странице **NotesPage** нажмите кнопку **Добавить**, чтобы перейти к странице **NoteEntryPage** и ввести заметку. После сохранения заметки приложение вернется на страницу **NotesPage**.
 
-    Введите несколько заметок разной длины, чтобы понаблюдать за поведением приложения.
+    Введите несколько заметок разной длины, чтобы понаблюдать за поведением приложения. Закройте приложение и повторно запустите его, чтобы проверить, сохранены ли в базе данных введенные заметки.
 
 ::: zone-end
 ::: zone pivot="macos"
 
 ## <a name="update-the-app-with-visual-studio-for-mac"></a>Обновление приложения с помощью Visual Studio для Mac
 
-1. Запустите Visual Studio для Mac и откройте проект Notes.
+1. Запустите Visual Studio для Mac и откройте решение Notes.
 
-2. На **Панели решения** выберите проект **Notes** , щелкните правой кнопкой мыши и выберите **Добавить > Добавить пакеты NuGet...** :
+2. На **Панели решения** щелкните правой кнопкой мыши решение **Notes** и выберите **Manage NuGet Packages...** (Управление пакетами NuGet...):
 
-    ![Добавление пакетов NuGet](database-images/vsmac/add-nuget-packages.png)    
+    ![Управление пакетами NuGet](database-images/vsmac/manage-nuget-packages.png)    
 
-3. В окне **Добавление пакетов** выполните поиск пакета NuGet **sqlite-net-pcl** , выберите его и нажмите кнопку **Добавить пакет** , чтобы добавить его в проект.
+3. В разделе **Manage NuGet Packages** (Управление пакетами NuGet) выберите вкладку **Обзор** и найдите пакет NuGet **sqlite-net-pcl**.
 
-    ![Добавление пакета](database-images/vsmac/add-package.png)
-
-    > [!NOTE]
-    > Существует ряд пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
-    > - **Владелец:** praeclarum
+    > [!WARNING]
+    > Существует несколько пакетов NuGet с похожими названиями. Правильный пакет имеет следующие атрибуты:
     > - **Авторы:** SQLite-net
     > - **Ссылка NuGet:** [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)  
     >
     > Несмотря на название, этот пакет NuGet можно использовать в проектах .NET Standard.
 
+    В диалоговом окне **Manage NuGet Packages** (Управление пакетами NuGet) выберите пакет **sqlite-net-pcl** и нажмите кнопку **Добавить пакет**, чтобы добавить его в решение:
+
+      ![Выбор sqlite-net-pcl](database-images/vsmac/select-package.png)
+
     Этот пакет будет использоваться для включения операций базы данных в приложение.
 
-4. На **Панели решения** выберите проект **Notes** и откройте файл **Note.cs** в папке **Models** , а затем замените существующий код следующим:
+4. В диалоговом окне **Выбор проектов** установите все флажки и нажмите кнопку **ОК**:
+
+    ![Добавление пакета во все проекты](database-images/vsmac/add-package.png)
+
+    В результате этого пакет NuGet будет добавлен в каждый проект в решении.
+
+5. На **Панели решения** выберите проект **Notes** и откройте файл **Note.cs** в папке **Models**, а затем замените существующий код следующим:
 
     ```csharp
     using System;
@@ -298,16 +345,16 @@ ms.locfileid: "93368119"
 
     Этот класс определяет модель `Note`, где будут храниться данные о каждой заметке в этом приложении. Свойство `ID` помечено атрибутами `PrimaryKey` и `AutoIncrement`, чтобы каждый экземпляр `Note` в базе данных SQLite.NET имел уникальный идентификатор, предоставленный SQLite.NET.
 
-    Сохраните изменения в **Note.cs** , выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S** , и закройте файл.
+    Сохраните изменения в файле **Note.cs**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**.
 
     > [!WARNING]
-    > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+    > В данный момент сборка приложения не будет выполнена из-за ошибок, которые будут исправлены в последующих шагах.
 
-5. На **Панели решения** добавьте новую папку с именем **Data** в проект **Notes**.
+6. На **Панели решения** добавьте новую папку с именем **Data** в проект **Notes**.
 
-6. На **Панели решения** выберите проект **Notes** и добавьте новый класс с именем **NoteDatabase** в папку **Data**.
+7. На **Панели решения** выберите проект **Notes** и добавьте новый класс с именем **NoteDatabase** в папку **Data**.
 
-7. Замените содержимое файла **NoteDatabase.cs** следующим кодом:
+8. Замените содержимое файла **NoteDatabase.cs** следующим кодом:
 
     ```csharp
     using System.Collections.Generic;
@@ -319,22 +366,24 @@ ms.locfileid: "93368119"
     {
         public class NoteDatabase
         {
-            readonly SQLiteAsyncConnection _database;
+            readonly SQLiteAsyncConnection database;
 
             public NoteDatabase(string dbPath)
             {
-                _database = new SQLiteAsyncConnection(dbPath);
-                _database.CreateTableAsync<Note>().Wait();
+                database = new SQLiteAsyncConnection(dbPath);
+                database.CreateTableAsync<Note>().Wait();
             }
 
             public Task<List<Note>> GetNotesAsync()
             {
-                return _database.Table<Note>().ToListAsync();
+                //Get all notes.
+                return database.Table<Note>().ToListAsync();
             }
 
             public Task<Note> GetNoteAsync(int id)
             {
-                return _database.Table<Note>()
+                // Get a specific note.
+                return database.Table<Note>()
                                 .Where(i => i.ID == id)
                                 .FirstOrDefaultAsync();
             }
@@ -343,17 +392,20 @@ ms.locfileid: "93368119"
             {
                 if (note.ID != 0)
                 {
-                    return _database.UpdateAsync(note);
+                    // Update an existing note.
+                    return database.UpdateAsync(note);
                 }
                 else
                 {
-                    return _database.InsertAsync(note);
+                    // Save a new note.
+                    return database.InsertAsync(note);
                 }
             }
 
             public Task<int> DeleteNoteAsync(Note note)
             {
-                return _database.DeleteAsync(note);
+                // Delete a note.
+                return database.DeleteAsync(note);
             }
         }
     }
@@ -361,18 +413,18 @@ ms.locfileid: "93368119"
 
     Этот класс содержит код, чтобы создать базу данных, считывать и записывать данные в ней, а также удалять данные из нее. В коде используются асинхронные API-интерфейсы SQLite.NET, которые перемещают операции базы данных в фоновые потоки. Кроме того конструктор `NoteDatabase` принимает путь файла базы данных в качестве аргумента. Этот путь будет предоставлен классом `App` в следующем шаге.
 
-    Сохраните изменения в **NoteDatabase.cs** , выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S** , и закройте файл.
+    Сохраните изменения в файле **NoteDatabase.cs**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**.
 
     > [!WARNING]
-    > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+    > В данный момент сборка приложения не будет выполнена из-за ошибок, которые будут исправлены в последующих шагах.
 
-8. На **Панели решения** дважды щелкните файл **App.xaml.cs** в проекте **Notes** , чтобы открыть его. Затем замените существующий код следующим:
+9. На **Панели решения** в проекте **Notes** разверните **App.xaml** и дважды щелкните файл **App.xaml.cs**, чтобы открыть его: Затем замените существующий код следующим:
 
     ```csharp
     using System;
     using System.IO;
-    using Xamarin.Forms;
     using Notes.Data;
+    using Xamarin.Forms;
 
     namespace Notes
     {
@@ -380,6 +432,7 @@ ms.locfileid: "93368119"
         {
             static NoteDatabase database;
 
+            // Create the database connection as a singleton.
             public static NoteDatabase Database
             {
                 get
@@ -395,22 +448,19 @@ ms.locfileid: "93368119"
             public App()
             {
                 InitializeComponent();
-                MainPage = new NavigationPage(new NotesPage());
+                MainPage = new AppShell();
             }
 
             protected override void OnStart()
             {
-                // Handle when your app starts
             }
 
             protected override void OnSleep()
             {
-                // Handle when your app sleeps
             }
 
             protected override void OnResume()
             {
-                // Handle when your app resumes
             }
         }
     }
@@ -418,68 +468,101 @@ ms.locfileid: "93368119"
 
     Этот код определяет свойство `Database`, которое создает экземпляр `NoteDatabase` в качестве отдельной базы данных, передавая имя файла базы данных в качестве аргумента в конструктор `NoteDatabase`. Преимущество использования отдельной базы данных в том, что создается отдельное подключение к базе данных, которое остается открытым, пока работает приложение. Это позволяет избежать затрат, связанных с открытием и закрытием файла базы данных каждый раз, когда выполняется операция с ней.
 
-    Сохраните изменения в файле **App.xaml.cs** , выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S** , и закройте файл.
+    Сохраните изменения в файле **App.xaml.cs**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**.
 
     > [!WARNING]
-    > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+    > В данный момент сборка приложения не будет выполнена из-за ошибок, которые будут исправлены в последующих шагах.
 
-9. На **Панели решения** дважды щелкните файл **NotesPage.xaml.cs** в проекте **Notes** , чтобы открыть его. Замените метод `OnAppearing` следующим кодом:
+10. На **Панели решения** в проекте **Notes** разверните **NotesPage.xaml** в папке **Views** и откройте **NotesPage.xaml.cs**. Затем замените методы `OnAppearing` и `OnSelectionChanged` следующим кодом:
 
     ```csharp
     protected override async void OnAppearing()
     {
         base.OnAppearing();
 
-        listView.ItemsSource = await App.Database.GetNotesAsync();
+        // Retrieve all the notes from the database, and set them as the
+        // data source for the CollectionView.
+        collectionView.ItemsSource = await App.Database.GetNotesAsync();
     }
+
+    async void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (e.CurrentSelection != null)
+        {
+            // Navigate to the NoteEntryPage, passing the ID as a query parameter.
+            Note note = (Note)e.CurrentSelection.FirstOrDefault();
+            await Shell.Current.GoToAsync($"{nameof(NoteEntryPage)}?{nameof(NoteEntryPage.ItemId)}={note.ID.ToString()}");
+        }
+    }    
     ```    
 
-    Этот код заполняет [`ListView`](xref:Xamarin.Forms.ListView) заметками, которые хранятся в базе данных.
+    Метод `OnAppearing` заполняет [`CollectionView`](xref:Xamarin.Forms.CollectionView) любыми заметками, хранящимися в базе данных. Метод `OnSelectionChanged` переходит к объекту `NoteEntryPage`, передавая свойство `ID` выбранного объекта `Note` в качестве параметра запроса.
 
-    Сохраните изменения в **NotesPage.xaml.cs** , выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S** , и закройте файл.
+    Сохраните изменения в файле **NotesPage.xaml.cs**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**.
 
     > [!WARNING]
-    > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+    > В данный момент сборка приложения не будет выполнена из-за ошибок, которые будут исправлены в последующих шагах.
 
-10. На **Панели решения** дважды щелкните файл **NoteEntryPage.xaml.cs** , чтобы открыть его. Затем замените методы `OnSaveButtonClicked` и `OnDeleteButtonClicked` следующим кодом:
+11. На **Панели решения** разверните **NoteEntryPage.xaml** в папке **Views** и откройте **NoteEntryPage.xaml.cs**. Затем замените методы `LoadNote`, `OnSaveButtonClicked` и `OnDeleteButtonClicked` следующим кодом:
 
       ```csharp
+      async void LoadNote(string itemId)
+      {
+          try
+          {
+              int id = Convert.ToInt32(itemId);
+              // Retrieve the note and set it as the BindingContext of the page.
+              Note note = await App.Database.GetNoteAsync(id);
+              BindingContext = note;
+          }
+          catch (Exception)
+          {
+              Console.WriteLine("Failed to load note.");
+          }
+      }
+
       async void OnSaveButtonClicked(object sender, EventArgs e)
       {
           var note = (Note)BindingContext;
           note.Date = DateTime.UtcNow;
-          await App.Database.SaveNoteAsync(note);
-          await Navigation.PopAsync();
+          if (!string.IsNullOrWhiteSpace(note.Text))
+          {
+              await App.Database.SaveNoteAsync(note);
+          }
+
+          // Navigate backwards
+          await Shell.Current.GoToAsync("..");
       }
 
       async void OnDeleteButtonClicked(object sender, EventArgs e)
       {
           var note = (Note)BindingContext;
           await App.Database.DeleteNoteAsync(note);
-          await Navigation.PopAsync();
+
+          // Navigate backwards
+          await Shell.Current.GoToAsync("..");
       }
       ```    
 
-      `NoteEntryPage` сохраняет экземпляр `Note`, представляющий одну заметку, в [`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) страницы. При выполнении обработчика событий `OnSaveButtonClicked` экземпляр `Note` сохраняется в базе данных, и приложение возвращается на предыдущую страницу. При выполнении обработчика событий `OnDeleteButtonClicked` экземпляр `Note` удаляется из базы данных, и приложение возвращается на предыдущую страницу.
+      `NoteEntryPage` использует метод `LoadNote` для получения заметки из базы данных, идентификатор которой был передан на страницу в качестве параметра запроса, и сохраняет его в виде объекта `Note` в[`BindingContext`](xref:Xamarin.Forms.BindableObject.BindingContext) страницы. При выполнении обработчика событий `OnSaveButtonClicked` экземпляр `Note` сохраняется в базе данных, и приложение возвращается на предыдущую страницу. При выполнении обработчика событий `OnDeleteButtonClicked` экземпляр `Note` удаляется из базы данных, и приложение возвращается на предыдущую страницу.
 
-      Сохраните изменения в **NoteEntryPage.xaml.cs** , выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S** , и закройте файл.
+      Сохраните изменения в файле **NoteEntryPage.xaml.cs**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**.
 
-11. Создайте и запустите проект на каждой соответствующей платформе. Дополнительные сведения см. в разделе [Сборка примера из краткого руководства](single-page.md#building-the-quickstart).
+12. Создайте и запустите проект на каждой соответствующей платформе. Дополнительные сведения см. в разделе [Сборка примера из краткого руководства](app.md#building-the-quickstart).
 
-    На странице **NotesPage** нажмите кнопку **+** , чтобы перейти к странице **NoteEntryPage** и ввести заметку. После сохранения заметки приложение вернется на страницу **NotesPage**.
+    На странице **NotesPage** нажмите кнопку **Добавить**, чтобы перейти к странице **NoteEntryPage** и ввести заметку. После сохранения заметки приложение вернется на страницу **NotesPage**.
 
-    Введите несколько заметок разной длины, чтобы понаблюдать за поведением приложения.
+    Введите несколько заметок разной длины, чтобы понаблюдать за поведением приложения. Закройте приложение и повторно запустите его, чтобы проверить, сохранены ли в базе данных введенные заметки.
 
 ::: zone-end
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом кратком руководстве рассматривались следующие темы:
 
-- Использование диспетчер пакетов NuGet для добавления пакета NuGet в проект.
 - Локальное хранение данных в базе данных SQLite.NET.
 
-Чтобы стилизовать приложение с помощью стилей XAML, перейдите к следующему краткому руководству.
+Перейдите к следующему краткому руководству, чтобы стилизовать приложение с помощью стилей XAML.
 
 > [!div class="nextstepaction"]
 > [Вперед](styling.md)
@@ -487,4 +570,4 @@ ms.locfileid: "93368119"
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Заметки (пример)](/samples/xamarin/xamarin-forms-samples/getstarted-notes-database/)
-- [Подробное изучение кратких руководств по Xamarin.Forms](deepdive.md)
+- [Подробное изучение кратких руководств по Оболочке в Xamarin.Forms](deepdive.md)
