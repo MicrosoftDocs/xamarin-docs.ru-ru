@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93371512"
 ---
-# <a name="no-locxamarinforms-dependencyservice-introduction"></a>Общие сведения о Xamarin.Forms DependencyService
+# <a name="xamarinforms-dependencyservice-introduction"></a>Общие сведения о Xamarin.Forms DependencyService
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/dependencyservice/)
 
