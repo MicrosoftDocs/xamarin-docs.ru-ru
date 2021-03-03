@@ -18,7 +18,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93365871"
 ---
-# <a name="no-locxamarinforms-xaml-basics"></a>Xamarin.Forms Основы XAML
+# <a name="xamarinforms-xaml-basics"></a>Xamarin.Forms Основы XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xamlsamples)
 

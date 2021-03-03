@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374073"
 ---
-# <a name="xaml-custom-namespace-schemas-in-no-locxamarinforms"></a>Схемы пользовательских пространств имен XAML в Xamarin.Forms
+# <a name="xaml-custom-namespace-schemas-in-xamarinforms"></a>Схемы пользовательских пространств имен XAML в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xaml-customnamespaceschemas)
 

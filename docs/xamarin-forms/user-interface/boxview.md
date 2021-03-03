@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374359"
 ---
-# <a name="no-locxamarinforms-boxview"></a>Xamarin.Forms боксвиев
+# <a name="xamarinforms-boxview"></a>Xamarin.Forms боксвиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/boxview-basicboxview)
 

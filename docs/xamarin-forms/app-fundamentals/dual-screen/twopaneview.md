@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93373813"
 ---
-# <a name="no-locxamarinforms-twopaneview-layout"></a>Xamarin.Forms Макет TwoPaneView
+# <a name="xamarinforms-twopaneview-layout"></a>Xamarin.Forms Макет TwoPaneView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-dualscreendemos/)
 

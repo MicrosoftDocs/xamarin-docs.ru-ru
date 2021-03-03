@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93371239"
 ---
-# <a name="no-locxamarinforms-tableview"></a>Xamarin.Forms таблевиев
+# <a name="xamarinforms-tableview"></a>Xamarin.Forms таблевиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-tableview)
 

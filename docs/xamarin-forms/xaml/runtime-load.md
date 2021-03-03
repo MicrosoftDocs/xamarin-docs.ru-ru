@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374281"
 ---
-# <a name="loading-xaml-at-runtime-in-no-locxamarinforms"></a>Загрузка XAML во время выполнения в Xamarin.Forms
+# <a name="loading-xaml-at-runtime-in-xamarinforms"></a>Загрузка XAML во время выполнения в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xaml-loadruntimexaml)
 
@@ -37,7 +37,7 @@ public partial class MainPage : ContentPage
 }
 ```
 
-Когда Visual Studio создает проект, содержащий файл XAML, он анализирует XAML-файл для создания файла кода C# (например, **MainPage.XAML.g.CS** ), содержащего определение `InitializeComponent` метода:
+Когда Visual Studio создает проект, содержащий файл XAML, он анализирует XAML-файл для создания файла кода C# (например, **MainPage.XAML.g.CS**), содержащего определение `InitializeComponent` метода:
 
 ```csharp
 private void InitializeComponent()

@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374086"
 ---
-# <a name="no-locxamarinforms-bindable-properties"></a>Xamarin.Forms Привязываемые свойства
+# <a name="xamarinforms-bindable-properties"></a>Xamarin.Forms Привязываемые свойства
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior)
 

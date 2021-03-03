@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/13/2020
 ms.locfileid: "94590419"
 ---
-# <a name="no-locxamarinforms-collectionview-scrolling"></a>Xamarin.Forms Прокрутка CollectionView
+# <a name="xamarinforms-collectionview-scrolling"></a>Xamarin.Forms Прокрутка CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 

@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93375464"
 ---
-# <a name="no-locxamarinforms-map-control"></a>Xamarin.Forms Map Control
+# <a name="xamarinforms-map-control"></a>Xamarin.Forms Map Control
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 

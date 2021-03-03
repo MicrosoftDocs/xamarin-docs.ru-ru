@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93368249"
 ---
-# <a name="launch-the-native-map-app-from-no-locxamarinforms"></a>Запустите собственное приложение Map из Xamarin.Forms
+# <a name="launch-the-native-map-app-from-xamarinforms"></a>Запустите собственное приложение Map из Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 

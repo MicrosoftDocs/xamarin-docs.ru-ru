@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93371213"
 ---
-# <a name="no-locxamarinforms-toolbaritem"></a>Xamarin.Forms тулбаритем
+# <a name="xamarinforms-toolbaritem"></a>Xamarin.Forms тулбаритем
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-toolbaritem/)
 

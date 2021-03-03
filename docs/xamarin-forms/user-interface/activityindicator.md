@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93373124"
 ---
-# <a name="no-locxamarinforms-activityindicator"></a>Xamarin.Forms активитиндикатор
+# <a name="xamarinforms-activityindicator"></a>Xamarin.Forms активитиндикатор
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-activityindicatordemos/)
 
 Xamarin.Forms [`ActivityIndicator`](xref:Xamarin.Forms.ActivityIndicator) Элемент управления отображает анимацию, чтобы показать, что приложение вовлечено в длительное действие. В отличие от [`ProgressBar`](xref:Xamarin.Forms.ProgressBar) , параметр `ActivityIndicator` не дает указания о ходе выполнения. Объект `ActivityIndicator` наследует от [`View`](xref:Xamarin.Forms.View) .

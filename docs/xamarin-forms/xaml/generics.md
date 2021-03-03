@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93375386"
 ---
-# <a name="generics-in-no-locxamarinforms-xaml"></a>Универсальные шаблоны в Xamarin.Forms XAML
+# <a name="generics-in-xamarinforms-xaml"></a>Универсальные шаблоны в Xamarin.Forms XAML
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/xaml-generics/)
 

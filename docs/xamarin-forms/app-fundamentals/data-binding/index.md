@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374580"
 ---
-# <a name="no-locxamarinforms-data-binding"></a>Привязка данных Xamarin.Forms
+# <a name="xamarinforms-data-binding"></a>Привязка данных Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 

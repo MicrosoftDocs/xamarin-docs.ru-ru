@@ -19,7 +19,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93372890"
 ---
-# <a name="no-locxamarinforms-no-locrefreshview"></a>Xamarin.Forms RefreshView
+# <a name="xamarinforms-refreshview"></a>Xamarin.Forms RefreshView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-refreshviewdemo/)
 
@@ -37,7 +37,7 @@ ms.locfileid: "93372890"
 > [!NOTE]
 > В Universal Windows Platform можно задать направление извлечения для `RefreshView` конкретной платформы. Дополнительные сведения см. в разделе [ RefreshView направление опроса](~/xamarin-forms/platform/windows/refreshview-pulldirection.md).
 
-## <a name="create-a-no-locrefreshview"></a>Создание класса RefreshView
+## <a name="create-a-refreshview"></a>Создание класса RefreshView
 
 В следующем примере показано, как создать экземпляр `RefreshView` в XAML:
 
@@ -84,7 +84,7 @@ refreshView.Content = scrollView;
 > [!NOTE]
 > Ручное задание `IsRefreshing` для свойства значения `true` приведет к запуску визуализации обновления и будет выполнять объект, `ICommand` определенный `Command` свойством.
 
-## <a name="no-locrefreshview-appearance"></a>RefreshView внешний вид
+## <a name="refreshview-appearance"></a>RefreshView внешний вид
 
 В дополнение к свойствам, `RefreshView` унаследованным от [`VisualElement`](xref:Xamarin.Forms.VisualElement) класса, `RefreshView` также определяет `RefreshColor` свойство. Это свойство можно задать для определения цвета круга хода выполнения, отображаемого во время обновления:
 
@@ -102,7 +102,7 @@ refreshView.Content = scrollView;
 > [!NOTE]
 > В iOS `BackgroundColor` свойство задает цвет фона `UIView` , который содержит круг хода выполнения.
 
-## <a name="disable-a-no-locrefreshview"></a>Отключение RefreshView
+## <a name="disable-a-refreshview"></a>Отключение RefreshView
 
 Приложение может ввести состояние, при котором операция Pull для обновления не является допустимой операцией. В таких случаях `RefreshView` можно отключить, задав `IsEnabled` свойству значение `false` . Это предотвратит возможность запуска запроса Pull для обновления пользователями.
 

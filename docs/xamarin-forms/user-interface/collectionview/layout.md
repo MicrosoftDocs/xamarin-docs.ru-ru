@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93371486"
 ---
-# <a name="no-locxamarinforms-collectionview-layout"></a>Xamarin.Forms Макет CollectionView
+# <a name="xamarinforms-collectionview-layout"></a>Xamarin.Forms Макет CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 

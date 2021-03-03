@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374268"
 ---
-# <a name="no-locxamarinforms-reusable-roundeffect"></a>Многоразовый RoundEffect в Xamarin.Forms
+# <a name="xamarinforms-reusable-roundeffect"></a>Многоразовый RoundEffect в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/effects-roundeffect/)
 
@@ -223,7 +223,7 @@ image.Effects.Add(new RoundEffect());
 Класс `RoundEffect` можно применить к любому элементу управления, производному от `VisualElement`.
 
 > [!NOTE]
-> Чтобы эффект вычислил правильный радиус, элемент управления, к которому он применяется, должен иметь явно заданный размер. То есть должны быть определены свойства `HeightRequest` и `WidthRequest`. Если затронутый элемент управления отображается в `StackLayout`, его свойство `HorizontalOptions` не должно использовать одно из значений **Expand** , например `LayoutOptions.CenterAndExpand`, или измерения будут неточными.
+> Чтобы эффект вычислил правильный радиус, элемент управления, к которому он применяется, должен иметь явно заданный размер. То есть должны быть определены свойства `HeightRequest` и `WidthRequest`. Если затронутый элемент управления отображается в `StackLayout`, его свойство `HorizontalOptions` не должно использовать одно из значений **Expand**, например `LayoutOptions.CenterAndExpand`, или измерения будут неточными.
 
 ## <a name="related-links"></a>Связанные ссылки
 

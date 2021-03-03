@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93375438"
 ---
-# <a name="no-locxamarinforms-map-pins"></a>Xamarin.Forms Контакты карт
+# <a name="xamarinforms-map-pins"></a>Xamarin.Forms Контакты карт
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 

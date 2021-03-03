@@ -17,13 +17,13 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93370927"
 ---
-# <a name="no-locxamarinforms-binding-value-converters"></a>Преобразователи значений привязки Xamarin.Forms
+# <a name="xamarinforms-binding-value-converters"></a>Преобразователи значений привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 
 Привязки данных обычно передают данные из исходного свойства в целевое свойство (а иногда из целевого свойства в исходное). Эта передача проста в том случае, когда исходные и целевые свойства относятся к одному типу или когда один тип может быть преобразован в другой тип путем неявного преобразования. Если это не так, должно выполняться преобразование типов.
 
-В статье, посвященной [**форматированию строк**](string-formatting.md), было показано, как можно использовать свойство `StringFormat` привязки данных для преобразования любого типа в строку. Для других типов преобразований необходимо написать специальный код в классе, реализующем интерфейс [`IValueConverter`](xref:Xamarin.Forms.IValueConverter). (Универсальная платформа Windows содержит аналогичный класс с именем [`IValueConverter`](/uwp/api/Windows.UI.Xaml.Data.IValueConverter/) в пространстве имен `Windows.UI.Xaml.Data`, однако этот `IValueConverter` находится в пространстве имен `Xamarin.Forms`.) Классы, реализующие `IValueConverter`, называются *преобразователями величин* , а также *преобразователями привязки* или *преобразователями значений привязки*.
+В статье, посвященной [**форматированию строк**](string-formatting.md), было показано, как можно использовать свойство `StringFormat` привязки данных для преобразования любого типа в строку. Для других типов преобразований необходимо написать специальный код в классе, реализующем интерфейс [`IValueConverter`](xref:Xamarin.Forms.IValueConverter). (Универсальная платформа Windows содержит аналогичный класс с именем [`IValueConverter`](/uwp/api/Windows.UI.Xaml.Data.IValueConverter/) в пространстве имен `Windows.UI.Xaml.Data`, однако этот `IValueConverter` находится в пространстве имен `Xamarin.Forms`.) Классы, реализующие `IValueConverter`, называются *преобразователями величин*, а также *преобразователями привязки* или *преобразователями значений привязки*.
 
 ## <a name="the-ivalueconverter-interface"></a>Интерфейс IValueConverter
 

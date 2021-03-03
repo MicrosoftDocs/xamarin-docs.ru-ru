@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93367716"
 ---
-# <a name="no-locxamarinforms-map-position-and-distance"></a>Xamarin.Forms Расположение и расстояние на карте
+# <a name="xamarinforms-map-position-and-distance"></a>Xamarin.Forms Расположение и расстояние на карте
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 

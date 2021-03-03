@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93373696"
 ---
-# <a name="no-locxamarinforms-datepicker"></a>Xamarin.Forms DatePicker
+# <a name="xamarinforms-datepicker"></a>Xamarin.Forms DatePicker
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-datepicker)
 

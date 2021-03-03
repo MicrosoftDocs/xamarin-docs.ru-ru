@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93373033"
 ---
-# <a name="creating-a-no-locxamarinforms-datatemplate"></a>Создание Xamarin.Forms DataTemplate
+# <a name="creating-a-xamarinforms-datatemplate"></a>Создание Xamarin.Forms DataTemplate
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/templates-datatemplates)
 

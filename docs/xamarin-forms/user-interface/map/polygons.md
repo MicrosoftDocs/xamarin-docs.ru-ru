@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374788"
 ---
-# <a name="no-locxamarinforms-map-polygons-and-polylines"></a>Xamarin.Forms Многоугольники и ломаные линии карт
+# <a name="xamarinforms-map-polygons-and-polylines"></a>Xamarin.Forms Многоугольники и ломаные линии карт
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 

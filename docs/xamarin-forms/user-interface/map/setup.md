@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93371291"
 ---
-# <a name="no-locxamarinforms-map-initialization-and-configuration"></a>Xamarin.Forms Инициализация и Настройка карт
+# <a name="xamarinforms-map-initialization-and-configuration"></a>Xamarin.Forms Инициализация и Настройка карт
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 
@@ -57,7 +57,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 ### <a name="ios"></a>iOS
 
-Для отображения и взаимодействия с картой в iOS не требуется дополнительная настройка. Однако для доступа к службам обнаружения необходимо задать следующие ключи в **info. plist** :
+Для отображения и взаимодействия с картой в iOS не требуется дополнительная настройка. Однако для доступа к службам обнаружения необходимо задать следующие ключи в **info. plist**:
 
 - iOS 11 и более поздние версии
   - [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW26) — для использования служб определения местоположения при использовании приложения;
@@ -121,7 +121,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 #### <a name="specify-the-google-play-services-version-number"></a>Укажите номер версии служб Google Play Services
 
-Добавьте следующее объявление в `<application>` элемент **AndroidManifest.xml** :
+Добавьте следующее объявление в `<application>` элемент **AndroidManifest.xml**:
 
 ```xml
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
@@ -131,7 +131,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 #### <a name="specify-the-requirement-for-the-apache-http-legacy-library"></a>Укажите требование для устаревшей библиотеки Apache HTTP
 
-Если Xamarin.Forms приложение предназначено для API 28 или выше, необходимо добавить следующее объявление в `<application>` элемент **AndroidManifest.xml** :
+Если Xamarin.Forms приложение предназначено для API 28 или выше, необходимо добавить следующее объявление в `<application>` элемент **AndroidManifest.xml**:
 
 ```xml
 <uses-library android:name="org.apache.http.legacy" android:required="false" />    
@@ -257,7 +257,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 #### <a name="release-builds"></a>Сборки выпуска
 
-Сборки выпуска UWP используют компиляцию .NET Native для компиляции приложения непосредственно в машинный код. Однако это следствие заключается в том, что модуль подготовки отчетов для [`Map`](xref:Xamarin.Forms.Maps.Map) элемента управления в UWP может быть связан с исполняемым файлом. Это можно исправить с помощью перегрузки метода, зависящего от UWP, `Forms.Init` в **app.XAML.CS** :
+Сборки выпуска UWP используют компиляцию .NET Native для компиляции приложения непосредственно в машинный код. Однако это следствие заключается в том, что модуль подготовки отчетов для [`Map`](xref:Xamarin.Forms.Maps.Map) элемента управления в UWP может быть связан с исполняемым файлом. Это можно исправить с помощью перегрузки метода, зависящего от UWP, `Forms.Init` в **app.XAML.CS**:
 
 ```csharp
 var assembliesToInclude = new [] { typeof(Xamarin.Forms.Maps.UWP.MapRenderer).GetTypeInfo().Assembly };

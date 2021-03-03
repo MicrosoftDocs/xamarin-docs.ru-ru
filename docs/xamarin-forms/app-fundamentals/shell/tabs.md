@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93372617"
 ---
-# <a name="no-locxamarinforms-shell-tabs"></a>Вкладки оболочки Xamarin.Forms
+# <a name="xamarinforms-shell-tabs"></a>Вкладки оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
@@ -105,7 +105,7 @@ ms.locfileid: "93372617"
 
 [![Снимок экрана двухстраничного приложения оболочки с нижними вкладками для iOS и Android](tabs-images/two-page-app-bottom-tabs.png "Двухстраничное приложение оболочки с нижними вкладками")](tabs-images/two-page-app-bottom-tabs-large.png#lightbox "Двухстраничное приложение оболочки с нижними вкладками")
 
-При наличии более пяти вкладок появляется вкладка **Дополнительно** , используемая для доступа к дополнительным вкладкам.
+При наличии более пяти вкладок появляется вкладка **Дополнительно**, используемая для доступа к дополнительным вкладкам.
 
 [![Снимок экрана: приложение оболочки со вкладкой Дополнительно для iOS и Android](tabs-images/more-tabs.png "Приложение оболочки со вкладкой Дополнительно")](tabs-images/more-tabs-large.png#lightbox "Приложение оболочки со вкладками Дополнительно")
 

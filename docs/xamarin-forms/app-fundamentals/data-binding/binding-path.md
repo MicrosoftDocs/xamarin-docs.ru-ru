@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93373618"
 ---
-# <a name="no-locxamarinforms-binding-path"></a>Путь привязки Xamarin.Forms
+# <a name="xamarinforms-binding-path"></a>Путь привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 

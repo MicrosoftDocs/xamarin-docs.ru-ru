@@ -31,7 +31,7 @@ _Основные сведения о концепциях и координат
 
 Изучите основы рисования SkiaSharp, включая холсты и объекты Paint.
 
-## <a name="integrating-with-no-locxamarinforms"></a>[Интеграция с Xamarin.Forms](integration.md)
+## <a name="integrating-with-xamarinforms"></a>[Интеграция с Xamarin.Forms](integration.md)
 
 Создавайте интерактивную графику SkiaSharp, отвечая на сенсорный ввод и интеграцию с Xamarin.Forms элементами.
 

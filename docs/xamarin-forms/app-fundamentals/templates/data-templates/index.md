@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93373111"
 ---
-# <a name="no-locxamarinforms-data-templates"></a>Шаблоны данных Xamarin.Forms
+# <a name="xamarinforms-data-templates"></a>Шаблоны данных Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/templates-datatemplates)
 

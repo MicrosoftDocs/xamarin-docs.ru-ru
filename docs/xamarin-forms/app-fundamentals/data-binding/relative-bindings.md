@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374593"
 ---
-# <a name="no-locxamarinforms-relative-bindings"></a>Относительные привязки Xamarin.Forms
+# <a name="xamarinforms-relative-bindings"></a>Относительные привязки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 

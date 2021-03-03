@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/13/2020
 ms.locfileid: "94590439"
 ---
-# <a name="no-locxamarinforms-collectionview-emptyview"></a>Xamarin.Forms CollectionView Емптивиев
+# <a name="xamarinforms-collectionview-emptyview"></a>Xamarin.Forms CollectionView Емптивиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 

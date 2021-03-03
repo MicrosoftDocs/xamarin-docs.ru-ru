@@ -537,7 +537,7 @@ photoCropper = new PhotoCropperCanvasView(bitmap, 1.78f);
 
 Версия известной Xamarin.Forms головоломки 14-15, появилось в главе 22 книги [_Создание мобильных приложений с помощью Xamarin.Forms_](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md) и может быть загружена как [**ксамагонксуззле**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter22/XamagonXuzzle). Однако головоломка становится более интересной (и зачастую более сложной), если она основана на изображении из собственной фотобиблиотеки.
 
-Эта версия головоломки 14-15 является частью приложения **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** и состоит из ряда страниц с названием " **головоломка в фотографии** ".
+Эта версия головоломки 14-15 является частью приложения **[скиашарпформсдемос](/samples/xamarin/xamarin-forms-samples/skiasharpforms-demos)** и состоит из ряда страниц с названием " **головоломка в фотографии**".
 
 Файл **PhotoPuzzlePage1. XAML** состоит из `Button` :
 
@@ -739,7 +739,7 @@ public partial class PhotoPuzzlePage3 : ContentPage
 
 Обработчик кнопки **done** получает ширину и высоту обрезанного растрового изображения (эти два значения должны быть одинаковыми), а затем делит их на 15 отдельных точечных рисунков, каждый из которых равен 1/4 ширине и высоте оригинала. (Последняя из возможных 16 растровых изображений не создается.) `DrawBitmap` Метод с исходным и конечным прямоугольником позволяет создать точечный рисунок на основе подмножества большего точечного рисунка.
 
-## <a name="converting-to-no-locxamarinforms-bitmaps"></a>Преобразование в Xamarin.Forms точечные рисунки
+## <a name="converting-to-xamarinforms-bitmaps"></a>Преобразование в Xamarin.Forms точечные рисунки
 
 В `OnDoneButtonClicked` методе массив, созданный для 15 битовых карт, имеет тип [`ImageSource`](xref:Xamarin.Forms.ImageSource) :
 

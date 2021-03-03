@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374390"
 ---
-# <a name="no-locxamarinforms-shell-page-configuration"></a>Конфигурация страницы оболочки Xamarin.Forms
+# <a name="xamarinforms-shell-page-configuration"></a>Конфигурация страницы оболочки Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 

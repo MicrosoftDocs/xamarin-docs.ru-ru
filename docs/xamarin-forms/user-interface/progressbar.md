@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93370524"
 ---
-# <a name="no-locxamarinforms-progressbar"></a>Xamarin.Forms ProgressBar
+# <a name="xamarinforms-progressbar"></a>Xamarin.Forms ProgressBar
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-progressbardemos/)
 
 Xamarin.Forms [`ProgressBar`](xref:Xamarin.Forms.ProgressBar) Элемент управления визуально представляет ход выполнения в виде горизонтальной линии, заполненной в процентах, представленном `float` значением. `ProgressBar`Класс наследует от [`View`](xref:Xamarin.Forms.View) .

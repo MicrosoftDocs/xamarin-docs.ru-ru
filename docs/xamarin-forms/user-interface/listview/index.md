@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93372019"
 ---
-# <a name="no-locxamarinforms-listview"></a>Xamarin.Forms Элементе
+# <a name="xamarinforms-listview"></a>Xamarin.Forms Элементе
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithlistview)
 

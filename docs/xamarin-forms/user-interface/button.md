@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374216"
 ---
-# <a name="no-locxamarinforms-button"></a>Xamarin.Forms Переключатель
+# <a name="xamarinforms-button"></a>Xamarin.Forms Переключатель
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-buttondemos)
 
@@ -59,7 +59,7 @@ _Кнопка реагирует на касание или щелчок, кот
 
 По умолчанию `Button` является прямоугольным, но можно передать скругленные углы с помощью [`CornerRadius`](xref:Xamarin.Forms.Button.CornerRadius) свойства, как описано ниже в разделе « [**внешний вид кнопки**](#button-appearance)раздела».
 
-[`Text`](xref:Xamarin.Forms.Button.Text)Свойство задает текст, отображаемый в `Button` . [`Clicked`](xref:Xamarin.Forms.Button.Clicked)Для события задается обработчик событий с именем `OnButtonClicked` . Этот обработчик находится в файле кода программной части **BasicButtonClickPage.XAML.CS** :
+[`Text`](xref:Xamarin.Forms.Button.Text)Свойство задает текст, отображаемый в `Button` . [`Clicked`](xref:Xamarin.Forms.Button.Clicked)Для события задается обработчик событий с именем `OnButtonClicked` . Этот обработчик находится в файле кода программной части **BasicButtonClickPage.XAML.CS**:
 
 ```csharp
 public partial class BasicButtonClickPage : ContentPage
@@ -133,7 +133,7 @@ public class CodeButtonClickPage : ContentPage
 button.Clicked += async (sender, args) => await label.RelRotateTo(360, 1000);
 ```
 
-Разумеется, можно также определить обработчик событий как отдельный метод (точно так же, как `OnButtonClick` метод при **нажатии кнопки Basic** ) и присоединить этот метод к событию:
+Разумеется, можно также определить обработчик событий как отдельный метод (точно так же, как `OnButtonClick` метод при **нажатии кнопки Basic**) и присоединить этот метод к событию:
 
 ```csharp
 button.Clicked += OnButtonClicked;

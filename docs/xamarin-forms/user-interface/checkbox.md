@@ -6,7 +6,7 @@ MS. произв. Xamarin MS. AssetID: B8B9268B-BCB8-42B9-B08C-C0F22C137238 MS. 
 
 ---
 
-# <a name="no-locxamarinforms-checkbox"></a>Xamarin.Forms Установка
+# <a name="xamarinforms-checkbox"></a>Xamarin.Forms Установка
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-checkboxdemos/)
 

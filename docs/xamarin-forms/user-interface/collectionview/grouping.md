@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93366156"
 ---
-# <a name="no-locxamarinforms-collectionview-grouping"></a>Xamarin.Forms Группирование CollectionView
+# <a name="xamarinforms-collectionview-grouping"></a>Xamarin.Forms Группирование CollectionView
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-collectionviewdemos/)
 

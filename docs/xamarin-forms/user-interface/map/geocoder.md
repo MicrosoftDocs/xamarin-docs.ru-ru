@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93375451"
 ---
-# <a name="no-locxamarinforms-map-geocoding"></a>Xamarin.Forms Геокодирование карт
+# <a name="xamarinforms-map-geocoding"></a>Xamarin.Forms Геокодирование карт
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/workingwithmaps)
 

@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "93330966"
 ---
-# <a name="no-locxamarinforms-common-control-properties-methods-and-events"></a>Xamarin.Forms Общие свойства, методы и события элемента управления
+# <a name="xamarinforms-common-control-properties-methods-and-events"></a>Xamarin.Forms Общие свойства, методы и события элемента управления
 
 Xamarin.Forms `VisualElement` Класс является базовым классом для большинства элементов управления, используемых в Xamarin.Forms приложении. `VisualElement`Класс определяет множество [свойств](#properties), [методов](#methods)и [событий](#events) , используемых в производных классах.
 

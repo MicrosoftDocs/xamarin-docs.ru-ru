@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93369133"
 ---
-# <a name="no-locxamarinforms-searchbar"></a>Xamarin.Forms сеарчбар
+# <a name="xamarinforms-searchbar"></a>Xamarin.Forms сеарчбар
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-searchbardemos/)
 

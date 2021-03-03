@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93374619"
 ---
-# <a name="no-locxamarinforms-control-templates"></a>Шаблоны элементов управления Xamarin.Forms
+# <a name="xamarinforms-control-templates"></a>Шаблоны элементов управления Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/templates-controltemplatedemos)
 

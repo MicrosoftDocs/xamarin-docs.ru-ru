@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93366325"
 ---
-# <a name="no-locxamarinforms-binding-fallbacks"></a>Резервные значения привязки в Xamarin.Forms
+# <a name="xamarinforms-binding-fallbacks"></a>Резервные значения привязки в Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/databindingdemos)
 

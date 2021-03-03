@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93369796"
 ---
-# <a name="no-locxamarinforms-stepper"></a>Xamarin.Forms Режима
+# <a name="xamarinforms-stepper"></a>Xamarin.Forms Режима
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-stepperdemos)
 

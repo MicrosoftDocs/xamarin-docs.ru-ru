@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93368704"
 ---
-# <a name="no-locxamarinforms-modal-pages"></a>Модальные страницы Xamarin.Forms
+# <a name="xamarinforms-modal-pages"></a>Модальные страницы Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/navigation-modal)
 

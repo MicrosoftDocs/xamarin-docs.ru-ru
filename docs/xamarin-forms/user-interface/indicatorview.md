@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2020
 ms.locfileid: "93371967"
 ---
-# <a name="no-locxamarinforms-indicatorview"></a>Xamarin.Forms индикаторвиев
+# <a name="xamarinforms-indicatorview"></a>Xamarin.Forms индикаторвиев
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-indicatorviewdemos/)
 

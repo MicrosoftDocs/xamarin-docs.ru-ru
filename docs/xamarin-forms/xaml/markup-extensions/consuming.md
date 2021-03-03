@@ -239,7 +239,7 @@ xmlns:sys="clr-namespace:System;assembly=netstandard"
 </ContentPage>
 ```
 
-Вот как открыть главную страницу в **расширениях разметки** :
+Вот как открыть главную страницу в **расширениях разметки**:
 
 [![Главная страница](consuming-images/mainpage-small.png "Главная страница")](consuming-images/mainpage-large.png#lightbox "Главная страница")
 
