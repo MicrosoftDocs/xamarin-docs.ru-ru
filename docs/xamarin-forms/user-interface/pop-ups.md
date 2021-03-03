@@ -10,12 +10,12 @@ ms.date: 12/10/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 09cffb4e5c7d8f6b78d5ab1de6ec9839c3969e87
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: 05ad6af1b094a980f5e226bcde22b43764576652
+ms.sourcegitcommit: 322e7bcf9fb8c1ad52ab8e929bea95d45e280834
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940122"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101751521"
 ---
 # <a name="display-pop-ups"></a>Отображать всплывающие окна
 
@@ -31,7 +31,7 @@ ms.locfileid: "97940122"
 await DisplayAlert ("Alert", "You have been alerted", "OK");
 ```
 
-![Диалоговое окно предупреждения с одной кнопкой](pop-ups-images/alert.png)
+[![Диалоговое окно предупреждения с одной кнопкой на iOS и Android](pop-ups-images/simple-alert.png)](pop-ups-images/simple-alert-large.png#lightbox)
 
 В этом примере не предполагается получение сведений от пользователя. Предупреждение отображается в модальном режиме, и после его закрытия пользователь продолжает работать с приложением.
 
@@ -45,7 +45,7 @@ async void OnAlertYesNoClicked (object sender, EventArgs e)
 }
 ```
 
-[![Диалоговое окно предупреждения с двумя кнопками](pop-ups-images/alert2-sml.png)](pop-ups-images/alert2.png#lightbox)
+[![Диалоговое окно предупреждения с двумя кнопками](pop-ups-images/two-button-alert.png)](pop-ups-images/two-button-alert.png#lightbox)
 
 [`DisplayAlert`](xref:Xamarin.Forms.Page.DisplayAlert*)Метод также имеет перегрузки, принимающие [`FlowDirection`](xref:Xamarin.Forms.FlowDirection) аргумент, указывающий направление, в котором элементы пользовательского интерфейса поступают в пределах предупреждения. Дополнительные сведения о направлении потока см. [в разделе локализация справа налево](~/xamarin-forms/app-fundamentals/localization/right-to-left.md).
 
@@ -66,9 +66,9 @@ async void OnActionSheetSimpleClicked (object sender, EventArgs e)
 }
 ```
 
-![Диалоговое окно с листом действий](pop-ups-images/action.png)
+[![Диалоговое окно Актионшит в iOS и Android](pop-ups-images/simple-actionsheet.png)](pop-ups-images/simple-actionsheet-large.png#lightbox)
 
-Кнопка `destroy` отрисовывается не так, как другие. Ее можно оставить со значением `null` или указать в качестве третьего строкового параметра. В следующем примере используется кнопка `destroy`.
+Кнопка отображается по `destroy` -разному для других кнопок в iOS и может быть оставлена `null` или указана в качестве третьего строкового параметра. В следующем примере используется кнопка `destroy`.
 
 ```csharp
 async void OnActionSheetCancelDeleteClicked (object sender, EventArgs e)
@@ -78,7 +78,7 @@ async void OnActionSheetCancelDeleteClicked (object sender, EventArgs e)
 }
 ```
 
-[![дисплайактионшит](pop-ups-images/action2-sml.png "Диалоговое окно листа действий с кнопкой "уничтожить"")](pop-ups-images/action2.png#lightbox "Диалоговое окно листа действий с кнопкой "уничтожить"")
+[![Диалоговое окно Актионшит с кнопкой "уничтожить" в iOS и Android](pop-ups-images/actionsheet-destroy-button.png)](pop-ups-images/actionsheet-destroy-button-large.png#lightbox)
 
 [`DisplayActionSheet`](xref:Xamarin.Forms.Page.DisplayActionSheet*)Метод также имеет перегрузку, которая принимает [`FlowDirection`](xref:Xamarin.Forms.FlowDirection) аргумент, указывающий направление потока элементов пользовательского интерфейса на листе действий. Дополнительные сведения о направлении потока см. [в разделе локализация справа налево](~/xamarin-forms/app-fundamentals/localization/right-to-left.md).
 

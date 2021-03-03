@@ -1,5 +1,5 @@
 ---
-title: Xamarin.Forms Диспетчер визуальных состояний
+title: Диспетчер визуального представления состояний Xamarin.Forms
 description: Используйте Диспетчер визуальных состояний для внесения изменений в элементы XAML на основе визуальных состояний, заданных из кода.
 ms.prod: xamarin
 ms.assetid: 17296F14-640D-484B-A24C-A4E9B7013E4F
@@ -11,14 +11,14 @@ ms.date: 05/19/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: f1ceadb6d7985f5d448fe729a42e0cf0a3d5d6f6
-ms.sourcegitcommit: ebdc016b3ec0b06915170d0cbbd9e0e2469763b9
+ms.openlocfilehash: 2c69dc4373a2fe98d61b123daf63d54e129e8426
+ms.sourcegitcommit: 322e7bcf9fb8c1ad52ab8e929bea95d45e280834
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93374476"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101751435"
 ---
-# <a name="no-locxamarinforms-visual-state-manager"></a>Xamarin.Forms Диспетчер визуальных состояний
+# <a name="xamarinforms-visual-state-manager"></a>Диспетчер визуального представления состояний Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-vsmdemos)
 
@@ -404,7 +404,7 @@ Xamarin.FormsДиспетчер визуальных состояний опре
 
 [![VSM в стиле](vsm-images/VsmInStyle.png "VSM в стиле")](vsm-images/VsmInStyle-Large.png#lightbox)
 
-## <a name="visual-states-in-no-locxamarinforms"></a>Визуальные состояния в Xamarin.Forms
+## <a name="visual-states-in-xamarinforms"></a>Визуальные состояния в Xamarin.Forms
 
 В следующей таблице перечислены визуальные состояния, определенные в Xamarin.Forms .
 
@@ -414,7 +414,7 @@ Xamarin.FormsДиспетчер визуальных состояний опре
 | `CheckBox` | `IsChecked` | [Визуальные состояния флажка](~/xamarin-forms/user-interface/checkbox.md#checkbox-visual-states) |
 | `CarouselView` | `DefaultItem`, `CurrentItem`, `PreviousItem`, `NextItem` | [Визуальные состояния Карауселвиев](~/xamarin-forms/user-interface/carouselview/interaction.md#define-visual-states) |
 | `ImageButton` | `Pressed` | [Визуальные состояния ImageButton](~/xamarin-forms/user-interface/imagebutton.md#imagebutton-visual-states) |
-| `RadioButton` | `IsChecked` | [Визуальные состояния RadioButton](~/xamarin-forms/user-interface/radiobutton.md#radiobutton-visual-states) |
+| `RadioButton` | `Checked`, `Unchecked` | [Визуальные состояния RadioButton](~/xamarin-forms/user-interface/radiobutton.md#radiobutton-visual-states) |
 | `Switch` | `On`, `Off` | [Переключение визуальных состояний](~/xamarin-forms/user-interface/switch.md#switch-visual-states) |
 | `VisualElement` | `Normal`, `Disabled`, `Focused`, `Selected` | [Распространенные состояния](#common-states) |
 

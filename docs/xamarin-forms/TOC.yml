@@ -112,6 +112,8 @@ items:
         items:
           - name: Горячая перезагрузка XAML
             href: xaml/hot-reload.md
+          - name: Динамическое визуальное дерево
+            href: xaml/live-visual-tree.md
           - name: Инструментарий XAML
             href: xaml/toolbox.md
           - name: Средство предварительного просмотра XAML
