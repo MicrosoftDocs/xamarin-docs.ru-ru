@@ -308,8 +308,8 @@ items:
             href: app-fundamentals/shell/flyout.md
           - name: Вкладки
             href: app-fundamentals/shell/tabs.md
-          - name: Конфигурация страницы
-            href: app-fundamentals/shell/configuration.md
+          - name: Страницы
+            href: app-fundamentals/shell/pages.md
           - name: Навигация
             href: app-fundamentals/shell/navigation.md
           - name: Поиск
