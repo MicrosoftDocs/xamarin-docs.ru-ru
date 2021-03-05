@@ -5,6 +5,8 @@
     - name: 2021
       expanded: true
       items:
+        - name: "Февраль 2021\_года"
+          href: 2021-02.md
         - name: "Январь 2021\_г."
           href: 2021-01.md
     - name: 2020
