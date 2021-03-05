@@ -16,7 +16,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "97972361"
 ---
-# <a name="no-locxamarinessentials-permissions"></a>Xamarin.Essentials. Разрешения
+# <a name="xamarinessentials-permissions"></a>Xamarin.Essentials. Разрешения
 
 Класс **Permissions** позволяет проверять и запрашивать разрешения среды выполнения.
 
