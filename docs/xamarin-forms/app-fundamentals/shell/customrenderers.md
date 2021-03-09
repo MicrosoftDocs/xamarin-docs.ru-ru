@@ -6,27 +6,27 @@ ms.assetid: 3B1A6AE8-1D1E-4C34-B9AB-48F4444FEF32
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 07/29/2020
+ms.date: 02/15/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 2a35966bfdf203a77fc3943e224d77fb087dcc45
-ms.sourcegitcommit: 044e8d7e2e53f366942afe5084316198925f4b03
+ms.openlocfilehash: cd70e7d50990cfc5c7668f4b7a51e889f14a9fb3
+ms.sourcegitcommit: 1b542afc0f6f2f6adbced527ae47b9ac90eaa1de
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940490"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101757557"
 ---
-# <a name="no-locxamarinforms-shell-custom-renderers"></a>Пользовательские отрисовщики оболочки Xamarin.Forms
+# <a name="xamarinforms-shell-custom-renderers"></a>Пользовательские отрисовщики оболочки Xamarin.Forms
 
-Одним из преимуществ приложений оболочки Xamarin.Forms является то, что их внешний вид и поведение подробно настраиваются через свойства и методы, которые предоставляются в классах оболочки. Но вы можете создать собственный отрисовщик оболочки, если доступных возможностей настройки для конкретной платформы недостаточно. Пользовательский отрисовщик оболочки, как и в других системах, можно добавить только в один проект платформы, чтобы настроить для нее внешний вид и поведение, сохраняя поведение по умолчанию для другой платформы. Вы также можете добавить разные пользовательские отрисовщики оболочки в каждый проект платформы, чтобы раздельно настраивать внешний вид и поведение для iOS и Android.
+Одним из преимуществ приложений оболочки Xamarin.Forms является то, что их внешний вид и поведение подробно настраиваются через свойства и методы, которые предоставляются в классах оболочки. Но вы можете создать собственный отрисовщик оболочки, если доступных возможностей расширенной настройки для конкретной платформы недостаточно. Пользовательский отрисовщик оболочки, как и в других системах, можно добавить только в один проект платформы, чтобы настроить для нее внешний вид и поведение, сохраняя поведение по умолчанию для другой платформы. Вы также можете добавить разные пользовательские отрисовщики оболочки в каждый проект платформы, чтобы раздельно настраивать внешний вид и поведение для iOS и Android.
 
 Приложения оболочки отображаются в iOS и Android через класс `ShellRenderer`. В iOS этот класс `ShellRenderer` находится в пространстве имен `Xamarin.Forms.Platform.iOS`. В Android класс `ShellRenderer` находится в пространстве имен `Xamarin.Forms.Platform.Android`.
 
 Процесс создания пользовательского отрисовщика оболочки выглядит следующим образом.
 
-1. Создайте подкласс класса `Shell`. Обычно в приложении оболочки эта задача уже выполнена.
-1. Используйте подкласс класса `Shell`. Обычно в приложении оболочки эта задача уже выполнена.
+1. Создайте подкласс класса [`Shell`](xref:Xamarin.Forms.Shell). Обычно в приложении оболочки эта задача уже выполнена.
+1. Используйте подкласс класса [`Shell`](xref:Xamarin.Forms.Shell). Обычно в приложении оболочки эта задача уже выполнена.
 1. Создайте на нужной платформе класс пользовательского отрисовщика, наследуемый от класса `ShellRenderer`.
 
 ## <a name="create-a-custom-renderer-class"></a>Создание класса пользовательского отрисовщика
@@ -46,7 +46,7 @@ ms.locfileid: "97940490"
 | --- | --- | --- |
 | `SetElementSize`<br />`CreateFlyoutRenderer`<br />`CreateNavBarAppearanceTracker`<br />`CreatePageRendererTracker`<br />`CreateShellFlyoutContentRenderer`<br />`CreateShellItemRenderer`<br />`CreateShellItemTransition`<br />`CreateShellSearchResultsRenderer`<br />`CreateShellSectionRenderer`<br />`CreateTabBarAppearanceTracker`<br />`Dispose`<br />`OnCurrentItemChanged`<br />`OnElementPropertyChanged`<br />`OnElementSet`<br />`UpdateBackgroundColor` | `CreateFragmentForPage`<br />`CreateShellFlyoutContentRenderer`<br />`CreateShellFlyoutRenderer`<br />`CreateShellItemRenderer`<br />`CreateShellSectionRenderer`<br />`CreateTrackerForToolbar`<br />`CreateToolbarAppearanceTracker`<br />`CreateTabLayoutAppearanceTracker`<br />`CreateBottomNavViewAppearanceTracker`<br />`OnElementPropertyChanged`<br />`OnElementSet`<br />`SwitchFragment`<br />`Dispose` | `CreateShellFlyoutTemplateSelector`<br />`CreateShellHeaderRenderer`<br />`CreateShellItemRenderer`<br />`CreateShellSectionRenderer`<br />`OnElementPropertyChanged`<br />`OnElementSet`<br />`UpdateFlyoutBackdropColor`<br />`UpdateFlyoutBackgroundColor` |
 
-Классы `FlyoutItem` и `TabBar` являются псевдонимами для класса `ShellItem`, а класс `Tab` — для класса `ShellSection`. Таким образом, методы `CreateShellItemRenderer` и `CreateShellSectionRenderer` должны быть переопределены при создании пользовательского отрисовщика для объектов `FlyoutItem` и `Tab` соответственно.
+Классы [`FlyoutItem`](xref:Xamarin.Forms.FlyoutItem) и [`TabBar`](xref:Xamarin.Forms.TabBar) являются псевдонимами для класса [`ShellItem`](xref:Xamarin.Forms.ShellItem), а класс [`Tab`](xref:Xamarin.Forms.Tab) — для класса [`ShellSection`](xref:Xamarin.Forms.ShellSection). Таким образом, методы `CreateShellItemRenderer` и `CreateShellSectionRenderer` должны быть переопределены при создании пользовательского отрисовщика для объектов `FlyoutItem` и `Tab` соответственно.
 
 > [!IMPORTANT]
 > Для iOS, Android и UWP существуют дополнительные классы отрисовщика оболочки, такие как `ShellSectionRenderer` и `ShellItemRenderer`. Но эти дополнительные классы отрисовщика создаются путем переопределения класса `ShellRenderer`. Это означает, что любое поведение этих дополнительных классов отрисовщика можно переопределить, создавая для них подклассы и экземпляры этого подкласса в соответствующем переопределении производного класса `ShellRenderer`.

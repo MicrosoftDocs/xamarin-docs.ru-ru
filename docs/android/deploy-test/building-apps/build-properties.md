@@ -6,13 +6,13 @@ ms.assetid: FC0DBC08-EBCB-4D2D-AB3F-76B54E635C22
 ms.technology: xamarin-android
 author: jonpryor
 ms.author: jopryo
-ms.date: 09/21/2020
-ms.openlocfilehash: aeb0cca9ead1a0f0a3f5b1dec88b2470289cd589
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.date: 03/01/2021
+ms.openlocfilehash: 5c26c171c198698580e2b2170a6692d8fb80a171
+ms.sourcegitcommit: 3aa9bdcaaedca74ab5175cb2338a1df122300243
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91454940"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101749321"
 ---
 # <a name="build-properties"></a>Свойства сборки
 
@@ -41,6 +41,14 @@ ms.locfileid: "91454940"
 Указывает дополнительные параметры командной строки для передачи команде **aapt2 link** при обработке активов и ресурсов Android.
 
 Свойство добавлено в Xamarin.Android версии 9.1.
+
+## <a name="androidaddkeepalives"></a>AndroidAddKeepAlives
+
+Логическое свойство, определяющее, будет ли компоновщик вставлять вызовы `GC.KeepAlive()` внутри проектов привязки для предотвращения преждевременного сбора объектов.
+
+Значение по умолчанию для сборок конфигурации выпуска — `True`.
+
+Это свойство было добавлено в Xamarin.Android 11.2.
 
 ## <a name="androidaotcustomprofilepath"></a>AndroidAotCustomProfilePath
 
@@ -199,6 +207,27 @@ ms.locfileid: "91454940"
 
 Добавлено в Xamarin.Android версии 10.2.
 
+
+## <a name="androiddeviceuserid"></a>AndroidDeviceUserId
+
+Разрешает развертывание и отладку приложения с использованием гостевой или рабочей учетной записи. Значением является значение `uid`, полученное из следующей команды adb:
+
+```
+adb shell pm list users
+```
+
+Возвращаются следующие данные:
+
+```
+Users:
+    UserInfo{0:Owner:c13} running
+    UserInfo{10:Guest:404}
+```
+
+`uid` — первое целочисленное значение. В примере это `0` и `10`.
+
+Это свойство было добавлено в Xamarin.Android 11.2.
+
 ## <a name="androiddextool"></a>AndroidDexTool
 
 Свойство стиля перечисления с допустимыми значениями `dx` или `d8`. Указывает, какой [DEX][dex]-компилятор Android используется во время сборки Xamarin.Android.
@@ -298,17 +327,21 @@ class BadType : IJavaObject {
 
 Добавлено в Xamarin.Android версии 10.2.
 
+<a name="AndroidFastDeploymentType"></a>
+
 ## <a name="androidfastdeploymenttype"></a>AndroidFastDeploymentType
 
 Список разделенных двоеточиями (`:`) значений для управления типами, которые можно развернуть в [каталоге быстрого развертывания](~/android/deploy-test/building-apps/build-process.md#Fast_Deployment) на целевом устройстве, если свойство MSBuild [`$(EmbedAssembliesIntoApk)`](#embedassembliesintoapk) имеет значение `False`. Если ресурс быстро развернут, он *не* встраивается в создаваемый файл `.apk`, что может ускорить развертывание. (Чем быстрее выполняется развертывание, тем реже файл `.apk` необходимо перестраивать, что ускоряет процесс установки.) Допустимы следующие значения:
 
 - `Assemblies`. развертывание сборок приложения.
-
-- `Dexes`. развертывание файлов `.dex` и ресурсов Android. **: это значение можно использовать *только* на устройствах под управлением Android 4.4 или более поздней версии (API-19).**
+- `Dexes`: развертывание файлов `.dex`, собственных библиотек и карт типов.
+  **: это значение можно использовать *только* на устройствах под управлением Android 4.4 или более поздней версии (API-19).**
 
 Значение по умолчанию — `Assemblies`.
 
-**Экспериментальное**. Свойство добавлено в Xamarin.Android версии 6.1.
+Поддержка быстро развертываемых ресурсов и активов через эту систему была удалена в фиксации [f0d565fe](https://github.com/xamarin/xamarin-android/commit/f0d565fe4833f16df31378c77bbb492ffd2904b9). Это было вызвано тем, что для работы требуются устаревшие API.
+
+**Экспериментальное**. Это свойство было добавлено в Xamarin.Android 6.1.
 
 ## <a name="androidgeneratejnimarshalmethods"></a>AndroidGenerateJniMarshalMethods
 
@@ -381,6 +414,36 @@ class BadType : IJavaObject {
 > будет иметь приоритет.
 
 Свойство добавлено в Xamarin.Android версии 6.1.
+
+## <a name="androidincludewrapsh"></a>AndroidIncludeWrapSh
+
+Логическое значение, указывающее, следует ли упаковывать скрипт-оболочку Android ([`wrap.sh`](https://developer.android.com/ndk/guides/wrap-script)) в APK. Значение свойства по умолчанию — `false`, поскольку скрипт-оболочка может значительно повлиять на способ запуска приложения и их работу; скрипт следует включать только при необходимости, например для отладки или изменения поведения при запуске или во время выполнения приложения.
+
+Скрипт добавляется в проект с помощью действия сборки [`@(AndroidNativeLibrary)`](~/android/deploy-test/building-apps/build-items.md#androidnativelibrary),
+поскольку оно размещается в том же каталоге, что и собственные библиотеки, зависящие от архитектуры. Имя должно быть `wrap.sh`.
+
+Самый простой способ указать путь к скрипту `wrap.sh` — это разместить его в каталоге, имя которого совпадает с конечной архитектурой. Это сработает только в том случае, если у вас только один вариант `wrap.sh` для архитектуры:
+
+```xml
+<AndroidNativeLibrary Include="path/to/arm64-v8a/wrap.sh" />
+```
+
+Однако если в проекте требуется более одного решения `wrap.sh` для каждой архитектуры, этот подход не будет работать.
+Вместо этого в таких случаях для указания имени можно использовать метаданные `Link` `AndroidNativeLibrary`:
+
+```xml
+<AndroidNativeLibrary Include="/path/to/my/arm64-wrap.sh">
+  <Link>lib\arm64-v8a\wrap.sh</Link>
+</AndroidNativeLibrary>
+```
+
+Если используются метаданные `Link`, путь, указанный в его значении, должен представлять собой допустимый путь к собственной библиотеке для конкретной архитектуры относительно корневого каталога APK. Формат пути — `lib\ARCH\wrap.sh`, где `ARCH` может быть одним из следующего:
+
++ `arm64-v8a`
++ `armeabi-v7a`
++ `x86_64`
++ `x86`
+
 
 ## <a name="androidkeystore"></a>AndroidKeyStore
 
@@ -537,6 +600,14 @@ Xamarin.Android 10.2 и более поздних версий поддержи
 
 Добавлено в Xamarin.Android версии 10.1.
 
+## <a name="androidproguardmappingfile"></a>AndroidProguardMappingFile
+
+Задает правило ProGuard `-printmapping` для `r8`. Это означает, что файл `mapping.txt` будет создан в папке `$(OutputPath)`. Этот файл можно затем использовать при отправке пакетов в Магазин Google PlayPlay.
+
+Значение по умолчанию — `$(OutputPath)mapping.txt`.
+
+Это свойство было добавлено в Xamarin.Android 11.2.
+
 ## <a name="androidr8ignorewarnings"></a>AndroidR8IgnoreWarnings
 
 Задает правило ProGuard `-ignorewarnings` для `r8`. Это позволяет `r8` продолжать компиляцию DEX, даже если обнаружены определенные предупреждения. Значение по умолчанию — `True`, но для обеспечения более строгого поведения можно задать значение `False`. Дополнительные сведения см. в [руководстве по ProGuard](https://www.guardsquare.com/products/proguard/manual/usage).
@@ -681,7 +752,7 @@ Xamarin.Android 10.2 и более поздних версий поддержи
 /p:AndroidUseAapt2=True
 ```
 
-Свойство добавлено в Xamarin.Android версии 8.3.
+Это свойство было добавлено в Xamarin.Android 8.3. Установка для параметра `AndroidUseAapt2` значения `false` не рекомендуется в Xamarin.Android 11.2.
 
 ## <a name="androiduseapksigner"></a>AndroidUseApkSigner
 
@@ -713,7 +784,9 @@ Xamarin.Android 10.2 и более поздних версий поддержи
 
 Логическое свойство, определяющее, требуются ли *пакеты общей среды выполнения* для запуска приложения на целевом устройстве. Их использование позволяет уменьшить пакет приложения, что ускорит процесс создания и развертывания пакета, а также цикл разработки, развертывания и отладки.
 
-Это свойство должно иметь значение `True` для отладочных сборок и `False` для проектов выпуска.
+До Xamarin.Android 11.2 это свойство должно иметь значение `True` для отладочных сборок и `False` для проектов выпуска.
+
+Это свойство было *удалено* в Xamarin.Android 11.2.
 
 ## <a name="androidversioncodepattern"></a>AndroidVersionCodePattern
 
@@ -874,6 +947,8 @@ Xamarin.Android 10.2 и более поздних версий поддержи
 
 Логическое свойство, которое включает создание файла зависимостей компоновщика. Этот файл может использоваться в качестве входных данных для средства [illinkanalyzer](https://github.com/mono/linker/blob/master/src/analyzer/README.md).
 
+Файл зависимостей с именем `linker-dependencies.xml.gz` записывается в каталог проекта. В .NET5/6 он записывается рядом со связанными сборками в каталоге `obj/<Configuration>/android<ABI>/linked`.
+
 Значение по умолчанию равно False.
 
 ## <a name="mandroidi18n"></a>MandroidI18n
@@ -888,11 +963,11 @@ Xamarin.Android 10.2 и более поздних версий поддержи
 
 - **MidEast**: включить кодировки языков стран Ближнего Востока, такие как *Турецкая (Windows)* \[iso-8859-9, CP1254\], *Иврит (Windows)* \[windows-1255, CP1255\], *Арабская (Windows)* \[windows-1256, CP1256\], *Арабская (ISO)* \[iso-8859-6, CP28596\], *Иврит (ISO)* \[iso-8859-8, CP28598\], *Латиница 5 (ISO)* \[iso-8859-9, CP28599\] и *Иврит (Iso альтернативный)* \[iso-8859-8, CP38598\].
 
-- **Other**: включить другие кодировки, такие как *Кириллица (Windows)* \[CP1251\], *Балтийская (Windows)* \[iso-8859-4, CP1257\], *Вьетнамская (Windows)* \[CP1258\], *Кириллица (KOI8-R)* \[koi8-r, CP1251\], *Украинская (KOI8-U) * \[koi8-u, CP1251\], *Балтийская (ISO)* \[iso-8859-4, CP1257\], *Кириллица (ISO)* \[iso-8859-5, CP1251\], *ISCII - Деванагари* \[x-iscii-de, CP57002\], *ISCII - Бенгальская* \[x-iscii-be, CP57003 \], *ISCII - Тамильская* \[x-iscii-ta, CP57004\], *ISCII - Телугу* \[x-iscii-te, CP57005\], *ISCII - Ассамская* \[x-iscii-as, CP57006\], *ISCII - Ория* \[x-iscii-or, CP57007\], *ISCII - Каннада* \[x-iscii ка CP57008\], *ISCII - Малаялам* \[x-iscii-ka, CP57009\], *ISCII - Гуджарати* \[x-iscii-gu, CP57010\], *ISCII - Панджаби* \[x-iscii-pa, CP57011\] и *Тайская (Windows) * \[CP874\].
+- **Other**: включить другие кодировки, такие как *Кириллица (Windows)* \[CP1251\], *Балтийская (Windows)* \[iso-8859-4, CP1257\], *Вьетнамская (Windows)* \[CP1258\], *Кириллица (KOI8-R)* \[koi8-r, CP1251\], *Украинская (KOI8-U)* \[koi8-u, CP1251\], *Балтийская (ISO)* \[iso-8859-4, CP1257\], *Кириллица (ISO)* \[iso-8859-5, CP1251\], *ISCII - Деванагари* \[x-iscii-de, CP57002\], *ISCII - Бенгальская* \[x-iscii-be, CP57003 \], *ISCII - Тамильская* \[x-iscii-ta, CP57004\], *ISCII - Телугу* \[x-iscii-te, CP57005\], *ISCII - Ассамская* \[x-iscii-as, CP57006\], *ISCII - Ория* \[x-iscii-or, CP57007\], *ISCII - Каннада* \[x-iscii ка CP57008\], *ISCII - Малаялам* \[x-iscii-ka, CP57009\], *ISCII - Гуджарати* \[x-iscii-gu, CP57010\], *ISCII - Панджаби* \[x-iscii-pa, CP57011\] и *Тайская (Windows)* \[CP874\].
 
 - **Rare**: включить редкие кодировки, такие как *IBM EBCDIC (турецкий)* \[CP1026\], *IBM EBCDIC (латиница 1 Open Systems)* \[CP1047\], *IBM EBCDIC (США/Канада с евро)* \[CP1140\], *IBM EBCDIC (немецкая с евро)* \[CP1141\], *IBM EBCDIC (датская/норвежская с евро)* \[CP1142\], *IBM EBCDIC (финская/шведская с евро)* \[CP1143\], *IBM EBCDIC (итальянская с евро)* \[CP1144\], *IBM EBCDIC (латиноамериканская/испанская с евро)* \[CP1145\], *IBM EBCDIC (британская с евро)* \[CP1146\], *IBM EBCDIC (французская с евро)* \[CP1147\], *IBM EBCDIC (международная с евро)* \[CP1148\], *IBM EBCDIC (исландская с евро)* \[CP1149\], *IBM EBCDIC (Германия)* \[ CP20273\], *IBM EBCDIC (Дания и Норвегия)* \[CP20277\], *IBM EBCDIC (Финляндия и Швеция)* \[CP20278\], *IBM EBCDIC (Италия)* \[CP20280\], *IBM EBCDIC (латиноамериканская/испанская)* \[CP20284\], *IBM EBCDIC (британская)* \[CP20285\], *IBM EBCDIC (японская расширенная катакана)* \[CP20290\], *IBM EBCDIC (Франция)* \[CP20297\], *IBM EBCDIC (арабская)* \[CP20420\], *IBM EBCDIC (иврит)* \[CP20424\], *IBM EBCDIC (исландская)* \[CP20871\], *IBM EBCDIC (Кириллица сербско-болгарская)* \[CP21025\], *IBM EBCDIC (США и Канада)* \[ CP37\], *IBM EBCDIC (международная)* \[CP500\], *Арабская (ASMO 708)* \[CP708\], *Центральноевропейская (DOS)* \[CP852\]*, Кириллица (DOS)* \[CP855\], *Турецкая (DOS)* \[CP857\], *Западноевропейская (DOS с евро)* \[CP858\], *Иврит (DOS)* \[CP862\], *Арабская (DOS)* \[CP864\], *Русская (DOS)* \[CP866\], *Греческая (DOS)* \[CP869\], *IBM EBCDIC (латиница 2)* \[CP870\] и *IBM EBCDIC (греческая)* \[CP875\].
 
-- **West**: включить западные кодировки, такие как *Западноевропейская (Mac)* \[macintosh, CP10000\], *Исландская (Mac)* \[x-mac-icelandic, CP10079\], *Центральноевропейская (Windows)* \[iso-8859-2, CP1250\], *Западноевропейская (Windows)* \[iso-8859-1, CP1252\], *Греческая (Windows)* \[iso-8859-7, CP1253\], *Центральноевропейская (ISO)* \[iso-8859-2, CP28592\], *Латиница 3 (ISO)* \[iso-8859-3, CP28593\], *Греческая (ISO)* \[iso-8859-7, CP28597\], *Латиница 9 (ISO) * \[iso-8859-15, CP28605\], *OEM - США* \[CP437\], *Западноевропейская (DOS)* \[CP850\], *Португальская (DOS)* \[CP860\], *Исландская (DOS)* \[CP861\], *Французская канадская (DOS)* \[CP863\] и *Скандинавская (DOS)* \[CP865\].
+- **West**: включить западные кодировки, такие как *Западноевропейская (Mac)* \[macintosh, CP10000\], *Исландская (Mac)* \[x-mac-icelandic, CP10079\], *Центральноевропейская (Windows)* \[iso-8859-2, CP1250\], *Западноевропейская (Windows)* \[iso-8859-1, CP1252\], *Греческая (Windows)* \[iso-8859-7, CP1253\], *Центральноевропейская (ISO)* \[iso-8859-2, CP28592\], *Латиница 3 (ISO)* \[iso-8859-3, CP28593\], *Греческая (ISO)* \[iso-8859-7, CP28597\], *Латиница 9 (ISO)* \[iso-8859-15, CP28605\], *OEM - США* \[CP437\], *Западноевропейская (DOS)* \[CP850\], *Португальская (DOS)* \[CP860\], *Исландская (DOS)* \[CP861\], *Французская канадская (DOS)* \[CP863\] и *Скандинавская (DOS)* \[CP865\].
 
 ```xml
 <MandroidI18n>West</MandroidI18n>

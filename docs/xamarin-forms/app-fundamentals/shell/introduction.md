@@ -6,18 +6,18 @@ ms.assetid: 4604DCB5-83DA-458A-8B02-6508A740BE0E
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 09/20/2019
+ms.date: 02/15/2021
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 215bf467c6f00e45d3e00e10438b01d238050504
-ms.sourcegitcommit: f2942b518f51317acbb263be5bc0c91e66239f50
+ms.openlocfilehash: 1863481dface7e215764ea4673f2d18ece4e2a87
+ms.sourcegitcommit: 1b542afc0f6f2f6adbced527ae47b9ac90eaa1de
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94590328"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101757779"
 ---
-# <a name="no-locxamarinforms-shell-introduction"></a>Общие сведения об оболочке Xamarin.Forms
+# <a name="xamarinforms-shell-introduction"></a>Общие сведения об оболочке Xamarin.Forms
 
 [![Загрузить образец](~/media/shared/download.png) загрузить пример](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
 
@@ -33,6 +33,54 @@ ms.locfileid: "94590328"
 > [!IMPORTANT]
 > Оболочку можно внедрить в уже существующие приложения, сразу же получив преимущества улучшения навигации, производительности и расширяемости.
 
+## <a name="application-visual-hierarchy"></a>Визуальная иерархия приложения
+
+Приложения оболочки Xamarin.Forms определяют визуальную иерархию приложения, описанную в классе, подклассом которого является класс [`Shell`](xref:Xamarin.Forms.Shell). Этот класс может состоять из трех основных объектов иерархии:
+
+1. [`FlyoutItem`](xref:Xamarin.Forms.FlyoutItem) или [`TabBar`](xref:Xamarin.Forms.TabBar). Объект `FlyoutItem` представляет один или несколько элементов всплывающего меню. Он требуется, если шаблон навигации требует использования всплывающего меню. Объект `TabBar` представляет нижнюю панель вкладок. Он требуется, если навигация в приложении начинается с нижней панели вкладок (когда всплывающее меню не требуется).
+1. [`Tab`](xref:Xamarin.Forms.Tab) представляет сгруппированное содержимое с навигацией по нижним вкладкам.
+1. Объект [`ShellContent`](xref:Xamarin.Forms.ShellContent), представляющий объекты [`ContentPage`](xref:Xamarin.Forms.ContentPage) для каждой вкладки.
+
+Эти объекты не представляют собой какие-либо элементы пользовательского интерфейса, они служат лишь для организации визуальной структуры приложения. На основе этих объектов оболочка создает пользовательский интерфейс навигации по содержимому.
+
+> [!NOTE]
+> Страницы в приложениях оболочки создаются по запросу в ответ на навигацию.
+
+Дополнительные сведения см. в разделе [Создание приложения оболочкиXamarin.Forms](~/xamarin-forms/app-fundamentals/shell/create.md).
+
+## <a name="navigation-user-experience"></a>Пользовательский интерфейс навигации
+
+Пользовательский интерфейс навигации, предоставляемый оболочкой Xamarin.Forms, основан на всплывающих окнах и вкладках. Верхний уровень навигации в приложении оболочки — это всплывающее меню или нижняя панель вкладок, выбор которых обусловлен требованиями навигации в приложении. В следующем примере показано приложение, в котором для верхнего уровня навигации используется всплывающее меню:
+
+[![Снимок экрана: всплывающий элемент оболочки в iOS и Android](introduction-images/flyout.png)](introduction-images/flyout-large.png#lightbox)
+
+В этом примере некоторые всплывающие элементы дублируются как элементы панели вкладок. Однако существуют также элементы, доступ к которым возможен только из всплывающего окна. Выбор элемента приводит к отображению нижней вкладки, которая представляет выбранный элемент:
+
+[![Снимок экрана: нижние вкладки оболочки в iOS и Android](introduction-images/cats.png)](introduction-images/cats-large.png#lightbox)
+
+> [!NOTE]
+> Если всплывающее меню отсутствует, нижняя панель вкладок считается верхним уровнем навигации в приложении.
+
+На каждой вкладке на панели вкладок отображается [`ContentPage`](xref:Xamarin.Forms.ContentPage). Но если вкладка содержит более одной страницы, перемещение по страницам осуществляется с помощью верхней панели вкладок.
+
+[![Снимок экрана: верхние вкладки оболочки в iOS и Android](introduction-images/dogs.png)](introduction-images/dogs-large.png#lightbox)
+
+На вкладке можно перемещаться по дополнительным объектам [`ContentPage`](xref:Xamarin.Forms.ContentPage), называемым страницами сведений:
+
+[![Снимок экрана: перемещение по страницам оболочки в iOS и Android](introduction-images/dogdetails.png)](introduction-images/dogdetails-large.png#lightbox)
+
+Оболочка использует улучшенные возможности навигации по интерфейсу на основе URI, позволяя переходить на любую страницу в приложении без соблюдения строгой иерархии. Кроме того, они также дают возможность перехода назад без необходимости прохода всех страниц в стеке навигации. Дополнительные сведения см. в разделе [Навигация по оболочке Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/navigation.md).
+
+## <a name="search"></a>Поиск
+
+Оболочка Xamarin.Forms включает встроенные функции поиска, предоставляемые классом [`SearchHandler`](xref:Xamarin.Forms.SearchHandler). Чтобы добавить на страницу функцию поиска, добавьте производный объект `SearchHandler`. После этого в верхней части страницы появится поле поиска. Когда в такое поле поиска вводится текст, область поисковых подсказок может заполняться данными:
+
+[![Снимок экрана: поиск оболочки в iOS и Android](introduction-images/search.png)](introduction-images/search-large.png#lightbox)
+
+Затем, когда результат выбирается из области вариантов, можно выполнить пользовательскую логику, например переход на страницу сведений.
+
+Дополнительные сведения см. в разделе [Поиск по оболочке Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/search.md).
+
 ## <a name="platform-support"></a>Поддержка платформ
 
 Оболочка Xamarin.Forms полностью доступна в iOS и Android, но лишь частично доступна на универсальной платформе Windows (UWP). Кроме того, сейчас оболочка в UWP является экспериментальной и может использоваться только посредством добавления следующей строки кода в класс `App` в проекте UWP перед вызовом `Forms.Init`:
@@ -43,27 +91,9 @@ global::Xamarin.Forms.Forms.SetFlags("Shell_UWP_Experimental");
 
 Дополнительные сведения о состоянии оболочки в UWP см. на странице [проектов оболочки Xamarin.Forms](https://github.com/xamarin/Xamarin.Forms/projects/54) на сайте github.com.
 
-## <a name="shell-navigation-experience"></a>Возможности навигации оболочки
-
-Оболочка предоставляет специализированный пользовательский интерфейс навигации на основе всплывающих элементов и вкладок. Верхний уровень навигации в приложении оболочки — это всплывающее меню или нижняя панель вкладок, выбор которых обусловлен требованиями навигации в приложении. В следующем примере показано приложение, в котором для верхнего уровня навигации используется всплывающее меню:
-
-[![Снимок экрана: всплывающий элемент оболочки в iOS и Android](introduction-images/flyout.png "Всплывающий элемент оболочки")](introduction-images/flyout-large.png#lightbox "Всплывающий элемент оболочки")
-
-Выбор элемента приводит к отображению нижней вкладки, которая представляет выбранный элемент:
-
-[![Снимок экрана: нижние вкладки оболочки в iOS и Android](introduction-images/monkeys.png "Нижние вкладки оболочки")](introduction-images/monkeys-large.png#lightbox "Нижние вкладки оболочки")
-
-> [!NOTE]
-> Если всплывающее меню отсутствует, нижняя панель вкладок считается верхним уровнем навигации в приложении.
-
-Каждая вкладка отображает [`ContentPage`](xref:Xamarin.Forms.ContentPage). Но если вкладка содержит более одной страницы, перемещение по страницам осуществляется с помощью верхней панели вкладок.
-
-[![Снимок экрана: верхние вкладки оболочки в iOS и Android](introduction-images/cats.png "Верхние вкладки оболочки")](introduction-images/cats-large.png#lightbox "Верхние вкладки оболочки")
-
-В каждой вкладке можно перейти на дополнительные объекты [`ContentPage`](xref:Xamarin.Forms.ContentPage):
-
-[![Снимок экрана: перемещение по страницам оболочки в iOS и Android](introduction-images/cat-details.png "Навигация в приложении оболочки")](introduction-images/cat-details-large.png#lightbox "Навигация в приложении оболочки")
-
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Xaminals (пример)](/samples/xamarin/xamarin-forms-samples/userinterface-xaminals/)
+- [Создание приложения оболочки Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/create.md)
+- [Навигация по оболочке Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/navigation.md)
+- [Поиск по оболочке Xamarin.Forms](~/xamarin-forms/app-fundamentals/shell/search.md)
