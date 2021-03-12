@@ -7,14 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 01/06/2016
-ms.openlocfilehash: fc2a76d97fe6c3bb52877bd58707872068f25968
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 4974992890348541538ea54823f8f0ea1f22b24e
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91430812"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602701"
 ---
 # <a name="working-with-tables-and-cells-in-xamarinios"></a>Работа с таблицами и ячейками в Xamarin. iOS
+
+> [!WARNING]
+> Конструктор iOS устарел в Visual Studio 2019 версии 16,8 и Visual Studio 2019 для Mac версии 8,8 и удален в Visual Studio 2019 версии 16,9 и Visual Studio для Mac версии 8,9.
+> Рекомендуемый способ создания пользовательских интерфейсов iOS — непосредственно на компьютере Mac с Interface Builder. Дополнительные сведения см. в разделе [Разработка пользовательских интерфейсов с помощью Xcode](~/ios/user-interface/storyboards/index.md). 
 
 В этом разделе описываются классы, используемые для создания и отображения таблиц, а также приводятся примеры их использования в Xamarin. iOS. Он охватывает использование внешнего вида по умолчанию для таблиц, настройку макета, реализацию редактирования и использование конструктора Xamarin iOS для визуального проектирования таблицы. Иногда отображение представляет собой список строк (например, музыкальное приложение) и в других случаях трудно распознать элемент управления таблицы (например, редактирование в приложении "Контакты" или диалог в приложении "сообщения").
 

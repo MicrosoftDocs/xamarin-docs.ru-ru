@@ -7,12 +7,12 @@ ms.technology: xamarin-android
 author: davidortinau
 ms.author: daortin
 ms.date: 08/21/2018
-ms.openlocfilehash: 56c9fc307166ec9c72ab6cb1f7a726c4cd12cb3e
-ms.sourcegitcommit: 952db1983c0bc373844c5fbe9d185e04a87d8fb4
+ms.openlocfilehash: e7aa47b0d5602d9cdc0eb6e026333cfe85ade933
+ms.sourcegitcommit: 2d52346fa1407358e57c339a130a2330bad8e5b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86997037"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102446480"
 ---
 # <a name="fragments-walkthrough-ndash-phone"></a>Пошаговое руководство по фрагментам для смартфонов &ndash;
 
@@ -153,8 +153,10 @@ Android будет вызывать метод `OnCreateView` для отобр�
 Измените код в `PlayQuoteActivity` следующим образом:
 
 ```csharp
+using AndroidX.Fragment.App;
+
 [Activity(Label = "PlayQuoteActivity")]
-public class PlayQuoteActivity : Activity
+public class PlayQuoteActivity : FragmentActivity
 {
     protected override void OnCreate(Bundle savedInstanceState)
     {
@@ -163,7 +165,7 @@ public class PlayQuoteActivity : Activity
         var playId = Intent.Extras.GetInt("current_play_id", 0);
 
         var detailsFrag = PlayQuoteFragment.NewInstance(playId);
-        FragmentManager.BeginTransaction()
+        SupportFragmentManager.BeginTransaction()
                         .Add(Android.Resource.Id.Content, detailsFrag)
                         .Commit();
     }
@@ -191,6 +193,8 @@ public class PlayQuoteActivity : Activity
 Измените код внутри фрагмента следующим образом:
 
 ```csharp
+using AndroidX.Fragment.App;
+
 public class TitlesFragment : ListFragment
 {
     int selectedPlayId;
@@ -200,9 +204,9 @@ public class TitlesFragment : ListFragment
         // Being explicit about the requirement for a default constructor.
     }
 
-    public override void OnActivityCreated(Bundle savedInstanceState)
+    public override void OnCreate(Bundle savedInstanceState)
     {
-        base.OnActivityCreated(savedInstanceState);
+        base.OnCreate(savedInstanceState);
         ListAdapter = new ArrayAdapter<String>(Activity, Android.Resource.Layout.SimpleListItemActivated1, Shakespeare.Titles);
 
         if (savedInstanceState != null)
@@ -231,7 +235,7 @@ public class TitlesFragment : ListFragment
 }
 ```
 
-При создании действия Android вызовет метод `OnActivityCreated` из фрагмента. На этом этапе создается адаптер списка для `ListView`.  Метод `ShowQuoteFromPlay` запустит экземпляр `PlayQuoteActivity`, чтобы отобразить цитату из выбранной пьесы.
+При создании действия Android вызовет метод `OnCreate` из фрагмента. На этом этапе создается адаптер списка для `ListView`.  Метод `ShowQuoteFromPlay` запустит экземпляр `PlayQuoteActivity`, чтобы отобразить цитату из выбранной пьесы.
 
 ## <a name="display-titlesfragment-in-mainactivity"></a>Отображение TitlesFragment в MainActivity
 
@@ -261,8 +265,10 @@ public class TitlesFragment : ListFragment
 В действие MainActivity не нужно вносить никаких изменений кода. Код в этом классе теперь быть выглядеть примерно так:
 
 ```csharp
+using AndroidX.Fragment.App;
+
 [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-public class MainActivity : Activity
+public class MainActivity : FragmentActivity
 {
     protected override void OnCreate(Bundle savedInstanceState)
     {

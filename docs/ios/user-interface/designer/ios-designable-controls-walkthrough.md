@@ -7,17 +7,17 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: f4b161159423bc7e5d6d99e9dfd4407532106979
-ms.sourcegitcommit: d1f0e0a9100548cfe0960ed2225b979cc1d7c28f
+ms.openlocfilehash: ddde6736014f959c0f2906e716a681dc3db0e73a
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96439446"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602383"
 ---
 # <a name="using-custom-controls-with-the-ios-designer"></a>Использование пользовательских элементов управления в конструкторе iOS
 
 > [!WARNING]
-> Конструктор iOS будет запущен в Visual Studio 2019 версии 16,8 и Visual Studio 2019 для Mac версии 8,8.
+> Конструктор iOS устарел в Visual Studio 2019 версии 16,8 и Visual Studio 2019 для Mac версии 8,8 и удален в Visual Studio 2019 версии 16,9 и Visual Studio для Mac версии 8,9.
 > Рекомендуемый способ создания пользовательских интерфейсов iOS — непосредственно на компьютере Mac с Xcode. Дополнительные сведения см. в разделе [Разработка пользовательских интерфейсов с помощью Xcode](../storyboards/index.md). 
 
 ## <a name="requirements"></a>Требования
@@ -264,7 +264,7 @@ public override void Draw(CGRect rect)
 
  [![Изменение свойств времени разработки](ios-designable-controls-walkthrough-images/11-customproperty.png)](ios-designable-controls-walkthrough-images/10-app.png#lightbox)
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье мы рассмотрели, как создать пользовательский элемент управления, а также как использовать его в приложении iOS с помощью конструктора iOS. Мы увидели, как создать и построить элемент управления, чтобы сделать его доступным для приложения на **панели элементов** конструктора. Кроме того, мы рассматривали, как реализовать элемент управления таким образом, чтобы он правильно отображался как во время разработки, так и в среде выполнения, а также как предоставить настраиваемые свойства элемента управления в конструкторе.
 

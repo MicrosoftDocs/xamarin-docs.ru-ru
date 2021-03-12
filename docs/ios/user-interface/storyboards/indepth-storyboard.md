@@ -1,17 +1,17 @@
 ---
 title: Раскадровки в Xamarin. iOS
-description: В этом документе содержатся общие сведения о раскадровках в Xamarin. iOS. Здесь описывается, как раскадровка используется для определения пользовательского интерфейса, переходов и использования конструктора iOS для изменения файлов раскадровки.
+description: В этом документе содержатся общие сведения о раскадровках в Xamarin. iOS. Он описывает, как раскадровка используется для определения пользовательского интерфейса и переходов.
 ms.prod: xamarin
 ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: b9e0f5d01d7843c25af3af3cddefbe0740f018a3
-ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
+ms.openlocfilehash: 37bdbfdc82946aec069325ff29e012f33b12cb13
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98697518"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602402"
 ---
 # <a name="storyboards-in-xamarinios"></a>Раскадровки в Xamarin. iOS
 
@@ -185,11 +185,7 @@ if (callHistoryController != null) {
 
     [![Добавление раскадровки](images/add-storyboard2.png)](images/add-storyboard2.png#lightbox)
 
-2. Щелкните файл раскадровки правой кнопкой мыши и выберите пункт **Открыть с помощью > Xcode Interface Builder** , чтобы открыть его в Xcode.
-
-   > Советы Если вы предпочитаете использовать построитель интерфейсов Xcode по умолчанию, его можно выбрать в параметрах Visual Studio для Mac в разделе **проекты > iOS**.  Начиная с Visual Studio версии 16,9 и Visual Studio для Mac 8,9, единственным вариантом будет Xcode Interface Builder. *
-
-   ![Выбор предпочтительного средства конструктора.](images/set-preferred-designer-tool.png)
+2. Дважды щелкните файл раскадровки или щелкните его правой кнопкой мыши и выберите пункт **Открыть с помощью > Xcode Interface Builder** , чтобы открыть его в interface Builderе Xcode.
 
 3. В Xcode Откройте библиотеку (с помощью **представления > Показать библиотеку** или **Shift + Command + L**), чтобы отобразить список объектов, которые можно добавить в раскадровку. Добавьте в `Navigation Controller` раскадровку, перетащив объект из списка на раскадровку. По умолчанию в `Navigation Controller` будет представлено два экрана. Справа находится экран, `TableViewController` который будет заменен более простым представлением, поэтому его можно удалить, щелкнув представление и нажав клавишу DELETE.
 
@@ -357,7 +353,7 @@ public partial class MainViewController : UIViewController
 
 См. условное решение Storyboard. Conditional в [примере раскадровки вручную](/samples/xamarin/ios-samples/manualstoryboard) для рабочего примера.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье описывается концепция раскадровок и их преимущества при разработке приложений iOS. В нем обсуждаются сцены, контроллеры представлений, представления и иерархии представлений, а также принципы связывания сцен с различными типами переходов.  Кроме того, в нем рассматривается ручное создание экземпляров контроллеров представлений из раскадровки и создание условного переходов.
 

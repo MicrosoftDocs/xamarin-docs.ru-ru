@@ -7,23 +7,23 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 06/21/2017
-ms.openlocfilehash: 4d98e061ae935605613eb0d2a9c10b3866b610c9
-ms.sourcegitcommit: d1f0e0a9100548cfe0960ed2225b979cc1d7c28f
+ms.openlocfilehash: 35188f2480ba531b5b90113121ced70c2c732d75
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96439409"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602298"
 ---
 # <a name="building-user-interfaces-with-xamarinios"></a>Создание пользовательских интерфейсов с помощью Xamarin. iOS
 
-## <a name="storyboards"></a>[Элементы Storyboard](~/ios/user-interface/storyboards/index.md)
+## <a name="storyboards"></a>[элементы раскадровки;](~/ios/user-interface/storyboards/index.md)
 
 Раскадровка — это визуальное представление внешнего вида и потока приложения. Visual Studio для Mac позволяет взаимодействовать с Interface Builder Xcode для визуального проектирования экрана приложения, а также для доступа к представлениям, контроллерам и переходов с помощью C# для большей управляемости. 
 
 ## <a name="ios-designer"></a>[Конструктор iOS](~/ios/user-interface/designer/index.md)
 
 > [!WARNING]
-> Конструктор iOS будет запущен в Visual Studio 2019 версии 16,8 и Visual Studio 2019 для Mac версии 8,8.
+> Конструктор iOS устарел в Visual Studio 2019 версии 16,8 и Visual Studio 2019 для Mac версии 8,8 и удален в Visual Studio 2019 версии 16,9 и Visual Studio для Mac версии 8,9.
 > Рекомендуемый способ создания пользовательских интерфейсов iOS — непосредственно на компьютере Mac с Xcode. Дополнительные сведения см. в разделе [Разработка пользовательских интерфейсов с помощью Xcode](~/ios/user-interface/storyboards/index.md). 
 
 Мы создали конструктор для формата раскадровки iOS, который полностью интегрирован в Visual Studio для Mac. Конструктор iOS поддерживает полную совместимость с форматом раскадровки, чтобы файлы можно было изменять либо в Xcode, либо в Visual Studio для Mac. Кроме того, редактор поддерживает дополнительные функции, такие как пользовательские элементы управления, отображаемые во время разработки в редакторе.

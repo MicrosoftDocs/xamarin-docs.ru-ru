@@ -7,14 +7,17 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/22/2017
-ms.openlocfilehash: eedf76a4ecc566a18f4d4b7d5c4f1b63642b8e25
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: b612800656a7073d0442e450f52c8aacdd12f8cd
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91437187"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602974"
 ---
 # <a name="auto-sizing-row-height-in-xamarinios"></a>Автоматическое изменение высоты строки в Xamarin. iOS
+> [!WARNING]
+> Конструктор iOS устарел в Visual Studio 2019 версии 16,8 и Visual Studio 2019 для Mac версии 8,8 и удален в Visual Studio 2019 версии 16,9 и Visual Studio для Mac версии 8,9.
+> Рекомендуемый способ создания пользовательских интерфейсов iOS — непосредственно на компьютере Mac с Interface Builder. Дополнительные сведения см. в разделе [Разработка пользовательских интерфейсов с помощью Xcode](~/ios/user-interface/storyboards/index.md). 
 
 Начиная с iOS 8, компания Apple добавила возможность создания табличного представления ( `UITableView` ), которое может автоматически увеличивать и уменьшать высоту заданной строки на основе размера содержимого с помощью автоматического макета, классов размеров и ограничений.
 
@@ -26,7 +29,7 @@ ms.locfileid: "91437187"
 
 [![Конструкция прототипа ячейки](autosizing-row-height-images/table01.png)](autosizing-row-height-images/table01.png#lightbox)
 
-Для каждого элемента в прототипе добавьте ограничения для сохранения элементов в правильном положении при изменении размеров представления таблицы для вращения или различных размеров экрана устройства iOS. Например, закрепите в `Title` верхней, левой и правой части *представления содержимого*ячейки:
+Для каждого элемента в прототипе добавьте ограничения для сохранения элементов в правильном положении при изменении размеров представления таблицы для вращения или различных размеров экрана устройства iOS. Например, закрепите в `Title` верхней, левой и правой части *представления содержимого* ячейки:
 
 [![Закрепление заголовка в верхней, левой и правой части представления содержимого ячеек](autosizing-row-height-images/table02.png)](autosizing-row-height-images/table02.png#lightbox)
 

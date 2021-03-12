@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 08/08/2018
-ms.openlocfilehash: 9ad4a5cfb32aa1256d73eb6c9d2f5fe6953b6852
-ms.sourcegitcommit: c7d82b0684b1c26cdcbc16766b636894a64a80fd
+ms.openlocfilehash: fbd0f5025ab195ba7a81bf83870330662e3a6a01
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91607181"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602714"
 ---
 # <a name="siri-shortcuts-in-xamarinios"></a>Сочетания клавиш Siri в Xamarin. iOS
 
@@ -230,7 +230,7 @@ void HandleUserActivity()
 - Добавьте импорт в файл заголовка пользовательской цели: `#import "OrderSoupIntent.h"`
 - В любом методе в классе добавьте ссылку на `OrderSoupIntent` .
 - Щелкните правой кнопкой мыши `OrderSoupIntent` и выберите **Перейти к определению**.
-- Щелкните правой кнопкой мыши вновь открытый файл **ордерсаупинтент. h**и выберите команду " **отобразить в Finder**".
+- Щелкните правой кнопкой мыши вновь открытый файл **ордерсаупинтент. h** и выберите команду " **отобразить в Finder**".
 - При этом откроется окно **Finder** , содержащее файл с **расширением h** и **m** , содержащий созданный код.
 
 Этот созданный код включает:
@@ -252,8 +252,8 @@ void HandleUserActivity()
 
 #### <a name="configuring-the-static-library-project-build-settings"></a>Настройка параметров сборки проекта статической библиотеки
 
-В **навигаторе проекта**Xcode выберите проект верхнего уровня **ордерсаупинтентстатиклиб**и перейдите к **этапам сборки > источники компиляции**.
-Обратите внимание, что **ордерсаупинтент. m** (импортируемый **ордерсаупинтент. h**) указан здесь. Обратите внимание, что в **Link binary с библиотеками**включены. **Framework** и **Foundation. Framework** .
+В **навигаторе проекта** Xcode выберите проект верхнего уровня **ордерсаупинтентстатиклиб** и перейдите к **этапам сборки > источники компиляции**.
+Обратите внимание, что **ордерсаупинтент. m** (импортируемый **ордерсаупинтент. h**) указан здесь. Обратите внимание, что в **Link binary с библиотеками** включены. **Framework** и **Foundation. Framework** .
 После этих настроек платформа будет правильно построена.
 
 #### <a name="building-the-static-library-and-generating-c-bindings-definitions"></a>Построение статической библиотеки и создание определений привязок C#
@@ -262,7 +262,7 @@ void HandleUserActivity()
 
 - [Установите целевое Шарпие](../../../cross-platform/macios/binding/objective-sharpie/get-started.md?context=xamarin%252fmac#installing-objective-sharpie), инструмент, используемый для создания определений привязок из файлов **h** и **m** , созданных Xcode.
 
-- Настройте систему для использования **программ командной строки**Xcode 10:
+- Настройте систему для использования **программ командной строки** Xcode 10:
 
   > [!WARNING]
   > Обновление выбранных **программ командной строки** влияет на все установленные версии Xcode в системе. Когда вы завершите работу с примером приложения полный курс Chef, не забудьте вернуть этот параметр к исходной конфигурации.
@@ -329,7 +329,7 @@ void HandleUserActivity()
 
 ### <a name="adding-the-intent-definition-file-to-your-solution"></a>Добавление файла определения намерения в решение
 
-В решении C# **саупчеф** проект **саупкит** содержит код, совместно используемый приложением и его расширениями. Файл **. интентдефинитион** был помещен в каталог **base. лпрож** **Саупкит**и имеет **действие сборки** **Content**. Процесс сборки копирует этот файл в пакет приложений полный курс Chef, где он необходим для правильной работы приложения.
+В решении C# **саупчеф** проект **саупкит** содержит код, совместно используемый приложением и его расширениями. Файл **. интентдефинитион** был помещен в каталог **base. лпрож** **Саупкит** и имеет **действие сборки** **Content**. Процесс сборки копирует этот файл в пакет приложений полный курс Chef, где он необходим для правильной работы приложения.
 
 ### <a name="donating-an-intent"></a>Пожертвование намерения
 
@@ -478,9 +478,9 @@ void RemoveDonation(MenuItem menuItem)
 
 Код, который выполняется, когда Siri вызывает намерение, помещается в расширение целей, которое можно добавить как новый проект в то же решение, что и существующее приложение Xamarin. iOS, такое как полный курс Chef. В решении **саупчеф** расширение называется **саупчефинтентс**.
 
-#### <a name="soupchefintents-infoplist-and-entitlementsplist"></a>Саупчефинтентс — info. plist и права. plist
+#### <a name="soupchefintents--infoplist-and-entitlementsplist"></a>Саупчефинтентс — info. plist и права. plist
 
-##### <a name="soupchefintents-infoplist"></a>Саупчефинтентс — info. plist
+##### <a name="soupchefintents--infoplist"></a>Саупчефинтентс — info. plist
 
 Параметр **info. plist** в проекте **Саупчефинтентс** определяет **идентификатор пакета** как `com.xamarin.SoupChef.SoupChefIntents` .
 
@@ -514,7 +514,7 @@ void RemoveDonation(MenuItem menuItem)
 - `NSExtensionPointIdentifier` Указывает тип расширения приложения. Дополнительные сведения см. в [документации Apple](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15).
 - `NSExtensionPrincipalClass` Указывает класс, который должен использоваться для обработки целей, поддерживаемых этим расширением.
 
-##### <a name="soupchefintents-entitlementsplist"></a>Саупчефинтентс — права. plist
+##### <a name="soupchefintents--entitlementsplist"></a>Саупчефинтентс — права. plist
 
 Права на **plist** в проекте **Саупчефинтентс** имеют возможности **групп приложений** . Эта возможность настроена для использования той же группы приложений, что и проект **саупчеф** :
 
@@ -582,7 +582,7 @@ public override bool ContinueUserActivity(UIApplication application, NSUserActiv
 
 ### <a name="soupchefintentsui--infoplist-and-entitlementsplist"></a>Саупчефинтентсуи — info. plist и права. plist
 
-#### <a name="soupchefintentsui-infoplist"></a>Саупчефинтентсуи — info. plist
+#### <a name="soupchefintentsui--infoplist"></a>Саупчефинтентсуи — info. plist
 
 Параметр **info. plist** в проекте **Саупчефинтентсуи** определяет **идентификатор пакета** как `com.xamarin.SoupChef.SoupChefIntentsui` .
 
@@ -612,7 +612,7 @@ public override bool ContinueUserActivity(UIApplication application, NSUserActiv
 - `NSExtensionPointIdentifier` Указывает тип расширения приложения. Дополнительные сведения см. в [документации Apple](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15).
 - `NSExtensionMainStoryboard` Указывает раскадровку, определяющую основной интерфейс этого расширения
 
-#### <a name="soupchefintentsui-entitlementsplist"></a>Саупчефинтентсуи — права. plist
+#### <a name="soupchefintentsui--entitlementsplist"></a>Саупчефинтентсуи — права. plist
 
 Для проекта **саупчефинтентсуи** не требуется файл прав **. plist** .
 
@@ -626,7 +626,7 @@ public override bool ContinueUserActivity(UIApplication application, NSUserActiv
 - **конфирматионвиев**, тип `ConfirmOrderView`
 
 > [!NOTE]
-> Интерфейсы для **инвоицевиев** и **Конфирматионвиев** определены в **главном. Storyboard** как дополнительные представления. Конструктор iOS в Visual Studio для Mac и Visual Studio 2017 не поддерживает просмотр и редактирование дополнительных представлений. для этого откройте **главное. Storyboard** в Interface Builder Xcode.
+> Интерфейсы для **инвоицевиев** и **Конфирматионвиев** определены в **главном. Storyboard** как дополнительные представления. Visual Studio для Mac и Visual Studio 2017 не поддерживают просмотр и редактирование дополнительных представлений; для этого откройте **главное. Storyboard** в Interface Builder Xcode.
 
 `IntentViewController` реализует класс [`IINUIHostedViewControlling`](xref:IntentsUI.IINUIHostedViewControlling)
 интерфейс, используемый для предоставления пользовательского интерфейса при работе с Siri. [`ConfigureView`](xref:IntentsUI.INUIHostedViewControlling_Extensions.ConfigureView*)

@@ -9,12 +9,12 @@ ms.custom: video
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: b6bc8383f1c19e94c6760a213b4b9813ea77139a
-ms.sourcegitcommit: 2a7bbe9cbee3727ba20ee755c1713bcfdb4d8ecb
+ms.openlocfilehash: 63d7c8e0494a9b8da65a1604a2ab8bf6c0a58f6b
+ms.sourcegitcommit: 2d52346fa1407358e57c339a130a2330bad8e5b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98950965"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102446467"
 ---
 # <a name="xamarinessentials-share"></a>Xamarin.Essentials. Общий доступ
 
@@ -110,7 +110,6 @@ await Share.RequestAsync(new ShareMultipleFilesRequest
 # <a name="ios"></a>[iOS](#tab/ios)
 
 - `Subject` не используется.
-- `Title` не используется.
 
 # <a name="uwp"></a>[UWP](#tab/uwp)
 

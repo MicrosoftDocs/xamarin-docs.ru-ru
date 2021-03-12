@@ -10,16 +10,20 @@ ms.date: 03/27/2019
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4221cd313ca8fbc3f3f9f886e3bd3f774c7472f7
-ms.sourcegitcommit: 27f33b0a83b9dc871ad9fb207a1c9960ef197d9e
+ms.openlocfilehash: b4d6eb3c1c983cb1add671d03d71cbb0499f1d89
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91897951"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602051"
 ---
 # <a name="use-design-time-data-with-the-xaml-previewer"></a>Использование данных времени разработки с предварительным просмотром XAML
 
 _Некоторые макеты трудно визуализировать без данных. Используйте эти советы, чтобы максимально эффективно использовать предварительный просмотр страниц, интенсивно использующих данные, в средстве предварительного просмотра XAML._
+
+> [!WARNING]
+> Средство предварительного просмотра XAML устарело в Visual Studio 2019 версии 16,8 и Visual Studio для Mac версии 8,8 и заменено функцией горячей загрузки XAML в Visual Studio 2019 версии 16,9 и Visual Studio для Mac версии 8,9.
+> Дополнительные сведения о горячей загрузке XAML см. в [документации](~/xamarin-forms/xaml/hot-reload.md).
 
 > [!NOTE]
 > Если вы используете Windows Presentation Foundation (WPF) или UWP, см. статью [использование данных времени разработки с конструктор XAML для классических приложений](/visualstudio/xaml-tools/xaml-designtime-data) .
@@ -139,7 +143,7 @@ xmlns:models="clr-namespace:Monkeys.Models"
 
 Если вы не хотите добавлять данные времени разработки в отдельные элементы управления, можно настроить фиктивное хранилище данных для привязки к странице. См. запись блога Джеймс Монтеманьо, [посвященную добавлению данных времени разработки](https://montemagno.com/xamarin-forms-design-time-data-tips-best-practices/) , чтобы увидеть, как выполнить привязку к статическому VIEWMODEL в XAML.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 ### <a name="requirements"></a>Требования
 

@@ -6,12 +6,12 @@ ms.assetid: A7EB73C1-38D7-46C5-9AF6-4C571C168BE7
 author: davidortinau
 ms.author: daortin
 ms.date: 06/13/2019
-ms.openlocfilehash: d79eb9ad1ca57361e063f6ce73910d6bb149cf72
-ms.sourcegitcommit: 424eaef56fd2933c98e72f1d3e7ac71730fe4835
+ms.openlocfilehash: 7c99fb593f0515dc45b64c01621cb453340f7bc1
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98758075"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602870"
 ---
 # <a name="xamarin-live-player-app"></a>Приложение Xamarin Live Player
 
@@ -21,7 +21,7 @@ ms.locfileid: "98758075"
 > Предварительный просмотр Xamarin Live Player завершен. Приложение больше не доступно. Приведенные ниже инструкции предназначены для пользователей, которые продолжают использовать предварительную версию с Visual Studio 2017.
 
 > [!TIP]
-> Вы можете использовать [Предварительный просмотр XAML](~/xamarin-forms/xaml/xaml-previewer/index.md) в Visual Studio 2019 или Visual Studio для Mac для просмотра макетов экрана по мере их редактирования.
+> Вы можете использовать [горячую перезагрузку XAML (~/ксамарин-Формс/ксамл/хот-релоад/индекс.МД) в Visual Studio 2019 или Visual Studio для Mac для просмотра своих макетов на экране по мере их редактирования.
 
 При запуске Xamarin Live Player приложение выглядит следующим образом:
 
@@ -35,7 +35,7 @@ ms.locfileid: "98758075"
 
 ![Пример приложения калькулятора, выполняемого на устройстве](player-images/basic-calculator-sml.png)
 
-## <a name="options"></a>Параметры
+## <a name="options"></a>Варианты
 
 Нажмите кнопку со сведениями **(i)** в нижней части приложения, чтобы открыть меню **параметров** :
 
@@ -45,7 +45,7 @@ ms.locfileid: "98758075"
 
 Просмотрите журналы, чтобы диагностировать проблемы.
 
-### <a name="settings"></a>"Настройки"
+### <a name="settings"></a>Параметры
 
 - Переключить отображение ошибок компиляции и времени выполнения.
 - Сведения о версии.

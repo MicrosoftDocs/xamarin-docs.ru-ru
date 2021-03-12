@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 0252626cb58ff334e3cff2cc60e6544e4eba18c0
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: c55af2cd31621a1be79c2af299edd1c25bc9487a
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91435390"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602857"
 ---
 # <a name="quick-interaction-techniques-for-watchos-3-in-xamarin"></a>Методы быстрого взаимодействия для watchOS 3 в Xamarin
 
@@ -67,9 +67,9 @@ watchOS 3 будет поддерживать четыре следующих р
   - Жест касания ( `WKTapGestureRecognizer` ).
 - Типы непрерывных жестов:
   - Жест панорамирования ( `WKPanGestureRecognizer` ).
-  - Жест длительного нажатия ( `WKLongPressGestureRecognizer` ).
+  - Жест Long-Press ( `WKLongPressGestureRecognizer` ).
 
-Чтобы реализовать один из новых распознавателей жестов, просто перетащите его в область конструктора в конструкторе iOS в Visual Studio для Mac и настройте его свойства.
+Чтобы реализовать один из новых распознавателей жестов, просто перетащите его на представление в Interface Builder Xcode и настройте его свойства.
 
 В коде ответьте на действие распознавателя, чтобы обработать жест, активируемый пользователем. Опять же, это делается так же, как и в iOS.
 
@@ -348,7 +348,7 @@ Apple рекомендует искать способы объединения 
 - По возможности Упростите навигацию внутри приложения.
 - Никогда не допускайте пользователю ожидания, позволяя им как можно быстрее удалить свои наличные и ClassInterfaceAttribute отключите с приложением.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье были рассмотрены методы быстрого взаимодействия, добавленные компанией Apple в watchOS 3, и способы их реализации в Xamarin. iOS для Apple Watch.
 

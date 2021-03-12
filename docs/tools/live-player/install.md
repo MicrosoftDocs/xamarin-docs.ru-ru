@@ -6,12 +6,12 @@ ms.assetid: 5DDF9203-8826-4B04-93F5-B8D07EDE3873
 author: davidortinau
 ms.author: daortin
 ms.date: 06/13/2019
-ms.openlocfilehash: 3dfe63cf3cf87a99d15879a0d4791248fa06f195
-ms.sourcegitcommit: 2fbe4932a319af4ebc829f65eb1fb1816ba305d3
+ms.openlocfilehash: cb06baad8b9666a06fdc588f6a9a8b460186a0b2
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73029678"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102603039"
 ---
 # <a name="xamarin-live-player-visual-studio-configuration"></a>Xamarin Live Player конфигурации Visual Studio
 
@@ -21,9 +21,9 @@ ms.locfileid: "73029678"
 > Предварительный просмотр Xamarin Live Player завершен. Приложение больше не доступно. Приведенные ниже инструкции предназначены для пользователей, которые продолжают использовать предварительную версию с Visual Studio 2017.
 
 > [!TIP]
-> Вы можете использовать [Предварительный просмотр XAML](~/xamarin-forms/xaml/xaml-previewer/index.md) в Visual Studio 2019 или Visual Studio для Mac для просмотра макетов экрана по мере их редактирования.
+> Вы можете использовать [горячую перезагрузку XAML (~/ксамарин-Формс/ксамл/хот-релоад/индекс.МД) в Visual Studio 2019 или Visual Studio для Mac для просмотра своих макетов на экране по мере их редактирования.
 
-# <a name="visual-studio-2017tabwindows"></a>[Visual Studio 2017](#tab/windows)
+# <a name="visual-studio-2017"></a>[Visual Studio 2017](#tab/windows)
 
 ## <a name="using-xamarin-live-player"></a>Использование Xamarin Live Player
 
@@ -31,7 +31,7 @@ ms.locfileid: "73029678"
 
 1. Откройте **Visual Studio 2017**.
 2. Выберите **сервис > параметры...** и перейдите на вкладку **Xamarin > Other (другие** ).
-3. **Xamarin Live Player включения**Tick:
+3. **Xamarin Live Player включения** Tick:
 
     ![Установите флажок "включить Xamarin Live Player" в окне "Параметры".](install-images/vs2017-options.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "73029678"
 
     Если не удается связаться с устройством для связывания, может возникнуть ошибка.
 
-# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
+# <a name="visual-studio-for-mac"></a>[Visual Studio для Mac](#tab/macos)
 
 ## <a name="using-xamarin-live-player"></a>Использование Xamarin Live Player
 
@@ -66,9 +66,9 @@ ms.locfileid: "73029678"
 
 1. Откройте **Visual Studio для Mac**.
 2. Перейдите в **Visual Studio > предпочтения...** и выберите вкладку **проекты > Xamarin Live Player (Предварительная версия)** .
-3. **Xamarin Live Player включения**Tick:
+3. **Xamarin Live Player включения** Tick:
 
-    [![установите флажок Включить Xamarin Live Player в окне "Параметры".](install-images/vsmac-options-sml.png)](install-images/vsmac-options.png#lightbox)
+    [![Установите флажок "включить Xamarin Live Player" в окне "Параметры".](install-images/vsmac-options-sml.png)](install-images/vsmac-options.png#lightbox)
 
 4. Создайте или откройте проект Xamarin (или [Пример](~/tools/live-player/samples.md)).
 5. Выберите **Live Player** в списке устройств.

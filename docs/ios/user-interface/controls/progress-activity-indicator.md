@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/11/2017
-ms.openlocfilehash: 0bfb4168e3d990ae1afb3ee2022553053c383083
-ms.sourcegitcommit: 513feb0e07558766e3de4a898e53d56b27c20559
+ms.openlocfilehash: 00945fa528fb0221080d2b2546fd56a07cb481d9
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98697596"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102603078"
 ---
 # <a name="progress-and-activity-indicators-in-xamarinios"></a>Индикаторы хода выполнения и активности в Xamarin. iOS
 
@@ -33,12 +33,6 @@ iOS предоставляет два основных способа предо
 ### <a name="implementing-an-activity-indicator"></a>Реализация индикатора действия
 
 Индикатор действия реализуется через класс, [`UIActivityIndictorView`](xref:UIKit.UIActivityIndicatorView) чтобы указать, что `UIActivity` выполняется.
-
-### <a name="activity-indicators-and-storyboards"></a>Индикаторы действий и раскадровки
-
-Если вы используете конструктор iOS для создания пользовательского интерфейса, индикатор действия можно добавить в макет из панели элементов. Следующие свойства можно изменить с Панель свойств:
-
-![На снимке экрана показан Панель свойств, где можно изменить свойства стиля, цвета и поведения.](progress-activity-indicator-images/progress-indicator1.png)
 
 ### <a name="managing-activity-indicator-behavior"></a>Управление поведением индикатора действия
 

@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/18/2017
-ms.openlocfilehash: 2350db2e8d4f43a33b0ce394e06ffd2c16b6b7ad
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 6bd93fe50dc97c2349486513079768c473355e76
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91436551"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602987"
 ---
 # <a name="walkthrough---background-location-in-xamarinios"></a>Пошаговое руководство. фоновое расположение в Xamarin. iOS
 
@@ -133,13 +133,11 @@ public class LocationUpdatedEventArgs : EventArgs
 
 ## <a name="user-interface"></a>Пользовательский интерфейс
 
-1. Используйте конструктор iOS для создания экрана, в котором будут отображаться сведения о расположении. Дважды щелкните файл **Main. Storyboard** , чтобы начать.
+1. Используйте Interface Builder Xcode для создания экрана, в котором будут отображаться сведения о расположении. Дважды щелкните файл **Main. Storyboard** , чтобы начать.
 
     На экране раскадровки перетащите несколько меток на экран, чтобы они действовали в качестве заполнителей для сведений о расположении. В этом примере имеются метки для широты, долготы, высоты, курса и скорости.
 
-    Макет должен выглядеть следующим образом:
-
-    ![Пример макета пользовательского интерфейса в конструкторе iOS](location-walkthrough-images/image8.png)
+    Дополнительные сведения см. в разделе [Разработка пользовательских интерфейсов с помощью Xcode](~/ios/user-interface/storyboards/index.md).
 
 1. В Панель решения дважды щелкните `ViewController.cs` файл и измените его, чтобы создать новый экземпляр локатионманажер и вызвать `StartLocationUpdates` на нем.
   Измените код, чтобы он выглядел следующим образом:

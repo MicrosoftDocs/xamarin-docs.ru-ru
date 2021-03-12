@@ -8,14 +8,14 @@ ms.date: 03/26/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 4ab7c5dab6a414e15531e0e0e812d604e05ab1cc
-ms.sourcegitcommit: 3edcc63fcf86409b73cd6e5dc77f0093a99b3f87
+ms.openlocfilehash: 1dba93f5f6f0f81477824d22c616cd4a4c2d0b41
+ms.sourcegitcommit: b6f6dd231b6bef2df8b7f8e4c530c9aead70809a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062606"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102498393"
 ---
-# <a name="no-locxamarinessentials-web-authenticator"></a>Xamarin.Essentials. Веб-средство проверки подлинности
+# <a name="xamarinessentials-web-authenticator"></a>Xamarin.Essentials. Веб-средство проверки подлинности
 
 Класс **WebAuthenticator** позволяет запускать потоки на основе браузера, которые ожидают обратного вызова по определенному URL-адресу, зарегистрированному за приложением.
 
@@ -112,13 +112,17 @@ public override bool ContinueUserActivity(UIApplication application, NSUserActiv
 Для UWP необходимо объявить URI обратного вызова в файле `Package.appxmanifest`.
 
 ```xml
-    <Extensions>
-        <uap:Extension Category="windows.protocol">
+<Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MyApp.App">
+        <Extensions>
+            <uap:Extension Category="windows.protocol">
             <uap:Protocol Name="myapp">
                 <uap:DisplayName>My App</uap:DisplayName>
             </uap:Protocol>
-        </uap:Extension>
-    </Extensions>
+            </uap:Extension>
+        </Extensions>
+    </Application>
+</Applications>
 ```
 
 -----

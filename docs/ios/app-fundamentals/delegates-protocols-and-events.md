@@ -7,12 +7,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 09/17/2017
-ms.openlocfilehash: ce436f907c70657ff6d08f39bdec9e7d796d519c
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: b4c23792cca0bbaabeeaac38b2756490f1485605
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91431025"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602935"
 ---
 # <a name="events-protocols-and-delegates-in-xamarinios"></a>События, протоколы и делегаты в Xamarin. iOS
 
@@ -52,21 +52,13 @@ aButton.TouchUpInside += delegate {
 };
 ```
 
-Приведенный выше код работает в `ViewDidLoad` методе UIViewController. `aButton`Переменная ссылается на кнопку, которую можно добавить либо в конструкторе iOS, либо с помощью кода. На следующем рисунке показана кнопка, добавленная в конструктор iOS:
+Приведенный выше код работает в `ViewDidLoad` методе UIViewController. `aButton`Переменная ссылается на кнопку, которую можно добавить либо в Interface Builder Xcode, либо с помощью кода. 
 
-[![Кнопка, добавленная в конструктор iOS](delegates-protocols-and-events-images/02-interface-builder-outlet-sml.png)](delegates-protocols-and-events-images/02-interface-builder-outlet.png#lightbox)
+Xamarin. iOS также поддерживает стиль целевого действия по подключению кода к взаимодействию, которое происходит с элементом управления. 
 
-Xamarin. iOS также поддерживает стиль целевого действия по подключению кода к взаимодействию, которое происходит с элементом управления. Чтобы создать целевое действие для кнопки **Hello** , дважды щелкните его в конструкторе iOS. Будет отображен файл кода программной части UIViewController, и разработчику будет предложено выбрать расположение для вставки метода подключения:
+Дополнительные сведения о шаблоне целевого действия iOS см. в разделе Target-Action [основных компетенций приложения для iOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Target-Action/Target-Action.html#//apple_ref/doc/uid/TP40010810-CH12) в библиотеке разработчиков iOS Apple.
 
-[![Файл кода программной части Уивиевконтроллерс](delegates-protocols-and-events-images/03-interface-builder-action-sml.png)](delegates-protocols-and-events-images/03-interface-builder-action.png#lightbox)
-
-После выбора расположения создается новый метод, который поддается подсети элементу управления. В следующем примере сообщение будет записано в консоль при нажатии кнопки:
-
-[![При нажатии кнопки на консоль будет выведено сообщение](delegates-protocols-and-events-images/05-interface-builder-action-sml.png)](delegates-protocols-and-events-images/05-interface-builder-action.png#lightbox)
-
-Дополнительные сведения о шаблоне целевого действия iOS см. в разделе "Целевая операция" [базовых компетенций приложения для iOS](https://developer.apple.com/library/ios/#DOCUMENTATION/General/Conceptual/Devpedia-CocoaApp/TargetAction.html) в библиотеке разработчиков iOS Apple.
-
-Дополнительные сведения об использовании конструктора iOS с Xamarin. iOS см. в обзорной документации по [конструктору iOS](~/ios/user-interface/designer/index.md) .
+Дополнительные сведения см. в разделе [Разработка пользовательских интерфейсов с помощью Xcode](~/ios/user-interface/storyboards/index.md).
 
 ## <a name="events"></a>События
 
@@ -249,7 +241,7 @@ public abstract class UITableViewDataSource : NSObject
 Обратите внимание, что класс является абстрактным. Xamarin. iOS делает класс абстрактным для поддержки необязательных или обязательных методов в протоколах.
 Однако в отличие от протоколов цели-C (или интерфейсов C#) классы C# не поддерживают множественное наследование. Это влияет на структуру кода C#, использующего протоколы, и обычно приводит к вложенным классам. Дополнительные сведения об этой проблемы описаны далее в этом документе в разделе делегаты.
 
- `GetCell(…)` — Это абстрактный метод, привязанный к *селектору*цели-C, `tableView:cellForRowAtIndexPath:` который является обязательным методом `UITableViewDataSource` протокола. Селектор — это термин цели-C для имени метода. Для принудительного применения этого метода Xamarin. iOS объявляет его как абстрактный. Другой метод, `NumberOfSections(…)` , привязан к `numberOfSectionsInTableview:` . Этот метод является необязательным в протоколе, поэтому Xamarin. iOS объявляет его как виртуальный, делая его необязательным для переопределения в C#.
+ `GetCell(…)` — Это абстрактный метод, привязанный к *селектору* цели-C, `tableView:cellForRowAtIndexPath:` который является обязательным методом `UITableViewDataSource` протокола. Селектор — это термин цели-C для имени метода. Для принудительного применения этого метода Xamarin. iOS объявляет его как абстрактный. Другой метод, `NumberOfSections(…)` , привязан к `numberOfSectionsInTableview:` . Этот метод является необязательным в протоколе, поэтому Xamarin. iOS объявляет его как виртуальный, делая его необязательным для переопределения в C#.
 
 Xamarin. iOS берет на себя всю привязку iOS. Тем не менее, если вам когда-либо потребуется привязать протокол из цели – C вручную, это можно сделать путем оформления класса с помощью `ExportAttribute` . Это тот же метод, который используется в самой Xamarin. iOS.
 
@@ -378,7 +370,7 @@ map.DidSelectAnnotationView += (s,e) => {
 };
 ```
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой статье описано, как использовать события, протоколы и делегаты в Xamarin. iOS. Мы увидели, как Xamarin. iOS предоставляет обычные события стиля .NET для элементов управления.
 Далее мы узнали о протоколах цели-C, в том числе о том, как они отличаются от интерфейсов C# и от того, как Xamarin. iOS использует их. Наконец, мы рассматривали делегаты цели-C с точки зрения Xamarin. iOS. Мы увидели, как Xamarin. iOS поддерживает как строго, так и слабо типизированные делегаты, так и как привязывать события .NET к методам делегатов.

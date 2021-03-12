@@ -6,12 +6,12 @@ ms.assetid: 19B1F126-866E-4672-92D2-BE2B70ACF0F1
 author: davidortinau
 ms.author: daortin
 ms.date: 06/13/2019
-ms.openlocfilehash: 8c5e470c1a0bd029fedabb1bd1e228cb2a62f84d
-ms.sourcegitcommit: 4e399f6fa72993b9580d41b93050be935544ffaa
+ms.openlocfilehash: b46d15e687d17b16aae7ab14a872518f477d95d8
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91457384"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602753"
 ---
 # <a name="xamarin-live-player-for-xamarinforms"></a>Xamarin Live Player для Xamarin. Forms
 
@@ -23,7 +23,7 @@ ms.locfileid: "91457384"
 > Предварительный просмотр Xamarin Live Player завершен. Приложение больше не доступно. Приведенные ниже инструкции предназначены для пользователей, которые продолжают использовать предварительную версию с Visual Studio 2017.
 
 > [!TIP]
-> Вы можете использовать [Предварительный просмотр XAML](~/xamarin-forms/xaml/xaml-previewer/index.md) в Visual Studio 2019 или Visual Studio для Mac для просмотра макетов экрана по мере их редактирования.
+> Вы можете использовать [горячую перезагрузку XAML (~/ксамарин-Формс/ксамл/хот-релоад/индекс.МД) в Visual Studio 2019 или Visual Studio для Mac для просмотра своих макетов на экране по мере их редактирования.
 
 ## <a name="how-xamarin-live-player-worked"></a>Как Xamarin Live Player работало
 

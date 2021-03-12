@@ -8,12 +8,12 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 03/17/2017
-ms.openlocfilehash: 7e56eed866cb647bd654370d587b02bcaba04d4e
-ms.sourcegitcommit: 00e6a61eb82ad5b0dd323d48d483a74bedd814f2
+ms.openlocfilehash: 5bea776f1f2046a6cad3651456a179d7efb59ebe
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91432818"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602792"
 ---
 # <a name="watchos-troubleshooting"></a>Устранение неполадок watchOS
 
@@ -31,14 +31,14 @@ ms.locfileid: "91432818"
 
 ## <a name="known-issues"></a>Известные проблемы
 
-### <a name="general"></a>Общее
+### <a name="general"></a>Общие сведения
 
 <a name="deploy"></a>
 
 - Более ранние выпуски Visual Studio для Mac неправильно отображают один из значков **апплекомпанионсеттингс** как 88x88 пикселов; Это приводит к **ошибке отсутствующего значка** при попытке отправить в App Store.
     Этот значок должен быть 87x87 пикселей (29 единиц для **@3x** экранов Retina). Вы не можете исправить это в Visual Studio для Mac изменить ресурс изображения в Xcode или вручную изменить **Contents.jsв** файле.
 
-- Если **идентификатор пакета WKApp "info. > plist** " проекта расширения контрольных значений [неправильно установлен](~/ios/watchos/get-started/project-references.md) в соответствии с **идентификатором пакета**приложения Watch, отладчику не удастся подключиться, и Visual Studio для Mac будет ожидать сообщение *"Ожидание подключения отладчика"*.
+- Если **идентификатор пакета WKApp "info. > plist** " проекта расширения контрольных значений [неправильно установлен](~/ios/watchos/get-started/project-references.md) в соответствии с **идентификатором пакета** приложения Watch, отладчику не удастся подключиться, и Visual Studio для Mac будет ожидать сообщение *"Ожидание подключения отладчика"*.
 
 - Отладка поддерживается в режиме **уведомлений** , но может быть ненадежной. Повторная попытка иногда будет работать. Убедитесь, что значение **info. plist** приложения Watch `WKCompanionAppBundleIdentifier` установлено в соответствии с идентификатором пакета приложения iOS (родительское или контейнером), которое выполняется на устройстве iPhone.
 
@@ -51,10 +51,6 @@ ms.locfileid: "91432818"
 
 - При попытке запустить приложение может появиться сообщение об ошибке "приложение не было собрано". Это происходит после **очистки** , если запускаемый проект установлен в проект расширения Watch.
     Исправлением является выбор **сборки > перестроить все** , а затем повторно запустить приложение.
-
-### <a name="visual-studio"></a>Visual Studio
-
-Для поддержки набора наблюдения в конструкторе iOS *необходимо* правильно настроить решение. Если ссылки на проект не заданы (см. раздел [как установить ссылки](~/ios/watchos/get-started/project-references.md)), область конструктора будет работать неправильно.
 
 <a name="noalpha"></a>
 
@@ -76,7 +72,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
     ![Диалоговое окно, которое отображается, будет содержать флажок альфа-канала, если присутствует канал Alpha](troubleshooting-images/remove-alpha-sml.png)
 
-3. *Untick* Снимите флажок **альфа-канала** и **Сохраните** файл в нужном месте.
+3.  Снимите флажок **альфа-канала** и **Сохраните** файл в нужном месте.
 
 4. Теперь изображение значка должно передавать проверки Apple.
 
@@ -233,7 +229,7 @@ with an alpha channel. Icons should not have an alpha channel.
 > [!NOTE]
 > Путь, который необходимо предоставить, предназначен для *файла приложения iPhone. app*, т. е. который будет развернут в симуляторе iOS и содержит как расширение, так и контрольное приложение.
 
-Пример
+Пример:
 
 ```bash
 --launchsimwatch=/path/to/watchkitproject/watchsample/bin/iPhoneSimulator/Debug/watchsample.app
@@ -241,7 +237,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 ## <a name="notification-mode"></a>Режим уведомления
 
-Чтобы проверить [режим **уведомления** ](~/ios/watchos/platform/notifications.md)приложения, присвойте `watchlaunchmode` параметру значение `Notification` и укажите путь к JSON-файлу, содержащему полезные данные тестового уведомления.
+Чтобы проверить [режим **уведомления**](~/ios/watchos/platform/notifications.md)приложения, присвойте `watchlaunchmode` параметру значение `Notification` и укажите путь к JSON-файлу, содержащему полезные данные тестового уведомления.
 
 Параметр полезных данных является *обязательным* для режима уведомления.
 
@@ -259,7 +255,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 Обязательный. Указывает путь к Xcode (6,2 или более поздней версии).
 
-Пример
+Пример:
 
 ```bash
  --sdkroot /Applications/Xcode.app/Contents/Developer/
@@ -277,7 +273,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 **UDID.**
 
-Пример
+Пример:
 
 ```bash
 --device=:v2:udid=AAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE
@@ -285,7 +281,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 **Среда выполнения и тип устройства**
 
-Пример
+Пример:
 
 ```bash
 --device=:v2:runtime=com.apple.CoreSimulator.SimRuntime.iOS-8-2,devicetype=com.apple.CoreSimulator.SimDeviceType.iPhone-6

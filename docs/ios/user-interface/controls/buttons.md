@@ -7,20 +7,18 @@ ms.technology: xamarin-ios
 author: davidortinau
 ms.author: daortin
 ms.date: 07/11/2018
-ms.openlocfilehash: d763d4433ef0979343de059c5113314f553142fa
-ms.sourcegitcommit: 01ccefd54c0ced724784dbe1aec9ecfc9b00e633
+ms.openlocfilehash: 2de52400241d45046f58222231b8d865ecf6666d
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92630222"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102602805"
 ---
 # <a name="buttons-in-xamarinios"></a>Кнопки в Xamarin. iOS
 
 В iOS `UIButton` класс представляет элемент управления Button.
 
-Свойства кнопки можно изменить программно или с помощью **окна свойств или** панели конструктора iOS:
-
-![Панель свойств конструктора iOS](buttons-images/properties.png "Панель свойств конструктора iOS")
+Свойства кнопки можно изменить программно или с помощью Interface Builder Xcode.
 
 ## <a name="creating-a-button-programmatically"></a>Создание кнопки программным способом
 
@@ -86,14 +84,6 @@ myButton.TouchUpInside += (sender, e) => {
 
 > [!NOTE]
 > `TouchUpInside` не является единственным доступным событием кнопки. `UIButton` является дочерним классом `UIControl` , который определяет [множество различных событий](xref:UIKit.UIControlEvent).
-
-### <a name="using-the-ios-designer-to-specify-button-event-handlers"></a>Использование конструктора iOS для задания обработчиков событий кнопок
-
-Используйте вкладку **события** **панель свойств** , чтобы указать обработчики событий для различных событий кнопки.
-
-Для соответствующего события либо введите имя нового обработчика событий, либо выберите его из списка. Это приведет к созданию обработчика событий в коде для контроллера представления кнопки.
-
-![Вкладка "события" Панель свойств](buttons-images/image1.png "Вкладка "события" Панель свойств")
 
 ## <a name="styling-a-button"></a>Стилизация кнопки
 

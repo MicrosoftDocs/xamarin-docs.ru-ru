@@ -11,20 +11,20 @@ ms.date: 03/16/2020
 no-loc:
 - Xamarin.Forms
 - Xamarin.Essentials
-ms.openlocfilehash: 5af5846c77c5cd63e14494c25e5dc04ebcea4b7d
-ms.sourcegitcommit: f90e908a72cf616ee303c2751729b62f11654379
+ms.openlocfilehash: 94c09aa870052108261caf0107463b6beb88bb45
+ms.sourcegitcommit: 4bbf54d2bc1df96af69814e2e5dae47be12e0474
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2020
-ms.locfileid: "96299963"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102603013"
 ---
-# <a name="xaml-previewer-for-no-locxamarinforms"></a>Предварительный просмотр XAML для Xamarin.Forms
+# <a name="xaml-previewer-for-xamarinforms"></a>Предварительный просмотр XAML для Xamarin.Forms
 
 _Просмотр Xamarin.Forms макетов при вводе_
 
 > [!WARNING]
-> В Visual Studio 2019 версии 16,8 и Visual Studio для Mac версии 8,8 будет запущен предварительный просмотр XAML.
-> Для предварительного просмотра XAML рекомендуется использовать **[горячую перезагрузку XAML](~/xamarin-forms/xaml/hot-reload.md)**.
+> Средство предварительного просмотра XAML устарело в Visual Studio 2019 версии 16,8 и Visual Studio для Mac версии 8,8 и заменено функцией горячей загрузки XAML в Visual Studio 2019 версии 16,9 и Visual Studio для Mac версии 8,9.
+> Дополнительные сведения о горячей загрузке XAML см. в [документации](~/xamarin-forms/xaml/hot-reload.md).
 
 ## <a name="overview"></a>Обзор
 
@@ -102,7 +102,7 @@ if (!DesignMode.IsDesignModeEnabled)
 
 Это свойство полезно при инициализации библиотеки в конструкторе страницы, которая не запускается во время разработки.
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>Диагностика
 
 Если предварительный просмотр не работает, проверьте указанные ниже проблемы и [форумы Xamarin](https://forums.xamarin.com/categories/xamarin-forms).
 
